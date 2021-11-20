@@ -1,0 +1,879 @@
+1
+00:00:05,520 --> 00:00:09,570
+Halo semuanya dan selamat datang di bagian tiga dari kursus kilat Python.
+
+2
+00:00:09,570 --> 00:00:13,470
+Mari kita pergi dan lompat kembali ke notebook Jupiter di mana kita tinggalkan terakhir kali.
+
+3
+00:00:13,470 --> 00:00:13,710
+Baiklah.
+
+4
+00:00:13,710 --> 00:00:15,260
+Di sini saya di notebook Jupiter.
+
+5
+00:00:15,270 --> 00:00:18,680
+Terakhir kali kami tinggalkan jika pernyataan elif dan L.
+
+6
+00:00:18,810 --> 00:00:25,350
+Sekarang kita akan pergi dan dengan cepat menutupi loop dan sementara loop untuk loop memungkinkan Anda
+
+7
+00:00:25,410 --> 00:00:33,770
+untuk mengulangi urutan, saya akan membuat objek yang disebut S-C Q Untuk urutan dan mengatakan itu satu dua tiga empat lima.
+
+8
+00:00:34,380 --> 00:00:35,860
+Jadi itu hanya daftar angka.
+
+9
+00:00:36,000 --> 00:00:41,310
+Dan kemudian saya bisa menggunakan loop for untuk melakukan atau menjalankan beberapa blok kode untuk setiap item
+
+10
+00:00:41,310 --> 00:00:42,290
+dalam urutan itu.
+
+11
+00:00:42,570 --> 00:00:44,410
+Berarti Anda dapat melakukan sesuatu untuk ini.
+
+12
+00:00:44,430 --> 00:00:45,880
+Dan itulah kata kuncinya di sini.
+
+13
+00:00:46,260 --> 00:00:53,070
+Untuk item dalam dan kemudian objek yang merupakan urutan saat antrian melakukan atau menjalankan beberapa blok kode.
+
+14
+00:00:53,790 --> 00:00:57,490
+Dalam hal ini itu akan menjadi barang cetakan.
+
+15
+00:00:57,840 --> 00:01:04,590
+Dan sekarang saya sudah bisa mencetak item untuk setiap elemen dalam urutan yang perlu dicatat di sini adalah item
+
+16
+00:01:04,590 --> 00:01:08,850
+nama variabel sementara ini bisa menjadi apa pun yang Anda inginkan.
+
+17
+00:01:08,850 --> 00:01:14,600
+Jadi misalnya saya bisa melanjutkan dan mengganti ini dengan sesuatu seperti jeli dan itu masih berfungsi.
+
+18
+00:01:14,850 --> 00:01:22,050
+Jadi untuk jeli secara berurutan atau jeli cetak CQ dan Anda memilikinya, itu adalah hal yang persis sama.
+
+19
+00:01:22,230 --> 00:01:25,850
+Jadi, Anda mungkin ingin memilih kata-kata ini atau nama variabel sementara.
+
+20
+00:01:25,850 --> 00:01:27,660
+Hati-hati di sini.
+
+21
+00:01:27,660 --> 00:01:28,550
+Ini adalah angka.
+
+22
+00:01:28,590 --> 00:01:34,590
+Jadi pilihan yang baik mungkin sesuatu seperti dan M untuk angka dan dengan cara itu ketika kembali kode
+
+23
+00:01:34,590 --> 00:01:40,170
+ini di kemudian hari saya dapat mengingat apa yang saya lakukan atau lakukan di sini sesuatu yang
+
+24
+00:01:40,290 --> 00:01:45,720
+perlu diingat adalah bahwa blok kode ini mengeksekusi itu tidak harus benar-benar terkait dengan item di
+
+25
+00:01:45,720 --> 00:01:46,680
+dalam urutan.
+
+26
+00:01:46,680 --> 00:01:51,070
+Anda dapat melakukan apa pun yang Anda inginkan di sini sehingga saya dapat mengatakan cetakan halo.
+
+27
+00:01:51,570 --> 00:01:56,130
+Dan itu hanya akan pergi dan mengatakan OK untuk setiap elemen di sini saya akan melakukan
+
+28
+00:01:56,130 --> 00:01:59,210
+tindakan ini berarti saya hanya akan mencetak Halo lima kali.
+
+29
+00:01:59,210 --> 00:02:04,650
+Sekarang mari kita lanjutkan dan menunjukkan kepada Anda bagaimana Anda dapat menggunakan loop sementara untuk terus melakukan
+
+30
+00:02:04,650 --> 00:02:06,910
+suatu tindakan sampai beberapa kondisi telah terpenuhi.
+
+31
+00:02:07,080 --> 00:02:18,750
+Saya akan pergi ke depan dan mengetikkan saya sama dengan 1 dan kemudian mengatakan sementara saya kurang dari lima titik dua dan kemudian saya
+
+32
+00:02:18,750 --> 00:02:24,630
+akan melakukan beberapa blok kode sementara kondisi ini kebetulan benar dan
+
+33
+00:02:24,630 --> 00:02:35,240
+saya akan pergi masuk dan katakan cetak I adalah tanda kurung kurawal dan kemudian gunakan format itu untuk lewat begitu saja.
+
+34
+00:02:35,250 --> 00:02:40,740
+Sekarang jangan jalankan ini karena melihat apa yang akan terjadi, saya menetapkan mata sama dengan satu dan kemudian
+
+35
+00:02:40,740 --> 00:02:42,890
+saya berkata OK, saya kurang dari lima.
+
+36
+00:02:43,020 --> 00:02:44,260
+Silakan cetak ini.
+
+37
+00:02:44,340 --> 00:02:50,820
+Jika saya menjalankan ini dengan baik, saya akan mendapatkan loop tak terbatas yang berarti sel hanya akan pergi selamanya karena saya
+
+38
+00:02:50,820 --> 00:02:52,380
+akan selalu kurang dari lima.
+
+39
+00:02:52,710 --> 00:02:57,900
+Jika Anda memiliki sel, secara tidak sengaja hanya berjalan selamanya dan Anda akan melihat dengan terus
+
+40
+00:02:57,900 --> 00:03:02,870
+mendapatkan output atau dengan memiliki asterix di sini alih-alih nomor untuk waktu yang sangat lama.
+
+41
+00:03:02,880 --> 00:03:09,640
+Yang harus Anda lakukan adalah pergi ke Kolonel dan kemudian klik restart untuk menghindari masalah ini.
+
+42
+00:03:09,690 --> 00:03:14,460
+Akan mengatakan mengapa sama dengan plus 1.
+
+43
+00:03:14,490 --> 00:03:18,320
+Dan sekarang ketika saya menjalankan ini saya menjalankan blok kode ini.
+
+44
+00:03:18,390 --> 00:03:22,110
+Jadi kita mulai dengan I yang merupakan nilai pertama yang kita berikan.
+
+45
+00:03:22,170 --> 00:03:25,140
+Lalu kami mencetak mata 1 dan kami menambahkan 1.
+
+46
+00:03:25,170 --> 00:03:29,130
+Saya kemudian loop sementara lagi diperiksa ok untuk kurang dari lima.
+
+47
+00:03:29,130 --> 00:03:30,180
+Yah, itu benar.
+
+48
+00:03:30,180 --> 00:03:34,390
+Jadi mata cetak untuk menambahkan bahwa menambahkan 1 adalah tiga kurang dari lima.
+
+49
+00:03:34,410 --> 00:03:35,500
+Yah, itu benar.
+
+50
+00:03:35,540 --> 00:03:36,700
+Pangeran memiliki tiga.
+
+51
+00:03:36,720 --> 00:03:39,170
+Tambahkan 1 untuk itu kurang dari lima.
+
+52
+00:03:39,180 --> 00:03:39,850
+Itu benar.
+
+53
+00:03:39,870 --> 00:03:42,480
+Prince adalah untuk menambahkan 1 ke dalamnya.
+
+54
+00:03:42,480 --> 00:03:44,700
+Dan akhirnya lima kurang dari lima.
+
+55
+00:03:44,700 --> 00:03:45,920
+Ya itu tidak benar.
+
+56
+00:03:45,990 --> 00:03:49,500
+Jadi saya pergi ke depan dan baru saja selesai dan keluar dari lingkaran itu.
+
+57
+00:03:49,620 --> 00:03:51,330
+Dan begitulah loop sementara bekerja.
+
+58
+00:03:51,420 --> 00:03:58,410
+Ini pada dasarnya akan mengeksekusi beberapa blok kode sementara beberapa kondisi benar.
+
+59
+00:03:58,430 --> 00:04:04,230
+OK mari kita masuk dan membahas beberapa fungsi berguna yang ada di dalam Python.
+
+60
+00:04:04,230 --> 00:04:06,930
+Salah satu yang sangat berguna adalah jangkauan.
+
+61
+00:04:07,050 --> 00:04:16,470
+Banyak kali Anda ingin melakukan for for loop seperti ini untuk x dalam isyarat untuk urutan cetak X atau ingat
+
+62
+00:04:17,010 --> 00:04:21,800
+sebagai Q hanya ini satu dua tiga empat lima.
+
+63
+00:04:21,840 --> 00:04:25,920
+Banyak kali Anda ingin melakukan sesuatu dalam jumlah tertentu.
+
+64
+00:04:25,980 --> 00:04:33,090
+Sekarang salah satu cara untuk melakukannya adalah mengatakan untuk x in dan kemudian buat urutan yang sangat panjang tetapi Anda tidak perlu
+
+65
+00:04:33,090 --> 00:04:34,430
+terlalu banyak mengetik.
+
+66
+00:04:34,440 --> 00:04:42,630
+Jadi Python memiliki fungsi rentang dan rentang akan menjadi penghasil nilai numerik jadi jika Anda mengatakan rentang
+
+67
+00:04:43,350 --> 00:04:52,330
+Anda akan mulai dengan angka yang ingin Anda mulai dan angka yang ingin Anda akhiri bahwa jika Anda menjalankannya Anda
+
+68
+00:04:52,330 --> 00:04:54,510
+mendapatkan kisaran ini obyek.
+
+69
+00:04:54,550 --> 00:05:06,460
+Dan kemudian apa yang dapat Anda lakukan adalah mengatakan untuk x dalam rentang dari nol koma 5 titik dua cetak X dan kemudian Anda akan melihat 0 1
+
+70
+00:05:06,550 --> 00:05:12,240
+2 3 4 dan itu adalah semacam cara cepat untuk menghasilkan nilai-nilai tersebut.
+
+71
+00:05:12,280 --> 00:05:21,820
+Ini generator jika Anda benar-benar ingin ini menjadi daftar Anda akan meneruskan ini ke fungsi daftar dan yang
+
+72
+00:05:21,880 --> 00:05:23,560
+mengubahnya menjadi daftar.
+
+73
+00:05:23,560 --> 00:05:29,500
+Sekarang saya melihat daftar 0 1 2 3 4 dan ini adalah cara yang sangat cepat untuk benar-benar mengeksekusi
+
+74
+00:05:29,500 --> 00:05:30,690
+sesuatu beberapa kali.
+
+75
+00:05:30,790 --> 00:05:39,550
+Jadi Anda dapat mengatakan bahwa bahkan pada kisaran hanya satu angka 10 dan secara default angka awal adalah nol.
+
+76
+00:05:39,550 --> 00:05:42,580
+Jadi sekarang ini berjalan hingga 10 elemen.
+
+77
+00:05:42,580 --> 00:05:45,820
+Tetapi karena dimulai dari nol maka akan berakhir pada sembilan.
+
+78
+00:05:45,810 --> 00:05:51,710
+Alasannya karena 0 1 2 3 4 5 6 7 8 9 10 ini adalah 10 elemen.
+
+79
+00:05:51,750 --> 00:05:53,350
+Baiklah.
+
+80
+00:05:53,350 --> 00:05:55,750
+Itu adalah fungsi rentang.
+
+81
+00:05:55,750 --> 00:06:03,010
+Sekarang mari kita lanjutkan dan membahas daftar pemahaman daftar. Pemahaman memungkinkan Anda untuk menyimpan banyak tulisan ketika Anda
+
+82
+00:06:03,370 --> 00:06:06,790
+mencoba membuat for for loop untuk membuat daftar.
+
+83
+00:06:06,790 --> 00:06:10,960
+Biarkan saya pergi ke depan dan menunjukkan kepada Anda contoh menggunakan itu untuk loop dan kemudian saya
+
+84
+00:06:10,960 --> 00:06:13,360
+akan menunjukkan kepada Anda contoh pemahaman daftar dalam tindakan.
+
+85
+00:06:13,360 --> 00:06:21,610
+Saya akan melakukan ini saya ingin mengatakan x sama dengan daftar yang terdiri dari angka 1 2 3 4 dan kemudian saya
+
+86
+00:06:21,610 --> 00:06:27,730
+akan membuat daftar kosong yang hanya seperangkat tanda kurung sehingga daftar kosong ada tidak ada apa-apa
+
+87
+00:06:27,730 --> 00:06:28,730
+di sana.
+
+88
+00:06:29,010 --> 00:06:35,970
+Dan kemudian saya akan mengatakan untuk item dalam X dan saya akan melanjutkan dan membuat ini jelas dengan hanya mengubah item menjadi
+
+89
+00:06:35,980 --> 00:06:36,910
+mati rasa.
+
+90
+00:06:37,150 --> 00:06:46,540
+Jadi untuk saat ini saya berada di X saya akan mengeluarkan daftar kosong saya dan saya akan mati rasa
+
+91
+00:06:46,620 --> 00:06:48,250
+dengan kekuatan dua.
+
+92
+00:06:48,370 --> 00:06:55,060
+Saya menjalankan sel itu dan kemudian saya akan melanjutkan dan mencetak daftar kosong itu.
+
+93
+00:06:55,360 --> 00:06:56,540
+Dan perhatikan apa yang ada di sini.
+
+94
+00:06:56,560 --> 00:07:05,720
+Ini pada dasarnya memiliki setiap angka dari X kuadrat 1 4 9 16 bukan 1 2 3 untuk operasi semacam ini sangat
+
+95
+00:07:05,740 --> 00:07:11,500
+umum di Python di mana Anda terus menambahkan nilai ke daftar yang Python memiliki
+
+96
+00:07:11,620 --> 00:07:18,330
+sesuatu yang disebut daftar pemahaman dan pada dasarnya cara daripada harus mendefinisikan daftar dan terus menambahkan
+
+97
+00:07:18,460 --> 00:07:22,780
+logika ke daftar dan menggunakan loop untuk dengan lekukan Colon.
+
+98
+00:07:22,780 --> 00:07:28,710
+Anda benar-benar dapat mengetik semua ini pada dasarnya menjadi satu set kurung dan dengan cepat membuat daftar.
+
+99
+00:07:28,720 --> 00:07:34,860
+Biarkan saya pergi ke depan dan menunjukkan kepada Anda bagaimana menerjemahkan ini untuk kode loop ke dalam daftar pemahaman memungkinkan pemahaman adalah
+
+100
+00:07:34,940 --> 00:07:36,000
+semacam for loop.
+
+101
+00:07:36,000 --> 00:07:44,440
+Tetapi mundur Anda akhirnya mengatakan apa yang Anda inginkan item akan menyebutnya mati rasa.
+
+102
+00:07:44,880 --> 00:07:53,260
+Jadi kekuatan dua untuk mati rasa dan kemudian x angka x adalah daftar ini.
+
+103
+00:07:53,250 --> 00:07:56,360
+Dan ini pada dasarnya adalah kode yang sama di sini.
+
+104
+00:07:56,810 --> 00:08:01,300
+Jadi ketika saya menjalankannya akhirnya bekerja karena semuanya ada di dalam kurung.
+
+105
+00:08:01,300 --> 00:08:08,230
+Biarkan saya pergi untuk memecah langkah-langkah ini lagi alih-alih mengatakan ini menambahkan dan daftar kosong ini Anda hanya
+
+106
+00:08:08,560 --> 00:08:10,200
+akan mengatakan sesuatu seperti.
+
+107
+00:08:10,500 --> 00:08:13,140
+Keluar sama dengan dan kemudian satu set kurung.
+
+108
+00:08:13,360 --> 00:08:18,280
+Dan kemudian Anda bisa menerjemahkan ini untuk loop ke daftar pemahaman dengan memecahnya dengan cara
+
+109
+00:08:18,280 --> 00:08:18,940
+berikut.
+
+110
+00:08:19,000 --> 00:08:21,400
+Anda akan mengambil semuanya sebelum titik dua.
+
+111
+00:08:21,390 --> 00:08:25,170
+Jadi untuk sekarang saya X Salin dan tempel itu.
+
+112
+00:08:25,500 --> 00:08:28,100
+Dan kemudian Anda akan mengambil apa pun yang sebenarnya ingin kita pulpen.
+
+113
+00:08:28,140 --> 00:08:34,330
+Dalam hal ini angka itu kuadrat dan letakkan di sini sebelum itu untuk loop dan ini
+
+114
+00:08:34,410 --> 00:08:42,430
+pada dasarnya daftar pemahaman yang Anda katakan Beri saya angka kuadrat untuk apa pun di X dan sekarang Anda dapat melihat
+
+115
+00:08:42,460 --> 00:08:49,350
+bahwa output telah dihapus dalam satu baris sehingga Pemahaman daftar hanyalah cara untuk menghemat pengetikan untuk Anda jika
+
+116
+00:08:49,360 --> 00:08:52,940
+Anda bingung dengan sintaks di sini atau tidak menyukainya.
+
+117
+00:08:52,960 --> 00:08:54,650
+Dan ini lebih mudah dibaca untuk Anda.
+
+118
+00:08:54,700 --> 00:08:58,700
+Silakan dan gunakan saja untuk loop pena untuk pemula dengan Python.
+
+119
+00:08:58,750 --> 00:09:03,270
+Sintaks semacam ini cenderung sulit dibaca pada awalnya, tetapi ketika Anda secara bertahap menjadi
+
+120
+00:09:03,280 --> 00:09:09,960
+lebih baik dan lebih baik dari Python Anda biasanya akan beralih ke daftar pemahaman hanya untuk memiliki hal-hal dalam satu baris sederhana.
+
+121
+00:09:10,620 --> 00:09:11,290
+BAIK.
+
+122
+00:09:11,530 --> 00:09:18,520
+Sekarang mari kita lanjutkan dan berbicara tentang fungsi fungsi yang pada dasarnya membuat Anda tidak harus menulis
+
+123
+00:09:18,520 --> 00:09:23,740
+kode berulang-ulang, Anda cukup menuliskannya di dalam fungsi dan kemudian memanggil fungsi
+
+124
+00:09:23,740 --> 00:09:24,850
+itu sendiri.
+
+125
+00:09:24,850 --> 00:09:36,490
+Kata kunci untuk suatu fungsi adalah DPF atau Def dan DCF memungkinkan Anda untuk mendefinisikan suatu fungsi, Anda akan mengatakan ruang DPF nama
+
+126
+00:09:36,640 --> 00:09:38,210
+fungsi Anda.
+
+127
+00:09:38,320 --> 00:09:45,190
+Jadi lanjutkan dan panggil ini fungsi garis bawah saya dan fungsi harus dimulai dengan huruf kecil.
+
+128
+00:09:45,380 --> 00:09:54,850
+Anda melewatkan parameter yang Anda inginkan seperti Parama satu titik dua dan kemudian Anda akan melanjutkan dan menjalankan semacam
+
+129
+00:09:54,860 --> 00:10:00,410
+kode sehingga kita dapat mengatakan maju dan Pangeran Coram satu.
+
+130
+00:10:00,990 --> 00:10:01,330
+BAIK.
+
+131
+00:10:01,340 --> 00:10:04,020
+Ini adalah fungsi yang sangat sederhana.
+
+132
+00:10:04,370 --> 00:10:15,890
+Kami hanya memanggil sekarang phunk saya melewati parameter seperti Hello dan itu akan berjalan dan mencetak parameter.
+
+133
+00:10:16,420 --> 00:10:18,070
+Dan itu omong kosong saya.
+
+134
+00:10:18,640 --> 00:10:21,300
+Biarkan saya masuk dan menunjukkan contoh yang lebih rumit.
+
+135
+00:10:21,520 --> 00:10:25,580
+Silakan lanjutkan dan katakan funk dan seperangkat parameter saya.
+
+136
+00:10:25,730 --> 00:10:35,770
+Ini akan mengambil nama dan kita akan mengatakan Pangeran dan kita akan menyapa dan kita dapat menggunakan tanda tambah dari string
+
+137
+00:10:35,840 --> 00:10:38,570
+untuk menggabungkan dua string bersama.
+
+138
+00:10:38,650 --> 00:10:42,380
+Jadi ini akan mengatakan print Hello plus name.
+
+139
+00:10:42,550 --> 00:10:43,990
+Silakan jalankan itu.
+
+140
+00:10:44,090 --> 00:10:46,830
+Dan sekarang untuk flunk saya, saya akan memberikan nama.
+
+141
+00:10:46,910 --> 00:10:50,220
+Ini akan ke Jose dan sekarang kembali.
+
+142
+00:10:50,440 --> 00:10:58,060
+Halo Jose jika Anda ingin nilai default untuk salah satu dari parameter ini sehingga nama default Anda bisa
+
+143
+00:10:58,100 --> 00:11:04,720
+mengatakan sama dengan dan kemudian apa pun yang utama Anda ingin menjadi nama palsu.
+
+144
+00:11:04,810 --> 00:11:11,610
+Dan jika saya menjalankannya lagi dan jika saya tidak mengirimkan apa pun ke phunk saya, saya akan mendapatkannya.
+
+145
+00:11:11,620 --> 00:11:12,340
+Halo.
+
+146
+00:11:12,400 --> 00:11:17,570
+Nama default hanya ketika saya mengatakan Jose atau nama lain di sana.
+
+147
+00:11:17,600 --> 00:11:22,110
+Apakah ini akan menggantikan nilai default dengan nilai yang saya tentukan.
+
+148
+00:11:22,120 --> 00:11:27,740
+Anda juga bisa mengatakan untuk menjelaskan lebih lengkap apa yang Anda sampaikan ke dalam fungsi dan katakan nama sama
+
+149
+00:11:27,740 --> 00:11:29,490
+dengan dan kemudian nilai baru.
+
+150
+00:11:29,750 --> 00:11:32,210
+Atau selama Anda meletakkan nilai-nilai dalam urutan yang benar.
+
+151
+00:11:32,260 --> 00:11:41,590
+Melakukannya dengan cara seperti ini hanya pada sepotong Jose saja seperti ini juga baik-baik saja.
+
+152
+00:11:41,710 --> 00:11:49,900
+Sesuatu yang perlu diperhatikan di sini adalah jika Anda hanya menelepon dengan tanda kurung phunk saya itu akan menjalankan fungsinya.
+
+153
+00:11:50,330 --> 00:11:54,910
+Jika Anda menghilangkan tanda kurung itu, Anda tidak akan memanggil fungsi.
+
+154
+00:11:54,910 --> 00:11:58,120
+Anda hanya akan bertanya Python, hei, apa objek ini.
+
+155
+00:11:58,150 --> 00:11:59,320
+Dan itu akan dilaporkan kembali.
+
+156
+00:11:59,500 --> 00:12:00,780
+Oh, itu sebuah objek.
+
+157
+00:12:00,830 --> 00:12:04,440
+Fungsi utama disebut fungsi garis bawah saya.
+
+158
+00:12:04,450 --> 00:12:08,920
+Jadi ingatlah bahwa ada perbedaan antara memanggil phunk garis bawah saya seperti ini.
+
+159
+00:12:08,920 --> 00:12:16,530
+Ini adalah fungsi yang sebenarnya menutup pangeran dari itu sebenarnya menjalankan fungsi itu.
+
+160
+00:12:16,540 --> 00:12:22,320
+Sekarang sekarang kita harus fungsi yang sangat sederhana yang hanya mencetak pernyataan tetapi banyak kali Anda benar-benar
+
+161
+00:12:22,370 --> 00:12:26,330
+ingin mengembalikan nilai sehingga Anda dapat mengaturnya sama dengan variabel lain.
+
+162
+00:12:26,330 --> 00:12:27,820
+Mari saya tunjukkan apa yang saya maksud dengan itu.
+
+163
+00:12:28,100 --> 00:12:36,160
+Baik maju dan katakan DPF dan buat fungsi yang disebut Square yang mengambil beberapa dan U-M beberapa nomor kolon
+
+164
+00:12:36,670 --> 00:12:39,440
+dan kemudian akan mengembalikan nomor itu.
+
+165
+00:12:39,430 --> 00:12:45,250
+Itu tidak hanya akan mencetak hasilnya atau mengembalikan kuadrat dari angka itu dan Anda dapat menggunakan kata kunci
+
+166
+00:12:45,310 --> 00:12:46,650
+kembali untuk melakukan itu.
+
+167
+00:12:46,730 --> 00:12:51,180
+Jadi, Anda akan mati rasa dengan kekuatan dua.
+
+168
+00:12:51,380 --> 00:12:58,420
+Jadi saya bisa mengatakan output sama dengan kuadrat dua.
+
+169
+00:12:58,960 --> 00:13:03,780
+Dan kemudian ketika saya melanjutkan dan memeriksa untuk apa hasilnya.
+
+170
+00:13:03,860 --> 00:13:08,260
+Dan itulah perbedaan antara mencetak sesuatu dan mengembalikan sesuatu.
+
+171
+00:13:08,260 --> 00:13:12,080
+Ketika Anda mengembalikan ini, Anda akan ingin mengaturnya sama dengan beberapa variabel lain.
+
+172
+00:13:12,230 --> 00:13:17,290
+Dan dengan cara itu Anda dapat memanggil hasil dalam variabel versus ketika Anda mencetak
+
+173
+00:13:17,290 --> 00:13:22,580
+sesuatu, Anda hanya akan mencetak nilai tetapi tidak benar-benar mengembalikannya atau menyimpannya di mana saja.
+
+174
+00:13:22,580 --> 00:13:28,360
+Akhirnya, sesuatu yang harus Anda ketahui tentang fungsi adalah bahwa mereka dapat memiliki
+
+175
+00:13:28,370 --> 00:13:37,630
+string dokumentasi. Anda dapat menambahkan string dokumentasi ke suatu fungsi dengan memasukkan satu set tiga kutipan terlampir dan tiga kali lipat
+
+176
+00:13:37,810 --> 00:13:38,770
+kutipan penutup.
+
+177
+00:13:38,770 --> 00:13:48,160
+Pada dasarnya memungkinkan Anda untuk memasukkan string raksasa melalui beberapa baris sehingga kita dapat mengatakan ini adalah docstring dan ini pada dasarnya
+
+178
+00:13:48,620 --> 00:13:51,060
+hanya komentar yang sangat panjang.
+
+179
+00:13:51,070 --> 00:13:54,260
+Jadi ini seperti komentar multi-baris.
+
+180
+00:13:54,260 --> 00:14:05,960
+Anda dapat pergi beberapa baris dan kami akan melanjutkan dan mengatakan fungsi ini kuadrat angka.
+
+181
+00:14:06,160 --> 00:14:07,340
+Jadi saya jalankan itu.
+
+182
+00:14:07,420 --> 00:14:13,060
+Sekarang saya memiliki string dokumentasi di dalam kotak jika saya hanya menjalankan kotak lagi tidak ada yang akan
+
+183
+00:14:13,540 --> 00:14:18,500
+mengubah apa yang akan berubah ketika mereka benar-benar memanggil string dokumentasi untuk informasi lebih lanjut tentang
+
+184
+00:14:18,500 --> 00:14:19,390
+fungsi ini.
+
+185
+00:14:19,480 --> 00:14:22,830
+Notebook Jupiter memiliki kemampuan yang sangat hebat untuk melakukan ini.
+
+186
+00:14:22,880 --> 00:14:27,650
+Anda mulai mengetik fungsi yang Anda inginkan dan kemudian memindahkan kursor Anda di akhir fungsi itu.
+
+187
+00:14:27,650 --> 00:14:34,270
+Anda mengklik tab shift dan Anda akan mendapatkan panggilan tanda tangan dari fungsi yang sebenarnya.
+
+188
+00:14:34,420 --> 00:14:36,700
+Berarti apa fungsi diharapkan untuk menerima.
+
+189
+00:14:36,880 --> 00:14:40,860
+Dan kemudian Anda dapat memperluas ini untuk mendapatkan string dokumentasi.
+
+190
+00:14:40,880 --> 00:14:44,150
+Dan ia mengatakan ini adalah docstring dapat pergi beberapa baris.
+
+191
+00:14:44,140 --> 00:14:49,750
+Square fungsi ini adalah angka dan itu akan sangat berguna bukan hanya untuk fungsi Anda sendiri
+
+192
+00:14:49,750 --> 00:14:54,010
+tetapi untuk fungsi yang sudah ada di perpustakaan yang akan kita pelajari.
+
+193
+00:14:54,560 --> 00:15:01,360
+Misalnya, jika kita kembali ke saat kita membahas jangkauan di sini, Anda mungkin berpikir itu agak aneh dan Anda mungkin
+
+194
+00:15:01,370 --> 00:15:04,640
+harus menghafal hal-hal sejauh mana angka pergi ke mana.
+
+195
+00:15:04,660 --> 00:15:11,950
+Nah jika Anda menggunakan buku Brunow Anda, Anda bisa mengetik di tab shift rentang dan perhatikan itu memberi Anda tanda tangan
+
+196
+00:15:11,950 --> 00:15:17,030
+dan kemudian juga memiliki docstring di mana Anda pada dasarnya mengatakan jarak berhenti.
+
+197
+00:15:17,020 --> 00:15:20,890
+Dan itu memberi Anda objek jangkauan atau Anda bisa mengatakan rentang dan kemudian mulai dan berhenti.
+
+198
+00:15:20,980 --> 00:15:25,690
+Dan itu memberi Anda lebih banyak informasi seperti mengembalikan objek yang menghasilkan urutan bilangan bulat dll. dan memiliki lebih banyak informasi di
+
+199
+00:15:25,690 --> 00:15:27,520
+sana untuk Anda.
+
+200
+00:15:27,560 --> 00:15:30,580
+Dan ini adalah hal yang akan kita gunakan sepanjang waktu selama kursus ini.
+
+201
+00:15:30,670 --> 00:15:34,090
+Ini cepat mengakses string dokumentasi.
+
+202
+00:15:34,100 --> 00:15:34,700
+Baiklah.
+
+203
+00:15:34,930 --> 00:15:36,740
+Silakan dan akhiri di sana.
+
+204
+00:15:36,770 --> 00:15:42,470
+Kita akan membahas di bagian selanjutnya dari seri kuliah ini ekspresi Arlanda menggunakan peta dan
+
+205
+00:15:42,460 --> 00:15:47,330
+filter dan metode yang dapat Anda gunakan pada objek tipe data umum.
+
+206
+00:15:47,330 --> 00:15:48,010
+Baiklah.
+
+207
+00:15:48,010 --> 00:15:52,550
+Biarkan saya keluar dan cepat meninjau semua yang terjadi dalam kuliah ini.
+
+208
+00:15:52,660 --> 00:15:54,430
+Kami membahas cara membuat fungsi.
+
+209
+00:15:54,460 --> 00:15:59,590
+Kata kuncinya adalah jika Anda memasukkan nama fungsi Anda dan kemudian Anda bisa memberikan parameter
+
+210
+00:15:59,620 --> 00:16:01,420
+yang ingin Anda dapatkan.
+
+211
+00:16:01,420 --> 00:16:06,130
+Dan kemudian string dokumentasi untuk mereka yang ingin Anda gunakan kembali jika Anda ingin
+
+212
+00:16:06,130 --> 00:16:08,160
+benar-benar mengembalikan nilai fungsi itu.
+
+213
+00:16:08,190 --> 00:16:13,760
+Ingat perbedaan antara memanggil fungsi tanda kurung atau tanpa fungsi dengan tanda kurung.
+
+214
+00:16:13,780 --> 00:16:15,830
+Anda bisa mendapatkan fungsinya sendiri.
+
+215
+00:16:16,390 --> 00:16:21,170
+Kami juga belajar tentang kesalahpahaman yang memecah jenis untuk loop menjadi satu
+
+216
+00:16:21,160 --> 00:16:23,470
+baris di dalam kurung ini.
+
+217
+00:16:23,470 --> 00:16:28,420
+Kemudian kami belajar tentang rentang yang memungkinkan Anda untuk dengan cepat membuat daftar urutan bilangan
+
+218
+00:16:28,420 --> 00:16:30,850
+bulat dari awal hingga titik berhenti.
+
+219
+00:16:31,210 --> 00:16:35,610
+Kami belajar tentang empat loop dan juga loop.
+
+220
+00:16:36,010 --> 00:16:38,870
+Baiklah, terima kasih semuanya dan sampai jumpa di kuliah berikutnya

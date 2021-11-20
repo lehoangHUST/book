@@ -1,0 +1,531 @@
+1
+00:00:05,490 --> 00:00:10,830
+Halo semua dan selamat datang di kuliah plot Matrix dengan Seaborn dalam kuliah ini kita
+
+2
+00:00:10,830 --> 00:00:14,940
+akan belajar bagaimana membuat plot matriks terutama peta panas menggunakan Seaborn.
+
+3
+00:00:15,120 --> 00:00:18,300
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+4
+00:00:18,870 --> 00:00:19,200
+BAIK.
+
+5
+00:00:19,200 --> 00:00:21,500
+Di sini saya di notebook Jupiter.
+
+6
+00:00:21,510 --> 00:00:27,280
+Aku pergi ke depan dan berkata inport seaborne sebagai Asinus dan kemudian mengatur plot peta secara langsung.
+
+7
+00:00:27,330 --> 00:00:29,970
+Lalu saya memuat dua set data.
+
+8
+00:00:30,000 --> 00:00:35,550
+Saya telah memuat frame data tips atau kumpulan data menggunakan Esson karena memuat kumpulan data garis bawah
+
+9
+00:00:35,550 --> 00:00:37,260
+dan kemudian meneruskan tip string.
+
+10
+00:00:37,290 --> 00:00:42,660
+Dan saya melakukan hal yang sama untuk set data penerbangan menggunakan S dan S yang set data
+
+11
+00:00:42,660 --> 00:00:46,030
+rendah dan kemudian mengirimkan data tip yang kami lihat sebelumnya.
+
+12
+00:00:46,040 --> 00:00:46,980
+Inilah yang terbaik.
+
+13
+00:00:47,040 --> 00:00:48,430
+Tetapi set data penerbangan kami belum.
+
+14
+00:00:48,430 --> 00:00:49,970
+Jadi mari kita cepat melihatnya.
+
+15
+00:00:50,010 --> 00:00:56,130
+Kumpulan data penerbangan terutama hanya menunjukkan jumlah penumpang yang terbang di bulan tertentu
+
+16
+00:00:56,220 --> 00:00:57,750
+pada tahun tertentu.
+
+17
+00:00:57,750 --> 00:01:04,230
+Sekarang mari kita bicara tentang peta panas yang merupakan cara utama kami menunjukkan semacam plot matriks agar
+
+18
+00:01:04,230 --> 00:01:06,630
+peta panas berfungsi dengan baik.
+
+19
+00:01:06,660 --> 00:01:09,630
+Data Anda harus sudah dalam bentuk matriks.
+
+20
+00:01:09,630 --> 00:01:15,850
+Dan yang saya maksud dengan bentuk matriks adalah agar nama indeks dan nama kolom cocok
+
+21
+00:01:15,850 --> 00:01:21,500
+sehingga nilai sel sebenarnya menunjukkan sesuatu yang relevan dengan kedua nama tersebut.
+
+22
+00:01:21,540 --> 00:01:28,680
+Apa yang saya maksud dengan itu misalnya jika saya melihat frame data tips sekarang saya memiliki total tagihan yang
+
+23
+00:01:28,890 --> 00:01:35,850
+merupakan semacam label atau variabel dan jika saya melihat salah satu nilai dalam sel itu 16 dolar dan 99
+
+24
+00:01:35,850 --> 00:01:36,950
+sen .
+
+25
+00:01:37,140 --> 00:01:42,420
+Namun baris bukan variabel aktual untuk mendapatkan ini ke dalam bentuk matriks.
+
+26
+00:01:42,420 --> 00:01:46,830
+Saya perlu memiliki kedua variabel pada kolom dan baris.
+
+27
+00:01:47,370 --> 00:01:54,420
+Saya bisa melakukannya melalui banyak metode biasanya melalui tabel pivot atau mencoba untuk mendapatkan data korelasi.
+
+28
+00:01:54,570 --> 00:01:56,860
+Kami akan pergi ke depan dan melakukan data korelasi terlebih dahulu.
+
+29
+00:01:56,940 --> 00:02:02,130
+Jika saya menyebutnya tip, berhentilah tutup kurung.
+
+30
+00:02:02,130 --> 00:02:06,290
+Sekarang kita memiliki bentuk matriks dari beberapa jenis data di sini.
+
+31
+00:02:06,450 --> 00:02:15,390
+Dan apa yang Anda maksud dengan itu sekarang adalah kolom dan nama variabel indeks sebenarnya menunjukkan relevansi untuk
+
+32
+00:02:15,390 --> 00:02:19,880
+kolom dan nama indeks untuk sel tempat mereka cocok.
+
+33
+00:02:19,920 --> 00:02:21,190
+Dan ini adalah bentuk matriks.
+
+34
+00:02:21,210 --> 00:02:26,370
+Anda akan membutuhkan data Anda untuk memanggil peta panas di atasnya dan kemudian itu
+
+35
+00:02:26,370 --> 00:02:30,920
+sebenarnya sederhana seperti memanggil Asinus dot peta panas dan kemudian data Anda.
+
+36
+00:02:30,990 --> 00:02:39,500
+Mari masuk dan menyimpan Tipps think core sebagai TC dan kemudian meneruskannya ke peta panas.
+
+37
+00:02:39,660 --> 00:02:45,840
+Dan di sini kita dapat melihat peta panas atau peta panas benar-benar melakukan itu warna dalam nilai-nilai tersebut
+
+38
+00:02:45,840 --> 00:02:47,280
+berdasarkan semacam skala gradien.
+
+39
+00:02:47,280 --> 00:02:53,850
+Jadi jika saya melihat pada kerangka data TCE asli saya pada dasarnya hanya mengatur angka-angka ini ke gradien pada
+
+40
+00:02:53,910 --> 00:02:55,970
+skala warna dan kemudian mengisinya.
+
+41
+00:02:56,100 --> 00:03:01,380
+Dan dengan cara itu jika Anda memiliki kerangka data korelasi yang sangat besar atau beberapa data
+
+42
+00:03:01,380 --> 00:03:07,390
+formulir matriks lainnya, Anda dapat dengan mudah memberi tahu angka-angka berapa nilainya relatif satu sama lain menggunakan peta panas.
+
+43
+00:03:07,390 --> 00:03:12,210
+Dan itulah penggunaan utama utama untuk plot matriks.
+
+44
+00:03:12,210 --> 00:03:18,420
+Argumen berguna lainnya yang dapat Anda berikan di sini untuk memanaskan peta selain hanya data Anda dan rotasi
+
+45
+00:03:18,420 --> 00:03:26,160
+sehingga Anda dapat mengatakan A dan OT sebagai argumen sama dengan benar dan mereka akan membubuhi keterangan nilai numerik aktual yang termasuk dalam
+
+46
+00:03:26,160 --> 00:03:27,350
+setiap sel ini.
+
+47
+00:03:27,360 --> 00:03:31,680
+Anda tidak hanya harus pergi dari warna tetapi Anda juga dapat pergi dari nilai aktual di sini.
+
+48
+00:03:31,980 --> 00:03:38,730
+Dan kemudian Anda juga dapat menentukan sebagai Lihat peta pemetaan warna aktual yang Anda inginkan akan pergi
+
+49
+00:03:38,730 --> 00:03:43,580
+ke peta warna dan opsi nanti di tampaknya dosen misalnya menunjukkan contoh.
+
+50
+00:03:43,710 --> 00:03:47,070
+Cool warm sebagai string yang memverifikasi peta warna.
+
+51
+00:03:47,070 --> 00:03:49,200
+Dan di sini Anda dapat mulai melihat peta warna.
+
+52
+00:03:49,230 --> 00:03:52,650
+Dingin hangat pada data yang sama.
+
+53
+00:03:52,650 --> 00:03:59,700
+Sekarang mari kita tinjau kembali data penerbangan kemudian lanjutkan dan ketik penerbangan dan kita dapat melihat kita memiliki
+
+54
+00:03:59,700 --> 00:04:05,640
+semua tahun ini bulan ini penumpang ini dan saya perlu memasukkan ini ke dalam bentuk
+
+55
+00:04:05,670 --> 00:04:13,510
+matriks yang berarti saya perlu mengubah entah bagaimana salah satu dari variabel ini tampaknya menjadi panggilan atau nama jalan indeks aktual.
+
+56
+00:04:13,560 --> 00:04:16,500
+Jadi saya ingin salah satu dari variabel-variabel ini Bulan Tahun atau penumpang.
+
+57
+00:04:16,500 --> 00:04:21,340
+Mari kita lanjutkan dan katakan bulan untuk menjadi indeks.
+
+58
+00:04:21,360 --> 00:04:27,330
+Jadi saya akan mengatakan indeks sama dengan bulan dan kemudian saya akan pergi
+
+59
+00:04:27,330 --> 00:04:36,330
+keluar dan mengatur kolom sama dengan tahun dan kemudian satu-satunya hal yang harus saya lakukan adalah menentukan nilainya dan itu
+
+60
+00:04:36,330 --> 00:04:39,920
+akan terus maju dan menjadi kolom penumpang.
+
+61
+00:04:41,990 --> 00:04:44,400
+Masuk dan jalankan ini dan lihat seperti apa ini sekarang.
+
+62
+00:04:44,860 --> 00:04:45,310
+BAIK.
+
+63
+00:04:45,370 --> 00:04:48,940
+Sekarang saya memiliki data saya dalam beberapa bentuk matriks.
+
+64
+00:04:48,970 --> 00:04:53,600
+Anda dapat melakukannya dengan Pivot Table dengan cukup mudah, tergantung jika data Anda berbaris dengan benar.
+
+65
+00:04:53,740 --> 00:04:59,470
+Sekarang Anda dapat melihat saya memiliki banyak angka di sini yang berkorelasi baik dengan tidak hanya variabel
+
+66
+00:04:59,470 --> 00:05:01,360
+kolom tetapi juga variabel indeks.
+
+67
+00:05:01,420 --> 00:05:07,570
+Jadi saya bisa melihat di sini pada tahun 1952 misalnya pada bulan April ada 181 penumpang.
+
+68
+00:05:07,570 --> 00:05:11,770
+Sekarang yang ingin saya lakukan adalah menggunakan peta panas untuk dengan cepat memvisualisasikan data ini.
+
+69
+00:05:11,960 --> 00:05:18,280
+Saya akan menuju dan mengatur ini sama dengan FP untuk pivot penerbangan dan kemudian panggil S dan
+
+70
+00:05:19,690 --> 00:05:21,820
+S peta panas pada F-P.
+
+71
+00:05:21,970 --> 00:05:26,530
+Dan di sini kita bisa melihat peta panas untuk tabel penerbangan yang diputar.
+
+72
+00:05:26,710 --> 00:05:30,710
+Dan sekarang saya bisa melihat berdasarkan pada gradien warna data dalam banyak format.
+
+73
+00:05:30,880 --> 00:05:36,400
+Jadi saya dapat dengan mudah mengetahui bulan mana di tahun mana memiliki penerbangan terbanyak dan masuk
+
+74
+00:05:36,550 --> 00:05:43,030
+akal bahwa secara bertahap seiring berjalannya waktu atau semakin lama waktu Anda mendapatkan lebih banyak penerbangan maka itu masuk
+
+75
+00:05:43,030 --> 00:05:47,950
+akal karena seiring berjalannya waktu semakin banyak orang berada di pesawat, lebih banyak penerbangan
+
+76
+00:05:48,280 --> 00:05:56,530
+terjadi dan Anda juga dapat melihat berdasarkan bulan bahwa perjalanan bulan populer biasanya selama bulan-bulan musim panas Juni Juli dan Agustus setidaknya untuk data kami.
+
+77
+00:05:57,370 --> 00:06:04,510
+Sekarang yang juga bisa Anda lakukan adalah menambahkan argumen seperti peta laut dan mari masuk dan
+
+78
+00:06:04,510 --> 00:06:08,800
+tunjukkan contoh peta laut lain yang berguna sebagai magma.
+
+79
+00:06:09,490 --> 00:06:16,570
+Dan sekarang kita juga bisa melihat dari gelap ke terang warna aktual di sini variasi dalam argumen lain yang dapat
+
+80
+00:06:16,570 --> 00:06:23,410
+Anda lewati dan peta panas yang kadang-kadang orang suka gunakan adalah seperti warna dan garis yang pada dasarnya sekarang
+
+81
+00:06:26,170 --> 00:06:27,870
+di peta panas ini.
+
+82
+00:06:27,880 --> 00:06:32,560
+Semua sel ini saling bersentuhan secara langsung tetapi terkadang Anda mungkin menginginkan pemisahan.
+
+83
+00:06:32,710 --> 00:06:36,140
+Jadi, Anda dapat menentukan garis withs menjadi sedikit lebih tebal.
+
+84
+00:06:36,340 --> 00:06:40,740
+Kami akan masuk dan memasukkan satu di sana dan Anda dapat mendukung Feitel warna garis.
+
+85
+00:06:40,870 --> 00:06:42,970
+Kita akan pergi dan menentukan itu menjadi putih.
+
+86
+00:06:42,970 --> 00:06:46,830
+Sekarang jika saya menjalankan ini saya mendapatkan garis-garis ini di antara setiap sel.
+
+87
+00:06:46,870 --> 00:06:48,890
+Dan terkadang itu sedikit lebih mudah dibaca.
+
+88
+00:06:49,360 --> 00:06:55,790
+Anda dapat membuat garis-garis ini sangat tebal jika Anda ingin lebih banyak pemisahan dan Anda juga dapat mengubah
+
+89
+00:06:55,790 --> 00:06:56,740
+warna garis.
+
+90
+00:06:56,740 --> 00:07:01,750
+Jadi misalnya jika saya kembali ke mungkin lain jahitan yang lain kadang-kadang orang gunakan seperti yang kita
+
+91
+00:07:01,780 --> 00:07:03,480
+tunjukkan di depan kita dingin.
+
+92
+00:07:03,740 --> 00:07:07,500
+Dan ini akan terlihat seperti mungkin Anda menginginkan sesuatu yang tidak putih.
+
+93
+00:07:07,540 --> 00:07:12,130
+Anda juga dapat memilih seperti hitam.
+
+94
+00:07:12,130 --> 00:07:15,760
+Jadi sebenarnya Anda memiliki banyak penyesuaian di sini sejauh bagaimana Anda sebenarnya ingin memisahkan ini.
+
+95
+00:07:15,760 --> 00:07:20,890
+Mari kita pergi untuk menghapus semuanya dan hanya menunjukkan peta panas asli di sini.
+
+96
+00:07:20,890 --> 00:07:27,340
+Sekarang mari kita bicara tentang plot tipe Matrix kedua di seaborne yang merupakan peta cluster dan
+
+97
+00:07:27,340 --> 00:07:33,260
+peta cluster sebenarnya akan menggunakan hierarchal clustering untuk menghasilkan versi cluster peta panas ini.
+
+98
+00:07:33,290 --> 00:07:37,900
+Mari saya tunjukkan contoh di sini kita memiliki peta panas asli tapi sekarang saya akan
+
+99
+00:07:38,980 --> 00:07:45,420
+memanggil peta Asinus cluster di F. P. dan perhatikan apa yang kita miliki di sini.
+
+100
+00:07:45,430 --> 00:07:49,470
+Kami memiliki data tentang itu perlu memperkecil untuk menunjukkan ini sepenuhnya.
+
+101
+00:07:49,470 --> 00:07:55,540
+Tapi sekarang kami memiliki data dan kelompok hierarki kecil ini dan ini pada dasarnya mencoba
+
+102
+00:07:55,570 --> 00:07:59,180
+untuk mengelompokkan kolom dan baris berdasarkan kesamaan mereka.
+
+103
+00:07:59,190 --> 00:08:06,730
+Dan ini tiba-tiba menunjukkan tahun dan bulan dan kelompok dan bulan di sini pada sumbu y Anda dapat melihat
+
+104
+00:08:06,730 --> 00:08:08,370
+tidak lagi teratur.
+
+105
+00:08:08,470 --> 00:08:11,400
+Mereka pergi September Juni Agustus Juli Oktober April.
+
+106
+00:08:11,470 --> 00:08:16,270
+Dan alasan untuk itu adalah karena mereka telah dikelompokkan ke bulan-bulan yang paling mirip disatukan dan hal
+
+107
+00:08:16,570 --> 00:08:19,810
+yang sama selama bertahun-tahun Anda dapat melihat tahun-tahun tertentu sekarang rusak.
+
+108
+00:08:19,830 --> 00:08:22,940
+Itu terjadi 1949 1950 1953.
+
+109
+00:08:23,050 --> 00:08:28,570
+Itu pada dasarnya adalah kumpulan informasi untuk mencoba menunjukkan kolom dan baris yang mirip satu sama lain
+
+110
+00:08:28,580 --> 00:08:33,360
+sehingga saya dapat melihat sekarang bahwa 1959 dan 1960 sangat mirip satu sama lain.
+
+111
+00:08:33,490 --> 00:08:35,250
+Demikian juga bulan Agustus dan Juli kami.
+
+112
+00:08:35,290 --> 00:08:40,570
+Dan Anda dapat melihat berbagai tingkatan hierarki kelompok berdasarkan dari diagram pohon semacam ini
+
+113
+00:08:40,570 --> 00:08:48,550
+tetapi pada sumbu y dan sumbu x dan sekarang Anda benar-benar dapat mulai menyimpulkan informasi dari plot untuk membuatnya lebih
+
+114
+00:08:48,700 --> 00:08:53,020
+jelas. apa yang bisa kita lakukan adalah mengubah pemetaan warna.
+
+115
+00:08:53,020 --> 00:08:55,210
+Jadi lihat peta sama dengan string.
+
+116
+00:08:55,210 --> 00:08:58,020
+Dinginkan lagi.
+
+117
+00:08:58,220 --> 00:09:03,250
+Dan sekarang kita benar-benar dapat melihat cluster sehingga Anda dapat melihat bahwa ada cluster antara Agustus
+
+118
+00:09:03,550 --> 00:09:08,420
+dan Juli dengan sangat jelas dan hal lain yang dapat Anda lakukan adalah menstandardisasi skala.
+
+119
+00:09:08,440 --> 00:09:12,400
+Jadi saat ini kami masih menggunakan penumpang dari 0 hingga 600.
+
+120
+00:09:12,520 --> 00:09:19,690
+Tetapi jika Anda ingin menormalkan ini, Anda dapat melewati argumen yang disebut skala standar dan input 1
+
+121
+00:09:19,690 --> 00:09:26,920
+dan ini akan menormalkan ini dari 0 hingga 1 dan Anda benar-benar dapat melihat berdasarkan skala yang
+
+122
+00:09:26,950 --> 00:09:29,890
+dinormalisasi kesamaan dari cluster berdasarkan pewarnaan.
+
+123
+00:09:30,130 --> 00:09:35,800
+Jadi sepertinya bulan November dan Februari ini semacam bulan-bulan awal musim dingin yang jauh lebih
+
+124
+00:09:35,800 --> 00:09:41,120
+dekat dengan penumpang rendah dan jumlah penumpang tinggi terutama di bulan-bulan musim panas ini.
+
+125
+00:09:41,170 --> 00:09:41,770
+BAIK.
+
+126
+00:09:41,950 --> 00:09:45,010
+Saya mendorong Anda untuk terus maju dan mengeksplorasi dokumentasi untuk peta cluster
+
+127
+00:09:45,010 --> 00:09:49,720
+Ini adalah sesuatu yang Anda minati tetapi Anda mungkin ingin menunggu sampai kami benar-benar mempelajari algoritma
+
+128
+00:09:49,730 --> 00:09:54,460
+pengelompokan pembelajaran mesin sehingga kami dapat lebih memahami apa yang sebenarnya terjadi dengan matematika di balik
+
+129
+00:09:54,460 --> 00:09:55,360
+metode ini.
+
+130
+00:09:55,400 --> 00:09:59,770
+BERNANKE Saya hanya menganggapnya sebagai metode yang menarik untuk hanya menyimpulkan sedikit
+
+131
+00:09:59,770 --> 00:10:06,400
+lebih banyak informasi dari panas normal daripada peta panas akan menampilkan hal-hal dalam urutan yang Anda letakkan di peta klaster
+
+132
+00:10:06,400 --> 00:10:10,890
+akan mengelompokkan barang-barang dalam suatu urutan sehingga kelompok yang serupa tutup satu sama lain.
+
+133
+00:10:10,900 --> 00:10:13,930
+Baiklah, terima kasih semuanya dan sampai jumpa di kuliah berikutnya

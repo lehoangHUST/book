@@ -1,0 +1,807 @@
+1
+00:00:05,850 --> 00:00:10,470
+Hola a todos y bienvenidos a la conferencia del marco de datos y esta conferencia finalmente
+
+2
+00:00:10,470 --> 00:00:15,170
+aprenderemos sobre los marcos de datos que se basan en los marcos de datos de objetos serios.
+
+3
+00:00:15,180 --> 00:00:17,800
+Va a ser su principal herramienta cuando trabaje con pandas.
+
+4
+00:00:17,970 --> 00:00:21,680
+Avancemos y vayamos al cuaderno de Júpiter para ver cómo funciona todo.
+
+5
+00:00:21,690 --> 00:00:22,020
+Todo bien.
+
+6
+00:00:22,020 --> 00:00:24,410
+Aquí estoy en el Cuaderno de Júpiter.
+
+7
+00:00:24,450 --> 00:00:29,940
+Vamos a seguir adelante y vamos a decir que algunos pasteles y P importan pandas PD
+
+8
+00:00:29,940 --> 00:00:35,880
+y voy a hacer una última cosa aquí para ahorrarles Rand y Rand de importación aleatoria de Pied-Bot.
+
+9
+00:00:36,350 --> 00:00:38,370
+Y luego voy a salir y establecer una semilla.
+
+10
+00:00:38,370 --> 00:00:42,660
+Y lo que significa una semilla es solo asegurarnos de obtener los mismos números aleatorios.
+
+11
+00:00:42,660 --> 00:00:45,510
+De esa manera, si me estás siguiendo, verás los mismos números aleatorios.
+
+12
+00:00:45,540 --> 00:00:49,260
+Veo que puede entrar y decir esa semilla al azar.
+
+13
+00:00:49,290 --> 00:00:49,550
+Todo bien.
+
+14
+00:00:49,590 --> 00:00:57,840
+Vamos a explorar el diferente comando y el ADF es igual al marco de datos PD y puedes usar
+
+15
+00:00:57,840 --> 00:01:01,460
+la pestaña aquí en Júpiter y hasta completar automáticamente.
+
+16
+00:01:01,770 --> 00:01:05,200
+Y note que el EFIS capitaliza en la pestaña de cambio de Windu.
+
+17
+00:01:05,200 --> 00:01:10,770
+Verifique la docstring y la firma inicial para este marco de datos PD.
+
+18
+00:01:10,770 --> 00:01:16,830
+Tenemos un argumento de datos y un argumento de índice tal como lo hicimos para las series, pero luego tenemos los
+
+19
+00:01:16,830 --> 00:01:18,210
+argumentos de las columnas adicionales.
+
+20
+00:01:18,450 --> 00:01:23,130
+Avancemos y construyamos esto con algunos datos aleatorios y veremos cómo se ve realmente un
+
+21
+00:01:23,130 --> 00:01:24,000
+marco de datos.
+
+22
+00:01:24,000 --> 00:01:31,090
+Lo primero que voy a hacer es pasar esos argumentos de datos y de hecho voy a llamar a Ranz
+
+23
+00:01:31,110 --> 00:01:37,620
+y a 5 coma 4 y luego los siguientes que quiere pasar son el índice en el índice.
+
+24
+00:01:37,620 --> 00:01:42,650
+Podemos hacer una lista de personajes aquí.
+
+25
+00:01:42,660 --> 00:01:48,850
+Voy a entrar y decir A B C D E.
+
+26
+00:01:49,320 --> 00:01:53,950
+Y finalmente, para las columnas, voy a seguir y decir el x y z.
+
+27
+00:01:54,120 --> 00:02:05,810
+Así que voy a decir que w x y z va a seguir adelante y ejecutar esto y luego pasar los datos solo se muestran y luego obtenemos
+
+28
+00:02:05,820 --> 00:02:07,020
+una buena pantalla.
+
+29
+00:02:07,050 --> 00:02:12,370
+Y esto probablemente se parece mucho a las entradas de Excel y a un portátil más profundo, y eso es bueno.
+
+30
+00:02:12,540 --> 00:02:18,060
+Si está usando otro editor de ID, es posible que no obtenga una pantalla nítida tan
+
+31
+00:02:18,060 --> 00:02:21,560
+bonita, pero debería obtener un resultado impreso similar a este.
+
+32
+00:02:21,630 --> 00:02:22,060
+Todo bien.
+
+33
+00:02:22,110 --> 00:02:31,130
+Entonces, básicamente, lo que tenemos aquí es una lista de columnas w x y z y filas correspondientes A B C D E.
+
+34
+00:02:31,170 --> 00:02:35,240
+Ahora cada una de estas columnas es en realidad solo una serie de pandas.
+
+35
+00:02:35,250 --> 00:02:42,060
+Así que W es una serie de pandas, así como X Y y Z, y todos comparten un índice común y eso es básicamente
+
+36
+00:02:42,060 --> 00:02:46,350
+todo el marco de datos, es solo un conjunto de series que comparten un índice.
+
+37
+00:02:46,350 --> 00:02:51,830
+Avancemos y mostremos cómo podemos utilizar la indexación y la selección, de hecho, agarre uno de estos
+
+38
+00:02:52,080 --> 00:02:59,280
+objetos serios o varias de estas columnas de una manera y la forma principal de hacerlo es diciendo DMF y luego usando la
+
+39
+00:02:59,340 --> 00:03:02,920
+notación Rackett y luego pasando el nombre de la columna .
+
+40
+00:03:02,940 --> 00:03:05,590
+En este caso, avancemos y agarremos la columna W.
+
+41
+00:03:05,610 --> 00:03:12,180
+Entonces, como una cadena de pass w, esto devuelve la columna W y ahora mira la salida.
+
+42
+00:03:12,180 --> 00:03:14,590
+Ahora esto parece una serie.
+
+43
+00:03:14,590 --> 00:03:16,950
+Y eso es porque eso es exactamente lo que es la columna W.
+
+44
+00:03:16,950 --> 00:03:20,160
+Es solo una serie y puedes confirmarlo diciendo.
+
+45
+00:03:20,160 --> 00:03:27,870
+Tipo de d f de W y muestra que es Panas que centra esa serie esa serie.
+
+46
+00:03:27,870 --> 00:03:33,940
+Si acabo de decir escriba en el objeto de DFA, obtendré un marco de datos.
+
+47
+00:03:34,260 --> 00:03:39,420
+De nuevo, solo para reiterar el hecho de que un marco de datos es solo un conjunto de series que
+
+48
+00:03:39,450 --> 00:03:40,600
+comparten el mismo índice.
+
+49
+00:03:40,590 --> 00:03:45,270
+Ahora hay dos maneras diferentes de tomar una columna de un marco de datos.
+
+50
+00:03:45,300 --> 00:03:49,780
+La forma principal y la forma en que siempre debe hacerlo es usar este tipo de notación de corchetes y luego
+
+51
+00:03:49,800 --> 00:03:51,090
+pasar el nombre de la columna.
+
+52
+00:03:51,090 --> 00:03:56,640
+Sin embargo, si estás familiarizado con la secuela, muchas veces estás seleccionando una columna que pasas en una tabla y luego
+
+53
+00:03:57,090 --> 00:03:58,470
+el nombre de la columna.
+
+54
+00:03:58,530 --> 00:04:04,280
+Esto también funciona para pantless, podrías decir dot y luego el nombre de la columna.
+
+55
+00:04:04,440 --> 00:04:10,020
+Sin embargo, le recomendaría que no use esto porque puede confundirse con los diversos métodos que están
+
+56
+00:04:10,020 --> 00:04:11,870
+disponibles fuera del marco de datos.
+
+57
+00:04:11,940 --> 00:04:18,160
+Por ejemplo, si digo DFA dot y luego hago clic en la pestaña Veo un montón de métodos disponibles para mí.
+
+58
+00:04:18,480 --> 00:04:22,980
+Y esos son un montón de métodos que aprenderemos a medida que aprendamos más sobre los pandas, pero
+
+59
+00:04:22,980 --> 00:04:28,050
+lo que puede pasar es que uno de estos métodos se sobrescribe con el nombre de una columna y luego
+
+60
+00:04:28,050 --> 00:04:32,420
+Panther se va a confundir si usted está preguntando para un método o un nombre de columna real.
+
+61
+00:04:32,430 --> 00:04:38,410
+Así que debe hacer para evitar que, como siempre, haya una especie de notación de corchetes al solicitar una columna.
+
+62
+00:04:38,970 --> 00:04:39,500
+DE ACUERDO.
+
+63
+00:04:39,510 --> 00:04:44,590
+Si quiere varias columnas, puede continuar y pasar una lista de columnas.
+
+64
+00:04:44,820 --> 00:04:49,800
+voy a pasar y una lista de nombres de columnas que resultará en otro conjunto de corchetes aquí.
+
+65
+00:04:49,800 --> 00:04:52,170
+Así que sé que paso entre corchetes y luego
+
+66
+00:04:52,200 --> 00:05:02,970
+Por ejemplo, si quiero que las columnas W y Z pasen una lista aquí, resalto WNC y recupero un marco de datos
+
+67
+00:05:02,970 --> 00:05:05,520
+que contiene esas dos series.
+
+68
+00:05:05,520 --> 00:05:10,620
+Y eso significa que cuando solicite varias columnas, en realidad estoy obteniendo un marco de datos.
+
+69
+00:05:10,620 --> 00:05:13,240
+Solicité una sola columna para obtener una serie.
+
+70
+00:05:13,380 --> 00:05:17,510
+Y en el sistema de libreta de apuntes de Júpiter eso se nota por la forma en que se muestra la salida.
+
+71
+00:05:17,990 --> 00:05:25,540
+OK continuemos y sigamos con la creación de una nueva columna. Palla's admite la creación de nuevas
+
+72
+00:05:25,560 --> 00:05:29,390
+columnas simplemente especificando la columna como si ya existiera.
+
+73
+00:05:29,400 --> 00:05:31,100
+Por ejemplo nuevo.
+
+74
+00:05:31,140 --> 00:05:34,550
+Ahora si ejecuto esto obtendré un error y es un guardián.
+
+75
+00:05:34,570 --> 00:05:37,500
+El desplazamiento hasta aquí es decir Kear nuevo.
+
+76
+00:05:37,680 --> 00:05:42,560
+Y básicamente está tratando de decirte que no puede encontrarlo, que no hay ninguna llave nueva allí.
+
+77
+00:05:42,570 --> 00:05:50,190
+Sin embargo, cuando está creando una etiqueta hash, la suelta y la vuelve a poner cuando está creando una
+
+78
+00:05:50,190 --> 00:05:51,200
+nueva columna.
+
+79
+00:05:51,210 --> 00:05:56,280
+el lado derecho del signo igual, usar otras columnas con aritmética para obtener
+
+80
+00:05:56,850 --> 00:06:05,610
+una nueva columna; por ejemplo, puede decir que la nueva columna DSF como si ya existiera es igual a DFW Plus la mosca.
+
+81
+00:06:05,610 --> 00:06:09,970
+En realidad, puede definirlo como si ya existe y luego, en
+
+82
+00:06:10,150 --> 00:06:11,710
+Y esto funcionará sin ningún error.
+
+83
+00:06:11,910 --> 00:06:18,780
+Y ahora si reviso DF si esa nueva columna está realmente allí y para eliminar columnas,
+
+84
+00:06:18,780 --> 00:06:19,890
+puede decir DFT.
+
+85
+00:06:19,920 --> 00:06:28,020
+Suelta puedes decir drop deific y pasar el nombre de la columna real que deseas soltar.
+
+86
+00:06:28,020 --> 00:06:31,430
+Ahora si solo haces esto por sí mismo obtendrás un error.
+
+87
+00:06:31,500 --> 00:06:35,340
+Y entremos y verifiquemos qué error dice el error de valor.
+
+88
+00:06:35,390 --> 00:06:36,120
+Nos desplazamos hacia abajo.
+
+89
+00:06:36,120 --> 00:06:40,540
+Dice etiquetas nuevas que no figuran en Access.
+
+90
+00:06:40,620 --> 00:06:47,660
+Y si hago clic en la pestaña shift en el método drop, observe que de manera predeterminada dice que el acceso es
+
+91
+00:06:47,670 --> 00:06:52,390
+igual a cero acceso igual a cero para el método drop se refiere al índice.
+
+92
+00:06:52,500 --> 00:07:01,050
+Si de hecho quiero referirme a las columnas, necesito especificar que el acceso es igual a 1 y
+
+93
+00:07:01,680 --> 00:07:04,430
+luego soltará esa nueva columna aquí.
+
+94
+00:07:04,830 --> 00:07:10,260
+Ahora hay dos cosas que se deben tener en cuenta al usar este drop DFT. Lo primero que debe saber
+
+95
+00:07:10,260 --> 00:07:15,900
+es que esto no sucede en el lugar, lo que significa que no estoy afectando el estado del frame a menos
+
+96
+00:07:16,070 --> 00:07:18,370
+que específicamente especifique que esto ocurra en su lugar.
+
+97
+00:07:18,470 --> 00:07:20,450
+Quiero mostrarte lo que quiero decir con eso.
+
+98
+00:07:20,610 --> 00:07:28,380
+He llamado a esta línea D-flat drop acceso igual a 1 si llamé a DMF veré que todavía
+
+99
+00:07:28,380 --> 00:07:29,910
+tengo esa nueva columna.
+
+100
+00:07:29,910 --> 00:07:36,030
+Eso significa que necesito especificar realmente como un argumento para cambiar tiene que mostrar el argumento
+
+101
+00:07:36,630 --> 00:07:42,840
+in situ en muchos métodos Pandurs requerirá que estos argumentos en su lugar se establezcan en verdadero.
+
+102
+00:07:42,990 --> 00:07:48,450
+Y la razón por la que los panderers lo hacen es que, para no perder accidentalmente información,
+
+103
+00:07:48,450 --> 00:07:53,820
+en caso de que hayas hecho un montón de ajustes en tus datos, no querrás perderlos accidentalmente.
+
+104
+00:07:53,820 --> 00:07:59,520
+in-place igual a true si realmente quiere que muchos de estos cambios permanezcan y ocurran en su lugar.
+
+105
+00:07:59,550 --> 00:08:01,260
+Entonces, Pandurs requiere que diga
+
+106
+00:08:01,380 --> 00:08:07,800
+Y ahora si llamo a DFI ejecutando la celda, note que la nueva columna ahora se elimina de manera permanente
+
+107
+00:08:07,800 --> 00:08:15,960
+porque ocurrió en su lugar y algo que debe tenerse en cuenta aquí es que también podemos usar el menú desplegable izquierdo para soltar filas,
+
+108
+00:08:15,960 --> 00:08:16,450
+por ejemplo.
+
+109
+00:08:16,470 --> 00:08:19,930
+Salgamos y usemos esto para soltar la fila e.
+
+110
+00:08:20,130 --> 00:08:28,290
+Diré que DF tiene caída. Paso una E y también puedo decir que el eje es igual a cero.
+
+111
+00:08:28,290 --> 00:08:30,870
+Ahora recuerde que en realidad no tiene que agregar eso como argumento.
+
+112
+00:08:30,870 --> 00:08:32,230
+Ese es el predeterminado.
+
+113
+00:08:32,820 --> 00:08:40,950
+Así que vamos y solo digamos el drop E y allí hemos podido soltar el e ya que Access es igual a
+
+114
+00:08:40,950 --> 00:08:41,410
+cero.
+
+115
+00:08:41,460 --> 00:08:45,260
+Y funciona de cualquier manera podría decir que la secuela de X es 0 y esto funcionará de nuevo.
+
+116
+00:08:45,660 --> 00:08:48,140
+Y tenga en cuenta que no estoy haciendo esto en su lugar.
+
+117
+00:08:48,360 --> 00:08:48,880
+DE ACUERDO.
+
+118
+00:08:49,020 --> 00:08:54,930
+A veces, un punto de confusión es por qué las filas son cero en cuanto a acceso y por
+
+119
+00:08:54,960 --> 00:08:58,880
+qué las columnas son una donde la referencia realmente regresa a pi.
+
+120
+00:08:59,010 --> 00:09:06,850
+Dado que los marcos de datos son esencialmente solo marcadores de índice de lujo sobre una matriz PI para mostrar esto.
+
+121
+00:09:07,080 --> 00:09:14,750
+Puedo decir que DF pensó la forma como lo hicimos con una matriz de tuberías y no si esa forma es una tupla para una
+
+122
+00:09:14,800 --> 00:09:19,750
+matriz imaginaria de los dientes aquí y en el índice cero o el número de filas.
+
+123
+00:09:19,890 --> 00:09:23,020
+Entonces, si digo ZF aquí, tengo cinco filas.
+
+124
+00:09:23,070 --> 00:09:29,990
+A B C y D E y luego en el índice tengo cuatro columnas w x y z.
+
+125
+00:09:30,150 --> 00:09:37,530
+Por eso las filas se conocen como el eje cero y las columnas se conocen como un eje porque
+
+126
+00:09:37,530 --> 00:09:43,020
+se toma directamente de la forma tal como lo haría con una matriz circular.
+
+127
+00:09:43,020 --> 00:09:43,880
+DE ACUERDO.
+
+128
+00:09:43,920 --> 00:09:46,260
+Ahora hablemos de seleccionar filas.
+
+129
+00:09:46,290 --> 00:09:51,840
+Hemos hablado sobre la selección de columnas que acaba de hacer diciendo DMF y entre corchetes pasa
+
+130
+00:09:51,840 --> 00:09:53,280
+el nombre de la columna.
+
+131
+00:09:53,280 --> 00:10:01,350
+O si quiere muchas columnas, pasa una lista de los nombres de columna como Z y luego coma X y
+
+132
+00:10:01,350 --> 00:10:02,430
+cierra ese corchete.
+
+133
+00:10:02,430 --> 00:10:07,460
+Así que estoy pasando una lista de nombres de columna y devuelvo un marco de datos de esas columnas.
+
+134
+00:10:07,500 --> 00:10:09,940
+Hablemos de seleccionar filas.
+
+135
+00:10:10,900 --> 00:10:14,650
+Quiero echar un vistazo a mi marco de datos de nuevo aquí está mi marco de datos.
+
+136
+00:10:14,650 --> 00:10:18,400
+ABC El E es mi rosa WXYZ son las columnas.
+
+137
+00:10:18,400 --> 00:10:25,120
+Hay dos formas de seleccionar filas en un marco de datos y debe llamar a un método fuera de este.
+
+138
+00:10:25,120 --> 00:10:26,900
+Y hay dos métodos para usar.
+
+139
+00:10:26,890 --> 00:10:31,040
+Uno de ellos es Loek EHLO, vea por ubicación.
+
+140
+00:10:31,690 --> 00:10:38,030
+Y esto va a tener una etiqueta, por lo que también puede cambiar la pestaña aquí para ver esta propiedad y algo que debe
+
+141
+00:10:38,020 --> 00:10:38,540
+saber aquí.
+
+142
+00:10:38,560 --> 00:10:43,770
+Estoy usando corchetes, lo cual es un poco raro, pero así es como funciona con los pandas.
+
+143
+00:10:44,000 --> 00:10:48,920
+Pasa el LRC y pasa entre corchetes la fila que desea.
+
+144
+00:10:48,910 --> 00:10:52,030
+Por ejemplo, si quisiera la fila que acabo de pasar.
+
+145
+00:10:52,280 --> 00:10:56,210
+Ver Pase la etiqueta de ese índice y esto vuelve.
+
+146
+00:10:56,240 --> 00:10:58,150
+No una serie
+
+147
+00:10:58,150 --> 00:11:04,310
+Y esto llega a nuestra segunda conclusión de que no solo son todas las series de columnas, sino que las filas son series, así
+
+148
+00:11:04,300 --> 00:11:06,730
+como también la forma en que obtendrán los retornos.
+
+149
+00:11:06,880 --> 00:11:09,780
+Cuando los solicites en Pandas.
+
+150
+00:11:10,090 --> 00:11:16,140
+Ahora veamos la segunda manera de tomar una fila que se basa en la siguiente posición.
+
+151
+00:11:16,510 --> 00:11:17,750
+Puedo usar DFT.
+
+152
+00:11:17,840 --> 00:11:25,180
+Me gusta estar realmente en una posición de índice numérico, incluso si mis ejes están etiquetados por cadenas.
+
+153
+00:11:25,180 --> 00:11:34,310
+Por ejemplo, si quiero ver esa fila, puedo hacer eso de dos maneras: podría decir DF ELO para una ubicación y entre corchetes pasar
+
+154
+00:11:34,380 --> 00:11:42,190
+el nombre de la fila que es C o puedo decir I EHLO ver cuál es la ubicación basada en índice
+
+155
+00:11:42,200 --> 00:11:43,690
+y qué índice dice.
+
+156
+00:11:43,690 --> 00:11:45,870
+Entonces 0 1 2.
+
+157
+00:11:46,100 --> 00:11:51,790
+Y luego, en Alosi, me apresuro a añadir que esto también devuelve esa fila.
+
+158
+00:11:51,790 --> 00:11:57,250
+Y eso básicamente significa que tiene dos formas de seleccionar filas usando EHLO, vea si
+
+159
+00:11:57,250 --> 00:12:04,220
+desea la ubicación o índice basado en etiquetas o yo los veo si desea el índice basado en números.
+
+160
+00:12:04,240 --> 00:12:09,640
+y esto en realidad será muy familiar para usted, ya que acabamos de aprender acerca de pi.
+
+161
+00:12:09,640 --> 00:12:12,680
+OK, hablemos de seleccionar subconjuntos de filas y columnas,
+
+162
+00:12:13,250 --> 00:12:21,530
+Podemos decir que DFI pensó que EHLO vería si queremos seleccionar un subconjunto de filas y columnas que podamos pasar
+
+163
+00:12:21,520 --> 00:12:25,400
+como lo hicimos con Num. Pi usando notación común.
+
+164
+00:12:25,390 --> 00:12:28,550
+La fila que queremos y luego la columna que queremos.
+
+165
+00:12:28,580 --> 00:12:36,520
+Por lo tanto, quiero que el valor en Fila sea la columna Y y esto arroja un solo valor allí.
+
+166
+00:12:36,550 --> 00:12:43,220
+Entonces, si eche un vistazo a mi DFA nuevamente, mire r รก por columna y tengo este 0 negativo. 8 porque obtengo el mismo
+
+167
+00:12:43,210 --> 00:12:44,610
+resultado aquí.
+
+168
+00:12:44,620 --> 00:12:52,700
+si quieres un subconjunto de esto puedes decir que Dhia los ve y luego pasa una lista separada por comas.
+
+169
+00:12:52,690 --> 00:12:58,950
+Así que al igual que pi puedes usar esta notación de columna de coma y
+
+170
+00:12:59,000 --> 00:13:07,180
+Por ejemplo, digamos que quería el subconjunto de una b filas con las columnas W Y así que, básicamente,
+
+171
+00:13:07,540 --> 00:13:13,670
+quería este 2. 7 0. 9 y 0. 6 5 y los negativos están en veinticuatro.
+
+172
+00:13:13,690 --> 00:13:20,650
+Eso significa que puedo pasar una lista de las filas que quiero, que en este caso es ayb.
+
+173
+00:13:21,700 --> 00:13:31,490
+Y luego puedo pasar una lista de las columnas que quiero en este caso que son w y y shift ingresar eso y obtengo
+
+174
+00:13:31,490 --> 00:13:34,360
+el subconjunto de ese marco de datos.
+
+175
+00:13:34,880 --> 00:13:35,540
+DE ACUERDO.
+
+176
+00:13:35,770 --> 00:13:38,520
+Vamos a detenernos aquí por ahora y continuar la discusión.
+
+177
+00:13:38,530 --> 00:13:44,960
+En la parte dos de la conferencia del marco de datos y todo esto está en el cuaderno llamado Marcos de datos
+
+178
+00:13:44,950 --> 00:13:46,700
+debajo de la carpeta de panderers.
+
+179
+00:13:46,690 --> 00:13:51,610
+Hagamos una revisión rápida de lo que hemos aprendido en cuanto a la creación de un marco de datos.
+
+180
+00:13:51,620 --> 00:13:58,540
+Solo necesita decir que los datos del pasajero del marco de datos de PD son parte de su índice y luego debe ingresar los nombres de sus columnas.
+
+181
+00:13:58,930 --> 00:14:03,670
+Por lo general, no construiremos datos de Frayne a mano de esta manera, de hecho, leeremos datos de algún
+
+182
+00:14:03,670 --> 00:14:08,250
+tipo de fuente, como un archivo CSP, pero aprenderemos cómo hacer la entrada de datos que ahora incluimos.
+
+183
+00:14:08,250 --> 00:14:14,030
+Por ahora, si desea crear principalmente un marco de datos para que pueda hacerlo, entonces para seleccionar columnas de
+
+184
+00:14:14,020 --> 00:14:16,100
+un marco de datos puede decir DSF.
+
+185
+00:14:16,100 --> 00:14:22,090
+Y luego, entre corchetes, pase la columna que desea o pase una lista de las columnas
+
+186
+00:14:22,180 --> 00:14:25,630
+que desea recordar, cada columna es solo una serie.
+
+187
+00:14:25,880 --> 00:14:31,430
+Puede crear columnas nuevas basadas en columnas antiguas utilizando este tipo de aritmética.
+
+188
+00:14:31,450 --> 00:14:36,040
+Luego puede soltar columnas o filas usando DFA que se cae.
+
+189
+00:14:36,040 --> 00:14:38,730
+Recuerde que las necesidades de decir en el lugar son verdaderas.
+
+190
+00:14:38,870 --> 00:14:44,820
+Si desea que el efecto sea permanente, diga Eje 1 para columnas y luego Acceso 0 para filas.
+
+191
+00:14:44,980 --> 00:14:54,460
+Y una vez más, eso viene de este índice de tupla de forma 0. El índice de filas 1 era columnas en cuanto a seleccionar filas
+
+192
+00:14:54,460 --> 00:14:56,350
+de un marco de datos.
+
+193
+00:14:56,360 --> 00:14:57,630
+Hay dos métodos aquí.
+
+194
+00:14:57,640 --> 00:15:03,670
+Existe el método Alosi que es una ubicación de índice basada en etiquetas o el punto.
+
+195
+00:15:03,720 --> 00:15:08,670
+I Alosi, que es la ubicación del índice basado en números enteros.
+
+196
+00:15:09,430 --> 00:15:15,100
+Y luego, si desea seleccionar subconjuntos del marco de datos, puede usar el punto LOC y pasar los
+
+197
+00:15:15,250 --> 00:15:18,800
+valores o las listas completas para devolver subconjuntos del marco de datos.
+
+198
+00:15:19,330 --> 00:15:22,230
+OK, eso es todo por los conceptos básicos de los marcos de datos.
+
+199
+00:15:22,420 --> 00:15:26,810
+Próximamente vamos a analizar aún más de lo que puede hacer si aplica el estado del
+
+200
+00:15:26,800 --> 00:15:28,880
+marco, como el uso de la selección condicional.
+
+201
+00:15:28,880 --> 00:15:30,580
+De acuerdo, gracias a todos.
+
+202
+00:15:30,590 --> 00:15:31,570
+Te veré en la próxima conferencia

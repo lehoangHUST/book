@@ -1,0 +1,1043 @@
+1
+00:00:05,100 --> 00:00:10,110
+Halo semuanya dan selamat datang di ceramah plot manset dimana kami benar-benar menunjukkan bagaimana
+
+2
+00:00:10,140 --> 00:00:14,250
+kami dapat memprogram menggunakan perpustakaan ini untuk membuat visualisasi data interaktif.
+
+3
+00:00:14,250 --> 00:00:18,690
+Ayo maju dan lompat langsung ke notebook Jupiter untuk memulai.
+
+4
+00:00:18,690 --> 00:00:18,960
+Baiklah.
+
+5
+00:00:18,960 --> 00:00:20,990
+Di sini saya di notebook Jupiter.
+
+6
+00:00:21,030 --> 00:00:25,770
+Saya akan pergi ke depan dan melakukan beberapa impor dan kemudian beberapa pengaturan agar semua ini berfungsi.
+
+7
+00:00:25,770 --> 00:00:35,880
+Ketika saya mengatakan impor penting PD saya PI dan P dan kemudian saya akan pergi ke depan dan mengatakan
+
+8
+00:00:36,690 --> 00:00:46,140
+dari plot impor menggarisbawahi versi menggarisbawahi menggarisbawahi dan kemudian saya akan pergi ke depan dan mengatakan
+
+9
+00:00:47,340 --> 00:00:48,530
+versi cetak.
+
+10
+00:00:49,020 --> 00:00:51,710
+Dan perhatikan di sini saya mendapatkan satu koma satu ke koma sembilan.
+
+11
+00:00:51,720 --> 00:00:53,750
+Itu versi saat ini yang saya gunakan.
+
+12
+00:00:53,770 --> 00:00:59,640
+Semua yang akan kita lakukan membutuhkan versi yang lebih baru dari satu koma sembilan.
+
+13
+00:00:59,640 --> 00:01:02,220
+Jadi di sini saya sudah pada satu koma dua belas.
+
+14
+00:01:02,280 --> 00:01:03,420
+Itu artinya saya baik.
+
+15
+00:01:03,420 --> 00:01:07,970
+Jika Anda memiliki versi yang satu koma delapan atau lebih rendah, Anda harus memutakhirkan plotless.
+
+16
+00:01:08,250 --> 00:01:12,730
+Jika Anda baru saja menginstal plotline, Anda harus benar-benar baik-baik saja dalam hal ini.
+
+17
+00:01:12,780 --> 00:01:23,370
+Selanjutnya saya akan masuk dan mengatakan mengimpor manset sebagai C-f Dan akhirnya saya akan mengimpor beberapa perpustakaan dari
+
+18
+00:01:23,400 --> 00:01:26,070
+plot lead off line.
+
+19
+00:01:26,070 --> 00:01:33,110
+Jadi sebagian sebagai perusahaan dapat mendukung online Anda dan dapat meng-host visualisasi data online Anda.
+
+20
+00:01:33,300 --> 00:01:37,190
+Tetapi karena kita akan menggunakan ini sebagai pustaka sumber terbuka dan
+
+21
+00:01:37,200 --> 00:01:41,990
+kita akan menggunakannya secara offline, kita perlu melakukan beberapa impor dari offline agar dapat berfungsi.
+
+22
+00:01:42,000 --> 00:01:47,460
+Saya ingin melanjutkan dan mengimpor unduhan plotless underscore plotless J. S. dan Anda cukup mengetik D dan
+
+23
+00:01:47,460 --> 00:01:49,850
+kemudian tab dan itu harus melengkapi otomatis untuk Anda.
+
+24
+00:01:49,850 --> 00:01:56,400
+Saya juga akan mengatakan di dalamnya saya hanya melakukan pelengkapan otomatis tab dalam mode garis bawah notebook.
+
+25
+00:01:56,880 --> 00:02:01,510
+Dan kemudian juga plot dan plot menjalankannya.
+
+26
+00:02:01,800 --> 00:02:06,090
+Dan kemudian kita akan melakukan beberapa perintah lagi agar semuanya bekerja di notebook.
+
+27
+00:02:06,570 --> 00:02:12,440
+Sebut saja menggarisbawahi mode underscore notebook dan passen terhubung sama benar.
+
+28
+00:02:12,500 --> 00:02:17,850
+Dan ini akan menghubungkan javascript ke notebook Anda karena plotless pada dasarnya
+
+29
+00:02:17,850 --> 00:02:22,590
+hanya menghubungkan panda dan Python ke pustaka javascript interaktif.
+
+30
+00:02:23,240 --> 00:02:26,980
+Dan ini akan memungkinkan notebook Anda untuk mengakses visualisasi tersebut.
+
+31
+00:02:27,180 --> 00:02:35,640
+Dan akhirnya kita akan mengatakan C-f pergi off line sebagai metode dan tutup cetak disita dan jalankan ini dan ini
+
+32
+00:02:36,000 --> 00:02:39,050
+akan memungkinkan manset CS off line.
+
+33
+00:02:39,090 --> 00:02:39,810
+Baiklah.
+
+34
+00:02:39,810 --> 00:02:42,040
+Cukup beberapa langkah di sini untuk memastikan semuanya berjalan dengan baik.
+
+35
+00:02:42,150 --> 00:02:44,730
+Tapi semoga Anda bisa mengikuti itu.
+
+36
+00:02:44,760 --> 00:02:49,390
+Ayo maju dan sekarang dapatkan beberapa data dan buat itu.
+
+37
+00:02:49,740 --> 00:02:56,460
+Saya akan pergi ke depan dan mengatakan ZF sama dengan bingkai data PD dot.
+
+38
+00:02:56,550 --> 00:02:58,800
+Saya akan mengatakan N. P. Rand
+
+39
+00:03:01,470 --> 00:03:05,970
+acak dan distribusi normal dan hanya melewati 100 dengan 4.
+
+40
+00:03:06,270 --> 00:03:15,340
+Jadi 100 baris untuk kolom dan saya akan masuk dan mengatakan kolom sama dengan b cd sebagai string split.
+
+41
+00:03:15,550 --> 00:03:19,350
+Dan dengan cara itu kita mendapatkan daftar kolom ABC dan D.
+
+42
+00:03:19,770 --> 00:03:27,210
+Dan kemudian jika saya memeriksa DF tepat di depannya di sini saya memiliki bingkai data saya dan saya akan pergi ke depan
+
+43
+00:03:27,210 --> 00:03:34,370
+dan membuat satu lagi kerangka data yang disebut bingkai data DL 2 PD dan saya akan menggunakan kamus untuk ini.
+
+44
+00:03:34,950 --> 00:03:47,910
+Saya akan mengatakan kategori adalah kolom dan kemudian nilainya hanya akan menjadi b dan c atau tiga string yang Anda inginkan dan kemudian
+
+45
+00:03:47,910 --> 00:03:51,210
+kolom lainnya akan menjadi nilai.
+
+46
+00:03:51,240 --> 00:03:53,800
+Dan ini hanya akan menjadi string dari beberapa nilai acak.
+
+47
+00:03:53,850 --> 00:03:57,150
+Mari kita lanjutkan dan katakan saja 32 43 dan
+
+48
+00:04:00,000 --> 00:04:03,940
+50 dan ini akan digunakan nanti untuk seperti gaya plot bar.
+
+49
+00:04:03,940 --> 00:04:04,350
+Baiklah.
+
+50
+00:04:04,380 --> 00:04:07,160
+Sekarang, bacalah cara menggunakan manset dan saya plot.
+
+51
+00:04:07,260 --> 00:04:09,850
+Ini sebenarnya sangat mudah.
+
+52
+00:04:10,500 --> 00:04:14,220
+Jika kita melihat pada kerangka data kita, kita memiliki ABC dan Z di sini.
+
+53
+00:04:14,250 --> 00:04:21,420
+Jika saya hanya membatalkan plot dari kerangka data ini, panderer akan memplot sesuatu dengan MAP plot langsung dan
+
+54
+00:04:21,420 --> 00:04:28,830
+jika sebenarnya saya ingin melihat plot itu, saya bisa mengatakan peta plot hidup sejalan dan kemudian jika saya jalankan
+
+55
+00:04:28,830 --> 00:04:34,030
+ini lagi saya hanya memotong ini dan meletakkannya itu di atas sini.
+
+56
+00:04:34,420 --> 00:04:37,180
+Whoops sana kita pergi.
+
+57
+00:04:37,380 --> 00:04:40,880
+Dan saya akan kembali ke sini dan menjalankan plot ini sekali lagi.
+
+58
+00:04:41,190 --> 00:04:45,790
+Dan di sini saya melihat plot garis yang akan dibuat Pandur secara otomatis menggunakan matte plotless.
+
+59
+00:04:46,050 --> 00:04:51,820
+Saya bisa mengubah ini juga, saya merencanakan dan kita akan melihat sedikit keajaiban terjadi.
+
+60
+00:04:51,840 --> 00:04:56,010
+Plot itu sekarang telah dikonversi menjadi gambar interaktif plotline.
+
+61
+00:04:56,100 --> 00:05:00,810
+Dan di sini saya dapat menggulir ke samping dan benar-benar memberi tahu saya nilai pada titik indeks tertentu.
+
+62
+00:05:00,810 --> 00:05:03,080
+Jadi plot plotnya sama persis.
+
+63
+00:05:03,120 --> 00:05:04,570
+Sekarang interaktif.
+
+64
+00:05:04,860 --> 00:05:05,840
+Saya bisa memperbesar.
+
+65
+00:05:05,850 --> 00:05:06,930
+Periksa nilai.
+
+66
+00:05:06,930 --> 00:05:10,700
+Saya dapat mengklik dua kali untuk memperkecil kembali dan mereka juga memiliki alat di sini.
+
+67
+00:05:10,730 --> 00:05:12,370
+Saya dapat menyimpan dan mengedit plot.
+
+68
+00:05:12,480 --> 00:05:17,380
+Saya dapat mengunduh plot sebagai file PNB jadi jika saya hanya ingin gambar statis saya dapat menggeser.
+
+69
+00:05:17,400 --> 00:05:26,540
+Jadi jika saya ingin saya bisa menjelajah saya bisa memperbesar zoom out mengatur ulang sumbu memilih hover sehingga terdekat di
+
+70
+00:05:26,630 --> 00:05:29,500
+hover atau membandingkan data pada hover.
+
+71
+00:05:29,510 --> 00:05:34,170
+Secara default Anda mungkin biasanya ingin membandingkan data dan kemudian saya bahkan dapat mengklik dan mematikan kolom tertentu untuk
+
+72
+00:05:34,160 --> 00:05:34,470
+melihat.
+
+73
+00:05:34,460 --> 00:05:37,930
+Jadi jika saya hanya ingin melihat dan melihat apakah itu bisa dan.
+
+74
+00:05:38,240 --> 00:05:38,590
+Kanan.
+
+75
+00:05:38,660 --> 00:05:42,920
+Mudah-mudahan Anda sudah tahu ini adalah alat yang sangat kuat karena pada dasarnya
+
+76
+00:05:42,990 --> 00:05:49,040
+Anda harus menambahkan satu plot surat dan sekarang tiba-tiba Anda terlihat seperti programmer visualisasi data interaktif yang luar biasa.
+
+77
+00:05:49,400 --> 00:05:54,650
+Ketika rahasia Anda baru saja menambahkan saya merencanakan dan menggunakan manset dan sopan.
+
+78
+00:05:54,770 --> 00:05:55,180
+Baiklah.
+
+79
+00:05:55,400 --> 00:05:58,640
+Jadi itulah contoh paling dasar dari manset dan saya celepuk.
+
+80
+00:05:58,740 --> 00:06:02,070
+Dan mari kita mulai dan mengeksplorasi sekarang berbagai jenis plot yang bisa kita lakukan.
+
+81
+00:06:02,270 --> 00:06:06,570
+Kita bisa melakukan banyak jenis seperti peta panas rasio kotak sebar bar dan banyak lagi.
+
+82
+00:06:06,710 --> 00:06:11,420
+Jadi yang akan kita lakukan adalah hanya melalui mereka dan menunjukkan kepada Anda bagaimana menggunakan plot untuk membuat
+
+83
+00:06:11,420 --> 00:06:14,430
+tipe plot lain yang bukan hanya plot garis seperti ini.
+
+84
+00:06:14,490 --> 00:06:18,420
+Mari kita mulai dengan menunjukkan kepada Anda bagaimana melakukan sebar.
+
+85
+00:06:18,620 --> 00:06:22,190
+Saya akan pergi ke depan dan mengatakan DMF dot plot.
+
+86
+00:06:22,500 --> 00:06:27,740
+Dan kemudian untuk mengganti jenis plot Anda tentukan jenis sama dengan
+
+87
+00:06:27,750 --> 00:06:33,870
+dan kemudian untuk menyebarkan string adalah sebar dan sebar untuk menentukan sumbu x dan y.
+
+88
+00:06:34,010 --> 00:06:36,040
+Anda dapat masuk dan menentukan ini dengan nama kolom.
+
+89
+00:06:36,080 --> 00:06:45,050
+Mari kita masuk dan menunjukkan sebaran kolom versus kolom B dan jika kita jalankan ini Anda akan melihat sesuatu
+
+90
+00:06:45,620 --> 00:06:47,510
+yang lucu muncul.
+
+91
+00:06:47,510 --> 00:06:48,610
+Anda mendapatkan sesuatu seperti ini.
+
+92
+00:06:48,620 --> 00:06:52,850
+Dan secara default plotless akan mencoba membuat garis untuk menghubungkan semua poin ini.
+
+93
+00:06:52,860 --> 00:07:02,450
+Jadi Anda harus melakukan tentukan mode dan melewati penanda string dan kemudian Anda benar-benar akan mendapatkan beberapa penanda di sini dan Anda dapat
+
+94
+00:07:02,450 --> 00:07:07,760
+memeriksa penanda dan kemudian Anda benar-benar dapat membandingkan kolom A dan B.
+
+95
+00:07:07,820 --> 00:07:11,870
+Anda dapat memperbesar dan memeriksa informasi tentang masing-masing poin ini.
+
+96
+00:07:11,880 --> 00:07:12,680
+Baiklah.
+
+97
+00:07:12,690 --> 00:07:19,190
+Jadi itulah bagaimana Anda dapat menggunakan sebar menggunakan argumen DFA A-plot orang x dan y sebagai nama kolom
+
+98
+00:07:19,580 --> 00:07:24,280
+menentukan jenis sama dengan sebar dan kemudian lulus dan mode sama dengan penanda.
+
+99
+00:07:24,320 --> 00:07:27,740
+Anda juga dapat melakukan hal-hal lain seperti memberikan argumen untuk ukuran.
+
+100
+00:07:27,810 --> 00:07:29,440
+Anda ingin poin ini menjadi lebih besar.
+
+101
+00:07:29,450 --> 00:07:34,980
+Anda dapat melanjutkan dan menentukan ukuran yang lebih besar dan saya akan melanjutkan dan membuat poin-poin itu lebih besar.
+
+102
+00:07:35,380 --> 00:07:39,990
+Mari kita beralih ke plot bar atau plot bar dan katakan.
+
+103
+00:07:40,110 --> 00:07:46,550
+Kupikir aku merencanakan dan mengatakan baik melewati bar string.
+
+104
+00:07:46,550 --> 00:07:51,990
+Dan kemudian Anda menentukan X dan kita akan pergi dan beralih ke kopi tanpa kafein juga karena itu lebih cocok untuk
+
+105
+00:07:51,990 --> 00:07:52,530
+plot ini.
+
+106
+00:07:52,520 --> 00:07:59,420
+Jadi sebagai pengingat Anda harus memiliki kolom kategoris dan kolom numerik yang berarti untuk plot bar
+
+107
+00:07:59,490 --> 00:08:03,610
+Anda ingin X menjadi kolom kategorikal untuk membuatnya jelas.
+
+108
+00:08:03,610 --> 00:08:06,650
+Saya hanya akan mengatakan x sama dengan kolom kategori.
+
+109
+00:08:06,830 --> 00:08:10,460
+Lalu mengapa akan ke kolom nilai.
+
+110
+00:08:10,570 --> 00:08:12,060
+Sekarang jika kita pergi dan memeriksanya.
+
+111
+00:08:12,170 --> 00:08:20,030
+Sekarang kita memiliki plot bar di mana jika saya memperkecil sedikit saya dapat melihat nilai untuk masing-masing kategori sehingga
+
+112
+00:08:20,030 --> 00:08:23,830
+C adalah 50 B adalah 43 dan 32.
+
+113
+00:08:23,840 --> 00:08:24,460
+Baiklah.
+
+114
+00:08:24,460 --> 00:08:30,330
+Dan Anda dapat memperbesar jika ingin tetapi itu mungkin tidak terlalu membantu untuk marplot tertentu.
+
+115
+00:08:30,500 --> 00:08:32,620
+Silakan dan lanjutkan.
+
+116
+00:08:32,750 --> 00:08:38,110
+Sekarang seperti yang kita tahu data Anda tidak selalu akan ditempatkan dengan nyaman seperti 2 jika
+
+117
+00:08:38,120 --> 00:08:44,000
+kategori dalam kolom nilai tetapi yang dapat Anda lakukan disebut grup dengan fungsi agregat pada data Anda untuk benar-benar
+
+118
+00:08:44,000 --> 00:08:48,730
+membuatnya menjadi semacam bentuk di mana masuk akal untuk menggunakan plot bar menggunakan plot-A.
+
+119
+00:08:48,750 --> 00:08:50,120
+Biarkan saya pergi untuk menunjukkan kepada Anda apa yang saya maksud dengan itu.
+
+120
+00:08:50,120 --> 00:08:52,660
+Lihatlah DMF asli kami.
+
+121
+00:08:52,940 --> 00:08:55,930
+Kita dapat melihat bahwa kita memiliki B C dan D.
+
+122
+00:08:55,980 --> 00:08:58,350
+Sekarang kita tidak akan dapat membatalkan plot plot ini.
+
+123
+00:08:58,380 --> 00:09:01,820
+Kalau tidak, kita hanya akan mendapatkan banyak bar dan saya akan menunjukkan kepada Anda apa yang saya maksud dengan itu.
+
+124
+00:09:01,870 --> 00:09:07,680
+Hanya dengan jenis itu bar yang sama Anda akan mendapatkan banyak bar untuk setiap titik data tunggal dan itu bukan yang
+
+125
+00:09:07,670 --> 00:09:08,540
+Anda inginkan.
+
+126
+00:09:08,590 --> 00:09:12,860
+Anda perlu melakukan semacam fungsi agregat di atas ini misalnya, mari kita lihat
+
+127
+00:09:12,890 --> 00:09:15,300
+Anda ingin menghitung instance untuk setiap kolom.
+
+128
+00:09:15,680 --> 00:09:19,410
+Dan di sini kita memiliki plot bar untuk setiap contoh yang dalam hal ini hanya 100.
+
+129
+00:09:19,430 --> 00:09:26,580
+Karena semuanya didistribusikan secara merata tetapi Anda dapat melakukan hal-hal lain seperti mengambil jumlah setiap kolom dan sekarang kami
+
+130
+00:09:26,630 --> 00:09:29,660
+memiliki plot batang yang menunjukkan jumlah setiap kolom.
+
+131
+00:09:29,660 --> 00:09:29,970
+Baiklah.
+
+132
+00:09:30,050 --> 00:09:31,030
+Hal yang cukup menarik.
+
+133
+00:09:31,040 --> 00:09:36,030
+Tetapi perlu diingat bahwa plot bar ini dengan plot menjadi sangat kuat ketika Anda memanggil semacam
+
+134
+00:09:36,020 --> 00:09:38,830
+fungsi agregat atau grup dengan fungsi frame data Anda.
+
+135
+00:09:39,000 --> 00:09:43,640
+Kemungkinan besar frame data Anda tidak akan berada dalam format yang bagus seperti ini.
+
+136
+00:09:44,210 --> 00:09:45,610
+OK itu saja marplot.
+
+137
+00:09:45,770 --> 00:09:46,400
+Mari kita bahas.
+
+138
+00:09:46,400 --> 00:09:52,430
+Petak kotak sekarang Petak kotak data Anda dapat berupa sesuatu yang mirip dengan plot kotak ini
+
+139
+00:09:52,430 --> 00:09:56,650
+secara otomatis akan melakukan agregasi semacam itu untuk distribusi itu.
+
+140
+00:09:57,150 --> 00:10:00,830
+Dan Anda hanya melakukan ini dengan menentukan jenis sama dengan kotak.
+
+141
+00:10:00,950 --> 00:10:05,310
+Dan di sini secara otomatis akan membuat plot kotak untuk masing-masing kolom dan
+
+142
+00:10:05,310 --> 00:10:07,530
+Anda dapat mematikan kolom atau memintasnya.
+
+143
+00:10:07,620 --> 00:10:12,060
+Di sini dengan DMF atau hanya dengan menyalakan dan mematikannya di sini plot plotline
+
+144
+00:10:12,060 --> 00:10:17,880
+misalnya saya hanya ingin melihat dan melihat saya cukup mengklik a dan c dan mereka dapat mengklik Biondi juga dan
+
+145
+00:10:18,180 --> 00:10:24,290
+melihat apa yang saya inginkan dan saya akan memberi Anda informasi pada ubin inti di sini untuk kotak yang cukup nyaman.
+
+146
+00:10:24,290 --> 00:10:29,700
+Sekarang mari kita bicara tentang plot permukaan 3D untuk benar-benar berbicara tentang tiga plot permukaan.
+
+147
+00:10:29,710 --> 00:10:39,350
+Saya akan membuat kerangka data baru akan mengatakan jika tiga sama dengan bingkai data PD dan kita akan pergi
+
+148
+00:10:39,360 --> 00:10:48,690
+ke depan dan mengatakan X adalah kolom dan kita hanya akan mengatakan satu dua tiga empat lima
+
+149
+00:10:52,110 --> 00:11:03,260
+kita akan menetapkan y kolom mendevaluasi 10 20 30 2010 sehingga naik dan turun dan kemudian saya akan menentukan Z adalah kolom.
+
+150
+00:11:03,260 --> 00:11:09,990
+Dan mari kita lanjutkan dan tentukan ini menjadi 500 400 300 200 100.
+
+151
+00:11:10,070 --> 00:11:10,610
+BAIK.
+
+152
+00:11:10,910 --> 00:11:16,940
+Jadi saya minta frame data saya melihatnya dan ini pada dasarnya menyebutkan tiga nilai adalah tiga
+
+153
+00:11:16,940 --> 00:11:19,600
+variabel yang bisa kita gunakan plot permukaan.
+
+154
+00:11:19,640 --> 00:11:28,160
+Jika kita ingin membuat plot permukaan tiga dimensi dari ketiga variabel ini, katakan tiga plot dan tentukan
+
+155
+00:11:28,160 --> 00:11:36,760
+jenis yang akan dijadikan plot permukaan dan ini akan membuat plot permukaan dari apa yang kita miliki di sini.
+
+156
+00:11:36,770 --> 00:11:39,210
+Jadi Anda dapat melihat kami memiliki plot permukaan.
+
+157
+00:11:39,210 --> 00:11:44,390
+Sekarang, saya tunjukkan contoh plot permukaan dengan mengubah nilai-nilai
+
+158
+00:11:44,390 --> 00:11:52,370
+ini di sekitar alih-alih mengatakan 100 hingga 500, saya akan mengatakan 5 4 3 2 1.
+
+159
+00:11:52,400 --> 00:11:53,430
+Dan mari kita plot ini.
+
+160
+00:11:53,440 --> 00:11:56,020
+Kita bisa melihat sekarang kita memiliki semacam garis besar ini.
+
+161
+00:11:56,030 --> 00:12:01,160
+Sekarang kita benar-benar dapat mengubah skala warna di sini jika kita tidak suka skala warna pelangi ini.
+
+162
+00:12:01,300 --> 00:12:12,290
+Anda dapat mengatakan sesuatu seperti skala warna dan mengatakan Ardie untuk merah atau kuning untuk putih y l untuk kuning dan B
+
+163
+00:12:12,290 --> 00:12:13,850
+untuk biru.
+
+164
+00:12:13,850 --> 00:12:17,270
+Dan Anda dapat memeriksa dokumentasi tanpa plot untuk semua kode skala warna.
+
+165
+00:12:17,300 --> 00:12:20,220
+Mereka tidak persis cocok dengan peta warna petak peta.
+
+166
+00:12:20,240 --> 00:12:21,560
+Jadi ingatlah itu.
+
+167
+00:12:21,650 --> 00:12:25,230
+Dan di sini kami memiliki plot permukaan yang sangat bagus yang langsung dibuat dari kerangka data kami.
+
+168
+00:12:25,250 --> 00:12:29,710
+Kita dapat memutarnya dan memutarnya untuk mendapatkan semua informasi darinya.
+
+169
+00:12:29,720 --> 00:12:30,310
+Baiklah.
+
+170
+00:12:30,590 --> 00:12:31,840
+Itu adalah tiga permukaan.
+
+171
+00:12:31,880 --> 00:12:35,020
+Dan akhirnya akan berbicara tentang beberapa plot lagi.
+
+172
+00:12:35,150 --> 00:12:40,910
+Yang sangat mendasar yang mungkin akan Anda lakukan sebagai histogram, Anda dapat mengatakan
+
+173
+00:12:40,910 --> 00:12:51,290
+jika memanggil satu kolom dan kemudian mengatakan saya plot jenis sama dengan hist dan Anda akan mendapatkan histogram dan Anda benar-benar dapat menentukan
+
+174
+00:12:51,290 --> 00:12:54,290
+jumlah tempat sampah yang lain argumen.
+
+175
+00:12:54,350 --> 00:12:59,720
+Misalnya, jika Anda menginginkan 25 nampan, Anda dapat menentukannya dan mendapatkan lebih banyak nampan.
+
+176
+00:12:59,720 --> 00:13:03,660
+Biarkan saya pergi dan memperjelas ini dengan menetapkan banyak tawaran.
+
+177
+00:13:04,190 --> 00:13:04,620
+BAIK.
+
+178
+00:13:04,660 --> 00:13:05,980
+Dan di sini kita memiliki lebih banyak tempat sampah.
+
+179
+00:13:06,020 --> 00:13:11,780
+Tidak banyak poin data, jadi ingatlah selalu jika Anda meneruskan dan melewatkan seluruh
+
+180
+00:13:11,780 --> 00:13:12,750
+kerangka data.
+
+181
+00:13:12,890 --> 00:13:19,310
+Anggap saja DFA A-plot sama dengan Hanya Anda akan mendapatkan histogram yang tumpang tindih dari semua kolom yang berarti
+
+182
+00:13:19,360 --> 00:13:24,080
+Anda dapat membandingkan histogram kolom dan Anda dapat menghidupkan dan mematikannya untuk membandingkan satu
+
+183
+00:13:24,080 --> 00:13:24,950
+sama lain.
+
+184
+00:13:24,950 --> 00:13:26,750
+Sekarang ini didistribusikan secara acak.
+
+185
+00:13:26,750 --> 00:13:30,560
+Jadi mereka saling tumpang tindih yang masuk akal mengingat cara kita menciptakan ini.
+
+186
+00:13:30,740 --> 00:13:35,840
+Tetapi Anda dapat sering mengaktifkannya untuk melihat histogram sesuka Anda untuk semua kolom dalam bingkai data.
+
+187
+00:13:36,410 --> 00:13:40,490
+Jadi terserah Anda apakah Anda hanya ingin meneruskan dalam satu kolom atau meneruskan seluruh
+
+188
+00:13:40,490 --> 00:13:42,590
+bingkai data dan kemudian mengaktifkan dan menonaktifkannya.
+
+189
+00:13:42,650 --> 00:13:50,450
+Selanjutnya yang ingin saya tunjukkan adalah visualisasi tipe spread spread yang banyak digunakan untuk stok data.
+
+190
+00:13:50,550 --> 00:13:55,340
+Jadi dibandingkan dengan saham saya akan terus maju dan lakukan saja dengan nilai acak kami di sini.
+
+191
+00:13:55,340 --> 00:13:59,810
+Kemudian pada hari finansial untuk menutup beberapa proyek kita akan benar-benar melihat beberapa analisis teknis Blotz.
+
+192
+00:14:00,350 --> 00:14:08,990
+Tetapi jika saya hanya mengatakan dua kolom ini dan keluar dari bingkai data saya, saya bisa mengatakan jenis A-plot sama dengan menyebar dan kami akan mendapatkan plot
+
+193
+00:14:10,450 --> 00:14:16,190
+dan kemudian subplot saya akan mendapatkan plot line saya yang menunjukkan mereka saling berhadapan dan maka akan
+
+194
+00:14:16,190 --> 00:14:20,260
+mendapatkan spread spread saya yang menunjukkan penyebaran mereka terhadap satu sama lain.
+
+195
+00:14:20,300 --> 00:14:25,190
+Jadi misalnya jika kita melanjutkan dan memperbesar sini pada 20 kita dapat memperbesar sini.
+
+196
+00:14:25,360 --> 00:14:27,860
+Mari kita lihat di mana itu sesuai dengan 20.
+
+197
+00:14:27,860 --> 00:14:31,460
+Nah perhatikan spreadnya adalah poin negatif 3:08 di antara mereka.
+
+198
+00:14:31,640 --> 00:14:33,770
+Dan di sini kita dapat memverifikasi itu sebagai hasilnya.
+
+199
+00:14:33,770 --> 00:14:37,320
+Jadi poin negatif 3 8 minus poin 1.
+
+200
+00:14:37,370 --> 00:14:39,700
+Kami akan mengambil 2. 5 6 tentang di sana.
+
+201
+00:14:39,920 --> 00:14:44,910
+Jadi Anda dapat melanjutkan dan membandingkan hasil ini dan ini pada dasarnya sangat berguna
+
+202
+00:14:44,930 --> 00:14:48,380
+untuk data stok untuk melihat spread antara dua saham.
+
+203
+00:14:48,530 --> 00:14:54,470
+Kami memiliki dua jenis lebih mewah untuk menunjukkan kepada Anda yang berikutnya adalah plot
+
+204
+00:14:54,680 --> 00:15:02,510
+gelembung dan plot gelembung sangat mirip dengan sebar kecuali bahwa itu akan mengubah ukuran poin berdasarkan dari variabel lain.
+
+205
+00:15:02,510 --> 00:15:09,890
+Jadi jika saya katakan jenis sama dengan gelembung, saya akan menentukan X dan Y begitu saja untuk sebar dan
+
+206
+00:15:09,890 --> 00:15:13,400
+kemudian saya akan menentukan ukuran gelembung berdasarkan kolom lain.
+
+207
+00:15:13,450 --> 00:15:14,460
+Ayo maju dan pilih saja.
+
+208
+00:15:14,460 --> 00:15:22,160
+Lihat dan di sini sekarang saya memiliki sebar kecuali ukuran poin didasarkan pada nilai kolom lain dan Anda
+
+209
+00:15:22,610 --> 00:15:28,670
+melihat plot semacam ini banyak untuk hal-hal seperti PDB dunia dibandingkan dengan populasi dan mungkin
+
+210
+00:15:28,670 --> 00:15:30,350
+faktor kebahagiaan dll.
+
+211
+00:15:30,360 --> 00:15:36,270
+Jadi ini adalah plot yang cukup umum terutama untuk hal-hal seperti laporan PBB.
+
+212
+00:15:36,400 --> 00:15:37,070
+Kanan.
+
+213
+00:15:37,100 --> 00:15:38,560
+Jadi itulah plot gelembungnya.
+
+214
+00:15:38,630 --> 00:15:46,150
+Dan akhirnya kita akan sampai ke scatter matrix plot matrix pada dasarnya sangat mirip dengan seaborne pair
+
+215
+00:15:46,180 --> 00:15:46,910
+plot.
+
+216
+00:15:46,910 --> 00:15:50,580
+Itu hanya menciptakan matriks sebar dari semua kolom yang ada.
+
+217
+00:15:50,580 --> 00:15:56,990
+Jadi Anda mengatakan DFA yang menyebarkan matriks garis bawah berarti Anda mungkin perlu memastikan semua kolom
+
+218
+00:15:57,050 --> 00:15:59,160
+Anda numerik agar ini berfungsi.
+
+219
+00:15:59,240 --> 00:16:03,880
+Katakan saja scatter matrix dan Anda dapat memperbesar pada setiap plot secara individual.
+
+220
+00:16:03,890 --> 00:16:05,740
+Ingatlah bahwa Anda memiliki banyak poin di sini.
+
+221
+00:16:05,750 --> 00:16:09,540
+Ini akan memakan waktu cukup lama untuk memuat dan mungkin sangat lambat sejauh memperbesar dan memperkecil.
+
+222
+00:16:09,560 --> 00:16:12,140
+Jadi gunakan perawatan ini pada dataset yang sangat besar.
+
+223
+00:16:12,170 --> 00:16:17,480
+Kalau tidak, Anda dapat merusak kernel Python Anda.
+
+224
+00:16:17,750 --> 00:16:21,350
+OK itu saja untuk tipe plot dasar yang akan kita bahas dalam kuliah ini.
+
+225
+00:16:21,410 --> 00:16:26,240
+Jika Anda ingin lebih banyak informasi dan lebih banyak detail tentang dokumentasi, saya akan merekomendasikan
+
+226
+00:16:26,240 --> 00:16:32,480
+untuk mengunjungi halaman web dan itu tersedia hanya dengan mencari hub dan kancing manset akan membawa Anda ke halaman ini
+
+227
+00:16:32,480 --> 00:16:38,930
+di-host oleh manset slash Cesar Santos Jorge dan saya berkontribusi untuk itu seperti yang telah Anda lihat sebelumnya dan Anda bisa
+
+228
+00:16:38,930 --> 00:16:43,520
+melihat di sini tautan tutorial manset ini di mana Anda memiliki galeri bagan.
+
+229
+00:16:43,860 --> 00:16:47,690
+Biarkan Anda tahu warna apa yang tersedia sepenuhnya seperti Pandurs online.
+
+230
+00:16:47,700 --> 00:16:49,500
+Ada banyak informasi yang sangat bagus di sini.
+
+231
+00:16:49,520 --> 00:16:54,800
+Jadi misalnya jika Anda terus maju dan mengatakan panda seperti kami telah membahas sedikit informasi
+
+232
+00:16:55,250 --> 00:17:00,970
+ini sebenarnya ada beberapa metode plot yang lebih mendasar seperti histogram plot bar mungkin menumpuk histogram beberapa
+
+233
+00:17:00,970 --> 00:17:05,320
+nilai pengelompokan lebih detail pada plot area plot kotak jadi tidak pergi.
+
+234
+00:17:05,330 --> 00:17:09,820
+Tapi itu pada dasarnya hanya mengatakan jenis sama dengan luas dan ada beberapa informasi lagi.
+
+235
+00:17:09,830 --> 00:17:14,120
+Sekarang kita sudah melakukan banyak hal, tetapi jika Anda ingin lebih jelasnya, Anda selalu
+
+236
+00:17:14,120 --> 00:17:16,810
+dapat merujuk halaman dokumentasi ini yang cukup bagus.
+
+237
+00:17:17,280 --> 00:17:17,890
+Baik.
+
+238
+00:17:18,200 --> 00:17:22,790
+Terakhir saya hanya ingin menyebutkan bahwa ada beberapa kemampuan analisis teknis dengan manset yang
+
+239
+00:17:22,790 --> 00:17:23,800
+ada di dalamnya.
+
+240
+00:17:23,840 --> 00:17:25,790
+Mereka masih di bawah beta.
+
+241
+00:17:25,790 --> 00:17:32,000
+Mereka tidak sepenuhnya dirilis tetapi Anda dapat memeriksanya di bagian analisis teknis dari perpustakaan
+
+242
+00:17:34,460 --> 00:17:41,000
+ini Anda dapat mengetahui lebih lanjut tentang plot analisis teknis ini dengan mengklik di sini di
+
+243
+00:17:41,000 --> 00:17:44,240
+folder manset dan kemudian memeriksa CA pi.
+
+244
+00:17:44,540 --> 00:17:46,910
+Dan ini adalah analisis teknis file pi itu.
+
+245
+00:17:46,910 --> 00:17:53,480
+Sekali lagi ini adalah jenis barang canggih dan khusus didedikasikan untuk analisis keuangan.
+
+246
+00:17:53,480 --> 00:17:57,010
+Jadi, jika Anda tidak tertarik dengan analisis keuangan sama sekali, jangan khawatir tentang hal ini.
+
+247
+00:17:57,030 --> 00:18:00,320
+Mereka dapat memeriksa beberapa fungsi di sini dan beberapa jenis yang dapat Anda lakukan.
+
+248
+00:18:00,320 --> 00:18:06,840
+Hal ini memungkinkan Anda untuk melakukan hal-hal seperti moving average atau korelasi antara plot atau saham dll.
+
+249
+00:18:06,920 --> 00:18:12,190
+Kami akan mengeksplorasi beberapa tipe plot ini nanti di bagian opsional dari proyek batu penjuru data
+
+250
+00:18:12,250 --> 00:18:12,940
+keuangan.
+
+251
+00:18:13,070 --> 00:18:15,610
+Tetapi jika Anda tidak tertarik pada hal-hal semacam ini jangan khawatir tentang hal itu.
+
+252
+00:18:15,680 --> 00:18:20,120
+Saya hanya ingin Anda tahu bahwa itu ada untuk Anda jika Anda tertarik pada analisis keuangan
+
+253
+00:18:20,210 --> 00:18:22,040
+dan membuat plot interaktif untuk itu.
+
+254
+00:18:22,370 --> 00:18:23,000
+Baik.
+
+255
+00:18:23,240 --> 00:18:23,930
+Terimakasih semuanya.
+
+256
+00:18:23,930 --> 00:18:26,260
+Saya harap Anda menikmati belajar tentang manset plotline.
+
+257
+00:18:26,270 --> 00:18:27,710
+Ini alat yang sangat kuat.
+
+258
+00:18:27,770 --> 00:18:31,110
+Dan kabar baiknya adalah Anda tidak harus menyesuaikan pengetahuan Anda sebanyak itu untuk itu.
+
+259
+00:18:31,120 --> 00:18:35,060
+Anda pada dasarnya hanya menambahkan mata dan mengingat plot apa yang ingin Anda lewati.
+
+260
+00:18:35,240 --> 00:18:35,880
+BAIK.
+
+261
+00:18:36,110 --> 00:18:38,170
+Terima kasih semuanya dan saya akan melihat di kuliah berikutnya.

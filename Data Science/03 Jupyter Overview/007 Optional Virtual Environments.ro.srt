@@ -1,0 +1,571 @@
+1
+00:00:05,730 --> 00:00:10,950
+Bună ziua tuturor și vă urez bun venit la această conferință opțională privind mediile virtuale Anaconda.
+
+2
+00:00:10,950 --> 00:00:16,710
+Acesta este un subiect mai avansat cu privire la modul de creare a mediilor virtuale folosind distribuția Anaconda.
+
+3
+00:00:17,070 --> 00:00:20,580
+Puteți continua și nu ezitați să ignorați acest subiect dacă nu sunteți interesat de acest subiect.
+
+4
+00:00:20,880 --> 00:00:23,520
+Să mergem mai departe și să continuăm.
+
+5
+00:00:23,550 --> 00:00:29,310
+Să vorbim despre mediile virtuale în care mediile virtuale vă permit să configurați o instalare virtuală
+
+6
+00:00:29,310 --> 00:00:32,130
+a Python și a bibliotecilor pe computer.
+
+7
+00:00:32,340 --> 00:00:37,860
+În acest fel puteți avea mai multe versiuni de Python sau biblioteci și puteți activa sau dezactiva
+
+8
+00:00:37,860 --> 00:00:39,210
+cu ușurință aceste medii.
+
+9
+00:00:39,210 --> 00:00:44,220
+Să mergem mai departe și să vedem câteva exemple de motive pentru care poate doriți să faceți acest lucru, de exemplu.
+
+10
+00:00:44,220 --> 00:00:47,870
+Poate uneori doriți să programați în diferite versiuni ale unei biblioteci.
+
+11
+00:00:48,060 --> 00:00:54,750
+De exemplu, este posibil să fi dezvoltat un program complet care utilizează Sacket să învețe versiunea 0. 27 și apoi, la un moment dat, următoarele
+
+12
+00:00:54,750 --> 00:00:58,560
+versiuni sunt 0. 1 8 este eliberat.
+
+13
+00:00:58,560 --> 00:01:04,350
+Poate doriți să explorați noile caracteristici ale lui 0. 20 dar nu doriți să spargeți codul vechi când
+
+14
+00:01:04,350 --> 00:01:05,340
+faceți upgrade.
+
+15
+00:01:05,340 --> 00:01:09,510
+Aici este posibil să doriți să creați un mediu virtual pentru acea versiune specifică a bibliotecii.
+
+16
+00:01:11,130 --> 00:01:15,390
+În alte exemple, uneori doriți să vă asigurați că instalările bibliotecii sunt în locația corectă.
+
+17
+00:01:15,900 --> 00:01:20,940
+Deci, de exemplu, ați putea dori, de asemenea, mai multe versiuni de Python pe computerul dvs., astfel încât
+
+18
+00:01:20,940 --> 00:01:28,500
+veți dori să vă asigurați că Python 2. Versiunea 7 a unei biblioteci este în locația corectă față de un python 3. 5 versiune pe care o puteți face un mediu
+
+19
+00:01:28,500 --> 00:01:35,800
+virtual ca și un mediu în Python 2. 7 și un altul din Python 3. 5.
+
+20
+00:01:36,090 --> 00:01:42,120
+Există o bibliotecă virtuală E și V pentru distribuțiile normale Python care are o mulțime de capabilități
+
+21
+00:01:42,120 --> 00:01:44,740
+care trebuiau să se întâmple cu Anaconda.
+
+22
+00:01:44,910 --> 00:01:50,030
+Această bibliotecă virtuală ENV vă permite să creați medii virtuale și este un manager de mediu virtual.
+
+23
+00:01:50,520 --> 00:01:55,740
+Cu toate acestea, Anaconda, care este distribuția recomandată de Python pe care o folosim în acest curs,
+
+24
+00:01:55,740 --> 00:02:00,930
+are deja un manager frumos construit în mediul virtual care face ca întregul proces de creare a
+
+25
+00:02:01,200 --> 00:02:04,480
+unui mediu virtual să fie activat și dezactivat foarte ușor.
+
+26
+00:02:04,480 --> 00:02:08,610
+Mergeți mai departe și verificați link-ul de resurse pentru documentația oficială pe care o vom
+
+27
+00:02:08,610 --> 00:02:09,350
+trece acum.
+
+28
+00:02:09,480 --> 00:02:13,160
+Deci, mergeți mai departe și verificați link-ul de resurse care vă va duce la acest lucru.
+
+29
+00:02:13,290 --> 00:02:18,960
+Sau, dacă doriți, puteți să o introduceți manual în documentația PI sau să
+
+30
+00:02:18,960 --> 00:02:20,940
+vorbim despre utilizarea mediilor.
+
+31
+00:02:20,940 --> 00:02:24,890
+Puteți să dați clic pe linkul de resurse dacă nu doriți să tastați întreaga cale de
+
+32
+00:02:24,900 --> 00:02:26,540
+fișier sau calea fișierului în browser.
+
+33
+00:02:26,570 --> 00:02:31,230
+Mergeți să mergeți înainte și să treceți la browserul meu, explorați documentația puțin și vă arătăm cum
+
+34
+00:02:31,230 --> 00:02:33,300
+îl puteți utiliza la promptul de comandă.
+
+35
+00:02:33,300 --> 00:02:35,340
+Să mergem mai departe și să trecem la asta acum.
+
+36
+00:02:36,060 --> 00:02:39,360
+OK, deci sunt aici la link-ul de resurse pentru gestionarea mediilor.
+
+37
+00:02:39,390 --> 00:02:44,670
+Ceea ce vreau să faceți este să continuați și să creați medii și ar trebui să vedeți instrucțiunile de bază aici
+
+38
+00:02:44,670 --> 00:02:50,040
+pentru crearea unui mediu și este destul de simplu în măsura în care o comandă trebuie să fie pusă pentru a crea
+
+39
+00:02:50,070 --> 00:02:50,940
+un mediu nou.
+
+40
+00:02:50,970 --> 00:02:57,120
+Veți merge mai departe și utilizați comanda de creare Konda, urmată de bordul liniei de bord, apoi numele pe care doriți
+
+41
+00:02:57,120 --> 00:02:58,930
+să-l apelați noul dvs. mediu.
+
+42
+00:02:58,950 --> 00:03:04,710
+În acest exemplu, ei sună noul mediu de zăpadă și apoi spațiul într-un pachet de bază sau
+
+43
+00:03:04,710 --> 00:03:08,430
+într-o bibliotecă pe care doriți să inițiați acele medii noi.
+
+44
+00:03:08,430 --> 00:03:11,690
+Dacă nu introduceți un pachet aici, puteți primi o eroare.
+
+45
+00:03:11,730 --> 00:03:16,680
+Deci, odată ce ai această comandă completă în proiecția de comandă sau terminal, după instalarea distribuției
+
+46
+00:03:16,680 --> 00:03:20,420
+Anaconda de la Python Kano te vei întreba dacă vrei să continuați.
+
+47
+00:03:20,430 --> 00:03:24,810
+Puteți scrie Y pentru da și apoi acesta creează un mediu nou numit.
+
+48
+00:03:24,810 --> 00:03:30,200
+În acest caz fulg de zăpadă care conține acest program sau pachet BYO Python.
+
+49
+00:03:30,360 --> 00:03:36,150
+Dacă nu specificați o versiune specifică a Python, va folosi versiunea de bază Python.
+
+50
+00:03:36,150 --> 00:03:38,690
+Cel pe care îl descărcați este anaconda.
+
+51
+00:03:38,820 --> 00:03:41,970
+Dar puteți specifica o versiune specifică a Python.
+
+52
+00:03:42,110 --> 00:03:44,100
+Vă va arăta cum să faceți acest lucru.
+
+53
+00:03:44,100 --> 00:03:46,470
+Permiteți-mi să merg înainte și să sară la promptul meu de comandă.
+
+54
+00:03:46,650 --> 00:03:49,820
+Puneți-o aici, ca să vă pot trece prin acești pași.
+
+55
+00:03:50,190 --> 00:03:52,500
+OK, așa că aici este promptul meu de comandă.
+
+56
+00:03:52,590 --> 00:03:58,410
+Eu voi merge mai departe și vom crea un mediu virtual pe care l-o vom numi Konda spun tot spațiul condo crea
+
+57
+00:03:59,030 --> 00:04:05,700
+mai întâi că am de gând să spun dash dash și un E pentru nume și să mergem mai departe și să spunem acest nume doar
+
+58
+00:04:05,700 --> 00:04:11,280
+un nume ridicol, așa că știm noi de fapt, facem ceva cu pufos și apoi trebuie să punem o bibliotecă pentru
+
+59
+00:04:11,280 --> 00:04:11,890
+ao iniția.
+
+60
+00:04:12,030 --> 00:04:14,240
+Să mergem și să începem cu NUMP pi.
+
+61
+00:04:14,280 --> 00:04:19,770
+Din moment ce va fi una dintre primele biblioteci pe care le învățăm despre cum intră, ei vor prelua meta
+
+62
+00:04:19,770 --> 00:04:20,530
+datele pachetului.
+
+63
+00:04:20,570 --> 00:04:24,170
+Ei vor primi o listă a ceea ce trebuie să instaleze în Alaska dacă doriți să continuați.
+
+64
+00:04:24,420 --> 00:04:31,110
+Acum voi merge mai departe și să spun de ce pentru da va lega anumite pachete împreună și apoi extrage ceea ce este nevoie
+
+65
+00:04:31,110 --> 00:04:32,150
+pentru a extrage.
+
+66
+00:04:32,260 --> 00:04:33,990
+OK, asta sa făcut acum.
+
+67
+00:04:34,010 --> 00:04:38,970
+Pentru a activa acest mediu pot folosi activ pufos pentru a dezactiva acest mediu.
+
+68
+00:04:38,970 --> 00:04:40,790
+Eu folosesc de-activ.
+
+69
+00:04:40,830 --> 00:04:46,920
+Permiteți-mi să intru și să vă arăt care este versiunea de bază Python față de versiunea
+
+70
+00:04:46,980 --> 00:04:48,330
+virtuală a Python.
+
+71
+00:04:48,330 --> 00:04:51,690
+Amintiți-vă că acest mediu virtual a fost inițiat numai cu pi.
+
+72
+00:04:51,840 --> 00:04:58,290
+Deci, dacă scriu în Python chiar acum, îmi voi distribui în mod regulat Anaconda pe cea pe care am instalat-o în acest
+
+73
+00:04:58,560 --> 00:05:00,920
+caz este 2. 7.
+
+74
+00:05:00,930 --> 00:05:07,450
+De exemplu, dacă merg înainte și spun importurile num pi și P introduceți.
+
+75
+00:05:07,470 --> 00:05:12,770
+Asta merge bine daca spun pandererele de import ca intrarea PD.
+
+76
+00:05:12,840 --> 00:05:14,470
+Aceasta funcționează bine.
+
+77
+00:05:14,550 --> 00:05:20,970
+Sa mergem mai departe si sa renuntam la asta acum si acum voi activi mediul meu virtual care a fost
+
+78
+00:05:20,970 --> 00:05:27,450
+numit Fluffy si acum veti observa ca in paranteze se spune pufos care ma lasa sa stiu ca sunt intr-adevar in
+
+79
+00:05:27,450 --> 00:05:30,060
+interiorul acestui mediu virtual de pufos .
+
+80
+00:05:30,060 --> 00:05:37,740
+Deci, dacă spun Python și l-am intrat, primesc aceeași versiune de Python 2. 7 că distribuția mea de bază a fost, dar ceva interesant se
+
+81
+00:05:38,040 --> 00:05:42,690
+va întâmpla atunci când încerc să importe niște lucruri pentru arbitri importanți și P
+
+82
+00:05:42,690 --> 00:05:46,280
+Nu importă nici o problemă, deoarece știu că e corect.
+
+83
+00:05:46,290 --> 00:05:53,860
+Mi-am activat mediul virtual cu dacă spun panda de import ca PD, am o eroare de import.
+
+84
+00:05:53,880 --> 00:05:55,980
+Nici un modul numit panderers.
+
+85
+00:05:56,010 --> 00:06:00,960
+Motivul pentru aceasta este că acest mediu virtual nu are Pandurs în interiorul lui.
+
+86
+00:06:00,960 --> 00:06:06,390
+Dacă vreau să mă asigur că acest mediu virtual conține și pandas, va trebui să
+
+87
+00:06:06,390 --> 00:06:14,720
+îl activez așa cum am făcut-o deja și apoi să spui că Konda instalează aici sau să instalezi orice bibliotecă vrei Jupiter sikat
+
+88
+00:06:14,730 --> 00:06:17,140
+să învețe despre jocul live etc.
+
+89
+00:06:17,430 --> 00:06:24,630
+Așa că am de gând să merg înainte și doar să șterg acest lucru dacă vreau să dezactivez pufos și să mă
+
+90
+00:06:24,630 --> 00:06:26,600
+întorc la distribuția originală de Python.
+
+91
+00:06:26,730 --> 00:06:32,910
+Vreau să spun că dezactivează tasta enter și dezactivează mediul virtual.
+
+92
+00:06:32,910 --> 00:06:38,430
+Acum, un alt caz de utilizare activă pentru mediile virtuale este crearea unui mediu care folosește o
+
+93
+00:06:38,430 --> 00:06:40,070
+versiune diferită a Python.
+
+94
+00:06:40,200 --> 00:06:47,120
+Puteți face acest lucru pur și simplu spunând că Konda creează va intra și va spune liniuță și adăugați-mă.
+
+95
+00:06:47,400 --> 00:06:54,150
+Puteți, de asemenea, spune doar Dashon și un singur Dashon, dar va arăta întreaga linie bord bord numit numele de mediul
+
+96
+00:06:54,150 --> 00:06:55,570
+virtual pe care doriți.
+
+97
+00:06:55,590 --> 00:06:58,080
+Vom merge mai departe și vom apela acest mediu virtual.
+
+98
+00:06:58,140 --> 00:07:03,710
+Spațiul meu de tip python 3.
+
+99
+00:07:03,900 --> 00:07:08,150
+Și apoi spui că Python este egal cu 3. 5.
+
+100
+00:07:08,430 --> 00:07:14,220
+Și aici aveți opțiunea de a pune doar o singură bibliotecă, cum ar fi pi.
+
+101
+00:07:14,430 --> 00:07:20,180
+Sau dacă vrei distribuția întregului Anaconda, poți scrie în Anaconda aici.
+
+102
+00:07:20,250 --> 00:07:25,570
+Asta durează destul de mult, pentru că amintiți-vă că este întreaga distribuție a lui Anaconda.
+
+103
+00:07:25,710 --> 00:07:27,730
+Așa că o să intru și să-i spun doar pi.
+
+104
+00:07:27,780 --> 00:07:33,180
+Deci, asta va merge mai departe și se spune că Konda a creat acest nou mediu virtual numit Python Python
+
+105
+00:07:33,180 --> 00:07:37,590
+3 spațiu versiune Python egal cu 3. 5 pi.
+
+106
+00:07:37,760 --> 00:07:40,500
+Introduceți că voi aduce din nou metadatele pachetului.
+
+107
+00:07:40,650 --> 00:07:43,040
+Amintiți-vă că va face toate acestea cu Python 3.
+
+108
+00:07:43,140 --> 00:07:48,000
+Voi merge mai departe și să spunem de ce da, va aduce pachetele înainte și le va rezolva.
+
+109
+00:07:48,000 --> 00:07:55,410
+Acum voi sari până la terminarea extracției și instalării și acum este completă.
+
+110
+00:07:55,650 --> 00:07:59,790
+Să mergem mai departe și să arătăm doar să introducem Python.
+
+111
+00:08:00,090 --> 00:08:04,360
+Am Python 2. 7 aici este distribuția mea de bază.
+
+112
+00:08:04,410 --> 00:08:06,290
+Voi merge mai departe și voi renunța la asta.
+
+113
+00:08:06,390 --> 00:08:08,500
+Acum hai să mergem mai departe și să verificăm mediile mele.
+
+114
+00:08:08,520 --> 00:08:16,170
+Pot spune Kondo info spațiu liniuță dash și o v s și această comandă va enumera mediile mele aici am pufos în
+
+115
+00:08:16,170 --> 00:08:19,680
+alt exemplu de mediu pe care am făcut mai devreme.
+
+116
+00:08:19,680 --> 00:08:25,800
+Python-ul meu versiune py 3: 5 care este un alt mediu pe care îl am și apoi versiunea mea de Python cu rădăcini.
+
+117
+00:08:26,010 --> 00:08:27,020
+Puteți vedea că există un început.
+
+118
+00:08:27,030 --> 00:08:28,080
+Indicați asta.
+
+119
+00:08:28,080 --> 00:08:32,570
+Deci, dacă deschideți notebook-ul Jupiter și vedeți ceva asemănător cu Python Roop, asta înseamnă
+
+120
+00:08:32,580 --> 00:08:33,270
+rădăcini.
+
+121
+00:08:33,300 --> 00:08:35,300
+Instalarea Python.
+
+122
+00:08:35,340 --> 00:08:42,600
+Să mergem mai departe și activează mediile de versiune Python 3.
+
+123
+00:08:42,840 --> 00:08:43,710
+Introduce.
+
+124
+00:08:43,710 --> 00:08:45,910
+Veți observa versiunea Python 3.
+
+125
+00:08:45,930 --> 00:08:49,260
+Acum, dacă îl sun pe Python în interiorul acestor medii virtuale.
+
+126
+00:08:49,290 --> 00:08:51,580
+Rețineți că primesc Python 3. 5.
+
+127
+00:08:51,610 --> 00:08:57,840
+Deci, dacă puteți specifica că doriți o versiune diferită a Python spunând că Python este egal și apoi numărul de versiune
+
+128
+00:08:57,930 --> 00:09:01,080
+pe care îl doriți atunci când creați acel mediu virtual.
+
+129
+00:09:01,080 --> 00:09:07,240
+Deci, dacă fac ceva de genul 1 împărțit la doi, primesc 0. 5 care nu este cazul pentru Python 2.
+
+130
+00:09:07,680 --> 00:09:09,900
+OK, asta este tot ce trebuie să știi.
+
+131
+00:09:09,930 --> 00:09:15,930
+În ceea ce privește crearea de medii virtuale, legătura cu resurse are în principiu tot ceea ce ați dori
+
+132
+00:09:15,930 --> 00:09:20,440
+să știți, cum ar fi schimbarea mediilor de medii de clonare, eliminarea mediilor etc.
+
+133
+00:09:20,640 --> 00:09:21,930
+E destul de simplu.
+
+134
+00:09:21,930 --> 00:09:26,070
+Deci, acum că știți tot ce am trecut în această lecție, puteți merge mai departe și
+
+135
+00:09:26,070 --> 00:09:27,820
+consultați documentația de care aveți nevoie.
+
+136
+00:09:27,840 --> 00:09:31,870
+Din nou, este doar o prelegere opțională în cazul în care doriți vreodată să vă creați propriile medii virtuale.
+
+137
+00:09:31,920 --> 00:09:36,990
+V-aș sugera să creați medii virtuale doar pentru a vă asigura că toate bibliotecile dvs. sunt versiunile pe
+
+138
+00:09:36,990 --> 00:09:38,510
+care doriți să le fie.
+
+139
+00:09:38,520 --> 00:09:44,190
+Deci, dacă doriți să continuați acest curs, puteți merge mai departe și creați un mediu virtual numit știința
+
+140
+00:09:44,220 --> 00:09:46,520
+datelor mele sau ceva de genul asta.
+
+141
+00:09:46,530 --> 00:09:47,160
+In regula.
+
+142
+00:09:47,190 --> 00:09:49,860
+Sper că v-ați bucurat de această prelegere și vă voi vedea la următoarea.
+
+143
+00:09:49,860 --> 00:09:51,230
+Multumesc tuturor.

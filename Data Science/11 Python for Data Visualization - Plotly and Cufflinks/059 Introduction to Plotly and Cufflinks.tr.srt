@@ -1,0 +1,195 @@
+1
+00:00:05,190 --> 00:00:09,870
+Herkese merhaba ve arsa ve kol düğmeleri konferansına hoş geldiniz ve
+
+2
+00:00:09,870 --> 00:00:15,890
+bu ders bizlere etkileşimli görselleştirmeler oluşturmamızı sağlayan plotline kol düğmelerinin arkasındaki arka planın bir bölümünü
+
+3
+00:00:17,260 --> 00:00:23,730
+öğreneceğiz ve açık kaynaklı bir etkileşimli görselleştirme kütüphanesi ve kol düğmeleri bu kütüphaneyi pandalara bağlayan bir
+
+4
+00:00:23,730 --> 00:00:24,750
+ders. .
+
+5
+00:00:24,870 --> 00:00:29,490
+Ve böylece doğrudan veri çerçevemizin dışında etkileşimli görselleştirme oluşturabiliyor olacağız.
+
+6
+00:00:30,180 --> 00:00:35,480
+Bununla birlikte, aslında bu kütüphaneleri keşfetmeden önce onları kurmamız gerekiyor.
+
+7
+00:00:35,880 --> 00:00:41,100
+Bu kütüphaneleri ya komut satırınıza ya da terminalinize kurmak için Pipp'i kullanmanız gerekecek ve
+
+8
+00:00:41,100 --> 00:00:44,720
+Pitman'ın tarzı komplo Lee ve Pipp kurulum kol düğmelerini yazabilirsiniz.
+
+9
+00:00:44,730 --> 00:00:47,750
+Anaconda'nın dağıtımını kullansanız bile bu yine de çalışmalıdır.
+
+10
+00:00:47,790 --> 00:00:53,700
+Bu iki kütüphane sadece şu anda Konda kurulumunda kullanılamaz; bu kütüphaneleri elde etmek için
+
+11
+00:00:53,710 --> 00:00:58,650
+komut satırı terminalinde pipin tarzı plotless ve Pippin'in kol düğmelerini kullanın.
+
+12
+00:01:00,300 --> 00:01:04,170
+Şimdi bir sonraki dersimizden önce bu kitaplıkları nasıl kullanacağınızı size göstermek için resmi
+
+13
+00:01:04,170 --> 00:01:05,990
+Web sitesine hızlı bir gezi yapalım.
+
+14
+00:01:06,000 --> 00:01:09,110
+Şimdi devam edip resmi web sitesine geçeceğim.
+
+15
+00:01:09,630 --> 00:01:09,920
+Tamam.
+
+16
+00:01:09,930 --> 00:01:11,750
+Burada çizgisiz Web sitesinde duyuyorum.
+
+17
+00:01:11,820 --> 00:01:16,380
+P L O T L Y ayarlayın ve Web sitesini kontrol edebilirsiniz.
+
+18
+00:01:16,390 --> 00:01:22,320
+Hızlı bir nota plotless ile ilgili çok fazla bilgi var ama aynı zamanda bir şirkettir ancak görselleştirmelerinize
+
+19
+00:01:22,320 --> 00:01:25,590
+ev sahipliği yaparak ve gösterge tablolarınızı barındırarak para kazanıyorlar.
+
+20
+00:01:25,620 --> 00:01:30,900
+Herşeyi yerel tutmak veya kendiniz barındırmak istiyorsanız, tüm bu özelliklerle çalışan kitaplık
+
+21
+00:01:30,990 --> 00:01:32,690
+açık kaynak ve ücretsizdir.
+
+22
+00:01:32,910 --> 00:01:37,480
+Endişelenmeyin, nazik ve kibar davranmanız için bir şey ödemeniz gerekmez.
+
+23
+00:01:37,560 --> 00:01:42,120
+Matlab excel ve Javascript gibi çeşitli araçlar ile uyumludur.
+
+24
+00:01:42,270 --> 00:01:44,830
+Ancak bunu Python ile kullanmaya odaklanacağız.
+
+25
+00:01:44,830 --> 00:01:49,440
+Devam ederseniz ve bu python bağlantısını tıklarsanız, Python'la başlayan bir sayfaya bağlantı bulacaksınız.
+
+26
+00:01:49,890 --> 00:01:52,080
+Size nasıl başlayacağınızı gösterecektir.
+
+27
+00:01:52,110 --> 00:01:56,500
+İlginç bir şekilde Pandas ile bağlantıları olacak ve pandalarla birlikte arsa kullanmayla
+
+28
+00:01:56,500 --> 00:02:00,520
+ilgili odaklanacağımız şey bu ve pandalarından arınmış bir plot kullanmamız için.
+
+29
+00:02:00,600 --> 00:02:05,940
+Burada belirttiğiniz şekilde çizgi çizgisi yüklemeniz gerekir; talimatlarda, daha sonra kol
+
+30
+00:02:05,940 --> 00:02:08,130
+düğmelerini yüklemek zorunda kalacaksınız.
+
+31
+00:02:08,130 --> 00:02:08,820
+Kol Düğmeleri.
+
+32
+00:02:08,820 --> 00:02:13,390
+Lee'yi pandalarla bağlayan kütüphane var mı?
+
+33
+00:02:13,510 --> 00:02:19,010
+Ve ben devam ettireceğim ve kol düğmeleri için web sayfasına gideceğim.
+
+34
+00:02:19,050 --> 00:02:22,230
+Ve bu, esas olarak kol düğmeleri ve kol düğmeleri için onun sayfasını elde etmek.
+
+35
+00:02:22,410 --> 00:02:28,170
+Plot'u, pandalar için olduğu gibi çabucak arayabilmenizi sağlayan bir üretkenlik aracıdır; örneğin,
+
+36
+00:02:28,170 --> 00:02:34,120
+hızlı bir reddi ile plot Lee'yi kullanarak interaktif bir görsellik oluşturacak şekilde ayarlanmış
+
+37
+00:02:34,120 --> 00:02:36,740
+bir veri çerçevesi nokta plot metodudur.
+
+38
+00:02:36,750 --> 00:02:41,910
+Aslında bu kütüphaneye katkıda bulunuyorum ve burada, birleşmiş şubemizi buraya burada
+
+39
+00:02:41,910 --> 00:02:43,320
+Jey ithalatında görebilirsiniz.
+
+40
+00:02:43,740 --> 00:02:48,750
+görünümlü etkileşimli tembel eylemlerini yaratmak için kol düğmelerini etkin bir şekilde nasıl kullanacağınızı göstereceğiz.
+
+41
+00:02:48,750 --> 00:02:54,030
+Ancak herzaman kol düğmeleri altında oldukça güzel öğreticiler var ve biz de bu konulardan
+
+42
+00:02:54,060 --> 00:02:55,980
+bazılarını inceleyeceğiz ve gerçekten güzel
+
+43
+00:02:56,270 --> 00:03:02,190
+Ve burada sadece bir U'nun örneği. K. Takas oranları ve bunun bir 3B yüzey olduğunu
+
+44
+00:03:02,190 --> 00:03:04,300
+ve bu doğrudan bir veri çerçevesinin kapalı yapıldığını görebilirsiniz.
+
+45
+00:03:04,320 --> 00:03:11,120
+Burada bazı sürüm notları var ve o zaman burada dokümantasyonun bazı bağlantıları var.
+
+46
+00:03:11,130 --> 00:03:11,760
+Tamam.
+
+47
+00:03:11,910 --> 00:03:16,740
+Devam edin ve sadece bu kütüphaneleri kullanarak etkileşimli görselleştirmeleri nasıl
+
+48
+00:03:17,010 --> 00:03:20,220
+kodlayacağınızı göstereceğimiz bir sonraki derste başlayalım.
+
+49
+00:03:20,220 --> 00:03:22,080
+Herkese teşekkürler, bir sonraki derside görüşürüz.

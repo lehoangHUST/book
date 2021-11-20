@@ -1,0 +1,1031 @@
+1
+00:00:05,040 --> 00:00:10,260
+Halo semuanya dan selamat datang di ceramah plot distribusi untuk Seaborn dalam ceramah ini
+
+2
+00:00:10,260 --> 00:00:15,990
+kita akan membahas berbagai jenis plot dengan Seaborn yang memungkinkan kita untuk memvisualisasikan distribusi set data.
+
+3
+00:00:16,530 --> 00:00:20,170
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+4
+00:00:21,270 --> 00:00:23,370
+OK di sini saya di notebook.
+
+5
+00:00:23,370 --> 00:00:29,740
+Saya ingin memulai dengan mengimpor seaborne dan dengan konvensi kami mengimpor Seaborn sebagai asinus.
+
+6
+00:00:29,970 --> 00:00:35,430
+Dan karena saya di notebook, saya akan melanjutkan dan mengatakan bahwa Matt plot langsung sejalan sehingga
+
+7
+00:00:35,430 --> 00:00:38,340
+saya bisa melihat visualisasi di dalam notebook.
+
+8
+00:00:38,880 --> 00:00:39,210
+Baiklah.
+
+9
+00:00:39,210 --> 00:00:44,040
+Sekarang, mari kita ambil beberapa data, sebuah plot seaborne sebenarnya datang dengan beberapa set data bawaan yang dapat
+
+10
+00:00:44,040 --> 00:00:45,220
+Anda muat secara langsung.
+
+11
+00:00:45,840 --> 00:00:50,480
+Dan saya akan mengambil satu kiat yang disebut dan menyimpannya sebagai kerangka data yang disebut kiat.
+
+12
+00:00:50,640 --> 00:00:58,210
+Anda dapat melakukan ini hanya dengan mengatakan Tipps sama dengan Asinus memuat kumpulan data dan kemudian mengirimkan kiat sebagai string.
+
+13
+00:00:59,280 --> 00:01:04,560
+Dan ini akan memuat kumpulan data kiat dan kemudian saya benar-benar dapat memeriksa kepala keadaan bingkai
+
+14
+00:01:04,560 --> 00:01:06,050
+dan terlihat seperti ini.
+
+15
+00:01:06,150 --> 00:01:11,580
+Ada tujuh kolom di sini dan ini pada dasarnya hanya data yang merujuk pada orang-orang yang makan
+
+16
+00:01:11,580 --> 00:01:13,540
+dan kemudian memberikan tip sesudahnya.
+
+17
+00:01:13,560 --> 00:01:19,350
+Jadi, Anda memiliki harga total atau tagihan makanan berapa yang tersisa sebagai tip jenis kelamin atau jenis kelamin
+
+18
+00:01:19,350 --> 00:01:24,620
+orang yang meninggalkan tip apakah mereka perokok pada hari dan jam berapa mereka makan di luar.
+
+19
+00:01:24,660 --> 00:01:27,030
+Dan kemudian ukuran pestanya.
+
+20
+00:01:27,030 --> 00:01:27,380
+Baiklah.
+
+21
+00:01:27,420 --> 00:01:34,590
+Mari kita lanjutkan dan diskusikan tipe plot pertama kami, yaitu plot CISC yang mana plot ini
+
+22
+00:01:34,590 --> 00:01:39,720
+memungkinkan kami untuk menunjukkan distribusi kumpulan pengamatan univariat dan Anda tahu itu
+
+23
+00:01:39,720 --> 00:01:43,610
+hanya cara berbeda untuk mengatakan hanya satu variabel.
+
+24
+00:01:43,620 --> 00:01:45,350
+Ayo masuk dan jelajahi ini.
+
+25
+00:01:45,390 --> 00:01:51,870
+Saya akan mengatakan Asinus memikirkan plot ini dan kemudian untuk plot ini yang Anda lakukan adalah Anda hanya memasukkan satu
+
+26
+00:01:51,870 --> 00:01:53,580
+kolom dari frame data Anda.
+
+27
+00:01:53,850 --> 00:01:57,610
+Dalam hal ini, mari kita lanjutkan dan melihat bagaimana total tagihan didistribusikan.
+
+28
+00:01:58,130 --> 00:02:03,690
+Jadi saya akan mengatakan total tagihan dan kemudian menjalankan sel dan Anda harus mendapatkan plot yang terlihat seperti ini.
+
+29
+00:02:03,930 --> 00:02:06,100
+Jika Anda mendapat peringatan di sini, jangan khawatir.
+
+30
+00:02:06,120 --> 00:02:08,900
+Itu sebenarnya harus dilakukan jika paket lain disebut model stat.
+
+31
+00:02:09,000 --> 00:02:11,220
+Itu tidak akan memengaruhi kode Seaborn Anda yang sebenarnya.
+
+32
+00:02:11,520 --> 00:02:13,810
+Tapi di sini kita tidak punya peringatan, jadi kita baik-baik saja.
+
+33
+00:02:14,220 --> 00:02:20,990
+Perhatikan di sini bahwa pada dasarnya saya mendapatkan histogram dan apa yang dikenal sebagai perkiraan kepadatan kernel yang merupakan
+
+34
+00:02:21,000 --> 00:02:22,420
+garis di sini.
+
+35
+00:02:22,530 --> 00:02:26,460
+Nanti dalam kuliah ini kita akan membahas apa Katie ini dan bagaimana kita
+
+36
+00:02:26,460 --> 00:02:27,090
+dapat membangunnya.
+
+37
+00:02:27,150 --> 00:02:34,680
+Tetapi untuk sekarang kita dapat menghapusnya jika kita mau dengan mengatakan sebagai argumen tambahan di sini Katie sama dengan false.
+
+38
+00:02:36,870 --> 00:02:39,060
+Dan hanya dengan mengetikkan Katy sama dengan false.
+
+39
+00:02:39,060 --> 00:02:44,700
+Sekarang Anda pada dasarnya hanya memiliki histogram dan histogram pada dasarnya hanyalah distribusi di mana total
+
+40
+00:02:44,700 --> 00:02:46,010
+tagihan Anda berada.
+
+41
+00:02:46,170 --> 00:02:52,020
+Jadi Anda dapat melihat di sini bahwa pada sumbu y Anda memiliki hitungan dan kemudian Anda memiliki batang ini pada sumbu X
+
+42
+00:02:52,050 --> 00:02:52,780
+sebagai nampan.
+
+43
+00:02:52,890 --> 00:02:58,940
+Dan ini pada dasarnya berarti bahwa sebagian besar total tagihan Anda berkisar antara $ 10 dan $ 20.
+
+44
+00:02:59,000 --> 00:03:03,510
+Dan jika Anda ingin mendapatkan sedikit informasi lebih lanjut tentang ini, Anda dapat mengubah
+
+45
+00:03:03,510 --> 00:03:09,750
+jumlah sampah sehingga Anda dapat melanjutkan dan ada argumen ketiga Sabin dan kemudian jumlah penawaran yang sesuai dan jumlahnya benar-benar
+
+46
+00:03:09,750 --> 00:03:11,240
+tergantung pada dataset Anda.
+
+47
+00:03:11,400 --> 00:03:14,820
+Tapi mari kita masuk dan pilih 30 untuk saat ini.
+
+48
+00:03:14,820 --> 00:03:19,440
+Dan sekarang kita bisa mendapatkan sedikit lebih banyak definisi dasarnya dan kita masih bisa melihat bahwa ada sebagian
+
+49
+00:03:19,440 --> 00:03:21,560
+besar tagihan terjadi antara 10 dan 20.
+
+50
+00:03:21,900 --> 00:03:28,490
+Jika Anda memilih nilai yang terlalu tinggi misalnya, mari kita mulai dan masukkan 100 Anda akan mulai
+
+51
+00:03:28,500 --> 00:03:35,250
+mendapatkan semacam skenario aneh di mana Anda pada dasarnya mulai merencanakan setiap contoh dari total tagihan untuk setiap
+
+52
+00:03:36,090 --> 00:03:37,640
+titik harga tunggal.
+
+53
+00:03:37,650 --> 00:03:43,740
+Jadi biasanya saya ingin mencoba menemukan keseimbangan dalam ukuran tetapi itu benar-benar tergantung pada plot Anda sendiri.
+
+54
+00:03:43,770 --> 00:03:44,070
+BAIK.
+
+55
+00:03:44,100 --> 00:03:46,930
+Sepertinya kita punya ide bagus tentang informasi di sini.
+
+56
+00:03:47,040 --> 00:03:50,940
+Dan jika dia dapat membaca grafik ini pada dasarnya hanya bisa mengatakan sebagian besar tagihan terjadi di
+
+57
+00:03:51,000 --> 00:03:54,320
+suatu tempat antara 10 dan $ 20 dan mulai memudar saat Anda semakin tinggi.
+
+58
+00:03:54,330 --> 00:04:00,360
+Harga Tagihan Itulah alurnya dan yang memungkinkan Anda untuk memvisualisasikan distribusi dasarnya histogram dan Anda dapat menambahkan kue
+
+59
+00:04:00,720 --> 00:04:02,710
+untuk dimakan di atas itu.
+
+60
+00:04:02,730 --> 00:04:05,930
+Tapi kita akan belajar tentang plot Katie nanti.
+
+61
+00:04:05,970 --> 00:04:13,620
+Mari kita bicara tentang plot sambungan dan plot gabungan dari seaborne. Saya dapat mengatakan bahwa plot gabungan Asinus memungkinkan
+
+62
+00:04:13,620 --> 00:04:20,670
+Anda untuk mencocokkan plot ini dengan berbagai data yang berarti Anda pada dasarnya dapat menggabungkan dua plot
+
+63
+00:04:20,670 --> 00:04:21,950
+distribusi yang berbeda.
+
+64
+00:04:22,110 --> 00:04:24,370
+Dan sebenarnya itu hanya dua variabel.
+
+65
+00:04:24,480 --> 00:04:29,640
+Dan ketika Anda memiliki semacam parameter yang akan kami mainkan yang memungkinkan kami memilih bagaimana
+
+66
+00:04:29,640 --> 00:04:32,340
+kami sebenarnya ingin membandingkan dua distribusi ini.
+
+67
+00:04:32,340 --> 00:04:35,660
+Biarkan saya masuk dan menunjukkan kepada Anda bagaimana kita dapat menggunakan esensi sebagai plot titik awal.
+
+68
+00:04:35,670 --> 00:04:41,130
+Pertama, Anda memiliki passen dalam variabel x dan kemudian Anda harus lulus dalam variabel Y dan
+
+69
+00:04:41,130 --> 00:04:43,910
+kemudian Anda harus lulus dalam kumpulan data Anda.
+
+70
+00:04:44,100 --> 00:04:48,400
+Mari kita mulai dari ujung belakang sehingga data penumpang ditetapkan sebagai tip.
+
+71
+00:04:48,450 --> 00:04:54,510
+Jadi semacam bingkai data dan kemudian untuk x dan y Anda hanya pasand string yang merupakan nama kolom.
+
+72
+00:04:54,510 --> 00:04:56,690
+Dua hal yang ingin Anda bandingkan satu sama lain.
+
+73
+00:04:56,700 --> 00:05:02,980
+Jadi misalnya mungkin saya ingin membandingkan distribusi total tagihan versus ukuran tip.
+
+74
+00:05:03,030 --> 00:05:04,440
+Ayo maju dan lakukan itu.
+
+75
+00:05:04,470 --> 00:05:14,350
+Saya akan mengatakan total tagihan sebagai mantan saya dan dalam perjalanan saya Akses, saya akan memberi tip kolom ujung.
+
+76
+00:05:14,360 --> 00:05:19,500
+Jadi sekarang saya hanya memasukkan kolom total tagihan kolom ujung dan kemudian data sama dengan tips dan
+
+77
+00:05:20,980 --> 00:05:25,730
+saya mendapatkan plot yang terlihat seperti ini yang pada dasarnya hanya dua plot distribusi.
+
+78
+00:05:25,950 --> 00:05:31,680
+Anda dapat melihat ujung pada sumbu y dan total tagihan sepanjang sumbu x dan kemudian memperkecil sehingga Anda dapat
+
+79
+00:05:31,690 --> 00:05:32,670
+melihat keseluruhan plot.
+
+80
+00:05:33,250 --> 00:05:38,970
+Dan kemudian di antara saya memiliki sebar dan sebar ini sebetulnya pada dasarnya masuk akal karena
+
+81
+00:05:38,980 --> 00:05:45,550
+sepertinya memiliki tren bahwa ketika Anda naik total tagihan Anda akan naik lebih tinggi dalam tip dan itu masuk
+
+82
+00:05:45,550 --> 00:05:49,480
+akal karena tip biasanya sebanding dengan total tagihan Anda .
+
+83
+00:05:49,560 --> 00:05:57,330
+Sekarang plot gabungan sebenarnya memberi Anda parameter argumen tambahan yang disebut jenis dan parameter jenis ini memungkinkan
+
+84
+00:05:57,370 --> 00:06:03,270
+Anda untuk memengaruhi apa yang sebenarnya terjadi di dalam plot gabungan ini.
+
+85
+00:06:03,270 --> 00:06:07,860
+Saat ini secara default pencar tetapi Anda juga dapat menyampaikan argumen
+
+86
+00:06:10,620 --> 00:06:15,750
+seperti hex dan hex memungkinkan Anda untuk membuat representasi distribusi hexagon pada dasarnya.
+
+87
+00:06:15,750 --> 00:06:21,660
+Ini mirip dengan hamburan kecuali pada dasarnya jika heksagon memiliki sejumlah titik di dalamnya ia menjadi
+
+88
+00:06:21,660 --> 00:06:27,150
+lebih gelap dan jika memiliki lebih sedikit poin itu semakin ringan pada dasarnya itu
+
+89
+00:06:27,150 --> 00:06:33,160
+hanya cara untuk tidak harus meletakkan semua titik hamburan tersebut tetapi menunjukkan distribusi dengan segi enam ini.
+
+90
+00:06:33,150 --> 00:06:38,400
+Argumen lain yang bisa kita masukkan untuk kebaikan adalah eg yang berarti regresi.
+
+91
+00:06:38,740 --> 00:06:43,120
+Dan ini akan terlihat sangat mirip sebaran kecuali Seaborn sebenarnya akan menarik garis regresi
+
+92
+00:06:43,120 --> 00:06:43,920
+di atasnya.
+
+93
+00:06:43,930 --> 00:06:48,840
+Sekarang kita belum benar-benar belajar tentang regresi linier sejauh topik pembelajaran mesin tetapi kemudian
+
+94
+00:06:48,850 --> 00:06:54,240
+ketika kita melakukan pendekatan topik itu akan kembali ke ini dan benar-benar membahas bagaimana garis ini
+
+95
+00:06:54,250 --> 00:06:54,930
+dibangun.
+
+96
+00:06:55,200 --> 00:07:01,110
+Tetapi pada dasarnya ini hanya menunjukkan hampir seperti kesesuaian linier dengan data titik tersebar dan Anda benar-benar
+
+97
+00:07:01,120 --> 00:07:05,940
+dapat melihatnya memiliki nilai P dalam koefisien Peerson yang akan kita bahas nanti ketika
+
+98
+00:07:05,940 --> 00:07:07,910
+kita benar-benar membahas regresi linier.
+
+99
+00:07:07,950 --> 00:07:14,830
+Akhirnya dalam jenis lain yang dapat Anda masukkan di sini adalah KDE dan yang memungkinkan Anda untuk memilikinya juga.
+
+100
+00:07:14,820 --> 00:07:20,410
+Saya sebutkan K-T yang pada dasarnya hanya menunjukkan kepadatan tempat titik-titik ini paling cocok.
+
+101
+00:07:21,570 --> 00:07:29,580
+Baiklah mari kita lanjutkan dan pindah dari plot bersama biasanya akan menggunakan plot dengan sebaran default karena itu
+
+102
+00:07:29,880 --> 00:07:34,300
+yang paling mudah dibaca dan memberi Anda sedikit informasi
+
+103
+00:07:34,290 --> 00:07:35,850
+langsung dari kelelawar.
+
+104
+00:07:35,860 --> 00:07:43,300
+Kami akan melanjutkan dan memperluas gagasan itu dengan menunjukkan kepada Anda plot pasangan dan plot pasangan pada
+
+105
+00:07:43,290 --> 00:07:49,000
+dasarnya akan merencanakan hubungan berpasangan di seluruh kerangka data setidaknya untuk kolom angka.
+
+106
+00:07:49,140 --> 00:07:53,780
+Dan itu juga mendukung argumen rona warna untuk kolom kategorikal yang akan saya tunjukkan nanti.
+
+107
+00:07:54,190 --> 00:08:01,680
+Tapi kita lihat di sini di atas bahwa kita memiliki plot sambungan ini, plot apa yang pada dasarnya akan
+
+108
+00:08:01,690 --> 00:08:08,260
+dilakukan adalah melakukan plot gabungan ini untuk setiap kombinasi kolom numerik dalam kerangka data ini.
+
+109
+00:08:08,250 --> 00:08:09,590
+Biarkan saya pergi untuk menunjukkan kepada Anda apa yang saya maksud.
+
+110
+00:08:09,750 --> 00:08:11,700
+Karena itu akan melakukannya untuk semua kombinasi.
+
+111
+00:08:11,700 --> 00:08:15,400
+Pada dasarnya Anda hanya perlu memanggil S dan S pemikiran per plot dan melewati bingkai data Anda.
+
+112
+00:08:15,430 --> 00:08:18,250
+Dan ini adalah sesuatu yang akan kita lakukan sedikit selama kursus.
+
+113
+00:08:18,250 --> 00:08:21,510
+Ingatlah, semakin besar bingkai data Anda, semakin lama per plot.
+
+114
+00:08:21,660 --> 00:08:26,460
+Jadi banyak kali per plot membutuhkan waktu lama jika Anda memiliki bingkai data yang sangat besar, bukan frame yang relatif
+
+115
+00:08:26,470 --> 00:08:26,790
+kecil.
+
+116
+00:08:26,790 --> 00:08:28,080
+Jadi kita baik-baik saja.
+
+117
+00:08:28,200 --> 00:08:33,280
+Dan di sini kita pada dasarnya memiliki plot pasangan untuk semua nilai kolom numerik.
+
+118
+00:08:33,270 --> 00:08:36,430
+Jadi kami memiliki ukuran vs ukuran total tagihan versus tip.
+
+119
+00:08:36,420 --> 00:08:42,660
+Dan kemudian ketika Anda mendapatkan parameter versus dirinya sendiri misalnya ukuran versus ukuran daripada benar-benar melakukan sebar
+
+120
+00:08:42,660 --> 00:08:46,310
+yang ketika masuk akal Anda hanya memiliki garis lurus.
+
+121
+00:08:46,380 --> 00:08:48,680
+Anda malah melihat histogram.
+
+122
+00:08:49,120 --> 00:08:51,060
+Dan hal yang sama untuk Tip versus tip.
+
+123
+00:08:51,100 --> 00:08:57,600
+Dan untuk total tagihan versus total tagihan yang berarti per plot adalah cara yang sangat bagus untuk memvisualisasikan data Anda
+
+124
+00:08:57,610 --> 00:08:58,280
+dengan cepat.
+
+125
+00:08:58,410 --> 00:09:06,400
+Dan yang lebih bagus lagi adalah Anda dapat menambahkan argumen rona pada makanan yang Anda makan dan argumen hewe adalah di mana
+
+126
+00:09:06,390 --> 00:09:08,140
+Anda akan melewati kolom.
+
+127
+00:09:08,130 --> 00:09:15,420
+Tujuan kolom kategoris dalam kategorikal berarti bukan kategori numerik atau kontinu tetapi aktual.
+
+128
+00:09:15,450 --> 00:09:21,040
+Misalnya kolom seks adalah kategoris karena ada dua kategori di dalamnya ada pria dan wanita.
+
+129
+00:09:22,710 --> 00:09:31,650
+Dan ketika Anda meneruskan ini saat Anda memasukkan nama koloni dengan jenis kelamin yang sama dan itu akan mewarnai titik
+
+130
+00:09:31,680 --> 00:09:35,480
+data berdasarkan kolom yang Anda masukkan untuk rona.
+
+131
+00:09:35,520 --> 00:09:40,560
+Jadi di sini semua titik hijau adalah perempuan berdasarkan legenda ini dan semua poin laki-laki.
+
+132
+00:09:40,630 --> 00:09:42,930
+Kita akan memperkecil sehingga kita bisa melihat semuanya.
+
+133
+00:09:43,120 --> 00:09:45,600
+Semua titik biru adalah laki-laki.
+
+134
+00:09:45,610 --> 00:09:52,690
+Dan sebagai argumen ketiga Anda dapat menentukan palet dan palet memungkinkan Anda untuk benar-benar mewarnai ini dengan
+
+135
+00:09:52,890 --> 00:09:54,870
+beberapa palet warna tertentu.
+
+136
+00:09:54,880 --> 00:09:59,820
+Kita akan membahas palet dan warna serta gaya di akhir seri perkuliahan lewat laut.
+
+137
+00:09:59,830 --> 00:10:01,900
+Saat ini saya hanya akan menunjukkan contoh.
+
+138
+00:10:01,890 --> 00:10:06,690
+Pada dasarnya ada string peta warna ini yang berasal dari plot langsung yang dapat Anda
+
+139
+00:10:06,900 --> 00:10:11,100
+lewati di paletnya dan mereka akan memilih warna tertentu untuk apa pun parameternya.
+
+140
+00:10:11,160 --> 00:10:16,650
+Dan di sini kita dapat melihat sekarang surat berwarna biru dan wanita adalah jenis warna pink muda.
+
+141
+00:10:16,650 --> 00:10:17,230
+Baiklah.
+
+142
+00:10:17,250 --> 00:10:20,040
+Kami akan menyentuhnya di palet dalam warna dan gaya lebih banyak.
+
+143
+00:10:20,050 --> 00:10:25,770
+Mari kita lanjutkan dan beralih ke plot Roug dan plot nakal sebenarnya adalah konsep yang sangat sederhana tetapi kita
+
+144
+00:10:25,770 --> 00:10:28,600
+akan menggunakan konsep plot nakal untuk benar-benar membangun.
+
+145
+00:10:28,620 --> 00:10:28,980
+Saya.
+
+146
+00:10:28,990 --> 00:10:38,770
+Jelaskan plot K-T yang kita lihat sebelumnya, apakah saya akan melanjutkan dan mengatakan S. SEBUAH. Plot yang kasar dan seperti plot plot
+
+147
+00:10:38,860 --> 00:10:43,110
+distribusi yang akan Anda lewati dalam satu kolom di sini.
+
+148
+00:10:43,180 --> 00:10:51,040
+Jadi kita akan mengatakan tip dan mari kita lanjutkan ke kolom total tagihan dan apa yang dilakukan plot karpet adalah konsep
+
+149
+00:10:51,040 --> 00:10:52,450
+yang sangat sederhana.
+
+150
+00:10:52,450 --> 00:10:59,980
+Itu hanya menggambar tanda garis untuk setiap titik pada distribusi varian seragam atau unik ini pada dasarnya
+
+151
+00:10:59,980 --> 00:11:01,550
+satu variabel tunggal.
+
+152
+00:11:01,570 --> 00:11:06,710
+Jadi, alih-alih seperti histogram, biarkan saya maju dan membuat plot ini sekali lagi untuk membandingkan.
+
+153
+00:11:07,150 --> 00:11:12,280
+Saya akan mengatakan segera setelah plot ini memberikan total tagihan.
+
+154
+00:11:12,280 --> 00:11:17,900
+Jalankan itu dan mari kita katakan bahwa Katie salah.
+
+155
+00:11:20,010 --> 00:11:27,040
+OK jadi perbedaan antara histogram di sini di bawah ini dan plot Rugge ini adalah bahwa histogram pada dasarnya memiliki nampan
+
+156
+00:11:27,040 --> 00:11:32,920
+dan menghitung berapa banyak tanda hubung dalam nampan itu dan kemudian menunjukkannya sebagai angka di sini
+
+157
+00:11:32,920 --> 00:11:39,480
+dan itu berarti ada antara seperti 10 dan saya tidak. Saya tidak tahu ada sekitar jika kita melihat ini.
+
+158
+00:11:39,570 --> 00:11:41,200
+Empat puluh lima garis di sana.
+
+159
+00:11:41,250 --> 00:11:43,210
+Mereka semua ditumpuk di atas satu sama lain.
+
+160
+00:11:43,360 --> 00:11:48,910
+Dan kemudian di sini ketika kita melangkah lebih jauh dalam harga total tagihan ada kurang kasar atau kurang garis dan
+
+161
+00:11:48,970 --> 00:11:51,070
+itu berarti Ben akan menjadi kurang tinggi.
+
+162
+00:11:51,070 --> 00:11:55,840
+Itulah hubungan dasar antara SR-GR RAM dan plot nakal ini, plot nakal, konsep yang sangat
+
+163
+00:11:55,840 --> 00:11:56,450
+sederhana.
+
+164
+00:11:56,560 --> 00:12:01,730
+Anda cukup menggambar tanda garis untuk setiap titik di sepanjang garis distribusi.
+
+165
+00:12:01,750 --> 00:12:02,180
+Baiklah.
+
+166
+00:12:02,230 --> 00:12:03,460
+Itu total tagihan.
+
+167
+00:12:03,510 --> 00:12:09,490
+Yang ingin kami lakukan adalah membangun ide plot jahat ini untuk menjelaskan apa plot Kaytee yang sebenarnya ini dan
+
+168
+00:12:10,960 --> 00:12:13,260
+itu akan menjadi baris ini di sini.
+
+169
+00:12:13,450 --> 00:12:17,820
+Bagaimana kita benar-benar membangun garis ini berdasarkan plot jahat ini.
+
+170
+00:12:18,010 --> 00:12:26,200
+Dan Anda dapat melihat bahwa itu semacam memiliki hubungan dengan jumlah plot jahat Plot KDE adalah singkatan dari plot estimasi
+
+171
+00:12:26,260 --> 00:12:32,260
+kepadatan kernel dan Anda dapat benar-benar Google ini dan memeriksa Wikipedia pada plot estimasi
+
+172
+00:12:32,260 --> 00:12:38,320
+kepadatan kernel dan halaman akan terlihat seperti keriting ikal ini estimasi dan ini benar-benar gulir
+
+173
+00:12:38,440 --> 00:12:39,520
+ke bawah.
+
+174
+00:12:39,520 --> 00:12:43,440
+Ini adalah sosok yang sangat baik di sini dan pada dasarnya kita akan mencoba untuk membangun.
+
+175
+00:12:43,450 --> 00:12:47,230
+Anda akan melihat bahwa masing-masing garis hitam di sini adalah plot jahat.
+
+176
+00:12:47,230 --> 00:12:48,460
+Jadi poin sebenarnya.
+
+177
+00:12:48,700 --> 00:12:53,140
+Dan kemudian Anda memiliki distribusi Gaussian normal kecil ini di atas setiap titik.
+
+178
+00:12:53,200 --> 00:12:54,580
+Dan kemudian Anda menjumlahkan semuanya.
+
+179
+00:12:54,640 --> 00:12:58,540
+Jadi Anda mendapatkan estimasi kerapatan kernel Currence akhir ini.
+
+180
+00:12:58,570 --> 00:13:02,150
+Sekarang apa yang saya maksud dengan distribusi normal atau distribusi Gaussian.
+
+181
+00:13:02,410 --> 00:13:08,010
+Nah jika Anda juga melihat Wikipedia Nessus dalam teori probabilitas distribusi normal dan saya
+
+182
+00:13:08,080 --> 00:13:11,770
+akan mengatakan mungkin distribusi probabilitas kontinu paling umum.
+
+183
+00:13:11,780 --> 00:13:16,780
+Ini semacam distribusi normal di mana Anda berkata seperti oh bagaimana semua orang mengerjakan tes mereka
+
+184
+00:13:16,780 --> 00:13:20,130
+dan Anda menilai semua siswa dan kemudian melihat distribusi skor.
+
+185
+00:13:20,140 --> 00:13:26,530
+Jadi biasanya sesuatu yang dinormalisasi seperti ini atau misalnya usia orang atau ketinggian orang
+
+186
+00:13:26,530 --> 00:13:29,950
+biasanya banyak hal cenderung mengikuti distribusi normal.
+
+187
+00:13:29,950 --> 00:13:30,420
+BAIK.
+
+188
+00:13:30,760 --> 00:13:36,160
+Mari kita lanjutkan dan melompat kembali ke buku catatan Jupiter dan menyentuh topik-topik ini sedikit lebih detail
+
+189
+00:13:37,270 --> 00:13:38,340
+untuk melakukan ini.
+
+190
+00:13:38,380 --> 00:13:42,880
+Saya akan menyalin dan menempelkan beberapa kode dari buku catatan dan Anda tidak perlu khawatir tentang memahami kode
+
+191
+00:13:42,880 --> 00:13:43,360
+ini.
+
+192
+00:13:43,420 --> 00:13:49,320
+Ini hanya untuk membangun diagram untuk penjelasan dalam menyalin dan menempel ini.
+
+193
+00:13:50,170 --> 00:13:54,510
+Saya telah menyalin dan menempelkan kode ini dan membiarkan saya merinci dengan cepat dengan melakukan kode ini.
+
+194
+00:13:54,610 --> 00:13:56,260
+Saya hanya punya beberapa impor.
+
+195
+00:13:56,260 --> 00:13:58,690
+Saya membuat dataset data acak.
+
+196
+00:13:58,780 --> 00:14:02,050
+Lalu saya menggunakan plot karpet pada data acak itu.
+
+197
+00:14:02,050 --> 00:14:04,630
+Saya mengatur sumbu x untuk plot.
+
+198
+00:14:04,660 --> 00:14:11,340
+Gunakan ruang Ohlund untuk membuat 100 titik poin yang berjarak sama dari X-Men X max dan kemudian di sini.
+
+199
+00:14:11,380 --> 00:14:14,290
+Ini mungkin bagian yang paling sulit untuk dipahami karena menggunakan perpustakaan.
+
+200
+00:14:14,290 --> 00:14:15,240
+Kami belum membicarakannya.
+
+201
+00:14:15,280 --> 00:14:16,600
+Itu tidak normal.
+
+202
+00:14:16,600 --> 00:14:21,920
+Semua ini dilakukan adalah plot yang merupakan distribusi normal untuk setiap titik plot karpet.
+
+203
+00:14:21,920 --> 00:14:23,030
+Dan itu terlihat seperti ini.
+
+204
+00:14:23,060 --> 00:14:25,340
+Kami pergi ke depan dan memperbesar ini.
+
+205
+00:14:25,660 --> 00:14:28,900
+Di sini saya memiliki kumpulan data saya dan ini adalah kumpulan data acak.
+
+206
+00:14:28,900 --> 00:14:33,610
+Jadi, jika Anda menjalankan tahun ini mungkin terlihat sedikit berbeda tetapi perlu diingat kami tidak terlihat bekerja dengan tips
+
+207
+00:14:33,610 --> 00:14:33,980
+lagi.
+
+208
+00:14:34,000 --> 00:14:35,790
+Kami hanya mengerjakan beberapa data acak.
+
+209
+00:14:35,800 --> 00:14:40,840
+Perhatikan saya memiliki garis biru di sini dan kemudian garis abu-abu ini mewakili distribusi normal.
+
+210
+00:14:40,870 --> 00:14:43,050
+Di atas setiap garis biru ini.
+
+211
+00:14:43,330 --> 00:14:47,040
+Jadi ini adalah distribusi normal yang berpusat di sekitar dasbor.
+
+212
+00:14:47,320 --> 00:14:49,940
+Dan kami memiliki banyak dari mereka di atas satu sama lain.
+
+213
+00:14:49,990 --> 00:14:56,180
+Kita akan melanjutkan dan melakukan selanjutnya adalah beberapa dari mereka semuanya untuk mendapatkan fungsi basis kernel density.
+
+214
+00:14:57,070 --> 00:15:01,480
+Dan ini hanya jumlah dari semua distribusi normal kecil ini.
+
+215
+00:15:01,480 --> 00:15:02,010
+Baiklah.
+
+216
+00:15:02,020 --> 00:15:07,150
+Menyalin dan menempelkan blok kode kedua dari notebook memungkinkan kita untuk meringkas
+
+217
+00:15:07,150 --> 00:15:12,670
+semua fungsi dasar ini yang hanya merupakan distribusi normal ini ketika dia menjumlahkan semuanya.
+
+218
+00:15:12,670 --> 00:15:17,700
+Anda mendapatkan sesuatu yang terlihat seperti ini yang hanya merupakan plot Teekay dari sebelumnya
+
+219
+00:15:17,890 --> 00:15:20,930
+dan itulah bagaimana plot dibangun dari plot disk.
+
+220
+00:15:20,950 --> 00:15:25,490
+Plot pertama kami melihat t tertinggi di bawah T.
+
+221
+00:15:25,570 --> 00:15:26,430
+Baiklah.
+
+222
+00:15:26,560 --> 00:15:31,940
+Jadi itu semua adalah cara utama Anda dapat menunjukkan distribusi data yang kami lihat lebih banyak.
+
+223
+00:15:32,110 --> 00:15:38,350
+Mari kita lanjutkan dan cepat meninjau semua berbagai jenis plot yang jenis komputer dan plot ini.
+
+224
+00:15:38,350 --> 00:15:39,770
+Kami gulir kembali ke atas.
+
+225
+00:15:39,820 --> 00:15:46,120
+Mereka adalah plot ini dan lagi bahwa plot ini Anda dapat menggunakannya dengan dua metode, Kaytee
+
+226
+00:15:46,120 --> 00:15:51,410
+sama dengan false dan pada dasarnya hanya melihat histogram atau biarkan ini kosong.
+
+227
+00:15:52,840 --> 00:15:57,100
+Dan kemudian Anda benar-benar dapat melihat Caity estimasi kerapatan kernel yang
+
+228
+00:15:57,100 --> 00:16:03,580
+menjelaskan bahwa akhirnya hanya jumlah dari semua distribusi normal di sekitar plot bersama plot-A karpet sangat mirip dengan
+
+229
+00:16:03,580 --> 00:16:08,740
+ekspektasi ini lewat dua kolom dan Anda lulus mereka sebagai argumen x dan y.
+
+230
+00:16:08,760 --> 00:16:15,400
+Jika argumen ketiga Anda sama dengan data maka plot berikutnya yang kita pelajari adalah plot pasangan dan plot hanya
+
+231
+00:16:15,580 --> 00:16:21,630
+membangun dari plot dan pada dasarnya adalah plot bersama untuk setiap kolom atau kolom numerik dalam kumpulan
+
+232
+00:16:21,640 --> 00:16:26,830
+data Anda dan itu berarti Anda hanya lulus dalam kumpulan data itu sendiri bingkai data
+
+233
+00:16:26,830 --> 00:16:33,340
+dan Anda dapat lulus dalam rona dan palet jika Anda ingin benar-benar warna dengan kolom kategorik plot berikutnya yang
+
+234
+00:16:33,340 --> 00:16:39,400
+kita pelajari adalah plot Roug biasanya tidak akan menggunakan plot Roug tetapi itu ada untuk Anda dan ide
+
+235
+00:16:39,400 --> 00:16:45,310
+utama menggunakan plot nakal adalah semacam membangun logika plot estimasi kepadatan kernel yang dilakukan melalui kode ini
+
+236
+00:16:45,400 --> 00:16:46,450
+di sini.
+
+237
+00:16:46,570 --> 00:16:51,470
+Anda dapat meluangkan waktu dan membaca kode ini tetapi saya hanya ingin menjelaskan bahwa ketika
+
+238
+00:16:51,490 --> 00:16:56,330
+Anda menggunakan plot nakal dan Anda ingin membangun plot estimasi kepadatan kernel untuk plot
+
+239
+00:16:56,470 --> 00:17:03,400
+Katie Anda dapat melakukannya hanya dengan mengatakan plot nakal memiliki semua distribusi normal ini pada setiap titik dan kemudian mengambil
+
+240
+00:17:03,400 --> 00:17:05,200
+jumlah semua poin tersebut.
+
+241
+00:17:05,200 --> 00:17:07,810
+Dan itulah plot estimasi kepadatan kernel.
+
+242
+00:17:08,950 --> 00:17:16,540
+Dan kita telah melihat bagaimana kita dapat melakukannya dengan menggunakan plot ini dan sebagai titik cepat jika Anda menggunakan plot ini di sini kita tahu
+
+243
+00:17:16,840 --> 00:17:20,620
+bahwa kita dapat menyingkirkan plot K-T dengan mengatakan Kaytee sama dengan false.
+
+244
+00:17:20,620 --> 00:17:27,160
+Jika Anda benar-benar hanya ingin plot K-T dan tidak ingin Beenz yang sebenarnya di
+
+245
+00:17:27,160 --> 00:17:34,780
+sini Anda dapat benar-benar pasan alih-alih plot Anda dapat melakukan plot Asinus KDE dan kemudian memberikan tips.
+
+246
+00:17:35,200 --> 00:17:42,010
+Total tagihan dan ini akan membangun plot K-T ini tanpa distribusi bar.
+
+247
+00:17:42,010 --> 00:17:42,710
+Baiklah.
+
+248
+00:17:43,090 --> 00:17:48,760
+Semoga Anda menyadari bahwa Seaborn sangat kuat dan juga sangat sederhana sejauh kode yang Anda butuhkan
+
+249
+00:17:48,760 --> 00:17:49,560
+untuk menulis.
+
+250
+00:17:49,690 --> 00:17:51,580
+Semua yang kami lakukan hanya dilakukan dalam satu baris.
+
+251
+00:17:51,640 --> 00:17:55,960
+Jika Anda mencoba melakukan ini, ia memetakan plot lib. Ini akan membawa Anda beberapa baris, tetapi apa yang baik
+
+252
+00:17:56,020 --> 00:18:00,490
+tentang ini adalah bahwa ia bekerja dari apa yang Anda ketahui tentang plot langsung dan kita akan melihat lebih banyak ketika
+
+253
+00:18:00,490 --> 00:18:02,200
+kita berbicara tentang gaya dan warna. .
+
+254
+00:18:02,350 --> 00:18:06,790
+Banyak dari plot yang hidup dengan pengetahuan akan ditransfer untuk benar-benar mengedit hal-hal kecil
+
+255
+00:18:06,880 --> 00:18:08,020
+dalam plot ini.
+
+256
+00:18:08,380 --> 00:18:13,290
+OK Saya harap Anda mulai menikmati Seaborn lagi seperti yang saya sebutkan sebelumnya itu adalah salah satu perpustakaan favorit saya dan
+
+257
+00:18:13,560 --> 00:18:17,800
+saya tidak sabar untuk menunjukkan kepada Anda beberapa jenis plot berikutnya yang akan kita pelajari dengan Seaborn.
+
+258
+00:18:18,400 --> 00:18:20,260
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

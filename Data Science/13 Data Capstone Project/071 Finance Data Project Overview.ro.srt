@@ -1,0 +1,195 @@
+1
+00:00:05,430 --> 00:00:09,880
+Bună ziua tuturor celorlalți, pentru a obține o imagine de ansamblu asupra proiectului.
+
+2
+00:00:10,170 --> 00:00:14,370
+În această prelegere vom trece peste proiectul de finanțare Jupiter notebook.
+
+3
+00:00:14,400 --> 00:00:16,710
+Să mergem mai departe și să mergem la acel notebook pentru a începe.
+
+4
+00:00:16,950 --> 00:00:19,620
+OK aici suntem la notebook-ul proiectului de finanțare.
+
+5
+00:00:19,620 --> 00:00:23,940
+Acest notebook este localizat în dosarul Proiecte captare date.
+
+6
+00:00:23,940 --> 00:00:29,790
+Și o notă rapidă cu privire la proiectul de date financiare în acest proiect vom fi concentrându-se pe
+
+7
+00:00:29,790 --> 00:00:35,340
+analiza datelor exploratorii a prețurilor acțiunilor și rețineți că acest proiect este destinat doar pentru a practica
+
+8
+00:00:35,430 --> 00:00:36,960
+vizualizări și abilități panda.
+
+9
+00:00:37,080 --> 00:00:42,140
+Nu trebuie să fie o analiză financiară sau să fie considerată ca orice tip de consiliere financiară.
+
+10
+00:00:42,300 --> 00:00:45,600
+Și altul, nu acest proiect este de fapt extrem de provocator.
+
+11
+00:00:45,650 --> 00:00:48,030
+Va încerca să vă prezinte o mulțime de concepte noi.
+
+12
+00:00:48,060 --> 00:00:50,430
+Așadar, poate că ar trebui să căutați lucrurile pe cont propriu.
+
+13
+00:00:50,490 --> 00:00:54,690
+Există o mulțime de linkuri pe care documentele te vor îndruma în direcția corectă pentru a
+
+14
+00:00:54,690 --> 00:00:56,220
+încerca să rezolvi problema problemelor.
+
+15
+00:00:56,490 --> 00:01:00,840
+Dar puteți, de asemenea, să vă simțiți liberi să vă plimbați prin intermediul notebook-urilor și video-urilor despre soluții,
+
+16
+00:01:00,840 --> 00:01:02,290
+ca pe o plimbare prin proiect.
+
+17
+00:01:02,370 --> 00:01:06,030
+Dacă nu vreți să vă căutați cu adevărat, veți învăța mult în acest fel.
+
+18
+00:01:06,570 --> 00:01:12,030
+Sau dacă într-adevăr nu sunteți interesat de acțiuni sau de analiza financiară, puteți doar să ignorați acest proiect cu totul.
+
+19
+00:01:12,930 --> 00:01:17,580
+Vom face acest proiect se concentrează asupra stocurilor bancare și va vedea cum
+
+20
+00:01:17,580 --> 00:01:23,340
+progresează prin criza financiară până la începutul anului 2016 și vă vom arăta cum să obțineți datele.
+
+21
+00:01:23,340 --> 00:01:28,350
+Multe dintre aceste importuri sunt completate pentru dvs., dar nu veți avea nevoie să instalați cititorul de date Pandavas pentru ca acest
+
+22
+00:01:28,350 --> 00:01:29,040
+lucru să funcționeze.
+
+23
+00:01:29,050 --> 00:01:33,840
+Puteți să ieșiți și să faceți clic aici pentru instrucțiuni de instalare, dar practic trebuie
+
+24
+00:01:33,840 --> 00:01:40,320
+să instalați sau să instalați cititorul de date Panch, astfel încât să puteți spune că cititorul de date Piper instalează bara
+
+25
+00:01:40,320 --> 00:01:43,800
+de date sau Konda instalează cititorul de date Pandurs stashed.
+
+26
+00:01:44,290 --> 00:01:47,310
+OK, astfel încât să puteți merge mai departe și să utilizați aceste linkuri pentru a instala ghidarea.
+
+27
+00:01:47,310 --> 00:01:52,140
+Practic doar aș recomanda doar Pipp instalați cititorul de diagrame dash sau puteți cădea, de
+
+28
+00:01:52,140 --> 00:01:54,750
+fapt, împreună cu lecție de soluții video.
+
+29
+00:01:54,870 --> 00:01:59,370
+Dar avem câteva importuri completate pentru dvs. și veți obține datele și de fapt veți
+
+30
+00:01:59,370 --> 00:02:04,470
+obține datele direct cu panda din Internet și există o pagină de documentare pentru a vă oferi sugestii
+
+31
+00:02:04,470 --> 00:02:06,650
+și instrucțiuni despre cum să faceți acea.
+
+32
+00:02:06,690 --> 00:02:10,800
+Și din nou, din moment ce acesta este un proiect de capstone de date, este puțin mai vagă cu privire la modul de a obține
+
+33
+00:02:10,800 --> 00:02:12,660
+de fapt că datele nu vă spun pas cu pas.
+
+34
+00:02:12,750 --> 00:02:15,990
+Dar paginile de documentare ar trebui să fie destul de clare în ceea ce privește modul de obținere.
+
+35
+00:02:15,990 --> 00:02:20,330
+Din nou, puteți continua și consultați soluțiile în cazul în care rămâneți blocați în acest pas.
+
+36
+00:02:20,670 --> 00:02:24,670
+Apoi continuați și urmați instrucțiunile și încercați să creați cadre de date similare.
+
+37
+00:02:24,670 --> 00:02:25,690
+Ce sa arătat.
+
+38
+00:02:25,890 --> 00:02:27,930
+Vom face o analiză de date exploratorie.
+
+39
+00:02:27,930 --> 00:02:33,270
+Verificați că unele returnează unele corelații între stocuri fac unele vizualizări și apoi mai târziu
+
+40
+00:02:33,270 --> 00:02:39,240
+vom merge mai departe și doar vizualiza stocurile și modul în care au făcut în anumite
+
+41
+00:02:39,240 --> 00:02:42,940
+cazuri, cum ar fi accidentul din 2008 2009 economic.
+
+42
+00:02:43,260 --> 00:02:45,970
+Bine, asta este pentru această prelegere de ansamblu.
+
+43
+00:02:45,990 --> 00:02:48,570
+Puteți merge mai departe și puteți verifica cartea Jupiter note.
+
+44
+00:02:48,570 --> 00:02:52,620
+Și, așa cum am menționat, dacă sunteți prea greu sau prea greu pentru că este un proiect
+
+45
+00:02:52,620 --> 00:02:53,390
+extrem de provocator.
+
+46
+00:02:53,490 --> 00:02:57,080
+Simțiți-vă liber să parcurgeți soluțiile și să le experimentați în acest fel.
+
+47
+00:02:57,090 --> 00:03:00,520
+Ca mai mult de o plimbare prin Proiect sau să o săriți complet.
+
+48
+00:03:00,570 --> 00:03:03,160
+Dacă acest subiect nu vă interesează deloc.
+
+49
+00:03:03,210 --> 00:03:05,940
+OK, mulțumesc tuturor și te văd la următoarea conferință

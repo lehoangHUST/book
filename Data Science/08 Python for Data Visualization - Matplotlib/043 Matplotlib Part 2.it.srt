@@ -1,0 +1,807 @@
+1
+00:00:05,460 --> 00:00:09,580
+Salve a tutti e benvenuti al mat Partlet per le serie di conferenze.
+
+2
+00:00:09,690 --> 00:00:14,280
+Stiamo andando a riprendere esattamente da dove ci eravamo interrotti nella prima parte, in cui apprendiamo la programmazione
+
+3
+00:00:14,280 --> 00:00:15,270
+funzionale con quella trama.
+
+4
+00:00:15,420 --> 00:00:18,990
+E ancora più importante i metodi orientati agli oggetti con Matt senza trama.
+
+5
+00:00:19,110 --> 00:00:22,040
+Andiamo avanti e torniamo al taccuino di Giove per iniziare.
+
+6
+00:00:22,250 --> 00:00:22,540
+OK.
+
+7
+00:00:22,560 --> 00:00:28,200
+Eccomi di ritorno al numero di quaderno di Giove dall'ultima volta che abbiamo imparato a usare quella
+
+8
+00:00:28,200 --> 00:00:35,600
+figura e poi a calcolare l'asse e quindi ad asportare quella trama per tracciare una figura orientata agli oggetti usando quella senza trama.
+
+9
+00:00:36,390 --> 00:00:41,940
+La prossima cosa che faremo è imparare come creare sottotrame usando lo stesso metodo di programmazione
+
+10
+00:00:41,940 --> 00:00:42,950
+orientato agli oggetti.
+
+11
+00:00:42,990 --> 00:00:51,600
+Ho intenzione di andare avanti e dire Qui chiariamo tutto in questa cella e andremo avanti e diremo
+
+12
+00:00:51,630 --> 00:01:02,790
+questo e sposteremo la cella al centro e diremo che gli assi virgola virgola è uguale a sbucciare T e invece di figure che
+
+13
+00:01:02,790 --> 00:01:08,900
+chiamano ora dice che proveremo a fare sottotrame, diremo che le sottotrame fanno
+
+14
+00:01:08,910 --> 00:01:10,340
+appello alle sottotrame.
+
+15
+00:01:10,500 --> 00:01:12,270
+Andiamo avanti e gestiamo questo.
+
+16
+00:01:12,570 --> 00:01:15,600
+E notate che qui otteniamo sottotrama.
+
+17
+00:01:15,600 --> 00:01:20,790
+Ora quello che posso fare è usare l'oggetto asce come ho fatto prima per tracciarlo.
+
+18
+00:01:21,090 --> 00:01:25,400
+E questo non è essenzialmente diverso da quello che stavamo facendo prima.
+
+19
+00:01:25,710 --> 00:01:32,040
+E qui ha detto che X è quella trama x come una Y dove differisce la trama secondaria è dove è possibile specificare
+
+20
+00:01:32,040 --> 00:01:33,610
+il numero di righe e colonne.
+
+21
+00:01:33,810 --> 00:01:42,420
+Per esempio posso dire e righe come il mio primo argomento è uguale a 1 e chiama come il mio secondo
+
+22
+00:01:42,420 --> 00:01:44,330
+argomento è uguale a due.
+
+23
+00:01:44,700 --> 00:01:49,970
+E io vado avanti e ti mostro solo quello che sembra un tag hash e lo esegui.
+
+24
+00:01:50,070 --> 00:01:57,660
+trama sta facendo essenzialmente chiamate questi assi di fig automaticamente per te basati su questi argomenti e righe e colonne.
+
+25
+00:01:57,660 --> 00:02:05,640
+Ora puoi vedere che ho una riga con due colonne e che in pratica è solo una bella maniglia frontale per
+
+26
+00:02:05,670 --> 00:02:08,900
+richiamare la figura di Piel T-Dog, anche la
+
+27
+00:02:09,180 --> 00:02:12,540
+Andiamo avanti e giochiamo con questo, vediamo un altro esempio.
+
+28
+00:02:12,570 --> 00:02:20,440
+Entriamo in tre righe e diciamo tre colonne e vediamo ora che abbiamo tre righe per tre colonne.
+
+29
+00:02:20,550 --> 00:02:25,770
+Più avanti vedremo come affrontare la questione delle cose che si sovrappongono, ma è essenzialmente una chiamata su
+
+30
+00:02:25,770 --> 00:02:26,600
+una sola riga.
+
+31
+00:02:26,610 --> 00:02:34,720
+Diciamo semplicemente peel t Titely out e questo finisce per sistemare quelle sovrapposizioni.
+
+32
+00:02:34,810 --> 00:02:41,270
+Usciamo e facciamo un passo indietro e lavoriamo con questo uno per due.
+
+33
+00:02:41,280 --> 00:02:41,670
+Tutto ok.
+
+34
+00:02:41,760 --> 00:02:43,320
+Abbiamo realtà che sottotrame.
+
+35
+00:02:43,320 --> 00:02:47,520
+E in sostanza è solo un gestore di assi in cima a Piel a quella cifra.
+
+36
+00:02:47,550 --> 00:02:52,970
+Qualcosa da notare qui è che invece di dire solo fig è uguale a PBT la figura sto facendo
+
+37
+00:02:52,990 --> 00:02:59,100
+qualche tupla e li impacchetta dicendo che gli assi fig virgola è uguale a sbucciare i denti che sottotraccia e la cosa
+
+38
+00:02:59,100 --> 00:03:07,290
+da sapere su questo oggetto di asce è se vado quaggiù a questa cella e il tipo di assi degli assi è in realtà solo una matrice di assi
+
+39
+00:03:07,290 --> 00:03:13,710
+di carta lib della trama, essenzialmente è solo una lista di questi oggetti oggetto di assi che significa che posso effettivamente scorrere attraverso
+
+40
+00:03:13,710 --> 00:03:14,290
+di essa.
+
+41
+00:03:14,460 --> 00:03:29,950
+Posso dire qualcosa del genere per le lettere di sottolineatura correnti X negli assi assi dot plot x come a y.
+
+42
+00:03:30,020 --> 00:03:31,610
+In realtà non voglio dire che X non è una trama.
+
+43
+00:03:31,620 --> 00:03:40,450
+Voglio dire l'attuale X stop plot e poi vediamo che abbiamo effettivamente tracciato attraverso questi assi.
+
+44
+00:03:40,710 --> 00:03:47,550
+Ancora una volta questo è solo per mostrare che questo oggetto axes è essenzialmente solo una lista di assi di map lib che sono
+
+45
+00:03:47,550 --> 00:03:50,190
+quelli che hai creato manualmente quando hai detto Fig.
+
+46
+00:03:50,250 --> 00:03:56,390
+Aggiungi gli assi di sottolineatura solo spingendo ulteriormente il punto a casa che l'unica differenza tra Pilani
+
+47
+00:03:56,460 --> 00:04:03,090
+che subplot e solo facendo pilt quella figura è che Piel t che subplots essenzialmente lo sta facendo per
+
+48
+00:04:03,090 --> 00:04:08,470
+gli assi di sottolineatura per te automaticamente basati su quante righe e colonne vuoi .
+
+49
+00:04:08,490 --> 00:04:09,170
+OK.
+
+50
+00:04:09,450 --> 00:04:13,600
+Poiché possiamo iterare attraverso questo oggetto degli assi, possiamo anche indicizzarlo.
+
+51
+00:04:13,620 --> 00:04:24,140
+Significato Posso dire assi 0 Dopp grafici X vieni a Y e qui ho tracciato su questo primo asse.
+
+52
+00:04:24,140 --> 00:04:25,090
+Ora posso fare la stessa cosa
+
+53
+00:04:25,090 --> 00:04:31,460
+Il secondo posso dire assi 1 punto trama y virgola x.
+
+54
+00:04:31,770 --> 00:04:40,300
+attraverso questo array di assi e proprio come abbiamo visto in precedenza possiamo anche chiamare titoli e etichette al
+
+55
+00:04:40,300 --> 00:04:45,490
+di fuori di questo così posso dire qualcosa come xes 0 set
+
+56
+00:04:45,520 --> 00:05:03,180
+title dirà prima plot e quindi dirò axes 1 underscore title secondo plot e hero sono in grado di chiamare titoli e si può dire che le etichette x impostano y label off di uno di questi oggetti axes.
+
+57
+00:05:03,190 --> 00:05:09,580
+E qui abbiamo visto come una chiamata all''indice offre l'array degli assi o itera
+
+58
+00:05:09,640 --> 00:05:16,060
+Tutto quello che stai facendo è solo afferrare quell'oggetto sottosquadro basato sulla sua
+
+59
+00:05:16,060 --> 00:05:17,310
+posizione nell'array.
+
+60
+00:05:17,320 --> 00:05:17,770
+Tutto ok.
+
+61
+00:05:17,980 --> 00:05:22,040
+Facciamo una rapida revisione di questi due metodi orientati agli oggetti.
+
+62
+00:05:22,300 --> 00:05:24,330
+Questo primo metodo è un po 'più manuale.
+
+63
+00:05:24,370 --> 00:05:26,380
+È la figura di Piel T-Dog.
+
+64
+00:05:26,410 --> 00:05:32,650
+sua posizione e dimensione e poi, basandovi sugli assi, proseguite dicendo che la trama e il titolo X identificano l'etichetta e così via.
+
+65
+00:05:32,770 --> 00:05:39,880
+Andate avanti e create quella figura aggiungete manualmente gli assi e scegliete la di cui mostriamo
+
+66
+00:05:39,880 --> 00:05:42,840
+esempi qui.
+
+67
+00:05:42,970 --> 00:05:48,280
+Il secondo metodo è per le sottotrame che si desidera disporre in base alle colonne di Rosing.
+
+68
+00:05:48,280 --> 00:05:55,450
+Ciò consente di chiamare gli assi della virgola di figa in modo che tuple in packing qui sia uguale alla
+
+69
+00:05:55,480 --> 00:06:01,600
+chiamata subplots e quindi, basandosi su quegli assi, si ottiene una matrice di assi e si può
+
+70
+00:06:01,660 --> 00:06:05,300
+tracciare e impostare titoli indicizzandoli o iterando attraverso quell'oggetto axes.
+
+71
+00:06:05,300 --> 00:06:12,760
+E se hai mai avuto problemi con le cose che si sovrappongono puoi sempre dire di sbucciare le parentesi T-top
+
+72
+00:06:12,770 --> 00:06:16,470
+strettamente chiuse e questo si occuperà di eventuali trame sovrapposte.
+
+73
+00:06:16,480 --> 00:06:20,210
+Ti consiglio di metterlo sempre alla fine delle dichiarazioni di trama.
+
+74
+00:06:20,830 --> 00:06:27,970
+OK ora inizia a parlare delle proporzioni delle dimensioni delle figure e della mappa GPI. Il taglio cutaneo ti consente
+
+75
+00:06:27,970 --> 00:06:32,620
+di controllare ciascuno di questi aspetti e puoi specificarli quando chiami l'oggetto figura.
+
+76
+00:06:32,620 --> 00:06:34,990
+Lasciami andare avanti e mostrarti un esempio.
+
+77
+00:06:34,990 --> 00:06:44,500
+Devo dire che penso sia uguale alla figura di Piel e gli argomenti che posso passare sono la dimensione di Figg.
+
+78
+00:06:44,890 --> 00:06:50,350
+E poi si passa una tupla in cui la tupla è la larghezza e l'altezza della figura in pollici.
+
+79
+00:06:50,380 --> 00:06:58,630
+Per esempio, posso andare avanti e dire tre per due e poi un secondo argomento che puoi aggiungere è GPI per esempio 100
+
+80
+00:06:58,690 --> 00:07:03,940
+GPI in cui l'API è solo il punto per pollice o pixel per pollice.
+
+81
+00:07:04,120 --> 00:07:07,490
+Di solito uso solo il GPI predefinito quando lavoro con il quaderno di Giove.
+
+82
+00:07:07,600 --> 00:07:14,290
+Quindi ho intenzione di andare avanti e chiarire che per ora ho intenzione di
+
+83
+00:07:14,290 --> 00:07:27,310
+aggiungere una serie di assi a questa chiamata solo X e diremo che fig dot aggiungere gli assi di sottolineatura e diremo 0 0 1 virgola 1
+
+84
+00:07:27,310 --> 00:07:33,220
+e poi vado avanti e dico X stop plot x come a Y.
+
+85
+00:07:33,340 --> 00:07:33,700
+Tutto ok.
+
+86
+00:07:33,700 --> 00:07:34,710
+Quindi c'è la nostra trama.
+
+87
+00:07:34,720 --> 00:07:36,970
+Andiamo avanti e scherziamo come le dimensioni della figura.
+
+88
+00:07:37,000 --> 00:07:39,450
+Diciamo che volevamo che fosse molto ampio.
+
+89
+00:07:39,500 --> 00:07:41,280
+Vai avanti e dì 8 per 2.
+
+90
+00:07:41,650 --> 00:07:45,880
+E ora ho questo per essere 8 pollici per 2 pollici.
+
+91
+00:07:45,880 --> 00:07:46,510
+Tutto ok.
+
+92
+00:07:46,960 --> 00:07:55,190
+Quindi puoi fare la stessa cosa con le trame secondarie. Potrei dire che le sottotrame impostano qui il membro della dimensione di
+
+93
+00:07:55,210 --> 00:07:55,510
+Fig.
+
+94
+00:07:55,510 --> 00:08:01,240
+Ora diremo asce di fico e io vado avanti e rimuovo le asce.
+
+95
+00:08:01,330 --> 00:08:07,900
+Impostare la dimensione della figura e gli assi andranno avanti e tracciano sui primi assi.
+
+96
+00:08:07,900 --> 00:08:15,670
+Ho appena detto axes dot plot x y e ottengo una trama molto simile.
+
+97
+00:08:15,670 --> 00:08:21,490
+Ora ho intenzione di specificare alcune righe e colonne per questa sottotrama e Rose è
+
+98
+00:08:21,490 --> 00:08:22,820
+uguale a 1.
+
+99
+00:08:22,870 --> 00:08:25,210
+In realtà fa due file e qui stiamo andando largo.
+
+100
+00:08:25,510 --> 00:08:28,550
+E poi diciamo che abbiamo una colonna.
+
+101
+00:08:28,720 --> 00:08:31,600
+Quindi e le chiamate sono pari a 1.
+
+102
+00:08:31,600 --> 00:08:34,710
+Ora chiamerò 0 qui.
+
+103
+00:08:34,840 --> 00:08:45,310
+Tracciare X come una Y e poi diremo asce un punto trama y virgola X. E qui si può vedere che la dimensione FIG ha preso
+
+104
+00:08:45,310 --> 00:08:49,220
+in considerazione fino a due righe per una colonna.
+
+105
+00:08:49,780 --> 00:08:57,250
+E come sempre visto che abbiamo un piccolo sito qui sopra, proviamo a dire "denti stretti" e questo farà del suo meglio per
+
+106
+00:08:57,250 --> 00:09:01,750
+sistemare il layout del tipo e sembra che abbia fatto un buon lavoro qui.
+
+107
+00:09:02,060 --> 00:09:07,110
+Ci sono alcuni problemi qui con questi assi, ma ti mostrerò in seguito
+
+108
+00:09:07,120 --> 00:09:11,240
+come puoi personalizzare questi assi per mostrare un po 'meno informazioni.
+
+109
+00:09:11,260 --> 00:09:11,590
+Tutto ok.
+
+110
+00:09:11,590 --> 00:09:16,990
+Ora che abbiamo finito di discutere delle dimensioni delle figure e di GPI andiamo avanti e creiamo una
+
+111
+00:09:16,990 --> 00:09:21,090
+nuova cella e iniziamo a discutere come salvare una figura per salvare una figura.
+
+112
+00:09:21,250 --> 00:09:26,910
+mappa vissuta per generare solo risultati di alta qualità in una serie di formati, tra cui PJ GJ pian.
+
+113
+00:09:26,910 --> 00:09:28,510
+Puoi utilizzare la trama della
+
+114
+00:09:28,630 --> 00:09:37,200
+SPG TGF e PTF per salvare una figura in un file è possibile utilizzare il metodo save thig.
+
+115
+00:09:37,500 --> 00:09:40,830
+Quindi, ad esempio, abbiamo la nostra figura qui che abbiamo già creato.
+
+116
+00:09:40,830 --> 00:09:43,610
+Ricorda che è proprio qui Fig.
+
+117
+00:09:44,100 --> 00:09:50,490
+E poi posso salvare fig dot save fig e tutto quello che devi fare è passare il nome del file che vuoi.
+
+118
+00:09:50,580 --> 00:09:57,720
+Quindi ad esempio la mia immagine di sottolineatura e poi si passa all'estensione e la mappa di Cutlip è abbastanza intelligente da sapere
+
+119
+00:09:57,720 --> 00:09:58,770
+cosa si vuole.
+
+120
+00:09:58,890 --> 00:10:08,370
+Quindi se vuoi PNB tu dici qui in G se vuoi JPA tu dici che J peg JP G ecc. questo come P e G.
+
+121
+00:10:08,380 --> 00:10:09,950
+e dì
+
+122
+00:10:10,950 --> 00:10:12,890
+E questo dirà automaticamente la cifra.
+
+123
+00:10:13,170 --> 00:10:15,470
+Qui puoi anche specificare il CPI.
+
+124
+00:10:15,780 --> 00:10:20,910
+Quindi, se hai dimenticato di specificare il CPI qui mentre stai creando il grafico, puoi specificare
+
+125
+00:10:20,920 --> 00:10:22,050
+nuovamente il DPR qui.
+
+126
+00:10:22,060 --> 00:10:27,860
+Quindi puoi farlo se si è come 200 GPI e puoi aumentare il DPA come vuoi più dettagli.
+
+127
+00:10:27,880 --> 00:10:28,520
+Tutto ok.
+
+128
+00:10:28,830 --> 00:10:34,900
+titoli e assi come impostare l'etichetta X e impostare l'etichetta y, ma ti mostrerò un promemoria rapido su come farlo.
+
+129
+00:10:34,920 --> 00:10:36,840
+Abbiamo già superato le etichette di
+
+130
+00:10:37,040 --> 00:10:44,240
+Lo cambieremo con una semplice figura uguale a quella di Piel T-Dog.
+
+131
+00:10:45,210 --> 00:10:47,490
+Vai avanti e aggiungi una serie di assi a questo.
+
+132
+00:10:47,500 --> 00:10:49,980
+Quindi salveremo fig.
+
+133
+00:10:50,120 --> 00:11:00,050
+Aggiungi i caratteri di sottolineatura li inseriremo a 0 0 1 1 e quindi diremo X interrompe i grafici X vieni a Y.
+
+134
+00:11:00,840 --> 00:11:01,380
+Tutto ok.
+
+135
+00:11:01,680 --> 00:11:08,040
+Quindi come promemoria se vuoi aggiungere un titolo prendi uno di questi assi e pronunci il titolo
+
+136
+00:11:08,040 --> 00:11:14,110
+del set e ti basta passare una stringa del titolo che vuoi per impostare un'etichetta y.
+
+137
+00:11:14,280 --> 00:11:19,190
+Dici solo di impostare l'etichetta in una stringa dell'etichetta y desiderata.
+
+138
+00:11:19,800 --> 00:11:27,220
+E poi per Ex-Slave tutto quello che puoi fare è impostare l'etichetta che desideri.
+
+139
+00:11:28,660 --> 00:11:32,410
+OK, quindi ho il mio titolo etichetta mia moglie e la mia etichetta X.
+
+140
+00:11:32,700 --> 00:11:35,610
+Parliamo di leggende con leggende.
+
+141
+00:11:35,620 --> 00:11:42,480
+Puoi usare il testo dell'etichetta per chiarire effettivamente quale trama è la trama e ti mostrerò cosa intendo con quello.
+
+142
+00:11:42,960 --> 00:11:53,850
+Ho intenzione di andare avanti e rimuovere queste tre righe di codice e dire x iniziare trama y virgola X. Quindi, ho notato che sto facendo questo sulla stessa figura.
+
+143
+00:11:54,100 --> 00:11:56,850
+Significando se dico e effettivamente lo eseguirò otterrò due righe qui otterrò la trama x y l'exploit y.
+
+144
+00:11:56,860 --> 00:12:05,580
+Dal momento che questi sono abbastanza diversi, andiamo avanti e ottenere qualcosa che è un po 'più simile.
+
+145
+00:12:06,720 --> 00:12:10,540
+Uscirò e traccerò x contro x quadrato e X contro x Q. Tutto ok.
+
+146
+00:12:10,560 --> 00:12:18,070
+Quindi ora abbiamo due linee qui.
+
+147
+00:12:18,880 --> 00:12:19,490
+E se tu stessi guardando questa
+
+148
+00:12:19,710 --> 00:12:21,810
+figura da sola senza poter fare riferimento al codice, probabilmente sei un po 'confuso su cosa rappresenti ciascuna trama.
+
+149
+00:12:21,880 --> 00:12:26,070
+Non vorrai aggiungere una legenda in un ordine.
+
+150
+00:12:26,070 --> 00:12:29,790
+Aggiungi nella legenda.
+
+151
+00:12:29,880 --> 00:12:32,730
+In realtà è piuttosto semplice, ma è un processo in due fasi.
+
+152
+00:12:32,760 --> 00:12:34,120
+che ricevi un avviso che dice che non sono stati trovati oggetti etichettati.
+
+153
+00:12:34,560 --> 00:12:37,420
+Il primo passo è semplicemente chiamare X quel Legin in fondo al tuo codice, dove i tuoi assi sono il ritrovamento e se lo esegui noterai
+
+154
+00:12:37,500 --> 00:12:44,270
+Ed è qui che arriva il secondo passo.
+
+155
+00:12:45,030 --> 00:12:50,260
+Per ognuna di queste chiamate di trama che hai appena creato, aggiungerai un argomento chiamato etichetta e
+
+156
+00:12:50,520 --> 00:12:52,830
+questa etichetta è solo una stringa che desideri.
+
+157
+00:12:52,830 --> 00:12:58,110
+Per la X che la funzione della legenda è in grado di fare riferimento andiamo a mostrarti cosa intendo per poter andare avanti e dire
+
+158
+00:12:58,120 --> 00:13:00,050
+X qui come etichetta e poi e questa etichetta.
+
+159
+00:13:00,050 --> 00:13:05,550
+Ho intenzione di
+
+160
+00:13:05,550 --> 00:13:13,970
+andare avanti e dire eseguire.
+
+161
+00:13:13,980 --> 00:13:15,160
+E ora quando eseguo questo se la leggenda X vedo che sono stato in grado di creare una legenda.
+
+162
+00:13:17,860 --> 00:13:19,620
+Quindi tutto ciò quando si chiama
+
+163
+00:13:21,370 --> 00:13:26,130
+X quella legenda è che cerca ciascuna delle chiamate di trama e poi controlla se c'è un'etichetta.
+
+164
+00:13:26,160 --> 00:13:31,260
+E poi l'etichetta che è solo una stringa viene restituita e viene abbinata
+
+165
+00:13:31,290 --> 00:13:33,150
+al colore corretto della linea.
+
+166
+00:13:33,270 --> 00:13:38,880
+E più avanti ti mostreremo come personalizzare i colori della tua linea.
+
+167
+00:13:38,880 --> 00:13:39,810
+Ora veloce no è quello.
+
+168
+00:13:39,880 --> 00:13:44,190
+si sovrappongano alle trame reali che puoi fare nella chiamata X quella leggenda per evitare che questo sia specificato in ellos.
+
+169
+00:13:44,190 --> 00:13:45,400
+Nota come alcune di queste legende
+
+170
+00:13:45,390 --> 00:13:52,020
+Ora sono in realtà un bel po 'di posizioni che puoi specificare e ti mostrerò
+
+171
+00:13:52,020 --> 00:13:55,890
+la pagina della documentazione molto veloce per questo.
+
+172
+00:13:55,950 --> 00:14:01,030
+È collegato al tuo notebook in questa sezione.
+
+173
+00:14:01,030 --> 00:14:01,830
+Lasciami andare e andare a quel link in modo che il link ti porti a una pagina simile a questa.
+
+174
+00:14:01,840 --> 00:14:05,130
+E puoi fare clic sulla legenda e qui c'è praticamente una
+
+175
+00:14:05,130 --> 00:14:09,160
+serie di parametri e c'è un codice di localizzazione e una stringa di posizione.
+
+176
+00:14:09,240 --> 00:14:14,640
+Quindi puoi specificare la migliore in alto a destra in alto a sinistra in basso a sinistra, ecc. basato dopo il codice di localizzazione.
+
+177
+00:14:14,820 --> 00:14:16,270
+Ti consiglio sempre di utilizzare solo il codice
+
+178
+00:14:16,470 --> 00:14:23,280
+di posizione 0 perché ciò consente a map lib di provare a scegliere la posizione migliore per la tua legenda.
+
+179
+00:14:23,280 --> 00:14:28,120
+Andiamo avanti e farlo.
+
+180
+00:14:28,120 --> 00:14:30,180
+Entriamo e diciamo che Alosi chiama 0 trama e se vediamo che la posizione migliore è qui in alto a sinistra
+
+181
+00:14:30,240 --> 00:14:31,170
+andiamo avanti e controlliamo un altro codice di localizzazione.
+
+182
+00:14:31,170 --> 00:14:37,320
+Se torniamo qui per esempio se lo volessimo nel centro possiamo specificare un codice di localizzazione 10.
+
+183
+00:14:37,380 --> 00:14:42,000
+E qui abbiamo il centro.
+
+184
+00:14:42,010 --> 00:14:48,820
+per te, come da 0 a 10, puoi anche specificare una tupla che dà la x e la y dell'angolo in basso a sinistra della legenda.
+
+185
+00:14:49,620 --> 00:14:51,480
+Ora, se nessuna di queste opzioni funziona
+
+186
+00:14:51,480 --> 00:14:57,510
+Quindi, per esempio, possiamo andare avanti e dire qualcosa del genere 0. 1 virgola 0. 1 e questo significa esattamente come hai fatto
+
+187
+00:14:57,510 --> 00:15:02,650
+prima quando inserisci una trama di inserimento.
+
+188
+00:15:02,880 --> 00:15:10,560
+È possibile inserire una tupla qui specificando la posizione in cui si desidera la propria legenda.
+
+189
+00:15:10,560 --> 00:15:13,100
+L'angolo in basso per essere.
+
+190
+00:15:13,200 --> 00:15:17,760
+Tutto ok.
+
+191
+00:15:17,760 --> 00:15:19,880
+Questo è tutto per questa seconda parte.
+
+192
+00:15:19,880 --> 00:15:20,670
+In arrivo.
+
+193
+00:15:20,790 --> 00:15:22,680
+Su quest'ultima parte della mappa conferenza sui concetti di Partlow.
+
+194
+00:15:22,680 --> 00:15:23,590
+Parliamo di impostare la
+
+195
+00:15:23,590 --> 00:15:26,310
+linea dei colori con e tipi di linea, oltre a lavorare con i
+
+196
+00:15:26,310 --> 00:15:32,040
+marcatori che impostano l'intervallo di trama e quindi inizieremo a parlare di alcuni tipi di trama speciali ma che ci porteranno maggiormente alla nostra discussione sul mare.
+
+197
+00:15:32,040 --> 00:15:36,690
+Va bene, grazie a tutti.
+
+198
+00:15:36,690 --> 00:15:39,150
+Vai avanti e posta tutte le domande che hai sui forum di domande e risposte e sarò felice di rispondervi.
+
+199
+00:15:39,180 --> 00:15:41,100
+Ricorda di fare riferimento ai quaderni per questa lezione.
+
+200
+00:15:41,110 --> 00:15:46,010
+OK, vedrò se la prossima lezione
+
+201
+00:15:46,020 --> 00:15:49,090
+&nbsp;
+
+202
+00:15:49,090 --> 00:15:50,940
+&nbsp;

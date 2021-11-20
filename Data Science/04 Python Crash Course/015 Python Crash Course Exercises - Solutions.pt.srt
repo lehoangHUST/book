@@ -1,0 +1,651 @@
+1
+00:00:05,130 --> 00:00:10,810
+Olá a todos e seja bem vindo à conferência sobre soluções de exercicios de curso intensivo do Python e nesta
+
+2
+00:00:10,800 --> 00:00:15,180
+palestra, eu vou estar trabalhando no caderno de soluções e explicando o código e as soluções.
+
+3
+00:00:15,170 --> 00:00:20,440
+Não, mas vamos em frente e pule para o caderno de exercícios para que possamos começar a codificar isso.
+
+4
+00:00:20,490 --> 00:00:20,760
+Tudo bem.
+
+5
+00:00:20,760 --> 00:00:23,990
+Aqui estou no curso intensivo.
+
+6
+00:00:24,060 --> 00:00:28,250
+A primeira pergunta que queríamos responder é o que é 7: 2 para o poder de quatro.
+
+7
+00:00:28,350 --> 00:00:30,540
+Agora, há tecnicamente duas maneiras pelas quais você poderia fazer isso.
+
+8
+00:00:30,570 --> 00:00:36,900
+Você poderia ter digitado sete vezes sete vezes sete vezes sete e obteve a resposta correta.
+
+9
+00:00:36,910 --> 00:00:42,600
+Mas, espero, lembre-se da maneira correta, que é apenas ligar para o Asterix para expoentes.
+
+10
+00:00:42,660 --> 00:00:44,740
+Então sete para o poder de quatro.
+
+11
+00:00:44,910 --> 00:00:47,730
+Corra essa cela e há sua resposta.
+
+12
+00:00:47,730 --> 00:00:50,770
+Em seguida, queremos dividir a string S igual a.
+
+13
+00:00:50,780 --> 00:00:57,540
+Olá, Sam, em uma lista, podemos seguir em frente e apenas pegar isso e podemos ver o exemplo de
+
+14
+00:00:57,540 --> 00:00:59,890
+listas de saída que queremos criar.
+
+15
+00:00:59,910 --> 00:01:06,750
+Então, se eu executar uma sequela para oi lá Sam e chamar estop divide isso irá dividir automaticamente a string
+
+16
+00:01:07,320 --> 00:01:09,790
+em uma lista no espaço em branco.
+
+17
+00:01:09,790 --> 00:01:15,840
+Lembro-se de que podemos realmente passar qualquer personagem de cordas, por exemplo, para o que realmente queremos dividir
+
+18
+00:01:15,870 --> 00:01:19,750
+sobre o qual realmente vemos isso mais tarde em outro exercício.
+
+19
+00:01:19,980 --> 00:01:25,380
+Vamos entrar na próxima pergunta que foi dada às variáveis ​​plena é igual a terra e o diâmetro é
+
+20
+00:01:25,380 --> 00:01:27,850
+igual a doze mil setecentos e quarenta e dois.
+
+21
+00:01:28,110 --> 00:01:30,710
+Use esse formato para imprimir a seguinte string.
+
+22
+00:01:30,840 --> 00:01:34,830
+O diâmetro da Terra é de doze mil setecentos e quarenta e dois quilômetros.
+
+23
+00:01:34,940 --> 00:01:41,220
+E vamos correr a célula, então nós temos essas duas variáveis ​​para encontrar e então
+
+24
+00:01:42,000 --> 00:01:49,500
+digo em uma corda que o diâmetro da Terra é contado mil setecentos e quarenta e dois quilômetros.
+
+25
+00:01:49,520 --> 00:01:53,860
+Lembre-se de que eu quero usar esse formato e quero essas duas variáveis.
+
+26
+00:01:54,060 --> 00:02:02,070
+Então, eu vou substituir a terra com apenas um par de suportes curly e também fazer o mesmo para
+
+27
+00:02:02,800 --> 00:02:11,280
+este número de diâmetro, então eu vou dizer que o formato e eu vou no diâmetro dos planetas e eu
+
+28
+00:02:11,280 --> 00:02:13,460
+vou continuar e imprimir tudo.
+
+29
+00:02:13,470 --> 00:02:14,950
+Então, isso funciona.
+
+30
+00:02:15,030 --> 00:02:16,000
+E aí temos que.
+
+31
+00:02:16,260 --> 00:02:22,350
+Eu também poderia ter passado alguns nomes de variáveis ​​aqui, como A e B, e isso é igual a
+
+32
+00:02:22,890 --> 00:02:23,970
+A e B.
+
+33
+00:02:24,210 --> 00:02:25,650
+E essa é exatamente a mesma coisa.
+
+34
+00:02:25,650 --> 00:02:30,640
+Então, para você quando você usa isso para o primeiro, você deve ter certeza de que está na ordem correta.
+
+35
+00:02:30,960 --> 00:02:35,550
+Em seguida, dada essa lista aninhada, use a indexação para pegar a palavra Olá.
+
+36
+00:02:35,790 --> 00:02:36,670
+Isso é bastante complicado.
+
+37
+00:02:36,690 --> 00:02:42,770
+Então você vai tomar seu tempo com isso e começar de dentro para fora.
+
+38
+00:02:42,870 --> 00:02:44,620
+Você pode ver aqui que temos oi.
+
+39
+00:02:44,700 --> 00:02:50,100
+E essa é uma lista e Jupiter e isso ajuda-lo com o destaque do suporte, então
+
+40
+00:02:50,280 --> 00:02:56,820
+isso também está dentro de uma lista que está dentro de outra lista que está dentro da lista mais externa.
+
+41
+00:02:57,330 --> 00:03:06,730
+Então toda essa lista aqui é o que queremos pegar primeiro e vamos localizar no índice 3 0 1 2 3.
+
+42
+00:03:07,140 --> 00:03:09,210
+Vamos adiante e pegar isso.
+
+43
+00:03:09,510 --> 00:03:15,930
+Agora que eu tenho essa lista, posso ver que a lista que tem a minha palavra-alvo hello é o
+
+44
+00:03:15,930 --> 00:03:19,790
+segundo item na lista, o que significa que é um índice.
+
+45
+00:03:20,550 --> 00:03:24,240
+E agora vou derrubar isso de novo, então, 0 1 2 e
+
+46
+00:03:27,150 --> 00:03:29,540
+então eu tenho uma lista de um elemento.
+
+47
+00:03:29,540 --> 00:03:32,170
+Então eu posso seguir em frente e apenas pegar isso novamente para zero.
+
+48
+00:03:32,610 --> 00:03:35,090
+E, finalmente, eu tenho a corda, olá, OK.
+
+49
+00:03:35,100 --> 00:03:39,660
+Isso é bastante complicado e você nunca terá uma situação como essa na vida real.
+
+50
+00:03:39,810 --> 00:03:44,190
+Mas quando eu trabalho com pandas você terá que fazer coisas profundas de dois níveis.
+
+51
+00:03:44,190 --> 00:03:45,940
+Então, tenha em mente isso.
+
+52
+00:03:46,440 --> 00:03:46,780
+Tudo bem.
+
+53
+00:03:46,800 --> 00:03:51,090
+Então a próxima pergunta foi dada por este dicionário nece pegou a palavra olá.
+
+54
+00:03:51,420 --> 00:03:53,820
+Esteja preparado, isso será complicado.
+
+55
+00:03:53,820 --> 00:03:55,410
+Então isso é bastante complicado.
+
+56
+00:03:55,710 --> 00:03:57,810
+Mas vamos seguir em frente e derrubar passo a passo.
+
+57
+00:03:57,840 --> 00:04:01,190
+A primeira coisa que você precisa fazer é pegar uma chave.
+
+58
+00:04:01,200 --> 00:04:05,410
+Então, se olharmos, podemos realmente apenas chamar as próprias chaves.
+
+59
+00:04:05,640 --> 00:04:11,460
+E, na verdade, só temos uma chave no dicionário mais externo, ok, vamos seguir em frente e chamar isso.
+
+60
+00:04:13,530 --> 00:04:19,230
+E então agora eu tenho uma lista de alguns elementos e aviso que eu quero agarrar este
+
+61
+00:04:19,230 --> 00:04:22,270
+dicionário aqui, que está em 0 1 2 3.
+
+62
+00:04:22,270 --> 00:04:25,410
+Então, índice 3 dessa lista.
+
+63
+00:04:25,410 --> 00:04:31,920
+Portanto, tenha em mente que somos um tipo de indexação de lista de mixagem com pares de valores-chave de um dicionário.
+
+64
+00:04:32,400 --> 00:04:36,810
+E então eu tenho um dicionário novamente e eu quero agarrar o valor na chave.
+
+65
+00:04:36,810 --> 00:04:39,260
+Complicado.
+
+66
+00:04:40,020 --> 00:04:46,520
+Então eu tenho uma lista novamente e eu quero pegar esse dicionário que é 0 1 2 3.
+
+67
+00:04:47,810 --> 00:04:52,240
+E então eu tenho um dicionário novamente e eu quero pegar um alvo-chave.
+
+68
+00:04:52,770 --> 00:04:59,210
+E, finalmente, eu tenho uma lista e eu quero agarrar esse último elemento 0 1 2 3.
+
+69
+00:05:00,000 --> 00:05:01,390
+E é oi.
+
+70
+00:05:01,750 --> 00:05:02,130
+ESTÁ BEM.
+
+71
+00:05:02,130 --> 00:05:04,390
+Muito complicado, bastante difícil.
+
+72
+00:05:04,410 --> 00:05:09,520
+Portanto, não se preocupe muito se você não conseguiu entender isso rapidamente porque é bastante irritante.
+
+73
+00:05:09,560 --> 00:05:15,250
+Sless complicado, mas espero que você possa realmente entender a lógica dessa solução.
+
+74
+00:05:15,270 --> 00:05:18,210
+A próxima pergunta é qual é a principal diferença entre uma tupla e uma lista.
+
+75
+00:05:18,270 --> 00:05:21,450
+Bem, uma tupla é imutável e uma lista é mutável.
+
+76
+00:05:21,450 --> 00:05:23,980
+Essa é a principal diferença.
+
+77
+00:05:24,060 --> 00:05:28,500
+Depois disso, queríamos criar uma função que agarra o domínio do site de e-mail de uma
+
+78
+00:05:28,500 --> 00:05:30,960
+string no usuário de formulário no domínio dot com.
+
+79
+00:05:30,960 --> 00:05:36,610
+Então, por exemplo, passar o domínio do usuário, o ponto com retornaria o domínio dot com.
+
+80
+00:05:37,260 --> 00:05:43,120
+Vamos em frente e crie uma função chamada get de domínio.
+
+81
+00:05:43,530 --> 00:05:51,540
+Ele terá uma variável de e-mail que será uma string e depois retornaremos e-mails que se dividirão
+
+82
+00:05:54,230 --> 00:05:56,330
+e dividiremos no símbolo.
+
+83
+00:05:56,340 --> 00:05:58,900
+Vamos entrar e ver como isso funciona.
+
+84
+00:05:58,950 --> 00:06:00,550
+Se eu apenas correr isso.
+
+85
+00:06:01,170 --> 00:06:01,860
+OK ótimo.
+
+86
+00:06:01,860 --> 00:06:08,900
+Então, se eu acabo de correr, acabei dividindo isso no símbolo e recebo uma lista de volta.
+
+87
+00:06:09,030 --> 00:06:14,360
+Eu quero o segundo item na lista, o que significa que eu quero seguir em frente e pegar um índice em cima disso.
+
+88
+00:06:14,430 --> 00:06:16,920
+E então, se eu executar isso, recebo a resposta certa.
+
+89
+00:06:16,950 --> 00:06:20,810
+Esse domínio dot com.
+
+90
+00:06:20,820 --> 00:06:24,640
+Em seguida, queremos criar uma função básica que retorna verdadeira.
+
+91
+00:06:24,740 --> 00:06:27,940
+Essa é a palavra cão contida na cadeia de entrada.
+
+92
+00:06:28,020 --> 00:06:30,910
+E, novamente, não se preocupe com casos de ponta, como a pontuação em anexo.
+
+93
+00:06:30,920 --> 00:06:37,940
+A palavra cão bem, devemos explicar a capitalização ou avançar e fazer é criar uma função.
+
+94
+00:06:37,940 --> 00:06:47,850
+O quarto encontrar cão leva em alguma variável e seguir em frente e chamar a variável
+
+95
+00:06:47,850 --> 00:06:57,720
+S e depois diremos retorno, verificaremos se o cão está em S para poder capitalizar.
+
+96
+00:06:57,720 --> 00:07:03,060
+se transforme em uma lista de objetos e então, quando eu executo isso, ele acaba sendo verdadeiro.
+
+97
+00:07:03,060 --> 00:07:08,130
+Eu irei em frente e abaixei tudo em S e então vou dividi-lo para que ele realmente
+
+98
+00:07:08,280 --> 00:07:09,500
+Há cães lá.
+
+99
+00:07:09,540 --> 00:07:12,910
+Deixe-me entrar e mostrar-lhe o que realmente está acontecendo quando eu passo essa corda.
+
+100
+00:07:12,960 --> 00:07:15,480
+Eu direi que s é igual.
+
+101
+00:07:15,570 --> 00:07:18,030
+Existe um cachorro aqui.
+
+102
+00:07:19,410 --> 00:07:20,210
+Execute o.
+
+103
+00:07:20,310 --> 00:07:27,360
+E então, se eu chamar de impedimento inferior, reduziria tudo e, em seguida, se eu disser que
+
+104
+00:07:27,360 --> 00:07:34,800
+não conseguiu dividir depois disso, eu recebo essa lista e, finalmente, finalmente estou checando, é cachorro naquela lista.
+
+105
+00:07:34,800 --> 00:07:41,640
+Então, essas são as etapas que eu estou executando nesta declaração de uma linha que eu quero criar uma função que conta o número
+
+106
+00:07:41,640 --> 00:07:45,000
+de vezes que a palavra cão ocorre em uma seqüência de caracteres.
+
+107
+00:07:45,000 --> 00:07:48,570
+E, novamente, podemos ignorar os casos de ponta.
+
+108
+00:07:49,020 --> 00:07:57,090
+Vamos prosseguir e dizer que o F crie uma função chamada Chifres de Contagem e uma corda como t
+
+109
+00:07:57,090 --> 00:08:03,830
+irá definir nossa contagem inicial para 0 e diremos por palavra e novamente diremos s t.
+
+110
+00:08:03,880 --> 00:08:15,390
+Divisão mais baixa da mesma maneira que fizemos para a última pergunta e, em seguida, cólon se essa palavra for igual ao cachorro, vamos seguir em frente
+
+111
+00:08:16,560 --> 00:08:18,610
+e adicionar 1 às contagens.
+
+112
+00:08:18,720 --> 00:08:22,590
+Então, diga conta é igual à contagem mais 1.
+
+113
+00:08:22,980 --> 00:08:26,070
+Então, você poderia dizer que a contagem é igual à contagem mais 1 ou à taquigrafia.
+
+114
+00:08:26,070 --> 00:08:29,690
+O que algumas pessoas gostam de fazer é apenas dizer mais é igual a 1.
+
+115
+00:08:29,730 --> 00:08:31,880
+E essa é exatamente a mesma coisa.
+
+116
+00:08:31,890 --> 00:08:34,540
+Então, finalmente, vou voltar no final.
+
+117
+00:08:34,740 --> 00:08:37,470
+Minha contagem é o número de vezes que eu vi essa palavra cão.
+
+118
+00:08:37,470 --> 00:08:42,850
+Agora, se avançarmos e executar isso, obteremos a resposta correta aqui.
+
+119
+00:08:43,020 --> 00:08:47,670
+Em seguida, queríamos usar expressões lambda na função de filtro para filtrar as palavras de uma lista
+
+120
+00:08:47,670 --> 00:08:49,490
+que não inicia a letra S.
+
+121
+00:08:49,650 --> 00:08:56,460
+Por exemplo, temos CQ é uma lista de palavras que devem ser filtradas para sopa e depois salada
+
+122
+00:08:56,460 --> 00:08:58,650
+Vamos ver como podemos fazer isso.
+
+123
+00:08:58,650 --> 00:09:06,030
+Eu vou dizer filtro e então eu uso a expressão da terra.
+
+124
+00:09:06,090 --> 00:09:14,100
+Vai levar em uma palavra e verificará se os primeiros elementos dessa seqüência de palavras são
+
+125
+00:09:14,100 --> 00:09:23,060
+iguais a S e depois não passarão uma sequência e, finalmente, vou lançar tudo como uma lista.
+
+126
+00:09:24,060 --> 00:09:25,170
+E essa é a resposta.
+
+127
+00:09:25,170 --> 00:09:26,480
+Sopa e depois salada.
+
+128
+00:09:26,550 --> 00:09:32,280
+retornar um valor booleano e avançamos e filtramos a seqüência com base nesses valores booleanos.
+
+129
+00:09:32,280 --> 00:09:38,020
+Então, novamente, para filtrar essa expressão lambda ou funcionar, o pudim que você passa deve
+
+130
+00:09:38,850 --> 00:09:39,150
+Tudo bem.
+
+131
+00:09:39,150 --> 00:09:41,160
+Aqui estamos no último problema.
+
+132
+00:09:41,280 --> 00:09:42,650
+A declaração do problema é essa.
+
+133
+00:09:42,670 --> 00:09:46,570
+Você está dirigindo um pouco rápido demais e um policial pára você.
+
+134
+00:09:46,620 --> 00:09:50,310
+Você precisará escrever uma função para retornar um dos três resultados possíveis.
+
+135
+00:09:50,310 --> 00:09:53,000
+Sem bilhete bilhete pequeno ou bilhete grande.
+
+136
+00:09:53,190 --> 00:09:56,650
+Se a sua velocidade é de 60 ou menos, o resultado não é bilhete.
+
+137
+00:09:56,700 --> 00:10:01,890
+Se a velocidade for entre 61 e 80 inclusive. O resultado é um bilhete pequeno.
+
+138
+00:10:01,890 --> 00:10:06,870
+Se a velocidade é de 81 ou mais, o resultado é um grande bilhete e quanto menor for
+
+139
+00:10:06,870 --> 00:10:12,760
+o seu aniversário codificado como um valor booleano nos parâmetros da função em seu aniversário, sua velocidade pode ser superior a 5.
+
+140
+00:10:12,780 --> 00:10:14,120
+Em todos os casos.
+
+141
+00:10:14,340 --> 00:10:15,800
+Significado se é seu aniversário.
+
+142
+00:10:15,810 --> 00:10:22,830
+Então, se for sublinhado, o aniversário é verdade que o limite de velocidade é aumentado cinco milhas ou cinco quilômetros por
+
+143
+00:10:22,830 --> 00:10:23,970
+hora para você.
+
+144
+00:10:24,420 --> 00:10:26,290
+OK, vamos continuar e começar.
+
+145
+00:10:26,310 --> 00:10:29,840
+Vamos excluir as declarações passadas.
+
+146
+00:10:29,910 --> 00:10:34,070
+A primeira coisa que eu quero fazer é verificar se é aniversário de alguém e ajustar a velocidade de acordo.
+
+147
+00:10:34,080 --> 00:10:37,080
+Dizendo se é de nascimento, eles
+
+148
+00:10:40,650 --> 00:10:48,500
+dirão que o excesso de velocidade é igual à velocidade menos cinco e depois a outra.
+
+149
+00:10:49,050 --> 00:10:57,420
+O excesso de velocidade é igual à velocidade e então iremos em frente e verifique agora contra a velocidade
+
+150
+00:10:57,450 --> 00:10:59,590
+das condições para os ingressos.
+
+151
+00:10:59,640 --> 00:11:06,450
+Então, novamente, se o excesso de velocidade for maior que 80, então é um grande bilhete.
+
+152
+00:11:06,510 --> 00:11:11,160
+Então vou seguir em frente e devolver o bilhete de corda.
+
+153
+00:11:12,680 --> 00:11:23,820
+Então, vamos dizer se o excesso de velocidade é maior do que 60 Bem, então vai retornar um pequeno ingresso e, de
+
+154
+00:11:26,040 --> 00:11:27,540
+outra forma, teremos.
+
+155
+00:11:27,570 --> 00:11:32,870
+O que seria apenas um bilhete de ida e volta.
+
+156
+00:11:33,120 --> 00:11:34,410
+E então, podemos seguir em frente e executar isso.
+
+157
+00:11:34,410 --> 00:11:40,040
+Então, 81 normalmente seria um grande ingresso, mas, como é seu aniversário, diremos que é verdade.
+
+158
+00:11:40,080 --> 00:11:41,700
+Esse deve ser um bilhete pequeno.
+
+159
+00:11:41,940 --> 00:11:46,910
+E lá nós o temos e 81 falso Bem, esse é definitivamente um grande bilhete.
+
+160
+00:11:46,980 --> 00:11:47,840
+Tudo bem.
+
+161
+00:11:47,880 --> 00:11:49,620
+Espero que você tenha gostado das soluções.
+
+162
+00:11:49,620 --> 00:11:54,390
+Não hesite em publicar quaisquer perguntas que você tenha nos fóruns de Q &amp; A e ficarei feliz em ajudá-lo lá.
+
+163
+00:11:54,390 --> 00:11:56,220
+Obrigado a todos e eu vou ver você na próxima palestra

@@ -1,0 +1,899 @@
+1
+00:00:05,490 --> 00:00:10,460
+Witam wszystkich i zapraszam do drugiej części wykładu z zakresu finansowania projektów.
+
+2
+00:00:10,470 --> 00:00:15,780
+Przejdźmy dalej i wskoczmy z powrotem do książki notatek Jowisza, gdzie poprzednio zostawiliśmy przerwę.
+
+3
+00:00:15,780 --> 00:00:16,080
+DOBRZE.
+
+4
+00:00:16,080 --> 00:00:17,810
+Jestem w notesie Jowisza.
+
+5
+00:00:17,820 --> 00:00:20,740
+Ostatnim razem, kiedy skończyliśmy, właśnie stworzyliśmy ten dział strony.
+
+6
+00:00:20,760 --> 00:00:23,830
+Zwróć uwagę na dziwne zachowanie na powrót Citigroup.
+
+7
+00:00:24,030 --> 00:00:29,250
+A jeśli to Ci się wyróżnia, możesz zajrzeć na stronę Wikipedii Citigroup, a zauważysz, że w
+
+8
+00:00:29,250 --> 00:00:31,640
+listopadzie 2008 r. Miały one awarię.
+
+9
+00:00:31,650 --> 00:00:34,710
+I rzeczywiście zbadamy to nieco później.
+
+10
+00:00:35,370 --> 00:00:41,070
+Jednak następnym krokiem, który chcemy zrobić, jest skorzystanie z tej ramki danych zwrotów, aby dowiedzieć się,
+
+11
+00:00:41,070 --> 00:00:47,340
+jakie daty każdego z banków miały najlepsze i najgorsze pojedyncze dni, i powinieneś zauważyć, że cztery banki mają
+
+12
+00:00:47,340 --> 00:00:52,500
+ten sam dzień na gorszy spadek i że cokolwiek znaczącego zdarzyło się tego dnia.
+
+13
+00:00:52,500 --> 00:01:00,300
+Zacznijmy od czegoś, co możemy zrobić, po prostu sprawdź ramkę danych zwrotów i zauważ, że mamy tutaj te
+
+14
+00:01:00,330 --> 00:01:04,700
+kolumny, że B A C zwróciło C, zwrot itd.
+
+15
+00:01:04,780 --> 00:01:09,580
+Chcę uzyskać minimalne wartości dla tych zwrotów i wszystkie one wrócą POJEDYNCZY DZIEŃ.
+
+16
+00:01:09,600 --> 00:01:16,960
+Mogę po prostu powiedzieć, że mężczyźni zwrócą minimalną wartość zwrotu z jednego dnia.
+
+17
+00:01:16,970 --> 00:01:23,220
+Teraz to, czego naprawdę chcemy, to daty, kiedy to się stało i jest kilka sposobów, aby to zrobić.
+
+18
+00:01:23,220 --> 00:01:31,920
+Jednym z nich jest możliwość iteracji po nazwach kolumn, a jeśli zapamiętasz swoje imię PI zamiast wywoływać np.
+
+19
+00:01:32,520 --> 00:01:39,240
+Mężczyzn z tej kolumny, możesz wywołać argumenty, a argument zwróci ten znacznik czasu, a
+
+20
+00:01:39,300 --> 00:01:43,430
+w tym przypadku jest to 20 stycznia 2009.
+
+21
+00:01:43,450 --> 00:01:49,290
+Teraz możesz to zrobić dla każdej pojedynczej kolumny lub Panthers pozwala ci to
+
+22
+00:01:49,290 --> 00:01:57,600
+zrobić w całej ramce danych, po prostu wywołując id x men i która zwraca w zasadzie to serię, która
+
+23
+00:01:57,930 --> 00:02:04,140
+wygląda tak z datami lub indeksami minimalnych wartości dla każdej kolumny. zwroty dla każdego
+
+24
+00:02:04,140 --> 00:02:12,090
+banku i możesz zrobić to samo, mówiąc zwroty id x max, aby uzyskać największe zyski z jednego dnia.
+
+25
+00:02:12,150 --> 00:02:20,190
+Teraz, jeśli chodzi o najgorsze stropy, zauważysz, że wiele z nich wydarzyło się 20 stycznia 2009 roku.
+
+26
+00:02:20,280 --> 00:02:25,980
+A jeśli jesteś ciekawy, co się stało w tym dniu, możesz po prostu przeszukać google,
+
+27
+00:02:25,980 --> 00:02:30,950
+a zauważysz, że to była data inauguracji Baracka Obamy, która jest interesująca.
+
+28
+00:02:31,710 --> 00:02:37,200
+W tym miejscu należy zwrócić uwagę na to, czy jest to skorelowane, czy tylko zbieg okoliczności, czy też w zasadzie
+
+29
+00:02:37,200 --> 00:02:41,000
+niektórzy inwestorzy rynkowi wpadają w panikę, gdy dochodzi do jakiejś wielkiej zmiany politycznej.
+
+30
+00:02:41,070 --> 00:02:47,730
+W rzeczywistości możesz sprawdzić ideę Max, że na przykład największy dzień zwrotu JP Morgan to następny
+
+31
+00:02:47,730 --> 00:02:48,640
+dzień następny.
+
+32
+00:02:48,720 --> 00:02:52,740
+Więc nie traktuj tego jako jakichkolwiek politycznych komentarzy, a nawet porad finansowych.
+
+33
+00:02:52,740 --> 00:02:55,840
+Rynki akcji mogą czasami wydawać się dziwne.
+
+34
+00:02:55,890 --> 00:03:01,710
+Teraz, gdy sprawdzimy następne pytanie, należy zauważyć, że największy spadek i największy
+
+35
+00:03:01,770 --> 00:03:04,770
+wzrost Citigroup były bardzo zbliżone.
+
+36
+00:03:05,040 --> 00:03:11,040
+Zauważyliśmy, że zysk JP Morgana ma miejsce tego samego dnia po inauguracji zaraz po ich
+
+37
+00:03:11,040 --> 00:03:12,020
+największej stracie.
+
+38
+00:03:12,240 --> 00:03:22,920
+Ale jeśli spojrzymy na Citigroup mageddon jasne, że sprzedajemy, jeśli spojrzymy na Citigroup mają one 6 maja i 2000 roku 2011
+
+39
+00:03:22,920 --> 00:03:31,110
+11. dziewiąta ze mnie, jako bardzo blisko siebie, to ich najgorszy zwrot i najlepszy zwrot, a
+
+40
+00:03:31,590 --> 00:03:34,540
+wtedy wydarzyło się coś znaczącego.
+
+41
+00:03:34,650 --> 00:03:35,990
+Aktualnie tak.
+
+42
+00:03:36,420 --> 00:03:43,200
+Jeśli skończysz w Googlowaniu czegoś takiego jak Citigroup 2011, powinieneś otrzymać wiadomość, która wygląda tak, gdy Citigroup ogłasza odwrotny
+
+43
+00:03:43,200 --> 00:03:48,120
+podział akcji, a to w zasadzie wydarzyło się mniej więcej w tym czasie.
+
+44
+00:03:48,450 --> 00:03:55,330
+I można zauważyć, że to było skuteczne w dniu 6 maja 2011 r., Który rodzaj linii z naszymi danymi tutaj.
+
+45
+00:03:55,890 --> 00:03:56,160
+W porządku.
+
+46
+00:03:56,160 --> 00:03:56,880
+To jest całkiem fajne.
+
+47
+00:03:56,880 --> 00:04:03,330
+Możemy faktycznie skorelować lub zobaczyć rzeczywiste wydarzenia wpływające na nasze ceny akcji w naszych danych, które mamy
+
+48
+00:04:03,330 --> 00:04:06,270
+w naszym zakresie danych, co jest interesujące.
+
+49
+00:04:06,360 --> 00:04:11,220
+Teraz jeśli dalej będziemy chcieli, to spójrzmy na odchylenie standardowe zwrotów i które
+
+50
+00:04:11,220 --> 00:04:15,990
+akcje można zaklasyfikować jako najbardziej ryzykowne w całym okresie czasu i które można
+
+51
+00:04:15,990 --> 00:04:19,040
+zaklasyfikować jako najbardziej ryzykowne w roku 2015.
+
+52
+00:04:19,380 --> 00:04:25,320
+Czasami podstawowym pomiarem ryzyka jest ryzyko odchylenia zapasów od standardowego odchylenia
+
+53
+00:04:25,320 --> 00:04:26,700
+zwrotów akcji.
+
+54
+00:04:26,700 --> 00:04:31,200
+Jeśli więc masz bardzo duże odchylenie standardowe, oznacza to, że twoje zapasy rosną w górę iw
+
+55
+00:04:31,530 --> 00:04:33,880
+dół, w porównaniu do małej odchyłki Steria.
+
+56
+00:04:33,900 --> 00:04:35,790
+Oznacza to, że Twoja cena jest dość stabilna.
+
+57
+00:04:35,790 --> 00:04:39,270
+Więc jeśli masz duże odchylenie standardowe, twoje akcje są prawdopodobnie dość ryzykowne.
+
+58
+00:04:39,780 --> 00:04:41,970
+Sprawdźmy, czy możemy to zrobić.
+
+59
+00:04:42,030 --> 00:04:43,100
+To całkiem proste.
+
+60
+00:04:43,110 --> 00:04:47,930
+Możesz po prostu powiedzieć zwroty, a ja zamierzam umieścić to w komórce właśnie tutaj.
+
+61
+00:04:47,940 --> 00:04:52,440
+Zwraca da SDD dla odchylenia standardowego i dostajemy coś, co wygląda tak.
+
+62
+00:04:52,440 --> 00:04:59,130
+Zasadniczo odchylenie standardowe dla każdego stada i wydaje się dość ryzykowne, to w
+
+63
+00:04:59,250 --> 00:05:00,640
+rzeczywistości Citigroup.
+
+64
+00:05:00,690 --> 00:05:01,860
+A później zobaczymy, dlaczego.
+
+65
+00:05:01,860 --> 00:05:10,500
+Ponieważ miał ogromny krach i aż do 2015 roku możemy iść dalej i powiedzieć, że zwrot w tym, co chcemy
+
+66
+00:05:10,500 --> 00:05:14,530
+zrobić, to dowiedzieć się, czy spojrzeć na głowę.
+
+67
+00:05:14,820 --> 00:05:19,770
+Chcemy uzyskać wartości tylko w 2015 r. I opierać się na indeksie.
+
+68
+00:05:20,010 --> 00:05:29,710
+To znaczy, że chcę pobrać sekcję lub kawałek indeksu i mogę to wykorzystać za pomocą I X,
+
+69
+00:05:29,730 --> 00:05:41,390
+a ja od 2015 r. Będę przekazywać 1 0 1 1, więc od 1 stycznia 2015 r. Jako plasterek do 2015 r.
+
+70
+00:05:41,460 --> 00:05:46,960
+Dwanaście trzydzieści jeden to kawałek, a następnie wywołaj standardowe odchylenie od tego.
+
+71
+00:05:47,550 --> 00:05:52,980
+Zauważysz, że w 2015 roku, który jest poza zdarzeniem Citigroup,
+
+72
+00:05:52,980 --> 00:05:59,940
+wszyscy oni mają bardzo podobny profil ryzyka, przy czym fałszywe Fargo jest najmniejszym ryzykiem.
+
+73
+00:06:00,420 --> 00:06:07,860
+Wygląda na to, że Morgan Stanley lub Bank of America są największym ryzykiem, ale zasadniczo
+
+74
+00:06:07,860 --> 00:06:10,990
+standardowe odchylenia są bardzo zbliżone.
+
+75
+00:06:11,040 --> 00:06:17,530
+OK, chcieliśmy napisać fabułę za pomocą morskiego zwrotu z 2015 roku dla Morgan Stanley.
+
+76
+00:06:17,610 --> 00:06:19,160
+Zróbmy to.
+
+77
+00:06:19,230 --> 00:06:26,700
+Możemy śmiało powiedzieć, gdy tylko pomyślałem, że ten wątek chcę powrotu Morgan Stanley z 2015 roku, kiedy wychodzimy
+
+78
+00:06:27,150 --> 00:06:32,690
+i kopiujemy ten kod tutaj, a to jest mój zwrot z 2015 roku.
+
+79
+00:06:32,790 --> 00:06:41,820
+A potem po prostu chcę, żeby Morgan Stanley miał po prostu ochotę na kolumnę
+
+80
+00:06:41,820 --> 00:06:49,920
+zwrotów M-S i możemy ją pokolorować tak, żeby pasowała do wykładów rozwiązań.
+
+81
+00:06:50,070 --> 00:06:54,810
+I chodźmy dalej i zwiększ rozmiar bin lub liczba binów przepraszam, ponieważ mamy naprawdę
+
+82
+00:06:54,810 --> 00:06:55,640
+sporo danych.
+
+83
+00:06:55,650 --> 00:07:02,040
+Więc idę do przodu i mówię, że pojemniki są takie same, jak powiedzmy, powiedzmy 50.
+
+84
+00:07:02,130 --> 00:07:02,480
+W porządku.
+
+85
+00:07:02,520 --> 00:07:07,800
+A teraz mamy dystrybucję zwrotów dla Morgan Stanley w 2015 roku.
+
+86
+00:07:07,800 --> 00:07:12,210
+W porządku, więc tutaj widzimy, że powrót M-S i dystrybucja, o ile patrzymy na
+
+87
+00:07:12,210 --> 00:07:13,710
+to, jest całkiem stabilna.
+
+88
+00:07:13,710 --> 00:07:20,730
+Patrzysz na procentowe zwroty, które tylko odchylają około 0 6 od średniej, ale
+
+89
+00:07:20,730 --> 00:07:27,450
+zamierzamy iść dalej, a teraz sprawdźmy działkę dystrybucyjną wykorzystującą morską deklarację z
+
+90
+00:07:27,450 --> 00:07:35,570
+2008 roku dla Citigroup, która była dla nich dość niestabilna na północy aby to zrobić,
+
+91
+00:07:35,640 --> 00:07:47,100
+powiedzmy, że ten spisek lub Sonesta to fabuła, która powróci IX, a ja pójdę dalej i pokroję to i skopiuję, ale zamiast
+
+92
+00:07:47,100 --> 00:07:48,840
+2015 r. pójdziemy
+
+93
+00:07:52,000 --> 00:08:00,960
+dalej i wprowadzimy w 2008 r., zrobimy to samo tutaj 2008s, a następnie chcemy C kolumny zwrotu.
+
+94
+00:08:01,220 --> 00:08:07,110
+Nie idź dalej i pokoloruj ten czerwony, abyśmy mogli powiedzieć różnicę tutaj, a ja pójdę dalej i ustawię
+
+95
+00:08:07,200 --> 00:08:08,460
+bin jako równy.
+
+96
+00:08:08,820 --> 00:08:11,480
+Pójdźmy dalej i powiedzmy 50 ponownie.
+
+97
+00:08:12,130 --> 00:08:17,490
+I jeśli to zrobię, jeśli wejdziemy i porównamy to zauważysz, że odchylenie standardowe
+
+98
+00:08:17,490 --> 00:08:22,590
+jest w rzeczywistości trochę bardziej rozciągnięte, szczególnie tutaj masz prawie 6 punktów.
+
+99
+00:08:22,650 --> 00:08:30,180
+A jeśli spojrzymy wstecz na normalny rok dla banku w 2015 roku, Europa 0 6 jest w rzeczywistości 10
+
+100
+00:08:30,180 --> 00:08:30,980
+razy większa.
+
+101
+00:08:31,140 --> 00:08:37,950
+Jeśli chodzi o ten rozkład, to skrajności tutaj są dość odległe, a my prześledzimy, co faktycznie
+
+102
+00:08:37,950 --> 00:08:41,130
+stało się z Citigroup w tym roku.
+
+103
+00:08:41,130 --> 00:08:47,610
+Jest to jednak wskazanie na kryzys finansowy, przez który przechodzą akcje.
+
+104
+00:08:47,690 --> 00:08:48,150
+W porządku.
+
+105
+00:08:48,360 --> 00:08:52,430
+Zrobimy więcej wizualizacji, a wiele z tych projektów faktycznie koncentruje się na
+
+106
+00:08:52,800 --> 00:08:56,790
+wizualizacjach i możesz swobodnie korzystać z dowolnych preferowanych bibliotek wizualizacji, aby
+
+107
+00:08:56,790 --> 00:08:58,300
+odtworzyć opisane niżej wątki.
+
+108
+00:08:58,350 --> 00:09:02,940
+Będziesz w stanie zrobić je właściwie, albo zobaczysz więcej plot plotek i spinki do
+
+109
+00:09:02,940 --> 00:09:06,840
+mankietów, albo nawet tylko sprytników, dzięki czemu możesz wybrać dowolne metody.
+
+110
+00:09:06,840 --> 00:09:10,710
+Zamierzam wyjść i pokazać wam kilka sposobów na wykonanie każdej fabuły, a pokażemy
+
+111
+00:09:10,710 --> 00:09:14,220
+ci, jak używać spinki do mankietów Pauliana, aby dobrze je wykonać.
+
+112
+00:09:14,370 --> 00:09:19,500
+W porządku, więc po uruchomieniu tych importów chcemy wyjść i zrobić, to utworzyć wykresy linii
+
+113
+00:09:19,500 --> 00:09:22,990
+w cenie zamknięcia dla każdego banku lub całego indeksu czasu.
+
+114
+00:09:23,130 --> 00:09:27,480
+I było kilka wskazówek, aby spróbować użyć pętli for lub użyć metody
+
+115
+00:09:27,480 --> 00:09:29,520
+przekrojów, aby uzyskać przekrój danych.
+
+116
+00:09:29,640 --> 00:09:32,520
+I tutaj możemy zobaczyć obydwie metody w grze.
+
+117
+00:09:32,520 --> 00:09:35,110
+Najpierw pokażmy metodę pętli for.
+
+118
+00:09:35,400 --> 00:09:41,220
+Mam nadzieję, że teraz jest jasne, że widząc Citigroup jako widzenie zielone, ta ogromna awaria w 2008
+
+119
+00:09:41,520 --> 00:09:46,970
+roku musiała się odbyć, o ile ich standardowe odchylenie jest dość duże w tym roku.
+
+120
+00:09:47,490 --> 00:09:49,960
+Ale i tak wróci do pętli for.
+
+121
+00:09:50,400 --> 00:09:57,540
+Zamierzam pójść i powiedzieć o tikasie w tickerze, który pamięta, że lista giełdowych zapasów nazywa
+
+122
+00:09:57,540 --> 00:10:07,170
+zapasy bankowe kleszczem cena zamknięcia, a następnie po prostu idź dalej i spisek to i mam zamiar to wykreślić mam
+
+123
+00:10:07,170 --> 00:10:10,720
+zamiar określić, że etykieta jest równa tick.
+
+124
+00:10:10,940 --> 00:10:13,760
+Teraz wiemy, która linia jest zgodna z kolorami.
+
+125
+00:10:13,860 --> 00:10:19,930
+Następnie określę rozmiar figi tak, aby rozciągnąć go nieco, abyśmy mogli uzyskać tę samą
+
+126
+00:10:20,760 --> 00:10:22,940
+wizualizację, którą mamy tutaj.
+
+127
+00:10:22,980 --> 00:10:31,040
+I w końcu zadzwonię do legendy, żebyśmy mogli zobaczyć legendę, a jeśli to zrobię, otrzymam tę samą fabułę.
+
+128
+00:10:31,050 --> 00:10:37,800
+Wygląda to mniej więcej tak, że wyraźnie widzimy, że Citigroup po prostu rozpadła się po wielkiej recesji w
+
+129
+00:10:38,310 --> 00:10:39,360
+2008 roku.
+
+130
+00:10:39,480 --> 00:10:44,820
+I co ciekawe, ta czerwona linia Goldman Sachs, która przypomina jak spadki, a następnie
+
+131
+00:10:44,820 --> 00:10:47,550
+odbija się dość szybko po recesji.
+
+132
+00:10:47,750 --> 00:10:52,020
+Musisz jeszcze powiększyć, aby zobaczyć inne banki i zobaczyć, jak działają.
+
+133
+00:10:52,200 --> 00:10:58,470
+Ale relatywnie rzecz biorąc, nie było to prawie tak
+
+134
+00:10:58,500 --> 00:11:08,060
+samo, jak inne akcje, niech się posłużą i pokażemy, jak to zrobić, bo mamy przekrój, można
+
+135
+00:11:08,130 --> 00:11:20,790
+powiedzieć, że zapasy banków zatrzymują dostęp z kluczem równym bliskiemu dostępowi równemu "patrząc na kolumny powiedzieć poziom to informacje o stanie.
+
+136
+00:11:20,820 --> 00:11:22,460
+A jeśli po prostu na to spojrzymy.
+
+137
+00:11:22,650 --> 00:11:25,600
+Jest to w zasadzie wszystkie ceny zamknięcia dla zapasów.
+
+138
+00:11:25,620 --> 00:11:30,710
+A to, co musimy tam zrobić, to tylko działka wywołań i dostajesz tę samą fabułę.
+
+139
+00:11:30,930 --> 00:11:35,490
+Zamiast wykonywać pętlę for można to zrobić w jednym wierszu za pomocą przekroju.
+
+140
+00:11:35,580 --> 00:11:40,260
+I znowu możesz zmienić rozmiar rysunku i wykonać dowolne polecenia pętli wykresu, które chcesz na tym wykresie.
+
+141
+00:11:41,370 --> 00:11:47,160
+Na koniec przejdźmy dalej i pokażmy działkę w ten sposób, która jest w istocie tą samą linią,
+
+142
+00:11:47,760 --> 00:11:49,560
+która tworzy ramkę danych.
+
+143
+00:11:49,950 --> 00:11:57,090
+Ale wtedy nazywasz to spiskowaniem, a spinki do mankietów pozwolą ci teraz stworzyć tę bardzo ładnie wyglądającą fabułę, w której
+
+144
+00:11:57,090 --> 00:12:01,940
+możesz wizualizować rzeczy i faktycznie widzieć wartości i rodzaj zabawy z nimi.
+
+145
+00:12:01,950 --> 00:12:06,990
+Więc jeśli chcesz trochę powiększyć akcje non-Citigroup lub Goldman Sachs, możesz wyjść
+
+146
+00:12:06,990 --> 00:12:12,240
+i zrobić to po prostu chwytając przekrój, a następnie sprawdzając spadki, aby zobaczyć
+
+147
+00:12:12,390 --> 00:12:18,810
+spadek w czasie kryzysu finansowego jako pewne dziwne zachowanie podczas takich rzeczy, jak podział akcji, taki
+
+148
+00:12:18,810 --> 00:12:20,820
+jak ten w maju.
+
+149
+00:12:20,820 --> 00:12:21,290
+W porządku.
+
+150
+00:12:21,450 --> 00:12:25,860
+To sprawia, że bawienie się danymi i zbieranie cen akcji w czasie kryzysu
+
+151
+00:12:25,860 --> 00:12:27,340
+finansowego sprawia dużo radości.
+
+152
+00:12:27,440 --> 00:12:31,300
+Idziemy naprzód i robimy ruch do średnich kroczących.
+
+153
+00:12:31,590 --> 00:12:35,960
+I będziemy analizować średnie ruchome dla akcji w 2008 roku.
+
+154
+00:12:36,000 --> 00:12:40,650
+Pierwszą rzeczą, którą musimy zrobić, jest wykreślenie 30-dniowej średniej kroczącej w stosunku
+
+155
+00:12:40,650 --> 00:12:44,330
+do ceny zamknięcia akcji Banku za 2008 rok.
+
+156
+00:12:44,340 --> 00:12:46,560
+Pokażmy, jak możemy to zrobić.
+
+157
+00:12:46,590 --> 00:12:53,170
+Zamierzam powiedzieć B A C i sprawdzić numer B A C.
+
+158
+00:12:53,180 --> 00:12:56,570
+To była moja pierwsza oryginalna baza danych dla Bank of America.
+
+159
+00:12:56,580 --> 00:13:02,070
+Zanim wrzucimy to do banku, podkreślimy zapasy, a następnie przechodzimy do
+
+160
+00:13:02,070 --> 00:13:10,590
+zamknięcia, i od razu je wywołajmy. Zamierzam użyć metody IX, aby posortować daty, które chcę, i chcę
+
+161
+00:13:10,590 --> 00:13:14,430
+1 stycznia 2008 r., Aż do 2009
+
+162
+00:13:16,890 --> 00:13:18,420
+1 stycznia.
+
+163
+00:13:18,480 --> 00:13:19,800
+A więc przez cały rok.
+
+164
+00:13:20,310 --> 00:13:24,710
+A następnie chcemy użyć metody toczenia.
+
+165
+00:13:25,920 --> 00:13:35,220
+Tak więc Panas może dać ci metodę kroczącą dla średniej ruchomej, a wtedy możemy powiedzieć średnią jako naszą
+
+166
+00:13:37,620 --> 00:13:38,220
+metodę.
+
+167
+00:13:38,220 --> 00:13:45,330
+A potem możemy po prostu napisać to i możemy to wydrukować z etykietą, abyśmy mogli pokazać, na co
+
+168
+00:13:46,530 --> 00:13:47,240
+patrzymy.
+
+169
+00:13:47,240 --> 00:13:55,410
+Więc wejdziemy i powiemy, że jest to 30-dniowa średnia ruchoma jako etykieta, a następną rzeczą,
+
+170
+00:13:55,410 --> 00:14:03,180
+którą zrobimy, jest to, że zamierzamy kreślić to samo, ale zobacz w tym przypadku
+
+171
+00:14:03,180 --> 00:14:04,520
+Cena £.
+
+172
+00:14:04,590 --> 00:14:16,600
+Powiedzmy, że fabuła i ta etykieta będą blisko BAMC, a potem nazwiemy PLDT tą legendą.
+
+173
+00:14:17,790 --> 00:14:21,900
+Więc jeśli po prostu biegniemy, otrzymamy fabułę, która wygląda tak, i
+
+174
+00:14:21,900 --> 00:14:29,310
+możemy iść dalej i rozciągnąć to, jeśli chcemy, mówiąc, duży rozmiar Piazziego i możemy powiedzieć, że jest to coś ładniejszego, niż
+
+175
+00:14:29,600 --> 00:14:35,700
+powiedziałem przed tym, jak to jest miłe Wyciągnij go i jest twoja 30-dniowa średnia krocząca w stosunku do
+
+176
+00:14:35,700 --> 00:14:36,960
+rzeczywistej ceny zamknięcia.
+
+177
+00:14:36,960 --> 00:14:41,620
+Pozwala to zobaczyć rodzaj ogólnego trendu akcji.
+
+178
+00:14:41,670 --> 00:14:47,010
+Możesz zmienić to okno na tygodniową średnią ruchomą lub 60 dniową średnią ruchomą, co tylko
+
+179
+00:14:47,010 --> 00:14:47,740
+chcesz.
+
+180
+00:14:48,150 --> 00:14:52,860
+W porządku Kolejną rzeczą, którą chcesz zrobić, to stworzyć mapę cieplną korelacji między
+
+181
+00:14:52,950 --> 00:14:54,660
+tymi cenami zamknięcia zapasów.
+
+182
+00:14:54,690 --> 00:14:56,520
+Zacznijmy i pokażemy, jak możemy to zrobić.
+
+183
+00:14:56,550 --> 00:15:04,710
+Możesz wywołać mapę termiczną Asinusa, a teraz chcemy uzyskać korelację ceny zamknięcia akcji Issing.
+
+184
+00:15:04,800 --> 00:15:09,580
+Przejdźmy dalej i po prostu zmieszajmy to i zbudujmy najpierw tę ramkę danych.
+
+185
+00:15:09,990 --> 00:15:12,120
+To będzie bardzo podobne do tego, co robiłeś wcześniej.
+
+186
+00:15:12,210 --> 00:15:21,230
+Wyjdziemy i zdobędziemy przekrój cen zamknięcia, mówiąc, że jest blisko X = 1.
+
+187
+00:15:21,540 --> 00:15:23,730
+Poziom to informacje o zapasach i
+
+188
+00:15:27,500 --> 00:15:29,440
+jeśli po prostu to sprawdzimy.
+
+189
+00:15:29,820 --> 00:15:33,090
+To tylko cena zamknięcia dla zapasów.
+
+190
+00:15:33,090 --> 00:15:39,240
+A jeśli powiem córkę, która daje mi korelację.
+
+191
+00:15:39,240 --> 00:15:43,430
+A teraz mam coś w matrycy, którą mogę wywołać w mapie termicznej.
+
+192
+00:15:43,730 --> 00:15:51,450
+Tak więc zamierzam iść dalej i zbliżyć się do tego i powiedzieć mapę ciepła tutaj i sprawdzić moją mapę cieplną.
+
+193
+00:15:52,470 --> 00:16:00,320
+A teraz mam swoją mapę cieplną i jeśli chcę faktyczne adnotacje, które mogę tylko powiedzieć, i to jest prawdziwe, a potem
+
+194
+00:16:00,330 --> 00:16:05,310
+pójdziemy dalej i wstawimy adnotacje tutaj i tutaj widzimy korelację między cenami zamknięcia
+
+195
+00:16:05,310 --> 00:16:12,630
+zapasów w coś, co możemy opcjonalnie zrobić, a także korzystać z map klastra, aby właściwie powiązać te korelacje ze
+
+196
+00:16:12,630 --> 00:16:17,550
+sobą, może być pomocne, aby nieco bardziej wyjaśnić, co się dzieje.
+
+197
+00:16:18,060 --> 00:16:24,660
+Tak więc w formie mapy ciepła wystarczy wpisać mapę klastra, a uruchomisz to, co
+
+198
+00:16:24,660 --> 00:16:26,080
+powinno wyglądać podobnie.
+
+199
+00:16:26,280 --> 00:16:34,920
+Wygląda więc na to, że Seaborne próbowało zgrupować razem Citigroup Morgan Stanley i Bank of America oraz
+
+200
+00:16:34,920 --> 00:16:39,580
+ich korelację w jedną grupę, a także złoto.
+
+201
+00:16:39,600 --> 00:16:45,030
+Goldman Sachs J. P. Morgan i Wells Fargo należą do innej
+
+202
+00:16:45,030 --> 00:16:46,400
+grupy, mają pewną korelację.
+
+203
+00:16:46,410 --> 00:16:46,990
+W porządku.
+
+204
+00:16:47,220 --> 00:16:51,060
+Możesz sprawdzić, który działki są najbardziej skorelowane ze sobą lub czy są ze sobą powiązane.
+
+205
+00:16:51,060 --> 00:17:00,750
+Wygląda na to, że to JPMorgan i Wells Fargo, a także Morgan Stanley i Bank of America.
+
+206
+00:17:00,750 --> 00:17:01,400
+DOBRZE.
+
+207
+00:17:01,770 --> 00:17:04,490
+Tak było w przypadku projektu finansowego.
+
+208
+00:17:04,500 --> 00:17:09,090
+Istnieje część druga opcjonalna, która pokaże w części trzeciej wykładzie rozwiązania i że ma więcej do zrobienia,
+
+209
+00:17:09,090 --> 00:17:15,240
+jeśli spiskuję i niektóre ze specjalnych możliwości spinki do mankietów, ale ze względu na dużą zależność od spinki do mankietów jest to rodzaj
+
+210
+00:17:15,270 --> 00:17:19,740
+opcjonalnej rzeczy, która może być dobra odkrywać na własną rękę, na wypadek gdyby niektóre z tych
+
+211
+00:17:19,740 --> 00:17:21,420
+funkcji zostały zerwane w przyszłości.
+
+212
+00:17:21,420 --> 00:17:22,860
+Ale mam nadzieję, że spodoba ci się ten projekt.
+
+213
+00:17:22,860 --> 00:17:29,280
+Miało to być niezwykle trudne i trudne, ale z natury jest to analiza zapasów i
+
+214
+00:17:29,280 --> 00:17:30,060
+finansów.
+
+215
+00:17:30,180 --> 00:17:33,360
+Coś, co spotkasz, jeśli jest to coś, czym jesteś zainteresowany.
+
+216
+00:17:33,570 --> 00:17:38,010
+Wiele z tych rzeczy jest trudnych i trudnych, ale miejmy nadzieję, że widzisz, że czujesz
+
+217
+00:17:38,010 --> 00:17:43,290
+się naprawdę komfortowo z pandami i morzem. Takie rzeczy stają się o wiele łatwiejsze, niż gdybyś musiał je
+
+218
+00:17:43,290 --> 00:17:48,660
+wykonywać na przykład w Excelu lub w innym języku programowania dla wielu z tych odpowiedzi za pomocą zaledwie
+
+219
+00:17:48,660 --> 00:17:51,220
+kilku linii kodu lub nawet jednej linii kodu.
+
+220
+00:17:51,280 --> 00:17:56,640
+I naprawdę fajne jest to, że możesz stworzyć coś takiego w jednym wierszu kodu, dzięki
+
+221
+00:17:56,640 --> 00:18:01,730
+czemu możesz zdecydowanie zaimponować kolegom lub znajomym, pokazując im własną analizę projektów finansowych.
+
+222
+00:18:01,770 --> 00:18:02,300
+DOBRZE.
+
+223
+00:18:02,520 --> 00:18:03,860
+Mam nadzieję, że podobał Ci się projekt.
+
+224
+00:18:03,900 --> 00:18:08,510
+W części 3 omówimy opcjonalną sekcję tych rozwiązań.
+
+225
+00:18:08,730 --> 00:18:10,680
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

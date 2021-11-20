@@ -1,0 +1,327 @@
+1
+00:00:05,160 --> 00:00:10,410
+Bună ziua tuturor și bun venit la lectură lipsă de date în această sală de curs arată câteva metode convenabile pentru
+
+2
+00:00:10,650 --> 00:00:12,870
+a face față lipsa de date în Pandas.
+
+3
+00:00:12,870 --> 00:00:17,820
+De multe ori când utilizați panda pentru a citi în date dacă aveți puncte lipsă ce
+
+4
+00:00:17,820 --> 00:00:21,040
+se va întâmpla, Pandurs va completa automat acest punct lipsă.
+
+5
+00:00:21,250 --> 00:00:21,690
+Nu.
+
+6
+00:00:21,720 --> 00:00:23,360
+Sau orice valoare.
+
+7
+00:00:23,610 --> 00:00:28,980
+Să mergem mai departe și să explorăm modul în care putem folosi metode cum ar fi abandonarea unui nume sau umplerea și a pentru a
+
+8
+00:00:28,980 --> 00:00:31,800
+renunța efectiv la aceste valori lipsă sau pentru a completa aceste valori lipsă.
+
+9
+00:00:32,040 --> 00:00:36,090
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+10
+00:00:36,120 --> 00:00:36,420
+In regula.
+
+11
+00:00:36,420 --> 00:00:38,270
+Aici sunt la notebook-ul Jupiter.
+
+12
+00:00:38,280 --> 00:00:43,800
+Ceea ce vreau să fac și să fac este să creez un cadru de date și, așa cum am creat, putem
+
+13
+00:00:43,860 --> 00:00:48,480
+crea o serie dintr-un dicționar, de fapt, putem crea un cadru de date dintr-un dicționar, de asemenea.
+
+14
+00:00:48,480 --> 00:00:55,620
+Acest dicționar va avea trei chei și va tasta o cheie B și tasta C și ce vor fi acestea sunt coloanele
+
+15
+00:00:55,620 --> 00:01:01,560
+din cadrul nostru de date și apoi putem face pentru punctele de date reale este pasan o
+
+16
+00:01:01,620 --> 00:01:03,810
+listă de valori pentru fiecare cheie.
+
+17
+00:01:04,260 --> 00:01:08,290
+Și acestea vor fi punctele de date pentru fiecare rând din numele acelei coloane.
+
+18
+00:01:08,340 --> 00:01:12,680
+Vom merge mai departe și vom spune că și A are o listă.
+
+19
+00:01:12,930 --> 00:01:18,290
+Apoi vom folosi orice n pentru a indica o valoare ordinală lipsă.
+
+20
+00:01:19,080 --> 00:01:20,290
+Apoi vom salva pentru B.
+
+21
+00:01:20,310 --> 00:01:28,260
+Va fi 5 și P că Nan și P și apoi și apoi în cele din urmă kisi coloana a treia.
+
+22
+00:01:28,260 --> 00:01:31,150
+Deci, vom păstra toate valorile 1 2 și 3.
+
+23
+00:01:31,200 --> 00:01:33,360
+Deci nu are valori lipsă.
+
+24
+00:01:33,360 --> 00:01:41,300
+Și apoi putem merge mai departe și să spunem că DFAC este egal cu cadrul de date PD și apoi trece în dicționarul D.
+
+25
+00:01:41,730 --> 00:01:48,270
+Și atunci când verificăm cadrul de date obținem acest cadru frumos de date de coloane A B și
+
+26
+00:01:48,270 --> 00:01:56,580
+C și apoi rândurile 0 1 și 2 nu există rânduri 0 care nu au valori lipsă, iar Coloana C nu are valori lipsă.
+
+27
+00:01:56,700 --> 00:02:02,850
+Și apoi există câteva valori lipsă aici în Roby sau în coloana B și o valoare lipsă în coloana A.
+
+28
+00:02:03,360 --> 00:02:07,940
+Să ieșim și să explorăm picătură și o metodă.
+
+29
+00:02:08,280 --> 00:02:11,580
+De multe ori doriți doar să renunțați la valori lipsă din setul de date.
+
+30
+00:02:11,640 --> 00:02:14,010
+Mai ales dacă sunt doar câteva valori lipsă.
+
+31
+00:02:14,010 --> 00:02:21,300
+Dacă spui că aruncați un A doar prin el însuși și numiți-l ca o metodă de paranteze apropiate, ceea ce se întâmplă este
+
+32
+00:02:21,300 --> 00:02:28,890
+că Pandurs va renunța la orice rând cu orice singură sau cu apă mai mascul sau valori lipsă, adică dacă vreuna dintre aceste rânduri
+
+33
+00:02:28,890 --> 00:02:33,840
+are o valoare nulă în una sau mai multe au trecut și au renunțat.
+
+34
+00:02:33,870 --> 00:02:40,050
+Dacă doriți să efectuați această acțiune în coloanele pe care le puteți face, verificați fila de schimbare aici și observați
+
+35
+00:02:40,050 --> 00:02:42,060
+că există un argument pentru axă.
+
+36
+00:02:42,330 --> 00:02:44,740
+Asta înseamnă că implicit axa este zero.
+
+37
+00:02:44,880 --> 00:02:47,210
+Înseamnă că operația are loc de-a lungul rândurilor.
+
+38
+00:02:47,340 --> 00:02:53,820
+Dar dacă doriți să efectuați operația de-a lungul coloanelor care sunt în picătură coloanele care au o valoare nulă
+
+39
+00:02:54,240 --> 00:02:56,780
+puteți specifica axa este egală cu 1.
+
+40
+00:02:57,750 --> 00:03:01,200
+Și asta va cădea în coloanele cu o valoare nulă.
+
+41
+00:03:01,360 --> 00:03:03,710
+Deci nu văd comparația aici.
+
+42
+00:03:03,950 --> 00:03:09,720
+Și asta înseamnă că dacă Trapani trops orice rânduri de orice valori de rang în ea și apoi după sunt Trump și
+
+43
+00:03:09,810 --> 00:03:14,230
+un cu acces egal cu unul se va lăsa orice coloane de valori nul în ea.
+
+44
+00:03:14,640 --> 00:03:17,840
+Dar puteți face și să specificați un prag.
+
+45
+00:03:18,120 --> 00:03:24,420
+Și dacă intrăm și verificăm asta vom spune că DMF aruncă un A și folosește fila Shift.
+
+46
+00:03:24,450 --> 00:03:31,190
+Consultați documentația care este în cazul în care există un argument de tip împușcat ce este argumentul.
+
+47
+00:03:31,320 --> 00:03:39,480
+Este o valoare intrega si veti avea nevoie de multe knon si de valori pentru a nu fi scazut.
+
+48
+00:03:39,480 --> 00:03:43,180
+De exemplu, permiteți-mi să intru și să plasez pragul egal cu 2.
+
+49
+00:03:43,590 --> 00:03:46,030
+Și din nou, vom face acest lucru de-a lungul drumurilor.
+
+50
+00:03:46,260 --> 00:03:53,470
+Așa că observați aici că avem în rândul 0 3 non și o valoare în rândul 1.
+
+51
+00:03:53,490 --> 00:03:58,710
+Avem două valori non A și în rândul doi avem doar unul.
+
+52
+00:03:58,830 --> 00:04:01,090
+Numărul trei nu are valori.
+
+53
+00:04:01,140 --> 00:04:05,850
+Asta înseamnă că dacă spun că picătură și așa scade totul decât Roseboro.
+
+54
+00:04:05,970 --> 00:04:14,270
+Cu toate acestea, dacă am setat pragul să fie egal cu 2 și executați acest lucru a continuat și a păstrat rândul 1.
+
+55
+00:04:14,310 --> 00:04:22,740
+Și în principiu, ceea ce înseamnă asta înseamnă că rândul 1 a avut cel puțin două non și 2 valori. 0 și cele două au mers înainte
+
+56
+00:04:22,800 --> 00:04:26,880
+și au ținut acel rând.
+
+57
+00:04:26,910 --> 00:04:27,230
+In regula.
+
+58
+00:04:27,270 --> 00:04:33,790
+Să mergem mai departe și să mergem la Phil și să spunem că acum ne concentrăm doar pe scăderea valorilor lipsă.
+
+59
+00:04:33,870 --> 00:04:37,060
+De multe ori veți dori să înlocuiți aceste valori lipsă.
+
+60
+00:04:37,290 --> 00:04:39,320
+Privim din nou cadrul nostru de date.
+
+61
+00:04:39,390 --> 00:04:40,870
+Aici avem aceste valori lipsă.
+
+62
+00:04:40,950 --> 00:04:47,430
+Dacă vrem să umplem aceste valori lipsă, putem folosi metoda de umplere și o metodă și acest lucru mergem și luăm
+
+63
+00:04:47,430 --> 00:04:49,910
+tab-ul de schimbare aici avem câteva argumente diferite.
+
+64
+00:04:49,930 --> 00:04:52,400
+Dar observați că are un argument de valoare.
+
+65
+00:04:52,610 --> 00:04:57,910
+Și ceea ce puteți face aici este o valoare stabilită în valoarea dvs. de umplere.
+
+66
+00:04:57,940 --> 00:05:00,410
+Voi trece pe un șir pentru a face foarte evident aici.
+
+67
+00:05:00,450 --> 00:05:07,530
+Ce se întâmplă și observați că a fost capabil să completeze acea valoare, indiferent de valoarea dorită.
+
+68
+00:05:07,940 --> 00:05:10,680
+În acest caz, doar un șir care conține valoarea de umplere.
+
+69
+00:05:10,770 --> 00:05:15,060
+Cu toate acestea, de multe ori ceea ce ai de gând să vrei să faci este
+
+70
+00:05:15,060 --> 00:05:20,860
+de fapt să completeze valoarea de poate mijlocul coloanei și puteți face acest lucru, de exemplu, ca să puteți spune DSF a.
+
+71
+00:05:21,090 --> 00:05:25,150
+Deci asta este coloana mea și observați punctul lipsă aici.
+
+72
+00:05:25,170 --> 00:05:36,170
+Voi merge mai departe și voi spune să umpleți și a și voi stabili valoarea la media acelei coloane.
+
+73
+00:05:37,710 --> 00:05:42,210
+Și acum această valoare a fost ocupată ca medie a valorii.
+
+74
+00:05:42,330 --> 00:05:47,760
+Acum există o întreagă filosofie și mod de gândire și metode statistice pentru completarea corectă
+
+75
+00:05:47,790 --> 00:05:49,070
+a valorilor lipsă.
+
+76
+00:05:49,110 --> 00:05:53,280
+Vă las să continuați și să explorați pe cont propriu, deoarece
+
+77
+00:05:53,280 --> 00:05:56,010
+depind cu adevărat de ce date lucrați.
+
+78
+00:05:56,010 --> 00:06:03,030
+De acum, tot ce vreau să știți este că există o umplere și o metodă, o picătură și o metodă.
+
+79
+00:06:03,510 --> 00:06:05,600
+OK, asta e pentru moment.
+
+80
+00:06:05,610 --> 00:06:10,770
+Sperăm că vă amintiți doar că aceste două metode sunt disponibile pentru dvs. și puteți
+
+81
+00:06:10,770 --> 00:06:15,810
+specifica ce acces doriți să efectuați acțiunea, precum și argumentele și argumentele de valoare.
+
+82
+00:06:15,810 --> 00:06:18,800
+Mulțumesc tuturor și vă văd la următoarea conferință

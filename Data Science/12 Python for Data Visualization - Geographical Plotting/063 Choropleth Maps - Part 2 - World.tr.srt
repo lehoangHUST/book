@@ -1,0 +1,335 @@
+1
+00:00:05,520 --> 00:00:06,990
+Merhaba diğer herkes de.
+
+2
+00:00:06,990 --> 00:00:11,290
+Bu kloroplast haritalarının 2. bölümü, 2. bölümde ders anlatıyor.
+
+3
+00:00:11,290 --> 00:00:14,640
+Uluslararası veya dünya ölçeğinde haritalara odaklanacağız.
+
+4
+00:00:14,730 --> 00:00:19,860
+ABD ve ülke çapında korroplet haritalarına odaklanan son ders olan Bölüm 1.
+
+5
+00:00:19,860 --> 00:00:24,900
+Şimdi de ilerleyip bunu dünya çapında uluslararası bir düzeye taşıyacağız.
+
+6
+00:00:24,900 --> 00:00:28,980
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+7
+00:00:28,980 --> 00:00:29,280
+Tamam.
+
+8
+00:00:29,280 --> 00:00:31,280
+İşte Jüpiter defterindeyim.
+
+9
+00:00:31,320 --> 00:00:35,950
+Son kez U.'de kaldık. S. devlete göre tarımsal ihracat.
+
+10
+00:00:36,030 --> 00:00:42,510
+Devam edelim ve devam etmek ve bu son arsayı yorumlamak için bir dünya GSYİH verisi
+
+11
+00:00:42,600 --> 00:00:48,980
+olan bir sonraki veri grubumuza geçelim ve PD'nin CSP'yi okumak için fiziksel olduğunu söyleyelim.
+
+12
+00:00:49,000 --> 00:00:57,210
+Şimdi devam edip 2014 Dünya GSYİH veri setini açıp bu verilerin başına
+
+13
+00:00:57,210 --> 00:00:58,020
+bakacağız.
+
+14
+00:00:58,310 --> 00:01:01,540
+Milyarlarca dolarlık bir GSYİH adına sahibiz.
+
+15
+00:01:01,590 --> 00:01:03,410
+Ve sonra ülke kodu.
+
+16
+00:01:03,510 --> 00:01:08,910
+ülkeler için kodu daha önce gördüğümüz devlet kodlarıyla temelde aynı standartlaştırma diyoruz.
+
+17
+00:01:08,910 --> 00:01:10,170
+Diyelim ki, uluslararası
+
+18
+00:01:10,320 --> 00:01:16,020
+Geleceğinize ve bu değeri GSYİH ülkesini belki bir metin olarak kullanacağız ve
+
+19
+00:01:16,020 --> 00:01:20,130
+kod, mercan artı haritalama için gerçek kod pasanıysa kullanacağız.
+
+20
+00:01:20,700 --> 00:01:24,780
+Devam edin ve veri değişkenimizi oluşturmaya başlayalım.
+
+21
+00:01:24,780 --> 00:01:36,020
+Yine buna, biz geçen seferki yaptığımız gibi, tipin Perl Plath'a eşit olduğunu söyledik.
+
+22
+00:01:36,050 --> 00:01:47,760
+Devam edin ve konumların ve konumların kod sütununa eşit olacağını ve sonra z değeri için
+
+23
+00:01:47,760 --> 00:01:54,400
+gidelim ve milyarlarca GSYİH'ya eşit olacak şekilde ayarlayalım deyin.
+
+24
+00:01:54,420 --> 00:02:00,000
+koyacağız ve sonra renk çubuğu bağımsız değişkenlerini ayarlayacağız.
+
+25
+00:02:02,700 --> 00:02:07,190
+Veri çerçevesinde ülke sütununa eşit metin
+
+26
+00:02:07,190 --> 00:02:11,610
+Ve burada, sözlüğümüzün geçtiği ve başlığın başlığına
+
+27
+00:02:11,610 --> 00:02:19,320
+bir anahtar ve ardından bir dize değeri var ve milyarlarca dolarlık GSYİH diyecekiz.
+
+28
+00:02:19,320 --> 00:02:23,260
+Ve bu bizim veri nesnemiz.
+
+29
+00:02:23,310 --> 00:02:30,590
+Ve şimdi değişken koymak için, devam edip dökümün bir sözlük olduğunu söyleyeceğiz.
+
+30
+00:02:31,080 --> 00:02:38,820
+Başlığı 2014 global GSYİH'ya eşit olacak şekilde ayarlayacağız ve sonraki
+
+31
+00:02:41,490 --> 00:02:46,890
+yapılacak şey Geo'nun eşit olduğuna karar verdik.
+
+32
+00:02:46,950 --> 00:02:56,370
+çerçevesini söyleyeceğim; bunu şov çerçevesiyle aynı hat üzerine koydum aslında yanlış.
+
+33
+00:02:56,370 --> 00:03:04,620
+Ve sonra başka bir sözlük olamayacak ve gidip şov
+
+34
+00:03:04,770 --> 00:03:10,230
+Şimdilik ve bir sonraki argüman projeksiyon olacak.
+
+35
+00:03:10,230 --> 00:03:12,160
+Ve dokümantasyona referans verebilirsiniz.
+
+36
+00:03:12,420 --> 00:03:20,990
+Ancak şu an için sadece bu Amerika ya da projeksiyon çizimi hazırlanmış belge projeksiyon
+
+37
+00:03:21,000 --> 00:03:24,310
+varsayımları, sözlük hazır gitmek gibi görünüyor.
+
+38
+00:03:24,630 --> 00:03:30,400
+Devam edin ve Koro haritası 3'ün eşit olduğunu söyleyelim.
+
+39
+00:03:30,430 --> 00:03:33,010
+Rakam gidin.
+
+40
+00:03:33,180 --> 00:03:41,650
+Veriler, tek bir madde listesi olarak aktarılan veriyle eşittir ve daha sonra eşit olarak ötelenirler.
+
+41
+00:03:42,660 --> 00:03:46,870
+Ve sonra mercan haritası 3'te parsel arayabiliriz.
+
+42
+00:03:47,580 --> 00:03:55,200
+Ve burada 2014 küresel GSYİH'miz var ve burada, bu ölçeğin temelde sadece Birleşik
+
+43
+00:03:55,260 --> 00:04:00,630
+Devletler Çin'i ve bazıları kemer ülkeleri veya dünyadaki daha
+
+44
+00:04:00,630 --> 00:04:03,570
+büyük nüfus ülkeleri olduğuna işaret ediyor.
+
+45
+00:04:03,570 --> 00:04:08,490
+Şimdi, bu tür bir çizimi kendi başına yapmanız için epeyce kez
+
+46
+00:04:08,490 --> 00:04:12,690
+bahsettiğim gibi belgelerinize veya Jüpiter defterlerine atıfta bulunmanız gerekecek ve
+
+47
+00:04:12,690 --> 00:04:14,740
+sizinle olan referansını araştırmak istiyorum.
+
+48
+00:04:14,850 --> 00:04:20,100
+bağlantıyı tıklatabilir veya sadece çizik çizgisinde Python eğik çizgi referansını çizebilirsiniz.
+
+49
+00:04:20,100 --> 00:04:21,780
+Jupiter defterinde verilen
+
+50
+00:04:21,990 --> 00:04:27,810
+Ve burada temel olarak tüm arsa olmayan arsa tiplerine geçebileceğiniz tüm argümanlara tam
+
+51
+00:04:27,810 --> 00:04:33,090
+bir referans vardır ve buradan haritaya ilerleyin ve çekirdek artı bölümüne ulaşmak
+
+52
+00:04:33,090 --> 00:04:38,750
+için kloroplast üzerine tıklayın ve çeşitli argümanları görebilirsiniz buraya girebilir ve burada devam
+
+53
+00:04:38,760 --> 00:04:42,780
+etmemiz gereken projeksiyon gibi bir şeyi kontrol edebilirsiniz.
+
+54
+00:04:42,900 --> 00:04:44,860
+Veya aslında sadece araştırabiliriz.
+
+55
+00:04:45,390 --> 00:04:51,580
+Bu yüzden bildiğim bir projeksiyonu burada bulabilir ve tipe sahip olabiliriz ve burada kloroplastlar altındayız ve
+
+56
+00:04:51,690 --> 00:04:54,860
+ilerleyebilir ve belki bir başka projeksiyon türünü geçebiliriz.
+
+57
+00:04:55,200 --> 00:05:02,080
+Bu, bu dizelerden birini alıp başka bir projeksiyon türü olan bu dizeleri alabildiğimiz anlamına geliyor.
+
+58
+00:05:02,100 --> 00:05:07,830
+Buraya geldim, dizenin yerine geçtim ve sonra bu komployu tekrar çalıştırıyorum.
+
+59
+00:05:07,830 --> 00:05:10,350
+Ve şimdi farklı bir projeksiyon türünüm var.
+
+60
+00:05:10,390 --> 00:05:13,270
+Burada ülkenin nasıl bir şekilde biraz daha şekillendiğine dikkat edin.
+
+61
+00:05:13,270 --> 00:05:19,080
+Buraya gelip stereografik bir izdüşüm gelmek gibi devam edebilirsin.
+
+62
+00:05:19,080 --> 00:05:25,530
+Kopyalayın ve yapıştırın ve tekrar çalıştırın; temelde oynamak ve bu kitaplıkları keşfetmek
+
+63
+00:05:25,560 --> 00:05:27,160
+için ne yaptığınızı.
+
+64
+00:05:27,390 --> 00:05:30,600
+Yani burada aslında bunu etrafında döndürebileceğiniz bir başka projeksiyon var.
+
+65
+00:05:30,600 --> 00:05:34,100
+Biraz tuhaf ki, ters yüz edilmiş bir dünya duygusu.
+
+66
+00:05:34,290 --> 00:05:38,110
+Onlar devam edebilir ve bunları oynayabilir ve kendi başınıza keşfedebilirler.
+
+67
+00:05:38,370 --> 00:05:43,920
+Bakmak güzel bir projeksiyon doğal toprak projeksiyonu sadece ilerlemek ve
+
+68
+00:05:43,920 --> 00:05:51,360
+burada doğal toprak geçmek ve daha sonra temelde güzel doğal görünümlü toprak olsun geçmek
+
+69
+00:05:51,960 --> 00:05:57,690
+ve bunu geçmek ve serin ve sen-ebilmek görmek Gezegendeki rotasyon.
+
+70
+00:05:58,140 --> 00:05:58,560
+TAMAM.
+
+71
+00:05:58,650 --> 00:06:00,720
+Devam edin ve belgeleri inceleyin.
+
+72
+00:06:00,750 --> 00:06:05,790
+çizim kütüphanelerini ve Watley'in yeteneklerini nasıl kullanacağınızı öğrenmenin büyük bir kısmı.
+
+73
+00:06:05,790 --> 00:06:09,060
+Bu tür mercan bolluklarını, daha karmaşık coğrafi
+
+74
+00:06:09,090 --> 00:06:13,860
+Verileriniz için, verileriniz arsanın kabul edebileceği bir formatta değilse,
+
+75
+00:06:13,860 --> 00:06:20,490
+muhtemelen başka bir coğrafi arsa kütüphanesinde kullanmaya gitmeniz gerektiğini umuyorum, ancak umarım
+
+76
+00:06:20,690 --> 00:06:26,730
+siz de Watley için kabul edilebilir bir formatta bir ülke kodu
+
+77
+00:06:26,730 --> 00:06:28,740
+veya ülke adı.
+
+78
+00:06:28,740 --> 00:06:30,380
+Tamam bu ders için.
+
+79
+00:06:30,390 --> 00:06:36,870
+Umarım keyif aldıysanız ve sadece birkaç satırlık kod için bilgece biraz zorlamasına rağmen,
+
+80
+00:06:36,870 --> 00:06:38,450
+plotline'ın gücünü görmüşsünüzdür.
+
+81
+00:06:38,460 --> 00:06:42,570
+Demek istediğim, bu sadece yaklaşık 15 satırlık belki daha da az.
+
+82
+00:06:42,660 --> 00:06:49,020
+Gerçekten coğrafi bir uluslararası ölçekte çok hoş görünümlü etkileşimli bir
+
+83
+00:06:49,020 --> 00:06:50,160
+görselleştirme yapabilirsiniz.
+
+84
+00:06:50,160 --> 00:06:53,160
+Pekâlâ, herkese teşekkürler, bir sonraki derside görüşürüz.

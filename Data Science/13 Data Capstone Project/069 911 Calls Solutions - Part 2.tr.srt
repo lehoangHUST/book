@@ -1,0 +1,987 @@
+1
+00:00:05,370 --> 00:00:10,070
+Herkese merhaba ve günübirlik iki gün için geceleme konferansı için bazı proje çözümleri kapağı hoş geldiniz.
+
+2
+00:00:10,100 --> 00:00:12,040
+Kaptanlık projesini aradığında.
+
+3
+00:00:12,240 --> 00:00:15,840
+Devam edin, bıraktığımız yerden atlayıp Jüpiter defterine gidelim.
+
+4
+00:00:16,290 --> 00:00:21,270
+Tamam burada dizüstü bilgisayarda kaldık, bıraktığımız aylarda aslında dokuzuncu ve dokuzuncu değerin
+
+5
+00:00:21,270 --> 00:00:27,180
+eksik olduğunu keşfettik 11 ve 11 eksikti ve şimdi yapmak istediğimiz pandalarla belki bir
+
+6
+00:00:27,180 --> 00:00:32,190
+çizgi arsa oluşturmak için çalışmak. Bunu dikkate almaya çalışan başka bir görselleştirme.
+
+7
+00:00:32,220 --> 00:00:34,700
+Bu yüzden eksik veri noktalarını doldurabiliriz.
+
+8
+00:00:35,140 --> 00:00:35,630
+TAMAM.
+
+9
+00:00:35,700 --> 00:00:44,670
+Geleceğiz ve yapacağız, ayda çağırılan nesneye göre bir grup oluşturup ay sütununu
+
+10
+00:00:44,670 --> 00:00:51,740
+geçerek DMF grubunu söyleyip talimatlara istendiği gibi toplama metodunu kullanın.
+
+11
+00:00:51,780 --> 00:00:52,490
+Ve sonra devam etti.
+
+12
+00:00:52,490 --> 00:00:54,540
+Sadece başını kontrol et.
+
+13
+00:00:54,570 --> 00:00:56,050
+Ayda.
+
+14
+00:00:56,590 --> 00:00:58,040
+Tamam ve burada, başını görebiliriz.
+
+15
+00:00:58,050 --> 00:01:04,500
+sütunların her bir örneğini aya göre saymış olduğumuzu ya da devam edeceğimizi fark
+
+16
+00:01:04,500 --> 00:01:10,680
+edeceksiniz, sayımların bir kısmının gerçek sütun değerine bağlı olarak farklı olduğunu fark ettiniz.
+
+17
+00:01:10,740 --> 00:01:13,140
+Aylara göre, temel olarak, olanları
+
+18
+00:01:13,180 --> 00:01:15,900
+Bunun nedeni bazı değerlerin eksik olmasıdır.
+
+19
+00:01:15,960 --> 00:01:18,590
+Bunu ayda bir araya getirdiğinizde ya devam edeceğiz ve bunu yapacağız.
+
+20
+00:01:18,600 --> 00:01:19,860
+Hatta her şey dahi değildir.
+
+21
+00:01:19,890 --> 00:01:24,050
+Enlem sütununu toplam sayı değeri olarak seçmeniz yeterlidir.
+
+22
+00:01:24,120 --> 00:01:29,980
+Devam edin ve çağrı enlemine sahip olsaydık çağrı gerçekten gerçekleştiğini varsayalım.
+
+23
+00:01:30,000 --> 00:01:34,660
+bir arsasını oluşturabiliriz ve bunu yapmanın yolu aslında yalnızca sütuna
+
+24
+00:01:34,670 --> 00:01:42,060
+aylık olarak ifade ettiğimiz sütunları çizerek ve örneğin enlem için sütunu arayıp ardından arsa diyebiliriz.
+
+25
+00:01:42,150 --> 00:01:45,750
+Şimdi aylık maliyet sayısını belirten veri çerçevesinin basit
+
+26
+00:01:46,530 --> 00:01:51,240
+Ve burada ayımız var, ve şimdi, eksik olan bazı bilgiyi,
+
+27
+00:01:51,660 --> 00:01:55,960
+aslında sekiz ile sekiz arasındaki noktalardan birine uyarak doldurabildik.
+
+28
+00:01:56,040 --> 00:02:00,260
+Ve sonra aşağı eğrisinin, başardığınızdan biraz daha iyi olduğunu görebilirsiniz.
+
+29
+00:02:00,450 --> 00:02:06,210
+Bunu sadece bir bar kompleksiyle yapsaydınız ve belki de biraz daha
+
+30
+00:02:06,240 --> 00:02:14,430
+ayrıntılı olarak göstereceğim, içeri girip bu kodu kopyalayacağım ve buraya yapacağım ve hewe'yi çıkarmaya gidiyorum
+
+31
+00:02:14,490 --> 00:02:17,460
+Ve sonra Bunu çalıştırırsanız kodu göreceğiz.
+
+32
+00:02:17,460 --> 00:02:18,900
+İşte ayımız var.
+
+33
+00:02:18,900 --> 00:02:20,800
+Bu küçük uyarı hakkında endişelenme.
+
+34
+00:02:21,090 --> 00:02:23,340
+Ancak bu aslında aynı bilgiyi gösterir.
+
+35
+00:02:23,340 --> 00:02:25,670
+Ancak 9-10 ve 11 ay olmadan.
+
+36
+00:02:25,840 --> 00:02:31,650
+Dolayısıyla, 7 ayın altındaki düşüşü iki ay sekiz ve 12 saat olarak görebilirsiniz.
+
+37
+00:02:31,650 --> 00:02:33,050
+Belki biraz daha nettir.
+
+38
+00:02:33,100 --> 00:02:37,060
+Bu tür çizgi planını kullanarak 8 ila 12 arasında düşüş.
+
+39
+00:02:37,380 --> 00:02:42,450
+belki de tam olarak doğru cevap değildir görmek için oynamak olabilir
+
+40
+00:02:42,750 --> 00:02:50,220
+Kantitatif yöntemlerle çok özel bir şeyler göstermek isterseniz ve bu durumda muhtemelen bu türden bir arsa sergilersiniz.
+
+41
+00:02:50,250 --> 00:02:56,430
+Ve aslında hangi sütunları, belki de ilçe sütunu veya posta kodu gibi çizmek için
+
+42
+00:02:56,430 --> 00:03:01,050
+seçtiğiniz bu damla ne kadar açıklayıcı veri analizi alanı veya
+
+43
+00:03:01,050 --> 00:03:06,540
+Fakat sadece bu basit çizim komutunu kullanarak trend hakkında bir fikir edinmek de güzel.
+
+44
+00:03:06,540 --> 00:03:06,960
+Tamam.
+
+45
+00:03:07,320 --> 00:03:11,850
+Şimdi devam edin ve aylık görüşme sayısına doğrusal bir uyum sağlamak için L-M çizgisinin
+
+46
+00:03:11,850 --> 00:03:13,000
+yaslarını kullanıp kullanamayacağımıza bakalım.
+
+47
+00:03:13,050 --> 00:03:17,750
+Bunu yapmak için dizini bir sütuna sıfırlamanız gerekebileceğini unutmayın.
+
+48
+00:03:17,790 --> 00:03:20,870
+Ben gidip yapacağım bunu söylüyorum.
+
+49
+00:03:20,880 --> 00:03:27,330
+Ben S. diyeyeceğim A. Düşündü L. M. Seaborn'dan gelen bu çizgisel
+
+50
+00:03:27,330 --> 00:03:35,420
+model planı için komplo ve ben çıkıp bu ayı kontrol edersek, X ekibini istiyorum ve şimdi y ekseni için belde ilçeleri arasından seçim yapabiliriz.
+
+51
+00:03:35,520 --> 00:03:39,690
+Enlemi seçebilirsiniz veya gerçekten de diğer sütunları da denemek isterseniz enlemi
+
+52
+00:03:39,690 --> 00:03:42,460
+veya gerçekten de başka bir sütunu da seçebilirsiniz.
+
+53
+00:03:43,680 --> 00:03:48,860
+Ve sonra veriler ayda bir olacak.
+
+54
+00:03:49,950 --> 00:03:52,890
+Ancak dikkat edin, X ayın sütunudur dedim.
+
+55
+00:03:52,890 --> 00:04:00,480
+Aylık aylara bir göz atarsak, aslında bir ay sütunumuz olmadığı ay dizindi.
+
+56
+00:04:00,570 --> 00:04:05,370
+net hale getirmek için ne yapacağım, dizini aylara sıfırlamak.
+
+57
+00:04:08,770 --> 00:04:11,070
+Bu yüzden işe gidip daha
+
+58
+00:04:11,070 --> 00:04:15,720
+Bunun sana gerçekte nasıl göründüğünü göstereceğim.
+
+59
+00:04:16,350 --> 00:04:21,750
+Endeksi veya aya göre sıfırladıysam ayımı yeni bir sütuna dönüştüreceğim ve
+
+60
+00:04:21,750 --> 00:04:26,630
+Seaborn'un bu bilgilere dizine ayarlamak yerine bu bilgilere erişmesini sağlıyor.
+
+61
+00:04:26,880 --> 00:04:29,110
+Ve bu şekilde geçebilirim ve ay burada bir ip var.
+
+62
+00:04:29,130 --> 00:04:31,200
+Aksi takdirde Seaborn kafası karıştı.
+
+63
+00:04:31,290 --> 00:04:39,060
+kullanmak zorunda kaldık ve doğrusal modeli elde ettik ve Seymore'un bu modelde aradığı
+
+64
+00:04:39,060 --> 00:04:43,980
+şeyin 0'dan 0'a düştüğünü gördüğümüz kadarıyla görebilirsiniz. ay 12.
+
+65
+00:04:43,980 --> 00:04:47,640
+Ve sütun için bu son dizini
+
+66
+00:04:47,640 --> 00:04:52,850
+Unutmayın ki seaborne'un ayda bir olduğunu anlaması için yeterli bilgiye sahip değildir.
+
+67
+00:04:52,980 --> 00:04:57,380
+Ve böylece 13 ve 14'ün var olması veya devam etmemesi gerekir.
+
+68
+00:04:57,420 --> 00:05:01,800
+Bu aslında mevsimlik veriler olacaktır ve bu durumda muhtemelen doğrusal bir model
+
+69
+00:05:01,890 --> 00:05:07,530
+en iyi uyuşmadır ve deniz kenarındaki ülkelerin bunu bu gölgeli alanı hatayla gösteren göstermekte görebilirsiniz ve
+
+70
+00:05:07,560 --> 00:05:12,360
+bu aylarda neredeyse hiç bilgi bulunmayan bu aylara girerken hata artar dokuz ya
+
+71
+00:05:12,360 --> 00:05:15,540
+da 10 ay hakkında bilgi sahibi olmak gerçekten mantıklı.
+
+72
+00:05:15,900 --> 00:05:21,770
+göreceksiniz ve o ay sekizinci çeyrek çöküyor, daha sonra verileri keşfetmek isteyebilirsiniz.
+
+73
+00:05:21,870 --> 00:05:24,540
+Ve bu eğilimin nereden geldiğini
+
+74
+00:05:24,540 --> 00:05:30,170
+Hadi başlayalım ve şimdilik bunun üzerinde bırakıp tarih bilgileri hakkında biraz daha bilgi edinin.
+
+75
+00:05:30,930 --> 00:05:31,210
+TAMAM.
+
+76
+00:05:31,220 --> 00:05:36,920
+Sonraki yapmak istedik, zaman damgası sütunundan tarihi içeren tarih adlı yeni bir
+
+77
+00:05:36,930 --> 00:05:42,590
+sütun oluşturuyorduk ve tarihi yakın cizeleme yöntemiyle birlikte uygulamayı kullanmanız gerekecek.
+
+78
+00:05:42,600 --> 00:05:50,460
+İzin verin, sana size zaman damgası sütununa bir örnek gösterip bunun tarihe göre ne anlama
+
+79
+00:05:50,460 --> 00:05:51,790
+geldiğini sana göstereceğim.
+
+80
+00:05:51,920 --> 00:05:58,860
+edip sadece zaman damgası sütununun ilk örneğini alıp şu nesnelerden birini çağıracağım.
+
+81
+00:05:58,880 --> 00:06:00,000
+Ben devam
+
+82
+00:06:00,010 --> 00:06:00,320
+Tamam.
+
+83
+00:06:00,320 --> 00:06:06,180
+Bu bir zaman damgası nesnesi ve aslında bir tarih nesnesinden biraz farklı.
+
+84
+00:06:06,240 --> 00:06:13,520
+Ve bunun sebebi, t ​​tarihini aramıyorsam, şimdi bir tarih nesnesi alırım.
+
+85
+00:06:13,530 --> 00:06:15,750
+Ve bu sadece tarih bilgilerini gösterir.
+
+86
+00:06:15,750 --> 00:06:20,940
+Artık zaman bilgisine sahip değildir ve bu iyi bir şeydir, çünkü daha sonra
+
+87
+00:06:20,940 --> 00:06:25,440
+yapmak isteyeceğimiz şey, yalnızca tarih başına çağrı sayısına benzeyen bir arsa oluşturmaktır.
+
+88
+00:06:25,440 --> 00:06:31,760
+Bu bilgiyi her saatte bir her dakikada bir çağrı numarasıyla sellemek istemiyoruz.
+
+89
+00:06:31,750 --> 00:06:32,400
+Tamam.
+
+90
+00:06:32,670 --> 00:06:45,060
+Bu, devam edelim ve ZF tarihinin zaman damgasının DMF'sine eşit olduğunu söyleyelim.
+
+91
+00:06:45,180 --> 00:06:49,760
+Ve daha önce yaptığımız gibi, içeri girip bu
+
+92
+00:06:49,760 --> 00:06:55,320
+Fil-Am'i o zaman alacağım ifadeyi uygulayıp, tarihlere geri döneceğim.
+
+93
+00:06:55,350 --> 00:06:57,620
+Ben devam edin ve uygulayın.
+
+94
+00:06:57,620 --> 00:07:05,490
+Şimdi, ZF'ye bir göz atarsam başıma gidersiniz ve burada sağdan devam edersem.
+
+95
+00:07:05,610 --> 00:07:11,330
+Şimdi bu zaman damgası sütun kapalı tahrik bu güzel tarih sütun var ve daha
+
+96
+00:07:11,370 --> 00:07:16,340
+sonra devam etmek ve ne zaman toplamı ile devlet sütununa göre gruplandırılmış istiyorum.
+
+97
+00:07:16,430 --> 00:07:18,590
+Bu yüzden diff tarihini söyleyeceğim.
+
+98
+00:07:18,670 --> 00:07:19,070
+Whoops.
+
+99
+00:07:19,110 --> 00:07:24,350
+Aslında, pas tarihiyle DFA grubunu söylemek istiyorum.
+
+100
+00:07:24,360 --> 00:07:26,380
+Ben de satın almak istiyorum.
+
+101
+00:07:26,460 --> 00:07:32,270
+Ben devam edeceğim ve sayım yapacağım ve sonra içeri girip ne gibi göründüğünü çerçeve
+
+102
+00:07:32,270 --> 00:07:33,760
+devlet başkanını görelim.
+
+103
+00:07:34,470 --> 00:07:35,150
+TAMAM.
+
+104
+00:07:35,250 --> 00:07:41,090
+Ve bu aslında, gerçekleşen gerçek tarih için onun tarihinin tüm örneklerini sayar.
+
+105
+00:07:41,100 --> 00:07:46,440
+Yine, bu sütun değerlerinden bazıları arasında bazı farklar olduğunu fark ettiniz ve bu
+
+106
+00:07:46,470 --> 00:07:53,130
+sadece temel olarak örneğin 11 Aralık'ta yapılan 96 aramada 300'den bazı bilgi eksik olduğunu gösteriyor; bunu
+
+107
+00:07:53,150 --> 00:07:55,020
+nasıl okumak istiyorsunuz payı.
+
+108
+00:07:55,130 --> 00:08:03,590
+Henüz 11 Aralık olmasına bakılmaksızın posta koduyla yalnızca 333'ü, enlemi bizde 396'ya sahiptiniz.
+
+109
+00:08:04,560 --> 00:08:07,440
+Hadi devam edin ve sadece bu sütunlardan birini seçin.
+
+110
+00:08:07,440 --> 00:08:12,810
+Aslında oldukça sayıca oldukça yakın olduklarından keyiflidir, ancak
+
+111
+00:08:13,640 --> 00:08:21,120
+enlem sütununu alıp devam edeceğim ve farklı sütunları nasıl karşılaştıracaklarını deneyerek deneyebilirsiniz.
+
+112
+00:08:21,120 --> 00:08:26,430
+olarak bana bir tarih veriyor ve enlemi bildiğimiz çağrıların sayısını ve daha sonra devam edebiliyoruz.
+
+113
+00:08:26,430 --> 00:08:29,740
+Ve şimdi enlem sütununuz var, bu da bana temel
+
+114
+00:08:29,740 --> 00:08:33,880
+Sadece bunu planla ve bana böyle bir komplo kurdu.
+
+115
+00:08:33,960 --> 00:08:41,340
+Ve bu etiketlerden bazılarını örtüştüğümüze dikkat edin ve yapabileceğimiz şey, o indeksin düzeltilmesi ve biraz daha hoş görünen
+
+116
+00:08:41,340 --> 00:08:46,710
+bir şey elde etmek için daha önce gösterildiği gibi geriye doğru sökülmesi demektir.
+
+117
+00:08:47,460 --> 00:08:48,200
+Tamam.
+
+118
+00:08:48,210 --> 00:08:52,980
+Aslında burada fark ettiğimizde Şubat ayında bir miktar artış ve Mart'ta biraz yükseliş
+
+119
+00:08:53,300 --> 00:08:59,270
+yaşanmış gibi görünüyor ve ardından Mayıs'ta ve Mayıs ayı sonunda biraz gerileme yaşanacak ya da bazı dip
+
+120
+00:08:59,310 --> 00:09:00,020
+seviyeleri çıkacak.
+
+121
+00:09:00,020 --> 00:09:01,520
+Burada söylemek biraz zor.
+
+122
+00:09:01,950 --> 00:09:06,720
+Ve devam edip bu arsa ile uğraşmayı bırakabilir veya gerçek tarihler hakkında biraz
+
+123
+00:09:06,720 --> 00:09:08,170
+daha bilgi edinmeye çalışabilirsiniz.
+
+124
+00:09:08,510 --> 00:09:13,230
+Öyleyse devam edin ve şimdi yapmak, 911 çağrısı için bir sebebi temsil eden her parselde
+
+125
+00:09:13,230 --> 00:09:15,950
+üç ayrı parsel oluşturmak için bu komployu yeniden yaratmaktır.
+
+126
+00:09:16,010 --> 00:09:22,120
+Veri çerçevesine geri dönün ya da Mishu'ya bununla ne demek istediğimi söyleyince özür dilerim.
+
+127
+00:09:22,480 --> 00:09:25,100
+Aşağıya inersem bu arsa yeniden yaratmak isterim.
+
+128
+00:09:25,160 --> 00:09:31,420
+çağrıları içeren bir arsa var ve biz aslında burada yaptığımız işleme çok benzer bir süreç.
+
+129
+00:09:32,820 --> 00:09:39,120
+Yani burada yalnızca trafik çağrıları olan sadece bir yangın çağrısı ve daha sonra yalnızca M-S
+
+130
+00:09:40,190 --> 00:09:45,480
+Bunu kopyalayıp yapıştıracağız, ancak tüm veri çerçevesinin yerine, aslında grup
+
+131
+00:09:45,480 --> 00:09:48,790
+tarafından gerçekleştirmek için koşullu seçimi kullanacağım.
+
+132
+00:09:49,350 --> 00:09:52,760
+Dolayısıyla, DSF'yi söyleyeceğim, ATF sebebi ilk
+
+133
+00:09:55,500 --> 00:10:03,150
+olana eşit ve oraya trafik söyleyebileceğiz ve sonra da bunu planlayıp trafik
+
+134
+00:10:03,140 --> 00:10:09,880
+arsamız var ve eğer isterseniz Ayrıca Temyiz t başlık dedi ve
+
+135
+00:10:09,880 --> 00:10:17,020
+başlık trafik olmak istediğiniz ve şimdi sadece aslında sadece diğer grafikler gerçekleştirmek
+
+136
+00:10:17,020 --> 00:10:19,810
+için aynı kodu kullanabilirsiniz.
+
+137
+00:10:19,810 --> 00:10:24,450
+Bu yüzden, yangın isteseydik bunu bir sebep olarak ateşin yerine koyduk.
+
+138
+00:10:25,000 --> 00:10:30,610
+Ve şimdi, bu üç ayrı araziyi oluşturmak için daha önce yapmış olduğumuz tüm
+
+139
+00:10:30,610 --> 00:10:31,390
+işlerden yararlanabiliyoruz.
+
+140
+00:10:31,390 --> 00:10:35,770
+Ve devam edip türlerini kendi başınıza inceleyebilir ve tarihler arasında
+
+141
+00:10:35,830 --> 00:10:41,050
+belki bir dizi görüşme veya görüşme sıklığı arasında farklar bulup bulamayacağınızı görebilirsiniz.
+
+142
+00:10:41,050 --> 00:10:45,910
+Örneğin, ayın ya da günün hava koşullarının ateşin nasıl etkileneceğini görmek
+
+143
+00:10:45,910 --> 00:10:46,680
+ilginç olabilir.
+
+144
+00:10:47,110 --> 00:10:49,840
+Burada bazı ilginç sivri uçlar olduğunu görebilirsiniz.
+
+145
+00:10:49,840 --> 00:10:50,230
+TAMAM.
+
+146
+00:10:50,320 --> 00:10:51,550
+Boyunca hareket.
+
+147
+00:10:51,550 --> 00:10:56,140
+Nihayet Seaborn ile ısı haritaları oluşturmaya ve verilerimize göz atalım.
+
+148
+00:10:56,410 --> 00:11:01,420
+Ve öncelikle yapmamız gereken şey, o veri çerçevesinin yeniden yapılandırılması ve böylece sütunların saat
+
+149
+00:11:01,480 --> 00:11:04,080
+olması ve dizin haftanın günü haline gelmesi.
+
+150
+00:11:04,130 --> 00:11:09,940
+Bunu yapmak için birçok yol var, ancak yapmaya çalışmanızı tavsiye etmem gereken, keşfedilmenizi
+
+151
+00:11:09,970 --> 00:11:13,540
+istediğim yeni bir yöntemle grubu yığınlanmamış yöntemi deniyor.
+
+152
+00:11:13,540 --> 00:11:17,470
+bir bağlantı var ve buna sıkışırsanız çözümlere bakabilirsiniz.
+
+153
+00:11:17,470 --> 00:11:18,240
+Belgelere
+
+154
+00:11:18,310 --> 00:11:21,820
+Bırakın, gerçekte bunun gibi görünen bir şeyi nasıl yapacağımızı parçalayayım.
+
+155
+00:11:21,820 --> 00:11:26,400
+Bu ısı haritası, küme haritasına ve ısı haritası derslerine hatırlıyor.
+
+156
+00:11:26,410 --> 00:11:33,280
+Verilerimizin, her bir hücrenin, sütundaki değeri ve dizinin kendisini temsil eden bir
+
+157
+00:11:34,120 --> 00:11:38,440
+değere geri dönüştüğü matris formunda olması gereklidir.
+
+158
+00:11:38,470 --> 00:11:40,980
+Cuma günleri sıfırımızı ifade ediyor.
+
+159
+00:11:40,990 --> 00:11:42,820
+Kaç tane çağrı yapıldı.
+
+160
+00:11:43,240 --> 00:11:47,300
+Tamam devam edelim ve yığılmamış yöntemi nasıl kullanacağınızı öğrenelim.
+
+161
+00:11:47,310 --> 00:11:50,980
+O halde, umarız kendi başınıza keşfetmiş olabileceğiniz belgelerde bazı örnekler
+
+162
+00:11:50,980 --> 00:11:51,430
+var.
+
+163
+00:11:51,640 --> 00:11:52,560
+Ama sıkışmış durumda.
+
+164
+00:11:52,570 --> 00:11:56,310
+Endişelenme çünkü şu anda nasıl yapacağınızı göstereceğim.
+
+165
+00:11:56,440 --> 00:11:59,320
+Tarafından DF grubu demeye devam edeceğiz.
+
+166
+00:11:59,740 --> 00:12:03,580
+Ve ben bir listeye göre gruplamak zorunda kalacağım.
+
+167
+00:12:03,580 --> 00:12:10,070
+başı gruplamak istiyorum ve o zaman ilerleyip gittiğimde saymaya devam edeceğiz ve bunun ne
+
+168
+00:12:14,470 --> 00:12:21,070
+göründüğüne bir göz atın deyin. ve bu temelde gruplayıp çok seviyeli bir dizin oluşturmamı sağlar.
+
+169
+00:12:21,070 --> 00:12:25,650
+Bu durumda, sadece haftanın gününe göre gruplamak istemiyorum çünkü saat
+
+170
+00:12:25,690 --> 00:12:31,330
+Haftanın günü ve sonra saat ve burada sadece her sütun için sayım yapılır.
+
+171
+00:12:31,390 --> 00:12:39,250
+Bu yüzden şu anda yapabileceğim çok seviyeli indeks var, belki de tek tuşla tek bir sütun çağırabiliriz, çünkü belki de
+
+172
+00:12:39,310 --> 00:12:40,270
+bunu yapabiliriz
+
+173
+00:12:43,690 --> 00:12:45,960
+ve şimdi çok seviyeli indeksi kullanabiliriz.
+
+174
+00:12:46,090 --> 00:12:52,570
+Ve yığılmamış metodun anahtarı, temelde bunu unstacked ve bir matris formu
+
+175
+00:12:52,570 --> 00:12:54,840
+haline getirmenize izin verir.
+
+176
+00:12:56,410 --> 00:12:58,230
+Ve şimdi matris formum var.
+
+177
+00:12:58,240 --> 00:13:04,810
+Dolayısıyla, adımlar birden fazla sütun oluşturarak bu çok düzeyli dizinin oluşturulmasını ve daha sonra bu
+
+178
+00:13:04,810 --> 00:13:10,870
+dizini ayrıştırmadan kullanmasını ve yığını olmasını ve bunlardan birini sütunlar olarak ve bunlardan birinin
+
+179
+00:13:10,870 --> 00:13:12,970
+dizin olarak oluşturulmasını sağlıyordu.
+
+180
+00:13:12,970 --> 00:13:13,340
+Tamam.
+
+181
+00:13:13,420 --> 00:13:17,620
+Bunu sıkıştıysanız ya da bununla ilgili sorun yaşarsanız endişelenmeyin, bu bunu yapmak için
+
+182
+00:13:17,620 --> 00:13:19,050
+aslında çok gelişmiş bir yöntemdir.
+
+183
+00:13:19,060 --> 00:13:23,620
+Pivot veya pivot tablolarını size göre yapmanız gibi denemiş olabileceğiniz diğer
+
+184
+00:13:23,620 --> 00:13:27,230
+yöntemler var, ancak bunu yapabiliyorsanız tekrar fazla endişelenmeyin.
+
+185
+00:13:27,270 --> 00:13:32,620
+Bu tür bir şey, sadece pratik deneyim ve belgelerde bir şeyler aramakla birlikte çok şey gelir.
+
+186
+00:13:33,980 --> 00:13:40,000
+Gelecekte tüm bu veri çerçevesini gün içi saat olarak adlandıracaktır ve şu anda ısı haritaları kolayca
+
+187
+00:13:40,000 --> 00:13:44,250
+oluşturabildiğimiz bu veri çerçevesine sahibiz ve bu bölüm aslında oldukça basit olacak.
+
+188
+00:13:44,320 --> 00:13:50,880
+Biz sadece S ve S ısı haritasını geçen gün saati ararız ve bu aslında tek yapmamız gereken şey.
+
+189
+00:13:50,890 --> 00:13:57,130
+Şimdi saatin karşısına saat başı ve ardından da renk göstergesi olarak çağrıların
+
+190
+00:13:57,130 --> 00:14:04,240
+sayısı geliyor ve viridiste harita geçişini göster diyerek çözümlere daha fazla benzemek istiyoruz.
+
+191
+00:14:04,240 --> 00:14:09,370
+Ve şimdi çözümlerde yaptığımız renk düzenini alıyoruz ve Piel tiefi diyerek
+
+192
+00:14:09,400 --> 00:14:15,250
+ve Fig boyutunu bir argüman olarak ekleyerek rakamı biraz daha büyük yapabiliyoruz.
+
+193
+00:14:16,780 --> 00:14:19,000
+Ve şimdi temel olarak çözümlerde olanı bulduk.
+
+194
+00:14:19,120 --> 00:14:24,810
+Ayrıca s ve s küme haritasını söyleyerek bu veri çerçevesiyle aynı şekilde
+
+195
+00:14:24,810 --> 00:14:26,950
+bir küme haritası oluşturabiliriz.
+
+196
+00:14:26,950 --> 00:14:34,000
+Ve tekrar bıraktığımız veri çerçevesine geçmek için bunun için Haritamızı oluşturduk ve bu
+
+197
+00:14:36,850 --> 00:14:39,010
+aynı küme haritasını oluşturuyor.
+
+198
+00:14:39,010 --> 00:14:43,990
+Aslında bu satıra neyin gerçekte gidileceği konusunda kafanız karışıksa, Q &amp; A forumlarına
+
+199
+00:14:43,990 --> 00:14:44,770
+gitmekten çekinmeyin.
+
+200
+00:14:44,770 --> 00:14:46,900
+Ve bunu biraz daha açıklamaktan mutluluk duyuyorum.
+
+201
+00:14:46,900 --> 00:14:51,520
+Ancak unutmayın ki bu biraz ileri düzeydedir ve sıkışırsanız
+
+202
+00:14:51,520 --> 00:14:54,480
+birlikte ilerleyen çözümleri referans alırsanız endişelenmeyin.
+
+203
+00:14:54,490 --> 00:14:59,230
+Yapmamız gereken şey, ayı sütun olarak gösterecek bir veri çerçevesi için bu
+
+204
+00:14:59,320 --> 00:15:03,640
+benzer arsaları ve işlemleri tekrarlamak ve bunu esasen yaptığımız gibi aslında
+
+205
+00:15:03,640 --> 00:15:06,120
+aynı kod olduğundan kopyalayıp çözümlerden yapıştırmaktır. yukarıdaki.
+
+206
+00:15:06,130 --> 00:15:12,730
+Ama bu durumda, örneğin saati söylemek yerine, ayı ayarladık ve devam
+
+207
+00:15:12,730 --> 00:15:13,960
+edip etmeyeceğiz.
+
+208
+00:15:14,140 --> 00:15:18,900
+Şimdi gün ayımız var ve esasen aynı araziyi tekrar yapıyoruz.
+
+209
+00:15:19,060 --> 00:15:28,110
+Bu yüzden sadece buraya gidip gün içi saat yerine biraz ilerleyelim deriz.
+
+210
+00:15:28,120 --> 00:15:29,320
+Bir gün kullanmak istiyor ve
+
+211
+00:15:32,590 --> 00:15:33,290
+bu beni ilgilendiriyor.
+
+212
+00:15:33,310 --> 00:15:38,020
+Bu ısı haritası ve bunun dışında bir küme haritası oluşturmak istersem aynı
+
+213
+00:15:38,020 --> 00:15:40,200
+şeyi sadece küme çağırmanın dışında yapabilirim.
+
+214
+00:15:40,900 --> 00:15:42,810
+Ve bu bir küme haritası oluşturur.
+
+215
+00:15:42,910 --> 00:15:47,890
+Dolayısıyla, şimdi verileri inceleyebilir ve haftanın hangi saatlerinde haftanın hangi saatlerinde bir
+
+216
+00:15:47,890 --> 00:15:51,160
+gece görüşülmesinin en popüler olduğu belki de görürüm.
+
+217
+00:15:51,160 --> 00:15:56,020
+Ve buna biraz kısaca bir göz atarsak, 0 ile 5 saatleri
+
+218
+00:15:56,020 --> 00:16:01,170
+arasında pek çok çağrı yapılmaz, çünkü sabahın yarısı gece yarısından başlayabiliriz.
+
+219
+00:16:01,180 --> 00:16:02,350
+Yani herkes uyuyor.
+
+220
+00:16:02,500 --> 00:16:07,090
+Kriminal faaliyetin veya nedenlerin çoğunun ve trafik kazaları gibi bir çağrı yapmamam da
+
+221
+00:16:07,180 --> 00:16:11,980
+karışıklık ya da yangın bu veri kümesinde o kadar çok suç faaliyeti değildir.
+
+222
+00:16:12,010 --> 00:16:14,410
+Çoğunlukla yangın M-S ve trafik nedenlerinden.
+
+223
+00:16:14,410 --> 00:16:17,330
+Her şey gündüz gündüz saatlerinde ortaya çıkma eğilimindedir.
+
+224
+00:16:17,350 --> 00:16:23,320
+şey, bunu gerçekten görmek için serin ılık renk haritalama gibi bir şey seçmektir.
+
+225
+00:16:23,320 --> 00:16:27,940
+İlginç olan şey, pazar günleri ve cumartesileri için çok fazla
+
+226
+00:16:27,940 --> 00:16:34,450
+olmamaları ve aslında bunu küme haritaları ile biraz daha net görüp görebileceğini göstermektir. Dolayısıyla, bu,
+
+227
+00:16:34,450 --> 00:16:42,490
+aslında, düşük miktarda arama ve yüksek çağrı sayısına karşılık gelen kümeler yaratacaktır. Bazen küme haritaları için güzel olan
+
+228
+00:16:42,760 --> 00:16:46,750
+Ve bazen bu, insanlar için zihinlerinde aslında gruplamaları almak için bir renk şemasından
+
+229
+00:16:46,750 --> 00:16:47,850
+biraz daha açıktır.
+
+230
+00:16:48,220 --> 00:16:53,080
+Pazartesi ve Salı günleri ve belki Perşembe ve Cuma günleri 8 16 ve 17 saatleri
+
+231
+00:16:53,080 --> 00:16:55,210
+arasında yüksek görüşmelerimiz var gibi görünüyor.
+
+232
+00:16:55,210 --> 00:17:01,270
+daha fazla, düşük çağrı tutarı karşılığında, Sabah Cumartesi ve Pazar Belki sırasında görülmeye eğilimlidir.
+
+233
+00:17:01,330 --> 00:17:03,700
+Bu yüzden akşam saatlerine doğru biraz
+
+234
+00:17:03,700 --> 00:17:04,290
+TAMAM.
+
+235
+00:17:04,570 --> 00:17:09,400
+Sonra ayda bu işlemleri tekrarladık ve yazın yaz aylarını kış aylarına kıyasla
+
+236
+00:17:09,400 --> 00:17:14,410
+karşılaştırma yapabilirsin ve verileri nasıl gördüğünü araştırmaya devam edebilirsin ve bu da
+
+237
+00:17:14,410 --> 00:17:16,350
+temelde tüm bu projeye vardı.
+
+238
+00:17:16,420 --> 00:17:17,200
+Umarım bundan hoşnut kaldınız.
+
+239
+00:17:17,200 --> 00:17:18,420
+Umarım ilginç buluyordun.
+
+240
+00:17:18,820 --> 00:17:23,650
+Burada bu tür karmaşık bir astar için çözüm aramak zorunda kaldıysanız, yine de kendinizi kötü hissetmeyin.
+
+241
+00:17:23,710 --> 00:17:28,480
+Aslında orada olup bitenler üzerine açıklamalara ihtiyaç duyarsanız, her zaman Q &amp; A forumlarında
+
+242
+00:17:28,480 --> 00:17:29,680
+yer almakta serbest kalabilirsiniz.
+
+243
+00:17:29,680 --> 00:17:30,250
+Tamam.
+
+244
+00:17:30,370 --> 00:17:32,780
+Herhangi bir sorunuz olursa olsun yayınlamaktan çekinmeyin.
+
+245
+00:17:32,860 --> 00:17:35,320
+Ve bir sonraki derside görüşürüz.
+
+246
+00:17:35,320 --> 00:17:36,100
+Herkese teşekkürler.
+
+247
+00:17:36,100 --> 00:17:37,570
+Umarım projeden hoşlanırdınız.

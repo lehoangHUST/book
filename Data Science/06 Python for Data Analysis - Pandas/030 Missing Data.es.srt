@@ -1,0 +1,327 @@
+1
+00:00:05,160 --> 00:00:10,410
+Hola a todos y bienvenidos a la conferencia de datos perdidos en esta sala de conferencias, mostramos algunos métodos convenientes
+
+2
+00:00:10,650 --> 00:00:12,870
+para tratar con los datos faltantes en pandas.
+
+3
+00:00:12,870 --> 00:00:17,820
+Muchas veces cuando usas pandas para leer datos si te faltan puntos, lo que va
+
+4
+00:00:17,820 --> 00:00:21,040
+a pasar es que Pandurs completará automáticamente ese punto faltante.
+
+5
+00:00:21,250 --> 00:00:21,690
+No.
+
+6
+00:00:21,720 --> 00:00:23,360
+O cualquier valor.
+
+7
+00:00:23,610 --> 00:00:28,980
+Avancemos y exploremos cómo podemos usar métodos como soltar un nombre o relleno y una para
+
+8
+00:00:28,980 --> 00:00:31,800
+soltar esos valores faltantes o completar esos valores faltantes.
+
+9
+00:00:32,040 --> 00:00:36,090
+Avancemos y vayamos al cuaderno de Júpiter para comenzar.
+
+10
+00:00:36,120 --> 00:00:36,420
+Todo bien.
+
+11
+00:00:36,420 --> 00:00:38,270
+Aquí estoy en el cuaderno de Júpiter.
+
+12
+00:00:38,280 --> 00:00:43,800
+Lo que quiero hacer y hacer es crear un marco de datos y, al igual que creamos, podríamos crear una serie
+
+13
+00:00:43,860 --> 00:00:48,480
+a partir de un diccionario; también podemos crear un marco de datos a partir de un diccionario.
+
+14
+00:00:48,480 --> 00:00:55,620
+Este diccionario va a tener tres teclas y va a presionar una tecla B y la tecla C y lo que van a
+
+15
+00:00:55,620 --> 00:01:01,560
+ser columnas en nuestro marco de datos y luego podemos hacer para los puntos de datos reales es pasar
+
+16
+00:01:01,620 --> 00:01:03,810
+una lista de valores para cada llave
+
+17
+00:01:04,260 --> 00:01:08,290
+Y esos serán los puntos de datos para cada fila en ese nombre de columna.
+
+18
+00:01:08,340 --> 00:01:12,680
+Seguiremos adelante y diremos que la clave A también tiene una lista.
+
+19
+00:01:12,930 --> 00:01:18,290
+Y luego vamos a usar cualquier n para indicar que falta un valor ordinal.
+
+20
+00:01:19,080 --> 00:01:20,290
+Entonces vamos a guardar para B.
+
+21
+00:01:20,310 --> 00:01:28,260
+Va a ser 5 y P que Nan y P y luego y finalmente kisi nuestra tercera columna.
+
+22
+00:01:28,260 --> 00:01:31,150
+Entonces vamos a retener todos los valores 1 2 y 3.
+
+23
+00:01:31,200 --> 00:01:33,360
+Entonces no tiene valores perdidos.
+
+24
+00:01:33,360 --> 00:01:41,300
+Y luego podemos seguir y decir que DFAC es igual al marco de datos PD y luego pasar en el diccionario D.
+
+25
+00:01:41,730 --> 00:01:48,270
+Y luego, cuando revisamos nuestro marco de datos obtenemos este bonito marco de datos de las columnas A B
+
+26
+00:01:48,270 --> 00:01:56,580
+y C y luego las filas 0 1 y 2, ninguna fila 0 no tiene valores perdidos y la columna C no tiene valores perdidos.
+
+27
+00:01:56,700 --> 00:02:02,850
+Y luego hay algunos valores faltantes aquí en Roby o columna B y un valor faltante en la columna A.
+
+28
+00:02:03,360 --> 00:02:07,940
+Salgamos y exploremos la gota y un método.
+
+29
+00:02:08,280 --> 00:02:11,580
+Muchas veces solo quieres soltar valores perdidos de tu conjunto de datos.
+
+30
+00:02:11,640 --> 00:02:14,010
+Especialmente si solo son unos pocos valores perdidos.
+
+31
+00:02:14,010 --> 00:02:21,300
+paréntesis cercanos, lo que ocurre es que Pandurs va a soltar cualquier fila con uno o más valores masculinos o faltantes, lo
+
+32
+00:02:21,300 --> 00:02:28,890
+que significa que si alguna de estas filas tiene un valor nulo en uno o más se adelantó y los dejó caer.
+
+33
+00:02:28,890 --> 00:02:33,840
+Si dices soltar una A por sí mismo y lo llamas como un método de
+
+34
+00:02:33,870 --> 00:02:40,050
+Si desea realizar esta acción en las columnas, puede ver la pestaña de cambio aquí y observar
+
+35
+00:02:40,050 --> 00:02:42,060
+que hay un argumento de eje.
+
+36
+00:02:42,330 --> 00:02:44,740
+Eso significa que por defecto el eje es cero.
+
+37
+00:02:44,880 --> 00:02:47,210
+Lo que significa que la operación ocurre a lo largo de las filas.
+
+38
+00:02:47,340 --> 00:02:53,820
+Pero si desea hacer que la operación a lo largo de las columnas sea soltar cualquier columna que tenga un valor nulo,
+
+39
+00:02:54,240 --> 00:02:56,780
+puede especificar que el eje sea igual a 1.
+
+40
+00:02:57,750 --> 00:03:01,200
+Y eso va a caer en las columnas con un valor nulo.
+
+41
+00:03:01,360 --> 00:03:03,710
+Entonces no veo la comparación aquí.
+
+42
+00:03:03,950 --> 00:03:09,720
+Y eso significa que si Trapani intercepta cualquier fila de cualquier valor de fila y luego lo de Trump y
+
+43
+00:03:09,810 --> 00:03:14,230
+a con acceso igual a uno, se eliminarán las columnas de valores nulos en él.
+
+44
+00:03:14,640 --> 00:03:17,840
+Pero también puede hacer es especificar un umbral.
+
+45
+00:03:18,120 --> 00:03:24,420
+Y si entramos y comprobamos esto, diremos que DMF suelta una A y usa la pestaña Shift.
+
+46
+00:03:24,450 --> 00:03:31,190
+Echa un vistazo a la documentación que es si hay un argumento de trillar cuál es el argumento.
+
+47
+00:03:31,320 --> 00:03:39,480
+Es un valor entero y requerirá muchos knon y valores para que no se descarten.
+
+48
+00:03:39,480 --> 00:03:43,180
+Por ejemplo, déjame entrar y establecer el umbral igual a 2.
+
+49
+00:03:43,590 --> 00:03:46,030
+Y de nuevo, vamos a hacer esto a lo largo de las carreteras.
+
+50
+00:03:46,260 --> 00:03:53,470
+Así que observe aquí que tenemos en la fila 0 3 no y a los valores en la fila 1.
+
+51
+00:03:53,490 --> 00:03:58,710
+Tenemos dos valores no A y en la fila dos tenemos solo uno.
+
+52
+00:03:58,830 --> 00:04:01,090
+Número tres, ningún valor.
+
+53
+00:04:01,140 --> 00:04:05,850
+Eso significa que si digo drop y algo como esto, lo dejo todo menos Roseboro.
+
+54
+00:04:05,970 --> 00:04:14,270
+Sin embargo, si configuro el umbral para que sea igual a 2 y lo ejecute, siguió adelante y mantuvo la fila 1.
+
+55
+00:04:14,310 --> 00:04:22,740
+Y básicamente lo que eso significa es porque la fila 1 tenía al menos dos valores no y a 2. 0 y los dos siguieron
+
+56
+00:04:22,800 --> 00:04:26,880
+adelante y mantuvieron esa fila.
+
+57
+00:04:26,910 --> 00:04:27,230
+Todo bien.
+
+58
+00:04:27,270 --> 00:04:33,790
+Avancemos y pasemos a Phil y digamos que ahora solo nos enfocamos en solo dejar caer los valores perdidos.
+
+59
+00:04:33,870 --> 00:04:37,060
+Bueno, muchas veces querrás reemplazar esos valores faltantes.
+
+60
+00:04:37,290 --> 00:04:39,320
+Echemos un vistazo a nuestro marco de datos de nuevo.
+
+61
+00:04:39,390 --> 00:04:40,870
+Tenemos estos valores faltantes aquí.
+
+62
+00:04:40,950 --> 00:04:47,430
+Si quisiéramos completar esos valores faltantes, podemos usar el relleno y un método, y esto vamos y tomamos la pestaña de
+
+63
+00:04:47,430 --> 00:04:49,910
+cambio aquí tiene un par de argumentos diferentes.
+
+64
+00:04:49,930 --> 00:04:52,400
+Pero note que tiene un argumento de valor.
+
+65
+00:04:52,610 --> 00:04:57,910
+Y lo que puede hacer aquí es como un valor establecido en su valor de relleno.
+
+66
+00:04:57,940 --> 00:05:00,410
+Voy a pasar una cuerda para que sea muy obvio aquí.
+
+67
+00:05:00,450 --> 00:05:07,530
+Lo que está pasando y notamos que fue capaz de completar ese valor de cualquier valor que quisiéramos.
+
+68
+00:05:07,940 --> 00:05:10,680
+En este caso solo una cadena que dice valor de relleno.
+
+69
+00:05:10,770 --> 00:05:15,060
+Sin embargo, muchas veces lo que vas a querer hacer es completar el valor
+
+70
+00:05:15,060 --> 00:05:20,860
+de tal vez la media de la columna y puedes hacerlo, por ejemplo, puedes decir DSF de a.
+
+71
+00:05:21,090 --> 00:05:25,150
+Así que esa es mi columna y noto el punto que falta aquí.
+
+72
+00:05:25,170 --> 00:05:36,170
+Continuaré y digo fill y a y estableceré el valor en la media de esa columna.
+
+73
+00:05:37,710 --> 00:05:42,210
+Y ahora ese valor se ha llenado como la media del valor.
+
+74
+00:05:42,330 --> 00:05:47,760
+Ahora hay toda una filosofía y forma de pensar y métodos estadísticos para completar apropiadamente
+
+75
+00:05:47,790 --> 00:05:49,070
+los valores perdidos.
+
+76
+00:05:49,110 --> 00:05:53,280
+Los dejaré seguir y explorarlos por su cuenta, ya que realmente dependen del
+
+77
+00:05:53,280 --> 00:05:56,010
+tipo de datos con los que están trabajando.
+
+78
+00:05:56,010 --> 00:06:03,030
+Por ahora, todo lo que quiero que sepan es que hay un relleno y un método y una gota y un método.
+
+79
+00:06:03,510 --> 00:06:05,600
+OK, eso es todo por ahora.
+
+80
+00:06:05,610 --> 00:06:10,770
+acceso desea realizar la acción, así como el argumento de umbral y los argumentos de valor.
+
+81
+00:06:10,770 --> 00:06:15,810
+Esperemos que recuerde que estos dos métodos están disponibles para usted y puede especificar en qué
+
+82
+00:06:15,810 --> 00:06:18,800
+De acuerdo, gracias a todos y nos vemos en la próxima conferencia

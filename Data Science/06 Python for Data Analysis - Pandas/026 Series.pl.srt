@@ -1,0 +1,567 @@
+1
+00:00:05,850 --> 00:00:06,770
+Cześć wszystkim.
+
+2
+00:00:06,770 --> 00:00:12,180
+Serdecznie witamy w serii wykładów, które będą pierwszymi głównymi typami danych, które będą współpracować
+
+3
+00:00:12,180 --> 00:00:17,340
+z pandami i które umożliwią Ceresowi pracę z ramkami danych w następnym wykładzie.
+
+4
+00:00:17,340 --> 00:00:20,610
+Zacznijmy od skoku do notatnika Jupiter.
+
+5
+00:00:20,670 --> 00:00:21,150
+W porządku.
+
+6
+00:00:21,150 --> 00:00:23,720
+Jestem w notesie Jowisza.
+
+7
+00:00:23,750 --> 00:00:26,430
+Seria jest bardzo podobna do tablicy kołowej.
+
+8
+00:00:26,430 --> 00:00:29,390
+W rzeczywistości jest on zbudowany na pirackim obiekcie.
+
+9
+00:00:29,430 --> 00:00:35,340
+Ale to, co odróżnia tablicę superarbitrów od serii panda, to szereg etykiet osiowych, które mogą
+
+10
+00:00:35,340 --> 00:00:37,410
+być indeksowane przez etykietę.
+
+11
+00:00:37,410 --> 00:00:44,260
+Pójdźmy dalej i powiedzmy ważnych arbitrów i P, a następnie zaimportujmy Pandursa jako Peetie.
+
+12
+00:00:44,910 --> 00:00:49,850
+I zaczniemy od tworzenia różnych serii z różnych typów obiektów.
+
+13
+00:00:49,920 --> 00:00:56,880
+Zamierzam zrobić dla obiektów Pythona lub utworzyć listę o nazwie label, a będzie to po prostu trzy litery
+
+14
+00:00:56,880 --> 00:01:00,550
+lub trzy ciągi na liście A B i C.
+
+15
+00:01:01,140 --> 00:01:10,290
+Następnie mam zamiar napisać listę pod nazwą moje dane podkreślenia i powiem, że to 10 20 30.
+
+16
+00:01:11,190 --> 00:01:16,710
+Następnie utworzę obiekt o nazwie r r, który będzie promieniem New Hampshire, a ja po prostu
+
+17
+00:01:16,740 --> 00:01:17,940
+przekażę moje dane.
+
+18
+00:01:18,030 --> 00:01:25,290
+Tak więc jedna jest listą pytonów, a druga tablicą nazw PI, a na końcu
+
+19
+00:01:25,290 --> 00:01:38,160
+słowem, które przekazuję jako klucz 10, jako wartość B to klucz 20 jako wartość, a następnie C to klucz, a 30 ma wartość a to oznacza,
+
+20
+00:01:38,160 --> 00:01:46,220
+że mam cztery oddzielne obiekty Pythona Mam etykiety na mojej liście, a następnie mam swoje dane.
+
+21
+00:01:47,160 --> 00:01:51,740
+Mam moją tablicę i wreszcie mam słownik.
+
+22
+00:01:52,260 --> 00:01:52,850
+DOBRZE.
+
+23
+00:01:53,070 --> 00:01:56,140
+Pokażmy, jak możesz stworzyć serię i jak ona wygląda.
+
+24
+00:01:56,220 --> 00:02:02,370
+Możesz powiedzieć, że PD to seria i zanotuj, że właściwie nie zapisuję serii żadnej nazwy zmiennej pod
+
+25
+00:02:02,370 --> 00:02:03,870
+MPD PD tej serii.
+
+26
+00:02:04,020 --> 00:02:08,970
+Ale jeśli wykonasz zakładkę shift, zauważysz, że P-T serious ma wiele różnych parametrów.
+
+27
+00:02:09,030 --> 00:02:14,130
+Teraz skupimy się tylko na danych i indeksie, które są najważniejsze.
+
+28
+00:02:14,130 --> 00:02:21,000
+Po pierwsze przekazujemy dane, a także moje dane podkreślenia, które po prostu przekazujemy na tę listę.
+
+29
+00:02:21,000 --> 00:02:24,650
+Wiem, że dostaję z powrotem mój poważny powrót i wygląda to trochę jak sędzia.
+
+30
+00:02:24,930 --> 00:02:33,200
+Poza tym jest bardzo wyraźne, że mamy indeks 0 1 2, a następnie rzeczywiste dane 10 20 30 i
+
+31
+00:02:33,210 --> 00:02:40,470
+klucz do serii panda to fakt, że można faktycznie określić, co ma być tym indeksem.
+
+32
+00:02:40,530 --> 00:02:48,240
+Na przykład mam zamiar wejść i powiedzieć PD, że seria I przejdzie i dane będą równe moim danym,
+
+33
+00:02:48,270 --> 00:02:52,120
+a następnie określę, że indeks jest równy etykietom.
+
+34
+00:02:52,330 --> 00:02:54,820
+I pamiętaj, że to b i c pojawiają się.
+
+35
+00:02:54,870 --> 00:02:58,850
+Więc kiedy uruchomię to teraz, będę miał etykietowaną serię wskaźników.
+
+36
+00:02:58,890 --> 00:03:04,780
+Więc mam jako etykietę lub indeks, a następnie 10 jako rzeczywisty punkt danych dla tego indeksu.
+
+37
+00:03:04,980 --> 00:03:12,060
+Tak więc, w przeciwieństwie do liczby Mirei, faktycznie mam indeks, który jest oznaczony, co oznacza, że mogę nazwać te punkty
+
+38
+00:03:12,390 --> 00:03:19,980
+danych za pomocą tego oznaczonego indeksu i tak samo jak dane i indeks szybkiego braku sensu są w kolejności, jeśli chodzi o
+
+39
+00:03:19,980 --> 00:03:21,510
+umieszczenie ich jako parametrów.
+
+40
+00:03:21,600 --> 00:03:23,820
+Nie musisz mówić, że dane są równe lub indeksu równe.
+
+41
+00:03:23,880 --> 00:03:30,390
+Możesz po prostu podać moje dane, a następnie etykiety jako takie, a także wydasz serię w ten sam sposób.
+
+42
+00:03:30,600 --> 00:03:34,950
+Nie musisz więc nieustannie określać, że równa się lub indeksuje tak długo, jak ustawiasz
+
+43
+00:03:34,980 --> 00:03:36,250
+je we właściwej kolejności.
+
+44
+00:03:36,300 --> 00:03:36,800
+W porządku.
+
+45
+00:03:36,930 --> 00:03:38,550
+Przedstawmy ci jeszcze kilka sposobów.
+
+46
+00:03:38,550 --> 00:03:42,660
+Utwórz serię przed rozpoczęciem pracy z danymi w serii.
+
+47
+00:03:42,660 --> 00:03:48,910
+Innym szybkim sposobem na stworzenie serii jest wypowiedzenie P tej serii i możesz przekazać dowolną liczbę wyżej.
+
+48
+00:03:48,930 --> 00:03:52,340
+I to będzie działać dokładnie tak samo jak fatalistów PI.
+
+49
+00:03:52,380 --> 00:03:54,200
+Oto przepustka w nazwie.
+
+50
+00:03:54,240 --> 00:03:55,550
+I działało to tak samo.
+
+51
+00:03:55,710 --> 00:04:00,790
+I tak jak na liście, mogłem również zamieścić etykiety wraz z tą Ampyrą.
+
+52
+00:04:00,900 --> 00:04:03,090
+Więc zasadniczo sędzia będzie pracował.
+
+53
+00:04:03,120 --> 00:04:09,000
+To samo, co lista w języku Python, jeśli chodzi o przekazywanie jej do serii, a wreszcie, co jest naprawdę fajne,
+
+54
+00:04:09,000 --> 00:04:12,350
+można powiedzieć o tych seriach i po prostu przekazać słownik.
+
+55
+00:04:12,480 --> 00:04:17,250
+A co zrobi Palla, to automatycznie przejmie klucze tego słownika, które po prostu się
+
+56
+00:04:17,250 --> 00:04:17,800
+pokazują.
+
+57
+00:04:17,800 --> 00:04:24,690
+Ponownie weź klucze, które słownik określa jako indeks, a następnie ustaw wartość tego klucza na
+
+58
+00:04:24,840 --> 00:04:26,370
+odpowiedni punkt danych.
+
+59
+00:04:26,370 --> 00:04:29,460
+To dobry sposób na szybkie stworzenie serii.
+
+60
+00:04:29,460 --> 00:04:31,610
+W porządku, o czym warto tutaj pamiętać.
+
+61
+00:04:31,710 --> 00:04:36,630
+Inną rzeczą, która odróżnia pirata od serii panda jest to, że seria panda
+
+62
+00:04:36,630 --> 00:04:39,210
+może rzeczywiście zawierać różne typy obiektów.
+
+63
+00:04:39,210 --> 00:04:46,920
+W tej chwili pokazaliśmy serię PD z serii panda, która zawiera tylko liczby, więc pokazałem,
+
+64
+00:04:46,920 --> 00:04:55,660
+że zawiera ona tylko pewną liczbę liczb, ale mogłaby również zachować się jako etykiety danych, które zapamiętują
+
+65
+00:04:55,660 --> 00:04:56,630
+etykiety.
+
+66
+00:04:56,640 --> 00:05:01,270
+Jeśli pójdę do przodu i będę biegał w tym roku, to tylko struny.
+
+67
+00:05:01,400 --> 00:05:08,800
+Tak więc seria może pomieścić prawie każdy dowolny typ obiektu danych z Pythonem jako punktem danych, więc może
+
+68
+00:05:08,810 --> 00:05:14,240
+to być ciągi i jeszcze bardziej interesujące niż to, że można powiedzieć,
+
+69
+00:05:14,240 --> 00:05:22,670
+że dane są równe i mogłeś faktycznie przekazać wbudowaną funkcję, więc mógłbym powiedzieć coś jak jakiś książę Eliane i faktycznie
+
+70
+00:05:22,670 --> 00:05:28,200
+zawiera odniesienia do tych wbudowanych funkcji jako punktów danych w tej serii panda.
+
+71
+00:05:28,230 --> 00:05:31,840
+I to nie jest coś, co możesz zrobić, jeśli teraz jesteś w nowym Hampshire.
+
+72
+00:05:32,000 --> 00:05:36,950
+Prawdopodobnie nigdy nie użyjesz tego tak daleko, jak funkcje hostingowe lub odniesienia
+
+73
+00:05:36,950 --> 00:05:42,110
+do funkcji, które Appin serii, ale jest to po prostu wykazać elastyczność Appin
+
+74
+00:05:42,110 --> 00:05:45,020
+serii, o ile gospodarstwa różnych typów obiektów.
+
+75
+00:05:45,020 --> 00:05:48,590
+W porządku, przejdźmy dalej i przejdźmy do korzystania z indeksu.
+
+76
+00:05:48,710 --> 00:05:54,740
+Kluczem do użycia serii jest zrozumienie jej indeksu w Pandach używających tych nazw indeksów lub liczb,
+
+77
+00:05:55,010 --> 00:06:00,020
+umożliwiając bardzo szybkie wyszukiwanie informacji i działa tak jak tablica hash lub słownik.
+
+78
+00:06:00,500 --> 00:06:05,100
+Wejdźmy i zobaczmy kilka przykładów, jak możemy pobrać informacje z serii, aby to zrobić.
+
+79
+00:06:05,120 --> 00:06:07,250
+Zamierzam stworzyć dwie serie.
+
+80
+00:06:07,250 --> 00:06:15,500
+Zamierzam zrobić jeden o nazwie SVR i powiedzieć, że seria PD pójdzie do passenu, dane wyjdą i powiedzą jeden
+
+81
+00:06:15,560 --> 00:06:20,480
+dwa trzy cztery, więc po prostu lista moich danych, a potem
+
+82
+00:06:20,480 --> 00:06:31,280
+do indeksu, który zamierzam wprowadzić i wstawić niektóre nazwy krajów, takie jak USA, będą umieszczane w Niemczech, zostaną umieszczone w ZSRR, a następnie w Japonii.
+
+83
+00:06:31,280 --> 00:06:35,850
+Są to więc trochę podobne do nazwy kraju z okresu II wojny światowej z pewnymi wartościami.
+
+84
+00:06:35,870 --> 00:06:38,760
+Więc sprawdź serial 1 ACR 1.
+
+85
+00:06:39,440 --> 00:06:41,760
+I tutaj mam moją poważną uwagę.
+
+86
+00:06:41,780 --> 00:06:45,700
+Teraz mam etykiety indeksu i jeden dwa trzy cztery to moje punkty danych.
+
+87
+00:06:45,800 --> 00:06:48,670
+I mówię, że liczba całkowita typu D wynosi 64.
+
+88
+00:06:48,690 --> 00:06:49,790
+Czy to faktyczne punkty danych?
+
+89
+00:06:49,790 --> 00:06:51,680
+Są wszystkie liczby całkowite.
+
+90
+00:06:51,680 --> 00:06:54,550
+Potem zamierzam zrobić drugą serię w bardzo podobny sposób.
+
+91
+00:06:54,560 --> 00:06:58,220
+Powiem też, że PD to także ta seria.
+
+92
+00:06:58,400 --> 00:07:01,200
+Powiedzmy 5: 4.
+
+93
+00:07:02,570 --> 00:07:10,850
+A potem dla indeksu będę mówił dalej, a Niemcy i zamierzam zmienić jedną z nich, powiemy, że Włochy
+
+94
+00:07:10,850 --> 00:07:18,110
+to jeden lub dwa kraje, a potem powiemy Japonię, a potem, gdy się wymelduję. seria druga
+
+95
+00:07:18,110 --> 00:07:21,140
+otrzymuję od jednego do 5 4.
+
+96
+00:07:21,150 --> 00:07:24,360
+Włochy są tutaj inne i mają inny punkt danych.
+
+97
+00:07:24,380 --> 00:07:29,720
+Teraz, jeśli rzeczywiście chcę pobrać informacje z serii, będzie to działać
+
+98
+00:07:29,720 --> 00:07:35,420
+bardzo podobnie do pobierania informacji z języka Pythona w seriach, a następnie jako
+
+99
+00:07:35,420 --> 00:07:39,950
+ciąg znaków możesz śmiało wpisywać rzeczywistą etykietę indeksu USA.
+
+100
+00:07:39,950 --> 00:07:44,980
+Teraz pamiętaj, że piszę to jako ciąg znaków, ponieważ wiem, że indeks jest ciągiem znaków.
+
+101
+00:07:45,020 --> 00:07:51,230
+Jeśli pracuję dla serii takiej jak tutaj, która ma 0 1 lub 2, właśnie podajesz liczbę całkowitą.
+
+102
+00:07:51,230 --> 00:07:54,990
+To zależy od tego, jaki typ danych jest twoim aktualnym indeksem.
+
+103
+00:07:55,010 --> 00:07:55,950
+W porządku.
+
+104
+00:07:56,360 --> 00:07:59,710
+Zazwyczaj twój indeks będzie miał nadzieję, że będzie to liczba lub ciąg.
+
+105
+00:07:59,810 --> 00:08:07,480
+Ani passen se lub jeden, a następnie ciąg lub ACR jeden i cokolwiek twoich indeksów całkowitych.
+
+106
+00:08:07,490 --> 00:08:12,480
+Na przykład jeśli szybko utworzę kolejną serię, taką jak SC lub trzy.
+
+107
+00:08:12,560 --> 00:08:20,210
+Cóż, śmiało piszcie tę serię, a my po prostu przekazujemy te dane jako etykiety.
+
+108
+00:08:20,570 --> 00:08:22,800
+Sprawdzam C lub trzy.
+
+109
+00:08:23,000 --> 00:08:24,980
+Teraz mam ABC jako punkty danych.
+
+110
+00:08:24,980 --> 00:08:28,670
+Typ jest obiektem, który odnosi się do faktu, że jest ciągiem znaków.
+
+111
+00:08:28,880 --> 00:08:34,310
+I mogę pobrać rzeczy z tego przez indeks całkowitoliczbowy, który jest typowo taki, jak zrobiłbyś to
+
+112
+00:08:34,310 --> 00:08:35,510
+dla liczby wyższej.
+
+113
+00:08:35,840 --> 00:08:36,800
+A potem jest ciąg znaków.
+
+114
+00:08:36,860 --> 00:08:38,370
+Powrót do mnie.
+
+115
+00:08:38,420 --> 00:08:43,610
+Tak więc po prostu przekazujesz rzeczywistą etykietę indeksu, która zwróci dane odpowiadające etykiecie indeksu.
+
+116
+00:08:44,180 --> 00:08:49,750
+Jeśli chodzi o bardzo podstawowe operacje wykonywane w seriach, zwykle wykonywane są w oparciu o indeks.
+
+117
+00:08:49,760 --> 00:08:56,960
+To znaczy, gdybym miał powiedzieć coś takiego lub 1, a potem mamy C lub dwa i załóżmy, że próbuję je dodać,
+
+118
+00:08:56,960 --> 00:09:00,080
+więc mówię, że SE1 plus S-E to dwa.
+
+119
+00:09:00,320 --> 00:09:04,970
+To, co się stanie, to próba dopasowania operacji w oparciu o indeks, który
+
+120
+00:09:04,970 --> 00:09:08,620
+mówi, że USA jest tutaj, a USA jest tutaj.
+
+121
+00:09:08,630 --> 00:09:14,480
+Więc dodadzą je i powiedzą, że w rezultacie USA będzie równe temu, gdzie nie może znaleźć dopasowania.
+
+122
+00:09:14,510 --> 00:09:16,060
+Takich jak Włochy.
+
+123
+00:09:16,070 --> 00:09:19,690
+Stworzy NULL, a następnie ZSRR również nie jest dla nich.
+
+124
+00:09:19,730 --> 00:09:23,980
+Dlatego też postawimy tam neon, chodźmy i zobaczmy, co się stanie, kiedy to uruchomimy.
+
+125
+00:09:24,530 --> 00:09:30,920
+I widzimy wyniki, więc USA było 2. 0 Japonia miała 8 lat. 00 Niemcy były 4. 0, a następnie praca nie znalazła
+
+126
+00:09:30,920 --> 00:09:31,380
+dopasowania.
+
+127
+00:09:31,400 --> 00:09:33,370
+Poszedł dalej i wprowadził wartość zerową.
+
+128
+00:09:33,650 --> 00:09:38,870
+Warto tutaj zwrócić uwagę na to, że podczas wykonywania operacji w seriach Pandurs i
+
+129
+00:09:38,870 --> 00:09:44,730
+prawie w prawie każdym obiekcie bazowym Pyre Panda, które są liczbami całkowitymi, zostaną przekształcone w zmiennoprzecinkowe.
+
+130
+00:09:45,050 --> 00:09:50,480
+A to dlatego, że nie tracisz przypadkowo informacji w oparciu o jakiś dziwny podział i to
+
+131
+00:09:50,480 --> 00:09:51,870
+też wymaga więcej Pythona.
+
+132
+00:09:52,040 --> 00:09:57,680
+I fakt, że prawdziwa wizja versus podział klasowy jest faktycznie zróżnicowany w starszej wersji.
+
+133
+00:09:58,100 --> 00:10:02,630
+Jeśli używasz Pythona 3, w zasadzie nie musisz się tym martwić,
+
+134
+00:10:02,630 --> 00:10:09,290
+ale musisz pamiętać, że pandererzy i MPI zawsze będą konwertować rzeczy do przepływu, aby zachować wszystkie możliwe informacje.
+
+135
+00:10:09,720 --> 00:10:15,380
+OK, na razie zatrzymamy się tutaj i przejdziemy do ram danych, które mogą znacznie
+
+136
+00:10:15,380 --> 00:10:19,410
+rozszerzyć koncepcję serii, aby w pełni zrozumieć ramki danych.
+
+137
+00:10:19,460 --> 00:10:23,870
+Po prostu musisz znać podstawy serii, które mają właśnie oznaczony indeks, a następnie punkt danych
+
+138
+00:10:23,870 --> 00:10:27,770
+w trakcie tego kursu, który nie będzie działał zbyt wiele z serią.
+
+139
+00:10:27,770 --> 00:10:32,190
+Będziemy pracować o wiele więcej dzięki ramkom danych, które są prawdziwym psem roboczym pand.
+
+140
+00:10:32,210 --> 00:10:33,980
+Przejdźmy dalej i przejdźmy do następnego wykładu.
+
+141
+00:10:33,990 --> 00:10:37,400
+Porozmawiamy o wiele więcej szczegółów na temat tych ramek danych.
+
+142
+00:10:37,400 --> 00:10:39,510
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie.

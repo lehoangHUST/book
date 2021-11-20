@@ -1,0 +1,1031 @@
+1
+00:00:05,130 --> 00:00:10,470
+Halo semua dan selamat datang di kursus kilat Python Bagian 1 dan Bagian 1 kita akan melanjutkan
+
+2
+00:00:10,470 --> 00:00:14,270
+dan memulai diskusi kita tentang Python dengan membahas tipe data dasar.
+
+3
+00:00:14,280 --> 00:00:17,730
+Biarkan saya pergi ke depan dan menunjukkan kepada Anda di mana Anda dapat menemukan bahwa Anda telah berada di buku catatan untuk seri kuliah ini.
+
+4
+00:00:18,720 --> 00:00:22,010
+Oke, saya di repositori yang sudah diunduh dan unzip.
+
+5
+00:00:22,200 --> 00:00:28,190
+Jika Anda melanjutkan dan pergi ke folder kursus kilat Python, Anda akan melihat tiga buku catatan di sini adalah file
+
+6
+00:00:28,220 --> 00:00:28,820
+IPY inby.
+
+7
+00:00:28,830 --> 00:00:31,940
+Kita akan bekerja dengan notebook kursus kilat python.
+
+8
+00:00:31,940 --> 00:00:36,990
+Dan jika Anda mengklik pada itu Anda akan melihat notebook yang terlihat seperti ini dan memiliki semua
+
+9
+00:00:36,990 --> 00:00:38,720
+tipe data yang akan berakhir.
+
+10
+00:00:38,790 --> 00:00:43,830
+Kami akan memulai dengan hanya memeriksa angka stream mencetak daftar kamus booleans tuple dan set.
+
+11
+00:00:44,130 --> 00:00:45,680
+Kita akan melihat seberapa jauh kita dapatkan.
+
+12
+00:00:45,750 --> 00:00:48,200
+Dan nanti kita akan membahas beberapa fitur yang lebih canggih.
+
+13
+00:00:48,300 --> 00:00:54,910
+Saya akan pergi ke depan dan memulai notebook baru di sini dan menyiapkannya untuk pergi.
+
+14
+00:00:55,110 --> 00:01:00,030
+Saya akan pergi ke depan dan apa yang ada di tarikan dengan bar kepala dan beralih bilah alat hanya untuk mendapatkan lebih
+
+15
+00:01:00,030 --> 00:01:00,970
+banyak ruang di sini.
+
+16
+00:01:01,140 --> 00:01:06,450
+Dan lagi yang akan saya lakukan hanyalah mengetik semua contoh di sini dan
+
+17
+00:01:06,480 --> 00:01:07,330
+menjelaskan kodenya.
+
+18
+00:01:07,340 --> 00:01:12,220
+Jadi, jika Anda membutuhkan referensi, Anda dapat menyalin dan menempel dari buku catatan kuliah ini.
+
+19
+00:01:12,720 --> 00:01:12,990
+Baiklah.
+
+20
+00:01:13,020 --> 00:01:20,280
+Mari kita mulai dan mulai dengan bilangan dasar dan aritmatika, saya pikir memiliki dua jenis bilangan dasar.
+
+21
+00:01:20,580 --> 00:01:23,350
+Ada bilangan bulat yang hanya sekitar 1.
+
+22
+00:01:23,640 --> 00:01:27,540
+Dan kemudian ada angka floating point yang merupakan sesuatu seperti titik nol.
+
+23
+00:01:27,540 --> 00:01:32,880
+Jadi angka floating point memiliki desimal yang melekat padanya dan dengan salah satu dari angka ini Anda dapat melakukan
+
+24
+00:01:32,880 --> 00:01:34,830
+aritmatika dasar seperti yang Anda harapkan.
+
+25
+00:01:34,840 --> 00:01:37,260
+Jadi untuk tambahan itu hanya tanda plus.
+
+26
+00:01:37,260 --> 00:01:43,740
+Satu tambah satu dan saya hanya melakukan shift enter di sini menjalankan sel untuk perkalian hanyalah asterix
+
+27
+00:01:43,740 --> 00:01:45,400
+Jadi 1 kali 3.
+
+28
+00:01:45,480 --> 00:01:46,950
+Hanya asterix seperti itu.
+
+29
+00:01:46,950 --> 00:01:52,340
+Visi hanya akan menjadi garis miring satu dibagi dua adalah 0. 5.
+
+30
+00:01:52,350 --> 00:01:54,370
+Dan perhatikan bahwa bahkan saya memasukkan bilangan bulat.
+
+31
+00:01:54,540 --> 00:02:00,300
+Saya mendapatkan poin mengambang jika Anda adalah pengguna Python 2 Anda harus memastikan bahwa salah satu dari itu sendiri adalah
+
+32
+00:02:00,690 --> 00:02:03,090
+angka floating point untuk mendapatkan hasil yang sama.
+
+33
+00:02:03,090 --> 00:02:08,480
+Saya hanya untuk eksponen misalnya dengan kekuatan empat.
+
+34
+00:02:08,550 --> 00:02:10,450
+Hanya dua Asterix disatukan.
+
+35
+00:02:10,470 --> 00:02:13,050
+Jadi dua pangkat empat adalah 16.
+
+36
+00:02:13,050 --> 00:02:20,430
+Itu dua kali dua kali dua kali untuk hal lain yang perlu diketahui adalah bahwa Python akan mengikuti urutan
+
+37
+00:02:20,430 --> 00:02:22,470
+operasi seperti yang Anda harapkan.
+
+38
+00:02:22,500 --> 00:02:26,520
+Dan Anda dapat menggunakan tanda kurung untuk benar-benar memperjelas urutan operasi.
+
+39
+00:02:26,670 --> 00:02:36,900
+Sebagai contoh jika saya pergi ke depan dan ketik dua ditambah tiga kali lima ditambah lima urutan operasi matematika benar-benar
+
+40
+00:02:36,900 --> 00:02:41,030
+akan menyatakan perkalian terjadi pertama dan kemudian penambahan.
+
+41
+00:02:41,040 --> 00:02:45,120
+Jadi jika saya menjalankan ini saya akan mendapatkan 15 ditambah dua tambah lima.
+
+42
+00:02:45,240 --> 00:02:47,430
+Jadi 15 ditambah tujuh adalah 22.
+
+43
+00:02:47,490 --> 00:02:52,890
+Jika Anda benar-benar ingin mengatakan sesuatu seperti dua tambah tiga kali hasil dari lima ditambah
+
+44
+00:02:52,890 --> 00:03:00,300
+lima Anda dapat menggunakan tanda kurung untuk hanya memperjelas pesanan Anda sehingga Anda dapat menggunakan tanda kurung dengan cara ini
+
+45
+00:03:00,300 --> 00:03:04,850
+untuk benar-benar mengatakan lima kali 10 yang akan membuat Anda 50.
+
+46
+00:03:04,890 --> 00:03:08,570
+Operasi aritmatika terakhir yang ingin saya tunjukkan adalah fungsi model.
+
+47
+00:03:08,820 --> 00:03:13,990
+Jadi fungsi Ma'at atau modulus seperti itu juga dikenal adalah tanda persen dengan Python.
+
+48
+00:03:14,610 --> 00:03:18,660
+Dan itu pada dasarnya akan mengembalikan apa yang tersisa setelah pembagian.
+
+49
+00:03:18,780 --> 00:03:22,010
+Jadi untuk dibagi dua adalah dua sisanya.
+
+50
+00:03:22,010 --> 00:03:23,210
+Nol.
+
+51
+00:03:23,250 --> 00:03:33,030
+Jadi, ketika Anda menjalankan untuk maade dua Anda akan mendapatkan nol karena output lima dibagi dua adalah sisa satu karena
+
+52
+00:03:33,390 --> 00:03:36,400
+empat tambah satu adalah lima.
+
+53
+00:03:36,500 --> 00:03:38,510
+Jadi, Anda akan keluar 1 sisanya.
+
+54
+00:03:38,550 --> 00:03:47,480
+Dan ini adalah cara yang bagus untuk memeriksa apakah angka-angka genap sehingga Anda akan tahu bahwa jika misalnya mod 2 mengembalikan 0 yang
+
+55
+00:03:47,500 --> 00:03:49,510
+8 bukan angka genap.
+
+56
+00:03:49,530 --> 00:03:54,630
+Karena dua berjalan secara merata ke angka itu dan itu tetap nol.
+
+57
+00:03:54,930 --> 00:03:58,910
+Sekarang mari kita bicara dengan cepat tentang tugas variabel.
+
+58
+00:03:59,160 --> 00:04:04,680
+Banyak kali Anda ingin memilih nama variabel untuk menetapkan beberapa objek atau tipe data ke nama
+
+59
+00:04:04,680 --> 00:04:05,270
+variabel.
+
+60
+00:04:05,400 --> 00:04:08,150
+Dalam Python operator penugasan hanyalah tanda sama dengan.
+
+61
+00:04:08,400 --> 00:04:11,790
+Jadi, Anda akan memilih nama variabel Anda dengan hanya mulai mengetikkannya.
+
+62
+00:04:11,790 --> 00:04:17,160
+Seperti V-A mereka semua mengatakan sama dan kemudian jenis objek apa pun yang ingin Anda masukkan ke sana.
+
+63
+00:04:17,160 --> 00:04:23,880
+Jadi misalnya kita bisa memasukkan dua dan kemudian setiap kali saya memanggil nama variabel V A R saya
+
+64
+00:04:23,880 --> 00:04:25,380
+akan mendapatkan dua.
+
+65
+00:04:25,380 --> 00:04:31,550
+Jadi misalnya saya dapat mengatakan x sama dengan 2 y sama dengan tiga.
+
+66
+00:04:31,740 --> 00:04:36,530
+Dan sekarang saya benar-benar bisa mengatakan X plus Y dan keluar 5.
+
+67
+00:04:36,630 --> 00:04:41,730
+Saya juga dapat menetapkan kembali X dengan mendefinisikannya dengan sendirinya.
+
+68
+00:04:41,760 --> 00:04:48,030
+Jadi saya bisa mengatakan x sama dengan x plus X sehingga akan berakhir sebagai x sama dengan 4.
+
+69
+00:04:48,060 --> 00:04:53,280
+Dan sekarang setiap kali saya memanggil X lagi itu akan sama dengan 4 artinya jika saya menjalankan sel
+
+70
+00:04:53,760 --> 00:04:57,560
+itu lagi X sama dengan x ditambah X setiap kali saya menjalankannya.
+
+71
+00:04:57,630 --> 00:05:04,080
+Jadi pada dasarnya akan menggandakan nilai x dan itu akan menugaskan kembali X karena semuanya nilai ganda.
+
+72
+00:05:04,530 --> 00:05:05,070
+Baiklah.
+
+73
+00:05:05,280 --> 00:05:07,560
+Beberapa aturan tentang cara membuat nama variabel ini.
+
+74
+00:05:07,560 --> 00:05:14,270
+Mereka tidak boleh mulai dengan angka sehingga Anda tidak bisa mengatakan sesuatu seperti 12 V-A sama dengan 12.
+
+75
+00:05:14,400 --> 00:05:19,890
+Kalau tidak, Anda akan mendapatkan kesalahan sintaks di o'War tahu bahwa itu adalah sintaks tidak valid Alexiou memberi Anda kesalahan.
+
+76
+00:05:20,130 --> 00:05:26,160
+Jadi Anda tidak bisa memulai dengan angka dan Anda juga tidak bisa memulai dengan simbol
+
+77
+00:05:26,160 --> 00:05:35,110
+khusus sehingga Anda tidak bisa mengatakan sesuatu seperti Dollar Sign vr Anda akan mulai mendapatkan masalah di sini sehingga Anda akan mendapatkan kesalahan sintaksis.
+
+78
+00:05:35,100 --> 00:05:40,190
+Mereka harus mulai dengan huruf kecil jika Anda ingin menggabungkan beberapa kata.
+
+79
+00:05:40,290 --> 00:05:45,960
+Anda harus menggunakan garis bawah untuk memisahkannya, jadi beri nama garis bawah dari garis bawah a.
+
+80
+00:05:45,990 --> 00:05:50,950
+Apakah bahasa lain bagaimana Anda menggunakan periode untuk memisahkan ini untuk Python.
+
+81
+00:05:50,970 --> 00:05:54,180
+Sintaks yang tepat adalah dengan menggunakan garis bawah.
+
+82
+00:05:54,180 --> 00:05:57,110
+Sekarang mari kita lanjutkan dan berbicara tentang string.
+
+83
+00:05:57,530 --> 00:06:03,570
+Jadi saya akan membuat komentar dengan memasukkan tag hash pada string dan apa pun tag hash di
+
+84
+00:06:03,570 --> 00:06:03,990
+depannya.
+
+85
+00:06:03,990 --> 00:06:09,330
+Anda akan melihat warnanya berbeda dan melihatnya karena itu adalah komentar sehingga tidak akan berjalan.
+
+86
+00:06:09,320 --> 00:06:10,720
+Jadi Anda bisa mengetikkan apa saja di sini.
+
+87
+00:06:10,740 --> 00:06:12,060
+Itu tidak akan berjalan.
+
+88
+00:06:12,060 --> 00:06:17,250
+Baiklah mari kita lanjutkan untuk beralih ke string dan saya akan pergi ke depan dan memperbesar sedikit sehingga
+
+89
+00:06:17,250 --> 00:06:19,590
+Anda mendapatkan pandangan yang lebih baik tentang ini.
+
+90
+00:06:20,310 --> 00:06:23,460
+Dan untuk string ada dua cara membuat string.
+
+91
+00:06:23,700 --> 00:06:30,930
+Anda dapat menggunakan tanda kutip tunggal dan perhatikan bagaimana warnanya berubah dalam Kading bahwa ini adalah string atau
+
+92
+00:06:30,930 --> 00:06:35,190
+Anda dapat menggunakan tanda kutip ganda sehingga ini adalah string.
+
+93
+00:06:35,940 --> 00:06:41,670
+Dan kemudian Anda juga dapat membungkus tanda kutip ganda di sekitar tanda kutip
+
+94
+00:06:41,670 --> 00:06:47,470
+tunggal jadi katakanlah Anda memiliki kalimat yang mengatakan sesuatu seperti ini seperti saya tidak pergi.
+
+95
+00:06:47,610 --> 00:06:54,150
+Jadi, jika Anda memiliki penawaran tunggal ini tetapi Anda ingin menyimpannya di dalam maka Anda bisa membungkusnya dengan tanda
+
+96
+00:06:54,150 --> 00:06:58,690
+kutip ganda dan Anda akan melihat bahwa penawaran tunggal itu dipertahankan dalam string.
+
+97
+00:06:58,710 --> 00:07:03,390
+Jadi, jika Anda pernah harus berurusan dengan baik Anda ingin penawaran tunggal atau kutipan ganda di
+
+98
+00:07:03,390 --> 00:07:09,000
+dalam string Anda selalu dapat hanya membungkusnya di sekitar satu set baik kutipan ganda atau tunggal tertunda dan apa
+
+99
+00:07:09,000 --> 00:07:10,420
+yang ada di dalam.
+
+100
+00:07:10,810 --> 00:07:15,330
+OK, mari kita lanjutkan dan berbicara tentang mencetak string.
+
+101
+00:07:15,330 --> 00:07:22,740
+Saya akan membuat variabel yang disebut X sebagai tanda bahwa string halo untuk notebook Jupiter jika saya cukup ketik
+
+102
+00:07:22,740 --> 00:07:28,950
+X itu akan muncul tanpa dan kemudian saya akan menunjukkan tanda kutip Halo di sini.
+
+103
+00:07:28,950 --> 00:07:32,880
+Dan ini pada dasarnya hal yang sama seperti jika Anda mengetikkan ini langsung ke
+
+104
+00:07:33,150 --> 00:07:35,290
+konsol dengan Python hanya mengetikkan variabel x.
+
+105
+00:07:35,420 --> 00:07:42,510
+Saya akan meletakkan string halo atau Python Namun jika Anda ingin benar-benar mencetak output X Anda harus meneruskannya
+
+106
+00:07:42,510 --> 00:07:48,030
+ke fungsi cetak yang akan mencetak tanda kurung dan kemudian x di dalam tanda
+
+107
+00:07:48,030 --> 00:07:48,980
+kurung itu.
+
+108
+00:07:49,200 --> 00:07:49,590
+Dan perhatikan.
+
+109
+00:07:49,590 --> 00:07:50,540
+Sekarang bedanya di sini.
+
+110
+00:07:50,580 --> 00:07:55,410
+Saya tidak memiliki indikator keluar lagi dan saya tidak memiliki tanda kutip lagi.
+
+111
+00:07:55,500 --> 00:08:00,840
+Jadi ini adalah bagaimana Anda harus secara resmi menampilkan hal-hal ketika Anda mencoba menunjukkan hasilnya dengan
+
+112
+00:08:00,870 --> 00:08:02,340
+Python adalah pernyataan cetak.
+
+113
+00:08:02,340 --> 00:08:06,370
+Sekarang biarkan saya maju dan menunjukkan kepada Anda bagaimana Anda bisa memformat pernyataan cetak Anda.
+
+114
+00:08:06,390 --> 00:08:15,180
+Katakanlah saya memiliki nama variabel sama dengan 12 dan nama sama dengan Sam.
+
+115
+00:08:15,180 --> 00:08:18,990
+Sekarang saya ingin mencetak barang berdasarkan variabel-variabel itu.
+
+116
+00:08:19,260 --> 00:08:21,790
+Saya bisa melakukannya dengan format cetak.
+
+117
+00:08:22,230 --> 00:08:32,800
+Saya akan mengambil string dan mengatakan nomor saya adalah dan saya akan pasan blok tanda kutip atau kurung keriting di sana.
+
+118
+00:08:33,400 --> 00:08:39,770
+Dan nama saya adalah dan saya akan melewati satu set kurung keriting.
+
+119
+00:08:40,020 --> 00:08:46,320
+Dan kemudian dalam format titik-titik mislay dan perhatikan bagaimana warnanya di sini untuk menunjukkan bahwa ini adalah metode
+
+120
+00:08:46,320 --> 00:08:52,290
+khusus dari string dan kemudian Anda dapat melanjutkan dan lakukan adalah meneruskan nama-nama variabel dalam urutan
+
+121
+00:08:52,500 --> 00:08:56,380
+yang Anda inginkan untuk diisi ke dalam ini kurung keriting.
+
+122
+00:08:56,430 --> 00:09:03,810
+Jadi jika saya hanya mengetik ini dan menjalankan ini apa yang Python lakukan adalah membaca bahwa Anda memiliki kurung keriting di sini di string Anda dan
+
+123
+00:09:03,900 --> 00:09:08,480
+bahwa Anda memiliki format itu dan itu akan menempatkan mereka dalam urutan yang Anda inginkan.
+
+124
+00:09:08,550 --> 00:09:14,440
+Jadi saya katakan OK mati rasa diganti di sini untuk kurung keriting dan nama akan diganti di sini.
+
+125
+00:09:14,460 --> 00:09:15,790
+Untuk kurung keriting ini.
+
+126
+00:09:15,930 --> 00:09:21,480
+Dan itu cara yang nyaman bagi Anda untuk menggunakan nama variabel dalam laporan cetak Anda
+
+127
+00:09:21,480 --> 00:09:24,610
+daripada harus menulis 12 atau Sam sepanjang waktu.
+
+128
+00:09:24,930 --> 00:09:27,400
+Dan perhatikan bahwa saya sebenarnya belum mencetak ini.
+
+129
+00:09:27,480 --> 00:09:31,320
+Saya harus membungkus semua ini dengan pernyataan cetak.
+
+130
+00:09:31,320 --> 00:09:35,760
+Jadi, pastikan pangeran Anda seimbang dan Anda bisa melihatnya hanya dengan memilih salah satu
+
+131
+00:09:35,760 --> 00:09:37,540
+pangeran cetak untuk disorot hijau.
+
+132
+00:09:37,600 --> 00:09:43,860
+Sekarang jika saya sudah di ini ini benar-benar telah dicetak dan saya tidak lagi menjual itu dengan
+
+133
+00:09:43,860 --> 00:09:52,050
+cara lain Anda dapat menggunakan format cetak adalah untuk mengatakan jika kita teruskan dan ubah ini Anda dapat mengirimkan variabel apa pun
+
+134
+00:09:52,350 --> 00:09:54,010
+ke dalam kurung keriting.
+
+135
+00:09:54,420 --> 00:10:00,980
+Jadi saya bisa mengatakan satu di dalam kurung keriting dan dua di dalam kurung keriting.
+
+136
+00:10:01,170 --> 00:10:08,070
+Dan sekarang setelah saya menggunakan nama-nama ini, saya dapat melanjutkan isi pernyataan format dokumen saya dengan mengatakan bahwa satu sama dengan dan
+
+137
+00:10:08,250 --> 00:10:11,380
+kemudian variabel apa pun yang saya inginkan sama dengan.
+
+138
+00:10:11,430 --> 00:10:17,910
+Dalam hal ini saya ingin sama dengan mati rasa dan kemudian dua saya ingin itu sama dengan nama.
+
+139
+00:10:18,000 --> 00:10:20,850
+Dan jika saya menjalankan ini saya akan mendapatkan hasil yang sama persis.
+
+140
+00:10:20,850 --> 00:10:26,580
+Apa yang baik tentang ini adalah Anda tidak perlu lagi khawatir tentang pemformatan berada dalam
+
+141
+00:10:26,790 --> 00:10:34,440
+urutan yang sama persis dengan yang Anda inginkan untuk kurung keriting dan Anda dapat terus menambahkan kurung keriting lebih banyak dan kemudian
+
+142
+00:10:34,440 --> 00:10:41,420
+Anda dapat mengetik satu lagi di sini dan memperhatikan bahwa Python sekarang dapat mencari dan memasukkan variabel Anda lebih
+
+143
+00:10:41,420 --> 00:10:47,280
+dari sekali sehingga datang ke sini melihat nama variabel kemudian pergi ke format Anda dan periksa.
+
+144
+00:10:47,300 --> 00:10:49,190
+OK apa nama variabel di sana.
+
+145
+00:10:49,190 --> 00:10:52,970
+Jadi misalnya 2 yang terlihat di sini mengatakan 2 sama dengan nama.
+
+146
+00:10:53,000 --> 00:10:53,230
+Baiklah.
+
+147
+00:10:53,240 --> 00:10:57,880
+Dan kemudian mengisi nama di sini dan kemudian kita tahu bahwa nama itu sama dengan string Sam.
+
+148
+00:10:57,890 --> 00:11:00,640
+Jadi itu berjalan ke depan dan meletakkannya di dalam sana.
+
+149
+00:11:00,650 --> 00:11:03,080
+Baiklah, silakan dan kirimkan pertanyaan.
+
+150
+00:11:03,080 --> 00:11:07,670
+Forum T&amp;J jika Anda bingung dengan salah satu format cetak ini tetapi pada dasarnya mudah.
+
+151
+00:11:07,790 --> 00:11:10,440
+Masukkan saja string Anda ke dalam kurung keriting Anda.
+
+152
+00:11:10,560 --> 00:11:15,020
+Maka saya akan menyarankan Anda menggunakan metode ini lewat nama variabel karena itu
+
+153
+00:11:15,020 --> 00:11:19,430
+sedikit lebih jelas ketika Anda kembali dan Anda tidak perlu khawatir tentang
+
+154
+00:11:19,430 --> 00:11:21,750
+mengacaukan urutan dalam panggilan format ini.
+
+155
+00:11:21,770 --> 00:11:27,080
+Sekarang mari kita lanjutkan dan memperluas topik string kita menjadi string pengindeksan.
+
+156
+00:11:27,230 --> 00:11:33,780
+Jika saya memiliki string bernama S dan saya akan mengatakan x sama dengan halo.
+
+157
+00:11:34,230 --> 00:11:37,140
+S di sini hanya urutan elemen.
+
+158
+00:11:37,140 --> 00:11:44,990
+Dan dalam hal ini setiap elemen adalah huruf dan saya bisa mengambil elemen tertentu dari urutan karakter
+
+159
+00:11:46,010 --> 00:11:49,730
+dengan menggunakan notasi kurung siku ini dan mengindeksnya.
+
+160
+00:11:49,730 --> 00:11:51,400
+Pythoness dimulai dari nol.
+
+161
+00:11:51,440 --> 00:11:59,210
+Dan ini adalah sesuatu yang perlu diketahui jika saya mengatakan tanda kurung X di nol dan jalankan ini atau putar kembali
+
+162
+00:11:59,300 --> 00:12:00,180
+elemen nol.
+
+163
+00:12:00,470 --> 00:12:07,570
+Jadi di sini kita melihat itu mengambil Hello memeriksa karena ada elemen dan kemudian mengembalikan 0.
+
+164
+00:12:07,700 --> 00:12:12,140
+Silakan dan lihat apakah Anda dapat mengambil o terakhir di Hilo.
+
+165
+00:12:12,380 --> 00:12:20,830
+Nah apa yang akan Anda lakukan, Anda akan mengatakan dengan baik indeks spacer apa yang ada di 0 1 2 3 4.
+
+166
+00:12:21,710 --> 00:12:27,370
+Anda memasukkan empat ke dalam kurung ini dan ambil itu.
+
+167
+00:12:27,380 --> 00:12:33,050
+Hal lain yang perlu diperhatikan adalah Anda juga dapat menggunakan apa yang dikenal sebagai notasi irisan untuk
+
+168
+00:12:33,110 --> 00:12:34,600
+hanya mengambil irisan string.
+
+169
+00:12:34,760 --> 00:12:38,980
+Saya akan pergi ke depan dan mengetik bukannya estetis untuk halo.
+
+170
+00:12:39,020 --> 00:12:44,410
+Saya akan mengatakan b c d e f g h i j k.
+
+171
+00:12:45,020 --> 00:12:50,300
+Saya akan menjalankan itu dan sekarang apa yang akan saya lanjutkan dan lihat apakah saya mengetikkan s 0.
+
+172
+00:12:50,330 --> 00:12:53,000
+Di sini, di kurung ini saya harus mendapatkan kembali.
+
+173
+00:12:53,300 --> 00:12:54,600
+OK itu masuk akal.
+
+174
+00:12:54,770 --> 00:13:00,470
+Katakanlah saya ingin mengambil semuanya seperti yang ada di luar.
+
+175
+00:13:00,770 --> 00:13:05,380
+Yah aku bisa menggunakan notasi titik dua yang juga dikenal sebagai sintaks slice untuk melakukan ini
+
+176
+00:13:05,430 --> 00:13:09,810
+Saya akan mengatakan s dari 0 seperti di titik dua.
+
+177
+00:13:09,920 --> 00:13:15,360
+Jalankan ini dan usus besar ini pada dasarnya mengatakan OK mulai dari nol.
+
+178
+00:13:15,530 --> 00:13:22,200
+Raih semua yang ada di baliknya dan notasi ini berlaku sebaliknya.
+
+179
+00:13:22,400 --> 00:13:27,770
+Saya bisa mengatakan ambil semuanya dengan titik dua hingga indeks tertentu.
+
+180
+00:13:27,770 --> 00:13:31,210
+Jadi katakanlah saya katakan a b c d.
+
+181
+00:13:31,370 --> 00:13:35,660
+Jadi D adalah indeks 3 0 1 2 3.
+
+182
+00:13:35,780 --> 00:13:43,250
+Jika saya melewati tiga di sini ini pada dasarnya memerintahkan Python untuk mengatakan OK ambil semuanya hingga tetapi
+
+183
+00:13:43,250 --> 00:13:45,370
+tidak termasuk indeks 3.
+
+184
+00:13:45,380 --> 00:13:49,500
+Ini terkadang membingungkan bagi pemula karena mereka berharap untuk muncul.
+
+185
+00:13:49,520 --> 00:13:54,860
+Yah karena itu posisi indeks 3 tetapi karena pengindeksan dimulai dari nol
+
+186
+00:13:54,860 --> 00:14:01,710
+Anda hanya harus menganggap perintah ini sebagai ambil semuanya hingga dan tidak termasuk indeks elemen karakter tiga.
+
+187
+00:14:01,880 --> 00:14:05,900
+Dan kami akan menunjukkan kepada Anda lebih banyak tentang memotong notasi ketika kita berbicara
+
+188
+00:14:05,900 --> 00:14:08,340
+tentang daftar karena itu adalah ide yang sama.
+
+189
+00:14:08,420 --> 00:14:14,630
+Dan akhirnya kami menggabungkan kedua ide ini di sini sejauh memulai dan
+
+190
+00:14:14,930 --> 00:14:23,700
+mengambil segala sesuatu di luarnya atau meraih semuanya tetapi tidak termasuk titik indeks tertentu dengan mengatakan mulai dari nol.
+
+191
+00:14:24,190 --> 00:14:29,150
+Colin ambil semuanya hingga indeks tertentu seperti tiga.
+
+192
+00:14:29,240 --> 00:14:31,380
+Sekarang mengembalikan hasil yang sama dengan ABC.
+
+193
+00:14:31,400 --> 00:14:37,090
+Tapi yang bisa saya lakukan adalah mengganti dua angka ini untuk menetapkan titik awal dan Titik Akhir saya.
+
+194
+00:14:37,130 --> 00:14:43,440
+Ayo maju dan ambil D E F jadi d mulai dari indeks 3.
+
+195
+00:14:43,910 --> 00:14:50,090
+Berarti jika saya maju dan mengganti ini saya akan mulai pada indeks 3 0 1 2 3 dan kemudian saya
+
+196
+00:14:50,090 --> 00:14:52,220
+akan naik ke dan termasuk G.
+
+197
+00:14:52,250 --> 00:15:00,030
+Jadi itu 0 1 2 3 4 5 6 7 untuk mengatakan 3 titik 6.
+
+198
+00:15:00,290 --> 00:15:02,840
+Jalankan itu dan aku mengerti.
+
+199
+00:15:02,870 --> 00:15:06,580
+Sekali lagi hanya indeks yang Anda mulai yang termasuk usus besar.
+
+200
+00:15:06,590 --> 00:15:12,170
+Yang berarti ambil semua jalan dan kemudian indeks terakhir Anda adalah indeks yang tidak Anda sertakan karena
+
+201
+00:15:12,200 --> 00:15:13,670
+pengindeksan dimulai dari nol.
+
+202
+00:15:13,760 --> 00:15:17,180
+Jadi g tidak termasuk indeks 6.
+
+203
+00:15:17,450 --> 00:15:26,840
+OK sekali lagi mengulangi ide ini ketika kita berbicara tentang ini yang akan datang sekarang daftar adalah urutan
+
+204
+00:15:26,900 --> 00:15:32,560
+elemen dalam satu set persegi kurung kotak dipisahkan oleh koma.
+
+205
+00:15:32,570 --> 00:15:39,270
+Jadi di sini Anda memiliki daftar satu dua tiga daftar pada dasarnya dapat mengambil semua jenis data.
+
+206
+00:15:39,710 --> 00:15:45,130
+Jadi saya juga dapat memiliki daftar string a c dan tidak ada keluhan di sini.
+
+207
+00:15:45,260 --> 00:15:58,460
+Saya akan pergi ke depan dan membuat variabel bernama daftar saya dan mengaturnya sama dengan b c menjalankannya dan jika saya ingin menambahkan elemen
+
+208
+00:15:58,460 --> 00:16:03,020
+ke akhir daftar saya saya menggunakan metode append.
+
+209
+00:16:03,080 --> 00:16:06,950
+Saya mengatakan daftar garis bawah saya ditambahkan.
+
+210
+00:16:07,310 --> 00:16:09,630
+Dan katakanlah saya ingin menambahkan huruf D.
+
+211
+00:16:09,950 --> 00:16:13,350
+Saya hanya menjalankan itu dan jika saya memeriksa daftar saya sekarang.
+
+212
+00:16:14,300 --> 00:16:16,490
+Sekarang apa yang ditambahkan nilai itu.
+
+213
+00:16:16,490 --> 00:16:22,160
+D Dan daftar mereka juga urutan seperti string.
+
+214
+00:16:22,220 --> 00:16:27,350
+Berarti jika saya ingin mengambil item pertama dalam daftar saya dapat menggunakan notasi brechen yang
+
+215
+00:16:27,350 --> 00:16:34,940
+sama yang saya lakukan untuk string pass dalam indeks i Watz menjalankan ini dan saya akan mengembalikan item pada indeks sehingga 0 1
+
+216
+00:16:34,940 --> 00:16:38,230
+ke tempat setiap titik indeks tidak dipisahkan oleh koma.
+
+217
+00:16:38,450 --> 00:16:44,300
+Misalnya jika saya ingin mengambil b dan c saya bisa menggunakan notasi irisan yang sama yang baru saja kita bahas.
+
+218
+00:16:44,540 --> 00:16:51,730
+Saya ingin memulai dengan indeks 1 dan terus maju tetapi tidak termasuk indeks 3.
+
+219
+00:16:51,740 --> 00:16:57,290
+Jadi saya akan mengatakan satu titik tiga tidak mengembalikan B dan C.
+
+220
+00:16:57,740 --> 00:17:02,550
+Saya juga dapat menetapkan kembali posisi menggunakan notasi indeks ini.
+
+221
+00:17:02,660 --> 00:17:08,360
+Jadi jika saya ingin elemen pertama menjadi sesuatu yang berbeda, saya hanya mengatakan daftar underscore saya pasand nol
+
+222
+00:17:08,360 --> 00:17:13,380
+ke dalam kurung siku dan kemudian masukkan elemen apa pun yang saya inginkan misalnya.
+
+223
+00:17:13,520 --> 00:17:16,390
+Saya ingin elemen itu menjadi baru sekarang.
+
+224
+00:17:16,390 --> 00:17:20,340
+Jadi jika saya ambil daftar, saya melihat B C D.
+
+225
+00:17:20,870 --> 00:17:28,550
+Sesuatu yang perlu dicatat di sini adalah bahwa Anda dapat membuat daftar sarang di dalam satu sama lain sehingga saya dapat
+
+226
+00:17:28,560 --> 00:17:34,750
+mengatakan paling buruk satu koma ke koma dan kemudian dimasukkan ke dalam daftar 3 koma lainnya.
+
+227
+00:17:34,790 --> 00:17:39,440
+Jadi jika saya melihat daftar itu adalah daftar di dalam daftar.
+
+228
+00:17:39,440 --> 00:17:44,400
+Jadi sebenarnya katakanlah saya ingin mengambil ini sebagai elemen tunggal.
+
+229
+00:17:44,570 --> 00:17:48,770
+Nah itu daftar indeks 0 1 2.
+
+230
+00:17:48,830 --> 00:17:52,650
+Jadi saya meneruskan ke sini dan ini kembali dalam daftar lain.
+
+231
+00:17:52,850 --> 00:17:59,270
+Jadi katakanlah saya ingin grafik dengan baik yang sekarang indeks 0 1 yang berarti saya dapat memakukan
+
+232
+00:17:59,840 --> 00:18:03,680
+pada kurung 1 dan mendapatkan elemen yang sebenarnya untuk.
+
+233
+00:18:03,710 --> 00:18:08,970
+Biarkan saya masuk dan menunjukkan kepada Anda satu lagi contoh mengambil barang dari daftar bersarang.
+
+234
+00:18:08,990 --> 00:18:12,530
+Anda tidak melakukan ini terlalu sering dengan daftar yang tidak kurang atau sangat dalam.
+
+235
+00:18:12,530 --> 00:18:20,570
+Tapi saya hanya ingin Anda mendapatkan ide untuk menggunakan beberapa tanda kurung jadi katakanlah saya memiliki daftar bersarang yang
+
+236
+00:18:20,570 --> 00:18:22,070
+terlihat seperti ini.
+
+237
+00:18:22,070 --> 00:18:23,590
+Satu dua tiga.
+
+238
+00:18:23,600 --> 00:18:26,670
+Daftar lain empat atau lima target daftar lainnya.
+
+239
+00:18:27,020 --> 00:18:34,220
+Yah saya bisa ambil elemen ketiga atau keempat untuk mengindeks tiga dalam daftar sarang saya.
+
+240
+00:18:34,220 --> 00:18:35,430
+Itu terlihat seperti ini.
+
+241
+00:18:35,480 --> 00:18:41,280
+Kemudian saya dapat mengatur satu lagi untuk pergi pada indeks ke 0 1 2 itu daftar target.
+
+242
+00:18:41,330 --> 00:18:44,350
+Dan katakanlah saya ingin satu-satunya elemen dalam daftar target itu.
+
+243
+00:18:44,360 --> 00:18:47,920
+Tidak, itu masih memiliki tanda kurung siku yang hanya saya pasan nol.
+
+244
+00:18:47,960 --> 00:18:49,700
+Dan sekarang saya memiliki target string.
+
+245
+00:18:49,910 --> 00:18:54,980
+Dan jika Anda ingin mencetak string ini saya bisa membungkus semuanya dalam pernyataan cetak.
+
+246
+00:18:54,990 --> 00:18:56,590
+Sekarang saya meraih target saya.
+
+247
+00:18:56,600 --> 00:19:00,250
+Anda akan melakukan latihan di mana Anda harus menemukan sesuatu di daftar bersarang.
+
+248
+00:19:00,260 --> 00:19:05,460
+Jadi, pastikan Anda memahami topik dari tanda kurung ini yang saling bertumpuk.
+
+249
+00:19:05,480 --> 00:19:05,930
+Baiklah.
+
+250
+00:19:06,170 --> 00:19:08,260
+Silakan dan berhenti di sini untuk bagian satu.
+
+251
+00:19:08,330 --> 00:19:12,800
+Dan selanjutnya kita akan pergi ke depan dan membahas beberapa tipe data lagi dalam kuliah
+
+252
+00:19:12,980 --> 00:19:17,120
+ini, kita membahas daftar slice notation bagaimana cara mengambil sesuatu dari string indeks.
+
+253
+00:19:17,120 --> 00:19:22,770
+Bagaimana jejak ini memformat tugas variabel dasar dan juga hanya aritmatika dasar.
+
+254
+00:19:23,030 --> 00:19:23,820
+BAIK.
+
+255
+00:19:23,900 --> 00:19:25,370
+Semoga Anda menikmati kuliah ini.
+
+256
+00:19:25,370 --> 00:19:27,880
+Selanjutnya, kita akan membahas beberapa hal lagi.
+
+257
+00:19:27,890 --> 00:19:28,640
+Terimakasih semuanya.
+
+258
+00:19:28,640 --> 00:19:29,480
+Lihat di kuliah berikutnya

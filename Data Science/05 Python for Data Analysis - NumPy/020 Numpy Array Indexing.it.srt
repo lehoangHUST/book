@@ -1,0 +1,951 @@
+1
+00:00:06,480 --> 00:00:11,210
+Ciao a tutti e benvenuti alla torta nella conferenza di baci e selezione in questa conferenza.
+
+2
+00:00:11,230 --> 00:00:15,040
+Discuteremo come selezionare elementi o gruppi di elementi da una torta.
+
+3
+00:00:15,060 --> 00:00:19,260
+Bene, andiamo avanti e saltiamo sul taccuino Juber per iniziare.
+
+4
+00:00:19,260 --> 00:00:19,760
+Tutto ok.
+
+5
+00:00:19,800 --> 00:00:21,360
+Sei qui al taccuino di Giove.
+
+6
+00:00:21,360 --> 00:00:23,880
+Ho già detto importanti arbitri e P. Sapete che cosa sto per iniziare è creando
+
+7
+00:00:24,040 --> 00:00:29,010
+un array campione, dirò che la variabile A R R è uguale alla fine p.
+
+8
+00:00:29,040 --> 00:00:31,370
+Ho una gamma.
+
+9
+00:00:31,500 --> 00:00:33,050
+Semplicemente usando la scheda per
+
+10
+00:00:33,130 --> 00:00:41,700
+completare automaticamente lì e vado da zero a 10 e quando dico zero a 10 intendo l'output effettivo per ottenere quell'output che passerò e alle 11 qui.
+
+11
+00:00:41,700 --> 00:00:45,570
+Così ora ho una matrice di 11 elementi che vanno da zero a 10.
+
+12
+00:00:45,870 --> 00:00:50,760
+Il modo più semplice per scegliere uno o alcuni
+
+13
+00:00:50,760 --> 00:00:57,330
+elementi di un array è molto simile all'indicizzazione da un elenco python.
+
+14
+00:00:57,330 --> 00:00:58,110
+Fondamentalmente userai le parentesi e le notazioni per fare ciò.
+
+15
+00:00:58,140 --> 00:01:03,060
+Si procede e si digita il nome della variabile stessa dell'array.
+
+16
+00:01:03,140 --> 00:01:07,500
+Passa tra parentesi quadre e poi per ottenere un singolo valore in un indice che puoi fare solo passando un numero.
+
+17
+00:01:07,600 --> 00:01:13,530
+Significato se voglio il valore di indice 8 posso passare
+
+18
+00:01:14,010 --> 00:01:21,000
+un 8 e tornerò il valore in x 8 in questo caso.
+
+19
+00:01:21,000 --> 00:01:21,470
+In realtà
+
+20
+00:01:21,540 --> 00:01:27,030
+è 8 da quando ho appena usato arrangiato per creare questo array se voglio ottenere i valori in un intervallo proprio come un elenco python.
+
+21
+00:01:27,030 --> 00:01:29,330
+Posso usare la notazione slice, ovvero posso dire l'indice iniziale e l'indice stop.
+
+22
+00:01:29,340 --> 00:01:37,010
+Quindi, se vado avanti e dico uno dei cinque punti, inizierà l'indice 1 che è il numero 1
+
+23
+00:01:37,080 --> 00:01:43,650
+e va fino all'indice 5 che è il numero quattro perché l'indicizzazione inizia da zero.
+
+24
+00:01:43,650 --> 00:01:49,470
+restituisce tutti i valori da 0 fino al suo indice 5.
+
+25
+00:01:49,500 --> 00:01:57,990
+Quindi per mostrare un altro esempio di questo posso dire zero 5 punti e che
+
+26
+00:01:57,990 --> 00:02:00,710
+Posso anche rimuovere il punto di arresto
+
+27
+00:02:00,750 --> 00:02:06,840
+o il punto di partenza per andare avanti e indicare che voglio tutto il resto dell'array.
+
+28
+00:02:06,900 --> 00:02:07,890
+Tutto dall'inizio della destra.
+
+29
+00:02:07,950 --> 00:02:10,190
+Quindi, per esempio, se voglio
+
+30
+00:02:10,200 --> 00:02:17,710
+tutto fino all'indice 6 invece di specificare il parametro di partenza come 0, posso semplicemente inserire i
+
+31
+00:02:17,790 --> 00:02:24,210
+due punti e quindi inserire 6 Ellora's turn fino all'inizio dell'array per indicizzare 6.
+
+32
+00:02:24,270 --> 00:02:24,860
+carbone stesso.
+
+33
+00:02:24,870 --> 00:02:30,870
+Quindi è la stessa cosa che dice zero colon 6, ma salvo un po 'di digitazione semplicemente inserendo il
+
+34
+00:02:30,870 --> 00:02:32,990
+Allo stesso modo, quello che
+
+35
+00:02:32,990 --> 00:02:43,060
+posso fare e dire è array in se voglio iniziare con un particolare indice e prendere tutto fino alla fine dell'array. Posso usare
+
+36
+00:02:43,080 --> 00:02:50,340
+la stessa stazione che ho fatto in un elenco Python usando la notazione slicing per il carbone.
+
+37
+00:02:50,700 --> 00:02:51,940
+Qualcosa da notare quando stai usando
+
+38
+00:02:52,170 --> 00:02:56,910
+questa notazione di un numero e poi i due punti è che in realtà non stai afferrando l'indice 5 e oltre.
+
+39
+00:02:56,910 --> 00:02:59,410
+Stai prendendo tutto quello che si
+
+40
+00:02:59,490 --> 00:03:05,670
+trova sull'indice 5 perché ricorda che l'indicizzazione fino alla notazione in Python inizia da zero.
+
+41
+00:03:05,670 --> 00:03:06,780
+Quindi 5 qui
+
+42
+00:03:06,780 --> 00:03:15,210
+è in realtà l'indice 6, il che significa che questa notazione di cinque Colon dice di scartare tutto al di là dell'indice 5.
+
+43
+00:03:15,210 --> 00:03:15,600
+Quindi saranno cinque sei sette otto nove dieci perché ricorda che l'indice 5 è in realtà qui alle quattro.
+
+44
+00:03:15,600 --> 00:03:21,200
+Poiché l'indicizzazione inizia da zero, hai afferrato cinque elementi.
+
+45
+00:03:21,750 --> 00:03:25,700
+Significato se dico cinque punti, afferra tutto ciò che va oltre il quinto indice
+
+46
+00:03:25,830 --> 00:03:32,730
+che si verifica alle quattro e puoi andare avanti e rivedere la notazione delle sezioni elenco Python se vuoi maggiori informazioni su questi due punti.
+
+47
+00:03:32,730 --> 00:03:38,480
+Ma essenzialmente questo funziona esattamente come fa per un normale elenco Python.
+
+48
+00:03:38,550 --> 00:03:42,890
+Nessun array differisce da un normale elenco Python a causa della loro capacità di trasmissione.
+
+49
+00:03:43,300 --> 00:03:49,310
+Io vado avanti e mostro un esempio di questo.
+
+50
+00:03:49,350 --> 00:03:51,710
+Vado a prendere la mia matrice e prendere gli elementi.
+
+51
+00:03:51,810 --> 00:03:56,390
+Zero e cinque.
+
+52
+00:03:56,440 --> 00:03:58,060
+Quindi sarà zero uno due tre quattro e quindi lo considero uguale al numero 100.
+
+53
+00:03:58,110 --> 00:04:04,080
+E cosa farà?
+
+54
+00:04:04,140 --> 00:04:05,560
+Trasmetterà quel valore a quelle prime cinque cifre a 100.
+
+55
+00:04:05,820 --> 00:04:12,830
+Ho intenzione di andare avanti e ripristinare l'array e vedrete perché in
+
+56
+00:04:12,960 --> 00:04:21,510
+un secondo, se mostro l'array, torno a 0 1 2 3 fino a 10.
+
+57
+00:04:21,510 --> 00:04:24,350
+Non voglio mostrarti un no importante su fette o rate.
+
+58
+00:04:24,600 --> 00:04:28,420
+Se vado avanti e creo una variabile chiamata slice sotto il punteggio di underscore, sono per Array.
+
+59
+00:04:28,440 --> 00:04:36,490
+E ho detto uguale a una fetta dell'array per esempio 06 È bello
+
+60
+00:04:36,500 --> 00:04:46,360
+vedere quella porzione dell'array qui abbiamo gli array ce ne sono uno due tre quattro cinque.
+
+61
+00:04:46,380 --> 00:04:48,590
+Fondamentalmente quel primo pezzo della metà dell'array.
+
+62
+00:04:48,600 --> 00:04:51,960
+Se trasmetto sullo schermo di Saray dico una porzione di array, io uso il colon.
+
+63
+00:04:52,200 --> 00:04:59,580
+Ciò significa che sto prendendo tutto in quella fetta.
+
+64
+00:04:59,580 --> 00:05:02,550
+Provo a trasmettere questo per essere un altro numero come 99.
+
+65
+00:05:02,570 --> 00:05:06,820
+Ciò significa che quando controllo la slice of array vedo un mucchio di 99.
+
+66
+00:05:06,900 --> 00:05:11,780
+Ecco dove devi prestare attenzione.
+
+67
+00:05:12,000 --> 00:05:14,480
+Se richiamassi l'array, in realtà è stato modificato 99 non solo sulla slice ma sull'array originale.
+
+68
+00:05:14,520 --> 00:05:21,800
+Avevo chiamato due.
+
+69
+00:05:21,810 --> 00:05:22,960
+Quindi dovresti sapere come questo cambiamento si verifica anche nell'array originale, il che significa che i dati non vengono copiati.
+
+70
+00:05:23,190 --> 00:05:28,950
+È solo una vista
+
+71
+00:05:29,130 --> 00:05:30,560
+Quindi l'array originale.
+
+72
+00:05:30,710 --> 00:05:32,100
+impostare automaticamente le copie degli array.
+
+73
+00:05:32,280 --> 00:05:38,250
+E la ragione per cui lo fa è di evitare problemi di memoria con array molto grandi, il che significa che nessun pi non ha intenzione di
+
+74
+00:05:38,250 --> 00:05:41,140
+Se in realtà vuoi una copia e
+
+75
+00:05:41,380 --> 00:05:47,940
+non un riferimento alla matrice originale che puoi fare, in realtà specifica specificamente la copia.
+
+76
+00:05:47,940 --> 00:05:49,410
+Quindi posso fare qualcosa di simile.
+
+77
+00:05:49,530 --> 00:05:51,480
+Posso andare avanti e
+
+78
+00:05:51,720 --> 00:06:01,620
+dire r copia di sottolineatura e utilizzare il metodo di copia fuori dall'array per indicare specificamente che voglio una copia.
+
+79
+00:06:01,620 --> 00:06:03,320
+Quindi se guardo il mio array è 9 9 9 9 9 x cetera e poi 6 7 8 9 10.
+
+80
+00:06:03,450 --> 00:06:09,410
+E se guardo il mio array, è anche la stessa cosa.
+
+81
+00:06:09,780 --> 00:06:14,320
+Ma se faccio una modifica alla mia copia dell'array, magari trasmettendo ogni valore su 100.
+
+82
+00:06:14,500 --> 00:06:20,550
+E controllo la copia dell'array ogni valore è 100.
+
+83
+00:06:20,940 --> 00:06:25,420
+Ma quella matrice originale non è ancora influenzata da quella trasmissione nel comando a 100.
+
+84
+00:06:25,440 --> 00:06:32,190
+Vai avanti e rivedi le note su questo.
+
+85
+00:06:32,190 --> 00:06:34,070
+Questo è un po 'di
+
+86
+00:06:34,120 --> 00:06:40,360
+confusione per te, ma la premessa di base è che se prendi effettivamente una porzione dell'array e
+
+87
+00:06:40,360 --> 00:06:47,370
+la imposti come variabile senza dire esplicitamente che vuoi una copia dell'array, devi tenere a mente che sei solo
+
+88
+00:06:47,380 --> 00:06:53,340
+visualizzare un collegamento alla matrice originale e le modifiche apportate influiranno effettivamente sulla matrice originale.
+
+89
+00:06:53,340 --> 00:06:56,760
+OK.
+
+90
+00:06:56,760 --> 00:06:57,400
+Andiamo a parlare dell'indicizzazione di un array.
+
+91
+00:06:57,690 --> 00:07:00,550
+Altrimenti noto come una matrice.
+
+92
+00:07:00,690 --> 00:07:02,810
+Ho intenzione di andare avanti e cancellare tutte le celle qui per un secondo.
+
+93
+00:07:02,880 --> 00:07:07,920
+Bene, ho appena eliminato tutte le celle qui e stiamo per fare è andare avanti e creare un array a d.
+
+94
+00:07:07,960 --> 00:07:15,180
+Sto per dire N. P. array e ho intenzione di passare in una lista annidata.
+
+95
+00:07:17,520 --> 00:07:24,020
+Quindi dirò 5 10 15 20 25 30 e infine 35 40 45.
+
+96
+00:07:24,930 --> 00:07:37,830
+e qui ho tre righe con tre colonne, è per loro la matrice missionaria.
+
+97
+00:07:38,430 --> 00:07:44,280
+Quindi voglio uscire e mostrarlo all'array
+
+98
+00:07:44,280 --> 00:07:46,010
+Grande.
+
+99
+00:07:46,050 --> 00:07:46,820
+Tutto ok.
+
+100
+00:07:46,830 --> 00:07:47,430
+Esistono due formati generali per l'acquisizione di elementi da un array o Matrix.
+
+101
+00:07:47,430 --> 00:07:52,880
+C'è la doppia parentesi per questo.
+
+102
+00:07:52,880 --> 00:07:54,500
+E poi c'è il formit a singola parentesi con la virgola.
+
+103
+00:07:54,570 --> 00:07:57,270
+parentesi quadra che è il formato che consiglierei di
+
+104
+00:07:57,270 --> 00:08:01,570
+usare ma dovresti sapere entrambi nel caso in cui li incontri in natura.
+
+105
+00:08:01,560 --> 00:08:07,200
+Lasciami andare per mostrarti il ​​formato a doppia parentesi e poi ti mostrerò un esempio del formato a
+
+106
+00:08:07,200 --> 00:08:08,750
+Quindi di nuovo c'è la mia teoria.
+
+107
+00:08:08,760 --> 00:08:10,970
+Bene, diciamo che volevo prendere
+
+108
+00:08:11,120 --> 00:08:18,390
+la cifra 5 in modo che sia nella prima riga o nella riga 0 dell'indice e nella
+
+109
+00:08:18,390 --> 00:08:27,910
+prima colonna indice 0 per la notazione a parentesi quadra posso passare prima la riga che voglio e poi la colonna che voglio.
+
+110
+00:08:27,900 --> 00:08:28,700
+Quindi passare 00 qui restituirà la cifra 5.
+
+111
+00:08:28,770 --> 00:08:32,070
+Poiché questo è gli elementi nella prima riga nella prima colonna.
+
+112
+00:08:32,230 --> 00:08:36,410
+Quello che posso fare è cancellare e fare solo una serie di parentesi e indicizzare un intero Roback.
+
+113
+00:08:36,420 --> 00:08:44,640
+Quindi questo indicizzerà l'intera riga dell'indice 0 che significa 5 10 15 e se
+
+114
+00:08:44,670 --> 00:08:55,320
+voglio dire l'elemento 25 Beh, questo è l'indice uno per la riga nel suo indice uno per la colonna.
+
+115
+00:08:55,350 --> 00:09:03,000
+Quindi posso dire 1 1 e tutto questo restituisce 25.
+
+116
+00:09:03,000 --> 00:09:06,080
+Quello che voglio che tu faccia è provare a vedere se
+
+117
+00:09:06,100 --> 00:09:11,980
+ora puoi mettere in pausa il video e provare ad afferrare gli elementi dall'array individualmente usando questa notazione a doppia parentesi.
+
+118
+00:09:11,970 --> 00:09:15,620
+Tutto ok.
+
+119
+00:09:15,660 --> 00:09:15,910
+Diciamo che vogliamo prendere 40 come solo un ultimo esempio.
+
+120
+00:09:15,930 --> 00:09:19,710
+Questo è anche un indice di riga.
+
+121
+00:09:19,950 --> 00:09:22,700
+Ed è una colonna nel prossimo.
+
+122
+00:09:23,310 --> 00:09:25,290
+Quindi questo è 40.
+
+123
+00:09:25,680 --> 00:09:27,010
+Questa è la notazione a doppia parentesi.
+
+124
+00:09:27,120 --> 00:09:29,520
+Beh, dovresti farlo.
+
+125
+00:09:29,520 --> 00:09:30,380
+Tuttavia, consiglierei di utilizzare la notazione virgola singola parentesi.
+
+126
+00:09:30,380 --> 00:09:36,390
+In pratica, ciò che fa è sostituire il doppio set di parentesi con
+
+127
+00:09:36,390 --> 00:09:42,630
+solo una virgola e passare il numero della colonna della virgola della riga.
+
+128
+00:09:42,630 --> 00:09:45,790
+riga e quindi è nella terza colonna.
+
+129
+00:09:45,780 --> 00:09:54,440
+Quindi per esempio diciamo che volevo che la cifra 30 passasse nell'indice 1 perché è indice uno per
+
+130
+00:09:54,930 --> 00:09:56,300
+Quindi 0 1 2 è nella colonna dell'indice e questo mi dà il 30.
+
+131
+00:09:56,320 --> 00:10:03,010
+E ciò equivale a dire ciò che mi viene sottolineato e
+
+132
+00:10:03,210 --> 00:10:11,040
+farlo con parentesi doppie. Ti consiglio di usare sempre questa singola parentesi di
+
+133
+00:10:11,050 --> 00:10:17,200
+una notazione comune perché di solito è meno incline all'errore.
+
+134
+00:10:17,200 --> 00:10:19,990
+Ora immaginiamo di non volere singoli elementi ma blocchi reali di.
+
+135
+00:10:19,990 --> 00:10:24,730
+Ad esempio, per alcune matrici di questa matrice è possibile utilizzare i due
+
+136
+00:10:24,900 --> 00:10:31,870
+punti per la notazione di sezioni Nurit per acquisire alcune sezioni dell'intero nell'array e ordinare solo singoli elementi.
+
+137
+00:10:31,870 --> 00:10:36,620
+Andrò avanti e ti mostrerò come farlo.
+
+138
+00:10:36,820 --> 00:10:38,730
+Cancelleremo questa seconda cella e mostreremo un paio di esempi.
+
+139
+00:10:38,770 --> 00:10:44,230
+Diciamo che volevamo afferrare dall'angolo in alto a destra.
+
+140
+00:10:44,400 --> 00:10:47,640
+Significato Voglio dire 10 15 e 25 30 quindi questo angolo in
+
+141
+00:10:47,760 --> 00:10:54,160
+alto a destra ecco quello che voglio afferrare quando posso andare avanti e fare è usare la notazione di sezione per fare questo.
+
+142
+00:10:54,150 --> 00:10:59,860
+Quindi posso dire di prendere tutto per chiamare
+
+143
+00:11:00,040 --> 00:11:12,390
+una riga e poi afferrare dalla colonna 1 in poi e restituisce 10 15 25 30.
+
+144
+00:11:12,390 --> 00:11:14,890
+Lasciami entrare e rompere questo ancora una volta.
+
+145
+00:11:14,880 --> 00:11:16,920
+Per quanto riguarda le file Quello che stiamo dicendo è prendere tutto ma non includere le righe 0 e 1 come i due punti.
+
+146
+00:11:17,130 --> 00:11:24,880
+Ma poi non includere due.
+
+147
+00:11:25,140 --> 00:11:26,520
+Sto dicendo di tagliarlo
+
+148
+00:11:26,560 --> 00:11:33,790
+anch'io e andrò avanti e dimostrerò che si tratta di un singolo comando, quindi dico che Colon's restituisce queste due righe riga
+
+149
+00:11:33,870 --> 00:11:43,300
+0 e riga 1, aggiungendo in aggiunta che sto dicendo fino a le colonne vanno a prendere tutto dalla Colonna 1 fino alla fine, il che significa fondamentalmente
+
+150
+00:11:43,300 --> 00:11:49,590
+semplicemente trascinare tutta questa colonna 0 e che restituisce queste due piccole sottosezioni 10 15 e poi 25 30.
+
+151
+00:11:49,840 --> 00:11:59,520
+Tutto ok.
+
+152
+00:11:59,520 --> 00:12:00,730
+le sottosezioni del Saray.
+
+153
+00:12:00,730 --> 00:12:08,280
+Quello che ti consiglio di fare ora è quello di prendere in considerazione le sottosezioni ad esempio 20 25 30 e 35 40 45
+
+154
+00:12:08,290 --> 00:12:15,700
+e vedere se puoi usare la notazione delle sezioni insieme a questa singola parentesi con la notazione dell'indicizzazione delle virgole con pi per prendere
+
+155
+00:12:15,970 --> 00:12:18,790
+E ti incoraggio anche a vedere se riesci
+
+156
+00:12:18,970 --> 00:12:26,920
+a creare una sottosezione più grande e più grande, ma spero di avere abbastanza pratica con quella se vuoi altri esempi.
+
+157
+00:12:26,910 --> 00:12:29,350
+Puoi sempre visitare il quaderno per questa
+
+158
+00:12:29,350 --> 00:12:34,920
+lezione che ha qualche altro esempio di affettatura di array 2-D per tutto il corso,
+
+159
+00:12:36,220 --> 00:12:41,110
+non faremo troppo di questo tipo di affettamento indice così che ti confonda.
+
+160
+00:12:41,110 --> 00:12:41,680
+il corso.
+
+161
+00:12:41,670 --> 00:12:45,820
+Non devi preoccupartene troppo perché in realtà non lo farà davvero così spesso durante
+
+162
+00:12:45,820 --> 00:12:46,730
+Be ', in genere io afferro semplici elementi singoli o intere righe o colonne.
+
+163
+00:12:47,010 --> 00:12:51,700
+Di solito non prendono sottosezioni di sottosezioni come abbiamo fatto qui.
+
+164
+00:12:51,760 --> 00:12:56,430
+Tutto ok.
+
+165
+00:12:56,440 --> 00:12:57,020
+Andiamo avanti
+
+166
+00:12:57,280 --> 00:13:02,290
+e passiamo al metodo più importante di selezione che userete molto più spesso in questo corso che è la selezione condizionale.
+
+167
+00:13:02,290 --> 00:13:05,750
+Ho intenzione di andare avanti e creare
+
+168
+00:13:05,810 --> 00:13:15,240
+un nuovo array solo un array di say say e Pido organizzare una virgola 11 e controllare questo array.
+
+169
+00:13:15,280 --> 00:13:18,180
+OK.
+
+170
+00:13:18,850 --> 00:13:19,350
+Quindi per questo array ho uno due tre quattro cinque sei sette otto nove 10.
+
+171
+00:13:19,360 --> 00:13:23,300
+Quello che posso fare è che posso prendere questo
+
+172
+00:13:23,740 --> 00:13:30,580
+array per combinarlo con gli operatori di confronto per ottenere effettivamente un array booleano completo.
+
+173
+00:13:30,630 --> 00:13:32,240
+E ciò che intendo è
+
+174
+00:13:32,340 --> 00:13:40,450
+che se io paragono questo a una singola cifra, per esempio a sono più grandi di 5, otterrò un array di valori booleani.
+
+175
+00:13:40,450 --> 00:13:42,730
+Si noti che D tipo B O L.
+
+176
+00:13:42,730 --> 00:13:45,010
+Quindi questi sono valori veri o falsi.
+
+177
+00:13:45,250 --> 00:13:47,110
+E mi dà false ovunque quel confronto sia falso e vero o che il confronto fosse vero.
+
+178
+00:13:47,250 --> 00:13:52,990
+E poi posso andare avanti e salvare questo come forse sottolineerò array.
+
+179
+00:13:53,160 --> 00:13:59,650
+Quindi, se chiamo il carattere di sottolineatura di bool adesso, torno a questo array booleano.
+
+180
+00:13:59,640 --> 00:14:06,270
+Ora puoi usarlo per fare effettivamente la selezione condizionale.
+
+181
+00:14:06,280 --> 00:14:09,850
+Significa che posso passarlo in due parentesi e otterrò solo i
+
+182
+00:14:09,850 --> 00:14:12,440
+risultati in cui questo array booleano è vero.
+
+183
+00:14:15,250 --> 00:14:19,990
+Andiamo a rompere il problema ancora una volta ottenendo la matrice e utilizzando un operatore
+
+184
+00:14:19,990 --> 00:14:26,440
+di confronto su di esso in realtà restituirà un array booleano che significa una matrice di tutti i valori booleani.
+
+185
+00:14:26,430 --> 00:14:31,020
+Quindi posso usare quell'array booleano per indicizzare effettivamente o
+
+186
+00:14:31,170 --> 00:14:38,200
+condizionare in modo condizionale gli elementi da quell'array originale dove questo è vero.
+
+187
+00:14:38,200 --> 00:14:40,220
+Quindi restituisce solo le istanze
+
+188
+00:14:40,230 --> 00:14:46,180
+in cui quell'array booleano era true e più comunemente lo divide dividendolo in due passaggi.
+
+189
+00:14:46,170 --> 00:14:47,450
+Lo farebbe tutto in un solo passaggio.
+
+190
+00:14:47,500 --> 00:14:49,480
+Si direbbe array e tra parentesi invece
+
+191
+00:14:49,480 --> 00:14:54,490
+dell'array che si passerà nell'istruzione condizionale come r r maggiore di 5 e che restituirà la stessa risposta.
+
+192
+00:14:54,950 --> 00:14:59,640
+E questo è il tipo di notazione della sintassi che useremo sempre per quanto riguarda la selezione condizionale.
+
+193
+00:14:59,710 --> 00:15:04,900
+Quindi per esempio diciamo che volevamo sapere tutti gli elementi dell'array che sono meno di 3.
+
+194
+00:15:06,310 --> 00:15:12,470
+Quello che vorrei fare è dire "parentesi" e poi dire array meno di tre
+
+195
+00:15:12,520 --> 00:15:20,380
+e questo restituisce tutti gli elementi in cui ciò è vero e questo è il tipo di cosa
+
+196
+00:15:20,380 --> 00:15:25,620
+che useremo molto in questo corso, in particolare una mossa su panda.
+
+197
+00:15:25,970 --> 00:15:28,000
+Questo è il tipo di notazione a cui dovresti abituarti.
+
+198
+00:15:28,030 --> 00:15:30,440
+So che all'inizio è un po 'strano vedere
+
+199
+00:15:30,460 --> 00:15:37,110
+il nome della variabile all'interno di se stesso, ma spero che dividerlo in questi due passaggi chiarisca cosa sta realmente accadendo.
+
+200
+00:15:37,120 --> 00:15:40,550
+tornando dove mai è vero all'indice dell'array originale.
+
+201
+00:15:40,570 --> 00:15:45,510
+Stai solo passando in una serie di valori booleani e poi stai
+
+202
+00:15:45,520 --> 00:15:48,410
+Va bene, è tutto per questa lezione.
+
+203
+00:15:48,900 --> 00:15:50,760
+Quello che consiglierei di
+
+204
+00:15:50,770 --> 00:15:58,390
+fare per quanto riguarda un esercizio per te è quello di creare un nuovo per l'array dicendo N. P. punti arr. Bene, vai avanti e dì 50 e poi rimodella per essere un 5 per 10.
+
+205
+00:15:58,420 --> 00:16:01,860
+No, non si tratta solo di chiamare un metodo con un altro metodo.
+
+206
+00:16:02,080 --> 00:16:08,650
+Quindi questo è tutto un array e poi hai questo bel array di cinque per 10.
+
+207
+00:16:08,640 --> 00:16:10,990
+Quindi da 0 a 40 e da 0 a 9.
+
+208
+00:16:10,990 --> 00:16:17,530
+Consiglierei per te solo pratica per te stesso.
+
+209
+00:16:17,560 --> 00:16:20,340
+Cerca di afferrare i pezzi e poi guarda se puoi
+
+210
+00:16:20,430 --> 00:16:23,500
+usare la notazione delle parentesi per afferrare i pezzi che hai pensato.
+
+211
+00:16:23,500 --> 00:16:30,370
+Quindi per esempio forse vuoi prendere il tuo 13 14 e 23 24.
+
+212
+00:16:30,370 --> 00:16:31,380
+Usciamo e mostriamo come lo faresti.
+
+213
+00:16:31,380 --> 00:16:36,210
+Per prima cosa voglio suddividerlo in due righe e colonne.
+
+214
+00:16:36,390 --> 00:16:38,820
+Quindi 13:14 che inizia alla riga 0 1 e poi 2.
+
+215
+00:16:38,980 --> 00:16:41,880
+Significato Voglio prendere le righe da 1 a 2.
+
+216
+00:16:41,920 --> 00:16:49,730
+dirne uno e ricordare con questa sorta di notazione fetta e andare uno più di quanto effettivamente necessario.
+
+217
+00:16:50,020 --> 00:16:52,830
+Ho intenzione di andare avanti e
+
+218
+00:16:53,250 --> 00:16:59,680
+Quindi sto dicendo di prenderne uno per tutto il percorso e di non includere l'indice tre.
+
+219
+00:16:59,670 --> 00:17:00,770
+Quindi dovrebbero essere queste due righe.
+
+220
+00:17:01,120 --> 00:17:05,220
+Entriamo e confermiamo che da queste parti il ​​tuo punteggio è l'afferrare quelle file.
+
+221
+00:17:05,290 --> 00:17:07,310
+Una chiamata e tre e questo funziona fondamentalmente come la normale notazione elenco Python.
+
+222
+00:17:07,470 --> 00:17:13,040
+Quindi qui abbiamo l'indice uno in avanti fino a ma non includendo tre.
+
+223
+00:17:13,140 --> 00:17:18,450
+e poi voglio quattro non includendo cinque saga ma alle cinque
+
+224
+00:17:18,450 --> 00:17:23,520
+là che restituisce ciò che stavamo cercando 13 14 23 24.
+
+225
+00:17:23,560 --> 00:17:34,170
+E poi per le colonne e dico che voglio 13 14 e 23 24 che si verificano nella colonna indice tre gruppi
+
+226
+00:17:34,170 --> 00:17:42,060
+Vorrei andare avanti a incoraggiarti a esercitarti impostando il sondaggio nel tuo quaderno di Giove e poi afferrando semplicemente i pezzi
+
+227
+00:17:42,070 --> 00:17:44,310
+di questa matrice come meglio credi.
+
+228
+00:17:44,320 --> 00:17:50,600
+Tutto ok.
+
+229
+00:17:50,880 --> 00:17:55,050
+C'è molto più aiuto per l'indicizzazione nel notebook.
+
+230
+00:17:55,060 --> 00:17:55,610
+Non preoccuparti molto
+
+231
+00:17:55,720 --> 00:17:58,250
+se non ti senti a tuo agio al 100% otterrai più pratiche nell'esercizio finale del PI.
+
+232
+00:17:58,300 --> 00:18:03,100
+Ma questo è solo per farti sapere di cosa è capace una torta.
+
+233
+00:18:03,100 --> 00:18:05,320
+Non faremo questo tipo di notazione di taglio che spesso nel corso si usa questa notazione chiamata.
+
+234
+00:18:05,560 --> 00:18:09,170
+Useremo la selezione condizionale usando gli operatori persona.
+
+235
+00:18:09,180 --> 00:18:14,450
+Molto più.
+
+236
+00:18:14,580 --> 00:18:17,540
+Va bene, grazie a tutti e ci vediamo alla prossima lezione
+
+237
+00:18:17,620 --> 00:18:19,060
+&nbsp;
+
+238
+00:18:19,060 --> 00:18:21,820
+&nbsp;

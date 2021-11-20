@@ -1,0 +1,679 @@
+1
+00:00:05,400 --> 00:00:10,170
+Herkese merhaba ve operasyona hoş geldiniz dersini veriyoruz, pandaların en
+
+2
+00:00:10,170 --> 00:00:15,090
+önemli operasyonlarını gözden geçireceğiz ve henüz bitirmemiş bazı yararlı operasyonları
+
+3
+00:00:15,090 --> 00:00:15,930
+öğreneceğiz.
+
+4
+00:00:16,290 --> 00:00:19,850
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+5
+00:00:19,860 --> 00:00:20,160
+Tamam.
+
+6
+00:00:20,160 --> 00:00:22,020
+İşte Jüpiter defterindeyim.
+
+7
+00:00:22,020 --> 00:00:26,520
+Devam ettim ve sadece operasyonun ilk hücresini kopyaladım, bu veri çerçevesini oluşturmak
+
+8
+00:00:26,850 --> 00:00:28,830
+için bu dersle birlikte gelen kitap.
+
+9
+00:00:28,830 --> 00:00:30,060
+Sadece üç sütun var.
+
+10
+00:00:30,060 --> 00:00:37,940
+Çağrı 3'e 1 çağrı ve yalnızca 0 1 2 3 numaralı bir dizine sahiptir ve 1 arar 4 basamağa ve
+
+11
+00:00:37,940 --> 00:00:38,520
+2 çağırdı.
+
+12
+00:00:38,700 --> 00:00:40,550
+Burada dört sayı var.
+
+13
+00:00:40,680 --> 00:00:46,460
+Ancak, 4 4 4'ün tekrarlandığına dikkat edin ve ardından 3'ü arayın, yalnızca dört dizge grubumuz vardır.
+
+14
+00:00:46,470 --> 00:00:49,780
+Bir veri çerçevesinde benzersiz değerler bulma hakkında konuşalım.
+
+15
+00:00:49,800 --> 00:00:56,460
+Veri çerçevesinde benzersiz değerler bulma ile ilgili üç temel yararlı yöntem var.
+
+16
+00:00:56,460 --> 00:01:00,570
+İkinci sütundaki benzersiz değerleri bulmak istediğinizi düşünün.
+
+17
+00:01:00,690 --> 00:01:07,590
+Bunun için kullanabileceğimiz yöntem sadece benzersiz bir yöntemdir ve bu, benzersiz değerler dizisi
+
+18
+00:01:07,590 --> 00:01:13,110
+istemek yerine, sütuntaki iki benzersiz değerin daha yüksek bir oranını döndürür.
+
+19
+00:01:13,110 --> 00:01:16,960
+Diyelim ki aslında yalnızca değerlerin sayısını isteyeceksiniz.
+
+20
+00:01:16,980 --> 00:01:18,600
+Bunun için iki yöntem var.
+
+21
+00:01:18,630 --> 00:01:24,930
+Dönüş verilen dizinin uzunluğunu ve sütun 2'deki 3 veya 3 benzersiz değere karşılık gelen
+
+22
+00:01:24,930 --> 00:01:26,210
+yanıtı kontrol edebilirsiniz.
+
+23
+00:01:26,580 --> 00:01:31,740
+Ancak Halo'nun aslında bunun için yerleşik bir yöntemi var ve bu sadece ve benzersiz.
+
+24
+00:01:31,770 --> 00:01:34,670
+Ve eğer hücrenin koşarsam aynı cevabı alırım.
+
+25
+00:01:34,740 --> 00:01:35,190
+Tamam.
+
+26
+00:01:35,280 --> 00:01:36,600
+Bu yüzden benzersiz var.
+
+27
+00:01:37,110 --> 00:01:40,750
+Gerçekten bir dizi benzersiz değer döndürmek ve benzersiz olmak için.
+
+28
+00:01:41,010 --> 00:01:46,890
+Benzersiz değerlerin sayısını istersem, size göstermek istediğiniz daha az yararlı fonksiyon değer sayar.
+
+29
+00:01:46,950 --> 00:01:52,470
+Ve bu temel olarak, benzersiz değerlerin bir tablosunu isterseniz ve kaç kez
+
+30
+00:01:52,470 --> 00:01:57,300
+gösterdiklerinizi, yalnızca değer alt çizgi sayılarını bir yöntem olarak kullanabilirsiniz demektir.
+
+31
+00:01:57,420 --> 00:02:00,440
+Çalıştırın ve bu döner.
+
+32
+00:02:00,660 --> 00:02:03,980
+Bu sütunda kaç kez benzersiz değer oluştu.
+
+33
+00:02:04,010 --> 00:02:09,810
+Bu durumda 4 4 4 kez iki kez, diğeri ise birer kez gerçekleşti.
+
+34
+00:02:09,810 --> 00:02:14,490
+Bunlar üç yararlı yöntemdir ve egzersizlerde kendilerini sıklıkla kullanıyor bulacaksınız.
+
+35
+00:02:15,210 --> 00:02:18,390
+Devam edin ve veri seçme hakkında konuşalım.
+
+36
+00:02:18,480 --> 00:02:24,300
+Zaten koşullu seçimi tamamladık ancak bunun ne kadar önemli olduğunu ve bir araç olarak ne
+
+37
+00:02:24,300 --> 00:02:26,420
+kadar güçlü olduğunu yeniden vurgulamak istiyorum.
+
+38
+00:02:26,610 --> 00:02:33,810
+DMF veri çerçevemiz var ve koşullu seçimi, T'yi geri döndürmek gibi koşullu bir
+
+39
+00:02:33,810 --> 00:02:41,160
+seçim bildiriminde geçirerek kullanabilirsiniz. F. sütun 1, 2'den büyük olduğunda.
+
+40
+00:02:41,250 --> 00:02:46,410
+Ve bu sütun 1'in 2'den büyük olduğu veri karesinin tüm satırlarını döndürür.
+
+41
+00:02:46,500 --> 00:02:53,920
+İçindeki bu komutun esasen yalnızca Yanlış Doğru Doğru bir boolean dizisi olduğunu unutmayın.
+
+42
+00:02:54,000 --> 00:03:00,630
+Şimdi, koşulları birleştirmek istiyorsanız, bu koşulların parantez içine alınmasını ve sonra bir ampersan veya
+
+43
+00:03:02,070 --> 00:03:05,090
+bir boru operatörü kullanılmasını hatırlatmak isteriz.
+
+44
+00:03:05,220 --> 00:03:07,140
+Penny istersen ve ya da veya.
+
+45
+00:03:07,410 --> 00:03:15,090
+Ve daha sonra başka koşullarda söyleyebileceğin gibi bir dize 4 4 ​​4 ile bir kaliteye sahip olan
+
+46
+00:03:15,090 --> 00:03:21,600
+ve sadece o son satırı 3 geri getiren ve orada olduğu gibi çağırdığı yere gönderilir.
+
+47
+00:03:21,900 --> 00:03:23,000
+TAMAM.
+
+48
+00:03:23,000 --> 00:03:26,640
+Bu nedenle, koşullu seçimi kullanarak verileri nasıl seçeceğinizin hızlı bir hatırlatıcısıdır.
+
+49
+00:03:26,910 --> 00:03:33,030
+Şimdi uygulamalı yöntem hakkında, panderers kullanırken takım kemerinizdeki en güçlü
+
+50
+00:03:33,120 --> 00:03:35,180
+araçlardan biri olacaklarını konuşalım.
+
+51
+00:03:35,400 --> 00:03:38,080
+O zaman dışarı çıkıp sana nasıl çalıştığını gösterelim.
+
+52
+00:03:38,190 --> 00:03:52,640
+Magin, X değerini alan ve ardından X times 2 diyelim dönen bir DPF kere 2 fonksiyonuna sahibiz.
+
+53
+00:03:52,650 --> 00:03:54,920
+Pekala, çok basit bir işlevi.
+
+54
+00:03:55,020 --> 00:04:01,740
+Artık, örneğin bir sütun yakalayabileceğinizi ve bunun toplamı ve sütunun toplamını
+
+55
+00:04:01,890 --> 00:04:05,660
+döndüren yerleşik bir işlevi çağırdığını biliyorsunuzdur.
+
+56
+00:04:05,700 --> 00:04:10,270
+Ancak kendi özel işlevini zamanları çok iyi uygulamak istersen ne olur.
+
+57
+00:04:10,320 --> 00:04:11,840
+Bunu yapabilme yeteneği var.
+
+58
+00:04:11,880 --> 00:04:18,300
+Sadece sütun adını söyleyip uygulayın ve sonra bu davayı uygulamak istediğiniz her
+
+59
+00:04:18,300 --> 00:04:25,830
+hangi bir işleve geçerseniz, ileriye gidip zamanları uygulayacağız ve bu işlev o sütundaki her
+
+60
+00:04:25,830 --> 00:04:29,990
+bir öğeye yayınlanacaktır 2 4 6 8.
+
+61
+00:04:30,000 --> 00:04:33,040
+Uzunluk gibi yerleşik işlevleri de uygulayabilirsiniz.
+
+62
+00:04:33,120 --> 00:04:37,820
+Örneğin, üç sütuna bakarsak bir sürü dizeyiz var.
+
+63
+00:04:37,860 --> 00:04:41,370
+Diyelim ki her dizenin uzunluğunda bir sütun olmasını istedik.
+
+64
+00:04:41,370 --> 00:04:47,520
+ve bu durumda tüm bu dizeler için 3 olan akımın uzunluğunu döndürür.
+
+65
+00:04:47,520 --> 00:04:50,880
+O halde sadece bizzat Elyon'a başvurduğumuzu söyleyebiliriz
+
+66
+00:04:50,880 --> 00:04:54,530
+Arazi ifadeleriyle birleştirdiğinizde, özellikle güçlü olacak.
+
+67
+00:04:54,570 --> 00:04:58,030
+Bu şekilde tüm bir fonksiyonu tanımlamak için bütün zamanınızı almanız gerekmez.
+
+68
+00:04:58,050 --> 00:05:02,580
+Sadece bir kez uygulayacaksanız, örneğin devam edin ve 2 zamanın dışında bir
+
+69
+00:05:02,580 --> 00:05:03,700
+lamba ifadesi yapalım.
+
+70
+00:05:03,870 --> 00:05:12,960
+Ben dışarı çıkıp Lamda X kolonunu söyleyeceğim ve sonra sadece x kez 2 onu aramak için
+
+71
+00:05:12,990 --> 00:05:13,920
+bunu uygulayacağım.
+
+72
+00:05:14,370 --> 00:05:16,160
+Devam edin ve bunun nasıl çalıştığını görelim.
+
+73
+00:05:16,820 --> 00:05:17,600
+İşte buyur.
+
+74
+00:05:17,680 --> 00:05:23,050
+Bu sütunun her bir değerini iki ile çarpabildik ve bunun için tüm fonksiyonu
+
+75
+00:05:23,040 --> 00:05:25,220
+yazmak zorunda kalmadan bunu yapabildik.
+
+76
+00:05:25,240 --> 00:05:29,340
+Bunu sadece bir kuzu olarak ifade ettik ve bu, pandalarla daha da
+
+77
+00:05:29,340 --> 00:05:31,830
+rahat hale geldikçe her zaman kullanacağın şey.
+
+78
+00:05:31,830 --> 00:05:36,150
+Muhtemelen bu pantolonun en güçlü özelliklerinden biri, kendi özel
+
+79
+00:05:36,150 --> 00:05:38,280
+lambda ifadelerinizi veya işlevlerinizi uygulamanızdır.
+
+80
+00:05:38,280 --> 00:05:42,680
+Tamam, tekrar Combs'u kaldırma hakkında konuşalım.
+
+81
+00:05:42,690 --> 00:05:46,110
+Eğer elimizde bulunursa, kaldıralım diyelim.
+
+82
+00:05:46,120 --> 00:05:47,580
+Birinci sütun.
+
+83
+00:05:47,580 --> 00:05:55,360
+Sadece çizmek istediğimiz kolonu ZF drop passen söyleyebiliriz 1.
+
+84
+00:05:55,380 --> 00:06:00,250
+Ve şunu unutmayın ki, sütun üzerinde olduğundan, erişim belirtmek zorundayız 1'e eşittir.
+
+85
+00:06:00,570 --> 00:06:04,070
+Ve bunun yerinde olmasını istersek, bu sütun düşer.
+
+86
+00:06:04,200 --> 00:06:09,580
+Yerinde eşit olarak belirtmeliyiz.
+
+87
+00:06:09,720 --> 00:06:11,800
+Hadi devam edelim ve kaçmayın.
+
+88
+00:06:11,810 --> 00:06:17,790
+Dolayısıyla, bir veri çerçevesinin üstünde sütun ve dizin isimleri almak istiyorsanız, orijinal veri çerçevemizi koruyoruz.
+
+89
+00:06:18,090 --> 00:06:21,070
+Bunlar aslında sadece veri çerçevesinin öznitelikleri.
+
+90
+00:06:21,370 --> 00:06:29,050
+DF sütunlarının, bu tür bir indeks nesnesini esasen yalnızca bir sütun adlarının bir listesi döndüreceğini söyleyebileceğiniz
+
+91
+00:06:29,040 --> 00:06:29,800
+anlamına gelir.
+
+92
+00:06:29,810 --> 00:06:34,930
+Bu, bir sütunu dizine eklemeye çalışırken ve boşluk tuhaf olduğunda veya dizenin ne
+
+93
+00:06:34,920 --> 00:06:37,500
+olduğunu tam olarak anlayamadığınızda özellikle yararlı olacaktır.
+
+94
+00:06:37,500 --> 00:06:40,940
+Yalnızca DFA sütunlarını veya veri çerçeve adınız ne olursa olsun arayabilirsiniz.
+
+95
+00:06:41,040 --> 00:06:46,170
+Ve bu sütun adlarının listesini döndürürüm ve aslında bir dizin için aynı şeyi yapabilirsiniz.
+
+96
+00:06:46,360 --> 00:06:49,540
+Dizin hakkında size bilgi verecek DFA dizini diyebilirsiniz.
+
+97
+00:06:49,770 --> 00:06:55,830
+Bu olay, bir aralık endeksi olduğundan, aslında yalnızca başlangıç ​​durağını ve dizinin adım
+
+98
+00:06:55,830 --> 00:06:57,360
+boyutunu rapor eder.
+
+99
+00:06:57,370 --> 00:07:01,800
+Tamam, bir veri çerçevesinin sıralanması ve sıralanması hakkında konuşalım.
+
+100
+00:07:02,000 --> 00:07:07,880
+Burada derin nefes alıyoruz ve sütun 2'ye göre sıralamak istediğinizi düşünüyoruz.
+
+101
+00:07:08,130 --> 00:07:13,890
+Esasen 4 4 4 ve daha sonra 4 4 tekrar istiyoruz, çünkü 5 5 5 ve 6 6 görüyoruz.
+
+102
+00:07:14,040 --> 00:07:17,330
+Bunu yapmak için sıralama değerleri kullanabilirsiniz.
+
+103
+00:07:18,150 --> 00:07:22,750
+DMF saur alt çizgi değerlerini çağırdın.
+
+104
+00:07:22,920 --> 00:07:28,200
+de güle güle diyebiliriz ve siz bunu satırlardan veya sütunlardan sipariş edebilirsiniz.
+
+105
+00:07:28,200 --> 00:07:32,280
+Ardından, argüman olarak şimdiye kadar vardiya sekmesine baktık deriz, biz
+
+106
+00:07:32,280 --> 00:07:36,910
+Fakat esas olarak, sıralamak istediğiniz sütunu bir argüman olarak yalnızca Pessin olarak veriyorsunuz.
+
+107
+00:07:36,960 --> 00:07:43,580
+Bu yüzden bunu sütun 2'ye göre sıralamak istiyorum ve böyle bir vardiya girişi olarak sadece sütun diyebilirsiniz.
+
+108
+00:07:43,600 --> 00:07:50,280
+Ve şimdi, dizinin satıra nasıl bağlı olduğunu bilmek için sütun başı çerçeve durumuna sahibim.
+
+109
+00:07:50,310 --> 00:07:52,520
+Dolayısıyla bu bilgileri orada kaybetmezsiniz.
+
+110
+00:07:52,920 --> 00:07:59,220
+Ve aynı şey sütun iki aynı şey tarafından söyleniyor aynı şey çünkü ilk argüman
+
+111
+00:07:59,230 --> 00:08:00,350
+olması bekliyor.
+
+112
+00:08:01,020 --> 00:08:01,440
+Tamam.
+
+113
+00:08:01,830 --> 00:08:04,370
+Birkaç daha kullanışlı operasyon hakkında konuşalım.
+
+114
+00:08:04,530 --> 00:08:12,410
+Veri çerçevenizde hiçbir değeri bulamamanız için gerçekten kullanışlı bir yöntem, DFT'nin null olduğunu ve
+
+115
+00:08:12,410 --> 00:08:17,940
+değerin boş olup olmadığını gösteren boole'ların veri çerçevesini döndürmesidir.
+
+116
+00:08:17,940 --> 00:08:23,340
+Bu durumda, tüm yanlışları bir boolean elde ederiz çünkü veri çerçevemizde boşluklar biliyoruz.
+
+117
+00:08:23,350 --> 00:08:23,730
+Tamam.
+
+118
+00:08:23,740 --> 00:08:29,690
+Şimdi son olarak, pivot tabloda adı geçen pantolsuz son bir işlev veya yöntem hakkında konuşalım.
+
+119
+00:08:29,940 --> 00:08:33,890
+Ve bu metodoloji, Advanced Excel kullanıcıları için gerçekten bilindik olacaktır.
+
+120
+00:08:34,000 --> 00:08:40,340
+Ben devam edip yeni bir veri çerçevesi oluşturmak için not defterinden bazı kodu kopyalayıp yapıştıracağım.
+
+121
+00:08:41,080 --> 00:08:44,210
+Dışarı çıkıp çerçevenin durumunu kontrol ediyoruz, buna benzer bir şey var.
+
+122
+00:08:44,250 --> 00:08:46,820
+Bir b c ve d sütunlarımız var.
+
+123
+00:08:47,460 --> 00:08:54,010
+Burada hem A sütun B sütununda hem de C sütunda bir sütun Foo'nun ve çubukların B'de
+
+124
+00:08:54,000 --> 00:08:57,850
+bir iki tane olduğu yinelenen değerleri bulunduğuna dikkat edin.
+
+125
+00:08:58,050 --> 00:09:04,950
+C, X ve akıllıca ve sonra D, DFT pivot tablo kullanabilirsiniz bazı tamsayı değerleri vardır.
+
+126
+00:09:04,950 --> 00:09:09,600
+Bir pivot tablo oluşturun ve Pivot Tablolar'a aşina değilseniz bunun hakkında
+
+127
+00:09:09,960 --> 00:09:15,120
+çok fazla endişelenmemeliydim, ancak Pivot Tablolar'ı tanıyan bir Excel kullanıcısıysanız, bu işlevselliği
+
+128
+00:09:15,120 --> 00:09:15,760
+faydalı bulacaksınız.
+
+129
+00:09:16,000 --> 00:09:21,810
+Temel olarak, kullanıcıların excel değil için yapacağımız yer bu tablodan veya veri çerçevesinden
+
+130
+00:09:22,170 --> 00:09:23,940
+çoklu bir dizin oluşturmaktır.
+
+131
+00:09:24,420 --> 00:09:33,600
+Bunu yapmak için yöntem alt çizgi tablosu ve pivot alt çizgi tablosu üç ana argümanlar
+
+132
+00:09:34,000 --> 00:09:37,450
+değerlerini dizin ve sütun alır alır.
+
+133
+00:09:37,500 --> 00:09:43,050
+Bu durumda devam edelim ve masamızda istediğimiz değerlerin bu değerler olduğunu belirtelim.
+
+134
+00:09:43,060 --> 00:09:44,250
+Aslında istediğimiz şey bu.
+
+135
+00:09:44,250 --> 00:09:47,270
+Veri çerçevesi veri noktaları oluşur.
+
+136
+00:09:47,280 --> 00:09:52,140
+Bu yüzden değerler D sütununa eşit olduğunu söyleyeceğim.
+
+137
+00:09:53,040 --> 00:09:59,950
+Ve sonra dizinimi A sütununa ve B sütununa eşit olacak şekilde ayarlayacağım ve bu temel olarak a
+
+138
+00:09:59,940 --> 00:10:03,200
+ve b'yi çok düzeyli bir dizin haline getirecektir.
+
+139
+00:10:03,210 --> 00:10:09,760
+Yolcu listesine gidiyorsun, o zaman birden fazla sütun endeksi ve B. var.
+
+140
+00:10:09,780 --> 00:10:14,950
+Ve son olarak, gerçek sütunlarımı C sütunuyla tanımlamak istiyorum.
+
+141
+00:10:15,070 --> 00:10:21,810
+Bu dava sadece şunu bir listede geçtiğimi görüyor ve söylemiş olduğum şeyi not edelim bakalım bu sütun
+
+142
+00:10:21,820 --> 00:10:22,320
+olacak.
+
+143
+00:10:22,330 --> 00:10:25,860
+Bu yüzden, X için bir sütun ve y için bir sütunla sonuçlanmalıyım.
+
+144
+00:10:25,870 --> 00:10:28,360
+Devam edin ve bunun nasıl çalıştığını görelim.
+
+145
+00:10:28,470 --> 00:10:34,390
+Buraya bir kez daha yapacağım, böylece orijinal veri çerçevesini
+
+146
+00:10:34,380 --> 00:10:36,930
+oluşturduğum pivot tablolarla karşılaştırabiliriz.
+
+147
+00:10:36,930 --> 00:10:38,970
+Pekâlâ, bu pivot tablo komutunu çalıştırdım.
+
+148
+00:10:39,180 --> 00:10:41,220
+Ve içeri girip ikisini karşılaştıralım.
+
+149
+00:10:41,400 --> 00:10:47,580
+Bu ve B sütunlarından yaratılan bir dizine benziyor, bu nedenle sözlüğe bir çubuk ve foo
+
+150
+00:10:47,590 --> 00:10:54,780
+mantıklı geliyor ve ardından bir ve iki tekrarlanıyor gerçek sütunları istiyorum, burada bu değerlerin yalnızca X ve
+
+151
+00:10:54,780 --> 00:10:58,410
+Y ve gerçek veri noktası değerleri var. D sütunları.
+
+152
+00:10:58,600 --> 00:11:03,820
+Hayır, burada bazı değerlerim yok çünkü belirli bir noktaya uyan değerler yoktu.
+
+153
+00:11:04,200 --> 00:11:11,130
+Anlamı, orijinal veri çerçevesine baktığımızda, x ile çubuğa giden hiçbir değer yoktur.
+
+154
+00:11:11,130 --> 00:11:16,130
+Dolayısıyla burada görünürseniz, X için barrer bulamazsınız. sadece bölüm 2 y bulacaksınız.
+
+155
+00:11:16,750 --> 00:11:19,550
+Ve benzer y yem için.
+
+156
+00:11:19,600 --> 00:11:25,850
+Neden sadece X için yemek yiyeceğine yiyecek yok ve bu yüzden burada hiçbir değeri doldurmamız gerekmiyor.
+
+157
+00:11:25,920 --> 00:11:26,500
+TAMAM.
+
+158
+00:11:26,560 --> 00:11:31,320
+Pivot Tablolar hakkında daha fazla sorunuz varsa veya Özet Tablolar'daki örnekler için biraz daha kaynak istiyorsanız,
+
+159
+00:11:31,330 --> 00:11:32,950
+Soru ve Cevap yazmaya çekinmeyin.
+
+160
+00:11:32,940 --> 00:11:34,870
+Bunları sıklıkla kursta kullanmayacağız.
+
+161
+00:11:34,870 --> 00:11:39,630
+Aslında, pivot tabloların nasıl kullanılacağı kadar, ısı haritaları ile çalıştığımız gerçekte sadece bir
+
+162
+00:11:39,630 --> 00:11:41,180
+tane egzersiz sorusu var.
+
+163
+00:11:41,250 --> 00:11:45,930
+Ancak şu an için Excel gibi bir şeyden zaten tanıdık pivot tablolar iseniz
+
+164
+00:11:46,000 --> 00:11:46,970
+kendinizle ilgilenmeniz yeterli.
+
+165
+00:11:47,110 --> 00:11:47,770
+TAMAM.
+
+166
+00:11:47,940 --> 00:11:50,100
+Umarım bu işlemlerden bazıları sizin için yararlıdır.
+
+167
+00:11:50,130 --> 00:11:55,340
+Panaçalarda kullanabileceğiniz kullanışlı işlevler ve yöntemlerden sadece birkaçı görürler.
+
+168
+00:11:55,470 --> 00:12:01,440
+ve pandalar işlemlerinin panderers klasörünün altındaki dizüstü bilgisayarı anlatabilir.
+
+169
+00:12:01,470 --> 00:12:02,510
+Devam edebilir
+
+170
+00:12:02,520 --> 00:12:04,580
+Herkese teşekkürler, bir sonraki konuşmada da göreceğim

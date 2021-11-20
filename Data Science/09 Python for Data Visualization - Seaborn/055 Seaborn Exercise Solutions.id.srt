@@ -1,0 +1,399 @@
+1
+00:00:05,340 --> 00:00:10,050
+Halo semuanya dan selamat datang di solusi latihan Seaborn tentang kuliah ini.
+
+2
+00:00:10,050 --> 00:00:12,990
+Kami akan membahas solusi untuk latihan di laut.
+
+3
+00:00:12,990 --> 00:00:16,320
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+4
+00:00:16,320 --> 00:00:22,170
+Baiklah di sini saya di notebook Jupiter kami memiliki data dan memuatnya dan kami akan pergi
+
+5
+00:00:22,170 --> 00:00:26,550
+ke depan dan melompat ke plot pertama yang ingin kita tiru.
+
+6
+00:00:26,550 --> 00:00:31,860
+Baiklah, lihat plot ini semoga Anda bisa tahu bahwa ini adalah plot distribusi dan
+
+7
+00:00:31,860 --> 00:00:37,380
+sebenarnya plot bersama karena Anda menunjukkan dua distribusi di atas satu sama lain dan kemudian
+
+8
+00:00:37,380 --> 00:00:42,690
+Anda bisa membaca ini dan melihat bahwa itu adil versus usia dari kumpulan data.
+
+9
+00:00:42,690 --> 00:00:45,210
+Mari kita lanjutkan dan tunjukkan bagaimana kita bisa menjalankan ini.
+
+10
+00:00:45,230 --> 00:00:47,430
+Kami akan menjalankan baris ini lagi.
+
+11
+00:00:47,430 --> 00:00:53,990
+Jadi saya benar-benar mengimpor semuanya dengan benar dan kemudian saya akan melanjutkan dan mengetikkan kode saya.
+
+12
+00:00:54,060 --> 00:01:00,270
+Jadi ini adalah plot bersama di mana Anda memiliki wajar dan
+
+13
+00:01:04,020 --> 00:01:14,910
+pada sumbu y Anda memiliki usia dan dataset kami hanya data Titanic dan yang akan mereplikasi plot itu untuk
+
+14
+00:01:14,910 --> 00:01:16,030
+Anda.
+
+15
+00:01:16,110 --> 00:01:18,430
+Sekali lagi itu hanya plot bersama.
+
+16
+00:01:18,720 --> 00:01:19,480
+Baiklah.
+
+17
+00:01:19,530 --> 00:01:22,490
+Selanjutnya adalah plot distribusi ini.
+
+18
+00:01:22,710 --> 00:01:29,460
+Dan ini adalah plot ini sehingga Anda bisa melihat Asinus plot ini.
+
+19
+00:01:30,630 --> 00:01:36,090
+Titanic dan kemudian lulus dan kolom yang kita inginkan dan jika kita lihat di sini di bagian bawah ini adalah
+
+20
+00:01:36,090 --> 00:01:36,880
+kolom Fair.
+
+21
+00:01:36,900 --> 00:01:39,270
+Demikianlah distribusi kolom Fair.
+
+22
+00:01:39,450 --> 00:01:44,910
+Biarkan saya pergi untuk menempatkan ini hanya baris ini dengan sendirinya sebagai plot baru.
+
+23
+00:01:45,160 --> 00:01:45,710
+Baiklah.
+
+24
+00:01:45,720 --> 00:01:50,430
+Jadi inilah yang Anda dapatkan ketika Anda melihat begitu plot ini sesuatu yang ingin Anda lakukan untuk
+
+25
+00:01:50,430 --> 00:01:52,740
+meniru plot ini adalah menghapus ini Cady.
+
+26
+00:01:52,750 --> 00:02:00,760
+Jadi saya ingin pergi dan mengatakan false cool yang mudah di sini dan sekarang kita semakin dekat.
+
+27
+00:02:00,810 --> 00:02:05,050
+Hal lain yang perlu diperhatikan di sini adalah warnanya merah.
+
+28
+00:02:05,270 --> 00:02:11,280
+Jadi Anda juga dapat menentukan warna sama dengan merah meskipun seperti yang saya sebutkan petunjuknya Anda tidak
+
+29
+00:02:11,280 --> 00:02:14,010
+perlu terlalu khawatir tentang warna yang sebenarnya.
+
+30
+00:02:14,280 --> 00:02:17,510
+Dan kemudian ada juga sedikit tikungan di sini di pekan raya.
+
+31
+00:02:17,670 --> 00:02:23,310
+Jadi setelah bereksperimen dengan beberapa nomor nampan Anda semoga dapat menemukan bahwa nampan sekitar 30
+
+32
+00:02:23,820 --> 00:02:24,820
+untuk plot.
+
+33
+00:02:24,990 --> 00:02:27,020
+Dan itulah kode sebenarnya untuk plot.
+
+34
+00:02:27,130 --> 00:02:28,920
+Plot distribusi.
+
+35
+00:02:28,980 --> 00:02:35,730
+Dalam kasus ini, plot Titanic fair ini sama dengan false dan kemudian beberapa informasi tambahan dibaca dalam nampan.
+
+36
+00:02:36,030 --> 00:02:39,830
+Jika Anda bisa mendapatkan merah atau argumen bin jangan khawatir tentang itu.
+
+37
+00:02:39,840 --> 00:02:45,090
+Satu-satunya hal yang saya benar-benar khawatir tentang Anda mengenali adalah bahwa ini adalah plot dengan
+
+38
+00:02:45,180 --> 00:02:47,400
+kesalahan Eagles pada kolom Fair.
+
+39
+00:02:47,400 --> 00:02:49,290
+OK pindah ke plot berikutnya.
+
+40
+00:02:49,290 --> 00:02:55,860
+Ini jelas merupakan plot kotak dan sepertinya kelasnya ada di sumbu x dan usianya ada di sumbu y.
+
+41
+00:02:56,190 --> 00:02:58,440
+Mari kita lanjutkan dan periksa.
+
+42
+00:02:58,880 --> 00:03:08,910
+Untuk melakukan ini, yang harus Anda katakan adalah sebagai plot kotak Sinistar seperti di kelas dan kemudian melewati
+
+43
+00:03:09,030 --> 00:03:15,320
+usia untuk y dan kemudian data sama dengan set data Titanic.
+
+44
+00:03:15,360 --> 00:03:16,670
+Kita bisa maju dan menjalankannya.
+
+45
+00:03:16,770 --> 00:03:21,750
+Dan satu hal lagi yang tidak masalah jika Anda tidak mendapatkannya atau tidak, tetapi skema warna yang sebenarnya
+
+46
+00:03:21,780 --> 00:03:22,900
+adalah skema warna pelangi.
+
+47
+00:03:22,920 --> 00:03:27,900
+Jadi kita juga bisa menentukan palet sama dengan Rainbow.
+
+48
+00:03:27,900 --> 00:03:31,830
+Dan lagi jangan khawatir jika kami bisa mendapatkan warna yang cocok. Saya hanya
+
+49
+00:03:31,830 --> 00:03:36,540
+ingin Anda mengenali bahwa itu adalah plot kotak dan kemudian bisa membaca X versus Y dan mengisinya.
+
+50
+00:03:36,810 --> 00:03:41,580
+Pindah ke yang berikutnya kedengarannya sedikit rumit karena ini adalah plot
+
+51
+00:03:41,580 --> 00:03:51,540
+kawanan di mana Anda harus lakukan adalah mengatakan begitu plot kawanan dan ini sebenarnya semuanya sama sejauh kelas versus usia sehingga Anda sebenarnya bisa
+
+52
+00:03:51,630 --> 00:03:53,780
+datang ke sini .
+
+53
+00:03:53,880 --> 00:04:01,030
+Salin semua ini dan salin semuanya termasuk palet dan miliki plot yang satu ini.
+
+54
+00:04:01,040 --> 00:04:04,970
+Ini adalah versi plot Suaram dari plot kotak yang baru saja kami tunjukkan.
+
+55
+00:04:05,100 --> 00:04:07,960
+Dan skema warna ini jika Anda penasaran dengan apa itu.
+
+56
+00:04:08,070 --> 00:04:14,310
+Ini sebenarnya skema pengaturan warna tetapi sekali lagi jangan khawatir jika kita tidak bisa mendapatkan warna yang tampak
+
+57
+00:04:14,310 --> 00:04:14,670
+benar.
+
+58
+00:04:14,680 --> 00:04:19,890
+Itu tidak terlalu penting apa yang saya inginkan untuk dapat memperbaikinya adalah xy dan sumber data
+
+59
+00:04:19,900 --> 00:04:21,080
+untuk plot swarm.
+
+60
+00:04:21,540 --> 00:04:25,290
+Berikutnya yang ingin kami periksa adalah plot bar ini.
+
+61
+00:04:25,290 --> 00:04:28,260
+Tetapi perhatikan baik-baik bahwa dikatakan penting di sini.
+
+62
+00:04:28,270 --> 00:04:36,070
+Jadi sebenarnya adalah sebuah counterplot dan Anda dapat membuat sebuah counterplot hanya dengan mengatakan S dan S counterplot melewati kolom yang ingin
+
+63
+00:04:36,120 --> 00:04:37,210
+Anda hitung.
+
+64
+00:04:37,230 --> 00:04:46,530
+Dalam hal ini kita melihat di sini melihat kolom seks di sumber data kami adalah kerangka data Titanic dan itu plot
+
+65
+00:04:46,530 --> 00:04:47,730
+di sana.
+
+66
+00:04:47,730 --> 00:04:52,830
+Skema warna adalah skema warna asli yang kami miliki plotnya di sini.
+
+67
+00:04:52,830 --> 00:04:54,170
+Kedengarannya agak rumit.
+
+68
+00:04:54,450 --> 00:05:02,640
+Perhatikan bahwa kita memiliki nilai antara negatif 1 dan setelah itu pergi dari pemetaan perang keren ini dan petunjuk lainnya di
+
+69
+00:05:02,640 --> 00:05:09,990
+sini adalah bahwa Anda dapat melihat di bagian paling atas judulnya titanic dot corrc jelas merupakan plot korelasi dan
+
+70
+00:05:09,990 --> 00:05:12,780
+kami ingin menggunakan peta heape di ini.
+
+71
+00:05:12,780 --> 00:05:15,730
+Jadi kita akan pergi ke depan dan melakukan ini.
+
+72
+00:05:15,870 --> 00:05:27,510
+Kita akan mengatakan peta panas Asinus dan pasand inti gelap Titanic dan kita juga bisa mengatakan peta
+
+73
+00:05:27,510 --> 00:05:31,050
+laut sama dengan panas dingin.
+
+74
+00:05:31,050 --> 00:05:34,580
+Dan ini akan mereplikasi plot itu di notebook solusi.
+
+75
+00:05:34,590 --> 00:05:38,980
+Saya juga menambahkan judul pada P. yang disebut ini L ..
+
+76
+00:05:39,000 --> 00:05:44,670
+Judul Titanic didapat.
+
+77
+00:05:44,670 --> 00:05:45,540
+Tutup tanda kurung.
+
+78
+00:05:45,540 --> 00:05:49,590
+Dan itu sebenarnya hanya untuk memberi Anda petunjuk ketika Anda melihat angka seperti
+
+79
+00:05:49,590 --> 00:05:51,270
+apa sebenarnya informasi itu.
+
+80
+00:05:51,270 --> 00:05:51,960
+Baiklah.
+
+81
+00:05:51,960 --> 00:05:56,210
+Mari kita lanjutkan dan beralih ke plot terakhir yang sedikit rumit karena yang menggunakan
+
+82
+00:05:56,210 --> 00:05:59,220
+sistem grid Fassett ini akan dilakukan dalam dua baris.
+
+83
+00:05:59,220 --> 00:06:01,520
+Pertama mari kita lihat apa yang sebenarnya kita lakukan.
+
+84
+00:06:01,680 --> 00:06:05,420
+Sepertinya kolomnya adalah seks sama dengan pria dan seks sama dengan wanita.
+
+85
+00:06:05,460 --> 00:06:15,210
+Jadi kami ingin membuat kisi-kisi Fassett yang dipisahkan oleh kolom organ seks dari data katakanlah sama dengan
+
+86
+00:06:15,450 --> 00:06:18,950
+Titanic dan panggilan sama dengan seks.
+
+87
+00:06:19,170 --> 00:06:24,840
+Dan kemudian saya akan pergi dan menetapkan yang sama dengan g seperti yang kita lakukan pada contoh sebelumnya
+
+88
+00:06:24,840 --> 00:06:27,780
+dan kemudian saya akan memetakan sepertinya ini adalah histogram.
+
+89
+00:06:27,960 --> 00:06:29,330
+Jadi ada berbagai cara untuk melakukan ini.
+
+90
+00:06:29,340 --> 00:06:34,590
+Tetapi cara termudah adalah dengan mengatakan kupas yang tertinggi dan kemudian argumen sebenarnya ingin
+
+91
+00:06:34,590 --> 00:06:35,960
+melakukan histogram seusianya.
+
+92
+00:06:36,300 --> 00:06:41,320
+Jadi Anda bisa melakukan apa yang bisa Anda lakukan adalah mendapatkan plot yang serupa.
+
+93
+00:06:41,430 --> 00:06:47,090
+Persis sama hanya plot semacam ini juga menunjukkan K atas.
+
+94
+00:06:47,600 --> 00:06:48,190
+BAIK.
+
+95
+00:06:48,540 --> 00:06:53,730
+Saya harap Anda menemukan ini menarik dan saya harap Anda menemukan benar-benar kekuatan seaborne untuk membuat visualisasi
+
+96
+00:06:53,730 --> 00:06:58,800
+yang indah dan hanya beberapa baris kode selama Anda memiliki kerangka data yang diatur dengan benar.
+
+97
+00:06:59,610 --> 00:07:00,360
+BAIK.
+
+98
+00:07:00,360 --> 00:07:04,530
+Silakan dan kirim pertanyaan apa pun yang Anda miliki ke forum Tanya Jawab dan periksa buku baru Juber
+
+99
+00:07:04,530 --> 00:07:06,270
+Jika Anda Ingin beberapa kode referensi lagi.
+
+100
+00:07:06,270 --> 00:07:08,180
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

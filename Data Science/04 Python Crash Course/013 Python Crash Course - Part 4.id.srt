@@ -1,0 +1,819 @@
+1
+00:00:05,220 --> 00:00:06,050
+Halo semuanya.
+
+2
+00:00:06,050 --> 00:00:12,060
+Selamat datang di bagian empat dari rangkaian ceramah kursus kilat Python dalam rangkaian ceramah ini kita akan
+
+3
+00:00:12,120 --> 00:00:18,180
+membahas ekspresi lambda fungsi peta dan filter serta hanya berbagai metode yang dapat Anda gunakan pada berbagai
+
+4
+00:00:18,180 --> 00:00:19,920
+tipe data di Python.
+
+5
+00:00:19,920 --> 00:00:23,280
+Ayo maju dan lompat kembali ke notebook Jupiter untuk memulai.
+
+6
+00:00:23,280 --> 00:00:23,550
+Baiklah.
+
+7
+00:00:23,550 --> 00:00:25,130
+Di sini saya di notebook Jupiter.
+
+8
+00:00:25,170 --> 00:00:30,870
+Terakhir kali kita berhenti membahas bagaimana Anda dapat membuat fungsi Anda sendiri di Python sekarang yang akan
+
+9
+00:00:30,870 --> 00:00:36,540
+kita lakukan adalah membahas fungsi peta dan filter dan kemudian bagaimana kita dapat menggunakan ekspresi lambda
+
+10
+00:00:36,540 --> 00:00:38,690
+alih-alih menulis fungsi penuh keluar.
+
+11
+00:00:38,730 --> 00:00:44,210
+Biarkan saya pergi ke depan dan cepat meninjau cara menulis fungsi Anda hanya menggunakan kata kunci D untuk kematian.
+
+12
+00:00:44,400 --> 00:00:51,300
+Nama fungsi dalam hal ini saya sebut fungsi ini kali untuk menerima beberapa variabel sebagai argumen.
+
+13
+00:00:51,300 --> 00:00:53,360
+Mereka.
+
+14
+00:00:53,360 --> 00:00:57,930
+Dan kemudian saya akan melanjutkan dan mengembalikan variabel yang dikalikan dua.
+
+15
+00:00:58,440 --> 00:01:03,390
+Yang berarti jika saya memanggil 2 kali pada nomor seperti 5, ia mengembalikan 10.
+
+16
+00:01:03,390 --> 00:01:07,760
+Sekarang mari kita lanjutkan dan membahas fungsi peta.
+
+17
+00:01:08,370 --> 00:01:12,160
+Saya akan membuat urutan yang disebut CQ dan itu akan menjadi daftar.
+
+18
+00:01:12,180 --> 00:01:14,970
+Satu dua tiga empat lima.
+
+19
+00:01:15,030 --> 00:01:23,400
+Sekarang katakanlah saya ingin benar-benar menerapkan fungsi ini kali ke setiap elemen dalam daftar ini dan kemudian
+
+20
+00:01:23,520 --> 00:01:25,070
+menampilkan daftar.
+
+21
+00:01:25,290 --> 00:01:31,380
+Yah saya bisa menggunakan for loop untuk melakukan itu dan kemudian menambahkan hasilnya ke daftar lain.
+
+22
+00:01:31,410 --> 00:01:37,960
+Namun peta adalah fungsi bawaan di Python yang memungkinkan Anda menyimpan langkah itu.
+
+23
+00:01:37,960 --> 00:01:39,390
+Apakah Anda terus maju dan mengetik matematika.
+
+24
+00:01:39,420 --> 00:01:44,280
+Anda dapat melakukan shift enter untuk benar-benar melihat string dokumentasi untuk peta.
+
+25
+00:01:44,340 --> 00:01:49,340
+Tetapi pada dasarnya itu akan membuat iterator yang menghitung fungsi menggunakan argumen dari
+
+26
+00:01:49,340 --> 00:01:50,250
+masing-masing iterable.
+
+27
+00:01:50,520 --> 00:01:54,890
+Biarkan saya pergi dan menjelaskan hanya dalam bahasa Inggris sederhana yang jelas apa artinya itu.
+
+28
+00:01:54,990 --> 00:02:02,170
+Anda akan mengatakan fungsi peta pasan misalnya kali 2.
+
+29
+00:02:02,340 --> 00:02:06,000
+Dan kemudian urutan Anda ingin memetakan fungsi itu.
+
+30
+00:02:06,150 --> 00:02:12,200
+Dan jika Anda menjalankannya mereka akan melaporkan kembali bahwa Anda memiliki peta di tempat khusus ini dalam memori.
+
+31
+00:02:12,210 --> 00:02:19,050
+Jika Anda benar-benar ingin menjalankan peta ini dan mendapatkan hasilnya kembali sebagai daftar, Anda memasukkan ini ke dalam
+
+32
+00:02:19,080 --> 00:02:21,590
+daftar dengan menggunakan fungsi daftar bawaan.
+
+33
+00:02:21,960 --> 00:02:28,890
+Dan kemudian ini akhirnya akan mengembalikan fungsi ini dipetakan ke setiap elemen dalam urutan itu dan
+
+34
+00:02:28,890 --> 00:02:30,490
+mengembalikannya sebagai daftar.
+
+35
+00:02:30,510 --> 00:02:34,130
+Dan sekarang kita dapat melihat bahwa kita memiliki setiap elemen dikalikan dua.
+
+36
+00:02:34,140 --> 00:02:39,760
+Jadi sekarang kita memiliki dua empat enam delapan sepuluh bukan satu dua tiga empat lima.
+
+37
+00:02:40,250 --> 00:02:41,220
+BAIK.
+
+38
+00:02:41,220 --> 00:02:48,150
+Jadi Anda mungkin bertanya-tanya apakah saya harus mendefinisikan sepenuhnya fungsi penuh seperti kali 2 atau apakah ada cara yang lebih
+
+39
+00:02:48,180 --> 00:02:49,610
+mudah untuk melakukannya.
+
+40
+00:02:49,620 --> 00:02:54,480
+Karena biasanya ketika Anda menggunakan sesuatu seperti peta Anda tidak akan benar-benar ingin menulis dan
+
+41
+00:02:54,480 --> 00:02:55,650
+mendefinisikan seluruh fungsi.
+
+42
+00:02:55,770 --> 00:03:01,980
+Ini mungkin hanya akan menjadi hal satu kali dan di situlah ekspresi tanah ikut bermain.
+
+43
+00:03:02,040 --> 00:03:09,590
+Saya akan menunjukkan kepada Anda bagaimana kita dapat menulis ulang fungsi ini kali menjadi ekspresi lambda dan
+
+44
+00:03:09,590 --> 00:03:11,930
+saya menjadi perlahan-lahan memecahnya.
+
+45
+00:03:12,360 --> 00:03:21,880
+Fungsi kali ini juga sebenarnya dapat ditulis pada satu baris kali ke cara titik dua kita mengembalikan r
+
+46
+00:03:21,890 --> 00:03:23,190
+kali 2.
+
+47
+00:03:23,250 --> 00:03:28,010
+Dan jika saya menjalankan dua sel ini lagi masih berfungsi dengan baik.
+
+48
+00:03:28,050 --> 00:03:34,380
+Ekspresi lahan akan mencoba mereplikasi struktur semacam ini kecuali itu akan menghapus kata-kata yang tidak
+
+49
+00:03:34,980 --> 00:03:37,180
+kita butuhkan secara default.
+
+50
+00:03:37,320 --> 00:03:42,150
+Ketika Anda berpikir tentang hal itu, Anda tidak benar-benar membutuhkan F atau kembali karena itu hanya nilai
+
+51
+00:03:42,150 --> 00:03:44,100
+yang diberikan saja dalam suatu fungsi.
+
+52
+00:03:44,130 --> 00:03:48,530
+Anda harus mendefinisikannya dan mengembalikannya untuk ekspresi lahan.
+
+53
+00:03:48,570 --> 00:03:50,730
+Atau dikenal sebagai fungsi anonim.
+
+54
+00:03:50,730 --> 00:03:55,200
+Anda hanya ingin mengganti dalam contoh di mana Anda tidak ingin harus
+
+55
+00:03:55,200 --> 00:04:00,470
+mendefinisikan seluruh fungsi yang merupakan ekspresi lambda dan Anda dapat melakukannya dengan dasarnya membaca fungsi ini.
+
+56
+00:04:00,480 --> 00:04:08,130
+Tetapi menyingkirkan huruf F dan namanya dan alih-alih hanya mengetik lambda dan kemudian Anda melanjutkan dan menyingkirkan kembali
+
+57
+00:04:08,130 --> 00:04:12,320
+dan cukup ketik apa yang sebenarnya ingin Anda kembalikan.
+
+58
+00:04:12,570 --> 00:04:15,970
+Dan inilah tanah ekspresi.
+
+59
+00:04:16,020 --> 00:04:23,490
+Sekarang saya bisa jika saya ingin mengatakan t sama dengan tanah ini ungkapan dan kemudian memanggil t dari beberapa
+
+60
+00:04:23,520 --> 00:04:25,060
+nomor seperti 6.
+
+61
+00:04:25,260 --> 00:04:28,490
+Dan saya bisa melihat bahwa saya mendapat balasan enam kali dua.
+
+62
+00:04:28,590 --> 00:04:32,970
+Jadi saya biasanya tidak akan menggunakan ekspresi tanah seperti ini tetapi mungkin untuk menggunakannya.
+
+63
+00:04:33,330 --> 00:04:39,060
+Nah Anda akan menggunakan ekspresi lambda untuk sesuatu seperti peta atau bukannya harus mendefinisikan
+
+64
+00:04:39,060 --> 00:04:40,320
+seluruh fungsi.
+
+65
+00:04:40,500 --> 00:04:49,060
+Anda cukup mengetikkan ekspresi lambda di sini Anda akan mengatakan lambda apa yang sebenarnya ingin Anda pasan usus besar dan kemudian apa
+
+66
+00:04:49,300 --> 00:04:55,400
+yang ingin Anda kembalikan dalam kasus ini adalah maju dan kalikan semuanya dengan tiga.
+
+67
+00:04:55,450 --> 00:05:01,240
+Dan sekarang jika saya menjalankan ini pada urutan yang sama saya telah meraih setiap elemen dalam urutan
+
+68
+00:05:01,240 --> 00:05:06,310
+dan mengalikannya dengan tiga dan saya tidak lagi harus mendefinisikan seluruh fungsi secara formal.
+
+69
+00:05:06,370 --> 00:05:11,500
+Saya hanya bisa menggunakan ekspresi lambda ekspresi lambda atau sesuatu di mana banyak digunakan terutama
+
+70
+00:05:11,510 --> 00:05:13,980
+ketika kita mulai belajar tentang perpustakaan Pandurs.
+
+71
+00:05:13,990 --> 00:05:18,330
+Jadi, jika Anda memiliki pertanyaan tentang ini, jangan ragu untuk mengirim forum Tanya Jawab.
+
+72
+00:05:18,340 --> 00:05:25,130
+Tapi itu pada dasarnya hanya cara menulis ulang seluruh fungsi menjadi satu baris kode bersih.
+
+73
+00:05:25,330 --> 00:05:30,720
+Dan alasannya adalah karena Anda biasanya tidak mau harus menulis dan mendefinisikan seluruh fungsi.
+
+74
+00:05:31,150 --> 00:05:35,620
+Namun itu selalu merupakan pilihan bagi Anda jika Anda pernah bingung dengan ekspresi tanah.
+
+75
+00:05:35,620 --> 00:05:40,630
+Anda bisa mendefinisikan fungsi formal seperti yang kami lakukan untuk kali 2 dan menggunakannya.
+
+76
+00:05:40,620 --> 00:05:44,800
+Sekarang mari kita lanjutkan dan membahas fungsi filter bawaan.
+
+77
+00:05:44,800 --> 00:05:48,010
+Filter akan memiliki struktur yang sangat mirip dengan peta.
+
+78
+00:05:48,120 --> 00:05:54,490
+Tetapi alih-alih memetakan fungsi ke setiap elemen dalam urutan, kami akan memfilter elemen
+
+79
+00:05:54,490 --> 00:05:55,570
+dari urutan.
+
+80
+00:05:55,570 --> 00:05:59,800
+Biarkan saya masuk dan menunjukkan kepada Anda bagaimana Anda bisa melakukan ini.
+
+81
+00:05:59,890 --> 00:06:09,190
+Anda akan melanjutkan dan memanggil filter dan kemudian Anda akan mem-pasan fungsi atau ekspresi lambda
+
+82
+00:06:09,640 --> 00:06:13,460
+yang menyaring dan mengembalikan nilai boolean.
+
+83
+00:06:13,480 --> 00:06:27,070
+Jadi misalnya saya dapat mengatakan lambda dari angka kolon yang nomor maade dua sama dengan nol dan kemudian lulus dalam
+
+84
+00:06:27,070 --> 00:06:28,490
+urutan.
+
+85
+00:06:28,870 --> 00:06:31,530
+Dan ini hanya akan mengembalikan ekspresi filter.
+
+86
+00:06:31,560 --> 00:06:34,100
+Sebenarnya saya ingin mendapatkan hasilnya kembali.
+
+87
+00:06:34,300 --> 00:06:36,230
+Saya perlu memasukkannya ke daftar.
+
+88
+00:06:36,730 --> 00:06:43,030
+Dan ini mengembalikan hanya angka genap ke urutan 2 dan 4 saya.
+
+89
+00:06:43,030 --> 00:06:45,400
+Jadi mari kita uraikan apa yang sebenarnya terjadi di sini.
+
+90
+00:06:45,610 --> 00:06:54,070
+Saya mengatakan filter dan ekspresi lambda ini mengambil angka dan mengembalikan nilai kondisional benar atau salah
+
+91
+00:06:54,160 --> 00:06:56,950
+berdasarkan semacam operasi bersyarat.
+
+92
+00:06:57,000 --> 00:07:02,930
+Jadi filter harus menggunakan semacam fungsi atau ekspresi lambda yang mengembalikan nilai boolean.
+
+93
+00:07:02,950 --> 00:07:04,520
+Benar atau salah.
+
+94
+00:07:04,630 --> 00:07:08,680
+Dan apa yang akan Anda lakukan adalah meneruskannya ke objek yang dapat diubah.
+
+95
+00:07:08,680 --> 00:07:14,350
+Dan ketika Anda memanggil daftar di atasnya itu hanya akan mengembalikan nilai-nilai di mana pernyataan ini benar.
+
+96
+00:07:14,650 --> 00:07:18,390
+Dalam hal ini kami hanya memfilter nomor genap.
+
+97
+00:07:18,400 --> 00:07:19,300
+Baiklah.
+
+98
+00:07:19,300 --> 00:07:22,170
+Sekarang mari kita lanjutkan dan membahas metode.
+
+99
+00:07:22,210 --> 00:07:28,450
+Metode pada dasarnya hanya menyebabkan Anda dapat membuat objek yang akan mempengaruhi objek atau mengembalikan
+
+100
+00:07:28,570 --> 00:07:30,480
+hasil dalam beberapa cara.
+
+101
+00:07:30,490 --> 00:07:32,670
+Biarkan saya pergi ke depan dan menunjukkan kepada Anda apa yang saya maksud.
+
+102
+00:07:32,750 --> 00:07:37,720
+Saya akan membuat string bernama S dan ini akan mengatakan sesuatu seperti.
+
+103
+00:07:38,380 --> 00:07:42,550
+Halo nama saya huruf kapital S. Saya.
+
+104
+00:07:42,580 --> 00:07:51,970
+Sam saya bisa menelepon dan kemudian titik dan jika saya mengklik tab dan buku catatan Jupiter saya akan mendapatkan hasil dari
+
+105
+00:07:51,970 --> 00:07:54,340
+semua tab cambuk yang tersedia.
+
+106
+00:07:54,340 --> 00:07:55,470
+Gulir ke bawah.
+
+107
+00:07:55,480 --> 00:08:00,040
+Saya akan mendapatkan hasil dari semua metode yang tersedia pada objek string ini.
+
+108
+00:08:00,040 --> 00:08:04,300
+Sekarang kita tidak punya waktu untuk membahas semua ini dan semua ini tidak akan digunakan selama kursus,
+
+109
+00:08:04,300 --> 00:08:06,080
+kita hanya akan menggunakan beberapa saja.
+
+110
+00:08:06,100 --> 00:08:08,610
+Biarkan saya masuk untuk menunjukkan yang penting.
+
+111
+00:08:09,160 --> 00:08:14,120
+Lebih rendah akan menurunkan huruf besar setiap huruf dalam sebuah string.
+
+112
+00:08:14,230 --> 00:08:16,790
+Dan perhatikan bahwa Anda harus memanggil kurung tutup.
+
+113
+00:08:17,050 --> 00:08:22,390
+Jika Anda hanya memanggil lebih rendah seperti ini atau kembali dan katakan oh Anda bertanya tentang fungsi yang lebih rendah.
+
+114
+00:08:22,380 --> 00:08:27,430
+Seperti yang saya sebutkan sebelumnya, Anda harus benar-benar menjalankannya dengan menutup tanda kurung itu jika Anda ingin melakukan
+
+115
+00:08:27,430 --> 00:08:28,310
+yang sebaliknya.
+
+116
+00:08:28,330 --> 00:08:33,060
+Dalam hal ini huruf besar semua yang Anda bisa panggil dipikirkan.
+
+117
+00:08:34,310 --> 00:08:42,210
+Baiklah, fungsi atau metode lain yang bermanfaat Permisi untuk string adalah metode split, metode split secara
+
+118
+00:08:42,250 --> 00:08:48,360
+default akan membagi sebuah string pada semua spasi putih string itu.
+
+119
+00:08:48,370 --> 00:08:50,860
+Jadi di sini kita memiliki Halo, nama saya Sam.
+
+120
+00:08:50,860 --> 00:08:55,240
+Ketika kami mengatakan bahwa split split akan membagi ini di semua spasi putih.
+
+121
+00:08:55,240 --> 00:08:59,340
+Itu akan sangat berguna untuk analisis teks nanti dalam kursus ini.
+
+122
+00:08:59,350 --> 00:09:01,370
+Biarkan saya masuk dan menunjukkan contoh.
+
+123
+00:09:01,380 --> 00:09:04,590
+Katakanlah kita memiliki tweet yang mengatakan sesuatu seperti.
+
+124
+00:09:04,890 --> 00:09:10,150
+Pergi olahraga tag hash olahraga.
+
+125
+00:09:10,520 --> 00:09:19,290
+Jika kami mengatakan bahwa tweet terbelah, ini akan membagi teks menjadi daftar berdasarkan spasi.
+
+126
+00:09:19,450 --> 00:09:26,530
+Tetapi kita dapat benar-benar mengirimkan string menjadi split untuk dibagi pada elemen atau karakter tertentu.
+
+127
+00:09:26,710 --> 00:09:33,360
+Jika saya melewati tag hash dan menjalankan ini akan membagi string di mana ia menemukan tag hash yang berarti akan memiliki
+
+128
+00:09:33,370 --> 00:09:36,230
+pesan dan kemudian pada akhirnya memiliki tag hash.
+
+129
+00:09:36,550 --> 00:09:39,220
+Dan ini sebenarnya akan mengembalikan daftar meskipun kita dapat mengindeksnya.
+
+130
+00:09:39,220 --> 00:09:46,530
+Jadi jika saya hanya ingin mengambil tag hash saya dapat mengatakan tanda kurung satu dan semua kembali olahraga sehingga kita sudah bisa melihat bagaimana
+
+131
+00:09:46,540 --> 00:09:51,450
+ini akan berguna jika Anda hanya ingin mengambil tag hash dari beberapa contoh tweet string.
+
+132
+00:09:51,760 --> 00:09:52,780
+BAIK.
+
+133
+00:09:52,780 --> 00:09:56,710
+Itu adalah metode yang berguna untuk E-string split ujung bawah atas.
+
+134
+00:09:56,710 --> 00:09:57,200
+Itu bagus.
+
+135
+00:09:57,250 --> 00:09:59,620
+Itulah yang akan kita gunakan sepanjang kursus.
+
+136
+00:10:00,910 --> 00:10:03,040
+Keluarkan sesuatu yang bisa Anda lakukan dengan kamus.
+
+137
+00:10:03,250 --> 00:10:04,690
+Jadi ingatlah sebuah kamus.
+
+138
+00:10:04,730 --> 00:10:06,860
+Mari kita pergi dan melihat apakah kita punya yang lama.
+
+139
+00:10:07,180 --> 00:10:15,780
+Nah tetapkan kembali ini menjadi K-1 dengan nilai satu.
+
+140
+00:10:15,880 --> 00:10:20,800
+Dan kemudian kita akan mengatakan Kate dua adalah kunci dari nilai dua.
+
+141
+00:10:20,800 --> 00:10:21,440
+Baiklah.
+
+142
+00:10:21,700 --> 00:10:22,580
+Jadi inilah kamus saya.
+
+143
+00:10:22,600 --> 00:10:24,920
+K. Satu adalah satu untuk dua.
+
+144
+00:10:24,940 --> 00:10:30,510
+Sekarang kita dapat mengatakan d dot dan Anda dapat mengklik tab untuk melihat berbagai metode yang tersedia untuk Anda.
+
+145
+00:10:30,700 --> 00:10:38,140
+Beberapa yang bermanfaat adalah metode kunci dan ini hanya mengembalikan kunci ke kamus.
+
+146
+00:10:38,140 --> 00:10:47,710
+Jika Anda meminta item, ini mengembalikan item kamus dan kemudian kami juga dapat meminta jika kami
+
+147
+00:10:47,710 --> 00:10:48,870
+melihat.
+
+148
+00:10:49,060 --> 00:10:53,670
+Anda bisa mengatakan pop atau dapatkan atau nilai.
+
+149
+00:10:53,830 --> 00:10:55,680
+Jadi jika Anda hanya menginginkan nilai-nilai kamus.
+
+150
+00:10:55,720 --> 00:10:57,430
+Ini mengembalikan nilai.
+
+151
+00:10:57,430 --> 00:10:59,810
+Ingat kamus tidak mempertahankan pesanan.
+
+152
+00:11:00,040 --> 00:11:04,690
+Kami tidak akan benar-benar menggunakan item atau nilai kunci dari kursus, tetapi saya ingin Anda mengetahui tentang mereka
+
+153
+00:11:05,660 --> 00:11:07,500
+beberapa metode yang berguna untuk daftar.
+
+154
+00:11:07,510 --> 00:11:08,740
+Saya akan pergi keluar untuk membuat daftar.
+
+155
+00:11:08,750 --> 00:11:10,530
+Ls t.
+
+156
+00:11:10,540 --> 00:11:12,680
+Katakan 1 hingga 3.
+
+157
+00:11:12,820 --> 00:11:20,920
+Anda dapat mengeluarkan item dari daftar dengan memanggil pop dan ini akan muncul dan mengembalikan item terakhir dalam daftar dan kemudian ketika
+
+158
+00:11:21,460 --> 00:11:24,510
+Anda memanggil item ini, perubahan itu bersifat permanen.
+
+159
+00:11:24,820 --> 00:11:36,250
+Yang berarti jika kita melanjutkan dan mengatakan daftar adalah satu dua tiga empat lima Anda dapat mengatakan item sama dengan ls t pop dan
+
+160
+00:11:36,710 --> 00:11:44,730
+itu akan mengeluarkan item terakhir dari daftar itu dan jika kita menyebut item itu telah dipindahkan.
+
+161
+00:11:44,800 --> 00:11:53,440
+5 sekarang item yang merupakan daftar yang muncul dan Anda dapat benar-benar dengan metode pop melewati nilai indeks
+
+162
+00:11:53,440 --> 00:11:54,730
+untuk dimatikan.
+
+163
+00:11:54,730 --> 00:12:01,150
+Jadi jika Anda mengatakan pertama sama dengan LS T-top pop 0 dan jalankan ini.
+
+164
+00:12:01,150 --> 00:12:02,870
+Lihatlah LS T.
+
+165
+00:12:02,950 --> 00:12:11,100
+Sekarang indeks 0 telah muncul dan variabel pertama kami adalah yang merupakan elemen pertama.
+
+166
+00:12:11,320 --> 00:12:14,270
+Jadi pop adalah metode yang sangat berguna dan begitu juga menambahkan.
+
+167
+00:12:14,290 --> 00:12:15,860
+Tapi sebenarnya kita sudah melihat itu.
+
+168
+00:12:16,090 --> 00:12:22,620
+Itu hanya memungkinkan Anda untuk menambahkan item baru ke akhir daftar.
+
+169
+00:12:23,050 --> 00:12:23,720
+Baiklah.
+
+170
+00:12:24,010 --> 00:12:29,560
+Akhirnya beberapa hal lagi yang ingin saya tunjukkan kepada Anda adalah operator in.
+
+171
+00:12:29,560 --> 00:12:36,140
+Jadi, jika Anda ingin memeriksa apakah ada sesuatu di dalam daftar, Anda dapat mengatakan hal yang ingin Anda
+
+172
+00:12:36,140 --> 00:12:39,500
+periksa dan kemudian masuk dan kemudian daftar itu sendiri.
+
+173
+00:12:39,610 --> 00:12:54,100
+Jadi X dalam 1 hingga 3 yang mengembalikan false versus x dalam daftar yang berisi x y dan z yang mengembalikan true.
+
+174
+00:12:54,100 --> 00:12:58,900
+Dan akhirnya hal terakhir dalam kursus python crash yang akan kita bahas adalah tuple unpacking tuple
+
+175
+00:12:59,410 --> 00:13:03,370
+unpacking adalah fitur yang sangat rapi dan saya akan menunjukkan cara kerjanya.
+
+176
+00:13:03,370 --> 00:13:11,270
+Bayangkan Anda memiliki variabel x yang berisi daftar tupel.
+
+177
+00:13:12,010 --> 00:13:19,740
+Kami akan memiliki satu dua tiga empat dan kemudian lima enam.
+
+178
+00:13:19,750 --> 00:13:29,140
+Jadi di sini jika saya melihat X item pertama dalam X adalah tuple 1 dan 2 dan saya benar-benar dapat mengambil item dari tuple itu
+
+179
+00:13:29,140 --> 00:13:33,040
+sehingga saya dapat mengambil satu atau saya dapat mengambil dua.
+
+180
+00:13:33,130 --> 00:13:38,410
+Saya juga bisa melakukan sesuatu yang disebut tuple unpacking dan itu akan bekerja ketika
+
+181
+00:13:38,410 --> 00:13:40,030
+kita mengulang daftar tuple.
+
+182
+00:13:40,030 --> 00:13:45,910
+Formasi semacam daftar tupel ini sangat umum di Python dan banyak fungsi akan mengembalikan hasil
+
+183
+00:13:45,910 --> 00:13:47,550
+dalam format ini.
+
+184
+00:13:47,830 --> 00:14:00,230
+Itulah sebabnya kami memiliki tuple dan packing sebagai opsi sehingga kami dapat mengatakan untuk item dalam item cetakan X.
+
+185
+00:14:00,520 --> 00:14:07,300
+Dan ketika saya menjalankannya, ia akan mencetak semua tupel untuk saya tupel dan pengepakan
+
+186
+00:14:07,390 --> 00:14:18,280
+memungkinkan saya untuk membongkar tuple ini saat saya melanjutkan sehingga saya dapat melakukan sesuatu seperti ini untuk koma B dalam X cetak a.
+
+187
+00:14:18,640 --> 00:14:21,950
+Dan sekarang ini akan mencetak 1 3 5.
+
+188
+00:14:22,850 --> 00:14:24,830
+Atau jika saya katakan Pangeran B.
+
+189
+00:14:24,840 --> 00:14:27,250
+Ini akan mencetak item kedua di tupel tersebut.
+
+190
+00:14:27,310 --> 00:14:30,490
+2 4 6 dan itu tuple dan packing.
+
+191
+00:14:30,490 --> 00:14:36,130
+Atau alih-alih hanya mengatakan item, Anda sebenarnya membongkar tuple ini di dalamnya untuk loop dan sesuatu yang lain.
+
+192
+00:14:36,140 --> 00:14:40,630
+Perhatikan bahwa tanda kurung di sekitar ini sebenarnya hanya formalitas.
+
+193
+00:14:40,630 --> 00:14:43,930
+Ini adalah bagaimana Anda akan melihat tuple dalam pengepakan di dunia nyata sepanjang waktu.
+
+194
+00:14:43,930 --> 00:14:49,840
+Anda akan melihat tuple dan packing dalam X yang merupakan beberapa tuple di dalamnya.
+
+195
+00:14:50,140 --> 00:14:57,730
+Dan kemudian Anda bisa mencetak masing-masing item dalam tuple itu dan hanya itu yang bisa Anda lakukan dengan
+
+196
+00:14:57,730 --> 00:14:58,210
+baik.
+
+197
+00:14:58,500 --> 00:15:02,590
+Ini akan mengingatkan Anda tentang tuple dan pengepakan ketika kami mencapainya lagi nanti dalam kursus ini.
+
+198
+00:15:02,590 --> 00:15:07,570
+Ini tidak akan muncul sampai beberapa saat dari sekarang tetapi mudah-mudahan ini sudah cukup
+
+199
+00:15:07,690 --> 00:15:13,990
+gambaran umum umum untuk Python jika semua ini tampak sangat sulit atau hanya asing bagi Anda dan Anda
+
+200
+00:15:13,990 --> 00:15:15,700
+benar-benar tidak mengerti konsepnya.
+
+201
+00:15:15,700 --> 00:15:21,730
+Kursus ini mungkin terlalu maju untuk Anda dan Anda mungkin membutuhkan kursus yang diarahkan untuk pemula
+
+202
+00:15:21,860 --> 00:15:25,420
+dalam pemrograman seperti kursus bootcamp Python lengkap saya.
+
+203
+00:15:25,510 --> 00:15:31,000
+Selalu merasa bebas untuk mengirim pertanyaan ke forum Kewaunee dan datang berikutnya adalah latihan untuk
+
+204
+00:15:31,000 --> 00:15:35,070
+hanya menguji pengetahuan Anda dalam seri topik kursus kilat python ini.
+
+205
+00:15:35,080 --> 00:15:36,970
+Terima kasih semuanya dan saya akan melihat di kuliah berikutnya

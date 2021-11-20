@@ -1,0 +1,803 @@
+1
+00:00:05,850 --> 00:00:10,470
+Cześć wszystkim i zapraszam na wykład ramki danych i tego wykładu,
+
+2
+00:00:10,470 --> 00:00:15,170
+w końcu dowiemy się o tworzeniu ramek danych z poważnych ramek danych obiektów.
+
+3
+00:00:15,180 --> 00:00:17,800
+To będzie ich główne narzędzie podczas pracy z pandami.
+
+4
+00:00:17,970 --> 00:00:21,680
+Przejdźmy dalej i przejdźmy do notatnika Jowisza, aby zobaczyć, jak to wszystko działa.
+
+5
+00:00:21,690 --> 00:00:22,020
+W porządku.
+
+6
+00:00:22,020 --> 00:00:24,410
+Oto jestem w Notatniku Jowisza.
+
+7
+00:00:24,450 --> 00:00:29,940
+Idziemy do przodu i mówimy ważne niektóre ciasteczka i P i importujemy pandy PD
+
+8
+00:00:29,940 --> 00:00:35,880
+i mam zamiar zrobić ostatnią rzecz tutaj, aby uratować od nich losowy import Pied-Bot Rand i.
+
+9
+00:00:36,350 --> 00:00:38,370
+A potem wyjdę i ustawię nasienie.
+
+10
+00:00:38,370 --> 00:00:42,660
+A to, co oznacza nasienie, to po prostu upewnić się, że otrzymujemy te same liczby losowe.
+
+11
+00:00:42,660 --> 00:00:45,510
+W ten sposób, jeśli obserwujesz mnie, zobaczysz te same liczby losowe.
+
+12
+00:00:45,540 --> 00:00:49,260
+Widzę, że może wejść i powiedzieć to przypadkowe nasienie.
+
+13
+00:00:49,290 --> 00:00:49,550
+W porządku.
+
+14
+00:00:49,590 --> 00:00:57,840
+Pójdźmy i zbadajmy różne polecenia, a ADF jest równe ramce danych PD i tak naprawdę możesz użyć zakładki
+
+15
+00:00:57,840 --> 00:01:01,460
+tutaj w Jowiszu i do autouzupełniania tego.
+
+16
+00:01:01,770 --> 00:01:05,200
+Zauważ, że EFIS korzysta z karty zmiany Windu.
+
+17
+00:01:05,200 --> 00:01:10,770
+Sprawdź docstring i początkowy podpis dla tej ramki danych PD.
+
+18
+00:01:10,770 --> 00:01:16,830
+Mamy argument danych i argument indeksu, tak jak zrobiliśmy dla serii, ale mamy dodatkowe
+
+19
+00:01:16,830 --> 00:01:18,210
+argumenty kolumnowe.
+
+20
+00:01:18,450 --> 00:01:23,130
+Zacznijmy od tego i wykorzystajmy losowe dane, a zobaczymy, jak wygląda
+
+21
+00:01:23,130 --> 00:01:24,000
+ramka danych.
+
+22
+00:01:24,000 --> 00:01:31,090
+Pierwszą rzeczą, którą mam zamiar zrobić, jest przekazanie tych argumentów danych i mam zamiar zadzwonić do
+
+23
+00:01:31,110 --> 00:01:37,620
+Ranza i 5 przecinek 4, a następne, które chcesz przekazać, to indeks w indeksie.
+
+24
+00:01:37,620 --> 00:01:42,650
+Możemy zrobić tutaj listę postaci.
+
+25
+00:01:42,660 --> 00:01:48,850
+Zamierzam wejść i powiedzieć A B C D E.
+
+26
+00:01:49,320 --> 00:01:53,950
+A potem w końcu do kolumn, które zamierzam zrobić, i powiedzieć x y z.
+
+27
+00:01:54,120 --> 00:02:05,810
+Tak więc powiem, że w x y z pójdziemy do przodu i uruchomimy to, a następnie przekazujemy dane tylko po prostu wyświetlają, a następnie dostajemy
+
+28
+00:02:05,820 --> 00:02:07,020
+ładny wyświetlacz.
+
+29
+00:02:07,050 --> 00:02:12,370
+A to prawdopodobnie wygląda i przypomina trochę wpisy w Excelu i głębszy notatnik i to dobrze.
+
+30
+00:02:12,540 --> 00:02:18,060
+Jeśli używasz innego edytora ID, możesz nie uzyskać tak ładnego, wyraźnego ekranu,
+
+31
+00:02:18,060 --> 00:02:21,560
+ale powinieneś otrzymać wydruk podobny do tego.
+
+32
+00:02:21,630 --> 00:02:22,060
+W porządku.
+
+33
+00:02:22,110 --> 00:02:31,130
+Więc w zasadzie mamy tutaj listę kolumn w x y z i odpowiadające jej wiersze A B C D E.
+
+34
+00:02:31,170 --> 00:02:35,240
+Teraz każda z tych kolumn jest serią pandy.
+
+35
+00:02:35,250 --> 00:02:42,060
+Więc W jest serią panda, a także XY i Z, a wszystkie one mają wspólny indeks i to jest w
+
+36
+00:02:42,060 --> 00:02:46,350
+zasadzie cała ramka danych, to tylko kilka serii, które mają indeks.
+
+37
+00:02:46,350 --> 00:02:51,830
+Pokażmy, w jaki sposób możemy użyć indeksowania i selekcji, w rzeczywistości wyłapie jeden z tych poważnych
+
+38
+00:02:52,080 --> 00:02:59,280
+obiektów lub kilka z tych kolumn w jedną stronę, a głównym sposobem, aby to zrobić, jest wypowiedzenie DMF, a następnie
+
+39
+00:02:59,340 --> 00:03:02,920
+użycie notacji Racketta, a następnie podanie nazwy kolumny. .
+
+40
+00:03:02,940 --> 00:03:05,590
+W takim przypadku przejdźmy do kolumny W.
+
+41
+00:03:05,610 --> 00:03:12,180
+Więc jako ciąg pass w, a to zwraca kolumnę W, a teraz spójrz na wynik.
+
+42
+00:03:12,180 --> 00:03:14,590
+Teraz to wygląda jak seria.
+
+43
+00:03:14,590 --> 00:03:16,950
+A to dlatego, że dokładnie to jest kolumna W.
+
+44
+00:03:16,950 --> 00:03:20,160
+To tylko seria i możesz to potwierdzić, mówiąc.
+
+45
+00:03:20,160 --> 00:03:27,870
+Typ d f W i pokazuje, że to Panas jest rdzeniem tej serii.
+
+46
+00:03:27,870 --> 00:03:33,940
+Jeśli po prostu powiem typ na obiekcie DFA, otrzymam ramkę danych.
+
+47
+00:03:34,260 --> 00:03:39,420
+Ponownie, aby powtórzyć ten fakt, że ramka danych to tylko seria serii, które mają
+
+48
+00:03:39,450 --> 00:03:40,600
+ten sam indeks.
+
+49
+00:03:40,590 --> 00:03:45,270
+Istnieją teraz dwa różne sposoby pobierania kolumny z ramki danych.
+
+50
+00:03:45,300 --> 00:03:49,780
+Głównym sposobem i sposobem, w jaki powinno się to zawsze odbywać, jest użycie tego rodzaju notacji nawiasów, a
+
+51
+00:03:49,800 --> 00:03:51,090
+następnie podanie nazwy kolumny.
+
+52
+00:03:51,090 --> 00:03:56,640
+Jednak jeśli naprawdę znasz sequel wiele razy wybierasz kolumnę, którą podajesz w tabeli, a
+
+53
+00:03:57,090 --> 00:03:58,470
+następnie nazwę kolumny.
+
+54
+00:03:58,530 --> 00:04:04,280
+To faktycznie działa również dla osób bez pantofli, można powiedzieć kropkę, a następnie nazwę kolumny.
+
+55
+00:04:04,440 --> 00:04:10,020
+Zalecam jednak, abyś tego nie używał, ponieważ może się mylić z różnymi metodami
+
+56
+00:04:10,020 --> 00:04:11,870
+dostępnymi poza ramką danych.
+
+57
+00:04:11,940 --> 00:04:18,160
+Na przykład, jeśli powiem kropkę DFA, a następnie kliknę zakładkę Widzę całą masę dostępnych dla mnie metod.
+
+58
+00:04:18,480 --> 00:04:22,980
+A oto kilka metod, o których się dowiemy, gdy dowiemy się więcej o pandach,
+
+59
+00:04:22,980 --> 00:04:28,050
+ale może się zdarzyć, że jedna z tych metod zostanie nadpisana przez nazwę kolumny, a potem
+
+60
+00:04:28,050 --> 00:04:32,420
+Panther będzie się mylić, czy pytasz dla metody lub rzeczywistej nazwy kolumny.
+
+61
+00:04:32,430 --> 00:04:38,410
+Powinieneś więc zrobić, aby uniknąć tego, jak zawsze, jest to rodzaj notacji nawiasów przy żądaniu kolumny.
+
+62
+00:04:38,970 --> 00:04:39,500
+DOBRZE.
+
+63
+00:04:39,510 --> 00:04:44,590
+Jeśli chcesz mieć wiele kolumn z powrotem, możesz iść dalej i wypełnić listę kolumn.
+
+64
+00:04:44,820 --> 00:04:49,800
+Więc wiem, że przechodzę w nawiasach, a potem przejdę do listy nazw kolumn,
+
+65
+00:04:49,800 --> 00:04:52,170
+co spowoduje tutaj kolejny zestaw nawiasów.
+
+66
+00:04:52,200 --> 00:05:02,970
+Na przykład, jeśli chcę kolumny W i Z I przekazuję listę, podświetlam WNC i otrzymuję ramkę danych
+
+67
+00:05:02,970 --> 00:05:05,520
+zawierającą te dwie serie.
+
+68
+00:05:05,520 --> 00:05:10,620
+A to oznacza, że gdy pytam o wiele kolumn, faktycznie otrzymuję ramkę danych, poprosiłem
+
+69
+00:05:10,620 --> 00:05:13,240
+o jedną kolumnę, że otrzymam serię.
+
+70
+00:05:13,380 --> 00:05:17,510
+W systemie notatek Jowisza jest to zauważone przez sposób wyświetlania wyników.
+
+71
+00:05:17,990 --> 00:05:25,540
+OK, przejdźmy dalej i przejdźmy do tworzenia nowej kolumny. Palla wspiera tworzenie nowych kolumn, po
+
+72
+00:05:25,560 --> 00:05:29,390
+prostu określając kolumnę tak, jakby już istniała.
+
+73
+00:05:29,400 --> 00:05:31,100
+Na przykład nowy.
+
+74
+00:05:31,140 --> 00:05:34,550
+Teraz jeśli to uruchomię, dostanę błąd i to jest opiekun.
+
+75
+00:05:34,570 --> 00:05:37,500
+Zwój w dół tutaj mówi Kear nowy.
+
+76
+00:05:37,680 --> 00:05:42,560
+I zasadniczo próbuje ci powiedzieć, że nie może znaleźć tego, że nie ma tam żadnego nowego klucza.
+
+77
+00:05:42,570 --> 00:05:50,190
+Jednak, gdy tworzysz znacznik skrótu, wypuszczasz go i umieszczasz ponownie podczas tworzenia nowej
+
+78
+00:05:50,190 --> 00:05:51,200
+kolumny.
+
+79
+00:05:51,210 --> 00:05:56,280
+Możesz go zdefiniować tak, jakby już istniał, a następnie po prawej
+
+80
+00:05:56,850 --> 00:06:05,610
+stronie znaku równości użyj innych kolumn z arytmetyczną, aby pobrać nową kolumnę, na przykład możesz powiedzieć, że nowa kolumna DSF,
+
+81
+00:06:05,610 --> 00:06:09,970
+tak jakby już istniała, jest równa DFW Plus mucha.
+
+82
+00:06:10,150 --> 00:06:11,710
+A to będzie działać bez błędu.
+
+83
+00:06:11,910 --> 00:06:18,780
+A teraz, jeśli sprawdzę DF, czy ta nowa kolumna rzeczywiście istnieje i do usuwania kolumn, możesz
+
+84
+00:06:18,780 --> 00:06:19,890
+powiedzieć DFT.
+
+85
+00:06:19,920 --> 00:06:28,020
+Upuść, możesz powiedzieć "upuszczenie" i podać nazwę kolumny, którą chcesz upuścić.
+
+86
+00:06:28,020 --> 00:06:31,430
+Teraz, jeśli zrobisz to samo, dostaniesz błąd.
+
+87
+00:06:31,500 --> 00:06:35,340
+I wejdźmy do środka i sprawdźmy, co to za błąd, powiedzmy błąd wartości.
+
+88
+00:06:35,390 --> 00:06:36,120
+Przewijamy w dół.
+
+89
+00:06:36,120 --> 00:06:40,540
+Zawiera etykiety nowe, których nie ma w programie Access.
+
+90
+00:06:40,620 --> 00:06:47,660
+I jeśli kliknę zakładkę shift na metodzie upuść, zauważ, że domyślnie mówi się, że dostęp jest równy
+
+91
+00:06:47,670 --> 00:06:52,390
+zero dostępu równego zero, ponieważ metoda drop odnosi się do indeksu.
+
+92
+00:06:52,500 --> 00:07:01,050
+Jeśli rzeczywiście chcę odnosić się do kolumn, muszę określić, że dostęp jest równy 1, a następnie spowoduje
+
+93
+00:07:01,680 --> 00:07:04,430
+opuszczenie tej nowej kolumny tutaj.
+
+94
+00:07:04,830 --> 00:07:10,260
+Teraz należy pamiętać o dwóch rzeczach przy korzystaniu z tego spadku DFT. Pierwszą rzeczą, którą należy wiedzieć, jest to,
+
+95
+00:07:10,260 --> 00:07:15,900
+że nie dzieje się to w miejscu, co oznacza, że nie wpłynęło to faktycznie na stan ramki, chyba że konkretnie
+
+96
+00:07:16,070 --> 00:07:18,370
+postanowiłem, że ma to miejsce w miejscu.
+
+97
+00:07:18,470 --> 00:07:20,450
+Chcę ci pokazać, o co mi chodzi.
+
+98
+00:07:20,610 --> 00:07:28,380
+Nazwałam to linią D-flat, jeśli uzyskasz dostęp do DMF, uzyskasz dostęp równy 1, zobaczę, że wciąż mam
+
+99
+00:07:28,380 --> 00:07:29,910
+tę nową kolumnę.
+
+100
+00:07:29,910 --> 00:07:36,030
+Oznacza to, że muszę określić, jako argument do przesunięcia, aby pokazać, że argument
+
+101
+00:07:36,630 --> 00:07:42,840
+lokalny w wielu metodach Pandurs będzie wymagać, aby argumenty te były ustawione na true.
+
+102
+00:07:42,990 --> 00:07:48,450
+A powodem, dla którego to robią, jest to, że nie możesz przypadkowo stracić informacji
+
+103
+00:07:48,450 --> 00:07:53,820
+w przypadku, gdy dokonałeś korekty swoich danych, których nie chcesz przypadkowo utracić.
+
+104
+00:07:53,820 --> 00:07:59,520
+Pandurs wymaga, abyś powiedział, że w miejscu jest prawdą, jeśli naprawdę chcesz, aby wiele z tych zmian pozostało
+
+105
+00:07:59,550 --> 00:08:01,260
+i pojawiło się na miejscu.
+
+106
+00:08:01,380 --> 00:08:07,800
+A teraz, jeśli zadzwonię do DFI uruchamiającego komórkę, zauważ, że nowa kolumna jest teraz trwale
+
+107
+00:08:07,800 --> 00:08:15,960
+usunięta, ponieważ pojawiła się na miejscu i warto tu zauważyć, że możemy również użyć lewej kropli do opuszczenia wierszy na
+
+108
+00:08:15,960 --> 00:08:16,450
+przykład.
+
+109
+00:08:16,470 --> 00:08:19,930
+Wyjdźmy i użyjmy tego, aby opuścić e wiersz.
+
+110
+00:08:20,130 --> 00:08:28,290
+Powiem, że DF spadło, minęłem E i mogę też powiedzieć, że oś jest równa zeru.
+
+111
+00:08:28,290 --> 00:08:30,870
+Teraz pamiętaj, że nie musisz dodawać tego jako argumentu.
+
+112
+00:08:30,870 --> 00:08:32,230
+To jest domyślne.
+
+113
+00:08:32,820 --> 00:08:41,410
+Więc chodźmy i powiedzmy kroplę E, i tam byliśmy w stanie upuścić e, ponieważ Access jest równy zeru.
+
+114
+00:08:41,460 --> 00:08:45,260
+I działa tak czy inaczej, mogę powiedzieć X kontynuację do 0, a to zadziała ponownie.
+
+115
+00:08:45,660 --> 00:08:48,140
+I uwaga tutaj nie robię tego w miejscu.
+
+116
+00:08:48,360 --> 00:08:48,880
+DOBRZE.
+
+117
+00:08:49,020 --> 00:08:54,930
+Czasami punktem dezorientacji jest to, dlaczego są to wiersze zero, o ile są dostępne i dlaczego
+
+118
+00:08:54,960 --> 00:08:58,880
+kolumny są tymi, w których odniesienie wraca do pi.
+
+119
+00:08:59,010 --> 00:09:06,850
+Ponieważ ramki danych są w zasadzie tylko fantazyjnymi znacznikami indeksu na górze tablicy PI, aby to pokazać.
+
+120
+00:09:07,080 --> 00:09:14,750
+Mogę powiedzieć, że DF myślał o kształcie dokładnie tak, jak zrobiliśmy z matrycą rurową, i nie, jeśli ten kształt jest krotką
+
+121
+00:09:14,800 --> 00:09:19,750
+dla matrycy wyobrażeniowej zębów tu i na indeksie zerowym lub liczbie rzędów.
+
+122
+00:09:19,890 --> 00:09:23,020
+Więc jeśli powiem tutaj ZF, mam pięć wierszy.
+
+123
+00:09:23,070 --> 00:09:29,990
+A B C i D E, a następnie na indeksie I mam cztery kolumny w x y z.
+
+124
+00:09:30,150 --> 00:09:37,530
+Z tego powodu wiersze są nazywane osią zerową, a kolumny są określane jako jedna oś, ponieważ są
+
+125
+00:09:37,530 --> 00:09:43,020
+one bezpośrednio pobierane z kształtu, podobnie jak w przypadku macierzy kołowej.
+
+126
+00:09:43,020 --> 00:09:43,880
+DOBRZE.
+
+127
+00:09:43,920 --> 00:09:46,260
+Teraz porozmawiajmy o wybieraniu wierszy.
+
+128
+00:09:46,290 --> 00:09:51,840
+Rozmawialiśmy o wyborze kolumn, które właśnie robisz, mówiąc DMF, aw nawiasie podajesz
+
+129
+00:09:51,840 --> 00:09:53,280
+nazwę kolumny.
+
+130
+00:09:53,280 --> 00:10:01,350
+Lub jeśli chcesz mieć wiele kolumn, przesuwasz listę nazw kolumn, takich jak Z, a następnie przecinek X i zamykasz
+
+131
+00:10:01,350 --> 00:10:02,430
+ten nawias.
+
+132
+00:10:02,430 --> 00:10:07,460
+Dlatego przekazuję listę nazw kolumn i zwracam ramkę danych tych kolumn.
+
+133
+00:10:07,500 --> 00:10:09,940
+Porozmawiajmy o wybieraniu wierszy.
+
+134
+00:10:10,900 --> 00:10:14,650
+Chciałbym ponownie spojrzeć na moją ramkę danych, oto moja ramka danych.
+
+135
+00:10:14,650 --> 00:10:18,400
+ABC E to moja róża WXYZ to kolumny.
+
+136
+00:10:18,400 --> 00:10:25,120
+Istnieją dwa sposoby wybierania wierszy w ramce danych i musisz wywołać metodę z tego.
+
+137
+00:10:25,120 --> 00:10:26,900
+Są dwie metody użycia.
+
+138
+00:10:26,890 --> 00:10:31,040
+Jednym z nich jest Loek EHLO dla lokalizacji.
+
+139
+00:10:31,690 --> 00:10:38,030
+A to zajmie etykietę, więc możesz także zrobić zakładkę shift tutaj, aby zobaczyć tę właściwość i coś o tym
+
+140
+00:10:38,020 --> 00:10:38,540
+wiedzieć.
+
+141
+00:10:38,560 --> 00:10:43,770
+Używam nawiasów kwadratowych, które są trochę dziwne, ale tak to działa z pandami.
+
+142
+00:10:44,000 --> 00:10:48,920
+Przechodzisz w LRC, a następnie passen w wierszu, który chcesz.
+
+143
+00:10:48,910 --> 00:10:52,030
+Na przykład, gdybym chciał wiersz, po prostu passen.
+
+144
+00:10:52,280 --> 00:10:56,210
+Zobacz, jak przekazuję etykietę tego indeksu, a ta zwraca.
+
+145
+00:10:56,240 --> 00:10:58,150
+Bez serii.
+
+146
+00:10:58,150 --> 00:11:04,310
+I to dochodzi do naszego drugiego wniosku, że nie wszystkie są seriami kolumn, ale wiersze są seriami tak daleko,
+
+147
+00:11:04,300 --> 00:11:06,730
+jak to, w jaki sposób otrzymają zwrot.
+
+148
+00:11:06,880 --> 00:11:09,780
+Kiedy poprosisz ich w Pandach.
+
+149
+00:11:10,090 --> 00:11:16,140
+Omówmy teraz drugi sposób, aby pobrać wiersz, który jest oparty na następnej pozycji.
+
+150
+00:11:16,510 --> 00:11:17,750
+Mogę używać DFT.
+
+151
+00:11:17,840 --> 00:11:25,180
+I Loek faktycznie w pozycji indeksu numerycznego, nawet jeśli moje osie są oznaczone ciągami znaków.
+
+152
+00:11:25,180 --> 00:11:34,310
+Na przykład, jeśli chcę zobaczyć ten wiersz, mogę zrobić to na dwa sposoby, czy mogę powiedzieć DF ELO dla lokalizacji, aw nawiasach podać
+
+153
+00:11:34,380 --> 00:11:42,190
+nazwę wiersza, która jest C lub mogę powiedzieć, że EHLO zobaczy, która lokalizacja jest oparta na indeksie i zlicza
+
+154
+00:11:42,200 --> 00:11:43,690
+indeks to mówi.
+
+155
+00:11:43,690 --> 00:11:45,870
+Tak więc 0 1 2.
+
+156
+00:11:46,100 --> 00:11:51,790
+A potem na I Alosi spiesz się, aby dodać to również zwraca ten wiersz.
+
+157
+00:11:51,790 --> 00:11:57,250
+A to w zasadzie oznacza, że masz dwa sposoby wybierania wierszy przy użyciu
+
+158
+00:11:57,250 --> 00:12:04,220
+EHLO, jeśli chcesz, aby indeks lokalizacji lub etykiety lub ellos wskazywał, czy chcesz mieć indeks oparty na liczbach.
+
+159
+00:12:04,240 --> 00:12:09,640
+OK, porozmawiajmy o wyborze podzbiorów wierszy i kolumn, a to będzie dla ciebie bardzo
+
+160
+00:12:09,640 --> 00:12:12,680
+znajome, ponieważ właśnie dowiedzieliśmy się o pi.
+
+161
+00:12:13,250 --> 00:12:21,530
+Możemy powiedzieć, że DFI uważał, że EHLO widzi, czy chcemy wybrać podzbiór wierszy i kolumn, które możemy pasan, tak
+
+162
+00:12:21,520 --> 00:12:25,400
+jak zrobiliśmy z Num. Pi używa wspólnej notacji.
+
+163
+00:12:25,390 --> 00:12:28,550
+Wiersz, który chcemy, a następnie kolumna, którą chcemy.
+
+164
+00:12:28,580 --> 00:12:36,520
+Tak więc chcę, aby wartość w wierszu była kolumną Y, a ta zwraca tam tylko jedną wartość.
+
+165
+00:12:36,550 --> 00:12:43,220
+Więc jeśli ponownie przyjrzę się moim DFA, patrząc na kolumnę ráby, mam ujemną wartość 0. 8, bo mam tutaj ten
+
+166
+00:12:43,210 --> 00:12:44,610
+sam wynik.
+
+167
+00:12:44,620 --> 00:12:52,700
+Tak samo jak pi, możesz użyć tej kolumny z przecinkami, a jeśli chcesz tego podzbioru, możesz
+
+168
+00:12:52,690 --> 00:12:58,950
+powiedzieć, że Dhia ellos zobaczy, a następnie pasan listę oddzieloną przecinkami.
+
+169
+00:12:59,000 --> 00:13:07,180
+Na przykład powiedzmy, że chciałem podzbiór wierszy b z kolumnami W Y, więc w zasadzie chciałem
+
+170
+00:13:07,540 --> 00:13:13,670
+tego 2. 7 0. 9 i 0. 6 5 i negatywów to dwadzieścia cztery.
+
+171
+00:13:13,690 --> 00:13:20,650
+Oznacza to, że mogę po prostu podać listę żądanych wierszy, która w tym przypadku jest a i b.
+
+172
+00:13:21,700 --> 00:13:31,490
+I wtedy mogę przekazać listę kolumn, które chcę w tym przypadku, i przesunięcie w i y należy wprowadzić i otrzymam
+
+173
+00:13:31,490 --> 00:13:34,360
+zwrot części tej ramki danych.
+
+174
+00:13:34,880 --> 00:13:35,540
+DOBRZE.
+
+175
+00:13:35,770 --> 00:13:38,520
+Na razie zatrzymamy się tutaj i będziemy kontynuować dyskusję.
+
+176
+00:13:38,530 --> 00:13:44,960
+W części drugiej z wykładu ramki danych, a wszystko to w notatniku o nazwie Ramki
+
+177
+00:13:44,950 --> 00:13:46,700
+danych w folderze panderers.
+
+178
+00:13:46,690 --> 00:13:51,610
+Zobaczmy, czego się nauczyliśmy, jeśli chodzi o tworzenie ramki danych.
+
+179
+00:13:51,620 --> 00:13:58,540
+Wystarczy powiedzieć dane pasażerów ramek danych PD w indeksie, a następnie przekazać nazwy kolumn.
+
+180
+00:13:58,930 --> 00:14:03,670
+Zwykle nie będziemy budować danych Frayne ręcznie, w ten sposób będziemy czytać dane z
+
+181
+00:14:03,670 --> 00:14:08,250
+jakiegoś źródła, jak plik CSP, ale nauczysz się, jak wprowadzać dane wprowadzone teraz.
+
+182
+00:14:08,250 --> 00:14:14,030
+Na razie, jeśli chcesz głównie utworzyć ramkę danych, abyś mógł to zrobić, a następnie aby wybrać kolumny
+
+183
+00:14:14,020 --> 00:14:16,100
+z ramki danych, możesz powiedzieć DSF.
+
+184
+00:14:16,100 --> 00:14:22,090
+A następnie w nawiasach przekazać w kolumnie, którą chcesz lub przekazać na liście kolumn, które chcesz
+
+185
+00:14:22,180 --> 00:14:25,630
+zapamiętać, że każda kolumna jest w rzeczywistości serią.
+
+186
+00:14:25,880 --> 00:14:31,430
+Możesz tworzyć nowe kolumny w oparciu o stare kolumny, używając tego rodzaju arytmetyki.
+
+187
+00:14:31,450 --> 00:14:36,040
+Następnie możesz upuścić kolumny lub wiersze, używając upuszczonych DFA.
+
+188
+00:14:36,040 --> 00:14:38,730
+Pamiętaj, że potrzeby mówiące w miejscu są prawdziwe.
+
+189
+00:14:38,870 --> 00:14:44,820
+Jeśli chcesz, aby efekt był trwały, powiedz Oś 1 dla kolumn, a następnie 0 dla wierszy.
+
+190
+00:14:44,980 --> 00:14:54,460
+I znów, że pochodzi z tego kształtu krotka 0 indeks był wierszy 1 indeks był kolumn, o ile wybieranie wierszy
+
+191
+00:14:54,460 --> 00:14:56,350
+z ramki danych.
+
+192
+00:14:56,360 --> 00:14:57,630
+Są tu dwie metody.
+
+193
+00:14:57,640 --> 00:15:03,670
+Istnieje metoda Alosi, która jest lokalizacją opartą na etykietach lub jest kropka.
+
+194
+00:15:03,720 --> 00:15:08,670
+I Alosi, która jest lokalizacją indeksu opartą na liczbach całkowitych.
+
+195
+00:15:09,430 --> 00:15:15,100
+A następnie, jeśli chcesz wybrać podzbiory ramki danych, możesz użyć kropki LOC i passen albo
+
+196
+00:15:15,250 --> 00:15:18,800
+wartości albo kompletnych list, aby zwrócić podzbiory ramki danych.
+
+197
+00:15:19,330 --> 00:15:22,230
+OK, to wszystko z powodu podstaw ramek danych.
+
+198
+00:15:22,420 --> 00:15:26,810
+W następnej kolejności omówimy jeszcze więcej tego, co możesz zrobić, jeśli zastosujesz stan
+
+199
+00:15:26,800 --> 00:15:28,880
+ramki, taki jak przy wyborze warunkowym.
+
+200
+00:15:28,880 --> 00:15:30,580
+W porządku, dziękuję wszystkim.
+
+201
+00:15:30,590 --> 00:15:31,570
+Do zobaczenia na następnym wykładzie

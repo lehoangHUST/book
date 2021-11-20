@@ -1,0 +1,147 @@
+1
+00:00:05,280 --> 00:00:09,840
+Witam wszystkich i zapraszam do wprowadzenia do wykładu Seaborn i tego wykładu, który
+
+2
+00:00:09,840 --> 00:00:15,060
+krótko omawiamy, co to jest seaborne, jak zainstalować go na komputerze i jak znaleźć oficjalną dokumentację.
+
+3
+00:00:17,130 --> 00:00:22,460
+Seaborn jest statystyczną biblioteką kreślącą i jest zbudowany na podstawie mapy działki lib.
+
+4
+00:00:22,500 --> 00:00:26,460
+Tak więc cała ta wiedza na temat mapy, którą właśnie
+
+5
+00:00:26,460 --> 00:00:32,520
+się nauczyliśmy, będzie bardzo przydatna, gdy dowiemy się, że Seaborne Seaborne ma naprawdę piękne style domyślne i została
+
+6
+00:00:32,520 --> 00:00:38,400
+zaprojektowana tak, by działała naprawdę dobrze przy usuwaniu danych z obiektów, aby zainstalować ją na komputerze .
+
+7
+00:00:38,400 --> 00:00:40,710
+Będziesz musiał użyć albo Kada zainstalować morską.
+
+8
+00:00:40,710 --> 00:00:46,050
+Jeśli znajduje się w dystrybucji Python Anaconda lub jeśli instalujesz Pythona z innego źródła,
+
+9
+00:00:46,050 --> 00:00:51,770
+możesz również użyć programu Pipp install seaborne i po prostu wykonaj linię poleceń lub terminal.
+
+10
+00:00:52,470 --> 00:00:55,250
+Zacznijmy od krótkiej wycieczki po oficjalnej stronie internetowej.
+
+11
+00:00:55,470 --> 00:00:59,630
+Pójdę do Google i pokażę, jak znaleźć oficjalną dokumentację.
+
+12
+00:00:59,640 --> 00:01:04,650
+Tutaj jestem w Google, aby znaleźć link do oficjalnej dokumentacji.
+
+13
+00:01:04,800 --> 00:01:14,090
+Odkąd Seaborn jest open source, jest hostowany po powrocie do domu, więc możesz wejść i powiedzieć, że dostałeś pytona morskiego.
+
+14
+00:01:14,760 --> 00:01:19,330
+I to powinno cię zabrać do tego pierwszego, właśnie tutaj, hubu.
+
+15
+00:01:19,710 --> 00:01:25,050
+I na tej stronie możesz przeczytać cały kod, że jest to open source, jeśli chodzi o
+
+16
+00:01:25,050 --> 00:01:27,210
+bibliotekę statystyczną dla tej wizualizacji danych.
+
+17
+00:01:27,210 --> 00:01:31,920
+Ale co ważniejsze przewiniesz tutaj, zobaczysz link do oficjalnej dokumentacji.
+
+18
+00:01:31,950 --> 00:01:37,230
+Śmiało i kliknij ten link i powinien on zabrać go na oficjalną stronę dokumentacji.
+
+19
+00:01:37,230 --> 00:01:42,160
+Teraz coś, co jest miłe w tej oficjalnej stronie dokumentacji, jest jak każda mapa na
+
+20
+00:01:42,480 --> 00:01:47,900
+stronie z mapą, ma galerię, która nie jest taka przyjemna, że nie będę używał tej galerii jako odnośnika.
+
+21
+00:01:48,030 --> 00:01:52,870
+To więcej niż kilka ładnych przykładów tego, co może zrobić seaborne.
+
+22
+00:01:52,870 --> 00:01:59,760
+Więc idź i kliknij na niektóre z tych zdjęć, takich jak mapa wykresu skrzypcowego mapy ciepła, a następnie nauczymy
+
+23
+00:01:59,760 --> 00:02:04,050
+się tworzyć wszystkie te wątki, jak efektywniej używać C z pandami.
+
+24
+00:02:04,350 --> 00:02:07,930
+Oto kilka szybkich przykładów tego, co możemy zrobić.
+
+25
+00:02:07,980 --> 00:02:14,540
+Zrobimy naprawdę ładne wyglądające wykresy ciepła lub mapy termiczne na skrzypcach, pogrupowane działki pudełkowe i heksowe są
+
+26
+00:02:14,540 --> 00:02:20,360
+wspólne działki, które już możesz prawdopodobnie powiedzieć, że Bourne i styl idą w parze.
+
+27
+00:02:20,490 --> 00:02:24,180
+SEABORNE to naprawdę ładnie wyglądająca biblioteka wizualizacji.
+
+28
+00:02:24,180 --> 00:02:30,720
+Innym bardzo ważnym ogniwem poza stroną galerii jest API, a odwołanie do API to w zasadzie
+
+29
+00:02:30,720 --> 00:02:33,270
+odniesienie do różnych typów działek tutaj.
+
+30
+00:02:33,270 --> 00:02:36,530
+I właśnie to zamierzamy omówić, kiedy nauczymy się korzystać z Seaborn.
+
+31
+00:02:36,630 --> 00:02:41,100
+Tak więc naprawdę naprawdę nauczymy się, jak faktycznie nazwać te działki, wykorzystując
+
+32
+00:02:41,100 --> 00:02:45,360
+pandy tych działek i stworzyć naprawdę ładne statystyczne wizualizacje fabuły.
+
+33
+00:02:45,540 --> 00:02:46,150
+W porządku.
+
+34
+00:02:46,260 --> 00:02:47,510
+Bardzo się cieszę, że mogę zacząć.
+
+35
+00:02:47,520 --> 00:02:53,010
+Seaborn jest jedną z moich ulubionych bibliotek dla Pythona. Przejdźmy więc do następnego
+
+36
+00:02:53,010 --> 00:02:55,650
+wykładu lub zacznijmy kodować kod Seaborn.
+
+37
+00:02:55,680 --> 00:02:57,540
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

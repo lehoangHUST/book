@@ -1,0 +1,663 @@
+1
+00:00:05,430 --> 00:00:10,000
+Salve a tutti e benvenuti alla terza parte della serie di letture lib di mappe.
+
+2
+00:00:10,260 --> 00:00:15,780
+In questa parte finale parleremo dell'impostazione della linea di colori con i tipi di linea
+
+3
+00:00:15,780 --> 00:00:19,380
+e della personalizzazione reale delle opzioni della trama di noleggio.
+
+4
+00:00:19,380 --> 00:00:23,070
+Andiamo avanti e saltiamo sul taccuino Chippering per iniziare.
+
+5
+00:00:23,100 --> 00:00:25,690
+Ok, eccoci al quaderno di Giove.
+
+6
+00:00:25,950 --> 00:00:30,060
+Andiamo avanti e parliamo di impostare i colori con quella trama dal vivo.
+
+7
+00:00:30,400 --> 00:00:39,600
+Quindi andrò avanti e dirò che fig è uguale a VLT e poi andrò ad aggiungere un insieme
+
+8
+00:00:39,600 --> 00:00:43,720
+di figure di Access x uguale a Fig.
+
+9
+00:00:43,800 --> 00:00:54,140
+Aggiungi gli assi di sottolineatura e lo imposterò su 0 0 1 1 e poi su wups e poi su quel tipo di assi che dico
+
+10
+00:00:54,180 --> 00:00:57,610
+X stop plot e do X come a Y.
+
+11
+00:00:57,840 --> 00:01:01,200
+E questo è un riferimento alla stessa xey con cui abbiamo lavorato.
+
+12
+00:01:01,200 --> 00:01:04,490
+Quindi, se vado dentro e trama, ottengo qualcosa che assomiglia a questo.
+
+13
+00:01:04,500 --> 00:01:12,480
+Ora posso modificare questo colore della trama inserendo il parametro del colore e la première del colore può effettivamente
+
+14
+00:01:12,480 --> 00:01:20,230
+assumere più argomenti che possono assumere argomenti come stringhe di colori comuni come il blu o andiamo e
+
+15
+00:01:20,260 --> 00:01:27,790
+mettiamoci in arancione oppure puoi vedere quando una linea arancione o verde e ottieni una linea verde.
+
+16
+00:01:27,810 --> 00:01:29,260
+Quindi nomi di colori molto semplici.
+
+17
+00:01:29,280 --> 00:01:33,440
+Può effettivamente eccetto come stringa, se vuoi iniziare a diventare più dettagliato.
+
+18
+00:01:33,450 --> 00:01:39,550
+Puoi effettivamente inserire codici esadecimali RGV in modo da poter inserire il tag hash e quindi alcuni RG
+
+19
+00:01:39,850 --> 00:01:45,420
+essere codice esadecimale come go Gaudens copiare questo dal notebook f f 8 C 0 0.
+
+20
+00:01:45,690 --> 00:01:47,260
+Whoops è.
+
+21
+00:01:47,730 --> 00:01:49,600
+E questo ti porta in più colore personalizzato.
+
+22
+00:01:49,890 --> 00:01:58,890
+Quindi puoi andare avanti e cercare su Google per il creatore del codice RSGB X o Creator e dovresti avere
+
+23
+00:01:58,890 --> 00:02:00,920
+molti strumenti disponibili gratuitamente online.
+
+24
+00:02:00,920 --> 00:02:06,510
+creare un colore molto personalizzato per colori molto basici, in pratica tipi di colori Crayola come il viola.
+
+25
+00:02:06,510 --> 00:02:11,050
+In realtà stiamo arrivando con questi codici esadecimali G-B nel caso in cui si desideri
+
+26
+00:02:11,100 --> 00:02:16,200
+Dovresti essere in grado di tracciarli facilmente e passare la stringa.
+
+27
+00:02:16,200 --> 00:02:18,660
+OK, ecco le basi dei colori.
+
+28
+00:02:18,660 --> 00:02:24,480
+Ora parliamo di linea con e stile di linea se vuoi modificare la linea con.
+
+29
+00:02:24,510 --> 00:02:31,410
+In realtà, puoi semplicemente passare in riga come argomenti e inserire un numero.
+
+30
+00:02:31,410 --> 00:02:38,230
+Ad esempio, se ne inseriamo una che è essenzialmente la linea di default con cui vogliamo andare al doppio del
+
+31
+00:02:38,230 --> 00:02:40,790
+default e che linea è uguale a 2.
+
+32
+00:02:40,890 --> 00:02:43,830
+E questo raddoppierà la larghezza che possiamo continuare a fare.
+
+33
+00:02:43,830 --> 00:02:49,920
+Se voglio una linea molto spessa come con uguale a 20, è 20 volte lo spessore della linea di default.
+
+34
+00:02:50,400 --> 00:02:55,680
+O se vuoi una linea molto sottile come avere lo spessore predefinito 0. 5 puoi iniziare a diventare
+
+35
+00:02:55,680 --> 00:02:56,990
+sempre più magro.
+
+36
+00:02:57,010 --> 00:03:04,650
+Un altro suggerimento molto utile per quanto riguarda la visibilità della linea e della linea sono gli argomenti alfa quindi
+
+37
+00:03:04,650 --> 00:03:12,150
+vai avanti e imposta la mia linea uguale alla linea con tre e puoi specificare l'argomento alfa che ti
+
+38
+00:03:12,150 --> 00:03:15,560
+permette di controllare in pratica la trasparenza della linea.
+
+39
+00:03:15,570 --> 00:03:21,130
+Quindi posso dire che Alpha è uguale a 0. 5.
+
+40
+00:03:21,330 --> 00:03:26,020
+E se lo eseguo ora posso vedere che abbiamo effettivamente un po 'più di trasparenza su questa linea.
+
+41
+00:03:26,160 --> 00:03:33,050
+Quindi puoi combinare la linea di colore con un alfa per ottenere l'aspetto esatto che desideri.
+
+42
+00:03:33,060 --> 00:03:37,880
+Un'ultima cosa da notare qui è per la mano corta in realtà non è necessario digitare in linea con completamente.
+
+43
+00:03:38,280 --> 00:03:43,390
+Puoi semplicemente digitare LW e funzionerà ancora bene.
+
+44
+00:03:43,830 --> 00:03:44,580
+OK.
+
+45
+00:03:44,580 --> 00:03:49,230
+Quindi stiamo parlando della linea con il colore e Alpha e rimuoverò la chiamata alfa.
+
+46
+00:03:49,230 --> 00:03:56,700
+Ora parliamo di stile della linea, così posso digitare lo stile della linea e lo stile della linea, ci sono alcune opzioni e sono
+
+47
+00:03:56,700 --> 00:04:00,690
+elencate nel tuo taccuino che in pratica definisce semplicemente lo stile della linea
+
+48
+00:04:00,690 --> 00:04:03,270
+come una linea tratteggiata o una linea tratteggiata.
+
+49
+00:04:03,270 --> 00:04:10,230
+Ad esempio se una persona due trattini finisco per ottenere una linea tratteggiata e solo passando questo come una stringa o io
+
+50
+00:04:10,710 --> 00:04:14,910
+passo e un trattino e poi un punto ottengo il tipo di linea tratteggiata.
+
+51
+00:04:14,910 --> 00:04:19,140
+Quindi punti dash point dash e poi ci sono un paio di altre opzioni pitch.
+
+52
+00:04:19,200 --> 00:04:26,760
+Due punti che mi procurano questi trattini più piccoli qui e puoi controllare il quaderno di Giove per questa lezione per vedere
+
+53
+00:04:26,940 --> 00:04:28,350
+quali altre opzioni hai.
+
+54
+00:04:28,350 --> 00:04:31,140
+E poi puoi fare dei passi all'ora.
+
+55
+00:04:31,200 --> 00:04:33,150
+Uso raramente quelli.
+
+56
+00:04:33,210 --> 00:04:39,440
+Molto spesso farò solo una linea tratteggiata o se metti solo un trattino è solo una linea continua.
+
+57
+00:04:39,720 --> 00:04:40,360
+OK.
+
+58
+00:04:40,590 --> 00:04:44,040
+E proprio come con la linea con te in realtà non è necessario digitare in stile linea.
+
+59
+00:04:44,160 --> 00:04:49,850
+Basta mettere ls e finirà per funzionare lo stesso.
+
+60
+00:04:50,250 --> 00:04:50,890
+OK.
+
+61
+00:04:50,910 --> 00:04:53,630
+Quindi abbiamo parlato della linea e dello stile della linea.
+
+62
+00:04:53,640 --> 00:04:55,390
+Ora parliamo di indicatori.
+
+63
+00:04:55,530 --> 00:04:59,380
+Quindi i marcatori saranno usati quando hai pochi punti dati.
+
+64
+00:04:59,400 --> 00:05:06,510
+è, possiamo vedere che la x è solo una matrice di andare avanti e controllare la lunghezza x di 11 punti.
+
+65
+00:05:06,570 --> 00:05:10,510
+Per esempio se diamo un'occhiata a X come promemoria di ciò che
+
+66
+00:05:10,530 --> 00:05:14,940
+Diciamo che in realtà volevamo segnare se questi 11 punti si verificano su questa trama.
+
+67
+00:05:15,270 --> 00:05:25,190
+Bene, posso specificare un marcatore come un nuovo argomento dovrebbe essere una virgola e quindi posso passare in una stringa.
+
+68
+00:05:25,260 --> 00:05:28,310
+Quindi ci sono molti possibili simboli marker e sono elencati nel tuo taccuino.
+
+69
+00:05:28,320 --> 00:05:33,390
+Ma la più elementare in comune è solo questa O minuscola come una stringa.
+
+70
+00:05:33,390 --> 00:05:41,550
+E qui puoi iniziare a vedere alcuni punti che segnano fondamentalmente ogni punto su X contro Y qui
+
+71
+00:05:41,550 --> 00:05:45,110
+e c'è una grande varietà di marcatori disponibili.
+
+72
+00:05:45,150 --> 00:05:46,260
+Sono tutti elencati nel taccuino.
+
+73
+00:05:46,260 --> 00:05:50,700
+Ma solo per mostrarti una coppia che sa fare cose come i segni più che non
+
+74
+00:05:51,000 --> 00:05:54,760
+si mostrano troppo bene qui puoi fare cose come piccole stelle come simboli Asterix.
+
+75
+00:05:54,870 --> 00:06:01,110
+Puoi fare cose come passare questi codici numerici. Io farò la linea con un po
+
+76
+00:06:01,110 --> 00:06:04,470
+'più sottile così puoi vedere questi marcatori qui.
+
+77
+00:06:04,960 --> 00:06:07,050
+Quindi volevamo rendere questi marcatori più grandi.
+
+78
+00:06:07,200 --> 00:06:13,050
+Bene, potreste aver indovinato che la dimensione dell'indicatore non è argomenti, quindi potete andare avanti e specificare la
+
+79
+00:06:13,060 --> 00:06:17,010
+dimensione dell'indicatore e in sostanza solo una è la dimensione molto piccola.
+
+80
+00:06:17,010 --> 00:06:19,840
+E poi se vuoi renderlo un po 'più grande puoi dire 10.
+
+81
+00:06:19,890 --> 00:06:22,310
+E qui possiamo iniziare a vedere questo tipo di triangoli nella forma.
+
+82
+00:06:22,310 --> 00:06:29,280
+Quindi andiamo a dire solo enormi indicatori a 20 e poi possiamo specificare i marcatori di tipo ear 2.
+
+83
+00:06:29,700 --> 00:06:35,790
+Puoi dire di più otteniamo questi regali qui ecc. quindi tutte queste opzioni sono elencate nella documentazione.
+
+84
+00:06:36,000 --> 00:06:39,690
+E, cosa più importante nel tuo quaderno di Giove, dice che ci sono così tanti
+
+85
+00:06:39,690 --> 00:06:42,940
+diversi tipi di stringhe che puoi inserire come marcatore per i codici dei marcatori.
+
+86
+00:06:44,520 --> 00:06:49,120
+E se vuoi davvero personalizzare i tuoi marcatori, per esempio, vai avanti e rimettilo
+
+87
+00:06:49,190 --> 00:06:54,150
+in minuscolo Oh, quindi qui prendiamo questi punti per cambiare questa linea con uno indietro.
+
+88
+00:06:54,300 --> 00:06:58,410
+In realtà ci sono alcune opzioni per specificare che aspetto ha l'indicatore.
+
+89
+00:06:58,410 --> 00:07:03,690
+È possibile specificare il colore della faccia del marker con il bordo del marker e il colore del bordo dell'indicatore.
+
+90
+00:07:03,690 --> 00:07:06,520
+Quindi per prima cosa uscirà e aggiungerà questi argomenti.
+
+91
+00:07:06,670 --> 00:07:09,910
+Quindi basta premere la virgola per inserire una nuova riga.
+
+92
+00:07:10,110 --> 00:07:12,390
+E sto per uscire e dire Mark faccia a colori
+
+93
+00:07:15,710 --> 00:07:17,740
+e puoi specificare il colore del viso del marcatore.
+
+94
+00:07:17,760 --> 00:07:19,800
+Quindi saranno il colore all'interno di quel cerchio.
+
+95
+00:07:19,800 --> 00:07:22,590
+Andiamo avanti e rendiamolo giallo e gestiscilo.
+
+96
+00:07:22,830 --> 00:07:24,800
+E questo ha cambiato il colore del viso.
+
+97
+00:07:24,810 --> 00:07:32,700
+Diciamo che voglio cambiare il bordo del marker con I go e modificare anche quello.
+
+98
+00:07:32,700 --> 00:07:37,440
+Rendila un po 'più spessa, ad esempio tre che diventa un po' più spessa e diciamo che in
+
+99
+00:07:37,440 --> 00:07:39,750
+realtà vuoi specificare il colore del bordo del pennarello.
+
+100
+00:07:39,750 --> 00:07:43,640
+Posso specificare un colore del bordo del marker.
+
+101
+00:07:43,640 --> 00:07:46,650
+Ora andiamo a renderlo verde.
+
+102
+00:07:46,650 --> 00:07:46,990
+Tutto ok.
+
+103
+00:07:47,010 --> 00:07:52,860
+che c'è un sacco di capacità di personalizzare qui e ci sono molte opzioni se vuoi vedere un sacco di esempi di diverse
+
+104
+00:07:52,860 --> 00:07:56,520
+opzioni che puoi andare avanti e saltare al quaderno di Giove per questa lezione.
+
+105
+00:07:56,520 --> 00:07:57,250
+Quindi puoi vedere
+
+106
+00:07:57,270 --> 00:07:59,460
+Devo andare avanti e farlo ora.
+
+107
+00:07:59,640 --> 00:08:04,290
+Andrà avanti e fare clic su e se vedi qui sulla mappa lezione di concetti di Cutlip.
+
+108
+00:08:04,350 --> 00:08:08,380
+In questo momento siamo nel marcatore di linee di sezione e negli stili di linea e marcatori.
+
+109
+00:08:08,700 --> 00:08:15,000
+Qui c'è fondamentalmente una figura in cui abbiamo detto a sei sulle sottotrame la prima dimensione della figura e abbiamo
+
+110
+00:08:15,000 --> 00:08:19,830
+fatto un sacco di trame e modificato i colori della linea con gli stili di linea.
+
+111
+00:08:19,830 --> 00:08:23,130
+E qui ci sono un sacco di esempi per poter andare avanti e leggerli.
+
+112
+00:08:23,160 --> 00:08:28,020
+un altro possibile, i simboli marker sono tutti qui come commenti o tipi di celle alleate ecc.
+
+113
+00:08:28,020 --> 00:08:29,070
+E se stai cercando Quindi ci sono molti
+
+114
+00:08:29,100 --> 00:08:33,690
+esempi diversi qui in una specie di copia e incolla da o costruire le tue conoscenze al di fuori di.
+
+115
+00:08:33,690 --> 00:08:35,100
+Infine parliamo del controllo sulla perienza di accesso e sull'intervallo di trama.
+
+116
+00:08:35,160 --> 00:08:39,540
+E se torniamo al nostro taccuino originale qui sopra
+
+117
+00:08:39,780 --> 00:08:46,860
+possiamo andare avanti e mostrare come possiamo impostare il limite Y e il limite.
+
+118
+00:08:46,860 --> 00:08:48,410
+Faremo di nuovo solo una trama molto semplice.
+
+119
+00:08:48,480 --> 00:08:51,180
+Andiamo avanti e rendiamo questa linea uguale e facciamo in modo che lo stile di vita diventi un po 'tratteggiato.
+
+120
+00:08:51,190 --> 00:08:57,900
+Ok fantastico.
+
+121
+00:08:58,560 --> 00:08:59,730
+Diciamo che volevo solo mostrare il grafico tra 0 e 1 sull'asse x.
+
+122
+00:08:59,730 --> 00:09:04,650
+Bene, per farlo basta cancellare l'accesso e quindi pronunciare set
+
+123
+00:09:04,860 --> 00:09:13,920
+underscore X Lim e quindi si passa a un elenco con un limite inferiore e un limite superiore.
+
+124
+00:09:13,980 --> 00:09:15,830
+Quindi andremo da 0 a 1.
+
+125
+00:09:15,990 --> 00:09:18,750
+E qui possiamo vedere che abbiamo impostato il limite inferiore un limite superiore dell'asse x.
+
+126
+00:09:19,440 --> 00:09:24,720
+Ora andiamo avanti e facciamo la stessa cosa per il perché limitare solo gli assi chiari e poi dire
+
+127
+00:09:24,720 --> 00:09:30,510
+set sottolineano perché Lim e come elenco si passa un limite superiore e limiti inferiori più bassi di quella virgola zero.
+
+128
+00:09:30,570 --> 00:09:37,380
+Facciamo il limite superiore.
+
+129
+00:09:37,380 --> 00:09:38,460
+Quindi basta metterlo a 2.
+
+130
+00:09:38,470 --> 00:09:41,380
+Ora possiamo vedere questa trama.
+
+131
+00:09:41,390 --> 00:09:42,810
+E notiamo che mentre ingrandiamo la trama sembra
+
+132
+00:09:42,860 --> 00:09:47,790
+sempre più una serie di linee rette che collegano punti che ha senso perché non abbiamo tanti dettagli di SR di soli 11 punti quando rimpiccioliamo.
+
+133
+00:09:48,090 --> 00:09:53,020
+Vediamo più linee curve e possiamo aggiustarle ottenendo più punti dati o riducendo lo zoom.
+
+134
+00:09:53,040 --> 00:09:59,030
+Va bene, infine, voglio tornare indietro molto velocemente alla mappa. Concetti sui
+
+135
+00:09:59,030 --> 00:10:04,590
+concetti di Partlow e parlare di questi tipi di trama speciali.
+
+136
+00:10:04,590 --> 00:10:06,490
+di grafici a barre e grafici a dispersione.
+
+137
+00:10:06,510 --> 00:10:11,280
+Ci sono molti e molti tipi di grafici specializzati che puoi fare con la lib di traccia MAP come istogrammi
+
+138
+00:10:11,550 --> 00:10:13,520
+La maggior parte di questi tipi di trama erano
+
+139
+00:10:13,560 --> 00:10:18,390
+effettivamente utilizzati in un'altra libreria di visualizzazione chiamata Seaborn, che è molto più adatta per questi tipi di metodi di tracciamento statistico.
+
+140
+00:10:18,750 --> 00:10:21,960
+Ma solo per dimostrarti che puoi farlo nella mia vita.
+
+141
+00:10:22,080 --> 00:10:24,790
+È possibile eseguire lo scatterplot come questo,
+
+142
+00:10:25,020 --> 00:10:31,400
+è possibile eseguire istogrammi usando quella trama dal vivo o anche le cose come i grafici a scatola.
+
+143
+00:10:31,400 --> 00:10:33,120
+E qui ci sono alcuni esempi per te.
+
+144
+00:10:33,120 --> 00:10:34,760
+del progetto che ha tracciato e un link.
+
+145
+00:10:35,100 --> 00:10:40,260
+Ora nella parte inferiore del tuo quaderno Jupiter per questa lezione vedrai una serie di link per ulteriori letture tra cui la pagina web
+
+146
+00:10:40,260 --> 00:10:43,960
+Mi piace davvero tutto fino in fondo.
+
+147
+00:10:43,980 --> 00:10:47,440
+Questo Lorieau è davvero un bel collegamento.
+
+148
+00:10:47,790 --> 00:10:51,590
+È un tutorial di lib della mappa.
+
+149
+00:10:51,600 --> 00:10:53,740
+Spero che tu sappia davvero un bel po 'adesso guardando queste tre conferenze che abbiamo appena fatto.
+
+150
+00:10:53,880 --> 00:10:58,170
+Ma quello che mi piace di questo link è che è essenzialmente solo un codice di riferimento.
+
+151
+00:10:58,300 --> 00:11:02,710
+Quindi se vuoi cambiare i colori in linea con puoi entrare e controllare questo link.
+
+152
+00:11:02,790 --> 00:11:05,910
+Basta guardare le cifre e ti dirà come impostare le zecche sulle etichette dei segni di graduazione, ecc. Spostare le spine aggiungendo leggende.
+
+153
+00:11:05,940 --> 00:11:10,040
+Molti di questi punti sono in realtà nell'altro libro delle note per questa serie di conferenze
+
+154
+00:11:10,170 --> 00:11:12,180
+intitolata La trama avanzata della cartella lib Notebook.
+
+155
+00:11:12,180 --> 00:11:17,620
+Per il momento, non avremo una conferenza video su questi argomenti avanzati perché non li
+
+156
+00:11:17,630 --> 00:11:20,010
+useremo troppo spesso durante il corso.
+
+157
+00:11:20,550 --> 00:11:25,680
+Di fatto, per la maggior parte del corso utilizzeremo Seaborn.
+
+158
+00:11:25,680 --> 00:11:27,390
+OK.
+
+159
+00:11:27,390 --> 00:11:30,650
+Il prossimo passo è una rapida panoramica della trama senza trama e quindi avrai una panoramica
+
+160
+00:11:30,720 --> 00:11:31,440
+delle soluzioni per quell'esercizio.
+
+161
+00:11:31,620 --> 00:11:37,260
+Per ora vai avanti e tieni a bada questi tipi di trama speciali e aspetta che impariamo a usare Seaborn, che sarà molto meglio
+
+162
+00:11:37,260 --> 00:11:39,150
+equipaggiato per questo tipo di trame statistiche meravigliose.
+
+163
+00:11:39,240 --> 00:11:44,520
+Va bene.
+
+164
+00:11:44,700 --> 00:11:48,400
+Grazie a tutti e ci vediamo alla prossima lezione.
+
+165
+00:11:48,660 --> 00:11:49,110
+&nbsp;
+
+166
+00:11:49,380 --> 00:11:51,610
+&nbsp;

@@ -1,0 +1,399 @@
+1
+00:00:05,340 --> 00:00:10,050
+Herkese merhaba ve Seaborn alıştırmalarının çözümünün dersine hoş geldiniz.
+
+2
+00:00:10,050 --> 00:00:12,990
+Denizci alıştırmaları için çözümler üzerinde duracağız.
+
+3
+00:00:12,990 --> 00:00:16,320
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+4
+00:00:16,320 --> 00:00:22,170
+İşte burada Jupiter defterindeyiz, verileri aldık ve yükledik
+
+5
+00:00:22,170 --> 00:00:26,550
+ve çoğaltmak istediğimiz ilk kareye atlayacağız.
+
+6
+00:00:26,550 --> 00:00:31,860
+Tamamen bu arsayı incelemek umarım bunun bir dağılım arsa olduğunu ve aslında birbirinin
+
+7
+00:00:31,860 --> 00:00:37,380
+üstünde iki dağılım gösterdiğinizden dolayı ortak bir arsa olduğunu söyleyebilirsiniz ve daha sonra
+
+8
+00:00:37,380 --> 00:00:42,690
+bunu okuyabilirdiniz ve bunun yaşa karşı adil olduğunu gördünüz demektir veri setinin
+
+9
+00:00:42,690 --> 00:00:45,210
+Hadi devam edelim ve sana nasıl çalıştırabileceğimizi göstereceğim.
+
+10
+00:00:45,230 --> 00:00:47,430
+Bu çizgiyi tekrar yürüteceğiz.
+
+11
+00:00:47,430 --> 00:00:53,990
+Aslında her şeyi doğru bir şekilde aktarırım ve sonra devam edip kodumu yazacağım.
+
+12
+00:00:54,060 --> 00:01:00,270
+Bu, ortak bir arsa bu fuara sahip olduğunuz
+
+13
+00:01:04,020 --> 00:01:14,910
+ve y eksende yaşınızdadır ve veri setimiz sadece Titanik veridir ve sizin için o
+
+14
+00:01:14,910 --> 00:01:16,030
+arsayı çoğaltır.
+
+15
+00:01:16,110 --> 00:01:18,430
+Yine sadece ortak bir arsa.
+
+16
+00:01:18,720 --> 00:01:19,480
+Tamam.
+
+17
+00:01:19,530 --> 00:01:22,490
+Sıradaki dağıtım şeması geliyor.
+
+18
+00:01:22,710 --> 00:01:29,460
+Ve bu bir arsa bu yüzden Asinus'a bu arsayı görebilirsiniz.
+
+19
+00:01:30,630 --> 00:01:36,090
+Titanik ve daha sonra geçmek ve istediğimiz sütun ve burada alt kısmına bakarsak, bu
+
+20
+00:01:36,090 --> 00:01:36,880
+Fuar sütunudur.
+
+21
+00:01:36,900 --> 00:01:39,270
+Böylece Fuar sütununun dağılımı.
+
+22
+00:01:39,450 --> 00:01:44,910
+Bu çizgiyi kendiliğinden yeni bir arsa olarak koymaya bırakayım.
+
+23
+00:01:45,160 --> 00:01:45,710
+Tamam.
+
+24
+00:01:45,720 --> 00:01:50,430
+arsa, Cady'leri kaldırmak için yapmak istediğiniz bir şeyi görür görmez ne elde edersiniz.
+
+25
+00:01:50,430 --> 00:01:52,740
+Dolayısıyla, bu komplonun çoğaltılması için bu
+
+26
+00:01:52,750 --> 00:02:00,760
+Bu yüzden burada gidip yanlış sahtekarlık söylemek istiyorum ve şimdi biraz daha yaklaşıyoruz.
+
+27
+00:02:00,810 --> 00:02:05,050
+Burada dikkat edilmesi gereken başka bir şey, rengin kırmızı olmasıdır.
+
+28
+00:02:05,270 --> 00:02:11,280
+Bu nedenle, talimatlardan da bahsettiğim gibi, gerçek renkler hakkında çok fazla endişelenmenize gerek kalmamasına
+
+29
+00:02:11,280 --> 00:02:14,010
+karşın, rengi kırmızıya eşit olarak belirtebilirsiniz.
+
+30
+00:02:14,280 --> 00:02:17,510
+Ayrıca fuarda daha az eğilme var.
+
+31
+00:02:17,670 --> 00:02:23,310
+Bazı kutuların numaralarını denedikten sonra kutunun arsa için yaklaşık 30
+
+32
+00:02:23,820 --> 00:02:24,820
+olduğunu keşfedebilirsiniz.
+
+33
+00:02:24,990 --> 00:02:27,020
+Ve işte asıl kod budur.
+
+34
+00:02:27,130 --> 00:02:28,920
+Dağılım arsası.
+
+35
+00:02:28,980 --> 00:02:35,730
+Bu durumda, bu çizim Titanik fuarı yanlış ve daha sonra bazı ek bilgiler bidonlarda okunur.
+
+36
+00:02:36,030 --> 00:02:39,830
+Kırmızı olsun ya da çöp kutusunun argümanı hakkında endişelenmeyin.
+
+37
+00:02:39,840 --> 00:02:45,090
+Seni tanımakla gerçekten endişelendiğim tek şey, bunun Kartal Sütunundaki Eagles'in sahte
+
+38
+00:02:45,180 --> 00:02:47,400
+olduğu bir arsa olması.
+
+39
+00:02:47,400 --> 00:02:49,290
+Tamam sonraki çizgiye geçin.
+
+40
+00:02:49,290 --> 00:02:55,860
+Bu açıkça bir kutu arsa ve sınıf, x ekseni üzerinde ve yaş y ekseni üzerinde benziyor.
+
+41
+00:02:56,190 --> 00:02:58,440
+Hadi devam edelim ve bunu kontrol et.
+
+42
+00:02:58,880 --> 00:03:08,910
+Bunu yapmak için sınıfta olduğu gibi Sinistar kutu arsa olarak söylemek zorunda olduğunuz ve daha sonra y
+
+43
+00:03:09,030 --> 00:03:15,320
+için yaşı geçtikten sonra veriler Titanik veri setine eşit demektir.
+
+44
+00:03:15,360 --> 00:03:16,670
+Devam edip koşturabiliriz.
+
+45
+00:03:16,770 --> 00:03:21,750
+Alınamamış olmasın önemli olmayan son bir şey ama gerçek renk şeması
+
+46
+00:03:21,780 --> 00:03:22,900
+gökkuşağının renk şemasıdır.
+
+47
+00:03:22,920 --> 00:03:27,900
+Böylece paletleri Rainbow'a eşit olarak belirleyebiliriz.
+
+48
+00:03:27,900 --> 00:03:31,830
+varmanızı ve daha sonra Y'ye karşı Y'yi okuyup bunu doldurabilmenizi isterim.
+
+49
+00:03:31,830 --> 00:03:36,540
+Ve renk eşleşmesini sağlayabilseydik yine de endişelenmeyin, sadece bunun bir kutu arsa olduğunun farkına
+
+50
+00:03:36,810 --> 00:03:41,580
+Bir diğerine geçmek biraz daha hileli geliyor, çünkü yapmanız
+
+51
+00:03:41,580 --> 00:03:51,540
+gereken sürü arsa, sürü arsa ve bu aslında her sınıfın yaşına kadar her şeyi aynı anda söylemek demek aslında
+
+52
+00:03:51,630 --> 00:03:53,780
+sadece buraya gelebilir demektir .
+
+53
+00:03:53,880 --> 00:04:01,030
+Kopyaladığınız tüm bu işlemleri yapıyor ve paleti de içeren her şeyi kopyalayıp sadece bir arsa oluşturuyor.
+
+54
+00:04:01,040 --> 00:04:04,970
+Bu, gösterdiğimiz kutu planının Suaram komplo versiyonudur.
+
+55
+00:04:05,100 --> 00:04:07,960
+Ve bu renk şeması durumda ne olduğunu merak ediyorsunuz.
+
+56
+00:04:08,070 --> 00:04:14,310
+renk şemasına ayarlanır, ancak rengin doğru gibi görünmemesi halinde yine endişelenmeyin.
+
+57
+00:04:14,310 --> 00:04:14,670
+Aslında
+
+58
+00:04:14,680 --> 00:04:19,890
+Bu, doğru olabilmem için ne istediğimi önemsiyorsa x y ve sürü arsa
+
+59
+00:04:19,900 --> 00:04:21,080
+için veri kaynağıdır.
+
+60
+00:04:21,540 --> 00:04:25,290
+Kontrol etmek istediğimiz bir diğer şey de bu çubuktur.
+
+61
+00:04:25,290 --> 00:04:28,260
+Ancak burada saydığına dikkat edin.
+
+62
+00:04:28,270 --> 00:04:36,070
+Aslında bir karşı gösterimdir ve saymak istediğiniz sütunu geçerken sadece S ve S sayaçlarını söyleyerek bir
+
+63
+00:04:36,120 --> 00:04:37,210
+sayaç oluşturabilirsiniz.
+
+64
+00:04:37,230 --> 00:04:46,530
+veri kaynağımızdaki seks sütununa Titanik veri çerçevesi bakalım burada bir göz atalım ve oradaki çizim budur.
+
+65
+00:04:46,530 --> 00:04:47,730
+Bu durumda
+
+66
+00:04:47,730 --> 00:04:52,830
+Renk şeması, burada bu çizgiye sahip olduğumuz orijinal renk şemasıdır.
+
+67
+00:04:52,830 --> 00:04:54,170
+Biraz daha aldatıcı geliyor.
+
+68
+00:04:54,450 --> 00:05:02,640
+Negatif 1 arasında değerlerimiz olduğunu ve bir kez bu serin haritalardan gittiğine dikkat edin ve diğer
+
+69
+00:05:02,640 --> 00:05:09,990
+ipucu buradadır, başlığın titanyum olduğunu fark edebilirsiniz. Nokta corrc açıkça bir korelasyon arsa ve
+
+70
+00:05:09,990 --> 00:05:12,780
+heape haritasını kullanmak istiyoruz bu.
+
+71
+00:05:12,780 --> 00:05:15,730
+Böylece devam edip bunu yapacağız.
+
+72
+00:05:15,870 --> 00:05:27,510
+paston Titanik koyu çekirdeğini söyleyeceğiz ve aynı zamanda deniz haritasının serin sıcaklığına eşit olduğunu söyleyebiliriz.
+
+73
+00:05:27,510 --> 00:05:31,050
+Asinus ısı haritasını ve
+
+74
+00:05:31,050 --> 00:05:34,580
+Ve bu çözümler dizüstü bilgisayarındaki çizimi çoğaltacak.
+
+75
+00:05:34,590 --> 00:05:38,980
+Ayrıca bu P adlı bir başlık ekledim. L. Titanic başlığı var.
+
+76
+00:05:39,000 --> 00:05:44,670
+Parantezleri kapatın.
+
+77
+00:05:44,670 --> 00:05:45,540
+Aslında bu,
+
+78
+00:05:45,540 --> 00:05:49,590
+bilginin gerçekte olduğu şekliyle şekle bakarken size bir ipucu vermek içindi.
+
+79
+00:05:49,590 --> 00:05:51,270
+Tamam.
+
+80
+00:05:51,270 --> 00:05:51,960
+satır halinde yapılacak.
+
+81
+00:05:51,960 --> 00:05:56,210
+Hadi devam edelim ve biraz zor olan son çizime geçelim, çünkü bu Fassett ızgara sistemini kullanıyor iki
+
+82
+00:05:56,210 --> 00:05:59,220
+Öncelikle, aslında ne yaptığımıza bir göz atalım.
+
+83
+00:05:59,220 --> 00:06:01,520
+Sütun seks eşittir erkek ve seks kadın eşittir gibi görünüyor.
+
+84
+00:06:01,680 --> 00:06:05,420
+Bu nedenle, Titanik'e eşit veri ve
+
+85
+00:06:05,460 --> 00:06:15,210
+sütun cinsiyete göre ayrılmış bir Fassett ızgarası oluşturmak istiyoruz ve arama seks değerine eşit.
+
+86
+00:06:15,450 --> 00:06:18,950
+Ve daha sonra daha önceki örneklerde yaptığımız gibi,
+
+87
+00:06:19,170 --> 00:06:24,840
+girecek olanı ayarlayacağım ve daha sonra haritaya gideceğim, bunun bir histogram olduğu anlaşılıyor.
+
+88
+00:06:24,840 --> 00:06:27,780
+Dolayısıyla bunu yapmanın farklı yolları var.
+
+89
+00:06:27,960 --> 00:06:29,330
+Ancak en kolay
+
+90
+00:06:29,340 --> 00:06:34,590
+yol, en yüksek seviyeyi soymak demektir ve argümanlar aslında yaşının histogramını yapmak istemektedir.
+
+91
+00:06:34,590 --> 00:06:35,960
+Böylece yapmış olabileceğiniz şeyi benzer bir plan elde etmek için yapmış olabilirsiniz.
+
+92
+00:06:36,300 --> 00:06:41,320
+Tam da aynı, sadece K'nin gösterildiği bu türden bir arsa.
+
+93
+00:06:41,430 --> 00:06:47,090
+TAMAM.
+
+94
+00:06:47,600 --> 00:06:48,190
+Umarım bu ilginç
+
+95
+00:06:48,540 --> 00:06:53,730
+buluyorsunuzdur ve umarım, doğru bir şekilde kurduğunuz veriyi çerçevelediğiniz sürece güzel görselleştirme ve çok az kod satırı yaratmak için denizin gerçek gücünü bulmuş olursunuz.
+
+96
+00:06:53,730 --> 00:06:58,800
+TAMAM.
+
+97
+00:06:59,610 --> 00:07:00,360
+Devam edin ve
+
+98
+00:07:00,360 --> 00:07:04,530
+sorularınızı Q &amp; A forumlarına postalayın ve Juber'in yeni kitabını kontrol edin, daha fazla referans kodu istiyorsanız.
+
+99
+00:07:04,530 --> 00:07:06,270
+Herkese teşekkürler, bir sonraki derside görüşürüz.
+
+100
+00:07:06,270 --> 00:07:08,180
+&nbsp;

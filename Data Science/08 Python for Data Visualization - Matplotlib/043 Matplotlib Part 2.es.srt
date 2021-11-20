@@ -1,0 +1,807 @@
+1
+00:00:05,460 --> 00:00:09,580
+Hola a todos y bienvenidos a la serie Partlet de parte de la serie de conferencias.
+
+2
+00:00:09,690 --> 00:00:14,280
+Vamos a retomar justo donde lo dejamos en la primera parte donde aprendemos acerca de la programación
+
+3
+00:00:14,280 --> 00:00:15,270
+funcional con esa trama.
+
+4
+00:00:15,420 --> 00:00:18,990
+Y más importante aún, los métodos orientados a objetos con Matt plotless.
+
+5
+00:00:19,110 --> 00:00:22,040
+Avancemos y volvamos al cuaderno de Júpiter para comenzar.
+
+6
+00:00:22,250 --> 00:00:22,540
+DE ACUERDO.
+
+7
+00:00:22,560 --> 00:00:28,200
+Aquí estoy de vuelta en el número de cuaderno de Júpiter de la última vez que aprendimos cómo usar
+
+8
+00:00:28,200 --> 00:00:35,600
+esa figura y luego calcular el eje y luego los ejes de esa trama para dibujar en una figura orientada a objetos usando ese diagrama.
+
+9
+00:00:36,390 --> 00:00:41,940
+Lo siguiente que vamos a hacer es aprender a crear subtramas usando el mismo método de programación
+
+10
+00:00:41,940 --> 00:00:42,950
+orientado a objetos.
+
+11
+00:00:42,990 --> 00:00:51,600
+Voy a seguir adelante y decir Aquí, vamos a aclarar todo en esta celda y vamos a seguir y decir
+
+12
+00:00:51,630 --> 00:01:02,790
+esto y mover la celda al centro y diremos que los ejes de coma de higo equivale a pelar T y en su lugar of calling figure
+
+13
+00:01:02,790 --> 00:01:08,900
+ahora dice que vamos a intentar hacer subtramas, vamos a decir subtramas, así que apela
+
+14
+00:01:08,910 --> 00:01:10,340
+a las subtramas.
+
+15
+00:01:10,500 --> 00:01:12,270
+Avancemos y ejecutemos esto.
+
+16
+00:01:12,570 --> 00:01:15,600
+Y note que aquí obtenemos subtramas.
+
+17
+00:01:15,600 --> 00:01:20,790
+Ahora lo que puedo hacer es usar el objeto de ejes como lo he hecho antes para trazarlo.
+
+18
+00:01:21,090 --> 00:01:25,400
+Y esto no es esencialmente diferente de lo que estábamos haciendo antes.
+
+19
+00:01:25,710 --> 00:01:32,040
+Y aquí dijo que X es que la trama x viene una Y donde las subtramas difieren es donde se puede especificar
+
+20
+00:01:32,040 --> 00:01:33,610
+el número de filas y columnas.
+
+21
+00:01:33,810 --> 00:01:42,420
+Por ejemplo, puedo decir y filas, ya que mi primer argumento es igual a 1 y las llamadas ya que mi segundo
+
+22
+00:01:42,420 --> 00:01:44,330
+argumento es igual a dos.
+
+23
+00:01:44,700 --> 00:01:49,970
+Y voy a seguir adelante y solo mostrarles lo que se parece a una etiqueta hash y ejecutar esto.
+
+24
+00:01:50,070 --> 00:01:57,660
+haciendo la trama es básicamente invocar estos ejes de higo automáticamente basándose en estos argumentos, filas y columnas.
+
+25
+00:01:57,660 --> 00:02:05,640
+Ahora puede ver que tengo una fila con dos columnas y eso es básicamente una buena manecilla frontal al llamar
+
+26
+00:02:05,670 --> 00:02:08,900
+a Piel T-Dog. La figura que también está
+
+27
+00:02:09,180 --> 00:02:12,540
+Sigamos adelante y demostremos un ejemplo más.
+
+28
+00:02:12,570 --> 00:02:20,440
+Tres filas vamos a entrar y decir tres columnas y ahora vemos que tenemos tres filas por tres columnas.
+
+29
+00:02:20,550 --> 00:02:25,770
+Más adelante veremos cómo lidiar con el problema de la superposición de cosas, pero básicamente se trata de una llamada de
+
+30
+00:02:25,770 --> 00:02:26,600
+una sola línea.
+
+31
+00:02:26,610 --> 00:02:34,720
+Solo decimos peel t Titely y eso en realidad termina arreglando esas superposiciones.
+
+32
+00:02:34,810 --> 00:02:41,270
+Vamos a dar un paso atrás y trabajar con esto uno por dos.
+
+33
+00:02:41,280 --> 00:02:41,670
+Todo bien.
+
+34
+00:02:41,760 --> 00:02:43,320
+Tenemos realty que subtramas.
+
+35
+00:02:43,320 --> 00:02:47,520
+Y, en esencia, es solo un administrador de ejes encima de Piel para esa figura.
+
+36
+00:02:47,550 --> 00:02:52,970
+Algo que hay que notar aquí es que en lugar de decir higo es igual a PBT, la figura que
+
+37
+00:02:52,990 --> 00:02:59,100
+estoy haciendo es una tupla y empaquetarlas diciendo que los ejes de coma de higo son iguales a los dientes de las
+
+38
+00:02:59,100 --> 00:03:07,290
+subtramas y lo que hay que saber sobre este objeto de ejes es si baje aquí Esta celda y tipo de hachas de ejes es en realidad solo una matriz
+
+39
+00:03:07,290 --> 00:03:13,710
+de ejes de libra de trazado de mapas, esencialmente es solo una lista de estos ejes, lo que significa que puedo iterar a través
+
+40
+00:03:13,710 --> 00:03:14,290
+de ella.
+
+41
+00:03:14,460 --> 00:03:29,950
+Puedo decir algo así para las letras de subrayado actuales X en los ejes de los ejes, trazo de puntos x venir a y.
+
+42
+00:03:30,020 --> 00:03:31,610
+En realidad, no quiero decir que X no es trama.
+
+43
+00:03:31,620 --> 00:03:40,450
+Quiero decir que la gráfica X stop actual y luego vemos que realmente hemos trazado a través de este eje.
+
+44
+00:03:40,710 --> 00:03:47,550
+De nuevo, esto es solo para mostrar que este objeto de ejes es esencialmente solo una lista de ejes de lib de mapa que son
+
+45
+00:03:47,550 --> 00:03:50,190
+los que usted creó manualmente cuando dijo la Fig.
+
+46
+00:03:50,250 --> 00:03:56,390
+Agregue los ejes de subrayado para aclarar que la única diferencia entre Pilani y las
+
+47
+00:03:56,460 --> 00:04:03,090
+subtramas es que Piel t las subtramas básicamente está haciendo esto en ejes de subrayado para
+
+48
+00:04:03,090 --> 00:04:08,470
+usted basándose automáticamente en la cantidad de filas y columnas que desea .
+
+49
+00:04:08,490 --> 00:04:09,170
+DE ACUERDO.
+
+50
+00:04:09,450 --> 00:04:13,600
+Como podemos iterar a través de este objeto de ejes, también podemos indexarlo.
+
+51
+00:04:13,620 --> 00:04:24,140
+Lo que significa que puedo decir que los ejes 0 trazados Dopp X vienen en forma de Y y que he trazado en este primer eje.
+
+52
+00:04:24,140 --> 00:04:25,090
+Ahora puedo hacer lo mismo.
+
+53
+00:04:25,090 --> 00:04:31,460
+El segundo puedo decir ejes 1 punto trama y coma x.
+
+54
+00:04:31,770 --> 00:04:40,300
+través de esta matriz de ejes y, al igual que vimos anteriormente, también podemos llamar a los títulos y etiquetas
+
+55
+00:04:40,300 --> 00:04:45,490
+para que pueda decir algo como xes 0 set title dirá primera
+
+56
+00:04:45,520 --> 00:05:03,180
+gráfica y luego diré que los ejes 1 subrayan la segunda trama del título y que el héroe puede llamar a los títulos y puede decir que las x etiquetas colocan la etiqueta y fuera de cualquiera de estos objetos de los ejes.
+
+57
+00:05:03,190 --> 00:05:09,580
+Y aquí vimos cómo indexar la oferta de la matriz de ejes o iterar a
+
+58
+00:05:09,640 --> 00:05:16,060
+Todo lo que estás haciendo es simplemente agarrar ese objeto de subtrama de ejes en función de su
+
+59
+00:05:16,060 --> 00:05:17,310
+posición en la matriz.
+
+60
+00:05:17,320 --> 00:05:17,770
+Todo bien.
+
+61
+00:05:17,980 --> 00:05:22,040
+Hagamos una revisión rápida de estos dos métodos orientados a objetos.
+
+62
+00:05:22,300 --> 00:05:24,330
+Este primer método es un poco más manual.
+
+63
+00:05:24,370 --> 00:05:26,380
+Es la figura de Piel T-Dog.
+
+64
+00:05:26,410 --> 00:05:32,650
+y tamaño, y luego, basándose en los ejes, sigues adelante y dijiste ese gráfico y ese título, etiqueta X, etiqueta y etc.
+
+65
+00:05:32,770 --> 00:05:39,880
+Continúa y creas esa figura, añades manualmente los ejes y eliges su ubicación que mostramos
+
+66
+00:05:39,880 --> 00:05:42,840
+ejemplos aquí.
+
+67
+00:05:42,970 --> 00:05:48,280
+El segundo método es para subtramas que desee ordenadas por columnas de Rosing.
+
+68
+00:05:48,280 --> 00:05:55,450
+Esto le permite llamar a los ejes de coma de higo para que tupla en empacar aquí sea igual a la llamada
+
+69
+00:05:55,480 --> 00:06:01,600
+de subtramas y luego, a partir de esos ejes, obtenga una matriz de ejes y pueda trazar y establecer
+
+70
+00:06:01,660 --> 00:06:05,300
+títulos indexando o iterando a través de ese objeto de ejes.
+
+71
+00:06:05,300 --> 00:06:12,760
+Y si alguna vez tiene algún problema con la superposición de las cosas, siempre puede decir que el parche T-top cierra
+
+72
+00:06:12,770 --> 00:06:16,470
+estrechamente y esto se encargará de todos los diagramas superpuestos.
+
+73
+00:06:16,480 --> 00:06:20,210
+Te recomiendo que siempre pongas esto al final de tus declaraciones argumentales.
+
+74
+00:06:20,830 --> 00:06:27,970
+Bien, ahora comienza a hablar sobre la relación de aspecto del tamaño de la figura y el mapa GPI Cutlip le permite
+
+75
+00:06:27,970 --> 00:06:32,620
+controlar cada uno de estos aspectos y puede especificarlos cuando está llamando al objeto figura.
+
+76
+00:06:32,620 --> 00:06:34,990
+Déjame seguir y mostrarte un ejemplo.
+
+77
+00:06:34,990 --> 00:06:44,500
+Voy a decir que pensar es igual a la figura de Piel y que los argumentos que puedo pasar son que el tamaño de Figgs es igual a.
+
+78
+00:06:44,890 --> 00:06:50,350
+Y luego pasas una tupla donde la tupla es el ancho y alto de la figura en pulgadas.
+
+79
+00:06:50,380 --> 00:06:58,630
+Por ejemplo, puedo seguir y decir tres por dos y luego un segundo argumento que puede agregar es GPI, por ejemplo
+
+80
+00:06:58,690 --> 00:07:03,940
+100 GPI, donde la API solo los puntos por pulgada o píxeles por pulgada.
+
+81
+00:07:04,120 --> 00:07:07,490
+Usualmente solo uso el GPI predeterminado cuando estoy trabajando con el cuaderno de Júpiter.
+
+82
+00:07:07,600 --> 00:07:14,290
+Así que voy a seguir adelante y aclaro que por ahora voy a agregar
+
+83
+00:07:14,290 --> 00:07:27,310
+un conjunto de ejes a esta llamada, solo a X, y diremos que fig dot add underscore axes y diremos 0 0 1 coma 1 y luego
+
+84
+00:07:27,310 --> 00:07:33,220
+voy a seguir y decir X detener la trama x venir a Y.
+
+85
+00:07:33,340 --> 00:07:33,700
+Todo bien.
+
+86
+00:07:33,700 --> 00:07:34,710
+Así que está nuestra trama.
+
+87
+00:07:34,720 --> 00:07:36,970
+Avancemos y juguemos como el tamaño de la figura.
+
+88
+00:07:37,000 --> 00:07:39,450
+Digamos que queríamos que sea muy amplio.
+
+89
+00:07:39,500 --> 00:07:41,280
+Adelante, decir 8 por 2.
+
+90
+00:07:41,650 --> 00:07:45,880
+Y ahora tengo esto para ser de 8 pulgadas por 2 pulgadas.
+
+91
+00:07:45,880 --> 00:07:46,510
+Todo bien.
+
+92
+00:07:46,960 --> 00:07:55,190
+Para que pueda hacer lo mismo con las subtramas, podría decir que las tramas secundarias configuran el miembro del tamaño de la figura
+
+93
+00:07:55,210 --> 00:07:55,510
+aquí.
+
+94
+00:07:55,510 --> 00:08:01,240
+Ahora vamos a decir fig hachas y voy a seguir adelante y eliminar los ejes.
+
+95
+00:08:01,330 --> 00:08:07,900
+Establezca el tamaño de la figura y los ejes avanzarán y dibujarán en los primeros ejes.
+
+96
+00:08:07,900 --> 00:08:15,670
+Solo voy a decir ejes punto gráfico x y y obtengo una trama muy similar.
+
+97
+00:08:15,670 --> 00:08:21,490
+Ahora voy a especificar algunas filas y columnas para esta subtrama y Rose es
+
+98
+00:08:21,490 --> 00:08:22,820
+igual a 1.
+
+99
+00:08:22,870 --> 00:08:25,210
+Es en realidad hacer dos filas y vamos de par en par aquí.
+
+100
+00:08:25,510 --> 00:08:28,550
+Y luego digamos que tenemos una columna.
+
+101
+00:08:28,720 --> 00:08:31,600
+Entonces, y las llamadas son igual a 1.
+
+102
+00:08:31,600 --> 00:08:34,710
+Ahora voy a llamar a 0 aquí.
+
+103
+00:08:34,840 --> 00:08:45,310
+El diagrama X viene en forma de Y y luego diremos que los ejes representan un punto y la coma X. Y aquí puede ver que el tamaño de la FIG ha tenido
+
+104
+00:08:45,310 --> 00:08:49,220
+esto en cuenta hasta dos filas por una columna.
+
+105
+00:08:49,780 --> 00:08:57,250
+Y como siempre, desde que tenemos un poco de un sitio real aquí, intenta decir dientes de pelar con fuerza y ​​esto hará todo lo posible
+
+106
+00:08:57,250 --> 00:09:01,750
+para arreglar el diseño del tipo y parece que hizo un muy buen trabajo aquí.
+
+107
+00:09:02,060 --> 00:09:07,110
+Aquí hay algunos problemas con este eje y, más adelante, le mostraré cómo puede
+
+108
+00:09:07,120 --> 00:09:11,240
+personalizar estos ejes y para mostrar un poco menos de información.
+
+109
+00:09:11,260 --> 00:09:11,590
+Todo bien.
+
+110
+00:09:11,590 --> 00:09:16,990
+Ahora que hemos terminado de hablar sobre el tamaño de la figura y el GPI, sigamos adelante y creemos una
+
+111
+00:09:16,990 --> 00:09:21,090
+nueva celda y comencemos a debatir cómo guardar una cifra para poder guardar una cifra.
+
+112
+00:09:21,250 --> 00:09:26,910
+mapas vivida para generar resultados de alta calidad en una variedad de formatos, incluido pian GJ peg.
+
+113
+00:09:26,910 --> 00:09:28,510
+Puede usar la gráfica de
+
+114
+00:09:28,630 --> 00:09:37,200
+SPG TGF y PTF para guardar una figura en un archivo, puede usar el método save thig.
+
+115
+00:09:37,500 --> 00:09:40,830
+Entonces, por ejemplo, tenemos nuestra figura aquí que ya hemos creado.
+
+116
+00:09:40,830 --> 00:09:43,610
+Recuerda que está justo aquí. Fig.
+
+117
+00:09:44,100 --> 00:09:50,490
+Y luego puedo guardar fig dot save higo y todo lo que tienes que hacer es pasar el nombre del archivo que deseas.
+
+118
+00:09:50,580 --> 00:09:57,720
+Así que, por ejemplo, mi foto de subrayado y luego pasas la extensión y el mapa Cutlip es lo suficientemente inteligente como para saber
+
+119
+00:09:57,720 --> 00:09:58,770
+lo que quieres.
+
+120
+00:09:58,890 --> 00:10:08,370
+Entonces si quieres PNB dices aquí en G si quieres JPA, dices J peg JP G, etc. esto como ese P y G.
+
+121
+00:10:08,380 --> 00:10:09,950
+y decir
+
+122
+00:10:10,950 --> 00:10:12,890
+Y eso automáticamente dirá la figura.
+
+123
+00:10:13,170 --> 00:10:15,470
+Aquí también puede especificar el CPI.
+
+124
+00:10:15,780 --> 00:10:20,910
+Entonces, si olvidó especificar el CPI aquí cuando realmente está creando la trama, puede volver a
+
+125
+00:10:20,920 --> 00:10:22,050
+especificar el DPR aquí.
+
+126
+00:10:22,060 --> 00:10:27,860
+Así que puede hacer esto si tiene un GPI de 200 y puede aumentar el DPA a medida que desea más detalles.
+
+127
+00:10:27,880 --> 00:10:28,520
+Todo bien.
+
+128
+00:10:28,830 --> 00:10:34,900
+figuras y etiquetas de ejes, como establecer la etiqueta X y configurar la etiqueta y, pero te mostraré un recordatorio rápido de cómo hacerlo.
+
+129
+00:10:34,920 --> 00:10:36,840
+Ya tenemos títulos de más de las
+
+130
+00:10:37,040 --> 00:10:44,240
+Vamos a cambiar esto de nuevo a solo un simple higo igual a la figura de Piel T-Dog.
+
+131
+00:10:45,210 --> 00:10:47,490
+Continúa y agrega un conjunto de ejes a esto.
+
+132
+00:10:47,500 --> 00:10:49,980
+Así que salvaremos la Fig.
+
+133
+00:10:50,120 --> 00:11:00,050
+Agregue guiones bajos a xes, los pondremos en 0 0 1 1 y luego diremos X detener grotes X venir a Y.
+
+134
+00:11:00,840 --> 00:11:01,380
+Todo bien.
+
+135
+00:11:01,680 --> 00:11:08,040
+Entonces, como recordatorio de si desea agregar un título, tome uno de estos ejes y diga establecer
+
+136
+00:11:08,040 --> 00:11:14,110
+el título y simplemente pase una cadena del título que desea para establecer una etiqueta y.
+
+137
+00:11:14,280 --> 00:11:19,190
+Usted solo dice establecer la etiqueta en una cadena de la etiqueta y que desea.
+
+138
+00:11:19,800 --> 00:11:27,220
+Y luego para Ex-Slave, todo lo que puede hacer es lo mismo, establezca la etiqueta que desea.
+
+139
+00:11:28,660 --> 00:11:32,410
+OK, así que tengo mi título, la etiqueta de mi esposa y mi etiqueta X.
+
+140
+00:11:32,700 --> 00:11:35,610
+Hablemos de leyendas con leyendas.
+
+141
+00:11:35,620 --> 00:11:42,480
+Puede usar el texto de la etiqueta para aclarar realmente qué trama es qué trama y le mostraré lo que quiero decir con eso.
+
+142
+00:11:42,960 --> 00:11:53,850
+Voy a continuar y eliminar estas tres líneas de código y decir x iniciar la trama y la coma X. Entonces note que estoy haciendo esto en la misma figura.
+
+143
+00:11:54,100 --> 00:11:56,850
+Es decir, si digo y realmente ejecuto esto, obtendré dos líneas aquí. Obtendré la gráfica x y y la explotación y.
+
+144
+00:11:56,860 --> 00:12:05,580
+Dado que estos son bastante diferentes, sigamos adelante y obtengamos algo que sea un poco más similar.
+
+145
+00:12:06,720 --> 00:12:10,540
+Voy a salir y trazar x contra x cuadrado y X versus x Q. Todo bien.
+
+146
+00:12:10,560 --> 00:12:18,070
+Entonces ahora tenemos dos líneas aquí.
+
+147
+00:12:18,880 --> 00:12:19,490
+Y si solo estuvieras mirando esta
+
+148
+00:12:19,710 --> 00:12:21,810
+figura por sí mismo sin poder hacer referencia al código, probablemente estés un poco confundido sobre lo que representa cada trama.
+
+149
+00:12:21,880 --> 00:12:26,070
+No querrá agregar una leyenda en un pedido.
+
+150
+00:12:26,070 --> 00:12:29,790
+Añadir en la leyenda.
+
+151
+00:12:29,880 --> 00:12:32,730
+En realidad es bastante simple, pero es un proceso de dos pasos.
+
+152
+00:12:32,760 --> 00:12:34,120
+notará que recibe una advertencia que dice que no se encontraron objetos etiquetados.
+
+153
+00:12:34,560 --> 00:12:37,420
+El primer paso es simplemente llamar a X ese Legin en la parte inferior de su código donde sus ejes son el hallazgo y si lo ejecuta
+
+154
+00:12:37,500 --> 00:12:44,270
+Y ahí es donde entra el segundo paso.
+
+155
+00:12:45,030 --> 00:12:50,260
+Para cada una de estas llamadas a gráficos que acaba de hacer, va a agregar un argumento llamado etiqueta
+
+156
+00:12:50,520 --> 00:12:52,830
+y esta etiqueta es solo una cadena que desea.
+
+157
+00:12:52,830 --> 00:12:58,110
+Para que la función de leyenda X sea capaz de hacer referencia vamos a mostrarte lo que quiero decir con eso podemos seguir y decir X
+
+158
+00:12:58,120 --> 00:13:00,050
+al cuadrado aquí como nuestra etiqueta y luego esta etiqueta.
+
+159
+00:13:00,050 --> 00:13:05,550
+Voy a seguir
+
+160
+00:13:05,550 --> 00:13:13,970
+adelante y decir ejecutar.
+
+161
+00:13:13,980 --> 00:13:15,160
+Y ahora cuando ejecuto esto, si la leyenda X veo, he podido crear una leyenda.
+
+162
+00:13:17,860 --> 00:13:19,620
+Entonces, todo esto sucede cuando se llama a
+
+163
+00:13:21,370 --> 00:13:26,130
+X esa leyenda, se busca cada una de las llamadas al diagrama y luego se comprueba si hay una etiqueta.
+
+164
+00:13:26,160 --> 00:13:31,260
+Y luego la etiqueta que es solo una cadena se devuelve y se empareja con
+
+165
+00:13:31,290 --> 00:13:33,150
+el color correcto de su línea.
+
+166
+00:13:33,270 --> 00:13:38,880
+Y más adelante, le mostraremos cómo personalizar realmente los colores de su línea.
+
+167
+00:13:38,880 --> 00:13:39,810
+Ahora rápido no es eso.
+
+168
+00:13:39,880 --> 00:13:44,190
+se solapan con las tramas reales que puede hacer en la llamada X de leyenda para evitar que esto sea así.
+
+169
+00:13:44,190 --> 00:13:45,400
+Observe cómo algunas de estas leyendas
+
+170
+00:13:45,390 --> 00:13:52,020
+Ahora, en realidad, son bastantes las ubicaciones que puede especificar y le
+
+171
+00:13:52,020 --> 00:13:55,890
+mostraré la página de documentación realmente rápido.
+
+172
+00:13:55,950 --> 00:14:01,030
+Está vinculado en su cuaderno en esta sección.
+
+173
+00:14:01,030 --> 00:14:01,830
+Déjame seguir e ir a ese enlace para que ese enlace te lleve a una página que se ve así.
+
+174
+00:14:01,840 --> 00:14:05,130
+Y puede hacer clic en leyenda y básicamente hay un conjunto
+
+175
+00:14:05,130 --> 00:14:09,160
+de parámetros aquí y hay un código de ubicación y una cadena de ubicación.
+
+176
+00:14:09,240 --> 00:14:14,640
+Así que puede especificar la mejor esquina superior derecha superior izquierda inferior izquierda, etc. basado en el código de ubicación
+
+177
+00:14:14,820 --> 00:14:16,270
+Siempre recomendaría que simplemente use el código
+
+178
+00:14:16,470 --> 00:14:23,280
+de ubicación 0 porque eso permite que map lib intente elegir la mejor ubicación para su leyenda.
+
+179
+00:14:23,280 --> 00:14:28,120
+Vamos y hagamos eso.
+
+180
+00:14:28,120 --> 00:14:30,180
+Vamos a entrar y le diremos a Alosi que llame a 0 y veremos que la mejor ubicación está aquí, en la parte
+
+181
+00:14:30,240 --> 00:14:31,170
+superior izquierda, vamos a ver un código de ubicación más.
+
+182
+00:14:31,170 --> 00:14:37,320
+Si volvemos aquí, por ejemplo, si lo quisiéramos en el centro, podemos especificar un código de ubicación 10.
+
+183
+00:14:37,380 --> 00:14:42,000
+Y aquí tenemos en el centro.
+
+184
+00:14:42,010 --> 00:14:48,820
+funciona, como de 0 a 10, lo que puede hacer es especificar también una tupla que indique la xey de la esquina inferior izquierda de la leyenda.
+
+185
+00:14:49,620 --> 00:14:51,480
+Ahora bien, si ninguna de estas opciones le
+
+186
+00:14:51,480 --> 00:14:57,510
+Entonces, por ejemplo, podemos seguir y decir algo como esto 0. 1 coma 0 1 y eso significa exactamente como lo hiciste antes
+
+187
+00:14:57,510 --> 00:15:02,650
+cuando estás insertando un diagrama de inserción.
+
+188
+00:15:02,880 --> 00:15:10,560
+Puedes poner aquí una tupla especificando la ubicación donde quieres tu leyenda.
+
+189
+00:15:10,560 --> 00:15:13,100
+Esquina inferior a ser.
+
+190
+00:15:13,200 --> 00:15:17,760
+Todo bien.
+
+191
+00:15:17,760 --> 00:15:19,880
+Eso es todo por esta segunda parte.
+
+192
+00:15:19,880 --> 00:15:20,670
+A continuación.
+
+193
+00:15:20,790 --> 00:15:22,680
+En esta última parte del mapa Conferencia de conceptos Partlow.
+
+194
+00:15:22,680 --> 00:15:23,590
+Vamos a hablar sobre establecer
+
+195
+00:15:23,590 --> 00:15:26,310
+líneas de colores y tipos de línea, así como trabajar con marcadores que establecen
+
+196
+00:15:26,310 --> 00:15:32,040
+el rango de la parcela y luego comenzaremos a hablar sobre algunos tipos de trama especiales, pero eso nos llevará más a nuestra discusión sobre el transporte marítimo.
+
+197
+00:15:32,040 --> 00:15:36,690
+De acuerdo, gracias a todos.
+
+198
+00:15:36,690 --> 00:15:39,150
+Anímese y publique cualquier pregunta que tenga en los foros de preguntas y respuestas y con gusto los responderé allí.
+
+199
+00:15:39,180 --> 00:15:41,100
+Recuerde hacer referencia a los cuadernos para esta conferencia.
+
+200
+00:15:41,110 --> 00:15:46,010
+OK, voy a ver si la próxima conferencia
+
+201
+00:15:46,020 --> 00:15:49,090
+&nbsp;
+
+202
+00:15:49,090 --> 00:15:50,940
+&nbsp;

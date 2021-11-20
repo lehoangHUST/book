@@ -1,0 +1,211 @@
+1
+00:00:05,280 --> 00:00:10,290
+Herkese merhaba ve mercana hoşgeldiniz Plath'in haritaları ders anlatıyor ve bu derste
+
+2
+00:00:10,290 --> 00:00:14,020
+Plath'in koro haritalari için dizüstü bilgisayara kısaca göz atacağız.
+
+3
+00:00:14,190 --> 00:00:16,900
+Hadi devam edelim ve atlama şu an bir defter yazman.
+
+4
+00:00:17,040 --> 00:00:20,540
+Burada, mercan Pless haritalarında egzersiz defterine gidiyoruz.
+
+5
+00:00:20,540 --> 00:00:25,410
+Bu alıştırmada size oldukça basit bazı veri kümeleri sunacağız ve
+
+6
+00:00:25,410 --> 00:00:27,670
+kütüphaneyi kullanarak karşılıklı haritalar oluşturacağız.
+
+7
+00:00:27,680 --> 00:00:32,580
+örnek ekran çıktısını merkezi olarak göremediğiniz gerçeğinden dolayı, hem dünya
+
+8
+00:00:32,580 --> 00:00:38,940
+ölçeğindeki global harita hem de ABD kloroplast için boş bir çıktı gibi görünecektir. harita.
+
+9
+00:00:39,750 --> 00:00:43,640
+Ne yazık ki, aslında, HCM elf dosyalarının, burada
+
+10
+00:00:43,660 --> 00:00:48,580
+Çözümleri çalıştırmadığınız sürece aslında karşılaştırabileceğiniz aslında boş çıktılar olacak.
+
+11
+00:00:48,630 --> 00:00:50,190
+Hayır, ama neye benzeyeceğini.
+
+12
+00:00:50,490 --> 00:00:53,190
+Fakat veri setleri kendileri nispeten basittir.
+
+13
+00:00:53,190 --> 00:00:59,460
+İçe aktarmalarınızı, çizimsiz ithalatlarınız için zaten kurulmuş olan, çıktığınız pantolonları alıp CAC dosyasını
+
+14
+00:00:59,460 --> 00:01:03,720
+okumak için ilerlemeye devam edeceğinize dair bir fikriniz olmalıdır.
+
+15
+00:01:03,780 --> 00:01:08,190
+Birincisi, dünya enerji tüketiminde 2014 olacak ve veri çerçevesinin başına
+
+16
+00:01:08,190 --> 00:01:10,190
+böyle bakması için kontrol edeceksin.
+
+17
+00:01:10,410 --> 00:01:15,240
+Ve ardından ders notlarını kullanarak ve devam edecek ve uygulayacağınız dokümantasyonu kullanmak, ülkeler
+
+18
+00:01:15,240 --> 00:01:21,120
+için bir veri kullanarak ve sözlük oluşturan güç tüketiminin çekirdek yükselme çizimini oluşturmak ve ardından bu
+
+19
+00:01:21,540 --> 00:01:25,770
+ikisini esas olarak çalıştırmak mümkün olacak. derslerde yaptığımız gibi kod satırları.
+
+20
+00:01:25,900 --> 00:01:30,100
+Ve temelde yapmanız gereken tek şey veri kurmak ve doğru bir şekilde düzenlemek.
+
+21
+00:01:30,120 --> 00:01:31,630
+Şimdi en zoru budur.
+
+22
+00:01:31,680 --> 00:01:34,320
+Ve daha önce söylediğimiz gibi sözdizimi oldukça garip.
+
+23
+00:01:34,380 --> 00:01:37,200
+Dolayısıyla başınızdan en üst düzeyde bunu yapabilmenizi beklemiyorum.
+
+24
+00:01:37,290 --> 00:01:42,330
+güç tüketiminin bir mercan silsilesi haritasına eşlemek için boşlukları doldurmaktır.
+
+25
+00:01:42,690 --> 00:01:49,010
+Yapmanız gereken, dokümantasyona ve dersin referans alınması ve ardından bu verileri dünyanın
+
+26
+00:01:49,290 --> 00:01:54,110
+Sonra, işiniz bittikten sonra 2012'de bazı seçim verilerini Pandur'ları kullanarak bir CSP
+
+27
+00:01:54,120 --> 00:01:55,570
+dosyası olarak içe aktaracaksınız.
+
+28
+00:01:55,620 --> 00:01:57,550
+Devam edersiniz ve veri çerçevesinin başını kontrol edersiniz.
+
+29
+00:01:57,620 --> 00:02:01,680
+Bunun biraz daha fazla bilgiye sahip olduklarına benzeyecekler, ancak ilerlemeye devam
+
+30
+00:02:01,680 --> 00:02:06,540
+ederseniz, oylama yaşı popülasyonunu veya devlet başına bir P görüntüleyen bir komplo oluşturun.
+
+31
+00:02:06,540 --> 00:02:08,480
+Ve burada sağa ilerlerseniz.
+
+32
+00:02:08,480 --> 00:02:09,060
+İşte burada.
+
+33
+00:02:09,060 --> 00:02:11,260
+Oy kullanma yaşı nüfusu V. BEN. P.
+
+34
+00:02:11,310 --> 00:02:12,890
+Bunun bir kayan nokta olduğuna dikkat edin.
+
+35
+00:02:12,900 --> 00:02:15,400
+Yani zaten bir dizeden dönüştürülmüş.
+
+36
+00:02:15,420 --> 00:02:19,580
+Yani bu diğer sütunlar aslında dizelerdir, ancak bu sizin için bir float'a dönüştürülmüştür,
+
+37
+00:02:19,590 --> 00:02:20,780
+bu yüzden düzgün çalışmalıdır.
+
+38
+00:02:20,940 --> 00:02:23,960
+Ve aslında bunu bir kaç sonra diğer sütunları temizlemek istiyor bahseder.
+
+39
+00:02:23,970 --> 00:02:28,820
+Veri türünü göz önünde bulundurduğunuzdan emin olun ve zaten sizin için dönüştürülmüştür.
+
+40
+00:02:28,950 --> 00:02:33,240
+sadece veri kurun ve sözlükler hazırlayın ve sonra bu satırı çalıştırın ve bunu çizelim.
+
+41
+00:02:33,360 --> 00:02:34,670
+Siz devam edin ve
+
+42
+00:02:34,830 --> 00:02:40,800
+Yine de, zaten bildiklerini, daha önce gördüğün belgeleri ve referansları alıp,
+
+43
+00:02:40,800 --> 00:02:46,920
+verilerinizi bu çeşit dokümantasyon ve formatlama için doldurabilmenin egzersizi daha fazlası.
+
+44
+00:02:47,190 --> 00:02:52,530
+Bu, her şeyin ezberlenmesine ve bir veri yaratmaya ve sıfırdan sözlük koymasına olanak sağlayan
+
+45
+00:02:52,530 --> 00:02:53,730
+bir uygulama değildir.
+
+46
+00:02:53,730 --> 00:02:55,620
+Gerçekten bu sadece gerçekçi değil.
+
+47
+00:02:55,830 --> 00:02:59,670
+Ve genellikle bu tür araziler için belgelere başvurmanız gerekir.
+
+48
+00:02:59,670 --> 00:03:00,310
+Tamam.
+
+49
+00:03:00,360 --> 00:03:02,880
+Umarım egzersizden hoşlanırsınız, oldukça basit olmalısınız.
+
+50
+00:03:02,880 --> 00:03:07,080
+Sadece ders not defterlerine atıfta bulunmayı unutmayın; sıkışırsanız çözüm sunumuna
+
+51
+00:03:07,080 --> 00:03:08,220
+da referans verebilirsiniz.
+
+52
+00:03:08,220 --> 00:03:09,270
+Sırada.
+
+53
+00:03:09,510 --> 00:03:11,400
+Herkese teşekkürler, bir sonraki derside görüşürüz.

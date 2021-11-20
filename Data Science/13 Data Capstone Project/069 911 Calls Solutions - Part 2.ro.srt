@@ -1,0 +1,987 @@
+1
+00:00:05,370 --> 00:00:10,070
+Bună ziua tuturor și bine ați venit în partea a doua a zilei pentru a pune capăt unor proiecții de soluții pentru proiecte de noapte.
+
+2
+00:00:10,100 --> 00:00:12,040
+Când cineva numește proiectul capstone.
+
+3
+00:00:12,240 --> 00:00:15,840
+Să mergem mai departe și să sarăm exact acolo unde am plecat și mergem la notebook-ul Jupiter.
+
+4
+00:00:16,290 --> 00:00:21,270
+OK aici sunt la notebook-ul de unde am plecat am descoperit că lunile au fost de fapt lipsesc
+
+5
+00:00:21,270 --> 00:00:27,180
+câteva valori față de nouă 10 și 11 au fost lipsite și vrem să facem este este acum de lucru cu panda pentru
+
+6
+00:00:27,180 --> 00:00:32,190
+a încerca să creeze, poate, un complot linie o altă vizualizare care încearcă să ia în considerare acest lucru.
+
+7
+00:00:32,220 --> 00:00:34,700
+Deci, poate putem completa aceste puncte de date lipsă.
+
+8
+00:00:35,140 --> 00:00:35,630
+O.K.
+
+9
+00:00:35,700 --> 00:00:44,670
+Vom merge mai departe și facem este să creăm un grup după obiect numit în funcție de lună și să spunem grupul DMF
+
+10
+00:00:44,670 --> 00:00:51,740
+trecând coloana lunii și să folosim metoda de numărare pentru agregare așa cum a fost cerut pentru instrucțiuni.
+
+11
+00:00:51,780 --> 00:00:52,490
+Și apoi mergea înainte.
+
+12
+00:00:52,490 --> 00:00:54,540
+Doar verificați capul.
+
+13
+00:00:54,570 --> 00:00:56,050
+După lună.
+
+14
+00:00:56,590 --> 00:00:58,040
+OK și aici vedem capul lui.
+
+15
+00:00:58,050 --> 00:01:04,500
+După o lună, veți observa că, în esență, ceea ce sa întâmplat a fost că am numărat fiecare instanță
+
+16
+00:01:04,500 --> 00:01:10,680
+a coloanelor până în lună sau vom merge mai departe și vom observa că unele dintre conte sunt
+
+17
+00:01:10,740 --> 00:01:13,140
+diferite în funcție de valoarea coloanei.
+
+18
+00:01:13,180 --> 00:01:15,900
+Și asta pentru că unele valori lipsesc în esență.
+
+19
+00:01:15,960 --> 00:01:18,590
+Când o agregați pe lună sau o să mergem mai departe și să o facem.
+
+20
+00:01:18,600 --> 00:01:19,860
+Nici nu este nimic.
+
+21
+00:01:19,890 --> 00:01:24,050
+Este doar alegeți coloana latitudine ca valoare pentru numărul total.
+
+22
+00:01:24,120 --> 00:01:29,980
+Mergeți bine și presupuneți că, dacă am avea latitudinea apelului, apelul a avut loc efectiv.
+
+23
+00:01:30,000 --> 00:01:34,660
+Acum, putem crea o diagramă simplă a cadrului de date care indică numărul
+
+24
+00:01:34,670 --> 00:01:42,060
+de costuri pe lună și modul în care putem face acest lucru este de fapt doar prin plotarea coloanelor spunem de
+
+25
+00:01:42,150 --> 00:01:45,750
+lună numim coloana de exemplu, latitudine și apoi spun complot.
+
+26
+00:01:46,530 --> 00:01:51,240
+Și aici avem luna noastră și acum am reușit să umplem câteva dintre aceste informații
+
+27
+00:01:51,660 --> 00:01:55,960
+lipsă printr-o potrivire esențială între opt puncte și punctele de la 12.
+
+28
+00:01:56,040 --> 00:02:00,260
+Și apoi puteți vedea curba în jos, poate puțin mai bună decât ați fi putut.
+
+29
+00:02:00,450 --> 00:02:06,210
+Dacă ați făcut-o doar cu o plotare de bar și să vă arăt că poate într-un
+
+30
+00:02:06,240 --> 00:02:14,430
+pic mai detaliat voi merge și să copiați acest cod lipiți-l aici și voi merge mai departe și să eliminați hewe Și apoi
+
+31
+00:02:14,490 --> 00:02:17,460
+dacă eu rulați acest lucru vom vedea codul.
+
+32
+00:02:17,460 --> 00:02:18,900
+Aici avem luna.
+
+33
+00:02:18,900 --> 00:02:20,800
+Nu vă faceți griji cu privire la acest avertisment puțin.
+
+34
+00:02:21,090 --> 00:02:23,340
+Dar acest lucru arată în mod esențial aceleași informații.
+
+35
+00:02:23,340 --> 00:02:25,670
+Cu toate acestea, fără cele 9 10 și 11 luni.
+
+36
+00:02:25,840 --> 00:02:31,650
+Deci, puteți vedea căderea în jos din luna 7, două luni opt și 12 ore.
+
+37
+00:02:31,650 --> 00:02:33,050
+Poate e ceva mai clar.
+
+38
+00:02:33,100 --> 00:02:37,060
+Scăderea între 8 și 12 folosind acest tip de linie.
+
+39
+00:02:37,380 --> 00:02:42,450
+Și puteți juca de fapt cu coloanele pe care alegeți să le complotați, cum ar fi,
+
+40
+00:02:42,750 --> 00:02:50,220
+poate, coloana orășenească sau coloana zip etc pentru a vedea cât de pronunțată este această picătură, este doar un fel de zonă de analiză
+
+41
+00:02:50,250 --> 00:02:56,430
+a datelor exploratorii sau poate că nu există un răspuns exact dacă vreți să arătați ceva foarte specific prin metode
+
+42
+00:02:56,430 --> 00:03:01,050
+cantitative și în acest caz probabil că veți arăta acest tip de complot.
+
+43
+00:03:01,050 --> 00:03:06,540
+Dar este, de asemenea, frumos doar pentru a obține o idee despre tendință utilizând doar această comanda complot simplu.
+
+44
+00:03:06,540 --> 00:03:06,960
+In regula.
+
+45
+00:03:07,320 --> 00:03:11,850
+Să mergem acum și să vedem dacă putem folosi vezi plânge L-M plot pentru a crea o potrivire liniară a
+
+46
+00:03:11,850 --> 00:03:13,000
+numărului de apeluri pe lună.
+
+47
+00:03:13,050 --> 00:03:17,750
+Și rețineți că poate fi necesar să resetați indexul la o coloană pentru a face acest lucru.
+
+48
+00:03:17,790 --> 00:03:20,870
+Ceea ce am de gând să ies și să fac este să spun asta.
+
+49
+00:03:20,880 --> 00:03:27,330
+Voi spune S. A. gândul L. M. complot pentru acel model
+
+50
+00:03:27,330 --> 00:03:35,420
+de model liniar de la Seaborn și vreau X-ul meu dacă ieșim afară și verificăm asta ca să fie lună și putem merge acum selectăm poate orașul pentru axa y.
+
+51
+00:03:35,520 --> 00:03:39,690
+De asemenea, puteți selecta latitudine sau chiar orice altă coloană, dacă doriți să faceți un fel de experiment în
+
+52
+00:03:39,690 --> 00:03:42,460
+jurul valorii de acest lucru, astfel încât, în esență, doar contează.
+
+53
+00:03:43,680 --> 00:03:48,860
+Și apoi datele vor fi luna.
+
+54
+00:03:49,950 --> 00:03:52,890
+Dar observați aici am spus că X este coloana de luni.
+
+55
+00:03:52,890 --> 00:04:00,480
+Dacă vom arunca o privire înapoi pe lună nu avem de fapt o coloană de luni, luna a fost indexul.
+
+56
+00:04:00,570 --> 00:04:05,370
+Deci, ceea ce am de gând să fac este să resetați indicele la lună pentru ca acest lucru să
+
+57
+00:04:08,770 --> 00:04:11,070
+funcționeze și modalitatea de ao face mai clară.
+
+58
+00:04:11,070 --> 00:04:15,720
+Permiteți-mi să vă arăt cum arată de fapt.
+
+59
+00:04:16,350 --> 00:04:21,750
+Dacă resetez indexul sau pe lună, o să fac o lună într-o coloană nouă și acest lucru
+
+60
+00:04:21,750 --> 00:04:26,630
+permite Sea Seabornului să acceseze efectiv această informație în loc să o fixeze pe index.
+
+61
+00:04:26,880 --> 00:04:29,110
+Și în acest fel pot să trec de fapt și o lună aici este un șir.
+
+62
+00:04:29,130 --> 00:04:31,200
+Altfel Seaborn ar fi confundat.
+
+63
+00:04:31,290 --> 00:04:39,060
+Și asta a fost ceea ce a trebuit să folosim acest indice recente la coloană și apoi să luăm modelul liniar potrivit și putem vedea
+
+64
+00:04:39,060 --> 00:04:43,980
+că, în general, în ceea ce privește ceea ce Seymore face în felul acesta în acest
+
+65
+00:04:43,980 --> 00:04:47,640
+model, numărul de apeluri coboară de la 0 la luna 12.
+
+66
+00:04:47,640 --> 00:04:52,850
+Acum țineți cont de faptul că seaborne nu are suficiente informații pentru a realiza că este vorba de lună.
+
+67
+00:04:52,980 --> 00:04:57,380
+Și așa că 13 și 14 nu ar trebui să existe sau să continue.
+
+68
+00:04:57,420 --> 00:05:01,800
+Acest lucru ar fi de fapt date sezoniere și în acest caz, probabil un model liniar este de
+
+69
+00:05:01,890 --> 00:05:07,530
+fapt cea mai bună potrivire și puteți vedea că țările maritime arată acest lucru cu această zonă umbrită care indică o eroare și
+
+70
+00:05:07,560 --> 00:05:12,360
+eroarea crește în timp ce mergeți în aceste luni în care există mai puține informații cunoscute care are de fapt
+
+71
+00:05:12,360 --> 00:05:15,540
+un sens pentru a avea informații despre nouă 10 sau 11 luni.
+
+72
+00:05:15,900 --> 00:05:21,770
+Și puteți vedea această tendință în cazul în care coboară începe să vină și apoi se prăbușește în acea lună opt, care este ceva pe
+
+73
+00:05:21,870 --> 00:05:24,540
+care ați putea dori să exploreze mai târziu în date.
+
+74
+00:05:24,540 --> 00:05:30,170
+Ei bine, haideți să mergem mai departe și doar lasă-o la asta pentru moment și de a explora un pic mai mult despre informațiile de dată.
+
+75
+00:05:30,930 --> 00:05:31,210
+O.K.
+
+76
+00:05:31,220 --> 00:05:36,920
+Am vrut să facem în continuare crearea unei noi coloane numită dată care conține data din coloana
+
+77
+00:05:36,930 --> 00:05:42,590
+cu timbru și va trebui să utilizați aplicați împreună cu metoda pentru paranteze de dată apropiată.
+
+78
+00:05:42,600 --> 00:05:50,460
+Dă-mi voie să intru și să-ți arăt ce înseamnă asta prin date, arătându-ți un exemplu de coloană
+
+79
+00:05:50,460 --> 00:05:51,790
+a timbrului.
+
+80
+00:05:51,920 --> 00:05:58,860
+Voi merge mai departe și luați prima instanță a coloanei timbrului și apelați la unul dintre
+
+81
+00:05:58,880 --> 00:06:00,000
+aceste obiecte.
+
+82
+00:06:00,010 --> 00:06:00,320
+In regula.
+
+83
+00:06:00,320 --> 00:06:06,180
+Acesta este un obiect cu timbru temporal și este puțin diferit de un obiect date.
+
+84
+00:06:06,240 --> 00:06:13,520
+Iar motivul pentru asta este să-l sun pe tatăl meu, acum primesc un obiect de dată.
+
+85
+00:06:13,530 --> 00:06:15,750
+Și asta arată doar informațiile despre date.
+
+86
+00:06:15,750 --> 00:06:20,940
+Nu mai are timp informații și asta e bine pentru că ceea ce vom dori să facem mai
+
+87
+00:06:20,940 --> 00:06:25,440
+târziu este crearea unui complot care arată astfel doar numărul de apeluri pe dată.
+
+88
+00:06:25,440 --> 00:06:31,760
+Nu vrem să inundăm aceste informații cu numărul de apeluri pe care le transmite fiecare minut la fiecare oră.
+
+89
+00:06:31,750 --> 00:06:32,400
+In regula.
+
+90
+00:06:32,670 --> 00:06:45,060
+Asta înseamnă să mergem mai departe și să spunem că data ZF este egală cu DMF de timbru de timp.
+
+91
+00:06:45,180 --> 00:06:49,760
+Și așa cum am făcut înainte de a intra și de a aplica
+
+92
+00:06:49,760 --> 00:06:55,320
+acest Fil-Am expresia pe care o voi lua să vadă și să se întoarcă la date.
+
+93
+00:06:55,350 --> 00:06:57,620
+Mă duc înainte și aplic asta.
+
+94
+00:06:57,620 --> 00:07:05,490
+Acum, dacă mă uit la capul ZF și merg tot drumul spre dreapta.
+
+95
+00:07:05,610 --> 00:07:11,330
+Acum am această coloană de dată frumoasă, care este îndepărtată de această coloană de timbru și apoi când vreau
+
+96
+00:07:11,370 --> 00:07:16,340
+să merg mai departe și este grupată de coloana de stat cu numărul de agregate.
+
+97
+00:07:16,430 --> 00:07:18,590
+Deci voi spune data diff.
+
+98
+00:07:18,670 --> 00:07:19,070
+Hopa.
+
+99
+00:07:19,110 --> 00:07:24,350
+De fapt vreau să spun grupul DFA după data de acces.
+
+100
+00:07:24,360 --> 00:07:26,380
+Asta vreau să cumpăr.
+
+101
+00:07:26,460 --> 00:07:32,270
+Mă duc să merg mai departe și să conteze și apoi să intrăm și să vedem capul de stare a
+
+102
+00:07:32,270 --> 00:07:33,760
+cadrului cum arată acest lucru.
+
+103
+00:07:34,470 --> 00:07:35,150
+O.K.
+
+104
+00:07:35,250 --> 00:07:41,090
+Iar acest lucru numără în mod esențial toate cazurile data pentru data reală care a avut loc.
+
+105
+00:07:41,100 --> 00:07:46,440
+Din nou, observați că există o anumită diferență între unele dintre aceste valori ale coloanelor și acest lucru
+
+106
+00:07:46,470 --> 00:07:53,130
+indică doar faptul că ați pierdut câteva informații, de exemplu, din cele 300 din 96 de apeluri pe 11 decembrie, sunt penny cum
+
+107
+00:07:53,150 --> 00:07:55,020
+doriți să citiți acest lucru.
+
+108
+00:07:55,130 --> 00:08:03,590
+Indiferent dacă urmează să fie data de 11 decembrie, ați avut doar 333 cu codul poștal versus 396 am avut latitudinea.
+
+109
+00:08:04,560 --> 00:08:07,440
+Să mergem mai departe și să alegeți una dintre aceste coloane.
+
+110
+00:08:07,440 --> 00:08:12,810
+Este un fel de arbitrar, de vreme ce sunt de fapt foarte aproape de număr,
+
+111
+00:08:13,640 --> 00:08:21,120
+dar voi merge mai departe și apucați coloana de latitudine și puteți experimenta prin apucarea unor coloane diferite cum se compară.
+
+112
+00:08:21,120 --> 00:08:26,430
+Și aici aveți coloana de latitudine care acum îmi dă o dată și numărătoarea numărului de apeluri
+
+113
+00:08:26,430 --> 00:08:29,740
+unde am știut latitudinea și apoi pot merge mai departe.
+
+114
+00:08:29,740 --> 00:08:33,880
+Doar complot asta și mă face un complot care arată așa.
+
+115
+00:08:33,960 --> 00:08:41,340
+Și observați că unele dintre aceste etichete se suprapun și ceea ce putem face este să spunem peel t Titely afară așa cum am arătat
+
+116
+00:08:41,340 --> 00:08:46,710
+mai devreme pentru a remedia într-adevăr acest indice și pentru a obține ceva care pare puțin mai plăcut.
+
+117
+00:08:47,460 --> 00:08:48,200
+In regula.
+
+118
+00:08:48,210 --> 00:08:52,980
+Și atunci când observăm aici este că se pare că există câteva spikes semnificative în februarie și
+
+119
+00:08:53,300 --> 00:08:59,270
+un pic în martie și apoi vom obține unele recesiuni sau unele spike out jos în luna mai și poate la sfârșitul
+
+120
+00:08:59,310 --> 00:09:00,020
+lunii august.
+
+121
+00:09:00,020 --> 00:09:01,520
+Un pic cam greu de spus aici.
+
+122
+00:09:01,950 --> 00:09:06,720
+Și puteți să mergeți mai departe și să vă mândrați cu acest complot sau să extindeți complotul pentru a încerca să obțineți
+
+123
+00:09:06,720 --> 00:09:08,170
+mai multe informații despre datele reale.
+
+124
+00:09:08,510 --> 00:09:13,230
+Ei bine, vom merge mai departe și facem acum este recrea acest complot pentru a crea trei parcele
+
+125
+00:09:13,230 --> 00:09:15,950
+separate, cu fiecare complot reprezentând un motiv pentru apelul 911.
+
+126
+00:09:16,010 --> 00:09:22,120
+Înapoi la motivul pentru care îmi cer scuze sau mă scuzați să-l sun pe Mishu ce vreau să spun prin asta.
+
+127
+00:09:22,480 --> 00:09:25,100
+Deci, dacă mă defilez aici, vreau să recreez acest complot.
+
+128
+00:09:25,160 --> 00:09:31,420
+Deci, aici avem un parcel cu numai traficul care solicită doar apelurile de incendiu și apoi numai
+
+129
+00:09:32,820 --> 00:09:39,120
+apelurile M-S și noi facem este de fapt un proces foarte asemănător cu ceea ce am făcut aici.
+
+130
+00:09:40,190 --> 00:09:45,480
+Vom copia și lipi acest lucru, dar în loc de întregul cadru de date voi
+
+131
+00:09:45,480 --> 00:09:48,790
+folosi selecția condiționată pentru a face efectiv grupul.
+
+132
+00:09:49,350 --> 00:09:52,760
+Așa că am să spun DSF în cazul în care
+
+133
+00:09:55,500 --> 00:10:03,150
+rațiunea ATF este egal cu primul care putem merge mai departe și să ne spuneți trafic acolo și apoi vom merge mai departe
+
+134
+00:10:03,140 --> 00:10:09,880
+și complot acest lucru și acolo avem de complot pentru trafic și dacă v-ați vrut să vă ar fi
+
+135
+00:10:09,880 --> 00:10:17,020
+putut spune, de asemenea, titlul de apel și a indicat că doriți ca titlul să fie trafic și acum putem folosi
+
+136
+00:10:17,020 --> 00:10:19,810
+același cod pentru a realiza celelalte diagrame.
+
+137
+00:10:19,810 --> 00:10:24,450
+Dacă am fi vrut focul, am înlocuit-o cu focul ca un motiv.
+
+138
+00:10:25,000 --> 00:10:30,610
+Și acum putem profita de toată munca pe care am făcut-o anterior pentru a crea aceste trei
+
+139
+00:10:30,610 --> 00:10:31,390
+parcele separate.
+
+140
+00:10:31,390 --> 00:10:35,770
+Și puteți să le explorați pe cont propriu și să vedeți dacă puteți
+
+141
+00:10:35,830 --> 00:10:41,050
+găsi diferențe între poate un număr de apeluri sau o frecvență de apeluri în timpul întâlnirilor.
+
+142
+00:10:41,050 --> 00:10:45,910
+De exemplu, ar putea fi interesant să vedem cum va afecta vremea focul pe lună sau
+
+143
+00:10:45,910 --> 00:10:46,680
+pe zi.
+
+144
+00:10:47,110 --> 00:10:49,840
+Puteți vedea că există niște piroane interesante acolo.
+
+145
+00:10:49,840 --> 00:10:50,230
+O.K.
+
+146
+00:10:50,320 --> 00:10:51,550
+Se deplasează de-a lungul.
+
+147
+00:10:51,550 --> 00:10:56,140
+Să mergem în sfârșit la crearea hărților de căldură cu Seaborn și datele noastre.
+
+148
+00:10:56,410 --> 00:11:01,420
+Mai întâi trebuie să facem o restructurare a cadrului de date, astfel încât coloanele să devină
+
+149
+00:11:01,480 --> 00:11:04,080
+orele, iar indexul să devină ziua săptămânii.
+
+150
+00:11:04,130 --> 00:11:09,940
+Există de fapt o mulțime de modalități de a face acest lucru, dar ceea ce aș recomanda să încercați să faceți este să utilizați grupul
+
+151
+00:11:09,970 --> 00:11:13,540
+cu o nouă metodă pe care am vrut să o descoperiți numită metoda neîncărcată.
+
+152
+00:11:13,540 --> 00:11:17,470
+Există un link aici la documentație și puteți să vă referiți la soluții dacă rămâneți blocați
+
+153
+00:11:17,470 --> 00:11:18,240
+în acest sens.
+
+154
+00:11:18,310 --> 00:11:21,820
+Dă-mi voie să încep și să descopăr cum să faci ceva care arată așa.
+
+155
+00:11:21,820 --> 00:11:26,400
+Această hartă a căldurii aduce aminte de harta clusterului și de prelegeri ale hărții termice.
+
+156
+00:11:26,410 --> 00:11:33,280
+Avem nevoie ca datele noastre să fie în forma cunoscută sub formă de matrice, unde fiecare celulă convertește înapoi
+
+157
+00:11:34,120 --> 00:11:38,440
+la o valoare reprezentând valoarea de la coloană și indexul însuși.
+
+158
+00:11:38,470 --> 00:11:40,980
+Înseamnă zero în zilele de vineri.
+
+159
+00:11:40,990 --> 00:11:42,820
+Acesta este numărul de apeluri efectuate.
+
+160
+00:11:43,240 --> 00:11:47,300
+OK, să mergem mai departe și să învățăm cum să folosim metoda neîncărcată.
+
+161
+00:11:47,310 --> 00:11:50,980
+Apoi, există câteva exemple aici în documentația pe care sperăm că ați descoperit-o
+
+162
+00:11:50,980 --> 00:11:51,430
+singură.
+
+163
+00:11:51,640 --> 00:11:52,560
+Dar sa blocat.
+
+164
+00:11:52,570 --> 00:11:56,310
+Nu vă faceți griji pentru că vă voi arăta cum să faceți asta chiar acum.
+
+165
+00:11:56,440 --> 00:11:59,320
+Vom merge mai departe și vom spune grupul DF.
+
+166
+00:11:59,740 --> 00:12:03,580
+Și va trebui să grupez o listă.
+
+167
+00:12:03,580 --> 00:12:10,070
+În acest caz, pentru că nu vreau să grupez doar de ziua săptămânii, vreau și eu să grupez câte o oră, iar atunci când voi
+
+168
+00:12:14,470 --> 00:12:21,070
+merge mai departe și facem este să spun că numărați acest lucru mergeți mai departe și aruncați o privire la ceea ce pare precum și acest
+
+169
+00:12:21,070 --> 00:12:25,650
+lucru îmi permite în mod substanțial să grup și să creez un index pe mai multe nivele.
+
+170
+00:12:25,690 --> 00:12:31,330
+Ziua săptămânii și apoi ora și apoi contează pentru fiecare coloană aici.
+
+171
+00:12:31,390 --> 00:12:39,250
+Deci am acest index pe mai multe niveluri ceea ce pot face acum este doar o singură coloană singulară de pe ea poate motivul putem merge mai departe și
+
+172
+00:12:39,310 --> 00:12:40,270
+facem asta și
+
+173
+00:12:43,690 --> 00:12:45,960
+acum am acest index pe mai multe niveluri.
+
+174
+00:12:46,090 --> 00:12:52,570
+Iar cheia pentru metoda nestingherită este că vă permite în principiu să dezarhivați acest lucru și să faceți
+
+175
+00:12:52,570 --> 00:12:54,840
+acest lucru într-o formă de matrice.
+
+176
+00:12:56,410 --> 00:12:58,230
+Și acum am această formă de matrice.
+
+177
+00:12:58,240 --> 00:13:04,810
+Deci, pașii au fost grupați prin mai multe coloane, creând acest index pe mai multe nivele și apoi fiind capabil să folosească și
+
+178
+00:13:04,810 --> 00:13:10,870
+să stivuiască pentru a escaladat în mod esențial acel index și pentru a crea una dintre ele să fie coloanele și
+
+179
+00:13:10,870 --> 00:13:12,970
+una dintre ele să fie indexul.
+
+180
+00:13:12,970 --> 00:13:13,340
+In regula.
+
+181
+00:13:13,420 --> 00:13:17,620
+Nu vă faceți griji dacă ați blocat acest lucru sau ați avut probleme cu acest lucru este de fapt un fel de
+
+182
+00:13:17,620 --> 00:13:19,050
+metodă avansată pentru a face acest lucru.
+
+183
+00:13:19,060 --> 00:13:23,620
+Există și alte metode pe care le-ați fi putut încerca, cum ar fi utilizarea unui pivot sau a unei pivoturi de tip Pandurs, care vă stau
+
+184
+00:13:23,620 --> 00:13:27,230
+la dispoziție, dar din nou nu vă faceți griji prea mult dacă sunteți în stare să faceți acest lucru.
+
+185
+00:13:27,270 --> 00:13:32,620
+Este un fel de lucru care vine cu o experiență practică și cu posibilitatea de a căuta lucruri în documentație.
+
+186
+00:13:33,980 --> 00:13:40,000
+Ei bine, va merge mai departe și apelați întregul cadru de date cadru de zi și acum că avem acel cadru de date
+
+187
+00:13:40,000 --> 00:13:44,250
+pot crea cu ușurință hărți termice și această parte va fi de fapt destul de simplă.
+
+188
+00:13:44,320 --> 00:13:50,880
+Suntem doar numiți S și S căldură hartă ce trece ora și asta e tot ce trebuie să facem.
+
+189
+00:13:50,890 --> 00:13:57,130
+Acum avem o zi a săptămânii versus o oră și apoi numărul de apeluri ca indicator de
+
+190
+00:13:57,130 --> 00:14:04,240
+culoare și putem continua să încercăm să facem acest aspect mai mult ca soluțiile spunând Vedeți hartă care trece în viridis.
+
+191
+00:14:04,240 --> 00:14:09,370
+Și acum obținem aceeași schemă de culoare ca și în soluții și putem face cifra un
+
+192
+00:14:09,400 --> 00:14:15,250
+pic mai mare, spunând că Piel se leagă de această figură și că adaugă în dimensiunea Fig ca argument.
+
+193
+00:14:16,780 --> 00:14:19,000
+Și acum avem în realitate ceea ce a fost în soluții.
+
+194
+00:14:19,120 --> 00:14:24,810
+Și putem crea, de asemenea, o hartă a clusterului cu acest cadru de date în aceeași manieră,
+
+195
+00:14:24,810 --> 00:14:26,950
+spunând hartă cluster s și s.
+
+196
+00:14:26,950 --> 00:14:34,000
+Și din nou doar trecând în cadrul de date pe care l-am părăsit, a creat harta noastră See pentru aceasta
+
+197
+00:14:36,850 --> 00:14:39,010
+și care creează aceeași hartă cluster.
+
+198
+00:14:39,010 --> 00:14:43,990
+Dacă sunteți confuză cu privire la modul în care de fapt ceea ce se întâmplă de fapt pe această linie Simțiți-vă liber să posta pe forumuri
+
+199
+00:14:43,990 --> 00:14:44,770
+Q &amp; A.
+
+200
+00:14:44,770 --> 00:14:46,900
+Și mă bucur să vă explic mai mult.
+
+201
+00:14:46,900 --> 00:14:51,520
+Dar trebuie doar să vă păstrați în minte că acest lucru este un fel de avansate și dacă vă blocați
+
+202
+00:14:51,520 --> 00:14:54,480
+Nu vă faceți griji dacă vă referiți soluțiile se deplasează de-a lungul.
+
+203
+00:14:54,490 --> 00:14:59,230
+Ceea ce vrem să facem este să repetăm ​​aceleași parcele și operații pentru un cadru de date care arată că luna
+
+204
+00:14:59,320 --> 00:15:03,640
+este coloana pe care o voi face și doar copiați și lipiți acest lucru din soluții deoarece este
+
+205
+00:15:03,640 --> 00:15:06,120
+în esență același cod ca și noi de mai sus.
+
+206
+00:15:06,130 --> 00:15:12,730
+Dar în acest caz, în loc de a spune, de exemplu, ora la care am stabilit luna și dacă mergem mai departe
+
+207
+00:15:12,730 --> 00:15:13,960
+și verificăm asta.
+
+208
+00:15:14,140 --> 00:15:18,900
+Acum avem o lună de zile și în esență doar facem din nou aceleași parcele.
+
+209
+00:15:19,060 --> 00:15:28,110
+Așa că mergem doar aici, sună-o hartă parcurgere în jos un pic în loc de oră de zi.
+
+210
+00:15:28,120 --> 00:15:29,320
+Vreau să folosesc luna de luni și
+
+211
+00:15:32,590 --> 00:15:33,290
+asta mă primește.
+
+212
+00:15:33,310 --> 00:15:38,020
+Această hartă a căldurii și dacă vreau să creez o hartă cluster în afara acestui lucru, pot
+
+213
+00:15:38,020 --> 00:15:40,200
+face același lucru, cu excepția apelului cluster.
+
+214
+00:15:40,900 --> 00:15:42,810
+Și aceasta creează o hartă cluster.
+
+215
+00:15:42,910 --> 00:15:47,890
+Deci, acum pot explora de fapt datele și pot vedea ce ore ale săptămânii în ce zile ale săptămânii
+
+216
+00:15:47,890 --> 00:15:51,160
+sunt cele mai populare pentru noaptea pe care o cere să apară.
+
+217
+00:15:51,160 --> 00:15:56,020
+Și dacă luăm doar o scurtă privire la acest lucru, este logic că nu se întâmplă o mulțime
+
+218
+00:15:56,020 --> 00:16:01,170
+de apeluri între orele 0 și 5, pentru că asta e în esență miezul nopții până la ora 5 dimineața.
+
+219
+00:16:01,180 --> 00:16:02,350
+Deci toată lumea doarme.
+
+220
+00:16:02,500 --> 00:16:07,090
+Cea mai mare parte a activității criminale sau a motivelor pentru care nu fac apel, cum
+
+221
+00:16:07,180 --> 00:16:11,980
+ar fi accidentele de circulație sau incendiile, nu este într-adevăr o activitate criminală în acest set de date.
+
+222
+00:16:12,010 --> 00:16:14,410
+Este mai mult foc M-S și motive de trafic.
+
+223
+00:16:14,410 --> 00:16:17,330
+Toate acestea au loc în timpul zilei în timpul zilei.
+
+224
+00:16:17,350 --> 00:16:23,320
+Și ceea ce este interesant este că nu prea multe dintre ele au tendința să apară în zilele de duminică
+
+225
+00:16:23,320 --> 00:16:27,940
+și sâmbătă și puteți vedea acest lucru puțin mai clar cu hărțile de cluster,
+
+226
+00:16:27,940 --> 00:16:34,450
+astfel încât acesta va crea grupuri în care crede că există cantități mici de apeluri față de cantități mari de apeluri
+
+227
+00:16:34,450 --> 00:16:42,490
+și uneori ceea ce este frumos pentru hărțile cluster este de a alege ceva de genul cartografiere caldă rece cald pentru a vedea cu adevărat acest lucru.
+
+228
+00:16:42,760 --> 00:16:46,750
+Și uneori este puțin mai clar o schemă de culori pentru ca oamenii să-și poată implica
+
+229
+00:16:46,750 --> 00:16:47,850
+grupurile în mintea lor.
+
+230
+00:16:48,220 --> 00:16:53,080
+Se pare că avem apeluri mari în timpul zilei de luni și marți și poate joi și
+
+231
+00:16:53,080 --> 00:16:55,210
+vineri în orele 8 16 și 17.
+
+232
+00:16:55,210 --> 00:17:01,270
+Deci, un pic mai mult spre seara are tendința de a arăta ca versus sume mici apel sunt
+
+233
+00:17:01,330 --> 00:17:03,700
+în timpul Poate sâmbătă și duminică dimineața.
+
+234
+00:17:03,700 --> 00:17:04,290
+O.K.
+
+235
+00:17:04,570 --> 00:17:09,400
+Și apoi am repetat aceste operațiuni pe lună și puteți compara comparativ cu lunile de vară versus lunile
+
+236
+00:17:09,400 --> 00:17:14,410
+de iarnă aici și puteți continua să explorați datele pe care le considerați potrivite și asta e tot
+
+237
+00:17:14,410 --> 00:17:16,350
+ce a fost la acest proiect.
+
+238
+00:17:16,420 --> 00:17:17,200
+Sper ca ti-a placut.
+
+239
+00:17:17,200 --> 00:17:18,420
+Sper că ați găsit-o interesantă.
+
+240
+00:17:18,820 --> 00:17:23,650
+Din nou, nu vă simțiți rău dacă trebuia să căutați soluțiile pentru un astfel de complex de linie.
+
+241
+00:17:23,710 --> 00:17:28,480
+Puteți oricând să vă simțiți liber să postați în forumuri Q &amp; A dacă aveți nevoie de clarificări cu privire la ceea
+
+242
+00:17:28,480 --> 00:17:29,680
+ce se întâmplă efectiv acolo.
+
+243
+00:17:29,680 --> 00:17:30,250
+In regula.
+
+244
+00:17:30,370 --> 00:17:32,780
+Simțiți-vă liber să postați pentru orice fel de întrebări.
+
+245
+00:17:32,860 --> 00:17:35,320
+Și te voi vedea la următoarea conferință.
+
+246
+00:17:35,320 --> 00:17:36,100
+Multumesc tuturor.
+
+247
+00:17:36,100 --> 00:17:37,570
+Sper că v-ați bucurat de acest proiect.

@@ -1,0 +1,347 @@
+1
+00:00:05,190 --> 00:00:10,920
+Witam wszystkich i zapraszam na wykład fabuły regresji dla Seaborna Seaborn ma wiele wbudowanych możliwości
+
+2
+00:00:10,920 --> 00:00:12,260
+agresji i fabuły.
+
+3
+00:00:12,270 --> 00:00:16,320
+Jednak tak naprawdę nie będziemy dyskutować o regresji aż do sekcji uczenia maszynowego tego kursu.
+
+4
+00:00:16,350 --> 00:00:22,590
+Na razie zakryje tylko L i funkcję fabuły L. M. fabuła pozwala wyświetlać modele liniowe
+
+5
+00:00:22,670 --> 00:00:23,560
+z Seaborn.
+
+6
+00:00:23,730 --> 00:00:28,090
+Dowiedz się także, jak zmieniać i zmieniać współczynnik proporcji w poletkach morskich.
+
+7
+00:00:28,140 --> 00:00:30,960
+Przejdźmy dalej i przejdź do notatnika Jupiter, aby zacząć.
+
+8
+00:00:31,020 --> 00:00:32,980
+W porządku, jestem w notesie Jowisza.
+
+9
+00:00:33,030 --> 00:00:37,550
+Chcę poprowadzić importowane morze nazwane Matt plotless in line i załadowałem zestaw danych
+
+10
+00:00:37,550 --> 00:00:39,410
+końcówek, z którymi pracowaliśmy.
+
+11
+00:00:39,480 --> 00:00:46,020
+Idź i pokaż, jak użyć wykresu L-M, aby stworzyć bardzo prosty wykres liniowy,
+
+12
+00:00:47,150 --> 00:00:56,850
+który nazwałeś Essonem tym L. M. działki, a następnie to, co chcesz na osi X,
+
+13
+00:00:56,850 --> 00:01:04,980
+a na osi y będzie działka w sumie rachunku, a na osi Y będzie dalej i nazwać go w naszym źródle danych będą wskazówki.
+
+14
+00:01:05,120 --> 00:01:10,290
+Teraz, jeśli przejdziesz dalej i zobaczysz, że widzimy, że mamy w zasadzie plan rozrzutu
+
+15
+00:01:10,290 --> 00:01:17,340
+z liniowym dopasowaniem na nim i możesz rzeczywiście określić, że jesteś również chory, jeśli chcesz mieć oddzielenie oparte na cechach kategorycznych.
+
+16
+00:01:17,820 --> 00:01:20,400
+Na przykład możemy określić Huie na seks.
+
+17
+00:01:21,060 --> 00:01:26,340
+A teraz masz zasadniczo dwie wykresy rozproszenia i dwie liniowe pasma na górze tego i to
+
+18
+00:01:26,400 --> 00:01:30,870
+jest zasadniczo coś, co można wywnioskować z tego wykresu, że mężczyzna i kobieta zasadniczo
+
+19
+00:01:30,870 --> 00:01:35,190
+mają takie samo liniowe dopasowanie, jeśli chodzi o całkowite rachunki wobec końcówki.
+
+20
+00:01:35,520 --> 00:01:41,340
+Warto tutaj zwrócić uwagę na to, że mogą zacząć przekazywać parametry stylu na żywo, tak
+
+21
+00:01:41,400 --> 00:01:44,900
+jak ma to wpływ na markery lub typy znaczników.
+
+22
+00:01:44,910 --> 00:01:53,400
+Możesz zacząć mówić, że coś takiego przejdzie i powiedz, że znaczniki są równe.
+
+23
+00:01:53,420 --> 00:01:57,080
+Ponieważ mamy tutaj odcień, mamy dwa oddzielne markery, których potrzebujemy.
+
+24
+00:01:57,150 --> 00:02:03,210
+Może podać dowolną listę typów znaczników, dzięki czemu mogę wejść i powiedzieć małą literę O dla jednego znacznika, a
+
+25
+00:02:03,240 --> 00:02:09,300
+następnie małe litery V dla drugiego, a te znaczniki te symbole pochodzą z mapy oraz symboli znaczników lib.
+
+26
+00:02:09,630 --> 00:02:15,990
+Więc idź i biegnij, a potem widzimy, że mamy górę, a potem trójkąty dla kobiet i kółka dla mężczyzn.
+
+27
+00:02:16,350 --> 00:02:22,110
+Teraz, jeśli to nie jest wystarczająco duże, abyś mógł zobaczyć, że możesz iść dalej
+
+28
+00:02:22,170 --> 00:02:31,020
+i zacząć dodawać to, co jest znane jako parametr podkreślenia rozproszenia scatter iw zasadzie to znaczy, że jestem w stanie przekazać mapę
+
+29
+00:02:31,020 --> 00:02:35,710
+parametrów wykresu jeszcze bardziej bezpośrednio do Piel t to połączenie rozproszone.
+
+30
+00:02:35,940 --> 00:02:37,520
+Więc co z tym robi wybrzeże.
+
+31
+00:02:37,560 --> 00:02:43,180
+Fabuła S i s lm to tak naprawdę wywołanie mapy działki lib bardzo mocno pod maską.
+
+32
+00:02:43,260 --> 00:02:50,220
+A jeśli chcesz wykonać mapę działki żył bezpośrednio z morza, co robisz i tego rodzaju na
+
+33
+00:02:50,220 --> 00:02:55,520
+podstawie poszczególnych przypadków, więc musisz odwołać się do dokumentacji, jeśli to konieczne.
+
+34
+00:02:55,620 --> 00:03:02,340
+Ale jeśli chcesz, aby ten przypadek wpłynął na wykres rozrzutu, przesyłasz dowolny słownik,
+
+35
+00:03:02,340 --> 00:03:07,550
+więc mogę śmiało powiedzieć słownika i zmienić rozmiar na 100.
+
+36
+00:03:07,590 --> 00:03:10,000
+To wpłynie na rozmiar tych znaczników.
+
+37
+00:03:10,030 --> 00:03:14,270
+Będziesz prowadził ten program, a ty i my zrobiliśmy markery o wiele większe.
+
+38
+00:03:14,580 --> 00:03:20,940
+Tak więc jest to tylko wezwanie do mapowania fabuły i tego, co dzieje się pod maską Seaborna.
+
+39
+00:03:20,940 --> 00:03:25,850
+Innymi słowy, właśnie przechodzisz przez dowolny słownik z argumentami lib flagi bazowej, a w tym przypadku jest.
+
+40
+00:03:25,890 --> 00:03:30,960
+Jeśli chodzi o rozmiar wykresu rozrzutu, prawdopodobnie nie będziesz pamiętać tego rodzaju rzeczy z
+
+41
+00:03:30,960 --> 00:03:33,900
+wierzchu głowy, ale jest to odniesienie do dokumentacji.
+
+42
+00:03:33,900 --> 00:03:38,810
+I prawdopodobnie nie będziesz dostosowywać do tego stopnia, że często z Seaborn.
+
+43
+00:03:39,210 --> 00:03:43,430
+Najpierw wykonaj spersonalizowanie danych przed wykonaniem tego rodzaju akcji.
+
+44
+00:03:43,770 --> 00:03:46,060
+Zobaczmy jeszcze kilka opcji.
+
+45
+00:03:46,170 --> 00:03:52,410
+Jeśli nie chcesz zawracać sobie głowy skalowaniem znaczników, możesz użyć siatki zamiast
+
+46
+00:03:52,410 --> 00:03:59,500
+oddzielać ją od Hugh, więc możesz dodać więcej, mówiąc, że Asinus pomyślał o spiskach Ellen.
+
+47
+00:03:59,610 --> 00:04:08,390
+Przejdźmy dalej, skopiuj i wklej końcówkę rachunku i dane, a my zrobimy to.
+
+48
+00:04:08,400 --> 00:04:16,080
+Po zobaczeniu tego zamiast określenia czegoś takiego jak Heugh równa się płci, która zmienia odcień koloru,
+
+49
+00:04:16,500 --> 00:04:23,760
+możesz zacząć wywoływać czynnik lub wykres siatki, jak mówienie o równym seksie dla kolumn.
+
+50
+00:04:24,000 --> 00:04:29,060
+A teraz musisz oddzielić działki kolumn tutaj oddzielone kategorią płci.
+
+51
+00:04:29,130 --> 00:04:31,110
+Więc mężczyzna kontra kobieta.
+
+52
+00:04:31,110 --> 00:04:37,140
+Zamiast rozdzielać je według kolorów oddzielonych kolumnami, możesz kontynuować ten rodzaj logiki również w
+
+53
+00:04:37,140 --> 00:04:38,040
+wierszach.
+
+54
+00:04:38,070 --> 00:04:45,510
+Jeśli chcesz dodać inną zmienną, aby zobaczyć, że możesz powiedzieć, że wiersz jest równy kolumnie czasu, a teraz masz
+
+55
+00:04:46,400 --> 00:04:52,130
+wiersze i czasy, a to jest po prostu wykonywanie wywołań grid i wywołań grupowych Fassett,
+
+56
+00:04:52,140 --> 00:04:55,130
+o których dowiedzieliśmy się wcześniej. wykład siatkowy.
+
+57
+00:04:55,200 --> 00:05:00,360
+Ale jest trochę bardziej automatyczny, ponieważ dodajemy tylko połączenie i wiersz do wywołania wątku L-M.
+
+58
+00:05:00,360 --> 00:05:01,790
+Dzięki temu jest o wiele łatwiej.
+
+59
+00:05:01,790 --> 00:05:05,220
+Teraz nie musimy zadawać Fassett świetnie za każdym razem.
+
+60
+00:05:05,220 --> 00:05:11,250
+Teraz, jeśli z jakiegoś powodu nadal chcesz wyliczyć więcej zmiennych, możesz dodać hugh, więc możesz
+
+61
+00:05:11,250 --> 00:05:14,750
+powiedzieć, że Heugh jest równy powiedzmy innej kolumnie.
+
+62
+00:05:14,880 --> 00:05:22,920
+Chcę wejść i powiedzieć, że kolumna to dzień, w którym mamy czwartek, piątek, sobotę, a niedziela to kolumna.
+
+63
+00:05:22,920 --> 00:05:25,380
+Zmienimy odcień na seks.
+
+64
+00:05:25,520 --> 00:05:31,040
+To da nam dość interesującą fabułę, ale będzie tutaj dużo informacji, więc możesz zobaczyć, że
+
+65
+00:05:31,070 --> 00:05:33,900
+dzieje się tu dużo i dużo informacji.
+
+66
+00:05:33,900 --> 00:05:38,610
+Więc prawdopodobnie po prostu chcesz iść do przodu i wyeliminować wiersz bezpośrednio z nietoperza i tylko
+
+67
+00:05:40,620 --> 00:05:46,290
+dostać jedną kolumnę z powrotem lub jeden Roback przepraszam, a następnie mamy miły wygląd działki tutaj, ale problem jest,
+
+68
+00:05:46,290 --> 00:05:48,430
+że aspekt i rozmiar wyglądają źle.
+
+69
+00:05:48,660 --> 00:05:54,990
+Tak więc figury Seaborn będą miały dopasowany rozmiar i proporcje obrazu z parametrami rozmiaru i aspektu.
+
+70
+00:05:55,290 --> 00:06:04,380
+Więc wchodzisz w rozmowę morską, a następnie możesz zmienić proporcje z aspektem, więc jest to dobre i nadaj mu współczynnik
+
+71
+00:06:04,380 --> 00:06:07,170
+proporcji równy 0. 6.
+
+72
+00:06:07,170 --> 00:06:11,460
+I to jest stosunek wysokości do szerokości każdej z tych oddzielnych siatek.
+
+73
+00:06:11,700 --> 00:06:18,370
+Następnie możesz określić rozmiar, aby zmienić rozmiary, aby określić rozmiar 8.
+
+74
+00:06:18,870 --> 00:06:23,520
+I tutaj zaczął wpływać na stosunek aspektu i wielkości tego.
+
+75
+00:06:24,000 --> 00:06:27,960
+A teraz prawdopodobnie zastanawiasz się dobrze, jak zmienić rozmiar czcionki jest wciąż zbyt mały, aby
+
+76
+00:06:27,960 --> 00:06:30,150
+przeczytać lub jak jeszcze bardziej kontrolować estetykę.
+
+77
+00:06:30,270 --> 00:06:35,700
+Zamierzamy wprowadzić ten temat do naszego wykładu dotyczącego stylu i koloru, który
+
+78
+00:06:35,700 --> 00:06:42,780
+zostanie przedstawiony poniżej, gdzie pokażemy, jak kontrolować te bardziej podstawowe cechy fabuły, takie jak kolorystyka stylu
+
+79
+00:06:42,780 --> 00:06:43,950
+czcionki itp.
+
+80
+00:06:44,160 --> 00:06:46,950
+Jeśli chodzi o ten wykład, to prawie skończyliśmy.
+
+81
+00:06:46,980 --> 00:06:51,360
+Najważniejszą rzeczą, której chcę, abyś wydostał się z tego, jest to, że aby wywołać
+
+82
+00:06:51,410 --> 00:06:58,140
+wykres liniowy, po prostu wywołasz s i slm plot passen your xy column i ustawisz dane, a następnie możesz przekazać Hughowi te
+
+83
+00:06:58,140 --> 00:07:02,130
+bardziej zaawansowane funkcje, takie jak ustawienie rozmiar znacznika lub zmiana typu znacznika.
+
+84
+00:07:02,130 --> 00:07:06,420
+Śmiało i odwołaj się do książki notatki i łącza do dokumentacji w notatniku.
+
+85
+00:07:06,570 --> 00:07:07,050
+W porządku.
+
+86
+00:07:07,260 --> 00:07:11,450
+Jeśli masz jakieś pytania, możesz opublikować forum pytań i odpowiedzi, a z chęcią Ci pomogę.
+
+87
+00:07:11,460 --> 00:07:13,560
+Dzięki, a do zobaczenia na następnym wykładzie.

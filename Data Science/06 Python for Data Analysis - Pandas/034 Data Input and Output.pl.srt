@@ -1,0 +1,791 @@
+1
+00:00:05,370 --> 00:00:11,100
+Witam wszystkich i zapraszam na panele do wprowadzania i wyprowadzania danych, ponieważ biblioteka ma możliwość
+
+2
+00:00:11,100 --> 00:00:15,900
+odczytu danych i zapisu danych do wielu różnych źródeł tego wykładu.
+
+3
+00:00:15,900 --> 00:00:22,860
+Zajmiemy się tylko czterema głównymi źródłami danych, zobacz pliki Excela w formacie H. T. poczta z sieci i kontynuacja
+
+4
+00:00:22,860 --> 00:00:30,600
+w celu pracy z plikami ASTM l i kolejnymi bazami danych z dostawcami tylko do instalacji
+
+5
+00:00:30,600 --> 00:00:31,920
+dla bibliotek.
+
+6
+00:00:31,980 --> 00:00:35,310
+Instrukcje znajdują się w notatniku lub jeśli chcesz zrobić to szybko.
+
+7
+00:00:35,310 --> 00:00:42,930
+Są to cztery biblioteki potrzebne do zainstalowania pokrywy alchemicznej Lix Mel HVM L5, a następnie piękna zupa do
+
+8
+00:00:42,930 --> 00:00:46,880
+biblioteki, którą możesz zrobić za pomocą Pipp lub Khanda.
+
+9
+00:00:47,280 --> 00:00:47,760
+W porządku.
+
+10
+00:00:47,940 --> 00:00:52,510
+Po zainstalowaniu tych bibliotek i nawiązaniu do notebooka możesz zacząć.
+
+11
+00:00:52,560 --> 00:00:53,890
+Przejdźmy dalej i wskoczyliśmy.
+
+12
+00:00:53,910 --> 00:00:58,190
+Notatka Jowisza i pokaż, jak czytać i pisać pliki z pandami.
+
+13
+00:00:58,230 --> 00:01:00,860
+W tej chwili jesteśmy na notebooku Jupiter.
+
+14
+00:01:00,930 --> 00:01:06,420
+Pamiętaj, że podczas odwoływania się do plików, takich jak przykład, zobacz plik X-Fi i przykładowy
+
+15
+00:01:06,420 --> 00:01:12,030
+plik Excel, musisz upewnić się, że znajdują się w tym samym miejscu co notes Jupiter,
+
+16
+00:01:12,030 --> 00:01:13,830
+aby sprawdzić lokalizację notatnik.
+
+17
+00:01:13,830 --> 00:01:20,910
+Możesz po prostu wejść do komórki i wpisać P WD do shift enter i zgłoś lokalizację.
+
+18
+00:01:20,910 --> 00:01:22,750
+To jest ta sama lokalizacja pliku.
+
+19
+00:01:22,770 --> 00:01:26,670
+Przykład pokazuje każdy plik w przykładowym pliku Excel.
+
+20
+00:01:26,760 --> 00:01:31,680
+Jeśli pobrałeś całe repozytorium notebooków i pracujesz w sekcji danych wejściowych i wyjściowych
+
+21
+00:01:31,680 --> 00:01:37,680
+lub w notatniku powinieneś być w porządku, odwołując się do plików tak, jakby już tam były.
+
+22
+00:01:38,250 --> 00:01:43,870
+OK, przejdźmy dalej i pokażmy, jak otworzyć i odczytać C jako pliki V, aby to zrobić.
+
+23
+00:01:43,890 --> 00:01:52,430
+Możesz po prostu powiedzieć, że PD odczytuje podkreślenie CXXVI, a następnie zacznij wpisywać nazwę twojego C jako pliku.
+
+24
+00:01:52,500 --> 00:01:54,510
+W tym przypadku wiem, że nazywa się to przykładem.
+
+25
+00:01:54,660 --> 00:02:01,000
+Kiedy zacząłem pisać tę fajną sztuczkę, jest to karta kliknięcia, która automatycznie uzupełni nazwę pliku.
+
+26
+00:02:02,190 --> 00:02:03,570
+W twoim przypadku możesz po prostu mieć.
+
+27
+00:02:03,570 --> 00:02:06,340
+Przykład Nie przykład, że C S V.
+
+28
+00:02:06,390 --> 00:02:08,880
+Pójdźmy dalej i przeczytaj to.
+
+29
+00:02:09,030 --> 00:02:15,840
+Wprowadziłem shift i teraz widzę C jako plik danych z kolumnami A B C i D
+
+30
+00:02:15,840 --> 00:02:19,290
+oraz 0 1 do 3 jako wiersze.
+
+31
+00:02:19,290 --> 00:02:28,010
+Zauważ, że jeśli chcę odczytać dowolne pliki, po prostu używam zakładki "kliknij" podkreślenie, kliknij tutaj, a dostaję to
+
+32
+00:02:28,020 --> 00:02:33,060
+menu rozwijane różnych formatów, z których można czytać Pancho.
+
+33
+00:02:33,060 --> 00:02:35,350
+Więc Pan może czytać nawet z twojego schowka.
+
+34
+00:02:35,350 --> 00:02:42,400
+Zobacz, jak wyróżniamy pliki Pliki HDR Pikle Jaisona szukają kolejnych plików tabel itd ..
+
+35
+00:02:42,660 --> 00:02:44,870
+Pamiętaj, że mają tu wiele opcji.
+
+36
+00:02:44,940 --> 00:02:47,340
+Właśnie przechodzimy do najczęstszych.
+
+37
+00:02:47,840 --> 00:02:53,490
+OK, aby napisać do pliku CXXVI będziesz potrzebował ramek danych, więc zamierzam iść dalej i po prostu powiedzieć,
+
+38
+00:02:53,490 --> 00:02:55,740
+że DF jest równe PD myśli.
+
+39
+00:02:55,760 --> 00:02:58,100
+Przeczytaj podkreślenie C jako V.
+
+40
+00:02:58,530 --> 00:03:05,920
+I jeszcze raz, żeby zrobić autouzupełnianie karty przykładowej tutaj i teraz mam T. FA. jako ten sam przykład DFS.
+
+41
+00:03:05,920 --> 00:03:10,290
+Właściwie to zapisałem go do zmiennej poza ramką danych.
+
+42
+00:03:10,290 --> 00:03:14,000
+Możesz powiedzieć, aby podkreślić, jeśli klikniesz kartę tutaj.
+
+43
+00:03:14,220 --> 00:03:17,470
+Zauważysz, że masz do wyboru różne formaty.
+
+44
+00:03:17,580 --> 00:03:21,270
+W zasadzie prawie wszystkie te same formaty, z których można było czytać.
+
+45
+00:03:21,270 --> 00:03:25,780
+Więc zamierzam wejść i powiedzieć, że podkreślenie DFA to s.
+
+46
+00:03:26,070 --> 00:03:36,960
+Zamierzam nazwać to moim wynikiem podkreślenia, a inne, co robię, to powiedzieć, że indeks jest równy false, a powodem jest to,
+
+47
+00:03:36,960 --> 00:03:42,200
+że tak naprawdę nie chcę zapisać tego indeksu jako kolumny.
+
+48
+00:03:42,210 --> 00:03:47,400
+Pozwól, że pokażę ci, co się stanie, jeśli nie ustawiam indeksacji jako fałszywej, a oni po prostu
+
+49
+00:03:47,400 --> 00:03:49,290
+umieścili F, aby zobaczyć Esrey.
+
+50
+00:03:49,410 --> 00:03:54,660
+Mam zamiar iść naprzód i powiedzieć PD, który czyta podkreślenie cxxviii i mam zamiar przeczytać
+
+51
+00:03:54,660 --> 00:03:56,860
+plik, który właśnie zapisałem moje wyniki.
+
+52
+00:03:56,960 --> 00:04:03,180
+Nie, dostaję tę kolumnę o nazwie nienazwana 0 i był to stary indeks.
+
+53
+00:04:03,180 --> 00:04:09,560
+Teraz jeśli powiem T. FA. aby zobaczyć, czy indeks jest fałszywy w uruchomieniu tej komórki.
+
+54
+00:04:09,750 --> 00:04:15,360
+A potem, jeśli ponownie przeczytam moje wyniki, że faktycznie powiem, że indeks i ja automatycznie przypiszę
+
+55
+00:04:15,360 --> 00:04:17,490
+indeks zakresu do ramki danych.
+
+56
+00:04:17,490 --> 00:04:22,470
+Miej to na uwadze podczas zapisywania plików CACP, niezależnie od tego, czy możesz powiedzieć,
+
+57
+00:04:22,560 --> 00:04:24,520
+że indeks jest równy false.
+
+58
+00:04:24,540 --> 00:04:24,850
+W porządku.
+
+59
+00:04:24,870 --> 00:04:28,700
+Teraz przejdźmy do czytania i pisania z plików Excel.
+
+60
+00:04:28,870 --> 00:04:31,240
+Pandy potrafią czytać i pisać pliki excela.
+
+61
+00:04:31,290 --> 00:04:34,280
+Pamiętaj, że pandy mogą importować tylko dane.
+
+62
+00:04:34,350 --> 00:04:39,990
+Nie można zaimportować formuł ani obrazów lub rzeczy takich jak makra, używając odczytu z innym wynikiem.
+
+63
+00:04:40,020 --> 00:04:43,310
+Metoda Excel może spowodować awarię pandy.
+
+64
+00:04:43,320 --> 00:04:49,890
+Inną rzeczą, na którą warto zwrócić uwagę, jest to, że może pojawić się błąd z prośbą o zainstalowanie biblioteki xl rd, która powinna
+
+65
+00:04:49,890 --> 00:04:51,360
+była zostać automatycznie zainstalowana.
+
+66
+00:04:51,420 --> 00:04:53,330
+Jeśli korzystasz z dystrybucji Anaconda.
+
+67
+00:04:53,430 --> 00:04:58,710
+Ale jeśli nie, przejdziesz do swojego terminala, a na terminalu lub
+
+68
+00:04:58,710 --> 00:05:05,130
+linii poleceń wpisz conda install X LRAD lub zrobisz to samo z instalacją pip.
+
+69
+00:05:05,160 --> 00:05:06,810
+Znowu nie zrobisz tego w komórce.
+
+70
+00:05:06,820 --> 00:05:09,410
+Będziesz to robił w linii poleceń lub terminalu.
+
+71
+00:05:09,420 --> 00:05:14,300
+Mam nadzieję, że gdybyś zrobił dystrybucję Anacondy, która powinna była automatycznie zainstalować wraz z pantografami.
+
+72
+00:05:15,060 --> 00:05:17,070
+Zobaczmy, jak to działa.
+
+73
+00:05:17,100 --> 00:05:18,590
+Mam zamiar pokazać plik Excela.
+
+74
+00:05:18,600 --> 00:05:22,700
+Będę pracował z twoim masz bardzo prostą próbkę Excela.
+
+75
+00:05:22,740 --> 00:05:27,870
+W rzeczywistości wygląda prawie tak samo, jak plik, z którym współpracujemy, z wyjątkiem tego,
+
+76
+00:05:27,870 --> 00:05:33,350
+że tutaj jest napisane w arkuszu 1 iw zasadzie to, co Pandurs uważa za skoroszyt.
+
+77
+00:05:33,420 --> 00:05:34,620
+Czy to jest skoroszyt.
+
+78
+00:05:34,650 --> 00:05:41,960
+To tylko kilka arkuszy, a każdy arkusz jest ramką danych, co oznacza, że mogę powiedzieć, że PD czyta Excel.
+
+79
+00:05:42,390 --> 00:05:46,910
+Przekażę w pliku Excel plik X X X.
+
+80
+00:05:47,130 --> 00:05:54,000
+Dobrym pomysłem jest wpisanie nazwy pliku i naciśnięcie klawisza, który działa tylko wtedy, gdy pliki Excela znajdują się
+
+81
+00:05:54,030 --> 00:05:57,080
+w tym samym miejscu co ten notatnik.
+
+82
+00:05:57,270 --> 00:06:04,790
+Jeśli nie, musisz przekazać całą ścieżkę pliku, a następnie możesz nazwać nazwę arkusza, a następnie
+
+83
+00:06:04,830 --> 00:06:11,160
+arkusze pasandu, a następnie przeczytać i uzyskać wynik, którego się spodziewaliśmy.
+
+84
+00:06:11,160 --> 00:06:13,780
+A to w zasadzie do czytania z pliku Excela.
+
+85
+00:06:13,790 --> 00:06:18,390
+Przekazujesz plik, a następnie przekazujesz nazwę arkusza, którą chcesz, aby Pandurs spróbował
+
+86
+00:06:18,390 --> 00:06:20,690
+odczytać go jako ramkę danych.
+
+87
+00:06:20,820 --> 00:06:22,490
+Ramka danych do wyjścia Excela.
+
+88
+00:06:22,530 --> 00:06:24,400
+To także bardzo prosty proces.
+
+89
+00:06:24,420 --> 00:06:31,620
+Po prostu weź ramkę danych, którą chcesz napisać do Excela, aby podkreślić podkreślenie Excela w nazwie pliku Excel, do
+
+90
+00:06:31,620 --> 00:06:33,400
+którego chcesz go zapisać.
+
+91
+00:06:33,430 --> 00:06:36,660
+Zrobimy nowy o nazwie Excel.
+
+92
+00:06:36,870 --> 00:06:44,730
+Próbka 2 kropka x l s x, a następnie możemy określić nazwę arkusza, jeśli chcesz.
+
+93
+00:06:44,910 --> 00:06:49,980
+Coś, co musisz wiedzieć, to to, że chcesz podkreślić Excel z jakiegokolwiek powodu
+
+94
+00:06:49,980 --> 00:06:54,260
+pandy, musisz napisać w nazwie podkreślenia arkuszy i nazwie arkusza.
+
+95
+00:06:54,300 --> 00:06:57,120
+Wejdziemy i wstawimy nowy arkusz.
+
+96
+00:06:57,120 --> 00:07:00,500
+W porządku, to dobrze i poprowadź to i to wszystko.
+
+97
+00:07:00,510 --> 00:07:02,730
+Zapisaliśmy to w pliku Excel.
+
+98
+00:07:02,730 --> 00:07:05,970
+Teraz przejdźmy dalej i przejdźmy do pracy T. M ..
+
+99
+00:07:06,180 --> 00:07:10,260
+Ponownie musisz zainstalować kilka bibliotek, aby to zadziałało i prawdopodobnie będziesz
+
+100
+00:07:10,260 --> 00:07:12,530
+musiał ponownie uruchomić komputer Jupiter.
+
+101
+00:07:12,570 --> 00:07:15,080
+Śmiało i sprawdź uwagi do tego wykładu.
+
+102
+00:07:15,080 --> 00:07:20,130
+Książeczka z notatkami, aby uzyskać listę wszystkich bibliotek, należy zainstalować lub przejść do początku
+
+103
+00:07:20,130 --> 00:07:22,670
+wykładu, gdzie wyświetlana jest lista bibliotek.
+
+104
+00:07:22,950 --> 00:07:26,760
+Porozmawiajmy o wejściu HTL tutaj.
+
+105
+00:07:26,790 --> 00:07:34,650
+Mam link do dokumentu FDIC o nieudanej stronie listy banków, a tutaj jest tylko lista wszystkich nieudanych
+
+106
+00:07:35,010 --> 00:07:36,710
+banków według FDIC.
+
+107
+00:07:36,870 --> 00:07:41,080
+Jeśli chodzi o śledzenie, to Federal Deposit Insurance Corporation.
+
+108
+00:07:41,220 --> 00:07:43,310
+I tutaj mamy grono nieudanych banków.
+
+109
+00:07:43,320 --> 00:07:47,660
+Data zakończenia aktualizacji itp. ale to jest po prostu obserwowane jak mruga.
+
+110
+00:07:47,760 --> 00:07:51,180
+Ten link znajduje się w notatnikach, z których może wyjść, a następnie skopiować i wkleić go.
+
+111
+00:07:51,180 --> 00:07:55,760
+Zamierzam iść dalej i skopiować ten link i spróbować go przeczytać.
+
+112
+00:07:55,760 --> 00:07:59,890
+A z tych frajerów, którzy robią to wszystko, co muszę zrobić, to powiedzieć PD.
+
+113
+00:07:59,970 --> 00:08:05,610
+Cóż, pozwólmy, że dane mówiące będą równe kropkom PD.
+
+114
+00:08:06,060 --> 00:08:08,190
+Czytaj h T. M ..
+
+115
+00:08:08,420 --> 00:08:12,900
+A potem jako struna przejdę w tym rzeczywistym wieku TMLC.
+
+116
+00:08:14,440 --> 00:08:19,720
+Poświęcą trochę czasu na przeczytanie, że powinno się to udać, jeśli masz wszystkie biblioteki.
+
+117
+00:08:20,000 --> 00:08:20,340
+DOBRZE.
+
+118
+00:08:20,370 --> 00:08:21,600
+Wygląda na to, że się udało.
+
+119
+00:08:21,690 --> 00:08:27,280
+Należy tutaj zwrócić uwagę, że zazwyczaj nie ma to bezpośredniego związku z ramką danych.
+
+120
+00:08:27,300 --> 00:08:34,360
+Jeśli sprawdzę, jakie dane są, gdy wypowiem typ, zauważysz, że to rzeczywiście lista.
+
+121
+00:08:34,470 --> 00:08:40,350
+W zasadzie to, co próbowali zrobić, to znaleźć każdy element tabeli, który znajdował się w
+
+122
+00:08:40,350 --> 00:08:41,190
+tym pliku.
+
+123
+00:08:41,190 --> 00:08:48,090
+A jeśli znasz, jeśli h T. M. wiesz, że jeśli możesz kliknąć tutaj prawym przyciskiem
+
+124
+00:08:48,090 --> 00:08:50,660
+i wyświetlić źródło strony, otrzymasz listę rzeczywistych kodów HTL.
+
+125
+00:08:50,910 --> 00:08:56,010
+A jeśli jesteś obeznany z h, będziesz wiedział, że możesz tak po prostu wyglądać, tak jak tutaj jest
+
+126
+00:08:56,010 --> 00:08:56,670
+lista klas.
+
+127
+00:08:56,700 --> 00:09:03,300
+W rzeczywistości istnieje odniesienie do tabeli, więc tutaj w kodzie HTML znajdują się oznaczenia stołów i to w zasadzie panel
+
+128
+00:09:03,300 --> 00:09:04,550
+ma zamiar zrobić.
+
+129
+00:09:04,560 --> 00:09:09,500
+I to zrobi ich listę i skonwertuje każdy element z tej listy na ramkę danych.
+
+130
+00:09:09,720 --> 00:09:13,800
+I to, co masz zamiar zrobić, to przejrzeć tę listę, dopóki nie znajdziesz tego,
+
+131
+00:09:13,800 --> 00:09:14,430
+czego chcesz.
+
+132
+00:09:14,490 --> 00:09:17,310
+W takim przypadku powinien to być pierwszy element na liście.
+
+133
+00:09:17,310 --> 00:09:20,120
+Więc jeśli powiemy dane w punkcie zero.
+
+134
+00:09:20,160 --> 00:09:25,790
+Tak więc pierwszy element na liście, który jest ramką danych, której szukaliśmy, jest nazwany wielkim miastem.
+
+135
+00:09:26,220 --> 00:09:26,800
+Cetera.
+
+136
+00:09:26,940 --> 00:09:32,930
+Chodźmy i po prostu sprawdźmy głowę tej ramki danych i tak to wygląda.
+
+137
+00:09:33,030 --> 00:09:34,670
+Znowu niektóre rzeczy nie są kopiowane.
+
+138
+00:09:34,670 --> 00:09:35,310
+Dokładnie.
+
+139
+00:09:35,310 --> 00:09:36,920
+Dostajesz garść bez wartości.
+
+140
+00:09:37,110 --> 00:09:42,720
+Ale pamiętajcie, że pandererzy to po prostu czytanie tego H. T. plik mailowy najlepiej jak potrafi.
+
+141
+00:09:42,720 --> 00:09:43,110
+W porządku.
+
+142
+00:09:43,260 --> 00:09:46,630
+To jest poczta H-2A, która jest w istocie tylko skrawkiem www Pandursa.
+
+143
+00:09:46,650 --> 00:09:51,150
+Przejdźmy wreszcie do naszego ostatniego tematu, który współpracuje z sequelem.
+
+144
+00:09:51,210 --> 00:09:55,530
+W notesie jest sporo notatek dotyczących sequela i pand.
+
+145
+00:09:55,530 --> 00:10:01,410
+Pandy są prawdopodobnie najlepszym sposobem na odczytanie bazy danych, ponieważ istnieje wiele smaków silników
+
+146
+00:10:01,410 --> 00:10:07,920
+sequelowych, takich jak postscripts, sequel sequel sequel light cetera, gdzie zamierzamy to zrobić, to właściwie zbudować
+
+147
+00:10:07,920 --> 00:10:13,860
+bardzo prosty silnik sequelowy, który będzie być chwilowo zatrzymanym w pamięci, aby pokazać, jak
+
+148
+00:10:14,250 --> 00:10:19,070
+można używać Pandurs do czytania tabel całkowicie jako ramek danych.
+
+149
+00:10:19,080 --> 00:10:25,380
+Zalecam jednak, aby poszukać konkretnego sterownika w zależności od konkretnego
+
+150
+00:10:25,470 --> 00:10:26,810
+silnika sequela.
+
+151
+00:10:26,850 --> 00:10:31,650
+Na przykład, jeśli pójdziesz do notebooka na ten wykład, zobaczysz, że jeśli korzystasz z kontynuacji
+
+152
+00:10:31,860 --> 00:10:36,810
+Postgreena, powinieneś używać biblioteki o nazwie Psycho PGE 2, która została zaprojektowana specjalnie do pracy z
+
+153
+00:10:36,810 --> 00:10:41,370
+sequelem po zakończeniu kariery lub jeśli używasz moja kontynuacja powinieneś użyć pi moja kontynuacja.
+
+154
+00:10:41,370 --> 00:10:45,690
+W innej bibliotece specjalnie zaprojektowanej dla tego specyficznego smaku kontynuacji.
+
+155
+00:10:45,780 --> 00:10:50,490
+Teraz zrobimy prosty przykład, jak pandy mogą czytać cały stół
+
+156
+00:10:50,490 --> 00:10:53,090
+i kontynuować, jeśli to konieczne.
+
+157
+00:10:54,080 --> 00:11:03,600
+Skończyło by się na tym, że z kontynuacji importu alchemii tworzy się silnik, a to pozwoli nam
+
+158
+00:11:03,600 --> 00:11:07,740
+stworzyć bardzo prosty silnik sequelowy w pamięci.
+
+159
+00:11:07,740 --> 00:11:14,610
+Zamierzam iść dalej i powiedzieć, że silnik jest równy tworzeniu silnika podkreślenia i
+
+160
+00:11:14,610 --> 00:11:16,290
+tutaj i
+
+161
+00:11:19,460 --> 00:11:26,790
+po prostu wpisuje się w sekwencję kolejnych trzech ukośników, a następnie dwukropka pamięci.
+
+162
+00:11:26,850 --> 00:11:31,510
+Mam więc sequel jak dwukropek do przodu, dwukrotne przecięcie okrężnicy dwukropka.
+
+163
+00:11:31,600 --> 00:11:34,430
+Zrobimy to i to wszystko.
+
+164
+00:11:34,440 --> 00:11:41,190
+Ta mała linia kodu stworzyła bardzo tymczasową, bardzo niewielką bazę danych silnika światła ciągłego, która
+
+165
+00:11:41,190 --> 00:11:42,610
+działa w pamięci.
+
+166
+00:11:42,720 --> 00:11:50,070
+Mam zamiar iść do przodu i wziąć moją ramkę danych, którą DSF i zamierzam powiedzieć, aby podkreślić sequel i mam
+
+167
+00:11:50,070 --> 00:11:55,330
+zamiar napisać ją do tego bardzo tymczasowego silnika, który mamy uruchomiony w pamięci.
+
+168
+00:11:55,500 --> 00:11:59,430
+Więc, co możesz zrobić, to powiemy, że kontynuujesz to, co chcesz, aby ten stół
+
+169
+00:11:59,430 --> 00:12:00,310
+został nazwany.
+
+170
+00:12:00,540 --> 00:12:03,310
+Więc idź dalej i nazwij to moim stołem.
+
+171
+00:12:03,750 --> 00:12:05,920
+A potem przechodzisz w silnik sequelu, z którym pracujesz.
+
+172
+00:12:05,920 --> 00:12:07,990
+W tym przypadku to tylko silnik.
+
+173
+00:12:08,070 --> 00:12:15,630
+Teraz ten silnik ma być połączeniem, zwykle polecam przeczytanie dokładnie dokumentacji, ale znowu, jak wspomniałem
+
+174
+00:12:15,660 --> 00:12:22,050
+wcześniej, pandy same w sobie prawdopodobnie nie są najlepszym źródłem dla ciebie, aby
+
+175
+00:12:22,050 --> 00:12:25,010
+przeczytać bezpośrednio kontynuację pandy bezpośrednio.
+
+176
+00:12:25,050 --> 00:12:30,870
+Powinieneś prawdopodobnie szukać wyspecjalizowanych bibliotek Pythona dla dowolnej wersji kontynuacji, z którą
+
+177
+00:12:30,870 --> 00:12:31,560
+pracujesz.
+
+178
+00:12:31,800 --> 00:12:37,590
+Ale jeśli chodzi o bardzo proste ustawienie, możesz po prostu powiedzieć DF, aby uzupełnić passen o
+
+179
+00:12:37,710 --> 00:12:41,530
+nową nazwę tabeli, a następnie połączenie z silnikiem sequel.
+
+180
+00:12:41,820 --> 00:12:47,010
+A teraz mam zamiar iść dalej i powiedzieć sequel, jeśli rzeczywiście odtworzę ten stół.
+
+181
+00:12:47,010 --> 00:12:54,190
+Więc powiedzmy, że PD Reed podkreśla sequel, który przechodzę w imieniu mojego stołu, w tym przypadku jest to mój stół.
+
+182
+00:12:54,670 --> 00:12:58,110
+A potem określam rzeczywiste połączenie i tak cion.
+
+183
+00:12:58,380 --> 00:13:04,520
+I to jest właśnie silnik, który ma bardzo małą bazę danych o sequelu, która dzieje się w pamięci.
+
+184
+00:13:04,620 --> 00:13:11,160
+Jeśli przejdę do przodu i przeczytam to i zobaczę, jak to wygląda, dostaję dalszy ciąg DMF i zauważam, że
+
+185
+00:13:11,280 --> 00:13:13,250
+indeks jest tutaj nową kolumną.
+
+186
+00:13:13,260 --> 00:13:16,450
+W porządku i śmiało publikuj forum pytań i odpowiedzi.
+
+187
+00:13:16,560 --> 00:13:22,230
+Jeśli masz problem ze znalezieniem konkretnej biblioteki, która działa, jeśli twój sequelowy silnik lub twój sequel w
+
+188
+00:13:22,230 --> 00:13:28,590
+dalszej części tego wykładu, najważniejszą rzeczą do zrobienia jest to, jak czytać i pisać do plików CSV, ponieważ będą
+
+189
+00:13:28,860 --> 00:13:33,300
+one tylko być pracą plików CSV na resztę Kursu, jeśli chodzi o
+
+190
+00:13:33,300 --> 00:13:34,100
+osobisty użytek.
+
+191
+00:13:34,110 --> 00:13:36,750
+Mam nadzieję, że możesz po prostu sprawdzić metody podkreślenia odczytu.
+
+192
+00:13:36,750 --> 00:13:42,300
+Jest ich dużo i możesz po prostu spojrzeć na dokumentację lub odwołać się do
+
+193
+00:13:42,300 --> 00:13:45,800
+notebooka, by dowiedzieć się, jak odczytać ramkę danych.
+
+194
+00:13:45,810 --> 00:13:47,920
+W porządku, dziękuję wszystkim.
+
+195
+00:13:47,940 --> 00:13:52,590
+Pójdź naprzód i zadaj wszelkie pytania na temat tego wykładu na forum pytań i odpowiedzi, ponieważ jest tu wiele opcji
+
+196
+00:13:52,590 --> 00:13:55,030
+i po prostu nie mamy czasu, aby je wszystkie omówić.
+
+197
+00:13:55,110 --> 00:13:58,290
+Ale jeśli masz jakieś pytania, z przyjemnością odpowiem na nie na forach.
+
+198
+00:13:58,290 --> 00:14:00,150
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

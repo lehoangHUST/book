@@ -1,0 +1,359 @@
+1
+00:00:05,280 --> 00:00:09,960
+Witam wszystkich i zapraszam do grupy na wykłady dla pand w tym wykładzie.
+
+2
+00:00:09,960 --> 00:00:15,530
+Pokażemy Ci, jak używać grupy według metody, aby oświetlać razem grupy wierszy danych i wywoływać funkcje agregujące.
+
+3
+00:00:15,540 --> 00:00:20,850
+Teraz zanim wskoczymy do notatnika Jupiter Pozwól mi szybko wyjaśnić, co kupujesz w grupie, jeśli
+
+4
+00:00:20,850 --> 00:00:25,950
+nie masz doświadczenia w sequelu lub wszyscy doświadczyli, lub większość ludzi zna to, co
+
+5
+00:00:25,950 --> 00:00:28,300
+faktycznie robi instrukcja GROUP BY.
+
+6
+00:00:28,560 --> 00:00:34,890
+Umieszczenie go w prosty sposób pogrupowane umożliwia grupowanie wierszy w oparciu o kolumnę, a następnie wykonywanie
+
+7
+00:00:34,890 --> 00:00:36,840
+na nich funkcji agregującej.
+
+8
+00:00:37,080 --> 00:00:43,390
+Na przykład w tym przykładzie mamy trzy partycje IDS jeden dwa i trzy.
+
+9
+00:00:43,470 --> 00:00:50,220
+A potem mamy kilka wartości, które możemy pogrupować według kolumny ID i zagregować je za pomocą
+
+10
+00:00:50,220 --> 00:00:56,130
+jakiejś funkcji agregującej w każdej funkcji jest po prostu fantazyjnym terminem dla dowolnej funkcji,
+
+11
+00:00:56,130 --> 00:01:03,060
+która pobiera wiele wartości, a następnie wypluwa lub wyprowadza pojedynczą wartość takie jak pobieranie sumy wartości i
+
+12
+00:01:03,330 --> 00:01:07,680
+generowanie wyników lub przyjmowanie średniej lub odchylenia standardowego itp.
+
+13
+00:01:07,800 --> 00:01:13,950
+Są to wszystkie funkcje agregujące, a to wszystko jest metodą grupową, ponieważ pozwala wybrać kolumnę
+
+14
+00:01:13,950 --> 00:01:14,950
+Grupuj według.
+
+15
+00:01:15,000 --> 00:01:18,250
+Gromadzi wszystkie te wiersze razem na podstawie tej wartości kolumny.
+
+16
+00:01:18,440 --> 00:01:21,330
+A następnie wykonujesz na nim jakąś funkcję agregującą.
+
+17
+00:01:21,360 --> 00:01:22,160
+W porządku.
+
+18
+00:01:22,200 --> 00:01:25,980
+Ale zgodnie z tym powiedzmy, przejdźmy dalej i nauczmy się korzystać z GROUP BY z pandami.
+
+19
+00:01:26,010 --> 00:01:28,820
+Zamierzam iść dalej i przeskoczyć do notatnika Jowisza.
+
+20
+00:01:28,860 --> 00:01:31,390
+W porządku, więc jesteśmy na notatniku Jowisza.
+
+21
+00:01:31,530 --> 00:01:34,650
+Poszedłem dalej i skopiowałem i wkleiłem tę linię danych.
+
+22
+00:01:34,660 --> 00:01:40,350
+Zasadniczo jest to tylko słownik z zeszytu, a ta książka z notatkami jest właśnie wywoływana przez jeden
+
+23
+00:01:40,350 --> 00:01:41,710
+z folderów pand.
+
+24
+00:01:41,760 --> 00:01:47,750
+OK, możesz to napisać ręcznie, ale chciałbym po prostu powiedzieć, śmiało i skopiować te dane
+
+25
+00:01:47,780 --> 00:01:54,780
+tylko słownika, a następnie możesz śmiało powiedzieć ramkę danych PD, a następnie przekazać ten słownik danych i powinien
+
+26
+00:01:54,780 --> 00:01:58,040
+automatycznie utworzyć ramkę danych to wygląda tak.
+
+27
+00:01:58,050 --> 00:01:59,900
+Zasadniczo to tylko wymyślone dane.
+
+28
+00:02:00,000 --> 00:02:03,170
+Mamy kolumnę firmową z trzema kodami firmowymi.
+
+29
+00:02:03,330 --> 00:02:05,390
+Google Microsoft i Facebook.
+
+30
+00:02:05,520 --> 00:02:08,750
+Teraz mamy kolumnę osobową z grupą wyjątkowych ludzi.
+
+31
+00:02:08,910 --> 00:02:13,460
+A potem mamy kilka numerów sprzedaży 200 120 itp.
+
+32
+00:02:13,590 --> 00:02:19,020
+Teraz możemy użyć tej grupy za pomocą metody do grupowania wierszy na podstawie
+
+33
+00:02:19,020 --> 00:02:25,950
+nazwy kolumny, na przykład chodźmy dalej i pogrupujmy się według firmy, którą zamierzam kontynuować, i powiem, że ZF,
+
+34
+00:02:25,950 --> 00:02:32,070
+a potem mówisz grupowo, jako połączenie i przepuść kolumnę, którą chcesz zgrupować według tego przypadku.
+
+35
+00:02:32,070 --> 00:02:38,240
+Chcę mieć grupę w kolumnie firmowej i zauważyć, co tu robię. Po prostu to robię.
+
+36
+00:02:38,400 --> 00:02:43,100
+Dostaję grupę według obiektu i po prostu wskazuje, gdzie jest ona przechowywana w pamięci.
+
+37
+00:02:43,350 --> 00:02:51,750
+Co mogę zrobić, to zapisać to jako nową zmienną, więc mogę powiedzieć coś w stylu "przyjdź do mojej
+
+38
+00:02:51,750 --> 00:02:55,290
+firmy" i mam tę grupę według obiektu.
+
+39
+00:02:55,290 --> 00:02:58,250
+Następnie drugi krok korzystania z Group By.
+
+40
+00:02:58,250 --> 00:03:03,090
+Po pogrupowaniu według tej kolumny należy przejść dalej i wywołać na niej jakąś funkcję agregującą.
+
+41
+00:03:03,420 --> 00:03:10,320
+Na przykład, jeśli chciałbym uzyskać średnią z firmy, spojrzałbym na kolumnę sprzedaży i dałbym
+
+42
+00:03:10,320 --> 00:03:13,310
+średnią lub średnią sprzedaż przez firmę.
+
+43
+00:03:13,320 --> 00:03:18,180
+Powodem, dla którego nie może tego zrobić dla kolumny osoby, jest to, że są to ciągi
+
+44
+00:03:18,180 --> 00:03:23,490
+znaków i nie ma sposobu, aby po prostu wziąć średnią z ciągu znaków, a to oznacza, że oferenci
+
+45
+00:03:23,610 --> 00:03:26,060
+automatycznie ignorują wszystko, co jest kolumną nieliczbową.
+
+46
+00:03:26,070 --> 00:03:32,520
+Podobnie możemy realizować inne funkcje agregujące, takie jak niektóre z części, jeśli chodzi o sprzedaż
+
+47
+00:03:32,520 --> 00:03:33,760
+na firmę.
+
+48
+00:03:33,990 --> 00:03:42,900
+Możesz nawet zrobić standardowe odchylenia Vestey itp. i powinieneś zauważyć, że to, co otrzymuję, to
+
+49
+00:03:42,900 --> 00:03:48,760
+faktyczna ramka danych z indeksem o nazwie Company i kolumnową wartością sprzedaży.
+
+50
+00:03:49,110 --> 00:03:55,920
+A to oznacza, że mogę robić rzeczy takie jak oferta indeksu, więc mogę powiedzieć, że podchodzę do
+
+51
+00:03:55,920 --> 00:04:02,430
+projektu i podsumowuję całą sprzedaż firmy, tak że część sprzedaży przez firmę, a potem mogę nawet nazwać
+
+52
+00:04:02,850 --> 00:04:06,440
+coś w rodzaju Dot ellos C F B.
+
+53
+00:04:07,000 --> 00:04:13,600
+I to daje mi trochę sprzedaży Facebooka, wiele razy to, co robisz, nie jest
+
+54
+00:04:13,710 --> 00:04:17,510
+ustawieniem tej grupy według obiektu jako zmiennej.
+
+55
+00:04:17,550 --> 00:04:19,670
+Prawdopodobnie nazwałbyś to wszystko w jednym wierszu.
+
+56
+00:04:19,710 --> 00:04:25,140
+Gdy zaczniesz czuć się komfortowo bez pantofli, powiedzą coś podobnego do grupy przez firmę,
+
+57
+00:04:25,830 --> 00:04:27,920
+a wtedy nazywasz coś podobnego.
+
+58
+00:04:28,110 --> 00:04:35,160
+A jeśli chcesz tylko na Facebooku, to zadzwoń do FBI i to wszystko jest teraz w
+
+59
+00:04:35,160 --> 00:04:36,420
+jednej linii.
+
+60
+00:04:36,660 --> 00:04:41,850
+Niektóre inne użyteczne funkcje agregujące, które możesz wykonywać, to takie rzeczy, jak liczba, która
+
+61
+00:04:41,850 --> 00:04:44,570
+po prostu liczy liczbę instancji lub kolumny.
+
+62
+00:04:44,730 --> 00:04:49,890
+W tym przypadku był on w stanie zwrócić kolumnę osoby, ponieważ jest w stanie policzyć
+
+63
+00:04:49,890 --> 00:04:53,420
+liczbę wystąpień danej osoby w tej kolumnie lub firmie.
+
+64
+00:04:53,430 --> 00:04:57,360
+Mamy więc dwie osoby i każda ma dwie wyprzedaże i ma to sens.
+
+65
+00:04:57,360 --> 00:05:00,190
+Możesz także robić rzeczy takie jak max i min.
+
+66
+00:05:00,960 --> 00:05:07,080
+Zwróć też uwagę, że zwraca także tę osobę, ponieważ Python jest w stanie przechowywać rzeczy w kolejności alfabetycznej i to
+
+67
+00:05:07,080 --> 00:05:09,410
+jest zasadniczo to, co próbuję tutaj pokazać.
+
+68
+00:05:09,480 --> 00:05:17,220
+Maksymalna jest ostatnia pod koniec alfabetu i jeśli zadzwonisz, to najwcześniej w alfabecie C i
+
+69
+00:05:17,220 --> 00:05:19,570
+C mamy tutaj agencje.
+
+70
+00:05:19,800 --> 00:05:23,310
+Jednak prawdopodobnie nie powinno się używać wartości min lub max z kolumną łańcuchową.
+
+71
+00:05:23,310 --> 00:05:27,320
+Prawdopodobnie użyjesz tych wszystkich złych funkcji w kolumnach numerycznych.
+
+72
+00:05:27,330 --> 00:05:34,440
+Ostatnia pożyteczna rzecz, którą chcę wam pokazać w grupie, to wiele razy, kiedy można użyć GROUP BY
+
+73
+00:05:35,160 --> 00:05:42,010
+z opisaną metodą, co daje całą masę przydatnych informacji naraz, dzięki czemu można powiedzieć grupę myśli ZF
+
+74
+00:05:42,030 --> 00:05:47,730
+według nazwy firmy i następnie powiedz skrybowi, a to da ci masę informacji.
+
+75
+00:05:47,730 --> 00:05:53,230
+Tak więc na przykład, aby policzyć średnią odchylenie standardowe mężczyzn i maksimum, a także wartości płytek
+
+76
+00:05:53,250 --> 00:05:55,060
+rdzenia dla każdej firmy.
+
+77
+00:05:55,170 --> 00:05:59,490
+A jeśli nie podoba ci się ten format
+
+78
+00:06:00,060 --> 00:06:08,330
+i możesz go przetransponować, możesz powiedzieć coś takiego, jeśli wolisz, aby każda firma była kolumną zamiast prawdziwym indeksem.
+
+79
+00:06:08,520 --> 00:06:13,530
+Więc jakikolwiek format, który ci się podoba, lepiej możesz to opisać, a potem możesz po prostu wywołać nazwy kolumn
+
+80
+00:06:13,530 --> 00:06:14,260
+z tego.
+
+81
+00:06:14,280 --> 00:06:18,780
+Jeśli interesuje Cię tylko jedna firma lub jedna kolumna.
+
+82
+00:06:18,840 --> 00:06:21,150
+W porządku, to naprawdę dla grupy.
+
+83
+00:06:21,150 --> 00:06:21,920
+To dość proste.
+
+84
+00:06:21,930 --> 00:06:28,800
+Wystarczy wywołać ramkę danych, powiedzmy, że Dopp jest pogrupowane według kolumny, którą chcesz pogrupować, a następnie
+
+85
+00:06:28,800 --> 00:06:34,140
+dowolną metodę agregacji, w której chcesz zagregować wartości kolumn do pojedynczej wartości.
+
+86
+00:06:34,140 --> 00:06:39,060
+Zwykle działa tylko na kolumnach numerycznych w zależności od rodzaju funkcji agregującej, z którą
+
+87
+00:06:39,060 --> 00:06:39,720
+pracujesz.
+
+88
+00:06:39,720 --> 00:06:45,450
+Dzięki ćwiczeniom i projektom kapsuł dostaniesz o wiele więcej ćwiczeń grupowych.
+
+89
+00:06:45,960 --> 00:06:46,480
+W porządku.
+
+90
+00:06:46,620 --> 00:06:48,480
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

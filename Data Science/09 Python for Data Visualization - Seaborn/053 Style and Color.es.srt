@@ -1,0 +1,459 @@
+1
+00:00:05,220 --> 00:00:08,460
+Hola a todos y bienvenidos a la clase de estilo y color.
+
+2
+00:00:08,460 --> 00:00:12,690
+Hemos mostrado algunas veces cómo controlar la estética de las figuras y el transporte por mar. Pero ahora vamos
+
+3
+00:00:12,690 --> 00:00:14,150
+a repasarlo de una manera más formal.
+
+4
+00:00:14,340 --> 00:00:17,600
+Avancemos y vayamos al cuaderno de Júpiter para comenzar.
+
+5
+00:00:18,450 --> 00:00:20,370
+Bien aquí estamos en el cuaderno de Júpiter.
+
+6
+00:00:20,370 --> 00:00:25,140
+Seguí adelante y realicé la habitual línea matplotlib establecida en el mar y seguí cargando
+
+7
+00:00:25,380 --> 00:00:27,250
+el conjunto de datos de consejos.
+
+8
+00:00:27,270 --> 00:00:30,120
+Déjame entrar y mostrarte cómo puedes establecer estilos particulares.
+
+9
+00:00:30,360 --> 00:00:40,730
+Por ejemplo, puedo hacer gráficas de conteo de estrellas de SNL y digamos la columna de sexo en consejos de paso ya que mis datos son iguales a
+
+10
+00:00:42,070 --> 00:00:49,890
+los datos aquí. Tengo el argumento del estilo de conjunto de cuentas de mi cuenta que te permite establecer el estilo
+
+11
+00:00:49,890 --> 00:00:52,220
+para el resto de tu parcelas.
+
+12
+00:00:52,380 --> 00:00:58,650
+Y si cambiamos Tampere para revisar el estilo de subrayado, básicamente pasa un parámetro para el estilo
+
+13
+00:00:58,650 --> 00:01:00,650
+y eso es una cadena.
+
+14
+00:01:00,660 --> 00:01:07,060
+Puede ser una cuadrícula oscura, una cuadrícula blanca oscura o Tick's, vamos a mostrarle cómo se
+
+15
+00:01:07,080 --> 00:01:15,000
+ve presionar y los blancos seguirán adelante y creará un fondo blanco en blanco para usted si pasa tic tac.
+
+16
+00:01:15,030 --> 00:01:20,670
+Debo decir que básicamente obtienes estos tics en el borde de la caja.
+
+17
+00:01:20,700 --> 00:01:22,590
+Luego también hay una cuadrícula oscura que
+
+18
+00:01:25,620 --> 00:01:28,320
+le da el fondo original de la cuadrícula oscura.
+
+19
+00:01:28,350 --> 00:01:30,660
+Y luego también está lo que realmente me gusta.
+
+20
+00:01:30,720 --> 00:01:35,150
+La cuadrícula blanca le da a ambos la claridad del blanco, pero también la cuadrícula.
+
+21
+00:01:35,160 --> 00:01:36,720
+Entonces no pierdes esa información.
+
+22
+00:01:36,810 --> 00:01:41,430
+Puedes seguir adelante y establecer el estilo de sala de reunión y ver cuáles prefieres o cuáles te gustan mejor.
+
+23
+00:01:41,430 --> 00:01:46,290
+Ahora, otra cosa que puedes hacer es eliminar las espinas.
+
+24
+00:01:46,350 --> 00:01:50,460
+me dejen entrar y establecer esto igual a tics así que está muy claro lo que estamos haciendo aquí.
+
+25
+00:01:50,460 --> 00:01:52,470
+Así que en este momento todavía puedes ver que
+
+26
+00:01:52,470 --> 00:01:57,960
+Así que tenemos estas espinas en la columna vertebral superior y la columna derecha, así como en la columna vertebral inferior e izquierda.
+
+27
+00:01:58,410 --> 00:02:06,960
+Si quieres continuar y eliminarlos, puedes decir Asinus en la columna vertebral y eliminará la parte superior de la columna vertebral y la
+
+28
+00:02:06,960 --> 00:02:11,930
+columna derecha si deseas continuar extirpando la parte inferior o la columna izquierda.
+
+29
+00:02:11,970 --> 00:02:14,230
+En realidad, puede agregarlos como parámetros.
+
+30
+00:02:14,290 --> 00:02:21,570
+Así que, básicamente, arriba a la derecha, a la izquierda y abajo, por defecto arriba y a la derecha son verdaderos para ser eliminados a la izquierda y abajo
+
+31
+00:02:21,570 --> 00:02:22,760
+o no para ser eliminados.
+
+32
+00:02:22,770 --> 00:02:28,640
+Pero puede especificar que desea que se eliminen diciendo que leftest verdadero y luego abajo es verdadero.
+
+33
+00:02:28,670 --> 00:02:31,500
+Esto eliminará básicamente las cuatro espinas.
+
+34
+00:02:31,590 --> 00:02:35,670
+Si lo haces, si estás buscando algo que sea como una trama pulida y
+
+35
+00:02:36,060 --> 00:02:38,220
+clara, tal vez quieras presentarla sin espinas.
+
+36
+00:02:38,220 --> 00:02:43,090
+Yo personalmente prefiero espinas allí, así que voy a seguir adelante y eliminar eso y mantener esas espinas.
+
+37
+00:02:43,500 --> 00:02:46,740
+Ahora hablemos de tamaño y aspecto.
+
+38
+00:02:47,010 --> 00:02:52,560
+Puede usar las libs del gráfico de mapas peel t figure ancho y alto de gran tamaño para cambiar realmente el tamaño de la mayoría
+
+39
+00:02:52,560 --> 00:02:53,460
+de los bloques Seaborn.
+
+40
+00:02:53,610 --> 00:02:59,310
+el tamaño y la relación de aspecto de una parcela de malla nacida al pasar el tamaño y el aspecto de los parámetros.
+
+41
+00:02:59,310 --> 00:03:04,080
+Por lo tanto, todas son solo devoluciones de llamada básicas para hacer un mapa iluminado y también puede controlar
+
+42
+00:03:04,080 --> 00:03:06,730
+Déjame ir para mostrarte lo que quiero decir con todo esto.
+
+43
+00:03:07,050 --> 00:03:12,960
+Voy a seguir adelante y llamar a las parcelas de conteo y observar que el estilo establecido, incluso
+
+44
+00:03:12,960 --> 00:03:21,450
+si lo elimino, permanecerá en su lugar hasta que diga un nuevo estilo, pero voy a llamarlo para apelar esa cifra y decir el tamaño del
+
+45
+00:03:21,450 --> 00:03:22,800
+arreglo es igual a.
+
+46
+00:03:23,190 --> 00:03:26,230
+Vamos a decir, 12 por 3.
+
+47
+00:03:26,790 --> 00:03:32,700
+Y tenga en cuenta que esto realmente anula o es una devolución de llamada cuando el transporte marítimo llama a Matt plot lib.
+
+48
+00:03:32,990 --> 00:03:36,030
+Madlib realmente establecerá el tamaño de la figura para la trama de Seaborn.
+
+49
+00:03:36,060 --> 00:03:42,210
+De modo que puede usar o mapear el conocimiento vivido en cuanto al tamaño de la figura y las
+
+50
+00:03:42,210 --> 00:03:45,240
+proporciones de aspecto aquí en combinación con el transporte marítimo.
+
+51
+00:03:45,270 --> 00:03:48,990
+Ahora sigamos adelante y toquemos el tema de escala y contexto.
+
+52
+00:03:48,990 --> 00:03:55,200
+SEABORNE ofrece un contexto de subrayado de conjunto conveniente que le permite anular los parámetros predeterminados y
+
+53
+00:03:55,200 --> 00:03:59,940
+cambiar las escalas de Funt según lo que realmente está creando la figura.
+
+54
+00:03:59,940 --> 00:04:04,690
+Entonces, digamos que vas a crear esta figura no para un cuaderno, sino para un póster.
+
+55
+00:04:04,860 --> 00:04:15,060
+Puedes seguir y decir que Asinus pensó subrayar el contexto y el contexto tomará un par de parámetros.
+
+56
+00:04:15,190 --> 00:04:16,300
+Toma contexto.
+
+57
+00:04:16,320 --> 00:04:22,920
+Y eso va a ser una cadena y también requiere una escala de fuente. Los parámetros de contexto son la charla
+
+58
+00:04:22,950 --> 00:04:24,700
+o el póster en papel.
+
+59
+00:04:24,720 --> 00:04:32,520
+Entonces, si voy y solo establezco el contexto, el contexto me disculpe al aviso del cartel que obtengo una figura mucho más grande y
+
+60
+00:04:32,520 --> 00:04:37,020
+la fuente también es más grande porque supone que vas a poner esto en
+
+61
+00:04:37,020 --> 00:04:37,890
+un póster.
+
+62
+00:04:38,010 --> 00:04:42,570
+Y si todavía no está satisfecho con el tamaño de la fuente, puede continuar y agregar
+
+63
+00:04:42,660 --> 00:04:47,840
+eso a los argumentos de la escala de subrayado de la fuente a un número mayor, tal vez tres.
+
+64
+00:04:47,850 --> 00:04:50,610
+Entonces es tres veces el tamaño del predeterminado.
+
+65
+00:04:50,670 --> 00:04:56,130
+Y aquí podría establecer el contexto para lo que quiera que sea la figura y, por lo general, de
+
+66
+00:04:56,190 --> 00:04:58,950
+manera predeterminada estará en el contexto de un cuaderno.
+
+67
+00:04:59,050 --> 00:05:06,060
+Entonces puedes ir a decir cuaderno y eso establece el contexto de tus figuras.
+
+68
+00:05:06,060 --> 00:05:06,480
+Todo bien.
+
+69
+00:05:06,540 --> 00:05:08,460
+Aquí tenemos algunos de los conceptos básicos.
+
+70
+00:05:08,460 --> 00:05:13,210
+Lo último de lo que quiero hablar son las paletas y los colores.
+
+71
+00:05:13,260 --> 00:05:16,800
+Hemos mostrado gráficas antes de que realmente especifiquemos un parámetro de tono.
+
+72
+00:05:16,800 --> 00:05:18,730
+Déjame entrar y mostrar un ejemplo de eso.
+
+73
+00:05:18,870 --> 00:05:26,940
+Por ejemplo, cuando dijimos S. NORTE. s n s Lim tramas tal vez queremos hacer la factura
+
+74
+00:05:30,840 --> 00:05:37,380
+total en comparación con la propina y luego pasamos las propinas ya que los datos del conjunto de datos del látigo son iguales a las direcciones IP.
+
+75
+00:05:37,470 --> 00:05:42,170
+Así que pudimos especificar previamente algo así como Heugh es igual a seis.
+
+76
+00:05:42,720 --> 00:05:46,100
+Y luego obtenemos estos colores elegidos para nosotros, verde y azul.
+
+77
+00:05:46,500 --> 00:05:52,560
+Y hemos visto anteriormente que podemos pasar los argumentos de Hallett y hay ciertas cadenas que podemos poner
+
+78
+00:05:52,560 --> 00:05:58,890
+que esencialmente le dan un mapa de colores y hemos visto los aspectos similares para cosas tales como los
+
+79
+00:05:58,890 --> 00:05:59,890
+mapas de calor.
+
+80
+00:05:59,970 --> 00:06:03,600
+Cuando pongo cosas como magma o frío caliente.
+
+81
+00:06:03,900 --> 00:06:06,910
+Ahora se estará preguntando qué es lo que realmente encuentra estas cadenas.
+
+82
+00:06:07,070 --> 00:06:11,420
+Bueno, puedes encontrarlos yendo a la página del mapa de colores de Map plot lives.
+
+83
+00:06:11,490 --> 00:06:14,350
+Déjame ir para mostrarte cómo hacer esto con Google.
+
+84
+00:06:14,490 --> 00:06:15,050
+Puedes continuar.
+
+85
+00:06:15,060 --> 00:06:17,680
+Abra una nueva pestaña e ir a Google y buscar.
+
+86
+00:06:17,690 --> 00:06:27,210
+El mapa de colores en vivo de la trama de Matt lo llevará a una de estas páginas y lo que estamos buscando es la
+
+87
+00:06:27,210 --> 00:06:29,790
+página de documentación del mapa de colores.
+
+88
+00:06:30,120 --> 00:06:31,940
+Y este suele ser el primer enlace aquí.
+
+89
+00:06:31,950 --> 00:06:33,820
+Hay código de ejemplo de color.
+
+90
+00:06:34,140 --> 00:06:40,350
+Y si llegamos a esta página ahora, podemos ver la escala de color real y los degradados, así como el nombre o
+
+91
+00:06:40,350 --> 00:06:43,860
+el nombre de la cadena que necesita pasar para el mapa de color.
+
+92
+00:06:43,860 --> 00:06:50,130
+Entonces, si alejamos la imagen aquí, podemos ver estos cuatro mapas de colores: estos son los mapas de color principales, pero también
+
+93
+00:06:50,130 --> 00:06:51,660
+hay mapas de color secuenciales.
+
+94
+00:06:51,820 --> 00:06:59,280
+De modo que los mapas secuenciales de dos colores, otro conjunto de mapas de colores divergentes, mapas de colores cualitativos misceláneos y esas son
+
+95
+00:06:59,400 --> 00:07:02,310
+sus opciones en cuanto a las cadenas que usted transita.
+
+96
+00:07:02,310 --> 00:07:09,570
+que acabo de encontrar aquí y en lugar de coor por lugar sísmico passen sentía ese derecho.
+
+97
+00:07:09,570 --> 00:07:17,150
+Así que, por ejemplo, digamos que quería elegir este mapa de color divergente sísmico para el matiz
+
+98
+00:07:17,160 --> 00:07:22,380
+Y aquí ahora podemos ver que obtengo este tipo de color púrpura y rojo, que fueron los colores aquí en ambos
+
+99
+00:07:22,380 --> 00:07:24,020
+extremos en este mapa de colores divergentes.
+
+100
+00:07:24,330 --> 00:07:26,330
+Y puedes seguir y jugar con estos mapas de colores.
+
+101
+00:07:26,330 --> 00:07:27,390
+Hay mucha diversión para jugar.
+
+102
+00:07:27,440 --> 00:07:32,380
+Cuando Seaborn tengas tu trama exactamente igual a la que quieres.
+
+103
+00:07:32,400 --> 00:07:33,360
+Todo bien.
+
+104
+00:07:33,360 --> 00:07:38,070
+oficial que contiene aún más información sobre cómo controlar realmente más de tu estética y tu figura.
+
+105
+00:07:38,070 --> 00:07:43,260
+Puede consultar el libro de notas de Júpiter por estilo y color para obtener mucha más información y
+
+106
+00:07:43,530 --> 00:07:48,240
+revisar los enlaces en esa página o en ese cuaderno que lo lleva a la documentación
+
+107
+00:07:48,330 --> 00:07:54,220
+Pero lo más importante que debe saber es que puede buscar estos códigos de paleta con MAP en vivo
+
+108
+00:07:54,360 --> 00:07:55,660
+buscando mapas de color.
+
+109
+00:07:55,770 --> 00:08:02,700
+Puede cambiar el tamaño de la fuente con el contexto de ajuste del contexto del guión bajo a póster o cuaderno y
+
+110
+00:08:03,000 --> 00:08:05,300
+luego cambiar la escala de la fuente.
+
+111
+00:08:05,520 --> 00:08:10,530
+Y luego puedes usar esa figura piquante con tamaño de Higo para cambiar realmente el tamaño de tus figuras.
+
+112
+00:08:11,070 --> 00:08:14,770
+De acuerdo, espero que hayan disfrutado esto y espero que hayan disfrutado de Seaborn.
+
+113
+00:08:14,820 --> 00:08:18,300
+Próximamente se encuentran algunos ejercicios marinos gratuitos para agregar.
+
+114
+00:08:18,330 --> 00:08:18,770
+Todo bien.
+
+115
+00:08:19,020 --> 00:08:20,520
+Gracias y te veré en la próxima conferencia

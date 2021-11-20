@@ -1,0 +1,807 @@
+1
+00:00:05,850 --> 00:00:10,470
+Bună ziua tuturor și bun venit la prelegerea cadrului de date și această prelegere vom
+
+2
+00:00:10,470 --> 00:00:15,170
+învăța în sfârșit despre cadrele de date care se bazează pe cadrele de date grave ale obiectului.
+
+3
+00:00:15,180 --> 00:00:17,800
+Va fi instrumentul principal atunci când lucrați cu panda.
+
+4
+00:00:17,970 --> 00:00:21,680
+Să mergem înainte și să mergem la notebook-ul Jupiter pentru a vedea cum funcționează toate.
+
+5
+00:00:21,690 --> 00:00:22,020
+In regula.
+
+6
+00:00:22,020 --> 00:00:24,410
+Aici sunt la Jupiter Notebook.
+
+7
+00:00:24,450 --> 00:00:29,940
+Vom merge mai departe și vom spune importante unele plăcinte și P și import pandas PD
+
+8
+00:00:29,940 --> 00:00:35,880
+și voi face un ultim lucru aici pentru a salva de la ei Pied-Bot random import Rand și.
+
+9
+00:00:36,350 --> 00:00:38,370
+Și apoi voi ieși și voi pune o sămânță.
+
+10
+00:00:38,370 --> 00:00:42,660
+Și ceea ce înseamnă o sămânță este doar să ne asigurăm că obținem aceleași numere aleatorii.
+
+11
+00:00:42,660 --> 00:00:45,510
+În acest fel, dacă mă urmărești, vei vedea aceleași numere aleatorii.
+
+12
+00:00:45,540 --> 00:00:49,260
+Văd că poate să intre și să spună această sămânță aleatorie.
+
+13
+00:00:49,290 --> 00:00:49,550
+In regula.
+
+14
+00:00:49,590 --> 00:00:57,840
+Să mergem și să explorăm comanda diferită, iar ADF este egal cu cadrul de date PD și puteți folosi de fapt tab-ul
+
+15
+00:00:57,840 --> 00:01:01,460
+aici în Jupiter și până la autocompletarea acestui lucru.
+
+16
+00:01:01,770 --> 00:01:05,200
+Și observați că EFIS valorifică fila Shift Windu.
+
+17
+00:01:05,200 --> 00:01:10,770
+Verificați docstring-ul și semnătura inițială pentru acest cadru de date PD.
+
+18
+00:01:10,770 --> 00:01:16,830
+Avem un argument de date și un argument index, la fel ca în cazul seriei, dar avem și aceste
+
+19
+00:01:16,830 --> 00:01:18,210
+argumente suplimentare pentru coloane.
+
+20
+00:01:18,450 --> 00:01:23,130
+Să mergem mai departe și să construim acest lucru cu unele date aleatorii și vom vedea cum arată un
+
+21
+00:01:23,130 --> 00:01:24,000
+cadru de date.
+
+22
+00:01:24,000 --> 00:01:31,090
+Primul lucru pe care îl voi face este să treci în acele argumente de date și de fapt o să sun
+
+23
+00:01:31,110 --> 00:01:37,620
+Ranz și 5 virgulă 4 și apoi următorii pe care doriți să îi treceți este indexul din index.
+
+24
+00:01:37,620 --> 00:01:42,650
+Putem face doar o listă de personaje aici.
+
+25
+00:01:42,660 --> 00:01:48,850
+Mă duc să intru și să spun A B C D E.
+
+26
+00:01:49,320 --> 00:01:53,950
+Și apoi, în cele din urmă pentru coloane, voi merge mai departe și voi spune "x y z".
+
+27
+00:01:54,120 --> 00:02:05,810
+Așa că am să spun că va continua să ruleze acest lucru și apoi să treacă datele doar afișând și apoi vom obține un
+
+28
+00:02:05,820 --> 00:02:07,020
+afișaj frumos.
+
+29
+00:02:07,050 --> 00:02:12,370
+Și probabil că aceasta pare și se simte foarte mult ca intrările din Excel și un notebook mai adânc și asta e bine.
+
+30
+00:02:12,540 --> 00:02:18,060
+Dacă utilizați un alt editor de ID, este posibil să nu obțineți un afișaj atât de frumos, dar
+
+31
+00:02:18,060 --> 00:02:21,560
+trebuie să obțineți o ieșire tipărită care arată similară cu aceasta.
+
+32
+00:02:21,630 --> 00:02:22,060
+In regula.
+
+33
+00:02:22,110 --> 00:02:31,130
+De fapt, ceea ce avem aici este o listă de coloane w x y z și rândurile corespunzătoare A B C D E.
+
+34
+00:02:31,170 --> 00:02:35,240
+Acum, fiecare dintre aceste coloane este de fapt doar o serie de panda.
+
+35
+00:02:35,250 --> 00:02:42,060
+Deci W este o serie de panda, precum si X Y si Z si toate au un indice comun si asta este in esenta
+
+36
+00:02:42,060 --> 00:02:46,350
+toate cadrele de date este doar o gramada de serii care au un index.
+
+37
+00:02:46,350 --> 00:02:51,830
+Să mergem mai departe și să arătăm cum putem folosi indexarea și selecția să luăm de fapt unul din
+
+38
+00:02:52,080 --> 00:02:59,280
+aceste obiecte serioase sau mai multe dintre aceste coloane dintr-o singură cale și principala cale de a face acest lucru este prin a spune DMF
+
+39
+00:02:59,340 --> 00:03:02,920
+și apoi folosind notația Rackett și apoi treci în numele coloanei .
+
+40
+00:03:02,940 --> 00:03:05,590
+În acest caz, să mergem mai departe și să luăm coloana W.
+
+41
+00:03:05,610 --> 00:03:12,180
+Deci, ca un șir de pass w și acest lucru returnează coloana W și acum să ia o privire la ieșire.
+
+42
+00:03:12,180 --> 00:03:14,590
+Acum, de fapt, aceasta arată ca o serie.
+
+43
+00:03:14,590 --> 00:03:16,950
+Și asta pentru că exact așa este coloana W.
+
+44
+00:03:16,950 --> 00:03:20,160
+Este doar o serie și puteți confirma acest lucru prin a spune.
+
+45
+00:03:20,160 --> 00:03:27,870
+Tipul lui d f de W și arată că este Panas acel nucleu care seria acelei serii.
+
+46
+00:03:27,870 --> 00:03:33,940
+Dacă spun doar tipul pe obiectul DFA însuși, voi obține un cadru de date.
+
+47
+00:03:34,260 --> 00:03:39,420
+Așadar, doar pentru a reafirma faptul că un cadru de date este doar o mulțime de serii care
+
+48
+00:03:39,450 --> 00:03:40,600
+au același index.
+
+49
+00:03:40,590 --> 00:03:45,270
+Acum există două moduri diferite în care puteți lua o coloană dintr-un cadru de date.
+
+50
+00:03:45,300 --> 00:03:49,780
+Calea principală și modul în care ar trebui întotdeauna să o facă este să folosești acest tip de notație și
+
+51
+00:03:49,800 --> 00:03:51,090
+apoi să treci numele coloanei.
+
+52
+00:03:51,090 --> 00:03:56,640
+Cu toate acestea, dacă sunteți foarte familiarizați cu sequelul, de multe ori selectați o coloană pe care o introduceți într-un tabel
+
+53
+00:03:57,090 --> 00:03:58,470
+și apoi numele coloanei.
+
+54
+00:03:58,530 --> 00:04:04,280
+Acest lucru de fapt, de asemenea, funcționează pentru pantless ați putea spune punct și apoi numele coloanei.
+
+55
+00:04:04,440 --> 00:04:10,020
+Cu toate acestea, aș recomanda să nu utilizați acest lucru, deoarece se poate confunda cu diferitele metode care sunt
+
+56
+00:04:10,020 --> 00:04:11,870
+disponibile în afara cadrului de date.
+
+57
+00:04:11,940 --> 00:04:18,160
+De exemplu, dacă spun DFA punct și apoi faceți clic pe fila văd o mulțime de metode disponibile pentru mine.
+
+58
+00:04:18,480 --> 00:04:22,980
+Și acestea sunt o mulțime de metode pe care le vom învăța despre cum vom afla mai multe
+
+59
+00:04:22,980 --> 00:04:28,050
+despre panda, dar ce se poate întâmpla este că una dintre aceste metode este suprascrisă de un nume de coloană și
+
+60
+00:04:28,050 --> 00:04:32,420
+apoi Panther se va confunda dacă întrebați pentru o metodă sau un nume de coloană reală.
+
+61
+00:04:32,430 --> 00:04:38,410
+Deci, ar trebui să faceți pentru a evita ca întotdeauna un fel de notație bracket atunci când solicită o coloană.
+
+62
+00:04:38,970 --> 00:04:39,500
+O.K.
+
+63
+00:04:39,510 --> 00:04:44,590
+Dacă doriți mai multe coloane înapoi, atunci puteți merge mai departe și pasan o listă de coloane.
+
+64
+00:04:44,820 --> 00:04:49,800
+Așa că știți că trec în brațele mele și apoi voi trece și o listă cu numele coloanelor care
+
+65
+00:04:49,800 --> 00:04:52,170
+va duce la un alt set de paranteze aici.
+
+66
+00:04:52,200 --> 00:05:02,970
+De exemplu, dacă vreau să coloanele W și Z trec pe o listă aici subliniată WNC și am primit un cadru de date
+
+67
+00:05:02,970 --> 00:05:05,520
+care conținea cele două serii.
+
+68
+00:05:05,520 --> 00:05:10,620
+Și asta înseamnă că atunci când cer mai multe coloane, de fapt, recuperez un cadru de date pe care l-am solicitat
+
+69
+00:05:10,620 --> 00:05:13,240
+doar pentru o singură coloană că voi primi o serie.
+
+70
+00:05:13,380 --> 00:05:17,510
+Și în sistemul de cărți Jupiter note este notat de modul în care este afișat ieșirea.
+
+71
+00:05:17,990 --> 00:05:25,540
+OK, să mergem mai departe și să trecem la crearea unei noi coloane Palla sprijină crearea de noi coloane,
+
+72
+00:05:25,560 --> 00:05:29,390
+prin specificarea coloanei ca și cum ar exista deja.
+
+73
+00:05:29,400 --> 00:05:31,100
+De exemplu, nou.
+
+74
+00:05:31,140 --> 00:05:34,550
+Acum, dacă execut acest lucru, voi obține o eroare și este un portar.
+
+75
+00:05:34,570 --> 00:05:37,500
+Parcurgerea până jos aici este spune Kear new.
+
+76
+00:05:37,680 --> 00:05:42,560
+În principiu doar încearcă să vă spună că nu poate găsi că nu există o cheie nouă acolo.
+
+77
+00:05:42,570 --> 00:05:50,190
+Cu toate acestea, atunci când creați o etichetă de tip hash, lăsați-o și puneți-o înapoi când creați o
+
+78
+00:05:50,190 --> 00:05:51,200
+coloană nouă.
+
+79
+00:05:51,210 --> 00:05:56,280
+Puteți să-l definiți ca și cum ar exista deja și apoi pe partea dreaptă
+
+80
+00:05:56,850 --> 00:06:05,610
+a semnului egal să utilizați alte coloane cu aritmetică pentru a scoate o coloană nouă, de exemplu, puteți spune că coloana nouă a lui DSF
+
+81
+00:06:05,610 --> 00:06:09,970
+ca și cum ar exista deja este egală cu DFW Plus zbura.
+
+82
+00:06:10,150 --> 00:06:11,710
+Și acest lucru va funcționa fără nici o eroare.
+
+83
+00:06:11,910 --> 00:06:18,780
+Și acum, dacă văd DF dacă această coloană nouă este de fapt în loc acolo și pentru a elimina coloanele
+
+84
+00:06:18,780 --> 00:06:19,890
+puteți spune DFT.
+
+85
+00:06:19,920 --> 00:06:28,020
+Drop puteți spune deific drop și treci în numele coloanei pe care vrei să-l scapi.
+
+86
+00:06:28,020 --> 00:06:31,430
+Acum, dacă faceți acest lucru singur, veți avea o eroare.
+
+87
+00:06:31,500 --> 00:06:35,340
+Și hai să intrăm și să vedem ce înseamnă eroarea va spune eroarea de valoare.
+
+88
+00:06:35,390 --> 00:06:36,120
+Mergem în jos.
+
+89
+00:06:36,120 --> 00:06:40,540
+Se spune că etichetele noi nu sunt conținute în Access.
+
+90
+00:06:40,620 --> 00:06:47,660
+Și dacă dau clic pe fila Shift din meniul metodei cădere, că implicit se spune că accesul este egal cu
+
+91
+00:06:47,670 --> 00:06:52,390
+zero acces egal cu zero pentru metoda drop se referă la index.
+
+92
+00:06:52,500 --> 00:07:01,050
+Dacă vreau să mă refer la coloanele pe care trebuie să le specific, accesul este egal cu 1 și apoi
+
+93
+00:07:01,680 --> 00:07:04,430
+se va lăsa coloana nouă aici.
+
+94
+00:07:04,830 --> 00:07:10,260
+Există două lucruri de remarcat atunci când se utilizează această picătură DFT primul lucru de știut este că acest lucru nu se
+
+95
+00:07:10,260 --> 00:07:15,900
+întâmplă în loc, ceea ce înseamnă că eu nu sunt de fapt, care afectează starea de cadru, cu excepția cazului în care am preciza
+
+96
+00:07:16,070 --> 00:07:18,370
+în mod specific la aceasta să apară în loc.
+
+97
+00:07:18,470 --> 00:07:20,450
+Vreau să vă arăt ce vreau să spun prin asta.
+
+98
+00:07:20,610 --> 00:07:28,380
+Am sunat această linie D-plat cădea accesul dvs. egal cu 1 dacă am sunat DMF Voi vedea că am încă
+
+99
+00:07:28,380 --> 00:07:29,910
+această coloană nouă.
+
+100
+00:07:29,910 --> 00:07:36,030
+Asta inseamna ca trebuie sa specific ca un argument de schimbare trebuie sa-i arat argumentul
+
+101
+00:07:36,630 --> 00:07:42,840
+in-loc in multe metode Pandurs va necesita acest argument in loc sa fie setat la adevarat.
+
+102
+00:07:42,990 --> 00:07:48,450
+Iar motivul pentru panderers nu este că pentru dvs. să nu pierdeți în mod accidental informații în cazul
+
+103
+00:07:48,450 --> 00:07:53,820
+în care ați făcut o grămadă de ajustări ale datelor pe care nu doriți să-l pierdeți accidental.
+
+104
+00:07:53,820 --> 00:07:59,520
+Deci, Pandursul vă cere să spuneți în loc egal cu adevărat dacă doriți de fapt, ca multe dintre aceste schimbări să
+
+105
+00:07:59,550 --> 00:08:01,260
+rămână și să apară pe loc.
+
+106
+00:08:01,380 --> 00:08:07,800
+Și acum dacă îl sun pe DFI să ruleze notificarea celulei, noua coloană este acum înlăturată definitiv pentru că
+
+107
+00:08:07,800 --> 00:08:15,960
+a apărut pe loc și ceva ce trebuie remarcat aici este că putem utiliza, de asemenea, căderea din stânga pentru a renunța la rânduri, de
+
+108
+00:08:15,960 --> 00:08:16,450
+exemplu.
+
+109
+00:08:16,470 --> 00:08:19,930
+Hai să ieșim și să folosim asta pentru a scăpa rândul.
+
+110
+00:08:20,130 --> 00:08:28,290
+Voi spune că DF a scăzut trec printr-un E și pot să spun că axa este egală cu zero.
+
+111
+00:08:28,290 --> 00:08:30,870
+Acum, amintiți-vă că de fapt nu trebuie să adăugați acest lucru ca pe un argument.
+
+112
+00:08:30,870 --> 00:08:32,230
+Asta e implicit.
+
+113
+00:08:32,820 --> 00:08:40,950
+Deci haideți să mergem și să spunem doar căderea E și acolo am reușit să renunțăm la e deoarece Accesul este egal cu
+
+114
+00:08:40,950 --> 00:08:41,410
+zero.
+
+115
+00:08:41,460 --> 00:08:45,260
+Și funcționează fie aș putea spune continuarea lui X la 0 și acest lucru va funcționa din nou.
+
+116
+00:08:45,660 --> 00:08:48,140
+Și notați aici că nu fac asta în loc.
+
+117
+00:08:48,360 --> 00:08:48,880
+O.K.
+
+118
+00:08:49,020 --> 00:08:54,930
+Uneori, un punct de confuzie este motivul pentru care rândurile sunt zero în măsura în care sunt accesate
+
+119
+00:08:54,960 --> 00:08:58,880
+și de ce sunt coloanele în care referința revine la pi.
+
+120
+00:08:59,010 --> 00:09:06,850
+Deoarece cadrele de date sunt, în esență, doar markeri de index fantezie în partea de sus a unei matrice PI pentru a arăta acest lucru.
+
+121
+00:09:07,080 --> 00:09:14,750
+Pot să spun DF gândire formă ca și noi am făcut o matrice de țevi și nu dacă forma este o tuplă
+
+122
+00:09:14,800 --> 00:09:19,750
+pentru o matrice imaginară dinte aici și la indicele zero sau numărul de rânduri.
+
+123
+00:09:19,890 --> 00:09:23,020
+Deci, dacă spun ZF aici, am cinci rânduri.
+
+124
+00:09:23,070 --> 00:09:29,990
+A B C și D E și apoi pe indexul unu am patru coloane w x y z.
+
+125
+00:09:30,150 --> 00:09:37,530
+Din acest motiv, rândurile sunt denumite axa zero, iar coloanele sunt denumite o singură axă, deoarece sunt
+
+126
+00:09:37,530 --> 00:09:43,020
+luate direct din formă, așa cum ați avea o matrice de plăci.
+
+127
+00:09:43,020 --> 00:09:43,880
+O.K.
+
+128
+00:09:43,920 --> 00:09:46,260
+Acum hai să vorbim despre selectarea rândurilor.
+
+129
+00:09:46,290 --> 00:09:51,840
+Am vorbit despre selectarea coloanelor pe care tocmai le faceți, spunând DMF și în paranteze pe care
+
+130
+00:09:51,840 --> 00:09:53,280
+le-ați trecut numele coloanei.
+
+131
+00:09:53,280 --> 00:10:01,350
+Sau dacă doriți mai multe coloane, introduceți o listă cu numele coloanelor, cum ar fi Z și apoi cu virgul X, și închideți
+
+132
+00:10:01,350 --> 00:10:02,430
+acea coloană.
+
+133
+00:10:02,430 --> 00:10:07,460
+Deci, transmit o listă de nume de coloane și retur un cadran de date al acelor coloane.
+
+134
+00:10:07,500 --> 00:10:09,940
+Să vorbim despre selectarea rândurilor.
+
+135
+00:10:10,900 --> 00:10:14,650
+Doriți să aruncați o privire la cadrul meu de date din nou aici este cadrul meu de date.
+
+136
+00:10:14,650 --> 00:10:18,400
+ABC E este trandafirul meu WXYZ sunt coloanele.
+
+137
+00:10:18,400 --> 00:10:25,120
+Există două moduri de a selecta rânduri într-un cadru de date și trebuie să apelați o metodă oprită din aceasta.
+
+138
+00:10:25,120 --> 00:10:26,900
+Și există două metode de utilizat.
+
+139
+00:10:26,890 --> 00:10:31,040
+Unul este Loek EHLO vezi pentru locație.
+
+140
+00:10:31,690 --> 00:10:38,030
+Și aceasta va lua o etichetă, astfel încât să puteți face și tab-ul de schimbare aici pentru a vedea această proprietate și ceva de știut
+
+141
+00:10:38,020 --> 00:10:38,540
+aici.
+
+142
+00:10:38,560 --> 00:10:43,770
+Folosesc paranteze pătrate, care este puțin ciudat, dar așa funcționează cu panda.
+
+143
+00:10:44,000 --> 00:10:48,920
+Treci în LRC și apoi treci în paranteze rândul pe care îl vrei.
+
+144
+00:10:48,910 --> 00:10:52,030
+De exemplu, dacă aș vrea rândul pe care tocmai l-am trezit.
+
+145
+00:10:52,280 --> 00:10:56,210
+Vedeți că am trecut eticheta acelui index și acest lucru revine.
+
+146
+00:10:56,240 --> 00:10:58,150
+Nu o serie.
+
+147
+00:10:58,150 --> 00:11:04,310
+Și aceasta este cea de-a doua concluzie a noastră, că nu numai că toate seria coloanelor, ci rândurile sunt atât de serii, cât
+
+148
+00:11:04,300 --> 00:11:06,730
+și de modul în care se vor întoarce.
+
+149
+00:11:06,880 --> 00:11:09,780
+Când le cereți în Pandas.
+
+150
+00:11:10,090 --> 00:11:16,140
+Acum, să discutăm al doilea mod de a lua un rând care se bazează pe poziția următoare.
+
+151
+00:11:16,510 --> 00:11:17,750
+Pot folosi DFT.
+
+152
+00:11:17,840 --> 00:11:25,180
+Mă îndrept spre o poziție numerică chiar dacă axele mele sunt etichetate cu șiruri de caractere.
+
+153
+00:11:25,180 --> 00:11:34,310
+De exemplu, daca vreau sa vad acel rand pot sa fac asta in doua moduri in care pot sa spun fie DF ELO sa vada pentru o locatie si
+
+154
+00:11:34,380 --> 00:11:42,190
+in paranteze treci numele de rand care este C sau pot sa zic eu EHLO sa vad care este locatia bazata pe index si conteaza
+
+155
+00:11:42,200 --> 00:11:43,690
+ce index se spune.
+
+156
+00:11:43,690 --> 00:11:45,870
+Deci, 0 1 2.
+
+157
+00:11:46,100 --> 00:11:51,790
+Și apoi pe I Alosi grăbesc să adăugați acest lucru, de asemenea, întoarce acel rând.
+
+158
+00:11:51,790 --> 00:11:57,250
+Și asta înseamnă, în principiu, că aveți două moduri de a selecta rânduri folosind EHLO,
+
+159
+00:11:57,250 --> 00:12:04,220
+dacă doriți să vedeți indicele bazat pe locație sau pe etichetă sau să vedeți dacă doriți indexul bazat pe cifre.
+
+160
+00:12:04,240 --> 00:12:09,640
+OK hai să vorbim despre selectarea subseturilor de rânduri și coloane și acest lucru va fi de fapt
+
+161
+00:12:09,640 --> 00:12:12,680
+foarte familiar pentru tine, deoarece am învățat despre pi.
+
+162
+00:12:13,250 --> 00:12:21,530
+Putem spune că DFI a crezut că EHLO văd dacă dorim să selectăm un subset de rânduri și coloane pe care le putem pasa exact așa
+
+163
+00:12:21,520 --> 00:12:25,400
+cum am făcut cu Num. Pi folosind notația comună.
+
+164
+00:12:25,390 --> 00:12:28,550
+Rândul pe care îl dorim și apoi coloana dorită.
+
+165
+00:12:28,580 --> 00:12:36,520
+Deci vreau ca valoarea la Row să fie coloana Y și acest lucru returnează doar o singură valoare acolo.
+
+166
+00:12:36,550 --> 00:12:43,220
+Deci, dacă arunc o privire la DFA-ul meu din nou uitându-mă la coloană cu rabii y, am acest negativ 0. 8 pentru că am același
+
+167
+00:12:43,210 --> 00:12:44,610
+rezultat aici.
+
+168
+00:12:44,620 --> 00:12:52,700
+Deci, la fel ca pi puteți folosi această notație de coloană cu virgulă și dacă doriți o submulțime a acesteia,
+
+169
+00:12:52,690 --> 00:12:58,950
+puteți spune Dhia ellos să vedeți și apoi să pasați o listă separată prin virgule.
+
+170
+00:12:59,000 --> 00:13:07,180
+Spre exemplu, să presupunem că am vrut submulțimea unei rânduri b cu coloanele W Y, așa că am vrut
+
+171
+00:13:07,540 --> 00:13:13,670
+acest lucru 2. 7 0. 9 și 0. 6 și negațiile sunt la douăzeci și patru.
+
+172
+00:13:13,690 --> 00:13:20,650
+Asta inseamna ca pot trece doar intr-o lista cu randurile pe care le doresc, care in acest caz sunt a si b.
+
+173
+00:13:21,700 --> 00:13:31,490
+Și apoi pot trece într-o listă a coloanelor pe care vreau în acest caz, care este w și y shift introduceți acest lucru și am obține
+
+174
+00:13:31,490 --> 00:13:34,360
+returnarea subset a acelui cadru de date.
+
+175
+00:13:34,880 --> 00:13:35,540
+O.K.
+
+176
+00:13:35,770 --> 00:13:38,520
+Vom opri aici și vom continua discuțiile.
+
+177
+00:13:38,530 --> 00:13:44,960
+În partea a doua a prelegerii cadrului de date și acest lucru este tot în notebook-ul numit cadre de
+
+178
+00:13:44,950 --> 00:13:46,700
+date sub dosarul panderers.
+
+179
+00:13:46,690 --> 00:13:51,610
+Să facem o scurtă trecere în revistă a ceea ce am învățat în ceea ce privește crearea unui cadru de date.
+
+180
+00:13:51,620 --> 00:13:58,540
+Pur și simplu trebuie să spuneți că datele din cadrele de date ale PD-ului vă stabilesc indexul și apoi treci în numele coloanelor.
+
+181
+00:13:58,930 --> 00:14:03,670
+De obicei, nu vom construi datele lui Frayne de mână, așa că de fapt, citirea datelor dintr-un fel de sursă,
+
+182
+00:14:03,670 --> 00:14:08,250
+cum ar fi un fișier CSP, ar trebui să învețe cum să faci acum datele introduse mai târziu.
+
+183
+00:14:08,250 --> 00:14:14,030
+Deocamdată, dacă doriți să creați în principal un cadru de date, puteți face acest lucru atunci pentru selectarea coloanelor dintr-un cadru de
+
+184
+00:14:14,020 --> 00:14:16,100
+date pe care îl puteți spune DSF.
+
+185
+00:14:16,100 --> 00:14:22,090
+Apoi, în paranteze treceți în coloana dorită sau treceți într-o listă cu coloanele pe care doriți să le
+
+186
+00:14:22,180 --> 00:14:25,630
+rețineți că fiecare coloană este de fapt doar o serie.
+
+187
+00:14:25,880 --> 00:14:31,430
+Puteți crea coloane noi bazate pe coloane vechi utilizând acest tip de aritmetică.
+
+188
+00:14:31,450 --> 00:14:36,040
+Apoi puteți lăsa coloane sau rânduri utilizând DFA care scade.
+
+189
+00:14:36,040 --> 00:14:38,730
+Amintiți-vă nevoile de a spune în loc egal cu adevărat.
+
+190
+00:14:38,870 --> 00:14:44,820
+Dacă doriți ca efectul să fie permanent, spuneți Axa 1 pentru coloane și apoi Accesul 0 pentru rânduri.
+
+191
+00:14:44,980 --> 00:14:54,460
+Și din nou, că vine de la această formă tuple index 0 a fost rândurile 1 indicele a fost coloane în ceea ce privește selectarea rânduri
+
+192
+00:14:54,460 --> 00:14:56,350
+dintr-un cadru de date.
+
+193
+00:14:56,360 --> 00:14:57,630
+Există două metode aici.
+
+194
+00:14:57,640 --> 00:15:03,670
+Există metoda Alosi, care este o locație indexată pe etichetă sau există punctul.
+
+195
+00:15:03,720 --> 00:15:08,670
+Am Alosi, care este locația indexului bazată pe întreg.
+
+196
+00:15:09,430 --> 00:15:15,100
+Și apoi, dacă doriți să selectați submulțimile cadrului de date, puteți utiliza punctul LOC și puteți trece fie valori,
+
+197
+00:15:15,250 --> 00:15:18,800
+fie liste complete pentru a reveni la subseturile cadrului de date.
+
+198
+00:15:19,330 --> 00:15:22,230
+OK, asta este pentru foarte elementele de bază ale cadrelor de date.
+
+199
+00:15:22,420 --> 00:15:26,810
+Veniți în continuare, vom discuta și mai multe despre ceea ce puteți face dacă Appin starea
+
+200
+00:15:26,800 --> 00:15:28,880
+cadrului, cum ar fi utilizarea selecției condiționate.
+
+201
+00:15:28,880 --> 00:15:30,580
+Multumesc tuturor.
+
+202
+00:15:30,590 --> 00:15:31,570
+Ne vedem la următoarea conferință

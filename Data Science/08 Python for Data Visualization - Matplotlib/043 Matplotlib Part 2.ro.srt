@@ -1,0 +1,803 @@
+1
+00:00:05,460 --> 00:00:09,580
+Bună ziua tuturor și vă urez bun venit la partea Partlet parte la seria de lectură.
+
+2
+00:00:09,690 --> 00:00:14,280
+Vom ridica exact unde am rămas în prima parte unde învățăm despre programarea funcțională
+
+3
+00:00:14,280 --> 00:00:15,270
+cu acel complot.
+
+4
+00:00:15,420 --> 00:00:18,990
+Și, mai important, metodele orientate spre obiecte cu Matt fără planuri.
+
+5
+00:00:19,110 --> 00:00:22,040
+Să mergem înainte și să ne întoarcem la notebook-ul Jupiter pentru a începe.
+
+6
+00:00:22,250 --> 00:00:22,540
+O.K.
+
+7
+00:00:22,560 --> 00:00:28,200
+Aici am revenit la numărul notebook-ului Jupiter de la ultima dată când am învățat cum să folosim acea
+
+8
+00:00:28,200 --> 00:00:35,600
+figură și apoi am dat seama axei și apoi axelor care compun pentru a complota pe o figură orientată pe obiecte folosind acea complot.
+
+9
+00:00:36,390 --> 00:00:41,940
+Următorul lucru pe care o vom face este să învățăm cum să creăm subloturi utilizând aceeași metodă de
+
+10
+00:00:41,940 --> 00:00:42,950
+programare orientată obiect.
+
+11
+00:00:42,990 --> 00:00:51,600
+Mă duc să spun și să zicem aici să clarificăm totul în această celulă și o să mergem mai departe și să
+
+12
+00:00:51,630 --> 00:01:02,790
+spunem asta și să mutăm celula în centru și vom spune că axele virgulei roșii sunt egale cu coaja T și în schimb de a spune figura spune
+
+13
+00:01:02,790 --> 00:01:08,900
+acum că vom încerca să facem subploturi pe care le vom spune subploturi, astfel încât
+
+14
+00:01:08,910 --> 00:01:10,340
+să atragă subploturile.
+
+15
+00:01:10,500 --> 00:01:12,270
+Să mergem mai departe și să fugim de asta.
+
+16
+00:01:12,570 --> 00:01:15,600
+Și observați-ne că avem doar niște subplote.
+
+17
+00:01:15,600 --> 00:01:20,790
+Acum, ceea ce pot face este să folosiți obiectul axelor ca și cum am făcut-o înainte ca să vă complot.
+
+18
+00:01:21,090 --> 00:01:25,400
+Și acest lucru nu este, în esență, diferit de ceea ce am făcut înainte.
+
+19
+00:01:25,710 --> 00:01:32,040
+Și aici el a spus că X este acel complot x vine un Y unde subplots diferă este unde puteți specifica
+
+20
+00:01:32,040 --> 00:01:33,610
+numărul de rânduri și coloane.
+
+21
+00:01:33,810 --> 00:01:42,420
+De exemplu, pot spune și ordonează că primul meu argument este egal cu 1 și sună ca al doilea argument al meu
+
+22
+00:01:42,420 --> 00:01:44,330
+este egal cu două.
+
+23
+00:01:44,700 --> 00:01:49,970
+Și am să merg mai departe și să vă arăt doar ce arată ca o etichetă de tip hash care iese și rulați asta.
+
+24
+00:01:50,070 --> 00:01:57,660
+Acum puteți vedea că am un rând cu două coloane și că practic este doar un mîner frontal frumos pe apelarea lui
+
+25
+00:01:57,660 --> 00:02:05,640
+Piel T-Dog figura, de asemenea, complotul este de a face este, în esență, numesc aceste axe de smochine în mod automat pentru tine
+
+26
+00:02:05,670 --> 00:02:08,900
+pe baza acestor argumente și rânduri și coloane.
+
+27
+00:02:09,180 --> 00:02:12,540
+Să mergem mai departe și să jucăm cu asta, să mergem să arătăm încă un exemplu.
+
+28
+00:02:12,570 --> 00:02:20,440
+Trei rânduri să intrăm și să spunem trei coloane și vedem acum că avem trei rânduri pe trei coloane.
+
+29
+00:02:20,550 --> 00:02:25,770
+Mai târziu, vom vedea cum să rezolvăm problema chestiilor care se suprapun, dar în esență este doar un apel de
+
+30
+00:02:25,770 --> 00:02:26,600
+o singură linie.
+
+31
+00:02:26,610 --> 00:02:34,720
+Pur și simplu spunem că se desprinde și că, de fapt, se termină fixarea acestor suprapuneri.
+
+32
+00:02:34,810 --> 00:02:41,270
+Hai să ieșim și să facem un pas înapoi și să lucrăm cu asta unul câte unul.
+
+33
+00:02:41,280 --> 00:02:41,670
+In regula.
+
+34
+00:02:41,760 --> 00:02:43,320
+Avem o realitate care se suprapune.
+
+35
+00:02:43,320 --> 00:02:47,520
+Și, în esență, este doar un manager de axe deasupra lui Piel la acea cifră.
+
+36
+00:02:47,550 --> 00:02:52,970
+Ceva ce trebuie menționat aici este că în loc să spunem doar figuri egale cu PBT, cifra fac o
+
+37
+00:02:52,990 --> 00:02:59,100
+tuplă și le împachetez spunând că axele virgulei roșii sunt egale cu dinții de coajă care se împachetează și lucrurile pe
+
+38
+00:02:59,100 --> 00:03:07,290
+care trebuie să le știi despre acest obiect de axe este dacă mă duc aici această celulă și tip în axe axe este de fapt doar o gamă de
+
+39
+00:03:07,290 --> 00:03:13,710
+hartă complot lib axe în esență, este doar o listă a acestor axe obiect sensul de a putea Itera, de fapt, prin
+
+40
+00:03:13,710 --> 00:03:14,290
+ea.
+
+41
+00:03:14,460 --> 00:03:29,950
+Pot să spun ceva de genul acesta pentru literele actuale de subliniere X în axe axe punct plot x veni y.
+
+42
+00:03:30,020 --> 00:03:31,610
+Nu vreau să spun că X nu este complot.
+
+43
+00:03:31,620 --> 00:03:40,450
+Vreau să spun complotul actual de oprire X și apoi vedem că de fapt am complotat prin aceste axe.
+
+44
+00:03:40,710 --> 00:03:47,550
+Din nou, acest lucru este doar pentru a arăta că acest obiect de axe este în esență doar o listă a axelor hărții lib, care sunt
+
+45
+00:03:47,550 --> 00:03:50,190
+cele pe care le-ați creat manual când ați spus Fig.
+
+46
+00:03:50,250 --> 00:03:56,390
+Adăugați axele de subliniere care conduc în continuare punctul de acasă că singura diferență dintre Pilani care subplotează și
+
+47
+00:03:56,460 --> 00:04:03,090
+face doar pilt că cifra este că Piel t care subplots este, în esență, acest lucru la chei axe de
+
+48
+00:04:03,090 --> 00:04:08,470
+subliniere pentru tine în mod automat pe baza de câte rânduri și coloane doriți .
+
+49
+00:04:08,490 --> 00:04:09,170
+O.K.
+
+50
+00:04:09,450 --> 00:04:13,600
+Din moment ce putem itera prin acest obiect de axe, putem chiar să îl indexăm.
+
+51
+00:04:13,620 --> 00:04:24,140
+Înseamnă că pot spune axe 0 Dopp parcele X vine Y și aici am trasat pe aceste prime axe.
+
+52
+00:04:24,140 --> 00:04:25,090
+Acum pot face același lucru.
+
+53
+00:04:25,090 --> 00:04:31,460
+Cea de-a doua poate să spun axele 1 punct și y virgula.
+
+54
+00:04:31,770 --> 00:04:40,300
+Și aici am văzut cum să indexăm apelul oferind matricea matrice sau iterați prin această matrice de axe și așa
+
+55
+00:04:40,300 --> 00:04:45,490
+cum am văzut mai devreme putem de asemenea să sunăm titluri
+
+56
+00:04:45,520 --> 00:05:03,180
+și etichete de pe acest lucru așa că pot spune ceva de genul xes 0 set titlu va spune primul complot și atunci voi spune axele 1 subliniază titlul al doilea complot și eroul pot să apeleze titluri și puteți
+
+57
+00:05:03,190 --> 00:05:09,580
+spune etichetele x setate e etichete off de pe oricare dintre aceste obiecte axe.
+
+58
+00:05:09,640 --> 00:05:16,060
+Tot ceea ce faci este să prindeți de fapt obiectul subplot al axelor bazat pe poziția
+
+59
+00:05:16,060 --> 00:05:17,310
+sa în matrice.
+
+60
+00:05:17,320 --> 00:05:17,770
+In regula.
+
+61
+00:05:17,980 --> 00:05:22,040
+Să facem o scurtă trecere în revistă a acestor două metode orientate pe obiecte.
+
+62
+00:05:22,300 --> 00:05:24,330
+Această primă metodă este puțin mai manuală.
+
+63
+00:05:24,370 --> 00:05:26,380
+Este o figură a lui Piel T-Dog.
+
+64
+00:05:26,410 --> 00:05:32,650
+Porniți și creați acea figură pe care le adăugați manual axele și alegeți locația și dimensiunea sa și apoi bazați-vă pe axele pe care le
+
+65
+00:05:32,770 --> 00:05:39,880
+faceți înainte și spuneți acel parcel și titlul X eticheta setată e etichetă etc. pe care le
+
+66
+00:05:39,880 --> 00:05:42,840
+prezentăm aici.
+
+67
+00:05:42,970 --> 00:05:48,280
+A doua metodă este pentru subloturile pe care doriți să le aranjați prin coloanele Rosing.
+
+68
+00:05:48,280 --> 00:05:55,450
+Acest lucru vă permite să apelați axele comma fig astfel încât tuple în ambalaj aici este egal cu subplots apel și apoi
+
+69
+00:05:55,480 --> 00:06:01,600
+bazat off de acele axe veți obține o serie de axe și puteți complot și set de titluri, fie
+
+70
+00:06:01,660 --> 00:06:05,300
+prin indexare sau prin iterating prin acel obiect de axe.
+
+71
+00:06:05,300 --> 00:06:12,760
+Și dacă aveți vreodată probleme cu lucruri care se suprapun, puteți spune mereu că înlăturați parantezele strânse din T-top și acest
+
+72
+00:06:12,770 --> 00:06:16,470
+lucru va avea grijă de orice parcelă care se suprapune.
+
+73
+00:06:16,480 --> 00:06:20,210
+Vă recomandăm să puneți întotdeauna acest lucru la sfârșitul declarațiilor de complot.
+
+74
+00:06:20,830 --> 00:06:27,970
+OK, acum începeți să vorbiți despre raportul dintre aspectul figura și harta GPI Cutlip vă permite să controlați fiecare
+
+75
+00:06:27,970 --> 00:06:32,620
+dintre aceste aspecte și le puteți specifica atunci când apelați obiectul figura.
+
+76
+00:06:32,620 --> 00:06:34,990
+Lasă-mă să merg și să-ți arăt un exemplu.
+
+77
+00:06:34,990 --> 00:06:44,500
+Am de gând să spun că este egal cu figura Piel și argumentele pe care le pot trece sunt dimensiunea Figgs este egal cu.
+
+78
+00:06:44,890 --> 00:06:50,350
+Și apoi treceți o trupă în cazul în care noplul este lățimea și înălțimea figurinei în centimetri.
+
+79
+00:06:50,380 --> 00:06:58,630
+De exemplu, pot merge mai departe și pot spune trei câte două, iar apoi un al doilea argument pe care îl puteți adăuga este GPI, de
+
+80
+00:06:58,690 --> 00:07:03,940
+exemplu, 100 GPI, în cazul în care API doar puncte pe inch sau pixeli pe inch.
+
+81
+00:07:04,120 --> 00:07:07,490
+De obicei folosesc GPI implicit când lucrez cu cartea Jupiter.
+
+82
+00:07:07,600 --> 00:07:14,290
+Așa că am de gând să merg mai departe și doar să clar că pentru moment voi
+
+83
+00:07:14,290 --> 00:07:27,310
+adăuga un set de axe la acest apel este doar X și vom spune fig dot adaugă axe de subliniere și vom spune 0 0 1 virgulă 1 și apoi am de gând
+
+84
+00:07:27,310 --> 00:07:33,220
+să mergem mai departe și să spun X stop plot x vin un Y.
+
+85
+00:07:33,340 --> 00:07:33,700
+In regula.
+
+86
+00:07:33,700 --> 00:07:34,710
+Deci, există complotul nostru.
+
+87
+00:07:34,720 --> 00:07:36,970
+Să mergem și să ne mișcăm ca mărimea figurii.
+
+88
+00:07:37,000 --> 00:07:39,450
+Să spunem că vrem să fie foarte larg.
+
+89
+00:07:39,500 --> 00:07:41,280
+Du-te și spune 8 la 2.
+
+90
+00:07:41,650 --> 00:07:45,880
+Și acum trebuie să fie de 8 inci de 2 inci.
+
+91
+00:07:45,880 --> 00:07:46,510
+In regula.
+
+92
+00:07:46,960 --> 00:07:55,510
+Deci, puteți face același lucru cu subploturile pe care le-aș putea spune că se încleștează că subploturile stabilesc aici dimensiunea membrului Fig.
+
+93
+00:07:55,510 --> 00:08:01,240
+Acum vom spune axele de ficat și voi merge mai departe și voi elimina axele.
+
+94
+00:08:01,330 --> 00:08:07,900
+Setați dimensiunea figurinei, iar axele vor merge mai departe și se vor comporta pe primele axe.
+
+95
+00:08:07,900 --> 00:08:15,670
+Voi spune doar axe punct plot x y și am un complot foarte asemănătoare.
+
+96
+00:08:15,670 --> 00:08:21,490
+Acum voi merge și specificați câteva rânduri și coloane pentru acest subplot și Rose va fi
+
+97
+00:08:21,490 --> 00:08:22,820
+egal cu 1.
+
+98
+00:08:22,870 --> 00:08:25,210
+De fapt, facem două rânduri și mergem pe aici.
+
+99
+00:08:25,510 --> 00:08:28,550
+Și apoi să spunem că avem o coloană.
+
+100
+00:08:28,720 --> 00:08:31,600
+Deci, apelurile sunt egale cu 1.
+
+101
+00:08:31,600 --> 00:08:34,710
+Acum o să sun aici 0.
+
+102
+00:08:34,840 --> 00:08:45,310
+Plotul X vine un Y și apoi vom spune axele un punct de parcelă y virgulă X. Și aici se poate vedea că mărimea FIG a luat în considerare acest
+
+103
+00:08:45,310 --> 00:08:49,220
+lucru până la două rânduri cu o coloană.
+
+104
+00:08:49,780 --> 00:08:57,250
+Și ca întotdeauna, deoarece avem un pic de un real aici pe site-ul încercați să spuneți dinții strâns strâns și acest lucru va încerca tot ce poate pentru a
+
+105
+00:08:57,250 --> 00:09:01,750
+stabili aspectul de tip și se pare că a făcut o treabă destul de bună aici.
+
+106
+00:09:02,060 --> 00:09:07,110
+Sunt câteva probleme legate de această axă, dar vă voi arăta mai târziu cum
+
+107
+00:09:07,120 --> 00:09:11,240
+puteți personaliza aceste axe pentru a afișa mai puține informații.
+
+108
+00:09:11,260 --> 00:09:11,590
+In regula.
+
+109
+00:09:11,590 --> 00:09:16,990
+Acum că am terminat să discutăm dimensiunea figurii și GPI Să mergem înainte, să facem o nouă celulă și să
+
+110
+00:09:16,990 --> 00:09:21,090
+începem să discutăm cum să salvăm într-adevăr o figură pentru a salva o figură.
+
+111
+00:09:21,250 --> 00:09:26,910
+Puteți utiliza complotul de hartă pentru a genera rezultate de înaltă calitate într-un număr de formate,
+
+112
+00:09:26,910 --> 00:09:28,510
+inclusiv pian GJ peg.
+
+113
+00:09:28,630 --> 00:09:37,200
+SPG TGF și PTF pentru a salva o cifră într-un fișier pe care îl puteți folosi metoda save thig.
+
+114
+00:09:37,500 --> 00:09:40,830
+Deci, de exemplu, avem aici figura pe care am creat-o deja.
+
+115
+00:09:40,830 --> 00:09:43,610
+Amintiți-vă că este doar aici Fig.
+
+116
+00:09:44,100 --> 00:09:50,490
+Și apoi pot să salvez fig-ul cu excepția figurilor și tot ceea ce trebuie să faci este să treci în numele fișierului pe care îl vrei.
+
+117
+00:09:50,580 --> 00:09:57,720
+Deci, de exemplu, imaginea mea de subliniere și apoi treceți în extensie și harta Cutlip este suficient de inteligent pentru a
+
+118
+00:09:57,720 --> 00:09:58,770
+ști ce doriți.
+
+119
+00:09:58,890 --> 00:10:08,370
+Deci, dacă doriți să PNB spuneți aici în G dacă doriți să JPA spuneți că J peg JP G etc și spune asta ca P și
+
+120
+00:10:08,380 --> 00:10:09,950
+G.
+
+121
+00:10:10,950 --> 00:10:12,890
+Și asta va spune automat cifra.
+
+122
+00:10:13,170 --> 00:10:15,470
+Aici puteți specifica și IPC.
+
+123
+00:10:15,780 --> 00:10:20,910
+Deci, dacă ați uitat să specificați IPC aici când creați complotul, puteți specifica din
+
+124
+00:10:20,920 --> 00:10:22,050
+nou DPR aici.
+
+125
+00:10:22,060 --> 00:10:27,860
+Deci, puteți face acest lucru dacă este ca un GPI 200 și puteți crește DPA după cum doriți mai multe detalii.
+
+126
+00:10:27,880 --> 00:10:28,520
+In regula.
+
+127
+00:10:28,830 --> 00:10:34,900
+Am obținut deja titluri de cifre și etichete de axe, cum ar fi setarea etichetei X și setarea etichetei y, dar vă voi arăta un
+
+128
+00:10:34,920 --> 00:10:36,840
+memento rapid pentru a face acest lucru.
+
+129
+00:10:37,040 --> 00:10:44,240
+Vom schimba acest lucru înapoi la doar o figură simplă egală cu cifra lui Piel T-Dog.
+
+130
+00:10:45,210 --> 00:10:47,490
+Mergeți mai departe și adăugați un set de axe pentru acest lucru.
+
+131
+00:10:47,500 --> 00:10:49,980
+Așa că vom salva Fig.
+
+132
+00:10:50,120 --> 00:11:00,050
+Adăugați underscore xes pe care le vom pune la 0 0 1 1 și apoi vom spune X stop parcele X veni un Y.
+
+133
+00:11:00,840 --> 00:11:01,380
+In regula.
+
+134
+00:11:01,680 --> 00:11:08,040
+Deci, ca un memento dacă vreți să adăugați un titlu, luați una dintre aceste axe și spuneți că ați setat
+
+135
+00:11:08,040 --> 00:11:14,110
+titlul și purtați doar un șir de titlu pe care îl doriți pentru a seta o etichetă y.
+
+136
+00:11:14,280 --> 00:11:19,190
+Doar spuneți că e setat eticheta într-un șir de etichetă y pe care o doriți.
+
+137
+00:11:19,800 --> 00:11:27,220
+Și apoi pentru Ex-Slave tot ce poți face același lucru setați eticheta dorită.
+
+138
+00:11:28,660 --> 00:11:32,410
+OK, așa că am titlul meu eticheta soției mele și eticheta mea X.
+
+139
+00:11:32,700 --> 00:11:35,610
+Să vorbim despre legende cu legende.
+
+140
+00:11:35,620 --> 00:11:42,480
+Puteți folosi textul etichetei pentru a clarifica cu adevărat ce complot este ceea ce complot și vă voi arăta ce vreau să spun prin asta.
+
+141
+00:11:42,960 --> 00:11:53,850
+Am de gând să mergem mai departe și să eliminăm aceste trei linii de cod și să spunem x începe parcela y virgula X ..
+
+142
+00:11:54,100 --> 00:11:56,850
+Așa că observați că fac doar asta pe aceeași figură.
+
+143
+00:11:56,860 --> 00:12:05,580
+Înseamnă că dacă spun și conduc de fapt acest lucru, voi obține două linii aici, voi obține plotul x și exploatația y.
+
+144
+00:12:06,720 --> 00:12:10,540
+Deoarece acestea sunt destul de diferite, să mergem mai departe și să obținem ceva mai asemănător.
+
+145
+00:12:10,560 --> 00:12:18,070
+Am de gând să merg și să compară x versus x pătrat și X versus x Q ..
+
+146
+00:12:18,880 --> 00:12:19,490
+In regula.
+
+147
+00:12:19,710 --> 00:12:21,810
+Deci acum avem două linii aici.
+
+148
+00:12:21,880 --> 00:12:26,070
+Și dacă te uiți la această figură singură, fără a putea să menționezi codul, probabil
+
+149
+00:12:26,070 --> 00:12:29,790
+că ești puțin confuz cu privire la ceea ce reprezintă fiecare parcelă.
+
+150
+00:12:29,880 --> 00:12:32,730
+Nu ați vrea să adăugați o legendă într-o comandă.
+
+151
+00:12:32,760 --> 00:12:34,120
+Adăugați legenda.
+
+152
+00:12:34,560 --> 00:12:37,420
+Este de fapt destul de simplu, dar este un proces în două etape.
+
+153
+00:12:37,500 --> 00:12:44,270
+Primul pas este să apelați doar X Leginul în partea de jos a codului în care sunt axele dvs. și
+
+154
+00:12:45,030 --> 00:12:50,260
+dacă rulați că veți observa că primiți un avertisment că nu există obiecte etichetate găsite.
+
+155
+00:12:50,520 --> 00:12:52,830
+Și aici vine al doilea pas.
+
+156
+00:12:52,830 --> 00:12:58,110
+Pentru fiecare dintre aceste apeluri de complot pe care tocmai ați făcut, veți adăuga un argument numit etichetă și această etichetă
+
+157
+00:12:58,120 --> 00:13:00,050
+este doar un șir pe care doriți.
+
+158
+00:13:00,050 --> 00:13:05,550
+Pentru ca funcția legendei X să fie de referință, să mergem să vă arătăm ce
+
+159
+00:13:05,550 --> 00:13:13,970
+vreau să spun că putem merge mai departe și să spunem că X este pătrat aici ca etichetă și apoi și cu această etichetă.
+
+160
+00:13:13,980 --> 00:13:15,160
+Voi merge mai
+
+161
+00:13:17,860 --> 00:13:19,620
+departe și voi spune executa.
+
+162
+00:13:21,370 --> 00:13:26,130
+Și acum, când conduc această legendă X, văd că am reușit să creez o legendă.
+
+163
+00:13:26,160 --> 00:13:31,260
+Deci, toate acestea fac atunci când sunați X că legenda este căută pentru fiecare dintre apelurile complot și apoi verifică
+
+164
+00:13:31,290 --> 00:13:33,150
+pentru a vedea dacă există o etichetă.
+
+165
+00:13:33,270 --> 00:13:38,880
+Apoi, eticheta care este doar un șir este returnată și se potrivește până la culoarea corectă
+
+166
+00:13:38,880 --> 00:13:39,810
+a liniei.
+
+167
+00:13:39,880 --> 00:13:44,190
+Și mai târziu vă vom arăta cum să personalizați culorile liniei.
+
+168
+00:13:44,190 --> 00:13:45,400
+Acum, nu e asta.
+
+169
+00:13:45,390 --> 00:13:52,020
+Observați cum o parte din această legendă se suprapune pe parcelele actuale pe care le puteți face în X, pe
+
+170
+00:13:52,020 --> 00:13:55,890
+care legenda îl cheamă pentru a evita acest lucru, specificați ellos.
+
+171
+00:13:55,950 --> 00:14:01,030
+Acum sunt de fapt câteva locații pe care le puteți specifica și vă voi arăta foarte rapid pagina
+
+172
+00:14:01,030 --> 00:14:01,830
+de documentare.
+
+173
+00:14:01,840 --> 00:14:05,130
+Este legat în notebook în această secțiune.
+
+174
+00:14:05,130 --> 00:14:09,160
+Permiteți-mi să merg înainte și să merg la acel link, astfel încât link-ul să vă conducă la o pagină care arată astfel.
+
+175
+00:14:09,240 --> 00:14:14,640
+Și puteți să faceți clic pe legendă și există practic un set de parametri aici și există un cod de locație
+
+176
+00:14:14,820 --> 00:14:16,270
+și un șir de locație.
+
+177
+00:14:16,470 --> 00:14:23,280
+Deci, puteți specifica cea mai bună stânga sus dreapta sus stânga jos, etc. bazate pe codul locației.
+
+178
+00:14:23,280 --> 00:14:28,120
+V-aș recomanda întotdeauna să folosiți doar codul de locație 0 pentru că permite lib lib pentru a încerca să
+
+179
+00:14:28,120 --> 00:14:30,180
+aleagă cea mai bună locație pentru legenda ta.
+
+180
+00:14:30,240 --> 00:14:31,170
+Să mergem mai departe și să facem asta.
+
+181
+00:14:31,170 --> 00:14:37,320
+Vom intra și vom spune că Alosi va chema 0 fracțiune și dacă vom vedea că cea mai bună locație este aici în
+
+182
+00:14:37,380 --> 00:14:42,000
+partea stângă sus, haideți să mergem mai departe și să verificăm încă un cod de locație.
+
+183
+00:14:42,010 --> 00:14:48,820
+Dacă ne întoarcem aici, de exemplu, dacă vrem în centru, putem specifica un cod de locație 10.
+
+184
+00:14:49,620 --> 00:14:51,480
+Și aici avem în centru.
+
+185
+00:14:51,480 --> 00:14:57,510
+Acum, dacă niciuna dintre aceste opțiuni nu funcționează pentru dvs., cum ar fi 0 până la 10, pe care o puteți face,
+
+186
+00:14:57,510 --> 00:15:02,650
+puteți specifica și o tuplă care dă x și y din colțul din stânga jos al legendei.
+
+187
+00:15:02,880 --> 00:15:10,560
+De exemplu, putem merge mai departe și să spunem ceva de genul acesta 0. 1 virgulă 0. 1 și asta înseamnă exact așa cum ați procedat
+
+188
+00:15:10,560 --> 00:15:13,100
+mai devreme când introduceți un plan de inserție.
+
+189
+00:15:13,200 --> 00:15:17,760
+Puteți pune aici o piatră specificând locul în care doriți legenda dvs.
+
+190
+00:15:17,760 --> 00:15:19,880
+Colțul din colț să fie.
+
+191
+00:15:19,880 --> 00:15:20,670
+In regula.
+
+192
+00:15:20,790 --> 00:15:22,680
+Asta e pentru a doua parte.
+
+193
+00:15:22,680 --> 00:15:23,590
+Urmeaza.
+
+194
+00:15:23,590 --> 00:15:26,310
+În această ultimă parte a hărții conceptului Partlow.
+
+195
+00:15:26,310 --> 00:15:32,040
+Vom vorbi despre setarea liniei de culori și a tipurilor de linii, precum și despre lucrul cu marcatorii care stabilesc gama
+
+196
+00:15:32,040 --> 00:15:36,690
+de parcele și apoi vom începe să vorbim despre unele tipuri speciale de complot, dar asta ne va
+
+197
+00:15:36,690 --> 00:15:39,150
+conduce mai mult în discuția noastră despre seaborne.
+
+198
+00:15:39,180 --> 00:15:41,100
+Multumesc tuturor.
+
+199
+00:15:41,110 --> 00:15:46,010
+Continuați și postați întrebările pe care le aveți la forumurile Q &amp; A și vom fi bucuroși să le răspundem acolo.
+
+200
+00:15:46,020 --> 00:15:49,090
+Nu uitați să consultați notele pentru această prelegere.
+
+201
+00:15:49,090 --> 00:15:50,940
+OK, o să văd dacă următoarea prelegere

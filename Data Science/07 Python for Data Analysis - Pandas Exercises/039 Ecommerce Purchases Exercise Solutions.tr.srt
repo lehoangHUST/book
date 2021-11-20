@@ -1,0 +1,831 @@
+1
+00:00:05,250 --> 00:00:09,020
+Herkese merhaba ve e-ticaret alımları için çözümlere hoş geldiniz deyin.
+
+2
+00:00:09,050 --> 00:00:10,560
+Pandalar egzersizi.
+
+3
+00:00:10,620 --> 00:00:14,720
+Hadi ilerleyip Jüpiter defterine atlayıp bu çözümleri gezmeye başlayalım.
+
+4
+00:00:14,730 --> 00:00:14,970
+Tamam.
+
+5
+00:00:14,970 --> 00:00:18,140
+İşte ben e-ticaret alım egzersizi için defterimdeyim.
+
+6
+00:00:18,150 --> 00:00:21,240
+Hadi devam edelim ve talimatları izleyelim.
+
+7
+00:00:21,330 --> 00:00:26,180
+Bu yüzden yapman gereken ilk şey, ithal pandaların iyi ithalat bedeli olmasıydı.
+
+8
+00:00:26,180 --> 00:00:32,760
+CSP dosyasını okumak ve e-comm adlı bir veri arkadaşına göndermek istediğimiz şeyin sonu.
+
+9
+00:00:32,760 --> 00:00:34,490
+Bu, e-ticaret satın alımlarında
+
+10
+00:00:34,500 --> 00:00:40,240
+Bu yüzden e-com CD'ye eşitse alt çizgi CXVII'yi okuduğumuzu söylüyoruz.
+
+11
+00:00:40,710 --> 00:00:46,100
+Ve sonra e-com yazmaya başladığımızda asıl dosyayı bulmak için otomatik tamamlama sekmesini kullanacağım ve
+
+12
+00:00:46,210 --> 00:00:47,210
+oradaki ilk şey.
+
+13
+00:00:47,220 --> 00:00:49,240
+E-ticaret alımları.
+
+14
+00:00:49,770 --> 00:00:54,420
+Ve ben devam edip veri çerçevesinin başını kontrol edeceğim ve
+
+15
+00:00:54,420 --> 00:00:57,240
+bunu yalnızca e-com başlığını çağırarak yapabilirsiniz.
+
+16
+00:00:57,240 --> 00:01:00,430
+Ve biz, o veri çerçevesinin başına sahip olduğumuzu görebiliriz.
+
+17
+00:01:00,450 --> 00:01:05,290
+Şimdi kaç tane satır ve sütun olduğunu bilmek istiyoruz, bunun için birkaç yol var.
+
+18
+00:01:05,310 --> 00:01:13,920
+Örneğin sadece e-com sütunlarını söyleyebilirsiniz ve bu indekslenmiş sütunların bir listesini döndürür, böylece istedim ve
+
+19
+00:01:13,920 --> 00:01:19,560
+yine de kaç kolonunuza sahip olursanız bunun uzunluğunu kontrol edebilirsiniz.
+
+20
+00:01:19,560 --> 00:01:20,140
+&nbsp;
+
+21
+00:01:20,340 --> 00:01:28,380
+Ve sonra indeks için aynı şeyi yapabilirdiniz ve kaç satırın bunu yapmak için güzel bir yol olduğunu, ancak
+
+22
+00:01:28,380 --> 00:01:33,480
+her iki bilgiyi de bir artı bir kaç güzel bilgi parçasına
+
+23
+00:01:33,480 --> 00:01:38,430
+almak için bilgi metodu olarak adlandırdığını söylerdiniz. ve umarım bu bilgi
+
+24
+00:01:38,430 --> 00:01:41,780
+yöntemini kullanmak için güzel ipuçları olan çıktıya bakarak.
+
+25
+00:01:41,780 --> 00:01:42,410
+TAMAM.
+
+26
+00:01:42,960 --> 00:01:45,870
+Ortalama satın alma fiyatı nedir?
+
+27
+00:01:45,870 --> 00:01:51,330
+Hadi devam edelim ve sütunları bir kez daha kontrol edelim.
+
+28
+00:01:51,360 --> 00:01:53,310
+Dikkat edin, adres yuvalarımız var.
+
+29
+00:01:53,310 --> 00:01:58,680
+AM ya da PM ile devam ederken sonuçta bir satın alma fiyatının sonunda olduğunu fark ettik.
+
+30
+00:01:59,010 --> 00:02:04,490
+Dışarı çıkıp giderken, o sütun satın alma fiyatını çağırıyor ve ben burada gideceğim ve otomatik
+
+31
+00:02:04,530 --> 00:02:07,770
+tamamlama yapacağım ve sonra ortalama satın alma fiyatını isteyeceğim.
+
+32
+00:02:07,770 --> 00:02:13,080
+ne olduğunu gerçekten yayınlamadım nedeni, bu yöntemi ortalama olarak sopadan sökmek istemiyorum.
+
+33
+00:02:13,080 --> 00:02:16,890
+Bu durumda ortalamadan bahsediyoruz, ortalama satın alma fiyatı
+
+34
+00:02:16,920 --> 00:02:23,910
+Umarım bunu anlamışsınızdır ve ortalama tırtıklı fiyat 35 sentten 50 $ 'dır.
+
+35
+00:02:23,910 --> 00:02:28,560
+Şimdi en yüksek ve en düşük satın alma fiyatlarının ne olduğunu öğrenmek istiyoruz,
+
+36
+00:02:28,560 --> 00:02:34,830
+bunu sütunumuzu geçerek çok benzer bir şekilde yapabiliriz ve daha sonra max ve min'i aramış olarak çağırırız.
+
+37
+00:02:34,830 --> 00:02:44,300
+Yani maksimum satın alma fiyatı yaklaşık 100 dolar ve minimum satın alma fiyatı 0 dolar.
+
+38
+00:02:44,700 --> 00:02:45,360
+Tamam.
+
+39
+00:02:45,480 --> 00:02:50,630
+Şimdi, kaç kişi İngilizce veya Web sitesinde seçtikleri dil olarak bilmek istiyorum.
+
+40
+00:02:51,270 --> 00:02:56,330
+İngilizce sütununu veya dil sütununu gözden geçirelim ve bu bir e-comm.
+
+41
+00:02:56,360 --> 00:02:57,610
+Bir kere daha
+
+42
+00:02:57,770 --> 00:02:58,560
+Devam et.
+
+43
+00:02:58,580 --> 00:03:02,840
+İlk üç sütunu burada bulacağım.
+
+44
+00:03:02,880 --> 00:03:04,290
+Rose, izin verir misin?
+
+45
+00:03:04,290 --> 00:03:07,110
+Öyleyse devam edip sağa kaydırmamın farkındayım.
+
+46
+00:03:08,010 --> 00:03:13,350
+Burada sadece iki uzunluk dizesi varmış gibi görünen dil sütununda var.
+
+47
+00:03:13,380 --> 00:03:18,340
+Bu yüzden, bu dizelerin kaçının E'ye eşit olduğunu araştırıyor ve bunun anlamı ben bunu yapacağım anlamına geliyor.
+
+48
+00:03:18,360 --> 00:03:27,540
+E-com dili e m dizgisine eşit demek.
+
+49
+00:03:27,600 --> 00:03:31,700
+Bu, bir dizi boolean değer döndürür.
+
+50
+00:03:31,710 --> 00:03:33,360
+Trews'taki hatalar.
+
+51
+00:03:33,360 --> 00:03:37,800
+Ve bu şu an yapabileceğim şeyin devam etmesi ve e-com'u bunun
+
+52
+00:03:40,410 --> 00:03:42,230
+nerde olduğu konusunda söylemesi.
+
+53
+00:03:42,420 --> 00:03:47,700
+Yani e-comm diyebilirim ve şimdi temelde veri çerçevesinin bir alt kümesine sahibim ve bunu bu dizine
+
+54
+00:03:47,700 --> 00:03:48,710
+bakarak kontrol edebiliyorum.
+
+55
+00:03:48,840 --> 00:03:50,610
+Ve bunun etrafından sıçradığına dikkat edin.
+
+56
+00:03:50,820 --> 00:03:56,760
+bunun başını çağıralım çünkü burada doğru olana kadar tüm diller E-M'dir.
+
+57
+00:03:56,850 --> 00:04:01,370
+Ve eğer çerçeve devleti sağa doğru kaydırırsam gidelim ve
+
+58
+00:04:01,410 --> 00:04:06,300
+Kaç kişinin İngilizceye sahip olduğunu bilmek istediğimden, istediğim şey bunun başı değil.
+
+59
+00:04:06,300 --> 00:04:08,110
+Sadece sayı diyebilirim.
+
+60
+00:04:09,330 --> 00:04:11,160
+Ve bu satırları sayacaktır.
+
+61
+00:04:11,160 --> 00:04:15,310
+Ve bu yüzden web sitesinde seçtikleri dil olarak İngilizce olan
+
+62
+00:04:15,310 --> 00:04:17,250
+bin dokuz yüz kişiye sahibim.
+
+63
+00:04:17,820 --> 00:04:23,340
+Dilediğinizi dil sütununa özgü yapmak istiyorsanız, burada dil diyebilirsiniz ve
+
+64
+00:04:24,840 --> 00:04:27,590
+bu size doğrudan numara verecektir.
+
+65
+00:04:27,600 --> 00:04:27,910
+Tamam.
+
+66
+00:04:27,960 --> 00:04:29,930
+Hadi devam edelim ve devam edelim.
+
+67
+00:04:29,970 --> 00:04:34,090
+Şimdi kaç kişinin avukat unvanına sahip olduğunu bilmek istiyoruz.
+
+68
+00:04:34,300 --> 00:04:47,280
+Devam edeceğiz ve işin avukata eşit olduğu ve daha sonra e-com veri çerçevesine ilettiği e-com söyleyeceğiz ve bu veri
+
+69
+00:04:47,280 --> 00:04:52,830
+çerçevesinin alt kümesini diğerleri için de geçerliliğini yansıtıyor
+
+70
+00:04:52,830 --> 00:04:54,990
+Yöntemler aslında gülünü çıkarıyor.
+
+71
+00:04:55,080 --> 00:04:58,170
+Sadece bilgi alabilirsin.
+
+72
+00:04:58,460 --> 00:05:01,740
+Ve bu, aslında, kaç tane satırın bulunduğu 30 girişini döndürür.
+
+73
+00:05:01,790 --> 00:05:06,480
+Aynı işlemi yapan 30 sayımı da yapabilirsiniz.
+
+74
+00:05:06,510 --> 00:05:13,590
+Ayrıca dizini kapatarak dizini döndürür ve ardından bunun için bağlantıyı arayabilirsiniz.
+
+75
+00:05:14,130 --> 00:05:15,450
+Ve bu da 30'u geri getiriyor.
+
+76
+00:05:15,450 --> 00:05:20,790
+Cinsel cevabı 30 almak için epeyce yöntem 30 önde gidiyor ve tercih ettiğiniz
+
+77
+00:05:20,790 --> 00:05:22,180
+metodu kullanmakta özgürün.
+
+78
+00:05:23,070 --> 00:05:23,310
+TAMAM.
+
+79
+00:05:23,310 --> 00:05:27,930
+Önümüzdeki saatlerde, am sırasında satın aldığınız kişi sayısı ve p sırasında alışveriş yapan
+
+80
+00:05:27,930 --> 00:05:29,760
+kişi sayısı kaçtı. m. Ve burada değeri kullanmanın bir ipucu var.
+
+81
+00:05:29,940 --> 00:05:32,780
+Degerli sayimlar bunu gerçekten kolay hale getirir.
+
+82
+00:05:33,240 --> 00:05:35,300
+Aslında yalnızca AM veya PM sütununu girip değer söylersin.
+
+83
+00:05:35,310 --> 00:05:40,750
+Size eşsiz değerleri ilk önce göstereceğim.
+
+84
+00:05:40,980 --> 00:05:43,390
+Bu sütuna bir göz atıp
+
+85
+00:05:43,560 --> 00:05:49,550
+benzersiz bir bildirimde bulunursak, yalnızca PM ve am değerler alır ve bu, alt
+
+86
+00:05:49,560 --> 00:05:52,830
+çizgi değeri sayabilir ve bu otomatik olarak sayılacaktır.
+
+87
+00:05:55,470 --> 00:05:56,930
+S sırasında kaç kişi satın aldı. m. ve AM sırasında kaç kişi satın aldı.
+
+88
+00:05:56,970 --> 00:06:01,550
+Önümüzdeki sırada, en yaygın beş iş unvanının hangileri olduğunu söylemek istiyoruz.
+
+89
+00:06:02,310 --> 00:06:06,570
+Aslında önemli olan şey, işe son verebileceğiniz çok kolay olanı
+
+90
+00:06:07,080 --> 00:06:12,960
+İş Kolonu olarak adlandırıyor ve bir seri iş olarak geri döndüğünüzü fark ettikten sonra
+
+91
+00:06:14,120 --> 00:06:19,740
+bu sütundaki değer sayımlarını arayabilir ve ardından sayımları gerçekte sayılırsın. ve fark değeri sayımları,
+
+92
+00:06:19,740 --> 00:06:20,160
+en
+
+93
+00:06:23,640 --> 00:06:29,430
+popüler hesaplardan en alakalı olanlara kadar giderseniz, otomatik olarak şimdiye kadar otomatik olarak sıralanır.
+
+94
+00:06:29,430 --> 00:06:34,080
+Dolayısıyla ilk beşe ilişkin başımızı kontrol edersek, iç ve
+
+95
+00:06:34,080 --> 00:06:41,190
+özel tasarımcı avukat alım müdürü vb. En yaygın beş iş unvanını elde edersiniz. Bunu yapmanın başka yolları da var ancak bu muhtemelen bunu yapmanın en hızlı ve en kolay yoludur.
+
+96
+00:06:41,560 --> 00:06:45,330
+TAMAM.
+
+97
+00:06:45,450 --> 00:06:49,620
+Sırada, birisi Lotts'tan 90 kişilik W teklifi alan bir satın alma işlemi yaptı. T. Bu işlem için satın alma fiyatı ne idi.
+
+98
+00:06:50,400 --> 00:06:51,640
+Hadi başlayalım ve önce bu kadarını bulmaya çalışalım.
+
+99
+00:06:51,990 --> 00:06:57,640
+Bu yüzden, bunu bir adım adım kıracağız.
+
+100
+00:06:57,830 --> 00:07:00,680
+E-com sayısını eşit olarak 90'a, ardından 90'a eşit olarak diyecektik.
+
+101
+00:07:00,690 --> 00:07:03,380
+Uzay sermayesi W T.
+
+102
+00:07:03,390 --> 00:07:06,040
+Bunu yalnızca bir dizi boolean değeri gibi çalıştırıyorum ve bunun doğru olduğu satırı istiyorum.
+
+103
+00:07:06,060 --> 00:07:13,110
+Bu yüzden, içeri girip bu e-com'nun bu koşullu seçim olduğunu söyleyeceğim.
+
+104
+00:07:13,110 --> 00:07:15,430
+Ve şimdi şunu görebiliyorum ki Roback bu olayların nerede gerçekleştiğini görebiliyorum.
+
+105
+00:07:15,490 --> 00:07:20,650
+Öyleyse devam edersem ve sadece satın alma fiyatına geçersem 75 dolar ve 10 kuruş görmeliyim.
+
+106
+00:07:21,120 --> 00:07:27,270
+Veya sadece bu veri çerçevesinin satın alma fiyatını arayabilirim ve bu 75 $ ve 10 cent'i geri vereceğim.
+
+107
+00:07:27,270 --> 00:07:30,470
+TAMAM.
+
+108
+00:07:30,540 --> 00:07:35,880
+Bir sonraki kredi kartı numarası ile kişiye e-posta gönderecek ne gelecektir.
+
+109
+00:07:35,970 --> 00:07:46,120
+İşte kredi kartı numarası.
+
+110
+00:07:46,140 --> 00:07:47,540
+Peki biz yapmak isteyeceğiz çok benzer bir süreç
+
+111
+00:07:47,610 --> 00:07:51,090
+e-com kredi kartı eşit istiyorum ve sonra bu numarayı kopyalayıp yapıştırmak için gidiyoruz ve sonra ben bunu geçmek için
+
+112
+00:07:51,090 --> 00:07:52,870
+gidiyorum söyleyecektir e-com veri çerçevesini açın ve e-posta sütununu kapatın.
+
+113
+00:07:53,130 --> 00:08:02,460
+Ve ben sadece koştum ve bana aynı cevabı buluyor.
+
+114
+00:08:02,460 --> 00:08:11,160
+Williams Asgar'ın Bob Dylan da bunu söyledi.
+
+115
+00:08:11,160 --> 00:08:15,340
+Tamam, şimdi kaç tane American Express'in kredi kartı sağlayıcısına sahip olacağını ve 95 $ 'ın
+
+116
+00:08:16,500 --> 00:08:18,810
+üzerinde bir satın alma işlemi yaptığını bilmek istiyorum.
+
+117
+00:08:18,810 --> 00:08:22,370
+Yine koşullu seçim yapıyoruz.
+
+118
+00:08:22,620 --> 00:08:29,160
+Bunun haricinde, devam edip veri çerçevemize oturmaya başlayınca birden çok koşulun nasıl
+
+119
+00:08:29,160 --> 00:08:30,620
+yapılacağını hatırlamak zorundayız.
+
+120
+00:08:30,720 --> 00:08:32,450
+şartı parantez içinde geçireceğim.
+
+121
+00:08:32,460 --> 00:08:38,520
+E-comm diyecekler ve ben de parantez içindeki ilk şartı geçeyim ve sonra ampersand'ı kullanıp ikinci
+
+122
+00:08:38,520 --> 00:08:39,300
+OK ilk şartı, kredi kartı sağlayıcısı anlamı olarak American Express idi.
+
+123
+00:08:39,450 --> 00:08:45,320
+E-com CC sağlayıcısı American Express'e eşittir ve satın alma fiyatının e-com'u 95
+
+124
+00:08:45,840 --> 00:08:48,490
+$ 'dan daha fazla olmasını isterim.
+
+125
+00:08:48,690 --> 00:08:52,900
+Tamam.
+
+126
+00:08:52,950 --> 00:09:10,200
+Bunu çalıştırırsam bunun gerçek olduğu satırları geri alabilirim.
+
+127
+00:09:13,380 --> 00:09:16,240
+Şimdi hatırlıyorum.
+
+128
+00:09:16,450 --> 00:09:16,980
+Ben sadece sayımı istiyorum, böylece devam edip sadece bu işi halledip 39 sayımı alabileceğimi söyleyebilirim.
+
+129
+00:09:17,130 --> 00:09:22,060
+Sayımı elde edebilmek için yine çok farklı yollar var.
+
+130
+00:09:22,080 --> 00:09:22,670
+Ayrıca bilgi diyebilirsin, o zaman üçüncü 9'u burada döndürür.
+
+131
+00:09:22,710 --> 00:09:29,720
+Örneğin hisse senedi endeksini de kullanabilirsiniz ve daha sonra bunun uzunluğunu elde edin ve aynı zamanda Otuz Dokuzuncu değeri döndürür. Bunu
+
+132
+00:09:29,970 --> 00:09:32,080
+yapmak için pek çok yol var.
+
+133
+00:09:32,070 --> 00:09:37,090
+Ancak almak istediğim şeyin asıl fikri aslında birden fazla koşul seçimini yaptı.
+
+134
+00:09:37,230 --> 00:09:42,540
+Bir baskı CS'yi kolaylıkla geçirmeniz ve ardından CS geçişi yapmanız ve CS'yi tekrar yazdırmanız gerekir.
+
+135
+00:09:45,770 --> 00:09:48,250
+TAMAM.
+
+136
+00:09:48,250 --> 00:09:52,500
+Şimdi son iki sert olanlar için.
+
+137
+00:09:52,530 --> 00:09:57,620
+2025'te dolacak kaç kişinin kredi kartı var.
+
+138
+00:09:58,290 --> 00:09:58,860
+Öyleyse devam edin ve son kullanma tarihine bir göz atalım.
+
+139
+00:09:58,870 --> 00:10:00,950
+Dolayısıyla, CC Expwy son kullanma tarihine sahibiz.
+
+140
+00:10:01,050 --> 00:10:04,920
+Buna bir göz atalım.
+
+141
+00:10:05,710 --> 00:10:10,070
+Bir dize gibi görünen şey var.
+
+142
+00:10:10,720 --> 00:10:15,160
+Birinci nesne isteyerek arayalım ve bunun bir dize olduğunu onaylayalım.
+
+143
+00:10:15,540 --> 00:10:16,700
+EHLO, köşeli parantez sıfır hatasını görürsem, eğik çizgi 20'ye dönüşür.
+
+144
+00:10:16,720 --> 00:10:19,600
+ileride ne yapacağım o dizgenin değerlerini alacak demektir.
+
+145
+00:10:19,770 --> 00:10:25,020
+Ve bu demektir ki eğer yıl kapmak istiyorsam, bu kredi kartı 2020'de sona erecek ve
+
+146
+00:10:25,090 --> 00:10:34,370
+Elemanlar, dizin 3 ve sonrası olan dize mi?
+
+147
+00:10:34,650 --> 00:10:39,810
+0 1 2 3 ve ötesine bakarsanız ya da aslında son iki.
+
+148
+00:10:39,810 --> 00:10:47,020
+Ve şimdi, devam etmek ve bu bilgiyi alıp kullanmaya başlayacağımız
+
+149
+00:10:47,010 --> 00:10:50,400
+yıl olan bir dize alıyorum.
+
+150
+00:10:50,400 --> 00:10:57,060
+Bu yüzden, Uygula lambda'nın devam etmesini ve bu XP Colan XP'yi çağırıp üç tane iki nokta üstüste diyebileceğini söylemek
+
+151
+00:10:57,540 --> 00:11:02,920
+istiyorum ve daha sonra 25'ye eşit olmasını istiyorum çünkü 20 2025'lik son kullanma tarihini arıyorum.
+
+152
+00:11:02,910 --> 00:11:05,050
+Hadi devam edelim ve sadece şunu çalıştıralım.
+
+153
+00:11:05,040 --> 00:11:21,080
+Şimdi yanlış ve gerçek bir seri boolean değer bulunduğunu fark ettim.
+
+154
+00:11:21,390 --> 00:11:30,270
+Şimdi bunun çok zor olmasının nedeni, bunların kaçının gerçek olduğunu anlamanız gerektiğidir.
+
+155
+00:11:31,020 --> 00:11:33,750
+Bunu yapabileceğiniz birkaç farklı yol var.
+
+156
+00:11:34,100 --> 00:11:39,400
+Çok hızlı bir şekilde, yalnızca serinin toplamını alabilir ve
+
+157
+00:11:39,390 --> 00:11:44,290
+toplam olarak doğru olan tüm değerleri geri döndürürsünüz.
+
+158
+00:11:44,670 --> 00:11:46,750
+İşte böyle yapılır ve çözümler.
+
+159
+00:11:46,800 --> 00:11:53,070
+Düzgün bir numara ama bunu zorlaştırıyor.
+
+160
+00:11:53,080 --> 00:11:54,860
+e-com'a geçirerek satırları gerçeğe dönüştürecek hale getirmek.
+
+161
+00:11:55,200 --> 00:11:56,910
+Bunu yapabildiğimiz diğer şey ise, bunu
+
+162
+00:11:56,910 --> 00:11:59,780
+Ve sonra sadece söylüyorum ve bu da aynı sayıdaki 1033'e geri dönecek.
+
+163
+00:11:59,910 --> 00:12:07,740
+TAMAM.
+
+164
+00:12:07,750 --> 00:12:08,100
+Şimdi,
+
+165
+00:12:08,130 --> 00:12:15,200
+en popüler beş e-posta sağlayıcısı ve ana bilgisayarı olan en zor olanı için, gmail.com com.com adresini ziyaret edin.
+
+166
+00:12:15,520 --> 00:12:16,310
+Hadi devam edelim ve bunu nasıl yapabildiğimize bakalım.
+
+167
+00:12:16,410 --> 00:12:22,080
+E-posta sütununa bir göz atalım ve burada temelde dizelerimiz
+
+168
+00:12:22,090 --> 00:12:24,130
+olduğunu fark edelim.
+
+169
+00:12:24,120 --> 00:12:26,110
+Ancak bilmeniz gereken, bu dizelerden birini alırsanız devam edelim ve
+
+170
+00:12:26,350 --> 00:12:28,240
+bir örnek alalım, bu örneği alt çizgi olarak adlandıracağız.
+
+171
+00:12:31,950 --> 00:12:34,060
+E-posta, bunun ilk örneğine eşittir.
+
+172
+00:12:34,090 --> 00:12:39,640
+Örneğe bir göz atarsam e-postada sadece bir dize var.
+
+173
+00:12:39,660 --> 00:12:42,150
+Devam edersem, ayırdığımı belirttiğimde bir listeye ayırdığımı ve
+
+174
+00:12:42,150 --> 00:12:46,600
+bu listedeki ikinci maddenin birincisi dizin Birinin alan adı Yahoo dot com olduğunu biliyorum.
+
+175
+00:12:46,600 --> 00:12:53,540
+Dolayısıyla, yapmak istediğim, e-posta sağlayıcısını veya ana bilgisayarı elinde
+
+176
+00:12:53,700 --> 00:13:01,330
+tutabilmek için lambda ifadesinde mantık türünü kullanmaktır ve bunu yapın.
+
+177
+00:13:01,380 --> 00:13:08,770
+Gidip e-com e-postasını söyleyeceğim ya da e-postayla aldığımız Lamda'yı
+
+178
+00:13:08,760 --> 00:13:14,700
+uygulayacağım ve sonra da bölünen bir e-posta yazacağız.
+
+179
+00:13:14,700 --> 00:13:18,080
+Sonra da bundan çekileceğim.
+
+180
+00:13:18,270 --> 00:13:30,090
+Dizin 1'deki değer.
+
+181
+00:13:30,100 --> 00:13:33,160
+Yani temelde bu mantığı burada kullanıyorum, ancak aslında kaç tane var sayabilmem
+
+182
+00:13:33,250 --> 00:13:35,720
+için değer altını çizdiğini söyleyeceğim bir lambda ifadesine koyuyorum.
+
+183
+00:13:35,760 --> 00:13:37,390
+Gidip sadece hash etiketi için bunu gösterelim.
+
+184
+00:13:37,380 --> 00:13:42,790
+Dolayısıyla bu, e-posta sağlayıcılarına kadar bu değerlerin hepsini döndürür.
+
+185
+00:13:42,780 --> 00:13:49,250
+Ve yapmak istediğim en popüler beş ilkeyi bulmak.
+
+186
+00:13:49,260 --> 00:13:53,710
+Unutmayın ki hesapları AD 5 ile birlikte değerlendirebiliriz.
+
+187
+00:13:54,100 --> 00:13:58,890
+Ve bu en popüler beş en popüler ürüne dönüşür.
+
+188
+00:13:58,890 --> 00:14:01,330
+Yani Hotmail Yahoo, Gmail Smith ve Wiliams com'u gösteriyor.
+
+189
+00:14:01,330 --> 00:14:05,910
+TAMAM.
+
+190
+00:14:06,140 --> 00:14:08,350
+Umarım, bu sizin için zordu.
+
+191
+00:14:08,350 --> 00:14:12,100
+Ve bunu daha da iyi esnettin.
+
+192
+00:14:12,470 --> 00:14:13,410
+Umarım ödemenizi kullanabilirdiniz ve beceriler aşina olmaya başlamıştı.
+
+193
+00:14:13,460 --> 00:14:17,210
+Ve daha da önemlisi sizin için neyin mevcut olduğunu ve pandaların
+
+194
+00:14:17,220 --> 00:14:20,180
+hızlı ve kolay bir şekilde cevaplanabilecekleri soruları görürsünüz.
+
+195
+00:14:20,200 --> 00:14:23,760
+Bu, resmi bir panderer uygulaması olarak ilk uygulamanızdır.
+
+196
+00:14:23,860 --> 00:14:28,110
+Zorlu olabilirdi ve gerçekten zor olabilirdi ama sadece yavaş yavaş çözümler uygulayın.
+
+197
+00:14:28,120 --> 00:14:30,030
+Adım adım bölebildiğinden ve çözümleri anlayabildiğinden emin olun.
+
+198
+00:14:30,080 --> 00:14:34,470
+Q &amp; A forumları ile ilgili sorularınızı iletmekten çekinmeyin ve bunlardan herhangi birinin mantığını
+
+199
+00:14:34,680 --> 00:14:39,100
+açıkladığı sürece size yardımcı olmaktan mutluluk duyuyorum, bunun en karmaşık kısımları uygulamayı kullanma yeteneğidir
+
+200
+00:14:39,310 --> 00:14:42,930
+ve sonra lambda ifadeleri gitmek ilerlemeli ve arazi ifadelerini Python'da inceleyin.
+
+201
+00:14:43,090 --> 00:14:48,060
+Eğer son ikisinin son derece zor olduğunu düşünüyorsan.
+
+202
+00:14:48,070 --> 00:14:55,080
+TAMAM.
+
+203
+00:14:55,120 --> 00:14:58,770
+Umarım bu egzersizden hoşlanırsın.
+
+204
+00:14:58,920 --> 00:15:02,370
+Sıradaki yeteneklerinizi daha da keskinleştirecek bir başka egzersiz çifti daha ortaya çıkıyor.
+
+205
+00:15:02,430 --> 00:15:03,240
+Herkese teşekkürler, bir sonraki derside görüşürüz.
+
+206
+00:15:03,370 --> 00:15:04,980
+&nbsp;
+
+207
+00:15:04,990 --> 00:15:10,380
+&nbsp;
+
+208
+00:15:10,380 --> 00:15:12,250
+&nbsp;

@@ -1,0 +1,183 @@
+1
+00:00:05,790 --> 00:00:06,690
+Salutare tuturor.
+
+2
+00:00:06,690 --> 00:00:09,990
+Bine ați venit la cursul de prezentare a exercițiilor PI.
+
+3
+00:00:10,020 --> 00:00:14,490
+În această scurtă prelegere vom trece rapid întrebările despre exerciții și cum să le abordăm.
+
+4
+00:00:15,030 --> 00:00:19,180
+Apoi, veți merge și veți efectua exercițiile, dacă veți putea să le rezolvați.
+
+5
+00:00:19,200 --> 00:00:21,810
+Și după aceea vom avea o prelegere asupra soluțiilor.
+
+6
+00:00:21,810 --> 00:00:25,720
+Să mergem mai departe și să mergem la notebook și să trecem rapid la întrebări.
+
+7
+00:00:25,950 --> 00:00:26,210
+In regula.
+
+8
+00:00:26,210 --> 00:00:30,510
+Aici suntem la notebook-ul exercițiilor PI, pe care o vei face și o vei face.
+
+9
+00:00:30,510 --> 00:00:36,720
+Doar răspundeți la întrebări sau urmați instrucțiunile cu caractere aldine și veți vedea că există într-adevăr matrice de ieșire pentru
+
+10
+00:00:36,780 --> 00:00:42,120
+dvs. sau răspunsuri de ieșire pentru dvs. care sunt răspunsurile pe care ar trebui să le primiți.
+
+11
+00:00:42,120 --> 00:00:47,940
+Rețineți că dacă rulați cu adevărat celula care are ieșirea directă de mai jos, veți
+
+12
+00:00:47,940 --> 00:00:48,840
+suprascrie outputul.
+
+13
+00:00:48,840 --> 00:00:53,800
+De exemplu, dacă spui să creezi o serie de 10 zerouri, sperăm că îți amintești de la prelegeri cum
+
+14
+00:00:53,820 --> 00:00:54,730
+să faci asta.
+
+15
+00:00:54,870 --> 00:01:01,160
+Dar dacă aveți cod aici, cum ar fi imprimarea salutului și executați acest cod, nu veți mai vedea această ieșire.
+
+16
+00:01:01,200 --> 00:01:04,680
+Așa că țineți cont de acest lucru, pe măsură ce treceți prin aceste exerciții.
+
+17
+00:01:04,700 --> 00:01:05,290
+In regula.
+
+18
+00:01:05,400 --> 00:01:11,760
+Deci, în principiu, vom începe să vă întrebăm cum să creați niște tablouri cu o serie de numere întregi,
+
+19
+00:01:11,850 --> 00:01:19,770
+o serie de matrici de identitate, trei cu trei Matrix etc. Unele matrice numere aleatoare și apoi vă voi cere să
+
+20
+00:01:19,770 --> 00:01:21,470
+creați această matrice următoare.
+
+21
+00:01:21,480 --> 00:01:27,620
+Așadar, rețineți că trebuie să introduceți aici celule pentru a nu șterge ieșirea.
+
+22
+00:01:27,660 --> 00:01:31,340
+Apoi vă voi cere să creați o serie de puncte de 20 linii aproape distanțate între 0 1.
+
+23
+00:01:31,350 --> 00:01:36,360
+Deci, mergeți mai departe și urmați instrucțiunile de aici și acordați o atenție deosebită pentru a nu înlocui ieșirea.
+
+24
+00:01:36,450 --> 00:01:42,600
+Dacă nu sunteți gata să îl suprascrieți, atunci vom vorbi despre indexarea și selecția pi unde vă
+
+25
+00:01:42,600 --> 00:01:44,520
+voi da câteva matrici.
+
+26
+00:01:44,610 --> 00:01:46,950
+În acest caz este doar o matrice.
+
+27
+00:01:46,950 --> 00:01:48,630
+Aceasta până la 25.
+
+28
+00:01:48,630 --> 00:01:50,600
+Aceasta este o matrice de cinci la cinci.
+
+29
+00:01:50,730 --> 00:01:56,540
+Și vă voi cere să luați bucăți din acea matrice și observați aici că v-am dat o celulă suplimentară, deoarece acestea
+
+30
+00:01:56,550 --> 00:01:59,040
+sunt puțin mai complicate și aveți nevoie de referință.
+
+31
+00:01:59,040 --> 00:02:05,040
+Deci, mergeți mai departe și scrieți codul dvs. aici și care reproduce ieșirea din celula de mai jos și aveți
+
+32
+00:02:05,070 --> 00:02:07,260
+grijă să nu scrieți codul aici.
+
+33
+00:02:07,260 --> 00:02:10,570
+În caz contrar, veți înlocui ieșirea pe care încercați să o replicați.
+
+34
+00:02:10,650 --> 00:02:15,040
+Și dacă greșești prima oară când nu-ți amintești de ce încerci să răspunzi.
+
+35
+00:02:15,120 --> 00:02:17,390
+Așa că din nou scrieți codul aici în aceste celule.
+
+36
+00:02:17,400 --> 00:02:20,100
+În acest fel, nu înlocuiți chiar ieșirea.
+
+37
+00:02:20,220 --> 00:02:20,660
+O.K.
+
+38
+00:02:20,760 --> 00:02:25,500
+Și apoi, prin aceste exerciții, veți încerca să luați bucățile prezentate aici ca răspunsuri.
+
+39
+00:02:26,190 --> 00:02:32,180
+Apoi, în aceași matrice sau aceeași referință aceeași matrice veți obține suma tuturor valorilor obțineți abaterea standard a
+
+40
+00:02:32,190 --> 00:02:36,720
+tuturor valorilor și apoi obțineți suma sumară a tuturor coloanelor din matricea respectivă.
+
+41
+00:02:37,380 --> 00:02:37,970
+In regula.
+
+42
+00:02:38,070 --> 00:02:38,880
+Asta e.
+
+43
+00:02:38,880 --> 00:02:39,690
+Mult noroc.
+
+44
+00:02:39,780 --> 00:02:40,770
+Și vine în continuare.
+
+45
+00:02:40,770 --> 00:02:43,700
+Sunt aceste soluții la aceste exerciții de mâncare prost.
+
+46
+00:02:43,710 --> 00:02:45,600
+Mulțumesc tuturor și o să văd la următoarea conferință

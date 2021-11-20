@@ -1,0 +1,131 @@
+1
+00:00:05,010 --> 00:00:09,930
+Hello everyone and welcome to the data capstone project overview lecture and this lecture we're going
+
+2
+00:00:09,930 --> 00:00:14,300
+to be going over the new book Thirty nine on one called the capstone project.
+
+3
+00:00:14,310 --> 00:00:17,580
+Let's go ahead and jump to the Jupiter notebook to get started.
+
+4
+00:00:17,580 --> 00:00:22,920
+All right so here I am at the notebook this notebook is located under the Data capstone projects folder
+
+5
+00:00:22,920 --> 00:00:23,400
+.
+
+6
+00:00:23,400 --> 00:00:28,840
+And for this capstone project we're going to be analyzing some 911 call data from Kaggle dot com.
+
+7
+00:00:29,000 --> 00:00:32,600
+And if you go in and click on this link it will take you to the source of that data set right here.
+
+8
+00:00:32,600 --> 00:00:37,190
+Kaggle it's actually already downloaded as a CAC file for you so having to download anything.
+
+9
+00:00:37,360 --> 00:00:42,780
+But just as a quick overview background of where this data comes from comes from Kaggle dot com and
+
+10
+00:00:42,780 --> 00:00:47,460
+Kaggle if you click here on datasets takes you to this link and it's basically a place where you can
+
+11
+00:00:47,460 --> 00:00:48,570
+post data sets.
+
+12
+00:00:48,570 --> 00:00:53,010
+There's also a machine learning competition aspect to this Web site which we'll touch upon when we talk
+
+13
+00:00:53,010 --> 00:00:55,420
+about the machine learning section of this course.
+
+14
+00:00:55,530 --> 00:01:00,050
+But for now you can think of it as just a place where people can post data sets.
+
+15
+00:01:00,060 --> 00:01:07,170
+All right so these 911 calls come from Montgomery County in Pennsylvania and they contain the following
+
+16
+00:01:07,170 --> 00:01:13,380
+fields latitude longitude of where the call took place a description of the emergency call the Zip Code
+
+17
+00:01:13,560 --> 00:01:15,210
+Title a time stamp.
+
+18
+00:01:15,210 --> 00:01:18,510
+But notice it's a string not an actual date time object.
+
+19
+00:01:18,540 --> 00:01:22,920
+And then a township has a string and an address string and then that very last column E.
+
+20
+00:01:23,010 --> 00:01:25,080
+It's just a dummy variable it's always one.
+
+21
+00:01:25,140 --> 00:01:29,850
+So you can pretty much ignore that column completely and then you're going to go along with this notebook
+
+22
+00:01:29,880 --> 00:01:33,910
+and try to complete the instructions as best you can and you can always post-acute.
+
+23
+00:01:33,930 --> 00:01:38,520
+If you get stuck or you can actually just reference a solution note book or a video lecture which comes
+
+24
+00:01:38,520 --> 00:01:44,400
+up next you'll just go along import that data get everything set up explore the data a little bit through
+
+25
+00:01:44,400 --> 00:01:50,280
+some questions create new features from the data do a little bit of visualizations of bar plots do some
+
+26
+00:01:50,340 --> 00:01:54,820
+linear visualizations and then you'll actually also create some heat maps.
+
+27
+00:01:54,840 --> 00:01:55,620
+All right.
+
+28
+00:01:55,620 --> 00:01:57,240
+That's it for this lecture.
+
+29
+00:01:57,240 --> 00:01:58,980
+Best of luck on the capstone project.
+
+30
+00:01:58,980 --> 00:01:59,820
+I hope you enjoy it.
+
+31
+00:01:59,820 --> 00:02:00,880
+It's quite interesting.
+
+32
+00:02:01,020 --> 00:02:04,740
+And I will see you at the next lecture where we go through the solutions step by step.
+
+33
+00:02:04,740 --> 00:02:06,620
+Thanks everyone and I'll see you at the next lecture

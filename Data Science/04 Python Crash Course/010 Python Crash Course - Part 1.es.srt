@@ -1,0 +1,1031 @@
+1
+00:00:05,130 --> 00:00:10,470
+Hola a todos y bienvenidos al curso acelerado de Python, Parte 1 y Parte 1, vamos a seguir
+
+2
+00:00:10,470 --> 00:00:14,270
+adelante y comenzar nuestra discusión de Python revisando los tipos de datos básicos.
+
+3
+00:00:14,280 --> 00:00:17,730
+Déjame seguir y mostrarte dónde puedes encontrar que has estado en cuadernos para esta serie de conferencias.
+
+4
+00:00:18,720 --> 00:00:22,010
+Ok aquí estoy en el repositorio descargado y descomprimido.
+
+5
+00:00:22,200 --> 00:00:28,190
+Si sigue adelante y va a la carpeta del curso intensivo de Python, verá tres cuadernos aquí son archivos inby
+
+6
+00:00:28,220 --> 00:00:28,820
+de IPY.
+
+7
+00:00:28,830 --> 00:00:31,940
+Vamos a trabajar con el cuaderno del curso intensivo de python.
+
+8
+00:00:31,940 --> 00:00:36,990
+una computadora portátil que se ve más o menos así y todos los tipos de datos van a estar pasando por alto.
+
+9
+00:00:36,990 --> 00:00:38,720
+Y si hace clic en eso, debería ver
+
+10
+00:00:38,790 --> 00:00:43,830
+Empezaremos revisando los números de las listas de impresión de listas de diccionarios, tuplas y conjuntos de booleanos.
+
+11
+00:00:44,130 --> 00:00:45,680
+Veremos qué tan avanzado estamos.
+
+12
+00:00:45,750 --> 00:00:48,200
+Y más adelante cubriremos algunas características más avanzadas.
+
+13
+00:00:48,300 --> 00:00:54,910
+Voy a seguir adelante y comenzar un nuevo cuaderno aquí y configurarlo listo para funcionar.
+
+14
+00:00:55,110 --> 00:01:00,030
+Voy a seguir adelante y lo que hay en el tirón de la vista con la barra de la cabeza y alternar la barra de herramientas solo para obtener
+
+15
+00:01:00,030 --> 00:01:00,970
+un poco más de espacio aquí.
+
+16
+00:01:01,140 --> 00:01:06,450
+lo que voy a hacer es escribir a través de todos los ejemplos aquí y explicar el código a medida que avanzamos.
+
+17
+00:01:06,480 --> 00:01:07,330
+Y de nuevo, todo
+
+18
+00:01:07,340 --> 00:01:12,220
+Entonces, si alguna vez necesita una referencia, puede copiarla y pegarla desde este cuaderno de conferencias.
+
+19
+00:01:12,720 --> 00:01:12,990
+Todo bien.
+
+20
+00:01:13,020 --> 00:01:20,280
+Avancemos y comencemos con los números básicos y la aritmética. Creo que tiene dos tipos básicos de números.
+
+21
+00:01:20,580 --> 00:01:23,350
+Existe el número entero que es algo así como 1.
+
+22
+00:01:23,640 --> 00:01:27,540
+Y luego está el número de punto flotante que es algo así como el punto cero.
+
+23
+00:01:27,540 --> 00:01:32,880
+Por lo tanto, un número de coma flotante tiene un decimal adjunto y con cualquiera de estos números puede
+
+24
+00:01:32,880 --> 00:01:34,830
+realizar aritmética básica como era de esperar.
+
+25
+00:01:34,840 --> 00:01:37,260
+Entonces, además, es solo un signo más.
+
+26
+00:01:37,260 --> 00:01:43,740
+Uno más uno y solo estoy haciendo un turno, ingresa aquí, se ejecutan las celdas para que la multiplicación sea solo un asterisco,
+
+27
+00:01:43,740 --> 00:01:45,400
+por lo que 1 por 3.
+
+28
+00:01:45,480 --> 00:01:46,950
+Solo un asterix como ese.
+
+29
+00:01:46,950 --> 00:01:52,340
+La visión va a ser una barra inclinada dividida entre dos es 0. 5.
+
+30
+00:01:52,350 --> 00:01:54,370
+Y tenga en cuenta que incluso pongo en enteros.
+
+31
+00:01:54,540 --> 00:02:00,300
+Obtengo un punto flotante si eres un usuario de Python 2, tendrás que asegurarte de que uno de estos sea
+
+32
+00:02:00,690 --> 00:02:03,090
+un número flotante para obtener el mismo resultado.
+
+33
+00:02:03,090 --> 00:02:08,480
+Yo solo para exponentes, por ejemplo, para el poder de cuatro.
+
+34
+00:02:08,550 --> 00:02:10,450
+Solo dos Asterix juntos.
+
+35
+00:02:10,470 --> 00:02:13,050
+Entonces dos a la potencia de cuatro es 16.
+
+36
+00:02:13,050 --> 00:02:20,430
+Eso es dos veces dos veces dos veces más que saber que Python seguirá un orden de
+
+37
+00:02:20,430 --> 00:02:22,470
+operaciones como era de esperar.
+
+38
+00:02:22,500 --> 00:02:26,520
+Y puede usar paréntesis para aclarar el orden de las operaciones.
+
+39
+00:02:26,670 --> 00:02:36,900
+Por ejemplo, si continúo y escribo dos más tres veces, cinco más cinco órdenes matemáticos de operaciones realmente declararían que
+
+40
+00:02:36,900 --> 00:02:41,030
+la multiplicación ocurre primero y luego la suma.
+
+41
+00:02:41,040 --> 00:02:45,120
+Entonces, si ejecuto esto obtendré 15 más dos más cinco.
+
+42
+00:02:45,240 --> 00:02:47,430
+Entonces 15 más siete es 22.
+
+43
+00:02:47,490 --> 00:02:52,890
+Si realmente quiere decir algo así como dos más tres veces el resultado
+
+44
+00:02:52,890 --> 00:03:00,300
+de cinco más cinco, puede usar paréntesis para aclarar su orden, de modo que pueda usar paréntesis de
+
+45
+00:03:00,300 --> 00:03:04,850
+esta manera para decir cinco veces 10 que le darán 50.
+
+46
+00:03:04,890 --> 00:03:08,570
+La última operación aritmética que quiero mostrarte es la función del modelo.
+
+47
+00:03:08,820 --> 00:03:13,990
+Entonces, la función o módulo de Ma'at, como también se lo conoce, es el signo de porcentaje en Python.
+
+48
+00:03:14,610 --> 00:03:18,660
+Y básicamente devolverá lo que queda después de la división.
+
+49
+00:03:18,780 --> 00:03:22,010
+Entonces para dividir por dos hay dos restantes.
+
+50
+00:03:22,010 --> 00:03:23,210
+Cero.
+
+51
+00:03:23,250 --> 00:03:33,030
+Entonces cuando corras para Maade dos obtendrás cero ya que la salida cinco dividida por dos es para seguir siendo una,
+
+52
+00:03:33,390 --> 00:03:36,400
+ya que cuatro más uno son cinco.
+
+53
+00:03:36,500 --> 00:03:38,510
+Y así obtendrás el resto 1.
+
+54
+00:03:38,550 --> 00:03:47,480
+Y esta es una buena forma de verificar si los números son iguales para que sepa que si, por ejemplo, un mod 2 devuelve 0,
+
+55
+00:03:47,500 --> 00:03:49,510
+8 no es un número par.
+
+56
+00:03:49,530 --> 00:03:54,630
+Porque dos se distribuyen de manera pareja a ese número y tiene el resto cero.
+
+57
+00:03:54,930 --> 00:03:58,910
+Ahora hablemos rápidamente sobre las asignaciones de variables.
+
+58
+00:03:59,160 --> 00:04:04,680
+Muchas veces desea elegir nombres variables para asignar algún objeto o tipo de datos a un nombre
+
+59
+00:04:04,680 --> 00:04:05,270
+de variable.
+
+60
+00:04:05,400 --> 00:04:08,150
+En Python, el operador de asignación es solo un signo igual.
+
+61
+00:04:08,400 --> 00:04:11,790
+Así que elegirás el nombre de tu variable simplemente comenzando a escribir cosas.
+
+62
+00:04:11,790 --> 00:04:17,160
+Como V-A dicen que todos son iguales y luego cualquier tipo de objeto que quieras poner ahí.
+
+63
+00:04:17,160 --> 00:04:23,880
+Entonces, por ejemplo, podemos poner dos y cada vez que llamo a ese nombre de variable V
+
+64
+00:04:23,880 --> 00:04:25,380
+A R obtendré dos.
+
+65
+00:04:25,380 --> 00:04:31,550
+Entonces, por ejemplo, puedo decir que x es igual a 2 y es igual a tres.
+
+66
+00:04:31,740 --> 00:04:36,530
+Y ahora puedo decir X más Y y salir 5.
+
+67
+00:04:36,630 --> 00:04:41,730
+También puedo reasignar X definiéndolo solo.
+
+68
+00:04:41,760 --> 00:04:48,030
+Así que puedo decir que x es igual a x más X, de modo que terminará siendo x resultante igual a 4.
+
+69
+00:04:48,060 --> 00:04:53,280
+Y ahora cada vez que llamo a X de nuevo va a ser igual a 4, lo que significa que si tuviera que
+
+70
+00:04:53,760 --> 00:04:57,560
+volver a ejecutar esa celda, la X equivale a x más X cada vez que la ejecuto.
+
+71
+00:04:57,630 --> 00:05:04,080
+Así que esencialmente va a duplicar el valor de x y va a reasignar X ya que es todo el valor doble.
+
+72
+00:05:04,530 --> 00:05:05,070
+Todo bien.
+
+73
+00:05:05,280 --> 00:05:07,560
+Un par de reglas sobre la creación de estos nombres de variables.
+
+74
+00:05:07,560 --> 00:05:14,270
+No deberían comenzar con números, así que no puedes decir que algo como 12 V-A son igual a 12.
+
+75
+00:05:14,400 --> 00:05:19,890
+De lo contrario, obtendrá un error de sintaxis en o'War sabía que su sintaxis no válida Alexiou le da el error.
+
+76
+00:05:20,130 --> 00:05:26,160
+Entonces no puedes comenzar con números y tampoco puedes comenzar con símbolos especiales
+
+77
+00:05:26,160 --> 00:05:35,110
+para que no puedas decir algo como Dollar Sign, comenzarás a tener problemas aquí, así obtendrás errores de sintaxis.
+
+78
+00:05:35,100 --> 00:05:40,190
+Deben comenzar con una letra minúscula si desea encadenar varias palabras.
+
+79
+00:05:40,290 --> 00:05:45,960
+Debería usar un guión bajo para separarlos, así que nombre guión bajo o guión bajo a.
+
+80
+00:05:45,990 --> 00:05:50,950
+En otros idiomas, ¿cómo se usa un período para separar esto para Python?
+
+81
+00:05:50,970 --> 00:05:54,180
+La sintaxis correcta es usar un guion bajo.
+
+82
+00:05:54,180 --> 00:05:57,110
+Ahora sigamos y hablemos de cadenas.
+
+83
+00:05:57,530 --> 00:06:03,570
+Así que voy a hacer un comentario al poner una etiqueta hash en cadenas y cualquier cosa de una etiqueta hash delante
+
+84
+00:06:03,570 --> 00:06:03,990
+de ella.
+
+85
+00:06:03,990 --> 00:06:09,330
+Notarás que el color es diferente y verás porque es un comentario, por lo que no se ejecutará.
+
+86
+00:06:09,320 --> 00:06:10,720
+Entonces puedes escribir lo que sea aquí.
+
+87
+00:06:10,740 --> 00:06:12,060
+No se ejecutará.
+
+88
+00:06:12,060 --> 00:06:17,250
+las cadenas y voy a continuar y acercarme un poco para tener una mejor visión de esto.
+
+89
+00:06:17,250 --> 00:06:19,590
+De acuerdo, sigamos adelante para pasar a
+
+90
+00:06:20,310 --> 00:06:23,460
+Y para cadenas hay dos formas de crear una cadena.
+
+91
+00:06:23,700 --> 00:06:30,930
+Puede usar comillas simples y observar cómo ha cambiado el color en Kading que se trata de una cadena
+
+92
+00:06:30,930 --> 00:06:35,190
+o puede usar comillas dobles para que esta sea una cadena.
+
+93
+00:06:35,940 --> 00:06:41,670
+Y luego también puede ajustar comillas dobles entre comillas simples, así que
+
+94
+00:06:41,670 --> 00:06:47,470
+digamos que tiene una oración que dice algo como esto, como puedo ir.
+
+95
+00:06:47,610 --> 00:06:54,150
+Entonces, si tiene esta cita única pero desea mantenerla dentro, puede ajustar esto con comillas dobles y
+
+96
+00:06:54,150 --> 00:06:58,690
+notará que esa comilla simple queda retenida dentro de la cadena.
+
+97
+00:06:58,710 --> 00:07:03,390
+Por lo tanto, si alguna vez tiene que lidiar con una comilla simple o una comilla
+
+98
+00:07:03,390 --> 00:07:09,000
+doble dentro de una cadena, siempre puede envolverla en otra serie de comillas dobles o simples: la pendiente y
+
+99
+00:07:09,000 --> 00:07:10,420
+la que está adentro.
+
+100
+00:07:10,810 --> 00:07:15,330
+OK, sigamos adelante y hablemos sobre las cadenas de impresión.
+
+101
+00:07:15,330 --> 00:07:22,740
+Voy a hacer una variable llamada X en una señal de que la cadena de hola para el cuaderno
+
+102
+00:07:22,740 --> 00:07:28,950
+de Júpiter si solo escribo X se mostrará sin y luego mostraré las comillas Hola aquí.
+
+103
+00:07:28,950 --> 00:07:32,880
+Y esto es esencialmente lo mismo que si escribieras esto directamente en la consola
+
+104
+00:07:33,150 --> 00:07:35,290
+en Python simplemente escribiendo la variable x.
+
+105
+00:07:35,420 --> 00:07:42,510
+Voy a poner la cadena de hola o Python Sin embargo, si desea imprimir las salidas de X, tendrá que
+
+106
+00:07:42,510 --> 00:07:48,030
+pasarlo a la función de impresión que se imprimirá entre paréntesis y luego x dentro
+
+107
+00:07:48,030 --> 00:07:48,980
+de esos paréntesis.
+
+108
+00:07:49,200 --> 00:07:49,590
+Y nota.
+
+109
+00:07:49,590 --> 00:07:50,540
+Ahora la diferencia aquí.
+
+110
+00:07:50,580 --> 00:07:55,410
+Ya no tengo ese indicador de salida y ya no tengo las comillas simples.
+
+111
+00:07:55,500 --> 00:08:00,840
+Así que esta es la forma en que debes mostrar oficialmente las cosas cuando tratas de mostrar el resultado en Python,
+
+112
+00:08:00,870 --> 00:08:02,340
+que es la declaración de impresión.
+
+113
+00:08:02,340 --> 00:08:06,370
+Ahora déjame seguir y mostrarte cómo puedes formatear tus declaraciones de impresión.
+
+114
+00:08:06,390 --> 00:08:15,180
+Digamos que tengo un nombre de variable igual a 12 y un nombre igual a Sam.
+
+115
+00:08:15,180 --> 00:08:18,990
+Ahora quiero imprimir cosas basadas en esas variables.
+
+116
+00:08:19,260 --> 00:08:21,790
+Puedo hacer eso con el formato de impresión.
+
+117
+00:08:22,230 --> 00:08:32,800
+Voy a tomar una cadena y decir que Mi número es y voy a pasar un bloque de comillas o llaves aquí.
+
+118
+00:08:33,400 --> 00:08:39,770
+Y mi nombre es y voy a pasar otra serie de llaves.
+
+119
+00:08:40,020 --> 00:08:46,320
+coloreado aquí para indicar que este es un método especial fuera de la cadena y luego puede continuar y hacer
+
+120
+00:08:46,320 --> 00:08:52,290
+es pasar los nombres de las variables en el orden en que desea que se llenen en estos llaves.
+
+121
+00:08:52,500 --> 00:08:56,380
+Y luego en los formatos de puntos erróneos y observe cómo está
+
+122
+00:08:56,430 --> 00:09:03,810
+Entonces, si acabo de tipear esto y ejecutar esto, lo que Python hace es que dice que tiene llaves aquí en su
+
+123
+00:09:03,900 --> 00:09:08,480
+cadena y que tiene ese formato y los pondrá en el orden que desee.
+
+124
+00:09:08,550 --> 00:09:14,440
+Así que diré que se reemplaza el "adormecimiento correcto" aquí para estos corchetes y el nombre se reemplaza aquí.
+
+125
+00:09:14,460 --> 00:09:15,790
+Para estas llaves.
+
+126
+00:09:15,930 --> 00:09:21,480
+Y esa es una forma conveniente de usar los nombres de las variables en sus instrucciones de impresión en
+
+127
+00:09:21,480 --> 00:09:24,610
+lugar de tener que escribir 12 o Sam todo el tiempo.
+
+128
+00:09:24,930 --> 00:09:27,400
+Y tenga en cuenta que en realidad no estoy imprimiendo esto todavía.
+
+129
+00:09:27,480 --> 00:09:31,320
+Tendré que envolver todo esto en las declaraciones impresas.
+
+130
+00:09:31,320 --> 00:09:35,760
+Así que asegúrate de que tus príncipes estén balanceados y puedes ver simplemente seleccionando uno de los
+
+131
+00:09:35,760 --> 00:09:37,540
+príncipes de impresión para resaltar en verde.
+
+132
+00:09:37,600 --> 00:09:43,860
+Ahora bien, si estuviese en esto, esto realmente se ha impreso y ya no tengo esa opción
+
+133
+00:09:43,860 --> 00:09:52,050
+de vender de la otra manera, puede usar el formato impreso para decir que si continuamos y cambiamos esto, puede pasar cualquier
+
+134
+00:09:52,350 --> 00:09:54,010
+variable entre las llaves.
+
+135
+00:09:54,420 --> 00:10:00,980
+Entonces puedo decir una dentro de las llaves y dos dentro de las llaves.
+
+136
+00:10:01,170 --> 00:10:08,070
+una declaración de formato de documento que digamos que una es igual a, y luego, la variable a la que quiero que una sea igual.
+
+137
+00:10:08,250 --> 00:10:11,380
+Y ahora que he aprobado estos nombres, puedo seguir adelante con
+
+138
+00:10:11,430 --> 00:10:17,910
+En este caso, quiero que sea igual a ese entumecido y luego dos quiero que sea igual al nombre.
+
+139
+00:10:18,000 --> 00:10:20,850
+Y si ejecuto esto obtendré exactamente el mismo resultado.
+
+140
+00:10:20,850 --> 00:10:26,580
+Lo bueno de esto es que ya no tiene que preocuparse de que el formato esté exactamente
+
+141
+00:10:26,790 --> 00:10:34,440
+en el mismo orden que desea para los corchetes y puede poner continuamente más corchetes para más y luego puede escribir uno
+
+142
+00:10:34,440 --> 00:10:41,420
+aquí nuevamente y notó que Python ahora puede buscar y poner sus variables en más de una vez, por lo
+
+143
+00:10:41,420 --> 00:10:47,280
+que aquí se ve el nombre de la variable, luego va a su formato y se comprueba.
+
+144
+00:10:47,300 --> 00:10:49,190
+OK, ¿cuál es el nombre de la variable allí?
+
+145
+00:10:49,190 --> 00:10:52,970
+Entonces, por ejemplo, 2 se ve aquí dice que 2 es igual a nombre.
+
+146
+00:10:53,000 --> 00:10:53,230
+Todo bien.
+
+147
+00:10:53,240 --> 00:10:57,880
+Y luego un nombre de relleno aquí y luego sabemos que ese nombre es igual a la cadena Sam.
+
+148
+00:10:57,890 --> 00:11:00,640
+Entonces continúa y lo pone allí.
+
+149
+00:11:00,650 --> 00:11:03,080
+De acuerdo, adelante y no dude en publicar cualquier pregunta.
+
+150
+00:11:03,080 --> 00:11:07,670
+El foro de preguntas y respuestas si está confundido con el formato de esta impresión, pero es básicamente sencillo.
+
+151
+00:11:07,790 --> 00:11:10,440
+Solo ponga su cuerda en sus llaves.
+
+152
+00:11:10,560 --> 00:11:15,020
+no tiene que preocuparse por desordenar el orden dentro de esta llamada de formato.
+
+153
+00:11:15,020 --> 00:11:19,430
+Entonces, le sugiero que use este método para pasar los nombres de las variables porque
+
+154
+00:11:19,430 --> 00:11:21,750
+es un poco más claro cuando retrocede y
+
+155
+00:11:21,770 --> 00:11:27,080
+Ahora continuemos y expandamos nuestro tema de cadenas en cadenas de indexación.
+
+156
+00:11:27,230 --> 00:11:33,780
+Si tengo una cadena llamada S, diré que x es igual a hola.
+
+157
+00:11:34,230 --> 00:11:37,140
+S aquí es solo una secuencia de elementos.
+
+158
+00:11:37,140 --> 00:11:44,990
+Y en este caso, cada elemento es una letra y puedo tomar elementos específicos de esa secuencia de
+
+159
+00:11:46,010 --> 00:11:49,730
+caracteres usando esta notación de corchetes cuadrados e indicándola.
+
+160
+00:11:49,730 --> 00:11:51,400
+Pythoness comienza en cero.
+
+161
+00:11:51,440 --> 00:11:59,210
+Y esto es algo que debo saber si digo X corchetes en cero y ejecuto esto o si vuelvo a los
+
+162
+00:11:59,300 --> 00:12:00,180
+elementos cero.
+
+163
+00:12:00,470 --> 00:12:07,570
+Entonces, aquí vemos que es agarrar Hello checks ya que hay elementos y luego devuelve 0.
+
+164
+00:12:07,700 --> 00:12:12,140
+Adelante, mira si puedes conseguir la última o allí en Hilo.
+
+165
+00:12:12,380 --> 00:12:20,830
+Bueno, ¿qué harías? Dirías bien qué índice de espaciador es que está en 0 1 2 3 4.
+
+166
+00:12:21,710 --> 00:12:27,370
+Colocas cuatro en estos corchetes y tomas eso.
+
+167
+00:12:27,380 --> 00:12:33,050
+La otra cosa a tener en cuenta es que también puede usar lo que se conoce como notación de división para
+
+168
+00:12:33,110 --> 00:12:34,600
+tomar rebanadas de la cadena.
+
+169
+00:12:34,760 --> 00:12:38,980
+Voy a seguir adelante y escribir en lugar de estético para hola.
+
+170
+00:12:39,020 --> 00:12:44,410
+Diré un b c d e f g h i j k.
+
+171
+00:12:45,020 --> 00:12:50,300
+Voy a ejecutar eso y ahora lo que voy a seguir adelante y ver si escribo s de 0.
+
+172
+00:12:50,330 --> 00:12:53,000
+Justo aquí en este paréntesis, debería recuperarme.
+
+173
+00:12:53,300 --> 00:12:54,600
+OK, eso tiene sentido.
+
+174
+00:12:54,770 --> 00:13:00,470
+Digamos que quería tomar todo como a y más allá.
+
+175
+00:13:00,770 --> 00:13:05,380
+Bueno, puedo usar la notación de dos puntos, que también se conoce como sintaxis de corte para hacer esto.
+
+176
+00:13:05,430 --> 00:13:09,810
+Diré s de 0 como en dos puntos.
+
+177
+00:13:09,920 --> 00:13:15,360
+Ejecutar esto y este colon básicamente dice OK a partir de cero.
+
+178
+00:13:15,530 --> 00:13:22,200
+Agarra todo más allá y esta notación funciona al revés.
+
+179
+00:13:22,400 --> 00:13:27,770
+Puedo decir agarrar todo con el colon hasta cierto índice.
+
+180
+00:13:27,770 --> 00:13:31,210
+Entonces digamos que digo a b c d.
+
+181
+00:13:31,370 --> 00:13:35,660
+Entonces D es el índice 3 0 1 2 3.
+
+182
+00:13:35,780 --> 00:13:43,250
+Si paso tres aquí, esto básicamente le ordena a Python que diga OK, agarre todo pero
+
+183
+00:13:43,250 --> 00:13:45,370
+no incluya el índice 3.
+
+184
+00:13:45,380 --> 00:13:49,500
+Esto a veces resulta confuso para los principiantes porque esperan que aparezca d.
+
+185
+00:13:49,520 --> 00:13:54,860
+Bueno, porque es la posición de índice 3, pero como la indexación comienza en cero,
+
+186
+00:13:54,860 --> 00:14:01,710
+debería pensar en este comando como tomar todo hasta y sin incluir el índice de elemento de carácter tres.
+
+187
+00:14:01,880 --> 00:14:05,900
+Y vamos a mostrarte más sobre cómo cortar la notación cuando hablamos de
+
+188
+00:14:05,900 --> 00:14:08,340
+listas porque es el mismo tipo de idea.
+
+189
+00:14:08,420 --> 00:14:14,630
+Y finalmente, combinamos estas dos ideas aquí en cuanto a comenzar y agarrar todo
+
+190
+00:14:14,930 --> 00:14:23,700
+más allá o agarrar todo hasta, pero sin incluir un cierto punto de índice, diciendo que s comienza en cero.
+
+191
+00:14:24,190 --> 00:14:29,150
+Colin toma todo hasta cierto índice como tres.
+
+192
+00:14:29,240 --> 00:14:31,380
+Ahora que devuelve el mismo resultado que ABC.
+
+193
+00:14:31,400 --> 00:14:37,090
+Pero lo que puedo hacer es reemplazar estos dos números para establecer mi punto de inicio y mi punto final.
+
+194
+00:14:37,130 --> 00:14:43,440
+Avancemos y atrapemos D E F para que comience en el índice 3.
+
+195
+00:14:43,910 --> 00:14:50,090
+Es decir, si continúo y reemplazo esto, voy a comenzar en el índice 3 0 1 2 3 y luego
+
+196
+00:14:50,090 --> 00:14:52,220
+voy a ir hasta e incluyendo G.
+
+197
+00:14:52,250 --> 00:15:00,030
+Así que eso es 0 1 2 3 4 5 6 7 para decir 3 colon 6.
+
+198
+00:15:00,290 --> 00:15:02,840
+Ejecuta eso y obtengo d e f.
+
+199
+00:15:02,870 --> 00:15:06,580
+Una vez más, es solo el índice que comienza en que está incluido el colon.
+
+200
+00:15:06,590 --> 00:15:12,170
+el camino y luego su último índice es el índice que no incluye porque la indexación comienza en cero.
+
+201
+00:15:12,200 --> 00:15:13,670
+Lo que significa tomar todo
+
+202
+00:15:13,760 --> 00:15:17,180
+Entonces g no está incluido ni siquiera en el índice 6.
+
+203
+00:15:17,450 --> 00:15:26,840
+Bien, de nuevo, reiteramos esta idea cuando hablamos de esto, lo que está por venir ahora, las listas son una
+
+204
+00:15:26,900 --> 00:15:32,560
+secuencia de elementos en un conjunto cuadrado de corchetes separados por comas.
+
+205
+00:15:32,570 --> 00:15:39,270
+Entonces, aquí tienes una lista que dos tres tres pueden tomar, básicamente, cualquier tipo de datos.
+
+206
+00:15:39,710 --> 00:15:45,130
+Entonces también puedo tener una lista de cadenas a b c y no hay quejas aquí.
+
+207
+00:15:45,260 --> 00:15:58,460
+Voy a seguir adelante y crear una variable llamada lista y establecerla como una ejecución de b c, y si deseo agregar un elemento al
+
+208
+00:15:58,460 --> 00:16:03,020
+final de mi lista, utilizo el método de agregar.
+
+209
+00:16:03,080 --> 00:16:06,950
+Yo digo que mi lista de guiones bajos se agrega.
+
+210
+00:16:07,310 --> 00:16:09,630
+Y luego digamos que quiero agregar la letra D.
+
+211
+00:16:09,950 --> 00:16:13,350
+Solo corro eso y si reviso mi lista ahora.
+
+212
+00:16:14,300 --> 00:16:16,490
+Ahora, ¿qué ha agregado ese valor?
+
+213
+00:16:16,490 --> 00:16:22,160
+D Y la lista también es una secuencia como una cadena.
+
+214
+00:16:22,220 --> 00:16:27,350
+Es decir, si quiero tomar el primer elemento de la lista, puedo usar la misma notación brechen
+
+215
+00:16:27,350 --> 00:16:34,940
+que hice para un pase de cuerda en el índice. Ejecutaré esto en Watz y devolveré el ítem en el índice para que 0 1
+
+216
+00:16:34,940 --> 00:16:38,230
+vaya a cada punto índice. no está separado por una coma
+
+217
+00:16:38,450 --> 00:16:44,300
+Por ejemplo, si quería tomar un b y c, puedo usar la misma notación de división que acabamos de leer.
+
+218
+00:16:44,540 --> 00:16:51,730
+Quiero comenzar en el índice 1 y subir hasta el índice 3 pero sin incluirlo.
+
+219
+00:16:51,740 --> 00:16:57,290
+Entonces diré que uno de dos puntos no devuelve B y C.
+
+220
+00:16:57,740 --> 00:17:02,550
+También puedo reasignar posiciones usando esta notación de índice.
+
+221
+00:17:02,660 --> 00:17:08,360
+Entonces, si quería que el primer elemento fuera algo diferente, simplemente digo que mi guión bajo
+
+222
+00:17:08,360 --> 00:17:13,380
+pasand cero a esos corchetes y luego paso el elemento que quiero, por ejemplo.
+
+223
+00:17:13,520 --> 00:17:16,390
+Quiero que ese elemento sea nuevo ahora.
+
+224
+00:17:16,390 --> 00:17:20,340
+Entonces, si agarro mi lista, veo nuevos B C D.
+
+225
+00:17:20,870 --> 00:17:28,550
+Algo que hay que notar aquí es que puedes anidar una dentro de la otra para poder decir
+
+226
+00:17:28,560 --> 00:17:34,750
+una coma por comas y luego poner otra en la lista de 3 para.
+
+227
+00:17:34,790 --> 00:17:39,440
+Entonces, si echo un vistazo a la lista, es una lista dentro de una lista.
+
+228
+00:17:39,440 --> 00:17:44,400
+Entonces, de hecho, digamos que quería tomar esto como un elemento único.
+
+229
+00:17:44,570 --> 00:17:48,770
+Bueno, eso es una lista del índice 0 1 2.
+
+230
+00:17:48,830 --> 00:17:52,650
+Así que paso a aquí y esto vuelve en otras listas.
+
+231
+00:17:52,850 --> 00:17:59,270
+Así que digamos que quiero un gráfico para bien que ahora es el índice 0 1, lo que significa que puedo
+
+232
+00:17:59,840 --> 00:18:03,680
+virar en otro conjunto de corchetes 1 y obtener los elementos reales para.
+
+233
+00:18:03,710 --> 00:18:08,970
+Déjame entrar y mostrarte un ejemplo más de cómo agarrar cosas de las listas anidadas.
+
+234
+00:18:08,990 --> 00:18:12,530
+No haces esto a menudo con no menos listas o muy profundo.
+
+235
+00:18:12,530 --> 00:18:20,570
+Pero solo quiero que tengas la idea de usar múltiples corchetes así que digamos que tengo una lista anidada
+
+236
+00:18:20,570 --> 00:18:22,070
+que se ve así.
+
+237
+00:18:22,070 --> 00:18:23,590
+Uno dos tres.
+
+238
+00:18:23,600 --> 00:18:26,670
+Otra lista de cuatro o cinco listas de destino.
+
+239
+00:18:27,020 --> 00:18:34,220
+Bueno, puedo tomar el tercer o cuarto elemento para indexar tres en mi lista de nidos.
+
+240
+00:18:34,220 --> 00:18:35,430
+Eso se ve así
+
+241
+00:18:35,480 --> 00:18:41,280
+Luego puedo configurar otro para ir al índice a 0 1 2 que es la lista de objetivos.
+
+242
+00:18:41,330 --> 00:18:44,350
+Y digamos que quiero los únicos elementos en esa lista de objetivos.
+
+243
+00:18:44,360 --> 00:18:47,920
+No, todavía tiene los corchetes que acabo de pasar cero.
+
+244
+00:18:47,960 --> 00:18:49,700
+Y ahora tengo el objetivo de cadena.
+
+245
+00:18:49,910 --> 00:18:54,980
+Y si quieres imprimir esta cadena, puedo envolver todo esto en una declaración impresa.
+
+246
+00:18:54,990 --> 00:18:56,590
+Ahora agarro mi objetivo.
+
+247
+00:18:56,600 --> 00:19:00,250
+Tendrá un ejercicio donde tendrá que encontrar algo en una lista anidada.
+
+248
+00:19:00,260 --> 00:19:05,460
+Así que asegúrese de entender el tema de estos corchetes, apilados uno encima del otro.
+
+249
+00:19:05,480 --> 00:19:05,930
+Todo bien.
+
+250
+00:19:06,170 --> 00:19:08,260
+Bueno, adelante, detente aquí para la primera parte.
+
+251
+00:19:08,330 --> 00:19:12,800
+Y a continuación, vamos a seguir adelante y cubrir algunos tipos de datos más en esta conferencia que
+
+252
+00:19:12,980 --> 00:19:17,120
+revisamos las listas de la notación de sectores cómo agarrar cosas de un índice de cadenas.
+
+253
+00:19:17,120 --> 00:19:22,770
+¿Cómo se imprimió esta formateo de las asignaciones de variables básicas y también solo la aritmética básica?
+
+254
+00:19:23,030 --> 00:19:23,820
+DE ACUERDO.
+
+255
+00:19:23,900 --> 00:19:25,370
+Espero que disfrutes esta conferencia.
+
+256
+00:19:25,370 --> 00:19:27,880
+Próximamente veremos más cosas.
+
+257
+00:19:27,890 --> 00:19:28,640
+Gracias a todos.
+
+258
+00:19:28,640 --> 00:19:29,480
+Ver en la próxima conferencia

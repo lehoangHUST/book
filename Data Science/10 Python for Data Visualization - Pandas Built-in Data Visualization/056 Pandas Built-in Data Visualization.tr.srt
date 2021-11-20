@@ -1,0 +1,783 @@
+1
+00:00:05,220 --> 00:00:07,080
+Herkese merhaba ve panellere hoşgeldiniz.
+
+2
+00:00:07,080 --> 00:00:12,900
+BILTON veri görselleştirme öğretim görevlisi ve bu ders, gerçekte bu arsa canlı olarak kurulan
+
+3
+00:00:13,230 --> 00:00:17,550
+Panther'ın kendi yetenekleri üzerine gidiyoruz ancak doğrudan veri için görselleştirmeleri
+
+4
+00:00:17,610 --> 00:00:18,860
+aramaya izin veriyorlar.
+
+5
+00:00:19,140 --> 00:00:22,160
+Hadi devam edelim ve Jüpiter defterine atlayalım.
+
+6
+00:00:22,170 --> 00:00:22,370
+Tamam.
+
+7
+00:00:22,370 --> 00:00:24,810
+İşte Jüpiter dizüstü bilgisayar sunucusundayım.
+
+8
+00:00:24,810 --> 00:00:25,520
+Hızlı bir not.
+
+9
+00:00:25,590 --> 00:00:30,170
+Bu Jüpiter defterini veri görselleştirme için baş parmağımın altında açmalısın.
+
+10
+00:00:30,180 --> 00:00:35,280
+Panel veri klasöründe inşa edilmiş ve bunun nedeni, burada def 1 2 ve 3 diye
+
+11
+00:00:35,290 --> 00:00:37,100
+adlandırılan birkaç c c dosyası var.
+
+12
+00:00:37,260 --> 00:00:41,350
+V dosyaları olarak görüyorsunuz ve biz de, burada veri görselleştirmesinde inşa
+
+13
+00:00:41,370 --> 00:00:44,910
+edilen pandaların yeteneklerini gösterecek şekilde çalışacağız. Ders not defteri burada.
+
+14
+00:00:44,920 --> 00:00:49,050
+Bu panel panelleri veri görselleştirme üzerine inşa edilmiş ve daha sonra üzerinde duracak bir
+
+15
+00:00:49,110 --> 00:00:49,760
+egzersiziniz var.
+
+16
+00:00:49,830 --> 00:00:52,290
+Açacağım, burada bir kitap biliyorsun.
+
+17
+00:00:52,380 --> 00:00:54,440
+Ve devam edin ve başlayın.
+
+18
+00:00:54,450 --> 00:00:54,660
+Tamam.
+
+19
+00:00:54,660 --> 00:01:01,890
+İşte ben bu defterdeyim ve dışarı çıkıp önemli PI ve P'nin pandaları PD olarak içe
+
+20
+00:01:02,010 --> 00:01:09,030
+aktaracağını söyleyeceğim ve o zaman çizgide yaşanan arsayı da belirteceğim, böylece o zaman içindeki veri
+
+21
+00:01:09,030 --> 00:01:16,120
+görselleştirmelerini görebiliyorum. gerçek dizüstü bilgisayar ve daha sonra yüklemek için gidiyoruz CACP dosyaları söylemek istiyorum.
+
+22
+00:01:16,200 --> 00:01:25,020
+PD C S V pasand d ve bir de DF biri için dizin 0 dizininde ilk sütun olacağını
+
+23
+00:01:25,020 --> 00:01:26,820
+belirtmek için gidiyorum okuyun.
+
+24
+00:01:26,820 --> 00:01:32,460
+bir zaman dizisi olduğunu görebildiğim birine baktığımızda, bunu gerçekten görselleştirdiğimde önemli olacak.
+
+25
+00:01:32,460 --> 00:01:34,570
+Öyleyse şimdi baktığımda, endeksin aslında
+
+26
+00:01:34,680 --> 00:01:43,530
+Sonra zaman serisi olmayan bir dizin için son bulacağım ve PD'nin CSV okuduğunu ve daha sonra geçtiğini ve
+
+27
+00:01:43,530 --> 00:01:45,340
+ikisine de baktığını söylemiştim.
+
+28
+00:01:45,420 --> 00:01:50,100
+Bunun dışında çok benzer, sadece veri okunur ve sıralı bir dizin vardır.
+
+29
+00:01:50,100 --> 00:01:50,740
+Tamam.
+
+30
+00:01:50,880 --> 00:01:55,940
+Devam edelim ve sana bu sütunlarda bu tür veri çerçeveleriyle neler yapabildiğinin hızlı
+
+31
+00:01:55,940 --> 00:01:57,060
+bir örneğini göster.
+
+32
+00:01:57,060 --> 00:02:02,600
+DF 1 için A sütunundaki tüm değerlerin histogramını almak istediğimizi düşünün.
+
+33
+00:02:03,300 --> 00:02:05,590
+Aslında bunu yapabilenler.
+
+34
+00:02:05,970 --> 00:02:13,440
+EF 1'i arayabilir ve daha sonra bunu arayabiliriz ve aslında otomatik olarak bir histogram
+
+35
+00:02:13,440 --> 00:02:14,330
+oluşturmaya başlayacaktır.
+
+36
+00:02:14,490 --> 00:02:18,960
+Aslında harita çizgisini kaputun altında canlı olarak çağırıyor ve MAP arsa lib
+
+37
+00:02:18,960 --> 00:02:24,670
+bağımsız değişkenlerine eklemeye başlayabilir veya bu histogramda istediğiniz kutu sayısı gibi daha fazla stil argümanı görebilirsiniz.
+
+38
+00:02:25,020 --> 00:02:30,140
+Tamam şimdi not bir şey bu stil aslında çok iyi değil seyir olduğunu.
+
+39
+00:02:30,150 --> 00:02:31,380
+Benim fikrimce.
+
+40
+00:02:31,380 --> 00:02:35,880
+bir yerinde devam ederseniz, Seaborn'u asinus olarak ithal edin.
+
+41
+00:02:36,270 --> 00:02:42,280
+Peki bunu gidermek için ne yapabilirsiniz, üste gelirseniz ya da dizüstü bilgisayarın herhangi
+
+42
+00:02:42,690 --> 00:02:48,080
+Ve bir kere ithal ediliyor Bu hücreleri tekrar çalıştırmaya başlarsanız, deniz kıyısı gibi görünecektir.
+
+43
+00:02:48,090 --> 00:02:49,100
+Şimdi biraz daha güzel görünüyorsun.
+
+44
+00:02:49,110 --> 00:02:50,330
+Bu benim yapmak istediğim bir şey.
+
+45
+00:02:50,400 --> 00:02:55,810
+Aslında stillerde daha fazlasını görebilirsiniz ve pantless çağrıları onlara benzeyecektir.
+
+46
+00:02:56,190 --> 00:03:01,140
+Pandalar'ın içinde yer alan birçok arsa tipi var ve biz sadece bu arsaların nasıl oluşturulacağı ile
+
+47
+00:03:01,200 --> 00:03:03,080
+ilgili örnekleri gösterecek ve kısaca gidiyoruz.
+
+48
+00:03:03,210 --> 00:03:09,360
+temel olarak, veri çerçevesinin kendisini çağırabilir veya veri çerçevesinden sonra sütunu çağıran iki yöntemle yapabilirsiniz.
+
+49
+00:03:09,360 --> 00:03:14,420
+Hemen hemen tüm çizimler, veri çerçevesinin kapalı bir komutuyla yapılabilir ve bunu
+
+50
+00:03:14,430 --> 00:03:21,630
+Şimdi içeri girelim ve şimdi sadece bir sütun yapalım ve arsaları arayabilir ve daha sonra arsa belirtilmiş tür
+
+51
+00:03:21,630 --> 00:03:22,390
+argümanı altında.
+
+52
+00:03:22,530 --> 00:03:26,670
+Ve dizüstü bilgisayarınızda bir liste var ve bu listede devam edeceğiz ve ardından
+
+53
+00:03:26,670 --> 00:03:28,090
+tür anahtar kelimesini siz belirlediniz.
+
+54
+00:03:28,090 --> 00:03:31,180
+Bu yüzden histogram yapmak istersem bunu da bu şekilde yaratabilirim.
+
+55
+00:03:31,440 --> 00:03:37,920
+Ardından, istediğiniz kutu sayısı gibi histogram bağımsız değişkenlerini ekleyebilirsiniz.
+
+56
+00:03:37,920 --> 00:03:43,710
+örneğin nokta çizimi ve ardından tür çağıran bir veri çerçevesi sütunundan bir geçmiş odası.
+
+57
+00:03:43,920 --> 00:03:45,510
+Bu, bir oluşturma yöntemi,
+
+58
+00:03:45,510 --> 00:03:51,380
+Pekâlâ, pandaları kullanarak bir komplo oluşturmanın diğer yolu, tür eşdeğerlerini belirtmek yerine hist'i
+
+59
+00:03:51,690 --> 00:03:58,010
+doğrudan arsa dışında arayabilmeniz için tısladığınızı belirtmektir; böylece nokta arsa ve ardından diyebilirsiniz.
+
+60
+00:03:58,210 --> 00:04:00,110
+Bu da arsa da yaratacak.
+
+61
+00:04:00,120 --> 00:04:04,110
+Bu, bu dersin geri kalanında kullanacağımız yöntemdir, böylece tüm veri çerçevesini
+
+62
+00:04:04,110 --> 00:04:09,570
+veya nokta çizimi adlı sütunu yakalayabilir ve sonra istediğimiz arsa türüne bakmaksızın nokta ararız.
+
+63
+00:04:10,110 --> 00:04:13,730
+Hadi devam edelim ve tüm arsa türlerini gözden geçirip onları kontrol etmeye devam edelim.
+
+64
+00:04:14,370 --> 00:04:19,780
+Öyleyse, zaman serisi olmayan bu ikisi ile çalışmaya devam edelim.
+
+65
+00:04:19,780 --> 00:04:28,560
+Bir örnek olarak sadece normal bir dizine sahiptir ve yapabileceğiniz bir arsa bir alan arsasıdır, böylece devam edebilir
+
+66
+00:04:28,560 --> 00:04:30,700
+ve arsa alanı belirleyebilirsiniz.
+
+67
+00:04:30,990 --> 00:04:38,250
+Ve bu aslında sadece bir alan planını gösterecek ve siz de Alfa'yı bir argüman olarak burada belirtmek
+
+68
+00:04:38,250 --> 00:04:39,190
+için yapabileceksiniz.
+
+69
+00:04:39,240 --> 00:04:46,680
+Biraz fazla şeffaflık istiyorsanız ve Alfas 0'a eşit deyin. 4 ve burada bazı şeffaflık gösteriyor ve bu
+
+70
+00:04:46,680 --> 00:04:52,470
+sadece, bunu normal bir çizgi planı olarak düşünebileceğiniz değerlerin alanını gösteriyor; bunun
+
+71
+00:04:52,470 --> 00:04:56,750
+dışında, altındaki alan bir renk tonu ile doldu.
+
+72
+00:04:57,150 --> 00:05:01,890
+Tamam, bu bir alan planı ve yine veri çerçevesini kapatmak çok kolay.
+
+73
+00:05:01,890 --> 00:05:08,700
+Devam edin ve Bart komplosuna bir göz atın; böylece, iki arsa çerçevesinde bir veri çerçevesinde olduğunuzu
+
+74
+00:05:09,150 --> 00:05:18,070
+söyleyip bar ve böylece otomatik olarak bir çubuk arsa oluşturun ve bunun ne olduğunu sadece temel olarak bir endeks değerini bir
+
+75
+00:05:18,220 --> 00:05:19,630
+kategori olarak alır.
+
+76
+00:05:19,630 --> 00:05:22,830
+Dolayısıyla bu durumda dizininiz kategorik olmalıdır.
+
+77
+00:05:23,030 --> 00:05:26,830
+Veri çerçevemiz aslında yeterince küçüktür, bu veri çerçevesine bakarsak mantıklı olur, yalnızca
+
+78
+00:05:27,100 --> 00:05:29,560
+0 veya 9'u vardır, bu da çalışır.
+
+79
+00:05:29,560 --> 00:05:32,890
+Sıralı bir dizin içeren tipik bir veri çerçevesi muhtemelen bunu yapmak isteyebilir.
+
+80
+00:05:33,100 --> 00:05:38,980
+aslında yığılmış denklemleri true olarak geçirerek istifleyerek oluşturabilirsiniz ve buna benzer bir arsa elde edersiniz.
+
+81
+00:05:38,980 --> 00:05:43,360
+Ancak kategorik bir indeksse kategori olarak her bir sütuna göre değerleri
+
+82
+00:05:46,180 --> 00:05:47,530
+listeleyeceğiz ve bunu
+
+83
+00:05:47,530 --> 00:05:51,190
+Temelde aynı şey, değerleri yığınlama dışında.
+
+84
+00:05:51,190 --> 00:05:54,780
+Şahsen ben daha fazla görmek için bu kolaylık öneririm ve araziler bu tür için.
+
+85
+00:05:54,910 --> 00:06:00,100
+Ancak, bu tür bir şey sadece çok hızlı bir analiz yapıyorsanız, pantolonu söndürmek
+
+86
+00:06:00,100 --> 00:06:01,480
+için işinize yarayacaktır.
+
+87
+00:06:01,630 --> 00:06:04,180
+Şimdi buna histogram denir.
+
+88
+00:06:04,180 --> 00:06:06,500
+Sadece neye benzediğini netleştirmek için.
+
+89
+00:06:06,530 --> 00:06:13,780
+Bu yüzden aramak için söylüyorum eğer nokta daha önce gördüğümüz nokta diyebiliriz.
+
+90
+00:06:14,020 --> 00:06:15,040
+İşte histogramımız.
+
+91
+00:06:15,040 --> 00:06:17,110
+İstediğiniz depo sayısını belirleyebilirsiniz.
+
+92
+00:06:17,300 --> 00:06:24,430
+Dolayısıyla, Panterler arsaları gittikçe ve Panda'nın histogramlarına yerleştirilen şeyleri yaparken, daha fazla netlik
+
+93
+00:06:24,460 --> 00:06:30,640
+kazanmak için daha fazla sayıda kutu istiyorsanız, muhtemelen en fazlasını kullanın.
+
+94
+00:06:30,640 --> 00:06:35,070
+Pandurlar için kullanmayı sevdiğim yaygın bir çizgi çizimi de yapabilirsiniz.
+
+95
+00:06:35,230 --> 00:06:39,630
+Örneğin EF 1'i kontrol edersek, zaman serisi dizinimizi hatırlarsak.
+
+96
+00:06:39,790 --> 00:06:43,500
+Bu zaman serilerinden birinin verilerini çizmek istediğimizi düşünelim.
+
+97
+00:06:43,600 --> 00:06:47,590
+Devam edip sadece bir arsa ve daha sonra hattını çağırın.
+
+98
+00:06:47,590 --> 00:06:49,920
+Bu sadece bir çizgi oluşturacak.
+
+99
+00:06:50,290 --> 00:06:54,550
+Ve çizgi arsa için X ve Y'yi belirtmeniz gerekir.
+
+100
+00:06:54,550 --> 00:07:03,400
+Dolayısıyla bu durumda X'in gerçek dizin olmasını istiyorum, böylece bir dizin ve benim sütunlardan birinin bu sütunlardan biri olmasını istiyorsanız ve
+
+101
+00:07:03,400 --> 00:07:06,250
+sütun olarak bir dizge olarak geçerseniz söyleyebilirim.
+
+102
+00:07:06,370 --> 00:07:07,500
+Bu yüzden belirsizliğe gitmek istiyorum.
+
+103
+00:07:07,540 --> 00:07:09,110
+B mi diyelim
+
+104
+00:07:09,940 --> 00:07:14,590
+Ve ben sadece bunu çalıştırırsam, buna benzer bir arsa buluyorum.
+
+105
+00:07:14,600 --> 00:07:15,770
+Genellikle sadece bir çizgi.
+
+106
+00:07:15,790 --> 00:07:19,900
+Yani hisse senedi bilgileri olup olmadığını ve zamana karşı planlamak istediğini düşünebilirsin, buna benzer
+
+107
+00:07:19,900 --> 00:07:21,250
+bir şey elde edebiliyorsun.
+
+108
+00:07:21,520 --> 00:07:24,190
+Ve bu yüzden hepsi bu komplonun lib'inden inşa edilmiştir.
+
+109
+00:07:24,250 --> 00:07:28,050
+İstediğiniz arsa lib argümanlarını eklemeye başlayabilirsiniz.
+
+110
+00:07:28,250 --> 00:07:31,420
+Bu yüzden çok daha geniş bir şeyler istemek için.
+
+111
+00:07:31,420 --> 00:07:33,000
+Böyle bir şey yapabilirsiniz.
+
+112
+00:07:33,130 --> 00:07:35,770
+Veya çizgiyi ayarlamak istediğimi varsayalım.
+
+113
+00:07:35,860 --> 00:07:39,610
+LW'yi sadece Plaut canlı olarak gördüğümüz gibi yapabilirsiniz.
+
+114
+00:07:39,740 --> 00:07:43,510
+İşaretleyicilere ekleyebileceğiniz biraz daha pürüzsüz bir şeye sahip olan çizgi.
+
+115
+00:07:43,510 --> 00:07:45,210
+Bütün bu diğer haritalar çizgisiz komutlar.
+
+116
+00:07:45,370 --> 00:07:49,610
+Dolayısıyla, canlı arsa hakkında öğrendiğiniz her şey bu veri çerçevesi grafiklerine uygulanabilir.
+
+117
+00:07:50,050 --> 00:07:52,310
+Şimdi devam edin ve scatter plot'ı kontrol edelim.
+
+118
+00:07:52,810 --> 00:07:59,920
+Diyelim ki dağılımı diyebileceğim bir DF var ve bir x ve y belirtmeniz
+
+119
+00:07:59,920 --> 00:08:00,400
+gerekecek.
+
+120
+00:08:00,490 --> 00:08:05,110
+Bunun için bunun için sadece devam edin ve sütun adlarının dizelerini geçelim.
+
+121
+00:08:05,410 --> 00:08:10,240
+Bu yüzden a ve b ve bu bizim için güzel görünümlü bir dağılım yaratacak.
+
+122
+00:08:10,330 --> 00:08:15,150
+Yapabileceğiniz başka bir şey de aslında rengi başka bir sütunda kapalı olarak ayarlamaktır.
+
+123
+00:08:15,160 --> 00:08:24,160
+Örneğin, renk C sütunundan eşit olacak demektir.
+
+124
+00:08:24,220 --> 00:08:27,220
+Okuyorsam, bana siyah beyaz olur.
+
+125
+00:08:27,220 --> 00:08:32,010
+Öyleyse eğer bir tane burada ne yaptığımızı açıklığa kavuşturursam bir göz atarsak.
+
+126
+00:08:32,010 --> 00:08:36,790
+A ve b için bir değer elde ettiğimiz andan gelen veriler ve c için bir değerimiz var. Bu yüzden esas itibariyle şimdi üç seviyeli bilgi üç boyutlu bir arsa göstereceğiz.
+
+127
+00:08:36,820 --> 00:08:42,250
+B'ye karşı ve daha sonra üçüncü bir argümana rastgele renkle baktığımız
+
+128
+00:08:42,250 --> 00:08:48,430
+için aslında haritayı argüman olarak pasan ettikten sonra kendi renk haritanızı geçirebilirsiniz.
+
+129
+00:08:49,360 --> 00:08:52,330
+Örneğin, daha önce gördüğünüz serin ılık ve şu
+
+130
+00:08:52,330 --> 00:08:57,820
+anda ayakta duran B'ye ve daha sonra c için renk değerine ilişkin üç seviyeli bilgi gösteriyorsunuz. Bazen insanlar renkle şey göstermekten hoşlanmaz, ancak boyutlarına göre göstermeyi tercih eder.
+
+131
+00:08:57,970 --> 00:09:02,110
+C'yi bir argüman olarak geçirmek yerine bunu yapabilirsiniz.
+
+132
+00:09:02,140 --> 00:09:06,500
+Burada sadece ilerleyip geçeceksin.
+
+133
+00:09:06,520 --> 00:09:09,910
+S ve s için Veri çerçevesi sütununda ilerleyeceksiniz.
+
+134
+00:09:09,910 --> 00:09:12,440
+Dolayısıyla, bunun için veri çerçevesi
+
+135
+00:09:12,520 --> 00:09:18,150
+sütununu kendisi geçmek zorundasınızdır ve muhtemelen bunu yaparsanız, noktalar çok küçük olacaktır.
+
+136
+00:09:18,460 --> 00:09:24,100
+Ve sonra yapabileceğiniz şey, bunu bir çeşit faktörle çarpmaktır.
+
+137
+00:09:24,100 --> 00:09:26,470
+Böylece puanların B'ye karşı olduğu ve boyutun
+
+138
+00:09:27,110 --> 00:09:30,820
+birbirine göre ne kadar büyük veya C değerinin göreli olduğunu gösteriyor.
+
+139
+00:09:31,390 --> 00:09:40,000
+Tamam.
+
+140
+00:09:40,000 --> 00:09:41,520
+Muhtemelen bunu başınızın üstünden hatırlamayacağınız türden bir
+
+141
+00:09:41,560 --> 00:09:41,980
+şey olup,
+
+142
+00:09:42,010 --> 00:09:45,880
+sizin için bir araya getirdiğim Jüpiter defter defterine geri dönüp referans olarak kullanın veya belgeleri kontrol edin.
+
+143
+00:09:45,880 --> 00:09:50,320
+Hadi devam edelim ve yine kutu parsellerine geçelim.
+
+144
+00:09:50,320 --> 00:09:52,090
+bir analiz istiyorsanız, pandalar sizin için de bunu yapabilir.
+
+145
+00:09:52,090 --> 00:09:55,010
+Kutu parselleri için deniz taşıtını gerçekten çok seviyorum, ancak bir kutu arsa üzerinde hızlı
+
+146
+00:09:55,030 --> 00:09:59,980
+Dolayısıyla, tüm veri çerçevesi araması arsa kutunuza geçersiniz ve burada temel olarak otomatik olarak sizin için sütun başına
+
+147
+00:09:59,980 --> 00:10:00,920
+bir kutu arsa görebilirsiniz.
+
+148
+00:10:00,940 --> 00:10:08,740
+Bu nedenle her sütun bir kategori olarak alınır ve daha sonra dağılımları bir kutu arsa olarak çizer.
+
+149
+00:10:08,740 --> 00:10:11,270
+Tamam.
+
+150
+00:10:11,290 --> 00:10:16,390
+Çeşitli verilerle, daha önce Pandur'lar tarafından gördüğünüz altı köşeli bir komplo yapabilir, bu
+
+151
+00:10:16,920 --> 00:10:17,680
+seaborn, Seaborn'dı.
+
+152
+00:10:17,680 --> 00:10:24,970
+Ancak bırakıp bunun doğru şekilde gösterilmesi için yeni bir veri çerçevesi hazırlayayım.
+
+153
+00:10:24,970 --> 00:10:25,970
+PD veri çerçevesini söylemek istiyorum.
+
+154
+00:10:26,200 --> 00:10:30,400
+Bazı rastgele veri girmeye başlayacağım ve iki tane olsun diyelim ki 1000 olacağım ve
+
+155
+00:10:30,520 --> 00:10:33,780
+o zaman geçeceğim ve sütunlar sadece bir ve b olacak.
+
+156
+00:10:33,780 --> 00:10:42,400
+Ve veri çerçevemize bir göz atarsak buna benzer bir şey görürsünüz.
+
+157
+00:10:42,400 --> 00:10:48,020
+Sadece rasgele veriler.
+
+158
+00:10:49,580 --> 00:10:52,650
+Freebie.
+
+159
+00:10:52,650 --> 00:10:53,700
+Burada biraz daha rastgele puan istedim ve
+
+160
+00:10:53,740 --> 00:10:54,700
+bu değişkenten dolayı yapabileceğim şey iki değişken.
+
+161
+00:10:54,880 --> 00:11:01,330
+Ve B, Hexton geçit diyebilirim ve x bir kütleye eşittir ve Y, B'ye eşittir.
+
+162
+00:11:01,330 --> 00:11:01,620
+Ve bunu yaparsanız bir hex arsa alırsınız.
+
+163
+00:11:01,660 --> 00:11:10,990
+Şimdi bu, altıgen bölmeler dışında aslında bir dağılım çizgisi gibidir.
+
+164
+00:11:11,330 --> 00:11:14,750
+Şu anda depo boyutu gerçekten çok küçük.
+
+165
+00:11:14,980 --> 00:11:19,090
+Bunu değiştirmek için ızgaranın boyutu 25'e eşittir diyebilirsiniz.
+
+166
+00:11:19,210 --> 00:11:21,710
+Ve bu altıgenlerin boyutunu büyütür ve
+
+167
+00:11:21,730 --> 00:11:27,170
+aslında altıgenler daha koyu renktedir, çünkü içinde onlardan daha fazla nokta vardır
+
+168
+00:11:27,580 --> 00:11:33,730
+ve burada renk eşlemeyi de değiştirebilir ve Haritanın başka bir şeyle eşit olduğunu söyleyebilirsiniz.
+
+169
+00:11:33,730 --> 00:11:39,760
+Örneğin serin sıcağın renk haritalamamızı olmasını istiyorsak, bunu da yapabilirsiniz.
+
+170
+00:11:39,760 --> 00:11:40,180
+Sonra nihayet çekirdek yoğunluk tahmini arazilerini yapabiliriz.
+
+171
+00:11:40,180 --> 00:11:45,930
+Herhangi bir nedenden dolayı sadece bir histogram istemiyorsanız ancak çekirdek yoğunluğu tahminini istiyorsanız, veri çerçevenizi
+
+172
+00:11:46,000 --> 00:11:49,980
+veya bir sütunu veri çerçevenizden ve ardından cissé çizgi Haidee'yi arayabilirsiniz.
+
+173
+00:11:50,110 --> 00:11:56,020
+Sizin için bu çekirdek yoğunluk tahmin çizelgesini yaratacak
+
+174
+00:11:56,020 --> 00:12:02,700
+ve aynı şeyi yapabileceğiniz başka bir çağrı olan yoğunlukla yapabilirsiniz.
+
+175
+00:12:03,080 --> 00:12:08,680
+Yani yoğunluk ve demek ki aynı şey olacak.
+
+176
+00:12:09,170 --> 00:12:10,450
+çerçevesinin dışında da yapabilirsiniz.
+
+177
+00:12:10,450 --> 00:12:15,880
+Dolayısıyla, yoğunluk veya çekirdek yoğunluk tahmin çizelgesini istiyorsanız, bunlar aynı şey olacak ve bunu tüm veri
+
+178
+00:12:15,880 --> 00:12:20,410
+Veri çerçevenizdeki tüm sütunların yoğunluk çekirdeği yoğunluk tahmin çizelgesini karşılaştırmak
+
+179
+00:12:20,410 --> 00:12:23,320
+isterseniz, bunu tek bir sütundan yapmanız gerekmez.
+
+180
+00:12:23,320 --> 00:12:29,890
+Tamam.
+
+181
+00:12:29,890 --> 00:12:32,220
+Bu kadar.
+
+182
+00:12:32,230 --> 00:12:32,590
+Umarım Pandur'ları doğrudan çizmenin bu yönteminin tam harita çiziminin
+
+183
+00:12:32,590 --> 00:12:33,200
+çağrılmasından çok daha kolay olduğunu ve rakamın kontrolü ile kullanım kolaylığını dengeler nitelikte olduğunu görebilirsiniz.
+
+184
+00:12:33,280 --> 00:12:38,920
+veya map plot lib'e geri düşmeniz gerektiğini unutmamalısınız.
+
+185
+00:12:38,920 --> 00:12:43,650
+Fakat rakamınızı özelleştirmeye gerçekten başlamak istiyorsanız, Seaborn'a
+
+186
+00:12:43,720 --> 00:12:47,800
+Bu tür komutlar, yalnızca verilerinizi hızlı bir şekilde analiz etmek içindir ve
+
+187
+00:12:47,800 --> 00:12:50,230
+muhtemelen, oluşturmak istediğiniz arsa türlerine hızlı bir
+
+188
+00:12:50,470 --> 00:12:55,390
+şekilde referans defterine atıfta bulunarak veri çerçevesine çağırın veya sütundan veya veriden çağırın çerçevesi.
+
+189
+00:12:55,390 --> 00:13:00,130
+Tabii ki bunu nasıl kullanacağımızıza bakacak olursak, muhtemelen bunu kullanacağımız tek şey, onu çok hızlı bir şekilde
+
+190
+00:13:00,130 --> 00:13:02,190
+aramak için bir çizgi veya histogram ile.
+
+191
+00:13:02,320 --> 00:13:06,370
+Daha ileri seviyede bu Haskel çizicileri kutu parsellerini veya çubuk grafiklerini gerçekten Seaborn ile birlikte kullanmanızı öneririm.
+
+192
+00:13:06,370 --> 00:13:10,840
+burada öğrendiklerinizi pratik yapmanız için hızlı egzersizi tarif edeceğiz.
+
+193
+00:13:10,840 --> 00:13:16,170
+Pekâlâ, umarım bunu kullanışlı bulmuşsunuz ve bir sonraki konferansta görüşeceğiz veya
+
+194
+00:13:17,340 --> 00:13:22,570
+Herkese teşekkürler, bir sonraki derside görüşürüz.
+
+195
+00:13:22,570 --> 00:13:25,720
+&nbsp;
+
+196
+00:13:25,720 --> 00:13:27,430
+&nbsp;

@@ -1,0 +1,943 @@
+1
+00:00:05,010 --> 00:00:09,870
+Olá a todos e seja bem vindo ao primeiro mapa da lição da libra do lote e esta palestra, vamos começar
+
+2
+00:00:09,870 --> 00:00:13,260
+a mostrar-lhe como você pode usar a planilha do mapa vivida com o Python.
+
+3
+00:00:13,500 --> 00:00:16,360
+Vamos em frente e salte para o livro de notas Jupiter para começar.
+
+4
+00:00:16,620 --> 00:00:16,890
+Tudo bem.
+
+5
+00:00:16,890 --> 00:00:23,120
+Aqui estou no caderno, o caderno para esta palestra é chamado de leitura de conceitos de matemática e todo o código
+
+6
+00:00:23,160 --> 00:00:27,390
+vai estar sendo localizado neste notebook, bem como muito mais informações disponíveis para você
+
+7
+00:00:27,390 --> 00:00:29,690
+no que diz respeito a essa parcela.
+
+8
+00:00:30,030 --> 00:00:30,450
+ESTÁ BEM.
+
+9
+00:00:30,510 --> 00:00:34,680
+Eu vou seguir em frente e saltar para um caderno em branco e caminhar através de todo
+
+10
+00:00:34,680 --> 00:00:36,300
+esse código e explicá-lo para você.
+
+11
+00:00:36,300 --> 00:00:39,920
+Deixe-me sair e clicar nesta nova guia e aqui temos esse novo caderno.
+
+12
+00:00:40,110 --> 00:00:44,530
+Quando você seguir em frente e ocultar o cabeçalho e a barra de ferramentas, fique um pouco mais aqui.
+
+13
+00:00:44,550 --> 00:00:44,920
+ESTÁ BEM.
+
+14
+00:00:44,970 --> 00:00:46,990
+Vamos começar a começar por planear.
+
+15
+00:00:47,490 --> 00:00:48,870
+Uma vez que você instalou se encontrou.
+
+16
+00:00:48,900 --> 00:00:58,200
+vai fazer é dizer sinal de porcentagem. e isso vai permitir que você veja os gráficos que você cria dentro do notebook Jupiter.
+
+17
+00:00:58,200 --> 00:01:05,710
+A primeira coisa que você pode fazer é dizer importar mapa traçar parcelas de tarte de libras como TLT
+
+18
+00:01:05,720 --> 00:01:11,680
+e, em seguida, se você estiver usando o livro de notas Jupiter, o que você
+
+19
+00:01:12,180 --> 00:01:15,750
+Vá em frente e execute este ótimo.
+
+20
+00:01:15,840 --> 00:01:19,920
+Se você não estiver usando o sistema do notebook Jupiter, o que você vai seguir em
+
+21
+00:01:19,920 --> 00:01:25,770
+frente e fazer é ao final de todos os seus comandos para traçar o que mostrará mais tarde o que você vai digitar
+
+22
+00:01:25,770 --> 00:01:29,100
+é Hilti que mostra parênteses próximos e, mais tarde, começamos a planear alguns exemplos.
+
+23
+00:01:29,100 --> 00:01:32,280
+Asha você realmente colocaria isso em seu código.
+
+24
+00:01:32,400 --> 00:01:32,850
+Tudo bem.
+
+25
+00:01:32,940 --> 00:01:37,830
+Vamos prosseguir e atravesse o exemplo muito simples, usando duas corridas
+
+26
+00:01:37,860 --> 00:01:46,040
+numpy indo para entrar e digamos importá-los PI e P e dizer x é igual a qualquer espaço Lynn.
+
+27
+00:01:46,080 --> 00:01:55,020
+Então, será linearmente espaçado, iremos de 0 a 5 e agarramos 11 pontos e então i será igual
+
+28
+00:01:55,020 --> 00:01:56,210
+a x.
+
+29
+00:01:56,220 --> 00:01:58,110
+Então, o poder de dois.
+
+30
+00:01:58,740 --> 00:02:05,550
+Então, se olharmos para x e y, temos uma matriz de 0 a 5 e, em seguida, PORQUE são
+
+31
+00:02:05,550 --> 00:02:07,260
+todos esses elementos ao quadrado.
+
+32
+00:02:07,350 --> 00:02:13,200
+Os comandos de Limite permitem que você crie um enredo muito rapidamente e mostraremos duas maneiras de criar gráficos plotados no mapa.
+
+33
+00:02:13,200 --> 00:02:14,850
+Agora o comando do mapa básico
+
+34
+00:02:15,000 --> 00:02:20,550
+Um é um método funcional e o outro é o método orientado a objeto que mostrará o método
+
+35
+00:02:20,550 --> 00:02:24,070
+funcional primeiro e depois mudaremos para o método orientado a objetos.
+
+36
+00:02:24,210 --> 00:02:28,770
+Uma vez que geralmente é a melhor maneira de criar um gráfico relacionado ao
+
+37
+00:02:28,770 --> 00:02:33,040
+Cutlip, vamos mostrar o método funcional primeiro, o método funcional é realmente bastante simples.
+
+38
+00:02:33,090 --> 00:02:40,290
+Você diz que peel t tem parcelas e então podemos fazer uma guia de mudança aqui e você vai passar em vários argumentos.
+
+39
+00:02:40,740 --> 00:02:47,130
+O primeiro que você vai fazer apenas por um argumento básico é passar o seu X e seus elementos
+
+40
+00:02:47,130 --> 00:02:50,370
+e, então, podemos seguir em frente e mudar de entrada.
+
+41
+00:02:50,820 --> 00:02:53,000
+E aqui isso realmente mostrará o enredo.
+
+42
+00:02:53,100 --> 00:02:55,870
+Nós fomos em frente e planejamos X versus Y.
+
+43
+00:02:56,150 --> 00:03:00,470
+Se você não está no livro de notas de Jupiter que você vai fazer no final
+
+44
+00:03:00,480 --> 00:03:06,770
+desta linha, se você estiver no seu código, diga peel t show e, se eu correr, podemos ver que nós conseguimos o mesmo gráfico.
+
+45
+00:03:06,810 --> 00:03:11,880
+Você não precisa usar o t show a menos que você esteja usando algo que não é a nota Jupiter, mas
+
+46
+00:03:11,880 --> 00:03:15,170
+a diferença no caderno Jupiter é essencialmente como se você estivesse imprimindo o gráfico.
+
+47
+00:03:15,300 --> 00:03:20,040
+Observe aqui se eu não tenho PBT que mostrei sair.
+
+48
+00:03:20,110 --> 00:03:25,820
+Então, se eu remover isso ou realmente colocá-lo de volta, então eu não entendo.
+
+49
+00:03:25,830 --> 00:03:34,560
+Então, isso é essencialmente o mesmo, apenas para fazer uma rápida analogia como digitar uma string versus dizer imprimir a string e
+
+50
+00:03:34,560 --> 00:03:35,040
+é
+
+51
+00:03:38,720 --> 00:03:40,040
+exatamente o mesmo.
+
+52
+00:03:40,040 --> 00:03:44,760
+O que KEELTY Isso mostra fazer é essencialmente imprimir esse enredo em vez de apenas mostrar o enredo.
+
+53
+00:03:45,810 --> 00:03:46,290
+Tudo bem.
+
+54
+00:03:46,590 --> 00:03:51,510
+Por enquanto, não nos preocuparemos com o recurso consistente de digitar o concerto nesse show.
+
+55
+00:03:51,780 --> 00:03:54,690
+No entanto, se você não estiver usando o Jupiter note book você terá que continuar digitando isso.
+
+56
+00:03:54,840 --> 00:03:56,370
+Então, tenha em mente isso.
+
+57
+00:03:56,970 --> 00:03:57,460
+Tudo bem.
+
+58
+00:03:57,630 --> 00:04:02,120
+Então, essa é a maneira mais básica de traçar algo sobre pólipo, o que não é tão ruim.
+
+59
+00:04:02,370 --> 00:04:09,270
+Você pode realmente adicionar essa trama Matlab como argumentos como cor e estilo de vida.
+
+60
+00:04:09,910 --> 00:04:12,810
+E isso permitirá que você continue editando esse gráfico.
+
+61
+00:04:12,840 --> 00:04:17,730
+Vamos falar muito mais sobre isso mais tarde, tanto quanto os estilos de linha e os estilos de cores, mas se
+
+62
+00:04:17,730 --> 00:04:20,850
+você estiver familiarizado com o Matlab, provavelmente isso já parece familiar para você.
+
+63
+00:04:21,030 --> 00:04:24,670
+Vamos retirar isso por enquanto e apenas vá pelo básico.
+
+64
+00:04:25,140 --> 00:04:30,330
+Se quisermos adicionar um rótulo X e rótulo ou título para este gráfico, podemos fazer isso com os seguintes métodos.
+
+65
+00:04:30,510 --> 00:04:39,240
+Pode dizer rótulo TX e, em seguida, apenas passar uma string que você deseja para o rótulo X ou sair e dizer rótulo X e, em
+
+66
+00:04:40,470 --> 00:04:48,750
+seguida, para o rótulo y, você pode dizer que o rótulo pty passa em uma string por que rotulá-los para o título, você pode dizer
+
+67
+00:04:48,750 --> 00:04:54,240
+Piazzi esse título e então vamos seguir em frente e colocar a string do título lá.
+
+68
+00:04:54,400 --> 00:04:55,810
+Vá em frente e execute isso.
+
+69
+00:04:55,810 --> 00:04:59,290
+E agora podemos ver que temos um rótulo X e um título.
+
+70
+00:04:59,430 --> 00:05:05,830
+E mais tarde, vamos aprender como podemos especificar o CPI ou pontos por polegada para
+
+71
+00:05:05,830 --> 00:05:09,370
+obter mais clareza aqui, como uma fonte mais fina.
+
+72
+00:05:09,370 --> 00:05:14,890
+Vamos continuar e continuar com a criação de multi-plots na mesma tela.
+
+73
+00:05:15,000 --> 00:05:17,280
+Nós vamos seguir em frente e avançar para baixo aqui.
+
+74
+00:05:17,380 --> 00:05:23,320
+Remova a célula e fale sobre colocar lotes múltiplos nos mesmos nerds de lona para fazer isso.
+
+75
+00:05:23,310 --> 00:05:29,740
+Vamos dizer peel t subtrama e subtrama leva em alguns argumentos também.
+
+76
+00:05:29,740 --> 00:05:34,920
+Agora não podemos vê-los, então eu irei dizer-lhe que o primeiro será o número de linhas.
+
+77
+00:05:35,760 --> 00:05:40,300
+O número de colunas e, em seguida, o número de trama em que você está se
+
+78
+00:05:40,300 --> 00:05:45,970
+referindo neste caso, vamos seguir em frente e dizer um e vamos seguir em frente e traçar algo nessa célula.
+
+79
+00:05:46,750 --> 00:05:56,230
+Dizemos X Y e iremos em frente e especifiquemos que é a seqüência vermelha de cor como um terceiro argumento
+
+80
+00:05:56,540 --> 00:05:56,940
+começa.
+
+81
+00:05:57,000 --> 00:06:01,480
+Não se preocupe muito com o entendimento completo porque, uma vez que chegamos ao método orientado a
+
+82
+00:06:01,810 --> 00:06:03,480
+objetos, muito disso vai fazer sentido.
+
+83
+00:06:03,500 --> 00:06:06,160
+Mas eu só quero mostrar o que é possível por enquanto.
+
+84
+00:06:06,660 --> 00:06:12,940
+Bem, vamos em frente e digamos outro recurso para essa subtração, especificamos uma linha por duas colunas.
+
+85
+00:06:13,240 --> 00:06:15,110
+E o terceiro argumento é o número do gráfico.
+
+86
+00:06:15,170 --> 00:06:20,270
+Agora vamos editar o segundo enredo e diremos peel t esse enredo.
+
+87
+00:06:21,040 --> 00:06:27,100
+Bem, vá em frente e faça Y versus x e especifique B para azul como uma string.
+
+88
+00:06:27,100 --> 00:06:30,760
+Aqui vamos prosseguir e executar isso e ver o que recebemos.
+
+89
+00:06:31,380 --> 00:06:38,050
+OK, então agora temos duas subparcelas aqui que estão criando vários lotes na mesma tela.
+
+90
+00:06:38,050 --> 00:06:42,640
+Agora, vamos fazer é depois de ter visto os princípios básicos da criação de um
+
+91
+00:06:42,670 --> 00:06:48,170
+gráfico, vamos acabar com tudo isso para uma introdução mais formal ao método de API orientado a objetos libs.
+
+92
+00:06:48,280 --> 00:06:52,990
+E isso significa que vamos instanciar objetos de figura e depois chamar métodos ou atributos
+
+93
+00:06:52,990 --> 00:06:53,710
+desse objeto.
+
+94
+00:06:53,710 --> 00:06:56,590
+E essa será uma maneira muito melhor de realmente usar esse enredo ao vivo.
+
+95
+00:06:56,800 --> 00:07:03,360
+por agora está apenas usando PBT o enredo e, em seguida, colocando seus dados ou GLT que subtraem especificando o número de linhas e colunas
+
+96
+00:07:03,490 --> 00:07:07,760
+e, em seguida, a figura em que estamos trabalhando e, em seguida, usando Kilty esse gráfico.
+
+97
+00:07:07,800 --> 00:07:08,610
+Então, o básico
+
+98
+00:07:08,880 --> 00:07:15,940
+Vamos mudar as engrenagens para o método orientado a objetos e isso vai ser muito melhor.
+
+99
+00:07:15,940 --> 00:07:20,500
+A idéia principal ao usar o método orientado a objetos mais formal é criar objetos de figura e, em
+
+100
+00:07:20,500 --> 00:07:21,570
+seguida, chamar métodos de isso.
+
+101
+00:07:21,580 --> 00:07:23,480
+Deixe-me entrar e mostrar-lhe o que quero dizer com isso.
+
+102
+00:07:23,680 --> 00:07:31,860
+Eu vou seguir em frente e dizer que o figo é igual à figura da casca e eu vou entrar e
+
+103
+00:07:31,870 --> 00:07:33,300
+fechar os príncipes lá.
+
+104
+00:07:33,310 --> 00:07:34,960
+Agora, se eu apenas executar essa célula.
+
+105
+00:07:34,960 --> 00:07:40,420
+Observe que eu tenho um objeto de figura que foi criado este objeto de figura que você pode pensar nisso como
+
+106
+00:07:40,420 --> 00:07:42,580
+apenas uma espécie dessa tela em branco imaginária.
+
+107
+00:07:42,580 --> 00:07:45,810
+E podemos adicionar um conjunto de acesso a este campus.
+
+108
+00:07:45,940 --> 00:07:55,150
+Então, na mesma célula, vou dizer que o XS é igual a Fig. Adicionar aos esquemas de sublinhado e vou adicionar um
+
+109
+00:07:55,140 --> 00:07:56,270
+conjunto de eixos.
+
+110
+00:07:56,410 --> 00:08:03,370
+E a maneira como você pode adicionar um conjunto de eixos é passando em uma lista e a lista leva int para
+
+111
+00:08:03,370 --> 00:08:07,930
+argumentos, uma largura esquerda e argumentos de altura que variam de 0 a 1.
+
+112
+00:08:07,930 --> 00:08:11,930
+Basicamente, a porcentagem dessa tela em branco que você quer seguir em frente e pegar.
+
+113
+00:08:12,070 --> 00:08:14,670
+Deixe-me entrar e mostrar um exemplo.
+
+114
+00:08:14,940 --> 00:08:19,120
+E, novamente, vou mostrar-lhe um monte de coisas que não farão sentido no início,
+
+115
+00:08:19,120 --> 00:08:23,840
+mas tudo fará sentido no final, como você vê exemplos repetidos e você derrubou ainda mais.
+
+116
+00:08:23,880 --> 00:08:26,100
+Então, estou escrevendo alguns números aqui.
+
+117
+00:08:26,170 --> 00:08:29,090
+Isto será deixado dos eixos.
+
+118
+00:08:29,380 --> 00:08:31,310
+Será o fundo dos eixos.
+
+119
+00:08:31,420 --> 00:08:35,230
+E esta será a largura e a altura dos eixos 0. 8.
+
+120
+00:08:35,290 --> 00:08:37,170
+Deixe-me seguir em frente e executar isso na célula.
+
+121
+00:08:37,540 --> 00:08:39,320
+E agora observe o que eu tenho aqui.
+
+122
+00:08:39,390 --> 00:08:41,920
+Agora eu tenho um conjunto de eixos em branco.
+
+123
+00:08:42,000 --> 00:08:48,310
+Então eu disse PT que figura criou um objeto de figura e, em seguida, fora desse objeto de figura eu liguei para o método,
+
+124
+00:08:48,650 --> 00:08:54,880
+adicione um conjunto de eixos e passei em uma lista de onde eu realmente quero que os eixos sejam colocados ao lado do que
+
+125
+00:08:54,880 --> 00:08:57,800
+eu vou fazer é na verdade traçar esse conjunto de eixos.
+
+126
+00:08:58,120 --> 00:09:01,290
+E isso vai se sentir familiar ao que acabamos de fazer anteriormente.
+
+127
+00:09:01,360 --> 00:09:07,900
+Você vai dizer que os eixos partem as parcelas e vamos seguir em frente e traçar x e y nesse conjunto de eixos
+
+128
+00:09:07,900 --> 00:09:09,160
+e depois entrar no turno.
+
+129
+00:09:09,490 --> 00:09:14,440
+E agora você pode ver que basicamente encontramos o mesmo gráfico que fizemos anteriormente, exceto usando um método
+
+130
+00:09:14,500 --> 00:09:15,460
+orientado a objetos.
+
+131
+00:09:15,460 --> 00:09:21,510
+Então, se eu rolar de volta aqui, este é o enredo que fizemos anteriormente, acabamos de dizer que o Appeal criou essa
+
+132
+00:09:21,550 --> 00:09:26,040
+trama, mas agora usando esse tipo de método orientado a objetos, teremos muito mais controle sobre isso.
+
+133
+00:09:26,050 --> 00:09:28,970
+É um pouco mais envolvido no que diz respeito aos passos que precisamos tomar.
+
+134
+00:09:29,160 --> 00:09:30,650
+Mas definitivamente vale a pena.
+
+135
+00:09:31,140 --> 00:09:34,920
+Então criamos a figura que chamamos de método de figura.
+
+136
+00:09:34,960 --> 00:09:41,030
+lista de eixos e depois traçadas nesse tipo de eixos se quisermos continuar colocando x rótulos e rótulos e títulos.
+
+137
+00:09:41,050 --> 00:09:43,580
+Adicione os eixos nesta passagem, em seguida, uma
+
+138
+00:09:43,620 --> 00:09:45,850
+Você pode seguir em frente e fazer isso nesse conjunto de eixos.
+
+139
+00:09:46,120 --> 00:09:50,070
+Você pode dizer definir sublinhado ex-escravo.
+
+140
+00:09:50,620 --> 00:09:53,360
+É um pouco diferente da casca T que é apenas um rótulo X.
+
+141
+00:09:53,410 --> 00:09:56,770
+Quando você está trabalhando neste objeto Xs, você vai dizer conjuntos de sublinhado.
+
+142
+00:09:57,150 --> 00:10:02,920
+E agora podemos seguir em frente e passar no rótulo string x e ​​você
+
+143
+00:10:03,340 --> 00:10:07,990
+vai fazer a mesma coisa para etiquetas e rótulos e rótulos.
+
+144
+00:10:08,000 --> 00:10:12,760
+nós executamos isso, devemos ver nossos novos rótulos X etiqueta e rótulo e definir o título.
+
+145
+00:10:15,550 --> 00:10:21,060
+E vamos seguir em frente e fazer o mesmo para um título de título título subjacente agora, se
+
+146
+00:10:21,610 --> 00:10:28,960
+Avançemos e continuemos com esta ideia de programação orientada a objetos com a vida colocando dois conjuntos de
+
+147
+00:10:28,960 --> 00:10:30,700
+figuras em uma tela.
+
+148
+00:10:30,730 --> 00:10:35,350
+E isso começará a fazer sentido, tanto quanto o que essa lista faz referência.
+
+149
+00:10:35,440 --> 00:10:40,180
+Eu vou seguir em frente e rolar para baixo para uma nova célula e ampliar um pouco apenas para que possamos
+
+150
+00:10:40,180 --> 00:10:42,730
+obter uma imagem muito clara do que estamos realmente fazendo aqui.
+
+151
+00:10:42,750 --> 00:10:48,640
+Eu vou dizer que o figo é igual à figura realty.
+
+152
+00:10:49,060 --> 00:10:51,800
+Então estou criando esse objeto de figura.
+
+153
+00:10:51,940 --> 00:10:53,230
+Então, meu objeto figura.
+
+154
+00:10:53,280 --> 00:11:02,640
+Eu vou dizer que os eixos são iguais aos eixos de figueira.
+
+155
+00:11:02,650 --> 00:11:11,380
+Eu não quero entrar em conjunto com os eixos principais será zero ponto um zero ponto um e depois zero
+
+156
+00:11:11,430 --> 00:11:13,840
+ponto oito 0. 8.
+
+157
+00:11:13,940 --> 00:11:19,430
+E novamente esta é a esquerda do fundo e depois a largura e a altura desse tipo de eixos.
+
+158
+00:11:19,570 --> 00:11:28,710
+E então vou adicionar outro conjunto de eixos, os eixos de coluna dois vão dizer os eixos de figuras e sublinhados.
+
+159
+00:11:28,720 --> 00:11:34,140
+E então, quando eu for em frente e faço é, basicamente, inserir eixos de inserção, eu
+
+160
+00:11:34,210 --> 00:11:41,180
+vou dizer que o fundo do conjunto de eixos começa 20 por cento do 50 por cento esquerdo da parte inferior.
+
+161
+00:11:41,670 --> 00:11:44,240
+Então, desculpe-me aqui, estou falando basicamente disso.
+
+162
+00:11:44,290 --> 00:11:46,790
+Este canto inferior dos eixos foi sluffed e a parte inferior.
+
+163
+00:11:46,810 --> 00:11:51,450
+Então, 20 por cento da esquerda 50 por cento acima do fundo.
+
+164
+00:11:51,790 --> 00:11:57,310
+E então, diremos que leva 40% do tamanho e largura da tela e 30% do tamanho e
+
+165
+00:11:57,310 --> 00:11:58,310
+altura da tela.
+
+166
+00:11:58,500 --> 00:12:01,690
+Portanto, todos esses valores aqui devem estar entre 0 e 1.
+
+167
+00:12:01,960 --> 00:12:06,180
+Avançemos e façamos isso e saibamos o que saímos.
+
+168
+00:12:06,310 --> 00:12:12,400
+correspondem ao que eu quero que você faça agora é ir em frente e pausar o vídeo e brincar com esses números.
+
+169
+00:12:12,420 --> 00:12:18,190
+Saímos disso, basicamente, insira um conjunto de eixos e espero que agora você possa começar a ver o que esses
+
+170
+00:12:18,190 --> 00:12:18,900
+valores realmente
+
+171
+00:12:18,900 --> 00:12:24,540
+Certifique-se de que eles estão todos entre 0 e 1 e veja como eles se correlacionam com este conjunto de eixos.
+
+172
+00:12:24,550 --> 00:12:28,200
+Vá em frente e brinque com os eixos 2 e mova-o.
+
+173
+00:12:28,210 --> 00:12:32,940
+Por exemplo, tente obter esse tipo de eixos até aqui neste canto inferior.
+
+174
+00:12:33,150 --> 00:12:34,050
+Boa impulsividade.
+
+175
+00:12:34,090 --> 00:12:37,920
+Veja se você pode mover este seguro para o canto inferior.
+
+176
+00:12:37,950 --> 00:12:38,280
+Tudo bem.
+
+177
+00:12:38,290 --> 00:12:40,130
+Eu vou ver se eu posso fazer isso agora.
+
+178
+00:12:40,690 --> 00:12:48,130
+Então, se eu quiser isso na parte inferior, eu provavelmente quero dizer que vai para a largura e a altura do fundo esquerdo.
+
+179
+00:12:48,650 --> 00:12:53,790
+Então, vou tentar deslocá-lo, fazendo isso basicamente apenas 0 para começar.
+
+180
+00:12:53,950 --> 00:12:58,910
+Bem, vai dizer 0. 1 aqui comece com zero 1 5.
+
+181
+00:12:58,920 --> 00:13:05,270
+Então, um pouco do fundo desta inserção aqui do Axis 1 vai avançar e executar isso.
+
+182
+00:13:06,000 --> 00:13:10,300
+E lá, eu pude movê-lo mais para o fundo, lembre-se que este segundo é o fundo.
+
+183
+00:13:10,500 --> 00:13:15,350
+E agora queremos mover-se mais para a direita o que significa da esquerda um ou dois por cento.
+
+184
+00:13:15,360 --> 00:13:19,530
+Wise mova este canto inferior mais da esquerda.
+
+185
+00:13:19,600 --> 00:13:22,310
+Vamos definir isso como 8.
+
+186
+00:13:23,580 --> 00:13:25,640
+E isso parece mudar um pouco demais.
+
+187
+00:13:25,620 --> 00:13:32,550
+Então entremos e voltemos para talvez cinco e lá podemos ver que agora temos no fundo.
+
+188
+00:13:32,560 --> 00:13:34,460
+Tudo bem, vá em frente e brinque se isso.
+
+189
+00:13:34,500 --> 00:13:38,170
+Se esses números são esses números ainda estão pouco claros.
+
+190
+00:13:38,160 --> 00:13:44,370
+Lembre-se que eles basicamente estão apenas denotando o fundo esquerdo e a largura e a altura do intervalo de 0
+
+191
+00:13:44,720 --> 00:13:47,210
+a 1 em relação à tela em branco.
+
+192
+00:13:47,290 --> 00:13:55,280
+Nós vamos seguir em frente e redefinir isso para o que temos naquele originalmente 0. 2 e 0. 5.
+
+193
+00:13:55,600 --> 00:13:57,410
+Então, temos nossa pequena inserção lá.
+
+194
+00:13:57,700 --> 00:14:00,880
+E então, o que eu vou fazer é avançar e traçar esses eixos.
+
+195
+00:14:01,090 --> 00:14:12,310
+Então, eu vou dizer que os eixos são um parcelas e direi que X é um Y e depois direi os eixos, duas parcelas
+
+196
+00:14:12,390 --> 00:14:16,510
+irão dizer o porquê? Vamos, vamos e executemos isso.
+
+197
+00:14:16,500 --> 00:14:24,030
+E aqui posso ver agora, tenho minha pequena insur e minha trama externa e então eu posso continuar adicionando coisas em cada conjunto de
+
+198
+00:14:24,040 --> 00:14:29,480
+eixos se eu quiser que minha inserção tenha um título, por exemplo, que é um eixo para.
+
+199
+00:14:29,520 --> 00:14:38,500
+Posso dizer eixos para o título do set e iremos e digamos inserir.
+
+200
+00:14:38,750 --> 00:14:44,870
+Bem, vai deixar bem claro que diremos lotes menores e depois nos eixos 1.
+
+201
+00:14:45,150 --> 00:14:46,470
+Vamos seguir em frente
+
+202
+00:14:49,140 --> 00:14:54,550
+e definir um título e vamos definir este título como grandes coágulos indo e executado isso.
+
+203
+00:14:55,210 --> 00:14:57,100
+Então observe o que aconteceu aqui.
+
+204
+00:14:57,140 --> 00:15:02,290
+Na verdade, recebi um erro porque na verdade não vi uma parcela menor porque esqueci de colocar um 2.
+
+205
+00:15:02,290 --> 00:15:04,960
+Aqui vamos passar mais uma vez.
+
+206
+00:15:04,990 --> 00:15:07,250
+OK, agora estamos conseguindo o que devemos conseguir.
+
+207
+00:15:07,270 --> 00:15:09,610
+Temos uma parcela maior e um enredo menor.
+
+208
+00:15:09,880 --> 00:15:15,860
+E, basicamente, essa é a idéia por trás da programação orientada a objetos que Portland você cria uma figura.
+
+209
+00:15:15,900 --> 00:15:17,830
+E isso é essencialmente apenas uma tela vazia.
+
+210
+00:15:17,980 --> 00:15:22,110
+Então, deixe-me entrar e mostrar isso mais uma vez, colocando isso em uma célula por si só.
+
+211
+00:15:22,890 --> 00:15:25,650
+Nós criamos essa figura vazia, não há nada a mostrar.
+
+212
+00:15:25,720 --> 00:15:34,900
+E então você adiciona um conjunto de eixos ao dizer eixos independentemente de um ou dois etc. é igual ao pensamento da figueira nos eixos de sublinhado e você passa
+
+213
+00:15:34,890 --> 00:15:40,540
+e esta lista que vai do fundo esquerdo e depois a largura e a altura
+
+214
+00:15:40,540 --> 00:15:42,720
+em relação a essa tela vazia.
+
+215
+00:15:42,730 --> 00:15:47,920
+Então, se executarmos isso, então temos nosso conjunto vazio de eixos e, então, você pode traçar esses
+
+216
+00:15:47,910 --> 00:15:53,060
+eixos, você pode dizer uma parcela de um eixo e, em seguida, X vir um Y.
+
+217
+00:15:53,130 --> 00:15:53,940
+Tudo bem.
+
+218
+00:15:53,940 --> 00:15:59,590
+Este é o tipo de metodologia com a qual vamos trabalhar com um mapa Cutlip até a maneira
+
+219
+00:15:59,590 --> 00:16:02,750
+muito básica de trabalhar o que é o método funcional.
+
+220
+00:16:02,860 --> 00:16:06,890
+Você pode apenas dizer atrativo para essa trama ou descascar essa subtração.
+
+221
+00:16:06,920 --> 00:16:11,410
+Vamos aprender a criar subtramas usando este método orientado a objetos que será muito
+
+222
+00:16:11,400 --> 00:16:14,190
+mais eficiente e nos dará muito mais controle.
+
+223
+00:16:14,560 --> 00:16:15,700
+ESTÁ BEM.
+
+224
+00:16:15,690 --> 00:16:20,250
+Vá em frente e reveja esta seção do gráfico do mapa conceitos do lib. Leitura sem livro.
+
+225
+00:16:20,290 --> 00:16:25,450
+Há muito mais notas e muito mais comentários no livro de notas caso algum desse confuso
+
+226
+00:16:25,780 --> 00:16:30,210
+você, mas espero que até agora você tenha uma compreensão completa de basicamente isso.
+
+227
+00:16:30,370 --> 00:16:34,420
+Estas linhas de código aqui se você entender o que está acontecendo na célula, então você é
+
+228
+00:16:34,410 --> 00:16:35,340
+muito bom para ir.
+
+229
+00:16:35,380 --> 00:16:36,900
+Nós apenas criamos uma figura.
+
+230
+00:16:37,030 --> 00:16:43,150
+Adicionamos um eixo a essa figura para encontrar a localização desse conjunto de eixos com esta lista e, em seguida,
+
+231
+00:16:43,140 --> 00:16:48,140
+você pode plotar nesse tipo de eixos, você pode definir os títulos no rótulo X etiqueta etc. Tudo bem.
+
+232
+00:16:48,180 --> 00:16:49,000
+Obrigado a todos.
+
+233
+00:16:49,000 --> 00:16:49,890
+E eu vou
+
+234
+00:16:50,000 --> 00:16:54,930
+ver você na próxima palestra ou continuaremos essa discussão com o mesmo caderno Jupiter.
+
+235
+00:16:54,930 --> 00:16:55,930
+Obrigado e eu vou ver a próxima palestra
+
+236
+00:16:55,990 --> 00:16:57,430
+&nbsp;

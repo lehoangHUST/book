@@ -1,0 +1,919 @@
+1
+00:00:05,400 --> 00:00:10,590
+Halo semuanya dan selamat datang di ceramah plot kategorikal untuk S. theaborna. ceramah.
+
+2
+00:00:10,590 --> 00:00:14,030
+Sekarang kita akan mengalihkan fokus kita ke memasukkan data kategorikal.
+
+3
+00:00:14,040 --> 00:00:16,760
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+4
+00:00:17,070 --> 00:00:21,950
+OK di sini saya di notebook Jupiter dan saya sudah memasukkan beberapa baris kode di sini.
+
+5
+00:00:21,960 --> 00:00:28,440
+Aku berkata mengimpor Seaborn dan Cessna's. Aku pergi ke depan dan berkata plot peta sejalan sehingga aku bisa melihat visualisasi
+
+6
+00:00:28,470 --> 00:00:30,150
+di dalam notebook Jupiter.
+
+7
+00:00:30,300 --> 00:00:34,530
+Dan kemudian saya pergi ke depan dan memuat set
+
+8
+00:00:34,560 --> 00:00:42,840
+data tips dan kemudian saya memeriksa kepala set data tips OK untuk plot kategori terutama akan khawatir
+
+9
+00:00:42,840 --> 00:00:50,790
+melihat distribusi kolom kategori seperti jenis kelamin ini atau perokok siang referensi ke salah satu kolom numerik
+
+10
+00:00:50,820 --> 00:00:53,450
+atau kolom kategori lainnya.
+
+11
+00:00:53,460 --> 00:00:59,610
+Mari kita mulai dan memulai dengan plot kategorikal paling dasar yang merupakan plot bar dan
+
+12
+00:00:59,610 --> 00:01:06,510
+Anda dapat melakukannya dengan memanggil plot Asness bar dan plot bar hanyalah plot umum yang memungkinkan Anda
+
+13
+00:01:06,600 --> 00:01:11,940
+untuk mengumpulkan data kategori berdasarkan beberapa fungsi dan secara default itulah artinya Anda
+
+14
+00:01:11,940 --> 00:01:16,190
+hampir dapat menganggap ini sebagai visualisasi grup dengan aksi.
+
+15
+00:01:16,200 --> 00:01:18,400
+Biarkan saya pergi ke depan dan menunjukkan kepada Anda apa yang saya maksud dengan itu.
+
+16
+00:01:18,600 --> 00:01:25,350
+Kita akan masuk dan menetapkan argumen xy dan data ke dalam plot plot semua jenis data mengatur kiat
+
+17
+00:01:25,440 --> 00:01:31,830
+termudah dan kemudian apa yang akan saya lakukan dan lakukan adalah mengatur sumbu x ke kolom kategorikal.
+
+18
+00:01:31,930 --> 00:01:34,760
+Dalam hal ini saya akan pergi ke depan dan memilih kolom seks di sini.
+
+19
+00:01:35,490 --> 00:01:43,110
+Dan kemudian untuk kolom Y atau ya untuk sumbu y kita dapat memilih kolom
+
+20
+00:01:43,140 --> 00:01:46,470
+yang numerik untuk total tagihan.
+
+21
+00:01:46,470 --> 00:01:52,320
+Dan ini akan membuat plot bar dan secara default apa yang ditampilkan di sini adalah rata-rata atau
+
+22
+00:01:52,320 --> 00:01:53,510
+rata-rata total tagihan.
+
+23
+00:01:53,580 --> 00:01:55,800
+Nilai kolom kategorisnya.
+
+24
+00:01:55,890 --> 00:02:02,640
+Jadi total tagihan rata-rata untuk laki-laki akan sedikit lebih tinggi dari rata-rata total tagihan untuk perempuan.
+
+25
+00:02:03,330 --> 00:02:09,780
+Dan Anda dapat melanjutkan dan mengubah apa yang dikenal sebagai objek penduga jika Anda ingin pada
+
+26
+00:02:10,050 --> 00:02:14,270
+dasarnya memengaruhi apa sebenarnya pengelompokan atau agregasi di sini.
+
+27
+00:02:14,580 --> 00:02:21,480
+Dan kita dapat melanjutkan dan melakukannya dengan menambahkan argumen lain di sini estimator.
+
+28
+00:02:21,480 --> 00:02:23,370
+Dan di sini kita akan melakukan tab shift.
+
+29
+00:02:23,370 --> 00:02:28,300
+Anda sebenarnya dapat melihat dokumentasi notebook Jupiter untuk ini.
+
+30
+00:02:28,440 --> 00:02:31,850
+Estimator adalah fungsi yang merupakan fungsi agregat.
+
+31
+00:02:31,860 --> 00:02:36,900
+Jadi ini semacam fungsi statistik untuk memperkirakan dalam setiap nampan kategoris dan secara
+
+32
+00:02:36,900 --> 00:02:39,630
+default itu akan menjadi rata-rata atau rata-rata.
+
+33
+00:02:39,810 --> 00:02:44,310
+Tapi saya juga bisa memasukkan fungsi saya sendiri jika Anda memiliki semacam fungsi agregat Anda dapat
+
+34
+00:02:44,310 --> 00:02:45,360
+melanjutkan dan memadamkannya.
+
+35
+00:02:45,420 --> 00:02:47,380
+Saat ini kami sedang mencari total tagihan rata-rata.
+
+36
+00:02:47,520 --> 00:02:52,820
+Tapi katakanlah kita ingin mengetahui standar deviasi gendernya misalnya.
+
+37
+00:02:52,830 --> 00:02:55,560
+Apakah ada lebih banyak standar deviasi pada pria dan total tagihan mereka.
+
+38
+00:02:55,590 --> 00:02:59,860
+Jadi lebih banyak varians atau perempuan memiliki lebih banyak varians.
+
+39
+00:02:59,860 --> 00:03:05,130
+Kita akan membahas pai penting saat kita menyalin dan menempel ini dan
+
+40
+00:03:05,130 --> 00:03:08,040
+meletakkannya di sel di atas ini.
+
+41
+00:03:08,120 --> 00:03:14,170
+Silakan masukkan sel di atas dan katakan penting di atas-I sebagai NPE di sini.
+
+42
+00:03:14,250 --> 00:03:20,670
+Dan kemudian di estimator saya akan pergi ke depan dan melewati fungsi pie untuk standar deviasi dan
+
+43
+00:03:21,210 --> 00:03:27,630
+ini akan memberitahu saya ketika saya menjalankan ini apa standar deviasi dari total kolom tagihan per kategori.
+
+44
+00:03:28,050 --> 00:03:30,510
+Dan Anda dapat meneruskan fungsi estimator apa pun yang Anda inginkan.
+
+45
+00:03:30,510 --> 00:03:31,730
+Anda bahkan dapat membuat sendiri.
+
+46
+00:03:32,100 --> 00:03:37,380
+Dan Anda bisa meneruskannya ke bar plot di mana x adalah kolom kategori dan Y adalah semacam kolom numerik.
+
+47
+00:03:37,770 --> 00:03:39,750
+Kemudian Anda melewati data Anda dan penduga apa pun.
+
+48
+00:03:39,750 --> 00:03:44,700
+Dan ini hanya agregat atau pada dasarnya hanya sebuah visualisasi semacam kelompok dengan mekanisme
+
+49
+00:03:44,700 --> 00:03:45,840
+di sini.
+
+50
+00:03:45,840 --> 00:03:54,840
+Baiklah mari kita lanjutkan dan membangun ini dengan melakukan plot perhitungan, plot perhitungan di seaborne pada dasarnya sama
+
+51
+00:03:54,840 --> 00:04:00,170
+dengan plot plot kecuali estimator secara eksplisit menghitung jumlah kejadian.
+
+52
+00:04:00,450 --> 00:04:09,020
+Dan karena itu kita hanya mengatur nilai x dan kemudian kita duduk di data sama dengan tips.
+
+53
+00:04:09,510 --> 00:04:15,840
+Dan ini pada dasarnya adalah hal yang sama dengan mengatakan seperti Pandas Thumb menghitung kolom
+
+54
+00:04:16,200 --> 00:04:18,310
+tips ini untuk gender.
+
+55
+00:04:18,330 --> 00:04:18,730
+Baiklah.
+
+56
+00:04:18,750 --> 00:04:23,580
+Nah, dasar-dasar counterplot pada dasarnya sama dengan plot bar kecuali sumbu y telah
+
+57
+00:04:23,580 --> 00:04:24,820
+dipilih untuk Anda.
+
+58
+00:04:24,900 --> 00:04:26,500
+Ini hanya akan menghitung kejadian.
+
+59
+00:04:26,520 --> 00:04:30,570
+Di sini kita bisa melihat ada lebih banyak laki-laki dalam dataset daripada perempuan.
+
+60
+00:04:31,200 --> 00:04:34,800
+Mari kita lanjutkan dan berbicara tentang plot kotak dan plot kekerasan.
+
+61
+00:04:34,800 --> 00:04:40,770
+Jenis plot ini digunakan untuk menunjukkan bahwa distribusi data kategorikal plot kotak juga kadang-kadang dikenal sebagai
+
+62
+00:04:40,770 --> 00:04:42,710
+plot box dan kumis.
+
+63
+00:04:42,900 --> 00:04:48,220
+Dan itu menunjukkan distribusi data kuantitatif dengan cara yang diharapkan memfasilitasi perbandingan
+
+64
+00:04:48,220 --> 00:04:49,130
+antar variabel.
+
+65
+00:04:49,230 --> 00:04:50,710
+Saya akan menunjukkan kepada Anda apa yang saya maksud dengan itu.
+
+66
+00:04:50,940 --> 00:05:00,630
+Saya akan membuat plot kotak dengan mengatakan S dan S bahwa plot kotak maka kita akan melewati x dan y dalam hal ini
+
+67
+00:05:00,630 --> 00:05:05,820
+saya akan memilih X untuk menjadi titik atau kolom data kategorikal.
+
+68
+00:05:05,880 --> 00:05:07,550
+Lalu mengapa akan menjadi numerik.
+
+69
+00:05:07,590 --> 00:05:09,560
+Ini akan menjadi total tagihan.
+
+70
+00:05:09,630 --> 00:05:14,220
+Jadi di sini kita akan mencoba melihat distribusi total tagihan per hari.
+
+71
+00:05:14,220 --> 00:05:18,170
+Dan terakhir saya harus memberikan data itu sebagai tips.
+
+72
+00:05:18,230 --> 00:05:20,460
+Ayo maju dan jalankan ini.
+
+73
+00:05:21,030 --> 00:05:23,730
+Dan di sini kita dapatkan plot kotak kita.
+
+74
+00:05:24,020 --> 00:05:24,400
+BAIK.
+
+75
+00:05:24,450 --> 00:05:29,640
+Plot kotak ini menampilkan ubin inti dari kumpulan data sementara kumis meluas untuk menunjukkan sisa
+
+76
+00:05:29,640 --> 00:05:33,600
+distribusi kecuali untuk titik-titik ini yang berada di luar kumis ini.
+
+77
+00:05:33,630 --> 00:05:40,710
+Ini ditentukan sebagai outlier dan pada dasarnya Anda hanya dapat menafsirkan ini dari misalnya jika kita melihat
+
+78
+00:05:40,710 --> 00:05:45,960
+Kamis sebagai hari dengan sendirinya kita miliki pada total tagihan sumbu y.
+
+79
+00:05:46,350 --> 00:05:51,100
+Dan kemudian pada sumbu X itu hanya dipisahkan berdasarkan kategori atau hari.
+
+80
+00:05:51,570 --> 00:05:55,770
+Jadi, jika saya melihat yang berwarna biru ini di sini sepanjang jalan di sebelah kiri untuk hari Kamis, itu pada
+
+81
+00:05:55,770 --> 00:05:58,130
+dasarnya memberi tahu saya bahwa sekitar 25 persen atau seperempat.
+
+82
+00:05:58,150 --> 00:06:02,430
+Itulah sebabnya ini disebut ubin inti adalah titik data pergi dari pusat bisikan ke
+
+83
+00:06:02,490 --> 00:06:07,190
+bawah di sini dan kemudian seperempat lagi pergi dari bagian bawah kotak ke tengah di sini.
+
+84
+00:06:07,350 --> 00:06:09,460
+Baris ini dan kemudian dll untuk bagian atas.
+
+85
+00:06:09,490 --> 00:06:14,070
+Jadi, tetapi sekarang, sekitar seperempat poin lagi ada di sini dan kemudian seperempat poin lainnya ada di sini.
+
+86
+00:06:14,460 --> 00:06:22,920
+Dan titik-titik ini adalah outlier dan kita bisa mulai benar-benar menyukai seaborne hanya dengan menambahkan beberapa kata
+
+87
+00:06:23,400 --> 00:06:26,820
+kode di sini dan menentukan rona.
+
+88
+00:06:27,360 --> 00:06:33,480
+Dan itu akan memungkinkan kita untuk membagi plot kotak ini lebih jauh dengan kolom kategori
+
+89
+00:06:33,630 --> 00:06:34,590
+kategorikal lainnya.
+
+90
+00:06:34,590 --> 00:06:37,470
+Dalam hal ini kita akan melanjutkan dan mengatakan Heugh sama dengan perokok.
+
+91
+00:06:37,580 --> 00:06:46,080
+Jika saya menjalankan ini sekarang saya melihat plot kotak dibagi per hari dan juga dibagi dengan status perokok dan status perokok berwarna di
+
+92
+00:06:46,110 --> 00:06:47,620
+sini untuk Anda.
+
+93
+00:06:47,910 --> 00:06:50,030
+Dan di sini Anda sekarang dapat membandingkan tidak hanya.
+
+94
+00:06:50,030 --> 00:06:55,150
+Perilaku hari demi hari untuk total tagihan tetapi juga apakah orang ini perokok atau bukan.
+
+95
+00:06:55,320 --> 00:06:57,990
+Dan itu benar-benar kekuatan sesungguhnya di balik seaborne.
+
+96
+00:06:58,080 --> 00:07:03,060
+Dengan cepat Anda dapat menambahkan indikator rona ini yang pada dasarnya memberi Anda seluruh lapisan
+
+97
+00:07:03,060 --> 00:07:06,000
+data lainnya dengan sangat cepat dan sangat lancar.
+
+98
+00:07:06,530 --> 00:07:13,500
+Jadi Anda dapat membandingkan bahwa pada dasarnya orang pada hari Jumat cenderung memiliki tagihan yang lebih besar
+
+99
+00:07:13,500 --> 00:07:19,950
+jika mereka bukan perokok dibandingkan jika mereka adalah perokok dan kemudian Anda dapat mulai benar-benar melihat
+
+100
+00:07:19,950 --> 00:07:24,450
+variasi untuk perokok atau distribusi untuk perokok dan non-perokok. .
+
+101
+00:07:24,510 --> 00:07:30,450
+Baiklah mari kita lanjutkan dan berbicara tentang plot kekerasan sekarang akan pergi ke depan dan menghapus rona ini
+
+102
+00:07:32,220 --> 00:07:38,400
+di sini sehingga kita dapat melihat plot kotak asli kami dan kemudian saya akan memanggil plot kekerasan dan plot
+
+103
+00:07:38,430 --> 00:07:41,630
+kekerasan memainkan peran yang sangat mirip dengan plot kotak.
+
+104
+00:07:42,000 --> 00:07:44,930
+Dan Anda bisa melakukannya hanya karena pada dasarnya plot kekerasan itu.
+
+105
+00:07:45,330 --> 00:07:50,550
+Dan apa yang akan dilakukan adalah juga menunjukkan distribusi data di beberapa jenis kategori.
+
+106
+00:07:51,030 --> 00:07:56,370
+Jadi itu akan mengambil argumen yang sama persis seperti plot kotak akan mengambil x untuk kategori tersebut.
+
+107
+00:07:57,080 --> 00:08:02,460
+Istri Anda akan menjadi semacam kolom numerik yang akan tetap dengan total tagihan
+
+108
+00:08:02,460 --> 00:08:05,170
+dan kemudian akan melewati data kami.
+
+109
+00:08:05,180 --> 00:08:10,260
+CBS akan terus maju dan menjalankan ini dan melihat seperti apa plot ini dan
+
+110
+00:08:10,260 --> 00:08:14,040
+biarkan saya memperkecil sehingga kami benar-benar dapat membandingkan keduanya.
+
+111
+00:08:14,040 --> 00:08:14,250
+Baiklah.
+
+112
+00:08:14,250 --> 00:08:18,920
+Jadi kami memiliki kotak kami di atas dan biola kami di bawah.
+
+113
+00:08:19,380 --> 00:08:25,350
+Sekarang plot biola tidak seperti plot kotak memungkinkan kita untuk benar-benar memplot semua komponen yang
+
+114
+00:08:25,350 --> 00:08:31,650
+sesuai dengan titik data aktual dan pada dasarnya menunjukkan estimasi kepadatan kernel dari distribusi yang mendasarinya.
+
+115
+00:08:32,250 --> 00:08:36,930
+Dan ini pada dasarnya hanya menunjukkan jika kita membagi ini menjadi setengah
+
+116
+00:08:37,020 --> 00:08:43,290
+dari distribusi titik di sisinya dan ini memungkinkan Anda untuk mengungkapkan lebih banyak informasi tentang titik data
+
+117
+00:08:43,380 --> 00:08:49,980
+itu sendiri biayanya karena fakta bahwa sedikit sulit untuk menafsirkan atau baca versus kotak plop plot kotak sangat
+
+118
+00:08:49,980 --> 00:08:56,460
+mudah untuk dilihat dan Anda dapat dengan cepat mengetahui di mana kira-kira data membandingkan pada kategori dalam
+
+119
+00:08:57,660 --> 00:08:58,700
+plot kekerasan.
+
+120
+00:08:58,710 --> 00:09:03,840
+Kami hanya akan memberi Anda lebih banyak informasi sejauh distribusi semua poin itu sendiri.
+
+121
+00:09:04,050 --> 00:09:07,470
+Tapi itu semacam datang pada biaya mereka harus menghabiskan sedikit lebih banyak waktu untuk melihatnya
+
+122
+00:09:07,470 --> 00:09:08,000
+dan memahaminya.
+
+123
+00:09:08,130 --> 00:09:11,560
+Namun kedua plot ini jelas sangat terkait satu sama lain.
+
+124
+00:09:11,580 --> 00:09:14,660
+Hanya saja plot kekerasan menunjukkan sedikit informasi lebih lanjut.
+
+125
+00:09:14,880 --> 00:09:21,180
+Terkadang informasi ini dapat disembunyikan dari Anda jika Anda hanya menggunakan plot kotak dan plot kekerasan
+
+126
+00:09:21,240 --> 00:09:22,650
+seperti plot kotak.
+
+127
+00:09:22,680 --> 00:09:24,860
+Juga memiliki opsi untuk melakukan Whew.
+
+128
+00:09:25,140 --> 00:09:32,080
+Jadi saya bisa mengatakan Anda membeli seks dan saya akan tunjukkan plot kekerasan di sebelah satu sama lain.
+
+129
+00:09:32,080 --> 00:09:37,710
+Nah, yang menarik tentang plot kekerasan versus plot kotak adalah sebagai argumen lain alih-alih
+
+130
+00:09:37,710 --> 00:09:43,680
+meletakkan dua plot kekerasan satu sama lain karena informasi plot biola pada dasarnya berlipat ganda.
+
+131
+00:09:44,010 --> 00:09:50,040
+Saya dapat memiliki satu setengah menjadi satu di sini dan setengah lainnya menjadi yang lain dan
+
+132
+00:09:51,270 --> 00:09:57,310
+Anda dapat melakukannya dengan mengatakan split sama dengan benar sebagai argumen dan kemudian itu akan semacam membagi distribusi.
+
+133
+00:09:57,330 --> 00:10:00,130
+Dan di sini Anda memiliki lebih banyak informasi.
+
+134
+00:10:00,120 --> 00:10:06,360
+Sekarang Anda dapat langsung membandingkan distribusi yang didasarkan pada kategori lain dan melihat bagaimana kategori itu
+
+135
+00:10:06,370 --> 00:10:10,080
+sendiri pada sumbu x dibandingkan satu sama lain.
+
+136
+00:10:10,100 --> 00:10:15,000
+Memang ini datang lagi dengan biaya yang Anda akan menghabiskan lebih banyak waktu melihat visualisasi ini.
+
+137
+00:10:15,420 --> 00:10:19,600
+Jadi Anda benar-benar harus tahu audiens Anda dan tahu apa yang tepat ketika
+
+138
+00:10:19,600 --> 00:10:25,210
+Anda menggunakan dasar laut dan visualisasi canggih ini jika Anda berurusan dengan beberapa data yang lebih teknis adalah orang-orang
+
+139
+00:10:25,200 --> 00:10:30,310
+yang merupakan ilmuwan data sendiri dan telah melihat plot kekerasan sebelum plot semacam ini pilihan yang bagus.
+
+140
+00:10:30,510 --> 00:10:36,120
+Namun untuk berurusan dengan lebih banyak tipe eksekutif CEO, orang-orang manajemen mungkin hanya plot kotak
+
+141
+00:10:36,120 --> 00:10:41,250
+sederhana yang lebih populer mungkin pilihan yang tepat kecuali Anda menemukan sesuatu yang sangat
+
+142
+00:10:41,250 --> 00:10:43,140
+menarik dalam plot kekerasan.
+
+143
+00:10:43,140 --> 00:10:49,290
+Baiklah mari kita lanjutkan dan berbicara tentang beberapa metode yang lebih maju untuk memvisualisasikan jenis data
+
+144
+00:10:49,290 --> 00:10:50,200
+kategorikal ini.
+
+145
+00:10:50,230 --> 00:10:55,570
+Kami akan memulai dengan strip plot dan stript strip sebenarnya mungkin yang paling sederhana tapi
+
+146
+00:10:55,560 --> 00:10:58,510
+kami akan membangunnya dan kita akan memperbesar sini.
+
+147
+00:10:58,650 --> 00:11:05,400
+Kita akan mendapatkan dan mengatakan esensi strip plot dan plot strip akan menggambar sebar di mana
+
+148
+00:11:05,400 --> 00:11:07,140
+satu variabel kategorikal.
+
+149
+00:11:07,140 --> 00:11:12,270
+Jadi saya akan mengatakan strip plot dan kita akan melakukan hal
+
+150
+00:11:12,270 --> 00:11:18,940
+yang sama persis bahwa sebelum X akan menjadi kategorikal y akan menjadi total tagihan numerik.
+
+151
+00:11:18,960 --> 00:11:21,820
+Dan datanya akan sama dengan tips.
+
+152
+00:11:22,240 --> 00:11:30,670
+Dan ini pada dasarnya hanya sebaran berdasarkan dari masalah kategori satu dengan plot strip ini adalah bahwa Anda tidak dapat benar-benar tahu berapa
+
+153
+00:11:30,660 --> 00:11:36,100
+banyak poin yang ditumpuk satu sama lain yang dapat Anda lakukan adalah pada argumen
+
+154
+00:11:36,240 --> 00:11:42,770
+lain yang disebut jitter dan apa jitter akan dilakukan jika kita masuk dan mengatakan itu benar di sini.
+
+155
+00:11:42,860 --> 00:11:47,640
+Apakah ini akan menambahkan sedikit noise acak untuk memisahkan beberapa poin yang ditumpuk ini.
+
+156
+00:11:47,800 --> 00:11:53,610
+Dan Anda dapat melihat poin yang lebih tebal dan lebih banyak ada lebih jelas dibandingkan hanya plot strip
+
+157
+00:11:53,620 --> 00:11:54,280
+normal.
+
+158
+00:11:54,300 --> 00:11:58,710
+Jadi plot stript normal jika dia memiliki banyak poin ditumpuk satu sama lain itu agak sulit
+
+159
+00:11:58,710 --> 00:11:59,550
+untuk diceritakan.
+
+160
+00:11:59,550 --> 00:12:06,240
+Tetapi sekarang jika Anda dapat melihat kerapatan sedikit lebih baik dengan plot strip seperti plot kekerasan Anda
+
+161
+00:12:06,250 --> 00:12:08,830
+dapat mulai menambahkan beberapa argumen ekstra.
+
+162
+00:12:09,030 --> 00:12:12,540
+Jadi sekali lagi kita dapat mengatakan bahwa dia setara dengan sesuatu seperti seks.
+
+163
+00:12:12,630 --> 00:12:19,310
+Jalankan ini dan sekarang saya memiliki isyarat berbasis warna dan kami juga dapat melakukan split pada ini
+
+164
+00:12:19,330 --> 00:12:26,170
+seperti kita bisa memiliki plot kekerasan palsu dan ini pada dasarnya akan membagi warna-warna ini berdasarkan argumen schewe Anda.
+
+165
+00:12:26,220 --> 00:12:26,770
+BAIK.
+
+166
+00:12:27,150 --> 00:12:33,030
+Sekarang plot seperti ini lagi Anda harus berhati-hati, mungkin sulit untuk menafsirkannya
+
+167
+00:12:33,030 --> 00:12:37,170
+dibandingkan plot kotak sederhana atau bahkan plot kekerasan.
+
+168
+00:12:37,200 --> 00:12:43,320
+Beberapa orang suka menggabungkan ide strip plot dengan plot kekerasan dan membuat sesuatu yang dikenal
+
+169
+00:12:43,330 --> 00:12:48,060
+sebagai plot segerombolan dan Seaborn memungkinkan Anda untuk benar-benar melakukan ini.
+
+170
+00:12:48,300 --> 00:12:49,790
+Sebuah komplotan segerombolan.
+
+171
+00:12:49,800 --> 00:12:50,730
+Kami keluar dan mulai mengetik.
+
+172
+00:12:50,740 --> 00:12:56,210
+Ini sangat mirip dengan strip plot kecuali titik disesuaikan sehingga tidak tumpang tindih.
+
+173
+00:12:56,310 --> 00:12:59,760
+Dan ini sebenarnya memberikan representasi yang lebih baik dari distribusi nilai.
+
+174
+00:12:59,910 --> 00:13:04,520
+Ini seperti menggabungkan plot strip scatterplot dengan plot kekerasan.
+
+175
+00:13:04,530 --> 00:13:05,890
+Biarkan saya menunjukkan kepada Anda apa yang saya maksud dengan itu.
+
+176
+00:13:05,890 --> 00:13:08,190
+Mungkin akan ada sedikit lebih jelas ketika Anda melihatnya.
+
+177
+00:13:08,250 --> 00:13:13,060
+Kita akan melanjutkan dan memberikan argumen yang sama untuk x.
+
+178
+00:13:13,800 --> 00:13:15,170
+Kami akan mengatakan mengapa total tagihan.
+
+179
+00:13:15,170 --> 00:13:25,090
+Whoops total tagihan garis bawah dan kemudian kami akan mengatakan bahwa data adalah tip.
+
+180
+00:13:25,770 --> 00:13:28,440
+Dan di sini kita bisa melihat plot kawanan.
+
+181
+00:13:28,620 --> 00:13:34,000
+Dan mudah-mudahan agak lebih jelas bagaimana plot swarm pada dasarnya adalah kombinasi dari plot strip
+
+182
+00:13:34,240 --> 00:13:35,530
+dan plot kekerasan.
+
+183
+00:13:35,550 --> 00:13:42,000
+Ini menunjukkan distribusi yang sama kecuali sebenarnya menunjukkan semua poin itu sendiri.
+
+184
+00:13:42,000 --> 00:13:47,130
+Satu kelemahan menggunakan plot segerombolan meskipun mereka cukup bagus dan keren dan fakta bahwa mereka menunjukkan
+
+185
+00:13:47,130 --> 00:13:52,450
+banyak informasi kadang-kadang mereka tidak benar-benar skala yang baik untuk jumlah yang sangat besar baik dalam hal
+
+186
+00:13:52,440 --> 00:13:54,660
+kemampuan untuk menunjukkan semua poin .
+
+187
+00:13:54,720 --> 00:13:58,810
+Poin-poin ini terlalu luas karena Anda tidak ingin menumpuk apa pun di atas satu sama lain.
+
+188
+00:13:58,890 --> 00:14:01,710
+Dan itu juga membutuhkan banyak perhitungan untuk mulai mengaturnya.
+
+189
+00:14:01,710 --> 00:14:05,360
+Jadi saya akan menyarankan untuk tidak menggunakan plot kawanan untuk set data yang sangat besar.
+
+190
+00:14:05,500 --> 00:14:10,530
+Dan sebenarnya saya akan mengatakan secara umum mungkin menjauh dari hanya menunjukkan plot
+
+191
+00:14:10,530 --> 00:14:14,170
+kawanan karena kebanyakan orang mungkin belum pernah melihatnya sebelumnya.
+
+192
+00:14:14,150 --> 00:14:19,240
+Ketahui dengan cepat jika Anda benar-benar menyukai plot kawanan Anda benar-benar dapat menggabungkannya dengan plot kekerasan
+
+193
+00:14:19,230 --> 00:14:22,630
+untuk menunjukkan kedua potongan informasi yang ditumpuk satu sama lain.
+
+194
+00:14:22,890 --> 00:14:31,950
+Anda dapat mengatakan dalam sel yang sama ini akan melanjutkan dan mengatakan SNL plot biola dan akan menyalin dan menempelkan informasi yang
+
+195
+00:14:31,950 --> 00:14:39,660
+sama persis di sini ke plot kekerasan kami dan kami akan pergi ke depan dan menentukan warna plot segerombolan
+
+196
+00:14:40,200 --> 00:14:47,730
+menjadi hitam dan ini sebenarnya akan memplot keduanya tepat di atas satu sama lain dan di sini Anda
+
+197
+00:14:47,760 --> 00:14:54,170
+dapat melihat setiap titik dan KDE atau plot estimasi kepadatan kernel yang sesuai di atasnya.
+
+198
+00:14:54,180 --> 00:14:57,200
+Sekarang ada banyak informasi di sini jadi hati-hati dengan ini.
+
+199
+00:14:57,210 --> 00:15:03,090
+Ini mungkin lebih berguna untuk presentasi tetapi hanya untuk analisis data eksplorasi. Semoga plot
+
+200
+00:15:03,100 --> 00:15:08,340
+seperti ini membantu Anda segera memahami data Anda tetapi tidak terlalu banyak menjelaskan
+
+201
+00:15:08,350 --> 00:15:09,640
+kepada eksekutif.
+
+202
+00:15:09,850 --> 00:15:16,020
+Hal-hal semacam itu lebih baik dilakukan dengan plot kotak atau semacam plot perhitungan atau plot
+
+203
+00:15:17,040 --> 00:15:23,310
+plot jenis plot ini plot plot kekerasan yang lebih maju, plot segerombolan hanya lebih cocok untuk
+
+204
+00:15:23,320 --> 00:15:28,780
+data ilmuwan sendiri dan telah benar-benar membaca atau mengeksplorasi Anda informasi data.
+
+205
+00:15:28,770 --> 00:15:34,560
+Akhirnya saya ingin berbicara tentang Faktor plot faktor sebenarnya hanya bentuk yang paling umum dari
+
+206
+00:15:34,570 --> 00:15:42,840
+semua plot ini dan apa yang dilakukannya adalah jika kita melakukan shift tab di sini dibutuhkan sebuah argumen wargame mengapa argumen dapat
+
+207
+00:15:42,850 --> 00:15:48,990
+mengambil data manusia tetapi kemudian juga hanya menerima argumen jenis dan argumen jenis pada dasarnya adalah apa
+
+208
+00:15:49,000 --> 00:15:52,350
+yang akan menggambarkan fakta atau plot itu sendiri.
+
+209
+00:15:52,360 --> 00:15:58,970
+Misalnya kita dapat mengatakan fakta atau plot akan mengatakan kita akan menyalin dan menempel hari sekuel itu mengapa
+
+210
+00:15:58,980 --> 00:16:05,100
+total tagihan adalah untuk Tipps permisi dan kemudian kita dapat melanjutkan dan mengatakan Kines sama dengan.
+
+211
+00:16:05,320 --> 00:16:08,190
+Katakanlah salah satu plot bar, Anda bisa mengatakan bar.
+
+212
+00:16:08,500 --> 00:16:12,840
+Dan itu menciptakan plot bar berdasarkan kategori tersebut.
+
+213
+00:16:12,850 --> 00:16:17,650
+Jadi semua plot yang telah kita lihat sebelum metode yang paling umum disebut plot faktor Sonesta.
+
+214
+00:16:17,970 --> 00:16:19,460
+Dan kemudian sebutkan jenisnya.
+
+215
+00:16:19,460 --> 00:16:24,900
+Jadi misalnya jika kami ingin membuat ulang plot kekerasan Anda dapat memanggil jenis biola dan ini
+
+216
+00:16:24,900 --> 00:16:26,830
+mulai membuat plot kekerasan itu.
+
+217
+00:16:26,860 --> 00:16:32,580
+Secara pribadi saya lebih suka untuk benar-benar menyebut plot itu sendiri secara spesifik sehingga sebagai
+
+218
+00:16:32,590 --> 00:16:38,890
+S bahwa plot plot stript plot kekerasan dll dibandingkan memanggil fakta atau metode plot yang lebih umum tetapi ketahuilah
+
+219
+00:16:38,880 --> 00:16:41,680
+bahwa ini tersedia untuk Anda jika Anda ingin menyebutnya.
+
+220
+00:16:41,670 --> 00:16:42,140
+Baiklah.
+
+221
+00:16:42,420 --> 00:16:44,140
+Itu untuk plot kategoris.
+
+222
+00:16:44,130 --> 00:16:50,490
+Semoga Anda melihat banyak kekuatan yang tersedia untuk Anda dan menggunakan kekuatan ini dengan bijak terutama tergantung pada siapa
+
+223
+00:16:50,500 --> 00:16:54,870
+yang Anda tunjukkan misalnya seperti yang saya sebutkan sebelumnya plot kotak ini.
+
+224
+00:16:54,900 --> 00:17:00,990
+Mudah dibaca, banyak orang manajemen memahaminya dengan baik, plot yang lebih canggih ini lebih untuk
+
+225
+00:17:01,000 --> 00:17:03,150
+Anda jelajahi data itu.
+
+226
+00:17:03,150 --> 00:17:03,630
+BAIK.
+
+227
+00:17:03,660 --> 00:17:09,990
+Semoga Anda menikmati kuliah ini dan saya harap Anda menikmati melihat betapa mudahnya seaborne membuat visualisasi ini untuk
+
+228
+00:17:09,990 --> 00:17:10,560
+Anda.
+
+229
+00:17:10,740 --> 00:17:14,670
+Semua yang telah Anda lakukan pada dasarnya hanya satu baris kode yang cukup mengagumkan.
+
+230
+00:17:15,130 --> 00:17:17,580
+Oke terima kasih dan sampai jumpa di kuliah berikutnya

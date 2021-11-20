@@ -1,0 +1,819 @@
+1
+00:00:05,220 --> 00:00:06,050
+Salutare tuturor.
+
+2
+00:00:06,050 --> 00:00:12,060
+Bine ați venit în partea a patra a seriei de cursuri de prăbușire Python din această serie de cursuri, vom
+
+3
+00:00:12,120 --> 00:00:18,180
+discuta despre expresiile lambda funcțiile de hartă și filtrare, precum și diferite metode pe care le puteți folosi pe diferite
+
+4
+00:00:18,180 --> 00:00:19,920
+tipuri de date din Python.
+
+5
+00:00:19,920 --> 00:00:23,280
+Să mergem înainte și să ne întoarcem la notebook-ul Jupiter pentru a începe.
+
+6
+00:00:23,280 --> 00:00:23,550
+In regula.
+
+7
+00:00:23,550 --> 00:00:25,130
+Aici sunt la notebook-ul Jupiter.
+
+8
+00:00:25,170 --> 00:00:30,870
+Ultima dată când am plecat la discuție despre modul în care vă puteți crea propriile funcții în Python, acum
+
+9
+00:00:30,870 --> 00:00:36,540
+vom face să discutăm funcțiile de hartă și filtrare și apoi cum putem folosi expresiile lambda, în loc
+
+10
+00:00:36,540 --> 00:00:38,690
+să scrie o funcție completă afară.
+
+11
+00:00:38,730 --> 00:00:44,210
+Permiteți-mi să merg înainte și să revizuiți repede cum să scrieți o funcție pe care o utilizați doar cuvântul cheie D pentru moarte.
+
+12
+00:00:44,400 --> 00:00:51,300
+Numele funcției în acest caz numesc această funcție ori pentru a accepta o variabilă ca argument.
+
+13
+00:00:51,300 --> 00:00:53,360
+Sunt.
+
+14
+00:00:53,360 --> 00:00:57,930
+Și apoi voi merge mai departe și întoarceți acea variabilă înmulțită cu două.
+
+15
+00:00:58,440 --> 00:01:03,390
+Ceea ce înseamnă că dacă suni ori 2 pe un număr, cum ar fi 5, se întoarce 10.
+
+16
+00:01:03,390 --> 00:01:07,760
+Acum hai să mergem înainte și să discutăm funcția hărții.
+
+17
+00:01:08,370 --> 00:01:12,160
+Am de gând să fac o secvență numită CQ și va fi o listă.
+
+18
+00:01:12,180 --> 00:01:14,970
+Unu doi trei patru cinci.
+
+19
+00:01:15,030 --> 00:01:23,400
+Acum, să spunem că am vrut să aplic această funcție pentru fiecare element din listă și apoi
+
+20
+00:01:23,520 --> 00:01:25,070
+să afișez lista.
+
+21
+00:01:25,290 --> 00:01:31,380
+Ei bine, aș putea folosi o buclă pentru a face acest lucru și apoi adăugați rezultatele la o altă listă.
+
+22
+00:01:31,410 --> 00:01:37,960
+Totuși harta este o funcție construită în Python care vă permite să salvați acel pas.
+
+23
+00:01:37,960 --> 00:01:39,390
+Du-te înainte și scrie în matematică.
+
+24
+00:01:39,420 --> 00:01:44,280
+Puteți face schimbul de intrare pentru a vedea efectiv șirul de documentație pentru hartă.
+
+25
+00:01:44,340 --> 00:01:49,340
+Dar, practic, va crea un iterator care calculează funcția folosind argumente din fiecare
+
+26
+00:01:49,340 --> 00:01:50,250
+dintre iterabil.
+
+27
+00:01:50,520 --> 00:01:54,890
+Permiteți-mi să merg și să vă explic doar în limbajul limbii engleze simple clar ce înseamnă de fapt.
+
+28
+00:01:54,990 --> 00:02:02,170
+Veți spune hartă pasan o funcție, de exemplu, ori 2.
+
+29
+00:02:02,340 --> 00:02:06,000
+Apoi, secvența pe care doriți să o mapați.
+
+30
+00:02:06,150 --> 00:02:12,200
+Și dacă alergi că vor raporta că ai o hartă în acest loc în memorie.
+
+31
+00:02:12,210 --> 00:02:19,050
+Dacă doriți să executați această hartă și să obțineți rezultatul înapoi ca o listă pe care ați aruncat-o
+
+32
+00:02:19,080 --> 00:02:21,590
+într-o listă utilizând funcția listă construită.
+
+33
+00:02:21,960 --> 00:02:28,890
+Apoi, acest lucru va reveni în cele din urmă această funcție mapată la fiecare element din acea secvență și o va
+
+34
+00:02:28,890 --> 00:02:30,490
+returna ca o listă.
+
+35
+00:02:30,510 --> 00:02:34,130
+Și acum putem vedea că avem fiecare element înmulțit cu doi.
+
+36
+00:02:34,140 --> 00:02:39,760
+Deci acum avem două patru șase opt zece, în loc de două, trei, patru cinci.
+
+37
+00:02:40,250 --> 00:02:41,220
+O.K.
+
+38
+00:02:41,220 --> 00:02:48,150
+Deci, poate vă întrebați că trebuie să definiți complet o funcție completă, cum ar fi ori 2 sau există o cale mai ușoară de
+
+39
+00:02:48,180 --> 00:02:49,610
+a face acest lucru.
+
+40
+00:02:49,620 --> 00:02:54,480
+Deoarece, de obicei, atunci când utilizați ceva de genul hărții, nu doriți să scrieți și să definiți
+
+41
+00:02:54,480 --> 00:02:55,650
+o întreagă funcție.
+
+42
+00:02:55,770 --> 00:03:01,980
+Acest lucru va fi probabil un lucru de o singură dată și aici se află în joc expresia de teren.
+
+43
+00:03:02,040 --> 00:03:09,590
+Îți voi arăta cum putem rescrie această funcție în momentele în care suntem într-o expresie lambda și eu o fac
+
+44
+00:03:09,590 --> 00:03:11,930
+încet doar să o despart.
+
+45
+00:03:12,360 --> 00:03:21,880
+De asemenea, această funcție poate fi scrisă într-o singură linie de timp la modul în care colonul nostru returnează r
+
+46
+00:03:21,890 --> 00:03:23,190
+ori 2.
+
+47
+00:03:23,250 --> 00:03:28,010
+Și dacă am reîncepe aceste două celule, încă funcționează bine.
+
+48
+00:03:28,050 --> 00:03:34,380
+O expresie de teren va încerca să reproducă acest tip de structură, cu excepția faptului că va elimina cuvintele de care
+
+49
+00:03:34,980 --> 00:03:37,180
+nu avem nevoie în mod implicit.
+
+50
+00:03:37,320 --> 00:03:42,150
+Când vreți să vă gândiți la asta, nu aveți nevoie de F sau de întoarcere, deoarece acestea sunt un
+
+51
+00:03:42,150 --> 00:03:44,100
+fel de valori atribuite, desigur, într-o funcție.
+
+52
+00:03:44,130 --> 00:03:48,530
+Veți fi nevoit să definiți numele și să-l returnați pentru expresia pământului.
+
+53
+00:03:48,570 --> 00:03:50,730
+Altfel cunoscut ca o funcție anonimă.
+
+54
+00:03:50,730 --> 00:03:55,200
+Doar doriți să înlocuiți într-o instanță în care nu doriți să definiți o întreagă
+
+55
+00:03:55,200 --> 00:04:00,470
+funcție care este expresia lambda și puteți face acest lucru prin citirea în esență a acestei funcții.
+
+56
+00:04:00,480 --> 00:04:08,130
+Dar scapandu-te de F si de numele si in loc sa introduci doar lambda si apoi sa mergi mai departe si sa scapi
+
+57
+00:04:08,130 --> 00:04:12,320
+de revenire si sa tipi ce vrei de fapt sa te intoarci.
+
+58
+00:04:12,570 --> 00:04:15,970
+Și acesta este pământul expresia.
+
+59
+00:04:16,020 --> 00:04:23,490
+Acum aș putea dacă aș vrea să spun că e egal cu acest pământ expresia și apoi apela un număr
+
+60
+00:04:23,520 --> 00:04:25,060
+cum ar fi 6.
+
+61
+00:04:25,260 --> 00:04:28,490
+Și pot vedea că primesc în schimb șase ori două.
+
+62
+00:04:28,590 --> 00:04:32,970
+Deci, de obicei, nu aș folosi expresia de pământ așa, dar este posibil să o folosesc.
+
+63
+00:04:33,330 --> 00:04:39,060
+Ei bine, veți folosi expresia lambda pentru ceva de genul hărții sau în loc de a defini
+
+64
+00:04:39,060 --> 00:04:40,320
+o funcție întreagă.
+
+65
+00:04:40,500 --> 00:04:49,060
+Tocmai ați scrie expresia lambda aici, ați spune lambda ceea ce doriți să pasan colon și apoi ceea ce doriți să reveniți
+
+66
+00:04:49,300 --> 00:04:55,400
+în acest caz este să mergeți mai departe și să multiplicați totul cu trei.
+
+67
+00:04:55,450 --> 00:05:01,240
+Și acum, dacă execut acest lucru pe aceeași secvență, am luat fiecare element din secvență și îl înmulțesc
+
+68
+00:05:01,240 --> 00:05:06,310
+cu trei și nu mai trebuie să definesc în mod formal o întreagă funcție.
+
+69
+00:05:06,370 --> 00:05:11,500
+Pot folosi doar expresii lambda lambda sau ceva în care să folosesc multe, mai ales atunci
+
+70
+00:05:11,510 --> 00:05:13,980
+când începem să învățăm despre biblioteca Pandurs.
+
+71
+00:05:13,990 --> 00:05:18,330
+Deci, dacă aveți întrebări despre acest lucru, vă rugăm să nu ezitați să postați forumurile Q &amp; A.
+
+72
+00:05:18,340 --> 00:05:25,130
+Dar este în principiu doar modul de rescriere a unei funcții întregi într-o singură linie de cod curat.
+
+73
+00:05:25,330 --> 00:05:30,720
+Iar motivul pentru aceasta este că, de obicei, nu doriți să scrieți și să definiți o întreagă funcție.
+
+74
+00:05:31,150 --> 00:05:35,620
+Cu toate acestea, întotdeauna este o opțiune pentru dvs. dacă sunteți vreodată confuz de expresii de teren.
+
+75
+00:05:35,620 --> 00:05:40,630
+Puteți defini o funcție formală așa cum am făcut-o pentru vremurile 2 și o folosim în schimb.
+
+76
+00:05:40,620 --> 00:05:44,800
+Acum, să mergem mai departe și să discutăm despre funcția de filtru încorporată.
+
+77
+00:05:44,800 --> 00:05:48,010
+Filtrul va avea o structură foarte asemănătoare cu harta.
+
+78
+00:05:48,120 --> 00:05:54,490
+Dar, în loc de a mapa o funcție la fiecare element dintr-o secvență, vom filtra elementele
+
+79
+00:05:54,490 --> 00:05:55,570
+dintr-o secvență.
+
+80
+00:05:55,570 --> 00:05:59,800
+Lasă-mă să intru și să-ți arăt cum poți face asta.
+
+81
+00:05:59,890 --> 00:06:09,190
+Veți merge mai departe și apelați filtrul și apoi veți merge la pasan fie o expresie a unei funcții, fie o
+
+82
+00:06:09,640 --> 00:06:13,460
+expresie lambda care filtrează și returnează valori booleene.
+
+83
+00:06:13,480 --> 00:06:27,070
+Deci, de exemplu, pot spune lambda unui număr de colon că numărul doi este egal cu zero și apoi trece
+
+84
+00:06:27,070 --> 00:06:28,490
+în secvență.
+
+85
+00:06:28,870 --> 00:06:31,530
+Și aceasta va reveni doar la expresia filtrului.
+
+86
+00:06:31,560 --> 00:06:34,100
+De fapt vreau să obțin rezultatele înapoi.
+
+87
+00:06:34,300 --> 00:06:36,230
+Trebuie să o pun pe o listă.
+
+88
+00:06:36,730 --> 00:06:43,030
+Și aceasta returnează doar numerele parțiale în secvența mea 2 și 4.
+
+89
+00:06:43,030 --> 00:06:45,400
+Deci, haideți să distrugem ce se întâmplă aici.
+
+90
+00:06:45,610 --> 00:06:54,070
+Spun filtru și această expresie lambda ia un număr și returnează o valoare condițională adevărată sau falsă bazată pe
+
+91
+00:06:54,160 --> 00:06:56,950
+un fel de operație condiționată.
+
+92
+00:06:57,000 --> 00:07:02,930
+Deci, un filtru trebuie să folosească un fel de funcție sau expresie lambda care returnează o valoare booleană.
+
+93
+00:07:02,950 --> 00:07:04,520
+Adevărat sau fals.
+
+94
+00:07:04,630 --> 00:07:08,680
+Apoi, ceea ce aveți de gând să faceți și să faceți este să îl treceți într-un obiect iterabil.
+
+95
+00:07:08,680 --> 00:07:14,350
+Și când apelați lista pe ea, va reveni doar valorile în cazul în care această afirmație sa întâmplat să fie adevărat.
+
+96
+00:07:14,650 --> 00:07:18,390
+În acest caz, am eliminat doar numerele.
+
+97
+00:07:18,400 --> 00:07:19,300
+In regula.
+
+98
+00:07:19,300 --> 00:07:22,170
+Acum hai să mergem înainte și să discutăm metodele.
+
+99
+00:07:22,210 --> 00:07:28,450
+Metodele sunt, în esență, doar pentru că puteți face un obiect care va afecta obiectul sau va returna
+
+100
+00:07:28,570 --> 00:07:30,480
+un rezultat într-un anumit mod.
+
+101
+00:07:30,490 --> 00:07:32,670
+Lasă-mă să merg și să-ți arăt ce vreau să spun.
+
+102
+00:07:32,750 --> 00:07:37,720
+Voi face un șir numit S și acesta va spune ceva de genul.
+
+103
+00:07:38,380 --> 00:07:42,550
+Buna ziua numele meu este capital S. A.m.
+
+104
+00:07:42,580 --> 00:07:51,970
+Sam pot suna și apoi puncte și dacă fac clic pe fila și Jupiter note carte voi obține un rezultat
+
+105
+00:07:51,970 --> 00:07:54,340
+din toate filele disponibile bici.
+
+106
+00:07:54,340 --> 00:07:55,470
+Deruleaza in jos.
+
+107
+00:07:55,480 --> 00:08:00,040
+Voi obține un rezultat din toate metodele disponibile pe acest obiect șir.
+
+108
+00:08:00,040 --> 00:08:04,300
+Acum nu avem timp să trecem peste toate aceste lucruri și toate acestea nu vor fi utilizate pe parcursul
+
+109
+00:08:04,300 --> 00:08:06,080
+cursului, vom folosi doar câteva dintre ele.
+
+110
+00:08:06,100 --> 00:08:08,610
+Lasă-mă să intru pentru a arăta cele importante.
+
+111
+00:08:09,160 --> 00:08:14,120
+Câmpul inferior va micșorați fiecare literă dintr-un șir.
+
+112
+00:08:14,230 --> 00:08:16,790
+Și rețineți că trebuie să apelați paranteze apropiate.
+
+113
+00:08:17,050 --> 00:08:22,390
+Dacă doar apelați mai jos ca acesta sau reveniți înapoi și spuneți că vă întrebați despre funcția mai mică.
+
+114
+00:08:22,380 --> 00:08:27,430
+După cum am menționat mai devreme, trebuie să o executați prin închiderea parantezelor dacă doriți să
+
+115
+00:08:27,430 --> 00:08:28,310
+faceți contrariul.
+
+116
+00:08:28,330 --> 00:08:33,060
+În acest caz, cu majuscule tot ce poți să te gândești.
+
+117
+00:08:34,310 --> 00:08:42,210
+Încă o altă funcție utilă sau metodă mă scuzați pentru șiruri de caractere este metoda divizată, metoda divizată, în
+
+118
+00:08:42,250 --> 00:08:48,360
+mod implicit, va împărți un șir pe întreg spațiul alb al acelui șir.
+
+119
+00:08:48,370 --> 00:08:50,860
+Deci, aici avem Hello, numele meu este Sam.
+
+120
+00:08:50,860 --> 00:08:55,240
+Când spunem că este împărțită, va împărți acest lucru pe toate spațiile.
+
+121
+00:08:55,240 --> 00:08:59,340
+Asta va fi foarte util pentru analiza textului ulterior în acest curs.
+
+122
+00:08:59,350 --> 00:09:01,370
+Lasă-mă să intru și să arăt un exemplu.
+
+123
+00:09:01,380 --> 00:09:04,590
+Să spunem că avem un tweet care spune ceva.
+
+124
+00:09:04,890 --> 00:09:10,150
+Du-te sport sport tag-ul hash.
+
+125
+00:09:10,520 --> 00:09:19,290
+Dacă spunem splituri de gânduri tweet, acest lucru va împărți textul într-o listă bazată pe spațiul alb.
+
+126
+00:09:19,450 --> 00:09:26,530
+Dar, de fapt, putem transforma un șir într-o împărțire pentru a împărți anumite elemente sau caractere.
+
+127
+00:09:26,710 --> 00:09:33,360
+Dacă am trece o etichetă hash și rulați aceasta va împărți șirul în cazul în care găsește o etichetă hash care înseamnă că va avea
+
+128
+00:09:33,370 --> 00:09:36,230
+mesajul și apoi la sfârșitul ei au o etichetă hash.
+
+129
+00:09:36,550 --> 00:09:39,220
+Și acest lucru va reveni de fapt o listă deși putem acest index.
+
+130
+00:09:39,220 --> 00:09:46,530
+Deci, dacă vreau doar să apuc eticheta hash pot spune paranteze o și toate sporturile de întoarcere, astfel încât să vedem deja cum ar
+
+131
+00:09:46,540 --> 00:09:51,450
+fi util dacă ați vrut doar să luați etichete hash din câteva șiruri tweet exemplu.
+
+132
+00:09:51,760 --> 00:09:52,780
+O.K.
+
+133
+00:09:52,780 --> 00:09:56,710
+Acestea sunt metode utile pentru împărțirea vârfului inferior inferior.
+
+134
+00:09:56,710 --> 00:09:57,200
+Acestea sunt cele bune.
+
+135
+00:09:57,250 --> 00:09:59,620
+Acestea sunt cele pe care le vom folosi pe tot parcursul cursului.
+
+136
+00:10:00,910 --> 00:10:03,040
+Emiteți ceva ce puteți face cu dicționarele.
+
+137
+00:10:03,250 --> 00:10:04,690
+Deci, amintiți-vă un dicționar.
+
+138
+00:10:04,730 --> 00:10:06,860
+Să mergem și să vedem dacă avem unul vechi.
+
+139
+00:10:07,180 --> 00:10:15,780
+Ei bine, re-atribuie aceasta apoi să fie K-1 cu o valoare de unul.
+
+140
+00:10:15,880 --> 00:10:20,800
+Și apoi vom spune că Kate doi este o cheie de două ori.
+
+141
+00:10:20,800 --> 00:10:21,440
+In regula.
+
+142
+00:10:21,700 --> 00:10:22,580
+Deci aici este dicționarul meu.
+
+143
+00:10:22,600 --> 00:10:24,920
+K. Unul este un k la doi.
+
+144
+00:10:24,940 --> 00:10:30,510
+Acum putem spune d punct și puteți face clic pe fila pentru a vedea diferitele metode disponibile pentru dvs.
+
+145
+00:10:30,700 --> 00:10:38,140
+Unele dintre cele utile sunt metoda de chei și aceasta doar returnează cheile în dicționar.
+
+146
+00:10:38,140 --> 00:10:47,710
+Dacă solicitați elemente, acestea returnează elementele dictionarului și apoi putem cere doar dacă ne uităm
+
+147
+00:10:47,710 --> 00:10:48,870
+la.
+
+148
+00:10:49,060 --> 00:10:53,670
+Poti sa spui pop sau sa obtii sau valori.
+
+149
+00:10:53,830 --> 00:10:55,680
+Deci, dacă doriți doar valorile dicționarului.
+
+150
+00:10:55,720 --> 00:10:57,430
+Aceasta returnează valorile.
+
+151
+00:10:57,430 --> 00:10:59,810
+Rețineți că dicționarele nu păstrează o comandă.
+
+152
+00:11:00,040 --> 00:11:04,690
+Nu vom folosi cu adevărat chei sau valori din curs, dar vreau să fiți conștienți de
+
+153
+00:11:05,660 --> 00:11:07,500
+unele metode utile pentru listare.
+
+154
+00:11:07,510 --> 00:11:08,740
+Voi ieși să fac o listă.
+
+155
+00:11:08,750 --> 00:11:10,530
+Ls t.
+
+156
+00:11:10,540 --> 00:11:12,680
+Spuneți 1 până la 3.
+
+157
+00:11:12,820 --> 00:11:20,920
+Puteți să așezați un articol dintr-o listă prin apelarea popului și acesta va afișa și va returna ultimul element din listă și
+
+158
+00:11:21,460 --> 00:11:24,510
+atunci când îl apelați această schimbare este permanentă.
+
+159
+00:11:24,820 --> 00:11:36,250
+Ceea ce înseamnă că dacă mergem mai departe și spunem lista este una de două, trei patru cinci puteți spune că elementul este egal cu ls t pop
+
+160
+00:11:36,710 --> 00:11:44,730
+și care va scoate ultimul element de pe lista respectivă și dacă suntem numit acel element a fost reassigned.
+
+161
+00:11:44,800 --> 00:11:53,440
+5 este acum element care a fost lista care pop și puteți de fapt, cu metoda pop care trece o valoare index pentru
+
+162
+00:11:53,440 --> 00:11:54,730
+a pop off.
+
+163
+00:11:54,730 --> 00:12:01,150
+Deci, dacă spui mai întâi este egal cu LS T-top pop 0 și rulați acest lucru.
+
+164
+00:12:01,150 --> 00:12:02,870
+Aruncă o privire la LS T.
+
+165
+00:12:02,950 --> 00:12:11,100
+Acum, indicele 0 a fost scos și prima noastră variabilă este cea care a fost primul element.
+
+166
+00:12:11,320 --> 00:12:14,270
+Deci popul este o metodă foarte utilă și așa este adăugat.
+
+167
+00:12:14,290 --> 00:12:15,860
+Dar de fapt am văzut deja asta.
+
+168
+00:12:16,090 --> 00:12:22,620
+Asta vă permite să adăugați un element nou la sfârșitul listei.
+
+169
+00:12:23,050 --> 00:12:23,720
+In regula.
+
+170
+00:12:24,010 --> 00:12:29,560
+În cele din urmă, alte câteva lucruri pe care vreau să le arăt sunt operatorul.
+
+171
+00:12:29,560 --> 00:12:36,140
+Deci, dacă doriți să verificați dacă există ceva în interiorul unei liste, puteți spune ce doriți să verificați
+
+172
+00:12:36,140 --> 00:12:39,500
+și apoi în și apoi lista în sine.
+
+173
+00:12:39,610 --> 00:12:54,100
+Deci, X în 1 la 3 care returnează false față de x într-o listă care conține x y și z care returnează adevărat.
+
+174
+00:12:54,100 --> 00:12:58,900
+Și în cele din urmă, ultimul lucru din acest curs de prăbușire de tip python pe care îl vom acoperi este
+
+175
+00:12:59,410 --> 00:13:03,370
+tuple despachetarea tuple despachetarea este o caracteristică foarte curată și o să vă arăt cum funcționează.
+
+176
+00:13:03,370 --> 00:13:11,270
+Imaginați-vă că aveți o variabilă x care conține o listă de tupluri.
+
+177
+00:13:12,010 --> 00:13:19,740
+Vom avea una câte două patru și apoi cinci șase.
+
+178
+00:13:19,750 --> 00:13:29,140
+Deci, dacă mă uit la X, primul element din X este o trupă de 1 și 2 și pot să apuc de fapt obiecte din acea tuplă,
+
+179
+00:13:29,140 --> 00:13:33,040
+așa că o pot lua sau o pot prinde pe două.
+
+180
+00:13:33,130 --> 00:13:38,410
+De asemenea, pot face ceva numit "tuple unpacking" și asta va funcționa atunci când vom iterări
+
+181
+00:13:38,410 --> 00:13:40,030
+printr-o listă de tuple.
+
+182
+00:13:40,030 --> 00:13:45,910
+Acest tip de formare a unei liste de tupluri este foarte obișnuit în Python și multe funcții vor reveni la
+
+183
+00:13:45,910 --> 00:13:47,550
+un rezultat în acest format.
+
+184
+00:13:47,830 --> 00:14:00,230
+De aceea avem o tuplă și un pachet ca o opțiune, astfel încât să putem spune pentru elementul din elementul X prints.
+
+185
+00:14:00,520 --> 00:14:07,300
+Și când alerg că merge mai departe și tipărește toate tuplele pentru mine tuple și împachetare îmi
+
+186
+00:14:07,390 --> 00:14:18,280
+permite să despachetez de fapt aceste tuple pe măsură ce mă duc, așa că pot face ceva de genul asta pentru o virgulă B în X imprimă a.
+
+187
+00:14:18,640 --> 00:14:21,950
+Și acum aceasta va tipări 1 3 5.
+
+188
+00:14:22,850 --> 00:14:24,830
+Sau dacă spun Printul B.
+
+189
+00:14:24,840 --> 00:14:27,250
+Aceasta va imprima cel de-al doilea element în acele tuple.
+
+190
+00:14:27,310 --> 00:14:30,490
+2 4 6 și asta e tupla și ambalarea.
+
+191
+00:14:30,490 --> 00:14:36,130
+Sau, în loc de a spune doar un articol, despachetați această tuplă în interiorul acelei bucăți și altceva.
+
+192
+00:14:36,140 --> 00:14:40,630
+Rețineți că aceste paranteze care înconjoară acest lucru sunt de fapt doar o formalitate.
+
+193
+00:14:40,630 --> 00:14:43,930
+Acesta este modul în care veți vedea tuple în ambalaj în lumea reală tot timpul.
+
+194
+00:14:43,930 --> 00:14:49,840
+Veți vedea pentru tampla și împachetarea în X, care este unele iterabil de tuple din interiorul ei.
+
+195
+00:14:50,140 --> 00:14:57,730
+Și apoi puteți să imprimați articolele individuale din acel tuplu și asta e tot ce poți face
+
+196
+00:14:57,730 --> 00:14:58,210
+bine.
+
+197
+00:14:58,500 --> 00:15:02,590
+Va va reaminti de tuplu si ambalare cand vom ajunge din nou mai tarziu in acest curs.
+
+198
+00:15:02,590 --> 00:15:07,570
+Nu va veni până acum, dar sperăm că acest lucru a fost de ajuns pentru o imagine de
+
+199
+00:15:07,690 --> 00:15:13,990
+ansamblu generală pentru Python, dacă oricare dintre acestea părea imposibil de greu sau nu v-ar fi fost complet necunoscut și nu ați
+
+200
+00:15:13,990 --> 00:15:15,700
+înțeles cu adevărat acest concept.
+
+201
+00:15:15,700 --> 00:15:21,730
+Acest curs poate fi prea avansat pentru dvs. și este posibil să aveți nevoie de un curs orientat spre începători
+
+202
+00:15:21,860 --> 00:15:25,420
+în programare, cum ar fi cursul meu de bootcamp complet Python.
+
+203
+00:15:25,510 --> 00:15:31,000
+Întotdeauna nu ezitați să postați orice întrebări pe forumurile Kewaunee și vinerea următoare este un exercițiu pentru
+
+204
+00:15:31,000 --> 00:15:35,070
+a testa doar cunoștințele dumneavoastră în această serie tematică crash python crash.
+
+205
+00:15:35,080 --> 00:15:36,970
+Mulțumesc tuturor și o să văd la următoarea conferință

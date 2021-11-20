@@ -1,0 +1,543 @@
+1
+00:00:05,280 --> 00:00:10,350
+Halo semuanya dan selamat datang di kuliah solusi latihan peta Karplus dalam kuliah ini.
+
+2
+00:00:10,350 --> 00:00:15,140
+Kami akan mengkode solusi untuk latihan di bagian peta Karplus.
+
+3
+00:00:15,150 --> 00:00:19,260
+Mari kita lanjutkan dan makanlah bahwa Anda meletakkan buku catatan untuk memulai.
+
+4
+00:00:19,260 --> 00:00:19,470
+Baiklah.
+
+5
+00:00:19,470 --> 00:00:21,500
+Di sini saya di notebook Jupiter.
+
+6
+00:00:21,600 --> 00:00:26,850
+Saya ingin melanjutkan dan menjalankan impor plotline meskipun menjalankan shift masuk ke sana dan kemudian
+
+7
+00:00:26,850 --> 00:00:33,420
+hal pertama yang ingin kita lakukan adalah mengimpor panda sebagai PD dan kemudian kita akan pergi ke depan dan
+
+8
+00:00:33,430 --> 00:00:37,830
+menggunakan panda untuk membaca CXXVI 2014 menggaris bawahi konsumsi daya dunia .
+
+9
+00:00:37,830 --> 00:00:47,570
+Jadi saya akan pergi dan mengatakan sekuel PD membaca CXXVI dan kemudian melewati 2014.
+
+10
+00:00:47,690 --> 00:00:54,420
+Atau saya dapat benar-benar hanya menggunakan untuk menemukan yang baik dan menyelesaikan ini dan mari kita lanjutkan
+
+11
+00:00:54,420 --> 00:00:57,130
+dan periksa kepala bingkai data kepala.
+
+12
+00:00:57,360 --> 00:00:58,590
+Dan di sini kita memilikinya.
+
+13
+00:00:58,630 --> 00:00:59,070
+BAIK.
+
+14
+00:00:59,160 --> 00:01:04,460
+Sekarang kami ingin referensi pilihan untuk membuat plot inti dari konsumsi daya untuk negara-negara
+
+15
+00:01:04,470 --> 00:01:07,150
+yang menggunakan kamus data dan tata letak.
+
+16
+00:01:07,170 --> 00:01:11,990
+Mari kita mulai dan mulai dengan kamus data.
+
+17
+00:01:12,090 --> 00:01:20,540
+Ketika mereka memanggil kamus casting dan kemudian saya akan mengatakan dasi sama dengan chloroplast seperti yang telah
+
+18
+00:01:20,540 --> 00:01:22,120
+kita lakukan sebelumnya.
+
+19
+00:01:22,260 --> 00:01:30,960
+Kunci berikutnya yang akan saya jawab adalah lokasi dan itu akan maju dan sama dengan kolom
+
+20
+00:01:30,960 --> 00:01:32,400
+kode lokasi.
+
+21
+00:01:32,400 --> 00:01:34,520
+Dalam hal ini hanya negara di sini.
+
+22
+00:01:34,680 --> 00:01:36,410
+Jadi saya hanya akan
+
+23
+00:01:39,090 --> 00:01:45,570
+lulus di suatu negara dan kemudian saya akan mengatakan mode lokasi dan di sinilah Anda memiliki referensi
+
+24
+00:01:45,570 --> 00:01:49,460
+bahwa dokumentasi untuk mengetahui mode lokasi adalah nama-nama ruang negara.
+
+25
+00:01:49,570 --> 00:01:52,600
+Dan ada dokumentasi lengkap di sini.
+
+26
+00:01:52,620 --> 00:01:53,710
+Anda dapat melanjutkan dan mengklik tautan itu.
+
+27
+00:01:53,710 --> 00:01:57,810
+Ini akan membawa Anda ke referensi dokumentasi lengkap dan Anda dapat mencari apa mode
+
+28
+00:01:57,810 --> 00:01:59,790
+lokasi yang benar untuk negara tertentu.
+
+29
+00:01:59,790 --> 00:02:04,080
+Karena kami sebenarnya tidak memiliki kode negara dalam hal ini, kami memiliki nama
+
+30
+00:02:04,080 --> 00:02:09,060
+negara dan mudah-mudahan dengan melihat dalam dokumentasi Anda dapat menemukannya atau hanya dengan merujuk solusi ini.
+
+31
+00:02:10,320 --> 00:02:19,290
+Selanjutnya kita ingin menentukan z dan z akan sama dengan jika dan kita ingin itu menjadi kolom konsumsi
+
+32
+00:02:19,290 --> 00:02:19,950
+daya.
+
+33
+00:02:20,010 --> 00:02:22,590
+Itulah yang sebenarnya ingin kami wakili.
+
+34
+00:02:22,590 --> 00:02:34,770
+Jadi Anda dapat melanjutkan dan mengatakan konsumsi daya dan itu akan menjadi katakanlah W H di sana dan kemudian teks akan pergi ke depan
+
+35
+00:02:34,770 --> 00:02:37,860
+dan memiliki nama negara juga.
+
+36
+00:02:37,860 --> 00:02:46,980
+Jadi selanjutnya mengatakan teks adalah negara dan akhirnya kita akan memberi label bilah warna kita menjadi kamus atau
+
+37
+00:02:46,980 --> 00:02:54,270
+judul dan label bilah warna hanya akan menjadi atau bilah warna judul akan menjadi
+
+38
+00:02:55,110 --> 00:02:57,180
+konsumsi daya KWH.
+
+39
+00:02:57,210 --> 00:02:57,410
+Kanan.
+
+40
+00:02:57,420 --> 00:03:01,200
+Dan itu kamus data dasar kami, kami akan kembali ke sana dan menambahkan
+
+41
+00:03:01,200 --> 00:03:02,550
+beberapa argumen lagi nanti.
+
+42
+00:03:02,550 --> 00:03:05,450
+Tapi mari kita lakukan tata letak kita juga.
+
+43
+00:03:05,820 --> 00:03:09,870
+Jadi saya akan mengatakan lay out dictionary.
+
+44
+00:03:10,200 --> 00:03:18,300
+Jadi judul ini menjadi hanya judul plot akan berlangsung dan mengatakan konsumsi daya 2014 sebagai
+
+45
+00:03:18,300 --> 00:03:19,020
+judul.
+
+46
+00:03:19,470 --> 00:03:27,150
+Dan kemudian layar berikutnya Anda mengatur kunci geo dan kemudian pasan panggilan kamus katakan tunjukkan bingkai
+
+47
+00:03:27,150 --> 00:03:30,440
+sekuel salah dan kemudian katakan proyeksi.
+
+48
+00:03:30,480 --> 00:03:34,400
+Dan Anda dapat memberikan proyeksi yang Anda inginkan seperti yang ditunjukkan pada kuliah sebelumnya.
+
+49
+00:03:34,410 --> 00:03:39,420
+Tapi mari kita lanjutkan dan tetap dengan ini.
+
+50
+00:03:39,540 --> 00:03:41,850
+Untuk arah.
+
+51
+00:03:42,920 --> 00:03:47,650
+Dan sekarang mari kita lanjutkan dan jalankan laso dan lihat apa yang kita bangun.
+
+52
+00:03:47,660 --> 00:03:48,090
+Baiklah.
+
+53
+00:03:48,090 --> 00:03:53,940
+Dan di sini Anda dapat melihat konsumsi daya 2014 di dunia dan kita dapat melihat bahwa China dan
+
+54
+00:03:53,940 --> 00:03:57,360
+AS memiliki konsumsi daya tertinggi sekarang dan solusinya BUKAN buku.
+
+55
+00:03:57,360 --> 00:04:06,090
+Saya melanjutkan dan mengubah skala warna dengan mengatakan sebagai argumen dalam kamus data
+
+56
+00:04:06,090 --> 00:04:10,890
+saya mengatakan skala warna sama dengan ini.
+
+57
+00:04:10,950 --> 00:04:18,000
+Dan kemudian saya juga mengatakan skala terbalik sama dengan benar.
+
+58
+00:04:19,110 --> 00:04:21,660
+Dan itu hanya membuat skala warna ini sedikit lebih bagus.
+
+59
+00:04:21,660 --> 00:04:26,790
+Anda tidak harus melakukan ini semacam opsional tetapi saya lebih suka jenis skala warna yang membuat
+
+60
+00:04:26,790 --> 00:04:30,800
+sedikit lebih jelas antara negara-negara daripada memiliki mereka semua berwarna abu-abu.
+
+61
+00:04:30,870 --> 00:04:31,530
+Baiklah.
+
+62
+00:04:31,530 --> 00:04:34,700
+Itulah yang membuat plot konsumsi daya 2014.
+
+63
+00:04:34,770 --> 00:04:39,720
+Dan lagi banyak dari ini harus mencari hal-hal dalam dokumentasi yang saya tahu kadang-kadang
+
+64
+00:04:39,720 --> 00:04:45,390
+sulit dan menjengkelkan tetapi untuk pilihan sintaks yang aneh sejauh merencanakan hal-hal yang Anda harus lakukan
+
+65
+00:04:45,390 --> 00:04:47,780
+ketika Anda ingin membuat plot ini.
+
+66
+00:04:47,790 --> 00:04:51,320
+Akan sulit untuk mencoba memanggil hal-hal ini langsung dari ingatan Anda.
+
+67
+00:04:52,580 --> 00:04:55,720
+Baiklah sekarang, lanjutkan dan beralih ke paduan suara paduan suara USA.
+
+68
+00:04:55,890 --> 00:04:58,940
+Yang ingin kami lakukan adalah mengimpor data pemilu 2012.
+
+69
+00:04:59,140 --> 00:05:00,630
+Saya akan pergi keluar dan menggunakan panelis untuk melakukan itu.
+
+70
+00:05:00,670 --> 00:05:04,990
+Saya akan mengatakan USDA sama dengan PD.
+
+71
+00:05:05,110 --> 00:05:11,050
+Baca CXXVI dan kemudian kita akan melihat data pemilu 2012.
+
+72
+00:05:11,170 --> 00:05:13,510
+Maksud saya hanya menggunakan tab untuk melengkapinya secara otomatis.
+
+73
+00:05:13,870 --> 00:05:17,850
+Dan kemudian saya akan memeriksa kepala frame data itu dengan mengatakan kami the Fed.
+
+74
+00:05:18,250 --> 00:05:20,740
+Dan di sini kita mendapatkan kerangka data yang cocok.
+
+75
+00:05:20,740 --> 00:05:24,930
+Sekarang mari kita masuk dan membuat plot yang menampilkan populasi usia pemilih per negara.
+
+76
+00:05:24,940 --> 00:05:35,050
+AP akan membuat kamus data saya dengan mengatakan data sama dengan penis dan kemudian semua mengatakan tipe Curle plus.
+
+77
+00:05:38,940 --> 00:05:44,440
+Dan mari kita lanjutkan dan tambahkan argumen skala warna itu jadi saya
+
+78
+00:05:44,460 --> 00:05:51,180
+akan masuk dan mengatakan skala warna sama dengan ini dan juga skala terbalik menjadi benar.
+
+79
+00:05:51,430 --> 00:05:56,940
+Dan alasan saya mengatakan skala terbalik sama dengan benar adalah sehingga skala skala sebenarnya terbalik.
+
+80
+00:05:56,940 --> 00:06:03,400
+Biarkan saya pergi untuk menunjukkan dengan cepat apa yang terjadi jika kita tidak menempatkan itu dengan mengatakan
+
+81
+00:06:03,390 --> 00:06:07,820
+skala terbalik katakanlah sama dengan false di sini yang merupakan default.
+
+82
+00:06:08,230 --> 00:06:12,370
+Lalu saya mendapatkan skala yang terlihat seperti ini yang tidak benar-benar sebagus memiliki terbalik sehingga Anda
+
+83
+00:06:12,370 --> 00:06:16,030
+dapat membalikkan skala warna yang Anda inginkan hanya dengan menambahkan dalam parameter itu.
+
+84
+00:06:16,120 --> 00:06:22,200
+Dan untuk ini biasanya bekerja jauh lebih baik jika Anda benar-benar mengatakan skala terbalik itu benar.
+
+85
+00:06:22,200 --> 00:06:28,860
+Jadi seperti ini kelihatannya secara default jadi tidak terbalik tapi saya lebih suka warna yang lebih gelap menjadi kuantitas yang
+
+86
+00:06:28,870 --> 00:06:29,660
+lebih tinggi.
+
+87
+00:06:29,680 --> 00:06:31,580
+Dengan begitu sedikit lebih jelas.
+
+88
+00:06:31,600 --> 00:06:32,140
+Baiklah.
+
+89
+00:06:32,400 --> 00:06:39,910
+Melanjutkan jika kita melompat kembali ke sini kita akan keluar dan mengatakan skala terbalik sama dengan lokasi sebenarnya.
+
+90
+00:06:39,900 --> 00:06:47,290
+Itu akan sama dengan singkatan negara yang jika kita benar-benar melihat ini di sini kita
+
+91
+00:06:47,280 --> 00:06:51,340
+memiliki nama negara dan singkatan negara di akhir.
+
+92
+00:06:51,610 --> 00:07:04,190
+Mari kita gunakan singkatan negara kita akan mengatakan USCF Hassen kolom singkatan negara.
+
+93
+00:07:04,260 --> 00:07:09,400
+Selanjutnya kami ingin memilih atau Z dan ini sudah memberi tahu Anda apa yang harus Anda pilih.
+
+94
+00:07:09,430 --> 00:07:12,260
+Itu populasi usia pemungutan suara.
+
+95
+00:07:12,260 --> 00:07:17,500
+AP dan mode lokasi.
+
+96
+00:07:17,940 --> 00:07:19,210
+Itu akan disebut dua.
+
+97
+00:07:19,240 --> 00:07:25,410
+Sama seperti dalam contoh-contoh di Amerika Serikat, seperti dalam kuliah dan kemudian teks kita.
+
+98
+00:07:25,410 --> 00:07:33,490
+Mari kita lanjutkan dan hanya memilih teks untuk menjadi nama negara sebenarnya sehingga USCF menyatakan dan kemudian kita akan pergi ke depan dan melakukannya
+
+99
+00:07:33,490 --> 00:07:35,430
+mengatakan bilah warna sama dengan
+
+100
+00:07:38,860 --> 00:07:41,230
+dan kemudian kita melewati kamus di sini.
+
+101
+00:07:41,250 --> 00:07:50,370
+Judul dan ini hanya akan menjadi populasi usia pemilih.
+
+102
+00:07:50,400 --> 00:07:51,850
+Mari kita jalankan itu.
+
+103
+00:07:51,880 --> 00:07:53,340
+Baiklah kita punya kamus data.
+
+104
+00:07:53,380 --> 00:07:56,880
+Sekarang saatnya membuat kamus lay out kami.
+
+105
+00:07:58,090 --> 00:08:00,100
+Kami melewati kamus casting kami.
+
+106
+00:08:00,150 --> 00:08:07,930
+Kami menetapkan judul seluruh plot kami di sini, kami hanya akan menyebutnya data pemilu 2012.
+
+107
+00:08:08,350 --> 00:08:09,900
+Anda dapat menyebutnya apa pun yang Anda inginkan.
+
+108
+00:08:10,120 --> 00:08:13,110
+Kami akan mengatakan Geo sama dengan kamus.
+
+109
+00:08:13,320 --> 00:08:17,500
+Cisco USA
+
+110
+00:08:17,950 --> 00:08:22,180
+Argumen lain yang akan kita katakan adalah menunjukkan Lakes sama dengan benar.
+
+111
+00:08:22,500 --> 00:08:27,640
+Dan kemudian kita hanya memilih warna danau dan saya ingin melakukan warna akhir dengan mekanisme RSGB yang
+
+112
+00:08:27,630 --> 00:08:30,810
+kita lihat di kuliah di mana sebagian menerima string.
+
+113
+00:08:30,890 --> 00:08:33,650
+Agak dalam format aneh ini mengatakan R. G. B.
+
+114
+00:08:33,850 --> 00:08:41,700
+Dan kemudian Anda benar-benar melewati nilai numerik dan memilih angka-angka ini 85 173 dan 240 yang memberi kita
+
+115
+00:08:41,700 --> 00:08:44,610
+rona biru yang bagus untuk Danau.
+
+116
+00:08:44,640 --> 00:08:45,190
+Baiklah.
+
+117
+00:08:45,370 --> 00:08:46,050
+Itu lay out kami.
+
+118
+00:08:46,060 --> 00:08:48,140
+Mari kita jalankan ini.
+
+119
+00:08:48,450 --> 00:08:54,480
+Dan di sini kita melihat data pemilu 2012 dan masuk akal bahwa negara bagian yang paling padat penduduknya seperti
+
+120
+00:08:54,490 --> 00:08:59,430
+California Texas dan New York dan Florida memiliki warna yang lebih gelap karena mereka memiliki
+
+121
+00:08:59,430 --> 00:09:03,460
+populasi tertinggi yang berarti mereka mungkin juga memiliki populasi usia pemilih tertinggi.
+
+122
+00:09:03,450 --> 00:09:03,880
+Baiklah.
+
+123
+00:09:03,880 --> 00:09:06,570
+Itu saja untuk latihan peta karang.
+
+124
+00:09:06,580 --> 00:09:13,360
+Hanya data pemilu AS ini dan data konsumsi daya internasional ini semoga telah
+
+125
+00:09:13,360 --> 00:09:19,120
+melihat kekuatan plotline untuk dapat mereproduksi jenis plot yang cukup canggih.
+
+126
+00:09:19,300 --> 00:09:25,650
+Dan dengan hanya beberapa baris kode yang datang dengan biaya sintaks sedikit aneh dan harus referensi
+
+127
+00:09:25,650 --> 00:09:31,650
+dokumentasi tetapi memiliki plot yang terlihat bagus dan dapat berinteraksi dengannya dan memperbesar dan
+
+128
+00:09:31,650 --> 00:09:38,110
+memeriksa angka-angka dan mengatur teks ke apa yang Anda inginkan karena membawa lebih dari cukup bagus.
+
+129
+00:09:38,110 --> 00:09:43,540
+Mengingat seberapa banyak kode yang Anda tulis dalam bahasa lain, ini akan membutuhkan kode yang jauh lebih banyak.
+
+130
+00:09:43,540 --> 00:09:44,170
+Baiklah.
+
+131
+00:09:44,160 --> 00:09:49,630
+Semoga Anda menikmati latihan inti peta Pluff yang dimaksudkannya sangat menantang dan harus
+
+132
+00:09:49,620 --> 00:09:52,780
+merujuk banyak dokumentasi untuk memahaminya sepenuhnya.
+
+133
+00:09:52,870 --> 00:09:57,460
+Tapi itu juga semacam contoh dunia nyata dari apa yang dapat Anda lakukan ketika melakukan hal-hal
+
+134
+00:09:57,450 --> 00:09:58,190
+ini sendiri.
+
+135
+00:09:58,330 --> 00:09:59,400
+Tapi kamu menikmatinya.
+
+136
+00:09:59,400 --> 00:10:01,160
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

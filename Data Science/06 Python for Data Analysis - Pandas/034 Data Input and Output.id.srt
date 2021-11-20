@@ -1,0 +1,791 @@
+1
+00:00:05,370 --> 00:00:11,100
+Halo semua dan selamat datang di input data dan output panel kuliah karena perpustakaan memiliki kemampuan
+
+2
+00:00:11,100 --> 00:00:15,900
+untuk membaca data dan menulis data ke berbagai sumber untuk kuliah ini.
+
+3
+00:00:15,900 --> 00:00:22,860
+Kita akan khawatir dengan hanya empat sumber data utama melihat file file Excel H. T. mail dari web dan
+
+4
+00:00:22,860 --> 00:00:30,600
+sekuel untuk bekerja dengan file ASTM dan database sekuel dengan panderer hanya untuk menginstal
+
+5
+00:00:30,600 --> 00:00:31,920
+untuk perpustakaan.
+
+6
+00:00:31,980 --> 00:00:35,310
+Petunjuk ada di notebook atau jika Anda hanya ingin melakukannya dengan cepat.
+
+7
+00:00:35,310 --> 00:00:42,930
+Ini adalah empat perpustakaan yang diperlukan untuk memasang alkimia lanjutan. Kemudian tutup yang indah untuk perpustakaan
+
+8
+00:00:42,930 --> 00:00:46,880
+Anda dapat melakukannya dengan Pipp atau Khanda.
+
+9
+00:00:47,280 --> 00:00:47,760
+Baiklah.
+
+10
+00:00:47,940 --> 00:00:52,510
+Setelah Anda menginstal pustaka ini dan referensi notebook Anda siap untuk memulai.
+
+11
+00:00:52,560 --> 00:00:53,890
+Ayo maju dan melompat.
+
+12
+00:00:53,910 --> 00:00:58,190
+Jupiter note book dan tunjukkan cara membaca dan menulis file dengan panda.
+
+13
+00:00:58,230 --> 00:01:00,860
+Baiklah kita di sini di notebook Jupiter.
+
+14
+00:01:00,930 --> 00:01:06,420
+Ingatlah bahwa saat kami mereferensikan file-file seperti contohnya lihat file X-Fi dan contoh file Excel
+
+15
+00:01:06,420 --> 00:01:12,030
+Anda harus memastikan mereka berada di lokasi yang sama dengan notebook Jupiter Anda untuk memeriksa lokasi
+
+16
+00:01:12,030 --> 00:01:13,830
+Anda sebuah buku catatan.
+
+17
+00:01:13,830 --> 00:01:20,910
+Anda bisa masuk sel dan ketik P WD lakukan shift enter dan laporkan kembali lokasi.
+
+18
+00:01:20,910 --> 00:01:22,750
+Ini adalah lokasi file yang sama.
+
+19
+00:01:22,770 --> 00:01:26,670
+Contohnya lihat setiap file dalam contoh file Excel harus di.
+
+20
+00:01:26,760 --> 00:01:31,680
+Jika Anda telah mengunduh seluruh gudang notebook dan bekerja di bagian input dan
+
+21
+00:01:31,680 --> 00:01:37,680
+output data atau notebook, Anda akan baik-baik saja dengan hanya mereferensikan file seolah-olah mereka sudah ada di sana.
+
+22
+00:01:38,250 --> 00:01:43,870
+OK, mari kita lanjutkan dan tunjukkan cara membuka dan membaca file C sebagai V untuk melakukan ini.
+
+23
+00:01:43,890 --> 00:01:52,430
+Anda bisa saja mengatakan PD membaca garis bawah CXXVI dan kemudian mulai mengetikkan nama C Anda sebagai file.
+
+24
+00:01:52,500 --> 00:01:54,510
+Dalam hal ini saya tahu itu disebut contoh.
+
+25
+00:01:54,660 --> 00:02:01,000
+Jadi ketika saya mulai mengetik ini trik yang bagus itu adalah tab klik dan itu akan otomatis melengkapi nama file.
+
+26
+00:02:02,190 --> 00:02:03,570
+Dalam kasus Anda, Anda mungkin baru saja memilikinya.
+
+27
+00:02:03,570 --> 00:02:06,340
+Contoh Bukan contoh CS V.
+
+28
+00:02:06,390 --> 00:02:08,880
+Mari kita lanjutkan dan membacanya.
+
+29
+00:02:09,030 --> 00:02:15,840
+Saya memang menggeser masuk dan sekarang saya bisa melihat C seperti yang kita file sebagai bingkai data dengan kolom A B
+
+30
+00:02:15,840 --> 00:02:19,290
+C dan D dan 0 1 sampai 3 sebagai baris.
+
+31
+00:02:19,290 --> 00:02:28,010
+Perhatikan bahwa jika saya ingin membaca file apa pun saya hanya menggunakan tab klik garis bawah perintah baca di sini dan
+
+32
+00:02:28,020 --> 00:02:33,060
+saya mendapatkan menu dropdown ini dari berbagai format yang dapat dibaca Pancho.
+
+33
+00:02:33,060 --> 00:02:35,350
+Jadi Pan ini dapat membaca bahkan dari clipboard Anda.
+
+34
+00:02:35,350 --> 00:02:42,400
+Lihat saat kami unggul file file HDR Acar Jaison mencari tabel file sekuel dll.
+
+35
+00:02:42,660 --> 00:02:44,870
+Perlu diingat bahwa mereka memiliki banyak pilihan di sini.
+
+36
+00:02:44,940 --> 00:02:47,340
+Saat ini kami hanya membahas yang paling umum.
+
+37
+00:02:47,840 --> 00:02:53,490
+OK untuk menulis ke file CXXVI Anda akan memerlukan bingkai data jadi saya akan pergi ke depan dan
+
+38
+00:02:53,490 --> 00:02:55,740
+hanya mengatakan DF sama dengan pemikiran PD.
+
+39
+00:02:55,760 --> 00:02:58,100
+Baca garis bawah C sebagai V.
+
+40
+00:02:58,530 --> 00:03:05,920
+Dan lagi hanya untuk melakukan contoh tab autocomplete di sini dan sekarang saya punya T. F. sebagai contoh DFS yang sama.
+
+41
+00:03:05,920 --> 00:03:10,290
+Saya sebenarnya menyimpannya ke variabel dari frame data.
+
+42
+00:03:10,290 --> 00:03:14,000
+Anda dapat mengatakan untuk menggarisbawahi jika Anda mengklik tab di sini.
+
+43
+00:03:14,220 --> 00:03:17,470
+Anda akan melihat bahwa Anda memiliki beragam format yang dapat Anda tulis.
+
+44
+00:03:17,580 --> 00:03:21,270
+Jadi pada dasarnya hampir semua format yang sama yang dapat Anda baca.
+
+45
+00:03:21,270 --> 00:03:25,780
+Jadi saya akan masuk dan mengatakan DFA menggarisbawahi untuk s.
+
+46
+00:03:26,070 --> 00:03:36,960
+Saya akan memberi label ini sebagai output garis bawah saya dan hal lain yang saya lakukan adalah mengatakan Index sama dengan false dan alasannya
+
+47
+00:03:36,960 --> 00:03:42,200
+adalah karena saya sebenarnya tidak ingin menyimpan indeks ini sebagai kolom.
+
+48
+00:03:42,210 --> 00:03:47,400
+Biarkan saya pergi ke depan dan menunjukkan kepada Anda apa yang terjadi jika saya tidak menempatkan indexical ke false dan
+
+49
+00:03:47,400 --> 00:03:49,290
+mereka hanya menempatkan F untuk melihat Esrey.
+
+50
+00:03:49,410 --> 00:03:54,660
+Saya akan pergi ke depan dan mengatakan PD yang bertuliskan garis bawah cxxviii dan saya akan membaca
+
+51
+00:03:54,660 --> 00:03:56,860
+file saya baru saja menyimpan output saya.
+
+52
+00:03:56,960 --> 00:04:03,180
+Tidak, saya mendapatkan kolom ini di sini disebut 0 tanpa nama dan itu adalah indeks lama.
+
+53
+00:04:03,180 --> 00:04:09,560
+Sekarang jika saya katakan T. F. lihat adalah indeks salah dalam menjalankan sel itu.
+
+54
+00:04:09,750 --> 00:04:15,360
+Dan kemudian jika saya membaca output saya lagi saya akan benar-benar mengatakan indeks itu dan saya akan secara otomatis
+
+55
+00:04:15,360 --> 00:04:17,490
+menetapkan rentang indeks ke frame data.
+
+56
+00:04:17,490 --> 00:04:22,470
+Ingatlah itu saat Anda menyimpan file CACP Anda apakah pantas atau tidak bagi Anda untuk
+
+57
+00:04:22,560 --> 00:04:24,520
+mengatakan Index sama dengan false.
+
+58
+00:04:24,540 --> 00:04:24,850
+Baiklah.
+
+59
+00:04:24,870 --> 00:04:28,700
+Sekarang mari kita lanjutkan dan beralih ke membaca dan menulis dari file Excel.
+
+60
+00:04:28,870 --> 00:04:31,240
+Panda dapat membaca dan menulis file excel.
+
+61
+00:04:31,290 --> 00:04:34,280
+Ingatlah bahwa panda hanya dapat mengimpor data.
+
+62
+00:04:34,350 --> 00:04:39,990
+Itu tidak dapat mengimpor rumus atau gambar atau hal-hal seperti makro menggunakannya dengan membaca skor lainnya.
+
+63
+00:04:40,020 --> 00:04:43,310
+Metode Excel dapat menyebabkan panda crash.
+
+64
+00:04:43,320 --> 00:04:49,890
+Satu hal yang perlu diperhatikan adalah bahwa Anda mungkin mendapatkan kesalahan meminta Anda untuk menginstal pustaka x l yang seharusnya
+
+65
+00:04:49,890 --> 00:04:51,360
+sudah diinstal secara otomatis.
+
+66
+00:04:51,420 --> 00:04:53,330
+Jika Anda menggunakan distribusi Anaconda.
+
+67
+00:04:53,430 --> 00:04:58,710
+Tetapi jika tidak, Anda akan pergi ke depan dan pergi ke terminal Anda dan di terminal
+
+68
+00:04:58,710 --> 00:05:05,130
+atau baris perintah Anda akan mengetikkan conda install X LRAD atau Anda akan melakukan hal yang sama dengan instalasi pip.
+
+69
+00:05:05,160 --> 00:05:06,810
+Sekali lagi Anda tidak akan melakukan ini di sel.
+
+70
+00:05:06,820 --> 00:05:09,410
+Anda sebenarnya akan melakukan ini di baris perintah atau terminal.
+
+71
+00:05:09,420 --> 00:05:14,300
+Semoga jika Anda melakukan distribusi Anaconda yang seharusnya diinstal secara otomatis bersama dengan pantless.
+
+72
+00:05:15,060 --> 00:05:17,070
+Mari kita lanjutkan dan lihat bagaimana ini bekerja.
+
+73
+00:05:17,100 --> 00:05:18,590
+Saya akan pergi ke depan dan menunjukkan file Excel.
+
+74
+00:05:18,600 --> 00:05:22,700
+Saya akan bekerja dengan Anda, Anda memiliki sampel Excel yang sangat sederhana.
+
+75
+00:05:22,740 --> 00:05:27,870
+Pada kenyataannya itu terlihat hampir sama dengan file yang sedang kami kerjakan kecuali di
+
+76
+00:05:27,870 --> 00:05:33,350
+sini disebutkan bahwa itu ada di sheet 1 dan pada dasarnya apa yang dipikirkan Pandurs sebagai workbook.
+
+77
+00:05:33,420 --> 00:05:34,620
+Apakah itu buku kerja?
+
+78
+00:05:34,650 --> 00:05:41,960
+Hanya sekelompok lembar dan setiap lembar adalah bingkai data yang berarti saya bisa mengatakan PD yang membaca Excel.
+
+79
+00:05:42,390 --> 00:05:46,910
+Saya mengirimkan nama file Excel file X LS X.
+
+80
+00:05:47,130 --> 00:05:54,000
+Trik yang bagus untuk ini adalah mulai mengetik tab tekan nama file dan memilihnya lagi ini hanya berfungsi jika file
+
+81
+00:05:54,030 --> 00:05:57,080
+excel di lokasi yang sama dengan notebook ini.
+
+82
+00:05:57,270 --> 00:06:04,790
+Jika tidak, Anda harus melewati seluruh path file dan kemudian Anda dapat mengatakan nama sheet dan kemudian
+
+83
+00:06:04,830 --> 00:06:11,160
+pasand sheet satu maju dan baca ini dan kami mendapatkan output yang kami harapkan.
+
+84
+00:06:11,160 --> 00:06:13,780
+Dan pada dasarnya itu untuk membaca dari file excel.
+
+85
+00:06:13,790 --> 00:06:18,390
+Anda memasukkan file dan kemudian Anda memasukkan nama lembar yang Anda inginkan di Pandurs mencoba
+
+86
+00:06:18,390 --> 00:06:20,690
+yang terbaik untuk membacanya sebagai bingkai data.
+
+87
+00:06:20,820 --> 00:06:22,490
+Kerangka data ke output Excel.
+
+88
+00:06:22,530 --> 00:06:24,400
+Ini juga proses yang sangat sederhana.
+
+89
+00:06:24,420 --> 00:06:31,620
+Anda hanya perlu mengambil frame data yang ingin Anda tulis untuk mengatakan katakan garis bawah Excel pass atas nama file Excel
+
+90
+00:06:31,620 --> 00:06:33,400
+yang ingin Anda simpan.
+
+91
+00:06:33,430 --> 00:06:36,660
+Itu akan membuat yang baru bernama Excel.
+
+92
+00:06:36,870 --> 00:06:44,730
+Contoh 2 dot x l s x dan kemudian kita dapat menentukan nama lembar jika Anda mau.
+
+93
+00:06:44,910 --> 00:06:49,980
+Sesuatu yang perlu diketahui adalah bahwa di mana Anda mengatakan untuk menggarisbawahi Excel untuk alasan apa pun
+
+94
+00:06:49,980 --> 00:06:54,260
+panda yang Anda butuhkan untuk menulis di lembar menggarisbawahi nama dan nama lembar.
+
+95
+00:06:54,300 --> 00:06:57,120
+Kami akan masuk dan memasukkan lembar baru.
+
+96
+00:06:57,120 --> 00:07:00,500
+Baiklah itu bagus dan jalankan ini dan hanya itu.
+
+97
+00:07:00,510 --> 00:07:02,730
+Kami telah menyimpannya di file Excel.
+
+98
+00:07:02,730 --> 00:07:05,970
+Sekarang mari kita pergi ke depan dan bergerak bersama untuk bekerja T. M ..
+
+99
+00:07:06,180 --> 00:07:10,260
+Sekali lagi Anda harus menginstal beberapa perpustakaan agar ini berfungsi dan Anda mungkin
+
+100
+00:07:10,260 --> 00:07:12,530
+perlu me-restart notebook Jupiter setelah itu.
+
+101
+00:07:12,570 --> 00:07:15,080
+Silakan dan lihat catatan untuk kuliah ini.
+
+102
+00:07:15,080 --> 00:07:20,130
+Buku catatan untuk itu untuk mendapatkan daftar semua perpustakaan perlu menginstal atau melanjutkan dan pergi ke
+
+103
+00:07:20,130 --> 00:07:22,670
+awal kuliah di mana kami menunjukkan daftar perpustakaan.
+
+104
+00:07:22,950 --> 00:07:26,760
+Mari kita bicara tentang input HTL di sini.
+
+105
+00:07:26,790 --> 00:07:34,650
+Saya memiliki tautan ke dokumen FDIC untuk halaman daftar bank yang gagal dan berikut adalah daftar semua bank yang
+
+106
+00:07:35,010 --> 00:07:36,710
+gagal oleh FDIC.
+
+107
+00:07:36,870 --> 00:07:41,080
+Sejauh yang mereka ikuti adalah Federal Deposit Insurance Corporation.
+
+108
+00:07:41,220 --> 00:07:43,310
+Dan di sini kita memiliki banyak bank yang gagal.
+
+109
+00:07:43,320 --> 00:07:47,660
+Tanggal penutupan diperbarui hari dll. tapi ini pada dasarnya hanya mengawasinya berkedip.
+
+110
+00:07:47,760 --> 00:07:51,180
+Tautan ini ada di buku catatan yang bisa dia pakai dan salin dan tempel dari sana.
+
+111
+00:07:51,180 --> 00:07:55,760
+Saya akan melanjutkan dan menyalin tautan ini dan mencoba membacanya.
+
+112
+00:07:55,760 --> 00:07:59,890
+Dan kutu buku panderer yang melakukan ini yang harus saya lakukan adalah mengatakan PD.
+
+113
+00:07:59,970 --> 00:08:05,610
+Baiklah mari kita lanjutkan dan katakan data sama dengan titik PD.
+
+114
+00:08:06,060 --> 00:08:08,190
+Baca h T. M ..
+
+115
+00:08:08,420 --> 00:08:12,900
+Dan kemudian sebagai string saya akan lulus pada usia TMLC yang sebenarnya.
+
+116
+00:08:14,440 --> 00:08:19,720
+Mereka akan membutuhkan sedikit waktu untuk membacanya bahwa itu akan berhasil jika Anda memiliki semua perpustakaan.
+
+117
+00:08:20,000 --> 00:08:20,340
+BAIK.
+
+118
+00:08:20,370 --> 00:08:21,600
+Sepertinya itu berhasil.
+
+119
+00:08:21,690 --> 00:08:27,280
+Sesuatu yang perlu dicatat di sini adalah bahwa biasanya ini tidak akan langsung berhubungan dengan bingkai data.
+
+120
+00:08:27,300 --> 00:08:34,360
+Jika saya memeriksa data apa jika saya katakan ketik Anda akan melihat bahwa itu sebenarnya sebuah daftar.
+
+121
+00:08:34,470 --> 00:08:40,350
+Dan pada dasarnya yang coba dilakukan pantless adalah menemukan setiap elemen tabel yang ada di file tim
+
+122
+00:08:40,350 --> 00:08:41,190
+h ini.
+
+123
+00:08:41,190 --> 00:08:48,090
+Dan jika Anda terbiasa jika h T. M. Anda tahu bahwa jika Anda dapat mengklik kanan di sini
+
+124
+00:08:48,090 --> 00:08:50,660
+dan melihat sumber halaman Anda akan memiliki daftar kode HTL yang sebenarnya.
+
+125
+00:08:50,910 --> 00:08:56,010
+Dan jika Anda terbiasa dengan hl Anda akan tahu bahwa Anda benar-benar dapat mencari seperti ada daftar kelas
+
+126
+00:08:56,010 --> 00:08:56,670
+di sini.
+
+127
+00:08:56,700 --> 00:09:03,300
+Sebenarnya ada referensi tabel jadi ada tanda tabel di sini dalam kode HTML dan pada dasarnya
+
+128
+00:09:03,300 --> 00:09:04,550
+panel akan melakukannya.
+
+129
+00:09:04,560 --> 00:09:09,500
+Dan itu akan membuat daftar mereka dan mengubah setiap item dalam daftar itu menjadi bingkai data.
+
+130
+00:09:09,720 --> 00:09:13,800
+Dan apa yang akan Anda lakukan hanyalah menelusuri daftar itu sampai Anda menemukan apa yang
+
+131
+00:09:13,800 --> 00:09:14,430
+Anda inginkan.
+
+132
+00:09:14,490 --> 00:09:17,310
+Dalam hal ini, itu harus menjadi item pertama dalam daftar.
+
+133
+00:09:17,310 --> 00:09:20,120
+Jadi jika kita mengatakan data pada titik nol.
+
+134
+00:09:20,160 --> 00:09:25,790
+Jadi item pertama dalam daftar itu yaitu kerangka data yang kami cari kota nama besar diperbarui.
+
+135
+00:09:26,220 --> 00:09:26,800
+Sebagainya.
+
+136
+00:09:26,940 --> 00:09:32,930
+Mari kita pergi dan periksa kepala frame data itu dan itulah yang terlihat.
+
+137
+00:09:33,030 --> 00:09:34,670
+Sekali lagi beberapa hal tidak disalin.
+
+138
+00:09:34,670 --> 00:09:35,310
+Persis.
+
+139
+00:09:35,310 --> 00:09:36,920
+Anda mendapatkan banyak nilai.
+
+140
+00:09:37,110 --> 00:09:42,720
+Tetapi perlu diingat panderer pada dasarnya hanya membaca H. ini T. file surat sebaik mungkin.
+
+141
+00:09:42,720 --> 00:09:43,110
+Baiklah.
+
+142
+00:09:43,260 --> 00:09:46,630
+Itu surat H-2A yang pada dasarnya hanyalah memo web Pandurs.
+
+143
+00:09:46,650 --> 00:09:51,150
+Mari kita beralih ke topik terakhir kita yang bekerja dengan sekuel.
+
+144
+00:09:51,210 --> 00:09:55,530
+Sekarang ada beberapa catatan di buku catatan Anda tentang sekuel dan panda.
+
+145
+00:09:55,530 --> 00:10:01,410
+Pandas itu sebenarnya mungkin cara terbaik untuk membaca database sekuel karena ada banyak rasa dari
+
+146
+00:10:01,410 --> 00:10:07,920
+mesin sekuel seperti sekuel postscript sekuel cahaya sekuel saya di mana kita akan lakukan di sini hanya benar-benar
+
+147
+00:10:07,920 --> 00:10:13,860
+membangun mesin sekuel yang sangat sederhana yang akan disimpan sementara di memori untuk menunjukkan kepada Anda
+
+148
+00:10:14,250 --> 00:10:19,070
+bagaimana Anda dapat menggunakan Pandurs untuk membaca tabel sepenuhnya sebagai bingkai data.
+
+149
+00:10:19,080 --> 00:10:25,380
+Namun saya akan merekomendasikan bahwa Anda benar-benar melakukan pencarian untuk driver tertentu tergantung pada mesin
+
+150
+00:10:25,470 --> 00:10:26,810
+sekuel spesifik Anda.
+
+151
+00:10:26,850 --> 00:10:31,650
+Sebagai contoh jika Anda pergi ke buku catatan untuk kuliah ini Anda akan melihat bahwa jika Anda
+
+152
+00:10:31,860 --> 00:10:36,810
+menggunakan sekuel Postgres Anda harus benar-benar menggunakan perpustakaan yang disebut Psycho PGE 2 yang dirancang khusus untuk bekerja
+
+153
+00:10:36,810 --> 00:10:41,370
+dengan sekuel pasca-karir atau jika Anda menggunakan sekuel saya, Anda harus menggunakan pi sekuel saya.
+
+154
+00:10:41,370 --> 00:10:45,690
+Di perpustakaan lain secara khusus dirancang untuk rasa sekuel yang spesifik.
+
+155
+00:10:45,780 --> 00:10:50,490
+Saat ini kita hanya akan melakukan contoh yang sangat sederhana tentang bagaimana panda bisa
+
+156
+00:10:50,490 --> 00:10:53,090
+membaca seluruh tabel dan sekuel jika harus.
+
+157
+00:10:54,080 --> 00:11:03,600
+Kami akhirnya melakukan mengatakan dari impor alkimia sekuel menciptakan mesin dan ini hanya akan memungkinkan kita untuk membuat
+
+158
+00:11:03,600 --> 00:11:07,740
+mesin sekuel yang sangat sederhana dalam memori.
+
+159
+00:11:07,740 --> 00:11:14,610
+Saya akan pergi ke depan dan mengatakan mesin sama dengan membuat garis bawah mesin
+
+160
+00:11:14,610 --> 00:11:16,290
+dan di sini
+
+161
+00:11:19,460 --> 00:11:26,790
+dan hanya akan mengetikkan lampu sekuel tiga garis miring ke depan dan kemudian titik dua memori.
+
+162
+00:11:26,850 --> 00:11:31,510
+Jadi saya punya sekuel seperti usus tiga memangkas usus besar usus memori.
+
+163
+00:11:31,600 --> 00:11:34,430
+Kita akan pergi ke depan dan menjalankan itu dan hal kecil ini.
+
+164
+00:11:34,440 --> 00:11:41,190
+Baris kode kecil ini telah menciptakan database sekuel mesin ringan sekuel sangat kecil yang berjalan
+
+165
+00:11:41,190 --> 00:11:42,610
+di memori.
+
+166
+00:11:42,720 --> 00:11:50,070
+Saya akan pergi ke depan dan mengambil frame data saya bahwa DSF dan saya akan mengatakan untuk menggarisbawahi sekuel
+
+167
+00:11:50,070 --> 00:11:55,330
+dan saya akan menulisnya ke mesin sangat sementara yang kami jalankan di memori.
+
+168
+00:11:55,500 --> 00:11:59,430
+Jadi yang dapat Anda lakukan adalah kita akan mengatakan untuk sekuel Anda akan menyampaikan apa yang Anda inginkan
+
+169
+00:11:59,430 --> 00:12:00,310
+untuk dipanggil tabel ini.
+
+170
+00:12:00,540 --> 00:12:03,310
+Jadi silakan dan sebut ini mejaku.
+
+171
+00:12:03,750 --> 00:12:05,920
+Dan kemudian Anda lulus dalam mesin sekuel yang bekerja dengan Anda.
+
+172
+00:12:05,920 --> 00:12:07,990
+Dalam hal ini hanya mesin.
+
+173
+00:12:08,070 --> 00:12:15,630
+Sekarang mesin ini akan menjadi koneksi biasanya saya akan merekomendasikan Anda membaca dokumentasi secara menyeluruh tetapi sekali lagi seperti
+
+174
+00:12:15,660 --> 00:12:22,050
+yang saya sebutkan sebelumnya panda hanya dengan sendirinya mungkin bukan sumber terbaik bagi Anda untuk benar-benar
+
+175
+00:12:22,050 --> 00:12:25,010
+membaca sekuel ke panda secara langsung.
+
+176
+00:12:25,050 --> 00:12:30,870
+Anda mungkin harus mencari pustaka Python khusus untuk versi sekuel apa pun yang Anda
+
+177
+00:12:30,870 --> 00:12:31,560
+gunakan.
+
+178
+00:12:31,800 --> 00:12:37,590
+Tetapi sejauh pengaturan yang sangat sederhana Anda bisa mengatakan DF untuk sekuel passen nama tabel baru
+
+179
+00:12:37,710 --> 00:12:41,530
+yang Anda inginkan dan kemudian koneksi ke mesin sekuel Anda.
+
+180
+00:12:41,820 --> 00:12:47,010
+Dan sekarang saya akan melanjutkan dan mengatakan sekuel jika dan benar-benar membaca kembali tabel itu.
+
+181
+00:12:47,010 --> 00:12:54,190
+Jadi akan mengatakan sekuel garis bawah PD Reed saya berikan nama meja saya dalam hal ini meja saya.
+
+182
+00:12:54,670 --> 00:12:58,110
+Dan kemudian saya tentukan koneksi yang sebenarnya dan sebagainya.
+
+183
+00:12:58,380 --> 00:13:04,520
+Dan itu hanya mesin sekuel yang sangat kecil menerangi basis data yang terjadi di memori.
+
+184
+00:13:04,620 --> 00:13:11,160
+Jika saya melanjutkan dan membaca itu dan memeriksa apa yang tampak seperti saya mendapatkan DMF sekuel dan perhatikan bahwa indeks
+
+185
+00:13:11,280 --> 00:13:13,250
+adalah kolom baru di sini.
+
+186
+00:13:13,260 --> 00:13:16,450
+Baiklah, silakan dan bebas memposting forum Q&amp;A.
+
+187
+00:13:16,560 --> 00:13:22,230
+Jika Anda mengalami kesulitan menemukan perpustakaan tertentu yang berfungsi jika mesin sekuel Anda atau rasa sekuel
+
+188
+00:13:22,230 --> 00:13:28,590
+Anda sejauh kuliah ini hal utama untuk keluar dari itu adalah bagaimana membaca dan menulis ke file CSV karena
+
+189
+00:13:28,860 --> 00:13:33,300
+mereka hanya akan menjadi karya file CSV untuk sisa Kursus sejauh penggunaan
+
+190
+00:13:33,300 --> 00:13:34,100
+pribadi Anda.
+
+191
+00:13:34,110 --> 00:13:36,750
+Semoga Anda bisa melihat metode menggarisbawahi baca.
+
+192
+00:13:36,750 --> 00:13:42,300
+Ada banyak dari mereka dan Anda hanya dapat melihat dokumentasi atau referensi notebook
+
+193
+00:13:42,300 --> 00:13:45,800
+untuk bagaimana sebenarnya membaca ke frame data panderers.
+
+194
+00:13:45,810 --> 00:13:47,920
+Baiklah, terima kasih semuanya.
+
+195
+00:13:47,940 --> 00:13:52,590
+Silakan dan ajukan pertanyaan apa saja pada kuliah ini di forum Tanya Jawab karena ada banyak opsi di
+
+196
+00:13:52,590 --> 00:13:55,030
+sini dan kami tidak punya waktu untuk membahas semuanya.
+
+197
+00:13:55,110 --> 00:13:58,290
+Tetapi jika Anda memiliki pertanyaan, saya senang menjawabnya di forum.
+
+198
+00:13:58,290 --> 00:14:00,150
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

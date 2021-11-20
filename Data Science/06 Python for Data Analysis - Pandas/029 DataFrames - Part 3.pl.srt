@@ -1,0 +1,467 @@
+1
+00:00:05,580 --> 00:00:09,150
+Cześć wszystkim i zapraszam do ramki danych na 3 wykłady.
+
+2
+00:00:09,540 --> 00:00:14,380
+W tym ostatnim wykładzie, w ramach cyklu wykładów z serii danych, dowiemy się o kluczu o
+
+3
+00:00:14,380 --> 00:00:15,920
+wyższym indeksie i indeksie.
+
+4
+00:00:15,930 --> 00:00:20,370
+Najpierw utwórz szybki przykład tego, jak wygląda wiele indeksowanych danych, a następnie w jaki
+
+5
+00:00:20,370 --> 00:00:23,670
+sposób można pracować z ramkami danych, aby mieć indeks wielopoziomowy.
+
+6
+00:00:23,670 --> 00:00:26,990
+Przejdźmy dalej i przejdź do notatnika Jupiter, aby zacząć.
+
+7
+00:00:27,000 --> 00:00:27,390
+W porządku.
+
+8
+00:00:27,390 --> 00:00:29,470
+Jestem w notesie Jowisza.
+
+9
+00:00:29,580 --> 00:00:35,370
+Co mam zamiar zrobić, to skopiować i wkleić niektóre linie kodu, które są dostępne dla ciebie
+
+10
+00:00:35,370 --> 00:00:37,850
+w twoim notesie, zwane Ramkami danych.
+
+11
+00:00:37,860 --> 00:00:43,440
+Jeśli przewiniesz w dół, aż dojdziesz do wyższej sekcji klucza indeksowego o wyższym indeksie, zobaczysz te cztery
+
+12
+00:00:43,440 --> 00:00:44,290
+linie kodu.
+
+13
+00:00:44,310 --> 00:00:48,130
+Są to cztery linie kodu, które zostaną użyte do rzeczywistego zbudowania tej ramki danych.
+
+14
+00:00:48,330 --> 00:00:50,140
+Możemy iść dalej i sprawdzić to.
+
+15
+00:00:50,340 --> 00:00:55,450
+Powiemy na zewnątrz i to tylko lista.
+
+16
+00:00:55,470 --> 00:01:02,970
+Mamy więc trzy lub sześć pozycji na tej liście dwóch różnych typów G1 G1 G1, a następnie G-2 DTG
+
+17
+00:01:03,030 --> 00:01:07,700
+2, które mamy w środku 1 2 3 1 2 3.
+
+18
+00:01:08,010 --> 00:01:16,110
+A potem, kiedy poszliśmy naprzód i zrobiliśmy to za pomocą funkcji zip wraz z funkcją listy, ponieważ powiedzieliśmy
+
+19
+00:01:16,140 --> 00:01:23,580
+wyższy indeks, poszliśmy naprzód i użyliśmy zipu i LISTY w celu uczynienia tego na liście par krotek
+
+20
+00:01:23,580 --> 00:01:29,790
+G 1 1 1 2 1 3 2 1 2 2 2 3.
+
+21
+00:01:30,000 --> 00:01:35,050
+A potem przekazałem go specjalnej funkcji od pandererów i faktycznie nie działaliśmy z tą
+
+22
+00:01:35,070 --> 00:01:41,910
+funkcją przez cały czas, ale to jest po to, aby dostosować ramkę danych, więc nie przejmujcie się nią zbytnio,
+
+23
+00:01:41,940 --> 00:01:44,960
+ale Chcę tylko, żebyś był tego świadomy.
+
+24
+00:01:44,970 --> 00:01:49,820
+Jego PD to wielopasmowy indeks z krotek i może w zasadzie wziąć listę, która wygląda
+
+25
+00:01:49,830 --> 00:01:51,870
+tak i stworzyć z niej indeks.
+
+26
+00:01:52,140 --> 00:01:56,800
+Więc po tym, jak to zrobisz, dostaniesz ten wielo-indeksowy z kilkoma poziomami.
+
+27
+00:01:56,800 --> 00:02:01,890
+Czy chcesz, żebym dodał jeden poziom jeden do trzech jako kolejny poziom, a następnie etykiety i pójdę i wyjaśnię,
+
+28
+00:02:01,890 --> 00:02:04,610
+co to wszystko znaczy, gdy tworzymy tę ramkę danych.
+
+29
+00:02:04,680 --> 00:02:09,780
+Ale teraz możesz po prostu swobodnie kopiować i wklejać ten kod bezpośrednio z notebooka, ponieważ
+
+30
+00:02:09,780 --> 00:02:14,850
+nie jest to ważne, jeśli chodzi o tworzenie tej ramki danych od zera.
+
+31
+00:02:15,520 --> 00:02:27,360
+Wchodzimy i mówimy o ramce danych passen Rande i 6 kom. 2, więc mamy 6 wierszy za dwie kolumny, a
+
+32
+00:02:27,420 --> 00:02:33,660
+następnie ustawiam indeks jako obiekt o wyższym indeksie, który właśnie stworzyliśmy,
+
+33
+00:02:33,660 --> 00:02:38,440
+a następnie ustawię kolumny być listą aib.
+
+34
+00:02:39,210 --> 00:02:39,700
+W porządku.
+
+35
+00:02:39,720 --> 00:02:43,740
+Możesz też swobodnie kopiować i wklejać cały ten kod ze swoich notebooków, ponieważ nie jest to takie ważne.
+
+36
+00:02:44,010 --> 00:02:48,650
+Ma to na celu tylko utworzenie ramki danych o wielu indeksach.
+
+37
+00:02:48,700 --> 00:02:50,850
+Pozwól, że ci pokażę, co mam na myśli tutaj.
+
+38
+00:02:50,940 --> 00:02:55,110
+Jeśli faktycznie pokażę ramkę danych, widzę, że ma ona dwa poziomy indeksu.
+
+39
+00:02:55,110 --> 00:02:57,240
+Ma ten poziom Jiwon i G-2.
+
+40
+00:02:57,420 --> 00:03:02,580
+A następnie ten poziom podrzędny lub wgląd jeden dwa trzy jeden dwa trzy, a następnie dwie kolumny.
+
+41
+00:03:02,730 --> 00:03:07,200
+I wygląda na to, że ramka danych ma wiele poziomów indeksu.
+
+42
+00:03:07,200 --> 00:03:09,870
+W przeciwnym razie znany jako wyższy klucz indeksu.
+
+43
+00:03:09,870 --> 00:03:15,970
+Zobaczmy, jak możemy faktycznie wywoływać dane z wielopoziomowego indeksu dla tej hierarchii indeksów.
+
+44
+00:03:16,140 --> 00:03:20,740
+Możemy śmiało powiedzieć "DMF L-O".
+
+45
+00:03:21,780 --> 00:03:27,630
+A następnie możemy iść dalej i wykorzystywać notację Bractona GRABBE z bardzo zewnętrznego indeksu.
+
+46
+00:03:27,630 --> 00:03:34,560
+Na przykład, jeśli chcę wszystko, co jest w G1, mogę ją po prostu przekazać
+
+47
+00:03:34,560 --> 00:03:41,730
+i dostaję tę małą ramkę sub-danych, która jest w zasadzie pierwszymi trzema rzędami dla tych dwóch
+
+48
+00:03:41,820 --> 00:03:49,870
+kolumn, a następnie mogę kontynuować indeksowanie takich, jak ja '. Zobaczę lub zobaczę, że jedno jest w porządku.
+
+49
+00:03:50,580 --> 00:03:56,300
+A potem przekazanie numeru i to faktycznie zwróci te dwa elementy tutaj jako serię.
+
+50
+00:03:56,310 --> 00:04:04,360
+Więc podstawową ideą jest to, że wywołujesz z zewnętrznego indeksu, kontynuuj dzwonienie w głąb.
+
+51
+00:04:04,380 --> 00:04:08,080
+Jeśli naprawdę chcesz nazwać te nazwy indeksów.
+
+52
+00:04:08,130 --> 00:04:09,720
+Więc teraz są bezimienne.
+
+53
+00:04:09,720 --> 00:04:14,910
+To jest powiadomione o tym, że nie ma nazwy w tych dwóch komórkach, które mogą wyjść na
+
+54
+00:04:15,330 --> 00:04:16,340
+wskazany indeks DMF.
+
+55
+00:04:16,440 --> 00:04:21,610
+Nazwy wprowadzają zmiany i powinieneś dostać zamrożoną listę, której nie ma wcale.
+
+56
+00:04:21,630 --> 00:04:24,900
+A to tylko typ obiektów nazw indeksów panderers.
+
+57
+00:04:25,110 --> 00:04:31,230
+Wszystko, co tu mówimy, to to, że te indeksy nie mają żadnych nazw, ale możesz iść dalej i powiedzieć, że
+
+58
+00:04:32,640 --> 00:04:34,900
+są równe, a następnie przekazać listę nazwisk.
+
+59
+00:04:34,980 --> 00:04:40,450
+Na przykład wyjdźmy i wywołajmy te zewnętrzne grupy indeksu, ponieważ jest to pierwsze G.
+
+60
+00:04:40,770 --> 00:04:45,300
+A potem zadzwonimy do indeksu Insight, a ty do liczb.
+
+61
+00:04:45,300 --> 00:04:53,460
+A teraz, kiedy nazywam moją ramkę danych, mamy grupy jako etykietowany indeks na zewnątrz i odrętwiały jak indeks
+
+62
+00:04:53,460 --> 00:04:55,220
+etykiety w środku.
+
+63
+00:04:55,290 --> 00:04:57,610
+A to może mieć tyle warstw, ile chcesz.
+
+64
+00:04:57,870 --> 00:05:03,210
+Mamy nadzieję, że możesz zacząć przekonać się, jak przydałoby się to w przypadku wielopoziomowych informacji indeksu,
+
+65
+00:05:03,210 --> 00:05:05,260
+które chcesz wykorzystać w ramce danych.
+
+66
+00:05:05,790 --> 00:05:10,800
+Pokażmy, jak możemy pobrać informacje z tego jeszcze raz.
+
+67
+00:05:10,800 --> 00:05:13,270
+Wyobraź sobie, że chcesz pobrać tę wartość właśnie tutaj.
+
+68
+00:05:13,290 --> 00:05:16,540
+0. 07 do tego, który został podświetlony.
+
+69
+00:05:16,830 --> 00:05:22,580
+Cóż, to jest pod kolumną B numer dwa od G-2.
+
+70
+00:05:22,940 --> 00:05:26,200
+Zacznijmy od zewnatrz i pracujmy.
+
+71
+00:05:26,250 --> 00:05:37,290
+Pójdziemy dalej i określimy, że chcemy C G i, że zwraca tę ramkę danych.
+
+72
+00:05:37,290 --> 00:05:39,250
+Ponownie szukamy tej wartości tutaj.
+
+73
+00:05:39,270 --> 00:05:48,040
+A więc chodźmy dalej i zrób jeszcze jeden indeks, a my również możemy zadzwonić tutaj.
+
+74
+00:05:48,960 --> 00:05:52,340
+A potem mamy w kolumnie B lub indeks B.
+
+75
+00:05:52,350 --> 00:05:55,320
+Przepraszam za serię 0. 07.
+
+76
+00:05:55,500 --> 00:06:01,350
+A więc w końcu po prostu nazywamy B na końcu i to wszystko, co możemy pobrać
+
+77
+00:06:01,350 --> 00:06:03,900
+od zewnątrz w tej konkretnej wartości.
+
+78
+00:06:04,010 --> 00:06:06,480
+Teraz powinieneś zatrzymać wideo.
+
+79
+00:06:06,540 --> 00:06:12,220
+Wybierz inną wartość i sprawdź, czy możesz ją zindeksować i odesłać.
+
+80
+00:06:12,360 --> 00:06:12,850
+DOBRZE.
+
+81
+00:06:12,960 --> 00:06:14,600
+Mam nadzieję, że jesteś w stanie to zrobić.
+
+82
+00:06:14,610 --> 00:06:20,190
+Idźmy dalej i pokażemy wam ostatnią bardzo użyteczną funkcję o nazwie przekrój
+
+83
+00:06:20,260 --> 00:06:23,100
+i będzie to x x.
+
+84
+00:06:23,970 --> 00:06:28,680
+Zwraca to przekrój wierszy lub kolumn z serii ramek danych
+
+85
+00:06:28,680 --> 00:06:32,490
+i będziesz go używać, gdy masz indeks wielopoziomowy.
+
+86
+00:06:32,490 --> 00:06:36,020
+Tak więc nasza ramka danych wygląda tak.
+
+87
+00:06:36,030 --> 00:06:43,820
+Powiedzmy, że chcieliśmy złapać wszystko, co było pod G1, mogłem zrobić to, co właśnie pokazałem EHLO C
+
+88
+00:06:44,060 --> 00:06:48,190
+G 1 i to zwraca dane z energii 1.
+
+89
+00:06:48,360 --> 00:06:56,940
+Ale inną opcją dla wielopoziomowego indeksu jest użycie tego X jako przekroju, a następnie przejście w Jiwon ma również
+
+90
+00:06:57,000 --> 00:06:58,260
+ciąg znaków.
+
+91
+00:06:58,620 --> 00:07:06,180
+Ale to, co jest miłe w tym przekroju, to możliwość pominięcia lub przejścia do wielopoziomowego indeksu.
+
+92
+00:07:06,540 --> 00:07:14,730
+Na przykład załóżmy, że mam tutaj tę ramkę danych i chcę pobrać wszystkie wartości liczb równe jednej z
+
+93
+00:07:15,150 --> 00:07:16,340
+obiema grupami.
+
+94
+00:07:16,380 --> 00:07:21,770
+Znaczenie chcę, co podświetlone tutaj 1, a następnie 0. 3 1. 6 9.
+
+95
+00:07:21,930 --> 00:07:26,710
+Ale też chciałem tej wartości 0. 1 6 0. 1 8.
+
+96
+00:07:26,850 --> 00:07:31,700
+Tak więc chcę, aby wszystkie wartości były odrętwiałe, aby indeks wglądu był równy 1.
+
+97
+00:07:31,790 --> 00:07:39,370
+Tego rodzaju indeksowanie jest trudne, ponieważ coś takiego jak EHLO pokazuje metody, ale nie jest tak
+
+98
+00:07:39,390 --> 00:07:48,250
+źle z metodą X lub metodą przekrojową, którą w końcu robisz, określając to, czego chcesz, aż nie równe jednemu.
+
+99
+00:07:48,480 --> 00:07:54,730
+A następnie musisz wskazać jako drugi poziom argumentów, a następnie podać nazwę indeksu.
+
+100
+00:07:54,840 --> 00:07:58,340
+W tym przypadku nazwa indeksu jest odrętwiała.
+
+101
+00:07:58,590 --> 00:08:05,970
+Zasadniczo pozwala nam to przechwycić przekrój, w którym poziom równy jest zdrętwiałości równej 1, i właśnie w
+
+102
+00:08:05,970 --> 00:08:09,140
+ten sposób zamierzasz używać tego przekroju.
+
+103
+00:08:09,510 --> 00:08:13,900
+A teraz widzimy obie grupy, w których poziom num ma wartość równą 1.
+
+104
+00:08:13,920 --> 00:08:16,340
+I ten rodzaj danych zostanie zwrócony.
+
+105
+00:08:17,010 --> 00:08:21,910
+OK, nie przejmuj się zbytnio, ponieważ jest to dość zaawansowane użycie Pandurs.
+
+106
+00:08:21,930 --> 00:08:28,200
+Chcę tylko, abyś wiedział o tym później, ponieważ dowiemy się więcej o wizualizacji danych i zaczniesz docierać do twoich
+
+107
+00:08:28,200 --> 00:08:28,590
+danych.
+
+108
+00:08:28,590 --> 00:08:35,100
+Projekty Capstone powrócimy do tej metody przekrojowej, aby pobrać dane z indeksu giełdowego.
+
+109
+00:08:35,520 --> 00:08:40,230
+Ale na razie chcę, żebyś był tego świadomy, ale nie martw się o to, że go
+
+110
+00:08:40,230 --> 00:08:44,460
+przetestujesz, ponieważ jest bardziej zaawansowany i nie będziesz go często oglądał w trakcie kursu.
+
+111
+00:08:44,460 --> 00:08:49,290
+W rzeczywistości tak naprawdę pojawia się tylko raz w jednym z bardziej zaawansowanych projektów zwieńczeń
+
+112
+00:08:49,290 --> 00:08:52,350
+danych i jest wyjaśnienie, jak ponownie korzystać z przekroju.
+
+113
+00:08:52,350 --> 00:08:56,010
+Więc wejdziemy i damy ci przypomnienie, zanim ponownie zobaczysz ten temat.
+
+114
+00:08:56,040 --> 00:09:02,520
+Na razie był to bardziej zaawansowany przegląd tematów z wieloma indeksami i indeksowanie wyższych kluczowych tematów.
+
+115
+00:09:02,520 --> 00:09:07,620
+Głównie to, co chcesz zrobić, to indeksowanie z zewnątrz krok po kroku, aby uzyskać
+
+116
+00:09:07,620 --> 00:09:08,400
+żądane dane.
+
+117
+00:09:08,810 --> 00:09:12,120
+OK, dziękuję wszystkim, a do zobaczenia na następnym wykładzie.

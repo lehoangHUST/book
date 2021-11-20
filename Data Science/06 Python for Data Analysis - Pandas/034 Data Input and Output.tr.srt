@@ -1,0 +1,791 @@
+1
+00:00:05,370 --> 00:00:11,100
+Herkese merhaba ve veri giriş ve çıkış ders panellerine hoşgeldiniz kütüphanesi olarak bu ders
+
+2
+00:00:11,100 --> 00:00:15,900
+için çok çeşitli kaynaklardan veri okuma ve veri yazma kabiliyeti vardır.
+
+3
+00:00:15,900 --> 00:00:22,860
+Sadece dört ana veri kaynağıyla ilgileneceğiz, Excel dosyaları H. dosyalarını görelim. T. posta göndermek ve ASTM
+
+4
+00:00:22,860 --> 00:00:30,600
+l dosyaları ile çalışmak için netice edinmek ve yalnızca kütüphaneler için yüklemek için panderers
+
+5
+00:00:30,600 --> 00:00:31,920
+ile devam veritabanı.
+
+6
+00:00:31,980 --> 00:00:35,310
+Talimatlar dizüstü bilgisayarda veya hızlı bir şekilde yapmak isterseniz.
+
+7
+00:00:35,310 --> 00:00:42,930
+Devamlı simya lxi Mel HVM L5 kapağını takmak için ihtiyaç duyulan dört kütüphane ve ardından da Pipp
+
+8
+00:00:42,930 --> 00:00:46,880
+veya Khanda ile bunu yapabileceğiniz kütüphane için güzel çorba.
+
+9
+00:00:47,280 --> 00:00:47,760
+Tamam.
+
+10
+00:00:47,940 --> 00:00:52,510
+Bu kitaplıkları kurduktan ve bir dizüstü bilgisayara başvurduğunuzda, başlamak için hazırsınız demektir.
+
+11
+00:00:52,560 --> 00:00:53,890
+Hadi ilerleyelim ve içeri atla.
+
+12
+00:00:53,910 --> 00:00:58,190
+Jüpiter not defteri ve size pandalarla dosyaları nasıl okuyacağınızı ve yazacağınızı gösterin.
+
+13
+00:00:58,230 --> 00:01:00,860
+Tamam burada, Jüpiter defterinde bulunuyoruz.
+
+14
+00:01:00,930 --> 00:01:06,420
+Örneğin, örnek dosyalara atıfta bulunduğumuzda, X-Fi dosyasına ve örnek Excel dosyasına
+
+15
+00:01:06,420 --> 00:01:12,030
+bakın; bunların konumunu kontrol etmek için Jüpiter defterinizle aynı yerde olduğundan emin
+
+16
+00:01:12,030 --> 00:01:13,830
+olun. Bir dizüstü bilgisayar.
+
+17
+00:01:13,830 --> 00:01:20,910
+Sadece bir hücreye gidebilir ve P WD yazarak yer değiştirir ve konumu geri bildirirsiniz.
+
+18
+00:01:20,910 --> 00:01:22,750
+Bu aynı dosya konumudur.
+
+19
+00:01:22,770 --> 00:01:26,670
+Örnek, örnek Excel dosyasındaki her dosyanın göründüğünü görüyor.
+
+20
+00:01:26,760 --> 00:01:31,680
+Dizüstü bilgisayarların tüm depolarını indirdiyseniz ve veri giriş ve çıkış
+
+21
+00:01:31,680 --> 00:01:37,680
+bölümünde veya dizüstü bilgisayarınızda çalışıyorsanız, dosyalara yalnızca oradaki gibi başvurarak iyi olmalısınız.
+
+22
+00:01:38,250 --> 00:01:43,870
+Tamam, bunu yapabilmek için C'yi açıp V dosyaları olarak nasıl okuyacağımızı gösterelim.
+
+23
+00:01:43,890 --> 00:01:52,430
+Sadece PD'nin alt çizgi CXXVI'yi okuduğunu ve dosya olarak C'nizin adını yazmaya başladığınızı söyleyebilirsiniz.
+
+24
+00:01:52,500 --> 00:01:54,510
+Bu durumda bunun örnek olduğu biliniyor.
+
+25
+00:01:54,660 --> 00:02:01,000
+Bu yüzden güzel bir numara yazmaya başladım, bir tıklama sekmesi ve otomatik olarak dosya adını tamamlayacak.
+
+26
+00:02:02,190 --> 00:02:03,570
+Davanızda sadece sahip olabilirsiniz.
+
+27
+00:02:03,570 --> 00:02:06,340
+Örnek C S V.
+
+28
+00:02:06,390 --> 00:02:08,880
+Hadi devam edelim ve içeri girelim.
+
+29
+00:02:09,030 --> 00:02:15,840
+Giriş yaptım ve şimdi A B C ve D sütunları ve 0 1 - 3 sütunları olan
+
+30
+00:02:15,840 --> 00:02:19,290
+satırlar halinde bir veri çerçevesi olarak C'yi görebiliyorum.
+
+31
+00:02:19,290 --> 00:02:28,010
+Unutmayın ki herhangi bir dosyayı okumak istersem, okunmuş alt çizgi komut satırı tıklama sekmesini burada kullanıyorum
+
+32
+00:02:28,020 --> 00:02:33,060
+ve Pancho'nun okuyabileceği çeşitli biçimlerin bulunduğu bu açılır menüyü alıyorum.
+
+33
+00:02:33,060 --> 00:02:35,350
+Bu pan Panonuzdan bile okuyabilir.
+
+34
+00:02:35,350 --> 00:02:42,400
+Dosyaları excel olarak gör HDR dosyaları Jaison turşuları devam dosyaları tablolar vb ararlar Unutmayın burada çok seçenek var.
+
+35
+00:02:42,660 --> 00:02:44,870
+Şu anda en yaygın olanları gözden geçiriyoruz.
+
+36
+00:02:44,940 --> 00:02:47,340
+Tamam, bir CXXVI dosyasına yazmak için bir
+
+37
+00:02:47,840 --> 00:02:53,490
+veri çerçevesine ihtiyacınız olacak, böylece devam edeceğim ve sadece DF'nin PD düşüncesine eşit olduğunu söylüyorum.
+
+38
+00:02:53,490 --> 00:02:55,740
+Alt çizgi C'yi V olarak okuyun.
+
+39
+00:02:55,760 --> 00:02:58,100
+Ve yine örnek sekmeyi otomatik tamamlama yapmak için şimdi T'm var. F. Aynı örnek DFS'dir.
+
+40
+00:02:58,530 --> 00:03:05,920
+Aslında onu bir veri çerçevesinin bir değişkenine kaydettim.
+
+41
+00:03:05,920 --> 00:03:10,290
+Burada sekmeyi tıkladıysanız alt çizgi olarak söyleyebilirsiniz.
+
+42
+00:03:10,290 --> 00:03:14,000
+Yazabileceğiniz çeşitli formatlara sahip olduğunuzu farkedeceksiniz.
+
+43
+00:03:14,220 --> 00:03:17,470
+Yani temel olarak okunabilecek neredeyse tümüyle aynı formatlar.
+
+44
+00:03:17,580 --> 00:03:21,270
+Bu yüzden içeri girip DFA'nın altını çizeceğimi söyleyeceğim.
+
+45
+00:03:21,270 --> 00:03:25,780
+Bu alt çizgi çıktısını etiketleyeceğim ve yaptığım
+
+46
+00:03:26,070 --> 00:03:36,960
+diğer şey, Dizin'in yanlışa eşit olduğunu ve aslında bu dizini bir sütun olarak kaydetmek istemediğim için bunun sebebidir.
+
+47
+00:03:36,960 --> 00:03:42,200
+İzin verin, devam etmeme izin verin ve sahte
+
+48
+00:03:42,210 --> 00:03:47,400
+indeksleyici koymuyorum ve F'yi Esrey'i görmeye geldim.
+
+49
+00:03:47,400 --> 00:03:49,290
+Ben devam edip PD'ye
+
+50
+00:03:49,410 --> 00:03:54,660
+alttan okunan cxxviii okumayı söyleyeceğim ve şimdi çıktıımı kaydettiğim dosyayı okuyacağım.
+
+51
+00:03:54,660 --> 00:03:56,860
+Hayır, burada adı olmayan 0 olarak adlandırılan bu sütun olsun ve bu eski indeksti.
+
+52
+00:03:56,960 --> 00:04:03,180
+Şimdi eğer T.'yi denersem F. görmek için bu hücreyi çalıştırmak endeks yanlış.
+
+53
+00:04:03,180 --> 00:04:09,560
+Ve çıktıımı tekrar okursam,
+
+54
+00:04:09,750 --> 00:04:15,360
+aslında dizinin ve otomatik olarak veri çerçevesine bir aralık dizini atayacağımı söyleyeceğim.
+
+55
+00:04:15,360 --> 00:04:17,490
+CACP dosyalarınızı kaydettiğinizde, Dizin'in
+
+56
+00:04:17,490 --> 00:04:22,470
+yanlış olduğunu söylemenizin uygun olup olmadığı dikkate alınmalıdır.
+
+57
+00:04:22,560 --> 00:04:24,520
+Tamam.
+
+58
+00:04:24,540 --> 00:04:24,850
+Şimdi devam edin ve Excel dosyalarından okumaya ve yazmaya devam edin.
+
+59
+00:04:24,870 --> 00:04:28,700
+Pandalar excel dosyalarını okuyabilir ve yazabilir.
+
+60
+00:04:28,870 --> 00:04:31,240
+Pandaların yalnızca verileri içe aktarabildiğini unutmayın.
+
+61
+00:04:31,290 --> 00:04:34,280
+Formülleri veya resimleri veya makrolar gibi şeyleri okunan diğer puanı kullanarak kullanamaz.
+
+62
+00:04:34,350 --> 00:04:39,990
+Excel yöntemi, pandaların çökmesine neden olabilir.
+
+63
+00:04:40,020 --> 00:04:43,310
+Dikkat çekilmesi gereken bir diğer husus, otomatik
+
+64
+00:04:43,320 --> 00:04:49,890
+olarak kurulmuş olması gereken x l r d kütüphanesini kurmanızı isteyen bir hata alabilirsiniz.
+
+65
+00:04:49,890 --> 00:04:51,360
+Anaconda dağıtımını kullanırsanız.
+
+66
+00:04:51,420 --> 00:04:53,330
+Ancak yapmadıysanız, devam edin ve terminalinize
+
+67
+00:04:53,430 --> 00:04:58,710
+gidin ve terminalinizde veya komut satırınızda conda install X LRAD yazarsınız veya aynı şeyi pip kurulumuyla yaparsınız.
+
+68
+00:04:58,710 --> 00:05:05,130
+Yine de bunu bir hücrede yapmayacaksın.
+
+69
+00:05:05,160 --> 00:05:06,810
+Aslında bunu komut satırında veya terminalde yapacaksın.
+
+70
+00:05:06,820 --> 00:05:09,410
+Otomatik olarak pantless ile birlikte kurulmuş olması gereken Anaconda dağıtımını yapmış olsaydınız.
+
+71
+00:05:09,420 --> 00:05:14,300
+Devam edin ve bunun nasıl çalıştığını görelim.
+
+72
+00:05:15,060 --> 00:05:17,070
+Ben devam edip Excel dosyasını göstereceğim.
+
+73
+00:05:17,100 --> 00:05:18,590
+Çok basit bir Excel örneğine sahip olduğunuzdan sizinle çalışacağım.
+
+74
+00:05:18,600 --> 00:05:22,700
+Aslında neredeyse aynı görünüyor çünkü dosyanın 1 sayfasında
+
+75
+00:05:22,740 --> 00:05:27,870
+olduğu ve temelde Pandur'ların bir çalışma kitabının ne düşündüğünü düşündüğünü belirtti.
+
+76
+00:05:27,870 --> 00:05:33,350
+Bu bir çalışma kitabı mı
+
+77
+00:05:33,420 --> 00:05:34,620
+Sadece bir sürü sayfa var ve her sayfa, Excel'i okuyan PD diyebileceğim bir veri çerçevesi.
+
+78
+00:05:34,650 --> 00:05:41,960
+Excel dosya adını X LS X Dosyasında geçirdim.
+
+79
+00:05:42,390 --> 00:05:46,910
+Bunun için iyi bir numara, dosya ismini basarak yazmaya başlamaktır
+
+80
+00:05:47,130 --> 00:05:54,000
+sekmesine basın ve tekrar seçin; yalnızca bu dizüstü bilgisayarla aynı yerde dosyalar excel dosyası varsa çalışır.
+
+81
+00:05:54,030 --> 00:05:57,080
+Değilse tüm dosya yolunu girmeniz gerekecek
+
+82
+00:05:57,270 --> 00:06:04,790
+ve sonra sayfa adını söyleyip daha sonra ileride okumak istediğimiz çıktıyı okumak için pasand sayfaları diyebilirsiniz.
+
+83
+00:06:04,830 --> 00:06:11,160
+Ve temel olarak bir excel dosyasından okumak için.
+
+84
+00:06:11,160 --> 00:06:13,780
+Dosyayı geçerseniz, Pandur'larda istediğiniz sayfa
+
+85
+00:06:13,790 --> 00:06:18,390
+adını girerseniz, veri çerçevesi olarak okumak için elinizden geleni dener.
+
+86
+00:06:18,390 --> 00:06:20,690
+Bir Excel çıktısı için bir veri çerçevesi.
+
+87
+00:06:20,820 --> 00:06:22,490
+Ayrıca çok basit bir işlemdir.
+
+88
+00:06:22,530 --> 00:06:24,400
+yazmanız gerektiğini söyleyin.
+
+89
+00:06:24,420 --> 00:06:31,620
+Excel'e yazmak istediğiniz veri çerçevesini alıp, kaydetmek istediğiniz Excel dosyasının adını Excel'in altına
+
+90
+00:06:31,620 --> 00:06:33,400
+Bu, Excel adında yeni bir şey yapacak.
+
+91
+00:06:33,430 --> 00:06:36,660
+Örnek 2 nokta x l s x ve isterseniz bir sayfa adını belirtebilirsiniz.
+
+92
+00:06:36,870 --> 00:06:44,730
+Bilinen bir şey, hangi nedenden dolayı Excel'in altını çizmek istediğini söylediğiniz yerlerde, sayfalara yazması
+
+93
+00:06:44,910 --> 00:06:49,980
+gereken pandaların altındaki adın ve sayfanın adının altını çizmek.
+
+94
+00:06:49,980 --> 00:06:54,260
+Gidip yeni sayfaya koyacağız.
+
+95
+00:06:54,300 --> 00:06:57,120
+Pekâlâ, iyi ve çalıştır, hepsi bu kadar.
+
+96
+00:06:57,120 --> 00:07:00,500
+Bunu bir Excel dosyasına kaydettik.
+
+97
+00:07:00,510 --> 00:07:02,730
+Şimdi gidelim ve T işine geçelim. M. Bunun işe yaraması için yine birkaç kütüphane kurmanız gerekecek ve
+
+98
+00:07:02,730 --> 00:07:05,970
+bundan sonra Jüpiter defterini muhtemelen yeniden başlatmanız gerekecek.
+
+99
+00:07:06,180 --> 00:07:10,260
+Devam edin ve bu konudaki notlara bir göz atın.
+
+100
+00:07:10,260 --> 00:07:12,530
+Tüm kütüphanelerin bir listesini almak için not defteri kurmanız
+
+101
+00:07:12,570 --> 00:07:15,080
+veya devam etmeniz ve kütüphanelerin listesini gösterdiğimiz ders başlangıcına gitmeniz gerekir.
+
+102
+00:07:15,080 --> 00:07:20,130
+HTL girdisi hakkında burada konuşalım.
+
+103
+00:07:20,130 --> 00:07:22,670
+Başarısız bank listesinin FDIC belgesine bir
+
+104
+00:07:22,950 --> 00:07:26,760
+bağlantı var ve burada FDIC tarafından başarısız bankaların listesi.
+
+105
+00:07:26,790 --> 00:07:34,650
+Onları takip etmek Federal Deposit Insurance Corporation.
+
+106
+00:07:35,010 --> 00:07:36,710
+Ve burada bir grup başarısız banka var.
+
+107
+00:07:36,870 --> 00:07:41,080
+Kapanış tarihi güncellendi vb. ama bu temelde göz kırpmalarını izliyordu.
+
+108
+00:07:41,220 --> 00:07:43,310
+Bu bağlantı dizüstü bilgisayarlarında çıkıp kopyalayıp yapıştırabiliyor.
+
+109
+00:07:43,320 --> 00:07:47,660
+Ben devam edip bu bağlantıyı kopyalayıp okuymaya çalışacağım.
+
+110
+00:07:47,760 --> 00:07:51,180
+Ve tek yapmam gereken panderer nerds, PD diyor.
+
+111
+00:07:51,180 --> 00:07:55,760
+Hadi devam edelim ve verileri PD noktalarına eşit olarak söyleyelim.
+
+112
+00:07:55,760 --> 00:07:59,890
+Oku h.T. M. Ve sonra bir dizi olarak gerçek yaş TMLC'yi geçeceğim.
+
+113
+00:07:59,970 --> 00:08:05,610
+Tüm kütüphaneleri elinde bulunduruyorsa, işe yaraması gerektiğini okumak biraz zaman alacaktır.
+
+114
+00:08:06,060 --> 00:08:08,190
+TAMAM.
+
+115
+00:08:08,420 --> 00:08:12,900
+İşe yaradı gibi görünüyor.
+
+116
+00:08:14,440 --> 00:08:19,720
+Burada dikkat edilmesi gereken bir husus, genellikle bunun bir veri çerçevesiyle doğrudan ilgisi olmayacağıdır.
+
+117
+00:08:20,000 --> 00:08:20,340
+Yazdıklarımın ne veri olduğunu kontrol edersem, bunun aslında bir liste olduğunu farkedeceksiniz.
+
+118
+00:08:20,370 --> 00:08:21,600
+Aslında pantolonun
+
+119
+00:08:21,690 --> 00:08:27,280
+yapmaya çalıştığı şey, bu ekip l dosyasındaki her tablo öğesini bulmaktı.
+
+120
+00:08:27,300 --> 00:08:34,360
+Ve tanıdık iseniz, h.T. M. gerçek HTL kodunun bu listesine sahip olabileceğini biliyorsunuzdur.
+
+121
+00:08:34,470 --> 00:08:40,350
+burayı sağ tıklayıp sayfa kaynağını görüntüleyebildiğinizde,
+
+122
+00:08:40,350 --> 00:08:41,190
+Ve eğer tanıdıksanız
+
+123
+00:08:41,190 --> 00:08:48,090
+burada list sınıfları gibi aslında bakabileceğinizi bileceksiniz.
+
+124
+00:08:48,090 --> 00:08:50,660
+Aslında masa başvuruları var, bu yüzden
+
+125
+00:08:50,910 --> 00:08:56,010
+burada HTML kodunda tablo işaretleri var ve bu temelde panelin yapacak.
+
+126
+00:08:56,010 --> 00:08:56,670
+Ve bu onların bir listesini yapacak ve bu listedeki her bir öğeyi veri çerçevesine dönüştürür.
+
+127
+00:08:56,700 --> 00:09:03,300
+Aramak istediğiniz şeyi bulana kadar yapmanız gereken şey, o
+
+128
+00:09:03,300 --> 00:09:04,550
+listede dolaşmaktır.
+
+129
+00:09:04,560 --> 00:09:09,500
+Bu durumda listedeki ilk madde olmalı.
+
+130
+00:09:09,720 --> 00:09:13,800
+Yani sıfır noktasında veri söyleseyiz.
+
+131
+00:09:13,800 --> 00:09:14,430
+Bu nedenle, büyük ismi arayan veri çerçevesi olan bu listedeki ilk öğe güncellenir.
+
+132
+00:09:14,490 --> 00:09:17,310
+Cetera.
+
+133
+00:09:17,310 --> 00:09:20,120
+Gidip sadece o veri çerçevesinin başını kontrol edelim ve bunun nasıl göründüğünü.
+
+134
+00:09:20,160 --> 00:09:25,790
+Yine bazı şeyler kopyalamıyor.
+
+135
+00:09:26,220 --> 00:09:26,800
+Kesinlikle.
+
+136
+00:09:26,940 --> 00:09:32,930
+Bir sürü değer alamazsın.
+
+137
+00:09:33,030 --> 00:09:34,670
+Ancak aklından çıkma meraklıları, esas olarak bu H'yi okuyor. T. posta dosyasını elinden geldiğince en iyi şekilde kullanın.
+
+138
+00:09:34,670 --> 00:09:35,310
+Tamam.
+
+139
+00:09:35,310 --> 00:09:36,920
+Aslında sadece Pandur'ların web hurdağı olan H-2A postası.
+
+140
+00:09:37,110 --> 00:09:42,720
+Nihayet netice ile devam eden son konumuza geçelim.
+
+141
+00:09:42,720 --> 00:09:43,110
+Artık netice ve pandalar ile ilgili defterinizde birkaç not var.
+
+142
+00:09:43,260 --> 00:09:46,630
+lezzet vardır, burada devam etmekte olduğumuz devamı netice ışık cetera
+
+143
+00:09:46,650 --> 00:09:51,150
+sadece aslında çok basit bir netice motoru inşa etmektir tabloları tamamen veri çerçeveleri
+
+144
+00:09:51,210 --> 00:09:55,530
+olarak okumak için Pandur'ları nasıl kullanabileceğinizi gösterecek şekilde geçici olarak hafızada tutulacaktır.
+
+145
+00:09:55,530 --> 00:10:01,410
+Pandalar, muhtemelen bir netice veritabanını okumak için en iyi yol budur, çünkü postscripts devamı gibi pek çok
+
+146
+00:10:01,410 --> 00:10:07,920
+Bununla birlikte, aslında belirli bir devam eden motorunuza bağlı olarak
+
+147
+00:10:07,920 --> 00:10:13,860
+belirli bir sürücüye yönelik bir arama yapmanızı tavsiye ederim.
+
+148
+00:10:14,250 --> 00:10:19,070
+Örneğin, bu ders için deftere girerseniz, Postgres netice kullanıyorsanız aslında post-career meselesiyle çalışacak
+
+149
+00:10:19,080 --> 00:10:25,380
+şekilde tasarlanmış olan Psycho PGE 2 adlı bir kitaplık kullanmanız gerektiğini göreceksiniz ya da kullanıyorsanız benim devamım
+
+150
+00:10:25,470 --> 00:10:26,810
+pi'ye devamımı kullanmalısın.
+
+151
+00:10:26,850 --> 00:10:31,650
+Devamın bu özel lezzeti için özel olarak tasarlanmış diğer kütüphanede.
+
+152
+00:10:31,860 --> 00:10:36,810
+ve devam etmesini sağlamak için basit bir örnek yapacağız.
+
+153
+00:10:36,810 --> 00:10:41,370
+Şu anda, pandaların bütün bir tabloyu nasıl okuyabileceğini
+
+154
+00:10:41,370 --> 00:10:45,690
+Devam eden simya ithalatının motor yarattığını söyleyerek sona ereceğiz ve
+
+155
+00:10:45,780 --> 00:10:50,490
+bu sadece hafızada çok basit bir netice motoru yaratmamıza izin verecek.
+
+156
+00:10:50,490 --> 00:10:53,090
+Ben devam edip, motorun
+
+157
+00:10:54,080 --> 00:11:03,600
+altçizgi motoru yaratmaya eşit olduğunu söyleyeceğim ve burada ve sonradan sekiz eğik çizgi ve sonra
+
+158
+00:11:03,600 --> 00:11:07,740
+da hafıza kutbundaki sekmeli ışıkları yazacağım.
+
+159
+00:11:07,740 --> 00:11:14,610
+Bu yüzden kolon üç ileri eğik çizgi iki nokta üst üste iki nokta üstüste gibi netice var.
+
+160
+00:11:14,610 --> 00:11:16,290
+Bunu ve bu küçük şeyi koşturup devam etmeye gidiyoruz.
+
+161
+00:11:19,460 --> 00:11:26,790
+Bu küçük kod satırı, bellekte çalışan çok geçici çok küçük
+
+162
+00:11:26,850 --> 00:11:31,510
+bir devam eden ışık motoru veritabanı oluşturdu.
+
+163
+00:11:31,600 --> 00:11:34,430
+Devam edeceğim ve veri çerçevemizi DSF'ye
+
+164
+00:11:34,440 --> 00:11:41,190
+götüreceğim ve devamın altını çizmek için söyleyeceğim ve onu bellekte çalıştırdığımız o geçici motora yazacağım.
+
+165
+00:11:41,190 --> 00:11:42,610
+Yapabildiğiniz şey,
+
+166
+00:11:42,720 --> 00:11:50,070
+bu masanın çağrılmasını istediğiniz şeyin devamı için devamlılığını söyleyeceğiz.
+
+167
+00:11:50,070 --> 00:11:55,330
+Bu yüzden devam edin ve bunu benim masam olarak adlandırın.
+
+168
+00:11:55,500 --> 00:11:59,430
+Ve sonra birlikte çalıştığınız netice motosunu geçersiniz.
+
+169
+00:11:59,430 --> 00:12:00,310
+Bu durumda sadece bir motor.
+
+170
+00:12:00,540 --> 00:12:03,310
+Şimdi bu motor genellikle bir dokümantasyon aracılığıyla iyice okumanızı öneririm ancak daha
+
+171
+00:12:03,750 --> 00:12:05,920
+önce bahsettigim gibi pandalarla kendiliğinden muhtemelen pandalara direk olarak
+
+172
+00:12:05,920 --> 00:12:07,990
+doğrudan bir netice okuduğunuz için en iyi kaynak değil.
+
+173
+00:12:08,070 --> 00:12:15,630
+Muhtemelen, üzerinde çalıştığınız netice ne olursa
+
+174
+00:12:15,660 --> 00:12:22,050
+olsun, özelleştirilmiş Python kitaplıklarına bakmalısınız.
+
+175
+00:12:22,050 --> 00:12:25,010
+Ancak çok basit bir ayar olduğuna göre, istediğiniz
+
+176
+00:12:25,050 --> 00:12:30,870
+yeni masa adını ve daha sonra devam motorunuza olan bağlantıyı ileriye götürmek için DF diyebilirsiniz.
+
+177
+00:12:30,870 --> 00:12:31,560
+Ve şimdi, o masayı okumaya devam edersek, devam edip devam sergileyeceğim.
+
+178
+00:12:31,800 --> 00:12:37,590
+Yani PD Reed'in altını çizdiğim devam parçasını söyleyeceğim tablonuzun adını geçeyim, bu durumda bu benim masam.
+
+179
+00:12:37,710 --> 00:12:41,530
+Ve sonra gerçek bağlantıyı ve dolayısıyla cion'u belirtiyorum.
+
+180
+00:12:41,820 --> 00:12:47,010
+Ve bu da, hafızada olan çok küçük netice ışıklı veritabanının motorudur.
+
+181
+00:12:47,010 --> 00:12:54,190
+Devam edersem, bunu okuyup bunun neye benzediğini kontrol edersem, devamı DMF'yi alırım ve dizinin
+
+182
+00:12:54,670 --> 00:12:58,110
+yeni bir sütun olduğunu fark ettim.
+
+183
+00:12:58,380 --> 00:13:04,520
+Pekâlâ, devam edin ve Q &amp; A forumlarını yayınlamaktan çekinmeyin.
+
+184
+00:13:04,620 --> 00:13:11,160
+yazılır? Çünkü onlar sadece gidiyorlar. Kendi kişisel kullanımınız kadar Kalan CSV dosyalarının da çalışması yapın.
+
+185
+00:13:11,280 --> 00:13:13,250
+Belirli bir kütüphaneyi bulmakta sorun
+
+186
+00:13:13,260 --> 00:13:16,450
+yaşıyorsanız, devam eden motorunuz ya da netice
+
+187
+00:13:16,560 --> 00:13:22,230
+tadı bu konuyla ilgili en önemli konuyu anlatırsa, CSV dosyalarına nasıl okunur ve
+
+188
+00:13:22,230 --> 00:13:28,590
+Umarım okuduğunuz altçizgi yöntemlerine göz atabilirsiniz.
+
+189
+00:13:28,860 --> 00:13:33,300
+Bunların birçoğu var ve belgelerine bakabilir veya bir panderers veri çerçevesini gerçekten nasıl okuyacağınıza dair bir
+
+190
+00:13:33,300 --> 00:13:34,100
+not defterine başvurabilirsiniz.
+
+191
+00:13:34,110 --> 00:13:36,750
+Pekâlâ, herkese teşekkürler.
+
+192
+00:13:36,750 --> 00:13:42,300
+ilgili sorularınızı sorunuz çünkü burada bir çok seçenek var ve hepsini kapsayacak zamanımız yok.
+
+193
+00:13:42,300 --> 00:13:45,800
+Devam edin ve Q &amp; A forumunda bu konuyla
+
+194
+00:13:45,810 --> 00:13:47,920
+Ancak herhangi bir sorunuz varsa forumlarda cevaplamaktan memnuniyet duyarım.
+
+195
+00:13:47,940 --> 00:13:52,590
+Herkese teşekkürler, bir sonraki derside görüşürüz.
+
+196
+00:13:52,590 --> 00:13:55,030
+&nbsp;
+
+197
+00:13:55,110 --> 00:13:58,290
+&nbsp;
+
+198
+00:13:58,290 --> 00:14:00,150
+&nbsp;

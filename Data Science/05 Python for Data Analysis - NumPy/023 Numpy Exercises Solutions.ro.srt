@@ -1,0 +1,955 @@
+1
+00:00:05,940 --> 00:00:10,350
+Bună ziua tuturor și bun venit la exercițiile de plăcintă lectură prelegeri această prelegere.
+
+2
+00:00:10,380 --> 00:00:13,880
+Vom codifica manual soluțiile pentru exerciții.
+
+3
+00:00:13,890 --> 00:00:17,250
+Să mergem înainte și să pornim la notebook-ul Jupiter pentru a începe.
+
+4
+00:00:17,250 --> 00:00:17,540
+In regula.
+
+5
+00:00:17,540 --> 00:00:19,820
+Deci, aici sunt la notebook-ul Jupiter.
+
+6
+00:00:20,190 --> 00:00:23,120
+Să mergem mai departe și să începem cu doar arbitri importanți și.
+
+7
+00:00:23,740 --> 00:00:27,720
+Sperăm că sunteți capabil să faceți acest lucru setați cu ușurință comanda este de fapt chiar acolo scris pentru
+
+8
+00:00:27,720 --> 00:00:27,970
+tine.
+
+9
+00:00:28,020 --> 00:00:30,140
+Când schimbarea intră în funcție importantă.
+
+10
+00:00:30,240 --> 00:00:31,880
+Suntem gata să plecăm.
+
+11
+00:00:31,890 --> 00:00:32,130
+O.K.
+
+12
+00:00:32,130 --> 00:00:35,590
+Mai întâi am vrut să creăm o serie de 10 zerouri.
+
+13
+00:00:35,730 --> 00:00:42,910
+O modalitate ușoară de a face acest lucru este să spunem doar N. P. zerourile și trecutul și cifra 10 și nu
+
+14
+00:00:42,940 --> 00:00:48,120
+scoateți rata exactă pe care a avut-o acolo este ieșirea pentru a crea o serie de 10 dintre cele
+
+15
+00:00:48,120 --> 00:00:54,550
+pe care le puteți face exact același lucru, cu excepția locului de utilizare a zerourilor, apoi a trecut doar 10 și aveți 10 1s.
+
+16
+00:00:54,570 --> 00:00:56,190
+Acum, creați o serie de 10 fives.
+
+17
+00:00:56,190 --> 00:01:03,330
+Există de fapt câteva moduri de a face acest lucru, dar o singură cale ușoară este de a spune doar pe cei
+
+18
+00:01:03,330 --> 00:01:07,570
+fericiți și apoi puteți merge mai departe și de ori până la cinci.
+
+19
+00:01:08,310 --> 00:01:11,340
+Și asta îți va aduce o serie de 10 fives.
+
+20
+00:01:11,550 --> 00:01:18,020
+Cu alte cuvinte, ați fi putut face asta, spune N. P. de zerouri 10.
+
+21
+00:01:18,780 --> 00:01:22,680
+Și apoi ce ai fi putut face este să adaugi cinci la asta.
+
+22
+00:01:22,680 --> 00:01:26,220
+Iar acestea sunt probabil cele două moduri cele mai simple de a crea o serie de 10 fives.
+
+23
+00:01:26,220 --> 00:01:27,920
+Foarte repede.
+
+24
+00:01:27,990 --> 00:01:28,430
+In regula.
+
+25
+00:01:28,470 --> 00:01:32,310
+Acum vrem să creăm o gamă de numere întregi de la 10 la 50.
+
+26
+00:01:32,550 --> 00:01:36,510
+Sperăm că văd că aceasta este rezultatul pe care l-ați crezut despre arr. funcţie.
+
+27
+00:01:36,530 --> 00:01:38,460
+Deoarece acesta este cel mai simplu mod de a face acest lucru.
+
+28
+00:01:39,090 --> 00:01:46,660
+Așa că suntem într-o gamă și am trecut de la 10 la 50 și asta înseamnă că vrem să începem la 10 ca prima noastră intrare și spune
+
+29
+00:01:46,870 --> 00:01:50,740
+că vrem să ne amintim 50 de când indexarea începe de la zero.
+
+30
+00:01:50,850 --> 00:01:58,480
+Trebuie să mergem la 51 atunci când intrăm în asta și asta devine întregi de ieșire de la 10 la 50.
+
+31
+00:01:58,500 --> 00:02:03,330
+Următorul lucru pe care trebuie să-l faceți este să creați o matrice din toate numerele întregi de la 10 la 50.
+
+32
+00:02:03,330 --> 00:02:05,500
+De asemenea, este destul de simplă.
+
+33
+00:02:05,540 --> 00:02:10,800
+Sperăm că îmi amintesc de prelegere că, ca un al treilea argument, faceți tab-ul de schimbare aici dacă doriți argumentul real, dar
+
+34
+00:02:11,070 --> 00:02:14,730
+puteți obține o mărime pas și să spun că vreau chiar și numere întregi.
+
+35
+00:02:14,730 --> 00:02:20,340
+Voi merge mai departe și voi pune un pas de două și apoi voi obține toate numerele întregi de la 10
+
+36
+00:02:20,340 --> 00:02:21,370
+la numărul 50.
+
+37
+00:02:21,960 --> 00:02:22,350
+O.K.
+
+38
+00:02:22,350 --> 00:02:28,790
+Mergând de-a lungul timpului, am vrut să creăm o Matrice de trei-trei, cu valori cuprinse între zero și 8.
+
+39
+00:02:28,800 --> 00:02:31,900
+Acesta va fi un proces de doi pași.
+
+40
+00:02:32,040 --> 00:02:40,170
+Veți crea mai întâi arr. stii pasan un nou aici si care va crea matricea 0 8 si
+
+41
+00:02:40,350 --> 00:02:43,860
+asta vreau sa fie o matrice de trei la trei.
+
+42
+00:02:43,860 --> 00:02:48,600
+Ce pot să fac este să pot spune că trezesc trei.
+
+43
+00:02:48,840 --> 00:02:53,950
+Și asta produce trei ori câte trei matrice de valori cuprinse între 0 și SIDA.
+
+44
+00:02:53,970 --> 00:02:58,650
+Acum, ați fi putut împărți acest lucru în două etape, ceea ce înseamnă că
+
+45
+00:02:59,350 --> 00:03:07,680
+aș fi putut spune ceva asemănător unei deranjuri egale 9 și apoi mi-aș schimba trei câte trei și asta ar fi din nou același lucru doar
+
+46
+00:03:07,680 --> 00:03:09,720
+în două mari etape distincte distincte.
+
+47
+00:03:09,720 --> 00:03:14,190
+Dar, de multe ori, când lucrați la Pi, veți avea parte de un fel de abordare a acestor
+
+48
+00:03:14,190 --> 00:03:15,200
+metode unul peste celălalt.
+
+49
+00:03:15,240 --> 00:03:16,260
+In regula.
+
+50
+00:03:16,260 --> 00:03:18,320
+Apoi a trebuit să creați trei-trei.
+
+51
+00:03:18,330 --> 00:03:19,870
+Tind să văd o matrice.
+
+52
+00:03:20,070 --> 00:03:23,920
+Sperăm că vă aduceți aminte de comanda de la prima prelegere a arbitrului A.
+
+53
+00:03:23,970 --> 00:03:25,440
+Dar asta este doar eu.
+
+54
+00:03:25,890 --> 00:03:31,920
+Și tu doar pasand un număr de când nu am văzut că matricile trebuie să fie pătrate și că eu de trei este de
+
+55
+00:03:31,920 --> 00:03:32,690
+trei la trei.
+
+56
+00:03:32,700 --> 00:03:34,890
+Ite și vezi matricea.
+
+57
+00:03:34,890 --> 00:03:36,090
+In regula.
+
+58
+00:03:36,090 --> 00:03:42,050
+Apoi, a vrut să folosească un anumit PI pentru a genera un număr aleator între 0 și 1.
+
+59
+00:03:42,070 --> 00:03:48,270
+De fapt, există câteva moduri de a face acest lucru, dar probabil cel mai simplu este să spui doar
+
+60
+00:03:48,480 --> 00:03:55,490
+că acel pas trece aleatoriu și că Ranz își amintește de prelegere că acest lucru transformă valori aleatorii între 0 și 1.
+
+61
+00:03:55,530 --> 00:04:01,410
+Așadar, pot trece doar într-una aici și asta returnează o valoare aleatorie între 0 și 1.
+
+62
+00:04:01,410 --> 00:04:06,220
+Răspunsul dvs. poate a fost puțin diferit de cel al meu, dar asta pentru că este întâmplător.
+
+63
+00:04:06,330 --> 00:04:08,540
+Deci, întotdeauna obțineți un număr diferit de fiecare dată când rulați acest lucru.
+
+64
+00:04:08,550 --> 00:04:11,190
+Dar ar trebui să fie între zero și unul de fiecare dată.
+
+65
+00:04:11,190 --> 00:04:14,010
+Dacă treci doar într-o singură cifră ca argument.
+
+66
+00:04:14,010 --> 00:04:19,980
+Deci, din nou, acest Rand aleatoriu returnează un număr aleatoriu între 0 și 1.
+
+67
+00:04:20,790 --> 00:04:26,820
+Apoi am vrut să folosim pi pentru a genera o serie de 25 de eșantioane de numere aleatoare
+
+68
+00:04:26,820 --> 00:04:28,310
+dintr-o distribuție normală standard.
+
+69
+00:04:28,320 --> 00:04:34,920
+Sperăm că a fost un cuvânt cheie pentru tine să vă amintiți că ați putea numi N. P. gândul a fost gândit la întâmplare
+
+70
+00:04:35,140 --> 00:04:41,640
+Rand n și dacă faceți tab-ul de schimbare, acest lucru returnează un eșantion din distribuția normală standard și acesta este
+
+71
+00:04:41,790 --> 00:04:44,120
+în esență legătura de la capăt acolo.
+
+72
+00:04:44,400 --> 00:04:51,540
+Așa că pot introduce un număr de 25 și care returnează o serie de 25 de eșantioane de numere aleatoare dintr-o
+
+73
+00:04:51,540 --> 00:04:52,710
+distribuție normală standard.
+
+74
+00:04:52,830 --> 00:04:57,480
+Și notați aici puteți spune prin paranteze că aceasta este doar o gamă de dimensiuni unice de
+
+75
+00:04:57,480 --> 00:05:00,540
+douăzeci și cinci de numere și nu cinci la cinci.
+
+76
+00:05:00,540 --> 00:05:07,290
+Puteți confirma acest lucru prin a pune forma aici și doar spune 25 în loc de cinci la cinci.
+
+77
+00:05:07,290 --> 00:05:07,940
+In regula.
+
+78
+00:05:08,010 --> 00:05:13,020
+Acum am vrut să creăm următoarea matrice și să acordăm atenție la ceea ce face această matrice.
+
+79
+00:05:13,800 --> 00:05:15,650
+Este o matrice bidimensională.
+
+80
+00:05:15,720 --> 00:05:18,590
+Notă putem spune asta din cele două seturi de paranteze aici.
+
+81
+00:05:19,110 --> 00:05:22,020
+Și, de asemenea, merge de la punctul zero la zero.
+
+82
+00:05:22,170 --> 00:05:29,550
+Și se pare că merge într-o mărime a pasului de zero punct zero sau o În plus, până la un singur acum există de fapt două
+
+83
+00:05:29,880 --> 00:05:31,710
+moduri de a face acest lucru.
+
+84
+00:05:31,710 --> 00:05:36,120
+Mai intai voi trece prin felul in care este prezentat in solutie care ar putea fi cel mai usor mod
+
+85
+00:05:36,120 --> 00:05:40,010
+de a gandi la acest lucru si apoi voi arata modul mai inteligent folosind acest spatiu.
+
+86
+00:05:40,020 --> 00:05:48,990
+Deci, o modalitate de a face acest lucru este să spuneți că Range merge de la 1 la 101 și că mai întâi vă ajunge Saray, care nu
+
+87
+00:05:48,990 --> 00:05:50,000
+suntem încă acolo.
+
+88
+00:05:50,010 --> 00:05:55,960
+Ceea ce vrem și vom merge mai departe și facem este să remapăm ca aceasta să fie o armonie de 10 la 10.
+
+89
+00:05:56,400 --> 00:05:59,750
+Apoi, aproape suntem acolo, dar observați că mergem de la 1 la 100.
+
+90
+00:05:59,790 --> 00:06:02,820
+Deci, dacă pot doar să spun, împărțiți acest lucru cu 100.
+
+91
+00:06:03,630 --> 00:06:07,960
+Și asta returnează matricea pe care am avut perechea dublă de câte 10-10 array.
+
+92
+00:06:08,160 --> 00:06:15,170
+Și merge de la punctul zero la zero sau la un pas în mărimea punctului sau la o singură dată până la 1.
+
+93
+00:06:15,240 --> 00:06:16,980
+Acesta este un mod în care puteți adăuga acest lucru.
+
+94
+00:06:17,250 --> 00:06:19,370
+Și așa este prezentat în cartea de soluții.
+
+95
+00:06:19,380 --> 00:06:23,640
+Dar un alt mod foarte frumos de a face acest lucru și, sperăm, acesta este modul în
+
+96
+00:06:23,640 --> 00:06:30,120
+care vă gândiți să începeți cu asta, dar puteți, de asemenea, să faceți în spațiu și apoi să notați de unde ați pornit și de unde
+
+97
+00:06:30,120 --> 00:06:30,990
+ați fost opriți.
+
+98
+00:06:31,020 --> 00:06:35,870
+Deci începem la 0. 01 mergând până la 1.
+
+99
+00:06:36,030 --> 00:06:45,570
+Și acestea sunt de fapt liniar dispuse astfel încât să pot spune doar 100 și voi remodela acest lucru ca o matrice de 10 la 10 și care
+
+100
+00:06:46,190 --> 00:06:49,260
+returnează exact același rezultat ca și mai sus aici.
+
+101
+00:06:49,530 --> 00:06:52,470
+Deci, fie aceste două răspunsuri sunt bine.
+
+102
+00:06:52,500 --> 00:06:56,730
+Există câteva alte modalități de a face acest lucru, dar acestea sunt probabil cele două cele mai logice și
+
+103
+00:06:56,730 --> 00:06:57,320
+mai simple.
+
+104
+00:06:57,330 --> 00:07:01,170
+În orice caz este absolut perfect și, sperăm, puteți să vă dați seama de unul dintre acestea.
+
+105
+00:07:01,320 --> 00:07:06,600
+Aceasta este o intrebare putin dificila un pic de o intrebare dificila, deoarece nu exista nici un model clar aici, cu exceptia cazului
+
+106
+00:07:06,600 --> 00:07:10,710
+in care veti acorda atentia faptului ca merge la punctul zero o In plus, si tu, de
+
+107
+00:07:10,710 --> 00:07:15,390
+asemenea, pentru a acorda atentie ca a fost dublu set de paranteze in sensul ca a fost la 10 mai 10.
+
+108
+00:07:15,390 --> 00:07:15,870
+In regula.
+
+109
+00:07:15,990 --> 00:07:17,970
+Hai să mergem și să continuăm.
+
+110
+00:07:17,970 --> 00:07:22,710
+Acum am vrut să creăm o matrice de 20 de puncte liniar distanțate între 0 și 1.
+
+111
+00:07:22,740 --> 00:07:30,640
+Tot ce trebuie să faceți pentru asta este spune N. P. Lynn spațiu și apoi vom merge între 0 și 1.
+
+112
+00:07:30,960 --> 00:07:37,170
+Deci, pot merge mai departe și spun zero vin un 1 și apoi 20 de puncte liniar distanțate și care mă primește răspunsul
+
+113
+00:07:37,170 --> 00:07:39,030
+exact pe care îl am acolo.
+
+114
+00:07:39,060 --> 00:07:40,020
+In regula.
+
+115
+00:07:40,020 --> 00:07:45,090
+Acum vom primi cateva matrici sexuale doar cu o matrice Matt si ceea ce dorim sa facem este
+
+116
+00:07:45,090 --> 00:07:47,410
+sa cerem sa replicam rezultatul matricei rezultate.
+
+117
+00:07:47,700 --> 00:07:51,390
+Și din nou a trebuit să vă scrieți codul în caz contrar, ați fi suprascris output-ul pe
+
+118
+00:07:51,390 --> 00:07:52,470
+care trebuia să-l copiați.
+
+119
+00:07:52,470 --> 00:07:55,050
+Asa ca sa mergem mai departe si sa incepem sa facem asta.
+
+120
+00:07:55,080 --> 00:08:02,540
+În primul rând a trebuit să luăm această secțiune a matricei de la 12 la 15 și apoi la 12 17:22.
+
+121
+00:08:02,550 --> 00:08:06,260
+Deci, cum vom face de fapt acest lucru va clarifica acest comentariu.
+
+122
+00:08:06,390 --> 00:08:08,480
+Primul lucru pe care vreau să îl fac este să-l sun pe Matt.
+
+123
+00:08:09,120 --> 00:08:13,880
+Apoi o să pun o virgulă aici și să aruncăm o privire la rândurile pe care le doriți.
+
+124
+00:08:14,190 --> 00:08:18,680
+Deci, rândurile pe care le doresc încep de la 12 17 22.
+
+125
+00:08:18,780 --> 00:08:28,530
+Deci, se pare că ultimele trei rânduri înseamnă să mă uit la index 0 1 2 Vreau rânduri și
+
+126
+00:08:28,530 --> 00:08:29,620
+totul trecut.
+
+127
+00:08:29,670 --> 00:08:37,830
+Deci, pentru Colon, acestea sunt rândurile mele și să intrăm și să confirmăm asta prin plasarea unui colon aici pentru a selecta
+
+128
+00:08:37,860 --> 00:08:40,170
+toate coloanele din acele rânduri.
+
+129
+00:08:40,460 --> 00:08:43,070
+Oamenii trebuiau să ruleze celula.
+
+130
+00:08:43,660 --> 00:08:44,190
+O.K.
+
+131
+00:08:44,460 --> 00:08:45,070
+Așa că am fugit.
+
+132
+00:08:45,070 --> 00:08:46,200
+Așa că sa întâmplat bine.
+
+133
+00:08:46,230 --> 00:08:47,910
+Și acum selectez totul.
+
+134
+00:08:47,910 --> 00:08:52,910
+Toate coloanele din acele rânduri și se pare că suntem buni până acum și putem vedea subsetul aici.
+
+135
+00:08:52,980 --> 00:08:54,510
+Deci sunt bine pe rânduri.
+
+136
+00:08:54,510 --> 00:08:59,820
+Sus, în cele din urmă, vreau să apuc coloanele corecte, în acest caz, văd că vreau
+
+137
+00:08:59,820 --> 00:09:03,190
+să apuc din coloana 1 index 1 și mai departe.
+
+138
+00:09:03,330 --> 00:09:07,850
+Deci, de fapt, am de gând să spun un singur colon și să conduc asta și acesta este răspunsul meu.
+
+139
+00:09:07,850 --> 00:09:09,430
+Văd că se potrivește.
+
+140
+00:09:09,510 --> 00:09:15,180
+Deci, pentru a rupe acest lucru încă o dată, mă duc de la indicele de rând până la tot ceea ce trece și apoi,
+
+141
+00:09:15,180 --> 00:09:18,120
+după ce a coborât indexul, totul a trecut și am trecut.
+
+142
+00:09:18,120 --> 00:09:20,550
+În acest tip de notație aici.
+
+143
+00:09:20,580 --> 00:09:21,530
+În regulă.
+
+144
+00:09:21,540 --> 00:09:23,340
+Treceți la următoarea.
+
+145
+00:09:23,430 --> 00:09:29,490
+Următoarea este că am vrut să apuc doar numărul 20, așa că dacă mă uit la Matt din nou, vreau doar să apuc
+
+146
+00:09:29,490 --> 00:09:30,300
+numărul 20.
+
+147
+00:09:30,310 --> 00:09:32,300
+Să mergem mai departe și să ne dăm seama unde este asta.
+
+148
+00:09:32,330 --> 00:09:36,030
+E chiar aici în acest caz.
+
+149
+00:09:36,030 --> 00:09:40,290
+Semnificația dacă am scos primul rând de mult timp 0 1 2 3.
+
+150
+00:09:40,320 --> 00:09:41,800
+Deci, este la rândul 3.
+
+151
+00:09:41,960 --> 00:09:43,990
+Sau mergeți mai departe și introduceți asta în.
+
+152
+00:09:44,460 --> 00:09:51,100
+Și apoi este tot drumul la ultima coloană care este 0 1 2 3 4 6.
+
+153
+00:09:51,120 --> 00:09:52,890
+Indexarea începe de la zero.
+
+154
+00:09:52,890 --> 00:09:58,310
+Deci, dacă spun că Matt 3 vine mai devreme, asta mă face să fiu perfect.
+
+155
+00:09:58,430 --> 00:10:05,370
+În curând am vrut să apuc acest lucru 2 7 12 poate merge mai departe și să văd cum arată matematica mea.
+
+156
+00:10:05,370 --> 00:10:07,510
+Iată harta mea și vreau să apuc două 7.
+
+157
+00:10:07,530 --> 00:10:09,060
+Să mergem din nou.
+
+158
+00:10:09,060 --> 00:10:12,860
+Întrerupeți acest lucru în funcție de rânduri și de coloane 2 7 12.
+
+159
+00:10:12,870 --> 00:10:14,380
+Se pare că e aici.
+
+160
+00:10:14,400 --> 00:10:21,840
+Așadar, vreau să apuc toate lucrurile până la un anumit număr de rânduri, așa că vreau doar să înfășoară 2 7 și 12, ceea ce
+
+161
+00:10:22,200 --> 00:10:26,120
+înseamnă că vreau să mă prind și să nu includ indexul trei.
+
+162
+00:10:26,130 --> 00:10:28,990
+Deci, acesta este 0 1 2.
+
+163
+00:10:29,190 --> 00:10:32,580
+Așa că am să merg înainte și să spun totul până la trei.
+
+164
+00:10:32,610 --> 00:10:39,850
+Să mergem mai departe și să confirmăm că doar prin plasarea unui colon aici și aici la 7 12, deci am
+
+165
+00:10:39,850 --> 00:10:40,640
+rândurile corecte.
+
+166
+00:10:40,660 --> 00:10:47,590
+Acum să luăm doar acea coloană corectă și în acest caz este ceva important de știut
+
+167
+00:10:47,590 --> 00:10:48,460
+despre ieșire.
+
+168
+00:10:48,460 --> 00:10:56,380
+Ieșirea aici are două paranteze, ceea ce înseamnă că este de trei ori câte unul și deci există trei rânduri de o coloană
+
+169
+00:10:57,340 --> 00:11:01,290
+și asta înseamnă că dacă aș pune doar numărul coloanei.
+
+170
+00:11:01,600 --> 00:11:08,680
+Deci, dacă am fost doar pentru a pune, de exemplu, să vedem 0 1 mi-ar ajunge la 7 12 out.
+
+171
+00:11:08,860 --> 00:11:09,970
+Dar observați forma aici.
+
+172
+00:11:09,960 --> 00:11:12,120
+Aceasta este doar o matrice unidimensională.
+
+173
+00:11:12,220 --> 00:11:15,440
+Și în acest caz este rezultatul dorit de două seturi de paranteze.
+
+174
+00:11:15,520 --> 00:11:20,100
+Deci, singura modalitate de a face acest lucru este de fapt indexarea folosind notația de felie.
+
+175
+00:11:20,200 --> 00:11:24,000
+Așa că trebuie să spun totul de la unul până la doi, dar nu și doi.
+
+176
+00:11:24,070 --> 00:11:28,270
+Și acest lucru poate părea puțin cam ciudat la început, dar asta este calea dacă voi merge mai departe și voi rula acest
+
+177
+00:11:28,270 --> 00:11:29,980
+lucru pe care îl pot lua în același format.
+
+178
+00:11:29,980 --> 00:11:35,920
+Acum știu că nu este foarte intuitiv, dar acesta este modul în care un arbitru funcționează până la
+
+179
+00:11:35,950 --> 00:11:40,310
+apucarea acelei bucăți de coloană în aceeași formă a acestui braț bidimensional.
+
+180
+00:11:40,330 --> 00:11:43,400
+În caz contrar, o veți obține ca o matrice unidimensională.
+
+181
+00:11:43,420 --> 00:11:49,810
+Deci, din nou doar pentru a clarifica dacă am pus într-una am aceleași numere, dar l-am luat doar ca o
+
+182
+00:11:49,810 --> 00:11:50,590
+matrice unidimensională.
+
+183
+00:11:50,620 --> 00:11:52,660
+Vreau aceste paranteze duble reale aici.
+
+184
+00:11:52,660 --> 00:11:59,890
+Trebuie să precizez să apuc între cele două coloane care din nou sunt într-adevăr doar o singură coloană.
+
+185
+00:11:59,880 --> 00:12:02,480
+Deci știu că este puțin ciudat și nu intuitiv.
+
+186
+00:12:02,740 --> 00:12:07,160
+Și, de fapt, de multe ori, de fapt, vom câștiga toate valorile.
+
+187
+00:12:07,180 --> 00:12:12,400
+Ca atare, nu vom face cu adevărat acest tip de notație de indexare, dar trebuie doar să țineți cont de faptul
+
+188
+00:12:12,400 --> 00:12:18,070
+că felul în care funcționează sintaxa pi este puțin ciudat acolo, dar sperăm că nu a fost prea mult de o întrebare truc
+
+189
+00:12:18,070 --> 00:12:18,670
+pentru tine.
+
+190
+00:12:18,730 --> 00:12:21,720
+Și poți să te joci cu ea mai mult ca să-ți dai seama.
+
+191
+00:12:22,660 --> 00:12:25,840
+Dar din nou nu-i transpirați prea mult dacă nu ați reușit să o rezolviți.
+
+192
+00:12:25,840 --> 00:12:28,730
+În ceea ce privește obținerea în același format.
+
+193
+00:12:28,980 --> 00:12:32,770
+În regulă, avem doar două rămase aici, în măsura în care ne ocupăm de lucruri.
+
+194
+00:12:32,980 --> 00:12:35,650
+Lasă-mă să merg și să conduc Matt ca să vedem cum arată.
+
+195
+00:12:35,650 --> 00:12:45,870
+Din nou buzele 80 și arată că vreau doar ultimul rând aici 21 22 23 24 25.
+
+196
+00:12:46,290 --> 00:12:46,710
+O.K.
+
+197
+00:12:46,780 --> 00:12:48,280
+Există câteva moduri de a face acest lucru.
+
+198
+00:12:48,310 --> 00:12:55,030
+Probabil cea mai simplă cale este să spui doar să mergi la index pentru a randa și a întoarce totul.
+
+199
+00:12:55,660 --> 00:12:58,630
+Și acolo avem 21 22 23 24 25.
+
+200
+00:12:58,620 --> 00:13:04,130
+Și se potrivește cu celălalt mod pe care îl puteți face dacă știți că este ultimul rând din matrice.
+
+201
+00:13:04,270 --> 00:13:08,140
+De asemenea, puteți face indexarea negativă și, de fapt, veți reveni exact la același lucru.
+
+202
+00:13:08,130 --> 00:13:11,000
+Totuși, aș recomanda să le folosiți aici.
+
+203
+00:13:11,020 --> 00:13:13,640
+Deci este puțin mai clar.
+
+204
+00:13:13,660 --> 00:13:14,030
+In regula.
+
+205
+00:13:14,170 --> 00:13:17,020
+Mai mergeți și arătați-i lui Matt.
+
+206
+00:13:17,020 --> 00:13:23,080
+Aici avem Matt și se pare că vrem să luăm toate coloanele din ultimele două rânduri.
+
+207
+00:13:23,230 --> 00:13:26,220
+Dar, din nou, observați că ceva aici are dublu paranteze.
+
+208
+00:13:26,260 --> 00:13:35,560
+Aș vrea să folosesc notația de felie, ceea ce înseamnă că vreau să merg de la indexul de rând trei la cinci și apoi să
+
+209
+00:13:35,620 --> 00:13:39,830
+apuc toate coloanele acolo și apoi să revin aceleași valori aici.
+
+210
+00:13:40,090 --> 00:13:43,270
+Din nou, acest lucru a fost puțin mai dificil decât cel pe care tocmai l-am văzut.
+
+211
+00:13:43,420 --> 00:13:47,200
+Dar, sperăm, răspunsul are sens atunci când l-ați văzut.
+
+212
+00:13:47,200 --> 00:13:50,290
+În regulă, hai să facem următoarele.
+
+213
+00:13:50,350 --> 00:13:55,900
+Când mergeți să puneți o celulă nouă aici pentru a putea vedea că Matt vrem să facem este să obțineți suma
+
+214
+00:13:55,890 --> 00:13:56,950
+tuturor valorilor din Max.
+
+215
+00:13:56,950 --> 00:13:58,240
+Ei bine, există două modalități de a face acest lucru.
+
+216
+00:13:58,240 --> 00:14:07,780
+Poți să spui și unii și apoi să treci pe Matt sau pe care îl poți face este să-i spui lui Matt și ai
+
+217
+00:14:10,570 --> 00:14:11,710
+același răspuns.
+
+218
+00:14:11,740 --> 00:14:13,420
+Fie bine.
+
+219
+00:14:13,420 --> 00:14:15,790
+În continuare doriți să luați abaterea standard.
+
+220
+00:14:16,090 --> 00:14:22,180
+Deci, sperăm că sunteți în stare să vă dați seama fie folosind funcția universală și p s t d și
+
+221
+00:14:22,180 --> 00:14:23,130
+apoi treceți Matt.
+
+222
+00:14:23,200 --> 00:14:27,460
+Acum aș fi obținut acest lucru și ați putea face referire la legătura din notele pentru
+
+223
+00:14:27,790 --> 00:14:34,020
+funcțiile universale sau este de fapt suficient de comună încât să puteți spune și că un CD sau să mă scuzați de matematica Matt
+
+224
+00:14:34,240 --> 00:14:36,390
+că Assaidi și totul ar funcționa la fel.
+
+225
+00:14:36,580 --> 00:14:41,530
+OK, în sfîrșit, acest lucru mic, în cele din urmă dificil, primește suma tuturor coloanelor din mat, pentru a
+
+226
+00:14:41,530 --> 00:14:45,260
+face ceea ce trebuia să faci este să-i spui lui Matt că are ceva.
+
+227
+00:14:45,540 --> 00:14:49,750
+Și a trebuit să precizeze o axă pe care ați fi putut-o vedea dacă schimbați tab-ul aici.
+
+228
+00:14:49,960 --> 00:14:53,440
+Acesta va returna suma tuturor elementelor matrice peste accesul dat.
+
+229
+00:14:53,560 --> 00:14:58,780
+În acest caz, trebuie să spuneți că accesul este egal cu zero.
+
+230
+00:14:59,230 --> 00:15:01,430
+Și așa funcționează.
+
+231
+00:15:01,620 --> 00:15:05,780
+Ultimul a fost un pic dificil de vreme ce l-am pus în codul de acces, dar nu
+
+232
+00:15:05,780 --> 00:15:11,860
+vă faceți griji prea mult dacă nu ați primit-o pentru că vom obține mult mai multă practică în ceea ce privește specificarea Access 0
+
+233
+00:15:11,860 --> 00:15:14,310
+sau 1 când începeți să lucrați la biblioteca pandei.
+
+234
+00:15:14,320 --> 00:15:14,890
+In regula.
+
+235
+00:15:15,070 --> 00:15:16,440
+Să sperăm că nu a fost prea rău pentru tine.
+
+236
+00:15:16,450 --> 00:15:20,830
+Din nou, puteți verifica notebook-ul pentru toate răspunsurile și tot codul pe care tocmai ați trecut și întotdeauna
+
+237
+00:15:20,980 --> 00:15:23,370
+nu ezitați să postați pe forumurile Q &amp; A.
+
+238
+00:15:23,380 --> 00:15:28,340
+Dacă aveți întrebări cu privire la orice am făcut, voi fi bucuros să vă dau o explicație suplimentară.
+
+239
+00:15:28,720 --> 00:15:31,370
+Mulțumesc tuturor și vă văd la următoarea conferință

@@ -1,0 +1,807 @@
+1
+00:00:05,850 --> 00:00:10,470
+Halo semua dan selamat datang di kuliah frame data dan kuliah ini
+
+2
+00:00:10,470 --> 00:00:15,170
+kita akhirnya akan belajar tentang frame data membangun dari frame data objek yang serius.
+
+3
+00:00:15,180 --> 00:00:17,800
+Ini akan menjadi alat utama mereka ketika bekerja dengan panda.
+
+4
+00:00:17,970 --> 00:00:21,680
+Ayo maju dan lompat ke buku catatan Jupiter untuk melihat bagaimana semuanya bekerja.
+
+5
+00:00:21,690 --> 00:00:22,020
+Baiklah.
+
+6
+00:00:22,020 --> 00:00:24,410
+Di sinilah aku di Notebook Jupiter.
+
+7
+00:00:24,450 --> 00:00:29,940
+Kita akan melanjutkan dan mengatakan penting beberapa pie dan P dan mengimpor
+
+8
+00:00:29,940 --> 00:00:35,880
+panda PD dan saya akan melakukan satu hal terakhir di sini untuk menyelamatkan dari mereka.
+
+9
+00:00:36,350 --> 00:00:38,370
+Dan kemudian saya akan pergi keluar dan mengatur benih.
+
+10
+00:00:38,370 --> 00:00:42,660
+Dan apa artinya seed adalah hanya untuk memastikan bahwa kita mendapatkan angka acak yang sama.
+
+11
+00:00:42,660 --> 00:00:45,510
+Dengan begitu jika Anda mengikuti saya, Anda akan melihat angka acak yang sama.
+
+12
+00:00:45,540 --> 00:00:49,260
+Saya melihat dia bisa masuk dan mengatakan bahwa benih acak.
+
+13
+00:00:49,290 --> 00:00:49,550
+Baiklah.
+
+14
+00:00:49,590 --> 00:00:57,840
+Mari kita pergi dan mengeksplorasi perintah yang berbeda dan ADF sama dengan bingkai data PD dan Anda benar-benar dapat menggunakan tab
+
+15
+00:00:57,840 --> 00:01:01,460
+di sini di Jupiter dan hingga melengkapi otomatis ini.
+
+16
+00:01:01,770 --> 00:01:05,200
+Dan perhatikan bahwa EFIS memanfaatkan tab shift Windu.
+
+17
+00:01:05,200 --> 00:01:10,770
+Lihatlah dokumen dan tanda tangan awal untuk kerangka data PD ini.
+
+18
+00:01:10,770 --> 00:01:16,830
+Kami memiliki argumen data dan argumen indeks seperti yang kami lakukan untuk seri tetapi kemudian kami memiliki argumen
+
+19
+00:01:16,830 --> 00:01:18,210
+kolom tambahan ini.
+
+20
+00:01:18,450 --> 00:01:23,130
+Mari kita lanjutkan dan membangun ini dengan beberapa data acak dan kita akan melihat seperti apa sebenarnya
+
+21
+00:01:23,130 --> 00:01:24,000
+bingkai data.
+
+22
+00:01:24,000 --> 00:01:31,090
+Hal pertama yang akan saya lakukan adalah meneruskan argumen data itu dan saya benar-benar akan memanggil Ranz
+
+23
+00:01:31,110 --> 00:01:37,620
+dan 5 koma 4 dan kemudian yang ingin Anda sampaikan adalah indeks dalam indeks.
+
+24
+00:01:37,620 --> 00:01:42,650
+Kita bisa membuat daftar karakter di sini.
+
+25
+00:01:42,660 --> 00:01:48,850
+Aku akan masuk dan mengatakan A B C D E.
+
+26
+00:01:49,320 --> 00:01:53,950
+Dan akhirnya untuk kolom saya akan pergi ke depan dan mengatakan xy z.
+
+27
+00:01:54,120 --> 00:02:05,810
+Jadi saya akan mengatakan w x y z akan pergi ke depan dan menjalankan ini dan kemudian melewatkan data hanya menampilkan dan kemudian kita mendapatkan tampilan
+
+28
+00:02:05,820 --> 00:02:07,020
+yang bagus.
+
+29
+00:02:07,050 --> 00:02:12,370
+Dan ini mungkin terlihat dan terasa sangat mirip dengan entri Excel dan buku catatan yang lebih dalam dan itu bagus.
+
+30
+00:02:12,540 --> 00:02:18,060
+Jika Anda menggunakan ID editor lain, Anda mungkin tidak mendapatkan tampilan yang bagus tetapi Anda
+
+31
+00:02:18,060 --> 00:02:21,560
+harus mendapatkan hasil cetak yang mirip dengan ini.
+
+32
+00:02:21,630 --> 00:02:22,060
+Baiklah.
+
+33
+00:02:22,110 --> 00:02:31,130
+Jadi pada dasarnya yang kita miliki di sini adalah daftar kolom w x yz dan baris yang sesuai A B C D E.
+
+34
+00:02:31,170 --> 00:02:35,240
+Sekarang masing-masing kolom ini sebenarnya hanya seri panda.
+
+35
+00:02:35,250 --> 00:02:42,060
+Jadi W adalah seri panda serta XY dan Z dan mereka semua berbagi indeks yang sama dan pada
+
+36
+00:02:42,060 --> 00:02:46,350
+dasarnya semua kerangka data adalah hanya sekelompok seri yang berbagi indeks.
+
+37
+00:02:46,350 --> 00:02:51,830
+Mari kita lanjutkan dan tunjukkan bagaimana kita dapat menggunakan pengindeksan dan seleksi sebenarnya mengambil salah satu
+
+38
+00:02:52,080 --> 00:02:59,280
+dari benda-benda serius ini atau beberapa kolom ini satu arah dan cara utama untuk melakukan ini adalah dengan mengatakan DMF dan
+
+39
+00:02:59,340 --> 00:03:02,920
+kemudian menggunakan notasi Rackett dan kemudian memasukkan nama kolom .
+
+40
+00:03:02,940 --> 00:03:05,590
+Dalam hal ini mari kita lanjutkan dan ambil kolom W.
+
+41
+00:03:05,610 --> 00:03:12,180
+Jadi sebagai string pass w dan ini mengembalikan kolom W dan sekarang lihat hasilnya.
+
+42
+00:03:12,180 --> 00:03:14,590
+Sekarang ini benar-benar terlihat seperti seri.
+
+43
+00:03:14,590 --> 00:03:16,950
+Dan itu karena itulah kolom W.
+
+44
+00:03:16,950 --> 00:03:20,160
+Ini hanya seri dan Anda benar-benar dapat mengkonfirmasi ini dengan mengatakan.
+
+45
+00:03:20,160 --> 00:03:27,870
+Jenis df dari W dan itu menunjukkan bahwa itu Panas inti yang seri itu.
+
+46
+00:03:27,870 --> 00:03:33,940
+Jika saya hanya mengatakan ketik pada objek DFA itu sendiri saya akan mendapatkan bingkai data.
+
+47
+00:03:34,260 --> 00:03:39,420
+Jadi sekali lagi hanya untuk mengulangi fakta bahwa bingkai data hanyalah sekelompok seri yang memiliki
+
+48
+00:03:39,450 --> 00:03:40,600
+indeks yang sama.
+
+49
+00:03:40,590 --> 00:03:45,270
+Sekarang ada dua cara berbeda yang bisa Anda ambil kolom dari bingkai data.
+
+50
+00:03:45,300 --> 00:03:49,780
+Cara utama dan cara harus selalu melakukannya adalah menggunakan notasi braket semacam ini dan
+
+51
+00:03:49,800 --> 00:03:51,090
+kemudian melewati nama kolom.
+
+52
+00:03:51,090 --> 00:03:56,640
+Namun, jika Anda benar-benar terbiasa dengan sekuel banyak kali Anda memilih kolom yang Anda masukkan dalam sebuah tabel
+
+53
+00:03:57,090 --> 00:03:58,470
+dan kemudian nama kolom.
+
+54
+00:03:58,530 --> 00:04:04,280
+Ini sebenarnya juga berfungsi untuk pantless yang bisa Anda katakan titik dan kemudian nama kolom.
+
+55
+00:04:04,440 --> 00:04:10,020
+Namun saya akan merekomendasikan agar Anda tidak menggunakan ini karena mungkin akan bingung dengan berbagai metode
+
+56
+00:04:10,020 --> 00:04:11,870
+yang tersedia dari kerangka data.
+
+57
+00:04:11,940 --> 00:04:18,160
+Sebagai contoh jika saya mengatakan DFA dot dan kemudian klik tab saya melihat banyak metode yang tersedia untuk saya.
+
+58
+00:04:18,480 --> 00:04:22,980
+Dan itu adalah banyak metode yang akan kita pelajari saat kita belajar lebih banyak tentang
+
+59
+00:04:22,980 --> 00:04:28,050
+panda tetapi yang mungkin terjadi adalah bahwa salah satu metode ini akan ditimpa dengan nama kolom dan kemudian
+
+60
+00:04:28,050 --> 00:04:32,420
+Panther akan menjadi bingung apakah Anda bertanya untuk metode atau nama kolom yang sebenarnya.
+
+61
+00:04:32,430 --> 00:04:38,410
+Jadi sebaiknya Anda lakukan untuk menghindari hal itu seperti yang selalu menjadi semacam tanda kurung ketika meminta kolom.
+
+62
+00:04:38,970 --> 00:04:39,500
+BAIK.
+
+63
+00:04:39,510 --> 00:04:44,590
+Jika Anda ingin beberapa kolom kembali maka Anda dapat melanjutkan dan mem-pasan daftar kolom.
+
+64
+00:04:44,820 --> 00:04:49,800
+Jadi ketahuilah bahwa saya memasukkan tanda kurung saya dan kemudian saya akan lulus dan daftar nama kolom
+
+65
+00:04:49,800 --> 00:04:52,170
+yang akan menghasilkan tanda kurung lain di sini.
+
+66
+00:04:52,200 --> 00:05:02,970
+Sebagai contoh jika saya ingin kolom W dan Z saya berikan daftar di sini disorot WNC dan saya mendapatkan kembali bingkai data
+
+67
+00:05:02,970 --> 00:05:05,520
+yang mengandung dua seri.
+
+68
+00:05:05,520 --> 00:05:10,620
+Dan itu berarti ketika saya meminta beberapa kolom saya benar-benar mendapatkan kembali bingkai data saya meminta hanya satu
+
+69
+00:05:10,620 --> 00:05:13,240
+kolom yang saya akan mendapatkan kembali satu seri.
+
+70
+00:05:13,380 --> 00:05:17,510
+Dan dalam sistem buku catatan Jupiter itulah yang dicatat dengan cara output ditampilkan.
+
+71
+00:05:17,990 --> 00:05:25,540
+OK mari kita lanjutkan dan lanjutkan untuk membuat kolom baru Palla mendukung pembuatan kolom baru
+
+72
+00:05:25,560 --> 00:05:29,390
+dengan hanya menentukan kolom seolah-olah sudah ada.
+
+73
+00:05:29,400 --> 00:05:31,100
+Misalnya baru.
+
+74
+00:05:31,140 --> 00:05:34,550
+Sekarang jika saya menjalankan ini saya akan mendapatkan kesalahan dan itu adalah penjaga.
+
+75
+00:05:34,570 --> 00:05:37,500
+Gulir ke bawah sini mengatakan Kear baru.
+
+76
+00:05:37,680 --> 00:05:42,560
+Dan itu pada dasarnya hanya mencoba untuk memberitahu Anda bahwa itu tidak dapat menemukan bahwa tidak ada kunci baru di sana
+
+77
+00:05:42,570 --> 00:05:50,190
+Namun ketika Anda membuat tag hash Anda membiarkan dan memasukkan ini kembali ketika Anda membuat kolom
+
+78
+00:05:50,190 --> 00:05:51,200
+baru.
+
+79
+00:05:51,210 --> 00:05:56,280
+Anda benar-benar dapat mendefinisikannya seolah-olah sudah ada dan kemudian di sisi
+
+80
+00:05:56,850 --> 00:06:05,610
+kanan tanda sama menggunakan kolom lain dengan aritmatika untuk menarik kolom baru misalnya Anda bisa mengatakan DSF kolom baru
+
+81
+00:06:05,610 --> 00:06:09,970
+seolah-olah sudah ada sama dengan DFW Plus the fly.
+
+82
+00:06:10,150 --> 00:06:11,710
+Dan ini akan berjalan tanpa kesalahan.
+
+83
+00:06:11,910 --> 00:06:18,780
+Dan sekarang jika saya melihat DF jika kolom baru itu benar-benar ada di sana dan untuk menghapus kolom Anda
+
+84
+00:06:18,780 --> 00:06:19,890
+bisa mengatakan DFT.
+
+85
+00:06:19,920 --> 00:06:28,020
+Drop Anda bisa mengatakan drop deific dan berikan nama kolom yang sebenarnya ingin Anda jatuhkan.
+
+86
+00:06:28,020 --> 00:06:31,430
+Sekarang jika Anda hanya melakukan ini dengan sendirinya Anda akan mendapatkan kesalahan.
+
+87
+00:06:31,500 --> 00:06:35,340
+Dan mari kita masuk dan memeriksa apa kesalahan itu akan mengatakan kesalahan nilai.
+
+88
+00:06:35,390 --> 00:06:36,120
+Kami gulir ke bawah.
+
+89
+00:06:36,120 --> 00:06:40,540
+Dikatakan label baru tidak terkandung di Access.
+
+90
+00:06:40,620 --> 00:06:47,660
+Dan jika saya mengklik tab shift pada metode drop perhatikan bahwa secara default dikatakan akses sama dengan
+
+91
+00:06:47,670 --> 00:06:52,390
+nol akses sama dengan nol untuk metode drop mengacu pada indeks.
+
+92
+00:06:52,500 --> 00:07:01,050
+Jika saya benar-benar ingin merujuk ke kolom saya perlu menentukan akses sama dengan 1 dan kemudian akan drop
+
+93
+00:07:01,680 --> 00:07:04,430
+kolom baru itu di sini.
+
+94
+00:07:04,830 --> 00:07:10,260
+Sekarang ada dua hal yang perlu diperhatikan ketika menggunakan drop DFT ini hal pertama yang perlu diketahui
+
+95
+00:07:10,260 --> 00:07:15,900
+adalah bahwa ini tidak terjadi di tempat yang berarti saya tidak benar-benar mempengaruhi keadaan bingkai kecuali saya secara
+
+96
+00:07:16,070 --> 00:07:18,370
+khusus menentukan ini terjadi di tempat.
+
+97
+00:07:18,470 --> 00:07:20,450
+Saya ingin menunjukkan kepada Anda apa yang saya maksud dengan itu.
+
+98
+00:07:20,610 --> 00:07:28,380
+Saya telah menyebut baris ini D-flat drop akses Anda sama dengan 1 jika saya menelepon DMF saya akan melihat bahwa saya
+
+99
+00:07:28,380 --> 00:07:29,910
+masih memiliki kolom baru.
+
+100
+00:07:29,910 --> 00:07:36,030
+Itu berarti saya harus benar-benar menentukan sebagai argumen untuk bergeser harus menunjukkannya argumen in-place
+
+101
+00:07:36,630 --> 00:07:42,840
+dalam banyak metode Pandurs akan membutuhkan argumen ini di tempat yang akan disetel ke true.
+
+102
+00:07:42,990 --> 00:07:48,450
+Dan alasan calo melakukan hal itu adalah agar Anda tidak kehilangan informasi secara tidak sengaja seandainya
+
+103
+00:07:48,450 --> 00:07:53,820
+Anda telah melakukan banyak penyesuaian pada data Anda, Anda tidak ingin kehilangannya secara tidak sengaja.
+
+104
+00:07:53,820 --> 00:07:59,520
+Jadi Pandurs mengharuskan Anda untuk mengatakan di tempat sama dengan benar jika Anda benar-benar ingin banyak perubahan ini
+
+105
+00:07:59,550 --> 00:08:01,260
+tetap dan terjadi di tempat.
+
+106
+00:08:01,380 --> 00:08:07,800
+Dan sekarang jika saya memanggil DFI menjalankan pemberitahuan sel bahwa kolom baru sekarang dihapus secara permanen
+
+107
+00:08:07,800 --> 00:08:15,960
+karena terjadi di tempat dan sesuatu yang perlu diperhatikan di sini adalah bahwa kita juga dapat menggunakan drop kiri untuk drop baris
+
+108
+00:08:15,960 --> 00:08:16,450
+misalnya.
+
+109
+00:08:16,470 --> 00:08:19,930
+Mari kita keluar dan menggunakan ini untuk menjatuhkan baris.
+
+110
+00:08:20,130 --> 00:08:28,290
+Saya akan mengatakan DF mendapat drop saya lulus E dan saya juga bisa mengatakan sumbu sama dengan nol.
+
+111
+00:08:28,290 --> 00:08:30,870
+Sekarang ingat Anda sebenarnya tidak perlu menambahkan itu sebagai argumen.
+
+112
+00:08:30,870 --> 00:08:32,230
+Itu standarnya.
+
+113
+00:08:32,820 --> 00:08:40,950
+Jadi mari kita pergi dan katakan saja drop E dan di sana kita sudah bisa menjatuhkan e karena Access sama dengan
+
+114
+00:08:40,950 --> 00:08:41,410
+nol.
+
+115
+00:08:41,460 --> 00:08:45,260
+Dan itu berfungsi baik saya bisa mengatakan sekuel X ke 0 dan ini akan bekerja lagi.
+
+116
+00:08:45,660 --> 00:08:48,140
+Dan perhatikan di sini saya tidak melakukan ini di tempat.
+
+117
+00:08:48,360 --> 00:08:48,880
+BAIK.
+
+118
+00:08:49,020 --> 00:08:54,930
+Terkadang titik kebingungan adalah mengapa baris nol sejauh adalah akses dan mengapa kolom
+
+119
+00:08:54,960 --> 00:08:58,880
+satu tempat referensi sebenarnya kembali ke pi.
+
+120
+00:08:59,010 --> 00:09:06,850
+Karena bingkai data pada dasarnya hanya penanda indeks mewah di atas array PI untuk menunjukkan ini.
+
+121
+00:09:07,080 --> 00:09:14,750
+Saya dapat mengatakan bentuk pemikiran DF seperti yang kami lakukan pada matriks pipa dan tidak jika bentuk itu adalah tuple untuk
+
+122
+00:09:14,800 --> 00:09:19,750
+matriks imajinal gigi di sini dan pada indeks nol atau jumlah baris.
+
+123
+00:09:19,890 --> 00:09:23,020
+Jadi jika saya katakan ZF di sini saya punya lima baris.
+
+124
+00:09:23,070 --> 00:09:29,990
+A B C dan D E dan kemudian pada indeks yang saya punya empat kolom w x y z.
+
+125
+00:09:30,150 --> 00:09:37,530
+Itulah sebabnya baris disebut sebagai sumbu nol dan kolom disebut sebagai sumbu satu karena
+
+126
+00:09:37,530 --> 00:09:43,020
+langsung diambil dari bentuk seperti halnya Anda memiliki pai array.
+
+127
+00:09:43,020 --> 00:09:43,880
+BAIK.
+
+128
+00:09:43,920 --> 00:09:46,260
+Sekarang mari kita bicara tentang memilih baris.
+
+129
+00:09:46,290 --> 00:09:51,840
+Kami telah berbicara tentang memilih kolom yang baru saja Anda lakukan dengan mengucapkan DMF dan dalam kurung
+
+130
+00:09:51,840 --> 00:09:53,280
+Anda memasukkan nama kolom.
+
+131
+00:09:53,280 --> 00:10:01,350
+Atau jika Anda ingin banyak kolom, Anda pasan daftar nama kolom seperti Z dan kemudian koma X dan menutup
+
+132
+00:10:01,350 --> 00:10:02,430
+braket itu.
+
+133
+00:10:02,430 --> 00:10:07,460
+Jadi saya melewati daftar nama kolom dan saya mengembalikan bingkai data kolom tersebut.
+
+134
+00:10:07,500 --> 00:10:09,940
+Mari kita bicara tentang memilih baris.
+
+135
+00:10:10,900 --> 00:10:14,650
+Ingin melihat bingkai data saya lagi di sini bingkai data saya.
+
+136
+00:10:14,650 --> 00:10:18,400
+ABC E adalah mawar saya WXYZ adalah kolom.
+
+137
+00:10:18,400 --> 00:10:25,120
+Ada dua cara untuk memilih baris dalam bingkai data dan Anda harus membatalkan metode ini.
+
+138
+00:10:25,120 --> 00:10:26,900
+Dan ada dua metode untuk digunakan.
+
+139
+00:10:26,890 --> 00:10:31,040
+Salah satunya adalah Loek EHLO lihat lokasinya.
+
+140
+00:10:31,690 --> 00:10:38,030
+Dan ini akan menggunakan label sehingga Anda juga dapat melakukan shift tab di sini untuk melihat properti ini dan sesuatu untuk diketahui di
+
+141
+00:10:38,020 --> 00:10:38,540
+sini.
+
+142
+00:10:38,560 --> 00:10:43,770
+Saya menggunakan tanda kurung siku yang sedikit aneh tapi itu cara kerjanya dengan panda.
+
+143
+00:10:44,000 --> 00:10:48,920
+Anda lulus di LRC dan kemudian Anda melewati tanda kurung yang Anda inginkan.
+
+144
+00:10:48,910 --> 00:10:52,030
+Sebagai contoh jika saya ingin baris saya baru saja lewat
+
+145
+00:10:52,280 --> 00:10:56,210
+Lihat Saya melewati label indeks itu dan ini kembali.
+
+146
+00:10:56,240 --> 00:10:58,150
+Tidak ada seri.
+
+147
+00:10:58,150 --> 00:11:04,310
+Dan ini sampai pada kesimpulan kedua kami bahwa tidak hanya semua seri kolom tetapi baris juga seri
+
+148
+00:11:04,300 --> 00:11:06,730
+sejauh cara mereka akan mendapatkan pengembalian.
+
+149
+00:11:06,880 --> 00:11:09,780
+Ketika Anda meminta mereka di Panda.
+
+150
+00:11:10,090 --> 00:11:16,140
+Sekarang mari kita bahas cara kedua untuk mengambil baris yang didasarkan dari posisi selanjutnya.
+
+151
+00:11:16,510 --> 00:11:17,750
+Saya bisa menggunakan DFT.
+
+152
+00:11:17,840 --> 00:11:25,180
+Saya Loek untuk benar-benar dalam posisi indeks numerik bahkan jika sumbu saya diberi label oleh string.
+
+153
+00:11:25,180 --> 00:11:34,310
+Sebagai contoh jika saya ingin melihat baris itu saya bisa melakukan itu dengan dua cara saya bisa mengatakan DF ELO melihat lokasi dan dalam
+
+154
+00:11:34,380 --> 00:11:42,190
+kurung melewati nama baris yang C atau saya bisa mengatakan saya EHLO melihat yang merupakan lokasi berbasis indeks dan menghitung indeks
+
+155
+00:11:42,200 --> 00:11:43,690
+apa ia mengatakan.
+
+156
+00:11:43,690 --> 00:11:45,870
+Jadi 0 1 2.
+
+157
+00:11:46,100 --> 00:11:51,790
+Dan kemudian pada I Alosi cepat untuk menambahkan ini juga mengembalikan baris itu.
+
+158
+00:11:51,790 --> 00:11:57,250
+Dan itu pada dasarnya berarti Anda memiliki dua cara untuk memilih baris menggunakan EHLO
+
+159
+00:11:57,250 --> 00:12:04,220
+lihat apakah Anda ingin lokasi atau indeks berbasis berlabel atau saya akan melihat apakah Anda ingin indeks berbasis numerik.
+
+160
+00:12:04,240 --> 00:12:09,640
+OK mari kita bicara tentang memilih himpunan bagian baris dan kolom dan ini sebenarnya akan sangat
+
+161
+00:12:09,640 --> 00:12:12,680
+akrab bagi Anda karena kami baru belajar tentang pi.
+
+162
+00:12:13,250 --> 00:12:21,530
+Kita dapat mengatakan DFI berpikir EHLO melihat apakah kita ingin memilih subset dari baris dan kolom yang dapat kita pasan seperti yang
+
+163
+00:12:21,520 --> 00:12:25,400
+kita lakukan dengan Num. Pi menggunakan notasi umum.
+
+164
+00:12:25,390 --> 00:12:28,550
+Baris yang kita inginkan dan kemudian kolom yang kita inginkan.
+
+165
+00:12:28,580 --> 00:12:36,520
+Jadi saya ingin nilai di Row menjadi kolom Y dan ini mengembalikan hanya satu nilai di sana.
+
+166
+00:12:36,550 --> 00:12:43,220
+Jadi jika saya melihat DFA saya lagi melihat kolom ráby y saya punya negatif 0 ini. 8 karena saya mendapatkan hasil yang sama
+
+167
+00:12:43,210 --> 00:12:44,610
+di sini.
+
+168
+00:12:44,620 --> 00:12:52,700
+Jadi seperti pi, Anda dapat menggunakan notasi kolom koma baris ini dan jika Anda menginginkan subset dari ini, Anda
+
+169
+00:12:52,690 --> 00:12:58,950
+dapat mengatakan Dhia ellos melihat dan kemudian memilah daftar yang dipisahkan oleh koma.
+
+170
+00:12:59,000 --> 00:13:07,180
+Sebagai contoh katakanlah saya ingin himpunan bagian dari b rows dengan kolom WY jadi pada dasarnya saya
+
+171
+00:13:07,540 --> 00:13:13,670
+menginginkan 2 ini. 7 0. 9 dan 0. 6 5 dan negatif adalah dua puluh empat.
+
+172
+00:13:13,690 --> 00:13:20,650
+Itu berarti saya bisa memasukkan daftar baris yang saya inginkan yang dalam hal ini adalah a dan b.
+
+173
+00:13:21,700 --> 00:13:31,490
+Dan kemudian saya bisa mengirimkan daftar kolom yang saya inginkan dalam hal ini yaitu w dan y shift memasukkannya dan saya
+
+174
+00:13:31,490 --> 00:13:34,360
+mendapatkan subset pengembalian frame data itu.
+
+175
+00:13:34,880 --> 00:13:35,540
+BAIK.
+
+176
+00:13:35,770 --> 00:13:38,520
+Kami akan berhenti di sini untuk saat ini dan melanjutkan diskusi.
+
+177
+00:13:38,530 --> 00:13:44,960
+Pada bagian kedua dari kuliah frame data dan ini semua ada di notebook yang disebut Data frames
+
+178
+00:13:44,950 --> 00:13:46,700
+di bawah folder panderers.
+
+179
+00:13:46,690 --> 00:13:51,610
+Mari kita tinjau cepat apa yang telah kita pelajari sejauh membuat kerangka data.
+
+180
+00:13:51,620 --> 00:13:58,540
+Anda hanya perlu mengatakan data penumpang bingkai PD data dalam indeks Anda dan kemudian masukkan nama kolom Anda.
+
+181
+00:13:58,930 --> 00:14:03,670
+Biasanya kita tidak akan membuat data Frayne dengan tangan dengan cara ini sebenarnya akan membaca data dari
+
+182
+00:14:03,670 --> 00:14:08,250
+beberapa jenis sumber seperti file CSP tetapi belajar bagaimana melakukan input data sekarang dimasukkan nanti.
+
+183
+00:14:08,250 --> 00:14:14,030
+Untuk saat ini jika Anda terutama ingin membuat bingkai data sehingga Anda dapat melakukannya maka untuk memilih kolom dari
+
+184
+00:14:14,020 --> 00:14:16,100
+bingkai data Anda bisa mengatakan DSF.
+
+185
+00:14:16,100 --> 00:14:22,090
+Dan kemudian dalam kurung lewat di kolom yang Anda inginkan atau lulus dalam daftar kolom yang
+
+186
+00:14:22,180 --> 00:14:25,630
+Anda inginkan ingat bahwa setiap kolom sebenarnya hanya seri.
+
+187
+00:14:25,880 --> 00:14:31,430
+Anda dapat membuat kolom baru berdasarkan kolom lama dengan menggunakan aritmatika semacam ini.
+
+188
+00:14:31,450 --> 00:14:36,040
+Kemudian Anda bisa menjatuhkan kolom atau baris menggunakan DFA yang jatuh.
+
+189
+00:14:36,040 --> 00:14:38,730
+Ingat kebutuhan mengatakan di tempat sama dengan benar.
+
+190
+00:14:38,870 --> 00:14:44,820
+Jika Anda ingin efeknya permanen Anda mengatakan Sumbu 1 untuk kolom dan kemudian Akses 0 untuk baris.
+
+191
+00:14:44,980 --> 00:14:54,460
+Dan lagi yang berasal dari bentuk ini indeks tuple 0 adalah baris 1 indeks adalah kolom sejauh memilih baris
+
+192
+00:14:54,460 --> 00:14:56,350
+dari bingkai data.
+
+193
+00:14:56,360 --> 00:14:57,630
+Ada dua metode di sini.
+
+194
+00:14:57,640 --> 00:15:03,670
+Ada metode Alosi yang merupakan lokasi indeks berdasarkan label atau ada titik.
+
+195
+00:15:03,720 --> 00:15:08,670
+Saya Alosi yang merupakan lokasi indeks berbasis integer.
+
+196
+00:15:09,430 --> 00:15:15,100
+Dan kemudian jika Anda ingin memilih himpunan bagian dari frame data Anda dapat menggunakan dot LOC dan melewati salah satu
+
+197
+00:15:15,250 --> 00:15:18,800
+nilai atau daftar lengkap untuk mengembalikan himpunan bagian dari frame data.
+
+198
+00:15:19,330 --> 00:15:22,230
+OK itu untuk dasar-dasar frame data.
+
+199
+00:15:22,420 --> 00:15:26,810
+Selanjutnya, kita akan membahas lebih banyak lagi tentang apa yang dapat Anda lakukan jika Appin
+
+200
+00:15:26,800 --> 00:15:28,880
+dalam kerangka seperti menggunakan pemilihan kondisional.
+
+201
+00:15:28,880 --> 00:15:30,580
+Baiklah, terima kasih semuanya.
+
+202
+00:15:30,590 --> 00:15:31,570
+Sampai jumpa di kuliah berikutnya

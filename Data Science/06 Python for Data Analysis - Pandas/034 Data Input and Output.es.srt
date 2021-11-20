@@ -1,0 +1,791 @@
+1
+00:00:05,370 --> 00:00:11,100
+Hola a todos y bienvenidos a los paneles de conferencias de entrada y salida de datos, ya que una biblioteca tiene
+
+2
+00:00:11,100 --> 00:00:15,900
+la capacidad de leer datos y escribir datos en una amplia variedad de fuentes para esta conferencia.
+
+3
+00:00:15,900 --> 00:00:22,860
+Vamos a estar preocupados con solo cuatro fuentes de datos principales para ver los archivos en formato Excel H. T. correo de la web y
+
+4
+00:00:22,860 --> 00:00:30,600
+secuela para trabajar con archivos ASTM y bases de datos de continuación con panderers solo para
+
+5
+00:00:30,600 --> 00:00:31,920
+instalar para bibliotecas.
+
+6
+00:00:31,980 --> 00:00:35,310
+Las instrucciones están en el cuaderno o si solo quieres hacerlo rápido.
+
+7
+00:00:35,310 --> 00:00:42,930
+Estas son las cuatro bibliotecas necesarias para instalar la tapa de la alquimia Lxi Mel HVM L5 y luego la hermosa
+
+8
+00:00:42,930 --> 00:00:46,880
+sopa para la biblioteca, puedes hacer esto con Pipp o Khanda.
+
+9
+00:00:47,280 --> 00:00:47,760
+Todo bien.
+
+10
+00:00:47,940 --> 00:00:52,510
+Una vez que haya instalado estas bibliotecas y hecho referencia a un bloc de notas, está listo para comenzar.
+
+11
+00:00:52,560 --> 00:00:53,890
+Vamos adelante y saltamos.
+
+12
+00:00:53,910 --> 00:00:58,190
+El cuaderno de Júpiter y le mostrará cómo leer y escribir archivos con pandas.
+
+13
+00:00:58,230 --> 00:01:00,860
+Bien aquí estamos en el cuaderno de Júpiter.
+
+14
+00:01:00,930 --> 00:01:06,420
+Tenga en cuenta que al hacer referencia a los archivos, como el ejemplo, consulte el archivo X-Fi y el archivo
+
+15
+00:01:06,420 --> 00:01:12,030
+Excel de ejemplo, deberá asegurarse de que se encuentren en la misma ubicación que su computadora portátil Jupiter para verificar
+
+16
+00:01:12,030 --> 00:01:13,830
+la ubicación de su un cuaderno.
+
+17
+00:01:13,830 --> 00:01:20,910
+Simplemente puede ir a una celda y escribir P WD cambiar entre e informar la ubicación.
+
+18
+00:01:20,910 --> 00:01:22,750
+Esta es la misma ubicación de archivo.
+
+19
+00:01:22,770 --> 00:01:26,670
+El ejemplo muestra todos los archivos en el ejemplo en que debería estar el archivo de Excel.
+
+20
+00:01:26,760 --> 00:01:31,680
+Si ha descargado todo el repositorio de portátiles y está trabajando en la sección de entrada y salida
+
+21
+00:01:31,680 --> 00:01:37,680
+de datos o en el portátil, debería estar bien con solo hacer referencia a los archivos como si ya estuvieran allí.
+
+22
+00:01:38,250 --> 00:01:43,870
+De acuerdo, sigamos y demostremos cómo abrir y leer C como archivos V para poder hacer esto.
+
+23
+00:01:43,890 --> 00:01:52,430
+Usted puede decir que PD leer subrayar CXXVI y luego comenzar a escribir el nombre de su C como el archivo.
+
+24
+00:01:52,500 --> 00:01:54,510
+En este caso, sé que se llama el ejemplo.
+
+25
+00:01:54,660 --> 00:02:01,000
+Así que a medida que comencé a escribir esto, un buen truco es una pestaña de clic y automáticamente completará el nombre del archivo.
+
+26
+00:02:02,190 --> 00:02:03,570
+En tu caso, puedes tener.
+
+27
+00:02:03,570 --> 00:02:06,340
+Ejemplo No ejemplo que C S V.
+
+28
+00:02:06,390 --> 00:02:08,880
+Vamos a leer eso en.
+
+29
+00:02:09,030 --> 00:02:15,840
+Cambié la entrada y ahora puedo ver la C como archivo como un marco de datos con las columnas A B
+
+30
+00:02:15,840 --> 00:02:19,290
+C y D y 0 1 a 3 como filas.
+
+31
+00:02:19,290 --> 00:02:28,010
+Tenga en cuenta que si quiero leer cualquier archivo, solo uso la línea de comando de lectura de subrayado, haga clic en la pestaña aquí
+
+32
+00:02:28,020 --> 00:02:33,060
+y obtengo este menú desplegable de la variedad de formatos que Pancho's puede leer.
+
+33
+00:02:33,060 --> 00:02:35,350
+Entonces Pan puede leer incluso desde su portapapeles.
+
+34
+00:02:35,350 --> 00:02:42,400
+Vea como sobresalimos archivos archivos HDR. Los encuadres de Jaison buscan tablas de archivos secuelas, etc. Solo ten en cuenta que tienen muchas opciones aquí.
+
+35
+00:02:42,660 --> 00:02:44,870
+En este momento estamos revisando los más comunes.
+
+36
+00:02:44,940 --> 00:02:47,340
+OK para escribir en un archivo CXXVI vas a
+
+37
+00:02:47,840 --> 00:02:53,490
+necesitar un marco de datos, así que voy a seguir adelante y solo digo que DF es igual a PD.
+
+38
+00:02:53,490 --> 00:02:55,740
+Lee el subrayado C como V.
+
+39
+00:02:55,760 --> 00:02:58,100
+Y de nuevo solo para hacer la pestaña de ejemplo autocompletar aquí y ahora tengo T. F. como ese mismo ejemplo DFS.
+
+40
+00:02:58,530 --> 00:03:05,920
+En realidad, lo he guardado en una variable fuera de un marco de datos.
+
+41
+00:03:05,920 --> 00:03:10,290
+Puedes decir para subrayar si hiciste clic en la pestaña aquí.
+
+42
+00:03:10,290 --> 00:03:14,000
+Notará que tiene una variedad de formatos en los que puede escribir.
+
+43
+00:03:14,220 --> 00:03:17,470
+Así que, básicamente, casi todos los mismos formatos desde los que puedes leer.
+
+44
+00:03:17,580 --> 00:03:21,270
+Así que voy a entrar y decir subrayar DFA a s.
+
+45
+00:03:21,270 --> 00:03:25,780
+Voy a etiquetar este mi resultado de subrayado y la
+
+46
+00:03:26,070 --> 00:03:36,960
+otra cosa que hago es decir que Index es igual a falso y el motivo es que no quiero guardar este índice como columna.
+
+47
+00:03:36,960 --> 00:03:42,200
+Déjame seguir y mostrarte lo que sucede si no coloco indexical
+
+48
+00:03:42,210 --> 00:03:47,400
+en falso y simplemente ponen la F para ver a Esrey.
+
+49
+00:03:47,400 --> 00:03:49,290
+Voy a seguir adelante y decir
+
+50
+00:03:49,410 --> 00:03:54,660
+PD que lea subrayar cxxviii y voy a leer el archivo que acabo de guardar mi salida.
+
+51
+00:03:54,660 --> 00:03:56,860
+No obtengo esta columna aquí llamada sin nombre 0 y ese era el índice anterior.
+
+52
+00:03:56,960 --> 00:04:03,180
+Ahora si digo T. F. ver es el índice falso en ejecutar esa celda.
+
+53
+00:04:03,180 --> 00:04:09,560
+Y luego, si vuelvo a leer
+
+54
+00:04:09,750 --> 00:04:15,360
+mi resultado, diré ese índice y asignaré automáticamente un índice de rango al marco de datos.
+
+55
+00:04:15,360 --> 00:04:17,490
+Tenga esto en cuenta cuando está guardando
+
+56
+00:04:17,490 --> 00:04:22,470
+sus archivos CACP, ya sea que sea apropiado para usted decir que Index es igual a falso.
+
+57
+00:04:22,560 --> 00:04:24,520
+Todo bien.
+
+58
+00:04:24,540 --> 00:04:24,850
+Ahora sigamos adelante y pasemos a leer y escribir desde archivos de Excel.
+
+59
+00:04:24,870 --> 00:04:28,700
+Los pandas pueden leer y escribir archivos de Excel.
+
+60
+00:04:28,870 --> 00:04:31,240
+Tenga en cuenta que los pandas solo pueden importar los datos.
+
+61
+00:04:31,290 --> 00:04:34,280
+No puede importar fórmulas o imágenes o cosas como macros usando eso con la lectura de otra puntuación.
+
+62
+00:04:34,350 --> 00:04:39,990
+El método Excel puede hacer que los pandas se bloqueen.
+
+63
+00:04:40,020 --> 00:04:43,310
+Otra cosa a tener en cuenta es que puede recibir
+
+64
+00:04:43,320 --> 00:04:49,890
+un mensaje de error al pedirle que instale la biblioteca x l r d que debería haberse instalado automáticamente.
+
+65
+00:04:49,890 --> 00:04:51,360
+Si usa la distribución de Anaconda.
+
+66
+00:04:51,420 --> 00:04:53,330
+Pero si no lo hiciste, seguirás adelante y llegarás
+
+67
+00:04:53,430 --> 00:04:58,710
+a tu terminal y en tu terminal o línea de comando escribirás conda install X LRAD o harás lo mismo con una instalación de pip.
+
+68
+00:04:58,710 --> 00:05:05,130
+De nuevo, no vas a hacer esto en una celda.
+
+69
+00:05:05,160 --> 00:05:06,810
+En realidad lo hará en la línea de comando o terminal.
+
+70
+00:05:06,820 --> 00:05:09,410
+Con suerte, si hiciste la distribución de Anaconda que debería haberse instalado automáticamente junto con pantless.
+
+71
+00:05:09,420 --> 00:05:14,300
+Sigamos adelante y veamos cómo funciona esto.
+
+72
+00:05:15,060 --> 00:05:17,070
+Voy a seguir adelante y mostrar el archivo de Excel.
+
+73
+00:05:17,100 --> 00:05:18,590
+Trabajaré con usted. Tiene una muestra de Excel muy simple.
+
+74
+00:05:18,600 --> 00:05:22,700
+De hecho, se ve casi igual que el archivo con el que estamos trabajando, excepto que
+
+75
+00:05:22,740 --> 00:05:27,870
+aquí se observa que está en la hoja 1 y básicamente lo que Pandurs cree que es un libro de trabajo.
+
+76
+00:05:27,870 --> 00:05:33,350
+Es eso un libro de trabajo.
+
+77
+00:05:33,420 --> 00:05:34,620
+Es solo un montón de hojas y cada hoja es un marco de datos lo que significa que puedo decir PD que dice Excel.
+
+78
+00:05:34,650 --> 00:05:41,960
+Paso en el nombre del archivo Excel el X X X File.
+
+79
+00:05:42,390 --> 00:05:46,910
+Un buen truco para esto es comenzar a escribir el nombre del archivo, presionar
+
+80
+00:05:47,130 --> 00:05:54,000
+la pestaña y seleccionarlo de nuevo, esto solo funciona si los archivos de Excel están en la misma ubicación que este portátil.
+
+81
+00:05:54,030 --> 00:05:57,080
+Si no es así, tendrás que pasar la ruta completa
+
+82
+00:05:57,270 --> 00:06:04,790
+del archivo y luego puedes decir el nombre de la hoja y luego las hojas pasand y seguir leyendo esto y obtenemos la salida que esperábamos.
+
+83
+00:06:04,830 --> 00:06:11,160
+Y eso es básicamente para leer desde un archivo de Excel.
+
+84
+00:06:11,160 --> 00:06:13,780
+Usted pasa el archivo y luego pasa el nombre de
+
+85
+00:06:13,790 --> 00:06:18,390
+la hoja que desea en Pandurs hace todo lo posible para leerlo como un marco de datos.
+
+86
+00:06:18,390 --> 00:06:20,690
+Un marco de datos a una salida de Excel.
+
+87
+00:06:20,820 --> 00:06:22,490
+También es un proceso muy simple.
+
+88
+00:06:22,530 --> 00:06:24,400
+en el que desea guardarlo.
+
+89
+00:06:24,420 --> 00:06:31,620
+Simplemente tome el marco de datos que desea escribir en excel para subrayar Excel pase en el nombre del archivo Excel
+
+90
+00:06:31,620 --> 00:06:33,400
+Eso va a hacer una nueva llamada Excel.
+
+91
+00:06:33,430 --> 00:06:36,660
+Muestra 2 puntos x l s x y luego podemos especificar un nombre de hoja si lo deseas.
+
+92
+00:06:36,870 --> 00:06:44,730
+Algo que debes saber es que cuando dices que debes subrayar Excel por cualquier razón, los pandas debes
+
+93
+00:06:44,910 --> 00:06:49,980
+escribir en hojas debajo del nombre y el nombre de la hoja.
+
+94
+00:06:49,980 --> 00:06:54,260
+Entraremos y pondremos una nueva hoja.
+
+95
+00:06:54,300 --> 00:06:57,120
+De acuerdo, está bien y ejecuta esto y eso es todo.
+
+96
+00:06:57,120 --> 00:07:00,500
+Lo hemos guardado en un archivo de Excel.
+
+97
+00:07:00,510 --> 00:07:02,730
+Ahora sigamos adelante y sigamos trabajando T. METRO. De nuevo, necesitará instalar bastantes bibliotecas para que esto funcione
+
+98
+00:07:02,730 --> 00:07:05,970
+y, probablemente, deberá reiniciar esa computadora portátil Jupiter.
+
+99
+00:07:06,180 --> 00:07:10,260
+Adelante y mira las notas para esta conferencia.
+
+100
+00:07:10,260 --> 00:07:12,530
+El cuaderno para obtener una lista de todas las bibliotecas necesita instalarse o
+
+101
+00:07:12,570 --> 00:07:15,080
+seguir adelante e ir al principio de la conferencia donde mostramos la lista de bibliotecas.
+
+102
+00:07:15,080 --> 00:07:20,130
+Hablemos de la entrada de HTL aquí.
+
+103
+00:07:20,130 --> 00:07:22,670
+Tengo un enlace al documento de la FDIC de la página de
+
+104
+00:07:22,950 --> 00:07:26,760
+lista de bancos fallidos y aquí está la lista de todos los bancos fallidos por parte de la FDIC.
+
+105
+00:07:26,790 --> 00:07:34,650
+En lo que respecta a ellos, es la Corporación Federal de Seguros de Depósitos.
+
+106
+00:07:35,010 --> 00:07:36,710
+Y aquí tenemos un montón de bancos fallidos.
+
+107
+00:07:36,870 --> 00:07:41,080
+La fecha de cierre actualizado día etc. pero esto es básicamente solo lo vi parpadear.
+
+108
+00:07:41,220 --> 00:07:43,310
+Este enlace está en los cuadernos que puede sacar y copiar y pegar desde allí.
+
+109
+00:07:43,320 --> 00:07:47,660
+Voy a seguir adelante y copiar este enlace e intentar leerlo.
+
+110
+00:07:47,760 --> 00:07:51,180
+Y de los panderers nerds que hacen esto todo lo que tengo que hacer es decir PD.
+
+111
+00:07:51,180 --> 00:07:55,760
+Bueno, sigamos y diga que los datos son iguales a los puntos PD.
+
+112
+00:07:55,760 --> 00:07:59,890
+Leer h T. METRO. Y luego como un hilo voy a pasar en esa edad real TMLC.
+
+113
+00:07:59,970 --> 00:08:05,610
+Tomarán un poco de tiempo para leer que debería funcionar si tienes todas las bibliotecas.
+
+114
+00:08:06,060 --> 00:08:08,190
+DE ACUERDO.
+
+115
+00:08:08,420 --> 00:08:12,900
+Parece que funcionó.
+
+116
+00:08:14,440 --> 00:08:19,720
+Algo a tener en cuenta aquí es que, por lo general, esto no se relacionará directamente con un marco de datos.
+
+117
+00:08:20,000 --> 00:08:20,340
+Si reviso qué datos son si digo tipo, notará que en realidad es una lista.
+
+118
+00:08:20,370 --> 00:08:21,600
+Y, esencialmente, lo que
+
+119
+00:08:21,690 --> 00:08:27,280
+Pantless intentó hacer fue encontrar todos los elementos de la tabla que estaban en este archivo del equipo h.
+
+120
+00:08:27,300 --> 00:08:34,360
+Y si está familiarizado si h T. METRO. ver el origen de la página, tendrá esta lista de código HTL real.
+
+121
+00:08:34,470 --> 00:08:40,350
+usted sabe que si puede hacer clic derecho aquí y
+
+122
+00:08:40,350 --> 00:08:41,190
+Y si está familiarizado con
+
+123
+00:08:41,190 --> 00:08:48,090
+él, sabrá que realmente puede buscar tal como hay clases de la lista aquí.
+
+124
+00:08:48,090 --> 00:08:50,660
+En realidad, hay referencias de tablas, por lo que
+
+125
+00:08:50,910 --> 00:08:56,010
+aquí hay marcas de tabla en el código HTML, y eso es básicamente lo que hará el panel.
+
+126
+00:08:56,010 --> 00:08:56,670
+Y eso hará una lista de ellos y convertirá cada elemento de esa lista en un marco de datos.
+
+127
+00:08:56,700 --> 00:09:03,300
+Y lo que vas a hacer es recorrer esa lista hasta que encuentres lo que
+
+128
+00:09:03,300 --> 00:09:04,550
+quieres que busque.
+
+129
+00:09:04,560 --> 00:09:09,500
+En este caso, debería ser el primer elemento de la lista.
+
+130
+00:09:09,720 --> 00:09:13,800
+Entonces, si decimos datos en el punto cero.
+
+131
+00:09:13,800 --> 00:09:14,430
+Así que el primer elemento en esa lista que es el marco de datos que buscábamos se actualiza.
+
+132
+00:09:14,490 --> 00:09:17,310
+Cetera.
+
+133
+00:09:17,310 --> 00:09:20,120
+Vamos y solo revisemos el encabezado de ese marco de datos y así es como se ve.
+
+134
+00:09:20,160 --> 00:09:25,790
+Una vez más, algunas cosas no se copian.
+
+135
+00:09:26,220 --> 00:09:26,800
+Exactamente.
+
+136
+00:09:26,940 --> 00:09:32,930
+Obtienes un montón de ningún valor.
+
+137
+00:09:33,030 --> 00:09:34,670
+Pero ten en cuenta que los panderers básicamente están leyendo esto H. T. archivo de correo lo mejor que pueda.
+
+138
+00:09:34,670 --> 00:09:35,310
+Todo bien.
+
+139
+00:09:35,310 --> 00:09:36,920
+Ese es el correo H-2A que es esencialmente solo scrapin web de Pandurs.
+
+140
+00:09:37,110 --> 00:09:42,720
+Pasemos finalmente a nuestro último tema, que está trabajando con la continuación.
+
+141
+00:09:42,720 --> 00:09:43,110
+Ahora hay algunas notas en su cuaderno sobre secuelas y pandas.
+
+142
+00:09:43,260 --> 00:09:46,630
+de la secuela, como la secuela de postscripts, la continuación de mi secuela, la
+
+143
+00:09:46,650 --> 00:09:51,150
+luz cetera, donde vamos a hacer aquí es construir un motor de secuela muy simple. solo debe guardarse
+
+144
+00:09:51,210 --> 00:09:55,530
+temporalmente en la memoria para mostrarle cómo puede usar Pandurs para leer tablas completamente como marcos de datos.
+
+145
+00:09:55,530 --> 00:10:01,410
+Pandas es en realidad, probablemente, la mejor manera de leer una base de datos de la secuela, porque hay muchos sabores de los motores
+
+146
+00:10:01,410 --> 00:10:07,920
+Sin embargo, recomendaría que realmente busque un controlador específico
+
+147
+00:10:07,920 --> 00:10:13,860
+que dependa de su motor de continuación específico.
+
+148
+00:10:14,250 --> 00:10:19,070
+Por ejemplo, si vas a la libreta para esta conferencia, verás que si estás utilizando la secuela de Postgres, deberías
+
+149
+00:10:19,080 --> 00:10:25,380
+utilizar una biblioteca llamada Psycho PGE 2, que está específicamente diseñada para funcionar con la secuela posterior a la carrera o si estás utilizando mi secuela
+
+150
+00:10:25,470 --> 00:10:26,810
+deberías usar pi mi secuela.
+
+151
+00:10:26,850 --> 00:10:31,650
+En otra biblioteca diseñada específicamente para ese sabor específico de la secuela.
+
+152
+00:10:31,860 --> 00:10:36,810
+los pandas podrían leer una tabla completa y una secuela si fuera necesario.
+
+153
+00:10:36,810 --> 00:10:41,370
+En este momento vamos a hacer un ejemplo muy simple de cómo
+
+154
+00:10:41,370 --> 00:10:45,690
+Que terminaríamos haciendo es decir de la secuela que Alchemy Imports crea motor y
+
+155
+00:10:45,780 --> 00:10:50,490
+esto nos va a permitir simplemente crear un motor de secuela muy simple en la memoria.
+
+156
+00:10:50,490 --> 00:10:53,090
+Voy a seguir adelante y decir
+
+157
+00:10:54,080 --> 00:11:03,600
+que el motor es igual para crear el motor de subrayado y aquí y simplemente voy a escribir en la continuación luces
+
+158
+00:11:03,600 --> 00:11:07,740
+tres barras diagonales y luego la memoria dos puntos.
+
+159
+00:11:07,740 --> 00:11:14,610
+Así que tengo una secuela como colon tres barras diagonales colon memoria de dos puntos.
+
+160
+00:11:14,610 --> 00:11:16,290
+Vamos a seguir adelante y ejecutar eso y esta pequeña cosa.
+
+161
+00:11:19,460 --> 00:11:26,790
+Esta pequeña línea de código ha creado una base de datos de motores de luces secuela
+
+162
+00:11:26,850 --> 00:11:31,510
+muy pequeña muy temporal que se ejecuta en la memoria.
+
+163
+00:11:31,600 --> 00:11:34,430
+Voy a seguir adelante y tomar mi marco de datos
+
+164
+00:11:34,440 --> 00:11:41,190
+que DSF y voy a decir para subrayar la secuela y voy a escribir en ese motor muy temporal que tenemos funcionando en la memoria.
+
+165
+00:11:41,190 --> 00:11:42,610
+Entonces, lo que
+
+166
+00:11:42,720 --> 00:11:50,070
+puedes hacer es decirle a la secuela que pasarás a lo que quieres que se llame esta tabla.
+
+167
+00:11:50,070 --> 00:11:55,330
+Así que adelante y llama a esto mi mesa.
+
+168
+00:11:55,500 --> 00:11:59,430
+Y luego pasas al motor de continuación con el que estás trabajando.
+
+169
+00:11:59,430 --> 00:12:00,310
+En este caso, es solo un motor.
+
+170
+00:12:00,540 --> 00:12:03,310
+Ahora que este motor va a ser una conexión, te recomendaría que leyeras detenidamente toda la documentación,
+
+171
+00:12:03,750 --> 00:12:05,920
+pero una vez más, como he mencionado antes, los pandas simplemente no son
+
+172
+00:12:05,920 --> 00:12:07,990
+la mejor fuente para que realmente leas la secuela en pandas directamente.
+
+173
+00:12:08,070 --> 00:12:15,630
+Probablemente deberías buscar bibliotecas especializadas de Python para cualquier versión
+
+174
+00:12:15,660 --> 00:12:22,050
+de la secuela con la que estés trabajando.
+
+175
+00:12:22,050 --> 00:12:25,010
+Pero en cuanto a una configuración muy simple, solo puede
+
+176
+00:12:25,050 --> 00:12:30,870
+decir DF para continuar con el nuevo nombre de tabla que desea y luego la conexión con su motor de continuación.
+
+177
+00:12:30,870 --> 00:12:31,560
+Y ahora voy a seguir adelante y decir la continuación si realmente leí esa tabla.
+
+178
+00:12:31,800 --> 00:12:37,590
+Así que voy a decir que PD Reed subrayó la secuela que paso en el nombre de mi mesa, en este caso es mi mesa.
+
+179
+00:12:37,710 --> 00:12:41,530
+Y luego especifico la conexión real y entonces cion.
+
+180
+00:12:41,820 --> 00:12:47,010
+Y ese es solo el motor de esa pequeña base de datos de luces de continuación que está sucediendo en la memoria.
+
+181
+00:12:47,010 --> 00:12:54,190
+Si continúo y leo eso y miro lo que parece, obtengo la secuela DMF y veo
+
+182
+00:12:54,670 --> 00:12:58,110
+que el índice es una nueva columna aquí.
+
+183
+00:12:58,380 --> 00:13:04,520
+De acuerdo, sigue y no dudes en publicar los foros de preguntas y respuestas.
+
+184
+00:13:04,620 --> 00:13:11,160
+CSV porque solo van a funcionar. Trabajar con archivos CSV durante el resto del curso en lo que respecta a su uso personal.
+
+185
+00:13:11,280 --> 00:13:13,250
+Si tiene problemas para encontrar una biblioteca
+
+186
+00:13:13,260 --> 00:13:16,450
+en particular que funcione en el motor de su secuela o
+
+187
+00:13:16,560 --> 00:13:22,230
+su sabor de secuela en lo que respecta a esta conferencia, lo más importante es leer y escribir en archivos
+
+188
+00:13:22,230 --> 00:13:28,590
+Con suerte, puedes ver los métodos de subrayado de lectura.
+
+189
+00:13:28,860 --> 00:13:33,300
+Hay muchos de ellos y usted puede simplemente mirar la documentación o hacer referencia a un cuaderno de cómo leer en realidad a un marco
+
+190
+00:13:33,300 --> 00:13:34,100
+de datos de compradores.
+
+191
+00:13:34,110 --> 00:13:36,750
+De acuerdo, gracias a todos.
+
+192
+00:13:36,750 --> 00:13:42,300
+el foro de preguntas y respuestas porque hay muchas opciones aquí y simplemente no tenemos tiempo para cubrirlas todas.
+
+193
+00:13:42,300 --> 00:13:45,800
+Siga adelante y formule cualquier pregunta que tenga sobre esta conferencia en
+
+194
+00:13:45,810 --> 00:13:47,920
+Pero si tiene alguna pregunta, me complace poder responderla en los foros.
+
+195
+00:13:47,940 --> 00:13:52,590
+Gracias a todos y nos vemos en la próxima conferencia
+
+196
+00:13:52,590 --> 00:13:55,030
+&nbsp;
+
+197
+00:13:55,110 --> 00:13:58,290
+&nbsp;
+
+198
+00:13:58,290 --> 00:14:00,150
+&nbsp;

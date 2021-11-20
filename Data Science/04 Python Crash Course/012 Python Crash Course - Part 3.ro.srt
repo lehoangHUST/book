@@ -1,0 +1,879 @@
+1
+00:00:05,520 --> 00:00:09,570
+Bună ziua tuturor și bine ați venit la partea a treia a cursului de prăbușire Python.
+
+2
+00:00:09,570 --> 00:00:13,470
+Să mergem înainte și să ne întoarcem imediat la notebook-ul Jupiter unde am plecat de data trecută.
+
+3
+00:00:13,470 --> 00:00:13,710
+In regula.
+
+4
+00:00:13,710 --> 00:00:15,260
+Aici sunt la notebook-ul Jupiter.
+
+5
+00:00:15,270 --> 00:00:18,680
+Ultima dată când am plecat de pe Elif și declarații L.
+
+6
+00:00:18,810 --> 00:00:25,350
+Acum vom merge și vom acoperi rapid buclele și în timp ce buclele pentru bucle vă permit să repetați printr-o
+
+7
+00:00:25,410 --> 00:00:33,770
+secvență o să fac un obiect numit S-C Q Pentru secvență și să spun că este vorba de un număr de două și trei patru cinci.
+
+8
+00:00:34,380 --> 00:00:35,860
+Deci este doar lista numerelor.
+
+9
+00:00:36,000 --> 00:00:41,310
+Apoi pot utiliza o buclă pentru a efectua sau executa un anumit bloc de cod pentru fiecare element
+
+10
+00:00:41,310 --> 00:00:42,290
+din acea secvență.
+
+11
+00:00:42,570 --> 00:00:44,410
+Înseamnă că poți face ceva de genul asta.
+
+12
+00:00:44,430 --> 00:00:45,880
+Și acesta este cuvântul cheie aici.
+
+13
+00:00:46,260 --> 00:00:53,070
+Pentru elementul din și apoi acel obiect care este o secvență ca coadă executa sau executa un anumit bloc de cod.
+
+14
+00:00:53,790 --> 00:00:57,490
+În acest caz, aceasta va fi imprimată.
+
+15
+00:00:57,840 --> 00:01:04,590
+Și acum am reușit să tipăresc elementul pentru fiecare element din acea secvență, ceva ce trebuie menționat aici este că acest
+
+16
+00:01:04,590 --> 00:01:08,850
+element de nume al variabilei temporare poate fi orice vreți să fie.
+
+17
+00:01:08,850 --> 00:01:14,600
+Deci, de exemplu, pot merge mai departe și înlocuiți acest lucru cu ceva asemănător cu jeleu și va funcționa în continuare.
+
+18
+00:01:14,850 --> 00:01:22,050
+Deci, pentru jeleu în ordine sau într-un jeleu de imprimare CQ și acolo aveți-l este exact același lucru.
+
+19
+00:01:22,230 --> 00:01:25,850
+Deci probabil că doriți să alegeți aceste cuvinte sau nume de variabile temporare.
+
+20
+00:01:25,850 --> 00:01:27,660
+Cu grijă aici.
+
+21
+00:01:27,660 --> 00:01:28,550
+Acestea sunt numere.
+
+22
+00:01:28,590 --> 00:01:34,590
+Deci, o alegere buna ar putea fi ceva de genul si un M pentru numar si in acest fel cand vine
+
+23
+00:01:34,590 --> 00:01:40,170
+codul asta la o data ulterioara, imi amintesc ce fac de fapt sau fac aici ceva ce trebuie tinut cont
+
+24
+00:01:40,290 --> 00:01:45,720
+este ca acest bloc de cod care execută el nu trebuie să fie în realitate legat de elementele
+
+25
+00:01:45,720 --> 00:01:46,680
+din interiorul secvenței.
+
+26
+00:01:46,680 --> 00:01:51,070
+Poți să faci tot ce vrei aici, așa că pot să-ți spun că e bine.
+
+27
+00:01:51,570 --> 00:01:56,130
+Și asta va merge și va spune OK pentru fiecare element de aici, voi face această acțiune,
+
+28
+00:01:56,130 --> 00:01:59,210
+însemnând că voi tipări doar Bună ziua de cinci ori.
+
+29
+00:01:59,210 --> 00:02:04,650
+Acum, hai să mergem mai departe și să vă arătăm cum puteți folosi o bucla în timp pentru a efectua o acțiune
+
+30
+00:02:04,650 --> 00:02:06,910
+continuă până când o anumită condiție a fost îndeplinită.
+
+31
+00:02:07,080 --> 00:02:18,750
+O să merg mai departe și tipul I este egal cu 1 și apoi să spun că în timp ce eu sunt mai puțin de cinci coloni și apoi
+
+32
+00:02:18,750 --> 00:02:24,630
+voi efectua un anumit bloc de cod în timp ce această condiție se întâmplă
+
+33
+00:02:24,630 --> 00:02:35,240
+să fie adevărată și voi merge în și spuneți imprimare I este paranteze curbat colon și apoi utilizați acest format pentru a trece astfel fie acolo.
+
+34
+00:02:35,250 --> 00:02:40,740
+Acum nu mai rulați acest lucru încă pentru că uite ce se va întâmpla am setat ochii egal cu unul și apoi am
+
+35
+00:02:40,740 --> 00:02:42,890
+spus OK bine eu sunt mai puțin de cinci.
+
+36
+00:02:43,020 --> 00:02:44,260
+Du-te și imprimați asta.
+
+37
+00:02:44,340 --> 00:02:50,820
+Dacă alerg bine, voi obține o buclă infinită, ceea ce înseamnă că celula va merge doar pentru totdeauna, pentru că voi fi
+
+38
+00:02:50,820 --> 00:02:52,380
+mereu mai puțin de cinci.
+
+39
+00:02:52,710 --> 00:02:57,900
+Dacă se întâmplă să aveți o celulă, întâmplător se execută doar pentru totdeauna și veți observa fie prin obținerea continuă
+
+40
+00:02:57,900 --> 00:03:02,870
+de ieșire, fie prin asepsia aici în loc de un număr pentru o perioadă foarte lungă de timp.
+
+41
+00:03:02,880 --> 00:03:09,640
+Ce trebuie să faceți este să mergeți la colonel și apoi să faceți clic pe repornire pentru a evita această problemă.
+
+42
+00:03:09,690 --> 00:03:14,460
+Să spunem de ce este egal cu plus 1.
+
+43
+00:03:14,490 --> 00:03:18,320
+Și acum, când execut acest lucru, execut acest bloc de cod.
+
+44
+00:03:18,390 --> 00:03:22,110
+Așa că am început cu I este una care a fost prima valoare pe care am dat-o.
+
+45
+00:03:22,170 --> 00:03:25,140
+Apoi am imprimat ochii 1 și am adăugat 1.
+
+46
+00:03:25,170 --> 00:03:29,130
+I apoi buclă în timp verificat din nou ok ca la mai puțin de cinci.
+
+47
+00:03:29,130 --> 00:03:30,180
+Ei bine, este adevărat.
+
+48
+00:03:30,180 --> 00:03:34,390
+Prin urmare, ochii tiparului adaugă faptul că se adaugă 1 la acesta sunt trei mai puțin de cinci.
+
+49
+00:03:34,410 --> 00:03:35,500
+Ei bine, este adevărat.
+
+50
+00:03:35,540 --> 00:03:36,700
+Printul are trei.
+
+51
+00:03:36,720 --> 00:03:39,170
+Adăugați 1 la acesta este pentru mai puțin de cinci.
+
+52
+00:03:39,180 --> 00:03:39,850
+Este adevărat.
+
+53
+00:03:39,870 --> 00:03:42,480
+Prințul este pentru a adăuga 1 la ea.
+
+54
+00:03:42,480 --> 00:03:44,700
+Și apoi, în cele din urmă, cinci sunt mai puțin de cinci.
+
+55
+00:03:44,700 --> 00:03:45,920
+Ei bine, asta nu este adevărat.
+
+56
+00:03:45,990 --> 00:03:49,500
+Așa că am mers înainte și tocmai am terminat și am ieșit din bucla asta.
+
+57
+00:03:49,620 --> 00:03:51,330
+Și așa funcționează o buclă.
+
+58
+00:03:51,420 --> 00:03:58,410
+În principiu se va executa un bloc de cod, în timp ce o anumită condiție se întâmplă să fie adevărată.
+
+59
+00:03:58,430 --> 00:04:04,230
+OK, să intrăm și să discutăm câteva funcții utile care sunt în interiorul Python.
+
+60
+00:04:04,230 --> 00:04:06,930
+Una foarte folositoare este gama.
+
+61
+00:04:07,050 --> 00:04:16,470
+De multe ori vei dori să faci o buclă de genul ăsta pentru x în cugetul pentru secvența de tipărire X sau să-ți amintești
+
+62
+00:04:17,010 --> 00:04:21,800
+că Q a fost doar unul de două ori trei patru cinci.
+
+63
+00:04:21,840 --> 00:04:25,920
+De multe ori vei dori să faci ceva în anumite momente.
+
+64
+00:04:25,980 --> 00:04:33,090
+Acum, o modalitate de a face asta este să spui pentru x și apoi să faci o secvență cu adevărat lungă, dar nu trebuie să vrei să
+
+65
+00:04:33,090 --> 00:04:34,430
+tipi atât de mult.
+
+66
+00:04:34,440 --> 00:04:42,630
+Deci, Python are o funcție de domeniu și intervalul va fi un generator de valori numerice, deci dacă spui
+
+67
+00:04:43,350 --> 00:04:52,330
+intervalul, vei începe cu numărul pe care vrei să-l începi și cu numărul pe care vrei să-l termini, dacă execută că
+
+68
+00:04:52,330 --> 00:04:54,510
+ai acest interval obiect.
+
+69
+00:04:54,550 --> 00:05:06,460
+Și apoi ce puteți face este să spuneți pentru x în intervalul de la virgulă zero 5 colon imprimă X și apoi veți vedea 0 1 2 3 4
+
+70
+00:05:06,550 --> 00:05:12,240
+și este un fel de o scurtă metodă de a genera aceste valori.
+
+71
+00:05:12,280 --> 00:05:21,820
+Este un generator dacă doriți să fie o listă pe care ați trece-o în lista de funcții și aceasta va transforma această
+
+72
+00:05:21,880 --> 00:05:23,560
+listă într-o listă.
+
+73
+00:05:23,560 --> 00:05:29,500
+Acum văd o listă de 0 1 2 3 4 și acesta este un fel de o modalitate foarte rapidă de a executa efectiv ceva de
+
+74
+00:05:29,500 --> 00:05:30,690
+un anumit număr de ori.
+
+75
+00:05:30,790 --> 00:05:39,550
+Astfel, puteți spune chiar și la un singur număr de 10 și în mod implicit numărul de pornire este zero.
+
+76
+00:05:39,550 --> 00:05:42,580
+Deci, acum totul merge până la 10 elemente.
+
+77
+00:05:42,580 --> 00:05:45,820
+Dar, deoarece începe de la zero, se va termina la nouă.
+
+78
+00:05:45,810 --> 00:05:51,710
+Motivul fiind că 0 1 2 3 4 5 6 7 8 9 10 acest lucru este de 10 elemente.
+
+79
+00:05:51,750 --> 00:05:53,350
+In regula.
+
+80
+00:05:53,350 --> 00:05:55,750
+Aceasta este funcția de domeniu.
+
+81
+00:05:55,750 --> 00:06:03,010
+Acum, hai să mergem mai departe și să discutăm despre înțelegerea listei de înțelegere a listei vă permite să salvați o grămadă de scris atunci
+
+82
+00:06:03,370 --> 00:06:06,790
+când încercați să creați o buclă pentru a crea o listă.
+
+83
+00:06:06,790 --> 00:06:10,960
+Permiteți-mi să merg înainte și să vă arăt un exemplu de utilizare a acesteia pentru o buclă și apoi vă
+
+84
+00:06:10,960 --> 00:06:13,360
+voi arăta un exemplu de înțelegere a listei în acțiune.
+
+85
+00:06:13,360 --> 00:06:21,610
+Voi face asta Vreau să spun că x este egală cu o listă formată din numerele 1 2 3 4 și apoi voi
+
+86
+00:06:21,610 --> 00:06:27,730
+face o listă goală care este doar un set de paranteze, deci este o listă goală acolo
+
+87
+00:06:27,730 --> 00:06:28,730
+nimic acolo.
+
+88
+00:06:29,010 --> 00:06:35,970
+Și apoi voi spune pentru element în X și am de gând să meargă înainte și să facă acest lucru clar prin schimbarea
+
+89
+00:06:35,980 --> 00:06:36,910
+elementului la amortit.
+
+90
+00:06:37,150 --> 00:06:46,540
+Deci, deocamdată sunt în X O să iau lista mea goală și o să am o mângâiere la
+
+91
+00:06:46,620 --> 00:06:48,250
+puterea a două.
+
+92
+00:06:48,370 --> 00:06:55,060
+Am rulat acea celulă și apoi voi continua să tipăresc lista asta goală.
+
+93
+00:06:55,360 --> 00:06:56,540
+Și observați ce are aici.
+
+94
+00:06:56,560 --> 00:07:05,720
+În esență, fiecare număr are de la X pătrat 1 4 9 16 în loc de 1 2 3 pentru acest tip de operațiune este atât de comună în
+
+95
+00:07:05,740 --> 00:07:11,500
+Python, unde adăugați în mod continuu o valoare unei liste pe care Python o numește înțeleasă pe listă
+
+96
+00:07:11,620 --> 00:07:18,330
+și este în esență o modalitate în loc de a fi nevoie să definiți o listă și să adăugați continuu o
+
+97
+00:07:18,460 --> 00:07:22,780
+logică la o listă și să utilizați o buclă pentru cu indentare Colon.
+
+98
+00:07:22,780 --> 00:07:28,710
+Puteți să tastați toate acestea în esență într-un set de paranteze și să creați rapid o listă.
+
+99
+00:07:28,720 --> 00:07:34,860
+Permiteți-mi să merg înainte și să vă arăt cum să traduceți acest lucru pentru cod bucla în înțelegerea listei permite înțelegerea este un
+
+100
+00:07:34,940 --> 00:07:36,000
+fel de buclă.
+
+101
+00:07:36,000 --> 00:07:44,440
+Dar în spate ajungeți să spuneți ceea ce doriți să fie numit.
+
+102
+00:07:44,880 --> 00:07:53,260
+Deci puterea a două pentru amorțit în și apoi x numărul x este această listă.
+
+103
+00:07:53,250 --> 00:07:56,360
+Și acesta este, în esență, același cod aici.
+
+104
+00:07:56,810 --> 00:08:01,300
+Deci, când o conduc, se termină de lucru, deoarece este tot în interiorul parantezelor.
+
+105
+00:08:01,300 --> 00:08:08,230
+Permiteți-mi să merg să desființez acești pași din nou, în loc să spun că acest lucru apare și această listă goală
+
+106
+00:08:08,560 --> 00:08:10,200
+vă veți spune ceva.
+
+107
+00:08:10,500 --> 00:08:13,140
+Out este egal cu și apoi un set de paranteze.
+
+108
+00:08:13,360 --> 00:08:18,280
+Și apoi puteți traduce acest lucru pentru bucla într-o înțelegere a listei prin ruperea acestuia în
+
+109
+00:08:18,280 --> 00:08:18,940
+următoarea manieră.
+
+110
+00:08:19,000 --> 00:08:21,400
+Vei lua totul în fața colonului.
+
+111
+00:08:21,390 --> 00:08:25,170
+Deci, deocamdată, eu sunt un X Copy și lipiți asta.
+
+112
+00:08:25,500 --> 00:08:28,100
+Și apoi vei lua orice vrei de fapt de la un stilou.
+
+113
+00:08:28,140 --> 00:08:34,330
+În acest caz, numărul ăsta este pătrat și a pus-o aici înainte de asta pentru buclă și acesta
+
+114
+00:08:34,410 --> 00:08:42,430
+este în esență o listă de înțelegere pe care o spui Dați-mi numerele pătrat pentru nimic în X și acum puteți vedea că ieșirea a
+
+115
+00:08:42,460 --> 00:08:49,350
+fost curățată într-o singură linie, lista de înțelegere este doar o modalitate de a salva o tastare pentru tine dacă sunteți
+
+116
+00:08:49,360 --> 00:08:52,940
+confuz de sintaxa aici sau pur și simplu nu-i place.
+
+117
+00:08:52,960 --> 00:08:54,650
+Și acest lucru este mai ușor de citit pentru dvs.
+
+118
+00:08:54,700 --> 00:08:58,700
+Continuați și folosiți doar pentru buclele stiloului pentru începători cu Python.
+
+119
+00:08:58,750 --> 00:09:03,270
+Acest tip de sintaxă tind să fie greu de citit la început, dar pe măsură ce
+
+120
+00:09:03,280 --> 00:09:09,960
+progresați treptat, mai bine și mai bine de Python, veți trece de obicei la înțelegerea listei doar pentru a avea lucrurile într-o singură linie simplă.
+
+121
+00:09:10,620 --> 00:09:11,290
+O.K.
+
+122
+00:09:11,530 --> 00:09:18,520
+Acum, hai să mergem mai departe și să vorbim despre funcțiile funcțiilor vă permit să nu aveți, în principiu, să scrieți
+
+123
+00:09:18,520 --> 00:09:23,740
+mereu codul în mod repetat, îl puteți scrie doar în interiorul unei funcții și apoi
+
+124
+00:09:23,740 --> 00:09:24,850
+să-l numiți însuși.
+
+125
+00:09:24,850 --> 00:09:36,490
+Cuvântul cheie pentru o funcție este DPF sau Def și DCF vă permite să definiți o funcție pe care o veți spune spațiul DPF
+
+126
+00:09:36,640 --> 00:09:38,210
+numele funcției dumneavoastră.
+
+127
+00:09:38,320 --> 00:09:45,190
+Deci, mergeți mai departe și sunați acest lucru funcțiile mele de subliniere și funcțiile ar trebui să înceapă cu litere mici.
+
+128
+00:09:45,380 --> 00:09:54,850
+Parcurgeți parametrii doriți, cum ar fi Parama, un colon și apoi veți merge și veți executa un fel de cod, astfel încât
+
+129
+00:09:54,860 --> 00:10:00,410
+să putem spune că mergeți mai departe și pe Printul Coram unul.
+
+130
+00:10:00,990 --> 00:10:01,330
+O.K.
+
+131
+00:10:01,340 --> 00:10:04,020
+Aceasta este o funcție foarte simplă.
+
+132
+00:10:04,370 --> 00:10:15,890
+Tocmai sunăm acum phunk-ul meu trece parametrul, cum ar fi Hello și va rula și va printa parametrul.
+
+133
+00:10:16,420 --> 00:10:18,070
+Și ăsta e phunk-ul meu.
+
+134
+00:10:18,640 --> 00:10:21,300
+Lasă-mă să intru și să-ți arăt un exemplu mai complicat.
+
+135
+00:10:21,520 --> 00:10:25,580
+Du-te și spune-mi funk și un set de parametri.
+
+136
+00:10:25,730 --> 00:10:35,770
+Va lua un nume și îi vom spune pe prinț și vom spune salut și putem folosi un semn plus al unui șir
+
+137
+00:10:35,840 --> 00:10:38,570
+pentru a concatena două corzi împreună.
+
+138
+00:10:38,650 --> 00:10:42,380
+Deci, acest lucru va spune de imprimare Bună ziua plus numele.
+
+139
+00:10:42,550 --> 00:10:43,990
+Du-te și alerga asta.
+
+140
+00:10:44,090 --> 00:10:46,830
+Și acum, pentru flopul meu, voi trece un nume.
+
+141
+00:10:46,910 --> 00:10:50,220
+Se duce la Jose și se întoarce acum.
+
+142
+00:10:50,440 --> 00:10:58,060
+Bună ziua Jose dacă doriți o valoare implicită pentru unul dintre acești parametri, deci un nume implicit pe care
+
+143
+00:10:58,100 --> 00:11:04,720
+îl puteți spune egal și apoi indiferent de primar pe care doriți să fie numele fals.
+
+144
+00:11:04,810 --> 00:11:11,610
+Și dacă o să mai conduc din nou și dacă nu-mi pasă ceva de la phunk-ul meu, o să ajung.
+
+145
+00:11:11,620 --> 00:11:12,340
+Salut.
+
+146
+00:11:12,400 --> 00:11:17,570
+Numele implicit numai atunci când spun Jose sau alt nume acolo.
+
+147
+00:11:17,600 --> 00:11:22,110
+Va înlocui valoarea implicită cu valoarea pe care am specificat-o.
+
+148
+00:11:22,120 --> 00:11:27,740
+De asemenea, puteți să vă explicați pe deplin ce treceți în funcționare și spuneți că numele este egal
+
+149
+00:11:27,740 --> 00:11:29,490
+cu și apoi noua valoare.
+
+150
+00:11:29,750 --> 00:11:32,210
+Sau atâta timp cât puneți valorile în ordinea corectă.
+
+151
+00:11:32,260 --> 00:11:41,590
+Făcând-o în această manieră de doar o singură bucată de doar Jose ca asta este, de asemenea, bine.
+
+152
+00:11:41,710 --> 00:11:49,900
+Ceva pe care trebuie să-l reținem aici este dacă suni doar cu paranteze phunk-ul meu va executa funcția.
+
+153
+00:11:50,330 --> 00:11:54,910
+Dacă scapi de aceste paranteze, nu vei apela funcția.
+
+154
+00:11:54,910 --> 00:11:58,120
+Veți întreba Python care este acest obiect.
+
+155
+00:11:58,150 --> 00:11:59,320
+Și va raporta.
+
+156
+00:11:59,500 --> 00:12:00,780
+Oh, asta e un obiect.
+
+157
+00:12:00,830 --> 00:12:04,440
+O funcție principală numită funcția mea de subliniere.
+
+158
+00:12:04,450 --> 00:12:08,920
+Deci, păstrați în minte că există o diferență între apelarea mea de subliniere a acestui tip.
+
+159
+00:12:08,920 --> 00:12:16,530
+Aceasta este funcția reală care închide prinții de pe ea, de fapt, execută acea funcție.
+
+160
+00:12:16,540 --> 00:12:22,320
+Acum, acum ar trebui să avem funcții foarte simple, care imprimă doar o afirmație, dar de multe ori doriți să reveniți
+
+161
+00:12:22,370 --> 00:12:26,330
+la o valoare, astfel încât să o puteți seta egală cu o altă variabilă.
+
+162
+00:12:26,330 --> 00:12:27,820
+Lasă-mă să-ți arăt ce vreau să spun prin asta.
+
+163
+00:12:28,100 --> 00:12:36,160
+Ei bine mergeți mai departe și spuneți DPF și creați o funcție numită Pătrat care ia în unele și U-M un număr de
+
+164
+00:12:36,670 --> 00:12:39,440
+colon și apoi va returna acest număr.
+
+165
+00:12:39,430 --> 00:12:45,250
+Acesta nu va imprima doar rezultatul sau returnează pătratul acelui număr și puteți utiliza cuvântul cheie de returnare pentru
+
+166
+00:12:45,310 --> 00:12:46,650
+a face acest lucru.
+
+167
+00:12:46,730 --> 00:12:51,180
+Deci vei reveni amortit la puterea a doi.
+
+168
+00:12:51,380 --> 00:12:58,420
+Și așa pot spune că ieșirea este egală cu pătratul de două.
+
+169
+00:12:58,960 --> 00:13:03,780
+Și atunci când voi merge mai departe și verificați ce ieșire este pentru el.
+
+170
+00:13:03,860 --> 00:13:08,260
+Și asta este diferența dintre imprimarea ceva și returnarea ceva.
+
+171
+00:13:08,260 --> 00:13:12,080
+Când veți întoarce acest lucru, veți dori să îl setați egal cu o altă variabilă.
+
+172
+00:13:12,230 --> 00:13:17,290
+Și astfel puteți apela rezultatele respectivei variabile versus atunci când tipăriți ceva pe care
+
+173
+00:13:17,290 --> 00:13:22,580
+tocmai îl veți tipări, dar nu îl veți întoarce sau nu îl veți păstra oriunde.
+
+174
+00:13:22,580 --> 00:13:28,360
+În cele din urmă, ceva ce ar trebui să știți despre funcții este că pot avea
+
+175
+00:13:28,370 --> 00:13:37,630
+șiruri de documentație pe care le puteți adăuga șirul de documentație unei funcții prin introducerea unui set de ghilimele triplu de închidere și triplând ghilimele
+
+176
+00:13:37,810 --> 00:13:38,770
+de închidere.
+
+177
+00:13:38,770 --> 00:13:48,160
+Practic vă permite să puneți într-un șir gigant pe mai multe linii, astfel încât să putem spune că acesta este un docstring și acest lucru este, în
+
+178
+00:13:48,620 --> 00:13:51,060
+esență, doar un comentariu foarte lung.
+
+179
+00:13:51,070 --> 00:13:54,260
+Deci, este vorba de comentarii cu mai multe linii.
+
+180
+00:13:54,260 --> 00:14:05,960
+Puteți merge mai multe linii și vom continua și vom spune că această funcție păstrează un număr.
+
+181
+00:14:06,160 --> 00:14:07,340
+Așa că am spus asta.
+
+182
+00:14:07,420 --> 00:14:13,060
+Acum, am șirul de documentație în interiorul patratului dacă am rula din nou Piața din nou nimic nu se va schimba ceea
+
+183
+00:14:13,540 --> 00:14:18,500
+ce se va schimba este atunci când ei suna de fapt șir de documentație pentru mai multe informații
+
+184
+00:14:18,500 --> 00:14:19,390
+despre această funcție.
+
+185
+00:14:19,480 --> 00:14:22,830
+Jupiter notebook-ul are o capacitate foarte mare de a face acest lucru.
+
+186
+00:14:22,880 --> 00:14:27,650
+Începeți să tastați funcția pe care o doriți și apoi mutați cursorul la sfârșitul acestei funcții.
+
+187
+00:14:27,650 --> 00:14:34,270
+Faceți clic pe fila Shift și veți primi un apel de semnătură al funcției reale.
+
+188
+00:14:34,420 --> 00:14:36,700
+Înțeles ce așteaptă funcția să primească.
+
+189
+00:14:36,880 --> 00:14:40,860
+Și apoi puteți extinde acest lucru pentru a obține șirul de documentare.
+
+190
+00:14:40,880 --> 00:14:44,150
+Și se spune că acest lucru este docstring poate merge mai multe linii.
+
+191
+00:14:44,140 --> 00:14:49,750
+Această funcție Pătrat este un număr și va fi foarte util nu doar atât pentru propriile funcții, ci
+
+192
+00:14:49,750 --> 00:14:54,010
+pentru funcții care sunt deja încorporate în bibliotecile pe care le vom învăța.
+
+193
+00:14:54,560 --> 00:15:01,360
+De exemplu, dacă ne întoarcem atunci când discutăm o gamă aici, s-ar putea să credeți că este puțin ciudat și este posibil să fiți
+
+194
+00:15:01,370 --> 00:15:04,640
+nevoiți să memorați lucrurile în măsura în care numerele merg acolo.
+
+195
+00:15:04,660 --> 00:15:11,950
+Ei bine, dacă vă folosiți cartea Brunow, puteți să introduceți doar fila de schimbare în rază de acțiune și să observați că vă
+
+196
+00:15:11,950 --> 00:15:17,030
+oferă semnătura și apoi are și docstringul în care, în principiu, spuneți că opriți intervalul.
+
+197
+00:15:17,020 --> 00:15:20,890
+Și vă oferă un obiect de domeniu sau puteți spune o gamă și apoi începeți și opriți.
+
+198
+00:15:20,980 --> 00:15:25,690
+Și vă oferă mai multe informații, cum ar fi returnează un obiect care produce o secvență de numere întregi etc. și are mult mai multe informații
+
+199
+00:15:25,690 --> 00:15:27,520
+acolo pentru dvs.
+
+200
+00:15:27,560 --> 00:15:30,580
+Și acesta este un fel de lucru pe care îl vom folosi tot timpul de-a lungul acestui curs.
+
+201
+00:15:30,670 --> 00:15:34,090
+Acest acces rapid la un șir de documentație.
+
+202
+00:15:34,100 --> 00:15:34,700
+In regula.
+
+203
+00:15:34,930 --> 00:15:36,740
+Du-te și termină-o acolo.
+
+204
+00:15:36,770 --> 00:15:42,470
+Vom discuta în următoarea secțiune a acestei serii de prelegeri expresii Arlanda folosind hărți și filtre și
+
+205
+00:15:42,460 --> 00:15:47,330
+metode pe care le puteți utiliza pe obiecte de tip obișnuit de date.
+
+206
+00:15:47,330 --> 00:15:48,010
+In regula.
+
+207
+00:15:48,010 --> 00:15:52,550
+Permiteți-mi să ieșesc și să revizuiți repede tot ce sa întâmplat în această prelegere.
+
+208
+00:15:52,660 --> 00:15:54,430
+Am trecut peste cum să creăm o funcție.
+
+209
+00:15:54,460 --> 00:15:59,590
+Cuvântul cheie este dacă treceți în numele funcției dvs. și apoi puteți trece în parametrii pe care funcția
+
+210
+00:15:59,620 --> 00:16:01,420
+dvs. se așteaptă să le obțină.
+
+211
+00:16:01,420 --> 00:16:06,130
+Și apoi șirul de documentare pentru aceștia pe care doriți să îl utilizați înapoi, dacă
+
+212
+00:16:06,130 --> 00:16:08,160
+doriți să returnați valoarea acestei funcții.
+
+213
+00:16:08,190 --> 00:16:13,760
+Rețineți diferența dintre apelarea funcției parantezelor sau fără funcția cu paranteze.
+
+214
+00:16:13,780 --> 00:16:15,830
+Puteți obține funcția însăși.
+
+215
+00:16:16,390 --> 00:16:21,170
+Am învățat, de asemenea, despre înțelegerea greșită care fel de pauză pentru o bucla într-o
+
+216
+00:16:21,160 --> 00:16:23,470
+singură linie în interiorul acestor paranteze.
+
+217
+00:16:23,470 --> 00:16:28,420
+Apoi am aflat despre intervalul care vă permite să creați rapid o listă a unei secvențe de numere întregi de
+
+218
+00:16:28,420 --> 00:16:30,850
+la un început până la un punct de oprire.
+
+219
+00:16:31,210 --> 00:16:35,610
+Am aflat despre patru bucle și în același timp buclele.
+
+220
+00:16:36,010 --> 00:16:38,870
+Mulțumesc tuturor și vă văd la următoarea conferință

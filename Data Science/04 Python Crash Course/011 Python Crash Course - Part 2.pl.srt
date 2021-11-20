@@ -1,0 +1,899 @@
+1
+00:00:05,220 --> 00:00:09,220
+Witam wszystkich i zapraszam do drugiej części kursu zderzenia Pythona.
+
+2
+00:00:09,240 --> 00:00:12,240
+Przejdźmy dalej i przejdź do notatnika Jupiter, aby zacząć.
+
+3
+00:00:12,660 --> 00:00:12,900
+W porządku.
+
+4
+00:00:12,900 --> 00:00:14,630
+Jestem w chipie w zeszycie.
+
+5
+00:00:14,640 --> 00:00:22,350
+Ostatnim razem, gdy zostawiliśmy po sobie, jak chwytać elementy z zagnieżdżonej listy, przeszliśmy przez łańcuchy i listy, a te są ze sobą powiązane,
+
+6
+00:00:22,350 --> 00:00:26,730
+ponieważ są po prostu sekwencjami elementów i można użyć tej samej notacji
+
+7
+00:00:26,760 --> 00:00:33,120
+indeksu, niezależnie od tego, czy jest to ciąg znaków czy też ciąg znaków. listę, którą właśnie podajesz w nawiasach,
+
+8
+00:00:33,210 --> 00:00:38,310
+rzeczywiste indeksy, które chcesz i groud elementy, które są w tym indeksie lub wycinka indeksu.
+
+9
+00:00:38,310 --> 00:00:41,950
+Przejdźmy dalej i przełączmy bieg na myślenie o słownikach.
+
+10
+00:00:42,030 --> 00:00:49,650
+Możesz utworzyć słownik w Pythonie, podając nawiasy klamrowe, a następnie będziesz miał klucz dwukropka
+
+11
+00:00:50,010 --> 00:00:53,330
+i wartość odpowiadającą temu kluczowi.
+
+12
+00:00:53,430 --> 00:00:54,440
+Pokaż inny przykład.
+
+13
+00:00:54,450 --> 00:01:04,410
+Wykonamy dwa dwukropki, a wartość dla Q2 będzie odpowiadać od jednego do trzech słowników jako par wartości
+
+14
+00:01:04,410 --> 00:01:09,830
+klucza, podobnie jak tablica asocjacyjna zamiast elementów w sekwencji.
+
+15
+00:01:09,840 --> 00:01:14,630
+Trzymają elementy za pomocą kluczy, a następnie ich rzeczywistych wartości.
+
+16
+00:01:14,640 --> 00:01:20,910
+Zamiast więc mówić coś w stylu 0, które nie zadziała, ponieważ nie ma tam klucza i
+
+17
+00:01:20,910 --> 00:01:26,250
+nie ma to miejsca w faktycznym położeniu sekwencji, w którym kończy się przekazywanie
+
+18
+00:01:26,250 --> 00:01:30,420
+w nawiasie, notacja jest rzeczywistą wartością i nie zwraca wartości.
+
+19
+00:01:30,420 --> 00:01:36,000
+Na przykład, jeśli chcesz uzyskać tutaj liczbę 123, nazwałbyś swój słownik, a następnie
+
+20
+00:01:36,000 --> 00:01:38,200
+przekazałeś klucz odpowiadający tej wartości.
+
+21
+00:01:38,250 --> 00:01:45,150
+W tym przypadku jeden dwa trzy i słowniki mogą przyjmować zasadniczo dowolne elementy jako ich wartości.
+
+22
+00:01:45,240 --> 00:01:51,120
+Więc możemy kluczowego dwukropka K-1, a następnie możesz rzeczywiście mieć inną listę tutaj.
+
+23
+00:01:51,150 --> 00:01:52,900
+Raz Dwa Trzy.
+
+24
+00:01:53,790 --> 00:02:00,170
+A teraz jeśli dzwonię do słownika, mam jeden klucz K K jeden, a następnie lista 2:59 ma przedmiot.
+
+25
+00:02:00,330 --> 00:02:04,590
+Więc mogę zadzwonić K-1 i zwrócić tę listę jeden dwa trzy.
+
+26
+00:02:04,890 --> 00:02:08,740
+A teraz, gdy mam tę listę, mogę właściwie wykonać normalne indeksowanie.
+
+27
+00:02:08,880 --> 00:02:11,250
+To nie jest lista, a nie klucz.
+
+28
+00:02:11,580 --> 00:02:13,600
+Więc chodźmy dalej i weźmy dwa.
+
+29
+00:02:13,680 --> 00:02:19,230
+Który ma być w indeksie 1 i jest to zasadniczo to samo, co rozdzielenie na dwa etapy.
+
+30
+00:02:19,650 --> 00:02:22,260
+Możesz zrobić coś takiego.
+
+31
+00:02:22,260 --> 00:02:26,030
+Moja lista jest równa tej pozycji w Q1.
+
+32
+00:02:26,310 --> 00:02:31,800
+A potem, jeśli spojrzysz na moją listę, która była wcześniej na liście i używasz notacji brechera,
+
+33
+00:02:31,800 --> 00:02:39,090
+aby pobrać to, co chcesz na tę listę, lub po prostu robisz to wszystko w jednym kroku wzdłuż tej samej linii i
+
+34
+00:02:39,090 --> 00:02:45,000
+będziesz miał coś podobnego do tego w swoim ćwiczenia lub będziemy mieć rodzaj zagnieżdżonego słownika i zagnieżdżonej listy.
+
+35
+00:02:45,070 --> 00:02:49,620
+Ja pokażę ci jeszcze jeden przykład, w którym możesz
+
+36
+00:02:49,620 --> 00:02:58,180
+mieć słownik zagnieżdżony w innym słowniku, więc mogę powiedzieć, że pasan dwukropka K-1 w innym słowniku z jego
+
+37
+00:02:58,260 --> 00:03:04,140
+zestawem nawiasów klamrowych pasand coś jak wewnętrzny dwukropek, a następnie listę wartości.
+
+38
+00:03:04,140 --> 00:03:06,100
+Raz Dwa Trzy.
+
+39
+00:03:06,120 --> 00:03:09,010
+Powiedzmy, że chcę pobrać ten numer dwa.
+
+40
+00:03:09,390 --> 00:03:15,450
+Pierwszą rzeczą, którą musisz zrobić, to zadzwonić do K-1, a ten zwróci ten słownik.
+
+41
+00:03:15,450 --> 00:03:20,490
+Następnie potrzebuję klucza wewnętrznego połączenia z tego, więc mogę zrobić to z innego zestawu nawiasów lub mogę
+
+42
+00:03:20,490 --> 00:03:23,310
+podzielić go na wiele kroków za pomocą przypisania zmiennych.
+
+43
+00:03:23,310 --> 00:03:24,950
+Ale zrobimy to wszystko w jednym wierszu.
+
+44
+00:03:25,440 --> 00:03:32,640
+A teraz mam jeden dwa trzy, a drugi to drugi indeks, który wynosi 0 1 i który chwyta tam numer
+
+45
+00:03:32,640 --> 00:03:33,230
+dwa.
+
+46
+00:03:33,570 --> 00:03:36,770
+Więc znowu słowniki nie zachowują żadnego porządku.
+
+47
+00:03:36,770 --> 00:03:40,410
+Są po prostu mapowaniem pary kluczowej.
+
+48
+00:03:40,410 --> 00:03:44,550
+Porozmawiajmy teraz o miliardach miliardów i Python jest dość prosty.
+
+49
+00:03:44,550 --> 00:03:50,610
+Po prostu jest to prawda, a potem fałsz z pisaną wielką literą T i wielką literą f.
+
+50
+00:03:50,640 --> 00:03:54,930
+OK, pójdziemy do przodu i powrócę do nich, gdy mówimy o operatorach porównania.
+
+51
+00:03:54,960 --> 00:03:58,010
+Ale porozmawiajmy o krotkach, a potem ustawmy.
+
+52
+00:03:58,110 --> 00:04:05,460
+Pamiętaj, że lista jest zdefiniowana jako ciąg znaków w nawiasach kwadratowych rozdzielonych
+
+53
+00:04:05,460 --> 00:04:06,630
+przecinkami.
+
+54
+00:04:06,930 --> 00:04:14,850
+I możesz iść do przodu i chwytać przedmioty z tej listy za pomocą indeksowania krotki jest bardzo podobny, chyba
+
+55
+00:04:14,850 --> 00:04:22,140
+że zamiast nawiasów kwadratowych użyjesz nawiasów i znowu możesz po prostu chwycić przedmioty z tej krotki, jakby
+
+56
+00:04:22,140 --> 00:04:24,980
+była listą z notacją nawiasów indeksu.
+
+57
+00:04:25,020 --> 00:04:30,840
+Oto kluczowa różnica między krotką tych nawiasów a listą nawiasów kwadratowych.
+
+58
+00:04:31,410 --> 00:04:40,800
+Jeśli wrócę do mojej listy i spróbuję ponownie przypisać pierwszy element do słowa nowe wargi Cóż, pozwól mi uruchomić to
+
+59
+00:04:40,800 --> 00:04:44,060
+ponownie, ponieważ faktycznie przypisano całą listę.
+
+60
+00:04:44,220 --> 00:04:46,410
+Sprawdźmy ponownie listę.
+
+61
+00:04:46,410 --> 00:04:46,620
+W porządku.
+
+62
+00:04:46,620 --> 00:04:48,850
+Więc jeśli wydrukuję swoją listę, mam jedną dwie trzy.
+
+63
+00:04:48,990 --> 00:04:50,690
+Złap pierwszy przedmiot z tej listy.
+
+64
+00:04:50,700 --> 00:04:52,060
+Zero.
+
+65
+00:04:52,110 --> 00:04:52,890
+Idealny.
+
+66
+00:04:52,890 --> 00:04:57,750
+Teraz pozwól mi ponownie przypisać zero do nowego, tak jak to zrobiliśmy na poprzednim wykładzie.
+
+67
+00:04:57,750 --> 00:05:06,210
+A teraz, aby sprawdzić moją listę, ponownie przypisałem element 0 do nowego, a następnie do 3, jeśli chcę to zrobić dla
+
+68
+00:05:06,210 --> 00:05:06,730
+krotki.
+
+69
+00:05:06,730 --> 00:05:12,540
+Jednak jeśli spojrzymy na moją krotkę to jeden dwa trzy, powiedzmy, złap 0, zamiast równy
+
+70
+00:05:12,540 --> 00:05:13,870
+nowemu, otrzymam błąd.
+
+71
+00:05:14,220 --> 00:05:18,780
+A to dlatego, że krotki są niezmienne i nie obsługują przypisania elementów.
+
+72
+00:05:18,780 --> 00:05:23,250
+Chodzi mi o to, że nie możesz zmutować przedmiotów wewnątrz krotki.
+
+73
+00:05:24,440 --> 00:05:29,610
+Co oznacza, że będziesz chciał użyć krotki, jeśli chcesz się upewnić, że użytkownik nie może
+
+74
+00:05:29,670 --> 00:05:31,690
+zmienić elementów wewnątrz sekwencji obiektów.
+
+75
+00:05:31,740 --> 00:05:37,980
+I to jest główna różnica pomiędzy krotką a listą, której krotka jest niezmienna, a lista jest zmienna, co oznacza,
+
+76
+00:05:38,220 --> 00:05:40,360
+że możesz zmieniać elementy wewnątrz listy.
+
+77
+00:05:40,500 --> 00:05:43,110
+Nie możesz zrobić tego samego, jeśli krotka.
+
+78
+00:05:43,110 --> 00:05:43,740
+W porządku.
+
+79
+00:05:43,860 --> 00:05:51,360
+Teraz, aby omówić zestawy w Pythonie, zestaw jest zbiorem unikalnych elementów.
+
+80
+00:05:51,360 --> 00:05:55,580
+Wygląda tak samo jak nawiasy klamrowe, jak słownik, z tym wyjątkiem, że nie
+
+81
+00:05:56,850 --> 00:05:58,590
+ma dwukropków, to tylko elementy.
+
+82
+00:05:58,590 --> 00:06:03,310
+Teraz zauważ, co się stanie, jeśli wpiszę niektóre z tych liczb więcej niż raz.
+
+83
+00:06:04,650 --> 00:06:10,130
+Nadal otrzymuję ten sam wynik, ponieważ zestaw jest definiowany tylko przez unikalne elementy.
+
+84
+00:06:10,290 --> 00:06:16,650
+Znaczenie, jeśli spróbuję wprowadzić wielokrotność tych samych elementów, zmniejszy się
+
+85
+00:06:17,090 --> 00:06:26,980
+do unikalnych elementów i możesz rzeczywiście wywołać funkcję set set i pasan, aby pobrać unikalne elementy dla ciebie.
+
+86
+00:06:27,040 --> 00:06:33,780
+Tak więc przekazuję kilka powtarzających się elementów do funkcji set, która zwraca zestaw unikatowych elementów.
+
+87
+00:06:34,410 --> 00:06:40,060
+Jeśli chcesz dodać elementy do zestawu, możesz śmiało powiedzieć po prostu "tak".
+
+88
+00:06:40,080 --> 00:06:47,790
+Jedna dwójka powiesz "s" Użyjesz na nią metody "Dodaj", dodaj element, który chcesz dodać na przykład
+
+89
+00:06:47,790 --> 00:06:48,770
+5.
+
+90
+00:06:48,900 --> 00:06:52,970
+A jeśli sprawdzimy ten zestaw ponownie, otrzymamy 1 2 3 5.
+
+91
+00:06:53,160 --> 00:07:00,600
+Jeśli spróbuję dodać 5 ponownie, nie wykryje błędu, ale zachowa go tak samo, ponieważ w zestawie
+
+92
+00:07:00,600 --> 00:07:04,160
+jest dozwolone tylko jedno unikalne wystąpienie 5.
+
+93
+00:07:04,170 --> 00:07:04,470
+W porządku.
+
+94
+00:07:04,500 --> 00:07:07,440
+Naprawdę chcemy pracować z zestawami naprawdę w tym kursie.
+
+95
+00:07:07,440 --> 00:07:09,010
+Ale chcę, żebyś był tego świadomy.
+
+96
+00:07:09,210 --> 00:07:11,940
+To tylko zbiór unikalnych elementów.
+
+97
+00:07:12,170 --> 00:07:12,780
+DOBRZE.
+
+98
+00:07:13,080 --> 00:07:18,620
+Teraz porozmawiajmy o operatory porównania operatorów porównania pozwalają porównać dwa elementy do
+
+99
+00:07:18,620 --> 00:07:19,440
+siebie.
+
+100
+00:07:19,440 --> 00:07:23,320
+Są to rzeczy takie jak większe niż mniej niż równe itd.
+
+101
+00:07:24,210 --> 00:07:26,820
+Na przykład wejdź i stwórz nową komórkę.
+
+102
+00:07:26,820 --> 00:07:33,060
+Mogę powiedzieć, że jest większy niż dwa i zwróci wartość boolowską, zarówno true, jak i false, w zależności od tego, jaka
+
+103
+00:07:33,060 --> 00:07:34,240
+jest twoja instrukcja.
+
+104
+00:07:34,250 --> 00:07:36,990
+Zatem jeden większy niż dwa jest fałszywy.
+
+105
+00:07:37,040 --> 00:07:39,700
+1 mniej niż 2 jest prawdziwe.
+
+106
+00:07:40,200 --> 00:07:47,980
+I możesz zrobić to samo dla większej lub równej lub mniejszej lub równej.
+
+107
+00:07:48,000 --> 00:07:53,100
+Możesz również sprawdzić równość za pomocą dwóch równych znaków i zauważyć, jak
+
+108
+00:07:53,100 --> 00:07:54,480
+pomaga podświetlanie składni.
+
+109
+00:07:54,540 --> 00:07:55,770
+Tak jest jeden równy jeden.
+
+110
+00:07:55,800 --> 00:07:56,880
+To prawda.
+
+111
+00:07:57,210 --> 00:07:59,410
+Czy jeden jest równy dwóm, który jest fałszywy.
+
+112
+00:07:59,430 --> 00:08:00,670
+Nie prawda.
+
+113
+00:08:00,690 --> 00:08:03,650
+Teraz pamiętaj, że chcesz użyć dwóch równych znaków.
+
+114
+00:08:03,660 --> 00:08:07,970
+Jeśli spróbujesz zrobić coś podobnego do jednego, dostaniesz błąd, ponieważ Python uważa,
+
+115
+00:08:07,980 --> 00:08:12,190
+że próbujesz wykonać przypisanie zmiennych, a nie rzeczywistą operację porównania.
+
+116
+00:08:12,330 --> 00:08:14,550
+Jeśli chcesz sprawdzić jakość, którą wykonujesz.
+
+117
+00:08:14,550 --> 00:08:16,880
+Wykrzyknik znak równości.
+
+118
+00:08:16,920 --> 00:08:19,060
+Tak więc jeden nie jest równy trzem.
+
+119
+00:08:19,290 --> 00:08:20,500
+Cóż, to prawda.
+
+120
+00:08:20,550 --> 00:08:25,830
+To prawda, że jeden nie jest równy trzem i można zrobić to samo nie tylko z liczb, ale
+
+121
+00:08:27,180 --> 00:08:28,130
+również z ciągów.
+
+122
+00:08:28,170 --> 00:08:30,410
+Tak więc jest wysoki równy zakupowi.
+
+123
+00:08:30,450 --> 00:08:31,070
+To nieprawda.
+
+124
+00:08:31,080 --> 00:08:33,780
+To nie to samo, nie to samo.
+
+125
+00:08:33,810 --> 00:08:35,450
+Cóż, to prawda.
+
+126
+00:08:35,460 --> 00:08:40,380
+Teraz porozmawiajmy o połączeniu tych operatorów porównania z operatorem logicznym, takim
+
+127
+00:08:40,400 --> 00:08:42,900
+jak i, a następnie lub.
+
+128
+00:08:43,010 --> 00:08:46,790
+W tej chwili patrzymy tylko na jeden warunek: jeden mniej niż dwa.
+
+129
+00:08:47,040 --> 00:08:48,300
+Cóż, to prawda.
+
+130
+00:08:48,350 --> 00:08:53,900
+Co jeśli chcemy połączyć to z innym warunkiem, takim jak dwa mniej niż trzy, możemy użyć słowa
+
+131
+00:08:53,970 --> 00:08:55,780
+kluczowego i aby to zrobić.
+
+132
+00:08:55,800 --> 00:09:00,790
+Więc powiem, że jest jeden mniej niż dwa i jest mniej niż trzy.
+
+133
+00:09:01,080 --> 00:09:02,890
+A to się spełni.
+
+134
+00:09:02,940 --> 00:09:06,780
+Jednak jeśli jeden z nich zostanie zmieniony na false, to jeden mniej niż dwa.
+
+135
+00:09:06,810 --> 00:09:09,520
+Cóż, to prawda i jest zbyt duża niż trzy.
+
+136
+00:09:09,560 --> 00:09:10,620
+Fałszywe.
+
+137
+00:09:10,620 --> 00:09:14,970
+Tak więc masz true i false lub return false.
+
+138
+00:09:14,970 --> 00:09:18,140
+Więc jeśli operator i wszystkie warunki muszą być prawdziwe.
+
+139
+00:09:18,410 --> 00:09:22,440
+A ja osobiście lubię owijać te instrukcje w nawiasach.
+
+140
+00:09:22,620 --> 00:09:24,020
+Są więc trochę bardziej czytelne.
+
+141
+00:09:24,030 --> 00:09:28,290
+Nie musisz tego robić, ale zalecam, abyś zrobił to, ponieważ jest trochę
+
+142
+00:09:28,290 --> 00:09:31,320
+bardziej czytelny, kiedy wrócisz do tego kodu później.
+
+143
+00:09:31,320 --> 00:09:37,250
+Masz również operatora OR, który jest naprawdę podobny, z wyjątkiem tego, że w tym przypadku tylko jeden z nich musi być
+
+144
+00:09:37,250 --> 00:09:37,790
+prawdziwy.
+
+145
+00:09:37,860 --> 00:09:42,810
+Możemy więc powiedzieć, że jest jeden mniej niż dwa lub jest większy niż trzy.
+
+146
+00:09:42,990 --> 00:09:45,330
+Cóż, jeden z nich jest prawdziwy.
+
+147
+00:09:45,330 --> 00:09:46,410
+Pierwszy to.
+
+148
+00:09:46,470 --> 00:09:47,990
+A więc odzyskujemy prawdę.
+
+149
+00:09:48,170 --> 00:09:54,300
+I możesz je tak ustawić jeden na drugim, żebyś mógł powiedzieć w innym lub tutaj dla nas
+
+150
+00:09:54,300 --> 00:09:56,220
+jeden jest równy jednemu itd.
+
+151
+00:09:56,410 --> 00:10:00,210
+A jeśli naprawdę chcesz to zrozumieć, możesz po
+
+152
+00:10:01,020 --> 00:10:14,130
+prostu Passony prosta wartość boolowska jest tak prawdziwa i prawdziwa, że zwraca True true i false return Fałszywa prawda lub false jest prawdziwa, a wtedy to w zasadzie to.
+
+153
+00:10:14,140 --> 00:10:15,030
+Więc po prostu lub.
+
+154
+00:10:15,110 --> 00:10:24,990
+A teraz przejdźmy do omówienia bloków kodu, mówiąc o instrukcjach if if else.
+
+155
+00:10:25,370 --> 00:10:32,060
+Wiele razy będziesz chciał wykonać kod, jeśli warunek jest prawdziwy i możesz użyć tego, jeśli zostawiłeś
+
+156
+00:10:32,090 --> 00:10:34,450
+instrukcję L, aby to zrobić.
+
+157
+00:10:34,460 --> 00:10:40,830
+Powiedzmy, że mamy warunek, jeśli jeden jest mniejszy niż dwa.
+
+158
+00:10:41,180 --> 00:10:45,510
+Chcemy wykonać jakieś działanie, takie jak instrukcje drukowania.
+
+159
+00:10:45,710 --> 00:10:47,620
+Pójdziemy do przodu i powiemy "Tak".
+
+160
+00:10:48,470 --> 00:10:55,370
+Tak więc mówimy, że jeśli warunek ten jest prawdziwy, dwukropek i zauważ, że tutaj jest blok białych znaków i jest to
+
+161
+00:10:55,370 --> 00:10:56,990
+bardzo ważne w Pythonie.
+
+162
+00:10:57,020 --> 00:11:02,030
+Python nie używa nawiasów w celu oddzielenia bloku instrukcji wykonywania kodu.
+
+163
+00:11:02,030 --> 00:11:03,800
+Zamiast tego używa białych znaków.
+
+164
+00:11:03,890 --> 00:11:08,640
+A jeśli po prostu wprowadzisz tutaj po dwukropku, automatycznie zrobi ci wcięcie w Jowiszu.
+
+165
+00:11:08,930 --> 00:11:12,920
+Większość pomysłów, które wspierają Pythona, również robi to samo.
+
+166
+00:11:12,920 --> 00:11:13,590
+OK, więc mamy.
+
+167
+00:11:13,610 --> 00:11:24,290
+Jeśli jeden jest mniejszy niż wykonanie jakiegoś działania i zasadniczo jest to po prostu mówienie tego, jeśli prawdziwy wydruk wykonuje
+
+168
+00:11:24,590 --> 00:11:26,260
+kod itp.
+
+169
+00:11:26,390 --> 00:11:34,340
+Lub możesz po prostu robić rzeczy takie jak możesz powiedzieć dwa plus dwa równe dwa plus dwa itd.
+
+170
+00:11:34,360 --> 00:11:37,020
+A kiedy zobaczysz X, zauważysz, że jest czwórka.
+
+171
+00:11:37,100 --> 00:11:38,290
+To tylko instrukcja if.
+
+172
+00:11:38,300 --> 00:11:44,680
+Więc jeśli jakiś warunek jest prawdziwy, dwukropek wykonuje blok kodu, który jest wcięty pod nim.
+
+173
+00:11:44,680 --> 00:11:45,470
+W porządku.
+
+174
+00:11:45,620 --> 00:11:49,240
+Teraz porozmawiajmy o innych operacjach, które możemy wykonać.
+
+175
+00:11:49,520 --> 00:11:54,860
+Powiedzmy, że chcemy sprawdzić wiele warunków lub powiedzmy, że chcemy coś zrobić, jeśli nie jest
+
+176
+00:11:54,860 --> 00:11:55,600
+to prawda.
+
+177
+00:11:55,670 --> 00:12:12,400
+Powiem więc, że jeśli jedna jest równa wydrukom Supe pierwsza, Colan drukuje na końcu.
+
+178
+00:12:12,440 --> 00:12:19,460
+I to, co to zrobi, powie, że jeśli ten warunek jest prawdziwy, wykonaj ten kod w inny sposób.
+
+179
+00:12:19,550 --> 00:12:26,180
+Albo, jeśli żadna z powyższych rzeczy nie jest prawdą i zanotuj, w jaki sposób reszta zestawia się z instrukcją if, o której
+
+180
+00:12:26,240 --> 00:12:28,230
+wiemy, że są ze sobą powiązane.
+
+181
+00:12:28,330 --> 00:12:35,300
+Colin Crantz ostatni, więc jeśli uruchomię ten kod, ostatnie wykonanie zostanie zakończone, jeśli przejdę dalej i przełączę
+
+182
+00:12:35,300 --> 00:12:39,970
+to tak, aby pierwszy warunek był prawdziwy, najpierw zostanie wykonany.
+
+183
+00:12:39,980 --> 00:12:45,350
+Teraz może chcesz sprawdzić wiele warunków, nie tylko jeden warunek, a następnie inne zdanie.
+
+184
+00:12:45,770 --> 00:12:50,710
+Tutaj możesz skorzystać z lewej strony, aby sprawdzić wiele warunków.
+
+185
+00:12:51,530 --> 00:12:52,350
+Więc możesz iść do przodu.
+
+186
+00:12:52,370 --> 00:12:53,320
+Śmiało i powiedz coś takiego.
+
+187
+00:12:53,350 --> 00:12:56,850
+Elif 3 jest równy 3.
+
+188
+00:12:56,870 --> 00:12:59,860
+Teraz wejdźmy i zmieńmy pierwszy raz na fałszywy.
+
+189
+00:13:00,200 --> 00:13:04,660
+Drukujemy coś, co będzie drukowało w środku.
+
+190
+00:13:04,670 --> 00:13:05,030
+W porządku.
+
+191
+00:13:05,030 --> 00:13:07,920
+Zacznijmy więc od tego i załóżmy, co się dzieje.
+
+192
+00:13:07,930 --> 00:13:14,630
+Python właśnie robi to, mówiąc, że jeśli ten warunek jest prawdziwy, wykonaj ten blok kodu w inny sposób.
+
+193
+00:13:14,750 --> 00:13:18,030
+Lub jeśli ten warunek jest prawdziwy.
+
+194
+00:13:18,230 --> 00:13:20,820
+Wykonaj ten kod blokowy w innym miejscu.
+
+195
+00:13:20,840 --> 00:13:26,630
+Jeśli żadna z powyższych sytuacji nie jest prawdziwa, wykonaj ten kod blokowy i możesz układać w stos tyle
+
+196
+00:13:26,960 --> 00:13:29,910
+razy, ile chcesz, aby móc powiedzieć tutaj inny.
+
+197
+00:13:30,260 --> 00:13:38,210
+Elif wyjdzie i powie, czy cztery są równe czterem Crantzom.
+
+198
+00:13:38,240 --> 00:13:38,530
+W porządku.
+
+199
+00:13:38,530 --> 00:13:39,990
+I zauważ, co się tutaj dzieje.
+
+200
+00:13:40,220 --> 00:13:43,500
+Chociaż to prawda, trzy to trzy.
+
+201
+00:13:43,580 --> 00:13:47,580
+Zamierzamy wykonać tylko pierwszą instancję warunku będącą prawdziwą.
+
+202
+00:13:47,660 --> 00:13:52,190
+I jest to ważne, o czym należy pamiętać, kiedy używasz instrukcji
+
+203
+00:13:52,190 --> 00:13:56,380
+elif else, które wykonają pierwszy prawdziwy warunek i to wszystko.
+
+204
+00:13:56,420 --> 00:13:56,960
+W porządku.
+
+205
+00:13:57,320 --> 00:14:03,140
+To wszystko w tej części 2 kolejne serie wykładów, następne zaczniemy omawiać dla pętli podczas pętli, a
+
+206
+00:14:03,230 --> 00:14:05,310
+następnie kilka innych funkcji w Pythonie.
+
+207
+00:14:05,690 --> 00:14:06,100
+DOBRZE.
+
+208
+00:14:06,140 --> 00:14:12,050
+Jako szybką recenzję tego, co zrobiliśmy, przeszliśmy do najpopularniejszych słowników, które znowu są parami
+
+209
+00:14:12,050 --> 00:14:15,880
+kluczowymi wartościami i możesz pobrać wartości, wprowadzając klucze.
+
+210
+00:14:15,970 --> 00:14:20,340
+Pamiętam, że możesz mieć zagnieżdżone słowniki lub zagnieżdżone listy w słowniku.
+
+211
+00:14:20,780 --> 00:14:23,290
+Teraz mamy wartości logiczne prawda i fałsz.
+
+212
+00:14:23,420 --> 00:14:27,170
+Mamy listę krotek, które są niezmienne.
+
+213
+00:14:27,440 --> 00:14:32,190
+Bardzo podobne do list, z tą różnicą, że nie możesz iść dalej i zmieniać rzeczy, które znajdują się
+
+214
+00:14:32,190 --> 00:14:34,670
+wewnątrz krotki, ponieważ krotka nie obsługuje ponownego przydzielania przedmiotów.
+
+215
+00:14:34,670 --> 00:14:39,500
+Mamy zestawy, które pamiętam, zestawy to po prostu kolekcja unikalnych elementów.
+
+216
+00:14:39,500 --> 00:14:45,040
+Więc jeśli masz kilka powtarzających się elementów i masz zestaw, to tylko te niepowtarzalne.
+
+217
+00:14:45,410 --> 00:14:50,780
+Teraz mamy operatory porównania większe niż mniejsze niż lub równe mniej równym sprawdzaniu
+
+218
+00:14:50,780 --> 00:14:53,080
+równości, a następnie sprawdzanie nierówności.
+
+219
+00:14:53,120 --> 00:14:54,940
+I możesz zrobić to samo dla struny.
+
+220
+00:14:55,010 --> 00:15:00,830
+Masz tych operatorów logicznych, a następnie lub możesz porównać wiele instrukcji warunkowych.
+
+221
+00:15:01,070 --> 00:15:06,620
+I wtedy masz logikę, która pozwala na rodzaj stosu i wykonywanie bloków kodu
+
+222
+00:15:06,620 --> 00:15:10,230
+w oparciu o jakiś rodzaj budzącego się stanu.
+
+223
+00:15:10,340 --> 00:15:11,420
+W porządku.
+
+224
+00:15:11,450 --> 00:15:12,730
+Mam nadzieję, że spodoba ci się ten wykład.
+
+225
+00:15:12,740 --> 00:15:14,060
+Do zobaczenia na następnym.

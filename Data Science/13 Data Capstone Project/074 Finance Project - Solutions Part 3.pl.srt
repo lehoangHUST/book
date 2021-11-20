@@ -1,0 +1,335 @@
+1
+00:00:05,160 --> 00:00:11,100
+Witam wszystkich i zapraszam na opcjonalną finałową część serii wykładów z rozwiązaniami z zakresu finansowania projektów.
+
+2
+00:00:11,580 --> 00:00:17,100
+W tej końcowej części, która jest opcjonalna, przejdziemy do niektórych wykresów i wizualizacji spinki do
+
+3
+00:00:17,280 --> 00:00:19,780
+mankietów specjalnie zaprojektowanych dla danych finansowych.
+
+4
+00:00:20,010 --> 00:00:23,070
+Wyjdźmy i skocz do notatnika Jowisza, aby zacząć.
+
+5
+00:00:23,070 --> 00:00:25,260
+OK, jestem w notesie Jowisza.
+
+6
+00:00:25,260 --> 00:00:30,660
+Ostatnim razem przerwaliśmy tworzenie mapy klastrów przy użyciu morza i chciałem pokazać, jak
+
+7
+00:00:30,660 --> 00:00:33,780
+utworzyć mapę cieplną za pomocą Clottey.
+
+8
+00:00:33,780 --> 00:00:37,000
+Możesz po prostu wyjść i pobrać tę szybkość transmisji danych tutaj.
+
+9
+00:00:37,080 --> 00:00:45,560
+Ramka danych korelacji z tą komórką i wyjdźmy i zachowajmy ją jako zbliżony rdzeń podkreślenia.
+
+10
+00:00:46,860 --> 00:00:49,920
+A potem wejdziemy i spojrzymy na zamknięcie lub kwadratowy rdzeń.
+
+11
+00:00:49,920 --> 00:00:52,740
+Upewnij się, że mamy poprawną ramkę danych.
+
+12
+00:00:52,740 --> 00:00:58,440
+Wygląda na to, że robimy to w formie macierzy, a potem możemy
+
+13
+00:00:58,440 --> 00:01:05,520
+po prostu wywołać I spisek i określić rodzaje mapy ciepła, a otrzymasz mapę ciepła, która wygląda tak.
+
+14
+00:01:05,520 --> 00:01:08,520
+Ta skala kolorów faktycznie nie jest zbyt przydatna.
+
+15
+00:01:08,520 --> 00:01:14,730
+Możesz więc zastosować kolejną skalę kolorów za pomocą argumentów skali kolorów i
+
+16
+00:01:14,730 --> 00:01:20,920
+prawdopodobnie najbardziej użytecznym jest czerwony dla R D żółty yl niebieski.
+
+17
+00:01:20,940 --> 00:01:28,350
+B Ty i Ty możesz odwołać się do wydrukowanej dokumentacji, jeśli chcesz więcej opcji skali kolorów.
+
+18
+00:01:28,420 --> 00:01:33,210
+Możesz sprawdzić skalę kolorów, która jest nieco lepsza od 0 do 1, jeśli chodzi o korelację.
+
+19
+00:01:33,240 --> 00:01:35,310
+To jest teraz interaktywne.
+
+20
+00:01:35,310 --> 00:01:41,470
+Teraz wciąż wolę widzieć własną wizualizację Bourne'a, ale chciałem, abyś wiedział o opcjach fabularnych za
+
+21
+00:01:41,520 --> 00:01:43,980
+pomocą biblioteki spinki do mankietów.
+
+22
+00:01:43,980 --> 00:01:45,550
+W porządku, idąc dalej.
+
+23
+00:01:45,600 --> 00:01:50,810
+Przejdźmy dalej, aby uzyskać konkretne możliwości finansowe spinki do mankietów i fabuły.
+
+24
+00:01:51,540 --> 00:01:57,840
+Możesz więc stworzyć fabułę świec, używając linii fabularnej i pozwolić mi wejść i pokazać, że możemy
+
+25
+00:01:57,870 --> 00:01:58,810
+to zrobić.
+
+26
+00:01:58,830 --> 00:02:02,550
+Pierwszą rzeczą, której potrzebujemy, jest chwycenie akcji Bank of America.
+
+27
+00:02:02,550 --> 00:02:07,620
+Po prostu zrobię to z b c, jeśli spojrzymy na stan kadru, pamiętajmy, że mamy
+
+28
+00:02:07,620 --> 00:02:14,640
+otwarte high low low i potrzebujemy go w określonej kolejności, aby użyć I plotek w sposób, w jaki zamierzamy go użyć.
+
+29
+00:02:14,850 --> 00:02:16,560
+Więc zamierzam
+
+30
+00:02:19,830 --> 00:02:25,130
+po prostu chwycić wysoki niski poziom, a następnie zamknąć połączenie.
+
+31
+00:02:25,380 --> 00:02:27,660
+Nie chcemy rzeczywistej objętości.
+
+32
+00:02:27,660 --> 00:02:32,230
+A potem chcę tylko wartości na rok 2015.
+
+33
+00:02:32,240 --> 00:02:43,390
+Chodzi mi o to, że jest przydatny I-X 2015 od 1 stycznia do 2016 wygląda jak ciąg 2016.
+
+34
+00:02:43,430 --> 00:02:45,420
+I chodźmy i powiedzmy 1 stycznia.
+
+35
+00:02:45,420 --> 00:02:53,070
+Tak więc wszystkie wartości na 2015 r. Zapiszę jako BAC 15.
+
+36
+00:02:54,180 --> 00:03:01,380
+A następnie następna linia mam zamiar iść dalej i powiedzieć, że 15 myśli, że działam, a ja zamierzam coś w tym
+
+37
+00:03:01,380 --> 00:03:02,060
+sprecyzować.
+
+38
+00:03:02,070 --> 00:03:07,660
+Przedstawiam argumenty, które mam zamiar powiedzieć, że są równe Kandel.
+
+39
+00:03:08,700 --> 00:03:13,260
+A wtedy będziesz w stanie stworzyć wykres świecowy za pomocą fabuły.
+
+40
+00:03:13,260 --> 00:03:17,880
+Teraz, jeśli nie jesteś świadomy, co to jest fabuła świeca, to do analizy finansowej.
+
+41
+00:03:17,880 --> 00:03:23,520
+Zasadniczo mówi ci, czy akcje wzrosły lub spadły w tym dniu w zależności od
+
+42
+00:03:23,520 --> 00:03:30,640
+koloru, więc zielony rośnie, a czerwony maleje, a następnie mówi ci, że otwarcie jest wysokie, a cena zamknięcia tutaj.
+
+43
+00:03:30,650 --> 00:03:34,240
+Te informacje można przeglądać w Wikipedii.
+
+44
+00:03:34,380 --> 00:03:36,890
+Świecznik knuje, jeśli chcesz uzyskać więcej informacji.
+
+45
+00:03:36,900 --> 00:03:42,150
+Właściwie to czytam, ale jest to bardziej po prostu analiza finansowa, więc zasadniczo mówię o
+
+46
+00:03:42,150 --> 00:03:46,640
+otwartym wysokim niskim zamknięciu i czy akcje tego dnia wzrosły lub spadły.
+
+47
+00:03:47,520 --> 00:03:48,220
+W porządku.
+
+48
+00:03:48,480 --> 00:03:55,430
+Przejdźmy dalej i sprawdźmy następną działkę, która jest SMK i jest to po prostu zwykła fabuła ruchomych
+
+49
+00:03:55,440 --> 00:03:56,270
+średnich.
+
+50
+00:03:56,280 --> 00:03:59,440
+Fabuła może również automatycznie stworzyć dla ciebie rodzaj.
+
+51
+00:03:59,520 --> 00:04:04,220
+Zrobimy to dla zasobów Morgan Stanley.
+
+52
+00:04:04,890 --> 00:04:09,180
+Więc zamierzam iść dalej i złapać bliskie kolumny zapasów Morgan Stanley.
+
+53
+00:04:09,210 --> 00:04:14,330
+Po prostu chcę to zrobić w 2015 roku, więc określę te same daty.
+
+54
+00:04:14,330 --> 00:04:15,020
+Zrobiłem tutaj.
+
+55
+00:04:15,030 --> 00:04:16,200
+Chodźmy
+
+56
+00:04:19,170 --> 00:04:28,690
+i złapmy tych, którzy tu przyjdą, weźcie kawałki chipsów z 2015 roku, a potem wezmę podsumowanie.
+
+57
+00:04:28,710 --> 00:04:35,430
+I to jest techniczna analiza spinki do mankietów, a następnie zamierzam powiedzieć, że badanie
+
+58
+00:04:35,430 --> 00:04:46,050
+to okresy nieokreślone przez SMK, które mają być parą okresów, w które wejdziemy i powiedzmy 13 21 i 55, które są rodzajem
+
+59
+00:04:46,050 --> 00:04:48,910
+jakiejś wspólnej analizy technicznej. okresy.
+
+60
+00:04:49,320 --> 00:04:54,480
+I tutaj widzimy proste średnie ruchome, a ja kreślę rodzaj raportów, kiedy
+
+61
+00:04:54,480 --> 00:05:00,170
+się poruszasz, co jest całkiem miłe i możesz powiększyć i zobaczyć więcej informacji, jeśli chcesz.
+
+62
+00:05:00,180 --> 00:05:00,820
+W porządku.
+
+63
+00:05:01,080 --> 00:05:04,390
+Przejdźmy dalej i przejdźmy do tego jeszcze tutaj.
+
+64
+00:05:04,410 --> 00:05:08,700
+Ostatni, który jest fabułą Bollinger Band dla Bank of America.
+
+65
+00:05:09,000 --> 00:05:14,880
+I znowu jest to kolejna analiza techniczna, którą możesz zrobić, który pokazuje standardowe odchylenie
+
+66
+00:05:14,970 --> 00:05:18,020
+ceny akcji, która przesuwa się w czasie.
+
+67
+00:05:18,270 --> 00:05:21,180
+Ale znowu chcę tego na rok 2015.
+
+68
+00:05:21,210 --> 00:05:28,590
+Śmiało, skopiuj i wklej ten sam kawałek i wykonaj t. wykres podkreślenia dla wykresu analizy technicznej i
+
+69
+00:05:28,590 --> 00:05:33,360
+badanie, które zamierzamy wykonać, jest równe ciągowi B O L L.
+
+70
+00:05:34,090 --> 00:05:39,900
+Teraz patrzymy na to, że widzimy górne i dolne pasma, gdy idziemy dalej, a także prostą średnią ruchomą,
+
+71
+00:05:39,900 --> 00:05:43,530
+a następnie faktyczną cenę zamknięcia, która jest w kolorze pomarańczowym.
+
+72
+00:05:43,890 --> 00:05:45,590
+DOBRZE.
+
+73
+00:05:45,870 --> 00:05:49,560
+Jest tu zdecydowanie więcej konkretnych tematów związanych z finansami.
+
+74
+00:05:49,560 --> 00:05:52,670
+Więc nie martw się, jeśli nie zrozumiesz wszystkiego, co właśnie przeszliśmy.
+
+75
+00:05:52,800 --> 00:05:57,840
+Jedyną rzeczą, na którą warto się naprawdę martwić, jest to, co zrobiłem z pandererami i
+
+76
+00:05:57,840 --> 00:06:00,420
+niektóre z podstawowych operacji wizualizacyjnych podczas wykładu.
+
+77
+00:06:00,420 --> 00:06:05,610
+Więc nie martw się, jeśli nie rozumiesz wszystkich tych szczegółowych analiz technicznych, są to naprawdę tylko
+
+78
+00:06:05,610 --> 00:06:09,990
+odniesienia dla osób, które już znają ten temat, ponieważ nie jest to klasa
+
+79
+00:06:09,990 --> 00:06:10,690
+analizy finansowej.
+
+80
+00:06:10,770 --> 00:06:16,260
+Jest to po prostu klasa nauki o danych, a analiza finansowa to jej dziedzina nauki.
+
+81
+00:06:16,260 --> 00:06:16,780
+W porządku.
+
+82
+00:06:16,830 --> 00:06:21,810
+Mam nadzieję, że uznałeś to za interesujące, jeśli interesujesz się tego rodzaju analizą i do zobaczenia na
+
+83
+00:06:21,810 --> 00:06:22,710
+następnym wykładzie.
+
+84
+00:06:22,710 --> 00:06:23,720
+Dziękuję wszystkim.

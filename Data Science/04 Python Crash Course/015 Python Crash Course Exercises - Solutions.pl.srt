@@ -1,0 +1,651 @@
+1
+00:00:05,130 --> 00:00:10,810
+Witam wszystkich i zapraszam do wykładu na temat ćwiczeń z ćwiczenia zderzeniowego Pythona i tego wykładu
+
+2
+00:00:10,800 --> 00:00:15,180
+będę właśnie pracował nad notebookiem rozwiązań i objaśniam kod i rozwiązania.
+
+3
+00:00:15,170 --> 00:00:20,440
+Nie, ale przejdźmy dalej i przejdźmy do notatnika ćwiczeń, abyśmy mogli zacząć to kodować.
+
+4
+00:00:20,490 --> 00:00:20,760
+W porządku.
+
+5
+00:00:20,760 --> 00:00:23,990
+Oto jestem na ćwiczeniach z crash course.
+
+6
+00:00:24,060 --> 00:00:28,250
+Pierwsze pytanie, na które chcieliśmy odpowiedzieć, brzmi: 7: 2 do potęgi czterech.
+
+7
+00:00:28,350 --> 00:00:30,540
+Teraz technicznie można to zrobić na dwa sposoby.
+
+8
+00:00:30,570 --> 00:00:36,900
+Mogłeś po prostu wpisać siedem razy siedem razy siedem razy siedem i uzyskać poprawną odpowiedź.
+
+9
+00:00:36,910 --> 00:00:42,600
+Ale miejmy nadzieję, że pamiętam prawidłowy sposób, który po prostu dzwoni do Asterixa do wykładników.
+
+10
+00:00:42,660 --> 00:00:44,740
+A więc siedmiu do potęgi czterech.
+
+11
+00:00:44,910 --> 00:00:47,730
+Uruchom tę komórkę i tam jest twoja odpowiedź.
+
+12
+00:00:47,730 --> 00:00:50,770
+Dalej chcemy podzielić ciąg S jest równy.
+
+13
+00:00:50,780 --> 00:00:57,540
+Cześć, Sam na liście możemy iść dalej i po prostu ją pobrać. Możemy zobaczyć przykładowe listy
+
+14
+00:00:57,540 --> 00:00:59,890
+wyników, które chcemy tam stworzyć.
+
+15
+00:00:59,910 --> 00:01:06,750
+Więc jeśli uruchomię sequel cześć tam Sam i zadzwonię po podzieleniu estop, to automatycznie podzieli ciąg
+
+16
+00:01:07,320 --> 00:01:09,790
+na listę na białych znakach.
+
+17
+00:01:09,790 --> 00:01:15,840
+Pamiętam, że możemy przekazać dowolny ciąg znaków na przykład do tego, co faktycznie chcemy
+
+18
+00:01:15,870 --> 00:01:19,750
+podzielić, i zobaczyć to później w innym ćwiczeniu.
+
+19
+00:01:19,980 --> 00:01:25,380
+Przejdźmy do następnego pytania, któremu podano zmienne plena równa się ziemi, a średnica równa
+
+20
+00:01:25,380 --> 00:01:27,850
+się dwanaście tysięcy siedemset czterdzieści dwa.
+
+21
+00:01:28,110 --> 00:01:30,710
+Użyj tego formatu, aby wydrukować następujący ciąg.
+
+22
+00:01:30,840 --> 00:01:34,830
+Średnica Ziemi wynosi dwanaście tysięcy siedemset czterdzieści dwa kilometry.
+
+23
+00:01:34,940 --> 00:01:41,220
+I idź, aby uruchomić komórkę, więc mamy te dwie zmienne do
+
+24
+00:01:42,000 --> 00:01:49,500
+znalezienia, a potem powiem w sznurku, że średnica Ziemi wynosi tysiąc siedemset czterdzieści dwa kilometry.
+
+25
+00:01:49,520 --> 00:01:53,860
+Pamiętaj, że chcę używać tego formatu i chcę tych dwóch zmiennych.
+
+26
+00:01:54,060 --> 00:02:02,070
+Zamienię ziemię tylko parą nawiasów klamrowych i zrobię to samo dla tej średnicy średnicy,
+
+27
+00:02:02,800 --> 00:02:11,280
+to zamierzam powiedzieć, że format i będę w średnicy planet, a ja pójdę dalej i
+
+28
+00:02:11,280 --> 00:02:13,460
+wydrukuję całą rzecz.
+
+29
+00:02:13,470 --> 00:02:14,950
+Więc to działa.
+
+30
+00:02:15,030 --> 00:02:16,000
+Mamy to.
+
+31
+00:02:16,260 --> 00:02:22,350
+Mógłbym też przekazać pewne nazwy zmiennych, takie jak A i B, i ustawić je równe A
+
+32
+00:02:22,890 --> 00:02:23,970
+i B.
+
+33
+00:02:24,210 --> 00:02:25,650
+I to jest dokładnie to samo.
+
+34
+00:02:25,650 --> 00:02:30,640
+Więc jeśli użyjesz tego do pierwszego, upewnij się, że jest w odpowiedniej kolejności.
+
+35
+00:02:30,960 --> 00:02:35,550
+Następna w górę, biorąc pod uwagę tę zagnieżdżoną listę, użyj indeksowania, aby pobrać słowo Hello.
+
+36
+00:02:35,790 --> 00:02:36,670
+To dość trudne.
+
+37
+00:02:36,690 --> 00:02:42,770
+Więc nie spiesz się z tym i zacznij od środka na zewnątrz.
+
+38
+00:02:42,870 --> 00:02:44,620
+Możesz zobaczyć tutaj, że mamy cześć.
+
+39
+00:02:44,700 --> 00:02:50,100
+I to jest lista, a Jowisz i jej rodzaj pomaga ci w podświetlaniu nawiasów,
+
+40
+00:02:50,280 --> 00:02:56,820
+to także znajduje się na liście, która znajduje się na innej liście, która znajduje się na najbardziej zewnętrznej liście.
+
+41
+00:02:57,330 --> 00:03:06,730
+Tak więc cała lista tutaj jest tym, co chcemy pobrać jako pierwszą i zlokalizować na indeksie 3 0 1 2 3.
+
+42
+00:03:07,140 --> 00:03:09,210
+Zrobimy to.
+
+43
+00:03:09,510 --> 00:03:15,930
+Teraz, gdy mam tę listę, widzę, że lista, która ma moje powitanie słowa docelowego, jest drugim elementem
+
+44
+00:03:15,930 --> 00:03:19,790
+na liście, co oznacza, że jest to indeks pierwszy.
+
+45
+00:03:20,550 --> 00:03:24,240
+A teraz zamierzam ponownie to zepsuć, więc 0 1 2,
+
+46
+00:03:27,150 --> 00:03:29,540
+a następnie mam listę jednego elementu.
+
+47
+00:03:29,540 --> 00:03:32,170
+Mogę więc iść dalej i po prostu złapać to ponownie za zero.
+
+48
+00:03:32,610 --> 00:03:35,090
+A potem w końcu mam ciąg powitalny OK.
+
+49
+00:03:35,100 --> 00:03:39,660
+Jest to dość skomplikowane i nigdy nie będziesz miał takiej sytuacji w prawdziwym życiu.
+
+50
+00:03:39,810 --> 00:03:44,190
+Ale kiedy pracuję z pandami, będziesz musiał robić rzeczy, które mają dwa poziomy głębokości.
+
+51
+00:03:44,190 --> 00:03:45,940
+Więc miej to na uwadze.
+
+52
+00:03:46,440 --> 00:03:46,780
+W porządku.
+
+53
+00:03:46,800 --> 00:03:51,090
+Następne pytanie zostało podane w tym nece słowniku chwycił słowo "cześć".
+
+54
+00:03:51,420 --> 00:03:53,820
+Przygotuj się, będzie to irytujące cięcie trudne.
+
+55
+00:03:53,820 --> 00:03:55,410
+Jest to bardzo trudne.
+
+56
+00:03:55,710 --> 00:03:57,810
+Ale idźmy dalej i przełóżmy to krok po kroku.
+
+57
+00:03:57,840 --> 00:04:01,190
+Pierwszą rzeczą, którą musisz zrobić, to złapać klucz.
+
+58
+00:04:01,200 --> 00:04:05,410
+Więc jeśli spojrzymy na to, możemy po prostu wezwać same klucze.
+
+59
+00:04:05,640 --> 00:04:11,460
+A w rzeczywistości mamy tylko jeden klucz w najbardziej zewnętrznym słowniku, o którym będziemy mówić dalej.
+
+60
+00:04:13,530 --> 00:04:19,230
+A teraz mam listę niektórych elementów i zauważ, że chcę pobrać ten słownik tutaj,
+
+61
+00:04:19,230 --> 00:04:22,270
+który jest na 0 1 2 3.
+
+62
+00:04:22,270 --> 00:04:25,410
+Więc indeks 3 tej listy.
+
+63
+00:04:25,410 --> 00:04:31,920
+Pamiętajmy więc, że mieszamy indeksowanie listy z parami kluczowymi wartości słownika.
+
+64
+00:04:32,400 --> 00:04:36,810
+A potem znowu mam słownik i chcę pobrać wartość za klucz.
+
+65
+00:04:36,810 --> 00:04:39,260
+Zdradliwy.
+
+66
+00:04:40,020 --> 00:04:46,520
+Następnie mam ponownie listę i chcę pobrać ten słownik, który jest 0 1 2 3.
+
+67
+00:04:47,810 --> 00:04:52,240
+A potem znowu mam słownik i chcę zdobyć kluczowy cel.
+
+68
+00:04:52,770 --> 00:04:59,210
+I wreszcie mam listę i chcę pobrać ostatni element 0 1 2 3.
+
+69
+00:05:00,000 --> 00:05:01,390
+I to jest cześć.
+
+70
+00:05:01,750 --> 00:05:02,130
+DOBRZE.
+
+71
+00:05:02,130 --> 00:05:04,390
+Bardzo trudne.
+
+72
+00:05:04,410 --> 00:05:09,520
+Więc nie martw się zbytnio, jeśli nie potrafisz tego szybko zrozumieć, ponieważ jest to dość irytujące.
+
+73
+00:05:09,560 --> 00:05:15,250
+Bez trudu, ale mam nadzieję, że jesteś w stanie zrozumieć logikę tego rozwiązania.
+
+74
+00:05:15,270 --> 00:05:18,210
+Następne pytanie: jaka jest główna różnica między krotką a listą.
+
+75
+00:05:18,270 --> 00:05:21,450
+Cóż, krotka jest niezmienna, a lista jest zmienna.
+
+76
+00:05:21,450 --> 00:05:23,980
+To główna różnica.
+
+77
+00:05:24,060 --> 00:05:28,500
+Następnie chcieliśmy stworzyć funkcję, która pobiera domenę witryny sieci Web z łańcucha znaków
+
+78
+00:05:28,500 --> 00:05:30,960
+w postaci user at domain dot com.
+
+79
+00:05:30,960 --> 00:05:36,610
+Na przykład przekazanie domeny user com dot zwróci domenę dot com.
+
+80
+00:05:37,260 --> 00:05:43,120
+Idźmy dalej i stwórzmy funkcję o nazwie domena dostaje.
+
+81
+00:05:43,530 --> 00:05:51,540
+Przyjmie zmienną e-mail, która będzie ciągiem znaków, a następnie zwrócimy e-mail, który podzieli, a my podzielimy
+
+82
+00:05:54,230 --> 00:05:56,330
+go na symbol.
+
+83
+00:05:56,340 --> 00:05:58,900
+Wejdźmy i zobaczmy, jak to działa.
+
+84
+00:05:58,950 --> 00:06:00,550
+Jeśli po prostu to uruchomię.
+
+85
+00:06:01,170 --> 00:06:01,860
+Ok świetnie.
+
+86
+00:06:01,860 --> 00:06:08,900
+Więc jeśli po prostu bym to zrobił, w końcu otrzymam podział na symbol i otrzymam listę.
+
+87
+00:06:09,030 --> 00:06:14,360
+Chcę drugi element na tej liście, co oznacza, że chcę iść dalej i zdobyć jeden na drugim.
+
+88
+00:06:14,430 --> 00:06:16,920
+A jeśli to zrobię, otrzymam właściwą odpowiedź.
+
+89
+00:06:16,950 --> 00:06:20,810
+Ta domena dot com.
+
+90
+00:06:20,820 --> 00:06:24,640
+Następnie chcemy stworzyć podstawową funkcję, która zwraca wartość true.
+
+91
+00:06:24,740 --> 00:06:27,940
+To słowo ps jest zawarte w łańcuchu wejściowym.
+
+92
+00:06:28,020 --> 00:06:30,910
+I znowu nie martw się o przypadki skrajne, takie jak dołączona interpunkcja.
+
+93
+00:06:30,920 --> 00:06:37,940
+Słowo pies dobrze powinniśmy wziąć pod uwagę przy kapitalizacji lub iść do przodu i zrobić to stworzyć funkcję.
+
+94
+00:06:37,940 --> 00:06:47,850
+Czwarty pies odnajdujący bierze pewną zmienną i idź do przodu i wywołaj zmienną S, a
+
+95
+00:06:47,850 --> 00:06:57,720
+następnie powiemy zwrot, sprawdzimy, czy pies jest w S, aby uwzględnić wielkość liter.
+
+96
+00:06:57,720 --> 00:07:03,060
+Posunę się naprzód i obniżę wszystko w S, a następnie podzielę je tak, aby faktycznie
+
+97
+00:07:03,060 --> 00:07:08,130
+zamieniło się w listę obiektów, a kiedy to uruchomię, to staje się prawdą.
+
+98
+00:07:08,280 --> 00:07:09,500
+Czy są tam psy?
+
+99
+00:07:09,540 --> 00:07:12,910
+Pozwól mi wejść i pokaż, co się właściwie dzieje, kiedy przekazuję ten ciąg.
+
+100
+00:07:12,960 --> 00:07:15,480
+Powiem, że s jest równe.
+
+101
+00:07:15,570 --> 00:07:18,030
+Czy jest tu pies?
+
+102
+00:07:19,410 --> 00:07:20,210
+Uruchom.
+
+103
+00:07:20,310 --> 00:07:27,360
+A potem, jeśli zadzwonię do sprawdzonego niższego, zmniejszę skrzynkę, a potem, jeśli powiem, że podzielony
+
+104
+00:07:27,360 --> 00:07:34,800
+na części, po tym niższym, dostaję tę listę, a potem nareszcie sprawdzam tylko psa na tej liście.
+
+105
+00:07:34,800 --> 00:07:41,640
+Oto kroki, które wykonuję w tym jednym wierszu instrukcji, że chcę utworzyć funkcję, która zlicza ile
+
+106
+00:07:41,640 --> 00:07:45,000
+razy słowo pies występuje w ciągu znaków.
+
+107
+00:07:45,000 --> 00:07:48,570
+I znowu możemy ignorować przypadki skrajne.
+
+108
+00:07:49,020 --> 00:07:57,090
+Pójdziemy dalej i powiemy, że F tworzy funkcję o nazwie Count psie znaczniki, a ciąg jako t ustawi
+
+109
+00:07:57,090 --> 00:08:03,830
+naszą początkową liczbę na 0, a my powiemy słowo i ponownie powiemy s t.
+
+110
+00:08:03,880 --> 00:08:15,390
+Niższy podział w taki sam sposób, w jaki zrobiliśmy dla ostatniego pytania, a następnie dwukropek, jeśli to słowo jest równe psu, będziemy dodawać
+
+111
+00:08:16,560 --> 00:08:18,610
+1 do zliczeń.
+
+112
+00:08:18,720 --> 00:08:22,590
+Powiedzmy, że liczba jest równa liczbie plus 1.
+
+113
+00:08:22,980 --> 00:08:26,070
+Można więc powiedzieć, że liczba jest równa liczbie plus 1 lub skrócona.
+
+114
+00:08:26,070 --> 00:08:29,690
+To, co niektórzy ludzie lubią robić, to po prostu powiedzieć plus równa się 1.
+
+115
+00:08:29,730 --> 00:08:31,880
+I to jest dokładnie to samo.
+
+116
+00:08:31,890 --> 00:08:34,540
+W końcu wrócę po prostu na sam koniec.
+
+117
+00:08:34,740 --> 00:08:37,470
+Mój rachunek, który jest liczbą razy widziałem tego słowa psa.
+
+118
+00:08:37,470 --> 00:08:42,850
+Teraz jeśli przejdziemy dalej i uruchomimy to, otrzymamy poprawną odpowiedź tutaj.
+
+119
+00:08:43,020 --> 00:08:47,670
+Następnie chcieliśmy użyć wyrażeń lambda w funkcji filtru, aby odfiltrować wyrazy z listy,
+
+120
+00:08:47,670 --> 00:08:49,490
+które nie rozpoczynają litery S.
+
+121
+00:08:49,650 --> 00:08:56,460
+Na przykład mamy CQ to lista słów, które powinny zostać przefiltrowane do zupy, a następnie sałatki.
+
+122
+00:08:56,460 --> 00:08:58,650
+Zobaczmy, jak możemy to zrobić.
+
+123
+00:08:58,650 --> 00:09:06,030
+Zamierzam powiedzieć filtr, a następnie wykorzystam wyraz twarzy.
+
+124
+00:09:06,090 --> 00:09:14,100
+To zajmie słowo i sprawdzi, czy pierwsze elementy w tym łańcuchu słów są
+
+125
+00:09:14,100 --> 00:09:23,060
+równe S, a potem nie przechodzą sekwencji, a potem w końcu wyrzucę całość jako listę.
+
+126
+00:09:24,060 --> 00:09:25,170
+I to jest odpowiedź.
+
+127
+00:09:25,170 --> 00:09:26,480
+Zupa i sałatka.
+
+128
+00:09:26,550 --> 00:09:32,280
+Tak więc dla philtre, to wyrażenie lambda lub funkcja, pudding, który przekazujesz, musi
+
+129
+00:09:32,280 --> 00:09:38,020
+zwrócić wartość boolowską i idziemy dalej i odfiltrowujemy sekwencję na podstawie tych wartości logicznych.
+
+130
+00:09:38,850 --> 00:09:39,150
+W porządku.
+
+131
+00:09:39,150 --> 00:09:41,160
+Oto jesteśmy na ostatecznym problemie.
+
+132
+00:09:41,280 --> 00:09:42,650
+Problem jest taki.
+
+133
+00:09:42,670 --> 00:09:46,570
+Jedziesz zbyt szybko i zatrzymuje Cię policjant.
+
+134
+00:09:46,620 --> 00:09:50,310
+Musisz napisać funkcję, która zwróci jeden z trzech możliwych wyników.
+
+135
+00:09:50,310 --> 00:09:53,000
+Brak biletu na drobny bilet lub duży bilet.
+
+136
+00:09:53,190 --> 00:09:56,650
+Jeśli twoja prędkość wynosi 60 lub mniej, wynik nie jest biletem.
+
+137
+00:09:56,700 --> 00:10:01,890
+Jeśli prędkość zawiera się między 61 a 80 włącznie Wynik jest mały.
+
+138
+00:10:01,890 --> 00:10:06,870
+Jeśli prędkość wynosi 81 lub więcej, wynikiem jest duży bilet, a im mniej urodziny
+
+139
+00:10:06,870 --> 00:10:12,760
+są zakodowane jako wartość boolowska w parametrach funkcji na urodziny, twoja prędkość może być o 5 wyższa.
+
+140
+00:10:12,780 --> 00:10:14,120
+We wszystkich przypadkach.
+
+141
+00:10:14,340 --> 00:10:15,800
+Znaczenie, jeśli są to twoje urodziny.
+
+142
+00:10:15,810 --> 00:10:22,830
+Więc jeśli podkreślenie urodzin jest prawdziwe, to ograniczenie prędkości jest podnoszone dla Ciebie o pięć mil lub pięć kilometrów
+
+143
+00:10:22,830 --> 00:10:23,970
+na godzinę.
+
+144
+00:10:24,420 --> 00:10:26,290
+OK, chodźmy dalej i zacznijmy.
+
+145
+00:10:26,310 --> 00:10:29,840
+Usuniemy te wcześniejsze oświadczenia.
+
+146
+00:10:29,910 --> 00:10:34,070
+Pierwszą rzeczą, którą chcę zrobić, to sprawdzenie, czy są to czyjeś urodziny i odpowiednio dostosować prędkość.
+
+147
+00:10:34,080 --> 00:10:37,080
+Powie, że jeśli jest
+
+148
+00:10:40,650 --> 00:10:48,500
+to poród, powiedzą, że prędkość jest równa prędkości minus pięć, a potem jeszcze.
+
+149
+00:10:49,050 --> 00:10:57,420
+Przyspieszenie jest równe prędkości, a następnie przejdziemy teraz do sprawdzenia, czy nie
+
+150
+00:10:57,450 --> 00:10:59,590
+przyspieszono warunków biletów.
+
+151
+00:10:59,640 --> 00:11:06,450
+Więc znowu, jeśli prędkość przekracza 80, to jest duży bilet.
+
+152
+00:11:06,510 --> 00:11:11,160
+Więc pójdę dalej i zwrócę duży bilet na sznurki.
+
+153
+00:11:12,680 --> 00:11:23,820
+Potem powiemy, że jeśli prędkość przekroczy 60. Cóż, to zwróci nam mały bilet, a inaczej
+
+154
+00:11:26,040 --> 00:11:27,540
+będziemy musieli.
+
+155
+00:11:27,570 --> 00:11:32,870
+Innym, który byłby po prostu biletem powrotnym.
+
+156
+00:11:33,120 --> 00:11:34,410
+A potem możemy iść dalej i uruchomić to.
+
+157
+00:11:34,410 --> 00:11:40,040
+Tak więc 81 zazwyczaj byłby dużym biletem, ale ponieważ to twoje urodziny, powiemy, że to prawda.
+
+158
+00:11:40,080 --> 00:11:41,700
+To powinien być mały bilet.
+
+159
+00:11:41,940 --> 00:11:46,910
+I mamy to i 81 fałszywych Studni, to zdecydowanie duży bilet.
+
+160
+00:11:46,980 --> 00:11:47,840
+W porządku.
+
+161
+00:11:47,880 --> 00:11:49,620
+Mam nadzieję, że podobają Ci się rozwiązania.
+
+162
+00:11:49,620 --> 00:11:54,390
+Możesz zadać dowolne pytania na forach pytań i odpowiedzi, a ja z chęcią Ci pomogę.
+
+163
+00:11:54,390 --> 00:11:56,220
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

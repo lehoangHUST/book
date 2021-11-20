@@ -1,0 +1,195 @@
+1
+00:00:05,190 --> 00:00:09,870
+Witam wszystkich i zapraszam na wykład bez obłędu i spinki do mankietów.
+
+2
+00:00:09,870 --> 00:00:15,890
+W tym wykładzie poznajemy nieco spoza spinki do mankietów spinki, które pozwalają nam tworzyć interaktywne wizualizacje
+
+3
+00:00:17,260 --> 00:00:23,730
+po cichu to interaktywna biblioteka wizualizacji, która jest open source, a spinki do mankietów łączą tę bibliotekę z
+
+4
+00:00:23,730 --> 00:00:24,750
+pandami .
+
+5
+00:00:24,870 --> 00:00:29,490
+W ten sposób będziemy mogli tworzyć interaktywne wizualizacje bezpośrednio poza naszą ramą danych.
+
+6
+00:00:30,180 --> 00:00:35,480
+Zanim jednak zaczniemy eksplorować te biblioteki, będziemy musieli je zainstalować.
+
+7
+00:00:35,880 --> 00:00:41,100
+Będziesz musiał użyć Pipp do zainstalowania tych bibliotek w linii poleceń lub w terminalu i możesz napisać spinki
+
+8
+00:00:41,100 --> 00:00:44,720
+do mankietów w stylu Pitmana, Lee i Pipp, instalując spinki do mankietów.
+
+9
+00:00:44,730 --> 00:00:47,750
+To powinno nadal działać, nawet jeśli używasz dystrybucji Anacondy.
+
+10
+00:00:47,790 --> 00:00:53,700
+Te dwie biblioteki po prostu nie są dostępne na instalacji Konda w tym momencie, więc używaj pipin bez
+
+11
+00:00:53,710 --> 00:00:58,650
+plotowania i spinki do mankietów Pippina na terminalu linii poleceń, aby uzyskać te biblioteki.
+
+12
+00:01:00,300 --> 00:01:04,170
+A teraz przejdźmy szybko do oficjalnej strony internetowej przed następnym wykładem, aby pokazać,
+
+13
+00:01:04,170 --> 00:01:05,990
+jak korzystać z tych bibliotek.
+
+14
+00:01:06,000 --> 00:01:09,110
+Zamierzam iść dalej i przeskoczyć na oficjalną stronę internetową Platisi.
+
+15
+00:01:09,630 --> 00:01:09,920
+W porządku.
+
+16
+00:01:09,930 --> 00:01:11,750
+Jestem na dzikiej stronie internetowej.
+
+17
+00:01:11,820 --> 00:01:16,380
+Ustawia P L O T L Y i możesz sprawdzić stronę internetową.
+
+18
+00:01:16,390 --> 00:01:22,320
+Jest wiele informacji na ten temat w krótkiej notatce plotless jest również firmą, ale zarabiają
+
+19
+00:01:22,320 --> 00:01:25,590
+pieniądze poprzez hosting swoich wizualizacji i hostingu pulpitów.
+
+20
+00:01:25,620 --> 00:01:30,900
+Jeśli chcesz zachować wszystko na poziomie lokalnym lub go hostować, biblioteka działająca na wszystkich tych funkcjach
+
+21
+00:01:30,990 --> 00:01:32,690
+jest otwarta i darmowa.
+
+22
+00:01:32,910 --> 00:01:37,480
+Więc nie martw się, nie będziesz musiał płacić za coś uprzejmie i grzecznie.
+
+23
+00:01:37,560 --> 00:01:42,120
+Jest kompatybilny z różnymi narzędziami, takimi jak nasz program Matlab Excel i Javascript.
+
+24
+00:01:42,270 --> 00:01:44,830
+Ale skupimy się na używaniu go w Pythonie.
+
+25
+00:01:44,830 --> 00:01:49,440
+Jeśli pójdziesz dalej i klikniesz na ten link Pythona, otrzymasz link do strony z Pythonem.
+
+26
+00:01:49,890 --> 00:01:52,080
+Pokaże Ci, jak zacząć.
+
+27
+00:01:52,110 --> 00:01:56,500
+Co ciekawe, będą mieli link do Pandy i właśnie to zamierzamy skupić się
+
+28
+00:01:56,500 --> 00:02:00,520
+na używaniu plotek z pandami, a my użyjemy bezbłędnie pand.
+
+29
+00:02:00,600 --> 00:02:05,940
+Musisz zainstalować fabułę zgodnie z instrukcją, a także będziesz musiał
+
+30
+00:02:05,940 --> 00:02:08,130
+instalować spinki do mankietów.
+
+31
+00:02:08,130 --> 00:02:08,820
+Spinki do mankietów.
+
+32
+00:02:08,820 --> 00:02:13,390
+Czy biblioteka, która łączy fabułę Lee z pandami.
+
+33
+00:02:13,510 --> 00:02:19,010
+I mam zamiar iść dalej i przejść do strony ze spinkami do mankietów.
+
+34
+00:02:19,050 --> 00:02:22,230
+I to jest właśnie jej strona z spinkami do mankietów i spinkami do mankietów.
+
+35
+00:02:22,410 --> 00:02:28,170
+Jest to narzędzie zwiększające produktywność, które pozwala szybko wywoływać fabułę, tak jak w przypadku pand,
+
+36
+00:02:28,170 --> 00:02:34,120
+na przykład, gdy wybrana jest metoda wykresu punktowego, w której faktycznie utworzysz interaktywną wizualizację za
+
+37
+00:02:34,120 --> 00:02:36,740
+pomocą fabuły Lee w krótkim zrzeczeniu.
+
+38
+00:02:36,750 --> 00:02:41,910
+Właściwie to ja sam przyczyniłem się do tej biblioteki i faktycznie możesz zobaczyć moją połączoną gałąź tutaj,
+
+39
+00:02:41,910 --> 00:02:43,320
+tutaj, na import Jey.
+
+40
+00:02:43,740 --> 00:02:48,750
+Ale w każdym razie istnieją całkiem fajne tutoriale pod spinkami do mankietów, a my przejrzymy
+
+41
+00:02:48,750 --> 00:02:54,030
+niektóre z tych tematów i pokażemy, jak efektywnie używać spinki do mankietów, aby stworzyć naprawdę ładnie
+
+42
+00:02:54,060 --> 00:02:55,980
+wyglądające interaktywne jego leniwe działania.
+
+43
+00:02:56,270 --> 00:03:02,190
+A oto tylko przykład jednego U. K. swap rates i widać, że jest to powierzchnia
+
+44
+00:03:02,190 --> 00:03:04,300
+3D i odbywa się to bezpośrednio z ramki danych.
+
+45
+00:03:04,320 --> 00:03:11,120
+Jest kilka uwag do wydania tutaj, a potem jest kilka linków do dokumentacji powyżej.
+
+46
+00:03:11,130 --> 00:03:11,760
+W porządku.
+
+47
+00:03:11,910 --> 00:03:16,740
+Zacznijmy i zacznijmy w następnym wykładzie, że pokażemy wam, jak kodować
+
+48
+00:03:17,010 --> 00:03:20,220
+interaktywne wizualizacje za pomocą tych bibliotek.
+
+49
+00:03:20,220 --> 00:03:22,080
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

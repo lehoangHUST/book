@@ -1,0 +1,951 @@
+1
+00:00:06,480 --> 00:00:11,210
+Bună ziua tuturor și bine ați venit la plăcintă în cursul de sărutare și selecție din această prelegere.
+
+2
+00:00:11,230 --> 00:00:15,040
+Vom discuta cum să selectați elementele sau grupurile de elemente dintr-o plăcintă.
+
+3
+00:00:15,060 --> 00:00:19,260
+Bine, să mergem mai departe și să pornim la notebook-ul Juber pentru a începe.
+
+4
+00:00:19,260 --> 00:00:19,760
+In regula.
+
+5
+00:00:19,800 --> 00:00:21,360
+Ești aici la cartea Jupiter.
+
+6
+00:00:21,360 --> 00:00:23,880
+Am spus deja arbitri importanți și P ..
+
+7
+00:00:24,040 --> 00:00:29,010
+Știți de ce voi începe să încep prin a crea o matrice de probă Voi spune că variabila
+
+8
+00:00:29,040 --> 00:00:31,370
+A R R este egală cu sfârșitul p.
+
+9
+00:00:31,500 --> 00:00:33,050
+Aveți o gamă largă.
+
+10
+00:00:33,130 --> 00:00:41,700
+Doar folosind tab-ul pentru a termina autocompletarea acolo și mă duc să merg de la zero la 10 și când spun zero până la 10 vreau să spun ieșirea reală, în
+
+11
+00:00:41,700 --> 00:00:45,570
+scopul de a obține că producția voi trece și la 11 sus aici.
+
+12
+00:00:45,870 --> 00:00:50,760
+Deci acum am o serie de 11 elemente care merg de la zero la zece.
+
+13
+00:00:50,760 --> 00:00:57,330
+Cea mai simplă modalitate de a alege unul sau mai multe elemente dintr-o matrice arata foarte mult ca indexarea dintr-o
+
+14
+00:00:57,330 --> 00:00:58,110
+listă Python.
+
+15
+00:00:58,140 --> 00:01:03,060
+Practic veți folosi paranteze și notație pentru a face acest lucru.
+
+16
+00:01:03,140 --> 00:01:07,500
+Mergeți mai departe și faceți este să introduceți numele variabilei propriu-zis al matricei.
+
+17
+00:01:07,600 --> 00:01:13,530
+Paranteze pătrate Passen și apoi pentru a obține o singură valoare la un indice pe care îl puteți face doar trecând un număr.
+
+18
+00:01:14,010 --> 00:01:21,000
+Dacă vreau valoarea la indexul 8, pot trece un număr de 8 și în acest caz voi reveni la valoarea din x
+
+19
+00:01:21,000 --> 00:01:21,470
+8.
+
+20
+00:01:21,540 --> 00:01:27,030
+Este de fapt 8 din moment ce am folosit doar aranjat pentru a crea această matrice dacă vreau să obțin valorile
+
+21
+00:01:27,030 --> 00:01:29,330
+într-un interval la fel ca o listă python.
+
+22
+00:01:29,340 --> 00:01:37,010
+Pot folosi notația de felie, ceea ce înseamnă că pot indica indicele de pornire și indicele stop.
+
+23
+00:01:37,080 --> 00:01:43,650
+Deci, dacă merg înainte și spun o singură colonie cinci, va începe indexul 1 care este numărul 1 și
+
+24
+00:01:43,650 --> 00:01:49,470
+merge tot până la indexul 5 care este numărul patru, deoarece indexarea începe de la zero.
+
+25
+00:01:49,500 --> 00:01:57,990
+Deci, pentru a arăta un alt exemplu de acest lucru pot spune zero colon 5 și care returnează toate valorile de la
+
+26
+00:01:57,990 --> 00:02:00,710
+0 la fel este indexul 5.
+
+27
+00:02:00,750 --> 00:02:06,840
+De asemenea, pot elimina punctul de oprire sau punctul de start pentru a merge mai departe și indică faptul că vreau orice
+
+28
+00:02:06,900 --> 00:02:07,890
+altceva în matrice.
+
+29
+00:02:07,950 --> 00:02:10,190
+Totul de la începutul dreptului.
+
+30
+00:02:10,200 --> 00:02:17,710
+De exemplu, dacă vreau ca totul să indice 6, în loc să specificăm parametrul de pornire ca 0, pot să pun un
+
+31
+00:02:17,790 --> 00:02:24,210
+colon și apoi să pun totul pe rândul 6 al lui Ellora până la începutul matricei pentru a indexa
+
+32
+00:02:24,270 --> 00:02:24,860
+6.
+
+33
+00:02:24,870 --> 00:02:30,870
+Deci, este același lucru cu a spune zero colon 6, dar eu salvez un pic de tastare prin
+
+34
+00:02:30,870 --> 00:02:32,990
+punerea doar în cărbune în sine.
+
+35
+00:02:32,990 --> 00:02:43,060
+În mod similar, ceea ce pot continua și face este să spuneți dacă se dorește să se înceapă la un anumit indice și să se ia totul până
+
+36
+00:02:43,080 --> 00:02:50,340
+la capătul matricei. Pot să folosesc aceeași stație pe care am făcut-o într-o listă Python, folosind o notație de
+
+37
+00:02:50,700 --> 00:02:51,940
+feliere pentru cărbune.
+
+38
+00:02:52,170 --> 00:02:56,910
+Ceva de remarcat când utilizați această notație a unui număr și apoi un colon este că nu vă
+
+39
+00:02:56,910 --> 00:02:59,410
+apucați de fapt la indexul 5 și mai departe.
+
+40
+00:02:59,490 --> 00:03:05,670
+Gândiți totul la indexul 5, deoarece amintiți-vă că indexarea, în măsura în care notația din Python începe
+
+41
+00:03:05,670 --> 00:03:06,780
+de la zero.
+
+42
+00:03:06,780 --> 00:03:15,210
+Deci, 5 aici este de fapt indicele 6, ceea ce înseamnă că această notație a celor cinci Colon spune că totul este în afara indexului
+
+43
+00:03:15,210 --> 00:03:15,600
+5.
+
+44
+00:03:15,600 --> 00:03:21,200
+Deci, asta va fi cinci șase șapte opt nouă zece, deoarece amintesc că indexul 5 este de fapt aici la patru.
+
+45
+00:03:21,750 --> 00:03:25,700
+Deoarece indexarea începe de la zero, ați luat cinci elemente.
+
+46
+00:03:25,830 --> 00:03:32,730
+Semnificația dacă spun cinci colonuri se ia tot dincolo de cel de-al cincilea indice care are loc la patru și poți să mergi
+
+47
+00:03:32,730 --> 00:03:38,480
+mai departe și să revizuiți notația de listă de listă Python dacă vrei mai multe informații despre acest colon.
+
+48
+00:03:38,550 --> 00:03:42,890
+Dar, în esență, aceasta funcționează exact la fel ca în cazul unei liste normale Python.
+
+49
+00:03:43,300 --> 00:03:49,310
+Nici o matrice nu diferă de o listă normală Python din cauza capacității lor de difuzare.
+
+50
+00:03:49,350 --> 00:03:51,710
+Continuați și arătați un exemplu în acest sens.
+
+51
+00:03:51,810 --> 00:03:56,390
+O să-mi iau matricea și să apuc elemente.
+
+52
+00:03:56,440 --> 00:03:58,060
+Zero și cinci.
+
+53
+00:03:58,110 --> 00:04:04,080
+Deci, va fi zero o două și trei patru și apoi o consider egală cu numărul 100.
+
+54
+00:04:04,140 --> 00:04:05,560
+Și ce-o să facă?
+
+55
+00:04:05,820 --> 00:04:12,830
+Ea va difuza acea valoare la primele cinci cifre pentru a fi 100.
+
+56
+00:04:12,960 --> 00:04:21,510
+Am de gând să meargă mai departe și să resetați matricea și veți vedea de ce în doar o secundă dacă voi arăta matricea am revenit la 0
+
+57
+00:04:21,510 --> 00:04:24,350
+1 2 3 tot drumul până la 10.
+
+58
+00:04:24,600 --> 00:04:28,420
+Nu vreau să vă arăt un important nu pe felii sau rate.
+
+59
+00:04:28,440 --> 00:04:36,490
+Dacă merg înainte și creez o variabilă numită slice sub scorul de subliniere sunt pentru Array.
+
+60
+00:04:36,500 --> 00:04:46,360
+Și am spus egal cu o felie de matrice, de exemplu, 06 Este bine să vedem că felia din matrice aici avem matricele acolo sunt
+
+61
+00:04:46,380 --> 00:04:48,590
+două două trei patru cinci.
+
+62
+00:04:48,600 --> 00:04:51,960
+Practic prima bucată din jumătate din matrice.
+
+63
+00:04:52,200 --> 00:04:59,580
+Dacă difuzez pe Saray weenie spun o felie de matrice folosesc un colon.
+
+64
+00:04:59,580 --> 00:05:02,550
+Asta înseamnă că iau totul în felie.
+
+65
+00:05:02,570 --> 00:05:06,820
+Încerc să transmit acest lucru pentru a fi un alt număr, cum ar fi 99.
+
+66
+00:05:06,900 --> 00:05:11,780
+Asta înseamnă că atunci când verifică o felie de matrice văd o grămadă de 99.
+
+67
+00:05:12,000 --> 00:05:14,480
+Aici trebuie să acordați o atenție deosebită.
+
+68
+00:05:14,520 --> 00:05:21,800
+Dacă am sunat înapoi la matrice, de fapt, sa schimbat 99 nu doar pe felie, ci pe matrice originală.
+
+69
+00:05:21,810 --> 00:05:22,960
+Am sunat doi.
+
+70
+00:05:23,190 --> 00:05:28,950
+Deci, ar trebui să știți cum această modificare are loc și în matricea originală, ceea ce înseamnă că datele nu sunt copiate.
+
+71
+00:05:29,130 --> 00:05:30,560
+E doar o viziune.
+
+72
+00:05:30,710 --> 00:05:32,100
+Deci, matricea originală.
+
+73
+00:05:32,280 --> 00:05:38,250
+Iar motivul pentru care face acest lucru este de a evita problemele de memorie cu foarte mari arrays, ceea ce înseamnă
+
+74
+00:05:38,250 --> 00:05:41,140
+că pi nu va seta automat copii ale matricelor.
+
+75
+00:05:41,380 --> 00:05:47,940
+Dacă doriți într-adevăr o copie și nu o referință la matricea originală pe care o puteți face,
+
+76
+00:05:47,940 --> 00:05:49,410
+specificați exact copia.
+
+77
+00:05:49,530 --> 00:05:51,480
+Pot să fac așa ceva.
+
+78
+00:05:51,720 --> 00:06:01,620
+Pot merge mai departe și să spun că subliniați copia și folosiți metoda de copiere în afara matricei pentru a indica în mod specific
+
+79
+00:06:01,620 --> 00:06:03,320
+că vreau o copie.
+
+80
+00:06:03,450 --> 00:06:09,410
+Deci, dacă mă uit la matricea mea este 9 9 9 9 9 x cetera și apoi 6 7 8 9 10.
+
+81
+00:06:09,780 --> 00:06:14,320
+Și dacă mă uit la copia mea, este același lucru.
+
+82
+00:06:14,500 --> 00:06:20,550
+Dar dacă fac o schimbare la copia mea de array, poate prin transmiterea fiecărei valori la 100.
+
+83
+00:06:20,940 --> 00:06:25,420
+Și mă uit la matrice copie fiecare valoare este de 100.
+
+84
+00:06:25,440 --> 00:06:32,190
+Dar acea matrice originală nu este încă afectată de acea emisiune în comandă la 100.
+
+85
+00:06:32,190 --> 00:06:34,070
+Continuați și examinați notele pe această temă.
+
+86
+00:06:34,120 --> 00:06:40,360
+Acest lucru este puțin confuz pentru dvs., dar premisa de bază aici este că dacă luați de fapt
+
+87
+00:06:40,360 --> 00:06:47,370
+o felie de matrice și o setați ca o variabilă fără a spune în mod explicit că vreți o copie a
+
+88
+00:06:47,380 --> 00:06:53,340
+matricei, trebuie să rețineți că sunteți doar văzând un link spre matricea originală și că modificările pe care
+
+89
+00:06:53,340 --> 00:06:56,760
+le faceți vor afecta de fapt acea matrice originală.
+
+90
+00:06:56,760 --> 00:06:57,400
+O.K.
+
+91
+00:06:57,690 --> 00:07:00,550
+Hai să vorbim despre indexarea unui array.
+
+92
+00:07:00,690 --> 00:07:02,810
+Altfel cunoscut sub numele de matrice.
+
+93
+00:07:02,880 --> 00:07:07,920
+Voi merge și voi șterge toate celulele pentru o secundă.
+
+94
+00:07:07,960 --> 00:07:15,180
+Bine, tocmai am eliberat toate celulele de aici și o să facem este să mergem mai departe și să creăm un d.
+
+95
+00:07:17,520 --> 00:07:24,020
+Voi spune N. P. și voi trece într-o listă imbricată.
+
+96
+00:07:24,930 --> 00:07:37,830
+Așa că am să spun 5 10 15 20 25 30 și apoi în cele din urmă 35 40 45.
+
+97
+00:07:38,430 --> 00:07:44,280
+Aș vrea să ieșesc și să arăt că la matrice și aici am trei rânduri cu trei coloane
+
+98
+00:07:44,280 --> 00:07:46,010
+este pentru ei matricea misială.
+
+99
+00:07:46,050 --> 00:07:46,820
+Grozav.
+
+100
+00:07:46,830 --> 00:07:47,430
+In regula.
+
+101
+00:07:47,430 --> 00:07:52,880
+Există două formate generale pentru a prinde elemente dintr-o matrice sau matrice.
+
+102
+00:07:52,880 --> 00:07:54,500
+Există dublu suport pentru asta.
+
+103
+00:07:54,570 --> 00:07:57,270
+Și apoi este formatul unic de suport cu virgula.
+
+104
+00:07:57,270 --> 00:08:01,570
+Dați-mi voie să vă arăt formatul dublu-bracket și apoi vă voi arăta un exemplu de format
+
+105
+00:08:01,560 --> 00:08:07,200
+single bracket, care este formatul pe care l-aș recomanda să îl folosiți, dar ar trebui să știți atât în ​​cazul în
+
+106
+00:08:07,200 --> 00:08:08,750
+care îi întâlniți în sălbăticie.
+
+107
+00:08:08,760 --> 00:08:10,970
+Deci sunt din nou cele două teorii ale mele.
+
+108
+00:08:11,120 --> 00:08:18,390
+Ei bine, sa zicem ca am vrut sa apuc cifra 5, asa ca este in primul rand sau in indexul
+
+109
+00:08:18,390 --> 00:08:27,910
+0 si in primul index al coloanei 0 pentru notatia cu dublu consola pot sa pasan in primul rand pe randul dorit si apoi pe coloana pe care
+
+110
+00:08:27,900 --> 00:08:28,700
+o doresc.
+
+111
+00:08:28,770 --> 00:08:32,070
+Deci, trecerea în 00 aici va returna cifra 5.
+
+112
+00:08:32,230 --> 00:08:36,410
+Deoarece acestea sunt elementele din primul rând din prima coloană.
+
+113
+00:08:36,420 --> 00:08:44,640
+Ce pot face este să șterg și să fac doar un singur set de paranteze și să indice un întreg Roback.
+
+114
+00:08:44,670 --> 00:08:55,320
+Deci, acest lucru va indexa întregul rând de index 0 care înseamnă 5 10 15 și dacă vreau să spun elementul
+
+115
+00:08:55,350 --> 00:09:03,000
+25 Ei bine, acesta este indexul unu pentru rândul din indexul său unul pentru coloană.
+
+116
+00:09:03,000 --> 00:09:06,080
+Așa că pot spune 1 1 și toate acestea retur 25.
+
+117
+00:09:06,100 --> 00:09:11,980
+Ceea ce vreau să faceți este să încercați să vedeți dacă acum puteți întrerupe videoclipul și să încercați să luați
+
+118
+00:09:11,970 --> 00:09:15,620
+elemente din matrice în mod individual folosind această notație cu dublu conectivitate.
+
+119
+00:09:15,660 --> 00:09:15,910
+In regula.
+
+120
+00:09:15,930 --> 00:09:19,710
+Să presupunem că vrem să luăm 40 ca doar un ultim exemplu.
+
+121
+00:09:19,950 --> 00:09:22,700
+Este și un indice de rând.
+
+122
+00:09:23,310 --> 00:09:25,290
+Și este o coloană în următoarea.
+
+123
+00:09:25,680 --> 00:09:27,010
+Deci sunt 40 de ani.
+
+124
+00:09:27,120 --> 00:09:29,520
+Asta e notația dublă.
+
+125
+00:09:29,520 --> 00:09:30,380
+Ei bine ar trebui să faceți.
+
+126
+00:09:30,380 --> 00:09:36,390
+Totuși mi-aș recomanda folosirea notației cu virgulă unică.
+
+127
+00:09:36,390 --> 00:09:42,630
+Și, în esență, ceea ce face este că înlocuiește setul dublu de paranteze cu doar o
+
+128
+00:09:42,630 --> 00:09:45,790
+virgulă și treceți în rândul rândului de coloană.
+
+129
+00:09:45,780 --> 00:09:54,440
+De exemplu, să spunem că am dorit cifra 30 pe care o voi trece în indexul 1 deoarece este indexul unu la rând și apoi este
+
+130
+00:09:54,930 --> 00:09:56,300
+în coloana a treia.
+
+131
+00:09:56,320 --> 00:10:03,010
+Deci 0 1 2 este în index la coloană și asta îmi dă 30.
+
+132
+00:10:03,210 --> 00:10:11,040
+Și asta este același lucru cu a spune doar ceea ce sunt subliniat pentru mine și de a face cu paranteze
+
+133
+00:10:11,050 --> 00:10:17,200
+duble Eu aș recomanda să utilizați întotdeauna această singură coadă de o notație comună, deoarece, de
+
+134
+00:10:17,200 --> 00:10:19,990
+obicei, este mai puțin predispus la eroare.
+
+135
+00:10:19,990 --> 00:10:24,730
+Acum, să ne imaginăm că nu vroiați elemente individuale ci bucăți reale ale.
+
+136
+00:10:24,900 --> 00:10:31,870
+De exemplu, doriți niște matrice din această matrice, puteți folosi colonul pentru notația Nurit pentru a prinde
+
+137
+00:10:31,870 --> 00:10:36,620
+anumite secțiuni ale întregului la matrice și un fel de elemente.
+
+138
+00:10:36,820 --> 00:10:38,730
+Voi merge și vă voi arăta cum să faceți asta.
+
+139
+00:10:38,770 --> 00:10:44,230
+Vom șterge această a doua celulă și vom arăta câteva exemple.
+
+140
+00:10:44,400 --> 00:10:47,640
+Să spunem că vrem să luăm din colțul din dreapta sus.
+
+141
+00:10:47,760 --> 00:10:54,160
+Înseamnă că vreau să spun 10 15 și 25 30, așa că acest colț de sus aici este ceea ce vreau să
+
+142
+00:10:54,150 --> 00:10:59,860
+apuc atunci când pot merge mai departe și face este să folosiți notația felie pentru a face acest lucru.
+
+143
+00:11:00,040 --> 00:11:12,390
+Deci pot spune să ia totul pentru a chema un rând și apoi pentru a apuca de la coloana 1 încoace și care se întoarce
+
+144
+00:11:12,390 --> 00:11:14,890
+10 15 25 30.
+
+145
+00:11:14,880 --> 00:11:16,920
+Lasă-mă să intru și să-l rupez încă o dată.
+
+146
+00:11:17,130 --> 00:11:24,880
+În ceea ce privește rândurile Ceea ce spunem este să luăm totul, dar să nu includem rândurile 0 și 1 ca colon.
+
+147
+00:11:25,140 --> 00:11:26,520
+Dar nu includeți două.
+
+148
+00:11:26,560 --> 00:11:33,790
+Spun și ea felie și voi continua să arăt că este doar o singură comandă, așa că am
+
+149
+00:11:33,870 --> 00:11:43,300
+spus că Colon este cel care întoarce aceste două rânduri rândul 0 și rândul 1, apoi prin adăugarea deasupra a ceea ce spun
+
+150
+00:11:43,300 --> 00:11:49,590
+până la coloanele încep să apuce totul de la coloana 1 până la capăt,
+
+151
+00:11:49,840 --> 00:11:59,520
+ceea ce înseamnă în principiu doar cădere peste această coloană 0 și care returnează aceste două subsecțiuni mici 10 15 și apoi 25 30.
+
+152
+00:11:59,520 --> 00:12:00,730
+In regula.
+
+153
+00:12:00,730 --> 00:12:08,280
+Ceea ce aș recomanda să faceți acum este să vă abțineți subsecțiunile, de exemplu, 20 25 30 și 35 40
+
+154
+00:12:08,290 --> 00:12:15,700
+45 și să vedeți dacă puteți utiliza notația de felie împreună cu această singură notație de notare cu virgulă cu
+
+155
+00:12:15,970 --> 00:12:18,790
+pi pentru a obține subsecțiunile lui Saray.
+
+156
+00:12:18,970 --> 00:12:26,920
+Și vă încurajez să vedeți și dacă puteți face o subsecțiune mai mare și prindeți mai bine OK, sperăm să aveți destulă practică
+
+157
+00:12:26,910 --> 00:12:29,350
+cu asta dacă doriți mai multe exemple.
+
+158
+00:12:29,350 --> 00:12:34,920
+Puteți vizita oricând notebook-ul pentru această prelegere, care are câteva exemple de aruncare a matricei 2-D pe tot parcursul
+
+159
+00:12:36,220 --> 00:12:41,110
+cursului. Nu vom face prea mult din acest fel de feliere de indexare fantezie. Deci, vă este
+
+160
+00:12:41,110 --> 00:12:41,680
+confuz.
+
+161
+00:12:41,670 --> 00:12:45,820
+Nu trebuie să vă faceți griji prea mult, deoarece de fapt nu o va face așa de des
+
+162
+00:12:45,820 --> 00:12:46,730
+de-a lungul cursului.
+
+163
+00:12:47,010 --> 00:12:51,700
+Ei bine, de obicei, apuc doar simple simple elemente sau rânduri întregi sau coloane.
+
+164
+00:12:51,760 --> 00:12:56,430
+De obicei, ei nu apucă subsecțiunile subsecțiunilor așa cum am făcut aici.
+
+165
+00:12:56,440 --> 00:12:57,020
+In regula.
+
+166
+00:12:57,280 --> 00:13:02,290
+Să mergem mai departe și să trecem la cea mai importantă metodă de selecție pe care o
+
+167
+00:13:02,290 --> 00:13:05,750
+veți folosi mai des în acest curs, care este selecția condiționată.
+
+168
+00:13:05,810 --> 00:13:15,240
+Mă duc să fac și să creez o matrice nouă, doar o singură matrice să spună și Pido să aranjeze o virgulă
+
+169
+00:13:15,280 --> 00:13:18,180
+11 și să verifice această matrice.
+
+170
+00:13:18,850 --> 00:13:19,350
+O.K.
+
+171
+00:13:19,360 --> 00:13:23,300
+Deci pentru această gamă am una câte două trei patru cinci șase șapte opt nouă 10.
+
+172
+00:13:23,740 --> 00:13:30,580
+Ceea ce pot face este să pot lua această matrice combinându-l cu operatorii de comparare pentru a obține de fapt o gamă
+
+173
+00:13:30,630 --> 00:13:32,240
+completă booleană din asta.
+
+174
+00:13:32,340 --> 00:13:40,450
+Și ceea ce vreau să spun este dacă o comparăm cu o singură cifră, de exemplu o sunt mai mari decât 5. Voi
+
+175
+00:13:40,450 --> 00:13:42,730
+primi o serie de valori booleene.
+
+176
+00:13:42,730 --> 00:13:45,010
+Observați că se menționează D tip B O L.
+
+177
+00:13:45,250 --> 00:13:47,110
+Deci acestea sunt valori adevărate sau false.
+
+178
+00:13:47,250 --> 00:13:52,990
+Și mă dă fals ori de câte ori această comparație este falsă și adevărată sau că comparația era adevărată.
+
+179
+00:13:53,160 --> 00:13:59,650
+Și apoi pot merge mai departe și salvați asta, poate că veți sublinia matricea.
+
+180
+00:13:59,640 --> 00:14:06,270
+Deci, dacă sună subliniază bool acum, am revenit la această matrice booleană.
+
+181
+00:14:06,280 --> 00:14:09,850
+Acum, puteți folosi acest lucru pentru a face selecția condiționată.
+
+182
+00:14:09,850 --> 00:14:12,440
+Înseamnă că o pot trece în două paranteze
+
+183
+00:14:15,250 --> 00:14:19,990
+și voi obține doar rezultatele în care această matrice booleană sa întâmplat să fie adevărată.
+
+184
+00:14:19,990 --> 00:14:26,440
+Să mergem să rupem acest lucru pentru o dată mai mult obtinerea de matrice și folosind un operator de comparație pe ea
+
+185
+00:14:26,430 --> 00:14:31,020
+va reveni de fapt, o matrice boolean sensul de o serie de toate valorile boolean.
+
+186
+00:14:31,170 --> 00:14:38,200
+Apoi pot folosi acea matrice booleană pentru a indexa sau a selecta condițional elemente din matricea originală unde acest lucru
+
+187
+00:14:38,200 --> 00:14:40,220
+sa întâmplat să fie adevărat.
+
+188
+00:14:40,230 --> 00:14:46,180
+Deci, returnează doar instanțele în care matricea booleană era adevărată și mai des întâlnită
+
+189
+00:14:46,170 --> 00:14:47,450
+în două etape.
+
+190
+00:14:47,500 --> 00:14:49,480
+Veți face acest lucru într-un singur pas.
+
+191
+00:14:49,480 --> 00:14:54,490
+S-ar spune matrice și în paranteze în loc de matrice veți trece în declarația condiționată, cum ar
+
+192
+00:14:54,950 --> 00:14:59,640
+fi un r r mai mare de 5 și care va reveni același răspuns.
+
+193
+00:14:59,710 --> 00:15:04,900
+Și acesta este un fel de notație de sintaxă pe care o vom folosi tot timpul în ceea ce privește selecția condiționată.
+
+194
+00:15:06,310 --> 00:15:12,470
+De exemplu, să spunem că am vrut să cunoaștem toate elementele matricei care sunt mai mici de 3.
+
+195
+00:15:12,520 --> 00:15:20,380
+Ceea ce aș face este să spun paranteze array și apoi să spun matrice mai puțin de trei și care returnează toate elementele în cazul în care
+
+196
+00:15:20,380 --> 00:15:25,620
+este adevărat și că este genul de lucru pe care vom folosi foarte mult în acest curs, mai
+
+197
+00:15:25,970 --> 00:15:28,000
+ales o trecere la ursi panda.
+
+198
+00:15:28,030 --> 00:15:30,440
+Acesta este un fel de notație la care ar trebui să vă obișnuiți.
+
+199
+00:15:30,460 --> 00:15:37,110
+Știu că este puțin ciudat la început să vezi numele variabilei în sine, dar sperăm că o împărțim în
+
+200
+00:15:37,120 --> 00:15:40,550
+acești doi pași clarifică ce se întâmplă de fapt.
+
+201
+00:15:40,570 --> 00:15:45,510
+Tocmai treceți într-o serie de valori booleene și atunci tocmai vă întoarceți unde se întâmplă
+
+202
+00:15:45,520 --> 00:15:48,410
+vreodată să fie adevărat la indicele matricei originale.
+
+203
+00:15:48,900 --> 00:15:50,760
+Bine, asta este pentru această prelegere.
+
+204
+00:15:50,770 --> 00:15:58,390
+Ceea ce aș recomanda să faci până la un exercițiu pentru tine este să creezi un nou la matrice
+
+205
+00:15:58,420 --> 00:16:01,860
+spunând N. P. dots arr ..
+
+206
+00:16:02,080 --> 00:16:08,650
+Ei bine, mergeți mai departe și spuneți 50 și apoi reconfigurați acest lucru pentru a fi 5 la 10.
+
+207
+00:16:08,640 --> 00:16:10,990
+Nu este vorba doar de a apela o metodă în afara unei alte metode.
+
+208
+00:16:10,990 --> 00:16:17,530
+Deci, aceasta este o singură matrice și apoi aveți această mulțime de cinci cu zece.
+
+209
+00:16:17,560 --> 00:16:20,340
+Deci, 0 la 40 și apoi 0 la 9.
+
+210
+00:16:20,430 --> 00:16:23,500
+Aș recomanda pentru dvs. să vă purtați doar pentru voi.
+
+211
+00:16:23,500 --> 00:16:30,370
+Încercați să vă însuțiți în minte bucăți și apoi să vedeți dacă puteți utiliza notația de tip bracket pentru a apuca bucățile despre
+
+212
+00:16:30,370 --> 00:16:31,380
+care v-ați gândit.
+
+213
+00:16:31,380 --> 00:16:36,210
+De exemplu, poate doriți să vă luați 13 14 și 23 24.
+
+214
+00:16:36,390 --> 00:16:38,820
+Hai să ieșim și să arătăm cum ai face asta.
+
+215
+00:16:38,980 --> 00:16:41,880
+Mai întâi vreau să o despart în două rânduri și coloane.
+
+216
+00:16:41,920 --> 00:16:49,730
+Deci, 13:14 care începe la rândul 0 1 și apoi 2.
+
+217
+00:16:50,020 --> 00:16:52,830
+În sensul că vreau să apuc rândurile de la 1 la 2.
+
+218
+00:16:53,250 --> 00:16:59,680
+Am de gând să merg și să spun unul și să vă amintiți cu acest fel de notatie felie și du-te mai mult decât
+
+219
+00:16:59,670 --> 00:17:00,770
+ai nevoie de fapt.
+
+220
+00:17:01,120 --> 00:17:05,220
+Așa că spun să luați una până la capăt și să nu includeți indexul trei.
+
+221
+00:17:05,290 --> 00:17:07,310
+Deci, ar trebui să fie aceste două rânduri.
+
+222
+00:17:07,470 --> 00:17:13,040
+Hai să intrăm și să confirmăm că aici, doar spunând că ești scorul tău la prinderea acelor rânduri.
+
+223
+00:17:13,140 --> 00:17:18,450
+Un apel și trei și acest lucru funcționează practic la fel ca notația de listă normală Python.
+
+224
+00:17:18,450 --> 00:17:23,520
+Deci, aici avem un index în următor până la, dar nu și trei.
+
+225
+00:17:23,560 --> 00:17:34,170
+Și apoi pentru coloane și spun că vreau 13 14 și 23 24 care apare la coloana index trei grupe și apoi
+
+226
+00:17:34,170 --> 00:17:42,060
+vreau patru care nu includ cinci saga, dar la cinci acolo care returnează ceea ce căutam
+
+227
+00:17:42,070 --> 00:17:44,310
+13 14 23 24.
+
+228
+00:17:44,320 --> 00:17:50,600
+Aș continua să vă încurajez să faceți acest lucru prin stabilirea sondajului în propria carte de Jupiter
+
+229
+00:17:50,880 --> 00:17:55,050
+și apoi prin preluarea bucăților acestei matrici după cum considerați potrivit.
+
+230
+00:17:55,060 --> 00:17:55,610
+In regula.
+
+231
+00:17:55,720 --> 00:17:58,250
+Există mult mai mult ajutor pentru indexare în notebook.
+
+232
+00:17:58,300 --> 00:18:03,100
+Nu vă îngrijorați prea mult dacă nu vă simțiți 100% confortabil, veți obține mai multe
+
+233
+00:18:03,100 --> 00:18:05,320
+practici în exercițiul final al PI.
+
+234
+00:18:05,560 --> 00:18:09,170
+Dar într-adevăr acest lucru este doar pentru a vă face să știți ce este plăcută o plăcintă.
+
+235
+00:18:09,180 --> 00:18:14,450
+Nu vom face acest fel de notatie de feliere care deseori in cursul folosirii acestei numite notatii.
+
+236
+00:18:14,580 --> 00:18:17,540
+Vom folosi selecția condiționată folosind operatorii persoanei.
+
+237
+00:18:17,620 --> 00:18:19,060
+Mult mai mult.
+
+238
+00:18:19,060 --> 00:18:21,820
+Mulțumesc tuturor și vă văd la următoarea conferință

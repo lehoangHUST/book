@@ -1,0 +1,1031 @@
+1
+00:00:05,040 --> 00:00:10,260
+Herkese merhaba deyin ve bu derste Seaborn için dağıtım projesinin konferansına hoş
+
+2
+00:00:10,260 --> 00:00:15,990
+geldiniz, bir veri setinin dağılımını görselleştirmek için Seaborn ile farklı arsa türlerini tartışacağız.
+
+3
+00:00:16,530 --> 00:00:20,170
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+4
+00:00:21,270 --> 00:00:23,370
+Tamam burada defterimdeyim.
+
+5
+00:00:23,370 --> 00:00:29,740
+Seaborne ithal ederek başlamak istiyorum ve kongre gereğince Seaborn'u asinus olarak ithal ediyoruz.
+
+6
+00:00:29,970 --> 00:00:35,430
+Ve defterime girdiğimden beri devam edip Matt komplosunun, dizüstü bilgisayarın içindeki görselleştirmeler
+
+7
+00:00:35,430 --> 00:00:38,340
+olduğunu görebildiğim çizgide canlı yayınlayacağımı söyleyeceğim.
+
+8
+00:00:38,880 --> 00:00:39,210
+Tamam.
+
+9
+00:00:39,210 --> 00:00:44,040
+Şimdi, doğrudan yükleyebileceğiniz birkaç yerleşik veri kümesiyle birlikte bir
+
+10
+00:00:44,040 --> 00:00:45,220
+arsa bulacaksınız.
+
+11
+00:00:45,840 --> 00:00:50,480
+Ve ipucu denilen birini alıp ipuçları adlı bir veri çerçevesi olarak kaydedeceğim.
+
+12
+00:00:50,640 --> 00:00:58,210
+Bunu sadece Tipps'in Asinus yük veri setine eşit olduğunu ve ardından ip uçlarını bir dize olarak söyleyerek yapabilirsiniz.
+
+13
+00:00:59,280 --> 00:01:04,560
+Ve bu ipuçları veri setini yükleyecek ve sonra aslında çerçeve durumunun başını kontrol edebilecek ve bunun
+
+14
+00:01:04,560 --> 00:01:06,050
+gibi bir şey görüyor.
+
+15
+00:01:06,150 --> 00:01:11,580
+Burada yedi sütun var ve bu temel olarak sadece yemek yiyen ve daha sonra bir
+
+16
+00:01:11,580 --> 00:01:13,540
+ipucu bırakan insanlara ilişkin veriler.
+
+17
+00:01:13,560 --> 00:01:19,350
+Yani toplam fiyatınız veya faturanızın ne kadarının bir ipucu olarak cinsiyetini veya seksini
+
+18
+00:01:19,350 --> 00:01:24,620
+terk eden kişinin sigara içip içmediklerini yemek yediklerini günün hangi saatinde yediğini.
+
+19
+00:01:24,660 --> 00:01:27,030
+Ve partinin büyüklüğü.
+
+20
+00:01:27,030 --> 00:01:27,380
+Tamam.
+
+21
+00:01:27,420 --> 00:01:34,590
+Devam edin ve bu arsa, tek değişkenli gözlemlerin dağılımını göstermemize izin veren çizgi CISC
+
+22
+00:01:34,590 --> 00:01:39,720
+arsa bu ilk arsa türünü tartışalım ve çok değişken olduğunu
+
+23
+00:01:39,720 --> 00:01:43,610
+söylemekten başka bir yol olduğunu çok iyi biliyorsunuz.
+
+24
+00:01:43,620 --> 00:01:45,350
+İçeri girelim ve araştıralım.
+
+25
+00:01:45,390 --> 00:01:51,870
+Asinus'un bu arsayı düşündüğünü söyleyeceğim ve sonra bu arsa için ne yaptıysanız, veri çerçevenizin
+
+26
+00:01:51,870 --> 00:01:53,580
+tek bir sütununa geçersiniz.
+
+27
+00:01:53,850 --> 00:01:57,610
+Bu durumda devam edelim ve toplam faturanın nasıl dağıtıldığını göreceğiz.
+
+28
+00:01:58,130 --> 00:02:03,690
+Bu yüzden toplam faturayı söyleyeceğim ve sonra hücrenin koşacağım ve buna benzer bir arsa bulmalısın.
+
+29
+00:02:03,930 --> 00:02:06,100
+Burada bir uyarı alırsanız endişelenmeyin.
+
+30
+00:02:06,120 --> 00:02:08,900
+Gerçekten de, stat'in modelleri adı verilen başka bir paket varsa yapmanız gerekir.
+
+31
+00:02:09,000 --> 00:02:11,220
+Gerçek Seaborn kodunuzu etkilemez.
+
+32
+00:02:11,520 --> 00:02:13,810
+Ancak burada herhangi bir uyarı yok, bu yüzden sorun yok.
+
+33
+00:02:14,220 --> 00:02:20,990
+Burada temel olarak bir histogram ve bir çizgi olarak çekirdek yoğunluk tahmini olarak bilinenin ne
+
+34
+00:02:21,000 --> 00:02:22,420
+olduğuna dikkat edin.
+
+35
+00:02:22,530 --> 00:02:26,460
+Daha sonra bu konferansta Katie'nin ne olduğunu ve bunu nasıl
+
+36
+00:02:26,460 --> 00:02:27,090
+oluşturabileceğimizi tartışacağız.
+
+37
+00:02:27,150 --> 00:02:34,680
+Katie, burada ek bir argüman olarak yanlış söylemek isterse, şimdilik bunu kaldırabiliriz.
+
+38
+00:02:36,870 --> 00:02:39,060
+Ve sadece Katy yazarak yanlış söylüyorum.
+
+39
+00:02:39,060 --> 00:02:44,700
+Şimdi aslında yalnızca bir histogramınız var ve bir histogram aslında yalnızca toplam faturanızın nerede
+
+40
+00:02:44,700 --> 00:02:46,010
+bulunduğu bir dağılım.
+
+41
+00:02:46,170 --> 00:02:52,020
+Böylece, y ekseni üzerinde bir sayınız olduğunu ve daha sonra, X ekseni üzerindeki çubukları kutular olarak
+
+42
+00:02:52,050 --> 00:02:52,780
+göreceğinizi görebilirsiniz.
+
+43
+00:02:52,890 --> 00:02:58,940
+Ve bu temelde toplam faturalarınızın çoğunun 10 ila 20 dolar arasında olduğu anlamına gelir.
+
+44
+00:02:59,000 --> 00:03:03,510
+Ve bununla ilgili daha fazla bilgi edinmek isterseniz kutu sayısını değiştirebilirsiniz, böylece
+
+45
+00:03:03,510 --> 00:03:09,750
+devam edebilirsiniz ve Sabin'in üçüncü bir argümanı vardır ve daha sonra uygun sayıda teklif ve sayı
+
+46
+00:03:09,750 --> 00:03:11,240
+gerçekten veri setinize bağlıdır.
+
+47
+00:03:11,400 --> 00:03:14,820
+Ama şimdi girip 30'u seçelim.
+
+48
+00:03:14,820 --> 00:03:19,440
+tanım elde edebiliriz ve hala, 10 ila 20 arasında faturaların çoğunun gerçekleştiğini görebiliriz.
+
+49
+00:03:19,440 --> 00:03:21,560
+Ve şimdi biraz daha temelde bir
+
+50
+00:03:21,900 --> 00:03:28,490
+Çok yüksek bir değer seçerseniz, örneğin devam edin ve 100'e koyalım, aslında
+
+51
+00:03:28,500 --> 00:03:35,250
+her fiyat noktasında toplam faturaların her bir örneğini planlamaya başladıysanız garip bir
+
+52
+00:03:36,090 --> 00:03:37,640
+senaryo almaya başlayacaksınız.
+
+53
+00:03:37,650 --> 00:03:43,740
+Dolayısıyla genellikle boyutta bir denge bulmaya çalışmak isterim, ancak bu gerçekten arsanıza bağlı.
+
+54
+00:03:43,770 --> 00:03:44,070
+TAMAM.
+
+55
+00:03:44,100 --> 00:03:46,930
+Buradaki bilgilere iyi bir fikir verdik.
+
+56
+00:03:47,040 --> 00:03:50,940
+dolar arasında bir yerde gerçekleştiğini ve daha yüksek ve daha yüksek olabildiğince kaybolmaya başladığını söyleyebiliriz.
+
+57
+00:03:51,000 --> 00:03:54,320
+Ve eğer bu grafiği okuyabiliyorsa temel olarak faturaların çoğunun 10 ile 20
+
+58
+00:03:54,330 --> 00:04:00,360
+Bill Price Bu arsa ve dağılımı esasen bir histogram görüntülemenize olanak tanır ve bunun
+
+59
+00:04:00,720 --> 00:04:02,710
+üzerine yemek bir pasta ekleyebilirsiniz.
+
+60
+00:04:02,730 --> 00:04:05,930
+Ancak Katie komplosunu daha sonra öğreneceğiz.
+
+61
+00:04:05,970 --> 00:04:13,620
+Eklem planı ve deniz kıyısından ortak parseller hakkında konuşalım Asinus ortak arsalar temel
+
+62
+00:04:13,620 --> 00:04:20,670
+olarak bu arsaları çeşitli verilerle eşleştirmenizi, böylece aslında iki farklı dağılım alanını
+
+63
+00:04:20,670 --> 00:04:21,950
+birleştirmenizi sağlar.
+
+64
+00:04:22,110 --> 00:04:24,370
+Ve çok basitçe sadece iki değişken var.
+
+65
+00:04:24,480 --> 00:04:29,640
+Ve bu tür bir parametreye sahip olduğunuzda, bu iki dağılımı nasıl
+
+66
+00:04:29,640 --> 00:04:32,340
+karşılaştırmak istediğimizi seçebilmemizi sağlayan oynamaya gidiyoruz.
+
+67
+00:04:32,340 --> 00:04:35,660
+İzin verin, içeri girip başlangıç ​​özetini nasıl kullanabileceğimizi göstereyim.
+
+68
+00:04:35,670 --> 00:04:41,130
+Önce passen x değişkenine sahip olursunuz ve sonra bir Y değişkeninde geçmeniz
+
+69
+00:04:41,130 --> 00:04:43,910
+ve sonra veri kümenizden geçirmeniz gerekir.
+
+70
+00:04:44,100 --> 00:04:48,400
+Yolcu verisi ipucu olarak ayarlanacak şekilde arka uçtan başlayalım.
+
+71
+00:04:48,450 --> 00:04:54,510
+Böylece veri çerçevesinin bu tür ve sonra x ve y için sadece pasand dizeleri olan dizeleri.
+
+72
+00:04:54,510 --> 00:04:56,690
+Birbirleriyle karşılaştırmak istediğiniz iki şey.
+
+73
+00:04:56,700 --> 00:05:02,980
+Örneğin, belki de faturanın büyüklüğüne göre toplam faturanın dağılımını karşılaştırmak istiyorum.
+
+74
+00:05:03,030 --> 00:05:04,440
+Hadi devam edelim ve bunu yapalım.
+
+75
+00:05:04,470 --> 00:05:14,350
+Eski ve yolumda toplam faturayı söyleyeceğim Erişim uç sütununa yazacağım.
+
+76
+00:05:14,360 --> 00:05:19,500
+Dolayısıyla şu anda sadece toplam fatura sütununda ipucu sütununu geçiyorum ve ardından veriler ipuçlarına eşit
+
+77
+00:05:20,980 --> 00:05:25,730
+ve aslında esas olarak sadece iki dağıtım arsasına benzer bir arsa elde ediyorum.
+
+78
+00:05:25,950 --> 00:05:31,680
+Ucun y ekseni üzerinde, toplam faturayı x ekseni boyunca görebilir ve daha sonra, tüm arsayı
+
+79
+00:05:31,690 --> 00:05:32,670
+görebileceğiniz şekilde uzaklaştırabilirsiniz.
+
+80
+00:05:33,250 --> 00:05:38,970
+ve ipuçları genellikle toplam faturanıza orantılı olacağı yönünde bir eğilime sahip görünüyor. .
+
+81
+00:05:38,980 --> 00:05:45,550
+Ardından arasında bir dağılım göstergesi var ve bu dağılım, aslında mantıklı geliyor, çünkü toplam
+
+82
+00:05:45,550 --> 00:05:49,480
+faturanın üst sınırına çıktıkça ipucunda daha yüksek çıkacak
+
+83
+00:05:49,560 --> 00:05:57,330
+Şimdi ortak arsalar aslında tür denilen ek bir argüman parametresi veriyor ve bu tür
+
+84
+00:05:57,370 --> 00:06:03,270
+parametre aslında bu ortak arsa içinde neler olup bittiğini etkilemenizi sağlar.
+
+85
+00:06:03,270 --> 00:06:07,860
+Varsayılan olarak dağınıklıktır ancak hex ve hex gibi bir argümanı
+
+86
+00:06:10,620 --> 00:06:15,750
+da temel olarak bir altıgen dağılım gösterimi yapmanıza izin vererek geçirebilirsiniz.
+
+87
+00:06:15,750 --> 00:06:21,660
+az noktaya sahip olması durumunda daha hafif hale gelirse aslında dağılma noktalarının hepsini
+
+88
+00:06:21,660 --> 00:06:27,150
+koymak zorunda kalmanın bir yolu değil, temelde dağılmaya benzer. Bu altıgenler.
+
+89
+00:06:27,150 --> 00:06:33,160
+Altıgenin belirli bir sayı noktasına sahip olması, daha koyu renk alması ve daha
+
+90
+00:06:33,150 --> 00:06:38,400
+Buna nasibini koyabileceğimiz bir diğer argüman da regresyonu ifade eder.
+
+91
+00:06:38,740 --> 00:06:43,120
+Ve Seaborn bunun üzerine aslında bir regresyon çizgisi çizmeyecektir, ancak bu dağılım çizgisi
+
+92
+00:06:43,120 --> 00:06:43,920
+gibi görünecektir.
+
+93
+00:06:43,930 --> 00:06:48,840
+Şimdi doğrusal gerileme hakkında henüz makine öğrenimi konusunu öğrenmiyoruz ama daha
+
+94
+00:06:48,850 --> 00:06:54,240
+sonra ne zaman bu konunun yaklaştığını ve aslında bu satırın nasıl inşa
+
+95
+00:06:54,250 --> 00:06:54,930
+edildiğini tartışacağız.
+
+96
+00:06:55,200 --> 00:07:01,110
+tartıştığımızda daha sonra tartışacağımız bir Peerson katsayısında bir P değerine sahip olduğunu görebilirsiniz.
+
+97
+00:07:01,120 --> 00:07:05,940
+Ancak aslında sadece dağınık nokta verilerine doğrusal bir uyum gibi geliyor
+
+98
+00:07:05,940 --> 00:07:07,910
+ve aslında doğrusal gerilemeyi
+
+99
+00:07:07,950 --> 00:07:14,830
+Sonunda burada koyabileceğiniz başka bir tür KDE'dir ve bu da sizin de buna sahip olmanızı sağlar.
+
+100
+00:07:14,820 --> 00:07:20,410
+K-T'den bahsetmiştim ki bu sana sadece bu noktaların en çok uyuştuğu yerin yoğunluğunu gösteriyor.
+
+101
+00:07:21,570 --> 00:07:29,580
+Pekâlâ, ilerlemeye devam edelim ve ortak arsa genelde varsayılan dağılımlı çizimi kullanacaktır çünkü bu
+
+102
+00:07:29,880 --> 00:07:34,300
+temelde okumayı en kolay olanı ve sopadan hemen
+
+103
+00:07:34,290 --> 00:07:35,850
+tamamen bilgi verir.
+
+104
+00:07:35,860 --> 00:07:43,300
+azından sayısal sütunlar için tüm veri çerçevesi boyunca eşli ilişkiler çizmeye başlayarak gösterecek şekilde genişleteceğiz.
+
+105
+00:07:43,290 --> 00:07:49,000
+Devam edeceğiz ve bu fikri çift arsa ve ikili arsa en
+
+106
+00:07:49,140 --> 00:07:53,780
+Ayrıca, kategorik sütunlar için daha sonra göstereceğim bir renk tonu argümanını da destekler.
+
+107
+00:07:54,190 --> 00:08:01,680
+Fakat biz burada, bu eklemin, esas itibariyle, yapacağımız işin, bu veri çerçevesindeki sayısal
+
+108
+00:08:01,690 --> 00:08:08,260
+sütunların her olası kombinasyonu için bu ortak arsa yapmak olduğunu görüyoruz.
+
+109
+00:08:08,250 --> 00:08:09,590
+Ne demek istediğimi göstermeye başlayayım.
+
+110
+00:08:09,750 --> 00:08:11,700
+Çünkü bütün kombinasyonlar için yapacak.
+
+111
+00:08:11,700 --> 00:08:15,400
+Temel olarak S ve S'yi arsa başına düşündüğünüz ve veri çerçevenizi geçerek çağırmanız yeterlidir.
+
+112
+00:08:15,430 --> 00:08:18,250
+Ve bu, kurs boyunca biraz daha yapacağımız bir şey.
+
+113
+00:08:18,250 --> 00:08:21,510
+Veri çerçeveniz ne kadar büyük olursa çiziminiz ne kadar uzun olursa aklınızda tutun.
+
+114
+00:08:21,660 --> 00:08:26,460
+Çerçeve başına nispeten küçük yerine çok büyük bir veri çerçeveniz varsa, bu nedenle bir sürü zaman
+
+115
+00:08:26,470 --> 00:08:26,790
+alıyor.
+
+116
+00:08:26,790 --> 00:08:28,080
+Bu yüzden iyiyiz.
+
+117
+00:08:28,200 --> 00:08:33,280
+Ve burada temel olarak tüm sayısal sütun değerleri için çift bir arsa var.
+
+118
+00:08:33,270 --> 00:08:36,430
+Yani, boyut vs. ipucu karşısında toplam fatura boyutu.
+
+119
+00:08:36,420 --> 00:08:42,660
+Sonra, bir parametreye karşı kendine karşı geldiğinizde, boyuta karşı büyüklükte, aslında doğru bir çizginize sahip
+
+120
+00:08:42,660 --> 00:08:46,310
+olduğunuzda anlam ifade ettiğinde bir dağılım çizgisi yapıyor demektir.
+
+121
+00:08:46,380 --> 00:08:48,680
+Bunun yerine bir histogram görüyorsunuz.
+
+122
+00:08:49,120 --> 00:08:51,060
+Ve İpucu ve İpuçları için aynı şey.
+
+123
+00:08:51,100 --> 00:08:57,600
+Toplam fatura karşılığında toplam fatura karşılığında, arsa başına elde edilen değer, verilerinizi hızla görselleştirmenin gerçekten güzel
+
+124
+00:08:57,610 --> 00:08:58,280
+bir yoludur.
+
+125
+00:08:58,410 --> 00:09:06,400
+Ve daha da güzeli, yediğiniz bu h'ye bir renk tonu argümanı ekleyebilmeniz ve hewe argümanı,
+
+126
+00:09:06,390 --> 00:09:08,140
+sütunda geçeceğiniz yerdir.
+
+127
+00:09:08,130 --> 00:09:15,420
+Kategorik bir sütunun kategorik olarak amacı, sayısal veya sürekli değil, fiili kategorileri ifade eder.
+
+128
+00:09:15,450 --> 00:09:21,040
+Örneğin, cinsiyet sütunu kategoriktir, çünkü içinde iki kategori var, erkek ve kadın var.
+
+129
+00:09:22,710 --> 00:09:31,650
+Koloni ismini eşit cinsiyete geçirirken bunu geçtiğinizde renk için koyduğunuz sütun
+
+130
+00:09:31,680 --> 00:09:35,480
+temelinde veri noktaları renklendirilir.
+
+131
+00:09:35,520 --> 00:09:40,560
+Yani burada tüm yeşil noktalar bu efsaneye ve tüm erkek noktalarına dayanıyor.
+
+132
+00:09:40,630 --> 00:09:42,930
+Her şeyi görebilmemiz için uzaklaşacağız.
+
+133
+00:09:43,120 --> 00:09:45,600
+Bütün mavi noktalar erkekler.
+
+134
+00:09:45,610 --> 00:09:52,690
+Üçüncü bir argüman olarak bir palet belirleyebilirsiniz ve palet, bunu belirli renk paletiyle
+
+135
+00:09:52,890 --> 00:09:54,870
+renklendirmenize izin verir.
+
+136
+00:09:54,880 --> 00:09:59,820
+Denizci ders serisinin sonundaki paletleri, rengi ve stili tartışacağız.
+
+137
+00:09:59,830 --> 00:10:01,900
+Şu anda sana bir örnek göstereceğim.
+
+138
+00:10:01,890 --> 00:10:06,690
+Esasen, bu palottan geçebilen ve parametreler ne olursa olsun bazı renkleri
+
+139
+00:10:06,900 --> 00:10:11,100
+seçecek olan canlı olan bu renk haritası dizeleri var.
+
+140
+00:10:11,160 --> 00:10:16,650
+Ve şimdi görebiliyoruz ki mektuplar mavi, kadın da açık pembe renkte.
+
+141
+00:10:16,650 --> 00:10:17,230
+Tamam.
+
+142
+00:10:17,250 --> 00:10:20,040
+Renklere ve stillere paletlerde dokunacağız.
+
+143
+00:10:20,050 --> 00:10:25,770
+Devam edin ve Roug parsellerine geçelim ve haydut parseller aslında çok basit bir konsept ama
+
+144
+00:10:25,770 --> 00:10:28,600
+aslında inşa etmek için haydut arsa kavramını kullanacağız.
+
+145
+00:10:28,620 --> 00:10:28,980
+Ben.
+
+146
+00:10:28,990 --> 00:10:38,770
+Daha önce gördüğüm K-T planını açıklayacağım ve ileride gidip S. diyerek açıklayacağım. A. Roug çizimleri ve sadece burada
+
+147
+00:10:38,860 --> 00:10:43,110
+tek bir sütunda geçeceğiniz dağılımı çizmek gibi.
+
+148
+00:10:43,180 --> 00:10:51,040
+Bu yüzden ipuçlarını söyleyeceğiz ve toplam fatura sütununa geçelim ve halı tasarımı ne yapıyor, çok
+
+149
+00:10:51,040 --> 00:10:52,450
+basit bir konsept.
+
+150
+00:10:52,450 --> 00:10:59,980
+Bu üniforma veya benzersiz varyant dağılımında esasen tek bir değişken olan her nokta için
+
+151
+00:10:59,980 --> 00:11:01,550
+çizgi işareti çizer.
+
+152
+00:11:01,570 --> 00:11:06,710
+Dolayısıyla bir histogram yerine, ilerlememe izin verin ve bu arsa üzerinde karşılaştırmak için bir kez daha izin verin.
+
+153
+00:11:07,150 --> 00:11:12,280
+Bu arsa toplam faturayı ipucu etmez söyleyeceğim.
+
+154
+00:11:12,280 --> 00:11:17,900
+Onu çalıştır ve Katie'nin yanlış olduğunu söyleyelim.
+
+155
+00:11:20,010 --> 00:11:27,040
+Tamam, burada aşağıda bir histogram ve bu Rugge arsası arasındaki fark, histogramın esas olarak
+
+156
+00:11:27,040 --> 00:11:32,920
+kutuları olduğunu ve bu kutuda kaç tane çizgi bulunduğunu sayıyor ve daha
+
+157
+00:11:32,920 --> 00:11:39,480
+sonra bunu bir sayı olarak gösteriyor ve bu, Biliyorum, 11 şuna bir göz atalım.
+
+158
+00:11:39,570 --> 00:11:41,200
+Orada kırk beş çizgi var.
+
+159
+00:11:41,250 --> 00:11:43,210
+Herbiri birbirinin üzerine yığılmışlardır.
+
+160
+00:11:43,360 --> 00:11:48,910
+daha az Roug veya daha az çizgi var ve bu Ben'in daha az yüksek olacağı anlamına geliyor.
+
+161
+00:11:48,970 --> 00:11:51,070
+Ve sonra burada, toplam fatura fiyatına yaklaştığımızda
+
+162
+00:11:51,070 --> 00:11:55,840
+SR-GR RAM ve bu sahtekar komplo arasında dolandırıcılık komplo gerçekten basit kavramı arasındaki temel
+
+163
+00:11:55,840 --> 00:11:56,450
+ilişki var.
+
+164
+00:11:56,560 --> 00:12:01,730
+Dağıtım hattı boyunca her bir nokta için çizgi çizmeniz yeterlidir.
+
+165
+00:12:01,750 --> 00:12:02,180
+Tamam.
+
+166
+00:12:02,230 --> 00:12:03,460
+Toplam fatura bu.
+
+167
+00:12:03,510 --> 00:12:09,490
+Yapmak istediğimiz şey, bu Kaytee komplosunun ne olduğunu açıklamak için haydut parsellerden oluşan bu fikri inşa
+
+168
+00:12:10,960 --> 00:12:13,260
+etmek ve burada bu çizgi olacak.
+
+169
+00:12:13,450 --> 00:12:17,820
+Bu sahtekarlığı temel alan bu satırı nasıl inşa ediyoruz.
+
+170
+00:12:18,010 --> 00:12:26,200
+Keşke kötü niyetli arsa ile KDE arsalarının çekirdek yoğunluk tahmin arazileri için bir ilişki olduğunu görüyorsunuz ve
+
+171
+00:12:26,260 --> 00:12:32,260
+aslında Google'ı da deneyebilirsiniz ve çekirdek yoğunluk tahmini arazileri hakkında Wikipedia'ı kontrol
+
+172
+00:12:32,260 --> 00:12:38,320
+edin ve sayfa bu kıvrım yoğunluğuna benzer görünecektir tahmin ve bu gerçekten
+
+173
+00:12:38,440 --> 00:12:39,520
+aşağı kaydırın.
+
+174
+00:12:39,520 --> 00:12:43,440
+Burada burada gerçekten güzel bir figür ve aslında inşa etmeye çalışacağız.
+
+175
+00:12:43,450 --> 00:12:47,230
+Buradaki siyah çizgilerin her biri haydut arsa olduğunu göreceksiniz.
+
+176
+00:12:47,230 --> 00:12:48,460
+Gerçek puan.
+
+177
+00:12:48,700 --> 00:12:53,140
+Ve sonra her noktanın üstünde bu küçük normal Gauss dağılımları var.
+
+178
+00:12:53,200 --> 00:12:54,580
+Sonra onları toplamış oluyorsun.
+
+179
+00:12:54,640 --> 00:12:58,540
+Böylece son Currence çekirdek yoğunluk tahminini elde edersiniz.
+
+180
+00:12:58,570 --> 00:13:02,150
+Şimdi normal dağılım veya Gauss dağılımı ile ne kastediyorum.
+
+181
+00:13:02,410 --> 00:13:08,010
+Peki olasılık teorisinde Wikipedia Nessus'a bakarsanız, normal dağılım ve muhtemelen merkezi
+
+182
+00:13:08,080 --> 00:13:11,770
+olarak en yaygın sürekli olasılık dağılımı diyebilirim.
+
+183
+00:13:11,780 --> 00:13:16,780
+Normal dağılımlar bu tip herkesin sınavında nasıl yaptıklarını ve tüm
+
+184
+00:13:16,780 --> 00:13:20,130
+öğrencileri derecelendirdiğini ve puan dağılımını gördüğünüzü söylüyor.
+
+185
+00:13:20,140 --> 00:13:26,530
+Genellikle bunun gibi ya da insanların yaşları ya da insanların Yükseklikleri gibi normalize edilmiş bir şey
+
+186
+00:13:26,530 --> 00:13:29,950
+genellikle bir çok şey normal dağılımı takip eğilimindedir.
+
+187
+00:13:29,950 --> 00:13:30,420
+TAMAM.
+
+188
+00:13:30,760 --> 00:13:36,160
+Devam edelim ve Jüpiter not defterine geri dönelim ve bunu yapmak için bu konular üzerine biraz daha detaylı
+
+189
+00:13:37,270 --> 00:13:38,340
+bir şekilde dokunun.
+
+190
+00:13:38,380 --> 00:13:42,880
+Not defterinden bazı kodları kopyalayıp yapıştıracağım ve bu kodu anlama konusunda endişelenmeniz
+
+191
+00:13:42,880 --> 00:13:43,360
+gerekmiyor.
+
+192
+00:13:43,420 --> 00:13:49,320
+Sadece kopyalama ve yapıştırma işleminde bir açıklama için bir diyagram oluşturmaktır.
+
+193
+00:13:50,170 --> 00:13:54,510
+Bu kodu kopyaladım ve yapıştırdım ve bu kodlar yaparken gerçekten hızlı bir şekilde bozdum.
+
+194
+00:13:54,610 --> 00:13:56,260
+Birkaç ithalatım var.
+
+195
+00:13:56,260 --> 00:13:58,690
+Rassal verilerin bir veri kümesi oluşturuyorum.
+
+196
+00:13:58,780 --> 00:14:02,050
+Sonra o rasgele verilere bir kilim arsa kullanıyorum.
+
+197
+00:14:02,050 --> 00:14:04,630
+Arsa için x eksenini kurdum.
+
+198
+00:14:04,660 --> 00:14:11,340
+Herhangi bir Ohlund alanını kullanarak X-Men X max ve ardından burada eşit aralıklı 100 puan noktası oluşturun.
+
+199
+00:14:11,380 --> 00:14:14,290
+Kütüphaneyi kullandığı için muhtemelen anlaşılması en zor kısmıdır.
+
+200
+00:14:14,290 --> 00:14:15,240
+Henüz konuşmadık.
+
+201
+00:14:15,280 --> 00:14:16,600
+Bu normal değil.
+
+202
+00:14:16,600 --> 00:14:21,920
+Bütün bunlar, arsa, kilim arsa noktalarının her biri için normal bir dağılımdır.
+
+203
+00:14:21,920 --> 00:14:23,030
+Ve bu öyle görünüyor.
+
+204
+00:14:23,060 --> 00:14:25,340
+Devam edelim ve bunu yakından inceleyelim.
+
+205
+00:14:25,660 --> 00:14:28,900
+Burada veri kümem var ve bu rastgele bir veri kümesidir.
+
+206
+00:14:28,900 --> 00:14:33,610
+Bu yüzden eğer bu yılları koşarsanız, biraz farklı görünebilir ancak ipuçlarıyla artık çalışmayacağınızı
+
+207
+00:14:33,610 --> 00:14:33,980
+unutmayın.
+
+208
+00:14:34,000 --> 00:14:35,790
+Bazı rastgele veriler üzerinde çalışıyoruz.
+
+209
+00:14:35,800 --> 00:14:40,840
+Dikkat edin, burada mavi çizgiler var ve daha sonra bu gri çizgiler normal dağılımları temsil ediyor.
+
+210
+00:14:40,870 --> 00:14:43,050
+Bu mavi çizgilerin her birinin üstünde.
+
+211
+00:14:43,330 --> 00:14:47,040
+Dolayısıyla, çizgi çevresinde ortalanan normal bir dağılım var.
+
+212
+00:14:47,320 --> 00:14:49,940
+Ve birbirimiz üzerine bir demet var.
+
+213
+00:14:49,990 --> 00:14:56,180
+Öyleyse devam edip, bazıları çekirdek yoğunluk temel işlevini elde etmek için hepsini hazırlıyoruz.
+
+214
+00:14:57,070 --> 00:15:01,480
+Ve bu sadece bu küçük normal dağılımların toplamıdır.
+
+215
+00:15:01,480 --> 00:15:02,010
+Tamam.
+
+216
+00:15:02,020 --> 00:15:07,150
+olan tüm bu temel işlevleri özetlememize izin vererek hepsini toplarız.
+
+217
+00:15:07,150 --> 00:15:12,670
+İkinci kod bloğunu defterden kopyalayıp yapıştırdığımızda, yalnızca bu normal dağılım
+
+218
+00:15:12,670 --> 00:15:17,700
+Buna benzer bir şey elde edersiniz, daha önce gelen çizimi teekek
+
+219
+00:15:17,890 --> 00:15:20,930
+edersiniz ve arsa, disk arsından nasıl oluşturulmuştur.
+
+220
+00:15:20,950 --> 00:15:25,490
+İlk taslak T altındaki en yüksek t'ye baktı.
+
+221
+00:15:25,570 --> 00:15:26,430
+Tamam.
+
+222
+00:15:26,560 --> 00:15:31,940
+Dolayısıyla, daha fazlasını gördüğümüz verilerin dağıtımlarını gösterebilmenin en önemli yolu bunlardır.
+
+223
+00:15:32,110 --> 00:15:38,350
+Devam edin ve bu bilgisayarın ve arsa türlerinin tüm çeşitli arsa tiplerini hızlı bir şekilde gözden geçirelim.
+
+224
+00:15:38,350 --> 00:15:39,770
+Yine geri gidiyoruz.
+
+225
+00:15:39,820 --> 00:15:46,120
+Bu komplo onlardı ve yine iki yöntemle kullanabileceğiniz bu çizimin Kaytee'nin yanlışa eşit olması
+
+226
+00:15:46,120 --> 00:15:51,410
+ve esas olarak bir histogram görmek ya da bu boşluğu bırakması gerekti.
+
+227
+00:15:52,840 --> 00:15:57,100
+Ve sonra aslında Caity'yi görebilirsiniz. Çekirdek yoğunluk tahmini, hangi türden sonun
+
+228
+00:15:57,100 --> 00:16:03,580
+sadece halı etrafındaki tüm normal dağılımların bir toplamı olduğunu açıklar A-arsa ortak arsa gerçekten iki sütunda geçen
+
+229
+00:16:03,580 --> 00:16:08,740
+bu fikir tomurcuklanna benzer ve siz de onları x ve y argümanları olarak.
+
+230
+00:16:08,760 --> 00:16:15,400
+Üçüncü bağımsız değişkeni verilerle aynı ise, öğrendiğimiz sonraki çizgi çifti arsa ve arsa yalnızca arsa
+
+231
+00:16:15,580 --> 00:16:21,630
+üzerinde inşa edildi ve aslında veri kümenizdeki her bir sütun ya da sayısal sütun
+
+232
+00:16:21,640 --> 00:16:26,830
+için ortak bir arsa. Ve bu sizin sadece veri kümesine geçin ki
+
+233
+00:16:26,830 --> 00:16:33,340
+bu veri çerçevesi ve kategorik bir sütunla renklendirmek isterseniz renk tonunu ve paletini geçirebilirsiniz. Ardından
+
+234
+00:16:33,340 --> 00:16:39,400
+öğrendiğimiz komplo Roug arsa genellikle Roug arsalarını kullanmayacaktı, ancak sizin için orada ve haydut
+
+235
+00:16:39,400 --> 00:16:45,310
+bir arsa kullanma ana fikri, burada bu kodla yapılan çekirdek yoğunluk tahmin çizgisinin mantığını
+
+236
+00:16:45,400 --> 00:16:46,450
+inşa ediyor.
+
+237
+00:16:46,570 --> 00:16:51,470
+Zaman ayırabilir ve bu kodu okuyabilirsiniz, ancak sahtekar bir komplo kullanırken bununla ilgili
+
+238
+00:16:51,490 --> 00:16:56,330
+bir noktaya ulaşmak istedim ve katie yoğunluğu tahmin çizelgesini oluşturmak istediğiniz Katie planını
+
+239
+00:16:56,470 --> 00:17:03,400
+yapmak için bunu sadece söyleyerek yapabilirsiniz sahtekar arsa tüm bu normal dağılımları her noktaya taşır ve ardından tüm
+
+240
+00:17:03,400 --> 00:17:05,200
+bu noktaların toplamını alır.
+
+241
+00:17:05,200 --> 00:17:07,810
+Ve çekirdek yoğunluk tahmini arsa.
+
+242
+00:17:08,950 --> 00:17:16,540
+Bunu, bu çizimi kullanarak nasıl yapabildiğimizi ve bu çizimi kullanıyorsanız hızlı bir nokta olarak gördüğümüzde Kaytee'nin
+
+243
+00:17:16,840 --> 00:17:20,620
+yanlışa eşit olduğunu söyleyerek K-T çizgisinden kurtulabileceğimizi biliyoruz.
+
+244
+00:17:20,620 --> 00:17:27,160
+Aslında yalnızca K-T arsa istiyorsanız ve gerçek Beenz istemiyorsanız, aslında
+
+245
+00:17:27,160 --> 00:17:34,780
+arsalar yerine pasan yapabilirsiniz Asinus KDE arsa yapabilir ve sonra passen ipuçları.
+
+246
+00:17:35,200 --> 00:17:42,010
+Toplam fatura ve bu, çubukların herhangi bir dağılımı olmaksızın K-T arsa inşa edecek.
+
+247
+00:17:42,010 --> 00:17:42,710
+Tamam.
+
+248
+00:17:43,090 --> 00:17:48,760
+inanılmaz derecede güçlü olduğunu ve yazmanız gereken kod kadar basit olduğunu biliyorsunuzdur.
+
+249
+00:17:48,760 --> 00:17:49,560
+Umarım Seaborn'un
+
+250
+00:17:49,690 --> 00:17:51,580
+Yaptığımız her şey sadece bir satırda yapıldı.
+
+251
+00:17:51,640 --> 00:17:55,960
+Bunu yapmaya çalışırsanız çizim haritasını çizerseniz çok satırlık bir çizgiyi almış olabilirsiniz ancak bununla
+
+252
+00:17:56,020 --> 00:18:00,490
+ilgili güzel olan şey, komplo canlılığı hakkında bildiklerinizden işe yaraması ve stil ve renkler
+
+253
+00:18:00,490 --> 00:18:02,200
+hakkında konuşurken bunu göreceğiz. .
+
+254
+00:18:02,350 --> 00:18:06,790
+Bilginin yaşadığı bu harita çiziminin birçoğu aslında bu arsada küçük şeyleri düzenlemek
+
+255
+00:18:06,880 --> 00:18:08,020
+için aktarılabilir olacak.
+
+256
+00:18:08,380 --> 00:18:13,290
+gibi, Seaborn'la öğreneceğim birkaç komplo tipini de göstermek için sabırsızlanıyorum umarım.
+
+257
+00:18:13,560 --> 00:18:17,800
+Tamam umarım Seaborn'dan hoşlanmaya başlarsın, en sevdiğim kütüphanelerden önce bahsettiğim
+
+258
+00:18:18,400 --> 00:18:20,260
+Herkese teşekkürler, bir sonraki derside görüşürüz.

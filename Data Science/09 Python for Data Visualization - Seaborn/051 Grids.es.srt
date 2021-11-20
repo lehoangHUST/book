@@ -1,0 +1,479 @@
+1
+00:00:05,280 --> 00:00:10,170
+Hola a todos y bienvenidos a la lectura de la grilla de la sección litoral del curso en esta conferencia.
+
+2
+00:00:10,170 --> 00:00:15,930
+Vamos a aprender a usar la capacidad de la grilla de sideboards para automatizar subtramas basadas en las
+
+3
+00:00:15,930 --> 00:00:17,040
+características de nuestros datos.
+
+4
+00:00:17,040 --> 00:00:20,490
+Entremos y saltemos a Júpiter note que comenzamos.
+
+5
+00:00:20,550 --> 00:00:22,590
+OK aquí estoy en la nota de Júpiter.
+
+6
+00:00:22,620 --> 00:00:29,280
+Quiero golpear esa importación Seaborn como Asinus llamada Map plot live in line y luego cargué el conjunto de datos del iris y puedes hacer
+
+7
+00:00:29,280 --> 00:00:33,900
+eso simplemente diciendo que S y S thought load subrayan el conjunto de datos y luego pasan
+
+8
+00:00:33,900 --> 00:00:38,980
+la cadena Iris y sacan la cabeza de este conjunto de datos del iris es un conjunto bastante famoso.
+
+9
+00:00:39,030 --> 00:00:43,190
+Básicamente se trata de medidas de un grupo de flores o iris diferentes.
+
+10
+00:00:43,380 --> 00:00:49,080
+Y el último cono aquí sobre especies tiene tres tipos distintos de valores.
+
+11
+00:00:49,070 --> 00:00:58,890
+Entonces si salgo y digo Solo ingresen aquí y llamen a las especies de Iris circuts, podemos verificar los valores
+
+12
+00:00:58,890 --> 00:00:59,770
+únicos aquí.
+
+13
+00:01:00,440 --> 00:01:06,270
+Y hay tres especies de flores posibles, dos hay Tosa versicolor o virginica y las otras cuatro
+
+14
+00:01:06,270 --> 00:01:12,050
+columnas son solo características de la flor, como las personas que pesan o venden metal, etc. Vamos a ver mucho más de este conjunto de datos cuando hablamos de aprendizaje automático.
+
+15
+00:01:12,180 --> 00:01:15,110
+Pero por ahora sigamos adelante y hagamos un par de par simple en esta información.
+
+16
+00:01:15,120 --> 00:01:20,800
+Entonces la trama es una especie de diagrama conjunto automatizado para todo el conjunto de datos.
+
+17
+00:01:20,810 --> 00:01:25,160
+Así que recuerde de esa distribución qué clase de conferencias, así que podemos pasar el marco
+
+18
+00:01:25,230 --> 00:01:30,170
+de datos y automáticamente creará este par de par ahora utilizando un gran mecanismo preservado por el mar.
+
+19
+00:01:30,180 --> 00:01:36,390
+De hecho, podremos personalizar este par de pargramas
+
+20
+00:01:36,420 --> 00:01:43,440
+con un mayor control sobre las tramas reales.
+
+21
+00:01:43,440 --> 00:01:44,480
+Sigamos adelante y te mostraremos cómo podemos hacer eso.
+
+22
+00:01:44,490 --> 00:01:46,310
+Quiero seguir adelante y llamar
+
+23
+00:01:46,590 --> 00:01:55,330
+a la cuadrícula hared en lugar de parcelas de peras en Paygrade va a ser capital P H I R Capital G R i. mi. r id.
+
+24
+00:01:55,350 --> 00:01:58,970
+Y luego tu marco de datos.
+
+25
+00:01:59,010 --> 00:02:01,450
+Entonces tenemos un período y esto simplemente nos da un peregrinus vacío.
+
+26
+00:02:01,500 --> 00:02:04,650
+Toma todas las columnas numéricas y las cuadrícula, esencialmente
+
+27
+00:02:04,650 --> 00:02:09,540
+haciendo las subtramas para nosotros y payr plot es solo una versión simplificada de Peregrym.
+
+28
+00:02:09,900 --> 00:02:12,830
+Entonces su trama hace muchas cosas automáticamente par de cuadrícula.
+
+29
+00:02:13,020 --> 00:02:16,360
+Tienes que hacer un poco más pero te da mucho más control.
+
+30
+00:02:16,500 --> 00:02:19,470
+Entremos y veamos cómo podemos usarlo.
+
+31
+00:02:19,500 --> 00:02:21,720
+La forma principal es establecer que
+
+32
+00:02:21,840 --> 00:02:29,370
+esta par cuadrícula sea igual a una variable y, luego, fuera de esa variable, se puede asignar qué tipo.
+
+33
+00:02:30,810 --> 00:02:31,380
+Así que, por
+
+34
+00:02:31,380 --> 00:02:39,390
+ejemplo, si quiero avanzar y trazar un diagrama de dispersión, puedo decir dispersión de T-Dog y esto asignará un diagrama de dispersión tanto a la diagonal superior como a la diagonal y a la mitad inferior.
+
+35
+00:02:39,390 --> 00:02:47,280
+Ahora, si realmente quiero especificar lo que quiero en la mitad superior diagonal y en la mitad inferior,
+
+36
+00:02:47,280 --> 00:02:53,130
+puedo especificar ese comando, digo map underscore diag y este será el diagrama diagonal.
+
+37
+00:02:53,130 --> 00:02:58,200
+Y simplemente vamos y trazamos un mapa de esto.
+
+38
+00:02:58,260 --> 00:03:00,560
+Así que adelante y mapee a.
+
+39
+00:03:00,570 --> 00:03:02,260
+Esto traza a toda la diagonal y luego voy a mapear las tramas superiores.
+
+40
+00:03:02,430 --> 00:03:10,960
+la parte superior y luego en el inferior, el guión de subrayado inferior.
+
+41
+00:03:11,040 --> 00:03:18,570
+Seguiremos adelante y mantendremos esos mapas de diagramas de dispersión justo en
+
+42
+00:03:18,650 --> 00:03:19,290
+Puedo trazar algún otro tipo de diagrama, por ejemplo, el diagrama de Katy.
+
+43
+00:03:19,470 --> 00:03:23,970
+Todo bien.
+
+44
+00:03:24,090 --> 00:03:24,420
+Y fíjate que aquí no estoy cerrando a los príncipes de estas tramas y solo estoy pasando la función de trama.
+
+45
+00:03:24,450 --> 00:03:29,060
+Así que eso va a hacer un mapa basado en la información de que, o
+
+46
+00:03:29,200 --> 00:03:35,340
+bien estos Agnel son los lugares superiores o inferiores de esa matriz, así que podemos salir y verificar eso.
+
+47
+00:03:35,340 --> 00:03:37,700
+Esto puede demorar un poco en ejecutarse dependiendo de cuán rápido esté la
+
+48
+00:03:37,740 --> 00:03:41,860
+computadora, pero ahora podemos ver que tenemos este tipo de cuadrícula o par de par, pero tenemos mucho más control sobre ella.
+
+49
+00:03:41,870 --> 00:03:46,070
+Entonces solo están siendo diagramas de histogramas.
+
+50
+00:03:46,080 --> 00:03:48,360
+Ahora podemos elegir qué tipos de gráficos queremos mapear.
+
+51
+00:03:48,360 --> 00:03:52,050
+Y esa es solo la idea básica detrás de Peregrym.
+
+52
+00:03:52,650 --> 00:03:55,190
+Usualmente usaremos por parcela porque es más simple y nos da la mayoría de la información que queremos.
+
+53
+00:03:55,260 --> 00:03:59,220
+Pero si alguna vez intentas obtener una habilidad un poco más personalizada fuera
+
+54
+00:03:59,250 --> 00:04:03,720
+de las parcelas del litoral, especialmente payr plot types, puedes usar paygrade para hacer
+
+55
+00:04:03,720 --> 00:04:09,180
+eso y luego mapear lo que sea específico de qué tipos quieres que sea diagonal superior o inferior.
+
+56
+00:04:09,180 --> 00:04:12,310
+los consejos de la cadena. nuestro conjunto de datos.
+
+57
+00:04:12,400 --> 00:04:19,860
+Ahora hablemos de Fassett grid nerd para hablar sobre la red Fassett y cuando salgamos y borremos esto, voy a cargar los
+
+58
+00:04:19,860 --> 00:04:26,910
+datos de consejos diciendo que Tipps es igual a los conjuntos de datos de carga de Asinus y luego pasar
+
+59
+00:04:26,910 --> 00:04:31,220
+De acuerdo, tenemos nuestro conjunto de datos de sugerencias con el que estamos familiarizados.
+
+60
+00:04:31,220 --> 00:04:33,640
+Avancemos y solo le mostraremos un
+
+61
+00:04:33,900 --> 00:04:38,940
+ejemplo muy simple de la red Fassett simplemente mostrando la cuadrícula similar a Peregrym.
+
+62
+00:04:39,840 --> 00:04:41,250
+Voy a llamarte blanco y acercarme un poco.
+
+63
+00:04:41,340 --> 00:04:44,820
+Quiero llamarlo g es igual a asinus.
+
+64
+00:04:44,840 --> 00:04:47,580
+Pensamiento de la rejilla de Fassett.
+
+65
+00:04:47,580 --> 00:04:50,260
+Y luego el profesor Green, que haces cuando pasas los datos.
+
+66
+00:04:50,700 --> 00:04:54,900
+Entonces, usted dirá que los datos son iguales o el primer argumento que usted sabe que es igual a
+
+67
+00:04:54,900 --> 00:04:59,700
+sus pasand tips y luego especifica qué quiere que sea la llamada y cuál es el camino que quiere que sea.
+
+68
+00:04:59,700 --> 00:05:05,750
+Eso es algo similar a cuando estamos usando subtramas que lo que Lyd.
+
+69
+00:05:05,760 --> 00:05:09,090
+Excepto que ahora, en lugar de decir números, vas a pasar los nombres de las columnas de tu marco de datos.
+
+70
+00:05:09,300 --> 00:05:13,920
+Entonces, por ejemplo, voy a decir que la llamada es igual al tiempo y RHO aquí es igual a fumador.
+
+71
+00:05:15,120 --> 00:05:21,980
+Avancemos y corramos eso para ver cómo se ve eso.
+
+72
+00:05:21,990 --> 00:05:24,860
+DE ACUERDO.
+
+73
+00:05:25,230 --> 00:05:25,680
+Ahora tengo una grilla vacía que puede comenzar a mapear realmente qué tipos de este grupo.
+
+74
+00:05:25,680 --> 00:05:31,470
+Por ejemplo, voy a seguir adelante y decir que tengo matemáticas.
+
+75
+00:05:31,710 --> 00:05:38,020
+S y esto va a hacer esto.
+
+76
+00:05:38,820 --> 00:05:42,170
+Y hagámoslo en la factura total.
+
+77
+00:05:43,830 --> 00:05:47,270
+Así que va a hacer para cerrar eso y ejecutar esto.
+
+78
+00:05:49,230 --> 00:05:52,450
+DE ACUERDO.
+
+79
+00:05:53,280 --> 00:05:54,000
+Así que en realidad está sucediendo aquí.
+
+80
+00:05:54,000 --> 00:05:56,350
+y no, y los fumadores son la rosa.
+
+81
+00:05:57,300 --> 00:06:05,250
+Soy Matt un tipo SWAT y separando los resultados basados ​​en mi columna y fila ciertos nombres de columna y aquí están etiquetados para nosotros así que
+
+82
+00:06:05,250 --> 00:06:11,940
+el eje x representa la factura total, pero hay cuatro trazados separados y en realidad están etiquetados para nosotros por lo sí
+
+83
+00:06:11,940 --> 00:06:16,680
+Y eso fue especificado cuando dije que Roe era igual fumador.
+
+84
+00:06:16,740 --> 00:06:19,560
+Y entonces.
+
+85
+00:06:19,570 --> 00:06:20,360
+O en el momento real del almuerzo versus la cena es especificado por la columna.
+
+86
+00:06:20,460 --> 00:06:25,340
+Entonces, la columna de la izquierda es el almuerzo, la columna de la
+
+87
+00:06:25,340 --> 00:06:31,830
+derecha es la cena, la fila superior es para fumadores y la fila inferior es para no fumadores.
+
+88
+00:06:31,830 --> 00:06:32,960
+Y luego tenemos parcelas de distribución donde la factura total llama.
+
+89
+00:06:33,030 --> 00:06:36,220
+Entonces, esencialmente hay una especie de tres argumentos en juego aquí.
+
+90
+00:06:36,420 --> 00:06:39,200
+Las filas y los nombres de columna son las variables por las que desea separar su cuadrícula de Fassett.
+
+91
+00:06:39,350 --> 00:06:45,990
+Y luego, cuando estés mapeando, querrás agregar un argumento más que
+
+92
+00:06:46,050 --> 00:06:49,890
+realmente quiera un mapa para mostrar.
+
+93
+00:06:49,890 --> 00:06:51,740
+Si intenta mapear un tipo de diagrama que necesita más de un argumento.
+
+94
+00:06:52,380 --> 00:06:57,000
+Entonces, sabemos que esta trama solo necesita un argumento, pero digamos que
+
+95
+00:06:57,120 --> 00:07:02,300
+intentamos hacer un diagrama de dispersión diciendo que los dientes de peel se dispersan.
+
+96
+00:07:02,320 --> 00:07:04,140
+Acabo de decir la factura total aquí u obtengo un error de tipo.
+
+97
+00:07:04,140 --> 00:07:07,600
+Pero lo que tengo que hacer es pasar un argumento
+
+98
+00:07:07,710 --> 00:07:13,650
+adicional para poder continuar y pasar eso y podemos decir algunas sugerencias con respecto a la factura total.
+
+99
+00:07:13,800 --> 00:07:15,770
+Entonces, vamos y corremos que esto solo necesita ser establecido.
+
+100
+00:07:15,780 --> 00:07:21,470
+Así que propina versus factura total.
+
+101
+00:07:22,230 --> 00:07:23,790
+Ahora podemos ver que tenemos
+
+102
+00:07:23,790 --> 00:07:30,960
+propina en comparación con la factura total y hemos separado tanto en fila como en columna para fumadores y almuerzo versus cena.
+
+103
+00:07:31,230 --> 00:07:33,940
+Entonces, si está tratando con un tipo de argumento que
+
+104
+00:07:33,960 --> 00:07:38,460
+necesita más de un argumento, simplemente agregue eso como un segundo argumento en la llamada al mapa.
+
+105
+00:07:38,490 --> 00:07:41,350
+Todo bien.
+
+106
+00:07:41,400 --> 00:07:41,760
+Eso es realmente para la gran conferencia.
+
+107
+00:07:41,760 --> 00:07:43,900
+El motivo es que queremos utilizar realmente la cuadrícula de masacre que,
+
+108
+00:07:43,920 --> 00:07:47,910
+a menudo, a lo largo del curso, las capacidades básicas de trazado de Seaborn son suficientes para nosotros a lo largo del curso.
+
+109
+00:07:47,910 --> 00:07:52,890
+El tipo de funciones de cuadrícula solo está aquí para usted si desea personalizar aún más sus parcelas.
+
+110
+00:07:53,320 --> 00:07:58,650
+Y hay un enlace en el cuaderno de Júpiter para esta conferencia con algunos enlaces a la
+
+111
+00:07:58,740 --> 00:08:03,540
+documentación y más ejemplos de lo que puede hacer con la red Fassett y Peregrym.
+
+112
+00:08:03,540 --> 00:08:07,160
+puedes aprobar que automáticamente crearán una calificación rápida para ti.
+
+113
+00:08:07,340 --> 00:08:12,240
+Solo los tienen en cuenta cuando buscas un poco más de personalización, algunos otros
+
+114
+00:08:12,240 --> 00:08:16,890
+tipos de gráficos, como los gráficos de regresión, en realidad tienen parámetros que
+
+115
+00:08:16,890 --> 00:08:17,850
+Pero vamos a explorar eso un poco más cuando hablemos de gráficas de regresión en la próxima conferencia.
+
+116
+00:08:18,030 --> 00:08:22,520
+Bueno.
+
+117
+00:08:22,890 --> 00:08:23,820
+Gracias a todos.
+
+118
+00:08:23,820 --> 00:08:24,990
+Siéntase libre de publicar los foros de Q Any si tiene alguna pregunta sobre este tema.
+
+119
+00:08:24,990 --> 00:08:28,530
+Lo veré en la próxima conferencia
+
+120
+00:08:28,530 --> 00:08:29,520
+&nbsp;

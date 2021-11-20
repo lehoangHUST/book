@@ -1,0 +1,899 @@
+1
+00:00:05,490 --> 00:00:10,460
+Herkese merhaba ve finans proje çözümleri bölümünün ikinci bölümüne hoş geldiniz diyorum.
+
+2
+00:00:10,470 --> 00:00:15,780
+Hadi devam edin ve hemen son kez bıraktığımız Jüpiter not defterine atlayalım.
+
+3
+00:00:15,780 --> 00:00:16,080
+TAMAM.
+
+4
+00:00:16,080 --> 00:00:17,810
+İşte Jüpiter defterindeyim.
+
+5
+00:00:17,820 --> 00:00:20,740
+Son kez ayrıldık sadece bu sayfa arsasını yaratmıştık.
+
+6
+00:00:20,760 --> 00:00:23,830
+Citigroup'un dönüşünde biraz garip davranış fark et.
+
+7
+00:00:24,030 --> 00:00:29,250
+Ve eğer bu belirgindiyse, Citigroup Wikipedia sayfasını kontrol edebilirsiniz ve Kasım
+
+8
+00:00:29,250 --> 00:00:31,640
+2008'de bir çöküş yaşadıklarını göreceksiniz.
+
+9
+00:00:31,650 --> 00:00:34,710
+Ve biz aslında bunu biraz sonra keşfedeceğiz.
+
+10
+00:00:35,370 --> 00:00:41,070
+Ancak bunun için ne yapmak istediğimizi, bu döner veri çerçevesini kullanarak, her bir banka
+
+11
+00:00:41,070 --> 00:00:47,340
+stokunun en iyi ve en kötü günü hangi günlerde geçirdiğini ve bankaların dördünün daha kötü
+
+12
+00:00:47,340 --> 00:00:52,500
+bir düşüş için aynı gününü paylaştığını görüyoruz. o gün önemli bir şey oldu.
+
+13
+00:00:52,500 --> 00:01:00,300
+Devam edin ve yalnızca geri dönüş verisi çerçevesini kontrol edebilecek bir işe başlayın ve bu sütunların
+
+14
+00:01:00,330 --> 00:01:04,700
+B A C'nin C dönüşü vs. döndüğüne dikkat edin. Bu dönüşlerin minimum değerlerini almak istiyorum ve hepsi tek günlük döndürüyor.
+
+15
+00:01:04,780 --> 00:01:09,580
+Sadece erkeklerin tek günlük dönüş değeri minimumlarını geri getireceğini söyleyebilirim.
+
+16
+00:01:09,600 --> 00:01:16,960
+Şimdi biz aslında istediğimiz şey, bunun gerçekleştiği tarihler ve bunu yapmak için iki yol var.
+
+17
+00:01:16,970 --> 00:01:23,220
+Birincisi, sütun adları üzerinden yinelenebilir ve o zaman örneğin
+
+18
+00:01:23,220 --> 00:01:31,920
+bu sütunun erkeklerini aramamak adına PI'nı hatırlarsanız argümanları çağırabileceğiniz bir argüman o
+
+19
+00:01:32,520 --> 00:01:39,240
+zaman damgasını döndürür ve bu durum 20 Ocak 2009'dur.
+
+20
+00:01:39,300 --> 00:01:43,430
+Şimdi bunu her bir sütun için yapabilirdiniz veya Panthers, bunu
+
+21
+00:01:43,450 --> 00:01:49,290
+yalnızca id x men çağırarak tüm veri çerçevesinde yapmanıza izin veriyor ve bu, temelde
+
+22
+00:01:49,290 --> 00:01:57,600
+şu gibi, aşağıdakine benzer minimum değerlerin tarihleri ​​veya dizinleri olan bir seriyi döndürüyor: her bir bankanın getirileri ve aynı
+
+23
+00:01:57,930 --> 00:02:04,140
+şeyi, en büyük tek kazanç elde etmek için id x max iade ederek yapabilirsiniz.
+
+24
+00:02:04,140 --> 00:02:12,090
+Şimdi, en kötü darbelere rağmen, 20 Ocak 2009'da birçoğunun yaşandığını fark edeceksiniz.
+
+25
+00:02:12,150 --> 00:02:20,190
+Ve o gün neler olduğunu merak ediyorsanız, devam edin ve yalnızca google'da arama yapabilir ve bunun
+
+26
+00:02:20,280 --> 00:02:25,980
+aslında Barack Obama'nın açılış tarihe ait olduğunu göreceksin ki bu ilginçtir.
+
+27
+00:02:25,980 --> 00:02:30,950
+Buraya dikkat çeken bir husus, ilişkili olup olmadığı veya sadece tesadüf olup olmadığı
+
+28
+00:02:31,710 --> 00:02:37,200
+ya da temelde bazı büyük politik değişim gerçekleştiğinde piyasa yatırımcılarının bir kısmının paniklediğini unutmamak gerekir.
+
+29
+00:02:37,200 --> 00:02:41,000
+Aslında, bir JP Morgan'ın en büyük
+
+30
+00:02:41,070 --> 00:02:47,730
+dönüş günü olan ufak bir sonraki Max ertesi gün Max'i inceleyebilirsiniz.
+
+31
+00:02:47,730 --> 00:02:48,640
+Bu nedenle bunu herhangi bir siyasi yorum ya da mali öneri olarak kabul etmeyin.
+
+32
+00:02:48,720 --> 00:02:52,740
+Borsalar bazen garip olabilir.
+
+33
+00:02:52,740 --> 00:02:55,840
+Şimdi bir sonraki soruya bakarsak, Citigroup'un en büyük
+
+34
+00:02:55,890 --> 00:03:01,710
+düşüşünün ve en büyük kazançının birbirine çok yakın olduğunu fark etmiş olmanız gerektiğini söylüyor.
+
+35
+00:03:01,770 --> 00:03:04,770
+Bu yüzden, JP Morgan'ın kazanımlarının, en
+
+36
+00:03:05,040 --> 00:03:11,040
+büyük kaybından hemen sonraki açılış gününden sonra aynı gün içinde gerçekleştiğini fark ettik.
+
+37
+00:03:11,040 --> 00:03:12,020
+Ama Citigroup
+
+38
+00:03:12,240 --> 00:03:22,920
+mageddon'a bakarsak, Citigroup'a bakarsak sattığımızın açık olduğunu söylersek, 2011 6 Mayıs ve 2000 11 9 numaralı telefondan birbirlerine çok yakın
+
+39
+00:03:22,920 --> 00:03:31,110
+oldukları için en kötü dönüşleri ve en iyi getirileri olur ve önemli bir şey olur.
+
+40
+00:03:31,590 --> 00:03:34,540
+Aslında evet.
+
+41
+00:03:34,650 --> 00:03:35,990
+Googling'e Citigroup 2011 gibi
+
+42
+00:03:36,420 --> 00:03:43,200
+bir şey yaparsanız, Citigroup'un tersine hisse senedi paylaşımını duyurduğu bazı haberler almalısınız ve bu aslında o zamanların başına gelen şey.
+
+43
+00:03:43,200 --> 00:03:48,120
+Ve 6 Mayıs 2011'de verilerinizin burada ne kadar etkili olduğunu fark edebilirsiniz.
+
+44
+00:03:48,450 --> 00:03:55,330
+Tamam.
+
+45
+00:03:55,890 --> 00:03:56,160
+Bu çok hoş.
+
+46
+00:03:56,160 --> 00:03:56,880
+Gerçekten ilginç
+
+47
+00:03:56,880 --> 00:04:03,330
+olan veri çerçevemizdeki verilerimizde, hisse senedi fiyatlarını etkileyen gerçek hayat olaylarını gerçekte birbiriyle ilişkilendirebilir veya görebiliriz.
+
+48
+00:04:03,330 --> 00:04:06,270
+ve hangi hisse senedine bir göz atmaya bakalım.
+
+49
+00:04:06,360 --> 00:04:11,220
+Şimdi, yapmak istediğimiz yere devam edersek, tüm dönem boyunca en riskli olarak sınıflandırılacak
+
+50
+00:04:11,220 --> 00:04:15,990
+olan ve 2015 yılı için en riskli olarak sınıflandırılacak olan, getirilerin standart sapmasına
+
+51
+00:04:15,990 --> 00:04:19,040
+Bazen basit bir risk ölçümü
+
+52
+00:04:19,380 --> 00:04:25,320
+bir stokun riskliliğine ihtiyaç duyuyor olması stokun getirilerinin standart sapmasıdır.
+
+53
+00:04:25,320 --> 00:04:26,700
+Dolayısıyla, getirilerin çok büyük bir
+
+54
+00:04:26,700 --> 00:04:31,200
+standart sapmasına sahipseniz, hisse senetinizin küçük bir Steria sapmasına karşı çok yukarı ve aşağı gittiği anlamına gelir.
+
+55
+00:04:31,530 --> 00:04:33,880
+Bu, fiyatınızın oldukça sabit olduğu anlamına gelir.
+
+56
+00:04:33,900 --> 00:04:35,790
+Dolayısıyla, yüksek bir standart sapmanız varsa, stokunuz muhtemelen oldukça risklidir.
+
+57
+00:04:35,790 --> 00:04:39,270
+Hadi devam edelim ve bunu yapalım mı diye bakalım.
+
+58
+00:04:39,780 --> 00:04:41,970
+Aslında oldukça basit.
+
+59
+00:04:42,030 --> 00:04:43,100
+Sadece iadeler diyebilirsiniz ve bunu aslında burada hücrenin içine koyacağım.
+
+60
+00:04:43,110 --> 00:04:47,930
+SDD'yi standart sapma için döndürür ve bunun gibi bir şey elde ederiz.
+
+61
+00:04:47,940 --> 00:04:52,440
+Temelde her hisse senedi için standart sapma
+
+62
+00:04:52,440 --> 00:04:59,130
+ve genel olarak en riskli gibi görünüyor Citigroup aslında biraz.
+
+63
+00:04:59,250 --> 00:05:00,640
+Sonradan nedenini göreceğiz.
+
+64
+00:05:00,690 --> 00:05:01,860
+bakıp bakamayacağımızı bulmaktayız.
+
+65
+00:05:01,860 --> 00:05:10,500
+Çünkü büyük bir çöküş yaşandı ve 2015 yılına kadar devam edebiliyoruz ve yapmak istediğimiz şeylere geri dönüş yaparak başımıza
+
+66
+00:05:10,500 --> 00:05:14,530
+Yalnızca 2015 için değer elde etmek istiyoruz ve bu, endeksten kaynaklanıyor.
+
+67
+00:05:14,820 --> 00:05:19,770
+Anlamı aslında dizinin bir bölümünü veya bir dilimini kapmak istiyorum ve
+
+68
+00:05:20,010 --> 00:05:29,710
+bunu I X kullanarak kullanabilir ve 2015 0 1 0 1'den başlayarak 2015 yılına kadar bir dilim olarak 1 Ocak 2015'den itibaren geçerim.
+
+69
+00:05:29,730 --> 00:05:41,390
+On ikinci otuz bir dilimdir ve daha sonra bunun standart sapmasını dile getirir.
+
+70
+00:05:41,460 --> 00:05:46,960
+Ve 2015 yılında Citigroup kazasında olmayan bir yol olduğuna dikkat edeceksiniz; aslında hepsi de sahte
+
+71
+00:05:47,550 --> 00:05:52,980
+Fargo'nun o kadar da düşük bir risk oluşturduğu çok benzer bir risk profiline sahip.
+
+72
+00:05:52,980 --> 00:05:59,940
+olduğu görülüyor, ancak aslında standart sapmalar birbirine oldukça yakın.
+
+73
+00:06:00,420 --> 00:06:07,860
+Ve Morgan Stanley veya Bank of America'nın en yüksek risk
+
+74
+00:06:07,860 --> 00:06:10,990
+Tamam, Morgan Stanley için 2015 yılının deniz kıyısını kullanarak bir arsa yaratmak istedik.
+
+75
+00:06:11,040 --> 00:06:17,530
+Hadi devam edelim ve bunu yapalım.
+
+76
+00:06:17,610 --> 00:06:19,160
+Dışarı çıkıp bu
+
+77
+00:06:19,230 --> 00:06:26,700
+kodu buraya kopyaladığımda 2015'ten 2015 yılına dönmesini istediğim bu komplonun 2015'ler listemde olduğunu düşündüğümde hemen devam etmeliyiz.
+
+78
+00:06:27,150 --> 00:06:32,690
+Ve sonra Morgan Stanley'in sadece M-S geri dönüş
+
+79
+00:06:32,790 --> 00:06:41,820
+sütununu istediğimi ve biz de çözüm sunumuyla eşleşecek şekilde bu yeşil renge gidebileceğimizi istiyorum.
+
+80
+00:06:41,820 --> 00:06:49,920
+veri kapasitesine sahip olduğumuzdan, kutu sayısını veya kutu sayısını artıralım.
+
+81
+00:06:50,070 --> 00:06:54,810
+Ve devam edelim ve aslında binlerce
+
+82
+00:06:54,810 --> 00:06:55,640
+Bu yüzden gidip kutuların sadece 50 diyelim bir şeye eşit olduğunu söyleyeceğim.
+
+83
+00:06:55,650 --> 00:07:02,040
+Tamam.
+
+84
+00:07:02,130 --> 00:07:02,480
+Ve şimdi Morgan Stanley için 2015 yılında bir geri dönüş dağıtımımız var.
+
+85
+00:07:02,520 --> 00:07:07,800
+Pekala, burada M-S dönüşüne ve dağılımına
+
+86
+00:07:07,800 --> 00:07:12,210
+baktığımızda görebildiğimiz kadarıyla oldukça dengeli.
+
+87
+00:07:12,210 --> 00:07:13,710
+Ortalama yüzde 0,6'dan
+
+88
+00:07:13,710 --> 00:07:20,730
+sapan yüzde getiri oranına bakıyorsunuz ama şimdi devam edeceğiz ve şimdi yapacağız, Citigroup'un
+
+89
+00:07:20,730 --> 00:07:27,450
+seaborne seaborne'sini kullanarak, kendileri için oldukça uçucu bir yıl olan bir dağılım tablosunu
+
+90
+00:07:27,450 --> 00:07:35,570
+incelemektir Bunu yapmak için gidip Seaborne'i söyleyelim, bu komplo veya Sonesta bu arsa IX'i getirir ve
+
+91
+00:07:35,640 --> 00:07:47,100
+ben devam edip dilimleyip kopyalayacağım, ancak 2015 yerine bunun yerine geçeceğiz, 2008'de de aynı şeyi burada yapacağız. 2008s ve daha sonra C
+
+92
+00:07:47,100 --> 00:07:48,840
+dönüş sütununu istiyoruz.
+
+93
+00:07:52,000 --> 00:08:00,960
+Devam etmeyin ve bu kırmızı renkte olsun, böylece burada bir fark
+
+94
+00:08:01,220 --> 00:08:07,110
+gösterebilir ve ben de kutuyu eşit olarak ayarlayacağım.
+
+95
+00:08:07,200 --> 00:08:08,460
+Hadi tekrar 50 diyelim.
+
+96
+00:08:08,820 --> 00:08:11,480
+özellikle burada neredeyse 6 puan oluyorsun.
+
+97
+00:08:12,130 --> 00:08:17,490
+Eğer içeri girip karşılaştırırsam bunu yaparsam, standart sapmanın aslında biraz gergin olduğunu farkedeceksin,
+
+98
+00:08:17,490 --> 00:08:22,590
+Ve eğer bir banka için normal bir yıla
+
+99
+00:08:22,650 --> 00:08:30,180
+geri dönersek 2015 Avrupa noktası 0 6 aslında 10 kat daha fazladır.
+
+100
+00:08:30,180 --> 00:08:30,980
+Bu dağıtım
+
+101
+00:08:31,140 --> 00:08:37,950
+burada en uç noktaları gösterdiğine göre aşırı derecede bir aykırıdır ve ileride bu yıl Citigroup'a neler olduğunu keşfedeceğiz.
+
+102
+00:08:37,950 --> 00:08:41,130
+Fakat bu, hisse senedinin geçtiği finansal krizin bir göstergesidir.
+
+103
+00:08:41,130 --> 00:08:47,610
+Tamam.
+
+104
+00:08:47,690 --> 00:08:48,150
+kullanabilirsiniz.
+
+105
+00:08:48,360 --> 00:08:52,430
+Dolayısıyla, daha fazla görselleştirme yapacağız ve bu proje projelerinin birçoğu aslında görselleştirme üzerine yoğunlaştı
+
+106
+00:08:52,800 --> 00:08:56,790
+ve aşağıda açıklanan arsaları yeniden oluşturmak için tercih ettiğiniz görselleştirme kitaplıklarınızdan herhangi birisini rahatça
+
+107
+00:08:56,790 --> 00:08:58,300
+Onları daha fazla lib çizgi
+
+108
+00:08:58,350 --> 00:09:02,940
+çizgisi ve kol düğmesi veya hatta sadece panderers ile görebileceksiniz, böylece devam edip hangi yöntemleri istediğinizi seçebilirsiniz.
+
+109
+00:09:02,940 --> 00:09:06,840
+Dışarı çıkıp size her planı yapmanın bir kaç yolunu göstereceğim ve sana
+
+110
+00:09:06,840 --> 00:09:10,710
+bu arazileri iyi yapmak için Paul kol düğmelerini nasıl kullanacağını göstereceğiz.
+
+111
+00:09:10,710 --> 00:09:14,220
+Pekâlâ, bu ithalatı çalıştırdıktan sonra çıkıp yapmak istediğimizde, her
+
+112
+00:09:14,370 --> 00:09:19,500
+bir banka için veya zamanın tüm dizini için yakın fiyata bir çizgi şovu hazırlayın.
+
+113
+00:09:19,500 --> 00:09:22,990
+Ve burada bir for döngüsü kullanmayı denemek veya verilerin
+
+114
+00:09:23,130 --> 00:09:27,480
+bir kesitini almak için kesit metodunu kullanmak için birkaç ipucu vardı.
+
+115
+00:09:27,480 --> 00:09:29,520
+Ve burada, her iki yöntemi de oyunda görebiliriz.
+
+116
+00:09:29,640 --> 00:09:32,520
+Devam edin ve önce for döngüsü yöntemini gösterin.
+
+117
+00:09:32,520 --> 00:09:35,110
+Ve umarım şimdi Citigroup'u yeşil gördüğünü görerek,
+
+118
+00:09:35,400 --> 00:09:41,220
+2008'deki bu büyük çöküşün standart sapması o yıla göre oldukça büyük olması gerektiğini görerek kullandığı açıktır.
+
+119
+00:09:41,520 --> 00:09:46,970
+Ancak yine de for döngüsüne geri dönüyor.
+
+120
+00:09:47,490 --> 00:09:49,960
+etiketin işaretleyiciye eşit olduğunu belirtin.
+
+121
+00:09:50,400 --> 00:09:57,540
+Ben gidip banknotların kapanış fiyatını belirten hisse senedi listelerinin hatırladığı bir hisse senedi
+
+122
+00:09:57,540 --> 00:10:07,170
+için bir kene için söyleyeceğim ve sonra da devam edin ve bunu planlayın ve bunu planlamak için gidiyorum
+
+123
+00:10:07,170 --> 00:10:10,720
+Şimdi renklerin hangi çizgide geldiğini biliyoruz.
+
+124
+00:10:10,940 --> 00:10:13,760
+Ve sonra Fig'ın boyutunu
+
+125
+00:10:13,860 --> 00:10:19,930
+da biraz uzatacağımızı belirteyim, böylece elimizdeki aynı görseli alabiliriz.
+
+126
+00:10:20,760 --> 00:10:22,940
+Sonra nihayetinde efsaneyi görebilmek için t efsanesini arayacağım ve eğer koşarsam aynı çizgiyi elde ederim.
+
+127
+00:10:22,980 --> 00:10:31,040
+Öyle görünüyor ki, Citigroup'un 2008'deki büyük durgunluk
+
+128
+00:10:31,050 --> 00:10:37,800
+sonrasında gerçekten de çöktüğünü açıkça görebiliriz.
+
+129
+00:10:38,310 --> 00:10:39,360
+Ve ilginç olan
+
+130
+00:10:39,480 --> 00:10:44,820
+şey de, diplerden hoşlanan ve durgunluğun ardından oldukça hızlı bir şekilde geri dönen bu Goldman Sachs kırmızı çizgidir.
+
+131
+00:10:44,820 --> 00:10:47,550
+Diğer bankaları görmek ve nasıl performans gösterdiğini görmek için daha da büyütmeniz gerekiyor.
+
+132
+00:10:47,750 --> 00:10:52,020
+Ancak nispeten konuşmak diğer hisse senetlerinin devam edelim
+
+133
+00:10:52,200 --> 00:10:58,470
+ve sana nasıl kesiştireceğimizi göstermek için neredeyse aynı etkiyi yaratmadı. Ayrıca, banka
+
+134
+00:10:58,500 --> 00:11:08,060
+stokları, yakın erişimin eşit olana eşit olan anahtarlarla bankalara erişimi durdurduğunu söyleyebilirdi ve biz Sütunlara bakıyorsun, seviye stok bilgisi.
+
+135
+00:11:08,130 --> 00:11:20,790
+Ve buna bir göz atarsak.
+
+136
+00:11:20,820 --> 00:11:22,460
+Bu temelde hisse senetleri için kapanış fiyatlarıdır.
+
+137
+00:11:22,650 --> 00:11:25,600
+Ve sonra burada yapmamız gereken komplo aramak ve aynı arsa almak.
+
+138
+00:11:25,620 --> 00:11:30,710
+Dolayısıyla, bir for döngüsü yerine bu işlemi sadece bir kesit kullanarak tek bir satırda yapabilirsiniz.
+
+139
+00:11:30,930 --> 00:11:35,490
+Ve yine rakam boyutunu değiştirebilir ve bu arsa üzerinde istediğiniz herhangi bir harita arsa döngüsü komutlarını yapabilirsiniz.
+
+140
+00:11:35,580 --> 00:11:40,260
+Son olarak, devam edelim ve arsa için bunu yapmanın
+
+141
+00:11:41,370 --> 00:11:47,160
+yolunu gösterelim; bu aslında esas olarak, veri çerçevesini oluşturan bu aynı çizgidir.
+
+142
+00:11:47,760 --> 00:11:49,560
+Ama sonra ben komplo denir ve
+
+143
+00:11:49,950 --> 00:11:57,090
+kol düğmeleri şimdi şeyler görselleştirmek ve aslında değerler ve onunla oyun etrafında görmek bu çok güzel görünümlü arsa oluşturmak için izin verecektir.
+
+144
+00:11:57,090 --> 00:12:01,940
+hisse bölünmeleri gibi olaylar sırasında garip bir davranış.
+
+145
+00:12:01,950 --> 00:12:06,990
+Aslında, Citigroup veya Goldman Sachs hisse senetlerini büyütmek
+
+146
+00:12:06,990 --> 00:12:12,240
+isterseniz, bir kesit kapma ve ardından finansal kriz sırasında
+
+147
+00:12:12,390 --> 00:12:18,810
+dalgalanmayı da görebileceğiniz düşüşleri kontrol ederek yapabilirsiniz. Mayıs ayında bu gibi
+
+148
+00:12:18,810 --> 00:12:20,820
+Tamam.
+
+149
+00:12:20,820 --> 00:12:21,290
+Dolayısıyla bu,
+
+150
+00:12:21,450 --> 00:12:25,860
+verilerin etrafında oynamanın ve finansal kriz sırasında hisse senedi fiyatlarını keşfetmenin eğlenceli olmasını sağlıyor.
+
+151
+00:12:25,860 --> 00:12:27,340
+Devam edip hareket edeceğiz, hareketli ortalamalara geçelim.
+
+152
+00:12:27,440 --> 00:12:31,300
+Ve 2008 boyunca hisse senetlerinin hareketli ortalamalarını analiz edeceğiz.
+
+153
+00:12:31,590 --> 00:12:35,960
+Yapmamız gereken ilk şey, 2008 yılına ilişkin Bank of America
+
+154
+00:12:36,000 --> 00:12:40,650
+hisse senetlerinin kapanış fiyatına karşı yuvarlanan 30 günlük ortalamayı belirlemektir.
+
+155
+00:12:40,650 --> 00:12:44,330
+Hadi devam edelim ve bunu nasıl yapabileceğimizi gösterelim.
+
+156
+00:12:44,340 --> 00:12:46,560
+B A C diyeyim ve B A C numarasının başını kontrol edeceğim.
+
+157
+00:12:46,590 --> 00:12:53,170
+Bu, Bank of America için ilk orijinal veri çerçevemdi.
+
+158
+00:12:53,180 --> 00:12:56,570
+koyduktan sonra kapıyı kapana
+
+159
+00:12:56,580 --> 00:13:02,070
+kadar bunları diyoruz ve IX yöntemini kullanıp
+
+160
+00:13:02,070 --> 00:13:10,590
+istediğim tarihleri ​​dilimlere ayırıp 2008 1 Ocak'tan başlayacağım. 2009 1 Ocak.
+
+161
+00:13:10,590 --> 00:13:14,430
+Aslında banka altını çizen stoklara
+
+162
+00:13:16,890 --> 00:13:18,420
+Yani bir yıl.
+
+163
+00:13:18,480 --> 00:13:19,800
+Ve sonra yapmak istediğimiz haddeleme yöntemini kullanmaktır.
+
+164
+00:13:20,310 --> 00:13:24,710
+Dolayısıyla Panas, size hareketli bir ortalama
+
+165
+00:13:25,920 --> 00:13:35,220
+için yuvarlanan bir yöntem verme yeteneğine sahiptir ve yöntemimiz olarak ortalamanızı söyleyebiliriz.
+
+166
+00:13:37,620 --> 00:13:38,220
+Ve
+
+167
+00:13:38,220 --> 00:13:45,330
+sonra sadece devam edip plan yapabiliriz ve biz bunu aslında bir etiketle çizebiliriz ki baktığımızı gösterebiliriz.
+
+168
+00:13:46,530 --> 00:13:47,240
+fiyat.
+
+169
+00:13:47,240 --> 00:13:55,410
+Dolayısıyla içeri girip, etiket olarak 30 günlük bir hareketli ortalamanın olduğunu söyleyelim ve yapacağımız bir
+
+170
+00:13:55,410 --> 00:14:03,180
+sonraki şey, aynı şeyi yakından göreceğimiz yolunda gidiyoruz ancak bu durumda stoka karşı planlanmış
+
+171
+00:14:03,180 --> 00:14:04,520
+O zaman komplo ve bu etiketin BAMC kapanacağını ve PLDT'yi bu efsaneyi arayacağımızı söyle.
+
+172
+00:14:04,590 --> 00:14:16,600
+Bu şekilde koşarsak, böyle bir arsa bulabiliriz ve Piazzi'nin büyük boy gösterdiğini söyleyerek bunu devam
+
+173
+00:14:17,790 --> 00:14:21,900
+ettirebiliriz ve bunun daha önce
+
+174
+00:14:21,900 --> 00:14:29,310
+söylediğim gibi biraz daha hoş bir şey olduğunu söyleyebiliriz. 30
+
+175
+00:14:29,600 --> 00:14:35,700
+günün fiili kapanış fiyatına karşı hareketli ortalaması var.
+
+176
+00:14:35,700 --> 00:14:36,960
+Bu, hisse senedinin genel trendini seyrederken görmenizi sağlar.
+
+177
+00:14:36,960 --> 00:14:41,620
+Ve bu pencereyi, istediğiniz her neyse, haftalık hareketli
+
+178
+00:14:41,670 --> 00:14:47,010
+ortalama veya 60 günlük hareketli ortalama olacak şekilde değiştirebilirsiniz.
+
+179
+00:14:47,010 --> 00:14:47,740
+Pekala, yapmak
+
+180
+00:14:48,150 --> 00:14:52,860
+istediğiniz sonraki şey, bu hisse senetleri kapanış fiyatları arasındaki korelasyonun bir ısı haritası oluşturmaktır.
+
+181
+00:14:52,950 --> 00:14:54,660
+Hadi devam edin ve sana nasıl yapabileceğimizi gösterelim.
+
+182
+00:14:54,690 --> 00:14:56,520
+Isı haritasını Asinus'u arayabilirsin ve şu anda hisse senedi piyasaya kapanış fiyatını bir korelasyon almak istiyoruz.
+
+183
+00:14:56,550 --> 00:15:04,710
+Hadi devam edin ve sadece hash etiketi yapın ve önce o veri çerçevesini oluşturun.
+
+184
+00:15:04,800 --> 00:15:09,580
+Daha önce yaptığınıza çok benzer olacak.
+
+185
+00:15:09,990 --> 00:15:12,120
+Dışarı çıkıp kapanış fiyatlarının kesitini yakalayacağız ve X'in 1'e yakın olduğunu söyleyeceğiz.
+
+186
+00:15:12,210 --> 00:15:21,230
+Seviye stok bilgisi ve biz sadece bunu
+
+187
+00:15:21,540 --> 00:15:23,730
+kontrol edersek.
+
+188
+00:15:27,500 --> 00:15:29,440
+Bu sadece stokların kapanış fiyatları.
+
+189
+00:15:29,820 --> 00:15:33,090
+Ve bana söylersem, bu ilişki sağlar.
+
+190
+00:15:33,090 --> 00:15:39,240
+Ve şimdi ısı haritası diyebileceğim bir matris biçiminde bir şey var.
+
+191
+00:15:39,240 --> 00:15:43,430
+Bu yüzden, ilerlemeye başlayacağım ve onu yakından incelemeyeceğim ve burada ısı haritasını söyleyip ısı haritamıza bakacağım.
+
+192
+00:15:43,730 --> 00:15:51,450
+araya getirmek için küme haritalarını kullanmanın yanı sıra, neler olup bittiği konusunda biraz daha netleştirmemiz faydalı olabilir.
+
+193
+00:15:52,470 --> 00:16:00,320
+Ve şimdi ısı haritam var ve eğer gerçek açıklamaları istersem şunu söyleyebilirim ve bu doğrudur ve
+
+194
+00:16:00,330 --> 00:16:05,310
+o zaman ek açıklamalar koyacağız ve buraya burada hisse senetlerinin
+
+195
+00:16:05,310 --> 00:16:12,630
+kapanış fiyatları arasındaki korelasyonu göreceğiz İsteğe bağlı olarak yapabileceğimiz bir şeyin yanısıra, bu korelasyonları bir
+
+196
+00:16:12,630 --> 00:16:17,550
+Isı haritası türünde, yapmanız gereken tek şey küme haritasına
+
+197
+00:16:18,060 --> 00:16:24,660
+yazmak ve bunu çalıştırırsanız, bunun gibi görünen çok şey elde etmeniz gerekir.
+
+198
+00:16:24,660 --> 00:16:26,080
+Seaborne, Citigroup Morgan Stanley
+
+199
+00:16:26,280 --> 00:16:34,920
+ve Bank of America'yı bir araya getirmeye çalışmış gibi görünüyor ve ilişkilerini bir araya getirip altınla birlikte bir grup haline getiriyorlar.
+
+200
+00:16:34,920 --> 00:16:39,580
+Goldman Sachs J. P. Fargo'nun başka bir gruba girmesi, bir miktar birbiriyle ilişkilendiriliyor.
+
+201
+00:16:39,600 --> 00:16:45,030
+Morgan ve Wells
+
+202
+00:16:45,030 --> 00:16:46,400
+Tamam.
+
+203
+00:16:46,410 --> 00:16:46,990
+Hangi tabloların hangi hisse senetlerinin en fazla ilişkili olduklarını veya birbirlerine bağlı olup olmadıklarını kontrol edebilirler.
+
+204
+00:16:47,220 --> 00:16:51,060
+Görünüşe göre, JP Morgan ve Wells Fargo'nun yanı sıra Morgan Stanley ve Bank of America var.
+
+205
+00:16:51,060 --> 00:17:00,750
+TAMAM.
+
+206
+00:17:00,750 --> 00:17:01,400
+Yani finansal proje için buydu.
+
+207
+00:17:01,770 --> 00:17:04,490
+olan yoğun bağlılığı nedeniyle isteğe bağlı
+
+208
+00:17:04,500 --> 00:17:09,090
+bir şey gelecekte bu işlevselliğin bir kısmının kopması halinde kendi başınıza keşfedebilirsiniz.
+
+209
+00:17:09,090 --> 00:17:15,240
+Çözümlerin bir bölümünde ders anlatılacağı ve kol düğmelerinin özel yeteneklerinden bazılarını yapacak daha çok
+
+210
+00:17:15,270 --> 00:17:19,740
+şey içeren isteğe bağlı bir bölüm var ancak kol düğmelerine
+
+211
+00:17:19,740 --> 00:17:21,420
+Umarım bu projeden hoşlanırsınız.
+
+212
+00:17:21,420 --> 00:17:22,860
+Son derece zorlu
+
+213
+00:17:22,860 --> 00:17:29,280
+ve zor olması gerekiyordu, ancak hisse senedi ve finansal analiz gereği bu tür bir şey.
+
+214
+00:17:29,280 --> 00:17:30,060
+Bu, ilgilendiğiniz bir şeyse, karşılaşacağınız türden bir şey.
+
+215
+00:17:30,180 --> 00:17:33,360
+yapmak zorunda olduğunuzdan daha kolay hale getirebilir bu cevapların
+
+216
+00:17:33,570 --> 00:17:38,010
+çoğunu sadece birkaç satırlık bir kodla veya sadece bir kod satırı ile.
+
+217
+00:17:38,010 --> 00:17:43,290
+Bu yüzden bir sürü şey oldukça zor ve zor ancak umarım pandalar ve deniz
+
+218
+00:17:43,290 --> 00:17:48,660
+kıyısından gerçekten çok rahat hissettiğiniz şeyleri, örneğin onları Excel'de veya başka bir programlama dili ile
+
+219
+00:17:48,660 --> 00:17:51,220
+Ve gerçekten harika olan şey, böyle bir
+
+220
+00:17:51,280 --> 00:17:56,640
+şeyin bir satırda yapılabilmesidir; böylece meslektaşlarınızı veya arkadaşlarınızı kendi finansal projelerinizdeki analizlerini göstererek etkileyebilirsiniz.
+
+221
+00:17:56,640 --> 00:18:01,730
+TAMAM.
+
+222
+00:18:01,770 --> 00:18:02,300
+Umarım projeden hoşlanırdınız.
+
+223
+00:18:02,520 --> 00:18:03,860
+Kısmen 3'e gelince, bu çözümlerin isteğe bağlı bölümüne geçeceğiz.
+
+224
+00:18:03,900 --> 00:18:08,510
+Herkese teşekkürler, bir sonraki derside görüşürüz.
+
+225
+00:18:08,730 --> 00:18:10,680
+&nbsp;

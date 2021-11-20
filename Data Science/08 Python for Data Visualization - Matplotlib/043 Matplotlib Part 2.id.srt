@@ -1,0 +1,803 @@
+1
+00:00:05,460 --> 00:00:09,580
+Halo semuanya dan selamat datang di mat Partlet untuk seri kuliah.
+
+2
+00:00:09,690 --> 00:00:14,280
+Kita akan mengambil tepat di mana kita tinggalkan di bagian satu di mana kita belajar tentang pemrograman fungsional
+
+3
+00:00:14,280 --> 00:00:15,270
+dengan plot itu.
+
+4
+00:00:15,420 --> 00:00:18,990
+Dan yang lebih penting metode berorientasi objek dengan Matt plotless.
+
+5
+00:00:19,110 --> 00:00:22,040
+Ayo maju dan lompat kembali ke notebook Jupiter untuk memulai.
+
+6
+00:00:22,250 --> 00:00:22,540
+BAIK.
+
+7
+00:00:22,560 --> 00:00:28,200
+Di sini saya kembali ke nomor buku catatan Jupiter sejak terakhir kali kami belajar bagaimana
+
+8
+00:00:28,200 --> 00:00:35,600
+menggunakan angka itu dan kemudian mencari sumbu dan kemudian menggerakkan plot itu untuk memplot ke gambar berorientasi objek menggunakan plotless itu.
+
+9
+00:00:36,390 --> 00:00:41,940
+Hal berikutnya yang akan kita lakukan adalah mempelajari cara membuat subplot menggunakan metode pemrograman berorientasi objek
+
+10
+00:00:41,940 --> 00:00:42,950
+yang sama.
+
+11
+00:00:42,990 --> 00:00:51,600
+Saya akan pergi ke depan dan mengatakan Di sini mari kita bersihkan semua yang ada di sel ini dan kita
+
+12
+00:00:51,630 --> 00:01:02,790
+akan pergi ke depan dan mengatakan ini dan memindahkan sel ke pusat dan kita akan mengatakan sumbu koma sama dengan mengupas T dan sebaliknya memanggil
+
+13
+00:01:02,790 --> 00:01:08,900
+angka sekarang mengatakan kita akan mencoba melakukan subplot kita akan mengatakan subplot sangat
+
+14
+00:01:08,910 --> 00:01:10,340
+menarik bagi subplot.
+
+15
+00:01:10,500 --> 00:01:12,270
+Ayo maju dan jalankan ini.
+
+16
+00:01:12,570 --> 00:01:15,600
+Dan perhatikan di sini kita dapatkan subplot saja.
+
+17
+00:01:15,600 --> 00:01:20,790
+Sekarang yang bisa saya lakukan hanyalah menggunakan objek sumbu seperti yang telah saya lakukan sebelumnya untuk merencanakannya.
+
+18
+00:01:21,090 --> 00:01:25,400
+Dan ini pada dasarnya tidak berbeda dengan apa yang kami lakukan sebelumnya.
+
+19
+00:01:25,710 --> 00:01:32,040
+Dan di sini dia berkata X adalah plot x datang Y di mana subplot berbeda adalah di mana Anda dapat menentukan
+
+20
+00:01:32,040 --> 00:01:33,610
+jumlah baris dan kolom.
+
+21
+00:01:33,810 --> 00:01:42,420
+Misalnya saya bisa mengatakan dan baris sebagai argumen pertama saya sama dengan 1 dan memanggil sebagai argumen kedua saya
+
+22
+00:01:42,420 --> 00:01:44,330
+sama dengan dua.
+
+23
+00:01:44,700 --> 00:01:49,970
+Dan saya akan melanjutkan dan menunjukkan kepada Anda apa yang tampak seperti tag hash yang keluar dan jalankan ini.
+
+24
+00:01:50,070 --> 00:01:57,660
+Sekarang Anda dapat melihat saya memiliki satu baris dengan dua kolom dan itu pada dasarnya hanya pegangan depan
+
+25
+00:01:57,660 --> 00:02:05,640
+yang bagus untuk memanggil Piel T-Dog dan plot yang dilakukan pada dasarnya memanggil sumbu ara ini secara otomatis untuk Anda
+
+26
+00:02:05,670 --> 00:02:08,900
+berdasarkan dari argumen, baris, dan kolom ini.
+
+27
+00:02:09,180 --> 00:02:12,540
+Ayo maju dan bermain-main dengan ini mari kita tunjukkan satu contoh lagi.
+
+28
+00:02:12,570 --> 00:02:20,440
+Tiga baris dengan mari kita masuk dan katakan tiga kolom dan kita lihat sekarang kita memiliki tiga baris dengan tiga kolom.
+
+29
+00:02:20,550 --> 00:02:25,770
+Nanti kita akan melihat bagaimana menangani masalah hal-hal yang tumpang tindih tetapi pada dasarnya hanya satu
+
+30
+00:02:25,770 --> 00:02:26,600
+panggilan telepon.
+
+31
+00:02:26,610 --> 00:02:34,720
+Kami hanya mengatakan lepaskan saja dan itu benar-benar akhirnya memperbaiki tumpang tindih itu.
+
+32
+00:02:34,810 --> 00:02:41,270
+Mari kita keluar dan mengambil langkah mundur dan bekerja dengan ini satu per dua.
+
+33
+00:02:41,280 --> 00:02:41,670
+Baiklah.
+
+34
+00:02:41,760 --> 00:02:43,320
+Kami memiliki realty subplot itu.
+
+35
+00:02:43,320 --> 00:02:47,520
+Dan pada dasarnya itu hanya manajer kapak di atas Piel untuk angka itu.
+
+36
+00:02:47,550 --> 00:02:52,970
+Sesuatu yang perlu dicatat di sini adalah bahwa alih-alih hanya mengatakan ara sama dengan PBT
+
+37
+00:02:52,990 --> 00:02:59,100
+angka yang saya lakukan tuple dan mengepaknya mengatakan sumbu koma ara sama dengan mengupas gigi yang subplot
+
+38
+00:02:59,100 --> 00:03:07,290
+dan yang perlu diketahui tentang objek sumbu ini adalah jika saya pergi ke sini untuk sel ini dan ketik kapak sumbu sebenarnya hanya sebuah
+
+39
+00:03:07,290 --> 00:03:13,710
+array peta plot lib sumbu dasarnya itu hanya daftar objek kapak ini yang berarti saya benar-benar dapat beralih melalui
+
+40
+00:03:13,710 --> 00:03:14,290
+itu.
+
+41
+00:03:14,460 --> 00:03:29,950
+Saya bisa mengatakan sesuatu seperti ini untuk huruf garis bawah X saat ini di sumbu sumbu plot x datang a y.
+
+42
+00:03:30,020 --> 00:03:31,610
+Saya sebenarnya tidak ingin mengatakan X bukan plot.
+
+43
+00:03:31,620 --> 00:03:40,450
+Saya ingin mengatakan plot X stop saat ini dan kemudian kita melihat bahwa kita sebenarnya telah merencanakan melalui sumbu ini.
+
+44
+00:03:40,710 --> 00:03:47,550
+Sekali lagi ini hanya untuk menunjukkan bahwa objek sumbu ini pada dasarnya hanya daftar sumbu peta lib yang merupakan yang Anda
+
+45
+00:03:47,550 --> 00:03:50,190
+buat secara manual ketika Anda mengatakan Gambar.
+
+46
+00:03:50,250 --> 00:03:56,390
+Tambahkan garis bawah menggarisbawahi lebih jauh mengarahkan titik pulang bahwa satu-satunya perbedaan antara Pilani yang subplot dan
+
+47
+00:03:56,460 --> 00:04:03,090
+hanya melakukan pilt angka itu adalah bahwa Piel bahwa subplot pada dasarnya melakukan ini pada garis bawah menggarisbawahi
+
+48
+00:04:03,090 --> 00:04:08,470
+hal-hal untuk Anda secara otomatis berdasarkan berapa baris dan kolom yang Anda inginkan .
+
+49
+00:04:08,490 --> 00:04:09,170
+BAIK.
+
+50
+00:04:09,450 --> 00:04:13,600
+Karena kita dapat beralih melalui objek sumbu ini, kita sebenarnya dapat juga mengindeksnya.
+
+51
+00:04:13,620 --> 00:04:24,140
+Artinya saya dapat mengatakan sumbu 0 plot Dopp X datang Y dan di sini saya telah merencanakan pada sumbu pertama ini.
+
+52
+00:04:24,140 --> 00:04:25,090
+Sekarang saya bisa melakukan hal yang sama.
+
+53
+00:04:25,090 --> 00:04:31,460
+Yang kedua saya bisa mengatakan kapak 1 dot plot y koma x.
+
+54
+00:04:31,770 --> 00:04:40,300
+Dan di sini kita melihat bagaimana baik panggilan indeks menawarkan array sumbu atau beralih melalui array sumbu ini
+
+55
+00:04:40,300 --> 00:04:45,490
+dan seperti yang kita lihat sebelumnya, kita juga dapat memanggil
+
+56
+00:04:45,520 --> 00:05:03,180
+judul dan label dari ini sehingga saya dapat mengatakan sesuatu seperti xes 0 judul set akan mengatakan plot pertama dan maka saya akan mengatakan kapak 1 garis bawah judul plot kedua dan pahlawan dapat memanggil judul dan
+
+57
+00:05:03,190 --> 00:05:09,580
+Anda dapat mengatakan label x menetapkan label y dari salah satu objek sumbu ini.
+
+58
+00:05:09,640 --> 00:05:16,060
+Yang Anda lakukan hanya benar-benar meraih objek sumbu kapak berdasarkan posisinya di
+
+59
+00:05:16,060 --> 00:05:17,310
+dalam array.
+
+60
+00:05:17,320 --> 00:05:17,770
+Baiklah.
+
+61
+00:05:17,980 --> 00:05:22,040
+Mari kita lakukan tinjauan singkat dari dua metode berorientasi objek ini.
+
+62
+00:05:22,300 --> 00:05:24,330
+Metode pertama ini sedikit lebih manual.
+
+63
+00:05:24,370 --> 00:05:26,380
+Itu adalah figur T-Dog Piel.
+
+64
+00:05:26,410 --> 00:05:32,650
+Anda pergi ke depan dan membuat angka yang Anda tambahkan secara manual sumbu dan pilih lokasi dan ukurannya dan kemudian berdasarkan dari sumbu Anda pergi ke
+
+65
+00:05:32,770 --> 00:05:39,880
+depan dan mengatakan bahwa plot dan label judul X itu mengatur y label dll yang kami tunjukkan contohnya
+
+66
+00:05:39,880 --> 00:05:42,840
+di sini.
+
+67
+00:05:42,970 --> 00:05:48,280
+Metode kedua adalah untuk subplot yang Anda inginkan disusun oleh kolom Rosing.
+
+68
+00:05:48,280 --> 00:05:55,450
+Hal ini memungkinkan Anda untuk memanggil sumbu koma sehingga tuple dalam pengemasan di sini sama dengan panggilan subplot dan
+
+69
+00:05:55,480 --> 00:06:01,600
+kemudian didasarkan pada sumbu yang Anda dapatkan array sumbu dan Anda dapat merencanakan dan menetapkan judul
+
+70
+00:06:01,660 --> 00:06:05,300
+dengan mengindeks atau dengan mengiterasi objek sumbu tersebut.
+
+71
+00:06:05,300 --> 00:06:12,760
+Dan jika Anda pernah memiliki masalah dengan hal-hal yang tumpang tindih Anda selalu bisa mengatakan kurung T-top kurung tutup rapat
+
+72
+00:06:12,770 --> 00:06:16,470
+dan ini akan mengurus setiap plot yang tumpang tindih.
+
+73
+00:06:16,480 --> 00:06:20,210
+Saya merekomendasikan Anda untuk selalu menempatkan ini di akhir pernyataan plot Anda.
+
+74
+00:06:20,830 --> 00:06:27,970
+OK sekarang mulai berbicara tentang rasio aspek ukuran gambar dan Cutlip peta GPI memungkinkan Anda untuk mengontrol masing-masing
+
+75
+00:06:27,970 --> 00:06:32,620
+aspek ini dan Anda dapat menentukannya saat Anda memanggil objek gambar.
+
+76
+00:06:32,620 --> 00:06:34,990
+Biarkan saya maju dan menunjukkan kepada Anda sebuah contoh.
+
+77
+00:06:34,990 --> 00:06:44,500
+Saya akan mengatakan berpikir sama dengan angka Piel dan argumen yang bisa saya sampaikan adalah ukuran Figgs sama dengan.
+
+78
+00:06:44,890 --> 00:06:50,350
+Dan kemudian Anda melewati tuple di mana tuple adalah lebar dan tinggi dari angka dalam inci.
+
+79
+00:06:50,380 --> 00:06:58,630
+Misalnya saya dapat melanjutkan dan mengatakan tiga demi dua dan kemudian argumen kedua yang dapat Anda tambahkan adalah GPI misalnya 100
+
+80
+00:06:58,690 --> 00:07:03,940
+GPI di mana API hanya titik per inci atau piksel per inci.
+
+81
+00:07:04,120 --> 00:07:07,490
+Saya biasanya hanya menggunakan GPI default ketika saya bekerja dengan buku catatan Jupiter.
+
+82
+00:07:07,600 --> 00:07:14,290
+Jadi saya akan pergi ke depan dan hanya jelas bahwa untuk sekarang saya akan menambahkan
+
+83
+00:07:14,290 --> 00:07:27,310
+satu set sumbu untuk panggilan ini hanya X dan kita akan mengatakan fig dot menambahkan sumbu garis bawah dan kita akan mengatakan 0 0 1 koma 1 dan kemudian
+
+84
+00:07:27,310 --> 00:07:33,220
+saya akan pergi ke depan dan mengatakan X stop plot x datang Y.
+
+85
+00:07:33,340 --> 00:07:33,700
+Baiklah.
+
+86
+00:07:33,700 --> 00:07:34,710
+Jadi, inilah plot kami.
+
+87
+00:07:34,720 --> 00:07:36,970
+Mari kita lanjutkan dan mengacaukan ukuran figur.
+
+88
+00:07:37,000 --> 00:07:39,450
+Katakanlah kita ingin ini menjadi sangat luas.
+
+89
+00:07:39,500 --> 00:07:41,280
+Silakan katakan 8 dengan 2.
+
+90
+00:07:41,650 --> 00:07:45,880
+Dan sekarang saya memiliki ini menjadi 8 inci kali 2 inci.
+
+91
+00:07:45,880 --> 00:07:46,510
+Baiklah.
+
+92
+00:07:46,960 --> 00:07:55,510
+Jadi Anda dapat melakukan hal yang sama dengan subplot saya bisa mengatakan bahwa subplot menetapkan bahwa anggota ukuran Fig di sini.
+
+93
+00:07:55,510 --> 00:08:01,240
+Sekarang kita akan mengatakan sumbu ara dan saya akan pergi ke depan dan menghapus kapak.
+
+94
+00:08:01,330 --> 00:08:07,900
+Atur ukuran gambar dan sumbu akan maju dan plot ke sumbu pertama.
+
+95
+00:08:07,900 --> 00:08:15,670
+Saya hanya akan mengatakan kapak dot plot x y dan saya mendapatkan plot yang sangat mirip.
+
+96
+00:08:15,670 --> 00:08:21,490
+Sekarang saya akan pergi dan menentukan beberapa baris dan kolom untuk subplot ini akan mengatakan dan Rose
+
+97
+00:08:21,490 --> 00:08:22,820
+sama dengan 1.
+
+98
+00:08:22,870 --> 00:08:25,210
+Ini sebenarnya membuat dua baris dan kita akan melebar di sini.
+
+99
+00:08:25,510 --> 00:08:28,550
+Dan katakanlah kita memiliki satu kolom.
+
+100
+00:08:28,720 --> 00:08:31,600
+Jadi dan panggilan sama dengan 1.
+
+101
+00:08:31,600 --> 00:08:34,710
+Sekarang saya akan menelepon 0 di sini.
+
+102
+00:08:34,840 --> 00:08:45,310
+Plot X datang Y dan kemudian kita akan mengatakan sumbu satu titik plot y koma X. Dan di sini ia dapat melihat ukuran FIG telah memperhitungkan
+
+103
+00:08:45,310 --> 00:08:49,220
+ini sejauh dua baris dengan satu kolom.
+
+104
+00:08:49,780 --> 00:08:57,250
+Dan seperti biasa karena kami memiliki sedikit yang sebenarnya di sini situs coba katakanlah peel gigi dengan erat dan ini akan berusaha yang terbaik untuk
+
+105
+00:08:57,250 --> 00:09:01,750
+memperbaiki tata letak jenis dan sepertinya itu melakukan pekerjaan yang cukup bagus di sini.
+
+106
+00:09:02,060 --> 00:09:07,110
+Ada beberapa masalah di sini dengan sumbu y ini tetapi saya akan tunjukkan nanti bagaimana
+
+107
+00:09:07,120 --> 00:09:11,240
+Anda dapat menyesuaikan sumbu y ini untuk menunjukkan informasi yang sedikit kurang.
+
+108
+00:09:11,260 --> 00:09:11,590
+Baiklah.
+
+109
+00:09:11,590 --> 00:09:16,990
+Sekarang kita telah selesai membahas ukuran gambar dan GPI. Mari kita lanjutkan dan membuat sel
+
+110
+00:09:16,990 --> 00:09:21,090
+baru dan mulai membahas bagaimana sebenarnya menyimpan angka untuk menyimpan angka.
+
+111
+00:09:21,250 --> 00:09:26,910
+Anda dapat menggunakan plot peta langsung untuk menghasilkan output berkualitas tinggi hanya dalam beberapa format
+
+112
+00:09:26,910 --> 00:09:28,510
+termasuk pian GJ pasak.
+
+113
+00:09:28,630 --> 00:09:37,200
+SPG TGF dan PTF untuk menyimpan gambar ke file Anda dapat menggunakan metode save thig.
+
+114
+00:09:37,500 --> 00:09:40,830
+Jadi misalnya kita memiliki figur kita di sini yang sudah kita buat.
+
+115
+00:09:40,830 --> 00:09:43,610
+Ingat itu di sini Fig.
+
+116
+00:09:44,100 --> 00:09:50,490
+Dan kemudian saya dapat menyimpan fig dot save fig dan yang harus Anda lakukan adalah memasukkan nama file yang Anda inginkan.
+
+117
+00:09:50,580 --> 00:09:57,720
+Jadi misalnya gambar garis bawah saya dan kemudian Anda memasukkan ekstensi dan peta Cutlip cukup pintar untuk mengetahui apa yang
+
+118
+00:09:57,720 --> 00:09:58,770
+Anda inginkan.
+
+119
+00:09:58,890 --> 00:10:08,370
+Jadi jika Anda ingin PNB Anda mengatakan di sini di G jika Anda ingin JPA Anda mengatakan bahwa JP JP JP dll. dan mengatakan ini sebagai P dan
+
+120
+00:10:08,380 --> 00:10:09,950
+G.
+
+121
+00:10:10,950 --> 00:10:12,890
+Dan itu akan secara otomatis mengatakan angka itu.
+
+122
+00:10:13,170 --> 00:10:15,470
+Di sini Anda juga dapat menentukan CPI.
+
+123
+00:10:15,780 --> 00:10:20,910
+Jadi, jika Anda lupa menentukan CPI di sini saat Anda benar-benar membuat plot, Anda dapat menentukan lagi
+
+124
+00:10:20,920 --> 00:10:22,050
+DPR di sini.
+
+125
+00:10:22,060 --> 00:10:27,860
+Jadi Anda bisa melakukan ini jika suka 200 GPI dan Anda dapat meningkatkan DPA sesuai keinginan Anda.
+
+126
+00:10:27,880 --> 00:10:28,520
+Baiklah.
+
+127
+00:10:28,830 --> 00:10:34,900
+Kami sudah mendapatkan lebih dari judul gambar dan label sumbu seperti mengatur label X dan mengatur label y tetapi saya akan menunjukkan
+
+128
+00:10:34,920 --> 00:10:36,840
+kepada Anda pengingat cepat bagaimana melakukannya.
+
+129
+00:10:37,040 --> 00:10:44,240
+Kita akan mengubahnya kembali menjadi gambar sederhana yang sama dengan angka Piel T-Dog.
+
+130
+00:10:45,210 --> 00:10:47,490
+Silakan dan tambahkan satu set sumbu untuk ini.
+
+131
+00:10:47,500 --> 00:10:49,980
+Jadi kita akan menyimpan Fig.
+
+132
+00:10:50,120 --> 00:11:00,050
+Tambahkan garis bawah xes kita akan meletakkannya di 0 0 1 1 dan kemudian kita akan mengatakan X stop plot X datang a Y.
+
+133
+00:11:00,840 --> 00:11:01,380
+Baiklah.
+
+134
+00:11:01,680 --> 00:11:08,040
+Jadi sebagai pengingat jika Anda ingin menambahkan judul Anda mengambil salah satu dari sumbu ini dan Anda
+
+135
+00:11:08,040 --> 00:11:14,110
+mengatakan mengatur judul dan Anda hanya meneruskan string judul yang Anda inginkan untuk menetapkan label y.
+
+136
+00:11:14,280 --> 00:11:19,190
+Anda hanya mengatakan atur label y dalam string dari label y yang Anda inginkan.
+
+137
+00:11:19,800 --> 00:11:27,220
+Dan kemudian untuk Ex-Slave semua Anda dapat melakukan hal yang sama mengatur label yang Anda inginkan.
+
+138
+00:11:28,660 --> 00:11:32,410
+OK jadi saya punya judul label istri saya dan label X saya.
+
+139
+00:11:32,700 --> 00:11:35,610
+Mari kita bicara tentang legenda dengan legenda.
+
+140
+00:11:35,620 --> 00:11:42,480
+Anda dapat menggunakan teks label untuk benar-benar memperjelas plot apa dan apa yang saya maksudkan.
+
+141
+00:11:42,960 --> 00:11:53,850
+Saya akan pergi ke depan dan menghapus tiga baris kode ini dan mengatakan x mulai plot y koma X ..
+
+142
+00:11:54,100 --> 00:11:56,850
+Jadi perhatikan saya hanya melakukan ini pada angka yang sama.
+
+143
+00:11:56,860 --> 00:12:05,580
+Berarti jika saya katakan dan benar-benar menjalankan ini saya akan mendapatkan dua baris di sini saya akan mendapatkan plot xy dan y mengeksploitasi.
+
+144
+00:12:06,720 --> 00:12:10,540
+Karena ini sangat berbeda. Ayo maju dan dapatkan sesuatu yang sedikit lebih mirip.
+
+145
+00:12:10,560 --> 00:12:18,070
+Saya akan pergi dan merencanakan x versus x kuadrat dan X versus x Q ..
+
+146
+00:12:18,880 --> 00:12:19,490
+Baiklah.
+
+147
+00:12:19,710 --> 00:12:21,810
+Jadi sekarang kita memiliki dua garis di sini.
+
+148
+00:12:21,880 --> 00:12:26,070
+Dan jika Anda hanya melihat angka ini dengan sendirinya tanpa bisa referensi kode
+
+149
+00:12:26,070 --> 00:12:29,790
+Anda mungkin sedikit bingung tentang apa yang masing-masing plot wakili.
+
+150
+00:12:29,880 --> 00:12:32,730
+Anda tidak ingin menambahkan legenda secara berurutan.
+
+151
+00:12:32,760 --> 00:12:34,120
+Tambahkan legenda.
+
+152
+00:12:34,560 --> 00:12:37,420
+Ini sebenarnya cukup sederhana tetapi merupakan proses dua langkah.
+
+153
+00:12:37,500 --> 00:12:44,270
+Langkah pertama adalah hanya memanggil X Legin itu di bagian bawah kode Anda di mana sumbu Anda adalah menemukan dan jika Anda
+
+154
+00:12:45,030 --> 00:12:50,260
+menjalankan itu Anda akan melihat Anda mendapat peringatan itu mengatakan tidak ada benda berlabel yang ditemukan.
+
+155
+00:12:50,520 --> 00:12:52,830
+Dan di situlah langkah kedua masuk.
+
+156
+00:12:52,830 --> 00:12:58,110
+Untuk setiap panggilan plot yang baru saja Anda buat, Anda akan menambahkan argumen yang disebut label dan label
+
+157
+00:12:58,120 --> 00:13:00,050
+ini hanya string yang Anda inginkan.
+
+158
+00:13:00,050 --> 00:13:05,550
+Agar X yang berfungsi legenda dapat menjadi referensi mari kita tunjukkan kepada Anda apa
+
+159
+00:13:05,550 --> 00:13:13,970
+yang saya maksudkan dengan itu kita bisa pergi ke depan dan mengatakan X kuadrat di sini sebagai label kita dan label ini.
+
+160
+00:13:13,980 --> 00:13:15,160
+Saya akan pergi
+
+161
+00:13:17,860 --> 00:13:19,620
+ke depan dan mengatakan eksekusi.
+
+162
+00:13:21,370 --> 00:13:26,130
+Dan sekarang ketika saya menjalankan ini jika legenda X saya melihat saya sudah bisa membuat legenda.
+
+163
+00:13:26,160 --> 00:13:31,260
+Jadi semua ini terjadi ketika Anda memanggil X bahwa legenda itu mencari setiap plot panggilan dan kemudian
+
+164
+00:13:31,290 --> 00:13:33,150
+memeriksa untuk melihat apakah ada label.
+
+165
+00:13:33,270 --> 00:13:38,880
+Dan kemudian label yang hanya berupa string dikembalikan dan dicocokkan dengan warna garis
+
+166
+00:13:38,880 --> 00:13:39,810
+yang benar.
+
+167
+00:13:39,880 --> 00:13:44,190
+Dan nanti kami akan menunjukkan cara menyesuaikan warna garis Anda.
+
+168
+00:13:44,190 --> 00:13:45,400
+Sekarang tidak cepat itu.
+
+169
+00:13:45,390 --> 00:13:52,020
+Perhatikan bagaimana beberapa legenda ini tumpang tindih dengan plot sebenarnya yang dapat Anda lakukan dalam X
+
+170
+00:13:52,020 --> 00:13:55,890
+yang dipanggil legenda untuk menghindari hal ini, tentukan ellos.
+
+171
+00:13:55,950 --> 00:14:01,030
+Sekarang mereka sebenarnya beberapa lokasi yang dapat Anda tentukan dan saya akan menunjukkan halaman dokumentasi yang sangat cepat
+
+172
+00:14:01,030 --> 00:14:01,830
+untuk itu.
+
+173
+00:14:01,840 --> 00:14:05,130
+Itu tertaut di buku catatan Anda di bagian ini.
+
+174
+00:14:05,130 --> 00:14:09,160
+Biarkan saya maju dan buka tautan itu sehingga tautan itu akan membawa Anda ke halaman yang terlihat seperti ini.
+
+175
+00:14:09,240 --> 00:14:14,640
+Dan Anda dapat mengklik legenda dan pada dasarnya ada satu set parameter di sini dan ada kode
+
+176
+00:14:14,820 --> 00:14:16,270
+lokasi dan string lokasi.
+
+177
+00:14:16,470 --> 00:14:23,280
+Jadi Anda dapat menentukan yang terbaik atas kiri kanan atas kiri bawah dll. berdasarkan setelah kode lokasi.
+
+178
+00:14:23,280 --> 00:14:28,120
+Saya selalu menyarankan Anda hanya menggunakan kode lokasi 0 karena itu memungkinkan lib peta untuk mencoba
+
+179
+00:14:28,120 --> 00:14:30,180
+memilih lokasi terbaik untuk legenda Anda.
+
+180
+00:14:30,240 --> 00:14:31,170
+Ayo maju dan lakukan itu.
+
+181
+00:14:31,170 --> 00:14:37,320
+Kami akan masuk dan mengatakan Alosi memanggil 0 plot itu dan jika kami melihat bahwa lokasi terbaik ada di
+
+182
+00:14:37,380 --> 00:14:42,000
+sini di kiri atas, mari kita lanjutkan dan periksa satu lagi kode lokasi.
+
+183
+00:14:42,010 --> 00:14:48,820
+Jika kita kembali ke sini misalnya jika kita menginginkannya di tengah, kita dapat menentukan kode lokasi 10.
+
+184
+00:14:49,620 --> 00:14:51,480
+Dan di sini kita miliki di tengah.
+
+185
+00:14:51,480 --> 00:14:57,510
+Sekarang jika tidak ada opsi ini yang berfungsi untuk Anda seperti 0 hingga 10 yang dapat Anda lakukan adalah
+
+186
+00:14:57,510 --> 00:15:02,650
+Anda juga dapat menentukan tuple yang memberi x dan y dari sudut kiri bawah legenda.
+
+187
+00:15:02,880 --> 00:15:10,560
+Jadi misalnya kita dapat melanjutkan dan mengatakan sesuatu seperti ini 0. 1 koma 0. 1 dan itu sama seperti yang Anda lakukan
+
+188
+00:15:10,560 --> 00:15:13,100
+sebelumnya ketika Anda memasukkan plot sisipan.
+
+189
+00:15:13,200 --> 00:15:17,760
+Anda dapat memasukkan tuple di sini menentukan lokasi di mana Anda ingin legenda Anda.
+
+190
+00:15:17,760 --> 00:15:19,880
+Sudut bawah menjadi.
+
+191
+00:15:19,880 --> 00:15:20,670
+Baiklah.
+
+192
+00:15:20,790 --> 00:15:22,680
+Itu saja untuk bagian kedua ini.
+
+193
+00:15:22,680 --> 00:15:23,590
+Selanjutnya.
+
+194
+00:15:23,590 --> 00:15:26,310
+Pada bagian terakhir peta ini, konsep Partlow mengajarkan.
+
+195
+00:15:26,310 --> 00:15:32,040
+Kita akan berbicara tentang mengatur garis warna dengan dan jenis garis serta bekerja dengan spidol mengatur rentang plot dan
+
+196
+00:15:32,040 --> 00:15:36,690
+kemudian kita akan mulai berbicara tentang beberapa jenis plot khusus tetapi itu akan membawa kita
+
+197
+00:15:36,690 --> 00:15:39,150
+lebih banyak ke diskusi kita tentang seaborne.
+
+198
+00:15:39,180 --> 00:15:41,100
+Baiklah, terima kasih semuanya.
+
+199
+00:15:41,110 --> 00:15:46,010
+Silakan dan kirim pertanyaan apa pun yang Anda miliki ke forum Tanya Jawab dan saya akan dengan senang hati menjawabnya di sana.
+
+200
+00:15:46,020 --> 00:15:49,090
+Ingatlah untuk merujuk buku catatan untuk kuliah ini.
+
+201
+00:15:49,090 --> 00:15:50,940
+OK saya akan lihat apakah kuliah nanti

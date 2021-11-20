@@ -1,0 +1,1071 @@
+1
+00:00:05,100 --> 00:00:10,110
+Hello everyone and welcome to the plotline cufflinks lecture where we actually show how we can program
+
+2
+00:00:10,140 --> 00:00:14,250
+using these libraries to create interactive data visualizations.
+
+3
+00:00:14,250 --> 00:00:18,690
+Let's go ahead and jump straight to Jupiter notebook to get started.
+
+4
+00:00:18,690 --> 00:00:18,960
+All right.
+
+5
+00:00:18,960 --> 00:00:20,990
+Here I am at the Jupiter notebook.
+
+6
+00:00:21,030 --> 00:00:25,770
+I'm going to go ahead and do a couple of import and then some setup in order for this all to work.
+
+7
+00:00:25,770 --> 00:00:35,880
+When I say import is PD important I'm PI and P and then I'm going to go ahead and say from plot the
+
+8
+00:00:36,690 --> 00:00:46,140
+imports underscore underscore version underscore underscore and then I'm going to go ahead and say print
+
+9
+00:00:47,340 --> 00:00:48,530
+version.
+
+10
+00:00:49,020 --> 00:00:51,710
+And notice here I get one point one to point nine.
+
+11
+00:00:51,720 --> 00:00:53,750
+That's the current version I'm using.
+
+12
+00:00:53,770 --> 00:00:59,640
+Everything we're going to be doing requires a version that's newer than one point nine.
+
+13
+00:00:59,640 --> 00:01:02,220
+So here I'm already on one point twelve.
+
+14
+00:01:02,280 --> 00:01:03,420
+That means I'm good.
+
+15
+00:01:03,420 --> 00:01:07,970
+If you have a version that's one point eight or below you'll need to upgrade plotless.
+
+16
+00:01:08,250 --> 00:01:12,730
+If you just install plotline you should be totally fine on this.
+
+17
+00:01:12,780 --> 00:01:23,370
+Next I'm going to go in and say import cufflinks as C-f And then finally I'm going to import some libraries
+
+18
+00:01:23,400 --> 00:01:26,070
+from plot lead off line.
+
+19
+00:01:26,070 --> 00:01:33,110
+So partly as a company can support your online and can host your online data visualizations.
+
+20
+00:01:33,300 --> 00:01:37,190
+But since we're going to be using this as an open source library and we're going to you're using it
+
+21
+00:01:37,200 --> 00:01:41,990
+off line we'll need to do some imports from the offline in order for that to work.
+
+22
+00:01:42,000 --> 00:01:47,460
+I want to go ahead and import download plotless underscore plotless J.S. and you can just type D and
+
+23
+00:01:47,460 --> 00:01:49,850
+then tab and it should autocomplete for you.
+
+24
+00:01:49,850 --> 00:01:56,400
+I'm also going to say in it I'm just doing tab's autocomplete in underscore notebook underscore mode
+
+25
+00:01:56,410 --> 00:01:56,710
+.
+
+26
+00:01:56,880 --> 00:02:01,510
+And then also plot and plots run those.
+
+27
+00:02:01,800 --> 00:02:06,090
+And then we're going to do a couple of more commands in order to have everything work in the notebook
+
+28
+00:02:06,110 --> 00:02:06,340
+.
+
+29
+00:02:06,570 --> 00:02:12,440
+Just call it underscore a notebook underscore mode and passen connected equals true.
+
+30
+00:02:12,500 --> 00:02:17,850
+And this is going to connect the javascript to your notebook because plotless essentially just connects
+
+31
+00:02:17,850 --> 00:02:22,590
+pandas and Python to it interactive javascript library.
+
+32
+00:02:23,240 --> 00:02:26,980
+And this is going to allow your notebooks to access those visualizations.
+
+33
+00:02:27,180 --> 00:02:35,640
+And then finally we're going to say C-f go off line as a method and close print seized and run this
+
+34
+00:02:36,000 --> 00:02:39,050
+and this will allow CS cufflinks off line.
+
+35
+00:02:39,090 --> 00:02:39,810
+All right.
+
+36
+00:02:39,810 --> 00:02:42,040
+Quite a few steps here to make sure everything works out.
+
+37
+00:02:42,150 --> 00:02:44,730
+But hopefully you're able to follow those.
+
+38
+00:02:44,760 --> 00:02:49,390
+Let's go ahead and now get some data and create it.
+
+39
+00:02:49,740 --> 00:02:56,460
+I'm going to go ahead and say ZF is equal to PD dot data frame.
+
+40
+00:02:56,550 --> 00:02:58,800
+I'm going to say N.P. that random
+
+41
+00:03:01,470 --> 00:03:05,970
+Rand and so normal distribution and just passen 100 by 4.
+
+42
+00:03:06,270 --> 00:03:15,340
+So 100 rows for columns and I'm going to go in and say columns is equal to a b c d as a string split
+
+43
+00:03:15,330 --> 00:03:15,470
+.
+
+44
+00:03:15,550 --> 00:03:19,350
+And that way we get a list of the columns ABC and D.
+
+45
+00:03:19,770 --> 00:03:27,210
+And then if I check DF just ahead of it here I have my data frame and I'm going to go ahead and create
+
+46
+00:03:27,210 --> 00:03:34,370
+one more data frame called DL 2 PD data frame and I'll use a dictionary for this.
+
+47
+00:03:34,950 --> 00:03:47,910
+I'm going to say category is a column and then the values are just going to be a b and c or any three
+
+48
+00:03:47,910 --> 00:03:51,210
+strings you want and then the other column is going to be values.
+
+49
+00:03:51,240 --> 00:03:53,800
+And this just going to be a string of some random values.
+
+50
+00:03:53,850 --> 00:03:57,150
+Let's go ahead and just say 32 43 and 50
+
+51
+00:04:00,000 --> 00:04:03,940
+and this is going to be used later for like a bar plot style.
+
+52
+00:04:03,940 --> 00:04:04,350
+All right.
+
+53
+00:04:04,380 --> 00:04:07,160
+Now just go over how to use cufflinks and I plot.
+
+54
+00:04:07,260 --> 00:04:09,850
+It's actually extremely straightforward.
+
+55
+00:04:10,500 --> 00:04:14,220
+If we take a look at our data frame we have ABC and Z here.
+
+56
+00:04:14,250 --> 00:04:21,420
+If I just call the plot off of this data frame panderers will plot something with MAP plot live and
+
+57
+00:04:21,420 --> 00:04:28,830
+if actually I want to see that plot I can say map plot live in line and then if I run this again let
+
+58
+00:04:28,830 --> 00:04:34,030
+me just cut this and put it up top here.
+
+59
+00:04:34,420 --> 00:04:37,180
+Whoops there we go.
+
+60
+00:04:37,380 --> 00:04:40,880
+And I'm going to come back down here and run this plot one more time.
+
+61
+00:04:41,190 --> 00:04:45,790
+And here I see the line plot that Pandurs would have made automatically using matte plotless.
+
+62
+00:04:46,050 --> 00:04:51,820
+I can just change this too I plot and we're going to see almost a little bit of magic happen.
+
+63
+00:04:51,840 --> 00:04:56,010
+That plot has now been converted to a plotline interactive image.
+
+64
+00:04:56,100 --> 00:05:00,810
+And here I can kind of scroll along and actually tell me the values at that particular index point.
+
+65
+00:05:00,810 --> 00:05:03,080
+So it's the exact same plot line plot.
+
+66
+00:05:03,120 --> 00:05:04,570
+Now it's interactive.
+
+67
+00:05:04,860 --> 00:05:05,840
+I can zoom in.
+
+68
+00:05:05,850 --> 00:05:06,930
+Check out values.
+
+69
+00:05:06,930 --> 00:05:10,700
+I can double click to zoom back out and they also have tools here.
+
+70
+00:05:10,730 --> 00:05:12,370
+I can save and edit the plot.
+
+71
+00:05:12,480 --> 00:05:17,380
+I can download the plot as a PNB file so if I just want a static image I can pan.
+
+72
+00:05:17,400 --> 00:05:26,540
+So if I wanted to I could pan around I could zoom in zoom out reset the axes choose the hover so closest
+
+73
+00:05:26,630 --> 00:05:29,500
+on hover or compare data on hover.
+
+74
+00:05:29,510 --> 00:05:34,170
+By default you probably usually want to compare data and then I can even click on and off certain columns
+
+75
+00:05:34,160 --> 00:05:34,470
+to view.
+
+76
+00:05:34,460 --> 00:05:37,930
+So if I just want to view and see if it can be a and.
+
+77
+00:05:38,240 --> 00:05:38,590
+Right.
+
+78
+00:05:38,660 --> 00:05:42,920
+Hopefully you can already tell this is an extremely powerful tool because basically you have to add
+
+79
+00:05:42,990 --> 00:05:49,040
+one letter plot and now suddenly you look like an amazing interactive data visualisation programmer
+
+80
+00:05:49,040 --> 00:05:49,400
+.
+
+81
+00:05:49,400 --> 00:05:54,650
+When your secret was just adding I plot and using cufflinks and politely.
+
+82
+00:05:54,770 --> 00:05:55,180
+All right.
+
+83
+00:05:55,400 --> 00:05:58,640
+So that's the most basic example of cufflinks and I plop.
+
+84
+00:05:58,740 --> 00:06:02,070
+And let's go ahead and explore now the various types of plots we can do.
+
+85
+00:06:02,270 --> 00:06:06,570
+We can do many types like scatter bar box ratio heat maps and more.
+
+86
+00:06:06,710 --> 00:06:11,420
+So all we're going to do is just go through them and show you how to use plot to create other plot types
+
+87
+00:06:11,420 --> 00:06:14,430
+that are not just line plots like this one.
+
+88
+00:06:14,490 --> 00:06:18,420
+Let's start off by showing you how to do a scatterplot.
+
+89
+00:06:18,620 --> 00:06:22,190
+I'm going to go ahead and say DMF dot plot.
+
+90
+00:06:22,500 --> 00:06:27,740
+And then in order to switch the type of plot you specify kind equals and then for scatter the string
+
+91
+00:06:27,750 --> 00:06:33,870
+is scatter and scatterplot to specify the x and y axes.
+
+92
+00:06:34,010 --> 00:06:36,040
+You can go in and specify this by the column name.
+
+93
+00:06:36,080 --> 00:06:45,050
+Let's go in and show a scatter of a column versus B column and if we just run this you'll see something
+
+94
+00:06:45,620 --> 00:06:47,510
+funny pops up.
+
+95
+00:06:47,510 --> 00:06:48,610
+You get something like this.
+
+96
+00:06:48,620 --> 00:06:52,850
+And by default plotless is going to try to make a line to connect all these points.
+
+97
+00:06:52,860 --> 00:07:02,450
+So you have to do specify mode and passing the string markers and then you'll actually get some markers
+
+98
+00:07:02,450 --> 00:07:07,760
+here and you can check out the markers and then you can actually compare the A and B columns.
+
+99
+00:07:07,820 --> 00:07:11,870
+You can zoom in and check on information on each of these points.
+
+100
+00:07:11,880 --> 00:07:12,680
+All right.
+
+101
+00:07:12,690 --> 00:07:19,190
+So that's how you can use a scatterplot using DFA A-plot person x and y arguments as the column names
+
+102
+00:07:19,580 --> 00:07:24,280
+specify kind is equal to scatter and then pass and the mode equals markers.
+
+103
+00:07:24,320 --> 00:07:27,740
+You can also do other things such as passing arguments for size.
+
+104
+00:07:27,810 --> 00:07:29,440
+You want these points to be bigger.
+
+105
+00:07:29,450 --> 00:07:34,980
+You can go ahead and specify larger size and I'll go ahead and make those points larger.
+
+106
+00:07:35,380 --> 00:07:39,990
+Let's move on to a bar plots or bar plots and say.
+
+107
+00:07:40,110 --> 00:07:46,550
+Thought I plot and say kind passing the string bar.
+
+108
+00:07:46,550 --> 00:07:51,990
+And then you specify X and we're going to go out and switch to decaf too since that's a better fit for
+
+109
+00:07:51,990 --> 00:07:52,530
+this plot.
+
+110
+00:07:52,520 --> 00:07:59,420
+So as a reminder you have to have a categorical column and a numerical column meaning for a bar plot
+
+111
+00:07:59,490 --> 00:08:03,610
+you want the X to be the categorical column to make this obvious.
+
+112
+00:08:03,610 --> 00:08:06,650
+I'm just going to say x is equal to the category column.
+
+113
+00:08:06,830 --> 00:08:10,460
+And then why is going to be to the values column.
+
+114
+00:08:10,570 --> 00:08:12,060
+Now if we go and check that out.
+
+115
+00:08:12,170 --> 00:08:20,030
+Now we have a bar plot where if I zoom out a little bit I can see the value for each of these categories
+
+116
+00:08:20,030 --> 00:08:23,830
+so C is 50 B is 43 and was 32.
+
+117
+00:08:23,840 --> 00:08:24,460
+All right.
+
+118
+00:08:24,460 --> 00:08:30,330
+And you can zoom in if you want but that may not be too helpful for a particular marplot.
+
+119
+00:08:30,500 --> 00:08:32,620
+Go ahead and continue on.
+
+120
+00:08:32,750 --> 00:08:38,110
+Now as we know your data is not always going to be conveniently placed such as the 2 if a category in
+
+121
+00:08:38,120 --> 00:08:44,000
+values column but which you can do is called group by an aggregate function on your data to actually
+
+122
+00:08:44,000 --> 00:08:48,730
+get it into some sort of form where it makes sense to use a bar plot using A-plot.
+
+123
+00:08:48,750 --> 00:08:50,120
+Let me go to show you what I mean by that.
+
+124
+00:08:50,120 --> 00:08:52,660
+Take a look at our original DMF.
+
+125
+00:08:52,940 --> 00:08:55,930
+We can see that we have a B C and D.
+
+126
+00:08:55,980 --> 00:08:58,350
+Now we wouldn't be able to call bar plot off of this.
+
+127
+00:08:58,380 --> 00:09:01,820
+Otherwise we'll just get a bunch of bars and I'll show you what I mean by that.
+
+128
+00:09:01,870 --> 00:09:07,680
+Just that kind is equal bar you'll get a bunch of bars for every single data point and that's not exactly
+
+129
+00:09:07,670 --> 00:09:08,540
+what you want.
+
+130
+00:09:08,590 --> 00:09:12,860
+You would need to do some sort of aggregate function on top of this for instance let's see you want
+
+131
+00:09:12,890 --> 00:09:15,300
+to count the instances for each column.
+
+132
+00:09:15,680 --> 00:09:19,410
+And here we have a bar plot for each instance which in this case is just 100.
+
+133
+00:09:19,430 --> 00:09:26,580
+Since they're all evenly distributed but you can do other things such as take the sum of each column
+
+134
+00:09:26,630 --> 00:09:29,660
+and now we have a bar plot showing the sum of each column.
+
+135
+00:09:29,660 --> 00:09:29,970
+All right.
+
+136
+00:09:30,050 --> 00:09:31,030
+Pretty interesting stuff.
+
+137
+00:09:31,040 --> 00:09:36,030
+But keep in mind that this bar plot with plot becomes really powerful when you call some sort of aggregate
+
+138
+00:09:36,020 --> 00:09:38,830
+function or a group by a function of your data frame.
+
+139
+00:09:39,000 --> 00:09:43,640
+More likely your data frame is not going to be in this kind of nice formatting.
+
+140
+00:09:44,210 --> 00:09:45,610
+OK that's it marplot.
+
+141
+00:09:45,770 --> 00:09:46,400
+Let's discuss.
+
+142
+00:09:46,400 --> 00:09:52,430
+Box plots now Box plots your data can be something that looks like this box plots will automatically
+
+143
+00:09:52,430 --> 00:09:56,650
+do that sort of aggregation for that distribution.
+
+144
+00:09:57,150 --> 00:10:00,830
+And you just do this by specifying kind is equal to box.
+
+145
+00:10:00,950 --> 00:10:05,310
+And here it will automatically make a box plot for each of the columns and you can turn columns off
+
+146
+00:10:05,310 --> 00:10:07,530
+or on either bypassing them.
+
+147
+00:10:07,620 --> 00:10:12,060
+Here with DMF or just by switching them on and off here of plot plotline for instance I only wanted
+
+148
+00:10:12,060 --> 00:10:17,880
+to see and see I can just click on a and c and they can click on Biondi as well and see what I want
+
+149
+00:10:18,180 --> 00:10:24,290
+and Ill give you information on the core tiles here for the box which is quite convenient.
+
+150
+00:10:24,290 --> 00:10:29,700
+Now let's talk about a 3D surface plot in order to really talk about the three of the surface plot.
+
+151
+00:10:29,710 --> 00:10:39,350
+I'm going to make a new data frame will say if three is equal to PD data frame and we'll go ahead and
+
+152
+00:10:39,360 --> 00:10:48,690
+say X is a column and we'll just say one two three four five we'll specify y as a column
+
+153
+00:10:52,110 --> 00:11:03,260
+devalues 10 20 30 2010 so it goes up and down and then I will specify Z is a column.
+
+154
+00:11:03,260 --> 00:11:09,990
+And let's go ahead and specify this to be 500 400 300 200 100.
+
+155
+00:11:10,070 --> 00:11:10,610
+OK.
+
+156
+00:11:10,910 --> 00:11:16,940
+So I have my data frames take a look at it and this is basically three mentions of values are three
+
+157
+00:11:16,940 --> 00:11:19,600
+variables we can use a surface plot.
+
+158
+00:11:19,640 --> 00:11:28,160
+If we wanted to create a three dimensional surface plot of these three variables in say three plot and
+
+159
+00:11:28,160 --> 00:11:36,760
+specify the kind to be a surface plot and this will create a surface plot of what we have here.
+
+160
+00:11:36,770 --> 00:11:39,210
+So you can see we have a surface plot.
+
+161
+00:11:39,210 --> 00:11:44,390
+Now let me show you another example of a surface plot by kind of changing in these values around instead
+
+162
+00:11:44,390 --> 00:11:52,370
+of saying 100 through 500 I'm going to say 5 4 3 2 1.
+
+163
+00:11:52,400 --> 00:11:53,430
+And let's plot this.
+
+164
+00:11:53,440 --> 00:11:56,020
+We can see now we have kind of this peak outline.
+
+165
+00:11:56,030 --> 00:12:01,160
+Now we can actually change the color scales here in case we don't like this rainbow colors scale.
+
+166
+00:12:01,300 --> 00:12:12,290
+You can say something like color scale and say Ardie for red or yellow for white y l for yellow and
+
+167
+00:12:12,290 --> 00:12:13,850
+B for blue.
+
+168
+00:12:13,850 --> 00:12:17,270
+And you can check the plotless documentation for all the color scale codes.
+
+169
+00:12:17,300 --> 00:12:20,220
+They don't exactly match up with the map plot color maps.
+
+170
+00:12:20,240 --> 00:12:21,560
+So keep that in mind.
+
+171
+00:12:21,650 --> 00:12:25,230
+And here we have a really nice surface plot directly made off our data frame.
+
+172
+00:12:25,250 --> 00:12:29,710
+We can rotate it and play around with it in order to get all the information out of it.
+
+173
+00:12:29,720 --> 00:12:30,310
+All right.
+
+174
+00:12:30,590 --> 00:12:31,840
+Those are three the surface.
+
+175
+00:12:31,880 --> 00:12:35,020
+And finally going to talk about a couple of more plots.
+
+176
+00:12:35,150 --> 00:12:40,910
+A very basic one that you'll probably find yourself doing as a histogram you can say if call a single
+
+177
+00:12:40,910 --> 00:12:51,290
+column and then say I plot's kind of equal to hist and you will get a histogram and you can actually
+
+178
+00:12:51,290 --> 00:12:54,290
+specify the number of bins of another argument.
+
+179
+00:12:54,350 --> 00:12:59,720
+For example if you want 25 bins you can specify that and get more bins.
+
+180
+00:12:59,720 --> 00:13:03,660
+Let me go and make this more obvious by specifying a lot of bids.
+
+181
+00:13:04,190 --> 00:13:04,620
+OK.
+
+182
+00:13:04,660 --> 00:13:05,980
+And here we have more bins.
+
+183
+00:13:06,020 --> 00:13:11,780
+There weren't that many data points so keep them in mind if you go ahead and passen the entire data
+
+184
+00:13:11,780 --> 00:13:12,750
+frame.
+
+185
+00:13:12,890 --> 00:13:19,310
+Let's just call DFA A-plot kind equals Just you will get a overlapping histogram of all the columns
+
+186
+00:13:19,360 --> 00:13:24,080
+meaning you can compare the histograms of columns and you can turn them on and off to compare them to
+
+187
+00:13:24,080 --> 00:13:24,950
+each other.
+
+188
+00:13:24,950 --> 00:13:26,750
+Now these are randomly normally distributed.
+
+189
+00:13:26,750 --> 00:13:30,560
+So they're kind of overlapping each other which makes sense given the way we created this.
+
+190
+00:13:30,740 --> 00:13:35,840
+But you can turn them often on to view histograms as you please for all the columns in the data frame
+
+191
+00:13:35,840 --> 00:13:36,210
+.
+
+192
+00:13:36,410 --> 00:13:40,490
+So it's up to you whether you want to just pass in one column or pass the whole data frame and then
+
+193
+00:13:40,490 --> 00:13:42,590
+switch them on and off.
+
+194
+00:13:42,650 --> 00:13:50,450
+Next one I want to show you is a spread spread type visualisations are used a lot for stock data.
+
+195
+00:13:50,550 --> 00:13:55,340
+So compared to stocks I'm going to go ahead and just do them with our random values here.
+
+196
+00:13:55,340 --> 00:13:59,810
+Later on in the financial day to cap some project we'll actually see some more technical analysis Blotz
+
+197
+00:13:59,970 --> 00:14:00,210
+.
+
+198
+00:14:00,350 --> 00:14:08,990
+But if I just say these two columns and be off my data frame I can say A-plot kind is equal to spread
+
+199
+00:14:10,450 --> 00:14:16,190
+and we'll get a plot and then a subplot I'll get my line plot which shows them against each other and
+
+200
+00:14:16,190 --> 00:14:20,260
+then will get my spread plop which shows the spread of them against each other.
+
+201
+00:14:20,300 --> 00:14:25,190
+So for instance if we go ahead and zoom in here on the 20 we can zoom in here.
+
+202
+00:14:25,360 --> 00:14:27,860
+Let's see where it corresponds to 20.
+
+203
+00:14:27,860 --> 00:14:31,460
+Well notice the spread is negative point 3:08 between them.
+
+204
+00:14:31,640 --> 00:14:33,770
+And here we can verify that as a result.
+
+205
+00:14:33,770 --> 00:14:37,320
+So negative point 3 8 minus point 1.
+
+206
+00:14:37,370 --> 00:14:39,700
+We'll take a 2.5 6 about there.
+
+207
+00:14:39,920 --> 00:14:44,910
+So you can go ahead and compare these results and this is essentially really useful for stock data to
+
+208
+00:14:44,930 --> 00:14:48,380
+see the spread between two stocks.
+
+209
+00:14:48,530 --> 00:14:54,470
+We have two more plush types to show you the next one is a bubble plot and a bubble plot is very similar
+
+210
+00:14:54,680 --> 00:15:02,510
+to a scatterplot except that it will change size of the points based off of another variable.
+
+211
+00:15:02,510 --> 00:15:09,890
+So if I say kind is equal to bubble I'll specify X and Y just like that for a scatterplot and then I
+
+212
+00:15:09,890 --> 00:15:13,400
+will specify the size of the bubbles based off another column.
+
+213
+00:15:13,450 --> 00:15:14,460
+Let's go ahead and just choose.
+
+214
+00:15:14,460 --> 00:15:22,160
+See and here now I have a scatterplot except the size of the points is based off in other column value
+
+215
+00:15:22,610 --> 00:15:28,670
+and you see these kind of plots a lot for things like world GDP in comparison to population and maybe
+
+216
+00:15:28,670 --> 00:15:30,350
+happiness factor etc..
+
+217
+00:15:30,360 --> 00:15:36,270
+So these are quite common plots especially for things like United Nations reports.
+
+218
+00:15:36,400 --> 00:15:37,070
+Right.
+
+219
+00:15:37,100 --> 00:15:38,560
+So that's the bubble plot.
+
+220
+00:15:38,630 --> 00:15:46,150
+And then finally we'll get to the scatter matrix the matrix plot is essentially very similar to seaborne
+
+221
+00:15:46,180 --> 00:15:46,910
+pair plot.
+
+222
+00:15:46,910 --> 00:15:50,580
+It just creates a scatter matrix of all the columns it can.
+
+223
+00:15:50,580 --> 00:15:56,990
+So you say DFA that scatter underscore matrix you'll mean you may need to make sure all your columns
+
+224
+00:15:57,050 --> 00:15:59,160
+are numerical in order for this to work.
+
+225
+00:15:59,240 --> 00:16:03,880
+Let's just say scatter matrix and you can kind of zoom in on each plot individually.
+
+226
+00:16:03,890 --> 00:16:05,740
+Keep in mind you have a lot of points here.
+
+227
+00:16:05,750 --> 00:16:09,540
+This will take a while to load and may be very slow as far as zooming in and out.
+
+228
+00:16:09,560 --> 00:16:12,140
+So use this of care on very large datasets.
+
+229
+00:16:12,170 --> 00:16:17,480
+Otherwise you may crash your Python kernel.
+
+230
+00:16:17,750 --> 00:16:21,350
+OK that's it for the basic plot types that we're going to go over in this lecture.
+
+231
+00:16:21,410 --> 00:16:26,240
+If you want more information and some more details about the documentation I would recommend actually
+
+232
+00:16:26,240 --> 00:16:32,480
+going to the web page and that's available just by searching hub and cufflinks should take you to this
+
+233
+00:16:32,480 --> 00:16:38,930
+page it's hosted by the Cesar Santos Jorge slash cufflinks and I've contributed to it as you've seen
+
+234
+00:16:38,930 --> 00:16:43,520
+before and you can check out right here these cufflinks tutorial links where you have a chart gallery
+
+235
+00:16:43,680 --> 00:16:43,830
+.
+
+236
+00:16:43,860 --> 00:16:47,690
+Let you know what colors are available online Pandurs like completely.
+
+237
+00:16:47,700 --> 00:16:49,500
+There's a lot of really good information here.
+
+238
+00:16:49,520 --> 00:16:54,800
+So for instance if you go ahead and say pandas like we've already gone over quite a bit of this information
+
+239
+00:16:55,250 --> 00:17:00,970
+there's actually some more basic plotting methods such as bar plot's histograms maybe stacked histograms
+
+240
+00:17:00,970 --> 00:17:05,320
+some more detail grouping values on box plot's area plots so she didn't go over.
+
+241
+00:17:05,330 --> 00:17:09,820
+But it's basically just saying kind is equal to area and there's some more information.
+
+242
+00:17:09,830 --> 00:17:14,120
+Now we've actually done a lot of this already but if you want some more details you can always reference
+
+243
+00:17:14,120 --> 00:17:16,810
+this documentation page which is pretty nice.
+
+244
+00:17:17,280 --> 00:17:17,890
+Okay.
+
+245
+00:17:18,200 --> 00:17:22,790
+Lastly I just wanted to mention that there is some technical analysis capabilities with cufflinks that
+
+246
+00:17:22,790 --> 00:17:23,800
+are built in.
+
+247
+00:17:23,840 --> 00:17:25,790
+They're still under beta.
+
+248
+00:17:25,790 --> 00:17:32,000
+They're not fully released but you can check them out in the technical analysis section of this library
+
+249
+00:17:34,460 --> 00:17:41,000
+you can find out more about these technical analysis plot's by clicking here on cufflinks folder and
+
+250
+00:17:41,000 --> 00:17:44,240
+then checking out CA pi.
+
+251
+00:17:44,540 --> 00:17:46,910
+And this is the technical analysis that pi file.
+
+252
+00:17:46,910 --> 00:17:53,480
+Again this is kind of advanced stuff and it specifically is dedicated to financial analysis.
+
+253
+00:17:53,480 --> 00:17:57,010
+So if you're not interested in financial analysis at all don't worry about this.
+
+254
+00:17:57,030 --> 00:18:00,320
+They can check a couple of the functions here and a couple of the types you can do.
+
+255
+00:18:00,320 --> 00:18:06,840
+It allows you to do things such as moving averages or correlation between plots or stocks etc..
+
+256
+00:18:06,920 --> 00:18:12,190
+We'll explore some of these plot types later on in an optional section of the financial data capstone
+
+257
+00:18:12,250 --> 00:18:12,940
+project.
+
+258
+00:18:13,070 --> 00:18:15,610
+But if you're not interested in this sort of stuff don't worry about it.
+
+259
+00:18:15,680 --> 00:18:20,120
+I just want you to be aware that it's there for you in case you are interested in financial analysis
+
+260
+00:18:20,210 --> 00:18:22,040
+and creating interactive plots for that.
+
+261
+00:18:22,370 --> 00:18:23,000
+Okay.
+
+262
+00:18:23,240 --> 00:18:23,930
+Thanks everyone.
+
+263
+00:18:23,930 --> 00:18:26,260
+I hope you enjoyed learning about plotline cufflinks.
+
+264
+00:18:26,270 --> 00:18:27,710
+It's a really powerful tool.
+
+265
+00:18:27,770 --> 00:18:31,110
+And the good news is you don't have to adjust your knowledge that much for it.
+
+266
+00:18:31,120 --> 00:18:35,060
+You essentially just add an eye and remember what kind of plot you want to pass.
+
+267
+00:18:35,240 --> 00:18:35,880
+OK.
+
+268
+00:18:36,110 --> 00:18:38,170
+Thanks everyone and I'll see at the next lecture.

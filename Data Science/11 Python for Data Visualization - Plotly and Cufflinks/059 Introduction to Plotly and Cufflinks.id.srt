@@ -1,0 +1,195 @@
+1
+00:00:05,190 --> 00:00:09,870
+Halo semua dan selamat datang di ceramah plotless dan manset dan ceramah
+
+2
+00:00:09,870 --> 00:00:15,890
+ini kita akan belajar sedikit latar belakang di belakang manset alur cerita yang memungkinkan kita untuk
+
+3
+00:00:17,260 --> 00:00:23,730
+membuat visualisasi interaktif dengan tenang adalah perpustakaan visualisasi interaktif yang sumber terbuka dan manset menghubungkan perpustakaan ini dengan
+
+4
+00:00:23,730 --> 00:00:24,750
+panda .
+
+5
+00:00:24,870 --> 00:00:29,490
+Dan dengan cara itu kita akan dapat membuat visualisasi interaktif langsung dari kerangka data kita.
+
+6
+00:00:30,180 --> 00:00:35,480
+Namun sebelum kita benar-benar menjelajahi pustaka ini, kita perlu menginstalnya.
+
+7
+00:00:35,880 --> 00:00:41,100
+Anda harus menggunakan Pipp untuk menginstal pustaka ini baik di baris perintah atau di terminal Anda dan
+
+8
+00:00:41,100 --> 00:00:44,720
+Anda dapat menulis plot gaya Pitman, Lee dan Pipp menginstal manset.
+
+9
+00:00:44,730 --> 00:00:47,750
+Ini harus tetap bekerja walaupun Anda menggunakan distribusi Anaconda.
+
+10
+00:00:47,790 --> 00:00:53,700
+Kedua perpustakaan ini tidak tersedia di instalasi Konda saat ini, jadi silakan gunakan pipin style plotless
+
+11
+00:00:53,710 --> 00:00:58,650
+dan manset Pippin di terminal baris perintah Anda untuk mendapatkan perpustakaan ini.
+
+12
+00:01:00,300 --> 00:01:04,170
+Sekarang mari kita lanjutkan dan dapatkan tur singkat dari situs Web resmi sebelum kuliah berikutnya kami benar-benar
+
+13
+00:01:04,170 --> 00:01:05,990
+menunjukkan kepada Anda bagaimana menggunakan perpustakaan ini.
+
+14
+00:01:06,000 --> 00:01:09,110
+Saya akan pergi ke depan dan melompat ke situs web resmi plati sekarang.
+
+15
+00:01:09,630 --> 00:01:09,920
+Baiklah.
+
+16
+00:01:09,930 --> 00:01:11,750
+Di sini saya di situs Web tanpa plot.
+
+17
+00:01:11,820 --> 00:01:16,380
+Ini mengatur P L O T L Y dan Anda dapat memeriksa situs Web.
+
+18
+00:01:16,390 --> 00:01:22,320
+Ada banyak informasi di dalamnya dalam catatan cepat plotless juga sebuah perusahaan tetapi mereka menghasilkan uang
+
+19
+00:01:22,320 --> 00:01:25,590
+dengan hosting visualisasi Anda dan hosting dasbor Anda.
+
+20
+00:01:25,620 --> 00:01:30,900
+Jika Anda ingin menjaga semuanya tetap lokal atau host sendiri perpustakaan yang beroperasi pada semua fitur ini
+
+21
+00:01:30,990 --> 00:01:32,690
+bersifat open source dan gratis.
+
+22
+00:01:32,910 --> 00:01:37,480
+Jadi jangan khawatir Anda tidak perlu membayar sesuatu untuk menggunakan dengan sopan dan sopan.
+
+23
+00:01:37,560 --> 00:01:42,120
+Ini kompatibel dengan berbagai alat seperti Matlab excel dan Javascript kami.
+
+24
+00:01:42,270 --> 00:01:44,830
+Tapi kita akan fokus menggunakannya dengan Python.
+
+25
+00:01:44,830 --> 00:01:49,440
+Jika Anda teruskan dan klik tautan python ini, Anda akan mendapatkan tautan ke laman memulai dengan Python.
+
+26
+00:01:49,890 --> 00:01:52,080
+Ini akan menunjukkan kepada Anda bagaimana memulai.
+
+27
+00:01:52,110 --> 00:01:56,500
+Menariknya mereka akan memiliki tautan ke Panda dan itulah yang akan kami fokuskan untuk
+
+28
+00:01:56,500 --> 00:02:00,520
+menggunakan plotless dengan panda dan untuk Anda, kami menggunakan panda plotless.
+
+29
+00:02:00,600 --> 00:02:05,940
+Anda perlu menginstal plotline seperti yang disebutkan di sini dalam instruksi Anda juga
+
+30
+00:02:05,940 --> 00:02:08,130
+nantinya harus menginstal manset.
+
+31
+00:02:08,130 --> 00:02:08,820
+Manset
+
+32
+00:02:08,820 --> 00:02:13,390
+Apakah perpustakaan yang menghubungkan plot Lee dengan panda.
+
+33
+00:02:13,510 --> 00:02:19,010
+Dan saya akan pergi ke depan dan pergi ke halaman web untuk manset.
+
+34
+00:02:19,050 --> 00:02:22,230
+Dan inilah dasarnya mendapatkan manset dan manset untuknya.
+
+35
+00:02:22,410 --> 00:02:28,170
+Ini adalah alat produktivitas yang memungkinkan Anda untuk dengan cepat memanggil plot seperti halnya dengan
+
+36
+00:02:28,170 --> 00:02:34,120
+panda misalnya metode bingkai data titik plot yang ditetapkan Anda akan benar-benar membuat visualisasi interaktif
+
+37
+00:02:34,120 --> 00:02:36,740
+menggunakan plot Lee dalam sangkalan cepat.
+
+38
+00:02:36,750 --> 00:02:41,910
+Saya sebenarnya adalah kontributor untuk perpustakaan ini sendiri dan Anda benar-benar dapat melihat cabang gabungan saya di sini di
+
+39
+00:02:41,910 --> 00:02:43,320
+Jey impor di sini.
+
+40
+00:02:43,740 --> 00:02:48,750
+Tapi bagaimanapun juga ada tutorial yang cukup bagus di sini di bawah manset dan kami akan
+
+41
+00:02:48,750 --> 00:02:54,030
+membahas beberapa topik ini dan menunjukkan kepada Anda bagaimana sebenarnya menggunakan manset secara efektif untuk menciptakan
+
+42
+00:02:54,060 --> 00:02:55,980
+interaksi interaktif dengan tindakan malasnya.
+
+43
+00:02:56,270 --> 00:03:02,190
+Dan ini hanya sebuah contoh dari satu U. K. tingkat swap dan Anda dapat melihat bahwa ini
+
+44
+00:03:02,190 --> 00:03:04,300
+adalah permukaan 3D dan ini dilakukan langsung dari kerangka data.
+
+45
+00:03:04,320 --> 00:03:11,120
+Ada beberapa catatan rilis di sini dan kemudian ada beberapa tautan yang dokumentasi di atas di sini.
+
+46
+00:03:11,130 --> 00:03:11,760
+Baiklah.
+
+47
+00:03:11,910 --> 00:03:16,740
+Mari kita lanjutkan dan baru saja mulai di kuliah berikutnya kita benar-benar akan menunjukkan
+
+48
+00:03:17,010 --> 00:03:20,220
+kepada Anda bagaimana kode visualisasi interaktif menggunakan perpustakaan ini.
+
+49
+00:03:20,220 --> 00:03:22,080
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

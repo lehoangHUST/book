@@ -1,0 +1,535 @@
+1
+00:00:05,490 --> 00:00:10,830
+Hello everyone and welcome to Matrix plot's lecture with Seaborn in this lecture we're going to learn
+
+2
+00:00:10,830 --> 00:00:14,940
+how to create matrix plots primarily heat maps using Seaborn.
+
+3
+00:00:15,120 --> 00:00:18,300
+Let's go ahead and jump to Jupiter notebook to get started.
+
+4
+00:00:18,870 --> 00:00:19,200
+OK.
+
+5
+00:00:19,200 --> 00:00:21,500
+Here I am at the Jupiter notebook.
+
+6
+00:00:21,510 --> 00:00:27,280
+I went ahead and said inport seaborne as Asinus and then set map plot live in line.
+
+7
+00:00:27,330 --> 00:00:29,970
+Then I loaded up two data sets.
+
+8
+00:00:30,000 --> 00:00:35,550
+I've loaded up the tips data frame or data set using Esson as that load underscore data set and then
+
+9
+00:00:35,550 --> 00:00:37,260
+passing in the string tips.
+
+10
+00:00:37,290 --> 00:00:42,660
+And I did a similar thing for the flight data set using S and S that low data set and then passing in
+
+11
+00:00:42,660 --> 00:00:46,030
+the string flights the tips data that we've seen before.
+
+12
+00:00:46,040 --> 00:00:46,980
+Here's the head of it.
+
+13
+00:00:47,040 --> 00:00:48,430
+But the flight data set we haven't.
+
+14
+00:00:48,430 --> 00:00:49,970
+So let's take a quick look at it.
+
+15
+00:00:50,010 --> 00:00:56,130
+The flight data set primarily just shows the number of passengers that flew in a given month of a given
+
+16
+00:00:56,220 --> 00:00:57,750
+year.
+
+17
+00:00:57,750 --> 00:01:04,230
+Now let's talk about heat maps which is our primary way of showing some sort of matrix plot in order
+
+18
+00:01:04,230 --> 00:01:06,630
+for a heat map to work properly.
+
+19
+00:01:06,660 --> 00:01:09,630
+Your data should already be in a matrix form.
+
+20
+00:01:09,630 --> 00:01:15,850
+And what I mean by matrix form is so that the index name and the column name match up so that the cell
+
+21
+00:01:15,850 --> 00:01:21,500
+value actually indicates something that is relevant to both of those names.
+
+22
+00:01:21,540 --> 00:01:28,680
+What I mean by that for instance if I take a look at the tips data frame right now I have a total bill
+
+23
+00:01:28,890 --> 00:01:35,850
+which is some sort of label or variable and if I look at one of the values in the cell it's 16 dollars
+
+24
+00:01:35,850 --> 00:01:36,950
+and 99 cents.
+
+25
+00:01:37,140 --> 00:01:42,420
+However the row is not an actual variable in order to get this into matrix form.
+
+26
+00:01:42,420 --> 00:01:46,830
+I need to have both variables on the columns and the rows.
+
+27
+00:01:47,370 --> 00:01:54,420
+I can do that through many methods usually through a pivot table or trying to get correlation data.
+
+28
+00:01:54,570 --> 00:01:56,860
+We'll go ahead and do correlation data first.
+
+29
+00:01:56,940 --> 00:02:02,130
+If I call it tips stop c o r r close parentheses.
+
+30
+00:02:02,130 --> 00:02:06,290
+Now we have a matrix form of some sort of data here.
+
+31
+00:02:06,450 --> 00:02:15,390
+And what you mean by that is now the column and the index variable names actually indicates a relevancy
+
+32
+00:02:15,390 --> 00:02:19,880
+to both the column and the index name for the cell where they match up.
+
+33
+00:02:19,920 --> 00:02:21,190
+And this is the matrix form.
+
+34
+00:02:21,210 --> 00:02:26,370
+You're going to need your data in in order to call heat map on it and then it's actually just as simple
+
+35
+00:02:26,370 --> 00:02:30,920
+as calling Asinus dot heat map and then your data.
+
+36
+00:02:30,990 --> 00:02:39,500
+Let's go in and save Tipps thought core as TC and then pass it into heat map.
+
+37
+00:02:39,660 --> 00:02:45,840
+And here we can see a heat map or a heat map really does is it colors in those values based on some
+
+38
+00:02:45,840 --> 00:02:47,280
+sort of gradient scale.
+
+39
+00:02:47,280 --> 00:02:53,850
+So if I take a look at my original TCE data frame it's essentially just set these numbers to a gradient
+
+40
+00:02:53,910 --> 00:02:55,970
+on a color scale and then fill that in.
+
+41
+00:02:56,100 --> 00:03:01,380
+And that way if you have a very large correlation data frame or some other matrix form data you can
+
+42
+00:03:01,380 --> 00:03:07,390
+easily tell what the numbers are what the values are relative to each other using a heat map.
+
+43
+00:03:07,390 --> 00:03:12,210
+And that's the main primary use for a matrix plot.
+
+44
+00:03:12,210 --> 00:03:18,420
+Other useful arguments you can pass in here to heat map besides just your data is and rotation so you
+
+45
+00:03:18,420 --> 00:03:26,160
+can say A and OT as arguments equals true and they will annotate the actual numerical values that belong
+
+46
+00:03:26,160 --> 00:03:27,350
+in each of these cells.
+
+47
+00:03:27,360 --> 00:03:31,680
+You don't just have to go off of color but you can also go off of the actual value here.
+
+48
+00:03:31,980 --> 00:03:38,730
+And then you can also specify as See map the actual color mapping you want will go over color maps and
+
+49
+00:03:38,730 --> 00:03:43,580
+the options later on in the seemore lecturers for instance showing an example.
+
+50
+00:03:43,710 --> 00:03:47,070
+Cool warm as a string that verifies a color map.
+
+51
+00:03:47,070 --> 00:03:49,200
+And here you can begin to see the color map.
+
+52
+00:03:49,230 --> 00:03:52,650
+Cool warm on the same data.
+
+53
+00:03:52,650 --> 00:03:59,700
+Now let's revisit the flight's data then go ahead and type in flights and we can see we have all this
+
+54
+00:03:59,700 --> 00:04:05,640
+year this month this passengers and I need to get this into matrix form meaning I need to somehow convert
+
+55
+00:04:05,670 --> 00:04:13,510
+one of these variables appear to be the call or the road names the actual index.
+
+56
+00:04:13,560 --> 00:04:16,500
+So I want one of these variables either Year Month or passengers.
+
+57
+00:04:16,500 --> 00:04:21,340
+Let's go ahead and say month to be the index.
+
+58
+00:04:21,360 --> 00:04:27,330
+So I'm going to say the index is equal to month and then I'm going to go out and set the columns equal
+
+59
+00:04:27,330 --> 00:04:36,330
+to the year and then the only thing I have left to do is specify the values and that's going to go ahead
+
+60
+00:04:36,330 --> 00:04:39,920
+and be the passengers column.
+
+61
+00:04:41,990 --> 00:04:44,400
+Go in and run this and see what this looks like now.
+
+62
+00:04:44,860 --> 00:04:45,310
+OK.
+
+63
+00:04:45,370 --> 00:04:48,940
+Now I have my data in some sort of matrix form.
+
+64
+00:04:48,970 --> 00:04:53,600
+You can do this with Pivot Table quite easily depending if your data lines up correctly.
+
+65
+00:04:53,740 --> 00:04:59,470
+Now you can see I have a bunch of numbers here that correlate well with not just the column variable
+
+66
+00:04:59,470 --> 00:05:01,360
+but also the index variable.
+
+67
+00:05:01,420 --> 00:05:07,570
+So I can see here in 1952 for instance in April there were 181 passengers.
+
+68
+00:05:07,570 --> 00:05:11,770
+Now what I want to do is use heat map to quickly visualize this data.
+
+69
+00:05:11,960 --> 00:05:18,280
+I'm going to go head and set this equal to FP for flights pivot and then just call S and S heat map
+
+70
+00:05:19,690 --> 00:05:21,820
+on F-P.
+
+71
+00:05:21,970 --> 00:05:26,530
+And here we can see the heat map for the pivoted tables of flights.
+
+72
+00:05:26,710 --> 00:05:30,710
+And now I can see based on a color gradient the data in a lot clear of a format.
+
+73
+00:05:30,880 --> 00:05:36,400
+So I can easily tell which month of which year had the most flights and it makes sense that gradually
+
+74
+00:05:36,550 --> 00:05:43,030
+as the years go further or forward in time you get more flights then that makes sense because as time
+
+75
+00:05:43,030 --> 00:05:47,950
+goes on more people are on airplanes more flights are occurring and you can also see based off the month
+
+76
+00:05:48,280 --> 00:05:56,530
+that popular month travel is usually during the summer months June July and August at least for us data
+
+77
+00:05:56,530 --> 00:05:57,330
+.
+
+78
+00:05:57,370 --> 00:06:04,510
+Now what you can also do is add in arguments such as sea map and let's go in and show another example
+
+79
+00:06:04,510 --> 00:06:08,800
+of a sea map one that's useful as magma.
+
+80
+00:06:09,490 --> 00:06:16,570
+And now we can also see from dark to light the actual colors here the variation in other argument you
+
+81
+00:06:16,570 --> 00:06:23,410
+can pass and a heat map which sometimes people like to use is like color and line which is
+
+82
+00:06:26,170 --> 00:06:27,870
+basically right now in this heat map.
+
+83
+00:06:27,880 --> 00:06:32,560
+All these cells are touching each other directly but sometimes you may want some separation.
+
+84
+00:06:32,710 --> 00:06:36,140
+So you can specify line withs to be a little thicker.
+
+85
+00:06:36,340 --> 00:06:40,740
+We'll go in and put in one there and you can auspice Feitel the line color.
+
+86
+00:06:40,870 --> 00:06:42,970
+We're going to go and specify it to be white.
+
+87
+00:06:42,970 --> 00:06:46,830
+Now if I run this I get these lines in between each cell.
+
+88
+00:06:46,870 --> 00:06:48,890
+And sometimes that's a little easier to read.
+
+89
+00:06:49,360 --> 00:06:55,790
+You can make these lines really thick if you want more separation and you can also change the color
+
+90
+00:06:55,790 --> 00:06:56,740
+of the line.
+
+91
+00:06:56,740 --> 00:07:01,750
+So for instance if I go back to maybe another seam up another one sometimes people use like we show
+
+92
+00:07:01,780 --> 00:07:03,480
+before us cool warm.
+
+93
+00:07:03,740 --> 00:07:07,500
+And this is what it would look like maybe you want something that's not white.
+
+94
+00:07:07,540 --> 00:07:12,130
+You can also choose like black for instance.
+
+95
+00:07:12,130 --> 00:07:15,760
+So really you have a lot of customization here as far as how you actually want to separate this.
+
+96
+00:07:15,760 --> 00:07:20,890
+Let's go to remove everything and just show the original heat map here.
+
+97
+00:07:20,890 --> 00:07:27,340
+Now let's talk about the second Matrix type plot in seaborne which is the cluster map and the cluster
+
+98
+00:07:27,340 --> 00:07:33,260
+map is actually going to use hierarchal clustering to produce a clustered version of this heat map.
+
+99
+00:07:33,290 --> 00:07:37,900
+Let me go to show you an example here we have the original heat map but now I'm going to call Asinus
+
+100
+00:07:38,980 --> 00:07:45,420
+cluster map on F.P. and notice what we have here.
+
+101
+00:07:45,430 --> 00:07:49,470
+We have the data on it need to zoom out to show this completely.
+
+102
+00:07:49,470 --> 00:07:55,540
+But now we have the data and these little hierarchal clusters and this basically tries to cluster columns
+
+103
+00:07:55,570 --> 00:07:59,180
+and rows together based off their similarity.
+
+104
+00:07:59,190 --> 00:08:06,730
+And this suddenly shows the years and the months and clusters and the months here on the y axis you
+
+105
+00:08:06,730 --> 00:08:08,370
+can see are no longer in order.
+
+106
+00:08:08,470 --> 00:08:11,400
+They go September June August July October April.
+
+107
+00:08:11,470 --> 00:08:16,270
+And the reason for that is because they've been clustered to most similar months being put together
+
+108
+00:08:16,570 --> 00:08:19,810
+and the same thing for years you can see certain years are now out of order.
+
+109
+00:08:19,830 --> 00:08:22,940
+It goes 1949 1950 1953.
+
+110
+00:08:23,050 --> 00:08:28,570
+That is basically clusters of information to try to show columns and rows that are similar to each other
+
+111
+00:08:28,580 --> 00:08:33,360
+so I can see now that 1959 and 1960 are very similar to each other.
+
+112
+00:08:33,490 --> 00:08:35,250
+And so our August and July.
+
+113
+00:08:35,290 --> 00:08:40,570
+And you can see the different levels of the hierarchy of the clusters based off of these kind of tree
+
+114
+00:08:40,570 --> 00:08:48,550
+diagrams but on the y axis and the x axis and now you can really begin to infer information from a plot
+
+115
+00:08:48,700 --> 00:08:53,020
+in order to make this even more clear what we can do is change the color mapping.
+
+116
+00:08:53,020 --> 00:08:55,210
+So see map equal to the string.
+
+117
+00:08:55,210 --> 00:08:58,020
+Cool warm again.
+
+118
+00:08:58,220 --> 00:09:03,250
+And now we can really see the clusters so you can see that there's a cluster between August and July
+
+119
+00:09:03,550 --> 00:09:08,420
+very clearly and something else you can do is standardize the scale.
+
+120
+00:09:08,440 --> 00:09:12,400
+So right now we're still on passengers from 0 to 600.
+
+121
+00:09:12,520 --> 00:09:19,690
+But if you wanted to normalize this you can passen arguments called standard scale and input 1 and this
+
+122
+00:09:19,690 --> 00:09:26,920
+would normalize this from 0 to 1 and you can really see based off a normalized scale the similarities
+
+123
+00:09:26,950 --> 00:09:29,890
+of the clusters based off the coloring.
+
+124
+00:09:30,130 --> 00:09:35,800
+So it looks like this November January and February is kind of early winter months are much closer to
+
+125
+00:09:35,800 --> 00:09:41,120
+low passengers and high passenger count is mainly in these summer months.
+
+126
+00:09:41,170 --> 00:09:41,770
+OK.
+
+127
+00:09:41,950 --> 00:09:45,010
+I encourage you to go ahead and explore the documentation for cluster map.
+
+128
+00:09:45,010 --> 00:09:49,720
+It is something you're interested in but you may want to wait until we actually get to machine learning
+
+129
+00:09:49,730 --> 00:09:54,460
+clustering algorithms so we can better understand what's actually going on with the mathematics behind
+
+130
+00:09:54,460 --> 00:09:55,360
+these methods.
+
+131
+00:09:55,400 --> 00:09:59,770
+BERNANKE I just think of it as an interesting method to just infer a little more information from a
+
+132
+00:09:59,770 --> 00:10:06,400
+normal heat than a heat map will display things in the order you put them in a cluster map will cluster
+
+133
+00:10:06,400 --> 00:10:10,890
+things in an order so that similar groups are close to each other.
+
+134
+00:10:10,900 --> 00:10:13,930
+All right thanks everyone and I'll see you at the next lecture

@@ -1,0 +1,923 @@
+1
+00:00:05,400 --> 00:00:10,590
+Salve a tutti e benvenuti alla conferenza della trama categorica per il trasporto marittimo di S. discorso.
+
+2
+00:00:10,590 --> 00:00:14,030
+Ora sposteremo la nostra attenzione sul collegamento di dati categoriali.
+
+3
+00:00:14,040 --> 00:00:16,760
+Andiamo avanti e saltiamo sul taccuino di Jupiter per iniziare.
+
+4
+00:00:17,070 --> 00:00:21,950
+OK, eccomi qui sul taccuino di Giove e ho già inserito un paio di righe di codice qui.
+
+5
+00:00:21,960 --> 00:00:28,440
+Ho detto import Seaborn e Cessna che sono andato avanti e ho detto la trama della mappa in linea in modo da poter vedere le
+
+6
+00:00:28,470 --> 00:00:30,150
+visualizzazioni all'interno del quaderno di Giove.
+
+7
+00:00:30,300 --> 00:00:34,530
+categorici dovevamo principalmente preoccuparci di vedere le distribuzioni di una colonna
+
+8
+00:00:34,560 --> 00:00:42,840
+categoriale come questo genere sessuale o fumatore durante il giorno fare riferimento a una delle colonne numeriche o un'altra colonna categoriale.
+
+9
+00:00:42,840 --> 00:00:50,790
+E poi sono andato avanti e ho caricato il set di dati dei suggerimenti e poi ho controllato il set di
+
+10
+00:00:50,820 --> 00:00:53,450
+dati dei suggerimenti OK per i grafici
+
+11
+00:00:53,460 --> 00:00:59,610
+Andiamo avanti e iniziamo con la trama categoriale più elementare che è il grafico a barre e puoi
+
+12
+00:00:59,610 --> 00:01:06,510
+farlo chiamando i grafici Asness e un grafico a barre è solo una trama generale che ti permette di aggregare
+
+13
+00:01:06,600 --> 00:01:11,940
+i dati categoriali in base a qualche funzione e di default è il mezzo che
+
+14
+00:01:11,940 --> 00:01:16,190
+puoi quasi pensare a questo come visualizzazione di un gruppo per azione.
+
+15
+00:01:16,200 --> 00:01:18,400
+Lasciami andare avanti e mostrarti cosa intendo con quello.
+
+16
+00:01:18,600 --> 00:01:25,350
+i suggerimenti più semplici e quindi quello che andrò a fare e fare è impostare l'asse x su una colonna categoriale.
+
+17
+00:01:25,440 --> 00:01:31,830
+Entreremo e imposteremo un x y argomenti di dati nel grafico a barre tutti i tipi di set di dati
+
+18
+00:01:31,930 --> 00:01:34,760
+In questo caso andrò avanti e scelgo la colonna del sesso qui.
+
+19
+00:01:35,490 --> 00:01:43,110
+E poi per la colonna Y o yeah per gli assi y possiamo scegliere una
+
+20
+00:01:43,140 --> 00:01:46,470
+colonna numerica ad esempio il conto totale.
+
+21
+00:01:46,470 --> 00:01:52,320
+E questo creerà un grafico a barre e per impostazione predefinita quello che mostra qui è la media o la
+
+22
+00:01:52,320 --> 00:01:53,510
+media della bolletta totale.
+
+23
+00:01:53,580 --> 00:01:55,800
+Il suo valore di colonna categoriale.
+
+24
+00:01:55,890 --> 00:02:02,640
+Quindi il conto totale medio per i maschi sarà leggermente superiore alla media della bolletta totale per le donne.
+
+25
+00:02:03,330 --> 00:02:09,780
+E puoi andare avanti e cambiare ciò che è noto come oggetto estimator se vuoi
+
+26
+00:02:10,050 --> 00:02:14,270
+sostanzialmente influenzare ciò che è il raggruppamento o l'aggregazione attuale.
+
+27
+00:02:14,580 --> 00:02:21,480
+E possiamo andare avanti e farlo aggiungendo un altro argomento qui stimatore.
+
+28
+00:02:21,480 --> 00:02:23,370
+E qui faremo le schede Maiusc.
+
+29
+00:02:23,370 --> 00:02:28,300
+Puoi vedere la documentazione dei quaderni di Jupiter per questo.
+
+30
+00:02:28,440 --> 00:02:31,850
+Lo stimatore è una funzione che è una funzione aggregata.
+
+31
+00:02:31,860 --> 00:02:36,900
+Quindi è una sorta di funzione statistica da stimare all'interno di ogni bin categoriale
+
+32
+00:02:36,900 --> 00:02:39,630
+e per impostazione predefinita sarà media o media.
+
+33
+00:02:39,810 --> 00:02:44,310
+Ma posso anche inserire le mie funzioni se hai una sorta di funzione aggregata che puoi andare
+
+34
+00:02:44,310 --> 00:02:45,360
+avanti e metterlo fuori.
+
+35
+00:02:45,420 --> 00:02:47,380
+In questo momento stiamo osservando il conto totale medio.
+
+36
+00:02:47,520 --> 00:02:52,820
+Ma diciamo che volevamo capire la deviazione standard del suo genere, per esempio.
+
+37
+00:02:52,830 --> 00:02:55,560
+C'è più deviazione standard sugli uomini e il loro conto totale.
+
+38
+00:02:55,590 --> 00:02:59,860
+Quindi più varianza o le femmine hanno più varianza.
+
+39
+00:02:59,860 --> 00:03:05,130
+Bene, entreremo nel dire importante un po 'di torta mentre andiamo a copiare e incollare
+
+40
+00:03:05,130 --> 00:03:08,040
+questo e metterlo in una cella sopra questo.
+
+41
+00:03:08,120 --> 00:03:14,170
+Vai avanti e inserisci la cella qui sopra e diciamo importante come NPE qui.
+
+42
+00:03:14,250 --> 00:03:20,670
+E poi nello stimatore avrò modo di andare avanti e passare la funzione t torta per la deviazione standard
+
+43
+00:03:21,210 --> 00:03:27,630
+e questo mi dirà quando eseguirò ciò che la deviazione standard della colonna della bolletta totale è per categoria.
+
+44
+00:03:28,050 --> 00:03:30,510
+E puoi passare qualsiasi funzione di stimatore desideri.
+
+45
+00:03:30,510 --> 00:03:31,730
+Puoi persino crearne uno tuo.
+
+46
+00:03:32,100 --> 00:03:37,380
+E puoi passarlo nel grafico a barre dove x è una colonna di categoria e Y è una sorta di colonna numerica.
+
+47
+00:03:37,770 --> 00:03:39,750
+Quindi hai passato i tuoi dati e qualsiasi stimatore.
+
+48
+00:03:39,750 --> 00:03:44,700
+un aggregato o essenzialmente solo una visualizzazione di un qualche tipo di gruppo per meccanismo qui.
+
+49
+00:03:44,700 --> 00:03:45,840
+E questo è solo
+
+50
+00:03:45,840 --> 00:03:54,840
+Va bene, andiamo avanti e costruiamo questo risultato eseguendo un conteggio dei conteggi. I complotti di conteggio in mare sono essenzialmente gli stessi di
+
+51
+00:03:54,840 --> 00:04:00,170
+un grafico a barre, tranne che lo stimatore conta esplicitamente il numero di occorrenze.
+
+52
+00:04:00,450 --> 00:04:09,020
+E a causa di ciò impostiamo solo il valore x e poi ci sediamo nei suggerimenti dei dati uguali.
+
+53
+00:04:09,510 --> 00:04:15,840
+E questo è essenzialmente la stessa cosa che dire come pda Thumb conta su questa
+
+54
+00:04:16,200 --> 00:04:18,310
+colonna di suggerimenti per genere.
+
+55
+00:04:18,330 --> 00:04:18,730
+Tutto ok.
+
+56
+00:04:18,750 --> 00:04:23,580
+contropiastra, che è essenzialmente lo stesso di un grafico a barre, tranne che l'asse y è già stato scelto per te.
+
+57
+00:04:23,580 --> 00:04:24,820
+Questo è il fondamento della
+
+58
+00:04:24,900 --> 00:04:26,500
+Conta solo le occorrenze.
+
+59
+00:04:26,520 --> 00:04:30,570
+Qui possiamo vedere che ci sono più maschi nel set di dati rispetto alle femmine.
+
+60
+00:04:31,200 --> 00:04:34,800
+Andiamo avanti e parliamo di box plot e trame violente.
+
+61
+00:04:34,800 --> 00:04:40,770
+Questi tipi di grafici vengono utilizzati per mostrare che la distribuzione di dati categoriali è anche nota
+
+62
+00:04:40,770 --> 00:04:42,710
+come trama di casella e baffi.
+
+63
+00:04:42,900 --> 00:04:48,220
+E mostra la distribuzione dei dati quantitativi in ​​un modo che, auspicabilmente, facilita il confronto
+
+64
+00:04:48,220 --> 00:04:49,130
+tra le variabili.
+
+65
+00:04:49,230 --> 00:04:50,710
+Vado a mostrarti cosa intendo con quello.
+
+66
+00:04:50,940 --> 00:05:00,630
+Creerò un diagramma di riquadri, diciamo S e S, che trama la trama, quindi passeremo una xey in questo
+
+67
+00:05:00,630 --> 00:05:05,820
+caso, sceglierò X come punto o colonna di dati categoriali.
+
+68
+00:05:05,880 --> 00:05:07,550
+E allora perché sarà numerico.
+
+69
+00:05:07,590 --> 00:05:09,560
+Andrà la fattura totale.
+
+70
+00:05:09,630 --> 00:05:14,220
+Quindi qui proveremo a vedere la distribuzione del conto totale al giorno.
+
+71
+00:05:14,220 --> 00:05:18,170
+E infine, devo passare quei dati come suggerimenti.
+
+72
+00:05:18,230 --> 00:05:20,460
+Andiamo avanti e gestiamo questo.
+
+73
+00:05:21,030 --> 00:05:23,730
+E qui otteniamo la trama della scatola.
+
+74
+00:05:24,020 --> 00:05:24,400
+OK.
+
+75
+00:05:24,450 --> 00:05:29,640
+Questo grafico a riquadri mostra i riquadri principali del set di dati mentre i baffi si estendono per mostrare il
+
+76
+00:05:29,640 --> 00:05:33,600
+resto della distribuzione eccetto per questi punti che sono al di fuori di questi baffi.
+
+77
+00:05:33,630 --> 00:05:40,710
+Questi sono determinati a valori anomali e in sostanza si può semplicemente interpretare questo come, ad esempio,
+
+78
+00:05:40,710 --> 00:05:45,960
+se guardiamo a giovedì come un giorno da soli sul totale dell'asse y.
+
+79
+00:05:46,350 --> 00:05:51,100
+E poi sull'asse X è solo separato per categoria o giorno.
+
+80
+00:05:51,570 --> 00:05:55,770
+per giovedì, in sostanza mi sta dicendo che circa il 25% o un quarto.
+
+81
+00:05:55,770 --> 00:05:58,130
+Quindi se guardo questo blu qui a sinistra
+
+82
+00:05:58,150 --> 00:06:02,430
+Questo è il motivo per cui queste sono chiamate tessere centrali, i punti dati vanno dal
+
+83
+00:06:02,490 --> 00:06:07,190
+centro del sussurro al fondo qui e poi un altro quarto dal fondo della scatola al centro qui.
+
+84
+00:06:07,350 --> 00:06:09,460
+Questa linea e poi ecc per la parte superiore.
+
+85
+00:06:09,490 --> 00:06:14,070
+Quindi, ma ora di un altro quarto i punti sono qui e poi l'altro quarto dei punti sono qui.
+
+86
+00:06:14,460 --> 00:06:22,920
+E questi punti sono anomali e possiamo iniziare a essere davvero fantasiosi con il mare semplicemente aggiungendo qualche parola
+
+87
+00:06:23,400 --> 00:06:26,820
+in più qui e specificando una tonalità.
+
+88
+00:06:27,360 --> 00:06:33,480
+ci consentirà di suddividere questi riquadri di scatole ulteriormente da un'altra colonna categoriale categoriale.
+
+89
+00:06:33,630 --> 00:06:34,590
+E questo
+
+90
+00:06:34,590 --> 00:06:37,470
+In questo caso andremo avanti e diciamo che Heugh è uguale a un fumatore.
+
+91
+00:06:37,580 --> 00:06:46,080
+Se eseguo questa operazione, vedo i grafici al giorno divisi e divisi per lo stato di fumatore e lo stato del fumatore è
+
+92
+00:06:46,110 --> 00:06:47,620
+colorato qui per te.
+
+93
+00:06:47,910 --> 00:06:50,030
+E qui ora puoi confrontare non solo.
+
+94
+00:06:50,030 --> 00:06:55,150
+Comportamento giorno per giorno per il conto totale ma anche se questa persona è o meno un fumatore.
+
+95
+00:06:55,320 --> 00:06:57,990
+E questo è davvero il vero potere dietro il mare.
+
+96
+00:06:58,080 --> 00:07:03,060
+che ti offre in sostanza un altro livello di dati molto rapidamente e senza intoppi.
+
+97
+00:07:03,060 --> 00:07:06,000
+Ti consente di aggiungere rapidamente questo indicatore di tonalità
+
+98
+00:07:06,530 --> 00:07:13,500
+E quindi puoi confrontare che fondamentalmente le persone di venerdì tendono ad avere un conto più grande se non
+
+99
+00:07:13,500 --> 00:07:19,950
+sono un fumatore contro se sono un fumatore e quindi puoi iniziare a vedere effettivamente la variazione per
+
+100
+00:07:19,950 --> 00:07:24,450
+i fumatori o quella distribuzione per i fumatori e i non fumatori .
+
+101
+00:07:24,510 --> 00:07:30,450
+Va bene, andiamo avanti e parliamo di trame violente che andranno avanti e rimuoveremo questa tonalità qui,
+
+102
+00:07:32,220 --> 00:07:38,400
+così potremo vedere la trama della scatola originale e poi chiamerò una trama violenta e una trama violenta
+
+103
+00:07:38,430 --> 00:07:41,630
+svolge un ruolo molto simile a trama di casella.
+
+104
+00:07:42,000 --> 00:07:44,930
+E puoi farlo solo perché in sostanza quella trama violenta.
+
+105
+00:07:45,330 --> 00:07:50,550
+E quello che sta per fare è anche mostrare la distribuzione dei dati attraverso una sorta di categoria.
+
+106
+00:07:51,030 --> 00:07:56,370
+Quindi prenderà esattamente gli stessi argomenti di un plot box che prenderà una x per la categoria.
+
+107
+00:07:57,080 --> 00:08:02,460
+Tua moglie sarà una sorta di colonna numerica che rimarrà con il conto
+
+108
+00:08:02,460 --> 00:08:05,170
+totale e poi passerà nei nostri dati.
+
+109
+00:08:05,180 --> 00:08:10,260
+CBS andrà avanti ed eseguirà questo e vedremo come appaiono questi grafici e permettetemi di
+
+110
+00:08:10,260 --> 00:08:14,040
+effettuare uno zoom in modo da poter effettivamente confrontare questi due.
+
+111
+00:08:14,040 --> 00:08:14,250
+Tutto ok.
+
+112
+00:08:14,250 --> 00:08:18,920
+Quindi abbiamo la nostra scatola in cima e il nostro violino in basso.
+
+113
+00:08:19,380 --> 00:08:25,350
+Ora la trama del violino a differenza del diagramma a riquadri ci consente di tracciare effettivamente tutti i
+
+114
+00:08:25,350 --> 00:08:31,650
+componenti che corrispondono ai punti dati reali e in sostanza mostra la stima della densità del kernel della distribuzione sottostante.
+
+115
+00:08:32,250 --> 00:08:36,930
+E questo in sostanza sta solo mostrando se abbiamo diviso questo a metà della
+
+116
+00:08:37,020 --> 00:08:43,290
+distribuzione dei punti sul suo lato e questo ti permette di rivelare ancora più informazioni sui punti dati stessi
+
+117
+00:08:43,380 --> 00:08:49,980
+il costo deriva dal fatto che è un po 'più difficile da interpretare o leggere contro una casella plop un
+
+118
+00:08:49,980 --> 00:08:56,460
+plot box è molto facile da dare un'occhiata e puoi dire rapidamente dove approssimativamente i dati si confrontano su una
+
+119
+00:08:57,660 --> 00:08:58,700
+categoria in trame violente.
+
+120
+00:08:58,710 --> 00:09:03,840
+Ti daremo molte più informazioni per quanto riguarda la distribuzione di tutti i punti stessi.
+
+121
+00:09:04,050 --> 00:09:07,470
+Ma è come se costasse passare un po 'più di tempo a guardarlo
+
+122
+00:09:07,470 --> 00:09:08,000
+e comprenderlo.
+
+123
+00:09:08,130 --> 00:09:11,560
+Ma questi due intrecci sono decisamente molto legati l'uno all'altro.
+
+124
+00:09:11,580 --> 00:09:14,660
+È solo che la trama violenta mostra un po 'più di informazioni.
+
+125
+00:09:14,880 --> 00:09:21,180
+A volte questa informazione può essere nascosta da te se stai usando solo una trama e una trama violenta proprio
+
+126
+00:09:21,240 --> 00:09:22,650
+come la trama della scatola.
+
+127
+00:09:22,680 --> 00:09:24,860
+Ha anche la possibilità di fare Whew.
+
+128
+00:09:25,140 --> 00:09:32,080
+Quindi potrei dire che compri sesso e Ill mostrami trame violente l'una accanto all'altra.
+
+129
+00:09:32,080 --> 00:09:37,710
+Bene, ciò che è interessante della trama violenta contro la trama della scatola è come un altro argomento
+
+130
+00:09:37,710 --> 00:09:43,680
+invece di mettere due trame violente l'una accanto all'altra poiché le informazioni sulla trama del violino sono sostanzialmente raddoppiate.
+
+131
+00:09:44,010 --> 00:09:50,040
+Potrei averne una metà qui e l'altra metà essere un altro e
+
+132
+00:09:51,270 --> 00:09:57,310
+puoi farlo dicendo split equals true come argomento e poi dividerà le distribuzioni.
+
+133
+00:09:57,330 --> 00:10:00,130
+E qui hai molte più informazioni.
+
+134
+00:10:00,120 --> 00:10:06,360
+Ora puoi confrontare direttamente le distribuzioni in base a un'altra categoria e vedere come le
+
+135
+00:10:06,370 --> 00:10:10,080
+categorie stesse sull'asse x si confrontano l'una con l'altra.
+
+136
+00:10:10,100 --> 00:10:15,000
+Certo, questo viene di nuovo a costo di passare più tempo a guardare questa visualizzazione.
+
+137
+00:10:15,420 --> 00:10:19,600
+Quindi devi davvero conoscere il tuo pubblico e sapere cosa è appropriato quando usi la
+
+138
+00:10:19,600 --> 00:10:25,210
+seaboard e queste visualizzazioni avanzate se hai a che fare con altri dati tecnici sono le persone che sono gli
+
+139
+00:10:25,200 --> 00:10:30,310
+stessi scienziati dei dati e hanno visto trame violente prima che questi tipi di grafici siano una grande scelta.
+
+140
+00:10:30,510 --> 00:10:36,120
+Tuttavia, per trattare con più tipi di amministratori esecutivi di tipo CEO, forse una semplice trama di
+
+141
+00:10:36,120 --> 00:10:41,250
+riquadri più popolare potrebbe essere la scelta giusta, a meno che non si trovi qualcosa
+
+142
+00:10:41,250 --> 00:10:43,140
+di molto interessante nella trama violenta.
+
+143
+00:10:43,140 --> 00:10:49,290
+Va bene, andiamo avanti e parliamo di alcuni metodi più avanzati per visualizzare questo tipo di
+
+144
+00:10:49,290 --> 00:10:50,200
+dati categoriali.
+
+145
+00:10:50,230 --> 00:10:55,570
+Inizieremo con la trama della striscia e la trama dello stript è in realtà probabilmente la più
+
+146
+00:10:55,560 --> 00:10:58,510
+semplice, ma ne andremo fuori e andremo a ingrandire qui.
+
+147
+00:10:58,650 --> 00:11:05,400
+Stiamo per ottenere e dire la trama della striscia d'essenza e la trama della striscia disegnerà un grafico a dispersione in
+
+148
+00:11:05,400 --> 00:11:07,140
+cui una variabile è categorica.
+
+149
+00:11:07,140 --> 00:11:12,270
+Quindi dirò la trama delle strisce e faremo esattamente la
+
+150
+00:11:12,270 --> 00:11:18,940
+stessa cosa, prima che X diventi categoriale e sarà un conto totale numerico.
+
+151
+00:11:18,960 --> 00:11:21,820
+E i dati saranno uguali a suggerimenti.
+
+152
+00:11:22,240 --> 00:11:30,670
+l'altro, cosa che si può fare in un altro argomento chiamato jitter e cosa jitter lo farà se entriamo e diciamo è vero qui.
+
+153
+00:11:30,660 --> 00:11:36,100
+E questo è solo un semplice diagramma di dispersione basato sul problema di categoria uno
+
+154
+00:11:36,240 --> 00:11:42,770
+con questa trama di strip, ovvero che non si può veramente sapere quanti punti sono impilati l'uno sopra
+
+155
+00:11:42,860 --> 00:11:47,640
+Questo aggiungerà un po 'di rumore casuale per separare alcuni di questi punti impilati.
+
+156
+00:11:47,800 --> 00:11:53,610
+E puoi vedere il più spesso e più punti ci sono molti più chiari rispetto alla trama normale
+
+157
+00:11:53,620 --> 00:11:54,280
+della striscia.
+
+158
+00:11:54,300 --> 00:11:58,710
+Quindi la normale trama dello stript se avesse un mucchio di punti impilati uno sopra l'altro era piuttosto
+
+159
+00:11:58,710 --> 00:11:59,550
+difficile da dire.
+
+160
+00:11:59,550 --> 00:12:06,240
+un po 'meglio con la trama della striscia, proprio come una trama violenta puoi iniziare ad aggiungere alcuni di quei pochi argomenti.
+
+161
+00:12:06,250 --> 00:12:08,830
+Ma ora se riesci a vedere la densità
+
+162
+00:12:09,030 --> 00:12:12,540
+Quindi ancora una volta potremmo dire che è uguale a qualcosa come il sesso.
+
+163
+00:12:12,630 --> 00:12:19,310
+Esegui questo e ora ho dei suggerimenti basati sui colori e possiamo anche fare uno split su questo,
+
+164
+00:12:19,330 --> 00:12:26,170
+proprio come avremmo potuto avere una trama violenta e questo fondamentalmente dividerà questi colori basandoci sugli argomenti di schewe.
+
+165
+00:12:26,220 --> 00:12:26,770
+OK.
+
+166
+00:12:27,150 --> 00:12:33,030
+Ora una trama come questa di nuovo bisogna stare attenti, potrebbe essere difficile da interpretare
+
+167
+00:12:33,030 --> 00:12:37,170
+rispetto a una trama semplice o addirittura a una trama violenta.
+
+168
+00:12:37,200 --> 00:12:43,320
+violenta e creare qualcosa che è noto come una trama di sciami e Seaborn ti permette di farlo davvero.
+
+169
+00:12:43,330 --> 00:12:48,060
+Ad alcune persone piace davvero combinare l'idea di una trama di strisce contro una trama
+
+170
+00:12:48,300 --> 00:12:49,790
+Una trama di sciami.
+
+171
+00:12:49,800 --> 00:12:50,730
+Usciamo e iniziamo a digitare.
+
+172
+00:12:50,740 --> 00:12:56,210
+È molto simile al grafico a strisce, tranne che i punti sono regolati in modo che non si sovrappongano.
+
+173
+00:12:56,310 --> 00:12:59,760
+E questo in realtà fornisce una migliore rappresentazione della distribuzione dei valori.
+
+174
+00:12:59,910 --> 00:13:04,520
+È un po 'come combinare una trama di strip scatter con una trama violenta.
+
+175
+00:13:04,530 --> 00:13:05,890
+Lascia che ti mostri cosa intendo con quello.
+
+176
+00:13:05,890 --> 00:13:08,190
+Ci sarà probabilmente un po 'più evidente quando lo vedrai.
+
+177
+00:13:08,250 --> 00:13:13,060
+Andremo avanti e passeremo lo stesso giorno degli stessi argomenti per x.
+
+178
+00:13:13,800 --> 00:13:15,170
+Diremo perché è il conto totale.
+
+179
+00:13:15,170 --> 00:13:15,520
+Whoops
+
+180
+00:13:20,010 --> 00:13:25,090
+totale conto di sottolineatura e quindi diremo che i dati sono suggerimenti.
+
+181
+00:13:25,770 --> 00:13:28,440
+E qui possiamo vedere la trama degli sciami.
+
+182
+00:13:28,620 --> 00:13:34,000
+E speriamo che sia più ovvio come la trama dello sciame sia essenzialmente una combinazione di una trama di
+
+183
+00:13:34,240 --> 00:13:35,530
+strisce e una trama violenta.
+
+184
+00:13:35,550 --> 00:13:42,000
+Mostra la stessa distribuzione eccetto che in realtà mostra tutti i punti stessi.
+
+185
+00:13:42,000 --> 00:13:47,130
+Uno svantaggio nell'usare una trama di sciami anche se sono piuttosto belli e interessanti e il fatto
+
+186
+00:13:47,130 --> 00:13:52,450
+che mostrino molte informazioni a volte non li scala in realtà a numeri molto grandi sia in termini
+
+187
+00:13:52,440 --> 00:13:54,660
+di capacità di mostrare tutti i punti .
+
+188
+00:13:54,720 --> 00:13:58,810
+Questi punti sono troppo ampi perché non vuoi impilare nulla uno sull'altro.
+
+189
+00:13:58,890 --> 00:14:01,710
+E ci vuole anche un sacco di calcoli per iniziare a organizzarli.
+
+190
+00:14:01,710 --> 00:14:05,360
+Quindi consiglierei di non usare i grafici di sciami per i set di dati molto grandi.
+
+191
+00:14:05,500 --> 00:14:10,530
+E in effetti direi che, in generale, probabilmente staresti lontano dal mostrare solo sciami perché la
+
+192
+00:14:10,530 --> 00:14:14,170
+maggior parte delle persone probabilmente non li ha mai incontrati prima.
+
+193
+00:14:14,150 --> 00:14:19,240
+Fai in fretta a sapere se ti piace davvero la trama dello sciame, puoi combinarla con
+
+194
+00:14:19,230 --> 00:14:22,630
+una trama violenta per mostrare entrambe le informazioni impilate l'una sull'altra.
+
+195
+00:14:22,890 --> 00:14:31,950
+Puoi dire che in questa stessa cella andrà avanti e dirà la trama del violino SNL e copierà e incollerà esattamente le
+
+196
+00:14:31,950 --> 00:14:39,660
+stesse informazioni qui nella nostra trama violenta e andremo avanti e specificaremo il colore della trama dello sciame in
+
+197
+00:14:40,200 --> 00:14:47,730
+nero e questo è in realtà andando a tracciare entrambi l'uno sopra l'altro e qui puoi vedere ogni singolo
+
+198
+00:14:47,760 --> 00:14:54,170
+punto e il relativo grafico di stima della densità del kernel o KDE su di esso.
+
+199
+00:14:54,180 --> 00:14:57,200
+Ora ci sono molte informazioni qui, quindi fai attenzione a questo.
+
+200
+00:14:57,210 --> 00:15:03,090
+grafici ti aiuti a capire immediatamente i tuoi dati, ma non tanto per spiegare a un dirigente.
+
+201
+00:15:03,100 --> 00:15:08,340
+Questo è probabilmente più utile per la presentazione ma solo per l'analisi dei dati esplorativi. Speriamo
+
+202
+00:15:08,350 --> 00:15:09,640
+che questo tipo di
+
+203
+00:15:09,850 --> 00:15:16,020
+Quel genere di cose sono fatte meglio con entrambi i box plot o con quel tipo di trame di
+
+204
+00:15:17,040 --> 00:15:23,310
+spacco o di grafici a barre questi trame violente più avanzate che tracciano piazzole di sciami sono più adatte
+
+205
+00:15:23,320 --> 00:15:28,780
+per gli stessi scienziati di dati e hanno effettivamente letto o esplorato il tuo informazioni sui dati
+
+206
+00:15:28,770 --> 00:15:34,560
+in realtà solo la forma più generale di tutti questi grafici e quello che fa è
+
+207
+00:15:34,570 --> 00:15:42,840
+se spostiamo la tabulazione qui in un argomento un wargame perché gli argomenti possono prendere dati umani ma poi anche solo accetta le
+
+208
+00:15:42,850 --> 00:15:48,990
+argomentazioni di un tipo e l'argomento gentile è essenzialmente ciò che descriverà i fatti o la trama stessa.
+
+209
+00:15:49,000 --> 00:15:52,350
+Infine, voglio parlare di Factor plot factor plot è
+
+210
+00:15:52,360 --> 00:15:58,970
+Per esempio, possiamo dire che il fatto o la trama diranno che copieremo e incolleremo il giorno di quel sequel, perché
+
+211
+00:15:58,980 --> 00:16:05,100
+il conto totale era per Tipps, mi scusi e poi possiamo andare avanti e dire che Kines è uguale a.
+
+212
+00:16:05,320 --> 00:16:08,190
+Diciamo uno dei grafici del bar che puoi dire bar.
+
+213
+00:16:08,500 --> 00:16:12,840
+E crea un grafico a barre basato su quelle categorie.
+
+214
+00:16:12,850 --> 00:16:17,650
+Quindi tutte le trame che abbiamo visto prima del metodo più generale si chiama diagramma del fattore Sonesta.
+
+215
+00:16:17,970 --> 00:16:19,460
+E quindi in realtà specificare il tipo.
+
+216
+00:16:19,460 --> 00:16:24,900
+ricreare la trama violenta, puoi chiamare violino gentile e questo comincia a ricreare quella trama violenta.
+
+217
+00:16:24,900 --> 00:16:26,830
+Quindi, per esempio, se volevamo
+
+218
+00:16:26,860 --> 00:16:32,580
+Personalmente preferisco chiamare la trama stessa in modo specifico così come una S che
+
+219
+00:16:32,590 --> 00:16:38,890
+trama trama di plot plot violenta ecc. contro il chiamare il più generale fatto o il metodo della trama, ma
+
+220
+00:16:38,880 --> 00:16:41,680
+sappi che questo è disponibile per te nel caso tu voglia chiamarlo.
+
+221
+00:16:41,670 --> 00:16:42,140
+Tutto ok.
+
+222
+00:16:42,420 --> 00:16:44,140
+Questo è tutto per le trame categoriche.
+
+223
+00:16:44,130 --> 00:16:50,490
+Si spera che tu abbia visto molto del potere che è a tua disposizione e usi saggiamente questo potere, specialmente a
+
+224
+00:16:50,500 --> 00:16:54,870
+seconda di chi ti stai presentando, ad esempio, come ho detto prima di questi schemi.
+
+225
+00:16:54,900 --> 00:17:00,990
+Facile da leggere un sacco di persone di gestione li capiscono bene questi trame più avanzate quelle sono
+
+226
+00:17:01,000 --> 00:17:03,150
+più per voi per esplorare quei dati.
+
+227
+00:17:03,150 --> 00:17:03,630
+OK.
+
+228
+00:17:03,660 --> 00:17:09,990
+Spero che questa conferenza ti sia piaciuta e spero che ti sia piaciuto vedere quanto facile sia il mare a realizzare queste visualizzazioni
+
+229
+00:17:09,990 --> 00:17:10,560
+per te.
+
+230
+00:17:10,740 --> 00:17:14,670
+Tutto quello che hai fatto è essenzialmente solo una riga di codice che è davvero fantastica.
+
+231
+00:17:15,130 --> 00:17:17,580
+Ok grazie e ci vediamo alla prossima lezione

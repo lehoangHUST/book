@@ -1,0 +1,1011 @@
+1
+00:00:05,370 --> 00:00:10,070
+Hello everyone and welcome to part two of the day to cap some project solutions lecture for the night
+
+2
+00:00:10,070 --> 00:00:10,110
+.
+
+3
+00:00:10,100 --> 00:00:12,040
+When one calls capstone project.
+
+4
+00:00:12,240 --> 00:00:15,840
+Let's go ahead and jump right where we left off and go to the Jupiter notebook.
+
+5
+00:00:16,290 --> 00:00:21,270
+OK here I am at the notebook right where we left off we discovered that the months were actually missing
+
+6
+00:00:21,270 --> 00:00:27,180
+a couple of values versus nine 10 and 11 were missing and we want to do is now work with pandas to try
+
+7
+00:00:27,180 --> 00:00:32,190
+to create maybe a line plot or some other visualization that tries to take that into account.
+
+8
+00:00:32,220 --> 00:00:34,700
+So maybe we can fill in those missing data points.
+
+9
+00:00:35,140 --> 00:00:35,630
+OK.
+
+10
+00:00:35,700 --> 00:00:44,670
+We're going to go ahead and do is create a group by object called by month and say DMF group by passing
+
+11
+00:00:44,670 --> 00:00:51,740
+the month column and use count method for aggregation as asked for the directions.
+
+12
+00:00:51,780 --> 00:00:52,490
+And then it was go ahead.
+
+13
+00:00:52,490 --> 00:00:54,540
+Just check out the head of.
+
+14
+00:00:54,570 --> 00:00:56,050
+By month.
+
+15
+00:00:56,590 --> 00:00:58,040
+OK and here we can see the head of.
+
+16
+00:00:58,050 --> 00:01:04,500
+By month you'll notice that basically what happened was we counted every instance of the columns by
+
+17
+00:01:04,500 --> 00:01:10,680
+the month or we're going to go ahead and do is notice that some of the counts are different depending
+
+18
+00:01:10,740 --> 00:01:13,140
+on the actual column value.
+
+19
+00:01:13,180 --> 00:01:15,900
+And that's because some values are essentially missing.
+
+20
+00:01:15,960 --> 00:01:18,590
+When you aggregate it by month or we're going to go ahead and do.
+
+21
+00:01:18,600 --> 00:01:19,860
+Nor is even everything out.
+
+22
+00:01:19,890 --> 00:01:24,050
+It's just choose the latitude column as our value for the aggregate count.
+
+23
+00:01:24,120 --> 00:01:29,980
+Well go ahead and assume that if we had the latitude of the call the call actually took place.
+
+24
+00:01:30,000 --> 00:01:34,660
+Now we can create a simple plot of the data frame indicating the count of the cost per month and the
+
+25
+00:01:34,670 --> 00:01:42,060
+way we can do that is actually just by plotting out the columns we say by month call the column for
+
+26
+00:01:42,150 --> 00:01:45,750
+instance latitude and then say plot.
+
+27
+00:01:46,530 --> 00:01:51,240
+And here we have our month and now we've actually been able to fill in some of that missing information
+
+28
+00:01:51,660 --> 00:01:55,960
+through a essentially a fit between points eights and points at 12.
+
+29
+00:01:56,040 --> 00:02:00,260
+And then you can see the down curve maybe a little better than you would have been able to.
+
+30
+00:02:00,450 --> 00:02:06,210
+Had you done it with just a bar plot and to show you that maybe in a little more detail I'm going to
+
+31
+00:02:06,240 --> 00:02:14,430
+go in and copy this code paste it here and I'm going to go ahead and remove the hewe And then if I run
+
+32
+00:02:14,490 --> 00:02:17,460
+this we will see the code.
+
+33
+00:02:17,460 --> 00:02:18,900
+Here we have month.
+
+34
+00:02:18,900 --> 00:02:20,800
+Don't worry about this little warning.
+
+35
+00:02:21,090 --> 00:02:23,340
+But this essentially shows the same information.
+
+36
+00:02:23,340 --> 00:02:25,670
+However without the 9 10 and 11 month.
+
+37
+00:02:25,840 --> 00:02:31,650
+So you can see the drop down from month 7 two months eight and 12 hour.
+
+38
+00:02:31,650 --> 00:02:33,050
+Maybe it's a little more clear.
+
+39
+00:02:33,100 --> 00:02:37,060
+The drop down between 8 and 12 using this sort of line plot.
+
+40
+00:02:37,380 --> 00:02:42,450
+And you can actually play around with which columns you choose to plot such as maybe the township column
+
+41
+00:02:42,750 --> 00:02:50,220
+or the zip column etc to see how pronounced this drop is just kind of the area of exploratory data analysis
+
+42
+00:02:50,250 --> 00:02:56,430
+or maybe there isn't exactly correct answer unless you want to show something very specifically through
+
+43
+00:02:56,430 --> 00:03:01,050
+quantitative methods and in that case you probably would show this sort of bar plot.
+
+44
+00:03:01,050 --> 00:03:06,540
+But it's also nice just to get an idea of the trend using just this simple plot command.
+
+45
+00:03:06,540 --> 00:03:06,960
+All right.
+
+46
+00:03:07,320 --> 00:03:11,850
+Let's go ahead now and see if we can use see mourns L-M plot to create a linear fit on the number of
+
+47
+00:03:11,850 --> 00:03:13,000
+calls per month.
+
+48
+00:03:13,050 --> 00:03:17,750
+And keep in mind you may need to reset the index to a column in order to do that.
+
+49
+00:03:17,790 --> 00:03:20,870
+What I'm going to go out and do is say this.
+
+50
+00:03:20,880 --> 00:03:27,330
+I'm going to say S.A. thought L.M. plot for that linear model plot from Seaborn and I want my X if we
+
+51
+00:03:27,330 --> 00:03:35,420
+go out and check this out to be month and we can go in now select maybe township's for the y axis.
+
+52
+00:03:35,520 --> 00:03:39,690
+You can also select latitude or really any other column if you want to kind of experiment around with
+
+53
+00:03:39,690 --> 00:03:42,460
+this so essentially just counts.
+
+54
+00:03:43,680 --> 00:03:48,860
+And then the data is going to be the by month.
+
+55
+00:03:49,950 --> 00:03:52,890
+But notice here I said X is the month column.
+
+56
+00:03:52,890 --> 00:04:00,480
+If we take a look back at the by month we don't actually have a month column the month was the index
+
+57
+00:04:00,490 --> 00:04:00,540
+.
+
+58
+00:04:00,570 --> 00:04:05,370
+So what I'm going to go to do is reset the index to month in order for this to work
+
+59
+00:04:08,770 --> 00:04:11,070
+and way to make it even more clear.
+
+60
+00:04:11,070 --> 00:04:15,720
+Let me just show you what this actually looks like.
+
+61
+00:04:16,350 --> 00:04:21,750
+If I reset the index or the by month I will make month into a new column and that allows Seaborn to
+
+62
+00:04:21,750 --> 00:04:26,630
+actually access this information instead of setting it to the index.
+
+63
+00:04:26,880 --> 00:04:29,110
+And that way I can actually pass and month here's a string.
+
+64
+00:04:29,130 --> 00:04:31,200
+Otherwise Seaborn would get confused.
+
+65
+00:04:31,290 --> 00:04:39,060
+And that's what we had to use this recent index to the column and then we get the linear model fit and
+
+66
+00:04:39,060 --> 00:04:43,980
+we can see that generally as far as what Seymore it kind of plots out in this model that the number
+
+67
+00:04:43,980 --> 00:04:47,640
+of calls goes down from 0 to month 12.
+
+68
+00:04:47,640 --> 00:04:52,850
+Now keep in mind seaborne doesn't have enough information to realize that this is by month.
+
+69
+00:04:52,980 --> 00:04:57,380
+And so that 13 and 14 shouldn't actually exist or continue.
+
+70
+00:04:57,420 --> 00:05:01,800
+This would actually be seasonal data and in that case probably a linear model is actually the best fit
+
+71
+00:05:01,890 --> 00:05:07,530
+and you can see that seaborne countries show this with this shaded area indicating error and the error
+
+72
+00:05:07,560 --> 00:05:12,360
+basically grows as you go into these months where there's less information known which actually makes
+
+73
+00:05:12,360 --> 00:05:15,540
+a lot of sense to have information about nine 10 or 11 months.
+
+74
+00:05:15,900 --> 00:05:21,770
+And you can see this trend where it goes down starts to come up and then crashes that month eight that's
+
+75
+00:05:21,870 --> 00:05:24,540
+something you may want to explore later on in the data.
+
+76
+00:05:24,540 --> 00:05:30,170
+Well let's go ahead and just leave it at that for now and explore a little bit more about the date information
+
+77
+00:05:30,180 --> 00:05:30,860
+.
+
+78
+00:05:30,930 --> 00:05:31,210
+OK.
+
+79
+00:05:31,220 --> 00:05:36,920
+We wanted to do next was creating a new column called date that contains the date from the time stamp
+
+80
+00:05:36,930 --> 00:05:42,590
+column and you'll need to use apply along with the date close parentheses method.
+
+81
+00:05:42,600 --> 00:05:50,460
+Let me go in and show you what this actually means by dates by showing you an example of the time stamp
+
+82
+00:05:50,460 --> 00:05:51,790
+column.
+
+83
+00:05:51,920 --> 00:05:58,860
+I'm going to go ahead and just grab the first instance of the time stamp column and call one of those
+
+84
+00:05:58,880 --> 00:06:00,000
+objects.
+
+85
+00:06:00,010 --> 00:06:00,320
+All right.
+
+86
+00:06:00,320 --> 00:06:06,180
+This is a time stamp object and it's a little different than actually a date object.
+
+87
+00:06:06,240 --> 00:06:13,520
+And the reason for that is if I call t dates off of it I now get a date object.
+
+88
+00:06:13,530 --> 00:06:15,750
+And this just shows the dates information.
+
+89
+00:06:15,750 --> 00:06:20,940
+It no longer has the time information and that's good because what we're going to want to do later on
+
+90
+00:06:20,940 --> 00:06:25,440
+is create a plot that looks like this just the number of calls per date.
+
+91
+00:06:25,440 --> 00:06:31,760
+We don't want to flood this information with number of calls her every minute every hour.
+
+92
+00:06:31,750 --> 00:06:32,400
+All right.
+
+93
+00:06:32,670 --> 00:06:45,060
+That means let's go ahead and say ZF date is equal to DMF of time stamp.
+
+94
+00:06:45,180 --> 00:06:49,760
+And just like we did before I'm going to go in and apply this Fil-Am the expression I will take that
+
+95
+00:06:49,760 --> 00:06:55,320
+time see and return to the dates.
+
+96
+00:06:55,350 --> 00:06:57,620
+I go ahead and apply that.
+
+97
+00:06:57,620 --> 00:07:05,490
+Now if I take a look at ZF head and go all the way to the right here.
+
+98
+00:07:05,610 --> 00:07:11,330
+Now I have this nice date column which is driven off of this time stamp column and then when I want
+
+99
+00:07:11,370 --> 00:07:16,340
+to go ahead and do is grouped by the state column with the count aggregate.
+
+100
+00:07:16,430 --> 00:07:18,590
+So I'm going to say diff date.
+
+101
+00:07:18,670 --> 00:07:19,070
+Whoops.
+
+102
+00:07:19,110 --> 00:07:24,350
+Actually I want to say DFA group by passen date.
+
+103
+00:07:24,360 --> 00:07:26,380
+That's what I want to buy.
+
+104
+00:07:26,460 --> 00:07:32,270
+I'm going to go ahead and counts and then let's just go in and see the head of the state of frame what
+
+105
+00:07:32,270 --> 00:07:33,760
+this looks like.
+
+106
+00:07:34,470 --> 00:07:35,150
+OK.
+
+107
+00:07:35,250 --> 00:07:41,090
+And this essentially counts all the instances her date for the actual date that occurred.
+
+108
+00:07:41,100 --> 00:07:46,440
+Again notice that there's some difference between some of these column values and that's just basically
+
+109
+00:07:46,470 --> 00:07:53,130
+indicating that you were missing some information for instance out of the 300 in 96 calls on December
+
+110
+00:07:53,150 --> 00:07:55,020
+11th are the penny how you want to read that.
+
+111
+00:07:55,130 --> 00:08:03,590
+Whether it's yet to be December 11th you only had 333 with the zip code versus 396 we had the latitude
+
+112
+00:08:03,620 --> 00:08:04,140
+.
+
+113
+00:08:04,560 --> 00:08:07,440
+Let's go ahead and just choose one of these columns.
+
+114
+00:08:07,440 --> 00:08:12,810
+It's kind of arbitrary since they're actually all pretty close to number but I'm going to go ahead and
+
+115
+00:08:13,640 --> 00:08:21,120
+grab the latitude column and you can experiment by grabbing different columns how they compare.
+
+116
+00:08:21,120 --> 00:08:26,430
+And here you have the latitude column which now basically gives me a date and the count of number of
+
+117
+00:08:26,430 --> 00:08:29,740
+calls where we knew the latitude and then I can go ahead.
+
+118
+00:08:29,740 --> 00:08:33,880
+Just plot this out and it gets me a plot that looks like this.
+
+119
+00:08:33,960 --> 00:08:41,340
+And notice we get some of these labels overlapping and what we can do is say peel t Titely out as we've
+
+120
+00:08:41,340 --> 00:08:46,710
+shown before in order to actually kind of fix that index and get something that looks a little nicer
+
+121
+00:08:46,710 --> 00:08:47,460
+.
+
+122
+00:08:47,460 --> 00:08:48,200
+All right.
+
+123
+00:08:48,210 --> 00:08:52,980
+And then when we actually notice here is it looks like there are some significant spikes in February
+
+124
+00:08:53,300 --> 00:08:59,270
+and a little bit in March and then we get some downturns or some bottom out spikes in May and maybe
+
+125
+00:08:59,310 --> 00:09:00,020
+late August.
+
+126
+00:09:00,020 --> 00:09:01,520
+A little hard to tell here.
+
+127
+00:09:01,950 --> 00:09:06,720
+And you can go ahead and mess around with this plot or extend the plot to try to get a little more information
+
+128
+00:09:06,720 --> 00:09:08,170
+about the actual dates.
+
+129
+00:09:08,510 --> 00:09:13,230
+Well we're going to go ahead and do now is recreate this plot to create three separate plots with each
+
+130
+00:09:13,230 --> 00:09:15,950
+plot representing a reason for the 911 call.
+
+131
+00:09:16,010 --> 00:09:22,120
+Back to the reason data frame or excuse me call Mishu what I mean by that.
+
+132
+00:09:22,480 --> 00:09:25,100
+So if I scroll down here I want to recreate this plot.
+
+133
+00:09:25,160 --> 00:09:31,420
+So here we have one plot with only the traffic calls only the fire calls and then only the M-S calls
+
+134
+00:09:32,820 --> 00:09:39,120
+and we we do is actually a very similar process to what we did here.
+
+135
+00:09:40,190 --> 00:09:45,480
+We're going to copy and paste this but instead of the entire data frame I'm going to use conditional
+
+136
+00:09:45,480 --> 00:09:48,790
+selection to actually do the group by.
+
+137
+00:09:49,350 --> 00:09:52,760
+So I'm going to say DSF where ATF reason
+
+138
+00:09:55,500 --> 00:10:03,150
+is equal to the first one we can just go ahead and say traffic to us there and then we go ahead and
+
+139
+00:10:03,140 --> 00:10:09,880
+plot this and there we have the plot for traffic and if you wanted to you could have also said Appeal
+
+140
+00:10:09,880 --> 00:10:17,020
+t the title and indicated you want the title to be traffic and now we can actually just use the same
+
+141
+00:10:17,020 --> 00:10:19,810
+code to perform the other charts.
+
+142
+00:10:19,810 --> 00:10:24,450
+So if we wanted fire we just replaced this with fire as a reason.
+
+143
+00:10:25,000 --> 00:10:30,610
+And now we're able to take advantage of all the work we just did previously to create these three separate
+
+144
+00:10:30,610 --> 00:10:31,390
+plots.
+
+145
+00:10:31,390 --> 00:10:35,770
+And you can go ahead and kind of explore them on your own and see if you can find differences between
+
+146
+00:10:35,830 --> 00:10:41,050
+maybe a number of calls or a frequency of calls during the dates.
+
+147
+00:10:41,050 --> 00:10:45,910
+For instance it might be interesting to see how weather would affect fire based off the month or the
+
+148
+00:10:45,910 --> 00:10:46,680
+day.
+
+149
+00:10:47,110 --> 00:10:49,840
+You can see there's some interesting spikes there.
+
+150
+00:10:49,840 --> 00:10:50,230
+OK.
+
+151
+00:10:50,320 --> 00:10:51,550
+Moving along.
+
+152
+00:10:51,550 --> 00:10:56,140
+Let's finally go to creating heat maps with Seaborn and our data.
+
+153
+00:10:56,410 --> 00:11:01,420
+And first we're going to need to do is restructure that data frame so that the columns become the hours
+
+154
+00:11:01,480 --> 00:11:04,080
+and the index becomes the day of the week.
+
+155
+00:11:04,130 --> 00:11:09,940
+There's actually lots of ways to do this but what I would recommend trying to do is using group by with
+
+156
+00:11:09,970 --> 00:11:13,540
+a new method that I wanted you to discover called the unstacked method.
+
+157
+00:11:13,540 --> 00:11:17,470
+And there's a link here to the documentation and you can refer to the solutions if you get stuck on
+
+158
+00:11:17,470 --> 00:11:18,240
+this.
+
+159
+00:11:18,310 --> 00:11:21,820
+Let me go ahead and break down how to actually make something that looks like this.
+
+160
+00:11:21,820 --> 00:11:26,400
+This heat map remember back to the cluster map and the heat map lectures.
+
+161
+00:11:26,410 --> 00:11:33,280
+We need our data to be in what's known as matrix form where every single cell converts back to a value
+
+162
+00:11:34,120 --> 00:11:38,440
+representing the value at the column and the index itself.
+
+163
+00:11:38,470 --> 00:11:40,980
+Meaning our zero on Fridays.
+
+164
+00:11:40,990 --> 00:11:42,820
+This is how many calls occurred.
+
+165
+00:11:43,240 --> 00:11:47,300
+OK let's go ahead and learn how to use the unstacked method.
+
+166
+00:11:47,310 --> 00:11:50,980
+Then there's some examples here in the documentation which hopefully you may have discovered on your
+
+167
+00:11:50,980 --> 00:11:51,430
+own.
+
+168
+00:11:51,640 --> 00:11:52,560
+But he got stuck on it.
+
+169
+00:11:52,570 --> 00:11:56,310
+No worries because I'm going to show you how to do it right now.
+
+170
+00:11:56,440 --> 00:11:59,320
+We're going to go ahead and say DF group by.
+
+171
+00:11:59,740 --> 00:12:03,580
+And I'm going to have to group by a list.
+
+172
+00:12:03,580 --> 00:12:10,070
+In this case because I don't want to just group by day of week I also want to group by hour
+
+173
+00:12:14,470 --> 00:12:21,070
+and then when I'm going to go ahead and do is say count this just go ahead and take a look at what this
+
+174
+00:12:21,070 --> 00:12:25,650
+looks like and this basically allows me to group by and create a multilevel index.
+
+175
+00:12:25,690 --> 00:12:31,330
+Day of week and then the hour and then just the counts for each column here.
+
+176
+00:12:31,390 --> 00:12:39,250
+So I have this multi-level index what I can do now is just call a singular column off of it maybe reason
+
+177
+00:12:39,310 --> 00:12:40,270
+we can go ahead and do that
+
+178
+00:12:43,690 --> 00:12:45,960
+and now I have this multilevel index.
+
+179
+00:12:46,090 --> 00:12:52,570
+And the key to the unstacked method is it basically allows you to unstacked this and make this into
+
+180
+00:12:52,570 --> 00:12:54,840
+a matrix form.
+
+181
+00:12:56,410 --> 00:12:58,230
+And now I have this matrix form.
+
+182
+00:12:58,240 --> 00:13:04,810
+So the steps were grouping by multiple columns creating that multilevel index and then being able to
+
+183
+00:13:04,810 --> 00:13:10,870
+use and stack to essentially unstacked that index and create one of them to be the columns and one of
+
+184
+00:13:10,870 --> 00:13:12,970
+them to be the index.
+
+185
+00:13:12,970 --> 00:13:13,340
+All right.
+
+186
+00:13:13,420 --> 00:13:17,620
+Don't worry if you got stuck on this or had trouble with this this is actually very kind of advanced
+
+187
+00:13:17,620 --> 00:13:19,050
+method in order to do this.
+
+188
+00:13:19,060 --> 00:13:23,620
+There's other methods you could have tried such as using a pivot or a pivot table of Pandurs kind of
+
+189
+00:13:23,620 --> 00:13:27,230
+up to you but again don't worry too much if you are able to do this.
+
+190
+00:13:27,270 --> 00:13:32,620
+It's kind of comes a lot with just practice experience and being able to look stuff up in the documentation
+
+191
+00:13:32,630 --> 00:13:33,280
+.
+
+192
+00:13:33,980 --> 00:13:40,000
+Well will go ahead and call this entire data frame day hour and now that we have that data frame I can
+
+193
+00:13:40,000 --> 00:13:44,250
+easily create heat maps and this part will actually be pretty straightforward.
+
+194
+00:13:44,320 --> 00:13:50,880
+We just call S and S heat map passing day hour and that's essentially all we have to do.
+
+195
+00:13:50,890 --> 00:13:57,130
+Now we get day of week versus the hour and then the number of calls as the color indicator and we can
+
+196
+00:13:57,130 --> 00:14:04,240
+continue to try to make this look more like the solutions by saying See map passing in viridis.
+
+197
+00:14:04,240 --> 00:14:09,370
+And now we get the same color scheme as we do in the solutions and we can make the figure a little bigger
+
+198
+00:14:09,400 --> 00:14:15,250
+by saying Piel tief that figure and adding in Fig size as an argument.
+
+199
+00:14:16,780 --> 00:14:19,000
+And now we have basically what was in the solutions.
+
+200
+00:14:19,120 --> 00:14:24,810
+And we can also create a cluster map with this data frame in very much the same manner by saying s and
+
+201
+00:14:24,810 --> 00:14:26,950
+s cluster map.
+
+202
+00:14:26,950 --> 00:14:34,000
+And again just passing in the data frame we quit created our See map for this
+
+203
+00:14:36,850 --> 00:14:39,010
+and that creates the same cluster map.
+
+204
+00:14:39,010 --> 00:14:43,990
+If you're confused on how to actually what's actually going on on this line Feel free to post to the
+
+205
+00:14:43,990 --> 00:14:44,770
+Q&A forums.
+
+206
+00:14:44,770 --> 00:14:46,900
+And I'm happy to explain this a little more.
+
+207
+00:14:46,900 --> 00:14:51,520
+But just keep in mind this is kind of advanced and if you get stuck Don't worry if you reference the
+
+208
+00:14:51,520 --> 00:14:54,480
+solutions moving along.
+
+209
+00:14:54,490 --> 00:14:59,230
+What we want is to do is repeat these same plots and operations for a data frame that shows the month
+
+210
+00:14:59,320 --> 00:15:03,640
+as the column I'm going to go ahead and just copy and paste this from the solutions because it's essentially
+
+211
+00:15:03,640 --> 00:15:06,120
+the same code as we just did above.
+
+212
+00:15:06,130 --> 00:15:12,730
+But in this case instead of saying for instance the hour we just set the month and if we go ahead and
+
+213
+00:15:12,730 --> 00:15:13,960
+check that out.
+
+214
+00:15:14,140 --> 00:15:18,900
+Now we have day month and we essentially just make the same plots again.
+
+215
+00:15:19,060 --> 00:15:28,110
+So we just go up here call it map scroll down a bit instead of day hour.
+
+216
+00:15:28,120 --> 00:15:29,320
+I want to use day month
+
+217
+00:15:32,590 --> 00:15:33,290
+and that gets me.
+
+218
+00:15:33,310 --> 00:15:38,020
+This heat map and if I want to create a cluster map off of this I can do the same thing except just
+
+219
+00:15:38,020 --> 00:15:40,200
+call cluster.
+
+220
+00:15:40,900 --> 00:15:42,810
+And this creates a cluster map.
+
+221
+00:15:42,910 --> 00:15:47,890
+So now I can actually explore the data and see maybe what hours of the week during what days of the
+
+222
+00:15:47,890 --> 00:15:51,160
+week are the most popular for night one calls to occur.
+
+223
+00:15:51,160 --> 00:15:56,020
+And if we just take a kind of a brief look at this it makes sense that not a whole lot of calls are
+
+224
+00:15:56,020 --> 00:16:01,170
+happening between hours of 0 and 5 because that's essentially midnight to 5:00 in the morning.
+
+225
+00:16:01,180 --> 00:16:02,350
+So everyone's asleep.
+
+226
+00:16:02,500 --> 00:16:07,090
+Most of the criminal activity or reasons for and I don't one calls such as traffic accidents m mess
+
+227
+00:16:07,180 --> 00:16:11,980
+or fire is not really that much criminal activity in this dataset.
+
+228
+00:16:12,010 --> 00:16:14,410
+It's mostly fire M-S and traffic reasons.
+
+229
+00:16:14,410 --> 00:16:17,330
+Those all tend to occur during the daytime daytime.
+
+230
+00:16:17,350 --> 00:16:23,320
+And what's interesting is that not too many of them tend to occur on Sundays and Saturdays and you can
+
+231
+00:16:23,320 --> 00:16:27,940
+actually see this a little clearer with the cluster maps so this will actually create clusters where
+
+232
+00:16:27,940 --> 00:16:34,450
+it thinks there's low amounts of calls versus high amounts of calls and sometimes what's nice for cluster
+
+233
+00:16:34,450 --> 00:16:42,490
+maps is to choose something like the cool warm color mapping in order to really see this.
+
+234
+00:16:42,760 --> 00:16:46,750
+And sometimes this is a little more clear of a color scheme for people to actually get the groupings
+
+235
+00:16:46,750 --> 00:16:47,850
+in their minds.
+
+236
+00:16:48,220 --> 00:16:53,080
+It looks like we have high calls during one's day Monday and Tuesday and maybe Thursday and Friday during
+
+237
+00:16:53,080 --> 00:16:55,210
+the hours 8 16 and 17.
+
+238
+00:16:55,210 --> 00:17:01,270
+So a little more towards the evening it tends to look like versus low call amounts are during Maybe
+
+239
+00:17:01,330 --> 00:17:03,700
+Saturday and Sunday in the morning.
+
+240
+00:17:03,700 --> 00:17:04,290
+OK.
+
+241
+00:17:04,570 --> 00:17:09,400
+And then we just repeated those operations per month and you can kind of compare summer months versus
+
+242
+00:17:09,400 --> 00:17:14,410
+winter months here and you can continue exploring the data how you see fit and that's basically all
+
+243
+00:17:14,410 --> 00:17:16,350
+there was to this project.
+
+244
+00:17:16,420 --> 00:17:17,200
+I hope you enjoyed it.
+
+245
+00:17:17,200 --> 00:17:18,420
+Hope you found it interesting.
+
+246
+00:17:18,820 --> 00:17:23,650
+Again don't feel bad if you had to look up the solutions for this kind of complex one liner here.
+
+247
+00:17:23,710 --> 00:17:28,480
+You can always feel free to post in Q&A forums if you need any clarification on what was actually going
+
+248
+00:17:28,480 --> 00:17:29,680
+on there.
+
+249
+00:17:29,680 --> 00:17:30,250
+All right.
+
+250
+00:17:30,370 --> 00:17:32,780
+Feel free to post for any questions whatsoever.
+
+251
+00:17:32,860 --> 00:17:35,320
+And I will see you at the next lecture.
+
+252
+00:17:35,320 --> 00:17:36,100
+Thanks everyone.
+
+253
+00:17:36,100 --> 00:17:37,570
+Hope you enjoyed the project.

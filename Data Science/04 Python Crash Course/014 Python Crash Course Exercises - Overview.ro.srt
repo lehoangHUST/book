@@ -1,0 +1,215 @@
+1
+00:00:05,340 --> 00:00:11,400
+Bună ziua tuturor și vă urez bun venit la cursul de antrenament Python privind cursul de antrenament în această lecție, vom obține
+
+2
+00:00:11,400 --> 00:00:15,560
+o scurtă trecere în revistă a notebook-ului de exerciții și modul de abordare a exercițiului.
+
+3
+00:00:15,570 --> 00:00:18,250
+Lasă-mă să merg mai departe și să-ți arăt unde să găsești notebook-ul pentru exerciții.
+
+4
+00:00:18,530 --> 00:00:25,490
+Bine, aici sunt la depozitul dvs., în dosarul Python crash course, veți vedea trei notebook-uri.
+
+5
+00:00:25,510 --> 00:00:30,760
+Cursul de prăbușire Python, care conține notele pe care tocmai le-am prezentat în seria de lecții de patru părți.
+
+6
+00:00:30,930 --> 00:00:35,380
+Apoi, aveți exerciții de coliziune Python IPY și B.
+
+7
+00:00:35,550 --> 00:00:39,690
+Acesta este fișierul notebook pe care o vom folosi pentru exerciții și veți vedea notebook-ul
+
+8
+00:00:39,780 --> 00:00:40,280
+soluției.
+
+9
+00:00:40,290 --> 00:00:46,580
+Aici intrați și faceți clic pe notebook-ul de exerciții, ar trebui să vedeți un notebook care arată astfel.
+
+10
+00:00:46,590 --> 00:00:50,850
+Și din nou, acesta este doar un exercițiu opțional de testare a înțelegerii dvs. de bază Python.
+
+11
+00:00:50,850 --> 00:00:55,920
+Dacă găsiți acest exercițiu extrem de provocator, probabil că nu sunteți încă pregătiți pentru restul cursului și
+
+12
+00:00:55,940 --> 00:00:58,700
+nu aveți suficientă experiență de programare pentru a continua.
+
+13
+00:00:58,900 --> 00:01:03,300
+Și aș sugera să luați un alt curs mai bine orientat spre începători compleți,
+
+14
+00:01:03,300 --> 00:01:06,030
+cum ar fi tabăra de boot python completă.
+
+15
+00:01:06,160 --> 00:01:10,230
+Cu toate acestea, aceste exerciții ar trebui să fie destul de simple și simple.
+
+16
+00:01:10,230 --> 00:01:14,350
+De exemplu, această primă vă întreabă ce este 7 la puterea lui.
+
+17
+00:01:14,460 --> 00:01:20,790
+Deci, sperăm că puteți vedea răspunsul aici ca ieșire pe care ați veni la această celulă sau pe orice ID pe care doriți să
+
+18
+00:01:20,790 --> 00:01:23,900
+îl utilizați și folosiți Python pentru a răspunde la această întrebare.
+
+19
+00:01:23,910 --> 00:01:29,340
+Deci, trebuie doar să vă amintiți bine cum faceți o putere exponențială în Python.
+
+20
+00:01:29,340 --> 00:01:34,110
+Vă va continua să vă adresați alte întrebări, cum ar fi împărțirea șirului într-o listă, astfel încât, sperăm, să
+
+21
+00:01:34,110 --> 00:01:38,430
+vă amintiți cum să împărțiți un șir cu o anumită metodă într-o listă și așa mai departe.
+
+22
+00:01:38,430 --> 00:01:39,570
+Deci, dă-i drumul.
+
+23
+00:01:39,580 --> 00:01:42,030
+Sunt exemple de ieșire din ceea ce ar trebui să obțineți.
+
+24
+00:01:42,210 --> 00:01:45,540
+Apoi, aveți o întrebare care întreabă care este diferența principală dintre o tuplă și o listă.
+
+25
+00:01:45,540 --> 00:01:49,050
+În acest fel poți să răspunzi cu voce tare nu sunt scrierile care cred că nu există cod
+
+26
+00:01:49,050 --> 00:01:50,650
+pentru acest lucru doar întreb ce diferențe.
+
+27
+00:01:50,850 --> 00:01:55,290
+În continuare vreau să creați o funcție care captează domeniul site-ului de e-mail de la un șir și un utilizator
+
+28
+00:01:55,290 --> 00:01:56,850
+de formă la domeniul dot com.
+
+29
+00:01:56,850 --> 00:02:02,490
+Deci, dacă aveți o funcție, spuneți ceva ca domeniu, ar trebui să puteți trece într-un șir
+
+30
+00:02:02,550 --> 00:02:06,150
+de acest format și să luați acest domeniu dot com.
+
+31
+00:02:06,180 --> 00:02:08,640
+Așa că intrați și creați un fel de funcție.
+
+32
+00:02:08,700 --> 00:02:14,540
+Puteți ieși și numiți domeniu care primește un șir de adrese de poștă electronică și returnează domeniul
+
+33
+00:02:14,540 --> 00:02:18,850
+primit de pe site-ul web pe care îl găzduiește acel e-mail.
+
+34
+00:02:18,930 --> 00:02:23,910
+Apoi, veți merge mai departe și creați o funcție de bază care se întoarce adevărat dacă cuvântul câine este conținut
+
+35
+00:02:23,910 --> 00:02:25,050
+în fluxul de intrare.
+
+36
+00:02:25,200 --> 00:02:29,250
+Și nu vreau să vă faceți griji cu privire la cazurile de margine precum punctuația fiind atașată
+
+37
+00:02:29,670 --> 00:02:31,620
+cuvântului câine, dar luați în considerare capitalizarea.
+
+38
+00:02:31,620 --> 00:02:35,990
+Din nou, nu avem de-a face cu fiecare caz de margine pe care îl puteți găsi.
+
+39
+00:02:36,000 --> 00:02:42,690
+Doar ideea de bază a căutării unui șir pentru un cuvânt, atunci vrem să creați o funcție care să poată
+
+40
+00:02:42,830 --> 00:02:46,260
+determina numărul de repetări a cuvântului câine într-un șir.
+
+41
+00:02:46,260 --> 00:02:48,220
+Și din nou puteți ignora cazurile de margine.
+
+42
+00:02:48,390 --> 00:02:52,290
+De exemplu, șirul acest câine este mai rapid decât celălalt tip de câine.
+
+43
+00:02:52,410 --> 00:02:58,840
+DAGA Pierce de două ori, astfel încât numărul câinilor se întoarce să meargă pentru a face o funcție numită Câinii de rând.
+
+44
+00:02:58,930 --> 00:03:03,510
+Ei nu doresc să utilizați expresii lambda și funcția Filcher pentru a filtra cuvintele dintr-o listă care
+
+45
+00:03:03,510 --> 00:03:05,080
+nu începe cu litera S.
+
+46
+00:03:05,100 --> 00:03:09,770
+De exemplu, dacă obțineți o secvență din această listă, aceasta ar trebui să fie filtrată până la această listă.
+
+47
+00:03:09,810 --> 00:03:11,080
+Supă și salată.
+
+48
+00:03:11,670 --> 00:03:13,230
+Și aici este o problemă finală.
+
+49
+00:03:13,260 --> 00:03:17,700
+Acum puteți să mergeți înainte și să citiți descrierea, dar în esență veți merge și veți
+
+50
+00:03:17,820 --> 00:03:20,970
+completa această funcție pentru a rezolva această problemă finală mică aici.
+
+51
+00:03:21,030 --> 00:03:27,090
+Și acest lucru implică unele dacă elefant altceva declarații, împreună cu crearea unei funcții, dacă aveți orice întrebări, nu ezitați să postați
+
+52
+00:03:27,090 --> 00:03:30,350
+forumurile Q &amp; A și vom fi bucuroși să vă ajutăm.
+
+53
+00:03:30,390 --> 00:03:31,120
+Multumesc tuturor.
+
+54
+00:03:31,170 --> 00:03:35,090
+Și următorul pas este de a găsi soluții la acest exercițiu

@@ -1,0 +1,911 @@
+1
+00:00:05,430 --> 00:00:06,300
+Herkese merhaba.
+
+2
+00:00:06,300 --> 00:00:09,050
+Veri çerçevesinin 2. Bölüm dersine hoş geldiniz.
+
+3
+00:00:09,090 --> 00:00:14,310
+Son kez, temel bir veri çerçevesi oluşturma ve bu veri çerçevesinden bilgi kapmak üzerine durduk.
+
+4
+00:00:14,790 --> 00:00:19,760
+Şimdi koşullu seçime ve veri çerçevesinin bazı çoklu dizin bölümlerine bakacağız.
+
+5
+00:00:20,430 --> 00:00:23,120
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+6
+00:00:23,520 --> 00:00:23,970
+Tamam.
+
+7
+00:00:23,970 --> 00:00:25,940
+İşte Jüpiter defterine dönüyoruz.
+
+8
+00:00:25,950 --> 00:00:28,460
+Geçen seferki aynı veri çerçevesini kullanacağım.
+
+9
+00:00:28,470 --> 00:00:35,600
+Shurmur, sadece numpad S &amp; P pin PD import Rand ve koltuğu 101'e ayarladıktan sonra veri çerçevesinin
+
+10
+00:00:35,600 --> 00:00:38,280
+kira olduğunu ve 5'in geldiğini söylemeliydik.
+
+11
+00:00:38,460 --> 00:00:41,270
+Sonra burada veri çerçevemiz var.
+
+12
+00:00:42,410 --> 00:00:45,240
+Tamam, içeri girip şartlı seçim hakkında konuşalım.
+
+13
+00:00:45,360 --> 00:00:50,580
+Pantasess'in çok önemli bir özelliği, parantez gösterimini kullanarak koşullu seçim yapma
+
+14
+00:00:50,690 --> 00:00:57,570
+becerisidir ve bu, örneğin veri çerçevesinin sıfırdan büyük olduğu sorulması gibi veri çerçevesine karşı bir
+
+15
+00:00:57,930 --> 00:01:01,070
+karşılaştırma operatörü için PI'ye çok benzer olacak.
+
+16
+00:01:01,080 --> 00:01:06,420
+sıfırdan büyükse sıfırdan büyük değilse yanlış döndüren bir veri alacağım.
+
+17
+00:01:06,420 --> 00:01:10,620
+Boolean değerlerinin arkasından, o noktadaki veri çerçevesi değeri
+
+18
+00:01:10,740 --> 00:01:16,200
+Ve bu, tüm kiracıya uygulanan aynı koşullu seçime çok benzemektedir, zira bu
+
+19
+00:01:16,200 --> 00:01:18,480
+durumda çerçeve durumunu pand yapıyoruz.
+
+20
+00:01:18,480 --> 00:01:27,270
+Ve bunun gibi devam edebilir ve f'nin DFA'ya sıfırdan büyük olduğuna inanıyoruz demektir.
+
+21
+00:01:27,960 --> 00:01:29,590
+Ve sonra Boulia'yı söyle.
+
+22
+00:01:29,610 --> 00:01:32,470
+Devam edin ve bunu kontrol edin.
+
+23
+00:01:32,690 --> 00:01:39,120
+boolean veri çerçevemiz var ve bunu orijinal veri çerçevemize ayraç
+
+24
+00:01:39,120 --> 00:01:48,750
+işaretiyle gönderdiysek sonuçların doğru olduğu ve Knoll'ın veya yanlış olduğuna göre n'nin sonucundan çıkacağız.
+
+25
+00:01:48,750 --> 00:01:49,820
+Ve burada
+
+26
+00:01:49,980 --> 00:01:55,200
+Ve koşullu seçimi bir veri çerçevesiyle birlikte kullanmanın yolu.
+
+27
+00:01:55,200 --> 00:01:58,830
+Şimdi genelde muhtemelen bunu iki adıma ayırmayacaksın.
+
+28
+00:01:58,890 --> 00:02:00,230
+Sadece söylerdin.
+
+29
+00:02:00,270 --> 00:02:05,760
+Sonra parantez içinde sıfırdan büyük DF gibi bir şey olur ve bu sonucu elde edersiniz.
+
+30
+00:02:06,030 --> 00:02:12,340
+Bir veri çerçevesi ve bir karşılaştırma operatörüne karşı bu tür bir işlem yaygın değildir.
+
+31
+00:02:12,370 --> 00:02:17,220
+çerçevesinde sadece geçmek yerine Knolles'a dönecek olanın yerine, yalnızca
+
+32
+00:02:17,220 --> 00:02:23,700
+bir alt kümenin satırlarını veya sütunlarını döndürmek olmasıdır. koşulların doğru olduğu veri çerçevesinin
+
+33
+00:02:23,700 --> 00:02:28,970
+Yapacağınız şey, bir satır veya sütun değerinde geçireceğiniz tüm veri
+
+34
+00:02:28,980 --> 00:02:33,720
+Şimdi, orijinal veri çerçevemize bakamayacağım için ne ifade ettiğimi gösteren bir örnek gösterelim.
+
+35
+00:02:34,780 --> 00:02:38,830
+Burada A-3 satırları ve W-Z sütunları var.
+
+36
+00:02:39,090 --> 00:02:42,900
+Ne yapacağım ve ne yapacağımı belirtmek.
+
+37
+00:02:42,990 --> 00:02:46,580
+W'nin sıfırdan büyük.
+
+38
+00:02:46,620 --> 00:02:49,470
+Ve bir seriyi geri aldığımı fark ettim.
+
+39
+00:02:49,470 --> 00:02:54,770
+True true false true true ve bu gerçek index ile bağlantılıdır.
+
+40
+00:02:54,780 --> 00:03:01,390
+W sütun değerleriyle karşılık geldiğini ve endeks c değerinin aslında sıfırdan küçük olduğunu görürüm.
+
+41
+00:03:01,390 --> 00:03:03,980
+Ve W sütununa bakarsam, bunun
+
+42
+00:03:04,110 --> 00:03:06,710
+Yani sıfırdan büyük olduğu için False döndürür.
+
+43
+00:03:06,750 --> 00:03:13,380
+Şimdi, bir sütun değerine dayanan satırları filtrelemek için satırlara karşılık gelen bu boolean değer serisini
+
+44
+00:03:13,380 --> 00:03:19,470
+kullanabilir ve bunun anlamı, DF DFW sıfırdan büyük bir şey söylemek için parantez gösterimini
+
+45
+00:03:19,470 --> 00:03:26,430
+kullanarak bir veri çerçevesine geçersem sadece bunun gerçek olacağı anlamına gelen satırları geri alıyorum, sadece abd
+
+46
+00:03:26,720 --> 00:03:32,670
+ve e satırlarını geri alıyorum, çünkü burada yanlış olduğu için C satırını döndürmüyor.
+
+47
+00:03:32,740 --> 00:03:35,340
+Devam et ve çalıştır ve bunun nasıl bir şey olduğunu görün.
+
+48
+00:03:35,340 --> 00:03:36,120
+Harika.
+
+49
+00:03:36,130 --> 00:03:39,950
+Ve şimdi bir dizi geçerken bu değerleri artık alamıyorum.
+
+50
+00:03:40,050 --> 00:03:44,880
+Aslında sütunları temel alan koşullarda geçerken tüm veri çerçevesinde bu tür
+
+51
+00:03:44,880 --> 00:03:47,470
+koşulları uygularken yalnızca bu değerleri almazsınız.
+
+52
+00:03:47,550 --> 00:03:52,580
+Sadece dizi değerleri elde edeceksiniz, yani yalnızca satırların doğru olduğu ortaya çıkacaktır.
+
+53
+00:03:52,650 --> 00:03:57,120
+Ve bu, bu ders boyunca en çok kullanacağımız koşullu seçim türüdür.
+
+54
+00:03:58,170 --> 00:04:01,970
+Şimdi bu noktayı eve götürmek için içeri girip birkaç örnek daha göstereceğiz.
+
+55
+00:04:01,980 --> 00:04:09,010
+Veri çerçevemdeki z'nin sıfırdan küçük olduğu tüm satırları kapmak istediğimi varsayalım.
+
+56
+00:04:09,150 --> 00:04:16,500
+Bu yüzden DMF diyorum, burada Z sütununun f'si sıfıdan küçük.
+
+57
+00:04:16,500 --> 00:04:21,460
+Şimdi bunu gerçekleştirmeden önce bir göz atalım: Bildirim sütunu Z üzerinde gerçekleşecek olanları.
+
+58
+00:04:21,750 --> 00:04:22,290
+Nerede.
+
+59
+00:04:22,320 --> 00:04:23,150
+Sıfırdan daha az.
+
+60
+00:04:23,160 --> 00:04:31,210
+Bu yalnızca C satırında görülür, bu nedenle Zelda'daki Z sütunu, sonra C satırı kedidir.
+
+61
+00:04:31,260 --> 00:04:33,260
+Bu, iade edilmesi gereken tek satır.
+
+62
+00:04:33,270 --> 00:04:35,720
+Ancak tüm verileri geri isteyin.
+
+63
+00:04:35,850 --> 00:04:40,110
+Dolayısıyla, sadece bu satır C'yi bize geri döndürmelidir.
+
+64
+00:04:40,110 --> 00:04:41,100
+Ve işte orada.
+
+65
+00:04:41,340 --> 00:04:42,590
+Tamam harika.
+
+66
+00:04:42,600 --> 00:04:47,520
+Burada dikkat edilmesi gereken başka bir şey de, bu tür komutları yaptığınızda ileri gidin
+
+67
+00:04:47,520 --> 00:04:50,190
+ve sıfırdan büyük R W'ye geri dönün.
+
+68
+00:04:50,880 --> 00:04:57,220
+Yanıt olarak bir veri çerçevesi alırsınız ve bu, devam edip bu veri çerçevesinin komutlarını çağırabilirsiniz
+
+69
+00:04:57,230 --> 00:04:57,880
+demektir.
+
+70
+00:04:58,050 --> 00:05:01,260
+O zaman bunu bir adımda ya da iki adımda yapabilirsiniz.
+
+71
+00:05:01,320 --> 00:05:06,370
+Ben içeri girip sonuç DSF'sinin buna eşit olduğunu söyleyip sonuçlara bakacağım.
+
+72
+00:05:06,420 --> 00:05:12,910
+veri çerçevesine dayanan dört XABD ve E değerine sahibiz O satırda Charlie olmadığını görmüş.
+
+73
+00:05:13,030 --> 00:05:21,910
+Bu satırı içermeyen veri çerçevesinin bu alt kümesi olan DMF, onu görüyorum ve bu, ilerleyebileceğim ve bunun gibi X'den gelen
+
+74
+00:05:21,910 --> 00:05:25,910
+sonuçları kapatabileceğim anlamına geliyor ve burada, elde edilen bu
+
+75
+00:05:26,380 --> 00:05:32,200
+Fakat bunu aslında X sütununu kapmak gibi iki adıma ayırmak yerine hepsini bir
+
+76
+00:05:32,200 --> 00:05:33,030
+adımda yapabilirim.
+
+77
+00:05:33,130 --> 00:05:41,230
+Ve şunu söyleyeyim, sana ne demek istediğimi gösterebilirim ki, W'nin sütun değerinin sıfırdan büyük
+
+78
+00:05:41,230 --> 00:05:43,780
+olduğu veri çerçevesini geri söyleyebilirim.
+
+79
+00:05:43,780 --> 00:05:45,670
+Bu sıraları bana geri getir.
+
+80
+00:05:45,670 --> 00:05:48,050
+Bu, tüm satırların C satırından eksiği olduğu anlamına gelir.
+
+81
+00:05:48,340 --> 00:05:53,170
+Ve bu bir veri çerçevesi olduğundan, aslında devam edebilir ve köşeli parantez
+
+82
+00:05:53,170 --> 00:05:57,530
+gösterimi gibi komutların üstüne X sütununu döndürmek gibi bunun üstüne koyabilirsiniz.
+
+83
+00:05:57,700 --> 00:06:04,330
+Ve şimdi burada yaptığım sonuçlarla aynı elde ediyorum, hepsi bir adımda tamamlandı ve bu başlangıçta
+
+84
+00:06:04,330 --> 00:06:06,570
+başta korkutucu olabilecek bir şey.
+
+85
+00:06:06,670 --> 00:06:09,380
+Dolayısıyla bir sürü parantez ve burada devam eden çok şey var.
+
+86
+00:06:09,580 --> 00:06:14,620
+Ancak esasen bu, her şeyin birden fazla adıma bölünmesi ve
+
+87
+00:06:14,620 --> 00:06:17,480
+hepsinin bir adım atılması yerine gerçekleşiyor.
+
+88
+00:06:17,620 --> 00:06:24,100
+listelerden geçerek birden çok sütun için parantez oluşturabilir ve burada bir sonuç alabileceğimizi görebiliriz.
+
+89
+00:06:24,100 --> 00:06:29,890
+Ve benzer bir veri çerçevesi olduğu için benzer şekilde, virgül X gibi
+
+90
+00:06:29,920 --> 00:06:36,100
+Devam edelim ve attığımız adımları göstermek için bu çizgiyi bir kez daha kıralım.
+
+91
+00:06:36,100 --> 00:06:41,090
+İlk önce gidip Boudia'ya eşit olduğunu söyleyeceğiz.
+
+92
+00:06:41,680 --> 00:06:48,250
+Bhool serisi diyebiliriz ve bundan dolayı biraz daha doğru, DFW'de sıfırdan
+
+93
+00:06:48,250 --> 00:06:49,140
+büyük.
+
+94
+00:06:49,150 --> 00:06:56,590
+Bu yüzden, bool serisini söylüyorsam, bu boolean serisini geri alıyorum, o
+
+95
+00:06:56,590 --> 00:07:04,010
+zaman ilerleyip yapacağım sonuç, o bool serisinin DSF'sine eşit olduğunu söylüyor.
+
+96
+00:07:04,510 --> 00:07:06,870
+Hadi devam edelim ve sonuçları kontrol edelim.
+
+97
+00:07:07,630 --> 00:07:15,690
+Ve o serinin nerde olduğu bir nokta olmalı ki bu b ve e, sonuçum var.
+
+98
+00:07:15,820 --> 00:07:18,690
+Satır görünmeden tüm veri çerçevesi budur.
+
+99
+00:07:18,760 --> 00:07:28,200
+Sonra da devam edip, sonuçta bir liste sütunları çağrısı yapabiliriz, böylece devam edip neden virgül X diyebiliriz
+
+100
+00:07:28,840 --> 00:07:33,910
+ve eğer biz isterse bile bunu ayrı tutabilirdik ve
+
+101
+00:07:34,360 --> 00:07:43,840
+Mike'nin sütunları çağırdığını söyleyerek bir adım daha atabiliriz Bu listeyi iletip Mike çağrılarının sonucunu söylersek, burada yaptığımız
+
+102
+00:07:43,840 --> 00:07:48,760
+şeyi tek satırda birden çok satırda olduğu gibi elde ederiz.
+
+103
+00:07:48,910 --> 00:07:53,840
+Bunun anlamı, eğer bir ton parantez ve pandur gibi görünen bir şeye kafanız karıştıysa, onu
+
+104
+00:07:54,070 --> 00:07:56,110
+birden fazla basamağa bölüp yükleyemeyeceğinizi görün.
+
+105
+00:07:56,110 --> 00:08:00,640
+Bu ders boyunca daha mantıklı olursa, bu tür bir notayı yapacağız.
+
+106
+00:08:00,910 --> 00:08:02,200
+Bir çeşit gömlek.
+
+107
+00:08:02,200 --> 00:08:06,100
+Ve pandaların daha da rahat olmasına rağmen kendinizi bu gömlekleri gittikçe daha
+
+108
+00:08:06,100 --> 00:08:11,080
+sık kullanıyor bulacaksınız, ancak şimdiye kadar kafanız karıştıysanız her zaman birden fazla adım atmaya çekinmeyin.
+
+109
+00:08:11,080 --> 00:08:15,970
+Tek dezavantaj olarak, onu birden fazla adıma indirgemek, tanımladığınız
+
+110
+00:08:16,150 --> 00:08:18,130
+değişkenle hangi hafızayı alacağınızdır.
+
+111
+00:08:18,220 --> 00:08:23,260
+Pandaların daha iyi ve daha iyi olabilmesi için tüm bu komutların basit bir çizgide
+
+112
+00:08:23,260 --> 00:08:24,750
+soyutlamasına doğru ilerlemek istiyorsunuz.
+
+113
+00:08:24,760 --> 00:08:30,370
+Pekâlâ, devam edin ve videoyu şimdi duraklatın ve gerçekten de 58'teki çizgiyi nasıl anladığınızdan emin olun.
+
+114
+00:08:30,370 --> 00:08:36,280
+Birden fazla satıra ayrılmış olanla aynı şey budur.
+
+115
+00:08:36,310 --> 00:08:36,700
+Tamam.
+
+116
+00:08:36,700 --> 00:08:38,230
+Hadi devam edin ve gerçek hızlı keşfedelim.
+
+117
+00:08:38,230 --> 00:08:42,490
+İki veya daha fazla koşul gibi birden çok koşulun kullanılması kavramı.
+
+118
+00:08:42,580 --> 00:08:48,940
+Şu anda, bir koşulun temelinde veri çerçevesinin bir alt kümesini döndüren böyle bir şey
+
+119
+00:08:48,940 --> 00:08:50,700
+yapmanın rahat olduğunu hissediyoruz.
+
+120
+00:08:50,740 --> 00:08:56,320
+sıfırdan büyük ve Y'nin 1'den büyük olduğu gibi birden fazla koşul istediyseniz ne olurdu.
+
+121
+00:08:56,410 --> 00:08:57,170
+Ancak, w'nin
+
+122
+00:08:57,520 --> 00:09:06,910
+Yapabileceğiniz şey, parantez içindeki gibi bir şeyi aynı koşulu ile deneyin ve sonra
+
+123
+00:09:06,970 --> 00:09:10,210
+başka bir koşulu söyleyip geçmektir.
+
+124
+00:09:10,210 --> 00:09:11,740
+Ve bu bir hata döndürür.
+
+125
+00:09:11,970 --> 00:09:17,710
+Ve burada neden bir hata olup olmadığını açıklamak için bunu yapacağım ve yeni başlayanlar için buraya
+
+126
+00:09:17,710 --> 00:09:23,410
+ve buraya yazmakta yaygın olan bir hatadır ve serinin belirsiz olması hakkında bir şeyler söyleyen bir
+
+127
+00:09:23,410 --> 00:09:24,370
+hata bulacaksınız.
+
+128
+00:09:24,370 --> 00:09:30,520
+Aşağıya iniyoruz, burada şunu görüyoruz ki bir dizinin doğruluk değeri belirsiz.
+
+129
+00:09:30,520 --> 00:09:37,420
+Ve söylemeye çalıştığı şey, Python'un normal ve operatörünün, bir dizi boolean
+
+130
+00:09:37,750 --> 00:09:43,960
+değerine kıyasla bir dizi boolean değerini gerçekten dikkate alamadığı ve
+
+131
+00:09:43,960 --> 00:09:47,680
+operatörün tek seferde tekli boole'ları hesaba katabileceği.
+
+132
+00:09:47,680 --> 00:09:54,790
+Yani doğru ve yanlış, yanlış gerçek ve gerçek doğruyu döndürür. Bunun anlamı, böyle bir boolean değer
+
+133
+00:09:55,090 --> 00:10:03,190
+serisini geçtiğinizde ve operatörün kafası karışmış demektir.
+
+134
+00:10:03,190 --> 00:10:04,250
+Pandalarla çalışırken yalnızca bu
+
+135
+00:10:04,390 --> 00:10:09,880
+tek boolean değer örneklerini ele alabilir ve aslında bu olan ampersanlarda kullanmak zorunda olduğunuz birden fazla koşul istiyorsanız.
+
+136
+00:10:09,880 --> 00:10:15,230
+Ve böylece çoğu standart klavye için klavyenizde 7 tuşu basılacaktır.
+
+137
+00:10:15,250 --> 00:10:20,360
+Ve burada, bu koşulların her birinin arasında net bir ayrım
+
+138
+00:10:20,620 --> 00:10:25,660
+olduğunu göstermek için bu koşulları parantez içinde ilettiğime dikkat edin.
+
+139
+00:10:25,660 --> 00:10:26,790
+Ve bunu çalıştırırsam, bunun doğru olduğu yerde Satır E olur.
+
+140
+00:10:26,920 --> 00:10:31,070
+Tamam, onu parçalamaya gidelim.
+
+141
+00:10:31,510 --> 00:10:32,840
+Bir kez hızlı
+
+142
+00:10:32,860 --> 00:10:39,430
+bir şekilde birden fazla koşul kullanmaya çalışırken, Python'un normal ve operatörünü kullanamazsınız.
+
+143
+00:10:39,490 --> 00:10:40,530
+Ampersand'ı kullanmanız gerekir
+
+144
+00:10:40,960 --> 00:10:47,470
+ve sonra birden fazla koşul parantez içinde geçirilir ve nihayet veri çerçeveniz için köşeli parantezlerin içine koyarsınız.
+
+145
+00:10:47,470 --> 00:10:49,830
+OR işlemi yapmak
+
+146
+00:10:50,050 --> 00:10:57,130
+isterseniz, bunun yerine doğrudan boru operatörünüzün yerine geçebilirsiniz.
+
+147
+00:10:57,180 --> 00:10:57,660
+Genellikle Enter tuşunuzdaki çoğu klavyede gidip yukarı doğru gidin ve sonra ters eğik çizgiyi kaydırın.
+
+148
+00:10:57,760 --> 00:11:04,110
+Ve bu size boru operatörü vermeli ve bunun yerine
+
+149
+00:11:04,240 --> 00:11:09,280
+geçilmesi gerekecek çünkü kullanmayı denerseniz aynı hatayı alacaksınız.
+
+150
+00:11:09,280 --> 00:11:12,160
+Python'ın normaliyle deneyelim mi yoksa
+
+151
+00:11:12,250 --> 00:11:18,160
+birlikte mi deneyeceğim, gerçeği alacağım Bir dizinin değeri belirsiz.
+
+152
+00:11:18,160 --> 00:11:18,910
+Bunun nedeni, yalnızca bir veya iki boolean değeri yerine bir dizi değer elde etmenizdir.
+
+153
+00:11:18,970 --> 00:11:24,380
+Tamam, bununla ilgili daha fazla örnek istiyorsanız, devam edin ve bir nota başvurun.
+
+154
+00:11:24,450 --> 00:11:27,840
+Ancak temel olarak, eğer parantez içinde her
+
+155
+00:11:27,940 --> 00:11:33,220
+koşulda birden fazla koşul geçmesini isterseniz ve bitiş için bir
+
+156
+00:11:33,220 --> 00:11:41,650
+ampersan veya boru operatörü kullanalım; şimdi ileri gidelim ve dizin hakkında konuşmak için vites değiştirin ve
+
+157
+00:11:41,650 --> 00:11:47,140
+şimdi biraz daha tartışalım. dizini sıfırlamak veya başka bir şeye ayarlamak.
+
+158
+00:11:47,170 --> 00:11:48,140
+Devam edelim ve orijinal veri çerçevemize bir göz atalım.
+
+159
+00:11:48,160 --> 00:11:50,770
+İçeri girip onları bu hücreleri temizleyerek temizlemek istiyorum.
+
+160
+00:11:50,770 --> 00:11:54,610
+Ve veri çerçevemize bir göz atalım.
+
+161
+00:11:54,740 --> 00:11:56,820
+Yine de, sadece bir aralık endeksi veya
+
+162
+00:11:56,860 --> 00:12:03,970
+1 2 3 4'ten sonuna kadar olan varsayılana geri getirmek için w'den Z'ye kadar olan sütunlarda bir ya da daha fazla Rose'u var.
+
+163
+00:12:03,970 --> 00:12:09,070
+Yapabileceğiniz, metodu sıfırlama alt dizini çağırmaktır
+
+164
+00:12:09,210 --> 00:12:16,780
+ve aslında o yöntemi çalıştırdığımız parantezleri kapatmayı unutmayın.
+
+165
+00:12:16,870 --> 00:12:18,380
+Bu uyarıyı
+
+166
+00:12:18,900 --> 00:12:26,950
+çağırırsanız, dizini bir sütuna sıfırlarsınız ve gerçek dizini sayısal olarak alırsınız.
+
+167
+00:12:27,010 --> 00:12:28,690
+Ve böylece dizini sıfırlayabilirsiniz.
+
+168
+00:12:28,690 --> 00:12:32,320
+Burada dikkat edilmesi gereken bir şey, diğer elle operasyonlardan elde edilen veriler gibi.
+
+169
+00:12:32,710 --> 00:12:37,530
+Yerinde olmasını belirtmediğiniz sürece bu yerinde gerçekleşmez.
+
+170
+00:12:37,570 --> 00:12:42,010
+Geri dönersem T. F. Aslında o yerde gerçekleştirebilmeniz için yapacağınız şeyin yerinde eşit olduğunu ve sıfırlama alt çizgi endeksine
+
+171
+00:12:42,010 --> 00:12:47,860
+geçmesini söylemek isterseniz orijinal etiket dizinine sahibim.
+
+172
+00:12:47,860 --> 00:12:54,480
+Şimdilik, devam edeceğiz ve bunu yapmayacağız.
+
+173
+00:12:54,520 --> 00:12:56,640
+Bu şekilde orijinal veri çerçevesini koruyoruz.
+
+174
+00:12:56,650 --> 00:12:59,620
+Şimdi devam edin ve yalnızca dizini sayısal bir değere sıfırlamak istiyorsanız bunu tekrar temizleyin.
+
+175
+00:12:59,650 --> 00:13:06,680
+Reesa dizinini kullanabilir ve eski dizininiz veri çerçevenizin bir sütunu haline gelecektir.
+
+176
+00:13:06,790 --> 00:13:12,080
+TAMAM.
+
+177
+00:13:12,630 --> 00:13:13,140
+Devam edin
+
+178
+00:13:13,300 --> 00:13:19,060
+ve dizini ayarlama gibi bir tane daha yeni dizin örneği gösterelim ve bunu yapmak için Devam edip New i n d adlı yeni bir dizin oluşturacağım.
+
+179
+00:13:19,150 --> 00:13:25,500
+Ve burada birazcık açıklayacağım küçük bir hüner kullanacağım.
+
+180
+00:13:27,250 --> 00:13:32,910
+Bu, bir grup devlet kısaltması olacak ve bu dize ayrımı söyleyeceğim.
+
+181
+00:13:33,040 --> 00:13:37,580
+Ve bir dizgenin bölünmesinin boş bir alanı bölmek için ortak yöntem olduğunu söylemelisiniz.
+
+182
+00:13:38,020 --> 00:13:44,050
+Ancak bu, her bir virgülün yazılması yerine bir liste oluşturmak için güzel ve hızlı bir yoldur.
+
+183
+00:13:44,230 --> 00:13:48,960
+Bu yüzden, ilerlemeye devam etmek ve bu listeyi gerçekten yeni olduğum gibi ayarlamak istiyorum.
+
+184
+00:13:49,240 --> 00:13:54,850
+Bu yüzden yeni dizin değerlerimi burada buluyorum ve bunu, veri çerçevemize bir sütun olarak koymak için yapacağım.
+
+185
+00:13:54,850 --> 00:14:02,350
+Bu yüzden, ilerlemeye gidiyorum ve DFA Devletleri yeni ve eskime eşit diyor.
+
+186
+00:14:03,160 --> 00:14:09,520
+Ve eşleşmeden bahsediyorlar, bu yüzden burada beş öğe var.
+
+187
+00:14:09,640 --> 00:14:12,610
+Burada çerçeve durumu 0 ile 4 arasında eşleşecektir.
+
+188
+00:14:12,700 --> 00:14:16,030
+Dolayısıyla, veri çerçevemizi kontrol edersem, devletler CA NY w y o RCO adlı yeni bir sütunum var.
+
+189
+00:14:16,060 --> 00:14:24,070
+Şimdi sadece alt çizgi altına alma dizini yöntemi sıfırlamak olan dizini nasıl sıfırlayacağımızı biliyoruz.
+
+190
+00:14:24,100 --> 00:14:29,000
+Ancak, veri çerçevenizde, ilerleyebileceğiniz ve yapabileceğiniz dizin olmak istediğiniz
+
+191
+00:14:29,170 --> 00:14:34,150
+bir sütununuz varsa, dizini sıfırlamak yerine dizin belirlemek demektir.
+
+192
+00:14:34,150 --> 00:14:37,950
+eğer geçiş yaparsanız şimdi devlet sütun endeksi haline geldi girin.
+
+193
+00:14:38,110 --> 00:14:46,120
+Örneğin DF nokta alt çizgi endeksi ayarlamak ve daha sonra yeni dizin olmak istiyorum sütun adını geçmek söyleyebilirim böylece burada devletler ve
+
+194
+00:14:46,120 --> 00:14:54,100
+Dizinin bu bilgilerini sakladığınız sürece eski endeksinizin üzerine yazmadığınız sürece unutmayın;
+
+195
+00:14:54,100 --> 00:15:00,320
+bu bilgileri gerçekten yeni bir sütun olarak koruyamazsınız.
+
+196
+00:15:00,370 --> 00:15:03,630
+Aksine, yeni sütuna sahip olmanızı sağlayan dizin sıfırlar.
+
+197
+00:15:03,760 --> 00:15:07,810
+Yani, dizin karşıtlığı sıfırlama dizini karşısında ayarlanır.
+
+198
+00:15:07,810 --> 00:15:11,280
+Yine burada veri çerçevemizi kontrol edersem bu yerinde değildi.
+
+199
+00:15:11,340 --> 00:15:14,750
+Argümanı eklemeliyim.
+
+200
+00:15:14,830 --> 00:15:16,190
+Yer değiştirirsem yerim buraya girin.
+
+201
+00:15:16,210 --> 00:15:18,650
+Eşittir.
+
+202
+00:15:18,680 --> 00:15:20,140
+Devam edelim ve sadece bölüm 3'e geçmeden önce daha önce üzerinde durduğumuz şeyleri hızlı bir şekilde inceleyelim.
+
+203
+00:15:20,810 --> 00:15:28,820
+Tamam, PI operasyonlarına çok benzer koşullu seçim hakkında öğrendik.
+
+204
+00:15:28,820 --> 00:15:34,180
+Temelde boolean değerlerinin bir veri çerçevesi alırsınız ve boolean değerlerinin bütün bir veri çerçevesini
+
+205
+00:15:34,180 --> 00:15:39,550
+iletirseniz, değerleri doğru olduğu yerde alırsınız ve yanlış olduğu yerde n veya hiç değer almazsınız.
+
+206
+00:15:39,880 --> 00:15:44,830
+Bir karşılaştırma operatörüne sahip bir sütun gibi bir
+
+207
+00:15:44,830 --> 00:15:52,090
+dizi boolean değer girerseniz, yalnızca ciddi olan gerçek veri çerçevesinin satırlarını
+
+208
+00:15:52,090 --> 00:15:57,850
+elde edersiniz ve isterseniz bunu birden fazla adıma bölebilirsiniz.
+
+209
+00:15:57,910 --> 00:16:00,350
+Yine bu iki hücre muhtemelen anlaşılması gereken en önemli noktalardır.
+
+210
+00:16:00,360 --> 00:16:03,160
+Bu dersin dışında anladığınızda
+
+211
+00:16:03,160 --> 00:16:07,810
+pantolonsuz koşullu seçimin nasıl yapılacağını anlayabilirsiniz.
+
+212
+00:16:07,810 --> 00:16:08,970
+Sonra birden fazla koşullu
+
+213
+00:16:09,190 --> 00:16:15,490
+seçim yapmak isterseniz kaydırma yaparak bir ampersand veya bir boru operatörü yapabilir, Python'ın dahili ve / veya operatörlerini kullanamazsınız.
+
+214
+00:16:15,490 --> 00:16:19,990
+Bir Hakikat serisindeki belirsiz değerler nedeniyle
+
+215
+00:16:20,170 --> 00:16:27,460
+ve her koşullu seçim bildirimini ayırmak için parantez kullanmayı unutmayın.
+
+216
+00:16:27,460 --> 00:16:30,040
+Sonra nihayet sıfırladık.
+
+217
+00:16:30,040 --> 00:16:31,300
+Dizin sıfırlama dizini
+
+218
+00:16:31,330 --> 00:16:38,650
+yalnızca dizininizi sayısal bir dizine sıfırlayacak ve eski dizininizi alıp dizin adı verilen yeni bir sütun olarak ayarlayacak ve
+
+219
+00:16:38,650 --> 00:16:45,670
+ardından, geçerli bir sütuna dayanan herhangi bir dizini yalnızca Ayarla diyerek sıfırlamak yerine yeni bir dizin ayarlayabilirsiniz altçizgi dizini.
+
+220
+00:16:45,970 --> 00:16:49,910
+Ve her iki yöntem de varsayılan olarak yerinde değildir.
+
+221
+00:16:50,170 --> 00:16:53,090
+Bu nedenle ECO'ları doğru olarak belirttiğinizden emin olun.
+
+222
+00:16:53,140 --> 00:16:55,560
+Değişikliğin kalıcı olmasını istersen.
+
+223
+00:16:55,690 --> 00:16:57,970
+Tamam bu ders için.
+
+224
+00:16:58,030 --> 00:17:00,550
+Herkese teşekkürler.
+
+225
+00:17:00,550 --> 00:17:01,350
+Bir sonraki konferansta göreceğim veya dizin yüksekini tartışacağız.
+
+226
+00:17:01,390 --> 00:17:04,800
+Yine tüm bu notlar sadece Veri çerçeveleri adlı bir dizüstü bilgisayardır.
+
+227
+00:17:04,960 --> 00:17:08,630
+Teşekkürler ve göreceğim bir sonraki ders
+
+228
+00:17:08,650 --> 00:17:10,210
+&nbsp;

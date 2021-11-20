@@ -1,0 +1,823 @@
+1
+00:00:05,130 --> 00:00:06,000
+Hello everyone.
+
+2
+00:00:06,000 --> 00:00:10,800
+Welcome to the day to capstone project solutions lecture this lecture we're going to go over the solutions
+
+3
+00:00:10,800 --> 00:00:13,850
+for the night when one calls it a capstone project.
+
+4
+00:00:13,920 --> 00:00:16,710
+Let's go out and jump to Jupiter notebook to get started.
+
+5
+00:00:16,800 --> 00:00:17,060
+All right.
+
+6
+00:00:17,070 --> 00:00:18,560
+Here I am at the notebook.
+
+7
+00:00:18,570 --> 00:00:20,730
+Let's go ahead and get started.
+
+8
+00:00:20,730 --> 00:00:25,620
+First thing I want to do is important some pie and pandas when we go out and say important umpires and
+
+9
+00:00:25,630 --> 00:00:34,110
+P and import pandas as PD and the next cell asks you to import visualization libraries and set map pilot
+
+10
+00:00:34,150 --> 00:00:35,370
+in line.
+
+11
+00:00:35,370 --> 00:00:39,610
+This was a little vague kind of on purpose but hopefully you realize it's just talking about that.
+
+12
+00:00:39,650 --> 00:00:50,700
+LIBMAN seaborne so I can say in part but PI plot as Piazzi import seaborne as Asinus and then I'm going
+
+13
+00:00:50,700 --> 00:00:55,530
+to go out and say what live in line.
+
+14
+00:00:55,530 --> 00:01:00,420
+Next we wanted to read in the the file as a data frame called The F.
+
+15
+00:01:00,840 --> 00:01:09,750
+So PD that read C S V and we can actually just call 9 and then see nine on one that v is the file we're
+
+16
+00:01:09,840 --> 00:01:11,280
+concerned about.
+
+17
+00:01:11,290 --> 00:01:13,380
+And then we want to check the info of the data.
+
+18
+00:01:13,410 --> 00:01:15,980
+So the info.
+
+19
+00:01:16,950 --> 00:01:21,890
+So this tells us there's almost about 100000 entries here and there's nine total columns.
+
+20
+00:01:21,990 --> 00:01:27,960
+And then we actually have already the column descriptions appear in the notebook then we want to check
+
+21
+00:01:27,960 --> 00:01:29,000
+the head of the DEA.
+
+22
+00:01:29,430 --> 00:01:33,280
+And we can do that just by calling the method in the head.
+
+23
+00:01:33,600 --> 00:01:37,710
+And here we have the head of the earth so he can get a sense of what this actually looks like Lotusphere
+
+24
+00:01:37,740 --> 00:01:45,480
+the title has some sort of label immerse or fire colon and then the actual title event and we have a
+
+25
+00:01:45,480 --> 00:01:49,650
+time stamp GWP which is a township and we scroll over to the right.
+
+26
+00:01:49,770 --> 00:01:53,180
+We have an address and then we call them.
+
+27
+00:01:53,190 --> 00:01:58,480
+Next we want to answer some basic questions such as What are the top five zip codes for 911 calls.
+
+28
+00:01:58,770 --> 00:02:06,600
+Well we go ahead and grab the column and then we can actually just specify value counts off of this
+
+29
+00:02:08,240 --> 00:02:10,870
+and that or turn all the counts for all the zip codes.
+
+30
+00:02:10,920 --> 00:02:12,890
+And we just want the top five.
+
+31
+00:02:13,140 --> 00:02:16,230
+So we just call had 5 off that series.
+
+32
+00:02:16,230 --> 00:02:18,540
+And here we have the top five zip codes.
+
+33
+00:02:18,570 --> 00:02:22,910
+Next we want to figure out what are the top five township's PWP for 911 calls.
+
+34
+00:02:23,190 --> 00:02:32,400
+You can do a very similar thing specify DWP call value accounts and then head to 5 and this will get
+
+35
+00:02:32,400 --> 00:02:36,910
+you these results so lower Merion Abbington etc..
+
+36
+00:02:37,500 --> 00:02:43,000
+Now we want to take a look at the title column and how many unique title codes are there.
+
+37
+00:02:43,230 --> 00:02:51,920
+There's two ways of doing this you can say the title call unique audits and the return an array of all
+
+38
+00:02:51,920 --> 00:02:58,980
+the unique titles mean minicon just check the length of that array and get back the number or to do
+
+39
+00:02:58,980 --> 00:03:00,500
+this all in one step.
+
+40
+00:03:00,540 --> 00:03:03,440
+You can just call and unique.
+
+41
+00:03:03,450 --> 00:03:06,060
+They'll also return 110.
+
+42
+00:03:06,090 --> 00:03:09,750
+OK next step we want to create some new features in the titles column.
+
+43
+00:03:09,780 --> 00:03:14,540
+There are a reason slash Department's code specified before the title code.
+
+44
+00:03:14,700 --> 00:03:17,260
+And these are M-S fire and traffic.
+
+45
+00:03:17,430 --> 00:03:23,340
+We want to use the apply a custom land expression to create a new column called reason that contains
+
+46
+00:03:23,430 --> 00:03:25,050
+the string value.
+
+47
+00:03:25,050 --> 00:03:31,260
+So for example if the title column was M-S back pains last injury the reason column for that value would
+
+48
+00:03:31,260 --> 00:03:35,310
+be M-S we go ahead and take a look back at the head.
+
+49
+00:03:35,700 --> 00:03:38,690
+Like I mentioned before there is some sort of reason here colon.
+
+50
+00:03:38,700 --> 00:03:41,180
+And then the full title M-S fire.
+
+51
+00:03:41,190 --> 00:03:43,830
+And then later on there's traffic.
+
+52
+00:03:44,130 --> 00:03:48,030
+Let's go ahead and create this reason column using apply.
+
+53
+00:03:48,240 --> 00:03:51,000
+First off let's go out and break down the logic of what we want to do.
+
+54
+00:03:51,000 --> 00:03:55,530
+I'm going to grab from Title an example.
+
+55
+00:03:55,590 --> 00:04:03,570
+I ellos see it is kind of the way I like to do it and then set this as X and see what do I have to do
+
+56
+00:04:03,570 --> 00:04:07,090
+to X to actually grab this title here.
+
+57
+00:04:07,350 --> 00:04:13,190
+Well since this is a string I can say that splits by colon.
+
+58
+00:04:14,070 --> 00:04:19,020
+And then I notice that the title always comes first so if I just grab the first element off of that
+
+59
+00:04:19,020 --> 00:04:19,680
+list.
+
+60
+00:04:19,680 --> 00:04:22,220
+Now I have this reason here.
+
+61
+00:04:22,330 --> 00:04:22,720
+All right.
+
+62
+00:04:22,770 --> 00:04:23,970
+This is the kind of thing we're going to do.
+
+63
+00:04:23,970 --> 00:04:31,590
+Ferland expression is going to show that to create the column reason set it equal to the title column
+
+64
+00:04:32,440 --> 00:04:43,980
+the apply and then say lambda the title and say title dot split based off of the colon and then I'm
+
+65
+00:04:43,980 --> 00:04:48,200
+going to grab the very first item in that list.
+
+66
+00:04:48,210 --> 00:04:52,220
+Let's go ahead and check out what reason looks like.
+
+67
+00:04:53,810 --> 00:04:56,790
+And that's what it looks like we are being Merse fire traffic.
+
+68
+00:04:56,790 --> 00:04:58,550
+Perfect.
+
+69
+00:04:58,560 --> 00:04:59,070
+All right.
+
+70
+00:04:59,370 --> 00:05:05,730
+Hopefully that wasn't too hard can be a little tricky to express a land expression correctly apply a
+
+71
+00:05:05,730 --> 00:05:06,770
+nice little hint for this.
+
+72
+00:05:06,870 --> 00:05:11,700
+Just grab an example and then see what you have to do to that example and then convert this into the
+
+73
+00:05:11,700 --> 00:05:13,380
+land expression.
+
+74
+00:05:13,380 --> 00:05:16,890
+Now we want to know what are the most common reason for you and I don't want to call based off this
+
+75
+00:05:16,890 --> 00:05:18,420
+new column.
+
+76
+00:05:18,420 --> 00:05:19,570
+Well that's actually quite easy.
+
+77
+00:05:19,590 --> 00:05:29,580
+We can just call reason value counts that returns that EMI is the most common reason if you only want
+
+78
+00:05:29,880 --> 00:05:35,310
+to return the most common reason you could just say had one and it would return M-S but says there's
+
+79
+00:05:35,310 --> 00:05:38,660
+only three values we're going to show all of them.
+
+80
+00:05:38,670 --> 00:05:44,700
+Next up we wanted to use seaborne to create a counterplot of nine one one calls by reason.
+
+81
+00:05:44,790 --> 00:05:45,340
+OK.
+
+82
+00:05:45,720 --> 00:05:52,950
+We're going to want to say Asinus counterplot and then we want to specify the x axis to be reason here
+
+83
+00:05:52,950 --> 00:05:53,080
+.
+
+84
+00:05:53,080 --> 00:06:00,660
+So when I say X is reason then for counterplot there is no Y is the Y is automatically chosen to be
+
+85
+00:06:00,660 --> 00:06:02,400
+just a count.
+
+86
+00:06:02,400 --> 00:06:03,820
+So we're going to say data is.
+
+87
+00:06:03,930 --> 00:06:06,120
+And then run this.
+
+88
+00:06:06,120 --> 00:06:08,440
+And here we have our count plots.
+
+89
+00:06:08,940 --> 00:06:12,830
+Now don't worry if you didn't get the exact coloring as shown in the solutions book.
+
+90
+00:06:12,930 --> 00:06:15,170
+That's just a little extra call on the palette.
+
+91
+00:06:15,180 --> 00:06:23,160
+So you could do something like Palette equals and the one I used for the solutions was just below this
+
+92
+00:06:24,150 --> 00:06:25,340
+and that changes the color a bit.
+
+93
+00:06:25,350 --> 00:06:27,600
+But don't worry about the color matching up or up.
+
+94
+00:06:27,610 --> 00:06:30,100
+That's kind of an optional Color Mapping for each choose.
+
+95
+00:06:30,150 --> 00:06:34,380
+Hopefully we're able to figure out that count plot equals reason and that equals the f are the most
+
+96
+00:06:34,380 --> 00:06:37,160
+important parts of creating that count plot.
+
+97
+00:06:37,170 --> 00:06:40,140
+Now let's go to focus on the time information.
+
+98
+00:06:40,200 --> 00:06:43,900
+What does the data type of the objects in the time stamp call them.
+
+99
+00:06:43,920 --> 00:06:51,780
+Well what you can do is just call DFT info and it will actually tell you if you look at time stamp that
+
+100
+00:06:51,780 --> 00:06:57,510
+it's a object type and this kind of gives you a hint that it's going to be not a number and it's actually
+
+101
+00:06:57,510 --> 00:06:58,790
+a string.
+
+102
+00:06:58,950 --> 00:07:06,270
+And if we want to confirm that we can just grab one of those objects so we can say time stamp ILO's
+
+103
+00:07:06,360 --> 00:07:09,920
+C02 scrub the first one and note that we get back a string.
+
+104
+00:07:09,930 --> 00:07:16,920
+We want to further confirm that we can say type and here we have as TR for string.
+
+105
+00:07:16,920 --> 00:07:19,820
+Something to know if you just go all the way up to the top.
+
+106
+00:07:19,860 --> 00:07:23,450
+This is confirmed right here with a string variable.
+
+107
+00:07:23,760 --> 00:07:26,310
+Ok guns roll back down.
+
+108
+00:07:26,310 --> 00:07:29,980
+So we know we have times information but it's actually a string.
+
+109
+00:07:30,300 --> 00:07:35,180
+Now we want to do is turn these timestamps into date time objects.
+
+110
+00:07:35,270 --> 00:07:39,500
+We want to do that using PD to date time and you can to click this link.
+
+111
+00:07:39,630 --> 00:07:44,040
+You'll notice here to link to documentation on how to use to underscore date time.
+
+112
+00:07:44,040 --> 00:07:48,150
+Go ahead and just check out the examples here but it's actually quite a simple call so hopefully you
+
+113
+00:07:48,150 --> 00:07:58,980
+figured it out but it's basically just saying PD to underscore that time passing the column we want
+
+114
+00:07:58,980 --> 00:08:02,420
+to convert this case it's time stamp.
+
+115
+00:08:03,270 --> 00:08:10,610
+And then I'm just going to reset that column to be equal to this.
+
+116
+00:08:11,010 --> 00:08:15,180
+And now if I go ahead and take a look at this code right here.
+
+117
+00:08:15,210 --> 00:08:17,410
+Copy and paste it.
+
+118
+00:08:17,460 --> 00:08:20,580
+Now I have a time stamp object which is exactly what we want.
+
+119
+00:08:20,580 --> 00:08:22,700
+This is a Date Time object now.
+
+120
+00:08:22,710 --> 00:08:23,030
+All right.
+
+121
+00:08:23,040 --> 00:08:29,130
+Now that it's a date time object or a time stamp with pandas you can actually grasp specific attributes
+
+122
+00:08:29,160 --> 00:08:31,190
+from the object by calling them.
+
+123
+00:08:31,380 --> 00:08:35,240
+And there's a little piece of example code here let's go and check that out.
+
+124
+00:08:35,400 --> 00:08:38,990
+I just copy and paste this example code.
+
+125
+00:08:39,030 --> 00:08:44,520
+We can run this and show that we can actually grab information off of this and then it says use Jupiter's
+
+126
+00:08:44,520 --> 00:08:47,540
+tab method to explore the various attributes you can call.
+
+127
+00:08:47,760 --> 00:08:53,460
+And now the time column or actually date time objects use that apply to create three new columns called
+
+128
+00:08:53,520 --> 00:08:55,590
+our month and day of week.
+
+129
+00:08:55,770 --> 00:09:00,270
+You will create these columns based off the time stamp column and then you can reference the solutions
+
+130
+00:09:00,270 --> 00:09:01,630
+if you get stuck on that.
+
+131
+00:09:01,800 --> 00:09:04,300
+Let me go and break this down just a little further.
+
+132
+00:09:04,440 --> 00:09:07,340
+But ahead and take a look at what time is time.
+
+133
+00:09:07,350 --> 00:09:10,330
+Is that very first entry in this time stamp column.
+
+134
+00:09:10,340 --> 00:09:11,660
+No it says time stamp.
+
+135
+00:09:11,800 --> 00:09:15,580
+2015 12 10 in the hour minutes seconds.
+
+136
+00:09:15,620 --> 00:09:19,220
+I do dots and call attributes off of this object.
+
+137
+00:09:19,240 --> 00:09:24,840
+Notice I have a wide variety of attributes I can call her instance if I want to know the actual year
+
+138
+00:09:24,840 --> 00:09:24,860
+.
+
+139
+00:09:24,870 --> 00:09:32,010
+This is in I can just call year and report back the year as 2015 so I want to know what hour of the
+
+140
+00:09:32,010 --> 00:09:33,190
+day it was.
+
+141
+00:09:33,230 --> 00:09:35,650
+Reports it back as seventeen hundred hours.
+
+142
+00:09:35,650 --> 00:09:41,490
+So in military or a 24 hour format I want to know for instance the month that was in and called month
+
+143
+00:09:41,720 --> 00:09:47,390
+now I can even call things like day of week so day of week is three.
+
+144
+00:09:47,400 --> 00:09:51,800
+And later on there's actually a dictionary here for you to reference.
+
+145
+00:09:51,810 --> 00:09:52,170
+All right.
+
+146
+00:09:52,170 --> 00:09:57,900
+Now we want to do is have this ability of client attributes off at this time same column to actually
+
+147
+00:09:57,900 --> 00:10:02,770
+create in our month and day of week column we're going to show you how we're going to do that.
+
+148
+00:10:02,790 --> 00:10:12,580
+We're going to say for instance the half hour is equal to diea of the time stamp column.
+
+149
+00:10:13,370 --> 00:10:23,390
+And we're going to say apply we're saying Lamda take the time and then return the hour attribute.
+
+150
+00:10:24,260 --> 00:10:30,300
+We go in and run that and then if we check out the our attribute now we have all the hours where the
+
+151
+00:10:30,300 --> 00:10:36,150
+actual call occurred off the time stamp and we're going to the exact same thing for month and day of
+
+152
+00:10:36,150 --> 00:10:36,500
+week.
+
+153
+00:10:36,540 --> 00:10:42,480
+You can actually just copy and paste this line of code and instead of our For the first one we'll go
+
+154
+00:10:42,480 --> 00:10:49,080
+ahead and put in months and change this attribute to the month call and for the second one we're going
+
+155
+00:10:49,080 --> 00:10:50,820
+to go ahead and call this day of week
+
+156
+00:10:53,730 --> 00:10:58,670
+and then change this to the day of week call.
+
+157
+00:10:58,770 --> 00:11:02,100
+Now we go ahead and run this.
+
+158
+00:11:02,100 --> 00:11:06,630
+Let's go ahead and check out the head of our data frame now just to confirm that this all worked.
+
+159
+00:11:06,920 --> 00:11:11,980
+And if we scroll all the way to the right notice here we have three new columns.
+
+160
+00:11:11,990 --> 00:11:16,330
+We have our month and day of week which some numbers are present that.
+
+161
+00:11:16,740 --> 00:11:23,910
+OK the next thing you wanted to notice was how the day of week is integer from 0 to 6 that it says use
+
+162
+00:11:23,910 --> 00:11:31,730
+the dot map method with this dictionary to map the actual string names to the day of the week in which
+
+163
+00:11:31,740 --> 00:11:32,600
+you have to do here.
+
+164
+00:11:32,610 --> 00:11:36,390
+Go ahead and copy this line of code.
+
+165
+00:11:36,450 --> 00:11:44,590
+Now we have the map and then all you have to do is just map to see say the IF day of week equals the
+
+166
+00:11:44,590 --> 00:11:51,290
+f day of week and then you can actually say that map which is the method they're referring to here.
+
+167
+00:11:51,600 --> 00:11:55,370
+And then passen the map.
+
+168
+00:11:55,410 --> 00:11:58,050
+And now if we check out the head of our data frame
+
+169
+00:12:01,050 --> 00:12:06,800
+notice if we scroll all the way to the right again day of week is now the actual string Thursday-Friday
+
+170
+00:12:06,900 --> 00:12:07,380
+cetera.
+
+171
+00:12:07,450 --> 00:12:09,920
+So it's a little easier to read.
+
+172
+00:12:10,580 --> 00:12:10,990
+OK.
+
+173
+00:12:11,070 --> 00:12:16,140
+Now we want to you see more and create a counter plot of the day of week column with the hue based off
+
+174
+00:12:16,140 --> 00:12:18,090
+of the reason column.
+
+175
+00:12:18,090 --> 00:12:19,320
+Let's go ahead and recreate that.
+
+176
+00:12:19,320 --> 00:12:27,480
+We can say Asinus counterplot X is going to be the day of column
+
+177
+00:12:30,450 --> 00:12:33,300
+data is going to be día.
+
+178
+00:12:33,330 --> 00:12:36,010
+Remember we don't need to pass in a week or just counting.
+
+179
+00:12:36,240 --> 00:12:41,340
+And if we just do this we get the total count per day of week.
+
+180
+00:12:41,400 --> 00:12:47,370
+So we can see that there's a bit of a drop on Sunday where we can add to this is the Heugh specify that
+
+181
+00:12:47,370 --> 00:12:53,060
+the hue is by reason and we have a recreation of the plot shown in these solutions.
+
+182
+00:12:53,070 --> 00:12:56,870
+Now something to note here is the color palette is a little different.
+
+183
+00:12:56,980 --> 00:12:58,850
+If you want to use the same color palette I did.
+
+184
+00:12:58,890 --> 00:13:08,250
+You can go ahead and say palette Zucco to viridis and that reproduce the same color palette.
+
+185
+00:13:08,370 --> 00:13:13,680
+And then the last thing to note is that the legend is actually out inside here and in solution's we
+
+186
+00:13:13,680 --> 00:13:15,370
+want to relocate the legend.
+
+187
+00:13:15,540 --> 00:13:21,240
+You can actually just copy and paste the same code you did during the Seaborn lectures where we actually
+
+188
+00:13:21,240 --> 00:13:24,020
+show how to put the legend outside.
+
+189
+00:13:24,120 --> 00:13:25,180
+We're going to run that.
+
+190
+00:13:25,260 --> 00:13:28,600
+Now we have the legend outside of the plot itself.
+
+191
+00:13:28,620 --> 00:13:29,010
+All right.
+
+192
+00:13:29,010 --> 00:13:33,260
+Now the next task we had to perform was the same for the month column.
+
+193
+00:13:33,540 --> 00:13:42,870
+And basically all you have to do is you can just copy and paste this code and change x to be month and
+
+194
+00:13:42,870 --> 00:13:47,700
+you'll have the exact same plot except it's for the month column and then the next question was Did
+
+195
+00:13:47,700 --> 00:13:49,950
+you notice something strange about this plot.
+
+196
+00:13:50,100 --> 00:13:53,340
+And hopefully you're able to notice that you are actually missing some months.
+
+197
+00:13:53,430 --> 00:13:57,590
+It goes one through eight but then you don't have months 9 10 and 11.
+
+198
+00:13:57,660 --> 00:14:00,030
+They go straight to 12.
+
+199
+00:14:00,270 --> 00:14:05,820
+So now that we have noticed that missing information what we may want to do is try plotting the information
+
+200
+00:14:05,850 --> 00:14:11,400
+in another way possibly through a simple line plot that fills in those missing months and in order to
+
+201
+00:14:11,400 --> 00:14:14,440
+do that we'll need to do some additional work with pandas.
+
+202
+00:14:14,490 --> 00:14:20,250
+We'll go ahead and start part one of the solutions lecture here and carry on in part two by creating
+
+203
+00:14:20,250 --> 00:14:24,660
+a group by object called by month in order to try to solve this issue.
+
+204
+00:14:24,660 --> 00:14:25,160
+Okay.
+
+205
+00:14:25,410 --> 00:14:27,280
+Thanks everyone and I'll see you at the next lecture.
+
+206
+00:14:27,280 --> 00:14:28,710
+For part two of the solutions

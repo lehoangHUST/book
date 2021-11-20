@@ -1,0 +1,215 @@
+1
+00:00:05,340 --> 00:00:11,400
+Salve a tutti e benvenuti alla lezione di panoramica sull'esercizio del corso di Python in questa lezione, otterremo
+
+2
+00:00:11,400 --> 00:00:15,560
+una breve panoramica del quaderno degli esercizi e di come affrontare l'esercizio.
+
+3
+00:00:15,570 --> 00:00:18,250
+Lasciami andare avanti e mostrarti dove puoi trovare il quaderno degli esercizi.
+
+4
+00:00:18,530 --> 00:00:25,490
+OK, eccomi nel tuo repository sotto la cartella del corso di crash di python vedrai tre taccuini.
+
+5
+00:00:25,510 --> 00:00:30,760
+Il corso accelerato di Python che contiene le note che abbiamo appena esaminato nelle quattro serie di conferenze a quattro parti.
+
+6
+00:00:30,930 --> 00:00:35,380
+Poi hai gli esercizi del corso accelerato di Python IPY e B.
+
+7
+00:00:35,550 --> 00:00:39,690
+Questo è il file del taccuino che useremo per gli esercizi e vedrai il taccuino
+
+8
+00:00:39,780 --> 00:00:40,280
+della soluzione.
+
+9
+00:00:40,290 --> 00:00:46,580
+Qui vai e fai clic sul quaderno degli esercizi per vedere un quaderno simile a questo.
+
+10
+00:00:46,590 --> 00:00:50,850
+E ancora, questo è solo un test da sforzo opzionale per comprendere le basi di Python.
+
+11
+00:00:50,850 --> 00:00:55,920
+Se trovi questo esercizio estremamente impegnativo, probabilmente non sei ancora pronto per il resto del Corso
+
+12
+00:00:55,940 --> 00:00:58,700
+e non hai abbastanza esperienza di programmazione per continuare.
+
+13
+00:00:58,900 --> 00:01:03,300
+E ti suggerirei di fare un altro corso più orientato verso principianti assoluti come
+
+14
+00:01:03,300 --> 00:01:06,030
+il completo campo di addestramento per i pitoni.
+
+15
+00:01:06,160 --> 00:01:10,230
+Tuttavia questi esercizi dovrebbero essere abbastanza semplici e diretti.
+
+16
+00:01:10,230 --> 00:01:14,350
+Ad esempio questo primo esempio ti sta chiedendo qual è il 7 al potere di.
+
+17
+00:01:14,460 --> 00:01:20,790
+Quindi spero che tu possa vedere la risposta qui come output verrebbe in questa cella o in qualunque altro ID tu
+
+18
+00:01:20,790 --> 00:01:23,900
+preferisca usare e usare Python per rispondere a questa domanda.
+
+19
+00:01:23,910 --> 00:01:29,340
+Quindi devi solo ricordare bene come si fa a fare un potere esponenziale in Python.
+
+20
+00:01:29,340 --> 00:01:34,110
+Continuerà a farti altre domande come dividere la stringa in una lista, quindi spero che tu
+
+21
+00:01:34,110 --> 00:01:38,430
+ricordi come dividere una stringa con un metodo particolare in una lista e così via.
+
+22
+00:01:38,430 --> 00:01:39,570
+Quindi vai avanti.
+
+23
+00:01:39,580 --> 00:01:42,030
+Esistono esempi di output di ciò che dovresti ottenere.
+
+24
+00:01:42,210 --> 00:01:45,540
+Quindi hai una domanda che ti chiede qual è la differenza principale tra una tupla e una lista.
+
+25
+00:01:45,540 --> 00:01:49,050
+In questo modo puoi solo rispondere ad alta voce non sono la scrittura, credo che non ci sia
+
+26
+00:01:49,050 --> 00:01:50,650
+un codice per questo, solo chiedendo quali differenze.
+
+27
+00:01:50,850 --> 00:01:55,290
+Quindi desidero che crei una funzione che acquisisce il dominio del sito Web di posta elettronica da una stringa e un
+
+28
+00:01:55,290 --> 00:01:56,850
+utente del modulo nel dominio dot com.
+
+29
+00:01:56,850 --> 00:02:02,490
+Quindi se hai una funzione chiamala qualcosa come dominio, dovresti essere in grado di passare una
+
+30
+00:02:02,550 --> 00:02:06,150
+stringa di questo formato e afferrare questo dominio dot com.
+
+31
+00:02:06,180 --> 00:02:08,640
+Quindi entra e crea una sorta di funzione.
+
+32
+00:02:08,700 --> 00:02:14,540
+un indirizzo e-mail e restituisce il dominio ottenuto dal sito Web a cui tale e-mail è ospite.
+
+33
+00:02:14,540 --> 00:02:18,850
+È possibile uscire e chiamarlo dominio get che contiene una stringa di
+
+34
+00:02:18,930 --> 00:02:23,910
+Quindi andrai avanti e creerai una funzione di base che restituisce true se la parola cane è contenuta
+
+35
+00:02:23,910 --> 00:02:25,050
+nel flusso di input.
+
+36
+00:02:25,200 --> 00:02:29,250
+E non voglio che tu ti debba preoccupare dei casi limite come la punteggiatura che viene associata alla
+
+37
+00:02:29,670 --> 00:02:31,620
+parola cane ma che tiene conto delle lettere maiuscole.
+
+38
+00:02:31,620 --> 00:02:35,990
+Ancora una volta non abbiamo a che fare con ogni singolo caso limite che potresti trovare.
+
+39
+00:02:36,000 --> 00:02:42,690
+Solo l'idea di base di cercare una stringa per una parola, quindi vogliamo che tu crei una funzione che può come conta il numero
+
+40
+00:02:42,830 --> 00:02:46,260
+di volte in cui la parola cane si verifica in una stringa.
+
+41
+00:02:46,260 --> 00:02:48,220
+E ancora puoi ignorare i casi limite.
+
+42
+00:02:48,390 --> 00:02:52,290
+Quindi per esempio la corda questo cane corre più veloce dell'altro cane.
+
+43
+00:02:52,410 --> 00:02:58,840
+DAGA Pierce due volte, quindi conta i ritorni dei cani per andare a fare una funzione chiamata Count dogs do that.
+
+44
+00:02:58,930 --> 00:03:03,510
+Non vogliono che tu usi le espressioni lambda e la funzione Filcher per filtrare le parole da una lista
+
+45
+00:03:03,510 --> 00:03:05,080
+che non inizia con la lettera S.
+
+46
+00:03:05,100 --> 00:03:09,770
+Ad esempio, se ottieni una sequenza di questo elenco, dovrebbe essere filtrata in questo elenco.
+
+47
+00:03:09,810 --> 00:03:11,080
+Zuppa e insalata
+
+48
+00:03:11,670 --> 00:03:13,230
+E qui c'è un problema finale.
+
+49
+00:03:13,260 --> 00:03:17,700
+Ora puoi andare avanti e leggere la descrizione, ma in pratica andrai avanti e
+
+50
+00:03:17,820 --> 00:03:20,970
+compilerai questa funzione per risolvere questo piccolo problema finale qui.
+
+51
+00:03:21,030 --> 00:03:27,090
+E questo coinvolge alcune affermazioni elefant oltre a creare una funzione, se hai qualche domanda sentiti libero di pubblicare i
+
+52
+00:03:27,090 --> 00:03:30,350
+forum di domande e risposte e sarò felice di aiutarti.
+
+53
+00:03:30,390 --> 00:03:31,120
+Grazie a tutti.
+
+54
+00:03:31,170 --> 00:03:35,090
+E il prossimo passo è una soluzione delle soluzioni a questo esercizio

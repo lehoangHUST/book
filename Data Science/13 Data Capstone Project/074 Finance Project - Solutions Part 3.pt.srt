@@ -1,0 +1,339 @@
+1
+00:00:05,160 --> 00:00:11,100
+Olá a todos e seja bem vindo à parte final opcional da série de conferências de soluções de projetos de finanças.
+
+2
+00:00:11,580 --> 00:00:17,100
+Nesta parte final que é opcional, vamos examinar algumas das tramas e as visualizações
+
+3
+00:00:17,280 --> 00:00:19,780
+de abotoaduras especificamente projetadas para dados financeiros.
+
+4
+00:00:20,010 --> 00:00:23,070
+Vamos sair e pegar o caderno Jupiter para começar.
+
+5
+00:00:23,070 --> 00:00:25,260
+OK aqui estou no caderno Jupiter.
+
+6
+00:00:25,260 --> 00:00:30,660
+A última vez que paramos na criação de um mapa de cluster usando o seaborne e queria mostrar-lhe
+
+7
+00:00:30,660 --> 00:00:33,780
+como você pode criar um mapa de calor usando Clottey.
+
+8
+00:00:33,780 --> 00:00:37,000
+Você pode realmente sair e pegar essa taxa de dados aqui.
+
+9
+00:00:37,080 --> 00:00:45,560
+Quadro de dados de correlação para esta célula e vamos sair e salvar isso como núcleo de sublinhado próximo.
+
+10
+00:00:46,860 --> 00:00:49,920
+E então, vamos entrar e dar uma olhada no fechamento ou núcleo quadrado.
+
+11
+00:00:49,920 --> 00:00:52,740
+Certifique-se de que temos o quadro de dados correto.
+
+12
+00:00:52,740 --> 00:00:58,440
+Parece que o fazemos na matriz e, então, podemos chamar de lote fora deste e
+
+13
+00:00:58,440 --> 00:01:05,520
+especificar os tipos de mapa de calor e você terá um mapa de calor que se parece com isso.
+
+14
+00:01:05,520 --> 00:01:08,520
+Agora, esta escala de cores realmente não é muito útil.
+
+15
+00:01:08,520 --> 00:01:14,730
+Então, você pode prosseguir e colocar uma outra escala de cores com os argumentos de escala de
+
+16
+00:01:14,730 --> 00:01:20,920
+cores e, provavelmente, o que é mais útil é o vermelho para R D amarelo e azul.
+
+17
+00:01:20,940 --> 00:01:28,350
+B e você pode fazer referência à documentação plotada se quiser mais opções de escala de cores.
+
+18
+00:01:28,420 --> 00:01:33,210
+Você pode verificar a escala de cores um pouco melhor, vai de 0 a 1 até a correlação.
+
+19
+00:01:33,240 --> 00:01:35,310
+Isso é interativo agora.
+
+20
+00:01:35,310 --> 00:01:41,470
+Agora eu ainda prefiro ver a própria visualização de Bourne para isso, mas eu queria que você estivesse ciente das
+
+21
+00:01:41,520 --> 00:01:43,980
+opções do enredo usando a biblioteca de abotoaduras.
+
+22
+00:01:43,980 --> 00:01:45,550
+Tudo bem em frente.
+
+23
+00:01:45,600 --> 00:01:50,810
+Avançemos e obtenhamos as capacidades financeiras específicas de abotoaduras e trama.
+
+24
+00:01:51,540 --> 00:01:57,840
+em frente e criar uma série de velas de ações usando uma linha de enredo e deixe-me entrar e mostrar-lhe que podemos fazer isso.
+
+25
+00:01:57,870 --> 00:01:58,810
+Então, você pode seguir
+
+26
+00:01:58,830 --> 00:02:02,550
+A primeira coisa que precisamos é pegar o estoque do Bank of America.
+
+27
+00:02:02,550 --> 00:02:07,620
+Eu vou fazer isso com o b c, se olharmos para o estado do quadro, lembre-se de
+
+28
+00:02:07,620 --> 00:02:14,640
+que temos um alto baixo aberto e precisamos dele em uma ordem específica para usar o gráfico da forma em que vamos usá-lo.
+
+29
+00:02:14,850 --> 00:02:16,560
+Então eu vou
+
+30
+00:02:19,830 --> 00:02:25,130
+pegar abrindo alto baixo e depois a chamada próxima.
+
+31
+00:02:25,380 --> 00:02:27,660
+Nós não queremos o volume real.
+
+32
+00:02:27,660 --> 00:02:32,230
+E então eu só quero os valores para 2015.
+
+33
+00:02:32,240 --> 00:02:43,390
+Quero dizer, é de qualquer uso I-X 2015 1 de janeiro de 2016 parece uma string 2016.
+
+34
+00:02:43,430 --> 00:02:45,420
+E vamos e digamos 1 de janeiro.
+
+35
+00:02:45,420 --> 00:02:53,070
+Então, todos os valores para 2015 salvaremos isso como BAC 15.
+
+36
+00:02:54,180 --> 00:03:01,380
+E então, na próxima linha, vou seguir em frente e dizer que 15 pensou tramar e, na verdade, vou especificar
+
+37
+00:03:01,380 --> 00:03:02,060
+algo nisso.
+
+38
+00:03:02,070 --> 00:03:07,660
+Eu argumento argumentos que vou dizer que o tipo é igual a Kandel.
+
+39
+00:03:08,700 --> 00:03:13,260
+E então você realmente poderá criar um gráfico de castiçal usando um enredo.
+
+40
+00:03:13,260 --> 00:03:17,880
+Agora, se você não está ciente do que é um argumento de candelabro é para análise financeira.
+
+41
+00:03:17,880 --> 00:03:23,520
+Basicamente, ele diz se o estoque subiu ou baixou esse dia, com base na cor, de modo que o
+
+42
+00:03:23,520 --> 00:03:30,360
+verde está aumentando o vermelho está diminuindo e, em seguida, ele tipo de diz a abertura alta e o preço de fechamento aqui.
+
+43
+00:03:30,360 --> 00:03:30,640
+&nbsp;
+
+44
+00:03:30,650 --> 00:03:34,240
+Esta informação pode seguir em frente e pesquisar na Wikipédia.
+
+45
+00:03:34,380 --> 00:03:36,890
+Castiças de castiçal se desejar mais informações.
+
+46
+00:03:36,900 --> 00:03:42,150
+Eu realmente leio isso, mas isso é mais apenas para análise financeira, então, basicamente, você diz
+
+47
+00:03:42,150 --> 00:03:46,640
+o fechamento aberto alto baixo e se o estoque subiu ou baixou naquele dia.
+
+48
+00:03:47,520 --> 00:03:48,220
+Tudo bem.
+
+49
+00:03:48,480 --> 00:03:55,430
+Vamos dar uma olhada no próximo gráfico que é o SMK e, basicamente, é apenas um plano simples de
+
+50
+00:03:55,440 --> 00:03:56,270
+médias móveis.
+
+51
+00:03:56,280 --> 00:03:59,440
+O enredo também pode criar um tipo de automaticamente para você.
+
+52
+00:03:59,520 --> 00:04:04,220
+Nós vamos seguir em frente e fazer isso com o estoque Morgan Stanley.
+
+53
+00:04:04,890 --> 00:04:09,180
+Então eu vou seguir em frente e pegar a próxima coluna do estoque Morgan Stanley.
+
+54
+00:04:09,210 --> 00:04:14,330
+Eu só quero fazer isso para o ano de 2015, então eu especificarei as mesmas datas.
+
+55
+00:04:14,330 --> 00:04:15,020
+Eu fiz aqui em cima.
+
+56
+00:04:15,030 --> 00:04:16,200
+gráfico de sublinhado.
+
+57
+00:04:19,170 --> 00:04:28,690
+Vamos pegar aqueles que vêm aqui, pegue as fichas da fatia a partir de 2015 e então vou chamar um
+
+58
+00:04:28,710 --> 00:04:35,430
+E esta é a análise técnica dos recursos do enredo de abotoaduras e então eu
+
+59
+00:04:35,430 --> 00:04:46,050
+vou dizer que o estudo é SMK períodos não especificados para ser um par de períodos que entraremos e dizer 13 21 e 55,
+
+60
+00:04:46,050 --> 00:04:48,910
+que são algumas análises técnicas comuns períodos.
+
+61
+00:04:49,320 --> 00:04:54,480
+E aqui podemos ver as médias móveis simples e trago um tipo de relatórios a medida que você
+
+62
+00:04:54,480 --> 00:05:00,170
+se move, o que é bastante bom e você pode aumentar o zoom e ver mais informações se desejar.
+
+63
+00:05:00,180 --> 00:05:00,820
+Tudo bem.
+
+64
+00:05:01,080 --> 00:05:04,390
+Vamos continuar e passar para este mais aqui.
+
+65
+00:05:04,410 --> 00:05:08,700
+Última que é a trama da Bollinger Band para o Bank of America.
+
+66
+00:05:09,000 --> 00:05:14,880
+E, novamente, esta é apenas outra análise técnica, você pode fazer qual tipo de mostra o desvio padrão do preço
+
+67
+00:05:14,970 --> 00:05:18,020
+das ações à medida que se move ao longo do tempo.
+
+68
+00:05:18,270 --> 00:05:21,180
+Mas novamente eu só quero isso para o ano de 2015.
+
+69
+00:05:21,210 --> 00:05:28,590
+Vá em frente e copie e cole a mesma fatia e faça t. um enredo de rascunho para trama de análise técnica e
+
+70
+00:05:28,590 --> 00:05:33,360
+o estudo que vamos fazer é igual à cadeia B O L L.
+
+71
+00:05:34,090 --> 00:05:39,900
+Agora, olhamos para isso, podemos ver as bandas superiores e inferiores enquanto nos movemos, bem como uma média móvel simples
+
+72
+00:05:39,900 --> 00:05:43,530
+e, em seguida, o preço de fechamento real que está em laranja.
+
+73
+00:05:43,890 --> 00:05:45,590
+ESTÁ BEM.
+
+74
+00:05:45,870 --> 00:05:49,560
+Há definitivamente muito mais tópicos específicos de finanças aqui.
+
+75
+00:05:49,560 --> 00:05:52,670
+Então não se preocupe se você não entende tudo o que acabamos de passar.
+
+76
+00:05:52,800 --> 00:05:57,840
+A única coisa que você deveria estar realmente preocupado é o que eu fiz com os panderers e algumas
+
+77
+00:05:57,840 --> 00:06:00,420
+das operações básicas de visualização ao longo da palestra.
+
+78
+00:06:00,420 --> 00:06:05,610
+Portanto, não se preocupe se você não entende todos esses gráficos de análise técnica específica, estes são apenas referências
+
+79
+00:06:05,610 --> 00:06:09,990
+para pessoas que já estão familiarizadas com este tópico, uma vez que não é uma classe
+
+80
+00:06:09,990 --> 00:06:10,690
+de análise financeira.
+
+81
+00:06:10,770 --> 00:06:16,260
+Isto é basicamente uma aula de ciência dos dados e a análise financeira é seu próprio campo de estudo.
+
+82
+00:06:16,260 --> 00:06:16,780
+Tudo bem.
+
+83
+00:06:16,830 --> 00:06:21,810
+Espero que você tenha achado isso interessante se você estiver nesse tipo de análise e eu vou ver você
+
+84
+00:06:21,810 --> 00:06:22,710
+na próxima palestra.
+
+85
+00:06:22,710 --> 00:06:23,720
+Obrigado a todos.

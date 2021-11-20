@@ -1,0 +1,971 @@
+1
+00:00:05,010 --> 00:00:09,870
+Hello everyone and welcome to the first map plot lib lecture and this lecture we're going to begin to
+
+2
+00:00:09,870 --> 00:00:13,260
+show you how you can use map plot lived with Python.
+
+3
+00:00:13,500 --> 00:00:16,360
+Let's go ahead and jump to the Jupiter note book to get started.
+
+4
+00:00:16,620 --> 00:00:16,890
+All right.
+
+5
+00:00:16,890 --> 00:00:23,120
+Here I am at the notebook the notebook for this lecture is called Math lib concepts lecture and all
+
+6
+00:00:23,160 --> 00:00:27,390
+the code are going to be doing is located in this notebook as well as a lot more information that's
+
+7
+00:00:27,390 --> 00:00:29,690
+available to you regarding that plot lib.
+
+8
+00:00:30,030 --> 00:00:30,450
+OK.
+
+9
+00:00:30,510 --> 00:00:34,680
+I'm going to go ahead and jump to a blank notebook and walk through all this code and explain it for
+
+10
+00:00:34,680 --> 00:00:36,300
+you.
+
+11
+00:00:36,300 --> 00:00:39,920
+Let me go out and click this new tab and here we have this new notebook.
+
+12
+00:00:40,110 --> 00:00:44,530
+When you go ahead and hide the header and toolbar just get a little more room here.
+
+13
+00:00:44,550 --> 00:00:44,920
+OK.
+
+14
+00:00:44,970 --> 00:00:46,990
+Let's go to get started about plotless.
+
+15
+00:00:47,490 --> 00:00:48,870
+Once you've installed met.
+
+16
+00:00:48,900 --> 00:00:58,200
+The first thing you're going to be able to do is say import map plot lib pie plots as TLT and then if
+
+17
+00:00:58,200 --> 00:01:05,710
+you're using the Jupiter note book what you're going to do is say percent sign Matt plot lib space in
+
+18
+00:01:05,720 --> 00:01:11,680
+line and that's going to allow you to actually see the plots you create inside the Jupiter notebook
+
+19
+00:01:11,780 --> 00:01:12,110
+.
+
+20
+00:01:12,180 --> 00:01:15,750
+Go ahead and run this great.
+
+21
+00:01:15,840 --> 00:01:19,920
+If you are not using that Jupiter notebook's system what you going to go ahead and do is at the end
+
+22
+00:01:19,920 --> 00:01:25,770
+of all your commands for plotting which will show later what you will type is Hilti that show close
+
+23
+00:01:25,770 --> 00:01:29,100
+parentheses and later on and we actually start plotting some examples.
+
+24
+00:01:29,100 --> 00:01:32,280
+Asha you would actually put that into your code.
+
+25
+00:01:32,400 --> 00:01:32,850
+All right.
+
+26
+00:01:32,940 --> 00:01:37,830
+Let's go ahead and walk through the very simple example using two numpy race going to go in and say
+
+27
+00:01:37,860 --> 00:01:46,040
+import them PI and P and say x is equal to any Lynn space.
+
+28
+00:01:46,080 --> 00:01:55,020
+So it's going to be linearly spaced we'll go from 0 to 5 and grab 11 points and then y is going to be
+
+29
+00:01:55,020 --> 00:01:56,210
+equal to x.
+
+30
+00:01:56,220 --> 00:01:58,110
+So the power of two.
+
+31
+00:01:58,740 --> 00:02:05,550
+So if we take a look at x and y we have an array from 0 to 5 and then WHY are just all those elements
+
+32
+00:02:05,550 --> 00:02:07,260
+squared.
+
+33
+00:02:07,350 --> 00:02:13,200
+Now basic map plot Lim commands allow you to very quickly create a plot and we'll show you two ways
+
+34
+00:02:13,200 --> 00:02:14,850
+of creating map plotted plots.
+
+35
+00:02:15,000 --> 00:02:20,550
+One is a functional method and the other one is the object oriented method will show the functional
+
+36
+00:02:20,550 --> 00:02:24,070
+method first and then we'll shift over to the object oriented method.
+
+37
+00:02:24,210 --> 00:02:28,770
+Since that's usually the better way of creating a about Cutlip plot let's go and show you the functional
+
+38
+00:02:28,770 --> 00:02:33,040
+method first the functional method is actually quite simple.
+
+39
+00:02:33,090 --> 00:02:40,290
+You say peel t got plots and then we can do shift tab here and you're going to pass in several arguments
+
+40
+00:02:40,290 --> 00:02:40,720
+.
+
+41
+00:02:40,740 --> 00:02:47,130
+First one you're going to do for just a basic plot is passing your X and your y elements and then we
+
+42
+00:02:47,130 --> 00:02:50,370
+can go ahead and do shift enter.
+
+43
+00:02:50,820 --> 00:02:53,000
+And here this will actually show the plot.
+
+44
+00:02:53,100 --> 00:02:55,870
+We've went ahead and plotted X versus Y.
+
+45
+00:02:56,150 --> 00:03:00,470
+If you're not in the Jupiter note book which you are going to do at the end of this line if you're in
+
+46
+00:03:00,480 --> 00:03:06,770
+your code say peel t show and then if I run that we can see we get the same plot.
+
+47
+00:03:06,810 --> 00:03:11,880
+You don't have to use t show unless you're using something that's not that Jupiter note no but the difference
+
+48
+00:03:11,880 --> 00:03:15,170
+in the Jupiter notebook is essentially like you're printing the plot.
+
+49
+00:03:15,300 --> 00:03:20,040
+Notice here if I don't have PBT that show I get out.
+
+50
+00:03:20,110 --> 00:03:25,820
+So if I remove this or actually put it back in then I don't get the out.
+
+51
+00:03:25,830 --> 00:03:34,560
+So that's essentially the same thing just to do a quick analogy as typing a string versus saying print
+
+52
+00:03:34,560 --> 00:03:35,040
+the string
+
+53
+00:03:38,720 --> 00:03:40,040
+and that's the exact same thing.
+
+54
+00:03:40,040 --> 00:03:44,760
+What KEELTY That shows doing is essentially printing out this plot instead of just showing the plot
+
+55
+00:03:44,780 --> 00:03:45,280
+.
+
+56
+00:03:45,810 --> 00:03:46,290
+All right.
+
+57
+00:03:46,590 --> 00:03:51,510
+For now on we won't actually concern ourselves with concert's consistently typing appeal to that show
+
+58
+00:03:51,510 --> 00:03:51,780
+.
+
+59
+00:03:51,780 --> 00:03:54,690
+However if you're not using Jupiter note book you will have to keep typing that.
+
+60
+00:03:54,840 --> 00:03:56,370
+So just keep that in mind.
+
+61
+00:03:56,970 --> 00:03:57,460
+All right.
+
+62
+00:03:57,630 --> 00:04:02,120
+So that's the most basic way to plot something about polyp which isn't so bad.
+
+63
+00:04:02,370 --> 00:04:09,270
+You can actually add that plot Matlab like arguments such as color and lifestyle.
+
+64
+00:04:09,910 --> 00:04:12,810
+And that will allow you to continue to edit this plot.
+
+65
+00:04:12,840 --> 00:04:17,730
+We'll talk a lot more about this later on as far as line styles and color styles but if you're familiar
+
+66
+00:04:17,730 --> 00:04:20,850
+with Matlab this probably already seems familiar to you.
+
+67
+00:04:21,030 --> 00:04:24,670
+Let's go to remove that for now and just go for the basics.
+
+68
+00:04:25,140 --> 00:04:30,330
+If we want to add an X label y label or title to this plot we can do that with the following methods
+
+69
+00:04:30,330 --> 00:04:30,510
+.
+
+70
+00:04:30,510 --> 00:04:39,240
+Can Say T X label and then just passing a string you want for the X label or go out and say X label
+
+71
+00:04:40,470 --> 00:04:48,750
+and then for the y label you can say p t y label pass in a string why label them for the title you can
+
+72
+00:04:48,750 --> 00:04:54,240
+say Piazzi that title and then we'll just go ahead and put in the title string there.
+
+73
+00:04:54,400 --> 00:04:55,810
+Go ahead and run this.
+
+74
+00:04:55,810 --> 00:04:59,290
+And now we can see we have an X label a y label and a title.
+
+75
+00:04:59,430 --> 00:05:05,830
+And later on we're going to learn how we can specify the CPI or dots per inch in order to get some more
+
+76
+00:05:05,830 --> 00:05:09,370
+clarity here such as a finer font.
+
+77
+00:05:09,370 --> 00:05:14,890
+Let's go ahead and continue on with creating multi plots on the same canvas.
+
+78
+00:05:15,000 --> 00:05:17,280
+We're going to go ahead and scroll down here.
+
+79
+00:05:17,380 --> 00:05:23,320
+Remove the cell and talk about putting multi plots on the same canvas nerds to do that.
+
+80
+00:05:23,310 --> 00:05:29,740
+We're going to say peel t subplot and subplot takes in couple of arguments as well.
+
+81
+00:05:29,740 --> 00:05:34,920
+Right now we can't see them so I'll go and tell you the first one is going to be the number of rows
+
+82
+00:05:34,920 --> 00:05:35,410
+.
+
+83
+00:05:35,760 --> 00:05:40,300
+The number of columns and then the plot number you're referring to in this case we'll just go ahead
+
+84
+00:05:40,300 --> 00:05:45,970
+and say one and we'll go ahead and plot something on that cell.
+
+85
+00:05:46,750 --> 00:05:56,230
+Will say X Y and we'll go ahead and specify that it's the color red string are as a third arguments
+
+86
+00:05:56,540 --> 00:05:56,940
+begin.
+
+87
+00:05:57,000 --> 00:06:01,480
+Don't worry too much about fully understanding this because once we get to the object oriented method
+
+88
+00:06:01,810 --> 00:06:03,480
+a lot of this going to make way more sense.
+
+89
+00:06:03,500 --> 00:06:06,160
+But I just want to show you what's possible for now.
+
+90
+00:06:06,660 --> 00:06:12,940
+Well let's go ahead and say another appeal to that subplot we specify one row by two columns.
+
+91
+00:06:13,240 --> 00:06:15,110
+And the third argument is the plot number.
+
+92
+00:06:15,170 --> 00:06:20,270
+Now we're going to edit the second plot and we'll say peel t that plot.
+
+93
+00:06:21,040 --> 00:06:27,100
+Well go ahead and do Y versus x and specify B for blue as a string.
+
+94
+00:06:27,100 --> 00:06:30,760
+Here let's go ahead and run this and see what we get.
+
+95
+00:06:31,380 --> 00:06:38,050
+OK so now we have two subplots here that's creating multiple plots on the same canvas.
+
+96
+00:06:38,050 --> 00:06:42,640
+Now we're going to do is after we've seen the very basics of creating a plot we're going to break this
+
+97
+00:06:42,670 --> 00:06:48,170
+all down for a more formal introduction to that libs object oriented API method.
+
+98
+00:06:48,280 --> 00:06:52,990
+And this means we're going to instantiate figure objects and then call methods or attributes from that
+
+99
+00:06:52,990 --> 00:06:53,710
+object.
+
+100
+00:06:53,710 --> 00:06:56,590
+And that's going to be a much better way of actually using that plot live.
+
+101
+00:06:56,800 --> 00:07:03,360
+So the basics for now are just using PBT the plot and then putting in your data or GLT that subplot
+
+102
+00:07:03,490 --> 00:07:07,760
+specifying the number of rows and columns and then the figure we are working on and then using Kilty
+
+103
+00:07:07,800 --> 00:07:08,610
+that plot.
+
+104
+00:07:08,880 --> 00:07:15,940
+Let's go and switch gears to the object oriented method and this is going to be much better.
+
+105
+00:07:15,940 --> 00:07:20,500
+The main idea in using the more formal object oriented method is to create figure objects and then just
+
+106
+00:07:20,500 --> 00:07:21,570
+call methods off of this.
+
+107
+00:07:21,580 --> 00:07:23,480
+Let me go in and show you what I mean by that.
+
+108
+00:07:23,680 --> 00:07:31,860
+I'm going to go ahead and say fig is equal to peel t figure and I'm going to go in and close the princes
+
+109
+00:07:31,870 --> 00:07:33,300
+there.
+
+110
+00:07:33,310 --> 00:07:34,960
+Now if I just run that cell.
+
+111
+00:07:34,960 --> 00:07:40,420
+Notice I have a figure object has been created this figure object you can think of it as just kind of
+
+112
+00:07:40,420 --> 00:07:42,580
+this imaginary blank canvas.
+
+113
+00:07:42,580 --> 00:07:45,810
+And we can add a set of access to this campus.
+
+114
+00:07:45,940 --> 00:07:55,150
+So in the same cell I'm going to say XS is equal to Fig dot add underscore axes and I'm going to add
+
+115
+00:07:55,140 --> 00:07:56,270
+a set of axes.
+
+116
+00:07:56,410 --> 00:08:03,370
+And the way you can add a set of axes is by passing in a list and the list takes int for arguments a
+
+117
+00:08:03,370 --> 00:08:07,930
+left bottom width and height arguments that range from 0 to 1.
+
+118
+00:08:07,930 --> 00:08:11,930
+Basically the percent of that blank canvas you want to go ahead and take.
+
+119
+00:08:12,070 --> 00:08:14,670
+Let me go in and show an example.
+
+120
+00:08:14,940 --> 00:08:19,120
+And again I'm kind of going to be showing you a lot of stuff that won't make sense at first but everything
+
+121
+00:08:19,120 --> 00:08:23,840
+will make sense at the end as you see repeated examples and you break it down further.
+
+122
+00:08:23,880 --> 00:08:26,100
+So I'm just typing in some numbers here.
+
+123
+00:08:26,170 --> 00:08:29,090
+This is going to be left of the axes.
+
+124
+00:08:29,380 --> 00:08:31,310
+It's going to be the bottom of the axes.
+
+125
+00:08:31,420 --> 00:08:35,230
+And this is going to be the width and the height of the axes 0.8.
+
+126
+00:08:35,290 --> 00:08:37,170
+Let me go ahead and run this on the cell.
+
+127
+00:08:37,540 --> 00:08:39,320
+And now notice what I get here.
+
+128
+00:08:39,390 --> 00:08:41,920
+Now I have a blank set of axes.
+
+129
+00:08:42,000 --> 00:08:48,310
+So I said P-T that figure created a figure object and then off that figure object I called the method
+
+130
+00:08:48,650 --> 00:08:54,880
+add a set of axes and passed in a list of where I actually want the axes to be placed next what I'm
+
+131
+00:08:54,880 --> 00:08:57,800
+going to do is actually plot on that set of axes.
+
+132
+00:08:58,120 --> 00:09:01,290
+And this is going to feel familiar to what we just did earlier.
+
+133
+00:09:01,360 --> 00:09:07,900
+You're going to say axes stop plots and let's go ahead and plot x and y on that set of axes and then
+
+134
+00:09:07,900 --> 00:09:09,160
+do shift enter.
+
+135
+00:09:09,490 --> 00:09:14,440
+And now you can see we've basically come up with the same plot we did earlier except using an object
+
+136
+00:09:14,500 --> 00:09:15,460
+oriented method.
+
+137
+00:09:15,460 --> 00:09:21,510
+So if I scroll back up here this is the plot we did earlier we just said Appeal teed that plot but now
+
+138
+00:09:21,550 --> 00:09:26,040
+using this sort of object oriented method we're going to have a lot more control over this.
+
+139
+00:09:26,050 --> 00:09:28,970
+It's a little more involved as far as the steps we need to take.
+
+140
+00:09:29,160 --> 00:09:30,650
+But it's definitely worth it.
+
+141
+00:09:31,140 --> 00:09:34,920
+So we've created the figure we called the figure method.
+
+142
+00:09:34,960 --> 00:09:41,030
+Add axes on this pass then a list of axes and then plotted on that sort of axes if we want to continue
+
+143
+00:09:41,050 --> 00:09:43,580
+by putting x labels y labels and titles.
+
+144
+00:09:43,620 --> 00:09:45,850
+You can go ahead and do that on that set of axes.
+
+145
+00:09:46,120 --> 00:09:50,070
+You can say set underscore ex-slave.
+
+146
+00:09:50,620 --> 00:09:53,360
+It's a little different from the peel T which is just X label.
+
+147
+00:09:53,410 --> 00:09:56,770
+When you're working at this Xs object you're going to say sets underscore.
+
+148
+00:09:57,150 --> 00:10:02,920
+And now we can go ahead and pass in the string x label and you're going to do the same thing for y labels
+
+149
+00:10:03,340 --> 00:10:07,990
+lips y label.
+
+150
+00:10:08,000 --> 00:10:12,760
+And let's go ahead and do the same thing for a title set underscore title
+
+151
+00:10:15,550 --> 00:10:21,060
+now if we run this we should see our new labels X label y label and set title.
+
+152
+00:10:21,610 --> 00:10:28,960
+Let's go ahead and continue this idea of object oriented programming with that live by putting in two
+
+153
+00:10:28,960 --> 00:10:30,700
+sets of figures on one canvas.
+
+154
+00:10:30,730 --> 00:10:35,350
+And this will start to make sense as far as what this list is referencing.
+
+155
+00:10:35,440 --> 00:10:40,180
+I'm going to go ahead and scroll down to a new cell and zoom in a little bit just so we can get a very
+
+156
+00:10:40,180 --> 00:10:42,730
+clear picture of what we're actually doing here.
+
+157
+00:10:42,750 --> 00:10:48,640
+I'm going to say fig is equal to realty figure.
+
+158
+00:10:49,060 --> 00:10:51,800
+So I'm creating that figure object.
+
+159
+00:10:51,940 --> 00:10:53,230
+So there's my figure object.
+
+160
+00:10:53,280 --> 00:11:02,640
+I'm going to say axes one is equal to Fig dot axes.
+
+161
+00:11:02,650 --> 00:11:11,380
+I don't mean to go hand in set main axes it will be zero point one zero point one and then zero point
+
+162
+00:11:11,430 --> 00:11:13,840
+eight 0.8.
+
+163
+00:11:13,940 --> 00:11:19,430
+And again this is the left the bottom and then the width and height of that sort of axes.
+
+164
+00:11:19,570 --> 00:11:28,710
+And then I'm going to add another set of axes column axes two going to say fig and underscore axes.
+
+165
+00:11:28,720 --> 00:11:34,140
+And then when I'm going to go ahead and do is basically put inserts axes I'm going to say the bottom
+
+166
+00:11:34,210 --> 00:11:41,180
+of the set of axes starts 20 percent from the left 50 percent from the bottom.
+
+167
+00:11:41,670 --> 00:11:44,240
+So excuse me here I'm talking about basically this.
+
+168
+00:11:44,290 --> 00:11:46,790
+This bottom corner of the axes sluffed and the bottom.
+
+169
+00:11:46,810 --> 00:11:51,450
+So 20 percent in from the left 50 percent up from the bottom.
+
+170
+00:11:51,790 --> 00:11:57,310
+And then we will say it takes up 40 percent of the canvas size and width and 30 percent of the canvas
+
+171
+00:11:57,310 --> 00:11:58,310
+size and height.
+
+172
+00:11:58,500 --> 00:12:01,690
+So all these values here must be between 0 and 1.
+
+173
+00:12:01,960 --> 00:12:06,180
+Let's go ahead and run this and know what we get out.
+
+174
+00:12:06,310 --> 00:12:12,400
+We get out this basically insert set of axes and hopefully now you can begin to see what these values
+
+175
+00:12:12,420 --> 00:12:18,190
+actually correspond to what I want you to do now is go ahead and pause the video and play around with
+
+176
+00:12:18,190 --> 00:12:18,900
+these numbers.
+
+177
+00:12:18,900 --> 00:12:24,540
+Make sure they're all either between 0 and 1 and see how they correlate with this set of axes.
+
+178
+00:12:24,550 --> 00:12:28,200
+Go ahead and just play around with axes 2 and move it around.
+
+179
+00:12:28,210 --> 00:12:32,940
+For instance try to get this sort of axes to over here at this bottom corner.
+
+180
+00:12:33,150 --> 00:12:34,050
+Good impulsivity.
+
+181
+00:12:34,090 --> 00:12:37,920
+See if you can move this insur over to the bottom corner.
+
+182
+00:12:37,950 --> 00:12:38,280
+All right.
+
+183
+00:12:38,290 --> 00:12:40,130
+I'm going to see if I can do that now.
+
+184
+00:12:40,690 --> 00:12:48,130
+So if I want this at the bottom corner I probably want to say that it goes left bottom width and height
+
+185
+00:12:48,120 --> 00:12:48,640
+.
+
+186
+00:12:48,650 --> 00:12:53,790
+So I will try shifting it down by making this basically just 0 so start.
+
+187
+00:12:53,950 --> 00:12:58,910
+Well it's going to say 0.1 here start at zero 1 5.
+
+188
+00:12:58,920 --> 00:13:05,270
+So a little off the bottom of this insert here of Axis 1 will go ahead and run this.
+
+189
+00:13:06,000 --> 00:13:10,300
+And there I was able to move it more towards the bottom remember this second one is the bottom.
+
+190
+00:13:10,500 --> 00:13:15,350
+And now we want to move more towards the right which means from the left a one or two percent.
+
+191
+00:13:15,360 --> 00:13:19,530
+Wise move this bottom corner more over from the left.
+
+192
+00:13:19,600 --> 00:13:22,310
+Let's go to set this as 8.
+
+193
+00:13:23,580 --> 00:13:25,640
+And that looks like shifted it a little too much.
+
+194
+00:13:25,620 --> 00:13:32,550
+So let's go in and shift it back to maybe five and there we can see we have it now in the bottom.
+
+195
+00:13:32,560 --> 00:13:34,460
+All right go ahead and play around if that.
+
+196
+00:13:34,500 --> 00:13:38,170
+If these figures are these numbers are still a little unclear.
+
+197
+00:13:38,160 --> 00:13:44,370
+Remember they're basically just denoting the left bottom and the width and height from range 0 to 1
+
+198
+00:13:44,720 --> 00:13:47,210
+relation to the blank canvas.
+
+199
+00:13:47,290 --> 00:13:55,280
+We're going to go ahead and reset these to what we have in that originally 0.2 and 0.5.
+
+200
+00:13:55,600 --> 00:13:57,410
+So we have our little insert there.
+
+201
+00:13:57,700 --> 00:14:00,880
+And then what I'm going to do is go ahead and plot on these axes.
+
+202
+00:14:01,090 --> 00:14:12,310
+So I'm going to say axes one plots and I will say X come a Y and then I will say axes two plots will
+
+203
+00:14:12,390 --> 00:14:16,510
+go and say why come x Let's go and run this.
+
+204
+00:14:16,500 --> 00:14:24,030
+And here I can see now I have my little insur and my outer plot and then I can keep adding stuff on
+
+205
+00:14:24,040 --> 00:14:29,480
+each set of axes if I want my insert to have a title for instance that's axes to.
+
+206
+00:14:29,520 --> 00:14:38,500
+I can say axes to the set title and we'll go and say insert.
+
+207
+00:14:38,750 --> 00:14:44,870
+Well it's going to make it very clear we'll say smaller lots and then on axes 1.
+
+208
+00:14:45,150 --> 00:14:46,470
+Let's go ahead and set a title
+
+209
+00:14:49,140 --> 00:14:54,550
+and we will set this title as larger clots going and run that.
+
+210
+00:14:55,210 --> 00:14:57,100
+So notice what happened here.
+
+211
+00:14:57,140 --> 00:15:02,290
+I actually got an error because I didn't actually see smaller plot because I forgot to put a 2.
+
+212
+00:15:02,290 --> 00:15:04,960
+Here let's run this one more time.
+
+213
+00:15:04,990 --> 00:15:07,250
+OK now we are getting what we're supposed to get.
+
+214
+00:15:07,270 --> 00:15:09,610
+We have larger plot and smaller plot.
+
+215
+00:15:09,880 --> 00:15:15,860
+And basically that's the idea behind object oriented programming that Portland you create a figure.
+
+216
+00:15:15,900 --> 00:15:17,830
+And that's essentially just an empty canvas.
+
+217
+00:15:17,980 --> 00:15:22,110
+So let me go in and show that one more time just by putting this in a cell by itself.
+
+218
+00:15:22,890 --> 00:15:25,650
+We create this empty figure there's nothing to show.
+
+219
+00:15:25,720 --> 00:15:34,900
+And then you add a set of axes to it by saying axes whatever one or two etc. equals fig thought at underscore
+
+220
+00:15:34,890 --> 00:15:40,540
+axes and you pass and this list that goes from left bottom and then the width and the height in relation
+
+221
+00:15:40,540 --> 00:15:42,720
+to this empty canvas.
+
+222
+00:15:42,730 --> 00:15:47,920
+So if we run this then we have our empty set of axes and then you can plot off those axes you can say
+
+223
+00:15:47,910 --> 00:15:53,060
+axes one plot and then X come a Y.
+
+224
+00:15:53,130 --> 00:15:53,940
+All right.
+
+225
+00:15:53,940 --> 00:15:59,590
+This is the sort of methodology we're going to be working with for a map Cutlip as far as the very basic
+
+226
+00:15:59,590 --> 00:16:02,750
+way of working that plotless which is the functional method.
+
+227
+00:16:02,860 --> 00:16:06,890
+You can just say appeal to that plot or peel that subplot.
+
+228
+00:16:06,920 --> 00:16:11,410
+We're going to learn how to create subplots using this object oriented method which is going to be a
+
+229
+00:16:11,400 --> 00:16:14,190
+lot more efficient and grant us a lot more control.
+
+230
+00:16:14,560 --> 00:16:15,700
+OK.
+
+231
+00:16:15,690 --> 00:16:20,250
+Go ahead and review this section of the map plot lib concepts lecture no book.
+
+232
+00:16:20,290 --> 00:16:25,450
+There's a lot more notes and a lot more comments in the note book in case any of this confused you but
+
+233
+00:16:25,780 --> 00:16:30,210
+hopefully by now you have a full understanding of basically this.
+
+234
+00:16:30,370 --> 00:16:34,420
+These lines of code right here if you understand what's going on in the cell then you're pretty much
+
+235
+00:16:34,410 --> 00:16:35,340
+good to go.
+
+236
+00:16:35,380 --> 00:16:36,900
+We just create a figure.
+
+237
+00:16:37,030 --> 00:16:43,150
+We add an axes to that figure to find the location of that set of axes with this list and then you can
+
+238
+00:16:43,140 --> 00:16:48,140
+plot on that sort of axes you can set the titles at the X label y label etc..
+
+239
+00:16:48,180 --> 00:16:49,000
+All right.
+
+240
+00:16:49,000 --> 00:16:49,890
+Thanks everyone.
+
+241
+00:16:50,000 --> 00:16:54,930
+And I will see you at the next lecture or we're going to continue this discussion off of the same Jupiter
+
+242
+00:16:54,930 --> 00:16:55,930
+notebook.
+
+243
+00:16:55,990 --> 00:16:57,430
+Thanks and I'll see you next lecture

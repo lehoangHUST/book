@@ -1,0 +1,855 @@
+1
+00:00:06,180 --> 00:00:11,970
+Salve a tutti e benvenuti alla conferenza sui array PI e questa lezione imparerà i vari modi in
+
+2
+00:00:11,970 --> 00:00:16,690
+cui è possibile creare una velocità maggiore utilizzando Python e quindi una libreria PI.
+
+3
+00:00:16,920 --> 00:00:20,460
+Andiamo avanti e salta alla nota di Giove per iniziare.
+
+4
+00:00:20,490 --> 00:00:20,760
+Tutto ok.
+
+5
+00:00:20,760 --> 00:00:27,000
+Qui siamo agli array di notebook di Jupiter, il modo principale in cui useremo il nome
+
+6
+00:00:27,030 --> 00:00:32,910
+della libreria PI durante il corso e sono essenzialmente in due gusti che vengono come
+
+7
+00:00:32,910 --> 00:00:37,450
+vettori monodimensionali o matrici bidimensionali ma possono entrambi si chiamano matrici.
+
+8
+00:00:37,450 --> 00:00:44,020
+nuovo umpiro da oggetti Python come una lista che sto per fare e creare un oggetto nella mia lista.
+
+9
+00:00:44,020 --> 00:00:48,730
+Se ce ne sono uno o due, usciamo e mostriamo come possiamo creare un
+
+10
+00:00:48,980 --> 00:00:50,840
+Uno due tre.
+
+11
+00:00:51,210 --> 00:00:54,180
+E se vado avanti e mostro solo quella lista.
+
+12
+00:00:54,350 --> 00:00:58,450
+Notate che ne esco uno due tre ed è solo una lista python.
+
+13
+00:00:58,650 --> 00:01:06,020
+Vado avanti e dico import pi come P e poi posso chiamare e pire array.
+
+14
+00:01:06,290 --> 00:01:10,920
+E ora posso trasmettere quell'elenco come array.
+
+15
+00:01:11,290 --> 00:01:15,900
+E notare che ottengo un array come contenitore per quell'oggetto lista.
+
+16
+00:01:15,930 --> 00:01:20,670
+E poi posso effettivamente assegnarlo e quindi chiamare semplicemente l'array fuori da quello.
+
+17
+00:01:20,790 --> 00:01:24,930
+Quindi posso lanciare una normale lista Python in un array.
+
+18
+00:01:24,990 --> 00:01:31,110
+Ora restituirò un array monodimensionale se voglio ottenere un array bidimensionale o una matrice.
+
+19
+00:01:31,170 --> 00:01:33,390
+Posso creare un elenco di elenchi.
+
+20
+00:01:33,420 --> 00:01:45,180
+Quindi, per esempio, posso dire che la mia matematica di sottolineatura è uguale a una lista di tre elenchi in modo che uno due tre
+
+21
+00:01:45,180 --> 00:01:52,450
+quattro cinque sei si liberano di quella virgola extra e poi di 7 8 9.
+
+22
+00:01:53,220 --> 00:02:03,570
+Quindi, osservo che ritorno a un elenco di elenchi e quindi se lo lancio su un array tornerò su un array bidimensionale e questo viene
+
+23
+00:02:03,570 --> 00:02:09,930
+notato sia dal modo in cui viene presentato come output, ma anche più importante dal
+
+24
+00:02:09,930 --> 00:02:14,340
+numero di parentesi visualizzate sulla chiusura e l'apertura di questo array.
+
+25
+00:02:14,580 --> 00:02:20,640
+Ho due serie di parentesi che indicano che Z in quell'arringo menzionabile ha tre righe e
+
+26
+00:02:20,640 --> 00:02:27,260
+tre colonne ed è così che puoi lanciare normali liste Python o liste di elenchi all'intervallo di umpire.
+
+27
+00:02:27,600 --> 00:02:33,030
+Di solito, comunque, probabilmente userete alcuni metodi di generazione incorporati di una torta per creare
+
+28
+00:02:33,060 --> 00:02:36,090
+effettivamente array molto più veloci e molto più semplici.
+
+29
+00:02:36,090 --> 00:02:40,520
+Andiamo avanti e passiamo attraverso alcuni dei modi più comuni per farlo.
+
+30
+00:02:40,560 --> 00:02:46,740
+Il modo più comune sarà probabilmente la creazione di un tasso più elevato sta usando arr. e questo è molto simile
+
+31
+00:02:46,740 --> 00:02:49,930
+alla funzione built-in range di Python.
+
+32
+00:02:49,950 --> 00:02:56,370
+Andrai avanti e dirai N. P. sistemare e poi avviare e fermare.
+
+33
+00:02:56,460 --> 00:03:02,490
+Quindi notate che avete un inizio di stop e quindi una dimensione del passo è un terzo argomento e il valore restituisce
+
+34
+00:03:02,490 --> 00:03:04,860
+valori equamente distanziati all'interno di questo dato intervallo.
+
+35
+00:03:04,860 --> 00:03:14,040
+Quindi, se dico solo da 0 a 10, ricordo proprio come nell'indicizzazione del range di Python inizia da zero.
+
+36
+00:03:14,070 --> 00:03:16,990
+Salirà ma non includerà il 10.
+
+37
+00:03:17,430 --> 00:03:20,660
+Riceverò un array da 0 fino a 9.
+
+38
+00:03:20,760 --> 00:03:24,840
+Così comincio da 0 e vado fino a ma non includendo 10.
+
+39
+00:03:25,020 --> 00:03:29,480
+Quindi ottengo 10 cifre indietro 0 1 2 3 4 5 6.
+
+40
+00:03:29,890 --> 00:03:33,900
+Funziona essenzialmente come la funzione dell'intervallo di Python.
+
+41
+00:03:33,960 --> 00:03:37,990
+Quindi voglio andare da zero fino a 10 dopo Z.
+
+42
+00:03:38,190 --> 00:03:43,010
+Devo dire zero virgola 11 ed è quello che torno indietro.
+
+43
+00:03:43,380 --> 00:03:46,930
+E poi finalmente posso aggiungere un terzo argomento in una dimensione di passaggio.
+
+44
+00:03:46,980 --> 00:03:51,820
+Quindi se fossi tutti i numeri pari da 0 a 10 potrei dire zero venire 11.
+
+45
+00:03:51,960 --> 00:03:58,930
+E poi con un passo di due, in modo che salissi a passi di 2 0 2 4 6 8 10.
+
+46
+00:03:59,070 --> 00:04:05,580
+Ciò significa che un intervallo sarà una delle funzioni più utili per generare rapidamente un array
+
+47
+00:04:05,580 --> 00:04:06,590
+usando pi.
+
+48
+00:04:06,960 --> 00:04:12,330
+Se vuoi specifici tipi di array, ci sono altre funzioni in non-pilot che possono aiutarci a farlo.
+
+49
+00:04:12,330 --> 00:04:19,970
+Ad esempio, se vuoi generare array di tutti gli zeri, possiamo dire zeri P-doc e puoi passare
+
+50
+00:04:19,970 --> 00:04:22,050
+in una sola cifra.
+
+51
+00:04:22,050 --> 00:04:30,780
+Quindi ottieni un vettore monodimensionale o puoi dire N. P. che zeri e passa una tupla delle dimensioni
+
+52
+00:04:30,780 --> 00:04:36,840
+che vuoi che il primo numero rappresenti il ​​numero di righe e il secondo numero in quella
+
+53
+00:04:36,840 --> 00:04:39,220
+tupla rappresenterà il numero di colonne.
+
+54
+00:04:39,240 --> 00:04:48,770
+Per esempio, voglio righe di tre colonne che passo nella tupla per arrivare a tre e torno a Rose
+
+55
+00:04:48,770 --> 00:04:53,330
+di tre colonne e questo è indicato dalle parentesi.
+
+56
+00:04:53,360 --> 00:04:59,620
+Va bene se voglio un aumento di quelli puri, posso dire quelli.
+
+57
+00:04:59,690 --> 00:05:07,580
+Analogamente, posso passare o un singolo numero o un array monodimensionale o una tupla di essi menziona per
+
+58
+00:05:08,180 --> 00:05:16,370
+una matrice bidimensionale che è uno e zeri in un'altra funzione incorporata veramente utile è lo spazio obiettivo e
+
+59
+00:05:16,370 --> 00:05:21,500
+lo spazio restituisce i numeri equamente distanziati in un intervallo specificato.
+
+60
+00:05:21,750 --> 00:05:23,960
+È importante non confondere Lewan.
+
+61
+00:05:23,990 --> 00:05:31,490
+Disponi il tuo modo di vedere che un intervallo in pratica restituisce numeri interi da un punto iniziale e uno stop e da una
+
+62
+00:05:31,490 --> 00:05:32,600
+data dimensione del passo.
+
+63
+00:05:32,720 --> 00:05:37,580
+del numero di punti che vuoi farti vedere per quello che intendo dire che posso dire
+
+64
+00:05:37,580 --> 00:05:45,140
+lo spazio di P Gotland e ottengo un passaggio e uno start stop e c'è un terzo argomento che ho intenzione di inserire in un numero.
+
+65
+00:05:45,140 --> 00:05:50,300
+Quello che lo spazio di Lin sta per fare è che prenderà in considerazione un terzo argomento
+
+66
+00:05:50,300 --> 00:06:00,590
+Quindi diciamo che ho un inizio di zero e uno stop di cinque e voglio ottenere 10 punti equidistanti
+
+67
+00:06:00,590 --> 00:06:02,510
+tra zero e cinque.
+
+68
+00:06:02,510 --> 00:06:09,650
+Posso passare un terzo argomento 10 e questo ritorna indietro con un vettore unidimensionale annotato dalla serie
+
+69
+00:06:09,650 --> 00:06:15,490
+di parentesi una volta qui di dieci punti equidistanti da zero a cinque.
+
+70
+00:06:15,490 --> 00:06:18,140
+E posso cambiare questo terzo argomento con il numero che voglio.
+
+71
+00:06:18,140 --> 00:06:24,140
+Quindi, se voglio 100 punti equidistanti da zero a cinque, posso solo passarlo e restituire
+
+72
+00:06:24,140 --> 00:06:26,470
+un array monodimensionale molto più grande.
+
+73
+00:06:26,540 --> 00:06:30,800
+E tieni a mente anche se sembra che questo sia per loro fino al modo in
+
+74
+00:06:31,040 --> 00:06:35,870
+cui viene stampato, puoi dire che è unidimensionale dal fatto che c'è una sola parentesi qui davanti all'array
+
+75
+00:06:36,460 --> 00:06:40,220
+quando hai a che fare con due dimensioni vedrai che hai due serie di parentesi.
+
+76
+00:06:40,220 --> 00:06:42,910
+All'apertura o chiusura alle estremità.
+
+77
+00:06:42,980 --> 00:06:46,140
+Tre di quelli che ho menzionato avranno tre parentesi ecc. Tutto ok.
+
+78
+00:06:46,310 --> 00:06:47,120
+Quindi è quando lo spazio.
+
+79
+00:06:47,120 --> 00:06:48,320
+che si desidera organizzare
+
+80
+00:06:48,320 --> 00:06:54,980
+assumerà quell'argomento come dimensione del passo che si desidera andare avanti e mostrare come è possibile creare una matrice di identità usando pi.
+
+81
+00:06:54,980 --> 00:07:01,430
+Ancora una volta non confondere lo spazio con l'organizzazione dello spazio per i lanci occuperà il terzo argomento poiché il numero di punti
+
+82
+00:07:01,430 --> 00:07:04,960
+Possiamo dire n p e y e.
+
+83
+00:07:05,360 --> 00:07:08,680
+E poi hai solo una cifra in matrice di identità.
+
+84
+00:07:09,350 --> 00:07:13,570
+Se non ti è familiare è una matrice utile quando hai a che fare con problemi di algebra lineare.
+
+85
+00:07:13,580 --> 00:07:17,750
+Ed è fondamentalmente solo una matrice quadrata bidimensionale che significa che
+
+86
+00:07:17,900 --> 00:07:23,040
+il numero di righe è lo stesso di un numero di colonne e che
+
+87
+00:07:23,040 --> 00:07:30,320
+hai una diagonale di quelle che tutto il resto è zero e questo è il motivo per cui basta una
+
+88
+00:07:30,320 --> 00:07:36,440
+sola cifra come argomento perché dice che la matrice deve essere quadrata come output e P i.
+
+89
+00:07:36,650 --> 00:07:38,340
+Bene, adesso anche pi ha molti modi per creare matrici di numeri casuali.
+
+90
+00:07:39,170 --> 00:07:45,320
+E lo useremo spesso durante il corso, quindi andiamo avanti
+
+91
+00:07:45,380 --> 00:07:49,100
+e illustreremo alcuni modi per farlo.
+
+92
+00:07:49,100 --> 00:07:49,690
+Quello che stai andando avanti e fare è chiamare N. P. punti casuali e quindi eseguito il metodo.
+
+93
+00:07:50,090 --> 00:07:58,040
+Potresti vedere che in realtà ci sono un bel po 'di metodi.
+
+94
+00:07:58,100 --> 00:08:01,520
+Quindi entreremo e mostreremo quelli più comuni.
+
+95
+00:08:01,580 --> 00:08:05,130
+Il primo è Ran's sono a e b.
+
+96
+00:08:05,660 --> 00:08:09,080
+campioni casuali da una distribuzione uniforme su 0 a 1.
+
+97
+00:08:09,590 --> 00:08:14,570
+E questo creerà una matrice della forma data che passi e la popolerà con
+
+98
+00:08:14,630 --> 00:08:19,620
+E questo significa che se voglio solo otto array monodimensionali di numeri casuali distribuiti uniformemente
+
+99
+00:08:19,620 --> 00:08:24,950
+da 0 a 1, posso passare in una singola cifra e tornerò indietro con quell'array monodimensionale.
+
+100
+00:08:24,950 --> 00:08:30,840
+Voglio che questo sia menzionato.
+
+101
+00:08:31,160 --> 00:08:34,760
+A differenza delle precedenti funzioni con cui hai lavorato invece di passare in una tupla.
+
+102
+00:08:35,030 --> 00:08:38,930
+In realtà passerò semplicemente le dimensioni come argomenti separati.
+
+103
+00:08:38,950 --> 00:08:42,820
+Questo significa che se voglio una matrice cinque o cinque
+
+104
+00:08:42,860 --> 00:08:49,130
+di numeri casuali, passo e 5 provengono 5 invece della tupla e funzionano con queste librerie casuali.
+
+105
+00:08:49,130 --> 00:08:52,040
+Va bene se vogliamo restituire un campione o
+
+106
+00:08:52,400 --> 00:08:58,490
+molti campioni dalla distribuzione normale standard o una distribuzione gaussiana invece di usare Ranz, possiamo usare rand n.
+
+107
+00:08:58,490 --> 00:09:02,580
+E questo significa che posso dire che P ha pensato che il pensiero casuale
+
+108
+00:09:03,030 --> 00:09:10,790
+Ran's n e questo restituirà numeri non da una distribuzione uniforme da 0 a 1, ma da un normale centro di distribuzione normale attorno allo zero.
+
+109
+00:09:10,790 --> 00:09:16,750
+Ciò significa che posso andare avanti e passare in due e ottengo due numeri casuali da una distribuzione normale standard.
+
+110
+00:09:17,060 --> 00:09:25,130
+E più avanti vedremo che non li tracciando in questa conferenza ma ottiene anche la visualizzazione dei dati.
+
+111
+00:09:25,670 --> 00:09:30,140
+Andremo avanti e mostreremo una bella curva di distribuzione normale o una curva di distribuzione gaussiana.
+
+112
+00:09:30,560 --> 00:09:35,200
+E ancora, se voglio che questo sia bidimensionale, posso solo passare in due dimensioni.
+
+113
+00:09:35,950 --> 00:09:40,580
+Quindi per un quattro per quattro dico quattro come quattro.
+
+114
+00:09:40,670 --> 00:09:43,540
+E no, non passo una tupla qui, ma passo
+
+115
+00:09:43,970 --> 00:09:49,070
+ogni volta che cito come argomento separato e posso vedere dall'insieme di due parentesi è una
+
+116
+00:09:49,070 --> 00:09:57,020
+matrice bidimensionale come output e il metodo casuale finale di creare un array noi ' Andremo a conoscere Rand int e che restituisce numeri interi
+
+117
+00:09:57,200 --> 00:10:02,990
+casuali da un numero basso a uno alto o vai avanti e mostraci cosa possiamo fare per quello.
+
+118
+00:10:03,000 --> 00:10:06,140
+Andrai avanti e digli che assi casuale Rand I. UN. dovrai pasan.
+
+119
+00:10:06,140 --> 00:10:12,310
+Vado a quella scheda maiuscola qui a un livello basso e alto e quindi alla dimensione effettiva desiderata.
+
+120
+00:10:12,360 --> 00:10:17,810
+tra 1 e 100 e il minimo è inclusivo.
+
+121
+00:10:17,810 --> 00:10:26,870
+Quindi, per esempio, se dici solo da 1 a 100 otterrai un numero casuale compreso
+
+122
+00:10:26,930 --> 00:10:27,700
+E il significato esclusivo di x alto ha la possibilità di essere selezionato ma 100 no.
+
+123
+00:10:27,750 --> 00:10:34,570
+E se vuoi un particolare numero di numeri casuali, puoi passarli come terzo argomento.
+
+124
+00:10:35,540 --> 00:10:40,410
+Quindi da numeri interi casuali da 1 a 100.
+
+125
+00:10:40,400 --> 00:10:43,770
+Ma non includendo 100.
+
+126
+00:10:43,790 --> 00:10:45,160
+Posso solo passare e
+
+127
+00:10:45,440 --> 00:10:50,930
+10 lì e ci sono 10 numeri casuali compresi sul minimo in un'esclusiva nella fascia alta.
+
+128
+00:10:50,930 --> 00:10:51,920
+OK.
+
+129
+00:10:52,200 --> 00:10:52,820
+Andiamo a discutere solo alcuni attributi e metodi utili di un array per farlo.
+
+130
+00:10:53,100 --> 00:10:59,350
+Ho intenzione di andare avanti e creare due nuovi oggetti array in cui andiamo, cancellare questo e cancellare queste celle.
+
+131
+00:10:59,370 --> 00:11:05,450
+Tutto ok.
+
+132
+00:11:07,830 --> 00:11:08,630
+Dirò una variabile r r e dirò che è uguale alla gamma pura 25.
+
+133
+00:11:08,630 --> 00:11:16,330
+Quindi, se controllo che aspetto A-R, ecco un array monodimensionale di zero fino a 24.
+
+134
+00:11:16,380 --> 00:11:22,220
+E poi dirò che Rand è davvero casuale e sarà Rand.
+
+135
+00:11:22,500 --> 00:11:30,660
+Devo mettere una D lì.
+
+136
+00:11:31,000 --> 00:11:32,790
+Numeri interi casuali da 0 a 50.
+
+137
+00:11:32,960 --> 00:11:35,980
+Quindi non ne ho presi 10.
+
+138
+00:11:36,390 --> 00:11:37,930
+Quindi, se Iaka o
+
+139
+00:11:38,210 --> 00:11:44,040
+Esegui, sembra che assomigli a questo, potresti ottenere valori diversi perché è selezionato casualmente.
+
+140
+00:11:44,030 --> 00:11:44,690
+Questi dovrebbero avere solo 10 interi lì.
+
+141
+00:11:44,690 --> 00:11:47,890
+Tutto ok.
+
+142
+00:11:48,020 --> 00:11:48,780
+Uno dei metodi più utili che puoi usare su un array è il metodo di risagoma.
+
+143
+00:11:48,840 --> 00:11:53,130
+E questo restituirà un array che contiene gli stessi dati se in una nuova forma.
+
+144
+00:11:53,300 --> 00:11:57,770
+e io passo le nuove dimensioni che voglio.
+
+145
+00:11:57,770 --> 00:12:07,930
+Ciò significa che posso richiamare i punti Mirei e quindi il metodo di rimodellamento su di esso si rimodella
+
+146
+00:12:07,940 --> 00:12:08,940
+Quindi, per esempio se voglio rimodellare quel membro dell'array A R R è venticinque cifre da zero a 24.
+
+147
+00:12:08,930 --> 00:12:16,940
+Posso rimodellarlo come un array 5 per 5 usando reshape e poi
+
+148
+00:12:16,940 --> 00:12:24,350
+passare il numero di righe che vuoi e il numero di colonne.
+
+149
+00:12:24,360 --> 00:12:25,780
+Tieni presente che riceverai un errore se non puoi riempire completamente quella matrice.
+
+150
+00:12:25,790 --> 00:12:30,630
+Quindi, per esempio, se volessi 5 per 10 avrei bisogno di 50 elementi per farlo.
+
+151
+00:12:30,620 --> 00:12:35,940
+E visualizzerò un errore qui perché la dimensione totale del nuovo array deve essere invariata.
+
+152
+00:12:36,200 --> 00:12:40,820
+di elementi, quindi cinque volte cinque è uguale a 25.
+
+153
+00:12:40,940 --> 00:12:48,990
+Significa che devi riempire usando solo le cifre che hai o gli elementi che hai un modo semplice per
+
+154
+00:12:48,990 --> 00:12:56,310
+verificare che il numero di righe moltiplicato per il numero di colonne è uguale al numero effettivo
+
+155
+00:12:56,370 --> 00:12:59,330
+E so di avere 25 elementi in questo array.
+
+156
+00:12:59,450 --> 00:13:02,860
+OK, entriamo e mostriamo un paio di metodi più utili per trovare
+
+157
+00:13:02,900 --> 00:13:08,780
+i valori massimi o minimi o per trovare la loro posizione e faremo molte più operazioni in seguito nelle prossime lezioni.
+
+158
+00:13:09,200 --> 00:13:13,670
+Ecco alcuni utili per farti sapere.
+
+159
+00:13:13,830 --> 00:13:15,880
+Quindi vai avanti e controlla il nostro array casuale.
+
+160
+00:13:15,960 --> 00:13:17,880
+Un'altra volta.
+
+161
+00:13:17,880 --> 00:13:18,980
+Di nuovo i tuoi numeri potrebbero essere diversi, ma per il gusto di questo esercizio non ha molta importanza.
+
+162
+00:13:18,990 --> 00:13:24,030
+Se vuoi trovare il valore massimo nel tuo array.
+
+163
+00:13:24,120 --> 00:13:27,400
+È possibile chiamare il metodo max al di fuori di esso e questo restituirà il valore massimo di tale array.
+
+164
+00:13:27,440 --> 00:13:33,170
+Allo stesso modo se si vuole ottenere il valore minimo dell'array.
+
+165
+00:13:33,870 --> 00:13:37,340
+Puoi chiamare il metodo min al di fuori di esso.
+
+166
+00:13:37,350 --> 00:13:40,240
+Diamo un'occhiata alla matrice.
+
+167
+00:13:40,280 --> 00:13:41,710
+Ancora una volta
+
+168
+00:13:41,730 --> 00:13:48,980
+possiamo determinare la posizione dei valori massimo o minimo specificando il nostro massimo o minimo.
+
+169
+00:13:49,080 --> 00:13:50,490
+Significato se voglio sapere
+
+170
+00:13:50,580 --> 00:13:59,660
+in realtà quale valore di indice è questo Max situato a 49 posso dire Ranh sono Argive Max e che restituirà la posizione dell'indice del valore massimo.
+
+171
+00:13:59,680 --> 00:14:04,750
+Quindi noto che 49 si trova nell'indice 3.
+
+172
+00:14:04,980 --> 00:14:08,270
+Quindi 0 1 2 3.
+
+173
+00:14:08,450 --> 00:14:11,310
+Ho quarantanove lì.
+
+174
+00:14:11,420 --> 00:14:12,930
+E ancora puoi fare la
+
+175
+00:14:13,100 --> 00:14:18,470
+stessa cosa con il valore minuto che puoi dire sono uomini e restituirà la posizione dell'indice del valore minimo.
+
+176
+00:14:18,470 --> 00:14:20,990
+Quindi 6 è la posizione dell'indice il valore minimo e il valore minimo era tre.
+
+177
+00:14:21,000 --> 00:14:25,760
+In questo caso.
+
+178
+00:14:25,760 --> 00:14:26,940
+OK.
+
+179
+00:14:27,500 --> 00:14:28,130
+E rapidamente alcuni altri metodi e attributi utili.
+
+180
+00:14:28,400 --> 00:14:31,820
+Se vuoi capire la forma del
+
+181
+00:14:31,970 --> 00:14:39,050
+vettore, puoi dire che sono modellati in un ritorno basso della forma.
+
+182
+00:14:39,060 --> 00:14:39,980
+Notate qui che ottengo 25 Khama e questo indica che un array era solo un vettore unidimensionale.
+
+183
+00:14:39,980 --> 00:14:47,910
+Se procedo, lo rimodellamento.
+
+184
+00:14:49,080 --> 00:14:50,960
+Quindi dirò rimodellato a cinque per cinque e imposterò quello uguale a R. Oppure un r r.
+
+185
+00:14:51,140 --> 00:15:01,060
+Si noti ora che ho una matrice bidimensionale chiamata forma di punto fuori da quella.
+
+186
+00:15:01,160 --> 00:15:02,190
+Notate che non sto mettendo le parentesi.
+
+187
+00:15:02,180 --> 00:15:07,340
+Sto solo chiamando l'attributo fuori di esso.
+
+188
+00:15:07,350 --> 00:15:08,970
+Ora riporta che è un cinque per cinque.
+
+189
+00:15:09,000 --> 00:15:11,350
+Quindi è a quel Mitchell ora e l'ultimo attributo utile
+
+190
+00:15:11,390 --> 00:15:14,360
+che voglio mostrare per ora è il tipo di dati in questo array.
+
+191
+00:15:14,450 --> 00:15:20,810
+Se sei mai curioso di sapere quale tipo di dati hai un array, puoi semplicemente dire un r r e digitare come un attributo di tipo D restituirà il tipo di dati effettivo
+
+192
+00:15:20,820 --> 00:15:21,690
+che è sulla tua strada.
+
+193
+00:15:21,750 --> 00:15:28,410
+In questo caso numeri interi a 32 bit.
+
+194
+00:15:28,500 --> 00:15:32,700
+OK.
+
+195
+00:15:32,720 --> 00:15:35,470
+Solo una rapida recensione di tutto ciò che abbiamo passato.
+
+196
+00:15:35,510 --> 00:15:36,000
+Ti abbiamo mostrato come creare
+
+197
+00:15:36,200 --> 00:15:38,660
+un rilancio dell'impero sia lanciando una lista a un array più alto sia usando una delle funzioni incorporate per un array di arbitri come arr. zeri e quelli di Lyn
+
+198
+00:15:38,720 --> 00:15:45,390
+e io e anche i metodi di generazione casuale che chiamate N. P. che li ha fatti funzionare e poi Rand ha funzionato e ha
+
+199
+00:15:45,380 --> 00:15:52,680
+funzionato e alcuni degli altri metodi casuali.
+
+200
+00:15:52,670 --> 00:15:59,840
+casualmente e poi qualunque metodo o funzione vuoi importare .
+
+201
+00:15:59,850 --> 00:16:01,690
+Va bene e un ultimo indizio voglio mostrarti
+
+202
+00:16:01,730 --> 00:16:06,920
+se non vuoi digitare NPE casualmente che Rand è quello che puoi fare è che puoi dire da PI che importa
+
+203
+00:16:06,940 --> 00:16:16,200
+Quindi se volessi importare Rand I N C potresti andare avanti e farlo.
+
+204
+00:16:16,190 --> 00:16:17,440
+E poi, invece di dire che il pensiero casuale pensato correva inti, puoi semplicemente dire che sono io di Rand. UN. e ho
+
+205
+00:16:17,450 --> 00:16:20,900
+un riferimento per te stesso.
+
+206
+00:16:20,900 --> 00:16:27,480
+Ecco qua.
+
+207
+00:16:27,470 --> 00:16:30,020
+OK.
+
+208
+00:16:30,020 --> 00:16:31,110
+fare riferimento a qualsiasi di questo codice o a qualsiasi nota che abbia effettivamente parlato durante questa lezione.
+
+209
+00:16:31,190 --> 00:16:32,130
+Ricorda ancora che hai il quaderno con tutte le note nel caso in cui desideri
+
+210
+00:16:32,250 --> 00:16:36,650
+Prossimamente scopriremo l'indicizzazione e la selezione per una
+
+211
+00:16:36,680 --> 00:16:40,760
+gara di umpire e le operazioni degli arbitri.
+
+212
+00:16:40,760 --> 00:16:45,860
+Grazie a tutti e ci vediamo alla prossima lezione
+
+213
+00:16:45,870 --> 00:16:47,270
+&nbsp;
+
+214
+00:16:47,270 --> 00:16:49,310
+&nbsp;

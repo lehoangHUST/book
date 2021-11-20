@@ -1,0 +1,911 @@
+1
+00:00:05,430 --> 00:00:06,300
+Hola a todos.
+
+2
+00:00:06,300 --> 00:00:09,050
+Bienvenido a la conferencia de la Parte 2 del marco de datos.
+
+3
+00:00:09,090 --> 00:00:14,310
+La última vez dejamos en cómo crear un marco de datos básico y obtener información de ese marco de datos.
+
+4
+00:00:14,790 --> 00:00:19,760
+Ahora vamos a ver la selección condicional así como algunas partes de índice multa del marco de datos.
+
+5
+00:00:20,430 --> 00:00:23,120
+Avancemos y vayamos al cuaderno de Júpiter para comenzar.
+
+6
+00:00:23,520 --> 00:00:23,970
+Todo bien.
+
+7
+00:00:23,970 --> 00:00:25,940
+Aquí estamos de regreso en el cuaderno de Júpiter.
+
+8
+00:00:25,950 --> 00:00:28,460
+Voy a utilizar el mismo marco de datos como la última vez.
+
+9
+00:00:28,470 --> 00:00:35,600
+Shurmur solo teníamos que decir que el teclado numérico de S &amp; P pins PD importó a Rand y estableció el asiento en 101 y luego dijo que el
+
+10
+00:00:35,600 --> 00:00:38,280
+marco de datos se había alquilado y que 5 estaban disponibles.
+
+11
+00:00:38,460 --> 00:00:41,270
+Y luego aquí tenemos nuestro marco de datos.
+
+12
+00:00:42,410 --> 00:00:45,240
+De acuerdo, entremos y hablemos de la selección condicional.
+
+13
+00:00:45,360 --> 00:00:50,580
+Una característica muy importante de pantless es la capacidad de realizar una selección condicional usando la notación
+
+14
+00:00:50,690 --> 00:00:57,570
+de corchetes y esto será muy similar a PI por ejemplo para un operador de comparación contra el marco de datos, como
+
+15
+00:00:57,930 --> 00:01:01,070
+preguntar dónde está el marco de datos mayor que cero.
+
+16
+00:01:01,080 --> 00:01:06,420
+valor del marco de datos en ese punto era mayor que cero y falso si no era mayor que cero.
+
+17
+00:01:06,420 --> 00:01:10,620
+Obtendré un dato de la parte posterior de los valores booleanos donde devuelve verdadero si el
+
+18
+00:01:10,740 --> 00:01:16,200
+Y esto es muy similar a la misma selección condicional aplicada a un empleado completo, excepto en este caso estamos
+
+19
+00:01:16,200 --> 00:01:18,480
+haciendo un cambio en el estado de los marcos.
+
+20
+00:01:18,480 --> 00:01:27,270
+Y así podemos seguir y decir que los bullwhips armados con f son iguales a DFA mayores que cero.
+
+21
+00:01:27,960 --> 00:01:29,590
+Y como dice Boulia.
+
+22
+00:01:29,610 --> 00:01:32,470
+Adelante, mira eso.
+
+23
+00:01:32,690 --> 00:01:39,120
+tenemos nuestro marco de datos booleano y si pasamos eso a nuestro marco de
+
+24
+00:01:39,120 --> 00:01:48,750
+datos original con notación de corchete, entonces obtendremos como resultado valores donde era verdadero y Knoll o cualquier n donde sea falso.
+
+25
+00:01:48,750 --> 00:01:49,820
+Y aquí
+
+26
+00:01:49,980 --> 00:01:55,200
+Y esa es la forma en que puede usar la selección condicional junto con un marco de datos.
+
+27
+00:01:55,200 --> 00:01:58,830
+Ahora, por lo general, probablemente no separarías esto en dos pasos.
+
+28
+00:01:58,890 --> 00:02:00,230
+Solo dirías.
+
+29
+00:02:00,270 --> 00:02:05,760
+Y luego entre corchetes algo así como DF mayor que cero y obtendrías este resultado.
+
+30
+00:02:06,030 --> 00:02:12,340
+Este tipo de operación con un marco de datos y contra un operador de comparación no es tan común.
+
+31
+00:02:12,370 --> 00:02:17,220
+pasará en una fila o un valor de columna y en lugar de devolver Knolles lo que
+
+32
+00:02:17,220 --> 00:02:23,700
+va a hacer es devolver solo las filas o columnas de un subconjunto del marco de datos donde tus condiciones son verdaderas
+
+33
+00:02:23,700 --> 00:02:28,970
+Lo más probable es que termine haciendo en lugar de solo pasar todo el marco de datos que
+
+34
+00:02:28,980 --> 00:02:33,720
+Ahora déjame ir a mostrar un ejemplo de lo que quiero decir con eso no podría echar un vistazo a nuestro marco de datos original.
+
+35
+00:02:34,780 --> 00:02:38,830
+Aquí tenemos las filas A-3 y las columnas w hasta Z.
+
+36
+00:02:39,090 --> 00:02:42,900
+Lo que voy a seguir adelante y hacer es especificar.
+
+37
+00:02:42,990 --> 00:02:46,580
+De W mayor que cero.
+
+38
+00:02:46,620 --> 00:02:49,470
+Y note que recupero una serie.
+
+39
+00:02:49,470 --> 00:02:54,770
+True true false true true y esto está relacionado con el índice real.
+
+40
+00:02:54,780 --> 00:03:01,390
+veo que esto corresponde con los valores de la columna W y el valor en el índice c, en realidad era menor que cero.
+
+41
+00:03:01,390 --> 00:03:03,980
+Y si echo un vistazo a la columna W,
+
+42
+00:03:04,110 --> 00:03:06,710
+Entonces devuelve False por ser mayor que cero.
+
+43
+00:03:06,750 --> 00:03:13,380
+Ahora puedo usar esta serie de valores booleanos correspondientes a filas para filtrar filas basadas en un valor de columna
+
+44
+00:03:13,380 --> 00:03:19,470
+y eso significa que si transfiero la serie a un marco de datos usando notación de corchetes para decir
+
+45
+00:03:19,470 --> 00:03:26,430
+algo como DFW DFW mayor que cero solo lo haré regresa las filas donde esto pasa a ser cierto, lo que
+
+46
+00:03:26,720 --> 00:03:32,670
+significa que solo recupero las filas abd y e no devuelve la fila C ya que era falsa aquí.
+
+47
+00:03:32,740 --> 00:03:35,340
+Adelante, ejecuta eso y mira cómo se ve esto.
+
+48
+00:03:35,340 --> 00:03:36,120
+Estupendo.
+
+49
+00:03:36,130 --> 00:03:39,950
+Y ahora que paso una serie ya no consigo esos valores.
+
+50
+00:03:40,050 --> 00:03:44,880
+Solo obtiene esos valores cuando realiza este tipo de condición en un marco de datos completo
+
+51
+00:03:44,880 --> 00:03:47,470
+cuando está pasando condiciones en base a columnas.
+
+52
+00:03:47,550 --> 00:03:52,580
+Obtendrás los valores de la serie, lo que significa que obtendrás solo las filas donde pasa la verdad.
+
+53
+00:03:52,650 --> 00:03:57,120
+Y este es el tipo de selección condicional que usaremos más a menudo a lo largo de este curso.
+
+54
+00:03:58,170 --> 00:04:01,970
+Entremos y mostremos solo algunos ejemplos más para realmente llevar este punto a casa.
+
+55
+00:04:01,980 --> 00:04:09,010
+Digamos que quiero tomar todas las filas en mi marco de datos donde z es menor que cero.
+
+56
+00:04:09,150 --> 00:04:16,500
+Entonces digo DMF donde la f de la columna Z es menor que cero.
+
+57
+00:04:16,500 --> 00:04:21,460
+Ahora echemos un vistazo antes de que realmente ejecutemos esto, lo que debería suceder en la columna Aviso Z.
+
+58
+00:04:21,750 --> 00:04:22,290
+Dónde está.
+
+59
+00:04:22,320 --> 00:04:23,150
+Menos que cero.
+
+60
+00:04:23,160 --> 00:04:31,210
+Bueno, eso solo ocurre en la fila C, así que la columna Z está en Zelda y luego la fila C está en el gato.
+
+61
+00:04:31,260 --> 00:04:33,260
+Esta es la única fila que debe devolverse.
+
+62
+00:04:33,270 --> 00:04:35,720
+Pero recuerda pedir la información completa desde atrás.
+
+63
+00:04:35,850 --> 00:04:40,110
+Por lo tanto, debería devolver solo esta fila C para nosotros.
+
+64
+00:04:40,110 --> 00:04:41,100
+Y ahí está.
+
+65
+00:04:41,340 --> 00:04:42,590
+Vale genial.
+
+66
+00:04:42,600 --> 00:04:47,520
+Ahora, algo más a tener en cuenta aquí es que cuando esté haciendo este tipo de comandos, siga
+
+67
+00:04:47,520 --> 00:04:50,190
+adelante y regrese a R W mayor que cero.
+
+68
+00:04:50,880 --> 00:04:57,220
+Obtendrá un marco de datos en respuesta y eso significa que puede continuar y llamar a los comandos fuera de este marco
+
+69
+00:04:57,230 --> 00:04:57,880
+de datos.
+
+70
+00:04:58,050 --> 00:05:01,260
+Entonces puede hacer esto en un paso o dos pasos.
+
+71
+00:05:01,320 --> 00:05:06,370
+Voy a entrar y decir que el resultado de DSF es igual a esto y luego echar un vistazo a los resultados.
+
+72
+00:05:06,420 --> 00:05:12,910
+basados ​​en este marco de datos resultante que no hice No se ha visto esa fila, no tiene Charlie.
+
+73
+00:05:13,030 --> 00:05:21,910
+DMF que es este subconjunto de la trama de datos sin esa fila ve en ella y eso significa que puedo seguir adelante y obtener resultados de
+
+74
+00:05:21,910 --> 00:05:25,910
+esto como X y aquí tengo cuatro valores de XABD y E
+
+75
+00:05:26,380 --> 00:05:32,200
+Pero en lugar de dividir esto en dos pasos, como tomar la columna X, puedo hacerlo todo en
+
+76
+00:05:32,200 --> 00:05:33,030
+un solo paso.
+
+77
+00:05:33,130 --> 00:05:41,230
+Y déjame mostrarte lo que quiero decir con eso, puedo continuar y decir devolver el marco de datos donde el valor de la
+
+78
+00:05:41,230 --> 00:05:43,780
+columna de W es mayor que cero.
+
+79
+00:05:43,780 --> 00:05:45,670
+Así que devuélveme esas filas.
+
+80
+00:05:45,670 --> 00:05:48,050
+Eso significa todas las filas menos la fila C.
+
+81
+00:05:48,340 --> 00:05:53,170
+Y dado que este es un marco de datos, en realidad puedo continuar y apilar comandos como
+
+82
+00:05:53,170 --> 00:05:57,530
+la notación de corchetes además de eso, como devolver la columna X donde eso es cierto.
+
+83
+00:05:57,700 --> 00:06:04,330
+Y ahora obtengo los mismos resultados que obtuve aquí, excepto que todo está hecho en un solo paso y esto es algo que
+
+84
+00:06:04,330 --> 00:06:06,570
+puede ser intimidante para los principiantes al principio.
+
+85
+00:06:06,670 --> 00:06:09,380
+Así que hay muchos corchetes y muchas cosas sucediendo aquí.
+
+86
+00:06:09,580 --> 00:06:14,620
+Pero esencialmente esto es solo en lugar de dividir todo en varios pasos
+
+87
+00:06:14,620 --> 00:06:17,480
+y poner todo en un solo paso.
+
+88
+00:06:17,620 --> 00:06:24,100
+varias columnas al pasar las listas como por ejemplo, la coma X y podemos ver que obtenemos un resultado aquí.
+
+89
+00:06:24,100 --> 00:06:29,890
+Y del mismo modo, dado que este es un marco de datos, puedo ponerlo entre corchetes para
+
+90
+00:06:29,920 --> 00:06:36,100
+Déjame seguir y romper esta línea una vez más para mostrar los pasos que estamos tomando.
+
+91
+00:06:36,100 --> 00:06:41,090
+Primero vamos a entrar y decir que Boudia es igual a.
+
+92
+00:06:41,680 --> 00:06:48,250
+Bueno, va a decir series de bhool y dado que eso es un poco más preciso es que estamos en DFW es
+
+93
+00:06:48,250 --> 00:06:49,140
+mayor que cero.
+
+94
+00:06:49,150 --> 00:06:56,590
+Entonces, si digo series de bhool, obtengo esta serie booleana, entonces lo que voy a
+
+95
+00:06:56,590 --> 00:07:04,010
+hacer es decir que el resultado es igual al DSF de esa serie bool.
+
+96
+00:07:04,510 --> 00:07:06,870
+Avancemos y revisemos los resultados.
+
+97
+00:07:07,630 --> 00:07:15,690
+Y debería ser donde sea que esa serie sea verdadera, que es una bd y una e, y ahí está mi resultado.
+
+98
+00:07:15,820 --> 00:07:18,690
+Ese es el marco de datos completo sin que la fila lo haya visto.
+
+99
+00:07:18,760 --> 00:07:28,200
+Y luego puedo seguir adelante y ofrecer ese resultado llamar a una lista de columnas para poder continuar y decir por qué coma X
+
+100
+00:07:28,840 --> 00:07:33,910
+y, si quisiéramos, incluso podríamos separar el punto por separado y un paso
+
+101
+00:07:34,360 --> 00:07:43,840
+más diciendo que Mike pide columnas pasar la lista y luego decir el resultado de las llamadas de Mike y obtenemos exactamente lo mismo
+
+102
+00:07:43,840 --> 00:07:48,760
+que hemos hecho aquí en una línea como en varias líneas.
+
+103
+00:07:48,910 --> 00:07:53,840
+Eso significa que si alguna vez se confunde con algo que se parece a esto de una tonelada de corchetes,
+
+104
+00:07:54,070 --> 00:07:56,110
+Pandurs verá si puede dividirlo en varios pasos.
+
+105
+00:07:56,110 --> 00:08:00,640
+Si eso tiene más sentido para usted a lo largo del curso, vamos a estar haciendo este tipo de notación.
+
+106
+00:08:00,910 --> 00:08:02,200
+Tipo de uno liners.
+
+107
+00:08:02,200 --> 00:08:06,100
+Y a medida que se sienta más y más cómodo con los pandas, se encontrará usando
+
+108
+00:08:06,100 --> 00:08:11,080
+estos forros uno cada vez más a menudo, pero si alguna vez está confundido, siéntase libre de dividirlo en varios pasos.
+
+109
+00:08:11,080 --> 00:08:15,970
+La única desventaja en cuanto a bajar varios pasos es que está ocupando memoria
+
+110
+00:08:16,150 --> 00:08:18,130
+con la variable que defina.
+
+111
+00:08:18,220 --> 00:08:23,260
+Así que a medida que obtienes mejores y mejores pandas, quieres avanzar hacia una simple abstracción de una
+
+112
+00:08:23,260 --> 00:08:24,750
+línea de todos estos comandos.
+
+113
+00:08:24,760 --> 00:08:30,370
+De acuerdo, adelante y pause el video ahora y realmente asegúrese de que comprenda cómo se alinea en 58.
+
+114
+00:08:30,370 --> 00:08:36,280
+Aquí está exactamente lo mismo que separar en múltiples líneas.
+
+115
+00:08:36,310 --> 00:08:36,700
+Todo bien.
+
+116
+00:08:36,700 --> 00:08:38,230
+Avancemos y exploremos muy rápido.
+
+117
+00:08:38,230 --> 00:08:42,490
+El concepto de usar condiciones múltiples como dos o más condiciones.
+
+118
+00:08:42,580 --> 00:08:48,940
+En este momento, nos sentimos cómodos con hacer algo como esto que consiste en devolver un subconjunto del marco de
+
+119
+00:08:48,940 --> 00:08:50,700
+datos a partir de una condición.
+
+120
+00:08:50,740 --> 00:08:56,320
+sucede si quiere condiciones múltiples, como donde w es mayor que cero e Y era mayor que 1?
+
+121
+00:08:56,410 --> 00:08:57,170
+Pero, ¿qué
+
+122
+00:08:57,520 --> 00:09:06,910
+Bueno, lo que podrías hacer es intentar algo como esto, entre paréntesis pasar en una condición y luego
+
+123
+00:09:06,970 --> 00:09:10,210
+decir y pasar en otra condición.
+
+124
+00:09:10,210 --> 00:09:11,740
+Y esto va a devolver un error.
+
+125
+00:09:11,970 --> 00:09:17,710
+Y voy a hacer esto a propósito para explicar por qué está ocurriendo un error aquí y este es un
+
+126
+00:09:17,710 --> 00:09:23,410
+error común para los principiantes al poner esto y aquí y obtendrán un error que dice algo acerca de que
+
+127
+00:09:23,410 --> 00:09:24,370
+la serie es ambigua.
+
+128
+00:09:24,370 --> 00:09:30,520
+Nos desplazamos hacia abajo, vemos que el valor de verdad de una serie es ambiguo.
+
+129
+00:09:30,520 --> 00:09:37,420
+Y lo que está tratando de decir es que el operador normal de Python no puede tener en
+
+130
+00:09:37,750 --> 00:09:43,960
+cuenta una serie de valores booleanos en comparación con otra serie de valores booleanos y el operador
+
+131
+00:09:43,960 --> 00:09:47,680
+solo puede tener en cuenta booleanos individuales a la vez.
+
+132
+00:09:47,680 --> 00:09:54,790
+Entonces true y false regresan False True y true devuelve true, etc. Eso significa que cuando pasa una serie completa
+
+133
+00:09:55,090 --> 00:10:03,190
+de valores booleanos como este, el operador comienza a confundirse.
+
+134
+00:10:03,190 --> 00:10:04,250
+Solo se puede tratar con estas
+
+135
+00:10:04,390 --> 00:10:09,880
+instancias individuales de valores booleanos, que es la razón por la que cuando trabajas con pandas y quieres múltiples condiciones que realmente tienes que usar en símbolos comerciales, esto es todo.
+
+136
+00:10:09,880 --> 00:10:15,230
+Y así será el turno 7 en tu teclado para la mayoría de los teclados estándar.
+
+137
+00:10:15,250 --> 00:10:20,360
+Y observe aquí que estoy pasando estas condiciones entre paréntesis para
+
+138
+00:10:20,620 --> 00:10:25,660
+mostrar una separación clara entre cada una de estas condiciones.
+
+139
+00:10:25,660 --> 00:10:26,790
+Y luego, si ejecuto esto, obtengo la Fila E donde sucede que esto es cierto.
+
+140
+00:10:26,920 --> 00:10:31,070
+OK vamos a romper eso.
+
+141
+00:10:31,510 --> 00:10:32,840
+Una última vez,
+
+142
+00:10:32,860 --> 00:10:39,430
+cuando intenta utilizar varias condiciones, no puede usar el operador y el operador de Python.
+
+143
+00:10:39,490 --> 00:10:40,530
+Tienes que usar
+
+144
+00:10:40,960 --> 00:10:47,470
+el signo y luego pasas las múltiples condiciones entre paréntesis y finalmente lo colocas entre corchetes para tu marco de datos.
+
+145
+00:10:47,470 --> 00:10:49,830
+Si desea hacer una operación
+
+146
+00:10:50,050 --> 00:10:57,130
+OR, simplemente puede reemplazar esto con el operador de tubería que está justo encima de su.
+
+147
+00:10:57,180 --> 00:10:57,660
+Por lo general, para la mayoría de los teclados en su tecla Enter, vaya arriba a la derecha y luego cambie en esa barra invertida.
+
+148
+00:10:57,760 --> 00:11:04,110
+Y esto debería darle el operador de tubería y eso será un reemplazo
+
+149
+00:11:04,240 --> 00:11:09,280
+o porque si intenta usar o obtendrá el mismo error.
+
+150
+00:11:09,280 --> 00:11:12,160
+Así que eso es con o si lo
+
+151
+00:11:12,250 --> 00:11:18,160
+intento con Python normal o Again obtendré el valor de verdad de una serie que es ambigua.
+
+152
+00:11:18,160 --> 00:11:18,910
+Y eso es porque obtienes una serie de esos valores en lugar de solo uno o dos valores booleanos.
+
+153
+00:11:18,970 --> 00:11:24,380
+OK, puede continuar y hacer referencia a las notas si quiere más ejemplos de esto.
+
+154
+00:11:24,450 --> 00:11:27,840
+Pero básicamente, si quieres que pasen varias condiciones en
+
+155
+00:11:27,940 --> 00:11:33,220
+cada condición entre paréntesis y luego utilices un ampersand o operador de tubería para
+
+156
+00:11:33,220 --> 00:11:41,650
+los fines o sigamos adelante y cambiemos de marcha para hablar sobre el índice y un poco más de detalles al respecto,
+
+157
+00:11:41,650 --> 00:11:47,140
+vamos a discutir ahora está restableciendo el índice o configurándolo en otra cosa.
+
+158
+00:11:47,170 --> 00:11:48,140
+Déjame seguir y echar un vistazo a nuestro marco de datos original.
+
+159
+00:11:48,160 --> 00:11:50,770
+Quiero entrar y limpiar estas celdas aquí solo con ejecutarlas.
+
+160
+00:11:50,770 --> 00:11:54,610
+Echemos un vistazo a nuestro marco de datos.
+
+161
+00:11:54,740 --> 00:11:56,820
+De nuevo, tenemos Rose e en las columnas de
+
+162
+00:11:56,860 --> 00:12:03,970
+la W a la Z para restablecer el índice al valor predeterminado, que es solo un índice de rango o un 1 2 3 4 hasta llegar a la enésima fila.
+
+163
+00:12:03,970 --> 00:12:09,070
+Lo que puedes hacer es llamar al método
+
+164
+00:12:09,210 --> 00:12:16,780
+reset underscore index y recuerda cerrar paréntesis para que realmente ejecutemos ese método.
+
+165
+00:12:16,870 --> 00:12:18,380
+Y si llama
+
+166
+00:12:18,900 --> 00:12:26,950
+a ese aviso, se restablecerá el índice a una columna y obtendrá el índice real que será numérico.
+
+167
+00:12:27,010 --> 00:12:28,690
+Y así es como puedes restablecer el índice.
+
+168
+00:12:28,690 --> 00:12:32,320
+Algo para notar aquí es como muchos otros datos de operaciones.
+
+169
+00:12:32,710 --> 00:12:37,530
+Esto no ocurre en su lugar a menos que lo especifique para que ocurra en su lugar.
+
+170
+00:12:37,570 --> 00:12:42,010
+Entonces si vuelvo a llamar a T. F. Todavía tengo ese índice original de etiquetas si quieres que esto ocurra en su lugar, lo que harías es decir en su lugar es
+
+171
+00:12:42,010 --> 00:12:47,860
+igual a verdadero y pasar al índice de reinicio del subrayado.
+
+172
+00:12:47,860 --> 00:12:54,480
+Por ahora, seguiremos adelante y no haremos eso.
+
+173
+00:12:54,520 --> 00:12:56,640
+De esta forma, conservamos nuestro marco de datos original.
+
+174
+00:12:56,650 --> 00:12:59,620
+Ahora ve y borra esto nuevamente si solo quieres restablecer el índice a un valor numérico.
+
+175
+00:12:59,650 --> 00:13:06,680
+Puede usar ese índice de Reesa y su índice anterior se convertirá en una columna de su marco de datos.
+
+176
+00:13:06,790 --> 00:13:12,080
+DE ACUERDO.
+
+177
+00:13:12,630 --> 00:13:13,140
+Avancemos y
+
+178
+00:13:13,300 --> 00:13:19,060
+mostremos otro ejemplo de índice nuevo, como establecer el índice, y para hacerlo, voy a seguir adelante y crear un nuevo índice llamado New i n d.
+
+179
+00:13:19,150 --> 00:13:25,500
+Y voy a usar un pequeño truco aquí que explicaré en solo un segundo.
+
+180
+00:13:27,250 --> 00:13:32,910
+Esto va a ser un grupo de abreviaturas estatales y voy a decir que se dividen en esta cadena.
+
+181
+00:13:33,040 --> 00:13:37,580
+Y recuerde que dividir una cadena debe decir un método común para dividir un espacio en blanco.
+
+182
+00:13:38,020 --> 00:13:44,050
+Pero esta es una buena forma rápida de crear una lista en lugar de tener que escribir cada coma.
+
+183
+00:13:44,230 --> 00:13:48,960
+Así que quiero seguir adelante y establecer esa lista igual a la nueva yo de hecho.
+
+184
+00:13:49,240 --> 00:13:54,850
+Así que tengo mis nuevos valores de índice aquí y lo que voy a hacer es poner esto como una columna en mi marco de datos.
+
+185
+00:13:54,850 --> 00:14:02,350
+Así que voy a seguir adelante y decir que DFA States es igual a New i n d.
+
+186
+00:14:03,160 --> 00:14:09,520
+Y dado que mencionan coincidencias, hay cinco elementos aquí.
+
+187
+00:14:09,640 --> 00:14:12,610
+Se ajustará de 0 a 4 aquí en el estado del marco.
+
+188
+00:14:12,700 --> 00:14:16,030
+Entonces, si reviso mi marco de datos, tengo esta nueva columna llamada estados CA NY por RCO.
+
+189
+00:14:16,060 --> 00:14:24,070
+Ahora sabemos cómo restablecer el índice, que solo está haciendo un método de índice de reinicio de reinicio.
+
+190
+00:14:24,100 --> 00:14:29,000
+Pero si tiene una columna en su marco de datos que desea ser el
+
+191
+00:14:29,170 --> 00:14:34,150
+índice que puede seguir y hacer es decir establecer índice en lugar de restablecer índice.
+
+192
+00:14:34,150 --> 00:14:37,950
+si cambio ingrese ahora la columna de estados se ha convertido en el índice.
+
+193
+00:14:38,110 --> 00:14:46,120
+Por ejemplo, puedo decir que DF dot set underscore index y luego paso el nombre de la columna que desea que sea el nuevo índice, así que establece aquí y
+
+194
+00:14:46,120 --> 00:14:54,100
+Tenga en cuenta que a menos que retenga esta información del índice, sobrescriba su índice
+
+195
+00:14:54,100 --> 00:15:00,320
+anterior y no podrá retener esta información como una nueva columna.
+
+196
+00:15:00,370 --> 00:15:03,630
+A diferencia del índice de reinicios que le permite tener esa nueva columna.
+
+197
+00:15:03,760 --> 00:15:07,810
+Entonces, eso es establecer el índice versus el índice de reinicio.
+
+198
+00:15:07,810 --> 00:15:11,280
+De nuevo, si reviso mi marco de datos aquí, esto no estaba en su lugar.
+
+199
+00:15:11,340 --> 00:15:14,750
+Tendría que agregar el argumento.
+
+200
+00:15:14,830 --> 00:15:16,190
+Si cambio entra aquí en su lugar.
+
+201
+00:15:16,210 --> 00:15:18,650
+Igual es verdad
+
+202
+00:15:18,680 --> 00:15:20,140
+Déjame seguir y hacer una breve revisión de lo que acabamos de cubrir antes de pasar a la parte 3.
+
+203
+00:15:20,810 --> 00:15:28,820
+Ok, aprendimos sobre la selección condicional, que es muy similar a las operaciones PI.
+
+204
+00:15:28,820 --> 00:15:34,180
+Básicamente, obtienes un marco de datos de valores booleanos y si pasas en un marco de datos completo
+
+205
+00:15:34,180 --> 00:15:39,550
+de valores booleanos obtendrás los valores en donde es verdadero y obtendrás n o ningún valor donde sea falso.
+
+206
+00:15:39,880 --> 00:15:44,830
+Si transfiere una serie de valores booleanos, como una columna con
+
+207
+00:15:44,830 --> 00:15:52,090
+un operador de comparación, terminará obteniendo las filas del marco de datos donde lo que sucedió
+
+208
+00:15:52,090 --> 00:15:57,850
+es cierto y podría dividirlo en varios pasos si así lo deseara.
+
+209
+00:15:57,910 --> 00:16:00,350
+Una vez más, estas dos células son probablemente las más importantes de entender.
+
+210
+00:16:00,360 --> 00:16:03,160
+Fuera de esta conferencia, si entiendes
+
+211
+00:16:03,160 --> 00:16:07,810
+esto entiendes cómo hacer una selección condicional en pantless.
+
+212
+00:16:07,810 --> 00:16:08,970
+Luego, al desplazarse hacia abajo
+
+213
+00:16:09,190 --> 00:16:15,490
+si quería hacer una selección condicional múltiple, podría hacer un ampersand o un operador de tubería no puede usar el y / o los operadores integrados de Python.
+
+214
+00:16:15,490 --> 00:16:19,990
+Debido a los valores ambiguos en una serie
+
+215
+00:16:20,170 --> 00:16:27,460
+Truth y recuerde usar paréntesis para separar cada instrucción de selección condicional.
+
+216
+00:16:27,460 --> 00:16:30,040
+Entonces finalmente hemos reiniciado.
+
+217
+00:16:30,040 --> 00:16:31,300
+Index index reset simplemente
+
+218
+00:16:31,330 --> 00:16:38,650
+va a restablecer su índice a un índice numérico y tomar su índice anterior y establecerlo como una nueva columna llamada índice y luego
+
+219
+00:16:38,650 --> 00:16:45,670
+puede establecer un nuevo índice en lugar de restablecer cualquier índice basado en una columna actual con solo decir Conjunto índice de subrayado.
+
+220
+00:16:45,970 --> 00:16:49,910
+Y estos dos métodos no están en su lugar por defecto.
+
+221
+00:16:50,170 --> 00:16:53,090
+Por lo tanto, asegúrese de especificar en su lugar los ECO verdaderos.
+
+222
+00:16:53,140 --> 00:16:55,560
+Si quieres que el cambio sea permanente.
+
+223
+00:16:55,690 --> 00:16:57,970
+De acuerdo, eso es todo por esta conferencia.
+
+224
+00:16:58,030 --> 00:17:00,550
+Gracias a todos.
+
+225
+00:17:00,550 --> 00:17:01,350
+Lo veré en la próxima conferencia o discutiremos el índice más alto.
+
+226
+00:17:01,390 --> 00:17:04,800
+Una vez más, todas estas notas están en un cuaderno llamado Marcos de datos.
+
+227
+00:17:04,960 --> 00:17:08,630
+Gracias y veré si la próxima conferencia
+
+228
+00:17:08,650 --> 00:17:10,210
+&nbsp;

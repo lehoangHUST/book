@@ -1,0 +1,951 @@
+1
+00:00:06,480 --> 00:00:11,210
+Herkese merhaba ve bu konuşmada öpüşme ve seçme dersinde pastaya hoş geldiniz.
+
+2
+00:00:11,230 --> 00:00:15,040
+Bir pastadan elemanları veya grup elemanları seçmeyi tartışacağız.
+
+3
+00:00:15,060 --> 00:00:19,260
+Başlamak için devam edin ve Juber defterine atlayalım.
+
+4
+00:00:19,260 --> 00:00:19,760
+Tamam.
+
+5
+00:00:19,800 --> 00:00:21,360
+Jüpiter not defterinde buradasınız.
+
+6
+00:00:21,360 --> 00:00:23,880
+Zaten önemli umseler ve P dedim. Örnek olarak bir dizi oluşturarak, ne
+
+7
+00:00:24,040 --> 00:00:29,010
+başlayacağımı biliyorsun A R R değişkeni p sonuna eşit demek istiyorum.
+
+8
+00:00:29,040 --> 00:00:31,370
+Bir menzil var.
+
+9
+00:00:31,500 --> 00:00:33,050
+Orada otomatik tamamlama yapmak
+
+10
+00:00:33,130 --> 00:00:41,700
+için sekmeyi kullanıyorum ve sıfırdan 10'a gidiyorum ve sıfırdan 10'a geldiğimde, çıktıyı almak için gerçek çıktıyı ve 11'de burada çıkacağım demek istiyorum.
+
+11
+00:00:41,700 --> 00:00:45,570
+Şimdi sıfırdan 10'a giden 11 öğeden oluşan bir dizi var.
+
+12
+00:00:45,870 --> 00:00:50,760
+Bir dizinin elemanlarını seçmenin en kolay
+
+13
+00:00:50,760 --> 00:00:57,330
+yolu, bir python listesinden indekslemeye çok benzer.
+
+14
+00:00:57,330 --> 00:00:58,110
+Temel olarak bunu yapmak için köşeli parantez ve dilim gösterimi kullanacaksınız.
+
+15
+00:00:58,140 --> 00:01:03,060
+Devam ederseniz yapın, dizinin kendisinin değişken adını yazın.
+
+16
+00:01:03,140 --> 00:01:07,500
+Parantez parantezini ve ardından yalnızca bir sayı geçirebileceğiniz bir dizinde tek bir değer elde edin.
+
+17
+00:01:07,600 --> 00:01:13,530
+Dizin 8'deki değeri istiyorsanız, 8 değerini geçebilir
+
+18
+00:01:14,010 --> 00:01:21,000
+ve bu durumda x 8 değerini geri döndürürüm demek.
+
+19
+00:01:21,000 --> 00:01:21,470
+Aslında kendisi
+
+20
+00:01:21,540 --> 00:01:27,030
+8'dir, çünkü değerleri sadece bir python listesi gibi bir aralıkta elde etmek istersem bu diziyi oluşturmak için düzenlenmiş.
+
+21
+00:01:27,030 --> 00:01:29,330
+Başlangıç ​​endeksini ve stop indeksini söyleyebildiğim anlamına gelen dilim gösterimini kullanabilirim.
+
+22
+00:01:29,340 --> 00:01:37,010
+Öyleyse gidip bir iki nokta üstüste beş nokta söylersem, 1 numaralı dizini başlatacak ve
+
+23
+00:01:37,080 --> 00:01:43,650
+dizin oluşturma işlemi sıfırdan başlayacağından, dizin 5'e kadar olan sayı dört'e yükselecektir.
+
+24
+00:01:43,650 --> 00:01:49,470
+diyebilirim ve tüm değerleri 0'dan dizin 5'e kadar döndürür.
+
+25
+00:01:49,500 --> 00:01:57,990
+Bunun için başka bir örnek göstermek için sıfır iki nokta üstüste 5
+
+26
+00:01:57,990 --> 00:02:00,710
+Duruş noktasını veya başlama
+
+27
+00:02:00,750 --> 00:02:06,840
+noktasını kaldırabilir ve dizideki her şeyi istediğimi belirtebilirim.
+
+28
+00:02:06,900 --> 00:02:07,890
+Sağ başından beri her şey.
+
+29
+00:02:07,950 --> 00:02:10,190
+Örneğin, başlangıç ​​parametresini 0
+
+30
+00:02:10,200 --> 00:02:17,710
+olarak belirtmek yerine dizin 6'ya kadar herşeyi isterseniz, yalnızca bir iki nokta üst üste
+
+31
+00:02:17,790 --> 00:02:24,210
+koyabilir ve daha sonra 6 Ellora'nın dönüşümü dizinin başlangıcına dizin 6'ya yerleştirebilir.
+
+32
+00:02:24,270 --> 00:02:24,860
+sağlıyorum.
+
+33
+00:02:24,870 --> 00:02:30,870
+Bu, sıfır kısaltması 6 ile aynı şeydir ancak kömürün kendisini koyarak biraz yazarak tasarruf
+
+34
+00:02:30,870 --> 00:02:32,990
+Benzer şekilde ileride
+
+35
+00:02:32,990 --> 00:02:43,060
+ne yapabilirim, belirli bir dizinde başlatmak ve dizinin sonuna kadar her şeyi kapmak istersem diziyi söylemek
+
+36
+00:02:43,080 --> 00:02:50,340
+demektir. Kömüre dilimleme notasyonu kullanarak bir Python listesinde yaptığım istasyonu kullanabilirim.
+
+37
+00:02:50,700 --> 00:02:51,940
+Bu sayıyı ve ardından
+
+38
+00:02:52,170 --> 00:02:56,910
+iki nokta üst üste işaretini kullandığınızda dikkat edilmesi gereken bir şey, aslında dizin 5'i ve sonrasında kapışmamanızdır.
+
+39
+00:02:56,910 --> 00:02:59,410
+Herşeyi indeks 5'de
+
+40
+00:02:59,490 --> 00:03:05,670
+tutuyorsunuz çünkü indekslemenin Python'daki gösterimde sıfırdan başladığını unutmayın.
+
+41
+00:03:05,670 --> 00:03:06,780
+Yani 5
+
+42
+00:03:06,780 --> 00:03:15,210
+burada aslında indeks 6, yani beş Colon'un endeks 5'in ötesinde her şeyi hurda dediği anlamına geliyor.
+
+43
+00:03:15,210 --> 00:03:15,600
+Bu beş altı yedi sekiz dokuz olacak çünkü dizin 5'i hatırlamak aslında dörtte burada.
+
+44
+00:03:15,600 --> 00:03:21,200
+Endeksleme sıfırdan başlayacağından beş unsuru yakaladınız.
+
+45
+00:03:21,750 --> 00:03:25,700
+Demek istediğim, beş kutup diyelim, beşinci dizinin dörtte birinde olan
+
+46
+00:03:25,830 --> 00:03:32,730
+her şeyi kapar ve bu iki nokta üstüste hakkında daha fazla bilgi istiyorsanız Python liste dilimi gösterimini inceleyebilirsiniz.
+
+47
+00:03:32,730 --> 00:03:38,480
+Ancak aslında bu, normal bir Python listesi için yaptığı işle tam olarak aynı şekilde çalışır.
+
+48
+00:03:38,550 --> 00:03:42,890
+Hiçbir dizgi, yayın yapma kabiliyeti nedeniyle normal bir Python listesinden farklıdır.
+
+49
+00:03:43,300 --> 00:03:49,310
+Ben devam edin ve bunun bir örneğini gösterelim.
+
+50
+00:03:49,350 --> 00:03:51,710
+Dizimi alıp parçaları kapacağım.
+
+51
+00:03:51,810 --> 00:03:56,390
+Sıfır ve beş.
+
+52
+00:03:56,440 --> 00:03:58,060
+Yani sıfır bir iki üç dört olacak ve bundan sonra sayı 100'e eşit olarak değerlendiriyorum.
+
+53
+00:03:58,110 --> 00:04:04,080
+Ve ne yapacak.
+
+54
+00:04:04,140 --> 00:04:05,560
+Bu değeri, ilk beş basamağın 100 olması için yayınlayacak.
+
+55
+00:04:05,820 --> 00:04:12,830
+Devam edeceğim ve diziyi sıfırlayacağım ve diziyi göstersem, neden
+
+56
+00:04:12,960 --> 00:04:21,510
+bir saniye içinde 0 1 2 3'e 10'a kadar geri döndüğümü göreceksin.
+
+57
+00:04:21,510 --> 00:04:24,350
+Size veya oranlarında önemli bir hayır göstermek istemiyorum.
+
+58
+00:04:24,600 --> 00:04:28,420
+Devam edersem, alt çizgi altındaki dilim adı verilen bir değişken oluşturursam, Array olur.
+
+59
+00:04:28,440 --> 00:04:36,490
+Ve örneğin bir dizinin dilimine eşit demiştim 06. Burada
+
+60
+00:04:36,500 --> 00:04:46,360
+dizinin dilimini görmek güzel, burada dizileri bir iki üç dört beş var.
+
+61
+00:04:46,380 --> 00:04:48,590
+Temelde dizinin yarısının ilk kısmı.
+
+62
+00:04:48,600 --> 00:04:51,960
+Saray zavallısında yayın yaparsam, bir dilim dizisi derim diyebilirim.
+
+63
+00:04:52,200 --> 00:04:59,580
+Bu, o dilimdeki her şeyi kaptığım anlamına geliyor.
+
+64
+00:04:59,580 --> 00:05:02,550
+Bunu 99 gibi başka bir numara olarak yayınlamaya çalışıyorum.
+
+65
+00:05:02,570 --> 00:05:06,820
+Bu, dizinin dilimini kontrol ettiğimde bir sürü 99 görüyorum demektir.
+
+66
+00:05:06,900 --> 00:05:11,780
+Burada dikkatli bir şekilde dikkat etmeniz gerekiyor.
+
+67
+00:05:12,000 --> 00:05:14,480
+Ardından diziyi geri çağırdım, yalnızca dilimde değil orijinal dizide 99 olarak değiştirildi.
+
+68
+00:05:14,520 --> 00:05:21,800
+İki kişiyi aramıştım.
+
+69
+00:05:21,810 --> 00:05:22,960
+Bu nedenle, bu değişikliğin orijinal dizide nasıl gerçekleştiğini anlamanız gerekir; veriler kopyalanmaz.
+
+70
+00:05:23,190 --> 00:05:28,950
+Sadece bir görüş.
+
+71
+00:05:29,130 --> 00:05:30,560
+Yani orijinal dizi.
+
+72
+00:05:30,710 --> 00:05:32,100
+otomatik olarak ayarlamaz.
+
+73
+00:05:32,280 --> 00:05:38,250
+Bunun sebebi, çok büyük dizilerle ilgili bellek sorunlarından kaçınmaktır, yani hiçbir pi dizilerin kopyalarını
+
+74
+00:05:38,250 --> 00:05:41,140
+Aslında bir kopyasını istiyorsanız
+
+75
+00:05:41,380 --> 00:05:47,940
+ve yapabileceğiniz orijinal diziye yapılan başvuru aslında kopyayı belirtmiyorsa.
+
+76
+00:05:47,940 --> 00:05:49,410
+Bu yüzden böyle bir şey yapabilirim.
+
+77
+00:05:49,530 --> 00:05:51,480
+Devam edip r
+
+78
+00:05:51,720 --> 00:06:01,620
+altçizgi kopyasını söyleyebilir ve bir kopyasını istediğimi belirtmek için dizinin kopya yöntemini kullanabilirim.
+
+79
+00:06:01,620 --> 00:06:03,320
+Bu yüzden, dizilimime bir göz atarsam 9 9 9 9 9 x cetera olur ve sonra 6 7 8 9 10 olur.
+
+80
+00:06:03,450 --> 00:06:09,410
+Ve dizi kopyamıza bir göz atarsam aynı şey de olur.
+
+81
+00:06:09,780 --> 00:06:14,320
+Ancak belki de dizi değerlerimde bir değişiklik yaparsam her değeri 100 olacak şekilde yayınlayabilirim.
+
+82
+00:06:14,500 --> 00:06:20,550
+Ve her değeri 100 olan dizi kopyasını kontrol ettim.
+
+83
+00:06:20,940 --> 00:06:25,420
+Ancak bu orijinal dizi 100 komuta yayın tarafından etkilenmiyor.
+
+84
+00:06:25,440 --> 00:06:32,190
+Devam edin ve bu notları gözden geçirin.
+
+85
+00:06:32,190 --> 00:06:34,070
+Bu sizin için biraz
+
+86
+00:06:34,120 --> 00:06:40,360
+kafa karıştırıcıdır, ancak burada temel önceliğe göre, aslında bir dilimin bir bölümünü kaptıysanız
+
+87
+00:06:40,360 --> 00:06:47,370
+ve dizinin bir kopyasını istediğinizi söylemeden bir değişken olarak ayarlarsanız, yalnızca sizin olduğunuzu unutmamalısınız orijinal
+
+88
+00:06:47,380 --> 00:06:53,340
+dizinin bir bağlantısını görüntüleme ve yaptığınız değişiklikler aslında bu orijinal diziyi etkileyecektir.
+
+89
+00:06:53,340 --> 00:06:56,760
+TAMAM.
+
+90
+00:06:56,760 --> 00:06:57,400
+Devam edin ve diziyi dizine ekleme hakkında konuşalım.
+
+91
+00:06:57,690 --> 00:07:00,550
+Aksi halde matris olarak bilinir.
+
+92
+00:07:00,690 --> 00:07:02,810
+Ben devam edip bir süre tüm hücreleri temizleyeceğim.
+
+93
+00:07:02,880 --> 00:07:07,920
+Pekâlâ, burada tüm hücreleri temizledik ve yapacağımız bir yere gidip bir dizi oluşturmak.
+
+94
+00:07:07,960 --> 00:07:15,180
+Ben N'i söyleyeceğim P. dizi ve iç içe geçmiş bir listeden geçeceğim.
+
+95
+00:07:17,520 --> 00:07:24,020
+Bu yüzden 5 10 15 20 25 30 ve son olarak 35 40 45 diyeyim.
+
+96
+00:07:24,930 --> 00:07:37,830
+göstermek istiyorum ve burada üç sütunlu üç sıra var, onlara misyonel matris.
+
+97
+00:07:38,430 --> 00:07:44,280
+Bu yüzden dışarı çıkmak ve diziye
+
+98
+00:07:44,280 --> 00:07:46,010
+Harika.
+
+99
+00:07:46,050 --> 00:07:46,820
+Tamam.
+
+100
+00:07:46,830 --> 00:07:47,430
+Bir a ya da Matrix elemanını yakalamak için iki genel format var.
+
+101
+00:07:47,430 --> 00:07:52,880
+Bunun için çift bağlantı noktası var.
+
+102
+00:07:52,880 --> 00:07:54,500
+Ve sonra virgül ile birlikte tek parantez formiti var.
+
+103
+00:07:54,570 --> 00:07:57,270
+parantez biçimi örneğini göstereceğim, bu biçimi
+
+104
+00:07:57,270 --> 00:08:01,570
+kullanmam öneriyorum, ancak her iki durumda da vahşi halde karşılaşırsan bilmelisin.
+
+105
+00:08:01,560 --> 00:08:07,200
+Sana size çift köşeli virgül biçimini göstermeye gideyim ve sonra sana tek bir
+
+106
+00:08:07,200 --> 00:08:08,750
+İşte yine iki teorim var.
+
+107
+00:08:08,760 --> 00:08:10,970
+Diyelim ki sayı 5'i
+
+108
+00:08:11,120 --> 00:08:18,390
+yakalamak istedim, böylece ilk veya dizin 0 satırında ve ilk sütun dizininde
+
+109
+00:08:18,390 --> 00:08:27,910
+0 çift parantez işareti için ilk önce istediğim satırı ve sonra da istediğiniz sütunu pasan edebilelim.
+
+110
+00:08:27,900 --> 00:08:28,700
+Yani 00'da geçmek burada 5 rakamını döndürür.
+
+111
+00:08:28,770 --> 00:08:32,070
+İlk sütundaki ilk satırdaki öğeler budur.
+
+112
+00:08:32,230 --> 00:08:36,410
+Yapabileceğim şey, silip sadece tek bir parantez dizisi hazırlamak ve bütün bir Roback'i dizinlemek.
+
+113
+00:08:36,420 --> 00:08:44,640
+Yani bu indeks 0'ın tüm satırını endeksleyecek 5 10 15 anlamına
+
+114
+00:08:44,670 --> 00:08:55,320
+gelelim ve elemanı söyleyelim istersem 25 Peki sütun için dizinindeki bir dizin olan dizin.
+
+115
+00:08:55,350 --> 00:09:03,000
+Yani 1 1 diyebilirim ve bu 25'in hepsine geri döndü.
+
+116
+00:09:03,000 --> 00:09:06,080
+Yapmanız gereken, şimdi videoyu duraklatıp duramayacağınızı ve bu
+
+117
+00:09:06,100 --> 00:09:11,980
+çift parantez gösterimini kullanarak dizideki öğeleri tek tek ele almaya çalışıp başlamadığımızı anlamaya çalışmaktır.
+
+118
+00:09:11,970 --> 00:09:15,620
+Tamam.
+
+119
+00:09:15,660 --> 00:09:15,910
+Diyelim ki son örnek olarak 40'ı kapmak istiyoruz.
+
+120
+00:09:15,930 --> 00:09:19,710
+Bu da bir satır dizini.
+
+121
+00:09:19,950 --> 00:09:22,700
+Ve bir sonraki sütunda bir sütun.
+
+122
+00:09:23,310 --> 00:09:25,290
+Demek ki 40.
+
+123
+00:09:25,680 --> 00:09:27,010
+Bu çift parantez gösterimi.
+
+124
+00:09:27,120 --> 00:09:29,520
+Peki yapmalısın.
+
+125
+00:09:29,520 --> 00:09:30,380
+Ancak tavsiye ederim virgül tek parantez gösterimini kullanıyor.
+
+126
+00:09:30,380 --> 00:09:36,390
+Ve temel olarak, bunun nedeni, çift parantez dizisinin yerine
+
+127
+00:09:36,390 --> 00:09:42,630
+yalnızca virgül konması ve satır virgül sütun numarasını geçirmesidir.
+
+128
+00:09:42,630 --> 00:09:45,790
+ve sonra da üçüncü sütunda.
+
+129
+00:09:45,780 --> 00:09:54,440
+Örneğin diyelim ki rakam 30'a dizin 1 geçirmeyi istedim çünkü dizin bir satıra
+
+130
+00:09:54,930 --> 00:09:56,300
+Öyleyse 0 1 2, sütun için dizinde bulunuyor ve bu bana 30'u verir.
+
+131
+00:09:56,320 --> 00:10:03,010
+Ve bu, bana vurgulanan şeyleri söylemekle aynı ve çift
+
+132
+00:10:03,210 --> 00:10:11,040
+köşeli ayraçlarla yapmanın aynısı, genelde ortak bir gösterimin bu tek parantezini
+
+133
+00:10:11,050 --> 00:10:17,200
+kullanmanızı öneriyorum, çünkü genelde daha az hata eğilimi gösterir.
+
+134
+00:10:17,200 --> 00:10:19,990
+Şimdi, tek unsurları istemediğinizi düşünelim;
+
+135
+00:10:19,990 --> 00:10:24,730
+Örneğin, bu matristen bazı matrisler istiyorsanız, dilim gösterimi için iki
+
+136
+00:10:24,900 --> 00:10:31,870
+nokta üst üste çizgi kullanabilirsiniz. Nurit, dizinin tamamına belirli bölümleri ve sadece tek unsurları toplayacak.
+
+137
+00:10:31,870 --> 00:10:36,620
+Ben devam edip sana bunu nasıl yapacağımı göstereceğim.
+
+138
+00:10:36,820 --> 00:10:38,730
+Bu ikinci hücrenizi silecek ve sana birkaç örnek göstereceğiz.
+
+139
+00:10:38,770 --> 00:10:44,230
+Diyelim ki sağ üst köşeden tutmak istedik.
+
+140
+00:10:44,400 --> 00:10:47,640
+Anlamı 10 15 ve 25 30 söylemek istiyorum, bu
+
+141
+00:10:47,760 --> 00:10:54,160
+sağ üst köşede burada ne yapabilirim ki ilerlemek ve yapmak için bunu yapmak için dilim gösterimi kullanmaktır.
+
+142
+00:10:54,150 --> 00:10:59,860
+Bu yüzden, bir satır arayıp bir sütun
+
+143
+00:11:00,040 --> 00:11:12,390
+1'den kapmak için her şeyi kapmak söyleyebilirim ve bu 10 15 25 30'u döndürür.
+
+144
+00:11:12,390 --> 00:11:14,890
+İzin ver girip bunları bir kez daha parçalayayım.
+
+145
+00:11:14,880 --> 00:11:16,920
+Söylediğimiz şey, her şeyi kapmaktır, ancak 0 ve 1 numaralı satırları iki nokta üst üste kadar içermemektedir.
+
+146
+00:11:17,130 --> 00:11:24,880
+Ama sonra ikisini de ekleme.
+
+147
+00:11:25,140 --> 00:11:26,520
+Ben de dilim
+
+148
+00:11:26,560 --> 00:11:33,790
+demiyorum ve ilerleyip bunun sadece tek bir komut olduğuna dikkat edelim, bu yüzden Colon'un bu iki satır sırası
+
+149
+00:11:33,870 --> 00:11:43,300
+0 ve sırası 1 döndürdüğünü söyleyeceğim, bunun üzerine şunu ekleyerek şunu söyleyeceğim: sütunlar, Sütun 1'den temelde tümü bu sütunun 0 düşmesi anlamına gelir
+
+150
+00:11:43,300 --> 00:11:49,590
+ve bu iki küçük alt bölüm 10 15 ve sonra 25 30'u geri getirir anlamına gelir.
+
+151
+00:11:49,840 --> 00:11:59,520
+Tamam.
+
+152
+00:11:59,520 --> 00:12:00,730
+kullanıp kullanamayacağınızı görün.
+
+153
+00:12:00,730 --> 00:12:08,280
+Şimdi tavsiye etmem gereken şey, örneğin 20 25 30 ve 35 40 45 gibi alt bölümleri kapmak
+
+154
+00:12:08,290 --> 00:12:15,700
+ve Saray'ın alt bölümlerini kapmak için pi ile bu tekli parantezler virgül indeksleme gösterimiyle birlikte dilim gösterimini
+
+155
+00:12:15,970 --> 00:12:18,790
+Ayrıca, daha büyük ve daha büyük
+
+156
+00:12:18,970 --> 00:12:26,920
+alt bölümleri alıp alamayacağınızı da görmenizi öneririm. Tamam, daha fazla örnek istiyorsanız bu konuda yeterli pratik yapmalısınız.
+
+157
+00:12:26,910 --> 00:12:29,350
+Bu ders için dizüstü bilgisayarınızı ziyaret
+
+158
+00:12:29,350 --> 00:12:34,920
+edebilirsin, ki bu ders boyunca 2-B dizi dilimlemenin daha birkaç örneğine sahip olan bu
+
+159
+00:12:36,220 --> 00:12:41,110
+ders için çok fazla süslü dizin dilimleme yapmayacağız Bu yüzden sana kafa karıştırıcı.
+
+160
+00:12:41,110 --> 00:12:41,680
+yapmayacak.
+
+161
+00:12:41,670 --> 00:12:45,820
+Bu konuda endişelenmenize gerek yok çünkü aslında bunu çoğunlukla ders boyunca
+
+162
+00:12:45,820 --> 00:12:46,730
+Genellikle basit tek bir öğe veya tüm satır veya sütunları kapmak.
+
+163
+00:12:47,010 --> 00:12:51,700
+Burada yaptığımız gibi genellikle alt bölümlerin alt bölümlerini kapmazlar.
+
+164
+00:12:51,760 --> 00:12:56,430
+Tamam.
+
+165
+00:12:56,440 --> 00:12:57,020
+Devam edin
+
+166
+00:12:57,280 --> 00:13:02,290
+ve koşullu seçim olan bu derste çok daha sık kullanacağınız daha önemli seçim yöntemine geçelim.
+
+167
+00:13:02,290 --> 00:13:05,750
+Devam edeceğim ve yalnızca tek bir
+
+168
+00:13:05,810 --> 00:13:15,240
+söz dizimi olan yeni bir dizi oluşturacağım ve Pido'nun bir virgül 11'i düzenleyip bu diziyi kontrol etmeye başlayacağım.
+
+169
+00:13:15,280 --> 00:13:18,180
+TAMAM.
+
+170
+00:13:18,850 --> 00:13:19,350
+Yani bu dizi için bir iki üç dört beş altı yedi sekiz dokuz tane var 10.
+
+171
+00:13:19,360 --> 00:13:23,300
+Yapabildiğim, bu diziyi, bunun yerine
+
+172
+00:13:23,740 --> 00:13:30,580
+tam bir boolean dizisi elde etmek için karşılaştırma operatörleriyle birleştirebilmem.
+
+173
+00:13:30,630 --> 00:13:32,240
+Ve bunu, tek
+
+174
+00:13:32,340 --> 00:13:40,450
+bir basamakla karşılaştıracağım, örneğin a'dan büyükse, boolean değerlerinden oluşan bir dizi alacağım demektir.
+
+175
+00:13:40,450 --> 00:13:42,730
+Dikkat edin D tipi B O L.
+
+176
+00:13:42,730 --> 00:13:45,010
+Yani bunlar doğru veya yanlış değerlerdir.
+
+177
+00:13:45,250 --> 00:13:47,110
+Ve bu kıyaslamanın sahte ve gerçek olduğu veya karşılaştırmanın doğru olduğu her yerde yanlış olur.
+
+178
+00:13:47,250 --> 00:13:52,990
+Ve sonra devam edebilirim ve belki de diziyi altını çizeceksin.
+
+179
+00:13:53,160 --> 00:13:59,650
+Şu anda bool underscore'u çağırırsam, bu boolean dizisini geri alıyorum.
+
+180
+00:13:59,640 --> 00:14:06,270
+Şimdi bunu aslında koşullu seçim yapmak için kullanabilirsiniz.
+
+181
+00:14:06,280 --> 00:14:09,850
+Anlamı, onu iki parantez içinde geçirebilirim ve yalnızca bu
+
+182
+00:14:09,850 --> 00:14:12,440
+boolean dizisinin gerçek olduğu yerde elde edeceğim.
+
+183
+00:14:15,250 --> 00:14:19,990
+Aşağıda bir kez daha diziyi elde etmeye gidelim ve üzerinde bir
+
+184
+00:14:19,990 --> 00:14:26,440
+karşılaştırma işleci kullanmak, tüm boolean değerlerinden oluşan bir dizi anlamına gelen bir boolean dizisi döndürür.
+
+185
+00:14:26,430 --> 00:14:31,020
+Ardından, bu boolean dizisini, dizininin veya koşullu
+
+186
+00:14:31,170 --> 00:14:38,200
+olarak bu özgün dizideki öğelerin doğru olduğu yerde seçilebilmesi için kullanabilirim.
+
+187
+00:14:38,200 --> 00:14:40,220
+Dolayısıyla yalnızca, o boolean
+
+188
+00:14:40,230 --> 00:14:46,180
+dizisinin doğru olduğu örnekleri döndürür ve daha yaygın olarak bunu iki basamağa ayırır.
+
+189
+00:14:46,170 --> 00:14:47,450
+Aslında hepsini tek adımda yapardın.
+
+190
+00:14:47,500 --> 00:14:49,480
+Diziyi söylerseniz ve dizi yerine köşeli
+
+191
+00:14:49,480 --> 00:14:54,490
+parantez içinde, koşullu ifadede geçecekti, örneğin r r değeri 5'den büyük ve aynı cevabı verecektir.
+
+192
+00:14:54,950 --> 00:14:59,640
+Ve bu, koşullu seçime kadar her zaman kullanacağımız sözdizimi gösterim çeşididir.
+
+193
+00:14:59,710 --> 00:15:04,900
+Örneğin, örneğin, dizinin 3'ten daha küçük olan tüm öğelerini bilmek istediğimizi varsayalım.
+
+194
+00:15:06,310 --> 00:15:12,470
+Dizi parantezini söyleyip dizi üçten daha azını söyleyeceğim
+
+195
+00:15:12,520 --> 00:15:20,380
+ve burada doğru olan tüm öğeleri döndürüyorum ve bu derste çok
+
+196
+00:15:20,380 --> 00:15:25,620
+şey kullanacağımız şey türüydü, özellikle de pandalar.
+
+197
+00:15:25,970 --> 00:15:28,000
+Alışılmanız gereken notasyon türüdür.
+
+198
+00:15:28,030 --> 00:15:30,440
+İlk önce değişken adının kendisinin
+
+199
+00:15:30,460 --> 00:15:37,110
+içinde olduğunu görmek biraz garip, ancak umarım bu iki adıma bölünerek gerçekte neler olduğunu netleştirir.
+
+200
+00:15:37,120 --> 00:15:40,550
+dizinin dizininde doğru olduğu yerde dönüyorsunuz.
+
+201
+00:15:40,570 --> 00:15:45,510
+Boolean değer dizisine geçiyorsunuz ve sonra yalnızca orijinal
+
+202
+00:15:45,520 --> 00:15:48,410
+Tamam bu ders için.
+
+203
+00:15:48,900 --> 00:15:50,760
+Kendiniz için
+
+204
+00:15:50,770 --> 00:15:58,390
+bir egzersiz yapmaya ne öneririm, N yazarak diziye yenisini yaratmaktır. P. noktalar dizisi. Öyleyse 50 deyin ve sonra bunu 5 x 10 olarak yeniden biçimlendirin.
+
+205
+00:15:58,420 --> 00:16:01,860
+Hayır, sadece başka bir yöntemden bir yöntem çağırmak değil.
+
+206
+00:16:02,080 --> 00:16:08,650
+Bu yüzden hepsi bir dizi ve sonra da bu güzel beş x 10 dizin var.
+
+207
+00:16:08,640 --> 00:16:10,990
+Yani 0 ila 40 ve sonra 0 ila 9'dur.
+
+208
+00:16:10,990 --> 00:16:17,530
+Kendin için sadece pratik yapmanızı tavsiye ederim.
+
+209
+00:16:17,560 --> 00:16:20,340
+Zihninizi kapmak için parçalara ayırmayı deneyin ve düşündüğünüz
+
+210
+00:16:20,430 --> 00:16:23,500
+parçaları kapmak için köşeli ayraç işareti kullanıp kullanamayacağınızı görün.
+
+211
+00:16:23,500 --> 00:16:30,370
+Örneğin, belki 13 14 ve 23 24'ünüzü almak istiyorsunuz.
+
+212
+00:16:30,370 --> 00:16:31,380
+Hadi dışarı çıkalım ve bunu nasıl yapacağınızı gösterelim.
+
+213
+00:16:31,380 --> 00:16:36,210
+Önce iki satır ve sütun halinde ayrılmak istiyorum.
+
+214
+00:16:36,390 --> 00:16:38,820
+Yani 13:14, 0 1 ve 2 sıralarında başlar.
+
+215
+00:16:38,980 --> 00:16:41,880
+Yani 1 ile 2 arasındaki satırları kapmak istiyorum.
+
+216
+00:16:41,920 --> 00:16:49,730
+söyleyeceğim ve bu tür bir dilim notasyonuyla hatırlayacağım ve gerçekten ihtiyacın olanından daha fazlasını alacağım.
+
+217
+00:16:50,020 --> 00:16:52,830
+Ben devam edip bir tane
+
+218
+00:16:53,250 --> 00:16:59,680
+Demek istediğim, sonsuza kadar bir tane kapmak ve dizin üçünü içermemek.
+
+219
+00:16:59,670 --> 00:17:00,770
+Yani bu iki sıra olmalı.
+
+220
+00:17:01,120 --> 00:17:05,220
+İçeri girelim ve burada sadece o sıraları yakalamak için gereken puanı söyleyerek onaylayalım.
+
+221
+00:17:05,290 --> 00:17:07,310
+Bir çağrı ve üç ve bu temelde normal Python liste notasyonu gibi çalışıyor.
+
+222
+00:17:07,470 --> 00:17:13,040
+Yani burada endeks birinciye var ama üçü içermiyor.
+
+223
+00:17:13,140 --> 00:17:18,450
+sonra dört tane beş efendiyi içermesini isterim, ancak beşinde
+
+224
+00:17:18,450 --> 00:17:23,520
+orada aradıklarımı geri getiririm 13 14 23 24.
+
+225
+00:17:23,560 --> 00:17:34,170
+Ardından sütunlar için 13 14 ve 23 24'ü istediğimi söyleyin, bu üç grupta üç grupta oluşur ve
+
+226
+00:17:34,170 --> 00:17:42,060
+Anketi kendi Jüpiter not defterinizde kurarak ve daha sonra bu matrisin parçalarını kapağında tutarak
+
+227
+00:17:42,070 --> 00:17:44,310
+pratik yapmaya teşvik ediyorum.
+
+228
+00:17:44,320 --> 00:17:50,600
+Tamam.
+
+229
+00:17:50,880 --> 00:17:55,050
+Dizüstü bilgisayarda çok daha fazla endeksleme yardımı var.
+
+230
+00:17:55,060 --> 00:17:55,610
+Yüzde 100
+
+231
+00:17:55,720 --> 00:17:58,250
+rahat hissetmiyorsanız, PI'nin son uygulamasında daha fazla uygulama alırsınız diye endişelenmeyin.
+
+232
+00:17:58,300 --> 00:18:03,100
+Ama gerçekten de bu sadece bazı pastaların yapabileceklerini size bildirmek içindir.
+
+233
+00:18:03,100 --> 00:18:05,320
+Bu tür bir dilimleme notasyonunu, çoğunlukla bu denilen tabelayı kullanarak derste yapmayacağız.
+
+234
+00:18:05,560 --> 00:18:09,170
+Kişi operatörlerini kullanarak koşullu seçimi kullanacağız.
+
+235
+00:18:09,180 --> 00:18:14,450
+Çok daha fazla.
+
+236
+00:18:14,580 --> 00:18:17,540
+Pekâlâ, herkese teşekkürler, bir sonraki derside görüşürüz.
+
+237
+00:18:17,620 --> 00:18:19,060
+&nbsp;
+
+238
+00:18:19,060 --> 00:18:21,820
+&nbsp;

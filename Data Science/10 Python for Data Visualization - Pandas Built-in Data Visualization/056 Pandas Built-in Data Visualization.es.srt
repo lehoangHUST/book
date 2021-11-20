@@ -1,0 +1,783 @@
+1
+00:00:05,220 --> 00:00:07,080
+Hola a todos y bienvenidos a los paneles.
+
+2
+00:00:07,080 --> 00:00:12,900
+El conferenciante de visualización de datos BILTON y esta conferencia vamos a repasar las capacidades incorporadas de Panther que en realidad están
+
+3
+00:00:13,230 --> 00:00:17,550
+construidas a partir de esa trama en vivo, pero que le permiten llamar visualizaciones de datos directamente
+
+4
+00:00:17,610 --> 00:00:18,860
+a partir de los datos.
+
+5
+00:00:19,140 --> 00:00:22,160
+Avancemos y saltemos al cuaderno de Júpiter.
+
+6
+00:00:22,170 --> 00:00:22,370
+Todo bien.
+
+7
+00:00:22,370 --> 00:00:24,810
+Aquí estoy en el servidor de Jupiter.
+
+8
+00:00:24,810 --> 00:00:25,520
+Una nota rápida.
+
+9
+00:00:25,590 --> 00:00:30,170
+Deberías abrir este cuaderno de Júpiter debajo de mi pulgar para visualizar los datos.
+
+10
+00:00:30,180 --> 00:00:35,280
+El panel está construido en una carpeta de datos y el motivo es que hay un par de archivos c
+
+11
+00:00:35,290 --> 00:00:37,100
+c llamados def 1 2 y 3.
+
+12
+00:00:37,260 --> 00:00:41,350
+Y ve como archivos en V y vamos a trabajar para mostrar realmente las capacidades de
+
+13
+00:00:41,370 --> 00:00:44,910
+los pandas incorporados en la visualización de datos. El cuaderno de conferencias está aquí.
+
+14
+00:00:44,920 --> 00:00:49,050
+Este panel integra la visualización de datos y luego también tiene un ejercicio que se analizará
+
+15
+00:00:49,110 --> 00:00:49,760
+más adelante.
+
+16
+00:00:49,830 --> 00:00:52,290
+Voy a abrir, conoces un libro aquí.
+
+17
+00:00:52,380 --> 00:00:54,440
+Y sigue y comienza.
+
+18
+00:00:54,450 --> 00:00:54,660
+Todo bien.
+
+19
+00:00:54,660 --> 00:01:01,890
+Aquí estoy en esta libreta y voy a salir y decir que PI y P importantes van a importar pandas como
+
+20
+00:01:02,010 --> 00:01:09,030
+PD y luego también voy a especificar la trama vivida en línea para que pueda ver las visualizaciones de datos
+
+21
+00:01:09,030 --> 00:01:16,120
+dentro de la el cuaderno real y luego los archivos CACP que vamos a subir son los que quiero decir.
+
+22
+00:01:16,200 --> 00:01:25,020
+PD lee C S V pasand d si uno y para DF también voy a especificar que el índice sea la primera
+
+23
+00:01:25,020 --> 00:01:26,820
+columna en el índice 0.
+
+24
+00:01:26,820 --> 00:01:32,460
+que el índice es en realidad una serie temporal y eso será importante cuando lo visualicemos.
+
+25
+00:01:32,460 --> 00:01:34,570
+Entonces, si miro uno, puedo ver
+
+26
+00:01:34,680 --> 00:01:43,530
+Y luego, para un índice que no es de la serie de tiempo, me voy al final y digo PD PD leer C S V y luego pasar y solo echar
+
+27
+00:01:43,530 --> 00:01:45,340
+un vistazo a los dos dijo.
+
+28
+00:01:45,420 --> 00:01:50,100
+Muy similar, excepto que esto es solo datos leídos y tiene un índice secuencial.
+
+29
+00:01:50,100 --> 00:01:50,740
+Todo bien.
+
+30
+00:01:50,880 --> 00:01:55,940
+Déjeme seguir y mostrarle un ejemplo rápido de lo que puede hacer con este tipo de marcos de
+
+31
+00:01:55,940 --> 00:01:57,060
+datos en estas columnas.
+
+32
+00:01:57,060 --> 00:02:02,600
+Imagine que queríamos obtener un histograma de todos los valores en la columna A para DF 1.
+
+33
+00:02:03,300 --> 00:02:05,590
+Bueno, eso puede hacer eso.
+
+34
+00:02:05,970 --> 00:02:13,440
+Podemos simplemente llamar a EF 1 y luego llamar justo afuera de esto y de hecho comenzará a crear automáticamente
+
+35
+00:02:13,440 --> 00:02:14,330
+un histograma.
+
+36
+00:02:14,490 --> 00:02:18,960
+Y tenga en cuenta que en realidad está llamando a la trama del mapa en vivo bajo el capó y puede
+
+37
+00:02:18,960 --> 00:02:24,670
+comenzar a agregar en los argumentos de lib argumento plot o incluso ver más argumentos de estilo como el número de contenedores que desea en este histograma.
+
+38
+00:02:25,020 --> 00:02:30,140
+Ahora bien, algo a tener en cuenta es que este estilo en realidad no es muy atractivo.
+
+39
+00:02:30,150 --> 00:02:31,380
+En mi opinión.
+
+40
+00:02:31,380 --> 00:02:35,880
+realmente a cualquier parte del notebook y diga importar Seaborn como asinus.
+
+41
+00:02:36,270 --> 00:02:42,280
+Entonces, lo que puede hacer para arreglar eso es si sube a la parte superior o
+
+42
+00:02:42,690 --> 00:02:48,080
+Y una vez que se haya importado Si comienza a ejecutar estas celdas nuevamente, se verá como una trama marina.
+
+43
+00:02:48,090 --> 00:02:49,100
+Ahora mira un poco mejor.
+
+44
+00:02:49,110 --> 00:02:50,330
+Entonces eso es algo que me gusta hacer.
+
+45
+00:02:50,400 --> 00:02:55,810
+En realidad, puedes ver más en estilos y las llamadas sin pantalón se verán como estas.
+
+46
+00:02:56,190 --> 00:03:01,140
+Pandas tiene varios tipos de trama incorporados y vamos a ir brevemente y mostrar
+
+47
+00:03:01,200 --> 00:03:03,080
+ejemplos de cómo crear estos trazados.
+
+48
+00:03:03,210 --> 00:03:09,360
+esto con dos métodos que puedes llamar a un marco de datos en sí mismo o llamar a la columna después del marco de datos.
+
+49
+00:03:09,360 --> 00:03:14,420
+Casi todas las tramas se pueden hacer a través de un comando fuera del marco de datos y básicamente puedes hacer
+
+50
+00:03:14,430 --> 00:03:21,630
+Entremos y simplemente hagamos una columna ahora y usted puede llamar a las parcelas y luego bajo el argumento del tipo de
+
+51
+00:03:21,630 --> 00:03:22,390
+trama especificada.
+
+52
+00:03:22,530 --> 00:03:26,670
+Y hay una lista en su cuaderno y vamos a ir a lo largo de esta lista y luego
+
+53
+00:03:26,670 --> 00:03:28,090
+especifica la palabra clave del tipo.
+
+54
+00:03:28,090 --> 00:03:31,180
+Entonces, si quisiera hacer un histograma, también podría crearlo de esta manera.
+
+55
+00:03:31,440 --> 00:03:37,920
+Y luego aquí puede agregar argumentos del histograma, como la cantidad de contenedores que desea.
+
+56
+00:03:37,920 --> 00:03:43,710
+crear, por ejemplo, una sala de historia fuera de una columna de marco de datos llamada gráfica de puntos y luego llamar a kind.
+
+57
+00:03:43,920 --> 00:03:45,510
+Así que ese es un método para
+
+58
+00:03:45,510 --> 00:03:51,380
+De acuerdo, a la inversa, puedes llamar a un argumento usando pandas, en lugar de especificar que el tipo es
+
+59
+00:03:51,690 --> 00:03:58,010
+silbado, puedes llamar a hist directamente fuera de la trama para que puedas decir el gráfico de puntos y luego eso.
+
+60
+00:03:58,210 --> 00:04:00,110
+Esto también creará la trama.
+
+61
+00:04:00,120 --> 00:04:04,110
+Este es el método que vamos a utilizar durante el resto de esta conferencia, de modo que podamos tomar
+
+62
+00:04:04,110 --> 00:04:09,570
+todo el marco de datos o la columna denominada punto plot y luego llamar a dot cualquiera que sea el tipo de gráfica que deseemos.
+
+63
+00:04:10,110 --> 00:04:13,730
+Avancemos y revisemos todos los tipos de gráficos y los revisemos.
+
+64
+00:04:14,370 --> 00:04:19,780
+Así que sigamos adelante y trabajemos con estos dos, que es la serie no temporal.
+
+65
+00:04:19,780 --> 00:04:28,560
+Entonces, como ejemplo, solo tiene un índice normal y un gráfico que puede hacer es un gráfico de área para que pueda continuar
+
+66
+00:04:28,560 --> 00:04:30,700
+y especificar el área de trazado.
+
+67
+00:04:30,990 --> 00:04:38,250
+Y esto básicamente solo mostrará una gráfica de área y que también puede hacer es especificar aquí Alpha
+
+68
+00:04:38,250 --> 00:04:39,190
+como argumento.
+
+69
+00:04:39,240 --> 00:04:46,680
+Si quieres algo más de transparencia y dices Alfas igual a 0. 4 y esto muestra algo de transparencia aquí y esto solo muestra
+
+70
+00:04:46,680 --> 00:04:52,470
+el área de los valores, básicamente puedes pensar en esto como un gráfico de línea normal, excepto que
+
+71
+00:04:52,470 --> 00:04:56,750
+el área debajo de él se ha rellenado con algún tipo de color.
+
+72
+00:04:57,150 --> 00:05:01,890
+Está bien, eso es un diagrama de área y nuevamente es muy fácil cancelar el marco de datos.
+
+73
+00:05:01,890 --> 00:05:08,700
+Avancemos y echemos un vistazo a la trama de Bart para poder decir que es un marco de datos
+
+74
+00:05:09,150 --> 00:05:18,070
+de las dos tramas y luego barra y así crear automáticamente una gráfica de barras y lo que hace es simplemente tomar el valor del índice
+
+75
+00:05:18,220 --> 00:05:19,630
+básicamente como una categoría.
+
+76
+00:05:19,630 --> 00:05:22,830
+Entonces, en este caso, su índice debe ser categórico.
+
+77
+00:05:23,030 --> 00:05:26,830
+Nuestro marco de datos es en realidad lo suficientemente pequeño, así que tiene sentido si echamos un vistazo al
+
+78
+00:05:27,100 --> 00:05:29,560
+marco de datos, solo tiene 0 o 9, así que esto funciona.
+
+79
+00:05:29,560 --> 00:05:32,890
+Un marco de datos típico con un índice secuencial probablemente desee hacer esto.
+
+80
+00:05:33,100 --> 00:05:38,980
+también puede crear esto para que se apile pasando pasar apilados es igual a verdadero y obtendrá un gráfico que se ve así.
+
+81
+00:05:38,980 --> 00:05:43,360
+Pero si se trata de un índice categórico, entonces como una categoría, solo enumeraremos los valores por
+
+82
+00:05:46,180 --> 00:05:47,530
+cada columna y, de hecho,
+
+83
+00:05:47,530 --> 00:05:51,190
+Básicamente es exactamente lo mismo salvo que se apilan los valores.
+
+84
+00:05:51,190 --> 00:05:54,780
+Personalmente, en realidad recomendaría esa facilidad para ver más y para este tipo de tramas.
+
+85
+00:05:54,910 --> 00:06:00,100
+Pero si solo estás haciendo un análisis muy rápido, este tipo de cosas funcionarán para
+
+86
+00:06:00,100 --> 00:06:01,480
+ti, llamándolo sin pantis.
+
+87
+00:06:01,630 --> 00:06:04,180
+Ahora se llama histograma.
+
+88
+00:06:04,180 --> 00:06:06,500
+Solo para aclarar cómo se ve de nuevo.
+
+89
+00:06:06,530 --> 00:06:13,780
+Así que vamos a llamarlo por decir si hay una trama de puntos, simplemente hemos visto esto antes.
+
+90
+00:06:14,020 --> 00:06:15,040
+Y aquí está nuestro histograma.
+
+91
+00:06:15,040 --> 00:06:17,110
+Y puede especificar el número de contenedores que desea.
+
+92
+00:06:17,300 --> 00:06:24,430
+Entonces, si quieres un mayor número de contenedores para obtener un poco más de claridad en cuanto a las tramas de
+
+93
+00:06:24,460 --> 00:06:30,640
+Panthers, hacer las cosas que están integradas en los histogramas de Panda probablemente sean las que más utilices.
+
+94
+00:06:30,640 --> 00:06:35,070
+También puedes hacer gráficos de líneas, que es otro común que me gusta usar para Pandurs.
+
+95
+00:06:35,230 --> 00:06:39,630
+Por ejemplo, si revisamos el EF 1, recordemos que nuestro índice de series de tiempo.
+
+96
+00:06:39,790 --> 00:06:43,500
+Imaginemos que queríamos trazar los datos de una de estas series temporales.
+
+97
+00:06:43,600 --> 00:06:47,590
+Puedes continuar y solo decir DF un diagrama y luego llamar a la línea.
+
+98
+00:06:47,590 --> 00:06:49,920
+Esto solo va a crear un diagrama de líneas.
+
+99
+00:06:50,290 --> 00:06:54,550
+Y para el gráfico de líneas, debe especificar la X y la Y.
+
+100
+00:06:54,550 --> 00:07:03,400
+Entonces, en este caso, quiero que la X sea mi índice real, así que puedo decir si un índice y yo queremos que my sea una de estas
+
+101
+00:07:03,400 --> 00:07:06,250
+columnas, y usted pasa la columna como una cadena.
+
+102
+00:07:06,370 --> 00:07:07,500
+Entonces quiero ir no especificado.
+
+103
+00:07:07,540 --> 00:07:09,110
+Digamos B.
+
+104
+00:07:09,940 --> 00:07:14,590
+Y si solo ejecuto esto, obtengo una trama que se ve más o menos así.
+
+105
+00:07:14,600 --> 00:07:15,770
+Generalmente solo un diagrama de línea.
+
+106
+00:07:15,790 --> 00:07:19,900
+Entonces, pueden imaginar que si se trataba de información de stock y deseaban trazarla en función del
+
+107
+00:07:19,900 --> 00:07:21,250
+tiempo, podrían obtener algo como este.
+
+108
+00:07:21,520 --> 00:07:24,190
+Y así todo esto está basado en esa trama lib.
+
+109
+00:07:24,250 --> 00:07:28,050
+Puede comenzar a agregar argumentos de lib plot, como el tamaño que desea.
+
+110
+00:07:28,250 --> 00:07:31,420
+Entonces quiero algo mucho más amplio.
+
+111
+00:07:31,420 --> 00:07:33,000
+Puedes hacer algo como esto.
+
+112
+00:07:33,130 --> 00:07:35,770
+O digamos que quiero ajustar la línea con.
+
+113
+00:07:35,860 --> 00:07:39,610
+Bueno, puedes hacer LW como lo vimos en Plaut en vivo.
+
+114
+00:07:39,740 --> 00:07:43,510
+Es la línea con algo un poco más delgado que puede agregar en los marcadores.
+
+115
+00:07:43,510 --> 00:07:45,210
+Todos estos otros mapas trazan comandos.
+
+116
+00:07:45,370 --> 00:07:49,610
+Entonces, todo lo que aprenda sobre esa trama en vivo puede ser aplicable a estos diagramas de marcos de datos.
+
+117
+00:07:50,050 --> 00:07:52,310
+Ahora sigamos y revisemos el diagrama de dispersión.
+
+118
+00:07:52,810 --> 00:07:59,920
+Entonces digamos que tengo DF, puedo decir plot que scatter y vas a tener que especificar x e
+
+119
+00:07:59,920 --> 00:08:00,400
+y.
+
+120
+00:08:00,490 --> 00:08:05,110
+Entonces, para esto, simplemente continuemos y pasemos las cadenas de nombres de columna.
+
+121
+00:08:05,410 --> 00:08:10,240
+Así que a y b y esto creará un bonito diagrama de dispersión para nosotros.
+
+122
+00:08:10,330 --> 00:08:15,150
+Otra cosa que puede hacer es configurar el color en otra columna.
+
+123
+00:08:15,160 --> 00:08:24,160
+Entonces, por ejemplo, puede decir que verá que el color va a ser igual a la columna C.
+
+124
+00:08:24,220 --> 00:08:27,220
+Entonces, si acabo de leer eso me pone blanco y negro.
+
+125
+00:08:27,220 --> 00:08:32,010
+Entonces, si eché un vistazo a si uno solo aclara lo que estamos haciendo aquí.
+
+126
+00:08:32,010 --> 00:08:36,790
+Datos de cuando tenemos un valor para a y b y tenemos un valor para c. Entonces, esencialmente estamos mostrando ahora tres niveles de información, una trama tridimensional, si así lo desea.
+
+127
+00:08:36,820 --> 00:08:42,250
+Dado que tenemos un frente a B y luego un tercer argumento, vea el color y,
+
+128
+00:08:42,250 --> 00:08:48,430
+de hecho, puede pasar viendo el mapa como un argumento y luego pasar su propio mapa de colores.
+
+129
+00:08:49,360 --> 00:08:52,330
+Entonces, por ejemplo, cálida y fría, que ya has visto antes,
+
+130
+00:08:52,330 --> 00:08:57,820
+y ahora muestras tres niveles de información a, frente a B, donde están, y luego, el valor de color de c. A veces a las personas no les gusta mostrar las cosas por color, pero prefieren mostrarlas por tamaño.
+
+131
+00:08:57,970 --> 00:09:02,110
+En realidad, puedes hacer eso en lugar de pasar C como argumento.
+
+132
+00:09:02,140 --> 00:09:06,500
+Aquí simplemente seguirás adelante y pasarás.
+
+133
+00:09:06,520 --> 00:09:09,910
+S y para s Continuará y en una columna de marco de datos.
+
+134
+00:09:09,910 --> 00:09:12,440
+Así que para esto tienes que pasar realmente
+
+135
+00:09:12,520 --> 00:09:18,150
+en la columna del marco de datos y probablemente, si lo haces, los puntos serán demasiado pequeños.
+
+136
+00:09:18,460 --> 00:09:24,100
+Y luego, lo que puedes hacer es multiplicar esto por algún tipo de factor.
+
+137
+00:09:24,100 --> 00:09:26,470
+De modo que puede ver que los puntos son a
+
+138
+00:09:27,110 --> 00:09:30,820
+contra B y el tamaño indica cuánto más grande o C fue relativo entre sí.
+
+139
+00:09:31,390 --> 00:09:40,000
+Todo bien.
+
+140
+00:09:40,000 --> 00:09:41,520
+Este es el tipo de cosas en las que probablemente
+
+141
+00:09:41,560 --> 00:09:41,980
+no recordaría esto
+
+142
+00:09:42,010 --> 00:09:45,880
+de la cabeza, volvería al libro de cuaderno de Júpiter que he reunido para usted y lo usará como referencia o revisará la documentación.
+
+143
+00:09:45,880 --> 00:09:50,320
+Avancemos y pasemos a los diagramas de caja nuevamente.
+
+144
+00:09:50,320 --> 00:09:52,090
+de un cuadro, los pandas pueden hacer eso por ti también.
+
+145
+00:09:52,090 --> 00:09:55,010
+Me gusta mucho el mar para las parcelas de cajas, pero si solo quieres un análisis rápido
+
+146
+00:09:55,030 --> 00:09:59,980
+Así que solo pasa el recuadro de llamada de diagrama de llamadas de todo el marco de datos y aquí puede ver un diagrama de caja que básicamente se
+
+147
+00:09:59,980 --> 00:10:00,920
+hace automáticamente por usted por columna.
+
+148
+00:10:00,940 --> 00:10:08,740
+Entonces, simplemente toma cada columna como una categoría y luego traza las distribuciones para usted como un diagrama de caja.
+
+149
+00:10:08,740 --> 00:10:11,270
+Todo bien.
+
+150
+00:10:11,290 --> 00:10:16,390
+Por varios datos puedes hacer una trama hexagonal que habías visto antes con Pandurs discúlpame que
+
+151
+00:10:16,920 --> 00:10:17,680
+era Seaborn.
+
+152
+00:10:17,680 --> 00:10:24,970
+Pero déjame ir y crear un nuevo marco de datos para que esto realmente se muestre correctamente.
+
+153
+00:10:24,970 --> 00:10:25,970
+Así que quiero decir marco de datos PD.
+
+154
+00:10:26,200 --> 00:10:30,400
+Voy a pasar algunos datos aleatorios y luego voy a tener esto ser 1000 digamos dos
+
+155
+00:10:30,520 --> 00:10:33,780
+y luego voy a pasar y las columnas son solo a y b.
+
+156
+00:10:33,780 --> 00:10:42,400
+Y si echamos un vistazo a nuestro marco de datos, veamos algo como esto.
+
+157
+00:10:42,400 --> 00:10:48,020
+Solo algunos datos al azar.
+
+158
+00:10:49,580 --> 00:10:52,650
+Un regalo de promoción.
+
+159
+00:10:52,650 --> 00:10:53,700
+Solo quería algunos puntos más al azar aquí y lo que puedo
+
+160
+00:10:53,740 --> 00:10:54,700
+hacer ya que esto es por variante son dos variables aquí.
+
+161
+00:10:54,880 --> 00:11:01,330
+Y B Puedo decir trazar el paso de Hexton yx es igual a una masa e Y es igual a B.
+
+162
+00:11:01,330 --> 00:11:01,620
+Y si solo haces esto, obtendrás un diagrama de hex.
+
+163
+00:11:01,660 --> 00:11:10,990
+Ahora esto es esencialmente como un diagrama de dispersión, excepto que se trata de los contenedores hexagonales.
+
+164
+00:11:11,330 --> 00:11:14,750
+En este momento, el tamaño del contenedor es bastante pequeño.
+
+165
+00:11:14,980 --> 00:11:19,090
+Entonces, para cambiar eso, puede decir que el tamaño de la cuadrícula es igual a 25.
+
+166
+00:11:19,210 --> 00:11:21,710
+Y esto aumentará el tamaño de los
+
+167
+00:11:21,730 --> 00:11:27,170
+hexágonos y, esencialmente, los hexágonos se oscurecen ya que hay más puntos dentro de ellos
+
+168
+00:11:27,580 --> 00:11:33,730
+y también puedes cambiar el mapeo de colores aquí y decir "Ver mapa" es igual a otra cosa.
+
+169
+00:11:33,730 --> 00:11:39,760
+Por ejemplo, si quisiéramos que el frío cálido fuera nuestro mapeo de colores, podrías hacer eso también.
+
+170
+00:11:39,760 --> 00:11:40,180
+Y finalmente podemos hacer gráficas de estimación de la densidad del kernel.
+
+171
+00:11:40,180 --> 00:11:45,930
+Entonces, si por alguna razón no solo quiere un histograma sino que quiere estimar la densidad del núcleo, puede llamar a su marco de
+
+172
+00:11:46,000 --> 00:11:49,980
+datos o a una columna fuera de su marco de datos y luego tramar a Haidee.
+
+173
+00:11:50,110 --> 00:11:56,020
+Creará este gráfico de estimación de la densidad del kernel para usted y
+
+174
+00:11:56,020 --> 00:12:02,700
+usted puede hacer lo mismo con la densidad, que es otra llamada que puede hacer.
+
+175
+00:12:03,080 --> 00:12:08,680
+Entonces en decir densidad y eso será lo mismo.
+
+176
+00:12:09,170 --> 00:12:10,450
+partir de todo el marco de datos.
+
+177
+00:12:10,450 --> 00:12:15,880
+Por lo tanto, si desea un gráfico de densidad o de estimación de la densidad del núcleo, esos serán lo mismo y, de hecho, también puede hacerlo a
+
+178
+00:12:15,880 --> 00:12:20,410
+No tiene que hacerlo solo fuera de una columna si desea comparar el gráfico de densidad de densidad
+
+179
+00:12:20,410 --> 00:12:23,320
+del kernel de todas las columnas en su marco de datos.
+
+180
+00:12:23,320 --> 00:12:29,890
+Todo bien.
+
+181
+00:12:29,890 --> 00:12:32,220
+Eso es.
+
+182
+00:12:32,230 --> 00:12:32,590
+Esperemos que pueda ver por qué este método de trazado directamente de Pandurs es
+
+183
+00:12:32,590 --> 00:12:33,200
+mucho más fácil que invocar el diagrama completo del mapa lib y equilibra la facilidad de uso con el control sobre la figura.
+
+184
+00:12:33,280 --> 00:12:38,920
+personalizar tu figura, deberías recurrir a Seaborn o mapear la gráfica de la trama.
+
+185
+00:12:38,920 --> 00:12:43,650
+Sin embargo, debes tener en cuenta que si realmente quieres comenzar a
+
+186
+00:12:43,720 --> 00:12:47,800
+Este tipo de comandos son realmente solo para un análisis rápido de sus datos y es probable que
+
+187
+00:12:47,800 --> 00:12:50,230
+solo acceda al libro de notas y haga referencia rápidamente al
+
+188
+00:12:50,470 --> 00:12:55,390
+tipo de diagrama que desea crear y luego descuelgue el marco de datos o llévelo de la columna o los datos. marco.
+
+189
+00:12:55,390 --> 00:13:00,130
+En cuanto a cómo vamos a utilizar esto a lo largo del curso, realmente las únicas veces que probablemente vamos a usar esto es solo con
+
+190
+00:13:00,130 --> 00:13:02,190
+un diagrama de líneas o un histograma para llamarlo muy rápido.
+
+191
+00:13:02,320 --> 00:13:06,370
+Para más avanzado esto, Haskel trama gráficos de cajas o gráficos de barras, realmente recomiendo ir con Seaborn.
+
+192
+00:13:06,370 --> 00:13:10,840
+describiremos el ejercicio rápido para que practiques lo que acabamos de aprender aquí.
+
+193
+00:13:10,840 --> 00:13:16,170
+Está bien, espero que hayas encontrado útil esto y te veré en la próxima conferencia o
+
+194
+00:13:17,340 --> 00:13:22,570
+Gracias a todos y nos vemos en la próxima conferencia
+
+195
+00:13:22,570 --> 00:13:25,720
+&nbsp;
+
+196
+00:13:25,720 --> 00:13:27,430
+&nbsp;

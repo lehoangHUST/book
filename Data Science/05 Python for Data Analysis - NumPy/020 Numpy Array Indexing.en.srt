@@ -1,0 +1,979 @@
+1
+00:00:06,480 --> 00:00:11,210
+Hello everyone and welcome to the pie in the kissing and selection lecture in this lecture.
+
+2
+00:00:11,230 --> 00:00:15,040
+We're going to discuss how to select elements or groups elements from a pie.
+
+3
+00:00:15,060 --> 00:00:19,260
+All right let's go ahead and jump to the Juber notebook to get started.
+
+4
+00:00:19,260 --> 00:00:19,760
+All right.
+
+5
+00:00:19,800 --> 00:00:21,360
+You're here at the Jupiter note book.
+
+6
+00:00:21,360 --> 00:00:23,880
+I've already said important umpires and P..
+
+7
+00:00:24,040 --> 00:00:29,010
+You know what I'm going to start off with is by creating a sample array I'm going to say the variable
+
+8
+00:00:29,040 --> 00:00:31,370
+A R R is equal to end p.
+
+9
+00:00:31,500 --> 00:00:33,050
+Got a range.
+
+10
+00:00:33,130 --> 00:00:41,700
+Just using tab to autocomplete there and I'm going go from zero to 10 and when I say zero to 10 I mean
+
+11
+00:00:41,700 --> 00:00:45,570
+the actual output in order to get that output I'll pass and at 11 up here.
+
+12
+00:00:45,870 --> 00:00:50,760
+So now I have an array of 11 elements that go from zero to 10.
+
+13
+00:00:50,760 --> 00:00:57,330
+Simplest way to pick out one or some of the elements of an array looks a lot like indexing from a python
+
+14
+00:00:57,330 --> 00:00:58,110
+list.
+
+15
+00:00:58,140 --> 00:01:03,060
+Basically you're going to use brackets and slice notation in order to do this.
+
+16
+00:01:03,140 --> 00:01:07,500
+You go ahead and do is type in the variable name of the array itself.
+
+17
+00:01:07,600 --> 00:01:13,530
+Passen square brackets and then to get a single value at an index which you can do just passing a number
+
+18
+00:01:13,530 --> 00:01:13,830
+.
+
+19
+00:01:14,010 --> 00:01:21,000
+Meaning if I want the value at index 8 I can pass an 8 and I will return back the value in x 8 in this
+
+20
+00:01:21,000 --> 00:01:21,470
+case.
+
+21
+00:01:21,540 --> 00:01:27,030
+It's actually 8 itself since I just used arranged to create this array if I want to get the values in
+
+22
+00:01:27,030 --> 00:01:29,330
+a range just like a python list.
+
+23
+00:01:29,340 --> 00:01:37,010
+I can use slice notation meaning I can say the starting index and the stop index.
+
+24
+00:01:37,080 --> 00:01:43,650
+So if I go ahead and say one colon five it will start index 1 which is the number 1 and go all the way
+
+25
+00:01:43,650 --> 00:01:49,470
+up to index 5 which is the number four because indexing starts at zero.
+
+26
+00:01:49,500 --> 00:01:57,990
+So to show another example of this I can say zero colon 5 and that returns all the values from 0 all
+
+27
+00:01:57,990 --> 00:02:00,710
+the way it's index 5.
+
+28
+00:02:00,750 --> 00:02:06,840
+I can also remove the stop point or the start point to go ahead and indicate that I want everything
+
+29
+00:02:06,900 --> 00:02:07,890
+else in the array.
+
+30
+00:02:07,950 --> 00:02:10,190
+Everything from the beginning of the right.
+
+31
+00:02:10,200 --> 00:02:17,710
+So for instance if I want everything up to index 6 instead of specifying the starting parameter as 0
+
+32
+00:02:17,790 --> 00:02:24,210
+I can just put a colon and then put 6 Ellora's turn everything up to the start of the array to index
+
+33
+00:02:24,270 --> 00:02:24,860
+6.
+
+34
+00:02:24,870 --> 00:02:30,870
+So that's the same thing as saying zero colon 6 but I save a little bit of typing by just putting in
+
+35
+00:02:30,870 --> 00:02:32,990
+the coal itself.
+
+36
+00:02:32,990 --> 00:02:43,060
+Similarly what I can go ahead and do is say array in if I want to start at a particular index and grab
+
+37
+00:02:43,080 --> 00:02:50,340
+everything up to the end of the array I can use the same station I did in a Python list by using slicing
+
+38
+00:02:50,700 --> 00:02:51,940
+notation for coal.
+
+39
+00:02:52,170 --> 00:02:56,910
+Something to note when you're using this notation of a number and then a colon is that you're not actually
+
+40
+00:02:56,910 --> 00:02:59,410
+grabbing at index 5 and beyond.
+
+41
+00:02:59,490 --> 00:03:05,670
+You're grabbing everything be on index 5 because remember indexing as far as notation in Python starts
+
+42
+00:03:05,670 --> 00:03:06,780
+at zero.
+
+43
+00:03:06,780 --> 00:03:15,210
+So 5 here is actually index 6 meaning this notation of five Colon says scrap everything beyond index
+
+44
+00:03:15,210 --> 00:03:15,600
+5.
+
+45
+00:03:15,600 --> 00:03:21,200
+So that's going to be five six seven eight nine ten because remember index 5 is actually here at four
+
+46
+00:03:21,210 --> 00:03:21,630
+.
+
+47
+00:03:21,750 --> 00:03:25,700
+Since indexing starts at zero you have grabbed five elements.
+
+48
+00:03:25,830 --> 00:03:32,730
+Meaning if I say five colon it grabs everything beyond the fifth index which occurs at four and you
+
+49
+00:03:32,730 --> 00:03:38,480
+can go ahead and review Python list slice notation if you want more information about this colon.
+
+50
+00:03:38,550 --> 00:03:42,890
+But essentially this works exactly the same as it does for a normal Python list.
+
+51
+00:03:43,300 --> 00:03:49,310
+No arrays differ from a normal Python list because of their ability to broadcast.
+
+52
+00:03:49,350 --> 00:03:51,710
+Me go ahead and show an example of this.
+
+53
+00:03:51,810 --> 00:03:56,390
+I'm going to take my array and grab elements.
+
+54
+00:03:56,440 --> 00:03:58,060
+Zero and five.
+
+55
+00:03:58,110 --> 00:04:04,080
+So it's going to be zero one two three four and then I consider it equal to the number 100.
+
+56
+00:04:04,140 --> 00:04:05,560
+And what that it's going to do.
+
+57
+00:04:05,820 --> 00:04:12,830
+It's going to broadcast that value to those first five digits to all be 100.
+
+58
+00:04:12,960 --> 00:04:21,510
+I'm going to go ahead and reset the array and you'll see why in just a second if I show the array I'm
+
+59
+00:04:21,510 --> 00:04:24,350
+back to 0 1 2 3 all the way up to 10.
+
+60
+00:04:24,600 --> 00:04:28,420
+I don't want to show you an important no on slices of it or rate.
+
+61
+00:04:28,440 --> 00:04:36,490
+If I go ahead and create a variable called slice under score of underscore are for Array.
+
+62
+00:04:36,500 --> 00:04:46,360
+And I said equal to a slice of the array for instance 06 It's good to see that slice of the array here
+
+63
+00:04:46,380 --> 00:04:48,590
+we have the arrays there are one two three four five.
+
+64
+00:04:48,600 --> 00:04:51,960
+Basically that first chunk of the half of the array.
+
+65
+00:04:52,200 --> 00:04:59,580
+If I broadcast on the Saray weenie I say slice of array I use a colon.
+
+66
+00:04:59,580 --> 00:05:02,550
+That means I'm grabbing everything in that slice.
+
+67
+00:05:02,570 --> 00:05:06,820
+I try to broadcast this to be another number such as 99.
+
+68
+00:05:06,900 --> 00:05:11,780
+That means when I check slice of array I see a bunch of 99.
+
+69
+00:05:12,000 --> 00:05:14,480
+Here's where you have to pay careful attention.
+
+70
+00:05:14,520 --> 00:05:21,800
+If I called back the array it's actually changed 99 not just on the slice but on the original array
+
+71
+00:05:21,790 --> 00:05:21,810
+.
+
+72
+00:05:21,810 --> 00:05:22,960
+I had called two.
+
+73
+00:05:23,190 --> 00:05:28,950
+So you should know how that change also occurs in the original array meaning the data is not copied
+
+74
+00:05:28,970 --> 00:05:29,050
+.
+
+75
+00:05:29,130 --> 00:05:30,560
+It's just a view.
+
+76
+00:05:30,710 --> 00:05:32,100
+So the original array.
+
+77
+00:05:32,280 --> 00:05:38,250
+And the reason it does that is to avoid memory issues with very large arrays meaning no pi is not going
+
+78
+00:05:38,250 --> 00:05:41,140
+to automatically set copies of arrays.
+
+79
+00:05:41,380 --> 00:05:47,940
+If you actually want a copy and not a reference to the original array which you can do is actually specifically
+
+80
+00:05:47,940 --> 00:05:49,410
+specify copy.
+
+81
+00:05:49,530 --> 00:05:51,480
+So I can do something like this.
+
+82
+00:05:51,720 --> 00:06:01,620
+I can go ahead and say r underscore copy and use the copy method off of the array to specifically indicate
+
+83
+00:06:01,620 --> 00:06:03,320
+that I want a copy.
+
+84
+00:06:03,450 --> 00:06:09,410
+So if I take a look at my array it's 9 9 9 9 9 x cetera and then 6 7 8 9 10.
+
+85
+00:06:09,780 --> 00:06:14,320
+And if I take a look at my array copy it's also the same thing.
+
+86
+00:06:14,500 --> 00:06:20,550
+But if I do a change to my array copy maybe by broadcasting every value to be 100.
+
+87
+00:06:20,940 --> 00:06:25,420
+And I check out array copy every value is 100.
+
+88
+00:06:25,440 --> 00:06:32,190
+But that original array is still unaffected by that broadcast in the command to 100.
+
+89
+00:06:32,190 --> 00:06:34,070
+Go ahead and review the notes on this.
+
+90
+00:06:34,120 --> 00:06:40,360
+This is a little confusing to you but the basic premise here is that if you actually grab a slice of
+
+91
+00:06:40,360 --> 00:06:47,370
+the array and set it as a variable without explicitly saying that you want a copy of the array you should
+
+92
+00:06:47,380 --> 00:06:53,340
+keep in mind that you're just viewing a link to the original array and that changes you do will actually
+
+93
+00:06:53,340 --> 00:06:56,760
+affect that original array.
+
+94
+00:06:56,760 --> 00:06:57,400
+OK.
+
+95
+00:06:57,690 --> 00:07:00,550
+Let's go and talk about indexing a to the array.
+
+96
+00:07:00,690 --> 00:07:02,810
+Otherwise known as a matrix.
+
+97
+00:07:02,880 --> 00:07:07,920
+I'm going to go ahead and clear all the cells here for a second.
+
+98
+00:07:07,960 --> 00:07:15,180
+All right I just cleared all the cells here and we're going to do is go ahead and create a to d array
+
+99
+00:07:15,190 --> 00:07:16,390
+.
+
+100
+00:07:17,520 --> 00:07:24,020
+I'm going to say N.P. array and I'm going to pass in a nested list.
+
+101
+00:07:24,930 --> 00:07:37,830
+So I'm going to say 5 10 15 20 25 30 and then finally 35 40 45.
+
+102
+00:07:38,430 --> 00:07:44,280
+So I want to go out and show that to the array and here I have three rows with three columns it's to
+
+103
+00:07:44,280 --> 00:07:46,010
+them missional matrix.
+
+104
+00:07:46,050 --> 00:07:46,820
+Great.
+
+105
+00:07:46,830 --> 00:07:47,430
+All right.
+
+106
+00:07:47,430 --> 00:07:52,880
+There's two general formats for grabbing elements from a to the array or Matrix.
+
+107
+00:07:52,880 --> 00:07:54,500
+There's the double bracket for it.
+
+108
+00:07:54,570 --> 00:07:57,270
+And then there's the single bracket formit with the comma.
+
+109
+00:07:57,270 --> 00:08:01,570
+Let me go to show you the double bracket format and then I'll show you an example of the single bracket
+
+110
+00:08:01,560 --> 00:08:07,200
+format which is the format I would recommend to use but you should know both just in case you encounter
+
+111
+00:08:07,200 --> 00:08:08,750
+them in the wild.
+
+112
+00:08:08,760 --> 00:08:10,970
+So again there's my two theory.
+
+113
+00:08:11,120 --> 00:08:18,390
+Well let's say I wanted to grab the digit 5 so that's in the very first or index 0 row and in the very
+
+114
+00:08:18,390 --> 00:08:27,910
+first column index 0 for double bracket notation I can pasan first the row I want and then the column
+
+115
+00:08:27,900 --> 00:08:28,700
+I want.
+
+116
+00:08:28,770 --> 00:08:32,070
+So passing in 00 here will return the digit 5.
+
+117
+00:08:32,230 --> 00:08:36,410
+Since that's the elements in the first row in the first column.
+
+118
+00:08:36,420 --> 00:08:44,640
+What I can do is delete and just do a single set of brackets and index an entire Roback.
+
+119
+00:08:44,670 --> 00:08:55,320
+So this will index the entire row of index 0 meaning 5 10 15 and if I want to let's say the element
+
+120
+00:08:55,350 --> 00:09:03,000
+25 Well that's index one for the row in its index one for the column.
+
+121
+00:09:03,000 --> 00:09:06,080
+So I can say 1 1 and this all return 25.
+
+122
+00:09:06,100 --> 00:09:11,980
+What I want you to do is try to see if now you could pause the video and try to grab elements from the
+
+123
+00:09:11,970 --> 00:09:15,620
+array individually using this double bracket notation.
+
+124
+00:09:15,660 --> 00:09:15,910
+All right.
+
+125
+00:09:15,930 --> 00:09:19,710
+Let's say we want to grab 40 as just one last example.
+
+126
+00:09:19,950 --> 00:09:22,700
+That's a row index too.
+
+127
+00:09:23,310 --> 00:09:25,290
+And it's a column in next one.
+
+128
+00:09:25,680 --> 00:09:27,010
+So that's 40.
+
+129
+00:09:27,120 --> 00:09:29,520
+That's the double bracket notation.
+
+130
+00:09:29,520 --> 00:09:30,380
+Well you should do.
+
+131
+00:09:30,380 --> 00:09:36,390
+However I would recommend is using the comma single bracket notation.
+
+132
+00:09:36,390 --> 00:09:42,630
+And basically what that does is it replaces the double set of brackets with just a comma and you pass
+
+133
+00:09:42,630 --> 00:09:45,790
+in the row comma column number.
+
+134
+00:09:45,780 --> 00:09:54,440
+So for instance let's say I wanted the digit 30 I would pass in index 1 because it's index one to row
+
+135
+00:09:54,930 --> 00:09:56,300
+and then it's in the third column.
+
+136
+00:09:56,320 --> 00:10:03,010
+So 0 1 2 it's in the index to column and that gives me the 30.
+
+137
+00:10:03,210 --> 00:10:11,040
+And that's the same as just saying what are underscored to me and doing it with double brackets I would
+
+138
+00:10:11,050 --> 00:10:17,200
+recommend that you always use this single bracket of a common notation because usually it's less prone
+
+139
+00:10:17,200 --> 00:10:19,990
+to error.
+
+140
+00:10:19,990 --> 00:10:24,730
+Now let's imagine that you didn't want single elements but actual chunks of the.
+
+141
+00:10:24,900 --> 00:10:31,870
+For instance you want some matrices from this matrix you can use colon for slice notation Nurit to grab
+
+142
+00:10:31,870 --> 00:10:36,620
+certain sections of the entire to the array and sort of just single elements.
+
+143
+00:10:36,820 --> 00:10:38,730
+I'll go ahead and show you how to do that.
+
+144
+00:10:38,770 --> 00:10:44,230
+We're going to delete this second cell and show you a couple of examples.
+
+145
+00:10:44,400 --> 00:10:47,640
+Let's say we wanted to grab from the top right corner.
+
+146
+00:10:47,760 --> 00:10:54,160
+Meaning I want to say 10 15 and 25 30 so this top right corner here's what I want to grab when I can
+
+147
+00:10:54,150 --> 00:10:59,860
+go ahead and do is use slice notation in order to do this.
+
+148
+00:11:00,040 --> 00:11:12,390
+So I can say grab everything up to call a row to and then grab from column 1 onwards and that returns
+
+149
+00:11:12,390 --> 00:11:14,890
+10 15 25 30.
+
+150
+00:11:14,880 --> 00:11:16,920
+Let me go in and break this down one more time.
+
+151
+00:11:17,130 --> 00:11:24,880
+As far as the rows What we're saying is grab everything but not including rows 0 and 1 as the colon
+
+152
+00:11:24,880 --> 00:11:25,150
+.
+
+153
+00:11:25,140 --> 00:11:26,520
+But then don't include two.
+
+154
+00:11:26,560 --> 00:11:33,790
+I'm saying slice it too and I'll go ahead and show that it's just a single command so I say Colon's
+
+155
+00:11:33,870 --> 00:11:43,300
+to that returns these two rows row 0 and row 1 then by adding on top of that I'm saying as far as the
+
+156
+00:11:43,300 --> 00:11:49,590
+columns go grab everything from Column 1 all the way to the end which basically means just drop all
+
+157
+00:11:49,840 --> 00:11:59,520
+over this column 0 and that returns these two little subsections 10 15 and then 25 30.
+
+158
+00:11:59,520 --> 00:12:00,730
+All right.
+
+159
+00:12:00,730 --> 00:12:08,280
+What I would recommend you do now is to in your mind grab subsections for instance 20 25 30 and 35 40
+
+160
+00:12:08,290 --> 00:12:15,700
+45 and see if you can use slice notation along with this single brackets comma indexing notation with
+
+161
+00:12:15,970 --> 00:12:18,790
+pi in order to grab subsections of the Saray.
+
+162
+00:12:18,970 --> 00:12:26,920
+And I encourage you to also see if you can make a bigger and grab larger subsections OK hopefully have
+
+163
+00:12:26,910 --> 00:12:29,350
+enough practice with that if you want more examples.
+
+164
+00:12:29,350 --> 00:12:34,920
+You can always visit the notebook for this lecture which has a few more examples of 2-D array slicing
+
+165
+00:12:36,220 --> 00:12:41,110
+throughout the course we won't do too much of this sort of fancy index slicing So it is confusing to
+
+166
+00:12:41,110 --> 00:12:41,680
+you.
+
+167
+00:12:41,670 --> 00:12:45,820
+You don't have to worry about it too much since he won't really actually do it that often throughout
+
+168
+00:12:45,820 --> 00:12:46,730
+the course.
+
+169
+00:12:47,010 --> 00:12:51,700
+Well I usually just grab simple either single elements or entire rows or columns.
+
+170
+00:12:51,760 --> 00:12:56,430
+They don't usually grab subsections of subsections like we did here.
+
+171
+00:12:56,440 --> 00:12:57,020
+All right.
+
+172
+00:12:57,280 --> 00:13:02,290
+Let's go ahead and move on to the more important method of selection which you're going to use much
+
+173
+00:13:02,290 --> 00:13:05,750
+more often in this course which is conditional selection.
+
+174
+00:13:05,810 --> 00:13:15,240
+I'm going to go ahead and create a new array just a single mention array say and Pido arrange one comma
+
+175
+00:13:15,280 --> 00:13:18,180
+11 and check out this array.
+
+176
+00:13:18,850 --> 00:13:19,350
+OK.
+
+177
+00:13:19,360 --> 00:13:23,300
+So for this array I have one two three four five six seven eight nine 10.
+
+178
+00:13:23,740 --> 00:13:30,580
+What I can do is I can take this array combine it with comparison operators to actually get a full boolean
+
+179
+00:13:30,630 --> 00:13:32,240
+array out of this.
+
+180
+00:13:32,340 --> 00:13:40,450
+And what I mean by that is if I compare this to a single digit for instance a are bigger than 5 I will
+
+181
+00:13:40,450 --> 00:13:42,730
+get an array of boolean values.
+
+182
+00:13:42,730 --> 00:13:45,010
+Notice it says D type B O L.
+
+183
+00:13:45,250 --> 00:13:47,110
+So these are true or false values.
+
+184
+00:13:47,250 --> 00:13:52,990
+And it gives me false wherever that comparison is false and true or that comparison was true.
+
+185
+00:13:53,160 --> 00:13:59,650
+And then I can go ahead and save this as maybe you'll underscore array.
+
+186
+00:13:59,640 --> 00:14:06,270
+So if I call bool underscore right now I get back this boolean array.
+
+187
+00:14:06,280 --> 00:14:09,850
+Now you can use that to actually do conditional selection.
+
+188
+00:14:09,850 --> 00:14:12,440
+Meaning I can pass that in two brackets
+
+189
+00:14:15,250 --> 00:14:19,990
+and I will only get the results where this boolean array happened to be true.
+
+190
+00:14:19,990 --> 00:14:26,440
+Let's go to break that down one more time getting the array and using a comparison operator on it will
+
+191
+00:14:26,430 --> 00:14:31,020
+actually return a boolean array meaning an array of all boolean values.
+
+192
+00:14:31,170 --> 00:14:38,200
+Then I can use that boolean array to actually index or conditionally select elements from that original
+
+193
+00:14:38,200 --> 00:14:40,220
+array where this happened to be true.
+
+194
+00:14:40,230 --> 00:14:46,180
+So only returns instances where that boolean array was true and more commonly sort of splitting this
+
+195
+00:14:46,170 --> 00:14:47,450
+up into two steps.
+
+196
+00:14:47,500 --> 00:14:49,480
+You would actually do this all in one step.
+
+197
+00:14:49,480 --> 00:14:54,490
+You would say array and in brackets instead of the array you would pass in the conditional statement
+
+198
+00:14:54,950 --> 00:14:59,640
+such as a r r greater than 5 and that will return the same answer.
+
+199
+00:14:59,710 --> 00:15:04,900
+And this is the sort of syntax notation we're going to be using all the time as far as conditional selection
+
+200
+00:15:04,890 --> 00:15:06,300
+.
+
+201
+00:15:06,310 --> 00:15:12,470
+So for example let's say we wanted to know all the elements of the array that are less than 3.
+
+202
+00:15:12,520 --> 00:15:20,380
+What I would do is I would say array brackets and then say array less than three and that return all
+
+203
+00:15:20,380 --> 00:15:25,620
+the elements where that is true and that's the sort of thing we're going to be using a lot in this course
+
+204
+00:15:25,970 --> 00:15:28,000
+especially a move on to pandas.
+
+205
+00:15:28,030 --> 00:15:30,440
+This is the sort of notation you should get used to.
+
+206
+00:15:30,460 --> 00:15:37,110
+I know it's a little weird at first to see the variable name inside of itself but hopefully splitting
+
+207
+00:15:37,120 --> 00:15:40,550
+it up into these two steps makes it clear what's actually going on.
+
+208
+00:15:40,570 --> 00:15:45,510
+You're just passing in a boolean array of values and then you're just returning where ever it happens
+
+209
+00:15:45,520 --> 00:15:48,410
+to be true at the index of the original array.
+
+210
+00:15:48,900 --> 00:15:50,760
+All right that's it for this lecture.
+
+211
+00:15:50,770 --> 00:15:58,390
+What I would recommend doing as far as an exercise for yourself is to create a new to the array by saying
+
+212
+00:15:58,420 --> 00:16:01,860
+N.P. dots arr..
+
+213
+00:16:02,080 --> 00:16:08,650
+Well go ahead and say 50 and then reshape this to be a 5 by 10.
+
+214
+00:16:08,640 --> 00:16:10,990
+No it isn't just calling a method off of another method.
+
+215
+00:16:10,990 --> 00:16:17,530
+So this is all one array and then you have this nice five by 10 array.
+
+216
+00:16:17,560 --> 00:16:20,340
+So 0 to 40 and then 0 to 9.
+
+217
+00:16:20,430 --> 00:16:23,500
+I would recommend for you just practice for yourself.
+
+218
+00:16:23,500 --> 00:16:30,370
+Try to in your mind grab chunks and then see if you can use bracket notation to grab the chunks that
+
+219
+00:16:30,370 --> 00:16:31,380
+you thought of.
+
+220
+00:16:31,380 --> 00:16:36,210
+So for instance maybe you want to grab your 13 14 and 23 24.
+
+221
+00:16:36,390 --> 00:16:38,820
+Let's go out and show how you would do that.
+
+222
+00:16:38,980 --> 00:16:41,880
+First I want to break it up in two rows and columns.
+
+223
+00:16:41,920 --> 00:16:49,730
+So 13:14 that starts at row 0 1 and then 2.
+
+224
+00:16:50,020 --> 00:16:52,830
+Meaning I want to grab rows 1 through 2.
+
+225
+00:16:53,250 --> 00:16:59,680
+I'm going to go ahead and say one and remember with this sort of slice notation and go one more than
+
+226
+00:16:59,670 --> 00:17:00,770
+you actually need.
+
+227
+00:17:01,120 --> 00:17:05,220
+So I'm saying grab for one all the way and not including index three.
+
+228
+00:17:05,290 --> 00:17:07,310
+So that should be these two rows.
+
+229
+00:17:07,470 --> 00:17:13,040
+Let's go in and confirm that over here by just saying are your score to the grabbing those rows.
+
+230
+00:17:13,140 --> 00:17:18,450
+One call and three and this is basically working just like normal Python list notation.
+
+231
+00:17:18,450 --> 00:17:23,520
+So here we have index one in next to up to but not including three.
+
+232
+00:17:23,560 --> 00:17:34,170
+And then for the columns and say I want 13 14 and 23 24 that occurs at index column three groups and
+
+233
+00:17:34,170 --> 00:17:42,060
+then I want four not including five saga but at five there that returns what we were looking for 13
+
+234
+00:17:42,070 --> 00:17:44,310
+14 23 24.
+
+235
+00:17:44,320 --> 00:17:50,600
+I would go ahead encourage you to practice this by setting up the survey in your own Jupiter note book
+
+236
+00:17:50,880 --> 00:17:55,050
+and then just grabbing chunks of this matrix as you see fit.
+
+237
+00:17:55,060 --> 00:17:55,610
+All right.
+
+238
+00:17:55,720 --> 00:17:58,250
+There's a lot more indexing help in the notebook.
+
+239
+00:17:58,300 --> 00:18:03,100
+Don't worry a whole lot if you don't feel 100 percent comfortable this you'll get more practices in
+
+240
+00:18:03,100 --> 00:18:05,320
+the final exercise of the PI.
+
+241
+00:18:05,560 --> 00:18:09,170
+But really this is just to let you know what some pie is capable of.
+
+242
+00:18:09,180 --> 00:18:14,450
+We won't do this sort of slicing notation that often in the course using this called notation.
+
+243
+00:18:14,580 --> 00:18:17,540
+We'll use the conditional selection using person operators.
+
+244
+00:18:17,620 --> 00:18:19,060
+A lot more.
+
+245
+00:18:19,060 --> 00:18:21,820
+All right thanks everyone and I'll see you at the next lecture

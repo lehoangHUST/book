@@ -1,0 +1,1031 @@
+1
+00:00:05,130 --> 00:00:10,470
+Herkese merhaba ve Python çarpışma dersi Part 1 ve Part 1'e hoş geldiniz,
+
+2
+00:00:10,470 --> 00:00:14,270
+devam edip temel veri türlerini inceleyerek Python tartışmamıza başlayacağız.
+
+3
+00:00:14,280 --> 00:00:17,730
+Devam edelim ve size bu ders dizisi için defterlerde bulunduğunu nereden bulabileceğinizi göstereceğim.
+
+4
+00:00:18,720 --> 00:00:22,010
+Tamam, indirilmiş ve unzip depodayım.
+
+5
+00:00:22,200 --> 00:00:28,190
+Devam ederseniz ve Python çarpışma ders klasörüne giderseniz, burada üç dizüstü bilgisayarın IPY dosyaları olduğunu
+
+6
+00:00:28,220 --> 00:00:28,820
+göreceksiniz.
+
+7
+00:00:28,830 --> 00:00:31,940
+Python Crash ders defteriyle çalışacağız.
+
+8
+00:00:31,940 --> 00:00:36,990
+benzer bir defter göreceksiniz ve tüm veri türleri gidiyor olacak.
+
+9
+00:00:36,990 --> 00:00:38,720
+Ve buna tıklarsanız, buna
+
+10
+00:00:38,790 --> 00:00:43,830
+Listeler booleans tuple'lerini ve kümelerini yazdıran sayılar akışları üzerinden geçerek başlayacağız.
+
+11
+00:00:44,130 --> 00:00:45,680
+Ne kadar ilerlediğimizi göreceğiz.
+
+12
+00:00:45,750 --> 00:00:48,200
+Ve daha sonra bazı daha gelişmiş özellikleri de ele alacağız.
+
+13
+00:00:48,300 --> 00:00:54,910
+Ben devam edip yeni bir dizüstü bilgisayara başlayacağım ve hazır olmasını sağlayacağım.
+
+14
+00:00:55,110 --> 00:01:00,030
+Ben devam edeceğim ve görünüşün baş çubuğuyla çekileceğini ve araç çubuğunu yalnızca burada biraz daha fazla yer
+
+15
+00:01:00,030 --> 00:01:00,970
+açmak için kullanacağım.
+
+16
+00:01:01,140 --> 00:01:06,450
+yapacağımız tek şey, burada tüm örnekleri yazarak ve kodu birlikte anlatmak.
+
+17
+00:01:06,480 --> 00:01:07,330
+Ve yine
+
+18
+00:01:07,340 --> 00:01:12,220
+Bu nedenle, bir referansa ihtiyacınız varsa, bu ders not defterini kopyalayıp yapıştırabilirsiniz.
+
+19
+00:01:12,720 --> 00:01:12,990
+Tamam.
+
+20
+00:01:13,020 --> 00:01:20,280
+Devam edelim ve temel sayıları ve sayıların iki temel sayı türüne sahip olduğunu düşündüğüm aritmetiği kullanmaya başlayalım.
+
+21
+00:01:20,580 --> 00:01:23,350
+Sadece 1 gibi bir tamsayı var.
+
+22
+00:01:23,640 --> 00:01:27,540
+Ve sonra sıfır noktası gibi bir şey olan kayan nokta sayısı var.
+
+23
+00:01:27,540 --> 00:01:32,880
+Dolayısıyla kayan noktalı bir sayının ondalıklısı ona bağlıdır ve bu sayılardan herhangi biriyle,
+
+24
+00:01:32,880 --> 00:01:34,830
+temel aritmetiği bekleyebileceğiniz gibi gerçekleştirebilirsiniz.
+
+25
+00:01:34,840 --> 00:01:37,260
+Bu yüzden ek olarak sadece bir artı işareti var.
+
+26
+00:01:37,260 --> 00:01:43,740
+Bir artı bir tane ve ben sadece burada çarpma için hücreleri çalıştırmak vardiya girin yapıyor Sadece asterix
+
+27
+00:01:43,740 --> 00:01:45,400
+So 1 kez 3.
+
+28
+00:01:45,480 --> 00:01:46,950
+Böyle bir asterix.
+
+29
+00:01:46,950 --> 00:01:52,340
+Vizyon sadece ikiye bölünmüş eğik çizgi olacak şekilde 0 olacak. 5.
+
+30
+00:01:52,350 --> 00:01:54,370
+Ve tam sayıları koysam da unutmayın.
+
+31
+00:01:54,540 --> 00:02:00,300
+Python 2 kullanıcısıysanız bunlardan birinin aynı sonuca ulaşmak için kayan noktalı bir
+
+32
+00:02:00,690 --> 00:02:03,090
+sayı olduğundan emin olmanız gerekir.
+
+33
+00:02:03,090 --> 00:02:08,480
+Ben sadece üstel için örneğin dört gücüm için.
+
+34
+00:02:08,550 --> 00:02:10,450
+Sadece iki Asterix bir araya getirdi.
+
+35
+00:02:10,470 --> 00:02:13,050
+Dörtlü gücün ikisi 16'dır.
+
+36
+00:02:13,050 --> 00:02:20,430
+İki kez iki kez iki kez iki kez iki kez başka bir şey bilmek Python beklediğiniz gibi bir
+
+37
+00:02:20,430 --> 00:02:22,470
+operasyon düzenini takip edecek olmasıdır.
+
+38
+00:02:22,500 --> 00:02:26,520
+Ve operasyonların sırasını açıklığa kavuşturmak için parantezleri kullanabilirsiniz.
+
+39
+00:02:26,670 --> 00:02:36,900
+Örneğin devam edersem ve iki artı üç kez beş artı beş matematiksel işlem sırası yazarsam çarpımın
+
+40
+00:02:36,900 --> 00:02:41,030
+önce gerçekleşeceğini ve daha sonra ekleneceğini bildiririm.
+
+41
+00:02:41,040 --> 00:02:45,120
+Bu yüzden eğer ben koşarsam 15 artı iki artı beş alırım.
+
+42
+00:02:45,240 --> 00:02:47,430
+Yani 15 artı yedi 22'dir.
+
+43
+00:02:47,490 --> 00:02:52,890
+Aslında beş artı beşin sonucunun iki artı üç katı
+
+44
+00:02:52,890 --> 00:03:00,300
+bir şey söylemek isterseniz, siparişinizi netleştirmek için parantezleri kullanabilirsiniz, böylece parantezleri bu
+
+45
+00:03:00,300 --> 00:03:04,850
+şekilde beş kez 10 söyleyerek size 50 alırsınız.
+
+46
+00:03:04,890 --> 00:03:08,570
+Sana göstermek istediğim son aritmetik işlem model fonksiyonudur.
+
+47
+00:03:08,820 --> 00:03:13,990
+Ma'at işlevi veya modülünü de bildiği gibi, Python'daki yüzde işaretidir.
+
+48
+00:03:14,610 --> 00:03:18,660
+Ve temelde bölünmeden sonra kalanları geri getirecektir.
+
+49
+00:03:18,780 --> 00:03:22,010
+Yani bölünmüş iki için iki kalandır.
+
+50
+00:03:22,010 --> 00:03:23,210
+Sıfır.
+
+51
+00:03:23,250 --> 00:03:33,030
+Böylece, mızmızlar için koştuğunuzda sıfır alırsınız, çünkü beş bölünmüş çıktı beş artı bir beş olmak
+
+52
+00:03:33,390 --> 00:03:36,400
+üzere bir kalandan biridir.
+
+53
+00:03:36,500 --> 00:03:38,510
+Ve böylece kalan 1'i alacaksınız.
+
+54
+00:03:38,550 --> 00:03:47,480
+Ve bu sayıların bile olup olmadığını kontrol etmek için güzel bir yoldur, örneğin, bir mod 2, 0'ı döndürürse, 8'in
+
+55
+00:03:47,500 --> 00:03:49,510
+bile sayı olmadığını görürsünüz.
+
+56
+00:03:49,530 --> 00:03:54,630
+Çünkü iki kişi bu sayıya eşit olarak yükselir ve kalan sıfırdır.
+
+57
+00:03:54,930 --> 00:03:58,910
+Şimdi değişken atamalar hakkında hızlı konuşalım.
+
+58
+00:03:59,160 --> 00:04:04,680
+Birçok kez, değişken adlara bazı nesne veya veri türü atamak için değişken adları almak
+
+59
+00:04:04,680 --> 00:04:05,270
+istediğinizden.
+
+60
+00:04:05,400 --> 00:04:08,150
+Python'da atama işleci eşittir.
+
+61
+00:04:08,400 --> 00:04:11,790
+Dolayısıyla, yalnızca değişken yazmaya başlayarak değişkeninizin adını seçersiniz.
+
+62
+00:04:11,790 --> 00:04:17,160
+V-A gibi hepsi eşittir ve oraya koymak istediğiniz nesne türüne ne olursa olsun.
+
+63
+00:04:17,160 --> 00:04:23,880
+Örneğin, iki kelimeyi koyabiliriz ve sonra değişken adını V A R olarak adlandırdığımızda
+
+64
+00:04:23,880 --> 00:04:25,380
+iki çıkışı alacağım.
+
+65
+00:04:25,380 --> 00:04:31,550
+Örneğin, x'in 2 ye eşit olduğuna, 3'e eşit olduğuna diyebilirim.
+
+66
+00:04:31,740 --> 00:04:36,530
+Ve şimdi X plus Y diyebilir ve 5'den çıkabilirim.
+
+67
+00:04:36,630 --> 00:04:41,730
+Ayrıca X'i tek başına tanımlayarak yeniden atayabilirim.
+
+68
+00:04:41,760 --> 00:04:48,030
+Yani x'in x ve X'e eşit olduğunu söyleyebilirim; böylece x 4'e eşit olduğu için sonuçlanacaktır.
+
+69
+00:04:48,060 --> 00:04:53,280
+Ve şimdi ne zaman X tekrar çağırdığımda, o hücrenin bir daha çalıştırılmasını sağlayacak olursam,
+
+70
+00:04:53,760 --> 00:04:57,560
+onu çalıştırdığım her sefer X, X artı X değerine eşittir;
+
+71
+00:04:57,630 --> 00:05:04,080
+Yani aslında x değerini iki katına çıkaracak ve her ikisi de değer olarak X'i yeniden atayacaktır.
+
+72
+00:05:04,530 --> 00:05:05,070
+Tamam.
+
+73
+00:05:05,280 --> 00:05:07,560
+Bu değişken adların oluşturulmasıyla ilgili birkaç kural.
+
+74
+00:05:07,560 --> 00:05:14,270
+12 V-A'nın 12'ye eşit olduğu gibi bir şey söyleyemediğiniz için numarayla başlamamalılar.
+
+75
+00:05:14,400 --> 00:05:19,890
+Aksi halde, o'War'da bir sözdizimi hatası alırsınız, bunun geçersiz sözdizimi Alexiou'nun size hata olduğunu biliyordu.
+
+76
+00:05:20,130 --> 00:05:26,160
+Dolayısıyla rakamlarla başlayamazsınız ve ayrıca özel sembollerle başlayamazsınız, Dolara
+
+77
+00:05:26,160 --> 00:05:35,110
+benzeyen bir söz söyleyemezsiniz vr, burada sorun yaşamaya başlarsınız, böylece sözdizimi hataları alırsınız.
+
+78
+00:05:35,100 --> 00:05:40,190
+Birden fazla kelimeyi zincirlemek isterseniz, yalnızca küçük harfle başlamalıdır.
+
+79
+00:05:40,290 --> 00:05:45,960
+Bunları ayırmak için bir alt çizgi kullanmalısınız, böylece altçizgi altı çizgiyi işaret eder.
+
+80
+00:05:45,990 --> 00:05:50,950
+Diğer diller bunu Python için ayırmak için bir dönem nasıl kullanıyorsunuz?
+
+81
+00:05:50,970 --> 00:05:54,180
+Uygun sözdizimi alt çizgi kullanmaktır.
+
+82
+00:05:54,180 --> 00:05:57,110
+Şimdi devam edin ve dizeler hakkında konuşalım.
+
+83
+00:05:57,530 --> 00:06:03,570
+Bu yüzden, dizeleri ve önündeki bir karma etiketinin herhangi bir şeyinde bir karma etiket koyarak bir yorum
+
+84
+00:06:03,570 --> 00:06:03,990
+yapacağım.
+
+85
+00:06:03,990 --> 00:06:09,330
+Renk farklı olduğunu göreceksiniz ve bir yorum olduğundan çalıştırılmayacağını göreceksiniz.
+
+86
+00:06:09,320 --> 00:06:10,720
+Yani burada ne istersen yazabilirsiniz.
+
+87
+00:06:10,740 --> 00:06:12,060
+Koşmaz
+
+88
+00:06:12,060 --> 00:06:17,250
+ben de ilerleyip biraz daha zum yapacağım, böylece daha iyi bir görünüm elde edersiniz.
+
+89
+00:06:17,250 --> 00:06:19,590
+Pekâlâ, ilerlemeye devam edelim, dizelere geçelim ve
+
+90
+00:06:20,310 --> 00:06:23,460
+Dizgiler için bir dizge oluşturmanın iki yolu vardır.
+
+91
+00:06:23,700 --> 00:06:30,930
+Tek tırnak işaretleri kullanabilirsiniz ve Kading'deki bir dizenin renkte nasıl bir değişime sahip olduğuna dikkat edin
+
+92
+00:06:30,930 --> 00:06:35,190
+veya çift tırnak işaretleri kullanabilirsiniz, bu da bu bir dizedir.
+
+93
+00:06:35,940 --> 00:06:41,670
+Ve sonra çift tırnak işaretlerini tek tırnak işaretleri etrafında da
+
+94
+00:06:41,670 --> 00:06:47,470
+değiştirebilirsiniz; bu yüzden, cant'lar gibi cümleyi içeren bir cümleyi olduğunu söyleyelim.
+
+95
+00:06:47,610 --> 00:06:54,150
+Dolayısıyla, bu tek tırnağınız varsa ancak bunu içeride tutmak istiyorsanız, bunu çift tırnak
+
+96
+00:06:54,150 --> 00:06:58,690
+işaretleri etrafında sarın ve tek tırnak dizesinde tutulduğunu göreceksiniz.
+
+97
+00:06:58,710 --> 00:07:03,390
+Yani şimdiye kadar ya tek bir teklif ya da bir dizedeki çift tırnak istemekle
+
+98
+00:07:03,390 --> 00:07:09,000
+uğraşmak zorunda kaldıysanız, onu daima başka bir kümeye çevirebilirsiniz; çift ya da tekli tırnak işaretleri beklemede
+
+99
+00:07:09,000 --> 00:07:10,420
+ve içinde ne var.
+
+100
+00:07:10,810 --> 00:07:15,330
+Tamam, devam edin ve baskı dizeleri hakkında konuşalım.
+
+101
+00:07:15,330 --> 00:07:22,740
+X olarak adlandırılan bir değişkeni, X ile yazarsam Jüpiter dizüstü dizesi için bir
+
+102
+00:07:22,740 --> 00:07:28,950
+merhaba olan bir değişkeni imzalayacağım, dışarıda gösterilecek ve buradan alıntıları göstereceğim.
+
+103
+00:07:28,950 --> 00:07:32,880
+Ve aslında, bunu doğrudan x değişkenine yazarak Python'da
+
+104
+00:07:33,150 --> 00:07:35,290
+konsolda yazıyormuşsunuz gibi aynı şeydir.
+
+105
+00:07:35,420 --> 00:07:42,510
+Dizgeyi hello veya Python koyacağım Ancak aslında X çıktılarını basmak isterseniz,
+
+106
+00:07:42,510 --> 00:07:48,030
+yazdırma işleve parantez yazdırır ve ardından parantez içinde x
+
+107
+00:07:48,030 --> 00:07:48,980
+yazdıracaktır.
+
+108
+00:07:49,200 --> 00:07:49,590
+Ve dikkat et.
+
+109
+00:07:49,590 --> 00:07:50,540
+Şimdi fark burada.
+
+110
+00:07:50,580 --> 00:07:55,410
+Bu göstergeye artık sahip değilim ve artık tek teklifim yok.
+
+111
+00:07:55,500 --> 00:08:00,840
+Python'daki sonucu yazdırma ifadesi olarak göstermeye çalışırken, resmi olarak
+
+112
+00:08:00,870 --> 00:08:02,340
+bunları nasıl göstermelisiniz.
+
+113
+00:08:02,340 --> 00:08:06,370
+Şimdi, yazdırma ifadelerinizi nasıl biçimlendirebileceğinizi göstereceğim.
+
+114
+00:08:06,390 --> 00:08:15,180
+Diyelim ki değişken adım 12'ye eşit ve Sam'e eşit bir ad var.
+
+115
+00:08:15,180 --> 00:08:18,990
+Şimdi aslında bu değişkenleri temel alan şeyleri basmak istiyorum.
+
+116
+00:08:19,260 --> 00:08:21,790
+Bunu baskı formatlamayla yapabilirim.
+
+117
+00:08:22,230 --> 00:08:32,800
+Bir dize alıp Numaram olduğunu söylüyorum ve orada bir tırnak işareti veya kıvırcık parantezler koyacağım.
+
+118
+00:08:33,400 --> 00:08:39,770
+Ve ismim ve başka kıvrımlı parantezler geçireceğim.
+
+119
+00:08:40,020 --> 00:08:46,320
+özel bir yöntemi olduğunu belirtmek için nasıl renklendirildiğini not edin ve daha sonra devam
+
+120
+00:08:46,320 --> 00:08:52,290
+etmenizi ve değişken adları, bunlara doldurulmalarını istediğiniz sıraya göre geçirmenizi sağlar. kaşlı ayraçlar.
+
+121
+00:08:52,500 --> 00:08:56,380
+Ve sonra yanıltıcı noktalar biçimlendirir ve bunun, dizenin
+
+122
+00:08:56,430 --> 00:09:03,810
+Python'un yaptığı şeyi çalıştırdıysam Python'un yaptıklarını çalıştırsam, dize parantezlerinizin burada olduğunu ve bu
+
+123
+00:09:03,900 --> 00:09:08,480
+formatta olduğunu ve bunları istediğiniz düzeye getireceğini okurum.
+
+124
+00:09:08,550 --> 00:09:14,440
+Bu yüzden burada OK fitbinin buraya bu kıvırcık parantezler için değiştirildiğini ve burada adın değiştirildiğini söyleyeceğim.
+
+125
+00:09:14,460 --> 00:09:15,790
+Bu kıvırcık parantezler için.
+
+126
+00:09:15,930 --> 00:09:21,480
+Ve bu, her zaman 12 veya Sam yazmanız yerine yazdırma ifadelerinizde değişken
+
+127
+00:09:21,480 --> 00:09:24,610
+adları kullanmanız için uygun bir yoldur.
+
+128
+00:09:24,930 --> 00:09:27,400
+Ve şunu not edin, ben bunu henüz basmayacağım.
+
+129
+00:09:27,480 --> 00:09:31,320
+Bütün bu bilgileri basmakalıp ifadelerin etrafına sarmam gerekecek.
+
+130
+00:09:31,320 --> 00:09:35,760
+Bu nedenle prenslerinizin dengeli olduğundan emin olun ve vurgulanan yeşil renk elde etmek için
+
+131
+00:09:35,760 --> 00:09:37,540
+baskı prenslerinden birini seçerek görebilirsiniz.
+
+132
+00:09:37,600 --> 00:09:43,860
+Şimdi bu işi yapmışsam, bu gerçekten basıldı ve bundan sonra baskı
+
+133
+00:09:43,860 --> 00:09:52,050
+biçimlendirmesini kullanabileceğiniz başka bir yol satmamıza gerek yok, bu işi değiştirirsek herhangi bir değişkeni parantez
+
+134
+00:09:52,350 --> 00:09:54,010
+parantezlerine geçirebilirsek diyelim.
+
+135
+00:09:54,420 --> 00:10:00,980
+Dolayısıyla, kıvırcık parantezlerin içinde, ikisi parantez parantezinin içinde diyebilirim.
+
+136
+00:10:01,170 --> 00:10:08,070
+içinde birinin eşit olduğunu ve daha sonra her hangi birinin eşit olmasını istediğinizi söyleyebileceğim bir alana gidebilirim.
+
+137
+00:10:08,250 --> 00:10:11,380
+Ve şimdi bu isimleri geçtim, doktor formatım deyimimin
+
+138
+00:10:11,430 --> 00:10:17,910
+Bu durumda bu hissizliğin eşit olmasını istiyorum ve sonra ikisi de adın eşit olmasını istedim.
+
+139
+00:10:18,000 --> 00:10:20,850
+Ve eğer ben bunu yaparsam aynı sonuca ulaşacağım.
+
+140
+00:10:20,850 --> 00:10:26,580
+Bunun güzel olması, artık biçimlendirmenin kaşlı ayraçlar için istediğiniz sırada aynı
+
+141
+00:10:26,790 --> 00:10:34,440
+olduğundan emin olmak zorunda kalmamanız ve sürekli olarak daha kıvırlı parantez koyabilmeniz ve daha
+
+142
+00:10:34,440 --> 00:10:41,420
+sonra buraya bir tane yazabilmeniz ve Python'un artık değişkenlerinizi yalnızca bir kez bulup
+
+143
+00:10:41,420 --> 00:10:47,280
+değiştirebilir, böylece buraya gelen değişken adında bakıp formatınıza ve kontrollere geçebilirsiniz.
+
+144
+00:10:47,300 --> 00:10:49,190
+OK orada değişken adı nedir?
+
+145
+00:10:49,190 --> 00:10:52,970
+Yani 2 için burada görünüyor diyor 2 adına eşittir.
+
+146
+00:10:53,000 --> 00:10:53,230
+Tamam.
+
+147
+00:10:53,240 --> 00:10:57,880
+Ve sonra buraya bir isim doldurun ve o adın Sam dizesine eşit olduğunu biliyoruz.
+
+148
+00:10:57,890 --> 00:11:00,640
+Böylece devam eder ve içeriye koyar.
+
+149
+00:11:00,650 --> 00:11:03,080
+Pekâlâ, devam edin ve herhangi bir soru göndermekten çekinmeyin.
+
+150
+00:11:03,080 --> 00:11:07,670
+Bu baskının herhangi bir biçimlendirmesinden şüpheleniyorsanız, ancak temelde basittir. Soru-Cevap forumu.
+
+151
+00:11:07,790 --> 00:11:10,440
+Kıvırcık parantezlerinize dizenizi koyun.
+
+152
+00:11:10,560 --> 00:11:15,020
+bu biçim çağrısı içindeki sırayı karıştırmaktan endişelenmeniz gerekmez.
+
+153
+00:11:15,020 --> 00:11:19,430
+Sonra, değişken adları iletmenin bu yöntemini kullanmanızı
+
+154
+00:11:19,430 --> 00:11:21,750
+öneririm, çünkü geri döndüğünüzde
+
+155
+00:11:21,770 --> 00:11:27,080
+Şimdi devam edin ve dizeler konusunu dizinleme dizelerine genişletelim.
+
+156
+00:11:27,230 --> 00:11:33,780
+S adlı bir dizin varsa ve x'in merhaba eşit olduğunu söyleyeceğim.
+
+157
+00:11:34,230 --> 00:11:37,140
+S burada sadece bir dizi öğe var.
+
+158
+00:11:37,140 --> 00:11:44,990
+Ve bu durumda her bir öğe bir harf ve bu karekod yazısı kullanılarak ve dizin
+
+159
+00:11:46,010 --> 00:11:49,730
+oluşturarak bu karakter dizisinden belirli öğeleri yakalayabilirim.
+
+160
+00:11:49,730 --> 00:11:51,400
+Pythoness sıfırdan başlar.
+
+161
+00:11:51,440 --> 00:11:59,210
+Ve bu, X köşeli ayraçları sıfıra atıp da çalıştırsam veya sıfır öğeleri geri çevirirsem bilmek için
+
+162
+00:11:59,300 --> 00:12:00,180
+bir şey.
+
+163
+00:12:00,470 --> 00:12:07,570
+Öyleyse görüyoruz ki s kapanıyor bakın Merhaba, öğeler olduğu gibi kontrol eder ve sonra 0 döndürür.
+
+164
+00:12:07,700 --> 00:12:12,140
+Hilo'da son o'yu alıp alamadığınızı görmek için devam edin.
+
+165
+00:12:12,380 --> 00:12:20,830
+Peki, ne yaparsınız ki, spacer index 0 1 2 3 4'de olduğu anlamına gelir.
+
+166
+00:12:21,710 --> 00:12:27,370
+Bu köşebentlerin içine dört tane koyun ve kaplayın.
+
+167
+00:12:27,380 --> 00:12:33,050
+Unutulmaması gereken diğer şey, aslında dilimin dilimlerini kapmak için dilim notasyonu olarak
+
+168
+00:12:33,110 --> 00:12:34,600
+bilinenleri de kullanabilirsiniz.
+
+169
+00:12:34,760 --> 00:12:38,980
+Ben devam edip, estetik yerine merhaba yazacağım.
+
+170
+00:12:39,020 --> 00:12:44,410
+Ben bir b c d e f g h i j k diyeyim.
+
+171
+00:12:45,020 --> 00:12:50,300
+Ben koşacağım ve şimdi ne devam edeceğime bakıyorum ve 0 s girip girmeyeceğime bakacağım.
+
+172
+00:12:50,330 --> 00:12:53,000
+Buradaki parantez içinde geri gelmeliyim.
+
+173
+00:12:53,300 --> 00:12:54,600
+Tamam, bu mantıklı.
+
+174
+00:12:54,770 --> 00:13:00,470
+Diyelim ki her şeyi bir öpücük gibi kapmak istedim.
+
+175
+00:13:00,770 --> 00:13:05,380
+Bunu yapmak için dilim sözdizimi olarak da bilinen iki nokta üstüste kullanımı kullanabilirsiniz.
+
+176
+00:13:05,430 --> 00:13:09,810
+İki nokta üstüste olduğu gibi 0 diyebilirim.
+
+177
+00:13:09,920 --> 00:13:15,360
+Çalıştırın ve bu iki nokta üstüste temelde sıfırdan başlayarak Tamam diyor.
+
+178
+00:13:15,530 --> 00:13:22,200
+Ötesinde her şeyi kapmak ve bu gösterim tersi çalışır.
+
+179
+00:13:22,400 --> 00:13:27,770
+Kolon ile her şeyi belirli bir indekse kadar alabileceğini söyleyebilirim.
+
+180
+00:13:27,770 --> 00:13:31,210
+Diyelim ki bir b c d diyorum.
+
+181
+00:13:31,370 --> 00:13:35,660
+Dolayısıyla D indeksi 3 0 1 2 3'tür.
+
+182
+00:13:35,780 --> 00:13:43,250
+Burada üçü geçersem, bu temel olarak Python'a herşey Tamam'ı söyleyip dizin 3'e değil de
+
+183
+00:13:43,250 --> 00:13:45,370
+kapmak üzere komuta eder.
+
+184
+00:13:45,380 --> 00:13:49,500
+Bu, bazen yeni başlayanlar için kafa karıştırıcıdır, çünkü d'nin ortaya çıkmasını beklerler.
+
+185
+00:13:49,520 --> 00:13:54,860
+İyi çünkü bu indeks konumu 3 fakat indeksleme sıfırdan başladığından,
+
+186
+00:13:54,860 --> 00:14:01,710
+bu komutu, her şeyi kapmak ve karakter elemanı endeksi üçünü içermemek olarak düşünmelisiniz.
+
+187
+00:14:01,880 --> 00:14:05,900
+Listeler hakkında konuşurken notaları kesmekle ilgili daha fazla şey göstereceğiz,
+
+188
+00:14:05,900 --> 00:14:08,340
+çünkü bu aynı tür bir fikir.
+
+189
+00:14:08,420 --> 00:14:14,630
+Sonra nihayetinde bu iki fikri burada başlayıp herşeyi kapmak ya
+
+190
+00:14:14,930 --> 00:14:23,700
+da belirli bir indeks noktasına dahil olmaksızın her şeyi sıfırdan başlatarak söyleyerek birleştiririz.
+
+191
+00:14:24,190 --> 00:14:29,150
+Colin her şeyi belirli bir dizine, örneğin üç gibi kap.
+
+192
+00:14:29,240 --> 00:14:31,380
+Şimdi ABC ile aynı sonucu döndürür.
+
+193
+00:14:31,400 --> 00:14:37,090
+Ancak yapabileceğim, başlangıç ​​noktam ve Bitiş Noktamı belirlemek için bu iki sayıyı değiştirmem.
+
+194
+00:14:37,130 --> 00:14:43,440
+Hadi başlayalım ve D E F'yi kapatıp, indeks 3'te başlayalım.
+
+195
+00:14:43,910 --> 00:14:50,090
+Yani devam edersek bunun yerine dizin 3 0 1 2 3 ile başlayacağım demektir
+
+196
+00:14:50,090 --> 00:14:52,220
+ve sonra G.'ye kadar gideceğim.
+
+197
+00:14:52,250 --> 00:15:00,030
+Yani 0 1 2 3 4 5 6 7 3 iki nokta üstüste 6 diyebiliriz.
+
+198
+00:15:00,290 --> 00:15:02,840
+Çalıştırırsan ben de olurum.
+
+199
+00:15:02,870 --> 00:15:06,580
+Yine bu yalnızca kolonla başlayan endeks.
+
+200
+00:15:06,590 --> 00:15:12,170
+kapmak demektir ve daha sonra son dizininiz, indeksleme sıfırdan başladığından dahil etmediğiniz dizindir.
+
+201
+00:15:12,200 --> 00:15:13,670
+Bu, sonuna kadar
+
+202
+00:15:13,760 --> 00:15:17,180
+Dolayısıyla g bile indeks 6'ya dahil değildir.
+
+203
+00:15:17,450 --> 00:15:26,840
+Tamam, şu anda gelen bu konuyu konuşurken şu anda tekrar bu fikri yineliyoruz; listeler, şu anda gelen
+
+204
+00:15:26,900 --> 00:15:32,560
+listeler, virgülle ayrılmış köşeli ayraçlardan oluşan kare bir dizi unsur dizisidir.
+
+205
+00:15:32,570 --> 00:15:39,270
+Yani burada bir iki üç liste temelde herhangi bir veri türü alabilir bir listeniz var.
+
+206
+00:15:39,710 --> 00:15:45,130
+Bu yüzden ayrıca bir b c dizesinin bir listesine de sahip olabilirim ve burada şikayet yoktur.
+
+207
+00:15:45,260 --> 00:15:58,460
+Devam edip listem adı verilen bir değişken yapıyorum ve bunu bir b c çalıştırmasına eşit olarak ayarlayacağım ve listemin sonuna
+
+208
+00:15:58,460 --> 00:16:03,020
+bir öğe eklemek istiyorsanız, append yöntemini kullanın.
+
+209
+00:16:03,080 --> 00:16:06,950
+Alt çizgi listemin eklendiğini söylüyorum.
+
+210
+00:16:07,310 --> 00:16:09,630
+Ve sonra D harfini eklemek istediğimi varsayalım.
+
+211
+00:16:09,950 --> 00:16:13,350
+Ben sadece koşarım ve şimdi listemi kontrol edersem.
+
+212
+00:16:14,300 --> 00:16:16,490
+Şimdi bu değeri ne ekledi.
+
+213
+00:16:16,490 --> 00:16:22,160
+D Ve onlar da bir dizge gibi bir dizge gibidir.
+
+214
+00:16:22,220 --> 00:16:27,350
+Anlamı, listede ilk öğeyi yakalamak istiyorsanız, dizindeki bir dize geçişi için yaptığım
+
+215
+00:16:27,350 --> 00:16:34,940
+aynı brechen gösterimini kullanabilir ve Watz bunu çalıştırır ve öğeyi dizinde döndürürüm 0 1, her indeks noktasının
+
+216
+00:16:34,940 --> 00:16:38,230
+nereye geldiğini gösterir virgül ile ayrılmış değil.
+
+217
+00:16:38,450 --> 00:16:44,300
+Örneğin, bir b ve c'yi kapmak isterse, yeni gitmiş olduğum dilim notasyonunu kullanabilirim.
+
+218
+00:16:44,540 --> 00:16:51,730
+Dizin 1'den başlamak ve dizin 3'e kadar gitmek istemiyorum.
+
+219
+00:16:51,740 --> 00:16:57,290
+Bu yüzden bir üç nokta üstüste üçünün B ve C'yi geri döndürmediğini söyleyeceğim.
+
+220
+00:16:57,740 --> 00:17:02,550
+Bu indeks gösterimini kullanarak pozisyonları da yeniden atayabilirim.
+
+221
+00:17:02,660 --> 00:17:08,360
+İlk öğenin farklı bir şey olmasını istersem, alt çizgi listemde bu köşeli parantez
+
+222
+00:17:08,360 --> 00:17:13,380
+içine sıfır ve sonra örneğin istediğiniz herhangi bir öğeyi geçmek diyorum.
+
+223
+00:17:13,520 --> 00:17:16,390
+Şu öğenin yeni olmasını istiyorum.
+
+224
+00:17:16,390 --> 00:17:20,340
+Listemi kaparsam yeni B C D görüyorum.
+
+225
+00:17:20,870 --> 00:17:28,550
+Burada dikkat edilmesi gereken bir şey listeyi birbirinin içine yerleştirebilmenizdir, böylece virgüller
+
+226
+00:17:28,560 --> 00:17:34,750
+virgül olarak virgülden sonra başka bir listeye 3 virgül konulabilir.
+
+227
+00:17:34,790 --> 00:17:39,440
+Listeye bakarsam, bir listenin içinde bir liste olur.
+
+228
+00:17:39,440 --> 00:17:44,400
+Öyleyse aslında bunu tek bir unsur olarak ele almak istedim diyelim.
+
+229
+00:17:44,570 --> 00:17:48,770
+İşte bu, endeksin bir listesi 0 1 2.
+
+230
+00:17:48,830 --> 00:17:52,650
+Bu yüzden buraya geçiyorum ve bu, diğer listelerde geri dönüyor.
+
+231
+00:17:52,850 --> 00:17:59,270
+Diyelim ki, şimdi dizin 0 1 olan başka bir parantez 1 takımına yapıştırabileceğim ve
+
+232
+00:17:59,840 --> 00:18:03,680
+gerçek unsurları elde edebildiğim anlamına gelen bir grafik istiyorum.
+
+233
+00:18:03,710 --> 00:18:08,970
+İzin ver girip iç içe geçmiş listelerden bir şeyler kapmak için bir örnek daha göstereceğim.
+
+234
+00:18:08,990 --> 00:18:12,530
+Bunu daha sıklıkla daha az listesiz veya çok derin olmayan listelerle yapmazsınız.
+
+235
+00:18:12,530 --> 00:18:20,570
+Ancak sadece birden çok parantez kullanma fikrini almanızı istiyorum; öyleyse, buna benzeyen iç içe geçmiş bir listeme
+
+236
+00:18:20,570 --> 00:18:22,070
+sahip olduğumu söyleyelim.
+
+237
+00:18:22,070 --> 00:18:23,590
+Bir, iki, üç.
+
+238
+00:18:23,600 --> 00:18:26,670
+Başka bir liste, dört veya beş diğer listeleri hedeflemektedir.
+
+239
+00:18:27,020 --> 00:18:34,220
+Üçüncü veya dördüncü öğeyi yuva listemde üçlü dizin için elimde tutarım.
+
+240
+00:18:34,220 --> 00:18:35,430
+Öyle görünüyor.
+
+241
+00:18:35,480 --> 00:18:41,280
+Ardından dizine gitmek için bir tane daha ayarlayabilirim 0 1 2 hedef listesidir.
+
+242
+00:18:41,330 --> 00:18:44,350
+Ve diyelim ki o hedef listesindeki tek öğe istiyorum diyelim.
+
+243
+00:18:44,360 --> 00:18:47,920
+Hayır, hala köşeli parantezler var ki ben sadece sıfırdan geçtim.
+
+244
+00:18:47,960 --> 00:18:49,700
+Ve şimdi hedef dizilim var.
+
+245
+00:18:49,910 --> 00:18:54,980
+Bu dizeyi yazdırmak isterseniz, bu şeyi bir print deyimiyle tamamlayabilirim.
+
+246
+00:18:54,990 --> 00:18:56,590
+Şimdi hedefimi tutarım.
+
+247
+00:18:56,600 --> 00:19:00,250
+İç içe geçmiş bir listede bir şey bulmanız gereken bir egzersiz yaparsınız.
+
+248
+00:19:00,260 --> 00:19:05,460
+Dolayısıyla, bu köşeli parantezlerin üst üste istiflendiği konuyu anladığınızdan emin olun.
+
+249
+00:19:05,480 --> 00:19:05,930
+Tamam.
+
+250
+00:19:06,170 --> 00:19:08,260
+Devam edin ve bir bölüm için durun.
+
+251
+00:19:08,330 --> 00:19:12,800
+Önümüzdeki ayın başlarında, devam ettiğimiz bu dersin bazı daha fazla veri tipini
+
+252
+00:19:12,980 --> 00:19:17,120
+de kapsayacak ve bir indeks dizgesindeki şeyleri nasıl kapatabileceğimizin dilim gösterimini listeleyeceğiz.
+
+253
+00:19:17,120 --> 00:19:22,770
+Bu kalıp nasıl temel değişken atamalarını biçimlendirdi ve aynı zamanda sadece temel aritmetik.
+
+254
+00:19:23,030 --> 00:19:23,820
+TAMAM.
+
+255
+00:19:23,900 --> 00:19:25,370
+Umarım bu dersin tadını çıkarırsınız.
+
+256
+00:19:25,370 --> 00:19:27,880
+Birazdan daha fazla şey yapacağız.
+
+257
+00:19:27,890 --> 00:19:28,640
+Herkese teşekkürler.
+
+258
+00:19:28,640 --> 00:19:29,480
+Bir sonraki derste görüyorum

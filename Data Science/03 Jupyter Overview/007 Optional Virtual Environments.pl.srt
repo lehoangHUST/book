@@ -1,0 +1,571 @@
+1
+00:00:05,730 --> 00:00:10,950
+Cześć wszystkim i zapraszam na ten opcjonalny wykład na temat środowisk wirtualnych Anaconda.
+
+2
+00:00:10,950 --> 00:00:16,710
+Jest to nieco bardziej zaawansowany temat tworzenia środowisk wirtualnych przy użyciu dystrybucji Anaconda.
+
+3
+00:00:17,070 --> 00:00:20,580
+Możesz pominąć ten temat, jeśli go nie interesujesz.
+
+4
+00:00:20,880 --> 00:00:23,520
+Idźmy dalej i kontynuujmy.
+
+5
+00:00:23,550 --> 00:00:29,310
+Porozmawiajmy o tym, jakie wirtualne środowiska są środowiskami wirtualnymi, aby skonfigurować wirtualną instalację
+
+6
+00:00:29,310 --> 00:00:32,130
+Pythona i bibliotek na twoim komputerze.
+
+7
+00:00:32,340 --> 00:00:37,860
+W ten sposób możesz mieć wiele wersji Pythona lub bibliotek i łatwo aktywować lub
+
+8
+00:00:37,860 --> 00:00:39,210
+dezaktywować te środowiska.
+
+9
+00:00:39,210 --> 00:00:44,220
+Przyjrzyjmy się kilku przykładom, dlaczego warto to zrobić na przykład.
+
+10
+00:00:44,220 --> 00:00:47,870
+Może czasami chcesz programować w różnych wersjach biblioteki.
+
+11
+00:00:48,060 --> 00:00:54,750
+Na przykład możesz stworzyć pełny program, który używa Sacket uczyć się wersji 0. 27, a następnie w pewnym momencie kolejne
+
+12
+00:00:54,750 --> 00:00:58,560
+wersje to 0. 1 8 zostaje zwolniony.
+
+13
+00:00:58,560 --> 00:01:04,350
+Może chcesz poznać nowe funkcje 0. 20, ale nie chcę łamać żadnego ze starych kodów
+
+14
+00:01:04,350 --> 00:01:05,340
+podczas aktualizacji.
+
+15
+00:01:05,340 --> 00:01:09,510
+Tutaj możesz utworzyć wirtualne środowisko dla tej konkretnej wersji biblioteki.
+
+16
+00:01:11,130 --> 00:01:15,390
+W innych przykładach czasami chcesz upewnić się, że instalacje biblioteki znajdują się we właściwej lokalizacji.
+
+17
+00:01:15,900 --> 00:01:20,940
+Na przykład możesz chcieć również wielu wersji Pythona na swoim komputerze, więc będziesz chciał
+
+18
+00:01:20,940 --> 00:01:28,500
+się upewnić, że jest to python 2. 7 wersji biblioteki znajduje się w poprawnej lokalizacji w stosunku do pythona 3. 5 wersja, w której można robić wirtualne środowiska,
+
+19
+00:01:28,500 --> 00:01:35,800
+tak jak jedno środowisko w Pythonie 2. 7 i kolejny Python 3. 5.
+
+20
+00:01:36,090 --> 00:01:42,120
+Istnieje wirtualna biblioteka E i V dla normalnych dystrybucji Pythona, która ma wiele możliwości,
+
+21
+00:01:42,120 --> 00:01:44,740
+które miały przejść z Anacondą.
+
+22
+00:01:44,910 --> 00:01:50,030
+Ta wirtualna biblioteka ENV pozwala tworzyć środowiska wirtualne i jest to wirtualny menedżer środowiska.
+
+23
+00:01:50,520 --> 00:01:55,740
+Anaconda jednak, która jest zalecaną dystrybucją Pythona, której używamy w tym kursie, ma
+
+24
+00:01:55,740 --> 00:02:00,930
+już wbudowanego menedżera środowiska wirtualnego, który sprawia, że cały proces tworzenia wirtualnego
+
+25
+00:02:01,200 --> 00:02:04,480
+środowiska aktywuje i dezaktywuje je bardzo łatwo.
+
+26
+00:02:04,480 --> 00:02:08,610
+Śmiało i sprawdź link do zasobów oficjalnej dokumentacji, którą teraz
+
+27
+00:02:08,610 --> 00:02:09,350
+przejdziemy.
+
+28
+00:02:09,480 --> 00:02:13,160
+Więc idź i sprawdź link do zasobów, który zabierze Cię do tego r l.
+
+29
+00:02:13,290 --> 00:02:18,960
+Lub jeśli chcesz, możesz ręcznie wpisać, po prostu idziemy do oficjalnej dokumentacji danych PI lub
+
+30
+00:02:18,960 --> 00:02:20,940
+mówimy o użyciu środowisk.
+
+31
+00:02:20,940 --> 00:02:24,890
+Możesz kliknąć łącze zasobów, jeśli nie chcesz wpisywać całej ścieżki do pliku lub
+
+32
+00:02:24,900 --> 00:02:26,540
+ścieżki do pliku w przeglądarce.
+
+33
+00:02:26,570 --> 00:02:31,230
+Przechodząc do przeglądarki, przejrzyj teraz dokumentację i pokaż, jak możesz jej
+
+34
+00:02:31,230 --> 00:02:33,300
+użyć w wierszu polecenia.
+
+35
+00:02:33,300 --> 00:02:35,340
+Przejdźmy dalej i przejdźmy teraz do tego.
+
+36
+00:02:36,060 --> 00:02:39,360
+OK, więc jestem w linku do zarządzania środowiskiem.
+
+37
+00:02:39,390 --> 00:02:44,670
+Chciałbym, abyście zrobili, idźcie do tworzenia środowisk i powinniście zapoznać się z podstawowymi instrukcjami
+
+38
+00:02:44,670 --> 00:02:50,040
+tutaj tworzenia środowiska i jest to bardzo proste, jeśli chodzi o polecenie potrzebne do stworzenia
+
+39
+00:02:50,070 --> 00:02:50,940
+nowego środowiska.
+
+40
+00:02:50,970 --> 00:02:57,120
+Zamierzasz użyć polecenia Konda create, a następnie dash dash name, a następnie nazwę, którą chcesz
+
+41
+00:02:57,120 --> 00:02:58,930
+nazwać swoim nowym środowiskiem.
+
+42
+00:02:58,950 --> 00:03:04,710
+W tym przykładzie wywołują one nowe płatki śniegu w środowisku, a następnie przestrzeń w pakiecie
+
+43
+00:03:04,710 --> 00:03:08,430
+bazowym lub bibliotece, z którą chcesz zainicjować nowe środowiska.
+
+44
+00:03:08,430 --> 00:03:11,690
+Jeśli nie umieścisz tutaj paczki, możesz dostać błąd.
+
+45
+00:03:11,730 --> 00:03:16,680
+Tak więc, gdy już uzyskasz pełną komendę w wierszu polecenia lub terminalu po oczywiście
+
+46
+00:03:16,680 --> 00:03:20,420
+zainstalowaniu dystrybucji Anaconda z Python Kano, zapytasz, czy chcesz kontynuować.
+
+47
+00:03:20,430 --> 00:03:24,810
+Możesz wpisać Y dla tak, a następnie tworzy nowe środowisko o nazwie.
+
+48
+00:03:24,810 --> 00:03:30,200
+W tym przypadku płatek śniegu zawierający ten program lub pakiet BYO Python.
+
+49
+00:03:30,360 --> 00:03:36,150
+Jeśli nie określisz konkretnej wersji Pythona, użyje ona podstawowej wersji Pythona.
+
+50
+00:03:36,150 --> 00:03:38,690
+Ten, do którego ściągasz, to anakonda.
+
+51
+00:03:38,820 --> 00:03:41,970
+Ale możesz określić konkretną wersję Pythona.
+
+52
+00:03:42,110 --> 00:03:44,100
+Pokaże ci, jak to zrobić.
+
+53
+00:03:44,100 --> 00:03:46,470
+Pozwól, że przejdę dalej i wskoczę do wiersza poleceń.
+
+54
+00:03:46,650 --> 00:03:49,820
+Połóż to tutaj, abym mógł przeprowadzić Cię przez te kroki.
+
+55
+00:03:50,190 --> 00:03:52,500
+OK, oto mój wiersz polecenia.
+
+56
+00:03:52,590 --> 00:03:58,410
+Pójdę do przodu i stworzę wirtualne środowisko, które będziemy nazywać Konda, wszyscy powiedzmy, że przestrzeń condo
+
+57
+00:03:59,030 --> 00:04:05,700
+stwórz najpierw, że zamierzam powiedzieć "kreska" i "E", a my nazwijmy to po prostu śmieszne nazwisko, więc wiemy,
+
+58
+00:04:05,700 --> 00:04:11,280
+że faktycznie robimy coś z puszystym, a następnie musimy wstawić do biblioteki, aby go
+
+59
+00:04:11,280 --> 00:04:11,890
+zainicjować.
+
+60
+00:04:12,030 --> 00:04:14,240
+Wejdźmy do środka i zacznijmy od NUMP pi.
+
+61
+00:04:14,280 --> 00:04:19,770
+Ponieważ to będzie jedna z pierwszych bibliotek, o których się dowiem, że wchodzę, będą pobierać
+
+62
+00:04:19,770 --> 00:04:20,530
+metadane pakietów.
+
+63
+00:04:20,570 --> 00:04:24,170
+Jeśli chcesz kontynuować, dostaną listę rzeczy, które trzeba zainstalować na Alasce.
+
+64
+00:04:24,420 --> 00:04:31,110
+Teraz pójdę dalej i powiem, dlaczego tak, połączy on ze sobą niektóre pakiety, a następnie wyciągnie to, co
+
+65
+00:04:31,110 --> 00:04:32,150
+musi wyodrębnić.
+
+66
+00:04:32,260 --> 00:04:33,990
+OK, to już zrobione.
+
+67
+00:04:34,010 --> 00:04:38,970
+Aby aktywować to środowisko, mogę aktywować puszyste, aby dezaktywować to środowisko.
+
+68
+00:04:38,970 --> 00:04:40,790
+Używam dezaktywacji.
+
+69
+00:04:40,830 --> 00:04:46,920
+Pozwól mi wejść i pokazać, jak wygląda moja podstawowa wersja Pythona w porównaniu do tej wirtualnej
+
+70
+00:04:46,980 --> 00:04:48,330
+wersji środowiska Python.
+
+71
+00:04:48,330 --> 00:04:51,690
+Pamiętaj, że to wirtualne środowisko zostało zainicjowane tylko za pomocą pi.
+
+72
+00:04:51,840 --> 00:04:58,290
+Więc jeśli teraz wpiszesz Python, otrzymam regularną dystrybucję Anacondy, którą zainstalowałem w tym przypadku jest
+
+73
+00:04:58,560 --> 00:05:00,920
+to 2. 7.
+
+74
+00:05:00,930 --> 00:05:07,450
+Tak na przykład jeśli idę naprzód i mówię, że importować numery pi as i P.
+
+75
+00:05:07,470 --> 00:05:12,770
+To działa dobrze, jeśli powiem importerów jako PD.
+
+76
+00:05:12,840 --> 00:05:14,470
+To też działa dobrze.
+
+77
+00:05:14,550 --> 00:05:20,970
+Zacznijmy od tego teraz i zamierzam teraz aktywować moje wirtualne środowisko, które nazywa się Fluffy
+
+78
+00:05:20,970 --> 00:05:27,450
+i teraz zauważysz, że w nawiasach mówi puszyste, które pozwala mi wiedzieć, że jestem w rzeczywistości
+
+79
+00:05:27,450 --> 00:05:30,060
+w tym wirtualnym środowisku puszystym .
+
+80
+00:05:30,060 --> 00:05:37,740
+Więc jeśli mówię Python i wciskam enter, otrzymuję tę samą wersję Pythona 2. 7, że moja dystrybucja bazowa była, ale coś ciekawego
+
+81
+00:05:38,040 --> 00:05:42,690
+się stanie, gdy spróbuję zaimportować coś dla ważnych sędziów i P Nie
+
+82
+00:05:42,690 --> 00:05:46,280
+importuje żadnego problemu, ponieważ wiem, że to prawda.
+
+83
+00:05:46,290 --> 00:05:53,860
+Aktywowałem moje wirtualne środowisko, jeśli powiem, że importuję pandy jako PD, pojawia się błąd importu.
+
+84
+00:05:53,880 --> 00:05:55,980
+Brak modułu o nazwie panderers.
+
+85
+00:05:56,010 --> 00:06:00,960
+Powodem tego jest to, że w tym wirtualnym środowisku nie ma Pandursów.
+
+86
+00:06:00,960 --> 00:06:06,390
+Jeśli chcę mieć pewność, że to wirtualne środowisko zawiera również pandy, będę musiał je
+
+87
+00:06:06,390 --> 00:06:14,720
+aktywować tak, jak już zrobiłem, a następnie powiedzieć, że Konda zainstaluje to tutaj lub zainstaluje dowolną bibliotekę, której chcesz, aby Jupiter sikat dowiedział
+
+88
+00:06:14,730 --> 00:06:17,140
+się o graniu na żywo itp.
+
+89
+00:06:17,430 --> 00:06:24,630
+Więc mam zamiar iść dalej i po prostu to usunąć, jeśli chcę dezaktywować puszystość i wrócić
+
+90
+00:06:24,630 --> 00:06:26,600
+do pierwotnej dystrybucji Pythona.
+
+91
+00:06:26,730 --> 00:06:32,910
+Mówię po prostu, że dezaktywuje naciśnięcie klawisza Enter i dezaktywuje to środowisko wirtualne.
+
+92
+00:06:32,910 --> 00:06:38,430
+Kolejnym aktywnym przypadkiem użycia dla środowisk wirtualnych jest stworzenie środowiska, które używa
+
+93
+00:06:38,430 --> 00:06:40,070
+innej wersji Pythona.
+
+94
+00:06:40,200 --> 00:06:47,120
+Możesz to zrobić, po prostu mówiąc, że Konda tworzy, wejdzie i powie "kreska myślna" i doda mnie.
+
+95
+00:06:47,400 --> 00:06:54,150
+Możesz też po prostu powiedzieć dash i singiel Dashon, ale pokaże pełną nazwę kreski dash, powiedz nazwę środowiska
+
+96
+00:06:54,150 --> 00:06:55,570
+wirtualnego, które chcesz.
+
+97
+00:06:55,590 --> 00:06:58,080
+Zadzwonimy do tego wirtualnego środowiska.
+
+98
+00:06:58,140 --> 00:07:03,710
+Moja przestrzeń w pythonie 3.
+
+99
+00:07:03,900 --> 00:07:08,150
+A potem mówisz, że Python jest równy 3. 5.
+
+100
+00:07:08,430 --> 00:07:14,220
+I tutaj masz opcję umieszczenia pojedynczej biblioteki, takiej jak pi.
+
+101
+00:07:14,430 --> 00:07:20,180
+Lub jeśli chcesz całą dystrybucję Anacondy, możesz wpisać tutaj Anacondę.
+
+102
+00:07:20,250 --> 00:07:25,570
+To zajmuje sporo czasu, ponieważ pamiętaj, że to cała dystrybucja Anacondy.
+
+103
+00:07:25,710 --> 00:07:27,730
+Więc wejdę i po prostu napiszę.
+
+104
+00:07:27,780 --> 00:07:33,180
+Tak więc będzie to robić dalej i powiedzmy, że Konda tworzy nowe wirtualne środowisko o nazwie Python 3
+
+105
+00:07:33,180 --> 00:07:37,590
+w wersji 3 Python równa się 3. 5 pi.
+
+106
+00:07:37,760 --> 00:07:40,500
+Wpisz Ponownie pobierz metadane pakietu.
+
+107
+00:07:40,650 --> 00:07:43,040
+Pamiętaj, że zrobi to wszystko z Pythonem 3.
+
+108
+00:07:43,140 --> 00:07:48,000
+Pójdę do przodu i powiem, dlaczego tak, to przyniesie pakiety i rozwiąż je.
+
+109
+00:07:48,000 --> 00:07:55,410
+Mam zamiar teraz przejść do końca ekstrakcji i instalacji, a teraz jest kompletny.
+
+110
+00:07:55,650 --> 00:07:59,790
+Pójdźmy dalej i pokażmy tylko wpisywanie w Pythonie.
+
+111
+00:08:00,090 --> 00:08:04,360
+Mam Python 2. 7 tutaj jest moja podstawowa dystrybucja.
+
+112
+00:08:04,410 --> 00:08:06,290
+Zamierzam to zrobić dalej.
+
+113
+00:08:06,390 --> 00:08:08,500
+Teraz przejdźmy dalej i sprawdź moje środowiska.
+
+114
+00:08:08,520 --> 00:08:16,170
+Mogę powiedzieć, że myślnik Dash i v s, a to polecenie wyświetli moje środowiska tutaj mam puszyste
+
+115
+00:08:16,170 --> 00:08:19,680
+w innym przykładowym środowisku, które zrobiłem wcześniej.
+
+116
+00:08:19,680 --> 00:08:25,800
+My python 3 version py 3: 5, które jest innym środowiskiem, które posiadam, a następnie moją podstawową wersją Pythona.
+
+117
+00:08:26,010 --> 00:08:27,020
+Możesz zobaczyć, że jest początek.
+
+118
+00:08:27,030 --> 00:08:28,080
+Wskaż to.
+
+119
+00:08:28,080 --> 00:08:32,570
+Więc jeśli otwierasz notatnik Jupitera i widzisz coś takiego jak Python Roop, to właśnie to jest
+
+120
+00:08:32,580 --> 00:08:33,270
+jego korzenie.
+
+121
+00:08:33,300 --> 00:08:35,300
+Instalacja Pythona.
+
+122
+00:08:35,340 --> 00:08:42,600
+Zacznijmy i aktywuj środowiska w wersji Python 3.
+
+123
+00:08:42,840 --> 00:08:43,710
+Wchodzić.
+
+124
+00:08:43,710 --> 00:08:45,910
+Zauważysz moją wersję Pythona 3.
+
+125
+00:08:45,930 --> 00:08:49,260
+Teraz, jeśli zadzwonię do Pythona wewnątrz tego wirtualnego środowiska.
+
+126
+00:08:49,290 --> 00:08:51,580
+Zauważ, że dostaję Python 3. 5.
+
+127
+00:08:51,610 --> 00:08:57,840
+Więc jeśli jesteś w stanie faktycznie określić, że chcesz inną wersję Pythona, mówiąc, że Python jest równy, a następnie niezależnie od tego,
+
+128
+00:08:57,930 --> 00:09:01,080
+jaki numer wersji chcesz mieć podczas tworzenia tego wirtualnego środowiska.
+
+129
+00:09:01,080 --> 00:09:07,240
+Więc jeśli zrobię coś takiego jak 1 podzielony przez dwa, otrzymam 0. 5 co nie dotyczy Pythona 2.
+
+130
+00:09:07,680 --> 00:09:09,900
+OK, więc to naprawdę wszystko, co musisz wiedzieć.
+
+131
+00:09:09,930 --> 00:09:15,930
+Jeśli chodzi o tworzenie wirtualnych środowisk, link do zasobów ma w zasadzie wszystko, co chcielibyście
+
+132
+00:09:15,930 --> 00:09:20,440
+wiedzieć, takie jak zmiana środowisk klonujących środowiska usuwające środowiska itp.
+
+133
+00:09:20,640 --> 00:09:21,930
+To całkiem proste.
+
+134
+00:09:21,930 --> 00:09:26,070
+Teraz, gdy wiesz już wszystko, co przeszliśmy w tym wykładzie, możesz przejść
+
+135
+00:09:26,070 --> 00:09:27,820
+do dokumentacji, której potrzebujesz.
+
+136
+00:09:27,840 --> 00:09:31,870
+Ponownie jest to opcjonalny wykład na wypadek, gdybyś chciał stworzyć własne wirtualne środowisko.
+
+137
+00:09:31,920 --> 00:09:36,990
+Sugerowałbym utworzenie wirtualnych środowisk tylko po to, aby upewnić się, że wszystkie twoje biblioteki są wersjami,
+
+138
+00:09:36,990 --> 00:09:38,510
+które chcesz, żeby były.
+
+139
+00:09:38,520 --> 00:09:44,190
+Więc jeśli chcesz kontynuować ten kurs, możesz stworzyć wirtualne środowisko o nazwie moja wiedza o
+
+140
+00:09:44,220 --> 00:09:46,520
+danych lub coś w tym stylu.
+
+141
+00:09:46,530 --> 00:09:47,160
+W porządku.
+
+142
+00:09:47,190 --> 00:09:49,860
+Mam nadzieję, że podobał ci się ten wykład, a do zobaczenia na następnym.
+
+143
+00:09:49,860 --> 00:09:51,230
+Dzięki wszystkim.

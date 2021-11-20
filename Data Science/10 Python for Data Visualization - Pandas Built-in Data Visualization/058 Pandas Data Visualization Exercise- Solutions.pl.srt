@@ -1,0 +1,487 @@
+1
+00:00:05,190 --> 00:00:10,770
+Witam wszystkich i zapraszam do prezentacji Panasonic w zakresie rozwiązań wizualizacyjnych ćwiczeń wykładu tego wykładu.
+
+2
+00:00:10,830 --> 00:00:13,630
+Przeanalizujemy rozwiązania dotyczące stanu jego życia.
+
+3
+00:00:13,680 --> 00:00:15,220
+Pytania ćwiczeniowe.
+
+4
+00:00:15,240 --> 00:00:18,050
+Przejdźmy dalej i przejdź do notatnika Jupiter, aby zacząć.
+
+5
+00:00:18,050 --> 00:00:19,810
+W porządku, jestem w zeszycie.
+
+6
+00:00:19,830 --> 00:00:27,330
+Zamierzam uruchomić kilka pierwszych komórek kodu, aby odczytać plik CACP D3 poprawnie ustawić wszystkie importowane
+
+7
+00:00:27,330 --> 00:00:29,500
+pliki i sprawdzić poprawność.
+
+8
+00:00:29,880 --> 00:00:30,170
+W porządku.
+
+9
+00:00:30,180 --> 00:00:34,790
+Następną rzeczą, którą chciałem zrobić było odtworzenie wykresu rozrzutu B w stosunku do a.
+
+10
+00:00:34,830 --> 00:00:36,380
+Więc tylko te dwie kolumny.
+
+11
+00:00:36,720 --> 00:00:46,770
+Zróbmy to, mówiąc, że myśli D-3 są rozproszone, a potem zamierzam wejść i określić, że chcę na mojej osi
+
+12
+00:00:47,010 --> 00:00:52,970
+X kolumny A i na osi Y chcę kolumny B.
+
+13
+00:00:53,210 --> 00:00:55,810
+Zobaczmy, jak to wygląda.
+
+14
+00:00:56,370 --> 00:00:58,700
+A to powinno być EF 3.
+
+15
+00:00:58,700 --> 00:00:59,610
+No to jedziemy.
+
+16
+00:00:59,610 --> 00:01:03,220
+Tak więc otrzymuję podobną fabułę, z wyjątkiem czegoś, co warto wiedzieć.
+
+17
+00:01:03,330 --> 00:01:07,410
+Sprawdź, czy możesz wymyślić, jak rozciągnąć go w podobny sposób do tej fabuły.
+
+18
+00:01:07,410 --> 00:01:13,680
+I jak poszliśmy na wykładzie, w rzeczywistości można po prostu przekazać rozmiar figury bezpośrednio do tego argumentu
+
+19
+00:01:13,710 --> 00:01:14,680
+jako parametru.
+
+20
+00:01:15,030 --> 00:01:16,950
+I możemy to rozciągnąć.
+
+21
+00:01:17,000 --> 00:01:23,030
+A więc warto zauważyć, że rozmiar tych punktów jest nieco większy.
+
+22
+00:01:23,040 --> 00:01:28,090
+Możesz więc określić to tak, jak widzieliśmy w wykładzie albo przez inną kolumnę, albo po prostu przez
+
+23
+00:01:28,090 --> 00:01:29,540
+podanie S jako wielkości.
+
+24
+00:01:29,850 --> 00:01:33,220
+I zamierzam określić rozmiar na 50.
+
+25
+00:01:33,230 --> 00:01:38,970
+Tutaj mamy punkty są trochę większe, a dla koloru, jaki mieliśmy, na wykładzie zobaczyliśmy, jak możemy określić
+
+26
+00:01:38,970 --> 00:01:40,800
+kolor za pomocą innej kolumny.
+
+27
+00:01:40,800 --> 00:01:45,810
+Ale możesz również po prostu przekazać ciąg znaków, jak to możliwe dla mapy, a teraz mamy odtworzenie
+
+28
+00:01:45,900 --> 00:01:46,680
+tej fabuły.
+
+29
+00:01:46,680 --> 00:01:48,170
+Dokładnie.
+
+30
+00:01:48,180 --> 00:01:48,850
+DOBRZE.
+
+31
+00:01:48,930 --> 00:01:54,060
+Najważniejsze, że chciałem, abyś wydostał się z tego konkretnego pytania, był tylko krokiem w fabułę, która
+
+32
+00:01:54,360 --> 00:01:56,940
+rozproszyła Versus tak, jak x i y.
+
+33
+00:01:57,000 --> 00:01:57,840
+Nie przejmuj się zbytnio.
+
+34
+00:01:57,840 --> 00:02:03,260
+Jeśli byłeś w stanie uzyskać rozmiar lub kolorystykę Mam nadzieję, że jesteś w stanie to zdobyć.
+
+35
+00:02:04,110 --> 00:02:08,150
+OK, idę teraz, chcę utworzyć histogram kolumny A.
+
+36
+00:02:08,150 --> 00:02:09,880
+To jest całkiem proste.
+
+37
+00:02:09,920 --> 00:02:21,350
+Po prostu wywołaj samą kolumnę, a następnie powiedz albo tylko, aby zobaczyć histogram, albo możesz także powiedzieć, że wykropkowana jest kropka, a
+
+38
+00:02:21,380 --> 00:02:24,560
+wszystkie zwracają ten sam histogram.
+
+39
+00:02:24,840 --> 00:02:26,470
+I to jest domyślna liczba pojemników.
+
+40
+00:02:26,490 --> 00:02:30,890
+Ale możesz też przekazać argument, jeśli chcesz więcej Beenz.
+
+41
+00:02:31,020 --> 00:02:36,990
+W porządku następnym problemem było to, że te wykresy są w porządku, ale nie wyglądają zbyt dobrze, a instrukcje mówią, że
+
+42
+00:02:36,990 --> 00:02:42,720
+należy używać arkuszy stylów, aby ustawić styl na wykresie GG i powtórzyć histogram z góry, a także dowiedzieć się, jak
+
+43
+00:02:42,720 --> 00:02:44,630
+dodać do niego więcej bitów. .
+
+44
+00:02:44,640 --> 00:02:50,690
+Jest to temat, którego właściwie nie omówiliśmy w wykładzie wideo, ale jest on uwzględniony w notatniku, więc mam nadzieję, że obie
+
+45
+00:02:51,000 --> 00:02:56,250
+ścieżki były jedną, którą ponownie sprawdziłeś w notesie, aby dowiedzieć się, do jakich arkuszy stylów się odnosiłeś,
+
+46
+00:02:56,250 --> 00:02:59,430
+lub możesz skorzystać z wyszukiwarki Google. Arkusze stylów Cutlip .
+
+47
+00:02:59,460 --> 00:03:04,770
+Jeśli nie, mógłbyś również zamieścić na forum Q i A, aby dostać się do tego, o czym tutaj wspomniałem.
+
+48
+00:03:04,830 --> 00:03:10,320
+Jeśli przejdziesz dalej i zapoznasz się z wykładem z notatek na pandy wbudowanym w wizualizację
+
+49
+00:03:10,320 --> 00:03:15,240
+danych, znajdziesz sekcję arkusza stylów, która po prostu wprawi Cię w nastrój samodzielnego
+
+50
+00:03:15,240 --> 00:03:16,230
+odkrywania aspektów.
+
+51
+00:03:16,270 --> 00:03:20,590
+Tutaj możesz zobaczyć, że mapa Cutlip ma arkusze stylów i jest tam mały odnośnik.
+
+52
+00:03:20,680 --> 00:03:24,330
+A jeśli przeszukasz google, prawdopodobnie poszedłbyś na tę stronę.
+
+53
+00:03:24,330 --> 00:03:30,150
+A to jest galeria, aw galerii znajduje się sekcja arkusza, a podstawowym założeniem lub ideą jest to, że
+
+54
+00:03:30,150 --> 00:03:32,290
+możesz użyć Piel t tego stylu.
+
+55
+00:03:32,310 --> 00:03:39,030
+Użyj dowolnego ciągu stylów, aby automatycznie zmienić estetykę na konkretny styl, który wygląda
+
+56
+00:03:39,920 --> 00:03:40,710
+tak.
+
+57
+00:03:40,710 --> 00:03:44,510
+Po prostu mówisz styl peel-T-Dog, który używa wykresu G-G.
+
+58
+00:03:44,580 --> 00:03:47,910
+Więc po prostu skopiuję ten wiersz kodu.
+
+59
+00:03:48,510 --> 00:03:52,130
+Podejdź tutaj i wklej to.
+
+60
+00:03:52,260 --> 00:03:57,330
+A teraz, skoro to zostało uruchomione, zauważysz, że jeśli przejdziemy dalej i
+
+61
+00:03:57,330 --> 00:04:03,240
+skopiujemy i wkleimy dokładną linię kodu tutaj i wkleimy tutaj, otrzymamy znacznie lepiej wyglądającą fabułę.
+
+62
+00:04:03,480 --> 00:04:07,310
+Zauważysz też, że tutaj ta czerwień jest trochę bardziej widoczna.
+
+63
+00:04:07,380 --> 00:04:13,140
+Możesz też pasandować Alpha, aby uczynić ją nieco bardziej przejrzystą.
+
+64
+00:04:13,230 --> 00:04:17,190
+I tutaj możesz zacząć dopasowywać te histogramy razem.
+
+65
+00:04:17,310 --> 00:04:21,810
+Mam nadzieję, że nie było to dla ciebie zbyt trudne, ale jest taki aspekt
+
+66
+00:04:21,810 --> 00:04:26,490
+odkrywania rzeczy na własną rękę, który jest prawdopodobnie najważniejszą częścią nauki programowania danych i uczenia się.
+
+67
+00:04:26,850 --> 00:04:32,280
+Możliwość samodzielnego szukania odpowiedzi bez podania pełnego kontekstu informacji, jednak zawsze możesz swobodnie zamieszczać
+
+68
+00:04:32,820 --> 00:04:37,620
+posty na forach pytań i odpowiedzi, jeśli cokolwiek jest dla ciebie mylące.
+
+69
+00:04:37,620 --> 00:04:43,800
+W porządku, idźmy dalej i przejdźmy do działek, w których chcieliśmy stworzyć wykres pudełkowy porównujący
+
+70
+00:04:43,830 --> 00:04:45,730
+kolumny A i B.
+
+71
+00:04:45,840 --> 00:04:51,520
+Przyjrzyjmy się, o co chodzi, że przyjrzymy się samej tylko ramie danych.
+
+72
+00:04:52,190 --> 00:04:58,630
+Zauważ, że mamy kolumny b c i d, więc nie chcę, aby pole wyświetlało wszystkie kolumny, które chcę mieć tylko B.
+
+73
+00:04:59,160 --> 00:05:04,800
+Tak więc, zamierzam pobrać te kolumny, przekazując listę nazw kolumn A
+
+74
+00:05:05,280 --> 00:05:09,550
+i B, a następnie mogę wywołać okno kreślenia.
+
+75
+00:05:09,720 --> 00:05:13,110
+Utwórz wykres pudełkowy, który wygląda tak samo jak ten.
+
+76
+00:05:13,140 --> 00:05:13,580
+DOBRZE.
+
+77
+00:05:13,800 --> 00:05:17,100
+Następnie chcę utworzyć wykres kd kolumny D.
+
+78
+00:05:17,290 --> 00:05:19,080
+To jest całkiem proste.
+
+79
+00:05:19,080 --> 00:05:26,700
+Po prostu mijamy kolumnę D, mówimy o spisku, a następnie mówimy Katie, a oni zwrócą ten wątek.
+
+80
+00:05:27,030 --> 00:05:31,140
+A potem w końcu mamy tutaj, aby dowiedzieć się, jak zwiększyć
+
+81
+00:05:31,140 --> 00:05:36,240
+linię i zrobić kreskę w stylu kreski i nie zwykle nie Daschle K wątku.
+
+82
+00:05:36,320 --> 00:05:36,770
+W porządku.
+
+83
+00:05:36,930 --> 00:05:46,230
+Tak więc sposób, w jaki możesz to zrobić, to po prostu wziąć ten sam wątek KDE lub gęstość, a następnie
+
+84
+00:05:46,230 --> 00:05:53,540
+możesz iść dalej i przekazywać argumenty z tej fabuły, takie jak styl linii i linia.
+
+85
+00:05:53,550 --> 00:05:54,840
+I tutaj mamy tę samą fabułę.
+
+86
+00:05:54,900 --> 00:05:59,310
+Możesz też zrobić to z gęstością, jeśli chcesz.
+
+87
+00:05:59,310 --> 00:06:04,620
+To jest to samo polecenie, które chcemy utworzyć wykres powierzchni wszystkich kolumn tylko dla
+
+88
+00:06:04,620 --> 00:06:08,750
+pokoi do 30, a następnie powiedział, że Hintz używa x.
+
+89
+00:06:08,760 --> 00:06:17,320
+Miejmy nadzieję, że odkryjesz, wywołując X D-3 I X, widzisz, że jest to właściwość i jest to przede wszystkim lokalizacja
+
+90
+00:06:17,320 --> 00:06:21,930
+etykiety oparta na indeksatorze z awarią zastępczą na poziomie całkowitym.
+
+91
+00:06:21,930 --> 00:06:24,970
+A więc możemy to zrobić tylko po to, by kroić.
+
+92
+00:06:25,320 --> 00:06:30,660
+I znowu jest to coś, co chcę, abyś odkrył, kiedy idziesz samemu, dzięki czemu
+
+93
+00:06:30,660 --> 00:06:37,610
+możesz przejść od zera do 30, a to zwróci tylko pierwsze 30 rzędów lub cokolwiek kroi notację, którą chciałeś.
+
+94
+00:06:38,070 --> 00:06:43,570
+A poza tym możesz wywoływać obszar fabuły, a otrzymasz działkę, która wygląda tak.
+
+95
+00:06:43,610 --> 00:06:49,890
+A jeśli chcesz, żeby wyglądało to jak na poniższym wykresie, możesz umieścić tam wartość alfa.
+
+96
+00:06:49,950 --> 00:06:54,960
+W takim razie istnieje dodatkowe wyzwanie i pamiętaj, że możesz znaleźć te naprawdę
+
+97
+00:06:54,960 --> 00:07:01,200
+trudne rozwiązania, których nie możesz rozgryźć, ale zauważ, jak wyglądają legendy w rzeczywistości pokrywające się z rzeczywistym diagramem.
+
+98
+00:07:01,260 --> 00:07:06,030
+Zwykle by tego nie chcieli i chcę, abyście zorientowali się, w jaki sposób można
+
+99
+00:07:06,030 --> 00:07:12,150
+wyświetlać legendę poza fabułą, jak pokazano poniżej, w kółko w tym temacie, próbując odkryć rzeczy na własną
+
+100
+00:07:12,180 --> 00:07:12,860
+rękę.
+
+101
+00:07:12,900 --> 00:07:18,420
+Chcę, abyś spróbował wyszukiwania w Google dobrego linku przepełnienia stosu, a gdybyś mógł znaleźć
+
+102
+00:07:18,420 --> 00:07:22,070
+to samodzielnie, byłby link do pytania o przepełnienie stosu.
+
+103
+00:07:22,080 --> 00:07:28,020
+Więc jeśli przyjrzymy się temu łączu na stosie przelewowym, ktoś pyta, jak umieścić legendę poza fabułą z
+
+104
+00:07:28,020 --> 00:07:34,350
+pandami, a jeśli będziemy tutaj przewijani i spojrzymy na to, zauważysz, że ktoś właściwie odpowie na to pytanie
+
+105
+00:07:34,350 --> 00:07:39,930
+i powiedzieli w tym miejscu, że Piel t tej legendy centrum centrum w lewo, a
+
+106
+00:07:39,930 --> 00:07:42,470
+następnie ten beby pole do zakotwiczenia.
+
+107
+00:07:42,510 --> 00:07:43,700
+To jest klucz do tego.
+
+108
+00:07:43,730 --> 00:07:51,240
+A właściwie po prostu skopiuj ten kod i wklej go tutaj, a następnie weź drugi kod tego obszaru
+
+109
+00:07:54,150 --> 00:07:59,850
+i wklej go tutaj, a kiedy chcemy zrobić, to utwórz figurkę, aby wszyscy
+
+110
+00:08:03,060 --> 00:08:07,310
+zostali nazwani, a następnie powiedzą, że dojrzewanie to pokazuje.
+
+111
+00:08:07,920 --> 00:08:12,180
+A to stworzy postać z legendą na zewnątrz.
+
+112
+00:08:12,420 --> 00:08:18,370
+Będzie to również działać, jeśli faktycznie usuniesz pierwszy wiersz i ostatnią linię w notesie Jowisza.
+
+113
+00:08:18,420 --> 00:08:24,480
+W innych sytuacjach, takich jak inne błędy ID, być może trzeba będzie znaleźć figurkę i pokazać figurę.
+
+114
+00:08:24,690 --> 00:08:28,920
+Ale ponieważ używamy Jowisza, notebook może po prostu uruchomić te dwie linie i
+
+115
+00:08:28,950 --> 00:08:31,480
+usunie legendę i umieści ją na zewnątrz.
+
+116
+00:08:31,500 --> 00:08:35,850
+Tak więc podstawową ideą jest to, że możesz sam odkryć, jak chwytać takie linie
+
+117
+00:08:35,850 --> 00:08:38,170
+kodu i umieszczać je we własnym kodzie.
+
+118
+00:08:38,220 --> 00:08:42,900
+A tak naprawdę bardzo często zdarza się, że sprawdzamy przepełnienie stosu, aby sprawdzić, które linie kodu są
+
+119
+00:08:42,900 --> 00:08:46,000
+dla ciebie odpowiednie, a następnie dopasować je do swojej pracy.
+
+120
+00:08:46,500 --> 00:08:47,910
+Ok, to wszystko.
+
+121
+00:08:47,910 --> 00:08:51,430
+Świetna robota dla wszystkich, a do zobaczenia na następnym wykładzie.
+
+122
+00:08:51,450 --> 00:08:55,460
+Jeśli chcesz, aby coś tu było nie tak, możesz opublikować forum pytań i odpowiedzi.

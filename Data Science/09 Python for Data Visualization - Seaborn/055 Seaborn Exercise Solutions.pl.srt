@@ -1,0 +1,399 @@
+1
+00:00:05,340 --> 00:00:10,050
+Witam wszystkich i zapraszam na wykład do ćwiczeń z ćwiczeń Seaborn w tym wykładzie.
+
+2
+00:00:10,050 --> 00:00:12,990
+Przeanalizujemy rozwiązania dla ćwiczeń morskich.
+
+3
+00:00:12,990 --> 00:00:16,320
+Przejdźmy dalej i przejdź do notatnika Jupiter, aby zacząć.
+
+4
+00:00:16,320 --> 00:00:22,170
+W tym momencie jestem w notesie Jowisza, mamy dane i załadujemy je, a my
+
+5
+00:00:22,170 --> 00:00:26,550
+przejdziemy dalej i przeskoczymy do pierwszego spisku, który chcemy powielić.
+
+6
+00:00:26,550 --> 00:00:31,860
+Patrząc na tę fabułę, miejmy nadzieję, że możesz powiedzieć, że jest to spisek
+
+7
+00:00:31,860 --> 00:00:37,380
+dystrybucyjny, a to właściwie wspólny wątek, ponieważ pokazujesz dwie dystrybucje na sobie, a potem mogłeś
+
+8
+00:00:37,380 --> 00:00:42,690
+to przeczytać i zobaczyłeś, że to uczciwość w stosunku do wieku zestawu danych.
+
+9
+00:00:42,690 --> 00:00:45,210
+Idźmy dalej i pokażemy, jak możemy to uruchomić.
+
+10
+00:00:45,230 --> 00:00:47,430
+Znowu uruchomimy te linie.
+
+11
+00:00:47,430 --> 00:00:53,990
+Tak więc właściwie wszystko zaimportuję, a potem napiszę mój kod.
+
+12
+00:00:54,060 --> 00:01:00,270
+A więc jest to wspólna fabuła, w której masz uczciwą i
+
+13
+00:01:04,020 --> 00:01:14,910
+na osi Y masz wiek, a nasz zbiór danych to tylko dane Titanica i to powie ci tę
+
+14
+00:01:14,910 --> 00:01:16,030
+fabułę.
+
+15
+00:01:16,110 --> 00:01:18,430
+Znowu to tylko wspólna fabuła.
+
+16
+00:01:18,720 --> 00:01:19,480
+W porządku.
+
+17
+00:01:19,530 --> 00:01:22,490
+Następny rozdział to ten spisek dystrybucyjny.
+
+18
+00:01:22,710 --> 00:01:29,460
+A to jest fabuła, więc możesz zobaczyć Asinusa w tym spisku.
+
+19
+00:01:30,630 --> 00:01:36,090
+Titanic, a następnie przekazać i kolumna, którą chcemy i jeśli spojrzymy tutaj na dole, to jest
+
+20
+00:01:36,090 --> 00:01:36,880
+kolumna targowa.
+
+21
+00:01:36,900 --> 00:01:39,270
+Więc rozkład kolumny targowej.
+
+22
+00:01:39,450 --> 00:01:44,910
+Pozwolę sobie odejść, by ułożyć tę właśnie linię jako nową fabułę.
+
+23
+00:01:45,160 --> 00:01:45,710
+W porządku.
+
+24
+00:01:45,720 --> 00:01:50,430
+Więc to jest to, co otrzymujesz, gdy zobaczysz, że zaraz po tym spisku coś, co chcesz zrobić,
+
+25
+00:01:50,430 --> 00:01:52,740
+aby odtworzyć ten wątek, to usunąć ten Cady.
+
+26
+00:01:52,750 --> 00:02:00,760
+Więc chcę iść i powiedzieć fajny fałszywy tutaj, a teraz jesteśmy coraz bliżej.
+
+27
+00:02:00,810 --> 00:02:05,050
+Warto jeszcze nadmienić, że kolor jest czerwony.
+
+28
+00:02:05,270 --> 00:02:11,280
+Więc możesz również określić kolor czerwony, chociaż jak już wspomniałem, nie musisz martwić
+
+29
+00:02:11,280 --> 00:02:14,010
+się zbytnio o rzeczywiste kolory.
+
+30
+00:02:14,280 --> 00:02:17,510
+A ponadto na targach jest mniej zakrętów.
+
+31
+00:02:17,670 --> 00:02:23,310
+Więc po eksperymentach z liczbami niektórych bin, miejmy nadzieję, odkryć, że kosze są około 30
+
+32
+00:02:23,820 --> 00:02:24,820
+na fabułę.
+
+33
+00:02:24,990 --> 00:02:27,020
+I to jest prawdziwy kod dla fabuły.
+
+34
+00:02:27,130 --> 00:02:28,920
+Działka dystrybucji.
+
+35
+00:02:28,980 --> 00:02:35,730
+W tym przypadku ta fabuła targów Titanic równa się fałszowi, a następnie kilka dodatkowych informacji odczytanych w pojemnikach.
+
+36
+00:02:36,030 --> 00:02:39,830
+Jeśli byłeś w stanie zdobyć czerwony lub argument bin, nie martw się o to.
+
+37
+00:02:39,840 --> 00:02:45,090
+Jedyne, co mnie naprawdę martwi, to że to był spisek z fałszywym
+
+38
+00:02:45,180 --> 00:02:47,400
+Eagles na kolumnie targowej.
+
+39
+00:02:47,400 --> 00:02:49,290
+OK przechodzimy do następnego wątku.
+
+40
+00:02:49,290 --> 00:02:55,860
+Jest to oczywiście wykres pudełkowy i wygląda na to, że klasa znajduje się na osi X, a wiek na osi Y.
+
+41
+00:02:56,190 --> 00:02:58,440
+Idźmy dalej i sprawdźmy to.
+
+42
+00:02:58,880 --> 00:03:08,910
+Aby to zrobić, musisz powiedzieć, że jest to pole działki Sinistar, jak w klasie, a następnie przekazać wiek
+
+43
+00:03:09,030 --> 00:03:15,320
+dla y, a następnie dane są równe zestawowi danych Titanica.
+
+44
+00:03:15,360 --> 00:03:16,670
+Możemy to kontynuować.
+
+45
+00:03:16,770 --> 00:03:21,750
+I ostatnia rzecz, która nie ma znaczenia, jeśli jej nie dostałeś lub nie, ale aktualny schemat kolorów to
+
+46
+00:03:21,780 --> 00:03:22,900
+schemat kolorów tęczy.
+
+47
+00:03:22,920 --> 00:03:27,900
+Możemy więc określić palety równe Rainbow.
+
+48
+00:03:27,900 --> 00:03:31,830
+I znowu nie martw się, jeśli uda nam się dopasować kolor, po prostu chcę, abyś
+
+49
+00:03:31,830 --> 00:03:36,540
+rozpoznał, że jest to spisek pudełkowy, a następnie będziesz w stanie odczytać X w stosunku do Y i wypełnić to.
+
+50
+00:03:36,810 --> 00:03:41,580
+Przejście do następnego brzmi nieco trudniej, ponieważ to fabuła rój, w
+
+51
+00:03:41,580 --> 00:03:51,540
+której musisz zrobić, to powiedzieć, jak tylko fabuła roju i tak naprawdę jest tak samo jak klasa w stosunku do wieku, więc możesz po
+
+52
+00:03:51,630 --> 00:03:53,780
+prostu tu przyjść .
+
+53
+00:03:53,880 --> 00:04:01,030
+Skopiuj to wszystko i skopiuj wszystko razem z paletą i po prostu poprowadź ten jeden wątek.
+
+54
+00:04:01,040 --> 00:04:04,970
+To jest wersja fabuły Suaram, którą właśnie pokazaliśmy.
+
+55
+00:04:05,100 --> 00:04:07,960
+I ten schemat kolorów na wypadek, gdybyś był ciekawy, co to było.
+
+56
+00:04:08,070 --> 00:04:14,310
+W rzeczywistości jest to zestaw do schematu kolorów, ale znowu nie martw się, jeśli nie jesteśmy w stanie uzyskać koloru wydawało się
+
+57
+00:04:14,310 --> 00:04:14,670
+poprawne.
+
+58
+00:04:14,680 --> 00:04:19,890
+To naprawdę nie ma znaczenia, czego chcę, powinno być w stanie uzyskać poprawne jest x y i źródło
+
+59
+00:04:19,900 --> 00:04:21,080
+danych dla wykresu roju.
+
+60
+00:04:21,540 --> 00:04:25,290
+Następnym, który chcemy sprawdzić, była ta batonik.
+
+61
+00:04:25,290 --> 00:04:28,260
+Ale uważaj, że tutaj jest napisane, że policz tutaj.
+
+62
+00:04:28,270 --> 00:04:36,070
+Tak naprawdę jest to counterplot i możesz stworzyć counterplot, mówiąc po prostu S i S counterplot mijając kolumnę, którą
+
+63
+00:04:36,120 --> 00:04:37,210
+chcesz policzyć.
+
+64
+00:04:37,230 --> 00:04:46,530
+W tym przypadku przyjrzymy się tutaj, patrz kolumna sex w naszym źródle danych to ramka danych Titanica i to jest właśnie
+
+65
+00:04:46,530 --> 00:04:47,730
+ta fabuła.
+
+66
+00:04:47,730 --> 00:04:52,830
+Schemat kolorów to oryginalny schemat kolorów, który mamy tutaj.
+
+67
+00:04:52,830 --> 00:04:54,170
+Brzmi trochę trudniej.
+
+68
+00:04:54,450 --> 00:05:02,640
+Zauważ, że mamy wartości między ujemnym 1 i po przejściu z tego fajnego mapowania wojennego, a drugą wskazówką jest
+
+69
+00:05:02,640 --> 00:05:09,990
+to, że możesz zobaczyć na samym szczycie tytuł jest tytaniczny kropka corrc jest wyraźnie działką korelacyjną i
+
+70
+00:05:09,990 --> 00:05:12,780
+chcemy użyć mapy heape na to.
+
+71
+00:05:12,780 --> 00:05:15,730
+Więc zrobimy to.
+
+72
+00:05:15,870 --> 00:05:27,510
+Zamierzamy powiedzieć mapę ciepła Asinusa i ciemny rdzeń Titanica, a my możemy również powiedzieć, że mapa morza
+
+73
+00:05:27,510 --> 00:05:31,050
+jest równa chłodnemu ciepłu.
+
+74
+00:05:31,050 --> 00:05:34,580
+I to będzie replikować tę fabułę w notesie rozwiązań.
+
+75
+00:05:34,590 --> 00:05:38,980
+Dodałem również tytuł na temat tego o nazwie P. L ..
+
+76
+00:05:39,000 --> 00:05:44,670
+Tytuł "Titanic" dostał c o r r.
+
+77
+00:05:44,670 --> 00:05:45,540
+Zamknij nawiasy.
+
+78
+00:05:45,540 --> 00:05:49,590
+I to właśnie po to, aby dać ci wskazówkę, gdy patrzysz na figurkę, na temat
+
+79
+00:05:49,590 --> 00:05:51,270
+tego, czym właściwie są te informacje.
+
+80
+00:05:51,270 --> 00:05:51,960
+W porządku.
+
+81
+00:05:51,960 --> 00:05:56,210
+Idźmy dalej i przejdźmy do ostatniego wątku, który jest trochę trudny, ponieważ ten
+
+82
+00:05:56,210 --> 00:05:59,220
+używa systemu siatki Fassett będzie robiony w dwóch liniach.
+
+83
+00:05:59,220 --> 00:06:01,520
+Najpierw sprawdźmy, co właściwie robimy.
+
+84
+00:06:01,680 --> 00:06:05,420
+Wygląda na to, że kolumny są równe płci, a płeć jest równa płci żeńskiej.
+
+85
+00:06:05,460 --> 00:06:15,210
+Dlatego chcemy stworzyć siatkę Fassett oddzieloną przez organ seksu kolumnowego, np. Dane są równe Titanic,
+
+86
+00:06:15,450 --> 00:06:18,950
+a wywołanie jest równe płci.
+
+87
+00:06:19,170 --> 00:06:24,840
+A potem mam zamiar wyjść i ustawić to samo, co g we wcześniejszych przykładach, a
+
+88
+00:06:24,840 --> 00:06:27,780
+potem zamierzam odwzorować, że wygląda jak histogram.
+
+89
+00:06:27,960 --> 00:06:29,330
+Istnieją różne sposoby robienia tego.
+
+90
+00:06:29,340 --> 00:06:34,590
+Ale najłatwiej jest powiedzieć, że jest największa, a następnie argumenty rzeczywiście chcą zrobić histogram
+
+91
+00:06:34,590 --> 00:06:35,960
+w jego wieku.
+
+92
+00:06:36,300 --> 00:06:41,320
+Więc mógłbyś zrobić to, co mógłbyś zrobić, to uzyskać podobny spisek.
+
+93
+00:06:41,430 --> 00:06:47,090
+Dokładnie to samo jest po prostu spisek tego rodzaju również pokazał K na górze.
+
+94
+00:06:47,600 --> 00:06:48,190
+DOBRZE.
+
+95
+00:06:48,540 --> 00:06:53,730
+Mam nadzieję, że uznałeś to za interesujące i mam nadzieję, że naprawdę znalazłeś prawdziwą moc morza morskiego, aby
+
+96
+00:06:53,730 --> 00:06:58,800
+tworzyć piękne wizualizacje i tylko kilka linii kodu, o ile poprawnie skonfigurujesz swoje dane w ramce.
+
+97
+00:06:59,610 --> 00:07:00,360
+DOBRZE.
+
+98
+00:07:00,360 --> 00:07:04,530
+Śmiało i opublikuj wszelkie pytania na forach pytań i odpowiedzi i sprawdź nową książkę Jubera.
+
+99
+00:07:04,530 --> 00:07:06,270
+Jeśli potrzebujesz więcej kodu referencyjnego.
+
+100
+00:07:06,270 --> 00:07:08,180
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

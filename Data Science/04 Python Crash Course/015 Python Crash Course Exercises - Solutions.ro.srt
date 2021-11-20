@@ -1,0 +1,651 @@
+1
+00:00:05,130 --> 00:00:10,810
+Bună ziua tuturor și vă urez bun venit la cursurile de exerciții pentru cursuri de accidente în Python, iar această
+
+2
+00:00:10,800 --> 00:00:15,180
+prelegere voi lucra pur și simplu prin intermediul notebook-ului soluțiilor și explicând codul și soluțiile.
+
+3
+00:00:15,170 --> 00:00:20,440
+Nu, dar să mergem mai departe și să mergem la notebook-ul de exerciții, astfel încât să putem începe să codificăm acest lucru.
+
+4
+00:00:20,490 --> 00:00:20,760
+In regula.
+
+5
+00:00:20,760 --> 00:00:23,990
+Iată-mă la exercițiile de curs.
+
+6
+00:00:24,060 --> 00:00:28,250
+Prima întrebare pe care am vrut să o răspundem este ceea ce este 7: 2 la puterea a patru.
+
+7
+00:00:28,350 --> 00:00:30,540
+Acum există tehnic două moduri în care ați putea face acest lucru.
+
+8
+00:00:30,570 --> 00:00:36,900
+Puteai scrie doar de șapte ori șapte ori șapte ori șapte și ai primit răspunsul corect.
+
+9
+00:00:36,910 --> 00:00:42,600
+Dar amintiți-vă, cu siguranță, modul corect, care tocmai îl cheamă pe Asterix pentru exponenți.
+
+10
+00:00:42,660 --> 00:00:44,740
+Deci șapte până la puterea a patru.
+
+11
+00:00:44,910 --> 00:00:47,730
+Rulați acea celulă și există răspunsul tău.
+
+12
+00:00:47,730 --> 00:00:50,770
+În continuare vrem să divizăm șirul S egal cu.
+
+13
+00:00:50,780 --> 00:00:57,540
+Bună acolo Sam într-o listă putem merge mai departe și doar apuca acest lucru și putem vedea exemple liste de ieșire pe
+
+14
+00:00:57,540 --> 00:00:59,890
+care dorim să-l creați de fapt acolo.
+
+15
+00:00:59,910 --> 00:01:06,750
+Așadar, dacă rulez o continuare pentru a saluta Sam și apelați la split-uri, acest lucru va împărți automat
+
+16
+00:01:07,320 --> 00:01:09,790
+șirul într-o listă pe spațiul alb.
+
+17
+00:01:09,790 --> 00:01:15,840
+Îmi amintesc că putem trece, de fapt, orice caracter de șir, de exemplu, la ceea ce vrem să împărțim de
+
+18
+00:01:15,870 --> 00:01:19,750
+fapt, pe care, de fapt, îl vedem mai târziu într-un alt exercițiu.
+
+19
+00:01:19,980 --> 00:01:25,380
+Să intrăm în următoarea întrebare care a fost dată variabilelor: plena este egală cu pământul și diametrul este egal
+
+20
+00:01:25,380 --> 00:01:27,850
+cu douăsprezece mii șapte sute patruzeci și doi.
+
+21
+00:01:28,110 --> 00:01:30,710
+Utilizați acest format pentru a imprima următorul șir.
+
+22
+00:01:30,840 --> 00:01:34,830
+Diametrul Pământului este de douăsprezece mii șapte sute patruzeci și doi de kilometri.
+
+23
+00:01:34,940 --> 00:01:41,220
+Și mergeți să rulați celula astfel încât să găsim aceste două variabile și apoi
+
+24
+00:01:42,000 --> 00:01:49,500
+să spun într-un șir că diametrul Pământului este transmis unei mii șapte sute patruzeci și doi de kilometri.
+
+25
+00:01:49,520 --> 00:01:53,860
+Rețineți că vreau să folosesc acest format și vreau aceste două variabile.
+
+26
+00:01:54,060 --> 00:02:02,070
+Așa că voi înlocui pământul cu doar o pereche de brațe și voi face același lucru
+
+27
+00:02:02,800 --> 00:02:11,280
+pentru acest număr de diametru, atunci voi spune acel format și voi ajunge pe diametrul planetelor și voi
+
+28
+00:02:11,280 --> 00:02:13,460
+continua să tipăresc totul.
+
+29
+00:02:13,470 --> 00:02:14,950
+Deci asta e faptele.
+
+30
+00:02:15,030 --> 00:02:16,000
+Și acolo o avem.
+
+31
+00:02:16,260 --> 00:02:22,350
+De asemenea, aș fi putut trece apoi unele nume de variabile de aici, cum ar fi A și B, și care le-au stabilit egal
+
+32
+00:02:22,890 --> 00:02:23,970
+cu A și B.
+
+33
+00:02:24,210 --> 00:02:25,650
+Și acesta este exact același lucru.
+
+34
+00:02:25,650 --> 00:02:30,640
+Deci, pentru tine când o folosești pentru prima, trebuie să te asiguri că e în ordinea corectă.
+
+35
+00:02:30,960 --> 00:02:35,550
+În continuare, având în vedere această listă imbricată, utilizați indexarea pentru a apuca cuvântul Hello.
+
+36
+00:02:35,790 --> 00:02:36,670
+Acest lucru este destul de complicat.
+
+37
+00:02:36,690 --> 00:02:42,770
+Deci, vă veți duce timpul cu acest lucru și veți începe de la interior la exterior.
+
+38
+00:02:42,870 --> 00:02:44,620
+Puteți vedea aici că avem salut.
+
+39
+00:02:44,700 --> 00:02:50,100
+Și asta eo listă și Jupiter și-o face să te ajute să ieși cu sublinierile, atunci este
+
+40
+00:02:50,280 --> 00:02:56,820
+și în interiorul unei liste care se află în interiorul unei alte liste care se află în interiorul celei mai exterioare liste.
+
+41
+00:02:57,330 --> 00:03:06,730
+Așadar, această listă chiar aici este ceea ce vrem să luăm mai întâi și să găsim la indexul 3 0 1 2 3.
+
+42
+00:03:07,140 --> 00:03:09,210
+Vom merge mai departe și vom lua asta.
+
+43
+00:03:09,510 --> 00:03:15,930
+Acum, că am această listă, văd că lista care are cuvântul meu țintă, salut este al doilea
+
+44
+00:03:15,930 --> 00:03:19,790
+element din listă, care înseamnă că este un index.
+
+45
+00:03:20,550 --> 00:03:24,240
+Și acum am de gând să rup acest lucru din nou, astfel 0 1
+
+46
+00:03:27,150 --> 00:03:29,540
+2 și apoi am o listă de un element.
+
+47
+00:03:29,540 --> 00:03:32,170
+Așa că pot merge mai departe și ia-o din nou pentru zero.
+
+48
+00:03:32,610 --> 00:03:35,090
+Și apoi, în final, am șirul de salut OK.
+
+49
+00:03:35,100 --> 00:03:39,660
+Acest lucru este destul de complicat și nu veți avea într-adevăr o situație ca aceasta în viața reală.
+
+50
+00:03:39,810 --> 00:03:44,190
+Dar când lucrez cu panda, va trebui să faceți lucruri care sunt adânc în două niveluri.
+
+51
+00:03:44,190 --> 00:03:45,940
+Așa că ține minte asta.
+
+52
+00:03:46,440 --> 00:03:46,780
+In regula.
+
+53
+00:03:46,800 --> 00:03:51,090
+Apoi, următoarea întrebare a fost dată acestui dicționar neceptat, salutând cuvântul salut.
+
+54
+00:03:51,420 --> 00:03:53,820
+Fiți pregătiți, acest lucru va fi enervant slash dificil.
+
+55
+00:03:53,820 --> 00:03:55,410
+Deci, acest lucru este destul de complicat.
+
+56
+00:03:55,710 --> 00:03:57,810
+Dar să mergem mai departe și să o rupem pas cu pas.
+
+57
+00:03:57,840 --> 00:04:01,190
+Primul lucru pe care trebuie să-l faci este să iei unul cheie.
+
+58
+00:04:01,200 --> 00:04:05,410
+Deci, dacă ne uităm la ele, putem cere chiar cheile.
+
+59
+00:04:05,640 --> 00:04:11,460
+Și de fapt avem doar o cheie în cel mai exterior dicționar ok unul vom merge mai departe și sunăm asta.
+
+60
+00:04:13,530 --> 00:04:19,230
+Și apoi am acum o listă cu unele elemente și observ că vreau să apuc acest dicționar
+
+61
+00:04:19,230 --> 00:04:22,270
+chiar aici, care este la 0 1 2 3.
+
+62
+00:04:22,270 --> 00:04:25,410
+Deci, indicele 3 al acestei liste.
+
+63
+00:04:25,410 --> 00:04:31,920
+Așa că țineți cont că suntem un fel de indexare a listei de amestec cu perechi de valori cheie ale unui dicționar.
+
+64
+00:04:32,400 --> 00:04:36,810
+Și apoi am un dicționar din nou și vreau să apuc de valoare la cheie.
+
+65
+00:04:36,810 --> 00:04:39,260
+Complicat.
+
+66
+00:04:40,020 --> 00:04:46,520
+Apoi am o listă din nou și vreau să apuc acest dicționar care este 0 1 2 3.
+
+67
+00:04:47,810 --> 00:04:52,240
+Și apoi am un dicționar din nou și vreau să apuc o țintă cheie.
+
+68
+00:04:52,770 --> 00:04:59,210
+Și apoi, în sfârșit, am o listă și vreau să apuc acel ultim element 0 1 2 3.
+
+69
+00:05:00,000 --> 00:05:01,390
+Și asta este bine.
+
+70
+00:05:01,750 --> 00:05:02,130
+O.K.
+
+71
+00:05:02,130 --> 00:05:04,390
+Destul de complicat destul de greu.
+
+72
+00:05:04,410 --> 00:05:09,520
+Deci, nu vă îngrijorați prea mult dacă nu ați reușit să găsiți rapid acest lucru, deoarece este destul de enervant.
+
+73
+00:05:09,560 --> 00:05:15,250
+Binecuvântat, dar sperăm că sunteți capabili să înțelegeți logic această soluție.
+
+74
+00:05:15,270 --> 00:05:18,210
+Următoarea întrebare este care este principala diferență dintre o tuplă și o listă.
+
+75
+00:05:18,270 --> 00:05:21,450
+Ei bine, o tuplă este imuabilă și o listă este mutabilă.
+
+76
+00:05:21,450 --> 00:05:23,980
+Aceasta este principala diferență.
+
+77
+00:05:24,060 --> 00:05:28,500
+După aceea, am vrut să creăm o funcție care să captureze domeniul site-ului Web de e-mail dintr-un
+
+78
+00:05:28,500 --> 00:05:30,960
+șir în formularul de utilizator la domeniul dot com.
+
+79
+00:05:30,960 --> 00:05:36,610
+Așadar, de exemplu, trecerea utilizatorului din domeniul dot com ar reveni la domiciliul domeniului com.
+
+80
+00:05:37,260 --> 00:05:43,120
+Să mergem mai departe și să creăm o funcție numită domeniu.
+
+81
+00:05:43,530 --> 00:05:51,540
+Aceasta va avea o variabilă de e-mail care va fi un șir și apoi vom returna e-mail care se împarte
+
+82
+00:05:54,230 --> 00:05:56,330
+și vom împărți pe simbol.
+
+83
+00:05:56,340 --> 00:05:58,900
+Hai să intrăm și să vedem cum funcționează asta.
+
+84
+00:05:58,950 --> 00:06:00,550
+Dacă dau doar asta.
+
+85
+00:06:01,170 --> 00:06:01,860
+Bine, minunat.
+
+86
+00:06:01,860 --> 00:06:08,900
+Deci, dacă eu doar a alerga că am sfârși prin a fi împărțit pe acest la simbol și am o listă înapoi.
+
+87
+00:06:09,030 --> 00:06:14,360
+Vreau ca al doilea element din această listă să însemne că vreau să merg mai departe și să apuc un index deasupra.
+
+88
+00:06:14,430 --> 00:06:16,920
+Și apoi, dacă execut acest lucru, primesc răspunsul corect.
+
+89
+00:06:16,950 --> 00:06:20,810
+Acest domeniu dot com.
+
+90
+00:06:20,820 --> 00:06:24,640
+În continuare vrem să creăm o funcție de bază care se întoarce la adevărat.
+
+91
+00:06:24,740 --> 00:06:27,940
+Acesta este cuvântul câine care este conținut în șirul de intrare.
+
+92
+00:06:28,020 --> 00:06:30,910
+Și din nou nu vă faceți griji cu privire la cazurile de margine, cum ar fi atașarea de punctuație.
+
+93
+00:06:30,920 --> 00:06:37,940
+Cuvântul de bine pe care ar trebui să-l explicăm pentru capitalizare sau să mergem mai departe este să creezi o funcție.
+
+94
+00:06:37,940 --> 00:06:47,850
+Cel de-al patrulea caine gaseste o variabila variabila si merge mai departe si apeleaza variabila S si
+
+95
+00:06:47,850 --> 00:06:57,720
+apoi vom spune revenire vom verifica daca cainul este in S pentru a explica capitalizarea.
+
+96
+00:06:57,720 --> 00:07:03,060
+Voi merge mai departe și voi micșora totul în S și apoi o voi împărți astfel încât să se transforme de
+
+97
+00:07:03,060 --> 00:07:08,130
+fapt într-o listă de obiecte și atunci când voi rula acest lucru se va sfârși prin a fi adevărat.
+
+98
+00:07:08,280 --> 00:07:09,500
+Există un câine acolo.
+
+99
+00:07:09,540 --> 00:07:12,910
+Lasă-mă să intru și să-ți arăt ce se întâmplă atunci când trec acest șir.
+
+100
+00:07:12,960 --> 00:07:15,480
+Voi spune că e egal cu.
+
+101
+00:07:15,570 --> 00:07:18,030
+E un câine aici.
+
+102
+00:07:19,410 --> 00:07:20,210
+Pornește.
+
+103
+00:07:20,310 --> 00:07:27,360
+Și apoi, dacă zic că sunt mai jos, voi micșora totul și apoi dacă spun o
+
+104
+00:07:27,360 --> 00:07:34,800
+împărțire estoppedă după ce am scăzut această listă și apoi verific doar că este câine în lista respectivă.
+
+105
+00:07:34,800 --> 00:07:41,640
+Deci, aceștia sunt pașii pe care le fac în această afirmație de o singură linie că vreau să creez o funcție care să conteze
+
+106
+00:07:41,640 --> 00:07:45,000
+numărul de repetări pe care cuvântul câine le are într-un șir.
+
+107
+00:07:45,000 --> 00:07:48,570
+Și din nou putem ignora cazurile de margine.
+
+108
+00:07:49,020 --> 00:07:57,090
+Vom merge mai departe și vom spune că F creează o funcție numită câmpuri Count câine și un șir ca să ne
+
+109
+00:07:57,090 --> 00:08:03,830
+stabilească numărătoarea inițială la 0 și vom spune cu cuvânt și vom spune din nou s t.
+
+110
+00:08:03,880 --> 00:08:15,390
+Împărțirea inferioară în același mod pe care am făcut-o pentru ultima întrebare și apoi, în cazul în care cuvântul este egal cu câinele, vom merge mai departe și vom
+
+111
+00:08:16,560 --> 00:08:18,610
+adăuga 1 la conte.
+
+112
+00:08:18,720 --> 00:08:22,590
+Așa că numărătoarea este egală cu numărul plus 1.
+
+113
+00:08:22,980 --> 00:08:26,070
+Așadar, ați putea spune că numărătoarea este egală cu numărătoarea plus 1 sau cu stenograma.
+
+114
+00:08:26,070 --> 00:08:29,690
+Ceea ce unii oameni le place să facă este doar să spunem că este egal cu 1.
+
+115
+00:08:29,730 --> 00:08:31,880
+Și acesta este exact același lucru.
+
+116
+00:08:31,890 --> 00:08:34,540
+Apoi, în cele din urmă, mă voi întoarce la sfârșit.
+
+117
+00:08:34,740 --> 00:08:37,470
+Numărul meu, care este numărul de ori pe care l-am văzut cuvântul câine.
+
+118
+00:08:37,470 --> 00:08:42,850
+Acum, dacă mergem și conducem acest lucru, obținem răspunsul corect aici.
+
+119
+00:08:43,020 --> 00:08:47,670
+În continuare, am vrut să folosim expresii lambda în funcția de filtrare pentru a filtra cuvinte dintr-o
+
+120
+00:08:47,670 --> 00:08:49,490
+listă care nu pornește litera S.
+
+121
+00:08:49,650 --> 00:08:56,460
+De exemplu, avem CQ este o listă de cuvinte care trebuie filtrată până la supă și apoi salată. Să mergem să
+
+122
+00:08:56,460 --> 00:08:58,650
+vedem cum putem face acest lucru.
+
+123
+00:08:58,650 --> 00:09:06,030
+Voi spune să filtrez și apoi voi folosi expresia de pământ.
+
+124
+00:09:06,090 --> 00:09:14,100
+Va lua un cuvânt și va verifica dacă primele elemente din acel șir de cuvinte sunt egale
+
+125
+00:09:14,100 --> 00:09:23,060
+cu S și apoi nu vor trece o secvență și apoi în cele din urmă voi arunca totul ca o listă.
+
+126
+00:09:24,060 --> 00:09:25,170
+Și acesta este răspunsul.
+
+127
+00:09:25,170 --> 00:09:26,480
+Supă și apoi salată.
+
+128
+00:09:26,550 --> 00:09:32,280
+Deci, din nou pentru filtre această expresie lambda sau funcția budinca ceea ce treceți are nevoie pentru
+
+129
+00:09:32,280 --> 00:09:38,020
+a reveni o valoare booleană și vom merge mai departe și filtrarea secvența pe baza acestor valori booleene.
+
+130
+00:09:38,850 --> 00:09:39,150
+In regula.
+
+131
+00:09:39,150 --> 00:09:41,160
+Aici suntem la ultima problema.
+
+132
+00:09:41,280 --> 00:09:42,650
+Declarația problemă este asta.
+
+133
+00:09:42,670 --> 00:09:46,570
+Voi conduceți puțin prea repede și un ofițer de poliție vă oprește.
+
+134
+00:09:46,620 --> 00:09:50,310
+Va trebui să scrieți o funcție pentru a returna unul din cele trei rezultate posibile.
+
+135
+00:09:50,310 --> 00:09:53,000
+Nici un bilet de bilet mic sau un bilet mare.
+
+136
+00:09:53,190 --> 00:09:56,650
+Dacă viteza dvs. este de 60 sau mai puțin, rezultatul nu este un bilet.
+
+137
+00:09:56,700 --> 00:10:01,890
+Dacă viteza este între 61 și 80 inclusiv Rezultatul este bilet mic.
+
+138
+00:10:01,890 --> 00:10:06,870
+Dacă viteza este de 81 sau mai mult rezultatul este un bilet mare și cu atât mai puțin este ziua
+
+139
+00:10:06,870 --> 00:10:12,760
+ta de naștere care este codificată ca valoare booleană în parametrii funcției de ziua de naștere, viteza dvs. poate fi mai mare cu 5.
+
+140
+00:10:12,780 --> 00:10:14,120
+În toate cazurile.
+
+141
+00:10:14,340 --> 00:10:15,800
+Înțeles dacă e ziua ta de naștere.
+
+142
+00:10:15,810 --> 00:10:22,830
+Deci, dacă este ziua de naștere subliniază este adevărat decât limita de viteză este ridicat cinci mile sau cinci kilometri pe
+
+143
+00:10:22,830 --> 00:10:23,970
+oră pentru tine.
+
+144
+00:10:24,420 --> 00:10:26,290
+OK, să mergem mai departe și să începem.
+
+145
+00:10:26,310 --> 00:10:29,840
+Vom șterge aceste afirmații anterioare.
+
+146
+00:10:29,910 --> 00:10:34,070
+Primul lucru pe care vreau să îl fac este să verific dacă este ziua de naștere a cuiva și să ajustați viteza în consecință.
+
+147
+00:10:34,080 --> 00:10:37,080
+Va spune dacă este
+
+148
+00:10:40,650 --> 00:10:48,500
+nașterea vor spune că viteza este egală cu viteza minus cinci și apoi altceva.
+
+149
+00:10:49,050 --> 00:10:57,420
+Accelerarea este doar egală cu viteza și apoi vom merge mai departe și vom verifica acum împotriva
+
+150
+00:10:57,450 --> 00:10:59,590
+vitezei condițiilor pentru bilete.
+
+151
+00:10:59,640 --> 00:11:06,450
+Deci, din nou, dacă viteza este mai mare de 80, atunci este un bilet mare.
+
+152
+00:11:06,510 --> 00:11:11,160
+Așa că voi merge mai departe și voi întoarce biletul cu șir mare.
+
+153
+00:11:12,680 --> 00:11:23,820
+Apoi vom spune dacă viteza este mai mare decât 60 Ei bine, atunci vom reveni la un bilet mic și altfel
+
+154
+00:11:26,040 --> 00:11:27,540
+vom avea.
+
+155
+00:11:27,570 --> 00:11:32,870
+Altfel ar fi un bilet de întoarcere.
+
+156
+00:11:33,120 --> 00:11:34,410
+Și apoi putem merge mai departe și a alerga.
+
+157
+00:11:34,410 --> 00:11:40,040
+Deci, 81 ar fi de obicei un bilet mare, dar de când e ziua ta de naștere, vom spune că este adevărat.
+
+158
+00:11:40,080 --> 00:11:41,700
+Ar trebui să fie un bilet mic.
+
+159
+00:11:41,940 --> 00:11:46,910
+Și acolo o avem și este un bilet mare.
+
+160
+00:11:46,980 --> 00:11:47,840
+In regula.
+
+161
+00:11:47,880 --> 00:11:49,620
+Sper că v-ați bucurat de soluții.
+
+162
+00:11:49,620 --> 00:11:54,390
+Simțiți-vă liber să postați întrebările pe care le aveți la forumurile Q &amp; A și vom fi bucuroși să vă ajutăm acolo.
+
+163
+00:11:54,390 --> 00:11:56,220
+Multumesc tuturor si te voi vedea la urmatoarea conferinta

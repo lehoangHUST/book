@@ -1,0 +1,479 @@
+1
+00:00:05,280 --> 00:00:10,170
+Salve a tutti e benvenute alla conferenza della griglia la sezione del corso di mare del corso in questa conferenza.
+
+2
+00:00:10,170 --> 00:00:15,930
+Impareremo come utilizzare la funzionalità della griglia di sideboard per automatizzare le sottotrame basate sulle funzionalità
+
+3
+00:00:15,930 --> 00:00:17,040
+dei nostri dati.
+
+4
+00:00:17,040 --> 00:00:20,490
+Entriamo e saliamo a Jupiter, nota che iniziamo.
+
+5
+00:00:20,550 --> 00:00:22,590
+OK, eccomi qui alla nota di Giove.
+
+6
+00:00:22,620 --> 00:00:29,280
+Voglio colpire quell'importazione di Seaborn come Asinus chiamato Map plot live in line e poi ho caricato il set di dati dell'iride e puoi farlo
+
+7
+00:00:29,280 --> 00:00:33,900
+solo dicendo che S e S pensavano di caricare il set di dati di sottolineatura e poi passare
+
+8
+00:00:33,900 --> 00:00:38,980
+la stringa Iris e tirato fuori la testa di questo set di dati dell'iride è un set piuttosto famoso.
+
+9
+00:00:39,030 --> 00:00:43,190
+In pratica sono solo misurazioni di un gruppo di fiori o iris diversi.
+
+10
+00:00:43,380 --> 00:00:49,080
+E l'ultimo cono qui sulle specie ha tre distinti tipi di valori.
+
+11
+00:00:49,070 --> 00:00:58,890
+Quindi se esco e dico Basta entrare qui e chiamare Iris circola specie possiamo controllare i valori
+
+12
+00:00:58,890 --> 00:00:59,770
+unici qui.
+
+13
+00:01:00,440 --> 00:01:06,270
+E ci sono tre specie di fiori possibili due là Tosa versicolor o virginica e le altre
+
+14
+00:01:06,270 --> 00:01:12,050
+quattro colonne sono solo caratteristiche del fiore come le persone che pesano o vendono metallo con ecc. Vedremo molto di più di questo set di dati quando parliamo di apprendimento automatico.
+
+15
+00:01:12,180 --> 00:01:15,110
+Ma per ora andiamo avanti e facciamo un semplice diagramma di coppia su questi dati.
+
+16
+00:01:15,120 --> 00:01:20,800
+Quindi la trama è una specie di trama comune automatizzata per l'intero set di dati.
+
+17
+00:01:20,810 --> 00:01:25,160
+Quindi ricorda da quella distribuzione quale conferenza è così che possiamo semplicemente passare nel frame dei
+
+18
+00:01:25,230 --> 00:01:30,170
+dati e creerà automaticamente questo grafico di coppia per noi che ora utilizziamo il grande meccanismo risparmiato via mare.
+
+19
+00:01:30,180 --> 00:01:36,390
+In realtà saremo in grado di personalizzare questo tipo
+
+20
+00:01:36,420 --> 00:01:43,440
+di trama della coppia con maggiore controllo sulle trame reali.
+
+21
+00:01:43,440 --> 00:01:44,480
+Andiamo avanti e mostriamo come possiamo farlo.
+
+22
+00:01:44,490 --> 00:01:46,310
+Voglio andare avanti e
+
+23
+00:01:46,590 --> 00:01:55,330
+chiamare la rete di allevatori invece dei lotti di pere a pagamento sarà capitale P H I R Capitale G R i. e. r id.
+
+24
+00:01:55,350 --> 00:01:58,970
+E poi la tua cornice dati.
+
+25
+00:01:59,010 --> 00:02:01,450
+Quindi abbiamo un periodo e questo ci dà solo un peregrino vuoto.
+
+26
+00:02:01,500 --> 00:02:04,650
+Prende tutte le colonne numeriche e le raggruppa essenzialmente per
+
+27
+00:02:04,650 --> 00:02:09,540
+creare le sottotrame per noi e la trama payr è solo una versione semplificata di Peregrym.
+
+28
+00:02:09,900 --> 00:02:12,830
+Quindi la sua trama fa un sacco di cose che accoppiano automaticamente la griglia.
+
+29
+00:02:13,020 --> 00:02:16,360
+Devi fare ancora un po 'ma ti dà molto più controllo.
+
+30
+00:02:16,500 --> 00:02:19,470
+Andiamo a vedere come possiamo usarlo.
+
+31
+00:02:19,500 --> 00:02:21,720
+Il modo principale è impostare
+
+32
+00:02:21,840 --> 00:02:29,370
+questa griglia di coppia uguale a una variabile e quindi su quella variabile è possibile mappare quale tipo.
+
+33
+00:02:30,810 --> 00:02:31,380
+Quindi, per esempio,
+
+34
+00:02:31,380 --> 00:02:39,390
+se voglio andare avanti e mappare magari un grafico a dispersione, posso dire che scatterà T-Dog e questo mapperà uno scatterplot sia per la diagonale superiore che per la diagonale stessa e per la metà inferiore.
+
+35
+00:02:39,390 --> 00:02:47,280
+Ora, se voglio veramente specificare ciò che voglio nella diagonale superiore e nella metà inferiore, posso specificare
+
+36
+00:02:47,280 --> 00:02:53,130
+quel comando che dico map underscore diag e questa sarà la trama diagonale.
+
+37
+00:02:53,130 --> 00:02:58,200
+E noi andiamo avanti e mappiamo qualcosa a questo.
+
+38
+00:02:58,260 --> 00:03:00,560
+Andiamo avanti e mappiamo a.
+
+39
+00:03:00,570 --> 00:03:02,260
+Questo traccia l'intera diagonale e quindi ho intenzione di mappare i grafici superiori.
+
+40
+00:03:02,430 --> 00:03:10,960
+parte superiore e poi nella mappa inferiore, sottolineate in basso.
+
+41
+00:03:11,040 --> 00:03:18,570
+Andremo avanti e manterremo quelle mappe scatterplot solo nella
+
+42
+00:03:18,650 --> 00:03:19,290
+Posso tracciare qualche altro tipo di trama per esempio trama di Katy.
+
+43
+00:03:19,470 --> 00:03:23,970
+Tutto ok.
+
+44
+00:03:24,090 --> 00:03:24,420
+E notate che non sto chiudendo i principi a questi complotti e passando semplicemente nella funzione trama.
+
+45
+00:03:24,450 --> 00:03:29,060
+Quindi lo mapperemo basandosi sui dati che questi Agnel
+
+46
+00:03:29,200 --> 00:03:35,340
+sono posti superiori o inferiori a quella matrice, così possiamo uscire e verificarlo.
+
+47
+00:03:35,340 --> 00:03:37,700
+Questo potrebbe richiedere un po 'di tempo per essere eseguito a seconda di quanto sia
+
+48
+00:03:37,740 --> 00:03:41,860
+fasullo il computer, ma ora possiamo vedere che abbiamo questo tipo di griglia o una trama di coppia ma abbiamo molto più controllo su di esso.
+
+49
+00:03:41,870 --> 00:03:46,070
+Quindi sono solo trame sparse di istogrammi.
+
+50
+00:03:46,080 --> 00:03:48,360
+Ora possiamo effettivamente scegliere quali tipi di trama vogliamo mappare.
+
+51
+00:03:48,360 --> 00:03:52,050
+E questa è solo l'idea alla base di Peregrym.
+
+52
+00:03:52,650 --> 00:03:55,190
+Solitamente useremo solo la trama perché è più semplice e ci fornisce la maggior parte delle informazioni che vogliamo.
+
+53
+00:03:55,260 --> 00:03:59,220
+Ma se stai cercando di ottenere un'abilità un po 'più personalizzata fuori
+
+54
+00:03:59,250 --> 00:04:03,720
+dai grafici della seaboard, specialmente i tipi di trama payr, puoi usare paygrade per
+
+55
+00:04:03,720 --> 00:04:09,180
+fare ciò e quindi mappare i tipi specifici che vuoi diagonali in alto o in basso.
+
+56
+00:04:09,180 --> 00:04:12,310
+corde controlla la testa di il nostro set di dati.
+
+57
+00:04:12,400 --> 00:04:19,860
+Ora parliamo del nerd di Fassett per discutere della griglia di Fassett e quando usciremo e chiariremo questo e caricherò il set di
+
+58
+00:04:19,860 --> 00:04:26,910
+dati dei suggerimenti dicendo che Tipps è uguale a Asinus carica i set di dati e poi passando i suggerimenti per le
+
+59
+00:04:26,910 --> 00:04:31,220
+Bene, abbiamo i nostri set di dati dei suggerimenti che ci sono familiari.
+
+60
+00:04:31,220 --> 00:04:33,640
+Andiamo avanti e mostriamo un esempio
+
+61
+00:04:33,900 --> 00:04:38,940
+molto semplice della griglia di Fassett semplicemente mostrando la griglia simile a Peregrym.
+
+62
+00:04:39,840 --> 00:04:41,250
+Ho intenzione di chiamarti bianco e zoomare qui un po '.
+
+63
+00:04:41,340 --> 00:04:44,820
+Voglio chiamarlo g è uguale a asinus.
+
+64
+00:04:44,840 --> 00:04:47,580
+Griglia di pensiero Fassett.
+
+65
+00:04:47,580 --> 00:04:50,260
+E poi il professor Green che fai mentre passi nei dati.
+
+66
+00:04:50,700 --> 00:04:54,900
+Quindi stai per dire che i dati sono uguali o come il primo argomento che sai dire che equivale
+
+67
+00:04:54,900 --> 00:04:59,700
+a semplici consigli e poi specifichi quello che vuoi che sia la chiamata e che cosa vuoi che sia la strada.
+
+68
+00:04:59,700 --> 00:05:05,750
+Questo è un po 'come dove stiamo usando le sottotrame che Lyd.
+
+69
+00:05:05,760 --> 00:05:09,090
+Tranne ora, invece di dire numeri, in realtà passerai ai nomi delle colonne pasan del tuo data frame.
+
+70
+00:05:09,300 --> 00:05:13,920
+Quindi per esempio ho intenzione di dire call uguale al tempo e RHO qui è uguale a fumatore.
+
+71
+00:05:15,120 --> 00:05:21,980
+Andiamo avanti e corriamo vediamo come appare.
+
+72
+00:05:21,990 --> 00:05:24,860
+OK.
+
+73
+00:05:25,230 --> 00:05:25,680
+Ora ho una griglia vuota che può iniziare a mappare effettivamente i tipi di questo gruppo.
+
+74
+00:05:25,680 --> 00:05:31,470
+Per esempio, vado avanti e dico che ho ottenuto la matematica.
+
+75
+00:05:31,710 --> 00:05:38,020
+S e questo farà questo.
+
+76
+00:05:38,820 --> 00:05:42,170
+E facciamolo sul conto totale.
+
+77
+00:05:43,830 --> 00:05:47,270
+Quindi lo farà per chiuderlo e farlo funzionare.
+
+78
+00:05:49,230 --> 00:05:52,450
+OK.
+
+79
+00:05:53,280 --> 00:05:54,000
+Quindi sta succedendo davvero qui.
+
+80
+00:05:54,000 --> 00:05:56,350
+e no e i fumatori sono la rosa.
+
+81
+00:05:57,300 --> 00:06:05,250
+Sono Matt che è un tipo SWAT e separa i risultati in base alla mia colonna e fila determinati nomi di colonne e qui sono etichettati per noi
+
+82
+00:06:05,250 --> 00:06:11,940
+in modo che l'asse x rappresenti il ​​conto totale ma ci sono quattro grafici separati e in realtà sono etichettati per noi sì
+
+83
+00:06:11,940 --> 00:06:16,680
+E questo è stato specificato quando ho detto a Roe lo stesso fumatore.
+
+84
+00:06:16,740 --> 00:06:19,560
+E poi.
+
+85
+00:06:19,570 --> 00:06:20,360
+O al momento effettivo del pranzo rispetto alla cena è specificato dalla colonna.
+
+86
+00:06:20,460 --> 00:06:25,340
+Quindi la colonna di sinistra è il pranzo la colonna di destra
+
+87
+00:06:25,340 --> 00:06:31,830
+è la cena la fila superiore è i fumatori e la fila in basso è non-fumatori.
+
+88
+00:06:31,830 --> 00:06:32,960
+E poi abbiamo i grafici di distribuzione in cui il conto totale chiama.
+
+89
+00:06:33,030 --> 00:06:36,220
+Quindi qui ci sono essenzialmente tre argomenti in gioco.
+
+90
+00:06:36,420 --> 00:06:39,200
+I nomi di righe e colonne sono le variabili da separare per la griglia Fassett.
+
+91
+00:06:39,350 --> 00:06:45,990
+E poi quando stai mappando vorrai aggiungere un argomento in più che in
+
+92
+00:06:46,050 --> 00:06:49,890
+realtà vorrebbe una mappa per la visualizzazione.
+
+93
+00:06:49,890 --> 00:06:51,740
+Se stai cercando di mappare un tipo di trama che ha bisogno di più di un argomento.
+
+94
+00:06:52,380 --> 00:06:57,000
+Quindi sappiamo che questa trama ha bisogno solo di un argomento,
+
+95
+00:06:57,120 --> 00:07:02,300
+ma diciamo che abbiamo provato a fare uno scatterplot dicendo "peel teeth scatter".
+
+96
+00:07:02,320 --> 00:07:04,140
+Ho appena detto il conto totale qui o ottenere un errore di tipo.
+
+97
+00:07:04,140 --> 00:07:07,600
+Ma ho bisogno di fare è passare un argomento aggiuntivo in
+
+98
+00:07:07,710 --> 00:07:13,650
+modo che io possa andare avanti e passare questo e possiamo dire forse suggerimenti contro il conto totale.
+
+99
+00:07:13,800 --> 00:07:15,770
+È allora che andiamo avanti e facciamo in modo che questo debba solo essere impostato.
+
+100
+00:07:15,780 --> 00:07:21,470
+Quindi punta contro il conto totale.
+
+101
+00:07:22,230 --> 00:07:23,790
+Ora possiamo vedere che abbiamo
+
+102
+00:07:23,790 --> 00:07:30,960
+una mancia contro il conto totale e ci siamo separati sia in fila che in colonna tra fumatori e pranzo contro cena.
+
+103
+00:07:31,230 --> 00:07:33,940
+Quindi, se hai a che fare con un tipo di trama
+
+104
+00:07:33,960 --> 00:07:38,460
+che ha bisogno di più di un argomento, devi aggiungerlo come secondo argomento nella chiamata sulla mappa.
+
+105
+00:07:38,490 --> 00:07:41,350
+Tutto ok.
+
+106
+00:07:41,400 --> 00:07:41,760
+Questo è in realtà per la grande lezione.
+
+107
+00:07:41,760 --> 00:07:43,900
+Il motivo è che vogliamo utilizzare effettivamente la griglia di
+
+108
+00:07:43,920 --> 00:07:47,910
+massa che spesso durante il corso Seaborn offre capacità di tracciamento di base sono abbastanza per noi durante il corso.
+
+109
+00:07:47,910 --> 00:07:52,890
+Il tipo di funzioni della griglia è disponibile solo per te se desideri personalizzare ulteriormente i tuoi grafici.
+
+110
+00:07:53,320 --> 00:07:58,650
+E c'è un collegamento nel taccuino di Giove per questa lezione con alcuni link alla
+
+111
+00:07:58,740 --> 00:08:03,540
+documentazione e altri esempi di cosa puoi fare con Fassett grid e Peregrym.
+
+112
+00:08:03,540 --> 00:08:07,160
+possibile passare e che creeranno automaticamente un voto rapido per te.
+
+113
+00:08:07,340 --> 00:08:12,240
+Si limitano a tenerli a mente quando si cerca un po 'più di personalizzazione, altri
+
+114
+00:08:12,240 --> 00:08:16,890
+tipi di trama, come i grafici di regressione, in realtà hanno parametri che è
+
+115
+00:08:16,890 --> 00:08:17,850
+Ma andiamo a scoprirlo un po 'di più quando parliamo di grafici di regressione nella prossima lezione.
+
+116
+00:08:18,030 --> 00:08:22,520
+Va bene.
+
+117
+00:08:22,890 --> 00:08:23,820
+Grazie a tutti.
+
+118
+00:08:23,820 --> 00:08:24,990
+Sentiti libero di pubblicare i forum Q Any se hai domande su questo argomento.
+
+119
+00:08:24,990 --> 00:08:28,530
+Vedrò alla prossima lezione
+
+120
+00:08:28,530 --> 00:08:29,520
+&nbsp;

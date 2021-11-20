@@ -1,0 +1,195 @@
+1
+00:00:05,190 --> 00:00:09,870
+Olá a todos e seja bem vindo à palestra sem alças e mancuernas
+
+2
+00:00:09,870 --> 00:00:15,890
+e nesta palestra, vamos aprender um pouco do fundo por trás dos abotoaduras que nos permitem criar
+
+3
+00:00:17,260 --> 00:00:23,730
+visualizações interativas silenciosamente é uma biblioteca de visualização interativa que é de código aberto e abotoaduras conecta esta
+
+4
+00:00:23,730 --> 00:00:24,750
+biblioteca com pandas .
+
+5
+00:00:24,870 --> 00:00:29,490
+E assim poderemos criar visualizações interativas diretamente do nosso quadro de dados.
+
+6
+00:00:30,180 --> 00:00:35,480
+No entanto, antes de realmente explorar essas bibliotecas, precisaremos instalá-las.
+
+7
+00:00:35,880 --> 00:00:41,100
+Você precisará usar o Pipp para instalar essas bibliotecas em sua linha de comando ou no seu terminal e você
+
+8
+00:00:41,100 --> 00:00:44,720
+pode escrever o argumento de estilo Pitman e as abotoaduras de instalação da Pipp.
+
+9
+00:00:44,730 --> 00:00:47,750
+Isso ainda deve funcionar mesmo se você estiver usando a distribuição da Anaconda.
+
+10
+00:00:47,790 --> 00:00:53,700
+Essas duas bibliotecas simplesmente não estão disponíveis na instalação do Konda neste momento, então vá em frente e use o estilo de
+
+11
+00:00:53,710 --> 00:00:58,650
+pipin sem trama e os abotoaduras de Pippin em seu terminal de linha de comando para obter essas bibliotecas.
+
+12
+00:01:00,300 --> 00:01:04,170
+Agora vamos dar uma rápida visita ao site oficial antes da próxima palestra, nós
+
+13
+00:01:04,170 --> 00:01:05,990
+realmente mostramos como usar essas bibliotecas.
+
+14
+00:01:06,000 --> 00:01:09,110
+Eu vou seguir em frente e entrar no site oficial do fórum agora.
+
+15
+00:01:09,630 --> 00:01:09,920
+Tudo bem.
+
+16
+00:01:09,930 --> 00:01:11,750
+Aqui estou no site sem trama.
+
+17
+00:01:11,820 --> 00:01:16,380
+Definiu P L O T L Y e você pode verificar o site da Web.
+
+18
+00:01:16,390 --> 00:01:22,320
+Há muita informação sobre isso em uma nota rápida sem montra também é uma empresa, mas
+
+19
+00:01:22,320 --> 00:01:25,590
+ganham dinheiro hospedando suas visualizações e hospedando seus painéis.
+
+20
+00:01:25,620 --> 00:01:30,900
+Se você quiser manter tudo local ou hospedá-lo você mesmo, a biblioteca que opera em todos esses recursos
+
+21
+00:01:30,990 --> 00:01:32,690
+é de código aberto e gratuita.
+
+22
+00:01:32,910 --> 00:01:37,480
+Portanto, não se preocupe, você não terá que pagar algo para usar educadamente e educadamente.
+
+23
+00:01:37,560 --> 00:01:42,120
+É compatível com uma variedade de ferramentas, como o nosso Matlab excel e Javascript.
+
+24
+00:01:42,270 --> 00:01:44,830
+Mas vamos nos concentrar em usá-lo com o Python.
+
+25
+00:01:44,830 --> 00:01:49,440
+Se você seguir em frente e clicar neste link python, você receberá um link para uma página inicial com o Python.
+
+26
+00:01:49,890 --> 00:01:52,080
+Isso irá mostrar-lhe como começar.
+
+27
+00:01:52,110 --> 00:01:56,500
+Curiosamente, eles terão um link para Pandas e é isso que vamos nos concentrar no
+
+28
+00:01:56,500 --> 00:02:00,520
+uso de planless com pandas e, para você, nós usamos uma infinidade de pandas.
+
+29
+00:02:00,600 --> 00:02:05,940
+Você precisa instalar o plotline como dito aqui nas instruções que você também mais
+
+30
+00:02:05,940 --> 00:02:08,130
+tarde terá que instalar os abotoaduras.
+
+31
+00:02:08,130 --> 00:02:08,820
+Abotoaduras.
+
+32
+00:02:08,820 --> 00:02:13,390
+É a biblioteca que conecta a trama Lee com pandas.
+
+33
+00:02:13,510 --> 00:02:19,010
+E vou seguir em frente e ir à página web para abotoaduras.
+
+34
+00:02:19,050 --> 00:02:22,230
+E esta é a página da sua página para abotoaduras e abotoaduras basicamente.
+
+35
+00:02:22,410 --> 00:02:28,170
+É uma ferramenta de produtividade que lhe permite chamar rapidamente o enredo exatamente como você faria com pandas,
+
+36
+00:02:28,170 --> 00:02:34,120
+por exemplo, um método de trama de pontos de quadro de dados que esteja configurado, você criará uma visualização
+
+37
+00:02:34,120 --> 00:02:36,740
+interativa usando o enredo Lee em um aviso rápido.
+
+38
+00:02:36,750 --> 00:02:41,910
+Eu realmente sou um contribuidor para esta biblioteca e você pode realmente ver meu ramo mesclado aqui
+
+39
+00:02:41,910 --> 00:02:43,320
+em Jey, as importações aqui.
+
+40
+00:02:43,740 --> 00:02:48,750
+usar mancuernas de forma eficaz, a fim de criar realmente atraente interativo suas ações preguiçosas.
+
+41
+00:02:48,750 --> 00:02:54,030
+Mas, de qualquer forma, há tutoriais muito legais aqui sob mancuernos e vamos passar por alguns
+
+42
+00:02:54,060 --> 00:02:55,980
+desses tópicos e mostrar-lhe como realmente
+
+43
+00:02:56,270 --> 00:03:02,190
+E aqui é apenas um exemplo de U. K. taxas de troca e você pode ver que esta é uma superfície
+
+44
+00:03:02,190 --> 00:03:04,300
+3D e isso é feito diretamente fora de um quadro de dados.
+
+45
+00:03:04,320 --> 00:03:11,120
+Há algumas notas de lançamento aqui e depois há alguns links que a documentação acima acima aqui.
+
+46
+00:03:11,130 --> 00:03:11,760
+Tudo bem.
+
+47
+00:03:11,910 --> 00:03:16,740
+Vamos continuar e começar na próxima conferência, nós realmente vamos mostrar
+
+48
+00:03:17,010 --> 00:03:20,220
+como codificar visualizações interativas usando essas bibliotecas.
+
+49
+00:03:20,220 --> 00:03:22,080
+Obrigado a todos e eu vou ver você na próxima palestra

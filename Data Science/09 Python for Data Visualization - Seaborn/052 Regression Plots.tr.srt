@@ -1,0 +1,351 @@
+1
+00:00:05,190 --> 00:00:10,920
+Herkese merhaba ve seaborne için regresyon arsasının konferansına hoş geldiniz Seaborn, saldırganlık ve araziler için
+
+2
+00:00:10,920 --> 00:00:12,260
+birçok yetenekte bulunmaktadır.
+
+3
+00:00:12,270 --> 00:00:16,320
+Bununla birlikte, bu dersin makine öğrenme bölümüne kadar gerilemeyi gerçekten tartışmayacağız.
+
+4
+00:00:16,350 --> 00:00:22,590
+Şimdilik sadece L ve arsa fonksiyonunu L kapsayacaktır. M. plot, Seaborn ile doğrusal modelleri
+
+5
+00:00:22,670 --> 00:00:23,560
+görüntülemenizi sağlar.
+
+6
+00:00:23,730 --> 00:00:28,090
+Ayrıca, deniz kıyısındaki arazilerin en-boy oranını nasıl değiştireceğinizi ve değiştireceğinizi öğrenin.
+
+7
+00:00:28,140 --> 00:00:30,960
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+8
+00:00:31,020 --> 00:00:32,980
+Burada Jüpiter defterindeyim.
+
+9
+00:00:33,030 --> 00:00:37,550
+Matt çizgisinde, ithal bir deniz kenarında çalışmak istiyorum ve birlikte çalıştığım
+
+10
+00:00:37,550 --> 00:00:39,410
+ipuçları veri setini yükledim.
+
+11
+00:00:39,480 --> 00:00:46,020
+Git ve sana L-M çizgisini nasıl kullanacağını göster, sadece Esson'u bu L'yi aradığın çok basit
+
+12
+00:00:47,150 --> 00:00:56,850
+bir doğrusal model çizelgesi yapmak için kullan. M. çizimler ve daha sonra, y ekseni karşısında
+
+13
+00:00:56,850 --> 00:01:04,980
+x ekseni üzerinde istediğiniz özellik, arsa toplam faturası ve y ekseni üzerinde ilerleyip veri kaynağımızda çağırır ipuçları olacaktır.
+
+14
+00:01:05,120 --> 00:01:10,290
+Şimdi devam edin ve devam ederseniz, temelde çizgisel bir sığanın üzerine oturan bir
+
+15
+00:01:10,290 --> 00:01:17,340
+dağılım haritasına sahibiz ve kategorik bir özelliğe dayalı bazı ayrımların yapılmasını isterseniz, gerçekte hem övgüyü de belirleyebilirsiniz.
+
+16
+00:01:17,820 --> 00:01:20,400
+Örneğin, seks için Huie'yi belirtebiliriz.
+
+17
+00:01:21,060 --> 00:01:26,340
+Ve şimdi, esas itibarıyla iki dağılım grafiği ve bunun üzerinde iki doğrusal uyacak konumdasınız ve
+
+18
+00:01:26,400 --> 00:01:30,870
+bu temel olarak, bu arsa dışında çıkarmak için çok şey var, erkek ve
+
+19
+00:01:30,870 --> 00:01:35,190
+dişi esas olarak, toplam faturaya karşı ipucu olarak aynı doğrusal uygunluğa sahip.
+
+20
+00:01:35,520 --> 00:01:41,340
+Buraya dikkat etmeniz gereken bir şey, buradaki işaretleyicileri veya işaretçi türlerini etkilemesini
+
+21
+00:01:41,400 --> 00:01:44,900
+istediğiniz gibi, canlı şablon parametrelerini geçmeye başlayabilmeleri.
+
+22
+00:01:44,910 --> 00:01:53,400
+Böyle bir şey söylemeye başlayabilir ve içeri girip işaretçilerin eşit olduğunu söyleyebilirsiniz.
+
+23
+00:01:53,420 --> 00:01:57,080
+Bir renk tonuyla uğraşırken, ihtiyacımız olan iki ayrı işaret var.
+
+24
+00:01:57,150 --> 00:02:03,210
+V küçük harflerini söyleyebilirim ve bu belirteçler bu semboller haritadan artı lib işaretleyici sembollerinden geliyor.
+
+25
+00:02:03,240 --> 00:02:09,300
+Herhangi bir işaretleyici türü listesine geçebilir, böylece bir işaretçi için küçük O ve diğerine ait
+
+26
+00:02:09,630 --> 00:02:15,990
+Bu yüzden gidip çalıştırın, sonra erkekler için kadınlar ve çevreler için ters üçgenimiz olduğunu görüyoruz.
+
+27
+00:02:16,350 --> 00:02:22,110
+Şimdi, görebileceğiniz kadar büyük değilse, devam edin ve bir dağılım
+
+28
+00:02:22,170 --> 00:02:31,020
+altçizgi ks parametresi olarak bilinen nesneye eklemeye başlayın; temelde bunun anlamı, harita plot lib parametrelerini Piel'e
+
+29
+00:02:31,020 --> 00:02:35,710
+daha da doğrudan aktarmaktır. Bu dağılma çağrısı değil.
+
+30
+00:02:35,940 --> 00:02:37,520
+Seaborne bununla ne yapıyor.
+
+31
+00:02:37,560 --> 00:02:43,180
+S ve m l parsel aslında harita çizgisi lib çok kaputun altında çağırıyor olmasıdır.
+
+32
+00:02:43,260 --> 00:02:50,220
+için uğraştınız ve bu türdenleri vaka bazında inceleyebilirsiniz. Dolayısıyla belgelere gerektiği gibi başvurmanız gerekir.
+
+33
+00:02:50,220 --> 00:02:55,520
+Ve efekt yapmak isterseniz, doğrudan deniz kenarında yaşadığınız harita çizimini yapmak
+
+34
+00:02:55,620 --> 00:03:02,340
+Ama eğer bu dava scatterplot'u etkilemek istiyorsa, herhangi bir sözlüğe geçeceksin, böylece devam
+
+35
+00:03:02,340 --> 00:03:07,550
+edip sözlük vereceğim ve boyutu 100 gibi bir şeyle değiştirebilirim.
+
+36
+00:03:07,590 --> 00:03:10,000
+Ve bu aslında bu belirteçlerin boyutunu etkileyecektir.
+
+37
+00:03:10,030 --> 00:03:14,270
+Seni ve ben işaretçileri çok daha büyük yaptık gösterecek.
+
+38
+00:03:14,580 --> 00:03:20,940
+Bu aslında sadece harita haritası lib'e ve Seaborn'un kaputunun altında olan bitene bir çağrı.
+
+39
+00:03:20,940 --> 00:03:25,650
+Diğer bir deyişle, herhangi bir sözlüğü tabanı harita çizimi lib bağımsız değişkenleriyle geçiriyorsunuz ve bu
+
+40
+00:03:25,650 --> 00:03:25,850
+durumda.
+
+41
+00:03:25,890 --> 00:03:30,960
+Genel olarak dağılım çizgisinin boyutuna gelince, muhtemelen başınızın üstündeki bu tür şeyleri
+
+42
+00:03:30,960 --> 00:03:33,900
+hatırlamazsınız, ancak dokümantasyona atıf yapan referans budur.
+
+43
+00:03:33,900 --> 00:03:38,810
+Ve muhtemelen Seaborn ile bu derece özelleştiremeyeceksinizdir.
+
+44
+00:03:39,210 --> 00:03:43,430
+Bu tür işlemleri yapmadan önce verilerinizi öncelikle özelleştireceksiniz.
+
+45
+00:03:43,770 --> 00:03:46,060
+Hadi devam edin ve sana bir kaç seçenek daha göstereceğim.
+
+46
+00:03:46,170 --> 00:03:52,410
+Hugh tarafından ayrılmak yerine aslında bir ızgarayı
+
+47
+00:03:52,410 --> 00:03:59,500
+kullanabilirsiniz, böylece Asinus'un Ellen'i düşündüğünü söyleyerek daha fazlasını ekleyebilirsiniz.
+
+48
+00:03:59,610 --> 00:04:08,390
+Devam edin ve fatura ipucu ve verilerini kopyalayıp yapıştıralım ve ilerleyip yapacağız.
+
+49
+00:04:08,400 --> 00:04:16,080
+Heugh eşit renk tonu değiştiren seks gibi bir şey belirtmek yerine bunu gördükten sonra
+
+50
+00:04:16,500 --> 00:04:23,760
+aslında sütunlar için eşit seks çağırmak söyleyerek faktör veya ızgara arsa başlatmaya başlayabilirsiniz.
+
+51
+00:04:24,000 --> 00:04:29,060
+Ve şimdi burada cinsiyet kategorisine göre ayrılmış sütun parsellerini ayırmanız gerekiyor.
+
+52
+00:04:29,130 --> 00:04:31,110
+Yani kadınla karşı kadın.
+
+53
+00:04:31,110 --> 00:04:37,140
+Dolayısıyla, sütunlarla ayrılmış renkle ayırmak yerine satırlarda bu tür mantığa da
+
+54
+00:04:37,140 --> 00:04:38,040
+devam edebilirsiniz.
+
+55
+00:04:38,070 --> 00:04:45,510
+satırın zaman sütununa eşit olduğuna ve şimdi sıra ve zamanlarınıza eşit olduğunuzu söyleyebilirsiniz; bu, esas olarak, ızgara
+
+56
+00:04:46,400 --> 00:04:52,130
+çağrılarını ve yalnızca daha önce öğrendiğimiz Fassett grup çağrılarını yapıyor demektir. ızgara dersi.
+
+57
+00:04:52,140 --> 00:04:55,130
+Görmek için başka bir değişkene eklemek isterseniz,
+
+58
+00:04:55,200 --> 00:05:00,360
+Ama biraz daha otomatik, çünkü L-M arsa çağrısına sadece arama ve satır ekliyoruz.
+
+59
+00:05:00,360 --> 00:05:01,790
+Bu yüzden çok daha kolay hale getiriyor.
+
+60
+00:05:01,790 --> 00:05:05,220
+Şimdi her zaman Fassett ile başa çıkmak zorunda değiliz.
+
+61
+00:05:05,220 --> 00:05:11,250
+Şimdi eğer bir nedenden dolayı daha fazla değişken çizmek isterseniz, Heugh'un başka bir sütun
+
+62
+00:05:11,250 --> 00:05:14,750
+diyelim demek olduğuna benzer hugh arka ucunu ekleyebilirsiniz.
+
+63
+00:05:14,880 --> 00:05:22,920
+Gitmek istiyorum ve sütun, Perşembe Cuma Cumartesi ve Pazar sütun olduğu gün olduğunu söylemek istiyorum.
+
+64
+00:05:22,920 --> 00:05:25,380
+Bu renk tonunu seks olarak değiştirecek.
+
+65
+00:05:25,520 --> 00:05:31,040
+Dolayısıyla bu bize oldukça bilgilendirici arsa verecektir ancak burada çok fazla bilgi olacak, böylece burada çok
+
+66
+00:05:31,070 --> 00:05:33,900
+şey olduğunu ve bir sürü bilginin olduğunu görebilirsiniz.
+
+67
+00:05:33,900 --> 00:05:38,610
+Dolayısıyla, muhtemelen sadece ilerlemeye devam edip satırın sopadan kaldırılmasını ve yalnızca bir sütun geri
+
+68
+00:05:40,620 --> 00:05:46,290
+almasını ya da bir Roback'in özür dilemesini istemekle birlikte, burada güzel bir arsa buluyorum, ancak sorun,
+
+69
+00:05:46,290 --> 00:05:48,430
+boyut ve boyutun yanlış göründüğü yönündedir.
+
+70
+00:05:48,660 --> 00:05:54,990
+Bu yüzden Seaborn rakamları boyut ve en / boy oranlarını boyut ve görünüm parametreleriyle değiştirilecek.
+
+71
+00:05:55,290 --> 00:06:04,380
+Böylece deniz otobüsü çağrısına girersiniz ve sonra en-boy oranı en iyi şekilde değiştirebilir ve en-boy oranı
+
+72
+00:06:04,380 --> 00:06:07,170
+0 olarak değiştirebilirsiniz. 6.
+
+73
+00:06:07,170 --> 00:06:11,460
+Ve bu, bu ayrı ızgaraların her birinin yüksekliği ile genişliği arasındaki oranı ifade eder.
+
+74
+00:06:11,700 --> 00:06:18,370
+Ve sonra size 8 boyutunu belirlemek için boyutlarını değiştirmek için boyut belirtebilirsiniz.
+
+75
+00:06:18,870 --> 00:06:23,520
+Ve burada, bunun boyut ve boyut oranını etkilemeye başladı.
+
+76
+00:06:24,000 --> 00:06:27,960
+Ve şimdi muhtemelen yazı tipi boyutunu nasıl değiştireceğimi merak ediyorsun, okumak için hala çok
+
+77
+00:06:27,960 --> 00:06:30,150
+küçük veya estetiği daha da nasıl kontrol edeceğim.
+
+78
+00:06:30,270 --> 00:06:35,700
+Bunu, bunu yazı tipi stili boyama gibi komplonun bu
+
+79
+00:06:35,700 --> 00:06:42,780
+daha temel özelliklerini nasıl kontrol edebileceğinizi göstereceğimiz, önümüzdeki stil ve renk
+
+80
+00:06:42,780 --> 00:06:43,950
+konferansına yönlendirmektir. Bu dersle ilgili olarak, çok fazla işimiz bitti.
+
+81
+00:06:44,160 --> 00:06:46,950
+Bundan çıkmanızı isteyen ana şey, doğrusal bir model
+
+82
+00:06:46,980 --> 00:06:51,360
+çizmeyi aramak için yalnızca s ve slm çizimini arayıp xy sütununu aktardığınız ve
+
+83
+00:06:51,410 --> 00:06:58,140
+verilerinizi ayarladığı ve daha sonra ayar gibi bu daha gelişmiş özellikler için Hugh'yu geçirebilmesidir işaretçi boyutu veya işaretçi türünü değiştirme.
+
+84
+00:06:58,140 --> 00:07:02,130
+Devam edin ve not defterini ve not defterindeki dokümantasyon bağlantısını referans alın.
+
+85
+00:07:02,130 --> 00:07:06,420
+Tamam.
+
+86
+00:07:06,570 --> 00:07:07,050
+Herhangi bir sorunuz varsa, Q &amp; A forumunu yayınlamaktan çekinmeyin ve size yardım etmekten memnuniyet duyarız.
+
+87
+00:07:07,260 --> 00:07:11,450
+Teşekkür ederim ve bir sonraki konuşmada görüşürüz.
+
+88
+00:07:11,460 --> 00:07:13,560
+&nbsp;

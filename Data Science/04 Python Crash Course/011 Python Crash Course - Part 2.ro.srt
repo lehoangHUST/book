@@ -1,0 +1,899 @@
+1
+00:00:05,220 --> 00:00:09,220
+Bună ziua tuturor și bine ați venit la partea a doua a cursului de prăbușire Python.
+
+2
+00:00:09,240 --> 00:00:12,240
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+3
+00:00:12,660 --> 00:00:12,900
+In regula.
+
+4
+00:00:12,900 --> 00:00:14,630
+Aici sunt la un cip într-un notebook.
+
+5
+00:00:14,640 --> 00:00:22,350
+Ultima dată când am oprit cum să luăm elemente dintr-o listă imbricată, am trecut peste șiruri și liste, iar acestea sunt legate una de alta,
+
+6
+00:00:22,350 --> 00:00:26,730
+deoarece ele sunt de fapt doar secvențe de elemente și puteți utiliza aceeași
+
+7
+00:00:26,760 --> 00:00:33,120
+notație de index, fie pe un șir, fie pe o listă pe care tocmai ați trecut în paranteze indiciile reale pe
+
+8
+00:00:33,210 --> 00:00:38,310
+care le doriți și îngroziți elementele care se găsesc la acel index sau felie din index.
+
+9
+00:00:38,310 --> 00:00:41,950
+Să mergem mai departe și să schimbăm vitezele să ne gândim la dicționare.
+
+10
+00:00:42,030 --> 00:00:49,650
+Puteți crea un dicționar în Python, specificând paranteze curbate, iar apoi veți avea o cheie de colon
+
+11
+00:00:50,010 --> 00:00:53,330
+și valoarea care corespunde acelei chei.
+
+12
+00:00:53,430 --> 00:00:54,440
+Arătați un alt exemplu.
+
+13
+00:00:54,450 --> 00:01:04,410
+Vom merge mai departe și vom face două colon și valoarea pentru Q2 va fi unul până la trei dicționare care se comportă ca perechi de valori
+
+14
+00:01:04,410 --> 00:01:09,830
+cheie, la fel ca o tabelă hash, în loc să dețină elemente într-o secvență.
+
+15
+00:01:09,840 --> 00:01:14,630
+Ele dețin elemente prin chei și apoi prin valorile lor reale.
+
+16
+00:01:14,640 --> 00:01:20,910
+Deci, în loc de a spune ceva de genul 0, care nu va funcționa pentru că nu există nici
+
+17
+00:01:20,910 --> 00:01:26,250
+o cheie acolo și nu susține că într-o poziție de secvență reală, în care veți ajunge
+
+18
+00:01:26,250 --> 00:01:30,420
+să treceți în nota bracket-ului, este realitatea însăși și nu returnați valoarea.
+
+19
+00:01:30,420 --> 00:01:36,000
+De exemplu, dacă ați dori să obțineți numărul 123 aici, veți apela dicționarul dvs. și apoi
+
+20
+00:01:36,000 --> 00:01:38,200
+veți trece cheia corespunzătoare acestei valori.
+
+21
+00:01:38,250 --> 00:01:45,150
+În acest caz, două două și trei dicționare pot lua în esență orice elemente ca valori.
+
+22
+00:01:45,240 --> 00:01:51,120
+Deci putem să avem o cheie K-1 și apoi să aveți o altă listă aici.
+
+23
+00:01:51,150 --> 00:01:52,900
+Unu doi trei.
+
+24
+00:01:53,790 --> 00:02:00,170
+Și acum dacă sun un dicționar, am o cheie K K și apoi lista 2:59 are elementul.
+
+25
+00:02:00,330 --> 00:02:04,590
+Așa că pot să-l sun pe K-1 și să întorc lista aia câte două.
+
+26
+00:02:04,890 --> 00:02:08,740
+Și acum că am această listă, pot să fac indexarea normală.
+
+27
+00:02:08,880 --> 00:02:11,250
+Asta nu e cheia în afara listei.
+
+28
+00:02:11,580 --> 00:02:13,600
+Să mergem mai departe și să luăm două.
+
+29
+00:02:13,680 --> 00:02:19,230
+Care va fi la indexul 1 și acest lucru este în esență același lucru ca separarea în două etape.
+
+30
+00:02:19,650 --> 00:02:22,260
+Deci ai putea să faci ceva de genul ăsta.
+
+31
+00:02:22,260 --> 00:02:26,030
+Lista mea este egală cu acel element la T1.
+
+32
+00:02:26,310 --> 00:02:31,800
+Și apoi, dacă te uiți la lista mea care a fost lista înainte și utilizați Notch
+
+33
+00:02:31,800 --> 00:02:39,090
+brechen pentru a apuca orice vrei pentru lista respectivă sau faci totul într-un singur pas de-a lungul aceleiași linii și veți avea
+
+34
+00:02:39,090 --> 00:02:45,000
+ceva similar cu acest lucru în dvs. exerciții sau vom avea un dictionar imbricat și o listă imbricată.
+
+35
+00:02:45,070 --> 00:02:49,620
+Mă voi arăta încă un exemplu în care puteți avea
+
+36
+00:02:49,620 --> 00:02:58,180
+într-adevăr un dictionar imbricat în interiorul altui dicționar, așa că pot spune pas-ul colonului K-1 în alt dicționar, cu setul de
+
+37
+00:02:58,260 --> 00:03:04,140
+paranteze curbate acolo pasand ceva asemănător colonului interior și apoi o listă cu valori.
+
+38
+00:03:04,140 --> 00:03:06,100
+Unu doi trei.
+
+39
+00:03:06,120 --> 00:03:09,010
+Deci, să spunem că vreau să apuc acest număr doi.
+
+40
+00:03:09,390 --> 00:03:15,450
+Primul lucru pe care trebuie sa-l faci este sa suni K-1 si returneaza acest dictionar.
+
+41
+00:03:15,450 --> 00:03:20,490
+Apoi am nevoie de o chestie interioară de apel de pe asta, așa că pot face asta dintr-un alt set de paranteze
+
+42
+00:03:20,490 --> 00:03:23,310
+sau aș putea să-l împărțesc în mai mulți pași folosind atribuirea variabilelor.
+
+43
+00:03:23,310 --> 00:03:24,950
+Dar vom face totul într-o singură linie.
+
+44
+00:03:25,440 --> 00:03:32,640
+Și acum am unu doi doi, trei și doi este faptul că cel de-al doilea indice care este 0 1 și care îl ia pe numărul
+
+45
+00:03:32,640 --> 00:03:33,230
+doi acolo.
+
+46
+00:03:33,570 --> 00:03:36,770
+Din nou, dicționarele nu păstrează nici o ordine.
+
+47
+00:03:36,770 --> 00:03:40,410
+Ele sunt doar maparea perechilor de valoare cheie.
+
+48
+00:03:40,410 --> 00:03:44,550
+Acum să vorbim despre miliarde de booleani și Python sunt destul de simple.
+
+49
+00:03:44,550 --> 00:03:50,610
+Este adevărat și apoi fals cu capitalizare T și capitalizarea f.
+
+50
+00:03:50,640 --> 00:03:54,930
+OK, vom merge mai departe și vom atinge aceste lucruri atunci când vorbim de operatori de comparație.
+
+51
+00:03:54,960 --> 00:03:58,010
+Dar hai să vorbim despre tuple și apoi se stabilește.
+
+52
+00:03:58,110 --> 00:04:05,460
+Amintiți-vă că o listă este definită doar ca o secvență de caractere în interiorul parantezelor pătrate separate
+
+53
+00:04:05,460 --> 00:04:06,630
+prin virgule.
+
+54
+00:04:06,930 --> 00:04:14,850
+Și puteți să continuați și să luați elemente din lista respectivă, utilizând indexarea unei tuple este foarte asemănătoare, cu excepția locului în paranteze
+
+55
+00:04:14,850 --> 00:04:22,140
+pătrate pe care le utilizați paranteze și puteți să reînsufleți din nou doar elemente de pe acel tuplu ca și cum
+
+56
+00:04:22,140 --> 00:04:24,980
+ar fi o listă care utilizează notația indexului.
+
+57
+00:04:25,020 --> 00:04:30,840
+Iată diferența cheie dintre o tuplă a acestor paranteze și o listă a parantezelor pătrate.
+
+58
+00:04:31,410 --> 00:04:40,800
+Dacă mă întorc la lista mea și încerc să realochez primul articol ca fiind cuvântul buze noi. Permiteți-mi să rulez din
+
+59
+00:04:40,800 --> 00:04:44,060
+nou, deoarece am realistat întreaga listă.
+
+60
+00:04:44,220 --> 00:04:46,410
+Să verificăm din nou lista.
+
+61
+00:04:46,410 --> 00:04:46,620
+In regula.
+
+62
+00:04:46,620 --> 00:04:48,850
+Deci, dacă îmi tipăresc lista, am două și trei.
+
+63
+00:04:48,990 --> 00:04:50,690
+Luați primul element din lista respectivă.
+
+64
+00:04:50,700 --> 00:04:52,060
+Zero.
+
+65
+00:04:52,110 --> 00:04:52,890
+Perfect.
+
+66
+00:04:52,890 --> 00:04:57,750
+Acum, permiteți-mi să regele zero pentru a fi nou, așa cum am făcut în prelegerea precedentă.
+
+67
+00:04:57,750 --> 00:05:06,210
+Și acum pentru o verificare a listei mele am reassigned elementul 0 pentru a fi nou și apoi la 3 dacă vreau să fac asta pentru
+
+68
+00:05:06,210 --> 00:05:06,730
+tuple.
+
+69
+00:05:06,730 --> 00:05:12,540
+Cu toate acestea, dacă ne uităm la tupla mea este una de două să zicem să luăm 0 în loc să fie egală cu cea nouă
+
+70
+00:05:12,540 --> 00:05:13,870
+o să am o eroare.
+
+71
+00:05:14,220 --> 00:05:18,780
+Și acest lucru se datorează faptului că tuplurile sunt imuabile și nu suportă atribuirea articolelor.
+
+72
+00:05:18,780 --> 00:05:23,250
+Vreau să spun că nu poți mutați elementele din interiorul unei tuple.
+
+73
+00:05:24,440 --> 00:05:29,610
+Ceea ce înseamnă că veți dori să utilizați o tuplă atunci când doriți să vă asigurați că un utilizator nu poate
+
+74
+00:05:29,670 --> 00:05:31,690
+schimba elementele din interiorul secvenței de obiecte.
+
+75
+00:05:31,740 --> 00:05:37,980
+Și aceasta este principala diferență dintre o tuplă și o listă o tuplă este imuabilă și o listă este mutabilă, ceea ce înseamnă că
+
+76
+00:05:38,220 --> 00:05:40,360
+poți schimba elementele din interiorul unei liste.
+
+77
+00:05:40,500 --> 00:05:43,110
+Nu poți face acelasi lucru dacă ai o trupă.
+
+78
+00:05:43,110 --> 00:05:43,740
+In regula.
+
+79
+00:05:43,860 --> 00:05:51,360
+Acum, pentru a discuta seturi în Python, un set este o colecție de elemente unice.
+
+80
+00:05:51,360 --> 00:05:55,580
+Și se pare același lucru cu parantezele curbate ca un dicționar, cu excepția faptului că
+
+81
+00:05:56,850 --> 00:05:58,590
+nu are colonii, ci doar elemente.
+
+82
+00:05:58,590 --> 00:06:03,310
+Acum observați ce se întâmplă dacă scriu câteva dintre aceste numere de mai multe ori.
+
+83
+00:06:04,650 --> 00:06:10,130
+Încă mai primesc aceeași ieșire deoarece un set este definit numai de elemente unice.
+
+84
+00:06:10,290 --> 00:06:16,650
+Înțelesul dacă încerc să pun în multipli aceleași elemente se va reduce la
+
+85
+00:06:17,090 --> 00:06:26,980
+elementele unice și puteți de fapt să apelați funcția setată și să pasați o listă pentru a apuca elementele unice pentru dvs.
+
+86
+00:06:27,040 --> 00:06:33,780
+Așa că trec o grămadă de elemente repetate în funcția de setare care returnează un set de elemente unice.
+
+87
+00:06:34,410 --> 00:06:40,060
+Dacă doriți să adăugați elemente la un set puteți merge mai departe și spuneți doar da.
+
+88
+00:06:40,080 --> 00:06:47,790
+Unu doi trei veți spune s Veți folosi metoda de adăugare pe ea pusă în elementul pe care doriți să-l adăugați, de
+
+89
+00:06:47,790 --> 00:06:48,770
+exemplu 5.
+
+90
+00:06:48,900 --> 00:06:52,970
+Și dacă verificăm din nou setul, obținem 1 2 3 5.
+
+91
+00:06:53,160 --> 00:07:00,600
+Dacă încerc să adaug 5 din nou, nu va recupera o eroare, dar o va păstra la fel, deoarece în interiorul
+
+92
+00:07:00,600 --> 00:07:04,160
+unui set este permisă o singură instanță unică de 5.
+
+93
+00:07:04,170 --> 00:07:04,470
+In regula.
+
+94
+00:07:04,500 --> 00:07:07,440
+Chiar dorim să lucrăm cu seturi la toate într-adevăr în acest curs.
+
+95
+00:07:07,440 --> 00:07:09,010
+Dar vreau să fiți conștienți de ele.
+
+96
+00:07:09,210 --> 00:07:11,940
+Ele sunt doar o colecție de elemente unice.
+
+97
+00:07:12,170 --> 00:07:12,780
+O.K.
+
+98
+00:07:13,080 --> 00:07:18,620
+Acum, să vorbim despre compararea operatorilor operatori de comparație vă permite să comparați două elemente unul
+
+99
+00:07:18,620 --> 00:07:19,440
+cu celălalt.
+
+100
+00:07:19,440 --> 00:07:23,320
+Acestea sunt lucruri, cum ar fi mai mult decât mai puțin decât egal cu etc ..
+
+101
+00:07:24,210 --> 00:07:26,820
+De exemplu, intrați și creați o celulă nouă.
+
+102
+00:07:26,820 --> 00:07:33,060
+Pot să spun că este mai mare de două și va întoarce o valoare booleană, fie adevărată, fie falsă, în funcție
+
+103
+00:07:33,060 --> 00:07:34,240
+de declarația dvs.
+
+104
+00:07:34,250 --> 00:07:36,990
+Deci unul mai mare de două este fals.
+
+105
+00:07:37,040 --> 00:07:39,700
+1 mai puțin de 2 este adevărat.
+
+106
+00:07:40,200 --> 00:07:47,980
+Și puteți face același lucru pentru mai mult sau egal sau mai mic sau egal cu.
+
+107
+00:07:48,000 --> 00:07:53,100
+De asemenea, puteți verifica egalitatea prin două semne egale și observați cum vă ajută sintaxa
+
+108
+00:07:53,100 --> 00:07:54,480
+de evidențiere aici.
+
+109
+00:07:54,540 --> 00:07:55,770
+Deci este unul egal cu unul.
+
+110
+00:07:55,800 --> 00:07:56,880
+Asta e adevarat.
+
+111
+00:07:57,210 --> 00:07:59,410
+Este una egală cu două care este falsă.
+
+112
+00:07:59,430 --> 00:08:00,670
+Neadevarat.
+
+113
+00:08:00,690 --> 00:08:03,650
+Acum, amintiți-vă că doriți să utilizați două semne egale.
+
+114
+00:08:03,660 --> 00:08:07,970
+Dacă încercați să faceți ceva de genul acesta, acesta va fi o eroare deoarece Python
+
+115
+00:08:07,980 --> 00:08:12,190
+crede că încercați să efectuați o alocare variabilă, nu o operație de comparație reală.
+
+116
+00:08:12,330 --> 00:08:14,550
+Dacă doriți să verificați calitatea pe care o faceți.
+
+117
+00:08:14,550 --> 00:08:16,880
+Semnul de semn de semnal egal.
+
+118
+00:08:16,920 --> 00:08:19,060
+Deci unul nu este egal cu trei.
+
+119
+00:08:19,290 --> 00:08:20,500
+Ei bine, este adevărat.
+
+120
+00:08:20,550 --> 00:08:25,830
+Este adevărat că unul nu este egal cu trei și puteți face același lucru nu doar cu numere, ci și cu
+
+121
+00:08:27,180 --> 00:08:28,130
+șiruri de caractere.
+
+122
+00:08:28,170 --> 00:08:30,410
+Deci, este foarte mare să cumpere.
+
+123
+00:08:30,450 --> 00:08:31,070
+E fals.
+
+124
+00:08:31,080 --> 00:08:33,780
+Nu este același lucru dacă nu este egal cu acesta.
+
+125
+00:08:33,810 --> 00:08:35,450
+Ei bine, este adevărat.
+
+126
+00:08:35,460 --> 00:08:40,380
+Acum, să vorbim despre combinarea acestor operatori de comparație cu un anumit operator
+
+127
+00:08:40,400 --> 00:08:42,900
+logic precum și și apoi sau.
+
+128
+00:08:43,010 --> 00:08:46,790
+Chiar acum ne uităm la o condiție este una mai mică decât două.
+
+129
+00:08:47,040 --> 00:08:48,300
+Ei bine, este adevărat.
+
+130
+00:08:48,350 --> 00:08:53,900
+Dacă am vrea să o combinăm cu o altă condiție, cum ar fi două mai puțin de trei, putem folosi cuvântul cheie
+
+131
+00:08:53,970 --> 00:08:55,780
+și pentru a face acest lucru.
+
+132
+00:08:55,800 --> 00:09:00,790
+Aș spune că este una mai mică de două și este la mai puțin de trei.
+
+133
+00:09:01,080 --> 00:09:02,890
+Și asta se va întoarce.
+
+134
+00:09:02,940 --> 00:09:06,780
+Cu toate acestea, dacă una dintre acestea este trecută ca fiind falsă, este una mai mică de două.
+
+135
+00:09:06,810 --> 00:09:09,520
+Ei bine, este adevărat și este mult mai mare decât trei.
+
+136
+00:09:09,560 --> 00:09:10,620
+Să falsăm.
+
+137
+00:09:10,620 --> 00:09:14,970
+Deci, aveți un adevărat și fals sau reveniți fals.
+
+138
+00:09:14,970 --> 00:09:18,140
+Deci, dacă și operatorul trebuie să fie adevărate toate condițiile.
+
+139
+00:09:18,410 --> 00:09:22,440
+Și eu personal vreau să înfășoară aceste afirmații în paranteze.
+
+140
+00:09:22,620 --> 00:09:24,020
+Deci, sunt mai ușor de citit.
+
+141
+00:09:24,030 --> 00:09:28,290
+Nu trebuie să faceți acest lucru, dar vă recomand că faceți acest lucru, deoarece este mai
+
+142
+00:09:28,290 --> 00:09:31,320
+ușor de citit atunci când reveniți mai târziu la acest cod.
+
+143
+00:09:31,320 --> 00:09:37,250
+Aveți, de asemenea, operatorul OR care este cu adevărat similar, cu excepția acum în acest caz, doar unul dintre ele trebuie să
+
+144
+00:09:37,250 --> 00:09:37,790
+fie adevărat.
+
+145
+00:09:37,860 --> 00:09:42,810
+Așadar, putem spune că este mai puțin de două ori este prea mare decât trei.
+
+146
+00:09:42,990 --> 00:09:45,330
+Ei bine, una dintre acestea este adevărată.
+
+147
+00:09:45,330 --> 00:09:46,410
+Primul este.
+
+148
+00:09:46,470 --> 00:09:47,990
+Deci, atunci ne întoarcem cu adevărat.
+
+149
+00:09:48,170 --> 00:09:54,300
+Și de fapt, puteți să-i stivuiți unul pe celălalt astfel încât să puteți spune în altul sau aici pentru noi
+
+150
+00:09:54,300 --> 00:09:56,220
+unul este egal cu unul etc.
+
+151
+00:09:56,410 --> 00:10:00,210
+Și dacă vrei să înțelegi cu adevărat aceste lucruri,
+
+152
+00:10:01,020 --> 00:10:14,130
+poți de fapt doar valoarea Passwords valută booleană este atât de adevărată și adevărată încât se întoarce Adevărat se întoarce adevărat și fals Fals Adevărat sau fals este adevărat și atunci asta este în esență.
+
+153
+00:10:14,140 --> 00:10:15,030
+Deci, doar sau.
+
+154
+00:10:15,110 --> 00:10:24,990
+Acum, hai să mergem înainte și să discutăm câteva blocuri de coduri vorbind despre dacă altceva ar fi declarații.
+
+155
+00:10:25,370 --> 00:10:32,060
+De multe ori veți dori să executați codul dacă o condiție este adevărată și puteți utiliza dacă ați lăsat o
+
+156
+00:10:32,090 --> 00:10:34,450
+declarație L pentru a face acest lucru.
+
+157
+00:10:34,460 --> 00:10:40,830
+Să presupunem că avem o condiție dacă una este mai mică de două.
+
+158
+00:10:41,180 --> 00:10:45,510
+Vrem să realizăm un fel de acțiune ca o declarație de tipărire.
+
+159
+00:10:45,710 --> 00:10:47,620
+Vom merge mai departe și vom spune Yep.
+
+160
+00:10:48,470 --> 00:10:55,370
+Deci, spunem daca aceasta conditie este adevarata de colon si observati ca exista un bloc de spatii libere aici si asta este
+
+161
+00:10:55,370 --> 00:10:56,990
+foarte important in Python.
+
+162
+00:10:57,020 --> 00:11:02,030
+Python nu utilizează paranteze pentru a separa blocul de declarații de execuție a codului.
+
+163
+00:11:02,030 --> 00:11:03,800
+Utilizează spațiul alb.
+
+164
+00:11:03,890 --> 00:11:08,640
+Și dacă introduceți doar aici, după un colon, va face automat indentarea pentru tine în Jupiter.
+
+165
+00:11:08,930 --> 00:11:12,920
+Iar cele mai multe idei care sprijină Python vor face același lucru.
+
+166
+00:11:12,920 --> 00:11:13,590
+OK, așa am făcut-o.
+
+167
+00:11:13,610 --> 00:11:24,290
+Dacă unul este mai mic decât pentru a efectua unele acțiuni și în esență, asta este doar spune acest lucru dacă adevăratul tipar de imprimare
+
+168
+00:11:24,590 --> 00:11:26,260
+efectua cod etc.
+
+169
+00:11:26,390 --> 00:11:34,340
+Sau poți să faci doar lucruri cum ar fi două plus două, două plus două, etc.
+
+170
+00:11:34,360 --> 00:11:37,020
+Și atunci când vedeți X veți observa că sunt patru.
+
+171
+00:11:37,100 --> 00:11:38,290
+Deci, asta e doar o declarație.
+
+172
+00:11:38,300 --> 00:11:44,680
+Deci, dacă o anumită condiție este adevărată, colonul execută blocul de cod care este indentat sub el.
+
+173
+00:11:44,680 --> 00:11:45,470
+In regula.
+
+174
+00:11:45,620 --> 00:11:49,240
+Acum vorbiți despre alte operații pe care le putem face.
+
+175
+00:11:49,520 --> 00:11:54,860
+Să spunem că vrem să verificăm mai multe condiții sau să spunem că vrem să avem ceva în cazul în care nu
+
+176
+00:11:54,860 --> 00:11:55,600
+este adevărat.
+
+177
+00:11:55,670 --> 00:12:12,400
+Deci, voi spune dacă unul este egal cu amprentele lui Supe, mai întîi Colan imprimă ultima.
+
+178
+00:12:12,440 --> 00:12:19,460
+Și ceea ce va face acest lucru va spune dacă această condiție este adevărată executați acest cod altfel.
+
+179
+00:12:19,550 --> 00:12:26,180
+Sau altfel, dacă niciunul dintre lucrurile de mai sus nu este adevărat și observați cum altceva se aliniază cu instrucțiunea if se
+
+180
+00:12:26,240 --> 00:12:28,230
+știe că sunt legate între ele.
+
+181
+00:12:28,330 --> 00:12:35,300
+Colin Crantz a trecut astfel încât dacă execut acest cod se termină până când execut dacă merg înainte și comută
+
+182
+00:12:35,300 --> 00:12:39,970
+acest lucru, astfel încât prima condiție este adevărată este mai întâi finalizată.
+
+183
+00:12:39,980 --> 00:12:45,350
+Acum, poate doriți să verificați mai multe condiții, nu doar o condiție și apoi o altă declarație.
+
+184
+00:12:45,770 --> 00:12:50,710
+Aici puteți folosi stânga pentru a verifica mai multe condiții.
+
+185
+00:12:51,530 --> 00:12:52,350
+Deci poți să mergi mai departe.
+
+186
+00:12:52,370 --> 00:12:53,320
+Du-te și spune ceva de genul.
+
+187
+00:12:53,350 --> 00:12:56,850
+Elif 3 este egal cu 3.
+
+188
+00:12:56,870 --> 00:12:59,860
+Acum hai să intrăm și să schimbăm primul care să fie din nou fals.
+
+189
+00:13:00,200 --> 00:13:04,660
+Vom imprima altceva care va tipări la mijloc.
+
+190
+00:13:04,670 --> 00:13:05,030
+In regula.
+
+191
+00:13:05,030 --> 00:13:07,920
+Deci, să mergem mai departe și să fugim de asta și să distrugem ce se întâmplă.
+
+192
+00:13:07,930 --> 00:13:14,630
+Python face doar asta, spunând că dacă această condiție este adevărată, executați acest bloc de cod altfel.
+
+193
+00:13:14,750 --> 00:13:18,030
+Sau dacă această condiție este adevărată.
+
+194
+00:13:18,230 --> 00:13:20,820
+Executați alt cod de blocare.
+
+195
+00:13:20,840 --> 00:13:26,630
+Dacă niciuna dintre condițiile de mai sus nu este adevărată, executați acest cod bloc și puteți păstra stivuirea cât mai multe afirmații
+
+196
+00:13:26,960 --> 00:13:29,910
+pe care le doriți, astfel încât să puteți spune alta aici.
+
+197
+00:13:30,260 --> 00:13:38,210
+Elif va ieși și va spune dacă patru sunt egale cu patru secunde Crantz.
+
+198
+00:13:38,240 --> 00:13:38,530
+In regula.
+
+199
+00:13:38,530 --> 00:13:39,990
+Și observați ce se întâmplă aici.
+
+200
+00:13:40,220 --> 00:13:43,500
+Chiar dacă acest lucru este adevărat, trei sunt egale cu trei.
+
+201
+00:13:43,580 --> 00:13:47,580
+Vom executa doar prima instanță a unei condiții fiind adevărată.
+
+202
+00:13:47,660 --> 00:13:52,190
+Și este important să țineți minte când folosiți dacă declarațiile lui
+
+203
+00:13:52,190 --> 00:13:56,380
+elif vor executa prima condiție adevărată și asta este.
+
+204
+00:13:56,420 --> 00:13:56,960
+In regula.
+
+205
+00:13:57,320 --> 00:14:03,140
+Asta e pentru această parte 2 seriile de lecții care vor veni în continuare, vom începe să discutăm pentru bucle în timp ce
+
+206
+00:14:03,230 --> 00:14:05,310
+bucle și apoi alte funcții în Python.
+
+207
+00:14:05,690 --> 00:14:06,100
+O.K.
+
+208
+00:14:06,140 --> 00:14:12,050
+Ca o scurtă trecere în revistă a ceea ce am făcut, ne-am îndreptat spre dictionarele de top care din nou sunt
+
+209
+00:14:12,050 --> 00:14:15,880
+doar perechi de valoare cheie și puteți apuca valorile prin introducerea cheilor.
+
+210
+00:14:15,970 --> 00:14:20,340
+Îmi amintesc că aveți dictionare imbricate sau liste imbricate în interiorul unui dicționar.
+
+211
+00:14:20,780 --> 00:14:23,290
+Acum avem valori booleene adevărate și false.
+
+212
+00:14:23,420 --> 00:14:27,170
+Avem liste de tuple care sunt imuabile.
+
+213
+00:14:27,440 --> 00:14:32,190
+Foarte similar cu listele, cu excepția faptului că nu poți merge și schimbi lucrurile odată ce se află în
+
+214
+00:14:32,190 --> 00:14:34,670
+interiorul unei tuple, deoarece tuplul nu suportă re-alocarea articolelor.
+
+215
+00:14:34,670 --> 00:14:39,500
+Avem seturi care îmi amintesc seturile sunt doar o colecție de elemente unice.
+
+216
+00:14:39,500 --> 00:14:45,040
+Deci, dacă aveți o grămadă de elemente repetate și aveți un set, acestea sunt doar cele unice.
+
+217
+00:14:45,410 --> 00:14:50,780
+Acum, avem operatori de comparație mai mari decât mai puțin decât egali sau egali cu mai puțin egali
+
+218
+00:14:50,780 --> 00:14:53,080
+cu verificarea egalității și apoi verificați inegalitatea.
+
+219
+00:14:53,120 --> 00:14:54,940
+Și puteți face același lucru pentru șiruri de caractere.
+
+220
+00:14:55,010 --> 00:15:00,830
+Aveți acești operatori logici și apoi sau puteți compara mai multe declarații condiționale.
+
+221
+00:15:01,070 --> 00:15:06,620
+Și apoi aveți logica dacă elefant altceva, care vă permite să tip de stiva și să efectueze
+
+222
+00:15:06,620 --> 00:15:10,230
+blocuri de cod bazate pe o anumită condiție fiind churned sus.
+
+223
+00:15:10,340 --> 00:15:11,420
+In regula.
+
+224
+00:15:11,450 --> 00:15:12,730
+Sper să vă bucurați de această prelegere.
+
+225
+00:15:12,740 --> 00:15:14,060
+Ne vedem la următoarea.

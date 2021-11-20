@@ -1,0 +1,487 @@
+1
+00:00:05,190 --> 00:00:10,770
+Olá a todos e seja bem vindo ao estado de exibição das panteras, as soluções de exercícios conferem essa palestra.
+
+2
+00:00:10,830 --> 00:00:13,630
+Nós vamos examinar as soluções para o pand do estado de sua vida.
+
+3
+00:00:13,680 --> 00:00:15,220
+Faça perguntas sobre o exercício.
+
+4
+00:00:15,240 --> 00:00:18,050
+Avançemos e entremos no caderno Jupiter para começar.
+
+5
+00:00:18,050 --> 00:00:19,810
+Tudo bem aqui estou no caderno.
+
+6
+00:00:19,830 --> 00:00:27,330
+Eu vou seguir em frente e executar as primeiras células de código para ler o arquivo C3P D3 configurar todas as
+
+7
+00:00:27,330 --> 00:00:29,500
+importações corretamente e verificar a cabeça.
+
+8
+00:00:29,880 --> 00:00:30,170
+Tudo bem.
+
+9
+00:00:30,180 --> 00:00:34,790
+A próxima coisa que eu queria fazer era recriar um diagrama de dispersão de B versus um.
+
+10
+00:00:34,830 --> 00:00:36,380
+Então, apenas essas duas colunas.
+
+11
+00:00:36,720 --> 00:00:46,770
+Avançemos e façamos isso dizendo que D-3 plot plot scatter e então vou entrar e especificar que eu quero no meu eixo
+
+12
+00:00:47,010 --> 00:00:52,970
+x a coluna A e no meu eixo eu quero a coluna B.
+
+13
+00:00:53,210 --> 00:00:55,810
+Vamos ver o que parece.
+
+14
+00:00:56,370 --> 00:00:58,700
+E este deve ser o EF 3.
+
+15
+00:00:58,700 --> 00:00:59,610
+Aqui vamos nós.
+
+16
+00:00:59,610 --> 00:01:03,220
+Então, estou obtendo uma trama similar, exceto que algo foi sabido.
+
+17
+00:01:03,330 --> 00:01:07,410
+Veja se você pode descobrir como esticá-lo de forma semelhante a essa trama.
+
+18
+00:01:07,410 --> 00:01:13,680
+E, à medida que passamos na palestra, você pode realmente apenas passar o tamanho do figo diretamente para esse argumento
+
+19
+00:01:13,710 --> 00:01:14,680
+como um parâmetro.
+
+20
+00:01:15,030 --> 00:01:16,950
+E podemos esticá-lo.
+
+21
+00:01:17,000 --> 00:01:23,030
+De vez em quando, outra coisa a notar aqui é que o tamanho desses pontos é um pouco maior.
+
+22
+00:01:23,040 --> 00:01:28,090
+Então, você pode realmente especificar isso, como vimos na palestra, por uma outra coluna ou apenas
+
+23
+00:01:28,090 --> 00:01:29,540
+passando em S para tamanho.
+
+24
+00:01:29,850 --> 00:01:33,220
+E eu vou especificar o tamanho para ser 50.
+
+25
+00:01:33,230 --> 00:01:38,970
+Aqui nós temos os pontos um pouco maiores e para a cor foi c, vimos na palestra como podemos
+
+26
+00:01:38,970 --> 00:01:40,800
+especificar a cor por outra coluna.
+
+27
+00:01:40,800 --> 00:01:45,810
+Mas você também pode simplesmente passar uma seqüência de caracteres como você pode para o mapa lote lib e aqui agora temos
+
+28
+00:01:45,900 --> 00:01:46,680
+uma recreação dessa trama.
+
+29
+00:01:46,680 --> 00:01:48,170
+Exatamente.
+
+30
+00:01:48,180 --> 00:01:48,850
+ESTÁ BEM.
+
+31
+00:01:48,930 --> 00:01:54,060
+A principal coisa que eu queria que você tirasse dessa questão em particular era apenas o passo do enredo
+
+32
+00:01:54,360 --> 00:01:56,940
+que dispersava um Versus seja tão x e ai.
+
+33
+00:01:57,000 --> 00:01:57,840
+Não se preocupe muito.
+
+34
+00:01:57,840 --> 00:02:03,260
+Se você conseguiu obter o tamanho ou o tamanho da coloração Espero que você consiga isso.
+
+35
+00:02:04,110 --> 00:02:08,150
+OK, movendo-se agora, eu quero criar um histograma da coluna A.
+
+36
+00:02:08,150 --> 00:02:09,880
+Isso é bastante simples.
+
+37
+00:02:09,920 --> 00:02:21,350
+Basta chamar a coluna em si e, em seguida, dizer apenas para ver o histograma ou você também pode dizer o ponto do gráfico
+
+38
+00:02:21,380 --> 00:02:24,560
+silbido e todos retornam o mesmo histograma.
+
+39
+00:02:24,840 --> 00:02:26,470
+E este é o número padrão de caixas.
+
+40
+00:02:26,490 --> 00:02:30,890
+Mas você também pode passar em um argumento se você quiser mais Beenz.
+
+41
+00:02:31,020 --> 00:02:36,990
+Tudo bem, a próxima questão foi que essas parcelas estão corretas, mas elas não parecem muito polidas e as instruções ditas
+
+42
+00:02:36,990 --> 00:02:42,720
+usam folhas de estilo para definir o estilo para o gráfico GG e refazer o histograma de cima e também descobrir
+
+43
+00:02:42,720 --> 00:02:44,630
+como adicionar mais bits a ele .
+
+44
+00:02:44,640 --> 00:02:50,690
+Este é um tópico que na verdade não cobrimos na conferência de vídeo, mas está coberto no livro de
+
+45
+00:02:51,000 --> 00:02:56,250
+notas, então, espero que tivesse dois caminhos, você verificaria o caderno para descobrir quais folhas de estilo
+
+46
+00:02:56,250 --> 00:02:59,430
+se referiam ou o mapa de pesquisa do google. .
+
+47
+00:02:59,460 --> 00:03:04,770
+Se não, você poderia ter postado no fórum Q e A para chegar ao que eu estava fazendo referência ali.
+
+48
+00:03:04,830 --> 00:03:10,320
+seção de folha de estilo e isso é tipo apenas para você ter o clima de tentar descobrir aspectos por conta própria.
+
+49
+00:03:10,320 --> 00:03:15,240
+Se você seguir em frente e verificar a leitura do livro de notas para os pandas construídos na visualização
+
+50
+00:03:15,240 --> 00:03:16,230
+de dados, há uma
+
+51
+00:03:16,270 --> 00:03:20,590
+Aqui você pode ver que o mapa Cutlip possui folhas de estilo e há um pequeno link de referência lá.
+
+52
+00:03:20,680 --> 00:03:24,330
+E se você pesquisar na Google você provavelmente também teria ido para esta página.
+
+53
+00:03:24,330 --> 00:03:30,150
+E esta é a galeria e há uma seção de folhas na galeria e a premissa básica ou a ideia
+
+54
+00:03:30,150 --> 00:03:32,290
+é que você pode usar Piel nesse estilo.
+
+55
+00:03:32,310 --> 00:03:39,030
+Use passar qualquer string de um estilo e irá mudar automaticamente a estética para um estilo específico que se pareça
+
+56
+00:03:39,920 --> 00:03:40,710
+com isto.
+
+57
+00:03:40,710 --> 00:03:44,510
+Você acabou de dizer o estilo T-Dog da casca que usa o enredo G-G.
+
+58
+00:03:44,580 --> 00:03:47,910
+Então, eu vou apenas copiar esta linha de código.
+
+59
+00:03:48,510 --> 00:03:52,130
+Venha aqui e cole-o.
+
+60
+00:03:52,260 --> 00:03:57,330
+E agora, uma vez que isso foi executado, você notará que, se avançarmos e copiar
+
+61
+00:03:57,330 --> 00:04:03,240
+e colar a linha exata de código aqui e colado aqui, nós conseguimos uma trama muito melhor.
+
+62
+00:04:03,480 --> 00:04:07,310
+E você também notará que aqui este vermelho é um pouco mais para ver.
+
+63
+00:04:07,380 --> 00:04:13,140
+Então, você também pode enviar o Alpha para torná-lo um pouco mais transparente.
+
+64
+00:04:13,230 --> 00:04:17,190
+E aqui você pode começar a combinar esses histogramas juntos.
+
+65
+00:04:17,310 --> 00:04:21,810
+Espero que isso não tenha sido muito desafiador para você, mas há esse aspecto do tipo de descobrir coisas
+
+66
+00:04:21,810 --> 00:04:26,490
+por conta própria e provavelmente é a parte mais importante da aprendizagem de ciência de dados e programação de aprendizagem.
+
+67
+00:04:26,850 --> 00:04:32,280
+A capacidade de procurar uma resposta por conta própria sem ter o contexto completo da informação, porém você sempre pode
+
+68
+00:04:32,820 --> 00:04:37,620
+se sentir à vontade para publicar nos fóruns Q &amp; A se alguma coisa confunda com você.
+
+69
+00:04:37,620 --> 00:04:43,800
+Tudo bem, vamos seguir em frente e avançar para os gráficos de caixa que queríamos criar um gráfico de caixa
+
+70
+00:04:43,830 --> 00:04:45,730
+comparando as colunas A e B.
+
+71
+00:04:45,840 --> 00:04:51,520
+Demos uma olhada no que é o que nos mostramos apenas o quadro de dados em si.
+
+72
+00:04:52,190 --> 00:04:58,630
+Observe que temos um b c e d colunas para que eu não queira obter um gráfico de caixa todas as colunas Eu só quero um B.
+
+73
+00:04:59,160 --> 00:05:04,800
+Então, eu realmente vou pegar essas colunas passando uma lista desses nomes de coluna A
+
+74
+00:05:05,280 --> 00:05:09,550
+e B e então eu posso chamar a caixa de argumento.
+
+75
+00:05:09,720 --> 00:05:13,110
+Crie um gráfico de caixa que pareça o mesmo.
+
+76
+00:05:13,140 --> 00:05:13,580
+ESTÁ BEM.
+
+77
+00:05:13,800 --> 00:05:17,100
+Em seguida, quero criar um gráfico k d da coluna D.
+
+78
+00:05:17,290 --> 00:05:19,080
+Na verdade, é bastante direto.
+
+79
+00:05:19,080 --> 00:05:26,700
+Você simplesmente passa na coluna D, peça trama e depois diga Katie e eles retornarão esta trama.
+
+80
+00:05:27,030 --> 00:05:31,140
+de estilo de traço e não, você geralmente não Dashch K a trama.
+
+81
+00:05:31,140 --> 00:05:36,240
+E, finalmente, temos um, estamos aqui para descobrir como aumentar a linha e fazer a linha
+
+82
+00:05:36,320 --> 00:05:36,770
+Tudo bem.
+
+83
+00:05:36,930 --> 00:05:46,230
+Então, a maneira como você pode fazer isso é realmente apenas pegar esse mesmo enredo KDE ou densidade e, em seguida,
+
+84
+00:05:46,230 --> 00:05:53,540
+você pode prosseguir e passar os argumentos desse lote como o estilo de linha e a linha.
+
+85
+00:05:53,550 --> 00:05:54,840
+E aqui nós conseguimos o mesmo enredo.
+
+86
+00:05:54,900 --> 00:05:59,310
+E você também pode fazer isso com densidade se desejar.
+
+87
+00:05:59,310 --> 00:06:04,620
+Esse é o mesmo comando que queremos criar um gráfico de área de todas as colunas
+
+88
+00:06:04,620 --> 00:06:08,750
+para apenas os quartos até 30 e depois disse que Hintz usa x.
+
+89
+00:06:08,760 --> 00:06:17,320
+Então, espero que você possa descobrir ao chamar X D-3 I X, você pode ver que esta é uma propriedade e é principalmente
+
+90
+00:06:17,320 --> 00:06:21,930
+uma localização de rótulo baseada no indexador com a posição de ponto inteiro.
+
+91
+00:06:21,930 --> 00:06:24,970
+E então, o que podemos fazer é realmente usar isso para cortar.
+
+92
+00:06:25,320 --> 00:06:30,660
+E, novamente, é uma espécie de coisa que eu quero que você descubra enquanto você acompanha por si só para que
+
+93
+00:06:30,660 --> 00:06:37,610
+você possa passar de zero a 30 aqui e isso retornará apenas as 30 primeiras linhas ou o que quer que esteja cortando a notação que você queria.
+
+94
+00:06:38,070 --> 00:06:43,570
+E, em seguida, você pode chamar a área do enredo e você obtém um gráfico que se parece com isso.
+
+95
+00:06:43,610 --> 00:06:49,890
+E se você quisesse parecer o gráfico abaixo, você poderia realmente colocar um valor alfa lá.
+
+96
+00:06:49,950 --> 00:06:54,960
+você não consegue descobrir isso, mas observe como a legenda realmente se sobrepõe ao diagrama atual.
+
+97
+00:06:54,960 --> 00:07:01,200
+Tudo bem, há um desafio de bônus e note que você pode encontrar essas soluções de referência realmente difíceis,
+
+98
+00:07:01,260 --> 00:07:06,030
+Eles geralmente não queriam isso e eu quero que você descubra como você pode exibir
+
+99
+00:07:06,030 --> 00:07:12,150
+a lenda fora do enredo, como mostrado abaixo, por aqui e novamente, sobre esse tema de tentar descobrir coisas por
+
+100
+00:07:12,180 --> 00:07:12,860
+conta própria.
+
+101
+00:07:12,900 --> 00:07:18,420
+Eu quero para você tentar o Google procurando por um bom link de transbordo de pilha e, se você pudesse descobrir
+
+102
+00:07:18,420 --> 00:07:22,070
+que, por sua conta, havia um link para uma pergunta de vazamento de pilha.
+
+103
+00:07:22,080 --> 00:07:28,020
+quepeçamos aqui e dê uma olhada nisso você notará que alguém realmente responde esta pergunta corretamente e Eles disseram
+
+104
+00:07:28,020 --> 00:07:34,350
+aqui que Piel t que o centro de localização da legenda foi deixado e, em seguida, esta caixa para ancorar.
+
+105
+00:07:34,350 --> 00:07:39,930
+Então, se dar uma olhada neste link no estouro de pilha alguém perguntando como colocar a lenda fora
+
+106
+00:07:39,930 --> 00:07:42,470
+da trama com pandas e se nós meio
+
+107
+00:07:42,510 --> 00:07:43,700
+Essa é a chave aqui.
+
+108
+00:07:43,730 --> 00:07:51,240
+E você realmente apenas copia este código e cola-o aqui e depois pega o outro código dessa área
+
+109
+00:07:54,150 --> 00:07:59,850
+e cola-o aqui e então quando queremos fazer é criar uma figura para que
+
+110
+00:08:03,060 --> 00:08:07,310
+todos sejam chamados e depois dirão a puberdade que mostra.
+
+111
+00:08:07,920 --> 00:08:12,180
+E isso criará uma figura com a lenda lá fora.
+
+112
+00:08:12,420 --> 00:08:18,370
+Isso também funcionaria se você realmente remover a primeira linha e a última linha no notebook Jupiter.
+
+113
+00:08:18,420 --> 00:08:24,480
+Em outras situações, como outros erros de identificação, você pode ter que encontrar a figura e mostrar a figura.
+
+114
+00:08:24,690 --> 00:08:28,920
+Mas uma vez que estamos usando o Jupiter, um notebook pode realmente executar essas duas
+
+115
+00:08:28,950 --> 00:08:31,480
+linhas e removerá a legenda e colocá-la no exterior.
+
+116
+00:08:31,500 --> 00:08:35,850
+Então, a idéia básica aqui é esperançosamente que você possa descobrir por conta própria como agarrar esse tipo
+
+117
+00:08:35,850 --> 00:08:38,170
+de linhas de código e colocá-las em seu próprio código.
+
+118
+00:08:38,220 --> 00:08:42,900
+E isso é realmente uma coisa muito comum a fazer é verificar no estouro de pilha veja quais linhas de
+
+119
+00:08:42,900 --> 00:08:46,000
+código são relevantes para você e, em seguida, encaixe-as em seu próprio trabalho.
+
+120
+00:08:46,500 --> 00:08:47,910
+OK é isso.
+
+121
+00:08:47,910 --> 00:08:51,430
+Grande trabalho a todos e eu vou te ver na próxima palestra.
+
+122
+00:08:51,450 --> 00:08:55,460
+Sinta-se à vontade para publicar os fóruns Q &amp; A se alguma coisa estava confusa aqui para você.

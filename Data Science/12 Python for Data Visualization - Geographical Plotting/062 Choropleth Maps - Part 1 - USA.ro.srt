@@ -1,0 +1,943 @@
+1
+00:00:05,370 --> 00:00:10,440
+Bună ziua tuturor și vă urez bun venit la prelegerea hărții cloroplastice și la această prelegere vom trece
+
+2
+00:00:10,440 --> 00:00:15,870
+peste modul de utilizare a Python și parțial pentru a crea hărți de corali care ne vor permite să
+
+3
+00:00:15,870 --> 00:00:19,080
+planificăm informații fie la scară globală, fie la scară națională.
+
+4
+00:00:19,080 --> 00:00:22,170
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+5
+00:00:22,560 --> 00:00:22,830
+In regula.
+
+6
+00:00:22,830 --> 00:00:27,360
+Aici sunt la nota lui Jupiter, dar cărțile Supernaut numite hărți Kuro plus.
+
+7
+00:00:27,360 --> 00:00:33,600
+Și puteți găsi sub Python vizualizarea datelor sub folderul geografic de plotare și ar trebui să începeți în cartea
+
+8
+00:00:33,600 --> 00:00:38,480
+de note sau să lucrați în interiorul acestei cărți pentru a accesa datele V.
+
+9
+00:00:38,490 --> 00:00:43,800
+Vom lucra din nou cu tot codul pe care o vom scrie aici ca referință.
+
+10
+00:00:43,890 --> 00:00:49,920
+Și, de asemenea, el ar trebui să știe că există referințe pentru explicațiile sale plus parcelele pot fi cu
+
+11
+00:00:49,920 --> 00:00:53,410
+adevărat dificile la început mai ales sintaxa folosită pentru plotless.
+
+12
+00:00:53,610 --> 00:00:57,070
+Deci, veți dori întotdeauna să păstrați această notă ca o referință pentru lucruri.
+
+13
+00:00:57,250 --> 00:01:01,720
+Și vom face să ieșim și să explicăm codul din acest notebook, să vedem câteva exemple
+
+14
+00:01:01,740 --> 00:01:08,620
+simple, la început, folosind doar parcele la scară națională, apoi vom vedea că unele date reale fac un complot mai amplu pe scară națională, o
+
+15
+00:01:08,630 --> 00:01:13,510
+să mergem mai departe și să vedem o scară mondială, astfel încât să putem de fapt să
+
+16
+00:01:13,520 --> 00:01:14,960
+complotăm în două țări.
+
+17
+00:01:14,970 --> 00:01:18,100
+Bine, să mergem mai departe și să începem un notebook nou.
+
+18
+00:01:18,300 --> 00:01:22,190
+Bine, iată-mă la o carte de Jupiter, am să merg și să încep cu niște importuri.
+
+19
+00:01:22,200 --> 00:01:28,730
+Mai întâi, o să imi dau o importanță ușoară lui Ali.
+
+20
+00:01:29,310 --> 00:01:38,520
+Și apoi am de gând să spun, pentru a face toate aceste off line sau a salva de la complot off-line importuri
+
+21
+00:01:39,720 --> 00:01:41,610
+download subliniază parcelă Legia.
+
+22
+00:01:41,640 --> 00:01:44,250
+Și eu folosesc doar tab-uri pentru a termina automat acest lucru.
+
+23
+00:01:44,250 --> 00:01:51,000
+Așa că am tastat în ea și apoi se va autocompleți în modul subtitrate subliniat și apoi parcele
+
+24
+00:01:51,270 --> 00:01:52,180
+și complot.
+
+25
+00:01:52,730 --> 00:01:57,210
+Deci, pentru ca funcțiile să se finalizeze și puteți doar să copiați și să lipiți acest cod din notebook, dacă doriți.
+
+26
+00:01:57,810 --> 00:02:07,410
+Apoi, de asemenea, o să-i numesc apoi modul notebook-uri subliniat și passen conectat este egal cu adevărat.
+
+27
+00:02:07,830 --> 00:02:13,020
+Și că putem vedea totul în interiorul notebook-ului Jupiter și există un link în notebook-ul dvs. de
+
+28
+00:02:13,320 --> 00:02:16,130
+lectură pentru alte opțiuni de utilizare parțial off line.
+
+29
+00:02:16,580 --> 00:02:17,420
+O.K.
+
+30
+00:02:17,460 --> 00:02:20,950
+Din nou, așa cum am menționat parcela Lee de cartografiere poate fi un pic cam greu pentru a obișnui.
+
+31
+00:02:21,000 --> 00:02:26,160
+Deci, există o copie a unei foi de înșelăciune, precum și o legătură cu ea în notebook-ul Jupiter și arată ceva
+
+32
+00:02:26,160 --> 00:02:26,920
+de genul asta.
+
+33
+00:02:26,970 --> 00:02:29,980
+Deci puteți vedea diagrame de bază, parțial cum să le utilizați.
+
+34
+00:02:29,980 --> 00:02:35,050
+Și dacă parcurgi în jos poți vedea mai târziu hărțile reale și foile de înșelăciune aici.
+
+35
+00:02:35,130 --> 00:02:37,860
+Acesta este un fel de format pe care urmează să îl urmăm.
+
+36
+00:02:37,860 --> 00:02:41,690
+Să mergem înainte și să ne întoarcem la notebook-ul Jupiter.
+
+37
+00:02:41,730 --> 00:02:44,960
+Primul lucru pe care trebuie să-l facem este să începem să construim dicționarul nostru de date.
+
+38
+00:02:45,030 --> 00:02:48,740
+Cel mai simplu mod de a face acest lucru este utilizarea metodei DCT.
+
+39
+00:02:48,900 --> 00:02:52,600
+Deci, puteți să aruncați un dicționar cu ICC.
+
+40
+00:02:52,740 --> 00:02:58,050
+Deci, vom folosi metoda respectivă pentru a arunca lista într-un dicționar și primul lucru pe
+
+41
+00:02:58,050 --> 00:03:02,130
+care îl vom face este să începeți cu datele noastre.
+
+42
+00:03:02,130 --> 00:03:09,800
+Deci, aveți datele dvs. și va fi un dicționar și vom avea tipul de
+
+43
+00:03:09,850 --> 00:03:11,730
+cheie Coro Plath.
+
+44
+00:03:14,310 --> 00:03:20,190
+Și atunci vom avea locații și locații este o listă de state și este abrevierea statelor în
+
+45
+00:03:20,190 --> 00:03:24,120
+cazul nostru, deoarece facem acest lucru doar la scară națională.
+
+46
+00:03:24,240 --> 00:03:32,040
+Deci, intrați și spuneți Asia CA și NY puteți merge mai departe și puneți în orice abrevieri postcode doriți acolo.
+
+47
+00:03:33,600 --> 00:03:36,000
+Apoi vom spune modul de localizare.
+
+48
+00:03:36,570 --> 00:03:43,920
+Și în acest caz o să punem Statele Unite ale Americii în bani și acest lucru îi permite lui Whitely să știe că facem
+
+49
+00:03:44,010 --> 00:03:49,710
+acest lucru la nivelul Statelor Unite și că există un mod de localizare diferit și puteți continua și verificați
+
+50
+00:03:49,710 --> 00:03:55,020
+legăturile din notebook-ul Jupiter obțineți documentația privind diferitele moduri de localizare pe care le puteți furniza.
+
+51
+00:03:56,760 --> 00:04:05,790
+Apoi vom merge mai departe și vom stabili scala de culoare pentru a fi egală cu Portland, care este doar o scală de culoare și putem face și alte
+
+52
+00:04:06,120 --> 00:04:09,670
+lucruri, cum ar fi verdele sau griul și mersul pe jos.
+
+53
+00:04:09,750 --> 00:04:12,500
+Vom amesteca acest lucru și vom vedea cum funcționează mai târziu.
+
+54
+00:04:12,560 --> 00:04:22,530
+Voi alege doar Portland și apoi vom merge mai departe și facem este trecut în textul cheie și textul este o listă
+
+55
+00:04:22,530 --> 00:04:26,600
+a ceea ce se deplasează peste fiecare locație.
+
+56
+00:04:26,670 --> 00:04:28,990
+Așa că am de gând să pun niște lucruri de bază aici.
+
+57
+00:04:29,280 --> 00:04:36,570
+Vom intra și vom spune text un text 2 și apoi textul 3 și apoi Z va fi egal
+
+58
+00:04:39,300 --> 00:04:44,520
+cu valorile dvs. reale, care vor fi prezentate într-o scară de culoare.
+
+59
+00:04:44,550 --> 00:04:52,870
+Vom merge mai departe și le vom pune pe cele două două și trei și le voi pune în flotări.
+
+60
+00:04:53,800 --> 00:04:57,660
+Și apoi, în cele din urmă pasan un argumente bară de culoare.
+
+61
+00:04:57,660 --> 00:05:10,050
+Și acesta este, de fapt, un dicționar cu titlul cheie și apoi tu doar persoana pe care o să treci orice vrei să fie titlul
+
+62
+00:05:10,160 --> 00:05:11,940
+barei de culoare.
+
+63
+00:05:11,940 --> 00:05:18,620
+Deci, ca unul foarte generic, voi spune că titlul barei de culori merge aici.
+
+64
+00:05:18,620 --> 00:05:21,600
+Corect, așa arată cum arată datele și ne uităm la date.
+
+65
+00:05:21,680 --> 00:05:27,140
+Va fi un dicționar din orice motiv documentația parțială îi place să folosească acest tip de
+
+66
+00:05:27,130 --> 00:05:30,980
+apel de dictionar, în loc să îl construiască doar ca dicționar.
+
+67
+00:05:31,040 --> 00:05:36,710
+Acest tip vă salvează timp pentru a scrie și toate aceste citate și acum trebuie să faceți toate aceste șir
+
+68
+00:05:36,710 --> 00:05:37,590
+de chei.
+
+69
+00:05:37,690 --> 00:05:42,380
+Deci, voi merge mai departe și să păstrați în conformitate cu documentația și să folosiți acest tip de notație.
+
+70
+00:05:42,410 --> 00:05:51,950
+Următorul lucru pe care trebuie să-l facem este să creezi un obiect sau o variabilă de aspect, iar aspectul să meargă înainte și să
+
+71
+00:05:51,940 --> 00:05:53,530
+fie un dictionar imbricat.
+
+72
+00:05:53,540 --> 00:05:59,350
+Și tocmai am trecut G. O. este egal cu și apoi
+
+73
+00:06:02,260 --> 00:06:05,240
+stabilim domeniul de aplicare să fie US A.
+
+74
+00:06:06,800 --> 00:06:09,660
+Și apoi ceea ce vom merge mai departe și de a folosi este cifra du-te.
+
+75
+00:06:09,680 --> 00:06:17,300
+Și pentru a face asta, vom avea nevoie să importăm altceva, va trebui să
+
+76
+00:06:17,540 --> 00:06:23,270
+spunem că importul Clottey punct grafic subliniază RBJ s.
+
+77
+00:06:23,600 --> 00:06:29,980
+Și voi merge mai departe doar pune acest top cu celelalte importuri și rulați asta.
+
+78
+00:06:30,520 --> 00:06:31,980
+OK, deci nu e important.
+
+79
+00:06:32,000 --> 00:06:34,430
+Pot să-i spun figura și să
+
+80
+00:06:38,620 --> 00:06:39,740
+pun datele.
+
+81
+00:06:39,860 --> 00:06:47,030
+Și acesta este un fel de parte ciudată egală cu paranteze, astfel încât elementul din lista de date
+
+82
+00:06:47,020 --> 00:06:52,610
+care este cam ciudat pentru că este deja un dicționar, dar îl transmiteți
+
+83
+00:06:52,610 --> 00:06:59,170
+ca un dicționar în interiorul unei liste și apoi vă spuneți va fi egal cu a stabili.
+
+84
+00:06:59,310 --> 00:07:04,430
+Nu aveți nevoie de punct de vedere tehnic pentru a parcurge în realitate date egale și laya egale am putea doar să trecem în date și
+
+85
+00:07:04,460 --> 00:07:05,180
+să ne întindem.
+
+86
+00:07:05,210 --> 00:07:13,130
+Ei bine, haideți să mergem mai departe și să o păstrăm în acest fel și vom pune totul la egal cu
+
+87
+00:07:13,120 --> 00:07:17,750
+harta Koro și apoi vom spune că am complot matematica Curle.
+
+88
+00:07:18,300 --> 00:07:26,990
+Și ar trebui să vedem complotul aici și aici avem Arizona California și New York subliniat cu graficul de
+
+89
+00:07:27,010 --> 00:07:29,240
+culoare Portland ales aici.
+
+90
+00:07:29,300 --> 00:07:33,740
+Acum putem merge mai departe și o putem schimba într-unul din șirurile predefinite din carnetul tău.
+
+91
+00:07:33,760 --> 00:07:38,770
+De exemplu, puteți ieși afară și puteți schimba acest lucru cu jet.
+
+92
+00:07:38,930 --> 00:07:40,940
+Vedeți ce schimbări au loc acolo.
+
+93
+00:07:40,970 --> 00:07:42,410
+Rulați totul din nou.
+
+94
+00:07:42,400 --> 00:07:48,170
+Și aici avem acum schema de culori jet sau putem face alte lucruri, cum ar fi verdele este
+
+95
+00:07:48,170 --> 00:07:50,180
+alta pe care o puteți alege.
+
+96
+00:07:51,050 --> 00:07:58,460
+Rulați asta și totul este în verde Deci, dacă New York-ul este verde foarte deschis aici, dă-mi voie să merg
+
+97
+00:07:58,460 --> 00:08:04,340
+mai departe și să distrug tot ce am făcut, deoarece formatarea poate fi cam confuză și
+
+98
+00:08:04,350 --> 00:08:06,270
+într-adevăr e nevoie de timp.
+
+99
+00:08:06,290 --> 00:08:08,960
+De obicei, de obicei, nu memorați acest lucru.
+
+100
+00:08:08,960 --> 00:08:13,500
+Va trebui să faceți referire la exemple din documentație sau din foaia de înșelătorie.
+
+101
+00:08:13,670 --> 00:08:21,140
+Dar ideea de bază este că avem importurile noastre am inițializat modul notebook și apoi avem două obiecte principale un obiect de
+
+102
+00:08:21,350 --> 00:08:27,130
+date și un obiect de strat și pot să le numesc doar variabilele mele variabila mea de
+
+103
+00:08:27,130 --> 00:08:31,260
+date și variabila mea layout și trecutul merge în figura Go funcţie.
+
+104
+00:08:31,550 --> 00:08:34,220
+Și apoi vreau să trec acel lucru în complot.
+
+105
+00:08:34,460 --> 00:08:41,090
+Dacă am trece în complot ceea ce se va întâmpla este aceasta va deschide o filă nouă ca un fișier h m și
+
+106
+00:08:41,090 --> 00:08:47,190
+puteți să mergeți mai departe și să salvați fișierul spuneți e-mail sau să-l exportați sau îl puteți descărca ca un PNB.
+
+107
+00:08:47,240 --> 00:08:47,500
+In regula.
+
+108
+00:08:47,540 --> 00:08:50,810
+Să mergem mai departe și să ne întoarcem aici pentru a preda.
+
+109
+00:08:51,000 --> 00:08:57,350
+În obiectul nostru de date avem câteva argumente pe care le avem de tip care clarifică ce tip de complot
+
+110
+00:08:57,350 --> 00:08:58,200
+geografic facem.
+
+111
+00:08:58,250 --> 00:09:00,850
+În acest caz, ne concentrăm acum doar la curți.
+
+112
+00:09:00,950 --> 00:09:08,570
+Apoi, locațiile locațiilor reprezintă o matrice sau o listă a acelor coduri de abreviere actuale, atunci specificați
+
+113
+00:09:08,570 --> 00:09:10,410
+un mod de localizare.
+
+114
+00:09:10,550 --> 00:09:16,070
+În acest caz, de când lucrăm în SUA, vom spune Statele Unite ale Americii Dasch și acest lucru se poate
+
+115
+00:09:16,070 --> 00:09:17,300
+reduce la nivel județean.
+
+116
+00:09:17,300 --> 00:09:20,650
+Puteți intra și consultați documentația care este conectată în chip într-un notebook.
+
+117
+00:09:20,750 --> 00:09:27,910
+Pentru mai multe informații despre aceasta, atunci aveți textul, iar textul este o matrice sau o listă a
+
+118
+00:09:27,910 --> 00:09:30,740
+textului care se etichetează pentru fiecare locație.
+
+119
+00:09:30,740 --> 00:09:41,180
+De exemplu, ieșiți și schimbați acest lucru în Arizona, schimbați-l în Cali și schimbați-l în New York și dacă reușim din nou
+
+120
+00:09:41,170 --> 00:09:47,510
+acest lucru și observați că, în complot, permiteți-mi să merg la el.
+
+121
+00:09:47,570 --> 00:09:54,590
+Permiteți-mi să mă duc să-l precizez pe măsură ce vă comparăm astfel încât el să vadă în interiorul pe care îl puneți într-o carte pe care
+
+122
+00:09:54,590 --> 00:09:59,640
+o veți observa atunci când spun că am complot valoarea textului spune Kalli Arizona și New York.
+
+123
+00:09:59,780 --> 00:10:04,910
+Deci, acest lucru înseamnă că acest text trebuie doar să fie în aceeași secvență
+
+124
+00:10:04,910 --> 00:10:13,090
+de index ca și locațiile și se va potrivi până atunci z este orice valoare pe care doriți să o reprezentați ca o culoare.
+
+125
+00:10:13,100 --> 00:10:19,450
+Deci, de exemplu, Cali a fost evaluată la Arizona ca valoare 1 în New York Cazayoux trei.
+
+126
+00:10:19,520 --> 00:10:23,900
+Mai târziu, vom vedea cu date reale despre modul în care putem folosi de fapt acest lucru pentru a indica
+
+127
+00:10:24,230 --> 00:10:27,440
+anumiți niveluri de către stat, dar aici sunt aspectele legate de barele de culoare.
+
+128
+00:10:27,670 --> 00:10:32,630
+Și putem vedea că titlul barei de culori merge aici este doar un titlu pentru acest bare de culoare.
+
+129
+00:10:32,810 --> 00:10:37,870
+Și puteți alege scara de culori cu orice șir dorit care este menționat în cartea de notare
+
+130
+00:10:37,860 --> 00:10:40,550
+Jupiter din nou pentru acest tip de plotare.
+
+131
+00:10:40,550 --> 00:10:44,840
+Veți fi nevoit să vă referiți fie la documentația notebook-ului Jupiter,
+
+132
+00:10:45,380 --> 00:10:50,420
+deoarece formatarea este într-adevăr cam bizară aici, dar acesta este modul în care funcționează ploturile.
+
+133
+00:10:50,420 --> 00:10:57,240
+Apoi, aveți o variabilă de aspect și un obiect dictionar imbricat, unde specificați G. O. și domeniul de aplicare
+
+134
+00:10:57,260 --> 00:10:58,510
+al SUA.
+
+135
+00:10:58,570 --> 00:11:01,850
+Va fi o cloroplastie a Statelor Unite.
+
+136
+00:11:02,090 --> 00:11:08,270
+Și apoi treceți totul pentru a merge acea figură și spuneți că am complot pe harta lui Coro și vedeți asta aici.
+
+137
+00:11:09,230 --> 00:11:14,990
+Acum mergeți mai departe și arătați un exemplu cu câteva date reale precum și alte opțiuni pe care le putem adăuga la dicționare
+
+138
+00:11:15,020 --> 00:11:16,200
+și date și layout.
+
+139
+00:11:16,430 --> 00:11:23,420
+Deci, mergeți mai departe și construiți pe cunoștințele pe care deja le-ați de gând să mergeți înainte și parcurgeți aici jos și voi spune
+
+140
+00:11:23,420 --> 00:11:29,080
+că DFA este egal cu PD care citesc C S V și există un fișier C S V aici.
+
+141
+00:11:29,330 --> 00:11:37,850
+Sunați la anul 2011, subliniem exporturile de subvenții agricole și acestea sunt doar exporturile agricole de către stat.
+
+142
+00:11:37,850 --> 00:11:42,740
+Și lasă-mă să ieșim și elipsa importă Pandurs pentru a citi asta în.
+
+143
+00:11:42,830 --> 00:11:45,570
+Și apoi vom verifica capul cadrului A de stat.
+
+144
+00:11:45,590 --> 00:11:51,090
+Deci, în starea de cadru am un cod al categoriei actuale de nume de stare în acest caz pentru toate statele.
+
+145
+00:11:51,310 --> 00:11:55,960
+Exporturile totale și apoi lucruri cum ar fi lapte de pasăre de carne de vită și de mânzat etc.
+
+146
+00:11:56,030 --> 00:12:01,140
+Deci, dacă aceste state exportă produse agricole.
+
+147
+00:12:01,130 --> 00:12:04,670
+Bine, deci, să mergem mai departe și să începem prin crearea unei variabile de date.
+
+148
+00:12:04,670 --> 00:12:12,830
+În variabila noastră lay out, variabila mea de date va avea o distribuție a dictionarului și vom merge
+
+149
+00:12:12,830 --> 00:12:18,570
+mai departe și vom spune că tipul este egal cu Coro.
+
+150
+00:12:19,850 --> 00:12:23,130
+Apoi pasanim argumentele unei scări de culoare.
+
+151
+00:12:23,330 --> 00:12:25,820
+În acest caz o să trec în șir.
+
+152
+00:12:25,820 --> 00:12:32,860
+Capitalul de capital I Capitalul O capitalul inferior al capitalului nostru sunt litere mici
+
+153
+00:12:33,010 --> 00:12:42,270
+În acest fel de roșu portocaliu galben și în următorul am de gând să spun locații îmi amintesc locații.
+
+154
+00:12:42,290 --> 00:12:49,940
+Dacă defilam înapoi aici este doar lista de coduri de stat și modul nostru de locații este, de asemenea, aici.
+
+155
+00:12:50,390 --> 00:12:56,400
+Acum, avem în cadrul nostru de date dacă privim la această coloană cod.
+
+156
+00:12:56,450 --> 00:12:59,330
+Deci, voi trece doar A. F. codul
+
+157
+00:13:02,780 --> 00:13:11,240
+următor va fi modul nostru de locație și vom stabili că este egal cu Statele Unite și dorim să specificăm
+
+158
+00:13:14,810 --> 00:13:20,090
+și ceea ce vom spune pentru z și z va fi ceea ce
+
+159
+00:13:20,090 --> 00:13:22,140
+reprezintă bara de culoare caz.
+
+160
+00:13:22,140 --> 00:13:28,700
+Să mergem mai departe și să spunem exporturile totale.
+
+161
+00:13:28,700 --> 00:13:33,270
+Deci avem exporturi totale ca o coloană și asta va fi valoarea noastră.
+
+162
+00:13:33,350 --> 00:13:37,450
+Avem, de asemenea, texte și asta va fi textul care se aliniază.
+
+163
+00:13:37,580 --> 00:13:42,140
+Și dacă parcurgeți tot drumul spre dreapta, aici este o coloană de text amplasată convenabil.
+
+164
+00:13:42,380 --> 00:13:46,100
+De obicei, probabil că trebuie să construiți propria coloană de text, dar din moment ce acesta este doar
+
+165
+00:13:46,100 --> 00:13:47,990
+un exemplu, avem deja un text pentru dvs.
+
+166
+00:13:48,080 --> 00:13:51,200
+Vom merge mai departe și vom trece text
+
+167
+00:13:54,710 --> 00:14:03,240
+acolo și apoi vom dori să trecem și pe o bară de culoare decât să spunem că barul de culoare este egal cu.
+
+168
+00:14:03,290 --> 00:14:08,290
+Și aici este locul unde aveți dicționarul în care purtați titlul barei de culoare.
+
+169
+00:14:08,300 --> 00:14:14,210
+În acest caz, hai să intrăm și să spunem milioane de dolari pentru că asta reprezintă exporturile totale efective.
+
+170
+00:14:14,480 --> 00:14:17,840
+Acesta este numărul în milioane de U. S. de dolari.
+
+171
+00:14:17,850 --> 00:14:25,130
+Acum vom merge mai departe și vom adăuga încă un argument în această privință și va fi marker egal.
+
+172
+00:14:25,220 --> 00:14:31,470
+Și acesta este un fel de argument ciudat, deoarece este un set de dicționare imbricate, dar în principiu
+
+173
+00:14:31,460 --> 00:14:37,350
+aceasta va defini un marker pe care îl vom arăta odată ce vom arăta complotul și
+
+174
+00:14:37,350 --> 00:14:45,590
+veți spune că o linie de dicționar este o cheie este egal și apoi un alt dicționar de apel și spuneți că culoarea
+
+175
+00:14:45,600 --> 00:14:51,640
+este egală cu un plotless poate accepta r. g culoare B ca un format de șir ciudat.
+
+176
+00:14:51,650 --> 00:14:53,030
+Tu spui R. G. B.
+
+177
+00:14:53,210 --> 00:14:56,330
+Și apoi în paranteze treceți în R. G. B valori.
+
+178
+00:14:56,610 --> 00:15:01,250
+Deci, să mergem mai departe și să spunem doar două 5:55 pentru toate cele trei pentru roșu verde și albastru.
+
+179
+00:15:01,880 --> 00:15:08,720
+Și apoi voi specifica și în interiorul acestui dicționar interior că lățimea este egală cu
+
+180
+00:15:09,040 --> 00:15:09,720
+două.
+
+181
+00:15:09,920 --> 00:15:13,720
+Și vom vedea mai târziu cum intră efectiv acest marcator.
+
+182
+00:15:13,880 --> 00:15:17,400
+Și apoi, în final, vreau să fiu sigur că avem o virgulă aici.
+
+183
+00:15:18,230 --> 00:15:22,790
+Așa că avem următoarea cheie și închidem-o.
+
+184
+00:15:22,790 --> 00:15:23,020
+In regula.
+
+185
+00:15:23,030 --> 00:15:24,860
+Acesta este dicționarul meu de date.
+
+186
+00:15:24,870 --> 00:15:28,430
+Acum o să avem dicționarul nostru.
+
+187
+00:15:28,820 --> 00:15:35,510
+Voi spune că așezarea este egală cu felul în care poate fi apelat dicționarul meu, să pot
+
+188
+00:15:35,510 --> 00:15:37,100
+seta titlul plotului real.
+
+189
+00:15:37,120 --> 00:15:49,460
+Acum să mergem și să spunem că este 2011 U. S. exporturile de agricultură de către state pe care voi spune că Geo este
+
+190
+00:15:49,460 --> 00:15:52,140
+egal cu și voi trece într-un dicționar aici.
+
+191
+00:15:52,460 --> 00:15:56,420
+Avem domeniul de aplicare este egal cu SUA.
+
+192
+00:15:56,630 --> 00:16:02,690
+Am de gând să treacă în două argumente suplimentare în interiorul acestui dicționar arată Lakes este egal cu adevărat
+
+193
+00:16:03,030 --> 00:16:09,480
+și că practic doar spune arată lacurile reale și hartă și apoi puteți alege Lacul de culoare și am de
+
+194
+00:16:09,470 --> 00:16:15,020
+gând să treacă și R. G. fi cod folosind notatia plati pentru codul nostru G-B care este doar un
+
+195
+00:16:15,040 --> 00:16:15,940
+string R. G. B.
+
+196
+00:16:16,130 --> 00:16:19,250
+Și apoi in-print vede culorile sunt valorile pe care le doriți.
+
+197
+00:16:19,350 --> 00:16:25,940
+Așa că vom spune 85 de la 173 la 40 și le-am apucat de pe Internet deoarece ei practic fac un
+
+198
+00:16:25,940 --> 00:16:31,720
+albastru frumos pentru lacuri și asta va fi dicționarul nostru de aranjare, așa că aruncăm o privire că
+
+199
+00:16:31,910 --> 00:16:37,370
+putem avea această nebunie ciudată Structura dicționarului, dar acesta este modul în care se ia fără plot.
+
+200
+00:16:37,460 --> 00:16:45,410
+Apoi, în final, putem spune că harta Koro este egală cu cifra.
+
+201
+00:16:45,410 --> 00:16:53,250
+Datele sunt egale și noi trecem acel dicționar de date într-o listă și apoi spunem că aspectul este egal cu așezarea.
+
+202
+00:16:54,260 --> 00:17:00,920
+Și apoi, în cele din urmă, noi numim și complot pe harta de corali.
+
+203
+00:17:01,280 --> 00:17:10,460
+Și aici avem acum 2011 U. S. exporturile de produse agricole de stat și de preaviz, pe măsură ce vom
+
+204
+00:17:10,460 --> 00:17:13,400
+trece peste vom ajunge să vedem tot textul acelor valori California.
+
+205
+00:17:13,570 --> 00:17:19,170
+Vedem, de asemenea, că lacurile sunt albastre, ceea ce înseamnă că prezintă lacuri, iar culoarea lacurilor a funcționat corect.
+
+206
+00:17:19,520 --> 00:17:20,890
+Avem o scală de culoare.
+
+207
+00:17:20,930 --> 00:17:27,230
+Avem bursa noastră de maree USD și vedem, de asemenea, că există un fel de spațiere între statele în sine.
+
+208
+00:17:28,820 --> 00:17:30,900
+Acesta este cel care a reprezentat acest marker.
+
+209
+00:17:30,890 --> 00:17:34,720
+Dacă ne întoarcem aici sub date, am avut acest marker.
+
+210
+00:17:34,940 --> 00:17:41,690
+Așadar, am stabilit o linie pentru culoare și apoi cu așa că dacă vom crește acest lucru cu linia, să spunem dublu
+
+211
+00:17:41,690 --> 00:17:46,700
+și să mergem și să schimbăm culoarea ca fiind ceva de genul 12 12 12.
+
+212
+00:17:46,700 --> 00:17:48,610
+Deci este foarte evident.
+
+213
+00:17:48,800 --> 00:17:55,390
+Voi rula din nou acest lucru și apoi vom observa cum se va schimba această hartă în măsura în care aceste frontiere sunt chiar acum.
+
+214
+00:17:55,410 --> 00:18:01,790
+Site-ul de graniță foarte gros negru a modificat valorile G-B și puteți face acest lucru doar urmând acest
+
+215
+00:18:01,800 --> 00:18:07,340
+tip de formulă aici, spunând linia dicționarului și apoi dicționarul din nou, alegeți culoarea și
+
+216
+00:18:07,380 --> 00:18:08,480
+lățimea dicționarului.
+
+217
+00:18:08,750 --> 00:18:13,260
+Ei bine, mergeți mai departe și puneți-o înapoi la ceva de genul unul.
+
+218
+00:18:13,600 --> 00:18:17,110
+Și dacă mai conduc din nou, putem vedea complotul nostru.
+
+219
+00:18:17,240 --> 00:18:17,790
+In regula.
+
+220
+00:18:17,900 --> 00:18:23,600
+Așa puteți crea Curle plus parcele pe un U. S. la scară națională folosind linia parcelei.
+
+221
+00:18:23,720 --> 00:18:25,390
+Acum nu ar trebui să știu.
+
+222
+00:18:25,390 --> 00:18:31,140
+Este destul de confuz în ceea ce privește sintaxa și încearcă să-și amintească ce ordine intră totul.
+
+223
+00:18:31,130 --> 00:18:36,020
+Cel mai bun sfat pentru a vă oferi este să faceți referire la un notebook Jupiter și să consultați legăturile
+
+224
+00:18:36,030 --> 00:18:37,430
+de documentare din notebook-ul Jupiter.
+
+225
+00:18:37,550 --> 00:18:42,200
+De cele mai multe ori, va trebui doar să copiați și să lipiți în esență și apoi să
+
+226
+00:18:42,510 --> 00:18:44,680
+completați codul corespunzător setului dvs. de date.
+
+227
+00:18:44,690 --> 00:18:47,410
+Nu este ușor, dar așa trebuie să faci.
+
+228
+00:18:47,480 --> 00:18:53,610
+Și aceasta este doar prin natura complot geografic este destul de complicat, deoarece poate veni în atât de multe formate pe care încearcă
+
+229
+00:18:53,930 --> 00:18:59,280
+să o facă vag, astfel încât să puteți trece în cât mai multe locații posibile sau moduri de locație.
+
+230
+00:18:59,510 --> 00:19:02,900
+Dar asta duce doar la o structură ciudată de sintaxă.
+
+231
+00:19:02,960 --> 00:19:08,750
+Aceasta este natura acestui joc al complotării geografice, în măsura în care încercăm să folosim complotul Lee ca o
+
+232
+00:19:08,760 --> 00:19:10,480
+bibliotecă Python pentru plotarea geografică.
+
+233
+00:19:10,700 --> 00:19:15,470
+Dar poți vedea, după toate lucrurile grele, ceva ce este destul de frumos să arăți altor oameni.
+
+234
+00:19:16,550 --> 00:19:17,520
+In regula.
+
+235
+00:19:17,510 --> 00:19:23,340
+Veniți în următoarea prelegere veți arăta cum să faceți acest lucru la scară globală, cu corali globali plus parcele.
+
+236
+00:19:23,960 --> 00:19:26,370
+Multumesc tuturor si te voi vedea la urmatoarea conferinta.

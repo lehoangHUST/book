@@ -1,0 +1,147 @@
+1
+00:00:05,280 --> 00:00:09,840
+Herkese merhaba ve Seaborn konferansına giriş sayfasına hoş geldiniz ve bu ders,
+
+2
+00:00:09,840 --> 00:00:15,060
+deniz kenarının bilgisayarınıza nasıl yükleneceği ve resmi belgeleri nasıl bulacağınız üzerine kısaca göz atacağız.
+
+3
+00:00:17,130 --> 00:00:22,460
+Seaborn, istatistiksel bir çizim kütüphanesi olup harita çizelgesi lib üzerine inşa edilmiştir.
+
+4
+00:00:22,500 --> 00:00:26,460
+Böylece öğrendiğimiz tüm bu harita çizimi lib bilgisi, seaborne
+
+5
+00:00:26,460 --> 00:00:32,520
+seaborne'u öğrenirken gerçekten güzel varsayılan stillere sahipken gerçekten faydalı olacak ve aynı zamanda
+
+6
+00:00:32,520 --> 00:00:38,400
+bilgisayarınıza yüklenebilmek için objelerden gelen bu verileri gerçekten iyi tasarlamak için tasarlandı. .
+
+7
+00:00:38,400 --> 00:00:40,710
+Kada install seaborne'u kullanmanız gerekecek.
+
+8
+00:00:40,710 --> 00:00:46,050
+seaborne'u da kullanabilirsiniz ve komut satırınızı veya terminalinizi de yapmanız yeterlidir.
+
+9
+00:00:46,050 --> 00:00:51,770
+Python'un Anaconda dağıtımında bulunuyorsa veya Python'u başka bir kaynaktan yüklerseniz, Pipp install
+
+10
+00:00:52,470 --> 00:00:55,250
+Devam edin ve resmi Web sitesine hızlı bir tur atalım.
+
+11
+00:00:55,470 --> 00:00:59,630
+Ben gidip Google'a gidip size resmi belgelerin nasıl bulunacağını göstereceğim.
+
+12
+00:00:59,640 --> 00:01:04,650
+İşte buradayım resmi belgelerle olan bağlantıyı bulmak için Google'dayım.
+
+13
+00:01:04,800 --> 00:01:14,090
+Seaborn açık kaynak olduğundan, eve giderken ev sahipliği yapıyor, böylece içeri girebilir ve seaborne python alırsınız.
+
+14
+00:01:14,760 --> 00:01:19,330
+Ve bu sizi buradaki ilklere götürecektir.
+
+15
+00:01:19,710 --> 00:01:25,050
+Ve bu sayfada aslında tüm kodları okuyabilirsiniz, açık kaynak olduğu kadar bu
+
+16
+00:01:25,050 --> 00:01:27,210
+veri görselleştirme için istatistiksel kütüphanedir.
+
+17
+00:01:27,210 --> 00:01:31,920
+Ancak daha da önemlisi, buraya kaydırırsanız, resmi dokümantasyona bir bağlantı göreceksiniz.
+
+18
+00:01:31,950 --> 00:01:37,230
+Devam edin ve bu bağlantıyı tıklayın ve resmi belgeler sayfasına götürün.
+
+19
+00:01:37,230 --> 00:01:42,160
+Şimdi bu resmi dokümantasyon sayfası hakkında hoş geldiniz bir şey, herhangi bir harita komplo lib sitesinde
+
+20
+00:01:42,480 --> 00:01:47,900
+olduğu gibi, o kadar güzel olmayan bir galeri olan bir galeri, bu galeriyi referans olarak kullanmamamız gibi.
+
+21
+00:01:48,030 --> 00:01:52,870
+Daha fazlasıyla, seaborne'un yapabileceğinin güzel örneklerinden birkaçı var.
+
+22
+00:01:52,870 --> 00:01:59,760
+Böylece dışarı çıkın ve ısı haritası keman kütüğü komplo arsa komployu gibi bu fotoğrafların bazılarına tıklayın ve biz Pandalar ile
+
+23
+00:01:59,760 --> 00:02:04,050
+C'yi daha etkili bir şekilde nasıl kullanacağımız tüm bu parsellerin nasıl oluşturulacağını öğreneceğiz.
+
+24
+00:02:04,350 --> 00:02:07,930
+İşte size yapabileceğimiz bazı şeylerin hızlı örnekleri.
+
+25
+00:02:07,980 --> 00:02:14,540
+Gerçekten güzel görünen ısıl alanlar veya ısı haritaları yapacağız Keman parselleri gruplanmış kutu parselleri
+
+26
+00:02:14,540 --> 00:02:20,360
+ve altılı birliktelikteki ortak planlar, Bourne ve stilin elele geçtiğini muhtemelen söyleyebiliyoruz.
+
+27
+00:02:20,490 --> 00:02:24,180
+SEABORNE gerçekten güzel görünümlü bir görselleştirme kütüphanesi.
+
+28
+00:02:24,180 --> 00:02:30,720
+Galeri sayfasının yanı sıra diğer gerçekten önemli bağlantı API'dır ve API referansı temel olarak
+
+29
+00:02:30,720 --> 00:02:33,270
+burada çeşitli arsa tiplerine bir referanstır.
+
+30
+00:02:33,270 --> 00:02:36,530
+Seaborn'un nasıl kullanılacağını öğrendiğimiz için de devam edeceklerimiz budur.
+
+31
+00:02:36,630 --> 00:02:41,100
+Bu yüzden, gerçekten bu arsaların bu arsaların pandalarını nasıl kullanacağını
+
+32
+00:02:41,100 --> 00:02:45,360
+ve gerçekten güzel görünümlü istatistiksel arsa görselleştirmelerini yaratmayı öğreneceğiz.
+
+33
+00:02:45,540 --> 00:02:46,150
+Tamam.
+
+34
+00:02:46,260 --> 00:02:47,510
+Başlamak için gerçekten heyecanlıyım.
+
+35
+00:02:47,520 --> 00:02:53,010
+Seaborn, Python için en sevdiğim kütüphanelerden biridir. Öyleyse devam edin ve bir sonraki dersime
+
+36
+00:02:53,010 --> 00:02:55,650
+atlayın veya Aslında Seaborn kodunu kodlamaya başlayın.
+
+37
+00:02:55,680 --> 00:02:57,540
+Herkese teşekkürler, bir sonraki derside görüşürüz.

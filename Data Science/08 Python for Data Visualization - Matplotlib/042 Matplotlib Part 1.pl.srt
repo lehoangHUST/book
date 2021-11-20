@@ -1,0 +1,939 @@
+1
+00:00:05,010 --> 00:00:09,870
+Witam wszystkich i zapraszam na pierwszą wykładankę z mapą i wykładu, który
+
+2
+00:00:09,870 --> 00:00:13,260
+zaczniemy pokazywać, jak można wykorzystać mapę z Pythonem.
+
+3
+00:00:13,500 --> 00:00:16,360
+Przejdźmy do książki notatek Jowisza, aby zacząć.
+
+4
+00:00:16,620 --> 00:00:16,890
+W porządku.
+
+5
+00:00:16,890 --> 00:00:23,120
+Tutaj jestem na zeszycie, notatnik dla tego wykładu nazywa się wykładem pojęciowym Math lib, a cały kod będzie się znajdował
+
+6
+00:00:23,160 --> 00:00:27,390
+w tym zeszycie, a także o wiele więcej informacji, które są dostępne dla
+
+7
+00:00:27,390 --> 00:00:29,690
+ciebie na temat tej fabuły lib.
+
+8
+00:00:30,030 --> 00:00:30,450
+DOBRZE.
+
+9
+00:00:30,510 --> 00:00:34,680
+Zamierzam iść dalej i przeskoczyć do pustego notatnika i przejrzeć cały ten kod
+
+10
+00:00:34,680 --> 00:00:36,300
+i wytłumaczyć go dla ciebie.
+
+11
+00:00:36,300 --> 00:00:39,920
+Pozwól mi wyjść i kliknij tę nową kartę, a tutaj mamy ten nowy notatnik.
+
+12
+00:00:40,110 --> 00:00:44,530
+Kiedy idziesz do przodu i ukrywasz nagłówek i pasek narzędzi, po prostu zyskaj trochę więcej miejsca.
+
+13
+00:00:44,550 --> 00:00:44,920
+DOBRZE.
+
+14
+00:00:44,970 --> 00:00:46,990
+Pójdźmy, aby zacząć o spisku.
+
+15
+00:00:47,490 --> 00:00:48,870
+Po zainstalowaniu spełnione.
+
+16
+00:00:48,900 --> 00:00:58,200
+Pierwszą rzeczą, którą będziesz mógł zrobić, to powiedzenie importu wykresu wykresu wykresu słupkowego jako TLT, a
+
+17
+00:00:58,200 --> 00:01:05,710
+następnie, jeśli korzystasz z notatnika Jupitera, co zrobisz, powiedz, że znak procentu a
+
+18
+00:01:05,720 --> 00:01:11,680
+to pozwoli ci rzeczywiście zobaczyć wykresy utworzone w notatniku Jowisza.
+
+19
+00:01:12,180 --> 00:01:15,750
+Śmiało i działaj tak świetnie.
+
+20
+00:01:15,840 --> 00:01:19,920
+Jeśli nie korzystasz z tego systemu notebooków Jupiter, to co zamierzasz zrobić,
+
+21
+00:01:19,920 --> 00:01:25,770
+to na końcu wszystkich poleceń do drukowania, które pokażą później, co napiszesz, to Hilti, która pokazuje zamknięte
+
+22
+00:01:25,770 --> 00:01:29,100
+nawiasy, a później i faktycznie zaczynamy kreślić przykłady.
+
+23
+00:01:29,100 --> 00:01:32,280
+Asha, wrzuciłbyś to do swojego kodu.
+
+24
+00:01:32,400 --> 00:01:32,850
+W porządku.
+
+25
+00:01:32,940 --> 00:01:37,830
+Przejdźmy dalej i przejdźmy przez bardzo prosty przykład, używając dwóch
+
+26
+00:01:37,860 --> 00:01:46,040
+zdumiewających wyścigów i powiedzmy, że importujemy je PI i P i mówimy, że x jest równy jakiejkolwiek przestrzeni Lynna.
+
+27
+00:01:46,080 --> 00:01:55,020
+Więc będzie to liniowo rozmieszczone, że przejdziemy od 0 do 5 i zdobędziemy 11 punktów, a następnie y będzie
+
+28
+00:01:55,020 --> 00:01:56,210
+równe x.
+
+29
+00:01:56,220 --> 00:01:58,110
+Tak więc moc dwojga.
+
+30
+00:01:58,740 --> 00:02:05,550
+Jeśli więc spojrzymy na x i y, mamy tablicę od 0 do 5, a następnie DLACZEGO po prostu wszystkie te
+
+31
+00:02:05,550 --> 00:02:07,260
+elementy są do kwadratu.
+
+32
+00:02:07,350 --> 00:02:13,200
+Teraz podstawowy dział map Polecenia Lim pozwalają bardzo szybko stworzyć fabułę, a pokażemy Ci dwa sposoby
+
+33
+00:02:13,200 --> 00:02:14,850
+tworzenia wykresów z mapą.
+
+34
+00:02:15,000 --> 00:02:20,550
+Jedna to metoda funkcjonalna, a druga to metoda obiektowa, która najpierw pokaże metodę
+
+35
+00:02:20,550 --> 00:02:24,070
+funkcjonalną, a następnie przejdziemy do metody zorientowanej obiektowo.
+
+36
+00:02:24,210 --> 00:02:28,770
+Ponieważ zazwyczaj jest to lepszy sposób tworzenia wykresu Cutlip, pokażmy
+
+37
+00:02:28,770 --> 00:02:33,040
+najpierw metodę funkcjonalną, a metoda funkcjonalna jest całkiem prosta.
+
+38
+00:02:33,090 --> 00:02:40,290
+Mówisz, że skórki mają wątki, a potem możemy zrobić zakładkę przesunięcia tutaj i masz zamiar przekazać kilka argumentów.
+
+39
+00:02:40,740 --> 00:02:47,130
+Pierwszy, który zamierzasz zrobić, to tylko podstawowa fabuła, która przekazuje twoje X i twoje elementy, a
+
+40
+00:02:47,130 --> 00:02:50,370
+następnie możemy iść dalej i wprowadzać zmiany.
+
+41
+00:02:50,820 --> 00:02:53,000
+I tutaj to rzeczywiście ukaże fabułę.
+
+42
+00:02:53,100 --> 00:02:55,870
+Poszliśmy dalej i obrysowaliśmy X w porównaniu z Y.
+
+43
+00:02:56,150 --> 00:03:00,470
+Jeśli nie znajdujesz się w notatniku Jupitera, który zamierzasz zrobić na końcu tej
+
+44
+00:03:00,480 --> 00:03:06,770
+linii, jeśli jesteś w swoim kodzie, powiedz "pokaż peel", a następnie, jeśli przejdę, zobaczymy, że otrzymujemy ten sam wykres.
+
+45
+00:03:06,810 --> 00:03:11,880
+Nie musisz używać t show, chyba że używasz czegoś, co nie jest notą Jupitera, ale różnica
+
+46
+00:03:11,880 --> 00:03:15,170
+w notatniku Jupitera jest zasadniczo taka, jak przy drukowaniu fabuły.
+
+47
+00:03:15,300 --> 00:03:20,040
+Zauważ tutaj, jeśli nie mam PBT, który pokazuje, że wyjdę.
+
+48
+00:03:20,110 --> 00:03:25,820
+Więc jeśli usunę to lub faktycznie włożę z powrotem, wtedy nie wydostanę się.
+
+49
+00:03:25,830 --> 00:03:34,560
+Zasadniczo to jest to samo, co wystarczy, by zrobić szybką analogię, jak pisanie ciągu znaków, a nie drukowanie ciągu znaków i to
+
+50
+00:03:34,560 --> 00:03:35,040
+jest
+
+51
+00:03:38,720 --> 00:03:40,040
+dokładnie to samo.
+
+52
+00:03:40,040 --> 00:03:44,760
+Co KAELTY Pokazuje, że robienie jest zasadniczo drukowaniem tej fabuły zamiast pokazywania fabuły.
+
+53
+00:03:45,810 --> 00:03:46,290
+W porządku.
+
+54
+00:03:46,590 --> 00:03:51,510
+Na razie właściwie nie będziemy się martwić konsekwentnie wpisującym się koncertem tego koncertu.
+
+55
+00:03:51,780 --> 00:03:54,690
+Jednak jeśli nie korzystasz z notatnika Jupitera, będziesz musiał pisać dalej.
+
+56
+00:03:54,840 --> 00:03:56,370
+Więc miej to na uwadze.
+
+57
+00:03:56,970 --> 00:03:57,460
+W porządku.
+
+58
+00:03:57,630 --> 00:04:02,120
+To jest najbardziej podstawowy sposób na wykreślenie czegoś o polipach, który nie jest taki zły.
+
+59
+00:04:02,370 --> 00:04:09,270
+W rzeczywistości możesz dodać, że fabuła Matlab przypomina takie argumenty, jak kolor i styl życia.
+
+60
+00:04:09,910 --> 00:04:12,810
+A to pozwoli ci kontynuować edycję tego wątku.
+
+61
+00:04:12,840 --> 00:04:17,730
+Powiemy o tym więcej później, jeśli chodzi o style linii i style kolorów, ale jeśli
+
+62
+00:04:17,730 --> 00:04:20,850
+znasz Matlaba, prawdopodobnie już ci to wydaje się znajome.
+
+63
+00:04:21,030 --> 00:04:24,670
+Przejdźmy teraz, aby to usunąć i po prostu przejdźmy do podstaw.
+
+64
+00:04:25,140 --> 00:04:30,330
+Jeśli chcemy dodać etykietę lub tytuł etykiety X do tego wykresu, możemy to zrobić za pomocą następujących metod.
+
+65
+00:04:30,510 --> 00:04:39,240
+Potrafi nazywać etykietę TX, a następnie przekazuje żądany ciąg znaków dla etykiety X lub wychodzi i mówi etykietę X, a następnie
+
+66
+00:04:40,470 --> 00:04:48,750
+dla etykiety y można powiedzieć, że etykieta "pty" w ciągu znaków powoduje, że etykietuje się je dla tytułu, można powiedzieć,
+
+67
+00:04:48,750 --> 00:04:54,240
+że to jest Piazzi a następnie po prostu wprowadzimy tam napis tytułu.
+
+68
+00:04:54,400 --> 00:04:55,810
+Śmiało i uruchom to.
+
+69
+00:04:55,810 --> 00:04:59,290
+A teraz widzimy, że mamy etykietę X a etykieta i tytuł.
+
+70
+00:04:59,430 --> 00:05:05,830
+Później dowiemy się, jak określić CPI lub punkty na cal, aby uzyskać nieco
+
+71
+00:05:05,830 --> 00:05:09,370
+większą jasność, na przykład dokładniejszą czcionkę.
+
+72
+00:05:09,370 --> 00:05:14,890
+Przejdźmy dalej i kontynuujmy tworzenie wielu wykresów na tym samym kanwie.
+
+73
+00:05:15,000 --> 00:05:17,280
+Idziemy dalej i przewijamy tutaj.
+
+74
+00:05:17,380 --> 00:05:23,320
+Usuń komórkę i porozmawiaj o umieszczaniu wielu wątków na tym samym płótnie, aby to zrobić.
+
+75
+00:05:23,310 --> 00:05:29,740
+Zamierzamy powiedzieć, że peel t subplot i subplot również przyjmują kilka argumentów.
+
+76
+00:05:29,740 --> 00:05:34,920
+W tej chwili nie możemy ich zobaczyć, więc powiem ci, że pierwsza będzie liczbą rzędów.
+
+77
+00:05:35,760 --> 00:05:40,300
+Liczba kolumn, a następnie numer działki, do którego odnosisz się
+
+78
+00:05:40,300 --> 00:05:45,970
+w tym przypadku, wystarczy, że powiesz, a my skierujemy coś do tej komórki.
+
+79
+00:05:46,750 --> 00:05:56,940
+Powiemy X Y, a my powiemy, że jest to czerwony ciąg znaków w postaci trzeciego argumentu.
+
+80
+00:05:57,000 --> 00:06:01,480
+Nie martw się zbytnio o pełne zrozumienie tego, ponieważ gdy dojdziemy do metody zorientowanej obiektowo, wiele
+
+81
+00:06:01,810 --> 00:06:03,480
+z tego będzie miało sens.
+
+82
+00:06:03,500 --> 00:06:06,160
+Ale chcę ci pokazać, co jest możliwe na razie.
+
+83
+00:06:06,660 --> 00:06:12,940
+Cóż, przejdźmy dalej i powiedzmy kolejny apel do tej podpowierzchni, że podajemy jeden wiersz za dwie kolumny.
+
+84
+00:06:13,240 --> 00:06:15,110
+Trzecim argumentem jest numer działki.
+
+85
+00:06:15,170 --> 00:06:20,270
+Teraz zamierzamy edytować drugi dział, a my powiemy, że to działka.
+
+86
+00:06:21,040 --> 00:06:27,100
+Wykonaj polecenie Y w stosunku do x i określ B jako niebieski jako ciąg.
+
+87
+00:06:27,100 --> 00:06:30,760
+Tutaj chodźmy dalej i zobaczmy, co otrzymamy.
+
+88
+00:06:31,380 --> 00:06:38,050
+OK, teraz mamy tutaj dwa wątki, które tworzą wiele wątków na tym samym kanwie.
+
+89
+00:06:38,050 --> 00:06:42,640
+Teraz mamy zamiar zrobić, po tym, jak zobaczyliśmy podstawy tworzenia fabuły, które
+
+90
+00:06:42,670 --> 00:06:48,170
+zamierzamy przełamać, aby wprowadzić bardziej formalne wprowadzenie do tej metody API opartej na obiektach biblioteki libs.
+
+91
+00:06:48,280 --> 00:06:52,990
+Oznacza to, że będziemy tworzyć instancje obiektów, a następnie wywoływać metody lub atrybuty z
+
+92
+00:06:52,990 --> 00:06:53,710
+tego obiektu.
+
+93
+00:06:53,710 --> 00:06:56,590
+I będzie to o wiele lepszy sposób na wykorzystanie tej fabuły na żywo.
+
+94
+00:06:56,800 --> 00:07:03,360
+Podstawy na razie wykorzystują PBT, a następnie wprowadzają do danych lub GLT ten wątek, określając liczbę wierszy
+
+95
+00:07:03,490 --> 00:07:07,760
+i kolumn, a następnie liczbę, nad którą pracujemy, a następnie wykorzystując
+
+96
+00:07:07,800 --> 00:07:08,610
+Kilty.
+
+97
+00:07:08,880 --> 00:07:15,940
+Przejdźmy i przełączmy biegi na metodę obiektową, a to będzie znacznie lepsze.
+
+98
+00:07:15,940 --> 00:07:20,500
+Główną ideą przy użyciu bardziej formalnej metody obiektowej jest tworzenie obiektów figur, a następnie po prostu wywoływanie
+
+99
+00:07:20,500 --> 00:07:21,570
+metod z tego.
+
+100
+00:07:21,580 --> 00:07:23,480
+Pozwól mi wejść i pokazać, co przez to rozumiem.
+
+101
+00:07:23,680 --> 00:07:31,860
+Zamierzam iść naprzód i powiedzieć, że figa jest równa figurze, a ja zamierzam wejść i zamknąć
+
+102
+00:07:31,870 --> 00:07:33,300
+tamtejszych książąt.
+
+103
+00:07:33,310 --> 00:07:34,960
+Teraz jeśli po prostu uruchomię tę komórkę.
+
+104
+00:07:34,960 --> 00:07:40,420
+Zauważ, że mam obiekt figurki został utworzony ten obiekt figury można myśleć o nim jako
+
+105
+00:07:40,420 --> 00:07:42,580
+rodzaj tego wyobrażonego puste płótno.
+
+106
+00:07:42,580 --> 00:07:45,810
+I możemy dodać zestaw dostępu do tego kampusu.
+
+107
+00:07:45,940 --> 00:07:55,150
+Tak więc w tej samej komórce powiem, że XS jest równe kropce rysowania, dodajcie osie podkreślenia, a ja dodam
+
+108
+00:07:55,140 --> 00:07:56,270
+zestaw osi.
+
+109
+00:07:56,410 --> 00:08:03,370
+A sposób, w jaki można dodać zestaw osi, jest przekazywany na liście, a lista przyjmuje argumenty dla argumentów
+
+110
+00:08:03,370 --> 00:08:07,930
+lewej dolnej szerokości i wysokości, które obejmują od 0 do 1.
+
+111
+00:08:07,930 --> 00:08:11,930
+Zasadniczo procent tego pustego płótna, które chcesz wykonać i wziąć.
+
+112
+00:08:12,070 --> 00:08:14,670
+Pozwól mi wejść i pokazać przykład.
+
+113
+00:08:14,940 --> 00:08:19,120
+I znowu pokażę Wam wiele rzeczy, które na początku nie będą miały sensu,
+
+114
+00:08:19,120 --> 00:08:23,840
+ale wszystko będzie miało sens na końcu, gdy zobaczycie powtarzające się przykłady, a potem je rozbicie.
+
+115
+00:08:23,880 --> 00:08:26,100
+Więc wpisuję tu tylko kilka liczb.
+
+116
+00:08:26,170 --> 00:08:29,090
+To zostanie z osi.
+
+117
+00:08:29,380 --> 00:08:31,310
+To będzie spód osi.
+
+118
+00:08:31,420 --> 00:08:35,230
+I to będzie szerokość i wysokość osi 0. 8.
+
+119
+00:08:35,290 --> 00:08:37,170
+Pozwól, że przejdę dalej i uruchomię to w komórce.
+
+120
+00:08:37,540 --> 00:08:39,320
+A teraz zauważ, co tu dostaję.
+
+121
+00:08:39,390 --> 00:08:41,920
+Teraz mam pusty zestaw osi.
+
+122
+00:08:42,000 --> 00:08:48,310
+Powiedziałem więc, że ta figura stworzyła obiekt figurki, a następnie od tego obiektu rysunku, który nazwałem, dodałem
+
+123
+00:08:48,650 --> 00:08:54,880
+zestaw osi i przekazałem na listę, gdzie faktycznie chcę umieścić osie, a następnie to, co zamierzam zrobić,
+
+124
+00:08:54,880 --> 00:08:57,800
+to faktycznie spisz na tym zestawie osi.
+
+125
+00:08:58,120 --> 00:09:01,290
+I to będzie dobrze znane z tego, co właśnie zrobiliśmy wcześniej.
+
+126
+00:09:01,360 --> 00:09:07,900
+Zamierzacie powiedzieć, że osie zatrzymują wątki i idźmy dalej i narysujmy x i y na tym zestawie osi, a
+
+127
+00:09:07,900 --> 00:09:09,160
+następnie zmieńmy wejście.
+
+128
+00:09:09,490 --> 00:09:14,440
+Teraz widzimy, że stworzyliśmy tę samą fabułę, co wcześniej, z wyjątkiem metody
+
+129
+00:09:14,500 --> 00:09:15,460
+zorientowanej obiektowo.
+
+130
+00:09:15,460 --> 00:09:21,510
+Jeśli więc przewijam tutaj, to jest fabuła, którą zrobiliśmy wcześniej, po prostu powiedzieliśmy, że Appeal wpadła na tę fabułę, ale teraz
+
+131
+00:09:21,550 --> 00:09:26,040
+używając tego rodzaju metody zorientowanej obiektowo, będziemy mieli o wiele większą kontrolę nad tym.
+
+132
+00:09:26,050 --> 00:09:28,970
+Jest trochę bardziej zaangażowany, jeśli chodzi o kroki, które musimy podjąć.
+
+133
+00:09:29,160 --> 00:09:30,650
+Ale na pewno warto.
+
+134
+00:09:31,140 --> 00:09:34,920
+Więc stworzyliśmy figurę, którą nazwaliśmy metodą figur.
+
+135
+00:09:34,960 --> 00:09:41,030
+Dodaj osie na tym przebiegu, a następnie listę osi, a następnie narysuj je na tych rodzajach osi, jeśli chcemy kontynuować,
+
+136
+00:09:41,050 --> 00:09:43,580
+umieszczając x etykiety i etykiety i tytuły.
+
+137
+00:09:43,620 --> 00:09:45,850
+Możesz to zrobić na tym zestawie osi.
+
+138
+00:09:46,120 --> 00:09:50,070
+Możesz powiedzieć ustawić underscore ex-slave.
+
+139
+00:09:50,620 --> 00:09:53,360
+To trochę różni się od skórki T, która jest tylko etykietą X.
+
+140
+00:09:53,410 --> 00:09:56,770
+Kiedy pracujesz na tym obiekcie Xs, powiesz, ustawiasz podkreślenie.
+
+141
+00:09:57,150 --> 00:10:02,920
+A teraz możemy iść dalej i przekazać ciąg znaków x label, a ty
+
+142
+00:10:03,340 --> 00:10:07,990
+będziesz robił to samo dla y etykiet warg i etykiety.
+
+143
+00:10:08,000 --> 00:10:12,760
+I idźmy dalej i róbmy to samo dla tytułu podkreślenia zestawu tytułów,
+
+144
+00:10:15,550 --> 00:10:21,060
+jeśli uruchomimy to, powinniśmy zobaczyć naszą nową etykietę X label y label i tytuł zestawu.
+
+145
+00:10:21,610 --> 00:10:28,960
+Kontynuujmy ten pomysł programowania obiektowego z tym żywcem, umieszczając dwa zestawy figur na
+
+146
+00:10:28,960 --> 00:10:30,700
+jednym płótnie.
+
+147
+00:10:30,730 --> 00:10:35,350
+A to zacznie mieć sens w odniesieniu do tego, do czego odnosi się ta lista.
+
+148
+00:10:35,440 --> 00:10:40,180
+Zamierzam iść dalej i przewinąć do nowej komórki i powiększyć trochę, aby uzyskać bardzo
+
+149
+00:10:40,180 --> 00:10:42,730
+jasny obraz tego, co faktycznie tutaj robimy.
+
+150
+00:10:42,750 --> 00:10:48,640
+Powiem, że figa jest równa figurze rzeczywistej.
+
+151
+00:10:49,060 --> 00:10:51,800
+Więc tworzę ten obiekt figurki.
+
+152
+00:10:51,940 --> 00:10:53,230
+Więc jest mój obiekt figurki.
+
+153
+00:10:53,280 --> 00:11:02,640
+Zamierzam powiedzieć, że osie są równe osiom kropkowym.
+
+154
+00:11:02,650 --> 00:11:11,380
+Nie mam zamiaru podążać za osią głównych osi, to będzie punkt zerowy jeden punkt zero jeden, a następnie punkt zero
+
+155
+00:11:11,430 --> 00:11:13,840
+osiem zero. 8.
+
+156
+00:11:13,940 --> 00:11:19,430
+I znowu to jest lewe dno, a następnie szerokość i wysokość tego rodzaju osi.
+
+157
+00:11:19,570 --> 00:11:28,710
+A potem dodam jeszcze jeden zestaw osi osi kolumn, a następnie dwie figi i podkreślenia.
+
+158
+00:11:28,720 --> 00:11:34,140
+A potem, kiedy mam zamiar iść do przodu i zrobić to w zasadzie
+
+159
+00:11:34,210 --> 00:11:41,180
+wstawić osie, powiem, że dolny zestaw osi zaczyna się 20 procent od lewego 50 procent od dołu.
+
+160
+00:11:41,670 --> 00:11:44,240
+Przepraszam, mówię o tym w zasadzie.
+
+161
+00:11:44,290 --> 00:11:46,790
+Ten dolny róg oskrzydlonych osi i dno.
+
+162
+00:11:46,810 --> 00:11:51,450
+Tak więc 20 procent w lewo od 50 procent w górę od dołu.
+
+163
+00:11:51,790 --> 00:11:57,310
+A potem powiemy, że zajmuje 40 procent rozmiaru i szerokości płótna oraz 30 procent rozmiaru i
+
+164
+00:11:57,310 --> 00:11:58,310
+wysokości płótna.
+
+165
+00:11:58,500 --> 00:12:01,690
+Zatem wszystkie te wartości muszą mieć wartość od 0 do 1.
+
+166
+00:12:01,960 --> 00:12:06,180
+Pójdźmy dalej i uruchom to i wiedz, co otrzymujemy.
+
+167
+00:12:06,310 --> 00:12:12,400
+Wydobywamy ten podstawowy zestaw osi i mam nadzieję, że teraz możesz zacząć dostrzegać, co te wartości faktycznie
+
+168
+00:12:12,420 --> 00:12:18,190
+odpowiadają temu, co chcę teraz zrobić, to śmiało i wstrzymaj wideo i baw się z tymi
+
+169
+00:12:18,190 --> 00:12:18,900
+liczbami.
+
+170
+00:12:18,900 --> 00:12:24,540
+Upewnij się, że wszystkie są pomiędzy 0 a 1 i zobacz, jak korelują z tym zestawem osi.
+
+171
+00:12:24,550 --> 00:12:28,200
+Śmiało i po prostu baw się z osiami 2 i poruszaj nimi.
+
+172
+00:12:28,210 --> 00:12:32,940
+Na przykład spróbuj wykonać tego rodzaju topory w tym dolnym rogu.
+
+173
+00:12:33,150 --> 00:12:34,050
+Dobra impulsywność.
+
+174
+00:12:34,090 --> 00:12:37,920
+Sprawdź, czy możesz przenieść to ubezpieczenie do dolnego rogu.
+
+175
+00:12:37,950 --> 00:12:38,280
+W porządku.
+
+176
+00:12:38,290 --> 00:12:40,130
+Zobaczę, czy mogę to teraz zrobić.
+
+177
+00:12:40,690 --> 00:12:48,130
+Więc jeśli chcę tego w dolnym rogu, prawdopodobnie chcę powiedzieć, że idzie on w lewo, szerokość i wysokość.
+
+178
+00:12:48,650 --> 00:12:53,790
+Tak więc spróbuję zmienić to ustawienie, czyniąc to w zasadzie 0, więc zacznij.
+
+179
+00:12:53,950 --> 00:12:58,910
+Cóż, powie to 0. 1 tutaj zaczyna się od zera 1 5.
+
+180
+00:12:58,920 --> 00:13:05,270
+Więc trochę na dole tego wstawienia tutaj Osi 1 pójdzie naprzód i uruchom to.
+
+181
+00:13:06,000 --> 00:13:10,300
+I tam byłem w stanie przesunąć go bardziej w kierunku dołu, pamiętaj, że ten drugi jest dnem.
+
+182
+00:13:10,500 --> 00:13:15,350
+A teraz chcemy przesunąć się bardziej w prawo, co oznacza od lewej jeden lub dwa procent.
+
+183
+00:13:15,360 --> 00:13:19,530
+Mądry posuń ten dolny róg jeszcze bardziej z lewej strony.
+
+184
+00:13:19,600 --> 00:13:22,310
+Przejdźmy do ustawienia jako 8.
+
+185
+00:13:23,580 --> 00:13:25,640
+I wygląda na to, że przesunęło to trochę za bardzo.
+
+186
+00:13:25,620 --> 00:13:32,550
+Więc chodźmy i przenieśmy to z powrotem do może piątki i tam widzimy, że mamy to teraz na dole.
+
+187
+00:13:32,560 --> 00:13:34,460
+Dobra, idź się pobawić, jeśli tak.
+
+188
+00:13:34,500 --> 00:13:38,170
+Jeśli te liczby są tymi liczbami, to nadal są niejasne.
+
+189
+00:13:38,160 --> 00:13:44,370
+Pamiętajcie, że w zasadzie oznaczają one tylko lewe dno, a szerokość i wysokość z zakresu od
+
+190
+00:13:44,720 --> 00:13:47,210
+0 do 1 względem pustego płótna.
+
+191
+00:13:47,290 --> 00:13:55,280
+Idziemy dalej i zresetować je do tego, co mamy w pierwotnym 0. 2 i 0. 5.
+
+192
+00:13:55,600 --> 00:13:57,410
+Mamy więc naszą małą wkładkę.
+
+193
+00:13:57,700 --> 00:14:00,880
+I wtedy to, co zamierzam zrobić, to iść dalej i spiskować na tych osiach.
+
+194
+00:14:01,090 --> 00:14:12,310
+Tak więc powiem, że osie mają jedną fabułę, a ja powiem, że X przychodzi a Y, a potem powiem, że dwie osie pójdą
+
+195
+00:14:12,390 --> 00:14:16,510
+i powiedzą, dlaczego przychodzą x Chodźmy i biegnijmy.
+
+196
+00:14:16,500 --> 00:14:24,030
+I teraz widzę teraz, że mam swoją małą insurację i moją zewnętrzną fabułę, a następnie mogę dodawać rzeczy na każdym zestawie
+
+197
+00:14:24,040 --> 00:14:29,480
+osi, jeśli chcę, aby moja wstawka miała tytuł, na przykład, do której są osie.
+
+198
+00:14:29,520 --> 00:14:38,500
+Mogę powiedzieć osie do ustawionego tytułu, a my pójdziemy i powiemy wstawić.
+
+199
+00:14:38,750 --> 00:14:44,870
+Cóż, to sprawi, że będzie jasne, że powiemy mniejsze partie, a następnie na osiach 1.
+
+200
+00:14:45,150 --> 00:14:46,470
+Ustawmy tytuł,
+
+201
+00:14:49,140 --> 00:14:54,550
+a my ustawimy ten tytuł jako większe skórki i uruchomimy to.
+
+202
+00:14:55,210 --> 00:14:57,100
+Zauważ, co się tutaj stało.
+
+203
+00:14:57,140 --> 00:15:02,290
+Faktycznie dostałem błąd, ponieważ nie widziałem mniejszej fabuły, ponieważ zapomniałem umieścić 2.
+
+204
+00:15:02,290 --> 00:15:04,960
+Tutaj uruchommy to jeszcze raz.
+
+205
+00:15:04,990 --> 00:15:07,250
+OK, teraz otrzymujemy to, co powinniśmy dostać.
+
+206
+00:15:07,270 --> 00:15:09,610
+Mamy większą działkę i mniejszą działkę.
+
+207
+00:15:09,880 --> 00:15:15,860
+I w zasadzie to jest idea programowania obiektowego, że Portland tworzysz figurę.
+
+208
+00:15:15,900 --> 00:15:17,830
+A to w zasadzie tylko puste płótno.
+
+209
+00:15:17,980 --> 00:15:22,110
+Więc pozwól mi wejść i pokazać to jeszcze raz, po prostu umieszczając to w komórce.
+
+210
+00:15:22,890 --> 00:15:25,650
+Tworzymy pustą figurkę, nie ma nic do pokazania.
+
+211
+00:15:25,720 --> 00:15:34,900
+Następnie dodajesz do niego zestaw osi, wypisując osie, niezależnie od jednego lub dwóch itd. jest równy myślom figowym w osiach podkreślenia, a ty przechodzisz i
+
+212
+00:15:34,890 --> 00:15:40,540
+tej liście, która przechodzi od lewego dołu, a następnie szerokości i wysokości w stosunku
+
+213
+00:15:40,540 --> 00:15:42,720
+do tego pustego płótna.
+
+214
+00:15:42,730 --> 00:15:47,920
+Jeśli więc uruchomimy to, mamy pusty zestaw osi, a następnie możesz oddzielić te
+
+215
+00:15:47,910 --> 00:15:53,060
+osie, możesz powiedzieć osie jeden wykres, a następnie X przyjdź Y.
+
+216
+00:15:53,130 --> 00:15:53,940
+W porządku.
+
+217
+00:15:53,940 --> 00:15:59,590
+Jest to rodzaj metodologii, z którą będziemy pracować w odniesieniu do Cutlip na mapie, jeśli chodzi o bardzo
+
+218
+00:15:59,590 --> 00:16:02,750
+podstawowy sposób działania tej niepustej, która jest metodą funkcjonalną.
+
+219
+00:16:02,860 --> 00:16:06,890
+Możesz po prostu odwołać się do tej fabuły lub obrać ten wątek.
+
+220
+00:16:06,920 --> 00:16:11,410
+Nauczymy się tworzyć podgrupy za pomocą tej zorientowanej obiektowo metody, która będzie
+
+221
+00:16:11,400 --> 00:16:14,190
+znacznie wydajniejsza i zapewni nam większą kontrolę.
+
+222
+00:16:14,560 --> 00:16:15,700
+DOBRZE.
+
+223
+00:16:15,690 --> 00:16:20,250
+Śmiało i przejrzyj tę część konspektu mapy lib nie wykładaj książki.
+
+224
+00:16:20,290 --> 00:16:25,450
+W notatniku jest o wiele więcej notatek i dużo więcej komentarzy na wypadek, gdyby coś z
+
+225
+00:16:25,780 --> 00:16:30,210
+tego było zdezorientowane, ale miejmy nadzieję, że teraz w pełni to rozumiesz.
+
+226
+00:16:30,370 --> 00:16:34,420
+Te linijki kodu tutaj, jeśli rozumiesz, co się dzieje w komórce, wtedy jesteś
+
+227
+00:16:34,410 --> 00:16:35,340
+całkiem niezły.
+
+228
+00:16:35,380 --> 00:16:36,900
+Po prostu tworzymy figurę.
+
+229
+00:16:37,030 --> 00:16:43,150
+Dodajemy osie do tej figury, aby znaleźć położenie tego zbioru osi za pomocą tej listy, a następnie można
+
+230
+00:16:43,140 --> 00:16:48,140
+drukować na tego rodzaju osiach, aby ustawić tytuły na etykiecie X etykieta y itd.
+
+231
+00:16:48,180 --> 00:16:49,000
+W porządku.
+
+232
+00:16:49,000 --> 00:16:49,890
+Dziękuję wszystkim.
+
+233
+00:16:50,000 --> 00:16:54,930
+Do zobaczenia na następnym wykładzie lub zamierzamy kontynuować tę dyskusję z tego samego
+
+234
+00:16:54,930 --> 00:16:55,930
+notatnika Jowisza.
+
+235
+00:16:55,990 --> 00:16:57,430
+Dzięki, a do zobaczenia następnego wykładu

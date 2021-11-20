@@ -1,0 +1,955 @@
+1
+00:00:05,940 --> 00:00:10,350
+Herkese merhaba ve turta hoş geldiniz çözümleri bu dersi anlatıyor.
+
+2
+00:00:10,380 --> 00:00:13,880
+Egzersizlerin çözümlerini manuel olarak kodlayacağız.
+
+3
+00:00:13,890 --> 00:00:17,250
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+4
+00:00:17,250 --> 00:00:17,540
+Tamam.
+
+5
+00:00:17,540 --> 00:00:19,820
+Yani ben burada Jüpiter defterindeyim.
+
+6
+00:00:20,190 --> 00:00:23,120
+Hadi başlayalım ve sadece önemli hakemlerle başlayalım ve.
+
+7
+00:00:23,740 --> 00:00:27,720
+Umarım bunu kolayca yapabilirsin, komutunu kolayca ayarlar, temelde sizin için
+
+8
+00:00:27,720 --> 00:00:27,970
+yazılıdır.
+
+9
+00:00:28,020 --> 00:00:30,140
+Vardiya ne zaman önem kazanır.
+
+10
+00:00:30,240 --> 00:00:31,880
+Gitmeye hazırız.
+
+11
+00:00:31,890 --> 00:00:32,130
+TAMAM.
+
+12
+00:00:32,130 --> 00:00:35,590
+Önce 10 sıfır dizisi oluşturmak istedik.
+
+13
+00:00:35,730 --> 00:00:42,910
+Bunu yapmanın kolay bir yolu sadece N'yi söylemektir. P. sıfırlar ve geçmiş 10 rakamları ve
+
+14
+00:00:42,940 --> 00:00:48,120
+çıktıları olmayan kesin çıktı oranı 10'lu bir dizi oluşturmak için çıktı çıktı
+
+15
+00:00:48,120 --> 00:00:54,550
+Eğer sıfır kullanmak yerine olanlar ve 10'u geçtikten sonra aynı şeyi yapabilirsiniz 10 saniyeniz var.
+
+16
+00:00:54,570 --> 00:00:56,190
+Şimdi on beşlik bir dizi oluşturuyor.
+
+17
+00:00:56,190 --> 00:01:03,330
+Aslında bunu yapmanın birkaç yolu var, ancak kolay bir yol sadece mutlu
+
+18
+00:01:03,330 --> 00:01:07,570
+olanlar demek ve ardından beşe kadar ilerleyebilmek.
+
+19
+00:01:08,310 --> 00:01:11,340
+Ve bu size 10 beşlik bir dizi bulacak.
+
+20
+00:01:11,550 --> 00:01:18,020
+Başka bir deyişle, bunu yapabilirdiniz, yani N'dir. P. Sıfırların 10'u.
+
+21
+00:01:18,780 --> 00:01:22,680
+Ve sonra yapabildiklerine beş tane eklemelisin.
+
+22
+00:01:22,680 --> 00:01:26,220
+Ve bu muhtemelen 10 beşli bir dizi oluşturmak için en basit iki yolu.
+
+23
+00:01:26,220 --> 00:01:27,920
+Çok çabuk.
+
+24
+00:01:27,990 --> 00:01:28,430
+Tamam.
+
+25
+00:01:28,470 --> 00:01:32,310
+Şimdi 10'dan 50'ye kadar bir tamsayı dizisi yaratmak istiyoruz.
+
+26
+00:01:32,550 --> 00:01:36,510
+Umarım bunu gördüğünüzde, diziyi düşündüren çıktı olur. işlevi.
+
+27
+00:01:36,530 --> 00:01:38,460
+Bunu yapmanın en kolay yolu bu yana.
+
+28
+00:01:39,090 --> 00:01:46,660
+Dolayısıyla bir aralıktayız ve 10'dan 50'ye gittik ve bu, ilk girdi olarak 10'da başlamak istiyoruz, ve dizinleme
+
+29
+00:01:46,870 --> 00:01:50,740
+sıfırdan başlayacağından 50'yi de dahil etmek istediğimizi söylüyoruz demektir.
+
+30
+00:01:50,850 --> 00:01:58,480
+Girdiğimizde 51'e gitmek zorundayız ve bu da çıktı tam sayılarını 10'dan 50'ye çıkarıyor.
+
+31
+00:01:58,500 --> 00:02:03,330
+Yapmanız gereken şey, 10'dan 50'ye kadar olan tüm tam sayıların bir dizisini oluşturmaktır.
+
+32
+00:02:03,330 --> 00:02:05,500
+Bu da oldukça basittir.
+
+33
+00:02:05,540 --> 00:02:10,800
+Umarım dersten şunu hatırlarım: üçüncü argümanlar asıl argümanı isterseniz sekmeyi değiştirirler ancak
+
+34
+00:02:11,070 --> 00:02:14,730
+bir adım büyüklüğüne erişebilir ve tamsayılar isteyeceğinizi söyleyebilirim.
+
+35
+00:02:14,730 --> 00:02:20,340
+Ben ilerleyip iki basamaklı bir adım koyacağım ve daha sonra tam sayılardan 10'dan
+
+36
+00:02:20,340 --> 00:02:21,370
+50'ye çıkacağım.
+
+37
+00:02:21,960 --> 00:02:22,350
+TAMAM.
+
+38
+00:02:22,350 --> 00:02:28,790
+Hareket halinde, sıfırdan 8'e değişen değerlerle üç üçlü Matrix oluşturmak istedik.
+
+39
+00:02:28,800 --> 00:02:31,900
+Bu, iki adımlık bir işlem olacak.
+
+40
+00:02:32,040 --> 00:02:40,170
+Önce arr kullanarak oluşturmak için gidiyorsun. oluşturacak ve bunun üç üçlü Matrix olmasını istiyorum.
+
+41
+00:02:40,350 --> 00:02:43,860
+burada pasan'ı dokuz, strateji 0 8
+
+42
+00:02:43,860 --> 00:02:48,600
+Yapabileceğim, üçüncüsü üçgen şekillendirmenin olduğunu söyleyebilirim.
+
+43
+00:02:48,840 --> 00:02:53,950
+Ve bu, 0'dan AIDS'e kadar değişen üç üçlü matris matrisi üretir.
+
+44
+00:02:53,970 --> 00:02:58,650
+Şimdi de bunu iki basamağa ayırabildiniz demektir, yani eşittir 9 gibi
+
+45
+00:02:59,350 --> 00:03:07,680
+bir şey söyleyebilirdim ve üçte üçüyle yeniden şekillendirmeyi ayarlayabilirdik ve o zaman aynı şeyi sadece iki ayrı net ayrı
+
+46
+00:03:07,680 --> 00:03:09,720
+ayrı adımda tekrar edecekti.
+
+47
+00:03:09,720 --> 00:03:14,190
+Ancak, Pi'yle çalıştığınız zamanların çoğunda, bu yöntemleri birbirinin
+
+48
+00:03:14,190 --> 00:03:15,200
+üstüne yapıştırırsınız.
+
+49
+00:03:15,240 --> 00:03:16,260
+Tamam.
+
+50
+00:03:16,260 --> 00:03:18,320
+Ardından, üç üçlük oluşturmak zorunda kaldınız.
+
+51
+00:03:18,330 --> 00:03:19,870
+Matrisi görmek eğilimindeyim.
+
+52
+00:03:20,070 --> 00:03:23,920
+Umarım hakem A'nın ilk konusundaki komutu hatırlarsınız.
+
+53
+00:03:23,970 --> 00:03:25,440
+Ama bu sadece ben
+
+54
+00:03:25,890 --> 00:03:31,920
+Ve siz sadece matrislerin kare olması gerektiğini ve üçüncüsünün üçte üç olduğunu
+
+55
+00:03:31,920 --> 00:03:32,690
+görmedim.
+
+56
+00:03:32,700 --> 00:03:34,890
+Iret ve matrix'i görün.
+
+57
+00:03:34,890 --> 00:03:36,090
+Tamam.
+
+58
+00:03:36,090 --> 00:03:42,050
+Sırada, 0 ile 1 arasında rastgele bir sayı üretmek için bazı PI kullanmak istedi.
+
+59
+00:03:42,070 --> 00:03:48,270
+Aslında bunu yapmanın birkaç yolu var, ancak muhtemelen en kolay olanı P'ye bu rastgele
+
+60
+00:03:48,480 --> 00:03:55,490
+geçiş ve Ranz'ın dersin o ve 0 ile 1 arasında rastgele değerler verdiğini hatırlaması olduğunu söylemektir.
+
+61
+00:03:55,530 --> 00:04:01,410
+Bu yüzden burada bir tane geçebilirim ve 0 ile 1 arasında rasgele bir değer döndürür.
+
+62
+00:04:01,410 --> 00:04:06,220
+Şimdi cevabınız benimkilerinkinden biraz farklı olabilir, ancak bunun nedeni bunun rasgele olmasıdır.
+
+63
+00:04:06,330 --> 00:04:08,540
+Her zaman bunu çalıştırdığınızda farklı bir sayı elde edersiniz.
+
+64
+00:04:08,550 --> 00:04:11,190
+Fakat her zaman sıfır ve bir arasında olmalıdır.
+
+65
+00:04:11,190 --> 00:04:14,010
+Eğer argümanınız olarak tek bir rakamı iletirseniz.
+
+66
+00:04:14,010 --> 00:04:19,980
+Randevu alınmış rasgele düşünce Rand, 0 ve 1 arasında rastgele bir sayı döndürür.
+
+67
+00:04:20,790 --> 00:04:26,820
+Bundan sonra standart bir normal dağılımdan 25 rasgele sayı örneği dizisi üretmek için
+
+68
+00:04:26,820 --> 00:04:28,310
+pi'yi kullanmak istedik.
+
+69
+00:04:28,320 --> 00:04:34,920
+Umarım bu, N'yi arayabileceğinizi hatırlamanın önemli bir kelimedir. P. Rasgele düşünce Rand n
+
+70
+00:04:35,140 --> 00:04:41,640
+düşünülür ve burada sekmeyi değiştirirseniz bu standart normal dağılımdan bir örnek döndürür
+
+71
+00:04:41,790 --> 00:04:44,120
+ve bu temelde oradaki sonuncusudur.
+
+72
+00:04:44,400 --> 00:04:51,540
+koyabilir ve standart normal dağılımdan 25 rastgele numara numunesi dizisi döndürür.
+
+73
+00:04:51,540 --> 00:04:52,710
+Böylece 25'e
+
+74
+00:04:52,830 --> 00:04:57,480
+Ve burada parantezlerle bunun beş beş değil yirmi beş sayıdan
+
+75
+00:04:57,480 --> 00:05:00,540
+sadece bir boyutlu bir dizi olduğunu söyleyebilirsiniz.
+
+76
+00:05:00,540 --> 00:05:07,290
+Aslında burada şekil belirterek beş beş yerine 25 yerine koyduğunu doğrulayabilirsiniz.
+
+77
+00:05:07,290 --> 00:05:07,940
+Tamam.
+
+78
+00:05:08,010 --> 00:05:13,020
+Şimdi, aşağıdaki matrisi yaratmak ve bu matrisin aslında ne yaptığına dikkat etmek istedik.
+
+79
+00:05:13,800 --> 00:05:15,650
+Bu iki boyutlu bir matristir.
+
+80
+00:05:15,720 --> 00:05:18,590
+Burada iki parantez grubundan bunu söyleyebiliriz.
+
+81
+00:05:19,110 --> 00:05:22,020
+Ve sıfır noktası sıfırdan da geçer.
+
+82
+00:05:22,170 --> 00:05:29,550
+Ve sıfır noktası sıfır ya da bir adım büyüklüğüne gider gibi görünüyor Ek olarak şimdi bir yolu var bunu yapmak
+
+83
+00:05:29,880 --> 00:05:31,710
+için aslında iki yolu var.
+
+84
+00:05:31,710 --> 00:05:36,120
+Önce çözüm hakkında gösterilen yolu inceleyip, bunu düşünmenin daha kolay bir yolu olabilir
+
+85
+00:05:36,120 --> 00:05:40,010
+ve o zaman bu alanı kullanarak daha akıllı bir yol göstereceğim.
+
+86
+00:05:40,020 --> 00:05:48,990
+Dolayısıyla bunu yapmanın bir yolu, Range'in 1'den 101'e ineceğini ve ilk önce Saray'yı henüz
+
+87
+00:05:48,990 --> 00:05:50,000
+tamamlamadığımızı söylüyor.
+
+88
+00:05:50,010 --> 00:05:55,960
+İstediğimiz ve ilerleyip yapacağımız şey, bunu 10 x 10 dizisi olacak şekilde yeniden şekillendirmek.
+
+89
+00:05:56,400 --> 00:05:59,750
+Ve sonra neredeyse oradayız ancak 1'den 100'e gittiğimizin farkına varıyoruz.
+
+90
+00:05:59,790 --> 00:06:02,820
+Yani yapabilirsem, bunu 100'e bölün.
+
+91
+00:06:03,630 --> 00:06:07,960
+Ve bu, 10 x 10 dizilimi çift parantezlerim olan diziyi döndürür.
+
+92
+00:06:08,160 --> 00:06:15,170
+Sıfır noktadan sıfıra veya adım boyutunda bir noktaya veya bir noktaya gider. Ayrıca 1'e kadar.
+
+93
+00:06:15,240 --> 00:06:16,980
+Buna eklemenin bir yolu bu.
+
+94
+00:06:17,250 --> 00:06:19,370
+Ve çözüm kitaplarında gösterilen yol budur.
+
+95
+00:06:19,380 --> 00:06:23,640
+yapmanın bir başka gerçekten güzel yolu ve umarım bu, başlamak için
+
+96
+00:06:23,640 --> 00:06:30,120
+bunu düşünmenin yoludur; ancak aynı zamanda uzayda da yapabilir ve nereden başlamış olduğunuzu ve nerede durduğunuzu not edebilirsiniz.
+
+97
+00:06:30,120 --> 00:06:30,990
+Ancak bunu
+
+98
+00:06:31,020 --> 00:06:35,870
+Yani 0'dan başlayacağız. 01 1'e kadar yol alıyor.
+
+99
+00:06:36,030 --> 00:06:45,570
+Ve bunlar doğrusal olarak aralıklı olarak 100'ü söyleyebilirim ve bunu 10 x 10 matris olarak yeniden şekillendireceğim ve burada
+
+100
+00:06:46,190 --> 00:06:49,260
+elde ettiğimle aynı sonuca geri döndüreceğim.
+
+101
+00:06:49,530 --> 00:06:52,470
+Yani bu iki cevap da gayet iyi.
+
+102
+00:06:52,500 --> 00:06:56,730
+Bunu yapmanın birkaç yolu var, ancak bunlar muhtemelen en mantıklı ve açık olan
+
+103
+00:06:56,730 --> 00:06:57,320
+iki belgedir.
+
+104
+00:06:57,330 --> 00:07:01,170
+Her iki durumda da tamamen iyi ve umarım biri bunlardan biridir anlamaya başardık.
+
+105
+00:07:01,320 --> 00:07:06,600
+Bu, zor bir sorunun biraz zor bir sorudur, çünkü burada gerçekten sıfır noktası
+
+106
+00:07:06,600 --> 00:07:10,710
+olduğuna dikkat etmediğiniz sürece açık bir model yoktur. İlaveten, çift
+
+107
+00:07:10,710 --> 00:07:15,390
+parantez seti olduğuna dikkat edin. onlara ek olarak 10 x 10.
+
+108
+00:07:15,390 --> 00:07:15,870
+Tamam.
+
+109
+00:07:15,990 --> 00:07:17,970
+Hadi devam edelim.
+
+110
+00:07:17,970 --> 00:07:22,710
+Şimdi, 0 ile 1 arasında 20 doğrusal aralıklı nokta dizisi oluşturmak istedik.
+
+111
+00:07:22,740 --> 00:07:30,640
+Bunun için yapmanız gereken tek şey N'dir. P. Lynn space ve sonra 0 ile 1 arasında gidiyoruz.
+
+112
+00:07:30,960 --> 00:07:37,170
+1 ve daha sonra 20 doğrusal aralıklı nokta geldiğini söyleyebilirim ve bu bana orada tam cevabı bulur.
+
+113
+00:07:37,170 --> 00:07:39,030
+Bu yüzden ilerleyebilir ve sıfırın
+
+114
+00:07:39,060 --> 00:07:40,020
+Tamam.
+
+115
+00:07:40,020 --> 00:07:45,090
+Şimdi bir matris matt cinsel olarak birkaç matris verilecek ve yapmak istediğimiz
+
+116
+00:07:45,090 --> 00:07:47,410
+matris çıktılarını tekrar etmeyi istemek.
+
+117
+00:07:47,700 --> 00:07:51,390
+Yine burada kodunuzu yazmak zorunda kaldıysanız, aksi halde kopyalamanız gereken çıktı
+
+118
+00:07:51,390 --> 00:07:52,470
+üzerine yazmış olursunuz.
+
+119
+00:07:52,470 --> 00:07:55,050
+Öyleyse devam edin ve bunu yapmaya başlayalım.
+
+120
+00:07:55,080 --> 00:08:02,540
+Öncelikle, 12 ila 15 ve ardından 12 17:22 sıra dizisinin bu bölümünü kapmak zorundaydık.
+
+121
+00:08:02,550 --> 00:08:06,260
+Peki, bunu nasıl yorumlayacağımızı netleştirecek şekilde nasıl yapacağız.
+
+122
+00:08:06,390 --> 00:08:08,480
+İlk yapmak istediğim, Matt'i aramaktır.
+
+123
+00:08:09,120 --> 00:08:13,880
+Ve sonra burada bir virgül koyacağım ve istediğiniz sıralara bir göz atalım.
+
+124
+00:08:14,190 --> 00:08:18,680
+İstediğim satırlar 12 17 22'de başlıyor.
+
+125
+00:08:18,780 --> 00:08:28,530
+Bu son üç satıra benziyor, yani endekse bakarsam 0 1 2 Satırları ve geçmiş her
+
+126
+00:08:28,530 --> 00:08:29,620
+şeyi istiyorum.
+
+127
+00:08:29,670 --> 00:08:37,830
+Yani Colon'a bunlar benim sıralarım ve içeri girip, bu satırların tüm sütunlarını seçmek için bir iki
+
+128
+00:08:37,860 --> 00:08:40,170
+nokta üst üste koyarak onaylayalım.
+
+129
+00:08:40,460 --> 00:08:43,070
+Hücrenizi hücrelere koşmak zorunda kaldım.
+
+130
+00:08:43,660 --> 00:08:44,190
+TAMAM.
+
+131
+00:08:44,460 --> 00:08:45,070
+Ben de koştum bunu.
+
+132
+00:08:45,070 --> 00:08:46,200
+Bu yüzden sorun yok
+
+133
+00:08:46,230 --> 00:08:47,910
+Ve şimdi her şeyi seçiyorum.
+
+134
+00:08:47,910 --> 00:08:52,910
+Bu sıralardan gelen tüm sütunlar ve şimdiye kadar iyi olduğumuza göre aslında alt kümeyi burada görebiliyoruz.
+
+135
+00:08:52,980 --> 00:08:54,510
+Böylece sıralar üzerinde iyiyim.
+
+136
+00:08:54,510 --> 00:08:59,820
+durumda Sütun 1 dizininden 1 ve sonrasında kapmak istediğimi görebiliyorum.
+
+137
+00:08:59,820 --> 00:09:03,190
+Sırada, doğru sütunları yakalamak istiyorum, bu
+
+138
+00:09:03,330 --> 00:09:07,850
+Bu yüzden aslında sadece bir iki nokta üst üste geçip koşacağım ve bu benim cevabım.
+
+139
+00:09:07,850 --> 00:09:09,430
+Eşleştiğini görebiliyorum.
+
+140
+00:09:09,510 --> 00:09:15,180
+Bunu bir kez daha kırmak için, satır dizininden herşeyden geçmişe gidiyorum ve sonra sütun
+
+141
+00:09:15,180 --> 00:09:18,120
+dizini bir ve her şey geçtiğimden geçti.
+
+142
+00:09:18,120 --> 00:09:20,550
+Burada böyle bir gösterim var.
+
+143
+00:09:20,580 --> 00:09:21,530
+Pekâlâ, devam edin.
+
+144
+00:09:21,540 --> 00:09:23,340
+Bir sonrakine geç.
+
+145
+00:09:23,430 --> 00:09:29,490
+Sıradaki ben sadece 20 numarayı tutmak istedim, bu yüzden Matt'e tekrar bakarsam 20 numarayı
+
+146
+00:09:29,490 --> 00:09:30,300
+tutmak istiyorum.
+
+147
+00:09:30,310 --> 00:09:32,300
+Hadi ilerleyip nerede olduğunu bulalım.
+
+148
+00:09:32,330 --> 00:09:36,030
+Bu davada tam burada.
+
+149
+00:09:36,030 --> 00:09:40,290
+Anlamı, satır ilk şey uzun çıkardı 0 1 2 3.
+
+150
+00:09:40,320 --> 00:09:41,800
+Yani satır 3'te.
+
+151
+00:09:41,960 --> 00:09:43,990
+Ya da devam edin ve içeri girin.
+
+152
+00:09:44,460 --> 00:09:51,100
+Ve sonra 0 1 2 3 4 6 son sütuna kadar.
+
+153
+00:09:51,120 --> 00:09:52,890
+İndeksleme sıfırdan başlar.
+
+154
+00:09:52,890 --> 00:09:58,310
+Matt 3'ün gelmesinden önce, bu beni mükemmel kılacaksa derim.
+
+155
+00:09:58,430 --> 00:10:05,370
+Pekâlâ, bunu kapmak istedim 2 7 12 devam edebilir ve matematiğin neye benzediğini görebilirim.
+
+156
+00:10:05,370 --> 00:10:07,510
+İşte benim haritam ve iki tane 7 almak istiyorum.
+
+157
+00:10:07,530 --> 00:10:09,060
+Hadi tekrar ileri gidelim.
+
+158
+00:10:09,060 --> 00:10:12,860
+Bunu satırlara karşı sütunlara bölün 2 7 12.
+
+159
+00:10:12,870 --> 00:10:14,380
+Görünüşe göre burada.
+
+160
+00:10:14,400 --> 00:10:21,840
+istiyorum, bu yüzden yalnızca 2 7 ve 12 anlama kadar tutmak istiyorum ve dizin numarası 3 dahil değil.
+
+161
+00:10:22,200 --> 00:10:26,120
+Bu yüzden belirli bir sayıda satıra kadar her şeyi kapmak
+
+162
+00:10:26,130 --> 00:10:28,990
+Yani bu 0 1 2.
+
+163
+00:10:29,190 --> 00:10:32,580
+Bu yüzden devam edip her şeyi üçe kadar söyleyeceğim.
+
+164
+00:10:32,610 --> 00:10:39,850
+Devam edelim ve tıpkı bir iki nokta üstüste koyarak ve burada doğru satırlara sahip olduğumdan
+
+165
+00:10:39,850 --> 00:10:40,640
+emin olalım.
+
+166
+00:10:40,660 --> 00:10:47,590
+Şimdi sadece doğru kolonu alalım ve bu durumda çıktı hakkında bilmek önemli bir
+
+167
+00:10:47,590 --> 00:10:48,460
+şey var.
+
+168
+00:10:48,460 --> 00:10:56,380
+birer birer anlamına geliyor ve bu yüzden birer sütun ile üç sıra var, yani sütun numarasını girersem demek oluyor.
+
+169
+00:10:57,340 --> 00:11:01,290
+Çıktı burada iki köşeli ayraç anlamına geliyor ve bu üçü
+
+170
+00:11:01,600 --> 00:11:08,680
+Örneğin ben sadece 0 1'i görelim, 712'ye çıkardım.
+
+171
+00:11:08,860 --> 00:11:09,970
+Fakat şekli buraya dikkat edin.
+
+172
+00:11:09,960 --> 00:11:12,120
+Bu sadece tek boyutlu bir dizidir.
+
+173
+00:11:12,220 --> 00:11:15,440
+Ve bu durumda iki parantez seti çıktı istiyorum çıktı.
+
+174
+00:11:15,520 --> 00:11:20,100
+Bunu yapmanın tek yolu aslında dilim gösterimini kullanarak endeksleme yapmaktır.
+
+175
+00:11:20,200 --> 00:11:24,000
+Bu yüzden, bir tanesinden iki tanesine kadar her şeyi söylemek zorundayım.
+
+176
+00:11:24,070 --> 00:11:28,270
+tuhaf görünebilir ama işte devam edersem bunun yolu aynı biçimde kapabilirim.
+
+177
+00:11:28,270 --> 00:11:29,980
+Ve bu ilk bakışta biraz
+
+178
+00:11:29,980 --> 00:11:35,920
+Şimdi çok sezgisel olmadığını biliyorum ama bu bir hakemin, bu iki boyutlu ayraçla
+
+179
+00:11:35,950 --> 00:11:40,310
+aynı formda o sütun yığını kapma şekli işi böyle.
+
+180
+00:11:40,330 --> 00:11:43,400
+Aksi takdirde onu bir boyutlu dizi olarak alırsınız.
+
+181
+00:11:43,420 --> 00:11:49,810
+Tekrar söylemek gerekirse, aynı rakamları alıp almadığımı açıklamak için sadece onu tek boyutlu bir dizi
+
+182
+00:11:49,810 --> 00:11:50,590
+olarak alıyorum.
+
+183
+00:11:50,620 --> 00:11:52,660
+Buradaki gerçek çift parantezleri istiyorum.
+
+184
+00:11:52,660 --> 00:11:59,890
+Bu iki sütun arasına girmeyi belirtmek zorundayım ki bu sütunlar gerçekten sadece bir sütun.
+
+185
+00:11:59,880 --> 00:12:02,480
+Bu yüzden biraz garip ve sezgisel olmadığını biliyorum.
+
+186
+00:12:02,740 --> 00:12:07,160
+Aslında birçok kez aslında bütün değerleri kapıyoruz.
+
+187
+00:12:07,180 --> 00:12:12,400
+Bu tür indeksleme gösterimini gerçekten yapmayacağız ancak unutmayın ki pi
+
+188
+00:12:12,400 --> 00:12:18,070
+çalışmaları sözdizimi biraz tuhaf ama umarım bu sizin için bir numara
+
+189
+00:12:18,070 --> 00:12:18,670
+değildir.
+
+190
+00:12:18,730 --> 00:12:21,720
+Ve bunu anlamak için biraz daha oynayabilirsiniz.
+
+191
+00:12:22,660 --> 00:12:25,840
+Ancak bunu çözemediğinizde yine çok fazla terlemeyin.
+
+192
+00:12:25,840 --> 00:12:28,730
+Aynı biçimde elde etmek kadarıyla.
+
+193
+00:12:28,980 --> 00:12:32,770
+Pekâlâ, burada bir şeyler kapmak kadar sadece iki tane kaldık.
+
+194
+00:12:32,980 --> 00:12:35,650
+Bırak gideyim Matt'i çalıştırıp nasıl göründüğünü görebilelim.
+
+195
+00:12:35,650 --> 00:12:45,870
+Yine 80 dudakları ve sadece son satırı burada istediğim gibi görünüyor 21 22 23 24 25.
+
+196
+00:12:46,290 --> 00:12:46,710
+TAMAM.
+
+197
+00:12:46,780 --> 00:12:48,280
+Dolayısıyla bunu yapmanın birkaç yolu var.
+
+198
+00:12:48,310 --> 00:12:55,030
+Muhtemelen en basit yol sadece sıra için dizine gidip her şeyi geri getirmek demektir.
+
+199
+00:12:55,660 --> 00:12:58,630
+Ve orada 21 22 23 24 25 var.
+
+200
+00:12:58,620 --> 00:13:04,130
+Ve matrisin son satırı olduğunu biliyorsanız, bunu yapabileceğiniz diğer şekilde eşleşir.
+
+201
+00:13:04,270 --> 00:13:08,140
+Negatif dizin oluşturma da yapabilirsiniz ve bu aslında aynı şeyi geri getirir.
+
+202
+00:13:08,130 --> 00:13:11,000
+Bununla birlikte, burada kullanmanızı tavsiye ederim.
+
+203
+00:13:11,020 --> 00:13:13,640
+Bu biraz daha net.
+
+204
+00:13:13,660 --> 00:13:14,030
+Tamam.
+
+205
+00:13:14,170 --> 00:13:17,020
+Bir tane daha gidip Matt'i göster.
+
+206
+00:13:17,020 --> 00:13:23,080
+Burada Matt var ve son iki sıranın tüm sütunlarını kapmak istiyoruz.
+
+207
+00:13:23,230 --> 00:13:26,220
+Ama yine burada bir şeyin çift parantez olduğunu fark ettiniz.
+
+208
+00:13:26,260 --> 00:13:35,560
+ve sonra da tüm sütunları kapmak ve burada aynı değerleri döndürmek istediğim bu dilim gösterimini kullanmak istiyorum.
+
+209
+00:13:35,620 --> 00:13:39,830
+Bu yüzden, satır dizini üçten beşe gitmek
+
+210
+00:13:40,090 --> 00:13:43,270
+Yine bu, gördüğümüz son harflerden biraz daha hileli idi.
+
+211
+00:13:43,420 --> 00:13:47,200
+Ancak umarım şimdi cevap gördüğünüzde size mantıklı gelir.
+
+212
+00:13:47,200 --> 00:13:50,290
+Pekâla, aşağıdakileri yapmaya devam edelim.
+
+213
+00:13:50,350 --> 00:13:55,900
+Burada yeni bir hücre koymaya gittiğinde, yapmak istediğimiz Matt'in Max'deki tüm değerlerin toplamını
+
+214
+00:13:55,890 --> 00:13:56,950
+elde ettiğini görebiliriz.
+
+215
+00:13:56,950 --> 00:13:58,240
+Bunu yapmak için iki yol var.
+
+216
+00:13:58,240 --> 00:14:07,780
+miktar söyleyebilir, sonra da Matt'i geçebilirsin ya da yapabileceğin Matt toplamını söyler ve aynı cevabı alırsın.
+
+217
+00:14:10,570 --> 00:14:11,710
+Matt'ten bir
+
+218
+00:14:11,740 --> 00:14:13,420
+Her ikisi de güzel
+
+219
+00:14:13,420 --> 00:14:15,790
+Sonra standart sapmayı almak istiyorsunuz.
+
+220
+00:14:16,090 --> 00:14:22,180
+Umarım bunu evrensel işleve ve p s t d kullanarak ve daha sonra
+
+221
+00:14:22,180 --> 00:14:23,130
+Matt'ı geçirebilirsiniz.
+
+222
+00:14:23,200 --> 00:14:27,460
+Şimdi bunu elde ederdim ve evrensel işlevler için notlardaki bağlantıya atıf yapabilirdiniz
+
+223
+00:14:27,790 --> 00:14:34,020
+ya da söyleyebileceğiniz ve söyleyebileceğiniz bir CD'si yeterince yaygın olan bir şeydi ya da bana Assaidi'nin Matt matematiğini
+
+224
+00:14:34,240 --> 00:14:36,390
+bağışlayın ve hepsi de işe yarayacaktı.
+
+225
+00:14:36,580 --> 00:14:41,530
+Tamam, sonunda bu küçük becerikli olan Matt'in bir kısmını aldığını söylemek için yapmanız
+
+226
+00:14:41,530 --> 00:14:45,260
+gerekenleri yapmak için mat'ın içindeki tüm sütunların toplamını elde edin.
+
+227
+00:14:45,540 --> 00:14:49,750
+Ve o sekmeyi buraya kaydırırsanız görebileceğiniz bir eksen belirtmek zorunda kaldı.
+
+228
+00:14:49,960 --> 00:14:53,440
+Verilen erişim üzerinden tüm dizi öğelerinin toplamını döndürür.
+
+229
+00:14:53,560 --> 00:14:58,780
+Bu durumda, erişimin sıfıra eşit olduğunu söylemelisiniz.
+
+230
+00:14:59,230 --> 00:15:01,430
+Ve işler böyle yürüyor.
+
+231
+00:15:01,620 --> 00:15:05,780
+biraz zordu, ancak alamadıysanız çok fazla endişelenmeyin çünkü Access
+
+232
+00:15:05,780 --> 00:15:11,860
+0 veya 1'i belirttiğimizde Access'i 0 veya 1 olarak belirleyelim. panda'nın kütüphanesinde çalışmaya başlayın.
+
+233
+00:15:11,860 --> 00:15:14,310
+Bu sonuncusu erişim koduna koyduğumuzdan
+
+234
+00:15:14,320 --> 00:15:14,890
+Tamam.
+
+235
+00:15:15,070 --> 00:15:16,440
+Umarım bu senin için çok da kötü değildi.
+
+236
+00:15:16,450 --> 00:15:20,830
+Yine tüm cevapları ve sadece aracılığıyla geçti ve Q &amp; A forumları sonrası her
+
+237
+00:15:20,980 --> 00:15:23,370
+zaman çekinmeyin tüm kodu için dizüstü kontrol edebilirsiniz.
+
+238
+00:15:23,380 --> 00:15:28,340
+Yaptığım herhangi bir şey hakkında sorularınız varsa, size daha fazla açıklama yapmaktan mutluluk duyarız.
+
+239
+00:15:28,720 --> 00:15:31,370
+Pekâlâ, herkese teşekkürler, bir sonraki derside görüşürüz.

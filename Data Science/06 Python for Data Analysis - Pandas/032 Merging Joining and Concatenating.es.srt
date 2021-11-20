@@ -1,0 +1,479 @@
+1
+00:00:05,280 --> 00:00:07,320
+Hola a todos y bienvenidos a la conferencia.
+
+2
+00:00:07,440 --> 00:00:11,140
+Volver a unir los cuadros de datos del cannonading de esta conferencia.
+
+3
+00:00:11,160 --> 00:00:16,110
+Vamos a aprender cómo combinar marcos de datos a través de una variedad de métodos en
+
+4
+00:00:16,110 --> 00:00:21,180
+lugar de codificarlo todo ya que estos métodos y comandos son realmente simples y la mayoría
+
+5
+00:00:21,180 --> 00:00:25,150
+de los tipeos simplemente crean marcos de datos para fusionar o unir.
+
+6
+00:00:25,170 --> 00:00:29,160
+Lo que vamos a hacer es simplemente caminar a través del cuaderno de conferencias para esta conferencia.
+
+7
+00:00:29,160 --> 00:00:32,920
+Se llama fusionar carpintería y concatenar y está bajo la carpeta del panda.
+
+8
+00:00:33,150 --> 00:00:35,610
+Avancemos y saltemos a ese cuaderno de Júpiter ahora.
+
+9
+00:00:35,670 --> 00:00:35,970
+Todo bien.
+
+10
+00:00:35,970 --> 00:00:41,250
+Aquí estamos en el cuaderno de Júpiter para unir y unir.
+
+11
+00:00:41,250 --> 00:00:45,080
+Primero, vamos a crear algunos marcos de datos de ejemplo para trabajar aquí.
+
+12
+00:00:45,120 --> 00:00:50,150
+He importado pandas PD y uso un diccionario y una lista de números de índice.
+
+13
+00:00:50,310 --> 00:00:57,000
+Creé tres marcos de datos, uno de DFA y tres de ADF. Echamos un vistazo a estos marcos de
+
+14
+00:00:57,000 --> 00:01:05,470
+datos, veremos que tenemos diff uno, que son las columnas ABC y D e índices de 0 a 3 y luego DF 2 tiene
+
+15
+00:01:05,610 --> 00:01:12,370
+las mismas columnas que los índices 4 a 7 y luego DF 3 tiene los índices hasta 11.
+
+16
+00:01:12,390 --> 00:01:17,430
+Vamos a hablar sobre la concatenación de concatenación, básicamente, pega los marcos de datos.
+
+17
+00:01:17,440 --> 00:01:20,570
+Tenga en cuenta que las dimensiones deben coincidir con Machel en el eje.
+
+18
+00:01:20,580 --> 00:01:23,100
+Estás tratando de concatenar para esto.
+
+19
+00:01:23,100 --> 00:01:29,540
+Simplemente usa PD dot com cat y luego pasa una lista de los marcos de datos para concatenarlos aquí.
+
+20
+00:01:29,690 --> 00:01:36,190
+Voy a concatenar los marcos de datos uno dos y tres al pasarlos a una lista en el PD.
+
+21
+00:01:36,210 --> 00:01:39,090
+Función Concat.
+
+22
+00:01:39,310 --> 00:01:43,600
+Podemos ver que por defecto el acceso para unirse es cero.
+
+23
+00:01:43,620 --> 00:01:45,970
+Lo que significa que va a unir las filas.
+
+24
+00:01:46,440 --> 00:01:52,580
+ver ahora que tenemos una b y c y d como columnas con los índices 0 hasta 11.
+
+25
+00:01:52,590 --> 00:01:57,510
+Vemos aquí que concatenó con éxito o básicamente pegó los marcos de datos y podemos
+
+26
+00:01:57,560 --> 00:02:00,100
+Con cada uno de los puntos de datos alineados muy bien.
+
+27
+00:02:00,270 --> 00:02:06,090
+Ahora también puede especificar que x es igual a 1 si desea que se una y se fusione a lo largo de las columnas o concatene a
+
+28
+00:02:06,150 --> 00:02:07,290
+lo largo de las columnas.
+
+29
+00:02:07,680 --> 00:02:13,770
+Y este es un ejemplo de lo que sucede cuando usas PD que Kancha en estos tres marcos de datos.
+
+30
+00:02:13,830 --> 00:02:15,900
+X es igual a 1.
+
+31
+00:02:15,900 --> 00:02:20,970
+Tenga en cuenta que tenemos un montón de valores perdidos y eso se debe a que estos marcos de datos no
+
+32
+00:02:20,970 --> 00:02:23,800
+tienen valores para todos los índices con los que desea concatenar.
+
+33
+00:02:24,060 --> 00:02:31,640
+Por ejemplo, con los cuadros de datos 1 A B, C y D, tenía los valores de 0 a 3.
+
+34
+00:02:31,650 --> 00:02:37,290
+Sin embargo, durante todo el camino hasta 11 no tenía valores y es por eso que
+
+35
+00:02:37,290 --> 00:02:44,850
+llenó con Knolles cuando se unió a esto concatenado en datos en y marco de datos 3 que básicamente significa que
+
+36
+00:02:44,850 --> 00:02:50,910
+cuando está trabajando con concatenación y P-doc concat you ' Quiero asegurarme de que tenga información alineada
+
+37
+00:02:51,120 --> 00:02:53,960
+correctamente cuando se une a los ejes.
+
+38
+00:02:54,120 --> 00:02:58,850
+En este caso, queríamos unir un acceso igual a 0 para alinear todo correctamente.
+
+39
+00:02:58,860 --> 00:03:00,740
+¿Cómo especificamos la unión a lo largo de las columnas?
+
+40
+00:03:00,750 --> 00:03:02,100
+Envía una secuela a uno.
+
+41
+00:03:02,250 --> 00:03:04,890
+Tendremos un montón de información faltante.
+
+42
+00:03:04,890 --> 00:03:09,450
+En la mayoría de los casos, probablemente se una a las columnas para que, de hecho, se unan.
+
+43
+00:03:09,450 --> 00:03:11,060
+El acceso es igual a 1.
+
+44
+00:03:11,080 --> 00:03:15,890
+Sin embargo, asegúrese de conocer sus datos y lo que realmente desea concatenar antes de elegir un acceso.
+
+45
+00:03:16,710 --> 00:03:19,560
+De acuerdo, sigamos adelante y avancemos.
+
+46
+00:03:19,650 --> 00:03:22,440
+Crearemos algunos marcos de datos de ejemplo más en este caso.
+
+47
+00:03:22,440 --> 00:03:27,780
+Uno llamó a la izquierda y otro llamó aquí para echar un vistazo a la izquierda.
+
+48
+00:03:27,780 --> 00:03:34,680
+a K3. Tenemos un marco de datos derecho que tiene un marco de datos muy similar, excepto que tiene diferentes columnas C y D.
+
+49
+00:03:34,680 --> 00:03:40,340
+Tenemos las columnas A y B con algunos valores en ellas y luego tenemos una columna de clave k 0
+
+50
+00:03:40,470 --> 00:03:45,690
+Sin embargo, la columna de clave es exactamente la misma que la izquierda, el marco de datos de
+
+51
+00:03:45,690 --> 00:03:51,850
+la izquierda y los entramados de marco de datos correctos son capaces de usar la función de fusión para fusionar la lógica.
+
+52
+00:03:51,870 --> 00:03:55,020
+Eso es muy similar a fusionar tablas de secuelas.
+
+53
+00:03:55,230 --> 00:03:59,610
+Y si no trabajas en una secuela, no tienes que preocuparte demasiado por esto, pero te mostraré
+
+54
+00:03:59,610 --> 00:04:02,100
+los conceptos básicos sobre cómo combinar dos marcos de datos.
+
+55
+00:04:02,100 --> 00:04:07,790
+Simplemente diga PD que se fusiona y luego pasa el marco de datos izquierdo y el marco de datos derecho.
+
+56
+00:04:07,920 --> 00:04:14,470
+O simplemente pasa los datos de uno o de un marco de datos a los marcos de datos que quieras fusionar.
+
+57
+00:04:14,550 --> 00:04:16,840
+Por defecto, los combinará en interno.
+
+58
+00:04:17,040 --> 00:04:22,440
+Y si no estás familiarizado con inor o con respecto a la fusión siecle, no te preocupes solo usa el
+
+59
+00:04:22,470 --> 00:04:23,160
+interno predeterminado.
+
+60
+00:04:23,220 --> 00:04:26,700
+Más importante, aprende sobre esto en.
+
+61
+00:04:26,700 --> 00:04:31,200
+Básicamente, cuando se fusiona, va a querer fusionarse en una columna clave y puede pasar
+
+62
+00:04:31,200 --> 00:04:33,740
+una o más columnas clave que veremos más adelante.
+
+63
+00:04:33,810 --> 00:04:39,930
+Pero básicamente lo que está sucediendo aquí es que combinaremos o fusionaremos estos marcos de datos en
+
+64
+00:04:39,930 --> 00:04:41,090
+esta columna clave.
+
+65
+00:04:41,220 --> 00:04:46,650
+Y de esa manera, en lugar de concatenarlos, podríamos fusionar dos columnas clave para fusionarlas
+
+66
+00:04:46,650 --> 00:04:49,960
+o unirlas en la misma columna clave que comparten.
+
+67
+00:04:50,280 --> 00:04:55,050
+Entonces la lógica aquí es cuando estás usando el PD que se fusiona en lugar de simplemente pegar los
+
+68
+00:04:55,140 --> 00:04:58,260
+marcos de datos, vas a ver dónde coinciden los valores en las columnas.
+
+69
+00:04:58,260 --> 00:05:03,630
+En este caso, la columna clave y luego crea las filas usando esa columna clave.
+
+70
+00:05:03,630 --> 00:05:06,570
+Déjame ir y mostrarte un par de ejemplos más complicados.
+
+71
+00:05:06,900 --> 00:05:14,910
+simplemente pasa en el primer marco de datos y el segundo marco de datos y luego puede especificar en y puede pasar una lista de
+
+72
+00:05:15,900 --> 00:05:20,820
+claves si desea fusionarse realmente en varias teclas, como la tecla uno o la tecla.
+
+73
+00:05:21,050 --> 00:05:26,310
+Aquí tengo marcos de datos izquierdos y derechos y notaré aquí que tienen dos teclas, una
+
+74
+00:05:26,310 --> 00:05:33,420
+y dos, de lo contrario son exactamente las mismas que la izquierda y derecha que acabamos de ver. Puedes usar PD que
+
+75
+00:05:33,870 --> 00:05:38,660
+Y aquí hay algunos ejemplos más que usan fusión externa o fusión.
+
+76
+00:05:38,730 --> 00:05:44,850
+En este momento, si no está familiarizado con la sintaxis de la secuencia, como la derecha o la izquierda interna o externa,
+
+77
+00:05:44,850 --> 00:05:49,290
+se une la preocupación por esto demasiado, en realidad no la usamos en el curso; siempre
+
+78
+00:05:49,290 --> 00:05:53,150
+adoptaremos de manera predeterminada algo así en el curso que solo usa una unión interna.
+
+79
+00:05:53,190 --> 00:05:57,700
+de hacer el tipo de fusión secuencial y ya estás familiarizado con la sintaxis de la
+
+80
+00:05:57,690 --> 00:06:04,020
+secuela solo debes saber que Pancho tiene este parámetro de operador para que puedas usar en caso de que quieras la funcionalidad extra.
+
+81
+00:06:04,020 --> 00:06:05,810
+Sin embargo, si te encuentras tratando
+
+82
+00:06:06,030 --> 00:06:11,520
+Pero, básicamente, depende de si está usando escritura externa, etc. Puede encontrar que tiene algunos valores
+
+83
+00:06:11,520 --> 00:06:16,890
+perdidos, así que tenlo en cuenta mientras trabajas con PD en la fusión.
+
+84
+00:06:16,920 --> 00:06:19,070
+Aquí hay un ejemplo de izquierda.
+
+85
+00:06:19,680 --> 00:06:25,080
+Y finalmente, hemos llegado a unir unirse es un método conveniente para combinar las columnas de dos
+
+86
+00:06:25,080 --> 00:06:29,310
+marcos de datos de índice potencialmente diferentes en un único marco de datos resultante.
+
+87
+00:06:29,400 --> 00:06:33,840
+En esencia, podría pensar que esto es lo mismo que fusionar, excepto que las claves a las que desea
+
+88
+00:06:33,840 --> 00:06:36,680
+unirse están realmente en su índice en lugar de en una columna.
+
+89
+00:06:36,690 --> 00:06:39,600
+Así que aquí he creado dos marcos de datos a la izquierda y a la derecha.
+
+90
+00:06:39,600 --> 00:06:45,620
+Observe que tienen las columnas A B y CD, y luego el índice es en realidad el que vamos a unir a
+
+91
+00:06:46,490 --> 00:06:52,530
+ellos y la sintaxis que puede usar es decir, a la izquierda unir a la derecha hará automáticamente una combinación interna entre
+
+92
+00:06:52,560 --> 00:06:53,990
+la izquierda y la derecha.
+
+93
+00:06:54,060 --> 00:06:59,880
+Con base en las claves de índice, si desea fusionar estos dos marcos de datos basados ​​en una de sus
+
+94
+00:06:59,880 --> 00:07:05,220
+columnas, debe usar fusionar, pero la funcionalidad de método de unión proviene de uno de los marcos de datos.
+
+95
+00:07:05,210 --> 00:07:08,830
+Usted dice que unirse y luego pasar el otro marco de datos y simplemente combinar.
+
+96
+00:07:08,850 --> 00:07:13,030
+Puede especificar CÓMO, como el exterior izquierdo interno, etc. Recuerde esto solo para los usuarios de la secuela del evento que ya estén familiarizados con esa terminología.
+
+97
+00:07:13,070 --> 00:07:17,380
+Si no estás familiarizado con eso, no te preocupes demasiado.
+
+98
+00:07:17,430 --> 00:07:20,330
+Avancemos y hagamos una breve revisión de cómo
+
+99
+00:07:20,370 --> 00:07:26,700
+unir los marcos de datos combinados y algodonosos y repasaremos los temas clave que debería obtener de esta conferencia.
+
+100
+00:07:26,700 --> 00:07:29,000
+En cuanto a fusionar marcos de datos
+
+101
+00:07:29,400 --> 00:07:34,800
+de unión y concatenación para concatenar o agrupar marcos de datos, el proceso es bastante simple.
+
+102
+00:07:34,800 --> 00:07:37,100
+Solo dices pecan cat y pasas una lista de
+
+103
+00:07:37,320 --> 00:07:43,080
+tus marcos de datos y luego te aseguras de especificar el eje correcto dependiendo de si quieres unirlos entre las filas o sus columnas.
+
+104
+00:07:43,080 --> 00:07:48,900
+datos que desea fusionar y luego usted dice y puede Pessin solo una clave de una sola columna.
+
+105
+00:07:48,900 --> 00:07:54,960
+Luego tiene PD que se fusiona y PD que fusiona le permite combinar marcos de datos y acaba de pasar
+
+106
+00:07:54,960 --> 00:07:59,190
+su primer marco de datos que desea fusionar y luego su segundo marco de
+
+107
+00:07:59,190 --> 00:08:03,000
+O puede pasar cualquier lista de teclas y, de forma predeterminada, se combinará en Entrar.
+
+108
+00:08:03,150 --> 00:08:08,420
+Si no está familiarizado con la fusión de las tablas de continuación, no se preocupe por
+
+109
+00:08:08,610 --> 00:08:13,350
+cómo preocuparse por un solo marco de datos en el marco de datos izquierdo
+
+110
+00:08:13,590 --> 00:08:19,500
+a la derecha y luego en una columna de clave determinada o en una lista de columnas clave.
+
+111
+00:08:19,500 --> 00:08:20,550
+del curso y
+
+112
+00:08:20,550 --> 00:08:26,730
+luego para unirme es un método más avanzado para combinar columnas de dos marcos de datos indexados potencialmente diferentes.
+
+113
+00:08:26,730 --> 00:08:31,560
+Esa es realmente la única funcionalidad de PD fusionada que usaré a lo largo
+
+114
+00:08:31,560 --> 00:08:32,150
+Es muy similar a
+
+115
+00:08:32,160 --> 00:08:37,620
+combinar, excepto que en realidad se están uniendo al índice en lugar de a una columna y la sintaxis para eso es solo el nombre del dibujo del marco de datos izquierdo a la derecha.
+
+116
+00:08:37,620 --> 00:08:42,940
+En realidad, no utilizaremos join durante todo el curso, pero quiero que lo tenga en cuenta y
+
+117
+00:08:43,140 --> 00:08:48,090
+puede consultar este libro de cuaderno o la documentación en caso de que quiera revisar unirse.
+
+118
+00:08:48,090 --> 00:08:51,810
+Muy bien, buen trabajo.
+
+119
+00:08:52,110 --> 00:08:53,610
+Gracias y te veré en la próxima conferencia
+
+120
+00:08:53,730 --> 00:08:55,440
+&nbsp;

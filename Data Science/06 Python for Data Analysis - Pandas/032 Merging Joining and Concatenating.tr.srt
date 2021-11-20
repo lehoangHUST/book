@@ -1,0 +1,479 @@
+1
+00:00:05,280 --> 00:00:07,320
+Herkese merhaba ve konferansa hoş geldiniz.
+
+2
+00:00:07,440 --> 00:00:11,140
+Toplu konut verisine katılarak yeniden derleme bu dersi kapsar.
+
+3
+00:00:11,160 --> 00:00:16,110
+Bu yöntemler ve komutlar gerçekten çok basit ve yazmanın
+
+4
+00:00:16,110 --> 00:00:21,180
+çoğu yalnızca birleştirmek veya bir araya getirmek için veri
+
+5
+00:00:21,180 --> 00:00:25,150
+çerçeveleri oluşturduğundan, veri çerçevelerini çeşitli yöntemlerle birleştirmeyi öğreneceğiz.
+
+6
+00:00:25,170 --> 00:00:29,160
+Bu ders için ders defterinden geçmek sadece yapacağız.
+
+7
+00:00:29,160 --> 00:00:32,920
+Buna doğrama birleştirilmesi ve bitiştirme deniyor ve panda klasörü altında.
+
+8
+00:00:33,150 --> 00:00:35,610
+Şimdi gidip Jüpiter defterine atlayalım.
+
+9
+00:00:35,670 --> 00:00:35,970
+Tamam.
+
+10
+00:00:35,970 --> 00:00:41,250
+Burada birleşerek birleştirme için Jüpiter defterinde bulunuyoruz.
+
+11
+00:00:41,250 --> 00:00:45,080
+İlk önce, burada çalışmak için örnek veri çerçeveleri oluşturacağız.
+
+12
+00:00:45,120 --> 00:00:50,150
+Pandas PD'yi ithal ettim ve bir sözlük ve bir dizin numarası listesi kullandım.
+
+13
+00:00:50,310 --> 00:00:57,000
+Üç veri çerçevesi oluşturduk. Bir DFA'dan ADF'ye üçünü inceledikten sonra, bu veri çerçevelerine baktığımızda, ABC ve
+
+14
+00:00:57,000 --> 00:01:05,470
+D sütunları ile 0'dan 3'a kadar olan dizinlerden oluşan bir farklılığa sahip olduğumuz göreceksiniz ve DF 2, dizinlerin aynı sütunlara
+
+15
+00:01:05,610 --> 00:01:12,370
+sahip olduklarını göreceksiniz. 4 ila 7 ve daha sonra DF 3, 11 aracılığıyla endekslere sahiptir.
+
+16
+00:01:12,390 --> 00:01:17,430
+Ekleme birleştirme temelde veri çerçevelerini birbirine yapıştırma hakkında konuşalım.
+
+17
+00:01:17,440 --> 00:01:20,570
+Boyutların eksende Machel ile eşleşmesi gerektiğini unutmayın.
+
+18
+00:01:20,580 --> 00:01:23,100
+Bunun için bitiştirmeye çalışıyorsunuz.
+
+19
+00:01:23,100 --> 00:01:29,540
+Sadece PD dot com kedini kullanıyorsunuz ve daha sonra bir araya getirmek için veri çerçevesinin bir
+
+20
+00:01:29,690 --> 00:01:36,190
+listesini iletiyorsunuz, burada veri çerçevelerini PD'ye bir liste halinde geçirerek iki ve üç veri çerçevelerini birleştirmeye gidiyorum.
+
+21
+00:01:36,210 --> 00:01:39,090
+Concat işlevi.
+
+22
+00:01:39,310 --> 00:01:43,600
+Varsayılan olarak katılma erişimi sıfır olduğunu görebiliriz.
+
+23
+00:01:43,620 --> 00:01:45,970
+Yani satırlara birlikte katılacak.
+
+24
+00:01:46,440 --> 00:01:52,580
+şu an b ve c ve d sütunları 0'dan başlayarak 11'e kadar olan sütunlar olarak görüyoruz.
+
+25
+00:01:52,590 --> 00:01:57,510
+Burada, veri çerçevelerini başarılı bir şekilde birleştirdik veya temel olarak yapıştırdıklarını görüyoruz ve
+
+26
+00:01:57,560 --> 00:02:00,100
+Her bir veri noktası güzel sıraya dizildi.
+
+27
+00:02:00,270 --> 00:02:06,090
+Artık, x'e katılmaya, birleşmeye ya da sütunlara birleştirmeye çalışırsanız, x'i 1'e eşit
+
+28
+00:02:06,150 --> 00:02:07,290
+olarak belirtebilirsiniz.
+
+29
+00:02:07,680 --> 00:02:13,770
+Ve bu, Kancha'nın bu üç veri çerçevesinde PD'yi kullandığınızda ne olacağına dair bir örnek.
+
+30
+00:02:13,830 --> 00:02:15,900
+X, 1'e eşittir.
+
+31
+00:02:15,900 --> 00:02:20,970
+Dikkat edin, bir sürü eksik değerimiz var ve bunun sebebi, bu veri
+
+32
+00:02:20,970 --> 00:02:23,800
+çerçevelerinde, birleştirmek istediğiniz tüm indekslerin değerleri yoktu.
+
+33
+00:02:24,060 --> 00:02:31,640
+Örneğin, 1 A B ve C ve D veri kareleri ile 0-3 arası değerler elde ettiniz.
+
+34
+00:02:31,650 --> 00:02:37,290
+11'e kadar tüm yollar için hiçbir değere sahip değildiniz ve Knolles
+
+35
+00:02:37,290 --> 00:02:44,850
+ile doldurduğunuzda buna katıldığınızda veri ile veri çerçevesi 3'ün birleştirildiğini ve aslında temelde birleştirmeyi ve
+
+36
+00:02:44,850 --> 00:02:50,910
+P-doc concat ile çalıştıklarınızı ifade ettiğiniz anlamına gelir. eksenlere katıldığınızda doğru sıralanan
+
+37
+00:02:51,120 --> 00:02:53,960
+bilgilerin bulunduğundan emin olmak istersiniz.
+
+38
+00:02:54,120 --> 00:02:58,850
+Bu durumda, her şeyi doğru bir şekilde sıralamak için eşit 0 erişimine katılmak istedik.
+
+39
+00:02:58,860 --> 00:03:00,740
+Sütunlar boyunca birleşmeyi nasıl belirleyebiliriz.
+
+40
+00:03:00,750 --> 00:03:02,100
+Birine bir fıkra faksla gönderin.
+
+41
+00:03:02,250 --> 00:03:04,890
+Bir sürü eksik bilgimiz olacak.
+
+42
+00:03:04,890 --> 00:03:09,450
+Çoğunlukla muhtemelen birlikte sütunlara katılacağız, böylece birlikte olacağın.
+
+43
+00:03:09,450 --> 00:03:11,060
+Erişim 1'e eşittir.
+
+44
+00:03:11,080 --> 00:03:15,890
+Bununla birlikte, verilerinizi ve bir erişim seçmeden önce ne birleştirmek istediğinizi bildiğinizden emin olun.
+
+45
+00:03:16,710 --> 00:03:19,560
+Pekâla, devam edelim ve birlikte hareket edelim.
+
+46
+00:03:19,650 --> 00:03:22,440
+Bu durumda daha fazla örnek veri çerçevesi oluşturacağız.
+
+47
+00:03:22,440 --> 00:03:27,780
+Biri sola, diğeri de buraya çağırıldı. Sola bir göz atın.
+
+48
+00:03:27,780 --> 00:03:34,680
+anahtar sütunumuz var. C ve D sütunları farklı olmak dışında çok benzer bir veri çerçevesine sahip doğru bir veri çerçevesine sahibiz.
+
+49
+00:03:34,680 --> 00:03:40,340
+Bazı değerler içeren A ve B sütunları var ve daha sonra k 0 - K3 arasında bir
+
+50
+00:03:40,470 --> 00:03:45,690
+Bununla birlikte, anahtar sütun, soldan çok fazla veri çerçevesi ve sağ veri çerçevesi
+
+51
+00:03:45,690 --> 00:03:51,850
+panderers birleştirme mantığı yapmak için birleştirme işlevini kullanma yeteneğine sahip olduğu gibi tam olarak aynıdır.
+
+52
+00:03:51,870 --> 00:03:55,020
+Devamlı tabloların bir araya getirilmesine çok benzer.
+
+53
+00:03:55,230 --> 00:03:59,610
+Ve eğer devam filminde çalışmazsan bu konuda fazla endişelenmenize gerek yok, ancak
+
+54
+00:03:59,610 --> 00:04:02,100
+iki veri çerçevesinin nasıl birleştireceğinin temellerini göstereceğim.
+
+55
+00:04:02,100 --> 00:04:07,790
+Sadece, sol veri çerçevesini ve doğru veri çerçevesini birleştiren ve sonra da ileten PD söylüyorsunuz.
+
+56
+00:04:07,920 --> 00:04:14,470
+Veya sadece bir veya veri çerçevesinden verileri bir araya getirmek istediğiniz herhangi bir veri karesine yönlendirin.
+
+57
+00:04:14,550 --> 00:04:16,840
+Varsayılan olarak onları içte birleştirecek.
+
+58
+00:04:17,040 --> 00:04:22,440
+Ve eğer siecle birleştirmeyle ilgili olarak yabancı olduğunuzdan endişe etmeyin, varsayılan içeriyi
+
+59
+00:04:22,470 --> 00:04:23,160
+kullanın.
+
+60
+00:04:23,220 --> 00:04:26,700
+Daha da önemlisi bunu hakkında öğren.
+
+61
+00:04:26,700 --> 00:04:31,200
+Esas olarak birleştirdiğinizde, bir anahtar sütun üzerinde birleştirmek isteyeceğinizi ve daha sonra göreceğimiz
+
+62
+00:04:31,200 --> 00:04:33,740
+bir veya daha fazla anahtar sütununu geçirebilirsiniz.
+
+63
+00:04:33,810 --> 00:04:39,930
+Ancak temelde burada olan şey, bu veri karelerini bu anahtar sütun üzerinde
+
+64
+00:04:39,930 --> 00:04:41,090
+birleştirip birleştireceğiz.
+
+65
+00:04:41,220 --> 00:04:46,650
+Ve bu şekilde onları birleştirmek yerine, birleştirebildiğimiz iki anahtar sütunu olurdu; böylece birleştirebilir
+
+66
+00:04:46,650 --> 00:04:49,960
+veya paylaştıkları aynı anahtar sütun üzerine onlara katılabilirsiniz.
+
+67
+00:04:50,280 --> 00:04:55,050
+Yani burada mantık, veri çerçevelerini yapıştırmak yerine birleştiren PD'yi
+
+68
+00:04:55,140 --> 00:04:58,260
+kullanırken, değerlerin sütunlarda eşleştiğini göreceksiniz demektir.
+
+69
+00:04:58,260 --> 00:05:03,630
+Bu durumda anahtar sütunu ve ardından o anahtar sütunu kullanarak satırları oluşturun.
+
+70
+00:05:03,630 --> 00:05:06,570
+İzin verin gidip size daha karmaşık birkaç örnek göstereceğim.
+
+71
+00:05:06,900 --> 00:05:14,910
+birleştirme sadece ilk veri çerçevesinde geçecektir. ve ikinci veri çerçevesini seçin ve daha sonra üzerinde belirtebilir ve bir anahtar veya
+
+72
+00:05:15,900 --> 00:05:20,820
+kilit gibi birden fazla tuşu gerçekten birleştirmek isterseniz, bir anahtar listesi gönderebilirsiniz.
+
+73
+00:05:21,050 --> 00:05:26,310
+Burada sol ve sağ veri çerçevelerine sahibim ve burada iki anahtar bir ve
+
+74
+00:05:26,310 --> 00:05:33,420
+iki anahtar var farkedeceksiniz aksi takdirde tam olarak gördüğümüz sol ve sağ ile aynı olacaksınız PD'yi kullanabilirsiniz,
+
+75
+00:05:33,870 --> 00:05:38,660
+Ve birleştirme harici veya birleştirme özelliğini kullanan bazı örnekler.
+
+76
+00:05:38,730 --> 00:05:44,850
+Şu anda, iç ya da dış sağ ya da sol gibi dizilim sözdizimini biliyorsanız, bununla ilgili
+
+77
+00:05:44,850 --> 00:05:49,290
+endişe katılır, bu kelimeleri aslında bu derste kullanmazsak, elbette ki bu gibi
+
+78
+00:05:49,290 --> 00:05:53,150
+görünen bir şeye varsayılan oluruz. Sadece bir iç katılma kullanın.
+
+79
+00:05:53,190 --> 00:05:57,700
+birleştirme işlemini yapmaya çalışıyorsanız ve devam filmi sözdizimine aşina iseniz,
+
+80
+00:05:57,690 --> 00:06:04,020
+Pancho'nun bu nasıl bir operatörün ekstra işlevsellik istediğinizde kullanmak için parametre olduğunu biliyorsunuzdur.
+
+81
+00:06:04,020 --> 00:06:05,810
+Bununla birlikte, kendinizi netice
+
+82
+00:06:06,030 --> 00:06:11,520
+Ancak temel olarak dış yazıları iç vb. Kullanıyorsanız bağlı. Kayıp değerlerinizin bir kısmının olduğunu
+
+83
+00:06:11,520 --> 00:06:16,890
+görebilirsiniz, bu nedenle PD ile birlikte çalışırken bunu aklınızda bulundurun.
+
+84
+00:06:16,920 --> 00:06:19,070
+İşte sola bir örnek.
+
+85
+00:06:19,680 --> 00:06:25,080
+Ve nihayet katılıma katılmaya geldik, potansiyel olarak farklı iki indeks veri çerçevesinin sütunlarını
+
+86
+00:06:25,080 --> 00:06:29,310
+tek bir sonuç veri çerçevesine birleştirmek için kullanışlı bir yöntemdir.
+
+87
+00:06:29,400 --> 00:06:33,840
+Aslında, katılmak istediğiniz anahtarların aslında bir sütun yerine dizininizde olması
+
+88
+00:06:33,840 --> 00:06:36,680
+dışında, birleştirme işlemi ile aynı şeyi düşünebilirsiniz.
+
+89
+00:06:36,690 --> 00:06:39,600
+Dolayısıyla burada sağa ve sola iki veri çerçevesi yarattım.
+
+90
+00:06:39,600 --> 00:06:45,620
+Dikkat ettikleri sütunlar A B ve daha sonra CD'dir ve daha sonra dizin aslında
+
+91
+00:06:46,490 --> 00:06:52,530
+onlara katılacağız ve kullanabileceğiniz sözdizimi, soldaki sağa sola otomatik olarak sağa sola doğru bir
+
+92
+00:06:52,560 --> 00:06:53,990
+iç katılma yapacağını söylemektir.
+
+93
+00:06:54,060 --> 00:06:59,880
+Endeks tuşlarının temelinde, bu iki veri karesini kendi sütunlarından birine dayalı olarak birleştirmek isterseniz,
+
+94
+00:06:59,880 --> 00:07:05,220
+birleştirme kullanmak zorunda kalabilirsiniz, ancak birleştirme yöntemi işlevi bir veri karesinden çıkar.
+
+95
+00:07:05,210 --> 00:07:08,830
+Siz de katılın ve sonra diğer veri çerçevesini geçin ve sadece birleştirme gibi yapın.
+
+96
+00:07:08,850 --> 00:07:13,030
+İç sol dış vb. Gibi NASIL belirtebilirsiniz. Bunu yalnızca, o terminolojiyi zaten bilen etkinlik sonrası kullanıcılar için unutmayın.
+
+97
+00:07:13,070 --> 00:07:17,380
+Bununla ilgili fazla bilginiz yoksa aşina olun.
+
+98
+00:07:17,430 --> 00:07:20,330
+Devam edin ve birleştirme ve pamuklu veri
+
+99
+00:07:20,370 --> 00:07:26,700
+çerçevelerine nasıl katılacağınıza hızlı bir şekilde gözden geçirelim ve bu dersin alınması gereken temel konuları inceleyeceğiz.
+
+100
+00:07:26,700 --> 00:07:29,000
+Veri çerçevelerini bir araya getirmek
+
+101
+00:07:29,400 --> 00:07:34,800
+veya birleştirmek için birleştiren ve birleştiren veri çerçevelerini birleştirme süreci oldukça basittir.
+
+102
+00:07:34,800 --> 00:07:37,100
+Sadece dürtük kediyi söylüyorsunuz ve veri
+
+103
+00:07:37,320 --> 00:07:43,080
+çerçevelerinizin bir listesini gönderiyorsunuz ve onlara satırlar veya sütunlarla birleşmek isterseniz doğru ekseni belirttiğinizden emin olursunuz.
+
+104
+00:07:43,080 --> 00:07:48,900
+ve sonra da söylediklerini yapmanızı sağlar ve sadece bir tane Pessin yapabilirsiniz. tek sütun anahtarı.
+
+105
+00:07:48,900 --> 00:07:54,960
+Sonra PD birleştirme ve PD birleştirme, veri çerçevelerini birleştirme imkânı verir ve birleştirme yapmak istediğiniz
+
+106
+00:07:54,960 --> 00:07:59,190
+ilk veri çerçevenizi ve sonra birleştirmek istediğiniz ikinci veri çerçevenizi aktarmayı
+
+107
+00:07:59,190 --> 00:08:03,000
+Veya herhangi bir tuş listesini geçirebilir ve varsayılan olarak girişte birleşecektir.
+
+108
+00:08:03,150 --> 00:08:08,420
+Devamlı tabloların birleştirilmesine alışkın değilseniz, sağdaki sol veri
+
+109
+00:08:08,610 --> 00:08:13,350
+çerçevesinde, ardından belirli bir anahtar sütununda veya
+
+110
+00:08:13,590 --> 00:08:19,500
+anahtar sütunların bir listesinde bir veri çerçevesi hakkında endişelenmeyin.
+
+111
+00:08:19,500 --> 00:08:20,550
+sonra katılmak için
+
+112
+00:08:20,550 --> 00:08:26,730
+potansiyel olarak farklı şekilde dizinlenmiş iki veri çerçevesinin sütunlarını birleştirmek için daha gelişmiş bir yöntem var.
+
+113
+00:08:26,730 --> 00:08:31,560
+Gerçekten birleştirilen PD'nin yalnızca işlevselliğini kullanacağım ve kurs boyunca kullanacağım ve daha
+
+114
+00:08:31,560 --> 00:08:32,150
+Birleştirme yerine
+
+115
+00:08:32,160 --> 00:08:37,620
+çok benzer, ancak aslında bir sütun yerine dizinde yer alırlar ve bunun sözdizimi yalnızca Sağdaki Çerçeve dosyasının adıdır.
+
+116
+00:08:37,620 --> 00:08:42,940
+Aslında ders boyunca katılımı kullanmayacağız, ancak bunun farkında olmanızı ve bu
+
+117
+00:08:43,140 --> 00:08:48,090
+defter defterini veya katılmayı gözden geçirmek isteyebileceğiniz belgeleri referans almasını istiyoruz.
+
+118
+00:08:48,090 --> 00:08:51,810
+Pekala, harika iş
+
+119
+00:08:52,110 --> 00:08:53,610
+Teşekkürler, bir sonraki derside görüşürüz.
+
+120
+00:08:53,730 --> 00:08:55,440
+&nbsp;

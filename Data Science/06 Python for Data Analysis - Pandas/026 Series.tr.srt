@@ -1,0 +1,567 @@
+1
+00:00:05,850 --> 00:00:06,770
+Herkese merhaba.
+
+2
+00:00:06,770 --> 00:00:12,180
+Ciddi ders dizisine hoş geldiniz, pandalarla birlikte çalışacak ve bir sonraki dersin
+
+3
+00:00:12,180 --> 00:00:17,340
+veri çerçeveleriyle çalışmak üzere Ceres'ten kopacak ilk ana veri türü olacak.
+
+4
+00:00:17,340 --> 00:00:20,610
+Devam edin ve Jüpiter defterine atlayarak başlayalım.
+
+5
+00:00:20,670 --> 00:00:21,150
+Tamam.
+
+6
+00:00:21,150 --> 00:00:23,720
+İşte Jüpiter defterindeyim.
+
+7
+00:00:23,750 --> 00:00:26,430
+Bir dizi, pasta dizisine çok benzer.
+
+8
+00:00:26,430 --> 00:00:29,390
+Aslında aslında bir korsan nesnesinin üzerine inşa edilmiştir.
+
+9
+00:00:29,430 --> 00:00:35,340
+Ancak, hakem dizisini bir panda dizisinden ayıran şey, bir dizi eksen etiketi anlamına geldiği anlamına
+
+10
+00:00:35,340 --> 00:00:37,410
+gelir; bir etiketle dizine eklenebilir.
+
+11
+00:00:37,410 --> 00:00:44,260
+Devam edin ve önemli âlimler ve P söyleyelim ve daha sonra Pandurs'u Peetie olarak içe aktaralım.
+
+12
+00:00:44,910 --> 00:00:49,850
+Ve çeşitli nesne türlerinden çeşitli seriler oluşturmaya başlayacağız.
+
+13
+00:00:49,920 --> 00:00:56,880
+Python nesneleri için yapacağım veya etiketli bir liste oluşturacağım ve bu sadece A ve
+
+14
+00:00:56,880 --> 00:01:00,550
+C listelerinde üç harf veya üç dizge olacak.
+
+15
+00:01:01,140 --> 00:01:10,290
+O zaman ben ilerleyip altı çizili verilerim diye bir liste yapacağım ve 10 20 30 olduğunu söyleyeceğim.
+
+16
+00:01:11,190 --> 00:01:16,710
+r adı verilen bir nesne yaratacağım ve bu New Hampshire Ray olacak ve verilerimi geçeceğim.
+
+17
+00:01:16,740 --> 00:01:17,940
+Sonra bir r
+
+18
+00:01:18,030 --> 00:01:25,290
+Biri bir python listesi ve diğeri bir PI dizisi ve daha sonra bir
+
+19
+00:01:25,290 --> 00:01:38,160
+sözlük olarak bir anahtar olarak 10 geçecek B değeri 20 olarak bir anahtar 20 ve daha sonra C bir anahtardır ve 30 değeri vardır
+
+20
+00:01:38,160 --> 00:01:46,220
+ve bu, listemde etiketleri olan dört ayrı Python nesnem var demektir ve sonra verilerim var.
+
+21
+00:01:47,160 --> 00:01:51,740
+Dizim var ve nihayetinde sözlükim var.
+
+22
+00:01:52,260 --> 00:01:52,850
+TAMAM.
+
+23
+00:01:53,070 --> 00:01:56,140
+Nasıl bir dizi oluşturabileceğinizi ve neye benzediğini size göstereceğim.
+
+24
+00:01:56,220 --> 00:02:02,370
+söyleyebilir ve burada seriyi herhangi bir değişken ismi olmayan denizaltı MPD PD serisinden kaydedmediğimi not edin.
+
+25
+00:02:02,370 --> 00:02:03,870
+Bu seriyi PD olarak
+
+26
+00:02:04,020 --> 00:02:08,970
+Ancak sekmeyi değiştirirseniz, P-T ciddi parametrelerin çok çeşitli olduğunu farkedeceksiniz.
+
+27
+00:02:09,030 --> 00:02:14,130
+Şu anda en önemlisi olan veri ve dizine odaklanacağız.
+
+28
+00:02:14,130 --> 00:02:21,000
+Öncelikle, verileri ve ayrıca bu listede geçeceğimiz altçizgi verilerine eşit tutacağız.
+
+29
+00:02:21,000 --> 00:02:24,650
+Burada ciddi geriye alacağımı biliyorum ve çok hakem gibi görünüyor.
+
+30
+00:02:24,930 --> 00:02:33,200
+Burada hariç, bir dizin 0 1 2 ve daha sonra gerçek veriler 10 20 30'a sahip
+
+31
+00:02:33,210 --> 00:02:40,470
+olduğumuzdan ve bir panda serisinin anahtarı, o dizinin ne olmasını istediğinizi belirtebildiğinizden çok farklı.
+
+32
+00:02:40,530 --> 00:02:48,240
+olacak olan PD'yi söyleyeceğim ve indeksin etiketlere eşit olduğunu belirteceğim.
+
+33
+00:02:48,270 --> 00:02:52,120
+Örneğin, içeri girip verilerime eşit
+
+34
+00:02:52,330 --> 00:02:54,820
+Ve bunun bir b ve c olduğunu unutmayın.
+
+35
+00:02:54,870 --> 00:02:58,850
+Bu yüzden şimdi şunu çalıştırdığımda etiketli bir dizin serisine sahip olacağım.
+
+36
+00:02:58,890 --> 00:03:04,780
+Bu yüzden etiket veya dizin olarak bir tane ve sonra bu dizin için gerçek veri noktası olarak 10 var.
+
+37
+00:03:04,980 --> 00:03:12,060
+Dolayısıyla bir sayı Mirei'den farklı olarak aslında etiketli endekslere sahibim, bu veri noktalarını bu
+
+38
+00:03:12,390 --> 00:03:19,980
+etiketli dizini kullanarak arayabilir ve tıpkı bunları parametre olarak koyduğumda hiçbir anlamı olmayan hızlı bir
+
+39
+00:03:19,980 --> 00:03:21,510
+veri ve dizin vardır.
+
+40
+00:03:21,600 --> 00:03:23,820
+Veri eşittir veya dizin eşittir demek zorunda değilsiniz.
+
+41
+00:03:23,880 --> 00:03:30,390
+Sadece verilerimi söyleyebilir ve daha sonra etiketler verebilir ve aynı şekilde bir dizi çıkarırsınız.
+
+42
+00:03:30,600 --> 00:03:34,950
+Dolayısıyla, doğru sıraya koyduğunuz sürece, eşitliklerin veya dizinlerin eşit olduğunu sürekli
+
+43
+00:03:34,980 --> 00:03:36,250
+olarak belirtmeniz gerekmez.
+
+44
+00:03:36,300 --> 00:03:36,800
+Tamam.
+
+45
+00:03:36,930 --> 00:03:38,550
+Hadi devam edelim ve size birkaç yol daha göstereceğim.
+
+46
+00:03:38,550 --> 00:03:42,660
+Bir seride verilerin çalışmaya başlamasından önce bir dizi oluşturun.
+
+47
+00:03:42,660 --> 00:03:48,910
+Bir dizi oluşturmak için bir diğer hızlı yol, P dizisini söyleyerek ve daha yüksek bir sayı geçirebilmenizdir.
+
+48
+00:03:48,930 --> 00:03:52,340
+Ve bu, bir PI ölümcülüyle aynı şekilde çalışacak.
+
+49
+00:03:52,380 --> 00:03:54,200
+Yani burada adına bir geçiş.
+
+50
+00:03:54,240 --> 00:03:55,550
+Ve aynı şekilde çalıştı.
+
+51
+00:03:55,710 --> 00:04:00,790
+Ve aynen liste gibi ben de bu Ampyra ile birlikte etiketler geçebilirdi.
+
+52
+00:04:00,900 --> 00:04:03,090
+Aslında bir hakem bir hakem çalışacak.
+
+53
+00:04:03,120 --> 00:04:09,000
+Python listesinde olduğu gibi bir diziye geçirildiğinde ve ardından nihayetinde gerçekten harika olan şey,
+
+54
+00:04:09,000 --> 00:04:12,350
+bu dizileri söyleyebiliyor ve sadece bir sözlükte geçebiliyor.
+
+55
+00:04:12,480 --> 00:04:17,250
+Ve Palla'nın yapacakları şey, sadece gösterilecek olan sözlüğün anahtarlarını otomatik olarak
+
+56
+00:04:17,250 --> 00:04:17,800
+almasıdır.
+
+57
+00:04:17,800 --> 00:04:24,690
+Burada, sözlüğün bir dizin olarak söylediği tuşları tekrar alıp, o anahtarın değerini karşılık gelen
+
+58
+00:04:24,840 --> 00:04:26,370
+veri noktasına ayarlayın.
+
+59
+00:04:26,370 --> 00:04:29,460
+Bu, hızlı bir şekilde bir dizi oluşturmak için hoş bir hızlı yol.
+
+60
+00:04:29,460 --> 00:04:31,610
+Burada dikkat etmeniz gereken bir şey var.
+
+61
+00:04:31,710 --> 00:04:36,630
+Ve bir korsanı panda serisinden ayıran bir başka şey, bir panda
+
+62
+00:04:36,630 --> 00:04:39,210
+serisinin aslında çeşitli nesne türlerini tutabileceğidir.
+
+63
+00:04:39,210 --> 00:04:46,920
+anda sadece sayıları tutan bir panda serisi PD serisi gösterdik, örneğin sayıları
+
+64
+00:04:46,920 --> 00:04:55,660
+sadece bir dizi tuttuğunu gösterdim ancak etiketleri hatırlayan veri etiketlerinin kendisi de tutabilirdi.
+
+65
+00:04:55,660 --> 00:04:56,630
+Şu
+
+66
+00:04:56,640 --> 00:05:01,270
+Eğer devam edersem ve bu yıl koşarsam sadece dizeler olur.
+
+67
+00:05:01,400 --> 00:05:08,800
+Bu yüzden bir dizi gerçekten veri noktası olarak Python'la hemen hemen her tür veri
+
+68
+00:05:08,810 --> 00:05:14,240
+nesnesini tutabilir, böylece dizeler olabilir ve veriler eşittir diyebileceğinizden daha
+
+69
+00:05:14,240 --> 00:05:22,670
+ilginç olabilir ve işe yerleştirilmiş olabilirsiniz, böylece bir şeyler söyleyebiliyordum bazı prens Eliane gibi ve aslında
+
+70
+00:05:22,670 --> 00:05:28,200
+bu panda serisinde veri noktaları olarak bu yerleşik işlevlere referanslar tutuyor.
+
+71
+00:05:28,230 --> 00:05:31,840
+Ve şu an yeni bir Hampshire yaparsan yapabileceğin bir şey değil.
+
+72
+00:05:32,000 --> 00:05:36,950
+bu, yalnızca Appin serisinin farklı nesne türlerine sahip olmasının esnekliğini göstermek için.
+
+73
+00:05:36,950 --> 00:05:42,110
+Asla muhtemelen bu konuyu Barındırma işlevleri veya referans işlevleri barındırdığı kadar asla kullanmayacaksınız,
+
+74
+00:05:42,110 --> 00:05:45,020
+ancak bu, Appin serisinin işlevlerini kullanıyor ancak
+
+75
+00:05:45,020 --> 00:05:48,590
+Pekâla, devam edelim ve bir dizini kullanmaya devam edelim.
+
+76
+00:05:48,710 --> 00:05:54,740
+Bir dizinin kullanılması için anahtar, Pandas'daki dizinini anlamak, bu dizin adlarını veya sayılarını, çok hızlı bilgi
+
+77
+00:05:55,010 --> 00:06:00,020
+aramalarına izin vererek kullanır ve sadece bir karma tablo veya sözlük gibi çalışır.
+
+78
+00:06:00,500 --> 00:06:05,100
+Şimdi bunu gerçekleştirmek için bir dizi bilgiyi nasıl alabileceğimizin bazı örneklerini inceleyelim.
+
+79
+00:06:05,120 --> 00:06:07,250
+İki seriyi yaratacağım.
+
+80
+00:06:07,250 --> 00:06:15,500
+gidip koyacağım. ABD gibi Almanya'ya koyacak bazı ülke adları SSCB'ye ve daha sonra Japonya'ya koyacak.
+
+81
+00:06:15,560 --> 00:06:20,480
+SVR adlı bir tane hazırlayacağım ve PD serisinin
+
+82
+00:06:20,480 --> 00:06:31,280
+bazı verilerin aktarılacağını söyleyeceğim ve verilerim için sadece bir tane iki üç dört tane söyleyeceğiz, sonra dizin için
+
+83
+00:06:31,280 --> 00:06:35,850
+Dolayısıyla bunlar, 2. Dünya Savaşı'ndaki bazı değerler içeren ülke adı referanslarına benzer.
+
+84
+00:06:35,870 --> 00:06:38,760
+Bu yüzden bir ACR 1 serisine göz atın.
+
+85
+00:06:39,440 --> 00:06:41,760
+Ve burada ciddi bir ihbarım var.
+
+86
+00:06:41,780 --> 00:06:45,700
+Şimdi dizin etiketlerim var ve bir iki üç dört veri noktam.
+
+87
+00:06:45,800 --> 00:06:48,670
+Ve D tipi tam sayı 64 diyebilirim.
+
+88
+00:06:48,690 --> 00:06:49,790
+Bu gerçek veri noktaları mıdır.
+
+89
+00:06:49,790 --> 00:06:51,680
+Tüm tamsayı mısınız.
+
+90
+00:06:51,680 --> 00:06:54,550
+Sonra da benzer iki modeli seri yapacağım.
+
+91
+00:06:54,560 --> 00:06:58,220
+Bu seriyi bir de PD'ye söyleyeceğim.
+
+92
+00:06:58,400 --> 00:07:01,200
+5: 4 diyelim.
+
+93
+00:07:02,570 --> 00:07:10,850
+Sonra endeks için ben devam edip ABD Almanya'yı söyleyeceğim ve bunlardan birini değiştirmek için gidiyorum, İtalya'yı bir ya
+
+94
+00:07:10,850 --> 00:07:18,110
+da iki ülke olarak söyleyeceğim ve o zaman Japonya diyeceğiz ve sonra kontrol edersek serisi iki,
+
+95
+00:07:18,110 --> 00:07:21,140
+bir ila beş tane alıyorum 4.
+
+96
+00:07:21,150 --> 00:07:24,360
+Yani İtalya burada farklıdır ve farklı bir veri noktasına sahiptir.
+
+97
+00:07:24,380 --> 00:07:29,720
+Aslında seriden bilgi almak istiyorsanız, serideki bir python sözlük türünü
+
+98
+00:07:29,720 --> 00:07:35,420
+ve ardından bir dizge olarak bilgi toplamaya çok benzer şekilde çalışacağım
+
+99
+00:07:35,420 --> 00:07:39,950
+ve devam edip gerçek dizin etiketi ABD'ye yazabilirsiniz.
+
+100
+00:07:39,950 --> 00:07:44,980
+Şimdi dizini bir dize olarak yazdığımı unutmayın çünkü dizinin bir dize olduğunu biliyorum.
+
+101
+00:07:45,020 --> 00:07:51,230
+Eğer burada 0 1 veya 2 olan bir dizi için çalışıyorsanız, sadece bir tam sayı geçiyordunuz.
+
+102
+00:07:51,230 --> 00:07:54,990
+Gerçek indeksiniz hangi veri türüne bağlıdır.
+
+103
+00:07:55,010 --> 00:07:55,950
+Tamam.
+
+104
+00:07:56,360 --> 00:07:59,710
+Genellikle dizin umarım ya bir sayı ya da bir dize olacak.
+
+105
+00:07:59,810 --> 00:08:07,480
+Ne passen ne bir, sonra dize veya ACR one ve ne olursa olsun integer indeksleriniz.
+
+106
+00:08:07,490 --> 00:08:12,480
+Örneğin hızlı bir şekilde SC veya üç gibi başka bir dizi oluşturursam.
+
+107
+00:08:12,560 --> 00:08:20,210
+Devam edin ve PD serisini söyleyin, biz de bu verileri etiketler olarak aktaracağız.
+
+108
+00:08:20,570 --> 00:08:22,800
+C veya üçünü kontrol ettim.
+
+109
+00:08:23,000 --> 00:08:24,980
+Şimdi veri noktalarım olarak ABC'ye sahibim.
+
+110
+00:08:24,980 --> 00:08:28,670
+Tür, bir dize olduğu gerçeğini ifade eden bir nesne.
+
+111
+00:08:28,880 --> 00:08:34,310
+Ve genelde bu sayıyı daha yüksek bir sayı için nasıl yapacağınız türden bir tamsayı diziniyle
+
+112
+00:08:34,310 --> 00:08:35,510
+bu işi halledebilirim.
+
+113
+00:08:35,840 --> 00:08:36,800
+Ve sonra bir ip var.
+
+114
+00:08:36,860 --> 00:08:38,370
+Bana geri dön.
+
+115
+00:08:38,420 --> 00:08:43,610
+Böylece yalnızca gerçek dizin etiketinde geçerseniz dizin etiketine karşılık gelen verileri döndürürsünüz.
+
+116
+00:08:44,180 --> 00:08:49,750
+Bildiğim kadarıyla bir dizi yapmak için çok temel işlemler genellikle dizin tabanlı yapılır.
+
+117
+00:08:49,760 --> 00:08:56,960
+Yani 1 ya da 1 gibi bir şey söyleyecek olsaydım, sonra C mi ikiyiz? Ve bunları eklemeye
+
+118
+00:08:56,960 --> 00:09:00,080
+çalıştığımızı söyleyelim yani SE1 ve S-E iki diyelim.
+
+119
+00:09:00,320 --> 00:09:04,970
+Olacak olan şey, ABD'nin burda olduğu ve ABD'nin burada
+
+120
+00:09:04,970 --> 00:09:08,620
+olduğu endeksinden kaynaklanan operasyonu eşleştirmeye çalışacağı yönünde.
+
+121
+00:09:08,630 --> 00:09:14,480
+Böylece onları ekleyecek ve sonuç olarak ABD'nin maçı bulamadığı yere eşit olacağını söylediler.
+
+122
+00:09:14,510 --> 00:09:16,060
+İtalya gibi.
+
+123
+00:09:16,070 --> 00:09:19,690
+Bir BOş koyacak ve sonra SSCB de onlar için değil.
+
+124
+00:09:19,730 --> 00:09:23,980
+Bu yüzden de neon nesnesi koyacağız gidelim ve bunu çalıştırdığımızda ne olacağına bakalım.
+
+125
+00:09:24,530 --> 00:09:30,920
+Ve sonuçları görüyoruz, böylece ABD 2 oldu. 0 Japonya 8 yaşındaydı. 00 Almanya 4 yaşındaydı. 0 sonra maç iş
+
+126
+00:09:30,920 --> 00:09:31,380
+bulamadı.
+
+127
+00:09:31,400 --> 00:09:33,370
+İleriye gitti ve boş değeri koydu.
+
+128
+00:09:33,650 --> 00:09:38,870
+neredeyse herhangi bir isim ateşinde Panda'nın temel nesnesi olan tamsayıların şamandıralara dönüştürüleceği.
+
+129
+00:09:38,870 --> 00:09:44,730
+Burada dikkat edilmesi gereken bir nokta, bir Pandurs serisi ile işlemler gerçekleştirirken ve
+
+130
+00:09:45,050 --> 00:09:50,480
+Ve bu, yanlışlıkla bazı tuhaf bölümlere dayanan bilgileri kaybetmeyin ve bu da Python'tan daha
+
+131
+00:09:50,480 --> 00:09:51,870
+fazlasını yapmak zorunda.
+
+132
+00:09:52,040 --> 00:09:57,680
+Ve sınıf bölünmesine karşı gerçek görüşün aslında eski versiyonda farklılaştığı gerçeği.
+
+133
+00:09:58,100 --> 00:10:02,630
+Python 3'ü temelde bu konuda endişelenmemek için kullanıyorsanız ancak
+
+134
+00:10:02,630 --> 00:10:09,290
+panderer'ların ve MPI'nin tüm bilgileri mümkün olduğunca korumak için akışa her zaman dönüştürdüğünü unutmayın.
+
+135
+00:10:09,720 --> 00:10:15,380
+Tamam, devam edip şimdilik burada durup, veri çerçevelerini tam olarak anlayabilmek için
+
+136
+00:10:15,380 --> 00:10:19,410
+seri konseptine daha fazla genişleyebilen veri çerçevelerine geçelim.
+
+137
+00:10:19,460 --> 00:10:23,870
+Sadece dizinin temellerini bilmek zorundasınız, bu da sadece dizin olarak etiketlediklerini ve sonra bir
+
+138
+00:10:23,870 --> 00:10:27,770
+veri noktası gerçekten bu ders boyunca çok fazla dizi ile çalışmayacağımızı bilmelisiniz.
+
+139
+00:10:27,770 --> 00:10:32,190
+Pandaların gerçek atölyesi olan veri çerçeveleri ile çok daha fazla çalışacağız.
+
+140
+00:10:32,210 --> 00:10:33,980
+Hadi devam edelim ve bir sonraki dersi atlayalım.
+
+141
+00:10:33,990 --> 00:10:37,400
+Bu veri çerçeveleri hakkında daha fazla ayrıntı konuşacağız.
+
+142
+00:10:37,400 --> 00:10:39,510
+Herkese teşekkürler, bir sonraki konferansta görüşürüz.

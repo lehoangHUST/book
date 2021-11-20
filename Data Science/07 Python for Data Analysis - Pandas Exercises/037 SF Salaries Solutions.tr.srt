@@ -1,0 +1,811 @@
+1
+00:00:05,580 --> 00:00:08,220
+Herkese merhametsiz egzersiz yemekten merhaba.
+
+2
+00:00:08,220 --> 00:00:14,540
+SS maaşının çözümleri bu dersin içeriğini S. F. maaşın pandaları egzersizi.
+
+3
+00:00:15,030 --> 00:00:17,780
+Ona, başlamak için Jüpiter'in not defterini aldığımızı söyleyelim.
+
+4
+00:00:18,240 --> 00:00:20,440
+Tamam burada, Jüpiter defterinde bulunuyoruz.
+
+5
+00:00:20,540 --> 00:00:25,650
+Bu, panda becerilerinizi keskinleştirmeniz ve pandalara ve gerçek veri setlerine alışmanız için yalnızca
+
+6
+00:00:25,650 --> 00:00:26,970
+hızlı bir alıştırmadır.
+
+7
+00:00:27,060 --> 00:00:30,540
+Bu durumda biz S.'yi kullanacağız. F. maaşın verileri Kaggle'dan ayarlanır.
+
+8
+00:00:30,720 --> 00:00:35,160
+bilgi ve bazı diğer veri analizi örnekleriyle gerçek veri kaynağına geçersiniz.
+
+9
+00:00:35,160 --> 00:00:38,110
+Yine buradaki bağlantıyı tıklatabilirsiniz ve daha fazla
+
+10
+00:00:38,210 --> 00:00:42,270
+O halde devam edin ve maaşlar egzersizi ile başlayalım.
+
+11
+00:00:42,270 --> 00:00:48,720
+Devam edelim ve pandaları Edi olarak alıp, sonra devam edelim ve maaş olarak adlandırılan bir veri çerçevesi
+
+12
+00:00:48,720 --> 00:00:49,650
+olarak görmüyorum.
+
+13
+00:00:49,650 --> 00:00:57,750
+Yani PD, CSP'yi okuyacak ve yazmaya başladığımızda hoş bir numara olacak.
+
+14
+00:00:57,840 --> 00:01:05,110
+Sekme autocomplete kullanın Ve devam edelim ve bu veri çerçevesinin başını kontrol edelim.
+
+15
+00:01:05,490 --> 00:01:12,400
+Çalışan Adı iş unvanını temel alan mesai ücreti mesai ücreti ödeyeceğiz ve bu iki sırayı
+
+16
+00:01:12,400 --> 00:01:19,260
+ve diğer ücret faydalarını temelde toplam ödeme artı bir yıl olan az ödemede az ödeyelim.
+
+17
+00:01:19,260 --> 00:01:21,980
+Sadece bir yöntem olarak çağırıyorsun, biz
+
+18
+00:01:22,020 --> 00:01:25,050
+Sonra ajans ve statü notları.
+
+19
+00:01:25,080 --> 00:01:26,980
+Şimdi devam edin ve giriş yöntemini kullanalım.
+
+20
+00:01:27,000 --> 00:01:34,980
+Kaç giriş var öğrenin böylece satmak bilgi söylemek gitmeyin veya bu bilgi
+
+21
+00:01:34,980 --> 00:01:39,810
+yöntemi sütun sayısını ve giriş satır sayısı döndürür.
+
+22
+00:01:39,810 --> 00:01:42,750
+Şimdi, temel ücretin ne olduğunu öğrenmek istiyorum.
+
+23
+00:01:42,750 --> 00:01:49,970
+Devam edin ve renkli veri çerçevesi temel ödeme sütun Minnies sekmesini otomatik tamamlama, burada kullanım
+
+24
+00:01:49,980 --> 00:01:52,520
+kolaylığı kapmak ve sonra ortalama.
+
+25
+00:01:52,620 --> 00:01:55,020
+Bu durumda sadece bir anlam ifade ediyorum.
+
+26
+00:01:55,550 --> 00:02:01,810
+Dolayısıyla, bunun ortalamasını çağırabilir ve ortanca veya ortalama mazerete dayalı ödemenin altmış altı
+
+27
+00:02:01,810 --> 00:02:03,780
+bin 325 olduğunu söyleyebiliriz.
+
+28
+00:02:03,780 --> 00:02:07,950
+Burada ortalamanın kelimesini kullanmamın sebebi, cevabımı tamamen vermediğimden emin
+
+29
+00:02:07,950 --> 00:02:10,200
+olmak için olduğum anlamına geliyordu.
+
+30
+00:02:10,200 --> 00:02:11,010
+Tamam.
+
+31
+00:02:11,010 --> 00:02:14,390
+Şimdi, veri setinde fazla mesai ücretinin en yüksek tutarı nedir?
+
+32
+00:02:14,470 --> 00:02:21,720
+vadede, bu durumda, kırkbeşbin yüz otuz bir oldukça önemli miktarda fazla mesai ücreti aramaktır.
+
+33
+00:02:21,770 --> 00:02:27,060
+Dışarıda gidip yapacağımız fazla mesai ücreti sütununu kapmak ve daha
+
+34
+00:02:27,060 --> 00:02:29,140
+sonra Max vaktini, kısa
+
+35
+00:02:29,610 --> 00:02:30,280
+TAMAM.
+
+36
+00:02:30,570 --> 00:02:35,720
+Şimdi Joseph Driscoll'un iş unvanını ve notu burada tümü ne kullanıyor.
+
+37
+00:02:35,730 --> 00:02:38,290
+Aksi halde farklı bir cevap alabilirsiniz.
+
+38
+00:02:38,550 --> 00:02:40,460
+Sat demeyi istiyor.
+
+39
+00:02:40,620 --> 00:02:42,900
+Iş unvanını aramaya gidiyorum.
+
+40
+00:02:43,050 --> 00:02:48,170
+Ve bu durumda aslında sadece iş başlığı tek bir kelime olarak adlandırılır.
+
+41
+00:02:48,180 --> 00:02:50,440
+Bu yüzden meslek unvanını söylüyorum.
+
+42
+00:02:50,660 --> 00:02:55,470
+Burada işe yaradıklarını anlamak için bir sürü iş ilanına sahip olduğunuzu fark ettiler.
+
+43
+00:02:55,560 --> 00:02:59,090
+Joseph Driscoll adında biri içeri girip söyleyeceğim.
+
+44
+00:02:59,160 --> 00:03:08,630
+Sal çalışanının adı eşittir ve dizgelerin hepsine eşittir derim.
+
+45
+00:03:08,670 --> 00:03:18,140
+Joseph Driscoll ve ben onu hücresine koyacağız.
+
+46
+00:03:20,040 --> 00:03:23,540
+Burada Joseph Driscoll'un tüm kapaklarda olduğu sıraya sahibim.
+
+47
+00:03:23,550 --> 00:03:26,490
+Bu yüzden iş unvanını yangın bastırmasının kaptanı yapıyor.
+
+48
+00:03:26,640 --> 00:03:32,400
+önce gösterdiğim gibi iş unvanını kaldırdıktan sonra yangın söndürme kaptanı tutabilirdik.
+
+49
+00:03:32,400 --> 00:03:36,200
+Ve eğer o kolonu geri isteseydim daha
+
+50
+00:03:36,210 --> 00:03:38,480
+Şimdi Joseph Driscoll'un ne kadar kazandığını bilmek istiyorum.
+
+51
+00:03:38,500 --> 00:03:40,190
+Ve yine burada tüm kapakları kullanmanız gerekir.
+
+52
+00:03:40,230 --> 00:03:42,330
+Eşleşen cevabı alın.
+
+53
+00:03:42,330 --> 00:03:45,050
+Gidip Sal ​​diyene gidiyoruz.
+
+54
+00:03:45,180 --> 00:03:50,380
+Sal çalışan adı eşittir.
+
+55
+00:03:50,910 --> 00:03:55,120
+Joseph Driscoll.
+
+56
+00:03:55,560 --> 00:03:56,790
+Şimdi onun rolü burada.
+
+57
+00:03:56,820 --> 00:03:59,770
+Ve yararları da dahil olmak üzere ne kadar para kazandığını bilmek istiyorum.
+
+58
+00:03:59,970 --> 00:04:09,060
+Bu, toplam ücret avantajlarının üstünde kalan ve sadece 270000 324 olan cevap
+
+59
+00:04:09,060 --> 00:04:12,630
+gibi görünen toplam ücret avantajları.
+
+60
+00:04:12,630 --> 00:04:19,770
+Unutmayın bunu yanlışlıkla tüm karakterleri koymayı unuttuysanız ve Joseph Driscoll'a söylerseniz, aslında başka bir
+
+61
+00:04:19,770 --> 00:04:20,970
+yanıt alırsınız.
+
+62
+00:04:20,970 --> 00:04:22,240
+Yani aslında burada iki kere.
+
+63
+00:04:22,240 --> 00:04:25,980
+Bu nedenle, yanıtlarınızın çözümlere uymasını sağlamak için bunu göz önünde bulundurun.
+
+64
+00:04:25,980 --> 00:04:29,300
+Sadece tüm kapakları kullanın.
+
+65
+00:04:29,310 --> 00:04:33,490
+Şimdi, fayda dahil olmak üzere en çok ücret alan kişinin adı nedir bilmek istiyoruz.
+
+66
+00:04:33,540 --> 00:04:35,640
+Bunu yapmanın birkaç yolu var.
+
+67
+00:04:35,820 --> 00:04:38,920
+Fakat devam edelim ve en basit yolu yapalım.
+
+68
+00:04:38,970 --> 00:04:48,990
+Bu yüzden küçük bir ödeme avantajı elde edeceğim ve maksimum değeri burada ararsam, maksimum toplam ücret avantajı elde ettiğimi ancak bunun
+
+69
+00:04:49,260 --> 00:04:53,400
+aslında kim olduğunu bilen kişinin adını öğrenmek istiyorum.
+
+70
+00:04:53,400 --> 00:04:55,380
+Bu yüzden söyleyebilirim
+
+71
+00:04:58,460 --> 00:05:04,110
+ki, toplam maaş karşılığının satılacağına eşit saydıklarını söyleyebilirim Max.
+
+72
+00:05:04,110 --> 00:05:04,800
+Ben bunu çalıştırıyorum.
+
+73
+00:05:04,800 --> 00:05:06,960
+Bu, boolean değerlerini döndürür.
+
+74
+00:05:07,010 --> 00:05:08,450
+Ve hayır sadece bir doğruya sahibim.
+
+75
+00:05:08,450 --> 00:05:10,800
+Aslında bunu, veri çerçevesinde Soule'a
+
+76
+00:05:14,520 --> 00:05:20,280
+geçirebilecek ilk kişi var ... Aslında göze alacak bir şey olan adını alabilmek
+
+77
+00:05:20,280 --> 00:05:26,590
+için ve ismini istediğimde şunu söyleyebilirim: Çalışanın adını söylemeliyim ve adını THANIA alıyorum parası yetmek.
+
+78
+00:05:26,970 --> 00:05:28,490
+Tamam, bunu yapmanın bir yolu.
+
+79
+00:05:28,560 --> 00:05:35,670
+Bunu yapmak için daha gelişmiş bir yol ve biz aslında bu yöntem üzerinde
+
+80
+00:05:36,900 --> 00:05:45,640
+gitmedim ama sadece Loct güneyindeki Küçük ödeme id x Max yararları nerede Loek hücre kullanın.
+
+81
+00:05:45,690 --> 00:05:51,260
+Ve aslında neredeyse bir arc emacs yöntemine benziyor ve bu da bazı bilgileri döndürüyor
+
+82
+00:05:51,250 --> 00:05:56,730
+ve bu ve daha gelişmiş yöntemler için Xmas'a bakabileceğiniz Nathanial'ı döndürüyor ancak pis'e
+
+83
+00:05:56,740 --> 00:05:57,650
+çok benziyor.
+
+84
+00:05:57,710 --> 00:05:58,930
+Argh Max.
+
+85
+00:05:59,260 --> 00:06:03,170
+Tamam, bunun ne olduğuna bir göz atalım.
+
+86
+00:06:03,250 --> 00:06:05,360
+Bu esasen sadece bir sayı.
+
+87
+00:06:05,940 --> 00:06:09,750
+Yani bir karma etiket bu ve bunu yapıştırın.
+
+88
+00:06:09,750 --> 00:06:15,010
+Bu aslında yalnızca RMX ve aslında Panas RMX'i destekliyor.
+
+89
+00:06:15,030 --> 00:06:18,960
+Bu yüzden burada max değerimi söyleyebilirim ve bana aynı cevabı verecekti.
+
+90
+00:06:19,060 --> 00:06:21,460
+Ve esasen bu kişiyi bulmak istediğim yer.
+
+91
+00:06:21,710 --> 00:06:31,830
+Eşleştiğinden Sal Dot'a IOC veya Alosi diyebilirim ve hala yeterli miktarda veri buluyorum.
+
+92
+00:06:31,890 --> 00:06:36,390
+Tamam, çözümü inceleyeceğim, ancak bu yöntemle ilgileniyorsanız ancak umarım bu bir
+
+93
+00:06:36,390 --> 00:06:38,990
+veya daha fazla gelişmiş yöntem bulmuş olursunuz.
+
+94
+00:06:39,330 --> 00:06:41,640
+Devam edelim ve devam edelim.
+
+95
+00:06:41,670 --> 00:06:45,990
+Şimdi, fayda dahil olmak üzere en düşük ücretli kişinin adının ne olduğunu bilmek istiyoruz ve ne
+
+96
+00:06:46,000 --> 00:06:48,060
+kadar ödediği konusunda garip bir şey fark ediyorsunuz.
+
+97
+00:06:48,450 --> 00:06:50,010
+Bu yüzden en düşük ücretli kişiyi istiyoruz.
+
+98
+00:06:50,070 --> 00:06:50,700
+Devam edin ve yapın.
+
+99
+00:06:50,740 --> 00:07:05,500
+Gelişmiş yöntem Dimin veya I. toplam ücret faydaları satmak söyleyecektir. T. X Men.
+
+100
+00:07:06,260 --> 00:07:11,290
+Dikkat edin, yüz kırk sekiz bin altı yüz elli üçümüz var.
+
+101
+00:07:11,740 --> 00:07:21,450
+Salbe IOC'ye geçirebilmem için bu ID konumudur ve Joe Lopez çalışanlarını geri getirir.
+
+102
+00:07:21,750 --> 00:07:27,300
+Şimdi burada garip bir şey fark etmek için, bu kişi aslında bazı durumlarda
+
+103
+00:07:27,330 --> 00:07:33,840
+garip bir durumla San Francisco parasına borçlu fakat nedense Joe Lopez'i cevap olarak alabiliyor olması için
+
+104
+00:07:34,030 --> 00:07:36,930
+bu kişi aslında negatif ödeme anlamını alıyor.
+
+105
+00:07:37,000 --> 00:07:41,860
+Bu, RMN ile bunu yapmanın daha gelişmiş bir yöntemidir Ama aşağıdakileri de yapmış olabilirsiniz:
+
+106
+00:07:41,940 --> 00:07:54,730
+Hücrenin toplam ücret avantajlarının, erkeklerin değil küçük ücret avantajlarının hücresine eşit olduğunu ve daha sonra bunu sadece bunun üzerine
+
+107
+00:07:54,730 --> 00:07:56,110
+geçirdiğini söyleyebilirdiniz.
+
+108
+00:07:56,190 --> 00:08:04,590
+Böylece Joe Lopez danışmanına AU'nun Sioux City San Francisco parasını geri getirecekti.
+
+109
+00:08:05,060 --> 00:08:08,250
+Şu anda, bu davada ortalama ne hakkında konuşuluyor.
+
+110
+00:08:08,250 --> 00:08:09,180
+Sana cevap vermek istiyorum.
+
+111
+00:08:09,210 --> 00:08:11,770
+Yani tüm çalışanların yıllık ücreti esas alınır.
+
+112
+00:08:12,130 --> 00:08:14,400
+Tamam şimdi bir Grup Kullanarak kullanmak istiyoruz.
+
+113
+00:08:14,640 --> 00:08:27,700
+Bu yüzden her yıl grup satmam diyebilirim ve bu durumda ortalamayı istiyorum, sadece bunu rapor edersem, her şeyi yıl
+
+114
+00:08:27,780 --> 00:08:31,750
+ortalamasını alırım ve temel ödemek isteyeceklerdir.
+
+115
+00:08:31,760 --> 00:08:37,540
+Bu nedenle, bu veri çerçevesinin bu sütunundan taban ödemesi dile getireceğiz. Beni suçla ve işte gidelim.
+
+116
+00:08:37,600 --> 00:08:42,150
+Yılda ödenecek ortalama ücretli çalışanlar, yavaş yavaş arttığını görebiliyoruz.
+
+117
+00:08:42,140 --> 00:08:47,820
+2011 2012 yükselmeye başladı ve 2014'te biraz düştü.
+
+118
+00:08:47,830 --> 00:08:52,810
+Cevaplamak istediğim bir sonraki soru kaç adet eşsiz meslek unvanının bulunduğuydu
+
+119
+00:08:52,800 --> 00:09:00,510
+ve iş unvanını satmak ve daha sonra benzersiz değerleri greplemek için kullanabileceğiniz pek çok fonksiyon veya yöntem
+
+120
+00:09:00,510 --> 00:09:02,940
+bulunduğunu hatırlamak çok kolay oldu.
+
+121
+00:09:02,940 --> 00:09:07,980
+İstediğimiz şey benzersiz değildir çünkü aslında istediğimiz benzersiz değerlerden bir dizi döndürür
+
+122
+00:09:07,990 --> 00:09:11,670
+ve benzersiz değerler getiren benzersiz değerler dizisi döndürür.
+
+123
+00:09:11,760 --> 00:09:19,020
+O zaman o eşsiz çıktı uzunluğuna sahip olabilirsin ve bu aynı şeyi geri getirirse bunu
+
+124
+00:09:19,020 --> 00:09:23,870
+yapmanın daha kolay yolu uzunlukla değil sadece sizinle ve sizinle.
+
+125
+00:09:24,210 --> 00:09:26,710
+Şimdi en çok befl en s> k görülen iflin ne oldu¤unu bilmek istiyoruz.
+
+126
+00:09:26,740 --> 00:09:39,060
+Bunu, değer sayılmayan iş unvanı satarak söyleyerek yapabilirsiniz ve daha sonra bunun en üst 5'ini ve arama terimlerini en sık
+
+127
+00:09:39,070 --> 00:09:42,530
+rastlanan en popüler iş başlıklarını arayın.
+
+128
+00:09:42,560 --> 00:09:47,070
+soru, kaç tane iş unvanının 2013'te yalnızca bir kişi tarafından temsil edildiği oldu.
+
+129
+00:09:47,080 --> 00:09:48,630
+Yanıt vermek istediğim bir sonraki
+
+130
+00:09:48,630 --> 00:09:52,580
+Aksi takdirde, yalnızca 2013 yılında bir işin başlığı olur.
+
+131
+00:09:52,590 --> 00:09:54,600
+Yani muhtemelen yapmak istediğiniz koşullar var.
+
+132
+00:09:54,820 --> 00:10:00,380
+Değer hesapları yalnızca birine eşit olduklarını anladıklarından iş unvanlarını bulmak istiyoruz.
+
+133
+00:10:00,410 --> 00:10:03,410
+Aynı zamanda yalnızca 2013 yılı için yaptığımızdan emin olmak istiyoruz.
+
+134
+00:10:03,510 --> 00:10:07,280
+Bu yüzden bunu parçalayacak.
+
+135
+00:10:07,360 --> 00:10:13,530
+Yıl'ın 2013'e eşit olduğu yerde Sal'ı yakalamak istiyorum.
+
+136
+00:10:14,100 --> 00:10:20,900
+sadece 2013 yılı ve bununla ne yapacağım nerede olduğu eşit sor.
+
+137
+00:10:23,610 --> 00:10:30,640
+Sonra iş başlık sütununu kapatıp burada ses sayımı yapacağım, burada burada
+
+138
+00:10:31,500 --> 00:10:36,750
+söylediğim şeye çok benzer değerler var ancak şimdi
+
+139
+00:10:37,600 --> 00:10:43,230
+Burada boolean değerleri yanlış buluyoruz ve burada hepsi eşit olan True'lar var.
+
+140
+00:10:43,270 --> 00:10:47,230
+Ve bu olayın gerçek sayısı ne olduğunu anlamaya çalışıyorum.
+
+141
+00:10:47,230 --> 00:10:49,420
+Bunun karşılığında aslında bir kısmını
+
+142
+00:10:53,060 --> 00:10:53,690
+alabilirim.
+
+143
+00:10:53,820 --> 00:10:55,260
+İki yüz iki.
+
+144
+00:10:55,380 --> 00:11:00,490
+yalnızca bir kişi tarafından temsil edildiğini bilmek için en hızlı ve en kolay yol.
+
+145
+00:11:00,580 --> 00:11:02,600
+Bu, 2013 yılında kaç iş başlığının
+
+146
+00:11:02,650 --> 00:11:03,170
+TAMAM.
+
+147
+00:11:03,520 --> 00:11:08,260
+Hadi devam edelim ve bunu yapmak için, özel bir işleve sahip olmamız
+
+148
+00:11:08,260 --> 00:11:13,990
+gerektiği için, iş başlığında kaç kişi kelime şefi olan da oldukça becerikli olana geçelim.
+
+149
+00:11:14,260 --> 00:11:20,050
+İçeri girelim ve iş başlığının nasıl bir sütun gibi görüneceğini kontrol edelim.
+
+150
+00:11:20,150 --> 00:11:24,030
+Yani iş başlığının her şeyin çoğunlukla büyük bir vaka olduğunu fark ettiniz.
+
+151
+00:11:24,040 --> 00:11:25,830
+Hadi ilerleyip aşağı ilerleyelim.
+
+152
+00:11:25,870 --> 00:11:27,730
+Ve şimdi küçük harfli olduğunu görüyoruz.
+
+153
+00:11:27,790 --> 00:11:32,500
+Bu yüzden, bunu hesaba kattığınızdan ve yapacağımızdan emin olmak için
+
+154
+00:11:32,500 --> 00:11:37,890
+bunu yapmak için yapmamız gereken şey, bunu yapmak için bir işlev oluşturmaktır.
+
+155
+00:11:38,230 --> 00:11:41,760
+Baş şerit başlığı alır
+
+156
+00:11:44,320 --> 00:11:53,530
+ve Şef başlığında ise Diyelim ki bölünen alt bölme DOĞRUDAN
+
+157
+00:11:56,130 --> 00:12:02,490
+dönün yanlış, aksi halde yanlış olur.
+
+158
+00:12:02,920 --> 00:12:06,370
+Şimdi bu işlevin ne yaptığını yıkmaya gidelim.
+
+159
+00:12:06,450 --> 00:12:07,360
+Burada sadece
+
+160
+00:12:10,800 --> 00:12:12,220
+rastgele bir unvan kapacağım.
+
+161
+00:12:12,220 --> 00:12:18,420
+Genel Müdür Metropolitan Transit Authority, bu işi alıp Şef dizesine geçirmeme izin verdim.
+
+162
+00:12:21,740 --> 00:12:24,010
+Bu ne demek.
+
+163
+00:12:24,120 --> 00:12:29,600
+Bunu bir kez daha kopyalayıp yapıştırın.
+
+164
+00:12:29,600 --> 00:12:31,230
+Oraya gidiyoruz.
+
+165
+00:12:31,240 --> 00:12:35,410
+Ve anlamıyorum yanlış anlamıyorum, çünkü şef bu başlıkta.
+
+166
+00:12:35,530 --> 00:12:39,790
+Şimdi gidip şef müdür gibi bir şeye değiştirelim.
+
+167
+00:12:40,120 --> 00:12:41,740
+Bunu şimdi yürütüyorum, gerçek oldum.
+
+168
+00:12:41,770 --> 00:12:46,030
+Aslında olan şey, bu başlığı sadece bu dalı alıyor olması.
+
+169
+00:12:46,030 --> 00:12:51,090
+Burada her şeyin dizede küçük harfle yazılmasını sağlayan daha düşük varlığı uyguluyor ve
+
+170
+00:12:51,100 --> 00:12:58,720
+daha sonra devam ediyor ve bir listeye bölünmesi ve ardından dize peynirinin bu listede doğru mu yoksa çağrı mı döndüğünü
+
+171
+00:12:58,720 --> 00:12:59,580
+kontrol ediyor.
+
+172
+00:12:59,830 --> 00:13:02,230
+Ve bu sadece lambda
+
+173
+00:13:05,380 --> 00:13:16,780
+X kullanarak uygulayabilir ve daha sonra Şef string x söyleyeceğim ve daha sonra bu boolean değerlerini alacağım anlamına gelen false false
+
+174
+00:13:16,780 --> 00:13:18,980
+false true true true demektir.
+
+175
+00:13:19,000 --> 00:13:21,690
+Ve burada bunları saymanın birkaç yöntemi var.
+
+176
+00:13:21,720 --> 00:13:28,840
+gördüklerimiz sadece bunlardan bazılarını almak için, 477 kişinin iş unvanı şefi olduğunu söylüyor.
+
+177
+00:13:29,170 --> 00:13:32,150
+Bunu yapmanın en iyi yolundan önce
+
+178
+00:13:32,640 --> 00:13:32,910
+TAMAM.
+
+179
+00:13:32,920 --> 00:13:37,360
+Nihayet, aslında fazladan bir soru olduğu sonuncusu, çünkü henüz bitmemiş bir
+
+180
+00:13:37,360 --> 00:13:42,430
+yöntemimiz var, bu da korelasyon ve bilmek istediğimiz, iş unvanının uzunluğu ile maaş
+
+181
+00:13:42,430 --> 00:13:44,020
+arasında bir korelasyon var.
+
+182
+00:13:44,470 --> 00:13:53,320
+Gelgit Altçizgi Eliane olarak adlandırılan yeni bir sütun hazırlayacağız ve iş başlığı
+
+183
+00:13:53,320 --> 00:14:00,400
+sütununa eşit olacak ve bunun için yöntemde yerleşik bağlantıyı uygulayacağım.
+
+184
+00:14:00,410 --> 00:14:05,920
+buradan bakarsam, burada unvan ve iş unvanının uzunluğuna sahibim.
+
+185
+00:14:11,230 --> 00:14:12,420
+Şimdi bu
+
+186
+00:14:17,360 --> 00:14:21,380
+iki sütun iş unvanı ve başlığı linkine
+
+187
+00:14:22,210 --> 00:14:26,860
+Şimdi yapmak istediğim, bu ikisi ile kendi keşfettiğiniz yöntem arasında bir
+
+188
+00:14:26,860 --> 00:14:34,600
+korelasyon olup olmadığını görmek. Bu nedenle, ikramiye sorusu C O R R ve birden fazla sütun arasındaki ilişkiyi
+
+189
+00:14:34,600 --> 00:14:35,070
+döndürüyor.
+
+190
+00:14:35,080 --> 00:14:39,900
+Ancak burada aslında bilmek istediğimiz, iş unvanının uzunluğu ile maaş arasındaki korelasyondur.
+
+191
+00:14:40,420 --> 00:14:42,720
+Dolayısıyla bu, mükemmel şekilde birbiriyle ilişkilendirilmiş mantıklı.
+
+192
+00:14:42,730 --> 00:14:51,520
+Ancak, boşta kalma ve aslında toplam ücret faydaları sütunu yapmak istiyoruz.
+
+193
+00:14:52,140 --> 00:14:56,310
+Burada, başlığınızın ne kadar ödediğinizin ne kadar uzun kaldığı arasında esasen
+
+194
+00:14:56,320 --> 00:14:57,630
+bir ilişki bulunmadığını görebiliriz.
+
+195
+00:14:57,750 --> 00:14:58,260
+TAMAM.
+
+196
+00:14:58,360 --> 00:15:02,440
+Endişelenmeyin, eğer sonuncusu alamadıysanız o oldukça zor ve zordu ama
+
+197
+00:15:02,440 --> 00:15:06,550
+gitmemize neden olan bazı yöntemler vardı, bu nedenle bonus sorusu oldu.
+
+198
+00:15:06,550 --> 00:15:07,100
+Tamam.
+
+199
+00:15:07,330 --> 00:15:12,270
+Umarım bunu öğrenirken, son çiftleri elde edebildiysen, itirazı daha da sert ve
+
+200
+00:15:12,280 --> 00:15:13,990
+daha sert olarak hatırlarsın.
+
+201
+00:15:14,020 --> 00:15:17,190
+Bunlar aslında oldukça zor ama çözümleri her zaman gözden geçirebilirsiniz.
+
+202
+00:15:17,210 --> 00:15:22,840
+Hayır, ancak bununla daha fazla pratik yapmak isterseniz veya devam edin ve herhangi bir sorunuz varsa Q &amp; A forumları yayınlayın.
+
+203
+00:15:23,560 --> 00:15:25,390
+Herkese teşekkürler, bir sonraki derside görüşürüz.

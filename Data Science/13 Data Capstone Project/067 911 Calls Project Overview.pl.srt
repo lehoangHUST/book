@@ -1,0 +1,127 @@
+1
+00:00:05,010 --> 00:00:09,930
+Cześć wszystkim i zapraszam na wykład podsumowujący projekt podsumowujący dane i ten wykład, który zamierzamy omówić
+
+2
+00:00:09,930 --> 00:00:14,300
+w nowej książce "Trzydzieści dziewięć" na temat jednego z projektów pod nazwą "capstone".
+
+3
+00:00:14,310 --> 00:00:17,580
+Przejdźmy dalej i przejdź do notatnika Jowisza, aby rozpocząć.
+
+4
+00:00:17,580 --> 00:00:22,920
+W porządku, więc tutaj jestem w notatniku, ten notatnik znajduje się w folderze Projekty danych.
+
+5
+00:00:23,400 --> 00:00:28,840
+A w tym projekcie z kluczem będziemy analizować dane z 911 wywołań z Kaggle dot com.
+
+6
+00:00:29,000 --> 00:00:32,600
+A jeśli wejdziesz i klikniesz ten link, przeniesie Cię on do źródła tego zestawu danych tutaj.
+
+7
+00:00:32,600 --> 00:00:37,190
+Kaggle jest już pobrany jako plik CAC, więc musisz coś pobrać.
+
+8
+00:00:37,360 --> 00:00:42,780
+Ale tak jak krótki przegląd sytuacji, w której dane pochodzą z Kaggle dot com i Kaggle, jeśli klikniesz
+
+9
+00:00:42,780 --> 00:00:47,460
+tutaj, zbiory danych przeniesie Cię do tego łącza i jest to zasadniczo miejsce, w którym możesz
+
+10
+00:00:47,460 --> 00:00:48,570
+publikować zestawy danych.
+
+11
+00:00:48,570 --> 00:00:53,010
+Istnieje również aspekt rywalizacji o uczenie się z maszyną na tej stronie internetowej, który omówimy
+
+12
+00:00:53,010 --> 00:00:55,420
+w części poświęconej uczeniu maszynowemu na tym kursie.
+
+13
+00:00:55,530 --> 00:01:00,050
+Ale na razie możesz myśleć, że to tylko miejsce, w którym ludzie mogą publikować zestawy danych.
+
+14
+00:01:00,060 --> 00:01:07,170
+W porządku, więc te połączenia 911 pochodzą z Montgomery County w Pensylwanii i zawierają następujące
+
+15
+00:01:07,170 --> 00:01:13,380
+pola długości geograficznej, na których odbyło się połączenie z opisem połączenia alarmowego, Kod
+
+16
+00:01:13,560 --> 00:01:15,210
+tytułu Zip, datownik.
+
+17
+00:01:15,210 --> 00:01:18,510
+Ale zauważ, że to ciąg znaków, a nie rzeczywisty obiekt z datą.
+
+18
+00:01:18,540 --> 00:01:22,920
+A potem miasteczko ma ciąg i ciąg adresowy, a następnie ostatnia kolumna E.
+
+19
+00:01:23,010 --> 00:01:25,080
+To tylko sztuczna zmienna, zawsze jest jedna.
+
+20
+00:01:25,140 --> 00:01:29,850
+Możesz więc całkowicie zignorować tę kolumnę, a następnie przejdziesz do tego notatnika i
+
+21
+00:01:29,880 --> 00:01:33,910
+postaraj się wykonać instrukcje najlepiej jak możesz i zawsze możesz post-acute.
+
+22
+00:01:33,930 --> 00:01:38,520
+Jeśli utkniesz lub możesz po prostu odwołać się do książki z nutami
+
+23
+00:01:38,520 --> 00:01:44,400
+rozwiązania lub wykładu wideo, który pojawi się w następnym rozdziale, po prostu importujesz dane, wszystko
+
+24
+00:01:44,400 --> 00:01:50,280
+załatwisz, zbadaj trochę dane za pomocą niektórych pytań, twórz nowe funkcje z danych zrób trochę
+
+25
+00:01:50,340 --> 00:01:54,820
+wizualizacji wykresów słupkowych, wykonując liniowe wizualizacje, a następnie utworzysz mapy cieplne.
+
+26
+00:01:54,840 --> 00:01:55,620
+W porządku.
+
+27
+00:01:55,620 --> 00:01:57,240
+To wszystko na ten wykład.
+
+28
+00:01:57,240 --> 00:01:58,980
+Powodzenia w projekcie z kamienia węgielnego.
+
+29
+00:01:58,980 --> 00:01:59,820
+Mam nadzieję, że ci się spodoba.
+
+30
+00:01:59,820 --> 00:02:00,880
+To całkiem interesujące.
+
+31
+00:02:01,020 --> 00:02:04,740
+I zobaczę cię na następnym wykładzie, gdzie krok po kroku będziemy omawiać rozwiązania.
+
+32
+00:02:04,740 --> 00:02:06,620
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

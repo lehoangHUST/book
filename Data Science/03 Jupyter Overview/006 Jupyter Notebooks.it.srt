@@ -1,0 +1,851 @@
+1
+00:00:05,370 --> 00:00:10,500
+Salve a tutti e benvenuti alla conferenza sul taccuino di Giove e questa conferenza vi mostrerà
+
+2
+00:00:10,500 --> 00:00:15,540
+come utilizzare in modo efficace il sistema di notebook Jupiter e offrirvi una panoramica dell'ambiente generale.
+
+3
+00:00:15,540 --> 00:00:20,580
+Consulta anche le risorse per questa lezione per scaricare il file zip che
+
+4
+00:00:20,580 --> 00:00:23,000
+contiene tutti i file del notebook.
+
+5
+00:00:23,040 --> 00:00:27,150
+Così come ho detto controlla le risorse per la lezione e scarica il file zip.
+
+6
+00:00:27,150 --> 00:00:33,700
+Contiene tutti i punti IP Y e B file o notebook e quei notebook per il resto del mix del
+
+7
+00:00:33,990 --> 00:00:34,430
+corso.
+
+8
+00:00:34,470 --> 00:00:37,910
+Ricorda dove hai salvato e decompresso quel file.
+
+9
+00:00:38,640 --> 00:00:42,990
+Andiamo avanti ed esploriamo i taccuini e diamo un'idea di come usarli efficacemente.
+
+10
+00:00:42,990 --> 00:00:47,510
+Sto andando avanti e ti ricordo solo come puoi aprire un quaderno di Giove.
+
+11
+00:00:47,520 --> 00:00:50,770
+Ho intenzione di andare avanti e passare al prompt dei comandi ora.
+
+12
+00:00:50,790 --> 00:00:51,090
+Tutto ok.
+
+13
+00:00:51,090 --> 00:00:55,320
+Eccomi al mio prompt dei comandi come promemoria se stai usando Mac OS.
+
+14
+00:00:55,320 --> 00:00:57,710
+Vai avanti e usa il tuo terminale per questo.
+
+15
+00:00:57,930 --> 00:01:03,870
+Se stai usando Windows, vai avanti e vieni qui e digita ACMD e seleziona il prompt dei comandi.
+
+16
+00:01:04,160 --> 00:01:07,310
+C'è anche in un'icona il prompt dei comandi che puoi usare anche tu.
+
+17
+00:01:07,320 --> 00:01:11,250
+Questo è il prompt dei comandi fornito con la distribuzione di Anaconda.
+
+18
+00:01:11,250 --> 00:01:11,830
+Tutto ok.
+
+19
+00:01:12,000 --> 00:01:19,200
+Quindi vai avanti e vai al prompt dei comandi e poi digita il tuo taccuino spaziale e premi invio.
+
+20
+00:01:20,010 --> 00:01:25,040
+Tieni presente che questo accenderà un blocco appunti di Jupiter ovunque ti trovi nel prompt dei comandi.
+
+21
+00:01:25,050 --> 00:01:27,840
+Quindi ad esempio cancellerò questo vero veloce.
+
+22
+00:01:27,870 --> 00:01:35,430
+Sono sotto gli utenti C e quindi il mio secondo nome qui, Marysia, ed è qui che inizierà il
+
+23
+00:01:35,430 --> 00:01:36,110
+mio taccuino.
+
+24
+00:01:36,210 --> 00:01:42,030
+modo in cui posso cambiare la directory usando il CD e poi digitando il prossimo file che voglio.
+
+25
+00:01:42,030 --> 00:01:46,770
+Se voglio avviare i miei taccuini in un'altra directory, ho bisogno di cambiare directory nel
+
+26
+00:01:46,800 --> 00:01:51,880
+Quindi diciamo che volevo andare alla mia cartella dei download perché è lì che ho scaricato il file zip.
+
+27
+00:01:52,110 --> 00:01:58,110
+Potrei iniziare a digitare D O N, quindi in realtà è possibile eseguire il completamento automatico della scheda e quindi dovrebbe
+
+28
+00:01:58,110 --> 00:01:58,640
+portarti a.
+
+29
+00:01:58,650 --> 00:02:04,260
+Se esci e fai clic su entra ora download e poi potrei digitare DUPERE notebook ed eseguirlo e
+
+30
+00:02:04,340 --> 00:02:09,840
+ora il mio file Jubran sarà quando lo mostrerò nel mio browser sotto la cartella dei download.
+
+31
+00:02:10,740 --> 00:02:15,000
+Se vuoi andare avanti e tornare indietro di una cartella puoi digitare nel CD.
+
+32
+00:02:15,010 --> 00:02:22,090
+Questo cambia il punto puntino dello spazio della directory e questo ti porterà indietro di una directory.
+
+33
+00:02:22,170 --> 00:02:25,110
+Puoi andare avanti e cercare le linee di prompt dei comandi di base.
+
+34
+00:02:25,110 --> 00:02:25,860
+Ci sono un po 'diversi.
+
+35
+00:02:25,860 --> 00:02:32,250
+Il penny per l'utilizzo di Mac OS o Windows, ad esempio, se si desidera vedere tutte le cartelle
+
+36
+00:02:32,250 --> 00:02:37,400
+di directory e la directory corrente in Windows che sono d sono la directory C.
+
+37
+00:02:37,410 --> 00:02:40,780
+E questo in pratica mostra tutti i file qui nella tua directory corrente.
+
+38
+00:02:40,860 --> 00:02:46,170
+Se sei su Mac puoi digitare L S per elencarli tutti.
+
+39
+00:02:46,170 --> 00:02:49,320
+Va bene allora per cancellare tutto ciò che hai qui.
+
+40
+00:02:49,320 --> 00:02:53,290
+Se sei su Windows puoi semplicemente digitare C L S.
+
+41
+00:02:53,440 --> 00:03:00,120
+Se sei su un Mac e digiti la parola clear lasciami andare avanti e avvia il quaderno
+
+42
+00:03:00,120 --> 00:03:06,150
+di Giove e quando premere Invio e aprirò un chip in un taccuino nel mio browser.
+
+43
+00:03:06,150 --> 00:03:07,020
+Ecco qui.
+
+44
+00:03:07,200 --> 00:03:11,940
+Ho intenzione di andare avanti e trovare dove ho effettivamente salvato il file decomprime.
+
+45
+00:03:11,940 --> 00:03:17,510
+Qui è il boot camp di apprendimento della macchina per la scienza dei dati di Python e il programma di decompressione del Pentagono che hai usato.
+
+46
+00:03:17,520 --> 00:03:22,920
+Potresti o meno avere questo master dasht alla fine, ma se vai avanti e fai clic su questa cartella vedrai
+
+47
+00:03:22,920 --> 00:03:24,460
+un bel po 'di cartelle qui.
+
+48
+00:03:24,480 --> 00:03:27,660
+Python per l'analisi dei dati per la visualizzazione dei dati.
+
+49
+00:03:27,660 --> 00:03:33,550
+I dati relativi alle sezioni di apprendimento automatico del corso in corso su Python conservano alcuni grandi dati di progetti, Sparc e altro ancora.
+
+50
+00:03:33,570 --> 00:03:36,070
+La prima sezione è sotto questa cartella.
+
+51
+00:03:36,090 --> 00:03:41,960
+Corso di crash di Python se si fa clic su quella sezione in cui quella cartella si avrà il notebook.
+
+52
+00:03:42,180 --> 00:03:44,700
+E qui vedi il punto IPY e sii file.
+
+53
+00:03:44,700 --> 00:03:50,670
+Quindi, praticamente per ogni lezione in cui mi vedi codificare qualcosa c'è una cartella che ha il nome della
+
+54
+00:03:50,730 --> 00:03:56,550
+sezione generale e quindi saranno una sottocartella del nome della sezione effettiva e quindi i file del taccuino
+
+55
+00:03:56,550 --> 00:03:58,630
+che corrispondono ai nomi dei docenti.
+
+56
+00:03:58,620 --> 00:04:01,030
+Quindi il primo è il corso crash di Python.
+
+57
+00:04:01,140 --> 00:04:02,590
+Puoi andare avanti e fare clic su questo.
+
+58
+00:04:02,670 --> 00:04:03,990
+Ci vorrà un po 'di tempo per caricare.
+
+59
+00:04:03,990 --> 00:04:09,270
+Eccolo e poi tutto ciò che scriverò durante la conferenza è qui per te e praticamente
+
+60
+00:04:09,270 --> 00:04:11,460
+all'inizio di ogni sezione del corso.
+
+61
+00:04:11,460 --> 00:04:16,380
+Ti ricorderò dove puoi trovare i veri e propri quaderni per quella sezione del Corso che rispondono a un
+
+62
+00:04:16,380 --> 00:04:19,100
+bel po 'di lezioni e potrebbe essere difficile trovarlo a volte.
+
+63
+00:04:19,230 --> 00:04:23,520
+Sarò lì per guidarti e se hai qualche domanda su dove trovare le cose, sentiti
+
+64
+00:04:23,520 --> 00:04:27,460
+libero di pubblicare i forum di domande e risposte e sarò felice di aiutarti.
+
+65
+00:04:27,510 --> 00:04:30,890
+Bene, dopo di ciò avvieremo Python per l'analisi dei dati.
+
+66
+00:04:30,900 --> 00:04:36,030
+Inizierai il numero per s. c oppure fai clic su PI e guardalo per quello.
+
+67
+00:04:36,030 --> 00:04:41,790
+Permettetemi di andare avanti e di illustrare come funziona il sistema di quaderno di Giove in senso generale.
+
+68
+00:04:41,910 --> 00:04:49,050
+Ho intenzione di risalire fino al master e poi farò clic su new e here poiché ho una specie
+
+69
+00:04:49,050 --> 00:04:50,350
+di diversi ambienti.
+
+70
+00:04:50,480 --> 00:04:55,110
+Farò clic su questo, ma puoi fare clic su Python o Python 3 o qualsiasi cosa sia buona e fare clic
+
+71
+00:04:55,110 --> 00:04:56,300
+su di esso dovrebbe andare bene.
+
+72
+00:04:56,310 --> 00:04:59,180
+Ancora una volta puoi semplicemente fare clic su nuovo qualunque cosa si dice nei notebook.
+
+73
+00:04:59,220 --> 00:05:00,640
+Dovresti stare bene a cliccare su di esso.
+
+74
+00:05:00,870 --> 00:05:04,040
+Otterrai qualcosa come questo per ridisegnare questo notebook.
+
+75
+00:05:04,070 --> 00:05:08,260
+Non basta cliccare qui sotto la sezione senza titolo e nominarlo come vuoi.
+
+76
+00:05:08,280 --> 00:05:11,400
+Ad esempio, il mio notebook fa clic su OK e lo chiamerò.
+
+77
+00:05:11,400 --> 00:05:13,940
+Lasciami andare avanti e mostrarti le basi.
+
+78
+00:05:13,950 --> 00:05:21,440
+Questa è una cella di codice che significa che posso digitare il codice Python nella cella e poi eseguirlo come un esempio molto
+
+79
+00:05:21,440 --> 00:05:28,070
+semplice posso dire stampe ciao e poi posso eseguire la cella facendo clic qui in esecuzione e Ill andare avanti e
+
+80
+00:05:28,070 --> 00:05:30,690
+correre e mostrare me l'output sotto la cella.
+
+81
+00:05:30,710 --> 00:05:35,150
+Posso anche fare la stessa cosa praticamente per qualsiasi codice Python se volessi sapere qual è uno più uno.
+
+82
+00:05:35,450 --> 00:05:41,120
+Ho appena fatto clic su Esegui qui e mi mostra l'output nell'avviso cella dal momento che ho stampato l'output
+
+83
+00:05:41,210 --> 00:05:44,980
+qui non ha mostrato perché non ho in realtà specificato per stampare l'output.
+
+84
+00:05:45,050 --> 00:05:46,780
+Mostrava la cella di output.
+
+85
+00:05:46,910 --> 00:05:50,820
+I fatti che ha detto ne stampano uno più uno.
+
+86
+00:05:51,170 --> 00:05:53,980
+Quindi non mostrerebbe quel piccolo fuori.
+
+87
+00:05:54,140 --> 00:05:54,620
+OK.
+
+88
+00:05:54,800 --> 00:06:00,170
+qui e fare clic su questa cella di esecuzione che puoi fare in realtà solo per spostare invio.
+
+89
+00:06:00,170 --> 00:06:01,580
+Quindi non devi sempre venire
+
+90
+00:06:01,820 --> 00:06:06,290
+E quello è quando lo metto come uno spago in entrata.
+
+91
+00:06:06,310 --> 00:06:10,320
+E se lo faccio spostare, andrà avanti ed eseguirà qualunque cosa si trovi in ​​quella cella.
+
+92
+00:06:10,370 --> 00:06:11,400
+Quindi tienilo a mente.
+
+93
+00:06:11,420 --> 00:06:16,370
+È un modo davvero carino di eseguire rapidamente le cose in modo da non dover venire costantemente qui
+
+94
+00:06:16,370 --> 00:06:18,060
+e fare clic su Esegui vendita.
+
+95
+00:06:18,200 --> 00:06:21,030
+Un altro piccolo trucco è alt.
+
+96
+00:06:21,200 --> 00:06:24,940
+Se faccio shift e accendi questo, si passa alla cella successiva.
+
+97
+00:06:24,980 --> 00:06:30,210
+Ma se faccio alt inserire in realtà inserirà una cella sotto di esso pure.
+
+98
+00:06:30,230 --> 00:06:31,240
+Quindi nota la differenza qui.
+
+99
+00:06:31,250 --> 00:06:35,240
+Se faccio semplicemente shift, entri in questa prima cella e la esegue.
+
+100
+00:06:35,240 --> 00:06:40,340
+Ed è così che il n cambia il suo numero per mostrarti l'ordine delle cose e come è stato eseguito.
+
+101
+00:06:40,460 --> 00:06:44,930
+Quindi se lo inserisco, in realtà immette una cella per me.
+
+102
+00:06:44,930 --> 00:06:49,600
+È un trucco davvero carino e ti mostrerò perché più tardi discuteremo degli esercizi.
+
+103
+00:06:50,230 --> 00:06:50,980
+OK.
+
+104
+00:06:51,080 --> 00:06:53,510
+Ora ti starai chiedendo come posso salvare questo notebook.
+
+105
+00:06:53,510 --> 00:07:00,380
+Può fare entrambi i controlli o fare clic qui sul piccolo dischetto floppy in realtà ha una funzione di salvataggio automatico che
+
+106
+00:07:00,380 --> 00:07:02,540
+circonda ogni due minuti il ​​salvataggio automatico.
+
+107
+00:07:02,630 --> 00:07:07,980
+Oppure puoi semplicemente dire file e puoi fare un salvataggio e un checkpoint qui.
+
+108
+00:07:08,020 --> 00:07:12,530
+Ora ti starai anche chiedendo come faccio a scaricare questo notebook come qualcos'altro.
+
+109
+00:07:12,530 --> 00:07:15,470
+Bene, puoi semplicemente andare al file scarica come.
+
+110
+00:07:15,470 --> 00:07:17,780
+E in effetti hai un sacco di opzioni da scaricare.
+
+111
+00:07:17,960 --> 00:07:23,570
+Se vuoi solo il file PI punto, puoi semplicemente scaricare come un punto PI e scaricherà e convertirà questo
+
+112
+00:07:23,600 --> 00:07:29,810
+file notebook in un file in modo da poterlo usare come un normale script Python e qualunque ID tu desideri.
+
+113
+00:07:30,290 --> 00:07:35,720
+O se vuoi solo la HVM Elano puoi cliccare su ogni T. M. e lo esporterà in un semplice
+
+114
+00:07:35,720 --> 00:07:38,070
+file di base che qualsiasi browser può mostrare.
+
+115
+00:07:38,100 --> 00:07:39,300
+Quindi hai un sacco di opzioni.
+
+116
+00:07:39,320 --> 00:07:41,780
+Puoi entrare e dare un'occhiata.
+
+117
+00:07:41,780 --> 00:07:48,130
+Qualcos'altro che voglio che tu sappia è se tu abbia mai ad esempio un ciclo infinito mentre è in esecuzione.
+
+118
+00:07:48,140 --> 00:07:53,330
+Quindi diciamo che è come correre per sempre e in qualche modo vuoi riavviare il tuo kernel.
+
+119
+00:07:53,360 --> 00:07:59,070
+Quello che succederà è sotto di me in zoom un po 'invece di un numero qui e alla fine vedrai
+
+120
+00:07:59,070 --> 00:07:59,860
+un Asterix basso.
+
+121
+00:07:59,920 --> 00:08:01,550
+Funzionerà per sempre.
+
+122
+00:08:01,670 --> 00:08:07,880
+Quello che puoi fare è semplicemente entrare e dire kernel e quindi riavviare il kernel, dire se vuoi riavviare il
+
+123
+00:08:07,880 --> 00:08:08,330
+kernel.
+
+124
+00:08:08,330 --> 00:08:09,660
+Vai avanti e ricomincia.
+
+125
+00:08:09,790 --> 00:08:12,700
+Bene dire di riavviare il kernel e poi dirò il kernel pronto.
+
+126
+00:08:12,710 --> 00:08:17,600
+In pratica, ciò che accade è che questo notebook è connesso a un kernel e un kernel è una specie di
+
+127
+00:08:17,600 --> 00:08:18,740
+istanza di Python in esecuzione.
+
+128
+00:08:19,100 --> 00:08:24,560
+Python sta andando in crash forse hai davvero scritto uno script che si avvicina infinitamente o impiega molto tempo.
+
+129
+00:08:24,560 --> 00:08:26,300
+E se qualcosa non va dove
+
+130
+00:08:26,360 --> 00:08:31,970
+Puoi sempre interrompere tutto semplicemente passando al kernel e facendo clic su restart puoi anche interrompere se vuoi
+
+131
+00:08:32,000 --> 00:08:35,230
+solo interrompere quella specifica cella ma a volte non funziona.
+
+132
+00:08:35,240 --> 00:08:39,770
+Se si ottiene un ciclo continuo molto brutto che dura per sempre basta tenerlo a mente.
+
+133
+00:08:40,100 --> 00:08:41,000
+OK.
+
+134
+00:08:41,390 --> 00:08:45,680
+Se hai bisogno di aiuto oltre a tutto ciò che ti ho appena detto, puoi sempre fare
+
+135
+00:08:46,280 --> 00:08:49,050
+clic su Guida e poi ti daranno aiuto su molte librerie.
+
+136
+00:08:49,070 --> 00:08:53,480
+su ciò che ti invierà a un link in cui ti parla dei taccuini stessi.
+
+137
+00:08:53,480 --> 00:08:56,760
+Lavoreremo anche con un semplice taccuino per aiutarti a fare clic
+
+138
+00:08:56,930 --> 00:09:02,090
+Tieni presente che questi quaderni si chiamavano I quaderni di Python, ma ora da quando Jupiter è in grado
+
+139
+00:09:02,090 --> 00:09:05,450
+di eseguire altri linguaggi come Juliet e sono chiamati quaderni di Jupiter.
+
+140
+00:09:05,450 --> 00:09:12,000
+Ora un'altra cosa che volevo menzionare è che ci sono più scorciatoie da tastiera di quelle che ti ho appena detto.
+
+141
+00:09:12,080 --> 00:09:17,540
+Puoi andare ad aiutare a fare clic sulle scorciatoie da tastiera e ti fornirà un elenco di
+
+142
+00:09:17,810 --> 00:09:19,700
+tutte le scorciatoie da tastiera disponibili.
+
+143
+00:09:20,420 --> 00:09:20,930
+Tutto ok.
+
+144
+00:09:20,930 --> 00:09:25,490
+il punto di partenza del notebook e praticamente tutto ciò che devi sapere fino a quando passi attraverso questo corso.
+
+145
+00:09:25,490 --> 00:09:26,250
+Questo è davvero
+
+146
+00:09:26,330 --> 00:09:31,460
+Hai delle domande che sono più specifiche di un particolare argomento che non puoi trovare qui.
+
+147
+00:09:31,640 --> 00:09:33,310
+Vai avanti e cerca nei forum di Kewaunee.
+
+148
+00:09:33,320 --> 00:09:37,820
+Se non riesci a trovarlo lì o nel falso Q Sentiti libero di inserire le nuove domande nei forum di
+
+149
+00:09:37,940 --> 00:09:39,850
+domande e risposte e sarò felice di aiutarti.
+
+150
+00:09:40,070 --> 00:09:44,300
+Davvero veloce volevo mostrarti quali sono gli esercizi in questo corso.
+
+151
+00:09:44,300 --> 00:09:48,140
+Quindi per esempio diciamo che vai in Python per l'analisi dei dati.
+
+152
+00:09:48,250 --> 00:09:53,030
+Sei nella sezione PI del Corso che hai fatto le lezioni e sei pronto per iniziare l'esercizio.
+
+153
+00:09:53,540 --> 00:09:57,410
+Ogni esercizio avrà un file di soluzioni associato ad esso.
+
+154
+00:09:57,410 --> 00:09:59,050
+Non controllare prima il file delle soluzioni.
+
+155
+00:09:59,060 --> 00:10:01,100
+Dovresti dare un'occhiata a questo file di esercizio.
+
+156
+00:10:01,220 --> 00:10:05,660
+Quindi puoi andare avanti e cliccare sul file sexercise e questo comparirà e assomiglierà
+
+157
+00:10:05,660 --> 00:10:06,420
+a questo.
+
+158
+00:10:06,800 --> 00:10:10,120
+E questo file di esercizio avrà delle domande per te.
+
+159
+00:10:10,400 --> 00:10:14,740
+E poi una cella in cui puoi andare avanti e rispondere a queste domande e molte volte.
+
+160
+00:10:14,750 --> 00:10:17,740
+Ti mostrerò anche l'output previsto.
+
+161
+00:10:17,780 --> 00:10:21,050
+Quindi per esempio qui vuoi creare una serie di zeri.
+
+162
+00:10:21,050 --> 00:10:25,460
+Ora so che probabilmente non sai ancora come farlo, ma tieni presente
+
+163
+00:10:25,520 --> 00:10:32,210
+che se inizi a scrivere elementi nella cella come le stampe, ciao e esegui questo sovrascrivi l'output.
+
+164
+00:10:32,210 --> 00:10:38,020
+Quindi tienilo a mente e sarà più rilevante quando arriverai effettivamente agli esercizi.
+
+165
+00:10:38,020 --> 00:10:40,580
+Alcuni di voi potrebbero chiedersi che tipo di cellula sia questo.
+
+166
+00:10:40,580 --> 00:10:44,490
+In realtà mostra solo il testo e non è una cella di codice.
+
+167
+00:10:44,690 --> 00:10:46,780
+Bene, questo è noto come cella di markdown.
+
+168
+00:10:46,790 --> 00:10:53,430
+Se andiamo avanti e torniamo al mio taccuino qui tutto ciò che ti ho mostrato finora è una cella di codice.
+
+169
+00:10:53,510 --> 00:10:58,910
+Ma quello che è veramente fantastico nei taccuini di Jupiter è che puoi scrivere le note da te stesso
+
+170
+00:10:58,970 --> 00:11:02,540
+nel normale testo di markdown, così puoi venire qui a cercare il codice.
+
+171
+00:11:02,930 --> 00:11:07,790
+Clicca su markdown e lo convertirà in una cella di markdown.
+
+172
+00:11:07,910 --> 00:11:14,510
+E ora se eseguo la cella è essenzialmente solo un testo base per me scrivere delle note per me stesso che è davvero
+
+173
+00:11:14,510 --> 00:11:15,760
+utile quando stai imparando.
+
+174
+00:11:15,770 --> 00:11:17,770
+Puoi dire qualcosa del genere.
+
+175
+00:11:17,900 --> 00:11:21,770
+Usa stampa per stampare stringhe.
+
+176
+00:11:21,770 --> 00:11:29,330
+Esegui quella piccola nota per te e poi puoi andare avanti e digitare le stampe, ciao, ecc. lezioni e questo supporta anche una formattazione di markdown.
+
+177
+00:11:29,330 --> 00:11:33,850
+e questo è un modo davvero carino di prendere appunti mentre
+
+178
+00:11:33,850 --> 00:11:35,040
+procedete durante le
+
+179
+00:11:35,060 --> 00:11:40,580
+Quindi, se hai familiarità con la formattazione del markdown, ad esempio come utilizzare i tag hash per il grassetto, ecc. O forse fai un taluk con solo un paio di labbra di asterischi.
+
+180
+00:11:40,610 --> 00:11:46,040
+Più punti elenco o rientro per un tipo di formattazione
+
+181
+00:11:46,040 --> 00:11:52,220
+del codice che è anche portato in queste celle di markdown.
+
+182
+00:11:52,240 --> 00:11:53,310
+Ora non analizzeremo la sintassi giù perché
+
+183
+00:11:53,510 --> 00:11:58,490
+posso essere un corso completo, ma tieni a mente se vedo qualcosa di simile a questo tipo di mark down e latex che dice che è una cella di markdown.
+
+184
+00:11:58,490 --> 00:12:03,760
+cella di markdown e poi si chiedono hey perché il mio codice non è in esecuzione.
+
+185
+00:12:04,130 --> 00:12:09,290
+Un errore comune che a volte i principianti fanno è che accidentalmente lo convertono in una
+
+186
+00:12:09,290 --> 00:12:11,550
+Se il tuo codice non viene mai evidenziato, probabilmente significa che stai solo eseguendo una cella di markdown.
+
+187
+00:12:11,630 --> 00:12:17,390
+Se vuoi cambiare questa cella di markdown in una cella di codice, vieni qui e seleziona
+
+188
+00:12:17,390 --> 00:12:22,640
+il codice, quindi esegui questo con uno shift enter e sei pronto per partire.
+
+189
+00:12:22,640 --> 00:12:26,120
+OK, ricorda che lo spostamento di invio esegue una cella, quindi Alt Enter eseguirà una cella e genererà una cella al di sotto di essa.
+
+190
+00:12:26,510 --> 00:12:34,250
+Quindi, se vai avanti e fai clic su alternate, ecco
+
+191
+00:12:34,940 --> 00:12:44,180
+come fare di nuovo Alt Alt center e mettere una nuova cella.
+
+192
+00:12:44,180 --> 00:12:44,980
+Ora mi riferisco solo a quello che sto facendo sulla mia tastiera, non voglio digitare una stringa.
+
+193
+00:12:45,110 --> 00:12:49,700
+Quindi, ancora una volta più uno spostamento entrano in esecuzione uno più un alternatore.
+
+194
+00:12:49,700 --> 00:12:54,900
+Continua a inserire nuove celle al di sotto di esso, il che è molto utile per gli esercizi.
+
+195
+00:12:54,900 --> 00:12:59,840
+Quindi se torni qui, questo è un esercizio.
+
+196
+00:12:59,840 --> 00:13:01,710
+Si noti che questo array di output è 1 1 1 su 1.
+
+197
+00:13:01,940 --> 00:13:04,850
+Non voglio sovrascriverlo.
+
+198
+00:13:04,890 --> 00:13:06,060
+Posso semplicemente fare clic su
+
+199
+00:13:06,110 --> 00:13:12,020
+questo testo o contrassegnare la cella non entrare e mi dà una piccola cella qui per un buffer in modo da poter stampare tutto ciò che voglio.
+
+200
+00:13:12,380 --> 00:13:14,960
+Shift entra nel test delle uscite.
+
+201
+00:13:15,140 --> 00:13:17,750
+Tutto ok.
+
+202
+00:13:17,810 --> 00:13:18,300
+Non ti
+
+203
+00:13:18,410 --> 00:13:21,710
+preoccupare se non hai capito tutto questo perché rivedremo tutto questo quando arriveremo agli esercizi.
+
+204
+00:13:21,710 --> 00:13:23,840
+Tutto ok.
+
+205
+00:13:24,440 --> 00:13:25,020
+Questo è praticamente tutto ciò che devi sapere per i quaderni di Giove.
+
+206
+00:13:25,070 --> 00:13:27,990
+Se avete domande, sentitevi liberi di postare e forum di domande e risposte.
+
+207
+00:13:28,010 --> 00:13:30,820
+Sai che sarò felice di aiutarti.
+
+208
+00:13:30,820 --> 00:13:32,340
+comandi o nel terminale.
+
+209
+00:13:32,360 --> 00:13:37,670
+Ricorda che il sistema di notebook Jupiter verrà avviato ovunque ti trovassi nel prompt dei
+
+210
+00:13:37,730 --> 00:13:38,810
+Avrai bisogno di una
+
+211
+00:13:38,810 --> 00:13:44,330
+directory di modifica usando il CD se vuoi eseguire o salvare i tuoi taccuini in un altro posto nel tuo computer.
+
+212
+00:13:44,330 --> 00:13:45,500
+Va bene, grazie a tutti e vedrò alla prossima lezione.
+
+213
+00:13:45,500 --> 00:13:48,440
+&nbsp;

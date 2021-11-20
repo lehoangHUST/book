@@ -1,0 +1,899 @@
+1
+00:00:05,310 --> 00:00:06,170
+Salutare tuturor.
+
+2
+00:00:06,170 --> 00:00:10,700
+Bine ați venit în această zi pentru a profita de soluții de finanțare a proiectelor în acest curs.
+
+3
+00:00:10,710 --> 00:00:13,590
+Vom trece peste soluțiile pentru proiectul de finanțare.
+
+4
+00:00:13,860 --> 00:00:16,550
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+5
+00:00:16,860 --> 00:00:22,470
+OK, așa că suntem la notebook-ul Jupiter atunci când ieșim și ne ducem în secțiunea de date.
+
+6
+00:00:23,220 --> 00:00:29,760
+Deci, primul lucru pe care trebuie să-l facem este de fapt să folosim panda direct citite de la Google Finance și există câteva note aici că
+
+7
+00:00:29,790 --> 00:00:33,650
+a trebuit să instalați cititorul de date Pandurs pentru ca acest lucru să funcționeze.
+
+8
+00:00:33,660 --> 00:00:37,290
+Și, așa cum am menționat în cursul precedent, puteți face acest lucru mergând
+
+9
+00:00:37,290 --> 00:00:43,110
+la linia de comandă și spunând că Pipp instalează cititorul de date Pandurs datat sau Konda instalează cititorul de date panda stashed.
+
+10
+00:00:43,110 --> 00:00:47,880
+Și din nou există note aici sau link-uri sau mai multe instrucțiuni de instalare.
+
+11
+00:00:48,540 --> 00:00:51,650
+Ok, atunci am vrut să facem aceste importuri chiar aici.
+
+12
+00:00:51,660 --> 00:00:54,190
+M-am dus înainte și tocmai l-am fugit de când eram deja ocupat.
+
+13
+00:00:54,420 --> 00:00:56,640
+Și acum suntem la secțiunea de date.
+
+14
+00:00:56,640 --> 00:01:01,680
+Primul lucru pe care vreau să îl fac este să obțin datele utilizând cititorul de date Panas și putem obține informații
+
+15
+00:01:01,680 --> 00:01:02,760
+despre stocurile următoarelor bănci.
+
+16
+00:01:02,850 --> 00:01:08,480
+Bank of America Citigroup Goldman Sachs JP Morgan Chase Morgan Stanley și Wells Fargo spun că vom privi băncile
+
+17
+00:01:08,480 --> 00:01:15,690
+și modul în care valoarea lor se va schimba de la și în timpul crizei financiare și ceea ce vrem să facem este să ne
+
+18
+00:01:15,690 --> 00:01:20,880
+dăm seama cum să obținem datele stocurilor de la 1 ianuarie 2006 până la 1 ianuarie
+
+19
+00:01:20,880 --> 00:01:26,620
+2016 pentru fiecare dintre aceste bănci și dorim să stabilim ca fiecare bancă să fie un cadru de date separat.
+
+20
+00:01:26,790 --> 00:01:31,620
+Dacă numele variabilei pentru acea bancă fiind simbolul ei și urmând câțiva pași mai întâi trebuie să folosim acel
+
+21
+00:01:31,620 --> 00:01:36,690
+timp pentru a seta obiectele de timp de început și de terminare, atunci trebuie să dăm seama la simbolul ticker
+
+22
+00:01:36,690 --> 00:01:37,620
+pentru fiecare bancă.
+
+23
+00:01:37,710 --> 00:01:43,280
+În al treilea rând, trebuie să ne dăm seama cum să folosim cititorul de date pentru a obține informații sau informații despre stoc.
+
+24
+00:01:43,500 --> 00:01:48,540
+Și există o legătură aici utilizând pagina de documentare pentru sugestii și instrucțiuni.
+
+25
+00:01:48,540 --> 00:01:51,320
+Și, de fapt, această legătură este de fapt destul de informativă.
+
+26
+00:01:51,330 --> 00:01:57,660
+Acesta vă oferă, în esență, răspunsul dacă parcurgeți puțin aici despre cum să apucați informațiile.
+
+27
+00:01:57,690 --> 00:02:02,760
+Deci, dacă parcurgeți în jos, vă vom da Google Finance cum să apucați informațiile din prețurile acțiunilor de la Google
+
+28
+00:02:02,760 --> 00:02:03,230
+Finance.
+
+29
+00:02:03,240 --> 00:02:09,210
+Puteți trece mai departe și, în esență, doar copiați și lipiți acest cod din documentație și se va executa
+
+30
+00:02:09,240 --> 00:02:10,160
+conform așteptărilor.
+
+31
+00:02:10,380 --> 00:02:14,430
+Așa că am de gând să merg mai departe și, în esență, copierea și lipirea acestui cod de fapt, tastați-l astfel încât să-l pot
+
+32
+00:02:14,430 --> 00:02:15,090
+explica un pic.
+
+33
+00:02:15,090 --> 00:02:20,190
+Vom începe să începem cu datele de început și de sfârșit și apoi vă vom
+
+34
+00:02:20,190 --> 00:02:23,070
+arăta cum să utilizați cititorul de date web.
+
+35
+00:02:23,160 --> 00:02:23,760
+O.K.
+
+36
+00:02:24,040 --> 00:02:31,610
+Primul lucru pe care vreau să îl fac este să spun startul și apoi să suni Data Time Date Time doar puțin ciudat pentru a apela data
+
+37
+00:02:31,620 --> 00:02:34,150
+la ora datei, dar asta e doar convenția.
+
+38
+00:02:34,410 --> 00:02:40,400
+Și apoi vrem să trecem anul în lună și în ziua care va fi data noastră de început.
+
+39
+00:02:40,470 --> 00:02:46,500
+Și din nou, acest lucru este, în esență, doar copierea și lipirea codului chiar aici din documentație.
+
+40
+00:02:47,190 --> 00:02:51,410
+Și apoi voi face același lucru, dar în loc de stea, va fi data de încheiere.
+
+41
+00:02:51,750 --> 00:02:57,080
+Și aceasta va fi în felul anului 2006 2016.
+
+42
+00:02:58,080 --> 00:03:04,820
+Apoi, ceea ce trebuia să facem este să dăm seama de biletele pentru diferitele bănci, cum ar fi Bank of America și prima este
+
+43
+00:03:04,830 --> 00:03:10,100
+de fapt un fel de prezentat aici A C este egal cu datele cititorului de date BAMC.
+
+44
+00:03:10,170 --> 00:03:16,290
+Start Google se termină lasă-mă să merg și să-ți arăt un exemplu de
+
+45
+00:03:16,470 --> 00:03:29,610
+ceea ce arata de fapt prin a spune B A C egalează datele gânduri cititor de date assin B A C este un șir Google și apoi începe și se termină.
+
+46
+00:03:29,610 --> 00:03:29,840
+In regula.
+
+47
+00:03:29,840 --> 00:03:30,840
+Se pare că a fugit.
+
+48
+00:03:30,840 --> 00:03:32,250
+Să mergem mai departe și să verificăm rezultatul.
+
+49
+00:03:32,250 --> 00:03:33,900
+B A C.
+
+50
+00:03:34,230 --> 00:03:39,960
+Și aici avem B C care este în esență un cadru de date cu un indice de dată și apoi un
+
+51
+00:03:39,960 --> 00:03:43,800
+preț de deschidere un preț ridicat prețul scăzut prețul de închidere și apoi volumul.
+
+52
+00:03:43,800 --> 00:03:48,770
+Iar acest lucru se traduce, în esență, doar la prețurile stocurilor din prețul de deschidere al stocului,
+
+53
+00:03:48,790 --> 00:03:51,580
+care indică valorile ridicate și mici din acea zi.
+
+54
+00:03:51,630 --> 00:03:56,040
+Și apoi prețul de închidere la acea dată și apoi volumul este doar volumul real cât de
+
+55
+00:03:56,040 --> 00:03:58,120
+multe stocuri sunt tranzacționate în acea zi.
+
+56
+00:03:58,500 --> 00:04:03,750
+Apoi, ceea ce trebuie în mod esențial să faceți este doar să repetați acest lucru pentru alte bănci diferite
+
+57
+00:04:03,750 --> 00:04:08,280
+și pentru a afla bursa de valori pentru celelalte bănci puteți folosi doar o căutare simplă
+
+58
+00:04:08,280 --> 00:04:13,720
+pe Google pe care o căutați doar numele băncii, cum ar fi bursa de valori Citigroup Plus și o veți găsi.
+
+59
+00:04:14,550 --> 00:04:14,890
+In regula.
+
+60
+00:04:14,970 --> 00:04:19,740
+Voi ieși să copiați și să lipiți restul acestor comenzi, deoarece în esență este exact
+
+61
+00:04:19,740 --> 00:04:21,640
+ceea ce am făcut înainte.
+
+62
+00:04:21,660 --> 00:04:29,190
+Deci, eu am Citigroup este doar a se vedea Goldman Sachs este doar G-S J. P. Morgan Chase EMI-urile JPM Morgan Stanley
+
+63
+00:04:29,250 --> 00:04:31,670
+și Wells Fargo WFC.
+
+64
+00:04:31,970 --> 00:04:37,710
+Și singurele argumente pe care le transmite cititorul de date sunt bursa de valori are un șir și el repassing
+
+65
+00:04:37,710 --> 00:04:41,720
+în Google și asta înseamnă doar utilizarea Google Finance pentru a apuca datele.
+
+66
+00:04:41,730 --> 00:04:47,640
+De asemenea, puteți utiliza Yahoo Finance dacă doriți, dar prefer Google Finance doar pentru că Yahoo a avut recent o
+
+67
+00:04:47,640 --> 00:04:52,710
+tranziție sau a fost achiziționată, deci este mai bine să o mențineți cu Google și apoi
+
+68
+00:04:52,710 --> 00:04:56,580
+puteți pune și datele de începere și de sfârșit ca Date Time.
+
+69
+00:04:56,610 --> 00:04:59,940
+Să mergem mai departe și să vedem celula asta și să vedem ce se întâmplă.
+
+70
+00:04:59,940 --> 00:05:04,350
+Așa că atunci când o conduceți împreună, ar putea dura ceva timp, pentru că prinde toate aceste
+
+71
+00:05:04,350 --> 00:05:05,560
+informații de pe Internet.
+
+72
+00:05:05,580 --> 00:05:07,680
+Deci, dă-i drumul și ai răbdare în timp ce alerga.
+
+73
+00:05:07,710 --> 00:05:09,030
+Acolo te-ai terminat.
+
+74
+00:05:09,030 --> 00:05:12,920
+Acum să mergem mai departe și să vedem în alt cadru de date.
+
+75
+00:05:12,990 --> 00:05:15,540
+Mergem înainte și verificăm o mizerie pentru Morgan Stanley.
+
+76
+00:05:15,550 --> 00:05:20,700
+Putem vedea că este același lucru care se deschide la un nivel scăzut
+
+77
+00:05:20,700 --> 00:05:26,930
+de închidere și apoi volumele tranzacționate merg până la sfârșitul anului 2006, până la 1 decembrie 2015.
+
+78
+00:05:27,030 --> 00:05:33,890
+Deci, Revelionul acum este bun și continuați cu următoarea sarcină atunci când o etichetă hash care afară.
+
+79
+00:05:33,900 --> 00:05:39,440
+Acum am vrut sa cream o lista de simboluri ticker ca siruri de caractere in ordine alfabetica numesc acest ticker's list.
+
+80
+00:05:39,990 --> 00:05:45,260
+Să mergem mai departe și să facem că vom chema biletul și apoi vom trece BSEE.
+
+81
+00:05:46,350 --> 00:05:56,880
+În continuare, unul din primul trimestru C, avem G-S, apoi JPM și EMI.
+
+82
+00:05:56,880 --> 00:06:04,380
+Și apoi, în cele din urmă WFC și apoi dorim să folosim PD dot com puteți concatenate rapoartele de date bancare împreună la
+
+83
+00:06:04,620 --> 00:06:09,900
+un singur cadru de date numit acțiuni Bank underderscore și doriți să setați argumentul cheilor egal
+
+84
+00:06:09,900 --> 00:06:11,220
+cu lista ticker.
+
+85
+00:06:11,220 --> 00:06:13,880
+De asemenea, acordați atenție accesului pe care îl concatenați.
+
+86
+00:06:14,310 --> 00:06:18,600
+Și asta este doar un fel de avertisment în care trebuie să setați accesul egal când doriți
+
+87
+00:06:18,630 --> 00:06:20,250
+să vă concatenați de-a lungul coloanelor.
+
+88
+00:06:20,250 --> 00:06:21,080
+Să mergem mai departe și să facem asta.
+
+89
+00:06:21,150 --> 00:06:31,130
+Așadar, vreau să creez un cadru de date cu privire la stocurile băncii și apoi să spun PD concat și să fac o listă a tuturor cadrelor de date
+
+90
+00:06:31,710 --> 00:06:33,930
+pe care vreau să le concaten.
+
+91
+00:06:33,950 --> 00:06:44,560
+Așadar, vreau să concatenăm schema de date a BBC, pe care am văzut-o pe GMR, amica Morgan Stanley și apoi Wells Fargo.
+
+92
+00:06:45,270 --> 00:06:49,860
+Iar motivul pentru care nu transmit aceste argumente este șirul de caractere, deoarece acestea sunt cadrele de
+
+93
+00:06:49,860 --> 00:06:52,020
+date actuale pe care le-a creat aici.
+
+94
+00:06:52,010 --> 00:06:55,080
+În regulă, trecând într-o listă de date pe care Franța vrea să le conecteze.
+
+95
+00:06:55,080 --> 00:07:00,300
+Vreau să le concatenăm de-a lungul coloanelor, ceea ce are sens deoarece aceștia au același indice pe care-l
+
+96
+00:07:00,300 --> 00:07:03,040
+împărtășesc toți aceiași indicatori ai anumitor date și date.
+
+97
+00:07:03,060 --> 00:07:08,940
+Vreau să fac această concatenare de-a lungul coloanelor axei salsa egale cu 1 și apoi el va argumenta că va fi lista acestor
+
+98
+00:07:08,940 --> 00:07:10,230
+bilete și să mergem
+
+99
+00:07:13,630 --> 00:07:16,300
+mai departe și să vedem cum arată acum acțiunile băncilor.
+
+100
+00:07:16,350 --> 00:07:20,350
+Este capul ei și avem ceva care arată așa.
+
+101
+00:07:20,370 --> 00:07:25,740
+În esență, acum avem un index pe mai multe niveluri pe coloanele pe care aveți bursa de acțiuni
+
+102
+00:07:25,770 --> 00:07:33,490
+bancare și apoi deschiderea închisă și volumul ridicat și tot ceea ce împărtășește același index de timp de dată care are sens în ceea ce vrem să
+
+103
+00:07:33,520 --> 00:07:35,840
+facem este să setăm nivelurile denumirii coloanelor.
+
+104
+00:07:36,060 --> 00:07:38,120
+Și acest lucru este de fapt completat pentru tine.
+
+105
+00:07:38,130 --> 00:07:42,290
+Deci, pentru a face acest lucru bine, trebuie să spunem că băncile subliniază stocurile.
+
+106
+00:07:42,300 --> 00:07:47,190
+Coloanele nu se numesc și apoi le punem la aceste niveluri biletul bancar și informațiile despre acțiuni.
+
+107
+00:07:47,190 --> 00:07:54,300
+Deci, odată ce rulați acea vânzare și dacă sunteți la o bancă Chick subliniază stocurile din nou capul de ea se pare ca
+
+108
+00:07:54,300 --> 00:07:54,720
+asta.
+
+109
+00:07:54,720 --> 00:07:59,910
+Și singura diferență este acum că acest lucru este de fapt etichetat ca primul nivel al
+
+110
+00:07:59,910 --> 00:08:05,230
+indicelui pe coloane este etichetat bancă cred că Banker ticker și apoi al doilea este etichetat informații stoc.
+
+111
+00:08:05,840 --> 00:08:06,410
+O.K.
+
+112
+00:08:06,570 --> 00:08:07,130
+Se deplasează de-a lungul.
+
+113
+00:08:07,170 --> 00:08:12,620
+Este timpul să faceți o analiză de date exploratorie și înainte de a continua ceea
+
+114
+00:08:12,720 --> 00:08:19,350
+ce am vrut să faceți este să vă încurajați să verificați documentația nu doar pe indexarea pe mai multe nivele
+
+115
+00:08:22,170 --> 00:08:28,850
+aici, ci și utilizând punctul X și am depășit, de fapt, excesul de secțiune transversală metodă în prelegerea operațiunilor panoului.
+
+116
+00:08:28,890 --> 00:08:33,540
+Deci, puteți să mergeți mai departe și să revizuiți și să vă întoarceți la această prelegere în cazul în care doriți o
+
+117
+00:08:33,800 --> 00:08:34,700
+explicație video a excesului.
+
+118
+00:08:34,950 --> 00:08:40,830
+Dar, practic, această metodă cu secțiune transversală vă permite să luați lucruri în interiorul unui index pe mai multe niveluri și aici
+
+119
+00:08:40,830 --> 00:08:41,810
+sunt câteva exemple.
+
+120
+00:08:41,840 --> 00:08:43,710
+Pot merge mai departe și mă pot apropia de ele.
+
+121
+00:08:43,770 --> 00:08:48,660
+Sperăm că veniți aici și examinați exemplele pe care le vedeți acest cadru de date pe care îl vedeți că
+
+122
+00:08:48,660 --> 00:08:50,670
+pot apela o secțiune transversală a unui.
+
+123
+00:08:50,880 --> 00:08:55,410
+De asemenea, puteți vedea că pot numi secțiuni transversale trecând fie într-un tuplu, fie într-o listă,
+
+124
+00:08:55,410 --> 00:08:57,150
+și prinzând lucruri în interior.
+
+125
+00:08:57,150 --> 00:08:57,570
+In regula.
+
+126
+00:08:57,780 --> 00:09:02,790
+Puteți continua și menționați prelegerea operațiunilor panda sau propria mea explicație a acestui acces, dar este
+
+127
+00:09:02,790 --> 00:09:06,660
+destul de important că ei înțeleg că pentru că va fi
+
+128
+00:09:06,660 --> 00:09:13,530
+o parte importantă a acestui proiect pe măsură ce vom merge pentru a atrage informații despre anumite bănci sau despre anumite coloane.
+
+129
+00:09:13,530 --> 00:09:14,010
+In regula.
+
+130
+00:09:14,070 --> 00:09:19,620
+Primele întrebări analizate de analiză a datelor pe care trebuie să le răspundem sunt: ​​Ce înseamnă prețul maxim
+
+131
+00:09:19,620 --> 00:09:22,740
+al hainelor pentru fiecare bancă în timpul perioadei de timp.
+
+132
+00:09:22,740 --> 00:09:24,830
+Există două moduri diferite în care putem face acest lucru.
+
+133
+00:09:24,840 --> 00:09:30,140
+O modalitate este să spui ceva de genul ăsta pentru bifați.
+
+134
+00:09:30,150 --> 00:09:41,220
+Amintiți-vă că ticker-ul este că lista de nume ticker spune ceva ca apuca stocurile băncii apuca tick și să vedem doar ceea
+
+135
+00:09:41,310 --> 00:09:48,690
+ce arata ca, dacă spun, de exemplu, eu comentez aceste linii afară și doar arată-vă
+
+136
+00:09:48,690 --> 00:09:52,590
+ce stocuri bancare arata ca un memento.
+
+137
+00:09:52,590 --> 00:09:53,970
+Așa că avem șefi de acțiuni bancare.
+
+138
+00:09:53,970 --> 00:09:58,810
+Acesta este un index pe mai multe nivele pe coloanele de top multi-nivel.
+
+139
+00:09:58,880 --> 00:10:06,180
+Dacă se pune, de exemplu, b c atunci am primit un cadru de date aici, ceea ce înseamnă că pot apela aproape de acel cadru de date care îmi
+
+140
+00:10:06,510 --> 00:10:07,450
+dă acest lucru.
+
+141
+00:10:07,470 --> 00:10:13,620
+Și din moment ce vreau prețul de închidere max pot numi max și îmi dă ceva ce arată așa,
+
+142
+00:10:13,620 --> 00:10:17,580
+ceea ce înseamnă că eu aș înlocui, în esență, doar acele comenzi.
+
+143
+00:10:17,640 --> 00:10:25,950
+Ne întoarcem aici să bifăm și atunci voi putea să tipăresc asta.
+
+144
+00:10:25,980 --> 00:10:31,690
+Pot spune ceva de genul prințului Tich.
+
+145
+00:10:31,740 --> 00:10:36,710
+Și aici avem fiecare stoc bancar prețul maxim de închidere pe întreaga perioadă de timp.
+
+146
+00:10:36,870 --> 00:10:38,200
+Asta eo modalitate de a face asta.
+
+147
+00:10:38,340 --> 00:10:45,660
+Modalitatea mai bună de a face acest lucru dacă doriți să fiți un fel de savvy cu panda este să utilizați această metodă de
+
+148
+00:10:45,660 --> 00:10:54,480
+acces și ceea ce faceți este să spuneți că acțiunile băncilor au acces pentru secțiunea transversală pe care o introduceți în cheia pe care doriți să o faceți
+
+149
+00:10:54,480 --> 00:10:56,330
+secțiunea transversală în acest caz.
+
+150
+00:10:56,520 --> 00:10:58,880
+Vreau să o fac foarte aproape.
+
+151
+00:10:59,610 --> 00:11:05,520
+Vreau să spun că este pe axele coloanelor de când o fac pe coloană, așa că specificați x 0
+
+152
+00:11:05,550 --> 00:11:10,740
+la 1 și apoi specificați și nivelul, deoarece este înăuntru și nivelul se numește info stoc.
+
+153
+00:11:10,750 --> 00:11:15,330
+Amintiți-vă de asta am revenit deasupra aici.
+
+154
+00:11:15,330 --> 00:11:16,340
+Derulați înapoi.
+
+155
+00:11:16,470 --> 00:11:17,620
+Am spus informații despre stoc.
+
+156
+00:11:17,670 --> 00:11:21,460
+Deci, aceste nivele exterioare numite Bank Ticker, aceste nivele de nivel numesc informații despre acțiuni.
+
+157
+00:11:21,480 --> 00:11:22,650
+Deci, în principiu, cerem.
+
+158
+00:11:22,800 --> 00:11:30,000
+Dă-mi coloana închisă pentru toate băncile și apoi vom merge mai departe și vom numi doar această ofertă maximă și dacă vom
+
+159
+00:11:30,060 --> 00:11:36,150
+rula acest lucru obține în mod esențial același lucru, dar este un pic mai bine formatat și a
+
+160
+00:11:36,180 --> 00:11:39,010
+fost doar o linie de codul curat aici.
+
+161
+00:11:39,030 --> 00:11:39,590
+In regula.
+
+162
+00:11:39,690 --> 00:11:44,310
+Deci, a fost prețul de închidere maxim pentru fiecare bancă pe parcursul întregii perioade de timp.
+
+163
+00:11:44,670 --> 00:11:50,220
+Acum vom continua și vom crea un nou cadru de date gol denumit returnează și acest cadru de
+
+164
+00:11:50,250 --> 00:11:56,220
+date va conține randamentele pentru stocul fiecărei bănci, iar returnările sunt de obicei definite de această ecuație în cazul în
+
+165
+00:11:56,220 --> 00:12:00,680
+care aveți o întoarcere pentru o anumită perioadă de timp și apoi Plătește prețul.
+
+166
+00:12:00,690 --> 00:12:05,070
+Dar, în esență, ceea ce este este că se împarte la prețul la un moment dat.
+
+167
+00:12:05,070 --> 00:12:07,430
+T în acest caz avem de-a face doar cu date.
+
+168
+00:12:07,620 --> 00:12:12,390
+Deci, prețul pe care o zi a fost împărțit la ziua precedentă minus unu.
+
+169
+00:12:12,390 --> 00:12:19,320
+Deci, din moment ce vă întoarceți doar la procente și putem ieși și spunem vom întoarce, vom face un
+
+170
+00:12:20,580 --> 00:12:24,510
+cadru de cadre PD liber și vom rula acest lucru.
+
+171
+00:12:24,510 --> 00:12:28,680
+Așadar, avem un cadru de date gol denumit returnează, iar starea cadrului va conține randamentele
+
+172
+00:12:28,680 --> 00:12:29,820
+pentru fiecare stoc bancar.
+
+173
+00:12:30,120 --> 00:12:35,520
+Iată ecuația în care ne propunem să ne mișcăm și să spunem că putem folosi metoda de schimbare a
+
+174
+00:12:35,520 --> 00:12:41,310
+panoului de subliniere Panas sau a metodei procentuale de schimbare în coloana închide pentru a crea o coloană reprezentând valoarea returnată.
+
+175
+00:12:41,850 --> 00:12:47,950
+Așadar, sarcina noastră a fost de a crea o buclă pentru care intră pentru fiecare bursă de acțiuni ale
+
+176
+00:12:47,970 --> 00:12:53,830
+băncii creează această coloană de retur și o plasează ca o coloană în cadrul de date returnează.
+
+177
+00:12:54,180 --> 00:12:55,520
+Acum, acest lucru este cu siguranță un pic dificil.
+
+178
+00:12:55,530 --> 00:12:56,900
+Asa ca sa mergem mai departe si sa o despartim.
+
+179
+00:12:56,910 --> 00:13:00,410
+Vrem să creați o buclă pentru care să fie valabilă pentru fiecare bursă de acțiuni bancare.
+
+180
+00:13:00,480 --> 00:13:07,080
+Deci, vreau să salvez pentru o bifare în ticker's Și apoi ceea ce vreau să fac este de a crea o coloana de returns așa
+
+181
+00:13:07,080 --> 00:13:10,590
+spun spun întoarce și așa că este noul meu cadru de date aici.
+
+182
+00:13:10,740 --> 00:13:21,270
+Voi crea o nouă coloană și numele coloanei va spune că Tich va fi concatenat cu
+
+183
+00:13:21,270 --> 00:13:30,490
+întoarcere și va fi egal cu stocurile băncii la prețul de închidere a căsuței.
+
+184
+00:13:30,510 --> 00:13:35,490
+Apoi am numit doar PCT-uri schimbare și acest lucru a fost un fel de complicat să dau seama.
+
+185
+00:13:36,000 --> 00:13:41,280
+Deci haideți să mergem mai departe și să rulați acest lucru și acum haideți să verificați întoarce datele cadru
+
+186
+00:13:41,280 --> 00:13:49,890
+sau cel puțin capul de ea și aici întoarce vreodată cadru de date și este logic că prima noastră valoare are nici unul sau nu, deoarece nu puteți obține un procent
+
+187
+00:13:49,890 --> 00:13:54,030
+întoarceți în prima zi, deoarece nu există nimic în trecut în care să se
+
+188
+00:13:54,030 --> 00:13:54,450
+compare.
+
+189
+00:13:54,460 --> 00:13:55,710
+Așa că are sens.
+
+190
+00:13:55,710 --> 00:14:02,280
+Și puteți vedea aici că, în principiu, obțineți valoarea dvs. de returnare sau vom merge mai departe și facem acum este de a
+
+191
+00:14:02,280 --> 00:14:05,520
+crea un complot pereche utilizând Seaborn a cadrului de date returnează.
+
+192
+00:14:05,520 --> 00:14:06,480
+Și există câteva întrebări acolo.
+
+193
+00:14:06,480 --> 00:14:09,420
+Ce stă la dispoziție și vă puteți da seama de ce.
+
+194
+00:14:09,680 --> 00:14:16,770
+Ceea ce am de gând să merg mai departe și de a face este să spun doar parcelele SNS punct pereche și apeluri se întoarce.
+
+195
+00:14:16,770 --> 00:14:21,690
+Acum, dacă am sunat doar întoarce veți observa ceva se întâmplă vom primi o eroare și scroll gratuit
+
+196
+00:14:21,690 --> 00:14:28,230
+de eroare în jos veți observa că se spune că Max trebuie să fie mai mare decât bărbații în intervalul de parametru și că
+
+197
+00:14:28,230 --> 00:14:32,210
+este în principiu doar un apel înapoi la problema aici, unde aveți o nulă.
+
+198
+00:14:32,370 --> 00:14:41,130
+Așa că trebuie să specificați că doriți ca totul să înceapă la index la locația 1.
+
+199
+00:14:41,520 --> 00:14:43,450
+Și acum, când alergi, ar trebui să fii bine.
+
+200
+00:14:43,470 --> 00:14:48,120
+Acum pe plus le iau un timp pentru seturi de date foarte mari pentru a păstra acest lucru în minte pe măsură ce așteptați complotul.
+
+201
+00:14:48,840 --> 00:14:50,670
+Dar vezi ceva care arată așa.
+
+202
+00:14:50,790 --> 00:14:53,720
+Și întrebarea a fost ce stoc iese la iveală.
+
+203
+00:14:54,030 --> 00:14:59,200
+Ei bine, fel de a privi la acest lucru veți observa că toate aceste stocuri arata relativ normal, în măsura în
+
+204
+00:14:59,200 --> 00:14:59,800
+parcele împrăștiate.
+
+205
+00:14:59,800 --> 00:15:01,380
+Se pare că există o corelație.
+
+206
+00:15:01,530 --> 00:15:05,010
+Dar unul dintre ele este un fel de acest pachet ciudat de linii drepte.
+
+207
+00:15:05,010 --> 00:15:13,680
+Și observați că se întâmplă de-a lungul întoarcerii mării pentru Citigroup, iar Citigroup a avut de fapt un imens crash
+
+208
+00:15:13,680 --> 00:15:14,970
+de stoc.
+
+209
+00:15:15,000 --> 00:15:21,270
+Și dacă te duci la link-ul Wikipedia dacă te uiți în sus la Citigroup și vii aici, vei observa că
+
+210
+00:15:21,300 --> 00:15:28,050
+noiembrie 2008 și acest lucru are de-a face cu o parte din criza financiară globală încât, până în noiembrie 2008, Citigroup a
+
+211
+00:15:28,080 --> 00:15:34,020
+fost insolvabilă și vom vedea de fapt acel crash uriaș când vom vizualiza de fapt valoarea stocului deținută
+
+212
+00:15:34,110 --> 00:15:35,840
+de Citigroup de-a lungul timpului.
+
+213
+00:15:35,850 --> 00:15:40,080
+Dar ea poate să meargă înainte și un fel de citire despre acest lucru, dar acest gen de lucru trebuie să facă mai mult cu povestea din
+
+214
+00:15:40,350 --> 00:15:42,570
+spatele analizei noastre de date privind motivul pentru care sa întâmplat acest lucru.
+
+215
+00:15:42,720 --> 00:15:47,870
+Și acest lucru este disponibil pe pagina Wikipedia doar pentru compania Citigroup.
+
+216
+00:15:47,880 --> 00:15:48,330
+In regula.
+
+217
+00:15:48,360 --> 00:15:53,220
+Deci, sperăm că ați observat un fel de comportament ciudat al acestei întoarceri ciudate, dar asta
+
+218
+00:15:53,220 --> 00:15:54,480
+chiar face acel accident.
+
+219
+00:15:54,480 --> 00:15:55,250
+O.K.
+
+220
+00:15:55,470 --> 00:15:57,890
+Vom merge mai departe și vom opri aici.
+
+221
+00:15:58,260 --> 00:16:01,080
+Și când ne întoarcem la partea a doua vom investiga.
+
+222
+00:16:01,080 --> 00:16:06,330
+Aceasta întoarce o zi pentru a încadra un pic mai mult și apoi face o investigație mai mult în ceea
+
+223
+00:16:06,420 --> 00:16:07,660
+ce privește distribuirea întoarce.
+
+224
+00:16:07,830 --> 00:16:10,390
+Și apoi vom vizualiza datele chiar mai mult.
+
+225
+00:16:10,410 --> 00:16:12,470
+Multumesc tuturor si te voi vedea la urmatoarea conferinta

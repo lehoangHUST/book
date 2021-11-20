@@ -1,0 +1,951 @@
+1
+00:00:06,480 --> 00:00:11,210
+Hola a todos y bienvenidos al pastel en la conferencia de besos y selección en esta conferencia.
+
+2
+00:00:11,230 --> 00:00:15,040
+Vamos a analizar cómo seleccionar elementos o elementos de un grupo de un pastel.
+
+3
+00:00:15,060 --> 00:00:19,260
+De acuerdo, sigamos adelante y saltemos al cuaderno Juber para comenzar.
+
+4
+00:00:19,260 --> 00:00:19,760
+Todo bien.
+
+5
+00:00:19,800 --> 00:00:21,360
+Estás aquí en el cuaderno de Júpiter.
+
+6
+00:00:21,360 --> 00:00:23,880
+Ya he dicho importantes árbitros y P. Ya sabes, con lo que voy a comenzar es
+
+7
+00:00:24,040 --> 00:00:29,010
+creando una matriz de muestra. Voy a decir que la variable A R R es igual a end p.
+
+8
+00:00:29,040 --> 00:00:31,370
+Tengo un rango.
+
+9
+00:00:31,500 --> 00:00:33,050
+Simplemente usando tabulación para autocompletar
+
+10
+00:00:33,130 --> 00:00:41,700
+allí y voy de cero a 10 y cuando digo cero a 10 me refiero a la salida real para obtener esa salida que aprobaré y a 11 aquí.
+
+11
+00:00:41,700 --> 00:00:45,570
+Entonces ahora tengo una matriz de 11 elementos que van de cero a 10.
+
+12
+00:00:45,870 --> 00:00:50,760
+La manera más simple de seleccionar uno o algunos de los
+
+13
+00:00:50,760 --> 00:00:57,330
+elementos de una matriz se parece mucho a la indexación de una lista de Python.
+
+14
+00:00:57,330 --> 00:00:58,110
+Básicamente vas a usar corchetes y notación de división para hacer esto.
+
+15
+00:00:58,140 --> 00:01:03,060
+Continúa y haz es escribir el nombre de la variable de la matriz en sí.
+
+16
+00:01:03,140 --> 00:01:07,500
+Pasa los corchetes y luego para obtener un valor único en un índice que puedes hacer simplemente pasando un número.
+
+17
+00:01:07,600 --> 00:01:13,530
+Es decir, si quiero el valor en el índice 8 puedo
+
+18
+00:01:14,010 --> 00:01:21,000
+pasar un 8 y en este caso devolveré el valor en x 8.
+
+19
+00:01:21,000 --> 00:01:21,470
+Es en
+
+20
+00:01:21,540 --> 00:01:27,030
+realidad 8 en sí mismo, ya que acabo de utilizar arreglado para crear esta matriz si quiero obtener los valores en un rango como una lista de Python.
+
+21
+00:01:27,030 --> 00:01:29,330
+Puedo usar la notación de división, lo que significa que puedo decir el índice de inicio y el índice de detención.
+
+22
+00:01:29,340 --> 00:01:37,010
+Entonces, si continúo y digo uno dos coma cinco, comenzará el índice 1, que es el número 1, y
+
+23
+00:01:37,080 --> 00:01:43,650
+subirá hasta el índice 5, que es el número cuatro porque la indexación comienza en cero.
+
+24
+00:01:43,650 --> 00:01:49,470
+devuelve todos los valores de 0 en todo su índice 5.
+
+25
+00:01:49,500 --> 00:01:57,990
+Entonces, para mostrar otro ejemplo de esto, puedo decir cero dos puntos 5 y eso
+
+26
+00:01:57,990 --> 00:02:00,710
+También puedo eliminar el punto de detención
+
+27
+00:02:00,750 --> 00:02:06,840
+o el punto de inicio para continuar e indicar que quiero todo lo demás en la matriz.
+
+28
+00:02:06,900 --> 00:02:07,890
+Todo desde el principio de la derecha.
+
+29
+00:02:07,950 --> 00:02:10,190
+Entonces, por ejemplo, si quiero
+
+30
+00:02:10,200 --> 00:02:17,710
+todo hasta el índice 6 en lugar de especificar el parámetro de inicio como 0, puedo poner dos
+
+31
+00:02:17,790 --> 00:02:24,210
+puntos y luego poner 6 Ellora's todo al inicio de la matriz para indexar 6.
+
+32
+00:02:24,270 --> 00:02:24,860
+el carbón.
+
+33
+00:02:24,870 --> 00:02:30,870
+Así que eso es lo mismo que decir cero dos puntos 6, pero guardo un poco de mecanografía simplemente colocando
+
+34
+00:02:30,870 --> 00:02:32,990
+De manera similar, lo que
+
+35
+00:02:32,990 --> 00:02:43,060
+puedo seguir y hacer es decir array en si quiero comenzar en un índice particular y tomar todo hasta el final de la matriz. Puedo
+
+36
+00:02:43,080 --> 00:02:50,340
+usar la misma estación que hice en una lista de Python usando la notación de corte para carbón.
+
+37
+00:02:50,700 --> 00:02:51,940
+Algo que hay que tener en cuenta
+
+38
+00:02:52,170 --> 00:02:56,910
+cuando se utiliza esta notación de un número y luego dos puntos es que en realidad no se está agarrando al índice 5 y más allá.
+
+39
+00:02:56,910 --> 00:02:59,410
+Estás agarrando todo en el índice
+
+40
+00:02:59,490 --> 00:03:05,670
+5 porque recuerda que la indexación en cuanto a la notación en Python comienza en cero.
+
+41
+00:03:05,670 --> 00:03:06,780
+Entonces, 5 aquí
+
+42
+00:03:06,780 --> 00:03:15,210
+es en realidad el índice 6, lo que significa que esta notación de cinco puntos dice eliminar todo más allá del índice 5.
+
+43
+00:03:15,210 --> 00:03:15,600
+Entonces van a ser cinco seis siete ocho nueve diez porque recuerden que el índice 5 está aquí a las cuatro.
+
+44
+00:03:15,600 --> 00:03:21,200
+Dado que la indexación comienza en cero, ha capturado cinco elementos.
+
+45
+00:03:21,750 --> 00:03:25,700
+Es decir, si digo cinco puntos, capta todo más allá del quinto índice que aparece
+
+46
+00:03:25,830 --> 00:03:32,730
+a las cuatro y puede continuar y revisar la notación del segmento de la lista de Python si desea obtener más información sobre este punto.
+
+47
+00:03:32,730 --> 00:03:38,480
+Pero, esencialmente, esto funciona exactamente igual que para una lista normal de Python.
+
+48
+00:03:38,550 --> 00:03:42,890
+Ninguna matriz difiere de una lista normal de Python debido a su capacidad para transmitir.
+
+49
+00:03:43,300 --> 00:03:49,310
+Yo sigo y mostraré un ejemplo de esto.
+
+50
+00:03:49,350 --> 00:03:51,710
+Voy a tomar mi matriz y agarrar elementos.
+
+51
+00:03:51,810 --> 00:03:56,390
+Cero y cinco.
+
+52
+00:03:56,440 --> 00:03:58,060
+Entonces será cero uno dos tres cuatro y luego lo considero igual al número 100.
+
+53
+00:03:58,110 --> 00:04:04,080
+Y qué va a hacer eso.
+
+54
+00:04:04,140 --> 00:04:05,560
+Transmitirá ese valor a esos primeros cinco dígitos para que todos sean 100.
+
+55
+00:04:05,820 --> 00:04:12,830
+Voy a continuar y reiniciar la matriz y verás por qué en tan solo
+
+56
+00:04:12,960 --> 00:04:21,510
+un segundo si le muestro la matriz volví a 0 1 2 3 hasta llegar a 10.
+
+57
+00:04:21,510 --> 00:04:24,350
+No quiero mostrarte un no importante en porciones o tasa.
+
+58
+00:04:24,600 --> 00:04:28,420
+Si continúo y creo una variable llamada slice bajo puntaje de guión bajo, son para Array.
+
+59
+00:04:28,440 --> 00:04:36,490
+Y dije igual a una porción de la matriz, por ejemplo, 06. Es bueno
+
+60
+00:04:36,500 --> 00:04:46,360
+ver que la porción de la matriz aquí tenemos las matrices, hay una dos, tres, cuatro y cinco.
+
+61
+00:04:46,380 --> 00:04:48,590
+Básicamente ese primer pedazo de la mitad de la matriz.
+
+62
+00:04:48,600 --> 00:04:51,960
+Si transmito en Saray weenie, digo slice of array, uso dos puntos.
+
+63
+00:04:52,200 --> 00:04:59,580
+Eso significa que estoy agarrando todo en esa porción.
+
+64
+00:04:59,580 --> 00:05:02,550
+Intento transmitir esto para ser otro número como 99.
+
+65
+00:05:02,570 --> 00:05:06,820
+Eso significa que cuando miro un trozo de matriz, veo un montón de 99.
+
+66
+00:05:06,900 --> 00:05:11,780
+Aquí es donde debes prestar mucha atención.
+
+67
+00:05:12,000 --> 00:05:14,480
+Si volví a llamar a la matriz, en realidad cambió 99 no solo en la sección, sino en la matriz original.
+
+68
+00:05:14,520 --> 00:05:21,800
+Llamé a dos.
+
+69
+00:05:21,810 --> 00:05:22,960
+Por lo tanto, debe saber cómo se produce ese cambio en la matriz original, lo que significa que los datos no se copian.
+
+70
+00:05:23,190 --> 00:05:28,950
+Es solo una vista.
+
+71
+00:05:29,130 --> 00:05:30,560
+Entonces la matriz original.
+
+72
+00:05:30,710 --> 00:05:32,100
+establecerá automáticamente copias de las matrices.
+
+73
+00:05:32,280 --> 00:05:38,250
+Y la razón por la que lo hace es evitar problemas de memoria con matrices muy grandes, lo que significa que no pi no
+
+74
+00:05:38,250 --> 00:05:41,140
+Si realmente quiere una copia y
+
+75
+00:05:41,380 --> 00:05:47,940
+no una referencia a la matriz original que puede hacer, en realidad especifica la copia.
+
+76
+00:05:47,940 --> 00:05:49,410
+Entonces puedo hacer algo como esto.
+
+77
+00:05:49,530 --> 00:05:51,480
+Puedo continuar y decir
+
+78
+00:05:51,720 --> 00:06:01,620
+r subrayar copiar y usar el método de copia fuera de la matriz para indicar específicamente que quiero una copia.
+
+79
+00:06:01,620 --> 00:06:03,320
+Entonces, si echo un vistazo a mi matriz, es 9 9 9 9 9 x cetera y luego 6 7 8 9 10.
+
+80
+00:06:03,450 --> 00:06:09,410
+Y si echo un vistazo a mi copia de matriz, también es lo mismo.
+
+81
+00:06:09,780 --> 00:06:14,320
+Pero si hago un cambio en la copia de mi matriz, quizás transmitiendo cada valor a 100.
+
+82
+00:06:14,500 --> 00:06:20,550
+Y reviso la copia de matriz, cada valor es 100.
+
+83
+00:06:20,940 --> 00:06:25,420
+Pero esa matriz original aún no se ve afectada por esa emisión en el comando a 100.
+
+84
+00:06:25,440 --> 00:06:32,190
+Continúa y revisa las notas sobre esto.
+
+85
+00:06:32,190 --> 00:06:34,070
+Esto es un tanto confuso
+
+86
+00:06:34,120 --> 00:06:40,360
+para usted, pero la premisa básica aquí es que si toma una porción de la matriz y la
+
+87
+00:06:40,360 --> 00:06:47,370
+establece como una variable sin decir explícitamente que desea una copia de la matriz, debe tener en cuenta que solo
+
+88
+00:06:47,380 --> 00:06:53,340
+está ver un enlace a la matriz original y los cambios que haga realmente afectarán la matriz original.
+
+89
+00:06:53,340 --> 00:06:56,760
+DE ACUERDO.
+
+90
+00:06:56,760 --> 00:06:57,400
+Vayamos y hablemos sobre indexar a a la matriz.
+
+91
+00:06:57,690 --> 00:07:00,550
+También conocido como una matriz.
+
+92
+00:07:00,690 --> 00:07:02,810
+Voy a seguir adelante y limpiar todas las celdas aquí por un segundo.
+
+93
+00:07:02,880 --> 00:07:07,920
+Está bien, acabo de limpiar todas las celdas aquí y vamos a hacer es seguir adelante y crear una matriz d.
+
+94
+00:07:07,960 --> 00:07:15,180
+Voy a decir N. PAG. array y voy a pasar en una lista anidada.
+
+95
+00:07:17,520 --> 00:07:24,020
+Entonces voy a decir 5 10 15 20 25 30 y finalmente 35 40 45.
+
+96
+00:07:24,930 --> 00:07:37,830
+a la matriz y aquí tengo tres filas con tres columnas, es para ellos la matriz misional.
+
+97
+00:07:38,430 --> 00:07:44,280
+Así que quiero salir y mostrar eso
+
+98
+00:07:44,280 --> 00:07:46,010
+Estupendo.
+
+99
+00:07:46,050 --> 00:07:46,820
+Todo bien.
+
+100
+00:07:46,830 --> 00:07:47,430
+Hay dos formatos generales para agarrar elementos desde a hasta la matriz o Matrix.
+
+101
+00:07:47,430 --> 00:07:52,880
+Existe el doble soporte para eso.
+
+102
+00:07:52,880 --> 00:07:54,500
+Y luego está el bracket único formit con la coma.
+
+103
+00:07:54,570 --> 00:07:57,270
+paréntesis único que es el formato que recomendaría usar,
+
+104
+00:07:57,270 --> 00:08:01,570
+pero debes saber ambos en caso de que los encuentres en la naturaleza.
+
+105
+00:08:01,560 --> 00:08:07,200
+Déjame ir para mostrarte el formato de paréntesis doble y luego te mostraré un ejemplo del formato de
+
+106
+00:08:07,200 --> 00:08:08,750
+Así que de nuevo están mis dos teorías.
+
+107
+00:08:08,760 --> 00:08:10,970
+Bueno, digamos que quería tomar
+
+108
+00:08:11,120 --> 00:08:18,390
+el dígito 5 para que esté en la primera fila o en el índice 0 y en el
+
+109
+00:08:18,390 --> 00:08:27,910
+primer índice de columna 0 para la notación de doble paréntesis. Puedo pasar primero la fila que quiero y luego la columna que quiero.
+
+110
+00:08:27,900 --> 00:08:28,700
+Así que pasar aquí 00 devolverá el dígito 5.
+
+111
+00:08:28,770 --> 00:08:32,070
+Dado que esos son los elementos en la primera fila en la primera columna.
+
+112
+00:08:32,230 --> 00:08:36,410
+Lo que puedo hacer es eliminar y simplemente hacer un único conjunto de corchetes e indexar un Roback completo.
+
+113
+00:08:36,420 --> 00:08:44,640
+Entonces esto indexará toda la fila del índice 0, lo que significa 5 10 15 y si
+
+114
+00:08:44,670 --> 00:08:55,320
+quiero decir el elemento 25 Bueno, ese es el índice uno para la fila en su índice uno para la columna.
+
+115
+00:08:55,350 --> 00:09:03,000
+Entonces puedo decir 1 1 y todo esto devuelve 25.
+
+116
+00:09:03,000 --> 00:09:06,080
+Lo que quiero que hagas es tratar de ver si
+
+117
+00:09:06,100 --> 00:09:11,980
+ahora puedes pausar el video e intentar tomar elementos de la matriz individualmente usando esta notación de doble corchete.
+
+118
+00:09:11,970 --> 00:09:15,620
+Todo bien.
+
+119
+00:09:15,660 --> 00:09:15,910
+Digamos que queremos tomar 40 como solo un último ejemplo.
+
+120
+00:09:15,930 --> 00:09:19,710
+Ese es un índice de fila también.
+
+121
+00:09:19,950 --> 00:09:22,700
+Y es una columna en el próximo.
+
+122
+00:09:23,310 --> 00:09:25,290
+Entonces eso es 40.
+
+123
+00:09:25,680 --> 00:09:27,010
+Esa es la notación de doble corchete.
+
+124
+00:09:27,120 --> 00:09:29,520
+Bueno, deberías hacer.
+
+125
+00:09:29,520 --> 00:09:30,380
+Sin embargo, recomendaría utilizar la notación de coma simple de coma.
+
+126
+00:09:30,380 --> 00:09:36,390
+Y básicamente lo que hace es reemplazar el doble conjunto de corchetes con solo
+
+127
+00:09:36,390 --> 00:09:42,630
+una coma y se pasa el número de columna de la coma de fila.
+
+128
+00:09:42,630 --> 00:09:45,790
+remar y luego está en la tercera columna.
+
+129
+00:09:45,780 --> 00:09:54,440
+Así que, por ejemplo, digamos que quería el dígito 30 que pasaría en el índice 1 porque es el índice uno para
+
+130
+00:09:54,930 --> 00:09:56,300
+Así que 0 1 2 está en el índice de la columna y eso me da el 30.
+
+131
+00:09:56,320 --> 00:10:03,010
+Y eso es lo mismo que simplemente decir lo que se resalta
+
+132
+00:10:03,210 --> 00:10:11,040
+y hacerlo con corchetes dobles. Le recomendaría que siempre utilice este corchete único de
+
+133
+00:10:11,050 --> 00:10:17,200
+una notación común porque generalmente es menos propenso a errores.
+
+134
+00:10:17,200 --> 00:10:19,990
+Ahora imaginemos que no quería elementos individuales sino fragmentos reales de.
+
+135
+00:10:19,990 --> 00:10:24,730
+Por ejemplo, si quiere algunas matrices de esta matriz, puede usar dos puntos para
+
+136
+00:10:24,900 --> 00:10:31,870
+la notación de corte Nurit para tomar ciertas secciones de la totalidad de la matriz y clasificar solo los elementos individuales.
+
+137
+00:10:31,870 --> 00:10:36,620
+Continuaré y te mostraré cómo hacer eso.
+
+138
+00:10:36,820 --> 00:10:38,730
+Vamos a eliminar esta segunda celda y mostrarte un par de ejemplos.
+
+139
+00:10:38,770 --> 00:10:44,230
+Digamos que queríamos tomar desde la esquina superior derecha.
+
+140
+00:10:44,400 --> 00:10:47,640
+Lo que significa que quiero decir 10 15 y 25 30 por
+
+141
+00:10:47,760 --> 00:10:54,160
+lo que esta esquina superior derecha aquí es lo que quiero agarrar cuando puedo seguir y hacer es usar notación de división para hacer esto.
+
+142
+00:10:54,150 --> 00:10:59,860
+Entonces puedo decir agarrar todo para llamar a
+
+143
+00:11:00,040 --> 00:11:12,390
+una fila y luego tomar de la columna 1 en adelante y eso devuelve 10 15 25 30.
+
+144
+00:11:12,390 --> 00:11:14,890
+Déjame entrar y descomponer esto una vez más.
+
+145
+00:11:14,880 --> 00:11:16,920
+En cuanto a las filas, lo que estamos diciendo es tomar todo, pero sin incluir las filas 0 y 1 como dos puntos.
+
+146
+00:11:17,130 --> 00:11:24,880
+Pero luego no incluyas dos.
+
+147
+00:11:25,140 --> 00:11:26,520
+También digo cortarlo y
+
+148
+00:11:26,560 --> 00:11:33,790
+voy a seguir mostrando que es solo un comando, así que le digo a Colón que devuelve estas dos filas, la fila 0
+
+149
+00:11:33,870 --> 00:11:43,300
+y la fila 1, y añadiendo, además, lo que digo en cuanto a las columnas van a agarrar todo desde la Columna 1 hasta el final, lo que básicamente
+
+150
+00:11:43,300 --> 00:11:49,590
+significa simplemente colocar toda esta columna 0 y que devuelve estas dos pequeñas subsecciones 10 15 y luego 25 30.
+
+151
+00:11:49,840 --> 00:11:59,520
+Todo bien.
+
+152
+00:11:59,520 --> 00:12:00,730
+tomar subsecciones de Saray.
+
+153
+00:12:00,730 --> 00:12:08,280
+Lo que recomendaría que hagas ahora es en las subsecciones de tu mente, como por ejemplo 20 25 30 y 35 40 45,
+
+154
+00:12:08,290 --> 00:12:15,700
+y ver si puedes usar la notación de división junto con esta notación de coma de indización de corchetes individuales con pi para
+
+155
+00:12:15,970 --> 00:12:18,790
+Y te animo a que también veas
+
+156
+00:12:18,970 --> 00:12:26,920
+si puedes hacer más grande y captar las subsecciones más grandes. OK, con suerte, tendré suficiente práctica si quieres más ejemplos.
+
+157
+00:12:26,910 --> 00:12:29,350
+Siempre puede visitar el cuaderno para esta
+
+158
+00:12:29,350 --> 00:12:34,920
+conferencia, que tiene algunos ejemplos más de cortes bidimensionales a lo largo del curso. No haremos demasiado
+
+159
+00:12:36,220 --> 00:12:41,110
+de este tipo de rebanadas de índices sofisticados. Por lo tanto, es confuso para usted.
+
+160
+00:12:41,110 --> 00:12:41,680
+el curso.
+
+161
+00:12:41,670 --> 00:12:45,820
+No tiene que preocuparse demasiado porque en realidad no lo hará con tanta frecuencia durante todo
+
+162
+00:12:45,820 --> 00:12:46,730
+Bueno, por lo general solo agarro elementos sencillos o filas o columnas enteras.
+
+163
+00:12:47,010 --> 00:12:51,700
+Por lo general, no captan las subsecciones de las subsecciones como lo hicimos aquí.
+
+164
+00:12:51,760 --> 00:12:56,430
+Todo bien.
+
+165
+00:12:56,440 --> 00:12:57,020
+Avancemos y pasamos
+
+166
+00:12:57,280 --> 00:13:02,290
+al método de selección más importante que va a utilizar con mucha más frecuencia en este curso, que es la selección condicional.
+
+167
+00:13:02,290 --> 00:13:05,750
+Voy a seguir adelante y crear
+
+168
+00:13:05,810 --> 00:13:15,240
+una nueva matriz, solo una única mención mencionar, y Pido organizar una coma 11 y verificar esta matriz.
+
+169
+00:13:15,280 --> 00:13:18,180
+DE ACUERDO.
+
+170
+00:13:18,850 --> 00:13:19,350
+Entonces para este arreglo tengo uno dos tres cuatro cinco seis siete ocho nueve 10.
+
+171
+00:13:19,360 --> 00:13:23,300
+Lo que puedo hacer es tomar esta matriz
+
+172
+00:13:23,740 --> 00:13:30,580
+combinada con operadores de comparación para obtener de hecho una matriz booleana completa.
+
+173
+00:13:30,630 --> 00:13:32,240
+Y lo que quiero decir
+
+174
+00:13:32,340 --> 00:13:40,450
+con eso es que si comparo esto con un solo dígito, por ejemplo, a son más grandes que 5 obtendré una matriz de valores booleanos.
+
+175
+00:13:40,450 --> 00:13:42,730
+Observe que dice D tipo B O L.
+
+176
+00:13:42,730 --> 00:13:45,010
+Entonces estos son valores verdaderos o falsos.
+
+177
+00:13:45,250 --> 00:13:47,110
+Y me da falso donde sea que esa comparación sea falsa y verdadera o que la comparación sea verdadera.
+
+178
+00:13:47,250 --> 00:13:52,990
+Y luego puedo seguir y guardar esto ya que tal vez subrayarás la matriz.
+
+179
+00:13:53,160 --> 00:13:59,650
+Entonces, si llamo guión bajo de bool ahora, recupero esta matriz booleana.
+
+180
+00:13:59,640 --> 00:14:06,270
+Ahora puede usar eso para hacer una selección condicional.
+
+181
+00:14:06,280 --> 00:14:09,850
+Lo que significa que puedo pasar eso en dos corchetes y solo obtendré
+
+182
+00:14:09,850 --> 00:14:12,440
+los resultados donde esta matriz booleana pasó a ser verdadera.
+
+183
+00:14:15,250 --> 00:14:19,990
+Vamos a descomponerlo una vez más obteniendo la matriz y usando un operador
+
+184
+00:14:19,990 --> 00:14:26,440
+de comparación en realidad devolverá una matriz booleana que significa una matriz de todos los valores booleanos.
+
+185
+00:14:26,430 --> 00:14:31,020
+Entonces puedo usar esa matriz booleana para realmente indexar
+
+186
+00:14:31,170 --> 00:14:38,200
+o seleccionar de manera condicional los elementos de la matriz original donde esto sucedió.
+
+187
+00:14:38,200 --> 00:14:40,220
+Así que solo devuelve instancias
+
+188
+00:14:40,230 --> 00:14:46,180
+donde esa matriz booleana era verdadera y más comúnmente dividida en dos pasos.
+
+189
+00:14:46,170 --> 00:14:47,450
+En realidad, harías esto todo en un solo paso.
+
+190
+00:14:47,500 --> 00:14:49,480
+Diría array y entre corchetes en lugar de
+
+191
+00:14:49,480 --> 00:14:54,490
+la matriz que pasaría en el enunciado condicional como r r mayor que 5 y que devolverá la misma respuesta.
+
+192
+00:14:54,950 --> 00:14:59,640
+Y este es el tipo de notación de sintaxis que vamos a usar todo el tiempo en cuanto a la selección condicional.
+
+193
+00:14:59,710 --> 00:15:04,900
+Entonces, por ejemplo, digamos que queríamos saber todos los elementos de la matriz que son menos de 3.
+
+194
+00:15:06,310 --> 00:15:12,470
+Lo que haría sería decir corchetes de matriz y luego decir matriz menos de
+
+195
+00:15:12,520 --> 00:15:20,380
+tres y que devuelvan todos los elementos donde eso es cierto y ese es el tipo de cosas
+
+196
+00:15:20,380 --> 00:15:25,620
+que vamos a utilizar mucho en este curso, especialmente un paso a pandas
+
+197
+00:15:25,970 --> 00:15:28,000
+Este es el tipo de notación al que deberías acostumbrarte.
+
+198
+00:15:28,030 --> 00:15:30,440
+Sé que es un poco extraño al principio ver
+
+199
+00:15:30,460 --> 00:15:37,110
+el nombre de la variable dentro de sí mismo, pero con suerte dividirlo en estos dos pasos deja en claro lo que está sucediendo realmente.
+
+200
+00:15:37,120 --> 00:15:40,550
+sea verdadero en el índice de la matriz original.
+
+201
+00:15:40,570 --> 00:15:45,510
+Solo está transfiriendo una matriz booleana de valores y luego regresa donde sea que
+
+202
+00:15:45,520 --> 00:15:48,410
+De acuerdo, eso es todo por esta conferencia.
+
+203
+00:15:48,900 --> 00:15:50,760
+Lo que recomendaría hacer
+
+204
+00:15:50,770 --> 00:15:58,390
+en cuanto a un ejercicio para usted es crear una nueva en la matriz diciendo N. PAG. puntos arr. Bien, adelante y diga 50 y luego modifique esto para que sea un 5 por 10.
+
+205
+00:15:58,420 --> 00:16:01,860
+No, no es solo llamar a un método fuera de otro método.
+
+206
+00:16:02,080 --> 00:16:08,650
+Así que esto es todo una matriz y luego tienes esta buena matriz de cinco por diez.
+
+207
+00:16:08,640 --> 00:16:10,990
+Entonces 0 a 40 y luego 0 a 9.
+
+208
+00:16:10,990 --> 00:16:17,530
+Te recomendaría para ti solo practica por ti mismo.
+
+209
+00:16:17,560 --> 00:16:20,340
+Intente en su mente agarrar trozos y luego vea si
+
+210
+00:16:20,430 --> 00:16:23,500
+puede usar la notación de corchetes para agarrar los trozos que pensó.
+
+211
+00:16:23,500 --> 00:16:30,370
+Entonces, por ejemplo, tal vez quieras agarrar tu 13 14 y 23 24.
+
+212
+00:16:30,370 --> 00:16:31,380
+Vamos a salir y mostrar cómo lo harías.
+
+213
+00:16:31,380 --> 00:16:36,210
+Primero quiero dividirlo en dos filas y columnas.
+
+214
+00:16:36,390 --> 00:16:38,820
+Entonces 13:14 que comienza en la fila 0 1 y luego 2.
+
+215
+00:16:38,980 --> 00:16:41,880
+Lo que significa que quiero tomar las filas 1 a 2.
+
+216
+00:16:41,920 --> 00:16:49,730
+y recordar con este tipo de notación de corte e ir uno más de lo que realmente necesita.
+
+217
+00:16:50,020 --> 00:16:52,830
+Voy a seguir adelante y decir uno
+
+218
+00:16:53,250 --> 00:16:59,680
+Así que estoy diciendo agarrar por uno todo el camino y sin incluir el índice tres.
+
+219
+00:16:59,670 --> 00:17:00,770
+Entonces deberían ser estas dos filas.
+
+220
+00:17:01,120 --> 00:17:05,220
+Entremos y confirmemos eso diciendo que son su puntaje para agarrar esas filas.
+
+221
+00:17:05,290 --> 00:17:07,310
+Una llamada y tres y esto funciona básicamente como la notación normal de la lista de Python.
+
+222
+00:17:07,470 --> 00:17:13,040
+Así que aquí tenemos el índice uno al lado de hasta, pero sin incluir tres.
+
+223
+00:17:13,140 --> 00:17:18,450
+grupos y luego quiero cuatro que no incluyan cinco sagas, pero a
+
+224
+00:17:18,450 --> 00:17:23,520
+las cinco allí devuelve lo que estábamos buscando 13 14 23 24.
+
+225
+00:17:23,560 --> 00:17:34,170
+Y luego para las columnas y decir que quiero 13 14 y 23 24 que se produce en la columna de índice de tres
+
+226
+00:17:34,170 --> 00:17:42,060
+Me gustaría seguir alentándolo a practicar esto al configurar la encuesta en su propio cuaderno de notas de Júpiter y luego simplemente agarrar trozos
+
+227
+00:17:42,070 --> 00:17:44,310
+de esta matriz como mejor le parezca.
+
+228
+00:17:44,320 --> 00:17:50,600
+Todo bien.
+
+229
+00:17:50,880 --> 00:17:55,050
+Hay mucha más ayuda de indexación en el cuaderno.
+
+230
+00:17:55,060 --> 00:17:55,610
+No se preocupe
+
+231
+00:17:55,720 --> 00:17:58,250
+mucho si no se siente 100% cómodo, obtendrá más prácticas en el ejercicio final del IP.
+
+232
+00:17:58,300 --> 00:18:03,100
+Pero realmente esto es solo para que sepas de qué parte es capaz la tarta.
+
+233
+00:18:03,100 --> 00:18:05,320
+No vamos a hacer este tipo de notación de corte que a menudo en el curso usando esta notación llamada.
+
+234
+00:18:05,560 --> 00:18:09,170
+Utilizaremos la selección condicional usando operadores persona.
+
+235
+00:18:09,180 --> 00:18:14,450
+Mucho más.
+
+236
+00:18:14,580 --> 00:18:17,540
+De acuerdo, gracias a todos y nos vemos en la próxima conferencia
+
+237
+00:18:17,620 --> 00:18:19,060
+&nbsp;
+
+238
+00:18:19,060 --> 00:18:21,820
+&nbsp;

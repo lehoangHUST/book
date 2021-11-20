@@ -1,0 +1,571 @@
+1
+00:00:05,730 --> 00:00:10,950
+Hola a todos y bienvenidos a esta conferencia opcional sobre entornos virtuales Anaconda.
+
+2
+00:00:10,950 --> 00:00:16,710
+Este es un tema un poco más avanzado sobre cómo crear entornos virtuales utilizando la distribución de Anaconda.
+
+3
+00:00:17,070 --> 00:00:20,580
+Puede seguir adelante y no dude en omitir este tema si no está interesado en él.
+
+4
+00:00:20,880 --> 00:00:23,520
+Sigamos adelante y continuemos.
+
+5
+00:00:23,550 --> 00:00:29,310
+Hablemos sobre qué entornos virtuales son entornos virtuales que le permiten configurar una instalación virtual
+
+6
+00:00:29,310 --> 00:00:32,130
+de python y bibliotecas en su computadora.
+
+7
+00:00:32,340 --> 00:00:37,860
+De esta forma, puede tener múltiples versiones de Python o bibliotecas y activar o
+
+8
+00:00:37,860 --> 00:00:39,210
+desactivar fácilmente estos entornos.
+
+9
+00:00:39,210 --> 00:00:44,220
+Avancemos y veamos algunos ejemplos de por qué es posible que desee hacer esto, por ejemplo.
+
+10
+00:00:44,220 --> 00:00:47,870
+Quizás a veces quieras programar en diferentes versiones de una biblioteca.
+
+11
+00:00:48,060 --> 00:00:54,750
+Por ejemplo, puede haber desarrollado un programa completo que use Sacket learn version 0. 27 y luego en algún punto en el tiempo
+
+12
+00:00:54,750 --> 00:00:58,560
+las próximas versiones son 0. 1 8 es lanzado.
+
+13
+00:00:58,560 --> 00:01:04,350
+Tal vez quiera explorar las nuevas características de 0. 20 pero no quiere romper ninguno de sus códigos anteriores
+
+14
+00:01:04,350 --> 00:01:05,340
+cuando se actualiza.
+
+15
+00:01:05,340 --> 00:01:09,510
+Aquí es donde puede querer crear un entorno virtual para esa versión específica de la biblioteca.
+
+16
+00:01:11,130 --> 00:01:15,390
+En otros ejemplos, a veces quiere asegurarse de que las instalaciones de su biblioteca estén en la ubicación correcta.
+
+17
+00:01:15,900 --> 00:01:20,940
+Entonces, por ejemplo, es posible que también desee tener múltiples versiones de Python en su computadora, por lo que
+
+18
+00:01:20,940 --> 00:01:28,500
+querrá asegurarse de que tenga una versión Python 2. 7 versión de una biblioteca está en la ubicación correcta frente a una pitón 3. 5 versión que puede hacer en un entorno
+
+19
+00:01:28,500 --> 00:01:35,800
+virtual como tiene un entorno en Python 2. 7 y otro de Python 3. 5.
+
+20
+00:01:36,090 --> 00:01:42,120
+Existe una biblioteca virtual E y V para las distribuciones normales de Python que tiene muchas de
+
+21
+00:01:42,120 --> 00:01:44,740
+las capacidades que iban a pasar con Anaconda.
+
+22
+00:01:44,910 --> 00:01:50,030
+Esta biblioteca virtual ENV le permite crear entornos virtuales y es un administrador de entorno virtual.
+
+23
+00:01:50,520 --> 00:01:55,740
+que usamos en este curso, ya tiene un buen administrador de entorno virtual integrado que hace
+
+24
+00:01:55,740 --> 00:02:00,930
+que todo el proceso de creación de un entorno virtual lo active y desactive muy fácilmente.
+
+25
+00:02:01,200 --> 00:02:04,480
+Sin embargo, Anaconda, que es la distribución recomendada de Python
+
+26
+00:02:04,480 --> 00:02:08,610
+Continúa y mira el enlace de recursos para la documentación oficial que vamos a
+
+27
+00:02:08,610 --> 00:02:09,350
+repasar ahora.
+
+28
+00:02:09,480 --> 00:02:13,160
+Así que, ve y revisa el enlace del recurso que te llevará a esto.
+
+29
+00:02:13,290 --> 00:02:18,960
+O, si lo desea, puede escribirlo manualmente, solo vamos a la documentación oficial de datos PI o
+
+30
+00:02:18,960 --> 00:02:20,940
+hablamos sobre el uso de entornos.
+
+31
+00:02:20,940 --> 00:02:24,890
+Puede hacer clic en el enlace del recurso si no desea escribir esta ruta de archivo completa o
+
+32
+00:02:24,900 --> 00:02:26,540
+su ruta de archivo en su navegador.
+
+33
+00:02:26,570 --> 00:02:31,230
+Voy a continuar y saltar a mi navegador. Ahora explora un poco la documentación y te mostraré
+
+34
+00:02:31,230 --> 00:02:33,300
+cómo puedes utilizarla en el símbolo del sistema.
+
+35
+00:02:33,300 --> 00:02:35,340
+Avancemos y saltemos a eso ahora.
+
+36
+00:02:36,060 --> 00:02:39,360
+De acuerdo, aquí estoy en el enlace de recursos para administrar entornos.
+
+37
+00:02:39,390 --> 00:02:44,670
+Lo que quiero que hagas es seguir adelante y crear entornos, por lo que deberías ver las instrucciones
+
+38
+00:02:44,670 --> 00:02:50,040
+básicas para crear un entorno y es muy simple en lo que se refiere a un comando para crear
+
+39
+00:02:50,070 --> 00:02:50,940
+un nuevo entorno.
+
+40
+00:02:50,970 --> 00:02:57,120
+el comando Konda create seguido del nombre del guion, luego cualquier nombre que quieras llamar a tu nuevo entorno.
+
+41
+00:02:57,120 --> 00:02:58,930
+Vas a seguir adelante y usar
+
+42
+00:02:58,950 --> 00:03:04,710
+En este ejemplo llaman al nuevo entorno snowflake y luego espacio en un paquete base
+
+43
+00:03:04,710 --> 00:03:08,430
+o biblioteca con el que desea iniciar esos nuevos entornos.
+
+44
+00:03:08,430 --> 00:03:11,690
+Si no incluye un paquete aquí, puede recibir un error.
+
+45
+00:03:11,730 --> 00:03:16,680
+Entonces, una vez que tenga este comando completo en su símbolo del sistema o terminal después de
+
+46
+00:03:16,680 --> 00:03:20,420
+instalar la distribución Anaconda de Python Kano, va a preguntarle si desea continuar.
+
+47
+00:03:20,430 --> 00:03:24,810
+Puede escribir Y para sí y luego esto crea un nuevo entorno llamado.
+
+48
+00:03:24,810 --> 00:03:30,200
+En este caso, copo de nieve que contiene este programa o paquete BYO Python.
+
+49
+00:03:30,360 --> 00:03:36,150
+Si no especifica una versión específica de Python, usará su versión base de Python.
+
+50
+00:03:36,150 --> 00:03:38,690
+El que descargas es la anaconda.
+
+51
+00:03:38,820 --> 00:03:41,970
+Pero puedes especificar una versión específica de Python.
+
+52
+00:03:42,110 --> 00:03:44,100
+Le mostrará cómo hacer eso también.
+
+53
+00:03:44,100 --> 00:03:46,470
+Déjame seguir y saltar a mi símbolo del sistema.
+
+54
+00:03:46,650 --> 00:03:49,820
+Póntelo aquí para que pueda guiarte por estos pasos.
+
+55
+00:03:50,190 --> 00:03:52,500
+OK, así que aquí está mi símbolo del sistema.
+
+56
+00:03:52,590 --> 00:03:58,410
+sepamos que En realidad estamos haciendo algo con peluche y luego tenemos que poner en una biblioteca para iniciarlo.
+
+57
+00:03:59,030 --> 00:04:05,700
+Voy a seguir adelante y crear un entorno virtual, lo llamaremos Konda, todos decimos espacio de condominio, creamos primero que voy
+
+58
+00:04:05,700 --> 00:04:11,280
+a decir "dash dash" y una "E", y sigamos adelante y llamemos a esto simplemente un nombre ridículo
+
+59
+00:04:11,280 --> 00:04:11,890
+para que
+
+60
+00:04:12,030 --> 00:04:14,240
+Entremos y comencemos con NUMP pi.
+
+61
+00:04:14,280 --> 00:04:19,770
+Como va a ser una de las primeras bibliotecas de las que aprendemos, ingrese y obtendrá los metadatos
+
+62
+00:04:19,770 --> 00:04:20,530
+del paquete.
+
+63
+00:04:20,570 --> 00:04:24,170
+Obtendrán una lista de lo que necesita instalar en Alaska si desea continuar.
+
+64
+00:04:24,420 --> 00:04:31,110
+seguir y decir por qué, sí, vinculará ciertos paquetes y luego extraerá lo que necesita extraer.
+
+65
+00:04:31,110 --> 00:04:32,150
+Ahora voy a
+
+66
+00:04:32,260 --> 00:04:33,990
+OK, eso está hecho ahora.
+
+67
+00:04:34,010 --> 00:04:38,970
+Para activar este entorno, puedo usar activate mullido para desactivar este entorno.
+
+68
+00:04:38,970 --> 00:04:40,790
+Yo uso de-activate.
+
+69
+00:04:40,830 --> 00:04:46,920
+Déjame entrar y mostrarte cómo es mi versión base de Python en comparación con esta versión de
+
+70
+00:04:46,980 --> 00:04:48,330
+entornos virtuales de Python.
+
+71
+00:04:48,330 --> 00:04:51,690
+Recuerde que este entorno virtual solo se inició con pi.
+
+72
+00:04:51,840 --> 00:04:58,290
+Python en este momento, obtendré mi distribución regular de Anaconda, la que instalé, en este caso son 2.
+
+73
+00:04:58,560 --> 00:05:00,920
+Entonces, si escribo 7.
+
+74
+00:05:00,930 --> 00:05:07,450
+Entonces, por ejemplo, si continúo y digo import num pi as y P enter.
+
+75
+00:05:07,470 --> 00:05:12,770
+Eso funciona bien si digo importación panderers como PD entrar.
+
+76
+00:05:12,840 --> 00:05:14,470
+Eso también funciona bien.
+
+77
+00:05:14,550 --> 00:05:20,970
+Vamos a salir de esto ahora y ahora voy a activar mi entorno virtual que se llama
+
+78
+00:05:20,970 --> 00:05:27,450
+Fluffy y ahora notarás que entre paréntesis dice fluffy que me permite saber que estoy realmente dentro
+
+79
+00:05:27,450 --> 00:05:30,060
+de este entorno virtual de esponjoso .
+
+80
+00:05:30,060 --> 00:05:37,740
+Entonces, si digo Python y presiono enter, obtengo la misma versión de Python 2. P No importa nada, ya que sé que es correcto.
+
+81
+00:05:38,040 --> 00:05:42,690
+7 que mi distribución base fue pero va a suceder algo interesante
+
+82
+00:05:42,690 --> 00:05:46,280
+cuando trato de importar algunas cosas para árbitros importantes y
+
+83
+00:05:46,290 --> 00:05:53,860
+Activado mi entorno virtual con si digo pandas de importación como PD obtengo un error de importación.
+
+84
+00:05:53,880 --> 00:05:55,980
+Ningún módulo llamado panderers.
+
+85
+00:05:56,010 --> 00:06:00,960
+El motivo es que este entorno virtual no tiene Pandurs dentro.
+
+86
+00:06:00,960 --> 00:06:06,390
+Si realmente quiero asegurarme de que este entorno virtual también contenga pandas, tendré que
+
+87
+00:06:06,390 --> 00:06:14,720
+activarlo como ya lo he hecho y luego decir Konda instalarlo aquí o instalar la biblioteca que quiera que Júpiter se
+
+88
+00:06:14,730 --> 00:06:17,140
+entere sobre jugar en vivo, etc. solo mi distribución original de Python.
+
+89
+00:06:17,430 --> 00:06:24,630
+Así que voy a seguir adelante y simplemente borrar esto si quiero desactivar esponjoso y volver a
+
+90
+00:06:24,630 --> 00:06:26,600
+Solo digo que desactiva el hit enter y desactiva ese entorno virtual.
+
+91
+00:06:26,730 --> 00:06:32,910
+Ahora, otro caso de uso activo para entornos virtuales es crear
+
+92
+00:06:32,910 --> 00:06:38,430
+un entorno que use una versión diferente de Python.
+
+93
+00:06:38,430 --> 00:06:40,070
+Puedes hacerlo simplemente diciendo que Konda crea entrará y dirá dash dash y me agregará.
+
+94
+00:06:40,200 --> 00:06:47,120
+También puede decir solo dash y Dashon, pero mostrará el nombre
+
+95
+00:06:47,400 --> 00:06:54,150
+completo del tablero, diga el nombre del entorno virtual que desea.
+
+96
+00:06:54,150 --> 00:06:55,570
+Seguiremos adelante y llamaremos a este entorno virtual.
+
+97
+00:06:55,590 --> 00:06:58,080
+Mi espacio de versión de python 3.
+
+98
+00:06:58,140 --> 00:07:03,710
+Y luego dices que Python es igual a 3. 5.
+
+99
+00:07:03,900 --> 00:07:08,150
+Y aquí tienes la opción de simplemente poner en una sola biblioteca como pi.
+
+100
+00:07:08,430 --> 00:07:14,220
+O si desea la distribución completa de Anaconda, puede escribir Anaconda aquí.
+
+101
+00:07:14,430 --> 00:07:20,180
+Eso lleva bastante tiempo más, porque recuerda que esa es toda la distribución de Anaconda.
+
+102
+00:07:20,250 --> 00:07:25,570
+Entonces entraré y solo diré pi.
+
+103
+00:07:25,710 --> 00:07:27,730
+Así que esto va a seguir adelante y
+
+104
+00:07:27,780 --> 00:07:33,180
+hacer es decir Konda crear este nuevo entorno virtual llamado mi Python 3 versión espacio Python es igual a 3. 5 pi.
+
+105
+00:07:33,180 --> 00:07:37,590
+Ingrese Voy a buscar los metadatos del paquete nuevamente.
+
+106
+00:07:37,760 --> 00:07:40,500
+Recuerda que hará todo esto con Python 3.
+
+107
+00:07:40,650 --> 00:07:43,040
+Continuaré y diré Por qué sí, buscará los paquetes y los resolverá.
+
+108
+00:07:43,140 --> 00:07:48,000
+Ahora voy a saltar al final de la extracción e instalación y ahora está completo.
+
+109
+00:07:48,000 --> 00:07:55,410
+Sigamos y mostremos simplemente escribiendo en Python.
+
+110
+00:07:55,650 --> 00:07:59,790
+Tengo Python 2. 7 aquí esa es mi distribución base.
+
+111
+00:08:00,090 --> 00:08:04,360
+Voy a seguir adelante y dejar eso.
+
+112
+00:08:04,410 --> 00:08:06,290
+Ahora sigamos y revise mis entornos.
+
+113
+00:08:06,390 --> 00:08:08,500
+Puedo decir que Kondo space dash dash
+
+114
+00:08:08,520 --> 00:08:16,170
+dash y a v s y este comando enumerará mis entornos aquí. Tengo un aspecto esponjoso en otro ambiente de ejemplo que hice anteriormente.
+
+115
+00:08:16,170 --> 00:08:19,680
+My python 3 versión py 3: 5 que es otro entorno que tengo y luego mi versión de raíz de Python.
+
+116
+00:08:19,680 --> 00:08:25,800
+Puedes ver que hay un comienzo.
+
+117
+00:08:26,010 --> 00:08:27,020
+Indican que.
+
+118
+00:08:27,030 --> 00:08:28,080
+Entonces, si estás abriendo
+
+119
+00:08:28,080 --> 00:08:32,570
+el cuaderno de Júpiter y ves algo como Python Roop, eso es lo que significa sus raíces.
+
+120
+00:08:32,580 --> 00:08:33,270
+Instalación de Python.
+
+121
+00:08:33,300 --> 00:08:35,300
+Avancemos y active mis entornos de versión de Python 3.
+
+122
+00:08:35,340 --> 00:08:42,600
+Entrar.
+
+123
+00:08:42,840 --> 00:08:43,710
+Notarás mi versión de Python 3.
+
+124
+00:08:43,710 --> 00:08:45,910
+Ahora si llamo a Python dentro de este entorno virtual.
+
+125
+00:08:45,930 --> 00:08:49,260
+Tenga en cuenta que obtengo Python 3. 5.
+
+126
+00:08:49,290 --> 00:08:51,580
+Por lo tanto, si puede
+
+127
+00:08:51,610 --> 00:08:57,840
+especificar realmente que desea una versión diferente de Python diciendo que Python es igual y luego cualquier número de versión que desee cuando cree ese entorno virtual.
+
+128
+00:08:57,930 --> 00:09:01,080
+Entonces, si hago algo como 1 dividido por dos, obtengo 0. 5 que no es el caso para Python 2.
+
+129
+00:09:01,080 --> 00:09:07,240
+OK, entonces eso es todo lo que necesitas saber.
+
+130
+00:09:07,680 --> 00:09:09,900
+En cuanto a la creación de entornos virtuales,
+
+131
+00:09:09,930 --> 00:09:15,930
+el enlace de recursos tiene básicamente todo lo que desea saber, como entornos de clonación cambiantes, entornos de clonación, eliminación de entornos, etc. Es bastante sencillo.
+
+132
+00:09:15,930 --> 00:09:20,440
+Entonces, ahora que sabe todo lo que revisamos en esta conferencia, puede continuar y consultar
+
+133
+00:09:20,640 --> 00:09:21,930
+la documentación que necesita.
+
+134
+00:09:21,930 --> 00:09:26,070
+De nuevo, es solo una conferencia opcional en caso de que alguna vez quiera crear sus propios entornos virtuales.
+
+135
+00:09:26,070 --> 00:09:27,820
+Sugeriría que cree entornos virtuales solo
+
+136
+00:09:27,840 --> 00:09:31,870
+para asegurarse de que todas sus bibliotecas sean las versiones que quiere que sean.
+
+137
+00:09:31,920 --> 00:09:36,990
+Entonces, si desea continuar este curso, puede seguir adelante y crear un entorno virtual llamado mi ciencia
+
+138
+00:09:36,990 --> 00:09:38,510
+de datos o algo así.
+
+139
+00:09:38,520 --> 00:09:44,190
+Todo bien.
+
+140
+00:09:44,220 --> 00:09:46,520
+Espero que hayas disfrutado esta conferencia y te veré en la próxima.
+
+141
+00:09:46,530 --> 00:09:47,160
+Gracias a todos.
+
+142
+00:09:47,190 --> 00:09:49,860
+&nbsp;
+
+143
+00:09:49,860 --> 00:09:51,230
+&nbsp;

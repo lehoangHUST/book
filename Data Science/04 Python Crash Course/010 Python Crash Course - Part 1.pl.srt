@@ -1,0 +1,1027 @@
+1
+00:00:05,130 --> 00:00:10,470
+Witam wszystkich i zapraszam na kurs zderzeniowy Pythona Część 1 i Część 1, a następnie
+
+2
+00:00:10,470 --> 00:00:14,270
+rozpoczniemy dyskusję na temat Pythona, przeglądając podstawowe typy danych.
+
+3
+00:00:14,280 --> 00:00:17,730
+Pozwól, że pokażę ci, gdzie można znaleźć notatniki z tej serii wykładów.
+
+4
+00:00:18,720 --> 00:00:22,010
+OK, tutaj jestem w pobranym i rozpakowanym repozytorium.
+
+5
+00:00:22,200 --> 00:00:28,190
+Jeśli przejdziesz dalej i przejdziesz do foldera kursów awarii Python, zobaczysz, że trzy notesy są tutaj plikami IPY
+
+6
+00:00:28,220 --> 00:00:28,820
+inby.
+
+7
+00:00:28,830 --> 00:00:31,940
+Będziemy pracować z notebookiem z kursorem awarii Pythona.
+
+8
+00:00:31,940 --> 00:00:36,990
+A jeśli klikniesz na to, powinieneś zobaczyć notatnik, który wygląda tak, i
+
+9
+00:00:36,990 --> 00:00:38,720
+ma wszystkie typy danych.
+
+10
+00:00:38,790 --> 00:00:43,830
+Zaczniemy od przeszukiwania strumieni liczb, drukowania list słownikowych krotek i zestawów booleans.
+
+11
+00:00:44,130 --> 00:00:45,680
+Zobaczymy, jak daleko się dostaniemy.
+
+12
+00:00:45,750 --> 00:00:48,200
+Później omówimy bardziej zaawansowane funkcje.
+
+13
+00:00:48,300 --> 00:00:54,910
+Zamierzam rozpocząć nowy notebook i przygotować go do pracy.
+
+14
+00:00:55,110 --> 00:01:00,030
+Pójdę dalej i zobaczę, co jest w widoku, pociągnij za pasek głowy i przełącz na pasek narzędzi, aby uzyskać
+
+15
+00:01:00,030 --> 00:01:00,970
+trochę więcej miejsca.
+
+16
+00:01:01,140 --> 00:01:06,450
+I znowu wszystko, co zamierzam zrobić, to wpisywanie wszystkich przykładów tutaj i objaśnianie kodu, kiedy
+
+17
+00:01:06,480 --> 00:01:07,330
+idziemy dalej.
+
+18
+00:01:07,340 --> 00:01:12,220
+Jeśli więc potrzebujesz czegoś, co możesz po prostu skopiować i wkleić z tego notatnika do wykładu.
+
+19
+00:01:12,720 --> 00:01:12,990
+W porządku.
+
+20
+00:01:13,020 --> 00:01:20,280
+Zacznijmy od podstawowych liczb i arytmetyki. Myślę, że ma dwa podstawowe typy liczb.
+
+21
+00:01:20,580 --> 00:01:23,350
+Istnieje liczba całkowita, która jest po prostu czymś w rodzaju 1.
+
+22
+00:01:23,640 --> 00:01:27,540
+A potem jest liczba zmiennoprzecinkowa, która jest podobna do punktu zero.
+
+23
+00:01:27,540 --> 00:01:32,880
+Tak więc liczba zmiennoprzecinkowa ma dziesiętny z nią związany i przy pomocy którejkolwiek z tych liczb można wykonywać podstawowe
+
+24
+00:01:32,880 --> 00:01:34,830
+operacje arytmetyczne, jak można się spodziewać.
+
+25
+00:01:34,840 --> 00:01:37,260
+Więc dla dodania to tylko znak plus.
+
+26
+00:01:37,260 --> 00:01:43,740
+Jeden plus jeden, a ja po prostu wprowadzam shift tutaj, uruchamiam komórki dla mnożenia to tylko
+
+27
+00:01:43,740 --> 00:01:45,400
+asterix 1 razy 3.
+
+28
+00:01:45,480 --> 00:01:46,950
+Po prostu taka asterix.
+
+29
+00:01:46,950 --> 00:01:52,340
+Wizja będzie po prostu rzutem do przodu, a podzielona przez dwie jest równa 0. 5.
+
+30
+00:01:52,350 --> 00:01:54,370
+I zauważ, że nawet ja wkładam w liczby całkowite.
+
+31
+00:01:54,540 --> 00:02:00,300
+Dostaję zmiennoprzecinkowe, jeśli jesteś użytkownikiem Pythona 2, będziesz musiał upewnić się, że jeden z nich jest liczbą
+
+32
+00:02:00,690 --> 00:02:03,090
+zmiennoprzecinkową, aby uzyskać ten sam wynik.
+
+33
+00:02:03,090 --> 00:02:08,480
+Po prostu dla wykładników, na przykład dla potęgi czterech.
+
+34
+00:02:08,550 --> 00:02:10,450
+Tylko dwa połączone Asterixy.
+
+35
+00:02:10,470 --> 00:02:13,050
+Tak więc dwie do potęgi czterech to 16.
+
+36
+00:02:13,050 --> 00:02:20,430
+To dwa razy dwa razy dwa razy, aby coś innego wiedzieć, że Python będzie postępował zgodnie z kolejnością operacji,
+
+37
+00:02:20,430 --> 00:02:22,470
+jak można się spodziewać.
+
+38
+00:02:22,500 --> 00:02:26,520
+Możesz też użyć nawiasów, aby dokładnie wyjaśnić kolejność operacji.
+
+39
+00:02:26,670 --> 00:02:36,900
+Na przykład, jeśli pójdę naprzód i wpiszę dwa plus trzy razy pięć plus pięć matematycznych porządków operacji faktycznie
+
+40
+00:02:36,900 --> 00:02:41,030
+zadeklaruje najpierw mnożenie, a potem dodanie.
+
+41
+00:02:41,040 --> 00:02:45,120
+Więc jeśli to zrobię, dostanę 15 plus dwa plus pięć.
+
+42
+00:02:45,240 --> 00:02:47,430
+Tak więc 15 plus siedem to 22.
+
+43
+00:02:47,490 --> 00:02:52,890
+Jeśli chcesz powiedzieć coś więcej niż dwa plus trzy razy wynik pięciu
+
+44
+00:02:52,890 --> 00:03:00,300
+plus pięć, możesz użyć nawiasów w celu wyjaśnienia swojego zamówienia, dzięki czemu możesz użyć nawiasów w ten
+
+45
+00:03:00,300 --> 00:03:04,850
+sposób, aby powiedzieć pięć razy 10, co da ci 50.
+
+46
+00:03:04,890 --> 00:03:08,570
+Ostatnia operacja arytmetyczna, którą chcę ci pokazać, to funkcja modelu.
+
+47
+00:03:08,820 --> 00:03:13,990
+Zatem funkcja Ma'at lub moduł, tak jak jest znany, to znak procentowy w Pythonie.
+
+48
+00:03:14,610 --> 00:03:18,660
+Zasadniczo zwróci to, co pozostanie po podziale.
+
+49
+00:03:18,780 --> 00:03:22,010
+Więc dla podzielonej przez dwa jest dwie pozostałe.
+
+50
+00:03:22,010 --> 00:03:23,210
+Zero.
+
+51
+00:03:23,250 --> 00:03:33,030
+Więc kiedy pobiegniesz na maade two otrzymasz zero, jako że wyjście pięć podzielone przez dwa ma pozostać jednym, ponieważ
+
+52
+00:03:33,390 --> 00:03:36,400
+cztery plus jeden to pięć.
+
+53
+00:03:36,500 --> 00:03:38,510
+A więc dostaniesz resztę 1.
+
+54
+00:03:38,550 --> 00:03:47,480
+Jest to dobry sposób sprawdzenia, czy liczby są takie, abyś wiedział, że jeśli na przykład mod 2 zwróci 0, to
+
+55
+00:03:47,500 --> 00:03:49,510
+8 nie będzie liczbą.
+
+56
+00:03:49,530 --> 00:03:54,630
+Ponieważ dwa działają równomiernie na tę liczbę, a pozostała wartość wynosi zero.
+
+57
+00:03:54,930 --> 00:03:58,910
+Porozmawiajmy teraz szybko o przydzielaniu zmiennych.
+
+58
+00:03:59,160 --> 00:04:04,680
+Wiele razy chcesz wybrać nazwy zmiennych, aby przypisać jakiś obiekt lub typ danych do nazwy
+
+59
+00:04:04,680 --> 00:04:05,270
+zmiennej.
+
+60
+00:04:05,400 --> 00:04:08,150
+W Pythonie operator przypisania jest tylko znakiem równości.
+
+61
+00:04:08,400 --> 00:04:11,790
+Wybierz nazwę swojej zmiennej, zaczynając pisać rzeczy.
+
+62
+00:04:11,790 --> 00:04:17,160
+Takich jak V-A, wszyscy mówią, że są równi, a następnie każdy typ obiektu, który chcesz tam umieścić.
+
+63
+00:04:17,160 --> 00:04:23,880
+Tak więc na przykład możemy umieścić dwa, a następnie, gdy wezwę tę nazwę zmiennej V A R,
+
+64
+00:04:23,880 --> 00:04:25,380
+otrzymam dwa wyjścia.
+
+65
+00:04:25,380 --> 00:04:31,550
+Więc na przykład mogę powiedzieć, że x jest równe 2 y jest równe trzem.
+
+66
+00:04:31,740 --> 00:04:36,530
+A teraz mogę powiedzieć X plus Y i wyjść 5.
+
+67
+00:04:36,630 --> 00:04:41,730
+Mogę też ponownie przypisać X, definiując go samemu.
+
+68
+00:04:41,760 --> 00:04:48,030
+Mogę więc powiedzieć, że x jest równe x plus X, więc kończy się wynikiem, gdy x jest równe 4.
+
+69
+00:04:48,060 --> 00:04:53,280
+A teraz za każdym razem, gdy wezwę X ponownie, będzie to 4, co oznacza, że gdybym miał uruchomić tę
+
+70
+00:04:53,760 --> 00:04:57,560
+komórkę ponownie, X to X plus X za każdym razem, gdy go uruchomię.
+
+71
+00:04:57,630 --> 00:05:04,080
+Więc zasadniczo podwoi wartość x i ponownie przypisze X, ponieważ jest to podwójna wartość.
+
+72
+00:05:04,530 --> 00:05:05,070
+W porządku.
+
+73
+00:05:05,280 --> 00:05:07,560
+Kilka reguł dotyczących tworzenia tych nazw zmiennych.
+
+74
+00:05:07,560 --> 00:05:14,270
+Nie powinni zaczynać się od liczb, więc nie można powiedzieć, że 12 V-A jest równych 12.
+
+75
+00:05:14,400 --> 00:05:19,890
+W przeciwnym razie dostaniesz błąd składni w o'War wiedział, że to nieprawidłowa składnia Alexiou daje błąd.
+
+76
+00:05:20,130 --> 00:05:26,160
+Nie możesz zacząć od liczb i nie możesz także zacząć od specjalnych
+
+77
+00:05:26,160 --> 00:05:35,110
+symboli, więc nie możesz powiedzieć czegoś takiego jak Dollar Sign vr, zaczniesz napotykać problemy, więc dostaniesz błędy składni.
+
+78
+00:05:35,100 --> 00:05:40,190
+Powinny zacząć od małej litery, jeśli chcesz połączyć ze sobą wiele słów.
+
+79
+00:05:40,290 --> 00:05:45,960
+Powinieneś użyć znaku podkreślenia, aby je rozdzielić, aby podkreślić podkreślenie znaku podkreślenia.
+
+80
+00:05:45,990 --> 00:05:50,950
+Czy inne języki używają okresu do oddzielenia tego dla Pythona.
+
+81
+00:05:50,970 --> 00:05:54,180
+Właściwą składnią jest użycie podkreślenia.
+
+82
+00:05:54,180 --> 00:05:57,110
+Teraz przejdźmy dalej i porozmawiajmy o łańcuchach.
+
+83
+00:05:57,530 --> 00:06:03,990
+Więc zamierzam zrobić komentarz umieszczając przed tagiem hash na ciągi i cokolwiek z hash hash.
+
+84
+00:06:03,990 --> 00:06:09,330
+Zauważysz, że jest inny kolor i widzisz, ponieważ jest to komentarz, więc po prostu nie będzie działać.
+
+85
+00:06:09,320 --> 00:06:10,720
+Możesz wpisać cokolwiek tutaj.
+
+86
+00:06:10,740 --> 00:06:12,060
+To nie będzie działać.
+
+87
+00:06:12,060 --> 00:06:17,250
+W porządku, przejdźmy dalej do ciągów znaków, a ja zamierzam powiększyć i
+
+88
+00:06:17,250 --> 00:06:19,590
+powiększyć, aby uzyskać lepszy widok.
+
+89
+00:06:20,310 --> 00:06:23,460
+A w przypadku łańcuchów istnieją dwa sposoby tworzenia sznurka.
+
+90
+00:06:23,700 --> 00:06:30,930
+Możesz użyć pojedynczych cudzysłowów i zanotować, jak zmienia się kolor w Kadingu, że jest to ciąg znaków
+
+91
+00:06:30,930 --> 00:06:35,190
+lub możesz użyć podwójnych cudzysłowów, więc jest to ciąg znaków.
+
+92
+00:06:35,940 --> 00:06:41,670
+Następnie możesz również zawijać podwójne cytaty wokół pojedynczych cudzysłowów, powiedzmy,
+
+93
+00:06:41,670 --> 00:06:47,470
+że masz zdanie, które mówi coś takiego, jakbym nie mógł odejść.
+
+94
+00:06:47,610 --> 00:06:54,150
+Jeśli masz ten pojedynczy cytat, ale chcesz go zachować w środku, możesz po prostu zawinąć to w podwójne
+
+95
+00:06:54,150 --> 00:06:58,690
+cudzysłowy, a zauważysz, że ten pojedynczy cytat zostaje zachowany w ciągu znaków.
+
+96
+00:06:58,710 --> 00:07:03,390
+Więc jeśli kiedykolwiek będziesz miał do czynienia z pojedynczym cudzysłowem lub podwójnym cudzysłowem w
+
+97
+00:07:03,390 --> 00:07:09,000
+ciągu znaków, zawsze możesz po prostu owijać go wokół innego zestawu podwójnych lub pojedynczych cytatów oczekującego i tego,
+
+98
+00:07:09,000 --> 00:07:10,420
+co jest w środku.
+
+99
+00:07:10,810 --> 00:07:15,330
+OK, przejdźmy dalej i porozmawiajmy o drukowaniu ciągów.
+
+100
+00:07:15,330 --> 00:07:22,740
+Zamierzam stworzyć zmienną o nazwie X w znaku, że ciąg hello dla notebooka Jupiter, jeśli po
+
+101
+00:07:22,740 --> 00:07:28,950
+prostu wpiszę X, to się pokaże, a następnie pokażę cytaty Witaj tutaj.
+
+102
+00:07:28,950 --> 00:07:32,880
+Jest to w zasadzie to samo, co w przypadku wpisywania zmiennej
+
+103
+00:07:33,150 --> 00:07:35,290
+bezpośrednio w konsoli w Pythonie.
+
+104
+00:07:35,420 --> 00:07:42,510
+Wstawię ciąg znaków lub Python. Jeśli jednak chcesz wydrukować wyjścia X, musisz przekazać je
+
+105
+00:07:42,510 --> 00:07:48,030
+do funkcji drukowania, która będzie drukować nawiasy, a następnie x wewnątrz
+
+106
+00:07:48,030 --> 00:07:48,980
+nawiasów.
+
+107
+00:07:49,200 --> 00:07:49,590
+I uwaga.
+
+108
+00:07:49,590 --> 00:07:50,540
+Teraz różnica tutaj.
+
+109
+00:07:50,580 --> 00:07:55,410
+Nie mam już tego wskaźnika i już nie mam pojedynczych cytatów.
+
+110
+00:07:55,500 --> 00:08:00,840
+Tak właśnie powinieneś oficjalnie wyświetlać rzeczy, gdy próbujesz pokazać wynik w Pythonie
+
+111
+00:08:00,870 --> 00:08:02,340
+jest instrukcją drukowania.
+
+112
+00:08:02,340 --> 00:08:06,370
+Teraz pozwól, że przejdę dalej i pokażę, jak możesz formatować wyciągi z drukowania.
+
+113
+00:08:06,390 --> 00:08:15,180
+Powiedzmy, że mam nazwę zmiennej równą 12, a imię równe Sam.
+
+114
+00:08:15,180 --> 00:08:18,990
+Teraz chcę wydrukować rzeczy oparte na tych zmiennych.
+
+115
+00:08:19,260 --> 00:08:21,790
+Mogę to zrobić za pomocą formatowania wydruku.
+
+116
+00:08:22,230 --> 00:08:32,800
+Wezmę ciąg i powiemy, że mój numer jest, a ja wypełnię tam blok cytatów lub nawiasów klamrowych.
+
+117
+00:08:33,400 --> 00:08:39,770
+Mam na imię i mam zamiar przekazać kolejny zestaw nawiasów klamrowych.
+
+118
+00:08:40,020 --> 00:08:46,320
+A następnie w formatach punktów mislay i zanotuj, jak to jest tutaj zaznaczone, aby wskazać, że
+
+119
+00:08:46,320 --> 00:08:52,290
+jest to specjalna metoda poza ciągiem, a następnie możesz iść dalej i podać nazwy zmiennych
+
+120
+00:08:52,500 --> 00:08:56,380
+w kolejności, w jakiej chcesz je wypełnić nawiasy klamrowe.
+
+121
+00:08:56,430 --> 00:09:03,810
+Więc jeśli po prostu wpisałem to i uruchomiłem to, co robi Python, to znaczy, że masz tutaj nawiasy klamrowe w twoim
+
+122
+00:09:03,900 --> 00:09:08,480
+ciągu i że masz ten format, a on umieści je w żądanej kolejności.
+
+123
+00:09:08,550 --> 00:09:14,440
+Więc powiem, że OK zostanie tutaj zamieniony na te nawiasy klamrowe, a nazwa zostanie tu zamieniona.
+
+124
+00:09:14,460 --> 00:09:15,790
+Dla tych nawiasów klamrowych.
+
+125
+00:09:15,930 --> 00:09:21,480
+Jest to wygodny sposób na używanie nazw zmiennych w instrukcjach drukowania,
+
+126
+00:09:21,480 --> 00:09:24,610
+zamiast ciągłego wypisywania 12 lub Sam.
+
+127
+00:09:24,930 --> 00:09:27,400
+Zauważ, że tak naprawdę jeszcze tego nie drukuję.
+
+128
+00:09:27,480 --> 00:09:31,320
+Będę musiał owinąć to wszystko wokół instrukcji drukowania.
+
+129
+00:09:31,320 --> 00:09:35,760
+Dlatego upewnij się, że książęta są zbalansowani i możesz to zobaczyć, wybierając jedną z książąt
+
+130
+00:09:35,760 --> 00:09:37,540
+drukowanych, aby wyróżnić kolor zielony.
+
+131
+00:09:37,600 --> 00:09:43,860
+Teraz gdybym był na tym, to naprawdę został wydrukowany i nie mam już tego sprzedać
+
+132
+00:09:43,860 --> 00:09:52,050
+w inny sposób można użyć formatowania drukowania, to znaczy, jeśli pójdziemy dalej i zmień to można przekazać dowolną zmienną
+
+133
+00:09:52,350 --> 00:09:54,010
+do nawiasów klamrowych.
+
+134
+00:09:54,420 --> 00:10:00,980
+Więc mogę powiedzieć jeden wewnątrz nawiasów klamrowych i dwa w nawiasach klamrowych.
+
+135
+00:10:01,170 --> 00:10:08,070
+A teraz, kiedy już podałem te nazwy, mogę napisać wewnątrz deklaracji formatu mojego dokumentu, że jeden jest równy, a
+
+136
+00:10:08,250 --> 00:10:11,380
+następnie dowolna zmienna, której chcę, aby była równa.
+
+137
+00:10:11,430 --> 00:10:17,910
+W tym przypadku chcę, aby była równa tej odrętwiałej, a następnie dwie chciałem, aby była równa nazwie.
+
+138
+00:10:18,000 --> 00:10:20,850
+A jeśli to zrobię, otrzymam dokładnie taki sam wynik.
+
+139
+00:10:20,850 --> 00:10:26,580
+To miłe, że nie musisz już martwić się, że formatowanie jest w tej
+
+140
+00:10:26,790 --> 00:10:34,440
+samej kolejności, w jakiej chcesz, dla nawiasów klamrowych, i możesz ciągle dodawać więcej nawiasów klamrowych, więc więcej, a następnie możesz
+
+141
+00:10:34,440 --> 00:10:41,420
+wpisać jeden tutaj ponownie i zauważyłeś, że Python może teraz wyszukiwać i umieszczać swoje zmienne w więcej niż
+
+142
+00:10:41,420 --> 00:10:47,280
+jeden raz, więc przychodzi tutaj, szuka nazwy zmiennej, a następnie przechodzi do formatu i sprawdza.
+
+143
+00:10:47,300 --> 00:10:49,190
+OK, jaka jest tam nazwa zmiennej.
+
+144
+00:10:49,190 --> 00:10:52,970
+Na przykład 2 wygląda tak: 2 jest równe nazwie.
+
+145
+00:10:53,000 --> 00:10:53,230
+W porządku.
+
+146
+00:10:53,240 --> 00:10:57,880
+A następnie wypełnij tu nazwisko, a potem wiemy, że nazwa jest równa ciągowi Sam.
+
+147
+00:10:57,890 --> 00:11:00,640
+Więc idzie naprzód i umieszcza to w środku.
+
+148
+00:11:00,650 --> 00:11:03,080
+W porządku, napisz i zadaj dowolne pytanie.
+
+149
+00:11:03,080 --> 00:11:07,670
+Forum pytań i odpowiedzi, jeśli nie masz pojęcia o jakimkolwiek formacie tego druku, ale jest to proste.
+
+150
+00:11:07,790 --> 00:11:10,440
+Po prostu wstaw swój ciąg w nawiasach klamrowych.
+
+151
+00:11:10,560 --> 00:11:15,020
+Proponuję użyć tej metody przekazywania nazw zmiennych, ponieważ po powrocie jest
+
+152
+00:11:15,020 --> 00:11:19,430
+trochę bardziej zrozumiała i nie musisz się martwić o zepsutą
+
+153
+00:11:19,430 --> 00:11:21,750
+kolejność w wywołaniu tego formatu.
+
+154
+00:11:21,770 --> 00:11:27,080
+Teraz przejdźmy dalej i rozbudujmy nasz temat o ciągi do indeksowania ciągów.
+
+155
+00:11:27,230 --> 00:11:33,780
+Jeśli mam ciąg o nazwie S i powiem, że x jest równy cześć.
+
+156
+00:11:34,230 --> 00:11:37,140
+S tutaj jest po prostu sekwencja elementów.
+
+157
+00:11:37,140 --> 00:11:44,990
+I w tym przypadku każdy element jest literą i mogę pobrać określone elementy z tej sekwencji znaków za
+
+158
+00:11:46,010 --> 00:11:49,730
+pomocą tej notacji nawiasu kwadratowego i indeksowania go.
+
+159
+00:11:49,730 --> 00:11:51,400
+Pythoness zaczyna się od zera.
+
+160
+00:11:51,440 --> 00:11:59,210
+I to jest coś, co należy wiedzieć, jeśli wypowiem X nawiasy kwadratowe na zero i uruchomię to lub zawrócę
+
+161
+00:11:59,300 --> 00:12:00,180
+zero elementów.
+
+162
+00:12:00,470 --> 00:12:07,570
+Widzimy więc, że pobiera helisy, ponieważ istnieją elementy, a następnie zwraca 0.
+
+163
+00:12:07,700 --> 00:12:12,140
+Idź przed siebie i sprawdź, czy uda ci się złapać ostatnie miejsce w Hilo.
+
+164
+00:12:12,380 --> 00:12:20,830
+Cóż, co byś zrobił, dobrze by powiedzieć, że indeks dystansu jest taki, że wynosi 0 1 2 3 4.
+
+165
+00:12:21,710 --> 00:12:27,370
+Wkładasz cztery do tych zamków i wyciągasz.
+
+166
+00:12:27,380 --> 00:12:33,050
+Inną rzeczą, na którą warto zwrócić uwagę, jest to, że możesz użyć tak zwanej notacji plastra, aby po
+
+167
+00:12:33,110 --> 00:12:34,600
+prostu chwycić plasterki struny.
+
+168
+00:12:34,760 --> 00:12:38,980
+Zamierzam pisać dalej, zamiast estetyki na cześć.
+
+169
+00:12:39,020 --> 00:12:44,410
+Powiem a b c d e f g h i j k.
+
+170
+00:12:45,020 --> 00:12:50,300
+Uruchomę to i teraz, co zamierzam zrobić, i zobaczę, czy wpisałem s 0.
+
+171
+00:12:50,330 --> 00:12:53,000
+Tutaj, w tym nawiasie, powinienem wrócić.
+
+172
+00:12:53,300 --> 00:12:54,600
+OK, to ma sens.
+
+173
+00:12:54,770 --> 00:13:00,470
+Powiedzmy, że chciałem złapać wszystko jak i poza nim.
+
+174
+00:13:00,770 --> 00:13:05,380
+Mogę użyć notacji dwukropka, która jest również znana jako składnia plasterka.
+
+175
+00:13:05,430 --> 00:13:09,810
+Powiem "s" 0 jako dwukropek.
+
+176
+00:13:09,920 --> 00:13:15,360
+Uruchom to i ten dwukropek zasadniczo mówi OK zaczynając od zera.
+
+177
+00:13:15,530 --> 00:13:22,200
+Zabierz wszystko poza nią, a ta notacja działa na odwrót.
+
+178
+00:13:22,400 --> 00:13:27,770
+Mogę powiedzieć, chwycić wszystko za pomocą dwukropka do pewnego indeksu.
+
+179
+00:13:27,770 --> 00:13:31,210
+Powiedzmy więc, że mówię b c d.
+
+180
+00:13:31,370 --> 00:13:35,660
+Zatem D jest indeksem 3 0 1 2 3.
+
+181
+00:13:35,780 --> 00:13:43,250
+Jeśli przekażę tu trzy, jest to w zasadzie nakazujące Pythonowi powiedzenie "OK" zabrać wszystko, ale nie wliczając
+
+182
+00:13:43,250 --> 00:13:45,370
+w to indeksu 3.
+
+183
+00:13:45,380 --> 00:13:49,500
+Czasami jest to mylące dla początkujących, ponieważ spodziewają się, że się pojawią.
+
+184
+00:13:49,520 --> 00:13:54,860
+Cóż, ponieważ jest to pozycja indeksu 3, ale ponieważ indeksowanie zaczyna się od
+
+185
+00:13:54,860 --> 00:14:01,710
+zera, powinieneś pomyśleć o tym poleceniu jako chwytającym wszystko do góry i nie wliczając indeksu elementu znaku 3.
+
+186
+00:14:01,880 --> 00:14:05,900
+I pokażemy ci więcej o wycinaniu notacji, kiedy mówimy o listach,
+
+187
+00:14:05,900 --> 00:14:08,340
+ponieważ jest to ten sam pomysł.
+
+188
+00:14:08,420 --> 00:14:14,630
+A potem w końcu łączymy te dwa pomysły na tyle, na ile rozpoczynamy i
+
+189
+00:14:14,930 --> 00:14:23,700
+porywamy wszystko poza nią lub chwytamy wszystko, aż do momentu, w którym nie ma określonego punktu indeksu, zaczynając od zera.
+
+190
+00:14:24,190 --> 00:14:29,150
+Colin chwyta wszystko do pewnego indeksu, na przykład trzy.
+
+191
+00:14:29,240 --> 00:14:31,380
+Teraz zwraca ten sam wynik co ABC.
+
+192
+00:14:31,400 --> 00:14:37,090
+Ale mogę tylko zastąpić te dwa numery, aby ustawić punkt początkowy i punkt końcowy.
+
+193
+00:14:37,130 --> 00:14:43,440
+Pójdźmy dalej i chwyć D E F, więc d zaczyna się od indeksu 3.
+
+194
+00:14:43,910 --> 00:14:50,090
+To znaczy, że jeśli pójdę do przodu i zastąpię to, zacznę od indeksu 3 0 1 2 3,
+
+195
+00:14:50,090 --> 00:14:52,220
+a następnie przejdę do G.
+
+196
+00:14:52,250 --> 00:15:00,030
+Więc to 0 1 2 3 4 5 6 7, aby powiedzieć 3 dwukropek 6.
+
+197
+00:15:00,290 --> 00:15:02,840
+Uruchom to i dostaję d e f.
+
+198
+00:15:02,870 --> 00:15:06,580
+Znowu jest to tylko indeks zaczynający się od tego, który zawiera dwukropek.
+
+199
+00:15:06,590 --> 00:15:12,170
+Który oznacza chwyt przez cały czas, a następnie twój ostatni indeks jest indeksem, którego nie uwzględniasz, ponieważ indeksowanie
+
+200
+00:15:12,200 --> 00:15:13,670
+rozpoczyna się od zera.
+
+201
+00:15:13,760 --> 00:15:17,180
+Więc g nie jest uwzględnione nawet w indeksie 6.
+
+202
+00:15:17,450 --> 00:15:26,840
+Dobrze, jeszcze raz powtórz ten pomysł, kiedy mówimy o tym, co teraz nadchodzi, to lista
+
+203
+00:15:26,900 --> 00:15:32,560
+elementów w kwadratowym zestawie nawiasów kwadratowych rozdzielonych przecinkami.
+
+204
+00:15:32,570 --> 00:15:39,270
+Tak więc tutaj masz listę jeden dwa trzy listy może wziąć w zasadzie dowolny typ danych.
+
+205
+00:15:39,710 --> 00:15:45,130
+Mogę też mieć listę ciągów a c c i tutaj nie ma żadnych skarg.
+
+206
+00:15:45,260 --> 00:15:58,460
+Zamierzam iść dalej i utworzyć zmienną o nazwie moja lista i ustawić ją na równi z b c runem, a jeśli chcę dodać element
+
+207
+00:15:58,460 --> 00:16:03,020
+na końcu mojej listy, używam metody append.
+
+208
+00:16:03,080 --> 00:16:06,950
+Mówię, że moja lista podkreślników się uzupełnia.
+
+209
+00:16:07,310 --> 00:16:09,630
+A następnie powiedzmy, że chcę dołączyć literę D.
+
+210
+00:16:09,950 --> 00:16:13,350
+Właśnie to uruchomiłem i jeśli teraz sprawdzę moją listę.
+
+211
+00:16:14,300 --> 00:16:16,490
+Teraz to, co dodało tę wartość.
+
+212
+00:16:16,490 --> 00:16:22,160
+D Lista jest również sekwencją, podobnie jak ciąg znaków.
+
+213
+00:16:22,220 --> 00:16:27,350
+Znaczenie, jeśli chcę pobrać pierwszy element z listy, mogę użyć tej samej notacji brechen,
+
+214
+00:16:27,350 --> 00:16:34,940
+którą zrobiłem dla ciągu tekstowego w indeksie. Watz to uruchomi, a zwrócę element w indeksie, więc 0 1 do miejsca,
+
+215
+00:16:34,940 --> 00:16:38,230
+gdzie każdy punkt indeksu nie jest oddzielone przecinkiem.
+
+216
+00:16:38,450 --> 00:16:44,300
+Na przykład, jeśli chciałem pobrać b i c, mogę użyć tej samej notacji plastra, którą właśnie przeszliśmy.
+
+217
+00:16:44,540 --> 00:16:51,730
+Chcę zacząć od indeksu 1 i przejść całą drogę do, ale nie włączając indeksu 3.
+
+218
+00:16:51,740 --> 00:16:57,290
+Więc powiem, że jeden dwukropek nie zwraca B i C.
+
+219
+00:16:57,740 --> 00:17:02,550
+Mogę również zmienić przypisanie pozycji za pomocą tej notacji indeksu.
+
+220
+00:17:02,660 --> 00:17:08,360
+Więc jeśli chciałbym, aby pierwszy element był czymś innym, po prostu wypisuję swoją podkreśloną listę pasand
+
+221
+00:17:08,360 --> 00:17:13,380
+zero w nawiasach kwadratowych, a następnie przekazuję dowolny element, na który mam ochotę.
+
+222
+00:17:13,520 --> 00:17:16,390
+Chcę, aby ten element był teraz nowy.
+
+223
+00:17:16,390 --> 00:17:20,340
+Więc jeśli złapię moją listę, widzę nowy B C D.
+
+224
+00:17:20,870 --> 00:17:28,550
+Należy tutaj zwrócić uwagę na to, że możesz zagnieżdżać listę w sobie nawzajem, dzięki czemu mogę powiedzieć, że
+
+225
+00:17:28,560 --> 00:17:34,750
+jest jeden przecinek do przecinka, a następnie umieścić w nim kolejną listę 3 przecinków.
+
+226
+00:17:34,790 --> 00:17:39,440
+Więc jeśli spojrzę na listę, jest to lista wewnątrz listy.
+
+227
+00:17:39,440 --> 00:17:44,400
+Powiedzmy więc, że chciałem to zrobić jako pojedynczy element.
+
+228
+00:17:44,570 --> 00:17:48,770
+Cóż, to jest lista o indeksie 0 1 2.
+
+229
+00:17:48,830 --> 00:17:52,650
+Więc przekazuję to tutaj i to powraca na innych listach.
+
+230
+00:17:52,850 --> 00:17:59,270
+Powiedzmy, że chcę wykres dla studni, który jest teraz indeksem 0 1, co oznacza, że mogę
+
+231
+00:17:59,840 --> 00:18:03,680
+przypiąć inny zestaw nawiasów 1 i uzyskać rzeczywiste elementy.
+
+232
+00:18:03,710 --> 00:18:08,970
+Pozwól mi wejść i pokaż jeszcze jeden przykład chwytania rzeczy z list zagnieżdżonych.
+
+233
+00:18:08,990 --> 00:18:12,530
+Nie robisz tego zbyt często bez żadnych list lub bardzo głęboko.
+
+234
+00:18:12,530 --> 00:18:20,570
+Ale chcę, żebyś wpadł na pomysł użycia wielu nawiasów, powiedzmy, że mam zagnieżdżoną listę, która
+
+235
+00:18:20,570 --> 00:18:22,070
+wygląda tak.
+
+236
+00:18:22,070 --> 00:18:23,590
+Raz Dwa Trzy.
+
+237
+00:18:23,600 --> 00:18:26,670
+Kolejna lista obejmuje cztery lub pięć innych list.
+
+238
+00:18:27,020 --> 00:18:34,220
+Cóż, mogę pobrać trzeci lub czwarty element, aby zaindeksować trzy na mojej liście gniazd.
+
+239
+00:18:34,220 --> 00:18:35,430
+To wygląda tak.
+
+240
+00:18:35,480 --> 00:18:41,280
+Wtedy mogę ustawić inny, aby przejść do indeksu do 0 1 2, który jest listą docelową.
+
+241
+00:18:41,330 --> 00:18:44,350
+Powiedzmy, że chcę tylko elementy na liście docelowej.
+
+242
+00:18:44,360 --> 00:18:47,920
+Nie ma jeszcze kwadratowych nawiasów wokół tego, co mam po prostu zero.
+
+243
+00:18:47,960 --> 00:18:49,700
+A teraz mam cel ciąg.
+
+244
+00:18:49,910 --> 00:18:54,980
+A jeśli chcesz wydrukować ten ciąg, mogę zawinąć to wszystko w polecenie drukowania.
+
+245
+00:18:54,990 --> 00:18:56,590
+Teraz chwytam swój cel.
+
+246
+00:18:56,600 --> 00:19:00,250
+Będziesz miał ćwiczenie, w którym musisz znaleźć coś na zagnieżdżonej liście.
+
+247
+00:19:00,260 --> 00:19:05,460
+Dlatego upewnij się, że rozumiesz tematykę tych nawiasów ułożonych jeden na drugim.
+
+248
+00:19:05,480 --> 00:19:05,930
+W porządku.
+
+249
+00:19:06,170 --> 00:19:08,260
+Cóż, zatrzymaj się tutaj na pierwszą część.
+
+250
+00:19:08,330 --> 00:19:12,800
+W następnej kolejności omówimy kilka typów danych w tym wykładzie, w
+
+251
+00:19:12,980 --> 00:19:17,120
+którym omówiliśmy wycinkę list, jak pobrać elementy z ciągów indeksu.
+
+252
+00:19:17,120 --> 00:19:22,770
+W jaki sposób ten nadruk formatował podstawowe przypisania zmiennych, a także tylko podstawową arytmetykę.
+
+253
+00:19:23,030 --> 00:19:23,820
+DOBRZE.
+
+254
+00:19:23,900 --> 00:19:25,370
+Mam nadzieję, że spodoba ci się ten wykład.
+
+255
+00:19:25,370 --> 00:19:27,880
+Zaraz potem przejdziemy jeszcze kilka rzeczy.
+
+256
+00:19:27,890 --> 00:19:28,640
+Dziękuję wszystkim.
+
+257
+00:19:28,640 --> 00:19:29,480
+Zobacz na następnym wykładzie

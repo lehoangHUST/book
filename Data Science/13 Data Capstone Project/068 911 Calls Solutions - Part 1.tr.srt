@@ -1,0 +1,815 @@
+1
+00:00:05,130 --> 00:00:06,000
+Herkese merhaba.
+
+2
+00:00:06,000 --> 00:00:10,800
+Kaptantaş projesi çözümlerine günün başlangıcına hoş geldiniz, bu dersi anlatırken bir gece için
+
+3
+00:00:10,800 --> 00:00:13,850
+bir kaptan projesi dediğimiz gece çözümleri üzerine gidiyoruz.
+
+4
+00:00:13,920 --> 00:00:16,710
+Başlamak için dışarı çıkıp Jüpiter defterine atlayalım.
+
+5
+00:00:16,800 --> 00:00:17,060
+Tamam.
+
+6
+00:00:17,070 --> 00:00:18,560
+İşte defterimdeyim.
+
+7
+00:00:18,570 --> 00:00:20,730
+Hadi başlayalım ve başlayalım.
+
+8
+00:00:20,730 --> 00:00:25,620
+kütüphaneleri alıp satırda harita pilotu ayarlamanızı gerektiren bazı pasta ve pandalar önemlidir.
+
+9
+00:00:25,630 --> 00:00:34,110
+Yapmak istediğim ilk şey, dışarı çıkıp önemli âmilleri ve P söylemek ve PD olarak ithal pandaları söylemek ve bir sonraki
+
+10
+00:00:34,150 --> 00:00:35,370
+hücre için görselleştirme
+
+11
+00:00:35,370 --> 00:00:39,610
+Bu biraz belirsiz bir amaçtaydı ama umarım bunun sadece bunun hakkında konuştuğunun farkındasın.
+
+12
+00:00:39,650 --> 00:00:50,700
+LIBMAN seaborne, kısmen de olsa, PI arsasını Piazzi ithal deniz kıyısı Asinus olarak söyleyebilirim, sonra
+
+13
+00:00:50,700 --> 00:00:55,530
+da dışarı çıkıp ne yaşayacaklarını söyleyeceğim.
+
+14
+00:00:55,530 --> 00:01:00,420
+Sonra, dosyayı The F adlı bir veri çerçevesi olarak okumak istedik.
+
+15
+00:01:00,840 --> 00:01:09,750
+Yani CBS'yi okuduğumuz PD, aslında sadece 9'u arayabiliriz ve dokuzunu birinde v'nin endişe ettiğimiz bir
+
+16
+00:01:09,840 --> 00:01:11,280
+dosya olduğunu görebiliriz.
+
+17
+00:01:11,290 --> 00:01:13,380
+Ve sonra verilerin bilgilerini kontrol etmek istiyoruz.
+
+18
+00:01:13,410 --> 00:01:15,980
+Yani bilgi.
+
+19
+00:01:16,950 --> 00:01:21,890
+Dolayısıyla burada yaklaşık 100.000 giriş var ve dokuz sütun varmış.
+
+20
+00:01:21,990 --> 00:01:27,960
+Ve sonra sütun açıklamalarını defterde zaten görmüş olduk. Böylece DEA'nın başını kontrol
+
+21
+00:01:27,960 --> 00:01:29,000
+etmek istiyoruz.
+
+22
+00:01:29,430 --> 00:01:33,280
+Ve bunu sadece baştaki yöntemi çağırarak yapabiliriz.
+
+23
+00:01:33,600 --> 00:01:37,710
+Lotusphere unvanına bir tür etiket batırılmış veya ateş kolonu ve daha
+
+24
+00:01:37,740 --> 00:01:45,480
+sonra gerçek başlık olayı var ve bir kasaba olan bir zaman damgası GWP var. ve biz sağ tarafa doğru ilerleyelim.
+
+25
+00:01:45,480 --> 00:01:49,650
+Ve burada dünyanın başını taşıyoruz, böylece bunun aslında neye benzediğini anlamalıyız.
+
+26
+00:01:49,770 --> 00:01:53,180
+Bir adresimiz var ve onlara biz diyoruz.
+
+27
+00:01:53,190 --> 00:01:58,480
+Ardından, 911 çağrıları için ilk beş posta kodu ne gibi bazı temel soruları yanıtlamak istiyoruz.
+
+28
+00:01:58,770 --> 00:02:06,600
+Öyleyse devam edin ve sütunu tutun ve ardından aslında sadece bu noktadan değer sayımları belirleyebiliriz veya tüm
+
+29
+00:02:08,240 --> 00:02:10,870
+posta kodları için tüm sayımları değiştirebiliriz.
+
+30
+00:02:10,920 --> 00:02:12,890
+Ve biz sadece ilk beş istiyoruz.
+
+31
+00:02:13,140 --> 00:02:16,230
+Bu yüzden sadece bu seriden 5 kişiyi aramıştık.
+
+32
+00:02:16,230 --> 00:02:18,540
+Ve burada ilk beş posta kodumuz var.
+
+33
+00:02:18,570 --> 00:02:22,910
+Ardından 911 çağrıları için ilk beş ilçenin PWP'sinin ne olduğunu öğrenmek istiyoruz.
+
+34
+00:02:23,190 --> 00:02:32,400
+DWP çağrı değeri hesaplarını belirtmek için çok benzer bir şey yapabilirsiniz ve daha sonra 5'e başlayın; bu,
+
+35
+00:02:32,400 --> 00:02:36,910
+bu sonuçları daha düşük Merion Abbington vb. Alacaktır. Şimdi başlık sütununa ve kaç benzersiz başlık koduna bakacağız.
+
+36
+00:02:37,500 --> 00:02:43,000
+Başlığın eşsiz denetimleri çağırdığını söyleyebileceğiniz ve bunu yapmanın iki
+
+37
+00:02:43,230 --> 00:02:51,920
+yolu var, tüm benzersiz başlıklardan oluşan bir dizi, minikonun sadece o dizinin uzunluğunu kontrol
+
+38
+00:02:51,920 --> 00:02:58,980
+etmesini ve numarayı geri almasını veya hepsini bir adımda gerçekleştirmesini ifade eder.
+
+39
+00:02:58,980 --> 00:03:00,500
+Sadece arayabilir ve eşsizsiniz.
+
+40
+00:03:00,540 --> 00:03:03,440
+Ayrıca 110 dönecekler.
+
+41
+00:03:03,450 --> 00:03:06,060
+Tamam sonraki adım, başlıklar sütununda bazı yeni özellikler oluşturmak istiyoruz.
+
+42
+00:03:06,090 --> 00:03:09,750
+Departmanın kodunun başlık kodundan önce belirtilmesinin bir nedeni vardır.
+
+43
+00:03:09,780 --> 00:03:14,540
+Ve bunlar M-S yangın ve trafik.
+
+44
+00:03:14,700 --> 00:03:17,260
+Dize değerini içeren reason adlı
+
+45
+00:03:17,430 --> 00:03:23,340
+yeni bir sütun oluşturmak için özel bir arazi ifadesi uygulamasını kullanmak istiyoruz.
+
+46
+00:03:23,430 --> 00:03:25,050
+Örneğin, örneğin başlık sütununda
+
+47
+00:03:25,050 --> 00:03:31,260
+geçen yaralanma sırt ağrısı M-S olsaydı, o değerin neden sütunu M-S olurdu ve başa bir göz atalım.
+
+48
+00:03:31,260 --> 00:03:35,310
+Daha önce bahsettiğim gibi burada bir çeşit sebep var iki nokta üstüste.
+
+49
+00:03:35,700 --> 00:03:38,690
+Ve sonra M-S ateşinin tam adı.
+
+50
+00:03:38,700 --> 00:03:41,180
+Ve sonradan trafik var.
+
+51
+00:03:41,190 --> 00:03:43,830
+Devam edin ve apply sütununu kullanarak bu neden sütunu oluşturalım.
+
+52
+00:03:44,130 --> 00:03:48,030
+Birincisi, dışarı çıkalım ve ne yapmak istediğimizin mantığını yıkalım.
+
+53
+00:03:48,240 --> 00:03:51,000
+Başlıktan bir örnek alacağım.
+
+54
+00:03:51,000 --> 00:03:55,530
+Ben bunu yapmak hoşuma gidiyor bir yol gibi görüyorum
+
+55
+00:03:55,590 --> 00:04:03,570
+ve bunu X olarak ayarlayın ve aslında bu başlık burada kapmak için X'e ne yapmam gerektiğini görün.
+
+56
+00:04:03,570 --> 00:04:07,090
+Bu bir dizedir çünkü ben iki nokta üstüste bölünmüş diyebilirim.
+
+57
+00:04:07,350 --> 00:04:13,190
+Ve sonra o listenin her zaman önce geldiğini fark
+
+58
+00:04:14,070 --> 00:04:19,020
+ettim, o yüzden bu listenin ilk öğesini kaparsam.
+
+59
+00:04:19,020 --> 00:04:19,680
+Şimdi burada bir sebebim var.
+
+60
+00:04:19,680 --> 00:04:22,220
+Tamam.
+
+61
+00:04:22,330 --> 00:04:22,720
+Yapacağımız şey budur.
+
+62
+00:04:22,770 --> 00:04:23,970
+Ferland ifadesi,
+
+63
+00:04:23,970 --> 00:04:31,590
+sütun nedenini yaratmak için başlık sütununa eşit uygulayacağımızı gösterecek ve sonra lambda'nın başlığını
+
+64
+00:04:32,440 --> 00:04:43,980
+söyleyecek ve iki nokta üst üste çizgisini temel alan başlık nokta bölünmesini söyleyecek ve sonra ilk öğeyi kapacağım bu liste.
+
+65
+00:04:43,980 --> 00:04:48,200
+Hadi devam edelim ve nedenin nasıl göründüğünü kontrol edelim.
+
+66
+00:04:48,210 --> 00:04:52,220
+Ve bu da Merse trafik trafiğiymiş gibi görünüyor.
+
+67
+00:04:53,810 --> 00:04:56,790
+Mükemmel.
+
+68
+00:04:56,790 --> 00:04:58,550
+Tamam.
+
+69
+00:04:58,560 --> 00:04:59,070
+Umarım
+
+70
+00:04:59,370 --> 00:05:05,730
+bu çok zor olmayabilir, kara ifadesini doğru ifade etmek biraz zor olabilir, bunun için güzel bir küçük ipucu uygulayın.
+
+71
+00:05:05,730 --> 00:05:06,770
+Bir örnek
+
+72
+00:05:06,870 --> 00:05:11,700
+alın ve o örneğe ne yapmanız gerektiğini görünce arazi ifadesine dönüştürün.
+
+73
+00:05:11,700 --> 00:05:13,380
+Şimdi sizin için en yaygın
+
+74
+00:05:13,380 --> 00:05:16,890
+neden nedir bilmek istiyoruz ve bu yeni sütundan yola çıkmak istemiyorum.
+
+75
+00:05:16,890 --> 00:05:18,420
+Bu aslında oldukça kolay.
+
+76
+00:05:18,420 --> 00:05:19,570
+Sadece bir
+
+77
+00:05:19,590 --> 00:05:29,580
+tane vardı ve MS'e geri döneceğini söyleyebileceğin en yaygın nedene geri dönmek istiyorsan EMI'nin en yaygın sebebini döndüren nedensel değer
+
+78
+00:05:29,880 --> 00:05:35,310
+sayımlarını arayabiliriz ancak hepsini göstermek için yalnızca üç değer olduğunu söylüyor. onlardan.
+
+79
+00:05:35,310 --> 00:05:38,660
+Bir sonraki adımda, seferi kullanarak, dokuzu bir aramalar yaparak, saygı ile çağırmak istedik.
+
+80
+00:05:38,670 --> 00:05:44,700
+TAMAM.
+
+81
+00:05:44,790 --> 00:05:45,340
+Asinus sayaçlarını söylemek isteyeceğiz ve sonra burada x ekseni belirtmek istiyoruz.
+
+82
+00:05:45,720 --> 00:05:52,950
+Dolayısıyla, X'in sebep olduğunu düşündüğümde, karşı gösterim için Y
+
+83
+00:05:53,080 --> 00:06:00,660
+yoktur, Y otomatik olarak sadece bir sayı olarak seçilir.
+
+84
+00:06:00,660 --> 00:06:02,400
+Yani veri olduğunu söyleyeceğiz.
+
+85
+00:06:02,400 --> 00:06:03,820
+Ve sonra bunu çalıştırın.
+
+86
+00:06:03,930 --> 00:06:06,120
+Ve burada sayım alanlarımız var.
+
+87
+00:06:06,120 --> 00:06:08,440
+Çözüm kitaplarında gösterildiği gibi tam boyayı alamadıysanız endişelenmeyin.
+
+88
+00:06:08,940 --> 00:06:12,830
+Bu sadece palette biraz fazladan arama.
+
+89
+00:06:12,930 --> 00:06:15,170
+Böylece Palette eşittir gibi
+
+90
+00:06:15,180 --> 00:06:23,160
+bir şey yapabilirdiniz ve çözümler için kullandığım renk bunun biraz altındaydı ve renk biraz değişti.
+
+91
+00:06:24,150 --> 00:06:25,340
+Ancak, renk uyumu veya uyumu konusunda endişelenmeyin.
+
+92
+00:06:25,350 --> 00:06:27,600
+Her seçim için isteğe bağlı bir Renk Eşleme türüdür.
+
+93
+00:06:27,610 --> 00:06:30,100
+Umarım, sayım planının nedene eşit olduğunu
+
+94
+00:06:30,150 --> 00:06:34,380
+ve bu sayım arsa yaratmanın en önemli kısımları f eşittir.
+
+95
+00:06:34,380 --> 00:06:37,160
+Şimdi, zaman bilgisine odaklanmaya gidelim.
+
+96
+00:06:37,170 --> 00:06:40,140
+Zaman damgasındaki nesnelerin veri türü onları çağırır.
+
+97
+00:06:40,200 --> 00:06:43,900
+Yapabileceğiniz şey DFT bilgi çağırmaktır ve
+
+98
+00:06:43,920 --> 00:06:51,780
+aslında zaman damgasına bir nesne türüne bakıp bakmadığınızı söyleyecektir ve bu tür bir sayı
+
+99
+00:06:51,780 --> 00:06:57,510
+olmayacağına ve aslında bir dize olacağına dair bir ipucu verir.
+
+100
+00:06:57,510 --> 00:06:58,790
+Ve biz bu objelerden
+
+101
+00:06:58,950 --> 00:07:06,270
+birini kaptırabildiğimizi teyit edersek, ILO'nun C02 fırını ilk damgasını zaman damgası olarak söyleyebiliriz ve bir dizge geri alacağımıza dikkat edin.
+
+102
+00:07:06,360 --> 00:07:09,920
+Dize olarak TR olarak sahip olduğumuz ve burada söyleyebileceğimizi daha da teyit etmek istiyoruz.
+
+103
+00:07:09,930 --> 00:07:16,920
+Üst sıralara kadar inip çıkmadığınızı öğrenen bir şey.
+
+104
+00:07:16,920 --> 00:07:19,820
+Bu burada bir dize değişkeni ile doğrulanmıştır.
+
+105
+00:07:19,860 --> 00:07:23,450
+Tamam, silahlar geri çekilir.
+
+106
+00:07:23,760 --> 00:07:26,310
+Bu yüzden zaman bilgisine sahip olduğumuzu biliyoruz, ancak aslında bir dize.
+
+107
+00:07:26,310 --> 00:07:29,980
+Şimdi yapmak istiyoruz, bu zaman damgalarını tarih saat nesnelerine dönüştürmek.
+
+108
+00:07:30,300 --> 00:07:35,180
+Bunu PD tarih saatiyle yapmak istiyoruz ve bu bağlantıyı tıklayabilirsiniz.
+
+109
+00:07:35,270 --> 00:07:39,500
+Burada, tarih saatinin altını çizmek için nasıl kullanılacağı ile ilgili dokümanlara bağlantı oluşturacağınızı göreceksiniz.
+
+110
+00:07:39,630 --> 00:07:44,040
+Devam edin ve buradaki örnekleri kontrol edin,
+
+111
+00:07:44,040 --> 00:07:48,150
+ancak aslında oldukça basit bir çağrıda bulunuyorum,
+
+112
+00:07:48,150 --> 00:07:58,980
+umarım bunu anlamışsınızdır, ancak temelde sadece PD'yi söyleyelim. Bu durumda, o zaman damgasını dönüştürmek istediğimiz sütunu geçiyoruz.
+
+113
+00:07:58,980 --> 00:08:02,420
+Sonra da o sütunun buna eşit kalacak şekilde sıfırlanacağım.
+
+114
+00:08:03,270 --> 00:08:10,610
+Ve ţimdi gidip, bu kodu buraya bakarsam.
+
+115
+00:08:11,010 --> 00:08:15,180
+Kopyalayıp yapıştırın.
+
+116
+00:08:15,210 --> 00:08:17,410
+Şimdi tam istediğim şey olan bir zaman damgası nesnem var.
+
+117
+00:08:17,460 --> 00:08:20,580
+Bu, şimdi bir Tarih Saat nesnesi.
+
+118
+00:08:20,580 --> 00:08:22,700
+Tamam.
+
+119
+00:08:22,710 --> 00:08:23,030
+Artık
+
+120
+00:08:23,040 --> 00:08:29,130
+bir tarih saati nesnesi veya pandalarla birlikte bir zaman damgası olduğuna göre, bunları çağırarak nesneden belirli öznitelikleri gerçekten kavrayabilirsiniz.
+
+121
+00:08:29,160 --> 00:08:31,190
+Ve burada küçük bir örnek kod parçası var, gidelim ve bunu kontrol et.
+
+122
+00:08:31,380 --> 00:08:35,240
+Bu örnek kodu kopyalayıp yapıştırıyorum.
+
+123
+00:08:35,400 --> 00:08:38,990
+Bunu çalıştırabiliriz ve aslında bununla ilgili bilgi toplayabileceğimizi
+
+124
+00:08:39,030 --> 00:08:44,520
+gösterebilir ve sonra arayabileceğiniz çeşitli nitelikleri keşfetmek için Jüpiter'in sekme yöntemini kullandığını söylüyor.
+
+125
+00:08:44,520 --> 00:08:47,540
+Ve şimdi zaman sütunu veya aslında tarih saati
+
+126
+00:08:47,760 --> 00:08:53,460
+nesneleri, ayımız ve haftanın günü diye adlandırılan üç yeni sütun oluşturmak için bunu kullanıyor.
+
+127
+00:08:53,520 --> 00:08:55,590
+Bu sütunları zaman damgası
+
+128
+00:08:55,770 --> 00:09:00,270
+sütununa dayanılarak oluşturursunuz ve daha sonra sıkışırsanız çözümlere referans verebilirsiniz.
+
+129
+00:09:00,270 --> 00:09:01,630
+Bırak gideyim ve bu işi biraz daha uzaklaştıracağım.
+
+130
+00:09:01,800 --> 00:09:04,300
+Ama öncesinde ve zamanın saatini görün.
+
+131
+00:09:04,440 --> 00:09:07,340
+Bu zaman damgası sütunundaki ilk giriş bu mu?
+
+132
+00:09:07,350 --> 00:09:10,330
+Hayır, zaman damgası diyor.
+
+133
+00:09:10,340 --> 00:09:11,660
+2015 12 10 saat dakika saniye içinde.
+
+134
+00:09:11,800 --> 00:09:15,580
+Nokta atıyorum ve bu nesnenin özelliklerini çağırıyorum.
+
+135
+00:09:15,620 --> 00:09:19,220
+Duyuru Gerçek yılı bilmek istersem, onu örnek olarak gösterebileceğim çok çeşitli özelliklere sahibim.
+
+136
+00:09:19,240 --> 00:09:24,840
+edebilir, bu yüzden günün saatini öğrenmek istiyorum.
+
+137
+00:09:24,870 --> 00:09:32,010
+Bu sadece yıl arayabilir ve yılı 2015 olarak rapor
+
+138
+00:09:32,010 --> 00:09:33,190
+Saat on yedi yüz saat geri bildirir.
+
+139
+00:09:33,230 --> 00:09:35,650
+Yani askeri ya da 24 saat formatında,
+
+140
+00:09:35,650 --> 00:09:41,490
+örneğin içinde bulunduğum ve ay olarak adlandırdığım ayı bilmek istiyorum, şimdi haftanın günü gibi üç şey çağırıyorum.
+
+141
+00:09:41,720 --> 00:09:47,390
+Ve sonradan burada referans olacak bir sözlük var.
+
+142
+00:09:47,400 --> 00:09:51,800
+Tamam.
+
+143
+00:09:51,810 --> 00:09:52,170
+Şimdi
+
+144
+00:09:52,170 --> 00:09:57,900
+yapmak istiyoruz, şu anda ay ve gün gün sütunumuzda yaratacağımız, aynı anda bu özelliği kullanan müşteri özniteliklerine sahip olabilmemiz için size nasıl yapacağımızı göstereceğiz.
+
+145
+00:09:57,900 --> 00:10:02,770
+Örneğin yarım saat, zaman damgası sütununa eşit demek.
+
+146
+00:10:02,790 --> 00:10:12,580
+Ve biz, biz Lamda'nın vakit ayırıp saat özniteliğini geri döndürdüğünü söylemek istediğimizi söyleyeceğiz.
+
+147
+00:10:13,370 --> 00:10:23,390
+İçeri girip koştuğumuzu ve daha sonra özniteliğimizi kontrol edersek, gerçek aramanın zaman
+
+148
+00:10:24,260 --> 00:10:30,300
+damgasının üstünde olduğu tüm saatlerimiz olur ve
+
+149
+00:10:30,300 --> 00:10:36,150
+aynı ay ve gün için de aynıyız.
+
+150
+00:10:36,150 --> 00:10:36,500
+kopyalayıp
+
+151
+00:10:36,540 --> 00:10:42,480
+yapıştırabiliriz ve bunun yerine ilk kodumuzu kopyalayıp yapıştırabiliriz. Birincisi için aylarca koyup bu özelliği ay çağrısına,
+
+152
+00:10:42,480 --> 00:10:49,080
+ikincisine ise devam edip aramaya devam edeceğiz. haftanın bu gününü seçin ve sonra bunu haftanın çağrı gününe değiştirin.
+
+153
+00:10:49,080 --> 00:10:50,820
+Aslında sadece bu kod satırını
+
+154
+00:10:53,730 --> 00:10:58,670
+Şimdi devam et ve bunu çalıştır.
+
+155
+00:10:58,770 --> 00:11:02,100
+Devam edin ve veri çerçevemizin başlığını inceleyelim, şimdi bunların hepsinin işe yaradığını teyit edelim.
+
+156
+00:11:02,100 --> 00:11:06,630
+Ve burada doğru bilgilere doğru yol alırsak üç yeni sütun var.
+
+157
+00:11:06,920 --> 00:11:11,980
+Bazı rakamların bulunduğu ayımız ve haftamız var.
+
+158
+00:11:11,990 --> 00:11:16,330
+Tamam, dikkat etmeniz gereken bir sonraki şey, haftanın
+
+159
+00:11:16,740 --> 00:11:23,910
+gününün 0'dan 6'ya kadar olan sayı tamsayısı olduğudur; bu sayede, gerçek dize adlarını,
+
+160
+00:11:23,910 --> 00:11:31,730
+burada yapmanız gereken haftanın gününe eşlemek için bu sözlükte nokta haritası yöntemini kullandığını söylüyor .
+
+161
+00:11:31,740 --> 00:11:32,600
+Devam edin ve bu kod satırını kopyalayın.
+
+162
+00:11:32,610 --> 00:11:36,390
+Şimdi haritamıza sahibiz ve sonra yapmanız gereken tek şey, haritayı
+
+163
+00:11:36,450 --> 00:11:44,590
+görmek için haftanın gününü ve haftanın f gününü eşit tuttuğunu ve ardından da aslında burada bahsedilen yöntemi söyleyen haritanın olduğunu söylemek.
+
+164
+00:11:44,590 --> 00:11:51,290
+Ve sonra haritayı geçin.
+
+165
+00:11:51,600 --> 00:11:55,370
+Ve şimdi, veri çerçevesinin başını kontrol
+
+166
+00:11:55,410 --> 00:11:58,050
+edersek, haftanın gününü tekrar
+
+167
+00:12:01,050 --> 00:12:06,800
+sağa kaydırırsak, şu anki dize Perşembe-Cuma ceterası olur.
+
+168
+00:12:06,900 --> 00:12:07,380
+Bu yüzden okumak biraz daha kolay.
+
+169
+00:12:07,450 --> 00:12:09,920
+TAMAM.
+
+170
+00:12:10,580 --> 00:12:10,990
+Şimdi
+
+171
+00:12:11,070 --> 00:12:16,140
+size daha fazlasını görmek ve neden sütununa dayanan renk tonuyla haftanın gün sütununun bir karşı grafiğini oluşturmak istiyoruz.
+
+172
+00:12:16,140 --> 00:12:18,090
+Hadi devam edelim ve tekrar yaratalım.
+
+173
+00:12:18,090 --> 00:12:19,320
+Asinus
+
+174
+00:12:19,320 --> 00:12:27,480
+counterplot X sütun veri günü olacağını söyleyebiliriz dãa gidiyor.
+
+175
+00:12:30,450 --> 00:12:33,300
+Unutmayın ki bir hafta geçmek ya da saymak zorunda değiliz.
+
+176
+00:12:33,330 --> 00:12:36,010
+Ve bunu yaparsak, haftanın her günü toplam sayısını elde ederiz.
+
+177
+00:12:36,240 --> 00:12:41,340
+Pazar günü bir damla bir düşüş olduğunu görebiliyoruz, buna eklemek için
+
+178
+00:12:41,400 --> 00:12:47,370
+Heugh, tonun mantıkla olduğunu belirtiyor ve bu çözümlerde gösterilen arsadan bir rekreasyona sahibiz.
+
+179
+00:12:47,370 --> 00:12:53,060
+Şimdi burada dikkat edilmesi gereken bir şey, renk paletinin biraz farklı olması.
+
+180
+00:12:53,070 --> 00:12:56,870
+Aynı renk paletini kullanmak istersen yaptım.
+
+181
+00:12:56,980 --> 00:12:58,850
+Palit Zucco'yu viridis'e söyleyebilir ve aynı renk paletini çoğaltabilirsiniz.
+
+182
+00:12:58,890 --> 00:13:08,250
+Ve dikkat etmesi gereken en son şey efsanenin aslında burada olduğunu
+
+183
+00:13:08,370 --> 00:13:13,680
+ve çözümde efsanenin yerini değiştirmek istediğidir.
+
+184
+00:13:13,680 --> 00:13:15,370
+dışa indireceğimizi gösterebiliriz.
+
+185
+00:13:15,540 --> 00:13:21,240
+Aslında, Seaborn derslerinde yaptığınız kodu aynı şekilde kopyalayıp yapıştırıp efsaneyi nasıl
+
+186
+00:13:21,240 --> 00:13:24,020
+Bunu koşturacağız.
+
+187
+00:13:24,120 --> 00:13:25,180
+Şimdi biz komplo dışında efsaneye sahibiz.
+
+188
+00:13:25,260 --> 00:13:28,600
+Tamam.
+
+189
+00:13:28,620 --> 00:13:29,010
+Şimdi yapmamız gereken sonraki görev ay sütununda aynıydı.
+
+190
+00:13:29,010 --> 00:13:33,260
+Ve temel olarak yapmanız gereken tek şey, bu kodu
+
+191
+00:13:33,540 --> 00:13:42,870
+kopyalayıp yapıştırabilir ve x'i ay olacak şekilde değiştirmek ve ay sütununda olduğu dışında, aynı arsaya sahip olacaksınız ve sonraki soru
+
+192
+00:13:42,870 --> 00:13:47,700
+şu oldu Bu konuda garip bir şey farkettiniz mi? arsa.
+
+193
+00:13:47,700 --> 00:13:49,950
+Ve umarım aslında birkaç ay eksik olduğunuzu fark edebilirsiniz.
+
+194
+00:13:50,100 --> 00:13:53,340
+Sekiz'den sekizte gidiyor ancak o zaman ayların 9'u 10 ve 11'in yok.
+
+195
+00:13:53,430 --> 00:13:57,590
+Doğruca 12'ye gidiyorlar.
+
+196
+00:13:57,660 --> 00:14:00,030
+Öyleyse, artık eksik bilginin ne yapmak
+
+197
+00:14:00,270 --> 00:14:05,820
+isteyebileceğimizi, bu eksik ayları dolduran basit bir çizgi planıyla bilgiyi başka bir yolla
+
+198
+00:14:05,850 --> 00:14:11,400
+planlamaya çalışacağımızı ve bunun için bazı ilave işler yapmamız gerektiğini fark ettik. pandalarla
+
+199
+00:14:11,400 --> 00:14:14,440
+Burada devam etmekte olan çözümlerden birine başlayıp, bu
+
+200
+00:14:14,490 --> 00:14:20,250
+sorunu çözmeye çalışmak için ayda adlandırılan bir nesne grubu oluşturarak ikinci bölümde devam edeceğiz.
+
+201
+00:14:20,250 --> 00:14:24,660
+Tamam.
+
+202
+00:14:24,660 --> 00:14:25,160
+Herkese teşekkürler, bir sonraki konferansta görüşürüz.
+
+203
+00:14:25,410 --> 00:14:27,280
+Çözümlerin bir bölümünde
+
+204
+00:14:27,280 --> 00:14:28,710
+&nbsp;

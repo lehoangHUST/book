@@ -1,0 +1,815 @@
+1
+00:00:05,130 --> 00:00:06,000
+Hola a todos.
+
+2
+00:00:06,000 --> 00:00:10,800
+Bienvenido al día para culminar las soluciones del proyecto. Diseñe esta conferencia sobre las soluciones
+
+3
+00:00:10,800 --> 00:00:13,850
+para la noche cuando se lo llama un proyecto final.
+
+4
+00:00:13,920 --> 00:00:16,710
+Salgamos y saltemos al cuaderno de Júpiter para comenzar.
+
+5
+00:00:16,800 --> 00:00:17,060
+Todo bien.
+
+6
+00:00:17,070 --> 00:00:18,560
+Aquí estoy en el cuaderno.
+
+7
+00:00:18,570 --> 00:00:20,730
+Avancemos y comencemos.
+
+8
+00:00:20,730 --> 00:00:25,620
+pedirá que importe bibliotecas de visualización y configure el piloto de mapa en línea.
+
+9
+00:00:25,630 --> 00:00:34,110
+Lo primero que quiero hacer es importar pan y pandas cuando salgamos y decimos árbitros importantes y P e importamos pandas como PD y
+
+10
+00:00:34,150 --> 00:00:35,370
+la siguiente célula le
+
+11
+00:00:35,370 --> 00:00:39,610
+Este fue un poco vago a propósito, pero ojalá se den cuenta de que solo está hablando de eso.
+
+12
+00:00:39,650 --> 00:00:50,700
+LIBMAN en el mar, así que puedo decir en parte, pero trama PI, ya que Piazzi importa mar como Asinus y luego voy
+
+13
+00:00:50,700 --> 00:00:55,530
+a salir y decir lo que vivo en la fila.
+
+14
+00:00:55,530 --> 00:01:00,420
+Luego queríamos leer en el archivo como un marco de datos llamado The F.
+
+15
+00:01:00,840 --> 00:01:09,750
+Entonces, PD que lee C S V y podemos simplemente llamar a 9 y luego ver nueve en uno que v es el
+
+16
+00:01:09,840 --> 00:01:11,280
+archivo que nos preocupa.
+
+17
+00:01:11,290 --> 00:01:13,380
+Y luego queremos verificar la información de los datos.
+
+18
+00:01:13,410 --> 00:01:15,980
+Entonces la información.
+
+19
+00:01:16,950 --> 00:01:21,890
+Entonces, esto nos dice que hay casi 100000 entradas aquí y hay nueve columnas totales.
+
+20
+00:01:21,990 --> 00:01:27,960
+Y luego, de hecho, ya tenemos las descripciones de las columnas que aparecen en el cuaderno y luego queremos verificar el
+
+21
+00:01:27,960 --> 00:01:29,000
+jefe de la DEA.
+
+22
+00:01:29,430 --> 00:01:33,280
+Y podemos hacer eso simplemente llamando al método en la cabeza.
+
+23
+00:01:33,600 --> 00:01:37,710
+de cómo luce en realidad Lotusphere, el título tiene algún tipo de etiqueta sumergida
+
+24
+00:01:37,740 --> 00:01:45,480
+o fuego de colon y luego el evento del título real y tenemos un sello horario GWP que es un municipio y nos desplazamos hacia la derecha.
+
+25
+00:01:45,480 --> 00:01:49,650
+Y aquí tenemos a la cabeza de la tierra para que pueda tener una idea
+
+26
+00:01:49,770 --> 00:01:53,180
+Tenemos una dirección y luego los llamamos.
+
+27
+00:01:53,190 --> 00:01:58,480
+A continuación, queremos responder algunas preguntas básicas, como ¿Cuáles son los cinco principales códigos postales para llamadas al 911?
+
+28
+00:01:58,770 --> 00:02:06,600
+Bueno, seguimos adelante y agarramos la columna y luego podemos simplemente especificar los recuentos de valores fuera de esto y de aquello o pasar
+
+29
+00:02:08,240 --> 00:02:10,870
+todos los recuentos para todos los códigos postales.
+
+30
+00:02:10,920 --> 00:02:12,890
+Y solo queremos los cinco primeros.
+
+31
+00:02:13,140 --> 00:02:16,230
+Entonces llamamos tenía 5 de esa serie.
+
+32
+00:02:16,230 --> 00:02:18,540
+Y aquí tenemos los cinco códigos postales principales.
+
+33
+00:02:18,570 --> 00:02:22,910
+A continuación, queremos averiguar cuáles son las PWP de los cinco primeros municipios para llamadas al 911.
+
+34
+00:02:23,190 --> 00:02:32,400
+Puedes hacer algo muy similar para especificar cuentas de valor de llamadas DWP y luego dirigirte a 5 y esto
+
+35
+00:02:32,400 --> 00:02:36,910
+te dará los resultados tan bajos de Merion Abbington, etc. Ahora queremos echar un vistazo a la columna del título y cuántos códigos de título únicos hay.
+
+36
+00:02:37,500 --> 00:02:43,000
+Hay dos maneras de hacerlo: puede decir que el título llama a
+
+37
+00:02:43,230 --> 00:02:51,920
+auditorías únicas y el retorno de una serie de títulos únicos significa que minicon solo verifica la longitud
+
+38
+00:02:51,920 --> 00:02:58,980
+de esa matriz y recupera el número o lo hace todo en un solo paso.
+
+39
+00:02:58,980 --> 00:03:00,500
+Puedes simplemente llamar y ser único.
+
+40
+00:03:00,540 --> 00:03:03,440
+También devolverán 110.
+
+41
+00:03:03,450 --> 00:03:06,060
+Aceptar el siguiente paso, queremos crear algunas características nuevas en la columna de títulos.
+
+42
+00:03:06,090 --> 00:03:09,750
+Hay una razón para reducir el código del Departamento especificado antes del código del título.
+
+43
+00:03:09,780 --> 00:03:14,540
+Y estos son M-S fuego y tráfico.
+
+44
+00:03:14,700 --> 00:03:17,260
+Queremos usar aplicar una expresión de
+
+45
+00:03:17,430 --> 00:03:23,340
+terreno personalizada para crear una nueva columna llamada razón que contenga el valor de cadena.
+
+46
+00:03:23,430 --> 00:03:25,050
+Entonces, por ejemplo, si la columna del
+
+47
+00:03:25,050 --> 00:03:31,260
+título era M-S dolores de espalda de la última lesión, la columna de la razón para ese valor sería M-S. Continuamos y echamos un vistazo atrás a la cabeza.
+
+48
+00:03:31,260 --> 00:03:35,310
+Como mencioné antes, hay algún tipo de razón aquí, colon.
+
+49
+00:03:35,700 --> 00:03:38,690
+Y luego el título completo M-S fuego.
+
+50
+00:03:38,700 --> 00:03:41,180
+Y luego, hay tráfico.
+
+51
+00:03:41,190 --> 00:03:43,830
+Avancemos y creemos esta columna de razón usando aplicar.
+
+52
+00:03:44,130 --> 00:03:48,030
+Primero vamos a analizar la lógica de lo que queremos hacer.
+
+53
+00:03:48,240 --> 00:03:51,000
+Voy a tomar de Title un ejemplo.
+
+54
+00:03:51,000 --> 00:03:55,530
+Yo veo que es como me gusta y luego
+
+55
+00:03:55,590 --> 00:04:03,570
+configuro esto como X y veo qué tengo que hacer con X para obtener este título aquí.
+
+56
+00:04:03,570 --> 00:04:07,090
+Bueno, ya que esto es una cadena, puedo decir que se divide por dos puntos.
+
+57
+00:04:07,350 --> 00:04:13,190
+Y luego noto que el título siempre es lo primero, así que
+
+58
+00:04:14,070 --> 00:04:19,020
+si acabo de tomar el primer elemento de esa lista.
+
+59
+00:04:19,020 --> 00:04:19,680
+Ahora tengo este motivo aquí.
+
+60
+00:04:19,680 --> 00:04:22,220
+Todo bien.
+
+61
+00:04:22,330 --> 00:04:22,720
+Este es el tipo de cosas que vamos a hacer.
+
+62
+00:04:22,770 --> 00:04:23,970
+La expresión de
+
+63
+00:04:23,970 --> 00:04:31,590
+Ferland va a mostrar que para crear la razón de la columna, establézcala igual a la columna del título,
+
+64
+00:04:32,440 --> 00:04:43,980
+aplique y luego diga lambda el título y diga división del punto del título basado en los dos puntos y luego voy a tomar el primer elemento en esa lista.
+
+65
+00:04:43,980 --> 00:04:48,200
+Avancemos y revisemos cómo es la razón.
+
+66
+00:04:48,210 --> 00:04:52,220
+Y eso es lo que parece que estamos siendo tráfico de fuego de Merse.
+
+67
+00:04:53,810 --> 00:04:56,790
+Perfecto.
+
+68
+00:04:56,790 --> 00:04:58,550
+Todo bien.
+
+69
+00:04:58,560 --> 00:04:59,070
+Afortunadamente, eso
+
+70
+00:04:59,370 --> 00:05:05,730
+no fue tan difícil, puede ser un poco complicado expresar una expresión de tierra correctamente aplicar una pequeña sugerencia agradable para esto.
+
+71
+00:05:05,730 --> 00:05:06,770
+Simplemente tome un ejemplo
+
+72
+00:05:06,870 --> 00:05:11,700
+y luego vea lo que tiene que hacer para ese ejemplo y luego conviértalo en la expresión de tierra.
+
+73
+00:05:11,700 --> 00:05:13,380
+Ahora queremos saber cuál es el motivo
+
+74
+00:05:13,380 --> 00:05:16,890
+más común para usted y no quiero llamarlo en base a esta nueva columna.
+
+75
+00:05:16,890 --> 00:05:18,420
+Bueno, eso es bastante fácil.
+
+76
+00:05:18,420 --> 00:05:19,570
+Podemos llamar conteos
+
+77
+00:05:19,590 --> 00:05:29,580
+de valor de razón que devuelven que EMI es la razón más común si solo quieres devolver la razón más común que podrías decir que tiene uno y
+
+78
+00:05:29,880 --> 00:05:35,310
+devolvería MS, pero dice que solo hay tres valores que vamos a mostrar todos de ellos.
+
+79
+00:05:35,310 --> 00:05:38,660
+A continuación, queríamos utilizar el transporte marítimo para crear un argumento de nueve por llamada.
+
+80
+00:05:38,670 --> 00:05:44,700
+DE ACUERDO.
+
+81
+00:05:44,790 --> 00:05:45,340
+Vamos a querer decir contrainformación de Asinus y luego queremos especificar el eje x para que sea la razón aquí.
+
+82
+00:05:45,720 --> 00:05:52,950
+Entonces, cuando digo que X es razón, entonces para la contraindicación no hay
+
+83
+00:05:53,080 --> 00:06:00,660
+Y es que la Y se elige automáticamente para ser solo un conteo.
+
+84
+00:06:00,660 --> 00:06:02,400
+Entonces vamos a decir que los datos son
+
+85
+00:06:02,400 --> 00:06:03,820
+Y luego ejecuta esto.
+
+86
+00:06:03,930 --> 00:06:06,120
+Y aquí tenemos nuestras parcelas de conteo.
+
+87
+00:06:06,120 --> 00:06:08,440
+Ahora no se preocupe si no obtuvo el color exacto como se muestra en el libro de soluciones.
+
+88
+00:06:08,940 --> 00:06:12,830
+Eso es solo una pequeña llamada extra en la paleta.
+
+89
+00:06:12,930 --> 00:06:15,170
+Así que podrías hacer algo como
+
+90
+00:06:15,180 --> 00:06:23,160
+Palette Equals y el que utilicé para las soluciones estuvo justo debajo de esto y eso cambia el color un poco.
+
+91
+00:06:24,150 --> 00:06:25,340
+Pero no se preocupe por la coincidencia de colores hacia arriba o hacia arriba.
+
+92
+00:06:25,350 --> 00:06:27,600
+Es una especie de asignación de color opcional para cada elección.
+
+93
+00:06:27,610 --> 00:06:30,100
+Con suerte, podemos deducir que la gráfica de conteo es igual
+
+94
+00:06:30,150 --> 00:06:34,380
+a la razón y que las f son las partes más importantes de la creación de la gráfica de conteo.
+
+95
+00:06:34,380 --> 00:06:37,160
+Ahora vamos a centrarnos en la información del tiempo.
+
+96
+00:06:37,170 --> 00:06:40,140
+¿Qué les llama el tipo de datos de los objetos en la marca de tiempo?
+
+97
+00:06:40,200 --> 00:06:43,900
+Bueno, lo único que puedes hacer es llamar a la
+
+98
+00:06:43,920 --> 00:06:51,780
+información DFT y realmente te dirá si ves en la marca de tiempo que es un tipo de objeto y este tipo
+
+99
+00:06:51,780 --> 00:06:57,510
+de da una pista de que no será un número y en realidad es una cadena.
+
+100
+00:06:57,510 --> 00:06:58,790
+Y si queremos confirmar que
+
+101
+00:06:58,950 --> 00:07:06,270
+podemos tomar uno de esos objetos, podemos decir que el sello C02 de la OIT marca el tiempo en la primera y tenga en cuenta que recuperamos una cadena.
+
+102
+00:07:06,360 --> 00:07:09,920
+Queremos confirmar aún más que podemos decir tipo y aquí tenemos como TR para cadena.
+
+103
+00:07:09,930 --> 00:07:16,920
+Algo para saber si solo subes hasta la cima.
+
+104
+00:07:16,920 --> 00:07:19,820
+Esto se confirma aquí con una variable de cadena.
+
+105
+00:07:19,860 --> 00:07:23,450
+Ok, las armas vuelven a caer.
+
+106
+00:07:23,760 --> 00:07:26,310
+Entonces sabemos que tenemos información de tiempos pero en realidad es una cadena.
+
+107
+00:07:26,310 --> 00:07:29,980
+Ahora queremos hacer es convertir estas marcas de tiempo en objetos de fecha y hora.
+
+108
+00:07:30,300 --> 00:07:35,180
+Queremos hacer eso usando PD a la fecha y usted puede hacer clic en este enlace.
+
+109
+00:07:35,270 --> 00:07:39,500
+Notarás aquí para vincular a la documentación sobre cómo usar para subrayar la hora de la fecha.
+
+110
+00:07:39,630 --> 00:07:44,040
+Adelante, solo echa un vistazo a los ejemplos aquí, pero en
+
+111
+00:07:44,040 --> 00:07:48,150
+realidad es una llamada bastante simple, así que ojalá lo hayas
+
+112
+00:07:48,150 --> 00:07:58,980
+descifrado, pero básicamente es solo decir PD para subrayar que el tiempo que pasa en la columna que queremos convertir en este caso es la marca de tiempo.
+
+113
+00:07:58,980 --> 00:08:02,420
+Y luego voy a restablecer esa columna para que sea igual a esto.
+
+114
+00:08:03,270 --> 00:08:10,610
+Y ahora si sigo adelante y miro este código aquí mismo.
+
+115
+00:08:11,010 --> 00:08:15,180
+Copia y pega.
+
+116
+00:08:15,210 --> 00:08:17,410
+Ahora tengo un objeto de sello de tiempo que es exactamente lo que queremos.
+
+117
+00:08:17,460 --> 00:08:20,580
+Este es un objeto Date Time ahora.
+
+118
+00:08:20,580 --> 00:08:22,700
+Todo bien.
+
+119
+00:08:22,710 --> 00:08:23,030
+Ahora
+
+120
+00:08:23,040 --> 00:08:29,130
+que es un objeto de fecha / hora o una marca de tiempo con pandas, puede captar atributos específicos del objeto llamándolos.
+
+121
+00:08:29,160 --> 00:08:31,190
+Y hay un pequeño fragmento de código de ejemplo aquí vamos a verificarlo.
+
+122
+00:08:31,380 --> 00:08:35,240
+Solo copio y pego este código de ejemplo.
+
+123
+00:08:35,400 --> 00:08:38,990
+Podemos ejecutar esto y mostrar que podemos obtener información de esto
+
+124
+00:08:39,030 --> 00:08:44,520
+y luego dice usar el método de tabulación de Júpiter para explorar los diversos atributos que puede invocar.
+
+125
+00:08:44,520 --> 00:08:47,540
+Y ahora usa la columna de tiempo o los objetos de
+
+126
+00:08:47,760 --> 00:08:53,460
+fecha y hora reales que se aplican para crear tres nuevas columnas llamadas nuestro mes y día de la semana.
+
+127
+00:08:53,520 --> 00:08:55,590
+Creará estas columnas basadas en la columna del
+
+128
+00:08:55,770 --> 00:09:00,270
+sello de tiempo y luego podrá hacer referencia a las soluciones si se queda atascado en eso.
+
+129
+00:09:00,270 --> 00:09:01,630
+Déjame ir y descomponerlo un poco más.
+
+130
+00:09:01,800 --> 00:09:04,300
+Pero adelante y eche un vistazo a qué hora es el momento.
+
+131
+00:09:04,440 --> 00:09:07,340
+Es esa la primera entrada en esta columna de marca de tiempo.
+
+132
+00:09:07,350 --> 00:09:10,330
+No, dice marca de tiempo.
+
+133
+00:09:10,340 --> 00:09:11,660
+2015 12 10 en la hora minutos segundos.
+
+134
+00:09:11,800 --> 00:09:15,580
+Hago puntos y invoco atributos fuera de este objeto.
+
+135
+00:09:15,620 --> 00:09:19,220
+Tenga en cuenta que tengo una amplia variedad de atributos que puedo llamar su instancia si quiero saber el año real.
+
+136
+00:09:19,240 --> 00:09:24,840
+2015, así que quiero saber qué hora del día fue.
+
+137
+00:09:24,870 --> 00:09:32,010
+Esto es así. Puedo llamar al año e informar el año como
+
+138
+00:09:32,010 --> 00:09:33,190
+Lo reporta como mil setecientos horas.
+
+139
+00:09:33,230 --> 00:09:35,650
+Entonces, en formato militar o en formato de 24 horas, quiero saber, por
+
+140
+00:09:35,650 --> 00:09:41,490
+ejemplo, el mes en el que se encontraba y el mes llamado ahora, incluso puedo llamar cosas como el día de la semana, por lo que el día de la semana es tres.
+
+141
+00:09:41,720 --> 00:09:47,390
+Y más adelante hay un diccionario aquí para que lo referencia.
+
+142
+00:09:47,400 --> 00:09:51,800
+Todo bien.
+
+143
+00:09:51,810 --> 00:09:52,170
+Ahora queremos
+
+144
+00:09:52,170 --> 00:09:57,900
+hacer es tener esta capacidad de atributos de clientes desactivados en este momento la misma columna para crear realmente en nuestra columna de mes y día de la semana vamos a mostrar cómo vamos a hacer eso.
+
+145
+00:09:57,900 --> 00:10:02,770
+Vamos a decir, por ejemplo, que la media hora equivale a diea de la columna del sello de tiempo.
+
+146
+00:10:02,790 --> 00:10:12,580
+Y vamos a decir aplicar, estamos diciendo que Lamda se toma el tiempo y luego devuelve el atributo de la hora.
+
+147
+00:10:13,370 --> 00:10:23,390
+Entramos y ejecutamos eso y luego, si revisamos nuestro atributo ahora, tenemos todas las horas en que la llamada
+
+148
+00:10:24,260 --> 00:10:30,300
+real ocurrió fuera de la marca de tiempo y vamos a exactamente
+
+149
+00:10:30,300 --> 00:10:36,150
+lo mismo para el mes y el día de la semana.
+
+150
+00:10:36,150 --> 00:10:36,500
+esta línea
+
+151
+00:10:36,540 --> 00:10:42,480
+de código y en lugar de nuestro. Para el primero vamos a seguir adelante y poner en meses y cambiar este atributo a la llamada del
+
+152
+00:10:42,480 --> 00:10:49,080
+mes y para el segundo vamos a seguir adelante y llamar este día de la semana y luego cambiar esto a la llamada del día de la semana.
+
+153
+00:10:49,080 --> 00:10:50,820
+En realidad, solo puede copiar y pegar
+
+154
+00:10:53,730 --> 00:10:58,670
+Ahora vamos y ejecutamos esto.
+
+155
+00:10:58,770 --> 00:11:02,100
+Avancemos y revisemos el encabezado de nuestro marco de datos ahora solo para confirmar que todo esto funcionó.
+
+156
+00:11:02,100 --> 00:11:06,630
+Y si nos desplazamos hasta el aviso correcto, aquí tenemos tres columnas nuevas.
+
+157
+00:11:06,920 --> 00:11:11,980
+Tenemos nuestro mes y día de la semana que algunos números están presentes.
+
+158
+00:11:11,990 --> 00:11:16,330
+OK, lo siguiente que quisiste notar fue cómo el día de la
+
+159
+00:11:16,740 --> 00:11:23,910
+semana es un número entero de 0 a 6 que dice que usa el método de mapa de puntos con
+
+160
+00:11:23,910 --> 00:11:31,730
+este diccionario para mapear los nombres de las cuerdas reales al día de la semana en el que tienes que hacer aquí. .
+
+161
+00:11:31,740 --> 00:11:32,600
+Adelante y copia esta línea de código.
+
+162
+00:11:32,610 --> 00:11:36,390
+Ahora tenemos el mapa y luego todo lo que tienes que hacer es hacer un
+
+163
+00:11:36,450 --> 00:11:44,590
+mapa para ver si el día IF de la semana es igual al día f de la semana y luego puedes decir ese mapa, que es el método al que se refieren aquí.
+
+164
+00:11:44,590 --> 00:11:51,290
+Y luego pasé el mapa.
+
+165
+00:11:51,600 --> 00:11:55,370
+Y ahora si revisamos el encabezado de nuestro aviso de marco
+
+166
+00:11:55,410 --> 00:11:58,050
+de datos si nos desplazamos completamente hacia la
+
+167
+00:12:01,050 --> 00:12:06,800
+derecha nuevamente el día de la semana ahora es la cadena real de jueves a viernes cetera.
+
+168
+00:12:06,900 --> 00:12:07,380
+Por lo tanto, es un poco más fácil de leer.
+
+169
+00:12:07,450 --> 00:12:09,920
+DE ACUERDO.
+
+170
+00:12:10,580 --> 00:12:10,990
+Ahora queremos
+
+171
+00:12:11,070 --> 00:12:16,140
+que vea más y cree un gráfico de contador de la columna del día de la semana con el tono basado en la columna de motivo.
+
+172
+00:12:16,140 --> 00:12:18,090
+Vamos a seguir y recrear eso.
+
+173
+00:12:18,090 --> 00:12:19,320
+Podemos decir que
+
+174
+00:12:19,320 --> 00:12:27,480
+la gráfica de contrapartida de Asinus X va a ser el día en que los datos de la columna serán dĂa.
+
+175
+00:12:30,450 --> 00:12:33,300
+Recuerde que no necesitamos pasar en una semana o solo contando.
+
+176
+00:12:33,330 --> 00:12:36,010
+Y si hacemos esto obtenemos el recuento total por día de la semana.
+
+177
+00:12:36,240 --> 00:12:41,340
+Así que podemos ver que hay un poco de caída el domingo donde podemos agregar que Heugh
+
+178
+00:12:41,400 --> 00:12:47,370
+especifica que el matiz es por razón y tenemos una recreación de la trama que se muestra en estas soluciones.
+
+179
+00:12:47,370 --> 00:12:53,060
+Ahora, algo a tener en cuenta aquí es que la paleta de colores es un poco diferente.
+
+180
+00:12:53,070 --> 00:12:56,870
+Si quieres usar la misma paleta de colores que hice.
+
+181
+00:12:56,980 --> 00:12:58,850
+Puedes seguir y decir paleta Zucco a viridis y que reproduzcan la misma paleta de colores.
+
+182
+00:12:58,890 --> 00:13:08,250
+Y luego, lo último a tener en cuenta es que la leyenda está realmente aquí
+
+183
+00:13:08,370 --> 00:13:13,680
+dentro y en la solución queremos reubicar la leyenda.
+
+184
+00:13:13,680 --> 00:13:15,370
+cómo colocar la leyenda afuera.
+
+185
+00:13:15,540 --> 00:13:21,240
+En realidad, puede copiar y pegar el mismo código que usó durante las conferencias de Seaborn donde realmente mostramos
+
+186
+00:13:21,240 --> 00:13:24,020
+Vamos a ejecutar eso.
+
+187
+00:13:24,120 --> 00:13:25,180
+Ahora tenemos la leyenda fuera de la trama en sí.
+
+188
+00:13:25,260 --> 00:13:28,600
+Todo bien.
+
+189
+00:13:28,620 --> 00:13:29,010
+Ahora la siguiente tarea que tuvimos que realizar fue la misma para la columna del mes.
+
+190
+00:13:29,010 --> 00:13:33,260
+Y básicamente todo lo que tienes que hacer es copiar
+
+191
+00:13:33,540 --> 00:13:42,870
+y pegar este código y cambiar x por mes y tendrás exactamente el mismo diagrama, excepto que es para la columna del
+
+192
+00:13:42,870 --> 00:13:47,700
+mes y luego la siguiente pregunta. ¿Notaste algo extraño sobre esto? trama.
+
+193
+00:13:47,700 --> 00:13:49,950
+Y con suerte, puedes darte cuenta de que en realidad te faltan algunos meses.
+
+194
+00:13:50,100 --> 00:13:53,340
+Va del uno al ocho, pero luego no tiene meses 9 10 y 11.
+
+195
+00:13:53,430 --> 00:13:57,590
+Van directamente a 12.
+
+196
+00:13:57,660 --> 00:14:00,030
+Entonces, ahora que hemos notado que falta información,
+
+197
+00:14:00,270 --> 00:14:05,820
+lo que queremos hacer es intentar trazar la información de otra manera, posiblemente a través de un simple diagrama
+
+198
+00:14:05,850 --> 00:14:11,400
+de líneas que complete esos meses faltantes y para hacer eso tendremos que hacer un trabajo adicional con pandas
+
+199
+00:14:11,400 --> 00:14:14,440
+Continuaremos y comenzaremos la primera parte de la conferencia de soluciones
+
+200
+00:14:14,490 --> 00:14:20,250
+aquí y continuaremos en la segunda parte creando un grupo por objeto llamado por mes para tratar de resolver este problema.
+
+201
+00:14:20,250 --> 00:14:24,660
+Bueno.
+
+202
+00:14:24,660 --> 00:14:25,160
+Gracias a todos y los veré en la próxima conferencia.
+
+203
+00:14:25,410 --> 00:14:27,280
+Para la segunda parte de las soluciones
+
+204
+00:14:27,280 --> 00:14:28,710
+&nbsp;

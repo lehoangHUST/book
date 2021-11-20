@@ -1,0 +1,899 @@
+1
+00:00:05,220 --> 00:00:09,220
+Halo semuanya dan selamat datang di bagian dua dari kursus kilat Python.
+
+2
+00:00:09,240 --> 00:00:12,240
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+3
+00:00:12,660 --> 00:00:12,900
+Baiklah.
+
+4
+00:00:12,900 --> 00:00:14,630
+Di sini saya berada di sebuah chip di notebook.
+
+5
+00:00:14,640 --> 00:00:22,350
+Terakhir kali kami berhenti pada cara mengambil item dari daftar bersarang, kami membahas string dan daftar dan itu terkait satu sama
+
+6
+00:00:22,350 --> 00:00:26,730
+lain karena mereka sebenarnya hanya urutan elemen dan Anda dapat menggunakan
+
+7
+00:00:26,760 --> 00:00:33,120
+notasi indeks yang sama baik pada string atau pada daftar yang baru saja Anda lewati di kurung indeks
+
+8
+00:00:33,210 --> 00:00:38,310
+aktual yang Anda inginkan dan groud elemen yang berada di indeks atau potongan indeks.
+
+9
+00:00:38,310 --> 00:00:41,950
+Mari kita lanjutkan dan beralih ke berpikir tentang kamus.
+
+10
+00:00:42,030 --> 00:00:49,650
+Anda bisa membuat kamus dengan Python dengan menentukan tanda kurung kurawal dan kemudian Anda akan memiliki kunci titik dua
+
+11
+00:00:50,010 --> 00:00:53,330
+dan nilai yang sesuai dengan kunci itu.
+
+12
+00:00:53,430 --> 00:00:54,440
+Tunjukkan contoh lain kepada Anda.
+
+13
+00:00:54,450 --> 00:01:04,410
+Kami akan pergi ke depan dan membuat dua titik dua dan nilai untuk Q2 akan menjadi satu hingga tiga kamus berperilaku sebagai
+
+14
+00:01:04,410 --> 00:01:09,830
+pasangan nilai kunci seperti tabel hash daripada menahan elemen dalam urutan.
+
+15
+00:01:09,840 --> 00:01:14,630
+Mereka memegang elemen melalui kunci dan kemudian nilai aktualnya.
+
+16
+00:01:14,640 --> 00:01:20,910
+Jadi alih-alih mengatakan sesuatu seperti 0 yang tidak akan berhasil karena tidak ada kunci di sana
+
+17
+00:01:20,910 --> 00:01:26,250
+dan itu tidak berpendapat bahwa dalam posisi urutan aktual di mana Anda akhirnya
+
+18
+00:01:26,250 --> 00:01:30,420
+melewati notasi braket adalah yang sebenarnya dan tidak mengembalikan nilai.
+
+19
+00:01:30,420 --> 00:01:36,000
+Jadi misalnya jika Anda ingin mendapatkan nomor 123 di sini Anda akan memanggil kamus Anda dan kemudian memasukkan
+
+20
+00:01:36,000 --> 00:01:38,200
+kunci yang sesuai dengan nilai itu.
+
+21
+00:01:38,250 --> 00:01:45,150
+Dalam hal ini satu dua tiga dan kamus pada dasarnya dapat mengambil item apa saja sebagai nilainya.
+
+22
+00:01:45,240 --> 00:01:51,120
+Jadi kita dapat titik dua kunci K-1 dan kemudian Anda benar-benar dapat memiliki daftar lain di sini.
+
+23
+00:01:51,150 --> 00:01:52,900
+Satu dua tiga.
+
+24
+00:01:53,790 --> 00:02:00,170
+Dan sekarang jika saya memanggil kamus, saya memiliki satu kunci, dan satu dan kemudian daftar 2:59 memiliki item.
+
+25
+00:02:00,330 --> 00:02:04,590
+Jadi saya bisa menelepon K-1 dan mengembalikan daftar itu satu dua tiga.
+
+26
+00:02:04,890 --> 00:02:08,740
+Dan sekarang saya memiliki daftar ini, saya kemudian dapat melakukan pengindeksan secara normal.
+
+27
+00:02:08,880 --> 00:02:11,250
+Itu bukan daftar, bukan kuncinya.
+
+28
+00:02:11,580 --> 00:02:13,600
+Jadi mari kita maju dan ambil dua.
+
+29
+00:02:13,680 --> 00:02:19,230
+Yang akan berada di indeks 1 dan ini pada dasarnya adalah hal yang sama seperti memisahkan menjadi dua langkah.
+
+30
+00:02:19,650 --> 00:02:22,260
+Jadi Anda bisa melakukan sesuatu seperti.
+
+31
+00:02:22,260 --> 00:02:26,030
+Daftar saya sama dengan item itu di Q1.
+
+32
+00:02:26,310 --> 00:02:31,800
+Dan kemudian jika Anda melihat daftar saya yang merupakan daftar sebelumnya dan Anda menggunakan notasi brechen untuk
+
+33
+00:02:31,800 --> 00:02:39,090
+mengambil apa pun yang Anda inginkan untuk daftar itu atau Anda hanya melakukan semuanya dalam satu langkah di sepanjang garis yang sama dan Anda
+
+34
+00:02:39,090 --> 00:02:45,000
+akan memiliki sesuatu yang mirip dengan ini di Anda latihan atau kita akan memiliki semacam kamus bersarang dan daftar bersarang.
+
+35
+00:02:45,070 --> 00:02:49,620
+Saya akan menunjukkan kepada Anda satu contoh lagi di mana
+
+36
+00:02:49,620 --> 00:02:58,180
+Anda dapat memiliki sebenarnya kamus yang bersarang di dalam kamus lain sehingga saya dapat mengatakan K-1 usus pasan di kamus lain dengan
+
+37
+00:02:58,260 --> 00:03:04,140
+set kurung keriting di sana pasand sesuatu seperti inner key colon dan kemudian daftar nilai-nilai.
+
+38
+00:03:04,140 --> 00:03:06,100
+Satu dua tiga.
+
+39
+00:03:06,120 --> 00:03:09,010
+Jadi katakanlah saya ingin mengambil nomor dua ini.
+
+40
+00:03:09,390 --> 00:03:15,450
+Nah hal pertama yang harus Anda lakukan adalah memanggil K-1 dan itu mengembalikan kamus ini.
+
+41
+00:03:15,450 --> 00:03:20,490
+Maka saya perlu memanggil kunci dalam dari itu sehingga saya bisa melakukan itu dari kurung lain atau saya
+
+42
+00:03:20,490 --> 00:03:23,310
+bisa membaginya menjadi beberapa langkah dengan menggunakan penugasan variabel.
+
+43
+00:03:23,310 --> 00:03:24,950
+Tapi kami akan melakukan semuanya dalam satu baris.
+
+44
+00:03:25,440 --> 00:03:32,640
+Dan sekarang saya punya satu dua tiga dan dua adalah bahwa indeks kedua itu 0 1 dan yang meraih nomor dua di
+
+45
+00:03:32,640 --> 00:03:33,230
+sana.
+
+46
+00:03:33,570 --> 00:03:36,770
+Jadi sekali lagi kamus tidak mempertahankan urutan apa pun.
+
+47
+00:03:36,770 --> 00:03:40,410
+Mereka hanyalah pemetaan pasangan nilai kunci.
+
+48
+00:03:40,410 --> 00:03:44,550
+Sekarang mari kita bicara tentang miliaran booleans dan Python cukup sederhana.
+
+49
+00:03:44,550 --> 00:03:50,610
+Itu hanya benar dan kemudian salah dengan huruf kapital T dan huruf besar f.
+
+50
+00:03:50,640 --> 00:03:54,930
+OK kami akan melanjutkan dan menyentuh ini ketika kita berbicara tentang operator perbandingan.
+
+51
+00:03:54,960 --> 00:03:58,010
+Tapi mari kita bicara tentang tuple dan kemudian set.
+
+52
+00:03:58,110 --> 00:04:05,460
+Ingatlah bahwa daftar hanya didefinisikan sebagai urutan karakter di dalam tanda kurung yang dipisahkan
+
+53
+00:04:05,460 --> 00:04:06,630
+dengan koma.
+
+54
+00:04:06,930 --> 00:04:14,850
+Dan Anda dapat melanjutkan dan mengambil item dari daftar itu menggunakan pengindeksan tuple sangat mirip kecuali alih-alih tanda
+
+55
+00:04:14,850 --> 00:04:22,140
+kurung yang Anda gunakan tanda kurung dan Anda dapat kembali mengambil item dari tuple itu seolah-olah itu
+
+56
+00:04:22,140 --> 00:04:24,980
+daftar yang menggunakan notasi braket indeks.
+
+57
+00:04:25,020 --> 00:04:30,840
+Inilah perbedaan utama antara tupel tanda kurung ini versus daftar tanda kurung.
+
+58
+00:04:31,410 --> 00:04:40,800
+Jika saya kembali ke daftar saya dan mencoba untuk menetapkan kembali item pertama menjadi kata bibir baru. Baiklah biarkan saya menjalankan ini
+
+59
+00:04:40,800 --> 00:04:44,060
+lagi karena sebenarnya ditugaskan kembali seluruh daftar.
+
+60
+00:04:44,220 --> 00:04:46,410
+Mari kita periksa daftarnya lagi.
+
+61
+00:04:46,410 --> 00:04:46,620
+Baiklah.
+
+62
+00:04:46,620 --> 00:04:48,850
+Jadi jika saya mencetak daftar saya, saya punya satu dua tiga.
+
+63
+00:04:48,990 --> 00:04:50,690
+Rebut item pertama dalam daftar itu.
+
+64
+00:04:50,700 --> 00:04:52,060
+Nol.
+
+65
+00:04:52,110 --> 00:04:52,890
+Sempurna.
+
+66
+00:04:52,890 --> 00:04:57,750
+Sekarang izinkan saya menugaskan kembali nol menjadi baru seperti yang kami lakukan di kuliah sebelumnya.
+
+67
+00:04:57,750 --> 00:05:06,210
+Dan sekarang untuk memeriksa daftar saya, saya menetapkan kembali elemen 0 menjadi baru dan kemudian ke 3 jika saya ingin melakukan itu untuk
+
+68
+00:05:06,210 --> 00:05:06,730
+tuple.
+
+69
+00:05:06,730 --> 00:05:12,540
+Namun jika kita melihat tupel saya itu salah satu dari dua, katakanlah ambil 0 bukannya sama dengan yang baru
+
+70
+00:05:12,540 --> 00:05:13,870
+saya akan mendapatkan kesalahan.
+
+71
+00:05:14,220 --> 00:05:18,780
+Dan ini karena tupel tidak berubah dan mereka tidak mendukung penugasan item.
+
+72
+00:05:18,780 --> 00:05:23,250
+Maksud saya Anda tidak dapat mengubah item di dalam tuple.
+
+73
+00:05:24,440 --> 00:05:29,610
+Yang berarti Anda akan ingin menggunakan tuple ketika Anda ingin memastikan pengguna tidak dapat mengubah
+
+74
+00:05:29,670 --> 00:05:31,690
+item di dalam urutan objek.
+
+75
+00:05:31,740 --> 00:05:37,980
+Dan itulah perbedaan utama antara sebuah tupel dan daftar. Sebuah tuple tidak berubah dan sebuah daftar bisa berubah yang artinya Anda
+
+76
+00:05:38,220 --> 00:05:40,360
+dapat mengubah item di dalam daftar.
+
+77
+00:05:40,500 --> 00:05:43,110
+Anda tidak dapat melakukan hal yang sama jika tuple.
+
+78
+00:05:43,110 --> 00:05:43,740
+Baiklah.
+
+79
+00:05:43,860 --> 00:05:51,360
+Sekarang untuk membahas set dengan Python set adalah kumpulan elemen unik.
+
+80
+00:05:51,360 --> 00:05:55,580
+Dan itu terlihat sama dengan kurung keriting sebagai kamus, kecuali kurung itu
+
+81
+00:05:56,850 --> 00:05:58,590
+tidak memiliki unsur titik.
+
+82
+00:05:58,590 --> 00:06:03,310
+Sekarang perhatikan apa yang terjadi jika saya mengetik beberapa angka ini lebih dari satu kali.
+
+83
+00:06:04,650 --> 00:06:10,130
+Saya masih mendapatkan output yang sama karena satu set didefinisikan oleh hanya elemen unik.
+
+84
+00:06:10,290 --> 00:06:16,650
+Berarti jika saya mencoba untuk memasukkan beberapa elemen yang sama itu akan
+
+85
+00:06:17,090 --> 00:06:26,980
+mengurangi ke elemen yang unik dan Anda benar-benar dapat memanggil fungsi set dan membuka daftar untuk mengambil elemen unik untuk Anda.
+
+86
+00:06:27,040 --> 00:06:33,780
+Jadi saya melewatkan sekelompok elemen berulang ke dalam fungsi himpunan itu mengembalikan satu set elemen unik.
+
+87
+00:06:34,410 --> 00:06:40,060
+Jika Anda ingin menambahkan item ke set Anda dapat melanjutkan dan katakan saja misalnya ya.
+
+88
+00:06:40,080 --> 00:06:47,790
+Satu dua tiga Anda akan mengatakan s Anda akan menggunakan metode Tambahkan di dalamnya dimasukkan ke dalam item yang ingin Anda tambahkan
+
+89
+00:06:47,790 --> 00:06:48,770
+misalnya 5.
+
+90
+00:06:48,900 --> 00:06:52,970
+Dan jika kita periksa set itu lagi kita mendapatkan 1 2 3 5.
+
+91
+00:06:53,160 --> 00:07:00,600
+Jika saya mencoba menambahkan 5 lagi itu tidak akan mengambil kesalahan tetapi itu hanya akan tetap sama karena itu hanya satu
+
+92
+00:07:00,600 --> 00:07:04,160
+contoh unik dari 5 yang diizinkan di dalam set.
+
+93
+00:07:04,170 --> 00:07:04,470
+Baiklah.
+
+94
+00:07:04,500 --> 00:07:07,440
+Kami benar-benar ingin bekerja dengan set benar-benar dalam kursus ini.
+
+95
+00:07:07,440 --> 00:07:09,010
+Tapi saya ingin Anda tahu tentang mereka.
+
+96
+00:07:09,210 --> 00:07:11,940
+Mereka hanya kumpulan elemen unik.
+
+97
+00:07:12,170 --> 00:07:12,780
+BAIK.
+
+98
+00:07:13,080 --> 00:07:18,620
+Sekarang mari kita bicara tentang operator perbandingan operator perbandingan memungkinkan Anda untuk membandingkan dua elemen satu
+
+99
+00:07:18,620 --> 00:07:19,440
+sama lain.
+
+100
+00:07:19,440 --> 00:07:23,320
+Ini adalah hal-hal seperti lebih besar dari kurang sama dengan dll.
+
+101
+00:07:24,210 --> 00:07:26,820
+Misalnya masuk dan buat sel baru.
+
+102
+00:07:26,820 --> 00:07:33,060
+Saya bisa katakan satu lebih besar dari dua dan itu akan mengembalikan nilai boolean baik benar atau salah tergantung pada
+
+103
+00:07:33,060 --> 00:07:34,240
+apa pernyataan Anda.
+
+104
+00:07:34,250 --> 00:07:36,990
+Jadi satu yang lebih besar dari dua adalah salah.
+
+105
+00:07:37,040 --> 00:07:39,700
+1 kurang dari 2 benar.
+
+106
+00:07:40,200 --> 00:07:47,980
+Dan Anda dapat melakukan hal yang sama untuk lebih dari atau sama dengan atau kurang dari atau sama dengan.
+
+107
+00:07:48,000 --> 00:07:53,100
+Anda juga dapat memeriksa kesetaraan menggunakan dua tanda sama dan perhatikan bagaimana jenis penyorotan sintaks
+
+108
+00:07:53,100 --> 00:07:54,480
+membantu Anda di sini.
+
+109
+00:07:54,540 --> 00:07:55,770
+Begitu juga satu sama dengan satu.
+
+110
+00:07:55,800 --> 00:07:56,880
+Itu benar.
+
+111
+00:07:57,210 --> 00:07:59,410
+Apakah satu sama dengan dua yang salah.
+
+112
+00:07:59,430 --> 00:08:00,670
+Tidak benar.
+
+113
+00:08:00,690 --> 00:08:03,650
+Sekarang ingat Anda ingin menggunakan dua tanda sama.
+
+114
+00:08:03,660 --> 00:08:07,970
+Jika Anda mencoba melakukan sesuatu seperti ini sama dengan yang Anda akan mendapatkan kesalahan
+
+115
+00:08:07,980 --> 00:08:12,190
+karena Python berpikir Anda mencoba melakukan tugas variabel bukan operasi perbandingan yang sebenarnya.
+
+116
+00:08:12,330 --> 00:08:14,550
+Jika Anda ingin memeriksa kualitas yang Anda lakukan.
+
+117
+00:08:14,550 --> 00:08:16,880
+Tanda seru sama dengan tanda.
+
+118
+00:08:16,920 --> 00:08:19,060
+Jadi satu tidak sama dengan tiga.
+
+119
+00:08:19,290 --> 00:08:20,500
+Sebenarnya itu benar.
+
+120
+00:08:20,550 --> 00:08:25,830
+Memang benar bahwa satu tidak sama dengan tiga dan Anda dapat melakukan hal yang sama tidak hanya dari angka tetapi
+
+121
+00:08:27,180 --> 00:08:28,130
+dengan string juga.
+
+122
+00:08:28,170 --> 00:08:30,410
+Jadi tinggi sama dengan membeli.
+
+123
+00:08:30,450 --> 00:08:31,070
+Itu salah.
+
+124
+00:08:31,080 --> 00:08:33,780
+Itu tidak sama, tidak sama dengan itu.
+
+125
+00:08:33,810 --> 00:08:35,450
+Yah, itu benar.
+
+126
+00:08:35,460 --> 00:08:40,380
+Sekarang mari kita bicara tentang menggabungkan operator perbandingan ini dengan beberapa operator
+
+127
+00:08:40,400 --> 00:08:42,900
+logika seperti dan kemudian dan kemudian.
+
+128
+00:08:43,010 --> 00:08:46,790
+Saat ini kami hanya melihat satu syarat adalah satu kurang dari dua.
+
+129
+00:08:47,040 --> 00:08:48,300
+Yah, itu benar.
+
+130
+00:08:48,350 --> 00:08:53,900
+Bagaimana jika kita ingin menggabungkannya dengan kondisi lain seperti dua kurang dari tiga kita dapat menggunakan
+
+131
+00:08:53,970 --> 00:08:55,780
+kata kunci dan untuk melakukannya.
+
+132
+00:08:55,800 --> 00:09:00,790
+Jadi saya katakan satu kurang dari dua dan kurang dari tiga.
+
+133
+00:09:01,080 --> 00:09:02,890
+Dan ini akan kembali benar.
+
+134
+00:09:02,940 --> 00:09:06,780
+Namun jika salah satu dari ini dialihkan menjadi salah adalah satu kurang dari dua.
+
+135
+00:09:06,810 --> 00:09:09,520
+Ya itu benar dan itu terlalu besar dari tiga.
+
+136
+00:09:09,560 --> 00:09:10,620
+Mari salah.
+
+137
+00:09:10,620 --> 00:09:14,970
+Jadi, Anda memiliki benar dan salah atau kembali salah.
+
+138
+00:09:14,970 --> 00:09:18,140
+Jadi jika dan operator semua kondisi pasti benar.
+
+139
+00:09:18,410 --> 00:09:22,440
+Dan saya pribadi suka membungkus pernyataan ini dalam tanda kurung.
+
+140
+00:09:22,620 --> 00:09:24,020
+Jadi mereka sedikit lebih mudah dibaca.
+
+141
+00:09:24,030 --> 00:09:28,290
+Anda tidak harus melakukannya tetapi saya sarankan Anda melakukannya karena itu sedikit lebih
+
+142
+00:09:28,290 --> 00:09:31,320
+mudah dibaca ketika Anda kembali ke kode ini nanti.
+
+143
+00:09:31,320 --> 00:09:37,250
+Anda juga memiliki operator ATAU yang benar-benar mirip kecuali sekarang dalam hal ini hanya satu di antaranya yang
+
+144
+00:09:37,250 --> 00:09:37,790
+benar.
+
+145
+00:09:37,860 --> 00:09:42,810
+Jadi kita dapat mengatakan satu kurang dari dua atau terlalu besar dari tiga.
+
+146
+00:09:42,990 --> 00:09:45,330
+Ya, salah satunya benar.
+
+147
+00:09:45,330 --> 00:09:46,410
+Yang pertama adalah.
+
+148
+00:09:46,470 --> 00:09:47,990
+Jadi kita benar kembali.
+
+149
+00:09:48,170 --> 00:09:54,300
+Dan Anda benar-benar dapat menumpuk ini di atas satu sama lain sehingga Anda dapat mengatakan di lain atau di sini untuk
+
+150
+00:09:54,300 --> 00:09:56,220
+kami satu sama dengan satu dll.
+
+151
+00:09:56,410 --> 00:10:00,210
+Dan jika Anda ingin benar-benar memahami ini, Anda
+
+152
+00:10:01,020 --> 00:10:14,130
+dapat benar-benar hanya Passons nilai boolean lurus begitu benar dan benar yang mengembalikan Benar benar dan salah mengembalikan Benar Benar atau salah adalah benar dan kemudian pada dasarnya itu.
+
+153
+00:10:14,140 --> 00:10:15,030
+Jadi hanya atau.
+
+154
+00:10:15,110 --> 00:10:24,990
+Dan sekarang mari kita lanjutkan dan membahas beberapa blok kode dengan membicarakan pernyataan if if else.
+
+155
+00:10:25,370 --> 00:10:32,060
+Banyak kali Anda ingin mengeksekusi kode jika suatu kondisi benar dan Anda dapat menggunakan jika Anda meninggalkan
+
+156
+00:10:32,090 --> 00:10:34,450
+pernyataan L untuk melakukan itu.
+
+157
+00:10:34,460 --> 00:10:40,830
+Katakanlah kita memiliki suatu kondisi jika seseorang kurang dari dua.
+
+158
+00:10:41,180 --> 00:10:45,510
+Kami ingin melakukan semacam tindakan seperti pernyataan cetak.
+
+159
+00:10:45,710 --> 00:10:47,620
+Kami akan pergi ke depan dan mengatakan Ya.
+
+160
+00:10:48,470 --> 00:10:55,370
+Jadi kami katakan jika kondisi ini adalah titik dua yang benar dan perhatikan ada blok spasi di sini dan itu
+
+161
+00:10:55,370 --> 00:10:56,990
+sangat penting dalam Python.
+
+162
+00:10:57,020 --> 00:11:02,030
+Python tidak menggunakan tanda kurung untuk memisahkan blok pernyataan eksekusi kode.
+
+163
+00:11:02,030 --> 00:11:03,800
+Ia menggunakan spasi putih sebagai gantinya.
+
+164
+00:11:03,890 --> 00:11:08,640
+Dan jika Anda mengetik saja masuk di sini setelah titik dua itu secara otomatis akan membuat lekukan untuk Anda di Jupiter.
+
+165
+00:11:08,930 --> 00:11:12,920
+Dan sebagian besar ide yang mendukung Python juga akan melakukan hal yang sama.
+
+166
+00:11:12,920 --> 00:11:13,590
+OK jadi sudah.
+
+167
+00:11:13,610 --> 00:11:24,290
+Jika seseorang kurang dari melakukan beberapa tindakan dan pada dasarnya itu hanya mengatakan ini jika cetak benar melakukan
+
+168
+00:11:24,590 --> 00:11:26,260
+kode dll.
+
+169
+00:11:26,390 --> 00:11:34,340
+Atau Anda bisa melakukan hal-hal seperti Anda dapat mengatakan dua tambah dua sama dengan dua ditambah dua dll.
+
+170
+00:11:34,360 --> 00:11:37,020
+Dan kemudian ketika Anda melihat X Anda akan melihat itu empat.
+
+171
+00:11:37,100 --> 00:11:38,290
+Jadi itu hanya pernyataan if.
+
+172
+00:11:38,300 --> 00:11:44,680
+Jadi, jika beberapa kondisi benar, jalankan blok kode yang menjorok di bawahnya.
+
+173
+00:11:44,680 --> 00:11:45,470
+Baiklah.
+
+174
+00:11:45,620 --> 00:11:49,240
+Sekarang bicarakan beberapa operasi lain yang bisa kita lakukan.
+
+175
+00:11:49,520 --> 00:11:54,860
+Katakanlah kita ingin memeriksa beberapa kondisi atau katakanlah kita ingin sesuatu terjadi jika itu tidak
+
+176
+00:11:54,860 --> 00:11:55,600
+benar.
+
+177
+00:11:55,670 --> 00:12:12,400
+Jadi saya akan mengatakan jika seseorang sama dengan cetakan Supe, maka cetakan Colan yang lain terakhir.
+
+178
+00:12:12,440 --> 00:12:19,460
+Dan apa yang akan dilakukan ini akan mengatakan jika kondisi ini benar menjalankan kode ini sebaliknya.
+
+179
+00:12:19,550 --> 00:12:26,180
+Atau jika tidak ada hal di atas yang benar dan catat bagaimana hal lainnya sejalan dengan pernyataan if yang
+
+180
+00:12:26,240 --> 00:12:28,230
+kita tahu mereka saling terkait.
+
+181
+00:12:28,330 --> 00:12:35,300
+Colin Crantz bertahan, jadi jika saya menjalankan kode ini, akhirnya akan dieksekusi jika saya
+
+182
+00:12:35,300 --> 00:12:39,970
+teruskan dan alihkan ini sehingga kondisi pertama benar.
+
+183
+00:12:39,980 --> 00:12:45,350
+Sekarang mungkin Anda ingin memeriksa beberapa kondisi bukan hanya satu syarat dan kemudian beberapa pernyataan lain.
+
+184
+00:12:45,770 --> 00:12:50,710
+Di situlah Anda dapat menggunakan kiri untuk memeriksa beberapa kondisi.
+
+185
+00:12:51,530 --> 00:12:52,350
+Jadi, Anda bisa melanjutkan.
+
+186
+00:12:52,370 --> 00:12:53,320
+Silakan katakan sesuatu seperti.
+
+187
+00:12:53,350 --> 00:12:56,850
+Elif 3 sama dengan 3.
+
+188
+00:12:56,870 --> 00:12:59,860
+Sekarang mari masuk dan ubah yang pertama menjadi false lagi.
+
+189
+00:13:00,200 --> 00:13:04,660
+Kami akan mencetak sesuatu yang lain akan mencetak tengah.
+
+190
+00:13:04,670 --> 00:13:05,030
+Baiklah.
+
+191
+00:13:05,030 --> 00:13:07,920
+Jadi mari kita lanjutkan dan jalankan ini dan uraikan apa yang terjadi.
+
+192
+00:13:07,930 --> 00:13:14,630
+Python hanya melakukan ini dengan mengatakan jika kondisi ini benar jalankan blok kode ini sebaliknya.
+
+193
+00:13:14,750 --> 00:13:18,030
+Atau kalau kondisi ini benar.
+
+194
+00:13:18,230 --> 00:13:20,820
+Jalankan kode blok ini yang lain.
+
+195
+00:13:20,840 --> 00:13:26,630
+Jika tidak ada kondisi di atas saya yang benar jalankan kode blok ini dan Anda dapat terus menumpuk pernyataan sebanyak yang
+
+196
+00:13:26,960 --> 00:13:29,910
+Anda inginkan sehingga Anda dapat mengatakan satu lagi di sini.
+
+197
+00:13:30,260 --> 00:13:38,210
+Elif akan keluar dan mengatakan jika empat sama dengan empat detik Crantz.
+
+198
+00:13:38,240 --> 00:13:38,530
+Baiklah.
+
+199
+00:13:38,530 --> 00:13:39,990
+Dan perhatikan apa yang terjadi di sini.
+
+200
+00:13:40,220 --> 00:13:43,500
+Meskipun ini benar, tiga sama dengan tiga.
+
+201
+00:13:43,580 --> 00:13:47,580
+Kita hanya akan menjalankan instance pertama dari kondisi yang benar.
+
+202
+00:13:47,660 --> 00:13:52,190
+Dan itu sesuatu yang penting untuk diingat ketika Anda menggunakan jika pernyataan
+
+203
+00:13:52,190 --> 00:13:56,380
+lain itu akan mengeksekusi kondisi benar pertama dan hanya itu.
+
+204
+00:13:56,420 --> 00:13:56,960
+Baiklah.
+
+205
+00:13:57,320 --> 00:14:03,140
+Itu saja untuk seri kuliah bagian 2 ini yang akan datang berikutnya kita akan mulai membahas untuk loop sementara loop
+
+206
+00:14:03,230 --> 00:14:05,310
+dan kemudian beberapa fungsi lainnya di Python.
+
+207
+00:14:05,690 --> 00:14:06,100
+BAIK.
+
+208
+00:14:06,140 --> 00:14:12,050
+Sebagai ulasan singkat tentang apa yang kami lakukan, kami membahas kembali ke kamus teratas yang lagi-lagi hanya
+
+209
+00:14:12,050 --> 00:14:15,880
+pasangan nilai kunci dan Anda dapat mengambil nilai dengan memasukkan kunci.
+
+210
+00:14:15,970 --> 00:14:20,340
+Saya ingat Anda dapat memiliki kamus bersarang atau daftar bersarang di dalam kamus.
+
+211
+00:14:20,780 --> 00:14:23,290
+Sekarang kita memiliki nilai boolean benar dan salah.
+
+212
+00:14:23,420 --> 00:14:27,170
+Kami memiliki daftar tupel yang tidak dapat diubah.
+
+213
+00:14:27,440 --> 00:14:32,190
+Sangat mirip dengan daftar kecuali bahwa Anda tidak dapat melanjutkan dan mengubah hal-hal setelah itu dalam
+
+214
+00:14:32,190 --> 00:14:34,670
+tuple karena tuple tidak mendukung penugasan kembali item.
+
+215
+00:14:34,670 --> 00:14:39,500
+Kami memiliki set yang saya ingat set hanya kumpulan elemen unik.
+
+216
+00:14:39,500 --> 00:14:45,040
+Jadi jika Anda memiliki banyak elemen berulang dan Anda memiliki satu set itu hanya yang unik.
+
+217
+00:14:45,410 --> 00:14:50,780
+Sekarang kami memiliki operator pembanding yang lebih besar dari kurang dari lebih dari atau sama dengan kurang sama
+
+218
+00:14:50,780 --> 00:14:53,080
+dengan pemeriksaan kesetaraan dan kemudian memeriksa ketidaksetaraan.
+
+219
+00:14:53,120 --> 00:14:54,940
+Dan Anda dapat melakukan hal yang sama untuk string.
+
+220
+00:14:55,010 --> 00:15:00,830
+Anda memiliki operator logis ini dan kemudian atau Anda dapat membandingkan beberapa pernyataan kondisional.
+
+221
+00:15:01,070 --> 00:15:06,620
+Dan kemudian Anda memiliki logika if elefant else yang memungkinkan Anda untuk jenis stack dan melakukan
+
+222
+00:15:06,620 --> 00:15:10,230
+blok kode berdasarkan dari semacam kondisi yang sedang bergejolak.
+
+223
+00:15:10,340 --> 00:15:11,420
+Baiklah.
+
+224
+00:15:11,450 --> 00:15:12,730
+Semoga Anda menikmati kuliah ini.
+
+225
+00:15:12,740 --> 00:15:14,060
+Kami akan menemui Anda di yang berikutnya.

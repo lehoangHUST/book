@@ -1,0 +1,851 @@
+1
+00:00:05,370 --> 00:00:10,500
+Cześć wszystkim i zapraszam na wykład Jupitera na notebooka, a ten wykład pokaże,
+
+2
+00:00:10,500 --> 00:00:15,540
+jak efektywnie korzystać z systemu notebooków Jupiter i oprowadzać po całym środowisku.
+
+3
+00:00:15,540 --> 00:00:20,580
+Sprawdź również zasoby tego wykładu, aby pobrać plik zip
+
+4
+00:00:20,580 --> 00:00:23,000
+zawierający wszystkie pliki notesu.
+
+5
+00:00:23,040 --> 00:00:27,150
+Tak jak wspomniałem, sprawdź zasoby do wykładu i pobierz plik zip.
+
+6
+00:00:27,150 --> 00:00:33,700
+Zawiera wszystkie pliki kropek IP Y i B lub pliki zeszytu oraz te zeszyty dla reszty miksu
+
+7
+00:00:33,990 --> 00:00:34,430
+Course.
+
+8
+00:00:34,470 --> 00:00:37,910
+Zapamiętaj, gdzie zapisałeś i rozpakowałeś ten plik.
+
+9
+00:00:38,640 --> 00:00:42,990
+Przyjrzyjmy się notebookom, a także poznajmy sposoby ich efektywnego wykorzystania.
+
+10
+00:00:42,990 --> 00:00:47,510
+Zamierzam iść dalej i przypomnieć ci, jak możesz otworzyć notatnik Jowisza.
+
+11
+00:00:47,520 --> 00:00:50,770
+Mam zamiar iść dalej i przeskoczyć do wiersza poleceń teraz.
+
+12
+00:00:50,790 --> 00:00:51,090
+W porządku.
+
+13
+00:00:51,090 --> 00:00:55,320
+Tutaj jestem w wierszu polecenia jako przypomnienie, jeśli używasz Mac OS.
+
+14
+00:00:55,320 --> 00:00:57,710
+Śmiało i po prostu użyj do tego swojego terminalu.
+
+15
+00:00:57,930 --> 00:01:03,870
+Jeśli używasz systemu Windows, po prostu przejdź tutaj i wpisz ACMD i wybierz wiersz polecenia.
+
+16
+00:01:04,160 --> 00:01:07,310
+W ikonie znajduje się również okno wiersza poleceń, z którego możesz również skorzystać.
+
+17
+00:01:07,320 --> 00:01:11,250
+To jest wiersz polecenia, który jest dołączony do dystrybucji Anaconda.
+
+18
+00:01:11,250 --> 00:01:11,830
+W porządku.
+
+19
+00:01:12,000 --> 00:01:19,200
+Więc idź do przodu i przejdź do wiersza poleceń, a następnie wpisz j u p t r notebooka i naciśnij enter.
+
+20
+00:01:20,010 --> 00:01:25,040
+Należy pamiętać, że uruchamia notatnik Jupiter, gdziekolwiek jesteś w wierszu polecenia.
+
+21
+00:01:25,050 --> 00:01:27,840
+Na przykład zamierzam to szybko usunąć.
+
+22
+00:01:27,870 --> 00:01:35,430
+Jestem pod C, a potem moje drugie imię tutaj Marysia i właśnie tam zaczyna się mój
+
+23
+00:01:35,430 --> 00:01:36,110
+notatnik.
+
+24
+00:01:36,210 --> 00:01:42,030
+Jeśli chcę uruchomić swoje notatniki w innym katalogu, muszę zmienić katalog, tak jak mogę
+
+25
+00:01:42,030 --> 00:01:46,770
+zmienić katalog, używając CD, a następnie wpisując następny plik, który chcę.
+
+26
+00:01:46,800 --> 00:01:51,880
+Powiedzmy, że chciałem przejść do folderu z plikami do pobrania, ponieważ tam właśnie pobrałem plik zip.
+
+27
+00:01:52,110 --> 00:01:58,110
+Mógłbym rozpocząć pisanie w D O N, a następnie możesz automatycznie dodać tabulator do tego, a następnie powinno ci to
+
+28
+00:01:58,110 --> 00:01:58,640
+zabrać.
+
+29
+00:01:58,650 --> 00:02:04,260
+Jeśli wyjdziesz i klikniesz "enter now download", a następnie będę mógł wpisać notatnik DUPERE, wpisz i uruchom to,
+
+30
+00:02:04,340 --> 00:02:09,840
+a teraz mój plik notatnika Jubran pojawi się, kiedy pokażę go w mojej przeglądarce w folderze pobierania.
+
+31
+00:02:10,740 --> 00:02:15,000
+Jeśli chcesz iść dalej i wrócić do jednego folderu, możesz wpisać CD.
+
+32
+00:02:15,010 --> 00:02:22,090
+To zmienia kropkę w przestrzeni kosmicznej kropka kropka, która zabierze cię z powrotem do jednego katalogu.
+
+33
+00:02:22,170 --> 00:02:25,110
+Możesz iść dalej i po prostu wyszukać podstawowe linie wiersza polecenia.
+
+34
+00:02:25,110 --> 00:02:25,860
+Jest trochę inaczej.
+
+35
+00:02:25,860 --> 00:02:32,250
+Płac za używanie Mac OS lub Windows na przykład, jeśli chcesz zobaczyć wszystkie foldery katalogów i
+
+36
+00:02:32,250 --> 00:02:37,400
+twój bieżący katalog w Windows, który jest d I, to katalog C.
+
+37
+00:02:37,410 --> 00:02:40,780
+A to w zasadzie pokazuje wszystkie pliki tutaj w twoim bieżącym katalogu.
+
+38
+00:02:40,860 --> 00:02:46,170
+Jeśli używasz komputera Mac, możesz wpisać L S, aby wyświetlić wszystkie.
+
+39
+00:02:46,170 --> 00:02:49,320
+W porządku, aby oczyścić wszystko, co tu masz.
+
+40
+00:02:49,320 --> 00:02:53,290
+Jeśli jesteś w systemie Windows, możesz po prostu wpisać C L S.
+
+41
+00:02:53,440 --> 00:03:00,120
+Jeśli używasz komputera Mac i wpisujesz słowo "jasne", pozwól, że przejdę do początku i przejdę
+
+42
+00:03:00,120 --> 00:03:06,150
+do notatek Jupitera, a kiedy uderzyć, otworzy się układ w notatniku w przeglądarce.
+
+43
+00:03:06,150 --> 00:03:07,020
+Oto jest.
+
+44
+00:03:07,200 --> 00:03:11,940
+Zamierzam iść dalej i dowiedzieć się, gdzie faktycznie zapisałem plik rozpakowywania.
+
+45
+00:03:11,940 --> 00:03:17,510
+Tutaj jest obóz do nauki uczenia maszynowego Pythona i nauka i program Pentagonu, którego użyłeś.
+
+46
+00:03:17,520 --> 00:03:22,920
+Możesz, ale nie musi mieć tego dasht mistrza na końcu, ale jeśli pójdziesz do przodu i klikniesz ten
+
+47
+00:03:22,920 --> 00:03:24,460
+folder, zobaczysz tu sporo folderów.
+
+48
+00:03:24,480 --> 00:03:27,660
+Python do analizy danych do wizualizacji danych.
+
+49
+00:03:27,660 --> 00:03:33,550
+Pythonowe dane z sekcji uczenia maszynowego zawierały duże projekty danych, a Sparc i więcej.
+
+50
+00:03:33,570 --> 00:03:36,070
+Pierwsza sekcja znajduje się w tym folderze.
+
+51
+00:03:36,090 --> 00:03:41,960
+Python crash course, jeśli klikniesz na tę sekcję, w której znajduje się ten notatnik.
+
+52
+00:03:42,180 --> 00:03:44,700
+Tutaj widzisz kropkę IPY i pliki.
+
+53
+00:03:44,700 --> 00:03:50,670
+Na każdym wykładzie, w którym widzisz, że coś koduję, znajduje się folder, który ma
+
+54
+00:03:50,730 --> 00:03:56,550
+ogólną nazwę sekcji, a następnie będzie podfolderem właściwej nazwy sekcji, a następnie plików
+
+55
+00:03:56,550 --> 00:03:58,630
+notesu odpowiadających imionom wykładowców.
+
+56
+00:03:58,620 --> 00:04:01,030
+Pierwszym z nich jest kurs zderzenia Pythona.
+
+57
+00:04:01,140 --> 00:04:02,590
+Możesz iść dalej i kliknij to.
+
+58
+00:04:02,670 --> 00:04:03,990
+Załadowanie zajmie trochę czasu.
+
+59
+00:04:03,990 --> 00:04:09,270
+Tutaj jest, a następnie wszystko, co będę pisać podczas wykładu jest tutaj dla ciebie i
+
+60
+00:04:09,270 --> 00:04:11,460
+prawie na początku każdej sekcji kursu.
+
+61
+00:04:11,460 --> 00:04:16,380
+Przypominam ci, gdzie możesz znaleźć prawdziwe książki z nutami dla tej części Kursu, odpowiadające na kilka
+
+62
+00:04:16,380 --> 00:04:19,100
+wykładów i czasami może być trudno je znaleźć.
+
+63
+00:04:19,230 --> 00:04:23,520
+Będę tam, aby cię poprowadzić, a jeśli będziesz mieć jakieś pytania dotyczące tego, gdzie znaleźć rzeczy, po
+
+64
+00:04:23,520 --> 00:04:27,460
+prostu śmiało pisz na forach pytań i odpowiedzi, a ja z chęcią Ci pomogę.
+
+65
+00:04:27,510 --> 00:04:30,890
+W takim razie zaczniemy Python dla analizy danych.
+
+66
+00:04:30,900 --> 00:04:36,030
+Zaczniesz numer po s. c lub kliknij PI i zobacz, czy jest to notebook.
+
+67
+00:04:36,030 --> 00:04:41,790
+Pozwól, że przejdę dalej i przejdę przez to, jak działa system notatek Jowisza w ogólnym sensie.
+
+68
+00:04:41,910 --> 00:04:49,050
+Zamierzam wrócić do mistrza, a potem kliknę nowe i tutaj, ponieważ mam
+
+69
+00:04:49,050 --> 00:04:50,350
+kilka środowisk.
+
+70
+00:04:50,480 --> 00:04:55,110
+Zamierzam kliknąć ten przycisk, ale możesz kliknąć Python lub Python 3 lub cokolwiek jest dobre i kliknąć na
+
+71
+00:04:55,110 --> 00:04:56,300
+nim, powinno być dobrze.
+
+72
+00:04:56,310 --> 00:04:59,180
+Znowu możesz po prostu kliknąć coś nowego w notatnikach.
+
+73
+00:04:59,220 --> 00:05:00,640
+Powinieneś być w porządku, aby go kliknąć.
+
+74
+00:05:00,870 --> 00:05:04,040
+Dostaniesz coś takiego, żeby zmienić ten notatnik.
+
+75
+00:05:04,070 --> 00:05:08,260
+Nie wystarczy kliknąć tutaj pod sekcją bez nazwy i nazwać ją, jak chcesz.
+
+76
+00:05:08,280 --> 00:05:11,400
+Mój notatnik na przykład kliknij OK, a ja to nazwę.
+
+77
+00:05:11,400 --> 00:05:13,940
+Pozwól, że przejdę dalej i pokażę podstawy.
+
+78
+00:05:13,950 --> 00:05:21,440
+To jest komórka kodu, co oznacza, że mogę wpisać kod Pythona do komórki, a następnie uruchomić go jako bardzo prosty przykład,
+
+79
+00:05:21,440 --> 00:05:28,070
+że mogę powiedzieć "drukuj cześć", a następnie mogę uruchomić komórkę, klikając tutaj w biegu, i pójdę dalej, biegać
+
+80
+00:05:28,070 --> 00:05:30,690
+i pokazywać ja wynik poniżej komórki.
+
+81
+00:05:30,710 --> 00:05:35,150
+Mogę zrobić to samo dla praktycznie każdego kodu Pythona, jeśli chcę wiedzieć, co to jest jeden plus jeden.
+
+82
+00:05:35,450 --> 00:05:41,120
+Po prostu klikam tutaj, a to pokazuje mi dane wyjściowe w komórce, ponieważ wydrukowałem dane wyjściowe tutaj,
+
+83
+00:05:41,210 --> 00:05:44,980
+które nie zostały wyświetlone, ponieważ nie zdecydowałem się wydrukować danych wyjściowych.
+
+84
+00:05:45,050 --> 00:05:46,780
+Pokazał komórkę wyjściową.
+
+85
+00:05:46,910 --> 00:05:50,820
+Fakty, które powiedział, wypisują jeden plus jeden.
+
+86
+00:05:51,170 --> 00:05:53,980
+Wtedy niewiele by to wskazywało.
+
+87
+00:05:54,140 --> 00:05:54,620
+DOBRZE.
+
+88
+00:05:54,800 --> 00:06:00,170
+Nie musisz więc zawsze przychodzić tutaj i klikać w tę komórkę, którą możesz zrobić, aby po
+
+89
+00:06:00,170 --> 00:06:01,580
+prostu przesunąć wejście.
+
+90
+00:06:01,820 --> 00:06:06,290
+I to jest, kiedy wprowadzam to jako wprowadzanie ciągu znaków.
+
+91
+00:06:06,310 --> 00:06:10,320
+A jeśli zrobię zmianę, to przejdzie dalej i uruchomi wszystko, co jest w tej komórce.
+
+92
+00:06:10,370 --> 00:06:11,400
+Miej to na uwadze.
+
+93
+00:06:11,420 --> 00:06:16,370
+To naprawdę dobry sposób na szybkie uruchamianie rzeczy, więc nie musisz ciągle przychodzić tutaj
+
+94
+00:06:16,370 --> 00:06:18,060
+i klikać w biegu.
+
+95
+00:06:18,200 --> 00:06:21,030
+Kolejną małą sztuczką jest alt enter.
+
+96
+00:06:21,200 --> 00:06:24,940
+Jeśli wykonam zmianę i włączę to po prostu przejdzie do następnej komórki.
+
+97
+00:06:24,980 --> 00:06:30,210
+Ale jeśli wprowadzę alt, to faktycznie wstawi również komórkę poniżej.
+
+98
+00:06:30,230 --> 00:06:31,240
+Więc zauważ różnicę tutaj.
+
+99
+00:06:31,250 --> 00:06:35,240
+Jeśli po prostu wprowadzę shift na tej pierwszej komórce, uruchomi to.
+
+100
+00:06:35,240 --> 00:06:40,340
+I tak n zmienia numer, aby pokazać kolejność rzeczy i sposób ich uruchomienia.
+
+101
+00:06:40,460 --> 00:06:44,930
+Następnie, jeśli wprowadzę, to faktycznie wprowadzi dla mnie komórkę.
+
+102
+00:06:44,930 --> 00:06:49,600
+To naprawdę fajna sztuczka, a pokażę ci później, kiedy omawiamy ćwiczenia.
+
+103
+00:06:50,230 --> 00:06:50,980
+DOBRZE.
+
+104
+00:06:51,080 --> 00:06:53,510
+Teraz możesz się zastanawiać, w jaki sposób mogę zapisać ten notatnik.
+
+105
+00:06:53,510 --> 00:07:00,380
+Może albo kontrolować s albo kliknąć tutaj na małej dyskietce, tak naprawdę ma funkcję autozapisu, która
+
+106
+00:07:00,380 --> 00:07:02,540
+co dwie minuty automatycznie zapisuje.
+
+107
+00:07:02,630 --> 00:07:07,980
+Lub możesz po prostu powiedzieć plik i możesz zrobić zapis i punkt kontrolny tutaj.
+
+108
+00:07:08,020 --> 00:07:12,530
+Teraz możesz także zastanawiać się, jak mogę pobrać ten notebook jako coś innego.
+
+109
+00:07:12,530 --> 00:07:15,470
+Cóż, możesz po prostu przejść do pobierania pliku jako.
+
+110
+00:07:15,470 --> 00:07:17,780
+I masz tu naprawdę sporo opcji do pobrania.
+
+111
+00:07:17,960 --> 00:07:23,570
+Jeśli potrzebujesz tylko pliku PI z kropką, możesz po prostu pobrać jako kropkę PI i pobrać i
+
+112
+00:07:23,600 --> 00:07:29,810
+przekonwertować ten plik notatnika do pliku, aby można go było użyć jako zwykłego skryptu w języku Python i dowolnego identyfikatora.
+
+113
+00:07:30,290 --> 00:07:35,720
+Lub jeśli chcesz tylko HVM Elano możesz kliknąć na każdym T. M. i wyeksportuje go do podstawowego
+
+114
+00:07:35,720 --> 00:07:38,070
+prostego pliku, który może wyświetlić dowolna przeglądarka.
+
+115
+00:07:38,100 --> 00:07:39,300
+Masz więc kilka opcji.
+
+116
+00:07:39,320 --> 00:07:41,780
+Możesz wejść i je sprawdzić.
+
+117
+00:07:41,780 --> 00:07:48,130
+Chciałbym, żebyś wiedział, że jeśli kiedykolwiek będziesz miał nieskończoną pętlę działającą.
+
+118
+00:07:48,140 --> 00:07:53,330
+Powiedzmy więc, że to jak ciągłe działanie i chcesz jakoś ponownie uruchomić jądro.
+
+119
+00:07:53,360 --> 00:07:59,070
+To, co się wydarzy, to pod moim zdaniem przybliżenie, zamiast liczby tutaj i końca, zobaczysz
+
+120
+00:07:59,070 --> 00:07:59,860
+niski Asterix.
+
+121
+00:07:59,920 --> 00:08:01,550
+Będzie po prostu działać wiecznie.
+
+122
+00:08:01,670 --> 00:08:07,880
+Możesz po prostu wejść i powiedzieć jądro, a następnie ponownie uruchomić jądro, powiedz, czy chcesz zrestartować
+
+123
+00:08:07,880 --> 00:08:08,330
+jądro.
+
+124
+00:08:08,330 --> 00:08:09,660
+Kontynuuj i uruchom ponownie.
+
+125
+00:08:09,790 --> 00:08:12,700
+Cóż, proszę, zrestartuj jądro, a wtedy powiem, że jądro jest gotowe.
+
+126
+00:08:12,710 --> 00:08:17,600
+Zasadniczo, to, że ten notebook jest podłączony do jądra, a jądro to tylko
+
+127
+00:08:17,600 --> 00:08:18,740
+przykład uruchomienia Pythona.
+
+128
+00:08:19,100 --> 00:08:24,560
+A jeśli coś jest nie tak, gdy Python się zawiesza, być może napisałeś skrypt, który nieskończenie się pętli
+
+129
+00:08:24,560 --> 00:08:26,300
+lub zajmuje naprawdę dużo czasu.
+
+130
+00:08:26,360 --> 00:08:31,970
+Zawsze możesz po prostu zatrzymać wszystko, przechodząc do jądra i kliknięcie przycisku restart może również przerwać, jeśli chcesz
+
+131
+00:08:32,000 --> 00:08:35,230
+przerwać tę konkretną komórkę, ale czasami to nie działa.
+
+132
+00:08:35,240 --> 00:08:39,770
+Jeśli masz naprawdę złą pętlę, która działa zawsze, pamiętaj o tym.
+
+133
+00:08:40,100 --> 00:08:41,000
+DOBRZE.
+
+134
+00:08:41,390 --> 00:08:45,680
+Jeśli potrzebujesz pomocy w dodatku do wszystkiego, co ci powiedziałem, możesz zawsze kliknąć
+
+135
+00:08:46,280 --> 00:08:49,050
+pomoc, a następnie udzielą pomocy w wielu bibliotekach.
+
+136
+00:08:49,070 --> 00:08:53,480
+Będziemy pracować zarówno z notebookiem, jak i z pomocą, dzięki czemu klikniesz, że przekieruje
+
+137
+00:08:53,480 --> 00:08:56,760
+Cię on do łącza, które mówi o samych notebookach.
+
+138
+00:08:56,930 --> 00:09:02,090
+Należy pamiętać, że te notebooki były nazywane notebookami I Python, ale teraz, od kiedy Jowisz może uruchamiać
+
+139
+00:09:02,090 --> 00:09:05,450
+inne języki, takie jak Juliet, i nazywa się je notebookami Jupiter.
+
+140
+00:09:05,450 --> 00:09:12,000
+Kolejną rzeczą, o której chciałbym wspomnieć, jest więcej skrótów klawiszowych niż to, co właśnie wam powiedziałem.
+
+141
+00:09:12,080 --> 00:09:17,540
+Możesz przejść do pomocy w kliknięciu skrótów klawiaturowych, a otrzymasz listę wszystkich
+
+142
+00:09:17,810 --> 00:09:19,700
+dostępnych skrótów klawiaturowych.
+
+143
+00:09:20,420 --> 00:09:20,930
+W porządku.
+
+144
+00:09:20,930 --> 00:09:25,490
+To naprawdę podstawa notebooka i prawie wszystko, co musisz wiedzieć o ile przejdziesz przez
+
+145
+00:09:25,490 --> 00:09:26,250
+ten kurs.
+
+146
+00:09:26,330 --> 00:09:31,460
+Masz pytania bardziej szczegółowe na dany temat, których nie możesz znaleźć tutaj.
+
+147
+00:09:31,640 --> 00:09:33,310
+Śmiało i wyszukaj na forum Kewaunee.
+
+148
+00:09:33,320 --> 00:09:37,820
+Jeśli nie możesz tego znaleźć ani sfałszować Q Zapraszam do zamieszczania nowych pytań na forach pytań i
+
+149
+00:09:37,940 --> 00:09:39,850
+odpowiedzi, a ja z chęcią Ci pomogę.
+
+150
+00:09:40,070 --> 00:09:44,300
+Naprawdę szybko chciałem ci pokazać, jakie ćwiczenia wyglądają podczas tego kursu.
+
+151
+00:09:44,300 --> 00:09:48,140
+Na przykład powiedzmy, że pytasz o analizę danych.
+
+152
+00:09:48,250 --> 00:09:53,030
+Jesteś w sekcji PI kursu, na którym skończyłeś wykłady i jesteś gotowy do rozpoczęcia ćwiczenia.
+
+153
+00:09:53,540 --> 00:09:57,410
+Każde ćwiczenie będzie miało powiązany z nim plik rozwiązań.
+
+154
+00:09:57,410 --> 00:09:59,050
+Nie sprawdzaj najpierw pliku rozwiązań.
+
+155
+00:09:59,060 --> 00:10:01,100
+Powinieneś sprawdzić ten plik ćwiczeń.
+
+156
+00:10:01,220 --> 00:10:05,660
+Następnie możesz kliknąć plik sexercise i ten pojawi się i wyglądać mniej
+
+157
+00:10:05,660 --> 00:10:06,420
+więcej tak.
+
+158
+00:10:06,800 --> 00:10:10,120
+I ten plik ćwiczeń będzie miał dla ciebie pytania.
+
+159
+00:10:10,400 --> 00:10:14,740
+A następnie komórka, w której możesz śmiało odpowiedzieć na te pytania i wiele razy.
+
+160
+00:10:14,750 --> 00:10:17,740
+Pokażę ci również oczekiwany wynik.
+
+161
+00:10:17,780 --> 00:10:21,050
+Na przykład tutaj chcesz utworzyć tablicę zer.
+
+162
+00:10:21,050 --> 00:10:25,460
+Teraz wiem, że prawdopodobnie nie wiesz, jak to zrobić, ale pamiętaj,
+
+163
+00:10:25,520 --> 00:10:32,210
+że jeśli zaczniesz pisać rzeczy w komórce, takie jak drukuj cześć i uruchom to, nadpisasz dane wyjściowe.
+
+164
+00:10:32,210 --> 00:10:38,020
+Pamiętajcie o tym i będzie bardziej istotne, kiedy rzeczywiście dojdziecie do ćwiczeń.
+
+165
+00:10:38,020 --> 00:10:40,580
+Niektórzy z was mogą się zastanawiać, jaka to komórka.
+
+166
+00:10:40,580 --> 00:10:44,490
+W rzeczywistości po prostu pokazuje tekst i nie jest komórką kodu.
+
+167
+00:10:44,690 --> 00:10:46,780
+Cóż, jest to znane jako komórka nacinająca.
+
+168
+00:10:46,790 --> 00:10:53,430
+Jeśli pójdziemy dalej i wrócimy do mojego notatnika, wszystko, co do tej pory ci pokazałem, jest komórką kodującą.
+
+169
+00:10:53,510 --> 00:10:58,910
+Ale to, co naprawdę jest niesamowite w notebookach Jupiter, to to, że możesz pisać notatki w
+
+170
+00:10:58,970 --> 00:11:02,540
+normalnym tekście, tak abyś mógł przyjść tutaj, spojrzeć na kod.
+
+171
+00:11:02,930 --> 00:11:07,790
+Kliknij na markdown i przekształci to w celownik.
+
+172
+00:11:07,910 --> 00:11:14,510
+A teraz, jeśli uruchomię komórkę, to zasadniczo jest to podstawowy tekst do pisania notatek dla siebie, który jest bardzo przydatny,
+
+173
+00:11:14,510 --> 00:11:15,760
+gdy się uczysz.
+
+174
+00:11:15,770 --> 00:11:17,770
+Możesz powiedzieć coś takiego.
+
+175
+00:11:17,900 --> 00:11:21,770
+Użyj print, aby wydrukować ciągi.
+
+176
+00:11:21,770 --> 00:11:29,330
+Uruchom tę małą notatkę dla siebie, a następnie możesz pisać dalej i wypisywać druki "cześć" itp. i jest to bardzo dobry sposób
+
+177
+00:11:29,330 --> 00:11:33,850
+robienia notatek podczas wykładów, a także obsługuje formatowanie
+
+178
+00:11:33,850 --> 00:11:35,040
+przecinków.
+
+179
+00:11:35,060 --> 00:11:40,580
+Więc jeśli znasz formatowanie przecen, na przykład, jak korzystać z tagów hash dla pogrubienia itp.
+
+180
+00:11:40,610 --> 00:11:46,040
+A może k taluk z kilkoma wargami z gwiazdkami.
+
+181
+00:11:46,040 --> 00:11:52,220
+Więcej punktów lub wcięć dla pewnego rodzaju formatowania kodu, które jest również przenoszone w tych
+
+182
+00:11:52,240 --> 00:11:53,310
+komórkach nacięć.
+
+183
+00:11:53,510 --> 00:11:58,490
+Teraz nie przejdziemy do skróconej składni, ponieważ mogę być zupełnie innym kursem, ale pamiętajcie,
+
+184
+00:11:58,490 --> 00:12:03,760
+jeśli widzę coś takiego, jak ten znak i lateks, który mówi, że jest to komórka nacisku.
+
+185
+00:12:04,130 --> 00:12:09,290
+Częstym błędem popełnianym czasami przez początkujących jest to, że przypadkowo przekonwertują to na celownik, a następnie
+
+186
+00:12:09,290 --> 00:12:11,550
+zastanawiają się, dlaczego mój kod nie działa.
+
+187
+00:12:11,630 --> 00:12:17,390
+Jeśli twój kod nie jest nigdy podświetlony, prawdopodobnie oznacza to, że masz komórkę ze zwężką.
+
+188
+00:12:17,390 --> 00:12:22,640
+Jeśli chcesz zmienić tę komórkę do obniżania wartości z powrotem do komórki kodu, po prostu wejdź tutaj i wybierz kod,
+
+189
+00:12:22,640 --> 00:12:26,120
+a następnie uruchom to przy wprowadzeniu zmiany i jesteś gotowy do pracy.
+
+190
+00:12:26,510 --> 00:12:34,250
+OK, więc pamiętaj, że shift shift uruchamia komórkę, a następnie Alt Enter uruchomi komórkę i wypisze komórkę pod nią.
+
+191
+00:12:34,940 --> 00:12:44,180
+Więc jeśli chcesz iść naprzód, kliknij Alternate tutaj, tak jak zrób Alt Alt Center i wstawiając nową
+
+192
+00:12:44,180 --> 00:12:44,980
+komórkę.
+
+193
+00:12:45,110 --> 00:12:49,700
+Teraz mówię tylko o tym, co faktycznie robię na mojej klawiaturze, nie chcę wpisywać ciągu znaków.
+
+194
+00:12:49,700 --> 00:12:54,900
+Więc znowu jeden plus jedna zmiana wprowadza go uruchamia jeden plus jeden alternator.
+
+195
+00:12:54,900 --> 00:12:59,840
+Wciąż umieszcza pod nim nowe komórki, co jest bardzo przydatne przy ćwiczeniach.
+
+196
+00:12:59,840 --> 00:13:01,710
+Więc jeśli tu wrócisz, to jest ćwiczenie.
+
+197
+00:13:01,940 --> 00:13:04,850
+Zauważ, że mam tę tablicę wyjściową 1 1 1 na 1.
+
+198
+00:13:04,890 --> 00:13:06,060
+Nie chcę tego zastępować.
+
+199
+00:13:06,110 --> 00:13:12,020
+Mogę po prostu kliknąć na ten tekst lub zaznaczyć, że komórka nie wchodzi i daje mi tu małą komórkę
+
+200
+00:13:12,380 --> 00:13:14,960
+na bufor, dzięki czemu mogę wydrukować, co chcę.
+
+201
+00:13:15,140 --> 00:13:17,750
+Shift wchodzi w test wyjść.
+
+202
+00:13:17,810 --> 00:13:18,300
+W porządku.
+
+203
+00:13:18,410 --> 00:13:21,710
+Nie przejmuj się, jeśli nie do końca to wszystko dostałeś, ponieważ zamierzamy to
+
+204
+00:13:21,710 --> 00:13:23,840
+wszystko przejrzeć, kiedy już dojdziemy do ćwiczeń.
+
+205
+00:13:24,440 --> 00:13:25,020
+W porządku.
+
+206
+00:13:25,070 --> 00:13:27,990
+To w zasadzie wszystko, co musisz wiedzieć o notatnikach Jupitera.
+
+207
+00:13:28,010 --> 00:13:30,820
+Jeśli masz jakieś pytania, możesz wysyłać posty i fora dyskusyjne.
+
+208
+00:13:30,820 --> 00:13:32,340
+Wiesz, z chęcią ci pomogę.
+
+209
+00:13:32,360 --> 00:13:37,670
+Należy pamiętać, że system notebooków Jupiter uruchomi się w dowolnym miejscu w wierszu polecenia lub
+
+210
+00:13:37,730 --> 00:13:38,810
+w terminalu.
+
+211
+00:13:38,810 --> 00:13:44,330
+Będziesz potrzebował katalogu zmian na CD, jeśli chcesz uruchomić lub zapisać swoje notatniki w innym
+
+212
+00:13:44,330 --> 00:13:45,500
+miejscu na komputerze.
+
+213
+00:13:45,500 --> 00:13:48,440
+W porządku, dziękuję wszystkim i zobaczę na następnym wykładzie.

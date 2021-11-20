@@ -1,0 +1,807 @@
+1
+00:00:05,850 --> 00:00:10,470
+Salve a tutti e benvenuti alla conferenza sulla cornice dati e in questa conferenza apprendiamo
+
+2
+00:00:10,470 --> 00:00:15,170
+finalmente i frame di dati che si basano sui frame di dati degli oggetti seri.
+
+3
+00:00:15,180 --> 00:00:17,800
+Sarà il loro strumento principale quando lavorerai con i panda.
+
+4
+00:00:17,970 --> 00:00:21,680
+Andiamo avanti e saltiamo sul taccuino di Giove per vedere come funziona.
+
+5
+00:00:21,690 --> 00:00:22,020
+Tutto ok.
+
+6
+00:00:22,020 --> 00:00:24,410
+Eccomi al Notebook Jupiter.
+
+7
+00:00:24,450 --> 00:00:29,940
+Andremo avanti e diremo importante alcune torte e P e importeremo i PD Panda e
+
+8
+00:00:29,940 --> 00:00:35,880
+farò un'ultima cosa qui per salvare da loro il Rand casuale e importazione casuale di Pied-Bot.
+
+9
+00:00:36,350 --> 00:00:38,370
+E poi uscirò e preparerò un seme.
+
+10
+00:00:38,370 --> 00:00:42,660
+E ciò che significa un seme è solo per assicurarci di ottenere gli stessi numeri casuali.
+
+11
+00:00:42,660 --> 00:00:45,510
+In questo modo se mi segui vedrai gli stessi numeri casuali.
+
+12
+00:00:45,540 --> 00:00:49,260
+Vedo che lei può entrare e dire quel seme casuale.
+
+13
+00:00:49,290 --> 00:00:49,550
+Tutto ok.
+
+14
+00:00:49,590 --> 00:00:57,840
+Andiamo ad esplorare il diverso comando e l'ADF è uguale al frame di dati PD e puoi effettivamente utilizzare la scheda
+
+15
+00:00:57,840 --> 00:01:01,460
+qui in Giove e fino a completare automaticamente questo.
+
+16
+00:01:01,770 --> 00:01:05,200
+E nota che l'EFIS capitalizza sulla scheda Maiusc di turno.
+
+17
+00:01:05,200 --> 00:01:10,770
+Controlla la docstring e la firma iniziale per questo frame di dati PD.
+
+18
+00:01:10,770 --> 00:01:16,830
+Abbiamo un argomento di dati e un argomento di indice proprio come abbiamo fatto per le serie, ma poi abbiamo
+
+19
+00:01:16,830 --> 00:01:18,210
+questi argomenti di colonne aggiuntive.
+
+20
+00:01:18,450 --> 00:01:23,130
+Andiamo avanti e costruiamo questo con alcuni dati casuali e vedremo come appare effettivamente un
+
+21
+00:01:23,130 --> 00:01:24,000
+frame di dati.
+
+22
+00:01:24,000 --> 00:01:31,090
+La prima cosa che farò è passare gli argomenti dei dati e in realtà chiamerò Ranz
+
+23
+00:01:31,110 --> 00:01:37,620
+e 5 comma 4 e poi i successivi che vuoi passare è l'indice nell'indice.
+
+24
+00:01:37,620 --> 00:01:42,650
+Possiamo semplicemente creare una lista di personaggi qui.
+
+25
+00:01:42,660 --> 00:01:48,850
+Vado a dire A B C D E.
+
+26
+00:01:49,320 --> 00:01:53,950
+E poi finalmente per le colonne, vado avanti e dico x y z.
+
+27
+00:01:54,120 --> 00:02:05,810
+Quindi dirò che w x y z andrà avanti ed eseguirò questo e poi passerò i dati appena visualizzati e poi avremo una
+
+28
+00:02:05,820 --> 00:02:07,020
+bella visualizzazione.
+
+29
+00:02:07,050 --> 00:02:12,370
+E questo probabilmente assomiglia molto alle voci di Excel e ad un taccuino più profondo e questo è positivo.
+
+30
+00:02:12,540 --> 00:02:18,060
+Se stai usando un altro editor di ID, potresti non avere uno schermo così bello
+
+31
+00:02:18,060 --> 00:02:21,560
+ma dovresti ottenere un output stampato simile a questo.
+
+32
+00:02:21,630 --> 00:02:22,060
+Tutto ok.
+
+33
+00:02:22,110 --> 00:02:31,130
+Quindi in pratica quello che abbiamo qui è un elenco di colonne w x y z e righe corrispondenti A B C D E.
+
+34
+00:02:31,170 --> 00:02:35,240
+Ora ognuna di queste colonne è in realtà solo la serie di un panda.
+
+35
+00:02:35,250 --> 00:02:42,060
+Quindi W è una serie di panda e anche X Y e Z e condividono tutti un indice comune e praticamente tutto
+
+36
+00:02:42,060 --> 00:02:46,350
+il frame dei dati è solo un insieme di serie che condividono un indice.
+
+37
+00:02:46,350 --> 00:02:51,830
+Andiamo avanti e mostriamo come usare l'indicizzazione e la selezione in realtà prendiamo uno di questi oggetti
+
+38
+00:02:52,080 --> 00:02:59,280
+seri o alcune di queste colonne in un modo e il modo principale per farlo è dicendo DMF e poi usando la
+
+39
+00:02:59,340 --> 00:03:02,920
+notazione Rackett e poi passando il nome della colonna .
+
+40
+00:03:02,940 --> 00:03:05,590
+In questo caso andiamo avanti e prendiamo la colonna W.
+
+41
+00:03:05,610 --> 00:03:12,180
+Così come una stringa di passaggio w e questo restituisce la colonna W e ora dare un'occhiata all'output.
+
+42
+00:03:12,180 --> 00:03:14,590
+Ora questo sembra davvero una serie.
+
+43
+00:03:14,590 --> 00:03:16,950
+E questo perché è esattamente quello che è W column.
+
+44
+00:03:16,950 --> 00:03:20,160
+È solo una serie e puoi davvero confermarlo dicendo.
+
+45
+00:03:20,160 --> 00:03:27,870
+Tipo di d f di W e mostra che è Panas quella core di quella serie.
+
+46
+00:03:27,870 --> 00:03:33,940
+Se dico solo digitare sull'oggetto DFA stesso, otterrò un frame dati.
+
+47
+00:03:34,260 --> 00:03:39,420
+Quindi, ancora una volta solo per ribadire il fatto che un frame di dati è solo un gruppo di serie
+
+48
+00:03:39,450 --> 00:03:40,600
+che condividono lo stesso indice.
+
+49
+00:03:40,590 --> 00:03:45,270
+Ora ci sono due modi diversi per prendere una colonna da un frame di dati.
+
+50
+00:03:45,300 --> 00:03:49,780
+Il modo principale e il modo in cui dovrebbe sempre farlo è usare questo tipo di notazione delle parentesi e
+
+51
+00:03:49,800 --> 00:03:51,090
+quindi passare il nome della colonna.
+
+52
+00:03:51,090 --> 00:03:56,640
+Tuttavia, se sei davvero familiare con il sequel molte volte, selezioni una colonna che passi in una tabella e
+
+53
+00:03:57,090 --> 00:03:58,470
+poi il nome della colonna.
+
+54
+00:03:58,530 --> 00:04:04,280
+Questo in realtà funziona anche per pantless, potresti dire punto e poi il nome della colonna.
+
+55
+00:04:04,440 --> 00:04:10,020
+Tuttavia, ti consiglio di non utilizzarlo perché potrebbe confondersi con i vari metodi disponibili al di
+
+56
+00:04:10,020 --> 00:04:11,870
+fuori del frame di dati.
+
+57
+00:04:11,940 --> 00:04:18,160
+Ad esempio, se dico DFA dot e poi clic su tab vedo un sacco di metodi disponibili per me.
+
+58
+00:04:18,480 --> 00:04:22,980
+E questi sono un mucchio di metodi che impareremo a conoscere mentre impariamo di più sui panda,
+
+59
+00:04:22,980 --> 00:04:28,050
+ma quello che potrebbe accadere è che uno di questi metodi viene sovrascritto dal nome di una colonna e
+
+60
+00:04:28,050 --> 00:04:32,420
+quindi Panther si confonderà se lo stai chiedendo per un metodo o un nome di colonna reale.
+
+61
+00:04:32,430 --> 00:04:38,410
+Quindi dovresti fare per evitare che come sempre sia una sorta di notazione di parentesi quando si richiede una colonna.
+
+62
+00:04:38,970 --> 00:04:39,500
+OK.
+
+63
+00:04:39,510 --> 00:04:44,590
+Se vuoi più colonne, puoi andare avanti e inserire un elenco di colonne.
+
+64
+00:04:44,820 --> 00:04:49,800
+passerò e un elenco di nomi di colonne che darà luogo a un altro insieme di parentesi quadre.
+
+65
+00:04:49,800 --> 00:04:52,170
+Quindi sappi che passo tra parentesi e poi
+
+66
+00:04:52,200 --> 00:05:02,970
+Per esempio, se voglio le colonne W e Z, passo un elenco qui evidenziato WNC e torno a un frame di
+
+67
+00:05:02,970 --> 00:05:05,520
+dati contenente quelle due serie.
+
+68
+00:05:05,520 --> 00:05:10,620
+E questo significa che quando chiedo più colonne, in realtà sto recuperando un frame di dati, ho
+
+69
+00:05:10,620 --> 00:05:13,240
+chiesto solo una singola colonna per ottenere una serie.
+
+70
+00:05:13,380 --> 00:05:17,510
+E nel sistema di quaderno di Giove che è il modo in cui viene visualizzato l'output.
+
+71
+00:05:17,990 --> 00:05:25,540
+OK andiamo avanti e passiamo alla creazione di una nuova colonna. Palla supporta la creazione di nuove
+
+72
+00:05:25,560 --> 00:05:29,390
+colonne semplicemente specificando la colonna come se esistesse già.
+
+73
+00:05:29,400 --> 00:05:31,100
+Ad esempio nuovo.
+
+74
+00:05:31,140 --> 00:05:34,550
+Ora se eseguo questo avrò un errore ed è un custode.
+
+75
+00:05:34,570 --> 00:05:37,500
+Il rotolo fino qui sotto dice Kear nuovo.
+
+76
+00:05:37,680 --> 00:05:42,560
+E fondamentalmente sta solo cercando di dirti che non può trovare che non ci siano nuove chiavi lì.
+
+77
+00:05:42,570 --> 00:05:50,190
+Tuttavia, quando crei un tag hash, lo fai uscire e lo rimetti in posizione quando crei una
+
+78
+00:05:50,190 --> 00:05:51,200
+nuova colonna.
+
+79
+00:05:51,210 --> 00:05:56,280
+destro del segno di uguale usare altre colonne con aritmetica per estrarre una
+
+80
+00:05:56,850 --> 00:06:05,610
+nuova colonna, per esempio puoi dire che la nuova colonna DSF come se già esistesse è uguale a DFW Plus al volo.
+
+81
+00:06:05,610 --> 00:06:09,970
+Puoi effettivamente definirlo come se esistesse già e poi sul lato
+
+82
+00:06:10,150 --> 00:06:11,710
+E questo funzionerà senza errori.
+
+83
+00:06:11,910 --> 00:06:18,780
+E ora se controllo DF se la nuova colonna è effettivamente presente e per rimuovere le colonne
+
+84
+00:06:18,780 --> 00:06:19,890
+puoi dire DFT.
+
+85
+00:06:19,920 --> 00:06:28,020
+Rilascia, puoi dire drop deific e passare il nome della colonna che vuoi eliminare.
+
+86
+00:06:28,020 --> 00:06:31,430
+Ora se lo fai da solo, avrai un errore.
+
+87
+00:06:31,500 --> 00:06:35,340
+E andiamo a dare un'occhiata a quello che è l'errore che dirà errore di valore.
+
+88
+00:06:35,390 --> 00:06:36,120
+Scorriamo verso il basso.
+
+89
+00:06:36,120 --> 00:06:40,540
+Dice che le etichette nuove non sono contenute in Access.
+
+90
+00:06:40,620 --> 00:06:47,660
+E se faccio clic sulla scheda Maiusc sul metodo di rilascio, avviso che per impostazione predefinita dice accesso è uguale
+
+91
+00:06:47,670 --> 00:06:52,390
+a zero accesso uguale a zero per il metodo di rilascio si riferisce all'indice.
+
+92
+00:06:52,500 --> 00:07:01,050
+Se effettivamente desidero fare riferimento alle colonne, devo specificare che l'accesso è uguale a 1 e quindi
+
+93
+00:07:01,680 --> 00:07:04,430
+lascerà qui la nuova colonna.
+
+94
+00:07:04,830 --> 00:07:10,260
+Ora ci sono due cose da notare quando si usa questo drop DFT, la prima cosa da sapere è che
+
+95
+00:07:10,260 --> 00:07:15,900
+questo non accade sul posto, il che significa che in realtà non sto influenzando lo stato del frame a meno che
+
+96
+00:07:16,070 --> 00:07:18,370
+non specifichi specificamente che questo avvenga sul posto.
+
+97
+00:07:18,470 --> 00:07:20,450
+Voglio mostrarti cosa intendo con quello.
+
+98
+00:07:20,610 --> 00:07:28,380
+Ho chiamato questa linea D-flat drop you access uguale a 1 se ho chiamato DMF vedrò che ho
+
+99
+00:07:28,380 --> 00:07:29,910
+ancora quella nuova colonna.
+
+100
+00:07:29,910 --> 00:07:36,030
+Ciò significa che ho bisogno di specificare come argomento per lo spostamento devo mostrare che l'argomento sul
+
+101
+00:07:36,630 --> 00:07:42,840
+posto in molti molti metodi di Pandurs richiederà che gli argomenti sul posto siano impostati su true.
+
+102
+00:07:42,990 --> 00:07:48,450
+E il motivo per cui i panderers fanno è che per te non perdi accidentalmente informazioni nel caso
+
+103
+00:07:48,450 --> 00:07:53,820
+in cui hai apportato una serie di modifiche ai tuoi dati che non vuoi perdere per sbaglio.
+
+104
+00:07:53,820 --> 00:07:59,520
+"in-place" uguale a true se in realtà vuoi che molte di queste modifiche rimangano attive.
+
+105
+00:07:59,550 --> 00:08:01,260
+Quindi Pandurs richiede di dire
+
+106
+00:08:01,380 --> 00:08:07,800
+E ora se chiamo DFI che esegue la cella, si noti che la nuova colonna è stata rimossa definitivamente
+
+107
+00:08:07,800 --> 00:08:15,960
+perché si è verificata sul posto e qualcosa da notare qui è che possiamo anche usare il drop sinistro per rilasciare le righe, per
+
+108
+00:08:15,960 --> 00:08:16,450
+esempio.
+
+109
+00:08:16,470 --> 00:08:19,930
+Usciamo e usiamolo per abbandonare la riga e.
+
+110
+00:08:20,130 --> 00:08:28,290
+Devo dire che DF è caduto, ho passato una E e posso anche dire che l'asse è uguale a zero.
+
+111
+00:08:28,290 --> 00:08:30,870
+Ora ricorda che in realtà non devi aggiungerlo come argomento.
+
+112
+00:08:30,870 --> 00:08:32,230
+Questo è il default.
+
+113
+00:08:32,820 --> 00:08:40,950
+Quindi andiamo e diciamo semplicemente la caduta E e lì siamo stati in grado di abbandonare la e poiché Access è uguale a
+
+114
+00:08:40,950 --> 00:08:41,410
+zero.
+
+115
+00:08:41,460 --> 00:08:45,260
+E funziona in entrambi i casi potrei dire che X sequel a 0 e questo funzionerà di nuovo.
+
+116
+00:08:45,660 --> 00:08:48,140
+E nota qui che non sto facendo questo al suo posto.
+
+117
+00:08:48,360 --> 00:08:48,880
+OK.
+
+118
+00:08:49,020 --> 00:08:54,930
+A volte un punto di confusione è perché le righe sono pari a zero per quanto riguarda l'accesso e
+
+119
+00:08:54,960 --> 00:08:58,880
+perché le colonne sono una in cui il riferimento ritorna effettivamente a pi.
+
+120
+00:08:59,010 --> 00:09:06,850
+Poiché i frame di dati sono essenzialmente solo indicatori di indici fantasiosi sopra un array PI per mostrare questo.
+
+121
+00:09:07,080 --> 00:09:14,750
+Posso dire che DF ha pensato la forma proprio come abbiamo fatto con una matrice di condotte e no se quella forma è una
+
+122
+00:09:14,800 --> 00:09:19,750
+tupla per una matrice immaginale dentale qui e con l'indice zero o il numero di righe.
+
+123
+00:09:19,890 --> 00:09:23,020
+Quindi se dico ZF qui ho cinque righe.
+
+124
+00:09:23,070 --> 00:09:29,990
+A B C e D E e poi all'indice uno ho quattro colonne w x y z.
+
+125
+00:09:30,150 --> 00:09:37,530
+Questo è il motivo per cui le righe vengono definite come l'asse zero e le colonne vengono indicate come un asse perché
+
+126
+00:09:37,530 --> 00:09:43,020
+vengono prelevate direttamente dalla forma proprio come si farebbe con un array di grafici a torta.
+
+127
+00:09:43,020 --> 00:09:43,880
+OK.
+
+128
+00:09:43,920 --> 00:09:46,260
+Ora parliamo di selezionare le righe.
+
+129
+00:09:46,290 --> 00:09:51,840
+Abbiamo parlato della selezione delle colonne che si fanno semplicemente dicendo DMF e tra parentesi si passa
+
+130
+00:09:51,840 --> 00:09:53,280
+il nome della colonna.
+
+131
+00:09:53,280 --> 00:10:01,350
+O se vuoi molte colonne puoi fare un elenco dei nomi delle colonne come Z e poi la virgola X e
+
+132
+00:10:01,350 --> 00:10:02,430
+chiudere quella parentesi.
+
+133
+00:10:02,430 --> 00:10:07,460
+Quindi sto passando un elenco di nomi di colonne e restituisco un frame di dati di quelle colonne.
+
+134
+00:10:07,500 --> 00:10:09,940
+Parliamo della selezione delle righe.
+
+135
+00:10:10,900 --> 00:10:14,650
+Vuoi dare di nuovo un'occhiata al mio riquadro dei dati, ecco il mio riquadro dei dati.
+
+136
+00:10:14,650 --> 00:10:18,400
+ABC La E è la mia rosa WXYZ sono le colonne.
+
+137
+00:10:18,400 --> 00:10:25,120
+Ci sono due modi per selezionare le righe in un frame di dati e devi chiamare un metodo al di fuori di questo.
+
+138
+00:10:25,120 --> 00:10:26,900
+E ci sono due metodi da usare.
+
+139
+00:10:26,890 --> 00:10:31,040
+Uno è Loek EHLO per la posizione.
+
+140
+00:10:31,690 --> 00:10:38,030
+E questo prenderà un'etichetta in modo che tu possa anche fare il cambio di scheda qui per vedere questa proprietà e qualcosa da
+
+141
+00:10:38,020 --> 00:10:38,540
+sapere qui.
+
+142
+00:10:38,560 --> 00:10:43,770
+Sto usando parentesi quadre che è un po 'strano, ma è così che funziona con i panda.
+
+143
+00:10:44,000 --> 00:10:48,920
+Si passa in LRC e quindi si passa tra parentesi la riga che si desidera.
+
+144
+00:10:48,910 --> 00:10:52,030
+Per esempio se volessi la riga che ho appena passato.
+
+145
+00:10:52,280 --> 00:10:56,210
+Vedi ho passato l'etichetta di quell'indice e questo ritorna.
+
+146
+00:10:56,240 --> 00:10:58,150
+No una serie.
+
+147
+00:10:58,150 --> 00:11:04,310
+E questo giunge alla nostra seconda conclusione che non solo sono tutte le serie di colonne, ma le righe sono serie così
+
+148
+00:11:04,300 --> 00:11:06,730
+come il modo in cui stanno per ottenere ritorni.
+
+149
+00:11:06,880 --> 00:11:09,780
+Quando li richiedi in Panda.
+
+150
+00:11:10,090 --> 00:11:16,140
+Ora discutiamo il secondo modo per afferrare una riga che si basa sulla prossima posizione.
+
+151
+00:11:16,510 --> 00:11:17,750
+Posso usare DFT.
+
+152
+00:11:17,840 --> 00:11:25,180
+I Loek in realtà in una posizione di indice numerico anche se i miei assi sono etichettati da stringhe.
+
+153
+00:11:25,180 --> 00:11:34,310
+Per esempio se voglio vedere quella riga posso fare in due modi potrei dire DF ELO vedere per una posizione e tra parentesi passare
+
+154
+00:11:34,380 --> 00:11:42,190
+il nome della riga che è C o posso dire che EHLO vedere quale è la posizione basata su indice e
+
+155
+00:11:42,200 --> 00:11:43,690
+conteggi quale indice dice.
+
+156
+00:11:43,690 --> 00:11:45,870
+Quindi 0 1 2.
+
+157
+00:11:46,100 --> 00:11:51,790
+E poi I Alosi si affretta ad aggiungere anche questo restituisce quella riga.
+
+158
+00:11:51,790 --> 00:11:57,250
+In pratica, ciò significa che hai due modi per selezionare le righe usando EHLO, vedi
+
+159
+00:11:57,250 --> 00:12:04,220
+se vuoi che la posizione o l'indice basato su etichette o I ellos vedano se vuoi l'indice basato su numeri.
+
+160
+00:12:04,240 --> 00:12:09,640
+colonne e questo in realtà ti sarà molto familiare dato che abbiamo appena saputo di pi.
+
+161
+00:12:09,640 --> 00:12:12,680
+OK parliamo della selezione di sottoinsiemi di righe e
+
+162
+00:12:13,250 --> 00:12:21,530
+Possiamo dire che DFI pensava che EHLO vedesse se vogliamo selezionare un sottoinsieme di righe e colonne che possiamo usare
+
+163
+00:12:21,520 --> 00:12:25,400
+come abbiamo fatto con Num. Pi usando la notazione comune.
+
+164
+00:12:25,390 --> 00:12:28,550
+La riga che vogliamo e poi la colonna che vogliamo.
+
+165
+00:12:28,580 --> 00:12:36,520
+Quindi voglio che il valore di Row sia la colonna Y e questo restituisce solo un singolo valore lì.
+
+166
+00:12:36,550 --> 00:12:43,220
+Quindi se guardo di nuovo il mio DFA guardando r รก per colonna y ho questo 0 negativo. 8 perché ottengo lo stesso
+
+167
+00:12:43,210 --> 00:12:44,610
+risultato qui.
+
+168
+00:12:44,620 --> 00:12:52,700
+vuoi un sottoinsieme di questo puoi dire che Dhia ellos vede e poi fai un elenco separato da virgole.
+
+169
+00:12:52,690 --> 00:12:58,950
+Quindi, proprio come pi puoi usare questa notazione a virgola di righe e se
+
+170
+00:12:59,000 --> 00:13:07,180
+Per esempio diciamo che volevo il sottoinsieme di una b righe con le colonne W Y quindi in pratica
+
+171
+00:13:07,540 --> 00:13:13,670
+volevo questo 2. 7 0. 9 e 0. 6 5 e negativi sono a ventiquattro.
+
+172
+00:13:13,690 --> 00:13:20,650
+Ciò significa che posso semplicemente passare un elenco delle righe che voglio, che in questo caso è a e b.
+
+173
+00:13:21,700 --> 00:13:31,490
+E poi posso passare in un elenco delle colonne che voglio in questo caso che è lo spostamento di w e y che ottengo il ritorno
+
+174
+00:13:31,490 --> 00:13:34,360
+di sottoinsieme di quel frame di dati.
+
+175
+00:13:34,880 --> 00:13:35,540
+OK.
+
+176
+00:13:35,770 --> 00:13:38,520
+Ci fermeremo qui per ora e continueremo la discussione.
+
+177
+00:13:38,530 --> 00:13:44,960
+Nella seconda parte della lezione del data frame, tutto questo è nel notebook chiamato Data
+
+178
+00:13:44,950 --> 00:13:46,700
+frames nella cartella panderers.
+
+179
+00:13:46,690 --> 00:13:51,610
+Diamo una rapida recensione di ciò che abbiamo imparato fino alla creazione di un frame di dati.
+
+180
+00:13:51,620 --> 00:13:58,540
+Hai solo bisogno di dire i dati del passeggero dati frame PD assin tuo indice e quindi passare i nomi delle colonne.
+
+181
+00:13:58,930 --> 00:14:03,670
+Di solito non costruiremo i dati a mano di Frayne in questo modo, in realtà leggerò i dati
+
+182
+00:14:03,670 --> 00:14:08,250
+da una qualche fonte come un file CSP, ma imparerò come inserire i dati ora inseriti più tardi.
+
+183
+00:14:08,250 --> 00:14:14,030
+Per ora se vuoi creare principalmente un frame di dati in modo da poterlo fare, allora per selezionare le colonne da
+
+184
+00:14:14,020 --> 00:14:16,100
+un frame di dati puoi dire DSF.
+
+185
+00:14:16,100 --> 00:14:22,090
+E poi tra parentesi passa nella colonna che vuoi o passa in un elenco delle colonne che vuoi
+
+186
+00:14:22,180 --> 00:14:25,630
+ricordare che ogni colonna è in realtà solo una serie.
+
+187
+00:14:25,880 --> 00:14:31,430
+Puoi creare nuove colonne basate su vecchie colonne usando questo tipo di aritmetica.
+
+188
+00:14:31,450 --> 00:14:36,040
+Quindi puoi eliminare colonne o righe utilizzando DFA che si chiude.
+
+189
+00:14:36,040 --> 00:14:38,730
+Ricorda che i bisogni di dire sul posto sono uguali.
+
+190
+00:14:38,870 --> 00:14:44,820
+Se vuoi che l'effetto sia permanente, pronuncia l'Asse 1 per le colonne e quindi Accedi a 0 per le righe.
+
+191
+00:14:44,980 --> 00:14:54,460
+E ancora, ciò deriva da questo indice di forma tuple 0 era indice di righe 1 era colonne per quanto riguarda la selezione di righe
+
+192
+00:14:54,460 --> 00:14:56,350
+da un frame di dati.
+
+193
+00:14:56,360 --> 00:14:57,630
+Ci sono due metodi qui.
+
+194
+00:14:57,640 --> 00:15:03,670
+C'è il metodo Alosi che è una posizione di indice basata su etichetta o c'è il punto.
+
+195
+00:15:03,720 --> 00:15:08,670
+I Alosi che è la posizione dell'indice basata su numeri interi.
+
+196
+00:15:09,430 --> 00:15:15,100
+Quindi, se si desidera selezionare sottoinsiemi del frame di dati, è possibile utilizzare dot LOC e passare i valori
+
+197
+00:15:15,250 --> 00:15:18,800
+o gli elenchi completi per restituire i sottoinsiemi del frame di dati.
+
+198
+00:15:19,330 --> 00:15:22,230
+OK, questo è tutto per le basi dei frame di dati.
+
+199
+00:15:22,420 --> 00:15:26,810
+Prossimamente discuteremo ancora di più su ciò che è possibile fare se si applica lo stato
+
+200
+00:15:26,800 --> 00:15:28,880
+del fotogramma come l'uso della selezione condizionale.
+
+201
+00:15:28,880 --> 00:15:30,580
+Va bene, grazie a tutti.
+
+202
+00:15:30,590 --> 00:15:31,570
+Ci vediamo alla prossima lezione

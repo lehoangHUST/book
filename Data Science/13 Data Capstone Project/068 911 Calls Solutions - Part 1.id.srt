@@ -1,0 +1,815 @@
+1
+00:00:05,130 --> 00:00:06,000
+Halo semuanya.
+
+2
+00:00:06,000 --> 00:00:10,800
+Selamat datang di hari untuk solusi proyek batu penjuru kuliah kuliah ini kita akan membahas
+
+3
+00:00:10,800 --> 00:00:13,850
+solusi untuk malam ketika orang menyebutnya proyek batu penjuru.
+
+4
+00:00:13,920 --> 00:00:16,710
+Ayo keluar dan lompat ke notebook Jupiter untuk memulai.
+
+5
+00:00:16,800 --> 00:00:17,060
+Baiklah.
+
+6
+00:00:17,070 --> 00:00:18,560
+Saya di sini di notebook.
+
+7
+00:00:18,570 --> 00:00:20,730
+Ayo maju dan mulai.
+
+8
+00:00:20,730 --> 00:00:25,620
+Hal pertama yang ingin saya lakukan adalah penting beberapa pie dan panda ketika kita
+
+9
+00:00:25,630 --> 00:00:34,110
+pergi keluar dan mengatakan wasit penting dan P dan impor panda sebagai PD dan sel berikutnya meminta Anda untuk mengimpor perpustakaan visualisasi dan mengatur
+
+10
+00:00:34,150 --> 00:00:35,370
+pilot peta sejalan.
+
+11
+00:00:35,370 --> 00:00:39,610
+Ini agak disengaja tapi mudah-mudahan Anda menyadari itu hanya membicarakan hal itu.
+
+12
+00:00:39,650 --> 00:00:50,700
+LIBMAN seaborne sehingga saya bisa mengatakan sebagian tetapi PI plot sebagai Piazzi mengimpor seaborne sebagai Asinus dan kemudian saya akan
+
+13
+00:00:50,700 --> 00:00:55,530
+pergi keluar dan mengatakan apa yang hidup sejalan.
+
+14
+00:00:55,530 --> 00:01:00,420
+Selanjutnya kami ingin membaca di file sebagai kerangka data yang disebut F.
+
+15
+00:01:00,840 --> 00:01:09,750
+Jadi PD yang membaca C V dan kita benar-benar bisa memanggil 9 dan kemudian melihat sembilan pada satu yang v adalah file
+
+16
+00:01:09,840 --> 00:01:11,280
+yang kita khawatirkan.
+
+17
+00:01:11,290 --> 00:01:13,380
+Dan kemudian kami ingin memeriksa info data.
+
+18
+00:01:13,410 --> 00:01:15,980
+Demikian informasinya.
+
+19
+00:01:16,950 --> 00:01:21,890
+Jadi ini memberitahu kita ada hampir sekitar 100.000 entri di sini dan ada sembilan kolom total.
+
+20
+00:01:21,990 --> 00:01:27,960
+Dan kemudian kita sebenarnya sudah memiliki deskripsi kolom yang muncul di buku catatan maka kita ingin memeriksa
+
+21
+00:01:27,960 --> 00:01:29,000
+kepala DEA.
+
+22
+00:01:29,430 --> 00:01:33,280
+Dan kita bisa melakukannya hanya dengan memanggil metode di kepala.
+
+23
+00:01:33,600 --> 00:01:37,710
+Dan di sini kita memiliki kepala bumi sehingga dia bisa merasakan
+
+24
+00:01:37,740 --> 00:01:45,480
+seperti apa sebenarnya ini Lotusphere judulnya memiliki semacam label membenamkan atau membakar usus dan kemudian acara judul yang sebenarnya dan kami memiliki
+
+25
+00:01:45,480 --> 00:01:49,650
+cap waktu GWP yang merupakan kota mandiri dan kami gulir ke kanan.
+
+26
+00:01:49,770 --> 00:01:53,180
+Kami memiliki alamat dan kemudian kami memanggil mereka.
+
+27
+00:01:53,190 --> 00:01:58,480
+Selanjutnya kami ingin menjawab beberapa pertanyaan dasar seperti Apa lima kode pos teratas untuk 911 panggilan.
+
+28
+00:01:58,770 --> 00:02:06,600
+Kita lanjutkan dan ambil kolomnya dan kemudian kita dapat benar-benar hanya menentukan nilai yang dihitung dari ini dan itu atau mengubah
+
+29
+00:02:08,240 --> 00:02:10,870
+semua jumlah untuk semua kode pos.
+
+30
+00:02:10,920 --> 00:02:12,890
+Dan kami hanya ingin lima besar.
+
+31
+00:02:13,140 --> 00:02:16,230
+Jadi kita sebut saja memiliki 5 dari seri itu.
+
+32
+00:02:16,230 --> 00:02:18,540
+Dan di sini kita memiliki lima kode pos teratas.
+
+33
+00:02:18,570 --> 00:02:22,910
+Selanjutnya kita ingin mencari tahu apa PWP lima kota teratas untuk 911 panggilan.
+
+34
+00:02:23,190 --> 00:02:32,400
+Anda dapat melakukan hal yang sangat mirip, menentukan akun nilai panggilan DWP dan kemudian menuju ke 5 dan ini akan membuat
+
+35
+00:02:32,400 --> 00:02:36,910
+Anda mendapatkan hasil ini sehingga lebih rendah Merion Abbington dll.
+
+36
+00:02:37,500 --> 00:02:43,000
+Sekarang kita ingin melihat kolom judul dan berapa banyak kode judul unik yang ada.
+
+37
+00:02:43,230 --> 00:02:51,920
+Ada dua cara untuk melakukan ini, Anda dapat mengatakan audit panggilan judul unik dan mengembalikan array dari semua judul unik
+
+38
+00:02:51,920 --> 00:02:58,980
+berarti minikon hanya memeriksa panjang array dan mendapatkan kembali nomor atau untuk melakukan ini semua
+
+39
+00:02:58,980 --> 00:03:00,500
+dalam satu langkah.
+
+40
+00:03:00,540 --> 00:03:03,440
+Anda cukup menelepon dan unik.
+
+41
+00:03:03,450 --> 00:03:06,060
+Mereka juga akan mengembalikan 110.
+
+42
+00:03:06,090 --> 00:03:09,750
+OK langkah selanjutnya kita ingin membuat beberapa fitur baru di kolom judul.
+
+43
+00:03:09,780 --> 00:03:14,540
+Ada alasan memangkas kode Departemen yang ditentukan sebelum kode judul.
+
+44
+00:03:14,700 --> 00:03:17,260
+Dan ini adalah api dan lalu lintas M-S.
+
+45
+00:03:17,430 --> 00:03:23,340
+Kami ingin menggunakan terapkan ekspresi tanah khusus untuk membuat kolom baru yang disebut alasan yang
+
+46
+00:03:23,430 --> 00:03:25,050
+berisi nilai string.
+
+47
+00:03:25,050 --> 00:03:31,260
+Jadi misalnya jika kolom judul adalah nyeri punggung M-S cedera terakhir, alasan kolom untuk nilai
+
+48
+00:03:31,260 --> 00:03:35,310
+itu adalah M-S, kita lanjutkan dan lihat kembali kepala.
+
+49
+00:03:35,700 --> 00:03:38,690
+Seperti yang saya sebutkan sebelumnya ada beberapa alasan di sini usus besar.
+
+50
+00:03:38,700 --> 00:03:41,180
+Dan kemudian judul lengkap M-S fire.
+
+51
+00:03:41,190 --> 00:03:43,830
+Dan kemudian ada lalu lintas.
+
+52
+00:03:44,130 --> 00:03:48,030
+Mari kita lanjutkan dan buat kolom alasan ini menggunakan apply.
+
+53
+00:03:48,240 --> 00:03:51,000
+Pertama mari kita keluar dan memecah logika apa yang ingin kita lakukan.
+
+54
+00:03:51,000 --> 00:03:55,530
+Saya akan ambil dari Judul contoh.
+
+55
+00:03:55,590 --> 00:04:03,570
+Saya ellos melihatnya adalah jenis cara yang saya suka melakukannya dan kemudian menetapkan ini sebagai X dan melihat apa yang harus saya lakukan
+
+56
+00:04:03,570 --> 00:04:07,090
+untuk X untuk benar-benar meraih gelar ini di sini.
+
+57
+00:04:07,350 --> 00:04:13,190
+Nah karena ini adalah string yang bisa saya katakan terbelah oleh titik dua.
+
+58
+00:04:14,070 --> 00:04:19,020
+Dan kemudian saya perhatikan bahwa judul selalu didahulukan jadi jika saya hanya mengambil elemen pertama dari
+
+59
+00:04:19,020 --> 00:04:19,680
+daftar itu.
+
+60
+00:04:19,680 --> 00:04:22,220
+Sekarang saya punya alasan ini di sini.
+
+61
+00:04:22,330 --> 00:04:22,720
+Baiklah.
+
+62
+00:04:22,770 --> 00:04:23,970
+Ini adalah hal yang akan kita lakukan.
+
+63
+00:04:23,970 --> 00:04:31,590
+Ekspresi Ferland akan menunjukkan bahwa untuk membuat alasan kolom atur sama dengan
+
+64
+00:04:32,440 --> 00:04:43,980
+kolom judul, terapkan, lalu ucapkan lambda judul dan ucapkan judul dot split berdasarkan titik dua dan kemudian saya akan
+
+65
+00:04:43,980 --> 00:04:48,200
+ambil item pertama di daftar itu.
+
+66
+00:04:48,210 --> 00:04:52,220
+Mari kita lanjutkan dan lihat apa alasannya.
+
+67
+00:04:53,810 --> 00:04:56,790
+Dan seperti itulah kita menjadi Merse traffic.
+
+68
+00:04:56,790 --> 00:04:58,550
+Sempurna.
+
+69
+00:04:58,560 --> 00:04:59,070
+Baiklah.
+
+70
+00:04:59,370 --> 00:05:05,730
+Mudah-mudahan itu tidak terlalu sulit bisa menjadi sedikit rumit untuk mengekspresikan ekspresi tanah dengan benar, menerapkan sedikit petunjuk yang
+
+71
+00:05:05,730 --> 00:05:06,770
+bagus untuk ini.
+
+72
+00:05:06,870 --> 00:05:11,700
+Cukup ambil contoh dan lihat apa yang harus Anda lakukan untuk contoh itu dan kemudian
+
+73
+00:05:11,700 --> 00:05:13,380
+ubah ini menjadi ekspresi tanah.
+
+74
+00:05:13,380 --> 00:05:16,890
+Sekarang kami ingin tahu apa alasan paling umum untuk Anda dan saya tidak ingin
+
+75
+00:05:16,890 --> 00:05:18,420
+membatalkan berdasarkan kolom baru ini.
+
+76
+00:05:18,420 --> 00:05:19,570
+Yah itu sebenarnya cukup mudah.
+
+77
+00:05:19,590 --> 00:05:29,580
+Kami hanya dapat memanggil jumlah nilai alasan yang mengembalikan bahwa EMI adalah alasan paling umum jika Anda hanya ingin mengembalikan alasan paling umum yang bisa Anda
+
+78
+00:05:29,880 --> 00:05:35,310
+katakan memiliki satu dan itu akan mengembalikan MS tetapi mengatakan hanya ada tiga
+
+79
+00:05:35,310 --> 00:05:38,660
+nilai yang akan kami tampilkan semua dari mereka.
+
+80
+00:05:38,670 --> 00:05:44,700
+Selanjutnya kami ingin menggunakan seaborne untuk membuat counterplot dari sembilan panggilan satu dengan alasan.
+
+81
+00:05:44,790 --> 00:05:45,340
+BAIK.
+
+82
+00:05:45,720 --> 00:05:52,950
+Kita ingin mengatakan Asinus counterplot dan kemudian kita ingin menentukan sumbu x sebagai alasan di sini.
+
+83
+00:05:53,080 --> 00:06:00,660
+Jadi ketika saya mengatakan X adalah alasan maka untuk counterplot tidak ada Y adalah Y secara otomatis dipilih
+
+84
+00:06:00,660 --> 00:06:02,400
+hanya menjadi hitungan.
+
+85
+00:06:02,400 --> 00:06:03,820
+Jadi kita akan mengatakan data.
+
+86
+00:06:03,930 --> 00:06:06,120
+Dan kemudian jalankan ini.
+
+87
+00:06:06,120 --> 00:06:08,440
+Dan di sini kita memiliki plot jumlah kita.
+
+88
+00:06:08,940 --> 00:06:12,830
+Sekarang jangan khawatir jika Anda tidak mendapatkan pewarnaan yang tepat seperti yang ditunjukkan dalam buku solusi.
+
+89
+00:06:12,930 --> 00:06:15,170
+Itu hanya sedikit panggilan tambahan pada palet.
+
+90
+00:06:15,180 --> 00:06:23,160
+Jadi Anda bisa melakukan sesuatu yang sama dengan Palette dan yang saya gunakan untuk solusi tepat di bawah ini dan itu
+
+91
+00:06:24,150 --> 00:06:25,340
+mengubah warna sedikit.
+
+92
+00:06:25,350 --> 00:06:27,600
+Tapi jangan khawatir tentang warna yang cocok atau lebih tinggi.
+
+93
+00:06:27,610 --> 00:06:30,100
+Itu semacam Pemetaan Warna opsional untuk setiap pilih.
+
+94
+00:06:30,150 --> 00:06:34,380
+Mudah-mudahan kita dapat mengetahui bahwa jumlah plot sama dengan alasan dan bahwa sama dengan f
+
+95
+00:06:34,380 --> 00:06:37,160
+adalah bagian paling penting dari pembuatan plot jumlah itu.
+
+96
+00:06:37,170 --> 00:06:40,140
+Sekarang mari kita fokus pada informasi waktu.
+
+97
+00:06:40,200 --> 00:06:43,900
+Apa tipe data objek dalam cap waktu memanggil mereka.
+
+98
+00:06:43,920 --> 00:06:51,780
+Nah yang dapat Anda lakukan adalah hanya memanggil informasi DFT dan itu benar-benar akan memberi tahu Anda jika Anda melihat cap waktu
+
+99
+00:06:51,780 --> 00:06:57,510
+bahwa itu adalah tipe objek dan jenis ini memberi Anda petunjuk bahwa itu bukan angka
+
+100
+00:06:57,510 --> 00:06:58,790
+dan sebenarnya string.
+
+101
+00:06:58,950 --> 00:07:06,270
+Dan jika kita ingin memastikan bahwa kita hanya dapat mengambil salah satu dari benda-benda itu sehingga kita dapat mengatakan cap waktu menggosok yang pertama dari
+
+102
+00:07:06,360 --> 00:07:09,920
+ILO untuk yang pertama dan mencatat bahwa kita mendapatkan kembali sebuah string.
+
+103
+00:07:09,930 --> 00:07:16,920
+Kami ingin mengkonfirmasi lebih lanjut bahwa kami dapat mengatakan ketik dan di sini kami miliki sebagai TR untuk string.
+
+104
+00:07:16,920 --> 00:07:19,820
+Sesuatu yang perlu diketahui jika Anda berhasil sampai ke puncak.
+
+105
+00:07:19,860 --> 00:07:23,450
+Ini dikonfirmasi di sini dengan variabel string.
+
+106
+00:07:23,760 --> 00:07:26,310
+Ok senjata kembali turun.
+
+107
+00:07:26,310 --> 00:07:29,980
+Jadi kami tahu kami memiliki informasi kali tetapi sebenarnya string.
+
+108
+00:07:30,300 --> 00:07:35,180
+Sekarang yang ingin kita lakukan adalah mengubah cap waktu ini menjadi objek waktu tanggal.
+
+109
+00:07:35,270 --> 00:07:39,500
+Kami ingin melakukan itu menggunakan PD hingga saat ini dan Anda dapat mengklik tautan ini.
+
+110
+00:07:39,630 --> 00:07:44,040
+Anda akan melihat di sini untuk menautkan ke dokumentasi tentang cara menggunakan untuk menggarisbawahi waktu tanggal.
+
+111
+00:07:44,040 --> 00:07:48,150
+Silakan dan lihat contoh-contohnya di sini, tetapi sebenarnya ini
+
+112
+00:07:48,150 --> 00:07:58,980
+adalah panggilan yang cukup sederhana, jadi semoga Anda menemukan jawabannya, tetapi pada dasarnya hanya mengatakan PD untuk menggarisbawahi waktu itu lewat kolom yang ingin
+
+113
+00:07:58,980 --> 00:08:02,420
+kita konversi kasus ini, itu sudah waktunya.
+
+114
+00:08:03,270 --> 00:08:10,610
+Dan kemudian saya hanya akan mengatur ulang kolom itu menjadi sama dengan ini.
+
+115
+00:08:11,010 --> 00:08:15,180
+Dan sekarang jika saya melanjutkan dan melihat kode ini di sini.
+
+116
+00:08:15,210 --> 00:08:17,410
+Salin dan tempel.
+
+117
+00:08:17,460 --> 00:08:20,580
+Sekarang saya punya objek cap waktu yang persis apa yang kita inginkan.
+
+118
+00:08:20,580 --> 00:08:22,700
+Ini adalah objek Tanggal Waktu sekarang.
+
+119
+00:08:22,710 --> 00:08:23,030
+Baiklah.
+
+120
+00:08:23,040 --> 00:08:29,130
+Sekarang objek waktu atau cap waktu dengan panda, Anda benar-benar dapat memahami atribut spesifik
+
+121
+00:08:29,160 --> 00:08:31,190
+dari objek dengan memanggilnya.
+
+122
+00:08:31,380 --> 00:08:35,240
+Dan ada sedikit contoh kode di sini mari kita pergi dan memeriksanya.
+
+123
+00:08:35,400 --> 00:08:38,990
+Saya hanya menyalin dan menempelkan kode contoh ini.
+
+124
+00:08:39,030 --> 00:08:44,520
+Kita dapat menjalankan ini dan menunjukkan bahwa kita benar-benar dapat mengambil informasi dari ini dan kemudian mengatakan menggunakan metode
+
+125
+00:08:44,520 --> 00:08:47,540
+tab Jupiter untuk menjelajahi berbagai atribut yang dapat Anda panggil.
+
+126
+00:08:47,760 --> 00:08:53,460
+Dan sekarang kolom waktu atau objek waktu sebenarnya menggunakan yang berlaku untuk membuat tiga kolom baru yang
+
+127
+00:08:53,520 --> 00:08:55,590
+disebut bulan dan hari dalam seminggu.
+
+128
+00:08:55,770 --> 00:09:00,270
+Anda akan membuat kolom-kolom ini berdasarkan kolom waktu dan kemudian Anda bisa referensi solusinya jika
+
+129
+00:09:00,270 --> 00:09:01,630
+Anda terjebak pada itu.
+
+130
+00:09:01,800 --> 00:09:04,300
+Biarkan saya pergi dan memecah ini hanya sedikit lebih jauh.
+
+131
+00:09:04,440 --> 00:09:07,340
+Tapi maju dan lihat jam berapa sekarang.
+
+132
+00:09:07,350 --> 00:09:10,330
+Apakah itu entri pertama di kolom cap waktu ini.
+
+133
+00:09:10,340 --> 00:09:11,660
+Tidak, katanya, cap waktu.
+
+134
+00:09:11,800 --> 00:09:15,580
+2015 12 10 dalam jam menit detik.
+
+135
+00:09:15,620 --> 00:09:19,220
+Saya melakukan titik dan memanggil atribut dari objek ini.
+
+136
+00:09:19,240 --> 00:09:24,840
+Perhatikan saya memiliki berbagai atribut yang bisa saya sebut sebagai contoh jika saya ingin tahu tahun yang sebenarnya.
+
+137
+00:09:24,870 --> 00:09:32,010
+Ini adalah saya hanya dapat memanggil tahun dan melaporkan kembali tahun 2015 jadi saya ingin tahu jam berapa
+
+138
+00:09:32,010 --> 00:09:33,190
+hari itu.
+
+139
+00:09:33,230 --> 00:09:35,650
+Melaporkannya kembali sebagai tujuh ratus jam.
+
+140
+00:09:35,650 --> 00:09:41,490
+Jadi dalam format militer atau 24 jam saya ingin tahu misalnya bulan yang masuk dan disebut bulan
+
+141
+00:09:41,720 --> 00:09:47,390
+sekarang saya bahkan dapat memanggil hal-hal seperti hari dalam seminggu sehingga hari dalam seminggu adalah tiga.
+
+142
+00:09:47,400 --> 00:09:51,800
+Dan nanti sebenarnya ada kamus di sini untuk Anda referensi.
+
+143
+00:09:51,810 --> 00:09:52,170
+Baiklah.
+
+144
+00:09:52,170 --> 00:09:57,900
+Sekarang yang ingin kita lakukan adalah memiliki kemampuan atribut klien pada kolom yang sama saat ini untuk benar-benar membuat di
+
+145
+00:09:57,900 --> 00:10:02,770
+kolom bulan dan hari dalam seminggu kami akan menunjukkan kepada Anda bagaimana kita akan melakukan itu.
+
+146
+00:10:02,790 --> 00:10:12,580
+Kita akan mengatakan misalnya setengah jam sama dengan diea dari kolom cap waktu.
+
+147
+00:10:13,370 --> 00:10:23,390
+Dan kita akan mengatakan berlaku kita katakan Lamda meluangkan waktu dan kemudian mengembalikan atribut jam.
+
+148
+00:10:24,260 --> 00:10:30,300
+Kami masuk dan menjalankan itu dan kemudian jika kami memeriksa atribut kami sekarang kami memiliki semua jam di mana panggilan
+
+149
+00:10:30,300 --> 00:10:36,150
+yang sebenarnya terjadi dari batas waktu dan kami akan melakukan hal yang sama persis untuk bulan dan hari dalam
+
+150
+00:10:36,150 --> 00:10:36,500
+seminggu.
+
+151
+00:10:36,540 --> 00:10:42,480
+Anda dapat benar-benar hanya menyalin dan menempelkan baris kode ini dan alih-alih kami. Untuk yang pertama kita
+
+152
+00:10:42,480 --> 00:10:49,080
+akan melanjutkan dan memasukkan bulan dan mengubah atribut ini ke panggilan bulan dan untuk yang kedua kita akan
+
+153
+00:10:49,080 --> 00:10:50,820
+terus maju dan menelepon
+
+154
+00:10:53,730 --> 00:10:58,670
+hari ini dalam seminggu dan kemudian ubah ini menjadi panggilan hari dalam seminggu.
+
+155
+00:10:58,770 --> 00:11:02,100
+Sekarang kita lanjutkan dan jalankan ini.
+
+156
+00:11:02,100 --> 00:11:06,630
+Mari kita lanjutkan dan periksa kepala kerangka data kami sekarang hanya untuk mengonfirmasi bahwa ini semua bekerja.
+
+157
+00:11:06,920 --> 00:11:11,980
+Dan jika kita gulir ke kanan ke pemberitahuan di sini kita memiliki tiga kolom baru.
+
+158
+00:11:11,990 --> 00:11:16,330
+Kami memiliki bulan dan hari dalam seminggu di mana beberapa angka hadir.
+
+159
+00:11:16,740 --> 00:11:23,910
+OK, hal berikutnya yang ingin Anda perhatikan adalah bagaimana hari dalam seminggu adalah bilangan bulat dari 0 hingga 6 yang
+
+160
+00:11:23,910 --> 00:11:31,730
+dikatakan menggunakan metode titik peta dengan kamus ini untuk memetakan nama string yang sebenarnya ke hari dalam seminggu yang harus Anda lakukan di
+
+161
+00:11:31,740 --> 00:11:32,600
+sini .
+
+162
+00:11:32,610 --> 00:11:36,390
+Teruskan dan salin baris kode ini.
+
+163
+00:11:36,450 --> 00:11:44,590
+Sekarang kita memiliki peta dan yang harus Anda lakukan hanyalah memetakan untuk melihat katakanlah JIKA hari dalam seminggu sama dengan f hari
+
+164
+00:11:44,590 --> 00:11:51,290
+dalam seminggu dan kemudian Anda benar-benar dapat mengatakan bahwa peta yang merupakan metode yang mereka maksud di sini.
+
+165
+00:11:51,600 --> 00:11:55,370
+Dan lalu lewati peta.
+
+166
+00:11:55,410 --> 00:11:58,050
+Dan sekarang jika kita melihat kepala pemberitahuan
+
+167
+00:12:01,050 --> 00:12:06,800
+frame data kita jika kita gulir ke kanan lagi hari dalam seminggu sekarang string sebenarnya Kamis-Jumat dan
+
+168
+00:12:06,900 --> 00:12:07,380
+sebagainya.
+
+169
+00:12:07,450 --> 00:12:09,920
+Jadi sedikit lebih mudah dibaca.
+
+170
+00:12:10,580 --> 00:12:10,990
+BAIK.
+
+171
+00:12:11,070 --> 00:12:16,140
+Sekarang kami ingin Anda melihat lebih banyak dan membuat plot balasan kolom hari dalam seminggu
+
+172
+00:12:16,140 --> 00:12:18,090
+dengan rona berdasarkan kolom alasan.
+
+173
+00:12:18,090 --> 00:12:19,320
+Mari kita lanjutkan dan membuatnya kembali.
+
+174
+00:12:19,320 --> 00:12:27,480
+Kita dapat mengatakan Asinus counterplot X akan menjadi hari dimana data kolom
+
+175
+00:12:30,450 --> 00:12:33,300
+akan menjadi día.
+
+176
+00:12:33,330 --> 00:12:36,010
+Ingat kita tidak perlu lulus dalam satu minggu atau hanya menghitung.
+
+177
+00:12:36,240 --> 00:12:41,340
+Dan jika kita lakukan ini, kita mendapatkan jumlah total per hari dalam seminggu.
+
+178
+00:12:41,400 --> 00:12:47,370
+Jadi kita dapat melihat bahwa ada sedikit penurunan pada hari Minggu di mana kita dapat menambahkan ini adalah
+
+179
+00:12:47,370 --> 00:12:53,060
+Heugh menentukan bahwa rona berdasarkan alasan dan kami memiliki rekreasi plot yang ditunjukkan dalam solusi ini.
+
+180
+00:12:53,070 --> 00:12:56,870
+Sekarang sesuatu yang perlu diperhatikan di sini adalah palet warna yang sedikit berbeda.
+
+181
+00:12:56,980 --> 00:12:58,850
+Jika Anda ingin menggunakan palet warna yang sama saya lakukan.
+
+182
+00:12:58,890 --> 00:13:08,250
+Anda dapat melanjutkan dan mengatakan palet Zucco ke viridis dan yang mereproduksi palet warna yang sama.
+
+183
+00:13:08,370 --> 00:13:13,680
+Dan hal terakhir yang perlu diperhatikan adalah bahwa legenda itu benar-benar ada di dalam sini dan dalam solusi
+
+184
+00:13:13,680 --> 00:13:15,370
+kami ingin memindahkan legenda tersebut.
+
+185
+00:13:15,540 --> 00:13:21,240
+Anda sebenarnya dapat menyalin dan menempelkan kode yang sama dengan yang Anda lakukan selama kuliah Seaborn di mana kami
+
+186
+00:13:21,240 --> 00:13:24,020
+benar-benar menunjukkan bagaimana cara menempatkan legenda di luar.
+
+187
+00:13:24,120 --> 00:13:25,180
+Kita akan menjalankannya.
+
+188
+00:13:25,260 --> 00:13:28,600
+Sekarang kita memiliki legenda di luar plot itu sendiri.
+
+189
+00:13:28,620 --> 00:13:29,010
+Baiklah.
+
+190
+00:13:29,010 --> 00:13:33,260
+Sekarang tugas berikutnya yang harus kami lakukan adalah sama untuk kolom bulan.
+
+191
+00:13:33,540 --> 00:13:42,870
+Dan pada dasarnya yang harus Anda lakukan adalah Anda hanya dapat menyalin dan menempelkan kode ini dan mengubah x menjadi bulan dan Anda akan memiliki plot yang
+
+192
+00:13:42,870 --> 00:13:47,700
+sama persis kecuali untuk kolom bulan dan kemudian pertanyaan berikutnya adalah Apakah Anda melihat
+
+193
+00:13:47,700 --> 00:13:49,950
+sesuatu yang aneh tentang ini merencanakan.
+
+194
+00:13:50,100 --> 00:13:53,340
+Dan mudah-mudahan Anda dapat memperhatikan bahwa Anda sebenarnya hilang beberapa bulan.
+
+195
+00:13:53,430 --> 00:13:57,590
+Ini berjalan satu sampai delapan tetapi Anda tidak memiliki bulan 9 10 dan 11.
+
+196
+00:13:57,660 --> 00:14:00,030
+Mereka langsung ke 12.
+
+197
+00:14:00,270 --> 00:14:05,820
+Jadi sekarang kita telah memperhatikan bahwa informasi yang hilang yang mungkin ingin kita lakukan adalah mencoba memplot
+
+198
+00:14:05,850 --> 00:14:11,400
+informasi dengan cara lain mungkin melalui plot garis sederhana yang mengisi bulan-bulan yang hilang dan untuk melakukan
+
+199
+00:14:11,400 --> 00:14:14,440
+itu kita perlu melakukan beberapa pekerjaan tambahan dengan panda.
+
+200
+00:14:14,490 --> 00:14:20,250
+Kami akan melanjutkan dan memulai bagian satu dari solusi perkuliahan di sini dan melanjutkan di bagian dua
+
+201
+00:14:20,250 --> 00:14:24,660
+dengan membuat grup dengan objek yang dipanggil bulan untuk mencoba menyelesaikan masalah ini.
+
+202
+00:14:24,660 --> 00:14:25,160
+Baik.
+
+203
+00:14:25,410 --> 00:14:27,280
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya.
+
+204
+00:14:27,280 --> 00:14:28,710
+Untuk bagian kedua dari solusi

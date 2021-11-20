@@ -1,0 +1,531 @@
+1
+00:00:05,490 --> 00:00:10,830
+Bună ziua tuturor și vă urez bun venit la prelegerea lui Matrix cu Seaborn în această lecție vom învăța
+
+2
+00:00:10,830 --> 00:00:14,940
+cum să creăm parcele de matrice, în special hărți de căldură folosind Seaborn.
+
+3
+00:00:15,120 --> 00:00:18,300
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+4
+00:00:18,870 --> 00:00:19,200
+O.K.
+
+5
+00:00:19,200 --> 00:00:21,500
+Aici sunt la notebook-ul Jupiter.
+
+6
+00:00:21,510 --> 00:00:27,280
+Am mers în față și am spus că se află în portul de mare ca Asinus și apoi am stabilit complotul pe hartă în direct.
+
+7
+00:00:27,330 --> 00:00:29,970
+Apoi am încărcat două seturi de date.
+
+8
+00:00:30,000 --> 00:00:35,550
+Am încărcat rama de date cu vârfuri sau setul de date folosind Esson ca acel set de date care subliniază încărcarea și
+
+9
+00:00:35,550 --> 00:00:37,260
+apoi treci în sfaturile de șir.
+
+10
+00:00:37,290 --> 00:00:42,660
+Și am făcut un lucru similar pentru setul de date de zbor utilizând S și S ca un set de date scăzut și
+
+11
+00:00:42,660 --> 00:00:46,030
+apoi trecând în zborurile de șir datele de vârf pe care le-am văzut înainte.
+
+12
+00:00:46,040 --> 00:00:46,980
+Iată-l capul.
+
+13
+00:00:47,040 --> 00:00:48,430
+Dar setul de date de zbor nu avem.
+
+14
+00:00:48,430 --> 00:00:49,970
+Deci, să aruncăm o privire rapidă la asta.
+
+15
+00:00:50,010 --> 00:00:56,130
+Setul de date de zbor indică în primul rând numărul de pasageri care au zburat într-o anumită
+
+16
+00:00:56,220 --> 00:00:57,750
+lună dintr-un anumit an.
+
+17
+00:00:57,750 --> 00:01:04,230
+Acum hai să vorbim despre hărțile de căldură care este modul nostru principal de a arăta un fel de complot de matrice pentru
+
+18
+00:01:04,230 --> 00:01:06,630
+ca o hartă a căldurii să funcționeze corect.
+
+19
+00:01:06,660 --> 00:01:09,630
+Datele dvs. ar trebui să fie deja într-o formă de matrice.
+
+20
+00:01:09,630 --> 00:01:15,850
+Și ceea ce vreau să spun prin formularul matricei este ca numele indexului și numele coloanei să se
+
+21
+00:01:15,850 --> 00:01:21,500
+potrivească astfel încât valoarea celulei să indice, de fapt, ceva care este relevant pentru ambele nume.
+
+22
+00:01:21,540 --> 00:01:28,680
+Ce vreau sa spun prin asta, de exemplu, daca arunc o privire la cadrele de date sfaturi acum am o factura totala, care este
+
+23
+00:01:28,890 --> 00:01:35,850
+un fel de eticheta sau variabila si daca ma uit la una din valorile din celula este de 16 de dolari si
+
+24
+00:01:35,850 --> 00:01:36,950
+99 centi .
+
+25
+00:01:37,140 --> 00:01:42,420
+Cu toate acestea, rândul nu este o variabilă reală pentru a obține această formă în matrice.
+
+26
+00:01:42,420 --> 00:01:46,830
+Trebuie să am ambele variabile pe coloane și pe rânduri.
+
+27
+00:01:47,370 --> 00:01:54,420
+Pot face acest lucru prin multe metode, de obicei printr-o masă pivot sau încercând să obțin date de corelare.
+
+28
+00:01:54,570 --> 00:01:56,860
+Vom face mai întâi datele de corelare.
+
+29
+00:01:56,940 --> 00:02:02,130
+Dacă îl numesc sfaturi opriți c sau r paranteze apropiate.
+
+30
+00:02:02,130 --> 00:02:06,290
+Acum avem aici o formă de matrice de date.
+
+31
+00:02:06,450 --> 00:02:15,390
+Și ce vrei să spui prin asta este acum coloana și numele variabilei index indică de fapt o relevanță atât pentru coloană, cât
+
+32
+00:02:15,390 --> 00:02:19,880
+și pentru numele de index pentru celula în care se potrivesc.
+
+33
+00:02:19,920 --> 00:02:21,190
+Și aceasta este forma matriceală.
+
+34
+00:02:21,210 --> 00:02:26,370
+Veți avea nevoie de datele dvs. pentru a apela harta căldurii pe ea și apoi este de fapt
+
+35
+00:02:26,370 --> 00:02:30,920
+la fel de simplă ca și apelarea hărții termice Asinus punct și apoi datele dvs.
+
+36
+00:02:30,990 --> 00:02:39,500
+Să intrăm și să salvăm Tipps gândit ca nucleu TC și apoi să-l treci pe hartă de căldură.
+
+37
+00:02:39,660 --> 00:02:45,840
+Și aici putem vedea o hartă de căldură sau o hartă de căldură într-adevăr nu este culori în aceste valori bazate pe
+
+38
+00:02:45,840 --> 00:02:47,280
+un fel de scară gradient.
+
+39
+00:02:47,280 --> 00:02:53,850
+Deci, dacă arunc o privire asupra cadrului meu original de date TCE, în esență, trebuie doar să setați aceste numere într-un gradient pe o scală
+
+40
+00:02:53,910 --> 00:02:55,970
+de culoare și apoi să le completați.
+
+41
+00:02:56,100 --> 00:03:01,380
+Și în acest fel, dacă aveți un cadru de date de corelare foarte mare sau alte date de
+
+42
+00:03:01,380 --> 00:03:07,390
+formă matrice, puteți spune cu ușurință care sunt valorile care sunt valorile relativ unele cu altele folosind o hartă a căldurii.
+
+43
+00:03:07,390 --> 00:03:12,210
+Și aceasta este principala utilizare primară pentru un complot matriceal.
+
+44
+00:03:12,210 --> 00:03:18,420
+Alte argumente utile pe care le puteți introduce aici pentru a incalzi hărțile, pe lângă datele pe care le
+
+45
+00:03:18,420 --> 00:03:26,160
+aveți și rotația, astfel încât să puteți spune A și OT ca argumente egale cu adevărat și vor adnota valorile numerice reale care aparțin fiecăruia
+
+46
+00:03:26,160 --> 00:03:27,350
+dintre aceste celule.
+
+47
+00:03:27,360 --> 00:03:31,680
+Nu trebuie doar să ieșiți din culoare, dar puteți, de asemenea, să ieșiți din valoarea reală aici.
+
+48
+00:03:31,980 --> 00:03:38,730
+Și apoi puteți specifica ca Vezi harta maparea reală a culorilor dorită va trece peste hărțile color
+
+49
+00:03:38,730 --> 00:03:43,580
+și opțiunile mai târziu în lectorii seemore de exemplu, arătând un exemplu.
+
+50
+00:03:43,710 --> 00:03:47,070
+Se răcește cald ca un șir care verifică o hartă color.
+
+51
+00:03:47,070 --> 00:03:49,200
+Și aici puteți începe să vedeți harta de culoare.
+
+52
+00:03:49,230 --> 00:03:52,650
+Răcește cald pe aceleași date.
+
+53
+00:03:52,650 --> 00:03:59,700
+Acum să revizuim datele zborului, apoi să mergem înainte și să tipăm în zboruri și putem vedea că avem
+
+54
+00:03:59,700 --> 00:04:05,640
+în acest an în această lună acest pasageri și trebuie să obținem această formă în
+
+55
+00:04:05,670 --> 00:04:13,510
+matrice ceea ce înseamnă că trebuie să convertesc cumva una dintre aceste variabile par a fi apelul sau drumul numește indicele real.
+
+56
+00:04:13,560 --> 00:04:16,500
+Vreau una dintre aceste variabile fie Anul lună, fie pasageri.
+
+57
+00:04:16,500 --> 00:04:21,340
+Să mergem mai departe și să spunem că luna este indicele.
+
+58
+00:04:21,360 --> 00:04:27,330
+Așa că am să spun că indicele este egal cu luna și apoi voi ieși
+
+59
+00:04:27,330 --> 00:04:36,330
+și voi stabili coloanele egale cu anul și apoi singurul lucru pe care l-am lăsat să fac este să precizez valorile și asta
+
+60
+00:04:36,330 --> 00:04:39,920
+va merge mai departe și să fie coloana pasagerilor.
+
+61
+00:04:41,990 --> 00:04:44,400
+Intrați și conduceți acest lucru și vedeți cum arată acum.
+
+62
+00:04:44,860 --> 00:04:45,310
+O.K.
+
+63
+00:04:45,370 --> 00:04:48,940
+Acum am datele mele într-un fel de formă de matrice.
+
+64
+00:04:48,970 --> 00:04:53,600
+Puteți face acest lucru cu Pivot Tabel destul de ușor, în funcție de cazul în care datele dvs. de linii în mod corect.
+
+65
+00:04:53,740 --> 00:04:59,470
+Acum puteți vedea că am o mulțime de numere aici care se corelează bine nu numai cu variabila coloană,
+
+66
+00:04:59,470 --> 00:05:01,360
+ci și cu variabila index.
+
+67
+00:05:01,420 --> 00:05:07,570
+Așa că văd aici în 1952, de exemplu în aprilie, erau 181 de pasageri.
+
+68
+00:05:07,570 --> 00:05:11,770
+Acum, ceea ce vreau să fac este să folosesc harta de căldură pentru a vizualiza rapid aceste date.
+
+69
+00:05:11,960 --> 00:05:18,280
+Mă duc să mă duc la cap și să-l pun pe egal cu FP pentru pivotul zborurilor și apoi să-i sun pe
+
+70
+00:05:19,690 --> 00:05:21,820
+S-ul și harta de căldură pe F-P.
+
+71
+00:05:21,970 --> 00:05:26,530
+Și aici vedem harta căldurii pentru mesele pivotate ale zborurilor.
+
+72
+00:05:26,710 --> 00:05:30,710
+Iar acum pot vedea datele bazate pe un gradient de culori într-un format foarte clar.
+
+73
+00:05:30,880 --> 00:05:36,400
+Așadar, pot să spun cu ușurință ce lună a anului a avut cele mai multe zboruri și are sens că,
+
+74
+00:05:36,550 --> 00:05:43,030
+treptat, cu cât anii merg mai departe sau mai departe în timp, veți obține mai multe zboruri, atunci acest lucru are sens deoarece,
+
+75
+00:05:43,030 --> 00:05:47,950
+pe măsură ce timpul se apropie, mai mulți oameni sunt în avioane care se întâmplă și
+
+76
+00:05:48,280 --> 00:05:56,530
+puteți vedea, de asemenea, bazate pe luna în care călătoria populară luna este, de obicei, în timpul lunilor de vară iunie iulie și august, cel puțin pentru noi date.
+
+77
+00:05:57,370 --> 00:06:04,510
+Acum, ceea ce puteți face este să adăugați în argumente cum ar fi harta pe mare și să mergem și să arătăm
+
+78
+00:06:04,510 --> 00:06:08,800
+un alt exemplu al unei hărți maritime care este utilă ca magma.
+
+79
+00:06:09,490 --> 00:06:16,570
+Și acum putem vedea de asemenea, de la întuneric la lumină, culorile reale aici, variația în alte argumente pe care le puteți trece și o
+
+80
+00:06:16,570 --> 00:06:23,410
+hartă a căldurii pe care uneori le place să le folosească este ca și culoarea și linia care este în prezent chiar acum
+
+81
+00:06:26,170 --> 00:06:27,870
+în această hartă a căldurii.
+
+82
+00:06:27,880 --> 00:06:32,560
+Toate aceste celule se ating unul de celălalt în mod direct, dar uneori poate doriți o separare.
+
+83
+00:06:32,710 --> 00:06:36,140
+Deci, puteți specifica linii cu mai mici grosimi.
+
+84
+00:06:36,340 --> 00:06:40,740
+Vom intra și vom pune într-una acolo și puteți auspice Feitel culoarea liniei.
+
+85
+00:06:40,870 --> 00:06:42,970
+Vom merge să specificăm că este alb.
+
+86
+00:06:42,970 --> 00:06:46,830
+Acum, dacă execut acest lucru, primesc aceste linii între fiecare celulă.
+
+87
+00:06:46,870 --> 00:06:48,890
+Și uneori este puțin mai ușor de citit.
+
+88
+00:06:49,360 --> 00:06:55,790
+Puteți face aceste linii cu adevărat groase dacă doriți mai multă separare și puteți de asemenea să schimbați
+
+89
+00:06:55,790 --> 00:06:56,740
+culoarea liniei.
+
+90
+00:06:56,740 --> 00:07:01,750
+Deci, de exemplu, dacă mă întorc într-o altă posibilitate, un altul se folosește uneori de oamenii pe care îi folosim ca și
+
+91
+00:07:01,780 --> 00:07:03,480
+cum ne arătăm în fața noastră rece.
+
+92
+00:07:03,740 --> 00:07:07,500
+Și asta ar arăta dacă vrei ceva ce nu e alb.
+
+93
+00:07:07,540 --> 00:07:12,130
+De asemenea, puteți alege ca negru, de exemplu.
+
+94
+00:07:12,130 --> 00:07:15,760
+Deci, într-adevăr aveți o mulțime de personalizare aici, în măsura în care doriți să separați acest lucru.
+
+95
+00:07:15,760 --> 00:07:20,890
+Să mergem să eliminăm totul și să arătăm doar harta de căldură originală aici.
+
+96
+00:07:20,890 --> 00:07:27,340
+Acum, să vorbim despre cea de-a doua grafică de tip Matrix în seaborne, care este harta clusterului, iar harta
+
+97
+00:07:27,340 --> 00:07:33,260
+clusterului va utiliza de fapt clusterizarea ierarhică pentru a produce o versiune clusteră a acestei hărți termice.
+
+98
+00:07:33,290 --> 00:07:37,900
+Dați-mi voie să vă arăt un exemplu aici, avem harta de căldură originală, dar acum voi
+
+99
+00:07:38,980 --> 00:07:45,420
+numi harta clusterului Asinus pe F. P. și observați ce avem aici.
+
+100
+00:07:45,430 --> 00:07:49,470
+Avem datele pe care trebuie să le micșorăm pentru a arăta acest lucru complet.
+
+101
+00:07:49,470 --> 00:07:55,540
+Dar acum avem datele și aceste mici clustere ierarhice și acest lucru încearcă, în principiu, să
+
+102
+00:07:55,570 --> 00:07:59,180
+strângă coloane și rânduri împreună bazându-se pe similitudinea lor.
+
+103
+00:07:59,190 --> 00:08:06,730
+Și acesta arată brusc anii și lunile și clusterile și lunile de aici pe axa y pe care le puteți vedea nu
+
+104
+00:08:06,730 --> 00:08:08,370
+mai sunt în ordine.
+
+105
+00:08:08,470 --> 00:08:11,400
+Ei pleacă în septembrie iunie august iulie octombrie aprilie.
+
+106
+00:08:11,470 --> 00:08:16,270
+Iar motivul pentru aceasta este că au fost grupați în majoritatea lunilor similare care au fost puse împreună și același
+
+107
+00:08:16,570 --> 00:08:19,810
+lucru de ani de zile puteți vedea că anumiți ani sunt acum incorecți.
+
+108
+00:08:19,830 --> 00:08:22,940
+Este anul 1949 1950 1953.
+
+109
+00:08:23,050 --> 00:08:28,570
+Aceasta este în esență clustere de informații pentru a încerca să arate coloane și rânduri care sunt similare unul cu
+
+110
+00:08:28,580 --> 00:08:33,360
+celălalt astfel încât să pot vedea acum că 1959 și 1960 sunt foarte asemănătoare unul cu celălalt.
+
+111
+00:08:33,490 --> 00:08:35,250
+Și așa și august și iulie.
+
+112
+00:08:35,290 --> 00:08:40,570
+Și puteți vedea diferitele niveluri ale ierarhiei clusterelor bazate pe aceste diagrame de arbori, dar
+
+113
+00:08:40,570 --> 00:08:48,550
+pe axa y și axa x și acum puteți începe cu adevărat să deduceți informații dintr-un complot pentru a face acest lucru și
+
+114
+00:08:48,700 --> 00:08:53,020
+mai clar ceea ce putem face este schimbarea cartografiere a culorilor.
+
+115
+00:08:53,020 --> 00:08:55,210
+Deci, a se vedea harta egală cu șirul.
+
+116
+00:08:55,210 --> 00:08:58,020
+Se răcește din nou cald.
+
+117
+00:08:58,220 --> 00:09:03,250
+Și acum vedem cu adevărat grupurile, astfel încât să vedeți că un cluster între august
+
+118
+00:09:03,550 --> 00:09:08,420
+și iulie este foarte clar și altceva ce puteți face este să standardizați scara.
+
+119
+00:09:08,440 --> 00:09:12,400
+Așa că acum suntem încă la pasageri de la 0 la 600.
+
+120
+00:09:12,520 --> 00:09:19,690
+Dar dacă v-ați dorit să normalizați acest lucru, puteți trece argumentele numite scară standard și intrare 1 și
+
+121
+00:09:19,690 --> 00:09:26,920
+acest lucru ar normaliza acest lucru de la 0 la 1 și puteți vedea într-adevăr bazat pe o
+
+122
+00:09:26,950 --> 00:09:29,890
+scară normalizată asemănările clusterelor bazate pe colorare.
+
+123
+00:09:30,130 --> 00:09:35,800
+Deci, se pare că acest noiembrie noiembrie și februarie este un fel de luni de iarnă timpurie sunt mult mai
+
+124
+00:09:35,800 --> 00:09:41,120
+aproape de pasagerii scăzut și numărul mare de pasageri este în principal în aceste luni de vară.
+
+125
+00:09:41,170 --> 00:09:41,770
+O.K.
+
+126
+00:09:41,950 --> 00:09:45,010
+Vă încurajez să continuați și să explorați documentația pentru hartă cluster.
+
+127
+00:09:45,010 --> 00:09:49,720
+Este ceva ce vă interesează, dar poate doriți să așteptați până când ajungem la algoritmii de grupare
+
+128
+00:09:49,730 --> 00:09:54,460
+de învățare a mașinilor, astfel încât să înțelegem mai bine ce se întâmplă de fapt cu matematica din
+
+129
+00:09:54,460 --> 00:09:55,360
+spatele acestor metode.
+
+130
+00:09:55,400 --> 00:09:59,770
+BERNANKE Mă gândesc la asta ca pe o metodă interesantă de a deduce doar
+
+131
+00:09:59,770 --> 00:10:06,400
+puțin mai multe informații dintr-o căldură normală decât o hartă a căldurii care va afișa lucrurile în ordinea în care le puneți într-o
+
+132
+00:10:06,400 --> 00:10:10,890
+hartă cluster va clustera lucrurile într-o ordine astfel încât grupurile similare să fie apropiate unul altuia.
+
+133
+00:10:10,900 --> 00:10:13,930
+Mulțumesc tuturor și vă văd la următoarea conferință

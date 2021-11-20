@@ -1,0 +1,831 @@
+1
+00:00:05,250 --> 00:00:09,020
+Salve a tutti e benvenuti alla conferenza sulle soluzioni per gli acquisti di e-commerce.
+
+2
+00:00:09,050 --> 00:00:10,560
+Esercizio di panda
+
+3
+00:00:10,620 --> 00:00:14,720
+Andiamo avanti e saltiamo sul taccuino di Jupiter e iniziamo a camminare attraverso queste soluzioni.
+
+4
+00:00:14,730 --> 00:00:14,970
+Tutto ok.
+
+5
+00:00:14,970 --> 00:00:18,140
+Eccomi al notebook per l'esercizio di acquisto di e-commerce.
+
+6
+00:00:18,150 --> 00:00:21,240
+Andiamo avanti e seguiamo semplicemente le istruzioni.
+
+7
+00:00:21,330 --> 00:00:26,180
+Quindi la prima cosa che dovevi fare era importare panda con una buona paga d'importazione.
+
+8
+00:00:26,180 --> 00:00:32,760
+ciò che vogliamo fare è leggere nel file CSP acquisti e-commerce e inviarlo a un amico di dati chiamato e-comm.
+
+9
+00:00:32,760 --> 00:00:34,490
+Questa è la fine di
+
+10
+00:00:34,500 --> 00:00:40,240
+Quindi quando diciamo che e-com è uguale al CD, sottolineo CXVII.
+
+11
+00:00:40,710 --> 00:00:46,100
+E poi quando iniziamo a digitare e-com, userò il completamento automatico della scheda per trovare il file attuale qui ed
+
+12
+00:00:46,210 --> 00:00:47,210
+è il primo lì.
+
+13
+00:00:47,220 --> 00:00:49,240
+Acquisti di e-commerce
+
+14
+00:00:49,770 --> 00:00:54,420
+E ho intenzione di andare avanti e controllare la testa di quel data frame
+
+15
+00:00:54,420 --> 00:00:57,240
+e puoi farlo semplicemente chiamando il metodo e-com head.
+
+16
+00:00:57,240 --> 00:01:00,430
+E lì possiamo vedere che abbiamo il capo di quel data frame.
+
+17
+00:01:00,450 --> 00:01:05,290
+Ora vogliamo sapere quante righe e colonne ci sono ci sono un paio di modi per farlo.
+
+18
+00:01:05,310 --> 00:01:13,920
+Ad esempio potresti semplicemente dire le colonne di e-com e questo restituisce un elenco delle colonne indicizzate in modo da
+
+19
+00:01:13,920 --> 00:01:19,560
+poterne effettivamente controllare la lunghezza se lo desideri e restituire comunque quante colonne
+
+20
+00:01:19,560 --> 00:01:20,140
+hai.
+
+21
+00:01:20,340 --> 00:01:28,380
+E poi potresti fare la stessa cosa per l'indice e questo ti direbbe quante righe hai avuto un bel modo per farlo comunque
+
+22
+00:01:28,380 --> 00:01:33,480
+per ottenere entrambe le informazioni contemporaneamente più un paio di altre belle informazioni che si
+
+23
+00:01:33,480 --> 00:01:38,430
+chiama il metodo di informazione off e, si spera, guardando l'output che è stato
+
+24
+00:01:38,430 --> 00:01:41,780
+un bel suggerimento per usare il metodo delle informazioni.
+
+25
+00:01:41,780 --> 00:01:42,410
+OK.
+
+26
+00:01:42,960 --> 00:01:45,870
+Che cosa significa il prezzo medio di acquisto.
+
+27
+00:01:45,870 --> 00:01:51,330
+Andiamo avanti e controlliamo le colonne ancora una volta.
+
+28
+00:01:51,360 --> 00:01:53,310
+Avviso qui abbiamo slot di indirizzo.
+
+29
+00:01:53,310 --> 00:01:58,680
+AM o PM e continuando a notare che finalmente abbiamo alla fine un prezzo di acquisto.
+
+30
+00:01:59,010 --> 00:02:04,490
+Stiamo per uscire e fare è chiamare il prezzo di acquisto della colonna e ho intenzione di andare a fare
+
+31
+00:02:04,530 --> 00:02:07,770
+il completamento automatico qui e poi voglio il prezzo medio di acquisto.
+
+32
+00:02:07,770 --> 00:02:13,080
+cui in realtà non ho pubblicato il prezzo medio di acquisto perché non voglio davvero dare via il metodo immediatamente.
+
+33
+00:02:13,080 --> 00:02:16,890
+Quindi, nella media, in questo caso, stiamo parlando di media e la ragione per
+
+34
+00:02:16,920 --> 00:02:23,910
+Quindi spero che tu riesca a capirlo e il prezzo medio arroccato sia di $ 50 a circa 35 centesimi.
+
+35
+00:02:23,910 --> 00:02:28,560
+Ora vogliamo sapere che è il prezzo di acquisto più alto e più basso che
+
+36
+00:02:28,560 --> 00:02:34,830
+possiamo fare in modo molto simile semplicemente passando la colonna e poi chiamando il massimo e il minimo di esso.
+
+37
+00:02:34,830 --> 00:02:44,300
+Quindi il prezzo massimo di acquisto è di circa 100 dollari e il prezzo minimo di acquisto è di $ 0.
+
+38
+00:02:44,700 --> 00:02:45,360
+Va bene.
+
+39
+00:02:45,480 --> 00:02:50,630
+Ora vogliamo sapere quante persone hanno l'inglese o come lingua di scelta sul sito Web.
+
+40
+00:02:51,270 --> 00:02:56,330
+la colonna inglese o la colonna della lingua ancora una volta fa ed è un e-comm.
+
+41
+00:02:56,360 --> 00:02:57,610
+Andiamo avanti e controlla
+
+42
+00:02:57,770 --> 00:02:58,560
+Vai avanti.
+
+43
+00:02:58,580 --> 00:03:02,840
+Ho intenzione di chiamare le prime tre colonne qui.
+
+44
+00:03:02,880 --> 00:03:04,290
+Rose mi scusi.
+
+45
+00:03:04,290 --> 00:03:07,110
+Quindi, nota se procedo e scorri verso destra.
+
+46
+00:03:08,010 --> 00:03:13,350
+Ho qui nella colonna del linguaggio sembra che abbia solo due stringhe di lunghezza.
+
+47
+00:03:13,380 --> 00:03:18,340
+Quindi stiamo cercando quante di queste stringhe sono uguali a E e questo significa che lo farò.
+
+48
+00:03:18,360 --> 00:03:27,540
+Ho intenzione di dire che il linguaggio di e-com è uguale alla stringa e m.
+
+49
+00:03:27,600 --> 00:03:31,700
+Ciò restituirà una serie di valori booleani.
+
+50
+00:03:31,710 --> 00:03:33,360
+Falses in Trews.
+
+51
+00:03:33,360 --> 00:03:37,800
+E ciò significa che quello che posso fare ora è andare avanti e
+
+52
+00:03:40,410 --> 00:03:42,230
+dire e-com di dove è vero.
+
+53
+00:03:42,420 --> 00:03:47,700
+Quindi posso dire e-comm e ora ho fondamentalmente un sottoinsieme del frame dei dati e posso verificarlo guardando
+
+54
+00:03:47,700 --> 00:03:48,710
+questo indice qui.
+
+55
+00:03:48,840 --> 00:03:50,610
+E notate che è qualcosa che rimbalza.
+
+56
+00:03:50,820 --> 00:03:56,760
+la testa di questo perché per tutto quello che scorre al giusto avviso qui tutte le lingue sono E-M.
+
+57
+00:03:56,850 --> 00:04:01,370
+E se faccio scorrere tutto a destra sullo stato di frame, andiamo e chiamiamo semplicemente
+
+58
+00:04:01,410 --> 00:04:06,300
+Quindi quello che voglio non è il capo di questo dato che voglio sapere quante persone hanno l'inglese.
+
+59
+00:04:06,300 --> 00:04:08,110
+Posso solo dire di contare.
+
+60
+00:04:09,330 --> 00:04:11,160
+E questo conterà le righe.
+
+61
+00:04:11,160 --> 00:04:15,310
+E così ho millenovecentotto persone che hanno l'inglese come lingua
+
+62
+00:04:15,310 --> 00:04:17,250
+preferita nel sito web.
+
+63
+00:04:17,820 --> 00:04:23,340
+E se vuoi che questo sia specifico per la colonna della lingua, puoi semplicemente chiamare la lingua
+
+64
+00:04:24,840 --> 00:04:27,590
+qui e questo ti darebbe il numero diretto.
+
+65
+00:04:27,600 --> 00:04:27,910
+Tutto ok.
+
+66
+00:04:27,960 --> 00:04:29,930
+Andiamo avanti e andiamo avanti.
+
+67
+00:04:29,970 --> 00:04:34,090
+Ora vogliamo sapere quante persone hanno il titolo di lavoro dell'avvocato.
+
+68
+00:04:34,300 --> 00:04:47,280
+Andremo avanti e faremo dire e-com dove il lavoro è uguale all'avvocato e poi lo passiamo al frame dei dati di e-com e questo restituisce il sottoinsieme del frame di
+
+69
+00:04:47,280 --> 00:04:52,830
+dati dove questo è vero in altri una varietà di i metodi effettivamente
+
+70
+00:04:52,830 --> 00:04:54,990
+ottengono la rosa da esso.
+
+71
+00:04:55,080 --> 00:04:58,170
+Potresti solo avere informazioni.
+
+72
+00:04:58,460 --> 00:05:01,740
+E questo in realtà restituisce quante righe hai così 30 voci.
+
+73
+00:05:01,790 --> 00:05:06,480
+Puoi anche fare dei conteggi che fanno la stessa cosa 30.
+
+74
+00:05:06,510 --> 00:05:13,590
+Puoi anche chiamare l'indice fuori da questo che restituisce l'indice e quindi puoi chiamare il link per quello.
+
+75
+00:05:14,130 --> 00:05:15,450
+E anche questo restituisce 30.
+
+76
+00:05:15,450 --> 00:05:20,790
+Quindi un bel po 'di metodi per ottenere la risposta sessuale 30 e sentiti libero di usare
+
+77
+00:05:20,790 --> 00:05:22,180
+qualsiasi metodo tu preferisca.
+
+78
+00:05:23,070 --> 00:05:23,310
+OK.
+
+79
+00:05:23,310 --> 00:05:27,930
+In arrivo, quante persone hanno effettuato l'acquisto durante l'ora e quante persone hanno effettuato l'acquisto
+
+80
+00:05:27,930 --> 00:05:29,760
+durante il p. m. E qui c'è un suggerimento che usa il valore.
+
+81
+00:05:29,940 --> 00:05:32,780
+Il conteggio del valore del bene rende questo veramente facile.
+
+82
+00:05:33,240 --> 00:05:35,300
+In realtà passi semplicemente nella colonna AM o PM e poi dici il valore.
+
+83
+00:05:35,310 --> 00:05:40,750
+Lasciatemi solo mostrarti i valori unici per primi.
+
+84
+00:05:40,980 --> 00:05:43,390
+Quindi, se diamo un'occhiata a questa colonna
+
+85
+00:05:43,560 --> 00:05:49,550
+e semplicemente mettiamo un avviso univoco, abbiamo solo PM e am ha valori e ciò significa che posso
+
+86
+00:05:49,560 --> 00:05:52,830
+solo dire il valore di underscore count e questo conterà automaticamente.
+
+87
+00:05:55,470 --> 00:05:56,930
+Quante persone hanno acquistato durante il p. m. e quante persone hanno acquistato durante l'AM.
+
+88
+00:05:56,970 --> 00:06:01,550
+Venendo dopo vogliamo dire quali sono i cinque titoli di lavoro più comuni.
+
+89
+00:06:02,310 --> 00:06:06,570
+Beh, ciò che conta in realtà rende anche questo molto facile, che si può fare
+
+90
+00:06:07,080 --> 00:06:12,960
+è chiamato la colonna Lavoro e hai notato che hai recuperato una serie di lavori come una serie e poi
+
+91
+00:06:14,120 --> 00:06:19,740
+puoi contare i conteggi di valore in questa colonna e poi hai effettivamente i conteggi e il conteggio dei
+
+92
+00:06:19,740 --> 00:06:20,160
+valori
+
+93
+00:06:23,640 --> 00:06:29,430
+di avviso in realtà automaticamente ordina già dagli account più popolari se si va in fondo a quelli meno popolari.
+
+94
+00:06:29,430 --> 00:06:34,080
+Quindi, se guardiamo alla testa di questo per i primi cinque,
+
+95
+00:06:34,080 --> 00:06:41,190
+ottieni i cinque più comuni titoli di lavoro interni e special designer di avvocati, direttore acquisti ecc. Ci sono un paio di altri modi per farlo, ma questo è probabilmente il modo più semplice e veloce per farlo.
+
+96
+00:06:41,560 --> 00:06:45,330
+OK.
+
+97
+00:06:45,450 --> 00:06:49,620
+Subito dopo qualcuno ha fatto un acquisto che proviene da Lotts, quota 90 spazio W. T. Qual è stato il prezzo di acquisto per questa transazione.
+
+98
+00:06:50,400 --> 00:06:51,640
+Andiamo avanti e proviamo a scoprire prima questo lotto.
+
+99
+00:06:51,990 --> 00:06:57,640
+Quindi andremo a suddividere questo passo dopo passo.
+
+100
+00:06:57,830 --> 00:07:00,680
+Diremo e-com di lotto uguale a e quindi 90.
+
+101
+00:07:00,690 --> 00:07:03,380
+Capitale spaziale W T.
+
+102
+00:07:03,390 --> 00:07:06,040
+Ho appena eseguito questo come una serie di valori booleani e voglio la riga in cui questo è vero.
+
+103
+00:07:06,060 --> 00:07:13,110
+Quindi vado a dire che e-com di questa è una selezione condizionale.
+
+104
+00:07:13,110 --> 00:07:15,430
+E ora posso vedere che ottengo il Roback dove questo è successo.
+
+105
+00:07:15,490 --> 00:07:20,650
+Quindi, se vado avanti e basta andare al prezzo di acquisto dovrei vederlo $ 75 e 10 centesimi.
+
+106
+00:07:21,120 --> 00:07:27,270
+O potrei semplicemente chiamare il prezzo di acquisto fuori da questo data frame e restituirò questi $ 75 e 10 centesimi.
+
+107
+00:07:27,270 --> 00:07:30,470
+OK.
+
+108
+00:07:30,540 --> 00:07:35,880
+Venendo in seguito cosa spedisce via e-mail la persona con il seguente numero di carta di credito.
+
+109
+00:07:35,970 --> 00:07:46,120
+Ecco il numero della carta di credito stessa.
+
+110
+00:07:46,140 --> 00:07:47,540
+Beh, vorremmo fare è un processo molto simile che dirà che vogliamo
+
+111
+00:07:47,610 --> 00:07:51,090
+che la carta di credito con e-com sia uguale a e poi sto solo andando a copiare e incollare questo numero e poi ho intenzione di passare questo nel
+
+112
+00:07:51,090 --> 00:07:52,870
+cornice dati e-com e basta afferrare la colonna e-mail al di fuori di esso.
+
+113
+00:07:53,130 --> 00:08:02,460
+E l'ho appena fatto e mi viene la stessa identica risposta.
+
+114
+00:08:02,460 --> 00:08:11,160
+Quindi Bob Dylan della Williams Asgar lo disse.
+
+115
+00:08:11,160 --> 00:08:15,340
+OK ora voglio sapere quanti avranno American Express come fornitore di carte di credito
+
+116
+00:08:16,500 --> 00:08:18,810
+e fatto un acquisto superiore a $ 95.
+
+117
+00:08:18,810 --> 00:08:22,370
+Di nuovo stiamo solo facendo una selezione condizionale.
+
+118
+00:08:22,620 --> 00:08:29,160
+Tranne ora dobbiamo ricordare come fare più condizioni quando va avanti e iniziare a sedermi al
+
+119
+00:08:29,160 --> 00:08:30,620
+mio data frame.
+
+120
+00:08:30,720 --> 00:08:32,450
+la seconda condizione tra parentesi.
+
+121
+00:08:32,460 --> 00:08:38,520
+Dirò e-comm e passerò e la prima condizione tra parentesi e poi uso la e commerciale e passerò
+
+122
+00:08:38,520 --> 00:08:39,300
+OK, la prima condizione era American Express come il loro fornitore di carte di credito.
+
+123
+00:08:39,450 --> 00:08:45,320
+Il fornitore di CC di E-com è uguale a American Express e voglio che e-com del prezzo
+
+124
+00:08:45,840 --> 00:08:48,490
+di acquisto sia superiore a $ 95.
+
+125
+00:08:48,690 --> 00:08:52,900
+Va bene.
+
+126
+00:08:52,950 --> 00:09:10,200
+Se lo eseguo, torno indietro alle righe effettive in cui questo è vero.
+
+127
+00:09:13,380 --> 00:09:16,240
+Ora ricordo.
+
+128
+00:09:16,450 --> 00:09:16,980
+Voglio solo il conteggio così posso andare avanti e dire solo che conta questo run e ne guadagno 39.
+
+129
+00:09:17,130 --> 00:09:22,060
+Di nuovo c'è un sacco di modi diversi per ottenere il conteggio.
+
+130
+00:09:22,080 --> 00:09:22,670
+Potresti anche dire informazioni che restituiscono il terzo 9 qui.
+
+131
+00:09:22,710 --> 00:09:29,720
+Puoi anche usare per esempio l'indice azionario e poi ottenere la lunghezza di questo e quello restituisce anche Trenta-nove.
+
+132
+00:09:29,970 --> 00:09:32,080
+Un sacco di modi per farlo.
+
+133
+00:09:32,070 --> 00:09:37,090
+Ma l'idea di base di ciò che voglio scendere è che in realtà ha fatto le selezioni di più condizioni.
+
+134
+00:09:37,230 --> 00:09:42,540
+È necessario passare un'impronta CS facile e quindi passarlo e stampare nuovamente CS.
+
+135
+00:09:45,770 --> 00:09:48,250
+OK.
+
+136
+00:09:48,250 --> 00:09:52,500
+Ora per gli ultimi due duri.
+
+137
+00:09:52,530 --> 00:09:57,620
+Quante persone hanno una carta di credito che scade nel 2025.
+
+138
+00:09:58,290 --> 00:09:58,860
+Quindi andiamo avanti e dare un'occhiata alla data di scadenza.
+
+139
+00:09:58,870 --> 00:10:00,950
+Quindi abbiamo la data di scadenza CC Expwy.
+
+140
+00:10:01,050 --> 00:10:04,920
+Diamo un'occhiata a questo.
+
+141
+00:10:05,710 --> 00:10:10,070
+Abbiamo quello che sembra essere una stringa.
+
+142
+00:10:10,720 --> 00:10:15,160
+Bene, chiamiamo e confermiamo che si tratta di una stringa semplicemente chiedendo il primo oggetto.
+
+143
+00:10:15,540 --> 00:10:16,700
+Quindi, se dico che EHLO vede l'errore di parentesi zero, riporta indietro la stringa 0 alla barra 20.
+
+144
+00:10:16,720 --> 00:10:19,600
+quello che farò avanti e 'afferrare i valori di quella stringa.
+
+145
+00:10:19,770 --> 00:10:25,020
+E questo significa che se in realtà voglio solo prendere l'anno, quindi questa carta di credito scade nel 2020,
+
+146
+00:10:25,090 --> 00:10:34,370
+Gli elementi sono la stringa che è indice 3 e oltre.
+
+147
+00:10:34,650 --> 00:10:39,810
+Quindi se guardi 0 1 2 3 e oltre o essenzialmente gli ultimi due.
+
+148
+00:10:39,810 --> 00:10:47,020
+E ora ottengo una stringa che è l'anno in cui andremo avanti e prendiamo queste
+
+149
+00:10:47,010 --> 00:10:50,400
+informazioni e iniziamo a usare la domanda.
+
+150
+00:10:50,400 --> 00:10:57,060
+Quindi voglio dire che Apply lambda andrà avanti e chiamerà XP Colan XP e poi dirà tre punti e quindi
+
+151
+00:10:57,540 --> 00:11:02,920
+voglio che questo sia uguale a 25 perché sto cercando la data di scadenza di 20 2025.
+
+152
+00:11:02,910 --> 00:11:05,050
+Andiamo avanti e basta eseguire questo.
+
+153
+00:11:05,040 --> 00:11:21,080
+Ho notato che ora ho una serie di falsi e veri, quindi un sacco di valori booleani.
+
+154
+00:11:21,390 --> 00:11:30,270
+Ora il motivo per cui questo è difficile è perché è necessario capire quanti di questi sono effettivamente veri.
+
+155
+00:11:31,020 --> 00:11:33,750
+Ci sono un paio di modi diversi per farlo.
+
+156
+00:11:34,100 --> 00:11:39,400
+Un modo molto rapido è che puoi effettivamente prendere la somma
+
+157
+00:11:39,390 --> 00:11:44,290
+della serie e restituirà tutti i valori veri come somma.
+
+158
+00:11:44,670 --> 00:11:46,750
+Questo è il modo in cui è fatto e le soluzioni.
+
+159
+00:11:46,800 --> 00:11:53,070
+Una specie di trucco elegante ma che lo rende difficile.
+
+160
+00:11:53,080 --> 00:11:54,860
+in e-com riportando le righe dove è vero.
+
+161
+00:11:55,200 --> 00:11:56,910
+L'altro che possiamo fare è passare questo
+
+162
+00:11:56,910 --> 00:11:59,780
+E poi solo dicendo Hai conteggio e anche questo restituirà lo stesso numero 1033.
+
+163
+00:11:59,910 --> 00:12:07,740
+OK.
+
+164
+00:12:07,750 --> 00:12:08,100
+Ora
+
+165
+00:12:08,130 --> 00:12:15,200
+per il più difficile che è quello che sono i primi cinque provider di posta elettronica più popolari e gli host di Gmail punto com yahoo dot com et cetera.
+
+166
+00:12:15,520 --> 00:12:16,310
+Andiamo avanti e vediamo come possiamo farlo.
+
+167
+00:12:16,410 --> 00:12:22,080
+Diamo un'occhiata alla colonna e-mail e notiamo che in pratica
+
+168
+00:12:22,090 --> 00:12:24,130
+abbiamo delle stringhe.
+
+169
+00:12:24,120 --> 00:12:26,110
+Ma ciò che è importante sapere è che se prendi una di queste
+
+170
+00:12:26,350 --> 00:12:28,240
+stringhe, andiamo avanti e ne prendiamo una che chiameremo questo esempio di sottolineatura.
+
+171
+00:12:31,950 --> 00:12:34,060
+L'e-mail è uguale alla prima istanza di questo.
+
+172
+00:12:34,090 --> 00:12:39,640
+Se guardo l'e-mail di esempio è solo una stringa qui.
+
+173
+00:12:39,660 --> 00:12:42,150
+Se vado avanti e dico si divide a questo ho una lista che lo
+
+174
+00:12:42,150 --> 00:12:46,600
+divide e so che il secondo elemento in questa voce di lista uno o due di indice uno è il nome di dominio Yahoo dot com.
+
+175
+00:12:46,600 --> 00:12:53,540
+Quindi quello che voglio fare è usare il tipo di logica nell'espressione
+
+176
+00:12:53,700 --> 00:13:01,330
+lambda per afferrare il provider di posta elettronica o l'host. Procedi e fallo.
+
+177
+00:13:01,380 --> 00:13:08,770
+Inserirò e-com e-mail o applicherò a Lamda l'e-mail
+
+178
+00:13:08,760 --> 00:13:14,700
+e poi diremo l'e-mail che divide.
+
+179
+00:13:14,700 --> 00:13:18,080
+E poi me ne vado a prendere.
+
+180
+00:13:18,270 --> 00:13:30,090
+Il valore all'indice 1.
+
+181
+00:13:30,100 --> 00:13:33,160
+Quindi in pratica sto usando questa logica proprio qui, ma la sto inserendo in un'espressione lambda che sto
+
+182
+00:13:33,250 --> 00:13:35,720
+per dire il valore di underscore conta per poter effettivamente contare quanti ce ne sono.
+
+183
+00:13:35,760 --> 00:13:37,390
+Andiamo e mostriamo questo per il tag hash.
+
+184
+00:13:37,380 --> 00:13:42,790
+Quindi questo restituisce una serie di tutti questi valori per quanto riguarda i provider di posta elettronica.
+
+185
+00:13:42,780 --> 00:13:49,250
+E quello che voglio fare è capire i primi cinque più popolari.
+
+186
+00:13:49,260 --> 00:13:53,710
+Quindi ricorda che possiamo solo valutare gli account insieme a AD 5.
+
+187
+00:13:54,100 --> 00:13:58,890
+E questo restituisce i primi cinque più popolari.
+
+188
+00:13:58,890 --> 00:14:01,330
+Quindi Hotmail Yahoo Gmail Smith e Wiliams dot com.
+
+189
+00:14:01,330 --> 00:14:05,910
+OK.
+
+190
+00:14:06,140 --> 00:14:08,350
+Spero che sia stato difficile per te, se lo fosse.
+
+191
+00:14:08,350 --> 00:14:12,100
+E l'hai attraversato ancora meglio.
+
+192
+00:14:12,470 --> 00:14:13,410
+Ma spero che tu abbia potuto usare la tua paga e le abilità inizino a prendere confidenza.
+
+193
+00:14:13,460 --> 00:14:17,210
+E, cosa più importante, vedi ciò che è effettivamente disponibile per te e il tipo
+
+194
+00:14:17,220 --> 00:14:20,180
+di domande a cui puoi rispondere rapidamente e facilmente dei panda.
+
+195
+00:14:20,200 --> 00:14:23,760
+Questo è il tuo primo esercizio per quanto riguarda un esercizio formale di panderers.
+
+196
+00:14:23,860 --> 00:14:28,110
+Potrebbe essere stato difficile e potrebbe essere stato davvero difficile, ma solo passare attraverso le soluzioni lentamente.
+
+197
+00:14:28,120 --> 00:14:30,030
+Assicurati di poterlo scomporre passo dopo passo e capire le soluzioni.
+
+198
+00:14:30,080 --> 00:14:34,470
+Sentiti libero di postare qualsiasi domanda tu abbia a domande e risposte e sono felice di aiutarti a spiegare
+
+199
+00:14:34,680 --> 00:14:39,100
+la logica di tutto ciò che potrebbe essere la parte più confusa di questa sono la capacità di usare
+
+200
+00:14:39,310 --> 00:14:42,930
+apply e poi le espressioni lambda avanti e rivedere le espressioni di terra in Python.
+
+201
+00:14:43,090 --> 00:14:48,060
+Se pensavi che questi ultimi due fossero estremamente difficili.
+
+202
+00:14:48,070 --> 00:14:55,080
+OK.
+
+203
+00:14:55,120 --> 00:14:58,770
+Spero ti piaccia quell'esercizio.
+
+204
+00:14:58,920 --> 00:15:02,370
+Il prossimo passo è un altro paio di esercizi per affinare ancora di più le tue abilità.
+
+205
+00:15:02,430 --> 00:15:03,240
+Grazie a tutti e ci vediamo alla prossima lezione
+
+206
+00:15:03,370 --> 00:15:04,980
+&nbsp;
+
+207
+00:15:04,990 --> 00:15:10,380
+&nbsp;
+
+208
+00:15:10,380 --> 00:15:12,250
+&nbsp;

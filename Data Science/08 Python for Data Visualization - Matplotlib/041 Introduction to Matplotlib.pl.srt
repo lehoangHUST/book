@@ -1,0 +1,179 @@
+1
+00:00:05,190 --> 00:00:09,990
+Cześć wszystkim i zapraszam na wstęp do wykładu z libsem i tego wykładu, będziemy
+
+2
+00:00:09,990 --> 00:00:15,560
+mieli krótkie wprowadzenie do tego, co Matt to jest, a następnie pokażemy tylko trochę strony internetowej od plotowania.
+
+3
+00:00:16,940 --> 00:00:23,160
+Matt lib lub jak niektórzy go wymawiają Matt plus libe jest najpopularniejszą biblioteką dla Pythona i naprawdę
+
+4
+00:00:23,590 --> 00:00:29,370
+daje ci pełną kontrolę nad niemal każdym aspektem postaci lub fabuły i jest zaprojektowany tak, aby
+
+5
+00:00:29,370 --> 00:00:34,950
+mieć bardzo podobne odczucia do Matlab, co jest innym programowaniem język w swoich własnych graficznych
+
+6
+00:00:34,950 --> 00:00:40,650
+możliwościach spiskowania map działka lib działa bardzo dobrze z Pandanusem i wyścigiem sędziowskim, dlatego też
+
+7
+00:00:40,650 --> 00:00:42,100
+poznamy to później.
+
+8
+00:00:42,090 --> 00:00:46,420
+Dowiemy się o innych bibliotekach, takich jak Seaborn, który jest faktycznie zbudowany na żywo z programu Matt
+
+9
+00:00:46,430 --> 00:00:46,900
+Plup.
+
+10
+00:00:47,100 --> 00:00:52,500
+Ale aby zrozumieć te biblioteki, ważne jest, aby zrozumieć, że fabuła przeżyła Najpierw musisz zainstalować
+
+11
+00:00:52,500 --> 00:00:57,450
+ją z Pipp lub Konda na linii poleceń lub terminalu za pomocą jednego z
+
+12
+00:00:57,450 --> 00:01:00,580
+następujących poleceń do korzystania z dystrybucji python anakonda.
+
+13
+00:01:00,720 --> 00:01:06,270
+Prosty Konda instaluje Matta Cutlipa w linii poleceń lub terminalu, który powinien zainstalować dla Ciebie.
+
+14
+00:01:06,660 --> 00:01:11,840
+Lub jeśli używasz innej wersji Python Pipp install matplotlib powinno również działać dla ciebie.
+
+15
+00:01:11,850 --> 00:01:15,160
+A teraz przejdźmy dalej i szybko obejrzyj oficjalną stronę internetową.
+
+16
+00:01:15,600 --> 00:01:21,440
+Ok, jestem tutaj, na tym filmie, na żywo org, który jest oficjalną stroną internetową dla mapy, a
+
+17
+00:01:21,450 --> 00:01:26,220
+tutaj zobaczysz informacje o wprowadzeniu, a także bardziej oficjalne instrukcje dotyczące instalacji i kilka
+
+18
+00:01:26,220 --> 00:01:27,890
+innych odnośników do dokumentacji.
+
+19
+00:01:27,960 --> 00:01:32,850
+Prawdopodobnie najważniejszy link na tej stronie jest jednak tutaj pod galerią.
+
+20
+00:01:33,030 --> 00:01:38,430
+Jeśli klikniesz na galerię lub przejdziesz do tej części, zobaczysz galerię org slash, którą przeniesiesz
+
+21
+00:01:38,550 --> 00:01:42,710
+do tego linku i powinieneś zobaczyć listę różnych rodzajów nazw działek.
+
+22
+00:01:42,960 --> 00:01:47,880
+A jeśli dalej będziesz przewijać, zobaczysz kilka figurek lub przykładowych figurek, a wszystkie one
+
+23
+00:01:47,880 --> 00:01:52,310
+są różnymi rodzajami wykresów, które Cutlip jest w stanie stworzyć dla ciebie.
+
+24
+00:01:52,470 --> 00:01:56,800
+Później dowiemy się, jak korzystać z innych bibliotek, które są lepsze dla takich rzeczy, jak wykresy fiskalne.
+
+25
+00:01:57,150 --> 00:02:01,470
+Ale jeśli kiedykolwiek będziesz miał pytanie o możliwości życia w fabule, możesz wejść
+
+26
+00:02:01,470 --> 00:02:04,580
+na tę stronę i wyszukać rodzaj poszukiwanego spisku.
+
+27
+00:02:04,590 --> 00:02:08,960
+Na przykład jeśli przejdę dalej i przewiń z powrotem tutaj, powiedzmy, że chcesz zrobić wykres kołowy.
+
+28
+00:02:09,180 --> 00:02:12,800
+Czy przyjdziesz tu i tam, gdzie jest galeria, gdzie znajduje się wykres kołowy.
+
+29
+00:02:12,990 --> 00:02:13,640
+Kliknij tutaj.
+
+30
+00:02:13,650 --> 00:02:14,980
+Wysokiej klasy wykresy biegunowe.
+
+31
+00:02:15,060 --> 00:02:19,950
+Przenieśli się do tego linku, a następnie pokażę ci kilka liczb tutaj, które są miejmy nadzieję, trafnymi
+
+32
+00:02:19,950 --> 00:02:24,360
+przykładami, gdy znajdziesz taki, który wygląda na to, co chcesz zrobić, to wejdź i kliknij
+
+33
+00:02:24,360 --> 00:02:25,240
+ten pierwszy.
+
+34
+00:02:25,390 --> 00:02:30,420
+Zaprowadzi cię do przykładowej strony, która nie tylko musi się rysować, ale ma również bardzo
+
+35
+00:02:30,720 --> 00:02:34,800
+dobrze skomentowany kod i instrukcje, jak wykonywać dowolne wątki, których szukasz.
+
+36
+00:02:34,830 --> 00:02:37,170
+W tym przypadku wykres kołowy.
+
+37
+00:02:37,170 --> 00:02:37,790
+W porządku.
+
+38
+00:02:37,890 --> 00:02:40,740
+Jest to prawdopodobnie najbardziej pomocna strona tego putta.
+
+39
+00:02:40,800 --> 00:02:45,000
+Pozostałe linki są po prostu linkami do zawartych w nim funkcji dokumentacji.
+
+40
+00:02:45,150 --> 00:02:48,600
+I będziemy omawiać najczęściej występujące funkcje w trakcie tej
+
+41
+00:02:48,600 --> 00:02:49,560
+części kursu.
+
+42
+00:02:49,560 --> 00:02:50,220
+W porządku.
+
+43
+00:02:50,220 --> 00:02:54,570
+Pamiętaj, że matplotlib org jest zasobem dla Ciebie, szczególnie na stronie galerii.
+
+44
+00:02:54,570 --> 00:02:58,950
+W następnym rozdziale pokażemy, jak właściwie wykorzystać Matta Pletta do tworzenia własnych postaci.
+
+45
+00:02:59,520 --> 00:03:01,440
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

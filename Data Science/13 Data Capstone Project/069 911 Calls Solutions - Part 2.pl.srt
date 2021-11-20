@@ -1,0 +1,987 @@
+1
+00:00:05,370 --> 00:00:10,070
+Witam wszystkich i zapraszam do drugiej części dnia, aby nakreślić niektóre wykłady dotyczące rozwiązań projektowych na noc.
+
+2
+00:00:10,100 --> 00:00:12,040
+Kiedy ktoś wywołuje projekt typu capstone.
+
+3
+00:00:12,240 --> 00:00:15,840
+Przejdźmy dalej i skoczmy w prawo tam, gdzie skończyliśmy, i przejdźmy do notatnika Jowisza.
+
+4
+00:00:16,290 --> 00:00:21,270
+OK, jestem tutaj, w miejscu, w którym skończyliśmy, odkryliśmy, że w rzeczywistości brakowało
+
+5
+00:00:21,270 --> 00:00:27,180
+kilku wartości w porównaniu z dziewięcioma brakującymi 10 i 11, a my chcemy teraz pracować z pandami,
+
+6
+00:00:27,180 --> 00:00:32,190
+aby spróbować stworzyć fabułę liniową lub inne wizualizacje, które próbują wziąć to pod uwagę.
+
+7
+00:00:32,220 --> 00:00:34,700
+Może więc możemy wypełnić te brakujące punkty danych.
+
+8
+00:00:35,140 --> 00:00:35,630
+DOBRZE.
+
+9
+00:00:35,700 --> 00:00:44,670
+Zamierzamy dalej tworzyć grupę za pomocą obiektu nazywanego miesiącem i wypowiadać grupę DMF, przekazując
+
+10
+00:00:44,670 --> 00:00:51,740
+kolumnę miesiąca i wykorzystując metodę liczenia do agregacji, pytając o wskazówki.
+
+11
+00:00:51,780 --> 00:00:52,490
+A potem było już dalej.
+
+12
+00:00:52,490 --> 00:00:54,540
+Po prostu sprawdź głowę.
+
+13
+00:00:54,570 --> 00:00:56,050
+Wg miesiąca.
+
+14
+00:00:56,590 --> 00:00:58,040
+OK, a tutaj widzimy głowę.
+
+15
+00:00:58,050 --> 00:01:04,500
+Z miesiąca na miesiąc zauważysz, że w zasadzie to, co się wydarzyło, to że policzyliśmy każde wystąpienie
+
+16
+00:01:04,500 --> 00:01:10,680
+kolumn w danym miesiącu lub zrobimy to, aby zauważyć, że niektóre z nich są różne w
+
+17
+00:01:10,740 --> 00:01:13,140
+zależności od rzeczywistej wartości kolumny.
+
+18
+00:01:13,180 --> 00:01:15,900
+A to dlatego, że w zasadzie brakuje niektórych wartości.
+
+19
+00:01:15,960 --> 00:01:18,590
+Kiedy zagregujesz to miesiącem lub zamierzamy to zrobić.
+
+20
+00:01:18,600 --> 00:01:19,860
+Nie ma nawet wszystkiego.
+
+21
+00:01:19,890 --> 00:01:24,050
+Po prostu wybierz kolumnę szerokości geograficznej jako naszą wartość dla liczby agregatów.
+
+22
+00:01:24,120 --> 00:01:29,980
+Załóżmy, że gdybyśmy mieli szerokość połączenia, połączenie faktycznie miało miejsce.
+
+23
+00:01:30,000 --> 00:01:34,660
+Teraz możemy utworzyć prosty wykres ramki danych, wskazując liczbę kosztów na miesiąc,
+
+24
+00:01:34,670 --> 00:01:42,060
+a sposób, w jaki możemy to zrobić, polega właśnie na wykreślaniu kolumn, które mówimy po miesiącu, wywołując kolumnę,
+
+25
+00:01:42,150 --> 00:01:45,750
+na przykład szerokość geograficzną, a następnie wypisanie wykresu.
+
+26
+00:01:46,530 --> 00:01:51,240
+A tutaj mamy nasz miesiąc i teraz byliśmy w stanie wypełnić niektóre z tych brakujących
+
+27
+00:01:51,660 --> 00:01:55,960
+informacji poprzez zasadniczo dopasowanie pomiędzy punktami ósemek i punktami na poziomie 12.
+
+28
+00:01:56,040 --> 00:02:00,260
+A potem możesz zobaczyć krzywą w dół może trochę lepiej, niż byś był w stanie.
+
+29
+00:02:00,450 --> 00:02:06,210
+Gdybyś zrobił to tylko przy pomocy barowej fabuły i pokazał ci, że może
+
+30
+00:02:06,240 --> 00:02:14,430
+w nieco bardziej szczegółowym temacie zajrzę i skopiuję ten kod, wkleję go tutaj i zamierzam go usunąć, a następnie,
+
+31
+00:02:14,490 --> 00:02:17,460
+jeśli mam uruchom to zobaczymy kod.
+
+32
+00:02:17,460 --> 00:02:18,900
+Mamy miesiąc.
+
+33
+00:02:18,900 --> 00:02:20,800
+Nie przejmuj się tym małym ostrzeżeniem.
+
+34
+00:02:21,090 --> 00:02:23,340
+Ale to zasadniczo pokazuje te same informacje.
+
+35
+00:02:23,340 --> 00:02:25,670
+Jednak bez 9 10 i 11 miesięcy.
+
+36
+00:02:25,840 --> 00:02:31,650
+Tak więc można zobaczyć spadek z 7 miesiąca dwa miesiące osiem i 12 godzin.
+
+37
+00:02:31,650 --> 00:02:33,050
+Może to trochę bardziej jasne.
+
+38
+00:02:33,100 --> 00:02:37,060
+Obniżenie między 8 a 12 przy użyciu tego rodzaju wykresu liniowego.
+
+39
+00:02:37,380 --> 00:02:42,450
+I faktycznie możesz rozejrzeć się za kolumnami, które wybierasz, np. Kolumna miejska lub
+
+40
+00:02:42,750 --> 00:02:50,220
+kolumna zip itp., Aby zobaczyć, jak wyraźna jest ta kropla to tylko obszar analizy danych eksploracyjnych, czy może
+
+41
+00:02:50,250 --> 00:02:56,430
+nie ma dokładnie poprawnej odpowiedzi, chyba że chcesz pokazać coś bardzo konkretnie za pomocą metod
+
+42
+00:02:56,430 --> 00:03:01,050
+ilościowych iw takim przypadku prawdopodobnie pokażesz ten rodzaj wykresu słupkowego.
+
+43
+00:03:01,050 --> 00:03:06,540
+Ale dobrze jest po prostu zorientować się w trendzie za pomocą tego prostego polecenia wydruku.
+
+44
+00:03:06,540 --> 00:03:06,960
+W porządku.
+
+45
+00:03:07,320 --> 00:03:11,850
+Teraz przejdźmy dalej i zobaczmy, czy możemy użyć wykresu L-M żałoby, aby dopasować liniowo
+
+46
+00:03:11,850 --> 00:03:13,000
+liczbę połączeń miesięcznie.
+
+47
+00:03:13,050 --> 00:03:17,750
+Pamiętaj, że aby to zrobić, konieczne może być zresetowanie indeksu do kolumny.
+
+48
+00:03:17,790 --> 00:03:20,870
+To, co zamierzam zrobić i wyjść, to powiedzieć.
+
+49
+00:03:20,880 --> 00:03:27,330
+Mam zamiar powiedzieć S. ZA. myśli L. M. spisek dla tej
+
+50
+00:03:27,330 --> 00:03:35,420
+liniowej fabuły Seaborna i chcę mojego X, jeśli wyjdziemy i sprawdzimy, że jest miesiąc i możemy teraz wybrać teraz być może osiedle miejskie dla osi Y.
+
+51
+00:03:35,520 --> 00:03:39,690
+Możesz także wybrać szerokość geograficzną lub naprawdę dowolną inną kolumnę, jeśli chcesz eksperymentować
+
+52
+00:03:39,690 --> 00:03:42,460
+z tym tak po prostu liczy się tylko.
+
+53
+00:03:43,680 --> 00:03:48,860
+A potem dane będą według miesiąca.
+
+54
+00:03:49,950 --> 00:03:52,890
+Ale zauważ tutaj, powiedziałem, że X jest kolumną miesiąca.
+
+55
+00:03:52,890 --> 00:04:00,480
+Jeśli spojrzymy wstecz na miesiąc, to nie mamy kolumny miesiąca, w której miesiąc był indeksem.
+
+56
+00:04:00,570 --> 00:04:05,370
+To, co zamierzam zrobić, to zresetować indeks do miesiąca, aby to zadziałało i
+
+57
+00:04:08,770 --> 00:04:11,070
+uczynić go jeszcze bardziej przejrzystym.
+
+58
+00:04:11,070 --> 00:04:15,720
+Pozwól, że pokażę ci, jak to naprawdę wygląda.
+
+59
+00:04:16,350 --> 00:04:21,750
+Jeśli zresetuję indeks lub miesiąc, ustawię miesiąc w nowej kolumnie, co pozwoli
+
+60
+00:04:21,750 --> 00:04:26,630
+Seabornowi na dostęp do tych informacji zamiast do indeksu.
+
+61
+00:04:26,880 --> 00:04:29,110
+I w ten sposób mogę przejść i miesiąc tutaj jest ciągiem znaków.
+
+62
+00:04:29,130 --> 00:04:31,200
+W przeciwnym razie Seaborn mógłby się zdezorientować.
+
+63
+00:04:31,290 --> 00:04:39,060
+I właśnie to musieliśmy użyć tego ostatniego indeksu do kolumny, a następnie otrzymujemy model liniowy i widzimy, że ogólnie rzecz
+
+64
+00:04:39,060 --> 00:04:43,980
+biorąc, w odniesieniu do tego, co Seymore to rodzaj w tym modelu,
+
+65
+00:04:43,980 --> 00:04:47,640
+liczba połączeń spada z 0 do 12 miesiąc.
+
+66
+00:04:47,640 --> 00:04:52,850
+Pamiętajcie, że seaborne nie ma wystarczających informacji, aby zdać sobie sprawę, że jest to miesiąc.
+
+67
+00:04:52,980 --> 00:04:57,380
+I tak, że 13 i 14 nie powinny faktycznie istnieć lub kontynuować.
+
+68
+00:04:57,420 --> 00:05:01,800
+Jest to w rzeczywistości dane sezonowe iw tym przypadku prawdopodobnie model liniowy jest w rzeczywistości
+
+69
+00:05:01,890 --> 00:05:07,530
+najlepiej dopasowany i można zauważyć, że kraje nadbrzeżne pokazują to z tym zacienionym obszarem wskazującym na błąd, a błąd
+
+70
+00:05:07,560 --> 00:05:12,360
+w zasadzie wzrasta wraz z upływem tych miesięcy, w których jest mniej informacji. co naprawdę ma
+
+71
+00:05:12,360 --> 00:05:15,540
+sens, aby uzyskać informacje o dziewięciu 10 lub 11 miesiącach.
+
+72
+00:05:15,900 --> 00:05:21,770
+Widać, że ten trend, w którym zaczyna spadać, zaczyna się pojawiać, a następnie rozbija się o osiem miesięcy,
+
+73
+00:05:21,870 --> 00:05:24,540
+o czym możesz się później przekonać w danych.
+
+74
+00:05:24,540 --> 00:05:30,170
+Cóż, przejdźmy dalej i zostawmy to na teraz i zbadajmy trochę więcej informacji o dacie.
+
+75
+00:05:30,930 --> 00:05:31,210
+DOBRZE.
+
+76
+00:05:31,220 --> 00:05:36,920
+Chcieliśmy zrobić następną, tworząc nową kolumnę o nazwie date, która zawiera datę z kolumny
+
+77
+00:05:36,930 --> 00:05:42,590
+znacznika czasu, a będziesz musiał użyć apply wraz z metodą close nawiasów.
+
+78
+00:05:42,600 --> 00:05:50,460
+Pozwól mi wejść i pokaż, co to właściwie oznacza datami, pokazując przykład kolumny
+
+79
+00:05:50,460 --> 00:05:51,790
+z datownikiem.
+
+80
+00:05:51,920 --> 00:05:58,860
+Zamierzam iść dalej i po prostu pobrać pierwszą instancję kolumny znacznika czasu i zadzwonić do jednego z
+
+81
+00:05:58,880 --> 00:06:00,000
+tych obiektów.
+
+82
+00:06:00,010 --> 00:06:00,320
+W porządku.
+
+83
+00:06:00,320 --> 00:06:06,180
+Jest to obiekt znacznika czasu i jest nieco inny niż obiekt daty.
+
+84
+00:06:06,240 --> 00:06:13,520
+A powodem tego jest to, że jeśli zadzwonię z datami, otrzymam teraz obiekt z datą.
+
+85
+00:06:13,530 --> 00:06:15,750
+A to pokazuje tylko informacje o datach.
+
+86
+00:06:15,750 --> 00:06:20,940
+Nie ma już informacji o czasie i to jest dobre, ponieważ to, co chcemy później
+
+87
+00:06:20,940 --> 00:06:25,440
+zrobić, tworzy wykres, który wygląda tak, jak tylko liczba połączeń według daty.
+
+88
+00:06:25,440 --> 00:06:31,760
+Nie chcemy zalewać tych informacji liczbą połączeń z nią co minutę co godzinę.
+
+89
+00:06:31,750 --> 00:06:32,400
+W porządku.
+
+90
+00:06:32,670 --> 00:06:45,060
+Oznacza to, że powiedzmy, że data ZF jest równa DMF znacznika czasu.
+
+91
+00:06:45,180 --> 00:06:49,760
+I tak jak przedtem, zanim przejdę do tego i
+
+92
+00:06:49,760 --> 00:06:55,320
+zastosuję ten Fil-Am, wyrażenie, które przyjmuję tym razem, zobaczy i powróci do dat.
+
+93
+00:06:55,350 --> 00:06:57,620
+Idę do przodu i stosuję to.
+
+94
+00:06:57,620 --> 00:07:05,490
+Teraz, jeśli spojrzę na głowę ZF i pójdę całą drogę tutaj.
+
+95
+00:07:05,610 --> 00:07:11,330
+Teraz mam tę fajną kolumnę daty, która jest odjeżdżana z tej kolumny znacznika czasu, a następnie, kiedy chcę
+
+96
+00:07:11,370 --> 00:07:16,340
+iść do przodu i robię to jest pogrupowana według kolumny stanu z agregatem liczenia.
+
+97
+00:07:16,430 --> 00:07:18,590
+Tak więc powiem, że data diff.
+
+98
+00:07:18,670 --> 00:07:19,070
+Whoops.
+
+99
+00:07:19,110 --> 00:07:24,350
+Właściwie chcę powiedzieć grupę DFA według daty passen.
+
+100
+00:07:24,360 --> 00:07:26,380
+To właśnie chcę kupić.
+
+101
+00:07:26,460 --> 00:07:32,270
+Zamierzam iść naprzód i się liczy, a potem wejdźmy do środka i zobaczmy, jak wygląda
+
+102
+00:07:32,270 --> 00:07:33,760
+sytuacja tego stanu.
+
+103
+00:07:34,470 --> 00:07:35,150
+DOBRZE.
+
+104
+00:07:35,250 --> 00:07:41,090
+I to w zasadzie zlicza wszystkie przypadki jej daty rzeczywistej daty, która miała miejsce.
+
+105
+00:07:41,100 --> 00:07:46,440
+Zauważmy, że istnieje pewna różnica między niektórymi z tych wartości kolumn, a to po prostu
+
+106
+00:07:46,470 --> 00:07:53,130
+wskazuje, że brakuje niektórych informacji na przykład z 300 na 96 połączeń w dniu 11 grudnia są grosz,
+
+107
+00:07:53,150 --> 00:07:55,020
+jak chcesz to przeczytać.
+
+108
+00:07:55,130 --> 00:08:03,590
+Czy to jeszcze 11 grudnia miałeś 333 z kodem pocztowym, czy 396 mieliśmy szerokość geograficzną.
+
+109
+00:08:04,560 --> 00:08:07,440
+Przejdźmy dalej i wybierz jedną z tych kolumn.
+
+110
+00:08:07,440 --> 00:08:12,810
+Jest to dość arbitralne, ponieważ w rzeczywistości są one dość blisko liczby, ale mam
+
+111
+00:08:13,640 --> 00:08:21,120
+zamiar iść do przodu i zdobyć kolumnę szerokości geograficznej, a możesz eksperymentować, chwytając różne kolumny, w jaki sposób się porównują.
+
+112
+00:08:21,120 --> 00:08:26,430
+I tutaj masz kolumnę szerokości geograficznej, która teraz daje mi datę i liczbę połączeń, w
+
+113
+00:08:26,430 --> 00:08:29,740
+których znaliśmy szerokość geograficzną, a następnie mogę iść dalej.
+
+114
+00:08:29,740 --> 00:08:33,880
+Po prostu wypisz to, a to da mi fabułę, która wygląda tak.
+
+115
+00:08:33,960 --> 00:08:41,340
+Zauważ, że niektóre z tych etykiet nakładają się na siebie, a co możemy zrobić, to powiedzieć, że mamy peel Tely, jak
+
+116
+00:08:41,340 --> 00:08:46,710
+pokazaliśmy wcześniej, aby faktycznie naprawić ten indeks i uzyskać coś, co wygląda trochę ładniej.
+
+117
+00:08:47,460 --> 00:08:48,200
+W porządku.
+
+118
+00:08:48,210 --> 00:08:52,980
+A potem, kiedy rzeczywiście zauważamy, wygląda na to, że w lutym i w marcu są
+
+119
+00:08:53,300 --> 00:08:59,270
+znaczące skoki, a potem w maju i może pod koniec sierpnia mamy do czynienia z pewnymi spadkami lub kilkoma
+
+120
+00:08:59,310 --> 00:09:00,020
+szczytowymi skokami.
+
+121
+00:09:00,020 --> 00:09:01,520
+Trudno powiedzieć tutaj.
+
+122
+00:09:01,950 --> 00:09:06,720
+Możesz śmiać się z tą fabułą lub rozszerzyć fabułę, aby uzyskać trochę więcej informacji
+
+123
+00:09:06,720 --> 00:09:08,170
+na temat faktycznych dat.
+
+124
+00:09:08,510 --> 00:09:13,230
+Cóż, zamierzamy teraz kontynuować i teraz odtworzyć ten wykres, aby utworzyć trzy osobne działki,
+
+125
+00:09:13,230 --> 00:09:15,950
+z których każda przedstawia przyczynę wywołania 911.
+
+126
+00:09:16,010 --> 00:09:22,120
+Wracając do uzasadnienia ramki danych lub przepraszam, zadzwoń do Mishu, co przez to rozumiem.
+
+127
+00:09:22,480 --> 00:09:25,100
+Więc jeśli przewińę tutaj, chcę odtworzyć ten wątek.
+
+128
+00:09:25,160 --> 00:09:31,420
+Mamy więc jedną fabułę, w której tylko połączenia drogowe wywołują tylko wywołania przeciwpożarowe, a wtedy
+
+129
+00:09:32,820 --> 00:09:39,120
+tylko wywołania M-S i my to robimy jest bardzo podobny proces do tego, co tutaj zrobiliśmy.
+
+130
+00:09:40,190 --> 00:09:45,480
+Zamierzamy skopiować i wkleić to, ale zamiast całej ramki danych użyję wyboru
+
+131
+00:09:45,480 --> 00:09:48,790
+warunkowego, aby faktycznie wykonać grupę według.
+
+132
+00:09:49,350 --> 00:09:52,760
+Więc powiem, że DSF, gdzie powód ATF jest
+
+133
+00:09:55,500 --> 00:10:03,150
+równy pierwszemu, możemy po prostu iść do przodu i powiedzieć ruch do nas tam, a potem jedziemy i
+
+134
+00:10:03,140 --> 00:10:09,880
+to działamy i tam mamy działkę dla ruchu i jeśli chcesz mógł również powiedzieć Odwołanie do
+
+135
+00:10:09,880 --> 00:10:17,020
+tytułu i wskazać, że chcesz, aby tytuł był ruchem, a teraz możemy po prostu użyć tego samego
+
+136
+00:10:17,020 --> 00:10:19,810
+kodu do wykonania innych wykresów.
+
+137
+00:10:19,810 --> 00:10:24,450
+Więc jeśli chcieliśmy ognia, po prostu zastąpiliśmy to ogniem jako powód.
+
+138
+00:10:25,000 --> 00:10:30,610
+A teraz jesteśmy w stanie wykorzystać całą pracę, którą wykonaliśmy wcześniej, aby stworzyć te trzy
+
+139
+00:10:30,610 --> 00:10:31,390
+oddzielne wątki.
+
+140
+00:10:31,390 --> 00:10:35,770
+I możesz iść do przodu i rodzaj zbadać je na własną rękę
+
+141
+00:10:35,830 --> 00:10:41,050
+i zobaczyć, czy można znaleźć różnice między może kilka połączeń lub częstotliwość połączeń w terminach.
+
+142
+00:10:41,050 --> 00:10:45,910
+Na przykład interesujące może być zobaczenie, jak pogoda wpłynie na ogień w oparciu o miesiąc
+
+143
+00:10:45,910 --> 00:10:46,680
+lub dzień.
+
+144
+00:10:47,110 --> 00:10:49,840
+Widać tam kilka ciekawych kolców.
+
+145
+00:10:49,840 --> 00:10:50,230
+DOBRZE.
+
+146
+00:10:50,320 --> 00:10:51,550
+Idąc dalej.
+
+147
+00:10:51,550 --> 00:10:56,140
+Przejdźmy wreszcie do tworzenia map ciepła z Seaborn i naszymi danymi.
+
+148
+00:10:56,410 --> 00:11:01,420
+Najpierw musimy zmienić strukturę danych, aby kolumny stały się godzinami, a
+
+149
+00:11:01,480 --> 00:11:04,080
+indeks stał się dniem tygodnia.
+
+150
+00:11:04,130 --> 00:11:09,940
+W rzeczywistości jest wiele sposobów na zrobienie tego, ale polecam spróbować użyć grupy za pomocą
+
+151
+00:11:09,970 --> 00:11:13,540
+nowej metody, którą chciałem, abyś odkrył, nazywając metodę nieupakowaną.
+
+152
+00:11:13,540 --> 00:11:17,470
+I tu jest link do dokumentacji i możesz odnieść się do rozwiązań, jeśli utkniesz
+
+153
+00:11:17,470 --> 00:11:18,240
+w tym.
+
+154
+00:11:18,310 --> 00:11:21,820
+Pozwól, że posuniemy się naprzód i podzielę się, jak stworzyć coś, co wygląda tak.
+
+155
+00:11:21,820 --> 00:11:26,400
+Ta mapa ciepła pamięta powrót do mapy skupień i wykładów mapy cieplnej.
+
+156
+00:11:26,410 --> 00:11:33,280
+Potrzebujemy naszych danych w postaci znanej jako matryca, w której każda pojedyncza komórka powraca do
+
+157
+00:11:34,120 --> 00:11:38,440
+wartości reprezentującej wartość w kolumnie i samego indeksu.
+
+158
+00:11:38,470 --> 00:11:40,980
+Znaczenie nasze zero w piątki.
+
+159
+00:11:40,990 --> 00:11:42,820
+Tak powstała liczba połączeń.
+
+160
+00:11:43,240 --> 00:11:47,300
+OK, posuwajmy się dalej i nauczmy się korzystać z metody unstacked.
+
+161
+00:11:47,310 --> 00:11:50,980
+W dokumentacji znajduje się kilka przykładów, które, mam nadzieję, możesz sam
+
+162
+00:11:50,980 --> 00:11:51,430
+odkryć.
+
+163
+00:11:51,640 --> 00:11:52,560
+Ale utknął na tym.
+
+164
+00:11:52,570 --> 00:11:56,310
+Bez obaw, ponieważ pokażę ci teraz, jak to zrobić.
+
+165
+00:11:56,440 --> 00:11:59,320
+Zamierzamy iść dalej i powiedzieć grupę DF.
+
+166
+00:11:59,740 --> 00:12:03,580
+I będę musiał zgrupować według listy.
+
+167
+00:12:03,580 --> 00:12:10,070
+W tym przypadku, ponieważ nie chcę po prostu grupować według dnia tygodnia, chcę również grupować po godzinie,
+
+168
+00:12:14,470 --> 00:12:21,070
+a kiedy mam zamiar iść dalej, to znaczy, policz to, idź dalej i zobacz, co to wygląda jak
+
+169
+00:12:21,070 --> 00:12:25,650
+i to w zasadzie pozwala mi grupować i tworzyć indeks wielopoziomowy.
+
+170
+00:12:25,690 --> 00:12:31,330
+Dzień tygodnia, potem godzina, a potem tylko liczba dla każdej kolumny tutaj.
+
+171
+00:12:31,390 --> 00:12:39,250
+Więc mam ten wielopoziomowy indeks, co mogę teraz zrobić, to po prostu zadzwonić do pojedynczej kolumny z tego może powód, dla którego
+
+172
+00:12:39,310 --> 00:12:40,270
+możemy zrobić
+
+173
+00:12:43,690 --> 00:12:45,960
+to i teraz mam ten wielopoziomowy indeks.
+
+174
+00:12:46,090 --> 00:12:52,570
+A kluczem do metody nieopakowanej jest to, że zasadniczo pozwala ci to rozpakować i uczynić
+
+175
+00:12:52,570 --> 00:12:54,840
+z niej formę matrycy.
+
+176
+00:12:56,410 --> 00:12:58,230
+A teraz mam tę matrycę.
+
+177
+00:12:58,240 --> 00:13:04,810
+Tak więc kroki grupowały się według wielu kolumn tworzących ten indeks wielopoziomowy, a następnie były w stanie używać i
+
+178
+00:13:04,810 --> 00:13:10,870
+układać w stosy, aby w zasadzie odpakować ten indeks i utworzyć jeden z nich jako kolumny, a
+
+179
+00:13:10,870 --> 00:13:12,970
+jeden z nich jako indeks.
+
+180
+00:13:12,970 --> 00:13:13,340
+W porządku.
+
+181
+00:13:13,420 --> 00:13:17,620
+Nie martw się, jeśli utknąłeś na tym lub miałeś z tym kłopot, jest to bardzo
+
+182
+00:13:17,620 --> 00:13:19,050
+zaawansowana metoda, aby to zrobić.
+
+183
+00:13:19,060 --> 00:13:23,620
+Są inne metody, które można wypróbować, takie jak użycie tabeli przestawnej lub tabeli przestawnej typu Pandurs,
+
+184
+00:13:23,620 --> 00:13:27,230
+ale znowu nie martw się zbytnio, jeśli jesteś w stanie to zrobić.
+
+185
+00:13:27,270 --> 00:13:32,620
+To trochę dzieje się po prostu doświadczeniem praktycznym i umiejętnością zaglądania do dokumentacji.
+
+186
+00:13:33,980 --> 00:13:40,000
+Cóż, zadzwonię do całej godziny w ramce danych, a teraz, gdy mamy taką ramkę danych, mogę
+
+187
+00:13:40,000 --> 00:13:44,250
+łatwo tworzyć mapy ciepła, a ta część będzie naprawdę prosta.
+
+188
+00:13:44,320 --> 00:13:50,880
+Po prostu nazywamy mapę upałów S i S mijającą godziną dnia i to w zasadzie wszystko, co musimy zrobić.
+
+189
+00:13:50,890 --> 00:13:57,130
+Teraz otrzymujemy dzień tygodnia w stosunku do godziny, a następnie liczbę wywołań jako wskaźnik
+
+190
+00:13:57,130 --> 00:14:04,240
+koloru i możemy nadal próbować sprawić, by wyglądało to bardziej jak rozwiązania, mówiąc: Zobacz mapę przechodzącą w viridis.
+
+191
+00:14:04,240 --> 00:14:09,370
+A teraz otrzymujemy taki sam schemat kolorów, jak w przypadku rozwiązań, i możemy
+
+192
+00:14:09,400 --> 00:14:15,250
+zwiększyć nieco figurę, mówiąc, że Piel złagodzi tę liczbę i dodając jako rozmowę wielkość rys.
+
+193
+00:14:16,780 --> 00:14:19,000
+A teraz mamy w zasadzie to, co było w rozwiązaniach.
+
+194
+00:14:19,120 --> 00:14:24,810
+Możemy również utworzyć mapę skupień z tą ramką danych w bardzo podobny sposób, wypowiadając
+
+195
+00:14:24,810 --> 00:14:26,950
+mapę klastra s i s.
+
+196
+00:14:26,950 --> 00:14:34,000
+I znów przechodząc w ramce danych opuściliśmy stworzoną przez nas mapę See, która tworzy
+
+197
+00:14:36,850 --> 00:14:39,010
+tę samą mapę klastra.
+
+198
+00:14:39,010 --> 00:14:43,990
+Jeśli nie masz pojęcia, jak właściwie to, co się dzieje w tej linii, możesz publikować na forach pytań
+
+199
+00:14:43,990 --> 00:14:44,770
+i odpowiedzi.
+
+200
+00:14:44,770 --> 00:14:46,900
+I cieszę się, że mogę wyjaśnić to nieco więcej.
+
+201
+00:14:46,900 --> 00:14:51,520
+Pamiętaj jednak, że jest to rodzaj zaawansowany i jeśli utkniesz w martwym punkcie Nie przejmuj
+
+202
+00:14:51,520 --> 00:14:54,480
+się, jeśli odwołasz się do poruszających się rozwiązań.
+
+203
+00:14:54,490 --> 00:14:59,230
+Chcemy tylko powtórzyć te same wykresy i operacje dla ramki danych, która pokazuje miesiąc jako kolumnę, którą
+
+204
+00:14:59,320 --> 00:15:03,640
+zamierzam kontynuować i po prostu skopiować i wkleić to z rozwiązań, ponieważ jest to w
+
+205
+00:15:03,640 --> 00:15:06,120
+zasadzie ten sam kod, co właśnie zrobiliśmy powyżej.
+
+206
+00:15:06,130 --> 00:15:12,730
+Ale w tym przypadku zamiast mówić na przykład o godzinie, którą ustawiliśmy w danym miesiącu i jeśli przejdziemy
+
+207
+00:15:12,730 --> 00:15:13,960
+dalej, sprawdzimy to.
+
+208
+00:15:14,140 --> 00:15:18,900
+Teraz mamy dzień miesiąca i po prostu znowu robimy te same spiski.
+
+209
+00:15:19,060 --> 00:15:28,110
+Więc po prostu idźmy tutaj, zwróćmy mapę, przewińmy ją w dół zamiast godziny.
+
+210
+00:15:28,120 --> 00:15:29,320
+Chcę użyć dnia miesiąca, a to
+
+211
+00:15:32,590 --> 00:15:33,290
+mnie dopadnie.
+
+212
+00:15:33,310 --> 00:15:38,020
+Ta mapa ciepła i jeśli chcę utworzyć mapę klastra poza tym, mogę zrobić to
+
+213
+00:15:38,020 --> 00:15:40,200
+samo z wyjątkiem zwykłego klastra wywołań.
+
+214
+00:15:40,900 --> 00:15:42,810
+A to tworzy mapę skupień.
+
+215
+00:15:42,910 --> 00:15:47,890
+Mogę więc teraz zbadać dane i zobaczyć, jakie są godziny w tygodniu, w które
+
+216
+00:15:47,890 --> 00:15:51,160
+dni tygodnia są najbardziej popularne w ciągu jednej nocy.
+
+217
+00:15:51,160 --> 00:15:56,020
+A jeśli przyjrzymy się temu krótko, to ma sens, że nie dzieje się
+
+218
+00:15:56,020 --> 00:16:01,170
+wiele połączeń między godziną 0 a 5, ponieważ jest to zasadniczo północ do 5:00 rano.
+
+219
+00:16:01,180 --> 00:16:02,350
+Więc wszyscy śpią.
+
+220
+00:16:02,500 --> 00:16:07,090
+Większość działalności przestępczej lub powody, dla których nie dzwonię, takie jak wypadki komunikacyjne
+
+221
+00:16:07,180 --> 00:16:11,980
+m bałagan lub ogień nie jest tak bardzo działalności przestępczej w tym zestawie danych.
+
+222
+00:16:12,010 --> 00:16:14,410
+Jest to głównie pożar M-S i przyczyny ruchu.
+
+223
+00:16:14,410 --> 00:16:17,330
+Te wszystkie zdarzają się zazwyczaj w ciągu dnia.
+
+224
+00:16:17,350 --> 00:16:23,320
+Co ciekawe, nie jest ich zbyt wiele w niedziele i soboty, a dzięki mapom
+
+225
+00:16:23,320 --> 00:16:27,940
+klastra można to zobaczyć nieco jaśniej, dzięki czemu powstają klastry,
+
+226
+00:16:27,940 --> 00:16:34,450
+w których według nich liczba połączeń jest niewielka, a liczba połączeń jest zbyt duża. czasem,
+
+227
+00:16:34,450 --> 00:16:42,490
+co jest dobre dla map klastrowych, jest wybranie czegoś takiego jak fajne mapowanie ciepłego koloru, aby naprawdę to zobaczyć.
+
+228
+00:16:42,760 --> 00:16:46,750
+Czasami jest to trochę bardziej oczywiste, jeśli chodzi o schemat kolorów, dzięki którym ludzie mogą zdobyć
+
+229
+00:16:46,750 --> 00:16:47,850
+grupy w swoich umysłach.
+
+230
+00:16:48,220 --> 00:16:53,080
+Wygląda na to, że mamy wysokie połączenia w ciągu jednego dnia w poniedziałek i wtorek, a może w czwartek
+
+231
+00:16:53,080 --> 00:16:55,210
+i piątek w godzinach 8-16 i 17.
+
+232
+00:16:55,210 --> 00:17:01,270
+Więc trochę bardziej w kierunku wieczoru, który ma tendencję do porównywania się z niskimi kwotami połączeń w czasie
+
+233
+00:17:01,330 --> 00:17:03,700
+Może w sobotę i niedzielę rano.
+
+234
+00:17:03,700 --> 00:17:04,290
+DOBRZE.
+
+235
+00:17:04,570 --> 00:17:09,400
+A potem po prostu powtarzaliśmy te operacje na miesiąc i możesz porównać miesiące letnie do
+
+236
+00:17:09,400 --> 00:17:14,410
+miesięcy zimowych tutaj i możesz dalej eksplorować dane, które uważasz za właściwe i to w zasadzie
+
+237
+00:17:14,410 --> 00:17:16,350
+wszystko, co było do tego projektu.
+
+238
+00:17:16,420 --> 00:17:17,200
+Mam nadzieję, że ci się podobało.
+
+239
+00:17:17,200 --> 00:17:18,420
+Mam nadzieję, że uznałeś to za interesujące.
+
+240
+00:17:18,820 --> 00:17:23,650
+Ponownie nie czuj się źle, jeśli musisz znaleźć rozwiązania dla tego rodzaju złożonej jednej linijki tutaj.
+
+241
+00:17:23,710 --> 00:17:28,480
+Zawsze możesz swobodnie publikować na forach pytań i odpowiedzi, jeśli potrzebujesz wyjaśnienia, co właściwie
+
+242
+00:17:28,480 --> 00:17:29,680
+się tam dzieje.
+
+243
+00:17:29,680 --> 00:17:30,250
+W porządku.
+
+244
+00:17:30,370 --> 00:17:32,780
+Możesz zadawać pytania na dowolny temat.
+
+245
+00:17:32,860 --> 00:17:35,320
+I zobaczę cię na następnym wykładzie.
+
+246
+00:17:35,320 --> 00:17:36,100
+Dziękuję wszystkim.
+
+247
+00:17:36,100 --> 00:17:37,570
+Mam nadzieję, że podobał Ci się projekt.

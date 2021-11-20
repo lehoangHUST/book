@@ -1,0 +1,211 @@
+1
+00:00:05,280 --> 00:00:10,290
+Witam wszystkich i zapraszam na wykłady z mapami koralowego Platha i ten wykład, który
+
+2
+00:00:10,290 --> 00:00:14,020
+zamierzamy krótko przejrzeć w zeszycie na ćwiczenia mapowe chóralnego Platha.
+
+3
+00:00:14,190 --> 00:00:16,900
+Chodźmy i Skocz, że teraz umieścisz notatnik.
+
+4
+00:00:17,040 --> 00:00:20,540
+W tej chwili jesteśmy na koralowym notatniku ćwiczeń Pless.
+
+5
+00:00:20,540 --> 00:00:25,410
+W tym ćwiczeniu przedstawimy wam dość proste zbiory danych i utworzymy z nich
+
+6
+00:00:25,410 --> 00:00:27,670
+mapy korelacji, korzystając z wykresu biblioteki.
+
+7
+00:00:27,680 --> 00:00:32,580
+Teraz, niestety, ze względu na naturę faktu, że pliki elfa HCM nie
+
+8
+00:00:32,580 --> 00:00:38,940
+można zobaczyć, przykładowy wynik wyświetlania tutaj centralnie będzie wyglądał jak pusty wynik zarówno dla mapy globalnej
+
+9
+00:00:39,750 --> 00:00:43,640
+w skali światowej, jak i amerykańskiego chloroplastu mapa.
+
+10
+00:00:43,660 --> 00:00:48,580
+Będą tylko puste wyniki, które można porównać, chyba że uruchomisz rozwiązania.
+
+11
+00:00:48,630 --> 00:00:50,190
+Nie, ale jak powinien wyglądać.
+
+12
+00:00:50,490 --> 00:00:53,190
+Same zbiory danych są jednak stosunkowo proste.
+
+13
+00:00:53,190 --> 00:00:59,460
+Powinni mieć wyobrażenie o tym, co chcesz wygenerować importujesz już skonfigurowane tak daleko, jak twój bezpłciowy
+
+14
+00:00:59,460 --> 00:01:03,720
+import zamierzasz kontynuować i importować pandy i czytać plik CAC.
+
+15
+00:01:03,780 --> 00:01:08,190
+Pierwszym z nich będzie światowy pobór mocy w 2014 roku, na który wyjdziecie i sprawdźcie
+
+16
+00:01:08,190 --> 00:01:10,190
+ramkę danych, która powinna wyglądać tak.
+
+17
+00:01:10,410 --> 00:01:15,240
+Następnie, korzystając z notatek z wykładów i wykorzystując dokumentację, którą zamierzasz robić, tworzysz
+
+18
+00:01:15,240 --> 00:01:21,120
+podstawowy plan zużycia energii dla krajów używających danych i słownika, a następnie powinieneś być w stanie w
+
+19
+00:01:21,540 --> 00:01:25,770
+zasadzie je uruchomić. linie kodu, tak jak robiliśmy to podczas wykładów.
+
+20
+00:01:25,900 --> 00:01:30,100
+Zasadniczo jedyną rzeczą, którą musisz zrobić, jest ustawienie danych i prawidłowe rozmieszczenie.
+
+21
+00:01:30,120 --> 00:01:31,630
+To najtrudniejsza część.
+
+22
+00:01:31,680 --> 00:01:34,320
+I jak powiedzieliśmy wcześniej, składnia jest dość dziwna.
+
+23
+00:01:34,380 --> 00:01:37,200
+Więc nie oczekuję, że będziesz w stanie zrobić to z góry na głowę.
+
+24
+00:01:37,290 --> 00:01:42,330
+To, co powinieneś robić, to odwoływanie się do dokumentacji i wykładu, a
+
+25
+00:01:42,690 --> 00:01:49,010
+następnie wypełnianie pustych pól, aby faktycznie odwzorować te dane na mapę koralowego świata zużycia energii na świecie.
+
+26
+00:01:49,290 --> 00:01:54,110
+Następnie, gdy już skończysz, powinieneś zaimportować niektóre dane wyborcze z 2012 roku jako plik
+
+27
+00:01:54,120 --> 00:01:55,570
+CSP za pomocą Pandurs.
+
+28
+00:01:55,620 --> 00:01:57,550
+Pójdziesz naprzód i sprawdzasz nagłówek ramki danych.
+
+29
+00:01:57,620 --> 00:02:01,680
+Wygląda na to, że ma trochę więcej informacji, ale masz zamiar
+
+30
+00:02:01,680 --> 00:02:06,540
+iść dalej i zrobić fabułę, która wyświetla populację wieku głosowania lub P na każdy stan.
+
+31
+00:02:06,540 --> 00:02:08,480
+A jeśli przewiniesz na prawo tutaj.
+
+32
+00:02:08,480 --> 00:02:09,060
+Oto jest.
+
+33
+00:02:09,060 --> 00:02:11,260
+Wiek ludności w wieku V. JA. P.
+
+34
+00:02:11,310 --> 00:02:12,890
+Zauważ, że to jest float.
+
+35
+00:02:12,900 --> 00:02:15,400
+Więc został już przekonwertowany z ciągu znaków.
+
+36
+00:02:15,420 --> 00:02:19,580
+Więc te inne kolumny są w rzeczywistości łańcuchami, ale ten jest już konwertowany na zmienną dla ciebie,
+
+37
+00:02:19,590 --> 00:02:20,780
+więc powinno działać dobrze.
+
+38
+00:02:20,940 --> 00:02:23,960
+I rzeczywiście wspomina o tym tutaj kilka później, chcąc oczyścić pozostałe kolumny.
+
+39
+00:02:23,970 --> 00:02:28,820
+Upewnij się, że bierzesz pod uwagę ich typ danych i zostały one już dla Ciebie przekształcone.
+
+40
+00:02:28,950 --> 00:02:33,240
+Pójdziesz do przodu i po prostu ustawisz dane i rozmieścisz słowniki, a następnie, miejmy nadzieję, uruchomisz tę linię i
+
+41
+00:02:33,360 --> 00:02:34,670
+będziesz w stanie ją narysować.
+
+42
+00:02:34,830 --> 00:02:40,800
+Ponownie jest to bardziej ćwiczenie, dzięki któremu możesz wziąć to, co już wiesz, oraz
+
+43
+00:02:40,800 --> 00:02:46,920
+dokumentację i referencje, które już widziałeś, i uzupełnić dane do tego rodzaju dokumentacji i formatowania.
+
+44
+00:02:47,190 --> 00:02:52,530
+Nie jest to ćwiczenie polegające na zapamiętaniu wszystkiego i możliwości tworzenia danych oraz tworzenia
+
+45
+00:02:52,530 --> 00:02:53,730
+słownika od zera.
+
+46
+00:02:53,730 --> 00:02:55,620
+Naprawdę to nierealne.
+
+47
+00:02:55,830 --> 00:02:59,670
+I będziesz musiał zazwyczaj odwoływać się do dokumentacji tego rodzaju działek.
+
+48
+00:02:59,670 --> 00:03:00,310
+W porządku.
+
+49
+00:03:00,360 --> 00:03:02,880
+Mam nadzieję, że lubisz ćwiczenie, które powinno być proste.
+
+50
+00:03:02,880 --> 00:03:07,080
+Pamiętaj, aby po prostu odwoływać się do notebooków z wykładów, a jeśli kiedykolwiek utkniesz, możesz odwołać się
+
+51
+00:03:07,080 --> 00:03:08,220
+do wykładu dotyczącego rozwiązań.
+
+52
+00:03:08,220 --> 00:03:09,270
+Zaraz dalej.
+
+53
+00:03:09,510 --> 00:03:11,400
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

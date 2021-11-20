@@ -1,0 +1,899 @@
+1
+00:00:05,310 --> 00:00:06,170
+Halo semuanya.
+
+2
+00:00:06,170 --> 00:00:10,700
+Selamat datang di hari itu untuk memberi kuliah pengantar solusi proyek keuangan dalam kuliah ini.
+
+3
+00:00:10,710 --> 00:00:13,590
+Kami akan membahas solusi untuk proyek keuangan.
+
+4
+00:00:13,860 --> 00:00:16,550
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+5
+00:00:16,860 --> 00:00:22,470
+OK jadi di sini kita berada di notebook Jupiter ketika kita pergi dan gulir ke bawah untuk mendapatkan bagian data.
+
+6
+00:00:23,220 --> 00:00:29,760
+Jadi hal pertama yang harus kami lakukan adalah menggunakan panda yang langsung dibaca dari Google Finance dan ada beberapa catatan
+
+7
+00:00:29,790 --> 00:00:33,650
+di sini Anda harus menginstal pembaca data Pandurs agar ini berfungsi.
+
+8
+00:00:33,660 --> 00:00:37,290
+Dan seperti yang saya sebutkan di kuliah sebelumnya Anda hanya dapat melakukan ini
+
+9
+00:00:37,290 --> 00:00:43,110
+dengan pergi ke baris perintah Anda dan mengatakan Pipp install Pandurs pembaca data putus-putus atau Konda instal panda simpanan pembaca data.
+
+10
+00:00:43,110 --> 00:00:47,880
+Dan lagi ada catatan di sini atau tautan atau lebih banyak panduan instalasi.
+
+11
+00:00:48,540 --> 00:00:51,650
+Oke, lalu kami ingin melakukan impor ini di sini.
+
+12
+00:00:51,660 --> 00:00:54,190
+Saya pergi ke depan dan hanya berlari karena saya sudah diisi.
+
+13
+00:00:54,420 --> 00:00:56,640
+Dan sekarang kita berada di bagian data.
+
+14
+00:00:56,640 --> 00:01:01,680
+Hal pertama yang ingin saya lakukan adalah mendapatkan data menggunakan pembaca data Panas dan kita bisa mendapatkan informasi stok
+
+15
+00:01:01,680 --> 00:01:02,760
+untuk bank-bank berikut.
+
+16
+00:01:02,850 --> 00:01:08,480
+Citigroup Bank of America Goldman Sachs JP Morgan Chase Morgan Stanley dan Wells Fargo mengatakan kita
+
+17
+00:01:08,480 --> 00:01:15,690
+akan melihat bank dan bagaimana perubahan nilai saham mereka dari dan sepanjang krisis keuangan dan apa yang ingin kita lakukan
+
+18
+00:01:15,690 --> 00:01:20,880
+adalah mencari cara untuk mendapatkan data saham mulai 1 Januari 2006 hingga 1
+
+19
+00:01:20,880 --> 00:01:26,620
+Januari 2016 untuk masing-masing bank ini dan kami ingin menetapkan setiap bank sebagai kerangka data terpisah.
+
+20
+00:01:26,790 --> 00:01:31,620
+Jika nama variabel untuk bank tersebut menjadi simbol ticker dan pergi ke beberapa langkah pertama, kita
+
+21
+00:01:31,620 --> 00:01:36,690
+perlu menggunakan waktu itu untuk mengatur objek waktu mulai dan berakhir tanggal maka kita perlu mengetahui simbol ticker
+
+22
+00:01:36,690 --> 00:01:37,620
+untuk masing-masing bank.
+
+23
+00:01:37,710 --> 00:01:43,280
+Nomor tiga kita perlu mencari tahu bagaimana menggunakan pembaca data untuk mengambil info atau informasi tentang stok.
+
+24
+00:01:43,500 --> 00:01:48,540
+Dan ada tautan di sini menggunakan halaman dokumentasi ini untuk petunjuk dan petunjuk.
+
+25
+00:01:48,540 --> 00:01:51,320
+Dan sebenarnya tautan itu sebenarnya cukup informatif.
+
+26
+00:01:51,330 --> 00:01:57,660
+Ini pada dasarnya memberi Anda jawaban jika Anda gulir ke sini sedikit tentang cara mengambil informasi.
+
+27
+00:01:57,690 --> 00:02:02,760
+Jadi jika Anda gulir ke bawah, kami akan memberi Anda Google Finance cara mengambil informasi dalam harga saham dari Google
+
+28
+00:02:02,760 --> 00:02:03,230
+Finance.
+
+29
+00:02:03,240 --> 00:02:09,210
+Anda dapat melanjutkan dan pada dasarnya hanya menyalin dan menempelkan kode ini dari dokumentasi dan itu akan berjalan seperti
+
+30
+00:02:09,240 --> 00:02:10,160
+yang diharapkan.
+
+31
+00:02:10,380 --> 00:02:14,430
+Jadi saya akan pergi ke depan dan pada dasarnya salin dan tempel kode ini benar-benar mengetiknya sehingga saya bisa
+
+32
+00:02:14,430 --> 00:02:15,090
+menjelaskannya sedikit.
+
+33
+00:02:15,090 --> 00:02:20,190
+Kami akan mulai dengan tanggal mulai dan berakhir dan kemudian menunjukkan kepada
+
+34
+00:02:20,190 --> 00:02:23,070
+Anda cara menggunakan pembaca data web.
+
+35
+00:02:23,160 --> 00:02:23,760
+BAIK.
+
+36
+00:02:24,040 --> 00:02:31,610
+Hal pertama yang ingin saya lakukan adalah mengatakan mulai dan kemudian memanggil Tanggal Waktu Tanggal Waktu hanya sedikit aneh untuk memanggil tanggal
+
+37
+00:02:31,620 --> 00:02:34,150
+waktu waktu tanggal tetapi itu hanya konvensi.
+
+38
+00:02:34,410 --> 00:02:40,400
+Dan kemudian kami ingin lulus pada bulan dan bulan yang akan menjadi tanggal mulai kami.
+
+39
+00:02:40,470 --> 00:02:46,500
+Dan sekali lagi ini pada dasarnya hanya menyalin dan menempelkan kode di sini dari dokumentasi.
+
+40
+00:02:47,190 --> 00:02:51,410
+Dan kemudian saya akan melakukan hal yang sama tetapi alih-alih membintanginya, itu akan menjadi tanggal akhir saya.
+
+41
+00:02:51,750 --> 00:02:57,080
+Dan ini akan menjadi semacam tahun 2006 2016.
+
+42
+00:02:58,080 --> 00:03:04,820
+Dan kemudian apa yang harus kita lakukan adalah mencari tahu tickers untuk berbagai bank seperti Bank of America dan yang
+
+43
+00:03:04,830 --> 00:03:10,100
+pertama sebenarnya ditunjukkan di sini AC sama dengan data yang digunakan pembaca data BAMC.
+
+44
+00:03:10,170 --> 00:03:16,290
+Google mulai berakhir biarkan saya pergi dan menunjukkan kepada Anda sebuah contoh dari
+
+45
+00:03:16,470 --> 00:03:29,610
+apa yang sebenarnya terlihat dengan mengatakan B A C sama dengan pemikiran data pembaca data dengan menganggap B A C adalah string Google dan kemudian mulai dan berakhir.
+
+46
+00:03:29,610 --> 00:03:29,840
+Baiklah.
+
+47
+00:03:29,840 --> 00:03:30,840
+Sepertinya itu berlari.
+
+48
+00:03:30,840 --> 00:03:32,250
+Mari kita lanjutkan dan periksa hasilnya.
+
+49
+00:03:32,250 --> 00:03:33,900
+B A C.
+
+50
+00:03:34,230 --> 00:03:39,960
+Dan di sini kita memiliki B C yang pada dasarnya adalah kerangka data dengan indeks tanggal dan
+
+51
+00:03:39,960 --> 00:03:43,800
+kemudian harga pembukaan harga tinggi harga rendah harga penutupan dan volume.
+
+52
+00:03:43,800 --> 00:03:48,770
+Dan ini pada dasarnya hanya diterjemahkan ke harga saham dari harga pembukaan saham menyatakan
+
+53
+00:03:48,790 --> 00:03:51,580
+nilai tinggi dan rendah pada hari itu.
+
+54
+00:03:51,630 --> 00:03:56,040
+Dan kemudian harga penutupan pada tanggal itu dan kemudian volume hanyalah volume aktual berapa banyak
+
+55
+00:03:56,040 --> 00:03:58,120
+saham yang diperdagangkan pada hari itu.
+
+56
+00:03:58,500 --> 00:04:03,750
+Maka apa yang pada dasarnya harus Anda lakukan adalah hanya mengulangi ini untuk berbagai bank lain
+
+57
+00:04:03,750 --> 00:04:08,280
+dan untuk mengetahui tickers saham untuk bank lain Anda hanya dapat menggunakan pencarian
+
+58
+00:04:08,280 --> 00:04:13,720
+google sederhana Anda hanya Google mencari nama bank seperti Citigroup Plus stock ticker dan Anda akan menemukannya.
+
+59
+00:04:14,550 --> 00:04:14,890
+Baiklah.
+
+60
+00:04:14,970 --> 00:04:19,740
+Saya akan pergi dan menyalin dan menempelkan sisa perintah ini karena pada dasarnya persis
+
+61
+00:04:19,740 --> 00:04:21,640
+seperti yang kami lakukan sebelumnya.
+
+62
+00:04:21,660 --> 00:04:29,190
+Jadi saya punya Citigroup hanya melihat Goldman Sachs hanya G-S J. P. Morgan Chase, EMI JPM Morgan Stanley
+
+63
+00:04:29,250 --> 00:04:31,670
+dan Wells Fargo WFC.
+
+64
+00:04:31,970 --> 00:04:37,710
+Dan satu-satunya argumen Anda melewati pembaca data adalah ticker saham memiliki string dan dia repassing di
+
+65
+00:04:37,710 --> 00:04:41,720
+Google dan itu hanya berarti menggunakan Google Finance untuk mengambil data.
+
+66
+00:04:41,730 --> 00:04:47,640
+Anda juga dapat menggunakan Yahoo Finance jika Anda mau, tetapi saya lebih suka Google Finance hanya karena Yahoo
+
+67
+00:04:47,640 --> 00:04:52,710
+baru-baru ini mengalami transisi atau diakuisisi sehingga lebih baik untuk mempertahankannya dengan Google dan kemudian Anda
+
+68
+00:04:52,710 --> 00:04:56,580
+juga bisa memasukkan tanggal mulai dan berakhir sebagai informasi Tanggal Waktu.
+
+69
+00:04:56,610 --> 00:04:59,940
+Mari kita lanjutkan dan jalankan sel ini dan lihat apa yang terjadi.
+
+70
+00:04:59,940 --> 00:05:04,350
+Itu jadi ketika Anda menjalankan semuanya bersama mungkin butuh waktu karena itu mengambil semua informasi
+
+71
+00:05:04,350 --> 00:05:05,560
+ini dari Internet.
+
+72
+00:05:05,580 --> 00:05:07,680
+Jadi, teruskan dan bersabarlah saat berjalan.
+
+73
+00:05:07,710 --> 00:05:09,030
+Ini dia sudah selesai.
+
+74
+00:05:09,030 --> 00:05:12,920
+Sekarang mari kita lanjutkan dan lihat di bingkai data lainnya.
+
+75
+00:05:12,990 --> 00:05:15,540
+Kami pergi ke depan dan memeriksa kekacauan untuk Morgan Stanley.
+
+76
+00:05:15,550 --> 00:05:20,700
+Kita bisa melihat bahwa itu adalah hal yang sama bahwa tanggal buka tutup
+
+77
+00:05:20,700 --> 00:05:26,930
+rendah tinggi dan kemudian nama volume yang diperdagangkan turun dari tahun 2006 hingga 1 Desember 2015.
+
+78
+00:05:27,030 --> 00:05:33,890
+Jadi Malam Tahun Baru sekarang bagus dan melanjutkan ke tugas berikutnya ketika tag hash keluar.
+
+79
+00:05:33,900 --> 00:05:39,440
+Sekarang kami ingin membuat daftar simbol ticker sebagai string dalam urutan abjad memanggil daftar ticker ini.
+
+80
+00:05:39,990 --> 00:05:45,260
+Mari kita lanjutkan dan lakukan itu kita akan memanggil ticker dan kemudian lulus BSEE.
+
+81
+00:05:46,350 --> 00:05:56,880
+Selanjutnya dari kuartal pertama C maka kita memiliki G-S kemudian JPM dan EMI.
+
+82
+00:05:56,880 --> 00:06:04,380
+Dan akhirnya WFC dan kemudian kami ingin menggunakan PD dot com, bisakah Anda menggabungkan frame data bank menjadi satu
+
+83
+00:06:04,620 --> 00:06:09,900
+frame data bernama Bank menggarisbawahi saham dan Anda ingin mengatur argumen kunci sama
+
+84
+00:06:09,900 --> 00:06:11,220
+dengan daftar ticker.
+
+85
+00:06:11,220 --> 00:06:13,880
+Juga perhatikan untuk mengakses Anda bergabung.
+
+86
+00:06:14,310 --> 00:06:18,600
+Dan itu hanya semacam peringatan di sana bahwa Anda harus mengatur akses yang sama dengan sekali
+
+87
+00:06:18,630 --> 00:06:20,250
+Anda ingin menyatu di sepanjang kolom.
+
+88
+00:06:20,250 --> 00:06:21,080
+Ayo maju dan lakukan itu.
+
+89
+00:06:21,150 --> 00:06:31,130
+Jadi saya ingin membuat bank menggarisbawahi frame data saham dan kemudian saya akan mengatakan PD concat dan akan memiliki daftar semua frame data
+
+90
+00:06:31,710 --> 00:06:33,930
+yang ingin saya gabungkan.
+
+91
+00:06:33,950 --> 00:06:44,560
+Jadi saya ingin menggabungkan kerangka data BBC dengan melihat CPM CPM G-S Morgan Stanley dan kemudian Wells Fargo.
+
+92
+00:06:45,270 --> 00:06:49,860
+Dan alasan saya tidak menyampaikan argumen ini adalah string karena ini adalah frame
+
+93
+00:06:49,860 --> 00:06:52,020
+data aktual yang dibuat di sini.
+
+94
+00:06:52,010 --> 00:06:55,080
+Baiklah begitu saja lewat daftar data yang ingin disatukan Prancis.
+
+95
+00:06:55,080 --> 00:07:00,300
+Saya ingin menggabungkan semuanya di sepanjang kolom yang masuk akal karena mereka semua berbagi indeks yang sama mereka
+
+96
+00:07:00,300 --> 00:07:03,040
+semua berbagi indeks waktu dan tanggal tertentu yang sama.
+
+97
+00:07:03,060 --> 00:07:08,940
+Saya ingin melakukan rangkai ini di sepanjang sumbu kolom salsa sama dengan 1 dan kemudian argumennya akan menjadi daftar ticker
+
+98
+00:07:08,940 --> 00:07:10,230
+ini dan mari
+
+99
+00:07:13,630 --> 00:07:16,300
+kita lanjutkan dan melihat seperti apa saham bank sekarang.
+
+100
+00:07:16,350 --> 00:07:20,350
+Dia adalah pemimpinnya dan kita mendapatkan sesuatu yang terlihat seperti ini.
+
+101
+00:07:20,370 --> 00:07:25,740
+Pada dasarnya sekarang kami memiliki indeks multilevel pada kolom yang Anda miliki ticker saham bank
+
+102
+00:07:25,770 --> 00:07:33,490
+dan kemudian buka tinggi rendah dan volume dan semuanya berbagi indeks tanggal waktu yang sama yang masuk akal dalam hal yang ingin kami
+
+103
+00:07:33,520 --> 00:07:35,840
+lakukan adalah mengatur level nama kolom.
+
+104
+00:07:36,060 --> 00:07:38,120
+Dan ini sebenarnya diisi untuk Anda.
+
+105
+00:07:38,130 --> 00:07:42,290
+Jadi untuk melakukannya dengan baik kita harus mengatakan bank menggarisbawahi saham.
+
+106
+00:07:42,300 --> 00:07:47,190
+Kolom bukan nama dan kemudian kami menetapkan mereka ke tingkat ini ticker bank dan info saham.
+
+107
+00:07:47,190 --> 00:07:54,300
+Jadi, sekali Anda menjalankan penjualan itu dan jika Anda berada di bank Chick, garis bawahi sahamnya lagi maka itu akan terlihat seperti
+
+108
+00:07:54,300 --> 00:07:54,720
+ini.
+
+109
+00:07:54,720 --> 00:07:59,910
+Dan satu-satunya perbedaan adalah sekarang bahwa ini sebenarnya diberi label tingkat indeks pertama pada
+
+110
+00:07:59,910 --> 00:08:05,230
+kolom diberi label bank berpikir Bank ticker dan kemudian yang kedua diberi label info saham.
+
+111
+00:08:05,840 --> 00:08:06,410
+BAIK.
+
+112
+00:08:06,570 --> 00:08:07,130
+Bergerak bersama.
+
+113
+00:08:07,170 --> 00:08:12,620
+Saatnya untuk melakukan beberapa analisis data eksplorasi dan sebelum melanjutkan apa yang saya
+
+114
+00:08:12,720 --> 00:08:19,350
+ingin Anda lakukan adalah mendorong Anda untuk memeriksa dokumentasi tidak hanya pengindeksan bertingkat di sini, tetapi
+
+115
+00:08:22,170 --> 00:08:28,850
+juga menggunakan dot X dan kami benar-benar telah melewati kelebihan penampang melintang metode dalam kuliah operasi panel.
+
+116
+00:08:28,890 --> 00:08:33,540
+Jadi, Anda dapat melanjutkan dan meninjau dan kembali ke kuliah itu jika Anda menginginkan penjelasan
+
+117
+00:08:33,800 --> 00:08:34,700
+video kelebihannya.
+
+118
+00:08:34,950 --> 00:08:40,830
+Tetapi pada dasarnya metode penampang ini memungkinkan Anda untuk mengambil barang-barang di dalam indeks bertingkat dan ada beberapa
+
+119
+00:08:40,830 --> 00:08:41,810
+contoh di sini.
+
+120
+00:08:41,840 --> 00:08:43,710
+Saya bisa melanjutkan dan memperbesarnya.
+
+121
+00:08:43,770 --> 00:08:48,660
+Mudah-mudahan datang ke sini dan lihat contoh-contoh yang Anda lihat bingkai data ini Anda melihat bahwa
+
+122
+00:08:48,660 --> 00:08:50,670
+mereka dapat memanggil bagian lintas a.
+
+123
+00:08:50,880 --> 00:08:55,410
+Dan Anda juga dapat melihat bahwa mereka dapat memanggil penampang dengan mengirimkan tuple atau daftar
+
+124
+00:08:55,410 --> 00:08:57,150
+dan mengambil hal-hal di dalamnya.
+
+125
+00:08:57,150 --> 00:08:57,570
+Baiklah.
+
+126
+00:08:57,780 --> 00:09:02,790
+Anda dapat melanjutkan dan mereferensikan kuliah operasi panda atau penjelasan saya sendiri tentang
+
+127
+00:09:02,790 --> 00:09:06,660
+akses itu tetapi agak penting mereka mengerti bahwa karena itu
+
+128
+00:09:06,660 --> 00:09:13,530
+akan menjadi bagian utama dari proyek ini saat kita melanjutkan untuk mendapatkan informasi tentang bank tertentu atau spesifik kolom.
+
+129
+00:09:13,530 --> 00:09:14,010
+Baiklah.
+
+130
+00:09:14,070 --> 00:09:19,620
+Pertanyaan analisis data eksplorasi pertama kami untuk dijawab adalah Berapa harga maksimum pakaian untuk setiap
+
+131
+00:09:19,620 --> 00:09:22,740
+bank yang berhenti selama periode waktu tersebut.
+
+132
+00:09:22,740 --> 00:09:24,830
+Ada dua cara berbeda yang bisa kita lakukan ini.
+
+133
+00:09:24,840 --> 00:09:30,140
+Salah satu caranya adalah Anda bisa mengatakan sesuatu seperti ini untuk tick in tickers.
+
+134
+00:09:30,150 --> 00:09:41,220
+Ingat ticker adalah bahwa daftar nama ticker mengatakan sesuatu seperti ambil tick saham bank ambil dan mari kita lihat apa yang tampak seperti
+
+135
+00:09:41,310 --> 00:09:48,690
+jika saya katakan misalnya saya berkomentar garis-garis ini keluar dan hanya menunjukkan kepada Anda apa
+
+136
+00:09:48,690 --> 00:09:52,590
+yang tampak seperti saham bank sebagai pengingat.
+
+137
+00:09:52,590 --> 00:09:53,970
+Jadi kami memiliki stok kepala bank.
+
+138
+00:09:53,970 --> 00:09:58,810
+Ini adalah indeks bertingkat pada kolom multi-level teratas.
+
+139
+00:09:58,880 --> 00:10:06,180
+Jika dimasukkan misalnya b c maka saya mendapatkan bingkai data di sini yang berarti saya dapat memanggil menutup frame data yang memberi
+
+140
+00:10:06,510 --> 00:10:07,450
+saya ini.
+
+141
+00:10:07,470 --> 00:10:13,620
+Dan karena saya ingin harga penutupan maks, saya bisa menelepon max dan itu memberi saya sesuatu yang terlihat seperti
+
+142
+00:10:13,620 --> 00:10:17,580
+itu yang berarti saya pada dasarnya hanya akan mengganti perintah-perintah itu.
+
+143
+00:10:17,640 --> 00:10:25,950
+Kami kembali ke sini untuk mencentang dan kemudian saya benar-benar bisa mencetak ini.
+
+144
+00:10:25,980 --> 00:10:31,690
+Saya bisa mengatakan sesuatu seperti Pangeran Tich koma itu.
+
+145
+00:10:31,740 --> 00:10:36,710
+Dan di sini kita memiliki setiap harga saham bank maks tutup selama periode waktu keseluruhan.
+
+146
+00:10:36,870 --> 00:10:38,200
+Itu salah satu cara untuk melakukan ini.
+
+147
+00:10:38,340 --> 00:10:45,660
+Cara yang lebih baik untuk melakukan ini jika Anda ingin menjadi paham dengan panda adalah dengan menggunakan metode akses ini
+
+148
+00:10:45,660 --> 00:10:54,480
+dan apa yang Anda lakukan adalah Anda mengatakan saham bank mendapat akses untuk bagian lintas yang Anda lewati dalam kunci yang ingin Anda lakukan bagian
+
+149
+00:10:54,480 --> 00:10:56,330
+lintas pada pada kasus ini.
+
+150
+00:10:56,520 --> 00:10:58,880
+Saya ingin melakukannya dari dekat.
+
+151
+00:10:59,610 --> 00:11:05,520
+Saya ingin mengatakan itu pada sumbu kolom karena saya melakukannya pada kolom jadi tentukan x 0 hingga 1
+
+152
+00:11:05,550 --> 00:11:10,740
+dan kemudian tentukan juga levelnya karena itu di dalam dan levelnya disebut info stok.
+
+153
+00:11:10,750 --> 00:11:15,330
+Ingat itu sebabnya kami kembali ke atas sini.
+
+154
+00:11:15,330 --> 00:11:16,340
+Gulir kembali ke atas.
+
+155
+00:11:16,470 --> 00:11:17,620
+Kami mengatakan info stok.
+
+156
+00:11:17,670 --> 00:11:21,460
+Jadi level luar ini disebut Bank Ticker, level ini disebut stock info.
+
+157
+00:11:21,480 --> 00:11:22,650
+Jadi pada dasarnya kami bertanya.
+
+158
+00:11:22,800 --> 00:11:30,000
+Beri aku kolom tertutup untuk semua bank dan kemudian kita akan pergi ke depan dan lakukan panggilan max tawaran ini dan
+
+159
+00:11:30,060 --> 00:11:36,150
+jika kita menjalankan ini pada dasarnya mendapatkan hal yang sama persis tapi itu sedikit lebih bagus diformat dan
+
+160
+00:11:36,180 --> 00:11:39,010
+itu hanya satu baris kode bersih di sini.
+
+161
+00:11:39,030 --> 00:11:39,590
+Baiklah.
+
+162
+00:11:39,690 --> 00:11:44,310
+Jadi itu adalah harga penutupan maksimum untuk setiap saham bank selama periode waktu keseluruhan.
+
+163
+00:11:44,670 --> 00:11:50,220
+Sekarang kita akan pergi ke depan dan lakukan adalah membuat kerangka data kosong baru yang disebut pengembalian
+
+164
+00:11:50,250 --> 00:11:56,220
+dan kerangka data ini akan berisi pengembalian untuk setiap saham bank dan pengembalian biasanya ditentukan oleh persamaan ini
+
+165
+00:11:56,220 --> 00:12:00,680
+di mana Anda memiliki pengembalian untuk jangka waktu tertentu dan bayar harganya.
+
+166
+00:12:00,690 --> 00:12:05,070
+Tetapi pada dasarnya apa itu rusak ke harga pada suatu waktu.
+
+167
+00:12:05,070 --> 00:12:07,430
+T dalam hal ini kita sedang berhadapan dengan kencan yang adil.
+
+168
+00:12:07,620 --> 00:12:12,390
+Jadi harga itu sehari dibagi dengan hari sebelumnya minus satu.
+
+169
+00:12:12,390 --> 00:12:19,320
+Jadi karena Anda hanya pengembalian persen dan kami bisa keluar dan mengatakan pengembalian kami akan membuat
+
+170
+00:12:20,580 --> 00:12:24,510
+bingkai data PD bingkai data kosong dan menjalankannya.
+
+171
+00:12:24,510 --> 00:12:28,680
+Jadi kami memiliki kerangka data kosong yang disebut pengembalian dan keadaan bingkai akan berisi pengembalian
+
+172
+00:12:28,680 --> 00:12:29,820
+untuk setiap saham bank.
+
+173
+00:12:30,120 --> 00:12:35,520
+Dan inilah persamaan di mana kita akan lakukan adalah bergerak dan mengatakan kita dapat menggunakan Panas
+
+174
+00:12:35,520 --> 00:12:41,310
+t garis bawah perubahan atau metode persen perubahan pada kolom tutup untuk membuat kolom yang mewakili nilai kembali.
+
+175
+00:12:41,850 --> 00:12:47,950
+Jadi tugas kami adalah membuat for loop yang masuk untuk setiap ticker saham bank
+
+176
+00:12:47,970 --> 00:12:53,830
+membuat kolom pengembalian ini dan menetapkannya sebagai kolom dalam kerangka data pengembalian.
+
+177
+00:12:54,180 --> 00:12:55,520
+Sekarang ini pasti sedikit rumit.
+
+178
+00:12:55,530 --> 00:12:56,900
+Jadi mari kita lanjutkan dan memecahnya.
+
+179
+00:12:56,910 --> 00:13:00,410
+Kami ingin membuat loop for yang berlaku untuk setiap ticker saham bank.
+
+180
+00:13:00,480 --> 00:13:07,080
+Jadi saya ingin menyimpan tanda centang di ticker. Lalu yang ingin saya lakukan adalah membuat kolom pengembalian jadi katakan
+
+181
+00:13:07,080 --> 00:13:10,590
+kembali dan itulah bingkai data baru saya di sini.
+
+182
+00:13:10,740 --> 00:13:21,270
+Saya akan membuat kolom baru dan nama kolom akan mengatakan Tich disatukan dengan pengembalian
+
+183
+00:13:21,270 --> 00:13:30,490
+dan itu akan sama dengan saham bank pada harga penutupan centang.
+
+184
+00:13:30,510 --> 00:13:35,490
+Dan kemudian kita sebut perubahan PCT dan ini agak sulit untuk diketahui.
+
+185
+00:13:36,000 --> 00:13:41,280
+Jadi mari kita lanjutkan dan jalankan ini dan sekarang mari kita periksa frame data pengembalian kami
+
+186
+00:13:41,280 --> 00:13:49,890
+atau setidaknya kepala itu dan di sini pernah mengembalikan frame data dan masuk akal bahwa nilai pertama kami tidak ada atau tidak karena Anda tidak bisa mendapatkan
+
+187
+00:13:49,890 --> 00:13:54,030
+persen kembali pada hari pertama karena tidak ada yang membandingkannya di masa
+
+188
+00:13:54,030 --> 00:13:54,450
+lalu.
+
+189
+00:13:54,460 --> 00:13:55,710
+Jadi itu masuk akal.
+
+190
+00:13:55,710 --> 00:14:02,280
+Dan Anda dapat melihat di sini pada dasarnya Anda mendapatkan nilai pengembalian atau kami akan melanjutkan dan lakukan sekarang adalah
+
+191
+00:14:02,280 --> 00:14:05,520
+membuat plot pasangan menggunakan Seaborn dari kerangka data pengembalian.
+
+192
+00:14:05,520 --> 00:14:06,480
+Dan ada beberapa pertanyaan di sana.
+
+193
+00:14:06,480 --> 00:14:09,420
+Stok apa yang menonjol bagi Anda dan dapatkah Anda mengetahui sebabnya.
+
+194
+00:14:09,680 --> 00:14:16,770
+Apa yang akan saya lakukan dan katakan adalah katakan saja SNS dot pair plot dan panggil pengembalian.
+
+195
+00:14:16,770 --> 00:14:21,690
+Sekarang jika saya hanya menelepon pengembalian Anda akan melihat sesuatu terjadi kita akan mendapatkan kesalahan dan bebas
+
+196
+00:14:21,690 --> 00:14:28,230
+gulir kesalahan ke bawah Anda akan melihat bahwa ia mengatakan Max harus lebih besar daripada laki-laki dalam rentang parameter dan itu pada dasarnya
+
+197
+00:14:28,230 --> 00:14:32,210
+hanya panggilan kembali ke masalah di sini di mana Anda memiliki nol.
+
+198
+00:14:32,370 --> 00:14:41,130
+Jadi apa yang harus Anda lakukan tentukan bahwa Anda ingin semuanya dimulai dari indeks di lokasi 1.
+
+199
+00:14:41,520 --> 00:14:43,450
+Dan sekarang ketika Anda menjalankan itu Anda harus baik-baik saja.
+
+200
+00:14:43,470 --> 00:14:48,120
+Sekarang per plus mereka butuh beberapa saat untuk set data yang sangat besar untuk mengingatnya saat Anda menunggu plot.
+
+201
+00:14:48,840 --> 00:14:50,670
+Tetapi Anda melihat sesuatu yang terlihat seperti ini.
+
+202
+00:14:50,790 --> 00:14:53,720
+Dan pertanyaannya adalah stok apa yang menonjol bagi Anda.
+
+203
+00:14:54,030 --> 00:14:59,200
+Nah jenis tampilan ini Anda akan melihat bahwa semua saham ini terlihat relatif normal sejauh sebar
+
+204
+00:14:59,200 --> 00:14:59,800
+plot.
+
+205
+00:14:59,800 --> 00:15:01,380
+Sepertinya ada beberapa korelasi.
+
+206
+00:15:01,530 --> 00:15:05,010
+Tapi salah satunya adalah bundel garis lurus yang aneh ini.
+
+207
+00:15:05,010 --> 00:15:13,680
+Dan Anda perhatikan bahwa itu terjadi di sepanjang pengembalian laut untuk Citigroup dan Citigroup sebenarnya mengalami kehancuran stok yang
+
+208
+00:15:13,680 --> 00:15:14,970
+sangat besar.
+
+209
+00:15:15,000 --> 00:15:21,270
+Dan jika Anda pergi ke tautan Wikipedia jika Anda hanya melihat Citigroup dan datang ke sini Anda
+
+210
+00:15:21,300 --> 00:15:28,050
+akan melihat bahwa November 2008 dan ini sebenarnya berkaitan dengan bagian dari krisis keuangan global yang pada November 2008
+
+211
+00:15:28,080 --> 00:15:34,020
+Citigroup bangkrut dan kami akan benar-benar melihat crash besar ketika kita benar-benar memvisualisasikan nilai saham Citigroup
+
+212
+00:15:34,110 --> 00:15:35,840
+di sana sepanjang waktu.
+
+213
+00:15:35,850 --> 00:15:40,080
+Tetapi dia dapat terus membaca dan membaca tentang ini tetapi jenis ini lebih banyak berhubungan dengan cerita di
+
+214
+00:15:40,350 --> 00:15:42,570
+balik analisis data kami tentang mengapa ini terjadi.
+
+215
+00:15:42,720 --> 00:15:47,870
+Dan ini tersedia di halaman Wikipedia hanya untuk Citigroup sebagai perusahaan.
+
+216
+00:15:47,880 --> 00:15:48,330
+Baiklah.
+
+217
+00:15:48,360 --> 00:15:53,220
+Jadi mudah-mudahan Anda memperhatikan perilaku aneh semacam ini dari pengembalian aneh ini tapi itu
+
+218
+00:15:53,220 --> 00:15:54,480
+benar-benar membuat crash.
+
+219
+00:15:54,480 --> 00:15:55,250
+BAIK.
+
+220
+00:15:55,470 --> 00:15:57,890
+Kami akan pergi ke depan dan menghentikannya di sini.
+
+221
+00:15:58,260 --> 00:16:01,080
+Dan ketika kita kembali pada bagian kedua kita akan menyelidiki.
+
+222
+00:16:01,080 --> 00:16:06,330
+Ini mengembalikan hari untuk membingkai lebih sedikit dan kemudian melakukan investigasi lebih jauh
+
+223
+00:16:06,420 --> 00:16:07,660
+sejauh distribusi pengembalian.
+
+224
+00:16:07,830 --> 00:16:10,390
+Dan kemudian kita akan memvisualisasikan data lebih banyak lagi.
+
+225
+00:16:10,410 --> 00:16:12,470
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

@@ -1,0 +1,919 @@
+1
+00:00:05,400 --> 00:00:10,590
+Bună ziua tuturor și bun venit la prelegerea de complot categoric pentru seaborne S. discurs.
+
+2
+00:00:10,590 --> 00:00:14,030
+Acum ne vom îndrepta atenția spre conectarea datelor categorice.
+
+3
+00:00:14,040 --> 00:00:16,760
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+4
+00:00:17,070 --> 00:00:21,950
+OK aici sunt la notebook-ul Jupiter și am pus deja câteva linii de cod aici.
+
+5
+00:00:21,960 --> 00:00:28,440
+Am spus că importă Seaborn și Cessna's Am mers înainte și am spus că plotul este în linie, așa că pot vedea
+
+6
+00:00:28,470 --> 00:00:30,150
+vizualizările din interiorul notebook-ului Jupiter.
+
+7
+00:00:30,300 --> 00:00:34,530
+Apoi m-am dus înainte și am încărcat setul de date sfaturi și
+
+8
+00:00:34,560 --> 00:00:42,840
+apoi am verificat capul setului de date sfaturi OK pentru parcele categorice au fost, în principal, va fi preocupat de a vedea
+
+9
+00:00:42,840 --> 00:00:50,790
+distribuțiile de o coloană categorică, cum ar fi acest sex sex sau fumat zi în trimitere la una dintre coloanele numerice
+
+10
+00:00:50,820 --> 00:00:53,450
+sau la o altă coloană categorică.
+
+11
+00:00:53,460 --> 00:00:59,610
+Să mergem mai departe și să începem cu cel mai de bază complot categoric, care este parcelele de bara și
+
+12
+00:00:59,610 --> 00:01:06,510
+puteți face acest lucru prin apelarea parcelele Asness bar și un complot bar este doar un complot general care vă permite să
+
+13
+00:01:06,600 --> 00:01:11,940
+agregate date categorice bazate pe unele funcții și în mod implicit, acest lucru înseamnă că vă puteți
+
+14
+00:01:11,940 --> 00:01:16,190
+gândi aproape la fel ca o vizualizare a unui grup prin acțiune.
+
+15
+00:01:16,200 --> 00:01:18,400
+Lasă-mă să merg și să-ți arăt ce vreau să spun prin asta.
+
+16
+00:01:18,600 --> 00:01:25,350
+Vom merge înăuntru și vom seta un argument x și date în plotul de bare, tot felul de date stabilește cele mai ușoare
+
+17
+00:01:25,440 --> 00:01:31,830
+sfaturi și atunci ceea ce am de gând să fac și de făcut este să setați axa x într-o coloană categorică.
+
+18
+00:01:31,930 --> 00:01:34,760
+În acest caz, voi merge mai departe și voi alege coloana de sex aici.
+
+19
+00:01:35,490 --> 00:01:43,110
+Și apoi pentru coloana Y sau pentru axele y putem alege o coloană care
+
+20
+00:01:43,140 --> 00:01:46,470
+este numerică, de exemplu, factura totală.
+
+21
+00:01:46,470 --> 00:01:52,320
+Și asta va crea o parcelă de bare și, în mod implicit, ceea ce vă arată aici este media sau
+
+22
+00:01:52,320 --> 00:01:53,510
+medie a facturii totale.
+
+23
+00:01:53,580 --> 00:01:55,800
+Valoarea ei categorică categorică.
+
+24
+00:01:55,890 --> 00:02:02,640
+Deci, factura medie pentru bărbați va fi puțin mai mare decât valoarea totală a facturilor totale pentru femei.
+
+25
+00:02:03,330 --> 00:02:09,780
+Și puteți să treceți și să schimbați ceea ce se numește obiect estimator dacă doriți să afectați
+
+26
+00:02:10,050 --> 00:02:14,270
+în mod substanțial ce este gruparea sau agregarea reală aici.
+
+27
+00:02:14,580 --> 00:02:21,480
+Și putem merge mai departe și să facem asta adăugând un alt argument aici, estimator.
+
+28
+00:02:21,480 --> 00:02:23,370
+Și aici vom face tab-uri de schimbare.
+
+29
+00:02:23,370 --> 00:02:28,300
+Puteți vedea documentația Jupiter notebook-uri pentru asta.
+
+30
+00:02:28,440 --> 00:02:31,850
+Estimatorul este o funcție care este o funcție agregată.
+
+31
+00:02:31,860 --> 00:02:36,900
+Deci, este un fel de funcție statistică de estimat în cadrul fiecărui coș categoric
+
+32
+00:02:36,900 --> 00:02:39,630
+și, implicit, va fi medie sau medie.
+
+33
+00:02:39,810 --> 00:02:44,310
+Dar, de asemenea, pot să-mi pun funcțiile dacă aveți o anumită funcție agregată pe care o puteți face
+
+34
+00:02:44,310 --> 00:02:45,360
+și o puteți pune.
+
+35
+00:02:45,420 --> 00:02:47,380
+Chiar acum ne uităm la factura medie totală.
+
+36
+00:02:47,520 --> 00:02:52,820
+Dar să spunem că am vrut să ne dăm seama de abaterea standard de genul ei, de exemplu.
+
+37
+00:02:52,830 --> 00:02:55,560
+Există mai multe deviații standard pe masculi și factura lor totală.
+
+38
+00:02:55,590 --> 00:02:59,860
+Deci, mai multe variante sau femele au mai multe variante.
+
+39
+00:02:59,860 --> 00:03:05,130
+Ei bine, vom ajunge să spunem ceva plăcut în timp ce mergem să copiem și să lipim
+
+40
+00:03:05,130 --> 00:03:08,040
+acest lucru și să-l punem într-o celulă deasupra.
+
+41
+00:03:08,120 --> 00:03:14,170
+Mergeți mai departe și introduceți celula de deasupra și se spune că este important ca NPE aici.
+
+42
+00:03:14,250 --> 00:03:20,670
+Apoi, în estimator am de gând să meargă înainte și să treacă plăcuța t d funcția pentru abaterea standard și acest
+
+43
+00:03:21,210 --> 00:03:27,630
+lucru îmi va spune când fac acest lucru ceea ce deviația standard a coloanei de facturare totală este pe categorie.
+
+44
+00:03:28,050 --> 00:03:30,510
+Și puteți trece în orice funcție de estimare doriți.
+
+45
+00:03:30,510 --> 00:03:31,730
+Puteți crea chiar și propria dvs.
+
+46
+00:03:32,100 --> 00:03:37,380
+Iar tu poți să-l dai în bara de complot unde x este o coloană de categorii și Y este un fel de coloană numerică.
+
+47
+00:03:37,770 --> 00:03:39,750
+Apoi ați trecut datele dvs. și orice estimator.
+
+48
+00:03:39,750 --> 00:03:44,700
+Și aceasta este doar o agregare sau, în esență, doar o vizualizare a unui fel de grup
+
+49
+00:03:44,700 --> 00:03:45,840
+prin mecanism aici.
+
+50
+00:03:45,840 --> 00:03:54,840
+Bine, să mergem mai departe și să construim acest lucru prin a face un complot complot un număr de parcele în seaborne este, în esență, același lucru ca
+
+51
+00:03:54,840 --> 00:04:00,170
+un complot bar, cu excepția cazului în care estimatorul numără în mod explicit numărul de apariții.
+
+52
+00:04:00,450 --> 00:04:09,020
+Și din acest motiv am setat doar valoarea x și apoi stăm în datele de egalitate a datelor.
+
+53
+00:04:09,510 --> 00:04:15,840
+Și acest lucru este în esență același lucru cu a spune ca Pandas Thumb contează de pe
+
+54
+00:04:16,200 --> 00:04:18,310
+această coloană sfaturi pentru sex.
+
+55
+00:04:18,330 --> 00:04:18,730
+In regula.
+
+56
+00:04:18,750 --> 00:04:23,580
+Acum, aceleași lucruri de bază ale contraplotului sunt în esență aceleași cu cele ale unei ploturi de bare, cu excepția faptului că axa y
+
+57
+00:04:23,580 --> 00:04:24,820
+a fost deja aleasă pentru dvs.
+
+58
+00:04:24,900 --> 00:04:26,500
+Numără doar întâmplările.
+
+59
+00:04:26,520 --> 00:04:30,570
+Aici putem vedea că există mai mulți bărbați în setul de date decât femelele.
+
+60
+00:04:31,200 --> 00:04:34,800
+Hai să mergem mai departe și să vorbim despre parcele de box și parcele violente.
+
+61
+00:04:34,800 --> 00:04:40,770
+Aceste tipuri de parcele sunt folosite pentru a arăta că distribuția de date categorice, un complot box este, de asemenea, uneori cunoscut
+
+62
+00:04:40,770 --> 00:04:42,710
+ca o cutie și whisker parcelă.
+
+63
+00:04:42,900 --> 00:04:48,220
+Și arată distribuția datelor cantitative într-un mod care, sperăm, facilitează compararea
+
+64
+00:04:48,220 --> 00:04:49,130
+variabilelor.
+
+65
+00:04:49,230 --> 00:04:50,710
+Mă voi arăta ce vreau să spun prin asta.
+
+66
+00:04:50,940 --> 00:05:00,630
+Am de gând să creez un complot cutie spunând S și S acel parcelă cu cutie apoi vom trece un x și y în acest caz
+
+67
+00:05:00,630 --> 00:05:05,820
+voi alege X pentru a fi un punct de date categorice sau coloană.
+
+68
+00:05:05,880 --> 00:05:07,550
+Și apoi de ce va fi numeric.
+
+69
+00:05:07,590 --> 00:05:09,560
+Va trece proiectul de lege total.
+
+70
+00:05:09,630 --> 00:05:14,220
+Deci, aici vom încerca să vedem distribuția facturii totale pe zi.
+
+71
+00:05:14,220 --> 00:05:18,170
+Și, în cele din urmă, trebuie să transmit aceste date ca sfaturi.
+
+72
+00:05:18,230 --> 00:05:20,460
+Să mergem mai departe și să fugim de asta.
+
+73
+00:05:21,030 --> 00:05:23,730
+Și aici luăm curierul nostru.
+
+74
+00:05:24,020 --> 00:05:24,400
+O.K.
+
+75
+00:05:24,450 --> 00:05:29,640
+Această diagramă cutie prezintă plăcile de bază ale setului de date în timp ce mușchii se extind pentru a
+
+76
+00:05:29,640 --> 00:05:33,600
+arăta restul distribuției, cu excepția acelor puncte care se află în afara acestor mușchi.
+
+77
+00:05:33,630 --> 00:05:40,710
+Acestea sunt hotărâte a fi excedentare și puteți interpreta în mod esențial acest lucru, de exemplu, dacă privim joi ca
+
+78
+00:05:40,710 --> 00:05:45,960
+o zi în sine pe care o avem pe factura totală a axei y.
+
+79
+00:05:46,350 --> 00:05:51,100
+Și apoi pe axa X este doar separat de categorie sau de zi.
+
+80
+00:05:51,570 --> 00:05:55,770
+Deci, dacă mă uit la acest albastru chiar aici tot drumul din stânga pentru joi, în realitate
+
+81
+00:05:55,770 --> 00:05:58,130
+mi se spune că aproximativ 25% sau un sfert.
+
+82
+00:05:58,150 --> 00:06:02,430
+De aceea, aceste numere sunt numite dale de bază, punctele de date merg de la centrul șoapelor până
+
+83
+00:06:02,490 --> 00:06:07,190
+la partea de jos și apoi un alt sfert merge din partea de jos a cutiei spre mijlocul de aici.
+
+84
+00:06:07,350 --> 00:06:09,460
+Această linie și apoi etc pentru partea de sus.
+
+85
+00:06:09,490 --> 00:06:14,070
+Deci, dar acum aproximativ un sfert, punctele sunt aici și apoi celălalt sfert din puncte sunt aici.
+
+86
+00:06:14,460 --> 00:06:22,920
+Și aceste puncte sunt exagerate și putem începe să ne facem cu adevărat fantezie cu seaborne, adăugând doar câteva cuvinte
+
+87
+00:06:23,400 --> 00:06:26,820
+de cod aici și specificând o nuanță.
+
+88
+00:06:27,360 --> 00:06:33,480
+Și asta ne va permite să împărțim aceste parcele de box chiar și mai departe printr-o altă coloană
+
+89
+00:06:33,630 --> 00:06:34,590
+categorică categorică.
+
+90
+00:06:34,590 --> 00:06:37,470
+În acest caz, vom merge mai departe și vom spune că Heugh este egal cu fumătorul.
+
+91
+00:06:37,580 --> 00:06:46,080
+Dacă execut acest lucru acum văd parcelele de cutie împărțite pe zi și, de asemenea, împărțite după statutul de fumător și statutul de fumător este
+
+92
+00:06:46,110 --> 00:06:47,620
+colorat aici pentru tine.
+
+93
+00:06:47,910 --> 00:06:50,030
+Și acum puteți compara acum nu numai.
+
+94
+00:06:50,030 --> 00:06:55,150
+De comportament zilnic pentru factura totală, dar și prin faptul că această persoană este sau nu fumător.
+
+95
+00:06:55,320 --> 00:06:57,990
+Și aceasta este cu adevărat puterea adevărată în spatele seabornei.
+
+96
+00:06:58,080 --> 00:07:03,060
+Acesta vă permite rapid să adăugați acest indicator de nuanță, care vă oferă, în esență, un întreg
+
+97
+00:07:03,060 --> 00:07:06,000
+un strat de date foarte rapid și foarte ușor.
+
+98
+00:07:06,530 --> 00:07:13,500
+Și astfel puteți compara că practic oamenii de vineri tind să aibă o factură mai mare dacă nu
+
+99
+00:07:13,500 --> 00:07:19,950
+sunt un fumător față de cei care sunt fumători și atunci puteți începe să vedeți de
+
+100
+00:07:19,950 --> 00:07:24,450
+fapt variația pentru fumători sau distribuția pentru fumători și nefumătorii .
+
+101
+00:07:24,510 --> 00:07:30,450
+Bine, să mergem mai departe și să vorbim despre parcele violente, care vor merge mai departe și vom elimina
+
+102
+00:07:32,220 --> 00:07:38,400
+această nuanță aici pentru a vedea parcela noastră originală și apoi o să chem un complot violent, iar un complot
+
+103
+00:07:38,430 --> 00:07:41,630
+violent joacă un rol foarte asemănător unui box complot.
+
+104
+00:07:42,000 --> 00:07:44,930
+Și o puteți face doar pentru că, în esență, acel complot violent.
+
+105
+00:07:45,330 --> 00:07:50,550
+Și ceea ce va face este că va arăta, de asemenea, distribuirea datelor într-o anumită categorie.
+
+106
+00:07:51,030 --> 00:07:56,370
+Deci, vor lua exact aceleași argumente ca un complot box va lua un x pentru categoria.
+
+107
+00:07:57,080 --> 00:08:02,460
+Soția ta va fi un fel de coloană numerică se va lipi de factura totală
+
+108
+00:08:02,460 --> 00:08:05,170
+și apoi va trece în datele noastre.
+
+109
+00:08:05,180 --> 00:08:10,260
+CBS va merge mai departe și va rula acest lucru și va vedea cum arată aceste parcele
+
+110
+00:08:10,260 --> 00:08:14,040
+și permite să mă deplasez pentru a putea compara aceste două.
+
+111
+00:08:14,040 --> 00:08:14,250
+In regula.
+
+112
+00:08:14,250 --> 00:08:18,920
+Așa că avem caseta noastră deasupra și vioara noastră de jos.
+
+113
+00:08:19,380 --> 00:08:25,350
+În prezent, complotul de vioară, spre deosebire de complotul din cutie, ne permite să complotăm toate componentele
+
+114
+00:08:25,350 --> 00:08:31,650
+care corespund punctelor de date reale și arată în mod esențial estimarea densității kernelului din distribuția de bază.
+
+115
+00:08:32,250 --> 00:08:36,930
+Și acest lucru este, în esență, doar arată dacă am un fel de împărțit acest lucru în
+
+116
+00:08:37,020 --> 00:08:43,290
+jumătate din distribuția de puncte de partea sa și acest lucru vă permite să dezvălui mai multe informații despre punctele de date
+
+117
+00:08:43,380 --> 00:08:49,980
+ei înșiși costul vine la faptul că este un pic mai greu de interpretat sau citiți versus o cutie plop un complot cutie este
+
+118
+00:08:49,980 --> 00:08:56,460
+foarte ușor să aruncați o privire la și puteți să vă spun rapid în cazul în care aproximativ datele se compară pe o categorie
+
+119
+00:08:57,660 --> 00:08:58,700
+în parcele violente.
+
+120
+00:08:58,710 --> 00:09:03,840
+Vom oferi mai multe informații în ceea ce privește distribuția tuturor punctelor în sine.
+
+121
+00:09:04,050 --> 00:09:07,470
+Dar este un lucru pe care trebuie să-l petreacă un pic mai mult timp privindu-l
+
+122
+00:09:07,470 --> 00:09:08,000
+și înțelegându-l.
+
+123
+00:09:08,130 --> 00:09:11,560
+Dar aceste două parcele sunt cu siguranță foarte legate între ele.
+
+124
+00:09:11,580 --> 00:09:14,660
+Doar complotul violent arată mai multe informații.
+
+125
+00:09:14,880 --> 00:09:21,180
+Uneori, această informație poate fi ascunsă de dvs. dacă folosiți doar un complot cu cutie și un complot violent, la fel ca
+
+126
+00:09:21,240 --> 00:09:22,650
+și complotul din cutie.
+
+127
+00:09:22,680 --> 00:09:24,860
+De asemenea, are opțiunea de a face Whew.
+
+128
+00:09:25,140 --> 00:09:32,080
+Aș putea spune că cumpărați sex și arătați-mi parcele violente una lângă cealaltă.
+
+129
+00:09:32,080 --> 00:09:37,710
+Ei bine, ceea ce este interesant cu privire la complotul violent față de complotul cutie este un alt
+
+130
+00:09:37,710 --> 00:09:43,680
+argument în loc să pună două parcele violente unul lângă celălalt, deoarece informațiile complotului de vioară s-au dublat în esență.
+
+131
+00:09:44,010 --> 00:09:50,040
+Aș putea avea o jumătate să fie una aici, iar cealaltă jumătate să fie o alta
+
+132
+00:09:51,270 --> 00:09:57,310
+și puteți face asta spunând că diviziunea este egală cu adevărat ca argument și apoi va diviza distribuțiile.
+
+133
+00:09:57,330 --> 00:10:00,130
+Și aici aveți mai multe informații.
+
+134
+00:10:00,120 --> 00:10:06,360
+Acum puteți compara direct distribuțiile bazate pe o altă categorie și puteți vedea cum
+
+135
+00:10:06,370 --> 00:10:10,080
+se compară singuri categoriile pe axa x.
+
+136
+00:10:10,100 --> 00:10:15,000
+Acordat acest lucru vine din nou cu costul pe care veți petrece mai mult timp uita la această vizualizare.
+
+137
+00:10:15,420 --> 00:10:19,600
+Deci, într-adevăr trebuie să cunoașteți publicul și să știți ce este potrivit atunci
+
+138
+00:10:19,600 --> 00:10:25,210
+când utilizați navigația și aceste vizualizări avansate dacă aveți de-a face cu mai multe date tehnice sunt oamenii care sunt
+
+139
+00:10:25,200 --> 00:10:30,310
+oameni de știință înșiși și au văzut parcele violente înainte ca aceste parcele să fie o alegere excelentă.
+
+140
+00:10:30,510 --> 00:10:36,120
+Cu toate acestea, pentru a se ocupa de mai multe feluri de executiv executiv oameni de conducere tipuri de oameni
+
+141
+00:10:36,120 --> 00:10:41,250
+poate doar un complot simplă cutie, care este mai populară poate fi alegerea corectă dacă nu găsiți
+
+142
+00:10:41,250 --> 00:10:43,140
+ceva foarte interesant în complot violent.
+
+143
+00:10:43,140 --> 00:10:49,290
+Bine, să mergem mai departe și să vorbim despre câteva metode mai avansate de vizualizare a acestui tip de
+
+144
+00:10:49,290 --> 00:10:50,200
+date categorice.
+
+145
+00:10:50,230 --> 00:10:55,570
+Vom începe cu plotul de bandă, iar plotul striptos este, probabil, cel mai simplu, dar
+
+146
+00:10:55,560 --> 00:10:58,510
+vom construi din el și vom mări aici.
+
+147
+00:10:58,650 --> 00:11:05,400
+Vom primi și vom spune parcelă de esență, iar plotul de benzi va desena un scatterplot în care
+
+148
+00:11:05,400 --> 00:11:07,140
+o variabilă este categorică.
+
+149
+00:11:07,140 --> 00:11:12,270
+Așa că am de gând să spun complot strip și vom face exact
+
+150
+00:11:12,270 --> 00:11:18,940
+același lucru a fost că înainte de X va fi categoric y va fi proiectul de lege numeric total.
+
+151
+00:11:18,960 --> 00:11:21,820
+Datele vor fi egale cu sfaturile.
+
+152
+00:11:22,240 --> 00:11:30,670
+Iar acest lucru este doar un simplu scatterplot care se bazează pe categoria întâi cu această plotare este că nu puteți spune cu adevărat
+
+153
+00:11:30,660 --> 00:11:36,100
+câte puncte sunt stivuite unul pe altul pe care le puteți face este la
+
+154
+00:11:36,240 --> 00:11:42,770
+un alt argument numit jitter și ce jitter va face dacă intrăm și spunem că este adevărat aici.
+
+155
+00:11:42,860 --> 00:11:47,640
+Aceasta va adăuga un pic de zgomot aleatoriu pentru a separa unele dintre aceste puncte stivuite.
+
+156
+00:11:47,800 --> 00:11:53,610
+Și puteți vedea cât mai gros și mai multe puncte sunt mult mai clare decât versiunea normală a
+
+157
+00:11:53,620 --> 00:11:54,280
+benzii.
+
+158
+00:11:54,300 --> 00:11:58,710
+Deci, dacă ar fi avut o grămadă de puncte așezate unul peste celălalt, ar fi greu să-i
+
+159
+00:11:58,710 --> 00:11:59,550
+spui parcelei normale.
+
+160
+00:11:59,550 --> 00:12:06,240
+Dar acum, dacă puteți observa o densitate mai bună cu plotul de benzi, la fel ca o complot violent, puteți începe
+
+161
+00:12:06,250 --> 00:12:08,830
+să adăugați câteva din aceste câteva argumente suplimentare.
+
+162
+00:12:09,030 --> 00:12:12,540
+Deci, din nou am putea spune că hewe este egală cu ceva de genul sexului.
+
+163
+00:12:12,630 --> 00:12:19,310
+Rulați acest lucru și acum am indicii bazate pe culori și putem face și o împărțire pe aceasta, așa cum
+
+164
+00:12:19,330 --> 00:12:26,170
+am putea avea o complot violentă falsă și acest lucru va împărți în esență aceste culori bazându-se pe argumentele dvs. de schewe.
+
+165
+00:12:26,220 --> 00:12:26,770
+O.K.
+
+166
+00:12:27,150 --> 00:12:33,030
+Acum, un astfel de complot trebuie să fie atent la el, poate fi greu de interpretat față de
+
+167
+00:12:33,030 --> 00:12:37,170
+un complot simplu al cutiei sau chiar de un complot violent.
+
+168
+00:12:37,200 --> 00:12:43,320
+Unii oameni preferă să combine de fapt ideea unui scenariu de benzi versus o complot violentă și să creeze
+
+169
+00:12:43,330 --> 00:12:48,060
+ceva cunoscut ca un complot roșu, iar Seaborn vă permite să faceți acest lucru.
+
+170
+00:12:48,300 --> 00:12:49,790
+Un complot roșu.
+
+171
+00:12:49,800 --> 00:12:50,730
+Vom ieși și vom începe să tipăm.
+
+172
+00:12:50,740 --> 00:12:56,210
+Este foarte similar cu plotarea cu excepția punctelor care sunt ajustate astfel încât să nu se suprapună.
+
+173
+00:12:56,310 --> 00:12:59,760
+Iar aceasta oferă o reprezentare mai bună a distribuției valorilor.
+
+174
+00:12:59,910 --> 00:13:04,520
+Este un fel de combinare a unui complot de bandă scatterplot cu un complot violent.
+
+175
+00:13:04,530 --> 00:13:05,890
+Lasă-mă să-ți arăt ce vreau să spun prin asta.
+
+176
+00:13:05,890 --> 00:13:08,190
+Probabil va fi puțin mai evident când o veți vedea.
+
+177
+00:13:08,250 --> 00:13:13,060
+Vom merge mai departe și vom trece în exact aceeași zi de argumente pentru x.
+
+178
+00:13:13,800 --> 00:13:15,170
+Vom spune de ce este factura totală.
+
+179
+00:13:15,170 --> 00:13:25,090
+Oricum, factura totală de subliniere și apoi vom spune că datele sunt sfaturi.
+
+180
+00:13:25,770 --> 00:13:28,440
+Și aici putem vedea complotul de roi.
+
+181
+00:13:28,620 --> 00:13:34,000
+Și, sperăm, este mai evident modul în care complotul de roi este, în esență, o combinație între un complot de bandă
+
+182
+00:13:34,240 --> 00:13:35,530
+și un complot violent.
+
+183
+00:13:35,550 --> 00:13:42,000
+Aceasta arată aceeași distribuție, cu excepția faptului că arată toate punctele în sine.
+
+184
+00:13:42,000 --> 00:13:47,130
+Un dezavantaj în folosirea unui complot de roiuri, chiar dacă acestea sunt destul de minunate și cool și faptul că acestea
+
+185
+00:13:47,130 --> 00:13:52,450
+arată o mulțime de informații, uneori, acestea nu scară de fapt, că bine la numere foarte mari, atât în ​​ceea ce
+
+186
+00:13:52,440 --> 00:13:54,660
+privește capacitatea de a arăta toate punctele .
+
+187
+00:13:54,720 --> 00:13:58,810
+Aceste puncte merg prea mult, de vreme ce nu vreți să stivuiți unul pe altul.
+
+188
+00:13:58,890 --> 00:14:01,710
+Și, de asemenea, este nevoie de o mulțime de calcul pentru a începe să le aranjezi.
+
+189
+00:14:01,710 --> 00:14:05,360
+Așadar, aș sfătui să nu folosiți parcele pentru seturi de date foarte mari.
+
+190
+00:14:05,500 --> 00:14:10,530
+Și, de fapt, aș spune că, în general, probabil că stai departe de a arăta doar parcele
+
+191
+00:14:10,530 --> 00:14:14,170
+de swarm, deoarece majoritatea probabil că nu i-au mai întâlnit până acum.
+
+192
+00:14:14,150 --> 00:14:19,240
+Faceți-vă rapid să știți dacă vă place foarte mult complotul pe care îl puteți combina de fapt cu un complot
+
+193
+00:14:19,230 --> 00:14:22,630
+violent pentru a arăta ambele piese de informații stivuite una peste cealaltă.
+
+194
+00:14:22,890 --> 00:14:31,950
+Puteți spune în aceeași celulă că va merge mai departe și va spune complotul violoncel SNL și va copia și lipi exact aceleași informații
+
+195
+00:14:31,950 --> 00:14:39,660
+aici în complotul nostru violent și vom merge mai departe și să specificăm culoarea parcelei de roi să fie negru
+
+196
+00:14:40,200 --> 00:14:47,730
+și aceasta este de fapt mergând la plot-uri chiar pe partea de sus unul de celălalt și aici puteți
+
+197
+00:14:47,760 --> 00:14:54,170
+vedea fiecare punct și un grafic corespunzător de estimare a densității kernelului sau kernel-ului deasupra acestuia.
+
+198
+00:14:54,180 --> 00:14:57,200
+Acum este o mulțime de informații aici, așa că fii atent la asta.
+
+199
+00:14:57,210 --> 00:15:03,090
+Acest lucru este probabil mai util pentru prezentare, dar doar pentru analiza datelor exploratorii. Sperăm că aceste tipuri de
+
+200
+00:15:03,100 --> 00:15:08,340
+parcele vă vor ajuta să înțelegeți imediat datele dvs., dar nu atât de mult pe partea de
+
+201
+00:15:08,350 --> 00:15:09,640
+a explica unui executiv.
+
+202
+00:15:09,850 --> 00:15:16,020
+Aceste feluri de lucruri sunt mai bine realizate cu ajutorul oricarei casete sau au un fel de numar de parcele sau parcele
+
+203
+00:15:17,040 --> 00:15:23,310
+de bara de acest gen de parcele aceste parcele mai avansate violente parcele de parcele parcele de roiuri sunt doar mai potrivite pentru
+
+204
+00:15:23,320 --> 00:15:28,780
+oamenii de stiinta de date ei insisi si au avut de fapt citit sau explora informații despre date.
+
+205
+00:15:28,770 --> 00:15:34,560
+În cele din urmă, vreau să vorbesc despre complot Factor Plot complot este de fapt doar forma cea
+
+206
+00:15:34,570 --> 00:15:42,840
+mai generală a tuturor acestor parcele și ceea ce face este dacă facem schimb tab-ul aici este nevoie de un argument o Wargame de ce
+
+207
+00:15:42,850 --> 00:15:48,990
+argumentele pot lua date umane, dar apoi, de asemenea, ia argumentele unui tip și argumentul cel bun este, în
+
+208
+00:15:49,000 --> 00:15:52,350
+esență, ceea ce va descrie faptele sau complotul însuși.
+
+209
+00:15:52,360 --> 00:15:58,970
+De exemplu, putem spune că faptele sau complotul vor spune că vom copia și lipi acea zi a sequelului de ce a fost o
+
+210
+00:15:58,980 --> 00:16:05,100
+factură totală pentru Tipps să mă scuzați și apoi să putem merge mai departe și să spunem că Kines este egală cu.
+
+211
+00:16:05,320 --> 00:16:08,190
+Să zicem că unul din ploturile barului poți să spui barul.
+
+212
+00:16:08,500 --> 00:16:12,840
+Și creează un complot de tip bar, bazat pe acele categorii.
+
+213
+00:16:12,850 --> 00:16:17,650
+Deci, toate parcelele pe care le-am privit înainte de metoda cea mai generală se numesc complotul factorului Sonesta.
+
+214
+00:16:17,970 --> 00:16:19,460
+Și apoi specificați tipul.
+
+215
+00:16:19,460 --> 00:16:24,900
+Deci, de exemplu, dacă vrem să recreezi complotul violent, poți apela vioara viitoare și asta începe
+
+216
+00:16:24,900 --> 00:16:26,830
+să recreeze acel complot violent.
+
+217
+00:16:26,860 --> 00:16:32,580
+Personal prefer sa numesc de fapt complotul in sine in mod specific, astfel ca un S
+
+218
+00:16:32,590 --> 00:16:38,890
+acel complot violent scapa parcelă plot complot etc. comparativ cu apelarea faptei generale sau a metodei complot, dar știți că acest lucru
+
+219
+00:16:38,880 --> 00:16:41,680
+este disponibil pentru dvs. în cazul în care doriți să-l numiți.
+
+220
+00:16:41,670 --> 00:16:42,140
+In regula.
+
+221
+00:16:42,420 --> 00:16:44,140
+Asta e pentru parcele categorice.
+
+222
+00:16:44,130 --> 00:16:50,490
+Sperăm că ați văzut o mulțime de putere care vă stă la dispoziție și că veți folosi această putere cu înțelepciune, în special
+
+223
+00:16:50,500 --> 00:16:54,870
+în funcție de cine vă prezentați, de exemplu, așa cum am menționat înaintea acestor câmpuri.
+
+224
+00:16:54,900 --> 00:17:00,990
+Ușor de citit o mulțime de oameni de management le înțeleg bine aceste parcele mai avansate acestea sunt mai mult
+
+225
+00:17:01,000 --> 00:17:03,150
+pentru tine de a explora aceste date.
+
+226
+00:17:03,150 --> 00:17:03,630
+O.K.
+
+227
+00:17:03,660 --> 00:17:09,990
+Sper că v-ați bucurat de această prelegere și sper că v-ați bucurat să vedeți cât de ușor seaborne face aceste vizualizări pentru
+
+228
+00:17:09,990 --> 00:17:10,560
+dvs.
+
+229
+00:17:10,740 --> 00:17:14,670
+Tot ce ați făcut este în esență doar o singură linie de cod care este destul de minunat.
+
+230
+00:17:15,130 --> 00:17:17,580
+Mulțumesc și te văd la următoarea conferință

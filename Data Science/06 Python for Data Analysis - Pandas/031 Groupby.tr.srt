@@ -1,0 +1,359 @@
+1
+00:00:05,280 --> 00:00:09,960
+Herkese merhaba deyin ve bu derste pandalar için konferansa gelerek gruba hoş geldiniz,
+
+2
+00:00:09,960 --> 00:00:15,530
+size gruptaki veri satırlarını birlikte aydınlatmak ve toplama işlevleri çağırmak için metodla grubun nasıl kullanılacağını göstereceğiz.
+
+3
+00:00:15,540 --> 00:00:20,850
+Şimdi aslında Jüpiter defterine geçmeden önce, netice deneyimim yoksa ya da deneyimlediyseniz veya çoğu
+
+4
+00:00:20,850 --> 00:00:25,950
+insan GROUP BY ifadesinin gerçekte ne yaptığından emin olmak için grup satın almanın
+
+5
+00:00:25,950 --> 00:00:28,300
+ne olduğunu hızlı bir şekilde açıklayayım.
+
+6
+00:00:28,560 --> 00:00:34,890
+Basitçe gruplandırılmış olarak koymak, bir sütun temelinde satırları birlikte gruplandırmanıza ve ardından onlara bir tür
+
+7
+00:00:34,890 --> 00:00:36,840
+toplama işlevi gerçekleştirmenize olanak tanır.
+
+8
+00:00:37,080 --> 00:00:43,390
+Örneğin, bu örnekte, bir iki ve üç IDS'in üç bölümü var.
+
+9
+00:00:43,470 --> 00:00:50,220
+Ve onlara, ID sütununa göre gruplandırabilen ve bunları her işlevde bir araya getiren bazı fonksiyonları kullanarak
+
+10
+00:00:50,220 --> 00:00:56,130
+toplamak için çeşitli değerlerimiz var, temelde sadece ve birçok değer alan ve ardından tüküren
+
+11
+00:00:56,130 --> 00:01:03,060
+veya tek bir değer çıkaran herhangi bir işlev için fantezi bir terimdir Bir grup değerin toplamını alma
+
+12
+00:01:03,330 --> 00:01:07,680
+ve sonuçları çıkarma veya ortalama veya standart sapma vb. alma gibi. Bunların hepsi toplu işlevdir ve yöntemle bir
+
+13
+00:01:07,800 --> 00:01:13,950
+gruptur, Gruplama için bir sütun seçmenize izin verir mi.
+
+14
+00:01:13,950 --> 00:01:14,950
+Bu sütun değerini temel alarak tüm bu satırları bir araya getirir.
+
+15
+00:01:15,000 --> 00:01:18,250
+Ve sonra üzerinde bir tür toplama işlevi gerçekleştirirsiniz.
+
+16
+00:01:18,440 --> 00:01:21,330
+Tamam.
+
+17
+00:01:21,360 --> 00:01:22,160
+Ancak söyleniyor, devam edelim ve GROUP BY ile pandalar nasıl kullanılacağını öğrenelim.
+
+18
+00:01:22,200 --> 00:01:25,980
+Ben devam edip Jüpiter defterine atlayacağım.
+
+19
+00:01:26,010 --> 00:01:28,820
+Pekâlâ, işte burada Jüpiter defterindeyiz.
+
+20
+00:01:28,860 --> 00:01:31,390
+Ben ilerledim ve bu veriyi kopyaladım ve yapıştırdım.
+
+21
+00:01:31,530 --> 00:01:34,650
+Temelde defterden sadece bir sözlük
+
+22
+00:01:34,660 --> 00:01:40,350
+ve bu not defteri sadece pandalar klasöründen biri tarafından çağrılır.
+
+23
+00:01:40,350 --> 00:01:41,710
+PD veri çerçevesi diyerek
+
+24
+00:01:41,760 --> 00:01:47,750
+devam et ve o veri sözlüğünü geçip otomatik olarak bir veri çerçevesi oluşturmalısın öyle görünüyor.
+
+25
+00:01:47,780 --> 00:01:54,780
+Tamam, devam edip elle bunu yazabilirsin ama şunu söylemek isterim ki bu verileri sadece bir sözlük ve sonra da
+
+26
+00:01:54,780 --> 00:01:58,040
+Ve temel olarak bu sadece bir veri oluşturdu.
+
+27
+00:01:58,050 --> 00:01:59,900
+Üç şirket kodu içeren bir şirket kolonumuz var.
+
+28
+00:02:00,000 --> 00:02:03,170
+Google Microsoft ve Facebook.
+
+29
+00:02:03,330 --> 00:02:05,390
+Şimdi içinde bir grup eşsiz insanın bulunduğu bir kişi kolonumuz var.
+
+30
+00:02:05,520 --> 00:02:08,750
+Ve sonra bazı satış rakamlarımız 200 120 vb. Var. Şimdi yapabildiğimiz şey, bu grupları, bir sütun adını temel alarak satırları bir
+
+31
+00:02:08,910 --> 00:02:13,460
+araya getirmek için yöntemle kullanmaktır; örneğin devam edelim ve devam edelim ve devam edeceğim firma tarafından gruplaştıracağız
+
+32
+00:02:13,590 --> 00:02:19,020
+ve sonra ZF'yi söylüyorsun ve sonra da aramayı grup olarak söylüyorsun yöntemini kullanın ve bu davayla gruplamak istediğiniz sütunu iletin.
+
+33
+00:02:19,020 --> 00:02:25,950
+Şirket sütununa göre bir grup istiyorum ve burada ne çıktığıma dikkat et bunu yapıyorum.
+
+34
+00:02:25,950 --> 00:02:32,070
+Nesneye göre bir grup elde edeceğim ve yalnızca hafızada nerede saklandığına işaret ediyorum.
+
+35
+00:02:32,070 --> 00:02:38,240
+Yapabileceğim şey, bunu yeni bir değişken olarak saklamak, bu yüzden şirketime gelmek gibi
+
+36
+00:02:38,400 --> 00:02:43,100
+bir şey söyleyebilirim ve bu grup nesneye göre sahip olabiliyor.
+
+37
+00:02:43,350 --> 00:02:51,750
+Ardından Group By'ı kullanmanın ikinci adım.
+
+38
+00:02:51,750 --> 00:02:55,290
+Bu sütunda grupladıktan sonra, devam edin ve üzerinde bir tür toplama işlevi çağırın.
+
+39
+00:02:55,290 --> 00:02:58,250
+Örneğin, örneğin şirkete göre ortalama elde etmek
+
+40
+00:02:58,250 --> 00:03:03,090
+istersem, satış sütununa bakıp bana şirketin ortalama veya ortalama satışını verecektir.
+
+41
+00:03:03,420 --> 00:03:10,320
+Bunu kişi sütununda yapamamasının sebebi, bunlar dizelerdir ve yalnızca bir dize ortalamasını almanın
+
+42
+00:03:10,320 --> 00:03:13,310
+imkânı yoktur ve bu sayede
+
+43
+00:03:13,320 --> 00:03:18,180
+panderers sayısal olmayan bir şeyi otomatik olarak yoksayar demektir.
+
+44
+00:03:18,180 --> 00:03:23,490
+Aynı şekilde, şirket başı satışlar kadar her şeyin bir kısmı gibi
+
+45
+00:03:23,610 --> 00:03:26,060
+diğer toplu işlevleri yerine getirebiliriz.
+
+46
+00:03:26,070 --> 00:03:32,520
+Hatta standart sapmaları Vestey vb. Yapabilirsiniz. Geri döndüğümde, Şirket adı verilen bir dizin ve satış sütun değeri olan gerçek bir veri çerçevesi
+
+47
+00:03:32,520 --> 00:03:33,760
+olduğuna dikkat etmelisiniz.
+
+48
+00:03:33,990 --> 00:03:42,900
+Dot ellos C F B. gibi bir şeyi diyebilirim.
+
+49
+00:03:42,900 --> 00:03:48,760
+Ve bu da endeks önerisi gibi şeyler yapabileceğim anlamına geliyor, bu yüzden gelip
+
+50
+00:03:49,110 --> 00:03:55,920
+başlayalım ve firma bazındaki tüm satışları özetleyelim, böylece bazı şirketlerin satışları yapabilir ve daha sonra
+
+51
+00:03:55,920 --> 00:04:02,430
+Ve bu satışların bir kısmını şimdi Facebook'ta yapıyor olacaklarınız aslında bu grubu
+
+52
+00:04:02,850 --> 00:04:06,440
+nesne olarak değişken olarak ayarlamak değil.
+
+53
+00:04:07,000 --> 00:04:13,600
+Muhtemelen hepsini tek bir satırda ararsınız.
+
+54
+00:04:13,710 --> 00:04:17,510
+Bir kere pantless ile gerçekten rahat başlarsanız, şirket bazında grup gibi bir şeyler
+
+55
+00:04:17,550 --> 00:04:19,670
+söyleyeceksiniz, sonra da bazılarına benzer şeyler diyoruz.
+
+56
+00:04:19,710 --> 00:04:25,140
+Facebook için istiyorsan FBI diyorsun ve şimdi hepsi aynı çizgide.
+
+57
+00:04:25,830 --> 00:04:27,920
+Ve o zaman sadece
+
+58
+00:04:28,110 --> 00:04:35,160
+Kendinizde bulabileceğiniz bazı diğer kullanışlı toplam işlevler, yalnızca örnek sayısını veya sütunu sayan sayı
+
+59
+00:04:35,160 --> 00:04:36,420
+gibi şeylerdir.
+
+60
+00:04:36,660 --> 00:04:41,850
+Bu durumda kişi sütununu iade edebildi, çünkü bir kişinin o sütunda
+
+61
+00:04:41,850 --> 00:04:44,570
+veya şirkette kaç örnek oluşturduğunu sayabiliyor.
+
+62
+00:04:44,730 --> 00:04:49,890
+Yani iki kişiyiz ve her biri iki satış yaptık ve bu mantıklı.
+
+63
+00:04:49,890 --> 00:04:53,420
+Maks ve min gibi şeyler de yapabilirsiniz.
+
+64
+00:04:53,430 --> 00:04:57,360
+Python eşyaları alfabetik olarak saklamalıdır ve temelde burada göstermeye çalıştığım şey budur.
+
+65
+00:04:57,360 --> 00:05:00,190
+Ve şunu da unutmayın ki, kişiyi de döndürür çünkü
+
+66
+00:05:00,960 --> 00:05:07,080
+Maksimum alfabenin sonuna doğru en son olanıdır ve eğer C ve C alfabesindeki en
+
+67
+00:05:07,080 --> 00:05:09,410
+erken aramayı yaparsanız burada ajanslarımız olur.
+
+68
+00:05:09,480 --> 00:05:17,220
+Ancak muhtemelen dize sütunuyla min veya max kullanmamanız gerekir.
+
+69
+00:05:17,220 --> 00:05:19,570
+Muhtemelen tüm bu öfkeli işlevleri sayısal sütunlarla kullanacaksınız.
+
+70
+00:05:19,800 --> 00:05:23,310
+Grupla size göstermek istediğim son yararlı bir şey, GROUP
+
+71
+00:05:23,310 --> 00:05:27,320
+BY'ı tanımlanan yöntemle birçok kez kullanabilmeniz ve bir kerede kullanışlı
+
+72
+00:05:27,330 --> 00:05:34,440
+bilgi verir böylece ZF düşünce grubunu şirket adına ve sonra yazar der ve sana bir grup bilgi vereceğiz.
+
+73
+00:05:35,160 --> 00:05:42,010
+Mesela, her bir şirket için erkekler için standart sapmayı ve maksimi
+
+74
+00:05:42,030 --> 00:05:47,730
+ve her bir şirket için çekirdek kiremit değerlerini saymak.
+
+75
+00:05:47,730 --> 00:05:53,230
+Ve eğer bu biçimi beğenmezseniz ve aslında bunu değiştirebilirsiniz, böylece her şirketin gerçek bir dizin yerine bir sütun olmasını
+
+76
+00:05:53,250 --> 00:05:55,060
+isterseniz, bu gibi bir şey söyleyebilirsiniz.
+
+77
+00:05:55,170 --> 00:05:59,490
+Bu nedenle, ne tür bir biçimi daha
+
+78
+00:06:00,060 --> 00:06:08,330
+iyi açıklarsanız, bunu açıklayabilir ve sonra aslında yalnızca bu sütun adlarını arayabilirsiniz.
+
+79
+00:06:08,520 --> 00:06:13,530
+Tek bir şirketle veya tek bir sütunla ilgileniyorsanız.
+
+80
+00:06:13,530 --> 00:06:14,260
+Pekâlâ, bu grup tarafından gerçekten de geçerlidir.
+
+81
+00:06:14,280 --> 00:06:18,780
+Oldukça basit.
+
+82
+00:06:18,840 --> 00:06:21,150
+Dopp'u, gruplamak istediğiniz sütuna göre gruplandırdığınız veri çerçevesini çağırın ve sütun değerlerini tek bir değere toplamak
+
+83
+00:06:21,150 --> 00:06:21,920
+isteyen toplu yöntemi ne iseniz yapın.
+
+84
+00:06:21,930 --> 00:06:28,800
+Ve genellikle yalnızca ne tür bir toplama işleve
+
+85
+00:06:28,800 --> 00:06:34,140
+bağlı olduğunuza bağlı olarak sayısal sütunlarda çalışır.
+
+86
+00:06:34,140 --> 00:06:39,060
+Egzersizleri ve kapsül projelerini tamamladığımızda, gruba daha fazla uygulama alırsınız.
+
+87
+00:06:39,060 --> 00:06:39,720
+Tamam.
+
+88
+00:06:39,720 --> 00:06:45,450
+Herkese teşekkürler, bir sonraki derside görüşürüz.
+
+89
+00:06:45,960 --> 00:06:46,480
+&nbsp;
+
+90
+00:06:46,620 --> 00:06:48,480
+&nbsp;

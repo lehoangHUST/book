@@ -1,0 +1,663 @@
+1
+00:00:05,430 --> 00:00:10,000
+Hola a todos y bienvenidos a la Parte 3 de la serie de conferencias de diagrama de lib.
+
+2
+00:00:10,260 --> 00:00:15,780
+En esta parte final vamos a hablar sobre la configuración de la línea de colores con tipos de línea y
+
+3
+00:00:15,780 --> 00:00:19,380
+realmente se ve la personalización de las opciones de la trama de alquiler.
+
+4
+00:00:19,380 --> 00:00:23,070
+Avancemos y saltemos al cuaderno de Chippering para comenzar.
+
+5
+00:00:23,100 --> 00:00:25,690
+OK aquí estamos en el cuaderno de Júpiter.
+
+6
+00:00:25,950 --> 00:00:30,060
+Avancemos y hablemos sobre cómo establecer los colores con esa trama en vivo.
+
+7
+00:00:30,400 --> 00:00:39,600
+Así que voy a seguir adelante y solo digo que la figura es igual a la figura VLT y luego voy a ir y agregar un
+
+8
+00:00:39,600 --> 00:00:43,720
+conjunto de la figura x de Access es igual a la Fig.
+
+9
+00:00:43,800 --> 00:00:54,140
+Agregue los ejes de subrayado y voy a configurar esto en 0 0 1 1 y luego wups y luego fuera de ese tipo de ejes I para decir
+
+10
+00:00:54,180 --> 00:00:57,610
+X detener la trama y hacer X venir una Y.
+
+11
+00:00:57,840 --> 00:01:01,200
+Y esta es una referencia a la misma xey con la que hemos estado trabajando.
+
+12
+00:01:01,200 --> 00:01:04,490
+Entonces, si entro y dibujo que obtengo algo que se ve así.
+
+13
+00:01:04,500 --> 00:01:12,480
+Ahora puedo editar este color de la trama colocando el parámetro de color y la premiĂ¨re de color puede
+
+14
+00:01:12,480 --> 00:01:20,230
+tomar múltiples argumentos que puede tomar en argumentos como cadenas de colores comunes como el azul o vamos
+
+15
+00:01:20,260 --> 00:01:27,790
+a ponerlas en naranja o puedes ver cuándo una línea naranja o verde y obtienes una línea verde.
+
+16
+00:01:27,810 --> 00:01:29,260
+Así que los nombres de colores muy básicos.
+
+17
+00:01:29,280 --> 00:01:33,440
+En realidad, puede ser una cadena si desea comenzar a obtener más detalles.
+
+18
+00:01:33,450 --> 00:01:39,550
+En realidad, puedes poner códigos hexadecimales RGV para que pueda poner una etiqueta hash y luego un RG sea un
+
+19
+00:01:39,850 --> 00:01:45,420
+código hexadecimal, como ir a Gaudens, copiar esto desde la computadora portátil f f 8 C 0 0.
+
+20
+00:01:45,690 --> 00:01:47,260
+Whoops es.
+
+21
+00:01:47,730 --> 00:01:49,600
+Y eso te lleva a un color más personalizado.
+
+22
+00:01:49,890 --> 00:01:58,890
+De modo que puede seguir adelante y buscar en Google el creador de código RSGB X o Creador, y debe tener muchas
+
+23
+00:01:58,890 --> 00:02:00,920
+herramientas disponibles libremente en línea.
+
+24
+00:02:00,920 --> 00:02:06,510
+que desee hacer un color muy personalizado para colores muy básicos, básicamente tipo de colores Crayola como el morado.
+
+25
+00:02:06,510 --> 00:02:11,050
+De hecho, nos estamos acercando a estos son los códigos hexadecimales G-B en caso de
+
+26
+00:02:11,100 --> 00:02:16,200
+Debería poder trazarlos fácilmente y simplemente pasar la cadena.
+
+27
+00:02:16,200 --> 00:02:18,660
+OK, así que eso es lo básico de los colores.
+
+28
+00:02:18,660 --> 00:02:24,480
+Ahora hablemos de la línea y el estilo de línea si quiere editar la línea.
+
+29
+00:02:24,510 --> 00:02:31,410
+En realidad, puede pasar en línea con un argumento y simplemente poner un número.
+
+30
+00:02:31,410 --> 00:02:38,230
+Así que, por ejemplo, si colocamos una que sea la línea esencialmente predeterminada, queremos duplicar el valor predeterminado y decir
+
+31
+00:02:38,230 --> 00:02:40,790
+que la línea con es igual a 2.
+
+32
+00:02:40,890 --> 00:02:43,830
+Y eso duplicará el ancho que podemos seguir haciendo esto.
+
+33
+00:02:43,830 --> 00:02:49,920
+Si quiero una línea muy gruesa como con igual a 20 Eso es 20 veces el grosor de la línea por defecto.
+
+34
+00:02:50,400 --> 00:02:55,680
+O si desea una línea muy delgada, como tener el grosor predeterminado 0. 5 puede comenzar a estar cada vez
+
+35
+00:02:55,680 --> 00:02:56,990
+más delgado y delgado.
+
+36
+00:02:57,010 --> 00:03:04,650
+Otro consejo muy útil en cuanto a línea y visibilidad de línea son los argumentos alfa, así que adelante
+
+37
+00:03:04,650 --> 00:03:12,150
+y establezca mi línea igual a la línea con tres y puede especificar el argumento alfa que le permite
+
+38
+00:03:12,150 --> 00:03:15,560
+básicamente controlar qué tan transparente es la línea.
+
+39
+00:03:15,570 --> 00:03:21,130
+Entonces puedo decir que Alpha es igual a 0. 5.
+
+40
+00:03:21,330 --> 00:03:26,020
+Y si corro eso ahora puedo ver que en realidad tenemos un poco más de transparencia en esta línea.
+
+41
+00:03:26,160 --> 00:03:33,050
+De modo que puede combinar una línea de color con una alfa para obtener la apariencia exacta que desea.
+
+42
+00:03:33,060 --> 00:03:37,880
+Una última cosa para notar aquí es para abreviar que en realidad no tiene que escribir en línea completamente.
+
+43
+00:03:38,280 --> 00:03:43,390
+Puede escribir LW y seguirá funcionando bien.
+
+44
+00:03:43,830 --> 00:03:44,580
+DE ACUERDO.
+
+45
+00:03:44,580 --> 00:03:49,230
+Así que estamos hablando de línea con color y Alpha y voy a eliminar la llamada alfa.
+
+46
+00:03:49,230 --> 00:03:56,700
+Ahora hablemos del estilo de línea para que pueda escribir en estilo de línea y estilo de línea, hay bastantes opciones y se
+
+47
+00:03:56,700 --> 00:04:00,690
+enumeran en su cuaderno que básicamente define el estilo de la línea, como
+
+48
+00:04:00,690 --> 00:04:03,270
+una línea punteada o una línea de puntos.
+
+49
+00:04:03,270 --> 00:04:10,230
+Por ejemplo, si una persona tiene dos guiones, obtengo una línea punteada y la paso como una cadena, o paso y
+
+50
+00:04:10,710 --> 00:04:14,910
+un guión, y luego un punto, obtengo el tipo de línea punteada.
+
+51
+00:04:14,910 --> 00:04:19,140
+Entonces dash punto punto de guion y luego hay un par de opciones más lanzamientos.
+
+52
+00:04:19,200 --> 00:04:26,760
+Colón, que me ofrece estos pequeños guiones aquí y puede consultar el cuaderno de Júpiter para esta conferencia para ver
+
+53
+00:04:26,940 --> 00:04:28,350
+qué otras opciones tiene.
+
+54
+00:04:28,350 --> 00:04:31,140
+Y luego puedes hacer pasos a la hora.
+
+55
+00:04:31,200 --> 00:04:33,150
+Raramente uso esos.
+
+56
+00:04:33,210 --> 00:04:39,440
+Muy a menudo, o bien hago una línea de guiones o si solo pones en una carrera, es solo una línea continua.
+
+57
+00:04:39,720 --> 00:04:40,360
+DE ACUERDO.
+
+58
+00:04:40,590 --> 00:04:44,040
+Y al igual que con la línea contigo, en realidad no necesitas escribir en el estilo de línea.
+
+59
+00:04:44,160 --> 00:04:49,850
+Usted acaba de poner ls y terminará trabajando de la misma manera.
+
+60
+00:04:50,250 --> 00:04:50,890
+DE ACUERDO.
+
+61
+00:04:50,910 --> 00:04:53,630
+Así que hablamos sobre la línea y el estilo de línea.
+
+62
+00:04:53,640 --> 00:04:55,390
+Ahora hablemos de marcadores.
+
+63
+00:04:55,530 --> 00:04:59,380
+Por lo tanto, los marcadores se usarán cuando solo tenga unos pocos puntos de datos.
+
+64
+00:04:59,400 --> 00:05:06,510
+lo que es, podemos ver que la x es solo una matriz de avance y verificar la longitud x de 11 puntos.
+
+65
+00:05:06,570 --> 00:05:10,510
+Por ejemplo, si echamos un vistazo a X como un recordatorio de
+
+66
+00:05:10,530 --> 00:05:14,940
+Digamos que en realidad queríamos marcar si esos 11 puntos ocurren en esta trama.
+
+67
+00:05:15,270 --> 00:05:25,190
+Bueno, puedo especificar marcador ya que los nuevos argumentos deben ser una coma y luego puedo pasar una cadena.
+
+68
+00:05:25,260 --> 00:05:28,310
+Entonces, hay muchos símbolos de marcador posibles y están listados en su cuaderno.
+
+69
+00:05:28,320 --> 00:05:33,390
+Pero el más básico en común es solo esta minúscula O como una cadena.
+
+70
+00:05:33,390 --> 00:05:41,550
+Y ahí puedes comenzar a ver algunos puntos que básicamente marcan cada punto en X versus Y aquí y
+
+71
+00:05:41,550 --> 00:05:45,110
+hay una gran variedad de marcadores disponibles para ti.
+
+72
+00:05:45,150 --> 00:05:46,260
+Todos están listados en el cuaderno.
+
+73
+00:05:46,260 --> 00:05:50,700
+Pero solo para mostrarle a una pareja que puede hacer cosas como los signos de suma que no
+
+74
+00:05:51,000 --> 00:05:54,760
+se muestran demasiado bien aquí, puede hacer cosas como Pequeñas estrellas como los símbolos de Asterix.
+
+75
+00:05:54,870 --> 00:06:01,110
+Puedes hacer cosas como pasar estos códigos numéricos. Voy a hacer la línea un poco más
+
+76
+00:06:01,110 --> 00:06:04,470
+delgada para que puedas ver estos marcadores aquí.
+
+77
+00:06:04,960 --> 00:06:07,050
+Entonces queríamos agrandar estos marcadores.
+
+78
+00:06:07,200 --> 00:06:13,050
+Bueno, es posible que haya adivinado que el tamaño del marcador no es argumentos, por lo que puede seguir adelante y
+
+79
+00:06:13,060 --> 00:06:17,010
+especificar el tamaño del marcador y, esencialmente, solo uno es el tamaño muy pequeño.
+
+80
+00:06:17,010 --> 00:06:19,840
+Y luego, si quieres hacerlo un poco más grande, puedes decir 10.
+
+81
+00:06:19,890 --> 00:06:22,310
+Y aquí podemos comenzar a ver este tipo de triángulos en forma.
+
+82
+00:06:22,310 --> 00:06:29,280
+Así que vamos y digamos grandes marcadores a 20 y luego podemos especificar marcadores tipo oreja 2.
+
+83
+00:06:29,700 --> 00:06:35,790
+Puedes decir que más obtenemos estas ventajas aquí, etc. entonces todas estas opciones se enumeran en la documentación.
+
+84
+00:06:36,000 --> 00:06:39,690
+Y más importante aún, en su cuaderno de notas de Júpiter dice que hay tantos
+
+85
+00:06:39,690 --> 00:06:42,940
+tipos diferentes de cadenas que puede pasar como marcador de códigos de marcador.
+
+86
+00:06:44,520 --> 00:06:49,120
+Y si realmente desea personalizar sus marcadores, por ejemplo, continúe y vuelva a ponerlo
+
+87
+00:06:49,190 --> 00:06:54,150
+en minúsculas. Oh, entonces tenemos estos puntos aquí para cambiar esta línea y volver a uno.
+
+88
+00:06:54,300 --> 00:06:58,410
+En realidad, hay bastantes opciones en cuanto a cómo se ve el marcador.
+
+89
+00:06:58,410 --> 00:07:03,690
+Puede especificar el color de la cara del marcador, el borde del marcador y el color del borde del marcador.
+
+90
+00:07:03,690 --> 00:07:06,520
+Así que primero se va a salir y agregar estos argumentos.
+
+91
+00:07:06,670 --> 00:07:09,910
+Así que solo presione la coma para ingresar a una nueva línea.
+
+92
+00:07:10,110 --> 00:07:12,390
+Y voy a salir y decir Marcar el color de la cara
+
+93
+00:07:15,710 --> 00:07:17,740
+y puedes especificar el color de la cara del marcador.
+
+94
+00:07:17,760 --> 00:07:19,800
+Entonces ellos serán el color dentro de ese círculo.
+
+95
+00:07:19,800 --> 00:07:22,590
+Adelante, hazlo amarillo y ejecuta esto.
+
+96
+00:07:22,830 --> 00:07:24,800
+Y eso cambió el color de la cara del marcador.
+
+97
+00:07:24,810 --> 00:07:32,700
+Digamos que quiero cambiar el borde del marcador con I go y edito eso también.
+
+98
+00:07:32,700 --> 00:07:37,440
+Haz que sea un poco más grueso, como tres, que sea un poco más grueso, y digamos que
+
+99
+00:07:37,440 --> 00:07:39,750
+realmente quieras especificar el color del borde del marcador.
+
+100
+00:07:39,750 --> 00:07:43,640
+Puedo especificar un color de borde marcador.
+
+101
+00:07:43,640 --> 00:07:46,650
+Ahora vamos a hacer eso verde.
+
+102
+00:07:46,650 --> 00:07:46,990
+Todo bien.
+
+103
+00:07:47,010 --> 00:07:52,860
+ver que hay mucha habilidad de personalización aquí y hay muchas opciones si quieres ver un montón de ejemplos de diferentes
+
+104
+00:07:52,860 --> 00:07:56,520
+opciones, puedes continuar y pasar al cuaderno de Júpiter para esta conferencia.
+
+105
+00:07:56,520 --> 00:07:57,250
+Así que puedes
+
+106
+00:07:57,270 --> 00:07:59,460
+Debo seguir y hacer eso ahora.
+
+107
+00:07:59,640 --> 00:08:04,290
+Va a seguir adelante y haga clic en más y si ve aquí en el mapa Conferencia de conceptos Cutlip.
+
+108
+00:08:04,350 --> 00:08:08,380
+En este momento estamos en el marcador de línea de sección y los estilos de línea y marcador.
+
+109
+00:08:08,700 --> 00:08:15,000
+Aquí básicamente hay una figura donde contamos por seis en las subtramas el primer tamaño de figura e hicimos un
+
+110
+00:08:15,000 --> 00:08:19,830
+montón de tramas y editamos los colores de la línea con los estilos de línea.
+
+111
+00:08:19,830 --> 00:08:23,130
+Y aquí hay un montón de ejemplos para que pueda seguir y leerlos.
+
+112
+00:08:23,160 --> 00:08:28,020
+buscando un marcador diferente, los símbolos están aquí como comentarios o tipos de células aliadas, etc.
+
+113
+00:08:28,020 --> 00:08:29,070
+Y si está De modo que
+
+114
+00:08:29,100 --> 00:08:33,690
+aquí hay muchos ejemplos diferentes, como copiar y pegar, o crear su propio conocimiento.
+
+115
+00:08:33,690 --> 00:08:35,100
+Finalmente, hablemos sobre el control de la experiencia de acceso y el alcance de la parcela.
+
+116
+00:08:35,160 --> 00:08:39,540
+Y si volvemos a nuestro cuaderno original aquí,
+
+117
+00:08:39,780 --> 00:08:46,860
+podemos seguir adelante y mostrarles cómo podemos establecer el límite Y y el límite.
+
+118
+00:08:46,860 --> 00:08:48,410
+Vamos a hacer de esto una trama muy simple de nuevo.
+
+119
+00:08:48,480 --> 00:08:51,180
+Avancemos y simplemente hagamos que esta línea sea igual a, y hagamos que el estilo de vida sea igual a una línea de guiones.
+
+120
+00:08:51,190 --> 00:08:57,900
+Vale genial.
+
+121
+00:08:58,560 --> 00:08:59,730
+Digamos que solo quería mostrar la trama entre 0 y 1 en el eje x.
+
+122
+00:08:59,730 --> 00:09:04,650
+Bueno, para hacer eso solo tienes que acceder de forma clara
+
+123
+00:09:04,860 --> 00:09:13,920
+y luego decir establecer guión bajo X Lim y luego pasas en una lista con un límite inferior un límite superior.
+
+124
+00:09:13,980 --> 00:09:15,830
+Así que iremos de 0 a 1.
+
+125
+00:09:15,990 --> 00:09:18,750
+Y aquí podemos ver que hemos establecido el límite inferior un límite superior del eje x.
+
+126
+00:09:19,440 --> 00:09:24,720
+Ahora sigamos y hagamos lo mismo para el límite de por qué simplemente borrar ejes y luego decir conjuntos
+
+127
+00:09:24,720 --> 00:09:30,510
+subrayar por qué Lim y como una lista pasas un límite superior y límites inferiores más bajos por esa coma cero.
+
+128
+00:09:30,570 --> 00:09:37,380
+Hagamos el límite superior.
+
+129
+00:09:37,380 --> 00:09:38,460
+Así que solo ponlo a las 2.
+
+130
+00:09:38,470 --> 00:09:41,380
+Ahora podemos ver esta trama.
+
+131
+00:09:41,390 --> 00:09:42,810
+Y observe que a medida que hacemos un acercamiento, la
+
+132
+00:09:42,860 --> 00:09:47,790
+trama se parece cada vez más a un montón de líneas rectas que conectan puntos, lo que tiene sentido porque no tenemos tantos detalles que SR solo tiene 11 puntos cuando alejamos la imagen.
+
+133
+00:09:48,090 --> 00:09:53,020
+Vemos más de una línea curva y podemos solucionarlo obteniendo más puntos de datos o alejándonos.
+
+134
+00:09:53,040 --> 00:09:59,030
+Muy bien, finalmente quiero dar un vistazo al concepto de
+
+135
+00:09:59,030 --> 00:10:04,590
+Partlow conceptos y hablar sobre esos tipos de trama especiales.
+
+136
+00:10:04,590 --> 00:10:06,490
+gráficos de barras y el diagrama de dispersión.
+
+137
+00:10:06,510 --> 00:10:11,280
+Hay muchos y muchos tipos de gráficos especializados que puede hacer con la gráfica del diagrama MAP, como los
+
+138
+00:10:11,550 --> 00:10:13,520
+La mayoría de estos tipos de gráficos se usarían
+
+139
+00:10:13,560 --> 00:10:18,390
+realmente en otra biblioteca de visualización llamada Seaborn, que es mucho más adecuada para este tipo de métodos de trazado estadísticos.
+
+140
+00:10:18,750 --> 00:10:21,960
+Pero solo para mostrarte que puedes hacer esto en mi vida.
+
+141
+00:10:22,080 --> 00:10:24,790
+Puede realizar un diagrama de dispersión como
+
+142
+00:10:25,020 --> 00:10:31,400
+este, puede realizar histogramas usando esa gráfica en vivo o incluso cosas como diagramas de cajas.
+
+143
+00:10:31,400 --> 00:10:33,120
+Y aquí hay algunos ejemplos para ti.
+
+144
+00:10:33,120 --> 00:10:34,760
+web del proyecto que trazó y un enlace.
+
+145
+00:10:35,100 --> 00:10:40,260
+Ahora, en la parte inferior de su cuaderno de Júpiter para esta conferencia, verá un grupo de enlaces para lecturas adicionales, incluida la página
+
+146
+00:10:40,260 --> 00:10:43,960
+Me gusta mucho todo el camino hasta aquí.
+
+147
+00:10:43,980 --> 00:10:47,440
+Este Lorieau es un enlace muy bueno.
+
+148
+00:10:47,790 --> 00:10:51,590
+Es un tutorial de mapas lib.
+
+149
+00:10:51,600 --> 00:10:53,740
+Espero que realmente sepas bastante ahora al ver estas tres conferencias que acabamos de hacer.
+
+150
+00:10:53,880 --> 00:10:58,170
+Pero lo que realmente me gusta de este enlace es que básicamente es solo un código de referencia.
+
+151
+00:10:58,300 --> 00:11:02,710
+Entonces, si desea cambiar los colores en línea, puede ingresar y consultar este enlace.
+
+152
+00:11:02,790 --> 00:11:05,910
+Solo mira las figuras y te dirá cómo configurar las marcas en las etiquetas, etc. Moviendo espinas añadiendo leyendas.
+
+153
+00:11:05,940 --> 00:11:10,040
+Muchos de estos puntos se encuentran en el otro cuaderno para esta serie de conferencias
+
+154
+00:11:10,170 --> 00:11:12,180
+llamada The advance map plot lib notebook.
+
+155
+00:11:12,180 --> 00:11:17,620
+De momento no vamos a tener una conferencia en video sobre esos temas avanzados porque no los vamos a
+
+156
+00:11:17,630 --> 00:11:20,010
+utilizar con demasiada frecuencia a lo largo del curso.
+
+157
+00:11:20,550 --> 00:11:25,680
+De hecho, en su mayoría usaremos Seaborn durante todo el curso.
+
+158
+00:11:25,680 --> 00:11:27,390
+DE ACUERDO.
+
+159
+00:11:27,390 --> 00:11:30,650
+Próximamente se presenta una descripción general rápida del ejercicio de trama sin parcela y luego tendrá una visión general de
+
+160
+00:11:30,720 --> 00:11:31,440
+las soluciones para ese ejercicio.
+
+161
+00:11:31,620 --> 00:11:37,260
+Por ahora, adelante y espere a estos tipos de trama especiales y espere hasta que aprendamos sobre el uso de Seaborn que estará mucho mejor
+
+162
+00:11:37,260 --> 00:11:39,150
+equipado para este tipo de parcelas estadísticas hermosas.
+
+163
+00:11:39,240 --> 00:11:44,520
+Bueno.
+
+164
+00:11:44,700 --> 00:11:48,400
+Gracias a todos y los veré en la próxima conferencia.
+
+165
+00:11:48,660 --> 00:11:49,110
+&nbsp;
+
+166
+00:11:49,380 --> 00:11:51,610
+&nbsp;

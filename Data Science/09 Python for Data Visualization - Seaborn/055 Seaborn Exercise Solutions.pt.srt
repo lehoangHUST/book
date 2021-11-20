@@ -1,0 +1,399 @@
+1
+00:00:05,340 --> 00:00:10,050
+Olá a todos e seja bem vindo à palestra da solução de exercícios da Seaborn nesta palestra.
+
+2
+00:00:10,050 --> 00:00:12,990
+Vamos examinar as soluções para os exercícios marítimos.
+
+3
+00:00:12,990 --> 00:00:16,320
+Avançemos e entremos no caderno Jupiter para começar.
+
+4
+00:00:16,320 --> 00:00:22,170
+Tudo bem, eu estou no caderno Jupiter, temos os dados e carregamos isso e vamos
+
+5
+00:00:22,170 --> 00:00:26,550
+seguir em frente e avançar para o primeiro gráfico que queremos replicar.
+
+6
+00:00:26,550 --> 00:00:31,860
+Tudo bem, olhando para este plano, espero que você possa dizer que este é um argumento de distribuição
+
+7
+00:00:31,860 --> 00:00:37,380
+e, na verdade, é o argumento conjunto, porque você está mostrando duas distribuições umas sobre as outras e então
+
+8
+00:00:37,380 --> 00:00:42,690
+você poderia ter lido isso e visto que é o justo versus a idade do conjunto de dados.
+
+9
+00:00:42,690 --> 00:00:45,210
+Avançemos e mostremos como podemos executar isso.
+
+10
+00:00:45,230 --> 00:00:47,430
+Nós vamos executar essas linhas novamente.
+
+11
+00:00:47,430 --> 00:00:53,990
+Então eu realmente importo tudo corretamente e então vou seguir em frente e digitar meu código.
+
+12
+00:00:54,060 --> 00:01:00,270
+Então, este é um argumento conjunto onde você tem a feira e
+
+13
+00:01:04,020 --> 00:01:14,910
+no eixo y você tem idade e nosso conjunto de dados é apenas o dado Titanic e isso irá replicar esse plano
+
+14
+00:01:14,910 --> 00:01:16,030
+para você.
+
+15
+00:01:16,110 --> 00:01:18,430
+Mais uma vez, é apenas uma trama conjunta.
+
+16
+00:01:18,720 --> 00:01:19,480
+Tudo bem.
+
+17
+00:01:19,530 --> 00:01:22,490
+Próximamente, esta parcela de distribuição.
+
+18
+00:01:22,710 --> 00:01:29,460
+E esta é uma parcela para que você possa ver Asinus neste enredo.
+
+19
+00:01:30,630 --> 00:01:36,090
+Titanic e depois passar e a coluna que queremos e se dar uma olhada aqui na parte inferior, esta é
+
+20
+00:01:36,090 --> 00:01:36,880
+a coluna Fair.
+
+21
+00:01:36,900 --> 00:01:39,270
+Então, a distribuição da coluna Fair.
+
+22
+00:01:39,450 --> 00:01:44,910
+Deixe-me colocar isso apenas por esta linha por si só como novas parcelas.
+
+23
+00:01:45,160 --> 00:01:45,710
+Tudo bem.
+
+24
+00:01:45,720 --> 00:01:50,430
+apenas assim que esse trama algo que você quer fazer para replicar esse enredo é remover este Cady.
+
+25
+00:01:50,430 --> 00:01:52,740
+Então, isso é o que você obtém quando vê
+
+26
+00:01:52,750 --> 00:02:00,760
+Então eu quero ir e dizer fácil e legal falso aqui e agora estamos nos aproximando um pouco.
+
+27
+00:02:00,810 --> 00:02:05,050
+Outra coisa a notar aqui é que a cor é vermelha.
+
+28
+00:02:05,270 --> 00:02:11,280
+Então, você também pode especificar a cor é igual ao vermelho, embora, como mencionei as instruções, você não
+
+29
+00:02:11,280 --> 00:02:14,010
+precisa se preocupar muito com as cores reais.
+
+30
+00:02:14,280 --> 00:02:17,510
+E então também há curvas menores aqui na feira.
+
+31
+00:02:17,670 --> 00:02:23,310
+Então, depois de experimentar alguns números de escaninhos, você pode descobrir que as caixas são cerca de 30
+
+32
+00:02:23,820 --> 00:02:24,820
+para a trama.
+
+33
+00:02:24,990 --> 00:02:27,020
+E esse é o código real para o enredo.
+
+34
+00:02:27,130 --> 00:02:28,920
+O gráfico de distribuição.
+
+35
+00:02:28,980 --> 00:02:35,730
+Nesse caso, este lote Titanic fair é falso e, em seguida, algumas informações extras são lidas em caixas.
+
+36
+00:02:36,030 --> 00:02:39,830
+Se você pudesse ficar vermelho ou o argumento do binário, não se preocupe com isso.
+
+37
+00:02:39,840 --> 00:02:45,090
+O único que estou realmente preocupado com você reconhecendo é que esta foi uma trama
+
+38
+00:02:45,180 --> 00:02:47,400
+com o falso Eagles na coluna Fair.
+
+39
+00:02:47,400 --> 00:02:49,290
+OK, vá para a próxima parcela.
+
+40
+00:02:49,290 --> 00:02:55,860
+Este é claramente um gráfico de caixa e parece que a classe está no eixo x e a idade está no eixo y.
+
+41
+00:02:56,190 --> 00:02:58,440
+Avançemos e verifiquemos isso.
+
+42
+00:02:58,880 --> 00:03:08,910
+Para fazer isso tudo o que você tem a dizer é como sinistar box plot como na classe e depois passar na idade
+
+43
+00:03:09,030 --> 00:03:15,320
+para y e então os dados são iguais ao conjunto de dados do Titanic.
+
+44
+00:03:15,360 --> 00:03:16,670
+Podemos seguir em frente e executar isso.
+
+45
+00:03:16,770 --> 00:03:21,750
+E uma última coisa que não importa se você não conseguiu ou não, mas o esquema de cores real é o
+
+46
+00:03:21,780 --> 00:03:22,900
+esquema de cores do arco-íris.
+
+47
+00:03:22,920 --> 00:03:27,900
+Então, também podemos especificar paletas é igual ao arco-íris.
+
+48
+00:03:27,900 --> 00:03:31,830
+trama de caixa e, em seguida, seja capaz de ler o X versus o Y e preencher isso.
+
+49
+00:03:31,830 --> 00:03:36,540
+E novamente, não se preocupe se pudéssemos obter a cor para combinar Eu só quero que você reconheça que é uma
+
+50
+00:03:36,810 --> 00:03:41,580
+Passar para o próximo parece um pouco mais complicado porque é o enxame
+
+51
+00:03:41,580 --> 00:03:51,540
+em que você tem que fazer é dizer assim que o enxame e isso é realmente tudo o mesmo, tanto quanto a classe versus a idade, então
+
+52
+00:03:51,630 --> 00:03:53,780
+você pode realmente aparecer aqui .
+
+53
+00:03:53,880 --> 00:04:01,030
+Copie tudo isso e copie tudo, incluindo a paleta, e tenha apenas essa trama.
+
+54
+00:04:01,040 --> 00:04:04,970
+Esta é a versão de trama de Suaram do gráfico de caixa que acabamos de mostrar.
+
+55
+00:04:05,100 --> 00:04:07,960
+E este esquema de cores no caso de você ter curiosidade sobre o que era.
+
+56
+00:04:08,070 --> 00:04:14,310
+é realmente o conjunto de esquema de cores, mas novamente não se preocupe se não conseguirmos que a cor pareça correta.
+
+57
+00:04:14,310 --> 00:04:14,670
+Este
+
+58
+00:04:14,680 --> 00:04:19,890
+Isso realmente não importa o que eu quero deve ser capaz de obter correto é o x y e a fonte
+
+59
+00:04:19,900 --> 00:04:21,080
+de dados para o enxame.
+
+60
+00:04:21,540 --> 00:04:25,290
+O próximo que desejamos verificar foi o gráfico do bar.
+
+61
+00:04:25,290 --> 00:04:28,260
+Mas tome nota cuidadosa que diz contar aqui.
+
+62
+00:04:28,270 --> 00:04:36,070
+Então, na verdade, é um contrapunto e você pode criar um ponto de compensação apenas dizendo que o contraplacente S e S passam a coluna
+
+63
+00:04:36,120 --> 00:04:37,210
+que você deseja contar.
+
+64
+00:04:37,230 --> 00:04:46,530
+uma olhada aqui, ver a coluna de sexo em nossa fonte de dados é o quadro de dados do Titanic e essa é a trama ali mesmo.
+
+65
+00:04:46,530 --> 00:04:47,730
+Neste caso, dê
+
+66
+00:04:47,730 --> 00:04:52,830
+O esquema de cores é o esquema de cores original que temos neste gráfico aqui.
+
+67
+00:04:52,830 --> 00:04:54,170
+Parece um pouco mais complicado.
+
+68
+00:04:54,450 --> 00:05:02,640
+Observe que temos valores entre o negativo 1 e uma vez que ele vai deste mapeamento de guerra legal e a outra sugestão
+
+69
+00:05:02,640 --> 00:05:09,990
+aqui é que você pode ver no topo do título é titanic dot corrc é claramente um gráfico de correlação e
+
+70
+00:05:09,990 --> 00:05:12,780
+queremos usar o mapa de heape em esta.
+
+71
+00:05:12,780 --> 00:05:15,730
+Então, vamos seguir em frente e fazer isso.
+
+72
+00:05:15,870 --> 00:05:27,510
+Asinus e o núcleo escuro do Titanic pasand e também podemos dizer que o mapa do mar é igual a quente quente.
+
+73
+00:05:27,510 --> 00:05:31,050
+Vamos dizer o mapa de calor de
+
+74
+00:05:31,050 --> 00:05:34,580
+E isso vai replicar essa trama no notebook de soluções.
+
+75
+00:05:34,590 --> 00:05:38,980
+Eu também adicionei um título sobre este chamado P. EU. O título Titanic obteve c o r r.
+
+76
+00:05:39,000 --> 00:05:44,670
+Fechar parênteses.
+
+77
+00:05:44,670 --> 00:05:45,540
+E isso foi realmente
+
+78
+00:05:45,540 --> 00:05:49,590
+apenas para lhe dar uma dica, pois você estava olhando a figura quanto à informação na verdade.
+
+79
+00:05:49,590 --> 00:05:51,270
+Tudo bem.
+
+80
+00:05:51,270 --> 00:05:51,960
+feito em duas linhas.
+
+81
+00:05:51,960 --> 00:05:56,210
+Vamos seguir em frente e avançar para o último enredo que é um pouco complicado porque este está usando o sistema de grade Fassett será
+
+82
+00:05:56,210 --> 00:05:59,220
+Em primeiro lugar vamos dar uma olhada no que realmente estamos fazendo.
+
+83
+00:05:59,220 --> 00:06:01,520
+Parece que as colunas são iguais ao sexo masculino e sexo é igual a feminino.
+
+84
+00:06:01,680 --> 00:06:05,420
+Então, queremos criar uma grade Fassett separada
+
+85
+00:06:05,460 --> 00:06:15,210
+pela coluna órgão sexual de dizer que os dados são iguais ao Titanic e o chamado é igual ao sexo.
+
+86
+00:06:15,450 --> 00:06:18,950
+E então eu vou sair e definir isso igual a
+
+87
+00:06:19,170 --> 00:06:24,840
+g, como fizemos nos exemplos anteriores e então eu vou mapear, parece que este é um histograma.
+
+88
+00:06:24,840 --> 00:06:27,780
+Portanto, existem diferentes maneiras de fazer isso.
+
+89
+00:06:27,960 --> 00:06:29,330
+Mas a maneira mais fácil
+
+90
+00:06:29,340 --> 00:06:34,590
+é dizer descascar o mais alto e então os argumentos realmente querem fazer um histograma de sua idade.
+
+91
+00:06:34,590 --> 00:06:35,960
+Então você poderia ter feito o que você poderia ter feito também é obter uma trama similar.
+
+92
+00:06:36,300 --> 00:06:41,320
+Exatamente o mesmo é apenas traçar esse tipo de também mostrado um K o topo.
+
+93
+00:06:41,430 --> 00:06:47,090
+ESTÁ BEM.
+
+94
+00:06:47,600 --> 00:06:48,190
+Espero que você tenha
+
+95
+00:06:48,540 --> 00:06:53,730
+achado isso interessante e espero que você tenha encontrado realmente o verdadeiro poder do Seaborne para criar visualizações lindas e apenas algumas linhas de código, desde que você tenha configurado seus dados corretamente corretamente.
+
+96
+00:06:53,730 --> 00:06:58,800
+ESTÁ BEM.
+
+97
+00:06:59,610 --> 00:07:00,360
+Vá em frente e poste
+
+98
+00:07:00,360 --> 00:07:04,530
+todas as perguntas que você tiver nos fóruns Q &amp; A e confira o novo livro Juber Se você quiser mais um código de referência.
+
+99
+00:07:04,530 --> 00:07:06,270
+Obrigado a todos e eu vou ver você na próxima palestra
+
+100
+00:07:06,270 --> 00:07:08,180
+&nbsp;

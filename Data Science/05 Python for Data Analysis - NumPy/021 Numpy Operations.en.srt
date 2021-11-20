@@ -1,0 +1,423 @@
+1
+00:00:06,780 --> 00:00:11,700
+Hello everyone and welcome to the PI operations lecture and this lecture we're going to show you basic
+
+2
+00:00:11,700 --> 00:00:14,520
+operations reform on an umpire array's.
+
+3
+00:00:14,640 --> 00:00:18,720
+Let's go ahead and jump to the Jupiter notebook to get started.
+
+4
+00:00:18,720 --> 00:00:21,090
+All right so here we are at the Jupiter note book.
+
+5
+00:00:21,210 --> 00:00:27,180
+We'll go ahead and discuss array with array operations array with scalar operations and then some universal
+
+6
+00:00:27,180 --> 00:00:33,360
+array functions what they are and how you can find more of them will go ahead and start by saying important
+
+7
+00:00:33,470 --> 00:00:36,400
+pi as NPE.
+
+8
+00:00:36,810 --> 00:00:44,370
+And then I'm going to go ahead and make an array we'll say N.P. arrange and we'll just go ahead and
+
+9
+00:00:44,370 --> 00:00:47,600
+go from zero comma 11.
+
+10
+00:00:47,640 --> 00:00:53,090
+So that way we get digits 0 through 10 so 11 digits from 0 to 10.
+
+11
+00:00:53,460 --> 00:00:53,910
+All right.
+
+12
+00:00:53,910 --> 00:00:59,460
+You can easily perform array with array operations just by using simple arithmetic signs that you're
+
+13
+00:00:59,460 --> 00:01:01,600
+already used to from Python itself.
+
+14
+00:01:02,070 --> 00:01:08,400
+So for instance if you wanted to add two arrays together on elements by elements basis you would just
+
+15
+00:01:08,400 --> 00:01:10,300
+say array plus array.
+
+16
+00:01:10,320 --> 00:01:12,140
+Now add the two arrays together.
+
+17
+00:01:12,180 --> 00:01:14,450
+In this case I'm just adding in array to itself.
+
+18
+00:01:14,590 --> 00:01:18,370
+So essentially every number's been doubled.
+
+19
+00:01:18,840 --> 00:01:25,500
+I can do the same thing for subtraction or even multiplication.
+
+20
+00:01:25,500 --> 00:01:31,770
+I can also perform array with scalar operations in very much the same manner so scalers mean just a
+
+21
+00:01:31,770 --> 00:01:37,800
+single number and went numb pi does is that basically broadcasts that number to every element in the
+
+22
+00:01:37,800 --> 00:01:43,960
+array so the operation occurs also on an element by element basis meaning if I want to.
+
+23
+00:01:44,010 --> 00:01:45,140
+Here is my array.
+
+24
+00:01:45,240 --> 00:01:48,270
+Add a hundred to every element in the array.
+
+25
+00:01:48,270 --> 00:01:50,590
+I could say plus and then the scalar itself.
+
+26
+00:01:50,820 --> 00:01:53,620
+And that would add 100 every element in the array.
+
+27
+00:01:53,620 --> 00:01:55,680
+And this also works for multiplication
+
+28
+00:01:58,230 --> 00:01:59,910
+division subtraction you name it.
+
+29
+00:01:59,910 --> 00:02:04,820
+So if I wanted subtract 100 from every atom in the break to say minus 100.
+
+30
+00:02:05,130 --> 00:02:05,760
+All right.
+
+31
+00:02:05,760 --> 00:02:11,940
+So those are basic arithmetic operations you can perform with either array on array operations or array
+
+32
+00:02:11,940 --> 00:02:13,800
+with scalar operations.
+
+33
+00:02:13,950 --> 00:02:20,510
+Something I want to show you is that a lot of times NUMP high will just issue a warning instead of outputting
+
+34
+00:02:20,580 --> 00:02:22,940
+error on certain mathematical operations.
+
+35
+00:02:23,220 --> 00:02:31,250
+So for instance if I try to say 1 divided by zero in Python I will get in that's an actual error has
+
+36
+00:02:31,250 --> 00:02:35,290
+zero division error which makes sense because you can't divide a number by zero.
+
+37
+00:02:35,340 --> 00:02:38,400
+However PI won't give you the same error.
+
+38
+00:02:38,490 --> 00:02:43,860
+So if I try to say a rate divided by Array.
+
+39
+00:02:43,890 --> 00:02:46,200
+Notice the very first element is zero.
+
+40
+00:02:46,230 --> 00:02:50,240
+I will try to say zero divided by zero which doesn't really make sense.
+
+41
+00:02:50,250 --> 00:02:53,570
+However none pi will issue a warning.
+
+42
+00:02:53,570 --> 00:02:58,580
+It will say invalid value encountered in truth like here and it'll just give you a null.
+
+43
+00:02:58,620 --> 00:03:05,100
+If you try to divide zero by zero everything else is OK for it says 1 divided by 1 is 1 2 divided by
+
+44
+00:03:05,100 --> 00:03:06,360
+2 is 1 as well.
+
+45
+00:03:06,390 --> 00:03:07,710
+Etc. etc..
+
+46
+00:03:07,710 --> 00:03:14,170
+However on the very first ones are divided by zero executed and gave you a name or no object back.
+
+47
+00:03:14,250 --> 00:03:19,170
+It didn't actually provide an error for you meaning you still get an output that's important to note
+
+48
+00:03:19,380 --> 00:03:20,840
+the distinction there.
+
+49
+00:03:20,850 --> 00:03:25,310
+That means if you have some sort of operation in your code you actually won't get an error.
+
+50
+00:03:25,350 --> 00:03:30,900
+The code will continue to run and instead he will just receive a warning if you tryna do an operation
+
+51
+00:03:30,900 --> 00:03:32,980
+that divides vides maybe another number by zero.
+
+52
+00:03:32,990 --> 00:03:36,720
+So for instance 1 divided by 0 instead of 0 the Vajda by zero.
+
+53
+00:03:36,720 --> 00:03:38,190
+You'll also get a warning.
+
+54
+00:03:38,400 --> 00:03:41,880
+But in this case Alexa's show infinity instead of a null.
+
+55
+00:03:42,150 --> 00:03:45,930
+So again you get a divide by zero and countered and true the vide warning here.
+
+56
+00:03:46,050 --> 00:03:52,170
+However it still executes the code and you get enough to signify infinity for the one divided by zero
+
+57
+00:03:52,170 --> 00:03:52,370
+.
+
+58
+00:03:52,440 --> 00:03:55,340
+At that very first elements.
+
+59
+00:03:55,350 --> 00:03:55,800
+All right.
+
+60
+00:03:55,800 --> 00:04:00,270
+So that's something to keep in mind as you're working with division and arrays that contain a number
+
+61
+00:04:00,270 --> 00:04:06,760
+are digits 0 and also a quick note as you can also do arrays with exponents.
+
+62
+00:04:06,780 --> 00:04:12,510
+I just say Asterix Asterix just like you would have Python and then either the scalar or the array one
+
+63
+00:04:12,550 --> 00:04:12,630
+.
+
+64
+00:04:12,660 --> 00:04:15,210
+So this is the array to the power of two.
+
+65
+00:04:15,270 --> 00:04:21,870
+So everything has been squared in the array Nel's discuss universal array function numpad comes with
+
+66
+00:04:21,870 --> 00:04:26,220
+many universal array functions which are essentially just mathematical operations.
+
+67
+00:04:26,220 --> 00:04:30,830
+You can use to perform the operation and broadcast across the entire array.
+
+68
+00:04:30,840 --> 00:04:33,390
+Let's go ahead and show some common ones.
+
+69
+00:04:33,450 --> 00:04:39,060
+For instance if you want to take the square root of every element in the array you can just say P that
+
+70
+00:04:39,100 --> 00:04:42,690
+s your t and then pass in the array itself.
+
+71
+00:04:42,930 --> 00:04:46,550
+And this will take the square root of everything in the array.
+
+72
+00:04:46,560 --> 00:04:55,830
+Similarly for calculating the exponential you can say that XP and in the array or maximum you can either
+
+73
+00:04:55,830 --> 00:05:01,010
+say the array that Max or you could also say that Max and pass in the array.
+
+74
+00:05:01,230 --> 00:05:06,120
+That's the same thing as calling the method off of it which we've seen earlier in the very first lecture
+
+75
+00:05:06,120 --> 00:05:07,750
+on them pyros.
+
+76
+00:05:07,770 --> 00:05:15,560
+You can even Neutrik the metric functions such a time and this will basically pass every element into
+
+77
+00:05:15,570 --> 00:05:19,710
+sine and there's co-sign and there's also logarithmic options.
+
+78
+00:05:19,710 --> 00:05:25,380
+You can say that log and if something doesn't work for instance the log of zero is technically negative
+
+79
+00:05:25,380 --> 00:05:28,520
+infinity you'll actually receive a runtime warning.
+
+80
+00:05:28,530 --> 00:05:29,590
+Divided by zero.
+
+81
+00:05:29,730 --> 00:05:32,610
+But it will give you negative infinity is the answer.
+
+82
+00:05:32,610 --> 00:05:36,870
+If you're wondering where you can find a list of all these universal array functions or reference you
+
+83
+00:05:36,870 --> 00:05:41,550
+can go ahead and check out the notebook and it has a link in there for the universal array functions
+
+84
+00:05:41,600 --> 00:05:41,800
+.
+
+85
+00:05:41,840 --> 00:05:44,540
+It will take you to link that looks like this.
+
+86
+00:05:44,550 --> 00:05:50,340
+This is the Empire raid documentation here for universal functions or you func.
+
+87
+00:05:50,610 --> 00:05:55,260
+And if you scroll down to the bottom of this page and again this link is in the notebook for this lecture
+
+88
+00:05:55,260 --> 00:05:55,550
+.
+
+89
+00:05:55,620 --> 00:05:57,090
+Now PI operations.
+
+90
+00:05:57,090 --> 00:06:00,690
+You'll see a whole list of all the universal functions you have available for you.
+
+91
+00:06:00,900 --> 00:06:07,560
+So you have basic math operations add subtract absolute remainder etc. Lague trigonometric functions
+
+92
+00:06:08,040 --> 00:06:10,320
+and then some more advanced functions.
+
+93
+00:06:10,330 --> 00:06:14,860
+That's just comparison functions maximum minimums floating functions etc..
+
+94
+00:06:15,270 --> 00:06:20,730
+If it's a very basic or common mathematical function you should probably visit this page first and see
+
+95
+00:06:20,730 --> 00:06:26,280
+if some pie already has it built in before you start creating your own function to deal that particular
+
+96
+00:06:26,280 --> 00:06:27,320
+mathematic operation.
+
+97
+00:06:27,330 --> 00:06:29,070
+You were trying to perform on your array.
+
+98
+00:06:29,370 --> 00:06:34,350
+Well at the very basic ones throughout the course and will remind you as we encountered them throughout
+
+99
+00:06:34,410 --> 00:06:35,830
+the rest of the course.
+
+100
+00:06:36,090 --> 00:06:39,840
+OK that's really all there is as far as basic operations on arrays.
+
+101
+00:06:40,080 --> 00:06:46,650
+You can just use basic arithmetic either on an array by irrate basis or with an array and a scalar basis
+
+102
+00:06:46,650 --> 00:06:46,980
+.
+
+103
+00:06:46,980 --> 00:06:51,230
+The only thing to watch out for is if you have a 0 and you're using divisional arrays.
+
+104
+00:06:51,390 --> 00:06:55,990
+Then the second part of this lecture just covered a universal array functions where it's find them.
+
+105
+00:06:56,040 --> 00:07:01,780
+Keep in mind that most common mathematical operations are already built into them by OK.
+
+106
+00:07:01,980 --> 00:07:04,020
+Thanks everyone and I'll see you at the next lecture

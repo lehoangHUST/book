@@ -1,0 +1,811 @@
+1
+00:00:05,580 --> 00:00:08,220
+Witam wszystkich, którzy mają ochotę na gimnastykę.
+
+2
+00:00:08,220 --> 00:00:14,540
+Rozwiązania wynagrodzeń SS wykładu tego wykładu dotyczyły rozwiązań dla S. FA. ćwiczenie pand pensa.
+
+3
+00:00:15,030 --> 00:00:17,780
+Zadzwońmy do niego, żeby wziął książkę nutową Jowisza, żeby zacząć.
+
+4
+00:00:18,240 --> 00:00:20,440
+W tej chwili jesteśmy na notebooku Jupiter.
+
+5
+00:00:20,540 --> 00:00:25,650
+To jest tylko szybkie ćwiczenie, aby wyostrzyć swoje umiejętności pandy i przyzwyczaić się do pracy pandy
+
+6
+00:00:25,650 --> 00:00:26,970
+i prawdziwych zestawów danych.
+
+7
+00:00:27,060 --> 00:00:30,540
+W tym przypadku będziemy używać S. FA. zestaw danych płacowych od Kaggle.
+
+8
+00:00:30,720 --> 00:00:35,160
+I znowu możesz kliknąć link tutaj, a przeniesie Cię do rzeczywistego źródła danych z
+
+9
+00:00:35,160 --> 00:00:38,110
+kilkoma dodatkowymi informacjami i kilkoma innymi przykładami analizy danych.
+
+10
+00:00:38,210 --> 00:00:42,270
+Zacznijmy więc od ćwiczenia pensji.
+
+11
+00:00:42,270 --> 00:00:48,720
+Pozwól mi posunąć naprzód i zaimportuj pandę jako Edi, a następnie przejdźmy dalej i przeczytaj, że pensja nie jest widoczna, ponieważ
+
+12
+00:00:48,720 --> 00:00:49,650
+nazywamy ramkę danych.
+
+13
+00:00:49,650 --> 00:00:57,750
+Więc to będzie PD czytający CSP i fajna sztuczka tutaj, kiedy zaczynamy pisać.
+
+14
+00:00:57,840 --> 00:01:05,110
+Użyj funkcji autouzupełniania kart I przejdźmy dalej i sprawdźmy nagłówek tej ramki danych.
+
+15
+00:01:05,490 --> 00:01:12,400
+Po prostu nazywasz to metodą, która wygląda tak, jakbyśmy mieli ID Pracownicze Imię i nazwisko wynagrodzenie za nadgodziny w oparciu o tytuł
+
+16
+00:01:12,400 --> 00:01:19,260
+pracujmy dalej i po prostu spraw, aby te dwa rzędy i inne świadczenia płacowe niewiele przynosiły niewielkie świadczenia pieniężne, co jest w
+
+17
+00:01:19,260 --> 00:01:21,980
+zasadzie całkowitą wypłatą plus korzyści w ciągu roku.
+
+18
+00:01:22,020 --> 00:01:25,050
+Potem zauważa agencję i status.
+
+19
+00:01:25,080 --> 00:01:26,980
+Teraz przejdźmy dalej i skorzystaj z metody wprowadzania.
+
+20
+00:01:27,000 --> 00:01:34,980
+Sprawdź, ile wpisów istnieje, więc nie idę powiedzieć informacji o sprzedaży lub ta metoda
+
+21
+00:01:34,980 --> 00:01:39,810
+informacji zwraca liczbę kolumn i liczbę wierszy pozycji.
+
+22
+00:01:39,810 --> 00:01:42,750
+Teraz chcę wiedzieć, jaka jest średnia płaca podstawowa.
+
+23
+00:01:42,750 --> 00:01:49,970
+Przejdźmy dalej, a ramka danych kolorów pobierze podstawową kolumnę wypłat. Zakładka Minnie autouzupełnia jej łatwość
+
+24
+00:01:49,980 --> 00:01:52,520
+użycia tutaj, a następnie średnią.
+
+25
+00:01:52,620 --> 00:01:55,020
+W tym przypadku mam na myśli tylko środek.
+
+26
+00:01:55,550 --> 00:02:01,810
+Tak więc możemy nazwać średnią z tego i zwraca ona, że mediana lub średnia przepraszam ja na podstawie wynagrodzenia
+
+27
+00:02:01,810 --> 00:02:03,780
+wynosi sześćdziesiąt sześć tysięcy 325.
+
+28
+00:02:03,780 --> 00:02:07,950
+Powód, dla którego użyłem słowa "średnia", mówię, że moja była tylko po to, aby
+
+29
+00:02:07,950 --> 00:02:10,200
+upewnić się, że nie podałem całej odpowiedzi.
+
+30
+00:02:10,200 --> 00:02:11,010
+W porządku.
+
+31
+00:02:11,010 --> 00:02:14,390
+Jaka jest najwyższa kwota wynagrodzenia za nadgodziny w zestawie danych.
+
+32
+00:02:14,470 --> 00:02:21,720
+Wyjdziemy i zrobimy, że złapiemy kolumnę za nadgodziny, a potem po prostu zadzwonimy do Maxa z tego w krótkim czasie,
+
+33
+00:02:21,770 --> 00:02:27,060
+do maksymalnej kwoty wynagrodzenia za nadgodziny, która w tym przypadku była całkiem spora, czterdzieści
+
+34
+00:02:27,060 --> 00:02:29,140
+pięć tysięcy sto trzydzieści jeden.
+
+35
+00:02:29,610 --> 00:02:30,280
+DOBRZE.
+
+36
+00:02:30,570 --> 00:02:35,720
+Co teraz ma do powiedzenia tytuł roboczy Josepha Driscolla i jego uwaga?
+
+37
+00:02:35,730 --> 00:02:38,290
+W przeciwnym razie możesz otrzymać inną odpowiedź.
+
+38
+00:02:38,550 --> 00:02:40,460
+Chcesz powiedzieć sprzedać.
+
+39
+00:02:40,620 --> 00:02:42,900
+Zamierzam poszukać tytułu pracy.
+
+40
+00:02:43,050 --> 00:02:48,170
+I w tym przypadku jest to tak zwany tytuł pracy jako jedno słowo.
+
+41
+00:02:48,180 --> 00:02:50,440
+Więc mówię tytuł pracy.
+
+42
+00:02:50,660 --> 00:02:55,470
+Zauważają, że masz kilka tytułów, więc chcę znaleźć wiersz, w którym to się zgadza.
+
+43
+00:02:55,560 --> 00:02:59,090
+Ktoś nazywa się Joseph Driscoll, więc zamierzam wejść i powiedzieć to.
+
+44
+00:02:59,160 --> 00:03:08,630
+Powiem, że nazwa pracownika Sal jest równa i równa się wszystkimi literami.
+
+45
+00:03:08,670 --> 00:03:18,140
+Joseph Driscoll i ja włożymy to do jego celi.
+
+46
+00:03:20,040 --> 00:03:23,540
+I tutaj mam wiersz, w którym jest Joseph Driscoll z wszystkich czapek.
+
+47
+00:03:23,550 --> 00:03:26,490
+Tak więc jego stanowisko pracy jest kapitanem tłumienia ognia.
+
+48
+00:03:26,640 --> 00:03:32,400
+A gdybym tylko chciał odzyskać tę kolumnę, mógłbym również nazwać to tytułem pracy z tego,
+
+49
+00:03:32,400 --> 00:03:36,200
+co pokazaliśmy wcześniej, a następnie złapać kapitana tłumienia ognia.
+
+50
+00:03:36,210 --> 00:03:38,480
+Teraz chcę wiedzieć, ile robi Joseph Driscoll.
+
+51
+00:03:38,500 --> 00:03:40,190
+I znowu musisz użyć wszystkich ograniczeń tutaj.
+
+52
+00:03:40,230 --> 00:03:42,330
+Uzyskaj pasującą odpowiedź.
+
+53
+00:03:42,330 --> 00:03:45,050
+Wejdziemy i powiemy Sal.
+
+54
+00:03:45,180 --> 00:03:50,380
+Imię pracownika Sal jest równe.
+
+55
+00:03:50,910 --> 00:03:55,120
+Joseph Driscoll.
+
+56
+00:03:55,560 --> 00:03:56,790
+Teraz mamy jego rolę tutaj.
+
+57
+00:03:56,820 --> 00:03:59,770
+I chcę wiedzieć, ile on robi, łącznie z korzyściami.
+
+58
+00:03:59,970 --> 00:04:09,060
+To są całkowite świadczenia pieniężne, które w rzeczywistości mogą być po prostu pobierane, a które przewyższają ogólne świadczenia pieniężne. Wygląda
+
+59
+00:04:09,060 --> 00:04:12,630
+na to, że odpowiedź brzmi: 270000 324.
+
+60
+00:04:12,630 --> 00:04:19,770
+Należy pamiętać, że przypadkowo zapomniałeś wpisać to w całości i powiedział Joseph Driscoll, że dostaniesz
+
+61
+00:04:19,770 --> 00:04:20,970
+inną odpowiedź.
+
+62
+00:04:20,970 --> 00:04:22,240
+Więc jest tu dwa razy.
+
+63
+00:04:22,240 --> 00:04:25,980
+Miej to na uwadze, aby twoje odpowiedzi pasowały do rozwiązań.
+
+64
+00:04:25,980 --> 00:04:29,300
+Po prostu użyj wszystkich czapek.
+
+65
+00:04:29,310 --> 00:04:33,490
+Teraz chcemy wiedzieć, jak nazywa się najlepiej zarabiająca osoba, w tym świadczenia.
+
+66
+00:04:33,540 --> 00:04:35,640
+Jest na to kilka sposobów.
+
+67
+00:04:35,820 --> 00:04:38,920
+Ale idźmy dalej i wykonujmy najprostszą drogę.
+
+68
+00:04:38,970 --> 00:04:48,990
+Tak więc otrzymam niewielkie zasiłki, a jeśli zadzwonię do maksymalnej wartości, zauważ, że otrzymuję maksymalne łączne świadczenia pieniężne, ale chcę
+
+69
+00:04:49,260 --> 00:04:53,400
+znać nazwę tego, kto faktycznie to otrzymuje.
+
+70
+00:04:53,400 --> 00:04:55,380
+Mogę powiedzieć, że
+
+71
+00:04:58,460 --> 00:05:04,110
+mogę powiedzieć, że sprzedaż sumy świadczeń równych jest równa sough not Max.
+
+72
+00:05:04,110 --> 00:05:04,800
+Prowadzę to.
+
+73
+00:05:04,800 --> 00:05:06,960
+Zwraca wartości logiczne.
+
+74
+00:05:07,010 --> 00:05:08,450
+I nie, mam tylko jedno prawdziwe.
+
+75
+00:05:08,450 --> 00:05:10,800
+Jest to pierwsza osoba w
+
+76
+00:05:14,520 --> 00:05:20,280
+ramce danych, którą mogę przekazać do Soule, aby rzeczywiście zdobyć jego imię, na co mnie
+
+77
+00:05:20,280 --> 00:05:26,590
+stać, a gdybym tylko chciała nazwę, mógłbym powiedzieć nazwisko pracownika i uzyskać jego imię. pozwolić sobie.
+
+78
+00:05:26,970 --> 00:05:28,490
+OK, to jeden sposób, aby to zrobić.
+
+79
+00:05:28,560 --> 00:05:35,670
+Bardziej zaawansowany sposób to zrobić, a my nie przeszliśmy tej metody, ale
+
+80
+00:05:36,900 --> 00:05:45,640
+po prostu korzystamy z komórki Loek, gdzie na południe od Małej wypłaty zasiłki id x Maks.
+
+81
+00:05:45,690 --> 00:05:51,260
+Jest to w zasadzie prawie jak metoda arc emacs, która zwraca również trochę informacji i zwróci Nathanial
+
+82
+00:05:51,250 --> 00:05:56,730
+za to i bardziej zaawansowane metody, które można wyszukać w X Max, ale jest bardzo podobny
+
+83
+00:05:56,740 --> 00:05:57,650
+do pis.
+
+84
+00:05:57,710 --> 00:05:58,930
+Argh Max.
+
+85
+00:05:59,260 --> 00:06:03,170
+OK, po prostu przyjrzyjmy się, co to jest.
+
+86
+00:06:03,250 --> 00:06:05,360
+Jest to w gruncie rzeczy tylko liczba.
+
+87
+00:06:05,940 --> 00:06:09,750
+Więc hash to oznacz i wklej to.
+
+88
+00:06:09,750 --> 00:06:15,010
+Zasadniczo jest to po prostu RMX iw efekcie Panas faktycznie obsługuje RMX.
+
+89
+00:06:15,030 --> 00:06:18,960
+Mogę więc powiedzieć, że mamy tutaj maksimum i dałoby mi tę samą odpowiedź.
+
+90
+00:06:19,060 --> 00:06:21,460
+I to w zasadzie tam, gdzie chcę znaleźć tę osobę.
+
+91
+00:06:21,710 --> 00:06:31,830
+Mogę więc powiedzieć, że sal Dot to IOC lub Alosi, ponieważ pasuje i wciąż mam wystarczająco dużo danych.
+
+92
+00:06:31,890 --> 00:06:36,390
+OK. Sprawdzę rozwiązanie, ale jeśli interesuje cię ta metoda, ale mam nadzieję, że
+
+93
+00:06:36,390 --> 00:06:38,990
+odkryłeś jedną lub więcej zaawansowanych metod.
+
+94
+00:06:39,330 --> 00:06:41,640
+Kontynuujmy i kontynuujmy.
+
+95
+00:06:41,670 --> 00:06:45,990
+Teraz chcemy wiedzieć, jaka jest nazwa osoby najniżej zarabiającej, w tym świadczeń i czy zauważasz coś
+
+96
+00:06:46,000 --> 00:06:48,060
+dziwnego w tym, ile jest ona wypłacana.
+
+97
+00:06:48,450 --> 00:06:50,010
+Chcemy więc osoby najniżej opłacanej.
+
+98
+00:06:50,070 --> 00:06:50,700
+Śmiało i zrób to.
+
+99
+00:06:50,740 --> 00:07:05,500
+Zaawansowana metoda mówi, że sprzedaż łącznych świadczeń wynosi Dimin lub I. T. X Men.
+
+100
+00:07:06,260 --> 00:07:11,290
+Zauważmy, że mamy sto czterdzieści osiem tysięcy sześćset pięćdziesiąt trzy.
+
+101
+00:07:11,740 --> 00:07:21,450
+To jest lokalizacja identyfikacyjna, więc mogę przekazać to do IOC salbe i to zwraca nazwę pracowników Joe Lopez.
+
+102
+00:07:21,750 --> 00:07:27,300
+Teraz, aby zauważyć coś dziwnego, tutaj jest to, że ta osoba faktycznie otrzymuje ujemne wynagrodzenie, co oznacza,
+
+103
+00:07:27,330 --> 00:07:33,840
+że z jakiegoś powodu ta osoba faktycznie jest winna pieniądze z San Francisco w jakiejś dziwnej sytuacji, ale mam nadzieję,
+
+104
+00:07:34,030 --> 00:07:36,930
+że uda się znaleźć Joe Lopeza jako odpowiedź.
+
+105
+00:07:37,000 --> 00:07:41,860
+Jest to bardziej zaawansowana metoda robienia tego za pomocą RMN Ale mógłbyś również wykonać następujące czynności.
+
+106
+00:07:41,940 --> 00:07:54,730
+Można powiedzieć, że całkowite wynagrodzenie za komórkę jest równe komórce niewielkich świadczeń, a nie mężczyznom, a następnie po prostu przekazuj
+
+107
+00:07:54,730 --> 00:07:56,110
+to dalej.
+
+108
+00:07:56,190 --> 00:08:04,590
+Więc to również zwróciłoby Joemu Lopezowi doradcę w postaci pieniędzy Sioux City San Francisco z UA.
+
+109
+00:08:05,060 --> 00:08:08,250
+W tej chwili jest mowa o średniej w tym przypadku.
+
+110
+00:08:08,250 --> 00:08:09,180
+Chcę ci dać odpowiedź.
+
+111
+00:08:09,210 --> 00:08:11,770
+Mam na myśli wynagrodzenie na podstawie wynagrodzenia wszystkich pracowników rocznie.
+
+112
+00:08:12,130 --> 00:08:14,400
+OK, teraz chcemy skorzystać z Group By.
+
+113
+00:08:14,640 --> 00:08:27,700
+Tak więc mówię, że nie sprzedajemy grup po roku i chcę średniej w tym przypadku, mam na myśli to, że jeśli po prostu to zgłosię, dostaję wszystko uśrednione w ciągu
+
+114
+00:08:27,780 --> 00:08:31,750
+roku, a oni po prostu chcą zapłacić za bazę.
+
+115
+00:08:31,760 --> 00:08:37,540
+Więc wezwę podstawową zapłatę z tej kolumny tej ramki danych. Scuse me i tam idziemy.
+
+116
+00:08:37,600 --> 00:08:42,150
+Przeciętna liczba pracowników najemnych rocznie jest taka, że powoli rośnie.
+
+117
+00:08:42,140 --> 00:08:47,820
+2011 r. Zaczął się rozwijać, aw 2014 r. Nieco spadł.
+
+118
+00:08:47,830 --> 00:08:52,810
+Kolejnym pytaniem, na które chciałem odpowiedzieć, było to, ile jest tam unikalnych tytułów
+
+119
+00:08:52,800 --> 00:09:00,510
+pracy, a to całkiem proste, wystarczy powiedzieć, że sprzedajesz tytuł pracy, a następnie pamiętaj, że istnieje sporo funkcji lub metod, których
+
+120
+00:09:00,510 --> 00:09:02,940
+możesz użyć do tworzenia unikatowych wartości.
+
+121
+00:09:02,940 --> 00:09:07,980
+Ten, który chcemy, nie jest unikalny, ponieważ w rzeczywistości zwraca tablicę wszystkich unikatowych wartości,
+
+122
+00:09:07,990 --> 00:09:11,670
+które chcemy i unikatowe, które zwracają liczbę unikatowych wartości.
+
+123
+00:09:11,760 --> 00:09:19,020
+Mógłbyś mieć również długość tego wyjątkowego wyjścia, a to by było to samo, co prostszym sposobem na
+
+124
+00:09:19,020 --> 00:09:23,870
+to nie jest z długością, ale tylko z i dla ciebie.
+
+125
+00:09:24,210 --> 00:09:26,710
+Teraz chcemy wiedzieć, jakie są najpopularniejsze pięć najczęstszych zadań.
+
+126
+00:09:26,740 --> 00:09:39,060
+Możesz to zrobić, mówiąc: sprzedaj tytuł zadania, nie licząc wartości, a następnie zadzwoń do pierwszej piątki, a wyszukiwane
+
+127
+00:09:39,070 --> 00:09:42,530
+hasła do 5 najpopularniejszych tytułów.
+
+128
+00:09:42,560 --> 00:09:47,070
+Okay następnym pytaniem, na które chciałbym odpowiedzieć, było to, ile tytułów stanowisk reprezentuje tylko jedna
+
+129
+00:09:47,080 --> 00:09:48,630
+osoba w 2013 roku.
+
+130
+00:09:48,630 --> 00:09:52,580
+W przeciwnym razie jest to tylko jeden tytuł pracy w 2013 roku.
+
+131
+00:09:52,590 --> 00:09:54,600
+Są więc warunki, które chcesz zrobić.
+
+132
+00:09:54,820 --> 00:10:00,380
+Chcemy dowiedzieć się, jakie są tytuły prac, ponieważ konta wartości określają, gdzie są one równe jednej.
+
+133
+00:10:00,410 --> 00:10:03,410
+Chcemy również upewnić się, że robimy to tylko w 2013 roku.
+
+134
+00:10:03,510 --> 00:10:07,280
+Więc to przełamie.
+
+135
+00:10:07,360 --> 00:10:13,530
+Chcę złapać Sal, gdzie Rok jest równy 2013.
+
+136
+00:10:14,100 --> 00:10:20,900
+Później zabiorę kolumnę z tytułem stanowiska i wykonam tutaj liczenie woluminów, które mają wartość
+
+137
+00:10:23,610 --> 00:10:30,640
+bardzo podobną do tej, którą właśnie tutaj powiedzieliśmy, ale teraz jest tylko na rok 2013
+
+138
+00:10:31,500 --> 00:10:36,750
+i co zrobić z tym pytam, gdzie jest równe jeden.
+
+139
+00:10:37,600 --> 00:10:43,230
+I dostajemy tutaj wartości boolowskie, a True jest tutaj, gdzie to wszystko jest równe jeden.
+
+140
+00:10:43,270 --> 00:10:47,230
+I chcę dobrze zrozumieć, jaka jest rzeczywista liczba tego zdarzenia.
+
+141
+00:10:47,230 --> 00:10:49,420
+Mogę po prostu wziąć trochę tego w
+
+142
+00:10:53,060 --> 00:10:53,690
+zamian.
+
+143
+00:10:53,820 --> 00:10:55,260
+Dwieście dwa.
+
+144
+00:10:55,380 --> 00:11:00,490
+Jest to najszybszy i najłatwiejszy sposób sprawdzenia, ile tytułów stanowisk reprezentuje tylko jedna
+
+145
+00:11:00,580 --> 00:11:02,600
+osoba w 2013 roku.
+
+146
+00:11:02,650 --> 00:11:03,170
+DOBRZE.
+
+147
+00:11:03,520 --> 00:11:08,260
+Idźmy dalej i przejdźmy do następnego, co również jest dość trudne, ponieważ
+
+148
+00:11:08,260 --> 00:11:13,990
+wielu ludzi ma w tytule stanowiska słowo "szef", aby to zrobić, musimy wykonać funkcję niestandardową.
+
+149
+00:11:14,260 --> 00:11:20,050
+Wejdźmy i sprawdźmy, jak wygląda tytuł pracy jako kolumna.
+
+150
+00:11:20,150 --> 00:11:24,030
+Masz więc tytuł pracy, że w większości przypadków jest to wielka skrzynka.
+
+151
+00:11:24,040 --> 00:11:25,830
+Przejdźmy dalej i przewińmy w dół.
+
+152
+00:11:25,870 --> 00:11:27,730
+A teraz widzimy, że jest małe.
+
+153
+00:11:27,790 --> 00:11:32,500
+Musimy więc zrobić to, aby wziąć to
+
+154
+00:11:32,500 --> 00:11:37,890
+pod uwagę, a my zamierzamy to zrobić, aby to zrobić.
+
+155
+00:11:38,230 --> 00:11:41,760
+Powiemy, że Chief
+
+156
+00:11:44,320 --> 00:11:53,530
+string bierze tytuł i jeśli Chief jest w tytule Im
+
+157
+00:11:56,130 --> 00:12:02,490
+niższy split, return TRUE else return false.
+
+158
+00:12:02,920 --> 00:12:06,370
+Chodźmy, aby rozbić to, co ta funkcja faktycznie robi.
+
+159
+00:12:06,450 --> 00:12:07,360
+Zamierzam
+
+160
+00:12:10,800 --> 00:12:12,220
+pobrać tutaj losowy tytuł.
+
+161
+00:12:12,220 --> 00:12:18,420
+General Manager Metropolitan Transit Authority pozwolił mi zabrać tę rzecz i przekazać ją do Chief string.
+
+162
+00:12:21,740 --> 00:12:24,010
+Co to znaczy.
+
+163
+00:12:24,120 --> 00:12:29,600
+Skopiuj i wklej jeszcze raz.
+
+164
+00:12:29,600 --> 00:12:31,230
+No to jedziemy.
+
+165
+00:12:31,240 --> 00:12:35,410
+I zauważ, że dostaję fałszywego, co ma sens, ponieważ szef jest w tym tytule.
+
+166
+00:12:35,530 --> 00:12:39,790
+A teraz chodźmy i zmieńmy to na coś w rodzaju głównego menedżera.
+
+167
+00:12:40,120 --> 00:12:41,740
+Uruchomiłem to teraz, gdy się spełniłem.
+
+168
+00:12:41,770 --> 00:12:46,030
+A to, co się naprawdę dzieje, to przyjęcie tego tytułu właśnie za ten ciąg.
+
+169
+00:12:46,030 --> 00:12:51,090
+Stosuje się go na niższym poziomie, który sprawia, że wszystko tutaj w napisie małymi literami,
+
+170
+00:12:51,100 --> 00:12:58,720
+a następnie przechodzi do przodu i dzieli go na listę, a następnie sprawdza, czy ser łańcuchowy znajduje się na tej liście, czy zwraca true
+
+171
+00:12:58,720 --> 00:12:59,580
+lub wywołuje.
+
+172
+00:12:59,830 --> 00:13:02,230
+A to oznacza, że mogę
+
+173
+00:13:05,380 --> 00:13:16,780
+po prostu zastosować to za pomocą lambda X, a następnie powiem tylko główny ciąg x, a następnie otrzymają wartości logiczne false false false
+
+174
+00:13:16,780 --> 00:13:18,980
+true true true.
+
+175
+00:13:19,000 --> 00:13:21,690
+Mam tutaj kilka metod, które faktycznie je odliczają.
+
+176
+00:13:21,720 --> 00:13:28,840
+To, co widzieliśmy przed najlepszym sposobem, aby to zrobić, to wziąć niektóre z tego, że mamy 477 osób,
+
+177
+00:13:29,170 --> 00:13:32,150
+które mają słowo "szef" w swoim tytule.
+
+178
+00:13:32,640 --> 00:13:32,910
+DOBRZE.
+
+179
+00:13:32,920 --> 00:13:37,360
+Na koniec ostatnia, która jest tak naprawdę pytaniem dodatkowym, ponieważ ma ona metodę,
+
+180
+00:13:37,360 --> 00:13:42,430
+której jeszcze nie znamy, a która jest korelacją i chcemy wiedzieć, czy istnieje korelacja między długością
+
+181
+00:13:42,430 --> 00:13:44,020
+tytułu pracy a wynagrodzeniem.
+
+182
+00:13:44,470 --> 00:13:53,320
+Zamierzamy stworzyć nową kolumnę o nazwie podpowiedź pływowa Eliane i będzie ona równa kolumnie
+
+183
+00:13:53,320 --> 00:14:00,400
+tytułu pracy i zamierzam zastosować do tego metodę wbudowanego łącza.
+
+184
+00:14:00,410 --> 00:14:05,920
+Więc jeśli przyjrzę się tym dwóm kolumnom tytuł zadania i
+
+185
+00:14:11,230 --> 00:14:12,420
+link do
+
+186
+00:14:17,360 --> 00:14:21,380
+tytułu mam tutaj tytuł i tytuł pracy.
+
+187
+00:14:22,210 --> 00:14:26,860
+Teraz chciałbym sprawdzić, czy istnieje korelacja między tymi dwoma metodami,
+
+188
+00:14:26,860 --> 00:14:34,600
+a metodą, którą sam odkrywasz, dlatego pytanie dodatkowe to C O R R, które zwraca korelację między wieloma
+
+189
+00:14:34,600 --> 00:14:35,070
+kolumnami.
+
+190
+00:14:35,080 --> 00:14:39,900
+Ale tutaj to, co chcieliśmy wiedzieć, to korelacja między długością tytułu pracy a wynagrodzeniem.
+
+191
+00:14:40,420 --> 00:14:42,720
+Ma to sens, który jest doskonale skorelowany.
+
+192
+00:14:42,730 --> 00:14:51,520
+Chcemy jednak zrobić kolumnę bezczynności i faktycznie całkowitą płatność.
+
+193
+00:14:52,140 --> 00:14:56,310
+I tutaj widzimy, że zasadniczo nie ma korelacji pomiędzy tym, jak długo twój tytuł
+
+194
+00:14:56,320 --> 00:14:57,630
+jest tym, ile zarabiasz.
+
+195
+00:14:57,750 --> 00:14:58,260
+DOBRZE.
+
+196
+00:14:58,360 --> 00:15:02,440
+Nie martw się, jeśli nie udało ci się zdobyć tego ostatniego, było to dość
+
+197
+00:15:02,440 --> 00:15:06,550
+trudne i trudne, ale zawierało kilka metod, których nie przerabialiśmy, dlatego było to pytanie dodatkowe.
+
+198
+00:15:06,550 --> 00:15:07,100
+W porządku.
+
+199
+00:15:07,330 --> 00:15:12,270
+Mam nadzieję, że dobrze się z tym zgadzasz, pamiętaj o tym, że trudniejsze i trudniejsze jest odwoływanie się do złych, jeśli
+
+200
+00:15:12,280 --> 00:15:13,990
+udało ci się zdobyć kilka ostatnich.
+
+201
+00:15:14,020 --> 00:15:17,190
+W rzeczywistości są one dość trudne, ale zawsze możesz przejrzeć rozwiązania.
+
+202
+00:15:17,210 --> 00:15:22,840
+Nie, ale chcesz więcej praktyki z tym lub po prostu pisać i pisać forum pytań i odpowiedzi, jeśli masz jakieś pytania.
+
+203
+00:15:23,560 --> 00:15:25,390
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

@@ -1,0 +1,487 @@
+1
+00:00:05,190 --> 00:00:10,770
+Salve a tutti e benvenuti nello stato di visualizzazione delle soluzioni di allenamento Panthers per tenere fede a questa conferenza.
+
+2
+00:00:10,830 --> 00:00:13,630
+Stiamo andando oltre le soluzioni per il pand dello stato della sua vita.
+
+3
+00:00:13,680 --> 00:00:15,220
+Esercitare domande.
+
+4
+00:00:15,240 --> 00:00:18,050
+Andiamo avanti e saltiamo sul taccuino di Jupiter per iniziare.
+
+5
+00:00:18,050 --> 00:00:19,810
+Va bene, sono al taccuino.
+
+6
+00:00:19,830 --> 00:00:27,330
+Ho intenzione di andare avanti ed eseguire le prime celle di codice per leggere il file C3 DAC impostato tutte le
+
+7
+00:00:27,330 --> 00:00:29,500
+importazioni correttamente e controllare la testa.
+
+8
+00:00:29,880 --> 00:00:30,170
+Tutto ok.
+
+9
+00:00:30,180 --> 00:00:34,790
+La prossima cosa che volevo fare era ricreare uno scatterplot di B contro a.
+
+10
+00:00:34,830 --> 00:00:36,380
+Quindi solo quelle due colonne.
+
+11
+00:00:36,720 --> 00:00:46,770
+Andiamo avanti e facciamo ciò dicendo che i pensieri a trama di D-3 si disperdono e poi ho intenzione di entrare e specificare che voglio sul
+
+12
+00:00:47,010 --> 00:00:52,970
+mio asse x la colonna A e sul mio asse y voglio la colonna B.
+
+13
+00:00:53,210 --> 00:00:55,810
+Vediamo cosa assomiglia.
+
+14
+00:00:56,370 --> 00:00:58,700
+E questo dovrebbe essere l'EF 3.
+
+15
+00:00:58,700 --> 00:00:59,610
+Eccoci.
+
+16
+00:00:59,610 --> 00:01:03,220
+Quindi sto ottenendo una trama simile, tranne che qualcosa da sapere era.
+
+17
+00:01:03,330 --> 00:01:07,410
+Vedi se riesci a capire come allungarlo in modo simile a questa trama.
+
+18
+00:01:07,410 --> 00:01:13,680
+E mentre passavamo nella conferenza, in realtà puoi semplicemente passare la dimensione della fico direttamente in questo
+
+19
+00:01:13,710 --> 00:01:14,680
+argomento come parametro.
+
+20
+00:01:15,030 --> 00:01:16,950
+E possiamo allungarlo.
+
+21
+00:01:17,000 --> 00:01:23,030
+Quindi, un'altra cosa da notare qui è che la dimensione di questi punti è leggermente più grande.
+
+22
+00:01:23,040 --> 00:01:28,090
+Quindi puoi specificarlo esattamente come abbiamo visto nella lezione o da un'altra colonna o semplicemente passando
+
+23
+00:01:28,090 --> 00:01:29,540
+in S per la dimensione.
+
+24
+00:01:29,850 --> 00:01:33,220
+E ho intenzione di specificare la dimensione per essere 50.
+
+25
+00:01:33,230 --> 00:01:38,970
+Qui abbiamo i punti un po 'più grandi e per il colore è stato c abbiamo visto nella lezione come
+
+26
+00:01:38,970 --> 00:01:40,800
+possiamo specificare il colore con un'altra colonna.
+
+27
+00:01:40,800 --> 00:01:45,810
+Ma si può anche solo passare una stringa come si può per la trama della carta lib e qui ora abbiamo una
+
+28
+00:01:45,900 --> 00:01:46,680
+ricreazione di quella trama.
+
+29
+00:01:46,680 --> 00:01:48,170
+Esattamente.
+
+30
+00:01:48,180 --> 00:01:48,850
+OK.
+
+31
+00:01:48,930 --> 00:01:54,060
+La cosa principale che volevo che tu uscissi da questa particolare domanda era solo il passo della
+
+32
+00:01:54,360 --> 00:01:56,940
+trama che spargeva un Versus essere così xey.
+
+33
+00:01:57,000 --> 00:01:57,840
+Non ti preoccupare troppo.
+
+34
+00:01:57,840 --> 00:02:03,260
+Se tu fossi in grado di ottenere il dimensionamento o la dimensione colorante Spero che tu sia in grado di ottenere quello.
+
+35
+00:02:04,110 --> 00:02:08,150
+OK passando ora voglio creare un istogramma della colonna A.
+
+36
+00:02:08,150 --> 00:02:09,880
+Questo è in realtà abbastanza semplice.
+
+37
+00:02:09,920 --> 00:02:21,350
+Basta chiamare la colonna stessa e poi dire o solo per vedere l'istogramma o si può anche dire sibilare punto trama
+
+38
+00:02:21,380 --> 00:02:24,560
+e tutti restituiscono lo stesso istogramma.
+
+39
+00:02:24,840 --> 00:02:26,470
+E questo è il numero predefinito di bin.
+
+40
+00:02:26,490 --> 00:02:30,890
+Ma puoi anche passare un argomento se lo vuoi di più Beenz.
+
+41
+00:02:31,020 --> 00:02:36,990
+Va bene, il prossimo numero è che questi grafici sono OK ma non sembrano molto raffinati e le istruzioni dicono di
+
+42
+00:02:36,990 --> 00:02:42,720
+usare i fogli di stile per impostare lo stile sulla trama GG e ripetere l'istogramma dall'alto e anche capire come
+
+43
+00:02:42,720 --> 00:02:44,630
+aggiungere più bit ad esso .
+
+44
+00:02:44,640 --> 00:02:50,690
+Questo è un argomento che in realtà non abbiamo trattato nella lezione video, ma è coperto nel quaderno, quindi spero
+
+45
+00:02:51,000 --> 00:02:56,250
+che abbia due percorsi uno si ricontrollare il notebook per capire a quali fogli di stile si stava
+
+46
+00:02:56,250 --> 00:02:59,430
+riferendo o si google search map Fogli di stile cutlip .
+
+47
+00:02:59,460 --> 00:03:04,770
+Altrimenti potresti anche aver postato sul forum Q e A per ottenere quello che stavo riferendo lì.
+
+48
+00:03:04,830 --> 00:03:10,320
+una sezione del foglio di stile e questo è solo per farti venire voglia di scoprire aspetti da solo.
+
+49
+00:03:10,320 --> 00:03:15,240
+Se vai avanti e dai un'occhiata al diario del taccuino per i panda costruiti nella visualizzazione
+
+50
+00:03:15,240 --> 00:03:16,230
+dei dati c'è
+
+51
+00:03:16,270 --> 00:03:20,590
+Qui puoi vedere che la mappa di Cutlip ha un foglio di stile e c'è un piccolo link di riferimento.
+
+52
+00:03:20,680 --> 00:03:24,330
+E se cerchi su Google questo probabilmente sei anche andato su questa pagina.
+
+53
+00:03:24,330 --> 00:03:30,150
+E questa è la galleria e c'è una sezione di fogli nella galleria e la premessa o l'idea di base
+
+54
+00:03:30,150 --> 00:03:32,290
+è che puoi usare Piel in quello stile.
+
+55
+00:03:32,310 --> 00:03:39,030
+Usa il passaggio di qualsiasi stringa di uno stile e cambierà automaticamente l'estetica in uno stile particolare simile
+
+56
+00:03:39,920 --> 00:03:40,710
+a questo.
+
+57
+00:03:40,710 --> 00:03:44,510
+Dici solo uno stile T-Dog che usa la trama G-G.
+
+58
+00:03:44,580 --> 00:03:47,910
+Quindi ho intenzione di copiare questa riga di codice.
+
+59
+00:03:48,510 --> 00:03:52,130
+Vieni qui e incollalo.
+
+60
+00:03:52,260 --> 00:03:57,330
+E ora che è stato eseguito, noterete che se andiamo avanti e copiamo e
+
+61
+00:03:57,330 --> 00:04:03,240
+incolliamo la riga esatta del codice qui e incollati qui otterremo una trama molto più bella.
+
+62
+00:04:03,480 --> 00:04:07,310
+E noterai anche che qui questo rosso è un po 'più visibile.
+
+63
+00:04:07,380 --> 00:04:13,140
+Quindi puoi anche pasand Alpha per renderlo un po 'più trasparente.
+
+64
+00:04:13,230 --> 00:04:17,190
+E qui puoi iniziare a far combaciare questi istogrammi.
+
+65
+00:04:17,310 --> 00:04:21,810
+Speriamo che non sia stato troppo impegnativo per te, ma c'è un aspetto del tipo di scoprire cose
+
+66
+00:04:21,810 --> 00:04:26,490
+da te che è probabilmente la parte più importante dell'apprendimento della scienza dei dati e della programmazione dell'apprendimento.
+
+67
+00:04:26,850 --> 00:04:32,280
+La capacità di cercare una risposta da solo senza che venga fornito il contesto completo delle informazioni, tuttavia
+
+68
+00:04:32,820 --> 00:04:37,620
+puoi sempre sentirti libero di postare nei forum di domande e risposte se qualcosa ti confonde.
+
+69
+00:04:37,620 --> 00:04:43,800
+Va bene andiamo avanti e passiamo ai grafici a scatola che volevamo creare un diagramma a riquadri confrontando
+
+70
+00:04:43,830 --> 00:04:45,730
+le colonne A e B.
+
+71
+00:04:45,840 --> 00:04:51,520
+Diamo un'occhiata a ciò che è su che diamo un'occhiata solo al frame dati stesso.
+
+72
+00:04:52,190 --> 00:04:58,630
+Si noti che abbiamo le colonne b c e d quindi non voglio ottenere un grafico a riquadri di tutte le colonne Voglio solo un B.
+
+73
+00:04:59,160 --> 00:05:04,800
+Quindi, in realtà sto solo andando a prendere quelle colonne passando in una lista di quei nomi
+
+74
+00:05:05,280 --> 00:05:09,550
+di colonna A e B e quindi posso chiamare casella di trama.
+
+75
+00:05:09,720 --> 00:05:13,110
+Crea un diagramma di riquadri che sembra lo stesso di questo.
+
+76
+00:05:13,140 --> 00:05:13,580
+OK.
+
+77
+00:05:13,800 --> 00:05:17,100
+Quindi voglio creare un grafico kd della colonna D.
+
+78
+00:05:17,290 --> 00:05:19,080
+Questo è in realtà piuttosto semplice.
+
+79
+00:05:19,080 --> 00:05:26,700
+Devi solo passare nella colonna D dire la trama e poi dire Katie e loro restituiranno questa trama.
+
+80
+00:05:27,030 --> 00:05:31,140
+linea in stile trattino e no non dovresti di solito Daschle K la trama.
+
+81
+00:05:31,140 --> 00:05:36,240
+E poi finalmente abbiamo una che siamo qui per capire come aumentare la linea con e rendere la
+
+82
+00:05:36,320 --> 00:05:36,770
+Tutto ok.
+
+83
+00:05:36,930 --> 00:05:46,230
+Quindi il modo in cui puoi farlo è in realtà solo prendere la stessa trama KDE o densità e quindi puoi andare
+
+84
+00:05:46,230 --> 00:05:53,540
+avanti e passare argomenti da quella lib di trama come lo stile di linea e la linea con.
+
+85
+00:05:53,550 --> 00:05:54,840
+E qui otteniamo la stessa trama.
+
+86
+00:05:54,900 --> 00:05:59,310
+E puoi anche farlo con la densità se vuoi.
+
+87
+00:05:59,310 --> 00:06:04,620
+È lo stesso comando che vogliamo creare un grafico ad area di tutte le colonne solo
+
+88
+00:06:04,620 --> 00:06:08,750
+per le stanze fino a 30 e poi dice che Hintz usa x.
+
+89
+00:06:08,760 --> 00:06:17,320
+Quindi, si spera che tu possa scoprire chiamando X D-3 I X puoi vedere che questa è una proprietà ed è principalmente
+
+90
+00:06:17,320 --> 00:06:21,930
+una locazione di etichetta basata sull'indicizzatore con posizione di riserva di intero.
+
+91
+00:06:21,930 --> 00:06:24,970
+E quindi quello che possiamo fare è in realtà solo usare questo per affettare.
+
+92
+00:06:25,320 --> 00:06:30,660
+E ancora una volta è una cosa che voglio che tu scopra mentre vai avanti da solo, in modo
+
+93
+00:06:30,660 --> 00:06:37,610
+da poter passare da zero a 30 qui e questo restituirà solo le prime 30 righe o qualunque sia la notazione di slicing che volevi.
+
+94
+00:06:38,070 --> 00:06:43,570
+E poi fuori puoi chiamare l'area del plot e ottieni una trama che assomiglia a questa.
+
+95
+00:06:43,610 --> 00:06:49,890
+E se lo volevi Sembra che la trama qui sotto possa effettivamente inserire un valore alfa lì.
+
+96
+00:06:49,950 --> 00:06:54,960
+a capirlo, ma nota come la leggenda si stava effettivamente sovrapponendo ad alcuni dei diagrammi reali.
+
+97
+00:06:54,960 --> 00:07:01,200
+Va bene c'è una sfida bonus e nota che potresti trovare le soluzioni di questo riferimento davvero difficile che non riesci
+
+98
+00:07:01,260 --> 00:07:06,030
+Di solito non vorrebbero questo e voglio che tu capisca come puoi visualizzare la legenda al
+
+99
+00:07:06,030 --> 00:07:12,150
+di fuori della trama come mostrato qui sotto e poi di nuovo su quel tema di cercare di scoprire le cose
+
+100
+00:07:12,180 --> 00:07:12,860
+da solo.
+
+101
+00:07:12,900 --> 00:07:18,420
+Voglio provare a google la ricerca di un buon link di overflow dello stack e se potessi trovarlo da
+
+102
+00:07:18,420 --> 00:07:22,070
+solo, c'è stato un link a una domanda di overflow dello stack.
+
+103
+00:07:22,080 --> 00:07:28,020
+un po 'di scorrere qui e dare un'occhiata a questo noterete che qualcuno in realtà risponde a questa domanda correttamente
+
+104
+00:07:28,020 --> 00:07:34,350
+e hanno detto proprio qui che Piel t ha lasciato quella leggenda centro centro e poi questa scatola beby da ancorare.
+
+105
+00:07:34,350 --> 00:07:39,930
+Quindi se diamo un'occhiata a questo link sullo stack overflow qualcuno sta chiedendo come mettere la leggenda fuori
+
+106
+00:07:39,930 --> 00:07:42,470
+dalla trama con i panda e se facciamo
+
+107
+00:07:42,510 --> 00:07:43,700
+Questa è la chiave qui.
+
+108
+00:07:43,730 --> 00:07:51,240
+E in realtà basta copiare questo codice e incollarlo qui e poi prendere l'altro codice di questo plot
+
+109
+00:07:54,150 --> 00:07:59,850
+area e incollarlo qui e poi quando vogliamo fare è creare una figura affinché
+
+110
+00:08:03,060 --> 00:08:07,310
+questi vengano tutti chiamati e poi dirà la pubertà che mostra.
+
+111
+00:08:07,920 --> 00:08:12,180
+E questo creerà una figura con la leggenda all'esterno.
+
+112
+00:08:12,420 --> 00:08:18,370
+Ciò funzionerebbe anche se rimuovessi effettivamente la prima riga e l'ultima riga nel taccuino di Giove.
+
+113
+00:08:18,420 --> 00:08:24,480
+In altre situazioni, come altri errori di identificazione, potresti dover effettivamente trovare la figura e mostrare la figura.
+
+114
+00:08:24,690 --> 00:08:28,920
+Ma dal momento che stiamo usando Jupiter, un notebook in realtà può solo eseguire queste due
+
+115
+00:08:28,950 --> 00:08:31,480
+righe e rimuoverà la legenda e la posizionerà all'esterno.
+
+116
+00:08:31,500 --> 00:08:35,850
+Quindi l'idea di base qui è spero che tu possa scoprire da solo come afferrare questo tipo
+
+117
+00:08:35,850 --> 00:08:38,170
+di linee di codice e metterle nel tuo codice.
+
+118
+00:08:38,220 --> 00:08:42,900
+E in realtà una cosa molto comune da fare è controllare su Stack Overflow per vedere quali linee
+
+119
+00:08:42,900 --> 00:08:46,000
+di codice sono rilevanti per te e quindi inserirle nel tuo lavoro.
+
+120
+00:08:46,500 --> 00:08:47,910
+OK questo è tutto.
+
+121
+00:08:47,910 --> 00:08:51,430
+Ottimo lavoro a tutti e ci vediamo alla prossima lezione.
+
+122
+00:08:51,450 --> 00:08:55,460
+Sentiti libero di pubblicare i forum di domande e risposte se qualcosa ti confondeva.

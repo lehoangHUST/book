@@ -1,0 +1,899 @@
+1
+00:00:05,490 --> 00:00:10,460
+Bună ziua tuturor și bine ați venit la partea a doua a conferinței de finanțare a proiectelor de finanțare.
+
+2
+00:00:10,470 --> 00:00:15,780
+Să mergem mai departe și să ne întoarcem imediat la cartea Jupiter, unde am plecat de data trecută.
+
+3
+00:00:15,780 --> 00:00:16,080
+O.K.
+
+4
+00:00:16,080 --> 00:00:17,810
+Aici sunt la notebook-ul Jupiter.
+
+5
+00:00:17,820 --> 00:00:20,740
+Ultima dată când am plecat, tocmai am creat complotul acestei pagini.
+
+6
+00:00:20,760 --> 00:00:23,830
+Observați un comportament ciudat de revenire a Citigroup.
+
+7
+00:00:24,030 --> 00:00:29,250
+Și dacă acest lucru ți s-ar fi aflat, poți verifica pagina Citigroup Wikipedia și vei observa că
+
+8
+00:00:29,250 --> 00:00:31,640
+în noiembrie 2008 au avut un accident.
+
+9
+00:00:31,650 --> 00:00:34,710
+Și vom explora de fapt, ceva mai târziu.
+
+10
+00:00:35,370 --> 00:00:41,070
+Apoi, urmând ce vrem să facem este să folosim acest cadru de date retur pentru a afla la ce date
+
+11
+00:00:41,070 --> 00:00:47,340
+fiecare depozit bancar a avut cel mai bun și cel mai rău venit într-o singură zi și ar trebui să observați că
+
+12
+00:00:47,340 --> 00:00:52,500
+patru dintre bănci împărtășesc aceeași zi pentru scăderea mai rău că sa întâmplat ceva semnificativ în acea zi.
+
+13
+00:00:52,500 --> 00:01:00,300
+Să mergem mai departe și să începem ceva ce putem face doar verificând cadrele de date returnează și observați că avem aceste
+
+14
+00:01:00,330 --> 00:01:04,700
+coloane aici că B A C a returnat C return etc.
+
+15
+00:01:04,780 --> 00:01:09,580
+Vreau să obțin valorile minime pentru aceste întoarce și sunt toate întoarcerea SINGLE DAY.
+
+16
+00:01:09,600 --> 00:01:16,960
+Pot să spun că bărbații vor întoarce minimul de valoare pentru o singură zi.
+
+17
+00:01:16,970 --> 00:01:23,220
+Acum, ceea ce dorim de fapt sunt datele când sa întâmplat acest lucru și există câteva modalități de a face acest lucru.
+
+18
+00:01:23,220 --> 00:01:31,920
+Unul este că puteți să repetați prin numele coloanelor și apoi dacă vă amintiți numele dvs. PI în loc de a
+
+19
+00:01:32,520 --> 00:01:39,240
+apela, de exemplu, oamenii din coloana respectivă, puteți apela argumente, un argument va returna ștampila
+
+20
+00:01:39,300 --> 00:01:43,430
+de timp și acest caz este 20 ianuarie 2009.
+
+21
+00:01:43,450 --> 00:01:49,290
+Acum puteți face acest lucru pentru fiecare coloană sau Panthers vă permite, de asemenea, să
+
+22
+00:01:49,290 --> 00:01:57,600
+faceți acest lucru în întregul cadru de date doar prin apelarea id x men și care returnează o bază care într-adevăr arată
+
+23
+00:01:57,930 --> 00:02:04,140
+o serie cu datele sau indicii valorilor minime pentru se întoarce pentru fiecare bancă și puteți
+
+24
+00:02:04,140 --> 00:02:12,090
+face același lucru prin a spune returnează id x max pentru a obține cele mai mari câștiguri de o singură zi.
+
+25
+00:02:12,150 --> 00:02:20,190
+Acum, în ceea ce privește cele mai grave stropi, veți observa că multe dintre ele s-au întâmplat pe data de 20 ianuarie 2009.
+
+26
+00:02:20,280 --> 00:02:25,980
+Și dacă sunteți curios ce sa întâmplat în acea zi, puteți merge mai departe și doar căutați Google și veți observa
+
+27
+00:02:25,980 --> 00:02:30,950
+că aceasta a fost de fapt data inaugurării lui Barack Obama, care este un fel de interesant.
+
+28
+00:02:31,710 --> 00:02:37,200
+Ceva care trebuie menționat aici dacă este sau nu o corelație sau o simplă coincidență sau practic unii dintre
+
+29
+00:02:37,200 --> 00:02:41,000
+investitorii de pe piață devin panică când se produce o mare schimbare politică.
+
+30
+00:02:41,070 --> 00:02:47,730
+De fapt, puteți vedea o idee Max, care, de exemplu, cea mai mare zi de întoarcere a JP Morgan este următoarea a
+
+31
+00:02:47,730 --> 00:02:48,640
+doua zi.
+
+32
+00:02:48,720 --> 00:02:52,740
+Deci, nu luați acest lucru ca orice fel de comentarii politice sau chiar sfaturi financiare.
+
+33
+00:02:52,740 --> 00:02:55,840
+Piețele bursiere pot fi uneori ciudate.
+
+34
+00:02:55,890 --> 00:03:01,710
+Acum, dacă analizăm următoarea întrebare, ar trebui să fi observat că cea mai mare scădere și cel mai mare câștig
+
+35
+00:03:01,770 --> 00:03:04,770
+al Citigroup au fost foarte apropiate una de cealaltă.
+
+36
+00:03:05,040 --> 00:03:11,040
+Așa că am observat că câștigul JP Morgan se va întâmpla în aceeași zi după ziua inaugurării imediat după cea
+
+37
+00:03:11,040 --> 00:03:12,020
+mai mare pierdere.
+
+38
+00:03:12,240 --> 00:03:22,920
+Dar dacă ne uităm la Citigroup mageddon clar că se vinde dacă ne uităm la Citigroup ei au 2011 6 mai și 2000 11 la
+
+39
+00:03:22,920 --> 00:03:31,110
+al nouălea ca fiind foarte aproape unul celuilalt este cel mai rău întoarcere și cea mai bună întoarcere și ceva
+
+40
+00:03:31,590 --> 00:03:34,540
+important sa întâmplat la acel moment.
+
+41
+00:03:34,650 --> 00:03:35,990
+Defapt da.
+
+42
+00:03:36,420 --> 00:03:43,200
+Dacă veți ajunge la Googling, cum ar fi Citigroup în 2011, ar trebui să obțineți niște știri care arată în acest fel în cazul în
+
+43
+00:03:43,200 --> 00:03:48,120
+care Citigroup anunță o împărțire a acțiunilor inversate și în esență ceea ce sa întâmplat în acel moment.
+
+44
+00:03:48,450 --> 00:03:55,330
+Și puteți observa că a fost efectivă la data de 6 mai 2011 ce fel de linie cu datele noastre aici.
+
+45
+00:03:55,890 --> 00:03:56,160
+In regula.
+
+46
+00:03:56,160 --> 00:03:56,880
+Deci este destul de cool.
+
+47
+00:03:56,880 --> 00:04:03,330
+De fapt, putem să corelem sau să vedem evenimente din viața reală care afectează prețurile acțiunilor noastre în datele pe care le avem în
+
+48
+00:04:03,330 --> 00:04:06,270
+cadrul nostru de date care este un fel de interesant.
+
+49
+00:04:06,360 --> 00:04:11,220
+Acum, dacă continuăm acolo unde vrem să facem este să aruncăm o privire la abaterea standard a randamentelor
+
+50
+00:04:11,220 --> 00:04:15,990
+și care ar fi clasificați ca fiind cel mai riscant pe întreaga perioadă de timp și pe
+
+51
+00:04:15,990 --> 00:04:19,040
+care l-ați clasifica drept cel mai riscant pentru anul 2015.
+
+52
+00:04:19,380 --> 00:04:25,320
+Deci, uneori, o măsurare de bază a riscului necesită riscul unui stoc este deviația standard
+
+53
+00:04:25,320 --> 00:04:26,700
+a randamentelor stocului.
+
+54
+00:04:26,700 --> 00:04:31,200
+Deci, dacă aveți o abatere standard foarte mare a randamentelor, înseamnă că stocul dvs. crește în sus și
+
+55
+00:04:31,530 --> 00:04:33,880
+în jos mult față de o mică deviere Steria.
+
+56
+00:04:33,900 --> 00:04:35,790
+Înseamnă că prețul dvs. este destul de constant.
+
+57
+00:04:35,790 --> 00:04:39,270
+Deci, dacă aveți o deviație standard înaltă, stocul dvs. este probabil destul de riscant.
+
+58
+00:04:39,780 --> 00:04:41,970
+Să mergem mai departe și să vedem dacă putem face asta.
+
+59
+00:04:42,030 --> 00:04:43,100
+De fapt este destul de simplu.
+
+60
+00:04:43,110 --> 00:04:47,930
+Poți să spui că se întoarce și de fapt o să pun asta în celulă chiar aici.
+
+61
+00:04:47,940 --> 00:04:52,440
+Returnează SDD pentru deviația standard și obținem ceva care arată astfel.
+
+62
+00:04:52,440 --> 00:04:59,130
+Practic, deviația standard pentru fiecare stoc și se pare că cel mai riscant general este
+
+63
+00:04:59,250 --> 00:05:00,640
+de fapt Citigroup.
+
+64
+00:05:00,690 --> 00:05:01,860
+Și mai târziu vom vedea de ce.
+
+65
+00:05:01,860 --> 00:05:10,500
+Pentru că a avut un accident imens și până în 2015 putem merge mai departe și spunem că întoarcerea în ceea ce
+
+66
+00:05:10,500 --> 00:05:14,530
+ne propunem este să aflăm dacă ne uităm la cap.
+
+67
+00:05:14,820 --> 00:05:19,770
+Vrem să obținem valori numai pentru 2015 și asta se bazează pe index.
+
+68
+00:05:20,010 --> 00:05:29,710
+În sensul că vreau să apuc de fapt o secțiune sau o felie a indexului și o pot folosi folosind
+
+69
+00:05:29,730 --> 00:05:41,390
+I X și o să trec de la 2015 0 1 0 1 deci de la 1 ianuarie 2015 ca o felie până la 2015.
+
+70
+00:05:41,460 --> 00:05:46,960
+Doisprezece treizeci și una este o felie și apoi apelați deviația standard de pe asta.
+
+71
+00:05:47,550 --> 00:05:52,980
+Și veți observa că în 2015, care este cu mult în afara prăbușirii Citigroup, de
+
+72
+00:05:52,980 --> 00:05:59,940
+fapt, toți au un profil de risc foarte asemănător, Fargo fals fiind cel mai scăzut risc prin nu atât de mult.
+
+73
+00:06:00,420 --> 00:06:07,860
+Și se pare că Morgan Stanley sau Bank of America sunt cel mai mare risc, dar, în esență, abaterile standard
+
+74
+00:06:07,860 --> 00:06:10,990
+sunt extrem de apropiate una de cealaltă.
+
+75
+00:06:11,040 --> 00:06:17,530
+OK, pe urmă am vrut să spunem să creeze un complot folosind seaborne de întoarcere pentru Morgan Stanley din 2015.
+
+76
+00:06:17,610 --> 00:06:19,160
+Să mergem mai departe și să facem asta.
+
+77
+00:06:19,230 --> 00:06:26,700
+Putem merge mai departe și să spunem de îndată ce am crezut că acest complot vreau să revin la Morgan Stanley în
+
+78
+00:06:27,150 --> 00:06:32,690
+2015 când ieșim să copiem acest cod aici și acesta este întoarcerea mea din 2015.
+
+79
+00:06:32,790 --> 00:06:41,820
+Și apoi vreau doar Morgan Stanley sensul că vreau doar coloana de întoarcere M-S și putem merge
+
+80
+00:06:41,820 --> 00:06:49,920
+mai departe și să culoarea acestui verde doar pentru a se potrivi cu prelegerea soluțiilor.
+
+81
+00:06:50,070 --> 00:06:54,810
+Și să mergem mai departe și să mărim dimensiunea coșului de gunoi sau numărul de containere mă scuză, deoarece de fapt avem destulă
+
+82
+00:06:54,810 --> 00:06:55,640
+cantitate de date.
+
+83
+00:06:55,650 --> 00:07:02,040
+Așa că am să merg mai departe și să spun că binsul este egal cu ceva de genul să spunem doar 50.
+
+84
+00:07:02,130 --> 00:07:02,480
+In regula.
+
+85
+00:07:02,520 --> 00:07:07,800
+Și acum avem o distribuție a veniturilor pentru Morgan Stanley în anul 2015.
+
+86
+00:07:07,800 --> 00:07:12,210
+În regulă, aici putem vedea până la întoarcerea M-S și distribuția în măsura în care ceea ce privim
+
+87
+00:07:12,210 --> 00:07:13,710
+este că este destul de stabil.
+
+88
+00:07:13,710 --> 00:07:20,730
+V-ați uitat la procente care se abat de la aproximativ 6 la sută față de media, dar
+
+89
+00:07:20,730 --> 00:07:27,450
+vom merge mai departe și facem acum este de a verifica un grafic de distribuție folosind
+
+90
+00:07:27,450 --> 00:07:35,570
+seaborne de întoarce 2008 pentru Citigroup, care a fost un an destul de volatil pentru ei nord pentru a face
+
+91
+00:07:35,640 --> 00:07:47,100
+acest lucru va merge mai departe și spune seaborne acest complot sau Sonesta acest complot întoarce IX și voi merge mai departe și felie și copiați acest lucru,
+
+92
+00:07:47,100 --> 00:07:48,840
+dar în loc de
+
+93
+00:07:52,000 --> 00:08:00,960
+2015 vom merge mai departe și a pus în 2008 vom face același lucru aici 2008 și apoi vrem coloana C retur.
+
+94
+00:08:01,220 --> 00:08:07,110
+Nu mergeți mai departe și colorați acest roșu, astfel încât să putem spune o diferență aici și voi merge mai departe și voi
+
+95
+00:08:07,200 --> 00:08:08,460
+stabili binul egal cu.
+
+96
+00:08:08,820 --> 00:08:11,480
+Să mergem mai departe și să spunem din nou 50.
+
+97
+00:08:12,130 --> 00:08:17,490
+Și dacă am rula acest lucru dacă mergem și comparați acest lucru veți observa că abaterea standard
+
+98
+00:08:17,490 --> 00:08:22,590
+este de fapt destul de mult mai întins, mai ales aici sunteți aproape că punctele 6.
+
+99
+00:08:22,650 --> 00:08:30,180
+Și dacă ne uităm înapoi pentru un fel de an normal pentru o bancă 2015, Europa de la punctul 0 6 este de fapt de 10 ori
+
+100
+00:08:30,180 --> 00:08:30,980
+mai mare.
+
+101
+00:08:31,140 --> 00:08:37,950
+În ceea ce privește această distribuție, extremele de aici sunt destul de mult și vom merge mai departe și vom explora
+
+102
+00:08:37,950 --> 00:08:41,130
+ce sa întâmplat cu Citigroup în cursul acestui an.
+
+103
+00:08:41,130 --> 00:08:47,610
+Dar acesta este un fel de indicatie aici a crizei financiare pe care a trecut stocul.
+
+104
+00:08:47,690 --> 00:08:48,150
+In regula.
+
+105
+00:08:48,360 --> 00:08:52,430
+Deci, vom face mai multe vizualizări și multe dintre proiectele acestui proiect s-au concentrat asupra vizualizărilor și
+
+106
+00:08:52,800 --> 00:08:56,790
+puteți să vă simțiți liberi să folosiți oricare dintre bibliotecile dvs. de vizualizare preferate pentru a
+
+107
+00:08:56,790 --> 00:08:58,300
+recrea parcelele descrise mai jos.
+
+108
+00:08:58,350 --> 00:09:02,940
+Veți fi în măsură să le facă de fapt, fie cu mai multe lib plotline și manșetă, sau chiar
+
+109
+00:09:02,940 --> 00:09:06,840
+doar panderers, astfel încât să puteți merge mai departe și alege orice metodă vă place.
+
+110
+00:09:06,840 --> 00:09:10,710
+Voi ieși și vă voi arăta câteva modalități de a face fiecare complot și vă
+
+111
+00:09:10,710 --> 00:09:14,220
+vom arăta cum să folosiți manșoanele Paulian pentru a face aceste parcele bine.
+
+112
+00:09:14,370 --> 00:09:19,500
+În regulă, după ce ați efectuat acele importuri, dorim să ieșim și să facem să creați un grafic de
+
+113
+00:09:19,500 --> 00:09:22,990
+complot în prețuri apropiate pentru fiecare bancă sau întreg indexul de timp.
+
+114
+00:09:23,130 --> 00:09:27,480
+Și au existat câteva sugestii aici, fie să încercați să utilizați o buclă sau pentru a utiliza metoda secțiunii transversale
+
+115
+00:09:27,480 --> 00:09:29,520
+pentru a obține o secțiune transversală a datelor.
+
+116
+00:09:29,640 --> 00:09:32,520
+Și aici putem vedea ambele metode la joc.
+
+117
+00:09:32,520 --> 00:09:35,110
+Să mergem înainte și să arătăm prima metodă pentru buclă.
+
+118
+00:09:35,400 --> 00:09:41,220
+Și, sperăm că acum este clar că, folosind Citigroup, văzând că verde, acest accident imens din 2008 a
+
+119
+00:09:41,520 --> 00:09:46,970
+trebuit să facă până când abaterea lor standard a fost destul de mare pentru acel an.
+
+120
+00:09:47,490 --> 00:09:49,960
+Dar oricum se va întoarce la buclă.
+
+121
+00:09:50,400 --> 00:09:57,540
+Am de gând să merg și să spun pentru o bifați în ticker lui care amintesc este faptul că lista de bursa de
+
+122
+00:09:57,540 --> 00:10:07,170
+valori apel stocurile bancare bifați prețul de închidere și apoi pur și simplu mergeți mai departe și complot acest lucru și am de gând să complot acest out am de
+
+123
+00:10:07,170 --> 00:10:10,720
+gând să specificați faptul că eticheta este egală cu bifarea.
+
+124
+00:10:10,940 --> 00:10:13,760
+Acum știm ce linie este care, în ceea ce privește culorile.
+
+125
+00:10:13,860 --> 00:10:19,930
+Și apoi voi determina ca mărimea lui Fig să fie întinsă puțin, așa că putem obține aceeași
+
+126
+00:10:20,760 --> 00:10:22,940
+vizualizare pe care o avem aici.
+
+127
+00:10:22,980 --> 00:10:31,040
+Și în cele din urmă o să sun legenda pentru a vedea legenda și dacă alerg că am același complot.
+
+128
+00:10:31,050 --> 00:10:37,800
+Arată ceva de genul acesta, astfel încât să vedem clar că Citigroup tocmai sa prăbușit după recesiunea
+
+129
+00:10:38,310 --> 00:10:39,360
+din 2008.
+
+130
+00:10:39,480 --> 00:10:44,820
+Și ceea ce este interesant este și această linie de culoare roșie Goldman Sachs, care seamănă cu scamele
+
+131
+00:10:44,820 --> 00:10:47,550
+și apoi se întoarce destul de repede după recesiune.
+
+132
+00:10:47,750 --> 00:10:52,020
+Și trebuie să măriți mai departe pentru a vedea celelalte bănci și a vedea cum efectuează.
+
+133
+00:10:52,200 --> 00:10:58,470
+Dar, relativ vorbind, nu a fost aproape același efect ca celelalte stocuri
+
+134
+00:10:58,500 --> 00:11:08,060
+să mergem mai departe și să vă arătăm cum să facem acest lucru avem o secțiune transversală ar fi
+
+135
+00:11:08,130 --> 00:11:20,790
+putut spune că stocurile bancare opresc accesul cu cheie egală cu accesul apropiat egal cu unul și noi "uita-te la coloanele spun nivelul este stoc informații.
+
+136
+00:11:20,820 --> 00:11:22,460
+Și dacă ne uităm la asta.
+
+137
+00:11:22,650 --> 00:11:25,600
+Aceasta este în esență toate prețurile de închidere pentru stocuri.
+
+138
+00:11:25,620 --> 00:11:30,710
+Apoi, ceea ce trebuie să facem acolo este doar un complot și ai același complot.
+
+139
+00:11:30,930 --> 00:11:35,490
+Deci, în loc de a face o buclă pentru puteți face acest lucru toate într-o singură linie folosind o secțiune transversală.
+
+140
+00:11:35,580 --> 00:11:40,260
+Și din nou, puteți schimba dimensiunea figurinei și puteți efectua orice comenzi de buclă de plotare pe care doriți să le compilați pe complot.
+
+141
+00:11:41,370 --> 00:11:47,160
+În cele din urmă, să mergem mai departe și să arătăm complotul modul de a face acest lucru, care este, în esență, doar
+
+142
+00:11:47,760 --> 00:11:49,560
+aceeași linie care creează cadrul de date.
+
+143
+00:11:49,950 --> 00:11:57,090
+Dar atunci tu suni pe care mi-o complot și manșeta vă va permite acum să creați acest complot foarte frumos, în care să
+
+144
+00:11:57,090 --> 00:12:01,940
+puteți vizualiza lucrurile și să vedeți de fapt valorile și felul de joc cu el.
+
+145
+00:12:01,950 --> 00:12:06,990
+Deci, dacă vreți să vă apropiați de acțiunile non-Citigroup sau Goldman Sachs, puteți ieși și faceți
+
+146
+00:12:06,990 --> 00:12:12,240
+asta doar prin apucarea unei secțiuni transversale și apoi verificarea scufundărilor, astfel încât să puteți vedea scăderea
+
+147
+00:12:12,390 --> 00:12:18,810
+aici și în timpul crizei financiare ca un comportament ciudat în timpul unor lucruri cum ar fi împărțirea de acțiuni, cum
+
+148
+00:12:18,810 --> 00:12:20,820
+ar fi cea din luna mai.
+
+149
+00:12:20,820 --> 00:12:21,290
+In regula.
+
+150
+00:12:21,450 --> 00:12:25,860
+Deci, acest lucru face foarte distractiv să se joace în jurul valorii de date și fel de a explora
+
+151
+00:12:25,860 --> 00:12:27,340
+prețurile acțiunilor în timpul crizei financiare.
+
+152
+00:12:27,440 --> 00:12:31,300
+Vom merge mai departe și vom face trecerea la mediile în mișcare.
+
+153
+00:12:31,590 --> 00:12:35,960
+Și vom analiza mediile mobile ale stocurilor în anul 2008.
+
+154
+00:12:36,000 --> 00:12:40,650
+Deci, primul lucru pe care trebuie să-l facem este să comparăm durata medie de 30 de zile
+
+155
+00:12:40,650 --> 00:12:44,330
+cu prețul de închidere al acțiunii Bank of America pentru anul 2008.
+
+156
+00:12:44,340 --> 00:12:46,560
+Să mergem mai departe și să arătăm cum putem face asta.
+
+157
+00:12:46,590 --> 00:12:53,170
+Voi spune B A C și verificați capul numărului B A C.
+
+158
+00:12:53,180 --> 00:12:56,570
+Acesta a fost primul meu cadru original de date pentru Bank of America.
+
+159
+00:12:56,580 --> 00:13:02,070
+Înainte de a ne pune de fapt în acțiuni bancare subliniază și apoi de gând
+
+160
+00:13:02,070 --> 00:13:10,590
+să apucă apelul aproape le off de faptul că și am de gând să utilizeze metoda IX pentru a merge mai departe și felie
+
+161
+00:13:10,590 --> 00:13:14,430
+datele pe care vreau și vreau 2008 ianuarie 1 tot drumul
+
+162
+00:13:16,890 --> 00:13:18,420
+2009 1 ianuarie.
+
+163
+00:13:18,480 --> 00:13:19,800
+Deci, un an întreg.
+
+164
+00:13:20,310 --> 00:13:24,710
+Și apoi ceea ce vrem să facem este să folosim metoda de rulare.
+
+165
+00:13:25,920 --> 00:13:35,220
+Prin urmare, Panas are capacitatea de a vă oferi o metodă de rulare pentru o medie în mișcare și apoi putem spune ca metoda
+
+166
+00:13:37,620 --> 00:13:38,220
+noastră.
+
+167
+00:13:38,220 --> 00:13:45,330
+Și apoi putem să mergem înainte și să complotăm acest lucru și de fapt, putem complotul acesta cu o etichetă, astfel încât să putem arăta la ce
+
+168
+00:13:46,530 --> 00:13:47,240
+ne uităm.
+
+169
+00:13:47,240 --> 00:13:55,410
+Așa că vom intra și vom spune că este o medie de 30 de zile ca o etichetă și următorul lucru pe
+
+170
+00:13:55,410 --> 00:14:03,180
+care îl vom face este că vom face doar acel lucru să vedem aproape, dar în acest caz toți au complot
+
+171
+00:14:03,180 --> 00:14:04,520
+împotriva stocului Preț.
+
+172
+00:14:04,590 --> 00:14:16,600
+Așa că spuneți că complotul și această etichetă vor fi aproape BAMC și atunci vom numi PLDT acea legendă.
+
+173
+00:14:17,790 --> 00:14:21,900
+Deci, dacă vom rula doar că vom obține un complot care arată astfel și
+
+174
+00:14:21,900 --> 00:14:29,310
+putem merge mai departe și să ne întindem dacă vom dori să spunem că Piazzi figura mare și putem spune că este ceva mai frumos cum am
+
+175
+00:14:29,600 --> 00:14:35,700
+spus înainte de a fi bun de o întindere afară și există media dvs. de 30 de zile în mișcare față de
+
+176
+00:14:35,700 --> 00:14:36,960
+prețul de închidere reală.
+
+177
+00:14:36,960 --> 00:14:41,620
+Acest lucru vă permite să vedeți tendința generală a stocului pe măsură ce merge.
+
+178
+00:14:41,670 --> 00:14:47,010
+Și poți schimba această fereastră ca medie mobilă săptămânală sau mediu mobil de 60 de zile, indiferent de
+
+179
+00:14:47,010 --> 00:14:47,740
+ce vrei.
+
+180
+00:14:48,150 --> 00:14:52,860
+În fine, următorul lucru pe care doriți să îl faceți este să creați o hartă termică a corelației dintre
+
+181
+00:14:52,950 --> 00:14:54,660
+aceste valori de închidere a stocurilor.
+
+182
+00:14:54,690 --> 00:14:56,520
+Să mergem mai departe și să vă arătăm cum putem face asta.
+
+183
+00:14:56,550 --> 00:15:04,710
+Puteți să-l sunați pe Asinus pe hartă de căldură și acum vrem să obținem o corelare a stocului de preț de închidere.
+
+184
+00:15:04,800 --> 00:15:09,580
+Să mergem mai departe și doar hash tag-ul care afară și de fapt, să construiască acest cadru de date în primul rând.
+
+185
+00:15:09,990 --> 00:15:12,120
+Va fi foarte asemănător cu ceea ce ați făcut înainte.
+
+186
+00:15:12,210 --> 00:15:21,230
+Vom ieși și vom lua secțiunea transversală a prețurilor de închidere, spunând că aproape de X este egal cu 1.
+
+187
+00:15:21,540 --> 00:15:23,730
+Nivelul este informații stoc și
+
+188
+00:15:27,500 --> 00:15:29,440
+dacă verificăm doar asta.
+
+189
+00:15:29,820 --> 00:15:33,090
+Asta e doar prețul de închidere al acțiunilor.
+
+190
+00:15:33,090 --> 00:15:39,240
+Și dacă spun că îmi dă corelația.
+
+191
+00:15:39,240 --> 00:15:43,430
+Și acum am ceva într-o formă de matrice pe care o pot numi pe harta căldurii.
+
+192
+00:15:43,730 --> 00:15:51,450
+Așa că am de gând să merg mai departe și să fiu dezbrăcată de asta și să spun hartă de căldură aici și să-mi verific harta de căldură.
+
+193
+00:15:52,470 --> 00:16:00,320
+Și acum am harta mea de căldură și dacă vreau adnotările actuale pe care le pot spune și este egală cu adevărat și atunci vom
+
+194
+00:16:00,330 --> 00:16:05,310
+merge mai departe și vom pune în adnotări aici și aici vom vedea corelația dintre prețurile
+
+195
+00:16:05,310 --> 00:16:12,630
+de închidere ale stocurilor din ceva ce putem face în mod opțional, precum și folosirea hărților cluster pentru a clustera aceste corelații împreună,
+
+196
+00:16:12,630 --> 00:16:17,550
+poate fi de ajutor, făcând-o puțin mai clară cu privire la ceea ce se întâmplă.
+
+197
+00:16:18,060 --> 00:16:24,660
+Deci, într-un fel de hartă de căldură tot ce trebuie să faceți este să tastați harta cluster și să rulați acest lucru ar trebui să obțineți o mulțime
+
+198
+00:16:24,660 --> 00:16:26,080
+care arată ceva de genul asta.
+
+199
+00:16:26,280 --> 00:16:34,920
+Se pare că Seaborne a încercat să reunească împreună Citigroup Morgan Stanley și Bank of America
+
+200
+00:16:34,920 --> 00:16:39,580
+și corelația lor în grup, precum și aur.
+
+201
+00:16:39,600 --> 00:16:45,030
+Goldman Sachs J. P. Morgan și Wells Fargo într-un alt grup au un
+
+202
+00:16:45,030 --> 00:16:46,400
+fel de corelație unul cu celălalt.
+
+203
+00:16:46,410 --> 00:16:46,990
+In regula.
+
+204
+00:16:47,220 --> 00:16:51,060
+Aveți posibilitatea să verificați care sunt parcelele care sunt cele mai corelate sau dacă sunt reciproc.
+
+205
+00:16:51,060 --> 00:17:00,750
+Se pare că sunt JPMorgan și Wells Fargo, precum și Morgan Stanley și Bank of America.
+
+206
+00:17:00,750 --> 00:17:01,400
+O.K.
+
+207
+00:17:01,770 --> 00:17:04,490
+Așa a fost pentru proiectul financiar.
+
+208
+00:17:04,500 --> 00:17:09,090
+Există o parte două opționale, care va arăta în partea a treia a prelegerilor soluții și care are mai
+
+209
+00:17:09,090 --> 00:17:15,240
+mult de făcut dacă am complot și unele dintre capabilitățile speciale ale butoanelor, dar datorită dependenței sale mari de manșetă este un fel de lucru
+
+210
+00:17:15,270 --> 00:17:19,740
+opțional pe care îl puteți de a explora pe cont propriu în cazul în care o parte din
+
+211
+00:17:19,740 --> 00:17:21,420
+această funcționalitate este rupt în viitor.
+
+212
+00:17:21,420 --> 00:17:22,860
+Dar sper că vă bucurați de acest proiect.
+
+213
+00:17:22,860 --> 00:17:29,280
+Aceasta a fost menită să fie extrem de provocatoare și dificilă, dar acest lucru este un fel de natura stocului și
+
+214
+00:17:29,280 --> 00:17:30,060
+analiza financiară.
+
+215
+00:17:30,180 --> 00:17:33,360
+Ce fel de lucru vei întâlni dacă ești interesat de ceva.
+
+216
+00:17:33,570 --> 00:17:38,010
+Deci, multe dintre aceste lucruri sunt destul de complicate și grele, dar sperăm că puteți vedea că ceea
+
+217
+00:17:38,010 --> 00:17:43,290
+ce vă simțiți într-adevăr foarte confortabil din pandas și seaborne este ca aceste lucruri să devină mult mai ușor decât dacă ar
+
+218
+00:17:43,290 --> 00:17:48,660
+fi trebuit să le faceți, de exemplu, în Excel sau într-o altă limbă de programare pentru multe dintre aceste răspunsuri, cu doar câteva
+
+219
+00:17:48,660 --> 00:17:51,220
+linii de cod sau chiar o singură linie de cod.
+
+220
+00:17:51,280 --> 00:17:56,640
+Și ceea ce este foarte cool este faptul că puteți face așa ceva într-o singură linie de cod,
+
+221
+00:17:56,640 --> 00:18:01,730
+astfel încât să puteți impresiona cu siguranță colegii sau prietenii dvs., arătându-le propria analiză a proiectelor financiare.
+
+222
+00:18:01,770 --> 00:18:02,300
+O.K.
+
+223
+00:18:02,520 --> 00:18:03,860
+Sper că v-ați bucurat de acest proiect.
+
+224
+00:18:03,900 --> 00:18:08,510
+Venind în partea a treia vom trece peste secțiunea opțională a acestor soluții.
+
+225
+00:18:08,730 --> 00:18:10,680
+Multumesc tuturor si te voi vedea la urmatoarea conferinta

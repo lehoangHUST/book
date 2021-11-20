@@ -1,0 +1,679 @@
+1
+00:00:05,400 --> 00:00:10,170
+Olá a todos e seja bem vindo às operações, leia esta palestra, vamos apenas rever
+
+2
+00:00:10,170 --> 00:00:15,090
+algumas das operações mais importantes para os pandas, além de aprender algumas operações úteis que
+
+3
+00:00:15,090 --> 00:00:15,930
+ainda não passamos.
+
+4
+00:00:16,290 --> 00:00:19,850
+Vamos em frente e salte para o caderno Jupiter para começar.
+
+5
+00:00:19,860 --> 00:00:20,160
+Tudo bem.
+
+6
+00:00:20,160 --> 00:00:22,020
+Aqui estou no caderno de Jupiter.
+
+7
+00:00:22,020 --> 00:00:26,520
+Fui em frente e acabei de copiar a primeira célula da operação é o livro que acompanha
+
+8
+00:00:26,850 --> 00:00:28,830
+essa palestra para criar esse quadro de dados.
+
+9
+00:00:28,830 --> 00:00:30,060
+Apenas tem três colunas.
+
+10
+00:00:30,060 --> 00:00:37,940
+Ligue para 1 chamada para ligar 3 e tem um índice de apenas números 0 1 2 3 e ligue 1 nós temos 4 dígitos e
+
+11
+00:00:37,940 --> 00:00:38,520
+chamamos 2.
+
+12
+00:00:38,700 --> 00:00:40,550
+Temos quatro números aqui.
+
+13
+00:00:40,680 --> 00:00:46,460
+Mas observe que 4 4 ​​4 é repetido e, em seguida, ligue para 3, temos apenas quatro conjuntos de cordas.
+
+14
+00:00:46,470 --> 00:00:49,780
+Vamos falar sobre encontrar valores únicos em um quadro de dados.
+
+15
+00:00:49,800 --> 00:00:56,460
+Existem três principais métodos úteis relacionados com a busca de valores únicos em um quadro de dados.
+
+16
+00:00:56,460 --> 00:01:00,570
+Imagine que você queria encontrar todos os valores únicos na coluna dois.
+
+17
+00:01:00,690 --> 00:01:07,590
+O método que podemos usar para isso é apenas o método exclusivo e isso retornará uma taxa mais alta de todos
+
+18
+00:01:07,590 --> 00:01:13,110
+os valores exclusivos na coluna dois em vez de realmente querer a matriz de valores exclusivos.
+
+19
+00:01:13,110 --> 00:01:16,960
+Digamos que você realmente deseja o número de valores em si.
+
+20
+00:01:16,980 --> 00:01:18,600
+Bem, existem dois métodos para isso.
+
+21
+00:01:18,630 --> 00:01:24,930
+Você poderia apenas verificar o comprimento da matriz que retorna e o tipo de resposta a 3 ou 3 valores
+
+22
+00:01:24,930 --> 00:01:26,210
+exclusivos na coluna 2.
+
+23
+00:01:26,580 --> 00:01:31,740
+Mas o Halo tem um método incorporado para isso e é único e único.
+
+24
+00:01:31,770 --> 00:01:34,670
+E se eu executar a célula, recebo a mesma resposta.
+
+25
+00:01:34,740 --> 00:01:35,190
+Tudo bem.
+
+26
+00:01:35,280 --> 00:01:36,600
+Então, nós somos únicos.
+
+27
+00:01:37,110 --> 00:01:40,750
+Para o retorno real de uma série de valores únicos e únicos.
+
+28
+00:01:41,010 --> 00:01:46,890
+Se eu quiser o número de valores únicos, a função menos útil que eu quero mostrar é contagem de valor.
+
+29
+00:01:46,950 --> 00:01:52,470
+E isso basicamente significa que se você quiser uma tabela dos valores exclusivos e quantas
+
+30
+00:01:52,470 --> 00:01:57,300
+vezes eles aparecem, você pode usar apenas o valor de sublinhado como um método.
+
+31
+00:01:57,420 --> 00:02:00,440
+Execute isso e isso retorna.
+
+32
+00:02:00,660 --> 00:02:03,980
+Quantas vezes cada valor exclusivo ocorreu nessa coluna.
+
+33
+00:02:04,010 --> 00:02:09,810
+Nesse caso, 4 4 4 ocorrem duas vezes e os outros números ocorreram uma vez cada.
+
+34
+00:02:09,810 --> 00:02:14,490
+Tudo bem, esses são três métodos muito úteis e você vai se encontrar usando eles frequentemente nos exercícios.
+
+35
+00:02:15,210 --> 00:02:18,390
+Avançemos e falamos sobre a seleção de dados.
+
+36
+00:02:18,480 --> 00:02:24,300
+Nós já superamos a seleção condicional, mas eu quero ressaltar o quão importante é e
+
+37
+00:02:24,300 --> 00:02:26,420
+quão poderoso é como uma ferramenta.
+
+38
+00:02:26,610 --> 00:02:33,810
+Nós temos nosso quadro de dados DMF e podemos usar a seleção condicional passando em uma declaração de seleção
+
+39
+00:02:33,810 --> 00:02:41,160
+condicional, como dizer retornar o T. F. onde a coluna 1 é maior que 2.
+
+40
+00:02:41,250 --> 00:02:46,410
+E isso retornará todas as linhas do quadro de dados onde a coluna 1 é maior que 2.
+
+41
+00:02:46,500 --> 00:02:53,920
+Lembre-se de que este comando dentro é essencialmente apenas uma série booleana de False False True true.
+
+42
+00:02:54,000 --> 00:03:00,630
+Agora, como um lembrete rápido se você quiser combinar condições, você pode enrolar essas condições entre parênteses e, em seguida, usar
+
+43
+00:03:02,070 --> 00:03:05,090
+um comercial e comercial ou um operador de tubulação.
+
+44
+00:03:05,220 --> 00:03:07,140
+Penny se você quiser e ou ou.
+
+45
+00:03:07,410 --> 00:03:15,090
+E então você pode dizer em outras condições, como, por exemplo, onde o chamado para o envio de uma string tem
+
+46
+00:03:15,090 --> 00:03:21,600
+uma qualidade com 4 4 4 e o retorno apenas da última linha 3 e lá está.
+
+47
+00:03:21,900 --> 00:03:23,000
+ESTÁ BEM.
+
+48
+00:03:23,000 --> 00:03:26,640
+Então, apenas uma lembrete rápido de como selecionar dados usando a seleção condicional.
+
+49
+00:03:26,910 --> 00:03:33,030
+Agora, vamos falar sobre o método aplicado, o método aplicado será uma das ferramentas mais poderosas no
+
+50
+00:03:33,120 --> 00:03:35,180
+cinto da ferramenta ao usar panderers.
+
+51
+00:03:35,400 --> 00:03:38,080
+Então vamos sair e mostrar-lhe como funciona.
+
+52
+00:03:38,190 --> 00:03:52,640
+Magin temos uma função DPF vezes 2 que leva um valor X e depois retorna digamos X vezes 2.
+
+53
+00:03:52,650 --> 00:03:54,920
+Tudo bem, uma função muito simples.
+
+54
+00:03:55,020 --> 00:04:01,740
+Agora você sabe que você já pode pegar por exemplo uma coluna e chamar uma função incorporada fora dela,
+
+55
+00:04:01,890 --> 00:04:05,660
+como a soma e que retornam a soma da coluna.
+
+56
+00:04:05,700 --> 00:04:10,270
+Mas e se você quiser aplicar sua própria função personalizada, como horários muito bons.
+
+57
+00:04:10,320 --> 00:04:11,840
+Tem a capacidade de fazer isso.
+
+58
+00:04:11,880 --> 00:04:18,300
+Você pode simplesmente dizer o nome da coluna e, em seguida, aplicar e, em seguida, você apenas
+
+59
+00:04:18,300 --> 00:04:25,830
+passa em qualquer função que você deseja aplicar este caso, vamos seguir em frente e aplicar vezes e isso transmitirá
+
+60
+00:04:25,830 --> 00:04:29,990
+essa função para cada elemento nessa coluna 2 4 6 8.
+
+61
+00:04:30,000 --> 00:04:33,040
+Você também pode aplicar funções incorporadas, como o comprimento.
+
+62
+00:04:33,120 --> 00:04:37,820
+Por exemplo, se olharmos a coluna três, tivemos um monte de cordas.
+
+63
+00:04:37,860 --> 00:04:41,370
+Digamos que queríamos uma coluna que estava presente no comprimento de cada corda.
+
+64
+00:04:41,370 --> 00:04:47,520
+isso retorna o comprimento do fluxo que neste caso era 3 para todas essas strings se aplicam.
+
+65
+00:04:47,520 --> 00:04:50,880
+Bem, então, poderíamos simplesmente dizer se candidatar pessoalmente Elyon e
+
+66
+00:04:50,880 --> 00:04:54,530
+Vai ser especialmente poderoso quando você combina isso com expressões de terra.
+
+67
+00:04:54,570 --> 00:04:58,030
+Dessa forma, você não precisa demorar o tempo todo para definir uma função inteira.
+
+68
+00:04:58,050 --> 00:05:02,580
+Se você acabou de aplicá-lo uma vez, por exemplo, vamos seguir em frente e fazer uma expressão de
+
+69
+00:05:02,580 --> 00:05:03,700
+lâmpada fora dos tempos 2.
+
+70
+00:05:03,870 --> 00:05:12,960
+Eu vou sair e dizer Lamda X colon e, em seguida, apenas x vezes 2 Eu vou aplicar isso
+
+71
+00:05:12,990 --> 00:05:13,920
+para chamá-lo.
+
+72
+00:05:14,370 --> 00:05:16,160
+Vamos continuar e ver como isso funciona.
+
+73
+00:05:16,820 --> 00:05:17,600
+E lá você tem isso.
+
+74
+00:05:17,680 --> 00:05:23,050
+Conseguimos multiplicar cada valor nessa coluna por dois e conseguimos fazer isso sem ter que
+
+75
+00:05:23,040 --> 00:05:25,220
+escrever uma função inteira para ele.
+
+76
+00:05:25,240 --> 00:05:29,340
+Nós apenas fizemos isso como uma expressão de cordeiro e esse é o tipo de coisa que você vai usar o tempo
+
+77
+00:05:29,340 --> 00:05:31,830
+todo à medida que você ficar cada vez mais à vontade com os pandas.
+
+78
+00:05:31,830 --> 00:05:36,150
+Este é provavelmente um dos recursos mais poderosos de pantless, a capacidade de aplicar suas
+
+79
+00:05:36,150 --> 00:05:38,280
+próprias expressões ou funções personalizadas de lambda.
+
+80
+00:05:38,280 --> 00:05:42,680
+Tudo bem, vamos falar sobre remover Combs novamente.
+
+81
+00:05:42,690 --> 00:05:46,110
+Se tivermos, se quisermos dizer, remover.
+
+82
+00:05:46,120 --> 00:05:47,580
+Coluna um.
+
+83
+00:05:47,580 --> 00:05:55,360
+Podemos simplesmente dizer que ZF deixa passar a coluna que queremos desenhar c o l 1.
+
+84
+00:05:55,380 --> 00:06:00,250
+E então lembre-se, uma vez que está nas colunas que temos de especificar o acesso é igual a 1.
+
+85
+00:06:00,570 --> 00:06:04,070
+E isso irá soltar essa coluna se quisermos que isso ocorra no lugar.
+
+86
+00:06:04,200 --> 00:06:09,580
+Nós precisamos especificar em lugar igual a verdadeiro.
+
+87
+00:06:09,720 --> 00:06:11,800
+Vamos continuar e não correr isso.
+
+88
+00:06:11,810 --> 00:06:17,790
+Portanto, nós retem nossa estrutura de dados original se desejar obter os nomes de coluna e índice fora de um quadro de dados.
+
+89
+00:06:18,090 --> 00:06:21,070
+Esses são apenas atributos da própria estrutura de dados.
+
+90
+00:06:21,370 --> 00:06:29,050
+O que significa que você pode dizer que as colunas do DF retornarão esse tipo de objeto de índice essencialmente apenas uma lista de nomes
+
+91
+00:06:29,040 --> 00:06:29,800
+de colunas.
+
+92
+00:06:29,810 --> 00:06:34,930
+Isso vai ser especialmente útil quando você está tentando indexar uma coluna e talvez o espaçamento seja estranho ou
+
+93
+00:06:34,920 --> 00:06:37,500
+você não consegue descobrir o que é a string.
+
+94
+00:06:37,500 --> 00:06:40,940
+Você pode simplesmente chamar colunas do DFA ou qualquer que seja o nome do seu quadro de dados.
+
+95
+00:06:41,040 --> 00:06:46,170
+E eu devolver esta lista de nomes de colunas e, na verdade, pode fazer o mesmo por um índice.
+
+96
+00:06:46,360 --> 00:06:49,540
+Você pode dizer o índice DFA que lhe dará informações sobre o índice.
+
+97
+00:06:49,770 --> 00:06:55,830
+Este caso, uma vez que é um índice de alcance, ele realmente apenas informa de volta a parada de início e o
+
+98
+00:06:55,830 --> 00:06:57,360
+tamanho do tamanho do índice.
+
+99
+00:06:57,370 --> 00:07:01,800
+Tudo bem, vamos falar sobre ordenar e ordenar um quadro de dados.
+
+100
+00:07:02,000 --> 00:07:07,880
+Aqui temos respiração profunda e imaginamos que deseja ordená-lo pela coluna 2.
+
+101
+00:07:08,130 --> 00:07:13,890
+Essencialmente, queremos 4 4 4 e depois 4 para 4 novamente antes de ver 5 5 5 e 6 6.
+
+102
+00:07:14,040 --> 00:07:17,330
+Podemos usar valores de ordenação para fazer isso.
+
+103
+00:07:18,150 --> 00:07:22,750
+Você chamou valores de sublinhado de DMF saur.
+
+104
+00:07:22,920 --> 00:07:28,200
+mudança aqui, podemos dizer tchau e você poderia ordenar isso fora das linhas ou das colunas.
+
+105
+00:07:28,200 --> 00:07:32,280
+E, em seguida, como um argumento que você diz, verificamos a aba de
+
+106
+00:07:32,280 --> 00:07:36,910
+Mas, essencialmente, você apenas Pessin como argumento a coluna que deseja classificar.
+
+107
+00:07:36,960 --> 00:07:43,580
+Então, eu quero classificar isso pela coluna 2 e você pode dizer apenas uma coluna para entrar assim.
+
+108
+00:07:43,600 --> 00:07:50,280
+E agora eu tenho um tipo de estado do quadro por coluna para saber como o índice permanece ligado à linha.
+
+109
+00:07:50,310 --> 00:07:52,520
+Então você nunca perde essa informação lá.
+
+110
+00:07:52,920 --> 00:07:59,220
+E é o mesmo que apenas dizer pela coluna dois, porque espera ser o
+
+111
+00:07:59,230 --> 00:08:00,350
+primeiro argumento.
+
+112
+00:08:01,020 --> 00:08:01,440
+Tudo bem.
+
+113
+00:08:01,830 --> 00:08:04,370
+Vamos falar apenas de algumas operações mais úteis.
+
+114
+00:08:04,530 --> 00:08:12,410
+Um método realmente útil para encontrar nenhum valor em seu quadro de dados é o DFT é nulo e isso retornará
+
+115
+00:08:12,410 --> 00:08:17,940
+uma base de dados de booleanos indicando se o valor era ou não nulo.
+
+116
+00:08:17,940 --> 00:08:23,340
+Neste caso, obtemos um booleano de todos os falsos porque conhecemos nulos em nosso quadro de dados.
+
+117
+00:08:23,350 --> 00:08:23,730
+Tudo bem.
+
+118
+00:08:23,740 --> 00:08:29,690
+Agora vamos finalmente falar sobre uma última função ou método em pantless chamado a tabela dinâmica.
+
+119
+00:08:29,940 --> 00:08:33,890
+E esta metodologia será realmente familiar para usuários avançados do Excel.
+
+120
+00:08:34,000 --> 00:08:40,340
+Eu vou continuar e copiar e colar algum código do livro de notas para criar um novo quadro de dados.
+
+121
+00:08:41,080 --> 00:08:44,210
+Nós saímos e verificamos o estado do quadro, temos algo que se parece com isto.
+
+122
+00:08:44,250 --> 00:08:46,820
+Nós temos um b c e d colunas.
+
+123
+00:08:47,460 --> 00:08:54,010
+E note aqui que temos valores de repetição na coluna A coluna B e na coluna C, uma
+
+124
+00:08:54,000 --> 00:08:57,850
+coluna tem Foo e as barras B têm um twos.
+
+125
+00:08:58,050 --> 00:09:04,950
+C tem X e sábio e, em seguida, D tem alguns valores inteiros, você pode usar a tabela dinâmica DFT.
+
+126
+00:09:04,950 --> 00:09:09,600
+Crie uma tabela dinâmica e se você não estiver familiarizado com as Tabelas Pivot Eu não me preocuparia com isso
+
+127
+00:09:09,960 --> 00:09:15,120
+demais, mas se você for talvez um usuário do Excel que esteja familiarizado com as Tabelas Pivot Espero que você ache essa
+
+128
+00:09:15,120 --> 00:09:15,760
+funcionalidade útil.
+
+129
+00:09:16,000 --> 00:09:21,810
+Basicamente, onde vamos fazer para não usuários do Excel é simplesmente criar um índice múltiplo desta tabela
+
+130
+00:09:22,170 --> 00:09:23,940
+ou um quadro de dados.
+
+131
+00:09:24,420 --> 00:09:33,600
+O método para fazer isso é dar uma tabela de sublinhado e a tabela de sublinhado do pivô leva em três argumentos
+
+132
+00:09:34,000 --> 00:09:37,450
+principais os valores do índice e das colunas.
+
+133
+00:09:37,500 --> 00:09:43,050
+Nesse caso, vamos em frente e indicamos que os valores que queremos em nossa tabela são esses valores.
+
+134
+00:09:43,060 --> 00:09:44,250
+Isto é o que realmente queremos.
+
+135
+00:09:44,250 --> 00:09:47,270
+Os pontos de dados do quadro de dados a serem constituídos por.
+
+136
+00:09:47,280 --> 00:09:52,140
+Então, vou dizer que os valores são iguais à coluna D.
+
+137
+00:09:53,040 --> 00:09:59,950
+E então, eu configurarei o meu índice como igual à coluna A e à coluna B e isso basicamente
+
+138
+00:09:59,940 --> 00:10:03,200
+vai fazer a e b em um índice multinível.
+
+139
+00:10:03,210 --> 00:10:09,760
+Então, a lista de passageiros, então, é mais do que um índice de coluna e B.
+
+140
+00:10:09,780 --> 00:10:14,950
+E, finalmente, eu quero que minhas colunas reais sejam definidas pela coluna C.
+
+141
+00:10:15,070 --> 00:10:21,810
+Este caso só vê que eu passo isso como uma lista aqui e notei que estou dizendo que vai ser
+
+142
+00:10:21,820 --> 00:10:22,320
+a coluna.
+
+143
+00:10:22,330 --> 00:10:25,860
+Então eu deveria terminar com uma coluna para X e uma coluna para y.
+
+144
+00:10:25,870 --> 00:10:28,360
+Vamos continuar e ver como isso funciona.
+
+145
+00:10:28,470 --> 00:10:34,390
+Eu vou executar isso mais uma vez aqui para que possamos comparar o quadro de dados original com
+
+146
+00:10:34,380 --> 00:10:36,930
+a tabela dinâmica que estou prestes a criar.
+
+147
+00:10:36,930 --> 00:10:38,970
+Tudo bem, então executei esse comando de tabela dinâmica.
+
+148
+00:10:39,180 --> 00:10:41,220
+E vamos entrar e comparar os dois.
+
+149
+00:10:41,400 --> 00:10:47,580
+Parece um índice criado fora dessas e colunas B de modo que faz sentido léxicamente uma barra e foo
+
+150
+00:10:47,590 --> 00:10:54,780
+e, em seguida, uma e duas repetidas, então as colunas reais eu quero, onde os valores neste caso apenas X e Y
+
+151
+00:10:54,780 --> 00:10:58,410
+e os valores reais do ponto de dados foram as colunas D.
+
+152
+00:10:58,600 --> 00:11:03,820
+Não, eu não tenho alguns valores aqui porque não havia valores que correspondiam a esse ponto específico.
+
+153
+00:11:04,200 --> 00:11:11,130
+Significado se eu olhei para trás no quadro de dados original não há nenhum valor que vá com barra para x.
+
+154
+00:11:11,130 --> 00:11:16,130
+Então, se você olhar aqui, você não encontrará barrer para X. você encontrará apenas a parte 2 y.
+
+155
+00:11:16,750 --> 00:11:19,550
+E de forma semelhante para alimentos para você.
+
+156
+00:11:19,600 --> 00:11:25,850
+Não há comida de por que só há comida para X e é por isso que não precisamos preencher valores aqui.
+
+157
+00:11:25,920 --> 00:11:26,500
+ESTÁ BEM.
+
+158
+00:11:26,560 --> 00:11:31,320
+Não hesite em publicar as perguntas e respostas se você tiver mais perguntas em Tabelas dinâmicas ou quiser mais
+
+159
+00:11:31,330 --> 00:11:32,950
+recursos para exemplos em Tabelas dinâmicas.
+
+160
+00:11:32,940 --> 00:11:34,870
+Nós realmente não usaremos isso muitas vezes no curso.
+
+161
+00:11:34,870 --> 00:11:39,630
+Na verdade, só há realmente uma pergunta de exercício sobre o que estamos trabalhando com mapas de calor,
+
+162
+00:11:39,630 --> 00:11:41,180
+até onde usar as tabelas dinâmicas.
+
+163
+00:11:41,250 --> 00:11:45,930
+Mas, por enquanto, apenas se preocupe com eles, se você já é familiar nas tabelas dinâmicas de
+
+164
+00:11:46,000 --> 00:11:46,970
+algo como o Excel.
+
+165
+00:11:47,110 --> 00:11:47,770
+ESTÁ BEM.
+
+166
+00:11:47,940 --> 00:11:50,100
+Espero que algumas dessas operações sejam úteis para você.
+
+167
+00:11:50,130 --> 00:11:55,340
+Eles vêem apenas uma garrafa de funções úteis e métodos que estão disponíveis para você em panas.
+
+168
+00:11:55,470 --> 00:12:01,440
+em frente e fazer referência ao livro de conferências de operações de pandas que está embaixo da pasta panderers.
+
+169
+00:12:01,470 --> 00:12:02,510
+Você pode seguir
+
+170
+00:12:02,520 --> 00:12:04,580
+Obrigado a todos e eu vou ver na próxima palestra

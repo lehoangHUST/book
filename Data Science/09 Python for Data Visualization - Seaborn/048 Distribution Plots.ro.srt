@@ -1,0 +1,1031 @@
+1
+00:00:05,040 --> 00:00:10,260
+Bună ziua tuturor și bine ați venit la cursul de distribuție pentru Seaborn în această lecție
+
+2
+00:00:10,260 --> 00:00:15,990
+vom discuta diferite tipuri de complot cu Seaborn care ne permit să vizualizăm distribuția unui set de date.
+
+3
+00:00:16,530 --> 00:00:20,170
+Să mergem înainte și să pornim la notebook-ul Jupiter pentru a începe.
+
+4
+00:00:21,270 --> 00:00:23,370
+OK aici sunt la notebook.
+
+5
+00:00:23,370 --> 00:00:29,740
+Vreau să încep prin importul pe mare și, prin convenție, importăm Seaborn ca asinus.
+
+6
+00:00:29,970 --> 00:00:35,430
+Și din moment ce mă aflu în notebook voi merge mai departe și să spun că complotul lui Matt trăiește în
+
+7
+00:00:35,430 --> 00:00:38,340
+linie astfel încât să văd că sunt vizualizări din interiorul notebook-ului.
+
+8
+00:00:38,880 --> 00:00:39,210
+In regula.
+
+9
+00:00:39,210 --> 00:00:44,040
+Acum, să luăm câteva date despre un parcel seaborne care vine de fapt cu câteva seturi de date construite, pe care
+
+10
+00:00:44,040 --> 00:00:45,220
+le puteți încărca direct.
+
+11
+00:00:45,840 --> 00:00:50,480
+Și am de gând să apuc un tip sfaturi și să-l salvați ca un cadru de date numit sfaturi.
+
+12
+00:00:50,640 --> 00:00:58,210
+Puteți face acest lucru prin a spune că Tipps este egal cu setul de date de încărcare Asinus și apoi treceți sfaturi ca un șir.
+
+13
+00:00:59,280 --> 00:01:04,560
+Și acest lucru va încărca setul de date sfaturi și apoi eu pot verifica de fapt capul de stat de cadru și
+
+14
+00:01:04,560 --> 00:01:06,050
+se pare ceva de genul asta.
+
+15
+00:01:06,150 --> 00:01:11,580
+Există șapte coloane aici și acest lucru este doar doar date care se referă la persoanele care au avut o masă și
+
+16
+00:01:11,580 --> 00:01:13,540
+apoi a lăsat un sfat după aceea.
+
+17
+00:01:13,560 --> 00:01:19,350
+Deci, aveți prețul total sau factura de masă cât de mult la stânga ca vârful sexul sau sexul persoanei care
+
+18
+00:01:19,350 --> 00:01:24,620
+părăsește vârful dacă sunt sau nu fumător ce zi și de timp au mâncat masa lor afară.
+
+19
+00:01:24,660 --> 00:01:27,030
+Și apoi mărimea petrecerii.
+
+20
+00:01:27,030 --> 00:01:27,380
+In regula.
+
+21
+00:01:27,420 --> 00:01:34,590
+Să mergem mai departe și să discutăm despre primul nostru tip de complot, care este acest complot CISC, complot că acest complot
+
+22
+00:01:34,590 --> 00:01:39,720
+ne permite să arătăm distribuția unui set univariat de observații și știi foarte mult că
+
+23
+00:01:39,720 --> 00:01:43,610
+este doar un mod diferit de a spune doar o variabilă.
+
+24
+00:01:43,620 --> 00:01:45,350
+Hai să intrăm și să explorăm asta.
+
+25
+00:01:45,390 --> 00:01:51,870
+Am de gând să spun că Asinus a crezut acest complot și apoi pentru acest complot ceea ce faci e să treci doar într-o singură
+
+26
+00:01:51,870 --> 00:01:53,580
+coloană a cadrului tău de date.
+
+27
+00:01:53,850 --> 00:01:57,610
+În acest caz, să mergem mai departe și să vedem cum este distribuită factura totală.
+
+28
+00:01:58,130 --> 00:02:03,690
+Așa că am să spun o factură totală și apoi să conduc celula și ar trebui să obții un complot care arată așa.
+
+29
+00:02:03,930 --> 00:02:06,100
+Dacă primești un avertisment aici, nu-ți face griji.
+
+30
+00:02:06,120 --> 00:02:08,900
+Acest lucru trebuie să se facă dacă un alt pachet numit modele de stat.
+
+31
+00:02:09,000 --> 00:02:11,220
+Nu va afecta codul tău actual de pește.
+
+32
+00:02:11,520 --> 00:02:13,810
+Dar aici nu avem nici un avertisment, așa că suntem în regulă.
+
+33
+00:02:14,220 --> 00:02:20,990
+Observați aici că am obține în esență o histogramă și ceea ce este cunoscut ca o k d e o estimare a densității kernelului
+
+34
+00:02:21,000 --> 00:02:22,420
+care este linia de aici.
+
+35
+00:02:22,530 --> 00:02:26,460
+Mai târziu, în această prelegere vom discuta despre ce este Katie și cum putem construi
+
+36
+00:02:26,460 --> 00:02:27,090
+acest lucru.
+
+37
+00:02:27,150 --> 00:02:34,680
+Dar pentru moment, putem să o eliminăm dacă vrem să spunem ca un argument suplimentar aici Katie este egal cu falsul.
+
+38
+00:02:36,870 --> 00:02:39,060
+Și doar tastând Katy este egală cu falsa.
+
+39
+00:02:39,060 --> 00:02:44,700
+Acum, în esență, aveți doar o histogramă și o histogramă este, în esență, doar o distribuție a locului unde
+
+40
+00:02:44,700 --> 00:02:46,010
+se află factura totală.
+
+41
+00:02:46,170 --> 00:02:52,020
+Deci, puteți vedea aici că pe axa y aveți un contor și apoi aveți aceste bare pe axa X
+
+42
+00:02:52,050 --> 00:02:52,780
+ca bins.
+
+43
+00:02:52,890 --> 00:02:58,940
+Și în principiu aceasta înseamnă că majoritatea facturilor dvs. totale sunt undeva între 10 și 20 de dolari.
+
+44
+00:02:59,000 --> 00:03:03,510
+Și dacă doriți să obțineți mai multe informații despre acest lucru, puteți modifica numărul de cutii pentru
+
+45
+00:03:03,510 --> 00:03:09,750
+a putea merge mai departe și există un al treilea argument al lui Sabin, iar apoi numărul corespunzător de oferte și numărul depinde
+
+46
+00:03:09,750 --> 00:03:11,240
+într-adevăr de setul de date.
+
+47
+00:03:11,400 --> 00:03:14,820
+Dar să mergem și să alegem 30 de acum.
+
+48
+00:03:14,820 --> 00:03:19,440
+Iar acum putem obține o definiție puțin mai fundamentală și putem vedea că majoritatea facturilor au
+
+49
+00:03:19,440 --> 00:03:21,560
+loc între 10 și 20 de ani.
+
+50
+00:03:21,900 --> 00:03:28,490
+Dacă alegeți o valoare prea mare, de exemplu, să mergem mai departe și să punem în valoare 100, veți începe să
+
+51
+00:03:28,500 --> 00:03:35,250
+obțineți un fel de scenariu ciudat, în care în mod esențial începeți să complotați fiecare instanță a facturilor totale pentru fiecare
+
+52
+00:03:36,090 --> 00:03:37,640
+punct de preț unic.
+
+53
+00:03:37,650 --> 00:03:43,740
+Deci, de obicei, vreau să încerc să găsesc un echilibru în dimensiune, dar asta depinde de complotul tău.
+
+54
+00:03:43,770 --> 00:03:44,070
+O.K.
+
+55
+00:03:44,100 --> 00:03:46,930
+Se pare că avem o idee bună despre informațiile de aici.
+
+56
+00:03:47,040 --> 00:03:50,940
+Și dacă poate citi acest grafic, se poate spune că majoritatea facturilor au loc undeva între 10 și
+
+57
+00:03:51,000 --> 00:03:54,320
+20 de dolari și încep să se estompeze pe măsură ce creșteți și creșteți.
+
+58
+00:03:54,330 --> 00:04:00,360
+Bill Price Acesta este parcela și care vă permite să vizualizați distribuția în esență o histogramă și puteți adăuga un
+
+59
+00:04:00,720 --> 00:04:02,710
+tort de mâncare pe lângă asta.
+
+60
+00:04:02,730 --> 00:04:05,930
+Dar vom afla mai târziu despre complotul lui Katie.
+
+61
+00:04:05,970 --> 00:04:13,620
+Hai să vorbim despre parcelă comună și parcele comune din seaborne Pot să spun că parcelele comune Asinus vă permite să se potrivească
+
+62
+00:04:13,620 --> 00:04:20,670
+de fapt până la acest parcele pentru prin diverse date, ceea ce înseamnă că puteți combina, în esență, două parcele
+
+63
+00:04:20,670 --> 00:04:21,950
+de distribuție diferite.
+
+64
+00:04:22,110 --> 00:04:24,370
+Și de fapt sunt doar două variabile.
+
+65
+00:04:24,480 --> 00:04:29,640
+Și când aveți un fel de parametru pe care o vom juca în jurul nostru cu care ne permite să
+
+66
+00:04:29,640 --> 00:04:32,340
+alegem modul în care dorim să comparăm aceste două distribuții.
+
+67
+00:04:32,340 --> 00:04:35,660
+Permiteți-mi să intru și să vă arăt cum putem folosi esența ca un complot de pornire.
+
+68
+00:04:35,670 --> 00:04:41,130
+Mai intai ai passen in x variabila si apoi trebuie sa treci intr-o variabila Y si
+
+69
+00:04:41,130 --> 00:04:43,910
+apoi trebuie sa treci in setul de date.
+
+70
+00:04:44,100 --> 00:04:48,400
+Să începem din spate, astfel încât datele despre pasageri să fie stabilite ca sfaturi.
+
+71
+00:04:48,450 --> 00:04:54,510
+Deci, că un fel de cadre de date și apoi pentru x și y tu doar pasand șiruri care sunt numele de coloane.
+
+72
+00:04:54,510 --> 00:04:56,690
+Cele două lucruri pe care doriți să le comparați unul cu celălalt.
+
+73
+00:04:56,700 --> 00:05:02,980
+De exemplu, poate că vreau să compar compararea facturii totale cu mărimea vârfului.
+
+74
+00:05:03,030 --> 00:05:04,440
+Să mergem mai departe și să facem asta.
+
+75
+00:05:04,470 --> 00:05:14,350
+Am de gând să spun proiectul de lege total ca fostul meu și pe drumul meu de acces am de gând să pună în vârful coloana vârful.
+
+76
+00:05:14,360 --> 00:05:19,500
+Deci, acum doar trec în coloana totală de facturare coloana de vârf și apoi datele sunt egale cu sfaturile
+
+77
+00:05:20,980 --> 00:05:25,730
+și am un complot care arată astfel, care este, în esență, doar două parcele de distribuție.
+
+78
+00:05:25,950 --> 00:05:31,680
+Puteți vedea vârful pe axa y și factura totală de-a lungul axei x și apoi micșorați pentru a
+
+79
+00:05:31,690 --> 00:05:32,670
+vedea întregul grafic.
+
+80
+00:05:33,250 --> 00:05:38,970
+Și apoi între timp am o scatterplot și acest scatterplot de fapt are sens, de fapt, deoarece are
+
+81
+00:05:38,980 --> 00:05:45,550
+o tendință ca, pe măsură ce ajungi mai mult în totalul facturii, vei merge mai sus în vârf și asta are
+
+82
+00:05:45,550 --> 00:05:49,480
+sens deoarece sfaturile sunt de obicei proporționale cu factura totală .
+
+83
+00:05:49,560 --> 00:05:57,330
+În prezent, parcelele comune vă oferă un parametru suplimentar de argument numit kind și acest tip de parametru vă
+
+84
+00:05:57,370 --> 00:06:03,270
+permite să influențați ceea ce se întâmplă de fapt în interiorul acestui complot comun.
+
+85
+00:06:03,270 --> 00:06:07,860
+Chiar acum, în mod implicit, este scatter, dar puteți trece și într-un argument, cum
+
+86
+00:06:10,620 --> 00:06:15,750
+ar fi hex și hex, vă permite să faceți în principiu o reprezentare a distribuției hexagonale.
+
+87
+00:06:15,750 --> 00:06:21,660
+Este similar cu scatterul, cu excepția faptului că în mod substanțial dacă hexagonul are un anumit număr de puncte în el
+
+88
+00:06:21,660 --> 00:06:27,150
+devine mai întunecat și dacă are mai puține puncte devine mai ușoară în esență este doar o modalitate
+
+89
+00:06:27,150 --> 00:06:33,160
+de a nu trebui să pună toate acele puncte scatter pe, dar în loc să arătați o distribuție cu aceste hexagoane.
+
+90
+00:06:33,150 --> 00:06:38,400
+Un alt argument pe care îl putem pune în natură este e g, care înseamnă regresie.
+
+91
+00:06:38,740 --> 00:06:43,120
+Și asta va arăta mult ca o scatterplototă, cu excepția faptului că Seaborn va trage de fapt o
+
+92
+00:06:43,120 --> 00:06:43,920
+linie de regresie.
+
+93
+00:06:43,930 --> 00:06:48,840
+Acum, de fapt, nu am învățat despre regresia liniară încă în ceea ce privește tema învățării mașinilor, dar
+
+94
+00:06:48,850 --> 00:06:54,240
+mai târziu, atunci când abordăm acest subiect, vom reveni la acest subiect și vom discuta despre modul în care este construită
+
+95
+00:06:54,250 --> 00:06:54,930
+această linie.
+
+96
+00:06:55,200 --> 00:07:01,110
+Dar, în esență, aceasta arată doar ca o potrivire liniară cu datele punctului împrăștiat și de fapt, puteți vedea
+
+97
+00:07:01,120 --> 00:07:05,940
+că are o valoare P într-un coeficient Peerson pe care îl vom discuta mai târziu
+
+98
+00:07:05,940 --> 00:07:07,910
+când discutăm despre regresia liniară.
+
+99
+00:07:07,950 --> 00:07:14,830
+În cele din urmă, în alt fel pe care îl puteți pune aici este KDE și vă permite să aveți și acest lucru.
+
+100
+00:07:14,820 --> 00:07:20,410
+Am menționat K-T, care în esență vă arată doar densitatea locului în care aceste puncte se potrivesc cel mai mult.
+
+101
+00:07:21,570 --> 00:07:29,580
+Bine, să mergem mai departe și să mergem mai departe de parcelă comună va fi de obicei folosind parcela cu scatter implicit, deoarece acesta este cel care
+
+102
+00:07:29,880 --> 00:07:34,300
+este, în esență, cea mai ușoară de citit și vă oferă destul de puțin informații
+
+103
+00:07:34,290 --> 00:07:35,850
+chiar de pe lilieci.
+
+104
+00:07:35,860 --> 00:07:43,300
+Vom merge mai departe și vom extinde această idee, arătându-vă complotul pereche și complotul pereche va merge, în esență,
+
+105
+00:07:43,290 --> 00:07:49,000
+să traseze relațiile pereche în întregul cadru de date cel puțin pentru coloanele numerice.
+
+106
+00:07:49,140 --> 00:07:53,780
+De asemenea, acceptă un argument pentru culori pentru coloanele categorice pe care le voi arăta mai târziu.
+
+107
+00:07:54,190 --> 00:08:01,680
+Dar vedem aici, pe deasupra, că avem un complot al aceleiași legături, ce complot este în mod esențial de făcut este
+
+108
+00:08:01,690 --> 00:08:08,260
+să facem acest complot comun pentru fiecare combinație posibilă dintre coloanele numerice din acest cadru de date.
+
+109
+00:08:08,250 --> 00:08:09,590
+Lasă-mă să-ți arăt ce vreau să spun.
+
+110
+00:08:09,750 --> 00:08:11,700
+Pentru că o va face pentru toate combinațiile.
+
+111
+00:08:11,700 --> 00:08:15,400
+Practic, trebuie doar să suni S și S gândit pe parcelă și trecând cadranul de date.
+
+112
+00:08:15,430 --> 00:08:18,250
+Și asta este ceva ce vom face destul de mult pe toată durata cursului.
+
+113
+00:08:18,250 --> 00:08:21,510
+Țineți cont de faptul că cu cât este mai mare intervalul de date pe care îl are fiecare parcelă.
+
+114
+00:08:21,660 --> 00:08:26,460
+Deci, de multe ori pe parcelă durează un timp dacă aveți un cadru de date foarte mare în loc de cadre relativ
+
+115
+00:08:26,470 --> 00:08:26,790
+mici.
+
+116
+00:08:26,790 --> 00:08:28,080
+Deci suntem în regulă.
+
+117
+00:08:28,200 --> 00:08:33,280
+Și aici avem în principiu un complot pentru toate valorile coloanelor numerice.
+
+118
+00:08:33,270 --> 00:08:36,430
+Deci avem dimensiune vs mărimea totală a facturii versus vârful.
+
+119
+00:08:36,420 --> 00:08:42,660
+Și atunci când ajungeți la un parametru versus el însuși, de exemplu, mărimea versus mărimea, în loc să faceți într-adevăr un
+
+120
+00:08:42,660 --> 00:08:46,310
+scatterplot care, atunci când are sens, aveți doar o linie dreaptă.
+
+121
+00:08:46,380 --> 00:08:48,680
+În schimb, vedeți o histogramă.
+
+122
+00:08:49,120 --> 00:08:51,060
+Și același lucru pentru Sfat versus vârful.
+
+123
+00:08:51,100 --> 00:08:57,600
+Și pentru factura totală față de factura totală care înseamnă pe fiecare parcelă este o modalitate foarte bună de a vă vizualiza
+
+124
+00:08:57,610 --> 00:08:58,280
+rapid datele.
+
+125
+00:08:58,410 --> 00:09:06,400
+Și ceea ce este chiar mai frumos este că puteți adăuga un argument nuanței la acest lucru pe care îl mâncați și argumentul Hewe este locul în
+
+126
+00:09:06,390 --> 00:09:08,140
+care ați trece în coloană.
+
+127
+00:09:08,130 --> 00:09:15,420
+Scopul unei coloane categorice în categorii categorice nu este categoria numerică sau continuă, dar actuală.
+
+128
+00:09:15,450 --> 00:09:21,040
+De exemplu, coloana sexuală este categorică deoarece există două categorii în ea, bărbați și femei.
+
+129
+00:09:22,710 --> 00:09:31,650
+Și când treceți acest lucru în timp ce treceți în numele coloniei sex egal și va culoarea punctelor de date bazate
+
+130
+00:09:31,680 --> 00:09:35,480
+pe coloana pe care ați pus-o pentru nuanță.
+
+131
+00:09:35,520 --> 00:09:40,560
+Deci, aici toate punctele verzi sunt femei bazate pe această legendă și pe toate punctele de sex masculin.
+
+132
+00:09:40,630 --> 00:09:42,930
+Vom micșora pentru a vedea totul.
+
+133
+00:09:43,120 --> 00:09:45,600
+Toate punctele albastre sunt de sex masculin.
+
+134
+00:09:45,610 --> 00:09:52,690
+Și ca al treilea argument puteți specifica o paletă, iar paleta vă permite să colorați acest lucru cu
+
+135
+00:09:52,890 --> 00:09:54,870
+o anumită paletă de culori.
+
+136
+00:09:54,880 --> 00:09:59,820
+Vom discuta despre palete, culoare și stil chiar la sfârșitul seriei de cursuri maritime.
+
+137
+00:09:59,830 --> 00:10:01,900
+Acum îți voi arăta un exemplu.
+
+138
+00:10:01,890 --> 00:10:06,690
+În esență, există acele șiruri de hartă color care sunt din acel scenariu live pe care le
+
+139
+00:10:06,900 --> 00:10:11,100
+puteți trece în paleta sa și vor alege anumite culori pentru oricare parametri sunt.
+
+140
+00:10:11,160 --> 00:10:16,650
+Și aici putem vedea că e-mailul este albastru, iar femela este o culoare de culoare roz.
+
+141
+00:10:16,650 --> 00:10:17,230
+In regula.
+
+142
+00:10:17,250 --> 00:10:20,040
+O vom atinge pe palete în culori și stiluri mult mai mult.
+
+143
+00:10:20,050 --> 00:10:25,770
+Să mergem mai departe și să mergem la parcelele Roug, iar parcelele necinstite sunt de fapt un concept foarte simplu, dar
+
+144
+00:10:25,770 --> 00:10:28,600
+vom folosi conceptul unui complot necinstit pentru a construi.
+
+145
+00:10:28,620 --> 00:10:28,980
+Eu sunt.
+
+146
+00:10:28,990 --> 00:10:38,770
+Explicați complotul K-T pe care l-am văzut mai devreme, dacă am de gând să merg și să spun S. A. Aranjează parcelele și la fel ca să complotă
+
+147
+00:10:38,860 --> 00:10:43,110
+complotul de distribuție pe care o vei trece într-o singură coloană aici.
+
+148
+00:10:43,180 --> 00:10:51,040
+Deci, vom spune sfaturi și să mergem să trecem coloana de facturare totală și ceea ce complot covor este este un
+
+149
+00:10:51,040 --> 00:10:52,450
+concept foarte simplu.
+
+150
+00:10:52,450 --> 00:10:59,980
+Ea doar trage o marcă de bord pentru fiecare punct de pe această variantă uniformă sau unică de distribuție, în
+
+151
+00:10:59,980 --> 00:11:01,550
+esență, o singură variabilă.
+
+152
+00:11:01,570 --> 00:11:06,710
+Deci, în loc de o histogramă, permiteți-mi să merg mai departe și să fac acest complot încă o dată pentru a compara.
+
+153
+00:11:07,150 --> 00:11:12,280
+Voi spune imediat ce acest complot sfatuieste factura totala.
+
+154
+00:11:12,280 --> 00:11:17,900
+Rulați asta și hai să spunem că Katie este falsă.
+
+155
+00:11:20,010 --> 00:11:27,040
+OK, deci diferența dintre o histogramă de mai jos și acest complot Rugge este că histograma are în esență cosuri și
+
+156
+00:11:27,040 --> 00:11:32,920
+contează cât de multe liniuțe au fost în coșul de gunoi și apoi o arată ca un
+
+157
+00:11:32,920 --> 00:11:39,480
+număr de sus aici și asta înseamnă că între 10. și eu nu- Nu știu dacă este vorba despre asta.
+
+158
+00:11:39,570 --> 00:11:41,200
+Patruzeci de linii acolo.
+
+159
+00:11:41,250 --> 00:11:43,210
+Toți sunt îngroziți unul peste celălalt.
+
+160
+00:11:43,360 --> 00:11:48,910
+Și apoi, aici, pe măsură ce mergem mai departe în prețul total al facturilor, există mai puține ruble sau mai puține liniuțe, ceea
+
+161
+00:11:48,970 --> 00:11:51,070
+ce înseamnă că Ben va fi mai mic.
+
+162
+00:11:51,070 --> 00:11:55,840
+Aceasta este relația de bază dintre SR-GR RAM și acest paragon necinstit, care merge în paragină într-un mod
+
+163
+00:11:55,840 --> 00:11:56,450
+foarte simplu.
+
+164
+00:11:56,560 --> 00:12:01,730
+Trageți doar o marcă de bord pentru fiecare punct de-a lungul liniei de distribuție.
+
+165
+00:12:01,750 --> 00:12:02,180
+In regula.
+
+166
+00:12:02,230 --> 00:12:03,460
+Ăsta e factura totală.
+
+167
+00:12:03,510 --> 00:12:09,490
+Ceea ce vrem să facem este să construim această idee de parcele necinstite pentru a explica ce este acest complot real Kaytee
+
+168
+00:12:10,960 --> 00:12:13,260
+și asta va fi această linie chiar aici.
+
+169
+00:12:13,450 --> 00:12:17,820
+Cum construim de fapt această linie bazată pe aceste parcele necinstite.
+
+170
+00:12:18,010 --> 00:12:26,200
+Și puteți vedea că acesta are un fel de relație cu numărul parcelei necinstite. Parcelele KDE se referă la parcelele de estimare a densității
+
+171
+00:12:26,260 --> 00:12:32,260
+kernelului și puteți de fapt Google aceasta și verificați Wikipedia cu privire la densitățile de estimare a
+
+172
+00:12:32,260 --> 00:12:38,320
+densității kernelului și pagina va arăta cam ca această densitate a curlării estimare și aceasta este o adevărată
+
+173
+00:12:38,440 --> 00:12:39,520
+defalcare în jos.
+
+174
+00:12:39,520 --> 00:12:43,440
+Aceasta este o figură foarte frumoasă aici și, în esență, vom încerca să construim.
+
+175
+00:12:43,450 --> 00:12:47,230
+Veți observa că fiecare dintre aceste linii neagră aici este complotul necinstit.
+
+176
+00:12:47,230 --> 00:12:48,460
+Deci, punctele reale.
+
+177
+00:12:48,700 --> 00:12:53,140
+Și apoi aveți aceste distribuții gaussiene normale deasupra fiecărui punct.
+
+178
+00:12:53,200 --> 00:12:54,580
+Și apoi le-ați însumat.
+
+179
+00:12:54,640 --> 00:12:58,540
+Deci, veți obține o estimare a densității nucleului Currence finală.
+
+180
+00:12:58,570 --> 00:13:02,150
+Acum, ce vreau să spun prin distribuția normală sau distribuția Gaussiană.
+
+181
+00:13:02,410 --> 00:13:08,010
+Ei bine, dacă te uiți și pe Wikipedia Nessus în teoria probabilității distribuția normală și aș spune
+
+182
+00:13:08,080 --> 00:13:11,770
+probabil cea mai comună distribuție continuă a probabilității la nivel central.
+
+183
+00:13:11,780 --> 00:13:16,780
+Acestea sunt distribuțiile obișnuite, în care spui cum a făcut toată lumea la încercare și le-ai
+
+184
+00:13:16,780 --> 00:13:20,130
+notat pe toți studenții și apoi ai văzut distribuția scorurilor.
+
+185
+00:13:20,140 --> 00:13:26,530
+Deci, de obicei, ceva normalizat ca acesta sau, de exemplu, vârstele oamenilor sau înălțimile oamenilor, de obicei o
+
+186
+00:13:26,530 --> 00:13:29,950
+mulțime de lucruri tind să urmeze o distribuție normală.
+
+187
+00:13:29,950 --> 00:13:30,420
+O.K.
+
+188
+00:13:30,760 --> 00:13:36,160
+Să mergem mai departe și să ne întoarcem la cartea Jupiter și să atingem aceste subiecte într-un mod mai detaliat pentru
+
+189
+00:13:37,270 --> 00:13:38,340
+a face acest lucru.
+
+190
+00:13:38,380 --> 00:13:42,880
+Am de gând să copiez și să lipesc un cod din cartea de note și nu trebuie să vă faceți griji cu privire la înțelegerea
+
+191
+00:13:42,880 --> 00:13:43,360
+acestui cod.
+
+192
+00:13:43,420 --> 00:13:49,320
+Este doar pentru a construi o diagramă pentru a explica într-o du-te pentru a copia și lipiți acest lucru.
+
+193
+00:13:50,170 --> 00:13:54,510
+Am copiat și lipit acest cod și l-am lăsat să mă descurc foarte repede cu aceste coduri.
+
+194
+00:13:54,610 --> 00:13:56,260
+Am doar câteva importuri.
+
+195
+00:13:56,260 --> 00:13:58,690
+Creez un set de date aleatoare.
+
+196
+00:13:58,780 --> 00:14:02,050
+Apoi folosesc un complot pe acele date aleatorii.
+
+197
+00:14:02,050 --> 00:14:04,630
+Am configurat axa x pentru plot.
+
+198
+00:14:04,660 --> 00:14:11,340
+Utilizați orice spațiu Ohlund pentru a crea 100 de puncte puncte egal distanțate de X X-Men's X max și apoi aici.
+
+199
+00:14:11,380 --> 00:14:14,290
+Aceasta este probabil cea mai dificilă parte pentru a înțelege, deoarece folosește biblioteca.
+
+200
+00:14:14,290 --> 00:14:15,240
+Nu am vorbit încă.
+
+201
+00:14:15,280 --> 00:14:16,600
+Nu e normal.
+
+202
+00:14:16,600 --> 00:14:21,920
+Toate acestea fac ca plotul sa fie o distributie normala pentru fiecare dintre punctele de plot.
+
+203
+00:14:21,920 --> 00:14:23,030
+Și asta arată așa.
+
+204
+00:14:23,060 --> 00:14:25,340
+Mergem mai departe și mărim acest lucru.
+
+205
+00:14:25,660 --> 00:14:28,900
+Aici am setul meu de date și acesta este un set de date aleatoriu.
+
+206
+00:14:28,900 --> 00:14:33,610
+Deci, dacă ați alerga în acești ani poate arăta un pic diferit, dar rețineți că nu mai uităm de lucru cu
+
+207
+00:14:33,610 --> 00:14:33,980
+sfaturi.
+
+208
+00:14:34,000 --> 00:14:35,790
+Lucrăm doar la date aleatorii.
+
+209
+00:14:35,800 --> 00:14:40,840
+Observați că aici am liniuțe albastre și apoi aceste linii gri reprezintă distribuții normale.
+
+210
+00:14:40,870 --> 00:14:43,050
+Pe partea de sus a fiecăruia dintre aceste liniuțe albastre.
+
+211
+00:14:43,330 --> 00:14:47,040
+Deci, aceasta este o distribuție normală centrat în jurul liniei.
+
+212
+00:14:47,320 --> 00:14:49,940
+Și avem o grămadă de ele unul peste celălalt.
+
+213
+00:14:49,990 --> 00:14:56,180
+Ei bine, vom merge mai departe și facem în continuare câteva dintre ele pentru a obține funcția bazei de densitate a kernelului.
+
+214
+00:14:57,070 --> 00:15:01,480
+Și aceasta este doar suma tuturor acestor mici distribuții normale.
+
+215
+00:15:01,480 --> 00:15:02,010
+In regula.
+
+216
+00:15:02,020 --> 00:15:07,150
+Copierea și lipirea celui de-al doilea bloc de cod din notebook ne permite să rezumăm
+
+217
+00:15:07,150 --> 00:15:12,670
+efectiv toate aceste funcții de bază care sunt doar aceste distribuiri normale atunci când le însumează toate.
+
+218
+00:15:12,670 --> 00:15:17,700
+Veți obține ceva care arată astfel, care este doar Teekay complotul de mai înainte și
+
+219
+00:15:17,890 --> 00:15:20,930
+așa e complotul construit din plotul de disc.
+
+220
+00:15:20,950 --> 00:15:25,490
+Prima intriga ne-am uitat la cea mai mare t sub T.
+
+221
+00:15:25,570 --> 00:15:26,430
+In regula.
+
+222
+00:15:26,560 --> 00:15:31,940
+Prin urmare, acestea sunt toate modurile majore pe care le puteți arăta distribuțiile de date pe care le-am văzut mai mult.
+
+223
+00:15:32,110 --> 00:15:38,350
+Să mergem mai departe și să revizuiți rapid toate tipurile de complot diferite pe care acest tip de computere și complot le prezintă.
+
+224
+00:15:38,350 --> 00:15:39,770
+Mergem înapoi.
+
+225
+00:15:39,820 --> 00:15:46,120
+Ei au fost acest complot și din nou că acest complot puteți să-l utilizați cu două metode au Kaytee
+
+226
+00:15:46,120 --> 00:15:51,410
+egal cu fals și, în esență, doar a vedea o histogramă sau lăsați acest gol.
+
+227
+00:15:52,840 --> 00:15:57,100
+Apoi, puteți vedea de fapt Caity estimarea densității kernelului care explică
+
+228
+00:15:57,100 --> 00:16:03,580
+faptul că sfârșitul este doar suma tuturor distribuțiilor normale din jurul covorului A-plot complot paralel este cu adevărat similar
+
+229
+00:16:03,580 --> 00:16:08,740
+cu această idee expectorat trecând în două coloane și treci în argumentele x și y.
+
+230
+00:16:08,760 --> 00:16:15,400
+Dacă al treilea argument este egal cu datele, atunci complotul următor despre care am învățat a fost perechea parcelei și complotul este doar
+
+231
+00:16:15,580 --> 00:16:21,630
+construirea off de complot și, în esență, este un complot comun pentru fiecare coloană sau coloană numerică în setul de
+
+232
+00:16:21,640 --> 00:16:26,830
+date și asta înseamnă că doar treci în setul de date în sine că datele de cadre
+
+233
+00:16:26,830 --> 00:16:33,340
+și puteți trece în nuanță și paletă, dacă doriți să culoarea de fapt, printr-o coloană categorică următoarea complot am aflat despre a fost
+
+234
+00:16:33,340 --> 00:16:39,400
+complot Roug de obicei, nu va fi folosind parcele Roug, dar este acolo pentru tine iar ideea principală de a folosi
+
+235
+00:16:39,400 --> 00:16:45,310
+un paragon necinstit este un fel de construire a logicii complotului de estimare a densității kernelului care se face prin
+
+236
+00:16:45,400 --> 00:16:46,450
+acest cod aici.
+
+237
+00:16:46,570 --> 00:16:51,470
+Puteți să vă gândiți și să citiți acest cod, dar v-am dorit să obțineți un punct în acest
+
+238
+00:16:51,490 --> 00:16:56,330
+sens atunci când utilizați un complot necinstit și doriți să construiți un grafic de estimare a densității
+
+239
+00:16:56,470 --> 00:17:03,400
+kernel-ului pentru acel complot Katie pe care îl puteți face doar prin a spune parcela intangibilă are toate aceste distribuții normale pe fiecare punct și
+
+240
+00:17:03,400 --> 00:17:05,200
+apoi ia suma tuturor acestor puncte.
+
+241
+00:17:05,200 --> 00:17:07,810
+Și asta e complotul estimării densității kernelului.
+
+242
+00:17:08,950 --> 00:17:16,540
+Și am văzut cum putem face acest lucru folosind acest complot și ca un punct rapid dacă folosiți acest complot aici știm că putem să
+
+243
+00:17:16,840 --> 00:17:20,620
+scăpăm de complotul K-T spunând că Kaytee este egal cu falsul.
+
+244
+00:17:20,620 --> 00:17:27,160
+Dacă doriți de fapt doar complotul K-T și nu doriți actualul Beenz aici puteți de fapt
+
+245
+00:17:27,160 --> 00:17:34,780
+să pasați în loc de parcelele pe care le puteți face complotul Asinus KDE și apoi să treceți sfaturi.
+
+246
+00:17:35,200 --> 00:17:42,010
+Numărul total de facturi și acest lucru va construi acest parcelă K-T fără nici o distribuție a barelor.
+
+247
+00:17:42,010 --> 00:17:42,710
+In regula.
+
+248
+00:17:43,090 --> 00:17:48,760
+Sperăm că vă dați seama că Seaborn este incredibil de puternic și, de asemenea, foarte simplu în ceea ce privește codul pe care
+
+249
+00:17:48,760 --> 00:17:49,560
+trebuie să-l scrieți.
+
+250
+00:17:49,690 --> 00:17:51,580
+Tot ce am făcut a fost doar într-o singură linie.
+
+251
+00:17:51,640 --> 00:17:55,960
+Daca incercati sa faceti acest lucru, harta de complot lib ar fi luat mai multe linii, dar ceea ce este frumos
+
+252
+00:17:56,020 --> 00:18:00,490
+cu privire la asta este faptul ca functioneaza off de ceea ce stiti despre parcelă live și vom vedea că mult mai mult
+
+253
+00:18:00,490 --> 00:18:02,200
+atunci când vorbim despre stil și culori .
+
+254
+00:18:02,350 --> 00:18:06,790
+O mulțime de cunoștințe care au trăit cunoștințele despre hartă vor fi transferabile la editarea de fapt a lucrurilor
+
+255
+00:18:06,880 --> 00:18:08,020
+mici în acest complot.
+
+256
+00:18:08,380 --> 00:18:13,290
+OK, sper că începi să te bucuri de Seaborn din nou, așa cum am menționat mai devreme, este una dintre bibliotecile mele favorite și
+
+257
+00:18:13,560 --> 00:18:17,800
+nu pot să aștept să vă arăt următoarele două tipuri de complot pe care le vom învăța despre Seaborn.
+
+258
+00:18:18,400 --> 00:18:20,260
+Multumesc tuturor si te voi vedea la urmatoarea conferinta

@@ -1,0 +1,359 @@
+1
+00:00:05,280 --> 00:00:09,960
+Salve a tutti e benvenuti al gruppo tenendo una conferenza per i panda in questa conferenza, vi mostreremo come
+
+2
+00:00:09,960 --> 00:00:15,530
+utilizzare il gruppo in base al metodo per accendere insieme le righe di un gruppo di dati e chiamare le funzioni di aggregazione.
+
+3
+00:00:15,540 --> 00:00:20,850
+Ora, prima di saltare sul taccuino di Giove, permettetemi di spiegare rapidamente che cosa è il gruppo di acquisto nel
+
+4
+00:00:20,850 --> 00:00:25,950
+caso in cui non si abbia esperienza di sequel o tutti voi o la maggior parte delle persone abbia familiarità
+
+5
+00:00:25,950 --> 00:00:28,300
+con ciò che effettivamente fa una dichiarazione GROUP BY.
+
+6
+00:00:28,560 --> 00:00:34,890
+Per dirla semplicemente raggruppato per consentire di raggruppare le righe basate su una colonna e quindi eseguire una sorta di
+
+7
+00:00:34,890 --> 00:00:36,840
+funzione di aggregazione su di esse.
+
+8
+00:00:37,080 --> 00:00:43,390
+Ad esempio in questo esempio qui abbiamo tre partizioni di IDS uno due e tre.
+
+9
+00:00:43,470 --> 00:00:50,220
+E poi abbiamo diversi valori per loro che possiamo raggruppare per la colonna ID e aggregarli usando una sorta di
+
+10
+00:00:50,220 --> 00:00:56,130
+funzione aggregata in ogni funzione è fondamentalmente solo un termine di fantasia per qualsiasi funzione che prende
+
+11
+00:00:56,130 --> 00:01:03,060
+e molti valori e quindi sputa o emette un singolo valore come prendere la somma di un gruppo di valori
+
+12
+00:01:03,330 --> 00:01:07,680
+e produrre i risultati o prendere la media o la deviazione standard ecc. Queste sono tutte funzioni aggregate e questo è tutto
+
+13
+00:01:07,800 --> 00:01:13,950
+un gruppo per metodo ti permette di scegliere una colonna per Raggruppare.
+
+14
+00:01:13,950 --> 00:01:14,950
+Raccoglie tutte quelle righe in base al valore di quella colonna.
+
+15
+00:01:15,000 --> 00:01:18,250
+E poi esegui una sorta di funzione aggregata su di esso.
+
+16
+00:01:18,440 --> 00:01:21,330
+Tutto ok.
+
+17
+00:01:21,360 --> 00:01:22,160
+Ma detto questo andiamo avanti e impariamo come usare GROUP BY con i panda.
+
+18
+00:01:22,200 --> 00:01:25,980
+Ho intenzione di andare avanti e saltare al quaderno di Giove.
+
+19
+00:01:26,010 --> 00:01:28,820
+Va bene, eccoci al quaderno di Giove.
+
+20
+00:01:28,860 --> 00:01:31,390
+Sono andato avanti e ho copiato e incollato questa riga di dati.
+
+21
+00:01:31,530 --> 00:01:34,650
+È fondamentalmente solo un dizionario del
+
+22
+00:01:34,660 --> 00:01:40,350
+notebook e questo taccuino è chiamato da una delle cartelle panda.
+
+23
+00:01:40,350 --> 00:01:41,710
+andare avanti e dire
+
+24
+00:01:41,760 --> 00:01:47,750
+frame dei dati PD e poi passare quel dizionario dati e dovrebbe quindi creare automaticamente un frame dati sembra così
+
+25
+00:01:47,780 --> 00:01:54,780
+OK, puoi andare avanti e digitare manualmente, ma direi semplicemente di andare avanti e copiare questi dati solo un dizionario e poi puoi
+
+26
+00:01:54,780 --> 00:01:58,040
+E fondamentalmente questo è solo un dato inventato.
+
+27
+00:01:58,050 --> 00:01:59,900
+Abbiamo una colonna aziendale con tre codici aziendali.
+
+28
+00:02:00,000 --> 00:02:03,170
+Google Microsoft e Facebook.
+
+29
+00:02:03,330 --> 00:02:05,390
+Ora abbiamo una colonna di persone con un gruppo di persone uniche al suo interno.
+
+30
+00:02:05,520 --> 00:02:08,750
+E poi abbiamo alcuni numeri di vendita 200 120 ecc. Ora quello che possiamo fare è usare quel gruppo per metodo per raggruppare insieme
+
+31
+00:02:08,910 --> 00:02:13,460
+le righe basandoci su un nome di colonna, per esempio andiamo avanti e raggruppate dalla società che sto per andare
+
+32
+00:02:13,590 --> 00:02:19,020
+a dire ZF e poi dirai group by call come metodo e si passa alla colonna che si desidera raggruppare in questo caso.
+
+33
+00:02:19,020 --> 00:02:25,950
+Voglio un gruppo dalla colonna della società e notare cosa faccio qui, lo faccio solo.
+
+34
+00:02:25,950 --> 00:02:32,070
+Otterrò un gruppo per oggetto e punta solo a dove è memorizzato.
+
+35
+00:02:32,070 --> 00:02:38,240
+Quello che posso fare è archiviarlo come una nuova variabile in modo da poter dire qualcosa
+
+36
+00:02:38,400 --> 00:02:43,100
+del tipo provenire per la mia azienda e ho questo gruppo per oggetto.
+
+37
+00:02:43,350 --> 00:02:51,750
+Quindi il secondo passo dell'utilizzo di Group By.
+
+38
+00:02:51,750 --> 00:02:55,290
+Dopo averlo raggruppato per quella colonna devi andare avanti e chiamare una sorta di funzione di aggregazione su di essa.
+
+39
+00:02:55,290 --> 00:02:58,250
+Quindi, ad esempio, se volevo ottenere il significato per
+
+40
+00:02:58,250 --> 00:03:03,090
+società, guardava la colonna delle vendite e mi dava la vendita media o media della società.
+
+41
+00:03:03,420 --> 00:03:10,320
+Il motivo per cui non può farlo per la colonna persona è perché si tratta di stringhe e non è possibile in
+
+42
+00:03:10,320 --> 00:03:13,310
+alcun modo prendere la media di una stringa e
+
+43
+00:03:13,320 --> 00:03:18,180
+ciò significa che i panderers ignorano automaticamente tutto ciò che è una colonna non numerica.
+
+44
+00:03:18,180 --> 00:03:23,490
+Allo stesso modo possiamo andare avanti ed eseguire altre funzioni aggregate come alcune di tutto
+
+45
+00:03:23,610 --> 00:03:26,060
+per quanto riguarda le vendite per azienda.
+
+46
+00:03:26,070 --> 00:03:32,520
+Puoi persino fare deviazioni standard il Vestey, ecc. e dovresti notare che ciò che ottengo è un frame di dati effettivo con un indice chiamato Company e il valore
+
+47
+00:03:32,520 --> 00:03:33,760
+della colonna delle vendite.
+
+48
+00:03:33,990 --> 00:03:42,900
+poi potrei anche chiamare qualcosa come Dot ellos C F B.
+
+49
+00:03:42,900 --> 00:03:48,760
+Ciò significa che potrei fare cose come l'offerta dell'indice, quindi potrei dire di venire
+
+50
+00:03:49,110 --> 00:03:55,920
+avanti e riassumere tutte le vendite per società in modo che alcune delle vendite per società e
+
+51
+00:03:55,920 --> 00:04:02,430
+E questo mi dà le vendite di Facebook ora molte volte quello che stai per fare non
+
+52
+00:04:02,850 --> 00:04:06,440
+è in realtà impostare questo gruppo per oggetto come variabile.
+
+53
+00:04:07,000 --> 00:04:13,600
+Probabilmente lo chiameresti tutto in una riga.
+
+54
+00:04:13,710 --> 00:04:17,510
+Una volta che comincerai a sentirti a tuo agio con le mutandine, diranno qualcosa come gruppo
+
+55
+00:04:17,550 --> 00:04:19,670
+per azienda, allora chiamerai qualcosa come un po '.
+
+56
+00:04:19,710 --> 00:04:25,140
+per Facebook, sei il call FBI e quella è la stessa cosa in una sola riga ora.
+
+57
+00:04:25,830 --> 00:04:27,920
+E poi se lo vuoi solo
+
+58
+00:04:28,110 --> 00:04:35,160
+Alcune altre utili funzioni aggregate che potresti trovarti a fare sono cose come count che conta solo il numero di
+
+59
+00:04:35,160 --> 00:04:36,420
+istanze o colonne.
+
+60
+00:04:36,660 --> 00:04:41,850
+In questo caso è stato in grado di restituire la colonna persona perché è in grado di contare quante istanze
+
+61
+00:04:41,850 --> 00:04:44,570
+di una persona si verificano in quella colonna o società.
+
+62
+00:04:44,730 --> 00:04:49,890
+Quindi abbiamo due persone e hanno due vendite ciascuna e questo ha senso.
+
+63
+00:04:49,890 --> 00:04:53,420
+Puoi anche fare cose come max e min.
+
+64
+00:04:53,430 --> 00:04:57,360
+di memorizzare le cose in ordine alfabetico e questo è sostanzialmente ciò che sto cercando di mostrare qui.
+
+65
+00:04:57,360 --> 00:05:00,190
+E nota qui che restituisce anche la persona perché Python è in grado
+
+66
+00:05:00,960 --> 00:05:07,080
+Il massimo è l'ultimo verso la fine dell'alfabeto e se chiamate qui è il più presto nell'alfabeto
+
+67
+00:05:07,080 --> 00:05:09,410
+C e C abbiamo agenzie qui.
+
+68
+00:05:09,480 --> 00:05:17,220
+Tuttavia probabilmente non dovresti usare min o max con una colonna di stringhe.
+
+69
+00:05:17,220 --> 00:05:19,570
+Probabilmente userai tutte queste funzioni arrabbiate con colonne numeriche.
+
+70
+00:05:19,800 --> 00:05:23,310
+Un'ultima cosa utile che voglio mostrarti con group by è un sacco di volte
+
+71
+00:05:23,310 --> 00:05:27,320
+che puoi utilizzare GROUP BY con il metodo descritto e che ti dà un sacco di
+
+72
+00:05:27,330 --> 00:05:34,440
+informazioni utili tutto in una volta in modo da poter dire gruppo ZF pensato dal nome della società e quindi dì lo scriba e ti darà un sacco di informazioni.
+
+73
+00:05:35,160 --> 00:05:42,010
+Per esempio, per esempio, conta il valore medio della deviazione standard degli uomini e
+
+74
+00:05:42,030 --> 00:05:47,730
+del massimo così come i valori delle tessere chiave per ogni azienda.
+
+75
+00:05:47,730 --> 00:05:53,230
+E se non ti piace questo formato e puoi effettivamente trasporre questo in modo che tu possa dire qualcosa di simile a tale trasposizione se preferisci che
+
+76
+00:05:53,250 --> 00:05:55,060
+ciascuna azienda sia una colonna anziché un indice reale.
+
+77
+00:05:55,170 --> 00:05:59,490
+Quindi, qualunque formato ti piaccia, puoi descriverlo
+
+78
+00:06:00,060 --> 00:06:08,330
+e poi puoi semplicemente chiamare i nomi delle colonne al di fuori di questo.
+
+79
+00:06:08,520 --> 00:06:13,530
+Se ti interessa solo una singola azienda o una singola colonna.
+
+80
+00:06:13,530 --> 00:06:14,260
+Va bene, è davvero per gruppo.
+
+81
+00:06:14,280 --> 00:06:18,780
+È piuttosto semplice.
+
+82
+00:06:18,840 --> 00:06:21,150
+Basta chiamare il frame dei dati per dire Dopp raggruppato per la colonna che si desidera raggruppare e quindi qualunque metodo di aggregazione si desidera aggregare
+
+83
+00:06:21,150 --> 00:06:21,920
+i valori della colonna a un singolo valore.
+
+84
+00:06:21,930 --> 00:06:28,800
+E di solito funziona solo su colonne numeriche a seconda del
+
+85
+00:06:28,800 --> 00:06:34,140
+tipo di funzione di aggregazione con cui stai lavorando.
+
+86
+00:06:34,140 --> 00:06:39,060
+Otterrai molta più pratica di gruppo mentre svolgiamo gli esercizi e i progetti delle capsule.
+
+87
+00:06:39,060 --> 00:06:39,720
+Tutto ok.
+
+88
+00:06:39,720 --> 00:06:45,450
+Grazie a tutti e ci vediamo alla prossima lezione
+
+89
+00:06:45,960 --> 00:06:46,480
+&nbsp;
+
+90
+00:06:46,620 --> 00:06:48,480
+&nbsp;

@@ -1,0 +1,339 @@
+1
+00:00:05,160 --> 00:00:11,100
+Herkese merhaba ve finansör proje çözümleri ders serisinin isteğe bağlı son bölümüne hoş geldiniz.
+
+2
+00:00:11,580 --> 00:00:17,100
+İsteğe bağlı olan bu son bölümde, finansal veriler için özel olarak tasarlanmış çizgi çizgileri
+
+3
+00:00:17,280 --> 00:00:19,780
+ve kol düğmeleri görselleştirmelerinden bazılarını inceleyeceğiz.
+
+4
+00:00:20,010 --> 00:00:23,070
+Başlamak için dışarı çıkıp Jüpiter defterine atlayalım.
+
+5
+00:00:23,070 --> 00:00:25,260
+Tamam, burada Jüpiter defterindeyim.
+
+6
+00:00:25,260 --> 00:00:30,660
+Seaborne kullanarak bir küme haritası hazırlamamızda son kez, size Clottey kullanarak
+
+7
+00:00:30,660 --> 00:00:33,780
+bir ısı haritası nasıl hazırlayabileceğinizi göstermek istedim.
+
+8
+00:00:33,780 --> 00:00:37,000
+Aslında dışarı çıkabilir ve bu veri oranını burada kaldırabilirsiniz.
+
+9
+00:00:37,080 --> 00:00:45,560
+Bu hücrenin korelasyon verileri çerçeve çizelim ve gidelim ve bunu alt çizgi çekirdeği olarak kaydetmeyelim.
+
+10
+00:00:46,860 --> 00:00:49,920
+Ve sonra içeri girip kapanışa ya da kare çekirdeğe bir göz atacağız.
+
+11
+00:00:49,920 --> 00:00:52,740
+Doğru veri çerçevesine sahip olduğumuzdan emin olun.
+
+12
+00:00:52,740 --> 00:00:58,440
+Görünüşe göre onu matris formunda yapmış gibi görünüyorsun ve daha sonra şunu
+
+13
+00:00:58,440 --> 00:01:05,520
+çizelim diyebiliriz ve ısı haritasının çeşitlerini belirtebilirsin ve buna benzer bir ısı haritası alırsın.
+
+14
+00:01:05,520 --> 00:01:08,520
+Şimdi bu renk skalası aslında pek yararlı değil.
+
+15
+00:01:08,520 --> 00:01:14,730
+Böylece, devam edip renk skalası argümanlarına sahip başka bir renk ölçeği koyabilir
+
+16
+00:01:14,730 --> 00:01:20,920
+ve muhtemelen en kullanışlı olanı R D için kırmızı, mavi sarıdır.
+
+17
+00:01:20,940 --> 00:01:28,350
+B daha fazla renk ölçeği istiyorsanız, çizilen belgelere referans verebilirsiniz.
+
+18
+00:01:28,420 --> 00:01:33,210
+Renk ölçeğini biraz daha iyi kontrol edebilirsiniz; bu, korelasyona göre 0'dan 1'e gider.
+
+19
+00:01:33,240 --> 00:01:35,310
+Bu artık interaktif.
+
+20
+00:01:35,310 --> 00:01:41,470
+Şimdi yine Bourne'un kendi görselleştirmesini görmeyi tercih ediyorum ancak kol düğmeleri kitaplıklarını kullanarak
+
+21
+00:01:41,520 --> 00:01:43,980
+arsa seçeneklerinden haberdar olmanızı istedim.
+
+22
+00:01:43,980 --> 00:01:45,550
+Pekala, tamam mı?
+
+23
+00:01:45,600 --> 00:01:50,810
+Devam edin ve kol düğmelerinin ve çizgi çizgilerinin finansal özelliklerine kavuşalım.
+
+24
+00:01:51,540 --> 00:01:57,840
+edebilir ve çizgi çizgisini kullanarak bir mum grafikleri hazırlayıp bırakabilir ve size şunu gösterebilirim:
+
+25
+00:01:57,870 --> 00:01:58,810
+Böylece devam
+
+26
+00:01:58,830 --> 00:02:02,550
+İhtiyacımız olan ilk şey, Bank of America hisselerini almaktır.
+
+27
+00:02:02,550 --> 00:02:07,620
+Bunu sadece çerçeve durumuna bakarsak b c ile yapacağım, açık yüksek düşük yakınlığa
+
+28
+00:02:07,620 --> 00:02:14,640
+sahip olduğumuzu ve biz onu kullanacağımız modada I arsa kullanmak için belirli bir düzene ihtiyacımız olduğunu hatırlayın.
+
+29
+00:02:14,850 --> 00:02:16,560
+Bu yüzden açık
+
+30
+00:02:19,830 --> 00:02:25,130
+havada yüksekten aşağıya, sonra da yakın aramayı kapıyorum.
+
+31
+00:02:25,380 --> 00:02:27,660
+Gerçek hacmi istemiyoruz.
+
+32
+00:02:27,660 --> 00:02:32,230
+Ve sonra sadece 2015 değerlerini istiyorum.
+
+33
+00:02:32,240 --> 00:02:43,390
+Yani, 1 Ocak 2016'da I-X 2015, bir dize 2016 olarak görülen herhangi bir kullanım içindir.
+
+34
+00:02:43,430 --> 00:02:45,420
+Ve 1 Ocak'a gidelim ve söyleyelim.
+
+35
+00:02:45,420 --> 00:02:53,070
+Yani 2015 için tüm değerler BAC 15 olarak kaydedilecek.
+
+36
+00:02:54,180 --> 00:03:01,380
+Ve bir sonraki satırda, devam edip c 15, arsa yaptığımı düşündüğümü söyleyeceğim ve aslında bunun içinde bir şeyler belirteceğim demeye
+
+37
+00:03:01,380 --> 00:03:02,060
+devam edeceğim.
+
+38
+00:03:02,070 --> 00:03:07,660
+Kindel'e eşit olduğunu söyleyeceğim argümanları çiziyorum.
+
+39
+00:03:08,700 --> 00:03:13,260
+Ve sonra aslında bir arsa kullanarak bir şamdan arsa oluşturmak mümkün olacak.
+
+40
+00:03:13,260 --> 00:03:17,880
+Şimdi şamdan arsasının ne olduğunu bilmiyorsanız, finansal analiz için.
+
+41
+00:03:17,880 --> 00:03:23,520
+Temel olarak stokun renkten kaynaklanan o güne kadar yükselip yükselmediğini size söyler,
+
+42
+00:03:23,520 --> 00:03:30,360
+böylece yeşil artan kırmızı azalır ve daha sonra burada açılış yüksekini ve kapanış fiyatını
+
+43
+00:03:30,360 --> 00:03:30,640
+bildirir.
+
+44
+00:03:30,650 --> 00:03:34,240
+Bu bilgiyi ileride gidebilir ve Wikipedia üzerinde bakabilirsiniz.
+
+45
+00:03:34,380 --> 00:03:36,890
+Daha fazla bilgi isterseniz mum ızgarası.
+
+46
+00:03:36,900 --> 00:03:42,150
+Aslında bunları okumak isterim, ancak bu sadece finansal analiz için daha fazla, bu nedenle temelde
+
+47
+00:03:42,150 --> 00:03:46,640
+açık yüksek düşük kapanışı ve hisse senedinin o güne kadar yükselip gelmediğini anlatıyor.
+
+48
+00:03:47,520 --> 00:03:48,220
+Tamam.
+
+49
+00:03:48,480 --> 00:03:55,430
+Devam edin ve SMK olan bir sonraki şemayı kontrol edelim ve bu basitçe basitçe hareket eden bir
+
+50
+00:03:55,440 --> 00:03:56,270
+ortalamalar arsa.
+
+51
+00:03:56,280 --> 00:03:59,440
+Arsa, sizin için otomatik olarak tür yaratabilir.
+
+52
+00:03:59,520 --> 00:04:04,220
+Morgan Stanley hisse senetleri için bunu yapacağız.
+
+53
+00:04:04,890 --> 00:04:09,180
+Bu yüzden ilerleyip Morgan Stanley stokunun yakın sütununu alacağım.
+
+54
+00:04:09,210 --> 00:04:14,330
+Bunu 2015 yılı için yapmak istiyorum, bu nedenle aynı tarihleri ​​belirteceğim.
+
+55
+00:04:14,330 --> 00:04:15,020
+Ben burada kalmıştım.
+
+56
+00:04:15,030 --> 00:04:16,200
+arayacağız.
+
+57
+00:04:19,170 --> 00:04:28,690
+Hadi gidip buraya gelenlere kapatalım 2015'ten dilim cipsini alıp bir alt çizgi
+
+58
+00:04:28,710 --> 00:04:35,430
+Ve bu kol düğmelerinin teknik analiz şeması yetenekleridir ve daha sonra,
+
+59
+00:04:35,430 --> 00:04:46,050
+çalışmamızın SMK belirtilmemiş periyotlar olduğunu ve birkaç ortak teknik analiz olan 13 21 ve 55 sayacağım birkaç
+
+60
+00:04:46,050 --> 00:04:48,910
+dönem olacağını söyleyeceğim. dönemleri.
+
+61
+00:04:49,320 --> 00:04:54,480
+Ve burada basit hareketli ortalamaları görebiliriz ve hareket halindeyken bunları
+
+62
+00:04:54,480 --> 00:05:00,170
+oldukça güzel raporlarlar ve bunları büyütebilir ve isterseniz daha fazla bilgi görebilirsiniz.
+
+63
+00:05:00,180 --> 00:05:00,820
+Tamam.
+
+64
+00:05:01,080 --> 00:05:04,390
+Hadi devam edelim ve burada daha doğru ilerleyelim.
+
+65
+00:05:04,410 --> 00:05:08,700
+Sonuncusu, Bank of America için Bollinger Band arsası.
+
+66
+00:05:09,000 --> 00:05:14,880
+Ve yine, bu, zaman içinde ilerledikçe, hisse senedi fiyatının standart sapmasını gösteren
+
+67
+00:05:14,970 --> 00:05:18,020
+hangi tür bir teknik analiz yapabileceğiniz.
+
+68
+00:05:18,270 --> 00:05:21,180
+Ancak yine 2015 yılı için bunu istiyorum.
+
+69
+00:05:21,210 --> 00:05:28,590
+Devam edin ve aynı dilimi kopyalayıp yapıştırın ve t yapın. teknik analiz tablosu için alt çizgi ve
+
+70
+00:05:28,590 --> 00:05:33,360
+bizim yapacağımız çalışma B O L L dizesine eşittir.
+
+71
+00:05:34,090 --> 00:05:39,900
+Şimdi baktığımızda üst ve alt bantları birlikte hareket ettikçe görebiliriz, ayrıca basit bir hareketli
+
+72
+00:05:39,900 --> 00:05:43,530
+ortalama ve ardından turuncu olan gerçek kapanış fiyatı.
+
+73
+00:05:43,890 --> 00:05:45,590
+TAMAM.
+
+74
+00:05:45,870 --> 00:05:49,560
+Burada kesinlikle çok daha spesifik finans konuları var.
+
+75
+00:05:49,560 --> 00:05:52,670
+Gittiğimiz her şeyi anlamıyorsan endişelenmeyin.
+
+76
+00:05:52,800 --> 00:05:57,840
+Gerçekten endişe etmeniz gereken tek şey, panderers ile yaptığım şey ve
+
+77
+00:05:57,840 --> 00:06:00,420
+ders boyunca temel görselleştirme operasyonlarından bazıları.
+
+78
+00:06:00,420 --> 00:06:05,610
+Tüm bu belirli teknik analiz planlarını anlamadıysanız endişelenmeyin çünkü bunlar sadece finansal bir
+
+79
+00:06:05,610 --> 00:06:09,990
+analiz sınıfı olmadığı için bu konuyla zaten tanıdık kişiler için gerçekten
+
+80
+00:06:09,990 --> 00:06:10,690
+referanslar.
+
+81
+00:06:10,770 --> 00:06:16,260
+Bu sadece temelde bir veri bilimi sınıfı ve finansal analiz kendi çalışma alanını oluşturuyor.
+
+82
+00:06:16,260 --> 00:06:16,780
+Tamam.
+
+83
+00:06:16,830 --> 00:06:21,810
+Bu tür analizlere girdiyseniz ve bir sonraki konferansda görüşeceğiz, bu ilginç
+
+84
+00:06:21,810 --> 00:06:22,710
+buluyorum umuyoruz.
+
+85
+00:06:22,710 --> 00:06:23,720
+Herkese teşekkürler.

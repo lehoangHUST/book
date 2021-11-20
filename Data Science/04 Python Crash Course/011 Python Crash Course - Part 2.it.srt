@@ -1,0 +1,903 @@
+1
+00:00:05,220 --> 00:00:09,220
+Salve a tutti e benvenuti alla seconda parte del corso di crash di Python.
+
+2
+00:00:09,240 --> 00:00:12,240
+Andiamo avanti e saltiamo sul taccuino di Jupiter per iniziare.
+
+3
+00:00:12,660 --> 00:00:12,900
+Tutto ok.
+
+4
+00:00:12,900 --> 00:00:14,630
+Eccomi in un chip in un notebook.
+
+5
+00:00:14,640 --> 00:00:22,350
+L'ultima volta che abbiamo lasciato il modo di afferrare gli elementi da una lista annidata abbiamo esaminato le stringhe e gli elenchi e questi
+
+6
+00:00:22,350 --> 00:00:26,730
+sono correlati tra loro perché in realtà sono solo sequenze di elementi e puoi
+
+7
+00:00:26,760 --> 00:00:33,120
+usare la stessa notazione dell'indice, sia su una stringa che su una lista che hai appena passato tra parentesi gli
+
+8
+00:00:33,210 --> 00:00:38,310
+indici reali che vuoi e groud gli elementi che sono a quell'indice o fetta dell'indice.
+
+9
+00:00:38,310 --> 00:00:41,950
+Andiamo avanti e passiamo a pensare ai dizionari.
+
+10
+00:00:42,030 --> 00:00:49,650
+Puoi creare un dizionario in Python specificando parentesi graffe e poi avrai una chiave con due punti
+
+11
+00:00:50,010 --> 00:00:53,330
+e il valore che corrisponde a quella chiave.
+
+12
+00:00:53,430 --> 00:00:54,440
+Mostraci un altro esempio.
+
+13
+00:00:54,450 --> 00:01:04,410
+Andremo avanti e creeremo due punti e il valore per Q2 sarà che uno o tre dizionari si comportano come coppie di valori
+
+14
+00:01:04,410 --> 00:01:09,830
+chiave proprio come una tabella hash invece di contenere elementi in una sequenza.
+
+15
+00:01:09,840 --> 00:01:14,630
+Contengono gli elementi tramite le chiavi e quindi i loro valori effettivi.
+
+16
+00:01:14,640 --> 00:01:20,910
+si finisce per passare la notazione della parentesi quadra è il reale stesso e non restituisce il valore.
+
+17
+00:01:20,910 --> 00:01:26,250
+Quindi, invece di dire qualcosa come 0, non funzionerà perché non c'è alcuna chiave lì
+
+18
+00:01:26,250 --> 00:01:30,420
+e non la tiene in una posizione di sequenza effettiva in cui
+
+19
+00:01:30,420 --> 00:01:36,000
+Ad esempio, se volessi ottenere il numero 123, chiameresti il ​​tuo dizionario e poi passerai
+
+20
+00:01:36,000 --> 00:01:38,200
+la chiave corrispondente a quel valore.
+
+21
+00:01:38,250 --> 00:01:45,150
+In questo caso, uno due tre e i dizionari possono contenere praticamente tutti gli elementi come valori.
+
+22
+00:01:45,240 --> 00:01:51,120
+Quindi possiamo usare una chiave K-1 e quindi puoi avere un'altra lista qui.
+
+23
+00:01:51,150 --> 00:01:52,900
+Uno due tre.
+
+24
+00:01:53,790 --> 00:02:00,170
+E ora se chiamo un dizionario ho una chiave K K uno e poi la lista 2:59 ha l'oggetto.
+
+25
+00:02:00,330 --> 00:02:04,590
+Quindi posso chiamare K-1 e restituire quell'elenco uno due tre.
+
+26
+00:02:04,890 --> 00:02:08,740
+E ora che ho questa lista posso effettivamente fare l'indicizzazione normale.
+
+27
+00:02:08,880 --> 00:02:11,250
+Questo non è nella lista, non nella chiave.
+
+28
+00:02:11,580 --> 00:02:13,600
+Quindi andiamo avanti e prendine due.
+
+29
+00:02:13,680 --> 00:02:19,230
+Quale sarà l'indice 1 e questo è fondamentalmente la stessa cosa che separa in due passaggi.
+
+30
+00:02:19,650 --> 00:02:22,260
+Quindi potresti fare qualcosa del genere.
+
+31
+00:02:22,260 --> 00:02:26,030
+La mia lista è uguale a quell'elemento al primo trimestre.
+
+32
+00:02:26,310 --> 00:02:31,800
+di simile a questo nella tua esercizi o avremo una specie di dizionario annidato e lista annidata.
+
+33
+00:02:31,800 --> 00:02:39,090
+E poi se guardi la mia lista che era la lista prima e usi la notazione brechen per afferrare tutto quello che
+
+34
+00:02:39,090 --> 00:02:45,000
+vuoi per quella lista o fai tutto in un solo passo lungo la stessa linea e avrai qualcosa
+
+35
+00:02:45,070 --> 00:02:49,620
+Sto per mostrarti un altro esempio in cui puoi avere effettivamente un dizionario
+
+36
+00:02:49,620 --> 00:02:58,180
+annidato all'interno di un altro dizionario in modo da poter dire K-1 colon pasan in un altro dizionario con il suo set di parentesi
+
+37
+00:02:58,260 --> 00:03:04,140
+graffe lì pasand qualcosa come il colon interno della chiave e poi un elenco di valori.
+
+38
+00:03:04,140 --> 00:03:06,100
+Uno due tre.
+
+39
+00:03:06,120 --> 00:03:09,010
+Quindi diciamo che voglio prendere questo numero due.
+
+40
+00:03:09,390 --> 00:03:15,450
+Beh, la prima cosa che devi fare è chiamare K-1 e restituisce questo dizionario.
+
+41
+00:03:15,450 --> 00:03:20,490
+Quindi ho bisogno di una chiamata interna della chiave fuori da quella in modo che io possa fare quella di un'altra
+
+42
+00:03:20,490 --> 00:03:23,310
+serie di parentesi o potrei dividerlo in più passaggi utilizzando l'assegnazione variabile.
+
+43
+00:03:23,310 --> 00:03:24,950
+Ma faremo tutto in un'unica riga.
+
+44
+00:03:25,440 --> 00:03:32,640
+E ora ho uno due tre e due è che il secondo indice è 0 1 e che prende il numero
+
+45
+00:03:32,640 --> 00:03:33,230
+due lì.
+
+46
+00:03:33,570 --> 00:03:36,770
+Quindi di nuovo i dizionari non mantengono alcun ordine.
+
+47
+00:03:36,770 --> 00:03:40,410
+Sono solo mappature delle coppie di valori chiave.
+
+48
+00:03:40,410 --> 00:03:44,550
+Ora parliamo di booleani miliardi e Python sono piuttosto semplici.
+
+49
+00:03:44,550 --> 00:03:50,610
+È solo vero e poi falso con T maiuscola e maiuscola f.
+
+50
+00:03:50,640 --> 00:03:54,930
+OK andremo avanti e toccheremo su questi quando parliamo di operatori di confronto.
+
+51
+00:03:54,960 --> 00:03:58,010
+Ma parliamo di tuple e poi set.
+
+52
+00:03:58,110 --> 00:04:05,460
+Ricorda che una lista è appena definita come una sequenza di caratteri all'interno di parentesi quadre
+
+53
+00:04:05,460 --> 00:04:06,630
+separate da virgole.
+
+54
+00:04:06,930 --> 00:04:14,850
+E puoi andare avanti e prendere gli elementi da quella lista usando l'indicizzazione una tupla è molto simile tranne che al
+
+55
+00:04:14,850 --> 00:04:22,140
+posto delle parentesi quadre usate le parentesi e potete nuovamente afferrare gli elementi da quella tupla come se fosse
+
+56
+00:04:22,140 --> 00:04:24,980
+una lista usando la notazione della parentesi indice.
+
+57
+00:04:25,020 --> 00:04:30,840
+Ecco la differenza chiave tra una tupla di queste parentesi rispetto a una lista delle parentesi quadre.
+
+58
+00:04:31,410 --> 00:04:40,800
+Se torno alla mia lista e provo a riassegnare il primo elemento alla parola "nuove labbra", lascia che lo esegua di nuovo
+
+59
+00:04:40,800 --> 00:04:44,060
+perché in realtà ha riassegnato l'intera lista.
+
+60
+00:04:44,220 --> 00:04:46,410
+Controlliamo di nuovo l'elenco.
+
+61
+00:04:46,410 --> 00:04:46,620
+Tutto ok.
+
+62
+00:04:46,620 --> 00:04:48,850
+Quindi se stampo la mia lista ne ho una due tre.
+
+63
+00:04:48,990 --> 00:04:50,690
+Prendi il primo oggetto in quella lista.
+
+64
+00:04:50,700 --> 00:04:52,060
+Zero.
+
+65
+00:04:52,110 --> 00:04:52,890
+Perfezionare.
+
+66
+00:04:52,890 --> 00:04:57,750
+Ora permettimi di riassegnare zero per essere nuovo, proprio come abbiamo fatto nella lezione precedente.
+
+67
+00:04:57,750 --> 00:05:06,210
+E ora per un check out il mio elenco ho riassegnato l'elemento 0 ad essere nuovo e poi a 3 se voglio farlo per
+
+68
+00:05:06,210 --> 00:05:06,730
+la tupla.
+
+69
+00:05:06,730 --> 00:05:12,540
+Tuttavia se guardiamo la mia tupla è uno due tre, diciamo prendi 0 invece di uguale a
+
+70
+00:05:12,540 --> 00:05:13,870
+nuovo, avrò un errore.
+
+71
+00:05:14,220 --> 00:05:18,780
+E questo perché le tuple sono immutabili e non supportano l'assegnazione degli oggetti.
+
+72
+00:05:18,780 --> 00:05:23,250
+Voglio dire che non puoi modificare gli elementi all'interno di una tupla.
+
+73
+00:05:24,440 --> 00:05:29,610
+Il che significa che vorrai usare una tupla quando vuoi assicurarti che un utente non possa cambiare
+
+74
+00:05:29,670 --> 00:05:31,690
+gli oggetti all'interno della sequenza di oggetti.
+
+75
+00:05:31,740 --> 00:05:37,980
+E questa è la differenza principale tra una tupla e una lista una tupla è immutabile e una lista è mutabile, il che significa che
+
+76
+00:05:38,220 --> 00:05:40,360
+puoi cambiare gli elementi all'interno di una lista.
+
+77
+00:05:40,500 --> 00:05:43,110
+Non puoi fare la stessa cosa se una tupla.
+
+78
+00:05:43,110 --> 00:05:43,740
+Tutto ok.
+
+79
+00:05:43,860 --> 00:05:51,360
+Ora per discutere di set in Python un set è una raccolta di elementi unici.
+
+80
+00:05:51,360 --> 00:05:55,580
+graffe come un dizionario, tranne che non ha i due punti, ma solo elementi.
+
+81
+00:05:56,850 --> 00:05:58,590
+E sembra lo stesso di parentesi
+
+82
+00:05:58,590 --> 00:06:03,310
+Ora nota cosa succede se digito alcuni di questi numeri più di una volta.
+
+83
+00:06:04,650 --> 00:06:10,130
+Ricevo ancora lo stesso risultato perché un set è definito solo da elementi univoci.
+
+84
+00:06:10,290 --> 00:06:16,650
+Significato se provo a mettere in multipli degli stessi elementi ridurrà fino agli elementi
+
+85
+00:06:17,090 --> 00:06:26,980
+unici e in effetti puoi chiamare la funzione s e t set e fare un elenco per afferrare gli elementi unici per te.
+
+86
+00:06:27,040 --> 00:06:33,780
+Così passo un gruppo di elementi ripetuti nella funzione set che restituisce un insieme di elementi unici.
+
+87
+00:06:34,410 --> 00:06:40,060
+Se vuoi aggiungere elementi a un set puoi andare avanti e dire semplicemente per esempio si.
+
+88
+00:06:40,080 --> 00:06:47,790
+tre che dirai s Userai il metodo Aggiungi inserito nell'elemento che vuoi aggiungere per esempio 5.
+
+89
+00:06:47,790 --> 00:06:48,770
+Uno due
+
+90
+00:06:48,900 --> 00:06:52,970
+E se verifichiamo di nuovo il set, otteniamo 1 2 3 5.
+
+91
+00:06:53,160 --> 00:07:00,600
+Se tento di aggiungere 5 di nuovo, non recupererà un errore, ma lo manterrà sempre lo stesso perché è consentita
+
+92
+00:07:00,600 --> 00:07:04,160
+solo una istanza di 5 all'interno di un set.
+
+93
+00:07:04,170 --> 00:07:04,470
+Tutto ok.
+
+94
+00:07:04,500 --> 00:07:07,440
+Vogliamo davvero lavorare con gli insiemi proprio in questo corso.
+
+95
+00:07:07,440 --> 00:07:09,010
+Ma voglio che tu ne sia consapevole.
+
+96
+00:07:09,210 --> 00:07:11,940
+Sono solo una collezione di elementi unici.
+
+97
+00:07:12,170 --> 00:07:12,780
+OK.
+
+98
+00:07:13,080 --> 00:07:18,620
+Ora parliamo di operatori di confronto operatori di confronto consentono di confrontare due elementi
+
+99
+00:07:18,620 --> 00:07:19,440
+tra loro.
+
+100
+00:07:19,440 --> 00:07:23,320
+Queste sono cose come maggiore di meno che uguale a ecc. Ad esempio, entra e crea una nuova cella.
+
+101
+00:07:24,210 --> 00:07:26,820
+Posso dire che è maggiore di due
+
+102
+00:07:26,820 --> 00:07:33,060
+e restituirà un valore booleano sia vero che falso a seconda di quale sia la tua affermazione.
+
+103
+00:07:33,060 --> 00:07:34,240
+Quindi uno maggiore di due è falso.
+
+104
+00:07:34,250 --> 00:07:36,990
+1 meno di 2 è vero.
+
+105
+00:07:37,040 --> 00:07:39,700
+E puoi fare la stessa cosa per maggiore o uguale ao minore o uguale a.
+
+106
+00:07:40,200 --> 00:07:47,980
+Puoi anche controllare l'uguaglianza usando due segni di uguale e notare come il tipo
+
+107
+00:07:48,000 --> 00:07:53,100
+di evidenziazione della sintassi ti aiuti a uscire qui.
+
+108
+00:07:53,100 --> 00:07:54,480
+Quindi è uguale a uno.
+
+109
+00:07:54,540 --> 00:07:55,770
+Questo è vero.
+
+110
+00:07:55,800 --> 00:07:56,880
+È uno uguale a due che è falso.
+
+111
+00:07:57,210 --> 00:07:59,410
+Non vero.
+
+112
+00:07:59,430 --> 00:08:00,670
+Ora ricorda che vuoi usare due segni uguali.
+
+113
+00:08:00,690 --> 00:08:03,650
+Se si tenta di fare qualcosa di simile a questo, si otterrà un
+
+114
+00:08:03,660 --> 00:08:07,970
+errore perché Python pensa che si stia tentando di eseguire un'assegnazione di variabile e non un'operazione di confronto effettiva.
+
+115
+00:08:07,980 --> 00:08:12,190
+Se vuoi verificare la qualità che fai.
+
+116
+00:08:12,330 --> 00:08:14,550
+Punto esclamativo segno uguale.
+
+117
+00:08:14,550 --> 00:08:16,880
+Quindi uno non è uguale a tre.
+
+118
+00:08:16,920 --> 00:08:19,060
+Beh, questo è vero.
+
+119
+00:08:19,290 --> 00:08:20,500
+È vero che uno non
+
+120
+00:08:20,550 --> 00:08:25,830
+è uguale a tre e puoi fare la stessa cosa non solo con i numeri ma anche con le stringhe.
+
+121
+00:08:27,180 --> 00:08:28,130
+Quindi è alto uguale a comprare.
+
+122
+00:08:28,170 --> 00:08:30,410
+Questo è falso.
+
+123
+00:08:30,450 --> 00:08:31,070
+Non è lo stesso, non è uguale ad esso.
+
+124
+00:08:31,080 --> 00:08:33,780
+Bene, è vero
+
+125
+00:08:33,810 --> 00:08:35,450
+Ora parliamo di combinare
+
+126
+00:08:35,460 --> 00:08:40,380
+questi operatori di confronto con qualche operatore logico come e, quindi o.
+
+127
+00:08:40,400 --> 00:08:42,900
+In questo momento stiamo guardando solo una condizione è una in meno di due.
+
+128
+00:08:43,010 --> 00:08:46,790
+Bene, è vero
+
+129
+00:08:47,040 --> 00:08:48,300
+E se volessimo combinarlo
+
+130
+00:08:48,350 --> 00:08:53,900
+con un'altra condizione, come due meno di tre, possiamo usare la parola chiave e per farlo.
+
+131
+00:08:53,970 --> 00:08:55,780
+Quindi dirò che è uno in meno di due ed è a meno di tre.
+
+132
+00:08:55,800 --> 00:09:00,790
+E questo tornerà vero.
+
+133
+00:09:01,080 --> 00:09:02,890
+Tuttavia se uno di questi è impostato su false è uno in meno di due.
+
+134
+00:09:02,940 --> 00:09:06,780
+Bene, è vero ed è troppo più grande di tre.
+
+135
+00:09:06,810 --> 00:09:09,520
+Let's false.
+
+136
+00:09:09,560 --> 00:09:10,620
+Quindi hai un vero e falso o restituisci falso.
+
+137
+00:09:10,620 --> 00:09:14,970
+Quindi se l'operatore e tutte le condizioni devono essere vere.
+
+138
+00:09:14,970 --> 00:09:18,140
+E personalmente mi piace racchiudere queste affermazioni tra parentesi.
+
+139
+00:09:18,410 --> 00:09:22,440
+Quindi sono un po 'più leggibili.
+
+140
+00:09:22,620 --> 00:09:24,020
+Non devi farlo ma ti
+
+141
+00:09:24,030 --> 00:09:28,290
+raccomando di farlo perché è un po 'più leggibile quando torni a questo codice in seguito.
+
+142
+00:09:28,290 --> 00:09:31,320
+Hai anche l'operatore OR che è molto
+
+143
+00:09:31,320 --> 00:09:37,250
+simile tranne che ora in questo caso solo uno di questi deve essere vero.
+
+144
+00:09:37,250 --> 00:09:37,790
+Quindi possiamo dire che uno è meno di due o è maggiore di tre.
+
+145
+00:09:37,860 --> 00:09:42,810
+Bene, uno di questi è vero.
+
+146
+00:09:42,990 --> 00:09:45,330
+Il primo è.
+
+147
+00:09:45,330 --> 00:09:46,410
+Quindi, torniamo alla verità.
+
+148
+00:09:46,470 --> 00:09:47,990
+E puoi effettivamente sovrapporli uno
+
+149
+00:09:48,170 --> 00:09:54,300
+sopra l'altro in modo da poter dire in un altro o qui per noi uno uguale a uno ecc. E se vuoi veramente capirli, in realtà è possibile che solo il valore booleano di Passons sia così vero e
+
+150
+00:09:54,300 --> 00:09:56,220
+vero che ritorna vero vero e
+
+151
+00:09:56,410 --> 00:10:00,210
+falso restituisce falso vero o falso è vero e quindi fondamentalmente lo è.
+
+152
+00:10:01,020 --> 00:10:13,850
+Quindi solo o.
+
+153
+00:10:13,910 --> 00:10:14,130
+E ora andiamo avanti e discutiamo di alcuni blocchi di codice parlando di if if else statements.
+
+154
+00:10:14,140 --> 00:10:15,030
+Un sacco
+
+155
+00:10:15,110 --> 00:10:24,990
+di volte dovrai eseguire il codice se una condizione è vera e puoi usare la frase se hai lasciato una dichiarazione L per farlo.
+
+156
+00:10:25,370 --> 00:10:32,060
+Diciamo che abbiamo una condizione se uno è meno di due.
+
+157
+00:10:32,090 --> 00:10:34,450
+Vogliamo eseguire una sorta di azione come una dichiarazione di stampa.
+
+158
+00:10:34,460 --> 00:10:40,830
+Andremo avanti e dire Yep.
+
+159
+00:10:41,180 --> 00:10:45,510
+Quindi stiamo dicendo che se questa condizione è vera due punti e notiamo che c'è un blocco di spazi
+
+160
+00:10:45,710 --> 00:10:47,620
+bianchi qui e questo è molto importante in Python.
+
+161
+00:10:48,470 --> 00:10:55,370
+Python non usa parentesi per separare il blocco delle istruzioni di esecuzione del codice.
+
+162
+00:10:55,370 --> 00:10:56,990
+Usa invece gli spazi bianchi.
+
+163
+00:10:57,020 --> 00:11:02,030
+E se digiti semplicemente inserisci qui dopo i due punti, farà automaticamente la rientranza per te in Giove.
+
+164
+00:11:02,030 --> 00:11:03,800
+E la maggior parte delle idee che supportano Python faranno anche la stessa cosa.
+
+165
+00:11:03,890 --> 00:11:08,640
+OK, così abbiamo.
+
+166
+00:11:08,930 --> 00:11:12,920
+Se uno è meno che eseguire un'azione e in pratica lo sta dicendo solo se la stampa vera
+
+167
+00:11:12,920 --> 00:11:13,590
+esegue codice ecc. Oppure puoi semplicemente fare cose come puoi dire due più due è uguale a due più due ecc. E poi quando vedi X noterai che sono le quattro.
+
+168
+00:11:13,610 --> 00:11:24,290
+Quindi questa è solo un'affermazione.
+
+169
+00:11:24,590 --> 00:11:26,260
+Quindi se alcune condizioni sono vere colon eseguire il blocco di codice che è rientrato sotto di esso.
+
+170
+00:11:26,390 --> 00:11:34,340
+Tutto ok.
+
+171
+00:11:34,360 --> 00:11:37,020
+Ora parliamo di alcune altre operazioni che possiamo fare.
+
+172
+00:11:37,100 --> 00:11:38,290
+Diciamo che vogliamo
+
+173
+00:11:38,300 --> 00:11:44,680
+verificare più condizioni o diciamo che vogliamo che si verifichi qualcosa nel caso in cui non sia vero.
+
+174
+00:11:44,680 --> 00:11:45,470
+Quindi dirò che se uno è uguale alle stampe di Supe prima, le stampe di Colan durano per ultime.
+
+175
+00:11:45,620 --> 00:11:49,240
+E che cosa sta per fare, dirà se questa condizione è vera, esegui altrimenti questo codice.
+
+176
+00:11:49,520 --> 00:11:54,860
+delle cose di cui sopra è vera e nota come il resto si allinea con la dichiarazione if, sappiamo che sono collegate l'una con l'altra.
+
+177
+00:11:54,860 --> 00:11:55,600
+Altrimenti, se nessuna
+
+178
+00:11:55,670 --> 00:12:12,400
+Colin Crantz è l'ultimo, quindi se eseguo questo codice, l'ultima volta viene eseguito se procedo e lo commuovo in modo che
+
+179
+00:12:12,440 --> 00:12:19,460
+la prima condizione sia vera prima di essere eseguita.
+
+180
+00:12:19,550 --> 00:12:26,180
+Ora forse vuoi controllare più condizioni, non solo una condizione e poi qualche altra affermazione.
+
+181
+00:12:26,240 --> 00:12:28,230
+È qui che puoi utilizzare la sinistra per verificare condizioni multiple.
+
+182
+00:12:28,330 --> 00:12:35,300
+Quindi puoi andare avanti.
+
+183
+00:12:35,300 --> 00:12:39,970
+Vai avanti e dì qualcosa di simile.
+
+184
+00:12:39,980 --> 00:12:45,350
+Elif 3 è uguale a 3.
+
+185
+00:12:45,770 --> 00:12:50,710
+Ora entriamo e cambia il primo in modo che sia nuovamente falso.
+
+186
+00:12:51,530 --> 00:12:52,350
+Stamperemo qualcos'altro stampato a metà.
+
+187
+00:12:52,370 --> 00:12:53,320
+Tutto ok.
+
+188
+00:12:53,350 --> 00:12:56,850
+Quindi andiamo avanti e gestiamo questo e analizziamo cosa sta succedendo.
+
+189
+00:12:56,870 --> 00:12:59,860
+Python sta solo dicendo che se questa condizione è vera, esegui altrimenti questo blocco di codice.
+
+190
+00:13:00,200 --> 00:13:04,660
+Oppure se questa condizione è vera.
+
+191
+00:13:04,670 --> 00:13:05,030
+Esegui questo codice di blocco altro.
+
+192
+00:13:05,030 --> 00:13:07,920
+affermazioni che vuoi, quindi puoi dirne un altro qui.
+
+193
+00:13:07,930 --> 00:13:14,630
+Se nessuna delle condizioni sopra indicate è vera, esegui questo codice di blocco e puoi continuare ad impilare tutte le
+
+194
+00:13:14,750 --> 00:13:18,030
+Elif uscirà e dirà se quattro è uguale a quattro Crantz secondi.
+
+195
+00:13:18,230 --> 00:13:20,820
+Tutto ok.
+
+196
+00:13:20,840 --> 00:13:26,630
+E nota cosa succede qui.
+
+197
+00:13:26,960 --> 00:13:29,910
+Anche se questo è vero, tre è uguale a tre.
+
+198
+00:13:30,260 --> 00:13:38,210
+Stiamo solo eseguendo la prima istanza di una condizione vera.
+
+199
+00:13:38,240 --> 00:13:38,530
+E questo è un aspetto
+
+200
+00:13:38,530 --> 00:13:39,990
+importante da tenere a mente quando lo si utilizza se le istruzioni elif else eseguiranno la prima condizione vera e il gioco è fatto.
+
+201
+00:13:40,220 --> 00:13:43,500
+Tutto ok.
+
+202
+00:13:43,580 --> 00:13:47,580
+Questo è tutto per le prossime serie di conferenze della seconda parte,
+
+203
+00:13:47,660 --> 00:13:52,190
+inizieremo a discutere di loop durante loops e poi alcune altre funzioni in Python.
+
+204
+00:13:52,190 --> 00:13:56,380
+OK.
+
+205
+00:13:56,420 --> 00:13:56,960
+Come una rapida
+
+206
+00:13:57,320 --> 00:14:03,140
+rassegna di ciò che abbiamo fatto, siamo tornati ai dizionari top che sono ancora solo coppie di valori chiave e puoi prendere i valori inserendo le chiavi.
+
+207
+00:14:03,230 --> 00:14:05,310
+Ricordo che puoi avere dizionari nidificati o elenchi annidati all'interno di un dizionario.
+
+208
+00:14:05,690 --> 00:14:06,100
+Ora abbiamo valori booleani veri e falsi.
+
+209
+00:14:06,140 --> 00:14:12,050
+Abbiamo liste di tuple che sono immutabili.
+
+210
+00:14:12,050 --> 00:14:15,880
+Molto simile agli elenchi, tranne per il fatto che non è possibile andare avanti e
+
+211
+00:14:15,970 --> 00:14:20,340
+cambiare roba una volta all'interno di una tupla perché la tupla non supporta la riassegnazione degli articoli.
+
+212
+00:14:20,780 --> 00:14:23,290
+Abbiamo set che ricordo set sono solo una raccolta di elementi unici.
+
+213
+00:14:23,420 --> 00:14:27,170
+Quindi se hai un sacco di elementi ripetuti e hai un set, sono solo quelli unici.
+
+214
+00:14:27,440 --> 00:14:32,190
+Ora abbiamo operatori di confronto maggiori di meno che maggiori o uguali a meno uguali al
+
+215
+00:14:32,190 --> 00:14:34,670
+controllo di uguaglianza e quindi controlliamo la disuguaglianza.
+
+216
+00:14:34,670 --> 00:14:39,500
+E tu puoi fare la stessa cosa per le stringhe.
+
+217
+00:14:39,500 --> 00:14:45,040
+Si dispone di questi operatori logici e quindi o è possibile confrontare più istruzioni condizionali.
+
+218
+00:14:45,410 --> 00:14:50,780
+E poi hai la logica se elefant else che ti permette di impilare ed eseguire blocchi di codice basandoti
+
+219
+00:14:50,780 --> 00:14:53,080
+su una sorta di condizione che viene agitata.
+
+220
+00:14:53,120 --> 00:14:54,940
+Tutto ok.
+
+221
+00:14:55,010 --> 00:15:00,830
+Spero ti piaccia questa lezione.
+
+222
+00:15:01,070 --> 00:15:06,620
+Ci vediamo al prossimo.
+
+223
+00:15:06,620 --> 00:15:10,230
+&nbsp;
+
+224
+00:15:10,340 --> 00:15:11,420
+&nbsp;
+
+225
+00:15:11,450 --> 00:15:12,730
+&nbsp;
+
+226
+00:15:12,740 --> 00:15:14,060
+&nbsp;

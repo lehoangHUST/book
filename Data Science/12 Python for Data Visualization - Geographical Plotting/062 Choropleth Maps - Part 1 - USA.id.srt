@@ -1,0 +1,943 @@
+1
+00:00:05,370 --> 00:00:10,440
+Halo semuanya dan selamat datang di kuliah peta kloroplas dan kuliah ini kita akan
+
+2
+00:00:10,440 --> 00:00:15,870
+membahas cara menggunakan Python dan sebagian lagi untuk membuat peta karang yang memungkinkan kita merencanakan
+
+3
+00:00:15,870 --> 00:00:19,080
+informasi baik dalam skala global atau skala nasional.
+
+4
+00:00:19,080 --> 00:00:22,170
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+5
+00:00:22,560 --> 00:00:22,830
+Baiklah.
+
+6
+00:00:22,830 --> 00:00:27,360
+Di sini saya berada di catatan Jupiter tetapi buku-buku Supernaut disebut peta Kuro plus.
+
+7
+00:00:27,360 --> 00:00:33,600
+Dan Anda dapat menemukan di bawah Python untuk visualisasi data di bawah folder merencanakan geografis dan Anda harus
+
+8
+00:00:33,600 --> 00:00:38,480
+mulai di buku catatan atau bekerja di dalam buku ini untuk mengakses data V.
+
+9
+00:00:38,490 --> 00:00:43,800
+Kita akan bekerja lagi dengan semua kode yang akan kita ketik sebagai referensi di sini.
+
+10
+00:00:43,890 --> 00:00:49,920
+Dan juga dia harus tahu bahwa ada referensi untuk penjelasannya ditambah plot bisa sangat sulit
+
+11
+00:00:49,920 --> 00:00:53,410
+pada awalnya terutama sintaks yang digunakan untuk plotless.
+
+12
+00:00:53,610 --> 00:00:57,070
+Jadi, Anda selalu ingin menyimpan buku catatan ini sebagai referensi untuk berbagai hal.
+
+13
+00:00:57,250 --> 00:01:01,720
+Dan kita akan melakukan hanya pergi keluar dan menjelaskan kode dalam buku catatan ini melihat
+
+14
+00:01:01,740 --> 00:01:08,620
+beberapa contoh sederhana pada awalnya menggunakan plot skala nasional hanya kemudian kita akan melihat beberapa data nyata melakukan plot yang lebih besar pada skala
+
+15
+00:01:08,630 --> 00:01:13,510
+nasional dan kemudian kita ' kita akan pergi ke depan dan melihat skala dunia sehingga kita dapat
+
+16
+00:01:13,520 --> 00:01:14,960
+benar-benar merencanakan dua negara.
+
+17
+00:01:14,970 --> 00:01:18,100
+Baiklah, mari kita mulai dan memulai buku catatan bab baru.
+
+18
+00:01:18,300 --> 00:01:22,190
+Baiklah, saya di sini di buku catatan Jupiter. Saya akan melanjutkan dan memulai dengan beberapa impor.
+
+19
+00:01:22,200 --> 00:01:28,730
+Pertama saya akan mengimpor sedikit dot Ali plot as he y.
+
+20
+00:01:29,310 --> 00:01:38,520
+Dan kemudian saya akan mengatakan untuk melakukan semua ini off-line atau menyimpan dari plot impor off-line unduh
+
+21
+00:01:39,720 --> 00:01:41,610
+undian plot Legia.
+
+22
+00:01:41,640 --> 00:01:44,250
+Dan saya hanya menggunakan tab untuk melengkapi otomatis ini.
+
+23
+00:01:44,250 --> 00:01:51,000
+Jadi saya cukup ketik di dalamnya dan kemudian akan melengkapi otomatis di dalamnya menggarisbawahi mode notebook dan kemudian plot
+
+24
+00:01:51,270 --> 00:01:52,180
+dan plot.
+
+25
+00:01:52,730 --> 00:01:57,210
+Jadi untuk menyelesaikan fungsi dan Anda hanya dapat menyalin dan menempelkan kode ini dari notebook jika Anda mau.
+
+26
+00:01:57,810 --> 00:02:07,410
+Dan kemudian saya juga akan menyebutnya mode notebook garis bawah dan passen terhubung sama dengan true.
+
+27
+00:02:07,830 --> 00:02:13,020
+Dan kita dapat melihat semuanya di dalam notebook Jupiter dan ada tautan di notebook kuliah
+
+28
+00:02:13,320 --> 00:02:16,130
+Anda untuk opsi lain yang menggunakan sebagian offline.
+
+29
+00:02:16,580 --> 00:02:17,420
+BAIK.
+
+30
+00:02:17,460 --> 00:02:20,950
+Sekali lagi seperti yang saya sebutkan plot pemetaan Lee bisa agak sulit untuk terbiasa.
+
+31
+00:02:21,000 --> 00:02:26,160
+Jadi ada salinan lembar contekan dan juga tautan ke dalamnya di notebook Jupiter dan terlihat
+
+32
+00:02:26,160 --> 00:02:26,920
+seperti ini.
+
+33
+00:02:26,970 --> 00:02:29,980
+Jadi, Anda dapat melihat bagan dasar dengan sebagian cara menggunakannya.
+
+34
+00:02:29,980 --> 00:02:35,050
+Dan jika Anda gulir ke bawah Anda nanti bisa melihat peta yang sebenarnya dan lembar cheat di sini.
+
+35
+00:02:35,130 --> 00:02:37,860
+Ini adalah jenis format yang akan kita ikuti.
+
+36
+00:02:37,860 --> 00:02:41,690
+Ayo maju dan lompat kembali ke buku catatan Jupiter.
+
+37
+00:02:41,730 --> 00:02:44,960
+Hal pertama yang perlu kita lakukan adalah mulai membangun kamus data kita.
+
+38
+00:02:45,030 --> 00:02:48,740
+Dan cara termudah untuk melakukan ini adalah menggunakan metode DCT.
+
+39
+00:02:48,900 --> 00:02:52,600
+Jadi Anda benar-benar dapat membuat kamus dengan ICC.
+
+40
+00:02:52,740 --> 00:02:58,050
+Jadi kita akan menggunakan metode itu untuk memasukkan daftar ke dalam kamus dan hal
+
+41
+00:02:58,050 --> 00:03:02,130
+pertama yang akan kita lakukan adalah memulai dengan data kita.
+
+42
+00:03:02,130 --> 00:03:09,800
+Jadi, Anda memiliki data Anda dan itu akan menjadi kamus dan kami akan memiliki jenis kuncinya
+
+43
+00:03:09,850 --> 00:03:11,730
+adalah Coro Plath.
+
+44
+00:03:14,310 --> 00:03:20,190
+Dan kemudian kita akan memiliki lokasi dan lokasi adalah daftar negara bagian dan itu adalah singkatan dari negara
+
+45
+00:03:20,190 --> 00:03:24,120
+bagian dalam kasus kami karena kami melakukan ini hanya pada skala nasional.
+
+46
+00:03:24,240 --> 00:03:32,040
+Jadi, masuk dan katakan Asie CA dan NY Anda dapat melanjutkan dan memasukkan singkatan kode pos yang Anda inginkan di sana.
+
+47
+00:03:33,600 --> 00:03:36,000
+Lalu kita akan mengatakan mode lokasi.
+
+48
+00:03:36,570 --> 00:03:43,920
+Dan dalam hal ini kita akan memasukkan uang tunai Amerika Serikat dan ini membuat Whitely tahu bahwa kita melakukan ini di
+
+49
+00:03:44,010 --> 00:03:49,710
+tingkat Amerika Serikat dan ada berbagai mode lokasi dan Anda dapat melanjutkan dan memeriksa tautan di
+
+50
+00:03:49,710 --> 00:03:55,020
+buku catatan Jupiter untuk dapatkan dokumentasi tentang berbagai mode lokasi yang dapat Anda berikan.
+
+51
+00:03:56,760 --> 00:04:05,790
+Lalu kita akan pergi ke depan dan mengatur skala warna agar sama dengan Portland yang hanya skala warna dan kita juga bisa melakukan
+
+52
+00:04:06,120 --> 00:04:09,670
+hal-hal lain seperti hijau atau abu-abu dan berjalan.
+
+53
+00:04:09,750 --> 00:04:12,500
+Kami akan mencampurnya dan melihat cara kerjanya nanti.
+
+54
+00:04:12,560 --> 00:04:22,530
+Saya hanya akan memilih Portland dan kemudian kita akan pergi ke depan dan lakukan adalah lulus dalam teks utama dan teks
+
+55
+00:04:22,530 --> 00:04:26,600
+adalah daftar apa yang melayang di setiap lokasi.
+
+56
+00:04:26,670 --> 00:04:28,990
+Jadi saya hanya akan menaruh beberapa barang dasar di sini.
+
+57
+00:04:29,280 --> 00:04:36,570
+Kami akan masuk dan mengatakan teks satu teks 2 dan kemudian teks 3 dan kemudian Z akan
+
+58
+00:04:39,300 --> 00:04:44,520
+sama dengan nilai aktual Anda yang akan ditampilkan dalam skala warna.
+
+59
+00:04:44,550 --> 00:04:52,870
+Kami akan pergi ke depan dan hanya mengatur ini satu dua dan tiga dan saya akan menempatkan mereka sebagai pelampung.
+
+60
+00:04:53,800 --> 00:04:57,660
+Dan akhirnya pasan argumen bar warna.
+
+61
+00:04:57,660 --> 00:05:10,050
+Dan ini sebenarnya adalah sebuah kamus dengan judul kunci dan kemudian Anda hanya akan menjadi orang Whoops Anda melewati apa pun yang Anda inginkan menjadi
+
+62
+00:05:10,160 --> 00:05:11,940
+judul bar warna.
+
+63
+00:05:11,940 --> 00:05:18,620
+Jadi sebagai yang sangat umum saya akan mengatakan judul bilah warna di sini.
+
+64
+00:05:18,620 --> 00:05:21,600
+Benar, jadi seperti itulah data itu dan kita lihat saja datanya.
+
+65
+00:05:21,680 --> 00:05:27,140
+Ini akan menjadi kamus untuk alasan apa pun yang sebagian dokumentasi suka menggunakan semacam
+
+66
+00:05:27,130 --> 00:05:30,980
+ini panggilan casting kamus daripada hanya membangunnya sebagai kamus.
+
+67
+00:05:31,040 --> 00:05:36,710
+Jenis ini menghemat waktu Anda untuk mengetik dan semua kutipan ini dan sekarang harus membuat semua string ini
+
+68
+00:05:36,710 --> 00:05:37,590
+untuk kunci.
+
+69
+00:05:37,690 --> 00:05:42,380
+Jadi saya akan langsung melanjutkan dan mengikuti dokumentasi dan menggunakan notasi semacam ini.
+
+70
+00:05:42,410 --> 00:05:51,950
+Selanjutnya yang ingin kita lakukan adalah membuat objek tata letak atau variabel dan tata letak akan maju dan
+
+71
+00:05:51,940 --> 00:05:53,530
+menjadi kamus bersarang.
+
+72
+00:05:53,540 --> 00:05:59,350
+Dan kami baru saja melewati G. HAI. sama dengan dan
+
+73
+00:06:02,260 --> 00:06:05,240
+kemudian kami menetapkan cakupan menjadi AS A.
+
+74
+00:06:06,800 --> 00:06:09,660
+Dan kemudian apa yang akan kita lanjutkan dan gunakan adalah angka go.
+
+75
+00:06:09,680 --> 00:06:17,300
+Dan untuk melakukan itu kita akan perlu mengimpor sesuatu yang lain harus
+
+76
+00:06:17,540 --> 00:06:23,270
+mengatakan impor Clottey dot graph menggarisbawahi RBJ s sebagai.
+
+77
+00:06:23,600 --> 00:06:29,980
+Dan saya akan melanjutkan hanya menempatkan ini di atas dengan impor lainnya dan menjalankannya.
+
+78
+00:06:30,520 --> 00:06:31,980
+OK jadi tidak ada yang penting.
+
+79
+00:06:32,000 --> 00:06:34,430
+Saya bisa mengatakan Go figure dan
+
+80
+00:06:38,620 --> 00:06:39,740
+mengatur data.
+
+81
+00:06:39,860 --> 00:06:47,030
+Dan ini adalah jenis bagian aneh yang sama dengan dalam kurung sehingga item data daftar yang
+
+82
+00:06:47,020 --> 00:06:52,610
+agak aneh karena sudah menjadi kamus tetapi Anda menyebarkannya sebagai kamus di
+
+83
+00:06:52,610 --> 00:06:59,170
+dalam daftar dan kemudian Anda hanya mengatakan lay out adalah akan sama dengan lay out.
+
+84
+00:06:59,310 --> 00:07:04,430
+Secara teknis Anda tidak perlu benar-benar memberikan data yang sama dan laya sama dengan yang kami bisa berikan data dan
+
+85
+00:07:04,460 --> 00:07:05,180
+lay out.
+
+86
+00:07:05,210 --> 00:07:13,130
+Baiklah mari kita lanjutkan dan tetap seperti ini dan kita akan mengatur semua ini sama dengan peta
+
+87
+00:07:13,120 --> 00:07:17,750
+Koro dan kemudian kita katakan saya plot matematika Curle.
+
+88
+00:07:18,300 --> 00:07:26,990
+Dan kita harus melihat plot di sini dan di sini kita memiliki Arizona California dan New York disorot dengan bagan warna
+
+89
+00:07:27,010 --> 00:07:29,240
+Portland yang dipilih di sini.
+
+90
+00:07:29,300 --> 00:07:33,740
+Sekarang kita dapat melanjutkan dan mengubahnya ke salah satu string yang telah ditentukan yang ditunjukkan di notebook Anda.
+
+91
+00:07:33,760 --> 00:07:38,770
+Misalnya Anda bisa keluar dan mengubahnya ke jet.
+
+92
+00:07:38,930 --> 00:07:40,940
+Lihat perubahan apa yang terjadi di sana.
+
+93
+00:07:40,970 --> 00:07:42,410
+Jalankan semuanya lagi.
+
+94
+00:07:42,400 --> 00:07:48,170
+Dan di sini kita sekarang memiliki skema warna jet atau kita dapat melakukan hal-hal lain seperti hijau adalah
+
+95
+00:07:48,170 --> 00:07:50,180
+hal lain yang dapat Anda pilih.
+
+96
+00:07:51,050 --> 00:07:58,460
+Jalankan itu dan semuanya berwarna hijau. Jadi, jika New York menjadi hijau yang sangat terang di sini, izinkan saya
+
+97
+00:07:58,460 --> 00:08:04,340
+untuk melanjutkan dan menghancurkan semua yang baru saja kami lakukan karena pemformatannya bisa membingungkan dan
+
+98
+00:08:04,350 --> 00:08:06,270
+itu hanya membutuhkan waktu.
+
+99
+00:08:06,290 --> 00:08:08,960
+Anda biasanya tidak benar-benar menghafal ini.
+
+100
+00:08:08,960 --> 00:08:13,500
+Anda harus merujuk contoh dari dokumentasi atau dari lembar contekan.
+
+101
+00:08:13,670 --> 00:08:21,140
+Tetapi ide dasarnya adalah kita memiliki impor kita, kita menginisialisasi mode notebook dan kemudian kita memiliki dua objek utama objek
+
+102
+00:08:21,350 --> 00:08:27,130
+data dan objek lapisan dan saya bisa menyebut ini hanya variabel saya, variabel data, dan variabel
+
+103
+00:08:27,130 --> 00:08:31,260
+tata letak, dan masa lalu dimasukkan ke dalam Go fungsi.
+
+104
+00:08:31,550 --> 00:08:34,220
+Dan kemudian saya ingin memasukkan hal itu ke dalam plot.
+
+105
+00:08:34,460 --> 00:08:41,090
+Jika saya baru saja memasukkan plot apa yang akan terjadi adalah ini akan membuka tab baru sebagai file jam
+
+106
+00:08:41,090 --> 00:08:47,190
+dan Anda dapat melanjutkan dan menyimpan file katakan email atau ekspor atau Anda dapat mengunduhnya sebagai PNB.
+
+107
+00:08:47,240 --> 00:08:47,500
+Baiklah.
+
+108
+00:08:47,540 --> 00:08:50,810
+Baiklah, mari kita lanjutkan dan kembali untuk kuliah di sini.
+
+109
+00:08:51,000 --> 00:08:57,350
+Di objek data kami, kami memiliki beberapa argumen, kami memiliki tipe yang menjelaskan jenis plot geografis yang
+
+110
+00:08:57,350 --> 00:08:58,200
+kami lakukan.
+
+111
+00:08:58,250 --> 00:09:00,850
+Dalam hal ini kami sedang fokus sekarang hanya plot Pengadilan.
+
+112
+00:09:00,950 --> 00:09:08,570
+Kemudian Anda memiliki lokasi, lokasi adalah array atau daftar kode singkatan status aktual tersebut, lalu
+
+113
+00:09:08,570 --> 00:09:10,410
+tentukan mode lokasi.
+
+114
+00:09:10,550 --> 00:09:16,070
+Dalam hal ini karena kita sedang bekerja di AS, kita akan mengatakan Amerika Serikat Dasch dan ini bisa
+
+115
+00:09:16,070 --> 00:09:17,300
+turun ke tingkat county.
+
+116
+00:09:17,300 --> 00:09:20,650
+Anda dapat masuk dan referensi dokumentasi yang tertaut dalam chip di notebook.
+
+117
+00:09:20,750 --> 00:09:27,910
+Untuk informasi lebih lanjut tentang itu maka Anda memiliki teks dan teks adalah array atau daftar
+
+118
+00:09:27,910 --> 00:09:30,740
+teks yang berbaris untuk setiap lokasi.
+
+119
+00:09:30,740 --> 00:09:41,180
+Jadi misalnya pergi keluar dan ubah ini ke Arizona ubah yang ini menjadi Cali dan ubah yang ini ke New York dan jika
+
+120
+00:09:41,170 --> 00:09:47,510
+kita jalankan ini lagi dan perhatikan bahwa dalam plot biarkan aku pergi padanya.
+
+121
+00:09:47,570 --> 00:09:54,590
+Biarkan saya pergi untuk menentukannya saat saya plot sehingga dia melihat ke dalam bahwa Anda memasukkan sebuah buku yang akan Anda
+
+122
+00:09:54,590 --> 00:09:59,640
+perhatikan ketika saya mengatakan saya plot nilai teks mengatakan Kalli Arizona dan New York.
+
+123
+00:09:59,780 --> 00:10:04,910
+Jadi itu berarti bahwa teks ini harus berada dalam urutan indeks
+
+124
+00:10:04,910 --> 00:10:13,090
+yang sama dengan lokasi dan itu akan cocok maka z adalah nilai apa pun yang ingin Anda wakili sebagai warna.
+
+125
+00:10:13,100 --> 00:10:19,450
+Jadi misalnya Cali dihargai ke Arizona sebagai nilai 1 di New York Cazayoux three.
+
+126
+00:10:19,520 --> 00:10:23,900
+Nanti kita akan melihat dengan data nyata bagaimana kita benar-benar dapat menggunakan ini untuk menunjukkan tingkat tertentu
+
+127
+00:10:24,230 --> 00:10:27,440
+menurut negara tetapi di sini itulah yang terkait dengan bilah warna.
+
+128
+00:10:27,670 --> 00:10:32,630
+Dan kita dapat melihat bahwa judul bilah warna di sini adalah judul untuk bilah warna ini.
+
+129
+00:10:32,810 --> 00:10:37,870
+Dan Anda dapat memilih skala warna dengan string apa pun yang Anda inginkan yang disebutkan dalam
+
+130
+00:10:37,860 --> 00:10:40,550
+buku catatan Jupiter lagi untuk jenis plot.
+
+131
+00:10:40,550 --> 00:10:44,840
+Anda harus benar-benar merujuk ke dokumentasi notebook Jupiter karena
+
+132
+00:10:45,380 --> 00:10:50,420
+pemformatannya benar-benar aneh di sini, tetapi itulah cara kerja tanpa plot.
+
+133
+00:10:50,420 --> 00:10:57,240
+Kemudian Anda memiliki variabel tata letak dan objek kamus bersarang tempat Anda hanya menentukan G. HAI. dan ruang lingkup untuk
+
+134
+00:10:57,260 --> 00:10:58,510
+menjadi USA.
+
+135
+00:10:58,570 --> 00:11:01,850
+Ini akan menjadi kloroplas negara bagian Amerika Serikat.
+
+136
+00:11:02,090 --> 00:11:08,270
+Dan kemudian Anda melewati semuanya untuk pergi angka itu dan Anda mengatakan saya memetakan peta Coro dan Anda melihat ini di sini.
+
+137
+00:11:09,230 --> 00:11:14,990
+Sekarang lanjutkan dan perlihatkan contoh dengan beberapa data nyata serta beberapa opsi lain yang bisa kita tambahkan ke kamus dan
+
+138
+00:11:15,020 --> 00:11:16,200
+data serta tata letak.
+
+139
+00:11:16,430 --> 00:11:23,420
+Jadi lanjutkan dan bangun pengetahuan yang sudah Anda miliki untuk maju dan gulir ke bawah di sini dan saya
+
+140
+00:11:23,420 --> 00:11:29,080
+akan mengatakan DFA sama dengan PD yang membaca CV dan ada file CV di sini.
+
+141
+00:11:29,330 --> 00:11:37,850
+Sebut 2011 kita menggarisbawahi ekspor menggarisbawahi agri dan ini hanya ekspor pertanian oleh negara.
+
+142
+00:11:37,850 --> 00:11:42,740
+Dan biarkan saya keluar dan elips mengimpor Pandurs untuk membacanya.
+
+143
+00:11:42,830 --> 00:11:45,570
+Dan kemudian kita akan memeriksa kepala frame-A negara.
+
+144
+00:11:45,590 --> 00:11:51,090
+Jadi dalam keadaan frame saya memiliki kode kategori nama negara yang sebenarnya dalam hal ini untuk semua negara.
+
+145
+00:11:51,310 --> 00:11:55,960
+Total ekspor dan kemudian hal-hal seperti sapi perah babi perah dll.
+
+146
+00:11:56,030 --> 00:12:01,140
+Jadi bagaimana jika negara-negara ini mengekspor produk pertanian.
+
+147
+00:12:01,130 --> 00:12:04,670
+Baiklah jadi mari kita mulai dan mulai dengan membuat variabel data kami.
+
+148
+00:12:04,670 --> 00:12:12,830
+Dalam variabel lay out kami, variabel data saya akan memiliki kamus casting dan kami akan
+
+149
+00:12:12,830 --> 00:12:18,570
+pergi ke depan dan mengatakan tipe sama dengan Coro.
+
+150
+00:12:19,850 --> 00:12:23,130
+Dan kemudian kita pasan argumen skala warna.
+
+151
+00:12:23,330 --> 00:12:25,820
+Dalam hal ini saya akan meneruskan string.
+
+152
+00:12:25,820 --> 00:12:32,860
+Modal Y modal I modal kecil, modal kami kecil.
+
+153
+00:12:33,010 --> 00:12:42,270
+Dalam jenis oranye kuning merah dan berikutnya saya akan mengatakan lokasi saya ingat lokasi.
+
+154
+00:12:42,290 --> 00:12:49,940
+Jika kita gulir kembali ke sini hanya daftar kode negara dan mode lokasi kita juga ada di sini.
+
+155
+00:12:50,390 --> 00:12:56,400
+Sekarang kita benar-benar ada dalam bingkai data kita jika kita melihat ini kolom kode
+
+156
+00:12:56,450 --> 00:12:59,330
+Jadi saya hanya akan melewati A. F. kode dan
+
+157
+00:13:02,780 --> 00:13:11,240
+yang berikutnya akan menjadi mode lokasi kami dan kami akan menetapkan yang sama dengan negara bagian AS dan kami juga ingin menentukan apa
+
+158
+00:13:14,810 --> 00:13:20,090
+yang akan kami katakan untuk z dan z akan menjadi apa yang sebenarnya ditampilkan
+
+159
+00:13:20,090 --> 00:13:22,140
+oleh bilah warna ini kasus.
+
+160
+00:13:22,140 --> 00:13:28,700
+Mari kita lanjutkan dan katakan total ekspor.
+
+161
+00:13:28,700 --> 00:13:33,270
+Jadi kami memiliki total ekspor sebagai kolom di sana dan itu akan menjadi nilai kami.
+
+162
+00:13:33,350 --> 00:13:37,450
+Kami juga memiliki teks dan itu hanya akan menjadi teks yang berbaris.
+
+163
+00:13:37,580 --> 00:13:42,140
+Dan jika Anda menggulir sepenuhnya ke kanan, itu semacam kolom teks yang ditempatkan dengan nyaman di sini.
+
+164
+00:13:42,380 --> 00:13:46,100
+Biasanya Anda mungkin harus membuat kolom teks Anda sendiri tetapi karena ini hanyalah contoh,
+
+165
+00:13:46,100 --> 00:13:47,990
+kami sudah memiliki teks untuk Anda.
+
+166
+00:13:48,080 --> 00:13:51,200
+Kami akan melanjutkan dan melewatkan
+
+167
+00:13:54,710 --> 00:14:03,240
+teks di sana dan kemudian kami juga ingin melewati bilah warna daripada mengatakan bilah warna sama dengan.
+
+168
+00:14:03,290 --> 00:14:08,290
+Dan di sinilah Anda memiliki kamus di mana Anda hanya memiliki judul bilah warna.
+
+169
+00:14:08,300 --> 00:14:14,210
+Dalam hal ini mari kita masuk dan mengatakan jutaan USD karena itulah yang mewakili total ekspor aktual.
+
+170
+00:14:14,480 --> 00:14:17,840
+Itu angka dalam jutaan U. S. dolar.
+
+171
+00:14:17,850 --> 00:14:25,130
+Sekarang kita akan maju dan menambahkan satu argumen lagi untuk ini dan itu akan menjadi sama dengan penanda.
+
+172
+00:14:25,220 --> 00:14:31,470
+Dan ini adalah semacam argumen aneh karena ini adalah kumpulan kamus bersarang tetapi ini pada
+
+173
+00:14:31,460 --> 00:14:37,350
+dasarnya akan menentukan penanda yang akan kita tunjukkan setelah kita menunjukkan plotnya dan Anda
+
+174
+00:14:37,350 --> 00:14:45,590
+akan mengatakan bahwa melemparkan sebuah kamus adalah kuncinya sama dengan dan kemudian panggilan casting kamus lain dan Anda mengatakan warna
+
+175
+00:14:45,600 --> 00:14:51,640
+sama dengan plotless dapat menerima r. g B warna sebagai format string yang aneh.
+
+176
+00:14:51,650 --> 00:14:53,030
+Anda mengatakan R. G. B.
+
+177
+00:14:53,210 --> 00:14:56,330
+Dan kemudian di dalam tanda kurung Anda memberikan R. Anda G. Nilai B.
+
+178
+00:14:56,610 --> 00:15:01,250
+Jadi mari kita lanjutkan dan katakan saja 5:55 untuk ketiganya untuk merah hijau dan biru.
+
+179
+00:15:01,880 --> 00:15:08,720
+Dan kemudian saya juga akan menentukan bagian dalam kamus bagian dalam ini yang lebarnya sama dengan
+
+180
+00:15:09,040 --> 00:15:09,720
+dua.
+
+181
+00:15:09,920 --> 00:15:13,720
+Dan kita akan lihat nanti bagaimana marker itu benar-benar berlaku.
+
+182
+00:15:13,880 --> 00:15:17,400
+Dan akhirnya saya ingin memastikan bahwa kita memiliki koma di sini.
+
+183
+00:15:18,230 --> 00:15:22,790
+Jadi kita memiliki kunci selanjutnya dan kita menutupnya.
+
+184
+00:15:22,790 --> 00:15:23,020
+Baiklah.
+
+185
+00:15:23,030 --> 00:15:24,860
+Itu kamus data saya.
+
+186
+00:15:24,870 --> 00:15:28,430
+Sekarang kita akan memiliki kamus lay out kita.
+
+187
+00:15:28,820 --> 00:15:35,510
+Saya akan mengatakan lay out sama dengan bagaimana panggilan casting kamus saya, saya dapat mengatur
+
+188
+00:15:35,510 --> 00:15:37,100
+judul plot sebenarnya.
+
+189
+00:15:37,120 --> 00:15:49,460
+Sekarang mari kita pergi dan katakan ini 2011 U. S. ekspor pertanian oleh negara-negara bahwa saya akan mengatakan Geo sama dengan
+
+190
+00:15:49,460 --> 00:15:52,140
+dan saya akan melewati kamus di sini.
+
+191
+00:15:52,460 --> 00:15:56,420
+Kami memiliki ruang lingkup yang sama dengan Amerika Serikat.
+
+192
+00:15:56,630 --> 00:16:02,690
+Saya akan menyampaikan dua argumen tambahan di dalam kamus ini menunjukkan Lakes sama dengan true dan pada
+
+193
+00:16:03,030 --> 00:16:09,480
+dasarnya hanya mengatakan menunjukkan danau dan peta yang sebenarnya dan kemudian Anda dapat memilih warna Danau dan saya
+
+194
+00:16:09,470 --> 00:16:15,020
+akan melewati dan R. G. menjadi kode menggunakan notasi platies untuk kode G-B kami yang hanya berupa string
+
+195
+00:16:15,040 --> 00:16:15,940
+R. G. B.
+
+196
+00:16:16,130 --> 00:16:19,250
+Dan kemudian di-print melihat warna adalah nilai yang Anda inginkan.
+
+197
+00:16:19,350 --> 00:16:25,940
+Jadi kita akan mengatakan 85 173 hingga 40 dan saya mengambil ini dari Internet karena pada dasarnya membuat warna
+
+198
+00:16:25,940 --> 00:16:31,720
+biru yang bagus untuk danau dan itu akan menjadi kamus lay out kita jadi kita lihat
+
+199
+00:16:31,910 --> 00:16:37,370
+saja bahwa kita dapat memiliki sarang yang aneh ini struktur kamus tapi begitulah plotless mengambilnya.
+
+200
+00:16:37,460 --> 00:16:45,410
+Lalu akhirnya kita bisa mengatakan peta Koro sama dengan angka go.
+
+201
+00:16:45,410 --> 00:16:53,250
+Data sama dengan dan kami memasukkan kamus data ke dalam daftar dan kemudian kami hanya mengatakan tata letak sama dengan lay out.
+
+202
+00:16:54,260 --> 00:17:00,920
+Dan akhirnya kami menyebutnya plot di peta karang juga.
+
+203
+00:17:01,280 --> 00:17:10,460
+Dan di sini kita miliki sekarang 2011 U. S. ekspor pertanian oleh negara dan pemberitahuan ketika kita mengarahkan
+
+204
+00:17:10,460 --> 00:17:13,400
+kita bisa melihat semua teks nilai-nilai California.
+
+205
+00:17:13,570 --> 00:17:19,170
+Kita juga melihat bahwa danau berwarna biru yang menunjukkan danau dan warna danau bekerja dengan benar.
+
+206
+00:17:19,520 --> 00:17:20,890
+Kami memiliki skala warna.
+
+207
+00:17:20,930 --> 00:17:27,230
+Kami memiliki pasang surut Millings USD kami dan kami juga melihat ada semacam jarak antar negara bagian itu sendiri.
+
+208
+00:17:28,820 --> 00:17:30,900
+Itulah yang diwakili oleh penanda itu.
+
+209
+00:17:30,890 --> 00:17:34,720
+Jadi jika kita kembali ke sini dengan data, kita memiliki penanda ini.
+
+210
+00:17:34,940 --> 00:17:41,690
+Jadi kita menetapkan garis untuk warna dan kemudian dengan demikian jika kita meningkatkan ini dengan garis dengan katakanlah
+
+211
+00:17:41,690 --> 00:17:46,700
+ganda dan mari masuk dan ubah warnanya menjadi sekitar 12 12 12.
+
+212
+00:17:46,700 --> 00:17:48,610
+Jadi sangat jelas.
+
+213
+00:17:48,800 --> 00:17:55,390
+Saya akan menjalankan ini lagi dan kemudian perhatikan bagaimana peta ini akan berubah sejauh perbatasan ini sekarang.
+
+214
+00:17:55,410 --> 00:18:01,790
+Situs batas hitam yang sangat tebal mengubah itu adalah nilai G-B dan Anda dapat melakukannya hanya dengan mengikuti
+
+215
+00:18:01,800 --> 00:18:07,340
+rumus seperti ini di sini mengatakan baris kamus dan kemudian kamus lagi Anda memilih warna dan
+
+216
+00:18:07,380 --> 00:18:08,480
+lebar kamus.
+
+217
+00:18:08,750 --> 00:18:13,260
+Silakan saja dan atur ini kembali menjadi sesuatu seperti itu.
+
+218
+00:18:13,600 --> 00:18:17,110
+Dan jika saya jalankan ini lagi kita bisa melihat plot kita.
+
+219
+00:18:17,240 --> 00:18:17,790
+Baiklah.
+
+220
+00:18:17,900 --> 00:18:23,600
+Begitulah cara Anda bisa membuat plot Curle plus di U. S. skala nasional menggunakan alur cerita.
+
+221
+00:18:23,720 --> 00:18:25,390
+Sekarang saya seharusnya tidak tahu.
+
+222
+00:18:25,390 --> 00:18:31,140
+Sangat membingungkan sejauh sintaks dan mencoba mengingat urutan apa yang terjadi.
+
+223
+00:18:31,130 --> 00:18:36,020
+Saran terbaik saya untuk memberi Anda adalah untuk referensi notebook Jupiter dan referensi tautan
+
+224
+00:18:36,030 --> 00:18:37,430
+dokumentasi di notebook Jupiter.
+
+225
+00:18:37,550 --> 00:18:42,200
+Lebih sering daripada tidak, Anda hanya perlu menyalin dan menempel pada dasarnya dan kemudian mengisi kode
+
+226
+00:18:42,510 --> 00:18:44,680
+yang relevan untuk set data khusus Anda.
+
+227
+00:18:44,690 --> 00:18:47,410
+Itu tidak mudah tetapi itulah cara Anda harus melakukannya.
+
+228
+00:18:47,480 --> 00:18:53,610
+Dan ini pada dasarnya plot geografis cukup rumit karena dapat datang dalam banyak format sehingga mereka
+
+229
+00:18:53,930 --> 00:18:59,280
+mencoba membuatnya kabur sehingga Anda dapat melewati sebanyak mungkin lokasi atau mode lokasi.
+
+230
+00:18:59,510 --> 00:19:02,900
+Tapi itu hanya menyebabkan semacam struktur sintaksis yang aneh.
+
+231
+00:19:02,960 --> 00:19:08,750
+Itulah sifat permainan merencanakan geografis sejauh mencoba menggunakan plot Lee sebagai perpustakaan Python
+
+232
+00:19:08,760 --> 00:19:10,480
+untuk perencanaan geografis.
+
+233
+00:19:10,700 --> 00:19:15,470
+Tetapi Anda dapat melihat setelah semua kerja keras Anda mendapatkan sesuatu yang cukup baik untuk ditunjukkan kepada orang lain.
+
+234
+00:19:16,550 --> 00:19:17,520
+Baiklah.
+
+235
+00:19:17,510 --> 00:19:23,340
+Datang pada kuliah berikutnya akan menunjukkan bagaimana melakukan ini pada skala global dengan plot karang plus global.
+
+236
+00:19:23,960 --> 00:19:26,370
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya.

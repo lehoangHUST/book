@@ -1,0 +1,219 @@
+1
+00:00:05,280 --> 00:00:10,290
+Hello everyone and welcome to the coral Plath's maps exercises lecture and this lecture we're going
+
+2
+00:00:10,290 --> 00:00:14,020
+to briefly go over the notebook for the choral Plath's maps exercise.
+
+3
+00:00:14,190 --> 00:00:16,900
+Let's go ahead and Jump's that you put a notebook now.
+
+4
+00:00:17,040 --> 00:00:20,540
+All right here we are at the coral Pless maps exercise notebook.
+
+5
+00:00:20,540 --> 00:00:25,410
+In this exercise we're going to give you some rather simple datasets and to create correlate maps from
+
+6
+00:00:25,410 --> 00:00:27,670
+them using the plot the library.
+
+7
+00:00:27,680 --> 00:00:32,580
+Now unfortunately due to the nature of slightly the fact that there HCM elf files you can't actually
+
+8
+00:00:32,580 --> 00:00:38,940
+see the example display output here centrally is just going to look like a blank output for both the
+
+9
+00:00:39,750 --> 00:00:43,640
+global map on the world scale and also the USA chloroplast map.
+
+10
+00:00:43,660 --> 00:00:48,580
+There's just going to be essentially blank outputs so you can actually compare unless you run the solutions
+
+11
+00:00:48,590 --> 00:00:48,620
+.
+
+12
+00:00:48,630 --> 00:00:50,190
+No but what it should look like.
+
+13
+00:00:50,490 --> 00:00:53,190
+But the data sets themselves are relatively simple enough.
+
+14
+00:00:53,190 --> 00:00:59,460
+They should have an idea of what you want to output your imports are already set up for as far as your
+
+15
+00:00:59,460 --> 00:01:03,720
+plotless imports you're going to go ahead and import pandas and read the CAC file.
+
+16
+00:01:03,780 --> 00:01:08,190
+Your first one is going to be 2014 world power consumption you're going to go out and check the head
+
+17
+00:01:08,190 --> 00:01:10,190
+of the data frame it should look like this.
+
+18
+00:01:10,410 --> 00:01:15,240
+And then using the lecture notes and using the documentation which you're going to go ahead and do is
+
+19
+00:01:15,240 --> 00:01:21,120
+create a core uplift plot of the power consumption for countries using a data and lay out dictionary
+
+20
+00:01:21,540 --> 00:01:25,770
+and then you should be able to essentially run these two lines of code like we did in the lectures.
+
+21
+00:01:25,900 --> 00:01:30,100
+And basically the only thing you have to do is set up data and lay out correctly.
+
+22
+00:01:30,120 --> 00:01:31,630
+Now that's the hardest part.
+
+23
+00:01:31,680 --> 00:01:34,320
+And as we've said before the syntax is pretty strange.
+
+24
+00:01:34,380 --> 00:01:37,200
+So I don't expect you to be able to do this off the top your head at all.
+
+25
+00:01:37,290 --> 00:01:42,330
+What you should be doing is referencing the documentation and the lecture and then filling in the blanks
+
+26
+00:01:42,690 --> 00:01:49,010
+to actually map this data to a coral clef map of the world's power consumption.
+
+27
+00:01:49,290 --> 00:01:54,110
+Then once you're done with that you're going to go and import some election data from 2012 as a CSP
+
+28
+00:01:54,120 --> 00:01:55,570
+file using Pandurs.
+
+29
+00:01:55,620 --> 00:01:57,550
+You'll go ahead and check the head of the data frame.
+
+30
+00:01:57,620 --> 00:02:01,680
+They'll look like this has a little bit more information but you're going to go ahead and do is create
+
+31
+00:02:01,680 --> 00:02:06,540
+a plot that displays the voting age population or a P per state.
+
+32
+00:02:06,540 --> 00:02:08,480
+And if you scroll over to the right here.
+
+33
+00:02:08,480 --> 00:02:09,060
+Here it is.
+
+34
+00:02:09,060 --> 00:02:11,260
+Voting age population V.I.P.
+
+35
+00:02:11,310 --> 00:02:12,890
+Note that this is a float.
+
+36
+00:02:12,900 --> 00:02:15,400
+So it's already been converted from a string.
+
+37
+00:02:15,420 --> 00:02:19,580
+So these other columns are actually strings but this one is already converted to a float for you so
+
+38
+00:02:19,590 --> 00:02:20,780
+it should work fine.
+
+39
+00:02:20,940 --> 00:02:23,960
+And it actually mentions this here a few later want to clear out the other columns.
+
+40
+00:02:23,970 --> 00:02:28,820
+Make sure you consider their data type and they've already been transformed for you.
+
+41
+00:02:28,950 --> 00:02:33,240
+You're going to go ahead and just set up data and lay out dictionaries and then hopefully run this line
+
+42
+00:02:33,360 --> 00:02:34,670
+and be able to plot this.
+
+43
+00:02:34,830 --> 00:02:40,800
+Again this is more of an exercise of you being able to take what you already know and documentation
+
+44
+00:02:40,800 --> 00:02:46,920
+and references that you've already seen and fill in your data to that sort of documentation and formatting
+
+45
+00:02:46,920 --> 00:02:47,180
+.
+
+46
+00:02:47,190 --> 00:02:52,530
+This is not an exercise in having everything memorized and being able to create a data and lay out dictionary
+
+47
+00:02:52,530 --> 00:02:53,730
+from scratch.
+
+48
+00:02:53,730 --> 00:02:55,620
+Really that's just unrealistic.
+
+49
+00:02:55,830 --> 00:02:59,670
+And you'll have to usually reference the documentation for these sort of plots.
+
+50
+00:02:59,670 --> 00:03:00,310
+All right.
+
+51
+00:03:00,360 --> 00:03:02,880
+Hope you enjoy the exercise should be pretty straightforward.
+
+52
+00:03:02,880 --> 00:03:07,080
+Remember to just reference to lecture notebooks and if you ever get stuck you can also reference the
+
+53
+00:03:07,080 --> 00:03:08,220
+solutions lecture.
+
+54
+00:03:08,220 --> 00:03:09,270
+Coming up next.
+
+55
+00:03:09,510 --> 00:03:11,400
+Thanks everyone and I'll see you at the next lecture

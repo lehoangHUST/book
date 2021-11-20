@@ -1,0 +1,779 @@
+1
+00:00:05,220 --> 00:00:07,080
+Bună ziua tuturor și bine ați venit la panouri.
+
+2
+00:00:07,080 --> 00:00:12,900
+BILTON lector de vizualizare a datelor și această prelegere vom merge peste propriile capacități construite de Panther, care sunt de
+
+3
+00:00:13,230 --> 00:00:17,550
+fapt construite în afara acelui complot live, dar vă permit să efectuați vizualizări de date
+
+4
+00:00:17,610 --> 00:00:18,860
+direct de pe date.
+
+5
+00:00:19,140 --> 00:00:22,160
+Să mergem mai departe și să mergem la notebook-ul Jupiter.
+
+6
+00:00:22,170 --> 00:00:22,370
+In regula.
+
+7
+00:00:22,370 --> 00:00:24,810
+Aici sunt la serverul notebook Jupiter.
+
+8
+00:00:24,810 --> 00:00:25,520
+O notă rapidă.
+
+9
+00:00:25,590 --> 00:00:30,170
+Ar trebui să deschideți acest notebook Jupiter sub degetul mare pentru vizualizarea datelor.
+
+10
+00:00:30,180 --> 00:00:35,280
+Panoul este construit în directorul de date și motivul pentru care există câteva fișiere c c numite
+
+11
+00:00:35,290 --> 00:00:37,100
+def 1 2 și 3.
+
+12
+00:00:37,260 --> 00:00:41,350
+Și veți vedea ca fișiere V și vom fi de lucru cu pentru a arăta efectiv
+
+13
+00:00:41,370 --> 00:00:44,910
+capabilitățile de pandas construit în vizualizarea datelor notebook notebook este chiar aici.
+
+14
+00:00:44,920 --> 00:00:49,050
+Acest panou de panouri construit în vizualizare de date și apoi aveți, de asemenea, un exercițiu care va merge
+
+15
+00:00:49,110 --> 00:00:49,760
+mai târziu.
+
+16
+00:00:49,830 --> 00:00:52,290
+Mă duc la deschidere, știți o carte aici.
+
+17
+00:00:52,380 --> 00:00:54,440
+Și mergeți mai departe și începeți.
+
+18
+00:00:54,450 --> 00:00:54,660
+In regula.
+
+19
+00:00:54,660 --> 00:01:01,890
+Aici sunt la acest notebook și am de gând să ies și să spun important PI și P vor importa panda ca PD
+
+20
+00:01:02,010 --> 00:01:09,030
+și apoi am de gând, de asemenea, să specificați complot trăit în linie astfel încât să văd că vizualizări de
+
+21
+00:01:09,030 --> 00:01:16,120
+date în interiorul notebook-ul real și apoi fișierele CACP pe care le vom încărca sunt cele pe care vreau să le spun.
+
+22
+00:01:16,200 --> 00:01:25,020
+PD citiți C S V pasand d dacă unul și pentru DF o Voi specifica, de asemenea, că indexul va fi prima
+
+23
+00:01:25,020 --> 00:01:26,820
+coloană la indexul 0.
+
+24
+00:01:26,820 --> 00:01:32,460
+Deci, acum, dacă mă uit la cea pe care o pot vedea, indexul este de fapt o serie de timp și asta va fi
+
+25
+00:01:32,460 --> 00:01:34,570
+important atunci când de fapt o vom vizualiza.
+
+26
+00:01:34,680 --> 00:01:43,530
+Și apoi pentru un indice de serie non-time mă duc la capăt și spun PD citit C S V și apoi trece și doar pentru a arunca o privire
+
+27
+00:01:43,530 --> 00:01:45,340
+la cei doi au spus.
+
+28
+00:01:45,420 --> 00:01:50,100
+Foarte similară, cu excepția faptului că este doar citirea datelor și are un index secvențial.
+
+29
+00:01:50,100 --> 00:01:50,740
+In regula.
+
+30
+00:01:50,880 --> 00:01:55,940
+Permiteți-mi să merg înainte și să vă arăt doar un exemplu rapid de ceea ce puteți face cu aceste tipuri de cadre de
+
+31
+00:01:55,940 --> 00:01:57,060
+date în aceste coloane.
+
+32
+00:01:57,060 --> 00:02:02,600
+Imaginați-vă că vrem să obținem o histogramă a tuturor valorilor din coloana A pentru DF 1.
+
+33
+00:02:03,300 --> 00:02:05,590
+Ei bine, panda poate face asta.
+
+34
+00:02:05,970 --> 00:02:13,440
+Putem să sunăm EF 1 și apoi să sunăm doar de pe aceasta și de fapt va începe automat crearea
+
+35
+00:02:13,440 --> 00:02:14,330
+unei histograme.
+
+36
+00:02:14,490 --> 00:02:18,960
+Și rețineți că în realitate se cheamă complotul de hartă live sub capotă și puteți începe să adăugați în
+
+37
+00:02:18,960 --> 00:02:24,670
+argumentul MAP plot lib sau chiar să vedeți mai multe argumente de stil, cum ar fi numărul de containere pe care doriți în această histogramă.
+
+38
+00:02:25,020 --> 00:02:30,140
+OK acum ceva de observat este acest stil de fapt, nu este foarte bine cautati.
+
+39
+00:02:30,150 --> 00:02:31,380
+In opinia mea.
+
+40
+00:02:31,380 --> 00:02:35,880
+Deci, ceea ce puteți face pentru a rezolva asta este dacă
+
+41
+00:02:36,270 --> 00:02:42,280
+veniți la vârf sau într-adevăr oriunde în notebook și mergeți să spuneți importul Seaborn ca asinus.
+
+42
+00:02:42,690 --> 00:02:48,080
+Iar odată ce ați importat dacă începeți din nou să rulați aceste celule, acesta va arăta ca un complot pe mare.
+
+43
+00:02:48,090 --> 00:02:49,100
+Acum arătați un pic mai frumos.
+
+44
+00:02:49,110 --> 00:02:50,330
+Deci, asta îmi place să fac.
+
+45
+00:02:50,400 --> 00:02:55,810
+Puteți vedea mai mult mai multe stiluri și apelurile fără pant vor arăta ca ele.
+
+46
+00:02:56,190 --> 00:03:01,140
+Pandas are mai multe tipuri de complot încorporate în ea și vom face doar pentru scurt timp și vom arăta
+
+47
+00:03:01,200 --> 00:03:03,080
+exemple de cum să creați aceste parcele.
+
+48
+00:03:03,210 --> 00:03:09,360
+Destul de mult toate parcelele pot fi realizate printr-o comandă oprită a cadrului de date și puteți face practic acest lucru cu două metode
+
+49
+00:03:09,360 --> 00:03:14,420
+pe care le puteți apela un cadru de date în sine sau apelați coloana după cadre de date.
+
+50
+00:03:14,430 --> 00:03:21,630
+Să intrăm și să facem acum o coloană și să puteți apela parcele și apoi sub argumentul unui complot
+
+51
+00:03:21,630 --> 00:03:22,390
+specificat.
+
+52
+00:03:22,530 --> 00:03:26,670
+Și există o listă în notebook-ul dvs. și vom merge în această listă și apoi veți specifica
+
+53
+00:03:26,670 --> 00:03:28,090
+cuvântul cheie de acest fel.
+
+54
+00:03:28,090 --> 00:03:31,180
+Deci, dacă aș fi vrut să fac histogramă, aș putea să o creez și în acest fel.
+
+55
+00:03:31,440 --> 00:03:37,920
+Apoi, aici puteți adăuga în argumente histograme cum ar fi numărul de containere pe care le doriți.
+
+56
+00:03:37,920 --> 00:03:43,710
+Deci, aceasta este o metodă de a crea De exemplu, o sală de istorie în afara unei coloane de cadre de date numită grafică punct
+
+57
+00:03:43,920 --> 00:03:45,510
+și apoi un fel de apel.
+
+58
+00:03:45,510 --> 00:03:51,380
+În cele din urmă, celălalt mod pe care îl puteți numi un complot folosind panda este în loc de a specifica un fel
+
+59
+00:03:51,690 --> 00:03:58,010
+este egal de ședinței de fapt, puteți suna de fapt hist off de plot, astfel încât să puteți spune punct de complot și apoi că.
+
+60
+00:03:58,210 --> 00:04:00,110
+Aceasta va crea, de asemenea, complot.
+
+61
+00:04:00,120 --> 00:04:04,110
+Aceasta este metoda pe care o vom folosi în restul acestei prelegeri, astfel încât să putem
+
+62
+00:04:04,110 --> 00:04:09,570
+lua fie întregul cadru de date, fie coloana numită plot și apoi să apelam punct indiferent de tipul de complot pe care îl dorim.
+
+63
+00:04:10,110 --> 00:04:13,730
+Să mergem mai departe și să trecem prin toate tipurile de terenuri și să le verificăm.
+
+64
+00:04:14,370 --> 00:04:19,780
+Deci, să mergem mai departe și să lucrăm cu aceste două, care este seria non-timp.
+
+65
+00:04:19,780 --> 00:04:28,560
+Deci, ca un exemplu, are doar un indice normal și un complot pe care îl puteți face este un complot din zonă, astfel încât să puteți merge mai departe
+
+66
+00:04:28,560 --> 00:04:30,700
+și să specificați zona de complot.
+
+67
+00:04:30,990 --> 00:04:38,250
+Și acest lucru este, în esență, doar pentru a arăta un complot zonă și care puteți face, de asemenea, este de a specifica Alpha ca
+
+68
+00:04:38,250 --> 00:04:39,190
+un argument aici.
+
+69
+00:04:39,240 --> 00:04:46,680
+Dacă doriți o mai mare transparență și spuneți Alfas egal cu 0. 4 și acest lucru arată o anumită transparență aici și aceasta arată
+
+70
+00:04:46,680 --> 00:04:52,470
+doar zona valorilor pe care o puteți gândi în mod esențial la acest lucru ca pe o linie grafică
+
+71
+00:04:52,470 --> 00:04:56,750
+normală, cu excepția suprafeței de dedesubt a fost completat cu un fel de culoare.
+
+72
+00:04:57,150 --> 00:05:01,890
+În regulă, este vorba despre un complot din zonă și din nou foarte ușor de a apela cadrul de date.
+
+73
+00:05:01,890 --> 00:05:08,700
+Să mergem mai departe și să aruncăm o privire la complotul lui Bart, astfel încât să puteți spune că sunteți un
+
+74
+00:05:09,150 --> 00:05:18,070
+cadru de date pe cele două parcele și apoi barați și astfel creați automat un plot de bare și ce face acest lucru este că doar ia valoarea indexului
+
+75
+00:05:18,220 --> 00:05:19,630
+practic ca o categorie.
+
+76
+00:05:19,630 --> 00:05:22,830
+Deci, în acest caz, indexul dvs. ar trebui să fie categoric.
+
+77
+00:05:23,030 --> 00:05:26,830
+Cadrul nostru de date este, de fapt, destul de mic, astfel încât acest lucru are sens dacă aruncăm o privire la
+
+78
+00:05:27,100 --> 00:05:29,560
+cadrul de date are doar 0 sau 9 astfel încât aceasta să funcționeze.
+
+79
+00:05:29,560 --> 00:05:32,890
+Un cadru tipic de date cu un index secvențial probabil că ar dori să facă acest lucru.
+
+80
+00:05:33,100 --> 00:05:38,980
+Dar dacă este un index categoric, atunci ca categorie vom lista doar valorile pentru fiecare coloană și de fapt, puteți crea, de asemenea,
+
+81
+00:05:38,980 --> 00:05:43,360
+acest lucru pentru a fi stivuit prin trecerea în stivă egal cu adevărat și veți obține un
+
+82
+00:05:46,180 --> 00:05:47,530
+complot care arată astfel.
+
+83
+00:05:47,530 --> 00:05:51,190
+Practic exact același lucru, cu excepția faptului că stivuirea valorilor.
+
+84
+00:05:51,190 --> 00:05:54,780
+Personal aș recomanda de fapt ca ușurința să vadă mai mult și pentru aceste tipuri de parcele.
+
+85
+00:05:54,910 --> 00:06:00,100
+Dar, dacă faceți doar o analiză foarte rapidă, acest lucru va funcționa pentru că doar o chemați
+
+86
+00:06:00,100 --> 00:06:01,480
+de pe un pantless.
+
+87
+00:06:01,630 --> 00:06:04,180
+Acum se numește histogramă.
+
+88
+00:06:04,180 --> 00:06:06,500
+Doar pentru a clarifica din nou ceea ce pare.
+
+89
+00:06:06,530 --> 00:06:13,780
+Așa că o să-i spunem că dacă ar fi un punct pe care l-am văzut până acum.
+
+90
+00:06:14,020 --> 00:06:15,040
+Și aici este histograma noastră.
+
+91
+00:06:15,040 --> 00:06:17,110
+Și puteți specifica numărul de containere dorite.
+
+92
+00:06:17,300 --> 00:06:24,430
+Deci, dacă doriți un număr mai mare de coșuri pentru a obține o mai mică claritate în ceea ce privește parcelele Panthers și
+
+93
+00:06:24,460 --> 00:06:30,640
+făcând lucruri care sunt construite în histogramele lui Panda, probabil că este cel care va folosi cel mai mult.
+
+94
+00:06:30,640 --> 00:06:35,070
+Puteți face, de asemenea, parcele rând, care este un alt obișnuit care îmi place să folosesc pentru Pandurs.
+
+95
+00:06:35,230 --> 00:06:39,630
+De exemplu, dacă verificăm EF 1 amintiți-vă că indexul seriei noastre de ore.
+
+96
+00:06:39,790 --> 00:06:43,500
+Să ne imaginăm că vrem să complotăm datele uneia dintre aceste serii de timp.
+
+97
+00:06:43,600 --> 00:06:47,590
+Puteți merge mai departe și spuneți DF un complot și apoi linia de apel.
+
+98
+00:06:47,590 --> 00:06:49,920
+Aceasta va crea doar un grafic.
+
+99
+00:06:50,290 --> 00:06:54,550
+Și pentru linia de complot trebuie să specificați X și Y.
+
+100
+00:06:54,550 --> 00:07:03,400
+Deci, în acest caz, vreau ca X să fie indexul meu real, așa că pot spune dacă un index și vreau ca y să fie una dintre aceste
+
+101
+00:07:03,400 --> 00:07:06,250
+coloane și să treci în coloană ca un șir.
+
+102
+00:07:06,370 --> 00:07:07,500
+Aș vrea să mă duc nespecificat.
+
+103
+00:07:07,540 --> 00:07:09,110
+Să spunem B.
+
+104
+00:07:09,940 --> 00:07:14,590
+Și dacă am rula asta, am un complot care arată cam așa.
+
+105
+00:07:14,600 --> 00:07:15,770
+În general, doar o linie complot.
+
+106
+00:07:15,790 --> 00:07:19,900
+Deci vă puteți imagina dacă acest lucru a fost informații stoc și ați vrut să-l complot versus timp puteți
+
+107
+00:07:19,900 --> 00:07:21,250
+obține ceva care arată astfel.
+
+108
+00:07:21,520 --> 00:07:24,190
+Și așa totul este construit din plinul ăsta.
+
+109
+00:07:24,250 --> 00:07:28,050
+Puteți începe să adăugați acele argumente complot lib, cum ar fi dimensiunea dorită.
+
+110
+00:07:28,250 --> 00:07:31,420
+Deci, pentru a dori ceva mult mai larg.
+
+111
+00:07:31,420 --> 00:07:33,000
+Puteți face așa ceva.
+
+112
+00:07:33,130 --> 00:07:35,770
+Sau să spun că vreau să ajustează linia.
+
+113
+00:07:35,860 --> 00:07:39,610
+Ei bine, poți să faci LW exact așa cum am văzut despre Plaut.
+
+114
+00:07:39,740 --> 00:07:43,510
+Este linia cu ceva mai putin skinnier pe care il poti adauga in markeri.
+
+115
+00:07:43,510 --> 00:07:45,210
+Toate aceste alte comenzi compilate fără ploturi.
+
+116
+00:07:45,370 --> 00:07:49,610
+Deci, tot ceea ce aflați despre acest complot viu poate fi aplicabil la aceste parcele de date.
+
+117
+00:07:50,050 --> 00:07:52,310
+Acum hai să mergem înainte și să verificăm scatterplot.
+
+118
+00:07:52,810 --> 00:07:59,920
+Deci, să spunem că am un DF unul pot spune complot că scatter și va trebui să specificați un x și
+
+119
+00:07:59,920 --> 00:08:00,400
+y.
+
+120
+00:08:00,490 --> 00:08:05,110
+Deci, pentru asta, hai să mergem mai departe și să trecem și șiruri de nume de coloane.
+
+121
+00:08:05,410 --> 00:08:10,240
+Deci a și b și acest lucru va crea o scatterplot frumos cautati pentru noi.
+
+122
+00:08:10,330 --> 00:08:15,150
+Altceva ce puteți face este să setați culoarea bazată pe o altă coloană.
+
+123
+00:08:15,160 --> 00:08:24,160
+Deci, de exemplu, puteți spune că culoarea va fi egală cu coloana C.
+
+124
+00:08:24,220 --> 00:08:27,220
+Deci, dacă tocmai citesc că mi se face alb-negru.
+
+125
+00:08:27,220 --> 00:08:32,010
+Deci, dacă mă uit la întrebarea dacă tocmai am clarificat ce facem aici.
+
+126
+00:08:32,010 --> 00:08:36,790
+Datele de la care avem o valoare pentru a și b și avem o valoare pentru c ..
+
+127
+00:08:36,820 --> 00:08:42,250
+Deci, în mod esențial, prezentăm acum trei niveluri de informație, o compoziție tridimensională dacă doriți.
+
+128
+00:08:42,250 --> 00:08:48,430
+Deoarece avem un versus B și apoi un al treilea argument vezi afișat în funcție de culoare și de fapt puteți vedea pasanul
+
+129
+00:08:49,360 --> 00:08:52,330
+ca harta ca un argument, apoi treceți propria hartă de culoare.
+
+130
+00:08:52,330 --> 00:08:57,820
+Deci, de exemplu, cald cald pe care l-ați văzut înainte și acum afișați trei nivele de informații a versus B
+
+131
+00:08:57,970 --> 00:09:02,110
+în cazul în care acestea stau și apoi valoarea de culoare pentru c ..
+
+132
+00:09:02,140 --> 00:09:06,500
+Uneori oamenii nu le place să arate lucrurile în funcție de culoare, dar preferă să le arate în funcție de dimensiune.
+
+133
+00:09:06,520 --> 00:09:09,910
+De fapt, puteți face acest lucru, în loc să treceți ca argument C.
+
+134
+00:09:09,910 --> 00:09:12,440
+Aici vei merge mai departe și vei trece.
+
+135
+00:09:12,520 --> 00:09:18,150
+S și ​​pentru s Veți merge mai departe și într-o coloană de cadre de date.
+
+136
+00:09:18,460 --> 00:09:24,100
+Deci, pentru asta trebuie să treceți de fapt în coloana cadrului de date și, probabil, dacă faceți
+
+137
+00:09:24,100 --> 00:09:26,470
+acest lucru, punctele vor fi prea mici.
+
+138
+00:09:27,110 --> 00:09:30,820
+Și apoi ce puteți face este să multiplicați acest lucru printr-un fel de factor.
+
+139
+00:09:31,390 --> 00:09:40,000
+Deci, puteți vedea că punctele sunt versus B, iar mărimea indică valoarea cât mai mare sau valoarea C relativ una
+
+140
+00:09:40,000 --> 00:09:41,520
+față de cealaltă.
+
+141
+00:09:41,560 --> 00:09:41,980
+In regula.
+
+142
+00:09:42,010 --> 00:09:45,880
+Acesta este genul de lucru în care, probabil, nu ți-ai aminti asta de pe
+
+143
+00:09:45,880 --> 00:09:50,320
+capul tău, te-ai întoarce la carnetul Jupiter pe care l-am adunat pentru tine și o folosești
+
+144
+00:09:50,320 --> 00:09:52,090
+drept referință sau verifică documentația.
+
+145
+00:09:52,090 --> 00:09:55,010
+Hai să mergem mai departe și să ne mutăm din nou la casete.
+
+146
+00:09:55,030 --> 00:09:59,980
+Îmi place cu adevărat seaborne pentru parcele de cutie, dar dacă doriți doar o analiză rapidă a unei cutii complot panda poate face asta
+
+147
+00:09:59,980 --> 00:10:00,920
+pentru tine, de asemenea.
+
+148
+00:10:00,940 --> 00:10:08,740
+Deci, trebuie doar să transmiteți întreaga casetă de apel a cadrului de apel al cadrului de date și aici puteți vedea un complot cu cutie care este
+
+149
+00:10:08,740 --> 00:10:11,270
+în mod automat făcut pentru dvs. pe coloană.
+
+150
+00:10:11,290 --> 00:10:16,390
+Deci, este nevoie doar de fiecare coloană ca o categorie și apoi trasează distribuțiile pentru tine ca un complot box.
+
+151
+00:10:16,920 --> 00:10:17,680
+In regula.
+
+152
+00:10:17,680 --> 00:10:24,970
+Căci prin diverse date poți face o complot hexagon pe care l-ai văzut înainte cu Pandurs, scuză-mă că
+
+153
+00:10:24,970 --> 00:10:25,970
+era Seaborn.
+
+154
+00:10:26,200 --> 00:10:30,400
+Dar permiteți-mi să fac un nou cadru de date pentru ca acest lucru să apară corect.
+
+155
+00:10:30,520 --> 00:10:33,780
+Aș vrea să spun cadrele de date PD.
+
+156
+00:10:33,780 --> 00:10:42,400
+Am de gând să trec în unele date aleatorii aleargă atunci și voi avea să fie 1000, să spunem doi
+
+157
+00:10:42,400 --> 00:10:48,020
+și apoi voi trece și coloanele să fie doar a și b.
+
+158
+00:10:49,580 --> 00:10:52,650
+Și dacă aruncăm o privire asupra cadrului nostru de date, arătați ceva de genul acesta.
+
+159
+00:10:52,650 --> 00:10:53,700
+Doar câteva date aleatorii.
+
+160
+00:10:53,740 --> 00:10:54,700
+Un iubit.
+
+161
+00:10:54,880 --> 00:11:01,620
+Vroiam doar câteva puncte mai aleatorii aici și ceea ce pot face, din moment ce este vorba de varianta sunt două variabile aici.
+
+162
+00:11:01,660 --> 00:11:10,990
+Și B pot spune că plotul Hexton trece și x este egal cu o masă și Y este egal cu B.
+
+163
+00:11:11,330 --> 00:11:14,750
+Și dacă faci asta, vei primi un complot hex.
+
+164
+00:11:14,980 --> 00:11:19,090
+Acum, acest lucru este în esență ca un scatterplot, cu excepția coșurilor hexagonale.
+
+165
+00:11:19,210 --> 00:11:21,710
+Chiar acum dimensiunea binului este într-adevăr destul de mică.
+
+166
+00:11:21,730 --> 00:11:27,170
+Deci, pentru a schimba acest lucru, puteți spune că dimensiunea grilei este egală cu 25.
+
+167
+00:11:27,580 --> 00:11:33,730
+Și acest lucru va mări mărimea hexagonilor și, în esență, hexagoanele devin mai întunecate, deoarece în interiorul lor există mai multe
+
+168
+00:11:33,730 --> 00:11:39,760
+puncte și puteți de asemenea să schimbați cartografia de culoare aici și să spuneți că harta este egală cu
+
+169
+00:11:39,760 --> 00:11:40,180
+altceva.
+
+170
+00:11:40,180 --> 00:11:45,930
+De exemplu, dacă vrem să fie cald cald pentru a fi cartografia noastră de culoare, puteți face și asta.
+
+171
+00:11:46,000 --> 00:11:49,980
+Și apoi, în cele din urmă, putem face parcele de estimare a densității kernelului.
+
+172
+00:11:50,110 --> 00:11:56,020
+Deci, dacă dintr-un motiv nu doriți doar o histogramă, dar doriți o estimare a densității kernel-ului, puteți
+
+173
+00:11:56,020 --> 00:12:02,700
+să vă apelați cadranul de date sau o coloană de pe cadranul de date și apoi să îl comportați pe Haidee.
+
+174
+00:12:03,080 --> 00:12:08,680
+Acesta va crea acest complot de estimare a densității kernelului pentru tine și puteți face același lucru cu densitatea care este un alt apel
+
+175
+00:12:09,170 --> 00:12:10,450
+pe care îl puteți face.
+
+176
+00:12:10,450 --> 00:12:15,880
+Deci, în densitate spunem și asta va fi același lucru.
+
+177
+00:12:15,880 --> 00:12:20,410
+Deci, dacă vreți o densitate sau o densitate de estimare a densității nucleului, acelea vor fi aceleași lucruri și
+
+178
+00:12:20,410 --> 00:12:23,320
+de fapt puteți face acest lucru și din întregul cadru de date.
+
+179
+00:12:23,320 --> 00:12:29,890
+Nu trebuie să faceți acest lucru la o coloană dacă doriți să comparați graficul de estimare a densității kernelului de densitate al
+
+180
+00:12:29,890 --> 00:12:32,220
+tuturor coloanelor din cadrul dvs. de date.
+
+181
+00:12:32,230 --> 00:12:32,590
+In regula.
+
+182
+00:12:32,590 --> 00:12:33,200
+Asta e.
+
+183
+00:12:33,280 --> 00:12:38,920
+Sperăm că puteți vedea de ce această metodă de complot direct de pe Pandurs este mult mai ușoară decât
+
+184
+00:12:38,920 --> 00:12:43,650
+să apelați complotul plin al hărții lib și echilibrează ușurința utilizării cu control asupra figurii.
+
+185
+00:12:43,720 --> 00:12:47,800
+Ar trebui să rețineți însă dacă doriți cu adevărat să personalizați figura dvs. ar trebui să vă
+
+186
+00:12:47,800 --> 00:12:50,230
+întoarceți la Seaborn sau să compilați graficul de complot.
+
+187
+00:12:50,470 --> 00:12:55,390
+Aceste tipuri de comenzi sunt într-adevăr doar pentru o analiză rapidă a datelor și, probabil, pur și simplu mergeți la carnetul
+
+188
+00:12:55,390 --> 00:13:00,130
+de notă, referiți rapid la tipul de complot pe care doriți să-l creați și apoi îl apelați din cadrul de date
+
+189
+00:13:00,130 --> 00:13:02,190
+sau sunați-l din coloană sau din date cadru.
+
+190
+00:13:02,320 --> 00:13:06,370
+În ceea ce privește modul în care vom folosi acest lucru de-a lungul cursului, într-adevăr, singurele ori pe
+
+191
+00:13:06,370 --> 00:13:10,840
+care vom folosi probabil acest lucru este doar cu un grafic de linie sau o histogramă pentru ao numi foarte repede.
+
+192
+00:13:10,840 --> 00:13:16,170
+Pentru mai avansate, ploturile de plottere de la Haskel sau parcelele cu bar ar recomanda cu adevărat să merg cu Seaborn.
+
+193
+00:13:17,340 --> 00:13:22,570
+Sper că ați găsit acest lucru util și vă voi vedea la următoarea conferință sau vom descrie exercițiul rapid
+
+194
+00:13:22,570 --> 00:13:25,720
+pentru a vă exercita ceea ce tocmai am învățat aici.
+
+195
+00:13:25,720 --> 00:13:27,430
+Multumesc tuturor si te voi vedea la urmatoarea conferinta

@@ -1,0 +1,959 @@
+1
+00:00:05,940 --> 00:00:10,350
+Hello everyone and welcome to the pie exercises solutions lecture this lecture.
+
+2
+00:00:10,380 --> 00:00:13,880
+We're going to manually code the solutions for the exercises.
+
+3
+00:00:13,890 --> 00:00:17,250
+Let's go ahead and jump to the Jupiter notebook to get started.
+
+4
+00:00:17,250 --> 00:00:17,540
+All right.
+
+5
+00:00:17,540 --> 00:00:19,820
+So here I am at the Jupiter notebook.
+
+6
+00:00:20,190 --> 00:00:23,120
+Let's go ahead and start with just important umpires and.
+
+7
+00:00:23,740 --> 00:00:27,720
+Hopefully you're able to do this one easily sets the command is basically right there written up for
+
+8
+00:00:27,720 --> 00:00:27,970
+you.
+
+9
+00:00:28,020 --> 00:00:30,140
+When does shift enter important up.
+
+10
+00:00:30,240 --> 00:00:31,880
+We're ready to go.
+
+11
+00:00:31,890 --> 00:00:32,130
+OK.
+
+12
+00:00:32,130 --> 00:00:35,590
+First we wanted to create an array of 10 zeros.
+
+13
+00:00:35,730 --> 00:00:42,910
+An easy way to do this is to just say N.P. zeros and the past and the digit 10 and no output the exact
+
+14
+00:00:42,940 --> 00:00:48,120
+rate that it had there is the output in order to create an array of 10 ones you can do the exact same
+
+15
+00:00:48,120 --> 00:00:54,550
+thing except instead of using zeros use ones then you just past 10 and you have 10 1s.
+
+16
+00:00:54,570 --> 00:00:56,190
+Now it's create an array of 10 fives.
+
+17
+00:00:56,190 --> 00:01:03,330
+There's actually a few ways to do this but one easy way is to just say happy ones and then you can go
+
+18
+00:01:03,330 --> 00:01:07,570
+ahead and times it by five.
+
+19
+00:01:08,310 --> 00:01:11,340
+And that will get you an array of 10 fives.
+
+20
+00:01:11,550 --> 00:01:18,020
+In other words you could have done this is say N.P. of zeros 10.
+
+21
+00:01:18,780 --> 00:01:22,680
+And then what you could have done is add a five to that.
+
+22
+00:01:22,680 --> 00:01:26,220
+And those are probably the two simplest ways to create an array of 10 fives.
+
+23
+00:01:26,220 --> 00:01:27,920
+Very quickly.
+
+24
+00:01:27,990 --> 00:01:28,430
+All right.
+
+25
+00:01:28,470 --> 00:01:32,310
+Now we want to create an array of integers from 10 to 50.
+
+26
+00:01:32,550 --> 00:01:36,510
+Hopefully seeing this is the output made you think of the arr. function.
+
+27
+00:01:36,530 --> 00:01:38,460
+Since that's the easiest way to do this.
+
+28
+00:01:39,090 --> 00:01:46,660
+So we are in a range and we went from 10 to 50 and that means we want to start at 10 as our first input
+
+29
+00:01:46,870 --> 00:01:50,740
+and says we want 50 included remember since indexing starts at zero.
+
+30
+00:01:50,850 --> 00:01:58,480
+We have to go to 51 when we enter that and that gets the output integers from 10 to 50.
+
+31
+00:01:58,500 --> 00:02:03,330
+The next thing you have to do is create an array of all the even integers from 10 to 50.
+
+32
+00:02:03,330 --> 00:02:05,500
+That's also pretty straightforward.
+
+33
+00:02:05,540 --> 00:02:10,800
+Hopefully I remember from the lecture that as a third arguments do shift tab here if you want the actual
+
+34
+00:02:11,070 --> 00:02:14,730
+argument but you can get a step size and say I want even integers.
+
+35
+00:02:14,730 --> 00:02:20,340
+I'll go ahead and put a step size of two and then I get all the even integers from 10 to the number
+
+36
+00:02:20,340 --> 00:02:21,370
+50.
+
+37
+00:02:21,960 --> 00:02:22,350
+OK.
+
+38
+00:02:22,350 --> 00:02:28,790
+Moving along we wanted to create a three by three Matrix with values ranging from zero to 8.
+
+39
+00:02:28,800 --> 00:02:31,900
+This is going to be a bit of a two step process.
+
+40
+00:02:32,040 --> 00:02:40,170
+You're going to first create using arr. you know pasan a nine here and that will create the array 0
+
+41
+00:02:40,350 --> 00:02:43,860
+8 and this I want this to be a three by three Matrix.
+
+42
+00:02:43,860 --> 00:02:48,600
+What I can do is I can say reshape three come up three.
+
+43
+00:02:48,840 --> 00:02:53,950
+And that produces that three by three matrix of values ranging from 0 to AIDS.
+
+44
+00:02:53,970 --> 00:02:58,650
+Now you could have also split this up into two steps meaning I could have said something like a equals
+
+45
+00:02:59,350 --> 00:03:07,680
+derange 9 and then set a reshape three by three and that would again then the same thing just in two
+
+46
+00:03:07,680 --> 00:03:09,720
+great clear distinct separate steps.
+
+47
+00:03:09,720 --> 00:03:14,190
+But a lot of times when you're working of Pi you'll just kind of tack on these methods on top of each
+
+48
+00:03:14,190 --> 00:03:15,200
+other.
+
+49
+00:03:15,240 --> 00:03:16,260
+All right.
+
+50
+00:03:16,260 --> 00:03:18,320
+Next you had to create a three by three.
+
+51
+00:03:18,330 --> 00:03:19,870
+I tend to see matrix.
+
+52
+00:03:20,070 --> 00:03:23,920
+Hopefully you remember the command from the first lecture of umpire A's.
+
+53
+00:03:23,970 --> 00:03:25,440
+But that is just I.
+
+54
+00:03:25,890 --> 00:03:31,920
+And you just pasand one number since I didn't see matrices must be square and that the I of three is
+
+55
+00:03:31,920 --> 00:03:32,690
+a three by three.
+
+56
+00:03:32,700 --> 00:03:34,890
+Ite and see matrix.
+
+57
+00:03:34,890 --> 00:03:36,090
+All right.
+
+58
+00:03:36,090 --> 00:03:42,050
+Coming up next he wanted to use some PI to generate a random number between 0 and 1.
+
+59
+00:03:42,070 --> 00:03:48,270
+It's actually quite a few ways to do this but probably the easiest is to just say P that random pass
+
+60
+00:03:48,480 --> 00:03:55,490
+and Ranz remember from the lecture that this turns random values between 0 and 1.
+
+61
+00:03:55,530 --> 00:04:01,410
+So I can just pass in one here and that returns a random value between 0 and 1.
+
+62
+00:04:01,410 --> 00:04:06,220
+Now your answer may have been a little different than mine was but that's because this is random.
+
+63
+00:04:06,330 --> 00:04:08,540
+So you always get a different number every time you run this.
+
+64
+00:04:08,550 --> 00:04:11,190
+But it should be between zero and one every time.
+
+65
+00:04:11,190 --> 00:04:14,010
+If you just pass in a single digit as your argument.
+
+66
+00:04:14,010 --> 00:04:19,980
+So again that random thought Rand returns a random number tween 0 and 1.
+
+67
+00:04:20,790 --> 00:04:26,820
+After that we wanted to use pi to generate an array of 25 random numbers samples from a standard normal
+
+68
+00:04:26,820 --> 00:04:28,310
+distribution.
+
+69
+00:04:28,320 --> 00:04:34,920
+Hopefully that was a key word for you to remember that you could call N.P. thought random thought Rand
+
+70
+00:04:35,140 --> 00:04:41,640
+n and if you do shift tab here this returns a sample from the standard normal distribution and that
+
+71
+00:04:41,790 --> 00:04:44,120
+is basically the tack on of the end there.
+
+72
+00:04:44,400 --> 00:04:51,540
+So that I can put in a 25 and that returns an array of 25 random number numbers samples from a standard
+
+73
+00:04:51,540 --> 00:04:52,710
+normal distribution.
+
+74
+00:04:52,830 --> 00:04:57,480
+And note here you can tell by the brackets that this is just a one dimensional array of twenty five
+
+75
+00:04:57,480 --> 00:05:00,540
+numbers not a five by five.
+
+76
+00:05:00,540 --> 00:05:07,290
+You can actually confirm that by putting shape here and it just says 25 instead of five by five.
+
+77
+00:05:07,290 --> 00:05:07,940
+All right.
+
+78
+00:05:08,010 --> 00:05:13,020
+Now we wanted to create the following matrix and pay attention to what this matrix is actually doing
+
+79
+00:05:13,290 --> 00:05:13,680
+.
+
+80
+00:05:13,800 --> 00:05:15,650
+It's a two dimensional matrix.
+
+81
+00:05:15,720 --> 00:05:18,590
+Note we can tell that from the two sets of brackets here.
+
+82
+00:05:19,110 --> 00:05:22,020
+And it also goes from zero point zero one.
+
+83
+00:05:22,170 --> 00:05:29,550
+And it looks like it goes in a step size of zero point zero or one Additionally all the way to one now
+
+84
+00:05:29,880 --> 00:05:31,710
+there's actually two ways to do this.
+
+85
+00:05:31,710 --> 00:05:36,120
+I'll first go through the way that's shown in the solution which might be the easier way to think about
+
+86
+00:05:36,120 --> 00:05:40,010
+this and then I'll show the more clever way using that space.
+
+87
+00:05:40,020 --> 00:05:48,990
+So one way you can do this is say Range going from 1 to 101 and that first gets you the Saray which
+
+88
+00:05:48,990 --> 00:05:50,000
+we're not quite there yet.
+
+89
+00:05:50,010 --> 00:05:55,960
+What we want and we're going to go ahead and do is reshape this to be a 10 by 10 array.
+
+90
+00:05:56,400 --> 00:05:59,750
+And then we're almost there but notice that we're going from 1 to 100.
+
+91
+00:05:59,790 --> 00:06:02,820
+So if I can just do is say divide this by 100.
+
+92
+00:06:03,630 --> 00:06:07,960
+And that returns the array I had the double brackets a 10 by 10 array.
+
+93
+00:06:08,160 --> 00:06:15,170
+And it goes from zero point zero or one in step size of point or one Additionally all the way to 1.
+
+94
+00:06:15,240 --> 00:06:16,980
+That's one way you could add on this.
+
+95
+00:06:17,250 --> 00:06:19,370
+And that's the way that's shown in the solutions book.
+
+96
+00:06:19,380 --> 00:06:23,640
+But another really nice way to do this and hopefully this is the way that you were thinking about this
+
+97
+00:06:23,640 --> 00:06:30,120
+to begin with but you could also do in space and then note where you started from and where you were
+
+98
+00:06:30,120 --> 00:06:30,990
+stopping from.
+
+99
+00:06:31,020 --> 00:06:35,870
+So we're starting at 0.01 going all the way to 1.
+
+100
+00:06:36,030 --> 00:06:45,570
+And these are actually linearly spaced so I can just say 100 and I'll reshape this as a 10 by 10 matrix
+
+101
+00:06:46,190 --> 00:06:49,260
+and that returns the exact same result as I have above here.
+
+102
+00:06:49,530 --> 00:06:52,470
+So either these two answers is fine.
+
+103
+00:06:52,500 --> 00:06:56,730
+There's a couple of other ways to do this but these are probably the two most logical and straightforward
+
+104
+00:06:56,730 --> 00:06:57,320
+ones.
+
+105
+00:06:57,330 --> 00:07:01,170
+Either way is totally fine and hopefully you're able to figure out one of these.
+
+106
+00:07:01,320 --> 00:07:06,600
+This is a little tricky question a little bit of a tricky question since there's no clear pattern here
+
+107
+00:07:06,600 --> 00:07:10,710
+unless you're actually paying attention that it goes point zero one Additionally and then you also to
+
+108
+00:07:10,710 --> 00:07:15,390
+pay attention that it was double set of brackets meaning it was to them additional 10 by 10.
+
+109
+00:07:15,390 --> 00:07:15,870
+All right.
+
+110
+00:07:15,990 --> 00:07:17,970
+Let's go and continue on.
+
+111
+00:07:17,970 --> 00:07:22,710
+Now we wanted to create an array of 20 linearly spaced points between 0 and 1.
+
+112
+00:07:22,740 --> 00:07:30,640
+All you have to do for that is say N.P. Lynn space and then we're going between 0 and 1.
+
+113
+00:07:30,960 --> 00:07:37,170
+So I can go ahead and say zero come a 1 and then 20 linearly spaced points and that gets me the exact
+
+114
+00:07:37,170 --> 00:07:39,030
+answer that I have there.
+
+115
+00:07:39,060 --> 00:07:40,020
+All right.
+
+116
+00:07:40,020 --> 00:07:45,090
+Now we're going to be given a few matrices sexually just one matrix Matt and what we want to do is ask
+
+117
+00:07:45,090 --> 00:07:47,410
+to replicate the resulting matrix outputs.
+
+118
+00:07:47,700 --> 00:07:51,390
+And again you had to write your code here otherwise you would have overwritten the output you're supposed
+
+119
+00:07:51,390 --> 00:07:52,470
+to copy.
+
+120
+00:07:52,470 --> 00:07:55,050
+So let's go ahead and start doing this.
+
+121
+00:07:55,080 --> 00:08:02,540
+First off we had to grab this section of the array 12 through 15 and then 12 17:22 rows.
+
+122
+00:08:02,550 --> 00:08:06,260
+So how are we actually going to do this going to clear this commenting out.
+
+123
+00:08:06,390 --> 00:08:08,480
+First thing I want to do is call Matt.
+
+124
+00:08:09,120 --> 00:08:13,880
+And then I'm going to put a comma here and let's take a look at the rows you want.
+
+125
+00:08:14,190 --> 00:08:18,680
+So the rows I want start at 12 17 22.
+
+126
+00:08:18,780 --> 00:08:28,530
+So it looks like these last three rows meaning if I look at the index 0 1 2 I want rows to and everything
+
+127
+00:08:28,530 --> 00:08:29,620
+past that.
+
+128
+00:08:29,670 --> 00:08:37,830
+So to Colon those are my rows and let's go in and confirm that by just putting a colon here to select
+
+129
+00:08:37,860 --> 00:08:40,170
+all columns in those rows.
+
+130
+00:08:40,460 --> 00:08:43,070
+Whoops had to run the cell.
+
+131
+00:08:43,660 --> 00:08:44,190
+OK.
+
+132
+00:08:44,460 --> 00:08:45,070
+So I ran that.
+
+133
+00:08:45,070 --> 00:08:46,200
+So that's been fine.
+
+134
+00:08:46,230 --> 00:08:47,910
+And now I'm selecting everything.
+
+135
+00:08:47,910 --> 00:08:52,910
+All columns from those rows and it looks like we're good so far actually can see the subset here.
+
+136
+00:08:52,980 --> 00:08:54,510
+So I'm good on the rows.
+
+137
+00:08:54,510 --> 00:08:59,820
+Up next is I actually want to grab the correct columns in this case I can see that I want to grab from
+
+138
+00:08:59,820 --> 00:09:03,190
+Column 1 index 1 and onwards.
+
+139
+00:09:03,330 --> 00:09:07,850
+So I'm actually just going to say one colon and run that and that's my answer.
+
+140
+00:09:07,850 --> 00:09:09,430
+I can see that it matches.
+
+141
+00:09:09,510 --> 00:09:15,180
+So to break this down one more time I go from row index to and everything past that and then column
+
+142
+00:09:15,180 --> 00:09:18,120
+index one and everything passed that I pass it in.
+
+143
+00:09:18,120 --> 00:09:20,550
+In this sort of notation here.
+
+144
+00:09:20,580 --> 00:09:21,530
+All right go ahead.
+
+145
+00:09:21,540 --> 00:09:23,340
+Move on to the next one.
+
+146
+00:09:23,430 --> 00:09:29,490
+Next one is I wanted to grab just the number 20 so if I take a look at Matt again I just want to grab
+
+147
+00:09:29,490 --> 00:09:30,300
+the number 20.
+
+148
+00:09:30,310 --> 00:09:32,300
+Let's go ahead and figure out where that is.
+
+149
+00:09:32,330 --> 00:09:36,030
+It's right here in this case.
+
+150
+00:09:36,030 --> 00:09:40,290
+Meaning if I took out the row first thing long 0 1 2 3.
+
+151
+00:09:40,320 --> 00:09:41,800
+So it's at row 3.
+
+152
+00:09:41,960 --> 00:09:43,990
+Or go ahead and type that in.
+
+153
+00:09:44,460 --> 00:09:51,100
+And then it's all the way at the last column which is 0 1 2 3 4 6.
+
+154
+00:09:51,120 --> 00:09:52,890
+Indexing starts at zero.
+
+155
+00:09:52,890 --> 00:09:58,310
+So if I say Matt 3 come afore that gets me 20 out perfect.
+
+156
+00:09:58,430 --> 00:10:05,370
+All right next I wanted to grab this 2 7 12 may go ahead and see what my math looks like.
+
+157
+00:10:05,370 --> 00:10:07,510
+Here's my map and I want to grab two 7.
+
+158
+00:10:07,530 --> 00:10:09,060
+Well let's go ahead again.
+
+159
+00:10:09,060 --> 00:10:12,860
+Break this down by rows versus columns 2 7 12.
+
+160
+00:10:12,870 --> 00:10:14,380
+Looks like it's here.
+
+161
+00:10:14,400 --> 00:10:21,840
+So I want to grab everything up to a certain number of rows right so I just want to wrap 2 7 and 12
+
+162
+00:10:22,200 --> 00:10:26,120
+meaning I want to grip up to and not including index number three.
+
+163
+00:10:26,130 --> 00:10:28,990
+So this is 0 1 2.
+
+164
+00:10:29,190 --> 00:10:32,580
+So I'm going to go ahead and say everything up to three.
+
+165
+00:10:32,610 --> 00:10:39,850
+Let's go ahead and confirm that just by putting a colon here and here's to 7 12 so I have the correct
+
+166
+00:10:39,850 --> 00:10:40,640
+rows.
+
+167
+00:10:40,660 --> 00:10:47,590
+Now let's just get that grab the correct column and in this case there is something important to know
+
+168
+00:10:47,590 --> 00:10:48,460
+about the output.
+
+169
+00:10:48,460 --> 00:10:56,380
+The output here has two brackets meaning this is a three by one and so there's three rows by one column
+
+170
+00:10:57,340 --> 00:11:01,290
+and that means if I just put in the column number.
+
+171
+00:11:01,600 --> 00:11:08,680
+So if I were just to put in for example let's see 0 1 I would get to 7 12 out.
+
+172
+00:11:08,860 --> 00:11:09,970
+But notice the shape here.
+
+173
+00:11:09,960 --> 00:11:12,120
+This is just a one dimensional array.
+
+174
+00:11:12,220 --> 00:11:15,440
+And in this case is the output I want two sets of brackets.
+
+175
+00:11:15,520 --> 00:11:20,100
+So the only way to do that is by actually indexing using slice notation.
+
+176
+00:11:20,200 --> 00:11:24,000
+So I have to say everything from one up to but not including two.
+
+177
+00:11:24,070 --> 00:11:28,270
+And that may seem a little strange at first but that's the way if I go ahead and run this I can grab
+
+178
+00:11:28,270 --> 00:11:29,980
+it in the same format.
+
+179
+00:11:29,980 --> 00:11:35,920
+Now I know it's not very intuitive but that's the way an umpire works as far as grabbing that column
+
+180
+00:11:35,950 --> 00:11:40,310
+chunk in the same form of this two dimensional bracket.
+
+181
+00:11:40,330 --> 00:11:43,400
+Otherwise you'll get it as a one dimensional array.
+
+182
+00:11:43,420 --> 00:11:49,810
+So again just to clarify if I just put in one I get the same numbers but I only get him as a one dimensional
+
+183
+00:11:49,810 --> 00:11:50,590
+array.
+
+184
+00:11:50,620 --> 00:11:52,660
+I want this actual double brackets here.
+
+185
+00:11:52,660 --> 00:11:59,890
+I have to specify to grab in between those two columns which again is really just one column.
+
+186
+00:11:59,880 --> 00:12:02,480
+So I know it's a little strange and not intuitive.
+
+187
+00:12:02,740 --> 00:12:07,160
+And in fact a lot of the times we're actually just going to be grabbing all the values.
+
+188
+00:12:07,180 --> 00:12:12,400
+As such we won't really be doing this kind of same indexing notation but just keep in mind that's kind
+
+189
+00:12:12,400 --> 00:12:18,070
+of the way pi works syntax is a little strange there but hopefully that wasn't too much of a trick question
+
+190
+00:12:18,070 --> 00:12:18,670
+for you.
+
+191
+00:12:18,730 --> 00:12:21,720
+And you can play around with it a little more to figure that out.
+
+192
+00:12:22,660 --> 00:12:25,840
+But again don't sweat it too much if you weren't able to solve that one.
+
+193
+00:12:25,840 --> 00:12:28,730
+As far as getting it in the same format.
+
+194
+00:12:28,980 --> 00:12:32,770
+All right we only have two left here as far as grabbing stuff.
+
+195
+00:12:32,980 --> 00:12:35,650
+Let me go ahead and run Matt so we can see what it looks like.
+
+196
+00:12:35,650 --> 00:12:45,870
+Again lips 80 and looks like I just want the last row here 21 22 23 24 25.
+
+197
+00:12:46,290 --> 00:12:46,710
+OK.
+
+198
+00:12:46,780 --> 00:12:48,280
+So there's a couple of ways to do this.
+
+199
+00:12:48,310 --> 00:12:55,030
+Probably the simplest way is to just say go at the index for row and return everything.
+
+200
+00:12:55,660 --> 00:12:58,630
+And there we have 21 22 23 24 25.
+
+201
+00:12:58,620 --> 00:13:04,130
+And it matches the other way you can do this is if you know it's the last row in the matrix.
+
+202
+00:13:04,270 --> 00:13:08,140
+You can also do negative indexing and that will actually return the exact same thing.
+
+203
+00:13:08,130 --> 00:13:11,000
+However I would recommend that you use for here.
+
+204
+00:13:11,020 --> 00:13:13,640
+So it's a little more clear.
+
+205
+00:13:13,660 --> 00:13:14,030
+All right.
+
+206
+00:13:14,170 --> 00:13:17,020
+One more go and show Matt.
+
+207
+00:13:17,020 --> 00:13:23,080
+Here we have Matt and it looks like we want to grab all the columns of the last two rows.
+
+208
+00:13:23,230 --> 00:13:26,220
+But again notice something here has a double brackets.
+
+209
+00:13:26,260 --> 00:13:35,560
+So I want to use that slice notation meaning I want to go from row index three to five and then grab
+
+210
+00:13:35,620 --> 00:13:39,830
+all columns there and then return the same values here.
+
+211
+00:13:40,090 --> 00:13:43,270
+Again this was a little trickier than the last one we just saw.
+
+212
+00:13:43,420 --> 00:13:47,200
+But hopefully the answer makes sense to you now that you've seen it.
+
+213
+00:13:47,200 --> 00:13:50,290
+All right let's move on to do the following.
+
+214
+00:13:50,350 --> 00:13:55,900
+When you go to put a new cell in here so we can see Matt we want to do is get the sum of all the values
+
+215
+00:13:55,890 --> 00:13:56,950
+in Max.
+
+216
+00:13:56,950 --> 00:13:58,240
+Well there's two ways to do this.
+
+217
+00:13:58,240 --> 00:14:07,780
+You can say and some and then passen Matt or which you can also do is say Matt sum
+
+218
+00:14:10,570 --> 00:14:11,710
+and you get the same answer.
+
+219
+00:14:11,740 --> 00:14:13,420
+Either is fine.
+
+220
+00:14:13,420 --> 00:14:15,790
+Next you want to take it the standard deviation.
+
+221
+00:14:16,090 --> 00:14:22,180
+So hopefully you're able to figure this out either using the universal function and p s t d and then
+
+222
+00:14:22,180 --> 00:14:23,130
+passen Matt.
+
+223
+00:14:23,200 --> 00:14:27,460
+Now I would have gotten that and you could reference the link in the notes for the universal functions
+
+224
+00:14:27,790 --> 00:14:34,020
+or it's actually common enough that you could say and that a CD or excuse me Matt math that Assaidi
+
+225
+00:14:34,240 --> 00:14:36,390
+and it would all work as well.
+
+226
+00:14:36,580 --> 00:14:41,530
+OK finally this little tricky one at the end get the sum of all the columns in the mat in order to do
+
+227
+00:14:41,530 --> 00:14:45,260
+that which you had to do is say Matt got some.
+
+228
+00:14:45,540 --> 00:14:49,750
+And he had to specify an axis which you could have seen if you shift that tab here.
+
+229
+00:14:49,960 --> 00:14:53,440
+It will return the sum of all the array elements over the given access.
+
+230
+00:14:53,560 --> 00:14:58,780
+In this case you have to say access is equal to zero.
+
+231
+00:14:59,230 --> 00:15:01,430
+And that's how that works.
+
+232
+00:15:01,620 --> 00:15:05,780
+That last one was a bit tricky since we had it put in the access code but don't worry too much if you
+
+233
+00:15:05,780 --> 00:15:11,860
+didn't get it because we'll get a lot more practice as far as specifying the Access 0 or 1 when we start
+
+234
+00:15:11,860 --> 00:15:14,310
+working at the panda's library.
+
+235
+00:15:14,320 --> 00:15:14,890
+All right.
+
+236
+00:15:15,070 --> 00:15:16,440
+Hopefully that wasn't too bad for you.
+
+237
+00:15:16,450 --> 00:15:20,830
+Again you can check out the notebook for all the answers and all the code that you just went through
+
+238
+00:15:20,980 --> 00:15:23,370
+and always feel free to post to the Q&A forums.
+
+239
+00:15:23,380 --> 00:15:28,340
+If you have any questions on anything I just did I'll be happy to give you a further explanation.
+
+240
+00:15:28,720 --> 00:15:31,370
+All right thanks everyone and I'll see you at the next lecture

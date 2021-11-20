@@ -1,0 +1,803 @@
+1
+00:00:05,460 --> 00:00:09,580
+Cześć wszystkim i zapraszam do części maty Partlet do serii wykładów.
+
+2
+00:00:09,690 --> 00:00:14,280
+Przejdziemy dokładnie tam, gdzie skończyliśmy w części pierwszej, gdzie dowiadujemy się o programowaniu funkcjonalnym
+
+3
+00:00:14,280 --> 00:00:15,270
+z tą fabułą.
+
+4
+00:00:15,420 --> 00:00:18,990
+A co ważniejsze, metody zorientowane obiektowo z Mattem bezpotencjałowym.
+
+5
+00:00:19,110 --> 00:00:22,040
+Przejdźmy dalej i wróćmy do notatnika Jowisza, aby zacząć.
+
+6
+00:00:22,250 --> 00:00:22,540
+DOBRZE.
+
+7
+00:00:22,560 --> 00:00:28,200
+Oto wracam do numeru notatnika Jowisza, od kiedy nauczyliśmy się używać tej figury,
+
+8
+00:00:28,200 --> 00:00:35,600
+a następnie obliczyliśmy oś, a następnie osie, które spiskują, aby spiskować na obiekcie o orientacji obiektowej, używając tej niepustej.
+
+9
+00:00:36,390 --> 00:00:41,940
+Następną rzeczą, którą zamierzamy zrobić, jest nauczenie się, jak tworzyć wątki przy użyciu tej samej metody
+
+10
+00:00:41,940 --> 00:00:42,950
+programowania obiektowego.
+
+11
+00:00:42,990 --> 00:00:51,600
+Zamierzam iść naprzód i powiedzieć Tutaj po prostu wyczyść wszystko w tej komórce, a my powiemy to i
+
+12
+00:00:51,630 --> 00:01:02,790
+przeniesiemy komórkę do środka, a my powiemy, że przecinki figowe są równe skórki T, a zamiast tego Postać wzywająca mówi teraz, że będziemy próbować
+
+13
+00:01:02,790 --> 00:01:08,900
+robić podziały, a my powiemy, że są to wątki poboczne, więc odwołaj się
+
+14
+00:01:08,910 --> 00:01:10,340
+do wątków.
+
+15
+00:01:10,500 --> 00:01:12,270
+Zacznijmy i uruchom to.
+
+16
+00:01:12,570 --> 00:01:15,600
+I zauważ, że tutaj dostajemy tylko wątki.
+
+17
+00:01:15,600 --> 00:01:20,790
+Teraz mogę tylko użyć obiektu osi, tak jak to zrobiłem wcześniej, aby na nim spiskować.
+
+18
+00:01:21,090 --> 00:01:25,400
+I w zasadzie nie różni się to od tego, co robiliśmy wcześniej.
+
+19
+00:01:25,710 --> 00:01:32,040
+I tutaj powiedział, że X jest to, że działka x przyjdź do Y, gdzie różni się wiele wątków, gdzie możesz określić
+
+20
+00:01:32,040 --> 00:01:33,610
+liczbę wierszy i kolumn.
+
+21
+00:01:33,810 --> 00:01:42,420
+Na przykład mogę powiedzieć i wiersze, ponieważ mój pierwszy argument jest równy 1 i wywołuje, ponieważ mój drugi argument
+
+22
+00:01:42,420 --> 00:01:44,330
+jest równy dwa.
+
+23
+00:01:44,700 --> 00:01:49,970
+I mam zamiar iść dalej i pokazać wam, co to wygląda jak tag hashujący i uruchamiać to.
+
+24
+00:01:50,070 --> 00:01:57,660
+Teraz widzisz, że mam jeden wiersz z dwiema kolumnami i to jest po prostu fajny przedni uchwyt
+
+25
+00:01:57,660 --> 00:02:05,640
+do wywoływania postaci Piel T-Dog, również działanie fabuły polega na automatycznym wywoływaniu tych osi figowych w oparciu o
+
+26
+00:02:05,670 --> 00:02:08,900
+te argumenty oraz wiersze i kolumny.
+
+27
+00:02:09,180 --> 00:02:12,540
+Idźmy dalej i bawmy się z tym, dajmy na to, jeszcze jeden przykład.
+
+28
+00:02:12,570 --> 00:02:20,440
+Trzy wiersze odejdźmy i powiedzmy trzy kolumny, a widzimy teraz, że mamy trzy rzędy po trzech kolumnach.
+
+29
+00:02:20,550 --> 00:02:25,770
+Później zobaczymy, jak poradzić sobie z problemem nakładania się materiałów, ale jest to w istocie tylko
+
+30
+00:02:25,770 --> 00:02:26,600
+jedno połączenie.
+
+31
+00:02:26,610 --> 00:02:34,720
+Po prostu mówimy "peel t Titely", a to ostatecznie kończy się nałożeniem tych zakładek.
+
+32
+00:02:34,810 --> 00:02:41,270
+Wyjdźmy i cofnijmy się o krok, po prostu pracujmy nad tym jeden po drugim.
+
+33
+00:02:41,280 --> 00:02:41,670
+W porządku.
+
+34
+00:02:41,760 --> 00:02:43,320
+Mamy prawdziwość tych podpowiedzi.
+
+35
+00:02:43,320 --> 00:02:47,520
+I w gruncie rzeczy to tylko menedżer osi na górze Piel do tej figury.
+
+36
+00:02:47,550 --> 00:02:52,970
+W tym miejscu należy zwrócić uwagę, że zamiast mówić, że figura równa się PBT, robię
+
+37
+00:02:52,990 --> 00:02:59,100
+krotkę i pakuję je, mówiąc, że osie przecinków figowych są równe zębom, które pobrzękują, a rzeczą, którą
+
+38
+00:02:59,100 --> 00:03:07,290
+należy wiedzieć o tym obiekcie osi, jest to, że idę tutaj, aby ta komórka i typ w osiach osi to właściwie tylko tablica
+
+39
+00:03:07,290 --> 00:03:13,710
+osi mapowania mapy, w istocie jest to tylko lista tych obiektów osi, co oznacza, że mogę ją w rzeczywistości
+
+40
+00:03:13,710 --> 00:03:14,290
+iterować.
+
+41
+00:03:14,460 --> 00:03:29,950
+Mogę powiedzieć coś takiego dla aktualnych znaków podkreślenia X w osiach osi, kropka wykres x przyjdź y.
+
+42
+00:03:30,020 --> 00:03:31,610
+Nie chcę powiedzieć, że X nie jest spiskiem.
+
+43
+00:03:31,620 --> 00:03:40,450
+Chcę powiedzieć bieżący X zatrzymania działki, a następnie widzimy, że faktycznie zostały wykreślone przez te osie.
+
+44
+00:03:40,710 --> 00:03:47,550
+Ponownie jest to po prostu pokazanie, że ten obiekt osi jest w istocie tylko listą osi map, które
+
+45
+00:03:47,550 --> 00:03:50,190
+zostały ręcznie utworzone, kiedy powiedziałeś: Fig.
+
+46
+00:03:50,250 --> 00:03:56,390
+Dodaj topory podkreślenia, po prostu kierując punkt do domu, że jedyną różnicą między Pilani, która podkultuje,
+
+47
+00:03:56,460 --> 00:04:03,090
+a po prostu robieniem tej figury, jest to, że Piel t to subploty zasadniczo robią to w osiach
+
+48
+00:04:03,090 --> 00:04:08,470
+podkreślenia dla ciebie automatycznie, w oparciu o liczbę rzędów i kolumn, które chcesz .
+
+49
+00:04:08,490 --> 00:04:09,170
+DOBRZE.
+
+50
+00:04:09,450 --> 00:04:13,600
+Ponieważ możemy dokonywać iteracji poprzez ten obiekt osi, możemy go również zaindeksować.
+
+51
+00:04:13,620 --> 00:04:24,140
+To znaczy, że mogę powiedzieć, że osie 0 Wykresy doppowe X przychodzą a Y i tutaj zostały wykreślone na tych pierwszych osiach.
+
+52
+00:04:24,140 --> 00:04:25,090
+Teraz mogę zrobić to samo.
+
+53
+00:04:25,090 --> 00:04:31,460
+Drugi mogę powiedzieć, że osie 1 kropka wykresy y przecinek x.
+
+54
+00:04:31,770 --> 00:04:40,300
+I tutaj widzimy, jak albo wywołanie indeksowe oferuje tablicę osi lub iterację w tej tablicy osi
+
+55
+00:04:40,300 --> 00:04:45,490
+i tak jak widzieliśmy wcześniej możemy również wywoływać tytuły
+
+56
+00:04:45,520 --> 00:05:03,180
+i etykiety z tego, więc mogę powiedzieć coś w stylu xes 0 Tytuł zestawu powie pierwszy wykres i wtedy powiem topory 1 podkreślenie tytuł drugi działka i bohaterowie mogą wywoływać tytuły i możesz
+
+57
+00:05:03,190 --> 00:05:09,580
+powiedzieć, że etykiety x ustawiają etykietę off jednego z tych obiektów osi.
+
+58
+00:05:09,640 --> 00:05:16,060
+Wszystko, co robisz, to po prostu chwytanie tego obiektu subplot osi w oparciu o jego pozycję
+
+59
+00:05:16,060 --> 00:05:17,310
+w tablicy.
+
+60
+00:05:17,320 --> 00:05:17,770
+W porządku.
+
+61
+00:05:17,980 --> 00:05:22,040
+Zróbmy szybki przegląd tych dwóch metod zorientowanych obiektowo.
+
+62
+00:05:22,300 --> 00:05:24,330
+Ta pierwsza metoda jest trochę bardziej ręczna.
+
+63
+00:05:24,370 --> 00:05:26,380
+To postać Piel T-Dog.
+
+64
+00:05:26,410 --> 00:05:32,650
+Idź naprzód i twórz tę figurę, ręcznie dodawaj osie i wybieraj ich lokalizację i rozmiar, a następnie bazuj na osiach, do których jedziesz,
+
+65
+00:05:32,770 --> 00:05:39,880
+i powiedz, że działka i ta etykieta X ustawiają etykietę y itp. które tutaj pokazujemy
+
+66
+00:05:39,880 --> 00:05:42,840
+przykłady.
+
+67
+00:05:42,970 --> 00:05:48,280
+Druga metoda dotyczy podgatunków, które chcesz uporządkować za pomocą kolumn Rosing.
+
+68
+00:05:48,280 --> 00:05:55,450
+Pozwala to na wywoływanie osi przecinków figowych, więc krotka w pakowaniu jest równa wywoływaniu wątków, a następnie w
+
+69
+00:05:55,480 --> 00:06:01,600
+oparciu o te osie dostajemy tablicę osi, a ty możesz drukować i ustawiać tytuły albo przez
+
+70
+00:06:01,660 --> 00:06:05,300
+indeksowanie, albo przez iterację przez ten obiekt osi.
+
+71
+00:06:05,300 --> 00:06:12,760
+A jeśli masz jakiekolwiek problemy z nakładaniem się rzeczy Zawsze możesz po prostu powiedzieć "obleśnij T-top" ściśle
+
+72
+00:06:12,770 --> 00:06:16,470
+nawiasy, a to zajmie się nakładającymi się działkami.
+
+73
+00:06:16,480 --> 00:06:20,210
+Polecam, abyś zawsze umieszczał to na końcu wyciągów z fabuły.
+
+74
+00:06:20,830 --> 00:06:27,970
+OK, zacznij teraz mówić o współczynniku kształtu wielkości obrazu i mapie GPI. Cutlip pozwala ci kontrolować każdy
+
+75
+00:06:27,970 --> 00:06:32,620
+z tych aspektów i możesz je określić, gdy wywołujesz obiekt rysunku.
+
+76
+00:06:32,620 --> 00:06:34,990
+Pozwól, że przedstawię ci przykład.
+
+77
+00:06:34,990 --> 00:06:44,500
+Zamierzam powiedzieć, że myśl jest równa liczbie Pielów, a argumenty, które mogę podać, to rozmiar Figg jest równy.
+
+78
+00:06:44,890 --> 00:06:50,350
+Następnie podajesz krotkę, gdzie krotką jest szerokość i wysokość figury w calach.
+
+79
+00:06:50,380 --> 00:06:58,630
+Na przykład mogę powiedzieć "trzy na dwa", a następnie drugi argument, który można dodać to GPI, na przykład 100 GPI,
+
+80
+00:06:58,690 --> 00:07:03,940
+gdzie interfejs API to tylko kropki na cal lub piksele na cal.
+
+81
+00:07:04,120 --> 00:07:07,490
+Zwykle używam domyślnego GPI, kiedy pracuję z notatnikiem Jowisza.
+
+82
+00:07:07,600 --> 00:07:14,290
+Więc mam zamiar iść dalej i po prostu wyjaśnić, że na razie dodam zestaw
+
+83
+00:07:14,290 --> 00:07:27,310
+osi do tego połączenia to po prostu X, a my powiemy, że kropka kropki doda osie podkreślenia, a my powiemy 0 0 1 przecinek 1 a następnie
+
+84
+00:07:27,310 --> 00:07:33,220
+mam zamiar iść dalej i powiedzieć X zatrzymać fabułę x przyjść Y.
+
+85
+00:07:33,340 --> 00:07:33,700
+W porządku.
+
+86
+00:07:33,700 --> 00:07:34,710
+Więc mamy naszą fabułę.
+
+87
+00:07:34,720 --> 00:07:36,970
+Pójdźmy dalej i pomylmy się, jak rozmiar figury.
+
+88
+00:07:37,000 --> 00:07:39,450
+Powiedzmy, że chcemy, aby było bardzo szerokie.
+
+89
+00:07:39,500 --> 00:07:41,280
+Śmiało i powiedz 8 na 2.
+
+90
+00:07:41,650 --> 00:07:45,880
+A teraz mam to 8 cali na 2 cale.
+
+91
+00:07:45,880 --> 00:07:46,510
+W porządku.
+
+92
+00:07:46,960 --> 00:07:55,510
+Więc możesz zrobić to samo z podzespołami, które mógłbym powiedzieć, że te wątki ustawiają tutaj tego członka wielkości Figa.
+
+93
+00:07:55,510 --> 00:08:01,240
+Teraz powiemy o osiach rysunkowych, a ja zamierzam iść dalej i usunąć osie.
+
+94
+00:08:01,330 --> 00:08:07,900
+Ustaw rozmiar figury, a osie posłużą do przodu i narysuj wykres na pierwszych osiach.
+
+95
+00:08:07,900 --> 00:08:15,670
+Zamierzam po prostu powiedzieć axes kropka xy i otrzymam bardzo podobny wątek.
+
+96
+00:08:15,670 --> 00:08:21,490
+Teraz mam zamiar podać kilka wierszy i kolumn dla tego podpunktu, a Rose będzie
+
+97
+00:08:21,490 --> 00:08:22,820
+równy 1.
+
+98
+00:08:22,870 --> 00:08:25,210
+W rzeczywistości składa się on z dwóch rzędów i idziemy tutaj szeroko.
+
+99
+00:08:25,510 --> 00:08:28,550
+A potem powiedzmy, że mamy jedną kolumnę.
+
+100
+00:08:28,720 --> 00:08:31,600
+Tak więc, połączenia są równe 1.
+
+101
+00:08:31,600 --> 00:08:34,710
+Teraz zadzwonię tutaj 0.
+
+102
+00:08:34,840 --> 00:08:45,310
+Drukuj X przyjdź Y, a następnie powiemy osie jeden punkt wykresu y przecinek X. I tutaj widać, że rozmiar fig wziął to pod uwagę,
+
+103
+00:08:45,310 --> 00:08:49,220
+aż do dwóch rzędów o jedną kolumnę.
+
+104
+00:08:49,780 --> 00:08:57,250
+I jak zawsze, ponieważ mamy tu trochę prawdziwej strony, spróbuj ścisnąć zęby, a to postara się naprawić
+
+105
+00:08:57,250 --> 00:09:01,750
+układ i wygląda na to, że wykonał całkiem niezłą robotę.
+
+106
+00:09:02,060 --> 00:09:07,110
+Tutaj są pewne problemy z tymi osiami, ale pokażę później, jak możesz
+
+107
+00:09:07,120 --> 00:09:11,240
+dostosować te osie y, aby pokazać trochę mniej informacji.
+
+108
+00:09:11,260 --> 00:09:11,590
+W porządku.
+
+109
+00:09:11,590 --> 00:09:16,990
+Teraz, gdy skończyliśmy omawiać rozmiar postaci i GPI. Zróbmy nową komórkę i zacznijmy rozmawiać
+
+110
+00:09:16,990 --> 00:09:21,090
+o tym, jak właściwie zapisać figurę, aby uratować figurę.
+
+111
+00:09:21,250 --> 00:09:26,910
+Możesz użyć wykresu na mapie, aby wygenerować tylko wysokiej jakości wydruki w wielu formatach, w tym
+
+112
+00:09:26,910 --> 00:09:28,510
+na piance GJ Peg.
+
+113
+00:09:28,630 --> 00:09:37,200
+SPG TGF i PTF, aby zapisać figurę do pliku, możesz użyć metody save thig.
+
+114
+00:09:37,500 --> 00:09:40,830
+Na przykład mamy tutaj naszą postać, którą już stworzyliśmy.
+
+115
+00:09:40,830 --> 00:09:43,610
+Pamiętaj, że właśnie tutaj jest ryc.
+
+116
+00:09:44,100 --> 00:09:50,490
+A następnie mogę zapisać rys. Kropka zapisać fig i wszystko, co musisz zrobić, to przekazać nazwę pliku, który chcesz.
+
+117
+00:09:50,580 --> 00:09:57,720
+Na przykład moje zdjęcie podkreślenia, a następnie przekazujesz w rozszerzeniu i mapę Cutlip jest wystarczająco inteligentny, aby wiedzieć,
+
+118
+00:09:57,720 --> 00:09:58,770
+co chcesz.
+
+119
+00:09:58,890 --> 00:10:08,370
+Więc jeśli chcesz PNB, mówisz tutaj w G, jeśli chcesz JPA mówisz, że J peg JP G itd. i powiedz to jako że P i
+
+120
+00:10:08,380 --> 00:10:09,950
+G.
+
+121
+00:10:10,950 --> 00:10:12,890
+I to automatycznie powie liczba.
+
+122
+00:10:13,170 --> 00:10:15,470
+Tutaj możesz również określić CPI.
+
+123
+00:10:15,780 --> 00:10:20,910
+Jeśli więc zapomniałeś podać tutaj CPI podczas tworzenia wykresu, możesz tutaj ponownie
+
+124
+00:10:20,920 --> 00:10:22,050
+określić DPR.
+
+125
+00:10:22,060 --> 00:10:27,860
+Możesz to zrobić, jeśli chcesz osiągnąć 200 GPI i możesz zwiększyć DPA, aby uzyskać więcej szczegółów.
+
+126
+00:10:27,880 --> 00:10:28,520
+W porządku.
+
+127
+00:10:28,830 --> 00:10:34,900
+Mamy już ponad liczbowe tytuły i etykiety osi, takie jak ustaw etykietę X i ustaw etykietę y, ale pokażę
+
+128
+00:10:34,920 --> 00:10:36,840
+ci szybkie przypomnienie, jak to zrobić.
+
+129
+00:10:37,040 --> 00:10:44,240
+Zamienimy to z powrotem na zwykłą figę, która równa się postaci Piel T-Dog.
+
+130
+00:10:45,210 --> 00:10:47,490
+Śmiało i dodaj do tego zestaw osi.
+
+131
+00:10:47,500 --> 00:10:49,980
+Więc uratujemy Fig.
+
+132
+00:10:50,120 --> 00:11:00,050
+Dodaj podkreślniki xes, umieścimy je na 0 0 1 1, a następnie powiemy X zatrzymanie wykresów X przyjdzie Y.
+
+133
+00:11:00,840 --> 00:11:01,380
+W porządku.
+
+134
+00:11:01,680 --> 00:11:08,040
+Przypominamy więc, że jeśli chcesz dodać tytuł, bierzesz jedną z tych osi i mówisz o
+
+135
+00:11:08,040 --> 00:11:14,110
+ustawieniu tytułu, a po prostu przekazujesz ciąg tytułu, który chcesz, aby ustawić etykietę y.
+
+136
+00:11:14,280 --> 00:11:19,190
+Mówisz po prostu, aby ustawić etykietę "y" w ciągu żądanej etykiety y.
+
+137
+00:11:19,800 --> 00:11:27,220
+A potem dla Ex-Slave wszystko, co możesz zrobić to samo, ustawić etykietę, którą chcesz.
+
+138
+00:11:28,660 --> 00:11:32,410
+OK, więc mam tytuł mojej żony i etykiety X.
+
+139
+00:11:32,700 --> 00:11:35,610
+Porozmawiajmy o legendach z legendami.
+
+140
+00:11:35,620 --> 00:11:42,480
+Możesz użyć tekstu etykiety, aby wyjaśnić, co to jest fabuła, a pokażę, co przez to rozumiem.
+
+141
+00:11:42,960 --> 00:11:53,850
+Zamierzam iść dalej i usunąć te trzy linie kodu i powiedzieć x zacznij drukować y przecinek X ..
+
+142
+00:11:54,100 --> 00:11:56,850
+Zauważ, że robię to na tej samej figurze.
+
+143
+00:11:56,860 --> 00:12:05,580
+To znaczy, że jeśli powiem i uruchomię to, otrzymam dwie linie tutaj, otrzymam wykres x y i exploit.
+
+144
+00:12:06,720 --> 00:12:10,540
+Ponieważ są one zupełnie inne. Zacznijmy od czegoś, co jest trochę bardziej podobne.
+
+145
+00:12:10,560 --> 00:12:18,070
+Mam zamiar wyjść i wykreślić x versus x square i X versus x Q ..
+
+146
+00:12:18,880 --> 00:12:19,490
+W porządku.
+
+147
+00:12:19,710 --> 00:12:21,810
+Mamy teraz dwie linie.
+
+148
+00:12:21,880 --> 00:12:26,070
+A jeśli po prostu patrzysz na tę postać samodzielnie, bez możliwości odniesienia się do kodu,
+
+149
+00:12:26,070 --> 00:12:29,790
+prawdopodobnie nie masz pewności co do tego, co reprezentuje każdy z działek.
+
+150
+00:12:29,880 --> 00:12:32,730
+Nie chcesz dodawać legendy w zamówieniu.
+
+151
+00:12:32,760 --> 00:12:34,120
+Dodaj legendę.
+
+152
+00:12:34,560 --> 00:12:37,420
+Jest to całkiem proste, ale jest to proces dwuetapowy.
+
+153
+00:12:37,500 --> 00:12:44,270
+Pierwszym krokiem jest po prostu wywołanie X, że Legin na dole kodu, gdzie znajdują się twoje osie, a
+
+154
+00:12:45,030 --> 00:12:50,260
+jeśli uruchomisz to zauważysz, że dostałeś ostrzeżenie, że nie znaleziono żadnych oznaczonych obiektów.
+
+155
+00:12:50,520 --> 00:12:52,830
+I tu pojawia się drugi krok.
+
+156
+00:12:52,830 --> 00:12:58,110
+Dla każdego z wywołań, które właśnie wprowadziłeś, dodasz argument o nazwie label, a ta etykieta jest
+
+157
+00:12:58,120 --> 00:13:00,050
+po prostu łańcuchem, którego potrzebujesz.
+
+158
+00:13:00,050 --> 00:13:05,550
+Aby funkcja X tej legendy mogła się odwoływać, przejdźmy do tego, aby pokazać,
+
+159
+00:13:05,550 --> 00:13:13,970
+co mam na myśli mówiąc, że możemy powiedzieć, że X do kwadratu jest naszą etykietą, a potem i tą etykietą.
+
+160
+00:13:13,980 --> 00:13:15,160
+Zamierzam iść
+
+161
+00:13:17,860 --> 00:13:19,620
+dalej i powiedzieć, że wykonam.
+
+162
+00:13:21,370 --> 00:13:26,130
+A teraz, gdy uruchomię tę legendę X, widzę, że udało mi się stworzyć legendę.
+
+163
+00:13:26,160 --> 00:13:31,260
+Wszystko to dzieje się, gdy wywołujesz X, że legenda szuka każdego wywołania fabuły, a następnie
+
+164
+00:13:31,290 --> 00:13:33,150
+sprawdza, czy jest tam etykieta.
+
+165
+00:13:33,270 --> 00:13:38,880
+Następnie etykieta, która jest tylko łańcuchem, zostaje zwrócona i dopasowywana do właściwego koloru
+
+166
+00:13:38,880 --> 00:13:39,810
+linii.
+
+167
+00:13:39,880 --> 00:13:44,190
+Później pokażemy, jak właściwie dostosować kolory linii.
+
+168
+00:13:44,190 --> 00:13:45,400
+Teraz szybkie nie to.
+
+169
+00:13:45,390 --> 00:13:52,020
+Zwróć uwagę, że niektóre z tych legend pokrywają się z faktycznymi działkami, które możesz wykonać w
+
+170
+00:13:52,020 --> 00:13:55,890
+wywołaniu legendy X, aby tego uniknąć, należy podać ellos.
+
+171
+00:13:55,950 --> 00:14:01,030
+Teraz to naprawdę kilka lokalizacji, które możesz określić, a ja szybko pokażę ci stronę
+
+172
+00:14:01,030 --> 00:14:01,830
+z dokumentacją.
+
+173
+00:14:01,840 --> 00:14:05,130
+Jest on powiązany w notatniku w tej sekcji.
+
+174
+00:14:05,130 --> 00:14:09,160
+Pozwól, że przejdę dalej i przejdź do tego linku, aby ten link prowadził do strony, która wygląda tak.
+
+175
+00:14:09,240 --> 00:14:14,640
+Możesz kliknąć legendę, a tutaj jest zestaw parametrów i kod lokalizacji oraz
+
+176
+00:14:14,820 --> 00:14:16,270
+ciąg lokalizacji.
+
+177
+00:14:16,470 --> 00:14:23,280
+Możesz więc określić najlepszy górny prawy górny lewy dolny lewy itd. na podstawie kodu lokalizacji.
+
+178
+00:14:23,280 --> 00:14:28,120
+Zawsze polecałbym użycie kodu lokalizacji 0, ponieważ pozwala to map lib próbować wybrać
+
+179
+00:14:28,120 --> 00:14:30,180
+najlepszą lokalizację dla twojej legendy.
+
+180
+00:14:30,240 --> 00:14:31,170
+Zróbmy to.
+
+181
+00:14:31,170 --> 00:14:37,320
+Pójdziemy i powiemy, że Alosi wywołuje działkę 0 i jeśli widzimy, że najlepsza lokalizacja jest tutaj
+
+182
+00:14:37,380 --> 00:14:42,000
+w lewym górnym rogu, przejdźmy dalej i sprawdź jeszcze jeden kod lokalizacji.
+
+183
+00:14:42,010 --> 00:14:48,820
+Jeśli wrócimy tutaj na przykład, jeśli chcemy, aby był w środku, możemy podać kod lokalizacji 10.
+
+184
+00:14:49,620 --> 00:14:51,480
+I tutaj mamy w środku.
+
+185
+00:14:51,480 --> 00:14:57,510
+Teraz, jeśli żadna z tych opcji nie działa dla ciebie, na przykład od 0 do 10, co możesz
+
+186
+00:14:57,510 --> 00:15:02,650
+zrobić, możesz również określić krotkę, podając X i Y w lewym dolnym rogu legendy.
+
+187
+00:15:02,880 --> 00:15:10,560
+Na przykład możemy powiedzieć coś takiego 0. 1 przecinek 0. 1 i oznacza to tak jak
+
+188
+00:15:10,560 --> 00:15:13,100
+wcześniej, kiedy wkładasz fabułę insertów.
+
+189
+00:15:13,200 --> 00:15:17,760
+Możesz tutaj umieścić krotkę określającą miejsce, w którym chcesz umieścić swoją legendę.
+
+190
+00:15:17,760 --> 00:15:19,880
+Dolny róg.
+
+191
+00:15:19,880 --> 00:15:20,670
+W porządku.
+
+192
+00:15:20,790 --> 00:15:22,680
+To wszystko w tej drugiej części.
+
+193
+00:15:22,680 --> 00:15:23,590
+Zaraz dalej.
+
+194
+00:15:23,590 --> 00:15:26,310
+Na tej ostatniej części wykładu Partlow koncepcje wykładu.
+
+195
+00:15:26,310 --> 00:15:32,040
+Porozmawiamy o ustawianiu linii kolorów i linii oraz pracy ze znacznikami ustawiającymi zakres fabuły,
+
+196
+00:15:32,040 --> 00:15:36,690
+a następnie zaczniemy rozmawiać o niektórych specjalnych działkach, ale to doprowadzi nas
+
+197
+00:15:36,690 --> 00:15:39,150
+do dyskusji na temat morza.
+
+198
+00:15:39,180 --> 00:15:41,100
+W porządku, dziękuję wszystkim.
+
+199
+00:15:41,110 --> 00:15:46,010
+Śmiało i opublikuj wszelkie pytania na forach pytań i odpowiedzi, chętnie odpowiem na nie.
+
+200
+00:15:46,020 --> 00:15:49,090
+Pamiętaj, aby odwoływać się do notatników do tego wykładu.
+
+201
+00:15:49,090 --> 00:15:50,940
+OK, zobaczę, czy następny wykład

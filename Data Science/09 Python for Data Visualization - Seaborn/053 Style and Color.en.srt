@@ -1,0 +1,471 @@
+1
+00:00:05,220 --> 00:00:08,460
+Hello everyone and welcome to the style and colour lecture.
+
+2
+00:00:08,460 --> 00:00:12,690
+We've shown a few times how to control figure aesthetics and seaborne But now we're going to go over
+
+3
+00:00:12,690 --> 00:00:14,150
+it in a more formal manner.
+
+4
+00:00:14,340 --> 00:00:17,600
+Let's go ahead and jump to Jupiter notebook to get started.
+
+5
+00:00:18,450 --> 00:00:20,370
+All right here we are at the Jupiter notebook.
+
+6
+00:00:20,370 --> 00:00:25,140
+I've gone ahead and done the usual import seaborne set matplotlib line and went ahead and loaded up
+
+7
+00:00:25,380 --> 00:00:27,250
+the tips data set.
+
+8
+00:00:27,270 --> 00:00:30,120
+Let me go in and show you how you can set particular styles.
+
+9
+00:00:30,360 --> 00:00:40,730
+For instance I can do SNL star count plots and let's say the sex column in passen tips as my data whoops
+
+10
+00:00:42,070 --> 00:00:49,890
+data equal tips in here I have my accounts plot's seaborne has a set style arguments which allows you
+
+11
+00:00:49,890 --> 00:00:52,220
+to set the style for the rest of your plots.
+
+12
+00:00:52,380 --> 00:00:58,650
+And if we go and do shift Tampere to check out the underscore style you basically pass in a parameter
+
+13
+00:00:58,650 --> 00:01:00,650
+for style and that's a string.
+
+14
+00:01:00,660 --> 00:01:07,060
+It can be dark grid white grid dark white or Tick's we're going to show you what this looks like pressing
+
+15
+00:01:07,080 --> 00:01:15,000
+and whites will go ahead and creates a blank white background for you if you passen tick ticks.
+
+16
+00:01:15,030 --> 00:01:20,670
+I should say you basically get these ticks at the edge of the box.
+
+17
+00:01:20,700 --> 00:01:22,590
+Then there's also dark grid
+
+18
+00:01:25,620 --> 00:01:28,320
+which gives you the original Dark grid background.
+
+19
+00:01:28,350 --> 00:01:30,660
+And then there's also what I really like.
+
+20
+00:01:30,720 --> 00:01:35,150
+White grid gives you both the clarity of white but also the grid.
+
+21
+00:01:35,160 --> 00:01:36,720
+So you don't lose that information.
+
+22
+00:01:36,810 --> 00:01:41,430
+You can go ahead and kind of messroom set style and see which ones you prefer or like the best.
+
+23
+00:01:41,430 --> 00:01:46,290
+Now another thing you can do is remove spines.
+
+24
+00:01:46,350 --> 00:01:50,460
+So right now you can still see let me go in and set this equal to ticks so it's very clear what we're
+
+25
+00:01:50,460 --> 00:01:52,470
+doing here.
+
+26
+00:01:52,470 --> 00:01:57,960
+So we have these spine's the top spine and the right spine as well as the bottom and left hand spine
+
+27
+00:01:57,960 --> 00:01:58,400
+.
+
+28
+00:01:58,410 --> 00:02:06,960
+If you want to go ahead and remove those you can just say Asinus the spine and it will remove the top
+
+29
+00:02:06,960 --> 00:02:11,930
+spine and the right spine if you want to continue removing the bottom or left spine.
+
+30
+00:02:11,970 --> 00:02:14,230
+You can actually add those in as parameters.
+
+31
+00:02:14,290 --> 00:02:21,570
+So basically top right left and bottom by default top and right are true to be removed left and bottom
+
+32
+00:02:21,570 --> 00:02:22,760
+or not to be removed.
+
+33
+00:02:22,770 --> 00:02:28,640
+But you can specify that you do want them removed by saying leftest true and then bottom is true.
+
+34
+00:02:28,670 --> 00:02:31,500
+This will remove basically all four spines.
+
+35
+00:02:31,590 --> 00:02:35,670
+So if you get if you're looking for something that's like a very clear and nice looking polished plot
+
+36
+00:02:36,060 --> 00:02:38,220
+maybe you want to present it without any spines.
+
+37
+00:02:38,220 --> 00:02:43,090
+I personally prefer spines in there so I'm gonna go ahead and remove that and keep those spines.
+
+38
+00:02:43,500 --> 00:02:46,740
+Now let's talk about size and aspect.
+
+39
+00:02:47,010 --> 00:02:52,560
+You can use map plot libs peel t figure big size width and height to actually change the size of most
+
+40
+00:02:52,560 --> 00:02:53,460
+Seaborn blocks.
+
+41
+00:02:53,610 --> 00:02:59,310
+So they are all just basic callbacks to map lit and you can also control the size and aspect ratio of
+
+42
+00:02:59,310 --> 00:03:04,080
+a seaborn grid plots by passing in the parameters size and aspect.
+
+43
+00:03:04,080 --> 00:03:06,730
+Let me go to show you what I mean by all this.
+
+44
+00:03:07,050 --> 00:03:12,960
+I'm going to go ahead and call the count plots and note that the set style even if I delete it will
+
+45
+00:03:12,960 --> 00:03:21,450
+stay in place until I say a new style but I'm going to call it go appeal t that figure and say fix size
+
+46
+00:03:21,450 --> 00:03:22,800
+is equal to.
+
+47
+00:03:23,190 --> 00:03:26,230
+We're going into say 12 by 3.
+
+48
+00:03:26,790 --> 00:03:32,700
+And note that this actually overrides or is a callback when seaborne is calling Matt plot lib.
+
+49
+00:03:32,990 --> 00:03:36,030
+Madlib will actually set the figure size for the Seaborn plot.
+
+50
+00:03:36,060 --> 00:03:42,210
+So you can use or map plot lived knowledge as far as figure sizing and aspect ratios here in combination
+
+51
+00:03:42,210 --> 00:03:45,240
+with seaborne.
+
+52
+00:03:45,270 --> 00:03:48,990
+Now let's go ahead and touch on the topic of scale and context.
+
+53
+00:03:48,990 --> 00:03:55,200
+SEABORNE comes a convenient set underscore context which allows you to override default parameters and
+
+54
+00:03:55,200 --> 00:03:59,940
+change Funt scales depending on what you're actually creating the figure for.
+
+55
+00:03:59,940 --> 00:04:04,690
+So let's say you are going to create this figure not for a notebook but actually for a poster.
+
+56
+00:04:04,860 --> 00:04:15,060
+You can go ahead and say Asinus thought underscore context and context will take a couple of parameters
+
+57
+00:04:15,070 --> 00:04:15,130
+.
+
+58
+00:04:15,190 --> 00:04:16,300
+Take context.
+
+59
+00:04:16,320 --> 00:04:22,920
+And that's going to be a string and it also takes a font scale the context parameters are paper notebook
+
+60
+00:04:22,950 --> 00:04:24,700
+talk or poster.
+
+61
+00:04:24,720 --> 00:04:32,520
+So if I go and just set the context the context excuse me to poster notice that I get a much larger
+
+62
+00:04:32,520 --> 00:04:37,020
+figure out and the font is also larger because it assumes that you're going to be putting this on a
+
+63
+00:04:37,020 --> 00:04:37,890
+poster.
+
+64
+00:04:38,010 --> 00:04:42,570
+And if you're still unsatisfied with the font size you can go ahead and add that to the arguments of
+
+65
+00:04:42,660 --> 00:04:47,840
+font underscore scale to a larger number maybe three.
+
+66
+00:04:47,850 --> 00:04:50,610
+So it's three times the size of the default.
+
+67
+00:04:50,670 --> 00:04:56,130
+And here you could actually set the context for whatever you want the figure to be and usually by default
+
+68
+00:04:56,190 --> 00:04:58,950
+it's going to be in the context of a notebook.
+
+69
+00:04:59,050 --> 00:05:06,060
+So you can go to say notebook and that sets the context of your figures.
+
+70
+00:05:06,060 --> 00:05:06,480
+All right.
+
+71
+00:05:06,540 --> 00:05:08,460
+We've got over just a few of the basics here.
+
+72
+00:05:08,460 --> 00:05:13,210
+The last thing I want to talk about are palettes and colors.
+
+73
+00:05:13,260 --> 00:05:16,800
+We've shown plots before we actually specify a hue parameter.
+
+74
+00:05:16,800 --> 00:05:18,730
+Let me go in and show an example of that.
+
+75
+00:05:18,870 --> 00:05:26,940
+For instance when we said S.N. s n s Lim plots maybe we want to do total bill versus the tip
+
+76
+00:05:30,840 --> 00:05:37,380
+and then passen tips as the data set whip's data equals IPs.
+
+77
+00:05:37,470 --> 00:05:42,170
+So we were able to previously specify something like Heugh is equal to six.
+
+78
+00:05:42,720 --> 00:05:46,100
+And then we get these colors chosen for us green and blue.
+
+79
+00:05:46,500 --> 00:05:52,560
+And we've seen earlier that we can actually pass in a Hallett's arguments and there are certain strings
+
+80
+00:05:52,560 --> 00:05:58,890
+we can put in that essentially give you a color map and we've seen the similar aspects for things such
+
+81
+00:05:58,890 --> 00:05:59,890
+as the heat maps.
+
+82
+00:05:59,970 --> 00:06:03,600
+When I put in things like magma or cool warm.
+
+83
+00:06:03,900 --> 00:06:06,910
+Now you may be wondering what we're you actually find these strings.
+
+84
+00:06:07,070 --> 00:06:11,420
+Well you can find them by going to map plot lives color map page.
+
+85
+00:06:11,490 --> 00:06:14,350
+Let me go to show you how to do this with Google.
+
+86
+00:06:14,490 --> 00:06:15,050
+You can go ahead.
+
+87
+00:06:15,060 --> 00:06:17,680
+Open a new tab and go to Google and look up.
+
+88
+00:06:17,690 --> 00:06:27,210
+Matt plot's live color map and it will take you to one of these pages and we're looking for is the color
+
+89
+00:06:27,210 --> 00:06:29,790
+map documentation page.
+
+90
+00:06:30,120 --> 00:06:31,940
+And this is usually the first link here.
+
+91
+00:06:31,950 --> 00:06:33,820
+There's color example code.
+
+92
+00:06:34,140 --> 00:06:40,350
+And if we come to this page now we can see the actual color scale and the gradients as well as the name
+
+93
+00:06:40,350 --> 00:06:43,860
+or string name you need to passen for the color map.
+
+94
+00:06:43,860 --> 00:06:50,130
+So if we zoom out here we can see these four color maps these are the main color maps but there's also
+
+95
+00:06:50,130 --> 00:06:51,660
+sequential color maps.
+
+96
+00:06:51,820 --> 00:06:59,280
+So sequential two color maps another set diverging color maps qualitative color maps miscellaneous and
+
+97
+00:06:59,400 --> 00:07:02,310
+those are your options as far as the strings you passen.
+
+98
+00:07:02,310 --> 00:07:09,570
+So for example let's say I wanted to choose this seismic diverging color map for the hue that I just
+
+99
+00:07:09,570 --> 00:07:17,150
+come over here and instead of coor by passen seismic place felt that right.
+
+100
+00:07:17,160 --> 00:07:22,380
+And here we can now see I get this kind of purple and red which were the colors here at both ends at
+
+101
+00:07:22,380 --> 00:07:24,020
+this diverging color map.
+
+102
+00:07:24,330 --> 00:07:26,330
+And you can go ahead and play around these color maps.
+
+103
+00:07:26,330 --> 00:07:27,390
+There are a lot of fun to play with.
+
+104
+00:07:27,440 --> 00:07:32,380
+When Seaborn to get your plot to look exactly like you want it to.
+
+105
+00:07:32,400 --> 00:07:33,360
+All right.
+
+106
+00:07:33,360 --> 00:07:38,070
+You can go ahead and check out the Jupiter note book for style and color to get a lot more information
+
+107
+00:07:38,070 --> 00:07:43,260
+and check out the links in that page or in that note book which takes you to the official documentation
+
+108
+00:07:43,530 --> 00:07:48,240
+which has even more information about really controlling more of your aesthetics and your figure.
+
+109
+00:07:48,330 --> 00:07:54,220
+But the main thing to understand to know are that you can look up these palette codes with MAP live
+
+110
+00:07:54,360 --> 00:07:55,660
+looking up color maps.
+
+111
+00:07:55,770 --> 00:08:02,700
+You can change the font size with set underscore context setting context to either poster or notebook
+
+112
+00:08:03,000 --> 00:08:05,300
+and then changing the font scale.
+
+113
+00:08:05,520 --> 00:08:10,530
+And then you can use piquante that figure with Fig sized to actually change the size of your figures
+
+114
+00:08:10,530 --> 00:08:11,060
+.
+
+115
+00:08:11,070 --> 00:08:14,770
+All right I hope you enjoyed this and I hope you enjoyed Seaborn.
+
+116
+00:08:14,820 --> 00:08:18,300
+Coming up next are some seaborne exercises free to add to.
+
+117
+00:08:18,330 --> 00:08:18,770
+All right.
+
+118
+00:08:19,020 --> 00:08:20,520
+Thanks and I'll see you at the next lecture

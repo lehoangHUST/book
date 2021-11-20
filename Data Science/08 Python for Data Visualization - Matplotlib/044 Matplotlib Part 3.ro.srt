@@ -1,0 +1,663 @@
+1
+00:00:05,430 --> 00:00:10,000
+Bună ziua tuturor și vă urez bun venit la partea a 3-a din seria de lectură a complotului din hartă.
+
+2
+00:00:10,260 --> 00:00:15,780
+În această ultimă parte vom vorbi despre setarea liniei de culori cu tipurile de linii și de a
+
+3
+00:00:15,780 --> 00:00:19,380
+personaliza cu adevărat opțiunile de complot de închiriere arată de fapt.
+
+4
+00:00:19,380 --> 00:00:23,070
+Să mergem înainte și să mergem la notebook-ul Chippering pentru a începe.
+
+5
+00:00:23,100 --> 00:00:25,690
+Bine, aici suntem la notebook-ul Jupiter.
+
+6
+00:00:25,950 --> 00:00:30,060
+Să mergem mai departe și să vorbim despre setarea culorilor cu acel complot live.
+
+7
+00:00:30,400 --> 00:00:39,600
+Așa că am de gând să merg înainte și să spun că figul este egal cu figura VLT și apoi voi merge și adăugați un
+
+8
+00:00:39,600 --> 00:00:43,720
+set de figura lui Access x este egală cu Fig.
+
+9
+00:00:43,800 --> 00:00:54,140
+Adăugați axele de subliniere și voi seta acest lucru la 0 0 1 1 și apoi wups și apoi oprit de acel tip de axe să spun X
+
+10
+00:00:54,180 --> 00:00:57,610
+stop plot și face X veni un Y.
+
+11
+00:00:57,840 --> 00:01:01,200
+Și aceasta este o referință la același x și y cu care lucrăm.
+
+12
+00:01:01,200 --> 00:01:04,490
+Deci, dacă intru și complotesc că obțin ceva care arată așa.
+
+13
+00:01:04,500 --> 00:01:12,480
+Acum pot edita această culoare a graficului prin introducerea parametrului de culoare și premiera culorilor poate să ia mai multe argumente pe
+
+14
+00:01:12,480 --> 00:01:20,230
+care le poate lua în argumente cum ar fi șiruri de culori comune cum ar fi albastru sau să mergem și
+
+15
+00:01:20,260 --> 00:01:27,790
+să punem în portocaliu sau puteți vedea când un portocaliu line out sau verde și veți obține o linie verde.
+
+16
+00:01:27,810 --> 00:01:29,260
+Deci, nume foarte colorate de culoare.
+
+17
+00:01:29,280 --> 00:01:33,440
+Se poate de fapt, cu excepția ca un șir, dacă doriți să începeți să obțineți mai detaliate.
+
+18
+00:01:33,450 --> 00:01:39,550
+Puteți de fapt pune în RGV hex coduri astfel încât să pot pune în tag-ul hash și apoi unele RG
+
+19
+00:01:39,850 --> 00:01:45,420
+fi hex cod, cum ar fi du-te Gaudens copiați-l din notebook-ul f f 8 C 0 0.
+
+20
+00:01:45,690 --> 00:01:47,260
+Omule e.
+
+21
+00:01:47,730 --> 00:01:49,600
+Și asta te face mai colorat.
+
+22
+00:01:49,890 --> 00:01:58,890
+Deci, puteți să căutați în Google pentru producătorul de coduri RSGB X sau Creator și ar trebui să aveți la dispoziție o mulțime
+
+23
+00:01:58,890 --> 00:02:00,920
+de instrumente gratuite online.
+
+24
+00:02:00,920 --> 00:02:06,510
+Suntem de fapt veniți cu aceste coduri hexagonale G-B, în cazul în care doriți să faceți o culoare foarte personalizată
+
+25
+00:02:06,510 --> 00:02:11,050
+pentru culori foarte de bază, practic de fel de culori Crayola, cum ar fi violet.
+
+26
+00:02:11,100 --> 00:02:16,200
+Ar trebui să puteți să le complotați cu ușurință și doar să treceți șirul.
+
+27
+00:02:16,200 --> 00:02:18,660
+OK, asta e principiile culorilor.
+
+28
+00:02:18,660 --> 00:02:24,480
+Acum, să vorbim despre linia și stilul liniei dacă doriți să editați linia cu.
+
+29
+00:02:24,510 --> 00:02:31,410
+De fapt, puteți doar să treceți în concordanță cu argumentele și să puneți doar un număr.
+
+30
+00:02:31,410 --> 00:02:38,230
+De exemplu, dacă punem într-una care este linia prestabilită în esență, dorim să ducem dublul implicit și să spunem
+
+31
+00:02:38,230 --> 00:02:40,790
+că linia este egală cu 2.
+
+32
+00:02:40,890 --> 00:02:43,830
+Și asta va dubla lățimea pe care o putem continua.
+
+33
+00:02:43,830 --> 00:02:49,920
+Dacă vreau o linie foarte groasă la fel ca la egal 20 Este de 20 de ori grosimea liniei implicite.
+
+34
+00:02:50,400 --> 00:02:55,680
+Sau dacă doriți o linie foarte subțire, cum ar fi grosimea implicită 0. 5 puteți începe să devină mai subțire
+
+35
+00:02:55,680 --> 00:02:56,990
+și mai subțire.
+
+36
+00:02:57,010 --> 00:03:04,650
+Un alt sfat extrem de util în ceea ce privește linia și vizibilitatea liniei este argumentul alfa, așa că mergeți
+
+37
+00:03:04,650 --> 00:03:12,150
+mai departe și setați linia mea egală cu linia cu trei și puteți specifica argumentul alfa care vă permite să
+
+38
+00:03:12,150 --> 00:03:15,560
+controlați în esență cât de transparent este linia.
+
+39
+00:03:15,570 --> 00:03:21,130
+Aș putea spune că Alpha este egal cu 0. 5.
+
+40
+00:03:21,330 --> 00:03:26,020
+Și dacă fac acest lucru acum, văd că de fapt avem puțină transparență pe această linie.
+
+41
+00:03:26,160 --> 00:03:33,050
+Astfel, puteți combina linia de culoare cu un alfa pentru a obține aspectul exact dorit.
+
+42
+00:03:33,060 --> 00:03:37,880
+Un ultim lucru pe care trebuie să-l notezi aici este pentru mână pe care, de fapt, nu trebuie să o introduceți complet.
+
+43
+00:03:38,280 --> 00:03:43,390
+Puteți scrie doar în LW și va funcționa în continuare foarte bine.
+
+44
+00:03:43,830 --> 00:03:44,580
+O.K.
+
+45
+00:03:44,580 --> 00:03:49,230
+Deci vorbim despre linia cu culoarea și Alpha și voi elimina apelul alfa.
+
+46
+00:03:49,230 --> 00:03:56,700
+Acum, să vorbim despre stilul liniei, astfel încât să pot introduce stilul de linie și stilul liniei, există numeroase opțiuni și sunt enumerate în
+
+47
+00:03:56,700 --> 00:04:00,690
+cartea dvs. de note, care în esență doar definește stilul liniei, cum ar
+
+48
+00:04:00,690 --> 00:04:03,270
+fi o linie punctată sau o linie punctată.
+
+49
+00:04:03,270 --> 00:04:10,230
+De exemplu, dacă o persoană are două liniuțe, sfârșesc prin a obține o linie întreruptă și doar trecând acest lucru ca un șir sau
+
+50
+00:04:10,710 --> 00:04:14,910
+trec și o bordură și apoi o perioadă am o linie de linie întreruptă.
+
+51
+00:04:14,910 --> 00:04:19,140
+Deci punctele dash punct bara și apoi există o pereche de opțiuni mai multe opțiuni.
+
+52
+00:04:19,200 --> 00:04:26,760
+Colon, care îmi dă aceste liniuțe mai mici aici și poți verifica cartea Jupiter pentru această conferință pentru a vedea ce
+
+53
+00:04:26,940 --> 00:04:28,350
+alte opțiuni ai.
+
+54
+00:04:28,350 --> 00:04:31,140
+Și apoi poți face pași o oră.
+
+55
+00:04:31,200 --> 00:04:33,150
+Eu le folosesc rar.
+
+56
+00:04:33,210 --> 00:04:39,440
+Cel mai adesea voi face fie o linie liniară, fie dacă puneți doar o linie, este doar o linie solidă.
+
+57
+00:04:39,720 --> 00:04:40,360
+O.K.
+
+58
+00:04:40,590 --> 00:04:44,040
+Și, la fel ca și cu linia cu tine, de fapt, nu trebuie să tastați stilul de linie.
+
+59
+00:04:44,160 --> 00:04:49,850
+Tocmai l-ai pus și se va sfârși să funcționeze la fel.
+
+60
+00:04:50,250 --> 00:04:50,890
+O.K.
+
+61
+00:04:50,910 --> 00:04:53,630
+Așa că am vorbit despre linia și stilul de linie.
+
+62
+00:04:53,640 --> 00:04:55,390
+Acum hai să vorbim despre markeri.
+
+63
+00:04:55,530 --> 00:04:59,380
+Deci, markerii vor fi utilizați atunci când aveți doar câteva puncte de date.
+
+64
+00:04:59,400 --> 00:05:06,510
+De exemplu, dacă aruncăm o privire la X ca o reamintire a ceea ce este, putem vedea că x este doar o
+
+65
+00:05:06,570 --> 00:05:10,510
+matrice a merge mai departe și verificați lungimea x de 11 puncte.
+
+66
+00:05:10,530 --> 00:05:14,940
+Să spunem, de fapt, că am vrut să mărturisim că au fost cele 11 puncte care apar pe acest complot.
+
+67
+00:05:15,270 --> 00:05:25,190
+Ei bine, pot specifica marker ca un nou argument ar trebui să fie o virgulă și apoi pot trece într-un șir.
+
+68
+00:05:25,260 --> 00:05:28,310
+Există multe simboluri marker posibile și sunt listate în carnetul dvs. de note.
+
+69
+00:05:28,320 --> 00:05:33,390
+Dar cel mai de bază în comun este doar acest O minuscul ca un șir.
+
+70
+00:05:33,390 --> 00:05:41,550
+Și acolo puteți începe să vedeți câteva puncte care marchează în mod fundamental fiecare punct de pe X față de Y și
+
+71
+00:05:41,550 --> 00:05:45,110
+există o varietate largă de markeri disponibili pentru tine.
+
+72
+00:05:45,150 --> 00:05:46,260
+Toate sunt enumerate în carnetul de note.
+
+73
+00:05:46,260 --> 00:05:50,700
+Dar doar pentru a vă arăta un cuplu care poate face lucruri precum semne plus care nu apar
+
+74
+00:05:51,000 --> 00:05:54,760
+prea bine aici puteți face lucruri precum stele mici, cum ar fi simbolurile Asterix.
+
+75
+00:05:54,870 --> 00:06:01,110
+Poți să faci lucruri cum ar fi trecerea în aceste coduri de numere pe care le voi face linia cu un pic mai
+
+76
+00:06:01,110 --> 00:06:04,470
+subțire, astfel încât să puteți vedea de fapt, aceste markere aici.
+
+77
+00:06:04,960 --> 00:06:07,050
+Așadar, am vrut să facem acești markeri mai mari.
+
+78
+00:06:07,200 --> 00:06:13,050
+Ei bine, probabil că ați ghicit că marimea marcatorului nu este argument, astfel încât să puteți merge mai departe și
+
+79
+00:06:13,060 --> 00:06:17,010
+să specificați mărimea marcajului și, în esență, doar una este dimensiunea foarte mică.
+
+80
+00:06:17,010 --> 00:06:19,840
+Și apoi, dacă doriți să o faceți destul de mult, puteți spune 10.
+
+81
+00:06:19,890 --> 00:06:22,310
+Și aici putem începe să vedem că aceste triunghiuri sunt în formă.
+
+82
+00:06:22,310 --> 00:06:29,280
+Deci haideți să mergem și să spunem doar markeri imens la 20 și apoi putem specifica marcaje tip ureche 2.
+
+83
+00:06:29,700 --> 00:06:35,790
+Poti sa spui si noi primim aceste plusses aici. astfel încât toate aceste opțiuni sunt enumerate în documentație.
+
+84
+00:06:36,000 --> 00:06:39,690
+Și mai important, în cartea dvs. Jupiter note spune că există atât de multe tipuri diferite
+
+85
+00:06:39,690 --> 00:06:42,940
+de șiruri de caractere pe care le puteți trece ca marker pentru codurile marker.
+
+86
+00:06:44,520 --> 00:06:49,120
+Și dacă într-adevăr doriți să personalizați marcajele dvs., de exemplu, mergeți mai departe și puneți acest lucru înapoi
+
+87
+00:06:49,190 --> 00:06:54,150
+la litere mici Oh, astfel încât vom obține aceste puncte aici pentru a schimba această linie cu înapoi la unul.
+
+88
+00:06:54,300 --> 00:06:58,410
+Există de fapt câteva opțiuni în ceea ce privește specificarea aspectului markerului.
+
+89
+00:06:58,410 --> 00:07:03,690
+Puteți specifica culoarea feței markerului cu marginea marcatorului și culoarea marcajului marcajului.
+
+90
+00:07:03,690 --> 00:07:06,520
+Deci, mai întâi va ieși și va adăuga aceste argumente.
+
+91
+00:07:06,670 --> 00:07:09,910
+Așa că apăsați coma pentru a introduce o nouă linie.
+
+92
+00:07:10,110 --> 00:07:12,390
+Și voi ieși și voi spune culoarea feței
+
+93
+00:07:15,710 --> 00:07:17,740
+Mark și puteți specifica culoarea feței markerului.
+
+94
+00:07:17,760 --> 00:07:19,800
+Deci vor fi culoarea din interiorul acelui cerc.
+
+95
+00:07:19,800 --> 00:07:22,590
+Să mergem mai departe, să facem galben și să fugim.
+
+96
+00:07:22,830 --> 00:07:24,800
+Și asta a schimbat culoarea feței markerului.
+
+97
+00:07:24,810 --> 00:07:32,700
+Să presupunem că vreau să schimb marginea marcatorului cu mine și să o modific și pe acesta.
+
+98
+00:07:32,700 --> 00:07:37,440
+Asigurați-vă că un pic mai gros, cum ar fi trei care face un pic mai gros și să spunem
+
+99
+00:07:37,440 --> 00:07:39,750
+de fapt, doriți să specificați culoarea marginea marker.
+
+100
+00:07:39,750 --> 00:07:43,640
+Pot specifica o margine de margine.
+
+101
+00:07:43,640 --> 00:07:46,650
+Acum să mergem să facem asta verde.
+
+102
+00:07:46,650 --> 00:07:46,990
+In regula.
+
+103
+00:07:47,010 --> 00:07:52,860
+Deci, puteți vedea că există o mulțime de abilități personalizate aici și există o mulțime de opțiuni dacă doriți să vedeți o grămadă de
+
+104
+00:07:52,860 --> 00:07:56,520
+exemple de opțiuni diferite puteți merge mai departe și săriți la cartea Jupiter note pentru
+
+105
+00:07:56,520 --> 00:07:57,250
+această prelegere.
+
+106
+00:07:57,270 --> 00:07:59,460
+Trebuie să mergem înainte și să facem asta acum.
+
+107
+00:07:59,640 --> 00:08:04,290
+Va merge mai departe și faceți clic pe peste și dacă vedeți aici pe cursul Cutlip concept concepts.
+
+108
+00:08:04,350 --> 00:08:08,380
+În momentul de față, suntem în linia secțiunii și linia și stilurile de marker.
+
+109
+00:08:08,700 --> 00:08:15,000
+Aici este în esență o figură în care am spus de șase pe subplots prima figura dimensiune și a
+
+110
+00:08:15,000 --> 00:08:19,830
+făcut o grămadă de parcele și a editat culorile linia cu stiluri de linie.
+
+111
+00:08:19,830 --> 00:08:23,130
+Iată câteva exemple, astfel încât să puteți merge și să le citiți.
+
+112
+00:08:23,160 --> 00:08:28,020
+Și dacă căutați un alt marker posibil, simbolurile sunt aici ca comentarii sau tipuri de
+
+113
+00:08:28,020 --> 00:08:29,070
+celule aliate etc.
+
+114
+00:08:29,100 --> 00:08:33,690
+Deci, există o mulțime de exemple diferite aici, în natură, de copiere și lipire sau de a vă
+
+115
+00:08:33,690 --> 00:08:35,100
+crea propriile cunoștințe de pe.
+
+116
+00:08:35,160 --> 00:08:39,540
+În cele din urmă, să vorbim despre controlul asupra periilor de acces și a gamei de parcele.
+
+117
+00:08:39,780 --> 00:08:46,860
+Și dacă vom reveni la notebook-ul nostru original, putem merge mai departe și vom arăta cum putem seta limita
+
+118
+00:08:46,860 --> 00:08:48,410
+Y și limita.
+
+119
+00:08:48,480 --> 00:08:51,180
+Vom face din asta un simplu complot simplu.
+
+120
+00:08:51,190 --> 00:08:57,900
+Să mergem mai departe și să facem această linie să fie egală și să facem stilul de viață să fie egal cu o linie.
+
+121
+00:08:58,560 --> 00:08:59,730
+Bine, minunat.
+
+122
+00:08:59,730 --> 00:09:04,650
+Să presupunem că am vrut doar să arăt câmpul între 0 și 1 pe axa x.
+
+123
+00:09:04,860 --> 00:09:13,920
+Ei bine, pentru a face acest lucru doar accesul clar și apoi spuneți subliniați setul X Lim și apoi treceți într-o listă cu o limită
+
+124
+00:09:13,980 --> 00:09:15,830
+inferioară o limită superioară.
+
+125
+00:09:15,990 --> 00:09:18,750
+Așa că vom merge de la 0 la 1.
+
+126
+00:09:19,440 --> 00:09:24,720
+Și aici vedem că am stabilit limita inferioară a unei limite superioare a axei x.
+
+127
+00:09:24,720 --> 00:09:30,510
+Acum să mergem mai departe și să facem același lucru pentru limita de ce doar axe clare și apoi spune
+
+128
+00:09:30,570 --> 00:09:37,380
+seturi subliniază de ce Lim și ca o listă pe care treceți o limită superioară și limitele inferioare mai mici de acea virgulă zero.
+
+129
+00:09:37,380 --> 00:09:38,460
+Să facem limita superioară.
+
+130
+00:09:38,470 --> 00:09:41,380
+Deci, pune-l la 2.
+
+131
+00:09:41,390 --> 00:09:42,810
+Acum vedem acest complot.
+
+132
+00:09:42,860 --> 00:09:47,790
+Și observați cum mărim în parcelă pare mai mult și mai mult ca o grămadă de linii drepte care leagă
+
+133
+00:09:48,090 --> 00:09:53,020
+punctele care au sens deoarece nu avem atât de multe detalii SR doar 11 puncte în timp ce ne apropiem.
+
+134
+00:09:53,040 --> 00:09:59,030
+Vedem mai mult o linie curbată și putem rezolva asta prin obținerea mai multor puncte de date sau prin micșorarea.
+
+135
+00:09:59,030 --> 00:10:04,590
+În fine, vreau să revin peste harta reală și să vorbim despre astfel de
+
+136
+00:10:04,590 --> 00:10:06,490
+tipuri de complot speciale.
+
+137
+00:10:06,510 --> 00:10:11,280
+Există o mulțime și multe tipuri de complot specializate pe care le puteți face cu complotul MAP lib, cum ar
+
+138
+00:10:11,550 --> 00:10:13,520
+fi histograme de bare de bara și scatterplot.
+
+139
+00:10:13,560 --> 00:10:18,390
+Cele mai multe dintre aceste tipuri de ploturi au fost de fapt de gând să folosească într-o altă bibliotecă de vizualizare numită
+
+140
+00:10:18,750 --> 00:10:21,960
+Seaborn, care este mult mai potrivită pentru acest tip de metode statistice de plotare.
+
+141
+00:10:22,080 --> 00:10:24,790
+Dar doar pentru a vă arăta că puteți face acest lucru în viața mea.
+
+142
+00:10:25,020 --> 00:10:31,400
+Puteți efectua scatterplot, cum ar fi acest lucru, puteți efectua histograme utilizând acest complot viu sau chiar lucruri, cum
+
+143
+00:10:31,400 --> 00:10:33,120
+ar fi parcele cutie.
+
+144
+00:10:33,120 --> 00:10:34,760
+Iată câteva exemple pentru dvs.
+
+145
+00:10:35,100 --> 00:10:40,260
+Acum, în partea de jos a notebook-ului Jupiter pentru această conferință veți vedea o grămadă de link-uri
+
+146
+00:10:40,260 --> 00:10:43,960
+pentru citirea ulterioară, inclusiv pagina de web a proiectului și un link.
+
+147
+00:10:43,980 --> 00:10:47,440
+Îmi place foarte mult până aici.
+
+148
+00:10:47,790 --> 00:10:51,590
+Acest Lorieau este o legătură foarte frumoasă.
+
+149
+00:10:51,600 --> 00:10:53,740
+Este un tutorial pentru hărți lib.
+
+150
+00:10:53,880 --> 00:10:58,170
+Sperăm că știți de fapt destul de puțin acum, urmărind aceste trei prelegeri pe care tocmai le-am făcut.
+
+151
+00:10:58,300 --> 00:11:02,710
+Dar ceea ce îmi place cu adevărat în legătură cu această legătură este că în esență este doar un cod de referință.
+
+152
+00:11:02,790 --> 00:11:05,910
+Deci, dacă doriți să schimbați culorile în concordanță cu dvs. puteți intra și verificați această legătură.
+
+153
+00:11:05,940 --> 00:11:10,040
+Uita-te doar la cifre și vă va spune cum să setați căpușe la etichete căpușe, etc ..
+
+154
+00:11:10,170 --> 00:11:12,180
+Miscarea spinii adaugand legende.
+
+155
+00:11:12,180 --> 00:11:17,620
+Multe dintre aceste puncte sunt, de fapt, în cartea de alte note pentru această serie de
+
+156
+00:11:17,630 --> 00:11:20,010
+conferințe numită Hartă avansată complot lib Notebook.
+
+157
+00:11:20,550 --> 00:11:25,680
+De fapt, deocamdată nu vom avea o prelegere video cu privire la aceste subiecte avansate, pentru că nu le vom
+
+158
+00:11:25,680 --> 00:11:27,390
+folosi prea des pe parcursul cursului.
+
+159
+00:11:27,390 --> 00:11:30,650
+De fapt, în cea mai mare parte vom folosi Sea Seaborn de-a lungul cursului.
+
+160
+00:11:30,720 --> 00:11:31,440
+O.K.
+
+161
+00:11:31,620 --> 00:11:37,260
+Urmează o scurtă trecere în revistă a exercițiului complot fără plot și apoi veți avea o imagine de
+
+162
+00:11:37,260 --> 00:11:39,150
+ansamblu asupra soluțiilor pentru acest exercițiu.
+
+163
+00:11:39,240 --> 00:11:44,520
+Acum, mergeți mai departe și opriți aceste tipuri speciale de terenuri și așteptați până când vom afla despre utilizarea lui Seaborn, care
+
+164
+00:11:44,700 --> 00:11:48,400
+va fi mult mai bine echipat pentru astfel de fel de parcele statistice frumoase.
+
+165
+00:11:48,660 --> 00:11:49,110
+Bine.
+
+166
+00:11:49,380 --> 00:11:51,610
+Multumesc tuturor si te voi vedea la urmatoarea conferinta.

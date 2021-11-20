@@ -1,0 +1,467 @@
+1
+00:00:05,580 --> 00:00:09,150
+Salve a tutti e benvenuti ai frame dati per 3 lezioni.
+
+2
+00:00:09,540 --> 00:00:14,380
+In questa conferenza finale che serie di lezioni del quadro di dati andremo a conoscere su indice
+
+3
+00:00:14,380 --> 00:00:15,920
+multa e indice chiave superiore.
+
+4
+00:00:15,930 --> 00:00:20,370
+Per prima cosa, crea un rapido esempio di come sono i dati a più indici e quindi
+
+5
+00:00:20,370 --> 00:00:23,670
+come puoi lavorare con i frame di dati per avere un indice multilivello.
+
+6
+00:00:23,670 --> 00:00:26,990
+Andiamo avanti e saltiamo sul taccuino di Jupiter per iniziare.
+
+7
+00:00:27,000 --> 00:00:27,390
+Tutto ok.
+
+8
+00:00:27,390 --> 00:00:29,470
+Eccomi al taccuino di Giove.
+
+9
+00:00:29,580 --> 00:00:35,370
+Quello che sto per fare è copiare e incollare alcune linee di codice che sono disponibili per
+
+10
+00:00:35,370 --> 00:00:37,850
+te sul tuo notebook chiamato Data frames.
+
+11
+00:00:37,860 --> 00:00:43,440
+Se scorri verso il basso fino ad arrivare alla sezione più in alto dell'indice multi index vedrai queste quattro
+
+12
+00:00:43,440 --> 00:00:44,290
+righe di codice.
+
+13
+00:00:44,310 --> 00:00:48,130
+Queste sono le quattro linee di codice che verranno utilizzate per costruire effettivamente questo frame di dati.
+
+14
+00:00:48,330 --> 00:00:50,140
+Possiamo andare avanti e verificarlo.
+
+15
+00:00:50,340 --> 00:00:55,450
+Diremo all'esterno e questa è solo la lista.
+
+16
+00:00:55,470 --> 00:01:02,970
+tipi G1 G1 G1 e poi G-2 DTG 2 che abbiamo dentro che è 1 2 3 1 2 3.
+
+17
+00:01:03,030 --> 00:01:07,700
+Quindi abbiamo tre o sei elementi in questa lista di due diversi
+
+18
+00:01:08,010 --> 00:01:16,110
+E poi quando siamo andati avanti e abbiamo fatto uso della funzione zip insieme alla funzione list, come abbiamo detto, abbiamo fatto
+
+19
+00:01:16,140 --> 00:01:23,580
+un indice più alto e abbiamo usato zip e LIST su questo per fare in modo che questo diventi un elenco
+
+20
+00:01:23,580 --> 00:01:29,790
+di coppie di tuple G 1 1 1 2 1 3 2 1 2 2 2 3.
+
+21
+00:01:30,000 --> 00:01:35,050
+E poi l'ho passato in una funzione speciale dai panderers e in realtà non avremmo lavorato
+
+22
+00:01:35,070 --> 00:01:41,910
+con questa funzione durante tutto il corso, ma questo è solo per una personalizzazione del fare un data frame quindi non preoccuparti
+
+23
+00:01:41,940 --> 00:01:44,960
+troppo ma Voglio solo che tu ne sia consapevole.
+
+24
+00:01:44,970 --> 00:01:49,820
+tuple e può basarsi sostanzialmente su un elenco simile a questo e creare un indice multiplo da esso.
+
+25
+00:01:49,830 --> 00:01:51,870
+Il suo PD è un indice multi-band di
+
+26
+00:01:52,140 --> 00:01:56,800
+Quindi, una volta terminato, otterrai questo indice multiplo con diversi livelli.
+
+27
+00:01:56,800 --> 00:02:01,890
+Vuoi che io aggiunga un livello da uno a tre come un altro livello e poi le etichette e io andrò a
+
+28
+00:02:01,890 --> 00:02:04,610
+spiegare cosa significa tutto questo mentre creiamo questo frame di dati.
+
+29
+00:02:04,680 --> 00:02:09,780
+Ma per ora puoi sentirti libero di copiare e incollare questo codice direttamente dal notebook
+
+30
+00:02:09,780 --> 00:02:14,850
+poiché non è importante per quanto riguarda la creazione da zero del frame di dati.
+
+31
+00:02:15,520 --> 00:02:27,360
+Rande e 6 Com 2, quindi abbiamo 6 righe per due colonne e quindi imposterò l'indice come l'oggetto indice più alto che abbiamo appena
+
+32
+00:02:27,420 --> 00:02:33,660
+creato e quindi imposterò le colonne essere una lista a e b.
+
+33
+00:02:33,660 --> 00:02:38,440
+Entreremo e diremo che il frame di dati PD passa
+
+34
+00:02:39,210 --> 00:02:39,700
+Tutto ok.
+
+35
+00:02:39,720 --> 00:02:43,740
+E puoi sentirti libero di copiare e incollare tutto questo codice dai notebook perché non è così importante.
+
+36
+00:02:44,010 --> 00:02:48,650
+Questo è solo per la costruzione di un frame di dati a più livelli dell'indice.
+
+37
+00:02:48,700 --> 00:02:50,850
+Lascia che ti mostri cosa intendo con questo qui.
+
+38
+00:02:50,940 --> 00:02:55,110
+Se effettivamente mostro il frame dei dati, posso vedere che ha due livelli di un indice.
+
+39
+00:02:55,110 --> 00:02:57,240
+Ha questo livello di Jiwon e G-2.
+
+40
+00:02:57,420 --> 00:03:02,580
+E poi questo sotto o livello di intuizione uno due tre uno due tre e poi due colonne.
+
+41
+00:03:02,730 --> 00:03:07,200
+E questo è un frame di dati sembra che abbia più livelli di un indice.
+
+42
+00:03:07,200 --> 00:03:09,870
+Altrimenti noto come una chiave più alta dell'indice.
+
+43
+00:03:09,870 --> 00:03:15,970
+Andiamo avanti e mostriamo come possiamo effettivamente chiamare i dati da un indice multilivello per questa gerarchia di indici.
+
+44
+00:03:16,140 --> 00:03:20,740
+Possiamo andare avanti e fare è dire DMF L-O vedere.
+
+45
+00:03:21,780 --> 00:03:27,630
+E poi possiamo andare avanti e usare la notazione Bracton GRABBE dall'indice molto esterno.
+
+46
+00:03:27,630 --> 00:03:34,560
+Per esempio, se voglio tutto ciò che è sotto G 1, posso solo passarle una e ottengo in
+
+47
+00:03:34,560 --> 00:03:41,730
+cambio quel piccolo sub-frame di dati che è fondamentalmente le prime tre righe per quelle due colonne e
+
+48
+00:03:41,820 --> 00:03:49,870
+quindi posso continuare a indicizzarlo al di fuori di questo come io ' Vedremo o ellos vedere o uno va bene.
+
+49
+00:03:50,580 --> 00:03:56,300
+E poi passando il numero e che in realtà restituirà questi due elementi qui come serie.
+
+50
+00:03:56,310 --> 00:04:04,360
+Quindi l'idea di base è che la chiamata dall'indice esterno continui a chiamare all'interno più in profondità.
+
+51
+00:04:04,380 --> 00:04:08,080
+Se in realtà vuoi nominare questi nomi indice.
+
+52
+00:04:08,130 --> 00:04:09,720
+Quindi adesso sono senza nome.
+
+53
+00:04:09,720 --> 00:04:14,910
+Ciò viene segnalato sul fatto che non esiste un nome in queste due celle che può andare a
+
+54
+00:04:15,330 --> 00:04:16,340
+indicare l'indice DMF.
+
+55
+00:04:16,440 --> 00:04:21,610
+I nomi si spostano e si dovrebbe ottenere un elenco congelato che non è nessuno.
+
+56
+00:04:21,630 --> 00:04:24,900
+E questo è solo un panderers indice nomi tipi di oggetti.
+
+57
+00:04:25,110 --> 00:04:31,230
+Tutto quello che si dice qui è che questi indici non hanno alcun nome ma puoi andare avanti e dire
+
+58
+00:04:32,640 --> 00:04:34,900
+equivale e poi passare una lista di nomi.
+
+59
+00:04:34,980 --> 00:04:40,450
+Per esempio usciamo e chiamiamo questo gruppo di indici esterni perché è il primo G.
+
+60
+00:04:40,770 --> 00:04:45,300
+E poi chiameremo l'indice di intuizione e tu m per i numeri.
+
+61
+00:04:45,300 --> 00:04:53,460
+E ora quando chiamo il mio frame dati abbiamo gruppi come indice etichettato all'esterno e insensibile come
+
+62
+00:04:53,460 --> 00:04:55,220
+indice di etichette all'interno.
+
+63
+00:04:55,290 --> 00:04:57,610
+E questo potrebbe avere tutti i livelli che vuoi.
+
+64
+00:04:57,870 --> 00:05:03,210
+vedere come ciò sarebbe utile per le informazioni di indice multilivello che si desidera utilizzare lungo un frame di dati.
+
+65
+00:05:03,210 --> 00:05:05,260
+Si spera che si possa iniziare a
+
+66
+00:05:05,790 --> 00:05:10,800
+Andiamo avanti e ti mostriamo come possiamo ottenere informazioni da questa ancora una volta.
+
+67
+00:05:10,800 --> 00:05:13,270
+Immagina di voler afferrare questo valore proprio qui.
+
+68
+00:05:13,290 --> 00:05:16,540
+0. 07 a quello da evidenziare.
+
+69
+00:05:16,830 --> 00:05:22,580
+Bene, questo è sotto G-2 numero due colonna B.
+
+70
+00:05:22,940 --> 00:05:26,200
+Cominciamo dall'esterno e ci apriamo la strada.
+
+71
+00:05:26,250 --> 00:05:37,290
+Andremo avanti e specificheremo che vogliamo C G e che restituisce questo data frame.
+
+72
+00:05:37,290 --> 00:05:39,250
+Ancora una volta stiamo cercando questo valore qui.
+
+73
+00:05:39,270 --> 00:05:48,040
+Andiamo avanti e facciamo un altro indice e possiamo andare avanti e chiamare anche qui.
+
+74
+00:05:48,960 --> 00:05:52,340
+E poi abbiamo sotto la colonna B o l'indice B.
+
+75
+00:05:52,350 --> 00:05:55,320
+Mi scusi per la serie 0. 07.
+
+76
+00:05:55,500 --> 00:06:01,350
+Quindi alla fine chiamiamo semplicemente B alla fine e questo è tutto ciò che possiamo
+
+77
+00:06:01,350 --> 00:06:03,900
+afferrare dall'esterno all'interno di questo particolare valore.
+
+78
+00:06:04,010 --> 00:06:06,480
+Quello che dovresti fare ora è mettere in pausa il video.
+
+79
+00:06:06,540 --> 00:06:12,220
+Seleziona un altro valore e vedi se riesci ad indicarlo correttamente e a restituirlo.
+
+80
+00:06:12,360 --> 00:06:12,850
+OK.
+
+81
+00:06:12,960 --> 00:06:14,600
+Spero che tu sia in grado di farlo.
+
+82
+00:06:14,610 --> 00:06:20,190
+Andiamo avanti e ti mostriamo un'ultima funzione molto utile chiamata cross
+
+83
+00:06:20,260 --> 00:06:23,100
+section e sarà x x.
+
+84
+00:06:23,970 --> 00:06:28,680
+Quindi restituisce una sezione trasversale di righe o colonne da una serie di
+
+85
+00:06:28,680 --> 00:06:32,490
+frame di dati e la userai quando hai un indice multilivello.
+
+86
+00:06:32,490 --> 00:06:36,020
+Quindi di nuovo la nostra cornice dati sembra così.
+
+87
+00:06:36,030 --> 00:06:43,820
+Diciamo che volevamo prendere tutto ciò che era sotto G 1 Potrei fare quello che ti ho appena mostrato EHLO
+
+88
+00:06:44,060 --> 00:06:48,190
+C G 1 e che restituisce i dati dall'energia 1.
+
+89
+00:06:48,360 --> 00:06:56,940
+Ma un'altra opzione per un indice multilivello sta usando questa X come sezione trasversale e quindi passando in Jiwon ha
+
+90
+00:06:57,000 --> 00:06:58,260
+anche una stringa.
+
+91
+00:06:58,620 --> 00:07:06,180
+Ma ciò che è bello di questa sezione trasversale è che ha la possibilità di saltare o andare all'interno di un indice multilivello.
+
+92
+00:07:06,540 --> 00:07:14,730
+Ad esempio diciamo che ho questo frame di dati qui e voglio prendere tutti i valori di numero pari a uno con entrambi i
+
+93
+00:07:15,150 --> 00:07:16,340
+gruppi in esso.
+
+94
+00:07:16,380 --> 00:07:21,770
+Significato Voglio ciò che ho evidenziato qui 1 e poi 0. 3 1. 6 9.
+
+95
+00:07:21,930 --> 00:07:26,710
+Ma volevo anche questo valore 0. 1 6 0. 1 8.
+
+96
+00:07:26,850 --> 00:07:31,700
+Quindi voglio che tutti i valori siano insensibili che l'indice di insight sia uguale a 1.
+
+97
+00:07:31,790 --> 00:07:39,370
+Questo tipo di indicizzazione è complicato per qualcosa come EHLO vedere i metodi, ma non è così male con
+
+98
+00:07:39,390 --> 00:07:48,250
+il metodo X o cross section che si finisce a fare è specificare ciò che si desidera per quanto non uguale a uno.
+
+99
+00:07:48,480 --> 00:07:54,730
+E quindi devi indicare come secondo livello di argomenti e quindi passare il nome dell'indice.
+
+100
+00:07:54,840 --> 00:07:58,340
+In questo caso il nome dell'indice è insensibile.
+
+101
+00:07:58,590 --> 00:08:05,970
+Quindi essenzialmente questo ci permette di afferrare una sezione trasversale dove il livello uguale a numb è uguale a 1
+
+102
+00:08:05,970 --> 00:08:09,140
+ed è così che utilizzerai principalmente questa sezione trasversale.
+
+103
+00:08:09,510 --> 00:08:13,900
+E ora vediamo entrambi i gruppi in cui il numero di livello è uguale a 1.
+
+104
+00:08:13,920 --> 00:08:16,340
+E questo tipo di dati viene restituito.
+
+105
+00:08:17,010 --> 00:08:21,910
+OK non preoccuparti troppo poiché si tratta di un uso piuttosto avanzato di Pandurs.
+
+106
+00:08:21,930 --> 00:08:28,200
+Voglio solo che te ne accorga più tardi, mentre impariamo di più sulla visualizzazione dei dati e inizi a raggiungere i tuoi
+
+107
+00:08:28,200 --> 00:08:28,590
+dati.
+
+108
+00:08:28,590 --> 00:08:35,100
+I progetti Capstone rivisiteremo questo metodo di sezione trasversale per acquisire effettivamente i dati sugli indici azionari.
+
+109
+00:08:35,520 --> 00:08:40,230
+Ma per ora voglio che tu ne sia consapevole, ma non ti preoccupare di essere testato perché è
+
+110
+00:08:40,230 --> 00:08:44,460
+un uso più avanzato e non vedrai questo genere di cose molto spesso durante il corso.
+
+111
+00:08:44,460 --> 00:08:49,290
+Di fatto, si presenta solo una volta in uno dei più avanzati progetti di capstone di dati
+
+112
+00:08:49,290 --> 00:08:52,350
+e c'è una spiegazione su come utilizzare nuovamente la sezione trasversale.
+
+113
+00:08:52,350 --> 00:08:56,010
+Quindi entreremo e ti daremo un ripasso prima di rivedere questo argomento.
+
+114
+00:08:56,040 --> 00:09:02,520
+Per ora si trattava più semplicemente di una panoramica avanzata di argomenti su più indici e di indici con argomenti chiave più elevati.
+
+115
+00:09:02,520 --> 00:09:07,620
+Principalmente ciò che vorrete fare è indicizzare dall'esterno in modo graduale per ottenere i
+
+116
+00:09:07,620 --> 00:09:08,400
+dati desiderati.
+
+117
+00:09:08,810 --> 00:09:12,120
+OK grazie a tutti e ci vediamo alla prossima lezione.

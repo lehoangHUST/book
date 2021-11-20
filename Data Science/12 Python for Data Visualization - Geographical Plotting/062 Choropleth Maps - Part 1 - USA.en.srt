@@ -1,0 +1,999 @@
+1
+00:00:05,370 --> 00:00:10,440
+Hello everyone and welcome to the chloroplast map's lecture and this lecture we're going to go over
+
+2
+00:00:10,440 --> 00:00:15,870
+how to use Python and partly to create coral maps which will allow us to plot out information either
+
+3
+00:00:15,870 --> 00:00:19,080
+on a global scale or any nation wide scale.
+
+4
+00:00:19,080 --> 00:00:22,170
+Let's go ahead and jump to Jupiter notebook to get started.
+
+5
+00:00:22,560 --> 00:00:22,830
+All right.
+
+6
+00:00:22,830 --> 00:00:27,360
+Here I am at the Jupiter note but the Supernaut books called Kuro plus maps.
+
+7
+00:00:27,360 --> 00:00:33,600
+And you can find under Python for data visualization under the geographical plotting folder and you
+
+8
+00:00:33,600 --> 00:00:38,480
+should start in the note book or work inside of this book in order to access the V data.
+
+9
+00:00:38,490 --> 00:00:43,800
+We're going to be working with again all the code we're going to be typing up as a reference here.
+
+10
+00:00:43,890 --> 00:00:49,920
+And also he should know that there's references for his explanations plus plots can be really difficult
+
+11
+00:00:49,920 --> 00:00:53,410
+at first especially the syntax used for plotless.
+
+12
+00:00:53,610 --> 00:00:57,070
+So you'll always want to keep this note book as a reference for things.
+
+13
+00:00:57,250 --> 00:01:01,720
+And we're going to do just go out and explain the code in this notebook see some simple examples at
+
+14
+00:01:01,740 --> 00:01:08,620
+first using just nation wide scale plots then we're going to see some real data do a larger plot on
+
+15
+00:01:08,630 --> 00:01:13,510
+nationwide scale and then we're going to go ahead and see the world scale so we can actually plot on
+
+16
+00:01:13,520 --> 00:01:14,960
+two countries.
+
+17
+00:01:14,970 --> 00:01:18,100
+All right let's go ahead and start a new chapter notebook.
+
+18
+00:01:18,300 --> 00:01:22,190
+All right here I am at a Jupiter note book I'm going to go ahead and start up with some imports.
+
+19
+00:01:22,200 --> 00:01:28,730
+First I'm going to import slightly dot plot Ali as he y.
+
+20
+00:01:29,310 --> 00:01:38,520
+And then I'm going to say in order to do all of this off line or save from plot the off line imports
+
+21
+00:01:39,720 --> 00:01:41,610
+download underscore plot Legia.
+
+22
+00:01:41,640 --> 00:01:44,250
+And I'm just using tabbed to autocomplete this.
+
+23
+00:01:44,250 --> 00:01:51,000
+So I just type in it and then it'll autocomplete in it underscored notebook mode and then plots and
+
+24
+00:01:51,270 --> 00:01:52,180
+plot.
+
+25
+00:01:52,730 --> 00:01:57,210
+So for functions to complete and you can just copy and paste this code from the notebook if you want
+
+26
+00:01:57,210 --> 00:01:57,540
+.
+
+27
+00:01:57,810 --> 00:02:07,410
+And then I'm also going to then call it underscore notebook mode and passen connected is equal to true
+
+28
+00:02:07,410 --> 00:02:07,640
+.
+
+29
+00:02:07,830 --> 00:02:13,020
+And that we can see everything inside the Jupiter notebook and there's a link in your lecture notebook
+
+30
+00:02:13,320 --> 00:02:16,130
+for other options use partly off line.
+
+31
+00:02:16,580 --> 00:02:17,420
+OK.
+
+32
+00:02:17,460 --> 00:02:20,950
+Again like I mentioned plot Lee's mapping can be a bit hard to get used to.
+
+33
+00:02:21,000 --> 00:02:26,160
+So there's a copy of a cheat sheet as well as a link to it in the Jupiter notebook and it looks something
+
+34
+00:02:26,160 --> 00:02:26,920
+like this.
+
+35
+00:02:26,970 --> 00:02:29,980
+So you can see basic charts with partly how to use them.
+
+36
+00:02:29,980 --> 00:02:35,050
+And if you scroll down you can later on see actual maps and the cheat sheets here.
+
+37
+00:02:35,130 --> 00:02:37,860
+This is kind of the format we're going to be following.
+
+38
+00:02:37,860 --> 00:02:41,690
+Let's go ahead and jump back to the Jupiter notebook.
+
+39
+00:02:41,730 --> 00:02:44,960
+First thing we need to do is begin to build our data dictionary.
+
+40
+00:02:45,030 --> 00:02:48,740
+And the easiest way to do this is using the DCT method.
+
+41
+00:02:48,900 --> 00:02:52,600
+So you can actually cast a dictionary with the ICC.
+
+42
+00:02:52,740 --> 00:02:58,050
+So we're going to be using that method to cast the list into a dictionary and the first thing we're
+
+43
+00:02:58,050 --> 00:03:02,130
+going to do is start off with our data.
+
+44
+00:03:02,130 --> 00:03:09,800
+So you have your data and it's going to be a dictionary and we're going to have the key type be Coro
+
+45
+00:03:09,850 --> 00:03:11,730
+Plath.
+
+46
+00:03:14,310 --> 00:03:20,190
+And then we're going to have locations and locations is a list of states and it's the abbreviation for
+
+47
+00:03:20,190 --> 00:03:24,120
+the states in our case since we're doing this just on the nationwide scale.
+
+48
+00:03:24,240 --> 00:03:32,040
+So go in and say Asie CA and NY you can go ahead and put in any postcode abbreviations you want there
+
+49
+00:03:32,050 --> 00:03:32,670
+.
+
+50
+00:03:33,600 --> 00:03:36,000
+Then we're going to say location mode.
+
+51
+00:03:36,570 --> 00:03:43,920
+And in this case we're going to put in USA cash States and this lets Whitely know that we're doing this
+
+52
+00:03:44,010 --> 00:03:49,710
+on the United States level and there's various location mode and you can go ahead and check out the
+
+53
+00:03:49,710 --> 00:03:55,020
+links in the Jupiter notebook to get the documentation on the various location modes you can provide
+
+54
+00:03:55,020 --> 00:03:56,460
+.
+
+55
+00:03:56,760 --> 00:04:05,790
+Then we're going to go ahead and set the color scale to be equal to Portland which is just a color scale
+
+56
+00:04:06,120 --> 00:04:09,670
+and we can also do other things such as greens or grays and walk.
+
+57
+00:04:09,750 --> 00:04:12,500
+We'll mix this up and see how it works later on.
+
+58
+00:04:12,560 --> 00:04:22,530
+I'll just choose Portland and then we're going to go ahead and do is passen in key text and text is
+
+59
+00:04:22,530 --> 00:04:26,600
+a list of what hovers over each of the locations.
+
+60
+00:04:26,670 --> 00:04:28,990
+So I'm just going to put some basic stuff here.
+
+61
+00:04:29,280 --> 00:04:36,570
+We'll go in and say text one text 2 and then text 3
+
+62
+00:04:39,300 --> 00:04:44,520
+and then Z is going to be equal to your actual values that are going to be shown in a color scale.
+
+63
+00:04:44,550 --> 00:04:52,870
+We'll go ahead and just set these two one two and three and I'll put them in as floats.
+
+64
+00:04:53,800 --> 00:04:57,660
+And then finally pasan a color bar arguments.
+
+65
+00:04:57,660 --> 00:05:10,050
+And this is actually a dictionary with the key title and then you would just person Whoops you're passing
+
+66
+00:05:10,160 --> 00:05:11,940
+whatever you want the color bar title to be.
+
+67
+00:05:11,940 --> 00:05:18,620
+So as a very generic one I'll say color bar title goes here.
+
+68
+00:05:18,620 --> 00:05:21,600
+Right so that's what data looks like and we just take a look at data.
+
+69
+00:05:21,680 --> 00:05:27,140
+It's going to be a dictionary for whatever reason the partly documentation likes to use this sort of
+
+70
+00:05:27,130 --> 00:05:30,980
+dictionary casting call instead of just building it out as a dictionary.
+
+71
+00:05:31,040 --> 00:05:36,710
+This kind of saves you time for typing and all these quotes and now having to make all these strings
+
+72
+00:05:36,710 --> 00:05:37,590
+for keys.
+
+73
+00:05:37,690 --> 00:05:42,380
+So I'll just go ahead and keep in line with the documentation and use this sort of notation.
+
+74
+00:05:42,410 --> 00:05:51,950
+Next we want to do is create a layout object or variable and layout is going to go ahead and be a nested
+
+75
+00:05:51,940 --> 00:05:53,530
+dictionary.
+
+76
+00:05:53,540 --> 00:05:59,350
+And we just passen G.O. is equal to and then we set the scope
+
+77
+00:06:02,260 --> 00:06:05,240
+to be US A.
+
+78
+00:06:06,800 --> 00:06:09,660
+And then what we're going to go ahead and use is the go figure.
+
+79
+00:06:09,680 --> 00:06:17,300
+And in order to do that we're going to need to import something else will have to say import Clottey
+
+80
+00:06:17,540 --> 00:06:23,270
+dot graph underscore RBJ s as.
+
+81
+00:06:23,600 --> 00:06:29,980
+And I'm going to go ahead just put this up at the top with the other imports and run that.
+
+82
+00:06:30,520 --> 00:06:31,980
+OK so no that's important.
+
+83
+00:06:32,000 --> 00:06:34,430
+I can say Go figure
+
+84
+00:06:38,620 --> 00:06:39,740
+and set data.
+
+85
+00:06:39,860 --> 00:06:47,030
+And this is kind of the weird part equal to in brackets so as the item of the list data which is kind
+
+86
+00:06:47,020 --> 00:06:52,610
+of strange because it's already a dictionary but you pass it in as a dictionary inside of a list and
+
+87
+00:06:52,610 --> 00:06:59,170
+then you just say lay out is going to be equal to lay out.
+
+88
+00:06:59,310 --> 00:07:04,430
+You don't technically need to actually passen data equals and laya equals we could just pass in data
+
+89
+00:07:04,460 --> 00:07:05,180
+and lay out.
+
+90
+00:07:05,210 --> 00:07:13,130
+Well let's go ahead and just keep it this way and we'll set this whole thing equal to Koro map and then
+
+91
+00:07:13,120 --> 00:07:17,750
+we do say I plot Curle math.
+
+92
+00:07:18,300 --> 00:07:26,990
+And we should see the plot here and here we have Arizona California and New York highlighted with the
+
+93
+00:07:27,010 --> 00:07:29,240
+Portland color chart chosen here.
+
+94
+00:07:29,300 --> 00:07:33,740
+Now we can go ahead and change it to one of the predefined strings shown in your notebook.
+
+95
+00:07:33,760 --> 00:07:38,770
+For instance you can go out and change this to jet.
+
+96
+00:07:38,930 --> 00:07:40,940
+See what changes happen there.
+
+97
+00:07:40,970 --> 00:07:42,410
+Run everything again.
+
+98
+00:07:42,400 --> 00:07:48,170
+And here we have now the jet color scheme or we can do other things such as greens is another one you
+
+99
+00:07:48,170 --> 00:07:50,180
+can choose.
+
+100
+00:07:51,050 --> 00:07:58,460
+Run that and everything is in green So if New York being the very light green over here let me go ahead
+
+101
+00:07:58,460 --> 00:08:04,340
+and just break down everything we just did because the formatting can be kind of confusing and it really
+
+102
+00:08:04,350 --> 00:08:06,270
+it just takes time.
+
+103
+00:08:06,290 --> 00:08:08,960
+You usually don't actually memorize this.
+
+104
+00:08:08,960 --> 00:08:13,500
+You'll have to reference examples from the documentation or from the cheat sheet.
+
+105
+00:08:13,670 --> 00:08:21,140
+But the basic idea is we have our imports we initialized notebook mode and then we have two main objects
+
+106
+00:08:21,350 --> 00:08:27,130
+a data object and a layer object and I can call these just my variables my data variable and my layout
+
+107
+00:08:27,130 --> 00:08:31,260
+variable and the past goes into the Go figure function.
+
+108
+00:08:31,550 --> 00:08:34,220
+And then I want to pass that thing into plot.
+
+109
+00:08:34,460 --> 00:08:41,090
+If I just pass into plot what will happen is this will open a new tab as an h m file and you can go
+
+110
+00:08:41,090 --> 00:08:47,190
+ahead and save the say e-mail file or export it or you can download it as a PNB.
+
+111
+00:08:47,240 --> 00:08:47,500
+All right.
+
+112
+00:08:47,540 --> 00:08:50,810
+Well let's go ahead and go back to lecture here.
+
+113
+00:08:51,000 --> 00:08:57,350
+In our data object we have a couple of arguments we have type which clarifies what type of geographical
+
+114
+00:08:57,350 --> 00:08:58,200
+plot we're doing.
+
+115
+00:08:58,250 --> 00:09:00,850
+In this case we're focusing right now just Court plots.
+
+116
+00:09:00,950 --> 00:09:08,570
+Then you have locations locations is an array or a list of those actual state abbreviation codes then
+
+117
+00:09:08,570 --> 00:09:10,410
+you specify a location mode.
+
+118
+00:09:10,550 --> 00:09:16,070
+In this case since we're working in USA we're going to say USA Dasch States and this can go down to
+
+119
+00:09:16,070 --> 00:09:17,300
+county level.
+
+120
+00:09:17,300 --> 00:09:20,650
+You can go in and reference the documentation that's linked in the chip in a notebook.
+
+121
+00:09:20,750 --> 00:09:27,910
+For more information on that then you have the text and the text is an array or a list of the text that
+
+122
+00:09:27,910 --> 00:09:30,740
+lines up for each of the locations.
+
+123
+00:09:30,740 --> 00:09:41,180
+So for example go out and change this to Arizona change this one to Cali and change this one to New
+
+124
+00:09:41,170 --> 00:09:47,510
+York and if we run this again and notice that in plot let me go to him.
+
+125
+00:09:47,570 --> 00:09:54,590
+Let me go to specify it as I plot so he see inside that you put in a book you'll notice when I say I
+
+126
+00:09:54,590 --> 00:09:59,640
+plot the text value says Kalli Arizona and New York.
+
+127
+00:09:59,780 --> 00:10:04,910
+So that means that this text just has to be in the same index sequence as the locations and it's going
+
+128
+00:10:04,910 --> 00:10:13,090
+to match up then the z is whatever value you want to represent as a color.
+
+129
+00:10:13,100 --> 00:10:19,450
+So for instance Cali was valued to Arizona as value 1 in New York Cazayoux three.
+
+130
+00:10:19,520 --> 00:10:23,900
+Later on we'll see with real data how we can actually use this to kind of indicate certain levels by
+
+131
+00:10:24,230 --> 00:10:27,440
+state but here that's what the color bars are relating to.
+
+132
+00:10:27,670 --> 00:10:32,630
+And we can see that the title of the color bar goes here just is a title for this color bar.
+
+133
+00:10:32,810 --> 00:10:37,870
+And you can choose the color scale with whatever string you want that's mentioned in that Jupiter note
+
+134
+00:10:37,860 --> 00:10:40,550
+book again for this type of plotting.
+
+135
+00:10:40,550 --> 00:10:44,840
+You'll really have to reference either the documentation of the Jupiter notebook because the formatting
+
+136
+00:10:45,380 --> 00:10:50,420
+is really kind of bizarre here but that's the way plotless works.
+
+137
+00:10:50,420 --> 00:10:57,240
+Then you have a layout variable and a nested dictionary object where you just specify G.O. and the scope
+
+138
+00:10:57,260 --> 00:10:58,510
+to be USA.
+
+139
+00:10:58,570 --> 00:11:01,850
+It's going to be a USA states chloroplast.
+
+140
+00:11:02,090 --> 00:11:08,270
+And then you pass the whole thing to go that figure and you say I plot Coro map and you see this here
+
+141
+00:11:08,270 --> 00:11:09,130
+.
+
+142
+00:11:09,230 --> 00:11:14,990
+Now go ahead and show an example with some real data as well some other options we can add to the dictionaries
+
+143
+00:11:15,020 --> 00:11:16,200
+and data and layout.
+
+144
+00:11:16,430 --> 00:11:23,420
+So go ahead and build on the knowledge you already have going to go ahead and scroll down here and I'm
+
+145
+00:11:23,420 --> 00:11:29,080
+going to say DFA is equal to PD that read C S V and there's a C S V file here.
+
+146
+00:11:29,330 --> 00:11:37,850
+Call 2011 us underscore agri underscore exports and these are just agricultural exports by state.
+
+147
+00:11:37,850 --> 00:11:42,740
+And let me go out and ellipse import Pandurs in order to read that in.
+
+148
+00:11:42,830 --> 00:11:45,570
+And then we'll check out the head of the state A-frame.
+
+149
+00:11:45,590 --> 00:11:51,090
+So in the state of frame I have a code of the actual state name category in this case for all states
+
+150
+00:11:51,120 --> 00:11:51,300
+.
+
+151
+00:11:51,310 --> 00:11:55,960
+Total exports and then things such as beef pork poultry dairy etc..
+
+152
+00:11:56,030 --> 00:12:01,140
+So what if these states are exporting for agricultural products.
+
+153
+00:12:01,130 --> 00:12:04,670
+All right so let's go ahead and get started by creating our data variable.
+
+154
+00:12:04,670 --> 00:12:12,830
+In our lay out variable my data variable is going to have that dictionary casting and we'll go ahead
+
+155
+00:12:12,830 --> 00:12:18,570
+and say type is equal to Coro.
+
+156
+00:12:19,850 --> 00:12:23,130
+And then we pasan a color scale arguments.
+
+157
+00:12:23,330 --> 00:12:25,820
+In this case I'm going to pass in the string.
+
+158
+00:12:25,820 --> 00:12:32,860
+Capital Y capital I capital O lowercase our capital are lowercase D.
+
+159
+00:12:33,010 --> 00:12:42,270
+In this kind of a yellow orange red and the next I'm going to say locations I remember locations.
+
+160
+00:12:42,290 --> 00:12:49,940
+If we scroll back up here was just the list of state codes and our locations mode is also here.
+
+161
+00:12:50,390 --> 00:12:56,400
+Now we actually have in our data frame if we look at this a code column.
+
+162
+00:12:56,450 --> 00:12:59,330
+So I'm just going to pass A.F. code
+
+163
+00:13:02,780 --> 00:13:11,240
+and the next is going to be our location mode and we'll set that equal to USA states
+
+164
+00:13:14,810 --> 00:13:20,090
+and we also want to specify what we're going to say for z and z is going to be what the color bar is
+
+165
+00:13:20,090 --> 00:13:22,140
+actually representing this case.
+
+166
+00:13:22,140 --> 00:13:28,700
+Let's go ahead and say the total exports.
+
+167
+00:13:28,700 --> 00:13:33,270
+So we have total exports as a column there and that's going to be our value.
+
+168
+00:13:33,350 --> 00:13:37,450
+We also have texts and that's just going to be text that lines up.
+
+169
+00:13:37,580 --> 00:13:42,140
+And if you scroll all the way to the right it's kind of conveniently placed text column here.
+
+170
+00:13:42,380 --> 00:13:46,100
+Usually you probably have to build your own text column but since this is just an example we already
+
+171
+00:13:46,100 --> 00:13:47,990
+have a text for you.
+
+172
+00:13:48,080 --> 00:13:51,200
+We'll go ahead and passen text there
+
+173
+00:13:54,710 --> 00:14:03,240
+and then we also want to passen a color bar than to say color bar is equal to.
+
+174
+00:14:03,290 --> 00:14:08,290
+And this is where you have that dictionary where you just have the title of the color bar.
+
+175
+00:14:08,300 --> 00:14:14,210
+In this case let's go in and say millions USD because that's what the actual total exports represents
+
+176
+00:14:14,210 --> 00:14:14,480
+.
+
+177
+00:14:14,480 --> 00:14:17,840
+That's the number in millions of U.S. dollars.
+
+178
+00:14:17,850 --> 00:14:25,130
+Now we're going to go ahead and add one more argument to this and it's going to be the marker equals
+
+179
+00:14:25,140 --> 00:14:25,200
+.
+
+180
+00:14:25,220 --> 00:14:31,470
+And this is kind of a weird argument because it's a set of nested dictionaries but this basically is
+
+181
+00:14:31,460 --> 00:14:37,350
+going to define a marker that we're going to show once we show the plot and you're going to say cast
+
+182
+00:14:37,350 --> 00:14:45,590
+a dictionary line is a key equals and then another dictionary casting call and you say color is equal
+
+183
+00:14:45,600 --> 00:14:51,640
+to an plotless can accept r.g B color as a weird string format.
+
+184
+00:14:51,650 --> 00:14:53,030
+You say R.G. B.
+
+185
+00:14:53,210 --> 00:14:56,330
+And then in parentheses you pass in your R.G. B values.
+
+186
+00:14:56,610 --> 00:15:01,250
+So let's go ahead and just say two 5:55 for all three of these for red green and blue.
+
+187
+00:15:01,880 --> 00:15:08,720
+And then I'm also going to specify inside of this inside inner dictionary that the width is equal to
+
+188
+00:15:09,040 --> 00:15:09,720
+two.
+
+189
+00:15:09,920 --> 00:15:13,720
+And we'll see later on how that marker actually comes into effect.
+
+190
+00:15:13,880 --> 00:15:17,400
+And then finally I want to make sure that we have a comma here.
+
+191
+00:15:18,230 --> 00:15:22,790
+So we have the next key and we close it off.
+
+192
+00:15:22,790 --> 00:15:23,020
+All right.
+
+193
+00:15:23,030 --> 00:15:24,860
+That's my data dictionary.
+
+194
+00:15:24,870 --> 00:15:28,430
+Now we're going to have our lay out dictionary.
+
+195
+00:15:28,820 --> 00:15:35,510
+I'm going to say lay out is equal to how my dictionary casting call I can set the title of the actual
+
+196
+00:15:35,510 --> 00:15:37,100
+plot.
+
+197
+00:15:37,120 --> 00:15:49,460
+Now let's go and say this is 2011 U.S. agriculture exports by states that I'm going to say Geo is equal
+
+198
+00:15:49,460 --> 00:15:52,140
+to and I going to pass in a dictionary here.
+
+199
+00:15:52,460 --> 00:15:56,420
+We have scope is equal to USA.
+
+200
+00:15:56,630 --> 00:16:02,690
+I'm going to pass in two additional arguments inside of this dictionary show Lakes is equal to true
+
+201
+00:16:03,030 --> 00:16:09,480
+and that basically just says show the actual lakes and the map and then you can choose Lake color and
+
+202
+00:16:09,470 --> 00:16:15,020
+I'm going to passen and R.G. be code using platies notation for our G-B code which is just a string
+
+203
+00:16:15,040 --> 00:16:15,940
+R.G. B.
+
+204
+00:16:16,130 --> 00:16:19,250
+And then in-print sees the colors are the values you want.
+
+205
+00:16:19,350 --> 00:16:25,940
+So we're going to say 85 173 to 40 and I grabbed these from the Internet because they basically make
+
+206
+00:16:25,940 --> 00:16:31,720
+a nice blue for the lakes and that's going to be our lay out dictionary so we just take a look that
+
+207
+00:16:31,910 --> 00:16:37,370
+we can have this weird nested dictionary structure but that's the way plotless takes it.
+
+208
+00:16:37,460 --> 00:16:45,410
+Then finally we can say Koro map to is equal to go figure.
+
+209
+00:16:45,410 --> 00:16:53,250
+Data equals and we passen that data dictionary into a list and then we just say layout equals lay out
+
+210
+00:16:53,310 --> 00:16:53,810
+.
+
+211
+00:16:54,260 --> 00:17:00,920
+And then finally we call I plot's on coral map too.
+
+212
+00:17:01,280 --> 00:17:10,460
+And here we have now 2011 U.S. agricultural exports by state and notice as we hover over we get to see
+
+213
+00:17:10,460 --> 00:17:13,400
+all that text those values California.
+
+214
+00:17:13,570 --> 00:17:19,170
+We also see that the lakes are blue meaning that show lakes and the color of the lakes worked out correctly
+
+215
+00:17:19,160 --> 00:17:19,470
+.
+
+216
+00:17:19,520 --> 00:17:20,890
+We have a color scale.
+
+217
+00:17:20,930 --> 00:17:27,230
+We have our tidal Millings USD and we also see that there's kind of spacing between the states themselves
+
+218
+00:17:27,230 --> 00:17:28,640
+.
+
+219
+00:17:28,820 --> 00:17:30,900
+That is what that marker represented.
+
+220
+00:17:30,890 --> 00:17:34,720
+So if we go back here under data we had this marker.
+
+221
+00:17:34,940 --> 00:17:41,690
+So we set a line for color and then with so if we increase this with the line by let's say double and
+
+222
+00:17:41,690 --> 00:17:46,700
+let's go in and change the color to be something like 12 12 12.
+
+223
+00:17:46,700 --> 00:17:48,610
+So it's really obvious.
+
+224
+00:17:48,800 --> 00:17:55,090
+I'll run this again and then notice how this map is going to change as far as these borders are right
+
+225
+00:17:55,130 --> 00:17:55,390
+now.
+
+226
+00:17:55,410 --> 00:18:01,790
+Very thick black borders site changed those are G-B values and you can do that just by following this
+
+227
+00:18:01,800 --> 00:18:07,340
+kind of formula here saying dictionary line and then dictionary again you choose the color and the width
+
+228
+00:18:07,380 --> 00:18:08,480
+of the dictionary.
+
+229
+00:18:08,750 --> 00:18:13,260
+Well go ahead and just set this back to something like one.
+
+230
+00:18:13,600 --> 00:18:17,110
+And if I run this again we can see our plot.
+
+231
+00:18:17,240 --> 00:18:17,790
+All right.
+
+232
+00:18:17,900 --> 00:18:23,600
+That's how you can create Curle plus plots on a U.S. national scale using plot line.
+
+233
+00:18:23,720 --> 00:18:25,390
+Now I shouldn't know.
+
+234
+00:18:25,390 --> 00:18:31,140
+It is pretty confusing as far as the syntax and trying to remember what order everything goes into.
+
+235
+00:18:31,130 --> 00:18:36,020
+My best advice to give you is to reference a Jupiter notebook and to reference the documentation links
+
+236
+00:18:36,030 --> 00:18:37,430
+in the Jupiter notebook.
+
+237
+00:18:37,550 --> 00:18:42,200
+More often than not you'll just have to essentially copy and paste and then fill in the relevant code
+
+238
+00:18:42,510 --> 00:18:44,680
+for your particular data set.
+
+239
+00:18:44,690 --> 00:18:47,410
+It's not easy but that's the way you have to do it.
+
+240
+00:18:47,480 --> 00:18:53,610
+And this is just by nature geographical plotting is pretty tricky because it can come in so many formats
+
+241
+00:18:53,930 --> 00:18:59,280
+that they try to make it vague so you can pass in as many possible locations or location modes.
+
+242
+00:18:59,510 --> 00:19:02,900
+But that just leads to kind of weird syntax structure.
+
+243
+00:19:02,960 --> 00:19:08,750
+That's the nature of this game of geographical plotting as far as trying to use plot Lee as a Python
+
+244
+00:19:08,760 --> 00:19:10,480
+library for geographical plotting.
+
+245
+00:19:10,700 --> 00:19:15,470
+But you can see after all that hard work you do get something that is quite nice to show other people
+
+246
+00:19:15,490 --> 00:19:16,030
+.
+
+247
+00:19:16,550 --> 00:19:17,520
+All right.
+
+248
+00:19:17,510 --> 00:19:23,340
+Coming up in the next lecture will show how to do this on a global scale with global coral plus plots
+
+249
+00:19:23,340 --> 00:19:23,930
+.
+
+250
+00:19:23,960 --> 00:19:26,370
+Thanks everyone and I'll see you at the next lecture.

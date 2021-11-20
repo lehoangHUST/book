@@ -1,0 +1,547 @@
+1
+00:00:05,280 --> 00:00:10,350
+Bună ziua tuturor și bun venit la hărțile Karplus exersează prelegerea soluției în această lecție.
+
+2
+00:00:10,350 --> 00:00:15,140
+Vom codifica soluțiile pentru exercițiile din secțiunea de hărți Karplus.
+
+3
+00:00:15,150 --> 00:00:19,260
+Hai să mergem mai departe și să știi că ai pus un notebook pentru a începe.
+
+4
+00:00:19,260 --> 00:00:19,470
+In regula.
+
+5
+00:00:19,470 --> 00:00:21,500
+Aici sunt la notebook-ul Jupiter.
+
+6
+00:00:21,600 --> 00:00:26,850
+Vreau să merg mai departe și să executați importurile plotline în ciuda trecerea de rulare intra acolo și
+
+7
+00:00:26,850 --> 00:00:33,420
+apoi primul lucru pe care vrem să facem este de a importa panda ca PD și apoi vom merge mai departe și de
+
+8
+00:00:33,430 --> 00:00:37,830
+a folosi panda pentru a citi CXXVI 2014 lumina consumului de energie lumina .
+
+9
+00:00:37,830 --> 00:00:47,570
+Așa că am de gând să merg și să spun continuarea la PD citit CXXVI și apoi passen 2014.
+
+10
+00:00:47,690 --> 00:00:54,420
+Sau, de fapt, pot folosi doar pentru a găsi bine și complete acest lucru și haideți să mergem mai departe
+
+11
+00:00:54,420 --> 00:00:57,130
+și să verificați capul cadrului de date capul.
+
+12
+00:00:57,360 --> 00:00:58,590
+Și aici o avem.
+
+13
+00:00:58,630 --> 00:00:59,070
+O.K.
+
+14
+00:00:59,160 --> 00:01:04,460
+Acum vrem să facem referire la alegeri pentru a crea un grafic de bază al consumului de energie
+
+15
+00:01:04,470 --> 00:01:07,150
+pentru țările care folosesc dicționarul de date și layout.
+
+16
+00:01:07,170 --> 00:01:11,990
+Să mergem mai departe și să începem cu dicționarul de date.
+
+17
+00:01:12,090 --> 00:01:20,540
+Atunci când sună la dicționarul de turnare și apoi am să spun că cravata este egală cu cloroplastul, așa cum
+
+18
+00:01:20,540 --> 00:01:22,120
+am făcut înainte.
+
+19
+00:01:22,260 --> 00:01:30,960
+Următoarea cheie pe care o voi răspunde este locația și aceasta va merge mai departe și va fi egală cu coloana
+
+20
+00:01:30,960 --> 00:01:32,400
+codurilor de locație.
+
+21
+00:01:32,400 --> 00:01:34,520
+În acest caz este doar o țară aici.
+
+22
+00:01:34,680 --> 00:01:36,410
+Așa că am să trec
+
+23
+00:01:39,090 --> 00:01:45,570
+într-o țară și apoi voi spune modul de locație și aici e locul în care ați avut o referință că
+
+24
+00:01:45,570 --> 00:01:49,460
+documentația pentru a afla modul de localizare este numele spațiului de țară.
+
+25
+00:01:49,570 --> 00:01:52,600
+Și aici există o documentație completă.
+
+26
+00:01:52,620 --> 00:01:53,710
+Puteți merge mai departe și faceți clic pe acel link.
+
+27
+00:01:53,710 --> 00:01:57,810
+Vă va duce la documentația completă a documentației și puteți căuta modul de
+
+28
+00:01:57,810 --> 00:01:59,790
+locație corect pentru țara respectivă.
+
+29
+00:01:59,790 --> 00:02:04,080
+Deoarece nu avem de fapt codurile de țară în acest caz, avem numele țării
+
+30
+00:02:04,080 --> 00:02:09,060
+și, sperăm, prin căutarea în documentația pe care o puteți descoperi sau doar prin referirea la aceste soluții.
+
+31
+00:02:10,320 --> 00:02:19,290
+În continuare, dorim să specificăm z și z va fi egal cu dacă și dorim să fie coloana consumului de
+
+32
+00:02:19,290 --> 00:02:19,950
+energie.
+
+33
+00:02:20,010 --> 00:02:22,590
+Asta ne dorește de fapt reprezentarea noastră de colorare.
+
+34
+00:02:22,590 --> 00:02:34,770
+Deci, puteți să mergeți mai departe și să spuneți consumul de energie și este vorba să spunem că W H și atunci textul va merge mai departe și
+
+35
+00:02:34,770 --> 00:02:37,860
+va avea și numele de țară.
+
+36
+00:02:37,860 --> 00:02:46,980
+Așa că continuați să spuneți că textul este țara și, în cele din urmă, vom marca eticheta noastră pentru a fi dicționarul
+
+37
+00:02:46,980 --> 00:02:54,270
+sau titlul, iar eticheta barului de culoare va fi sau bara de culori a titlului va fi
+
+38
+00:02:55,110 --> 00:02:57,180
+consumul de energie KWH.
+
+39
+00:02:57,210 --> 00:02:57,410
+Dreapta.
+
+40
+00:02:57,420 --> 00:03:01,200
+Și acesta este dicționarul de date de bază pe care îl vom reveni și vom adăuga
+
+41
+00:03:01,200 --> 00:03:02,550
+mai multe argumente mai târziu.
+
+42
+00:03:02,550 --> 00:03:05,450
+Dar, atunci, să facem și machetele noastre.
+
+43
+00:03:05,820 --> 00:03:09,870
+Așa că am de gând să spun un dicționar.
+
+44
+00:03:10,200 --> 00:03:18,300
+Deci, titlul acestui titlu care urmează să fie doar titlul parcelei va continua și va spune că consumul de energie 2014 este
+
+45
+00:03:18,300 --> 00:03:19,020
+titlul.
+
+46
+00:03:19,470 --> 00:03:27,150
+Și apoi ecranul următor ați configurat o cheie geo și apoi pasan un dicționar de apel spun spune spectacol
+
+47
+00:03:27,150 --> 00:03:30,440
+un sequel la false și apoi spune proiecție.
+
+48
+00:03:30,480 --> 00:03:34,400
+Și puteți trece în orice proiecție doriți, așa cum sa arătat în prelegerile anterioare.
+
+49
+00:03:34,410 --> 00:03:39,420
+Dar hai să mergem mai departe și să rămânem cu asta.
+
+50
+00:03:39,540 --> 00:03:41,850
+Pentru direcție.
+
+51
+00:03:42,920 --> 00:03:47,650
+Și acum să mergem mai departe și să rulam laso și să vedem ce ne ridicăm.
+
+52
+00:03:47,660 --> 00:03:48,090
+In regula.
+
+53
+00:03:48,090 --> 00:03:53,940
+Și aici puteți vedea consumul de energie din 2014 al lumii și putem vedea că China și SUA au cel
+
+54
+00:03:53,940 --> 00:03:57,360
+mai mare consum de energie acum și soluția NU este rezervată.
+
+55
+00:03:57,360 --> 00:04:06,090
+M-am dus înainte și mi-am schimbat scara de culori spunând ca un argument în dicționarul de date pe care
+
+56
+00:04:06,090 --> 00:04:10,890
+l-am spus că scara de culoare este egală cu asta.
+
+57
+00:04:10,950 --> 00:04:18,000
+Și apoi am spus că scara inversă este egală cu adevărata.
+
+58
+00:04:19,110 --> 00:04:21,660
+Și asta face ca această scală de culoare să fie puțin mai frumoasă.
+
+59
+00:04:21,660 --> 00:04:26,790
+Nu trebuie să faceți acest lucru este un tip opțional, dar prefer stilul de culoare pe care îl face un
+
+60
+00:04:26,790 --> 00:04:30,800
+pic mai evident între țări, în loc de a le avea pe toate gri.
+
+61
+00:04:30,870 --> 00:04:31,530
+In regula.
+
+62
+00:04:31,530 --> 00:04:34,700
+Asta a fost modul în care se face complot consumul de energie 2014.
+
+63
+00:04:34,770 --> 00:04:39,720
+Și din nou, multe dintre acestea trebuiau să caute lucruri în documentația pe care o știu că ar putea
+
+64
+00:04:39,720 --> 00:04:45,390
+fi dificilă și enervantă uneori, dar pentru o alegere atât de ciudată de sintaxă, în măsura în care compilarea chestiilor va trebui într-adevăr
+
+65
+00:04:45,390 --> 00:04:47,780
+să faci asta când doriți să creați aceste parcele.
+
+66
+00:04:47,790 --> 00:04:51,320
+Va fi dificil să încercați să numiți aceste lucruri direct din memoria dvs.
+
+67
+00:04:52,580 --> 00:04:55,720
+Acum mergeți mai departe și mergeți la cheia coralului din SUA.
+
+68
+00:04:55,890 --> 00:04:58,940
+Vrem să facem importul datelor electorale din 2012.
+
+69
+00:04:59,140 --> 00:05:00,630
+Voi ieși să-l folosesc pe panelist pentru a face asta.
+
+70
+00:05:00,670 --> 00:05:04,990
+Voi spune ca USDA este egal cu PD.
+
+71
+00:05:05,110 --> 00:05:11,050
+Citește CXXVI și apoi ne vom uita la datele electorale din 2012.
+
+72
+00:05:11,170 --> 00:05:13,510
+Vreau să spun doar să folosești fila pentru a termina automat acest lucru.
+
+73
+00:05:13,870 --> 00:05:17,850
+Și apoi voi verifica capul acelui cadru de date spunându-ne Fed.
+
+74
+00:05:18,250 --> 00:05:20,740
+Și aici găsim cadrul de date corespunzător.
+
+75
+00:05:20,740 --> 00:05:24,930
+Acum, hai să intrăm și să creăm un complot care să afișeze populația de vârstă la vot pe stat.
+
+76
+00:05:24,940 --> 00:05:35,050
+AP-ul va face dicționarul meu de date prin a spune că datele sunt egale cu pulații și apoi tot tipul de cuvânt este Curle plus.
+
+77
+00:05:38,940 --> 00:05:44,440
+Și să mergem mai departe și să adăugăm în acele argumente la scară de culoare, așa că
+
+78
+00:05:44,460 --> 00:05:51,180
+intru și spun că o scală de culoare este egală cu aceasta și de asemenea o scală inversă pentru a fi adevărată.
+
+79
+00:05:51,430 --> 00:05:56,940
+Iar motivul pentru care spun scala inversă egal cu adevărat este că, de fapt, inversează scala de culoare.
+
+80
+00:05:56,940 --> 00:06:03,400
+Dați-mi voie să vă arăt foarte repede ce se întâmplă dacă nu vom pune acest lucru, spunând scară
+
+81
+00:06:03,390 --> 00:06:07,820
+inversă să zicem că este egală cu falsul care este implicit.
+
+82
+00:06:08,230 --> 00:06:12,370
+Apoi, am o scară care arată ca aceasta, care nu este la fel de frumos ca având invers, astfel
+
+83
+00:06:12,370 --> 00:06:16,030
+încât să puteți inversa orice scală de culoare doriți doar prin adăugarea în acel parametru.
+
+84
+00:06:16,120 --> 00:06:22,200
+Și pentru asta funcționează de obicei mult mai bine dacă chiar spui că scara inversă este adevărată.
+
+85
+00:06:22,200 --> 00:06:28,860
+Deci, acesta este ceea ce pare ca în mod implicit, astfel încât să nu se inverseze, dar prefer culorile mai întunecate să fie cantitatea
+
+86
+00:06:28,870 --> 00:06:29,660
+mai mare.
+
+87
+00:06:29,680 --> 00:06:31,580
+În felul acesta este puțin mai clar.
+
+88
+00:06:31,600 --> 00:06:32,140
+In regula.
+
+89
+00:06:32,400 --> 00:06:39,910
+Dacă continuăm să mergem înapoi, vom ieși și vom spune că scara inversă este egală cu locația adevărată.
+
+90
+00:06:39,900 --> 00:06:47,290
+Va fi egal cu abrevierea de stat care, dacă privim de fapt aici, avem atât numele de
+
+91
+00:06:47,280 --> 00:06:51,340
+stat, cât și abrevierea de stat la sfârșit.
+
+92
+00:06:51,610 --> 00:07:04,190
+Să începem să folosim abrevierea de stat, vom spune USCF Hassen coloana de abreviere a statului.
+
+93
+00:07:04,260 --> 00:07:09,400
+În continuare vrem să alegem sau Z și acest lucru ți-a fost deja spus ce trebuie să alegi.
+
+94
+00:07:09,430 --> 00:07:12,260
+A fost populația cu vîrstă la vot.
+
+95
+00:07:12,260 --> 00:07:17,500
+AP și apoi modul de localizare.
+
+96
+00:07:17,940 --> 00:07:19,210
+Va fi numit doi.
+
+97
+00:07:19,240 --> 00:07:25,410
+La fel ca în exemple, Statele Unite afirmă la fel ca în prelegere și apoi textul nostru.
+
+98
+00:07:25,410 --> 00:07:33,490
+Să mergem mai departe și să alegem textul pentru a fi numele actual al statului, astfel încât statele USCF și apoi vom merge mai departe și să spunem
+
+99
+00:07:33,490 --> 00:07:35,430
+că barul de culoare este egal
+
+100
+00:07:38,860 --> 00:07:41,230
+cu și apoi vom trece într-un dicționar aici.
+
+101
+00:07:41,250 --> 00:07:50,370
+Titlul și aceasta va fi doar o populație cu drept de vot.
+
+102
+00:07:50,400 --> 00:07:51,850
+Să facem asta.
+
+103
+00:07:51,880 --> 00:07:53,340
+Bine, avem un dicționar de date.
+
+104
+00:07:53,380 --> 00:07:56,880
+Acum este timpul să faceți dicționarul nostru de elaborare.
+
+105
+00:07:58,090 --> 00:08:00,100
+Trecem în dicționarul nostru de distribuție.
+
+106
+00:08:00,150 --> 00:08:07,930
+Am stabilit titlul întregului nostru complot aici îl vom numi doar datele electorale din 2012.
+
+107
+00:08:08,350 --> 00:08:09,900
+Poți să-i spui ce vrei.
+
+108
+00:08:10,120 --> 00:08:13,110
+Vom spune că Geo este egal cu dicționarul.
+
+109
+00:08:13,320 --> 00:08:17,500
+Cisco USA.
+
+110
+00:08:17,950 --> 00:08:22,180
+Un alt argument pe care îl vom spune este că Lakes este egal cu adevărat.
+
+111
+00:08:22,500 --> 00:08:27,640
+Și apoi alegem culoarea lacului și vreau să fac culoarea târzie cu mecanismul RSGB pe care l-am
+
+112
+00:08:27,630 --> 00:08:30,810
+văzut în prelegerile în care acceptă parțial un șir.
+
+113
+00:08:30,890 --> 00:08:33,650
+Este un fel de format ciudat. G. B.
+
+114
+00:08:33,850 --> 00:08:41,700
+Și apoi treceți de fapt valorile numerice și alegeți aceste numere 85 173 și 240, ceea ce ne face
+
+115
+00:08:41,700 --> 00:08:44,610
+o nuanță frumoasă albastră pentru Lacuri.
+
+116
+00:08:44,640 --> 00:08:45,190
+In regula.
+
+117
+00:08:45,370 --> 00:08:46,050
+Asta e rezolvarea noastră.
+
+118
+00:08:46,060 --> 00:08:48,140
+Să facem asta.
+
+119
+00:08:48,450 --> 00:08:54,480
+Și aici vedem datele electorale din 2012 și este logic că statele cele mai populate, cum ar fi California Texas și
+
+120
+00:08:54,490 --> 00:08:59,430
+New York și Florida, au culorile mai întunecate, deoarece au cea mai mare populație, ceea ce
+
+121
+00:08:59,430 --> 00:09:03,460
+înseamnă că probabil au și cea mai mare populație de vârstă în vârstă.
+
+122
+00:09:03,450 --> 00:09:03,880
+In regula.
+
+123
+00:09:03,880 --> 00:09:06,570
+Asta e pentru exercițiile pe hărțile de corali.
+
+124
+00:09:06,580 --> 00:09:13,360
+Doar datele americane privind alegerile și datele despre consumul internațional de energie au văzut că puterea
+
+125
+00:09:13,360 --> 00:09:19,120
+plotlinei a fost în măsură să reproducă felul de parcele destul de avansate.
+
+126
+00:09:19,300 --> 00:09:25,650
+Și cu doar câteva rânduri de cod care vine în costul sintaxei fiind puțin ciudat și trebuie să se refere la
+
+127
+00:09:25,650 --> 00:09:31,650
+documentație, dar având un complot care arată acest lucru frumos și fiind capabil să interacționeze cu el și să
+
+128
+00:09:31,650 --> 00:09:37,710
+măriți și să verificați numerele și setați textul pentru ceea ce doriți pentru a trece peste este destul de
+
+129
+00:09:37,710 --> 00:09:38,110
+frumos.
+
+130
+00:09:38,110 --> 00:09:43,540
+Având în vedere cât de mult cod scrieți în alte limbi, acest lucru ar necesita mult mai mult cod.
+
+131
+00:09:43,540 --> 00:09:44,170
+In regula.
+
+132
+00:09:44,160 --> 00:09:49,630
+Sper că vă veți bucura de aceste exerciții de hărți Pluff de bază, acestea fiind menite să fie foarte provocatoare și trebuie să
+
+133
+00:09:49,620 --> 00:09:52,780
+faceți referire la o mulțime de documentații pentru ao înțelege pe deplin.
+
+134
+00:09:52,870 --> 00:09:57,460
+Dar, de asemenea, este un fel de exemplar real al lumii cu privire la ceea ce puteți face atunci când faceți aceste lucruri
+
+135
+00:09:57,450 --> 00:09:58,190
+pe cont propriu.
+
+136
+00:09:58,330 --> 00:09:59,400
+Dar te-a plăcut.
+
+137
+00:09:59,400 --> 00:10:01,160
+Multumesc tuturor si te voi vedea la urmatoarea conferinta

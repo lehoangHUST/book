@@ -1,0 +1,179 @@
+1
+00:00:05,190 --> 00:00:09,990
+Herkese merhaba ve lib dersinin girişine hoş geldiniz ve bu dersin sonunda
+
+2
+00:00:09,990 --> 00:00:15,560
+Matt'in ne olduğunu kısaca tanıtacağımız ve ardından websitenin bir bölümünü arsa haricinde göstereceğiz.
+
+3
+00:00:16,940 --> 00:00:23,160
+Matt lib veya bazı insanlar Matt plus libe olarak telaffuz ederken, Python için en popüler
+
+4
+00:00:23,590 --> 00:00:29,370
+plodding kitaplığıdır ve bir figürün veya arsa hemen hemen her yönüyle tam kontrol sağlar
+
+5
+00:00:29,370 --> 00:00:34,950
+ve başka bir programlama Matlab çok benzer bir his için tasarlanmıştır kendi grafik çizim
+
+6
+00:00:34,950 --> 00:00:40,650
+yetenekleri haritası çizelgesindeki lisan, Pandanus ve umpire yarışıyla çok iyi çalışıyor; bu yüzden daha
+
+7
+00:00:40,650 --> 00:00:42,100
+sonra bunu öğreneceğiz.
+
+8
+00:00:42,090 --> 00:00:46,420
+Matt Plup'un canlı yayınladığı Seaborn gibi bazı diğer kütüphaneler hakkında bilgi edineceğiz.
+
+9
+00:00:46,430 --> 00:00:46,900
+Gerçekten
+
+10
+00:00:47,100 --> 00:00:52,500
+Ancak bu kütüphaneleri anlamak için, arsanın yaşamış olduğunu anlamanız önemlidir İlk olarak,
+
+11
+00:00:52,500 --> 00:00:57,450
+Python veya Konda ile komut satırında veya terminalde python'un Anaconda dağıtımını
+
+12
+00:00:57,450 --> 00:01:00,580
+kullanmak için aşağıdaki komutlardan biriyle kurmanız gerekecektir.
+
+13
+00:01:00,720 --> 00:01:06,270
+Basit bir Konda'nın Matt Cutlip'i komut satırında veya terminalinde kurması sizin için canlı olarak kurmalıdır.
+
+14
+00:01:06,660 --> 00:01:11,840
+Veya matplotlib Python Pipp'in başka bir sürümünü kullanıyorsanız sizin için de çalışması gerekir.
+
+15
+00:01:11,850 --> 00:01:15,160
+Şimdi devam edin ve resmi web sitesine hızlı bir gezi yapalım.
+
+16
+00:01:15,600 --> 00:01:21,440
+tanıtım bilgileri yanı sıra daha resmi kurulum talimatları ve diğer bazı belge bağlantıları göreceksiniz.
+
+17
+00:01:21,450 --> 00:01:26,220
+Tamam burada harita plot lym için resmi Web sitesi olan bu arsa
+
+18
+00:01:26,220 --> 00:01:27,890
+canlı orgadayım burada bazı
+
+19
+00:01:27,960 --> 00:01:32,850
+Muhtemelen bu sayfadaki en önemli link galeri altında.
+
+20
+00:01:33,030 --> 00:01:38,430
+Galeriyi tıklarsanız veya oraya gitmek için org slash galerisini canlı tutarsanız, bu
+
+21
+00:01:38,550 --> 00:01:42,710
+bağlantıya yönlendirilirsiniz ve çeşitli arsa adları grubunun bir listesini göreceksiniz.
+
+22
+00:01:42,960 --> 00:01:47,880
+Kaydırmaya devam ederseniz, bir sürü rakam veya örnek rakamın olduğunu
+
+23
+00:01:47,880 --> 00:01:52,310
+göreceksiniz ve bunlar Cutlip'ın sizin için oluşturabileceği çeşitli arazilerdir.
+
+24
+00:01:52,470 --> 00:01:56,800
+Daha sonra, mali arsalar gibi işler için daha iyi olan diğer kitaplıkları nasıl kullanacağınızı öğreneceğiz.
+
+25
+00:01:57,150 --> 00:02:01,470
+Ancak, kendinizi bu arsa yaşıyor yetenekleri hakkında bir soruya sahip bulursanız,
+
+26
+00:02:01,470 --> 00:02:04,580
+bu sayfaya gelip aradığınız arsa türünde arama yapabilirsiniz.
+
+27
+00:02:04,590 --> 00:02:08,960
+Örneğin, devam edersem ve buraya geri dönersek, pasta grafiği yapmak istediğinizi varsayalım.
+
+28
+00:02:09,180 --> 00:02:12,800
+Buraya gelecek misin, pasta grafiklerinde nerede olduğunu görmek için bir galeri var.
+
+29
+00:02:12,990 --> 00:02:13,640
+Buraya TIKLAYIN.
+
+30
+00:02:13,650 --> 00:02:14,980
+Üst düzey kutup çizelgeleri.
+
+31
+00:02:15,060 --> 00:02:19,950
+inecekler ve sana burada yapmak istediklerine benzeyen birini bulduğunda umarım
+
+32
+00:02:19,950 --> 00:02:24,360
+alakalı örnekler gösteren birkaç figür göstereceğim ve ilkini tıklatmak.
+
+33
+00:02:24,360 --> 00:02:25,240
+Bu bağlantıya
+
+34
+00:02:25,390 --> 00:02:30,420
+Sizi sadece şekil almak zorunda kalmadığı örnek bir sayfaya götürecek ayrıca aradığınız arazileri
+
+35
+00:02:30,720 --> 00:02:34,800
+nasıl uygulayacağınıza dair çok iyi yorumlanmış koda ve talimatlara sahip olacak.
+
+36
+00:02:34,830 --> 00:02:37,170
+Bu durumda pasta grafiği.
+
+37
+00:02:37,170 --> 00:02:37,790
+Tamam.
+
+38
+00:02:37,890 --> 00:02:40,740
+Bu, muhtemelen bu vuruşun en yararlı sayfası.
+
+39
+00:02:40,800 --> 00:02:45,000
+Diğer bağlantılar sadece temelde dokümantasyon işlevlerine yapılan bağlantılardır.
+
+40
+00:02:45,150 --> 00:02:48,600
+dersin bu bölümünde devam ettiğimiz gibi en yaygın fonksiyonları inceleyeceğiz.
+
+41
+00:02:48,600 --> 00:02:49,560
+Ve biz de
+
+42
+00:02:49,560 --> 00:02:50,220
+Tamam.
+
+43
+00:02:50,220 --> 00:02:54,570
+Matplotlib orgunun özellikle galeri sayfası için bir kaynak olduğunu unutmayın.
+
+44
+00:02:54,570 --> 00:02:58,950
+Sırada, Matt Plett'ün kendi figürlerinizi yaratmak için nasıl kullanacağınızı size göstereceğiz.
+
+45
+00:02:59,520 --> 00:03:01,440
+Herkese teşekkürler, bir sonraki derside görüşürüz.

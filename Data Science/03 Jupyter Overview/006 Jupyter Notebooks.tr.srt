@@ -1,0 +1,851 @@
+1
+00:00:05,370 --> 00:00:10,500
+Herkese merhaba ve Jupiter defterinin konferansına hoş geldiniz, bu konferans Jupiter dizüstü bilgisayar sistemini
+
+2
+00:00:10,500 --> 00:00:15,540
+etkin bir şekilde nasıl kullanacağınızı ve genel çevre hakkında bir tur vereceğinizi gösterecektir.
+
+3
+00:00:15,540 --> 00:00:20,580
+Tüm dizüstü bilgisayar dosyalarını içeren zip dosyasını indirmek için bu
+
+4
+00:00:20,580 --> 00:00:23,000
+dersin kaynaklarını da kontrol edin.
+
+5
+00:00:23,040 --> 00:00:27,150
+Bahsettiğim gibi dersin kaynaklarını kontrol edip zip dosyasını indirin.
+
+6
+00:00:27,150 --> 00:00:33,700
+Bu, IP Y ve B tüm dosyalarını veya dizüstü bilgisayar dosyalarını ve bu dizüstü bilgisayarın diğer kısımları için olan dizüstü bilgisayarlarını
+
+7
+00:00:33,990 --> 00:00:34,430
+içerir.
+
+8
+00:00:34,470 --> 00:00:37,910
+Dosyayı nereden kaydettiğinizi ve unzipped ettiğinizi unutmayın.
+
+9
+00:00:38,640 --> 00:00:42,990
+Devam edin, defterleri keşfederken, bunları nasıl etkili bir şekilde kullanacağınıza dair bir fikir edinelim.
+
+10
+00:00:42,990 --> 00:00:47,510
+Ben devam edip size sadece Jüpiter defterini nasıl açabileceğinizi hatırlatacağım.
+
+11
+00:00:47,520 --> 00:00:50,770
+Şimdi devam edip komut istemine atlayacağım.
+
+12
+00:00:50,790 --> 00:00:51,090
+Tamam.
+
+13
+00:00:51,090 --> 00:00:55,320
+Mac OS kullanıyorsanız burada komut istemimde bir hatırlatma olarak bulunuyorum.
+
+14
+00:00:55,320 --> 00:00:57,710
+Devam edin ve bunun için terminalinizi kullanın.
+
+15
+00:00:57,930 --> 00:01:03,870
+Windows kullanıyorsanız, devam edin ve buraya gelin ve ACMD yazın ve komut isteminizi seçin.
+
+16
+00:01:04,160 --> 00:01:07,310
+Komut isteminde olduğu gibi bir simgede de kullanabilirsiniz.
+
+17
+00:01:07,320 --> 00:01:11,250
+Anaconda dağıtımıyla gelen komut istemi budur.
+
+18
+00:01:11,250 --> 00:01:11,830
+Tamam.
+
+19
+00:01:12,000 --> 00:01:19,200
+Bu yüzden devam edin ve komut istemine gelin ve daha sonra dizüstü bilgisayar alanına yazın ve enter tuşuna basın.
+
+20
+00:01:20,010 --> 00:01:25,040
+Bunun, komut isteminde olduğunuz her yerde bir Jüpiter dizüstü bilgisayarı başlatacağını unutmayın.
+
+21
+00:01:25,050 --> 00:01:27,840
+Bu nedenle, örneğin bu gerçek hızlı silmeye gidiyorum.
+
+22
+00:01:27,870 --> 00:01:35,430
+Ben C kullanıcıları altındayım ve sonra orta adı Marysia ve defterim burada
+
+23
+00:01:35,430 --> 00:01:36,110
+başlayacak.
+
+24
+00:01:36,210 --> 00:01:42,030
+değiştirebilmem için CD kullanıp daha sonra istediğim bir sonraki dosyayı yazmam gerekiyor.
+
+25
+00:01:42,030 --> 00:01:46,770
+Not defterlerimi başka bir dizinde başlatmak istersem, dizini dizinimi
+
+26
+00:01:46,800 --> 00:01:51,880
+Diyelim ki benim İndirme klasörüne gitmek istedim, çünkü zip dosyasını indirdik.
+
+27
+00:01:52,110 --> 00:01:58,110
+D O N yazmaya başlayabilir, sonra bunu otomatik tamamlama sekmesini tıklayabilir ve sonra sizi
+
+28
+00:01:58,110 --> 00:01:58,640
+götürür.
+
+29
+00:01:58,650 --> 00:02:04,260
+Dışarı çıkıp şimdi indirmeye girerseniz tıklayın ve ardından DUPERE dizüstü bilgisayara yazabilir ve
+
+30
+00:02:04,340 --> 00:02:09,840
+çalıştırabilir ve şimdi Jubran dizüstü bilgisayarımın dosyası tarayıcımda İndirmeler klasörü altında gösterdiğimde olacaktır.
+
+31
+00:02:10,740 --> 00:02:15,000
+Devam etmek isterseniz ve bir klasöre geri dönerseniz, CD'ye yazabilirsiniz.
+
+32
+00:02:15,010 --> 00:02:22,090
+Bu, rektari alan nokta nokta değişikliğidir ve sizi bir dizine yedekler.
+
+33
+00:02:22,170 --> 00:02:25,110
+Devam edip basit komut satırı satırlarını arayın.
+
+34
+00:02:25,110 --> 00:02:25,860
+Biraz farklı var.
+
+35
+00:02:25,860 --> 00:02:32,250
+Mac OS veya Windows'u kullanmak için kuruş, örneğin, tüm dizin klasörlerini ve
+
+36
+00:02:32,250 --> 00:02:37,400
+geçerli dizininizi Windows'da görmek istiyorsanız, d dümerim C dizini.
+
+37
+00:02:37,410 --> 00:02:40,780
+Ve bu temelde mevcut dizininizdeki tüm dosyaları gösterir.
+
+38
+00:02:40,860 --> 00:02:46,170
+Mac'deyseniz hepsini listelemek için L S yazabilirsiniz.
+
+39
+00:02:46,170 --> 00:02:49,320
+Pekala, sahip olduğun her şeyi temizlemek için.
+
+40
+00:02:49,320 --> 00:02:53,290
+Windows'daysanız C L S yazabilirsiniz.
+
+41
+00:02:53,440 --> 00:03:00,120
+Bir Mac'daysanız ve açık sözcüğünü yazdıysanız, başıma gideyim ve Jüpiter not defterini başlatın ve
+
+42
+00:03:00,120 --> 00:03:06,150
+ne zaman isabet edeceğim ve tarayıcımdaki bir dizüstü bilgisayarda bir yonga açacağım.
+
+43
+00:03:06,150 --> 00:03:07,020
+İşte burada.
+
+44
+00:03:07,200 --> 00:03:11,940
+Devam edeceğim ve unzips dosyasını nereden kaydettiğimi bulacağım.
+
+45
+00:03:11,940 --> 00:03:17,510
+Burada, python veri bilim makinesi öğrenme önyükleme kampı ve kullandığınız Pentagon unzip programı var.
+
+46
+00:03:17,520 --> 00:03:22,920
+Sonunda bu gösteri ustası olabilir veya olmayabilir ancak devam ederseniz ve bu klasörü tıklarsanız
+
+47
+00:03:22,920 --> 00:03:24,460
+burada epeyce klasör göreceksiniz.
+
+48
+00:03:24,480 --> 00:03:27,660
+Veri görselleştirme için veri analizi için Python.
+
+49
+00:03:27,660 --> 00:03:33,550
+Python çarpışma dersi makine öğrenme bölümleri verileri bazı projeler büyük veri ve Sparc ve daha tuttu.
+
+50
+00:03:33,570 --> 00:03:36,070
+İlk bölüm bu klasörün altındadır.
+
+51
+00:03:36,090 --> 00:03:41,960
+Python crash course, o klasöre dizüstü bilgisayarınızın bulunduğu bölüme tıklarsanız.
+
+52
+00:03:42,180 --> 00:03:44,700
+Ve burada IPY noktasını görürsünüz ve dosyalar olursunuz.
+
+53
+00:03:44,700 --> 00:03:50,670
+Bir dersi kodladığımı gördüğüm her ders için genel bölüm adına sahip bir klasör var
+
+54
+00:03:50,730 --> 00:03:56,550
+ve o zaman gerçek bölüm adının bir alt klasörü olacak ve öğretmen adlarına karşılık
+
+55
+00:03:56,550 --> 00:03:58,630
+gelen dizüstü bilgisayar dosyaları olacak.
+
+56
+00:03:58,620 --> 00:04:01,030
+Yani ilki python çarpışma rotası.
+
+57
+00:04:01,140 --> 00:04:02,590
+Siz devam edin ve bunu tıklayın.
+
+58
+00:04:02,670 --> 00:04:03,990
+Yüklemek biraz zaman alacak.
+
+59
+00:04:03,990 --> 00:04:09,270
+İşte o ve sonra ders boyunca yazacağım herşey senin için burada
+
+60
+00:04:09,270 --> 00:04:11,460
+ve dersin her bölümünün başında.
+
+61
+00:04:11,460 --> 00:04:16,380
+Kursun bu bölümünde yer alan gerçek not defterlerini nereden bulabileceğiniz konusunda size hatırlatacağım, birkaç
+
+62
+00:04:16,380 --> 00:04:19,100
+ders anlatıyor ve bazen bunu bulmak zor olabilir.
+
+63
+00:04:19,230 --> 00:04:23,520
+Sana rehberlik etmek için orada olacağım ve işleri nerede bulacağına dair herhangi bir sorunun
+
+64
+00:04:23,520 --> 00:04:27,460
+olması durumunda, Q &amp; A forumlarını yayınlamaya çekinmeyin, orada yardımcı olmaktan memnuniyet duyarız.
+
+65
+00:04:27,510 --> 00:04:30,890
+Pekâlâ, bundan sonra veri analizi için Python'u başlatacağız.
+
+66
+00:04:30,900 --> 00:04:36,030
+Numarayı s ile başlayacaksınız. c veya PI tıklayın ve bunun için dizüstü görmek.
+
+67
+00:04:36,030 --> 00:04:41,790
+Devam edelim ve Jüpiter not defteri sisteminin genel anlamda nasıl işlediğini izleyin.
+
+68
+00:04:41,910 --> 00:04:49,050
+Üstatlığa kadar her yolu geri alacağım ve sonra çeşitli ortamlara sahip olduğum için yeni
+
+69
+00:04:49,050 --> 00:04:50,350
+ve buraya tıklayacağım.
+
+70
+00:04:50,480 --> 00:04:55,110
+Bunu bir tıklatacağım ancak Python veya Python 3 veya ne olursa olsun iyi ve
+
+71
+00:04:55,110 --> 00:04:56,300
+tıklamanız iyi olmalıdır tıklatabilirsiniz.
+
+72
+00:04:56,310 --> 00:04:59,180
+Yine notebook'larda söylediklerinizi yenileyebilirsiniz.
+
+73
+00:04:59,220 --> 00:05:00,640
+Üzerine tıklamak iyi olmalı.
+
+74
+00:05:00,870 --> 00:05:04,040
+Bu defteri retitle için böyle bir şey elde edersiniz.
+
+75
+00:05:04,070 --> 00:05:08,260
+Adsız bölümün altındaki tıklamanıza gerek yok, istediğiniz adı vermeyin.
+
+76
+00:05:08,280 --> 00:05:11,400
+Örneğin dizüstü bilgisayarım Tamam'ı tıkladığında ona isim vereyim.
+
+77
+00:05:11,400 --> 00:05:13,940
+Bırak gideyim sana temellerini göstereyim.
+
+78
+00:05:13,950 --> 00:05:21,440
+Bu, Python kodunu hücrenin içine yazıp daha sonra çok basit bir örnek olarak çalıştırdığım anlamına gelen bir kod hücresidir. Baskılar
+
+79
+00:05:21,440 --> 00:05:28,070
+merhaba diyebilirim ve sonra da burayı tıklayarak burayı tıklayarak hücreyi çalıştırabilirim ve devam edin ve devam edin
+
+80
+00:05:28,070 --> 00:05:30,690
+ve gösterip göstermek Bana hücrenin altındaki çıktı.
+
+81
+00:05:30,710 --> 00:05:35,150
+Aynı şeyi, bir artı birinin ne olduğunu bilmek isterse, temel olarak herhangi bir Python kodu için de yapabilirsiniz.
+
+82
+00:05:35,450 --> 00:05:41,120
+Burayı çalıştırmak için tıklayın ve çıktıyı bastığımdan beri hücrenin farkında olan çıktıyı
+
+83
+00:05:41,210 --> 00:05:44,980
+gösteriyor, çünkü aslında çıktıyı yazdırmayı belirtmediğimden dolayı gösterilmedi.
+
+84
+00:05:45,050 --> 00:05:46,780
+Çıkış hücresini gösterdi.
+
+85
+00:05:46,910 --> 00:05:50,820
+Dediği gerçekler bir artı yazdırıyor.
+
+86
+00:05:51,170 --> 00:05:53,980
+O halde bu küçük çıkışı göstermez.
+
+87
+00:05:54,140 --> 00:05:54,620
+TAMAM.
+
+88
+00:05:54,800 --> 00:06:00,170
+gelip, yapabileceğiniz bu çalışma hücresini tıklamanız aslında sadece girişi değiştirmek.
+
+89
+00:06:00,170 --> 00:06:01,580
+Dolayısıyla daima buraya
+
+90
+00:06:01,820 --> 00:06:06,290
+Ve o zaman bir string shift girmek olarak koydum.
+
+91
+00:06:06,310 --> 00:06:10,320
+Ve eğer vardiya girersem, o hücrede olanı kullanmaya devam edeceğim.
+
+92
+00:06:10,370 --> 00:06:11,400
+Dolayısıyla bunu aklınızda tutun.
+
+93
+00:06:11,420 --> 00:06:16,370
+Bu, hızlı bir şekilde çalıştırmanızın gerçekten güzel bir yoludur, böylece buraya sürekli gelip
+
+94
+00:06:16,370 --> 00:06:18,060
+satmayı çalıştırmak zorunda kalmazsınız.
+
+95
+00:06:18,200 --> 00:06:21,030
+Başka bir küçük hile alt girdi.
+
+96
+00:06:21,200 --> 00:06:24,940
+Vardiyam ve bunu açarsam, bir sonraki hücreye iner.
+
+97
+00:06:24,980 --> 00:06:30,210
+Ancak alt girdiysem, aslında altına bir hücre ekler.
+
+98
+00:06:30,230 --> 00:06:31,240
+Farkı burada fark edin.
+
+99
+00:06:31,250 --> 00:06:35,240
+Bu ilk hücrede vites değiştirirsem çalışır.
+
+100
+00:06:35,240 --> 00:06:40,340
+Ve n, siparişi ve nasıl çalıştığını göstermek için numarasını değiştirir.
+
+101
+00:06:40,460 --> 00:06:44,930
+O zaman girersem, aslında benim için bir hücre girer.
+
+102
+00:06:44,930 --> 00:06:49,600
+Bu gerçekten güzel bir numara ve daha sonra size egzersizleri tartışırken öğreneceğim.
+
+103
+00:06:50,230 --> 00:06:50,980
+TAMAM.
+
+104
+00:06:51,080 --> 00:06:53,510
+Şimdi bu defteri nasıl kaydedebilirim merak ediyor olabilirsiniz.
+
+105
+00:06:53,510 --> 00:07:00,380
+Ya kontrol yapabilir ya da küçük floppy diske tıklayarak buraya tıklayabilirsiniz aslında otomatik kaydetme özelliği her iki
+
+106
+00:07:00,380 --> 00:07:02,540
+dakikada bir otomatik kaydetme özelliğine sahiptir.
+
+107
+00:07:02,630 --> 00:07:07,980
+Ya da sadece dosya diyebilirsin ve burada bir kaydetme ve kontrol noktası yapabilirsin.
+
+108
+00:07:08,020 --> 00:07:12,530
+Şimdi, bu defteri başka bir şey olarak nasıl indireceğimi merak ediyor olabilirsiniz.
+
+109
+00:07:12,530 --> 00:07:15,470
+Şey gibi indirmek için dosya gidebilirsiniz.
+
+110
+00:07:15,470 --> 00:07:17,780
+Ve burada indirmek için bir sürü seçeneğiniz var.
+
+111
+00:07:17,960 --> 00:07:23,570
+Sadece nokta PI dosyasını istiyorsanız, bir nokta PI olarak indirmeyi söyleyebilirsiniz; bu dizüstü dosyasını
+
+112
+00:07:23,600 --> 00:07:29,810
+bir dosyaya indirecek ve dönüştürerek normal bir Python komut dosyası ve istediğiniz kimliği olarak kullanabilirsiniz.
+
+113
+00:07:30,290 --> 00:07:35,720
+Veya yalnızca HVM Elano'yu istiyorsanız, her T'yi tıklayabilirsiniz. M. ve onu herhangi bir tarayıcının
+
+114
+00:07:35,720 --> 00:07:38,070
+gösterebileceği basit ve basit bir dosyaya aktaracaktır.
+
+115
+00:07:38,100 --> 00:07:39,300
+Yani bir sürü seçeneğiniz var.
+
+116
+00:07:39,320 --> 00:07:41,780
+İçeri girebilir ve kontrol edebilirsiniz.
+
+117
+00:07:41,780 --> 00:07:48,130
+Bilmenizi isterim başka bir şey, örneğin sonsuz döngü çalışırken sahip olduğunuz bir şeydir.
+
+118
+00:07:48,140 --> 00:07:53,330
+Diyelim ki bunun sonsuza kadar koşuşu gibi olduğunu ve çekirdeğini yeniden başlatmak istediğinizi varsayalım.
+
+119
+00:07:53,360 --> 00:07:59,070
+Burada olanın altında bir sayı yerine biraz zum yapacağım ve sonunda düşük bir
+
+120
+00:07:59,070 --> 00:07:59,860
+Asterix göreceksin.
+
+121
+00:07:59,920 --> 00:08:01,550
+Sadece sonsuza dek koşacak.
+
+122
+00:08:01,670 --> 00:08:07,880
+Yapabileceğiniz şey sadece içeri girip çekirdeği söyleyip çekirdeği yeniden başlatmak demek, çekirdeği yeniden başlatmak istiyor musunuz
+
+123
+00:08:07,880 --> 00:08:08,330
+demek.
+
+124
+00:08:08,330 --> 00:08:09,660
+Sen devam et ve yeniden başla.
+
+125
+00:08:09,790 --> 00:08:12,700
+Çekirdek yeniden başlatılsın demektir ve sonra çekirdeğe hazır diyecekler.
+
+126
+00:08:12,710 --> 00:08:17,600
+Temel olarak ne olur bu dizüstü bilgisayar bir çekirdeğe bağlıdır ve bir çekirdek sadece
+
+127
+00:08:17,600 --> 00:08:18,740
+Python'un bir kopyasıdır.
+
+128
+00:08:19,100 --> 00:08:24,560
+bir şey varsa, aslında sadece sonsuz döngüye ya da gerçekten çok uzun süren bir senaryo yazmışsın demektir.
+
+129
+00:08:24,560 --> 00:08:26,300
+Ve Python'un çöktüğü yerde yanlış olan
+
+130
+00:08:26,360 --> 00:08:31,970
+Çekirdeğe gelip her şeyi durdurabilir ve yeniden başlatmayı tıklamak, söz konusu hücrenin kesilmesini
+
+131
+00:08:32,000 --> 00:08:35,230
+istiyorsanız, ancak bazen de çalışmazsa da kesintiye uğrayabilirsiniz.
+
+132
+00:08:35,240 --> 00:08:39,770
+Sürekli çalışan kötü bir while döngüsünü alırsanız, bunu aklında tutun.
+
+133
+00:08:40,100 --> 00:08:41,000
+TAMAM.
+
+134
+00:08:41,390 --> 00:08:45,680
+Sana daha önce söylediğim her şeye yardıma ihtiyacın olursa, her zaman sadece yardıma tıklayabilir
+
+135
+00:08:46,280 --> 00:08:49,050
+ve daha sonra size bir çok kütüphanede yardım verecektir.
+
+136
+00:08:49,070 --> 00:08:53,480
+göndereceğini tıklatmaya yardımcı olan yanı sıra notebook ile birlikte çalışacağız.
+
+137
+00:08:53,480 --> 00:08:56,760
+Sizi sadece notebook'un kendisi hakkında bir bağlantıya
+
+138
+00:08:56,930 --> 00:09:02,090
+Bu dizüstü bilgisayarların Python dizüstü bilgisayarı olarak adlandırıldığını aklınızda bulundurun, ancak Jüpiter Juliet gibi
+
+139
+00:09:02,090 --> 00:09:05,450
+diğer dilleri çalıştırabildiğinden ve Jüpiter defterlerinden oldukları için unutmayın.
+
+140
+00:09:05,450 --> 00:09:12,000
+Bahsetmek istediğim başka bir şey daha önce söylediğimden daha fazla klavye kısayolu olması.
+
+141
+00:09:12,080 --> 00:09:17,540
+Klavye kısayollarını tıklatmaya yardım etmeye gidebilir ve kullanabileceğiniz tüm klavye
+
+142
+00:09:17,810 --> 00:09:19,700
+kısayollarının bir listesini verirsiniz.
+
+143
+00:09:20,420 --> 00:09:20,930
+Tamam.
+
+144
+00:09:20,930 --> 00:09:25,490
+temelleri ve bu dersi tamamladığınız sürece bilmeniz gereken şey.
+
+145
+00:09:25,490 --> 00:09:26,250
+Aslında defterin
+
+146
+00:09:26,330 --> 00:09:31,460
+Belirli bir konuyla daha spesifik olan, yardımınızı burada bulamadığınız herhangi bir sorunuz var.
+
+147
+00:09:31,640 --> 00:09:33,310
+Devam edin ve Kewaunee forumlarında arama yapın.
+
+148
+00:09:33,320 --> 00:09:37,820
+Eğer oradaki veya sahte Q'yı bulamıyorsanız, Q &amp; A forumlarına yeni soruları göndermekten
+
+149
+00:09:37,940 --> 00:09:39,850
+çekinmeyin, size yardım etmekten memnuniyet duyarız.
+
+150
+00:09:40,070 --> 00:09:44,300
+Gerçekten hızlı bu ders boyunca egzersizlerin nasıl göründüğünü göstermek istedim.
+
+151
+00:09:44,300 --> 00:09:48,140
+Örneğin, veri analizi için python kullandığınızı varsayalım.
+
+152
+00:09:48,250 --> 00:09:53,030
+Sen dersleri yaptık PI bölümünde konum ve egzersiz başlamaya hazırsınız.
+
+153
+00:09:53,540 --> 00:09:57,410
+Her egzersiz ile ilişkili çözüm dosyalarına sahip olacak.
+
+154
+00:09:57,410 --> 00:09:59,050
+Çözüm dosyasını önce kontrol etmeyin.
+
+155
+00:09:59,060 --> 00:10:01,100
+Bu egzersiz dosyasını kontrol etmelisiniz.
+
+156
+00:10:01,220 --> 00:10:05,660
+Öyleyse devam edin ve sexercise dosyasını tıklayın, bu bir pop up ve buna benzer bir
+
+157
+00:10:05,660 --> 00:10:06,420
+şey olacak.
+
+158
+00:10:06,800 --> 00:10:10,120
+Ve bu egzersiz dosyasının sizin için bir sorusu olacaktır.
+
+159
+00:10:10,400 --> 00:10:14,740
+Ve sonra, ilerleyebileceğiniz ve bu soruları ve çokça cevaplayabileceğiniz bir hücre.
+
+160
+00:10:14,750 --> 00:10:17,740
+Ayrıca beklenen çıktıyı göstereceğim.
+
+161
+00:10:17,780 --> 00:10:21,050
+Örneğin, burada sıfır dizisi oluşturmak istiyorsunuz.
+
+162
+00:10:21,050 --> 00:10:25,460
+Şimdi muhtemelen bunu nasıl yapacağınızı bilmiyormuşsunuzdur biliyorum fakat unutmayın
+
+163
+00:10:25,520 --> 00:10:32,210
+ki hücrelerde merhaba baskısı gibi şeyler yazmaya başlayın ve bunu çalıştırırsanız çıkışın üzerine yazarsınız.
+
+164
+00:10:32,210 --> 00:10:38,020
+Bunu aklında tutun ve egzersizlere katıldığınızda daha alakalı olacak.
+
+165
+00:10:38,020 --> 00:10:40,580
+Bazılarınız merak ediyor olabilir, bu ne tür bir hücre.
+
+166
+00:10:40,580 --> 00:10:44,490
+Aslında yalnızca metin gösterilir ve bir kod hücresi değildir.
+
+167
+00:10:44,690 --> 00:10:46,780
+Bu bir markdown hücresi olarak bilinir.
+
+168
+00:10:46,790 --> 00:10:53,430
+Eğer devam edersek defterime geri dönersek, sana şimdiye kadar gösterdiğim her şey bir kod hücresi olur.
+
+169
+00:10:53,510 --> 00:10:58,910
+Ancak Jüpiter defterleri hakkında gerçekten harika olan şey, kendiniz için normal markdown
+
+170
+00:10:58,970 --> 00:11:02,540
+metninde notlar yazabilmenizdir; böylece buraya gelip koda bakabilirsiniz.
+
+171
+00:11:02,930 --> 00:11:07,790
+Markdown'a tıklayın ve bunu bir markdown hücresine dönüştürecektir.
+
+172
+00:11:07,910 --> 00:11:14,510
+Ve şimdi hücreyi çalıştırırsam, öğrenmek için gerçekten kullanışlı olan notlar yazmam gereken temel
+
+173
+00:11:14,510 --> 00:11:15,760
+metin olur.
+
+174
+00:11:15,770 --> 00:11:17,770
+Böyle bir şey söyleyebilirsiniz.
+
+175
+00:11:17,900 --> 00:11:21,770
+Dizeleri basmak için yazdırmayı kullanın.
+
+176
+00:11:21,770 --> 00:11:29,330
+Bu küçük notayı kendi başınıza çalıştırın ve sonra devam edin ve matbuları merhaba vb. Yazın. bu aynı zamanda bir markdown formatlamayı desteklemektedir.
+
+177
+00:11:29,330 --> 00:11:33,850
+ve ders boyunca devam ederken tür notlar almanın gerçekten güzel
+
+178
+00:11:33,850 --> 00:11:35,040
+bir yoludur ve
+
+179
+00:11:35,060 --> 00:11:40,580
+Bu durumda, hash etiketlerinin kalın gibi cümleler için nasıl kullanılacağı gibi markdown formatlamaya aşina iseniz. Veya belki birkaç yıldız işareti dudaklarıyla bir taluk yapın.
+
+180
+00:11:40,610 --> 00:11:46,040
+Bu işaretleme hücrelerinde de taşınan bir tür
+
+181
+00:11:46,040 --> 00:11:52,220
+kod biçimlendirmesi için daha fazla madde imi veya girinti.
+
+182
+00:11:52,240 --> 00:11:53,310
+Şimdi işaretli sözdizimi sözlüğüne geçmeyeceğiz,
+
+183
+00:11:53,510 --> 00:11:58,490
+çünkü bütünüyle daha fazla ders olabilir, ancak bu tür bir işaretleme ve lateks bir markdown hücresi olduğunu söyleyecek bir şey görürsem unutmayın.
+
+184
+00:11:58,490 --> 00:12:03,760
+işaretleme hücresine dönüştürecek ve sonra neden kodum çalışmıyor diye merak ederler.
+
+185
+00:12:04,130 --> 00:12:09,290
+Yeni başlayanlara bazen ortak bir hata yapanlar kazara bunları bir
+
+186
+00:12:09,290 --> 00:12:11,550
+Kodunuz hiç vurgulanmazsa, büyük olasılıkla yalnızca işaretleme hücresi kullandığınız anlamına gelir.
+
+187
+00:12:11,630 --> 00:12:17,390
+Bu işaretleme hücresini bir kod hücresine geri dönüştürmek isterseniz, buraya gelin ve
+
+188
+00:12:17,390 --> 00:12:22,640
+kodu seçin, sonra bunu bir shift tuşu ile çalıştırın ve gidebilirsiniz.
+
+189
+00:12:22,640 --> 00:12:26,120
+Tamam o zaman shift enter bir hücrenin çalıştığını ve daha sonra Alt Enter'ın bir hücre çalıştıracağını ve onun altındaki bir hücre çıktığını hatırlıyor musun.
+
+190
+00:12:26,510 --> 00:12:34,250
+Öyleyse devam edin ve alternatifi tıklayın, burada tekrar
+
+191
+00:12:34,940 --> 00:12:44,180
+Alt Alt merkezi ve yeni bir hücre koymak gibi.
+
+192
+00:12:44,180 --> 00:12:44,980
+Şimdi sadece klavyemdeki bir dizgeye girmek istemediğim şeyleri atıfta bulunuyorum.
+
+193
+00:12:45,110 --> 00:12:49,700
+Yani yine bir artı bir vardiya girin, bir artı bir alternatör çalıştırır.
+
+194
+00:12:49,700 --> 00:12:54,900
+Egzersizler için gerçekten faydalı olan altına yeni hücreler koymaya devam ediyor.
+
+195
+00:12:54,900 --> 00:12:59,840
+Eğer buraya geri dönersen bu egzersiz olur.
+
+196
+00:12:59,840 --> 00:13:01,710
+Dikkat edin, bu çıktı dizisi 1 1 1 1'e sahip.
+
+197
+00:13:01,940 --> 00:13:04,850
+Üzerine yazmak istemiyorum.
+
+198
+00:13:04,890 --> 00:13:06,060
+Bu metni tıklatabilir veya
+
+199
+00:13:06,110 --> 00:13:12,020
+hücre işaretini aşağı yazabilir ve bana bir tampon için küçük bir hücre verir, böylece istediğim her şeyi yazdırabilirim.
+
+200
+00:13:12,380 --> 00:13:14,960
+Shift girdi çıktılarını test edin.
+
+201
+00:13:15,140 --> 00:13:17,750
+Tamam.
+
+202
+00:13:17,810 --> 00:13:18,300
+Bütün
+
+203
+00:13:18,410 --> 00:13:21,710
+bunları tamamlamadıysanız endişelenmeyin çünkü egzersizlere katıldığımızda bunları gözden geçireceğiz.
+
+204
+00:13:21,710 --> 00:13:23,840
+Tamam.
+
+205
+00:13:24,440 --> 00:13:25,020
+Temelde Jüpiter not defterleri için bilmeniz gereken tek şey budur.
+
+206
+00:13:25,070 --> 00:13:27,990
+Herhangi bir sorunuz varsa çekinmeden ücretsiz olarak soru sorabilirsiniz.
+
+207
+00:13:28,010 --> 00:13:30,820
+Biliyorsun, sana yardım etmekten memnun olacağım.
+
+208
+00:13:30,820 --> 00:13:32,340
+olun başlayacağını unutmayın.
+
+209
+00:13:32,360 --> 00:13:37,670
+Jüpiter defter sisteminin, komut isteminde veya terminalde nerede olursanız
+
+210
+00:13:37,730 --> 00:13:38,810
+Dizüstü bilgisayarlarınızı bilgisayarınızın
+
+211
+00:13:38,810 --> 00:13:44,330
+başka bir yerinde çalıştırmak veya kaydetmek istiyorsanız, CD kullanarak bir değişiklik dizinine ihtiyacınız olacaktır.
+
+212
+00:13:44,330 --> 00:13:45,500
+Pekâlâ, herkese teşekkürler, bir sonraki konuşmada da göreceğim.
+
+213
+00:13:45,500 --> 00:13:48,440
+&nbsp;

@@ -1,0 +1,459 @@
+1
+00:00:05,220 --> 00:00:08,460
+Witam wszystkich i zapraszam do wykładu w stylu i kolorze.
+
+2
+00:00:08,460 --> 00:00:12,690
+Pokazaliśmy kilka razy, jak kontrolować estetykę postaci i morze. Ale teraz przejdziemy do tego
+
+3
+00:00:12,690 --> 00:00:14,150
+w bardziej formalny sposób.
+
+4
+00:00:14,340 --> 00:00:17,600
+Przejdźmy dalej i przejdź do notatnika Jupiter, aby zacząć.
+
+5
+00:00:18,450 --> 00:00:20,370
+W tej chwili jesteśmy na notebooku Jupiter.
+
+6
+00:00:20,370 --> 00:00:25,140
+Posunąłem się naprzód i zrobiłem zwykłą linię matplotlib importu seaborne i poszedłem do przodu
+
+7
+00:00:25,380 --> 00:00:27,250
+i załadowałem zestaw danych końcówek.
+
+8
+00:00:27,270 --> 00:00:30,120
+Pozwól mi wejść i pokaż, jak możesz ustawić poszczególne style.
+
+9
+00:00:30,360 --> 00:00:40,730
+Na przykład mogę zrobić wykresy z liczbami SNL i powiedzmy kolumnę z seksem w poradach passen, ponieważ moje dane zabijają dane równe
+
+10
+00:00:42,070 --> 00:00:49,890
+napiwki tutaj Mam moje konto w dziale fabularnym ma ustawione argumenty stylu, które pozwalają ci ustawić styl
+
+11
+00:00:49,890 --> 00:00:52,220
+dla reszty twojego działki.
+
+12
+00:00:52,380 --> 00:00:58,650
+I jeśli pójdziemy i zrobimy shift Tampere, aby sprawdzić styl podkreślenia, to zasadniczo przekazujecie parametr stylu
+
+13
+00:00:58,650 --> 00:01:00,650
+i to jest ciąg znaków.
+
+14
+00:01:00,660 --> 00:01:07,060
+Może to być ciemna siatka biała kratka biała lub Tick's pokażemy ci,
+
+15
+00:01:07,080 --> 00:01:15,000
+jak to wygląda, naciskając, a biali pójdą do przodu i wytworzą puste białe tło, jeśli pasiesz tyknięcia.
+
+16
+00:01:15,030 --> 00:01:20,670
+Powinienem powiedzieć, że zasadniczo dostajesz te kleszcze na skraju pudełka.
+
+17
+00:01:20,700 --> 00:01:22,590
+Jest też ciemna siatka,
+
+18
+00:01:25,620 --> 00:01:28,320
+która daje oryginalne tło Ciemnej siatki.
+
+19
+00:01:28,350 --> 00:01:30,660
+A także jest to, co naprawdę lubię.
+
+20
+00:01:30,720 --> 00:01:35,150
+Biała siatka zapewnia zarówno czystość bieli, jak i siatki.
+
+21
+00:01:35,160 --> 00:01:36,720
+Więc nie tracisz tych informacji.
+
+22
+00:01:36,810 --> 00:01:41,430
+Możesz iść do przodu i trochę stylu zestaw wiadomości i zobaczyć, które wolisz lub jak najlepiej.
+
+23
+00:01:41,430 --> 00:01:46,290
+Kolejną rzeczą, którą możesz zrobić, to usunąć kolce.
+
+24
+00:01:46,350 --> 00:01:50,460
+W tej chwili nadal możesz zobaczyć, pozwól mi wejść i ustawić to tak samo jak
+
+25
+00:01:50,460 --> 00:01:52,470
+kleszcze, więc jest jasne, co tu robimy.
+
+26
+00:01:52,470 --> 00:01:57,960
+Mamy więc kręgosłup górny kręgosłup i prawy grzbiet oraz dolny i lewy kręgosłup.
+
+27
+00:01:58,410 --> 00:02:06,960
+Jeśli chcesz iść dalej i usunąć te, możesz po prostu powiedzieć Asinusowi kręgosłup, który usunie górny kręgosłup i
+
+28
+00:02:06,960 --> 00:02:11,930
+prawy grzbiet, jeśli chcesz kontynuować usuwanie dolnego lub lewego grzbietu.
+
+29
+00:02:11,970 --> 00:02:14,230
+Możesz je dodać jako parametry.
+
+30
+00:02:14,290 --> 00:02:21,570
+Zasadniczo prawy górny prawy lewy i dolny domyślnie górny i prawy są prawdą, aby usunąć lewy i dolny lub
+
+31
+00:02:21,570 --> 00:02:22,760
+nie być usunięty.
+
+32
+00:02:22,770 --> 00:02:28,640
+Możesz jednak określić, że chcesz je usunąć, wypowiadając polecenie leftest true, a następnie bottom jest prawdziwe.
+
+33
+00:02:28,670 --> 00:02:31,500
+Spowoduje to usunięcie w zasadzie wszystkich czterech kolców.
+
+34
+00:02:31,590 --> 00:02:35,670
+Jeśli więc szukasz czegoś, co jest jak bardzo przejrzysta i ładnie wyglądająca, intrygująca fabuła,
+
+35
+00:02:36,060 --> 00:02:38,220
+może chcesz ją przedstawić bez żadnych kolców.
+
+36
+00:02:38,220 --> 00:02:43,090
+Osobiście wolę kolce, więc zamierzam je usunąć i zachować te kolce.
+
+37
+00:02:43,500 --> 00:02:46,740
+Porozmawiajmy teraz o rozmiarze i aspekcie.
+
+38
+00:02:47,010 --> 00:02:52,560
+Możesz użyć mapy map, aby powiększyć rozmiar większości bloków
+
+39
+00:02:52,560 --> 00:02:53,460
+Seaborn.
+
+40
+00:02:53,610 --> 00:02:59,310
+Są one po prostu podstawowymi oddzwanianiem do mapy świecącej, a także możesz kontrolować rozmiar
+
+41
+00:02:59,310 --> 00:03:04,080
+i proporcje wykresów siatki seaborn poprzez podanie rozmiaru i aspektu parametrów.
+
+42
+00:03:04,080 --> 00:03:06,730
+Pozwól, że pokażę ci, co przez to rozumiem.
+
+43
+00:03:07,050 --> 00:03:12,960
+Zamierzam iść dalej i zadzwonić do działek liczenia i pamiętać, że ustawiony styl, nawet jeśli
+
+44
+00:03:12,960 --> 00:03:21,450
+usunę go, pozostanie na miejscu, dopóki nie powiem nowego stylu, ale mam zamiar nazwać to odwołać się do tej figury i powiedzieć rozmiar
+
+45
+00:03:21,450 --> 00:03:22,800
+poprawki jest równe.
+
+46
+00:03:23,190 --> 00:03:26,230
+Zamierzamy powiedzieć 12 na 3.
+
+47
+00:03:26,790 --> 00:03:32,700
+Zauważ, że to faktycznie przesłoniło lub jest oddzwanianiem, gdy morze nazywa Matową fabułę lib.
+
+48
+00:03:32,990 --> 00:03:36,030
+Madlib w rzeczywistości ustawi wielkość figur dla działki Seaborn.
+
+49
+00:03:36,060 --> 00:03:42,210
+Możesz więc wykorzystać lub zmapować wiedzę na temat wielkości rysunku i proporcji tutaj
+
+50
+00:03:42,210 --> 00:03:45,240
+w połączeniu z morzem morskim.
+
+51
+00:03:45,270 --> 00:03:48,990
+Teraz przejdźmy do tematu skali i kontekstu.
+
+52
+00:03:48,990 --> 00:03:55,200
+SEABORNE zapewnia wygodny, kontekstowy kontekst podkreślenia, który pozwala na zastąpienie domyślnych parametrów i zmianę skal
+
+53
+00:03:55,200 --> 00:03:59,940
+Funta w zależności od tego, za co faktycznie tworzysz figurę.
+
+54
+00:03:59,940 --> 00:04:04,690
+Załóżmy, że masz zamiar utworzyć tę liczbę nie dla notatnika, ale na plakacie.
+
+55
+00:04:04,860 --> 00:04:15,060
+Możesz śmiało powiedzieć, że Asinus uważa, że podkreślenie kontekstu i kontekstu wymaga kilku parametrów.
+
+56
+00:04:15,190 --> 00:04:16,300
+Weź kontekst.
+
+57
+00:04:16,320 --> 00:04:22,920
+I to będzie ciąg znaków, a także ma skalę czcionki, a parametry kontekstu to rozmowa lub
+
+58
+00:04:22,950 --> 00:04:24,700
+plakat na papierze.
+
+59
+00:04:24,720 --> 00:04:32,520
+Więc jeśli idę i po prostu ustawiam kontekst, kontekst wybacz mi, żebym zauważył, że dostaję o wiele większą
+
+60
+00:04:32,520 --> 00:04:37,020
+figurę, a czcionka jest większa, ponieważ zakłada, że umieszczasz to na
+
+61
+00:04:37,020 --> 00:04:37,890
+plakacie.
+
+62
+00:04:38,010 --> 00:04:42,570
+A jeśli nadal nie jesteś zadowolony z rozmiaru czcionki, możesz
+
+63
+00:04:42,660 --> 00:04:47,840
+dodać to do argumentów skali podkreślenia czcionki do większej liczby może trzech.
+
+64
+00:04:47,850 --> 00:04:50,610
+Jest to trzykrotność rozmiaru domyślnego.
+
+65
+00:04:50,670 --> 00:04:56,130
+I tutaj możesz ustawić kontekst dla tego, co chcesz, aby postać była i zazwyczaj
+
+66
+00:04:56,190 --> 00:04:58,950
+domyślnie będzie to w kontekście notebooka.
+
+67
+00:04:59,050 --> 00:05:06,060
+Możesz więc iść do notebooka i to określa kontekst twoich danych.
+
+68
+00:05:06,060 --> 00:05:06,480
+W porządku.
+
+69
+00:05:06,540 --> 00:05:08,460
+Oto kilka podstawowych zasad.
+
+70
+00:05:08,460 --> 00:05:13,210
+Ostatnią rzeczą, o której chcę mówić, są palety i kolory.
+
+71
+00:05:13,260 --> 00:05:16,800
+Pokazaliśmy wykresy zanim faktycznie określimy parametr barwy.
+
+72
+00:05:16,800 --> 00:05:18,730
+Pozwól mi wejść i pokazać przykład tego.
+
+73
+00:05:18,870 --> 00:05:26,940
+Na przykład, kiedy powiedzieliśmy S. N. s n s Działki Limit być może
+
+74
+00:05:30,840 --> 00:05:37,380
+chcemy zrobić całkowity rachunek w porównaniu do końcówki, a następnie przekazać napiwki, ponieważ dane batalii danych są równe IP.
+
+75
+00:05:37,470 --> 00:05:42,170
+Więc udało nam się wcześniej określić, że coś takiego jak Heugh jest równe sześciu.
+
+76
+00:05:42,720 --> 00:05:46,100
+A potem otrzymujemy te kolory wybrane dla nas na zielono i niebiesko.
+
+77
+00:05:46,500 --> 00:05:52,560
+I widzieliśmy już wcześniej, że możemy rzeczywiście przekazać argumenty Halletta i są pewne ciągi,
+
+78
+00:05:52,560 --> 00:05:58,890
+które możemy wprowadzić, co zasadniczo daje mapę kolorów i widzieliśmy podobne aspekty dla takich rzeczy, jak
+
+79
+00:05:58,890 --> 00:05:59,890
+mapy ciepła.
+
+80
+00:05:59,970 --> 00:06:03,600
+Kiedy wkładam rzeczy takie jak magma lub chłodny ciepły.
+
+81
+00:06:03,900 --> 00:06:06,910
+Teraz możesz się zastanawiać, co tak naprawdę znajdujemy te struny.
+
+82
+00:06:07,070 --> 00:06:11,420
+Cóż, możesz je znaleźć, umieszczając mapę kolorów na żywo.
+
+83
+00:06:11,490 --> 00:06:14,350
+Pozwól, że pokażę Ci, jak to zrobić w Google.
+
+84
+00:06:14,490 --> 00:06:15,050
+Możesz iść naprzód.
+
+85
+00:06:15,060 --> 00:06:17,680
+Otwórz nową kartę i przejdź do Google i sprawdź.
+
+86
+00:06:17,690 --> 00:06:27,210
+Intensywna mapa kolorów działki matowej i przeniesie Cię do jednej z tych stron, a my szukamy strony
+
+87
+00:06:27,210 --> 00:06:29,790
+z dokumentacją map kolorów.
+
+88
+00:06:30,120 --> 00:06:31,940
+I to jest zwykle pierwsze łącze tutaj.
+
+89
+00:06:31,950 --> 00:06:33,820
+Jest przykładowy kod koloru.
+
+90
+00:06:34,140 --> 00:06:40,350
+A jeśli przejdziemy teraz na tę stronę, zobaczymy rzeczywistą skalę kolorów i gradienty, a także nazwę
+
+91
+00:06:40,350 --> 00:06:43,860
+lub nazwę ciągu, którą należy podać na mapie kolorów.
+
+92
+00:06:43,860 --> 00:06:50,130
+Jeśli więc pomniejszymy tutaj, widzimy te cztery kolorowe mapy, są to główne mapy kolorów, ale są też
+
+93
+00:06:50,130 --> 00:06:51,660
+sekwencyjne mapy kolorów.
+
+94
+00:06:51,820 --> 00:06:59,280
+Tak więc sekwencyjne dwukolorowe mapy innego zestawu różniących się kolorami mapują jakościowo różne mapy kolorów, a są to opcje,
+
+95
+00:06:59,400 --> 00:07:02,310
+o ile chodzi o ciągi, które pasują.
+
+96
+00:07:02,310 --> 00:07:09,570
+Powiedzmy na przykład, że chciałem wybrać tę sejsmiczną, rozbieżną mapę kolorów dla odcienia,
+
+97
+00:07:09,570 --> 00:07:17,150
+który właśnie tu przyszedłem i zamiast skoordynować z passen sejsmicznym miejscem, czułem to dobrze.
+
+98
+00:07:17,160 --> 00:07:22,380
+I tutaj widzimy teraz, że dostaję tego rodzaju purpurę i czerwień, które były kolorami tutaj na obu końcach
+
+99
+00:07:22,380 --> 00:07:24,020
+na tej rozbieżnej mapie kolorów.
+
+100
+00:07:24,330 --> 00:07:26,330
+I możesz śmiało grać wokół tych kolorowych map.
+
+101
+00:07:26,330 --> 00:07:27,390
+Jest tu dużo zabawy.
+
+102
+00:07:27,440 --> 00:07:32,380
+Kiedy Seaborn sprawi, że twoja fabuła będzie wyglądać dokładnie tak, jak chcesz.
+
+103
+00:07:32,400 --> 00:07:33,360
+W porządku.
+
+104
+00:07:33,360 --> 00:07:38,070
+Możesz przejrzeć notatkę Jupitera dla stylu i koloru, aby uzyskać więcej informacji i zapoznać się
+
+105
+00:07:38,070 --> 00:07:43,260
+z linkami na tej stronie lub w tej książce z notatkami, która zabierze Cię do oficjalnej dokumentacji, która
+
+106
+00:07:43,530 --> 00:07:48,240
+ma jeszcze więcej informacji o tym, jak naprawdę kontrolować więcej twojej estetyki i twojej postaci.
+
+107
+00:07:48,330 --> 00:07:54,220
+Najważniejsze jednak, aby wiedzieć, że można wyszukiwać te kody paletowe za pomocą map kolorów na
+
+108
+00:07:54,360 --> 00:07:55,660
+żywo map MAP.
+
+109
+00:07:55,770 --> 00:08:02,700
+Możesz zmienić rozmiar czcionki z ustawionym kontekstem kontekstu kontekstu podkreślenia na plakat lub notatnik, a
+
+110
+00:08:03,000 --> 00:08:05,300
+następnie zmienić skalę czcionki.
+
+111
+00:08:05,520 --> 00:08:10,530
+A następnie możesz użyć piquante tej figury z rozmiarem Figury, aby faktycznie zmienić wielkość twoich figurek.
+
+112
+00:08:11,070 --> 00:08:14,770
+Mam nadzieję, że ci się podobało i mam nadzieję, że podobał ci się Seaborn.
+
+113
+00:08:14,820 --> 00:08:18,300
+W następnej kolejności można skorzystać z kilku ćwiczeń morskich.
+
+114
+00:08:18,330 --> 00:08:18,770
+W porządku.
+
+115
+00:08:19,020 --> 00:08:20,520
+Dzięki, a do zobaczenia na następnym wykładzie

@@ -1,0 +1,855 @@
+1
+00:00:06,180 --> 00:00:11,970
+Herkese merhaba ve PI dizilerine hoş geldiniz dersi ve bu ders Python ve daha sonra
+
+2
+00:00:11,970 --> 00:00:16,690
+bazı PI kitaplığı kullanarak daha yüksek bir oran oluşturmanın çeşitli yollarını öğrenecek.
+
+3
+00:00:16,920 --> 00:00:20,460
+Devam edin, başlamak için Jüpiter notasına atlayalım.
+
+4
+00:00:20,490 --> 00:00:20,760
+Tamam.
+
+5
+00:00:20,760 --> 00:00:27,000
+Burada, Jüpiter dizüstesindeyiz dizinde PI kütüphanesi adını kullanacağımız ana yol ve yüksek
+
+6
+00:00:27,030 --> 00:00:32,910
+çözünürlük esasen tek boyutlu vektörler veya iki boyutlu matrisler olarak gelen iki
+
+7
+00:00:32,910 --> 00:00:37,450
+lezzete kavuşuyoruz ancak bunlar her ikisine de diziler denir.
+
+8
+00:00:37,450 --> 00:00:44,020
+listemize bir nesne oluşturacak bir liste gibi Python nesnelerinden nasıl yeni bir umpiring oluşturabileceğimizi gösterelim.
+
+9
+00:00:44,020 --> 00:00:48,730
+Bir ya da iki tane varsa, dışarı çıkıp, gitmeye ve
+
+10
+00:00:48,980 --> 00:00:50,840
+Bir, iki, üç.
+
+11
+00:00:51,210 --> 00:00:54,180
+Ve ben gidersem ve sadece o listeyi görüntülersem.
+
+12
+00:00:54,350 --> 00:00:58,450
+Dikkat edin bir iki üç dışarı çıkıyorum ve sadece bir python listesi.
+
+13
+00:00:58,650 --> 00:01:06,020
+Devam edip pi'yi P olarak söyleyeceğim ve sonra arayıp arayış ayarlayacağım.
+
+14
+00:01:06,290 --> 00:01:10,920
+Ve şimdi bu listeyi bir dizi olarak atayabilirim.
+
+15
+00:01:11,290 --> 00:01:15,900
+Ve liste nesnesinin kapsayıcısı olarak bir dizi döndüğüme dikkat edin.
+
+16
+00:01:15,930 --> 00:01:20,670
+Ve sonra bunu aslında atayabilir ve daha sonra sadece bu diziyi çağırabilirim.
+
+17
+00:01:20,790 --> 00:01:24,930
+Yani bir diziye normal bir Python listesi atayabilirim.
+
+18
+00:01:24,990 --> 00:01:31,110
+İki boyutlu bir dizi veya matris almak istiyorsanız şimdi tek boyutlu bir diziyi geri döndürürüm.
+
+19
+00:01:31,170 --> 00:01:33,390
+Listelerin listesini yayınlayabilirim.
+
+20
+00:01:33,420 --> 00:01:45,180
+Örneğin, alt çizgi matematiklerimin üç listenin bir listesine eşit olduğunu söyleyebilirim, bu yüzden bir iki üç dört beş altı,
+
+21
+00:01:45,180 --> 00:01:52,450
+bu ekstra virgülden ve daha sonra da 7 8 9'dan kurtulun.
+
+22
+00:01:53,220 --> 00:02:03,570
+Bu yüzden listelerin bir listesini geri alıyorum ve bunu bir diziye atarsam, iki boyutlu bir diziyi geri alacağım ve
+
+23
+00:02:03,570 --> 00:02:09,930
+hem çıktı olarak sunulduğuna, hem de kapanışta gösterilen parantezlerin sayısı kadar önemli
+
+24
+00:02:09,930 --> 00:02:14,340
+olduğunun farkına varıyorum. ve bu dizinin açılış uçları.
+
+25
+00:02:14,580 --> 00:02:20,640
+Z dan sözü edilen bu dizinin üç sıra ve üç sütunu olduğunu gösterecek
+
+26
+00:02:20,640 --> 00:02:27,260
+iki köşeli ayrağım var ve normal Python listelerini veya hakem aralığına liste listesini nasıl atayabilirsiniz.
+
+27
+00:02:27,600 --> 00:02:33,030
+Genellikle ancak, muhtemelen dizileri çok daha hızlı ve daha basit hale getirmek için
+
+28
+00:02:33,060 --> 00:02:36,090
+muhtemelen bazı pastanın kendi yerleşik üretim yöntemlerini kullanırsınız.
+
+29
+00:02:36,090 --> 00:02:40,520
+Devam edin ve bunu yapmanın en yaygın yollarından bazılarına geçelim.
+
+30
+00:02:40,560 --> 00:02:46,740
+En yaygın yol muhtemelen arr'ı kullanarak daha yüksek bir oran yaratacaktır. ve bu, Python'un yerleşik
+
+31
+00:02:46,740 --> 00:02:49,930
+aralık işlevine gerçekten benzemektedir.
+
+32
+00:02:49,950 --> 00:02:56,370
+Sen devam edip N'yi söyleyeceksin. P. düzenlemek ve daha sonra pasan bir başlangıç ​​ve durdurmak.
+
+33
+00:02:56,460 --> 00:03:02,490
+Dolayısıyla, duruşa başlamakta olduğunuzu fark ettikten sonra adım büyüklüğü üçüncü bir argümandır ve verilen
+
+34
+00:03:02,490 --> 00:03:04,860
+aralıkta eşit aralıklarla dönen değerleri döndürür.
+
+35
+00:03:04,860 --> 00:03:14,040
+Python'ın dizininde olduğu gibi sıfırdan başlayan dizinlemeyi hatırlarsam 0-10 arasıları söylersem.
+
+36
+00:03:14,070 --> 00:03:16,990
+10'a kadar olanlara kadar gidecek.
+
+37
+00:03:17,430 --> 00:03:20,660
+0'dan 0'a kadar bir dizi alacağım.
+
+38
+00:03:20,760 --> 00:03:24,840
+Bu yüzden 0'dan başlayacağım ve 10'a kadar değil de tüm yoluma devam ediyorum.
+
+39
+00:03:25,020 --> 00:03:29,480
+Böylece 10 basamak geri alıyorum 0 1 2 3 4 5 6.
+
+40
+00:03:29,890 --> 00:03:33,900
+Aslında Python'un kendi aralık işlevi gibi çalışır.
+
+41
+00:03:33,960 --> 00:03:37,990
+Bu yüzden sıfırdan başlayıp Z'den 10'a kadar gitmek istiyorum.
+
+42
+00:03:38,190 --> 00:03:43,010
+Sıfır virgül 11 söylemek zorundayım ve geri döndüğüm şey buydu.
+
+43
+00:03:43,380 --> 00:03:46,930
+Sonunda üçüncü bir argüman adım büyüklüğüne ekleyebilirim.
+
+44
+00:03:46,980 --> 00:03:51,820
+Eğer 0'dan 10'a kadar olan tüm çift sayılar olsaydım, sıfırın 11 olacağını söyleyebilirim.
+
+45
+00:03:51,960 --> 00:03:58,930
+Ve sonra adım adım atlayacak 2 adımlı bir boyutla 2 0 2 4 6 8 10.
+
+46
+00:03:59,070 --> 00:04:05,580
+Bu, bir aralık, bunları kullanarak hızlı bir şekilde bir dizi oluşturmak için en kullanışlı işlevlerden biri
+
+47
+00:04:05,580 --> 00:04:06,590
+olacak anlamına gelir.
+
+48
+00:04:06,960 --> 00:04:12,330
+Belirli türdeki dizileri istiyorsanız, pilot olmayan bir yerde, bunu yapmamıza yardımcı olabilecek başka işlevlerimiz var.
+
+49
+00:04:12,330 --> 00:04:19,970
+Örneğin, tüm sıfırların dizilerini oluşturmak isterseniz, P-doc sıfır diyebiliriz ve tek
+
+50
+00:04:19,970 --> 00:04:22,050
+bir rakam girebilirsiniz.
+
+51
+00:04:22,050 --> 00:04:30,780
+Böylece bir boyutlu bir vektör elde edersiniz ya da N diyebilirsiniz. P. bu sıfırlar ve istediğiniz bir boyutlu
+
+52
+00:04:30,780 --> 00:04:36,840
+bir heceyi geçmek istediğiniz ilk sayının satır sayısını temsil etmesi ve bu tuple'deki
+
+53
+00:04:36,840 --> 00:04:39,220
+ikinci numara sütun sayısını temsil edecektir.
+
+54
+00:04:39,240 --> 00:04:48,770
+Mesela ben üç sütunla sıralara girmek istiyorum, üç misli gelmek için birlik içinde geçiyorum ve üç
+
+55
+00:04:48,770 --> 00:04:53,330
+sütunla Gül'e geri döndüm ve bu parantezlerle belirtiliyor.
+
+56
+00:04:53,360 --> 00:04:59,620
+Pekâlâ, saf olanlar için bir yükseltme istersem, bunu söyleyebilirim.
+
+57
+00:04:59,690 --> 00:05:07,580
+Ve benzer şekilde, tek bir sayı ya da tek boyutlu bir dizi ya da bunların bir
+
+58
+00:05:08,180 --> 00:05:16,370
+birleşiminin iki boyutlu bir matrise atıfta bulunulabilir; bu, bir olan ve gerçekten yararlı dahili işlevdeki sıfırlar,
+
+59
+00:05:16,370 --> 00:05:21,500
+lens alanı ve boşluk, belirli aralıklarla eşit aralıklı sayıları döndürür.
+
+60
+00:05:21,750 --> 00:05:23,960
+Lewan'ı karıştırmamak önemlidir.
+
+61
+00:05:23,990 --> 00:05:31,490
+Düzenleyebileceğiniz bir aralık temelde bir başlangıçtan ve bir duraktan ve belirli bir adım boyutundan tamsayıları
+
+62
+00:05:31,490 --> 00:05:32,600
+döndürdüğünü görebilirsiniz.
+
+63
+00:05:32,720 --> 00:05:37,580
+şey söyleyeceğimi göstermek istediğim puan sayısının üçüncü bir argümanını alacağım
+
+64
+00:05:37,580 --> 00:05:45,140
+ve pas alıyorum ve bir durdurma başlatıyorum ve bir sayı geçeceğim üçüncü bir tartışma var.
+
+65
+00:05:45,140 --> 00:05:50,300
+Lin alanının yapacakları şey aslında, size P Gotland alanı diyebileceğim bir
+
+66
+00:05:50,300 --> 00:06:00,590
+Diyelim ki sıfır başlangıcım ve beş durak var, sıfırdan beşe eşit aralıklarla 10
+
+67
+00:06:00,590 --> 00:06:02,510
+puan almak istiyorum.
+
+68
+00:06:02,510 --> 00:06:09,650
+Üçüncü bir bağımsız değişkeni 10'u iletebilirim ve bu sıfırdan beş'e on eşit aralıklı noktanın
+
+69
+00:06:09,650 --> 00:06:15,490
+bir zamanlar parantez dizisi tarafından kaydedilen bir boyutlu vektörü geri döndürür.
+
+70
+00:06:15,490 --> 00:06:18,140
+Ve bu üçüncü argümanı istediğiniz sayıya değiştirebilirim.
+
+71
+00:06:18,140 --> 00:06:24,140
+Sıfırdan beş'e kadar 100 eşit aralıklı nokta istiyorsanız, bunu sadece geçebilirim ve çok daha
+
+72
+00:06:24,140 --> 00:06:26,470
+büyük bir boyutlu dizi döndürür.
+
+73
+00:06:26,540 --> 00:06:30,800
+Ve akılda tutmak için bunlara benzer şekilde yazdırılana kadar, bir
+
+74
+00:06:31,040 --> 00:06:35,870
+boyutlu olduğunu söyleyebilirim, çünkü burada iki boyutla uğraşırken dizinin önünde yalnızca bir
+
+75
+00:06:36,460 --> 00:06:40,220
+köşeli parantez var demektir iki parantez grubunuz olduğunu göreceksiniz.
+
+76
+00:06:40,220 --> 00:06:42,910
+Açılma veya bitişte biter.
+
+77
+00:06:42,980 --> 00:06:46,140
+Bahsettiğim üç parantezde üç köşeli parantez vb olacaktır. Tamam.
+
+78
+00:06:46,310 --> 00:06:47,120
+İşte o zaman alan.
+
+79
+00:06:47,120 --> 00:06:48,320
+bu argümanı alacak
+
+80
+00:06:48,320 --> 00:06:54,980
+olan dizi sayısını belirleyecektir, ilerleyelim ve pi'yi kullanarak bir kimlik matrisi nasıl oluşturabileceğinizi göstereceğiz.
+
+81
+00:06:54,980 --> 00:07:01,430
+Yine uzayı düzenle lint alanı ile karıştırmayın üçüncü argümanı alacaksınız, çünkü istediğiniz adım büyüklüğü
+
+82
+00:07:01,430 --> 00:07:04,960
+Biz söyleyebiliriz.
+
+83
+00:07:05,360 --> 00:07:08,680
+Ve sonra sadece kimlik matrisinde tek bir basamak pasan.
+
+84
+00:07:09,350 --> 00:07:13,570
+Doğrusal cebir problemleriyle uğraşırken tanıdık değilseniz kullanışlı bir matristir.
+
+85
+00:07:13,580 --> 00:07:17,750
+Ve temelde yalnızca iki boyutlu bir kare matrisi,
+
+86
+00:07:17,900 --> 00:07:23,040
+yani satır sayısı bir sütun sayısı ile aynı ve her
+
+87
+00:07:23,040 --> 00:07:30,320
+şeyin sıfır olduğu köşegenleriniz var demektir ve bunun nedeni de argüman olarak yalnızca tek
+
+88
+00:07:30,320 --> 00:07:36,440
+bir basamağı almasının nedenidir matris çıktı olarak kare olmalı ve P i.
+
+89
+00:07:36,650 --> 00:07:38,340
+Peki şimdi pi hareketi da rasgele sayı dizileri yaratmanın birçok yolu var.
+
+90
+00:07:39,170 --> 00:07:45,320
+Ve bunu ders boyunca sıklıkla kullanacağız, bu yüzden devam edelim ve
+
+91
+00:07:45,380 --> 00:07:49,100
+bunu yapmanın birkaç yolu üzerinde duralım.
+
+92
+00:07:49,100 --> 00:07:49,690
+İleride yapacağın şey, N'i aramaktır. P. rastgele noktalar ve daha sonra yöntemi çalıştırdı.
+
+93
+00:07:50,090 --> 00:07:58,040
+Sekme yaparak, aslında yöntemlerin biraz olduğunu göreceksiniz.
+
+94
+00:07:58,100 --> 00:08:01,520
+Bu yüzden size girip en yaygın olanları göstereceğiz.
+
+95
+00:08:01,580 --> 00:08:05,130
+İlki Ran'ın a ve b olmasıdır.
+
+96
+00:08:05,660 --> 00:08:09,080
+1'e kadar uniform bir dağılımdan rastgele örneklerle dolduracaksınız.
+
+97
+00:08:09,590 --> 00:08:14,570
+Ve bu, içeri girdiğiniz belirli bir diziyi yaratacak ve bunu, 0'dan
+
+98
+00:08:14,630 --> 00:08:19,620
+Ve bu, 0'dan 1'e eşit olarak dağıtılan rasgele sayıların yalnızca sekiz tane tek boyutlu bir
+
+99
+00:08:19,620 --> 00:08:24,950
+sırasını istersem, tek bir basamağı geçirebilirim ve o tek boyutlu bir diziyi geri alacağım anlamına geliyor.
+
+100
+00:08:24,950 --> 00:08:30,840
+Bunun sözü edilen sözlüğe dönüştürülmesini istiyorum.
+
+101
+00:08:31,160 --> 00:08:34,760
+Bir takım halinde geçmek yerine birlikte çalıştığınız önceki işlevlerin aksine.
+
+102
+00:08:35,030 --> 00:08:38,930
+Aslında boyutları ayrı argümanlar olarak aktaracağım.
+
+103
+00:08:38,950 --> 00:08:42,820
+Dolayısıyla, beşli beş rasgele matris matrisi
+
+104
+00:08:42,860 --> 00:08:49,130
+istersem, sadece geçip, rastgele kütüphanelerle çalışmak yerine 5'e çıkarsınız demektir.
+
+105
+00:08:49,130 --> 00:08:52,040
+Pekala, standart normal dağılımdan bir numune veya
+
+106
+00:08:52,400 --> 00:08:58,490
+çok sayıda numune veya Ranz kullanmak yerine Gauss dağılımı yapmak istersek rand n kullanabilirsiniz.
+
+107
+00:08:58,490 --> 00:09:02,580
+Ve P, rasgele düşünce Ran'ın n olduğunu düşündüğüm anlamına gelebilir
+
+108
+00:09:03,030 --> 00:09:10,790
+ve bu, sayıları 0'dan 1'e düzgün olmayan bir dağılımdan değil, sıfıra yakın bir standart normal dağılım merkezinden döndürecektir.
+
+109
+00:09:10,790 --> 00:09:16,750
+Ve bu devam etmem ve iki bitiş yapabilmem ve standart bir normal dağılımdan iki rastgele sayı almam anlamına geliyor.
+
+110
+00:09:17,060 --> 00:09:25,130
+Sonradan bunları planlamanın bu ders kapsamında değil, aynı zamanda veri görselleştirmesini de göreceğiz.
+
+111
+00:09:25,670 --> 00:09:30,140
+Devam edelim size güzel bir normal dağılım eğrisi veya bir Gauss dağılım eğrisi göstereceğiz.
+
+112
+00:09:30,560 --> 00:09:35,200
+Yine iki boyutlu olmasını istersem, iki boyutlu geçebilirim.
+
+113
+00:09:35,950 --> 00:09:40,580
+Dördüncü bir dört için dört'ün dört geldiğini söylüyorum.
+
+114
+00:09:40,670 --> 00:09:43,540
+Ve hayır ben bir tuple geçmiyorum burada
+
+115
+00:09:43,970 --> 00:09:49,070
+her defasında ayrı bir argüman olarak bahsetmek istiyorum ve iki köşeli parantez
+
+116
+00:09:49,070 --> 00:09:57,020
+kümesiyle çıktı olarak iki boyutlu bir matriste görebildiğimiz gibi, hakkında bilgi sahibi olmak Rand int'dir ve düşükten yüksek bir
+
+117
+00:09:57,200 --> 00:10:02,990
+sayıya rastgele tam sayı döndürür veya devam edin ve size bunun için neler yapabileceğimizi gösterin.
+
+118
+00:10:03,000 --> 00:10:06,140
+Sen devam edip o rastgele adam Rand'ı söyleyeceksin. A. pasanasın
+
+119
+00:10:06,140 --> 00:10:12,310
+Ben, o zaman yüksekliği düşük, o zaman gerçek boyutunu istediğiniz vardiya sekmesine gidiyorum.
+
+120
+00:10:12,360 --> 00:10:17,810
+tamsayı elde edersiniz ve düşük olanı kapsayıcı olur.
+
+121
+00:10:17,810 --> 00:10:26,870
+Örneğin, yalnızca 1 ila 100'ü söylerseniz, 1 ile 100 arasında rasgele bir
+
+122
+00:10:26,930 --> 00:10:27,700
+Ve yüksek x özel anlamı seçme şansı vardır ancak 100 değildir.
+
+123
+00:10:27,750 --> 00:10:34,570
+Ve belirli sayıda rastgele tamsayı istiyorsanız üçüncül argüman olarak aktarabilirsiniz.
+
+124
+00:10:35,540 --> 00:10:40,410
+Yani 1 ile 100 arasında rasgele tam sayılar.
+
+125
+00:10:40,400 --> 00:10:43,770
+Ama 100 dahil değil.
+
+126
+00:10:43,790 --> 00:10:45,160
+Ben sadece 10
+
+127
+00:10:45,440 --> 00:10:50,930
+geçebilirim ve üst sınırda özel olarak düşük 10 rastgele tam sayı vardır.
+
+128
+00:10:50,930 --> 00:10:51,920
+TAMAM.
+
+129
+00:10:52,200 --> 00:10:52,820
+Şimdi bunu yapabilmek için bir dizinin birkaç kullanışlı öznitelik ve yöntemini tartışalım.
+
+130
+00:10:53,100 --> 00:10:59,350
+Devam edeceğim ve içeri girip temizleyen iki yeni dizi nesnesi yaratıp bu hücreleri temizleyeceğim.
+
+131
+00:10:59,370 --> 00:11:05,450
+Tamam.
+
+132
+00:11:07,830 --> 00:11:08,630
+Bir r r değişkeni söyleyeceğim ve bunun saf aralık 25'e eşit olduğunu söyleyeceğim.
+
+133
+00:11:08,630 --> 00:11:16,330
+Bu durumda A-R'nin neye benzediğini kontrol edersem, burada sıfır boyutlu bir dizi sıfıra kadar 24 olur.
+
+134
+00:11:16,380 --> 00:11:22,220
+Sonra Rand'ın gerçekten rasgele olduğunu ve Rand olacağını söyleyeceğim.
+
+135
+00:11:22,500 --> 00:11:30,660
+Orada bir D koymalıyım.
+
+136
+00:11:31,000 --> 00:11:32,790
+0'dan 50'ye kadar olan rasgele sayılar.
+
+137
+00:11:32,960 --> 00:11:35,980
+Bu yüzden bunlardan 10'u almadım.
+
+138
+00:11:36,390 --> 00:11:37,930
+Cheka ya da
+
+139
+00:11:38,210 --> 00:11:44,040
+koştuysam, buna benzer görünüyor çünkü rastgele seçilmiş olduğundan farklı değerler alabilirsin.
+
+140
+00:11:44,030 --> 00:11:44,690
+Bunların sadece 10 tamsayı olması gerekir.
+
+141
+00:11:44,690 --> 00:11:47,890
+Tamam.
+
+142
+00:11:48,020 --> 00:11:48,780
+Bir dizide kullanabileceğiniz en kullanışlı yöntemlerden biri reshape yöntemidir.
+
+143
+00:11:48,840 --> 00:11:53,130
+Ve bu, yeni bir şekle sahipse aynı verileri içeren bir dizi döndürür.
+
+144
+00:11:53,300 --> 00:11:57,770
+istediğim yeni boyutları ilerlettiğim anlamına geliyor.
+
+145
+00:11:57,770 --> 00:12:07,930
+Bu, Mirei noktalarını arayabileceğim ve daha sonra yeniden şekillendirme yöntemini yeniden şekillendirdiğim ve
+
+146
+00:12:07,940 --> 00:12:08,940
+Örneğin, bu dizi üyesini yeniden şekillendirmek istersem, A R R, sıfırdan 24'e kadar yirmi beş haneden oluşur.
+
+147
+00:12:08,930 --> 00:12:16,940
+Reshape kullanarak 5 x 5 diziyle yeniden şekillendirebilir ve
+
+148
+00:12:16,940 --> 00:12:24,350
+daha sonra istediğiniz sayı ve sütun sayısını iletebilirsiniz.
+
+149
+00:12:24,360 --> 00:12:25,780
+Matrisi tamamen dolduramazsanız bir hata alacağınızı unutmayın.
+
+150
+00:12:25,790 --> 00:12:30,630
+Örneğin, örneğin 5 x 10 istesem bunu yapmak için 50 element gerekir.
+
+151
+00:12:30,620 --> 00:12:35,940
+Ve yeni dizinin toplam boyutu değiştirilmemesi gerektiği için burada bir hata bulacağım.
+
+152
+00:12:36,200 --> 00:12:40,820
+olması ve böylece beş'in beşi eşit olmasıdır. 25.
+
+153
+00:12:40,940 --> 00:12:48,990
+Yalnızca sahip olduğunuz rakamları veya bunu kontrol etmek için güzel bir basit yönteminiz olan
+
+154
+00:12:48,990 --> 00:12:56,310
+elemanları kullanarak doldurmanız gerektiği anlamı, sıra sayısıyla sütunların sayısının gerçek öğe sayısına eşit
+
+155
+00:12:56,370 --> 00:12:59,330
+Bu dizide 25 öğe bulunduğumu biliyorum.
+
+156
+00:12:59,450 --> 00:13:02,860
+Tamam, gidelim ve maksimum veya minimum değerleri bulmak için veya
+
+157
+00:13:02,900 --> 00:13:08,780
+yerlerini bulmak için birkaç daha kullanışlı yöntem gösterelim ve gelecek derslerde daha sonra daha fazla işlem yapacağız.
+
+158
+00:13:09,200 --> 00:13:13,670
+İşte sizin için bilmeniz gereken bazı yararlı bilgiler.
+
+159
+00:13:13,830 --> 00:13:15,880
+Bu yüzden devam edin ve rasgele dizimizi kontrol edin.
+
+160
+00:13:15,960 --> 00:13:17,880
+Bir kere daha.
+
+161
+00:13:17,880 --> 00:13:18,980
+Yine sayılarınız farklı olabilir ancak bu egzersizi önemsemek için.
+
+162
+00:13:18,990 --> 00:13:24,030
+Dizinizdeki maksimum değeri bulmak istiyorsanız.
+
+163
+00:13:24,120 --> 00:13:27,400
+Max yöntemini arayabilir ve bu dizinin maksimum değerini döndürür.
+
+164
+00:13:27,440 --> 00:13:33,170
+Benzer şekilde dizinin minimum değerini elde etmek isterseniz.
+
+165
+00:13:33,870 --> 00:13:37,340
+Min yöntemini arayabilirsin.
+
+166
+00:13:37,350 --> 00:13:40,240
+Diziye bir göz atalım.
+
+167
+00:13:40,280 --> 00:13:41,710
+Bir kez
+
+168
+00:13:41,730 --> 00:13:48,980
+daha max veya min değerlerini belirterek maks veya min değerlerinin yerini belirleyebiliriz.
+
+169
+00:13:49,080 --> 00:13:50,490
+Aslında, hangi indeks
+
+170
+00:13:50,580 --> 00:13:59,660
+değerinin 49'da bu Max olduğu biliniyorsa demektir ki, Ranh Argive Max ve bunun maksimum değerin dizin yerini döndürebileceğini söyleyebilirim.
+
+171
+00:13:59,680 --> 00:14:04,750
+Bu yüzden 49'un indeks 3'te olduğunu fark ettim.
+
+172
+00:14:04,980 --> 00:14:08,270
+Yani 0 1 2 3.
+
+173
+00:14:08,450 --> 00:14:11,310
+Orada kırk dokuz var.
+
+174
+00:14:11,420 --> 00:14:12,930
+Ve yine aynı
+
+175
+00:14:13,100 --> 00:14:18,470
+şeyi erkekler diyebileceğiniz dakikalık değerle yapabilir ve en düşük değerin dizinini döndürecektir.
+
+176
+00:14:18,470 --> 00:14:20,990
+Yani 6 indeks konumu minimum değer ve minimum değer üç idi.
+
+177
+00:14:21,000 --> 00:14:25,760
+Bu durumda.
+
+178
+00:14:25,760 --> 00:14:26,940
+TAMAM.
+
+179
+00:14:27,500 --> 00:14:28,130
+Ve hızlı bir şekilde birkaç daha kullanışlı yöntem ve nitelik.
+
+180
+00:14:28,400 --> 00:14:31,820
+Şimdiye dek vektörün şekli
+
+181
+00:14:31,970 --> 00:14:39,050
+anlamaya çalışmak isterseniz şekli düşük geri dönüş şeklinde şekillendirirsiniz.
+
+182
+00:14:39,060 --> 00:14:39,980
+Dikkat edin burada 25 Khama alıyorum ve bu, o dizinin sadece tek boyutlu bir vektör olduğuna işaret ediyor.
+
+183
+00:14:39,980 --> 00:14:47,910
+Devam edersem onu ​​yeniden şekillendirirsem.
+
+184
+00:14:49,080 --> 00:14:50,960
+Bu yüzden beş beşliğe tekrar şekillendirdiğimi söyleyeceğim ve bunu R'ye eşit olarak ayarlayacağım. Ya da r r.
+
+185
+00:14:51,140 --> 00:15:01,060
+Dikkat edin, iki boyutlu bir matriste nokta şeklini yazıyorum.
+
+186
+00:15:01,160 --> 00:15:02,190
+Dikkat et, parantez koymuyorum.
+
+187
+00:15:02,180 --> 00:15:07,340
+Ben sadece bu özelliğini arıyorum.
+
+188
+00:15:07,350 --> 00:15:08,970
+Şimdi beş beş olduğunu bildiriyor.
+
+189
+00:15:09,000 --> 00:15:11,350
+Şimdi Mitchell şu an ve göstermek
+
+190
+00:15:11,390 --> 00:15:14,360
+istediğim son yararlı özellik bu dizideki veri türü.
+
+191
+00:15:14,450 --> 00:15:20,810
+Ne tür bir veri türüne sahip olduğunuzu merak ediyorsanız, yalnızca bir r r ve bir öznitelik olarak yazabilirsiniz. D tipi, yolunuzdaki gerçek
+
+192
+00:15:20,820 --> 00:15:21,690
+veri türünü döndürecektir.
+
+193
+00:15:21,750 --> 00:15:28,410
+Bu durumda 32 bit tam sayı.
+
+194
+00:15:28,500 --> 00:15:32,700
+TAMAM.
+
+195
+00:15:32,720 --> 00:15:35,470
+Bittiğimiz her şeyin yalnızca hızlı bir incelemesi.
+
+196
+00:15:35,510 --> 00:15:36,000
+Size daha yüksek bir
+
+197
+00:15:36,200 --> 00:15:38,660
+diziye bir liste atayarak ya da arr gibi bir hakem dizileri için yerleşik işlevlerden birini kullanarak bir imparatorluk yükseltmeyi nasıl oluşturacağınızı gösterdik. sıfırlar ve olanlar Lyn'in
+
+198
+00:15:38,720 --> 00:15:45,390
+alanı ve ben ve N olarak adlandırdığınız rastgele nesil yöntemleri. P. Bu onları çalıştırdı ve sonra Rand koştu ve koştu
+
+199
+00:15:45,380 --> 00:15:52,680
+ve diğer rastgele yöntemlerden bazıları.
+
+200
+00:15:52,670 --> 00:15:59,840
+gibi yöntem veya işlev almak istediğini söylemek .
+
+201
+00:15:59,850 --> 00:16:01,690
+Pekala ve son bir ipucu NPE'de rasgele
+
+202
+00:16:01,730 --> 00:16:06,920
+yazmamı istemiyorsanız sana göstermek istediğim şey Rand'ın yapabileceği şey olup olmadığını PI'dan rasgele içe aktarma ve daha sonra ne
+
+203
+00:16:06,940 --> 00:16:16,200
+Rand I N C'yi almak istiyorsan, devam edebilirsin ve bunu yapabilirsin.
+
+204
+00:16:16,190 --> 00:16:17,440
+Ve sonra rasgele düşünce düşüncesini söyleyerek, ben sadece Rand'ın ben diyebilirim demiştim. A. ve kendim
+
+205
+00:16:17,450 --> 00:16:20,900
+için bir referans veriyorum.
+
+206
+00:16:20,900 --> 00:16:27,480
+Işte gidiyorsun
+
+207
+00:16:27,470 --> 00:16:30,020
+TAMAM.
+
+208
+00:16:30,020 --> 00:16:31,110
+bir nota başvurmak isterseniz dizüstü bilgisayarınızın tüm notaları size ait olduğunu unutmayın.
+
+209
+00:16:31,190 --> 00:16:32,130
+Bu koddan herhangi birine veya bu ders boyunca gerçekten konuştuğunuz herhangi
+
+210
+00:16:32,250 --> 00:16:36,650
+Önümüzdeki aşamada umpire yarışı için indeksleme ve
+
+211
+00:16:36,680 --> 00:16:40,760
+seçim ile hakemlerin operasyonları hakkında bilgi edineceğiz.
+
+212
+00:16:40,760 --> 00:16:45,860
+Herkese teşekkürler, bir sonraki derside görüşürüz.
+
+213
+00:16:45,870 --> 00:16:47,270
+&nbsp;
+
+214
+00:16:47,270 --> 00:16:49,310
+&nbsp;

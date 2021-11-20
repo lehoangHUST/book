@@ -1,0 +1,947 @@
+1
+00:00:05,370 --> 00:00:10,440
+Herkese merhaba ve kloroplast haritasının konferansına hoş geldiniz deyin ve bu dersin amacı
+
+2
+00:00:10,440 --> 00:00:15,870
+Python'un nasıl kullanılacağı ve kısmen mercan haritaları yaratmaktır. Bu mercan haritaları, ya küresel ölçekte
+
+3
+00:00:15,870 --> 00:00:19,080
+ya da ulus çapında bir ölçekte bilgi toplamamızı sağlayacaktır.
+
+4
+00:00:19,080 --> 00:00:22,170
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+5
+00:00:22,560 --> 00:00:22,830
+Tamam.
+
+6
+00:00:22,830 --> 00:00:27,360
+Burada Jüpiter notunda ama Supernaut kitaplarında Kuro plus haritaları var.
+
+7
+00:00:27,360 --> 00:00:33,600
+Ve coğrafi çizim klasörü altında veri görselleştirme için Python altında bulabilirsiniz ve V
+
+8
+00:00:33,600 --> 00:00:38,480
+veri erişmek için not defteri veya bu kitabın içinde çalışmak gerekir.
+
+9
+00:00:38,490 --> 00:00:43,800
+Burada referans olarak yazacağımız tüm kodlarla tekrar çalışacağız.
+
+10
+00:00:43,890 --> 00:00:49,920
+Ayrıca açıklamaları için referanslar olduğunu bilmeli ve arsalar ilk başta özellikle plotless
+
+11
+00:00:49,920 --> 00:00:53,410
+için kullanılan sözdizimi için gerçekten zor olabilir.
+
+12
+00:00:53,610 --> 00:00:57,070
+Dolayısıyla, her zaman bu not defterini şeylere referans olarak almak istersiniz.
+
+13
+00:00:57,250 --> 00:01:01,720
+Ve biz sadece gidelim ve bu defterdeki kodu açıklamak için bazı basit
+
+14
+00:01:01,740 --> 00:01:08,620
+örneklere bakalım, önce ülke çapında ölçekli araziler kullandıktan sonra bazı gerçek verilerin ülke ölçeğinde daha büyük bir arsa
+
+15
+00:01:08,630 --> 00:01:13,510
+yaptığını göreceğiz ve sonra, ilerlemeye devam edeceğiz ve dünya ölçeğini göreceğiz, böylece aslında
+
+16
+00:01:13,520 --> 00:01:14,960
+iki ülkeye gidebiliriz.
+
+17
+00:01:14,970 --> 00:01:18,100
+Tamam, başlayalım ve yeni bir bölüm defteri başlayalım.
+
+18
+00:01:18,300 --> 00:01:22,190
+Pekâlâ, Jupiter not defterindeyim ve ilerleyip bazı ithalat yapmaya başlayacağım.
+
+19
+00:01:22,200 --> 00:01:28,730
+İlk önce hafifçe nokta arsa Ali'yi ithal edeceğim.
+
+20
+00:01:29,310 --> 00:01:38,520
+Ve sonra bütün bunları off line yapmak ya da off line ithalatını indirmek için alt çizgi Legia'yı
+
+21
+00:01:39,720 --> 00:01:41,610
+kaydetmek için söyleyeceğim.
+
+22
+00:01:41,640 --> 00:01:44,250
+Ve ben sadece otomatik tamamlama için sekmeli kullanıyorum.
+
+23
+00:01:44,250 --> 00:01:51,000
+Bu yüzden yazıp yazdım ve daha sonra otomatik kapanış defter modunda vurgulanacak ve arsalar ve
+
+24
+00:01:51,270 --> 00:01:52,180
+çizim olacak.
+
+25
+00:01:52,730 --> 00:01:57,210
+Dolayısıyla işlevlerin tamamlanması için, isterseniz dizüstü bilgisayardan bu kodu kopyalayıp yapıştırabilirsiniz.
+
+26
+00:01:57,810 --> 00:02:07,410
+Ve sonra da alt çizgi defteri modu ve passen bağlı olarak adlandırmak için gidiyorum gerçek eşittir.
+
+27
+00:02:07,830 --> 00:02:13,020
+Ve Jüpiter defterindeki her şeyi görebildiğimizi ve diğer seçeneklerin kısmen kapalı olmasını sağlamak
+
+28
+00:02:13,320 --> 00:02:16,130
+için ders not defterinizde bir bağlantı var.
+
+29
+00:02:16,580 --> 00:02:17,420
+TAMAM.
+
+30
+00:02:17,460 --> 00:02:20,950
+Yine de arsa Lee'nin haritalamasının alışması biraz zor olabilir.
+
+31
+00:02:21,000 --> 00:02:26,160
+Dolayısıyla, bir hile sayfasının bir kopyasının yanı sıra Jupiter defterinde buna bir bağlantı var ve böyle bir
+
+32
+00:02:26,160 --> 00:02:26,920
+şey görünüyor.
+
+33
+00:02:26,970 --> 00:02:29,980
+Böylece temel grafikleri kısmen görebilirsiniz.
+
+34
+00:02:29,980 --> 00:02:35,050
+Ve aşağı inerseniz, daha sonra gerçek haritaları ve cheat sayfalarını burada görebilirsiniz.
+
+35
+00:02:35,130 --> 00:02:37,860
+Bu, takip edeceğimiz bir formattır.
+
+36
+00:02:37,860 --> 00:02:41,690
+Hadi devam edelim ve Jüpiter defterine geri dönelim.
+
+37
+00:02:41,730 --> 00:02:44,960
+Yapmamız gereken ilk şey, veri sözlüğümüzü oluşturmaya başlamaktır.
+
+38
+00:02:45,030 --> 00:02:48,740
+Ve bunu yapmanın en kolay yolu DCT yöntemini kullanmaktır.
+
+39
+00:02:48,900 --> 00:02:52,600
+Yani aslında ICC ile bir sözlük atabilirsiniz.
+
+40
+00:02:52,740 --> 00:02:58,050
+yöntemi kullanacağız ve yapacağımız ilk şey verilerimizle başlamak.
+
+41
+00:02:58,050 --> 00:03:02,130
+Listeyi bir sözlüğe dökmek için bu
+
+42
+00:03:02,130 --> 00:03:09,800
+Yani verileriniz var ve bir sözlük olacak ve anahtar türünü
+
+43
+00:03:09,850 --> 00:03:11,730
+Coro Plath yapacağız.
+
+44
+00:03:14,310 --> 00:03:20,190
+Ve sonra yerleri olacak ve konumlar devletlerin bir listesidir ve durumumuzda
+
+45
+00:03:20,190 --> 00:03:24,120
+devletlerin kısaltmasıdır, çünkü bunu yalnızca ülke ölçeğinde yapıyoruz.
+
+46
+00:03:24,240 --> 00:03:32,040
+Bu yüzden gidin ve Asie CA ve NY deyin, devam edin ve orada istediğiniz herhangi bir posta kodu kısaltmasını koyun.
+
+47
+00:03:33,600 --> 00:03:36,000
+Sonra konum modu söyleyeceğiz.
+
+48
+00:03:36,570 --> 00:03:43,920
+ve ilerlemeye devam edebilir ve Jüpiter defterindeki bağlantıları kontrol edebilirsiniz. sağlayabileceğiniz çeşitli konum modları belgelerini edinin.
+
+49
+00:03:44,010 --> 00:03:49,710
+Ve bu durumda ABD nakit Devletler koyacağız ve bu, Birleşik Devletler düzeyinde
+
+50
+00:03:49,710 --> 00:03:55,020
+bunu yaptığımızı ve orada çeşitli konum modu yaptığımızın Whitely tarafından bilinmesini sağlar
+
+51
+00:03:56,760 --> 00:04:05,790
+Daha sonra, renk ölçeğini yalnızca bir renk ölçeğindeki Portland'a eşit olacak şekilde ayarlayacağız ve ayrıca yeşiller veya gri
+
+52
+00:04:06,120 --> 00:04:09,670
+gibi başka şeyler de yapabilir ve yürüteceğiz.
+
+53
+00:04:09,750 --> 00:04:12,500
+Bunu karıştırıp daha sonra nasıl çalıştığını göreceğiz.
+
+54
+00:04:12,560 --> 00:04:22,530
+Ben sadece Portland'ı seçeceğim ve daha sonra devam edeceğiz ve anahtar metinde ileteceğiz ve metinlerin
+
+55
+00:04:22,530 --> 00:04:26,600
+her birinin üzerinde gezinenlerin bir listesi.
+
+56
+00:04:26,670 --> 00:04:28,990
+Bu yüzden basit bazı şeyler burada yapacağım.
+
+57
+00:04:29,280 --> 00:04:36,570
+Metin girip bir metin 2 ve daha sonra metin 3 olarak söyleyeceğiz ve
+
+58
+00:04:39,300 --> 00:04:44,520
+sonra Z renk ölçeğinde gösterilecek gerçek değerlerinize eşit olacak.
+
+59
+00:04:44,550 --> 00:04:52,870
+Devam edelim ve sadece bu ikisini bir iki ve üç ayarlayalım ve onları şamandıra olarak koyacağız.
+
+60
+00:04:53,800 --> 00:04:57,660
+Ve son olarak bir renk çubuğu argüman pasan.
+
+61
+00:04:57,660 --> 00:05:10,050
+Ve aslında anahtar başlıklı bir sözlüktür ve o zaman renk çubuğu başlığının ne olmasını istediğinizi
+
+62
+00:05:10,160 --> 00:05:11,940
+kimse iletemezsiniz.
+
+63
+00:05:11,940 --> 00:05:18,620
+Bu yüzden çok genel bir renk çubuğu başlığı burada söylerim.
+
+64
+00:05:18,620 --> 00:05:21,600
+Doğru yani, verilerin nasıl göründüğü ve biz sadece verilere bakıyoruz.
+
+65
+00:05:21,680 --> 00:05:27,140
+Her ne sebeple olursa olsun, kısmen dokümantasyonun sadece sözlük olarak inşa etmek yerine
+
+66
+00:05:27,130 --> 00:05:30,980
+bu tür bir sözlük dökümcülüğünü kullanmayı sevdiği bir sözlük olacak.
+
+67
+00:05:31,040 --> 00:05:36,710
+Bu tür yazdığınız zamandan ve tüm bu tekliflerden tasarruf edersiniz ve şimdi tüm bu dizeleri anahtarlar
+
+68
+00:05:36,710 --> 00:05:37,590
+için yapmak zorundayız.
+
+69
+00:05:37,690 --> 00:05:42,380
+Dolayısıyla ilerleyip belgelerle aynı hizada duracağım ve bu tür bir gösterimi kullanacağım.
+
+70
+00:05:42,410 --> 00:05:51,950
+Sonraki yapmak istediğimiz, bir mizanpaj nesnesi veya değişken oluşturmak ve mizanp önde olacak ve iç içe geçmiş
+
+71
+00:05:51,940 --> 00:05:53,530
+bir sözlük olacak.
+
+72
+00:05:53,540 --> 00:05:59,350
+Ve biz sadece G.'yi geçtik. O. A. olarak belirledik.
+
+73
+00:06:02,260 --> 00:06:05,240
+eşittir ve sonra kapsamı ABD
+
+74
+00:06:06,800 --> 00:06:09,660
+Ve sonra gidip kullanacağımız şey gidip geldiğidir.
+
+75
+00:06:09,680 --> 00:06:17,300
+Ve bunu yapmak için başka bir şey ithal etmek gerekiyor yapacağız ithalat söylemek
+
+76
+00:06:17,540 --> 00:06:23,270
+zorunda kalacağız Clottey dot graph RBJ s gibi alt çizgi.
+
+77
+00:06:23,600 --> 00:06:29,980
+Ve ben devam etmeye başlayacağım, bunu diğer ithalatlarla üst sıralara koyup çalıştırayım.
+
+78
+00:06:30,520 --> 00:06:31,980
+Tamam, bu önemli değil.
+
+79
+00:06:32,000 --> 00:06:34,430
+Rakam çıkar ve veri
+
+80
+00:06:38,620 --> 00:06:39,740
+ayarla diyebilirim.
+
+81
+00:06:39,860 --> 00:06:47,030
+Ve bu garip bir bölüm parantez içinde eşit olduğundan, garip türdeki liste verilerinin bir
+
+82
+00:06:47,020 --> 00:06:52,610
+parçasıdır, çünkü zaten bir sözlüktir, ancak bir listenin içinde bir sözlük
+
+83
+00:06:52,610 --> 00:06:59,170
+olarak geçiriyorsunuz ve ardından sadece söylemek istediğiniz şeyi söylüyorsunuz. dışarıda bırakılacak kadar eşit olacak.
+
+84
+00:06:59,310 --> 00:07:04,430
+Teknik olarak gerçekte veri eşitliklerini ve laya eşitliklerini gereksiz buluyoruz, sadece verileri aktarabiliriz
+
+85
+00:07:04,460 --> 00:07:05,180
+ve düzenleyebiliriz.
+
+86
+00:07:05,210 --> 00:07:13,130
+Hadi başlayalım ve sadece bu şekilde tutalım ve her şeyi Koro haritasına eşit
+
+87
+00:07:13,120 --> 00:07:17,750
+ayarlayacağız ve o zaman Curle matematesini çizdiğimi söylüyoruz.
+
+88
+00:07:18,300 --> 00:07:26,990
+ve burada, burada seçilen Portland renk grafiği ile vurgulanan Arizona California ve New York var.
+
+89
+00:07:27,010 --> 00:07:29,240
+Ve burada arsa görmeliyiz
+
+90
+00:07:29,300 --> 00:07:33,740
+Artık dizüstü bilgisayarımızda gösterilen önceden tanımlı dizelerden birine geçebiliriz.
+
+91
+00:07:33,760 --> 00:07:38,770
+Örneğin dışarı çıkıp jet'e dönüştürebilirsiniz.
+
+92
+00:07:38,930 --> 00:07:40,940
+Orada hangi değişikliklerin gerçekleştiğini görün.
+
+93
+00:07:40,970 --> 00:07:42,410
+Her şeyi tekrar çalıştır.
+
+94
+00:07:42,400 --> 00:07:48,170
+Ve şimdi jet renk şemamız var ya da yeşil renkler gibi
+
+95
+00:07:48,170 --> 00:07:50,180
+başka şeyler de seçebiliriz.
+
+96
+00:07:51,050 --> 00:07:58,460
+her şeyi yıkmamıza izin veriyorsa, biçimlendirme biraz kafa karıştırıcı olabilir ve gerçekten zaman alır.
+
+97
+00:07:58,460 --> 00:08:04,340
+Çalıştırın ve her şey yeşil Yine burada çok açık yeşil olan
+
+98
+00:08:04,350 --> 00:08:06,270
+New York, yapmamız gereken
+
+99
+00:08:06,290 --> 00:08:08,960
+Genellikle bunu ezberlemiyorsun.
+
+100
+00:08:08,960 --> 00:08:13,500
+Dokümantasyondan veya cheat sayfasından örnekleri referans almanız gerekir.
+
+101
+00:08:13,670 --> 00:08:21,140
+Ancak temel fikir ithalatımız var, defter modunu başlattık ve iki temel nesneye bir veri nesnesi ve
+
+102
+00:08:21,350 --> 00:08:27,130
+bir katman nesnesi ekledik ve bunları sadece değişkenlerim veri değişkeni ve düzen değişkenimiz
+
+103
+00:08:27,130 --> 00:08:31,260
+olarak da arayabilir ve geçmiş, Git rakamına gider işlevi.
+
+104
+00:08:31,550 --> 00:08:34,220
+Ve o şeyi arsa içine aktarmak istiyorum.
+
+105
+00:08:34,460 --> 00:08:41,090
+Etrafımıza ne yapacağıma karar verirsem, bu yeni bir sekmeyi hm dosyası olarak açılacaktır
+
+106
+00:08:41,090 --> 00:08:47,190
+ve ileride e-posta dosyasını kaydetmek veya dışa aktarmak veya PNB olarak indirebilirsiniz.
+
+107
+00:08:47,240 --> 00:08:47,500
+Tamam.
+
+108
+00:08:47,540 --> 00:08:50,810
+Hadi başlayalım ve burada ders vermek için geri dönelim.
+
+109
+00:08:51,000 --> 00:08:57,350
+Veri nesnemizde yaptığımız coğrafi çizimin tipini açıklayan birkaç argümanımız
+
+110
+00:08:57,350 --> 00:08:58,200
+var.
+
+111
+00:08:58,250 --> 00:09:00,850
+Bu durumda şu anda sadece Mahkeme arazilerine odaklanıyoruz.
+
+112
+00:09:00,950 --> 00:09:08,570
+bir dizi veya bu gerçek durum kısaltması kodlarının bir listesidir, o zaman bir konum modu belirtirsiniz.
+
+113
+00:09:08,570 --> 00:09:10,410
+Ardından konumlarınız var konumlarınız
+
+114
+00:09:10,550 --> 00:09:16,070
+Bu davada ABD'de çalışıyoruz, çünkü ABD Dasch Devletleri demeye gidiyoruz ve bu
+
+115
+00:09:16,070 --> 00:09:17,300
+ilçe seviyesine inebilir.
+
+116
+00:09:17,300 --> 00:09:20,650
+Bir dizüstü bilgisayardaki çipte bulunan belgelere gidip başvurabilirsiniz.
+
+117
+00:09:20,750 --> 00:09:27,910
+Bununla ilgili daha fazla bilgi için metniniz var ve metin, her bir yer için
+
+118
+00:09:27,910 --> 00:09:30,740
+sıralanan metnin bir dizisi veya listesidir.
+
+119
+00:09:30,740 --> 00:09:41,180
+Mesela dışarı çıkın ve bunu Arizona'ya değiştirin, bunu Cali'ye değiştirin ve bunu New York'a değiştirin; eğer bunu
+
+120
+00:09:41,170 --> 00:09:47,510
+tekrar çalıştırırsak ve planda bunun ona gitmesine izin verirsek fark edersek.
+
+121
+00:09:47,570 --> 00:09:54,590
+Ben arsa olarak belirtmeme izin verin, böylece içeride gördüğünüz bir kitabı koyduğunuzda metin değerini çizdiğimi
+
+122
+00:09:54,590 --> 00:09:59,640
+fark ettiğimi fark edeceksiniz Kalli Arizona ve New York diyor.
+
+123
+00:09:59,780 --> 00:10:04,910
+Dolayısıyla bu metnin yerlerle aynı dizin sırasına sahip olması ve
+
+124
+00:10:04,910 --> 00:10:13,090
+o zaman eşleşecek olması anlamına gelir, z ise bir renk olarak temsil etmek istediğiniz değeri ifade eder.
+
+125
+00:10:13,100 --> 00:10:19,450
+Mesela Cali, Arizona'da New York Cazayoux'ta üçüncüsü olarak değer gördü.
+
+126
+00:10:19,520 --> 00:10:23,900
+Daha sonra gerçek verileri kullanarak, bunu belirli seviyeleri devlet tarafından nasıl gösterileceğini
+
+127
+00:10:24,230 --> 00:10:27,440
+nasıl kullanacağımızı göreceğiz, ancak burada renk çubukları bununla ilgili.
+
+128
+00:10:27,670 --> 00:10:32,630
+Ve renk çubuğunun başlığının buraya gideceğini yalnızca renk çubuğu için bir başlık olarak görüyoruz.
+
+129
+00:10:32,810 --> 00:10:37,870
+Ve bu tür çizim için Jüpiter not defterinde bahsedilen istediğiniz
+
+130
+00:10:37,860 --> 00:10:40,550
+dize ile renk ölçeğini seçebilirsiniz.
+
+131
+00:10:40,550 --> 00:10:44,840
+Gerçekten Jupiter defterinin belgelerine atıfta bulunmanız gerekecek
+
+132
+00:10:45,380 --> 00:10:50,420
+çünkü biçimlendirme gerçekten tuhaf ama işe yaramayan yol bu.
+
+133
+00:10:50,420 --> 00:10:57,240
+Ardından, yalnızca G'yi belirttiğiniz bir düzen değişkeni ve iç içe geçmiş bir sözlük nesnesi var. O. ve kapsamı ABD
+
+134
+00:10:57,260 --> 00:10:58,510
+olacak.
+
+135
+00:10:58,570 --> 00:11:01,850
+ABD eyaletleri bir kloroplast olacak.
+
+136
+00:11:02,090 --> 00:11:08,270
+Sonra da her şeye bu şekli vermek için geldiniz ve Coro haritasını çizdiğimi ve burada gördüğünü söyledin.
+
+137
+00:11:09,230 --> 00:11:14,990
+Şimdi devam edin ve bazı gerçek verilerle bir örnek göstererek, aynı zamanda sözlüklere, veri ve düzen ekleyebileceğimiz bazı
+
+138
+00:11:15,020 --> 00:11:16,200
+diğer seçenekleri de gösterelim.
+
+139
+00:11:16,430 --> 00:11:23,420
+Öyleyse devam edin ve halihazırda devam etmek zorunda olduğunuz bilgiye ilerleyin ve buraya ilerleyin ve DFA'nın C S
+
+140
+00:11:23,420 --> 00:11:29,080
+V okuyan PD'ye eşit olduğunu ve burada bir C S V dosyasının olduğunu söyleyeceğim.
+
+141
+00:11:29,330 --> 00:11:37,850
+2011 çağrısı bize tarım altını çizen ihracatın altını çiziyor ve bunlar sadece eyalete göre tarımsal ihracattır.
+
+142
+00:11:37,850 --> 00:11:42,740
+Ve bırakıp, içeri girmek için Pandur'ları elipsle çıkarmama izin verin.
+
+143
+00:11:42,830 --> 00:11:45,570
+Sonra devlet A çerçevesinin başını kontrol edeceğiz.
+
+144
+00:11:45,590 --> 00:11:51,090
+Dolayısıyla çerçeve devletinde, tüm devletler için bu durumda gerçek devlet adı kategorisine ait bir kod var.
+
+145
+00:11:51,310 --> 00:11:55,960
+Toplam ihracat ve daha sonra sığır eti domuz eti kümes hayvanı sütleri vb. Peki ya bu devletler tarım ürünleri için ihracat yapıyorsa.
+
+146
+00:11:56,030 --> 00:12:01,140
+Pekâlâ, bu yüzden veri değişkenimizi oluşturarak başlayalım.
+
+147
+00:12:01,130 --> 00:12:04,670
+Layout değişkeninde veri değişkeni bu
+
+148
+00:12:04,670 --> 00:12:12,830
+sözlük döküm işlemine girecek ve biz de tipin Coro'ya eşit olduğunu söyleyeceğiz.
+
+149
+00:12:12,830 --> 00:12:18,570
+Sonra renk skalası argümanlarını göndeririz.
+
+150
+00:12:19,850 --> 00:12:23,130
+Bu durumda dizeden geçeceğim.
+
+151
+00:12:23,330 --> 00:12:25,820
+Sermaye Y sermayesi Sermayemiz Küçük sermayemiz küçük harf D'dir.
+
+152
+00:12:25,820 --> 00:12:32,860
+Bu tür sarı turuncu bir kırmızı renkte, sıradaki yerleri hatırladığım yerleri söyleyeceğim.
+
+153
+00:12:33,010 --> 00:12:42,270
+Buraya geri dönersek, sadece devlet kodlarının listesi olurdu ve konumlarım modumuz da burada.
+
+154
+00:12:42,290 --> 00:12:49,940
+Şimdi bunu veri çerçevemizde bir kod sütununa bakarsak yapıyoruz.
+
+155
+00:12:50,390 --> 00:12:56,400
+Bu yüzden sadece A'yı geçeceğim. F. kodunu ve sonraki kodunu konum modumuz olacak ve ABD eyaletine
+
+156
+00:12:56,450 --> 00:12:59,330
+eşit olacak
+
+157
+00:13:02,780 --> 00:13:11,240
+şekilde ayarlayacağız ve ayrıca z için ne söyleyeceğimizi belirtmek istiyoruz ve z renk
+
+158
+00:13:14,810 --> 00:13:20,090
+çubuğunun aslında bunu temsil ettiği anlamına gelecektir vaka.
+
+159
+00:13:20,090 --> 00:13:22,140
+Devam edelim ve toplam ihracat söyleyelim.
+
+160
+00:13:22,140 --> 00:13:28,700
+Dolayısıyla, orada bir sütun olarak toplam ihracatımız var ve bu bizim değerimiz olacak.
+
+161
+00:13:28,700 --> 00:13:33,270
+Ayrıca metinlerimiz var ve bu sadece metin dizisi olacak.
+
+162
+00:13:33,350 --> 00:13:37,450
+Ve eğer sağdan sağa kaydırırsanız, metin sütunu buraya rahatlıkla yerleştirilir.
+
+163
+00:13:37,580 --> 00:13:42,140
+Genellikle kendi metin sütununuzu oluşturmanız gerekir, ancak bu sadece bir
+
+164
+00:13:42,380 --> 00:13:46,100
+örnek olduğundan sizin için bir metne zaten sahibiz.
+
+165
+00:13:46,100 --> 00:13:47,990
+Oraya gidip metinleri oraya aktaracağız ve sonra
+
+166
+00:13:48,080 --> 00:13:51,200
+renk çubuğunun eşit olduğunu söylemekten çok bir renk çubuğu kullanmak istiyoruz.
+
+167
+00:13:54,710 --> 00:14:03,240
+Ve burada renk çubuğunun başlığına sahip olduğunuz bu sözlüğünüz var.
+
+168
+00:14:03,290 --> 00:14:08,290
+Bu durumda, içeri girelim ve milyonlarca dolar diyelim, çünkü bu, gerçek toplam ihracatı temsil etmektedir.
+
+169
+00:14:08,300 --> 00:14:14,210
+Milyonlarca U'da olan sayı bu. S. dolar.
+
+170
+00:14:14,480 --> 00:14:17,840
+Şimdi devam edip bir argüman daha ekleyelim ve işaretçi eşit olur.
+
+171
+00:14:17,850 --> 00:14:25,130
+Ve bu tür garip bir argüman, çünkü bu bir iç içe sözlükler kümesi
+
+172
+00:14:25,220 --> 00:14:31,470
+ama bu temel olarak arsa gösterdiğimizde göstereceğimiz bir işaretleyiciyi tanımlayacak ve
+
+173
+00:14:31,460 --> 00:14:37,350
+bir sözlük satırı atmanın bir anahtar olduğunu söyleyeceksin eşittir ve daha
+
+174
+00:14:37,350 --> 00:14:45,590
+sonra başka bir sözlük döküm çağrısı yapar ve renk söylersin plotless eşittir r kabul eder. g B renk tuhaf bir dize biçiminde.
+
+175
+00:14:45,600 --> 00:14:51,640
+Sen R mi diyorsun G. B.
+
+176
+00:14:51,650 --> 00:14:53,030
+Ve sonra parantez içinde R'nizi geçersiniz. G. B değerleri.
+
+177
+00:14:53,210 --> 00:14:56,330
+Öyleyse devam edin ve üçü için kırmızı yeşille mavi olmak üzere ikiye 5:55 diyelim.
+
+178
+00:14:56,610 --> 00:15:01,250
+Ve sonra da iç
+
+179
+00:15:01,880 --> 00:15:08,720
+sözlük içinde genişliği ikiye eşit olduğunu belirteceğim.
+
+180
+00:15:09,040 --> 00:15:09,720
+Sonra o işaretçinin gerçekten nasıl yürürlüğe girdiğini göreceğiz.
+
+181
+00:15:09,920 --> 00:15:13,720
+Sonunda burada virgül bulunduğundan emin olmak istiyorum.
+
+182
+00:15:13,880 --> 00:15:17,400
+Böylece bir sonraki anahtara sahibiz ve onu kapatacağız.
+
+183
+00:15:18,230 --> 00:15:22,790
+Tamam.
+
+184
+00:15:22,790 --> 00:15:23,020
+O benim veri sözlüğüm.
+
+185
+00:15:23,030 --> 00:15:24,860
+Şimdi de sözlüklerimizi hazırlayacağız.
+
+186
+00:15:24,870 --> 00:15:28,430
+Layout söylemek için gidiyorum nasıl
+
+187
+00:15:28,820 --> 00:15:35,510
+benim sözlük döküm arama gerçek arsa başlığını ayarlayabilirsiniz eşittir.
+
+188
+00:15:35,510 --> 00:15:37,100
+Şimdi gidelim ve bunun 2011 U olduğunu söyleyelim. S. devletlerin tarım ihracatı Geo'ya
+
+189
+00:15:37,120 --> 00:15:49,460
+eşit olduğuna ve burada bir sözlük geçireceğim demeye gideceğim.
+
+190
+00:15:49,460 --> 00:15:52,140
+Kapsamımız ABD'ye eşittir.
+
+191
+00:15:52,460 --> 00:15:56,420
+temelde yalnızca gerçek gölleri ve haritayı gösterdiğini söylüyor
+
+192
+00:15:56,630 --> 00:16:02,690
+ve sonra Gölün rengini seçebilirsin ve ben de geçeceğim ve R.
+
+193
+00:16:03,030 --> 00:16:09,480
+Bu sözlüğün içinde, Göller'in gerçek olduğuna eşit iki ek argüman da geçeceğim ve G. G-B kodumuzun sadece bir dize olan tabaka
+
+194
+00:16:09,470 --> 00:16:15,020
+gösterimiyle kodlanması. G. B.
+
+195
+00:16:15,040 --> 00:16:15,940
+Ve basılmış renkler, istediğiniz değerler olduğunu görür.
+
+196
+00:16:16,130 --> 00:16:19,250
+85 173 ila 40 arasında diyebiliriz ve bunları
+
+197
+00:16:19,350 --> 00:16:25,940
+internetten yakaladım, çünkü bunlar göller için güzel bir mavi yapıyorlar ve bu da bizim için hazırlanmış sözlük olacak,
+
+198
+00:16:25,940 --> 00:16:31,720
+bu yüzden biz sadece bu tuhaf iç içe geçmiş Sözlük yapısı ama plotless bunu alır şekilde.
+
+199
+00:16:31,910 --> 00:16:37,370
+Sonra nihayet Koro'nun haritaya eşdeğer olduğunu söyleyebiliriz.
+
+200
+00:16:37,460 --> 00:16:45,410
+Veri eşittir ve biz o veri sözlüğünü bir listeye aktarırız ve sonra sadece düzenin eşitlendiğini söyleriz.
+
+201
+00:16:45,410 --> 00:16:53,250
+Ve sonra nihayet ben arsa haritasını mercan haritası üzerinde gösterelim.
+
+202
+00:16:54,260 --> 00:17:00,920
+Ve şimdi burada 2011 U. var. S. Devletin tarımsal ihracatı ve biz üzerinde gezinirken dikkat etmeniz gereken şey,
+
+203
+00:17:01,280 --> 00:17:10,460
+Kaliforniya'yı değerlendirecek tüm metinleri görmek.
+
+204
+00:17:10,460 --> 00:17:13,400
+Ayrıca, göllerin mavi anlamı taşıdığını, göllerin ve göllerin renginin doğru bir şekilde çalıştığını gösteriyor.
+
+205
+00:17:13,570 --> 00:17:19,170
+Renk ölçeğimize sahibiz.
+
+206
+00:17:19,520 --> 00:17:20,890
+Gelgit Millings USD'imiz var ve devletlerin kendi aralarında biraz boşluk olduğunu da görüyoruz.
+
+207
+00:17:20,930 --> 00:17:27,230
+O işaretin temsil ettiği şey de budur.
+
+208
+00:17:28,820 --> 00:17:30,900
+Verilere göre buraya geri dönersek, bu işaretçiyi aldık.
+
+209
+00:17:30,890 --> 00:17:34,720
+Bu nedenle, renk için bir çizgi belirledik ve sonra
+
+210
+00:17:34,940 --> 00:17:41,690
+çizgiyle bunu artırırsak çift diyelim ve gidelim ve rengi 12 12 12 gibi bir renk olarak değiştirelim.
+
+211
+00:17:41,690 --> 00:17:46,700
+Bu gerçekten çok açık.
+
+212
+00:17:46,700 --> 00:17:48,610
+Bunu tekrar çalıştırıp
+
+213
+00:17:48,800 --> 00:17:55,090
+sonra bu sınırların şu an olduğu ölçüde bu haritanın nasıl değişeceğini göreceğim.
+
+214
+00:17:55,130 --> 00:17:55,390
+Çok
+
+215
+00:17:55,410 --> 00:18:01,790
+kalın kara siperlikler bu G-B değerlerini değiştirdi ve bunu sadece sözlük satırını söyleyerek bu tür
+
+216
+00:18:01,800 --> 00:18:07,340
+bir formülü izleyerek yapabilir ve daha sonra sözlüğün rengini ve genişliğini seçersiniz.
+
+217
+00:18:07,380 --> 00:18:08,480
+Şimdi devam edin ve bunu bir şeye benzer bir şeye geri koyun.
+
+218
+00:18:08,750 --> 00:18:13,260
+Ve eğer bunu tekrar yaparsak arazimi görebiliriz.
+
+219
+00:18:13,600 --> 00:18:17,110
+Tamam.
+
+220
+00:18:17,240 --> 00:18:17,790
+Bir U'da Curle plus arsalarını nasıl oluşturabilirsiniz. S. çizgi çizgisini kullanarak ulusal ölçek.
+
+221
+00:18:17,900 --> 00:18:23,600
+Şimdi bilmemeliydim.
+
+222
+00:18:23,720 --> 00:18:25,390
+Sözdizimi kadar oldukça kafa karıştırıcıdır ve her şeyin hangi düzeye gittiğini hatırlamaya çalışmaktır.
+
+223
+00:18:25,390 --> 00:18:31,140
+Size vermek için en iyi tavsiyem bir Jüpiter defterini referans
+
+224
+00:18:31,130 --> 00:18:36,020
+almak ve Jüpiter defterindeki belgeler bağlantılarına atıfta bulunmaktır.
+
+225
+00:18:36,030 --> 00:18:37,430
+Çoğu zaman, esasen
+
+226
+00:18:37,550 --> 00:18:42,200
+kopyalayıp yapıştırmanız ve ardından belirli veri kümeniz için ilgili kodu doldurmanız yeterlidir.
+
+227
+00:18:42,510 --> 00:18:44,680
+Kolay değil, ama bunu yapmanızın yolu buydu.
+
+228
+00:18:44,690 --> 00:18:47,410
+Ve bu doğa gereği coğrafi çizim oldukça zor
+
+229
+00:18:47,480 --> 00:18:53,610
+çünkü birçok olası konum veya konum modu olarak geçebilmeniz için belirsiz hale getirmeye çalıştıkları birçok biçimde gelebilir.
+
+230
+00:18:53,930 --> 00:18:59,280
+Ancak bu sadece garip sözdizimi yapısına neden olur.
+
+231
+00:18:59,510 --> 00:19:02,900
+Bu coğrafi arsa oyununun komşu Lee'yi
+
+232
+00:19:02,960 --> 00:19:08,750
+coğrafi arsa için bir Python kütüphanesi olarak kullanmaya çalışması gereğidir.
+
+233
+00:19:08,760 --> 00:19:10,480
+Ancak, başkalarına göstermek için oldukça hoş bir şeyler almanızın sebep olduğu bu zor işin sonucunda görebilirsiniz.
+
+234
+00:19:10,700 --> 00:19:15,470
+Tamam.
+
+235
+00:19:16,550 --> 00:19:17,520
+Bir sonraki konferansa küresel mercan artı planlarıyla küresel ölçekte nasıl yapılacağını göstereceğim.
+
+236
+00:19:17,510 --> 00:19:23,340
+Herkese teşekkürler, bir sonraki konferansta görüşürüz.
+
+237
+00:19:23,960 --> 00:19:26,370
+&nbsp;

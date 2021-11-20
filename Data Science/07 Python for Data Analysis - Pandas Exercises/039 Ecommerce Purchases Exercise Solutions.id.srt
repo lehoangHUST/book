@@ -1,0 +1,827 @@
+1
+00:00:05,250 --> 00:00:09,020
+Halo semuanya dan selamat datang di kuliah solusi untuk pembelian e-commerce.
+
+2
+00:00:09,050 --> 00:00:10,560
+Latihan panda.
+
+3
+00:00:10,620 --> 00:00:14,720
+Ayo maju dan lompat ke notebook Jupiter dan mulai berjalan melalui solusi ini.
+
+4
+00:00:14,730 --> 00:00:14,970
+Baiklah.
+
+5
+00:00:14,970 --> 00:00:18,140
+Inilah saya di notebook untuk latihan pembelian e-commerce.
+
+6
+00:00:18,150 --> 00:00:21,240
+Ayo maju dan ikuti petunjuknya.
+
+7
+00:00:21,330 --> 00:00:26,180
+Jadi, hal pertama yang harus Anda lakukan adalah mengimpor panda, membayar impor dengan baik.
+
+8
+00:00:26,180 --> 00:00:32,760
+Inilah akhir dari apa yang ingin kita lakukan adalah membaca dalam file CSP pembelian e-commerce dan mengirimkannya ke teman
+
+9
+00:00:32,760 --> 00:00:34,490
+data yang disebut e-comm.
+
+10
+00:00:34,500 --> 00:00:40,240
+Jadi ketika kita mengatakan e-com sama dengan CD, baca garis bawah CXVII.
+
+11
+00:00:40,710 --> 00:00:46,100
+Dan ketika kita mulai mengetik e-com saya akan menggunakan tab autocomplete untuk menemukan file yang sebenarnya di sini dan itu yang
+
+12
+00:00:46,210 --> 00:00:47,210
+pertama di sana.
+
+13
+00:00:47,220 --> 00:00:49,240
+Pembelian e-commerce.
+
+14
+00:00:49,770 --> 00:00:54,420
+Dan saya akan pergi ke depan dan memeriksa kepala frame data dan Anda dapat
+
+15
+00:00:54,420 --> 00:00:57,240
+melakukannya hanya dengan memanggil metode kepala e-com.
+
+16
+00:00:57,240 --> 00:01:00,430
+Dan di sana kita dapat melihat bahwa kita memiliki kepala bingkai data itu.
+
+17
+00:01:00,450 --> 00:01:05,290
+Sekarang kita ingin tahu berapa banyak baris dan kolom ada beberapa cara untuk melakukan ini.
+
+18
+00:01:05,310 --> 00:01:13,920
+Misalnya Anda bisa mengatakan kolom e-com dan ini mengembalikan daftar kolom yang diindeks sehingga Anda sebenarnya bisa memeriksa
+
+19
+00:01:13,920 --> 00:01:19,560
+panjangnya jika Anda mau dan masih mengembalikan berapa banyak kolom yang Anda
+
+20
+00:01:19,560 --> 00:01:20,140
+miliki.
+
+21
+00:01:20,340 --> 00:01:28,380
+Dan kemudian Anda bisa melakukan hal yang sama untuk indeks dan itu akan memberi tahu Anda berapa banyak baris Anda punya cara yang
+
+22
+00:01:28,380 --> 00:01:33,480
+baik untuk melakukan ini namun untuk mendapatkan kedua informasi sekaligus sekaligus beberapa informasi lain
+
+23
+00:01:33,480 --> 00:01:38,430
+yang bagus itu disebut metode info dari itu dan mudah-mudahan dengan melihat output yang
+
+24
+00:01:38,430 --> 00:01:41,780
+merupakan petunjuk yang bagus untuk menggunakan metode info.
+
+25
+00:01:41,780 --> 00:01:42,410
+BAIK.
+
+26
+00:01:42,960 --> 00:01:45,870
+Berapa harga pembelian rata-rata.
+
+27
+00:01:45,870 --> 00:01:51,330
+Mari kita lanjutkan dan periksa kolom sekali lagi.
+
+28
+00:01:51,360 --> 00:01:53,310
+Perhatikan di sini kami memiliki slot alamat.
+
+29
+00:01:53,310 --> 00:01:58,680
+Pagi atau sore dan terus pada kita perhatikan bahwa kita akhirnya pada akhirnya harga pembelian.
+
+30
+00:01:59,010 --> 00:02:04,490
+Kita akan pergi dan lakukan adalah memanggil harga beli kolom dan saya akan pergi dan memiliki autocomplete
+
+31
+00:02:04,530 --> 00:02:07,770
+di sini dan kemudian saya ingin harga pembelian rata-rata.
+
+32
+00:02:07,770 --> 00:02:13,080
+Jadi rata-rata dalam kasus ini kita berbicara tentang mean dan alasan saya tidak benar-benar memposting berapa harga
+
+33
+00:02:13,080 --> 00:02:16,890
+pembelian rata-rata karena saya tidak ingin benar-benar memberikan metode itu langsung.
+
+34
+00:02:16,920 --> 00:02:23,910
+Jadi mudah-mudahan Anda bisa mengetahui itu dan harga rata-rata bertengger adalah $ 50 di sekitar 35 sen.
+
+35
+00:02:23,910 --> 00:02:28,560
+Sekarang kita ingin tahu bahwa itu adalah harga pembelian tertinggi dan terendah yang dapat
+
+36
+00:02:28,560 --> 00:02:34,830
+kita lakukan dengan cara yang sangat mirip hanya dengan melewati kolom dan kemudian memanggil max dan min off darinya.
+
+37
+00:02:34,830 --> 00:02:44,300
+Jadi harga pembelian maks adalah sekitar 100 dolar dan harga pembelian minimum adalah $ 0.
+
+38
+00:02:44,700 --> 00:02:45,360
+Baik.
+
+39
+00:02:45,480 --> 00:02:50,630
+Sekarang kami ingin tahu berapa banyak orang yang memiliki bahasa Inggris atau dan sebagai bahasa pilihan mereka di situs Web.
+
+40
+00:02:51,270 --> 00:02:56,330
+Mari kita lanjutkan dan periksa kolom bahasa Inggris atau kolom bahasa sekali lagi dan
+
+41
+00:02:56,360 --> 00:02:57,610
+ini adalah e-comm.
+
+42
+00:02:57,770 --> 00:02:58,560
+Lanjutkan.
+
+43
+00:02:58,580 --> 00:03:02,840
+Saya akan memanggil tiga kolom pertama di sini.
+
+44
+00:03:02,880 --> 00:03:04,290
+Rose permisi.
+
+45
+00:03:04,290 --> 00:03:07,110
+Jadi perhatikan jika saya maju dan gulir ke kanan.
+
+46
+00:03:08,010 --> 00:03:13,350
+Saya miliki di sini di kolom bahasa sepertinya hanya memiliki dua string panjang.
+
+47
+00:03:13,380 --> 00:03:18,340
+Jadi kami mencari berapa banyak dari string ini yang setara dengan E dan itu berarti saya akan melakukan ini.
+
+48
+00:03:18,360 --> 00:03:27,540
+Saya akan mengatakan bahasa e-com sama dengan string e m.
+
+49
+00:03:27,600 --> 00:03:31,700
+Ini akan mengembalikan serangkaian nilai boolean.
+
+50
+00:03:31,710 --> 00:03:33,360
+Falses di Trews.
+
+51
+00:03:33,360 --> 00:03:37,800
+Dan itu berarti apa yang bisa saya lakukan sekarang adalah teruskan dan katakan e-com
+
+52
+00:03:40,410 --> 00:03:42,230
+tentang di mana ini benar.
+
+53
+00:03:42,420 --> 00:03:47,700
+Jadi saya bisa mengatakan e-comm dan sekarang saya pada dasarnya memiliki subset dari kerangka data dan saya dapat memeriksanya dengan melihat
+
+54
+00:03:47,700 --> 00:03:48,710
+indeks ini di sini.
+
+55
+00:03:48,840 --> 00:03:50,610
+Dan perhatikan bahwa itu memantul.
+
+56
+00:03:50,820 --> 00:03:56,760
+Dan jika saya gulir ke kanan ke kanan pada frame, mari kita pergi dan panggil saja kepala ini karena
+
+57
+00:03:56,850 --> 00:04:01,370
+untuk semua itu gulir ke pemberitahuan kanan di sini semua bahasa adalah E-M.
+
+58
+00:04:01,410 --> 00:04:06,300
+Jadi yang saya inginkan bukanlah yang utama karena saya ingin tahu berapa banyak orang yang berbahasa Inggris.
+
+59
+00:04:06,300 --> 00:04:08,110
+Saya hanya bisa mengatakan menghitung.
+
+60
+00:04:09,330 --> 00:04:11,160
+Dan ini akan menghitung baris.
+
+61
+00:04:11,160 --> 00:04:15,310
+Jadi saya punya seribu sembilan ratus delapan orang yang menggunakan bahasa Inggris sebagai
+
+62
+00:04:15,310 --> 00:04:17,250
+bahasa pilihan mereka di situs web.
+
+63
+00:04:17,820 --> 00:04:23,340
+Dan jika Anda menginginkan ini hanya untuk kolom bahasa tertentu, Anda bisa memanggil bahasa di sini
+
+64
+00:04:24,840 --> 00:04:27,590
+dan ini akan memberi Anda nomor langsung.
+
+65
+00:04:27,600 --> 00:04:27,910
+Baiklah.
+
+66
+00:04:27,960 --> 00:04:29,930
+Ayo terus dan terus berjalan.
+
+67
+00:04:29,970 --> 00:04:34,090
+Sekarang kami ingin tahu berapa banyak orang yang memiliki jabatan pengacara.
+
+68
+00:04:34,300 --> 00:04:47,280
+Kita akan pergi ke depan dan lakukan adalah mengatakan e-com di mana pekerjaan sama dengan pengacara dan kemudian meneruskannya ke dalam kerangka data e-com dan ini mengembalikan subset dari
+
+69
+00:04:47,280 --> 00:04:52,830
+kerangka data di mana ini benar pada orang lain berbagai metode sebenarnya
+
+70
+00:04:52,830 --> 00:04:54,990
+mendapatkan mawar dari itu.
+
+71
+00:04:55,080 --> 00:04:58,170
+Anda bisa mendapatkan info.
+
+72
+00:04:58,460 --> 00:05:01,740
+Dan ini benar-benar mengembalikan berapa banyak baris yang Anda miliki sehingga 30 entri.
+
+73
+00:05:01,790 --> 00:05:06,480
+Anda juga bisa melakukan penghitungan yang melakukan hal yang sama 30.
+
+74
+00:05:06,510 --> 00:05:13,590
+Anda juga dapat memanggil indeks dari ini yang mengembalikan indeks dan kemudian Anda dapat memanggil tautan untuk itu.
+
+75
+00:05:14,130 --> 00:05:15,450
+Dan ini juga mengembalikan 30.
+
+76
+00:05:15,450 --> 00:05:20,790
+Jadi, cukup banyak metode untuk mendapatkan jawaban seksual yang maju dan merasa bebas untuk menggunakan metode apa
+
+77
+00:05:20,790 --> 00:05:22,180
+pun yang Anda inginkan.
+
+78
+00:05:23,070 --> 00:05:23,310
+BAIK.
+
+79
+00:05:23,310 --> 00:05:27,930
+Berikutnya, berapa banyak orang yang melakukan pembelian pada pagi hari dan berapa banyak orang yang melakukan pembelian
+
+80
+00:05:27,930 --> 00:05:29,760
+pada jam tersebut. saya ..
+
+81
+00:05:29,940 --> 00:05:32,780
+Dan ada petunjuk di sini yang menggunakan jumlah nilai.
+
+82
+00:05:33,240 --> 00:05:35,300
+Hitungan nilai yang baik membuat ini sangat mudah.
+
+83
+00:05:35,310 --> 00:05:40,750
+Anda sebenarnya baru saja melewati kolom AM atau PM dan kemudian mengatakan nilainya.
+
+84
+00:05:40,980 --> 00:05:43,390
+Baiklah, saya akan tunjukkan nilai unik dulu.
+
+85
+00:05:43,560 --> 00:05:49,550
+Jadi jika kita melihat kolom ini dan hanya menaruh pemberitahuan unik, kita hanya memiliki PM dan saya memiliki nilai
+
+86
+00:05:49,560 --> 00:05:52,830
+dan itu berarti saya bisa mengatakan nilai menggarisbawahi jumlah dan ini
+
+87
+00:05:55,470 --> 00:05:56,930
+akan secara otomatis dihitung.
+
+88
+00:05:56,970 --> 00:06:01,550
+Berapa banyak orang yang membeli selama p. m. dan berapa banyak orang yang dibeli selama AM.
+
+89
+00:06:02,310 --> 00:06:06,570
+Selanjutnya, kami ingin mengatakan apa saja lima jabatan pekerjaan paling umum.
+
+90
+00:06:07,080 --> 00:06:12,960
+Nah, penghitungan itu sebenarnya juga membuatnya sangat mudah yang akhirnya bisa Anda lakukan disebut kolom Pekerjaan dan Anda
+
+91
+00:06:14,120 --> 00:06:19,740
+perhatikan Anda mendapatkan banyak pekerjaan kembali sebagai sebuah seri dan kemudian Anda dapat memanggil penghitungan nilai pada
+
+92
+00:06:19,740 --> 00:06:20,160
+kolom
+
+93
+00:06:23,640 --> 00:06:29,430
+ini dan kemudian Anda benar-benar memiliki penghitungan dan jumlah nilai pemberitahuan sebenarnya secara otomatis sudah menyortir dari akun
+
+94
+00:06:29,430 --> 00:06:34,080
+paling populer sepanjang jalan jika Anda pergi ke bawah ke yang paling populer.
+
+95
+00:06:34,080 --> 00:06:41,190
+Jadi jika kita hanya memeriksa kepala ini untuk lima besar apakah Anda mendapatkan lima jabatan pekerjaan paling
+
+96
+00:06:41,560 --> 00:06:45,330
+umum interior dan pengacara khusus manajer pembelian manajer dll.
+
+97
+00:06:45,450 --> 00:06:49,620
+Ada beberapa cara lain untuk melakukan ini, tetapi ini mungkin cara tercepat dan termudah untuk melakukan ini.
+
+98
+00:06:50,400 --> 00:06:51,640
+BAIK.
+
+99
+00:06:51,990 --> 00:06:57,640
+Selanjutnya seseorang melakukan pembelian yang datang dari Lotts mengutip 90 spasi W. T ..
+
+100
+00:06:57,830 --> 00:07:00,680
+Berapa harga pembelian untuk transaksi ini.
+
+101
+00:07:00,690 --> 00:07:03,380
+Ayo maju dan coba cari tahu dulu ini.
+
+102
+00:07:03,390 --> 00:07:06,040
+Jadi kita akan memecah langkah demi langkah ini.
+
+103
+00:07:06,060 --> 00:07:13,110
+Kita akan mengatakan e-com dengan jumlah yang sama dengan dan kemudian 90.
+
+104
+00:07:13,110 --> 00:07:15,430
+Modal luar angkasa W T.
+
+105
+00:07:15,490 --> 00:07:20,650
+Saya hanya menjalankan ini seperti serangkaian nilai boolean dan saya ingin baris di mana ini benar.
+
+106
+00:07:21,120 --> 00:07:27,270
+Jadi saya akan masuk dan mengatakan e-com dari ini adalah pilihan bersyarat ini.
+
+107
+00:07:27,270 --> 00:07:30,470
+Dan sekarang saya bisa melihat saya mendapatkan Roback di mana ini benar.
+
+108
+00:07:30,540 --> 00:07:35,880
+Jadi, jika saya teruskan dan hanya pergi ke harga pembelian saya harus melihatnya $ 75 dan 10 sen.
+
+109
+00:07:35,970 --> 00:07:46,120
+Atau saya bisa membatalkan harga pembelian dari kerangka data ini dan saya akan mengembalikan $ 75 dan 10 sen ini.
+
+110
+00:07:46,140 --> 00:07:47,540
+BAIK.
+
+111
+00:07:47,610 --> 00:07:51,090
+Selanjutnya, apa yang dikirimi email orang tersebut dengan nomor kartu kredit berikut?
+
+112
+00:07:51,090 --> 00:07:52,870
+Ini nomor kartu kredit itu sendiri.
+
+113
+00:07:53,130 --> 00:08:02,460
+Yah kita akan ingin lakukan adalah proses yang sangat mirip akan mengatakan kita ingin kartu kredit e-com sama dengan
+
+114
+00:08:02,460 --> 00:08:11,160
+dan kemudian saya hanya akan menyalin dan menempelkan nomor ini dan kemudian saya akan meneruskan ini ke dalam
+
+115
+00:08:11,160 --> 00:08:15,340
+bingkai data e-com dan ambil kolom email darinya.
+
+116
+00:08:16,500 --> 00:08:18,810
+Dan saya hanya menjalankannya dan saya mendapat jawaban yang sama persis.
+
+117
+00:08:18,810 --> 00:08:22,370
+Jadi Bob Dylan di Williams Asgar mengatakan itu.
+
+118
+00:08:22,620 --> 00:08:29,160
+OK sekarang saya ingin tahu berapa banyak yang akan memiliki American Express sebagai penyedia kartu kredit mereka dan melakukan pembelian
+
+119
+00:08:29,160 --> 00:08:30,620
+di atas $ 95.
+
+120
+00:08:30,720 --> 00:08:32,450
+Sekali lagi kami hanya melakukan seleksi bersyarat.
+
+121
+00:08:32,460 --> 00:08:38,520
+Kecuali sekarang kita harus ingat bagaimana melakukan beberapa kondisi ketika itu berjalan dan mulai duduk di bingkai
+
+122
+00:08:38,520 --> 00:08:39,300
+data saya.
+
+123
+00:08:39,450 --> 00:08:45,320
+Saya akan mengatakan e-comm dan saya akan lulus dan kondisi pertama dalam tanda kurung dan kemudian menggunakan ampersand
+
+124
+00:08:45,840 --> 00:08:48,490
+dan melewati kondisi kedua dalam tanda kurung.
+
+125
+00:08:48,690 --> 00:08:52,900
+OK syarat pertama adalah American Express sebagai makna penyedia kartu kredit mereka.
+
+126
+00:08:52,950 --> 00:09:10,200
+Penyedia E-com CC sama dengan American Express dan saya ingin e-com dari harga pembelian lebih besar dari
+
+127
+00:09:13,380 --> 00:09:16,240
+$ 95.
+
+128
+00:09:16,450 --> 00:09:16,980
+Baik.
+
+129
+00:09:17,130 --> 00:09:22,060
+Jika saya menjalankan ini, saya mendapatkan kembali baris yang sebenarnya di mana ini benar.
+
+130
+00:09:22,080 --> 00:09:22,670
+Sekarang saya ingat.
+
+131
+00:09:22,710 --> 00:09:29,720
+Saya hanya ingin menghitung sehingga saya bisa melanjutkan dan mengatakan bahwa menghitung mundur dari menjalankan ini dan saya mendapatkan 39.
+
+132
+00:09:29,970 --> 00:09:32,080
+Lagi-lagi ada banyak cara berbeda untuk menghitungnya.
+
+133
+00:09:32,070 --> 00:09:37,090
+Anda juga bisa mengatakan info lalu yang mengembalikan peringkat ke-9 di sini.
+
+134
+00:09:37,230 --> 00:09:42,540
+Anda juga dapat menggunakan indeks saham misalnya dan kemudian mendapatkan panjang ini dan itu juga mengembalikan Tiga Puluh
+
+135
+00:09:45,770 --> 00:09:48,250
+Sembilan Begitu banyak cara untuk melakukan ini.
+
+136
+00:09:48,250 --> 00:09:52,500
+Tetapi ide dasar dari apa yang ingin saya turunkan adalah yang benar-benar melakukan beberapa pilihan kondisi.
+
+137
+00:09:52,530 --> 00:09:57,620
+Anda harus memberikan kemudahan cetak CS dan kemudian lulus dan mencetak CS lagi.
+
+138
+00:09:58,290 --> 00:09:58,860
+BAIK.
+
+139
+00:09:58,870 --> 00:10:00,950
+Sekarang untuk dua yang sulit terakhir.
+
+140
+00:10:01,050 --> 00:10:04,920
+Berapa banyak orang yang memiliki kartu kredit yang kedaluwarsa pada 2025.
+
+141
+00:10:05,710 --> 00:10:10,070
+Jadi mari kita lanjutkan dan lihat tanggal kedaluwarsa.
+
+142
+00:10:10,720 --> 00:10:15,160
+Jadi kami memiliki tanggal kedaluwarsa CC Expwy.
+
+143
+00:10:15,540 --> 00:10:16,700
+Kami melihat ini.
+
+144
+00:10:16,720 --> 00:10:19,600
+Kami memiliki apa yang tampak sebagai string.
+
+145
+00:10:19,770 --> 00:10:25,020
+Baiklah mari kita menelepon dan mengonfirmasi bahwa itu adalah string dengan hanya meminta objek pertama.
+
+146
+00:10:25,090 --> 00:10:34,370
+Jadi jika saya katakan saya EHLO melihat bracket zero error mengembalikan string 0 menjadi slash 20.
+
+147
+00:10:34,650 --> 00:10:39,810
+Dan itu berarti jika saya benar-benar hanya ingin meraih tahun sehingga kartu kredit
+
+148
+00:10:39,810 --> 00:10:47,020
+ini akan berakhir pada tahun 2020 apa yang akan saya lakukan dan lakukan adalah mengambil nilai dari string itu.
+
+149
+00:10:47,010 --> 00:10:50,400
+Apakah elemen-elemen string yang indeks 3 dan seterusnya.
+
+150
+00:10:50,400 --> 00:10:57,060
+Jadi jika Anda melihat 0 1 2 3 dan seterusnya atau pada dasarnya dua terakhir.
+
+151
+00:10:57,540 --> 00:11:02,920
+Dan sekarang saya mendapatkan string yaitu tahun kita akan pergi ke depan dan mengambil informasi
+
+152
+00:11:02,910 --> 00:11:05,050
+itu dan mulai menggunakan menerapkannya.
+
+153
+00:11:05,040 --> 00:11:21,080
+Jadi saya ingin mengatakan Terapkan lambda akan melanjutkan dan memanggil XP Colan XP ini dan kemudian mengatakan tiga titik dua dan kemudian saya
+
+154
+00:11:21,390 --> 00:11:30,270
+ingin ini sama dengan 25 karena saya mencari tanggal kedaluwarsa 20 2025.
+
+155
+00:11:31,020 --> 00:11:33,750
+Ayo maju dan jalankan ini.
+
+156
+00:11:34,100 --> 00:11:39,400
+Saya perhatikan sekarang saya memiliki serangkaian nilai palsu dan benar sehingga banyak nilai boolean.
+
+157
+00:11:39,390 --> 00:11:44,290
+Sekarang alasan mengapa ini sulit adalah karena Anda perlu mencari tahu berapa banyak dari ini yang benar.
+
+158
+00:11:44,670 --> 00:11:46,750
+Ada beberapa cara berbeda untuk melakukannya.
+
+159
+00:11:46,800 --> 00:11:53,070
+Salah satu cara yang sangat cepat adalah Anda dapat benar-benar hanya mengambil jumlah dari seri dan itu akan mengembalikan semua
+
+160
+00:11:53,080 --> 00:11:54,860
+nilai yang benar sebagai jumlah.
+
+161
+00:11:55,200 --> 00:11:56,910
+Jadi begitulah caranya dan solusinya.
+
+162
+00:11:56,910 --> 00:11:59,780
+Agak trik yang rapi tapi itu membuatnya sulit.
+
+163
+00:11:59,910 --> 00:12:08,100
+Hal lain yang bisa kita lakukan adalah dengan mengirimkan ini ke e-com untuk mendapatkan baris kembali ke tempat yang benar.
+
+164
+00:12:08,130 --> 00:12:15,200
+Dan kemudian hanya mengatakan Punya hitungan dan ini juga akan mengembalikan kembali nomor yang sama 1033.
+
+165
+00:12:15,520 --> 00:12:16,310
+BAIK.
+
+166
+00:12:16,410 --> 00:12:22,080
+Sekarang untuk yang paling sulit yang merupakan lima penyedia email paling populer dan host gmail dot com
+
+167
+00:12:22,090 --> 00:12:24,130
+yahoo dot com dan sebagainya.
+
+168
+00:12:24,120 --> 00:12:26,110
+Ayo maju dan lihat bagaimana kita bisa melakukan ini.
+
+169
+00:12:26,350 --> 00:12:28,240
+Mari kita lihat kolom e-mail dan
+
+170
+00:12:31,950 --> 00:12:34,060
+perhatikan di sini kita pada dasarnya memiliki string.
+
+171
+00:12:34,090 --> 00:12:39,640
+Tetapi yang penting untuk diketahui adalah bahwa jika Anda mengambil salah satu dari string ini Mari kita lanjutkan dan mengambil
+
+172
+00:12:39,660 --> 00:12:42,150
+satu kita akan menyebut contoh ini garis bawah.
+
+173
+00:12:42,150 --> 00:12:46,600
+E-mail sama dengan contoh pertama dari ini.
+
+174
+00:12:46,600 --> 00:12:53,540
+Jika saya perhatikan contoh email hanyalah string di sini.
+
+175
+00:12:53,700 --> 00:13:01,330
+Jika saya teruskan dan mengatakan splits pada saat itu saya memiliki daftar yang dibagikan pada dan saya tahu bahwa
+
+176
+00:13:01,380 --> 00:13:08,770
+item kedua dalam daftar ini item satu atau dua dari indeks Satu adalah nama domain Yahoo dot com.
+
+177
+00:13:08,760 --> 00:13:14,700
+Jadi yang ingin saya lakukan adalah menggunakan semacam logika dalam ekspresi lambda untuk mengambil penyedia
+
+178
+00:13:14,700 --> 00:13:18,080
+email atau host. Silakan dan lakukan itu.
+
+179
+00:13:18,270 --> 00:13:30,090
+Saya akan masuk dan mengatakan e-com e-mail atau melamar Lamda yang kami terima di email dan kemudian kami
+
+180
+00:13:30,100 --> 00:13:33,160
+mengatakan email yang terbelah.
+
+181
+00:13:33,250 --> 00:13:35,720
+Dan kemudian saya akan mengambil dari itu.
+
+182
+00:13:35,760 --> 00:13:37,390
+Nilai pada indeks 1.
+
+183
+00:13:37,380 --> 00:13:42,790
+Jadi pada dasarnya saya hanya menggunakan logika ini di sini tapi saya memasukkannya
+
+184
+00:13:42,780 --> 00:13:49,250
+ke dalam ekspresi lambda bahwa saya akan mengatakan nilai menggarisbawahi penting untuk benar-benar menghitung berapa banyak.
+
+185
+00:13:49,260 --> 00:13:53,710
+Ayo pergi dan tunjukkan ini untuk tag hash yang keluar.
+
+186
+00:13:54,100 --> 00:13:58,890
+Jadi ini mengembalikan serangkaian semua nilai ini sejauh penyedia email.
+
+187
+00:13:58,890 --> 00:14:01,330
+Dan yang ingin saya lakukan adalah mencari tahu lima teratas yang paling populer.
+
+188
+00:14:01,330 --> 00:14:05,910
+Jadi ingat, kita hanya bisa menilai akun bersama dengan 5 AD.
+
+189
+00:14:06,140 --> 00:14:08,350
+Dan ini mengembalikan lima teratas paling populer.
+
+190
+00:14:08,350 --> 00:14:12,100
+Jadi Hotmail Yahoo Gmail Smith dan Wiliams dot com.
+
+191
+00:14:12,470 --> 00:14:13,410
+BAIK.
+
+192
+00:14:13,460 --> 00:14:17,210
+Semoga itu menantang bagi Anda jika itu.
+
+193
+00:14:17,220 --> 00:14:20,180
+Dan Anda melewatinya lebih baik lagi.
+
+194
+00:14:20,200 --> 00:14:23,760
+Tapi saya harap Anda bisa menggunakan gaji Anda dan keterampilan mulai akrab.
+
+195
+00:14:23,860 --> 00:14:28,110
+Dan yang lebih penting lihat apa yang sebenarnya tersedia untuk Anda dan jenis pertanyaan yang dapat Anda
+
+196
+00:14:28,120 --> 00:14:30,030
+jawab dengan cepat dan mudah dari panda.
+
+197
+00:14:30,080 --> 00:14:34,470
+Ini adalah latihan pertama Anda sejauh latihan formal para calo.
+
+198
+00:14:34,680 --> 00:14:39,100
+Ini mungkin sangat menantang dan mungkin sangat sulit tetapi hanya melalui solusi secara perlahan.
+
+199
+00:14:39,310 --> 00:14:42,930
+Pastikan Anda dapat memecahnya langkah demi langkah dan memahami solusinya.
+
+200
+00:14:43,090 --> 00:14:48,060
+Jangan ragu untuk mengirim pertanyaan apa pun yang Anda miliki ke forum Q&amp;A dan saya
+
+201
+00:14:48,070 --> 00:14:55,080
+senang membantu Anda sejauh menjelaskan logika semua ini. Bagian yang paling membingungkan dari ini adalah kemampuan untuk menggunakan aplikasi dan kemudian
+
+202
+00:14:55,120 --> 00:14:58,770
+ekspresi lambda pergi maju dan tinjau ekspresi tanah dengan Python.
+
+203
+00:14:58,920 --> 00:15:02,370
+Jika Anda pikir dua yang terakhir ini sangat sulit.
+
+204
+00:15:02,430 --> 00:15:03,240
+BAIK.
+
+205
+00:15:03,370 --> 00:15:04,980
+Semoga Anda menikmati latihan itu.
+
+206
+00:15:04,990 --> 00:15:10,380
+Datang berikutnya adalah pasangan latihan yang lain untuk mempertajam set keahlian Anda lebih banyak lagi.
+
+207
+00:15:10,380 --> 00:15:12,250
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

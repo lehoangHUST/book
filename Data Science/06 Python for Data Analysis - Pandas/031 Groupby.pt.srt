@@ -1,0 +1,359 @@
+1
+00:00:05,280 --> 00:00:09,960
+Olá a todos e seja bem vindo ao grupo por palestra para pandas nesta palestra, vamos mostrar-lhe
+
+2
+00:00:09,960 --> 00:00:15,530
+como usar o grupo por método para iluminar um grupo de linhas de dados em conjunto e chamar funções agregadas.
+
+3
+00:00:15,540 --> 00:00:20,850
+Agora, antes de realmente entrar no caderno Jupiter. Deixe-me explicar rapidamente o que o grupo compra é no caso
+
+4
+00:00:20,850 --> 00:00:25,950
+de você não ter uma experiência sequela ou você experimentou ou a maioria das pessoas é familiarizada com
+
+5
+00:00:25,950 --> 00:00:28,300
+o que uma declaração GROUP BY realmente faz.
+
+6
+00:00:28,560 --> 00:00:34,890
+Para colocá-lo simplesmente agrupado, você pode agrupar as linhas com base em uma coluna e, em seguida, executar
+
+7
+00:00:34,890 --> 00:00:36,840
+algum tipo de função agregada nelas.
+
+8
+00:00:37,080 --> 00:00:43,390
+Por exemplo, neste exemplo, aqui temos três partições de IDS um dois e três.
+
+9
+00:00:43,470 --> 00:00:50,220
+E então, temos vários valores para eles, podemos agrupar pela coluna ID e agregá-los usando algum tipo de função
+
+10
+00:00:50,220 --> 00:00:56,130
+agregada em cada função é, basicamente, apenas um termo extravagante para qualquer função que leva e muitos
+
+11
+00:00:56,130 --> 00:01:03,060
+valores e, em seguida, cuspir ou produz um único valor como tomar a soma de um monte de valores
+
+12
+00:01:03,330 --> 00:01:07,680
+e produzir os resultados ou tomar a média ou desvio padrão, etc. Estas são todas funções agregadas e é todo um
+
+13
+00:01:07,800 --> 00:01:13,950
+grupo por método que permite que você escolha uma coluna para Agrupar por.
+
+14
+00:01:13,950 --> 00:01:14,950
+Ele reúne todas essas linhas juntas com base no valor dessa coluna.
+
+15
+00:01:15,000 --> 00:01:18,250
+E então você executa algum tipo de função agregada nela.
+
+16
+00:01:18,440 --> 00:01:21,330
+Tudo bem.
+
+17
+00:01:21,360 --> 00:01:22,160
+Mas, sendo assim, vamos continuar e aprender a usar GROUP BY com pandas.
+
+18
+00:01:22,200 --> 00:01:25,980
+Eu vou seguir em frente e pular no caderno de Jupiter.
+
+19
+00:01:26,010 --> 00:01:28,820
+Tudo bem, então aqui estamos no caderno de Jupiter.
+
+20
+00:01:28,860 --> 00:01:31,390
+Fui em frente e copi e coloquei essa linha de dados.
+
+21
+00:01:31,530 --> 00:01:34,650
+É basicamente apenas um dicionário do notebook
+
+22
+00:01:34,660 --> 00:01:40,350
+e este livro de notas é chamado apenas por uma das pastas pandas.
+
+23
+00:01:40,350 --> 00:01:41,710
+seguir em frente e dizer o
+
+24
+00:01:41,760 --> 00:01:47,750
+quadro de dados do PD e depois passar nesse dicionário de dados e ele deve criar automaticamente um quadro de dados Isso parece assim.
+
+25
+00:01:47,780 --> 00:01:54,780
+OK, você pode seguir em frente e digitar isso manualmente, mas eu simplesmente diria ir em frente e copiar esses dados apenas um dicionário e, em seguida, você pode
+
+26
+00:01:54,780 --> 00:01:58,040
+E, basicamente, isso é apenas uma compilação de dados.
+
+27
+00:01:58,050 --> 00:01:59,900
+Temos uma coluna de empresa com três códigos de companhia.
+
+28
+00:02:00,000 --> 00:02:03,170
+Google Microsoft e Facebook.
+
+29
+00:02:03,330 --> 00:02:05,390
+Agora temos uma coluna de pessoa com um monte de pessoas únicas nele.
+
+30
+00:02:05,520 --> 00:02:08,750
+E então temos alguns números de vendas 200 120 etc. Agora, o que podemos fazer é usar esse grupo por método para agrupar linhas
+
+31
+00:02:08,910 --> 00:02:13,460
+em conjunto com base em um nome de coluna, por exemplo, vamos seguir em frente e agrupar pela empresa, eu
+
+32
+00:02:13,590 --> 00:02:19,020
+vou continuar e dizer ZF e então você diz grupo por chamada como um e você passa na coluna que deseja agrupar neste caso.
+
+33
+00:02:19,020 --> 00:02:25,950
+Eu quero um grupo pela coluna da empresa e observe o que eu saio aqui. Eu apenas faço isso.
+
+34
+00:02:25,950 --> 00:02:32,070
+Obtendo um grupo por objeto e apenas aponta para onde ele está armazenado na memória.
+
+35
+00:02:32,070 --> 00:02:38,240
+O que posso fazer é armazenar isso como uma nova variável para que eu possa dizer
+
+36
+00:02:38,400 --> 00:02:43,100
+algo como chegar para minha empresa e eu tenho esse grupo por objeto.
+
+37
+00:02:43,350 --> 00:02:51,750
+Então, o segundo passo para usar o Group By.
+
+38
+00:02:51,750 --> 00:02:55,290
+Depois de agrupar por essa coluna é ir em frente e chamar algum tipo de função de agregação nela.
+
+39
+00:02:55,290 --> 00:02:58,250
+Então, por exemplo, se eu queria obter o significado pela
+
+40
+00:02:58,250 --> 00:03:03,090
+empresa, olharia para a coluna de vendas e me daria a venda média ou média da empresa.
+
+41
+00:03:03,420 --> 00:03:10,320
+A razão pela qual não pode fazer isso para a coluna da pessoa é porque estas são strings e não há como
+
+42
+00:03:10,320 --> 00:03:13,310
+você pode simplesmente tomar a média de uma string
+
+43
+00:03:13,320 --> 00:03:18,180
+e isso significa que os panderers simplesmente ignoram qualquer coisa que seja uma coluna não-numérica.
+
+44
+00:03:18,180 --> 00:03:23,490
+Da mesma forma, podemos seguir em frente e executar outras funções agregadas, como algumas
+
+45
+00:03:23,610 --> 00:03:26,060
+de todas as vendas por empresa.
+
+46
+00:03:26,070 --> 00:03:32,520
+Você pode até fazer desvios padrão do Vestey, etc. e você deve notar que o que eu recebo é um quadro de dados real com um índice chamado Empresa e o valor
+
+47
+00:03:32,520 --> 00:03:33,760
+da coluna das vendas.
+
+48
+00:03:33,990 --> 00:03:42,900
+e, em seguida, eu poderia até chamar algo como Dot ellos C F B.
+
+49
+00:03:42,900 --> 00:03:48,760
+E isso significa que eu poderia fazer coisas como a oferta de índice para que eu pudesse
+
+50
+00:03:49,110 --> 00:03:55,920
+dizer, vamos, vamos em frente e resumimos todas as vendas da empresa, de modo que algumas das vendas da empresa
+
+51
+00:03:55,920 --> 00:04:02,430
+E isso me dá as vendas de algum Facebook agora muitas vezes o que você está fazendo não
+
+52
+00:04:02,850 --> 00:04:06,440
+está realmente configurando esse grupo por objeto como uma variável.
+
+53
+00:04:07,000 --> 00:04:13,600
+Você provavelmente apenas chamaria isso tudo em uma única linha.
+
+54
+00:04:13,710 --> 00:04:17,510
+Uma vez que você começar a se sentir muito confortável com pantless eles vão dizer algo como
+
+55
+00:04:17,550 --> 00:04:19,670
+grupo por empresa, então você chama algo como alguns.
+
+56
+00:04:19,710 --> 00:04:25,140
+Facebook, você é a chamada do FBI e isso é tudo da mesma maneira apenas em uma linha agora.
+
+57
+00:04:25,830 --> 00:04:27,920
+E então, se você quer apenas para o
+
+58
+00:04:28,110 --> 00:04:35,160
+Algumas outras funções agregadas úteis que você pode encontrar a si mesmo são coisas como a contagem que apenas conta o número
+
+59
+00:04:35,160 --> 00:04:36,420
+de instâncias ou coluna.
+
+60
+00:04:36,660 --> 00:04:41,850
+Nesse caso, foi capaz de retornar a coluna de pessoa porque pode contar a quantidade de
+
+61
+00:04:41,850 --> 00:04:44,570
+ocorrências de uma pessoa naquela coluna ou empresa.
+
+62
+00:04:44,730 --> 00:04:49,890
+Então, temos duas pessoas e eles têm duas vendas cada e isso faz sentido.
+
+63
+00:04:49,890 --> 00:04:53,420
+Você também pode fazer coisas como o máximo e o mínimo.
+
+64
+00:04:53,430 --> 00:04:57,360
+capaz de armazenar coisas em ordem alfabética e é basicamente o que estou tentando mostrar aqui.
+
+65
+00:04:57,360 --> 00:05:00,190
+E note aqui que também retorna a pessoa porque Python é
+
+66
+00:05:00,960 --> 00:05:07,080
+O máximo é o mais recente no final do alfabeto e se você chamar isso é o primeiro no
+
+67
+00:05:07,080 --> 00:05:09,410
+alfabeto C e C, temos agências aqui.
+
+68
+00:05:09,480 --> 00:05:17,220
+No entanto, você provavelmente não deveria usar o mínimo ou o máximo com uma coluna de string.
+
+69
+00:05:17,220 --> 00:05:19,570
+Você provavelmente usará todas essas funções irritadas realmente com colunas numéricas.
+
+70
+00:05:19,800 --> 00:05:23,310
+Uma última coisa útil que eu quero mostrar com o grupo é muitas vezes que você
+
+71
+00:05:23,310 --> 00:05:27,320
+pode usar o GROUP BY com o método descrito e que lhe oferece um monte de informações úteis
+
+72
+00:05:27,330 --> 00:05:34,440
+de uma só vez para que você possa dizer o grupo de pensamento ZF pelo nome da empresa e então diga o escriba e isso lhe dará um monte de informações.
+
+73
+00:05:35,160 --> 00:05:42,010
+Então, por exemplo, para contar a média, o desvio padrão dos homens e do
+
+74
+00:05:42,030 --> 00:05:47,730
+max, bem como os valores do azulejo central para cada empresa.
+
+75
+00:05:47,730 --> 00:05:53,230
+E se você não gosta deste formato e você pode realmente transpor isso, então você pode dizer algo como isso transpor se você preferir que cada empresa
+
+76
+00:05:53,250 --> 00:05:55,060
+seja uma coluna em vez de um índice real.
+
+77
+00:05:55,170 --> 00:05:59,490
+Então, seja qual for o formato que você quiser,
+
+78
+00:06:00,060 --> 00:06:08,330
+melhor você pode descrever isso e, em seguida, você pode simplesmente chamar nomes de colunas fora disso.
+
+79
+00:06:08,520 --> 00:06:13,530
+Se você está apenas interessado em uma única empresa ou em uma única coluna.
+
+80
+00:06:13,530 --> 00:06:14,260
+Tudo bem, é mesmo para o grupo.
+
+81
+00:06:14,280 --> 00:06:18,780
+É bastante básico.
+
+82
+00:06:18,840 --> 00:06:21,150
+Você apenas chama o quadro de dados, diga Dopp, agrupado pela coluna que deseja agrupar e, em seguida, qualquer método agregado que você deseja agregar
+
+83
+00:06:21,150 --> 00:06:21,920
+os valores de coluna a um único valor.
+
+84
+00:06:21,930 --> 00:06:28,800
+E geralmente só funciona em colunas numéricas, dependendo do tipo
+
+85
+00:06:28,800 --> 00:06:34,140
+de função agregada com a qual você trabalha.
+
+86
+00:06:34,140 --> 00:06:39,060
+Você obterá muito mais prática de grupo, enquanto passamos pelos exercícios, bem como nos projetos de cápsulas.
+
+87
+00:06:39,060 --> 00:06:39,720
+Tudo bem.
+
+88
+00:06:39,720 --> 00:06:45,450
+Obrigado a todos e eu vou ver você na próxima palestra
+
+89
+00:06:45,960 --> 00:06:46,480
+&nbsp;
+
+90
+00:06:46,620 --> 00:06:48,480
+&nbsp;

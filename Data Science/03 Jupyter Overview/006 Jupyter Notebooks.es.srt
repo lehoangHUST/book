@@ -1,0 +1,851 @@
+1
+00:00:05,370 --> 00:00:10,500
+Hola a todos y bienvenidos a la conferencia de la notebook Jupiter y esta conferencia les mostrará cómo
+
+2
+00:00:10,500 --> 00:00:15,540
+usar de manera efectiva el sistema de notebook Jupiter y darles un recorrido por el entorno general.
+
+3
+00:00:15,540 --> 00:00:20,580
+También consulte los recursos para esta conferencia para descargar el archivo comprimido que
+
+4
+00:00:20,580 --> 00:00:23,000
+contiene todos los archivos del cuaderno.
+
+5
+00:00:23,040 --> 00:00:27,150
+Entonces, como mencioné, verifique los recursos para la conferencia y descargue el archivo zip.
+
+6
+00:00:27,150 --> 00:00:33,700
+Contiene todos los archivos dot Y y B de IP o los archivos de cuaderno y esos cuadernos para el resto de la combinación
+
+7
+00:00:33,990 --> 00:00:34,430
+de cursos.
+
+8
+00:00:34,470 --> 00:00:37,910
+Recuerde dónde guardó y descomprimió ese archivo.
+
+9
+00:00:38,640 --> 00:00:42,990
+Avancemos y exploremos los cuadernos, así como también tengamos una idea de cómo usarlos de manera efectiva.
+
+10
+00:00:42,990 --> 00:00:47,510
+Voy a seguir adelante y solo te recordaré cómo puedes abrir un cuaderno de Júpiter.
+
+11
+00:00:47,520 --> 00:00:50,770
+Voy a seguir adelante y saltar al símbolo del sistema ahora.
+
+12
+00:00:50,790 --> 00:00:51,090
+Todo bien.
+
+13
+00:00:51,090 --> 00:00:55,320
+Aquí estoy en mi símbolo del sistema como un recordatorio si está usando Mac OS.
+
+14
+00:00:55,320 --> 00:00:57,710
+Adelante, solo usa tu terminal para esto.
+
+15
+00:00:57,930 --> 00:01:03,870
+Si usa Windows, siga adelante e ingrese aquí y escriba ACMD y seleccione su símbolo del sistema.
+
+16
+00:01:04,160 --> 00:01:07,310
+También hay en un ícono el símbolo del sistema que puede usar eso también.
+
+17
+00:01:07,320 --> 00:01:11,250
+Ese es el símbolo del sistema que viene con la distribución de Anaconda.
+
+18
+00:01:11,250 --> 00:01:11,830
+Todo bien.
+
+19
+00:01:12,000 --> 00:01:19,200
+De modo que siga adelante y acceda al símbolo del sistema y luego escriba j u p y t r espacio portátil y presione enter.
+
+20
+00:01:20,010 --> 00:01:25,040
+Tenga en cuenta que esto iniciará un cuaderno de Júpiter donde quiera que se encuentre en el símbolo del sistema.
+
+21
+00:01:25,050 --> 00:01:27,840
+Entonces, por ejemplo, voy a eliminar esto muy rápido.
+
+22
+00:01:27,870 --> 00:01:35,430
+Estoy bajo los usuarios de C y luego mi segundo nombre aquí, Marysia, y ahí es donde mi computadora portátil va
+
+23
+00:01:35,430 --> 00:01:36,110
+a comenzar.
+
+24
+00:01:36,210 --> 00:01:42,030
+manera en que puedo cambiar el directorio usando un CD y luego escribiendo el siguiente archivo que quiero.
+
+25
+00:01:42,030 --> 00:01:46,770
+Si quiero iniciar mis cuadernos en otro directorio, necesito cambiar el directorio de la
+
+26
+00:01:46,800 --> 00:01:51,880
+Entonces, digamos que quería ir a mi carpeta de descargas porque allí es donde descargué el archivo zip.
+
+27
+00:01:52,110 --> 00:01:58,110
+Podría comenzar a escribir en D O N, entonces puedes tabular automáticamente la función de autocompletar esto y luego debería
+
+28
+00:01:58,110 --> 00:01:58,640
+llevarte a.
+
+29
+00:01:58,650 --> 00:02:04,260
+Si sales y haces clic en ingresar ahora descargas y luego podría escribir en el cuaderno DUPERE, ingresa y ejecuta
+
+30
+00:02:04,340 --> 00:02:09,840
+esto y ahora mi archivo de Jubran será cuando lo muestre en mi navegador en la carpeta de descargas.
+
+31
+00:02:10,740 --> 00:02:15,000
+Si desea continuar y volver a subir una carpeta, puede escribir CD.
+
+32
+00:02:15,010 --> 00:02:22,090
+Eso es cambiar el punto del espacio de la rectoría y eso lo llevará de vuelta a un directorio.
+
+33
+00:02:22,170 --> 00:02:25,110
+Puede continuar y buscar las líneas de solicitud de comando básicas.
+
+34
+00:02:25,110 --> 00:02:25,860
+Hay un poco diferente.
+
+35
+00:02:25,860 --> 00:02:32,250
+El centavo para usar Mac OS o Windows, por ejemplo, si quiere ver todas las carpetas del directorio
+
+36
+00:02:32,250 --> 00:02:37,400
+y su directorio actual en Windows que es d. Yo soy el directorio C.
+
+37
+00:02:37,410 --> 00:02:40,780
+Y esto básicamente te muestra todos los archivos aquí en tu directorio actual.
+
+38
+00:02:40,860 --> 00:02:46,170
+Si está en Mac, puede escribir L S para ver una lista de todos ellos.
+
+39
+00:02:46,170 --> 00:02:49,320
+Está bien, entonces, despeja todo lo que tienes aquí.
+
+40
+00:02:49,320 --> 00:02:53,290
+Si está en Windows, puede escribir C L S.
+
+41
+00:02:53,440 --> 00:03:00,120
+Si estás en una Mac y escribes la palabra "clear", déjame seguir y comenzar el libro de notas
+
+42
+00:03:00,120 --> 00:03:06,150
+de Jupiter y cuándo presionar "Enter" y abrirá un chip en un cuaderno en mi navegador.
+
+43
+00:03:06,150 --> 00:03:07,020
+Aquí está.
+
+44
+00:03:07,200 --> 00:03:11,940
+Voy a seguir adelante y encontraré dónde guardé realmente el archivo de descompresión.
+
+45
+00:03:11,940 --> 00:03:17,510
+Aquí está el campo de entrenamiento de aprendizaje de máquinas de ciencia de Python y el programa de descompresión del Pentágono que usaste.
+
+46
+00:03:17,520 --> 00:03:22,920
+Puede o no tener este dasht master al final, pero si continúa y hace clic en esta
+
+47
+00:03:22,920 --> 00:03:24,460
+carpeta, verá bastantes carpetas aquí.
+
+48
+00:03:24,480 --> 00:03:27,660
+Python para análisis de datos para visualización de datos.
+
+49
+00:03:27,660 --> 00:03:33,550
+Los datos de las secciones de aprendizaje automático de Python crash course mantuvieron algunos proyectos big data y Sparc y más.
+
+50
+00:03:33,570 --> 00:03:36,070
+La primera sección está debajo de esta carpeta.
+
+51
+00:03:36,090 --> 00:03:41,960
+Curso acelerado de Python si hace clic en esa sección donde esa carpeta tendrá el cuaderno.
+
+52
+00:03:42,180 --> 00:03:44,700
+Y aquí puede ver el punto IPY y ser archivos.
+
+53
+00:03:44,700 --> 00:03:50,670
+Así que para cada conferencia en la que me veis codificar algo hay una carpeta que tiene el nombre de la
+
+54
+00:03:50,730 --> 00:03:56,550
+sección general y luego serán una subcarpeta del nombre de la sección real y luego los archivos del cuaderno que
+
+55
+00:03:56,550 --> 00:03:58,630
+corresponden a los nombres de los conferenciantes.
+
+56
+00:03:58,620 --> 00:04:01,030
+Entonces, el primero es el curso intensivo de Python.
+
+57
+00:04:01,140 --> 00:04:02,590
+Puede continuar y hacer clic en esto.
+
+58
+00:04:02,670 --> 00:04:03,990
+Se tomarán un poco de tiempo para cargar.
+
+59
+00:04:03,990 --> 00:04:09,270
+Aquí está y todo lo que voy a tipear a lo largo de la conferencia está aquí para ti y
+
+60
+00:04:09,270 --> 00:04:11,460
+prácticamente al comienzo de cada sección del curso.
+
+61
+00:04:11,460 --> 00:04:16,380
+Le recordaré dónde puede encontrar los libros de notas reales para esa sección del curso, contesta
+
+62
+00:04:16,380 --> 00:04:19,100
+bastantes conferencias y puede ser difícil encontrarlo algunas veces.
+
+63
+00:04:19,230 --> 00:04:23,520
+Estaré allí para guiarte y si alguna vez tienes alguna pregunta sobre dónde encontrar las cosas,
+
+64
+00:04:23,520 --> 00:04:27,460
+siéntete libre de publicar los foros de preguntas y respuestas y estaré encantado de ayudarte.
+
+65
+00:04:27,510 --> 00:04:30,890
+Muy bien, luego de eso, iniciaremos Python para el análisis de datos.
+
+66
+00:04:30,900 --> 00:04:36,030
+Empezarás el número por s. Haga clic en PI y vea su cuaderno para eso.
+
+67
+00:04:36,030 --> 00:04:41,790
+Permítanme avanzar y analizar cómo funciona el sistema de cuaderno de notas de Júpiter en un sentido general.
+
+68
+00:04:41,910 --> 00:04:49,050
+Volveré hasta el maestro y luego haré clic en nuevo y aquí ya que
+
+69
+00:04:49,050 --> 00:04:50,350
+tengo varios entornos.
+
+70
+00:04:50,480 --> 00:04:55,110
+Voy a hacer clic en este, pero puedes hacer clic en Python o Python 3 o lo que sea bueno y hacer
+
+71
+00:04:55,110 --> 00:04:56,300
+clic en él debería estar bien.
+
+72
+00:04:56,310 --> 00:04:59,180
+De nuevo, solo puede hacer clic en nuevo, digan lo que diga en los cuadernos.
+
+73
+00:04:59,220 --> 00:05:00,640
+Deberías estar bien para hacer clic en él.
+
+74
+00:05:00,870 --> 00:05:04,040
+Obtendrás algo como esto para retitular este cuaderno.
+
+75
+00:05:04,070 --> 00:05:08,260
+No solo haga clic aquí debajo de la sección sin título y asígnele el nombre que desee.
+
+76
+00:05:08,280 --> 00:05:11,400
+Mi computadora portátil, por ejemplo, haga clic en Aceptar y lo nombraré.
+
+77
+00:05:11,400 --> 00:05:13,940
+Déjame seguir y mostrarte los conceptos básicos.
+
+78
+00:05:13,950 --> 00:05:21,440
+Esta es una celda de código que significa que puedo tipear el código de Python en la celda y luego ejecutarlo como un ejemplo muy
+
+79
+00:05:21,440 --> 00:05:28,070
+básico. Puedo decir que imprime hola y luego puedo ejecutar la celda haciendo clic aquí en ejecutar y seguir adelante y ejecutar
+
+80
+00:05:28,070 --> 00:05:30,690
+y mostrar yo el resultado debajo de la celda.
+
+81
+00:05:30,710 --> 00:05:35,150
+También puedo hacer lo mismo básicamente con cualquier código de Python si quisiera saber qué es uno más uno.
+
+82
+00:05:35,450 --> 00:05:41,120
+Simplemente hago clic en ejecutar aquí y me muestra el resultado en el aviso de la celda ya que imprimí
+
+83
+00:05:41,210 --> 00:05:44,980
+la salida aquí, no se mostró ya que no especifiqué para imprimir la salida.
+
+84
+00:05:45,050 --> 00:05:46,780
+Mostró la celda de salida.
+
+85
+00:05:46,910 --> 00:05:50,820
+Los hechos que dijo imprimen uno más uno.
+
+86
+00:05:51,170 --> 00:05:53,980
+Entonces no se mostraría tan poco.
+
+87
+00:05:54,140 --> 00:05:54,620
+DE ACUERDO.
+
+88
+00:05:54,800 --> 00:06:00,170
+que venir aquí y hacer clic en esta celda de ejecución, lo que puedes hacer es cambiar la entrada.
+
+89
+00:06:00,170 --> 00:06:01,580
+Así que no siempre tienes
+
+90
+00:06:01,820 --> 00:06:06,290
+Y es entonces cuando lo puse como un cambio de cadena de entrada.
+
+91
+00:06:06,310 --> 00:06:10,320
+Y si cambio, ingresará y ejecutará lo que esté en esa celda.
+
+92
+00:06:10,370 --> 00:06:11,400
+Así que tenlo en mente.
+
+93
+00:06:11,420 --> 00:06:16,370
+Esa es una forma realmente agradable de ejecutar cosas rápidamente para que no tengas que venir constantemente
+
+94
+00:06:16,370 --> 00:06:18,060
+y hacer clic en ejecutar vender.
+
+95
+00:06:18,200 --> 00:06:21,030
+Otro pequeño truco es alt enter.
+
+96
+00:06:21,200 --> 00:06:24,940
+Si cambio y enciendo esto, simplemente baja a la siguiente celda.
+
+97
+00:06:24,980 --> 00:06:30,210
+Pero si hago alt enter, también insertará una celda debajo de él.
+
+98
+00:06:30,230 --> 00:06:31,240
+Así que nota la diferencia aquí.
+
+99
+00:06:31,250 --> 00:06:35,240
+Si solo cambio ingrese en esta primera celda, la ejecuta.
+
+100
+00:06:35,240 --> 00:06:40,340
+Y así es como n cambia su número para mostrarle el orden de las cosas y cómo se ha ejecutado.
+
+101
+00:06:40,460 --> 00:06:44,930
+Entonces, si entro, realmente ingresa una celda para mí.
+
+102
+00:06:44,930 --> 00:06:49,600
+Ese es un truco muy bueno y te mostraré por qué más adelante cuando discutamos los ejercicios.
+
+103
+00:06:50,230 --> 00:06:50,980
+DE ACUERDO.
+
+104
+00:06:51,080 --> 00:06:53,510
+Ahora se estará preguntando cómo puedo guardar este cuaderno.
+
+105
+00:06:53,510 --> 00:07:00,380
+Puede hacer el control o hacer clic aquí en el pequeño disquete save, en realidad tiene una función de
+
+106
+00:07:00,380 --> 00:07:02,540
+autoguardado cada dos minutos guardada automáticamente.
+
+107
+00:07:02,630 --> 00:07:07,980
+O simplemente puede decir archivo y puede hacer un guardado y punto de control aquí.
+
+108
+00:07:08,020 --> 00:07:12,530
+Ahora también es posible que se pregunte cómo descargo este portátil como algo más.
+
+109
+00:07:12,530 --> 00:07:15,470
+Bueno, puedes ir a descargar archivos como.
+
+110
+00:07:15,470 --> 00:07:17,780
+Y en realidad tienes muchas opciones aquí para descargar.
+
+111
+00:07:17,960 --> 00:07:23,570
+Si solo quiere el archivo PI de punto, puede simplemente descargarlo como PI de punto y descargará y convertirá este
+
+112
+00:07:23,600 --> 00:07:29,810
+archivo de cuaderno en un archivo para que pueda usarlo como un script de Python normal y con la ID que desee.
+
+113
+00:07:30,290 --> 00:07:35,720
+O si solo quieres el HVM Elano, puedes hacer clic en cada T. METRO. y lo exportará a un archivo
+
+114
+00:07:35,720 --> 00:07:38,070
+simple básico que cualquier navegador puede mostrar.
+
+115
+00:07:38,100 --> 00:07:39,300
+Entonces tienes un montón de opciones.
+
+116
+00:07:39,320 --> 00:07:41,780
+Puedes entrar y echarles un vistazo.
+
+117
+00:07:41,780 --> 00:07:48,130
+Otra cosa que quiero que sepas es si alguna vez tienes, por ejemplo, un bucle infinito mientras se ejecuta.
+
+118
+00:07:48,140 --> 00:07:53,330
+Así que digamos que esto es como correr para siempre y desea reiniciar de alguna manera su kernel.
+
+119
+00:07:53,360 --> 00:07:59,070
+Lo que sucederá es que debajo de esto, en mi zoom un poco en lugar de un número aquí y al final, verá
+
+120
+00:07:59,070 --> 00:07:59,860
+un Asterix bajo.
+
+121
+00:07:59,920 --> 00:08:01,550
+Simplemente funcionará para siempre.
+
+122
+00:08:01,670 --> 00:08:07,880
+Lo que puedes hacer es entrar y decir kernel y luego reiniciar el kernel. ¿Quieres reiniciar el
+
+123
+00:08:07,880 --> 00:08:08,330
+kernel?
+
+124
+00:08:08,330 --> 00:08:09,660
+Continúa y reinicia.
+
+125
+00:08:09,790 --> 00:08:12,700
+Bueno, digamos reiniciar Kernel y luego diré que kernel está listo.
+
+126
+00:08:12,710 --> 00:08:17,600
+Básicamente, lo que sucede es que este portátil está conectado a un kernel y un kernel es solo una
+
+127
+00:08:17,600 --> 00:08:18,740
+instancia de Python en ejecución.
+
+128
+00:08:19,100 --> 00:08:24,560
+en Python, quizás escribas un script que se repite infinitamente o lleva mucho tiempo.
+
+129
+00:08:24,560 --> 00:08:26,300
+Y si algo anda mal
+
+130
+00:08:26,360 --> 00:08:31,970
+Siempre puede detener todo volviendo al núcleo y hacer clic en reiniciar también puede interrumpir si solo
+
+131
+00:08:32,000 --> 00:08:35,230
+quiere interrumpir esa celda específica, pero a veces no funciona.
+
+132
+00:08:35,240 --> 00:08:39,770
+Si obtienes un loop realmente malo que se ejecuta para siempre solo tenlo en cuenta.
+
+133
+00:08:40,100 --> 00:08:41,000
+DE ACUERDO.
+
+134
+00:08:41,390 --> 00:08:45,680
+Si alguna vez necesita ayuda además de todo lo que acabo de decirle aquí, siempre puede hacer clic
+
+135
+00:08:46,280 --> 00:08:49,050
+en Ayuda y luego le ayudarán en muchas de las bibliotecas.
+
+136
+00:08:49,070 --> 00:08:53,480
+hacer clic en que lo enviará a un enlace donde le informa sobre los cuadernos.
+
+137
+00:08:53,480 --> 00:08:56,760
+Vamos a trabajar con tan solo una libreta para ayudar a
+
+138
+00:08:56,930 --> 00:09:02,090
+Tenga en cuenta que estos portátiles solían llamarse portátiles I Python, pero ahora, como Júpiter puede
+
+139
+00:09:02,090 --> 00:09:05,450
+ejecutar otros idiomas, como Julieta, se llaman cuadernos de Júpiter.
+
+140
+00:09:05,450 --> 00:09:12,000
+Ahora, otra cosa que quería mencionar es que hay más atajos de teclado de los que acabo de decirle.
+
+141
+00:09:12,080 --> 00:09:17,540
+Puede ir a ayudar haciendo clic en los atajos de teclado y le dará una lista de todos los atajos
+
+142
+00:09:17,810 --> 00:09:19,700
+de teclado que están disponibles para usted.
+
+143
+00:09:20,420 --> 00:09:20,930
+Todo bien.
+
+144
+00:09:20,930 --> 00:09:25,490
+lo básico del portátil y prácticamente todo lo que necesita saber a medida que avanza en este curso.
+
+145
+00:09:25,490 --> 00:09:26,250
+Eso es realmente
+
+146
+00:09:26,330 --> 00:09:31,460
+Tiene preguntas que son más específicas para un tema en particular y no puede encontrar la ayuda aquí.
+
+147
+00:09:31,640 --> 00:09:33,310
+Continúa y busca en los foros de Kewaunee.
+
+148
+00:09:33,320 --> 00:09:37,820
+Si no puede encontrar eso allí o en el falso Q Siéntase libre de publicar las nuevas preguntas en los foros de
+
+149
+00:09:37,940 --> 00:09:39,850
+preguntas y respuestas y con mucho gusto lo ayudaré.
+
+150
+00:09:40,070 --> 00:09:44,300
+Muy rápido. Quería mostrarte cómo son los ejercicios a lo largo de este curso.
+
+151
+00:09:44,300 --> 00:09:48,140
+Así que, por ejemplo, digamos que usa python para el análisis de datos.
+
+152
+00:09:48,250 --> 00:09:53,030
+Estás en la sección PI del curso que has hecho las clases y estás listo para comenzar el ejercicio.
+
+153
+00:09:53,540 --> 00:09:57,410
+Cada ejercicio tendrá un archivo de soluciones asociado.
+
+154
+00:09:57,410 --> 00:09:59,050
+No revise primero el archivo de soluciones.
+
+155
+00:09:59,060 --> 00:10:01,100
+Deberías echarle un vistazo a este archivo de ejercicio.
+
+156
+00:10:01,220 --> 00:10:05,660
+Luego puede continuar y hacer clic en el archivo sexercise y éste aparecerá y se
+
+157
+00:10:05,660 --> 00:10:06,420
+verá algo así.
+
+158
+00:10:06,800 --> 00:10:10,120
+Y este archivo de ejercicios tendrá preguntas para usted.
+
+159
+00:10:10,400 --> 00:10:14,740
+Y luego una celda donde puedes seguir y responder a esas preguntas y muchas veces.
+
+160
+00:10:14,750 --> 00:10:17,740
+También te mostraré el resultado esperado.
+
+161
+00:10:17,780 --> 00:10:21,050
+Entonces, por ejemplo, aquí quieres crear una matriz de ceros.
+
+162
+00:10:21,050 --> 00:10:25,460
+Ahora sé que probablemente aún no sepa cómo hacerlo, pero tenga en
+
+163
+00:10:25,520 --> 00:10:32,210
+cuenta que si comienza a escribir cosas en la celda, como imprime hola y ejecuta esto, sobrescribirá la salida.
+
+164
+00:10:32,210 --> 00:10:38,020
+Así que tenlo en cuenta y será más relevante cuando realmente llegues a los ejercicios.
+
+165
+00:10:38,020 --> 00:10:40,580
+Algunos de ustedes se estarán preguntando qué tipo de celda es esta.
+
+166
+00:10:40,580 --> 00:10:44,490
+De hecho, solo muestra texto y no es una celda de código.
+
+167
+00:10:44,690 --> 00:10:46,780
+Bueno, esto se conoce como una celda de reducción.
+
+168
+00:10:46,790 --> 00:10:53,430
+Si continuamos y volvemos a mi computadora portátil aquí, todo lo que les he mostrado hasta ahora es una celda de código.
+
+169
+00:10:53,510 --> 00:10:58,910
+Pero lo que es realmente asombroso de las notebooks de Jupiter es que puedes ingresar notas en el
+
+170
+00:10:58,970 --> 00:11:02,540
+texto normal de rebajas para que puedas venir a buscar el código.
+
+171
+00:11:02,930 --> 00:11:07,790
+Haga clic en el descuento y lo convertirá en una celda de descuento.
+
+172
+00:11:07,910 --> 00:11:14,510
+Y ahora, si ejecuto la celda, básicamente es solo texto básico para que escriba notas para mí, lo que es realmente
+
+173
+00:11:14,510 --> 00:11:15,760
+útil cuando estás aprendiendo.
+
+174
+00:11:15,770 --> 00:11:17,770
+Puedes decir algo como.
+
+175
+00:11:17,900 --> 00:11:21,770
+Use imprimir para imprimir cadenas.
+
+176
+00:11:21,770 --> 00:11:29,330
+Ejecuta esa pequeña nota para ti y luego puedes seguir y escribir impresiones, etc. de las conferencias y esto también admite un formato de reducción.
+
+177
+00:11:29,330 --> 00:11:33,850
+y esa es una forma realmente agradable de tomar notas a medida que
+
+178
+00:11:33,850 --> 00:11:35,040
+avanza a lo largo
+
+179
+00:11:35,060 --> 00:11:40,580
+Por lo tanto, si está familiarizado con el formato de rebajas, por ejemplo, cómo usar etiquetas hash para negrita, etc. O tal vez hacer un taluk con solo un par de labios de asteriscos.
+
+180
+00:11:40,610 --> 00:11:46,040
+Más puntos o sangrado para un tipo de formato
+
+181
+00:11:46,040 --> 00:11:52,220
+de código que también se transporta en estas celdas de descuento.
+
+182
+00:11:52,240 --> 00:11:53,310
+Ahora no vamos a ir más allá
+
+183
+00:11:53,510 --> 00:11:58,490
+de la sintaxis reducida ya que puedo ser un curso completo, pero solo tenga en cuenta si veo algo así como este tipo de marca y látex que dice que es una celda de reducción.
+
+184
+00:11:58,490 --> 00:12:03,760
+una celda de descuento y luego se preguntan por qué no se está ejecutando mi código.
+
+185
+00:12:04,130 --> 00:12:09,290
+Un error común que a veces hacen los principiantes es que accidentalmente lo conviertan en
+
+186
+00:12:09,290 --> 00:12:11,550
+Si su código no aparece resaltado, probablemente signifique que solo está ejecutando una celda de reducción.
+
+187
+00:12:11,630 --> 00:12:17,390
+Si desea cambiar esta celda de descuento a una celda de código, solo acceda aquí
+
+188
+00:12:17,390 --> 00:12:22,640
+y seleccione el código, luego ejecute esto con un cambio de ingreso y listo.
+
+189
+00:12:22,640 --> 00:12:26,120
+De acuerdo, recuerde que shift enter ejecuta una celda y luego Alt Enter ejecutará una celda y generará una celda debajo de ella.
+
+190
+00:12:26,510 --> 00:12:34,250
+Entonces, si continúas y haces clic en "alternativo", estás aquí, así
+
+191
+00:12:34,940 --> 00:12:44,180
+que haz clic en "Alt Alt Center" y en poner una nueva celda.
+
+192
+00:12:44,180 --> 00:12:44,980
+Ahora solo me refiero a lo que estoy haciendo en mi teclado y no quiero escribir una cadena.
+
+193
+00:12:45,110 --> 00:12:49,700
+Así que, de nuevo, uno más un cambio ingresa y lo ejecuta uno más un alternador.
+
+194
+00:12:49,700 --> 00:12:54,900
+Sigue colocando nuevas celdas debajo, lo que es realmente útil para los ejercicios.
+
+195
+00:12:54,900 --> 00:12:59,840
+Entonces, si vuelves aquí, esto es ejercicio.
+
+196
+00:12:59,840 --> 00:13:01,710
+Tenga en cuenta que tengo esta matriz de salida 1 1 1 en 1.
+
+197
+00:13:01,940 --> 00:13:04,850
+No quiero sobrescribir eso.
+
+198
+00:13:04,890 --> 00:13:06,060
+Puedo simplemente hacer clic en
+
+199
+00:13:06,110 --> 00:13:12,020
+este texto o marcar la casilla "doc" y me da una pequeña celda aquí para un buffer así puedo imprimir lo que quiera.
+
+200
+00:13:12,380 --> 00:13:14,960
+Shift ingrese en la prueba de salidas.
+
+201
+00:13:15,140 --> 00:13:17,750
+Todo bien.
+
+202
+00:13:17,810 --> 00:13:18,300
+No se preocupe
+
+203
+00:13:18,410 --> 00:13:21,710
+si no ha entendido todo por completo porque vamos a revisar todo esto cuando lleguemos a los ejercicios.
+
+204
+00:13:21,710 --> 00:13:23,840
+Todo bien.
+
+205
+00:13:24,440 --> 00:13:25,020
+Eso es básicamente todo lo que necesita saber para los cuadernos de notas de Júpiter.
+
+206
+00:13:25,070 --> 00:13:27,990
+Si tiene alguna pregunta, no dude en publicarla y en los foros de preguntas y respuestas.
+
+207
+00:13:28,010 --> 00:13:30,820
+Sabes que estaré encantado de ayudarte.
+
+208
+00:13:30,820 --> 00:13:32,340
+sistema o en su terminal.
+
+209
+00:13:32,360 --> 00:13:37,670
+Solo tenga en cuenta que el sistema de notebook Jupiter comenzará dondequiera que esté en el símbolo del
+
+210
+00:13:37,730 --> 00:13:38,810
+Necesitará un directorio
+
+211
+00:13:38,810 --> 00:13:44,330
+de cambios usando un CD si desea ejecutar o guardar sus cuadernos en otro lugar de su computadora.
+
+212
+00:13:44,330 --> 00:13:45,500
+De acuerdo, gracias a todos y lo veré en la próxima conferencia.
+
+213
+00:13:45,500 --> 00:13:48,440
+&nbsp;

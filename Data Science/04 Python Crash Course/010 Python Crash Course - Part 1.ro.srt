@@ -1,0 +1,1031 @@
+1
+00:00:05,130 --> 00:00:10,470
+Bună ziua tuturor și bun venit la cursul de prăbușire Python Partea 1 și Partea 1 vom merge mai departe
+
+2
+00:00:10,470 --> 00:00:14,270
+și vom începe discuția despre Python, trecând peste tipurile de date de bază.
+
+3
+00:00:14,280 --> 00:00:17,730
+Permiteți-mi să merg mai departe și să vă arăt unde găsiți că ați fost în notebook-uri pentru această serie de cursuri.
+
+4
+00:00:18,720 --> 00:00:22,010
+Ok, aici sunt la depozitul descărcat și dezarhivat.
+
+5
+00:00:22,200 --> 00:00:28,190
+Dacă mergeți mai departe și mergeți la dosarul Python crash course veți vedea trei notebook-uri aici sunt fișiere IPY
+
+6
+00:00:28,220 --> 00:00:28,820
+inby.
+
+7
+00:00:28,830 --> 00:00:31,940
+Vom lucra cu notebook-ul de circulație a lui Python.
+
+8
+00:00:31,940 --> 00:00:36,990
+Și dacă faceți clic pe asta, ar trebui să vedeți un notebook care arată ceva de genul acesta și are toate
+
+9
+00:00:36,990 --> 00:00:38,720
+tipurile de date care se vor întâmpla.
+
+10
+00:00:38,790 --> 00:00:43,830
+Vom începe prin a trece peste numerele de fluxuri de imprimare liste de dicționari și tuple și seturi de booleani.
+
+11
+00:00:44,130 --> 00:00:45,680
+Vom vedea cât de departe ajungem.
+
+12
+00:00:45,750 --> 00:00:48,200
+Și mai târziu vom acoperi câteva caracteristici mai avansate.
+
+13
+00:00:48,300 --> 00:00:54,910
+Mă duc să încep și să pornesc un nou notebook aici și să-l pregătesc să plece.
+
+14
+00:00:55,110 --> 00:01:00,030
+Voi merge și ce este în vedere remorcă cu bara de cap și comutați bara de instrumente doar pentru a obține un pic
+
+15
+00:01:00,030 --> 00:01:00,970
+mai mult spațiu aici.
+
+16
+00:01:01,140 --> 00:01:06,450
+Și din nou tot ce voi face este să scriu toate exemplele de aici și să explic codul pe
+
+17
+00:01:06,480 --> 00:01:07,330
+măsură ce mergem.
+
+18
+00:01:07,340 --> 00:01:12,220
+Deci, dacă aveți nevoie vreodată de o referință, puteți să copiați și să lipiți din acest notebook.
+
+19
+00:01:12,720 --> 00:01:12,990
+In regula.
+
+20
+00:01:13,020 --> 00:01:20,280
+Să mergem mai departe și să începem cu numerele de bază și aritmetica am crezut că are două tipuri de numere de bază.
+
+21
+00:01:20,580 --> 00:01:23,350
+Există întregul care este ceva de genul 1.
+
+22
+00:01:23,640 --> 00:01:27,540
+Și atunci există numărul punctului variabil care este ceva de genul punct zero.
+
+23
+00:01:27,540 --> 00:01:32,880
+Deci, un număr în virgulă mobilă are o zecimă atașată la acesta și cu oricare dintre aceste numere puteți efectua
+
+24
+00:01:32,880 --> 00:01:34,830
+aritmetică de bază așa cum v-ați aștepta.
+
+25
+00:01:34,840 --> 00:01:37,260
+Deci, pentru plus, este doar un semn plus.
+
+26
+00:01:37,260 --> 00:01:43,740
+Unul plus unul și eu fac doar schimbare intrați aici este rulat celulele pentru multiplicare este doar un asterix Deci,
+
+27
+00:01:43,740 --> 00:01:45,400
+de 1 ori 3.
+
+28
+00:01:45,480 --> 00:01:46,950
+Doar un asterex ca ăsta.
+
+29
+00:01:46,950 --> 00:01:52,340
+Viziunea va fi doar o lovitură în față una împărțită pe două este 0. 5.
+
+30
+00:01:52,350 --> 00:01:54,370
+Și rețineți că și eu am pus în întregi.
+
+31
+00:01:54,540 --> 00:02:00,300
+Obțineți un punct plutitor afară dacă sunteți un utilizator Python 2, va trebui să vă asigurați că unul din ele însuși este un
+
+32
+00:02:00,690 --> 00:02:03,090
+număr în virgulă mobilă pentru a obține același rezultat.
+
+33
+00:02:03,090 --> 00:02:08,480
+Eu doar pentru exponenți, de exemplu, la puterea a patru.
+
+34
+00:02:08,550 --> 00:02:10,450
+Doar două Asterix au pus împreună.
+
+35
+00:02:10,470 --> 00:02:13,050
+Deci doi la puterea celor patru sunt 16.
+
+36
+00:02:13,050 --> 00:02:20,430
+Aceasta este de două ori de două ori de două ori până la altceva de știut este că Python va urma un ordin
+
+37
+00:02:20,430 --> 00:02:22,470
+de operațiuni așa cum v-ați aștepta.
+
+38
+00:02:22,500 --> 00:02:26,520
+Și puteți utiliza paranteze pentru a clarifica efectiv ordinea operațiunilor.
+
+39
+00:02:26,670 --> 00:02:36,900
+De exemplu, dacă voi merge mai departe și veți scrie în două plus plus trei ori cinci plus cinci ordine matematică de operațiuni ar declara
+
+40
+00:02:36,900 --> 00:02:41,030
+de fapt, multiplicarea să apară mai întâi și apoi adăugarea.
+
+41
+00:02:41,040 --> 00:02:45,120
+Deci, dacă execut acest lucru, voi primi 15 plus două plus cinci.
+
+42
+00:02:45,240 --> 00:02:47,430
+Deci, 15 plus șapte sunt 22.
+
+43
+00:02:47,490 --> 00:02:52,890
+Dacă doriți să spuneți ceva de genul doi plus trei ori rezultatul a cinci plus
+
+44
+00:02:52,890 --> 00:03:00,300
+cinci, puteți utiliza paranteze pentru a vă clarifica ordinea, astfel încât să puteți utiliza paranteze în acest fel pentru a spune
+
+45
+00:03:00,300 --> 00:03:04,850
+de fapt de cinci ori 10 care vă vor primi 50.
+
+46
+00:03:04,890 --> 00:03:08,570
+Ultima operație aritmetică pe care vreau să vă arăt este funcția de model.
+
+47
+00:03:08,820 --> 00:03:13,990
+Funcția sau modulul Ma'at așa cum este cunoscut, de asemenea, este semnul procentului din Python.
+
+48
+00:03:14,610 --> 00:03:18,660
+Și în principiu va reveni ceea ce rămâne după divizare.
+
+49
+00:03:18,780 --> 00:03:22,010
+Deci, pentru două împărțite este două rămășițe.
+
+50
+00:03:22,010 --> 00:03:23,210
+Zero.
+
+51
+00:03:23,250 --> 00:03:33,030
+Deci, atunci cand alergi pentru maadul doi, vei ajunge la zero, in timp ce rezultatul cinci, impartit de doi, este de la restul de la unu
+
+52
+00:03:33,390 --> 00:03:36,400
+la patru, plus unul este de cinci.
+
+53
+00:03:36,500 --> 00:03:38,510
+Și astfel veți ieși restul 1.
+
+54
+00:03:38,550 --> 00:03:47,480
+Și aceasta este o modalitate frumoasă de a verifica dacă numerele sunt chiar așa că veți ști că, de exemplu, dacă un mod 2 returnează 0, 8
+
+55
+00:03:47,500 --> 00:03:49,510
+nu este nici măcar un număr.
+
+56
+00:03:49,530 --> 00:03:54,630
+Pentru că două se întâmplă uniform la acel număr și are restul zero.
+
+57
+00:03:54,930 --> 00:03:58,910
+Acum hai să vorbim repede despre alocările variabilelor.
+
+58
+00:03:59,160 --> 00:04:04,680
+De multe ori doriți să alegeți nume de variabile pentru a atribui un anumit obiect sau tip de date unui nume
+
+59
+00:04:04,680 --> 00:04:05,270
+de variabilă.
+
+60
+00:04:05,400 --> 00:04:08,150
+În Python, operatorul de atribuire este doar un semn egal.
+
+61
+00:04:08,400 --> 00:04:11,790
+Deci, veți alege numele variabilei dvs. doar începând să tastați chestii.
+
+62
+00:04:11,790 --> 00:04:17,160
+Cum ar fi V-A, ei toți spun egali și apoi orice tip de obiect pe care doriți să-l puneți acolo.
+
+63
+00:04:17,160 --> 00:04:23,880
+Așa că, de exemplu, putem pune în două și apoi ori de câte ori numesc numele variabilei V A
+
+64
+00:04:23,880 --> 00:04:25,380
+R, voi obține două.
+
+65
+00:04:25,380 --> 00:04:31,550
+De exemplu, pot spune că x este egal cu 2 y este egal cu trei.
+
+66
+00:04:31,740 --> 00:04:36,530
+Și acum pot spune X plus Y și ieși 5.
+
+67
+00:04:36,630 --> 00:04:41,730
+De asemenea, pot să realochez X definind-o singură.
+
+68
+00:04:41,760 --> 00:04:48,030
+Așadar, pot spune că x este egal cu x plus X, astfel încât rezultă că x este egal cu 4.
+
+69
+00:04:48,060 --> 00:04:53,280
+Și acum, ori de câte ori îl sun din nou pe X, va fi egal cu 4, ceea ce înseamnă că, dacă trebuia să rulez
+
+70
+00:04:53,760 --> 00:04:57,560
+acea celulă din nou, X este egal cu x plus X de fiecare dată când o conduc.
+
+71
+00:04:57,630 --> 00:05:04,080
+Deci, în mod esențial, se va dubla valoarea lui x și se va re-atribui X deoarece este o dublă valoare.
+
+72
+00:05:04,530 --> 00:05:05,070
+In regula.
+
+73
+00:05:05,280 --> 00:05:07,560
+Câteva reguli despre crearea acestor nume de variabile.
+
+74
+00:05:07,560 --> 00:05:14,270
+Nu ar trebui să înceapă cu numerele, astfel încât să nu poți spune că ceva de genul 12 V-A este egal cu 12.
+
+75
+00:05:14,400 --> 00:05:19,890
+În caz contrar, veți obține o eroare de sintaxă în o'War știți că este sintaxă invalidă Alexiou vă dă eroarea.
+
+76
+00:05:20,130 --> 00:05:26,160
+Deci nu puteți începe cu numere și de asemenea nu puteți începe cu simboluri speciale, astfel
+
+77
+00:05:26,160 --> 00:05:35,110
+încât să nu puteți spune ceva de genul Semnal Dollar, pentru că veți începe să obțineți probleme aici pentru a obține erori de sintaxă.
+
+78
+00:05:35,100 --> 00:05:40,190
+Ar trebui să înceapă doar cu o literă mică, dacă doriți să legați împreună mai multe cuvinte.
+
+79
+00:05:40,290 --> 00:05:45,960
+Ar trebui să utilizați o subliniere pentru a le separa astfel încât să subliniez numele de subliniere a.
+
+80
+00:05:45,990 --> 00:05:50,950
+Sunt alte limbi cum folosiți o perioadă pentru a separa acest lucru pentru Python.
+
+81
+00:05:50,970 --> 00:05:54,180
+Sintaxa corectă este utilizarea unui subliniere.
+
+82
+00:05:54,180 --> 00:05:57,110
+Acum hai să mergem mai departe și să vorbim despre șiruri de caractere.
+
+83
+00:05:57,530 --> 00:06:03,570
+Așa că am să fac comentarii făcând o etichetă hash pe șiruri de caractere și ceva de la o etichetă hash în fața
+
+84
+00:06:03,570 --> 00:06:03,990
+ei.
+
+85
+00:06:03,990 --> 00:06:09,330
+Veți observa că culoarea este diferită și vedeți pentru că este un comentariu, așa că nu va funcționa.
+
+86
+00:06:09,320 --> 00:06:10,720
+Deci, poți să introduci ceva aici.
+
+87
+00:06:10,740 --> 00:06:12,060
+Nu va fugi.
+
+88
+00:06:12,060 --> 00:06:17,250
+Bine, să mergem mai departe pentru a merge la șiruri de caractere și voi merge mai departe și mărește un pic, astfel încât
+
+89
+00:06:17,250 --> 00:06:19,590
+să aveți o vedere mai bună a acestui lucru.
+
+90
+00:06:20,310 --> 00:06:23,460
+Și pentru șiruri există două moduri de a crea un șir.
+
+91
+00:06:23,700 --> 00:06:30,930
+Puteți utiliza ghilimele simple și rețineți modul în care culoarea sa schimbat în Cadrul că este vorba de un șir
+
+92
+00:06:30,930 --> 00:06:35,190
+sau puteți utiliza ghilimele duble astfel că acesta este un șir.
+
+93
+00:06:35,940 --> 00:06:41,670
+Și apoi puteți împacheta, de asemenea, ghilimele duble în jurul unor citate simple, deci
+
+94
+00:06:41,670 --> 00:06:47,470
+să spunem că aveți o propoziție care spune ceva de genul asta, cum ar fi cant.
+
+95
+00:06:47,610 --> 00:06:54,150
+Deci, dacă aveți această cotă unică, dar doriți să o păstrați înăuntru, atunci puteți împacheta acest lucru în jurul valorii de
+
+96
+00:06:54,150 --> 00:06:58,690
+ghilimele duble și veți observa că acel citat unic este păstrat în cadrul șirului.
+
+97
+00:06:58,710 --> 00:07:03,390
+Deci, dacă vreți să aveți de-a face cu fie că doriți o singură citare sau o dublă cotație
+
+98
+00:07:03,390 --> 00:07:09,000
+în interiorul unui șir, întotdeauna îl puteți împacheta în jurul unui alt set de citate atât dublu, cât și unic, în așteptare
+
+99
+00:07:09,000 --> 00:07:10,420
+și ce este în interior.
+
+100
+00:07:10,810 --> 00:07:15,330
+OK, să mergem mai departe și să vorbim despre imprimarea șirurilor de caractere.
+
+101
+00:07:15,330 --> 00:07:22,740
+Voi face o variabilă numită X într-un semn că șirul salut pentru notebook-ul Jupiter dacă scriu doar
+
+102
+00:07:22,740 --> 00:07:28,950
+în X se va arăta fără și apoi voi arăta citatele Bună ziua aici.
+
+103
+00:07:28,950 --> 00:07:32,880
+Și acest lucru este, în esență, același lucru ca și cum ați fi tastat acest lucru direct
+
+104
+00:07:33,150 --> 00:07:35,290
+în consola din Python doar tastând în variabila x.
+
+105
+00:07:35,420 --> 00:07:42,510
+Voi pune șirul de salut sau Python Cu toate acestea, dacă doriți să imprimați efectiv ieșirile lui X, va trebui să
+
+106
+00:07:42,510 --> 00:07:48,030
+îl transferați în funcția de tipărire care urmează să fie imprimate paranteze și apoi x în interiorul
+
+107
+00:07:48,030 --> 00:07:48,980
+acestor paranteze.
+
+108
+00:07:49,200 --> 00:07:49,590
+Și notați.
+
+109
+00:07:49,590 --> 00:07:50,540
+Acum diferența aici.
+
+110
+00:07:50,580 --> 00:07:55,410
+Nu mai am indicatorul ăla și nu mai am citate singură.
+
+111
+00:07:55,500 --> 00:08:00,840
+Deci, așa trebuie să afișați oficial lucrurile atunci când încercați să afișați rezultatul în Python
+
+112
+00:08:00,870 --> 00:08:02,340
+este declarația de tipărire.
+
+113
+00:08:02,340 --> 00:08:06,370
+Acum, dați-mi voie să vă prezint cum vă puteți formata declarațiile de tipărire.
+
+114
+00:08:06,390 --> 00:08:15,180
+Să presupunem că am un nume de variabilă egal cu 12 și un nume egal cu Sam.
+
+115
+00:08:15,180 --> 00:08:18,990
+Acum vreau să tipăresc lucruri pe baza acestor variabile.
+
+116
+00:08:19,260 --> 00:08:21,790
+Pot face acest lucru cu formatul de imprimare.
+
+117
+00:08:22,230 --> 00:08:32,800
+Voi lua un șir și voi spune numărul meu este și voi pasan un bloc de citate sau paranteze curl acolo.
+
+118
+00:08:33,400 --> 00:08:39,770
+Și numele meu este și voi trece un alt set de paranteze curl.
+
+119
+00:08:40,020 --> 00:08:46,320
+Apoi, în formatele punctelor false și notați cum este colorat aici pentru a indica că aceasta este o metodă specială
+
+120
+00:08:46,320 --> 00:08:52,290
+în afara șirului și apoi puteți merge mai departe și faceți este să treceți în numele variabilelor în ordinea
+
+121
+00:08:52,500 --> 00:08:56,380
+în care doriți să fie completate în acestea cu paranteze curbate.
+
+122
+00:08:56,430 --> 00:09:03,810
+Deci, dacă am introdus acest lucru și dacă rulați acest lucru, Python citește că aveți aici paranteze în șir și
+
+123
+00:09:03,900 --> 00:09:08,480
+că aveți acel format și le veți pune în ordinea dorită.
+
+124
+00:09:08,550 --> 00:09:14,440
+Așa că am să spun OK numb este înlocuit aici pentru aceste paranteze curt și numele este înlocuit aici.
+
+125
+00:09:14,460 --> 00:09:15,790
+Pentru aceste paranteze curbate.
+
+126
+00:09:15,930 --> 00:09:21,480
+Și aceasta este o modalitate convenabilă de a utiliza numele variabilelor în instrucțiunile de imprimare în loc
+
+127
+00:09:21,480 --> 00:09:24,610
+să trebuiască să scrieți 12 sau Sam tot timpul.
+
+128
+00:09:24,930 --> 00:09:27,400
+Și rețineți că, de fapt, nu imprim acest lucru încă.
+
+129
+00:09:27,480 --> 00:09:31,320
+Va trebui să închei totul în jurul declarațiilor de tipărire.
+
+130
+00:09:31,320 --> 00:09:35,760
+Deci, asigurați-vă că prinții sunt echilibrați și puteți vedea doar prin selectarea unuia dintre prinții de imprimare
+
+131
+00:09:35,760 --> 00:09:37,540
+pentru a fi evidențiate în verde.
+
+132
+00:09:37,600 --> 00:09:43,860
+Acum, dacă aș fi fost la acest lucru a fost cu adevărat tipărite și nu mai am
+
+133
+00:09:43,860 --> 00:09:52,050
+că au vândut altfel puteți utiliza formatul de imprimare este de a spune dacă mergem înainte și schimba acest lucru, puteți trece orice
+
+134
+00:09:52,350 --> 00:09:54,010
+variabilă în paranteze curl.
+
+135
+00:09:54,420 --> 00:10:00,980
+Așa că pot spune una din interiorul brațelor și două în interiorul parantezelor.
+
+136
+00:10:01,170 --> 00:10:08,070
+Și acum că am trecut în aceste nume, pot merge în interiorul declarației mele în format doc, spunând că unul este egal
+
+137
+00:10:08,250 --> 00:10:11,380
+și apoi orice variabilă vreau să fie egal cu.
+
+138
+00:10:11,430 --> 00:10:17,910
+În acest caz, vreau să fie egal cu acel amorț și apoi două am vrut să fie egală cu numele.
+
+139
+00:10:18,000 --> 00:10:20,850
+Și dacă voi rula asta, voi obține exact același rezultat.
+
+140
+00:10:20,850 --> 00:10:26,580
+Ce este frumos cu privire la acest lucru nu mai trebuie să vă faceți griji cu privire la
+
+141
+00:10:26,790 --> 00:10:34,440
+formatarea fiind în exact aceeași ordine pe care doriți pentru paranteze curl și puteți continuu să introduceți paranteze mai curly atât de mult și apoi
+
+142
+00:10:34,440 --> 00:10:41,420
+puteți introduce într-o aici din nou și a observat că Python poate căuta acum și pune în variabilele dvs. în mai mult de
+
+143
+00:10:41,420 --> 00:10:47,280
+o singură dată, așa că vine aici se uită la numele variabilei, apoi merge la formatul dvs. și verificări.
+
+144
+00:10:47,300 --> 00:10:49,190
+OK ce este numele variabilei acolo.
+
+145
+00:10:49,190 --> 00:10:52,970
+De exemplu, 2 arata ca aici se spune ca 2 este egal cu numele.
+
+146
+00:10:53,000 --> 00:10:53,230
+In regula.
+
+147
+00:10:53,240 --> 00:10:57,880
+Și apoi completați numele aici și apoi știm că numele este egal cu șirul Sam.
+
+148
+00:10:57,890 --> 00:11:00,640
+Așa că merge mai departe și o pune înăuntru.
+
+149
+00:11:00,650 --> 00:11:03,080
+Bine, mergeți și nu ezitați să postați întrebări.
+
+150
+00:11:03,080 --> 00:11:07,670
+Forumul de întrebări și răspunsuri dacă sunteți confuz în ceea ce privește formatul acestei tipăriri, dar este în principiu simplu.
+
+151
+00:11:07,790 --> 00:11:10,440
+Doar puneți șirul în brațele voastre.
+
+152
+00:11:10,560 --> 00:11:15,020
+Apoi aș sugera să utilizați această metodă de trecere în numele variabilelor, deoarece este puțin
+
+153
+00:11:15,020 --> 00:11:19,430
+mai clar atunci când vă întoarceți și nu trebuie să vă faceți griji în legătură
+
+154
+00:11:19,430 --> 00:11:21,750
+cu comanda în interiorul acestui apel format.
+
+155
+00:11:21,770 --> 00:11:27,080
+Acum, să mergem mai departe și să extindem subiectul nostru de șiruri de caractere în indexarea șirurilor.
+
+156
+00:11:27,230 --> 00:11:33,780
+Dacă am un șir numit S și voi spune că x este egal cu salutul.
+
+157
+00:11:34,230 --> 00:11:37,140
+S aici este doar o secvență de elemente.
+
+158
+00:11:37,140 --> 00:11:44,990
+Și în acest caz fiecare element este o literă și pot să apuc elemente specifice din acea secvență
+
+159
+00:11:46,010 --> 00:11:49,730
+de caractere folosind această notație pătratică și indexându-l.
+
+160
+00:11:49,730 --> 00:11:51,400
+Pythoness începe de la zero.
+
+161
+00:11:51,440 --> 00:11:59,210
+Și aceasta este ceva de știut dacă spun paranteze paranteză X la zero și rulați acest lucru sau întoarceți
+
+162
+00:11:59,300 --> 00:12:00,180
+elementele zero.
+
+163
+00:12:00,470 --> 00:12:07,570
+Deci, aici vedem că e apucătoare. Salut verifică cum există elemente și apoi se întoarce 0.
+
+164
+00:12:07,700 --> 00:12:12,140
+Dă-i drumul și vezi dacă poți lua ultimul acolo în Hilo.
+
+165
+00:12:12,380 --> 00:12:20,830
+Ei bine, ce ai face tu, ai spune bine ce indice spacer este ca e la 0 1 2 3 4.
+
+166
+00:12:21,710 --> 00:12:27,370
+Puneți patru în aceste paranteze și luați-o afară.
+
+167
+00:12:27,380 --> 00:12:33,050
+Celălalt lucru pe care trebuie să îl rețineți este că puteți folosi și ceea ce este cunoscut ca notație de felie, de fapt,
+
+168
+00:12:33,110 --> 00:12:34,600
+să luați felii de șir.
+
+169
+00:12:34,760 --> 00:12:38,980
+Mă duc să merg și să scriu în loc de estetică să salut.
+
+170
+00:12:39,020 --> 00:12:44,410
+Voi spune a b c d e f g h i j k.
+
+171
+00:12:45,020 --> 00:12:50,300
+Voi rula asta și acum ce voi continua și voi vedea dacă scriu în 0.
+
+172
+00:12:50,330 --> 00:12:53,000
+Chiar aici, în aceste paranteze, ar trebui să mă întorc.
+
+173
+00:12:53,300 --> 00:12:54,600
+OK că are sens.
+
+174
+00:12:54,770 --> 00:13:00,470
+Să spunem că am vrut să iau totul ca și dincolo.
+
+175
+00:13:00,770 --> 00:13:05,380
+Ei bine, pot folosi notația de colon, care este, de asemenea, cunoscută ca sintaxa de felie pentru a face acest lucru.
+
+176
+00:13:05,430 --> 00:13:09,810
+Voi spune 0 ca la un colon.
+
+177
+00:13:09,920 --> 00:13:15,360
+Rulați acest lucru și acest colon afirmă că OK începe de la zero.
+
+178
+00:13:15,530 --> 00:13:22,200
+Luați totul dincolo de el și această notație funcționează invers.
+
+179
+00:13:22,400 --> 00:13:27,770
+Pot spune să ia totul cu colonul până la un anumit indice.
+
+180
+00:13:27,770 --> 00:13:31,210
+Deci, să spunem că spun a b c d.
+
+181
+00:13:31,370 --> 00:13:35,660
+Deci D este indicele 3 0 1 2 3.
+
+182
+00:13:35,780 --> 00:13:43,250
+Dacă trec în trei aici, acest lucru îi comandă în principiu lui Python să spună OK să ia totul până la, dar
+
+183
+00:13:43,250 --> 00:13:45,370
+să nu includă indexul 3.
+
+184
+00:13:45,380 --> 00:13:49,500
+Acest lucru este uneori confuz pentru începători, deoarece se așteaptă să apară.
+
+185
+00:13:49,520 --> 00:13:54,860
+Ei bine, pentru că este poziția indexului 3, dar deoarece indexarea începe de la zero,
+
+186
+00:13:54,860 --> 00:14:01,710
+ar trebui să vă gândiți la această comandă ca să luați totul și să nu includeți indicele elementului de caractere trei.
+
+187
+00:14:01,880 --> 00:14:05,900
+Și vă vom arăta mai multe despre felierea notației când vorbim despre
+
+188
+00:14:05,900 --> 00:14:08,340
+listele, deoarece este același tip de idee.
+
+189
+00:14:08,420 --> 00:14:14,630
+Și apoi, în cele din urmă, combinăm aceste două idei aici, în măsura în care începeți
+
+190
+00:14:14,930 --> 00:14:23,700
+și capturați totul dincolo de el sau luați totul până la, dar fără a include un anumit punct index, spunând că începeți la zero.
+
+191
+00:14:24,190 --> 00:14:29,150
+Colin apuca totul până la un anumit indice, cum ar fi trei.
+
+192
+00:14:29,240 --> 00:14:31,380
+Acum, care returnează același rezultat ca ABC.
+
+193
+00:14:31,400 --> 00:14:37,090
+Dar ceea ce pot face este să înlocuiesc aceste două numere pentru a stabili punctul meu de început și punctul meu final.
+
+194
+00:14:37,130 --> 00:14:43,440
+Să mergem mai departe și să luăm D E F, astfel că d începe la indexul 3.
+
+195
+00:14:43,910 --> 00:14:50,090
+Înseamnă dacă merg și încep să înlocuiesc asta, voi începe la indexul 3 0 1 2 3 și
+
+196
+00:14:50,090 --> 00:14:52,220
+apoi voi merge până la G.
+
+197
+00:14:52,250 --> 00:15:00,030
+Deci asta e 0 1 2 3 4 5 6 7 să spun 3 colon 6.
+
+198
+00:15:00,290 --> 00:15:02,840
+Rulați asta și am primit.
+
+199
+00:15:02,870 --> 00:15:06,580
+Din nou, este doar indicele pe care îl începeți la colonul inclus.
+
+200
+00:15:06,590 --> 00:15:12,170
+Ceea ce înseamnă că prindeți tot parcursul și apoi ultimul dvs. index este indicele pe care nu îl includeți deoarece
+
+201
+00:15:12,200 --> 00:15:13,670
+indexarea începe de la zero.
+
+202
+00:15:13,760 --> 00:15:17,180
+Deci g nu este inclus nici indexul 6.
+
+203
+00:15:17,450 --> 00:15:26,840
+OK bine din nou reitere această idee atunci când vorbim despre acest lucru care vine în prezent liste sunt o
+
+204
+00:15:26,900 --> 00:15:32,560
+secvență de elemente într-un set pătrat de paranteze pătrate separate prin virgule.
+
+205
+00:15:32,570 --> 00:15:39,270
+Deci, aici aveți o listă o listă de două trei poate lua în practic orice tip de date.
+
+206
+00:15:39,710 --> 00:15:45,130
+Așadar, am și o listă cu șiruri de caractere a b c și nu există plângeri aici.
+
+207
+00:15:45,260 --> 00:15:58,460
+Mă duc să fac o variabilă numită lista mea și să o plasez egală cu o execuție b c și dacă vreau să adaug un
+
+208
+00:15:58,460 --> 00:16:03,020
+element la sfârșitul listei mele, folosesc metoda append.
+
+209
+00:16:03,080 --> 00:16:06,950
+Spun că lista mea de subliniază apare.
+
+210
+00:16:07,310 --> 00:16:09,630
+Și apoi să spunem că vreau să adaug litera D.
+
+211
+00:16:09,950 --> 00:16:13,350
+Tocmai am rula asta și dacă îmi verific lista acum.
+
+212
+00:16:14,300 --> 00:16:16,490
+Acum ce a adăugat acea valoare.
+
+213
+00:16:16,490 --> 00:16:22,160
+D Și lista este, de asemenea, o secvență la fel ca un șir.
+
+214
+00:16:22,220 --> 00:16:27,350
+În cazul în care vreau să apuc primul element din listă, pot folosi aceeași notație de breșă pe
+
+215
+00:16:27,350 --> 00:16:34,940
+care am făcut-o pentru un șir de caractere în index și i-am arătat Watz și voi returna elementul de la index astfel încât 0 1 în cazul
+
+216
+00:16:34,940 --> 00:16:38,230
+în care fiecare punct index nu este separat de virgulă.
+
+217
+00:16:38,450 --> 00:16:44,300
+De exemplu, dacă aș vrea să apuc un b și c, pot folosi aceeași notație de felie pe care tocmai am trecut-o.
+
+218
+00:16:44,540 --> 00:16:51,730
+Vreau să încep de la indexul 1 și să merg până la, dar fără a include indicele 3.
+
+219
+00:16:51,740 --> 00:16:57,290
+Așa că o să spun că una din cele trei nu se întoarce B și C.
+
+220
+00:16:57,740 --> 00:17:02,550
+De asemenea, pot să realocalizez funcții utilizând această notație de index.
+
+221
+00:17:02,660 --> 00:17:08,360
+Deci, dacă aș vrea ca primul element să fie diferit, spun doar lista de subliniere a pasului zero
+
+222
+00:17:08,360 --> 00:17:13,380
+în acele paranteze pătrate și apoi să trec în orice element vreau, de exemplu.
+
+223
+00:17:13,520 --> 00:17:16,390
+Vreau ca elementul să fie nou acum.
+
+224
+00:17:16,390 --> 00:17:20,340
+Deci, dacă îmi apuc lista, văd noul B C D.
+
+225
+00:17:20,870 --> 00:17:28,550
+Ceva ce trebuie menționat aici este că poți să creezi o listă în interiorul celuilalt, așa că pot să spun că
+
+226
+00:17:28,560 --> 00:17:34,750
+o virgulă este închisă pentru virgulă și apoi se pune o altă virgulă cu 3 virgule.
+
+227
+00:17:34,790 --> 00:17:39,440
+Deci, dacă mă uit la listă, este o listă în interiorul unei liste.
+
+228
+00:17:39,440 --> 00:17:44,400
+Deci, de fapt, să spunem că am vrut să o iau ca pe un singur element.
+
+229
+00:17:44,570 --> 00:17:48,770
+Ei bine, aceasta este o listă cu indicele 0 1 2.
+
+230
+00:17:48,830 --> 00:17:52,650
+Așa că trec pe aici și se întoarce în alte liste.
+
+231
+00:17:52,850 --> 00:17:59,270
+Deci, să spunem că vreau un grafic pentru bine care este acum indexul 0 1, ceea ce înseamnă că pot să măagă
+
+232
+00:17:59,840 --> 00:18:03,680
+pe un alt set de paranteze 1 și să obțin elementele reale pentru.
+
+233
+00:18:03,710 --> 00:18:08,970
+Lasă-mă să intru și să-ți arăt un exemplu mai bun de a prinde lucruri din listele imbricate.
+
+234
+00:18:08,990 --> 00:18:12,530
+Nu faceți acest lucru prea des, fără liste mai puțin sau foarte adânc.
+
+235
+00:18:12,530 --> 00:18:20,570
+Dar vreau doar să obțineți ideea de a utiliza mai multe paranteze, așa că să spunem că am o listă imbricată
+
+236
+00:18:20,570 --> 00:18:22,070
+care arată așa.
+
+237
+00:18:22,070 --> 00:18:23,590
+Unu doi trei.
+
+238
+00:18:23,600 --> 00:18:26,670
+O altă listă are patru sau cinci liste vizate.
+
+239
+00:18:27,020 --> 00:18:34,220
+Ei bine, pot apuca al treilea sau al patrulea element să indice trei în lista mea de cuiburi.
+
+240
+00:18:34,220 --> 00:18:35,430
+Arată așa.
+
+241
+00:18:35,480 --> 00:18:41,280
+Apoi pot seta un altul pentru a merge la index la 0 1 2 care este lista țintă.
+
+242
+00:18:41,330 --> 00:18:44,350
+Și să spun că vreau singurele elemente din lista țintă.
+
+243
+00:18:44,360 --> 00:18:47,920
+Nu are încă paranteze pătrate în jurul valorii de care am doar pasan zero.
+
+244
+00:18:47,960 --> 00:18:49,700
+Și acum am ținta de șir.
+
+245
+00:18:49,910 --> 00:18:54,980
+Și dacă doriți să imprimați acest șir, pot împacheta întregul lucru într-o declarație de imprimare.
+
+246
+00:18:54,990 --> 00:18:56,590
+Acum îmi apuc țintă.
+
+247
+00:18:56,600 --> 00:19:00,250
+Veți avea un exercițiu în care trebuie să găsiți ceva într-o listă imbricată.
+
+248
+00:19:00,260 --> 00:19:05,460
+Deci, asigurați-vă că ați înțeles subiectul acestor paranteze cum ar fi stivuite unul peste celălalt.
+
+249
+00:19:05,480 --> 00:19:05,930
+In regula.
+
+250
+00:19:06,170 --> 00:19:08,260
+Du-te și stai aici pentru prima parte.
+
+251
+00:19:08,330 --> 00:19:12,800
+Apoi, vom merge mai departe și vom acoperi mai multe tipuri de date în această prelegere, am trecut peste
+
+252
+00:19:12,980 --> 00:19:17,120
+listele cu notații de tip slice cum să apucăm lucrurile de la un șir de indici.
+
+253
+00:19:17,120 --> 00:19:22,770
+Cum a făcut această imprima formatarea misiunilor de bază variabile și, de asemenea, doar aritmetică de bază.
+
+254
+00:19:23,030 --> 00:19:23,820
+O.K.
+
+255
+00:19:23,900 --> 00:19:25,370
+Sper să vă bucurați de această prelegere.
+
+256
+00:19:25,370 --> 00:19:27,880
+Veniți în continuare, vom trece mai multe lucruri.
+
+257
+00:19:27,890 --> 00:19:28,640
+Multumesc tuturor.
+
+258
+00:19:28,640 --> 00:19:29,480
+Vedeți la următoarea conferință

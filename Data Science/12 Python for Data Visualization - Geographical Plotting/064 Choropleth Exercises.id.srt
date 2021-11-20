@@ -1,0 +1,211 @@
+1
+00:00:05,280 --> 00:00:10,290
+Halo semuanya dan selamat datang di kuliah latihan peta Plath karang dan kuliah ini kita akan
+
+2
+00:00:10,290 --> 00:00:14,020
+membahas secara singkat buku catatan untuk latihan peta paduan suara Plath.
+
+3
+00:00:14,190 --> 00:00:16,900
+Mari kita lanjutkan dan Jump's bahwa Anda meletakkan notebook sekarang.
+
+4
+00:00:17,040 --> 00:00:20,540
+Baiklah di sini kita berada di notebook latihan peta Pless karang.
+
+5
+00:00:20,540 --> 00:00:25,410
+Dalam latihan ini kami akan memberi Anda beberapa set data yang agak sederhana dan untuk membuat
+
+6
+00:00:25,410 --> 00:00:27,670
+peta berkorelasi dari mereka menggunakan plot perpustakaan.
+
+7
+00:00:27,680 --> 00:00:32,580
+Sekarang sayangnya karena sifat sedikit fakta bahwa ada file elf HCM Anda tidak
+
+8
+00:00:32,580 --> 00:00:38,940
+dapat benar-benar melihat contoh tampilan output di sini secara terpusat hanya akan terlihat seperti output kosong untuk peta
+
+9
+00:00:39,750 --> 00:00:43,640
+global pada skala dunia dan juga kloroplas Amerika Serikat peta.
+
+10
+00:00:43,660 --> 00:00:48,580
+Hanya akan ada dasarnya output kosong sehingga Anda benar-benar dapat membandingkan kecuali Anda menjalankan solusi.
+
+11
+00:00:48,630 --> 00:00:50,190
+Tidak, tetapi seperti apa bentuknya.
+
+12
+00:00:50,490 --> 00:00:53,190
+Tetapi set data itu sendiri relatif cukup sederhana.
+
+13
+00:00:53,190 --> 00:00:59,460
+Mereka harus memiliki gagasan tentang apa yang ingin Anda hasilkan, impor Anda sudah diatur sejauh impor tanpa plot
+
+14
+00:00:59,460 --> 00:01:03,720
+Anda, Anda akan melanjutkan dan mengimpor panda dan membaca file CAC.
+
+15
+00:01:03,780 --> 00:01:08,190
+Yang pertama Anda akan menjadi konsumsi daya dunia 2014 Anda akan pergi dan memeriksa kepala bingkai
+
+16
+00:01:08,190 --> 00:01:10,190
+data itu harus terlihat seperti ini.
+
+17
+00:01:10,410 --> 00:01:15,240
+Dan kemudian menggunakan catatan kuliah dan menggunakan dokumentasi yang akan Anda lakukan selanjutnya adalah membuat
+
+18
+00:01:15,240 --> 00:01:21,120
+plot peningkatan inti konsumsi daya untuk negara-negara menggunakan data dan lay out kamus dan kemudian Anda harus dapat
+
+19
+00:01:21,540 --> 00:01:25,770
+menjalankan keduanya pada dasarnya baris kode seperti yang kami lakukan di kuliah.
+
+20
+00:01:25,900 --> 00:01:30,100
+Dan pada dasarnya satu-satunya yang harus Anda lakukan adalah mengatur data dan menata dengan benar.
+
+21
+00:01:30,120 --> 00:01:31,630
+Nah, itu bagian tersulit.
+
+22
+00:01:31,680 --> 00:01:34,320
+Dan seperti yang telah kami katakan sebelumnya sintaksnya cukup aneh.
+
+23
+00:01:34,380 --> 00:01:37,200
+Jadi saya tidak berharap Anda bisa melakukan ini di atas kepala Anda sama sekali.
+
+24
+00:01:37,290 --> 00:01:42,330
+Yang harus Anda lakukan adalah merujuk pada dokumentasi dan ceramah dan kemudian
+
+25
+00:01:42,690 --> 00:01:49,010
+mengisi bagian yang kosong untuk benar-benar memetakan data ini ke peta celah karang konsumsi daya dunia.
+
+26
+00:01:49,290 --> 00:01:54,110
+Kemudian setelah Anda selesai dengan itu Anda akan pergi dan mengimpor beberapa data pemilu dari 2012 sebagai
+
+27
+00:01:54,120 --> 00:01:55,570
+file CSP menggunakan Pandurs.
+
+28
+00:01:55,620 --> 00:01:57,550
+Anda akan melanjutkan dan memeriksa kepala frame data.
+
+29
+00:01:57,620 --> 00:02:01,680
+Mereka akan terlihat seperti ini memiliki sedikit lebih banyak informasi tetapi Anda akan
+
+30
+00:02:01,680 --> 00:02:06,540
+terus maju dan lakukan adalah membuat plot yang menampilkan populasi usia pemilih atau P per negara.
+
+31
+00:02:06,540 --> 00:02:08,480
+Dan jika Anda gulir ke kanan di sini.
+
+32
+00:02:08,480 --> 00:02:09,060
+Ini dia.
+
+33
+00:02:09,060 --> 00:02:11,260
+Voting age populasi V. SAYA. P.
+
+34
+00:02:11,310 --> 00:02:12,890
+Perhatikan bahwa ini adalah pelampung.
+
+35
+00:02:12,900 --> 00:02:15,400
+Jadi itu sudah dikonversi dari string.
+
+36
+00:02:15,420 --> 00:02:19,580
+Jadi kolom-kolom lain ini sebenarnya adalah string tetapi yang ini sudah dikonversi menjadi float untuk Anda sehingga
+
+37
+00:02:19,590 --> 00:02:20,780
+harus berfungsi dengan baik.
+
+38
+00:02:20,940 --> 00:02:23,960
+Dan itu sebenarnya menyebutkan ini di sini beberapa saat kemudian ingin membersihkan kolom lainnya.
+
+39
+00:02:23,970 --> 00:02:28,820
+Pastikan Anda mempertimbangkan tipe data mereka dan mereka sudah ditransformasikan untuk Anda.
+
+40
+00:02:28,950 --> 00:02:33,240
+Anda akan terus maju dan hanya mengatur data dan mengeluarkan kamus dan kemudian mudah-mudahan menjalankan baris ini
+
+41
+00:02:33,360 --> 00:02:34,670
+dan dapat merencanakan ini.
+
+42
+00:02:34,830 --> 00:02:40,800
+Sekali lagi ini lebih merupakan latihan Anda untuk dapat mengambil apa yang sudah Anda ketahui
+
+43
+00:02:40,800 --> 00:02:46,920
+dan dokumentasi dan referensi yang telah Anda lihat dan mengisi data Anda ke jenis dokumentasi dan format.
+
+44
+00:02:47,190 --> 00:02:52,530
+Ini bukan latihan untuk menghafal semuanya dan bisa membuat data dan menyusun kamus
+
+45
+00:02:52,530 --> 00:02:53,730
+dari awal.
+
+46
+00:02:53,730 --> 00:02:55,620
+Sungguh itu tidak realistis.
+
+47
+00:02:55,830 --> 00:02:59,670
+Dan biasanya Anda harus merujuk dokumentasi untuk plot semacam ini.
+
+48
+00:02:59,670 --> 00:03:00,310
+Baiklah.
+
+49
+00:03:00,360 --> 00:03:02,880
+Semoga Anda menikmati latihan harus cukup mudah.
+
+50
+00:03:02,880 --> 00:03:07,080
+Ingatlah untuk hanya merujuk ke buku catatan kuliah dan jika Anda pernah terjebak Anda juga
+
+51
+00:03:07,080 --> 00:03:08,220
+dapat referensi solusi kuliah.
+
+52
+00:03:08,220 --> 00:03:09,270
+Selanjutnya.
+
+53
+00:03:09,510 --> 00:03:11,400
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

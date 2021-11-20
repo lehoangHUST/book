@@ -1,0 +1,347 @@
+1
+00:00:05,160 --> 00:00:11,100
+Hello everyone and welcome to the optional final part of the finance project solutions lecture series
+
+2
+00:00:11,100 --> 00:00:11,480
+.
+
+3
+00:00:11,580 --> 00:00:17,100
+In this final part which is optional we're going to go over some of the plotlines and cufflinks visualizations
+
+4
+00:00:17,280 --> 00:00:19,780
+specifically designed for financial data.
+
+5
+00:00:20,010 --> 00:00:23,070
+Let's go out and jump to the Jupiter notebook to get started.
+
+6
+00:00:23,070 --> 00:00:25,260
+OK here I am at the Jupiter notebook.
+
+7
+00:00:25,260 --> 00:00:30,660
+Last time we left off at creating a cluster map using seaborne and I wanted to show you how you can
+
+8
+00:00:30,660 --> 00:00:33,780
+create a heat map using Clottey.
+
+9
+00:00:33,780 --> 00:00:37,000
+You can actually just go out and grab this data rate here.
+
+10
+00:00:37,080 --> 00:00:45,560
+Correlation data frame to this cell and let's go out and save this as close underscore core.
+
+11
+00:00:46,860 --> 00:00:49,920
+And then we're going to go in and do take a look at closing or square core.
+
+12
+00:00:49,920 --> 00:00:52,740
+Make sure we have the correct data frame.
+
+13
+00:00:52,740 --> 00:00:58,440
+Looks like we do it in the matrix form and then we can just call I plot off of this and specify the
+
+14
+00:00:58,440 --> 00:01:05,520
+kinds to be heat map and you will get a heat map that looks like this.
+
+15
+00:01:05,520 --> 00:01:08,520
+Now this color scale actually isn't very useful.
+
+16
+00:01:08,520 --> 00:01:14,730
+So you can go ahead and put in a another color scale with the color scale arguments and probably the
+
+17
+00:01:14,730 --> 00:01:20,920
+one that's most useful is the red for R D yellow y l blue.
+
+18
+00:01:20,940 --> 00:01:28,350
+B you and you can reference the plotted documentation if you want more color scale options.
+
+19
+00:01:28,420 --> 00:01:33,210
+You can check out the color scale it's a little better it goes from 0 to 1 as far as the correlation
+
+20
+00:01:33,210 --> 00:01:33,240
+.
+
+21
+00:01:33,240 --> 00:01:35,310
+This is interactive now.
+
+22
+00:01:35,310 --> 00:01:41,470
+Now I still prefer see Bourne's own visualization to this but I wanted you to be aware of the plot options
+
+23
+00:01:41,520 --> 00:01:43,980
+using the cufflinks library.
+
+24
+00:01:43,980 --> 00:01:45,550
+All right moving along.
+
+25
+00:01:45,600 --> 00:01:50,810
+Let's go ahead and get to the specific financial capabilities of cufflinks and plotline.
+
+26
+00:01:51,540 --> 00:01:57,840
+So you can go ahead and create a candle plots of stock using plot line and let me go in and show you
+
+27
+00:01:57,870 --> 00:01:58,810
+hey we can do this.
+
+28
+00:01:58,830 --> 00:02:02,550
+First thing we need is to grab Bank of America stock.
+
+29
+00:02:02,550 --> 00:02:07,620
+I'll just do that with the b c if we take a look at the state of frame remember we have open high low
+
+30
+00:02:07,620 --> 00:02:14,640
+close and we need it in a specific order to use I plot in the fashion we're going to use it in.
+
+31
+00:02:14,850 --> 00:02:16,560
+So I'm going to just grab open
+
+32
+00:02:19,830 --> 00:02:25,130
+high low and then the close call.
+
+33
+00:02:25,380 --> 00:02:27,660
+We don't want the actual volume.
+
+34
+00:02:27,660 --> 00:02:32,230
+And then I just want the values for 2015.
+
+35
+00:02:32,240 --> 00:02:43,390
+I mean is of any use I-X 2015 January 1st to 2016 looks as a string 2016.
+
+36
+00:02:43,430 --> 00:02:45,420
+And let's go to and say January 1st.
+
+37
+00:02:45,420 --> 00:02:53,070
+So all the values for 2015 I'll save this as BAC 15.
+
+38
+00:02:54,180 --> 00:03:01,380
+And then the next line I'm going to go ahead and say c 15 thought I plot and I'm actually going to specify
+
+39
+00:03:01,380 --> 00:03:02,060
+something in this.
+
+40
+00:03:02,070 --> 00:03:07,660
+I plot arguments I'm going to say kind is equal to Kandel.
+
+41
+00:03:08,700 --> 00:03:13,260
+And then you'll actually be able to create a candlestick plot using a plot.
+
+42
+00:03:13,260 --> 00:03:17,880
+Now if you're not aware of what a candlestick plot is it's for financial analysis.
+
+43
+00:03:17,880 --> 00:03:23,520
+It basically tells you whether or not the stock went up or down that day based off the color so green
+
+44
+00:03:23,520 --> 00:03:30,360
+is increasing red is decreasing and then it kind of tells you the opening high and the closing price
+
+45
+00:03:30,360 --> 00:03:30,640
+here.
+
+46
+00:03:30,650 --> 00:03:34,240
+This information you can go ahead and look up on Wikipedia.
+
+47
+00:03:34,380 --> 00:03:36,890
+Candlestick plots in if you want more information.
+
+48
+00:03:36,900 --> 00:03:42,150
+I to actually read these but this is more just for financial analysis so basically tells you the open
+
+49
+00:03:42,150 --> 00:03:46,640
+high low close and whether the stock went up or down that day.
+
+50
+00:03:47,520 --> 00:03:48,220
+All right.
+
+51
+00:03:48,480 --> 00:03:55,430
+Let's go ahead and check out the next plot which is SMK and it's basically just a simple moving averages
+
+52
+00:03:55,440 --> 00:03:56,270
+plot.
+
+53
+00:03:56,280 --> 00:03:59,440
+The plot can also create kind of automatically for you.
+
+54
+00:03:59,520 --> 00:04:04,220
+We're going to go ahead and do this for the Morgan Stanley stock.
+
+55
+00:04:04,890 --> 00:04:09,180
+So I'm going to go ahead and grab the close column of the Morgan Stanley stock.
+
+56
+00:04:09,210 --> 00:04:14,330
+I just want to do this for the year 2015 so I'll specify same dates.
+
+57
+00:04:14,330 --> 00:04:15,020
+I did up here.
+
+58
+00:04:15,030 --> 00:04:16,200
+Let's go and grab those
+
+59
+00:04:19,170 --> 00:04:28,690
+come down here take the slice chips from 2015 and then I will call a t a underscore plot.
+
+60
+00:04:28,710 --> 00:04:35,430
+And this is the technical analysis plot capabilities of cufflinks and then I'm going to go to say study
+
+61
+00:04:35,430 --> 00:04:46,050
+is SMK unspecified periods to be a couple of periods we'll go in and say 13 21 and 55 which are kind
+
+62
+00:04:46,050 --> 00:04:48,910
+of some common technical analysis periods.
+
+63
+00:04:49,320 --> 00:04:54,480
+And here we can see the simple moving averages and I plot kind of reports them as you move along which
+
+64
+00:04:54,480 --> 00:05:00,170
+is quite nice and you can zoom in and see some more information if you want.
+
+65
+00:05:00,180 --> 00:05:00,820
+All right.
+
+66
+00:05:01,080 --> 00:05:04,390
+Let's go ahead and move on to this one more right here.
+
+67
+00:05:04,410 --> 00:05:08,700
+Last one which is the Bollinger Band plot for Bank of America.
+
+68
+00:05:09,000 --> 00:05:14,880
+And again this is just another technical analysis you can do which kind of shows the standard deviation
+
+69
+00:05:14,970 --> 00:05:18,020
+of the stock price as it moves out through time.
+
+70
+00:05:18,270 --> 00:05:21,180
+But again I just want this for the year 2015.
+
+71
+00:05:21,210 --> 00:05:28,590
+Go ahead and copy and paste same slice and do t.a underscore plot for technical analysis plot and the
+
+72
+00:05:28,590 --> 00:05:33,360
+study we're going to do is equal to the string B O L L.
+
+73
+00:05:34,090 --> 00:05:39,900
+Now we look at this we can see the upper and lower bands as we move along as well as a simple moving
+
+74
+00:05:39,900 --> 00:05:43,530
+average and then the actual closing price which is in orange.
+
+75
+00:05:43,890 --> 00:05:45,590
+OK.
+
+76
+00:05:45,870 --> 00:05:49,560
+There's definitely a lot more specific finance topics out here.
+
+77
+00:05:49,560 --> 00:05:52,670
+So don't worry if you don't understand everything we just went over.
+
+78
+00:05:52,800 --> 00:05:57,840
+The only thing you should be really concerned about is what I did with panderers and some of the basic
+
+79
+00:05:57,840 --> 00:06:00,420
+visualization operations throughout the lecture.
+
+80
+00:06:00,420 --> 00:06:05,610
+So don't worry if you don't understand all these specific technical analysis plots these are only really
+
+81
+00:06:05,610 --> 00:06:09,990
+references for people that are already familiar with this topic since this isn't a financial analysis
+
+82
+00:06:09,990 --> 00:06:10,690
+class.
+
+83
+00:06:10,770 --> 00:06:16,260
+This is just basically a data science class and financial analysis is its own field of study.
+
+84
+00:06:16,260 --> 00:06:16,780
+All right.
+
+85
+00:06:16,830 --> 00:06:21,810
+Hope you found this interesting if you're into this sort of analysis and I will see you at the next
+
+86
+00:06:21,810 --> 00:06:22,710
+lecture.
+
+87
+00:06:22,710 --> 00:06:23,720
+Thanks everyone.

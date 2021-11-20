@@ -1,0 +1,195 @@
+1
+00:00:05,430 --> 00:00:09,880
+Ciao a tutti gli altri ai dati per la lezione di panoramica del progetto di finanza capstone.
+
+2
+00:00:10,170 --> 00:00:14,370
+In questa conferenza andremo sul progetto finanziario Jupiter.
+
+3
+00:00:14,400 --> 00:00:16,710
+Andiamo avanti e andiamo a quel taccuino per iniziare.
+
+4
+00:00:16,950 --> 00:00:19,620
+OK, eccoci al taccuino del progetto finanziario.
+
+5
+00:00:19,620 --> 00:00:23,940
+Questo notebook si trova nella cartella dei progetti Capstone.
+
+6
+00:00:23,940 --> 00:00:29,790
+E una breve nota sul progetto di dati finanziari in questo progetto ci concentreremo sull'analisi dei dati esplorativi dei
+
+7
+00:00:29,790 --> 00:00:35,340
+prezzi delle azioni e teniamo a mente che questo progetto ha lo scopo di mettere in pratica le
+
+8
+00:00:35,430 --> 00:00:36,960
+visualizzazioni e le abilità dei panda.
+
+9
+00:00:37,080 --> 00:00:42,140
+Non inteso per essere un'analisi finanziaria o per essere preso come una sorta di consulenza finanziaria.
+
+10
+00:00:42,300 --> 00:00:45,600
+E un altro no, questo progetto è in realtà estremamente impegnativo.
+
+11
+00:00:45,650 --> 00:00:48,030
+Cercherà di introdurti a molti nuovi concetti.
+
+12
+00:00:48,060 --> 00:00:50,430
+Quindi potresti dover cercare le cose da solo.
+
+13
+00:00:50,490 --> 00:00:54,690
+Ci sono molti collegamenti che la documentazione ti indicherà nella giusta direzione per cercare di
+
+14
+00:00:54,690 --> 00:00:56,220
+risolvere il problema delle attività.
+
+15
+00:00:56,490 --> 00:01:00,840
+Ma puoi anche sentirti libero di passare attraverso il taccuino e il video della lezione di soluzioni come
+
+16
+00:01:00,840 --> 00:01:02,290
+una sorta di passeggiata attraverso Project.
+
+17
+00:01:02,370 --> 00:01:06,030
+Se non vuoi davvero vedere le cose da te, continuerai a imparare molto in questo modo.
+
+18
+00:01:06,570 --> 00:01:12,030
+Oppure, se non sei davvero interessato a scorte o analisi finanziarie, puoi semplicemente saltare questo progetto.
+
+19
+00:01:12,930 --> 00:01:17,580
+Faremo questo progetto concentrandoci sugli stock bancari e vedremo come progrediranno attraverso
+
+20
+00:01:17,580 --> 00:01:23,340
+la crisi finanziaria fino all'inizio del 2016 e ti mostreremo come ottenere i dati.
+
+21
+00:01:23,340 --> 00:01:28,350
+Molte di queste importazioni sono state compilate ma non è necessario installare il lettore di dati Pandavas affinché
+
+22
+00:01:28,350 --> 00:01:29,040
+funzioni correttamente.
+
+23
+00:01:29,050 --> 00:01:33,840
+installazione, ma in pratica dovrai solo installare o installare il lettore di dati dash
+
+24
+00:01:33,840 --> 00:01:40,320
+di Pancho per poter dire che Pipp installa i panderers per il lettore di dati dash o l'installazione di Konda.
+
+25
+00:01:40,320 --> 00:01:43,800
+Puoi uscire e fare clic qui per alcune istruzioni di
+
+26
+00:01:44,290 --> 00:01:47,310
+OK in modo da poter andare avanti e utilizzare questi collegamenti per la guida all'installazione.
+
+27
+00:01:47,310 --> 00:01:52,140
+Fondamentalmente, consiglierei solo a Pipp di installare il lettore di dash del pannello o si
+
+28
+00:01:52,140 --> 00:01:54,750
+può effettivamente cedere alla conferenza video delle soluzioni.
+
+29
+00:01:54,870 --> 00:01:59,370
+Ma abbiamo alcune importazioni compilate per te e otterrai i dati e in effetti otterrai
+
+30
+00:01:59,370 --> 00:02:04,470
+i dati direttamente con i panda da Internet e c'è una pagina di documentazione per darti
+
+31
+00:02:04,470 --> 00:02:06,650
+consigli e istruzioni su come fare quella.
+
+32
+00:02:06,690 --> 00:02:10,800
+dei dati, è un po 'più vago su come effettivamente ottenere che i dati non ti dicono passo dopo passo.
+
+33
+00:02:10,800 --> 00:02:12,660
+E ancora, poiché questo è un progetto di capstone
+
+34
+00:02:12,750 --> 00:02:15,990
+Ma le pagine di documentazione dovrebbero essere abbastanza chiare su come ottenerlo.
+
+35
+00:02:15,990 --> 00:02:20,330
+Anche in questo caso puoi andare avanti e fare riferimento alle soluzioni nel caso rimani bloccato su questo passaggio.
+
+36
+00:02:20,670 --> 00:02:24,670
+Quindi vai avanti e segui le istruzioni e prova a creare frame di dati simili.
+
+37
+00:02:24,670 --> 00:02:25,690
+Quindi cosa viene mostrato.
+
+38
+00:02:25,890 --> 00:02:27,930
+Faremo delle analisi esplorative dei dati.
+
+39
+00:02:27,930 --> 00:02:33,270
+azioni esegui alcune visualizzazioni e poi in seguito andremo avanti e visualizzeremo semplicemente le
+
+40
+00:02:33,270 --> 00:02:39,240
+azioni e come hanno fatto durante alcuni casi come il crollo economico del 2008 2009.
+
+41
+00:02:39,240 --> 00:02:42,940
+Dai un'occhiata ad alcuni ritorni di alcune correlazioni tra le
+
+42
+00:02:43,260 --> 00:02:45,970
+Va bene questo è tutto per questa lezione panoramica.
+
+43
+00:02:45,990 --> 00:02:48,570
+Puoi andare avanti e controllare tu stesso il quaderno di Giove.
+
+44
+00:02:48,570 --> 00:02:52,620
+E come ho detto se lo trovi troppo difficile o troppo difficile perché questo è un
+
+45
+00:02:52,620 --> 00:02:53,390
+progetto estremamente impegnativo.
+
+46
+00:02:53,490 --> 00:02:57,080
+Sentiti libero di passare attraverso le soluzioni e sperimentarlo in questo modo.
+
+47
+00:02:57,090 --> 00:03:00,520
+Come più di una passeggiata attraverso Project o saltare completamente.
+
+48
+00:03:00,570 --> 00:03:03,160
+Se questo argomento non ti interessa affatto.
+
+49
+00:03:03,210 --> 00:03:05,940
+OK grazie a tutti e ci vediamo alla prossima lezione

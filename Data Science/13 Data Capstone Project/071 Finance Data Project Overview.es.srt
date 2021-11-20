@@ -1,0 +1,195 @@
+1
+00:00:05,430 --> 00:00:09,880
+Hola a todos los demás a la conferencia de resumen de proyecto de financiación de datos.
+
+2
+00:00:10,170 --> 00:00:14,370
+En esta conferencia vamos a repasar el cuaderno de Jupiter del proyecto de finanzas.
+
+3
+00:00:14,400 --> 00:00:16,710
+Avancemos y vayamos a ese cuaderno para comenzar.
+
+4
+00:00:16,950 --> 00:00:19,620
+OK aquí estamos en el cuaderno del proyecto de finanzas.
+
+5
+00:00:19,620 --> 00:00:23,940
+Este cuaderno se encuentra debajo de la carpeta de proyectos Capstone de datos.
+
+6
+00:00:23,940 --> 00:00:29,790
+Y una nota rápida sobre el proyecto de datos financieros en este proyecto, vamos a centrarnos en el análisis
+
+7
+00:00:29,790 --> 00:00:35,340
+exploratorio de los precios de las acciones y tener en cuenta que este proyecto solo está destinado a
+
+8
+00:00:35,430 --> 00:00:36,960
+practicar visualizaciones y habilidades de pandas.
+
+9
+00:00:37,080 --> 00:00:42,140
+No pretende ser un análisis financiero ni debe tomarse como ningún tipo de asesoramiento financiero.
+
+10
+00:00:42,300 --> 00:00:45,600
+Y otro no, este proyecto es realmente extremadamente desafiante.
+
+11
+00:00:45,650 --> 00:00:48,030
+Tratará de presentarte muchos conceptos nuevos.
+
+12
+00:00:48,060 --> 00:00:50,430
+Por lo tanto, puede que tenga que buscar las cosas por su cuenta.
+
+13
+00:00:50,490 --> 00:00:54,690
+Hay muchos enlaces que la documentación le indicará en la dirección correcta para tratar de
+
+14
+00:00:54,690 --> 00:00:56,220
+resolver el problema de las tareas.
+
+15
+00:00:56,490 --> 00:01:00,840
+Pero también puede caminar por el cuaderno de conferencias de soluciones y el video como una
+
+16
+00:01:00,840 --> 00:01:02,290
+especie de paseo por el Proyecto.
+
+17
+00:01:02,370 --> 00:01:06,030
+Si realmente no quieres tener que buscar las cosas tú mismo, aprenderás mucho de esa manera.
+
+18
+00:01:06,570 --> 00:01:12,030
+O si realmente no está interesado en acciones o análisis financieros, puede omitir este proyecto por completo.
+
+19
+00:01:12,930 --> 00:01:17,580
+Vamos a estar haciendo este proyecto, nos estamos enfocando en las acciones bancarias y veremos
+
+20
+00:01:17,580 --> 00:01:23,340
+cómo avanzan a través de la crisis financiera hasta principios de 2016 y le mostraremos cómo obtener los datos.
+
+21
+00:01:23,340 --> 00:01:28,350
+Muchas de estas importaciones se completan para usted, pero no necesitará instalar el lector de datos Pandavas para
+
+22
+00:01:28,350 --> 00:01:29,040
+que esto funcione.
+
+23
+00:01:29,050 --> 00:01:33,840
+básicamente tendrá que instalar o instalar el lector de datos del tablero de Pancho para que pueda
+
+24
+00:01:33,840 --> 00:01:40,320
+decir que Pipp instala el lector de datos del tablero de panderers o Konda instala el lector de datos ocultos de Pandurs.
+
+25
+00:01:40,320 --> 00:01:43,800
+Puede salir y hacer clic aquí para obtener instrucciones de instalación, pero
+
+26
+00:01:44,290 --> 00:01:47,310
+OK para que pueda continuar y usar esos enlaces para obtener instrucciones de instalación.
+
+27
+00:01:47,310 --> 00:01:52,140
+Básicamente, solo recomendaría solo el lector de tablero de panel de instalación de Pipp o bien podría
+
+28
+00:01:52,140 --> 00:01:54,750
+caer junto con la conferencia de video de soluciones.
+
+29
+00:01:54,870 --> 00:01:59,370
+Pero tenemos algunas importaciones completadas para usted y obtendrá los datos y en realidad
+
+30
+00:01:59,370 --> 00:02:04,470
+obtendrá los datos directamente con pandas de Internet y hay una página de documentación para darle
+
+31
+00:02:04,470 --> 00:02:06,650
+pistas e instrucciones sobre cómo hacerlo ese.
+
+32
+00:02:06,690 --> 00:02:10,800
+proyecto final de datos, es un poco más vago sobre cómo obtener realmente esos datos que no le indica paso por paso.
+
+33
+00:02:10,800 --> 00:02:12,660
+Y una vez más, dado que se trata de un
+
+34
+00:02:12,750 --> 00:02:15,990
+Pero las páginas de documentación deben ser bastante claras en cómo obtenerlo.
+
+35
+00:02:15,990 --> 00:02:20,330
+De nuevo, puede continuar y hacer referencia a las soluciones en caso de que se quede atascado en este paso.
+
+36
+00:02:20,670 --> 00:02:24,670
+Luego sigue y sigue las instrucciones y trata de crear marcos de datos similares.
+
+37
+00:02:24,670 --> 00:02:25,690
+Entonces, ¿qué se muestra?
+
+38
+00:02:25,890 --> 00:02:27,930
+Haremos algunos análisis de datos exploratorios.
+
+39
+00:02:27,930 --> 00:02:33,270
+algunas visualizaciones y luego vamos a seguir adelante y solo visualizar las acciones
+
+40
+00:02:33,270 --> 00:02:39,240
+y cómo lo hicieron durante ciertas instancias, como la crisis económica de 2008 de 2009.
+
+41
+00:02:39,240 --> 00:02:42,940
+Revise algunas devoluciones, algunas correlaciones entre las acciones hacen
+
+42
+00:02:43,260 --> 00:02:45,970
+De acuerdo, eso es todo por esta conferencia general.
+
+43
+00:02:45,990 --> 00:02:48,570
+Puede seguir y consultar el cuaderno de Júpiter usted mismo.
+
+44
+00:02:48,570 --> 00:02:52,620
+Y como mencioné si lo encuentras demasiado difícil o demasiado difícil porque este es un
+
+45
+00:02:52,620 --> 00:02:53,390
+proyecto extremadamente desafiante.
+
+46
+00:02:53,490 --> 00:02:57,080
+Siéntase libre de ir a través de las soluciones y experimentarlo de esa manera.
+
+47
+00:02:57,090 --> 00:03:00,520
+Como un paseo más por Project o omítalo por completo.
+
+48
+00:03:00,570 --> 00:03:03,160
+Si este tema simplemente no te interesa en absoluto.
+
+49
+00:03:03,210 --> 00:03:05,940
+OK, gracias a todos y nos vemos en la próxima conferencia

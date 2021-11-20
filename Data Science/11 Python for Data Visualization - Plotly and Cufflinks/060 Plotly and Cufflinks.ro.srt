@@ -1,0 +1,1043 @@
+1
+00:00:05,100 --> 00:00:10,110
+Bună ziua tuturor și vă urez bun venit la prelegerea cu cuferele din plotline, unde prezentăm modul în
+
+2
+00:00:10,140 --> 00:00:14,250
+care putem programa folosind aceste biblioteci pentru a crea vizualizări interactive de date.
+
+3
+00:00:14,250 --> 00:00:18,690
+Să mergem înainte și să mergem direct la notebook-ul Jupiter pentru a începe.
+
+4
+00:00:18,690 --> 00:00:18,960
+In regula.
+
+5
+00:00:18,960 --> 00:00:20,990
+Aici sunt la notebook-ul Jupiter.
+
+6
+00:00:21,030 --> 00:00:25,770
+Am de gând să merg și să fac o serie de import și apoi o configurare pentru ca toate acestea să funcționeze.
+
+7
+00:00:25,770 --> 00:00:35,880
+Când spun că importul este PD important sunt PI și P și apoi am de gând să merg mai departe și să spun
+
+8
+00:00:36,690 --> 00:00:46,140
+de la complot importurile subliniază subliniază versiunea subliniază subliniază și apoi am de gând să meargă înainte și să spun versiunea
+
+9
+00:00:47,340 --> 00:00:48,530
+de imprimare.
+
+10
+00:00:49,020 --> 00:00:51,710
+Și observați aici că am un punct unu la punctul nouă.
+
+11
+00:00:51,720 --> 00:00:53,750
+Aceasta este versiunea curentă pe care o folosesc.
+
+12
+00:00:53,770 --> 00:00:59,640
+Tot ce vom face face o versiune mai nouă decât un punct nouă.
+
+13
+00:00:59,640 --> 00:01:02,220
+Deci, aici sunt deja la un moment dat doisprezece.
+
+14
+00:01:02,280 --> 00:01:03,420
+Asta înseamnă că sunt bună.
+
+15
+00:01:03,420 --> 00:01:07,970
+Dacă aveți o versiune cu un punct opt ​​sau mai jos, va trebui să faceți upgrade fără ploturi.
+
+16
+00:01:08,250 --> 00:01:12,730
+Dacă instalați doar plotline ar trebui să fiți în regulă cu privire la acest lucru.
+
+17
+00:01:12,780 --> 00:01:23,370
+Înainte voi intra și voi spune butoni de import ca C-f Și apoi în cele din urmă am de gând să importe unele biblioteci
+
+18
+00:01:23,400 --> 00:01:26,070
+de la complot plumb linie off.
+
+19
+00:01:26,070 --> 00:01:33,110
+Deci, parțial, o companie vă poate sprijini online și poate găzdui vizualizările de date online.
+
+20
+00:01:33,300 --> 00:01:37,190
+Dar, de vreme ce vom folosi aceasta ca o bibliotecă open source și
+
+21
+00:01:37,200 --> 00:01:41,990
+o vom folosi pe linie, vom avea nevoie să facem niște importuri offline, pentru ca aceasta să funcționeze.
+
+22
+00:01:42,000 --> 00:01:47,460
+Vreau să merg mai departe și să importe download plotless underscore plotless J. S. și puteți să tastați doar D și
+
+23
+00:01:47,460 --> 00:01:49,850
+apoi fila și ar trebui să se autocompleteze pentru dvs.
+
+24
+00:01:49,850 --> 00:01:56,400
+De asemenea, am de gând să spun că fac doar autocompletarea tab-ului în modul de subliniere al carnetei de subliniere.
+
+25
+00:01:56,880 --> 00:02:01,510
+Și apoi, de asemenea, complot și parcele alerga aceste.
+
+26
+00:02:01,800 --> 00:02:06,090
+Și apoi vom face câteva comenzi pentru a avea totul în notebook.
+
+27
+00:02:06,570 --> 00:02:12,440
+Doar apelați-l subliniați un mod de a sublinia notebook-ul și passen conectat este egal cu adevărat.
+
+28
+00:02:12,500 --> 00:02:17,850
+Și aceasta va conecta javascript la notebook-ul tău, pentru că, în mod complot,
+
+29
+00:02:17,850 --> 00:02:22,590
+nu se conectează doar pandele și Python la biblioteca interactivă javascript.
+
+30
+00:02:23,240 --> 00:02:26,980
+Și asta va permite notebook-urilor dvs. să acceseze aceste vizualizări.
+
+31
+00:02:27,180 --> 00:02:35,640
+Și apoi, în cele din urmă, vom spune că C-f va deconecta linia ca metodă, iar închiderea imprimării va fi confiscată și va rula acest
+
+32
+00:02:36,000 --> 00:02:39,050
+lucru și acest lucru va permite offsetul manșeturilor CS.
+
+33
+00:02:39,090 --> 00:02:39,810
+In regula.
+
+34
+00:02:39,810 --> 00:02:42,040
+Peste câțiva pași aici pentru a vă asigura că totul funcționează.
+
+35
+00:02:42,150 --> 00:02:44,730
+Dar sperăm că puteți să le urmați.
+
+36
+00:02:44,760 --> 00:02:49,390
+Să mergem mai departe și să obținem niște date și să le creăm.
+
+37
+00:02:49,740 --> 00:02:56,460
+Am de gând să mergem mai departe și să spun ZF este egal cu PD dot cadru de date.
+
+38
+00:02:56,550 --> 00:02:58,800
+Voi spune N. P. Randul întâmplător
+
+39
+00:03:01,470 --> 00:03:05,970
+și distribuția atât de normală și pur și simplu treceți de 100 la 4.
+
+40
+00:03:06,270 --> 00:03:15,340
+Deci, 100 de rânduri pentru coloane și o să intru și să spun că coloanele sunt egale cu a b c d ca o împărțire a șirului.
+
+41
+00:03:15,550 --> 00:03:19,350
+Și în acest fel vom obține o listă a coloanelor ABC și D.
+
+42
+00:03:19,770 --> 00:03:27,210
+Și apoi, dacă am verifica DF chiar înainte de asta aici am cadrului meu de date și am de gând să mergem mai departe și
+
+43
+00:03:27,210 --> 00:03:34,370
+să creeze un cadru de date mai mult numit DL 2 PD cadru de date și voi folosi un dicționar pentru acest lucru.
+
+44
+00:03:34,950 --> 00:03:47,910
+Voi spune că categoria este o coloană și apoi valorile vor fi doar un b și c sau oricare trei șiruri doriți și apoi
+
+45
+00:03:47,910 --> 00:03:51,210
+cealaltă coloană va fi valori.
+
+46
+00:03:51,240 --> 00:03:53,800
+Și asta va fi un șir de valori aleatorii.
+
+47
+00:03:53,850 --> 00:03:57,150
+Să mergem mai departe și să spunem doar 32 43 și
+
+48
+00:04:00,000 --> 00:04:03,940
+50 și acest lucru va fi folosit mai târziu ca un stil de complot bar.
+
+49
+00:04:03,940 --> 00:04:04,350
+In regula.
+
+50
+00:04:04,380 --> 00:04:07,160
+Acum, du-te doar cum să utilizați butoni și eu complot.
+
+51
+00:04:07,260 --> 00:04:09,850
+Este de fapt extrem de simplă.
+
+52
+00:04:10,500 --> 00:04:14,220
+Dacă aruncăm o privire asupra cadrului nostru de date avem ABC și Z aici.
+
+53
+00:04:14,250 --> 00:04:21,420
+Dacă spun doar complotul de pe acest cadru de date panderers va complot ceva cu complot MAP vii
+
+54
+00:04:21,420 --> 00:04:28,830
+și dacă de fapt vreau să văd că parcelă pot spune complot harta live în linie și apoi dacă am
+
+55
+00:04:28,830 --> 00:04:34,030
+rula acest din nou lasă-mă să taie doar și a pus sus aici.
+
+56
+00:04:34,420 --> 00:04:37,180
+Unde mergem acolo.
+
+57
+00:04:37,380 --> 00:04:40,880
+Și mă voi întoarce aici și voi rula încă o dată acest complot.
+
+58
+00:04:41,190 --> 00:04:45,790
+Și aici văd complotul pe care Pandurs ar fi făcut-o în mod automat folosind fantezii mat.
+
+59
+00:04:46,050 --> 00:04:51,820
+Pot schimba și eu acest complot și vom vedea aproape un pic de magie se întâmplă.
+
+60
+00:04:51,840 --> 00:04:56,010
+Parcela a fost transformată acum într-o imagine interactivă plotline.
+
+61
+00:04:56,100 --> 00:05:00,810
+Și aici pot să derulăm și să-mi spuneți de fapt valorile de la acel punct index.
+
+62
+00:05:00,810 --> 00:05:03,080
+Deci este exact aceeași complot linie plot.
+
+63
+00:05:03,120 --> 00:05:04,570
+Acum este interactiv.
+
+64
+00:05:04,860 --> 00:05:05,840
+Pot să mă apropii.
+
+65
+00:05:05,850 --> 00:05:06,930
+Verificați valorile.
+
+66
+00:05:06,930 --> 00:05:10,700
+Pot să dau dublu clic pentru a mări din nou și au și unelte aici.
+
+67
+00:05:10,730 --> 00:05:12,370
+Pot salva și edita complotul.
+
+68
+00:05:12,480 --> 00:05:17,380
+Pot descărca plotul ca fișier PNB, așa că dacă vreau doar o imagine statică pe care să o pot descurca.
+
+69
+00:05:17,400 --> 00:05:26,540
+Așadar, dacă aș fi vrut să pot călca în jur, aș putea să mărim zoom-ul, să resetez axele, să aleg un vârf cât mai aproape de a
+
+70
+00:05:26,630 --> 00:05:29,500
+trece sau să compare datele de pe hover.
+
+71
+00:05:29,510 --> 00:05:34,170
+În mod implicit, probabil, de obicei, doriți să comparați datele și apoi pot chiar să dau clic pe anumite coloane pentru
+
+72
+00:05:34,160 --> 00:05:34,470
+vizualizare.
+
+73
+00:05:34,460 --> 00:05:37,930
+Deci, dacă vreau doar să văd și să văd dacă poate fi a și.
+
+74
+00:05:38,240 --> 00:05:38,590
+Dreapta.
+
+75
+00:05:38,660 --> 00:05:42,920
+Sperăm că puteți spune deja că acest lucru este un instrument extrem de puternic,
+
+76
+00:05:42,990 --> 00:05:49,040
+deoarece practic trebuie să adăugați un complot scris și acum dintr-o dată arătați ca un programator de vizualizare de date interactiv uimitor.
+
+77
+00:05:49,400 --> 00:05:54,650
+Când secretul tău tocmai adăuga, am complotat și folosind butoni și politicos.
+
+78
+00:05:54,770 --> 00:05:55,180
+In regula.
+
+79
+00:05:55,400 --> 00:05:58,640
+Deci, acesta este cel mai de bază exemplu de manșetă și am plop.
+
+80
+00:05:58,740 --> 00:06:02,070
+Și să mergem mai departe și să explorăm acum diferitele tipuri de parcele pe care le putem face.
+
+81
+00:06:02,270 --> 00:06:06,570
+Putem face mai multe tipuri, cum ar fi hărți de căldură cu rafturi de bare de scatter și multe altele.
+
+82
+00:06:06,710 --> 00:06:11,420
+Deci, tot ce trebuie să faceți este să treceți prin ele și să vă arătați cum să utilizați complotul pentru a crea
+
+83
+00:06:11,420 --> 00:06:14,430
+alte tipuri de complot care nu sunt doar linii de linie ca acesta.
+
+84
+00:06:14,490 --> 00:06:18,420
+Să începem să vă arătăm cum să facem un scatterplot.
+
+85
+00:06:18,620 --> 00:06:22,190
+Am de gând să merg și să spun DMF punct de complot.
+
+86
+00:06:22,500 --> 00:06:27,740
+Și apoi, pentru a comuta tipul de complot pe care îl specificați este
+
+87
+00:06:27,750 --> 00:06:33,870
+egal și apoi pentru scatter șirul este împrăștiat și scatterplot pentru a specifica axele x și y.
+
+88
+00:06:34,010 --> 00:06:36,040
+Puteți intra și specificați acest lucru cu numele coloanei.
+
+89
+00:06:36,080 --> 00:06:45,050
+Hai să intrăm și să arătăm o coloană de coloană versus coloana B și dacă vom rula asta, vei
+
+90
+00:06:45,620 --> 00:06:47,510
+vedea ceva amuzant.
+
+91
+00:06:47,510 --> 00:06:48,610
+Ai ceva de genul asta.
+
+92
+00:06:48,620 --> 00:06:52,850
+În mod implicit, plotless va încerca să facă o linie pentru a conecta toate aceste puncte.
+
+93
+00:06:52,860 --> 00:07:02,450
+Deci, trebuie să specificați modul și să treceți marcajele de coarde și apoi veți obține de fapt niște markere aici și puteți
+
+94
+00:07:02,450 --> 00:07:07,760
+verifica marcatorii și apoi puteți compara efectiv coloanele A și B.
+
+95
+00:07:07,820 --> 00:07:11,870
+Puteți să măriți și să verificați informațiile din fiecare dintre aceste puncte.
+
+96
+00:07:11,880 --> 00:07:12,680
+In regula.
+
+97
+00:07:12,690 --> 00:07:19,190
+Deci, așa puteți folosi un scatterplot folosind argumentele DFA A-plot person x și y ca numele de coloană care indică
+
+98
+00:07:19,580 --> 00:07:24,280
+tipul este egal cu scatterul și apoi trece și modul este egal cu markerii.
+
+99
+00:07:24,320 --> 00:07:27,740
+Puteți face și alte lucruri, cum ar fi trecerea argumentelor pentru dimensiune.
+
+100
+00:07:27,810 --> 00:07:29,440
+Vreți ca aceste puncte să fie mai mari.
+
+101
+00:07:29,450 --> 00:07:34,980
+Puteți să mergeți mai departe și să specificați o dimensiune mai mare și voi merge mai departe și veți face acele puncte mai mari.
+
+102
+00:07:35,380 --> 00:07:39,990
+Să mergem la o parcelă de bar sau să vedem o bară.
+
+103
+00:07:40,110 --> 00:07:46,550
+Am crezut că am complot și spun un fel de a trece bara de coarde.
+
+104
+00:07:46,550 --> 00:07:51,990
+Apoi specificați X și vom ieși și vom trece la decofie, deoarece aceasta este o potrivire mai bună pentru acest
+
+105
+00:07:51,990 --> 00:07:52,530
+complot.
+
+106
+00:07:52,520 --> 00:07:59,420
+Ca un memento, trebuie să aveți o coloană categorică și o coloană numerică însemnând pentru un complot al barei că doriți
+
+107
+00:07:59,490 --> 00:08:03,610
+ca X să fie coloana categorică pentru a face acest lucru evident.
+
+108
+00:08:03,610 --> 00:08:06,650
+Voi spune că x este egal cu coloana categoriei.
+
+109
+00:08:06,830 --> 00:08:10,460
+Și apoi de ce se va ajunge la coloana valorilor.
+
+110
+00:08:10,570 --> 00:08:12,060
+Dacă mergem și verificăm asta.
+
+111
+00:08:12,170 --> 00:08:20,030
+Acum avem un plot de bar unde, dacă mă deplasez puțin, pot vedea valoarea pentru fiecare dintre aceste categorii astfel încât C
+
+112
+00:08:20,030 --> 00:08:23,830
+este 50 B este 43 și a fost de 32.
+
+113
+00:08:23,840 --> 00:08:24,460
+In regula.
+
+114
+00:08:24,460 --> 00:08:30,330
+Și puteți să măriți dacă doriți, dar acest lucru nu poate fi prea util pentru un anumit marplot.
+
+115
+00:08:30,500 --> 00:08:32,620
+Continuați și continuați.
+
+116
+00:08:32,750 --> 00:08:38,110
+Acum, după cum știm că datele dvs. nu vor fi mereu plasate convenabil, cum ar fi 2 dacă o coloană
+
+117
+00:08:38,120 --> 00:08:44,000
+de categorii în valori, dar pe care o puteți face, se numește grup printr-o funcție agregată pe datele dvs. pentru ao obține
+
+118
+00:08:44,000 --> 00:08:48,730
+într-un fel de formă unde este este logic să folosiți un plot de bare folosind A-plot.
+
+119
+00:08:48,750 --> 00:08:50,120
+Lasă-mă să-ți arăt ce vreau să spun prin asta.
+
+120
+00:08:50,120 --> 00:08:52,660
+Aruncati o privire la DMF-ul nostru original.
+
+121
+00:08:52,940 --> 00:08:55,930
+Putem vedea că avem un B C și D.
+
+122
+00:08:55,980 --> 00:08:58,350
+Acum nu am putea să sunăm de la asta.
+
+123
+00:08:58,380 --> 00:09:01,820
+În caz contrar, vom obține o grămadă de bare și vă voi arăta ce vreau să spun prin asta.
+
+124
+00:09:01,870 --> 00:09:07,680
+Doar acel tip este bar egal, veți obține o grămadă de bare pentru fiecare punct de date și nu este exact
+
+125
+00:09:07,670 --> 00:09:08,540
+ceea ce doriți.
+
+126
+00:09:08,590 --> 00:09:12,860
+Va trebui să faceți o anumită funcție agregată pe lângă aceasta, de exemplu, să vedem
+
+127
+00:09:12,890 --> 00:09:15,300
+că doriți să numărați instanțele pentru fiecare coloană.
+
+128
+00:09:15,680 --> 00:09:19,410
+Și aici avem un grafic pentru fiecare caz, care în acest caz este de doar 100.
+
+129
+00:09:19,430 --> 00:09:26,580
+Deoarece sunt distribuite în mod egal, dar puteți face și alte lucruri cum ar fi suma fiecărei coloane și acum avem un
+
+130
+00:09:26,630 --> 00:09:29,660
+grafic de bare care arată suma fiecărei coloane.
+
+131
+00:09:29,660 --> 00:09:29,970
+In regula.
+
+132
+00:09:30,050 --> 00:09:31,030
+Destul de interesante.
+
+133
+00:09:31,040 --> 00:09:36,030
+Dar rețineți că acest complot al plotului cu complot devine foarte puternic atunci când numiți un fel de funcție
+
+134
+00:09:36,020 --> 00:09:38,830
+agregată sau un grup printr-o funcție a cadrului de date.
+
+135
+00:09:39,000 --> 00:09:43,640
+Este posibil ca cadrul dvs. de date să nu fie în format de acest tip frumos.
+
+136
+00:09:44,210 --> 00:09:45,610
+OK, asta e marplotul.
+
+137
+00:09:45,770 --> 00:09:46,400
+Sa discutam.
+
+138
+00:09:46,400 --> 00:09:52,430
+Caseta cu ploturi Acum, cutia de date vă poate fi ceva care arată că această parcelă cutie va
+
+139
+00:09:52,430 --> 00:09:56,650
+face în mod automat acest tip de agregare pentru distribuția respectivă.
+
+140
+00:09:57,150 --> 00:10:00,830
+Și faci acest lucru specificând tipul este egal cu cutia.
+
+141
+00:10:00,950 --> 00:10:05,310
+Și aici se va face automat o cutie pentru fiecare coloană și puteți transforma coloanele
+
+142
+00:10:05,310 --> 00:10:07,530
+pe sau pe cele care le ocolește.
+
+143
+00:10:07,620 --> 00:10:12,060
+Aici, cu DMF sau doar prin comutarea lor și de aici aici de parcelă plotline, de exemplu,
+
+144
+00:10:12,060 --> 00:10:17,880
+am vrut doar să văd și să văd că pot doar să faceți clic pe a și c și pot face clic pe
+
+145
+00:10:18,180 --> 00:10:24,290
+Biondi, precum și a vedea ce vreau și vă voi da informații pe plăcile de bază aici pentru cutia care este destul de convenabilă.
+
+146
+00:10:24,290 --> 00:10:29,700
+Acum hai să vorbim despre un complot 3D de suprafață pentru a vorbi cu adevărat despre cele trei suprafețe de suprafață.
+
+147
+00:10:29,710 --> 00:10:39,350
+Am de gând să fac un nou cadru de date va spune dacă trei este egal cu cadre de date PD și
+
+148
+00:10:39,360 --> 00:10:48,690
+vom merge mai departe și să spunem că X este o coloană și vom spune doar două două trei patru
+
+149
+00:10:52,110 --> 00:11:03,260
+cinci vom specifica y ca un coloana devalues ​​10 20 30 2010 așa că merge sus și jos și apoi voi specifica Z este o coloană.
+
+150
+00:11:03,260 --> 00:11:09,990
+Și hai să mergem mai departe și să specificăm acest lucru ca fiind 500 400 300 200 100.
+
+151
+00:11:10,070 --> 00:11:10,610
+O.K.
+
+152
+00:11:10,910 --> 00:11:16,940
+Deci, am cadrele mele de date să ia o privire la ea și acest lucru este în principiu trei mențiuni de valori
+
+153
+00:11:16,940 --> 00:11:19,600
+sunt trei variabile putem folosi un complot de suprafață.
+
+154
+00:11:19,640 --> 00:11:28,160
+Dacă vrem să creăm o compoziție tridimensională de suprafață a acestor trei variabile, să spunem trei comploturi și să precizăm
+
+155
+00:11:28,160 --> 00:11:36,760
+tipul de a fi un complot de suprafață și acest lucru va crea un complot de suprafață a ceea ce avem aici.
+
+156
+00:11:36,770 --> 00:11:39,210
+Deci puteți vedea că avem un complot de suprafață.
+
+157
+00:11:39,210 --> 00:11:44,390
+Acum, permiteți-mi să vă arăt un alt exemplu de complot de suprafață prin
+
+158
+00:11:44,390 --> 00:11:52,370
+felul de a schimba aceste valori în loc să spun 100 până la 500 Voi spune 5 4 3 2 1.
+
+159
+00:11:52,400 --> 00:11:53,430
+Și să complotăm asta.
+
+160
+00:11:53,440 --> 00:11:56,020
+Putem vedea acum că avem un fel de contur de vârf.
+
+161
+00:11:56,030 --> 00:12:01,160
+Acum putem schimba, de fapt, scalele de culori aici, în cazul în care nu ne place această scală de culori curcubeu.
+
+162
+00:12:01,300 --> 00:12:12,290
+Puteți spune ceva asemănător scării de culoare și spuneți Ardie pentru roșu sau galben pentru alb y l pentru galben și B
+
+163
+00:12:12,290 --> 00:12:13,850
+pentru albastru.
+
+164
+00:12:13,850 --> 00:12:17,270
+Și puteți verifica documentația fără plotare pentru toate codurile scării de culoare.
+
+165
+00:12:17,300 --> 00:12:20,220
+Ele nu se potrivesc exact cu hărțile colorate ale hărților.
+
+166
+00:12:20,240 --> 00:12:21,560
+Așa că ține minte.
+
+167
+00:12:21,650 --> 00:12:25,230
+Și aici avem un complot de suprafață foarte frumos făcut direct de pe cadrul nostru de date.
+
+168
+00:12:25,250 --> 00:12:29,710
+Putem să o rotim și să jucăm cu ea pentru a obține toate informațiile din ea.
+
+169
+00:12:29,720 --> 00:12:30,310
+In regula.
+
+170
+00:12:30,590 --> 00:12:31,840
+Acestea sunt trei suprafețe.
+
+171
+00:12:31,880 --> 00:12:35,020
+Și, în sfârșit, vor vorbi despre încă câteva parcele.
+
+172
+00:12:35,150 --> 00:12:40,910
+O bază foarte importantă pe care o veți găsi probabil ca o histogramă pe
+
+173
+00:12:40,910 --> 00:12:51,290
+care o puteți spune dacă apelați o singură coloană și apoi spuneți că tipul de parcelă este egal cu hist și veți obține o histogramă și puteți
+
+174
+00:12:51,290 --> 00:12:54,290
+specifica numărul de containere ale altui argument.
+
+175
+00:12:54,350 --> 00:12:59,720
+De exemplu, dacă doriți 25 de bins, puteți specifica acest lucru și puteți obține mai multe cutii.
+
+176
+00:12:59,720 --> 00:13:03,660
+Permiteți-mi să merg și să fac acest lucru mai evident, specificând o mulțime de oferte.
+
+177
+00:13:04,190 --> 00:13:04,620
+O.K.
+
+178
+00:13:04,660 --> 00:13:05,980
+Și aici avem mai multe bins.
+
+179
+00:13:06,020 --> 00:13:11,780
+Nu au existat atât de multe puncte de date, astfel încât să le păstrați în minte dacă mergeți mai departe și treceți întregul
+
+180
+00:13:11,780 --> 00:13:12,750
+cadru de date.
+
+181
+00:13:12,890 --> 00:13:19,310
+Să numim doar tipul DFA A-complot este egal Doar veți obține o histogramă care se suprapune cu toate coloanele, ceea ce
+
+182
+00:13:19,360 --> 00:13:24,080
+înseamnă că puteți compara histogramele coloanelor și le puteți activa și dezactiva pentru a le compara
+
+183
+00:13:24,080 --> 00:13:24,950
+între ele.
+
+184
+00:13:24,950 --> 00:13:26,750
+Acum acestea sunt repartizate aleatoriu în mod normal.
+
+185
+00:13:26,750 --> 00:13:30,560
+Deci, ele se suprapun reciproc, ceea ce are sens, având în vedere modul în care am creat acest lucru.
+
+186
+00:13:30,740 --> 00:13:35,840
+Dar le puteți activa de multe ori pentru a vizualiza histograme după cum doriți pentru toate coloanele din cadrul de date.
+
+187
+00:13:36,410 --> 00:13:40,490
+Așadar, depinde de dvs. dacă doriți să treceți într-o singură coloană sau să treceți întregul cadru de date
+
+188
+00:13:40,490 --> 00:13:42,590
+și apoi să le porniți și să-l opriți.
+
+189
+00:13:42,650 --> 00:13:50,450
+Următorul pe care vreau să-ți arăt că este un tip de răspândire de tip răspândire, sunt utilizate foarte mult pentru datele stocurilor.
+
+190
+00:13:50,550 --> 00:13:55,340
+Deci, în comparație cu acțiunile, voi merge mai departe și le voi face cu valorile aleatorii aici.
+
+191
+00:13:55,340 --> 00:13:59,810
+Mai târziu, în ziua financiară pentru a limita un proiect, vom vedea de fapt o analiză tehnică mai detaliată Blotz.
+
+192
+00:14:00,350 --> 00:14:08,990
+Dar dacă spun doar aceste două coloane și sunt în afara cadrului meu de date pot spune că un fel de complot este egal cu răspândirea și vom obține un
+
+193
+00:14:10,450 --> 00:14:16,190
+complot și apoi un subplot Îmi voi lua linia de complot care le arată unul împotriva celuilalt și atunci
+
+194
+00:14:16,190 --> 00:14:20,260
+îmi voi face rostul de răspândire care arată răspândirea lor unul împotriva celuilalt.
+
+195
+00:14:20,300 --> 00:14:25,190
+Deci, de exemplu, dacă mergem mai departe și aici mărim 20, putem mări aici.
+
+196
+00:14:25,360 --> 00:14:27,860
+Să vedem unde corespunde cu 20.
+
+197
+00:14:27,860 --> 00:14:31,460
+Ei bine, observați că răspândirea este punctul negativ 3:08 între ele.
+
+198
+00:14:31,640 --> 00:14:33,770
+Iar aici putem verifica ca rezultat.
+
+199
+00:14:33,770 --> 00:14:37,320
+Deci, punctul negativ 3 8 minus punctul 1.
+
+200
+00:14:37,370 --> 00:14:39,700
+Vom lua 2. 5 6 despre acolo.
+
+201
+00:14:39,920 --> 00:14:44,910
+Deci, puteți să mergeți mai departe și să comparați aceste rezultate și acest lucru este, în esență, foarte
+
+202
+00:14:44,930 --> 00:14:48,380
+util pentru datele stocurilor pentru a vedea diferența dintre două stocuri.
+
+203
+00:14:48,530 --> 00:14:54,470
+Avem încă două tipuri de plus pentru a vă arăta că următorul este un balon
+
+204
+00:14:54,680 --> 00:15:02,510
+și un complot cu bule este foarte asemănător unui scatterplot, cu excepția faptului că va schimba dimensiunea punctelor bazate pe altă variabilă.
+
+205
+00:15:02,510 --> 00:15:09,890
+Deci, dacă spun un fel este egal cu bule voi specifica X și Y la fel ca pentru un scatterplot și apoi
+
+206
+00:15:09,890 --> 00:15:13,400
+voi specifica dimensiunea bulelor bazate pe o altă coloană.
+
+207
+00:15:13,450 --> 00:15:14,460
+Să mergem mai departe și să alegem.
+
+208
+00:15:14,460 --> 00:15:22,160
+Vedeți și aici, acum am o scatterplot, cu excepția dimensiunii punctelor care se bazează pe altă valoare a coloanei și vedeți aceste
+
+209
+00:15:22,610 --> 00:15:28,670
+tipuri de loturi foarte mult pentru lucruri precum PIB-ul mondial, în comparație cu populația și poate cu
+
+210
+00:15:28,670 --> 00:15:30,350
+factorul de fericire etc.
+
+211
+00:15:30,360 --> 00:15:36,270
+Deci, acestea sunt parcele destul de comune, mai ales pentru lucruri precum rapoartele Organizației Națiunilor Unite.
+
+212
+00:15:36,400 --> 00:15:37,070
+Dreapta.
+
+213
+00:15:37,100 --> 00:15:38,560
+Deci asta e complotul cu bule.
+
+214
+00:15:38,630 --> 00:15:46,150
+Și apoi, în cele din urmă vom ajunge la matricea scatter, complotul matricei este, în esență, foarte asemănător cu parcela pe
+
+215
+00:15:46,180 --> 00:15:46,910
+perete.
+
+216
+00:15:46,910 --> 00:15:50,580
+Creează doar o matrice de dispersie a tuturor coloanelor pe care le poate folosi.
+
+217
+00:15:50,580 --> 00:15:56,990
+Deci, spui DFA că matricea de subliniere a scatterului înseamnă că ai putea avea nevoie să te asiguri că toate coloanele tale sunt
+
+218
+00:15:57,050 --> 00:15:59,160
+numerice pentru ca acest lucru să funcționeze.
+
+219
+00:15:59,240 --> 00:16:03,880
+Să spunem doar matricea de scatter și puteți să vă apropiați fiecare complot individual.
+
+220
+00:16:03,890 --> 00:16:05,740
+Rețineți că aveți multe puncte aici.
+
+221
+00:16:05,750 --> 00:16:09,540
+Acest lucru va dura o perioadă de încărcare și poate fi foarte lent în măsura în care se mărește sau micșorează.
+
+222
+00:16:09,560 --> 00:16:12,140
+Deci, utilizați această îngrijire pe seturi de date foarte mari.
+
+223
+00:16:12,170 --> 00:16:17,480
+În caz contrar, este posibil să vă prăbușiți kernel-ul Python.
+
+224
+00:16:17,750 --> 00:16:21,350
+OK, asta e pentru tipurile de complot de bază pe care le vom trece în această lecție.
+
+225
+00:16:21,410 --> 00:16:26,240
+Dacă doriți mai multe informații și mai multe detalii despre documentație, aș recomanda să mergeți
+
+226
+00:16:26,240 --> 00:16:32,480
+la pagina web și acest lucru este disponibil doar prin căutarea hub și manșetă ar trebui să vă ducă la
+
+227
+00:16:32,480 --> 00:16:38,930
+această pagină este găzduit de butoanele Cesar Santos Jorge slash și am contribuit la fel cum ați văzut înainte și puteți
+
+228
+00:16:38,930 --> 00:16:43,520
+verifica chiar aici aceste link-uri cu manuscrise tutorial unde aveți o galerie de diagrame.
+
+229
+00:16:43,860 --> 00:16:47,690
+Lăsați-vă să știți ce culori sunt disponibile online Panduri ca complet.
+
+230
+00:16:47,700 --> 00:16:49,500
+Sunt multe informații foarte bune aici.
+
+231
+00:16:49,520 --> 00:16:54,800
+Deci, de exemplu, dacă mergeți înainte și spuneți panda ca și cum am trecut deja destul de puțin din
+
+232
+00:16:55,250 --> 00:17:00,970
+această informație, există de fapt câteva metode de plotare mai de bază, cum ar fi histograme ale plotului de bare, poate
+
+233
+00:17:00,970 --> 00:17:05,320
+histograme stivuite mai multe valori de grupare detaliate pe parcelele plotului nu a trecut.
+
+234
+00:17:05,330 --> 00:17:09,820
+Dar se spune doar că tipul este egal cu zona și există mai multe informații.
+
+235
+00:17:09,830 --> 00:17:14,120
+Acum am făcut multe din acest lucru deja, dar dacă doriți mai multe detalii, puteți să consultați
+
+236
+00:17:14,120 --> 00:17:16,810
+întotdeauna această pagină de documentare, care este destul de drăguță.
+
+237
+00:17:17,280 --> 00:17:17,890
+Bine.
+
+238
+00:17:18,200 --> 00:17:22,790
+În cele din urmă am vrut doar să menționez că există unele capabilități de analiză tehnică cu manșoane care
+
+239
+00:17:22,790 --> 00:17:23,800
+sunt construite în.
+
+240
+00:17:23,840 --> 00:17:25,790
+Sunt încă sub beta.
+
+241
+00:17:25,790 --> 00:17:32,000
+Acestea nu sunt pe deplin eliberate, dar le puteți verifica în secțiunea de analiză tehnică a
+
+242
+00:17:34,460 --> 00:17:41,000
+acestei biblioteci puteți afla mai multe despre aceste parcele de analiză tehnică, făcând clic aici pe dosarul
+
+243
+00:17:41,000 --> 00:17:44,240
+cu maneci și apoi verificând CA pi.
+
+244
+00:17:44,540 --> 00:17:46,910
+Iar aceasta este analiza tehnică a fișierului pi.
+
+245
+00:17:46,910 --> 00:17:53,480
+Din nou, acest lucru este un fel de lucruri avansate și este dedicat în mod special analizei financiare.
+
+246
+00:17:53,480 --> 00:17:57,010
+Deci, dacă nu sunteți interesat de analiza financiară, nu vă faceți griji în legătură cu acest lucru.
+
+247
+00:17:57,030 --> 00:18:00,320
+Ei pot verifica câteva funcții aici și câteva tipuri pe care le puteți face.
+
+248
+00:18:00,320 --> 00:18:06,840
+Vă permite să faceți lucruri cum ar fi mediile mobile sau corelația între parcele sau stocuri etc.
+
+249
+00:18:06,920 --> 00:18:12,190
+Vom explora unele dintre aceste tipuri de complot mai târziu într-o secțiune opțională a proiectului de date
+
+250
+00:18:12,250 --> 00:18:12,940
+financiare capstone.
+
+251
+00:18:13,070 --> 00:18:15,610
+Dar dacă nu sunteți interesat de astfel de lucruri, nu vă faceți griji.
+
+252
+00:18:15,680 --> 00:18:20,120
+Vreau doar să fiți conștienți de faptul că este acolo pentru dvs. în cazul în care sunteți interesat de analiza
+
+253
+00:18:20,210 --> 00:18:22,040
+financiară și crearea de parcele interactive pentru asta.
+
+254
+00:18:22,370 --> 00:18:23,000
+Bine.
+
+255
+00:18:23,240 --> 00:18:23,930
+Multumesc tuturor.
+
+256
+00:18:23,930 --> 00:18:26,260
+Sper că v-a plăcut să învățați despre manșete plotline.
+
+257
+00:18:26,270 --> 00:18:27,710
+Este un instrument foarte puternic.
+
+258
+00:18:27,770 --> 00:18:31,110
+Și vestea bună este că nu trebuie să vă ajustați cunoștințele atât de mult pentru ea.
+
+259
+00:18:31,120 --> 00:18:35,060
+Pur și simplu adăugați un ochi și amintiți-vă ce fel de complot doriți să treceți.
+
+260
+00:18:35,240 --> 00:18:35,880
+O.K.
+
+261
+00:18:36,110 --> 00:18:38,170
+Mulțumesc tuturor și o să văd la următoarea conferință.

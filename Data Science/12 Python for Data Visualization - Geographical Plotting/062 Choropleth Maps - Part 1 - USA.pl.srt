@@ -1,0 +1,943 @@
+1
+00:00:05,370 --> 00:00:10,440
+Cześć wszystkim i zapraszam na wykład z mapy chloroplastu i tego wykładu, który omówimy w
+
+2
+00:00:10,440 --> 00:00:15,870
+jaki sposób korzystać z Pythona, a po części do tworzenia map koralowych, które pozwolą nam wyrysować
+
+3
+00:00:15,870 --> 00:00:19,080
+informacje w skali globalnej lub na skalę ogólnokrajową.
+
+4
+00:00:19,080 --> 00:00:22,170
+Przejdźmy dalej i przejdź do notatnika Jupiter, aby zacząć.
+
+5
+00:00:22,560 --> 00:00:22,830
+W porządku.
+
+6
+00:00:22,830 --> 00:00:27,360
+Oto jestem na notatce Jowisza, ale książki Supernaut nazywają się Kuro plus mapy.
+
+7
+00:00:27,360 --> 00:00:33,600
+I można znaleźć w Pythonie wizualizację danych pod folderem kreślenia geograficznego i powinieneś zacząć w notatniku
+
+8
+00:00:33,600 --> 00:00:38,480
+lub pracować wewnątrz tej książki, aby uzyskać dostęp do danych V.
+
+9
+00:00:38,490 --> 00:00:43,800
+Znowu będziemy pracować nad całym kodem, który będziemy tutaj pisać.
+
+10
+00:00:43,890 --> 00:00:49,920
+A także powinien wiedzieć, że istnieją odniesienia do jego objaśnień, a spisy mogą być
+
+11
+00:00:49,920 --> 00:00:53,410
+naprawdę trudne, zwłaszcza składnia używana do bez fabuły.
+
+12
+00:00:53,610 --> 00:00:57,070
+Więc zawsze będziesz chciał zachować tę notatkę jako punkt odniesienia dla rzeczy.
+
+13
+00:00:57,250 --> 00:01:01,720
+Po prostu wyjdziemy i wyjaśnimy kod w tym notesie, zobaczmy kilka prostych przykładów
+
+14
+00:01:01,740 --> 00:01:08,620
+na początku, używając tylko ogólnokrajowych fabuł, a potem zobaczymy prawdziwe dane, które pozwolą na większą skalę w skali całego kraju,
+
+15
+00:01:08,630 --> 00:01:13,510
+a potem ". zamierzamy iść dalej i zobaczyć skalę światową, abyśmy mogli przeprowadzić fabułę
+
+16
+00:01:13,520 --> 00:01:14,960
+w dwóch krajach.
+
+17
+00:01:14,970 --> 00:01:18,100
+W porządku, zacznijmy nowy rozdział w zeszycie.
+
+18
+00:01:18,300 --> 00:01:22,190
+W porządku. Znajduję się tutaj w notatniku Jupitera. Zacznę od importu.
+
+19
+00:01:22,200 --> 00:01:28,730
+Najpierw zamierzam zaimportować odrobinę spisku Ali, jak on.
+
+20
+00:01:29,310 --> 00:01:38,520
+A potem powiem, że aby zrobić to wszystko off-line lub zapisać z działki import off-line,
+
+21
+00:01:39,720 --> 00:01:41,610
+pobierz podkategorię Legia.
+
+22
+00:01:41,640 --> 00:01:44,250
+Używam tylko karty z zakładkami do autouzupełniania tego.
+
+23
+00:01:44,250 --> 00:01:51,000
+Więc po prostu wpisuję, a następnie autouzupełnianie w nim podkreśla tryb notebooka, a następnie wątki
+
+24
+00:01:51,270 --> 00:01:52,180
+i spisek.
+
+25
+00:01:52,730 --> 00:01:57,210
+Więc jeśli chodzi o funkcje do wypełnienia, możesz po prostu skopiować i wkleić ten kod z notatnika, jeśli chcesz.
+
+26
+00:01:57,810 --> 00:02:07,410
+A potem mam zamiar nazwać go także trybem podkreślenia notebooka, a passen connected jest równy true.
+
+27
+00:02:07,830 --> 00:02:13,020
+I że widzimy wszystko wewnątrz notebooka Jowisza, a w twoim notebooku jest link do
+
+28
+00:02:13,320 --> 00:02:16,130
+innych opcji, które wykorzystują częściowo poza linią.
+
+29
+00:02:16,580 --> 00:02:17,420
+DOBRZE.
+
+30
+00:02:17,460 --> 00:02:20,950
+Znowu tak jak wspomniałem fabułę Mapowanie Lee może być trochę trudne do przyzwyczajenia.
+
+31
+00:02:21,000 --> 00:02:26,160
+W notatniku Jupitera znajduje się kopia "ściągawki", a także link do niej. Wygląda to mniej
+
+32
+00:02:26,160 --> 00:02:26,920
+więcej tak.
+
+33
+00:02:26,970 --> 00:02:29,980
+Możesz więc zobaczyć podstawowe wykresy z częściowym wykorzystaniem ich.
+
+34
+00:02:29,980 --> 00:02:35,050
+A jeśli przewiniesz w dół, możesz później zobaczyć rzeczywiste mapy i arkusze cheatów tutaj.
+
+35
+00:02:35,130 --> 00:02:37,860
+Jest to rodzaj formatu, który będziemy śledzić.
+
+36
+00:02:37,860 --> 00:02:41,690
+Idźmy dalej i wskoczmy z powrotem do notatnika Jowisza.
+
+37
+00:02:41,730 --> 00:02:44,960
+Pierwszą rzeczą, którą musimy zrobić, to zacząć budować słownik danych.
+
+38
+00:02:45,030 --> 00:02:48,740
+Najłatwiejszym sposobem na to jest użycie metody DCT.
+
+39
+00:02:48,900 --> 00:02:52,600
+Więc możesz rzucić słownik z ICC.
+
+40
+00:02:52,740 --> 00:02:58,050
+Więc użyjemy tej metody, aby przesłać listę do słownika, a pierwszą
+
+41
+00:02:58,050 --> 00:03:02,130
+rzeczą, którą zrobimy, jest rozpoczęcie od naszych danych.
+
+42
+00:03:02,130 --> 00:03:09,800
+Masz więc swoje dane i będzie to słownik, a naszym kluczem będzie
+
+43
+00:03:09,850 --> 00:03:11,730
+Coro Plath.
+
+44
+00:03:14,310 --> 00:03:20,190
+A potem będziemy mieć lokalizacje i lokalizacje to lista stanów i jest to skrót od stanów w
+
+45
+00:03:20,190 --> 00:03:24,120
+naszym przypadku, ponieważ robimy to tylko w skali całego kraju.
+
+46
+00:03:24,240 --> 00:03:32,040
+Więc idź i powiedz Asie CA i NY, że możesz iść dalej i wstawić skróty kodu pocztowego, które chcesz tam.
+
+47
+00:03:33,600 --> 00:03:36,000
+Następnie powiemy tryb lokalizacji.
+
+48
+00:03:36,570 --> 00:03:43,920
+I w tym przypadku zamierzamy wprowadzić Stany Zjednoczone w gotówce, co pozwala Whitely'owi wiedzieć, że robimy to na poziomie Stanów
+
+49
+00:03:44,010 --> 00:03:49,710
+Zjednoczonych i istnieje różny tryb lokalizacji, a ty możesz iść dalej i sprawdzić linki w
+
+50
+00:03:49,710 --> 00:03:55,020
+notatniku Jowisza do pobierz dokumentację na temat różnych trybów lokalizacji, które możesz podać.
+
+51
+00:03:56,760 --> 00:04:05,790
+Następnie zamierzamy wprowadzić skalę kolorów równą Portlandowi, który jest tylko skalą kolorów i możemy również robić inne rzeczy,
+
+52
+00:04:06,120 --> 00:04:09,670
+takie jak zielenie lub szarości i chodzić.
+
+53
+00:04:09,750 --> 00:04:12,500
+Zmiksujemy to i zobaczymy, jak będzie działać później.
+
+54
+00:04:12,560 --> 00:04:22,530
+Po prostu wybiorę Portland, a potem pójdziemy dalej i zrobimy passen w tekście kluczowym, a tekst jest listą tego,
+
+55
+00:04:22,530 --> 00:04:26,600
+co unosi się nad każdą z lokalizacji.
+
+56
+00:04:26,670 --> 00:04:28,990
+Więc zamierzam położyć tutaj kilka podstawowych rzeczy.
+
+57
+00:04:29,280 --> 00:04:36,570
+Wejdziemy i powiemy tekstowi jeden tekst 2, a następnie tekst 3, a następnie Z
+
+58
+00:04:39,300 --> 00:04:44,520
+będzie równe rzeczywistym wartościom, które będą wyświetlane w skali kolorów.
+
+59
+00:04:44,550 --> 00:04:52,870
+Pójdziemy dalej i po prostu ustawimy te dwa jeden dwa i trzy, a ja wprowadzę je jako pływaki.
+
+60
+00:04:53,800 --> 00:04:57,660
+I wreszcie pasan argumenty w kolorze paska.
+
+61
+00:04:57,660 --> 00:05:10,050
+I tak naprawdę jest to słownik z kluczowym tytułem, a następnie po prostu ktoś, komu podałeś, co chcesz, aby tytuł paska
+
+62
+00:05:10,160 --> 00:05:11,940
+koloru był.
+
+63
+00:05:11,940 --> 00:05:18,620
+Tak więc jako bardzo ogólnikowy powiem, że tytuł paska koloru idzie tutaj.
+
+64
+00:05:18,620 --> 00:05:21,600
+Racja, więc takie dane wyglądają i po prostu przyjrzymy się danym.
+
+65
+00:05:21,680 --> 00:05:27,140
+Będzie to słownik z dowolnego powodu, że częściowo dokumentacja lubi używać tego
+
+66
+00:05:27,130 --> 00:05:30,980
+rodzaju wywoływania słownika zamiast budować go jako słownik.
+
+67
+00:05:31,040 --> 00:05:36,710
+Ten rodzaj oszczędza czas na pisanie i wszystkie te cytaty, a teraz trzeba wykonać wszystkie te ciągi
+
+68
+00:05:36,710 --> 00:05:37,590
+na klucze.
+
+69
+00:05:37,690 --> 00:05:42,380
+Więc po prostu pójdę dalej i trzymam się dokumentacji i użyję tego rodzaju notacji.
+
+70
+00:05:42,410 --> 00:05:51,950
+Następnie chcemy utworzyć obiekt lub zmienną układu, a układ będzie kontynuowany i będzie
+
+71
+00:05:51,940 --> 00:05:53,530
+zagnieżdżonym słownikiem.
+
+72
+00:05:53,540 --> 00:05:59,350
+I po prostu passen G. O. jest równa, a
+
+73
+00:06:02,260 --> 00:06:05,240
+następnie ustawiamy zakres na US A.
+
+74
+00:06:06,800 --> 00:06:09,660
+A to, co będziemy robić i wykorzystywać, to figura "idź".
+
+75
+00:06:09,680 --> 00:06:17,300
+Aby to zrobić, będziemy musieli zaimportować coś innego, co będzie wymagało
+
+76
+00:06:17,540 --> 00:06:23,270
+importu wykresu kropkowego Clottey podkreślenia RBJ s jako.
+
+77
+00:06:23,600 --> 00:06:29,980
+I mam zamiar iść do przodu, po prostu umieść to na szczycie z innymi importami i uruchom to.
+
+78
+00:06:30,520 --> 00:06:31,980
+OK, więc nie, to jest ważne.
+
+79
+00:06:32,000 --> 00:06:34,430
+Mogę powiedzieć, Idź i ustaw
+
+80
+00:06:38,620 --> 00:06:39,740
+dane.
+
+81
+00:06:39,860 --> 00:06:47,030
+I jest to trochę dziwna część równa nawiasach, tak jak element danych listy, który
+
+82
+00:06:47,020 --> 00:06:52,610
+jest trochę dziwny, ponieważ jest już słownikiem, ale przekazujesz go
+
+83
+00:06:52,610 --> 00:06:59,170
+jako słownik wewnątrz listy, a następnie mówisz, że lay jest będzie równy rozkładowi.
+
+84
+00:06:59,310 --> 00:07:04,430
+Nie musicie technicznie przekazać danych równych, a laya równa się, że możemy po prostu przekazać dane i
+
+85
+00:07:04,460 --> 00:07:05,180
+ułożyć je.
+
+86
+00:07:05,210 --> 00:07:13,130
+Cóż, chodźmy dalej i po prostu utrzymujmy to w ten sposób, a wszystko ustawimy na równi z
+
+87
+00:07:13,120 --> 00:07:17,750
+mapą Koro, a potem powiemy, że rysuję matematykę Curle'a.
+
+88
+00:07:18,300 --> 00:07:26,990
+I powinniśmy zobaczyć fabułę tutaj i tutaj mamy zaznaczone Arizona California i Nowy Jork z wybraną
+
+89
+00:07:27,010 --> 00:07:29,240
+tu tabelą kolorów Portland.
+
+90
+00:07:29,300 --> 00:07:33,740
+Teraz możemy iść dalej i zmienić go na jeden z predefiniowanych ciągów pokazanych w twoim notesie.
+
+91
+00:07:33,760 --> 00:07:38,770
+Na przykład możesz wyjść i zmienić to na jet.
+
+92
+00:07:38,930 --> 00:07:40,940
+Zobacz, jakie zmiany tam się dzieją.
+
+93
+00:07:40,970 --> 00:07:42,410
+Uruchom wszystko ponownie.
+
+94
+00:07:42,400 --> 00:07:48,170
+A teraz mamy teraz schemat kolorów odrzutowych lub możemy zrobić inne rzeczy, takie jak zielenie,
+
+95
+00:07:48,170 --> 00:07:50,180
+to kolejna, którą możesz wybrać.
+
+96
+00:07:51,050 --> 00:07:58,460
+Uruchom to i wszystko jest na zielono Więc jeśli Nowy Jork jest bardzo jasnozielony tutaj, pozwól mi iść do przodu
+
+97
+00:07:58,460 --> 00:08:04,340
+i po prostu zepsuć wszystko, co właśnie zrobiliśmy, ponieważ formatowanie może być trochę mylące i tak
+
+98
+00:08:04,350 --> 00:08:06,270
+naprawdę to wymaga czasu.
+
+99
+00:08:06,290 --> 00:08:08,960
+Zazwyczaj nie zapamiętuje się tego.
+
+100
+00:08:08,960 --> 00:08:13,500
+Będziesz musiał odwołać się do przykładów z dokumentacji lub z arkusza oszukiwania.
+
+101
+00:08:13,670 --> 00:08:21,140
+Ale podstawową ideą jest to, że mamy nasz import, zainicjowaliśmy tryb notebooka, a następnie mamy dwa główne obiekty: obiekt
+
+102
+00:08:21,350 --> 00:08:27,130
+danych i obiekt warstwy. Mogę nazwać je tylko moimi zmiennymi moją zmienną danych i
+
+103
+00:08:27,130 --> 00:08:31,260
+zmienną układu, a przeszłość przechodzi w postać Go funkcjonować.
+
+104
+00:08:31,550 --> 00:08:34,220
+A potem chcę przekazać tę rzecz do fabuły.
+
+105
+00:08:34,460 --> 00:08:41,090
+Jeśli po prostu przejdę do fabuły, co się stanie, otworzy się nowa zakładka jako plik hm
+
+106
+00:08:41,090 --> 00:08:47,190
+i możesz zapisać plik poczty e-mail lub wyeksportować go lub pobrać jako PNB.
+
+107
+00:08:47,240 --> 00:08:47,500
+W porządku.
+
+108
+00:08:47,540 --> 00:08:50,810
+Cóż, chodźmy tutaj i wróćmy do wykładu.
+
+109
+00:08:51,000 --> 00:08:57,350
+W naszym obiekcie danych mamy kilka argumentów, które mamy, które wyjaśniają, jaki typ działki geograficznej
+
+110
+00:08:57,350 --> 00:08:58,200
+robimy.
+
+111
+00:08:58,250 --> 00:09:00,850
+W tym przypadku skupiamy się właśnie na działkach Trybunału.
+
+112
+00:09:00,950 --> 00:09:08,570
+Następnie masz lokalizacje lokalizacje jest tablica lub lista tych kodów rzeczywistych kodów stanu, a następnie
+
+113
+00:09:08,570 --> 00:09:10,410
+określić tryb lokalizacji.
+
+114
+00:09:10,550 --> 00:09:16,070
+W tym przypadku, ponieważ pracujemy w USA, powiemy Stany Zjednoczone Dasch, a to może zejść
+
+115
+00:09:16,070 --> 00:09:17,300
+do poziomu hrabstwa.
+
+116
+00:09:17,300 --> 00:09:20,650
+Możesz wejść i odnieść się do dokumentacji, która jest połączona z chipem w notatniku.
+
+117
+00:09:20,750 --> 00:09:27,910
+Aby uzyskać więcej informacji na ten temat, masz tekst, a tekst jest tablicą lub listą tekstu
+
+118
+00:09:27,910 --> 00:09:30,740
+ustawionego dla każdej z lokalizacji.
+
+119
+00:09:30,740 --> 00:09:41,180
+Więc na przykład wyjdź i zmień to na Arizonę, zmień to na Cali i zmień je na Nowy Jork, a jeśli znów
+
+120
+00:09:41,170 --> 00:09:47,510
+to uruchomimy i zauważmy, że w działce, pozwól mi iść do niego.
+
+121
+00:09:47,570 --> 00:09:54,590
+Pozwólcie, że określę to jako spisek, żeby zobaczyć wewnątrz, że umieściliście książkę, którą zauważycie, kiedy mówię,
+
+122
+00:09:54,590 --> 00:09:59,640
+że wykreślam wartość tekstu, mówi Kalli Arizona i Nowy Jork.
+
+123
+00:09:59,780 --> 00:10:04,910
+Oznacza to, że ten tekst musi znajdować się w tej samej
+
+124
+00:10:04,910 --> 00:10:13,090
+sekwencji indeksu, co lokalizacje i będzie pasował, a następnie z jest dowolną wartością, którą chcesz reprezentować jako kolor.
+
+125
+00:10:13,100 --> 00:10:19,450
+Na przykład Cali był ceniony w Arizonie jako wartość 1 w Nowym Jorku Cazayoux trzy.
+
+126
+00:10:19,520 --> 00:10:23,900
+Później zobaczymy na podstawie prawdziwych danych, jak faktycznie możemy tego użyć, aby wskazać pewne poziomy według
+
+127
+00:10:24,230 --> 00:10:27,440
+stanu, ale tutaj właśnie odnoszą się do nich kolorowe paski.
+
+128
+00:10:27,670 --> 00:10:32,630
+I widzimy, że tytuł paska kolorów idzie tutaj to tylko tytuł tego paska kolorów.
+
+129
+00:10:32,810 --> 00:10:37,870
+I możesz wybrać skalę kolorów z dowolnym ciągiem, który jest wymieniony w tej notatce
+
+130
+00:10:37,860 --> 00:10:40,550
+Jowisza ponownie dla tego typu kreślenia.
+
+131
+00:10:40,550 --> 00:10:44,840
+Naprawdę powinieneś odwołać się do dokumentacji notatnika Jowisza, ponieważ
+
+132
+00:10:45,380 --> 00:10:50,420
+formatowanie jest naprawdę dziwne, ale to jest sposób działania bez fabuły.
+
+133
+00:10:50,420 --> 00:10:57,240
+Następnie masz zmienną układu i zagnieżdżony obiekt słownika, w którym właśnie określasz G. O. i zakres, aby być
+
+134
+00:10:57,260 --> 00:10:58,510
+USA.
+
+135
+00:10:58,570 --> 00:11:01,850
+To będzie stan USA chloroplast.
+
+136
+00:11:02,090 --> 00:11:08,270
+A potem przekazujecie całą sprawę, aby przejść do tej figury i mówicie, że układam mapę Coro i widzicie to tutaj.
+
+137
+00:11:09,230 --> 00:11:14,990
+Teraz możesz pokazać przykład z prawdziwymi danymi oraz kilka innych opcji, które możemy dodać do słowników,
+
+138
+00:11:15,020 --> 00:11:16,200
+danych i układu.
+
+139
+00:11:16,430 --> 00:11:23,420
+Więc kontynuuj i wykorzystaj wiedzę, którą już masz zamiar kontynuować i przewiń tutaj i powiem, że DFA jest
+
+140
+00:11:23,420 --> 00:11:29,080
+równe PD, które czyta C S V i jest tu plik C S V.
+
+141
+00:11:29,330 --> 00:11:37,850
+Zadzwoń do nas z 2011 r., Podkreślasz eksport rolny, a to tylko eksport rolny według stanu.
+
+142
+00:11:37,850 --> 00:11:42,740
+I pozwól mi wyjść i zaimportować Pandursa, żeby to przeczytać.
+
+143
+00:11:42,830 --> 00:11:45,570
+A potem sprawdzimy głowę państwa-ramki.
+
+144
+00:11:45,590 --> 00:11:51,090
+Tak więc w stanie ramki mam kod kategorii rzeczywistej nazwy stanu w tym przypadku dla wszystkich stanów.
+
+145
+00:11:51,310 --> 00:11:55,960
+Całkowity eksport, a następnie takie rzeczy jak wołowina, drób, itp.
+
+146
+00:11:56,030 --> 00:12:01,140
+A co jeśli te kraje eksportują produkty rolne.
+
+147
+00:12:01,130 --> 00:12:04,670
+W porządku, więc zacznijmy od stworzenia naszej zmiennej danych.
+
+148
+00:12:04,670 --> 00:12:12,830
+W naszej zmiennej lay-out moja zmienna danych będzie miała ten słownikowy casting,
+
+149
+00:12:12,830 --> 00:12:18,570
+a my powiemy, że typ jest równy Coro.
+
+150
+00:12:19,850 --> 00:12:23,130
+A potem przekazujemy argumenty skali kolorów.
+
+151
+00:12:23,330 --> 00:12:25,820
+W tym przypadku zamierzam przekazać ciąg znaków.
+
+152
+00:12:25,820 --> 00:12:32,860
+Kapitał Y kapitał I kapitał O małe litery nasz kapitał są małe D.
+
+153
+00:12:33,010 --> 00:12:42,270
+W tym rodzaju żółto-pomarańczowej czerwieni i następnych zamierzam powiedzieć lokalizacje, które zapamiętałem.
+
+154
+00:12:42,290 --> 00:12:49,940
+Jeśli przewinęliśmy tutaj ponownie, była to tylko lista kodów państwowych, a nasz tryb lokalizacji również tutaj.
+
+155
+00:12:50,390 --> 00:12:56,400
+Teraz mamy w naszej ramce danych, jeśli spojrzymy na to kolumna kodu.
+
+156
+00:12:56,450 --> 00:12:59,330
+Więc zamierzam tylko przekazać A. FA. Kod
+
+157
+00:13:02,780 --> 00:13:11,240
+i następny będzie naszym trybem lokalizacji, a my ustawimy to na równi ze stanami USA, a my również chcemy
+
+158
+00:13:14,810 --> 00:13:20,090
+określić, co będziemy mówić, ponieważ z i z będzie tym, co
+
+159
+00:13:20,090 --> 00:13:22,140
+faktycznie reprezentuje pasek kolorów walizka.
+
+160
+00:13:22,140 --> 00:13:28,700
+Pójdźmy dalej i powiedzmy całkowity eksport.
+
+161
+00:13:28,700 --> 00:13:33,270
+Mamy więc całkowity eksport jako kolumnę i to będzie nasza wartość.
+
+162
+00:13:33,350 --> 00:13:37,450
+Mamy również teksty, a to będzie tekst, który się wyrównuje.
+
+163
+00:13:37,580 --> 00:13:42,140
+A jeśli przewiniesz całą drogę w prawo, tutaj jest wygodnie umieszczona kolumna tekstowa.
+
+164
+00:13:42,380 --> 00:13:46,100
+Zazwyczaj prawdopodobnie musisz zbudować własną kolumnę tekstową, ale ponieważ jest to tylko
+
+165
+00:13:46,100 --> 00:13:47,990
+przykład, mamy już dla Ciebie tekst.
+
+166
+00:13:48,080 --> 00:13:51,200
+Prześlemy tam tekst, a
+
+167
+00:13:54,710 --> 00:14:03,240
+następnie chcemy przekazać pasek kolorów, niż powiedzieć, że pasek kolorów jest równy.
+
+168
+00:14:03,290 --> 00:14:08,290
+I tu masz słownik, w którym po prostu masz tytuł paska kolorów.
+
+169
+00:14:08,300 --> 00:14:14,210
+W tym przypadku wejdźmy do środka i powiedzmy miliony USD, ponieważ tak przedstawia się faktyczny całkowity eksport.
+
+170
+00:14:14,480 --> 00:14:17,840
+To jest liczba w milionach U. S. dolarów.
+
+171
+00:14:17,850 --> 00:14:25,130
+Teraz mamy zamiar dodać jeszcze jeden argument do tego i będzie to oznaczać, że znacznik jest równy.
+
+172
+00:14:25,220 --> 00:14:31,470
+I to jest trochę dziwna argumentacja, ponieważ jest to zestaw zagnieżdżonych słowników, ale to
+
+173
+00:14:31,460 --> 00:14:37,350
+w zasadzie ma zdefiniować znacznik, który będziemy pokazywać, gdy pokażemy fabułę, a powiesz,
+
+174
+00:14:37,350 --> 00:14:45,590
+że rzut linia słownika jest kluczem równa się, a następnie inne połączenie odlewania słownika i mówisz, że kolor
+
+175
+00:14:45,600 --> 00:14:51,640
+jest równy niepodpisany może zaakceptować r. g B kolor jako dziwny format napisów.
+
+176
+00:14:51,650 --> 00:14:53,030
+Mówisz R. SOL. B.
+
+177
+00:14:53,210 --> 00:14:56,330
+A potem w nawiasach podajesz swój R. SOL. Wartości B.
+
+178
+00:14:56,610 --> 00:15:01,250
+A więc chodźmy i powiedzmy dwa 5:55 dla wszystkich trzech dla czerwonego zielonego i niebieskiego.
+
+179
+00:15:01,880 --> 00:15:08,720
+A następnie zamierzam również określić wewnątrz tego wewnętrznego słownika wewnętrznego, że szerokość jest równa
+
+180
+00:15:09,040 --> 00:15:09,720
+dwóm.
+
+181
+00:15:09,920 --> 00:15:13,720
+Zobaczymy później, jak ten znacznik faktycznie wchodzi w życie.
+
+182
+00:15:13,880 --> 00:15:17,400
+I wreszcie chcę się upewnić, że mamy tu przecinek.
+
+183
+00:15:18,230 --> 00:15:22,790
+Mamy więc następny klucz i zamykamy go.
+
+184
+00:15:22,790 --> 00:15:23,020
+W porządku.
+
+185
+00:15:23,030 --> 00:15:24,860
+To mój słownik danych.
+
+186
+00:15:24,870 --> 00:15:28,430
+Teraz będziemy mieli nasz słownik rozkładowy.
+
+187
+00:15:28,820 --> 00:15:35,510
+Powiem, że lay-out jest równy temu, jak mój słownik rzucając, mogę ustawić tytuł
+
+188
+00:15:35,510 --> 00:15:37,100
+faktycznego spisku.
+
+189
+00:15:37,120 --> 00:15:49,460
+Teraz chodźmy i powiedzmy, że to 2011 U. S. eksportuje rolnictwo według stanów, że zamierzam powiedzieć, że Geo jest równe,
+
+190
+00:15:49,460 --> 00:15:52,140
+a ja zamierzam przekazać tutaj słownik.
+
+191
+00:15:52,460 --> 00:15:56,420
+Mamy zasięg równy USA.
+
+192
+00:15:56,630 --> 00:16:02,690
+Mam zamiar przekazać dwa dodatkowe argumenty w tym słowniku pokaż, że jeziora są równe true i
+
+193
+00:16:03,030 --> 00:16:09,480
+że w zasadzie po prostu pokazują rzeczywiste jeziora i mapę, a następnie można wybrać kolor jeziora i
+
+194
+00:16:09,470 --> 00:16:15,020
+zamierzam passen i R. SOL. być kodem za pomocą notacji Platii dla naszego kodu G-B, który jest tylko
+
+195
+00:16:15,040 --> 00:16:15,940
+ciągiem R. SOL. B.
+
+196
+00:16:16,130 --> 00:16:19,250
+A następnie na wydruku widać, że kolory są wartościami, które chcesz.
+
+197
+00:16:19,350 --> 00:16:25,940
+Więc powiemy 85 173 do 40 i złapałem je z Internetu, ponieważ w zasadzie robią ładny niebieski dla
+
+198
+00:16:25,940 --> 00:16:31,720
+jezior i to będzie nasz słownik składany, więc po prostu przyjrzymy się, że możemy mieć
+
+199
+00:16:31,910 --> 00:16:37,370
+ten dziwny zagnieżdżony struktura słownika, ale to jest sposób w jaki bezpartyjny bierze to.
+
+200
+00:16:37,460 --> 00:16:45,410
+W końcu możemy powiedzieć, że mapa Koro jest równa figurze.
+
+201
+00:16:45,410 --> 00:16:53,250
+Dane są równe i przekazujemy ten słownik danych do listy, a następnie mówimy, że układ jest równy.
+
+202
+00:16:54,260 --> 00:17:00,920
+A potem w końcu nazywamy I fabułę także na mapie koralowej.
+
+203
+00:17:01,280 --> 00:17:10,460
+I tutaj mamy teraz 2011 U. S. eksport produktów rolnych według stanu i powiadomienia, gdy my
+
+204
+00:17:10,460 --> 00:17:13,400
+nadjechaliśmy, zobaczymy cały tekst tych wartości w Kalifornii.
+
+205
+00:17:13,570 --> 00:17:19,170
+Widzimy również, że jeziora są niebieskie, co oznacza, że jeziora i kolor jezior wyglądają prawidłowo.
+
+206
+00:17:19,520 --> 00:17:20,890
+Mamy skalę kolorów.
+
+207
+00:17:20,930 --> 00:17:27,230
+Mamy nasze miliony pływów USD i widzimy również, że istnieje pewien rodzaj odstępu między państwami.
+
+208
+00:17:28,820 --> 00:17:30,900
+To właśnie reprezentował ten znacznik.
+
+209
+00:17:30,890 --> 00:17:34,720
+Więc jeśli wrócimy tu pod dane, mamy ten znacznik.
+
+210
+00:17:34,940 --> 00:17:41,690
+Dlatego ustawiliśmy linię dla koloru, a następnie, jeśli zwiększymy ją za pomocą linii, powiedzmy podwójnie,
+
+211
+00:17:41,690 --> 00:17:46,700
+a następnie przejdźmy i zmień kolor na 12 12 12.
+
+212
+00:17:46,700 --> 00:17:48,610
+To naprawdę oczywiste.
+
+213
+00:17:48,800 --> 00:17:55,390
+Ponownie uruchomię to, a następnie zobaczę, jak zmieni się ta mapa, jeśli chodzi o te granice.
+
+214
+00:17:55,410 --> 00:18:01,790
+Bardzo gruba strona z czarnymi obramowaniami zmieniła te wartości G-B i możesz to zrobić po prostu
+
+215
+00:18:01,800 --> 00:18:07,340
+wykonując poniższą formułę mówiąc o linii słownika, a następnie słownika ponownie wybieramy kolor i
+
+216
+00:18:07,380 --> 00:18:08,480
+szerokość słownika.
+
+217
+00:18:08,750 --> 00:18:13,260
+Cóż, idź dalej i po prostu ustaw to na coś podobnego.
+
+218
+00:18:13,600 --> 00:18:17,110
+I jeśli znów to uruchomię, możemy zobaczyć nasz spisek.
+
+219
+00:18:17,240 --> 00:18:17,790
+W porządku.
+
+220
+00:18:17,900 --> 00:18:23,600
+W ten sposób możesz utworzyć Curle plus działki na U. S. skala krajowa za pomocą linii działki.
+
+221
+00:18:23,720 --> 00:18:25,390
+Teraz nie powinienem wiedzieć.
+
+222
+00:18:25,390 --> 00:18:31,140
+Jest to dość mylące, jeśli chodzi o składnię i próbę zapamiętania, do czego zmierza wszystko.
+
+223
+00:18:31,130 --> 00:18:36,020
+Moja najlepsza rada, którą ci dam, to odwołanie się do notatnika Jowisza i odniesienie do linków
+
+224
+00:18:36,030 --> 00:18:37,430
+dokumentacji w notesie Jowisza.
+
+225
+00:18:37,550 --> 00:18:42,200
+Najczęściej musisz po prostu skopiować i wkleić, a następnie wypełnić odpowiedni
+
+226
+00:18:42,510 --> 00:18:44,680
+kod dla określonego zestawu danych.
+
+227
+00:18:44,690 --> 00:18:47,410
+To nie jest łatwe, ale tak musisz to zrobić.
+
+228
+00:18:47,480 --> 00:18:53,610
+Z natury jest to trudne, ponieważ może występować w tak wielu formatach, że starają się, by
+
+229
+00:18:53,930 --> 00:18:59,280
+były niejasne, aby można było przekazywać jak najwięcej możliwych lokalizacji lub trybów lokalizacji.
+
+230
+00:18:59,510 --> 00:19:02,900
+Ale to tylko prowadzi do dziwnej struktury składni.
+
+231
+00:19:02,960 --> 00:19:08,750
+Taka jest natura tej gry geograficznego spisku, jeśli chodzi o wykorzystanie fabuły Lee jako biblioteki
+
+232
+00:19:08,760 --> 00:19:10,480
+Pythona do geograficznego spisku.
+
+233
+00:19:10,700 --> 00:19:15,470
+Ale po całej tej ciężkiej pracy można zobaczyć coś, co jest całkiem fajne, aby pokazać innym.
+
+234
+00:19:16,550 --> 00:19:17,520
+W porządku.
+
+235
+00:19:17,510 --> 00:19:23,340
+W następnym wykładzie pokażemy, jak to zrobić w skali globalnej z globalnym koralem plus fabuły.
+
+236
+00:19:23,960 --> 00:19:26,370
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie.

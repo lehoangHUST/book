@@ -1,0 +1,571 @@
+1
+00:00:05,730 --> 00:00:10,950
+Herkese merhaba ve Anaconda sanal ortamlarında bu isteğe bağlı konferansa hoş geldiniz.
+
+2
+00:00:10,950 --> 00:00:16,710
+Bu, Anaconda dağıtımını kullanarak sanal ortamların nasıl oluşturulacağı konusunda biraz daha gelişmiş bir konudur.
+
+3
+00:00:17,070 --> 00:00:20,580
+İlgilenmiyorsanız, devam edin ve bu konuyu atlamaktan çekinmeyin.
+
+4
+00:00:20,880 --> 00:00:23,520
+Hadi devam edelim ve devam edelim.
+
+5
+00:00:23,550 --> 00:00:29,310
+Sanal ortamlar, sanal ortamlarda python ve kitaplıkları bilgisayarınıza kurmanıza izin veren
+
+6
+00:00:29,310 --> 00:00:32,130
+sanal ortamların neler olduğu hakkında konuşalım.
+
+7
+00:00:32,340 --> 00:00:37,860
+Bu sayede, Python veya kitaplıkların birden fazla sürümüne sahip olursunuz ve bu ortamları kolayca etkinleştirir
+
+8
+00:00:37,860 --> 00:00:39,210
+veya devre dışı bırakabilirsiniz.
+
+9
+00:00:39,210 --> 00:00:44,220
+Devam edin ve örneğin neden bunu yapmak isteyebileceğinizi gösteren birkaç örnek görebilirsiniz.
+
+10
+00:00:44,220 --> 00:00:47,870
+Belki bazen bir kütüphanenin farklı sürümlerinde program yapmak istersin.
+
+11
+00:00:48,060 --> 00:00:54,750
+Örneğin, Sacket öğrenme sürüm 0'ı kullanan tam bir program geliştirmiş olabilirsiniz. 27 ve sonra zamanın herhangi bir
+
+12
+00:00:54,750 --> 00:00:58,560
+noktasında sonraki sürümler 0'dır. 1 8 serbest bırakıldı.
+
+13
+00:00:58,560 --> 00:01:04,350
+Belki 0'ın yeni özelliklerini keşfetmek isteyebilirsiniz. 20 Ancak yükselttiğinizde eski kodunuzdan herhangi birisini
+
+14
+00:01:04,350 --> 00:01:05,340
+kırmak istemiyorum.
+
+15
+00:01:05,340 --> 00:01:09,510
+Burası, kitaplığın belirli bir sürümü için sanal bir ortam oluşturmak isteyebileceğiniz yerdir.
+
+16
+00:01:11,130 --> 00:01:15,390
+Diğer örneklerde kütüphane kurulumlarınızın doğru yerde olduğundan emin olmak istersiniz.
+
+17
+00:01:15,900 --> 00:01:20,940
+Mesela, bilgisayarınızda Python'un birden çok versiyonunu isteyebilirsiniz, böylece bir
+
+18
+00:01:20,940 --> 00:01:28,500
+python 2'den emin olabilirsiniz. Bir kütüphanenin 7 sürümü, python'a karşı doğru konumdadır 3. 5 versiyonu ile Python 2'de bir
+
+19
+00:01:28,500 --> 00:01:35,800
+çevreye sahip olduğunuzdan sanal ortamlar yapabilirsiniz. 7 ve başka bir Python 3. 5.
+
+20
+00:01:36,090 --> 00:01:42,120
+Normal Python dağıtımları için Anaconda ile devam edeceği pek çok kabiliyeti olan sanal
+
+21
+00:01:42,120 --> 00:01:44,740
+bir E ve V kütüphanesi var.
+
+22
+00:01:44,910 --> 00:01:50,030
+Bu sanal ENV kütüphanesi sanal ortamlar oluşturmanıza izin verir ve sanal bir çevre yöneticisi.
+
+23
+00:01:50,520 --> 00:01:55,740
+edilen dağılımı olan Anaconda, sanal çevrenin tüm süreçlerini etkinleştiren ve devre
+
+24
+00:01:55,740 --> 00:02:00,930
+dışı bırakan tüm süreçleri kolaylaştıran güzel bir sanal ortam yöneticisi içeriyor.
+
+25
+00:02:01,200 --> 00:02:04,480
+Bununla birlikte, bu derste kullandığımız Python'ın tavsiye
+
+26
+00:02:04,480 --> 00:02:08,610
+Devam edin ve şimdi devam ettireceğimiz resmi belgelerin kaynak bağlantısını
+
+27
+00:02:08,610 --> 00:02:09,350
+kontrol edin.
+
+28
+00:02:09,480 --> 00:02:13,160
+Öyleyse devam edin ve sizi bu sizi götürecek olan kaynak bağlantısını kontrol edin.
+
+29
+00:02:13,290 --> 00:02:18,960
+Ya da manüel olarak yazabilmeniz için PI veri dokümantasyonunda resmi görevlendireceğiz ya da
+
+30
+00:02:18,960 --> 00:02:20,940
+ortamları kullanma hakkında konuşacağız.
+
+31
+00:02:20,940 --> 00:02:24,890
+Bu tüm dosya yolunu veya dosya yolunu tarayıcınıza yazmak istemiyorsanız,
+
+32
+00:02:24,900 --> 00:02:26,540
+kaynak bağlantısını tıklamanız yeterlidir.
+
+33
+00:02:26,570 --> 00:02:31,230
+Devam etmek ve tarayıcıma atlamak için şimdi belgeleri biraz araştırıp
+
+34
+00:02:31,230 --> 00:02:33,300
+komut isteminde nasıl kullanabileceğinizi göstereceğim.
+
+35
+00:02:33,300 --> 00:02:35,340
+Hadi devam edelim ve şu an atlayalım.
+
+36
+00:02:36,060 --> 00:02:39,360
+Tamam, böylece burada ortamları yönetmek için kaynak bağlantısındayım.
+
+37
+00:02:39,390 --> 00:02:44,670
+Yapmanızı istediğim, devam edin ve ortam yaratmaya gidin ve burada bir ortam yaratmak için
+
+38
+00:02:44,670 --> 00:02:50,040
+temel talimatları görmeniz gerekir ve yeni bir çevre yaratmak için bir komut koymak gerektiğinde
+
+39
+00:02:50,070 --> 00:02:50,940
+oldukça basittir.
+
+40
+00:02:50,970 --> 00:02:57,120
+create komutunu, sonra da tire çizgi adını ve ardından yeni ortamınızı adlandırmak istediğiniz adı kullanın.
+
+41
+00:02:57,120 --> 00:02:58,930
+Devam edeceksiniz ve Konda
+
+42
+00:02:58,950 --> 00:03:04,710
+Bu örnekte, yeni ortamı kar taneleri olarak adlandırıyorlar ve daha sonra bu yeni ortamları
+
+43
+00:03:04,710 --> 00:03:08,430
+başlatmak istediğiniz bir taban paketinde veya kütüphanede yer açıyorlar.
+
+44
+00:03:08,430 --> 00:03:11,690
+Buraya bir paket koymazsan, bir hata alabilirsiniz.
+
+45
+00:03:11,730 --> 00:03:16,680
+Bu yüzden bir kez komut isteminde veya terminalde bu komutu tamamladıktan sonra elbette
+
+46
+00:03:16,680 --> 00:03:20,420
+Anaconda dağıtımını Python Kano'nun yüklemesinden sonra devam etmesini isteyeceksiniz.
+
+47
+00:03:20,430 --> 00:03:24,810
+Evet olarak Y yazabilir ve daha sonra adı verilen yeni bir ortam yaratır.
+
+48
+00:03:24,810 --> 00:03:30,200
+Bu durumda snowflake'in içerdiği bu program veya paketi BYO Python'u.
+
+49
+00:03:30,360 --> 00:03:36,150
+Python'un belirli bir sürümünü belirtmezseniz, Python'un temel sürümünü kullanır.
+
+50
+00:03:36,150 --> 00:03:38,690
+İndirdiğiniz anakondadır.
+
+51
+00:03:38,820 --> 00:03:41,970
+Ancak aslında Python'un belirli bir sürümünü belirtebilirsiniz.
+
+52
+00:03:42,110 --> 00:03:44,100
+Size bunu nasıl yapacağınızı göstereceğim.
+
+53
+00:03:44,100 --> 00:03:46,470
+Devam edelim ve komut istemine atlayayım.
+
+54
+00:03:46,650 --> 00:03:49,820
+Buraya koy bu şekilde adımları atlatayım.
+
+55
+00:03:50,190 --> 00:03:52,500
+Tamam, işte benim komut istemim.
+
+56
+00:03:52,590 --> 00:03:58,410
+Aslında kabarık bir şey yapıyor ve sonra onu başlatmak için bir kütüphaneye ihtiyacımız var.
+
+57
+00:03:59,030 --> 00:04:05,700
+Devam edeceğim ve sanal bir çevre yaratabileceğime söz vereceğiz Konda, hepsinden önce kınamak yer yaratacağım, adını
+
+58
+00:04:05,700 --> 00:04:11,280
+tire çizgi ve bir E söyleyeceğim ve bunu bildiğimizi söylemek için gülünç bir ad
+
+59
+00:04:11,280 --> 00:04:11,890
+olarak adlandıralım.
+
+60
+00:04:12,030 --> 00:04:14,240
+Gidip NUMP pi ile başlayalım.
+
+61
+00:04:14,280 --> 00:04:19,770
+İlk kütüphanelerden biri olacağından öğrendiğimize göre paket meta verilerini
+
+62
+00:04:19,770 --> 00:04:20,530
+alacaklar.
+
+63
+00:04:20,570 --> 00:04:24,170
+Devam etmek isterseniz, Alaska'ya yüklemek için ihtiyaç duydukları şeylerin bir listesini alacaklar.
+
+64
+00:04:24,420 --> 00:04:31,110
+edip, evet için bazı paketleri birbirine bağlayıp neyin çıkarılacağını niçin çıkaracağını söyleyeceğim.
+
+65
+00:04:31,110 --> 00:04:32,150
+Şimdi devam
+
+66
+00:04:32,260 --> 00:04:33,990
+Tamam, şimdi bitti.
+
+67
+00:04:34,010 --> 00:04:38,970
+Bu ortamı etkinleştirmek için, bu ortamı devre dışı bırakmak için yumuşak kabarcık etkinleştirmeyi kullanabilirsiniz.
+
+68
+00:04:38,970 --> 00:04:40,790
+Devreden çıkarmayı kullanıyorum.
+
+69
+00:04:40,830 --> 00:04:46,920
+Gidip, Python'un temel sürümünün Python'un bu sanal ortam sürümüne neye benzediğini
+
+70
+00:04:46,980 --> 00:04:48,330
+size göstereceğim.
+
+71
+00:04:48,330 --> 00:04:51,690
+Bu sanal ortamın yalnızca pi ile başlatıldığını unutmayın.
+
+72
+00:04:51,840 --> 00:04:58,290
+sadece Python yazarsanız, Anaconda'nın normal dağıtımını bu durumda yüklediğim 2'ye getireceğim.
+
+73
+00:04:58,560 --> 00:05:00,920
+Şu anda 7.
+
+74
+00:05:00,930 --> 00:05:07,450
+Mesela ben gidersem ve ithalat num pi ve P girersem söylersem.
+
+75
+00:05:07,470 --> 00:05:12,770
+PD girerken ithalatçılık yaparsam işe yarıyor.
+
+76
+00:05:12,840 --> 00:05:14,470
+Bu da iyi işliyor.
+
+77
+00:05:14,550 --> 00:05:20,970
+Şimdi devam edin ve bundan ayrılalım ve Fluffy adı verilen sanal ortamımı şimdi
+
+78
+00:05:20,970 --> 00:05:27,450
+harekete geçireceğim ve şimdi parantez içinde parıltılı olduğunu söyleyen, kabarık olduğunu söyleyen, bana
+
+79
+00:05:27,450 --> 00:05:30,060
+kabarık sanal ortamın içindeyim .
+
+80
+00:05:30,060 --> 00:05:37,740
+Python deyin ve enter tuşuna basarsam aynı Python 2 sürümünü edinebilirim. bunun doğru olduğunu bildiğimden beri hiç sorun çıkarmıyor.
+
+81
+00:05:38,040 --> 00:05:42,690
+7 benim temel dağılımımdı, fakat önemli umpierler için bazı şeyler
+
+82
+00:05:42,690 --> 00:05:46,280
+almayı denediğimde ilginç bir şey olacaktı ve P
+
+83
+00:05:46,290 --> 00:05:53,860
+PD olarak ithal pandaları kullansam, bir ithalat hatası alırsam benim sanal ortamımı harekete geçiririm.
+
+84
+00:05:53,880 --> 00:05:55,980
+Panderer adlı hiçbir modül yok.
+
+85
+00:05:56,010 --> 00:06:00,960
+Bunun sebebi, bu sanal ortamın içinde Pandur'lar olmamasıdır.
+
+86
+00:06:00,960 --> 00:06:06,390
+Aslında bu sanal ortamın pandaları da içerdiğinden emin olmak istersem, bunu zaten
+
+87
+00:06:06,390 --> 00:06:14,720
+yapmış olduğum gibi aktive etmeliyim ve sonra Konda'nın buraya yüklemesini veya istediğiniz herhangi bir kütüphaneyi kurmasını söyleyeceğim Jüpiter sikat
+
+88
+00:06:14,730 --> 00:06:17,140
+canlı oynamayla ilgili bilgi edinin. dönmek istiyorsanız bunu silmek istiyorum.
+
+89
+00:06:17,430 --> 00:06:24,630
+Dolayısıyla devam edeceğim ve kabarıklığı devre dışı bırakmak ve sadece orijinal Python dağıtımımıza geri
+
+90
+00:06:24,630 --> 00:06:26,600
+Sadece hit girdisini deaktive et deyin ve sanal ortamı devre dışı bırakın.
+
+91
+00:06:26,730 --> 00:06:32,910
+Sanal ortamlar için başka bir aktif kullanım durumu,
+
+92
+00:06:32,910 --> 00:06:38,430
+Python'un farklı bir sürümünü kullanan bir ortam oluşturmaktır.
+
+93
+00:06:38,430 --> 00:06:40,070
+Bunu, sadece Konda'nın yarattığı içeri girip "tire çizgisini" söyleyip beni ekleyeceğini söyleyerek yapabilirsiniz.
+
+94
+00:06:40,200 --> 00:06:47,120
+Ayrıca yalnızca çizgi ve tek Dashon diyebilirsiniz, ancak tam istediğiniz
+
+95
+00:06:47,400 --> 00:06:54,150
+şeyin çizgi çizgi ismi, istediğiniz sanal ortamın adını söyleyecektir.
+
+96
+00:06:54,150 --> 00:06:55,570
+Devam edelim ve bu sanal çevreyi arayacağız.
+
+97
+00:06:55,590 --> 00:06:58,080
+Benim python 3 sürümü alanı.
+
+98
+00:06:58,140 --> 00:07:03,710
+Ve sonra Python 3'e eşit diyorsunuz. 5.
+
+99
+00:07:03,900 --> 00:07:08,150
+Ve burada pi gibi tek bir kütüphaneyi yerleştirme seçeneğine sahipsiniz.
+
+100
+00:07:08,430 --> 00:07:14,220
+Ya da Anaconda'nın dağıtımının tamamını istiyorsanız burada Anaconda yazabilirsiniz.
+
+101
+00:07:14,430 --> 00:07:20,180
+Bu uzun sürüyor çünkü Anaconda'nın tümünün bu olduğunu hatırlayın.
+
+102
+00:07:20,250 --> 00:07:25,570
+Bu yüzden gidip sadece pi söyleyeceğim.
+
+103
+00:07:25,710 --> 00:07:27,730
+Bu yüzden devam edeceğiz ve bunu
+
+104
+00:07:27,780 --> 00:07:33,180
+yapacağım Konda'nın Python 3 sürüm alanı denilen bu yeni sanal ortamı oluşturduğunu söylüyor Python 3'e eşit. 5 pi.
+
+105
+00:07:33,180 --> 00:07:37,590
+Enter, paket meta verilerini tekrar getiririm.
+
+106
+00:07:37,760 --> 00:07:40,500
+Bütün bunların Python 3 ile yapılabileceğini unutmayın.
+
+107
+00:07:40,650 --> 00:07:43,040
+Ben devam edip, neden evet paketleri getirip getireceğini söyleyeceğim.
+
+108
+00:07:43,140 --> 00:07:48,000
+Şimdi çıkarma ve kurulumun sonuna atlayacağım ve şimdi tamamlandı.
+
+109
+00:07:48,000 --> 00:07:55,410
+Devam edin ve sadece Python'da yazarak göstermeye devam edelim.
+
+110
+00:07:55,650 --> 00:07:59,790
+Python 2 var. 7 İşte benim temel dağıtımım.
+
+111
+00:08:00,090 --> 00:08:04,360
+Ben devam edip çıkacağım.
+
+112
+00:08:04,410 --> 00:08:06,290
+Şimdi devam edin ve ortamlarımı kontrol edelim.
+
+113
+00:08:06,390 --> 00:08:08,500
+Kondo uzay bilgi çizgi çizgi
+
+114
+00:08:08,520 --> 00:08:16,170
+ve a v s diyebilirim ve bu komut burada benim çevrelerini listeleyecek Daha önce yaptığım diğer örnek ortamda kabarık var.
+
+115
+00:08:16,170 --> 00:08:19,680
+Python 3 sürümü py 3: 5, sahip olduğum başka bir ortam ve daha sonra Python'un kök sürümü.
+
+116
+00:08:19,680 --> 00:08:25,800
+Bir başlangıç ​​olduğunu görebilirsiniz.
+
+117
+00:08:26,010 --> 00:08:27,020
+Onu belirt.
+
+118
+00:08:27,030 --> 00:08:28,080
+Jüpiter defterini açtıysanız
+
+119
+00:08:28,080 --> 00:08:32,570
+ve Python Roop gibi bir şey gördüğünüzde, bunun kökeni anlamına gelir.
+
+120
+00:08:32,580 --> 00:08:33,270
+Python kurulumu.
+
+121
+00:08:33,300 --> 00:08:35,300
+Devam edin ve Python 3 sürüm ortamlarımı etkinleştirelim.
+
+122
+00:08:35,340 --> 00:08:42,600
+Girmek.
+
+123
+00:08:42,840 --> 00:08:43,710
+Benim Python 3 sürümümü farkedeceksin.
+
+124
+00:08:43,710 --> 00:08:45,910
+Şimdi bu sanal ortamların içinde Python'u çağırırsam.
+
+125
+00:08:45,930 --> 00:08:49,260
+Python 3'ü aldığımı unutmayın. 5.
+
+126
+00:08:49,290 --> 00:08:51,580
+Dolayısıyla, aslında Python'un
+
+127
+00:08:51,610 --> 00:08:57,840
+farklı bir sürümünü istediğinizi belirtebiliyorsanız, Python eşitliğini ve ardından sanal ortamı oluştururken istediğiniz herhangi bir sürüm numarasını söyleyemezsiniz.
+
+128
+00:08:57,930 --> 00:09:01,080
+Yani, 1 ile ikiye bölünmüş gibi bir şey yaparsam 0 olurum. 5, Python 2 için geçerli değildir.
+
+129
+00:09:01,080 --> 00:09:07,240
+Tamam, bilmen gereken tek şey bu.
+
+130
+00:09:07,680 --> 00:09:09,900
+Bildiğim kadarıyla sanal ortamlar yaratmak
+
+131
+00:09:09,930 --> 00:09:15,930
+için kaynak bağlantısı, ortamları değiştiren ortamların kopyalanması gibi ortamları öğrenmek gibi temelde her şeyi içerir. Oldukça basittir.
+
+132
+00:09:15,930 --> 00:09:20,440
+Bu yüzden, şimdi bu dersin üzerinden geçtiğimiz her şeyi biliyorsunuz ve ihtiyaç
+
+133
+00:09:20,640 --> 00:09:21,930
+duyduğunuzda dokümantasyona atıfta bulunabilirsiniz.
+
+134
+00:09:21,930 --> 00:09:26,070
+Yine, kendi sanal ortamlarınızı yaratmak isteyebileceğiniz durumda isteğe bağlı bir ders.
+
+135
+00:09:26,070 --> 00:09:27,820
+Tüm kütüphanelerinizin olmasını istediğiniz
+
+136
+00:09:27,840 --> 00:09:31,870
+sürümler olduğundan emin olmak için sanal ortamlar oluşturmanızı öneririm.
+
+137
+00:09:31,920 --> 00:09:36,990
+Bu dersi devam ettirmek istiyorsanız, belki devam edin ve veri bilimi veya buna benzer bir şey olarak
+
+138
+00:09:36,990 --> 00:09:38,510
+adlandırılan sanal bir ortam yaratın.
+
+139
+00:09:38,520 --> 00:09:44,190
+Tamam.
+
+140
+00:09:44,220 --> 00:09:46,520
+Umarım bu dersten hoşlanırdınız ve bir sonraki bölümde görüşürüz.
+
+141
+00:09:46,530 --> 00:09:47,160
+Herkese teşekkürler.
+
+142
+00:09:47,190 --> 00:09:49,860
+&nbsp;
+
+143
+00:09:49,860 --> 00:09:51,230
+&nbsp;

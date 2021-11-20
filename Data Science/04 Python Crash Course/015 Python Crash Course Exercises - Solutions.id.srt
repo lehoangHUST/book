@@ -1,0 +1,651 @@
+1
+00:00:05,130 --> 00:00:10,810
+Halo semua dan selamat datang di ceramah solusi latihan kursus kilat Python dan kuliah ini saya
+
+2
+00:00:10,800 --> 00:00:15,180
+hanya akan bekerja melalui solusi notebook dan menjelaskan kode dan solusinya.
+
+3
+00:00:15,170 --> 00:00:20,440
+Tidak, tetapi mari kita lanjutkan dan lompat ke notebook latihan sehingga kita benar-benar dapat mulai mengkodekan ini.
+
+4
+00:00:20,490 --> 00:00:20,760
+Baiklah.
+
+5
+00:00:20,760 --> 00:00:23,990
+Di sini saya di latihan kursus kilat.
+
+6
+00:00:24,060 --> 00:00:28,250
+Pertanyaan pertama yang ingin kami jawab adalah apakah 7: 2 dengan kekuatan empat.
+
+7
+00:00:28,350 --> 00:00:30,540
+Sekarang secara teknis ada dua cara Anda bisa melakukan ini.
+
+8
+00:00:30,570 --> 00:00:36,900
+Anda bisa saja mengetik tujuh kali tujuh kali tujuh kali tujuh dan mendapatkan jawaban yang benar.
+
+9
+00:00:36,910 --> 00:00:42,600
+Tapi mudah-mudahan ingat cara yang benar yang hanya memanggil ke Asterix untuk eksponen.
+
+10
+00:00:42,660 --> 00:00:44,740
+Jadi tujuh pangkat empat.
+
+11
+00:00:44,910 --> 00:00:47,730
+Jalankan sel itu dan ada jawaban Anda.
+
+12
+00:00:47,730 --> 00:00:50,770
+Selanjutnya kita ingin membagi string S sama dengan.
+
+13
+00:00:50,780 --> 00:00:57,540
+Halo, Sam, ke dalam daftar kita dapat melanjutkan dan ambil ini dan kita dapat melihat contoh daftar keluaran
+
+14
+00:00:57,540 --> 00:00:59,890
+yang ingin kita buat di sana.
+
+15
+00:00:59,910 --> 00:01:06,750
+Jadi, jika saya menjalankan sekuel ke sana, Sam dan memanggil split estop ini akan secara otomatis membagi
+
+16
+00:01:07,320 --> 00:01:09,790
+string menjadi daftar di spasi.
+
+17
+00:01:09,790 --> 00:01:15,840
+Saya ingat kita benar-benar dapat melewatkan karakter string apa pun misalnya ke apa yang sebenarnya ingin
+
+18
+00:01:15,870 --> 00:01:19,750
+kita bagi yang sebenarnya kita lihat nanti dalam latihan lain.
+
+19
+00:01:19,980 --> 00:01:25,380
+Mari kita masuk ke pertanyaan berikutnya yang diberi variabel plena sama dengan bumi dan diameter sama dengan dua
+
+20
+00:01:25,380 --> 00:01:27,850
+belas ribu tujuh ratus empat puluh dua.
+
+21
+00:01:28,110 --> 00:01:30,710
+Gunakan format itu untuk mencetak string berikut.
+
+22
+00:01:30,840 --> 00:01:34,830
+Diameter Bumi adalah dua belas ribu tujuh ratus empat puluh dua kilometer.
+
+23
+00:01:34,940 --> 00:01:41,220
+Dan pergi menjalankan sel sehingga kita memiliki dua variabel ini untuk menemukan dan
+
+24
+00:01:42,000 --> 00:01:49,500
+kemudian saya akan mengatakan dalam sebuah string diameter bumi diberitahu seribu tujuh ratus empat puluh dua kilometer.
+
+25
+00:01:49,520 --> 00:01:53,860
+Ingat saya ingin menggunakan format itu dan saya ingin kedua variabel ini.
+
+26
+00:01:54,060 --> 00:02:02,070
+Jadi saya akan mengganti bumi hanya dengan sepasang kurung keriting dan juga melakukan hal yang sama
+
+27
+00:02:02,800 --> 00:02:11,280
+untuk angka diameter ini maka saya akan mengatakan format itu dan saya akan berdiameter planet dan saya akan
+
+28
+00:02:11,280 --> 00:02:13,460
+melanjutkan dan mencetak semuanya.
+
+29
+00:02:13,470 --> 00:02:14,950
+Jadi ini berhasil.
+
+30
+00:02:15,030 --> 00:02:16,000
+Dan di sana kita memilikinya.
+
+31
+00:02:16,260 --> 00:02:22,350
+Saya bisa juga melewati beberapa nama variabel di sini seperti A dan B dan yang menetapkan ini sama dengan
+
+32
+00:02:22,890 --> 00:02:23,970
+A dan B.
+
+33
+00:02:24,210 --> 00:02:25,650
+Dan itu adalah hal yang persis sama.
+
+34
+00:02:25,650 --> 00:02:30,640
+Jadi untuk Anda ketika Anda menggunakannya untuk yang pertama Anda harus memastikan itu dalam urutan yang benar.
+
+35
+00:02:30,960 --> 00:02:35,550
+Selanjutnya diberikan daftar bersarang ini menggunakan pengindeksan untuk mengambil kata Halo.
+
+36
+00:02:35,790 --> 00:02:36,670
+Ini sangat sulit.
+
+37
+00:02:36,690 --> 00:02:42,770
+Jadi Anda akan meluangkan waktu Anda dengan ini dan mulai dari dalam ke luar.
+
+38
+00:02:42,870 --> 00:02:44,620
+Anda dapat melihat di sini bahwa kami memiliki halo.
+
+39
+00:02:44,700 --> 00:02:50,100
+Dan itu adalah sebuah daftar dan Jupiter dan di atas itu semacam membantu Anda keluar dengan
+
+40
+00:02:50,280 --> 00:02:56,820
+menyoroti braket maka ini juga di dalam daftar yang ada di dalam daftar lain yang berada di dalam daftar paling luar.
+
+41
+00:02:57,330 --> 00:03:06,730
+Jadi seluruh daftar ini di sini adalah apa yang ingin kita ambil pertama dan mari kita berada di indeks 3 0 1 2 3.
+
+42
+00:03:07,140 --> 00:03:09,210
+Kami akan pergi ke depan dan ambil itu.
+
+43
+00:03:09,510 --> 00:03:15,930
+Sekarang saya memiliki daftar ini, saya dapat melihat bahwa daftar yang memiliki kata target saya halo adalah
+
+44
+00:03:15,930 --> 00:03:19,790
+item kedua dalam daftar yang berarti itu adalah indeks.
+
+45
+00:03:20,550 --> 00:03:24,240
+Dan sekarang saya akan memecah ini lagi jadi 0 1 2
+
+46
+00:03:27,150 --> 00:03:29,540
+dan kemudian saya punya daftar satu elemen.
+
+47
+00:03:29,540 --> 00:03:32,170
+Jadi saya bisa melanjutkan dan mengambilnya lagi untuk nol.
+
+48
+00:03:32,610 --> 00:03:35,090
+Dan akhirnya saya memiliki string halo OK.
+
+49
+00:03:35,100 --> 00:03:39,660
+Ini cukup rumit dan Anda tidak akan pernah benar-benar mengalami situasi seperti ini di kehidupan nyata.
+
+50
+00:03:39,810 --> 00:03:44,190
+Tetapi ketika saya bekerja dengan panda, Anda harus melakukan hal-hal yang dalamnya dua tingkat.
+
+51
+00:03:44,190 --> 00:03:45,940
+Jadi ingatlah itu.
+
+52
+00:03:46,440 --> 00:03:46,780
+Baiklah.
+
+53
+00:03:46,800 --> 00:03:51,090
+Kemudian pertanyaan selanjutnya diberikan kamus baru ini meraih kata halo.
+
+54
+00:03:51,420 --> 00:03:53,820
+Bersiaplah, ini akan menyebalkan.
+
+55
+00:03:53,820 --> 00:03:55,410
+Jadi ini cukup rumit.
+
+56
+00:03:55,710 --> 00:03:57,810
+Tapi mari kita lanjutkan dan memecahnya langkah demi langkah.
+
+57
+00:03:57,840 --> 00:04:01,190
+Hal pertama yang harus Anda lakukan adalah ambil kunci.
+
+58
+00:04:01,200 --> 00:04:05,410
+Jadi jika kita melihat kita sebenarnya bisa memanggil kunci itu sendiri.
+
+59
+00:04:05,640 --> 00:04:11,460
+Dan kita sebenarnya hanya memiliki satu kunci di kamus paling luar ok yang kita akan melanjutkan dan menyebutnya.
+
+60
+00:04:13,530 --> 00:04:19,230
+Dan sekarang saya memiliki daftar beberapa elemen dan perhatikan bahwa saya ingin mengambil kamus ini
+
+61
+00:04:19,230 --> 00:04:22,270
+di sini yaitu di 0 1 2 3.
+
+62
+00:04:22,270 --> 00:04:25,410
+Jadi indeks 3 dari daftar itu.
+
+63
+00:04:25,410 --> 00:04:31,920
+Jadi ingatlah bahwa kami semacam pencampuran daftar indeks dengan pasangan nilai kunci dari kamus.
+
+64
+00:04:32,400 --> 00:04:36,810
+Dan kemudian saya memiliki kamus lagi dan saya ingin mengambil nilai pada kuncinya.
+
+65
+00:04:36,810 --> 00:04:39,260
+Rumit.
+
+66
+00:04:40,020 --> 00:04:46,520
+Kemudian saya memiliki daftar lagi dan saya ingin mengambil kamus ini yaitu 0 1 2 3.
+
+67
+00:04:47,810 --> 00:04:52,240
+Dan kemudian saya memiliki kamus lagi dan saya ingin meraih target utama.
+
+68
+00:04:52,770 --> 00:04:59,210
+Dan akhirnya saya punya daftar dan saya ingin mengambil elemen terakhir 0 1 2 3.
+
+69
+00:05:00,000 --> 00:05:01,390
+Dan itu halo.
+
+70
+00:05:01,750 --> 00:05:02,130
+BAIK.
+
+71
+00:05:02,130 --> 00:05:04,390
+Cukup sulit cukup sulit.
+
+72
+00:05:04,410 --> 00:05:09,520
+Jadi, jangan terlalu khawatir jika Anda tidak dapat menemukan ini dengan cepat karena itu cukup menjengkelkan.
+
+73
+00:05:09,560 --> 00:05:15,250
+Sless rumit tetapi mudah-mudahan Anda benar-benar dapat memahami logika dari solusi ini.
+
+74
+00:05:15,270 --> 00:05:18,210
+Pertanyaan selanjutnya adalah apa perbedaan utama antara tupel dan daftar.
+
+75
+00:05:18,270 --> 00:05:21,450
+Baik tuple tidak berubah dan daftar bisa berubah.
+
+76
+00:05:21,450 --> 00:05:23,980
+Itulah perbedaan utamanya.
+
+77
+00:05:24,060 --> 00:05:28,500
+Setelah itu kami ingin membuat fungsi yang mengambil domain situs web email dari string
+
+78
+00:05:28,500 --> 00:05:30,960
+dalam bentuk pengguna di domain dot com.
+
+79
+00:05:30,960 --> 00:05:36,610
+Jadi misalnya mengeluarkan pengguna domain dot com akan mengembalikan domain dot com.
+
+80
+00:05:37,260 --> 00:05:43,120
+Mari kita lanjutkan dan membuat fungsi yang disebut domain dapatkan.
+
+81
+00:05:43,530 --> 00:05:51,540
+Itu akan mengambil variabel e-mail yang akan menjadi string dan kemudian kita akan mengembalikan e-mail yang terpecah dan kita
+
+82
+00:05:54,230 --> 00:05:56,330
+akan membagi pada simbol.
+
+83
+00:05:56,340 --> 00:05:58,900
+Ayo masuk dan lihat bagaimana itu bekerja.
+
+84
+00:05:58,950 --> 00:06:00,550
+Jika saya jalankan saja.
+
+85
+00:06:01,170 --> 00:06:01,860
+OK bagus.
+
+86
+00:06:01,860 --> 00:06:08,900
+Jadi jika saya menjalankannya saya akhirnya mendapatkan ini pada simbol dan saya mendapatkan daftar kembali.
+
+87
+00:06:09,030 --> 00:06:14,360
+Saya ingin item kedua dalam daftar itu berarti saya ingin maju dan meraih satu di atas itu.
+
+88
+00:06:14,430 --> 00:06:16,920
+Dan kemudian jika saya menjalankan ini saya mendapatkan jawaban yang benar.
+
+89
+00:06:16,950 --> 00:06:20,810
+Domain dot com itu.
+
+90
+00:06:20,820 --> 00:06:24,640
+Selanjutnya kami ingin membuat fungsi dasar yang mengembalikan true.
+
+91
+00:06:24,740 --> 00:06:27,940
+Itulah kata anjing yang terkandung dalam string input.
+
+92
+00:06:28,020 --> 00:06:30,910
+Dan lagi jangan khawatir tentang kasus tepi seperti tanda baca yang terpasang.
+
+93
+00:06:30,920 --> 00:06:37,940
+Kata dog well yang harus kita pertanggungjawabkan untuk huruf kapital atau maju terus adalah membuat fungsi.
+
+94
+00:06:37,940 --> 00:06:47,850
+Anjing penemu keempat mengambil beberapa variabel dan pergi dan memanggil variabel S dan kemudian kita
+
+95
+00:06:47,850 --> 00:06:57,720
+akan mengatakan kembali kita akan memeriksa apakah anjing dalam S untuk memperhitungkan kapitalisasi.
+
+96
+00:06:57,720 --> 00:07:03,060
+Saya akan pergi ke depan dan menurunkan semuanya dalam S dan kemudian saya akan membaginya sehingga
+
+97
+00:07:03,060 --> 00:07:08,130
+itu benar-benar berubah menjadi daftar objek dan kemudian ketika saya menjalankan ini akhirnya menjadi benar.
+
+98
+00:07:08,280 --> 00:07:09,500
+Apakah ada anjing di sana.
+
+99
+00:07:09,540 --> 00:07:12,910
+Biarkan saya masuk dan menunjukkan kepada Anda apa yang sebenarnya terjadi ketika saya melewatkan string ini.
+
+100
+00:07:12,960 --> 00:07:15,480
+Saya akan mengatakan s sama dengan.
+
+101
+00:07:15,570 --> 00:07:18,030
+Apakah ada anjing disini?
+
+102
+00:07:19,410 --> 00:07:20,210
+Jalankan.
+
+103
+00:07:20,310 --> 00:07:27,360
+Dan kemudian jika saya sebut estopped lebih rendah saya akan menurunkan semuanya dan kemudian jika saya katakan split
+
+104
+00:07:27,360 --> 00:07:34,800
+terhenti setelah itu lebih rendah saya mendapatkan daftar ini dan kemudian saya akhirnya hanya memeriksa adalah anjing dalam daftar itu.
+
+105
+00:07:34,800 --> 00:07:41,640
+Jadi itulah langkah-langkah yang saya lakukan dalam pernyataan satu baris ini yang ingin saya buat fungsi yang menghitung
+
+106
+00:07:41,640 --> 00:07:45,000
+berapa kali kata anjing muncul dalam sebuah string.
+
+107
+00:07:45,000 --> 00:07:48,570
+Dan lagi kita bisa mengabaikan kasus tepi.
+
+108
+00:07:49,020 --> 00:07:57,090
+Kami akan pergi ke depan dan mengatakan F membuat fungsi yang disebut Hitungan kutu anjing dan string karena t akan menetapkan
+
+109
+00:07:57,090 --> 00:08:03,830
+jumlah awal kami ke 0 dan kami akan mengatakan kata dalam dan lagi akan mengatakan s t.
+
+110
+00:08:03,880 --> 00:08:15,390
+Pisahkan lebih rendah dengan cara yang sama seperti yang kita lakukan untuk pertanyaan terakhir dan kemudian titik dua jika kata itu sama dengan anjing, kita akan melanjutkan dan menambahkan
+
+111
+00:08:16,560 --> 00:08:18,610
+1 ke dalam hitungan.
+
+112
+00:08:18,720 --> 00:08:22,590
+Jadi katakanlah hitung sama dengan hitung ditambah 1.
+
+113
+00:08:22,980 --> 00:08:26,070
+Jadi bisa dibilang hitungan sama dengan hitungan tambah 1 atau untuk singkatan.
+
+114
+00:08:26,070 --> 00:08:29,690
+Apa yang beberapa orang suka lakukan hanyalah mengatakan plus sama dengan 1.
+
+115
+00:08:29,730 --> 00:08:31,880
+Dan itu adalah hal yang persis sama.
+
+116
+00:08:31,890 --> 00:08:34,540
+Lalu akhirnya saya hanya akan kembali di bagian paling akhir.
+
+117
+00:08:34,740 --> 00:08:37,470
+Hitungan saya yang merupakan berapa kali saya melihat kata anjing.
+
+118
+00:08:37,470 --> 00:08:42,850
+Sekarang jika kita maju dan menjalankan ini kita mendapatkan jawaban yang benar di sini
+
+119
+00:08:43,020 --> 00:08:47,670
+Selanjutnya kami ingin menggunakan ekspresi lambda dalam fungsi filter untuk menyaring kata-kata dari daftar
+
+120
+00:08:47,670 --> 00:08:49,490
+yang tidak memulai huruf S.
+
+121
+00:08:49,650 --> 00:08:56,460
+Misalnya kita punya CQ adalah daftar kata-kata yang harus disaring ke sup dan kemudian salad. Mari kita pergi dan
+
+122
+00:08:56,460 --> 00:08:58,650
+melihat bagaimana kita bisa melakukan ini.
+
+123
+00:08:58,650 --> 00:09:06,030
+Saya akan mengatakan filter dan kemudian saya bisa menggunakan ekspresi tanah.
+
+124
+00:09:06,090 --> 00:09:14,100
+Ini akan mengambil kata dan akan memeriksa apakah elemen pertama dalam string kata itu
+
+125
+00:09:14,100 --> 00:09:23,060
+sama dengan S dan kemudian tidak akan melewati urutan dan akhirnya aku akan membuang semuanya sebagai daftar.
+
+126
+00:09:24,060 --> 00:09:25,170
+Dan itulah jawabannya.
+
+127
+00:09:25,170 --> 00:09:26,480
+Sup, lalu salad.
+
+128
+00:09:26,550 --> 00:09:32,280
+Jadi sekali lagi untuk philtre ekspresi lambda ini atau berfungsi puding apa yang Anda
+
+129
+00:09:32,280 --> 00:09:38,020
+lewati harus mengembalikan nilai boolean dan kami melanjutkan dan menyaring urutan berdasarkan nilai-nilai boolean ini.
+
+130
+00:09:38,850 --> 00:09:39,150
+Baiklah.
+
+131
+00:09:39,150 --> 00:09:41,160
+Di sini kita berada pada masalah terakhir.
+
+132
+00:09:41,280 --> 00:09:42,650
+Pernyataan masalahnya adalah ini.
+
+133
+00:09:42,670 --> 00:09:46,570
+Anda mengemudi sedikit terlalu cepat dan seorang polisi menghentikan Anda.
+
+134
+00:09:46,620 --> 00:09:50,310
+Anda harus menulis fungsi untuk mengembalikan satu dari tiga hasil yang mungkin.
+
+135
+00:09:50,310 --> 00:09:53,000
+Tidak ada tiket, tiket kecil atau besar.
+
+136
+00:09:53,190 --> 00:09:56,650
+Jika kecepatan Anda 60 atau kurang hasilnya tidak ada tiket.
+
+137
+00:09:56,700 --> 00:10:01,890
+Jika kecepatan antara 61 dan 80 inklusif Hasilnya adalah tiket kecil.
+
+138
+00:10:01,890 --> 00:10:06,870
+Jika kecepatan 81 atau lebih hasilnya adalah tiket besar dan semakin sedikit itu adalah hari ulang
+
+139
+00:10:06,870 --> 00:10:12,760
+tahun Anda yang dikodekan sebagai nilai boolean dalam parameter fungsi pada hari ulang tahun Anda, kecepatan Anda bisa 5 lebih tinggi.
+
+140
+00:10:12,780 --> 00:10:14,120
+Dalam semua kasus.
+
+141
+00:10:14,340 --> 00:10:15,800
+Berarti jika ini hari ulang tahun Anda.
+
+142
+00:10:15,810 --> 00:10:22,830
+Jadi jika digarisbawahi ulang tahun itu benar maka batas kecepatan dinaikkan lima mil atau lima kilometer per jam
+
+143
+00:10:22,830 --> 00:10:23,970
+untuk Anda.
+
+144
+00:10:24,420 --> 00:10:26,290
+OK, mari kita mulai dan memulai.
+
+145
+00:10:26,310 --> 00:10:29,840
+Kami akan menghapus pernyataan sebelumnya ini.
+
+146
+00:10:29,910 --> 00:10:34,070
+Hal pertama yang ingin saya lakukan adalah memeriksa apakah ini ulang tahun seseorang dan menyesuaikan kecepatannya.
+
+147
+00:10:34,080 --> 00:10:37,080
+Akan mengatakan jika sudah
+
+148
+00:10:40,650 --> 00:10:48,500
+lahir mereka akan mengatakan ngebut sama dengan kecepatan minus lima dan kemudian lagi.
+
+149
+00:10:49,050 --> 00:10:57,420
+Mengebut sama dengan kecepatan dan kemudian kita akan melanjutkan dan memeriksa sekarang dengan mempercepat
+
+150
+00:10:57,450 --> 00:10:59,590
+kondisi untuk tiket.
+
+151
+00:10:59,640 --> 00:11:06,450
+Jadi sekali lagi jika ngebut lebih besar dari 80 maka itu tiket besar.
+
+152
+00:11:06,510 --> 00:11:11,160
+Jadi saya akan pergi ke depan dan mengembalikan tiket string besar.
+
+153
+00:11:12,680 --> 00:11:23,820
+Lalu kita akan mengatakan jika ngebut lebih besar dari 60 Nah itu akan lalu mengembalikan tiket kecil dan kalau tidak kita
+
+154
+00:11:26,040 --> 00:11:27,540
+akan punya.
+
+155
+00:11:27,570 --> 00:11:32,870
+Lain yang hanya akan menjadi tiket pulang.
+
+156
+00:11:33,120 --> 00:11:34,410
+Dan kemudian kita bisa melanjutkan dan menjalankan ini.
+
+157
+00:11:34,410 --> 00:11:40,040
+Jadi 81 biasanya akan menjadi tiket besar tetapi karena ini hari ulang tahun Anda, kami akan mengatakan itu benar.
+
+158
+00:11:40,080 --> 00:11:41,700
+Itu seharusnya tiket kecil.
+
+159
+00:11:41,940 --> 00:11:46,910
+Dan di sana kita memilikinya dan 81 salah Yah itu pasti tiket besar.
+
+160
+00:11:46,980 --> 00:11:47,840
+Baiklah.
+
+161
+00:11:47,880 --> 00:11:49,620
+Semoga Anda menikmati solusinya.
+
+162
+00:11:49,620 --> 00:11:54,390
+Jangan ragu untuk mengirim pertanyaan apa pun yang Anda miliki ke forum T&amp;J dan saya akan dengan senang hati membantu Anda di sana.
+
+163
+00:11:54,390 --> 00:11:56,220
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

@@ -1,0 +1,335 @@
+1
+00:00:05,160 --> 00:00:11,100
+Halo semuanya dan selamat datang di bagian akhir opsional dari seri kuliah solusi proyek keuangan.
+
+2
+00:00:11,580 --> 00:00:17,100
+Pada bagian terakhir ini yang bersifat opsional, kita akan membahas beberapa plotlines dan visualisasi kancing manset
+
+3
+00:00:17,280 --> 00:00:19,780
+yang dirancang khusus untuk data keuangan.
+
+4
+00:00:20,010 --> 00:00:23,070
+Mari kita keluar dan melompat ke notebook Jupiter untuk memulai.
+
+5
+00:00:23,070 --> 00:00:25,260
+OK di sini saya di notebook Jupiter.
+
+6
+00:00:25,260 --> 00:00:30,660
+Terakhir kali kami berhenti membuat peta cluster menggunakan seaborne dan saya ingin menunjukkan kepada Anda
+
+7
+00:00:30,660 --> 00:00:33,780
+bagaimana Anda bisa membuat peta panas menggunakan Clottey.
+
+8
+00:00:33,780 --> 00:00:37,000
+Anda sebenarnya bisa keluar dan mengambil data rate ini di sini.
+
+9
+00:00:37,080 --> 00:00:45,560
+Bingkai data korelasi ke sel ini dan mari kita keluar dan menyimpan ini sebagai inti garis bawah.
+
+10
+00:00:46,860 --> 00:00:49,920
+Dan kemudian kita akan masuk dan melihat inti penutupan atau persegi.
+
+11
+00:00:49,920 --> 00:00:52,740
+Pastikan kami memiliki kerangka data yang benar.
+
+12
+00:00:52,740 --> 00:00:58,440
+Sepertinya kita melakukannya dalam bentuk matriks dan kemudian kita bisa memanggil saya merencanakan ini
+
+13
+00:00:58,440 --> 00:01:05,520
+dan menentukan jenis yang akan menjadi peta panas dan Anda akan mendapatkan peta panas yang terlihat seperti ini.
+
+14
+00:01:05,520 --> 00:01:08,520
+Sekarang skala warna ini sebenarnya tidak terlalu berguna.
+
+15
+00:01:08,520 --> 00:01:14,730
+Jadi, Anda dapat melanjutkan dan menempatkan skala warna lain dengan argumen skala warna
+
+16
+00:01:14,730 --> 00:01:20,920
+dan mungkin yang paling berguna adalah merah untuk R kuning dan biru.
+
+17
+00:01:20,940 --> 00:01:28,350
+B Anda dan Anda dapat merujuk dokumentasi yang sudah ada jika Anda menginginkan lebih banyak opsi skala warna.
+
+18
+00:01:28,420 --> 00:01:33,210
+Anda dapat melihat skala warna sedikit lebih baik dari 0 hingga 1 sejauh korelasinya.
+
+19
+00:01:33,240 --> 00:01:35,310
+Ini interaktif sekarang.
+
+20
+00:01:35,310 --> 00:01:41,470
+Sekarang saya masih lebih suka melihat visualisasi Bourne sendiri untuk ini, tetapi saya ingin Anda mengetahui
+
+21
+00:01:41,520 --> 00:01:43,980
+opsi plot menggunakan perpustakaan manset.
+
+22
+00:01:43,980 --> 00:01:45,550
+Baiklah, teruskan.
+
+23
+00:01:45,600 --> 00:01:50,810
+Mari kita lanjutkan dan dapatkan kemampuan finansial spesifik dari manset dan plotline.
+
+24
+00:01:51,540 --> 00:01:57,840
+Jadi, Anda dapat melanjutkan dan membuat plot lilin saham menggunakan garis plot dan biarkan saya masuk dan menunjukkan kepada Anda hei kita
+
+25
+00:01:57,870 --> 00:01:58,810
+bisa melakukan ini.
+
+26
+00:01:58,830 --> 00:02:02,550
+Hal pertama yang kita butuhkan adalah mengambil saham Bank of America.
+
+27
+00:02:02,550 --> 00:02:07,620
+Saya hanya akan melakukannya dengan bc jika kita melihat keadaan frame ingat kita
+
+28
+00:02:07,620 --> 00:02:14,640
+telah membuka tutup rendah tinggi dan kita membutuhkannya dalam urutan tertentu untuk menggunakan saya merencanakan cara kita akan menggunakannya.
+
+29
+00:02:14,850 --> 00:02:16,560
+Jadi saya
+
+30
+00:02:19,830 --> 00:02:25,130
+hanya akan membuka tinggi rendah dan kemudian menutup panggilan.
+
+31
+00:02:25,380 --> 00:02:27,660
+Kami tidak ingin volume aktual.
+
+32
+00:02:27,660 --> 00:02:32,230
+Dan kemudian saya hanya ingin nilai untuk 2015.
+
+33
+00:02:32,240 --> 00:02:43,390
+Maksud saya adalah setiap penggunaan I-X 2015 1 Januari 2016 terlihat sebagai string 2016.
+
+34
+00:02:43,430 --> 00:02:45,420
+Dan mari kita pergi dan katakan 1 Januari.
+
+35
+00:02:45,420 --> 00:02:53,070
+Jadi semua nilai untuk tahun 2015 saya akan menyimpan ini sebagai BAC 15.
+
+36
+00:02:54,180 --> 00:03:01,380
+Dan kemudian baris berikutnya saya akan pergi ke depan dan mengatakan c 15 pikir saya merencanakan dan saya benar-benar akan menentukan sesuatu dalam
+
+37
+00:03:01,380 --> 00:03:02,060
+hal ini.
+
+38
+00:03:02,070 --> 00:03:07,660
+Saya merencanakan argumen yang akan saya katakan baik sama dengan Kandel.
+
+39
+00:03:08,700 --> 00:03:13,260
+Dan kemudian Anda benar-benar dapat membuat plot kandil menggunakan plot.
+
+40
+00:03:13,260 --> 00:03:17,880
+Sekarang jika Anda tidak mengetahui apa plot candlestick untuk analisis keuangan.
+
+41
+00:03:17,880 --> 00:03:23,520
+Ini pada dasarnya memberitahu Anda apakah stok naik atau turun pada hari itu berdasarkan
+
+42
+00:03:23,520 --> 00:03:30,640
+warna sehingga hijau meningkat merah menurun dan kemudian semacam memberitahu Anda pembukaan tinggi dan harga penutupan di sini.
+
+43
+00:03:30,650 --> 00:03:34,240
+Informasi ini Anda dapat melanjutkan dan mencari di Wikipedia.
+
+44
+00:03:34,380 --> 00:03:36,890
+Tempatkan kandil jika Anda menginginkan informasi lebih lanjut.
+
+45
+00:03:36,900 --> 00:03:42,150
+Saya benar-benar membaca ini tetapi ini lebih hanya untuk analisis keuangan jadi pada dasarnya memberitahu Anda
+
+46
+00:03:42,150 --> 00:03:46,640
+buka tutup rendah tinggi dan apakah saham naik atau turun hari itu.
+
+47
+00:03:47,520 --> 00:03:48,220
+Baiklah.
+
+48
+00:03:48,480 --> 00:03:55,430
+Mari kita lanjutkan dan lihat plot selanjutnya yaitu SMK dan pada dasarnya hanya plot rata-rata bergerak
+
+49
+00:03:55,440 --> 00:03:56,270
+sederhana.
+
+50
+00:03:56,280 --> 00:03:59,440
+Plot juga dapat membuat jenis otomatis untuk Anda.
+
+51
+00:03:59,520 --> 00:04:04,220
+Kita akan pergi ke depan dan melakukan ini untuk saham Morgan Stanley.
+
+52
+00:04:04,890 --> 00:04:09,180
+Jadi saya akan pergi ke depan dan mengambil kolom dekat saham Morgan Stanley.
+
+53
+00:04:09,210 --> 00:04:14,330
+Saya hanya ingin melakukan ini untuk tahun 2015 jadi saya akan menentukan tanggal yang sama.
+
+54
+00:04:14,330 --> 00:04:15,020
+Saya melakukannya di sini.
+
+55
+00:04:15,030 --> 00:04:16,200
+Ayo pergi
+
+56
+00:04:19,170 --> 00:04:28,690
+dan ambil yang datang ke sini ambil chip irisan mulai tahun 2015 dan kemudian saya akan menyebut plot garis bawah.
+
+57
+00:04:28,710 --> 00:04:35,430
+Dan ini adalah kapabilitas analisis teknis plot manset dan kemudian saya akan mengatakan bahwa
+
+58
+00:04:35,430 --> 00:04:46,050
+studi adalah periode yang tidak ditentukan SMK menjadi beberapa periode kita akan masuk dan mengatakan 13 21 dan 55 yang merupakan jenis dari
+
+59
+00:04:46,050 --> 00:04:48,910
+beberapa analisis teknis umum titik.
+
+60
+00:04:49,320 --> 00:04:54,480
+Dan di sini kita dapat melihat rata-rata bergerak sederhana dan saya memplot jenis laporan mereka saat
+
+61
+00:04:54,480 --> 00:05:00,170
+Anda bergerak yang cukup bagus dan Anda dapat memperbesar dan melihat beberapa informasi lebih lanjut jika Anda mau.
+
+62
+00:05:00,180 --> 00:05:00,820
+Baiklah.
+
+63
+00:05:01,080 --> 00:05:04,390
+Ayo maju dan beralih ke yang ini lagi di sini.
+
+64
+00:05:04,410 --> 00:05:08,700
+Terakhir yang merupakan plot Bollinger Band untuk Bank of America.
+
+65
+00:05:09,000 --> 00:05:14,880
+Dan sekali lagi ini hanyalah analisis teknis lain yang dapat Anda lakukan yang menunjukkan deviasi
+
+66
+00:05:14,970 --> 00:05:18,020
+standar harga saham saat bergerak keluar waktu.
+
+67
+00:05:18,270 --> 00:05:21,180
+Tetapi sekali lagi saya hanya menginginkan ini untuk tahun 2015.
+
+68
+00:05:21,210 --> 00:05:28,590
+Silakan salin dan tempel irisan yang sama dan lakukan t. plot garis bawah untuk plot analisis teknis dan studi
+
+69
+00:05:28,590 --> 00:05:33,360
+yang akan kita lakukan adalah sama dengan string B O L L.
+
+70
+00:05:34,090 --> 00:05:39,900
+Sekarang kita melihat ini kita bisa melihat band atas dan bawah saat kita bergerak bersama serta rata-rata
+
+71
+00:05:39,900 --> 00:05:43,530
+bergerak sederhana dan kemudian harga penutupan aktual yang berwarna oranye.
+
+72
+00:05:43,890 --> 00:05:45,590
+BAIK.
+
+73
+00:05:45,870 --> 00:05:49,560
+Pasti ada banyak topik keuangan yang lebih spesifik di sini.
+
+74
+00:05:49,560 --> 00:05:52,670
+Jadi jangan khawatir jika Anda tidak mengerti semua yang baru saja kami bahas.
+
+75
+00:05:52,800 --> 00:05:57,840
+Satu-satunya hal yang harus Anda perhatikan adalah apa yang saya lakukan dengan calo dan
+
+76
+00:05:57,840 --> 00:06:00,420
+beberapa operasi visualisasi dasar sepanjang kuliah.
+
+77
+00:06:00,420 --> 00:06:05,610
+Jadi jangan khawatir jika Anda tidak memahami semua plot analisis teknis khusus ini hanya referensi
+
+78
+00:06:05,610 --> 00:06:09,990
+untuk orang-orang yang sudah akrab dengan topik ini karena ini bukan kelas analisis
+
+79
+00:06:09,990 --> 00:06:10,690
+keuangan.
+
+80
+00:06:10,770 --> 00:06:16,260
+Ini pada dasarnya hanya kelas ilmu data dan analisis keuangan adalah bidang studi sendiri.
+
+81
+00:06:16,260 --> 00:06:16,780
+Baiklah.
+
+82
+00:06:16,830 --> 00:06:21,810
+Semoga Anda menemukan ini menarik jika Anda ke dalam analisis semacam ini dan saya akan melihat Anda
+
+83
+00:06:21,810 --> 00:06:22,710
+di kuliah berikutnya
+
+84
+00:06:22,710 --> 00:06:23,720
+Terimakasih semuanya.

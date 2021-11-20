@@ -1,0 +1,911 @@
+1
+00:00:05,430 --> 00:00:06,300
+Salutare tuturor.
+
+2
+00:00:06,300 --> 00:00:09,050
+Bine ați venit la prelegerea din partea 2 a cadrului de date.
+
+3
+00:00:09,090 --> 00:00:14,310
+Ultima dată când am oprit cum să creați un cadru de date de bază și să luați informații din acel cadru de date.
+
+4
+00:00:14,790 --> 00:00:19,760
+Acum vom examina selecția condiționată, precum și unele părți ale indexului multa din cadrul de date.
+
+5
+00:00:20,430 --> 00:00:23,120
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+6
+00:00:23,520 --> 00:00:23,970
+In regula.
+
+7
+00:00:23,970 --> 00:00:25,940
+Aici suntem înapoi la notebook-ul Jupiter.
+
+8
+00:00:25,950 --> 00:00:28,460
+Voi folosi același cadru de date ca și ultima oară.
+
+9
+00:00:28,470 --> 00:00:35,600
+Shurmur tocmai a trebuit să spun numpad S &amp; P pini PD import Rand și setați scaunul la 101 și apoi spuneți că rama
+
+10
+00:00:35,600 --> 00:00:38,280
+de date a fost chiria și 5 vin pentru.
+
+11
+00:00:38,460 --> 00:00:41,270
+Și apoi avem cadrul nostru de date.
+
+12
+00:00:42,410 --> 00:00:45,240
+Bine, să intrăm și să vorbim despre selecția condiționată.
+
+13
+00:00:45,360 --> 00:00:50,580
+O caracteristică foarte importantă a pantless este abilitatea de a efectua selecția condiționată utilizând notația consolei și
+
+14
+00:00:50,690 --> 00:00:57,570
+aceasta va fi foarte asemănătoare cu PI, de exemplu pentru un operator de comparație împotriva cadrului de date, cum ar fi întrebarea
+
+15
+00:00:57,930 --> 00:01:01,070
+unde este cadrul de date mai mare decât zero.
+
+16
+00:01:01,080 --> 00:01:06,420
+Voi primi o date din spatele valorilor booleane unde se întoarce adevărat dacă valoarea cadrului de date la acel punct a
+
+17
+00:01:06,420 --> 00:01:10,620
+fost mai mare decât zero și false dacă nu a fost mai mare decât zero.
+
+18
+00:01:10,740 --> 00:01:16,200
+Și acest lucru este foarte asemănător aceleiași selecții condiționate aplicate unui întreprinzător întreg, cu excepția cazului în care facem acest
+
+19
+00:01:16,200 --> 00:01:18,480
+lucru cu pandul de stare a cadrelor.
+
+20
+00:01:18,480 --> 00:01:27,270
+Și așa putem merge mai departe și spunem că bullwights a lovit f este egal cu DFA mai mare decât zero.
+
+21
+00:01:27,960 --> 00:01:29,590
+Și din moment ce spun Boulia.
+
+22
+00:01:29,610 --> 00:01:32,470
+Dă-i drumul și verifică asta.
+
+23
+00:01:32,690 --> 00:01:39,120
+Și aici avem cadrul nostru de date boolean și, dacă transferăm acest lucru în cadrul original
+
+24
+00:01:39,120 --> 00:01:48,750
+de date cu notație de baretă, atunci vom ieși ca valori rezultate unde era adevărat și Knoll sau orice n unde sa întâmplat să
+
+25
+00:01:48,750 --> 00:01:49,820
+fie fals.
+
+26
+00:01:49,980 --> 00:01:55,200
+Acesta este modul în care puteți utiliza selecția condiționată împreună cu un cadru de date.
+
+27
+00:01:55,200 --> 00:01:58,830
+Acum, de obicei, probabil că nu veți separa acest lucru în două etape.
+
+28
+00:01:58,890 --> 00:02:00,230
+Ai spune doar.
+
+29
+00:02:00,270 --> 00:02:05,760
+Și apoi în paranteze ceva de genul DF mai mare decât zero și veți obține acest rezultat.
+
+30
+00:02:06,030 --> 00:02:12,340
+Acest tip de operațiune cu un cadru de date și împotriva unui operator de comparare nu este atât de comună.
+
+31
+00:02:12,370 --> 00:02:17,220
+Cel mai probabil vei ajunge să faci este în loc să treci doar în întregul cadru de
+
+32
+00:02:17,220 --> 00:02:23,700
+date pe care îl vei trece într-un rând sau într-o valoare a coloanei și în loc să îl întorci pe Knolles ce va face
+
+33
+00:02:23,700 --> 00:02:28,970
+asta este să returnezi numai rândurile sau coloanele unui subset a cadrului de date unde condițiile dvs. sunt adevărate.
+
+34
+00:02:28,980 --> 00:02:33,720
+Acum permiteți-mi să dau un exemplu de ceea ce vreau să spun că nu ar putea să aruncăm o privire asupra cadrului nostru original de date.
+
+35
+00:02:34,780 --> 00:02:38,830
+Aici avem rândurile A-3 și coloanele w prin Z.
+
+36
+00:02:39,090 --> 00:02:42,900
+Ceea ce am de gând să urmez și să fac este să precizez.
+
+37
+00:02:42,990 --> 00:02:46,580
+Din W mai mare decât zero.
+
+38
+00:02:46,620 --> 00:02:49,470
+Și am remarcat că am o serie înapoi.
+
+39
+00:02:49,470 --> 00:02:54,770
+Adevărat adevărat adevărat adevărat adevărat și acest lucru este legat de indicele real.
+
+40
+00:02:54,780 --> 00:03:01,390
+Și dacă arunc o privire la coloana W, văd că aceasta corespunde valorilor coloanei W și valorii la indexul c a
+
+41
+00:03:01,390 --> 00:03:03,980
+fost de fapt mai mică decât zero.
+
+42
+00:03:04,110 --> 00:03:06,710
+Deci, returnează False pentru a fi mai mare decât zero.
+
+43
+00:03:06,750 --> 00:03:13,380
+Pot folosi acum această serie de valori booleene corespunzătoare rândurilor pentru a filtra rândurile bazate pe o valoare a coloanei și
+
+44
+00:03:13,380 --> 00:03:19,470
+asta înseamnă că dacă trec în serie într-un cadru de date folosind notația de bracket pentru a spune ceva ca
+
+45
+00:03:19,470 --> 00:03:26,430
+DF DFW mai mare decât zero voi reintroduceți rândurile în cazul în care acest lucru se întâmplă să fie adevărat, însemnând că
+
+46
+00:03:26,720 --> 00:03:32,670
+voi reveni numai la rânduri și că nu va reveni la rândul C, deoarece a fost fals aici.
+
+47
+00:03:32,740 --> 00:03:35,340
+Dă-i drumul și vezi ce arată.
+
+48
+00:03:35,340 --> 00:03:36,120
+Grozav.
+
+49
+00:03:36,130 --> 00:03:39,950
+Și acum, de când trec într-o serie, nu mai am aceste valori.
+
+50
+00:03:40,050 --> 00:03:44,880
+Obțineți numai aceste valori atunci când faceți acest tip de condiție pe un întreg cadru de date
+
+51
+00:03:44,880 --> 00:03:47,470
+atunci când într-adevăr treceți în condiții bazate pe coloane.
+
+52
+00:03:47,550 --> 00:03:52,580
+Veți primi doar valori în serie, ceea ce înseamnă că veți obține numai rândurile care se întâmplă să fie adevărate.
+
+53
+00:03:52,650 --> 00:03:57,120
+Și acesta este un fel de selecție condiționată pe care vom folosi cel mai adesea pe parcursul acestui curs.
+
+54
+00:03:58,170 --> 00:04:01,970
+Hai să intrăm și să arătăm doar câteva exemple pentru a conduce acest punct acasă.
+
+55
+00:04:01,980 --> 00:04:09,010
+Să presupunem că vreau să apuc toate rândurile din cadrul meu de date unde z este mai mică decât zero.
+
+56
+00:04:09,150 --> 00:04:16,500
+Așa că spun DMF În cazul în care f al coloanei Z este mai mică decât zero.
+
+57
+00:04:16,500 --> 00:04:21,460
+Acum, să aruncăm o privire înainte să executăm cu adevărat acest lucru ce ar trebui să se întâmple peste coloana Notificare Z.
+
+58
+00:04:21,750 --> 00:04:22,290
+Unde este.
+
+59
+00:04:22,320 --> 00:04:23,150
+Mai puțin de zero.
+
+60
+00:04:23,160 --> 00:04:31,210
+Ei bine, se întâmplă numai în rândul C, astfel încât coloana Z ca în Zelda și apoi rândul C este în pisică.
+
+61
+00:04:31,260 --> 00:04:33,260
+Acesta este singurul rând care ar trebui returnat.
+
+62
+00:04:33,270 --> 00:04:35,720
+Dar amintiți-vă că ați solicitat toate datele din spate.
+
+63
+00:04:35,850 --> 00:04:40,110
+Deci, ar trebui să ne întoarcem doar acest rând C pentru noi.
+
+64
+00:04:40,110 --> 00:04:41,100
+Și acolo este.
+
+65
+00:04:41,340 --> 00:04:42,590
+Bine, minunat.
+
+66
+00:04:42,600 --> 00:04:47,520
+Acum, altceva de remarcat aici este că atunci când faci acest tip de comenzi mergeți mai departe
+
+67
+00:04:47,520 --> 00:04:50,190
+și reveniți la R W mai mare decât zero.
+
+68
+00:04:50,880 --> 00:04:57,220
+Ați primit un raspuns de date, ceea ce înseamnă că puteți merge și apelați comenzi din acest cadru de
+
+69
+00:04:57,230 --> 00:04:57,880
+date.
+
+70
+00:04:58,050 --> 00:05:01,260
+Apoi, puteți face acest lucru fie într-un pas sau în doi pași.
+
+71
+00:05:01,320 --> 00:05:06,370
+Mă duc să intru și să spun că rezultatul DSF este egal cu acest lucru și apoi să aruncăm o privire asupra rezultatelor.
+
+72
+00:05:06,420 --> 00:05:12,910
+DMF care este acest subset al cadrului de date fără acel rând care se vede în el și asta înseamnă că pot
+
+73
+00:05:13,030 --> 00:05:21,910
+merge mai departe și pot lua rezultate în afara acestui, cum ar fi X și aici am patru valori ale XABD și E pe baza acestui cadru de date
+
+74
+00:05:21,910 --> 00:05:25,910
+care a rezultat Nu ai acel rand vazut ca Charlie nu are.
+
+75
+00:05:26,380 --> 00:05:32,200
+Dar, în loc de a separa acest lucru în două etape, cum ar fi apucarea coloanei X, pot face acest lucru într-un
+
+76
+00:05:32,200 --> 00:05:33,030
+singur pas.
+
+77
+00:05:33,130 --> 00:05:41,230
+Și lasă-mă să-ți arăt ce vreau să spun prin asta că pot merge mai departe și să spun că întoarceți cadranul de date unde valoarea coloanei W
+
+78
+00:05:41,230 --> 00:05:43,780
+se întâmplă să fie mai mare decât zero.
+
+79
+00:05:43,780 --> 00:05:45,670
+Deci, întoarce-mi acele rânduri.
+
+80
+00:05:45,670 --> 00:05:48,050
+Asta înseamnă toate rândurile minus rândul C.
+
+81
+00:05:48,340 --> 00:05:53,170
+Și din moment ce acesta este un cadru de date pot merge de fapt și stivă comenzi, cum
+
+82
+00:05:53,170 --> 00:05:57,530
+ar fi notația bracket pe deasupra, cum ar fi returnați coloana X unde este adevărat.
+
+83
+00:05:57,700 --> 00:06:04,330
+Și acum obțin aceleași rezultate ca și în cazul în care am făcut-o aici, cu excepția faptului că totul este făcut într-un singur pas și acest lucru este
+
+84
+00:06:04,330 --> 00:06:06,570
+ceva care poate fi intimidant pentru începători la început.
+
+85
+00:06:06,670 --> 00:06:09,380
+Deci sunt multe paranteze și multe lucruri se întâmplă aici.
+
+86
+00:06:09,580 --> 00:06:14,620
+Dar, în esență, acest lucru este doar în loc de a împărți totul în mai mulți
+
+87
+00:06:14,620 --> 00:06:17,480
+pași și a pune totul într-un singur pas.
+
+88
+00:06:17,620 --> 00:06:24,100
+Și, de asemenea, din moment ce acesta este un cadru de date, pot fi suportate pentru mai multe coloane prin trecerea
+
+89
+00:06:24,100 --> 00:06:29,890
+în liste, cum ar fi de ce virgula X și putem vedea că obținem un rezultat aici.
+
+90
+00:06:29,920 --> 00:06:36,100
+Permiteți-mi să merg mai departe și să rup din nou această linie pentru a arăta pașii pe care îi luăm.
+
+91
+00:06:36,100 --> 00:06:41,090
+În primul rând, vom intra și vom spune că Boudia este egală cu.
+
+92
+00:06:41,680 --> 00:06:48,250
+Ei bine, se va spune bhool serie și din moment ce este puțin mai exactă este că suntem la DFW este mai mare
+
+93
+00:06:48,250 --> 00:06:49,140
+decât zero.
+
+94
+00:06:49,150 --> 00:06:56,590
+Deci, dacă spun seria bhool, primesc seria booleană înapoi atunci ceea ce am de gând să mă
+
+95
+00:06:56,590 --> 00:07:04,010
+duc înainte este să spun că rezultatul este egal cu DSF din acea serie de bool.
+
+96
+00:07:04,510 --> 00:07:06,870
+Să mergem mai departe și să vedem rezultatele.
+
+97
+00:07:07,630 --> 00:07:15,690
+Și ar trebui să fie doar ori de câte ori seria a fost adevărată, care este un b d și e și există rezultatul meu.
+
+98
+00:07:15,820 --> 00:07:18,690
+Acesta este întregul cadru de date fără rândul care a văzut-o.
+
+99
+00:07:18,760 --> 00:07:28,200
+Și apoi pot continua și ofer acest rezultat apelați o listă de coloane, astfel încât să putem merge mai departe și să spunem de ce virgula
+
+100
+00:07:28,840 --> 00:07:33,910
+X și dacă vrem să reușim chiar să separăm separat acest lucru și deci
+
+101
+00:07:34,360 --> 00:07:43,840
+încă un pas prin a spune că Mike solicită coloane trecând lista respectivă și apoi spunând un rezultat al apelurilor lui Mike și obținem exact același lucru
+
+102
+00:07:43,840 --> 00:07:48,760
+pe care l-am făcut aici într-o singură linie ca în mai multe rânduri.
+
+103
+00:07:48,910 --> 00:07:53,840
+Asta inseamna ca daca vreti sa va confundati vreodata cu ceva care arata ca o tona de paranteze, iar Panduristii veti vedea
+
+104
+00:07:54,070 --> 00:07:56,110
+daca o puteti descompune in mai multi pasi.
+
+105
+00:07:56,110 --> 00:08:00,640
+Dacă acest lucru vă face mai mult sens pe parcursul cursului, vom face acest tip de notație.
+
+106
+00:08:00,910 --> 00:08:02,200
+Un fel de garnituri.
+
+107
+00:08:02,200 --> 00:08:06,100
+Și, pe măsură ce deveniți din ce în ce mai confortabil de panda, veți găsi că
+
+108
+00:08:06,100 --> 00:08:11,080
+utilizați aceste lineruri mai des și mai des, dar dacă vreodată sunteți confuziți, simțiți-vă liberi să o descompuneți în mai mulți pași.
+
+109
+00:08:11,080 --> 00:08:15,970
+Singurul dezavantaj în ceea ce privește aducerea mai multor pași este că preluați memoria care
+
+110
+00:08:16,150 --> 00:08:18,130
+cu variabila pe care o definiți.
+
+111
+00:08:18,220 --> 00:08:23,260
+Deci, pe măsură ce te îmbogățești și mai bine cu panda, vrei să te apropii de o simplă
+
+112
+00:08:23,260 --> 00:08:24,750
+abstractizare a tuturor acestor comenzi.
+
+113
+00:08:24,760 --> 00:08:30,370
+Încetați totul și întrerupeți acum videoclipul și asigurați-vă că ați înțeles cât de mult este linia din 58.
+
+114
+00:08:30,370 --> 00:08:36,280
+Aici este exact același lucru ca separat în mai multe linii.
+
+115
+00:08:36,310 --> 00:08:36,700
+In regula.
+
+116
+00:08:36,700 --> 00:08:38,230
+Să mergem mai departe și să explorăm rapid.
+
+117
+00:08:38,230 --> 00:08:42,490
+Conceptul de utilizare a mai multor condiții, cum ar fi două sau mai multe condiții.
+
+118
+00:08:42,580 --> 00:08:48,940
+Chiar acum ne simțim confortabil să facem ceva de genul acesta, care returnează un subset al cadrului de date
+
+119
+00:08:48,940 --> 00:08:50,700
+bazat pe o condiție.
+
+120
+00:08:50,740 --> 00:08:56,320
+Dar dacă ați dori condiții multiple, cum ar fi unde w este mai mare decât zero și Y a fost mai mare
+
+121
+00:08:56,410 --> 00:08:57,170
+decât 1.
+
+122
+00:08:57,520 --> 00:09:06,910
+Ei bine, ceea ce ai putea face este să încerci ceva de genul acesta, în paranteze treci într-o singură condiție și apoi să
+
+123
+00:09:06,970 --> 00:09:10,210
+spui și să treci într-o altă condiție.
+
+124
+00:09:10,210 --> 00:09:11,740
+Și aceasta va reveni la o eroare.
+
+125
+00:09:11,970 --> 00:09:17,710
+Și voi face acest lucru cu scopul de a explica de ce se întâmplă o eroare aici și aceasta este o
+
+126
+00:09:17,710 --> 00:09:23,410
+greșeală obișnuită pentru începători pentru a pune acest lucru și aici și veți obține o greșeală care spune ceva despre
+
+127
+00:09:23,410 --> 00:09:24,370
+seria fiind ambiguă.
+
+128
+00:09:24,370 --> 00:09:30,520
+Mergem în jos aici vedem că valoarea adevărului unei serii este ambiguă.
+
+129
+00:09:30,520 --> 00:09:37,420
+Ceea ce încearcă să spună este că regulatorul și operatorul lui Python nu pot lua în considerare
+
+130
+00:09:37,750 --> 00:09:43,960
+o serie de valori booleene în comparație cu o altă serie de valori booleene, iar
+
+131
+00:09:43,960 --> 00:09:47,680
+operatorul poate lua în considerare doar booleanii singuri.
+
+132
+00:09:47,680 --> 00:09:54,790
+Deci adevărat și fals se întoarce False Adevărat și adevărat întoarce adevărat etc ..
+
+133
+00:09:55,090 --> 00:10:03,190
+Aceasta înseamnă că atunci când treceți o întreagă serie de valori booleene, cum ar fi acest lucru și operatorul începe să
+
+134
+00:10:03,190 --> 00:10:04,250
+se confunde.
+
+135
+00:10:04,390 --> 00:10:09,880
+Se pot ocupa numai de aceste exemple singulare de valori booleene, motiv pentru care atunci când lucrați cu
+
+136
+00:10:09,880 --> 00:10:15,230
+panda și doriți mai multe condiții pe care trebuie să le utilizați în ampersands, asta este asta.
+
+137
+00:10:15,250 --> 00:10:20,360
+Și așa va fi trecerea de 7 pe tastatură pentru majoritatea tastaturilor standard.
+
+138
+00:10:20,620 --> 00:10:25,660
+Și observați aici că trec aceste condiții în paranteze pentru a arăta o separare clară între fiecare
+
+139
+00:10:25,660 --> 00:10:26,790
+dintre aceste condiții.
+
+140
+00:10:26,920 --> 00:10:31,070
+Și apoi, dacă execut acest lucru, primesc rândul E unde se întâmplă acest lucru.
+
+141
+00:10:31,510 --> 00:10:32,840
+OK, să mergem să ne descurcăm.
+
+142
+00:10:32,860 --> 00:10:39,430
+Ultima dată când ați încercat ultima dată să utilizați mai multe condiții, nu puteți utiliza funcția normală și
+
+143
+00:10:39,490 --> 00:10:40,530
+operatorul Python.
+
+144
+00:10:40,960 --> 00:10:47,470
+Trebuie să utilizați ampersandul și apoi să treceți în mai multe condiții în paranteze și apoi să îl puneți în
+
+145
+00:10:47,470 --> 00:10:49,830
+interiorul parantezelor pentru cadrul dvs. de date.
+
+146
+00:10:50,050 --> 00:10:57,130
+Dacă doriți să efectuați o operație SAU puteți să o înlocuiți doar cu operatorul conductei care este chiar deasupra
+
+147
+00:10:57,180 --> 00:10:57,660
+dvs.
+
+148
+00:10:57,760 --> 00:11:04,110
+De obicei, pentru majoritatea tastaturilor de pe tasta Enter, du-te chiar deasupra ei și apoi faceți trecerea la această lombare.
+
+149
+00:11:04,240 --> 00:11:09,280
+Și acest lucru ar trebui să vă dea operator de țeavă și care va fi un înlocuitor pentru sau pentru
+
+150
+00:11:09,280 --> 00:11:12,160
+că, dacă încercați să utilizați sau veți obține aceeași eroare.
+
+151
+00:11:12,250 --> 00:11:18,160
+Deci asta e cu sau dacă încerc cu Python normal sau Din nou voi obține valoarea adevărului unei serii
+
+152
+00:11:18,160 --> 00:11:18,910
+este ambiguă.
+
+153
+00:11:18,970 --> 00:11:24,380
+Și asta pentru că obțineți o serie de valori în locul a doar una sau două valori booleene.
+
+154
+00:11:24,450 --> 00:11:27,840
+OK, puteți merge mai departe și trimiteți o notă dacă doriți mai multe exemple de acest lucru.
+
+155
+00:11:27,940 --> 00:11:33,220
+Dar, în principiu, dacă doriți ca mai multe condiții să treacă în fiecare condiție în
+
+156
+00:11:33,220 --> 00:11:41,650
+paranteze și apoi utilizați un operator ampersand sau conducător pentru capete sau să mergem mai departe acum și să schimbăm uneltele pentru a vorbi despre
+
+157
+00:11:41,650 --> 00:11:47,140
+index și mai multe detalii despre el vom discuta acum este resetarea indexului sau setarea acestuia
+
+158
+00:11:47,170 --> 00:11:48,140
+la altceva.
+
+159
+00:11:48,160 --> 00:11:50,770
+Permiteți-mi să merg înainte și să aruncăm o privire la cadrul nostru original de date.
+
+160
+00:11:50,770 --> 00:11:54,610
+Vreau să intru și să-i eliberez celulele de aici, purtându-le.
+
+161
+00:11:54,740 --> 00:11:56,820
+Și să aruncăm o privire asupra cadrului nostru de date.
+
+162
+00:11:56,860 --> 00:12:03,970
+Din nou avem Rose fie în coloane w prin Z pentru a reseta indicele înapoi la valoarea implicită, care este doar
+
+163
+00:12:03,970 --> 00:12:09,070
+un indice de interval sau un 1 2 3 4 până la al șaptelea rând.
+
+164
+00:12:09,210 --> 00:12:16,780
+Puteți să apelați indexul de resetare a metodei și să vă amintiți că închideți parantezele pe
+
+165
+00:12:16,870 --> 00:12:18,380
+care le executăm.
+
+166
+00:12:18,900 --> 00:12:26,950
+Și dacă apelați această notificare, veți reinițializa indexul într-o coloană și veți obține indexul real atunci
+
+167
+00:12:27,010 --> 00:12:28,690
+să fie numeric.
+
+168
+00:12:28,690 --> 00:12:32,320
+Și astfel puteți reinițializa indexul.
+
+169
+00:12:32,710 --> 00:12:37,530
+Ceva pe care trebuie să-l observăm aici este la fel ca o mulțime de alte informații despre aceste operațiuni.
+
+170
+00:12:37,570 --> 00:12:42,010
+Acest lucru nu se întâmplă dacă nu îl specificați pentru ca acesta să apară pe loc.
+
+171
+00:12:42,010 --> 00:12:47,860
+Deci, dacă îl sun înapoi pe T. F. Încă mai am acel index original de etichete,
+
+172
+00:12:47,860 --> 00:12:54,480
+dacă doriți ca acest lucru să apară efectiv în loc ceea ce ați face este să spuneți în loc egal cu adevărat și treceți în indexul de subliniere a valorilor.
+
+173
+00:12:54,520 --> 00:12:56,640
+Pentru moment, vom merge mai departe și nu vom face asta.
+
+174
+00:12:56,650 --> 00:12:59,620
+În acest fel păstrăm în continuare cadrul nostru original de date.
+
+175
+00:12:59,650 --> 00:13:06,680
+Acum, mergeți mai departe și clarificați acest lucru din nou dacă doriți doar să resetați indexul la o valoare numerică.
+
+176
+00:13:06,790 --> 00:13:12,080
+Puteți folosi doar acel index Reesa, iar vechiul dvs. index va deveni o coloană a cadrului dvs. de date.
+
+177
+00:13:12,630 --> 00:13:13,140
+O.K.
+
+178
+00:13:13,300 --> 00:13:19,060
+Să mergem mai departe și să arătăm un nou exemplu de index, cum ar fi setarea indexului și,
+
+179
+00:13:19,150 --> 00:13:25,500
+pentru a face acest lucru, am să merg mai departe și să creez un nou index numit New i n d.
+
+180
+00:13:27,250 --> 00:13:32,910
+Și voi folosi un mic șmecherie pe care o voi explica în doar o secundă.
+
+181
+00:13:33,040 --> 00:13:37,580
+Aceasta va fi o grămadă de abrevieri de stat și o să spun că s-au împărțit pe acest șir.
+
+182
+00:13:38,020 --> 00:13:44,050
+Și rețineți că împărțirea unui șir ar trebui să spună o metodă comună pentru împărțirea unui spațiu gol.
+
+183
+00:13:44,230 --> 00:13:48,960
+Dar aceasta este o modalitate rapidă de a crea o listă în loc de a fi nevoie să tastați fiecare virgulă.
+
+184
+00:13:49,240 --> 00:13:54,850
+Aș vrea să continuăm și să stabilim această listă egală cu cea nouă.
+
+185
+00:13:54,850 --> 00:14:02,350
+Așadar, am noile valori ale indexului meu aici și ceea ce am de gând să fac este să pun această funcție ca o coloană în cadrul meu de date.
+
+186
+00:14:03,160 --> 00:14:09,520
+Așa că am să merg înainte și să spun că statele DFA sunt egale cu cele noi.
+
+187
+00:14:09,640 --> 00:14:12,610
+Și din moment ce menționează o potrivire, există cinci elemente aici.
+
+188
+00:14:12,700 --> 00:14:16,030
+Se va potrivi de la 0 la 4 aici pe starea cadrului.
+
+189
+00:14:16,060 --> 00:14:24,070
+Deci, dacă îmi verific cadrul de date, am această nouă coloană numită state CA NY w y o RCO.
+
+190
+00:14:24,100 --> 00:14:29,000
+Acum știm cum să resetăm indexul care face doar o metodă de indexare a indexului de subliniere.
+
+191
+00:14:29,170 --> 00:14:34,150
+Dar, dacă aveți o coloană în cadrul dvs. de date pe care doriți să o fiți indicele pe care îl
+
+192
+00:14:34,150 --> 00:14:37,950
+puteți face și faceți este să spuneți indexul setat în loc de resetare index.
+
+193
+00:14:38,110 --> 00:14:46,120
+De exemplu, pot să spun DF dot index index subliniat și apoi treceți în numele coloanei pe care doriți să
+
+194
+00:14:46,120 --> 00:14:54,100
+fie noul indice, astfel stările aici și dacă fac schimbare introduceți acum coloana de stari a devenit index.
+
+195
+00:14:54,100 --> 00:15:00,320
+Rețineți dacă nu păstrați aceste informații ale indexului, astfel încât să înlocuiți vechiul index și, de fapt, nu
+
+196
+00:15:00,370 --> 00:15:03,630
+veți putea păstra aceste informații ca o coloană nouă.
+
+197
+00:15:03,760 --> 00:15:07,810
+Spre deosebire de indexul de resetare care vă permite să aveți această coloană nouă.
+
+198
+00:15:07,810 --> 00:15:11,280
+Deci, acesta este setat indicele versus indicele de resetare.
+
+199
+00:15:11,340 --> 00:15:14,750
+Din nou, dacă analizez cadrul de date aici, acest lucru nu a fost în vigoare.
+
+200
+00:15:14,830 --> 00:15:16,190
+Ar fi trebuit să adaug argumentul.
+
+201
+00:15:16,210 --> 00:15:18,650
+Dacă fac schimbare, intră aici.
+
+202
+00:15:18,680 --> 00:15:20,140
+Este egal cu adevărat.
+
+203
+00:15:20,810 --> 00:15:28,820
+Dă-mi voie să fac o scurtă trecere în revistă a ceea ce tocmai am acoperit înainte să ne îndreptăm spre partea a treia.
+
+204
+00:15:28,820 --> 00:15:34,180
+Ok, am aflat despre selecția condiționată, care este foarte asemănătoare cu operațiile PI.
+
+205
+00:15:34,180 --> 00:15:39,550
+În principiu, obțineți un cadru de date de valori booleene și, dacă treceți într-un cadru întreg de date booleene, veți obține valorile în
+
+206
+00:15:39,880 --> 00:15:44,830
+cazul în care este adevărat și veți obține orice valoare n sau nu în cazul în care a fost falsă.
+
+207
+00:15:44,830 --> 00:15:52,090
+Dacă treceți o serie de valori booleene, cum ar fi o coloană cu un operator de comparație, veți ajunge doar la obținerea
+
+208
+00:15:52,090 --> 00:15:57,850
+rândurilor cadrului de date unde gravitatea sa întâmplat să fie adevărată și ați putea rupe acest lucru
+
+209
+00:15:57,910 --> 00:16:00,350
+în mai mulți pași, dacă doriți.
+
+210
+00:16:00,360 --> 00:16:03,160
+Din nou, aceste două celule sunt probabil cele mai importante de înțeles.
+
+211
+00:16:03,160 --> 00:16:07,810
+Din această prelegere, dacă înțelegeți acest lucru, atunci înțelegeți cum să faceți o selecție
+
+212
+00:16:07,810 --> 00:16:08,970
+condiționată în pantaloni.
+
+213
+00:16:09,190 --> 00:16:15,490
+Apoi, derulând în jos dacă doriți să efectuați mai multe selecții condiționate ar putea face un operator ampersand sau
+
+214
+00:16:15,490 --> 00:16:19,990
+un operator de țevi nu poate folosi Python builtin și / sau operatori.
+
+215
+00:16:20,170 --> 00:16:27,460
+Din cauza valorilor ambigue dintr-o serie Adevăr și nu uitați să utilizați paranteze pentru a separa
+
+216
+00:16:27,460 --> 00:16:30,040
+fiecare instrucțiune de selecție condiționată.
+
+217
+00:16:30,040 --> 00:16:31,300
+Apoi, în final am resetat.
+
+218
+00:16:31,330 --> 00:16:38,650
+Indicele de resetare a indexului va reinițializa indexul dvs. la un index numeric și va lua indexul vechi și îl veți seta
+
+219
+00:16:38,650 --> 00:16:45,670
+ca o nouă coloană numită index și apoi puteți seta un index nou în loc să resetați orice index bazat pe
+
+220
+00:16:45,970 --> 00:16:49,910
+o coloană curentă doar prin a spune Set indicele de subliniere.
+
+221
+00:16:50,170 --> 00:16:53,090
+Și ambele metode nu sunt în loc în mod implicit.
+
+222
+00:16:53,140 --> 00:16:55,560
+Deci, asigurați-vă că ați specificat în loc ECOs adevărat.
+
+223
+00:16:55,690 --> 00:16:57,970
+Dacă doriți ca schimbarea să fie permanentă.
+
+224
+00:16:58,030 --> 00:17:00,550
+Bine, asta este pentru această prelegere.
+
+225
+00:17:00,550 --> 00:17:01,350
+Multumesc tuturor.
+
+226
+00:17:01,390 --> 00:17:04,800
+Voi vedea la următoarea conferință sau vom discuta mai sus.
+
+227
+00:17:04,960 --> 00:17:08,630
+Din nou, toate aceste note sunt doar într-un notebook numit cadre de date.
+
+228
+00:17:08,650 --> 00:17:10,210
+Mulțumesc și o să văd dacă următoarea prelegere

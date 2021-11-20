@@ -1,0 +1,547 @@
+1
+00:00:05,280 --> 00:00:10,350
+Herkese merhaba ve Karplus haritalarına hoş geldiniz, bu dersin çözümünün konusunu inceliyor.
+
+2
+00:00:10,350 --> 00:00:15,140
+Karplus haritaları bölümündeki alıştırmalar için çözümler kodlayacağız.
+
+3
+00:00:15,150 --> 00:00:19,260
+Hadi başlayalım, başlamak için bir defter koyduğunuza bakın.
+
+4
+00:00:19,260 --> 00:00:19,470
+Tamam.
+
+5
+00:00:19,470 --> 00:00:21,500
+İşte Jüpiter defterindeyim.
+
+6
+00:00:21,600 --> 00:00:26,850
+Devam etmeye çalışmakla birlikte plotline ithalatlarını çalıştırıp oraya girmek zorunda kaldım, sonra da
+
+7
+00:00:26,850 --> 00:00:33,420
+yapmak istediğim ilk şey PD olarak pandaları içe aktarmak ve daha sonra devam etmek ve CANDY'leri
+
+8
+00:00:33,430 --> 00:00:37,830
+kullanarak CXXVI 2014'ü okumak ve dünya güç tüketimini azaltmak istiyorlar .
+
+9
+00:00:37,830 --> 00:00:47,570
+Bu yüzden gidip CXXVI'yi okumaya devam eden ve 2014'ten sonra gelen pass'ları söyleyeceğim.
+
+10
+00:00:47,690 --> 00:00:54,420
+Veya aslında yalnızca iyi bulup bunları tamamlamak için kullanabilirim ve devam edelim ve
+
+11
+00:00:54,420 --> 00:00:57,130
+başın veri kafasını kontrol et.
+
+12
+00:00:57,360 --> 00:00:58,590
+Ve işte elimizde.
+
+13
+00:00:58,630 --> 00:00:59,070
+TAMAM.
+
+14
+00:00:59,160 --> 00:01:04,460
+Şimdi, veri ve mizanpaj sözlüğünü kullanan ülkeler için güç tüketiminin temel bir planını
+
+15
+00:01:04,470 --> 00:01:07,150
+oluşturmak için electional'e referans vermek istiyoruz.
+
+16
+00:01:07,170 --> 00:01:11,990
+Devam edin ve veri sözlüğüyle başlayalım.
+
+17
+00:01:12,090 --> 00:01:20,540
+Döküm sözlüğünü aradıklarında ve daha sonra daha önce yaptığımız gibi kravatın kloroplasta eşit
+
+18
+00:01:20,540 --> 00:01:22,120
+olduğunu söyleyeceğim.
+
+19
+00:01:22,260 --> 00:01:30,960
+Bir cevap vereceğim sonraki anahtardaki konumlar ise ileride olacak ve konum kodlarının sütununa
+
+20
+00:01:30,960 --> 00:01:32,400
+eşit olacak.
+
+21
+00:01:32,400 --> 00:01:34,520
+Bu durumda burası sadece ülke.
+
+22
+00:01:34,680 --> 00:01:36,410
+Bu yüzden sadece bir
+
+23
+00:01:39,090 --> 00:01:45,570
+ülkede geçeceğim ve sonra konum modu diyeceğim ve burada konum modülünü anlamaya yönelik dokümantasyonun
+
+24
+00:01:45,570 --> 00:01:49,460
+ülke alan adları olduğuna dair bir referans aldım.
+
+25
+00:01:49,570 --> 00:01:52,600
+Ve burada belgelere tam bir uzunluk var.
+
+26
+00:01:52,620 --> 00:01:53,710
+Siz devam edin ve o bağlantıyı tıklayın.
+
+27
+00:01:53,710 --> 00:01:57,810
+Sizi tam dokümantasyon referansına götürür ve belirli ülke için doğru
+
+28
+00:01:57,810 --> 00:01:59,790
+yer modunun hangisi olduğuna bakabilirsiniz.
+
+29
+00:01:59,790 --> 00:02:04,080
+Aslında ülkemiz kodlarına sahip olmadığımız bu durumda ülkemizin isimlerine sahibiz ve
+
+30
+00:02:04,080 --> 00:02:09,060
+umarım belgelere bakarak bunu keşfedebilir veya sadece bu çözümleri referans alarak yapabilirsiniz.
+
+31
+00:02:10,320 --> 00:02:19,290
+Bir sonraki adımda z'yi belirtmek istiyoruz ve z, if'e eşit olacak ve güç tüketimi sütunu olmasını
+
+32
+00:02:19,290 --> 00:02:19,950
+istiyoruz.
+
+33
+00:02:20,010 --> 00:02:22,590
+Aslında bizim boyamamızı temsil etmemizi istiyoruz.
+
+34
+00:02:22,590 --> 00:02:34,770
+Öyleyse devam edin ve güç tüketimi deyin ve orada W H olsun demeliyiz ve daha sonra metin ilerleyecek
+
+35
+00:02:34,770 --> 00:02:37,860
+ve ülke adını da alacaktır.
+
+36
+00:02:37,860 --> 00:02:46,980
+Metin üzerinde konuşmaya devam etmek ülkemizdir ve nihayet renk çubuğumuzu sözlük veya bir başlık olarak
+
+37
+00:02:46,980 --> 00:02:54,270
+etiketleyeceğiz ve renk çubuğu etiketi sadece olacak veya başlık renk çubuğu güç
+
+38
+00:02:55,110 --> 00:02:57,180
+tüketimi KWH olacak.
+
+39
+00:02:57,210 --> 00:02:57,410
+Sağ.
+
+40
+00:02:57,420 --> 00:03:01,200
+sözlüğümüze geri döneceğiz ve daha sonra birkaç argüman daha ekleyeceğiz.
+
+41
+00:03:01,200 --> 00:03:02,550
+Ve bu, temel veri
+
+42
+00:03:02,550 --> 00:03:05,450
+Ancak sonra da düzenlerini yapalım.
+
+43
+00:03:05,820 --> 00:03:09,870
+Bu yüzden bir sözlük hazırladığımı söyleyeceğim.
+
+44
+00:03:10,200 --> 00:03:18,300
+Dolayısıyla bunun başlığı sadece arsa başlığı olacak ve başlık olarak 2014 güç tüketimi
+
+45
+00:03:18,300 --> 00:03:19,020
+söylenecek.
+
+46
+00:03:19,470 --> 00:03:27,150
+Ve sonra bir sonraki ekranda bir coğrafi anahtar kurduktan sonra bir sözlük aramasını pasan etmek, göğe bir netice
+
+47
+00:03:27,150 --> 00:03:30,440
+göstruğunu sahte gösterecek ve ardından projeksiyon deyin demek.
+
+48
+00:03:30,480 --> 00:03:34,400
+Ve önceki derslerde gösterildiği gibi istediğiniz herhangi bir projeksiyonu geçirebilirsiniz.
+
+49
+00:03:34,410 --> 00:03:39,420
+Ama şimdi devam edin ve bunu yapalım.
+
+50
+00:03:39,540 --> 00:03:41,850
+Yön için.
+
+51
+00:03:42,920 --> 00:03:47,650
+Ve şimdi gidelim ve kement çalıp ne çıktığımı görelim.
+
+52
+00:03:47,660 --> 00:03:48,090
+Tamam.
+
+53
+00:03:48,090 --> 00:03:53,940
+Ve burada dünyanın 2014 güç tüketimini görebilirsiniz ve şu an Çin ve ABD'nin en yüksek güç
+
+54
+00:03:53,940 --> 00:03:57,360
+tüketimine sahip olduğunu ve çözümün DEĞİL kitap olduğunu görebiliriz.
+
+55
+00:03:57,360 --> 00:04:06,090
+Önceden gittim ve renk ölçeğini, renk ölçeği eşit olan veri
+
+56
+00:04:06,090 --> 00:04:10,890
+sözlüğünde bir argüman olarak söyleyerek değiştirdim.
+
+57
+00:04:10,950 --> 00:04:18,000
+Ve sonra ters skalanın doğruya eşit olduğunu söyledim.
+
+58
+00:04:19,110 --> 00:04:21,660
+Ve bu sadece bu renk skalasını biraz daha güzel yapar.
+
+59
+00:04:21,660 --> 00:04:26,790
+Bunu yapmak zorunluluğunuz yoktur, ancak renk ölçeğini tercih ediyorum, bu renk ölçeğini tercih ediyorum, bu renk ölçeğini tercih ettim;
+
+60
+00:04:26,790 --> 00:04:30,800
+bu renk ölçeğini, tümü ortalıkta bırakmak yerine, ülkeler arasında biraz daha belirgin hale getirir.
+
+61
+00:04:30,870 --> 00:04:31,530
+Tamam.
+
+62
+00:04:31,530 --> 00:04:34,700
+2014 enerji tüketimi planını hazırlamanın yolu buydu.
+
+63
+00:04:34,770 --> 00:04:39,720
+sinir bozucu olduğunu bildiğim dokümantasyona bakmak zorundaydım ancak bu tür garip sözdizimi
+
+64
+00:04:39,720 --> 00:04:45,390
+seçimleri için, çizim yaparken gerçekten bunu yapmak zorunda kalacaksın. Bu parselleri oluşturmak istiyorum.
+
+65
+00:04:45,390 --> 00:04:47,780
+Ve yine bunun birçoğu zor ve
+
+66
+00:04:47,790 --> 00:04:51,320
+Bunları doğrudan hafızanızdan aramayı denemek zor olacak.
+
+67
+00:04:52,580 --> 00:04:55,720
+Pekâlâ, şimdi devam edin ve ABD koro klavyesine geçin.
+
+68
+00:04:55,890 --> 00:04:58,940
+2012 seçim verilerimizi ithal etmek istiyoruz.
+
+69
+00:04:59,140 --> 00:05:00,630
+Bunu yapmak için dışarı çıkıp panelist kullanacağım.
+
+70
+00:05:00,670 --> 00:05:04,990
+USDA'nın PD'ye eşit olduğunu söyleyeceğim.
+
+71
+00:05:05,110 --> 00:05:11,050
+CXXVI'yi okuduktan sonra 2012 seçim verilerine bakacağız.
+
+72
+00:05:11,170 --> 00:05:13,510
+Yani sadece otomatik tamamlama için sekmeyi kullanıyorum.
+
+73
+00:05:13,870 --> 00:05:17,850
+Sonra da bize, Fed'i söyleyerek veri çerçevesinin başını kontrol etmeye gidiyorum.
+
+74
+00:05:18,250 --> 00:05:20,740
+Ve burada, eşleşen veri çerçevesini elde ederiz.
+
+75
+00:05:20,740 --> 00:05:24,930
+Şimdi girelim ve devlet başına oylama yaşı nüfus görüntüleyen bir arsa oluşturun.
+
+76
+00:05:24,940 --> 00:05:35,050
+AP, veri sözlüğünü veri olarak söyleyerek sözcükleri suça benziyor ve sonra da hepsi de Kelime Artı olarak söylüyor.
+
+77
+00:05:38,940 --> 00:05:44,440
+Ve devam edelim ve bu renk ölçeği argümanlarını ekleyelim ve böylece bir
+
+78
+00:05:44,460 --> 00:05:51,180
+renk ölçeği buna eşit olduğunu ve aynı zamanda ters bir terazinin doğru olduğunu söyleyelim.
+
+79
+00:05:51,430 --> 00:05:56,940
+Ve ters skala true değerine eşit diyorum nedeni, aslında renk ölçeğini tersine çevirmektir.
+
+80
+00:05:56,940 --> 00:06:03,400
+bunu varsayalım, burada ters skala varsayalım, burada eşittir yanlış diyelim.
+
+81
+00:06:03,390 --> 00:06:07,820
+Bırakalım, sana gerçek hızlı bir şekilde göstereceğim,
+
+82
+00:06:08,230 --> 00:06:12,370
+Ardından, tersine sahip olmak kadar güzel olmayan bir ölçek elde ediyorum, böylece
+
+83
+00:06:12,370 --> 00:06:16,030
+bu parametreyi ekleyerek istediğiniz herhangi bir renk ölçeğini tersine çevirebilirsiniz.
+
+84
+00:06:16,120 --> 00:06:22,200
+Ve gerçekte ters skala doğruysa bunun için genellikle daha iyi çalışır.
+
+85
+00:06:22,200 --> 00:06:28,860
+Bu yüzden varsayılan olarak tersine çevrilmemiş gibi görünüyor ama daha koyu renkleri daha yüksek miktar olarak
+
+86
+00:06:28,870 --> 00:06:29,660
+tercih ediyorum.
+
+87
+00:06:29,680 --> 00:06:31,580
+Bu şekilde biraz daha net.
+
+88
+00:06:31,600 --> 00:06:32,140
+Tamam.
+
+89
+00:06:32,400 --> 00:06:39,910
+Devam edersek, buraya geri dönersek, dışarı çıkıp ters skala'nın gerçek yerlere eşit olduğunu söyleyeceğiz.
+
+90
+00:06:39,900 --> 00:06:47,290
+Durum kısaltmasına eşit olacak, aslında şuna bakarsak, sonunda hem devlet
+
+91
+00:06:47,280 --> 00:06:51,340
+adı hem de kısaltma var.
+
+92
+00:06:51,610 --> 00:07:04,190
+Devletin kısaltmasını kullanalım, USCF devletin kısaltma sütununu alt üst ettiğini söyleyeceğiz.
+
+93
+00:07:04,260 --> 00:07:09,400
+Sonra, seçmek istiyoruz veya Z'yi seçmek için ne seçtiğiniz zaten söylendi.
+
+94
+00:07:09,430 --> 00:07:12,260
+Oylama yaşındaki nüfustu.
+
+95
+00:07:12,260 --> 00:07:17,500
+AP ve ardından konum modu.
+
+96
+00:07:17,940 --> 00:07:19,210
+Buna iki çağrı yapılıyor.
+
+97
+00:07:19,240 --> 00:07:25,410
+Tıpkı örneklerde olduğu gibi ABD devletleri de ders ve metnimizi beğenmektedir.
+
+98
+00:07:25,410 --> 00:07:33,490
+Devam edelim ve sadece gerçek devlet adı olacak metni seçelim, böylece USCF Devletleri'nden sonra ilerleyip renk
+
+99
+00:07:33,490 --> 00:07:35,430
+çubuğunun eşit olduğunu ve
+
+100
+00:07:38,860 --> 00:07:41,230
+sonra bir sözlükte geçtiğimizi söylüyoruz.
+
+101
+00:07:41,250 --> 00:07:50,370
+Başlık ve bu sadece oylama yaşındaki nüfus olacak.
+
+102
+00:07:50,400 --> 00:07:51,850
+Hadi başlayalım.
+
+103
+00:07:51,880 --> 00:07:53,340
+Tamam, bir veri sözlüğümüz var.
+
+104
+00:07:53,380 --> 00:07:56,880
+Şimdi, sözlüklerimizi hazırlamanın zamanı geldi.
+
+105
+00:07:58,090 --> 00:08:00,100
+Döküm sözlüğümüze geçiyoruz.
+
+106
+00:08:00,150 --> 00:08:07,930
+Burada tüm komplomun unvanını koyduk, 2012 seçim verisi diyeceğiz.
+
+107
+00:08:08,350 --> 00:08:09,900
+İsterseniz onu arayabilirsiniz.
+
+108
+00:08:10,120 --> 00:08:13,110
+Geo'nun sözlüğe eşit olduğunu söyleyeceğiz.
+
+109
+00:08:13,320 --> 00:08:17,500
+Cisco ABD.
+
+110
+00:08:17,950 --> 00:08:22,180
+Göstermek istediğimiz başka bir argüman da Göller'in gerçek olduğudur.
+
+111
+00:08:22,500 --> 00:08:27,640
+Ve sonra göl rengini seçtik ve kısmen bir dize kabul eden derslerde
+
+112
+00:08:27,630 --> 00:08:30,810
+gördüğümüz RSGB mekanizması ile geç renk yapmak istiyoruz.
+
+113
+00:08:30,890 --> 00:08:33,650
+Bu biraz garip bir biçimde, bunlar R söylüyorlar. G. B.
+
+114
+00:08:33,850 --> 00:08:41,700
+Ve sonra sayısal değerleri gerçekten geçirip 85 173 ve 240 numaralı rakamları seçip Göller için
+
+115
+00:08:41,700 --> 00:08:44,610
+güzel bir mavi ton elde edersiniz.
+
+116
+00:08:44,640 --> 00:08:45,190
+Tamam.
+
+117
+00:08:45,370 --> 00:08:46,050
+Bu bizim görevimiz.
+
+118
+00:08:46,060 --> 00:08:48,140
+Bunu çalıştıralım.
+
+119
+00:08:48,450 --> 00:08:54,480
+ve Florida gibi en kalabalık devletlerin daha koyu renklerine sahip oldukları, çünkü nüfusun en yüksek
+
+120
+00:08:54,490 --> 00:08:59,430
+olduğu anlamına geliyor, çünkü muhtemelen de en yüksek oy verme yaşı nüfusuna sahipler.
+
+121
+00:08:59,430 --> 00:09:03,460
+Ve 2012 seçim verilerini görüyoruz ve California Texas, New York
+
+122
+00:09:03,450 --> 00:09:03,880
+Tamam.
+
+123
+00:09:03,880 --> 00:09:06,570
+Mercan haritaları egzersizleri için bu kadar.
+
+124
+00:09:06,580 --> 00:09:13,360
+Bu sadece ABD seçim verileriydi ve bu uluslararası enerji tüketimi verileri,
+
+125
+00:09:13,360 --> 00:09:19,120
+çizgi çizgisinin gücünü, oldukça gelişmiş arazileri yeniden üretebilmeyi umut etti.
+
+126
+00:09:19,300 --> 00:09:25,650
+diziminin maliyeti biraz garip olan ve dokümantasyona başvurmak zorunda kalmış ancak bu güzel
+
+127
+00:09:25,650 --> 00:09:31,650
+görünen ve onunla etkileşime girip yakınlaştırma ve sayıları kontrol etmeyi başarabilen bir
+
+128
+00:09:31,650 --> 00:09:37,710
+komploya sahip olan birkaç satırlık kodla Üzerine gelmek istediğinizde metniniz oldukça güzel.
+
+129
+00:09:37,710 --> 00:09:38,110
+Söz
+
+130
+00:09:38,110 --> 00:09:43,540
+Aslında diğer dillerde ne kadar kod yazıyorsanız bu çok daha fazla kod gerektirir.
+
+131
+00:09:43,540 --> 00:09:44,170
+Tamam.
+
+132
+00:09:44,160 --> 00:09:49,630
+Bu çekirdek Pluff haritalarının keyfini çıkarmayı umuyor, çok zorlayıcı ve tam olarak anlamanız
+
+133
+00:09:49,620 --> 00:09:52,780
+için birçok belgeye başvurmak zorunda olduğunuz alıştırmaları.
+
+134
+00:09:52,870 --> 00:09:57,460
+Ancak bu aynı zamanda, bunları kendi başınıza yaparken neler yapabileceğinize dair gerçek bir
+
+135
+00:09:57,450 --> 00:09:58,190
+dünya örneğidir.
+
+136
+00:09:58,330 --> 00:09:59,400
+Ama hoşuna gitti.
+
+137
+00:09:59,400 --> 00:10:01,160
+Herkese teşekkürler, bir sonraki derside görüşürüz.

@@ -1,0 +1,327 @@
+1
+00:00:05,160 --> 00:00:10,410
+Halo semuanya dan selamat datang di data kuliah yang hilang di ruang kuliah ini, tunjukkan beberapa metode mudah
+
+2
+00:00:10,650 --> 00:00:12,870
+untuk menangani data yang hilang di Panda.
+
+3
+00:00:12,870 --> 00:00:17,820
+Banyak kali ketika Anda menggunakan panda untuk membaca data jika Anda memiliki poin yang hilang apa yang akan
+
+4
+00:00:17,820 --> 00:00:21,040
+terjadi adalah Pandurs akan secara otomatis mengisi titik yang hilang itu.
+
+5
+00:00:21,250 --> 00:00:21,690
+Tidak.
+
+6
+00:00:21,720 --> 00:00:23,360
+Atau nilai apa pun.
+
+7
+00:00:23,610 --> 00:00:28,980
+Mari kita mulai dan mengeksplorasi bagaimana kita dapat menggunakan metode seperti menjatuhkan nama atau mengisi dan untuk benar-benar
+
+8
+00:00:28,980 --> 00:00:31,800
+menjatuhkan nilai-nilai yang hilang atau mengisi nilai-nilai yang hilang.
+
+9
+00:00:32,040 --> 00:00:36,090
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+10
+00:00:36,120 --> 00:00:36,420
+Baiklah.
+
+11
+00:00:36,420 --> 00:00:38,270
+Di sini saya di notebook Jupiter.
+
+12
+00:00:38,280 --> 00:00:43,800
+Apa yang ingin saya lakukan adalah membuat bingkai data dan sama seperti kita membuat kita bisa
+
+13
+00:00:43,860 --> 00:00:48,480
+membuat seri dari kamus, kita juga bisa membuat bingkai data dari kamus.
+
+14
+00:00:48,480 --> 00:00:55,620
+Kamus ini akan memiliki tiga kunci dan akan memasukkan kunci B dan kunci C dan apa yang akan terjadi adalah
+
+15
+00:00:55,620 --> 00:01:01,560
+kolom dalam bingkai data kami dan kemudian dapat kami lakukan untuk titik data aktual adalah pasan
+
+16
+00:01:01,620 --> 00:01:03,810
+daftar nilai untuk setiap kunci.
+
+17
+00:01:04,260 --> 00:01:08,290
+Dan itu akan menjadi titik data untuk setiap baris dalam nama kolom itu.
+
+18
+00:01:08,340 --> 00:01:12,680
+Kami akan pergi ke depan dan mengatakan Kunci A memiliki daftar juga.
+
+19
+00:01:12,930 --> 00:01:18,290
+Dan kemudian kita akan menggunakan n untuk menandakan nilai ordinal yang hilang.
+
+20
+00:01:19,080 --> 00:01:20,290
+Lalu kita akan menabung untuk B.
+
+21
+00:01:20,310 --> 00:01:28,260
+Ini akan menjadi 5 dan P bahwa Nan dan P dan kemudian dan akhirnya kisi kolom ketiga kami.
+
+22
+00:01:28,260 --> 00:01:31,150
+Jadi kita akan mempertahankan semua nilai 1 2 dan 3.
+
+23
+00:01:31,200 --> 00:01:33,360
+Jadi tidak ada nilai yang hilang.
+
+24
+00:01:33,360 --> 00:01:41,300
+Dan kemudian kita bisa melanjutkan dan katakan adalah DFAC sama dengan bingkai data PD dan kemudian melewati kamus D.
+
+25
+00:01:41,730 --> 00:01:48,270
+Dan kemudian ketika kita memeriksa kerangka data kita, kita mendapatkan kerangka data yang tampak bagus dari kolom A B
+
+26
+00:01:48,270 --> 00:01:56,580
+dan C dan kemudian baris 0 1 dan 2 tanpa baris 0 tidak memiliki nilai yang hilang dan Kolom C tidak memiliki nilai yang hilang.
+
+27
+00:01:56,700 --> 00:02:02,850
+Dan kemudian ada beberapa nilai yang hilang di sini di Roby atau kolom B dan satu nilai yang hilang di kolom A.
+
+28
+00:02:03,360 --> 00:02:07,940
+Mari kita keluar dan menjelajahi drop dan metode.
+
+29
+00:02:08,280 --> 00:02:11,580
+Banyak kali Anda hanya ingin menjatuhkan nilai yang hilang dari kumpulan data Anda.
+
+30
+00:02:11,640 --> 00:02:14,010
+Apalagi jika itu hanya beberapa nilai yang hilang.
+
+31
+00:02:14,010 --> 00:02:21,300
+Jika Anda mengatakan drop a hanya dengan sendirinya dan menyebutnya sebagai metode kurung dekat apa yang terjadi adalah bahwa Pandurs
+
+32
+00:02:21,300 --> 00:02:28,890
+akan menjatuhkan baris apa pun dengan nilai tunggal atau lebih air jantan atau hilang yang berarti jika salah satu baris ini
+
+33
+00:02:28,890 --> 00:02:33,840
+memiliki nilai nol dalam satu atau lebih ia pergi dan menjatuhkan mereka.
+
+34
+00:02:33,870 --> 00:02:40,050
+Jika Anda ingin melakukan tindakan ini pada kolom yang dapat Anda lakukan adalah memeriksa tab shift di sini dan
+
+35
+00:02:40,050 --> 00:02:42,060
+perhatikan bahwa ada argumen sumbu.
+
+36
+00:02:42,330 --> 00:02:44,740
+Itu berarti secara default porosnya adalah nol.
+
+37
+00:02:44,880 --> 00:02:47,210
+Berarti operasi terjadi di sepanjang baris.
+
+38
+00:02:47,340 --> 00:02:53,820
+Tetapi jika Anda ingin melakukan operasi di sepanjang kolom drop kolom yang memiliki nilai nol Anda
+
+39
+00:02:54,240 --> 00:02:56,780
+dapat menentukan sumbu sama dengan 1
+
+40
+00:02:57,750 --> 00:03:01,200
+Dan itu akan jatuh di kolom dengan nilai nol.
+
+41
+00:03:01,360 --> 00:03:03,710
+Jadi saya tidak melihat perbandingannya di sini.
+
+42
+00:03:03,950 --> 00:03:09,720
+Dan itu berarti jika Trapani memperpendek baris dari setiap nilai baris di dalamnya dan kemudian setelahnya adalah Trump dan
+
+43
+00:03:09,810 --> 00:03:14,230
+dengan akses yang sama dengan satu akan menjatuhkan kolom nilai nol di dalamnya.
+
+44
+00:03:14,640 --> 00:03:17,840
+Tapi yang juga bisa Anda lakukan adalah menentukan ambang batas.
+
+45
+00:03:18,120 --> 00:03:24,420
+Dan jika kita masuk dan periksa ini kita akan mengatakan DMF menjatuhkan nilai A dan menggunakan tab Shift.
+
+46
+00:03:24,450 --> 00:03:31,190
+Lihat dokumentasi yang ada jika ada argumen ambang batas apa argumen itu.
+
+47
+00:03:31,320 --> 00:03:39,480
+Ini adalah nilai integer dan Anda akan membutuhkan banyak knon dan nilai agar tidak jatuh.
+
+48
+00:03:39,480 --> 00:03:43,180
+Sebagai contoh, izinkan saya masuk dan menetapkan ambang sama dengan 2.
+
+49
+00:03:43,590 --> 00:03:46,030
+Dan lagi kita hanya akan melakukan ini di sepanjang jalan.
+
+50
+00:03:46,260 --> 00:03:53,470
+Jadi perhatikan di sini kita memiliki di baris 0 3 bukan dan nilai-nilai di baris 1.
+
+51
+00:03:53,490 --> 00:03:58,710
+Kami memiliki dua nilai non A dan di baris dua kami hanya memiliki satu.
+
+52
+00:03:58,830 --> 00:04:01,090
+Nomor tiga bukan nilai apa pun.
+
+53
+00:04:01,140 --> 00:04:05,850
+Itu berarti jika saya katakan drop dan seperti ini menjatuhkan segalanya kecuali Roseboro.
+
+54
+00:04:05,970 --> 00:04:14,270
+Namun jika saya menetapkan ambang batas menjadi sama dengan 2 dan menjalankannya, ia melanjutkan dan menyimpan baris 1.
+
+55
+00:04:14,310 --> 00:04:22,740
+Dan pada dasarnya apa artinya adalah karena baris 1 memiliki setidaknya dua nilai non dan 2. 0 dan keduanya melanjutkan dan
+
+56
+00:04:22,800 --> 00:04:26,880
+menjaga baris itu.
+
+57
+00:04:26,910 --> 00:04:27,230
+Baiklah.
+
+58
+00:04:27,270 --> 00:04:33,790
+Mari kita lanjutkan dan beralih ke Phil dan katakan sekarang kita hanya fokus pada menjatuhkan nilai-nilai yang hilang.
+
+59
+00:04:33,870 --> 00:04:37,060
+Banyak kali Anda ingin benar-benar mengganti nilai-nilai yang hilang.
+
+60
+00:04:37,290 --> 00:04:39,320
+Kami melihat kembali kerangka data kami.
+
+61
+00:04:39,390 --> 00:04:40,870
+Kami memiliki nilai-nilai yang hilang di sini.
+
+62
+00:04:40,950 --> 00:04:47,430
+Jika kita ingin mengisi nilai-nilai yang hilang kita dapat menggunakan metode fill dan metode dan ini kita pergi dan ambil tab
+
+63
+00:04:47,430 --> 00:04:49,910
+shift di sini memiliki beberapa argumen berbeda.
+
+64
+00:04:49,930 --> 00:04:52,400
+Tetapi perhatikan itu memiliki argumen nilai.
+
+65
+00:04:52,610 --> 00:04:57,910
+Dan apa yang dapat Anda lakukan di sini adalah sebagai nilai yang ditetapkan dalam nilai isian Anda.
+
+66
+00:04:57,940 --> 00:05:00,410
+Saya hanya akan memberikan string untuk membuatnya sangat jelas di sini.
+
+67
+00:05:00,450 --> 00:05:07,530
+Apa yang terjadi dan perhatikan itu dapat mengisi nilai berapa pun nilai yang kita inginkan.
+
+68
+00:05:07,940 --> 00:05:10,680
+Dalam hal ini hanya string yang mengatakan mengisi nilai.
+
+69
+00:05:10,770 --> 00:05:15,060
+Namun banyak kali apa yang ingin Anda lakukan sebenarnya mengisi nilai
+
+70
+00:05:15,060 --> 00:05:20,860
+mungkin rata-rata kolom dan Anda dapat melakukannya misalnya seperti Anda dapat mengatakan DSF dari a.
+
+71
+00:05:21,090 --> 00:05:25,150
+Jadi itulah kolom saya dan perhatikan titik yang hilang di sini.
+
+72
+00:05:25,170 --> 00:05:36,170
+Saya akan pergi ke depan dan mengatakan mengisi dan a dan saya akan menetapkan nilai dengan rata-rata kolom itu.
+
+73
+00:05:37,710 --> 00:05:42,210
+Dan sekarang nilai itu telah diisi sebagai rata-rata dari nilai tersebut.
+
+74
+00:05:42,330 --> 00:05:47,760
+Sekarang ada filosofi dan cara berpikir serta metode statistik untuk mengisi nilai-nilai yang
+
+75
+00:05:47,790 --> 00:05:49,070
+hilang secara tepat.
+
+76
+00:05:49,110 --> 00:05:53,280
+Saya akan membiarkan Anda melanjutkan dan mengeksplorasi sendiri karena mereka benar-benar bergantung
+
+77
+00:05:53,280 --> 00:05:56,010
+pada data seperti apa yang Anda kerjakan.
+
+78
+00:05:56,010 --> 00:06:03,030
+Untuk saat ini yang saya ingin Anda ketahui hanyalah ada isian dan metode serta setetes dan metode.
+
+79
+00:06:03,510 --> 00:06:05,600
+OK itu saja untuk sekarang.
+
+80
+00:06:05,610 --> 00:06:10,770
+Mudah-mudahan Anda ingat hanya bahwa kedua metode ini tersedia untuk Anda dan Anda dapat menentukan
+
+81
+00:06:10,770 --> 00:06:15,810
+akses apa yang ingin Anda lakukan tindakan serta argumen ambang dan argumen nilai.
+
+82
+00:06:15,810 --> 00:06:18,800
+Baiklah, terima kasih semuanya dan sampai jumpa di kuliah berikutnya

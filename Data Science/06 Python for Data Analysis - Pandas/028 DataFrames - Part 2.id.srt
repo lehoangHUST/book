@@ -1,0 +1,911 @@
+1
+00:00:05,430 --> 00:00:06,300
+Halo semuanya.
+
+2
+00:00:06,300 --> 00:00:09,050
+Selamat datang di kuliah Bagian 2 kerangka data.
+
+3
+00:00:09,090 --> 00:00:14,310
+Terakhir kali kami berhenti tentang cara membuat bingkai data dasar dan mengambil informasi dari bingkai data itu.
+
+4
+00:00:14,790 --> 00:00:19,760
+Sekarang kita akan melihat pemilihan bersyarat serta beberapa bagian indeks multi-frame data.
+
+5
+00:00:20,430 --> 00:00:23,120
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+6
+00:00:23,520 --> 00:00:23,970
+Baiklah.
+
+7
+00:00:23,970 --> 00:00:25,940
+Di sini kita kembali ke buku catatan Jupiter.
+
+8
+00:00:25,950 --> 00:00:28,460
+Saya akan menggunakan bingkai data yang sama seperti terakhir kali.
+
+9
+00:00:28,470 --> 00:00:35,600
+Shurmur kami baru saja mengatakan numpad S&amp;P pin impor PD Rand dan mengatur kursi ke 101 dan kemudian mengatakan bahwa
+
+10
+00:00:35,600 --> 00:00:38,280
+bingkai data disewa dan 5 datang untuk.
+
+11
+00:00:38,460 --> 00:00:41,270
+Dan kemudian di sini kita memiliki kerangka data kita.
+
+12
+00:00:42,410 --> 00:00:45,240
+Oke, mari kita masuk dan berbicara tentang pemilihan bersyarat.
+
+13
+00:00:45,360 --> 00:00:50,580
+Fitur yang sangat penting dari pantless adalah kemampuan untuk melakukan pemilihan bersyarat menggunakan notasi
+
+14
+00:00:50,690 --> 00:00:57,570
+braket dan ini akan sangat mirip dengan PI misalnya untuk operator perbandingan terhadap bingkai data seperti menanyakan di
+
+15
+00:00:57,930 --> 00:01:01,070
+mana frame data lebih besar dari nol.
+
+16
+00:01:01,080 --> 00:01:06,420
+Saya akan mendapatkan data dari belakang nilai boolean di mana ia mengembalikan true jika nilai bingkai data pada saat
+
+17
+00:01:06,420 --> 00:01:10,620
+itu lebih besar dari nol dan salah jika itu tidak lebih besar dari nol.
+
+18
+00:01:10,740 --> 00:01:16,200
+Dan ini sangat mirip dengan pemilihan kondisional yang sama diterapkan pada seluruh hiree kecuali dalam hal
+
+19
+00:01:16,200 --> 00:01:18,480
+ini kita lakukan pand keadaan frame.
+
+20
+00:01:18,480 --> 00:01:27,270
+Dan seperti ini kita bisa melanjutkan dan mengatakan bullwhips bulled f sama dengan DFA lebih besar dari nol.
+
+21
+00:01:27,960 --> 00:01:29,590
+Dan sejak mengatakan Boulia.
+
+22
+00:01:29,610 --> 00:01:32,470
+Silakan dan periksa.
+
+23
+00:01:32,690 --> 00:01:39,120
+Dan di sini kita memiliki kerangka data boolean kita dan jika kita meneruskannya ke kerangka data
+
+24
+00:01:39,120 --> 00:01:48,750
+asli kita dengan notasi braket maka kita akan keluar sebagai nilai hasil di mana itu benar dan Knoll's atau apa pun di mana itu
+
+25
+00:01:48,750 --> 00:01:49,820
+ternyata salah.
+
+26
+00:01:49,980 --> 00:01:55,200
+Dan itulah cara Anda dapat menggunakan seleksi bersyarat bersama dengan kerangka data.
+
+27
+00:01:55,200 --> 00:01:58,830
+Sekarang biasanya Anda mungkin tidak akan memisahkan ini menjadi dua langkah.
+
+28
+00:01:58,890 --> 00:02:00,230
+Anda hanya akan mengatakannya.
+
+29
+00:02:00,270 --> 00:02:05,760
+Dan kemudian di kurung sesuatu seperti DF lebih besar dari nol dan Anda akan mendapatkan hasil ini.
+
+30
+00:02:06,030 --> 00:02:12,340
+Operasi semacam ini dengan kerangka data dan terhadap operator perbandingan tidak umum.
+
+31
+00:02:12,370 --> 00:02:17,220
+Yah, kemungkinan besar Anda akan berakhir melakukan alih-alih hanya meneruskan seluruh bingkai data
+
+32
+00:02:17,220 --> 00:02:23,700
+yang akan Anda berikan dalam satu baris atau nilai kolom dan alih-alih mengembalikan Knolles yang akan dilakukan adalah
+
+33
+00:02:23,700 --> 00:02:28,970
+mengembalikan hanya baris atau kolom dari subset dari kerangka data di mana kondisi Anda benar.
+
+34
+00:02:28,980 --> 00:02:33,720
+Sekarang biarkan saya pergi untuk menunjukkan contoh apa yang saya maksud dengan itu tidak bisa melihat kerangka data asli kami.
+
+35
+00:02:34,780 --> 00:02:38,830
+Di sini kita memiliki baris A-3 dan kolom w sampai Z.
+
+36
+00:02:39,090 --> 00:02:42,900
+Yang akan saya lakukan adalah menentukan.
+
+37
+00:02:42,990 --> 00:02:46,580
+Dari W lebih besar dari nol.
+
+38
+00:02:46,620 --> 00:02:49,470
+Dan perhatikan saya mendapatkan kembali seri.
+
+39
+00:02:49,470 --> 00:02:54,770
+Benar benar salah benar benar dan ini terkait dengan indeks aktual.
+
+40
+00:02:54,780 --> 00:03:01,390
+Dan jika saya melihat pada kolom W saya melihat bahwa ini sesuai dengan nilai kolom W dan nilai pada
+
+41
+00:03:01,390 --> 00:03:03,980
+indeks c itu sebenarnya kurang dari nol.
+
+42
+00:03:04,110 --> 00:03:06,710
+Jadi mengembalikan False karena lebih besar dari nol.
+
+43
+00:03:06,750 --> 00:03:13,380
+Saya sekarang dapat menggunakan seri ini nilai boolean yang sesuai dengan baris untuk menyaring baris berdasarkan dari nilai kolom
+
+44
+00:03:13,380 --> 00:03:19,470
+dan itu berarti jika saya meneruskan seri ke dalam bingkai data menggunakan notasi braket untuk mengatakan sesuatu seperti
+
+45
+00:03:19,470 --> 00:03:26,430
+DF DFW lebih besar dari nol saya hanya akan dapatkan kembali baris di mana ini benar terjadi artinya saya hanya
+
+46
+00:03:26,720 --> 00:03:32,670
+mendapatkan kembali baris abd dan e tidak akan mengembalikan baris C karena itu salah di sini.
+
+47
+00:03:32,740 --> 00:03:35,340
+Silakan jalankan itu dan lihat seperti apa ini.
+
+48
+00:03:35,340 --> 00:03:36,120
+Besar.
+
+49
+00:03:36,130 --> 00:03:39,950
+Dan sekarang karena saya meneruskan seri saya tidak mendapatkan nilai-nilai itu lagi.
+
+50
+00:03:40,050 --> 00:03:44,880
+Anda hanya mendapatkan nilai-nilai itu ketika Anda melakukan kondisi semacam ini pada seluruh kerangka data saat
+
+51
+00:03:44,880 --> 00:03:47,470
+Anda benar-benar melewati kondisi yang didasarkan pada kolom.
+
+52
+00:03:47,550 --> 00:03:52,580
+Anda hanya akan mendapatkan nilai seri yang berarti Anda hanya akan mendapatkan baris yang benar.
+
+53
+00:03:52,650 --> 00:03:57,120
+Dan ini adalah jenis seleksi bersyarat yang akan kita gunakan paling sering sepanjang kursus ini.
+
+54
+00:03:58,170 --> 00:04:01,970
+Mari kita masuk dan menunjukkan beberapa contoh lagi untuk benar-benar mendorong titik ini pulang.
+
+55
+00:04:01,980 --> 00:04:09,010
+Katakanlah saya ingin mengambil semua baris dalam bingkai data saya di mana z kurang dari nol.
+
+56
+00:04:09,150 --> 00:04:16,500
+Jadi saya katakan DMF Dimana f dari kolom Z kurang dari nol.
+
+57
+00:04:16,500 --> 00:04:21,460
+Sekarang mari kita lihat sebelum kita benar-benar menjalankan ini apa yang harus terjadi di kolom Pemberitahuan Z.
+
+58
+00:04:21,750 --> 00:04:22,290
+Dimana itu.
+
+59
+00:04:22,320 --> 00:04:23,150
+Kurang dari nol.
+
+60
+00:04:23,160 --> 00:04:31,210
+Nah itu hanya terjadi di baris C jadi kolom Z seperti di Zelda dan kemudian baris C di kucing.
+
+61
+00:04:31,260 --> 00:04:33,260
+Ini adalah satu-satunya baris yang harus dikembalikan.
+
+62
+00:04:33,270 --> 00:04:35,720
+Tapi ingat, minta seluruh data dari belakang.
+
+63
+00:04:35,850 --> 00:04:40,110
+Jadi seharusnya mengembalikan baris C ini untuk kita.
+
+64
+00:04:40,110 --> 00:04:41,100
+Dan itu dia.
+
+65
+00:04:41,340 --> 00:04:42,590
+OK bagus.
+
+66
+00:04:42,600 --> 00:04:47,520
+Sekarang hal lain yang perlu diperhatikan di sini adalah ketika Anda melakukan perintah semacam ini, lanjutkan
+
+67
+00:04:47,520 --> 00:04:50,190
+dan kembali ke RW lebih besar dari nol.
+
+68
+00:04:50,880 --> 00:04:57,220
+Anda mendapatkan bingkai data sebagai respons dan itu berarti Anda dapat melanjutkan dan memanggil perintah dari bingkai data
+
+69
+00:04:57,230 --> 00:04:57,880
+ini.
+
+70
+00:04:58,050 --> 00:05:01,260
+Kemudian Anda bisa melakukan ini dalam satu langkah atau dua langkah.
+
+71
+00:05:01,320 --> 00:05:06,370
+Saya akan masuk dan mengatakan hasil DSF sama dengan ini dan kemudian lihat hasilnya.
+
+72
+00:05:06,420 --> 00:05:12,910
+DMF yang merupakan himpunan bagian dari bingkai data tanpa baris yang melihat di dalamnya dan itu berarti
+
+73
+00:05:13,030 --> 00:05:21,910
+saya dapat melanjutkan dan mengambil hasil dari ini seperti X dan di sini saya memiliki empat nilai XABD dan E berdasarkan kerangka data yang
+
+74
+00:05:21,910 --> 00:05:25,910
+dihasilkan ini yang tidak baris itu sudah melihatnya bukan Charlie.
+
+75
+00:05:26,380 --> 00:05:32,200
+Tapi alih-alih memisahkan ini menjadi dua langkah seperti meraih kolom X, saya bisa melakukan ini semua dalam
+
+76
+00:05:32,200 --> 00:05:33,030
+satu langkah.
+
+77
+00:05:33,130 --> 00:05:41,230
+Dan izinkan saya menunjukkan kepada Anda apa yang saya maksud dengan itu saya bisa melanjutkan dan mengatakan mengembalikan bingkai data di mana nilai
+
+78
+00:05:41,230 --> 00:05:43,780
+kolom W lebih besar dari nol.
+
+79
+00:05:43,780 --> 00:05:45,670
+Jadi kembalikan baris itu padaku.
+
+80
+00:05:45,670 --> 00:05:48,050
+Itu berarti semua baris dikurangi baris C.
+
+81
+00:05:48,340 --> 00:05:53,170
+Dan karena ini adalah kerangka data saya benar-benar dapat melanjutkan dan menumpuk perintah seperti
+
+82
+00:05:53,170 --> 00:05:57,530
+notasi braket di atasnya seperti mengembalikan kolom X di mana itu benar.
+
+83
+00:05:57,700 --> 00:06:04,330
+Dan sekarang saya mendapatkan hasil yang sama seperti yang saya lakukan di sini kecuali itu semua dilakukan dalam satu langkah dan ini adalah sesuatu
+
+84
+00:06:04,330 --> 00:06:06,570
+yang dapat mengintimidasi bagi pemula pada awalnya.
+
+85
+00:06:06,670 --> 00:06:09,380
+Jadi ada banyak tanda kurung dan banyak hal terjadi di sini.
+
+86
+00:06:09,580 --> 00:06:14,620
+Tetapi pada dasarnya ini bukan hanya membagi semuanya menjadi beberapa langkah
+
+87
+00:06:14,620 --> 00:06:17,480
+dan menempatkan semuanya menjadi satu langkah.
+
+88
+00:06:17,620 --> 00:06:24,100
+Dan juga karena ini adalah kerangka data saya dapat mengurung untuk beberapa kolom dengan mengirimkan daftar
+
+89
+00:06:24,100 --> 00:06:29,890
+seperti mengapa koma X dan kita dapat melihat kita mendapatkan hasil di sini.
+
+90
+00:06:29,920 --> 00:06:36,100
+Biarkan saya maju dan hancurkan garis ini sekali lagi untuk menunjukkan langkah-langkah yang kami ambil.
+
+91
+00:06:36,100 --> 00:06:41,090
+Pertama kita akan masuk dan mengatakan Boudia sama dengan.
+
+92
+00:06:41,680 --> 00:06:48,250
+Yah itu akan mengatakan seri bhool dan karena itu sedikit lebih akurat adalah kita berada di DFW lebih besar
+
+93
+00:06:48,250 --> 00:06:49,140
+dari nol.
+
+94
+00:06:49,150 --> 00:06:56,590
+Jadi jika saya mengatakan seri bhool saya mendapatkan seri boolean ini kembali maka apa yang
+
+95
+00:06:56,590 --> 00:07:04,010
+akan saya lakukan dan katakan adalah hasilnya sama dengan DSF dari seri bool itu.
+
+96
+00:07:04,510 --> 00:07:06,870
+Mari kita lanjutkan dan periksa hasilnya.
+
+97
+00:07:07,630 --> 00:07:15,690
+Dan seharusnya hanya di mana saja seri itu benar yang merupakan b dan e dan ada hasil saya
+
+98
+00:07:15,820 --> 00:07:18,690
+Itu seluruh bingkai data tanpa baris melihatnya.
+
+99
+00:07:18,760 --> 00:07:28,200
+Dan kemudian saya dapat melanjutkan dan menawarkan hasil yang memanggil daftar kolom sehingga kita dapat melanjutkan dan mengatakan mengapa koma X dan jika
+
+100
+00:07:28,840 --> 00:07:33,910
+kita ingin kita bisa benar-benar bahkan memisahkan memisahkan ini dan jadi satu langkah
+
+101
+00:07:34,360 --> 00:07:43,840
+lagi dengan mengatakan Mike panggilan untuk kolom melewati daftar itu dan kemudian mengatakan hasil panggilan Mike dan kami mendapatkan hal yang sama persis yang
+
+102
+00:07:43,840 --> 00:07:48,760
+kami lakukan di sini dalam satu baris seperti pada beberapa baris.
+
+103
+00:07:48,910 --> 00:07:53,840
+Itu berarti jika Anda pernah bingung pada sesuatu yang terlihat seperti satu ton kurung dan Pandurs lihat
+
+104
+00:07:54,070 --> 00:07:56,110
+apakah Anda dapat memecahnya menjadi beberapa langkah.
+
+105
+00:07:56,110 --> 00:08:00,640
+Jika itu lebih masuk akal bagi Anda sepanjang kursus, kami akan melakukan notasi jenis ini.
+
+106
+00:08:00,910 --> 00:08:02,200
+Semacam satu liner.
+
+107
+00:08:02,200 --> 00:08:06,100
+Dan saat Anda semakin terbiasa dengan panda, Anda akan semakin sering
+
+108
+00:08:06,100 --> 00:08:11,080
+menggunakan satu liner ini, tetapi jika Anda selalu bingung, jangan ragu untuk memecahnya menjadi beberapa langkah.
+
+109
+00:08:11,080 --> 00:08:15,970
+Satu-satunya kelemahan sejauh membawa beberapa langkah adalah bahwa Anda mengambil memori yang dengan
+
+110
+00:08:16,150 --> 00:08:18,130
+variabel yang Anda tetapkan.
+
+111
+00:08:18,220 --> 00:08:23,260
+Jadi saat Anda menjadi lebih baik dan lebih baik dari panda Anda ingin bergerak menuju abstraksi satu baris
+
+112
+00:08:23,260 --> 00:08:24,750
+sederhana dari semua perintah ini.
+
+113
+00:08:24,760 --> 00:08:30,370
+Baiklah, lanjutkan dan jeda video sekarang dan benar-benar pastikan Anda memahami bagaimana baris dalam 58.
+
+114
+00:08:30,370 --> 00:08:36,280
+Ini adalah hal yang sama persis seperti memisahkan menjadi beberapa baris.
+
+115
+00:08:36,310 --> 00:08:36,700
+Baiklah.
+
+116
+00:08:36,700 --> 00:08:38,230
+Mari kita pergi dan menjelajah dengan sangat cepat.
+
+117
+00:08:38,230 --> 00:08:42,490
+Konsep menggunakan berbagai kondisi seperti dua kondisi atau lebih.
+
+118
+00:08:42,580 --> 00:08:48,940
+Saat ini kami merasa nyaman dengan melakukan sesuatu seperti ini yang mengembalikan sebagian dari kerangka
+
+119
+00:08:48,940 --> 00:08:50,700
+data berdasarkan satu kondisi.
+
+120
+00:08:50,740 --> 00:08:56,320
+Tetapi bagaimana jika Anda menginginkan beberapa kondisi seperti di mana w lebih besar dari nol dan Y lebih besar
+
+121
+00:08:56,410 --> 00:08:57,170
+dari 1.
+
+122
+00:08:57,520 --> 00:09:06,910
+Nah yang bisa Anda lakukan adalah mencoba sesuatu seperti ini di dalam tanda kurung dalam satu kondisi dan kemudian
+
+123
+00:09:06,970 --> 00:09:10,210
+katakan dan lewati dalam kondisi lain.
+
+124
+00:09:10,210 --> 00:09:11,740
+Dan ini akan mengembalikan kesalahan.
+
+125
+00:09:11,970 --> 00:09:17,710
+Dan saya akan melakukan ini dengan sengaja untuk menjelaskan mengapa ada kesalahan yang terjadi di sini dan ini adalah
+
+126
+00:09:17,710 --> 00:09:23,410
+kesalahan umum bagi pemula untuk menempatkan ini dan di sini dan Anda akan mendapatkan kesalahan yang mengatakan sesuatu tentang
+
+127
+00:09:23,410 --> 00:09:24,370
+seri menjadi ambigu.
+
+128
+00:09:24,370 --> 00:09:30,520
+Kita gulir ke bawah di sini kita melihat ini nilai kebenaran dari suatu seri adalah ambigu.
+
+129
+00:09:30,520 --> 00:09:37,420
+Dan yang ingin dikatakan adalah bahwa operator dan normal Python tidak dapat benar-benar memperhitungkan
+
+130
+00:09:37,750 --> 00:09:43,960
+serangkaian nilai boolean dibandingkan dengan seri nilai boolean lainnya dan operator hanya
+
+131
+00:09:43,960 --> 00:09:47,680
+dapat memperhitungkan boolean tunggal pada satu waktu.
+
+132
+00:09:47,680 --> 00:09:54,790
+Jadi benar dan salah mengembalikan Benar benar dan benar mengembalikan benar dll.
+
+133
+00:09:55,090 --> 00:10:03,190
+Itu berarti ketika Anda melewati seluruh rangkaian nilai boolean seperti ini dan operator mulai menjadi
+
+134
+00:10:03,190 --> 00:10:04,250
+bingung.
+
+135
+00:10:04,390 --> 00:10:09,880
+Itu hanya dapat menangani satu contoh nilai boolean ini yang mengapa ketika Anda bekerja dengan panda
+
+136
+00:10:09,880 --> 00:10:15,230
+dan Anda menginginkan beberapa kondisi yang sebenarnya harus Anda gunakan di ampersand yang mana ini.
+
+137
+00:10:15,250 --> 00:10:20,360
+Dan itu akan menjadi shift 7 pada keyboard Anda untuk sebagian besar keyboard standar.
+
+138
+00:10:20,620 --> 00:10:25,660
+Dan perhatikan di sini bahwa saya melewati kondisi ini dalam tanda kurung untuk menunjukkan pemisahan yang jelas antara
+
+139
+00:10:25,660 --> 00:10:26,790
+masing-masing kondisi ini.
+
+140
+00:10:26,920 --> 00:10:31,070
+Dan kemudian jika saya menjalankan ini saya mendapatkan Row E di mana ini benar.
+
+141
+00:10:31,510 --> 00:10:32,840
+OK, mari kita pecahkan itu.
+
+142
+00:10:32,860 --> 00:10:39,430
+Terakhir cepat ketika Anda mencoba menggunakan beberapa kondisi, Anda tidak bisa menggunakan normal dan
+
+143
+00:10:39,490 --> 00:10:40,530
+operator Python.
+
+144
+00:10:40,960 --> 00:10:47,470
+Anda harus menggunakan ampersand dan kemudian Anda melewati beberapa kondisi dalam tanda kurung dan akhirnya memasukkannya ke dalam
+
+145
+00:10:47,470 --> 00:10:49,830
+tanda kurung untuk bingkai data Anda.
+
+146
+00:10:50,050 --> 00:10:57,130
+Jika Anda ingin melakukan operasi ATAU Anda bisa mengganti ini dengan operator pipa yang tepat di atas
+
+147
+00:10:57,180 --> 00:10:57,660
+Anda.
+
+148
+00:10:57,760 --> 00:11:04,110
+Biasanya untuk sebagian besar keyboard pada tombol Enter Anda, langsung saja di atasnya dan kemudian bergeser pada backslash itu.
+
+149
+00:11:04,240 --> 00:11:09,280
+Dan ini akan memberi Anda operator pipa dan itu akan menjadi pengganti atau karena jika Anda
+
+150
+00:11:09,280 --> 00:11:12,160
+mencoba menggunakan atau Anda akan mendapatkan kesalahan yang sama.
+
+151
+00:11:12,250 --> 00:11:18,160
+Jadi itu dengan atau jika saya mencobanya dengan Python normal atau lagi saya akan mendapatkan nilai kebenaran dari suatu seri
+
+152
+00:11:18,160 --> 00:11:18,910
+yang ambigu.
+
+153
+00:11:18,970 --> 00:11:24,380
+Dan itu karena Anda mendapatkan serangkaian nilai-nilai itu, bukan hanya satu atau dua nilai boolean.
+
+154
+00:11:24,450 --> 00:11:27,840
+OK, Anda dapat melanjutkan dan referensi catatan jika Anda ingin lebih banyak contoh ini.
+
+155
+00:11:27,940 --> 00:11:33,220
+Tetapi pada dasarnya jika Anda ingin beberapa kondisi lulus dalam setiap kondisi dalam tanda kurung
+
+156
+00:11:33,220 --> 00:11:41,650
+dan kemudian menggunakan ampersand atau operator pipa untuk tujuan atau mari kita lanjutkan sekarang dan geser gigi untuk berbicara tentang indeks dan sedikit lebih
+
+157
+00:11:41,650 --> 00:11:47,140
+detail tentang hal itu kita akan membahas sekarang mengatur ulang indeks atau mengaturnya ke sesuatu
+
+158
+00:11:47,170 --> 00:11:48,140
+yang lain.
+
+159
+00:11:48,160 --> 00:11:50,770
+Biarkan saya maju dan melihat kerangka data asli kami.
+
+160
+00:11:50,770 --> 00:11:54,610
+Saya ingin masuk dan membersihkan sel-sel ini di sini dengan hanya menjalankannya.
+
+161
+00:11:54,740 --> 00:11:56,820
+Dan mari kita lihat kerangka data kami.
+
+162
+00:11:56,860 --> 00:12:03,970
+Sekali lagi kita memiliki Rose aither e dalam kolom w hingga Z untuk mengatur ulang indeks kembali ke default
+
+163
+00:12:03,970 --> 00:12:09,070
+yang hanya indeks rentang atau 1 2 3 4 sampai ke baris ke-n.
+
+164
+00:12:09,210 --> 00:12:16,780
+Yang dapat Anda lakukan adalah memanggil metode reset indeks garis bawah dan ingat untuk menutup tanda kurung bahwa kita benar-benar
+
+165
+00:12:16,870 --> 00:12:18,380
+menjalankan metode itu.
+
+166
+00:12:18,900 --> 00:12:26,950
+Dan jika Anda memanggil pemberitahuan itu, Anda akan mendapatkan indeks reset ke kolom dan Anda akan mendapatkan indeks yang sebenarnya
+
+167
+00:12:27,010 --> 00:12:28,690
+kemudian menjadi numerik.
+
+168
+00:12:28,690 --> 00:12:32,320
+Dan itulah cara Anda dapat mengatur ulang indeks.
+
+169
+00:12:32,710 --> 00:12:37,530
+Sesuatu yang perlu dicatat di sini sama seperti banyak data lain dari operasi tersebut.
+
+170
+00:12:37,570 --> 00:12:42,010
+Ini tidak terjadi di tempat kecuali Anda menentukannya agar terjadi di tempat.
+
+171
+00:12:42,010 --> 00:12:47,860
+Jadi jika saya menelepon kembali T. F. Saya masih memiliki indeks label asli jika
+
+172
+00:12:47,860 --> 00:12:54,480
+Anda ingin ini benar-benar terjadi di tempat yang akan Anda lakukan adalah mengatakan di tempat yang sama dengan true dan lulus ke dalam indeks underscore reset.
+
+173
+00:12:54,520 --> 00:12:56,640
+Untuk saat ini kami akan terus maju dan tidak melakukannya.
+
+174
+00:12:56,650 --> 00:12:59,620
+Dengan begitu kami masih mempertahankan kerangka data asli kami.
+
+175
+00:12:59,650 --> 00:13:06,680
+Sekarang maju dan kosongkan ini lagi jika Anda hanya ingin mengatur ulang indeks ke nilai numerik.
+
+176
+00:13:06,790 --> 00:13:12,080
+Anda bisa menggunakan indeks Reesa itu dan indeks lama Anda akan menjadi kolom bingkai data Anda.
+
+177
+00:13:12,630 --> 00:13:13,140
+BAIK.
+
+178
+00:13:13,300 --> 00:13:19,060
+Mari kita lanjutkan dan tampilkan satu lagi contoh indeks baru seperti pengaturan indeks dan untuk
+
+179
+00:13:19,150 --> 00:13:25,500
+melakukan ini saya akan pergi ke depan dan membuat indeks baru yang disebut New i n d.
+
+180
+00:13:27,250 --> 00:13:32,910
+Dan saya akan menggunakan sedikit trik di sini yang akan saya jelaskan sebentar lagi.
+
+181
+00:13:33,040 --> 00:13:37,580
+Ini akan menjadi sekelompok singkatan negara dan saya akan mengatakan perpecahan pada string ini.
+
+182
+00:13:38,020 --> 00:13:44,050
+Dan ingat bahwa memisahkan string harus mengatakan metode umum untuk memisahkan ruang kosong.
+
+183
+00:13:44,230 --> 00:13:48,960
+Tapi ini cara cepat yang bagus untuk membuat daftar daripada harus mengetik setiap koma.
+
+184
+00:13:49,240 --> 00:13:54,850
+Jadi saya ingin maju dan mengatur daftar itu sama dengan saya yang baru.
+
+185
+00:13:54,850 --> 00:14:02,350
+Jadi saya memiliki nilai indeks baru saya di sini dan apa yang akan saya lakukan adalah meletakkan ini sebagai kolom dalam bingkai data saya.
+
+186
+00:14:03,160 --> 00:14:09,520
+Jadi saya akan pergi ke depan dan mengatakan DFA States sama dengan yang baru di saya.
+
+187
+00:14:09,640 --> 00:14:12,610
+Dan karena mereka menyebutkan cocok jadi ada lima item di sini.
+
+188
+00:14:12,700 --> 00:14:16,030
+Ini akan cocok dari 0 hingga 4 di sini pada keadaan bingkai.
+
+189
+00:14:16,060 --> 00:14:24,070
+Jadi jika saya memeriksa bingkai data saya, saya memiliki kolom baru ini disebut negara CA NY w o o RCO.
+
+190
+00:14:24,100 --> 00:14:29,000
+Sekarang kita tahu cara mengatur ulang indeks yang hanya melakukan reset metode indeks garis bawah.
+
+191
+00:14:29,170 --> 00:14:34,150
+Tetapi jika Anda memiliki kolom dalam bingkai data Anda bahwa Anda ingin menjadi indeks yang dapat
+
+192
+00:14:34,150 --> 00:14:37,950
+Anda teruskan dan katakan adalah mengatur indeks daripada mengatur ulang indeks.
+
+193
+00:14:38,110 --> 00:14:46,120
+Sebagai contoh saya dapat mengatakan DF dot menetapkan indeks garis bawah dan kemudian memasukkan nama kolom yang Anda ingin
+
+194
+00:14:46,120 --> 00:14:54,100
+menjadi indeks baru jadi nyatakan di sini dan jika saya bergeser masuk sekarang kolom menyatakan telah menjadi indeks.
+
+195
+00:14:54,100 --> 00:15:00,320
+Ingatlah kecuali Anda menyimpan informasi indeks ini, maka timpa indeks lama Anda dan Anda tidak akan
+
+196
+00:15:00,370 --> 00:15:03,630
+benar-benar dapat menyimpan informasi ini sebagai kolom baru.
+
+197
+00:15:03,760 --> 00:15:07,810
+Tidak seperti indeks reset yang memungkinkan Anda untuk memiliki kolom baru itu.
+
+198
+00:15:07,810 --> 00:15:11,280
+Jadi itu mengatur indeks dibandingkan mengatur ulang indeks.
+
+199
+00:15:11,340 --> 00:15:14,750
+Sekali lagi jika saya melihat kerangka data saya di sini, ini tidak ada.
+
+200
+00:15:14,830 --> 00:15:16,190
+Saya perlu menambahkan argumen.
+
+201
+00:15:16,210 --> 00:15:18,650
+Jika saya bergeser masuk di sini di tempat.
+
+202
+00:15:18,680 --> 00:15:20,140
+Sama dengan benar.
+
+203
+00:15:20,810 --> 00:15:28,820
+Biarkan saya maju dan lakukan tinjauan singkat tentang apa yang baru saja kita bahas sebelum kita menuju ke bagian 3.
+
+204
+00:15:28,820 --> 00:15:34,180
+Ok kami belajar tentang pemilihan bersyarat yang sangat mirip dengan operasi PI.
+
+205
+00:15:34,180 --> 00:15:39,550
+Pada dasarnya Anda mendapatkan bingkai data dari nilai boolean dan jika Anda meneruskan seluruh bingkai data dari nilai boolean Anda akan
+
+206
+00:15:39,880 --> 00:15:44,830
+mendapatkan nilai di mana itu benar dan Anda akan mendapatkan n atau tidak ada nilai di mana itu salah.
+
+207
+00:15:44,830 --> 00:15:52,090
+Jika Anda meneruskan serangkaian nilai boolean seperti kolom dengan operator perbandingan, Anda hanya akan mendapatkan baris-baris
+
+208
+00:15:52,090 --> 00:15:57,850
+bingkai data di mana yang serius benar dan Anda dapat memecahnya menjadi
+
+209
+00:15:57,910 --> 00:16:00,350
+beberapa langkah jika Anda mau.
+
+210
+00:16:00,360 --> 00:16:03,160
+Sekali lagi kedua sel ini mungkin yang paling penting untuk dipahami.
+
+211
+00:16:03,160 --> 00:16:07,810
+Keluar dari kuliah ini jika Anda mengerti ini maka Anda mengerti bagaimana melakukan seleksi
+
+212
+00:16:07,810 --> 00:16:08,970
+bersyarat dalam pantless.
+
+213
+00:16:09,190 --> 00:16:15,490
+Kemudian menggulir ke bawah jika Anda ingin melakukan beberapa pemilihan bersyarat Anda bisa melakukan ampersand atau
+
+214
+00:16:15,490 --> 00:16:19,990
+operator pipa tidak dapat menggunakan builtin dan atau operator Python.
+
+215
+00:16:20,170 --> 00:16:27,460
+Karena nilai ambigu dalam seri Kebenaran dan ingatlah untuk menggunakan tanda kurung untuk memisahkan
+
+216
+00:16:27,460 --> 00:16:30,040
+setiap pernyataan pemilihan bersyarat.
+
+217
+00:16:30,040 --> 00:16:31,300
+Lalu akhirnya kita sudah reset.
+
+218
+00:16:31,330 --> 00:16:38,650
+Indeks reset indeks hanya akan mengatur ulang indeks Anda ke indeks numerik dan mengambil indeks lama Anda dan mengaturnya
+
+219
+00:16:38,650 --> 00:16:45,670
+sebagai kolom baru yang disebut indeks dan kemudian Anda dapat mengatur indeks baru alih-alih mengatur ulang indeks berdasarkan
+
+220
+00:16:45,970 --> 00:16:49,910
+kolom saat ini hanya dengan mengatakan Set indeks garis bawah.
+
+221
+00:16:50,170 --> 00:16:53,090
+Dan kedua metode ini tidak ada secara default.
+
+222
+00:16:53,140 --> 00:16:55,560
+Jadi pastikan untuk menetapkan ECOs di tempat yang benar.
+
+223
+00:16:55,690 --> 00:16:57,970
+Jika Anda ingin perubahan menjadi permanen.
+
+224
+00:16:58,030 --> 00:17:00,550
+Baiklah itu saja untuk kuliah ini.
+
+225
+00:17:00,550 --> 00:17:01,350
+Terimakasih semuanya.
+
+226
+00:17:01,390 --> 00:17:04,800
+Saya akan lihat di kuliah berikutnya atau kita akan membahas indeks yang lebih tinggi.
+
+227
+00:17:04,960 --> 00:17:08,630
+Lagi-lagi semua catatan ini hanya ada di buku catatan yang disebut Data frames.
+
+228
+00:17:08,650 --> 00:17:10,210
+Terima kasih dan saya akan melihat apakah kuliah berikutnya

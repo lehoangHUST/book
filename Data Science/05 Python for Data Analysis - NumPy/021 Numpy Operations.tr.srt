@@ -1,0 +1,403 @@
+1
+00:00:06,780 --> 00:00:11,700
+Herkese merhaba ve PI operasyon dersine hoş geldiniz ve bu ders size
+
+2
+00:00:11,700 --> 00:00:14,520
+bir hakem dizisinde temel işlemler reformunu göstereceğim.
+
+3
+00:00:14,640 --> 00:00:18,720
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+4
+00:00:18,720 --> 00:00:21,090
+Tamam, işte Jüpiter not defterindeyiz.
+
+5
+00:00:21,210 --> 00:00:27,180
+Devam edelim ve dizi operasyonları dizisi ile skaler işlemlerle dizi tartışacağız ve
+
+6
+00:00:27,180 --> 00:00:33,360
+daha sonra bazı evrensel dizi işlevleri ve bunların daha fazlasını nasıl bulabileceğinizden başlayıp
+
+7
+00:00:33,470 --> 00:00:36,400
+önemli pi'yi NPE olarak söyleyerek başlayacağız.
+
+8
+00:00:36,810 --> 00:00:44,370
+Sonra da devam edip bir dizi yapacağım. P. sıfır virgülden devam edelim 11.
+
+9
+00:00:44,370 --> 00:00:47,600
+düzenleyin ve biz sadece devam edin ve
+
+10
+00:00:47,640 --> 00:00:53,090
+Bu şekilde 0 - 10 arası rakamlar alıyoruz, böylece 0 - 10 arasında 11 basamak elde ediyoruz.
+
+11
+00:00:53,460 --> 00:00:53,910
+Tamam.
+
+12
+00:00:53,910 --> 00:00:59,460
+Yalnızca Python'dan kendisine alıştığınız basit aritmetik işaretleri kullanarak dizi
+
+13
+00:00:59,460 --> 00:01:01,600
+işlemleriyle dizi kolayca gerçekleştirebilirsiniz.
+
+14
+00:01:02,070 --> 00:01:08,400
+Örneğin elemanlarda elemanlardan iki dizi eklemek isterseniz, sadece array
+
+15
+00:01:08,400 --> 00:01:10,300
+artı dizisini söylersiniz.
+
+16
+00:01:10,320 --> 00:01:12,140
+Şimdi iki diziyi birlikte ekleyin.
+
+17
+00:01:12,180 --> 00:01:14,450
+Bu durumda kendime bir dizi ekliyorum.
+
+18
+00:01:14,590 --> 00:01:18,370
+Aslında her sayı iki katına çıktı.
+
+19
+00:01:18,840 --> 00:01:25,500
+Çıkarma veya çarpma için aynı şeyi yapabilirim.
+
+20
+00:01:25,500 --> 00:01:31,770
+Ben de ölçeklendiriciler sadece tek bir sayı anlamına gelir ve uyuşturucu gitmiş
+
+21
+00:01:31,770 --> 00:01:37,800
+demektir böylece skaler işlemleri ile dizi gerçekleştirebilirim temelde dizideki her elemana
+
+22
+00:01:37,800 --> 00:01:43,960
+bu sayı yayınlar, böylece işlem bir element temel anlamı Eğer istersem.
+
+23
+00:01:44,010 --> 00:01:45,140
+İşte benim dizim.
+
+24
+00:01:45,240 --> 00:01:48,270
+Dizideki her öğeye yüz ekleyin.
+
+25
+00:01:48,270 --> 00:01:50,590
+Artı ve daha sonra skaler diyebilirim.
+
+26
+00:01:50,820 --> 00:01:53,620
+Ve bu, dizideki her elemanı 100 katacaktı.
+
+27
+00:01:53,620 --> 00:01:55,680
+Ve bu aynı zamanda çarpım bölme
+
+28
+00:01:58,230 --> 00:01:59,910
+çıkarma işlemi için de geçerlidir.
+
+29
+00:01:59,910 --> 00:02:04,820
+İstersem eksi 100 demek için aradaki her atomdan 100 çıkarmak isterdim.
+
+30
+00:02:05,130 --> 00:02:05,760
+Tamam.
+
+31
+00:02:05,760 --> 00:02:11,940
+Yani, bunlar dizi işlemlerinde diziyle veya skaler işlemlerle dizi ile gerçekleştirebileceğiniz
+
+32
+00:02:11,940 --> 00:02:13,800
+temel aritmetik işlemlerdir.
+
+33
+00:02:13,950 --> 00:02:20,510
+Sana göstermek istediğim şey, bir sürü NUMP yüksekliğinin bazı matematiksel işlemlerde hata çıkarmamak
+
+34
+00:02:20,580 --> 00:02:22,940
+yerine yalnızca bir uyarı yayınlayacağıdır.
+
+35
+00:02:23,220 --> 00:02:31,250
+Örneğin, 1'i Python'da sıfıra bölünmüş olarak söylemeye çalışsam, bunun gerçek bir hata, sıfıra bölünemeyeceği için
+
+36
+00:02:31,250 --> 00:02:35,290
+mantıklı olan sıfır bölme hatasına sahip olur.
+
+37
+00:02:35,340 --> 00:02:38,400
+Ancak PI size aynı hatayı vermez.
+
+38
+00:02:38,490 --> 00:02:43,860
+Dolayısıyla, Array'a bölünmüş bir oran söylemeye çalışırsam.
+
+39
+00:02:43,890 --> 00:02:46,200
+İlk elemanın sıfır olduğuna dikkat edin.
+
+40
+00:02:46,230 --> 00:02:50,240
+Sıfırın sıfıra bölünmüş olduğunu söylemeye çalışacağım, bu da anlam ifade etmiyor.
+
+41
+00:02:50,250 --> 00:02:53,570
+Ancak hiçbiri pi uyarı vermez.
+
+42
+00:02:53,570 --> 00:02:58,580
+Burada gerçeğin karşılığı olan geçersiz değer diyecek ve size sadece bir boşluk verecektir.
+
+43
+00:02:58,620 --> 00:03:05,100
+Sıfır sıfıra bölmeyi denerseniz, herşey sıfırdır; çünkü 1 bölü 1, 1 2 bölü
+
+44
+00:03:05,100 --> 00:03:06,360
+2, 1'dir.
+
+45
+00:03:06,390 --> 00:03:07,710
+Vb. vb. Ancak ilklerinde sıfırlar bölünür ve size bir isim verir ya da hiçbir nesne geri verilmemiştir.
+
+46
+00:03:07,710 --> 00:03:14,170
+Aslında, sizin için bir hata yapmadığımız anlamına gelir, burada hala ayrımı
+
+47
+00:03:14,250 --> 00:03:19,170
+not etmek için önemli olan bir çıktı elde edersiniz.
+
+48
+00:03:19,380 --> 00:03:20,840
+Yani kodunuzda bir çeşit işlem varsa, aslında bir hata almazsınız.
+
+49
+00:03:20,850 --> 00:03:25,310
+Kod çalışmaya devam edecek ve belki de başka bir
+
+50
+00:03:25,350 --> 00:03:30,900
+rakamı sıfıra bölen bir işlem yapmaya çalışırsanız, yalnızca bir uyarı alacaktır.
+
+51
+00:03:30,900 --> 00:03:32,980
+Örneğin 1, Vajda sıfır yerine 0 yerine 0'a bölünür.
+
+52
+00:03:32,990 --> 00:03:36,720
+Ayrıca bir uyarı alırsınız.
+
+53
+00:03:36,720 --> 00:03:38,190
+Ancak bu durumda Alexa'nın boşluk yerine sonsuzluk gösterisi.
+
+54
+00:03:38,400 --> 00:03:41,880
+Böylece yine sıfır bölünme elde edersiniz ve karşı karşıya kalırsınız ve burada uyarı uyarısı yaparsınız.
+
+55
+00:03:42,150 --> 00:03:45,930
+Ancak yine de kodu yürütür ve sıfıra bölünmüş olarak sonsuzluğu belirtmek için yeterli olur.
+
+56
+00:03:46,050 --> 00:03:52,170
+Bu kadar çok ilk unsur var.
+
+57
+00:03:52,440 --> 00:03:55,340
+Tamam.
+
+58
+00:03:55,350 --> 00:03:55,800
+Bu, bölme
+
+59
+00:03:55,800 --> 00:04:00,270
+ile çalışırken aklınızda bulundurmanız gereken bir şeydir ve bir sayı içeren diziler 0 rakamlarıdır ve ayrıca üslü diziler de uygulayabileceğiniz hızlı bir nottur.
+
+60
+00:04:00,270 --> 00:04:06,760
+Sadece Asterix Asterix'i söylüyorum, tıpkı Python'a sahip olduğunuz gibi, sonra da skalar veya dizi biri olacaktı.
+
+61
+00:04:06,780 --> 00:04:12,510
+Yani bu ikisinin gücüne yönelik dizidir.
+
+62
+00:04:12,660 --> 00:04:15,210
+Böylece herşey dizide kare haline getirilmiştir Nel,
+
+63
+00:04:15,270 --> 00:04:21,870
+evrensel dizi işlevini tartışır numpad, esas olarak yalnızca matematiksel işlemler olan bir çok evrensel dizi işlevi ile gelir.
+
+64
+00:04:21,870 --> 00:04:26,220
+İşlemi gerçekleştirmek ve tüm dizide yayın yapmak için kullanabilirsiniz.
+
+65
+00:04:26,220 --> 00:04:30,830
+Hadi devam edelim ve bazı ortak şeyleri gösterelim.
+
+66
+00:04:30,840 --> 00:04:33,390
+Örneğin, dizideki her öğenin karekökünü
+
+67
+00:04:33,450 --> 00:04:39,060
+almak istiyorsan, sadece P'yi söyleyebilirsin ve sonra dizinin kendisine geçebilirsin.
+
+68
+00:04:39,100 --> 00:04:42,690
+Ve bu dizideki her şeyin karekökünü alacaktır.
+
+69
+00:04:42,930 --> 00:04:46,550
+Benzer şekilde üstel hesaplamak için, XP'yi
+
+70
+00:04:46,560 --> 00:04:55,830
+ve dizide ya da maksimumda ya Max'ı ya da Max'i söyleyip dizide geçebileceğini söyleyebilirsiniz.
+
+71
+00:04:55,830 --> 00:05:01,010
+Onların ilk dersinde daha önce
+
+72
+00:05:01,230 --> 00:05:06,120
+gördüğümüz metodu çağırmanın aynısı pyros.
+
+73
+00:05:06,120 --> 00:05:07,750
+Metrik fonksiyonları böyle bir zamana
+
+74
+00:05:07,770 --> 00:05:15,560
+sahip olan Neutrik bile yapabilirsiniz ve bu temel olarak her elemanı sinüs haline getirecek ve ortak işaret olacaktır ve ayrıca logaritmik seçenekler de vardır.
+
+75
+00:05:15,570 --> 00:05:19,710
+O günlüğü söyleyebilir ve eğer bir şey işe yaramazsa sıfır
+
+76
+00:05:19,710 --> 00:05:25,380
+günlüğü teknik olarak negatif sonsuzluğa sahip olursanız, aslında bir çalışma zamanı uyarısı alırsınız.
+
+77
+00:05:25,380 --> 00:05:28,520
+Sıfır olarak bölünür.
+
+78
+00:05:28,530 --> 00:05:29,590
+Ancak size negatif sonsuzluk verecektir cevabı.
+
+79
+00:05:29,730 --> 00:05:32,610
+Tüm bu evrensel dizi işlevlerinin veya referansların nerede bulunabileceğini merak ediyorsanız,
+
+80
+00:05:32,610 --> 00:05:36,870
+devam edin ve dizüstü bilgisayarı kontrol edin ve evrensel dizi işlevleri için orada bir bağlantıya sahip olabilirsiniz.
+
+81
+00:05:36,870 --> 00:05:41,550
+Bu gibi görünen bağlantıyı sizi alacaktır.
+
+82
+00:05:41,840 --> 00:05:44,540
+Bu, evrensel işlevler için Empire baskın dokümantasyonudur ya da func.
+
+83
+00:05:44,550 --> 00:05:50,340
+Bu sayfanın alt kısmına doğru ilerlerseniz, bu ders bu dersin not defterinde yer alır.
+
+84
+00:05:50,610 --> 00:05:55,260
+Şimdi PI operasyonları.
+
+85
+00:05:55,620 --> 00:05:57,090
+Sizin için elinizde olan tüm evrensel işlevlerin bir listesini göreceksiniz.
+
+86
+00:05:57,090 --> 00:06:00,690
+Böylece, basit matematik işlemlerine ek olarak mutlak kalan çıkarma ekleyebilirsiniz. Lague trigonometrik fonksiyonları ve daha
+
+87
+00:06:00,900 --> 00:06:07,560
+sonra bazı daha gelişmiş fonksiyonlar.
+
+88
+00:06:08,040 --> 00:06:10,320
+Bu sadece en iyi minimum fonksiyonların yüzen fonksiyonları karşılaştırma işlevi. pastaların zaten yerleşik olup olmadığını görmelisiniz.
+
+89
+00:06:10,330 --> 00:06:14,860
+Çok basit veya yaygın bir matematiksel işlev ise, muhtemelen bu sayfayı önce ziyaret
+
+90
+00:06:15,270 --> 00:06:20,730
+etmeliyiz ve o belirli matematik işlemi ele almak için kendi işlevinizi oluşturmaya başlamadan önce bazı
+
+91
+00:06:20,730 --> 00:06:26,280
+Dizinizde oynamaya çalışıyordunuz.
+
+92
+00:06:26,280 --> 00:06:27,320
+Kurs boyunca çok basit olanlar da
+
+93
+00:06:27,330 --> 00:06:29,070
+var ve dersin geri kalanında onlara rastladığımız gibi size hatırlatacak.
+
+94
+00:06:29,370 --> 00:06:34,350
+Tamam, bu aslında tüm dizilerdeki temel işlemler kadar var.
+
+95
+00:06:34,410 --> 00:06:35,830
+Basit bir aritmetiği, bir dizide irrate bazında veya bir dizi ve skalar bazında kullanabilirsiniz.
+
+96
+00:06:36,090 --> 00:06:39,840
+Dikkat etmeniz gereken tek şey, 0'a sahipseniz ve bölümlü diziler kullanıyorsanız.
+
+97
+00:06:40,080 --> 00:06:46,650
+Daha sonra bu dersin ikinci kısmı, onları bulduğu yerde evrensel bir dizi işlevleri kapsamıştır.
+
+98
+00:06:46,980 --> 00:06:51,230
+En yaygın matematiksel işlemlerin tamamıyla onlara OK tarafından yapıldığını unutmayın.
+
+99
+00:06:51,390 --> 00:06:55,990
+Herkese teşekkürler, bir sonraki derside görüşürüz.
+
+100
+00:06:56,040 --> 00:07:01,780
+&nbsp;
+
+101
+00:07:01,980 --> 00:07:04,020
+&nbsp;

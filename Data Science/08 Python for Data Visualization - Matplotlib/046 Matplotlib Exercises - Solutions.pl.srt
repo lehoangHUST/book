@@ -1,0 +1,515 @@
+1
+00:00:05,010 --> 00:00:10,150
+Witam wszystkich i zapraszam na mapę oraz ćwiczenia ćwiczeń na żywo wykłady w tym wykładzie.
+
+2
+00:00:10,170 --> 00:00:13,950
+Przeanalizujemy rozwiązania dotyczące ćwiczeń bez map.
+
+3
+00:00:14,040 --> 00:00:16,620
+Chodźmy do skoku, żeby zacząć.
+
+4
+00:00:16,620 --> 00:00:20,640
+W porządku, tutaj jestem w zeszycie na większość ćwiczeń z wargami.
+
+5
+00:00:20,820 --> 00:00:22,840
+Przejdźmy dalej i wskoczmy od razu do środka.
+
+6
+00:00:22,840 --> 00:00:25,680
+Wyjdziemy i uruchomimy tę pierwszą komórkę, aby uzyskać dane.
+
+7
+00:00:26,100 --> 00:00:38,130
+I chodźmy na importowaną mapę, żyliśmy na wysokiej działce jako Piazzi i ustawiliśmy mapę w formie inline.
+
+8
+00:00:38,130 --> 00:00:42,220
+Teraz jest jeszcze jedno pytanie, którego używa Kamandi, jeśli nie jest to notatnik Jowisza.
+
+9
+00:00:42,390 --> 00:00:47,810
+I jako przypomnienie, że byłyby to zęby Piel, które pokazują się na końcu wszystkich poleceń kreślenia.
+
+10
+00:00:47,850 --> 00:00:49,960
+Przejdźmy do rodzaju ćwiczeń jeden.
+
+11
+00:00:50,150 --> 00:00:54,580
+Chcesz utworzyć obiekt figurki o nazwie fig, używając tej wielkości.
+
+12
+00:00:54,690 --> 00:00:55,200
+W porządku.
+
+13
+00:00:55,200 --> 00:01:01,370
+Jest to po prostu obiektowa metoda korzystania z biblioteki map lub mówimy, że fig jest kontynuacją
+
+14
+00:01:01,410 --> 00:01:02,500
+rysunku T-Dog.
+
+15
+00:01:02,910 --> 00:01:07,940
+A następnie chcemy użyć dodania osi podkreślenia, aby dodać zestaw osi do tej figury.
+
+16
+00:01:08,460 --> 00:01:16,430
+I mam zamiar wejść i powiedzieć, że x jest równy kropce rysowania, dodaj topory podkreślenia.
+
+17
+00:01:16,510 --> 00:01:20,560
+I rzeczywiście otrzymaliśmy pozycję, której chcieliśmy, 0 0 1 1.
+
+18
+00:01:20,760 --> 00:01:27,400
+A potem w końcu chciałem wykreślić x przyjrzeć się temu i uruchomić to.
+
+19
+00:01:27,450 --> 00:01:32,610
+OK, wygląda na to, że mamy dobry mecz i chcemy, aby etykiety i tytuły pasowały poniżej.
+
+20
+00:01:32,610 --> 00:01:39,690
+Jeśli więc pójdziemy dalej i ustawimy to, chcemy powiedzieć,
+
+21
+00:01:42,980 --> 00:01:52,920
+że ustawiamy X jako X, a potem x x x ustawiamy Y na Y.
+
+22
+00:01:52,950 --> 00:01:59,140
+Chcemy również ustawić tytuł i powinien to być po prostu prosty tytuł.
+
+23
+00:01:59,220 --> 00:01:59,790
+W porządku.
+
+24
+00:02:00,210 --> 00:02:01,550
+Więc co tu robimy?
+
+25
+00:02:01,560 --> 00:02:07,710
+Posunęliśmy się naprzód i stworzyliśmy obiekt liczbowy, który dodał zestaw osi, na którym został narysowany obiekt figury,
+
+26
+00:02:07,710 --> 00:02:11,450
+a następnie ustawiono etykietę X na etykiecie y oraz tytuł.
+
+27
+00:02:11,490 --> 00:02:16,320
+Przejdźmy dalej i przejdźmy do ćwiczenia 2, które jest bardzo podobnym ćwiczeniem.
+
+28
+00:02:16,320 --> 00:02:22,340
+Zobaczymy okrąg figowy, aby obrać tę figurę, aby utworzyć obiekt figurki.
+
+29
+00:02:22,350 --> 00:02:31,320
+A następnie chcemy umieścić na nim dwie osie x 1 i x, aby przejść i powiedzieć x 1 i x 2, a ja powiem,
+
+30
+00:02:31,320 --> 00:02:33,970
+że myślę o dodaniu osi podkreślenia.
+
+31
+00:02:34,020 --> 00:02:36,700
+Pierwszy z nich znajduje się pod adresem 0 0 1 1.
+
+32
+00:02:36,720 --> 00:02:38,580
+To większy.
+
+33
+00:02:38,580 --> 00:02:50,400
+A następnie drugi znajduje się w punkcie zero dwa punkty pięć punktów dwa punkt dwa.
+
+34
+00:02:50,700 --> 00:02:55,060
+Będzie to działało i wygląda na to, że otrzymujemy tutaj ten sam wynik.
+
+35
+00:02:55,130 --> 00:02:55,910
+Świetny.
+
+36
+00:02:56,100 --> 00:03:02,680
+Kontynuacja ćwiczenia, którą chcieliśmy wykonać, to narysować zarówno x, jak i y na obu osiach.
+
+37
+00:03:03,030 --> 00:03:06,100
+Dodajmy to do komórki.
+
+38
+00:03:06,150 --> 00:03:14,810
+Więc powiem x 1 działka x y i x, aby wykreślić x y.
+
+39
+00:03:15,450 --> 00:03:18,840
+Tutaj mamy tę samą fabułę.
+
+40
+00:03:18,850 --> 00:03:20,280
+Chciałeś, żeby to było czerwone.
+
+41
+00:03:20,310 --> 00:03:24,000
+Mogłeś właśnie dodać argumenty koloru na czerwono, które właśnie
+
+42
+00:03:27,710 --> 00:03:33,870
+przekazałeś, a teraz będzie czerwone, aby pasowało do tego niższego wykresu, a następnie, jeśli chcesz,
+
+43
+00:03:33,870 --> 00:03:37,380
+możesz również dodać etykiety X i y.
+
+44
+00:03:38,070 --> 00:03:43,650
+Przejdzie do ćwiczenia 3, które stworzyło poniższy wykres, dodając dostęp do obiektu
+
+45
+00:03:43,650 --> 00:03:47,130
+figurowego w tych konkretnych punktach canvas.
+
+46
+00:03:47,130 --> 00:03:47,760
+W porządku.
+
+47
+00:03:47,910 --> 00:03:51,270
+Więc nie tyle wskazówek na ćwiczeniach 3.
+
+48
+00:03:51,300 --> 00:03:54,050
+Pierwszą rzeczą, którą chcę zrobić, to stworzyć obiekt figurowy.
+
+49
+00:03:54,060 --> 00:04:01,710
+Zamierzam powiedzieć, że figa jest równa skórki T-Dogowej figury, a następnie następną rzeczą, którą chcę zrobić, to
+
+50
+00:04:01,710 --> 00:04:12,150
+zacząć dodawać zestawy osi i kiedy powiedzieć x jest równe kropce rysowania, dodawać osie, a my je umieścimy w tych samych lokalizacjach, które
+
+51
+00:04:12,150 --> 00:04:13,340
+zostały zamówione.
+
+52
+00:04:13,690 --> 00:04:23,790
+Powiem, że x 2 jest równe kropkom figowym i osiom podkreślenia lub ustawimy je na punkt pięć
+
+53
+00:04:23,790 --> 00:04:26,850
+punktów cztery punkty cztery.
+
+54
+00:04:26,850 --> 00:04:31,530
+W porządku Rennie, który wygląda tak, jakbyśmy mieli ten sam wynik, a potem nadszedł
+
+55
+00:04:31,590 --> 00:04:35,520
+następny, chcieliśmy użyć tablic x yiz z, aby odtworzyć poniższy wykres.
+
+56
+00:04:35,910 --> 00:04:43,650
+Przejdźmy dalej i sprawdźmy poniższy dział, aby je skomentować i przybliżyć to nieco, abyśmy mogli je
+
+57
+00:04:43,650 --> 00:04:44,440
+zobaczyć.
+
+58
+00:04:44,580 --> 00:04:46,320
+Odsuń trochę.
+
+59
+00:04:47,040 --> 00:04:47,710
+DOBRZE.
+
+60
+00:04:48,120 --> 00:04:54,310
+Wygląda więc na to, że w zewnętrznym Plaut mamy kilka rzeczy, które mamy w porównaniu z Z.
+
+61
+00:04:54,330 --> 00:04:56,180
+Wejdźmy i dodajmy to.
+
+62
+00:04:56,190 --> 00:05:04,260
+Tak więc, na dużym spisku, który jest X w naszym przypadku, będzie on działał na x w stosunku do Z i właściwie zamierzam ustawić
+
+63
+00:05:04,260 --> 00:05:05,400
+etykiety na to.
+
+64
+00:05:05,400 --> 00:05:21,080
+Tak więc, etykieta X ustawia zestaw etykiet X na X, a X to zestaw y etykieta ustawiona na Z.
+
+65
+00:05:21,090 --> 00:05:29,100
+Więc to jest duża fabuła, a teraz będzie mówić o wątku z insertami.
+
+66
+00:05:29,100 --> 00:05:34,360
+Więc jeśli przyjrzymy się działce insertów, to będzie to X przez Y.
+
+67
+00:05:34,380 --> 00:05:37,330
+Tutaj wygląda na to, że tytuł to zoom.
+
+68
+00:05:37,470 --> 00:05:51,660
+Więc mam zamiar napisać X spisek xy, a potem ustawię tytuł, który ma być powiększony. Zamierzam również
+
+69
+00:05:51,660 --> 00:06:01,320
+ustawić etykiety na X, a następnie Y na Y .
+
+70
+00:06:01,320 --> 00:06:05,310
+Wiesz, że nie jesteśmy jeszcze całkiem skończeni, chodźmy i zobaczmy, jaką mamy różnicę.
+
+71
+00:06:05,970 --> 00:06:10,110
+Zauważ teraz, że popełniłem błąd, który powinien znajdować się na wkładce.
+
+72
+00:06:10,110 --> 00:06:13,450
+Powinno to być x 2 dla wszystkich z nich.
+
+73
+00:06:13,450 --> 00:06:15,230
+Teraz przejdźmy dalej i uruchom to.
+
+74
+00:06:16,140 --> 00:06:19,050
+A to wygląda dobrze, ale wciąż jest tu jakaś różnica.
+
+75
+00:06:19,050 --> 00:06:26,620
+Informacja na temat zbliżenia, w którym limity X i Y zmieniają się z 20 na 22, a y z 30 na 50.
+
+76
+00:06:26,640 --> 00:06:28,440
+Tutaj używamy tylko domyślnych limitów.
+
+77
+00:06:28,440 --> 00:06:31,440
+Wejdźmy i zmieńmy te we wkładce.
+
+78
+00:06:31,620 --> 00:06:34,520
+To będzie zestaw X 2
+
+79
+00:06:37,080 --> 00:06:42,670
+dot X slim i chcemy przejść od 20 do 22.
+
+80
+00:06:42,670 --> 00:06:45,820
+Dodajmy to w 20 do 22.
+
+81
+00:06:45,930 --> 00:06:53,910
+I mam zamiar ustawić go na czas i jeśli przewiniemy z powrotem w dół widzimy, że whilom przeszedł od
+
+82
+00:06:53,910 --> 00:06:55,500
+30 do 50.
+
+83
+00:06:55,650 --> 00:06:58,480
+Więc powiemy 30 przecinek 50 w najwolniejszym.
+
+84
+00:06:58,590 --> 00:06:59,680
+Uruchom to.
+
+85
+00:06:59,730 --> 00:07:05,210
+A teraz widzimy, że dopasowujemy się całkowicie zarówno do wstawki, jak i zewnętrznego wątku.
+
+86
+00:07:05,280 --> 00:07:08,130
+W tej chwili jesteśmy na ćwiczeniach cztery.
+
+87
+00:07:08,280 --> 00:07:13,580
+Przejdźmy dalej i używajmy wątków PELTOLA, aby odtworzyć poniższy wykres.
+
+88
+00:07:13,950 --> 00:07:22,870
+Zamierzam powiedzieć, że fig come axes równa się peel t myśli subplots i chcę jedną regułę przez dwie kolumny.
+
+89
+00:07:22,890 --> 00:07:28,080
+Wejdźmy i uruchommy to i wygląda na to, że otrzymujemy to wyjście poprawnie.
+
+90
+00:07:28,080 --> 00:07:33,780
+Teraz chcemy wykreślić x i y oraz x przeciw Z na osiach i chcę, abyście grali wokół linii
+
+91
+00:07:33,780 --> 00:07:34,690
+i stylu.
+
+92
+00:07:34,710 --> 00:07:37,820
+Zobaczmy, czy możemy je poprawnie dopasować.
+
+93
+00:07:37,860 --> 00:07:43,930
+Zamierzam iść dalej i spiskować tutaj.
+
+94
+00:07:44,070 --> 00:07:54,600
+Pozwól mi to opróżnić i idźmy do przodu i powiedzmy 0 osi przy użyciu subplots.
+
+95
+00:07:54,600 --> 00:08:00,270
+Teraz będziemy w stanie powtórzyć lub wywołać tę sekwencję szeregu osi.
+
+96
+00:08:00,510 --> 00:08:06,840
+Tak więc mówię, że osie są zerowe, i wygląda na to, że
+
+97
+00:08:06,900 --> 00:08:17,010
+zamierzam iść do przodu i pomieszać z tym powiedzmy X Y i na osiach jeden wejdzie i wydrukuje x z.
+
+98
+00:08:17,730 --> 00:08:24,000
+Wiesz, że ustawi te kolory, abyśmy zobaczyli kolor drugiego, który będzie czerwony i będzie
+
+99
+00:08:24,000 --> 00:08:27,080
+wyglądał jak linia z małym znacznikiem.
+
+100
+00:08:27,660 --> 00:08:36,870
+A potem ten pierwszy wygląda jak wejdź i ustaw kolory jako niebieskie.
+
+101
+00:08:36,870 --> 00:08:42,010
+Wygląda również na to, że styl linii jest linią przerywaną.
+
+102
+00:08:42,080 --> 00:08:43,710
+Idź i dodaj to.
+
+103
+00:08:43,740 --> 00:08:50,130
+Wygląda też na to, że jest to trochę grubsza podeszwa, ale w LW równe trzy będzie to działało,
+
+104
+00:08:50,490 --> 00:08:52,490
+jeśli wszystko będzie wyglądało dobrze.
+
+105
+00:08:52,500 --> 00:08:52,860
+W porządku.
+
+106
+00:08:52,860 --> 00:08:53,400
+Nie jest zły.
+
+107
+00:08:53,410 --> 00:08:54,820
+Wygląda na to, że zaczynamy mecz.
+
+108
+00:08:55,080 --> 00:08:59,970
+A teraz chcieliśmy sprawdzić, czy możemy zmienić rozmiar wykresu, dodając te argumenty o rozmiarze.
+
+109
+00:09:00,300 --> 00:09:02,500
+Wejdźmy i sprawdźmy to.
+
+110
+00:09:02,520 --> 00:09:09,600
+Pamiętajmy, że możemy po prostu dodać argumenty rozmiaru do wywołania podpunów, abyśmy mogli powiedzieć, że rozmiar figi jest równy i wygląda na
+
+111
+00:09:09,600 --> 00:09:12,220
+to, że chcemy mieć szeroki i krótki rozmiar.
+
+112
+00:09:12,240 --> 00:09:17,550
+Tak więc pierwsza liczba jest większa, więc niektóre szersze liczby, które właśnie spadły w drugiej liczbie,
+
+113
+00:09:17,550 --> 00:09:19,990
+są mniejsze, więc mówimy 12 do.
+
+114
+00:09:20,260 --> 00:09:25,720
+I jeśli będziemy biegać, to wygląda na to, że dopasujemy się do drugiego spisku tutaj.
+
+115
+00:09:26,040 --> 00:09:28,250
+Są też trochę pomieszane wokół stylów.
+
+116
+00:09:28,250 --> 00:09:31,650
+Więc włącz to wszyscy, sami wejdziemy i zrobimy to sami.
+
+117
+00:09:31,650 --> 00:09:33,360
+Po prostu mówimy coś w stylu.
+
+118
+00:09:33,660 --> 00:09:37,650
+LS tutaj jest równy linii kreski.
+
+119
+00:09:37,680 --> 00:09:39,960
+Teraz zmieniliśmy go i dopasowaliśmy do niego.
+
+120
+00:09:40,080 --> 00:09:40,640
+W porządku.
+
+121
+00:09:40,800 --> 00:09:46,650
+To wszystko z powodu ćwiczeń dla matematycznych fabuł, które, mam nadzieję, są naprawdę dopracowane, jeśli chodzi o składnię
+
+122
+00:09:46,680 --> 00:09:48,640
+użycia mapy zorientowanej na obiekt.
+
+123
+00:09:48,840 --> 00:09:55,160
+Wszystko, co musisz zrobić, to wywołać figurowe osie rysunku, a następnie narysować na tych osiach lub
+
+124
+00:09:55,170 --> 00:10:02,250
+jeśli używasz subplots, jak w ostatnim wywołaniu problemu, przyjdź do osi, aby obrać te wątki, a następnie wykonaj
+
+125
+00:10:02,250 --> 00:10:08,560
+iterację przez te osie lub zadzwoń za pomocą tablica osi do wykreślenia poszczególnych podplotów.
+
+126
+00:10:08,860 --> 00:10:10,220
+To naprawdę wszystko.
+
+127
+00:10:10,350 --> 00:10:15,060
+Śmiało i przejrzyj książkę rozwiązań na wypadek, gdyby coś z tego było niejasne lub nie krępuj się, aby
+
+128
+00:10:15,060 --> 00:10:16,980
+opublikować pytanie na forach pytań i odpowiedzi.
+
+129
+00:10:16,980 --> 00:10:19,020
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

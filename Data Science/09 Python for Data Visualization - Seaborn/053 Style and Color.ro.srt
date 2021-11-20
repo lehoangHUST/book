@@ -1,0 +1,459 @@
+1
+00:00:05,220 --> 00:00:08,460
+Bună ziua tuturor și bun venit la stilul și culoarea lectură.
+
+2
+00:00:08,460 --> 00:00:12,690
+Am arătat de câteva ori cum să controleze estetica figura și marină. Dar acum o vom trece peste
+
+3
+00:00:12,690 --> 00:00:14,150
+ea într-o manieră mai formală.
+
+4
+00:00:14,340 --> 00:00:17,600
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+5
+00:00:18,450 --> 00:00:20,370
+Bine, suntem la notebook-ul Jupiter.
+
+6
+00:00:20,370 --> 00:00:25,140
+M-am dus înainte și am făcut linia obișnuită de import maritim set matplotlib și am mers înainte
+
+7
+00:00:25,380 --> 00:00:27,250
+și am încărcat setul de date.
+
+8
+00:00:27,270 --> 00:00:30,120
+Permiteți-mi să intru și să vă arăt cum puteți seta anumite stiluri.
+
+9
+00:00:30,360 --> 00:00:40,730
+De exemplu, pot să fac numerele de contacte ale starurilor SNL și să spunem că coloana de sex în sfaturile passen ca datele mele dau sfaturi de
+
+10
+00:00:42,070 --> 00:00:49,890
+date egale aici Am contul meu de conturi seaborne are un set de argumente stil care vă permite să setați
+
+11
+00:00:49,890 --> 00:00:52,220
+stilul pentru restul dvs. parcele.
+
+12
+00:00:52,380 --> 00:00:58,650
+Și dacă mergem și facem schimbarea Tampere pentru a verifica stilul de subliniere, practic treceți un parametru pentru stil
+
+13
+00:00:58,650 --> 00:01:00,650
+și acesta este un șir.
+
+14
+00:01:00,660 --> 00:01:07,060
+Poate fi grila albă întunecată, albă închisă la culoare sau Tick, o să vă arătăm cum
+
+15
+00:01:07,080 --> 00:01:15,000
+arată presarea, iar albii vor merge mai departe și creează un fundal alb gol pentru tine dacă treci prin căpușe.
+
+16
+00:01:15,030 --> 00:01:20,670
+Ar trebui să vă spun că, în principiu, aveți aceste căpușe la marginea casetei.
+
+17
+00:01:20,700 --> 00:01:22,590
+Apoi, există și grila întunecată,
+
+18
+00:01:25,620 --> 00:01:28,320
+care vă oferă fundalul originar al grilei întunecate.
+
+19
+00:01:28,350 --> 00:01:30,660
+Și apoi există și ceea ce îmi place foarte mult.
+
+20
+00:01:30,720 --> 00:01:35,150
+Grila albă vă oferă atât claritatea albului, cât și grila.
+
+21
+00:01:35,160 --> 00:01:36,720
+Deci nu pierdeți acele informații.
+
+22
+00:01:36,810 --> 00:01:41,430
+Poți să mergi mai departe și să ai un stil de setare și să vezi ce preferi sau preferi cele mai bune.
+
+23
+00:01:41,430 --> 00:01:46,290
+Un alt lucru pe care îl puteți face este să îndepărtați spinii.
+
+24
+00:01:46,350 --> 00:01:50,460
+Deci, chiar acum puteți să vedeți că permiteți-mi să intru și să fixați acest lucru la egal cu căpușe,
+
+25
+00:01:50,460 --> 00:01:52,470
+astfel că este foarte clar ce facem aici.
+
+26
+00:01:52,470 --> 00:01:57,960
+Deci, avem coloana vertebrală a coloanei vertebrale superioare și a coloanei vertebrale drept, precum și a coloanei vertebrale inferioare și stângi.
+
+27
+00:01:58,410 --> 00:02:06,960
+Dacă doriți să mergeți mai departe și să eliminați acele puteți să-i spuneți lui Asinus coloana vertebrală și va elimina coloana vertebrală și coloana
+
+28
+00:02:06,960 --> 00:02:11,930
+vertebrală dreapta dacă doriți să continuați să îndepărtați coloana vertebrală inferioară sau stângă.
+
+29
+00:02:11,970 --> 00:02:14,230
+De fapt, puteți să le adăugați ca parametri.
+
+30
+00:02:14,290 --> 00:02:21,570
+Deci, practic, topul din stânga și din dreapta în stânga și în jos, în mod implicit, din dreapta în sus și în dreapta sunt adevărate pentru a fi eliminate în stânga și în partea de jos sau
+
+31
+00:02:21,570 --> 00:02:22,760
+nu pentru a fi eliminate
+
+32
+00:02:22,770 --> 00:02:28,640
+Dar puteți specifica că doriți să le eliminați prin a spune cel mai lent adevărat și apoi partea de jos este adevărată.
+
+33
+00:02:28,670 --> 00:02:31,500
+Aceasta va elimina practic toate cele patru spini.
+
+34
+00:02:31,590 --> 00:02:35,670
+Deci, dacă obțineți dacă sunteți în căutarea pentru ceva care este ca un foarte clar și frumos cautati complot
+
+35
+00:02:36,060 --> 00:02:38,220
+lustruit poate doriți să-l prezinte fără nici un spin.
+
+36
+00:02:38,220 --> 00:02:43,090
+Eu personal prefer colturile acolo, asa ca am sa merg mai departe si sa scot asta si sa pastrez acele spini.
+
+37
+00:02:43,500 --> 00:02:46,740
+Acum hai să vorbim despre dimensiune și aspect.
+
+38
+00:02:47,010 --> 00:02:52,560
+Aveți posibilitatea să utilizați hartă complot libs coaja f figura mare lățime de dimensiune și înălțime pentru a schimba de fapt dimensiunea de cele mai
+
+39
+00:02:52,560 --> 00:02:53,460
+multe blocuri Seaborn.
+
+40
+00:02:53,610 --> 00:02:59,310
+Deci, toate acestea sunt doar apeluri de bază de bază pentru a hartă luminat și puteți controla, de asemenea, dimensiunea și raportul
+
+41
+00:02:59,310 --> 00:03:04,080
+de aspect al unui parcele de rețea de pe litoral prin trecerea în parametrii dimensiunea și aspectul.
+
+42
+00:03:04,080 --> 00:03:06,730
+Lasă-mă să-ți arăt ce vreau să spun prin toate astea.
+
+43
+00:03:07,050 --> 00:03:12,960
+Am de gând să merg mai departe și să apeleze numărătoarea parcele și rețineți că stilul set, chiar
+
+44
+00:03:12,960 --> 00:03:21,450
+dacă l-am șterge va rămâne în loc până când spun un nou stil, dar am de gând să-l sune merge apel această cifră și spuneți fix
+
+45
+00:03:21,450 --> 00:03:22,800
+este egal cu.
+
+46
+00:03:23,190 --> 00:03:26,230
+Mergem să spunem 12 la 3.
+
+47
+00:03:26,790 --> 00:03:32,700
+Și rețineți că acest lucru de fapt, suprascrie sau este un apel invers atunci când seaborne este de asteptare Mate complot lib.
+
+48
+00:03:32,990 --> 00:03:36,030
+Madlib va ​​seta de fapt mărimea cifrei pentru complotul de la Marea Neagră.
+
+49
+00:03:36,060 --> 00:03:42,210
+Deci, puteți folosi sau cartografia cunoștințelor de complot trăite în ceea ce privește dimensiunea cifrelor și rapoartele
+
+50
+00:03:42,210 --> 00:03:45,240
+de aspect aici în combinație cu seaborne.
+
+51
+00:03:45,270 --> 00:03:48,990
+Acum, hai să mergem mai departe și să atingem subiectul dimensiunii și contextului.
+
+52
+00:03:48,990 --> 00:03:55,200
+SEABORNE are un context convenabil de subliniere a setului, care vă permite să înlocuiți parametrii impliciți și să
+
+53
+00:03:55,200 --> 00:03:59,940
+modificați cântările Funt în funcție de ceea ce creați de fapt pentru figura.
+
+54
+00:03:59,940 --> 00:04:04,690
+Deci, să spunem că veți crea această figură nu pentru un notebook, ci pentru un poster.
+
+55
+00:04:04,860 --> 00:04:15,060
+Puteți să mergeți mai departe și să spuneți că Asinus a crezut că contextul și contextul subliniază vor lua câțiva parametri.
+
+56
+00:04:15,190 --> 00:04:16,300
+Luați context.
+
+57
+00:04:16,320 --> 00:04:22,920
+Și asta va fi un șir și va avea de asemenea o scară a fontului. Parametrii contextului sunt discuții pe
+
+58
+00:04:22,950 --> 00:04:24,700
+hârtie sau postere din hârtie.
+
+59
+00:04:24,720 --> 00:04:32,520
+Deci, dacă mă duc și am stabilit contextul, contextul mă scuză să afișez posterul că am o figură mult mai mare și fontul este
+
+60
+00:04:32,520 --> 00:04:37,020
+de asemenea mai mare deoarece presupune că o să puneți acest lucru pe
+
+61
+00:04:37,020 --> 00:04:37,890
+un poster.
+
+62
+00:04:38,010 --> 00:04:42,570
+Și dacă sunteți încă nemulțumiți de dimensiunea fontului puteți merge mai departe și
+
+63
+00:04:42,660 --> 00:04:47,840
+adăugați că la argumentele scării de subliniere a fontului la un număr mai mare, poate trei.
+
+64
+00:04:47,850 --> 00:04:50,610
+Deci este de trei ori mărimea implicit.
+
+65
+00:04:50,670 --> 00:04:56,130
+Și aici ați putea seta contextul pentru ceea ce doriți ca cifra să fie și, de
+
+66
+00:04:56,190 --> 00:04:58,950
+obicei, implicit va fi în contextul unui notebook.
+
+67
+00:04:59,050 --> 00:05:06,060
+Deci poți să te duci să-ți spui notebook-ul și asta stabilește contextul figurilor tale.
+
+68
+00:05:06,060 --> 00:05:06,480
+In regula.
+
+69
+00:05:06,540 --> 00:05:08,460
+Am trecut doar câteva dintre elementele de bază aici.
+
+70
+00:05:08,460 --> 00:05:13,210
+Ultimul lucru despre care vreau să vorbesc sunt paletele și culorile.
+
+71
+00:05:13,260 --> 00:05:16,800
+Am arătat parcele înainte de a specifica de fapt un parametru de nuanță.
+
+72
+00:05:16,800 --> 00:05:18,730
+Lasă-mă să intru și să arăt un exemplu despre asta.
+
+73
+00:05:18,870 --> 00:05:26,940
+De exemplu, când am spus S. N. s parcelele de lim Lim, poate că vrem
+
+74
+00:05:30,840 --> 00:05:37,380
+să facem factura totală față de vârful și apoi să trecem după ce datele biciului dat sunt egale cu IP-urile.
+
+75
+00:05:37,470 --> 00:05:42,170
+Așadar, am fost în stare să specificăm anterior ceva de genul Heugh este egal cu șase.
+
+76
+00:05:42,720 --> 00:05:46,100
+Iar apoi obținem culorile alese pentru noi, verde și albastru.
+
+77
+00:05:46,500 --> 00:05:52,560
+Și am văzut mai devreme că putem trece într-adevăr argumentele lui Hallett și există anumite șiruri pe
+
+78
+00:05:52,560 --> 00:05:58,890
+care le putem pune în esență, oferindu-ne o hartă color și am văzut aspecte similare pentru lucruri precum
+
+79
+00:05:58,890 --> 00:05:59,890
+hărțile termice.
+
+80
+00:05:59,970 --> 00:06:03,600
+Când am pus lucruri ca magma sau cald rece.
+
+81
+00:06:03,900 --> 00:06:06,910
+Acum s-ar putea să vă întrebați ce găsim de fapt aceste șiruri de caractere.
+
+82
+00:06:07,070 --> 00:06:11,420
+Ei bine, puteți să le găsiți, mergând la maparea paginilor de complot a hărții color.
+
+83
+00:06:11,490 --> 00:06:14,350
+Permiteți-mi să vă arăt cum să faceți acest lucru cu Google.
+
+84
+00:06:14,490 --> 00:06:15,050
+Puteți merge mai departe.
+
+85
+00:06:15,060 --> 00:06:17,680
+Deschideți o filă nouă și accesați Google și căutați.
+
+86
+00:06:17,690 --> 00:06:27,210
+Matt map de viu color și vă va duce la una din aceste pagini și căutăm este pagina
+
+87
+00:06:27,210 --> 00:06:29,790
+de documentare hartă color.
+
+88
+00:06:30,120 --> 00:06:31,940
+Și acesta este, de obicei, primul link aici.
+
+89
+00:06:31,950 --> 00:06:33,820
+Există cod exemplu de culoare.
+
+90
+00:06:34,140 --> 00:06:40,350
+Și dacă ajungem la această pagină acum, putem vedea scala de culoare reală și gradienții, precum și numele sau numele de
+
+91
+00:06:40,350 --> 00:06:43,860
+șir de care aveți nevoie pentru a trece pentru harta color.
+
+92
+00:06:43,860 --> 00:06:50,130
+Deci, dacă depărteazăm aici, putem vedea aceste patru hărți color, acestea fiind principalele hărți color, dar există
+
+93
+00:06:50,130 --> 00:06:51,660
+și hărți colorate secvențiale.
+
+94
+00:06:51,820 --> 00:06:59,280
+Deci, hărți secvențiale de două culori, o altă setare de culori divergente hărți hărți calitative color diferite și acestea sunt opțiunile dvs. în
+
+95
+00:06:59,400 --> 00:07:02,310
+ceea ce privește corzile pe care le treceți.
+
+96
+00:07:02,310 --> 00:07:09,570
+De exemplu, să spunem că am vrut să aleg această hartă coloristică seismică divergentă pentru nuanța pe
+
+97
+00:07:09,570 --> 00:07:17,150
+care tocmai am venit aici și în locul coorului de către locul seismic passen a simțit acest lucru drept.
+
+98
+00:07:17,160 --> 00:07:22,380
+Iar aici putem vedea acum că primesc acest tip de violet și roșu, care au fost culorile de aici, la ambele
+
+99
+00:07:22,380 --> 00:07:24,020
+capete, pe această hartă colorată divergentă.
+
+100
+00:07:24,330 --> 00:07:26,330
+Și puteți să mergeți și să jucați în jurul acestor hărți color.
+
+101
+00:07:26,330 --> 00:07:27,390
+Sunt o mulțime de distracție de jucat.
+
+102
+00:07:27,440 --> 00:07:32,380
+Atunci când Seaborn pentru a obține complotul să arate exact așa cum doriți.
+
+103
+00:07:32,400 --> 00:07:33,360
+In regula.
+
+104
+00:07:33,360 --> 00:07:38,070
+Puteți să mergeți înainte și să consultați cartea Jupiter pentru stil și culoare pentru a obține mai multe
+
+105
+00:07:38,070 --> 00:07:43,260
+informații și pentru a verifica legăturile din acea pagină sau în acea carte care vă duce la documentația oficială, care
+
+106
+00:07:43,530 --> 00:07:48,240
+are și mai multe informații despre controlul cu adevărat mai mare a esteticii tale și a figurinei tale.
+
+107
+00:07:48,330 --> 00:07:54,220
+Dar principalul lucru pe care trebuie să-l înțelegeți este că puteți căuta în sus aceste coduri de palete cu MAP vii
+
+108
+00:07:54,360 --> 00:07:55,660
+în căutarea hărților color.
+
+109
+00:07:55,770 --> 00:08:02,700
+Aveți posibilitatea să modificați dimensiunea fontului cu contextul de setare a contextului de subliniere setat fie pentru poster, fie pentru notebook și
+
+110
+00:08:03,000 --> 00:08:05,300
+apoi pentru a schimba scara fontului.
+
+111
+00:08:05,520 --> 00:08:10,530
+Și apoi puteți utiliza piquante acea figură cu Fig dimensionate pentru a schimba de fapt dimensiunea cifrelor tale.
+
+112
+00:08:11,070 --> 00:08:14,770
+Sper că te-ai bucurat de asta și sper că te-ai bucurat de Seaborn.
+
+113
+00:08:14,820 --> 00:08:18,300
+Următoarele sunt câteva exerciții pe mare care pot fi adăugate.
+
+114
+00:08:18,330 --> 00:08:18,770
+In regula.
+
+115
+00:08:19,020 --> 00:08:20,520
+Mulțumesc și te vom vedea la următoarea conferință

@@ -1,0 +1,479 @@
+1
+00:00:05,280 --> 00:00:07,320
+Halo semuanya dan selamat datang di kuliah ini.
+
+2
+00:00:07,440 --> 00:00:11,140
+Remerging bergabung dengan data cannonading membingkai kuliah ini.
+
+3
+00:00:11,160 --> 00:00:16,110
+Kita akan belajar bagaimana menggabungkan frame data melalui berbagai metode alih-alih benar-benar kehidupan
+
+4
+00:00:16,110 --> 00:00:21,180
+mengkodekan semuanya karena metode dan perintah ini sebenarnya sangat sederhana dan sebagian besar pengetikan
+
+5
+00:00:21,180 --> 00:00:25,150
+hanya benar-benar membuat frame data untuk bergabung atau bergabung.
+
+6
+00:00:25,170 --> 00:00:29,160
+Yang akan kami lakukan adalah hanya berjalan melalui buku catatan kuliah untuk kuliah ini.
+
+7
+00:00:29,160 --> 00:00:32,920
+Ini disebut penggabungan bengkel tukang kayu dan penggabungan dan berada di bawah folder panda.
+
+8
+00:00:33,150 --> 00:00:35,610
+Ayo maju dan lompat ke notebook Jupiter itu sekarang.
+
+9
+00:00:35,670 --> 00:00:35,970
+Baiklah.
+
+10
+00:00:35,970 --> 00:00:41,250
+Di sini kita berada di notebook Jupiter untuk menggabungkan bergabung dan menyatukan.
+
+11
+00:00:41,250 --> 00:00:45,080
+Pertama kita akan membuat beberapa contoh frame data untuk bekerja dengan di sini.
+
+12
+00:00:45,120 --> 00:00:50,150
+Saya telah mengimpor panda PD dan menggunakan kamus dan daftar nomor indeks.
+
+13
+00:00:50,310 --> 00:00:57,000
+Saya telah membuat tiga frame data satu DFA ke ADF tiga kita lihat di frame data
+
+14
+00:00:57,000 --> 00:01:05,470
+ini akan melihat bahwa kita memiliki diff satu yang kolom ABC dan D dan indeks 0 sampai 3 dan kemudian DF 2
+
+15
+00:01:05,610 --> 00:01:12,370
+memiliki kolom yang sama dengan indeks 4 hingga 7 dan kemudian DF 3 memiliki indeks hingga 11.
+
+16
+00:01:12,390 --> 00:01:17,430
+Mari kita bicara tentang Rangkaian Rangkaian pada dasarnya menempel bersama frame data.
+
+17
+00:01:17,440 --> 00:01:20,570
+Perlu diingat bahwa dimensi harus cocok dengan Machel pada sumbu.
+
+18
+00:01:20,580 --> 00:01:23,100
+Anda mencoba menyatukan untuk ini.
+
+19
+00:01:23,100 --> 00:01:29,540
+Anda hanya menggunakan PD dot com cat dan kemudian melewati daftar frame data untuk digabungkan bersama
+
+20
+00:01:29,690 --> 00:01:36,190
+di sini saya akan menggabungkan frame data satu dua dan tiga dengan mengirimkannya ke daftar ke dalam PD.
+
+21
+00:01:36,210 --> 00:01:39,090
+Fungsi concat.
+
+22
+00:01:39,310 --> 00:01:43,600
+Kita dapat melihat bahwa secara default akses untuk bergabung adalah nol.
+
+23
+00:01:43,620 --> 00:01:45,970
+Berarti itu akan bergabung dengan baris bersama.
+
+24
+00:01:46,440 --> 00:01:52,580
+Kita lihat di sini bahwa berhasil merangkai atau pada dasarnya menempelkan frame data bersama dan kita bisa melihat sekarang
+
+25
+00:01:52,590 --> 00:01:57,510
+kita memiliki b dan c dan d sebagai kolom dengan indeks 0 sampai 11.
+
+26
+00:01:57,560 --> 00:02:00,100
+Dengan masing-masing poin data berbaris dengan baik.
+
+27
+00:02:00,270 --> 00:02:06,090
+Sekarang Anda juga dapat menentukan x sama dengan 1 jika Anda ingin bergabung dan menggabungkan sepanjang kolom atau
+
+28
+00:02:06,150 --> 00:02:07,290
+menyatukan sepanjang kolom.
+
+29
+00:02:07,680 --> 00:02:13,770
+Dan ini adalah contoh dari apa yang terjadi ketika Anda menggunakan PD yang Kancha pada tiga frame data bersama
+
+30
+00:02:13,830 --> 00:02:15,900
+X sama dengan 1.
+
+31
+00:02:15,900 --> 00:02:20,970
+Perhatikan di sini kami memiliki banyak nilai yang hilang dan itu karena frame data ini tidak memiliki
+
+32
+00:02:20,970 --> 00:02:23,800
+nilai untuk semua indeks yang ingin Anda gabungkan.
+
+33
+00:02:24,060 --> 00:02:31,640
+Misalnya dengan bingkai data 1 A B dan C dan D Anda memiliki nilai 0 hingga 3.
+
+34
+00:02:31,650 --> 00:02:37,290
+Namun untuk semua hingga 11 Anda tidak memiliki nilai dan itu sebabnya itu diisi
+
+35
+00:02:37,290 --> 00:02:44,850
+dengan Knolles ketika Anda bergabung ini digabungkan pada data menjadi dan kerangka data 3 yang pada dasarnya berarti ketika Anda
+
+36
+00:02:44,850 --> 00:02:50,910
+bekerja dengan penggabungan dan P-doc menyambungkan Anda ' Saya ingin memastikan bahwa Anda memiliki informasi yang
+
+37
+00:02:51,120 --> 00:02:53,960
+benar ketika Anda bergabung dengan sumbu.
+
+38
+00:02:54,120 --> 00:02:58,850
+Dalam hal ini kami ingin menggabungkan akses yang sama dengan 0 untuk mengatur semuanya dengan benar.
+
+39
+00:02:58,860 --> 00:03:00,740
+Bagaimana kami menentukan gabungan di sepanjang kolom.
+
+40
+00:03:00,750 --> 00:03:02,100
+Faks sekuel satu.
+
+41
+00:03:02,250 --> 00:03:04,890
+Kami akan memiliki banyak informasi yang hilang.
+
+42
+00:03:04,890 --> 00:03:09,450
+Paling sering Anda mungkin akan menggabungkan kolom jadi Anda sebenarnya akan bergabung.
+
+43
+00:03:09,450 --> 00:03:11,060
+Akses sama dengan 1.
+
+44
+00:03:11,080 --> 00:03:15,890
+Namun pastikan Anda tahu data Anda dan apa yang sebenarnya ingin Anda gabungkan sebelum memilih akses.
+
+45
+00:03:16,710 --> 00:03:19,560
+Baiklah, mari kita pergi ke depan dan bergerak bersama.
+
+46
+00:03:19,650 --> 00:03:22,440
+Kami akan membuat beberapa contoh lebih banyak frame data dalam kasus ini.
+
+47
+00:03:22,440 --> 00:03:27,780
+Satu disebut kiri dan satu lagi disebut di sini untuk Lihatlah di sebelah kiri.
+
+48
+00:03:27,780 --> 00:03:34,680
+Kami memiliki kolom A dan B dengan beberapa nilai di dalamnya dan kemudian kami memiliki kolom kunci k 0 hingga K3 kami
+
+49
+00:03:34,680 --> 00:03:40,340
+memiliki kerangka data yang tepat yang memiliki kerangka data yang sangat mirip kecuali memiliki kolom C dan D.
+
+50
+00:03:40,470 --> 00:03:45,690
+Namun kolom kunci persis sama dengan bingkai data kiri sehingga sangat
+
+51
+00:03:45,690 --> 00:03:51,850
+kiri dan panderer bingkai data kanan mampu menggunakan fungsi gabungan untuk melakukan penggabungan logika.
+
+52
+00:03:51,870 --> 00:03:55,020
+Itu sangat mirip dengan menggabungkan tabel sekuel bersama.
+
+53
+00:03:55,230 --> 00:03:59,610
+Dan jika Anda tidak mengerjakan sekuel, Anda tidak perlu terlalu khawatir tentang hal ini, tetapi saya akan
+
+54
+00:03:59,610 --> 00:04:02,100
+menunjukkan kepada Anda dasar-dasar cara menggabungkan dua frame data.
+
+55
+00:04:02,100 --> 00:04:07,790
+Anda hanya mengatakan PD yang bergabung dan kemudian melewati frame data kiri dan frame data kanan.
+
+56
+00:04:07,920 --> 00:04:14,470
+Atau hanya pasan data dari satu atau bingkai data ke frame data apa pun yang ingin Anda gabungkan bersama.
+
+57
+00:04:14,550 --> 00:04:16,840
+Secara default itu akan menggabungkan mereka di bagian dalam.
+
+58
+00:04:17,040 --> 00:04:22,440
+Dan jika Anda tidak terbiasa dengan inor tentang penggabungan siecle jangan khawatir tentang hal itu, gunakan saja bagian
+
+59
+00:04:22,470 --> 00:04:23,160
+dalam default.
+
+60
+00:04:23,220 --> 00:04:26,700
+Lebih penting lagi pelajari tentang ini.
+
+61
+00:04:26,700 --> 00:04:31,200
+Pada dasarnya ketika Anda melakukan penggabungan, Anda ingin menggabungkan kolom kunci dan Anda benar-benar dapat memasukkan satu
+
+62
+00:04:31,200 --> 00:04:33,740
+atau beberapa kolom kunci yang akan kita lihat nanti.
+
+63
+00:04:33,810 --> 00:04:39,930
+Tetapi pada dasarnya apa yang terjadi di sini adalah kita akan menggabungkan atau menggabungkan bingkai data ini pada
+
+64
+00:04:39,930 --> 00:04:41,090
+kolom kunci ini.
+
+65
+00:04:41,220 --> 00:04:46,650
+Dan dengan demikian, alih-alih menggabungkannya, kita akan memiliki dua kolom utama yang dapat kita gabungkan sehingga kita gabungkan atau
+
+66
+00:04:46,650 --> 00:04:49,960
+bergabung dengan mereka pada kolom kunci yang sama yang mereka bagikan.
+
+67
+00:04:50,280 --> 00:04:55,050
+Jadi logikanya di sini adalah ketika Anda menggunakan PD yang menggabungkan bukan hanya menempelkan frame data
+
+68
+00:04:55,140 --> 00:04:58,260
+bersama-sama Anda akan melihat di mana nilai cocok pada kolom.
+
+69
+00:04:58,260 --> 00:05:03,630
+Dalam hal ini kolom kunci dan kemudian buat baris menggunakan kolom kunci itu.
+
+70
+00:05:03,630 --> 00:05:06,570
+Biarkan saya pergi dan menunjukkan beberapa contoh yang lebih rumit.
+
+71
+00:05:06,900 --> 00:05:14,910
+Di sini saya memiliki frame data kiri dan kanan dan akan melihat di sini bahwa mereka memiliki dua kunci satu dan dua kunci jika tidak
+
+72
+00:05:15,900 --> 00:05:20,820
+mereka sama persis dengan kiri dan kanan yang baru saja kita lihat sebelumnya Anda
+
+73
+00:05:21,050 --> 00:05:26,310
+dapat menggunakan PD yang menggabungkan hanya lewat di frame data pertama dan frame data kedua dan
+
+74
+00:05:26,310 --> 00:05:33,420
+kemudian Anda dapat menentukan dan Anda bisa memasukkan daftar kunci jika Anda ingin benar-benar menggabungkan beberapa kunci seperti kunci satu atau kunci.
+
+75
+00:05:33,870 --> 00:05:38,660
+Dan berikut adalah beberapa contoh lagi menggunakan menggabungkan luar atau gabungan.
+
+76
+00:05:38,730 --> 00:05:44,850
+Sekarang jika Anda tidak terbiasa dengan sintaks urutan seperti dalam atau luar kanan atau kiri bergabung dengan kekhawatiran tentang ini
+
+77
+00:05:44,850 --> 00:05:49,290
+terlalu banyak kita tidak benar-benar menggunakan ini dalam kursus kita akan selalu default untuk
+
+78
+00:05:49,290 --> 00:05:53,150
+sesuatu yang terlihat seperti ini dalam kursus kita cukup gunakan gabungan batin.
+
+79
+00:05:53,190 --> 00:05:57,700
+Namun jika Anda menemukan diri Anda mencoba melakukan penggabungan sekuel dan
+
+80
+00:05:57,690 --> 00:06:04,020
+Anda sudah terbiasa dengan sintaks sekuel, ketahuilah bahwa Pancho memiliki parameter operator bagaimana Anda menggunakannya jika
+
+81
+00:06:04,020 --> 00:06:05,810
+Anda menginginkan fungsionalitas tambahan.
+
+82
+00:06:06,030 --> 00:06:11,520
+Tetapi pada dasarnya tergantung apakah Anda menggunakan outer wrote inner dll. Anda mungkin menemukan bahwa Anda memiliki
+
+83
+00:06:11,520 --> 00:06:16,890
+beberapa nilai yang hilang jadi ingatlah itu saat Anda bekerja dengan PD gabungan.
+
+84
+00:06:16,920 --> 00:06:19,070
+Ini contoh kiri.
+
+85
+00:06:19,680 --> 00:06:25,080
+Dan akhirnya kami tiba untuk bergabung dengan bergabung adalah metode yang nyaman untuk menggabungkan kolom dari dua
+
+86
+00:06:25,080 --> 00:06:29,310
+frame data indeks yang berpotensi berbeda menjadi satu frame data yang dihasilkan.
+
+87
+00:06:29,400 --> 00:06:33,840
+Anda pada dasarnya bisa menganggap ini sebagai hal yang sama dengan menggabungkan kecuali kunci yang ingin
+
+88
+00:06:33,840 --> 00:06:36,680
+Anda gabungkan sebenarnya ada pada indeks Anda, bukan kolom.
+
+89
+00:06:36,690 --> 00:06:39,600
+Jadi di sini saya telah membuat dua frame data kiri dan kanan.
+
+90
+00:06:39,600 --> 00:06:45,620
+Perhatikan mereka memiliki kolom A B dan kemudian CD dan kemudian indeks sebenarnya adalah kita akan bergabung dengan
+
+91
+00:06:46,490 --> 00:06:52,530
+mereka dan sintaks yang dapat Anda gunakan adalah katakanlah join join kanan akan secara otomatis melakukan inner join
+
+92
+00:06:52,560 --> 00:06:53,990
+antara kiri dan kanan.
+
+93
+00:06:54,060 --> 00:06:59,880
+Didasarkan pada kunci indeks jika Anda ingin menggabungkan dua frame data ini berdasarkan dari salah satu kolomnya,
+
+94
+00:06:59,880 --> 00:07:05,220
+Anda harus menggunakan penggabungan tetapi fungsionalitas metode join berasal dari salah satu frame data.
+
+95
+00:07:05,210 --> 00:07:08,830
+Anda mengatakan bahwa bergabunglah dan sampaikan frame data lainnya dan seperti penggabungan.
+
+96
+00:07:08,850 --> 00:07:13,030
+Anda dapat menentukan BAGAIMANA seperti luar kiri dalam dll.
+
+97
+00:07:13,070 --> 00:07:17,380
+Ingat ini hanya untuk pengguna sekuel acara yang sudah terbiasa dengan terminologi itu.
+
+98
+00:07:17,430 --> 00:07:20,330
+Jika Anda tidak terbiasa dengan hal itu jangan terlalu khawatir.
+
+99
+00:07:20,370 --> 00:07:26,700
+Mari kita lanjutkan dan lakukan tinjauan singkat tentang cara bergabung dengan penggabungan dan bingkai data yang berkualitas dan kita akan membahas topik-topik utama
+
+100
+00:07:26,700 --> 00:07:29,000
+yang harus Anda dapatkan dari kuliah ini.
+
+101
+00:07:29,400 --> 00:07:34,800
+Sejauh penggabungan bergabung dan menyatukan frame data untuk menggabungkan atau Glew frame
+
+102
+00:07:34,800 --> 00:07:37,100
+data bersama prosesnya cukup sederhana.
+
+103
+00:07:37,320 --> 00:07:43,080
+Anda hanya mengatakan pecan cat dan Anda pasan daftar frame data Anda dan kemudian Anda
+
+104
+00:07:43,080 --> 00:07:48,900
+pastikan untuk menentukan sumbu yang benar tergantung jika Anda ingin bergabung bersama-sama dengan baris atau kolomnya.
+
+105
+00:07:48,900 --> 00:07:54,960
+Selanjutnya Anda memiliki PD yang menggabungkan dan PD yang menggabungkan memungkinkan Anda untuk menggabungkan bingkai data bersama dan Anda hanya melewati bingkai
+
+106
+00:07:54,960 --> 00:07:59,190
+data pertama Anda yang ingin Anda gabungkan dan kemudian bingkai data kedua Anda ingin menggabungkan
+
+107
+00:07:59,190 --> 00:08:03,000
+dan kemudian Anda mengatakan dan Anda dapat meninggalkan hanya kunci kolom tunggal.
+
+108
+00:08:03,150 --> 00:08:08,420
+Atau Anda dapat melewati daftar kunci apa saja dan secara default itu akan bergabung saat masuk.
+
+109
+00:08:08,610 --> 00:08:13,350
+Jika Anda tidak terbiasa dengan penggabungan tabel sekuel, jangan khawatir tentang hal ini. Cukup khawatir
+
+110
+00:08:13,590 --> 00:08:19,500
+tentang satu frame data di sebelah kiri satu frame data di sebelah kanan dan kemudian pada kolom kunci tertentu atau
+
+111
+00:08:19,500 --> 00:08:20,550
+daftar kolom kunci.
+
+112
+00:08:20,550 --> 00:08:26,730
+Itu benar-benar satu-satunya fungsi dari PD gabungan yang akan saya gunakan sepanjang kursus dan kemudian untuk bergabung adalah
+
+113
+00:08:26,730 --> 00:08:31,560
+metode yang lebih maju untuk menggabungkan kolom dari dua frame data yang berpotensi diindeks
+
+114
+00:08:31,560 --> 00:08:32,150
+berbeda.
+
+115
+00:08:32,160 --> 00:08:37,620
+Ini sangat mirip dengan menggabungkan kecuali mereka benar-benar bergabung pada indeks, bukan kolom dan
+
+116
+00:08:37,620 --> 00:08:42,940
+sintaks untuk itu hanya nama bingkai data Kiri menggambar di sebelah kanan.
+
+117
+00:08:43,140 --> 00:08:48,090
+Kami sebenarnya tidak akan menggunakan gabung selama kursus tetapi saya ingin Anda mengetahui hal itu dan Anda
+
+118
+00:08:48,090 --> 00:08:51,810
+dapat merujuk buku catatan ini atau dokumentasi jika Anda ingin meninjau gabung.
+
+119
+00:08:52,110 --> 00:08:53,610
+Baiklah, kerja bagus.
+
+120
+00:08:53,730 --> 00:08:55,440
+Terima kasih dan sampai jumpa di kuliah berikutnya

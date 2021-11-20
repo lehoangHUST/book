@@ -1,0 +1,531 @@
+1
+00:00:05,490 --> 00:00:10,830
+Herkese merhaba ve Matrix arsasının Seaborn konusuna hoş geldiniz, bu derste
+
+2
+00:00:10,830 --> 00:00:14,940
+başta Seaborn kullanılarak ısı eşlemeleri matris çizelgeleri oluşturmayı öğreneceğiz.
+
+3
+00:00:15,120 --> 00:00:18,300
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+4
+00:00:18,870 --> 00:00:19,200
+TAMAM.
+
+5
+00:00:19,200 --> 00:00:21,500
+İşte Jüpiter defterindeyim.
+
+6
+00:00:21,510 --> 00:00:27,280
+İleriye gittim ve inport denizini Asinus olarak söyledim ve sonra harita çizgisini doğrultuda canlı ayarladım.
+
+7
+00:00:27,330 --> 00:00:29,970
+Sonra iki veri kümesi yükledim.
+
+8
+00:00:30,000 --> 00:00:35,550
+setini Esson'u yük alt çizgi veri kümesi olarak yükledim ve ardından ip ipuçlarını ileterek yükledim.
+
+9
+00:00:35,550 --> 00:00:37,260
+Ipuçları veri çerçevesini veya veri
+
+10
+00:00:37,290 --> 00:00:42,660
+Ve düşük veri setini kullanan uçuş verileri seti için S ve S'yi kullanan benzer bir şey yaptık
+
+11
+00:00:42,660 --> 00:00:46,030
+ve sonra daha önce gördüğüm uç verilerini dize uçuşlarında geçirerek yaptık.
+
+12
+00:00:46,040 --> 00:00:46,980
+İşte onun başı.
+
+13
+00:00:47,040 --> 00:00:48,430
+Fakat uçuş veri setimiz yok.
+
+14
+00:00:48,430 --> 00:00:49,970
+O zaman ona bir göz atalım.
+
+15
+00:00:50,010 --> 00:00:56,130
+Uçuş verileri seti öncelikle belirli bir yıldaki belirli bir ayda uçan
+
+16
+00:00:56,220 --> 00:00:57,750
+yolcu sayısını gösterir.
+
+17
+00:00:57,750 --> 00:01:04,230
+Şimdi bir ısı haritasının düzgün çalışması için bir tür matris arsa göstermenin birincil yolu
+
+18
+00:01:04,230 --> 00:01:06,630
+olan ısı haritaları hakkında konuşalım.
+
+19
+00:01:06,660 --> 00:01:09,630
+Verileriniz zaten bir matris biçiminde olmalıdır.
+
+20
+00:01:09,630 --> 00:01:15,850
+Ve matris formuyla ne demek istediğim, dizin adı ve sütun adı eşleşecek
+
+21
+00:01:15,850 --> 00:01:21,500
+ve böylece hücre değeri aslında bu isimlerle alâkalı bir şey gösteriyor.
+
+22
+00:01:21,540 --> 00:01:28,680
+Örneğin, ipuçları veri çerçevesine şimdi bir göz atarsam, şu anda bir çeşit etiket veya değişken olan
+
+23
+00:01:28,890 --> 00:01:35,850
+bir toplam fatura sahibiyim ve eğer hücredeki değerlerden birine bakarsam, 16 dolar ve 99 sent olur
+
+24
+00:01:35,850 --> 00:01:36,950
+demektir .
+
+25
+00:01:37,140 --> 00:01:42,420
+Bununla birlikte, satır matris biçimine getirilmek için gerçek bir değişken değildir.
+
+26
+00:01:42,420 --> 00:01:46,830
+Sütunlarda ve satırlarda her iki değişkene de ihtiyacım var.
+
+27
+00:01:47,370 --> 00:01:54,420
+Bunu birçok yöntemle genellikle bir pivot tablo aracılığıyla yapabilir veya korelasyon verileri elde etmeye çalışabilirim.
+
+28
+00:01:54,570 --> 00:01:56,860
+Öncelikle korelasyon verileri yapacağız.
+
+29
+00:01:56,940 --> 00:02:02,130
+Buna ipuçları verirsem, kısa parantezleri kapatın.
+
+30
+00:02:02,130 --> 00:02:06,290
+Şimdi burada bir çeşit matris formumuz var.
+
+31
+00:02:06,450 --> 00:02:15,390
+Ve şimdi bunun anlamı sütun ve dizin değişken adları aslında hem sütuna hem de
+
+32
+00:02:15,390 --> 00:02:19,880
+eşleştikleri hücrenin dizin adıyla alaka düzeyini belirtir.
+
+33
+00:02:19,920 --> 00:02:21,190
+Ve bu matris formudur.
+
+34
+00:02:21,210 --> 00:02:26,370
+Isı haritasını aramak için verilerinize ihtiyaç duyacaksınız ve daha sonra aslında Asinus
+
+35
+00:02:26,370 --> 00:02:30,920
+nokta ısı haritasını ve daha sonra verilerinizi çağırmak kadar basit.
+
+36
+00:02:30,990 --> 00:02:39,500
+İçeri girip Tipps düşünce çekirdeğini TC olarak kaydetmek ve daha sonra ısı haritasına geçirelim.
+
+37
+00:02:39,660 --> 00:02:45,840
+Ve burada bir ısı haritasını görebiliriz ya da bir ısı haritası, bir çeşit gradyan skalasına
+
+38
+00:02:45,840 --> 00:02:47,280
+dayanan bu değerlerdeki renklerdir.
+
+39
+00:02:47,280 --> 00:02:53,850
+Orijinal TCE veri çerçevemize bir göz atarsam, esas olarak bu numaraları bir renk ölçeğindeki bir degradeye
+
+40
+00:02:53,910 --> 00:02:55,970
+ayarlar ve sonra bunu doldururum.
+
+41
+00:02:56,100 --> 00:03:01,380
+Bu şekilde, çok büyük bir korelasyon veri çerçevesine veya başka matris formu
+
+42
+00:03:01,380 --> 00:03:07,390
+verilerine sahipseniz, sayıların, ısı haritasını kullanarak değerlerin birbirine göre ne olduğunu kolayca anlayabilirsiniz.
+
+43
+00:03:07,390 --> 00:03:12,210
+Ve bu bir matris arsa için ana birincil kullanım.
+
+44
+00:03:12,210 --> 00:03:18,420
+Argümanlar eşit olduğu için A ve OT'ya söyleyebileceğiniz bu hücrelere ait gerçek
+
+45
+00:03:18,420 --> 00:03:26,160
+sayısal değerleri not alacaklarını söyleyebilmeniz için, verilerinizin yanı sıra ısı haritasına aktarabileceğiniz diğer yararlı argümanlar
+
+46
+00:03:26,160 --> 00:03:27,350
+da vardır.
+
+47
+00:03:27,360 --> 00:03:31,680
+Sadece renginden uzak durmak zorunda değilsiniz, ancak burada gerçek değerden de uzaklaşabilirsiniz.
+
+48
+00:03:31,980 --> 00:03:38,730
+ve daha sonra, bir örnek gösterecek olan seemore öğretim görevlileri üzerindeki seçeneklerin üzerine gideceğini belirtebilirsiniz.
+
+49
+00:03:38,730 --> 00:03:43,580
+Ve daha sonra, Görmek istediğiniz gerçek renk haritalamasını, renk haritalarını
+
+50
+00:03:43,710 --> 00:03:47,070
+Sıcaklığı, bir renk haritasını doğrulayan bir dize olarak serinleyin.
+
+51
+00:03:47,070 --> 00:03:49,200
+Ve burada renk haritasını görmeye başlayabilirsiniz.
+
+52
+00:03:49,230 --> 00:03:52,650
+Aynı verinin üzerine serinletin.
+
+53
+00:03:52,650 --> 00:03:59,700
+Şimdi uçuş verilerini tekrar gözden geçirelim, sonra devam edin ve uçuş yazalım ve bu
+
+54
+00:03:59,700 --> 00:04:05,640
+ayın tümünde bu yolcu olduğumuzu görebiliriz ve bunu matris formuna almalıyız
+
+55
+00:04:05,670 --> 00:04:13,510
+anlamım bu değişkenden birine dönüşmesi gereken anlamına geliyor çağrı ya da yol, gerçek endeksi belirtir.
+
+56
+00:04:13,560 --> 00:04:16,500
+Dolayısıyla, bu değişkenlerden birinin Yıl Ayı veya yolcu olmasını istiyorum.
+
+57
+00:04:16,500 --> 00:04:21,340
+Hadi başlayalım ve endeks olabilmek için ay diyelim.
+
+58
+00:04:21,360 --> 00:04:27,330
+Bu yüzden, endeksin aya eşit olduğunu söyleyeceğim ve sonra dışarı
+
+59
+00:04:27,330 --> 00:04:36,330
+çıkıp sütunları yıla eşit ayarlayacağım ve daha sonra yapmam gereken tek şey değerleri belirtmek ve ileriye
+
+60
+00:04:36,330 --> 00:04:39,920
+gidecek olması. ve yolcu sütunları olun.
+
+61
+00:04:41,990 --> 00:04:44,400
+Girin ve çalıştırın ve şimdi bunun nasıl bir şey olduğunu görün.
+
+62
+00:04:44,860 --> 00:04:45,310
+TAMAM.
+
+63
+00:04:45,370 --> 00:04:48,940
+Şimdi verilerimi bir çeşit matris formunda buluyorum.
+
+64
+00:04:48,970 --> 00:04:53,600
+Verilerinizin doğru şekilde sıralanmasına bağlı olarak bunu Pivot Tablosu'yla kolayca yapabilirsiniz.
+
+65
+00:04:53,740 --> 00:04:59,470
+Şimdi burada, yalnızca sütun değişkeniyle değil, aynı zamanda dizin değişkeni ile de ilişkili olan
+
+66
+00:04:59,470 --> 00:05:01,360
+bir grup demet bulunduğumu görebilirsiniz.
+
+67
+00:05:01,420 --> 00:05:07,570
+Bu yüzden 1952'de burada, örneğin Nisan ayında 181 yolcunun olduğunu görebiliyorum.
+
+68
+00:05:07,570 --> 00:05:11,770
+Şimdi yapmak istediğim, bu verileri hızla görselleştirmek için ısı haritasını kullanmaktır.
+
+69
+00:05:11,960 --> 00:05:18,280
+Gidip uçlara gidiyorum ve bu uçuş pivotu için FP'ye eşit olacak ve ardından F ve P'de
+
+70
+00:05:19,690 --> 00:05:21,820
+S ve S ısı haritasını arayacak.
+
+71
+00:05:21,970 --> 00:05:26,530
+Ve burada döndürülen uçuş tablolarının ısı haritasını görebiliriz.
+
+72
+00:05:26,710 --> 00:05:30,710
+Ve şimdi bir renk degradesine dayanan verileri bir formattan çok net bir şekilde görebiliyorum.
+
+73
+00:05:30,880 --> 00:05:36,400
+Bu nedenle, hangi yılın en çok uçuş yaptığı ayı kolayca anlayabilirim ve
+
+74
+00:05:36,550 --> 00:05:43,030
+yıllar ilerledikçe zaman da ilerledikçe daha fazla uçuş alırsınız, o zaman mantıklı olur çünkü
+
+75
+00:05:43,030 --> 00:05:47,950
+zaman geçtikçe daha fazla insan uçaklardadır. meydana gelir ve ayrıca, popüler
+
+76
+00:05:48,280 --> 00:05:56,530
+ay seyahatinin genellikle Haziran Temmuz ve Ağustos aylarındaki yaz aylarında en azından bizim verilerimize göre aydan itibaren gerçekleştiğini görebilirsiniz.
+
+77
+00:05:57,370 --> 00:06:04,510
+Artık yapabileceğiniz şey, deniz haritası gibi argümanlar eklemek ve gidelim ve magma
+
+78
+00:06:04,510 --> 00:06:08,800
+olarak kullanışlı bir deniz haritası örneği göstermek.
+
+79
+00:06:09,490 --> 00:06:16,570
+karanlıktan ışığa doğru renkleri görebilirsiniz; burada geçebileceğiniz diğer argümanlardaki varyasyon ve bazen insanların kullanmak istedikleri
+
+80
+00:06:16,570 --> 00:06:23,410
+bir ısı haritası şu anda bu ısı haritasında temelde olan renk ve çizgi gibidir.
+
+81
+00:06:26,170 --> 00:06:27,870
+Ve şimdi burada
+
+82
+00:06:27,880 --> 00:06:32,560
+Bütün bu hücreler direkt olarak birbirine dokunuyor ancak bazen biraz ayrılmak isteyebilirsiniz.
+
+83
+00:06:32,710 --> 00:06:36,140
+Dolayısıyla, satırları biraz kalın olarak belirleyebilirsiniz.
+
+84
+00:06:36,340 --> 00:06:40,740
+Oraya girip oraya koyacağız ve Feitel'e çizgi rengini ayarlayabilirsin.
+
+85
+00:06:40,870 --> 00:06:42,970
+Gidip beyaz olacağını belirtmek için gidiyoruz.
+
+86
+00:06:42,970 --> 00:06:46,830
+Şimdi bunu çalıştırırsam, bu çizgileri her hücre arasında buluyorum.
+
+87
+00:06:46,870 --> 00:06:48,890
+Ve bazen okumak biraz daha kolaydır.
+
+88
+00:06:49,360 --> 00:06:55,790
+ayrılma isterseniz hatta çizginin rengini de değiştirebilirsiniz, bu çizgileri gerçekten kalın yapabilirsiniz.
+
+89
+00:06:55,790 --> 00:06:56,740
+Daha fazla
+
+90
+00:06:56,740 --> 00:07:01,750
+Örneğin, belki bir başka dikişe geri dönersem, bazen insanlar daha önce serin bir
+
+91
+00:07:01,780 --> 00:07:03,480
+sıcak gösterecek gibi kullanır.
+
+92
+00:07:03,740 --> 00:07:07,500
+Ve belki de beyaz olmayan bir şey istemek gibi görünen şey budur.
+
+93
+00:07:07,540 --> 00:07:12,130
+Örneğin siyahı da seçebilirsiniz.
+
+94
+00:07:12,130 --> 00:07:15,760
+Gerçekten, bunu gerçekten nasıl ayırmak istediğinize göre gerçekten özelleştirme çok şey var.
+
+95
+00:07:15,760 --> 00:07:20,890
+Her şeyi kaldırıp orijinal ısı haritasını burada gösterelim.
+
+96
+00:07:20,890 --> 00:07:27,340
+küme haritası, bu ısı haritasının kümelenmiş bir versiyonunu üretmek için aslında hiyerarşik kümeleme kullanacak.
+
+97
+00:07:27,340 --> 00:07:33,260
+Şimdi, kümelenme haritası olan seaborne'deki ikinci Matrix tipi arsa hakkında konuşalım ve
+
+98
+00:07:33,290 --> 00:07:37,900
+Sana bir örnek göstereceğim, burada orijinal ısı haritamız var ama şimdi Asinus
+
+99
+00:07:38,980 --> 00:07:45,420
+küme haritasını F üzerinde arayacağım. P. ve burada ne var olduğuna dikkat et.
+
+100
+00:07:45,430 --> 00:07:49,470
+Bununla ilgili verileri, tamamen göstermek için uzaklaştırmamız gerekiyor.
+
+101
+00:07:49,470 --> 00:07:55,540
+Ancak şimdi veri ve bu küçük hiyerarşik kümelenmelere sahibiz ve bu temelde benzerliklerine
+
+102
+00:07:55,570 --> 00:07:59,180
+dayanarak sütunları ve satırları bir araya getirmeye çalışıyor.
+
+103
+00:07:59,190 --> 00:08:06,730
+Ve bu aniden yılları ve ayları gösterir ve görebileceğiniz y ekseni üzerindeki kümeler ve
+
+104
+00:08:06,730 --> 00:08:08,370
+aylar artık düzensizdir.
+
+105
+00:08:08,470 --> 00:08:11,400
+Eylül Haziran, Ağustos, Temmuz, Ekim Nisan gidiyorlar.
+
+106
+00:08:11,470 --> 00:08:16,270
+Ve bunun nedeni, benzer ayların çoğunun bir araya getirilmesiyle kümelenmiş oldukları ve
+
+107
+00:08:16,570 --> 00:08:19,810
+yıllarca aynı şeyin yıllarca artık sıradan olduğunu görebilmenizdir.
+
+108
+00:08:19,830 --> 00:08:22,940
+1949 1950 1953 yılına giriyor.
+
+109
+00:08:23,050 --> 00:08:28,570
+Temel olarak, birbirine benzeyen sütun ve satırları göstermeye çalışan bilgi kümeleri
+
+110
+00:08:28,580 --> 00:08:33,360
+bu yüzden 1959 ve 1960'ların birbirlerine çok yakın olduklarını görebiliyorum.
+
+111
+00:08:33,490 --> 00:08:35,250
+Ve böylece bizim Ağustos ve Temmuz.
+
+112
+00:08:35,290 --> 00:08:40,570
+için bir arsa bilgi toplamaya başlayabilirsiniz Yapabileceğimiz renk haritalamasını değiştirmek.
+
+113
+00:08:40,570 --> 00:08:48,550
+Ve bu tür ağaç şemalarından ziyade kümelerin hiyerarşisinin farklı seviyelerini ancak y ekseni ve x ekseni
+
+114
+00:08:48,700 --> 00:08:53,020
+üzerinde görebilirsiniz ve şimdi bunu, daha net hale getirmek
+
+115
+00:08:53,020 --> 00:08:55,210
+Yani haritayı dizeye eşit olarak gör.
+
+116
+00:08:55,210 --> 00:08:58,020
+Yine sıcak serinleyin.
+
+117
+00:08:58,220 --> 00:09:03,250
+Ve şimdi, kümeleri gerçekten görebiliriz, böylece Ağustos ve Temmuz ayları arasında çok net
+
+118
+00:09:03,550 --> 00:09:08,420
+bir şekilde bir küme olduğunu görebilir ve yapabileceğiniz başka bir şey, ölçeği standartlaştırmaktır.
+
+119
+00:09:08,440 --> 00:09:12,400
+Şu an 0'dan 600'e kadar yolcularımız var.
+
+120
+00:09:12,520 --> 00:09:19,690
+1'e normalleştirecektir ve renklendirmeye dayalı kümelerin benzerliğini normalleştirilmiş bir ölçeğe dayandığını görebilirsiniz.
+
+121
+00:09:19,690 --> 00:09:26,920
+Ancak bunu normalleştirmek isterseniz, standart ölçek ve girdi 1 olarak adlandırılan bağımsız değişkenleri
+
+122
+00:09:26,950 --> 00:09:29,890
+geçirebilirsiniz ve bu, bunu 0'dan
+
+123
+00:09:30,130 --> 00:09:35,800
+Bu yüzden Kasım ayı gibi görünüyor ve Şubat ayı biraz erken kış ayları
+
+124
+00:09:35,800 --> 00:09:41,120
+düşük yolculara çok yakın ve yüksek yolcu sayıları ağırlıklı olarak bu yaz aylarında.
+
+125
+00:09:41,170 --> 00:09:41,770
+TAMAM.
+
+126
+00:09:41,950 --> 00:09:45,010
+Devam etmenizi ve küme haritası için belgeleri keşfetmenizi öneririm.
+
+127
+00:09:45,010 --> 00:09:49,720
+şey ama aslında bu yöntemlerin ardındaki matematiğin ne olduğunu daha
+
+128
+00:09:49,730 --> 00:09:54,460
+iyi anlayabilmemiz için makine kümeleme algoritmalarını öğrenene kadar beklemek isteyebilirsiniz.
+
+129
+00:09:54,460 --> 00:09:55,360
+İlgilendiğiniz bir
+
+130
+00:09:55,400 --> 00:09:59,770
+BERNANKE Sadece normal bir ısıdan biraz daha fazla bilgi çıkarmak
+
+131
+00:09:59,770 --> 00:10:06,400
+için ilginç bir yöntem olarak düşünmekteyim, bir ısı haritası sıralamasındaki şeyleri sıralamaya koyarsın onları bir kümeye
+
+132
+00:10:06,400 --> 00:10:10,890
+yerleştirir harita eşyalarını sırayla kümelenecek, böylece benzer gruplar yakın olacak birbirlerine.
+
+133
+00:10:10,900 --> 00:10:13,930
+Pekâlâ, herkese teşekkürler, bir sonraki derside görüşürüz.

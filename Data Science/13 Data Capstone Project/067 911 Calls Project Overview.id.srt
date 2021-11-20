@@ -1,0 +1,127 @@
+1
+00:00:05,010 --> 00:00:09,930
+Halo semuanya dan selamat datang di kuliah ikhtisar proyek batu penjuru data dan kuliah ini kita
+
+2
+00:00:09,930 --> 00:00:14,300
+akan membahas buku baru Tiga Puluh Sembilan pada satu yang disebut proyek batu penjuru.
+
+3
+00:00:14,310 --> 00:00:17,580
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+4
+00:00:17,580 --> 00:00:22,920
+Baiklah jadi di sini saya di notebook notebook ini terletak di bawah folder proyek Data batu penjuru.
+
+5
+00:00:23,400 --> 00:00:28,840
+Dan untuk proyek batu penjuru ini kita akan menganalisis beberapa data panggilan 911 dari Kaggle dot com.
+
+6
+00:00:29,000 --> 00:00:32,600
+Dan jika Anda masuk dan mengklik tautan ini, itu akan membawa Anda ke sumber kumpulan data di sini.
+
+7
+00:00:32,600 --> 00:00:37,190
+Kaggle itu sebenarnya sudah diunduh sebagai file CAC untuk Anda jadi harus mengunduh apa pun.
+
+8
+00:00:37,360 --> 00:00:42,780
+Tetapi seperti latar belakang ikhtisar singkat dari mana data ini berasal berasal dari Kaggle dot com dan Kaggle jika Anda mengklik di
+
+9
+00:00:42,780 --> 00:00:47,460
+sini pada kumpulan data akan membawa Anda ke tautan ini dan itu pada dasarnya adalah tempat di mana Anda
+
+10
+00:00:47,460 --> 00:00:48,570
+dapat memposting kumpulan data.
+
+11
+00:00:48,570 --> 00:00:53,010
+Ada juga aspek kompetisi pembelajaran mesin ke situs Web ini yang akan kita bahas ketika kita
+
+12
+00:00:53,010 --> 00:00:55,420
+berbicara tentang bagian pembelajaran mesin dari kursus ini.
+
+13
+00:00:55,530 --> 00:01:00,050
+Tetapi untuk sekarang Anda dapat menganggapnya hanya sebagai tempat di mana orang dapat memposting kumpulan data.
+
+14
+00:01:00,060 --> 00:01:07,170
+Baiklah, panggilan 911 ini berasal dari Montgomery County di Pennsylvania dan berisi bidang lintang
+
+15
+00:01:07,170 --> 00:01:13,380
+bujur berikut di mana panggilan itu berlangsung, deskripsi panggilan darurat, Judul Kode
+
+16
+00:01:13,560 --> 00:01:15,210
+Pos, cap waktu.
+
+17
+00:01:15,210 --> 00:01:18,510
+Tetapi perhatikan itu string bukan objek waktu tanggal aktual.
+
+18
+00:01:18,540 --> 00:01:22,920
+Dan kemudian sebuah kota memiliki sebuah string dan sebuah string alamat dan kemudian kolom terakhir E.
+
+19
+00:01:23,010 --> 00:01:25,080
+Itu hanya variabel tiruan, itu selalu satu.
+
+20
+00:01:25,140 --> 00:01:29,850
+Jadi Anda dapat mengabaikan kolom itu sepenuhnya dan kemudian Anda akan melanjutkan dengan buku catatan ini
+
+21
+00:01:29,880 --> 00:01:33,910
+dan mencoba untuk menyelesaikan instruksi sebaik mungkin dan Anda selalu dapat pasca-akut.
+
+22
+00:01:33,930 --> 00:01:38,520
+Jika Anda buntu atau Anda sebenarnya dapat hanya referensi buku catatan solusi atau
+
+23
+00:01:38,520 --> 00:01:44,400
+video ceramah yang muncul berikutnya Anda hanya akan pergi mengimpor bahwa data mengatur semuanya mengeksplorasi data sedikit
+
+24
+00:01:44,400 --> 00:01:50,280
+melalui beberapa pertanyaan membuat fitur baru dari data lakukan sedikit visualisasi plot bar lakukan beberapa visualisasi
+
+25
+00:01:50,340 --> 00:01:54,820
+linier dan kemudian Anda benar-benar juga akan membuat beberapa peta panas.
+
+26
+00:01:54,840 --> 00:01:55,620
+Baiklah.
+
+27
+00:01:55,620 --> 00:01:57,240
+Itu saja untuk kuliah ini.
+
+28
+00:01:57,240 --> 00:01:58,980
+Semoga sukses di proyek batu penjuru.
+
+29
+00:01:58,980 --> 00:01:59,820
+Saya harap Anda menikmatinya.
+
+30
+00:01:59,820 --> 00:02:00,880
+Cukup menarik.
+
+31
+00:02:01,020 --> 00:02:04,740
+Dan saya akan melihat Anda di kuliah berikutnya di mana kita membahas solusi langkah demi langkah.
+
+32
+00:02:04,740 --> 00:02:06,620
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

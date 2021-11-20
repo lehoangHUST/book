@@ -1,0 +1,567 @@
+1
+00:00:05,850 --> 00:00:06,770
+Halo semuanya.
+
+2
+00:00:06,770 --> 00:00:12,180
+Selamat datang di seri kuliah serius yang akan menjadi tipe data utama pertama yang akan bekerja
+
+3
+00:00:12,180 --> 00:00:17,340
+dengan panda dan yang akan membangun Ceres untuk bekerja dengan bingkai data di kuliah berikutnya.
+
+4
+00:00:17,340 --> 00:00:20,610
+Ayo maju dan mulai dengan melompat ke notebook Jupiter.
+
+5
+00:00:20,670 --> 00:00:21,150
+Baiklah.
+
+6
+00:00:21,150 --> 00:00:23,720
+Di sini saya di notebook Jupiter.
+
+7
+00:00:23,750 --> 00:00:26,430
+Serangkaian sangat mirip dengan array pai.
+
+8
+00:00:26,430 --> 00:00:29,390
+Sebenarnya itu sebenarnya dibangun di atas objek bajak laut.
+
+9
+00:00:29,430 --> 00:00:35,340
+Tapi apa yang membedakan array wasit dari seri panda adalah bahwa serangkaian label sumbu berarti
+
+10
+00:00:35,340 --> 00:00:37,410
+dapat diindeks oleh label.
+
+11
+00:00:37,410 --> 00:00:44,260
+Mari kita lanjutkan dan umpires penting dan P dan kemudian mengimpor Pandurs sebagai Peetie.
+
+12
+00:00:44,910 --> 00:00:49,850
+Dan kita akan mulai dengan membuat berbagai seri dari berbagai jenis objek.
+
+13
+00:00:49,920 --> 00:00:56,880
+Saya akan membuat objek Python atau membuat daftar yang disebut label dan ini hanya akan menjadi tiga huruf
+
+14
+00:00:56,880 --> 00:01:00,550
+atau tiga string dalam daftar A B dan C.
+
+15
+00:01:01,140 --> 00:01:10,290
+Lalu saya akan pergi ke depan dan membuat daftar yang disebut data garis bawah saya dan saya akan mengatakan itu 10 20 30.
+
+16
+00:01:11,190 --> 00:01:16,710
+Lalu saya akan membuat objek yang disebut r r dan ini akan menjadi New Hampshire Ray dan saya hanya
+
+17
+00:01:16,740 --> 00:01:17,940
+akan meneruskan data saya.
+
+18
+00:01:18,030 --> 00:01:25,290
+Jadi satu adalah daftar python dan yang lainnya adalah array nama PI dan akhirnya sebagai
+
+19
+00:01:25,290 --> 00:01:38,160
+kamus saya akan meneruskan sebagai kunci 10 sebagai nilai B adalah kunci 20 sebagai nilai dan kemudian C adalah kunci dan 30 memiliki nilai dan itu berarti saya
+
+20
+00:01:38,160 --> 00:01:46,220
+memiliki empat objek Python yang terpisah saya memiliki label daftar saya dan kemudian saya memiliki data saya.
+
+21
+00:01:47,160 --> 00:01:51,740
+Saya memiliki array saya dan akhirnya saya memiliki kamus saya.
+
+22
+00:01:52,260 --> 00:01:52,850
+BAIK.
+
+23
+00:01:53,070 --> 00:01:56,140
+Mari kita tunjukkan bagaimana Anda bisa membuat seri dan seperti apa sebenarnya itu.
+
+24
+00:01:56,220 --> 00:02:02,370
+Anda dapat mengatakan PD seri itu dan perhatikan di sini saya tidak benar-benar menyimpan seri apa pun nama variabel underseas
+
+25
+00:02:02,370 --> 00:02:03,870
+MPD PD seri itu.
+
+26
+00:02:04,020 --> 00:02:08,970
+Tetapi jika Anda melakukan shift tab di sini Anda akan melihat P-T serius mengambil berbagai parameter.
+
+27
+00:02:09,030 --> 00:02:14,130
+Kami hanya akan fokus sekarang pada data dan indeks yang paling penting.
+
+28
+00:02:14,130 --> 00:02:21,000
+Pertama, kami hanya akan melewatkan data dan juga sama dengan data garis bawah saya, kami hanya akan meneruskan daftar itu.
+
+29
+00:02:21,000 --> 00:02:24,650
+Saya tahu di sini saya mendapatkan kembali serius saya dan itu tampak seperti wasit benar.
+
+30
+00:02:24,930 --> 00:02:33,200
+Kecuali di sini sangat berbeda bahwa kita memiliki indeks 0 1 2 dan kemudian data aktual 10 20 30
+
+31
+00:02:33,210 --> 00:02:40,470
+dan kunci untuk seri panda adalah bahwa Anda benar-benar dapat menentukan indeks yang Anda inginkan.
+
+32
+00:02:40,530 --> 00:02:48,240
+Misalnya saya akan masuk dan mengatakan PD bahwa seri saya akan lulus dan data sama dengan data saya dan
+
+33
+00:02:48,270 --> 00:02:52,120
+kemudian saya akan menentukan bahwa indeks sama dengan label.
+
+34
+00:02:52,330 --> 00:02:54,820
+Dan ingat itu b dan c muncul.
+
+35
+00:02:54,870 --> 00:02:58,850
+Jadi ketika saya menjalankan ini sekarang saya akan memiliki seri indeks berlabel.
+
+36
+00:02:58,890 --> 00:03:04,780
+Jadi saya memiliki sebagai label atau indeks dan kemudian 10 sebagai titik data aktual untuk indeks itu.
+
+37
+00:03:04,980 --> 00:03:12,060
+Jadi tidak seperti angka Mirei, saya sebenarnya memiliki indeks yang berlabel artinya saya dapat memanggil titik
+
+38
+00:03:12,390 --> 00:03:19,980
+data ini menggunakan indeks berlabel ini dan secepatnya tidak ada data dan indeks yang sebenarnya sejauh menempatkan
+
+39
+00:03:19,980 --> 00:03:21,510
+mereka sebagai parameter.
+
+40
+00:03:21,600 --> 00:03:23,820
+Anda tidak harus mengatakan data sama atau indeks sama dengan.
+
+41
+00:03:23,880 --> 00:03:30,390
+Anda bisa saja mengatakan data saya dan kemudian label seperti itu dan Anda juga akan keluar seri dengan cara yang sama.
+
+42
+00:03:30,600 --> 00:03:34,950
+Jadi Anda tidak perlu terus-menerus menentukan bahwa sama dengan atau indeks sama dengan selama Anda menempatkannya
+
+43
+00:03:34,980 --> 00:03:36,250
+dalam urutan yang benar.
+
+44
+00:03:36,300 --> 00:03:36,800
+Baiklah.
+
+45
+00:03:36,930 --> 00:03:38,550
+Mari kita lanjutkan dan menunjukkan kepada Anda beberapa cara lagi.
+
+46
+00:03:38,550 --> 00:03:42,660
+Buat seri sebelum kami mulai mengerjakan data dalam satu seri.
+
+47
+00:03:42,660 --> 00:03:48,910
+Cara cepat lain untuk membuat seri adalah dengan mengatakan P seri itu dan Anda bisa memberikan angka lebih tinggi.
+
+48
+00:03:48,930 --> 00:03:52,340
+Dan ini akan bekerja persis sama dengan fatalis PI.
+
+49
+00:03:52,380 --> 00:03:54,200
+Jadi di sini kartu nama.
+
+50
+00:03:54,240 --> 00:03:55,550
+Dan itu bekerja dengan cara yang sama.
+
+51
+00:03:55,710 --> 00:04:00,790
+Dan seperti daftar yang saya bisa berikan pada label bersama dengan Ampyra ini.
+
+52
+00:04:00,900 --> 00:04:03,090
+Jadi intinya seorang wasit sebuah wasit akan bekerja.
+
+53
+00:04:03,120 --> 00:04:09,000
+Hal yang sama seperti daftar Python sejauh meneruskannya menjadi seri dan akhirnya yang benar-benar keren adalah
+
+54
+00:04:09,000 --> 00:04:12,350
+Anda dapat mengatakan seri ini dan hanya melewati kamus.
+
+55
+00:04:12,480 --> 00:04:17,250
+Dan apa yang akan dilakukan Palla adalah secara otomatis mengambil kunci dari kamus yang baru saja
+
+56
+00:04:17,250 --> 00:04:17,800
+ditampilkan.
+
+57
+00:04:17,800 --> 00:04:24,690
+Di sini sekali lagi ambil kunci yang dikatakan kamus sebagai indeks dan kemudian atur nilai kunci itu ke titik
+
+58
+00:04:24,840 --> 00:04:26,370
+data yang sesuai.
+
+59
+00:04:26,370 --> 00:04:29,460
+Jadi itu cara cepat yang bagus untuk membuat seri dengan cepat.
+
+60
+00:04:29,460 --> 00:04:31,610
+Baiklah, sesuatu yang perlu diperhatikan di sini.
+
+61
+00:04:31,710 --> 00:04:36,630
+Dan hal lain yang membedakan bajak laut dari seri panda adalah bahwa seri panda
+
+62
+00:04:36,630 --> 00:04:39,210
+sebenarnya dapat menampung berbagai jenis objek.
+
+63
+00:04:39,210 --> 00:04:46,920
+Saat ini kami telah menunjukkan PD seri panda yang seri hanya berisi angka, jadi misalnya saya
+
+64
+00:04:46,920 --> 00:04:55,660
+telah menunjukkannya hanya memegang array angka tetapi bisa juga berlaku sebagai label data itu sendiri yang mengingatnya adalah
+
+65
+00:04:55,660 --> 00:04:56,630
+label.
+
+66
+00:04:56,640 --> 00:05:01,270
+Jika saya melanjutkan dan menjalankan tahun ini hanya string.
+
+67
+00:05:01,400 --> 00:05:08,800
+Jadi sebuah seri sebenarnya dapat menampung hampir semua jenis objek data dengan Python sebagai titik datanya sehingga dapat
+
+68
+00:05:08,810 --> 00:05:14,240
+berupa string dan bahkan lebih menarik daripada yang bisa Anda katakan data
+
+69
+00:05:14,240 --> 00:05:22,670
+sama dan Anda bisa benar-benar melewati fungsi yang dibangun sehingga saya bisa mengatakan sesuatu seperti pangeran Eliane dan itu sebenarnya
+
+70
+00:05:22,670 --> 00:05:28,200
+memegang referensi untuk fungsi-fungsi bawaan ini sebagai titik data dalam seri panda ini.
+
+71
+00:05:28,230 --> 00:05:31,840
+Dan itu bukan sesuatu yang bisa Anda lakukan jika Hampshire baru sekarang.
+
+72
+00:05:32,000 --> 00:05:36,950
+Anda mungkin tidak akan pernah benar-benar menggunakan ini sejauh fungsi hosting atau
+
+73
+00:05:36,950 --> 00:05:42,110
+referensi fungsi yang Appin seri tetapi ini hanya untuk menunjukkan fleksibilitas Appin
+
+74
+00:05:42,110 --> 00:05:45,020
+seri sejauh memegang berbagai jenis objek.
+
+75
+00:05:45,020 --> 00:05:48,590
+Baiklah mari kita lanjutkan dan beralih untuk benar-benar menggunakan indeks.
+
+76
+00:05:48,710 --> 00:05:54,740
+Kunci untuk menggunakan sebuah seri adalah memahami indeksnya di Pandas menggunakan nama atau angka indeks ini dengan
+
+77
+00:05:55,010 --> 00:06:00,020
+memungkinkan pencarian informasi yang sangat cepat dan berfungsi seperti tabel hash atau kamus.
+
+78
+00:06:00,500 --> 00:06:05,100
+Mari kita masuk dan melihat beberapa contoh bagaimana kita dapat mengambil informasi dari suatu seri untuk melakukan ini.
+
+79
+00:06:05,120 --> 00:06:07,250
+Saya akan membuat dua seri.
+
+80
+00:06:07,250 --> 00:06:15,500
+Saya akan membuat satu yang disebut SVR satu dan mengatakan seri PD akan melewatkan beberapa data akan keluar dan mengatakan satu
+
+81
+00:06:15,560 --> 00:06:20,480
+dua tiga empat jadi hanya daftar untuk data saya dan kemudian
+
+82
+00:06:20,480 --> 00:06:31,280
+untuk indeks saya akan pergi ke depan dan memasukkan beberapa nama negara seperti AS akan dimasukkan ke Jerman akan dimasukkan ke dalam Uni Soviet dan kemudian Jepang.
+
+83
+00:06:31,280 --> 00:06:35,850
+Jadi ini semacam referensi nama negara Perang Dunia II dengan beberapa nilai.
+
+84
+00:06:35,870 --> 00:06:38,760
+Jadi, periksa seri satu ACR 1.
+
+85
+00:06:39,440 --> 00:06:41,760
+Dan di sini saya mendapat perhatian serius.
+
+86
+00:06:41,780 --> 00:06:45,700
+Sekarang saya memiliki label indeks dan satu dua tiga empat adalah poin data saya.
+
+87
+00:06:45,800 --> 00:06:48,670
+Dan aku akan mengatakan integer tipe D 64.
+
+88
+00:06:48,690 --> 00:06:49,790
+Apakah ini data aktual?
+
+89
+00:06:49,790 --> 00:06:51,680
+Semuanya bilangan bulat.
+
+90
+00:06:51,680 --> 00:06:54,550
+Lalu saya akan membuat seri dua dengan cara yang sangat mirip.
+
+91
+00:06:54,560 --> 00:06:58,220
+Saya akan mengatakan PD seri itu juga.
+
+92
+00:06:58,400 --> 00:07:01,200
+Katakanlah 5: 4.
+
+93
+00:07:02,570 --> 00:07:10,850
+Dan kemudian untuk indeks saya akan melanjutkan dan mengatakan USA Jerman dan saya akan dengan sengaja mengubah salah satu dari ini kita
+
+94
+00:07:10,850 --> 00:07:18,110
+akan mengatakan Italia sebagai satu atau dua negara lain dan kemudian kita akan mengatakan Jepang dan kemudian jika saya
+
+95
+00:07:18,110 --> 00:07:21,140
+check out seri dua saya mendapatkan 1-5.
+
+96
+00:07:21,150 --> 00:07:24,360
+Jadi Italia berbeda di sini dan memiliki titik data yang berbeda.
+
+97
+00:07:24,380 --> 00:07:29,720
+Sekarang jika saya benar-benar ingin mengambil informasi dari seri itu akan bekerja
+
+98
+00:07:29,720 --> 00:07:35,420
+sangat mirip dengan mengambil informasi dari jenis kamus python dalam seri dan kemudian sebagai
+
+99
+00:07:35,420 --> 00:07:39,950
+string Anda dapat melanjutkan dan mengetikkan label indeks aktual USA.
+
+100
+00:07:39,950 --> 00:07:44,980
+Sekarang perlu diingat saya mengetik ini sebagai string karena saya tahu bahwa indeks adalah string.
+
+101
+00:07:45,020 --> 00:07:51,230
+Jika saya bekerja untuk seri seperti di sini yang memiliki 0 1 atau 2 Anda baru saja melewati bilangan bulat.
+
+102
+00:07:51,230 --> 00:07:54,990
+Itu tergantung pada tipe data apa indeks aktual Anda.
+
+103
+00:07:55,010 --> 00:07:55,950
+Baiklah.
+
+104
+00:07:56,360 --> 00:07:59,710
+Biasanya indeks Anda diharapkan berupa angka atau string.
+
+105
+00:07:59,810 --> 00:08:07,480
+Baik melewati satu atau satu dan kemudian string atau ACR satu dan apa pun indeks integer Anda.
+
+106
+00:08:07,490 --> 00:08:12,480
+Jadi misalnya jika saya cepat membuat seri lain seperti SC atau tiga.
+
+107
+00:08:12,560 --> 00:08:20,210
+Baiklah, katakan PD seri itu dan kami hanya akan menyampaikan data itu sebagai label.
+
+108
+00:08:20,570 --> 00:08:22,800
+Saya memeriksa C atau tiga.
+
+109
+00:08:23,000 --> 00:08:24,980
+Sekarang saya memiliki ABC sebagai poin data saya.
+
+110
+00:08:24,980 --> 00:08:28,670
+Tipe adalah objek yang jenisnya merujuk pada fakta bahwa itu adalah string.
+
+111
+00:08:28,880 --> 00:08:34,310
+Dan saya dapat mengambil hal-hal ini dengan indeks integer yang semacam bagaimana Anda melakukan ini untuk nomor
+
+112
+00:08:34,310 --> 00:08:35,510
+yang lebih tinggi.
+
+113
+00:08:35,840 --> 00:08:36,800
+Dan kemudian ada string.
+
+114
+00:08:36,860 --> 00:08:38,370
+Kembali ke saya.
+
+115
+00:08:38,420 --> 00:08:43,610
+Jadi, Anda hanya memasukkan label indeks yang sebenarnya itu akan mengembalikan data yang sesuai dengan label indeks.
+
+116
+00:08:44,180 --> 00:08:49,750
+Sejauh operasi yang sangat mendasar untuk melakukan serangkaian mereka biasanya dilakukan berdasarkan indeks.
+
+117
+00:08:49,760 --> 00:08:56,960
+Berarti jika saya mengatakan sesuatu seperti atau 1 dan kemudian kita memiliki C atau dua dan katakanlah saya mencoba menambahkan ini
+
+118
+00:08:56,960 --> 00:09:00,080
+jadi saya katakan SE1 ditambah S-E adalah dua.
+
+119
+00:09:00,320 --> 00:09:04,970
+Apa yang akan terjadi adalah itu akan mencoba untuk mencocokkan operasi berdasarkan indeks yang akan
+
+120
+00:09:04,970 --> 00:09:08,620
+mengatakan USA ada di sini dan USA ada di sini.
+
+121
+00:09:08,630 --> 00:09:14,480
+Jadi mereka akan menambahkannya dan mengatakan sebagai hasilnya USA akan sama dengan tempat tidak ditemukannya pertandingan.
+
+122
+00:09:14,510 --> 00:09:16,060
+Seperti italia.
+
+123
+00:09:16,070 --> 00:09:19,690
+Ini akan menempatkan NULL dan kemudian USSR juga bukan untuk mereka.
+
+124
+00:09:19,730 --> 00:09:23,980
+Jadi itu akan juga meletakkan objek neon di sana mari kita pergi dan melihat apa yang terjadi ketika kita menjalankan ini.
+
+125
+00:09:24,530 --> 00:09:30,920
+Dan di sana kita melihat hasilnya jadi AS 2. 0 Jepang berusia 8 tahun. 00 Jerman berusia 4 tahun. 0 dan kemudian bekerja tidak menemukan
+
+126
+00:09:30,920 --> 00:09:31,380
+kecocokan.
+
+127
+00:09:31,400 --> 00:09:33,370
+Itu pergi ke depan dan memasukkannya ke dalam nilai nol.
+
+128
+00:09:33,650 --> 00:09:38,870
+Sesuatu yang perlu dicatat di sini adalah bahwa ketika Anda melakukan operasi dengan seri
+
+129
+00:09:38,870 --> 00:09:44,730
+Pandurs dan benar-benar hampir semua objek dasar pyre nama Panda Anda integer akan dikonversi menjadi pelampung.
+
+130
+00:09:45,050 --> 00:09:50,480
+Dan itu agar Anda tidak sengaja kehilangan informasi berdasarkan dari beberapa divisi aneh dan itu harus dilakukan
+
+131
+00:09:50,480 --> 00:09:51,870
+lebih dari Python juga.
+
+132
+00:09:52,040 --> 00:09:57,680
+Dan fakta bahwa visi sejati versus pembagian kelas sebenarnya dibedakan dalam versi yang lebih lama.
+
+133
+00:09:58,100 --> 00:10:02,630
+Jika Anda menggunakan Python 3 pada dasarnya tidak perlu khawatir tentang hal ini, tetapi
+
+134
+00:10:02,630 --> 00:10:09,290
+Anda hanya perlu mengingat bahwa panderer dan MPI akan selalu mengonversi hal-hal agar mengalir agar dapat mempertahankan semua informasi yang mungkin.
+
+135
+00:10:09,720 --> 00:10:15,380
+OK kita akan pergi ke depan dan berhenti di sini untuk saat ini dan beralih ke frame data yang
+
+136
+00:10:15,380 --> 00:10:19,410
+dapat memperluas lebih banyak pada konsep seri untuk sepenuhnya memahami frame data.
+
+137
+00:10:19,460 --> 00:10:23,870
+Anda hanya perlu mengetahui dasar-dasar seri yang hanya mereka beri label indeks dan kemudian titik
+
+138
+00:10:23,870 --> 00:10:27,770
+data benar-benar sepanjang kursus ini kita tidak akan bekerja terlalu banyak dengan seri.
+
+139
+00:10:27,770 --> 00:10:32,190
+Kita akan bekerja lebih banyak dengan bingkai data yang merupakan kuda panda sejati.
+
+140
+00:10:32,210 --> 00:10:33,980
+Ayo maju dan lompat ke kuliah berikutnya.
+
+141
+00:10:33,990 --> 00:10:37,400
+Kami akan berbicara lebih banyak detail tentang pand frame data tersebut.
+
+142
+00:10:37,400 --> 00:10:39,510
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya.

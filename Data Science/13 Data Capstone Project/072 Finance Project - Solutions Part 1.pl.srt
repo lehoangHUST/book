@@ -1,0 +1,895 @@
+1
+00:00:05,310 --> 00:00:06,170
+Cześć wszystkim.
+
+2
+00:00:06,170 --> 00:00:10,700
+Witaj w dniu, w którym wykładowca finansów w zakresie rozwiązań projektowych wykładowca w tym wykładzie.
+
+3
+00:00:10,710 --> 00:00:13,590
+Przejdziemy do rozwiązania dla projektu finansowego.
+
+4
+00:00:13,860 --> 00:00:16,550
+Przejdźmy dalej i przejdź do notatnika Jupiter, aby zacząć.
+
+5
+00:00:16,860 --> 00:00:22,470
+OK, więc jesteśmy na notatniku Jupitera, kiedy wychodzimy i przewijamy do sekcji danych.
+
+6
+00:00:23,220 --> 00:00:29,760
+Pierwszą rzeczą, którą musieliśmy zrobić, to fakt, że pandy są odczytywane bezpośrednio z Google Finanse. Jest kilka uwag o
+
+7
+00:00:29,790 --> 00:00:33,650
+tym, że musisz zainstalować czytnik danych Pandurs, aby to działało.
+
+8
+00:00:33,660 --> 00:00:37,290
+I jak wspomniałem w poprzednim wykładzie, możesz to zrobić, przechodząc
+
+9
+00:00:37,290 --> 00:00:43,110
+do linii poleceń i mówiąc: Pipp zainstaluj Pandurs przerwał czytnik danych lub zainstalował czytnik danych przechowywany przez Pandę.
+
+10
+00:00:43,110 --> 00:00:47,880
+I znowu tutaj są notatki lub linki lub więcej wskazówek dotyczących instalacji.
+
+11
+00:00:48,540 --> 00:00:51,650
+Ok, więc chcieliśmy zrobić ten import właśnie tutaj.
+
+12
+00:00:51,660 --> 00:00:54,190
+Poszedłem naprzód i po prostu je prowadziłem, odkąd byłem już wypełniony.
+
+13
+00:00:54,420 --> 00:00:56,640
+A teraz jesteśmy w sekcji danych.
+
+14
+00:00:56,640 --> 00:01:01,680
+Pierwszą rzeczą, którą chcę zrobić, to uzyskać dane za pomocą czytnika danych Panas i możemy uzyskać informacje o stanie
+
+15
+00:01:01,680 --> 00:01:02,760
+dla następujących banków.
+
+16
+00:01:02,850 --> 00:01:08,480
+Bank of America Citigroup Goldman Sachs JP Morgan Chase Morgan Stanley i Wells Fargo mówią,
+
+17
+00:01:08,480 --> 00:01:15,690
+że będziemy przyglądać się bankom i zmianie ich wartości w czasie kryzysu finansowego, a tym, co chcemy zrobić, to dowiedzieć
+
+18
+00:01:15,690 --> 00:01:20,880
+się, jak zdobyć dane giełdowe od 1 stycznia 2006 r. do 1 stycznia
+
+19
+00:01:20,880 --> 00:01:26,620
+2016 r. dla każdego z tych banków i chcemy, aby każdy bank był oddzielną ramą danych.
+
+20
+00:01:26,790 --> 00:01:31,620
+Jeśli nazwa zmiennej dla tego banku jest symbolem tickera i przechodzimy do kilku kroków, najpierw musimy
+
+21
+00:01:31,620 --> 00:01:36,690
+użyć tego czasu, aby ustawić obiekty czasu rozpoczęcia i zakończenia, wtedy musimy znaleźć symbol tickera dla
+
+22
+00:01:36,690 --> 00:01:37,620
+każdego banku.
+
+23
+00:01:37,710 --> 00:01:43,280
+Numer trzy musimy dowiedzieć się, jak korzystać z czytnika danych, aby pobrać informacje lub informacje o magazynie.
+
+24
+00:01:43,500 --> 00:01:48,540
+I tutaj jest link do korzystania z tej strony dokumentacji dla wskazówek i instrukcji.
+
+25
+00:01:48,540 --> 00:01:51,320
+A w rzeczywistości ten link jest rzeczywiście dość pouczający.
+
+26
+00:01:51,330 --> 00:01:57,660
+Zasadniczo daje odpowiedź, jeśli przewiniesz tutaj trochę, jak pobierać informacje.
+
+27
+00:01:57,690 --> 00:02:02,760
+Jeśli więc przewiniesz w dół, otrzymasz od Google Finance informacje o tym, jak pobierać informacje w cenach giełdowych z Google
+
+28
+00:02:02,760 --> 00:02:03,230
+Finance.
+
+29
+00:02:03,240 --> 00:02:09,210
+Możesz śmiało i zasadniczo po prostu skopiować i wkleić ten kod z dokumentacji i będzie działał zgodnie
+
+30
+00:02:09,240 --> 00:02:10,160
+z oczekiwaniami.
+
+31
+00:02:10,380 --> 00:02:14,430
+Więc mam zamiar iść dalej i zasadniczo skopiować i wkleić ten kod, faktycznie go wypisać, więc mogę to
+
+32
+00:02:14,430 --> 00:02:15,090
+trochę wyjaśnić.
+
+33
+00:02:15,090 --> 00:02:20,190
+Zaczniemy od daty rozpoczęcia i zakończenia, a następnie pokażemy, jak
+
+34
+00:02:20,190 --> 00:02:23,070
+korzystać z internetowego czytnika danych.
+
+35
+00:02:23,160 --> 00:02:23,760
+DOBRZE.
+
+36
+00:02:24,040 --> 00:02:31,610
+Pierwszą rzeczą, którą chcę zrobić, to powiedzieć, start, a następnie zadzwonić Date Time Date Time tylko trochę dziwne, aby zadzwonić data
+
+37
+00:02:31,620 --> 00:02:34,150
+czas data, ale to tylko konwencja.
+
+38
+00:02:34,410 --> 00:02:40,400
+A potem chcemy przejść rok w roku i dzień, który będzie naszą datą początkową.
+
+39
+00:02:40,470 --> 00:02:46,500
+I znowu jest to po prostu kopiowanie i wklejanie kodu właśnie tutaj z dokumentacji.
+
+40
+00:02:47,190 --> 00:02:51,410
+A potem zrobię to samo, ale zamiast gwiazdy będzie to moja data końcowa.
+
+41
+00:02:51,750 --> 00:02:57,080
+A to będzie miało miejsce w 2006 roku.
+
+42
+00:02:58,080 --> 00:03:04,820
+I wtedy musieliśmy obliczyć paski dla różnych banków, takich jak Bank of America, a pierwszy z
+
+43
+00:03:04,830 --> 00:03:10,100
+nich jest rzeczywiście pokazany tutaj, A C to dane, które odczytuje BAMC.
+
+44
+00:03:10,170 --> 00:03:16,290
+Google start ends pozwól mi odejść i pokazać ci przykład tego, jak
+
+45
+00:03:16,470 --> 00:03:29,610
+to wygląda, powiedzmy, że B A C równa się myślom danych, myślącym o czytniku assin B B C to ciąg Google, a potem początek i koniec.
+
+46
+00:03:29,610 --> 00:03:29,840
+W porządku.
+
+47
+00:03:29,840 --> 00:03:30,840
+Wygląda, jakby to działało.
+
+48
+00:03:30,840 --> 00:03:32,250
+Przejdźmy dalej i sprawdź wynik.
+
+49
+00:03:32,250 --> 00:03:33,900
+B A C.
+
+50
+00:03:34,230 --> 00:03:39,960
+I tutaj mamy B C, który jest w istocie ramką danych z indeksem daty, a następnie ceną
+
+51
+00:03:39,960 --> 00:03:43,800
+otwarcia wysoką ceną, niską ceną, ceną zamknięcia, a następnie wolumenem.
+
+52
+00:03:43,800 --> 00:03:48,770
+A to w gruncie rzeczy przekłada się tylko na ceny akcji ceny otwarcia na giełdę państw
+
+53
+00:03:48,790 --> 00:03:51,580
+o wysokich i niskich wartościach w tym dniu.
+
+54
+00:03:51,630 --> 00:03:56,040
+A następnie cena zamknięcia w tym dniu, a następnie wielkość to tylko rzeczywista wielkość, ile
+
+55
+00:03:56,040 --> 00:03:58,120
+akcji jest przedmiotem obrotu w tym dniu.
+
+56
+00:03:58,500 --> 00:04:03,750
+To, co musisz zrobić, to powtórzyć dla innych banków, a żeby dowiedzieć się, jakie
+
+57
+00:04:03,750 --> 00:04:08,280
+są giełdowe banki, możesz po prostu użyć zwykłego wyszukiwania w Google.
+
+58
+00:04:08,280 --> 00:04:13,720
+Po prostu wyszukasz w Google nazwę banku, np. Giełdę Citigroup Plus. i znajdziesz to.
+
+59
+00:04:14,550 --> 00:04:14,890
+W porządku.
+
+60
+00:04:14,970 --> 00:04:19,740
+Zamierzam wyjść i skopiować i wkleić pozostałe polecenia, ponieważ jest to dokładnie
+
+61
+00:04:19,740 --> 00:04:21,640
+to samo, co wcześniej.
+
+62
+00:04:21,660 --> 00:04:29,190
+Mam więc Citigroup, że Goldman Sachs to po prostu G-S J. P. Morgan Chase JPM Morgan Stanley's EMIs
+
+63
+00:04:29,250 --> 00:04:31,670
+i Wells Fargo WFC.
+
+64
+00:04:31,970 --> 00:04:37,710
+Jedynymi argumentami, które przekazujesz czytelnikowi, są giełdowe akcje, które mają ciąg znaków, a on repasuje w Google,
+
+65
+00:04:37,710 --> 00:04:41,720
+a to oznacza, że korzystasz z Google Finance, aby pobrać dane.
+
+66
+00:04:41,730 --> 00:04:47,640
+Możesz także użyć Yahoo Finance, ale wolę Google Finance tylko dlatego, że Yahoo przeszedł niedawno transformację
+
+67
+00:04:47,640 --> 00:04:52,710
+lub został przejęty, więc lepiej jest go utrzymywać z Google, a następnie możesz po
+
+68
+00:04:52,710 --> 00:04:56,580
+prostu wstawić daty rozpoczęcia i zakończenia jako informacje o czasie.
+
+69
+00:04:56,610 --> 00:04:59,940
+Pójdźmy dalej i uruchom tę komórkę i zobaczmy, co się stanie.
+
+70
+00:04:59,940 --> 00:05:04,350
+Dzieje się tak, gdy uruchomisz to wszystko razem, może to trochę potrwać, ponieważ pobiera wszystkie
+
+71
+00:05:04,350 --> 00:05:05,560
+te informacje z Internetu.
+
+72
+00:05:05,580 --> 00:05:07,680
+Więc idź dalej i bądź cierpliwy, podczas gdy działa.
+
+73
+00:05:07,710 --> 00:05:09,030
+No to gotowe.
+
+74
+00:05:09,030 --> 00:05:12,920
+Teraz przejdźmy dalej i zobaczmy w innej ramce danych.
+
+75
+00:05:12,990 --> 00:05:15,540
+Idź naprzód i sprawdź bałagan dla Morgan Stanley.
+
+76
+00:05:15,550 --> 00:05:20,700
+Widzimy, że jest to to samo, co datowane otwarcie na bardzo niskie zamknięcie,
+
+77
+00:05:20,700 --> 00:05:26,930
+a następnie nazwy sprzedawanych wolumenów idą w dół od 2006 r. Aż do 1 grudnia 2015 r.
+
+78
+00:05:27,030 --> 00:05:33,890
+Więc teraz sylwester jest dobry i przejdź do następnego zadania, gdy tag hash się skończy.
+
+79
+00:05:33,900 --> 00:05:39,440
+Teraz chcieliśmy stworzyć listę symboli tickerów jako łańcuchów w kolejności alfabetycznej, aby wywołać tę listę.
+
+80
+00:05:39,990 --> 00:05:45,260
+Zróbmy to, zadzwonimy do tickera, a następnie przejdziemy przez BSEE.
+
+81
+00:05:46,350 --> 00:05:56,880
+Następnie w pierwszym kwartale C mamy G-S, a następnie JPM i EMI.
+
+82
+00:05:56,880 --> 00:06:04,380
+A potem wreszcie WFC, a następnie chcemy użyć PD dot com, możesz połączyć ramki danych banku razem do pojedynczej
+
+83
+00:06:04,620 --> 00:06:09,900
+ramki danych o nazwie Bank podkreślenia zapasów i chcesz ustawić argumenty kluczy
+
+84
+00:06:09,900 --> 00:06:11,220
+równe liście ticker.
+
+85
+00:06:11,220 --> 00:06:13,880
+Zwróć też uwagę na dostęp do połączenia.
+
+86
+00:06:14,310 --> 00:06:18,600
+I to jest po prostu rodzaj ostrzeżenia, że musisz ustawić dostęp równy, gdy chcesz
+
+87
+00:06:18,630 --> 00:06:20,250
+połączyć się wzdłuż kolumn.
+
+88
+00:06:20,250 --> 00:06:21,080
+Zróbmy to.
+
+89
+00:06:21,150 --> 00:06:31,130
+Tak więc chcę utworzyć ramkę danych banku podkreślenia akcji, a następnie powiem, że PD concat i będzie zawierać listę wszystkich ramek
+
+90
+00:06:31,710 --> 00:06:33,930
+danych, które chcę połączyć.
+
+91
+00:06:33,950 --> 00:06:44,560
+Tak więc chcę połączyć ramkę danych BBC, patrz G-S CPM amice Morgan Stanley, a następnie Wells Fargo.
+
+92
+00:06:45,270 --> 00:06:49,860
+Powodem, dla którego nie przekazuję tych argumentów, są ciągi znaków, ponieważ są to rzeczywiste
+
+93
+00:06:49,860 --> 00:06:52,020
+ramki danych, które zostały tutaj utworzone.
+
+94
+00:06:52,010 --> 00:06:55,080
+W porządku, więc przechodząc na listę danych, które Francja chce połączyć.
+
+95
+00:06:55,080 --> 00:07:00,300
+Chcę połączyć je wszystkie wzdłuż kolumn, co ma sens, ponieważ wszystkie one mają ten sam indeks, który
+
+96
+00:07:00,300 --> 00:07:03,040
+mają ten sam określony indeks daty i czasu.
+
+97
+00:07:03,060 --> 00:07:08,940
+Chcę zrobić to połączenie wzdłuż osi salsy kolumn równe 1, a wtedy jego argumentem będzie
+
+98
+00:07:08,940 --> 00:07:10,230
+lista tego tickera
+
+99
+00:07:13,630 --> 00:07:16,300
+i zobaczmy, jak wygląda teraz bank akcji.
+
+100
+00:07:16,350 --> 00:07:20,350
+On jest szefem i dostajemy coś, co wygląda tak.
+
+101
+00:07:20,370 --> 00:07:25,740
+Zasadniczo mamy teraz wielopoziomowy indeks na kolumnach, na których masz giełdę banku, a
+
+102
+00:07:25,770 --> 00:07:33,490
+następnie otwarte wysokie niskie zamknięcie i wolumen, a wszystko ma ten sam indeks daty, co ma sens w tym, że
+
+103
+00:07:33,520 --> 00:07:35,840
+chcemy ustawić poziomy nazw kolumn.
+
+104
+00:07:36,060 --> 00:07:38,120
+I to jest faktycznie wypełnione dla ciebie.
+
+105
+00:07:38,130 --> 00:07:42,290
+Aby to zrobić dobrze, musimy powiedzieć, że banki podkreślają zapasy.
+
+106
+00:07:42,300 --> 00:07:47,190
+Kolumny nie nazywają się, a następnie ustawiamy je na tych poziomach, na pasku bankowym i informacjach giełdowych.
+
+107
+00:07:47,190 --> 00:07:54,720
+Po uruchomieniu tej sprzedaży i jeśli jesteś w banku Chick, ponownie podkreślasz zapasy, wygląda to tak.
+
+108
+00:07:54,720 --> 00:07:59,910
+I jedyna różnica polega na tym, że jest to faktycznie oznaczone tym pierwszym poziomem
+
+109
+00:07:59,910 --> 00:08:05,230
+indeksu w kolumnach oznaczonym jako bankowy Bankowy baner, a następnie drugi jest oznaczony jako informacja giełdowa.
+
+110
+00:08:05,840 --> 00:08:06,410
+DOBRZE.
+
+111
+00:08:06,570 --> 00:08:07,130
+Idąc dalej.
+
+112
+00:08:07,170 --> 00:08:12,620
+Czas przeprowadzić analizę danych eksploracyjnych, a przed kontynuowaniem tego, co
+
+113
+00:08:12,720 --> 00:08:19,350
+chciałem, zachęcam do przejrzenia dokumentacji nie tylko na wielopoziomowym indeksowaniu tutaj, ale także
+
+114
+00:08:22,170 --> 00:08:28,850
+za pomocą kropek X i faktycznie przekroczyliśmy przekrój metoda w wykładzie operacji panelowych.
+
+115
+00:08:28,890 --> 00:08:33,540
+Możesz więc przejrzeć i wrócić do tego wykładu na wypadek, gdybyś chciał objaśnienia
+
+116
+00:08:33,800 --> 00:08:34,700
+nadmiaru wideo.
+
+117
+00:08:34,950 --> 00:08:40,830
+Ale w zasadzie ta metoda przekrojów pozwala ci chwytać rzeczy wewnątrz wielopoziomowego indeksu i jest tu
+
+118
+00:08:40,830 --> 00:08:41,810
+kilka przykładów.
+
+119
+00:08:41,840 --> 00:08:43,710
+Mogę iść dalej i przybliżać je.
+
+120
+00:08:43,770 --> 00:08:48,660
+Mam nadzieję, że przyjdź tutaj i zapoznaj się z przykładami, w których widzisz ramkę danych, którą
+
+121
+00:08:48,660 --> 00:08:50,670
+widzisz, aby móc wywołać przekrój a.
+
+122
+00:08:50,880 --> 00:08:55,410
+Widać też, że mogą wywoływać przekroje przez podanie krotki lub listy i
+
+123
+00:08:55,410 --> 00:08:57,150
+chwytanie rzeczy od środka.
+
+124
+00:08:57,150 --> 00:08:57,570
+W porządku.
+
+125
+00:08:57,780 --> 00:09:02,790
+Możesz iść do przodu i odwoływać się do wykładu z operacji pandy lub do mojego
+
+126
+00:09:02,790 --> 00:09:06,660
+własnego wyjaśnienia tego dostępu, ale jest to ważne, ponieważ rozumieją to,
+
+127
+00:09:06,660 --> 00:09:13,530
+ponieważ będzie to znaczna część tego projektu, gdy będziemy podążać, aby zdobyć informacje na temat konkretnych banków lub konkretnych instytucji. kolumny.
+
+128
+00:09:13,530 --> 00:09:14,010
+W porządku.
+
+129
+00:09:14,070 --> 00:09:19,620
+Nasze pierwsze pytania dotyczące analizy eksploracyjnej, na które należy odpowiedzieć, brzmią: Jaka jest maksymalna cena
+
+130
+00:09:19,620 --> 00:09:22,740
+odzieży za każdy bank zatrzymany w danym okresie.
+
+131
+00:09:22,740 --> 00:09:24,830
+Możemy to zrobić na dwa różne sposoby.
+
+132
+00:09:24,840 --> 00:09:30,140
+Jednym ze sposobów jest to, że możesz powiedzieć coś takiego w przypadku zaznaczenia na pasku.
+
+133
+00:09:30,150 --> 00:09:41,220
+Pamiętaj, że ticker to ta lista nazw tykerów, powiedz coś w stylu "chwyć bankowe akcje". Po prostu zobaczmy,
+
+134
+00:09:41,310 --> 00:09:48,690
+jak to wygląda, jeśli powiem na przykład, że skomentowałem te linijki i
+
+135
+00:09:48,690 --> 00:09:52,590
+pokazałem, jak wyglądają banknoty jako przypomnienie.
+
+136
+00:09:52,590 --> 00:09:53,970
+Więc mamy szefa akcji banków.
+
+137
+00:09:53,970 --> 00:09:58,810
+Jest to wielopoziomowy indeks na najwyższych wielopoziomowych kolumnach.
+
+138
+00:09:58,880 --> 00:10:06,180
+Jeśli wstawisz na przykład b c, otrzymam tu ramkę danych, co oznacza, że mogę wywołać zamknięcie tej ramki danych, która mi
+
+139
+00:10:06,510 --> 00:10:07,450
+to daje.
+
+140
+00:10:07,470 --> 00:10:13,620
+A ponieważ chcę maksymalnej ceny zamknięcia, mogę nazwać max i daje mi to coś, co
+
+141
+00:10:13,620 --> 00:10:17,580
+wygląda tak, że zasadniczo po prostu zastąpiłbym te polecenia.
+
+142
+00:10:17,640 --> 00:10:25,950
+Wracamy tutaj, aby zaznaczyć, a potem będę mógł to wydrukować.
+
+143
+00:10:25,980 --> 00:10:31,690
+Mogę powiedzieć coś takiego jak przecinek księcia Ticha.
+
+144
+00:10:31,740 --> 00:10:36,710
+I tutaj mamy każdy bank zapasy max cena zamknięcia przez cały okres czasu.
+
+145
+00:10:36,870 --> 00:10:38,200
+To jeden sposób, aby to zrobić.
+
+146
+00:10:38,340 --> 00:10:45,660
+Lepszym sposobem na zrobienie tego, jeśli chcesz być doświadczonym pandą, jest skorzystanie z tej metody dostępu,
+
+147
+00:10:45,660 --> 00:10:54,480
+a co robisz, to znaczy, że akcje bankowe mają dostęp do przekroju, przez który przechodzisz w kluczu, który chcesz przekierować
+
+148
+00:10:54,480 --> 00:10:56,330
+na w tym przypadku.
+
+149
+00:10:56,520 --> 00:10:58,880
+Chcę to zrobić z bliska.
+
+150
+00:10:59,610 --> 00:11:05,520
+Chcę powiedzieć, że jest na osiach kolumn, ponieważ robię to w kolumnie, więc podaj x 0 do 1, a
+
+151
+00:11:05,550 --> 00:11:10,740
+następnie określ poziom, ponieważ jest w środku, a poziom nazywa się informacją o stanie magazynu.
+
+152
+00:11:10,750 --> 00:11:15,330
+Pamiętaj, dlatego właśnie wróciliśmy tutaj.
+
+153
+00:11:15,330 --> 00:11:16,340
+Przewiń w górę.
+
+154
+00:11:16,470 --> 00:11:17,620
+Powiedzieliśmy informacje o akcjach.
+
+155
+00:11:17,670 --> 00:11:21,460
+Więc te zewnętrzne poziomy nazywają Ticker bankowy tymi poziomami poziomów, zwanymi informacjami o zapasach.
+
+156
+00:11:21,480 --> 00:11:22,650
+Więc w zasadzie pytamy.
+
+157
+00:11:22,800 --> 00:11:30,000
+Dajcie mi zamkniętą kolumnę dla wszystkich banków, a potem pójdziemy do przodu i po prostu nazwiemy tę ofertę maksimum,
+
+158
+00:11:30,060 --> 00:11:36,150
+a jeśli to zrobimy, otrzymamy dokładnie to samo, ale jest trochę ładniej sformatowana i była to
+
+159
+00:11:36,180 --> 00:11:39,010
+tylko jedna linia czysty kod tutaj.
+
+160
+00:11:39,030 --> 00:11:39,590
+W porządku.
+
+161
+00:11:39,690 --> 00:11:44,310
+To była maksymalna cena zamknięcia dla akcji banku w całym okresie.
+
+162
+00:11:44,670 --> 00:11:50,220
+Teraz mamy zamiar zrobić to stworzyć nową pustą ramkę danych zwaną zwrotami, a ta ramka
+
+163
+00:11:50,250 --> 00:11:56,220
+danych będzie zawierała zwroty dla każdego banku akcji, a zwroty są zwykle definiowane przez to równanie,
+
+164
+00:11:56,220 --> 00:12:00,680
+gdzie masz zwrot przez pewien okres czasu, a następnie zapłacić cene.
+
+165
+00:12:00,690 --> 00:12:05,070
+Ale w gruncie rzeczy to, co to jest, rozkłada się na cenę jednocześnie.
+
+166
+00:12:05,070 --> 00:12:07,430
+W tym przypadku mamy do czynienia tylko z datami.
+
+167
+00:12:07,620 --> 00:12:12,390
+Tak więc cena, że dzień podzielony przez poprzedniego dnia minus jeden.
+
+168
+00:12:12,390 --> 00:12:19,320
+Skoro masz tylko procentowy zwrot i możemy wyjść i powiedzieć zwroty, zrobimy pustą
+
+169
+00:12:20,580 --> 00:12:24,510
+ramkę danych PD ramki i uruchomimy to.
+
+170
+00:12:24,510 --> 00:12:28,680
+Mamy więc pustą ramkę danych zwaną zwrotami, a stan ramki będzie zawierał zwroty
+
+171
+00:12:28,680 --> 00:12:29,820
+dla każdego banku.
+
+172
+00:12:30,120 --> 00:12:35,520
+A oto równanie, w którym zamierzamy zrobić, to poruszać się dalej i powiedzieć, że możemy
+
+173
+00:12:35,520 --> 00:12:41,310
+użyć zmiany podkreślenia Panas t lub metody zmiany procentowej w kolumnie zamykającej, aby utworzyć kolumnę reprezentującą wartość zwracaną.
+
+174
+00:12:41,850 --> 00:12:47,950
+Tak więc naszym zadaniem było stworzenie pętli for, która przechodzi do każdego banku giełdowego, który
+
+175
+00:12:47,970 --> 00:12:53,830
+tworzy tę kolumnę zwrotną i ustawia ją jako kolumnę w ramce danych zwrotów.
+
+176
+00:12:54,180 --> 00:12:55,520
+Teraz jest to z pewnością trochę trudne.
+
+177
+00:12:55,530 --> 00:12:56,900
+A więc chodźmy i zepsuj to.
+
+178
+00:12:56,910 --> 00:13:00,410
+Chcemy stworzyć pętlę for, która pasuje do każdego banku akcji banku.
+
+179
+00:13:00,480 --> 00:13:07,080
+Tak więc chcę zaoszczędzić na zaznaczenie w tickerze. A następnie chcę utworzyć kolumnę zwrotów, więc powróć
+
+180
+00:13:07,080 --> 00:13:10,590
+i to jest moja nowa ramka danych tutaj.
+
+181
+00:13:10,740 --> 00:13:21,270
+Utworzę nową kolumnę, a nazwa kolumny będzie brzmiała: Tich połączony ze zwrotem
+
+182
+00:13:21,270 --> 00:13:30,490
+i będzie równy zasobom banków po tej cenie zamknięcia.
+
+183
+00:13:30,510 --> 00:13:35,490
+A potem po prostu nazywamy zmianą PCT i to było trochę trudne do wymyślenia.
+
+184
+00:13:36,000 --> 00:13:41,280
+Zacznijmy więc od tego, a teraz sprawdźmy naszą ramkę danych zwrotów lub przynajmniej jej nagłówek i
+
+185
+00:13:41,280 --> 00:13:49,890
+tutaj zawsze zwracamy ramkę danych i ma to sens, że nasza pierwsza wartość nie ma żadnego lub nie, ponieważ nie można uzyskać procentu powrócić pierwszego dnia,
+
+186
+00:13:49,890 --> 00:13:54,030
+ponieważ nie ma nic w przeszłości, z czym można by to
+
+187
+00:13:54,030 --> 00:13:54,450
+porównać.
+
+188
+00:13:54,460 --> 00:13:55,710
+To ma sens.
+
+189
+00:13:55,710 --> 00:14:02,280
+I widzisz, że w zasadzie otrzymujesz swoją wartość zwrotną lub idziemy do przodu, a teraz zróbmy parę
+
+190
+00:14:02,280 --> 00:14:05,520
+wykresów używając Seaborn z ramki danych zwrotów.
+
+191
+00:14:05,520 --> 00:14:06,480
+I jest tam kilka pytań.
+
+192
+00:14:06,480 --> 00:14:09,420
+Co wyróżnia Cię i czy możesz zrozumieć dlaczego.
+
+193
+00:14:09,680 --> 00:14:16,770
+Co mam zamiar zrobić, to powiedzieć tylko wykresy punktów SNS i zwroty połączeń.
+
+194
+00:14:16,770 --> 00:14:21,690
+Teraz, jeśli po prostu zadzwonię do zwrotu, zauważysz, że coś się stanie, dostaniemy błąd i
+
+195
+00:14:21,690 --> 00:14:28,230
+bezbłędne przewijanie w dół zauważysz, że jest napisane, że Max musi być większy niż mężczyźni w parametrze zakresu i to
+
+196
+00:14:28,230 --> 00:14:32,210
+jest po prostu oddzwonienie do problemu tutaj, gdzie masz wartość zerową.
+
+197
+00:14:32,370 --> 00:14:41,130
+Musisz więc określić, że chcesz, aby wszystko zaczynało się od indeksu w lokalizacji 1.
+
+198
+00:14:41,520 --> 00:14:43,450
+A teraz, kiedy uciekasz, powinieneś mieć się dobrze.
+
+199
+00:14:43,470 --> 00:14:48,120
+Teraz za plus trochę czasu dla bardzo dużych zbiorów danych, aby mieć to na uwadze, czekając na fabułę.
+
+200
+00:14:48,840 --> 00:14:50,670
+Ale widzisz coś, co wygląda tak.
+
+201
+00:14:50,790 --> 00:14:53,720
+A pytanie brzmiało, co wyróżnia Cię.
+
+202
+00:14:54,030 --> 00:14:59,200
+Cóż, wygląda na to, że zauważysz, że wszystkie te zapasy wyglądają dość normalnie, jeśli chodzi o rozrzucone
+
+203
+00:14:59,200 --> 00:14:59,800
+działki.
+
+204
+00:14:59,800 --> 00:15:01,380
+Wygląda na to, że istnieje pewna korelacja.
+
+205
+00:15:01,530 --> 00:15:05,010
+Ale jeden z nich jest rodzajem tej dziwacznej wiązki prostej.
+
+206
+00:15:05,010 --> 00:15:13,680
+Zauważasz, że dzieje się to wraz z powrotem do Citigroup, a Citigroup rzeczywiście miało poważny krach
+
+207
+00:15:13,680 --> 00:15:14,970
+na giełdzie.
+
+208
+00:15:15,000 --> 00:15:21,270
+A jeśli przejdziesz do linku do Wikipedii, jeśli po prostu przejrzysz Citigroup i zejdziesz tutaj, zauważysz,
+
+209
+00:15:21,300 --> 00:15:28,050
+że w listopadzie 2008 r. Ma to związek z częścią globalnego kryzysu finansowego, że w listopadzie 2008
+
+210
+00:15:28,080 --> 00:15:34,020
+r. Citigroup była niewypłacalna i zobaczymy ta ogromna awaria, kiedy faktycznie wizualizujemy wartość akcji
+
+211
+00:15:34,110 --> 00:15:35,840
+Citigroup na przestrzeni czasu.
+
+212
+00:15:35,850 --> 00:15:40,080
+Ale może iść naprzód i czytać o tym, ale ten rodzaj musi zrobić więcej z historią kryjącą się
+
+213
+00:15:40,350 --> 00:15:42,570
+za naszą analizą danych, dlaczego tak się stało.
+
+214
+00:15:42,720 --> 00:15:47,870
+A to jest dostępne na stronie Wikipedii tylko dla Citigroup jako firmy.
+
+215
+00:15:47,880 --> 00:15:48,330
+W porządku.
+
+216
+00:15:48,360 --> 00:15:53,220
+Mam więc nadzieję, że zauważyłeś dziwne zachowanie tego dziwnego powrotu, ale tak naprawdę
+
+217
+00:15:53,220 --> 00:15:54,480
+to się stało.
+
+218
+00:15:54,480 --> 00:15:55,250
+DOBRZE.
+
+219
+00:15:55,470 --> 00:15:57,890
+Zamierzamy iść dalej i zatrzymać to tutaj.
+
+220
+00:15:58,260 --> 00:16:01,080
+A kiedy wrócimy na drugą część, zamierzamy zbadać sprawę.
+
+221
+00:16:01,080 --> 00:16:06,330
+Powoduje to powrót do nieco późniejszego okresu, a następnie przeprowadzenie dalszych badań w
+
+222
+00:16:06,420 --> 00:16:07,660
+zakresie dystrybucji zwrotów.
+
+223
+00:16:07,830 --> 00:16:10,390
+Następnie wizualizujemy dane jeszcze bardziej.
+
+224
+00:16:10,410 --> 00:16:12,470
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

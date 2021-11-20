@@ -1,0 +1,459 @@
+1
+00:00:05,220 --> 00:00:08,460
+Salve a tutti e benvenuti allo stile e alla conferenza sui colori.
+
+2
+00:00:08,460 --> 00:00:12,690
+Abbiamo mostrato alcune volte come controllare l'estetica delle figure e il trasporto via mare. Ma ora
+
+3
+00:00:12,690 --> 00:00:14,150
+lo esamineremo in modo più formale.
+
+4
+00:00:14,340 --> 00:00:17,600
+Andiamo avanti e saltiamo sul taccuino di Jupiter per iniziare.
+
+5
+00:00:18,450 --> 00:00:20,370
+Bene, eccoci al taccuino di Giove.
+
+6
+00:00:20,370 --> 00:00:25,140
+Sono andato avanti e ho fatto la consueta linea import matplotlib per via marittima e sono andato avanti e
+
+7
+00:00:25,380 --> 00:00:27,250
+ho caricato il set di dati dei suggerimenti.
+
+8
+00:00:27,270 --> 00:00:30,120
+Lasciami entrare e mostrarti come puoi impostare stili particolari.
+
+9
+00:00:30,360 --> 00:00:40,730
+Per esempio, posso fare grafici con il conteggio delle stelle SNL e direi che la colonna del sesso nei suggerimenti per i passen dato che i miei dati contengono dati
+
+10
+00:00:42,070 --> 00:00:49,890
+uguali a quelli in cui ho il terreno dei miei account ha una serie di argomenti che ti permettono di impostare lo
+
+11
+00:00:49,890 --> 00:00:52,220
+stile per il resto del tuo trame.
+
+12
+00:00:52,380 --> 00:00:58,650
+E se andiamo a spostare Tampere per controllare lo stile di sottolineatura, in pratica passi un parametro per lo
+
+13
+00:00:58,650 --> 00:01:00,650
+stile e questa è una stringa.
+
+14
+00:01:00,660 --> 00:01:07,060
+Può essere una griglia bianca con una griglia bianca scura o un segno di spunta ti mostrerà
+
+15
+00:01:07,080 --> 00:01:15,000
+come ciò sembra premere e i bianchi andranno avanti e creerà uno sfondo bianco vuoto per te se hai passato le zecche.
+
+16
+00:01:15,030 --> 00:01:20,670
+Devo dire che fondamentalmente ottieni queste zecche sul bordo della scatola.
+
+17
+00:01:20,700 --> 00:01:22,590
+Poi c'è anche la griglia scura
+
+18
+00:01:25,620 --> 00:01:28,320
+che ti dà lo sfondo originale della griglia scura.
+
+19
+00:01:28,350 --> 00:01:30,660
+E poi c'è anche quello che mi piace davvero.
+
+20
+00:01:30,720 --> 00:01:35,150
+La griglia bianca ti dà sia la chiarezza del bianco, ma anche la griglia.
+
+21
+00:01:35,160 --> 00:01:36,720
+Quindi non perdere queste informazioni.
+
+22
+00:01:36,810 --> 00:01:41,430
+Puoi andare avanti e una sorta di stile di sala giochi e vedere quali preferisci o come i migliori.
+
+23
+00:01:41,430 --> 00:01:46,290
+Ora un'altra cosa che puoi fare è rimuovere le spine.
+
+24
+00:01:46,350 --> 00:01:50,460
+e impostare questo valore in modo tale che sia chiaro cosa stiamo facendo qui.
+
+25
+00:01:50,460 --> 00:01:52,470
+Quindi adesso puoi ancora vedere, lasciami entrare
+
+26
+00:01:52,470 --> 00:01:57,960
+Quindi abbiamo la colonna vertebrale in alto e la colonna vertebrale destra e la colonna vertebrale in basso e sinistra.
+
+27
+00:01:58,410 --> 00:02:06,960
+Se vuoi andare avanti e rimuovere quelli puoi semplicemente dire Asinus alla colonna vertebrale e rimuoverà la colonna vertebrale superiore e quella
+
+28
+00:02:06,960 --> 00:02:11,930
+destra se vuoi continuare a rimuovere la colonna vertebrale inferiore o sinistra.
+
+29
+00:02:11,970 --> 00:02:14,230
+In realtà puoi aggiungerli come parametri.
+
+30
+00:02:14,290 --> 00:02:21,570
+Quindi, in sostanza, in alto a destra e in basso, per impostazione predefinita, in alto e a destra, è vero che devono essere rimossi a sinistra e in
+
+31
+00:02:21,570 --> 00:02:22,760
+basso o non essere rimossi.
+
+32
+00:02:22,770 --> 00:02:28,640
+Ma puoi specificare che vuoi rimuoverlo pronunciando il valore più vero a sinistra e quindi il fondo è vero.
+
+33
+00:02:28,670 --> 00:02:31,500
+Questo rimuoverà fondamentalmente tutte e quattro le spine.
+
+34
+00:02:31,590 --> 00:02:35,670
+Quindi, se capisci se stai cercando qualcosa che sia come una trama molto chiara
+
+35
+00:02:36,060 --> 00:02:38,220
+e bella, magari vuoi presentarla senza spine.
+
+36
+00:02:38,220 --> 00:02:43,090
+Personalmente preferisco le spine lì dentro, quindi vado avanti e rimuoverlo e tenere quelle spine.
+
+37
+00:02:43,500 --> 00:02:46,740
+Ora parliamo di dimensioni e aspetto.
+
+38
+00:02:47,010 --> 00:02:52,560
+È possibile utilizzare le mappe della trama per stimare la dimensione e la larghezza di grandi dimensioni in modo da modificare effettivamente la dimensione della maggior
+
+39
+00:02:52,560 --> 00:02:53,460
+parte dei blocchi Seaborn.
+
+40
+00:02:53,610 --> 00:02:59,310
+le dimensioni e le proporzioni di un grafico a griglia attraverso la dimensione e l'aspetto dei parametri.
+
+41
+00:02:59,310 --> 00:03:04,080
+Quindi sono tutti richiami di base per la mappa accesa e puoi anche controllare
+
+42
+00:03:04,080 --> 00:03:06,730
+Lasciami andare per mostrarti cosa intendo con tutto questo.
+
+43
+00:03:07,050 --> 00:03:12,960
+Ho intenzione di andare avanti e chiamare i grafici del conteggio e notare che lo stile impostato,
+
+44
+00:03:12,960 --> 00:03:21,450
+anche se lo cancello, rimarrà sul posto fino a quando non dico un nuovo stile, ma lo chiamerò "Applausi" a quella cifra e dì "Misura
+
+45
+00:03:21,450 --> 00:03:22,800
+fissa" è uguale a.
+
+46
+00:03:23,190 --> 00:03:26,230
+Diciamo 12 per 3.
+
+47
+00:03:26,790 --> 00:03:32,700
+E si noti che questo in realtà sovrascrive o è una richiamata quando il trasporto marittimo chiama lib di trama Mattale.
+
+48
+00:03:32,990 --> 00:03:36,030
+Madlib imposterà le dimensioni della figura per la trama Seaborn.
+
+49
+00:03:36,060 --> 00:03:42,210
+In questo modo è possibile utilizzare o mappare la conoscenza della trama per quanto riguarda il dimensionamento
+
+50
+00:03:42,210 --> 00:03:45,240
+e l'aspect ratio qui in combinazione con il mare.
+
+51
+00:03:45,270 --> 00:03:48,990
+Ora andiamo avanti e tocciamo il tema della scala e del contesto.
+
+52
+00:03:48,990 --> 00:03:55,200
+SEABORNE viene fornito con un contesto di underscore set conveniente che consente di ignorare i parametri predefiniti e modificare
+
+53
+00:03:55,200 --> 00:03:59,940
+le scale Funt in base a ciò per cui si sta creando la figura.
+
+54
+00:03:59,940 --> 00:04:04,690
+Quindi diciamo che creerai questa figura non per un taccuino ma per un poster.
+
+55
+00:04:04,860 --> 00:04:15,060
+Puoi andare avanti e dire che Asinus ha pensato al contesto di sottolineatura e il contesto richiederà un paio di parametri.
+
+56
+00:04:15,190 --> 00:04:16,300
+Prendi il contesto.
+
+57
+00:04:16,320 --> 00:04:22,920
+E questa sarà una stringa e prende anche una scala di font, i parametri di contesto sono il talk o il
+
+58
+00:04:22,950 --> 00:04:24,700
+poster di un taccuino di carta.
+
+59
+00:04:24,720 --> 00:04:32,520
+Quindi, se vado e basta impostare il contesto, il contesto mi scusa per poster manifesto che ottengo una figura molto più grande e
+
+60
+00:04:32,520 --> 00:04:37,020
+il carattere è anche più grande perché presuppone che stai per metterlo su
+
+61
+00:04:37,020 --> 00:04:37,890
+un poster.
+
+62
+00:04:38,010 --> 00:04:42,570
+E se sei ancora insoddisfatto delle dimensioni del carattere, puoi andare avanti e
+
+63
+00:04:42,660 --> 00:04:47,840
+aggiungerlo agli argomenti della scala del carattere di sottolineatura di un numero maggiore di tre.
+
+64
+00:04:47,850 --> 00:04:50,610
+Quindi è tre volte la dimensione del valore predefinito.
+
+65
+00:04:50,670 --> 00:04:56,130
+E qui puoi effettivamente impostare il contesto per qualunque cosa tu voglia che la figura sia e di
+
+66
+00:04:56,190 --> 00:04:58,950
+solito, di default, sarà nel contesto di un notebook.
+
+67
+00:04:59,050 --> 00:05:06,060
+Quindi puoi andare a dire notebook e questo imposta il contesto delle tue figure.
+
+68
+00:05:06,060 --> 00:05:06,480
+Tutto ok.
+
+69
+00:05:06,540 --> 00:05:08,460
+Abbiamo solo alcune delle basi qui.
+
+70
+00:05:08,460 --> 00:05:13,210
+L'ultima cosa di cui voglio parlare sono le tavolozze e i colori.
+
+71
+00:05:13,260 --> 00:05:16,800
+Abbiamo mostrato grafici prima di specificare un parametro di tonalità.
+
+72
+00:05:16,800 --> 00:05:18,730
+Lasciami entrare e mostrare un esempio di ciò.
+
+73
+00:05:18,870 --> 00:05:26,940
+Per esempio quando abbiamo detto S. N. s n s Lim plots forse vogliamo fare il
+
+74
+00:05:30,840 --> 00:05:37,380
+conto totale contro il tip e quindi i passen tips dato che il data set dei dati di whip equivale a IP.
+
+75
+00:05:37,470 --> 00:05:42,170
+Quindi siamo stati in grado di specificare in precedenza qualcosa come Heugh è uguale a sei.
+
+76
+00:05:42,720 --> 00:05:46,100
+E poi prendiamo questi colori scelti per noi verde e blu.
+
+77
+00:05:46,500 --> 00:05:52,560
+E abbiamo visto prima che possiamo effettivamente passare le argomentazioni di Hallett e ci sono alcune stringhe che possiamo
+
+78
+00:05:52,560 --> 00:05:58,890
+inserire che essenzialmente ti danno una mappa dei colori e abbiamo visto gli aspetti simili per cose come le
+
+79
+00:05:58,890 --> 00:05:59,890
+mappe di calore.
+
+80
+00:05:59,970 --> 00:06:03,600
+Quando metto cose come il magma o mi sento caldo.
+
+81
+00:06:03,900 --> 00:06:06,910
+Ora ti starai chiedendo che cosa siamo in realtà a trovare queste stringhe.
+
+82
+00:06:07,070 --> 00:06:11,420
+Beh, li puoi trovare andando sulla mappa mappa della vita a colori mappa pagina.
+
+83
+00:06:11,490 --> 00:06:14,350
+Lasciami andare per mostrarti come farlo con Google.
+
+84
+00:06:14,490 --> 00:06:15,050
+Puoi andare avanti.
+
+85
+00:06:15,060 --> 00:06:17,680
+Apri una nuova scheda e vai su Google e cerca.
+
+86
+00:06:17,690 --> 00:06:27,210
+La mappa dei colori live di Matt Plot ti porterà in una di queste pagine e stiamo cercando la pagina
+
+87
+00:06:27,210 --> 00:06:29,790
+della documentazione della mappa dei colori.
+
+88
+00:06:30,120 --> 00:06:31,940
+E questo di solito è il primo link qui.
+
+89
+00:06:31,950 --> 00:06:33,820
+C'è il codice di esempio del colore.
+
+90
+00:06:34,140 --> 00:06:40,350
+E se arriviamo a questa pagina ora possiamo vedere la scala del colore e le sfumature effettive, nonché il nome o il
+
+91
+00:06:40,350 --> 00:06:43,860
+nome della stringa che è necessario passare per la mappa dei colori.
+
+92
+00:06:43,860 --> 00:06:50,130
+Quindi, se rimpiccioliamo qui possiamo vedere queste quattro mappe di colori queste sono le mappe dei colori principali ma ci sono
+
+93
+00:06:50,130 --> 00:06:51,660
+anche mappe dei colori sequenziali.
+
+94
+00:06:51,820 --> 00:06:59,280
+Quindi sequenziale due mappe a colori un'altra serie di mappe a colori divergenti mappe a colori qualitative varie e quelle sono le tue
+
+95
+00:06:59,400 --> 00:07:02,310
+opzioni per quanto riguarda le stringhe che hai passato.
+
+96
+00:07:02,310 --> 00:07:09,570
+ho appena venuto qui e invece di coor da passen sismica posto sentito così bene.
+
+97
+00:07:09,570 --> 00:07:17,150
+Quindi per esempio diciamo che volevo scegliere questa mappa cromatica divergente sismica per la tonalità che
+
+98
+00:07:17,160 --> 00:07:22,380
+E qui possiamo ora vedere che ottengo questo tipo di viola e rosso che erano i colori qui ad entrambe le
+
+99
+00:07:22,380 --> 00:07:24,020
+estremità in questa mappa a colori divergenti.
+
+100
+00:07:24,330 --> 00:07:26,330
+E puoi andare avanti e giocare intorno a queste mappe a colori.
+
+101
+00:07:26,330 --> 00:07:27,390
+Ci si diverte molto.
+
+102
+00:07:27,440 --> 00:07:32,380
+Quando Seaborn farà in modo che la trama appaia esattamente come la vuoi tu.
+
+103
+00:07:32,400 --> 00:07:33,360
+Tutto ok.
+
+104
+00:07:33,360 --> 00:07:38,070
+che ha ancora più informazioni sul controllo reale di più della tua estetica e della tua figura.
+
+105
+00:07:38,070 --> 00:07:43,260
+Puoi andare avanti e controllare il quaderno di Giove per stile e colore per ottenere molte più informazioni
+
+106
+00:07:43,530 --> 00:07:48,240
+e controllare i link in quella pagina o in quel taccuino che ti porta alla documentazione ufficiale
+
+107
+00:07:48,330 --> 00:07:54,220
+Ma la cosa principale da capire è che puoi cercare questi codici tavolo con MAP dal vivo cercando
+
+108
+00:07:54,360 --> 00:07:55,660
+le mappe dei colori.
+
+109
+00:07:55,770 --> 00:08:02,700
+È possibile modificare la dimensione del carattere con il contesto di impostazione del contesto di sottolineatura impostato su poster o notebook
+
+110
+00:08:03,000 --> 00:08:05,300
+e quindi modificando la scala del font.
+
+111
+00:08:05,520 --> 00:08:10,530
+E poi puoi usare piquante quella figura con le dimensioni di Fig per cambiare effettivamente le dimensioni delle tue figure.
+
+112
+00:08:11,070 --> 00:08:14,770
+Bene, spero che ti sia piaciuto e spero che ti sia piaciuta Seaborn.
+
+113
+00:08:14,820 --> 00:08:18,300
+Prossimi eventi sono disponibili gratuitamente per aggiungere.
+
+114
+00:08:18,330 --> 00:08:18,770
+Tutto ok.
+
+115
+00:08:19,020 --> 00:08:20,520
+Grazie e ci vediamo alla prossima lezione

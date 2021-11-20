@@ -1,0 +1,855 @@
+1
+00:00:06,180 --> 00:00:11,970
+Cześć wszystkim i zapraszam do wykładu tablic PI, a ten wykład nauczy Cię różnych
+
+2
+00:00:11,970 --> 00:00:16,690
+sposobów tworzenia wyższych stóp za pomocą Pythona, a następnie biblioteki PI.
+
+3
+00:00:16,920 --> 00:00:20,460
+Przejdźmy dalej i przejdź do notatki Jowisza, aby zacząć.
+
+4
+00:00:20,490 --> 00:00:20,760
+W porządku.
+
+5
+00:00:20,760 --> 00:00:27,000
+Tutaj jesteśmy na tablicach Jupitera, ponieważ głównym sposobem wykorzystania biblioteki nazwisk w trakcie kursu
+
+6
+00:00:27,030 --> 00:00:32,910
+jest wysoki poziom istotności, który ma dwa smaki, które występują jako wektory
+
+7
+00:00:32,910 --> 00:00:37,450
+jednowymiarowe lub dwuwymiarowe, ale mogą oba nazywane są tablicami.
+
+8
+00:00:37,450 --> 00:00:44,020
+Jeśli jest jeden lub dwa, wyjdźmy i pokażemy, w jaki sposób możemy utworzyć nowy arbitraż z obiektów Pythona,
+
+9
+00:00:44,020 --> 00:00:48,730
+takich jak lista, którą zamierzam przejść i utworzyć obiekt na mojej liście.
+
+10
+00:00:48,980 --> 00:00:50,840
+Raz Dwa Trzy.
+
+11
+00:00:51,210 --> 00:00:54,180
+A jeśli pójdę dalej i wyświetlę tę listę.
+
+12
+00:00:54,350 --> 00:00:58,450
+Zauważ, że dostaję jeden dwa trzy i jest to po prostu lista pytonów.
+
+13
+00:00:58,650 --> 00:01:06,020
+Zamierzam iść naprzód i powiedzieć import pi jako P, a następnie mogę zadzwonić i wypróbować tablicę.
+
+14
+00:01:06,290 --> 00:01:10,920
+Teraz mogę rzucić tę listę jako tablicę.
+
+15
+00:01:11,290 --> 00:01:15,900
+I zauważ, że otrzymuję tablicę z powrotem jako kontener dla tego obiektu listy.
+
+16
+00:01:15,930 --> 00:01:20,670
+A potem mogę to przypisać, a następnie po prostu wywołać tablicę z tego.
+
+17
+00:01:20,790 --> 00:01:24,930
+Więc mogę rzucić normalną listę Pythona do tablicy.
+
+18
+00:01:24,990 --> 00:01:31,110
+Teraz powrócę do jednowymiarowej tablicy, jeśli chcę uzyskać tablicę dwuwymiarową lub matrycę.
+
+19
+00:01:31,170 --> 00:01:33,390
+Mogę rzucić listę list.
+
+20
+00:01:33,420 --> 00:01:45,180
+Więc na przykład mogę powiedzieć, że moje matematyczne podkreślenie jest równe liście trzech list, więc jeden dwa trzy cztery pięć
+
+21
+00:01:45,180 --> 00:01:52,450
+sześć pozbywa się tego dodatkowego przecinka, a następnie 7 8 9.
+
+22
+00:01:53,220 --> 00:02:03,570
+Zauważ, że otrzymuję listę list, a następnie, jeśli ją wyślę do tablicy, otrzymam tablicę dwuwymiarową, która jest zapisywana zarówno w sposobie,
+
+23
+00:02:03,570 --> 00:02:09,930
+w jaki jest prezentowana jako wynik, ale także, co ważniejsze, jako liczba nawiasów
+
+24
+00:02:09,930 --> 00:02:14,340
+pokazanych na zamknięciu. i otwieranie końców tej tablicy.
+
+25
+00:02:14,580 --> 00:02:20,640
+Mam dwa zestawy nawiasów, które będą wskazywać, że Z do tej wymiennej tablicy ma trzy wiersze
+
+26
+00:02:20,640 --> 00:02:27,260
+i trzy kolumny, i w ten sposób można odrzucić normalne listy Pythona lub listę list do zakresu superarbitra.
+
+27
+00:02:27,600 --> 00:02:33,030
+Zwykle prawdopodobnie będziesz używał własnych wbudowanych metod generowania plików, aby tworzyć
+
+28
+00:02:33,060 --> 00:02:36,090
+tablice dużo szybciej i dużo łatwiej.
+
+29
+00:02:36,090 --> 00:02:40,520
+Przyjrzyjmy się najczęstszym sposobom na zrobienie tego.
+
+30
+00:02:40,560 --> 00:02:46,740
+Najpopularniejszym sposobem będzie prawdopodobnie tworzenie wyższej stawki za pomocą arr. i jest to bardzo
+
+31
+00:02:46,740 --> 00:02:49,930
+podobne do funkcji wbudowanej w Pythona.
+
+32
+00:02:49,950 --> 00:02:56,370
+Pójdziesz naprzód i mówisz N. P. zorganizuj, a następnie rozpocznij i zatrzymaj pasan.
+
+33
+00:02:56,460 --> 00:03:02,490
+Zauważ, że masz początek, a rozmiar kroku jest trzecim argumentem i powraca równomiernie rozłożone
+
+34
+00:03:02,490 --> 00:03:04,860
+wartości w tym podanym przedziale.
+
+35
+00:03:04,860 --> 00:03:14,040
+Więc jeśli powiem po prostu od 0 do 10, pamiętaj, że podobnie jak w indeksie Pythona indeksowanie zaczyna się od zera.
+
+36
+00:03:14,070 --> 00:03:16,990
+To wzrośnie do, ale nie będzie do 10.
+
+37
+00:03:17,430 --> 00:03:20,660
+Dostaję tablicę z powrotem od 0 do 9.
+
+38
+00:03:20,760 --> 00:03:24,840
+Więc zaczynam od zera i idę aż do, ale nie włączając 10.
+
+39
+00:03:25,020 --> 00:03:29,480
+Otrzymuję 10 cyfr 0 1 2 3 4 5 6.
+
+40
+00:03:29,890 --> 00:03:33,900
+Zasadniczo działa tak jak własna funkcja zakresu Pythona.
+
+41
+00:03:33,960 --> 00:03:37,990
+Więc chcę przejść od zera do 10 po Z.
+
+42
+00:03:38,190 --> 00:03:43,010
+Muszę powiedzieć zero przecinek 11 i to właśnie otrzymuję z powrotem.
+
+43
+00:03:43,380 --> 00:03:46,930
+I wreszcie mogę dodać trzeci argument o rozmiar kroku.
+
+44
+00:03:46,980 --> 00:03:51,820
+Gdybym miał wszystkie liczby parzyste od 0 do 10, mógłbym powiedzieć "zero" 11.
+
+45
+00:03:51,960 --> 00:03:58,930
+A następnie o wielkości kroku dwóch tak, że skakałbym w krokach 2 0 2 4 6 8 10.
+
+46
+00:03:59,070 --> 00:04:05,580
+Oznacza to, że zakres będzie jedną z najbardziej użytecznych funkcji do szybkiego generowania tablicy za pomocą
+
+47
+00:04:05,580 --> 00:04:06,590
+ich pi.
+
+48
+00:04:06,960 --> 00:04:12,330
+Jeśli chcesz mieć określone typy tablic, są inne funkcje niepriorytetu, które mogą nam w tym pomóc.
+
+49
+00:04:12,330 --> 00:04:19,970
+Na przykład, jeśli chcesz wygenerować tablice wszystkich zer, możemy powiedzieć P-doc zeros i możesz
+
+50
+00:04:19,970 --> 00:04:22,050
+przekazać jedną cyfrę.
+
+51
+00:04:22,050 --> 00:04:30,780
+Dostajesz jednowymiarowy wektor lub możesz powiedzieć N. P. to zera i przekazać krotność wymiarów,
+
+52
+00:04:30,780 --> 00:04:36,840
+które pierwsza liczba ma reprezentować liczba wierszy, a druga liczba w tej krotce
+
+53
+00:04:36,840 --> 00:04:39,220
+będzie reprezentować liczbę kolumn.
+
+54
+00:04:39,240 --> 00:04:48,770
+Więc na przykład chcę wiercić trzema kolumnami, które przechodzę w krotce, aby otrzymać trzy, a ja wracam
+
+55
+00:04:48,770 --> 00:04:53,330
+do Rose przez trzy kolumny, co zaznacza nawias.
+
+56
+00:04:53,360 --> 00:04:59,620
+W porządku, jeśli chcę podbić czystych, mogę to powiedzieć.
+
+57
+00:04:59,690 --> 00:05:07,580
+I podobnie mogę przekazać albo pojedynczą liczbę, albo jednowymiarową tablicę lub krotkę z nich
+
+58
+00:05:08,180 --> 00:05:16,370
+wspomina o dwuwymiarowej macierzy, która jest zerami w innej naprawdę użytecznej wbudowanej funkcji, jest przestrzenią soczewki,
+
+59
+00:05:16,370 --> 00:05:21,500
+a przestrzeń zwraca równomiernie rozłożone liczby w określonym przedziale.
+
+60
+00:05:21,750 --> 00:05:23,960
+Ważne jest, aby nie mylić Lewana.
+
+61
+00:05:23,990 --> 00:05:31,490
+Zorganizuj swoje widzimy, że zakres zasadniczo zwraca liczby całkowite z początku i zatrzymania oraz z danego
+
+62
+00:05:31,490 --> 00:05:32,600
+rozmiaru kroku.
+
+63
+00:05:32,720 --> 00:05:37,580
+To, co Lin ma zamiar zrobić, to w rzeczywistości wziąć trzeci argument
+
+64
+00:05:37,580 --> 00:05:45,140
+z liczby punktów, które chciałbym mi pokazać, co mam na myśli, że mogę powiedzieć P przestrzeni Gotlandii i dostaję przepustkę
+
+65
+00:05:45,140 --> 00:05:50,300
+i początek zatrzymania i jest trzeci argument, który mam zamiar przekazać w liczbie.
+
+66
+00:05:50,300 --> 00:06:00,590
+Powiedzmy, że mam początek zerowego i zatrzymania piątego i chcę uzyskać 10 równomiernie rozłożonych punktów między zero
+
+67
+00:06:00,590 --> 00:06:02,510
+a pięć.
+
+68
+00:06:02,510 --> 00:06:09,650
+Mogę podać trzeci argument 10, a ten zwraca z powrotem jednowymiarowy wektor oznaczony przez jeden
+
+69
+00:06:09,650 --> 00:06:15,490
+zestaw nawiasów tutaj z dziesięciu równomiernie rozmieszczonych punktów od zera do pięciu.
+
+70
+00:06:15,490 --> 00:06:18,140
+I mogę zmienić ten trzeci argument na dowolną liczbę.
+
+71
+00:06:18,140 --> 00:06:24,140
+Więc jeśli chcę 100 równomiernie rozmieszczonych punktów od zera do pięciu, mogę po prostu przekazać to
+
+72
+00:06:24,140 --> 00:06:26,470
+i zwrócić znacznie większą jednowymiarową tablicę.
+
+73
+00:06:26,540 --> 00:06:30,800
+I pamiętajcie, nawet jeśli wygląda na to, że jest to dla nich tak daleko, jak
+
+74
+00:06:31,040 --> 00:06:35,870
+jest drukowany, można powiedzieć, że jest jednowymiarowy dzięki temu, że przed tablicą jest tylko jeden nawias, gdy
+
+75
+00:06:36,460 --> 00:06:40,220
+mamy do czynienia z dwoma wymiarami zobaczysz, że masz dwa zestawy nawiasów.
+
+76
+00:06:40,220 --> 00:06:42,910
+Przy otwieraniu lub zamykaniu na końcach.
+
+77
+00:06:42,980 --> 00:06:46,140
+Trzy, o których wspomniałem, będą miały trzy nawiasy itd.
+
+78
+00:06:46,310 --> 00:06:47,120
+W porządku.
+
+79
+00:06:47,120 --> 00:06:48,320
+Tak jest w przypadku przestrzeni.
+
+80
+00:06:48,320 --> 00:06:54,980
+Ponownie nie mylić przestrzeni z aranżacją spacji, zajmiemy trzeci argument, ponieważ liczba punktów, które chcesz
+
+81
+00:06:54,980 --> 00:07:01,430
+zaaranżować, weźmie ten argument jako rozmiar kroku, który chcesz iść dalej i pokaż, jak
+
+82
+00:07:01,430 --> 00:07:04,960
+możesz utworzyć macierz tożsamości za pomocą pi.
+
+83
+00:07:05,360 --> 00:07:08,680
+Możemy powiedzieć n p e y e.
+
+84
+00:07:09,350 --> 00:07:13,570
+A potem po prostu wpisujesz jedną cyfrę w matrycy tożsamości.
+
+85
+00:07:13,580 --> 00:07:17,750
+Jeśli nie jesteś zaznajomiony to przydatna matryca, gdy masz do czynienia z problemami algebry liniowej.
+
+86
+00:07:17,900 --> 00:07:23,040
+Zasadniczo jest to tylko dwuwymiarowa macierz kwadratowa, co oznacza, że liczba rzędów
+
+87
+00:07:23,040 --> 00:07:30,320
+jest taka sama jak liczba kolumn i masz przekątną, że wszystko inne jest zerowe i dlatego tylko
+
+88
+00:07:30,320 --> 00:07:36,440
+jedna cyfra przyjmuje argument jako argument, ponieważ mówi że macierz musi być kwadratowa jako
+
+89
+00:07:36,650 --> 00:07:38,340
+wyjście, a P1.
+
+90
+00:07:39,170 --> 00:07:45,320
+W porządku, teraz także ma wiele sposobów tworzenia tablic liczb losowych.
+
+91
+00:07:45,380 --> 00:07:49,100
+I będziemy używać tego często w trakcie kursu, więc przejdźmy dalej i omówmy kilka sposobów, aby
+
+92
+00:07:49,100 --> 00:07:49,690
+to zrobić.
+
+93
+00:07:50,090 --> 00:07:58,040
+To, co zamierzasz zrobić, to zadzwonić do N. P. losowe kropki, a następnie uruchomił metodę.
+
+94
+00:07:58,100 --> 00:08:01,520
+Możesz zobaczyć zakładkę, że jest całkiem sporo metod.
+
+95
+00:08:01,580 --> 00:08:05,130
+Więc zamierzamy wejść i pokazać wam te najpopularniejsze.
+
+96
+00:08:05,660 --> 00:08:09,080
+Pierwszy to Ran's to aib.
+
+97
+00:08:09,590 --> 00:08:14,570
+A to stworzy tablicę o podanym kształcie, który zostanie
+
+98
+00:08:14,630 --> 00:08:19,620
+wypełniony losowymi próbkami z jednolitej dystrybucji od 0 do 1.
+
+99
+00:08:19,620 --> 00:08:24,950
+A to oznacza, że jeśli chcę tylko osiem jednowymiarowych tablic liczb losowych równomiernie
+
+100
+00:08:24,950 --> 00:08:30,840
+rozłożonych od 0 do 1, mogę przejść w jedną cyfrę, a ja otrzymam tablicę jednowymiarową.
+
+101
+00:08:31,160 --> 00:08:34,760
+Chcę, żeby to było wspominane.
+
+102
+00:08:35,030 --> 00:08:38,930
+W przeciwieństwie do poprzednich funkcji, z którymi pracowałeś, zamiast przekazywać krotki.
+
+103
+00:08:38,950 --> 00:08:42,820
+Właściwie po prostu przekazuję wymiary jako oddzielne argumenty.
+
+104
+00:08:42,860 --> 00:08:49,130
+Oznacza to, że jeśli chcę mieć pięć na pięć macierzy liczb losowych, po prostu przechodzę i 5 pojawia się 5
+
+105
+00:08:49,130 --> 00:08:52,040
+zamiast krotki i pracuję z tymi losowymi bibliotekami.
+
+106
+00:08:52,400 --> 00:08:58,490
+W porządku, jeśli chcemy zwrócić próbkę lub wiele próbek ze standardowej dystrybucji normalnej lub
+
+107
+00:08:58,490 --> 00:09:02,580
+rozkładu Gaussa zamiast używać Ranza, możemy użyć rand n.
+
+108
+00:09:03,030 --> 00:09:10,790
+A to oznacza, że mogę powiedzieć, że P myśli przypadkowo myśl Ran n, a to zwróci liczby nie z jednolitej
+
+109
+00:09:10,790 --> 00:09:16,750
+dystrybucji od 0 do 1, ale zamiast od standardowego centrum dystrybucji normalnej około zera.
+
+110
+00:09:17,060 --> 00:09:25,130
+Oznacza to, że mogę iść dalej i przejść na dwie części, a otrzymam dwie liczby losowe ze standardowego rozkładu normalnego.
+
+111
+00:09:25,670 --> 00:09:30,140
+Później zobaczymy, że nie wytypujemy tego w tym wykładzie, ale otrzymamy także wizualizację danych.
+
+112
+00:09:30,560 --> 00:09:35,200
+Pójdziemy dalej i pokażemy ładną normalną krzywą rozkładu lub krzywą rozkładu Gaussa.
+
+113
+00:09:35,950 --> 00:09:40,580
+I znowu, jeśli chcę, aby to było dwuwymiarowe, mogę po prostu przekazać dwa wymiary.
+
+114
+00:09:40,670 --> 00:09:43,540
+Więc na cztery na cztery mówię, że cztery mają cztery.
+
+115
+00:09:43,970 --> 00:09:49,070
+I nie, nie przepuszczam tutaj krotki, za każdym razem mówię jako osobny argument
+
+116
+00:09:49,070 --> 00:09:57,020
+i widzę przez zestaw dwóch nawiasów dwuwymiarową matrycę jako wynik i ostatnią losową metodę tworzenia tablicy " dowiemy się o tym,
+
+117
+00:09:57,200 --> 00:10:02,990
+że jest to Rand int, który zwraca losowe liczby całkowite z niskiej do dużej liczby lub
+
+118
+00:10:03,000 --> 00:10:06,140
+dalej i pokazuje, co możemy dla tego zrobić.
+
+119
+00:10:06,140 --> 00:10:12,310
+Pójdziesz do przodu i powinieneś powiedzieć, że losowy dupek Rand I. ZA. będziesz pasan.
+
+120
+00:10:12,360 --> 00:10:17,810
+Przechodzę do tej zakładki przesunięcia o najniższy poziom, a następnie o aktualnym rozmiarze.
+
+121
+00:10:17,810 --> 00:10:26,870
+Na przykład, jeśli powiesz od 1 do 100, otrzymasz losową liczbę całkowitą od 1 do 100, a najniższą -
+
+122
+00:10:26,930 --> 00:10:27,700
+włącznie.
+
+123
+00:10:27,750 --> 00:10:34,570
+A wysokie wyłączne znaczenie ma szansę na wybranie, ale 100 nie jest.
+
+124
+00:10:35,540 --> 00:10:40,410
+A jeśli chcesz określonej liczby losowych liczb całkowitych, możesz podać je jako trzeci argument.
+
+125
+00:10:40,400 --> 00:10:43,770
+Więc od losowych liczb całkowitych od 1 do 100.
+
+126
+00:10:43,790 --> 00:10:45,160
+Ale nie licząc 100.
+
+127
+00:10:45,440 --> 00:10:50,930
+Mogę po prostu przejść i 10 tam i jest 10 losowych liczb całkowitych włącznie na niskim w ekskluzywnym
+
+128
+00:10:50,930 --> 00:10:51,920
+na wyższym końcu.
+
+129
+00:10:52,200 --> 00:10:52,820
+DOBRZE.
+
+130
+00:10:53,100 --> 00:10:59,350
+Przejdźmy do omówienia kilku przydatnych atrybutów i metod tablicy, aby to zrobić.
+
+131
+00:10:59,370 --> 00:11:05,450
+Zamierzam iść dalej i stworzyć dwa nowe obiekty tablicowe, do których wchodzimy i wyczyścić je i wyczyścić te komórki.
+
+132
+00:11:07,830 --> 00:11:08,630
+W porządku.
+
+133
+00:11:08,630 --> 00:11:16,330
+Zamierzam powiedzieć zmienną r r, a ja powiem, że jest ona równa czystemu zakresowi 25.
+
+134
+00:11:16,380 --> 00:11:22,220
+Więc jeśli sprawdzę, jak wygląda A-R, to jednowymiarowa tablica od zera do 24.
+
+135
+00:11:22,500 --> 00:11:30,660
+I wtedy powiem, że Rand jest rzeczywiście przypadkowy i to będzie Rand.
+
+136
+00:11:31,000 --> 00:11:32,790
+Muszę tam wstawić.
+
+137
+00:11:32,960 --> 00:11:35,980
+Losowe liczby całkowite od 0 do 50.
+
+138
+00:11:36,390 --> 00:11:37,930
+Więc nie dostałem 10 z nich.
+
+139
+00:11:38,210 --> 00:11:44,040
+Jeśli więc sprawdzę lub uruchomię wyglądać jak wygląda, możesz uzyskać różne wartości, ponieważ są losowo
+
+140
+00:11:44,030 --> 00:11:44,690
+wybrane.
+
+141
+00:11:44,690 --> 00:11:47,890
+Powinno tam być tylko 10 liczb całkowitych.
+
+142
+00:11:48,020 --> 00:11:48,780
+W porządku.
+
+143
+00:11:48,840 --> 00:11:53,130
+Jedną z najbardziej przydatnych metod, które można zastosować w tablicy, jest metoda przekształcania.
+
+144
+00:11:53,300 --> 00:11:57,770
+A to zwróci tablicę zawierającą te same dane, jeśli jest w nowym kształcie.
+
+145
+00:11:57,770 --> 00:12:07,930
+Oznacza to, że mogę nazywać kropki Mirei, a następnie zmienić kształt na nią i nadać nowy wymiar, który
+
+146
+00:12:07,940 --> 00:12:08,940
+chcę.
+
+147
+00:12:08,930 --> 00:12:16,940
+Na przykład, jeśli chcę zmienić kształt tego elementu tablicy A R R ma dwadzieścia pięć cyfr od zera do 24.
+
+148
+00:12:16,940 --> 00:12:24,350
+Mogę zmienić kształt jako tablicę 5 na 5 przy użyciu przekształcenia, a następnie przekazać liczbę żądanych wierszy
+
+149
+00:12:24,360 --> 00:12:25,780
+i liczbę kolumn.
+
+150
+00:12:25,790 --> 00:12:30,630
+Pamiętaj, że dostaniesz błąd, jeśli nie możesz całkowicie wypełnić tej matrycy.
+
+151
+00:12:30,620 --> 00:12:35,940
+Na przykład, gdybym chciał 5 na 10, potrzebowałbym 50 elementów do tego.
+
+152
+00:12:36,200 --> 00:12:40,820
+I dostanę tutaj błąd, ponieważ całkowity rozmiar nowej tablicy musi pozostać niezmieniony.
+
+153
+00:12:40,940 --> 00:12:48,990
+Oznacza to, że musisz wypełnić tylko używając cyfr, które masz, lub elementów, które masz ładny prosty
+
+154
+00:12:48,990 --> 00:12:56,310
+sposób sprawdzenia, czy liczba wierszy razy liczba kolumn jest równa faktycznej liczbie elementów, więc pięć
+
+155
+00:12:56,370 --> 00:12:59,330
+razy pięć jest równa 25.
+
+156
+00:12:59,450 --> 00:13:02,860
+I wiem, że mam 25 elementów w tej tablicy.
+
+157
+00:13:02,900 --> 00:13:08,780
+OK, chodźmy i pokażmy kilka bardziej użytecznych metod do znalezienia wartości maksymalnych lub minimalnych lub ich
+
+158
+00:13:09,200 --> 00:13:13,670
+lokalizacji, a później przejdziemy o wiele więcej operacji w przyszłych wykładach.
+
+159
+00:13:13,830 --> 00:13:15,880
+Oto kilka przydatnych przydatnych informacji.
+
+160
+00:13:15,960 --> 00:13:17,880
+Więc idź i sprawdź naszą losową tablicę.
+
+161
+00:13:17,880 --> 00:13:18,980
+Jeszcze raz.
+
+162
+00:13:18,990 --> 00:13:24,030
+Znowu twoje liczby mogą być inne, ale ze względu na to ćwiczenie, które tak naprawdę nie ma znaczenia.
+
+163
+00:13:24,120 --> 00:13:27,400
+Jeśli chcesz znaleźć maksymalną wartość w swojej tablicy.
+
+164
+00:13:27,440 --> 00:13:33,170
+Możesz wywołać metodę max z tego, a to zwróci maksymalną wartość tej tablicy.
+
+165
+00:13:33,870 --> 00:13:37,340
+Podobnie, jeśli chcesz uzyskać minimalną wartość swojej tablicy.
+
+166
+00:13:37,350 --> 00:13:40,240
+Możesz wywołać metodę min z tego.
+
+167
+00:13:40,280 --> 00:13:41,710
+Przyjrzyjmy się tablicy.
+
+168
+00:13:41,730 --> 00:13:48,980
+Jeszcze raz możemy określić położenie wartości maksymalnej lub minimalnej, podając maksymalną lub
+
+169
+00:13:49,080 --> 00:13:50,490
+minimalną wartość.
+
+170
+00:13:50,580 --> 00:13:59,660
+Znaczenie, jeśli chcę wiedzieć, jaka jest wartość indeksu, to Max znajduje się w 49, mogę powiedzieć, że Ranh
+
+171
+00:13:59,680 --> 00:14:04,750
+to Argive Max, który zwróci położenie indeksu wartości maksymalnej.
+
+172
+00:14:04,980 --> 00:14:08,270
+Widzę więc, że 49 znajduje się w indeksie 3.
+
+173
+00:14:08,450 --> 00:14:11,310
+Tak więc 0 1 2 3.
+
+174
+00:14:11,420 --> 00:14:12,930
+Mam tam czterdzieści dziewięć.
+
+175
+00:14:13,100 --> 00:14:18,470
+I znowu możesz zrobić to samo z minutową wartością, jaką możesz powiedzieć, że jesteś mężczyzną,
+
+176
+00:14:18,470 --> 00:14:20,990
+a ona zwróci położenie indeksu minimalnej wartości.
+
+177
+00:14:21,000 --> 00:14:25,760
+Tak więc 6 to lokalizacja indeksu, minimalna wartość i minimalna wartość to trzy.
+
+178
+00:14:25,760 --> 00:14:26,940
+W tym przypadku.
+
+179
+00:14:27,500 --> 00:14:28,130
+DOBRZE.
+
+180
+00:14:28,400 --> 00:14:31,820
+I szybko kilka bardziej użytecznych metod i atrybutów.
+
+181
+00:14:31,970 --> 00:14:39,050
+Jeśli kiedykolwiek zastanowisz się nad kształtem wektora, możesz powiedzieć, że ma on kształt niskiego zwrotu z powrotem
+
+182
+00:14:39,060 --> 00:14:39,980
+do kształtu.
+
+183
+00:14:39,980 --> 00:14:47,910
+Zauważ tutaj, że dostaję 25 Khama i to oznacza, że r r, że tablica była tylko jednowymiarowym wektorem.
+
+184
+00:14:49,080 --> 00:14:50,960
+Jeśli pójdę do przodu i zmieniam go.
+
+185
+00:14:51,140 --> 00:15:01,060
+Więc powiem, że zmieniono na pięć na pięć i zamierzam ustawić to na równe R ..
+
+186
+00:15:01,160 --> 00:15:02,190
+Lub r r.
+
+187
+00:15:02,180 --> 00:15:07,340
+Zauważ teraz, że mam z tego dwuwymiarową matrycę nazywaną kształtem kropki.
+
+188
+00:15:07,350 --> 00:15:08,970
+Uwaga Nie umieszczam nawiasów.
+
+189
+00:15:09,000 --> 00:15:11,350
+Właśnie nazywam ten atrybut.
+
+190
+00:15:11,390 --> 00:15:14,360
+Teraz zgłasza, że jest pięć na pięć.
+
+191
+00:15:14,450 --> 00:15:20,810
+A więc do tego właśnie jest teraz Mitchell, a ostatnim przydatnym atrybutem, który chcę teraz pokazać, jest typ danych w
+
+192
+00:15:20,820 --> 00:15:21,690
+tej tablicy.
+
+193
+00:15:21,750 --> 00:15:28,410
+Jeśli kiedykolwiek zastanawiasz się, jaki typ danych posiadasz, możesz po prostu powiedzieć rr i wpisać jako atrybut typu
+
+194
+00:15:28,500 --> 00:15:32,700
+D, zwróci to rzeczywisty typ danych, który jest na twojej drodze.
+
+195
+00:15:32,720 --> 00:15:35,470
+W tym przypadku 32-bitowe liczby całkowite.
+
+196
+00:15:35,510 --> 00:15:36,000
+DOBRZE.
+
+197
+00:15:36,200 --> 00:15:38,660
+Szybki przegląd wszystkiego, co przeszliśmy.
+
+198
+00:15:38,720 --> 00:15:45,390
+Pokazaliśmy, jak utworzyć podbicie imperium, przesyłając listę do wyższej tablicy lub używając jednej z wbudowanych
+
+199
+00:15:45,380 --> 00:15:52,680
+funkcji dla tablic superarbitrów, takich jak arr. zer i jedynek Przestrzeń Lyn i ja, a także losowe
+
+200
+00:15:52,670 --> 00:15:59,840
+metody generacji, które nazywacie N. P. który je uruchomił, a następnie Rand pobiegł i uciekł i
+
+201
+00:15:59,850 --> 00:16:01,690
+lub niektóre z innych metod losowych.
+
+202
+00:16:01,730 --> 00:16:06,920
+W porządku i ostatnia podpowiedź, którą chcę ci pokazać, jeśli nie chcesz pisać
+
+203
+00:16:06,940 --> 00:16:16,200
+w NPE losowo, że Rand jest tym, co możesz zrobić, to możesz powiedzieć od PI, że losowe importowanie, a następnie jakakolwiek metoda lub funkcja, którą
+
+204
+00:16:16,190 --> 00:16:17,440
+chcesz zaimportować .
+
+205
+00:16:17,450 --> 00:16:20,900
+Więc jeśli chcesz zaimportować Rand I N C możesz to zrobić.
+
+206
+00:16:20,900 --> 00:16:27,480
+A potem zamiast powiedzieć, że myśl przypadkowa myśl działała, mogę tylko powiedzieć, że Rand ja. ZA. i mam
+
+207
+00:16:27,470 --> 00:16:30,020
+dla siebie odniesienie.
+
+208
+00:16:30,020 --> 00:16:31,110
+Proszę bardzo.
+
+209
+00:16:31,190 --> 00:16:32,130
+DOBRZE.
+
+210
+00:16:32,250 --> 00:16:36,650
+Jeszcze raz pamiętaj, że masz notebooka ze wszystkimi notatkami na wypadek, gdybyś chciał odwołać się do któregokolwiek
+
+211
+00:16:36,680 --> 00:16:40,760
+z tego kodu lub jakiejkolwiek z notatek, które rzeczywiście o niej mówiono podczas tego wykładu.
+
+212
+00:16:40,760 --> 00:16:45,860
+W następnej kolejności dowiemy się o indeksowaniu i selekcji do wyścigu sędziowskiego, a także
+
+213
+00:16:45,870 --> 00:16:47,270
+o działaniach sędziów.
+
+214
+00:16:47,270 --> 00:16:49,310
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

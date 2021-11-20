@@ -1,0 +1,327 @@
+1
+00:00:05,160 --> 00:00:10,410
+Olá a todos e seja bem vindo à leitura de dados perdidos nesta sala de conferências, mostre alguns métodos
+
+2
+00:00:10,650 --> 00:00:12,870
+convenientes para lidar com dados perdidos em Pandas.
+
+3
+00:00:12,870 --> 00:00:17,820
+Muitas vezes, quando você está usando pandas para ler dados se você tiver alguns pontos faltantes,
+
+4
+00:00:17,820 --> 00:00:21,040
+o que acontecerá será que Pandurs preencherá automaticamente esse ponto faltante.
+
+5
+00:00:21,250 --> 00:00:21,690
+Não.
+
+6
+00:00:21,720 --> 00:00:23,360
+Ou qualquer valor.
+
+7
+00:00:23,610 --> 00:00:28,980
+Avançemos e exploremos como podemos usar métodos como soltar um nome ou preencher e, para realmente,
+
+8
+00:00:28,980 --> 00:00:31,800
+soltar esses valores perdidos ou preencher esses valores faltantes.
+
+9
+00:00:32,040 --> 00:00:36,090
+Avançemos e entremos no caderno Jupiter para começar.
+
+10
+00:00:36,120 --> 00:00:36,420
+Tudo bem.
+
+11
+00:00:36,420 --> 00:00:38,270
+Aqui estou no caderno de Jupiter.
+
+12
+00:00:38,280 --> 00:00:43,800
+O que eu quero sair e fazer é criar um quadro de dados e, assim como nós criamos, poderíamos criar uma série
+
+13
+00:00:43,860 --> 00:00:48,480
+a partir de um dicionário, nós também podemos criar um quadro de dados a partir de um dicionário.
+
+14
+00:00:48,480 --> 00:00:55,620
+Este dicionário vai ter três chaves e vai marcar uma chave B e a chave C e o que estas serão as
+
+15
+00:00:55,620 --> 00:01:01,560
+colunas em nosso quadro de dados e então podemos fazer para os pontos de dados reais é pasan
+
+16
+00:01:01,620 --> 00:01:03,810
+uma lista de valores para cada chave.
+
+17
+00:01:04,260 --> 00:01:08,290
+E esses serão os pontos de dados para cada linha nesse nome de coluna.
+
+18
+00:01:08,340 --> 00:01:12,680
+Vamos continuar e dizer que a chave A também tem uma lista.
+
+19
+00:01:12,930 --> 00:01:18,290
+E então vamos usar qualquer n para significar um valor ordinal em falta.
+
+20
+00:01:19,080 --> 00:01:20,290
+Então vamos economizar para B.
+
+21
+00:01:20,310 --> 00:01:28,260
+Vai ser 5 e P que Nan e P e, em seguida, finalmente, kisi a nossa terceira coluna.
+
+22
+00:01:28,260 --> 00:01:31,150
+Então, vamos reter todos os valores 1 2 e 3.
+
+23
+00:01:31,200 --> 00:01:33,360
+Portanto, não tem valores faltantes.
+
+24
+00:01:33,360 --> 00:01:41,300
+E então, podemos seguir em frente e dizer que é DFAC igual a quadro de dados de PD e depois passar no dicionário D.
+
+25
+00:01:41,730 --> 00:01:48,270
+E então, quando conferimos nosso quadro de dados, obtemos esse quadro de dados de colunas A B e C
+
+26
+00:01:48,270 --> 00:01:56,580
+e, em seguida, as linhas 0 1 e 2, nenhuma linha 0 não possui valores faltantes e a Coluna C não possui valores faltantes.
+
+27
+00:01:56,700 --> 00:02:02,850
+E, em seguida, há alguns valores faltantes aqui em Roby ou coluna B e um valor faltando na coluna A.
+
+28
+00:02:03,360 --> 00:02:07,940
+Vamos sair e explorar a queda e um método.
+
+29
+00:02:08,280 --> 00:02:11,580
+Muitas vezes você quer soltar valores faltantes do seu conjunto de dados.
+
+30
+00:02:11,640 --> 00:02:14,010
+Especialmente se são apenas alguns valores em falta.
+
+31
+00:02:14,010 --> 00:02:21,300
+método de parênteses próximos, o que ocorre é que o Pandurs vai soltar qualquer linha com um único ou água mais
+
+32
+00:02:21,300 --> 00:02:28,890
+masculino ou valores faltantes, se qualquer dessas linhas tiver um valor nulo em Um ou mais seguiu adiante e os deixou cair.
+
+33
+00:02:28,890 --> 00:02:33,840
+Se você disser soltar um A apenas por si só e chamá-lo como um
+
+34
+00:02:33,870 --> 00:02:40,050
+Se você quiser executar esta ação nas colunas que você pode fazer é conferir a guia shift aqui e observe
+
+35
+00:02:40,050 --> 00:02:42,060
+que existe um argumento de eixo.
+
+36
+00:02:42,330 --> 00:02:44,740
+Isso significa que, por padrão, o eixo é zero.
+
+37
+00:02:44,880 --> 00:02:47,210
+O que significa que a operação ocorre ao longo das linhas.
+
+38
+00:02:47,340 --> 00:02:53,820
+Mas se você deseja fazer a operação ao longo das colunas, coloque as colunas que tenham um valor nulo, você pode
+
+39
+00:02:54,240 --> 00:02:56,780
+especificar que o eixo é igual a 1.
+
+40
+00:02:57,750 --> 00:03:01,200
+E isso vai cair nas colunas com um valor nulo.
+
+41
+00:03:01,360 --> 00:03:03,710
+Então eu não vejo a comparação aqui.
+
+42
+00:03:03,950 --> 00:03:09,720
+E isso significa que se Trapani tropeça qualquer linha de qualquer linha de valores nele e, em seguida, o final é
+
+43
+00:03:09,810 --> 00:03:14,230
+Trump e um com acesso igual a um vai soltar qualquer coluna de valores nulos nele.
+
+44
+00:03:14,640 --> 00:03:17,840
+Mas você também pode fazer é especificar um limite.
+
+45
+00:03:18,120 --> 00:03:24,420
+E se entramos e verifiquemos isso, dirá DMF soltar um A e usar o separador Shift.
+
+46
+00:03:24,450 --> 00:03:31,190
+Confira a documentação que é se houver um argumento de substituição, qual é o argumento.
+
+47
+00:03:31,320 --> 00:03:39,480
+É um valor inteiro e você precisará de muitos valores knon e a para não se deixar cair.
+
+48
+00:03:39,480 --> 00:03:43,180
+Por exemplo, deixe-me entrar e defina o limiar igual a 2.
+
+49
+00:03:43,590 --> 00:03:46,030
+E novamente vamos fazer isso ao longo das estradas.
+
+50
+00:03:46,260 --> 00:03:53,470
+Então, note aqui que temos na linha 0 3 não e valores na linha 1.
+
+51
+00:03:53,490 --> 00:03:58,710
+Temos dois valores não A e, na segunda linha, temos apenas um.
+
+52
+00:03:58,830 --> 00:04:01,090
+O número três não possui valores.
+
+53
+00:04:01,140 --> 00:04:05,850
+Isso significa que se eu disser que cair e um como este deixa tudo além de Roseboro.
+
+54
+00:04:05,970 --> 00:04:14,270
+No entanto, se eu definir o limite para ser igual a 2 e executar isso, ele seguiu em frente e manteve a linha 1.
+
+55
+00:04:14,310 --> 00:04:22,740
+E, basicamente, o que isso significa é que a linha 1 tinha pelo menos dois valores não e um 2. 0 e os dois seguiram em
+
+56
+00:04:22,800 --> 00:04:26,880
+frente e mantiveram essa linha.
+
+57
+00:04:26,910 --> 00:04:27,230
+Tudo bem.
+
+58
+00:04:27,270 --> 00:04:33,790
+Vamos prosseguir e avançar para Phil e dizer agora que nos concentramos apenas em deixar os valores perdidos.
+
+59
+00:04:33,870 --> 00:04:37,060
+Bem, muitas vezes você vai querer realmente substituir esses valores faltantes.
+
+60
+00:04:37,290 --> 00:04:39,320
+Demos uma olhada no nosso quadro de dados novamente.
+
+61
+00:04:39,390 --> 00:04:40,870
+Nós temos esses valores faltantes aqui.
+
+62
+00:04:40,950 --> 00:04:47,430
+Se quisermos preencher esses valores faltantes, podemos usar o preenchimento e um método, e a guia "mudança
+
+63
+00:04:47,430 --> 00:04:49,910
+e mudança" aqui e alguns argumentos diferentes.
+
+64
+00:04:49,930 --> 00:04:52,400
+Mas note que tem um argumento de valor.
+
+65
+00:04:52,610 --> 00:04:57,910
+E o que você pode fazer aqui é como um valor definido no seu valor de preenchimento.
+
+66
+00:04:57,940 --> 00:05:00,410
+Eu apenas vou passar uma string para torná-la muito óbvia aqui.
+
+67
+00:05:00,450 --> 00:05:07,530
+O que está acontecendo e percebe que foi capaz de preencher esse valor de qualquer valor que desejássemos.
+
+68
+00:05:07,940 --> 00:05:10,680
+Neste caso, apenas uma string que denunciou o valor de preenchimento.
+
+69
+00:05:10,770 --> 00:05:15,060
+No entanto, muitas vezes o que você vai querer fazer é realmente preencher o valor de
+
+70
+00:05:15,060 --> 00:05:20,860
+talvez a média da coluna e você pode fazer isso, por exemplo, como tal, você pode dizer o DSF de um.
+
+71
+00:05:21,090 --> 00:05:25,150
+Então, essa é a minha coluna e observe o ponto faltante aqui.
+
+72
+00:05:25,170 --> 00:05:36,170
+Eu irei em frente e digo preencher e um e eu estabelecerei o valor para a média dessa coluna.
+
+73
+00:05:37,710 --> 00:05:42,210
+E agora esse valor foi preenchido como a média do valor.
+
+74
+00:05:42,330 --> 00:05:47,760
+Agora, há toda uma filosofia e formas de pensar e métodos estatísticos para preencher os valores que
+
+75
+00:05:47,790 --> 00:05:49,070
+faltam de forma adequada.
+
+76
+00:05:49,110 --> 00:05:53,280
+Vou deixá-lo avançar e explorar aqueles por conta própria, uma vez que eles realmente
+
+77
+00:05:53,280 --> 00:05:56,010
+dependem de que tipo de dados você está trabalhando.
+
+78
+00:05:56,010 --> 00:06:03,030
+Por enquanto, tudo o que quero que você esteja ciente é que existe um preenchimento e um método e uma queda e um método.
+
+79
+00:06:03,510 --> 00:06:05,600
+OK, é por enquanto.
+
+80
+00:06:05,610 --> 00:06:10,770
+o acesso ao qual deseja executar a ação, bem como o argumento de trilha e os argumentos de valor.
+
+81
+00:06:10,770 --> 00:06:15,810
+Espero que você se lembre apenas de que esses dois métodos estão disponíveis para você e você pode especificar
+
+82
+00:06:15,810 --> 00:06:18,800
+Tudo bem, obrigado a todos e eu vou te ver na próxima palestra

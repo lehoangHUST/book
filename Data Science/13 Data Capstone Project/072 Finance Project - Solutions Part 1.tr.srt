@@ -1,0 +1,899 @@
+1
+00:00:05,310 --> 00:00:06,170
+Herkese merhaba.
+
+2
+00:00:06,170 --> 00:00:10,700
+Kaptan finans projesi çözümleri öğretim elemanına günümüze hoş geldiniz.
+
+3
+00:00:10,710 --> 00:00:13,590
+Finans projesinin çözümleri üzerinde duracağız.
+
+4
+00:00:13,860 --> 00:00:16,550
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+5
+00:00:16,860 --> 00:00:22,470
+Tamam, böylece dışarı çıktıktan sonra veri bölümüne geçene kadar Jüpiter defterine gidiyoruz.
+
+6
+00:00:23,220 --> 00:00:29,760
+Yapmamız gereken ilk şey aslında Google Finans'tan doğrudan okunan pandaları kullanmaktır ve burada çalışması
+
+7
+00:00:29,790 --> 00:00:33,650
+için Pandurs veri okuyucu yüklemeniz gereken birkaç not vardır.
+
+8
+00:00:33,660 --> 00:00:37,290
+okuyucu veya Konda kurulum panda saklı veri okuyucusunu söyleyerek yapabilirsiniz.
+
+9
+00:00:37,290 --> 00:00:43,110
+Ve önceki dersimde bahsetmiş olduğum gibi, bunu komut satırına gidip Pipp kurulumunda Pandurs kesikli veri
+
+10
+00:00:43,110 --> 00:00:47,880
+Ve burada yine notlar var ya da bağlantılar ya da daha fazla kurulum kılavuzu var.
+
+11
+00:00:48,540 --> 00:00:51,650
+Tamam, o zaman burada bu ithalatları yapmak istedik.
+
+12
+00:00:51,660 --> 00:00:54,190
+Zaten doldurulduğumdan beri devam ettim ve bunu sadece yürüttüm.
+
+13
+00:00:54,420 --> 00:00:56,640
+Ve şimdi veri bölümündeyiz.
+
+14
+00:00:56,640 --> 00:01:01,680
+Yapmak istediğim ilk şey, Panas veri okuyucu kullanarak veri elde etmek ve aşağıdaki bankalar için hisse
+
+15
+00:01:01,680 --> 00:01:02,760
+senedi bilgileri elde edebilmem.
+
+16
+00:01:02,850 --> 00:01:08,480
+kadar devam edecek ve her bankayı ayrı bir veri çerçevesi olarak ayarlamak istiyoruz.
+
+17
+00:01:08,480 --> 00:01:15,690
+Bank of America Citigroup Goldman Sachs JP Morgan Chase Morgan Stanley ve Wells Fargo, bankalara bakacağız ve stok
+
+18
+00:01:15,690 --> 00:01:20,880
+değerlerinin finansal krizden nasıl değiştiğini ve ne yapmak istediğimiz hisse senedi verilerini nasıl
+
+19
+00:01:20,880 --> 00:01:26,620
+alacağımızı buluyor 1 Ocak 2006'dan bu bankaların her biri için 1 Ocak 2016 tarihine
+
+20
+00:01:26,790 --> 00:01:31,620
+Eğer banknotun değişken ismi sembol sembolü olursa ve birkaç adım atarsak, başlangıç ​​ve bitiş
+
+21
+00:01:31,620 --> 00:01:36,690
+tarihi zaman nesnelerini ayarlamak için bu zamanı kullanmamız gerekirse, her bir banka için ticker simgesini
+
+22
+00:01:36,690 --> 00:01:37,620
+bulmamız gerekir.
+
+23
+00:01:37,710 --> 00:01:43,280
+Üç numara, stok hakkında bilgi veya bilgi toplamak için veri okuyucunun nasıl kullanılacağını bulmamız gerekiyor.
+
+24
+00:01:43,500 --> 00:01:48,540
+Ve burada ipuçları ve talimatlar için bu dokümantasyon sayfasını kullanan bir bağlantı var.
+
+25
+00:01:48,540 --> 00:01:51,320
+Ve aslında bu bağlantı aslında oldukça bilgilendiricidir.
+
+26
+00:01:51,330 --> 00:01:57,660
+Burada bilgiyi nasıl yakalayacağınız konusunda biraz ilerleyin.
+
+27
+00:01:57,690 --> 00:02:02,760
+Dolayısıyla, aşağıya inerseniz, size Google Finans'tan hisse senedi fiyatlarında bilgi toplamayı nasıl yapacağınızı
+
+28
+00:02:02,760 --> 00:02:03,230
+vereceğiz.
+
+29
+00:02:03,240 --> 00:02:09,210
+Öncelikle devam edebilir ve esas olarak bu kodu dokümanlardan kopyalayıp yapıştırabilir ve beklendiği
+
+30
+00:02:09,240 --> 00:02:10,160
+gibi çalışacaktır.
+
+31
+00:02:10,380 --> 00:02:14,430
+Bu yüzden, ilerlemeye devam edeceğim ve aslında bu kodu kopyalayarak yapıştırdım, bunu biraz açıklayabilmem
+
+32
+00:02:14,430 --> 00:02:15,090
+için yazdım.
+
+33
+00:02:15,090 --> 00:02:20,190
+Başlangıç ​​ve bitiş tarihleriyle başlayıp ardından web veri
+
+34
+00:02:20,190 --> 00:02:23,070
+okuyucusunun nasıl kullanılacağını göstereceğiz.
+
+35
+00:02:23,160 --> 00:02:23,760
+TAMAM.
+
+36
+00:02:24,040 --> 00:02:31,610
+Yapmak istediğim ilk şey, başlangıç ​​zamanını söylemek ve ardından Tarih Saat Tarih Saatini çağırmak için sadece biraz garip tarih saati tarih
+
+37
+00:02:31,620 --> 00:02:34,150
+saatini çağırmaktır, ancak bu sadece bir kongre.
+
+38
+00:02:34,410 --> 00:02:40,400
+Ve sonra ayı ve başlangıç ​​tarihimiz olacağı günü geçmek istiyoruz.
+
+39
+00:02:40,470 --> 00:02:46,500
+Ve yine bu aslında sadece kodu kopyalayıp belgelerden yapıştırıyor.
+
+40
+00:02:47,190 --> 00:02:51,410
+Ve sonra aynı şeyi yapacağım ancak yıldız yerine benim bitiş tarihim olacak.
+
+41
+00:02:51,750 --> 00:02:57,080
+Ve bu 2006 2016 yılı gibi olacak.
+
+42
+00:02:58,080 --> 00:03:04,820
+Ve sonra yapmamız gereken, Bank of America gibi çeşitli bankaların senetlerini bulmaktır ve ilki
+
+43
+00:03:04,830 --> 00:03:10,100
+aslında burada A C, veri okuyucu BAMC'ye eşit olan verilere benzemektedir.
+
+44
+00:03:10,170 --> 00:03:16,290
+Google'ın başlangıç ​​bitiyor gidelim ve sana gerçekte neye benzediğinin bir
+
+45
+00:03:16,470 --> 00:03:29,610
+örneğini göstermek için söyleyeyim: B A C, veri düşüncelerine eşittir veri okuyucusu, B A C bir Google dizesidir ve ardından başlar ve biter.
+
+46
+00:03:29,610 --> 00:03:29,840
+Tamam.
+
+47
+00:03:29,840 --> 00:03:30,840
+Koştu gibi görünüyor.
+
+48
+00:03:30,840 --> 00:03:32,250
+Hadi devam edelim ve sonucu kontrol edelim.
+
+49
+00:03:32,250 --> 00:03:33,900
+B A C.
+
+50
+00:03:34,230 --> 00:03:39,960
+Ve burada temelde bir tarih indeksine sahip bir veri çerçevesi olan ve daha sonra bir açılış fiyatı yüksek bir
+
+51
+00:03:39,960 --> 00:03:43,800
+fiyat olan düşük fiyatla kapanış fiyatı ve ardından hacim olan B C'yiz.
+
+52
+00:03:43,800 --> 00:03:48,770
+Ve bu, esasen, hisse senetlerinin açılış fiyat stoklarının fiyatlarına, o
+
+53
+00:03:48,790 --> 00:03:51,580
+günün yüksek ve düşük değerlerine dönüşüyor.
+
+54
+00:03:51,630 --> 00:03:56,040
+Ve o tarihteki kapanış fiyatı ve ardından hacim, o gün kaç adet
+
+55
+00:03:56,040 --> 00:03:58,120
+hisse senedinin işlem gördüğü gerçek hacmidir.
+
+56
+00:03:58,500 --> 00:04:03,750
+Google arama Citigroup Plus gibi hisse senedi senet banka adı ve bulursun.
+
+57
+00:04:03,750 --> 00:04:08,280
+Aslında yapmanız gereken sadece diğer çeşitli bankalar için tekrarlamak ve diğer
+
+58
+00:04:08,280 --> 00:04:13,720
+bankalar için hisse senedi hesaplamak için sadece basit bir google arama kullanabilirsiniz Sadece
+
+59
+00:04:14,550 --> 00:04:14,890
+Tamam.
+
+60
+00:04:14,970 --> 00:04:19,740
+Dışarı çıkıp, bu komutların geri kalanını kopyalayıp yapıştıracağım, çünkü esasen tam
+
+61
+00:04:19,740 --> 00:04:21,640
+olarak yaptığımız şey buydu.
+
+62
+00:04:21,660 --> 00:04:29,190
+Ben de Citigroup'u görüyorum, Goldman Sachs sadece G-S J.'dir. P. Morgan Chase JPM Morgan Stanley
+
+63
+00:04:29,250 --> 00:04:31,670
+EMI'leri ve Wells Fargo WFC.
+
+64
+00:04:31,970 --> 00:04:37,710
+olması ve Google'da repassing yaptığı ve bunun anlamı veriyi kapmak için Google Finans kullanması anlamına geliyor.
+
+65
+00:04:37,710 --> 00:04:41,720
+Ve veri okuyucusunu aktardığınız tek argüman, hisse senedi siciminin bir dizesine sahip
+
+66
+00:04:41,730 --> 00:04:47,640
+İsterseniz Yahoo Finans'ı da kullanabilirsiniz, ancak Yahoo'nun geçenlerde bir geçişi olduğu veya satın alındığı için
+
+67
+00:04:47,640 --> 00:04:52,710
+Google Finans'ı tercih ederim; dolayısıyla Google ile korumak daha iyi ve daha sonra
+
+68
+00:04:52,710 --> 00:04:56,580
+başlangıç ​​ve bitiş tarihlerini Tarih Saat bilgileri olarak da koyabilirsiniz.
+
+69
+00:04:56,610 --> 00:04:59,940
+Hadi devam edin ve bu hücreyi çalıştırın ve neler olduğunu görün.
+
+70
+00:04:59,940 --> 00:05:04,350
+Bu yüzden hepsini birlikte çalıştırdığınızda, tüm bu bilgileri İnternet'ten kapmak
+
+71
+00:05:04,350 --> 00:05:05,560
+biraz zaman alabilir.
+
+72
+00:05:05,580 --> 00:05:07,680
+Bu yüzden devam edin ve çalışırken sabırlı olun.
+
+73
+00:05:07,710 --> 00:05:09,030
+Iş bitti.
+
+74
+00:05:09,030 --> 00:05:12,920
+Şimdi diğer veri çerçevesinde devam edelim.
+
+75
+00:05:12,990 --> 00:05:15,540
+Morgan Stanley için bir karışıklığı kontrol edin ve devam edin.
+
+76
+00:05:15,550 --> 00:05:20,700
+Gördüğümüz gibi, tarihlerin yüksekten alçalıya yakın bir tarihte açıldığı ve ardından
+
+77
+00:05:20,700 --> 00:05:26,930
+hacim ticareti yapılan isimler, 2006 yılından itibaren 1 Aralık 2015 tarihine kadar devam ediyor.
+
+78
+00:05:27,030 --> 00:05:33,890
+Yeni Yıl Arifesinde şimdi iyi ve bir karma etiket çıktığında bir sonraki göreve devam edin.
+
+79
+00:05:33,900 --> 00:05:39,440
+Şimdi simgeleşme sembollerinin bir listesini alfabetik sırayla dizeler halinde oluşturmak istedik.
+
+80
+00:05:39,990 --> 00:05:45,260
+Hadi devam edelim ki bunu ticker diyeceğiz ve daha sonra BSEE'yi geçeceğiz.
+
+81
+00:05:46,350 --> 00:05:56,880
+İlk çeyreğin bir sonraki döneminde G-S sonra da JPM ve EMI'ler var.
+
+82
+00:05:56,880 --> 00:06:04,380
+Ve sonra nihayet WFC ve sonra PD dot com'yu kullanmak istiyoruz, banka veri çerçevelerini birlikte Bank underscore hisse senedi
+
+83
+00:06:04,620 --> 00:06:09,900
+adı verilen tek bir veri çerçevesine ekleyebilir ve anahtarların değerini ticker listesine eşit
+
+84
+00:06:09,900 --> 00:06:11,220
+olarak ayarlamak istersiniz.
+
+85
+00:06:11,220 --> 00:06:13,880
+Ayrıca, birleştirdiğiniz erişimlere dikkat edin.
+
+86
+00:06:14,310 --> 00:06:18,600
+Ve bu, sütun boyunca bir araya getirmek istediğinizde erişim miktarını eşit tutmanız
+
+87
+00:06:18,630 --> 00:06:20,250
+gereken bir tür uyarı.
+
+88
+00:06:20,250 --> 00:06:21,080
+Hadi devam edelim ve bunu yapalım.
+
+89
+00:06:21,150 --> 00:06:31,130
+Bu yüzden banka alt çizgi stokları veri çerçevesi oluşturmak istiyorum ve sonra PD concat ve birleştirmek istediğiniz tüm veri çerçevelerinin
+
+90
+00:06:31,710 --> 00:06:33,930
+bir listesini hacen gidiyorum söyleyeceğim.
+
+91
+00:06:33,950 --> 00:06:44,560
+BBC veri çerçevesini G-S BGBM amice Morgan Stanley ve ardından Wells Fargo'yu birleştirmek istiyorum.
+
+92
+00:06:45,270 --> 00:06:49,860
+Ve bu argümanlardan geçmemin nedeni dizelerdir, çünkü bunlar burada
+
+93
+00:06:49,860 --> 00:06:52,020
+oluşturulan gerçek veri çerçeveleridir.
+
+94
+00:06:52,010 --> 00:06:55,080
+Pekâlâ, Fransa'nın bir araya getirmek istediği verilerin bir listesinde geçmek üzere.
+
+95
+00:06:55,080 --> 00:07:00,300
+Hepsini aynı sütun boyunca birleştirmek istiyorum, çünkü hepsi aynı dizini paylaşıyorlar; hepsi
+
+96
+00:07:00,300 --> 00:07:03,040
+aynı kesin ve tarih saati dizinini paylaşıyor.
+
+97
+00:07:03,060 --> 00:07:08,940
+Sütunlardaki salsa ekseni boyunca bu birleştirme işlemini 1'e eşit yapmak istiyorum ve o zaman onun argümanı bu
+
+98
+00:07:08,940 --> 00:07:10,230
+senet listesidir ve devam
+
+99
+00:07:13,630 --> 00:07:16,300
+edelim ve şimdi banka stoklarının neye benzediğini görünelim.
+
+100
+00:07:16,350 --> 00:07:20,350
+O başkan o ve buna benzer bir şey alıyoruz.
+
+101
+00:07:20,370 --> 00:07:25,740
+Esasen, banka hisse senedi senetlerine sahip sütunlarda çok seviyeli bir dizinimiz var ve
+
+102
+00:07:25,770 --> 00:07:33,490
+daha sonra açık yüksek düşük kapanış ve hacim ve her şey, aynı tarih saati endeksini paylaşıyor; bu da, yapmak
+
+103
+00:07:33,520 --> 00:07:35,840
+istediğimiz şey sütun adının düzeylerini ayarlamaktır.
+
+104
+00:07:36,060 --> 00:07:38,120
+Ve bu aslında sizin için doldurulur.
+
+105
+00:07:38,130 --> 00:07:42,290
+Bu yüzden, bunu yapmak için bankaların stokları altını çizdiğini söylemeliyiz.
+
+106
+00:07:42,300 --> 00:07:47,190
+Sütunlar adları değil ve biz onları bu seviyelere banka senedi ve stok bilgisi olarak ayarladık.
+
+107
+00:07:47,190 --> 00:07:54,300
+Dolayısıyla, bir kez bu satışı koştuğunuzda ve bir Chick bankasında iseniz, altını çizerseniz, başı yine stoklar buna
+
+108
+00:07:54,300 --> 00:07:54,720
+benziyor.
+
+109
+00:07:54,720 --> 00:07:59,910
+Ve tek fark şu ki bu aslında bu sütunlardaki ilk endeks seviyesinin etiketli
+
+110
+00:07:59,910 --> 00:08:05,230
+olduğu banknot bank ticker ve sonra ikincisi hisse senedi bilgileri etiketli olarak etiketlendi.
+
+111
+00:08:05,840 --> 00:08:06,410
+TAMAM.
+
+112
+00:08:06,570 --> 00:08:07,130
+Boyunca hareket.
+
+113
+00:08:07,170 --> 00:08:12,620
+Bazı keşifsel veri analizi yapmanın ve artık yapmanız gereken şeyin burada
+
+114
+00:08:12,720 --> 00:08:19,350
+devam etmeden önce, burada çok seviyeli indekslemeyle ilgili belgeleri kontrol etmenizi öneririz, aynı zamanda
+
+115
+00:08:22,170 --> 00:08:28,850
+nokta X'leri kullanarak ve aslında çapraz kesitin aşırı kısmına geçtik. panelde işlem yöntemi dersi.
+
+116
+00:08:28,890 --> 00:08:33,540
+Dolayısıyla, fazlalık hakkında bir video açıklamasını isterseniz ilerleyip gözden geçirebilir ve o konferansa
+
+117
+00:08:33,800 --> 00:08:34,700
+geri dönebilirsiniz.
+
+118
+00:08:34,950 --> 00:08:40,830
+Ancak temelde bu kesit alanı yöntemi, çok düzeyli bir dizinde öğeler bulmanızı sağlar ve burada
+
+119
+00:08:40,830 --> 00:08:41,810
+bazı örnekler bulunur.
+
+120
+00:08:41,840 --> 00:08:43,710
+Ben devam edebilir ve onları büyütebilirim.
+
+121
+00:08:43,770 --> 00:08:48,660
+Umarım buraya gelip, bu veri çerçevesini gördüğünüz örnekleri inceleyerek
+
+122
+00:08:48,660 --> 00:08:50,670
+a'nın kesitini arayabileceklerini görürsünüz.
+
+123
+00:08:50,880 --> 00:08:55,410
+Ayrıca, bir yığın veya bir listeden geçerek ve içeride şeyler kaparak kesit
+
+124
+00:08:55,410 --> 00:08:57,150
+bölümlerini arayabileceklerini de görebilirsiniz.
+
+125
+00:08:57,150 --> 00:08:57,570
+Tamam.
+
+126
+00:08:57,780 --> 00:09:02,790
+Panda işlem konferansına veya bu erişimin kendi açıklamalarımıza atıfta bulunabilir, ancak
+
+127
+00:09:02,790 --> 00:09:06,660
+bunu anladıkları çok önemli çünkü bu proje belirli bir
+
+128
+00:09:06,660 --> 00:09:13,530
+banka veya spesifik alan hakkında bilgi edinmek için bu projenin önemli bir parçası olacak sütunlar.
+
+129
+00:09:13,530 --> 00:09:14,010
+Tamam.
+
+130
+00:09:14,070 --> 00:09:19,620
+Yanıtlamaya yönelik ilk keşifsel veri analizi sorularımız, her bir bankanın zaman aşımına
+
+131
+00:09:19,620 --> 00:09:22,740
+uğramış olarak maksimum kıyafet fiyatını ne sağlar?
+
+132
+00:09:22,740 --> 00:09:24,830
+Bunu yapmanın iki farklı yolu var.
+
+133
+00:09:24,840 --> 00:09:30,140
+Bir şekilde, senaryoda işaretlemek için böyle bir şey söyleyebilirsin.
+
+134
+00:09:30,150 --> 00:09:41,220
+Unutmayın, senetçi isimleri listesinde banka stoklarını kapmak ve sadece bu satırları yorumlamak ve örneğin banka
+
+135
+00:09:41,310 --> 00:09:48,690
+hisse senetlerinin hatırlatıcı olarak neye benzediğini göstermek için söyledim, neye
+
+136
+00:09:48,690 --> 00:09:52,590
+benzediğini görelim gibi bir şey söyler.
+
+137
+00:09:52,590 --> 00:09:53,970
+Yani banka stoklarımızın başında.
+
+138
+00:09:53,970 --> 00:09:58,810
+Bu, üst düzey çok düzeyli sütunlarda çok düzeyli bir dizindir.
+
+139
+00:09:58,880 --> 00:10:06,180
+Örneğin b c koyarsanız burada bir veri çerçevesi edinebilirim, bu bana hangi veri çerçevesini kapattığını
+
+140
+00:10:06,510 --> 00:10:07,450
+gösteriyor demektir.
+
+141
+00:10:07,470 --> 00:10:13,620
+Maksimum yakın fiyat istemek istediğimden max diyebilirim ve bana öyle bir şey verir ki
+
+142
+00:10:13,620 --> 00:10:17,580
+bu da aslında bu komutların yerini alacağım anlamına geliyor.
+
+143
+00:10:17,640 --> 00:10:25,950
+Kene yapmak için buraya geri dönüyoruz ve aslında bunu yazdıracağım.
+
+144
+00:10:25,980 --> 00:10:31,690
+Prince Tich virgül gibi bir şey diyebilirim.
+
+145
+00:10:31,740 --> 00:10:36,710
+Ve burada, tüm bankalarımızın tüm süre boyunca en yakın fiyatına sahip olduk.
+
+146
+00:10:36,870 --> 00:10:38,200
+Bunu yapmanın bir yolu bu.
+
+147
+00:10:38,340 --> 00:10:45,660
+Pandalarla biraz anlayışlı olmak istiyorsanız bunu yapmanın en iyi yolu, bu erişim yöntemini kullanmaktır ve
+
+148
+00:10:45,660 --> 00:10:54,480
+ne yaparsanız yapmanız gereken şey, banka hisse senetlerinin, kesiti oluşturmak istediğiniz anahtarı geçtiğiniz kesit alanına erişimi olduğunu söylüyorsunuz
+
+149
+00:10:54,480 --> 00:10:56,330
+demektir bu durumda.
+
+150
+00:10:56,520 --> 00:10:58,880
+Onu yakınında yapmak istiyorum.
+
+151
+00:10:59,610 --> 00:11:05,520
+Sütun ekseninde olduğunu söylemek istiyorum çünkü bunu sütun üzerinde yapıyorum, böylece x 0 -
+
+152
+00:11:05,550 --> 00:11:10,740
+1'i belirtin ve sonra içerdiği ve seviye stok bilgisi olarak adlandırıldığından seviyeyi belirtin.
+
+153
+00:11:10,750 --> 00:11:15,330
+Unutmayın bu yüzden burada geri döndük.
+
+154
+00:11:15,330 --> 00:11:16,340
+Geri çekilin.
+
+155
+00:11:16,470 --> 00:11:17,620
+Stok bilgisi dedik.
+
+156
+00:11:17,670 --> 00:11:21,460
+Dolayısıyla bu dış seviyelerde Bank Ticker adı verilen bu seviye seviyeleri stok bilgisi olarak adlandırılır.
+
+157
+00:11:21,480 --> 00:11:22,650
+Yani temelde soranız.
+
+158
+00:11:22,800 --> 00:11:30,000
+Tüm bankalar için kapalı sütunu verin ve daha sonra devam edip sadece max teklifini çağıracağız
+
+159
+00:11:30,060 --> 00:11:36,150
+ve bunu çalıştırırsak aslında aynı şeyi elde ederiz ancak biraz daha biçimlendirilmiş ve
+
+160
+00:11:36,180 --> 00:11:39,010
+sadece bir satırlık kodu temizle burada.
+
+161
+00:11:39,030 --> 00:11:39,590
+Tamam.
+
+162
+00:11:39,690 --> 00:11:44,310
+Bu, tüm süre boyunca her bir bankanın hisse senedi için maksimum kapanış fiyatıydı.
+
+163
+00:11:44,670 --> 00:11:50,220
+Şimdi, devam edip, geri dönen yeni bir boş veri çerçevesi oluşturuyoruz ve bu veri
+
+164
+00:11:50,250 --> 00:11:56,220
+çerçevesi, her bir bankanın hisse senedi için getirileri içerecek ve geri dönüşler, genellikle, bir süre
+
+165
+00:11:56,220 --> 00:12:00,680
+için bir dönüşünüz olan bu denklem tarafından tanımlanacak ve sonra fiyatı ödersin.
+
+166
+00:12:00,690 --> 00:12:05,070
+Ama esas olarak, fiyatın bir anda parçalanmasıdır.
+
+167
+00:12:05,070 --> 00:12:07,430
+T Bu durumda sadece tarihlerle uğraşıyoruz.
+
+168
+00:12:07,620 --> 00:12:12,390
+Yani bir gün önceki güne bölünen fiyat eksi bir.
+
+169
+00:12:12,390 --> 00:12:19,320
+Dolayısıyla siz sadece yüzde dönüşü ve dışarı çıkıp geri dönmek için boş bir
+
+170
+00:12:20,580 --> 00:12:24,510
+veri çerçevesi PD veri çerçevesi oluşturup onu çalıştıracağız.
+
+171
+00:12:24,510 --> 00:12:28,680
+Dolayısıyla geri dönüşler adı verilen boş bir veri çerçevemiz var ve çerçeve durumu, her bir banka
+
+172
+00:12:28,680 --> 00:12:29,820
+stoğu için getiriler içeriyor.
+
+173
+00:12:30,120 --> 00:12:35,520
+Ve burada yapacağımız denklem, ilerlememiz ve dönüş değerini gösteren bir sütun oluşturmak
+
+174
+00:12:35,520 --> 00:12:41,310
+için yakın sütundaki Panas t altçizgi değişikliği veya yüzde değiştirme yöntemini kullanabileceğimizi söylemek.
+
+175
+00:12:41,850 --> 00:12:47,950
+Dolayısıyla, ödevimiz, her banka hisse senedi için girilen bir for döngüsü oluşturmaktır. Ticker,
+
+176
+00:12:47,970 --> 00:12:53,830
+bu dönüş sütununu oluşturur ve bunu, döner veri çerçevesinde bir sütun olarak ayarlar.
+
+177
+00:12:54,180 --> 00:12:55,520
+Şimdi bu kesinlikle biraz zor.
+
+178
+00:12:55,530 --> 00:12:56,900
+O halde devam edelim ve parçalayalım.
+
+179
+00:12:56,910 --> 00:13:00,410
+Her bir banka hisse senedi için bir döngü oluşturmak istiyoruz.
+
+180
+00:13:00,480 --> 00:13:07,080
+Bu yüzden ticker'larda bir kene kaydetmek istiyorum Ve sonra yapmak istediğim bir dönüş sütunu oluşturmak, yani geri
+
+181
+00:13:07,080 --> 00:13:10,590
+döndürmek demek ve bu da burada yeni veri çerçevem.
+
+182
+00:13:10,740 --> 00:13:21,270
+Yeni bir sütun oluşturacağım ve sütun adı, Tich'in iade ile birleştiğini
+
+183
+00:13:21,270 --> 00:13:30,490
+ve banka stoklarına o kene kapanış fiyatında eşit olacağını söyleyecektir.
+
+184
+00:13:30,510 --> 00:13:35,490
+Ve sonra sadece PCT değişim çağrısı ve bu anlamaya biraz zordu.
+
+185
+00:13:36,000 --> 00:13:41,280
+Öyleyse devam edelim ve şimdi bunu çalıştıralım ve dönüşler veri çerçevemize bakalım veya en
+
+186
+00:13:41,280 --> 00:13:49,890
+azından onun başını inceleyelim ve burada hiç veri çerçevesi döndürmüyor ve ilk değerimizin hiçbirinin olmadığını veya hiç olmadığını anlamışsınız, çünkü yüzde elde edemiyorsunuz.
+
+187
+00:13:49,890 --> 00:13:54,030
+İlk günde geri dönün çünkü geçmişi karşılaştırmak için başka bir şey
+
+188
+00:13:54,030 --> 00:13:54,450
+yok.
+
+189
+00:13:54,460 --> 00:13:55,710
+Bu mantıklı.
+
+190
+00:13:55,710 --> 00:14:02,280
+Ve burada temelde geri dönüş değerinizi elde ettiğinizi görebilirsiniz ya da şimdi yapalım ve şimdi Seaborn'un geri
+
+191
+00:14:02,280 --> 00:14:05,520
+dönüş verisi çerçevesini kullanarak bir çift arsa oluşturun.
+
+192
+00:14:05,520 --> 00:14:06,480
+Orada bir kaç soru var.
+
+193
+00:14:06,480 --> 00:14:09,420
+Hangi hisse size dikkat çekiyor ve nedenini anlayabiliyor musunuz.
+
+194
+00:14:09,680 --> 00:14:16,770
+Ne yapacağım ve yapacağım sadece SNS nokta çifti arsa ve geri arama deyin.
+
+195
+00:14:16,770 --> 00:14:21,690
+Şimdi sadece geri döndürürsem bir şey fark edeceksiniz, bir hata alacağım
+
+196
+00:14:21,690 --> 00:14:28,230
+ve hatasız kaydırma yaparak, Max'in aralık parametresindeki erkeklerden daha büyük olması gerektiğini ve bunun temelde
+
+197
+00:14:28,230 --> 00:14:32,210
+bir sorunun geri çağrıldığını bildirirsiniz. burada boş bir yere sahipsiniz.
+
+198
+00:14:32,370 --> 00:14:41,130
+Öyleyse yapmanız gereken, her şeyin 1. konumdaki dizinden başlamak istediğinizi belirtti.
+
+199
+00:14:41,520 --> 00:14:43,450
+Ve şimdi ne zaman koşarsan iyi olmalısın.
+
+200
+00:14:43,470 --> 00:14:48,120
+Artı olarak, arsa için beklerken bunu aklında tutmak için çok büyük veri setleri için biraz zaman ayırın.
+
+201
+00:14:48,840 --> 00:14:50,670
+Ama böyle bir şey görüyorsun.
+
+202
+00:14:50,790 --> 00:14:53,720
+Ve soru, hisse senedinin öne çıktığı şeydi.
+
+203
+00:14:54,030 --> 00:14:59,200
+Buna bakarsanız, tüm bu stokların arsa dağılımına gelince nispeten normal gözüktüğünü fark
+
+204
+00:14:59,200 --> 00:14:59,800
+edeceksiniz.
+
+205
+00:14:59,800 --> 00:15:01,380
+Biraz korelasyon varmış gibi görünüyor.
+
+206
+00:15:01,530 --> 00:15:05,010
+Ama bunlardan biri garip bir düz çizgi paketi gibidir.
+
+207
+00:15:05,010 --> 00:15:13,680
+Ve bunun Citigroup'un deniz getirisi boyunca gerçekleştiğini ve Citigroup'un aslında büyük bir hisse senedi kazasında olduğunu
+
+208
+00:15:13,680 --> 00:15:14,970
+fark ettiniz.
+
+209
+00:15:15,000 --> 00:15:21,270
+Ve eğer Citigroup'a bakarsanız ve buraya gelerseniz Wikipedia bağlantısına giderseniz, Kasım 2008'ün
+
+210
+00:15:21,300 --> 00:15:28,050
+farkına varacaksınız ve bu küresel finansal krizin bir kısmıyla Kasım 2008'de Citigroup'un
+
+211
+00:15:28,080 --> 00:15:34,020
+iflas ettiğini ve aslında göreceğimiz Zaman içinde Citigroup'un hisse değerini görseydik
+
+212
+00:15:34,110 --> 00:15:35,840
+o büyük çöküşü.
+
+213
+00:15:35,850 --> 00:15:40,080
+Fakat devam edebilir ve bu konuda biraz bilgi sahibi olabilir, ancak bu tür neden bu olduğuna dair
+
+214
+00:15:40,350 --> 00:15:42,570
+veri analizinin ardındaki hikaye ile daha fazla uğraşmak zorundadır.
+
+215
+00:15:42,720 --> 00:15:47,870
+Ve bu sadece bir şirket olarak Citigroup'un Wikipedia sayfasında mevcuttur.
+
+216
+00:15:47,880 --> 00:15:48,330
+Tamam.
+
+217
+00:15:48,360 --> 00:15:53,220
+Umarım bu tuhaf dönüşün bu garip davranışını fark ettiniz, ancak bu
+
+218
+00:15:53,220 --> 00:15:54,480
+aslında kazayı yapıyor.
+
+219
+00:15:54,480 --> 00:15:55,250
+TAMAM.
+
+220
+00:15:55,470 --> 00:15:57,890
+Biz devam edip onu burada durduracağız.
+
+221
+00:15:58,260 --> 00:16:01,080
+Ve ikinci bölümüne geri döndüğümüzde araştıracağız.
+
+222
+00:16:01,080 --> 00:16:06,330
+Bu, günün biraz daha çerçevesine döner ve daha sonra, geri dönüşlerin dağılımı kadar biraz
+
+223
+00:16:06,420 --> 00:16:07,660
+daha araştırma yapar.
+
+224
+00:16:07,830 --> 00:16:10,390
+Sonra verileri daha da görselleştireceğiz.
+
+225
+00:16:10,410 --> 00:16:12,470
+Herkese teşekkürler, bir sonraki derside görüşürüz.

@@ -1,0 +1,479 @@
+1
+00:00:05,280 --> 00:00:07,320
+Bună ziua tuturor și bine ați venit la curs.
+
+2
+00:00:07,440 --> 00:00:11,140
+Remergarea îmbinării datelor de canonizare a cadrelor în această prelegere.
+
+3
+00:00:11,160 --> 00:00:16,110
+Vom învăța cum să combinăm cadrele de date printr-o varietate de metode, în loc de a trăi de
+
+4
+00:00:16,110 --> 00:00:21,180
+fapt viața, deoarece aceste metode și comenzi sunt într-adevăr foarte simple, iar cea mai mare parte a tastării este
+
+5
+00:00:21,180 --> 00:00:25,150
+doar crearea de cadre de date pentru a fuziona sau a se uni.
+
+6
+00:00:25,170 --> 00:00:29,160
+O să facem doar să mergem prin carnetul de curs pentru această prelegere.
+
+7
+00:00:29,160 --> 00:00:32,920
+Se numește fuzionarea tamplariei și concatenarea și este sub dosarul pandelor.
+
+8
+00:00:33,150 --> 00:00:35,610
+Să mergem mai departe și să trecem la acel notebook Jupiter acum.
+
+9
+00:00:35,670 --> 00:00:35,970
+In regula.
+
+10
+00:00:35,970 --> 00:00:41,250
+Aici suntem la notebook-ul Jupiter pentru că ne-am îmbinat și am concatenat.
+
+11
+00:00:41,250 --> 00:00:45,080
+În primul rând, vom crea câteva cadre de date pentru a lucra aici.
+
+12
+00:00:45,120 --> 00:00:50,150
+Am importat PD pandas și folosind un dicționar și o listă cu numerele de index.
+
+13
+00:00:50,310 --> 00:00:57,000
+Am creat trei cadre de date un DFA pentru ADF trei vom arunca o privire la aceste cadre
+
+14
+00:00:57,000 --> 00:01:05,470
+de date se va vedea că avem diff unul care este coloanele ABC și D și indicii de la 0 la 3 și apoi DF
+
+15
+00:01:05,610 --> 00:01:12,370
+2 are aceleași coloane pe care indicele sunt 4 până la 7 și apoi DF 3 are indicii prin 11.
+
+16
+00:01:12,390 --> 00:01:17,430
+Să vorbim despre concatenarea de concatenare, în principiu lipi împreună cadrele de date.
+
+17
+00:01:17,440 --> 00:01:20,570
+Rețineți că dimensiunile ar trebui să se potrivească cu Machel pe axă.
+
+18
+00:01:20,580 --> 00:01:23,100
+Încercați să vă concatenați pentru asta.
+
+19
+00:01:23,100 --> 00:01:29,540
+Folosiți doar PD dot com și apoi treceți o listă a cadrului de date pentru a concatena
+
+20
+00:01:29,690 --> 00:01:36,190
+împreună aici. Voi concatena cadre de date unu doi și trei prin trecerea lor într-o listă în PD.
+
+21
+00:01:36,210 --> 00:01:39,090
+Funcția Concat.
+
+22
+00:01:39,310 --> 00:01:43,600
+Putem vedea că, în mod implicit, accesul pentru a se alătura este zero.
+
+23
+00:01:43,620 --> 00:01:45,970
+Înseamnă că se va alătura rândurilor împreună.
+
+24
+00:01:46,440 --> 00:01:52,580
+Vedem aici faptul că succesiv concatenate sau în principiu lipite împreună cadrele de date și putem vedea acum că avem
+
+25
+00:01:52,590 --> 00:01:57,510
+un b și c și d ca coloane cu indicii 0 tot drumul până la 11.
+
+26
+00:01:57,560 --> 00:02:00,100
+Cu fiecare dintre punctele de date aliniate frumos.
+
+27
+00:02:00,270 --> 00:02:06,090
+Acum puteți specifica, de asemenea, că x este egal cu 1 dacă doriți să se alăture și să fuzioneze de-a lungul coloanelor sau să se
+
+28
+00:02:06,150 --> 00:02:07,290
+reunească de-a lungul coloanelor.
+
+29
+00:02:07,680 --> 00:02:13,770
+Și acesta este un exemplu de ceea ce se întâmplă atunci când utilizați PD care Kancha pe aceste trei cadre de date de-a lungul.
+
+30
+00:02:13,830 --> 00:02:15,900
+X este egal cu 1.
+
+31
+00:02:15,900 --> 00:02:20,970
+Observați aici că avem o grămadă de valori lipsă și asta pentru că aceste cadre de date nu au
+
+32
+00:02:20,970 --> 00:02:23,800
+valori pentru toți indicii pe care doriți să le concatenați.
+
+33
+00:02:24,060 --> 00:02:31,640
+De exemplu, cu cadrele de date 1 A B și C și D ați avut valorile pentru 0 până la 3.
+
+34
+00:02:31,650 --> 00:02:37,290
+Cu toate acestea, până la 11 nu ați avut valori și de aceea a fost completat
+
+35
+00:02:37,290 --> 00:02:44,850
+cu Knolles când ați aderat la acest lucru sunt concatenate pe date și în cadrul de date 3 care înseamnă în principiu atunci
+
+36
+00:02:44,850 --> 00:02:50,910
+când lucrați cu concatenare și P-doc concat tu " Vreau să vă asigur că aveți informații care să
+
+37
+00:02:51,120 --> 00:02:53,960
+se alinieze corect când vă alăturați pe axe.
+
+38
+00:02:54,120 --> 00:02:58,850
+În acest caz, am vrut să aderăm la un acces egal cu 0 pentru a ordona totul corect.
+
+39
+00:02:58,860 --> 00:03:00,740
+Cum specificăm legarea de-a lungul coloanelor.
+
+40
+00:03:00,750 --> 00:03:02,100
+Fax o continuare a unuia.
+
+41
+00:03:02,250 --> 00:03:04,890
+Vom avea o grămadă de informații lipsă.
+
+42
+00:03:04,890 --> 00:03:09,450
+Cel mai adesea, veți fi, probabil, adunând coloane împreună, astfel încât, de fapt, să vă alăturați.
+
+43
+00:03:09,450 --> 00:03:11,060
+Accesul este egal cu 1.
+
+44
+00:03:11,080 --> 00:03:15,890
+Cu toate acestea, asigurați-vă că știți datele și ceea ce doriți să concatenați înainte de a alege un acces.
+
+45
+00:03:16,710 --> 00:03:19,560
+Bine, să mergem mai departe și să ne mișcăm.
+
+46
+00:03:19,650 --> 00:03:22,440
+În acest caz, vom crea mai multe cadre de date de exemplu.
+
+47
+00:03:22,440 --> 00:03:27,780
+Unul a sunat la stânga și unul a sunat aici pentru a arunca o privire spre stânga.
+
+48
+00:03:27,780 --> 00:03:34,680
+Avem coloane A și B cu unele valori în ele și apoi avem o coloană de taste k 0 până la K3 avem un
+
+49
+00:03:34,680 --> 00:03:40,340
+cadru de date potrivit care are un cadru de date foarte asemănător, cu excepția coloanelor C și D diferite.
+
+50
+00:03:40,470 --> 00:03:45,690
+Cu toate acestea, coloana de taste este exact aceeași cu cea din stânga atât de puternic stânga cadru
+
+51
+00:03:45,690 --> 00:03:51,850
+de date și panderers cadru de date dreapta este capabil de a utiliza funcția de îmbinare pentru a face logica de îmbinare.
+
+52
+00:03:51,870 --> 00:03:55,020
+Este foarte asemănătoare cu combinarea tabelelor de continuare.
+
+53
+00:03:55,230 --> 00:03:59,610
+Și dacă nu lucrați în continuare, nu trebuie să vă faceți griji prea multe despre acest lucru, dar vă voi arăta elementele
+
+54
+00:03:59,610 --> 00:04:02,100
+de bază ale modului de îmbinare a două cadre de date.
+
+55
+00:04:02,100 --> 00:04:07,790
+Doar spuneți că PD se îmbină și apoi trece cadrul de date din stânga și cadrul de date potrivit.
+
+56
+00:04:07,920 --> 00:04:14,470
+Sau doar datele pasan dintr-un cadru de date sau date la orice cadre de date pe care doriți să fuzionați împreună.
+
+57
+00:04:14,550 --> 00:04:16,840
+Implicit, acestea le vor îmbina pe interior.
+
+58
+00:04:17,040 --> 00:04:22,440
+Și dacă nu sunteți familiarizați cu inor în ceea ce privește fuziunea siecle nu vă faceți griji despre asta doar utilizați
+
+59
+00:04:22,470 --> 00:04:23,160
+interiorul implicit.
+
+60
+00:04:23,220 --> 00:04:26,700
+Mai important, aflați despre acest lucru.
+
+61
+00:04:26,700 --> 00:04:31,200
+Practic, atunci când fuzionați, veți dori să fuzionați într-o coloană-cheie și de fapt puteți trece într-una sau mai
+
+62
+00:04:31,200 --> 00:04:33,740
+multe coloane cheie pe care le vom vedea mai târziu.
+
+63
+00:04:33,810 --> 00:04:39,930
+Dar, practic, ceea ce se întâmplă aici este că vom combina sau vom îmbina aceste cadre de date împreună
+
+64
+00:04:39,930 --> 00:04:41,090
+în această coloană-cheie.
+
+65
+00:04:41,220 --> 00:04:46,650
+Și în acest fel, în loc să le concatenăm, vom avea două coloane cheie pe care le putem îmbina, astfel încât să le
+
+66
+00:04:46,650 --> 00:04:49,960
+îmbinăm sau să le aderăm la aceeași coloană cheie pe care o împărtășesc.
+
+67
+00:04:50,280 --> 00:04:55,050
+Deci, logica aici este atunci când utilizați PD care merge în loc de a lipi doar cadrele
+
+68
+00:04:55,140 --> 00:04:58,260
+de date împreună veți vedea unde valorile se potrivesc pe coloane.
+
+69
+00:04:58,260 --> 00:05:03,630
+În acest caz, coloana de taste și apoi creați rândurile folosind coloana de chei.
+
+70
+00:05:03,630 --> 00:05:06,570
+Dați-mi voie să vă arăt câteva exemple mai complicate.
+
+71
+00:05:06,900 --> 00:05:14,910
+Aici am lăsat cadrele de date și le-am dat seama că au două chei una și cheia doi, altfel sunt exact aceleași ca și stânga și dreapta
+
+72
+00:05:15,900 --> 00:05:20,820
+pe care tocmai am văzut mai devreme pe care le poți folosi PD care merg doar
+
+73
+00:05:21,050 --> 00:05:26,310
+să treacă în primul cadru de date și cel de-al doilea cadru de date și apoi puteți specifica
+
+74
+00:05:26,310 --> 00:05:33,420
+și puteți trece într-o listă de chei dacă doriți să fuzionați de fapt pe mai multe chei, cum ar fi tasta unu sau tasta.
+
+75
+00:05:33,870 --> 00:05:38,660
+Iată câteva exemple care utilizează o combinație externă sau o îmbinare.
+
+76
+00:05:38,730 --> 00:05:44,850
+Chiar dacă nu sunteți familiarizați cu sintaxa secvențelor, cum ar fi interiorul sau exteriorul din dreapta sau din stânga, vă unește prea mult
+
+77
+00:05:44,850 --> 00:05:49,290
+de acest lucru, nu le folosim de fapt în cursul în care întotdeauna vom fi implicit
+
+78
+00:05:49,290 --> 00:05:53,150
+implicați în ceva care arată astfel în cursul utilizați doar o îmbinare interioară.
+
+79
+00:05:53,190 --> 00:05:57,700
+Cu toate acestea, dacă vă aflați în încercarea de a face un fel de continuare a
+
+80
+00:05:57,690 --> 00:06:04,020
+fuziunii și sunteți deja familiar cu continuarea sintaxei doar știți că Pancho's are modul în care operatorul sunt parametru pentru a utiliza în
+
+81
+00:06:04,020 --> 00:06:05,810
+cazul în care doriți funcționalitate suplimentară.
+
+82
+00:06:06,030 --> 00:06:11,520
+Dar, în principiu, depinde dacă folosiți scrierea interioară exterioară etc. S-ar putea să constatați că aveți
+
+83
+00:06:11,520 --> 00:06:16,890
+unele valori lipsă, așa că țineți cont de faptul că lucrați cu PD fuzionarea.
+
+84
+00:06:16,920 --> 00:06:19,070
+Iată un exemplu de stânga.
+
+85
+00:06:19,680 --> 00:06:25,080
+Și în cele din urmă am ajuns la unificarea aderării este o metodă convenabilă pentru combinarea coloanelor a
+
+86
+00:06:25,080 --> 00:06:29,310
+două cadre de date index potențial diferite într-un singur cadru de date rezultat.
+
+87
+00:06:29,400 --> 00:06:33,840
+Ați putea să vă gândiți în mod esențial la acest lucru ca la același lucru ca și îmbinarea, cu excepția faptului că cheile la care
+
+88
+00:06:33,840 --> 00:06:36,680
+doriți să vă alăturați sunt de fapt pe indexul dvs. în loc de o coloană.
+
+89
+00:06:36,690 --> 00:06:39,600
+Deci, aici am creat două cadre de date la stânga și la dreapta.
+
+90
+00:06:39,600 --> 00:06:45,620
+Observă că au coloanele A B și apoi CD-ul și apoi indexul este, de fapt, că ne vom alătura, iar
+
+91
+00:06:46,490 --> 00:06:52,530
+sintaxa pe care o poți folosi este să spui că rămâi alăturat chiar acum, va face automat o legătură interioară
+
+92
+00:06:52,560 --> 00:06:53,990
+între stânga și dreapta.
+
+93
+00:06:54,060 --> 00:06:59,880
+Bazat pe cheile indexului dacă doriți să îmbinați aceste două cadre de date bazate pe una dintre coloanele lor, va
+
+94
+00:06:59,880 --> 00:07:05,220
+trebui să utilizați îmbinarea, dar funcția de integrare a metodei va ieși din unul dintre cadrele de date.
+
+95
+00:07:05,210 --> 00:07:08,830
+Voi spuneți că vă alăturați și apoi treceți pe celălalt cadru de date și cum ar fi îmbinarea.
+
+96
+00:07:08,850 --> 00:07:13,030
+Puteți specifica CUM cum ar fi interiorul stânga exterioară etc.
+
+97
+00:07:13,070 --> 00:07:17,380
+Amintiți-vă acest lucru numai pentru utilizatorii secvenței de eveniment care sunt deja familiarizați cu terminologia respectivă.
+
+98
+00:07:17,430 --> 00:07:20,330
+Dacă nu sunteți familiarizați cu acest lucru, nu vă îngrijorați prea mult.
+
+99
+00:07:20,370 --> 00:07:26,700
+Să mergem mai departe și să facem o scurtă trecere în revistă a modului de a vă alătura cadrelor de date de îmbinare și bumbac și vom trece peste subiectele cheie
+
+100
+00:07:26,700 --> 00:07:29,000
+pe care ar trebui să le scoatem din această prelegere.
+
+101
+00:07:29,400 --> 00:07:34,800
+În ceea ce privește îmbinarea îmbinărilor și concatenarea cadrelor de date în scopul concatenării sau al rapoartelor de date
+
+102
+00:07:34,800 --> 00:07:37,100
+Glew împreună, procesul este destul de simplu.
+
+103
+00:07:37,320 --> 00:07:43,080
+Tocmai spuneți pisica de pecan și pasanți o listă a cadrelor de date și apoi asigurați-vă că specificați
+
+104
+00:07:43,080 --> 00:07:48,900
+axa corectă în funcție de situația în care doriți să le îmbinați împreună cu rândurile sau cu coloanele lor.
+
+105
+00:07:48,900 --> 00:07:54,960
+În continuare aveți PD care îmbină și PD care fuzionează vă permite să fuzionați cadre de date împreună și tocmai ați trece primul dvs. cadru de
+
+106
+00:07:54,960 --> 00:07:59,190
+date pe care doriți să fuzionați și apoi cel de-al doilea cadru de date pe care doriți să
+
+107
+00:07:59,190 --> 00:08:03,000
+îl îmbinați și apoi vă spuneți și puteți Pessin doar un singură cheie de coloană.
+
+108
+00:08:03,150 --> 00:08:08,420
+Sau puteți trece orice listă de taste și în mod implicit va fuziona pe enter.
+
+109
+00:08:08,610 --> 00:08:13,350
+Dacă nu sunteți familiarizați cu tabelele de continuare a fuzionării, nu vă faceți griji în legătură cu modul în care vă faceți griji
+
+110
+00:08:13,590 --> 00:08:19,500
+cu privire la un singur cadru de date pe un cadru de date din stânga în dreapta și apoi pe o anumită coloană de taste sau pe o
+
+111
+00:08:19,500 --> 00:08:20,550
+listă de coloane cheie.
+
+112
+00:08:20,550 --> 00:08:26,730
+Aceasta este singura funcționalitate a PD fuzionat pe care o voi folosi pe parcursul întregului curs și apoi pentru unirea
+
+113
+00:08:26,730 --> 00:08:31,560
+este o metodă mai avansată pentru combinarea coloanelor a două cadre de date potențial diferite
+
+114
+00:08:31,560 --> 00:08:32,150
+indexate.
+
+115
+00:08:32,160 --> 00:08:37,620
+Este foarte asemănătoare pentru a fuziona, cu excepția faptului că se unește de fapt cu indexul în loc
+
+116
+00:08:37,620 --> 00:08:42,940
+de o coloană, iar sintaxa pentru asta este doar numele rastrului de date din stânga din dreapta.
+
+117
+00:08:43,140 --> 00:08:48,090
+De fapt, nu vom folosi înscrierea pe parcursul cursului, dar vreau să fiți conștienți de acest lucru și puteți face referire la
+
+118
+00:08:48,090 --> 00:08:51,810
+această carte de notebook sau la documentație, în cazul în care vreți să revizuiți aderarea.
+
+119
+00:08:52,110 --> 00:08:53,610
+O treabă bună.
+
+120
+00:08:53,730 --> 00:08:55,440
+Mulțumesc și te vom vedea la următoarea conferință

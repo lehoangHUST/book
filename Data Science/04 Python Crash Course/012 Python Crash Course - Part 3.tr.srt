@@ -1,0 +1,879 @@
+1
+00:00:05,520 --> 00:00:09,570
+Herkese merhaba ve Python çarpışma dersinin üçüncü bölümüne hoş geldiniz.
+
+2
+00:00:09,570 --> 00:00:13,470
+Devam edelim ve hemen geçen saatte bıraktığımız Jüpiter defterine atlayalım.
+
+3
+00:00:13,470 --> 00:00:13,710
+Tamam.
+
+4
+00:00:13,710 --> 00:00:15,260
+İşte Jüpiter defterindeyim.
+
+5
+00:00:15,270 --> 00:00:18,680
+Son kez elif ve L ifadelerinden vazgeçtik.
+
+6
+00:00:18,810 --> 00:00:25,350
+Şimdi, döngüler için hızlı bir şekilde yerini alacağız ve döngüler döngüleri, S-C Q adlı
+
+7
+00:00:25,410 --> 00:00:33,770
+bir nesne dizisi için yapacağım ve bir iki üç dört beş olduğunu söyleyeceğim bir dizi boyunca yinelemenize izin veriyor.
+
+8
+00:00:34,380 --> 00:00:35,860
+Bu sadece sayıların listesi.
+
+9
+00:00:36,000 --> 00:00:41,310
+Ardından, bu dizideki her bir öğe için bir kod bloğu gerçekleştirmek veya yürütmek için bir
+
+10
+00:00:41,310 --> 00:00:42,290
+for döngüsü kullanabilirsiniz.
+
+11
+00:00:42,570 --> 00:00:44,410
+Anlamı böyle bir şey yapabilirsin.
+
+12
+00:00:44,430 --> 00:00:45,880
+Ve işte anahtar kelime buydu.
+
+13
+00:00:46,260 --> 00:00:53,070
+Kuyruk gerçekleştiren veya bazı kod bloğunu yürüten öğedeki ve ardından nesne için bir sıra.
+
+14
+00:00:53,790 --> 00:00:57,490
+Bu durumda, baskılar kalacak.
+
+15
+00:00:57,840 --> 00:01:04,590
+Ve şimdi, burada sıralamak için bir şey bu sıradaki her öğe için öğeyi basmak mümkün
+
+16
+00:01:04,590 --> 00:01:08,850
+oldum, bu geçici değişken adı maddenin olmasını istediğiniz her olabilirsiniz.
+
+17
+00:01:08,850 --> 00:01:14,600
+Mesela ben gidip jöle gibi bir şeyle değiştirebilirim ve yine de çalışacaktır.
+
+18
+00:01:14,850 --> 00:01:22,050
+Yani sıralı jöle veya bir CQ baskılı jöle için de aynı şey var.
+
+19
+00:01:22,230 --> 00:01:25,850
+Muhtemelen bu kelimeleri veya geçici değişken adlarını seçmek istersiniz.
+
+20
+00:01:25,850 --> 00:01:27,660
+Dikkatle buraya.
+
+21
+00:01:27,660 --> 00:01:28,550
+Bunlar rakamlar.
+
+22
+00:01:28,590 --> 00:01:34,590
+iyi bir seçim, bir sayı ve sayı için bir M olabilir ve bu şekilde, bu
+
+23
+00:01:34,590 --> 00:01:40,170
+kodu daha sonraki tarihte geri döndüğümde, aslında ne yaptığımı hatırlayabilir veya burada aklımda tutmak
+
+24
+00:01:40,290 --> 00:01:45,720
+için bir şeyler yapmak, bu kod bloğunun gerçekte dizinin içindeki öğelerle ilişkili olması gerekmez.
+
+25
+00:01:45,720 --> 00:01:46,680
+Bu nedenle,
+
+26
+00:01:46,680 --> 00:01:51,070
+İstediğiniz her şeyi burada yapabilirsiniz, böylece merhaba baskılar söyleyebilirim.
+
+27
+00:01:51,570 --> 00:01:56,130
+Ve bu sadece gidip, burada her element için OK diyerek, bu eylemi yapacağım anlamına
+
+28
+00:01:56,130 --> 00:01:59,210
+geliyor; ben sadece beş kez Merhaba bastıracağım anlamına geliyor.
+
+29
+00:01:59,210 --> 00:02:04,650
+Şimdi devam edin ve bazı koşullar sağlanıncaya kadar bir eylemi sürekli yapmak için
+
+30
+00:02:04,650 --> 00:02:06,910
+bir while döngüsü nasıl kullanabileceğinizi göstereceğiz.
+
+31
+00:02:07,080 --> 00:02:18,750
+koşul gerçek olurken ben de biraz kod bloğu gerçekleştireceğim ve gidiyorum in ve print print diyelim ki iki nokta üst üste parantez
+
+32
+00:02:18,750 --> 00:02:24,630
+parantezleri ve daha sonra orayı geçirmek için bu biçimi kullanın.
+
+33
+00:02:24,630 --> 00:02:35,240
+Devam edip yazacağım 1, 1'e eşittir ve daha sonra beşten az olan iki nokta üst üste dururken söylüyorum ve bu
+
+34
+00:02:35,250 --> 00:02:40,740
+Şimdi bunu hemen çalıştırma, ne olacağına bakmak için gözleri birine eşit ayarladım ve o
+
+35
+00:02:40,740 --> 00:02:42,890
+zaman dedim ki beşten azım iyi.
+
+36
+00:02:43,020 --> 00:02:44,260
+Devam edin ve bunu yazdırabilirsiniz.
+
+37
+00:02:44,340 --> 00:02:50,820
+Bu işi koşarsam sonsuz bir döngü elde ederim, hücre sonsuza dek sürecekti, çünkü her zaman
+
+38
+00:02:50,820 --> 00:02:52,380
+beşten az olacağım.
+
+39
+00:02:52,710 --> 00:02:57,900
+Bir hücreye sahip olursanız, kazayla yalnızca sonsuza dek koşar ve sürekli çıktı elde
+
+40
+00:02:57,900 --> 00:03:02,870
+ederek veya çok uzun süre bir sayı yerine bir asterix vererek fark edeceksiniz.
+
+41
+00:03:02,880 --> 00:03:09,640
+Yapmanız gereken, Albay'a gidip bu sorunu önlemek için yeniden başlat'ı tıklamak.
+
+42
+00:03:09,690 --> 00:03:14,460
+Neden artı 1'e eşit olduğunu söylemeye gidiyorum.
+
+43
+00:03:14,490 --> 00:03:18,320
+Şimdi bunu çalıştırdığımda bu kod bloğunu çalıştırıyorum.
+
+44
+00:03:18,390 --> 00:03:22,110
+Bu yüzden başladık, verdiğimiz ilk değer olanı seçtim.
+
+45
+00:03:22,170 --> 00:03:25,140
+Ardından gözleri 1 basmıştık ve 1 ekledik.
+
+46
+00:03:25,170 --> 00:03:29,130
+Sonra while döngüsü beşten az olduğuna göre tekrar kontrol edildi.
+
+47
+00:03:29,130 --> 00:03:30,180
+Bu doğrudur.
+
+48
+00:03:30,180 --> 00:03:34,390
+Bu yüzden, yazdırmanın gözleri 1 eklemek için üç beşten az olmalıdır.
+
+49
+00:03:34,410 --> 00:03:35,500
+Bu doğrudur.
+
+50
+00:03:35,540 --> 00:03:36,700
+Prens üç tane var.
+
+51
+00:03:36,720 --> 00:03:39,170
+Buna, 1'den 5'e az ekleyin.
+
+52
+00:03:39,180 --> 00:03:39,850
+Bu doğru.
+
+53
+00:03:39,870 --> 00:03:42,480
+Prens ekleme 1'dir.
+
+54
+00:03:42,480 --> 00:03:44,700
+Sonunda beş beşten az.
+
+55
+00:03:44,700 --> 00:03:45,920
+Bu doğru değil.
+
+56
+00:03:45,990 --> 00:03:49,500
+Böylece ilerledim ve bitti ve o döngüden çıktı.
+
+57
+00:03:49,620 --> 00:03:51,330
+Ve bir süre döngüsü işler böyle.
+
+58
+00:03:51,420 --> 00:03:58,410
+Temelde bazı koşullar doğru olduğunda bazı kod bloğunu yürütecek.
+
+59
+00:03:58,430 --> 00:04:04,230
+Tamam, içeri girip Python içerisindeki birkaç yararlı fonksiyonu tartışalım.
+
+60
+00:04:04,230 --> 00:04:06,930
+Gerçekten kullanışlı biri aralıktır.
+
+61
+00:04:07,050 --> 00:04:16,470
+Birçok kez, for döngüsü yapmak için X dizisi için ipucu için X gibi bir şey yapmak isteyeceğiniz veya
+
+62
+00:04:17,010 --> 00:04:21,800
+Q'nun sadece bir iki üç dört beş olduğunu hatırlayacaksınız.
+
+63
+00:04:21,840 --> 00:04:25,920
+Çoğu zaman, belirli bir süre için bir şeyler yapmak isteyeceksiniz.
+
+64
+00:04:25,980 --> 00:04:33,090
+bir yolu x in deyip gerçekten çok uzun bir dizilim yapmaktır, ancak o kadarını yazmak istemezsiniz.
+
+65
+00:04:33,090 --> 00:04:34,430
+Şimdi bunu yapmanın
+
+66
+00:04:34,440 --> 00:04:42,630
+Dolayısıyla Python'un bir aralık işlevi vardır ve aralık sayısal değerlerin bir jeneratörü olacaktır, bu yüzden
+
+67
+00:04:43,350 --> 00:04:52,330
+aralık belirttiğiniz takdirde, başlamak istediğiniz sayı ile başlayacağınız ve bunu çalıştırırsanız, aralığı elde ettiğinizi ispatlamak istediğiniz
+
+68
+00:04:52,330 --> 00:04:54,510
+sayı ile başlarsınız nesne.
+
+69
+00:04:54,550 --> 00:05:06,460
+Ve sonra yapabileceğiniz şey, x için sıfırdan virgül aralığına 5 kolon X yazdırıyor ve sonra 0 1 2 3
+
+70
+00:05:06,550 --> 00:05:12,240
+4 görürsünüz ve bu değerleri üretmenin kısa bir yoludur.
+
+71
+00:05:12,280 --> 00:05:21,820
+Aslında bunu bunu liste işlevinde geçirecek bir liste olmasını istiyorsanız bir jeneratördür ve bunu
+
+72
+00:05:21,880 --> 00:05:23,560
+bir listeye dönüştürür.
+
+73
+00:05:23,560 --> 00:05:29,500
+Şimdi 0 1 2 3 4'ün bir listesini görüyorum ve bu, aslında belirli sayıda bir şeyi gerçek anlamda gerçekleştirmenin
+
+74
+00:05:29,500 --> 00:05:30,690
+çok hızlı bir yoludur.
+
+75
+00:05:30,790 --> 00:05:39,550
+Bu durumda, yalnızca bir sayı aralığı 10'da bile ve varsayılan olarak başlangıç ​​numarası sıfır diyebilirsiniz.
+
+76
+00:05:39,550 --> 00:05:42,580
+Şimdi bu 10 elemente kadar gidiyor.
+
+77
+00:05:42,580 --> 00:05:45,820
+Fakat sıfırdan başladığı için dokuzda sona erecek.
+
+78
+00:05:45,810 --> 00:05:51,710
+Bunun nedeni, çünkü 0 1 2 3 4 5 6 7 8 9 10 10 elementtir.
+
+79
+00:05:51,750 --> 00:05:53,350
+Tamam.
+
+80
+00:05:53,350 --> 00:05:55,750
+Aralık işlevi budur.
+
+81
+00:05:55,750 --> 00:06:03,010
+Şimdi devam edin ve listeyi tartışalım anlama listesi comprehension, bir liste oluşturmak için bir for döngüsü
+
+82
+00:06:03,370 --> 00:06:06,790
+oluşturmaya çalışırken bir sürü yazı kaydetmenize olanak tanır.
+
+83
+00:06:06,790 --> 00:06:10,960
+Devam edelim ve sana bir döngü için kullanmanın bir örneği göstereceğim ve sana
+
+84
+00:06:10,960 --> 00:06:13,360
+size liste anlama eyleminde bir örnek göstereceğim.
+
+85
+00:06:13,360 --> 00:06:21,610
+Bunu söyleyeceğim, x'in 1 2 3 4 sayılarından oluşan bir listeye eşit olduğuna karar verdim ve sonra boş bir
+
+86
+00:06:21,610 --> 00:06:27,730
+listeye koyacağım, böylece boş bir liste var, bu da sadece bir parantez kümesidir. orada
+
+87
+00:06:27,730 --> 00:06:28,730
+hiçbir şey yok.
+
+88
+00:06:29,010 --> 00:06:35,970
+madde X için söyleyeceğim ve ben ilerlemeye devam edeceğim ve bu öğeyi uyuşmuş değiştirerek sadece açıklığa kavuşturmak için gidiyorum.
+
+89
+00:06:35,980 --> 00:06:36,910
+Ve sonra
+
+90
+00:06:37,150 --> 00:06:46,540
+Şimdilik X'deyim, boş listemden çıkacağım ve uyuşmuş hali ikisinin
+
+91
+00:06:46,620 --> 00:06:48,250
+gücüne bağlayacağım.
+
+92
+00:06:48,370 --> 00:06:55,060
+O hücrenin koştuğumda, o zaman ben de boş listenin çıktığını yazacağım.
+
+93
+00:06:55,360 --> 00:06:56,540
+Ve burada ne olduğunu fark et.
+
+94
+00:06:56,560 --> 00:07:05,720
+1 2 3 yerine buluruz. Bu tür işlemler için Python'da o kadar yaygındır ki Python'da liste anlama denilen şeylere sürekli
+
+95
+00:07:05,740 --> 00:07:11,500
+olarak bir değer eklenir ve temelde bir yoltur yerine bir liste tanımlamak ve
+
+96
+00:07:11,620 --> 00:07:18,330
+sürekli bir liste eklemek mantığı ve Colon girinti ile bir for döngüsü kullanmak zorunda kalmadan.
+
+97
+00:07:18,460 --> 00:07:22,780
+Temelde her sayıyı X'ten kare 1 4 9 16 yerine
+
+98
+00:07:22,780 --> 00:07:28,710
+Aslında hepsini esas olarak bir parantez dizisine yazabilir ve hızlı bir şekilde bir liste oluşturabilirsiniz.
+
+99
+00:07:28,720 --> 00:07:34,860
+Devam etmeme izin verin ve döngü kodunu bunun listeleme anlayışına nasıl çevireceğinizi anlama, bir for
+
+100
+00:07:34,940 --> 00:07:36,000
+döngüsünün çeşitliliğini sağlar.
+
+101
+00:07:36,000 --> 00:07:44,440
+Ancak geriye doğru, maddenin uyuşması diyeceğini ne söyleyeceğini söyleyeceksin.
+
+102
+00:07:44,880 --> 00:07:53,260
+Böylece uyuşma için ikisinin gücü ve daha sonra x sayısı x bu listedir.
+
+103
+00:07:53,250 --> 00:07:56,360
+Ve aslında burada aynı kod.
+
+104
+00:07:56,810 --> 00:08:01,300
+Bu yüzden çalıştırdığım zaman çalışmaya başlıyor, çünkü hepsi parantez içerisindedir.
+
+105
+00:08:01,300 --> 00:08:08,230
+Bu adımları tekrar söylemek yerine tekrar adımları yıkmaya devam edelim, boş listeye ekleyip şöyle
+
+106
+00:08:08,560 --> 00:08:10,200
+bir şey söyleyeceksiniz.
+
+107
+00:08:10,500 --> 00:08:13,140
+Out, eşittir ve daha sonra bir parantez grubuna eşittir.
+
+108
+00:08:13,360 --> 00:08:18,280
+Ve sonra for döngüsünü şu şekilde parçalayarak bir liste anlama
+
+109
+00:08:18,280 --> 00:08:18,940
+dönüştürebilirsiniz.
+
+110
+00:08:19,000 --> 00:08:21,400
+Herşeyi kolondan önce alacaksın.
+
+111
+00:08:21,390 --> 00:08:25,170
+Şimdilik ben bir X'im, kopyalayıp yapıştırın.
+
+112
+00:08:25,500 --> 00:08:28,100
+Ve sonra ne istersek bir kalemi kaparız.
+
+113
+00:08:28,140 --> 00:08:34,330
+Bu durumda, bu sayı kare ve burada döngü için önce koymak ve
+
+114
+00:08:34,410 --> 00:08:42,430
+bu temelde liste anlama budur bana X hiçbir şey için kare kare verin ve şimdi çıktı
+
+115
+00:08:42,460 --> 00:08:49,350
+bir satırda temizlenmiş olduğunu görebilirsiniz liste anlama, buradaki sözdizimi ile karıştırıldıysan ya da beğenmiyorsanız,
+
+116
+00:08:49,360 --> 00:08:52,940
+sizin için biraz yazmaktan kurtarmanın bir yoludur.
+
+117
+00:08:52,960 --> 00:08:54,650
+Ve bu sizin için daha okunabilir.
+
+118
+00:08:54,700 --> 00:08:58,700
+Devam edin ve sadece yeni başlayanlar için Python ile kalem döngülerini kullanın.
+
+119
+00:08:58,750 --> 00:09:03,270
+Bu tür sözdizimi ilk başta okunması zor bir eğilimdedir, ancak yavaş yavaş
+
+120
+00:09:03,280 --> 00:09:09,960
+Python'dan daha iyi ve daha iyi hale geldiğinizde, basit bir çizgide işler yapmak için liste anlama yapmaya geçeceksiniz.
+
+121
+00:09:10,620 --> 00:09:11,290
+TAMAM.
+
+122
+00:09:11,530 --> 00:09:18,520
+Şimdi devam edelim ve fonksiyonlar hakkında konuşalım; fonksiyonlar temelde kod yazmaya devam etmemize izin vererek tekrar
+
+123
+00:09:18,520 --> 00:09:23,740
+tekrar yazabilmenizi sağlar, sadece bir fonksiyonun içine yazabilir ve daha sonra bu
+
+124
+00:09:23,740 --> 00:09:24,850
+fonksiyonun kendisini arayabilirsiniz.
+
+125
+00:09:24,850 --> 00:09:36,490
+Bir işlevin anahtar kelimesi DPF veya Def'dır ve DCF, bir işlevi tanımlamanıza izin verir; bu işleve işlevinizin adını DPF
+
+126
+00:09:36,640 --> 00:09:38,210
+boşluğuna söylersiniz.
+
+127
+00:09:38,320 --> 00:09:45,190
+Öyleyse devam edin ve bunu altçizgi func ve fonksiyonları küçük harflerle başlamalı olarak adlandırın.
+
+128
+00:09:45,380 --> 00:09:54,850
+daha sonra devam edip bir takım kodları uygulayarak devam etmenizi ve Prens Coram'ı bir başkasıyla yapmaya devam edeceksiniz.
+
+129
+00:09:54,860 --> 00:10:00,410
+Parama'nın bir iki nokta üst üste gibi istediğiniz parametreleri aktardınız ve
+
+130
+00:10:00,990 --> 00:10:01,330
+TAMAM.
+
+131
+00:10:01,340 --> 00:10:04,020
+Bu çok basit bir işlevdir.
+
+132
+00:10:04,370 --> 00:10:15,890
+Şimdi sadece phunk parametreyi Merhaba gibi geçirir ve çalışacak ve parametreyi basacaktır.
+
+133
+00:10:16,420 --> 00:10:18,070
+Ve bu benim punkım.
+
+134
+00:10:18,640 --> 00:10:21,300
+İzin verin, size daha karmaşık bir örnek göstereceğim.
+
+135
+00:10:21,520 --> 00:10:25,580
+Hadi devam et ve benim funk ve bir dizi parametreyi söyle.
+
+136
+00:10:25,730 --> 00:10:35,770
+Prens demeye başlayacağız ve biz de merhaba diyeyiz ve iki dizgiyi birleştirmek için bir artı işareti kullanabiliriz.
+
+137
+00:10:35,840 --> 00:10:38,570
+Bir isim alacak ve biz
+
+138
+00:10:38,650 --> 00:10:42,380
+Yani bu, Merhaba artı ad yazdıracağını söyleyecektir.
+
+139
+00:10:42,550 --> 00:10:43,990
+Devam et ve çalıştır.
+
+140
+00:10:44,090 --> 00:10:46,830
+Ve şimdi serseri için bir isim vereceğim.
+
+141
+00:10:46,910 --> 00:10:50,220
+Jose'ye gidiyor ve şimdi geri dönüyor.
+
+142
+00:10:50,440 --> 00:10:58,060
+Merhaba Jose, eğer bu parametrelerden biri için varsayılan bir değer istiyorsanız, öyle ki varsayılan
+
+143
+00:10:58,100 --> 00:11:04,720
+ad eşittir diyebilir ve sonra ne yanlış ismi olmak istediğiniz birincil istersen.
+
+144
+00:11:04,810 --> 00:11:11,610
+Ve eğer ben bir daha devam edersem ve benim eşime pas olmazsam alırım.
+
+145
+00:11:11,620 --> 00:11:12,340
+Merhaba.
+
+146
+00:11:12,400 --> 00:11:17,570
+Varsayılan isim yalnızca Jose veya başka bir isim var demektir.
+
+147
+00:11:17,600 --> 00:11:22,110
+Varsayılan değeri belirtilen değerle değiştirecek mi?
+
+148
+00:11:22,120 --> 00:11:27,740
+Ayrıca, işleyişe ne geçtiğinizi daha açık bir şekilde söylemek için söyleyebilir ve adın eşit olduğuna ve sonra
+
+149
+00:11:27,740 --> 00:11:29,490
+yeni değere eşit olduğunu söyleyebilirsiniz.
+
+150
+00:11:29,750 --> 00:11:32,210
+Veya değerleri doğru sırayla koyduğunuz sürece.
+
+151
+00:11:32,260 --> 00:11:41,590
+Bunu sadece Jose'nin tek bir parçasından bu şekilde yapmak da güzel.
+
+152
+00:11:41,710 --> 00:11:49,900
+Buraya dikkat etmeniz gereken bir şey, sadece parantezimle parantezimle çağıracak olursanız, işlevi yürütecektir.
+
+153
+00:11:50,330 --> 00:11:54,910
+Parantezlerden kurtulursan, fonksiyonu aramayacaksın.
+
+154
+00:11:54,910 --> 00:11:58,120
+Python'a bu nesnenin ne olduğunu merak edeceksiniz.
+
+155
+00:11:58,150 --> 00:11:59,320
+Ve geri rapor verecek.
+
+156
+00:11:59,500 --> 00:12:00,780
+Oh, bu bir cisim.
+
+157
+00:12:00,830 --> 00:12:04,440
+Ana fonksiyonum altçizgi func'ım.
+
+158
+00:12:04,450 --> 00:12:08,920
+Bunu akılda tutmak gerekirse, altçizgi phunk'ımı böyle çağırmak arasında bir fark var.
+
+159
+00:12:08,920 --> 00:12:16,530
+Bu prensleri kapatan asıl işlevi aslında bu işlevi yürütür.
+
+160
+00:12:16,540 --> 00:12:22,320
+ancak birçok kez başka bir değişkene eşit şekilde ayarlayabileceğiniz bir değer döndürmek isteyeceksiniz.
+
+161
+00:12:22,370 --> 00:12:26,330
+Şimdilik bir deyimi basan çok basit işlevlere sahip olmalıyız
+
+162
+00:12:26,330 --> 00:12:27,820
+Ne demek istediğimi göstereceğim.
+
+163
+00:12:28,100 --> 00:12:36,160
+Öyleyse devam edin ve DPF'yi söyleyin ve bazı ve U-M'ye bazı iki nokta üst üste koyan ve bu sayıyı
+
+164
+00:12:36,670 --> 00:12:39,440
+döndürecek olan Square adlı bir işlev oluşturun.
+
+165
+00:12:39,430 --> 00:12:45,250
+Sonuç yazdıracak veya bu sayının karesini döndürecek değil, bunu yapmak için dönüş anahtar
+
+166
+00:12:45,310 --> 00:12:46,650
+kelimesini de kullanabilirsiniz.
+
+167
+00:12:46,730 --> 00:12:51,180
+Böylece uyuşukluk ikisinin gücüne geri döneceksin.
+
+168
+00:12:51,380 --> 00:12:58,420
+Ve o halde çıktı çiftin karesine eşittir diyebilirim.
+
+169
+00:12:58,960 --> 00:13:03,780
+Ve sonra ne zaman çıktığımı kontrol edip bunun için ne çıktı olduğunu kontrol et.
+
+170
+00:13:03,860 --> 00:13:08,260
+Ve bu, bir şeyi basmak ve bir şeyleri geri getirmek arasındaki farktır.
+
+171
+00:13:08,260 --> 00:13:12,080
+Döndüğünüzde, onu başka bir değişkene eşit olarak ayarlamak isteyeceksiniz.
+
+172
+00:13:12,230 --> 00:13:17,290
+Ve böylece bir değişkende sonuç çağırıp, yalnızca bir değeri basacağınız
+
+173
+00:13:17,290 --> 00:13:22,580
+bir şeyi bastığınızda değil, aslında döndürüp depolamayacağınız herhangi bir yerde arayabilirsiniz.
+
+174
+00:13:22,580 --> 00:13:28,360
+Son olarak, işlevler hakkında bilmeniz gereken bir şey, belge
+
+175
+00:13:28,370 --> 00:13:37,630
+dizelerini, üçlü çevreleyen tırnak kümesini ve üç katına çıkarma tırnak işaretleri koyarak bir işleve dokümantasyon
+
+176
+00:13:37,810 --> 00:13:38,770
+dizesini ekleyebilmesidir.
+
+177
+00:13:38,770 --> 00:13:48,160
+Temelde birden fazla satır üzerinden dev bir dize koymanızı sağlar, böylece bu bir dvd dizgisi ve bu aslında
+
+178
+00:13:48,620 --> 00:13:51,060
+çok uzun bir yorumdur diyebiliriz.
+
+179
+00:13:51,070 --> 00:13:54,260
+Bu, çok satırlı yorumlar gibi.
+
+180
+00:13:54,260 --> 00:14:05,960
+Birden fazla satıra gidebilir ve biz de devam edip bu işlevi bir sayıya göre kareler söyleyeceğiz.
+
+181
+00:14:06,160 --> 00:14:07,340
+Ben de koşarım.
+
+182
+00:14:07,420 --> 00:14:13,060
+Şimdi Square'i belge dizgesine sahibim, ancak Square işlevini değiştirirsem, hiçbir şey
+
+183
+00:14:13,540 --> 00:14:18,500
+değişmez, bu işlev hakkında daha fazla bilgi için belge dizesini
+
+184
+00:14:18,500 --> 00:14:19,390
+çağırdıklarında değişecektir.
+
+185
+00:14:19,480 --> 00:14:22,830
+Jüpiter defteri bunu yapmak için gerçekten büyük bir yeteneğe sahiptir.
+
+186
+00:14:22,880 --> 00:14:27,650
+İstediğiniz işlevi yazmaya başlayın ve imlecinizi o işlevin sonuna getirin.
+
+187
+00:14:27,650 --> 00:14:34,270
+Değişiklik sekmesine tıklarsanız, gerçek işlevin imza çağrısı alırsınız.
+
+188
+00:14:34,420 --> 00:14:36,700
+İşlevin almasını beklediği anlamı.
+
+189
+00:14:36,880 --> 00:14:40,860
+Ve sonra belge dizesini almak için bunu genişletebilirsiniz.
+
+190
+00:14:40,880 --> 00:14:44,150
+Ve bu, docstring'in birden fazla satır gidebileceğini söylüyor.
+
+191
+00:14:44,140 --> 00:14:49,750
+Bu işlev Square'i bir sayıdır ve bu, yalnızca kendi işlevleriniz için değil, öğrenmeye başlamış
+
+192
+00:14:49,750 --> 00:14:54,010
+olduğumuz kitaplıklara önceden kurulmuş işlevler için gerçekten de yararlı olacaktır.
+
+193
+00:14:54,560 --> 00:15:01,360
+Örneğin, aralığı tartışırken tekrar geri dönersek, biraz garip olduğunu düşünebilir ve
+
+194
+00:15:01,370 --> 00:15:04,640
+sayıların nereye gittiğine kadar ezberlemeniz gerekebilir.
+
+195
+00:15:04,660 --> 00:15:11,950
+Eh, Brunow kitapını kullanıyorsanız, aralık kaydırma sekmesine basabilir ve size imza verir ve sonra
+
+196
+00:15:11,950 --> 00:15:17,030
+da temel olarak aralık durdurma diyen docstring'e sahip olduğunu görebilirsiniz.
+
+197
+00:15:17,020 --> 00:15:20,890
+Ve size bir dizi nesne vereceksiniz veya aralık diyebilir ve daha sonra başlayıp durabilirsiniz.
+
+198
+00:15:20,980 --> 00:15:25,690
+Ve size tamsayı dizisi üreten bir nesne döndürmek gibi daha fazla bilgi verir. ve sizin için daha
+
+199
+00:15:25,690 --> 00:15:27,520
+fazla bilgi var.
+
+200
+00:15:27,560 --> 00:15:30,580
+Bu ders boyunca her zaman kullanacağımız şey budur.
+
+201
+00:15:30,670 --> 00:15:34,090
+Bu hızlı dokümantasyon dizelerine erişir.
+
+202
+00:15:34,100 --> 00:15:34,700
+Tamam.
+
+203
+00:15:34,930 --> 00:15:36,740
+Devam edin ve orada bitirin.
+
+204
+00:15:36,770 --> 00:15:42,470
+Bu ders serisinin bir sonraki bölümünde, harita ve filtreyi kullanarak ortak
+
+205
+00:15:42,460 --> 00:15:47,330
+veri türü nesnelerde kullanabileceğiniz yöntemleri kullanarak Arlanda ifadelerini tartışacağız.
+
+206
+00:15:47,330 --> 00:15:48,010
+Tamam.
+
+207
+00:15:48,010 --> 00:15:52,550
+Bırakın, bu dersin üzerinden geçen her şeyi gözden geçirmeme izin verin.
+
+208
+00:15:52,660 --> 00:15:54,430
+Bir işlevi nasıl oluşturacağımızı inceledik.
+
+209
+00:15:54,460 --> 00:15:59,590
+Anahtar kelime, işlevinizin adını gönderirseniz ve işlevinizin almak
+
+210
+00:15:59,620 --> 00:16:01,420
+istediği parametreleri iletirseniz.
+
+211
+00:16:01,420 --> 00:16:06,130
+Ve sonra, aslında bu işlevin değerini döndürmek isterseniz kullanmak istediğiniz
+
+212
+00:16:06,130 --> 00:16:08,160
+belge dizesi geri dönün.
+
+213
+00:16:08,190 --> 00:16:13,760
+Parantezlerin işlevini çağırma ile işlevsizliği arasındaki farkı unutmayın.
+
+214
+00:16:13,780 --> 00:16:15,830
+İşlevin kendisini alabilirsiniz.
+
+215
+00:16:16,390 --> 00:16:21,170
+Ayrıca, hangi döngü türünü bu parantezlerin içindeki tek bir
+
+216
+00:16:21,160 --> 00:16:23,470
+satıra ayıran yanlış anlaşılmayı öğrendik.
+
+217
+00:16:23,470 --> 00:16:28,420
+Ardından, başlangıç ​​noktasından durana kadar bir dizi tamsayı listesi
+
+218
+00:16:28,420 --> 00:16:30,850
+oluşturmanıza olanak tanıyan aralık öğrendik.
+
+219
+00:16:31,210 --> 00:16:35,610
+Dört döngüden ve while döngülerinden de öğrendik.
+
+220
+00:16:36,010 --> 00:16:38,870
+Pekâlâ, herkese teşekkürler, bir sonraki derside görüşürüz.

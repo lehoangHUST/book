@@ -1,0 +1,327 @@
+1
+00:00:05,160 --> 00:00:10,410
+Herkese merhaba ve bu ders salonundaki kayıp veri konferansına hoş geldiniz Pandas'taki eksik verileri
+
+2
+00:00:10,650 --> 00:00:12,870
+ele alacak birkaç uygun yöntemi gösteriyor.
+
+3
+00:00:12,870 --> 00:00:17,820
+Pandaları, veri okumak için kullandığınız zaman eksik olan noktalarınız varsa,
+
+4
+00:00:17,820 --> 00:00:21,040
+Pandur'lar bu eksik noktayı otomatik olarak doldururlar.
+
+5
+00:00:21,250 --> 00:00:21,690
+Yok hayır.
+
+6
+00:00:21,720 --> 00:00:23,360
+Ya da herhangi bir değer.
+
+7
+00:00:23,610 --> 00:00:28,980
+Şimdi devam edin ve bir eksik bırakma veya boşaltma gibi yöntemleri nasıl kullandığımızı araştırın ve eksik
+
+8
+00:00:28,980 --> 00:00:31,800
+değerleri atmak veya eksik değerleri doldurmak için kullanın.
+
+9
+00:00:32,040 --> 00:00:36,090
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+10
+00:00:36,120 --> 00:00:36,420
+Tamam.
+
+11
+00:00:36,420 --> 00:00:38,270
+İşte Jüpiter defterindeyim.
+
+12
+00:00:38,280 --> 00:00:43,800
+Dışarı çıkmak ve yapmak istediğim şey bir veri çerçevesi oluşturmak ve yaratmak istediğim gibi
+
+13
+00:00:43,860 --> 00:00:48,480
+bir sözlükten bir dizi oluşturabileceğiz, aslında bir sözlükten de veri çerçevesi oluşturabiliyoruz.
+
+14
+00:00:48,480 --> 00:00:55,620
+Bu sözlük üç tuşa sahip olacak ve bir anahtar B ve anahtar C anahtarına gidecek ve bunlar
+
+15
+00:00:55,620 --> 00:01:01,560
+ne olacak Veri çerçevemizdeki sütunlar ve ardından gerçek veri noktaları için yapabileceklerimiz şunlar için
+
+16
+00:01:01,620 --> 00:01:03,810
+bir liste değeridir: her anahtar.
+
+17
+00:01:04,260 --> 00:01:08,290
+Ve bu sütun adındaki her bir satırın veri noktaları olacak.
+
+18
+00:01:08,340 --> 00:01:12,680
+Devam edelim ve A anahtarının da bir listesi var demeliyiz.
+
+19
+00:01:12,930 --> 00:01:18,290
+Ve sonra eksik bir sıra değerini belirtmek için herhangi bir n'yi kullanacağız.
+
+20
+00:01:19,080 --> 00:01:20,290
+Sonra B için kurtarmaya gidiyoruz.
+
+21
+00:01:20,310 --> 00:01:28,260
+5 ve P olacak ve ardından Nan ve P ve sonra üçüncü sütun kisi olacak.
+
+22
+00:01:28,260 --> 00:01:31,150
+Böylece 1 2 ve 3 değerlerini koruyacağız.
+
+23
+00:01:31,200 --> 00:01:33,360
+Yani eksik değerler yoktur.
+
+24
+00:01:33,360 --> 00:01:41,300
+Ve sonra devam edip DFAC'nin PD veri çerçevesine eşit olduğunu söyleyip daha sonra sözlüğü D'ye geçirebiliriz.
+
+25
+00:01:41,730 --> 00:01:48,270
+Sonra veri çerçevemizi kontrol ettiğimizde, A B ve C sütunlarının bu güzel görünümlü veri karesini
+
+26
+00:01:48,270 --> 00:01:56,580
+elde ederiz ve 0 1 ve 2 satırları yok 0 hiçbir eksik değer ve C sütununda eksik değer yoktur.
+
+27
+00:01:56,700 --> 00:02:02,850
+Ve burada Roby'de veya B sütununda birkaç eksik değer var ve A sütununda bir eksik değer var.
+
+28
+00:02:03,360 --> 00:02:07,940
+Hadi dışarı çıkıp damlasını ve yöntemini keşfedelim.
+
+29
+00:02:08,280 --> 00:02:11,580
+Çoğu zaman, veri kümenizdeki eksik değerleri atmak isteyeceksiniz.
+
+30
+00:02:11,640 --> 00:02:14,010
+Özellikle de birkaç eksik değer varsa.
+
+31
+00:02:14,010 --> 00:02:21,300
+yöntem olarak adlandırırsanız, Pandur'lar herhangi bir satırı herhangi bir tekli suya düşürür veya daha fazla erkek veya eksik
+
+32
+00:02:21,300 --> 00:02:28,890
+değerler varsa, bu satırların herhangi biri boş bir değere sahipse anlamını taşırlarsa Bir veya daha fazla ilerledi ve onları düşürdü.
+
+33
+00:02:28,890 --> 00:02:33,840
+Yalnızca tek başına bir damla deyin ve yakın parantez içinde gerçekleşen bir
+
+34
+00:02:33,870 --> 00:02:40,050
+Yapabileceğiniz sütunlarda bu işlemi gerçekleştirmek isterseniz, buraya geçiş sekmesini kontrol edin ve eksen
+
+35
+00:02:40,050 --> 00:02:42,060
+argümanı bulunduğuna dikkat edin.
+
+36
+00:02:42,330 --> 00:02:44,740
+Varsayılan olarak eksen sıfır demektir.
+
+37
+00:02:44,880 --> 00:02:47,210
+İşlemin satırlar boyunca gerçekleştiği anlamına gelir.
+
+38
+00:02:47,340 --> 00:02:53,820
+Ancak sütun boyunca işlem yapmak isterseniz eksi değeri belirtebileceğiniz boş bir değeri
+
+39
+00:02:54,240 --> 00:02:56,780
+olan sütunları bırakmak 1'e eşittir.
+
+40
+00:02:57,750 --> 00:03:01,200
+Ve bu boşluk değeri olan sütunlara düşecek.
+
+41
+00:03:01,360 --> 00:03:03,710
+Burada karşılaştırmayı göremiyorum.
+
+42
+00:03:03,950 --> 00:03:09,720
+Ve bu, Trapani içindeki herhangi bir satırdaki satırları tropsara alırsa ve daha sonra ise Koz
+
+43
+00:03:09,810 --> 00:03:14,230
+olur ve birine eşit erişimle herhangi bir boş değeri sütununa bırakacaktır demektir.
+
+44
+00:03:14,640 --> 00:03:17,840
+Ama aynı zamanda bir eşik belirtebilirsiniz.
+
+45
+00:03:18,120 --> 00:03:24,420
+Ve biz gidip bunu kontrol edersek, DMF'nin A bırakıp, Üst Karakter tuşunu kullandığını söyleyeceğiz.
+
+46
+00:03:24,450 --> 00:03:31,190
+Bağımsız değişken argümanının argümanı varsa belgelere bakın.
+
+47
+00:03:31,320 --> 00:03:39,480
+Bu bir tamsayı değeridir ve bırakılmamak için birçok knon ve bir değer gerektirecektir.
+
+48
+00:03:39,480 --> 00:03:43,180
+Örneğin beni içeri girip eşiği 2'ye ayarlayayım.
+
+49
+00:03:43,590 --> 00:03:46,030
+Ve yine bunu sadece yol boyunca yapacağız.
+
+50
+00:03:46,260 --> 00:03:53,470
+Dolayısıyla, satır 0 3 non ve bir satır 1 değerlerine dikkat edin.
+
+51
+00:03:53,490 --> 00:03:58,710
+İki A değeri yok ve ikinci satırda sadece bir tane var.
+
+52
+00:03:58,830 --> 00:04:01,090
+Üç numara herhangi bir değer içermiyor.
+
+53
+00:04:01,140 --> 00:04:05,850
+Yani damla derlerse böyle bir şey Roseboro'dan başka her şeyi düşürür.
+
+54
+00:04:05,970 --> 00:04:14,270
+Bununla birlikte, eşiği 2'ye eşit olacak şekilde ayarlar ve bunu çalıştırırsam, ileriye giderek 1. satır tuttum.
+
+55
+00:04:14,310 --> 00:04:22,740
+Ve temelde bunun anlamı, satır 1'in en az iki olmayan ve bir değer 2 olmasıydı. 0 ve ikisi ilerledi
+
+56
+00:04:22,800 --> 00:04:26,880
+ve o sırayı korudu.
+
+57
+00:04:26,910 --> 00:04:27,230
+Tamam.
+
+58
+00:04:27,270 --> 00:04:33,790
+Şimdi devam edin ve Phil'e geçelim ve şu anda sadece eksik değerleri düşürmeye odaklanacağımızı söyleyelim.
+
+59
+00:04:33,870 --> 00:04:37,060
+Pek çok kez bu eksik değerleri değiştirmek isteyeceksiniz.
+
+60
+00:04:37,290 --> 00:04:39,320
+Veri çerçevemize tekrar göz atalım.
+
+61
+00:04:39,390 --> 00:04:40,870
+Burada eksik değerleri var.
+
+62
+00:04:40,950 --> 00:04:47,430
+Bu kayıp değerleri doldurmak istersek dolgu ve bir yöntem kullanabiliriz ve bu biz gidip vardiya sekmesini ele
+
+63
+00:04:47,430 --> 00:04:49,910
+alalım, burada birkaç farklı argüman var.
+
+64
+00:04:49,930 --> 00:04:52,400
+Ancak bir değer argümanına sahip olduğuna dikkat edin.
+
+65
+00:04:52,610 --> 00:04:57,910
+Ve burada yapabileceğiniz şey, doldurma değerinizde belirlenmiş bir değerdir.
+
+66
+00:04:57,940 --> 00:05:00,410
+Burada çok belirgin hale getirmek için sadece bir dize geçeceğim.
+
+67
+00:05:00,450 --> 00:05:07,530
+Neler oluyor ve fark ettik ki istediğimiz her değeri bu değeri doldurmayı başardı.
+
+68
+00:05:07,940 --> 00:05:10,680
+Bu durumda dolgu değerini belirten sadece bir dize.
+
+69
+00:05:10,770 --> 00:05:15,060
+Bununla birlikte, yapmak isteyeceğiniz çok şey, aslında belki sütun
+
+70
+00:05:15,060 --> 00:05:20,860
+ortalamasının değerini doldurmaktır ve bunu örneğin DSF olarak diyebileceğiniz gibi yapabilirsiniz.
+
+71
+00:05:21,090 --> 00:05:25,150
+Bu benim bir sütunum ve burada eksik olan noktaya dikkat edin.
+
+72
+00:05:25,170 --> 00:05:36,170
+Ben devam edip, doldur ve a söyleyeceğim ve değeri o sütunun ortalamasına ayarlayacağım.
+
+73
+00:05:37,710 --> 00:05:42,210
+Ve şimdi bu değer değerin ortalaması olarak dolduruldu.
+
+74
+00:05:42,330 --> 00:05:47,760
+Kayıp değerleri uygun bir şekilde doldurmak için bütün bir felsefe ve düşünce tarzı ve
+
+75
+00:05:47,790 --> 00:05:49,070
+istatistiksel yöntemler var.
+
+76
+00:05:49,110 --> 00:05:53,280
+Ne tür bir veriyle çalıştığına gerçekten kendileri bağlı olduğundan, ilerlemenize
+
+77
+00:05:53,280 --> 00:05:56,010
+ve kendi başınıza keşfetmenize izin vereceğim.
+
+78
+00:05:56,010 --> 00:06:03,030
+Şimdilik, bilmenizi isterim ki, dolgu, yöntem ve damla ve bir yöntem var.
+
+79
+00:06:03,510 --> 00:06:05,600
+Tamam, şu an bu kadar.
+
+80
+00:06:05,610 --> 00:06:10,770
+istediğiniz erişim noktasının yanı sıra atma argümanını ve değer argümanlarını belirttiğinizi hatırlarsınız.
+
+81
+00:06:10,770 --> 00:06:15,810
+Umarım sadece bu iki yöntemin sizin için hazır olduğunu ve eylemi gerçekleştirmek
+
+82
+00:06:15,810 --> 00:06:18,800
+Pekâlâ, herkese teşekkürler, bir sonraki derside görüşürüz.

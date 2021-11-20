@@ -1,0 +1,479 @@
+1
+00:00:05,280 --> 00:00:07,320
+Olá a todos e seja bem vindo à palestra.
+
+2
+00:00:07,440 --> 00:00:11,140
+Reduzindo a junção de quadros de dados de canhão nesta palestra.
+
+3
+00:00:11,160 --> 00:00:16,110
+Nós vamos aprender a combinar os quadros de dados através de uma variedade de métodos, em
+
+4
+00:00:16,110 --> 00:00:21,180
+vez de realmente codificar tudo, já que esses métodos e comandos são realmente muito simples e a
+
+5
+00:00:21,180 --> 00:00:25,150
+maioria da digitação está apenas criando quadros de dados para mesclar ou unir-se.
+
+6
+00:00:25,170 --> 00:00:29,160
+Nós vamos fazer é simplesmente passar pelo livro de conferências para esta palestra.
+
+7
+00:00:29,160 --> 00:00:32,920
+É chamado de mesclagem e concatenação e está sob a pasta do panda.
+
+8
+00:00:33,150 --> 00:00:35,610
+Vamos em frente e vamos até aquele caderno Jupiter agora.
+
+9
+00:00:35,670 --> 00:00:35,970
+Tudo bem.
+
+10
+00:00:35,970 --> 00:00:41,250
+Aqui estamos no caderno Jupiter para juntar e concatenar.
+
+11
+00:00:41,250 --> 00:00:45,080
+Em primeiro lugar, vamos criar alguns exemplos de frames de dados para trabalhar aqui.
+
+12
+00:00:45,120 --> 00:00:50,150
+Eu importei PD pandas e usando um dicionário e uma lista de números de índice.
+
+13
+00:00:50,310 --> 00:00:57,000
+Eu criei três quadros de dados um DFA para ADF três, damos uma olhada nesses quadros de dados, veremos
+
+14
+00:00:57,000 --> 00:01:05,470
+que temos um diff que é colunas ABC e D e os índices 0 a 3 e, em seguida, DF 2 tem as mesmas
+
+15
+00:01:05,610 --> 00:01:12,370
+colunas que os índices são 4 a 7 e, em seguida, DF 3 tem os índices até 11.
+
+16
+00:01:12,390 --> 00:01:17,430
+Vamos falar sobre a concatenação concatenação basicamente cola os quadros de dados.
+
+17
+00:01:17,440 --> 00:01:20,570
+Tenha em mente que as dimensões devem combinar Machel no eixo.
+
+18
+00:01:20,580 --> 00:01:23,100
+Você está tentando concatenar para isso.
+
+19
+00:01:23,100 --> 00:01:29,540
+Você apenas usa PD dot com cat e depois passa uma lista dos quadros de dados para
+
+20
+00:01:29,690 --> 00:01:36,190
+concatenar juntos aqui vou concatenar quadros de dados um dois e três passando-os para uma lista no PD.
+
+21
+00:01:36,210 --> 00:01:39,090
+Função Concat.
+
+22
+00:01:39,310 --> 00:01:43,600
+Podemos ver que, por padrão, o acesso para participar é zero.
+
+23
+00:01:43,620 --> 00:01:45,970
+O que significa que vai juntar as linhas.
+
+24
+00:01:46,440 --> 00:01:52,580
+ver agora que temos um b e c e d como colunas com os índices 0 todo o caminho até 11.
+
+25
+00:01:52,590 --> 00:01:57,510
+Nós vemos aqui que concatenaram com êxito ou basicamente juntaram os quadros de dados e podemos
+
+26
+00:01:57,560 --> 00:02:00,100
+Com cada um dos pontos de dados que se alinham bem.
+
+27
+00:02:00,270 --> 00:02:06,090
+Agora, você também pode especificar que x seja igual a 1 se desejar que ele se junte e funda ao longo das colunas ou
+
+28
+00:02:06,150 --> 00:02:07,290
+concatenate ao longo das colunas.
+
+29
+00:02:07,680 --> 00:02:13,770
+E este é um exemplo do que acontece quando você usa PD que Kancha nestes três quadros de dados ao longo.
+
+30
+00:02:13,830 --> 00:02:15,900
+X é igual a 1.
+
+31
+00:02:15,900 --> 00:02:20,970
+Observe aqui que temos um monte de valores perdidos e isso é porque esses quadros de dados não
+
+32
+00:02:20,970 --> 00:02:23,800
+tinham valores para todos os índices que você queria concatenar.
+
+33
+00:02:24,060 --> 00:02:31,640
+Por exemplo, com o quadro de dados 1 A B e C e D, você teve os valores de 0 a 3.
+
+34
+00:02:31,650 --> 00:02:37,290
+No entanto, durante todo o caminho até 11, você não tinha valores e é por isso que
+
+35
+00:02:37,290 --> 00:02:44,850
+preenchia com Knolles quando você se juntou, isso é concatenado em dados e quadro de dados 3, o que, basicamente, significa quando você
+
+36
+00:02:44,850 --> 00:02:50,910
+está trabalhando com concatenação e a P-doc concat você ' Gostaria de garantir que você tenha informações que
+
+37
+00:02:51,120 --> 00:02:53,960
+alinhem corretamente quando você se juntar aos eixos.
+
+38
+00:02:54,120 --> 00:02:58,850
+Nesse caso, queríamos juntar um acesso igual a 0 para alinhar tudo corretamente.
+
+39
+00:02:58,860 --> 00:03:00,740
+Como especificamos a união ao longo das colunas.
+
+40
+00:03:00,750 --> 00:03:02,100
+Entregue uma sequela para uma.
+
+41
+00:03:02,250 --> 00:03:04,890
+Teremos um monte de informações faltantes.
+
+42
+00:03:04,890 --> 00:03:09,450
+Na maioria das vezes você provavelmente estará juntando colunas para que você de fato esteja se juntando.
+
+43
+00:03:09,450 --> 00:03:11,060
+O acesso é igual a 1.
+
+44
+00:03:11,080 --> 00:03:15,890
+No entanto, certifique-se de conhecer seus dados e o que você quer concatenar antes de escolher um acesso.
+
+45
+00:03:16,710 --> 00:03:19,560
+Tudo bem, vamos seguir em frente e avançar.
+
+46
+00:03:19,650 --> 00:03:22,440
+Vamos criar mais alguns exemplos de quadros de dados neste caso.
+
+47
+00:03:22,440 --> 00:03:27,780
+Um chamado à esquerda e outro chamado aqui para dar uma olhada na esquerda.
+
+48
+00:03:27,780 --> 00:03:34,680
+a K3, temos um quadro de dados correto que tem uma estrutura de dados muito semelhante, exceto que tem diferentes colunas C e D.
+
+49
+00:03:34,680 --> 00:03:40,340
+Nós temos as colunas A e B com alguns valores nelas e então temos uma coluna chave k 0
+
+50
+00:03:40,470 --> 00:03:45,690
+No entanto, a coluna de chave é exatamente a mesma que a moldura de dados esquerda tão fortemente esquerda
+
+51
+00:03:45,690 --> 00:03:51,850
+e os panderers de quadro de dados corretos são capazes de usar a função de mesclagem para fazer a lógica de mesclagem.
+
+52
+00:03:51,870 --> 00:03:55,020
+Isso é muito parecido com a mesclagem de tabelas sequenciais juntas.
+
+53
+00:03:55,230 --> 00:03:59,610
+E se você não trabalha de sequela, você não precisa se preocupar muito com isso, mas vou mostrar-lhe
+
+54
+00:03:59,610 --> 00:04:02,100
+os conceitos básicos de como fundir dois quadros de dados.
+
+55
+00:04:02,100 --> 00:04:07,790
+Você apenas diz PD que mescla e depois passa o quadro de dados esquerdo e o quadro de dados correto.
+
+56
+00:04:07,920 --> 00:04:14,470
+Ou apenas dados pasan de um ou quadro de dados para qualquer quadro de dados que você deseja juntar.
+
+57
+00:04:14,550 --> 00:04:16,840
+Por padrão, os fundirá no interior.
+
+58
+00:04:17,040 --> 00:04:22,440
+E se você não está familiarizado com a integração de siecle, não se preocupe, basta usar o
+
+59
+00:04:22,470 --> 00:04:23,160
+padrão interno.
+
+60
+00:04:23,220 --> 00:04:26,700
+Mais importante, aprender sobre isso.
+
+61
+00:04:26,700 --> 00:04:31,200
+Basicamente, quando você está mesclando, você vai querer se fundir em uma coluna de chave e você pode realmente passar
+
+62
+00:04:31,200 --> 00:04:33,740
+em uma ou mais colunas de chaves que veremos mais tarde.
+
+63
+00:04:33,810 --> 00:04:39,930
+Mas, basicamente, o que está acontecendo aqui é que vamos combinar ou combinar esses quadros de dados
+
+64
+00:04:39,930 --> 00:04:41,090
+juntos nesta coluna-chave.
+
+65
+00:04:41,220 --> 00:04:46,650
+E, dessa forma, em vez de concatê-los, teríamos duas colunas principais que podemos unir para que as
+
+66
+00:04:46,650 --> 00:04:49,960
+juntem ou juntem-nas na mesma coluna de chave que eles compartilham.
+
+67
+00:04:50,280 --> 00:04:55,050
+Então, a lógica aqui é quando você está usando a PD que se fundem em vez de simplesmente colar
+
+68
+00:04:55,140 --> 00:04:58,260
+os quadros de dados juntos, você verá onde os valores correspondem às colunas.
+
+69
+00:04:58,260 --> 00:05:03,630
+Nesse caso, a coluna da chave e, em seguida, crie as linhas usando essa coluna de chave.
+
+70
+00:05:03,630 --> 00:05:06,570
+Deixe-me ir e mostrar-lhe alguns exemplos mais complicados.
+
+71
+00:05:06,900 --> 00:05:14,910
+usar o PD que se fundem apenas para passar no primeiro quadro de dados e o segundo quadro de dados e, em seguida, você pode especificar e você pode
+
+72
+00:05:15,900 --> 00:05:20,820
+passar uma lista de chaves se quiser realmente mesclar em várias chaves, como uma chave ou uma tecla para.
+
+73
+00:05:21,050 --> 00:05:26,310
+Aqui eu tenho quadros de dados à esquerda e à direita e notaremos aqui que eles têm duas chaves
+
+74
+00:05:26,310 --> 00:05:33,420
+uma e as duas chaves, caso contrário, elas são exatamente as mesmas que a esquerda e a direita que acabamos de ver mais cedo, você pode
+
+75
+00:05:33,870 --> 00:05:38,660
+E aqui estão mais alguns exemplos usando a mesclagem externa ou mesclagem.
+
+76
+00:05:38,730 --> 00:05:44,850
+Agora, se você não está familiarizado com a sintaxe de seqüência, como a parte interna ou externa, a direita ou a esquerda, se
+
+77
+00:05:44,850 --> 00:05:49,290
+junta a preocupação com isso demais, nós realmente não usamos estes no curso, nós sempre padrão para
+
+78
+00:05:49,290 --> 00:05:53,150
+algo que se parece com isso no curso, nós apenas use uma junção interna.
+
+79
+00:05:53,190 --> 00:05:57,700
+fazer o tipo de fusão da sequela e você já é familiar da sintaxe da sequela, apenas
+
+80
+00:05:57,690 --> 00:06:04,020
+saiba que o Pancho tem esse como o operador é um parâmetro para você usar no caso de você querer a funcionalidade extra.
+
+81
+00:06:04,020 --> 00:06:05,810
+No entanto, se você se encontrar tentando
+
+82
+00:06:06,030 --> 00:06:11,520
+Mas, basicamente, dependendo se você estiver usando escritas externas internas, etc. Você pode achar que você tem alguns
+
+83
+00:06:11,520 --> 00:06:16,890
+valores perdidos, então tenha isso em mente, pois você está trabalhando com PD a mesclagem.
+
+84
+00:06:16,920 --> 00:06:19,070
+Aqui está um exemplo de esquerda.
+
+85
+00:06:19,680 --> 00:06:25,080
+E, finalmente, chegamos ao joining joining é um método conveniente para combinar as colunas de dois quadros
+
+86
+00:06:25,080 --> 00:06:29,310
+de dados de índice potencialmente diferentes em um único quadro de dados resultante.
+
+87
+00:06:29,400 --> 00:06:33,840
+Você poderia essencialmente pensar nisso como a mesma coisa que a mesclagem, exceto as chaves nas quais você
+
+88
+00:06:33,840 --> 00:06:36,680
+deseja participar, estão realmente em seu índice em vez de uma coluna.
+
+89
+00:06:36,690 --> 00:06:39,600
+Então, eu criei dois quadros de dados à esquerda e à direita.
+
+90
+00:06:39,600 --> 00:06:45,620
+Note-se que eles têm as colunas A B e, em seguida, o CD e, em seguida, o índice é, na verdade,
+
+91
+00:06:46,490 --> 00:06:52,530
+é que vamos juntá-los e a sintaxe que você pode usar é dizer juntar-se à esquerda, automaticamente, fazer uma junção interna
+
+92
+00:06:52,560 --> 00:06:53,990
+entre a esquerda e a direita.
+
+93
+00:06:54,060 --> 00:06:59,880
+Baseado nas chaves de índice se você quisesse mesclar esses dois quadros de dados com base em uma de suas colunas,
+
+94
+00:06:59,880 --> 00:07:05,220
+você precisaria usar a mesclagem, mas a funcionalidade do método de junção se desabafava de um dos quadros de dados.
+
+95
+00:07:05,210 --> 00:07:08,830
+Você diz que se junte e depois transmita a outra moldura de dados e apenas como fundir.
+
+96
+00:07:08,850 --> 00:07:13,030
+Você pode especificar COMO, como exterior interno esquerdo, etc. Lembre-se disso apenas para usuários sequela de eventos que já estão familiarizados com essa terminologia.
+
+97
+00:07:13,070 --> 00:07:17,380
+Se você não está familiarizado com isso, não se preocupe demais com isso.
+
+98
+00:07:17,430 --> 00:07:20,330
+Avançemos e façamos uma rápida análise de como
+
+99
+00:07:20,370 --> 00:07:26,700
+juntar frames de dados de fusão e algodão e examinaremos os tópicos principais que você deve sair desta palestra.
+
+100
+00:07:26,700 --> 00:07:29,000
+No que diz respeito à fusão da união
+
+101
+00:07:29,400 --> 00:07:34,800
+e concatenação de quadros de dados para concatenar ou gerenciar os quadros de dados, o processo é bastante simples.
+
+102
+00:07:34,800 --> 00:07:37,100
+Você apenas diz pecan cat e você passa uma lista
+
+103
+00:07:37,320 --> 00:07:43,080
+de seus quadros de dados e, em seguida, certifique-se de especificar o eixo correto dependendo se desejar juntá-los juntos pelas linhas ou por suas colunas.
+
+104
+00:07:43,080 --> 00:07:48,900
+quadro de dados que deseja fundir e depois você diz e você pode Pessin apenas um chave de coluna única.
+
+105
+00:07:48,900 --> 00:07:54,960
+Em seguida, você tem PD que mescla e PD que mescla permite combinar os quadros de dados juntos e você apenas
+
+106
+00:07:54,960 --> 00:07:59,190
+passa a sua primeira moldura de dados que deseja fundir e, em seguida, o segundo
+
+107
+00:07:59,190 --> 00:08:03,000
+Ou você pode passar qualquer lista de chaves e, por padrão, ela será mesclada no enter.
+
+108
+00:08:03,150 --> 00:08:08,420
+Se você não está familiarizado com a mesclagem das tabelas sequenciais, não se preocupe com isso,
+
+109
+00:08:08,610 --> 00:08:13,350
+como se preocupar com apenas um quadro de dados no quadro de dados esquerdo
+
+110
+00:08:13,590 --> 00:08:19,500
+à direita e depois em uma determinada coluna de chave ou em uma lista de colunas de chaves.
+
+111
+00:08:19,500 --> 00:08:20,550
+do curso e,
+
+112
+00:08:20,550 --> 00:08:26,730
+em seguida, para ingressar é um método mais avançado para combinar colunas de dois quadros de dados indexados potencialmente diferentes.
+
+113
+00:08:26,730 --> 00:08:31,560
+Essa é realmente a única funcionalidade da mesclagem de PD que estarei usando ao longo
+
+114
+00:08:31,560 --> 00:08:32,150
+É muito parecido com
+
+115
+00:08:32,160 --> 00:08:37,620
+a mesclagem, exceto que eles realmente estão se juntando ao índice em vez de uma coluna e a sintaxe para isso é apenas o nome do desenho do quadro de dados da esquerda à direita.
+
+116
+00:08:37,620 --> 00:08:42,940
+Na verdade, não vamos usar a junção ao longo do curso, mas eu quero que você esteja ciente de que e
+
+117
+00:08:43,140 --> 00:08:48,090
+você pode fazer referência a este livro de caderno ou a documentação no caso de você querer rever a junção.
+
+118
+00:08:48,090 --> 00:08:51,810
+Tudo bem, excelente trabalho.
+
+119
+00:08:52,110 --> 00:08:53,610
+Obrigado e eu vou te ver na próxima palestra
+
+120
+00:08:53,730 --> 00:08:55,440
+&nbsp;

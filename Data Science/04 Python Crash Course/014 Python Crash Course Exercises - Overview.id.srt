@@ -1,0 +1,215 @@
+1
+00:00:05,340 --> 00:00:11,400
+Halo semuanya dan selamat datang di kuliah tinjauan latihan kilat Python di kuliah ini, kami mendapatkan
+
+2
+00:00:11,400 --> 00:00:15,560
+tinjauan singkat tentang buku catatan latihan dan cara mendekati latihan.
+
+3
+00:00:15,570 --> 00:00:18,250
+Biarkan saya pergi ke depan dan menunjukkan kepada Anda di mana Anda dapat menemukan buku catatan latihan.
+
+4
+00:00:18,530 --> 00:00:25,490
+OK di sini saya di repositori Anda di bawah folder kursus python crash Anda akan melihat tiga notebook.
+
+5
+00:00:25,510 --> 00:00:30,760
+Kursus kilat Python yang berisi catatan yang baru saja kita bahas dalam seri kuliah empat bagian.
+
+6
+00:00:30,930 --> 00:00:35,380
+Maka Anda memiliki latihan kursus kilat Python IPY dan B.
+
+7
+00:00:35,550 --> 00:00:39,690
+Ini adalah file buku catatan yang akan kita gunakan untuk latihan dan Anda akan melihat buku catatan
+
+8
+00:00:39,780 --> 00:00:40,280
+solusinya.
+
+9
+00:00:40,290 --> 00:00:46,580
+Di sini Anda masuk dan klik pada buku catatan latihan Anda akan melihat buku catatan yang terlihat seperti ini.
+
+10
+00:00:46,590 --> 00:00:50,850
+Dan sekali lagi ini hanya latihan opsional menguji pemahaman Anda tentang dasar-dasar Python.
+
+11
+00:00:50,850 --> 00:00:55,920
+Jika Anda menemukan latihan ini sangat menantang maka Anda mungkin belum siap untuk sisa Kursus dan
+
+12
+00:00:55,940 --> 00:00:58,700
+belum memiliki pengalaman pemrograman yang cukup untuk melanjutkan.
+
+13
+00:00:58,900 --> 00:01:03,300
+Dan saya sarankan Anda benar-benar mengambil kursus lain yang lebih diarahkan untuk
+
+14
+00:01:03,300 --> 00:01:06,030
+pemula lengkap seperti kamp boot python lengkap.
+
+15
+00:01:06,160 --> 00:01:10,230
+Namun latihan ini harus cukup sederhana dan mudah.
+
+16
+00:01:10,230 --> 00:01:14,350
+Misalnya yang pertama ini bertanya kepada Anda apa yang 7 untuk kekuatan.
+
+17
+00:01:14,460 --> 00:01:20,790
+Jadi mudah-mudahan Anda dapat melihat jawabannya di sini sebagai keluaran Anda akan datang ke sel ini atau ID apa pun yang
+
+18
+00:01:20,790 --> 00:01:23,900
+Anda suka gunakan dan gunakan Python untuk menjawab pertanyaan ini.
+
+19
+00:01:23,910 --> 00:01:29,340
+Jadi Anda hanya perlu mengingat dengan baik bagaimana Anda melakukan kekuatan eksponensial dengan Python.
+
+20
+00:01:29,340 --> 00:01:34,110
+Akan terus menanyakan pertanyaan lain seperti membagi string menjadi daftar, jadi mudah-mudahan ingat
+
+21
+00:01:34,110 --> 00:01:38,430
+bagaimana membagi string dengan beberapa metode tertentu menjadi daftar dan seterusnya.
+
+22
+00:01:38,430 --> 00:01:39,570
+Jadi silakan saja.
+
+23
+00:01:39,580 --> 00:01:42,030
+Ada contoh hasil dari apa yang seharusnya Anda dapatkan.
+
+24
+00:01:42,210 --> 00:01:45,540
+Kemudian Anda memiliki pertanyaan yang menanyakan apa perbedaan utama antara tupel dan daftar.
+
+25
+00:01:45,540 --> 00:01:49,050
+Dengan cara ini Anda bisa menjawab dengan lantang bukan tulisan saya pikir tidak ada kode
+
+26
+00:01:49,050 --> 00:01:50,650
+untuk ini hanya menanyakan perbedaan apa.
+
+27
+00:01:50,850 --> 00:01:55,290
+Selanjutnya saya ingin Anda membuat fungsi yang mengambil domain situs web email dari string dan bentuk
+
+28
+00:01:55,290 --> 00:01:56,850
+pengguna di domain dot com.
+
+29
+00:01:56,850 --> 00:02:02,490
+Jadi, jika Anda memiliki fungsi panggil saja seperti domain, Anda harus dapat mengirimkan string format
+
+30
+00:02:02,550 --> 00:02:06,150
+ini dan hanya mengambil domain dot com ini.
+
+31
+00:02:06,180 --> 00:02:08,640
+Jadi masuk dan buat semacam fungsi.
+
+32
+00:02:08,700 --> 00:02:14,540
+Anda dapat keluar dan menyebutnya domain get yang mengambil string alamat email dan mengembalikan domain
+
+33
+00:02:14,540 --> 00:02:18,850
+yang didapat dari situs Web yang menjadi tuan rumah email itu.
+
+34
+00:02:18,930 --> 00:02:23,910
+Kemudian Anda akan melanjutkan dan membuat fungsi dasar yang mengembalikan true jika kata anjing terkandung
+
+35
+00:02:23,910 --> 00:02:25,050
+dalam aliran input.
+
+36
+00:02:25,200 --> 00:02:29,250
+Dan saya tidak ingin Anda harus khawatir tentang kasus tepi seperti tanda baca yang dilampirkan
+
+37
+00:02:29,670 --> 00:02:31,620
+pada kata anjing tetapi memperhitungkan kapitalisasi.
+
+38
+00:02:31,620 --> 00:02:35,990
+Sekali lagi kami tidak berurusan dengan setiap kasus tepi tunggal yang mungkin Anda temukan.
+
+39
+00:02:36,000 --> 00:02:42,690
+Hanya ide dasar mencari string untuk sebuah kata maka kami ingin Anda membuat fungsi yang dapat menghitung
+
+40
+00:02:42,830 --> 00:02:46,260
+berapa kali kata anjing muncul dalam sebuah string.
+
+41
+00:02:46,260 --> 00:02:48,220
+Dan lagi Anda dapat mengabaikan kasus tepi.
+
+42
+00:02:48,390 --> 00:02:52,290
+Jadi misalnya string anjing ini berjalan lebih cepat daripada dude anjing lainnya.
+
+43
+00:02:52,410 --> 00:02:58,840
+DAGA Pierce dua kali sehingga menghitung anjing kembali untuk membuat fungsi yang disebut Anjing menghitung melakukannya
+
+44
+00:02:58,930 --> 00:03:03,510
+Mereka tidak ingin Anda menggunakan ekspresi lambda dan fungsi Filcher untuk menyaring kata-kata dari daftar yang
+
+45
+00:03:03,510 --> 00:03:05,080
+tidak dimulai dengan huruf S.
+
+46
+00:03:05,100 --> 00:03:09,770
+Jadi misalnya jika Anda mendapatkan urutan daftar ini harus disaring ke daftar ini.
+
+47
+00:03:09,810 --> 00:03:11,080
+Sup dan salad.
+
+48
+00:03:11,670 --> 00:03:13,230
+Dan inilah masalah terakhir.
+
+49
+00:03:13,260 --> 00:03:17,700
+Sekarang Anda dapat melanjutkan dan membaca deskripsi tetapi pada dasarnya Anda akan pergi ke depan dan
+
+50
+00:03:17,820 --> 00:03:20,970
+mengisi fungsi ini untuk menyelesaikan masalah kecil terakhir di sini.
+
+51
+00:03:21,030 --> 00:03:27,090
+Dan ini melibatkan beberapa pernyataan if elefant else bersama dengan menciptakan fungsi jika Anda memiliki pertanyaan, jangan ragu untuk mengirim
+
+52
+00:03:27,090 --> 00:03:30,350
+forum Q&amp;A dan saya akan dengan senang hati membantu Anda.
+
+53
+00:03:30,390 --> 00:03:31,120
+Terimakasih semuanya.
+
+54
+00:03:31,170 --> 00:03:35,090
+Dan yang akan datang berikutnya adalah panduan solusi untuk latihan ini

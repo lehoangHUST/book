@@ -1,0 +1,487 @@
+1
+00:00:05,190 --> 00:00:10,770
+Halo semua dan selamat datang di negara bagian Panthers dari solusi latihan visualisasi kuliah ini.
+
+2
+00:00:10,830 --> 00:00:13,630
+Kita akan membahas solusi untuk pand keadaan hidupnya.
+
+3
+00:00:13,680 --> 00:00:15,220
+Pertanyaan latihan.
+
+4
+00:00:15,240 --> 00:00:18,050
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+5
+00:00:18,050 --> 00:00:19,810
+Baiklah, saya di notebook.
+
+6
+00:00:19,830 --> 00:00:27,330
+Saya akan pergi ke depan dan menjalankan beberapa sel kode pertama untuk membaca file D3 CACP mengatur semua impor
+
+7
+00:00:27,330 --> 00:00:29,500
+dengan benar dan memeriksa kepala.
+
+8
+00:00:29,880 --> 00:00:30,170
+Baiklah.
+
+9
+00:00:30,180 --> 00:00:34,790
+Hal berikutnya yang ingin saya lakukan adalah membuat ulang sebaran B versus a.
+
+10
+00:00:34,830 --> 00:00:36,380
+Jadi hanya dua kolom itu.
+
+11
+00:00:36,720 --> 00:00:46,770
+Mari kita lanjutkan dan lakukan itu dengan mengatakan D-3 dot plot pikiran tersebar dan kemudian saya akan masuk dan menentukan bahwa saya ingin pada
+
+12
+00:00:47,010 --> 00:00:52,970
+sumbu x saya kolom A dan pada sumbu y saya ingin kolom B.
+
+13
+00:00:53,210 --> 00:00:55,810
+Mari kita lihat seperti apa itu.
+
+14
+00:00:56,370 --> 00:00:58,700
+Dan ini seharusnya EF 3.
+
+15
+00:00:58,700 --> 00:00:59,610
+Itu dia.
+
+16
+00:00:59,610 --> 00:01:03,220
+Jadi saya mendapatkan plot yang sama kecuali sesuatu untuk diketahui.
+
+17
+00:01:03,330 --> 00:01:07,410
+Lihat apakah Anda bisa mengetahui cara merentangkannya dengan cara yang mirip dengan alur ini.
+
+18
+00:01:07,410 --> 00:01:13,680
+Dan saat kita membahasnya di kuliah, Anda sebenarnya dapat langsung memasukkan ukuran ara ke dalam argumen ini
+
+19
+00:01:13,710 --> 00:01:14,680
+sebagai parameter.
+
+20
+00:01:15,030 --> 00:01:16,950
+Dan kita bisa merentangkannya.
+
+21
+00:01:17,000 --> 00:01:23,030
+Jadi, satu hal lagi yang perlu diperhatikan di sini adalah ukuran titik-titik ini sedikit lebih besar.
+
+22
+00:01:23,040 --> 00:01:28,090
+Jadi Anda dapat benar-benar menentukan itu seperti yang kita lihat di kuliah baik dengan kolom lain atau hanya
+
+23
+00:01:28,090 --> 00:01:29,540
+dengan memasukkan S untuk ukuran.
+
+24
+00:01:29,850 --> 00:01:33,220
+Dan saya akan menentukan ukuran menjadi 50.
+
+25
+00:01:33,230 --> 00:01:38,970
+Di sini kita memiliki titik-titik yang sedikit lebih besar dan untuk warna itu c kita lihat di kuliah bagaimana kita
+
+26
+00:01:38,970 --> 00:01:40,800
+bisa menentukan warna dengan kolom lain.
+
+27
+00:01:40,800 --> 00:01:45,810
+Tapi Anda juga bisa meneruskan string yang Anda bisa untuk peta plot lib dan di sini sekarang kita memiliki rekreasi
+
+28
+00:01:45,900 --> 00:01:46,680
+plot itu.
+
+29
+00:01:46,680 --> 00:01:48,170
+Persis.
+
+30
+00:01:48,180 --> 00:01:48,850
+BAIK.
+
+31
+00:01:48,930 --> 00:01:54,060
+Hal utama yang saya ingin Anda sampaikan dari pertanyaan khusus ini hanyalah langkah plot yang
+
+32
+00:01:54,360 --> 00:01:56,940
+menyebarkan Versus menjadi sangat x dan y.
+
+33
+00:01:57,000 --> 00:01:57,840
+Jangan terlalu khawatir.
+
+34
+00:01:57,840 --> 00:02:03,260
+Jika Anda bisa mendapatkan ukuran atau ukuran pewarnaan Semoga Anda bisa mendapatkannya.
+
+35
+00:02:04,110 --> 00:02:08,150
+OK pindah sekarang saya ingin membuat histogram dari kolom A.
+
+36
+00:02:08,150 --> 00:02:09,880
+Ini sebenarnya cukup sederhana.
+
+37
+00:02:09,920 --> 00:02:21,350
+Panggil saja kolom itu sendiri dan kemudian ucapkan baik hanya untuk melihat histogram atau Anda juga bisa mengatakan plot titik mendesis dan
+
+38
+00:02:21,380 --> 00:02:24,560
+semua mengembalikan histogram yang sama.
+
+39
+00:02:24,840 --> 00:02:26,470
+Dan ini adalah jumlah default dari nampan.
+
+40
+00:02:26,490 --> 00:02:30,890
+Tetapi Anda juga dapat menyampaikan argumen jika Anda menginginkannya lebih Beenz.
+
+41
+00:02:31,020 --> 00:02:36,990
+Baiklah masalah berikutnya adalah bahwa plot ini OK tetapi mereka tidak terlihat sangat halus dan instruksi mengatakan menggunakan style
+
+42
+00:02:36,990 --> 00:02:42,720
+sheet untuk mengatur style ke plot GG dan mengulang histogram dari atas dan juga mencari cara menambahkan lebih
+
+43
+00:02:42,720 --> 00:02:44,630
+banyak bit ke dalamnya .
+
+44
+00:02:44,640 --> 00:02:50,690
+Ini adalah topik yang sebenarnya tidak kita bahas dalam ceramah video tetapi dicakup dalam buku catatan jadi mudah-mudahan
+
+45
+00:02:51,000 --> 00:02:56,250
+ada dua jalur yang Anda periksa kembali notebook untuk mencari tahu apa style sheet merujuk
+
+46
+00:02:56,250 --> 00:02:59,430
+atau Anda mencari peta Google Cutlip stylesheets .
+
+47
+00:02:59,460 --> 00:03:04,770
+Jika tidak, Anda bisa juga memposting ke forum Q dan A untuk mendapatkan apa yang saya rujuk di sana.
+
+48
+00:03:04,830 --> 00:03:10,320
+Jika Anda melanjutkan dan melihat kuliah buku catatan untuk panda yang dibangun dalam visualisasi data
+
+49
+00:03:10,320 --> 00:03:15,240
+ada bagian stylesheet dan ini semacam hanya untuk membuat Anda berminat mencoba menemukan
+
+50
+00:03:15,240 --> 00:03:16,230
+aspek sendiri.
+
+51
+00:03:16,270 --> 00:03:20,590
+Di sini Anda dapat melihat bahwa peta Cutlip memiliki stylesheet dan ada sedikit tautan referensi di sana.
+
+52
+00:03:20,680 --> 00:03:24,330
+Dan jika Anda mencari di google ini, Anda mungkin juga akan pergi ke halaman ini.
+
+53
+00:03:24,330 --> 00:03:30,150
+Dan ini adalah galeri dan ada bagian lembar di galeri dan premis dasar atau ide adalah bahwa
+
+54
+00:03:30,150 --> 00:03:32,290
+Anda dapat menggunakan gaya itu.
+
+55
+00:03:32,310 --> 00:03:39,030
+Gunakan lewati string gaya apa pun dan itu akan secara otomatis mengubah estetika ke gaya tertentu yang terlihat
+
+56
+00:03:39,920 --> 00:03:40,710
+seperti ini.
+
+57
+00:03:40,710 --> 00:03:44,510
+Anda cukup mengatakan kupas gaya T-Dog yang menggunakan plot G-G.
+
+58
+00:03:44,580 --> 00:03:47,910
+Jadi saya akan menyalin baris kode ini.
+
+59
+00:03:48,510 --> 00:03:52,130
+Kemarilah dan tempel.
+
+60
+00:03:52,260 --> 00:03:57,330
+Dan sekarang karena ini telah berjalan Anda akan melihat bahwa jika kita teruskan dan salin
+
+61
+00:03:57,330 --> 00:04:03,240
+dan tempel baris kode yang tepat di sini dan ditempelkan di sini kita mendapatkan plot yang jauh lebih baik.
+
+62
+00:04:03,480 --> 00:04:07,310
+Dan Anda juga akan melihat bahwa di sini warna merah ini sedikit lebih jelas.
+
+63
+00:04:07,380 --> 00:04:13,140
+Jadi Anda juga bisa pasand Alpha untuk membuatnya sedikit lebih transparan.
+
+64
+00:04:13,230 --> 00:04:17,190
+Dan di sini Anda dapat mulai mencocokkan histogram ini bersama-sama.
+
+65
+00:04:17,310 --> 00:04:21,810
+Mudah-mudahan itu tidak terlalu menantang bagi Anda tetapi ada aspek semacam menemukan hal-hal
+
+66
+00:04:21,810 --> 00:04:26,490
+sendiri yang mungkin merupakan bagian paling penting dari pembelajaran ilmu data dan pemrograman pembelajaran.
+
+67
+00:04:26,850 --> 00:04:32,280
+Kemampuan untuk mencari jawaban sendiri tanpa diberi konteks informasi yang lengkap, namun Anda selalu dapat
+
+68
+00:04:32,820 --> 00:04:37,620
+dengan bebas memposting di forum Q&amp;A jika ada sesuatu yang membingungkan Anda.
+
+69
+00:04:37,620 --> 00:04:43,800
+Baiklah, mari kita lanjutkan dan beralih ke plot kotak yang ingin kita buat plot kotak membandingkan
+
+70
+00:04:43,830 --> 00:04:45,730
+kolom A dan B.
+
+71
+00:04:45,840 --> 00:04:51,520
+Kami melihat pada apa yang ada di kita melihat hanya pada bingkai data itu sendiri.
+
+72
+00:04:52,190 --> 00:04:58,630
+Perhatikan kita memiliki kolom b c dan d jadi saya tidak ingin mendapatkan plot kotak semua kolom saya hanya ingin B.
+
+73
+00:04:59,160 --> 00:05:04,800
+Jadi saya sebenarnya hanya akan mengambil kolom-kolom itu dengan memasukkan daftar nama kolom A
+
+74
+00:05:05,280 --> 00:05:09,550
+dan B dan kemudian saya dapat memanggil kotak plot.
+
+75
+00:05:09,720 --> 00:05:13,110
+Buat plot kotak yang terlihat sama dengan yang ini.
+
+76
+00:05:13,140 --> 00:05:13,580
+BAIK.
+
+77
+00:05:13,800 --> 00:05:17,100
+Selanjutnya saya ingin membuat plot k dari kolom D.
+
+78
+00:05:17,290 --> 00:05:19,080
+Itu sebenarnya sangat mudah.
+
+79
+00:05:19,080 --> 00:05:26,700
+Anda baru saja melewati kolom D mengatakan plot dan kemudian mengatakan Katie dan mereka akan mengembalikan plot ini.
+
+80
+00:05:27,030 --> 00:05:31,140
+Dan akhirnya kita memiliki kita di sini untuk mencari cara meningkatkan
+
+81
+00:05:31,140 --> 00:05:36,240
+garis dengan dan membuat garis gaya dan tidak, Anda biasanya tidak akan Daschle K plotline.
+
+82
+00:05:36,320 --> 00:05:36,770
+Baiklah.
+
+83
+00:05:36,930 --> 00:05:46,230
+Jadi cara Anda dapat melakukan ini sebenarnya hanya mengambil KDE plot yang sama atau kepadatan dan kemudian Anda
+
+84
+00:05:46,230 --> 00:05:53,540
+dapat melanjutkan dan melewatkan argumen dari lib plot seperti gaya garis dan garis dengan.
+
+85
+00:05:53,550 --> 00:05:54,840
+Dan di sini kita mendapatkan plot yang sama.
+
+86
+00:05:54,900 --> 00:05:59,310
+Dan Anda juga bisa melakukan ini dengan kepadatan jika Anda mau.
+
+87
+00:05:59,310 --> 00:06:04,620
+Itu perintah yang sama yang kita ingin membuat plot area semua kolom hanya
+
+88
+00:06:04,620 --> 00:06:08,750
+untuk kamar hingga 30 dan kemudian dikatakan Hintz gunakan x
+
+89
+00:06:08,760 --> 00:06:17,320
+Jadi mudah-mudahan Anda dapat menemukan dengan memanggil X D-3 I X Anda dapat melihat bahwa ini adalah properti dan ini terutama
+
+90
+00:06:17,320 --> 00:06:21,930
+merupakan lokasi label yang berbasis di indexer dengan faller position integer.
+
+91
+00:06:21,930 --> 00:06:24,970
+Jadi yang bisa kita lakukan sebenarnya hanya menggunakan ini untuk memotong.
+
+92
+00:06:25,320 --> 00:06:30,660
+Dan sekali lagi ini adalah hal yang saya ingin Anda temukan saat Anda melanjutkannya sendiri sehingga Anda
+
+93
+00:06:30,660 --> 00:06:37,610
+dapat melewati nol hingga 30 di sini dan ini akan mengembalikan hanya 30 baris pertama atau apa pun yang mengiris notasi yang Anda inginkan.
+
+94
+00:06:38,070 --> 00:06:43,570
+Dan kemudian dari itu Anda dapat memanggil area plot dan Anda mendapatkan plot yang terlihat seperti ini.
+
+95
+00:06:43,610 --> 00:06:49,890
+Dan jika Anda ingin itu terlihat seperti plot di bawah ini Anda benar-benar bisa memasukkan nilai alpha di sana.
+
+96
+00:06:49,950 --> 00:06:54,960
+Baiklah, ada tantangan bonus dan perhatikan Anda mungkin menemukan solusi referensi yang sangat sulit
+
+97
+00:06:54,960 --> 00:07:01,200
+ini Anda tidak bisa mengetahuinya tetapi perhatikan bagaimana penampilan legenda itu sebenarnya tumpang tindih beberapa diagram yang sebenarnya.
+
+98
+00:07:01,260 --> 00:07:06,030
+Mereka biasanya tidak menginginkan itu dan saya ingin Anda mencari tahu bagaimana Anda dapat menampilkan
+
+99
+00:07:06,030 --> 00:07:12,150
+legenda di luar plot seperti yang ditunjukkan di bawah ini di sini dan kembali pada tema mencoba menemukan sesuatu
+
+100
+00:07:12,180 --> 00:07:12,860
+sendiri.
+
+101
+00:07:12,900 --> 00:07:18,420
+Saya ingin Anda mencoba google mencari tautan stack overflow yang baik dan jika Anda
+
+102
+00:07:18,420 --> 00:07:22,070
+dapat menemukannya sendiri ada tautan ke pertanyaan stack overflow.
+
+103
+00:07:22,080 --> 00:07:28,020
+Jadi jika kita melihat tautan ini di stack overflow, seseorang bertanya bagaimana cara menempatkan legenda di luar
+
+104
+00:07:28,020 --> 00:07:34,350
+plot dengan panda dan jika kita menggulir ke sini dan melihat ini, Anda akan melihat bahwa seseorang benar-benar menjawab
+
+105
+00:07:34,350 --> 00:07:39,930
+pertanyaan ini dengan benar dan mereka mengatakan di sini bahwa Piel yang legenda lokasi pusat kiri
+
+106
+00:07:39,930 --> 00:07:42,470
+dan kemudian kotak beby ini untuk berlabuh.
+
+107
+00:07:42,510 --> 00:07:43,700
+Itulah kuncinya di sini.
+
+108
+00:07:43,730 --> 00:07:51,240
+Dan Anda benar-benar hanya menyalin kode ini dan menempelkannya di sini dan kemudian mengambil kode lain dari plot area
+
+109
+00:07:54,150 --> 00:07:59,850
+ini dan menempelkannya di sini dan kemudian ketika kita ingin lakukan adalah membuat angka
+
+110
+00:08:03,060 --> 00:08:07,310
+untuk semuanya dipanggil dan kemudian akan mengatakan pubertas yang ditampilkan.
+
+111
+00:08:07,920 --> 00:08:12,180
+Dan ini akan menciptakan sosok dengan legenda di luar.
+
+112
+00:08:12,420 --> 00:08:18,370
+Ini juga akan berfungsi jika Anda benar-benar menghapus baris pertama dan baris terakhir di notebook Jupiter.
+
+113
+00:08:18,420 --> 00:08:24,480
+Dalam situasi lain seperti kesalahan ID lain Anda mungkin harus benar-benar menemukan gambar dan menunjukkan gambar
+
+114
+00:08:24,690 --> 00:08:28,920
+Tetapi karena kita hanya menggunakan Jupiter, sebuah buku catatan sebenarnya hanya dapat menjalankan dua baris ini
+
+115
+00:08:28,950 --> 00:08:31,480
+dan itu akan menghapus legenda dan meletakkannya di luar.
+
+116
+00:08:31,500 --> 00:08:35,850
+Jadi ide dasar di sini mudah-mudahan Anda dapat menemukan sendiri bagaimana cara mengambil garis-garis kode semacam
+
+117
+00:08:35,850 --> 00:08:38,170
+ini dan memasukkannya ke dalam kode Anda sendiri.
+
+118
+00:08:38,220 --> 00:08:42,900
+Dan itu sebenarnya hal yang sangat umum untuk dilakukan adalah memeriksa Stack Overflow untuk melihat baris kode apa
+
+119
+00:08:42,900 --> 00:08:46,000
+yang relevan untuk Anda dan kemudian memasangnya dalam pekerjaan Anda sendiri.
+
+120
+00:08:46,500 --> 00:08:47,910
+OK itu saja.
+
+121
+00:08:47,910 --> 00:08:51,430
+Kerja bagus semua orang dan saya akan menemui Anda di kuliah berikutnya.
+
+122
+00:08:51,450 --> 00:08:55,460
+Jangan ragu untuk mengirim forum Tanya Jawab jika ada yang membingungkan di sini untuk Anda.

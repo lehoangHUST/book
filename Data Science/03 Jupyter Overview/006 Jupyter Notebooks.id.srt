@@ -1,0 +1,851 @@
+1
+00:00:05,370 --> 00:00:10,500
+Halo semuanya dan selamat datang di kuliah notebook Jupiter dan kuliah ini akan menunjukkan kepada Anda
+
+2
+00:00:10,500 --> 00:00:15,540
+cara efektif menggunakan sistem notebook Jupiter dan memberi Anda tur tentang lingkungan secara keseluruhan.
+
+3
+00:00:15,540 --> 00:00:20,580
+Lihat juga sumber daya untuk kuliah ini untuk mengunduh file zip
+
+4
+00:00:20,580 --> 00:00:23,000
+yang berisi semua file notebook.
+
+5
+00:00:23,040 --> 00:00:27,150
+Jadi seperti yang saya sebutkan, periksa sumber daya untuk ceramah dan unduh file zip.
+
+6
+00:00:27,150 --> 00:00:33,700
+Ini berisi semua file dot IP Y dan B atau file notebook dan notebook tersebut untuk sisa campuran
+
+7
+00:00:33,990 --> 00:00:34,430
+Course.
+
+8
+00:00:34,470 --> 00:00:37,910
+Ingat di mana Anda menyimpan dan membuka ritsleting file itu.
+
+9
+00:00:38,640 --> 00:00:42,990
+Mari kita lanjutkan dan jelajahi notebook serta merasakan bagaimana menggunakannya secara efektif.
+
+10
+00:00:42,990 --> 00:00:47,510
+Saya akan melanjutkan dan hanya mengingatkan Anda bagaimana Anda dapat membuka notebook Jupiter.
+
+11
+00:00:47,520 --> 00:00:50,770
+Saya akan pergi ke depan dan melompat ke command prompt sekarang.
+
+12
+00:00:50,790 --> 00:00:51,090
+Baiklah.
+
+13
+00:00:51,090 --> 00:00:55,320
+Di sinilah saya pada command prompt saya sebagai pengingat jika Anda menggunakan Mac OS.
+
+14
+00:00:55,320 --> 00:00:57,710
+Silakan dan cukup gunakan terminal Anda untuk ini.
+
+15
+00:00:57,930 --> 00:01:03,870
+Jika Anda menggunakan Windows, silakan saja dan ke sini dan ketik ACMD dan pilih command prompt Anda.
+
+16
+00:01:04,160 --> 00:01:07,310
+Ada juga di ikon prompt perintah yang dapat Anda gunakan juga.
+
+17
+00:01:07,320 --> 00:01:11,250
+Itu adalah command prompt yang datang dengan distribusi Anaconda.
+
+18
+00:01:11,250 --> 00:01:11,830
+Baiklah.
+
+19
+00:01:12,000 --> 00:01:19,200
+Jadi, Anda pergi ke depan dan datang ke command prompt dan kemudian ketik j u p yt r space notebook dan tekan enter.
+
+20
+00:01:20,010 --> 00:01:25,040
+Ingatlah bahwa ini akan memulai notebook Jupiter di mana pun Anda berada di command prompt.
+
+21
+00:01:25,050 --> 00:01:27,840
+Jadi misalnya saya akan menghapus ini sangat cepat.
+
+22
+00:01:27,870 --> 00:01:35,430
+Saya di bawah pengguna C dan kemudian nama tengah saya di sini Marysia dan di situlah notebook saya akan
+
+23
+00:01:35,430 --> 00:01:36,110
+memulai.
+
+24
+00:01:36,210 --> 00:01:42,030
+Jika saya ingin memulai buku catatan saya di direktori lain saya perlu mengubah direktori cara saya dapat mengubah
+
+25
+00:01:42,030 --> 00:01:46,770
+direktori adalah dengan menggunakan CD dan kemudian mengetikkan file berikutnya yang saya inginkan.
+
+26
+00:01:46,800 --> 00:01:51,880
+Jadi katakanlah saya ingin pergi ke folder unduhan saya karena di situlah saya mengunduh file zip.
+
+27
+00:01:52,110 --> 00:01:58,110
+Saya bisa mulai mengetikkan D O N maka Anda dapat benar-benar tab autocomplete ini dan kemudian akan membawa Anda
+
+28
+00:01:58,110 --> 00:01:58,640
+ke.
+
+29
+00:01:58,650 --> 00:02:04,260
+Jika Anda keluar dan klik enter now downloads dan kemudian saya bisa mengetikkan DUPERE notebook, masukkan dan jalankan ini
+
+30
+00:02:04,340 --> 00:02:09,840
+dan sekarang file Jubran notebook saya akan muncul ketika saya memperlihatkannya di browser saya di bawah folder unduhan.
+
+31
+00:02:10,740 --> 00:02:15,000
+Jika Anda ingin melanjutkan dan kembali satu folder, Anda dapat mengetikkan CD.
+
+32
+00:02:15,010 --> 00:02:22,090
+Itu mengubah dot ruang pastoran dan itu akan membawa Anda kembali satu direktori.
+
+33
+00:02:22,170 --> 00:02:25,110
+Anda dapat melanjutkan dan mencari baris-baris perintah prompt dasar.
+
+34
+00:02:25,110 --> 00:02:25,860
+Ada yang sedikit berbeda.
+
+35
+00:02:25,860 --> 00:02:32,250
+Sen untuk menggunakan Mac OS atau Windows misalnya jika Anda ingin melihat semua folder direktori
+
+36
+00:02:32,250 --> 00:02:37,400
+dan direktori Anda saat ini di Windows itu adalah direktori C.
+
+37
+00:02:37,410 --> 00:02:40,780
+Dan ini pada dasarnya menunjukkan kepada Anda semua file di sini di direktori Anda saat ini.
+
+38
+00:02:40,860 --> 00:02:46,170
+Jika Anda menggunakan Mac, Anda dapat mengetikkan L S untuk daftar semuanya.
+
+39
+00:02:46,170 --> 00:02:49,320
+Baiklah untuk menghapus semua yang Anda miliki di sini.
+
+40
+00:02:49,320 --> 00:02:53,290
+Jika Anda menggunakan Windows, Anda cukup mengetikkan C L S.
+
+41
+00:02:53,440 --> 00:03:00,120
+Jika Anda menggunakan Mac dan mengetikkan kata yang jelas, biarkan saya melanjutkan dan memulai buku catatan Jupiter dan
+
+42
+00:03:00,120 --> 00:03:06,150
+kapan harus menekan enter dan itu akan membuka sebuah chip di notebook di browser saya.
+
+43
+00:03:06,150 --> 00:03:07,020
+Ini dia.
+
+44
+00:03:07,200 --> 00:03:11,940
+Saya akan pergi ke depan dan menemukan di mana saya sebenarnya menyimpan file ritsleting.
+
+45
+00:03:11,940 --> 00:03:17,510
+Ini dia python data science machine belajar boot camp dan program unzip Pentagon yang Anda gunakan.
+
+46
+00:03:17,520 --> 00:03:22,920
+Anda mungkin memiliki atau mungkin tidak memiliki master dasht ini di akhir tetapi jika Anda terus maju dan klik pada folder ini Anda
+
+47
+00:03:22,920 --> 00:03:24,460
+akan melihat beberapa folder di sini.
+
+48
+00:03:24,480 --> 00:03:27,660
+Python untuk analisis data untuk visualisasi data.
+
+49
+00:03:27,660 --> 00:03:33,550
+Bagian pembelajaran mesin crash Python data menyimpan beberapa proyek data besar dan Sparc dan banyak lagi.
+
+50
+00:03:33,570 --> 00:03:36,070
+Bagian pertama berada di bawah folder ini.
+
+51
+00:03:36,090 --> 00:03:41,960
+Tentu saja Python crash jika Anda mengklik bagian itu di mana folder itu Anda akan memiliki buku catatan.
+
+52
+00:03:42,180 --> 00:03:44,700
+Dan di sini Anda melihat titik IPY dan menjadi file.
+
+53
+00:03:44,700 --> 00:03:50,670
+Jadi cukup banyak untuk setiap kuliah di mana Anda melihat saya mengkodekan sesuatu di luar sana ada folder yang
+
+54
+00:03:50,730 --> 00:03:56,550
+memiliki nama bagian keseluruhan dan kemudian mereka akan menjadi subfolder dari nama bagian yang sebenarnya dan kemudian file
+
+55
+00:03:56,550 --> 00:03:58,630
+notebook yang sesuai dengan nama dosen.
+
+56
+00:03:58,620 --> 00:04:01,030
+Jadi yang pertama adalah python crash course.
+
+57
+00:04:01,140 --> 00:04:02,590
+Anda dapat melanjutkan dan klik ini.
+
+58
+00:04:02,670 --> 00:04:03,990
+Mereka akan membutuhkan sedikit waktu untuk memuat.
+
+59
+00:04:03,990 --> 00:04:09,270
+Ini dia dan kemudian semua yang akan saya ketikkan sepanjang kuliah ada di sini untuk Anda dan
+
+60
+00:04:09,270 --> 00:04:11,460
+cukup banyak di awal setiap bagian kursus.
+
+61
+00:04:11,460 --> 00:04:16,380
+Saya akan mengingatkan Anda di mana Anda dapat menemukan buku catatan yang sebenarnya untuk bagian Kursus
+
+62
+00:04:16,380 --> 00:04:19,100
+yang menjawab beberapa ceramah dan kadang-kadang sulit menemukannya.
+
+63
+00:04:19,230 --> 00:04:23,520
+Saya akan berada di sana untuk membimbing Anda dan jika Anda memiliki pertanyaan tentang di mana menemukan
+
+64
+00:04:23,520 --> 00:04:27,460
+sesuatu, silakan posting Forum Q&amp;A dan saya akan dengan senang hati membantu Anda di sana.
+
+65
+00:04:27,510 --> 00:04:30,890
+Baiklah setelah itu kita akan mulai Python untuk analisis data.
+
+66
+00:04:30,900 --> 00:04:36,030
+Anda akan memulai nomor dengan s. c atau klik PI dan lihat itu untuk notebook.
+
+67
+00:04:36,030 --> 00:04:41,790
+Biarkan saya pergi ke depan dan hanya berjalan melalui bagaimana sistem buku catatan Jupiter bekerja secara umum.
+
+68
+00:04:41,910 --> 00:04:49,050
+Saya akan kembali ke master dan kemudian saya akan klik baru dan di sini karena saya memiliki
+
+69
+00:04:49,050 --> 00:04:50,350
+beberapa jenis lingkungan.
+
+70
+00:04:50,480 --> 00:04:55,110
+Saya akan mengklik yang satu ini tetapi Anda bisa mengklik Python atau Python 3 atau apa pun yang baik dan
+
+71
+00:04:55,110 --> 00:04:56,300
+klik itu harus baik-baik saja.
+
+72
+00:04:56,310 --> 00:04:59,180
+Sekali lagi Anda bisa mengklik baru apa pun yang dikatakan di buku catatan.
+
+73
+00:04:59,220 --> 00:05:00,640
+Anda harus mengkliknya.
+
+74
+00:05:00,870 --> 00:05:04,040
+Anda akan mendapatkan sesuatu seperti ini untuk menulis ulang buku catatan ini.
+
+75
+00:05:04,070 --> 00:05:08,260
+Anda tidak hanya klik di sini di bawah bagian tanpa judul dan beri nama apa pun yang Anda inginkan.
+
+76
+00:05:08,280 --> 00:05:11,400
+Buku catatan saya misalnya klik OK dan saya akan beri nama.
+
+77
+00:05:11,400 --> 00:05:13,940
+Biarkan saya pergi ke depan dan menunjukkan kepada Anda dasar-dasar.
+
+78
+00:05:13,950 --> 00:05:21,440
+Ini adalah sel kode yang berarti saya bisa mengetikkan kode Python ke dalam sel dan kemudian menjalankannya sebagai contoh yang sangat mendasar. Saya dapat
+
+79
+00:05:21,440 --> 00:05:28,070
+mengatakan cetakan halo dan kemudian saya dapat menjalankan sel dengan mengklik di sini saat berjalan dan saya akan pergi dan menjalankan
+
+80
+00:05:28,070 --> 00:05:30,690
+dan menunjukkan saya output di bawah sel.
+
+81
+00:05:30,710 --> 00:05:35,150
+Saya juga dapat melakukan hal yang sama pada dasarnya kode Python jika saya ingin tahu apa yang ditambah satu.
+
+82
+00:05:35,450 --> 00:05:41,120
+Saya cukup klik jalankan di sini dan itu menunjukkan kepada saya output dalam pemberitahuan sel karena saya mencetak output
+
+83
+00:05:41,210 --> 00:05:44,980
+di sini tidak muncul karena saya tidak benar-benar menentukan untuk mencetak output.
+
+84
+00:05:45,050 --> 00:05:46,780
+Itu menunjukkan sel output.
+
+85
+00:05:46,910 --> 00:05:50,820
+Fakta katanya mencetak satu tambah satu.
+
+86
+00:05:51,170 --> 00:05:53,980
+Maka itu tidak akan menunjukkan sedikit itu.
+
+87
+00:05:54,140 --> 00:05:54,620
+BAIK.
+
+88
+00:05:54,800 --> 00:06:00,170
+Jadi Anda tidak harus selalu datang ke sini dan mengklik sel yang dijalankan ini yang dapat Anda lakukan sebenarnya
+
+89
+00:06:00,170 --> 00:06:01,580
+hanya untuk menggeser masuk.
+
+90
+00:06:01,820 --> 00:06:06,290
+Dan saat itulah saya memasukkannya sebagai string shift enter.
+
+91
+00:06:06,310 --> 00:06:10,320
+Dan jika saya melakukan shift enter, ia akan melanjutkan dan menjalankan apa pun yang ada di sel itu.
+
+92
+00:06:10,370 --> 00:06:11,400
+Jadi ingatlah itu.
+
+93
+00:06:11,420 --> 00:06:16,370
+Itu cara yang sangat bagus untuk menjalankan barang dengan cepat sehingga Anda tidak harus terus-menerus datang ke
+
+94
+00:06:16,370 --> 00:06:18,060
+sini dan klik run sell.
+
+95
+00:06:18,200 --> 00:06:21,030
+Trik kecil lainnya adalah alt enter.
+
+96
+00:06:21,200 --> 00:06:24,940
+Jika saya menggeser dan mengaktifkannya, ia akan turun ke sel berikutnya.
+
+97
+00:06:24,980 --> 00:06:30,210
+Tetapi jika saya melakukan alt enter itu benar-benar akan memasukkan sel di bawahnya juga.
+
+98
+00:06:30,230 --> 00:06:31,240
+Jadi perhatikan perbedaannya di sini.
+
+99
+00:06:31,250 --> 00:06:35,240
+Jika saya hanya menggeser masuk pada sel pertama ini menjalankannya.
+
+100
+00:06:35,240 --> 00:06:40,340
+Dan itu adalah bagaimana n mengubah nomornya untuk menunjukkan kepada Anda urutan barang dan bagaimana itu dijalankan.
+
+101
+00:06:40,460 --> 00:06:44,930
+Kemudian jika saya benar-benar memasukkannya masukan sel untuk saya.
+
+102
+00:06:44,930 --> 00:06:49,600
+Itu trik yang sangat bagus dan saya akan tunjukkan mengapa nanti ketika kita membahas latihan.
+
+103
+00:06:50,230 --> 00:06:50,980
+BAIK.
+
+104
+00:06:51,080 --> 00:06:53,510
+Sekarang Anda mungkin bertanya-tanya bagaimana saya bisa menyimpan notebook ini.
+
+105
+00:06:53,510 --> 00:07:00,380
+Dapat melakukan kontrol atau klik di sini pada penyimpanan floppy disk kecil sebenarnya memiliki fitur penyimpanan otomatis mengelilingi
+
+106
+00:07:00,380 --> 00:07:02,540
+setiap dua menit menyimpan otomatis.
+
+107
+00:07:02,630 --> 00:07:07,980
+Atau Anda bisa mengatakan file dan Anda dapat melakukan save dan checkpoint di sini.
+
+108
+00:07:08,020 --> 00:07:12,530
+Sekarang Anda mungkin bertanya-tanya bagaimana cara mengunduh notebook ini sebagai sesuatu yang lain.
+
+109
+00:07:12,530 --> 00:07:15,470
+Yah Anda bisa pergi ke file unduh sebagai.
+
+110
+00:07:15,470 --> 00:07:17,780
+Dan Anda sebenarnya memiliki banyak opsi untuk diunduh.
+
+111
+00:07:17,960 --> 00:07:23,570
+Jika Anda hanya ingin file dot PI Anda bisa mengatakan unduh sebagai dot PI dan itu akan mengunduh
+
+112
+00:07:23,600 --> 00:07:29,810
+dan mengkonversi file notebook ini menjadi file sehingga Anda dapat menggunakannya sebagai skrip Python normal dan ID apa pun yang Anda inginkan.
+
+113
+00:07:30,290 --> 00:07:35,720
+Atau jika Anda hanya ingin HVM Elano Anda dapat mengklik setiap T. M. dan itu akan mengekspornya ke file
+
+114
+00:07:35,720 --> 00:07:38,070
+sederhana dasar yang dapat ditampilkan oleh browser apa pun.
+
+115
+00:07:38,100 --> 00:07:39,300
+Jadi Anda punya banyak pilihan.
+
+116
+00:07:39,320 --> 00:07:41,780
+Anda bisa masuk dan memeriksanya.
+
+117
+00:07:41,780 --> 00:07:48,130
+Hal lain yang saya ingin Anda ketahui adalah jika Anda memiliki misalnya infinite ketika loop berjalan.
+
+118
+00:07:48,140 --> 00:07:53,330
+Jadi anggap saja ini seperti menjalankan selamanya dan Anda ingin me-restart kernel Anda.
+
+119
+00:07:53,360 --> 00:07:59,070
+Apa yang akan terjadi adalah di bawah ini saya memperbesar sedikit bukannya angka di sini dan akhirnya Anda akan melihat
+
+120
+00:07:59,070 --> 00:07:59,860
+Asterix rendah.
+
+121
+00:07:59,920 --> 00:08:01,550
+Itu hanya akan berjalan selamanya.
+
+122
+00:08:01,670 --> 00:08:07,880
+Yang dapat Anda lakukan hanyalah masuk dan katakan kernel lalu restart kernel katakan Anda ingin me-restart
+
+123
+00:08:07,880 --> 00:08:08,330
+kernel.
+
+124
+00:08:08,330 --> 00:08:09,660
+Anda teruskan dan mulai kembali.
+
+125
+00:08:09,790 --> 00:08:12,700
+Nah katakan restart kernel dan kemudian saya akan mengatakan kernel siap.
+
+126
+00:08:12,710 --> 00:08:17,600
+Pada dasarnya yang terjadi adalah notebook ini terhubung ke sebuah kernel dan sebuah kernel adalah jenis instance dari
+
+127
+00:08:17,600 --> 00:08:18,740
+Python yang berjalan.
+
+128
+00:08:19,100 --> 00:08:24,560
+Dan jika ada sesuatu yang salah di mana Python menabrak mungkin Anda benar-benar menulis skrip yang hanya loop tak terhingga
+
+129
+00:08:24,560 --> 00:08:26,300
+atau membutuhkan waktu yang sangat lama.
+
+130
+00:08:26,360 --> 00:08:31,970
+Anda selalu dapat menghentikan semuanya dengan datang ke kernel dan mengklik restart juga dapat mengganggu jika Anda hanya
+
+131
+00:08:32,000 --> 00:08:35,230
+ingin mengganggu sel tertentu tetapi kadang-kadang itu tidak berhasil.
+
+132
+00:08:35,240 --> 00:08:39,770
+Jika Anda mendapatkan loop yang benar-benar buruk yang berjalan selamanya hanya perlu diingat.
+
+133
+00:08:40,100 --> 00:08:41,000
+BAIK.
+
+134
+00:08:41,390 --> 00:08:45,680
+Jika Anda membutuhkan bantuan selain semua yang saya katakan di sini, Anda selalu bisa mengklik bantuan
+
+135
+00:08:46,280 --> 00:08:49,050
+dan kemudian mereka akan memberi Anda bantuan di banyak perpustakaan.
+
+136
+00:08:49,070 --> 00:08:53,480
+Kami akan bekerja sama dengan juga buku catatan yang membantu mengeklik bahwa buku itu akan mengirim Anda ke
+
+137
+00:08:53,480 --> 00:08:56,760
+tautan tempat buku itu memberi tahu Anda tentang buku catatan itu sendiri.
+
+138
+00:08:56,930 --> 00:09:02,090
+Ingat notebook ini dulu disebut notebook Python I tapi sekarang karena Jupiter dapat menjalankan
+
+139
+00:09:02,090 --> 00:09:05,450
+bahasa lain seperti Juliet dan mereka disebut notebook Jupiter.
+
+140
+00:09:05,450 --> 00:09:12,000
+Sekarang hal lain yang ingin saya sebutkan adalah ada lebih banyak cara pintas keyboard dari apa yang saya katakan sebelumnya.
+
+141
+00:09:12,080 --> 00:09:17,540
+Anda dapat pergi untuk membantu mengklik pintasan keyboard dan itu akan memberi Anda daftar semua pintasan
+
+142
+00:09:17,810 --> 00:09:19,700
+keyboard yang tersedia untuk Anda.
+
+143
+00:09:20,420 --> 00:09:20,930
+Baiklah.
+
+144
+00:09:20,930 --> 00:09:25,490
+Itu benar-benar dasar-dasar notebook dan cukup banyak yang perlu Anda ketahui sejauh Anda menjalani
+
+145
+00:09:25,490 --> 00:09:26,250
+kursus ini.
+
+146
+00:09:26,330 --> 00:09:31,460
+Anda memiliki pertanyaan yang lebih spesifik untuk topik tertentu yang tidak dapat Anda temukan di sini.
+
+147
+00:09:31,640 --> 00:09:33,310
+Silakan dan cari di forum Kewaunee.
+
+148
+00:09:33,320 --> 00:09:37,820
+Jika Anda tidak dapat menemukannya di sana atau di Q palsu. Jangan ragu untuk mengirim pertanyaan baru ke forum Q&amp;A
+
+149
+00:09:37,940 --> 00:09:39,850
+dan saya akan dengan senang hati membantu Anda.
+
+150
+00:09:40,070 --> 00:09:44,300
+Sangat cepat, saya ingin menunjukkan kepada Anda seperti apa latihan selama kursus ini.
+
+151
+00:09:44,300 --> 00:09:48,140
+Jadi misalnya, Anda menggunakan python untuk analisis data.
+
+152
+00:09:48,250 --> 00:09:53,030
+Anda berada di bagian PI dari Kursus yang telah Anda lakukan ceramah dan Anda siap untuk memulai latihan.
+
+153
+00:09:53,540 --> 00:09:57,410
+Setiap latihan akan memiliki file solusi yang terkait dengannya.
+
+154
+00:09:57,410 --> 00:09:59,050
+Jangan periksa file solusi terlebih dahulu.
+
+155
+00:09:59,060 --> 00:10:01,100
+Anda harus memeriksa file latihan ini.
+
+156
+00:10:01,220 --> 00:10:05,660
+Kemudian Anda dapat melanjutkan dan mengklik file sexercise dan yang ini akan muncul dan terlihat
+
+157
+00:10:05,660 --> 00:10:06,420
+seperti ini.
+
+158
+00:10:06,800 --> 00:10:10,120
+Dan file latihan ini akan memiliki pertanyaan untuk Anda.
+
+159
+00:10:10,400 --> 00:10:14,740
+Dan kemudian sebuah sel di mana Anda dapat melanjutkan dan menjawab pertanyaan-pertanyaan dan banyak kali.
+
+160
+00:10:14,750 --> 00:10:17,740
+Saya juga akan menunjukkan kepada Anda hasil yang diharapkan.
+
+161
+00:10:17,780 --> 00:10:21,050
+Jadi misalnya di sini Anda ingin membuat array angka nol.
+
+162
+00:10:21,050 --> 00:10:25,460
+Sekarang saya tahu Anda mungkin belum tahu bagaimana melakukannya, tetapi perlu
+
+163
+00:10:25,520 --> 00:10:32,210
+diingat bahwa jika Anda mulai mengetikkan hal-hal di sel seperti mencetak halo dan menjalankan ini, Anda akan menimpa hasilnya.
+
+164
+00:10:32,210 --> 00:10:38,020
+Jadi ingatlah itu dan akan ada lebih relevan ketika Anda benar-benar mendapatkan latihan.
+
+165
+00:10:38,020 --> 00:10:40,580
+Beberapa dari Anda mungkin bertanya-tanya apakah jenis sel ini.
+
+166
+00:10:40,580 --> 00:10:44,490
+Sebenarnya hanya menampilkan teks dan bukan sel kode.
+
+167
+00:10:44,690 --> 00:10:46,780
+Nah ini dikenal sebagai sel penurunan harga.
+
+168
+00:10:46,790 --> 00:10:53,430
+Jika kita melanjutkan dan kembali ke buku catatan saya di sini semua yang saya tunjukkan sejauh ini adalah sel kode.
+
+169
+00:10:53,510 --> 00:10:58,910
+Tapi apa yang benar-benar hebat tentang notebook Jupiter adalah Anda dapat mengetik catatan untuk diri Anda sendiri dalam teks
+
+170
+00:10:58,970 --> 00:11:02,540
+penurunan harga normal sehingga Anda bisa datang ke sini melihat kode.
+
+171
+00:11:02,930 --> 00:11:07,790
+Klik pada penurunan harga dan itu akan mengubahnya menjadi sel penurunan harga.
+
+172
+00:11:07,910 --> 00:11:14,510
+Dan sekarang jika saya menjalankan sel itu pada dasarnya hanya teks dasar bagi saya untuk mengetik catatan untuk diri saya yang sangat
+
+173
+00:11:14,510 --> 00:11:15,760
+berguna ketika Anda belajar.
+
+174
+00:11:15,770 --> 00:11:17,770
+Anda bisa mengatakan sesuatu seperti.
+
+175
+00:11:17,900 --> 00:11:21,770
+Gunakan cetak untuk mencetak string.
+
+176
+00:11:21,770 --> 00:11:29,330
+Jalankan catatan kecil itu untuk Anda sendiri dan kemudian Anda bisa melanjutkan dan mengetik cetakan halo dll. dan itu adalah cara yang sangat bagus untuk
+
+177
+00:11:29,330 --> 00:11:33,850
+membuat catatan saat Anda mengikuti kuliah dan ini juga mendukung format
+
+178
+00:11:33,850 --> 00:11:35,040
+penurunan harga.
+
+179
+00:11:35,060 --> 00:11:40,580
+Jadi, jika Anda terbiasa dengan format markdown seperti bagaimana menggunakan tag hash untuk cetak tebal dll.
+
+180
+00:11:40,610 --> 00:11:46,040
+Atau mungkin lakukan taluk hanya dengan beberapa tanda bintang.
+
+181
+00:11:46,040 --> 00:11:52,220
+Poin atau lekukan lebih banyak untuk jenis pemformatan kode yang juga porting dalam sel penurunan
+
+182
+00:11:52,240 --> 00:11:53,310
+harga ini.
+
+183
+00:11:53,510 --> 00:11:58,490
+Sekarang kita tidak akan membahas sintaks bertanda karena saya bisa menjadi program nother keseluruhan tetapi perlu diingat
+
+184
+00:11:58,490 --> 00:12:03,760
+jika saya melihat sesuatu seperti ini tandai ke bawah dan lateks yang mengatakan itu adalah sel penurunan harga.
+
+185
+00:12:04,130 --> 00:12:09,290
+Kesalahan umum yang kadang-kadang dilakukan oleh pemula adalah mereka secara tidak sengaja akan mengonversinya menjadi sel penurunan harga dan
+
+186
+00:12:09,290 --> 00:12:11,550
+kemudian bertanya-tanya, mengapa kode saya tidak berjalan.
+
+187
+00:12:11,630 --> 00:12:17,390
+Jika kode Anda tidak pernah disorot mungkin berarti Anda hanya menjalankan sel penurunan harga.
+
+188
+00:12:17,390 --> 00:12:22,640
+Jika Anda ingin mengubah sel markdown ini kembali ke sel kode, cukup datang ke sini dan pilih kode
+
+189
+00:12:22,640 --> 00:12:26,120
+kemudian jalankan ini dengan shift enter dan Anda baik untuk pergi.
+
+190
+00:12:26,510 --> 00:12:34,250
+OK jadi ingat shift enter menjalankan sel dan kemudian Alt Enter akan menjalankan sel dan mengeluarkan sel di bawahnya.
+
+191
+00:12:34,940 --> 00:12:44,180
+Jadi jika Anda pergi ke depan dan klik alternatif ada di sini jadi seperti lakukan lagi Alt Alt center dan menempatkan sel
+
+192
+00:12:44,180 --> 00:12:44,980
+baru.
+
+193
+00:12:45,110 --> 00:12:49,700
+Sekarang saya hanya merujuk pada apa yang sebenarnya saya lakukan pada keyboard saya tidak ingin mengetikkan string.
+
+194
+00:12:49,700 --> 00:12:54,900
+Jadi sekali lagi satu tambah satu shift masuk menjalankannya satu ditambah satu alternator.
+
+195
+00:12:54,900 --> 00:12:59,840
+Itu terus menempatkan sel-sel baru di bawahnya yang sangat berguna untuk latihan.
+
+196
+00:12:59,840 --> 00:13:01,710
+Jadi, jika Anda kembali ke sini, ini adalah olahraga.
+
+197
+00:13:01,940 --> 00:13:04,850
+Perhatikan saya memiliki array output ini 1 1 1 pada 1.
+
+198
+00:13:04,890 --> 00:13:06,060
+Saya tidak ingin menimpanya.
+
+199
+00:13:06,110 --> 00:13:12,020
+Saya cukup mengklik teks ini atau menandai sel yang masuk dan memberi saya sel kecil di sini untuk buffer sehingga
+
+200
+00:13:12,380 --> 00:13:14,960
+saya dapat mencetak apa pun yang saya inginkan.
+
+201
+00:13:15,140 --> 00:13:17,750
+Shift masuk dalam tes keluaran.
+
+202
+00:13:17,810 --> 00:13:18,300
+Baiklah.
+
+203
+00:13:18,410 --> 00:13:21,710
+Jangan khawatir jika Anda tidak sepenuhnya mendapatkan semua itu karena kita akan meninjau
+
+204
+00:13:21,710 --> 00:13:23,840
+semua ini ketika kita benar-benar mendapatkan latihan.
+
+205
+00:13:24,440 --> 00:13:25,020
+Baiklah.
+
+206
+00:13:25,070 --> 00:13:27,990
+Pada dasarnya itu semua yang perlu Anda ketahui untuk buku catatan Jupiter.
+
+207
+00:13:28,010 --> 00:13:30,820
+Jika Anda memiliki pertanyaan, jangan ragu untuk mengepos dan forum Tanya Jawab.
+
+208
+00:13:30,820 --> 00:13:32,340
+Anda tahu saya akan dengan senang hati membantu Anda.
+
+209
+00:13:32,360 --> 00:13:37,670
+Perlu diingat bahwa sistem notebook Jupiter akan mulai di mana pun Anda berada di command prompt
+
+210
+00:13:37,730 --> 00:13:38,810
+atau terminal Anda.
+
+211
+00:13:38,810 --> 00:13:44,330
+Anda akan memerlukan direktori perubahan menggunakan CD jika Anda ingin menjalankan atau menyimpan buku catatan Anda di tempat lain
+
+212
+00:13:44,330 --> 00:13:45,500
+di komputer Anda.
+
+213
+00:13:45,500 --> 00:13:48,440
+Baiklah, terima kasih semuanya dan saya akan melihat pada kuliah berikutnya.

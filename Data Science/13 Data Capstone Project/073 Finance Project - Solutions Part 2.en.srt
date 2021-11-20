@@ -1,0 +1,919 @@
+1
+00:00:05,490 --> 00:00:10,460
+Hello everyone and welcome to part two of the finance project solutions lecture.
+
+2
+00:00:10,470 --> 00:00:15,780
+Let's go ahead and jump right back to the Jupiter note book where we left off last time.
+
+3
+00:00:15,780 --> 00:00:16,080
+OK.
+
+4
+00:00:16,080 --> 00:00:17,810
+Here I am at the Jupiter notebook.
+
+5
+00:00:17,820 --> 00:00:20,740
+Last time we left off we had just created this page plot.
+
+6
+00:00:20,760 --> 00:00:23,830
+Notice a little bit of strange behavior on Citigroup's return.
+
+7
+00:00:24,030 --> 00:00:29,250
+And if that stood out to you you can then check out the Citigroup Wikipedia page and you'll notice that
+
+8
+00:00:29,250 --> 00:00:31,640
+in November 2008 they kind of had a crash.
+
+9
+00:00:31,650 --> 00:00:34,710
+And we'll actually explore that a little later on.
+
+10
+00:00:35,370 --> 00:00:41,070
+But coming up next what we want it to do is using this returns data frame figure out on what dates each
+
+11
+00:00:41,070 --> 00:00:47,340
+bank stock had the best and worst single day returns and you should notice that four of the banks share
+
+12
+00:00:47,340 --> 00:00:52,500
+the same day for the worse drop and that anything significant happened on that day.
+
+13
+00:00:52,500 --> 00:01:00,300
+Let's go ahead and get started something we can do just check out the returns data frame and notice
+
+14
+00:01:00,330 --> 00:01:04,700
+we have these columns here that B A C returned C return etc..
+
+15
+00:01:04,780 --> 00:01:09,580
+I want to get the minimum values for these returns and they're all SINGLE DAY returns.
+
+16
+00:01:09,600 --> 00:01:16,960
+I can just say that men will return the single day return value minimums.
+
+17
+00:01:16,970 --> 00:01:23,220
+Now what we actually want are the dates when this happened and there's couple of ways to do this.
+
+18
+00:01:23,220 --> 00:01:31,920
+One is you can iterate through the column names and then if you remember your name PI instead of calling
+
+19
+00:01:32,520 --> 00:01:39,240
+for example men off of that column you can call arguments an argument will return that time stamp and
+
+20
+00:01:39,300 --> 00:01:43,430
+this case it's the 20th of January 2009.
+
+21
+00:01:43,450 --> 00:01:49,290
+Now you could do that for every single column or Panthers also allows you to do this across the entire
+
+22
+00:01:49,290 --> 00:01:57,600
+data frame by just calling id x men and that returns a that basically a series that looks like this
+
+23
+00:01:57,930 --> 00:02:04,140
+with the dates or indexes of the minimum values for the returns for each bank and you can do the same
+
+24
+00:02:04,140 --> 00:02:12,090
+thing by saying returns id x max to get the biggest single day gains.
+
+25
+00:02:12,150 --> 00:02:20,190
+Now as far as the worst strops you'll notice a lot of them happened the 20th of January 2009.
+
+26
+00:02:20,280 --> 00:02:25,980
+And if you're curious what happened that day you can go ahead and just search google and you'll notice
+
+27
+00:02:25,980 --> 00:02:30,950
+that this was actually Barack Obama's inauguration date which is kind of interesting.
+
+28
+00:02:31,710 --> 00:02:37,200
+Something to note here whether or not that's correlated or just a coincidence or basically some some
+
+29
+00:02:37,200 --> 00:02:41,000
+of the market investors get panicky when some big political change happens.
+
+30
+00:02:41,070 --> 00:02:47,730
+You can actually check out an idea Max that for instance JP Morgan's biggest return day is the next
+
+31
+00:02:47,730 --> 00:02:48,640
+very next day.
+
+32
+00:02:48,720 --> 00:02:52,740
+So don't take this as any sort of political comments or even financial advice.
+
+33
+00:02:52,740 --> 00:02:55,840
+Stock markets can be kind of weird sometimes.
+
+34
+00:02:55,890 --> 00:03:01,710
+Now if we check out the next question it says you should have noticed that Citigroup's largest drop
+
+35
+00:03:01,770 --> 00:03:04,770
+and biggest gain were very close to one another.
+
+36
+00:03:05,040 --> 00:03:11,040
+So we noticed that JP Morgan's gain happens the same day after the inauguration day right after their
+
+37
+00:03:11,040 --> 00:03:12,020
+biggest loss.
+
+38
+00:03:12,240 --> 00:03:22,920
+But if we look at Citigroup mageddon clear that's sell if we look at Citigroup they have 2011 6th of
+
+39
+00:03:22,920 --> 00:03:31,110
+May and 2000 11 ninth of me as very close to each other is their worst return and their best return
+
+40
+00:03:31,590 --> 00:03:34,540
+and it's something significant happened at that time.
+
+41
+00:03:34,650 --> 00:03:35,990
+Actually yes.
+
+42
+00:03:36,420 --> 00:03:43,200
+If you end up Googling something like Citigroup may 2011 you should get some news that looks like this
+
+43
+00:03:43,200 --> 00:03:48,120
+where Citigroup announces a reverse stock split and that's essentially what happened around that time
+
+44
+00:03:48,120 --> 00:03:48,340
+.
+
+45
+00:03:48,450 --> 00:03:55,330
+And you can notice that it was effective on May 6 2011 which kind of lines up with our data here.
+
+46
+00:03:55,890 --> 00:03:56,160
+All right.
+
+47
+00:03:56,160 --> 00:03:56,880
+So that's pretty cool.
+
+48
+00:03:56,880 --> 00:04:03,330
+We can actually correlate or see real life events affecting our stock prices in our data that we have
+
+49
+00:04:03,330 --> 00:04:06,270
+in our data frame which is kind of interesting.
+
+50
+00:04:06,360 --> 00:04:11,220
+Now if we continue on where we want to do is take a look at the standard deviation of the returns and
+
+51
+00:04:11,220 --> 00:04:15,990
+which stock would you classify as the riskiest over the entire time period and which would you classify
+
+52
+00:04:15,990 --> 00:04:19,040
+as the riskiest for the year 2015.
+
+53
+00:04:19,380 --> 00:04:25,320
+So sometimes a basic measurement of risk need riskiness of a stock is the standard deviation of the
+
+54
+00:04:25,320 --> 00:04:26,700
+returns of the stock.
+
+55
+00:04:26,700 --> 00:04:31,200
+So if you have a very large standard deviation of the returns it means your stock is going up and down
+
+56
+00:04:31,530 --> 00:04:33,880
+a lot versus a small Steria deviation.
+
+57
+00:04:33,900 --> 00:04:35,790
+It means your price is pretty steady.
+
+58
+00:04:35,790 --> 00:04:39,270
+So if you have a high standard deviation your stock is probably pretty risky.
+
+59
+00:04:39,780 --> 00:04:41,970
+Let's go ahead and see if we can do this.
+
+60
+00:04:42,030 --> 00:04:43,100
+It's actually quite simple.
+
+61
+00:04:43,110 --> 00:04:47,930
+You can just say returns and I'm actually going to put this in the cell right here.
+
+62
+00:04:47,940 --> 00:04:52,440
+Returns da SDD for standard deviation and we get something that looks like this.
+
+63
+00:04:52,440 --> 00:04:59,130
+Basically the standard deviation for each stock and it looks like the riskiest overall by quite a bit
+
+64
+00:04:59,250 --> 00:05:00,640
+is actually Citigroup.
+
+65
+00:05:00,690 --> 00:05:01,860
+And later on we'll see why.
+
+66
+00:05:01,860 --> 00:05:10,500
+Because it had a huge crash and as far as for 2015 we can go ahead and say returns in what we want to
+
+67
+00:05:10,500 --> 00:05:14,530
+do is find out if we take a look at the head.
+
+68
+00:05:14,820 --> 00:05:19,770
+We want to only get values for 2015 and that's based off of the index.
+
+69
+00:05:20,010 --> 00:05:29,710
+Meaning I want to actually grab a section or a slice of the index and I can use that using I X and I'll
+
+70
+00:05:29,730 --> 00:05:41,390
+passen from 2015 0 1 0 1 so from January 1st 2015 as a slice all the way up to 2015.
+
+71
+00:05:41,460 --> 00:05:46,960
+Twelve thirty one is a slice and then call standard deviation off of that.
+
+72
+00:05:47,550 --> 00:05:52,980
+And you'll notice that in 2015 which is way outside of the crash of Citigroup they actually all have
+
+73
+00:05:52,980 --> 00:05:59,940
+a very similar risk profile with false Fargo being the lowest risk by not that much.
+
+74
+00:06:00,420 --> 00:06:07,860
+And it looks like Morgan Stanley or Bank of America are the highest risk but essentially the standard
+
+75
+00:06:07,860 --> 00:06:10,990
+deviations are extremely close to one another.
+
+76
+00:06:11,040 --> 00:06:17,530
+OK next we wanted to say create a plot using seaborne of the 2015 returns for Morgan Stanley.
+
+77
+00:06:17,610 --> 00:06:19,160
+Let's go ahead and do that.
+
+78
+00:06:19,230 --> 00:06:26,700
+We can go ahead and say as soon as I thought this plot in I want the 2015 returns of Morgan Stanley
+
+79
+00:06:27,150 --> 00:06:32,690
+when we go out and copy this code here and this is my 2015 returns.
+
+80
+00:06:32,790 --> 00:06:41,820
+And then I just want Morgan Stanley meaning I just want the M-S return column and we can go ahead and
+
+81
+00:06:41,820 --> 00:06:49,920
+color this green just so it matches the solutions lecture.
+
+82
+00:06:50,070 --> 00:06:54,810
+And let's go ahead and increase the bin size or the number of bins excuse me since we actually have
+
+83
+00:06:54,810 --> 00:06:55,640
+quite a bit of data.
+
+84
+00:06:55,650 --> 00:07:02,040
+So I'm going to go ahead and say bins is equal to something like let's just say 50.
+
+85
+00:07:02,130 --> 00:07:02,480
+All right.
+
+86
+00:07:02,520 --> 00:07:07,800
+And now we have a distribution of the returns for Morgan Stanley in the year 2015.
+
+87
+00:07:07,800 --> 00:07:12,210
+All right so here we can see as far as the M-S return and the distribution as far as what we're looking
+
+88
+00:07:12,210 --> 00:07:13,710
+at is that it's pretty stable.
+
+89
+00:07:13,710 --> 00:07:20,730
+You're looking at percent returns that only deviate about 0 6 from the average but we're going to go
+
+90
+00:07:20,730 --> 00:07:27,450
+ahead and do now is check out a distribution plot using seaborne of the 2008 returns for Citigroup which
+
+91
+00:07:27,450 --> 00:07:35,570
+was quite a volatile year for them north to do this will go ahead and say seaborne this plot or Sonesta
+
+92
+00:07:35,640 --> 00:07:47,100
+this plot returns I X and I will go ahead and slice it and copy this but instead of 2015 we'll go ahead
+
+93
+00:07:47,100 --> 00:07:48,840
+and put in 2008
+
+94
+00:07:52,000 --> 00:08:00,960
+we'll do the same thing over here 2008s and then we want the C return column.
+
+95
+00:08:01,220 --> 00:08:07,110
+Don't go ahead and color this red so we can tell a difference here and I'll go ahead and set the bin's
+
+96
+00:08:07,200 --> 00:08:08,460
+equal to.
+
+97
+00:08:08,820 --> 00:08:11,480
+Let's go ahead and say 50 again.
+
+98
+00:08:12,130 --> 00:08:17,490
+And if I run this if we go in and compare this you'll notice that the standard deviation is actually
+
+99
+00:08:17,490 --> 00:08:22,590
+quite a bit more stretched out especially here you're almost that points 6.
+
+100
+00:08:22,650 --> 00:08:30,180
+And if we look back for kind of a normal year for a bank 2015 Europe point 0 6 is actually 10 times
+
+101
+00:08:30,180 --> 00:08:30,980
+as much.
+
+102
+00:08:31,140 --> 00:08:37,950
+As far as this distribution shows the extremes out here is quite an outlier and we'll go ahead and explore
+
+103
+00:08:37,950 --> 00:08:41,130
+what actually happened to Citigroup during this year.
+
+104
+00:08:41,130 --> 00:08:47,610
+But this is kind of an indication here of the financial crisis that the stock went through.
+
+105
+00:08:47,690 --> 00:08:48,150
+All right.
+
+106
+00:08:48,360 --> 00:08:52,430
+So we're gonna do some more visualizations and a lot of this project projects actually focused on visualisations
+
+107
+00:08:52,800 --> 00:08:56,790
+and you can feel free to use any of your preferred visualization libraries in order to recreate the
+
+108
+00:08:56,790 --> 00:08:58,300
+plots described below.
+
+109
+00:08:58,350 --> 00:09:02,940
+You're going to be able to do them actually with either see more lib plotline and cufflinks or even
+
+110
+00:09:02,940 --> 00:09:06,840
+just panderers so you can go ahead and choose whatever methods you like.
+
+111
+00:09:06,840 --> 00:09:10,710
+I'm going to go out and show you a couple of ways to do each plot and we'll actually show you how to
+
+112
+00:09:10,710 --> 00:09:14,220
+use Paulian cufflinks in order to make these plots well.
+
+113
+00:09:14,370 --> 00:09:19,500
+All right so after running those imports we want to go out and do is create a line plot shows in close
+
+114
+00:09:19,500 --> 00:09:22,990
+price for each bank or the entire index of time.
+
+115
+00:09:23,130 --> 00:09:27,480
+And there was a couple of hints here to either try using a for loop or use the cross section method
+
+116
+00:09:27,480 --> 00:09:29,520
+to get a cross-section of the data.
+
+117
+00:09:29,640 --> 00:09:32,520
+And here we can kind of see both methods at play.
+
+118
+00:09:32,520 --> 00:09:35,110
+Let's go ahead and show the for loop method first.
+
+119
+00:09:35,400 --> 00:09:41,220
+And hopefully here it's clear now using seeing Citigroup as seeing green this huge crash in 2008 has
+
+120
+00:09:41,520 --> 00:09:46,970
+had to do as far as their standard deviation being quite large for that year.
+
+121
+00:09:47,490 --> 00:09:49,960
+But anyway it's going go back to the for loop.
+
+122
+00:09:50,400 --> 00:09:57,540
+I'm going to go and say for a tick in ticker's which remember is that list of stock tickers call bank
+
+123
+00:09:57,540 --> 00:10:07,170
+stocks tick closing price and then just go ahead and plot this out and I'm going to plot this out I'm
+
+124
+00:10:07,170 --> 00:10:10,720
+going to specify that the label is equal to tick.
+
+125
+00:10:10,940 --> 00:10:13,760
+Now we know what line is which as far as colors go.
+
+126
+00:10:13,860 --> 00:10:19,930
+And then I also going to specify Fig's size to be stretched out a bit just so we can kind of get this
+
+127
+00:10:20,760 --> 00:10:22,940
+same visualization we have here.
+
+128
+00:10:22,980 --> 00:10:31,040
+And then finally I'll call t legend so we can see the legend and if I run that I get the same plot.
+
+129
+00:10:31,050 --> 00:10:37,800
+It looks something like this so we can clearly see that Citigroup just really crashed after 2008 the
+
+130
+00:10:38,310 --> 00:10:39,360
+great recession.
+
+131
+00:10:39,480 --> 00:10:44,820
+And what's interesting as well is this Goldman Sachs red line which kind of like dips and then bounces
+
+132
+00:10:44,820 --> 00:10:47,550
+back up quite quickly after the recession.
+
+133
+00:10:47,750 --> 00:10:52,020
+And you have to zoom in further on to see the other banks and see how they perform.
+
+134
+00:10:52,200 --> 00:10:58,470
+But relatively speaking it wasn't nearly as much the same effect as the other stocks let's go ahead
+
+135
+00:10:58,500 --> 00:11:08,060
+and show you how to do this we have cross section could have also said bank stocks stop access with
+
+136
+00:11:08,130 --> 00:11:20,790
+key equal to close access equal to ones and we're looking at the columns say level is stock info.
+
+137
+00:11:20,820 --> 00:11:22,460
+And if we just take a look at that.
+
+138
+00:11:22,650 --> 00:11:25,600
+This is basically all the closing prices for the stocks.
+
+139
+00:11:25,620 --> 00:11:30,710
+And then what we have to do there is just call plot and you get the same plot.
+
+140
+00:11:30,930 --> 00:11:35,490
+So instead of doing a for loop you can just do this all in one line using a cross section.
+
+141
+00:11:35,580 --> 00:11:40,260
+And again you can change the figure size and do any other map plot loop commands you want on that plot
+
+142
+00:11:40,260 --> 00:11:41,370
+.
+
+143
+00:11:41,370 --> 00:11:47,160
+Finally let's go ahead and show the plot the way to do this which is essentially just this same line
+
+144
+00:11:47,760 --> 00:11:49,560
+which creates the data frame.
+
+145
+00:11:49,950 --> 00:11:57,090
+But then you call I plot off of it and cufflinks will now allow you to create this very nice looking
+
+146
+00:11:57,090 --> 00:12:01,940
+plot where you can visualize things and actually see the values and kind of play around with it.
+
+147
+00:12:01,950 --> 00:12:06,990
+So if you actually want to kind of zoom in on the non Citigroup or Goldman Sachs stocks you can go out
+
+148
+00:12:06,990 --> 00:12:12,240
+and do that by just grabbing a cross section and then checking out the dips so you can see the dip here
+
+149
+00:12:12,390 --> 00:12:18,810
+during the financial crisis as well as some weird behavior during things like stock splits such as this
+
+150
+00:12:18,810 --> 00:12:20,820
+one in May.
+
+151
+00:12:20,820 --> 00:12:21,290
+All right.
+
+152
+00:12:21,450 --> 00:12:25,860
+So this makes it a lot of fun to play around of the data and kind of explore the stock prices during
+
+153
+00:12:25,860 --> 00:12:27,340
+the financial crisis.
+
+154
+00:12:27,440 --> 00:12:31,300
+We're going to go ahead and do is move along to moving averages.
+
+155
+00:12:31,590 --> 00:12:35,960
+And we're going to analyze the moving averages for the stocks during the year 2008.
+
+156
+00:12:36,000 --> 00:12:40,650
+So the first thing we need to do is plot the rolling 30 day average against the closing price for Bank
+
+157
+00:12:40,650 --> 00:12:44,330
+of America stock for the year 2008.
+
+158
+00:12:44,340 --> 00:12:46,560
+Let's go ahead and show how we can do this.
+
+159
+00:12:46,590 --> 00:12:53,170
+I'm going to say B A C and check out the head of B A C number.
+
+160
+00:12:53,180 --> 00:12:56,570
+That was my very first original data frame for Bank of America.
+
+161
+00:12:56,580 --> 00:13:02,070
+Before we actually put it into bank underscore stocks and then going to grab the close call them off
+
+162
+00:13:02,070 --> 00:13:10,590
+of that and I'm going to use the I-X method to go ahead and slice the dates I want and I want 2008 January
+
+163
+00:13:10,590 --> 00:13:14,430
+1st all the way to 2009
+
+164
+00:13:16,890 --> 00:13:18,420
+January 1st.
+
+165
+00:13:18,480 --> 00:13:19,800
+So a whole year.
+
+166
+00:13:20,310 --> 00:13:24,710
+And then what we want to do is use the rolling method.
+
+167
+00:13:25,920 --> 00:13:35,220
+So Panas has the ability to give you a rolling method for a moving average and then we can say mean
+
+168
+00:13:37,620 --> 00:13:38,220
+as our method.
+
+169
+00:13:38,220 --> 00:13:45,330
+And then we can just go ahead and plot this and we can actually plot this with a label so we can show
+
+170
+00:13:46,530 --> 00:13:47,240
+what we're looking at.
+
+171
+00:13:47,240 --> 00:13:55,410
+So we'll go in and say label this is a 30 day moving average as a label and the next thing we're gonna
+
+172
+00:13:55,410 --> 00:14:03,180
+do is we're just going to plot the same thing see close but in this case all plotted against the stock
+
+173
+00:14:03,180 --> 00:14:04,520
+price.
+
+174
+00:14:04,590 --> 00:14:16,600
+So say that plot and this label will be BAMC close and then we'll call PLDT that legend.
+
+175
+00:14:17,790 --> 00:14:21,900
+So if we just run that we get a plot that looks like this and we can go ahead and stretch this out if
+
+176
+00:14:21,900 --> 00:14:29,310
+we want to by saying Piazzi figure big size and we can state this to be something a little nicer like
+
+177
+00:14:29,600 --> 00:14:35,700
+I told before it's kind of a stretch it out and there is your 30 day moving average against the actual
+
+178
+00:14:35,700 --> 00:14:36,960
+closing price.
+
+179
+00:14:36,960 --> 00:14:41,620
+This allows you to kind of see the general trend of the stock as it goes along.
+
+180
+00:14:41,670 --> 00:14:47,010
+And you can change this window to be the weekly moving average or 60 day moving average whatever you
+
+181
+00:14:47,010 --> 00:14:47,740
+want.
+
+182
+00:14:48,150 --> 00:14:52,860
+All right the next thing you want to do is create a heat map of the correlation between these stocks
+
+183
+00:14:52,950 --> 00:14:54,660
+closing prices.
+
+184
+00:14:54,690 --> 00:14:56,520
+Let's go ahead and show you how we can do that.
+
+185
+00:14:56,550 --> 00:15:04,710
+You can call Asinus the heat map and now we want to get a correlation of the stock Issing closing price
+
+186
+00:15:04,710 --> 00:15:04,800
+.
+
+187
+00:15:04,800 --> 00:15:09,580
+Let's go ahead and just hash tag that out and actually build out that data frame first.
+
+188
+00:15:09,990 --> 00:15:12,120
+It's going to be very similar to what you've been doing before.
+
+189
+00:15:12,210 --> 00:15:21,230
+We'll go out and grab the cross section of the closing prices by saying he close on X equals 1.
+
+190
+00:15:21,540 --> 00:15:23,730
+The level is stock info
+
+191
+00:15:27,500 --> 00:15:29,440
+and if we just check that out.
+
+192
+00:15:29,820 --> 00:15:33,090
+That's this just the closing prices for the stocks.
+
+193
+00:15:33,090 --> 00:15:39,240
+And if I say c o r r that gives me the correlation.
+
+194
+00:15:39,240 --> 00:15:43,430
+And now I have something in a matrix form that I can call into heat map.
+
+195
+00:15:43,730 --> 00:15:51,450
+So I'm going to go ahead and unhatched out close that and say heat map here and check out my heat map
+
+196
+00:15:51,450 --> 00:15:52,070
+.
+
+197
+00:15:52,470 --> 00:16:00,320
+And now I have my heat map and if I want the actual annotations I can just say and it equals true and
+
+198
+00:16:00,330 --> 00:16:05,310
+then we'll go ahead and put in the annotations here and here we can see the correlation between the
+
+199
+00:16:05,310 --> 00:16:12,630
+closing prices of the stocks in something we can optionally do as well as use cluster maps to actually
+
+200
+00:16:12,630 --> 00:16:17,550
+cluster these correlations together maybe helpful make it a little more clear as to what's going on
+
+201
+00:16:17,570 --> 00:16:17,820
+.
+
+202
+00:16:18,060 --> 00:16:24,660
+So in sort of heat map all you have to do is type in cluster map and you run this you should get a lot
+
+203
+00:16:24,660 --> 00:16:26,080
+that looks something like this.
+
+204
+00:16:26,280 --> 00:16:34,920
+So it looks like seaborne tried to group together Citigroup Morgan Stanley and Bank of America and their
+
+205
+00:16:34,920 --> 00:16:39,580
+correlation together into kind of one group as well as gold.
+
+206
+00:16:39,600 --> 00:16:45,030
+Goldman Sachs J.P. Morgan and Wells Fargo kind of into another group is having some sort of correlation
+
+207
+00:16:45,030 --> 00:16:46,400
+to each other.
+
+208
+00:16:46,410 --> 00:16:46,990
+All right.
+
+209
+00:16:47,220 --> 00:16:51,060
+You can kind of check out which plot are which stocks are the most correlate or if each other.
+
+210
+00:16:51,060 --> 00:17:00,750
+Looks like it's JPMorgan and Wells Fargo as well as Morgan Stanley and Bank of America.
+
+211
+00:17:00,750 --> 00:17:01,400
+OK.
+
+212
+00:17:01,770 --> 00:17:04,490
+So that was it for the financial project.
+
+213
+00:17:04,500 --> 00:17:09,090
+There's a part two optional that will show in part three of the solutions lecture and that has more
+
+214
+00:17:09,090 --> 00:17:15,240
+to do if I plot and some of the special capabilities of cufflinks but due to its heavy reliance on cufflinks
+
+215
+00:17:15,270 --> 00:17:19,740
+it's kind of an optional thing that you can kind of explore on your own in case some of that functionality
+
+216
+00:17:19,740 --> 00:17:21,420
+is broken in the future.
+
+217
+00:17:21,420 --> 00:17:22,860
+But I hope you enjoy this project.
+
+218
+00:17:22,860 --> 00:17:29,280
+It was meant to be extremely challenging and difficult but that's kind of by nature of stock and financial
+
+219
+00:17:29,280 --> 00:17:30,060
+analysis.
+
+220
+00:17:30,180 --> 00:17:33,360
+The kind of thing you'll encounter if this is something you're interested in.
+
+221
+00:17:33,570 --> 00:17:38,010
+So a lot of these things are quite tricky and hard but hopefully you can see that what you feel really
+
+222
+00:17:38,010 --> 00:17:43,290
+really comfortable of pandas and seaborne is these things become a lot easier than if you had to do
+
+223
+00:17:43,290 --> 00:17:48,660
+them for instance in Excel or in another programming language for a lot of these answers with just a
+
+224
+00:17:48,660 --> 00:17:51,220
+few lines of code or even just one line of code.
+
+225
+00:17:51,280 --> 00:17:56,640
+And what's really cool is the fact you can make something like this in one line of code so you can definitely
+
+226
+00:17:56,640 --> 00:18:01,730
+impress your colleagues or your friends by showing them your own financial projects analysis.
+
+227
+00:18:01,770 --> 00:18:02,300
+OK.
+
+228
+00:18:02,520 --> 00:18:03,860
+Hope you enjoyed the project.
+
+229
+00:18:03,900 --> 00:18:08,510
+Coming up in part 3 we'll just go over the optional section of these solutions.
+
+230
+00:18:08,730 --> 00:18:10,680
+Thanks everyone and I'll see you at the next lecture

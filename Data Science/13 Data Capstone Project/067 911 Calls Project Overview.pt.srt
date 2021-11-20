@@ -1,0 +1,127 @@
+1
+00:00:05,010 --> 00:00:09,930
+Olá a todos e seja bem vindo à conferência de visão geral do projeto de dados e
+
+2
+00:00:09,930 --> 00:00:14,300
+esta palestra, vamos sobre o novo livro Trinta e nove em um chamado projeto capstone.
+
+3
+00:00:14,310 --> 00:00:17,580
+Vamos em frente e salte para o caderno Jupiter para começar.
+
+4
+00:00:17,580 --> 00:00:22,920
+Tudo bem, então aqui estou no notebook, este notebook está localizado na pasta de projetos de dados.
+
+5
+00:00:23,400 --> 00:00:28,840
+E para este projeto de capstone, vamos analisar alguns dados de chamadas 911 da Kaggle dot com.
+
+6
+00:00:29,000 --> 00:00:32,600
+E se você entrar e clicar neste link, irá levá-lo para a origem desse conjunto de dados aqui.
+
+7
+00:00:32,600 --> 00:00:37,190
+Kaggle realmente já foi baixado como um arquivo CAC para você, então, ter que baixar qualquer coisa.
+
+8
+00:00:37,360 --> 00:00:42,780
+aqui em conjuntos de dados o leva a este link e é basicamente um lugar onde você pode postar conjuntos de dados.
+
+9
+00:00:42,780 --> 00:00:47,460
+Mas, assim como uma visão geral rápida, de onde esses dados vêm vem da Kaggle dot com e
+
+10
+00:00:47,460 --> 00:00:48,570
+Kaggle se você clicar
+
+11
+00:00:48,570 --> 00:00:53,010
+Há também um aspecto de competição de aprendizado de máquina para este site que tocaremos quando falarmos
+
+12
+00:00:53,010 --> 00:00:55,420
+sobre a seção de aprendizado de máquina deste curso.
+
+13
+00:00:55,530 --> 00:01:00,050
+Mas, por enquanto, você pode pensar nisso como um lugar onde as pessoas podem publicar conjuntos de dados.
+
+14
+00:01:00,060 --> 00:01:07,170
+Tudo bem, então essas chamadas do 911 vêm do condado de Montgomery, na Pensilvânia, e eles contêm os seguintes campos, a
+
+15
+00:01:07,170 --> 00:01:13,380
+latitude de longitude de onde a chamada ocorreu uma descrição da chamada de emergência, o título do código
+
+16
+00:01:13,560 --> 00:01:15,210
+postal, um carimbo de horário.
+
+17
+00:01:15,210 --> 00:01:18,510
+Mas note que é uma string não um objeto de data atual.
+
+18
+00:01:18,540 --> 00:01:22,920
+E, em seguida, um município tem uma seqüência de caracteres e uma seqüência de endereço e, então, a última coluna E.
+
+19
+00:01:23,010 --> 00:01:25,080
+É apenas uma variável simbólica, é sempre uma.
+
+20
+00:01:25,140 --> 00:01:29,850
+Então, você pode ignorar completamente essa coluna completamente e então você vai acompanhar esse notebook e
+
+21
+00:01:29,880 --> 00:01:33,910
+tentar completar as instruções do melhor jeito possível e você sempre pode ser pós-agudo.
+
+22
+00:01:33,930 --> 00:01:38,520
+solução ou a uma conferência de vídeo que surgirá em seguida, você vai apenas ao longo da importação
+
+23
+00:01:38,520 --> 00:01:44,400
+que os dados obtêm tudo configurado, explore os dados um pouco através de algumas perguntas crie novos recursos a partir dos dados faça
+
+24
+00:01:44,400 --> 00:01:50,280
+um pouco de visualizações de gráficos de barras fazer algumas visualizações lineares e, em seguida, você também criará alguns mapas de calor.
+
+25
+00:01:50,340 --> 00:01:54,820
+Se você ficar preso ou você pode realmente apenas fazer referência a um livro de notas de
+
+26
+00:01:54,840 --> 00:01:55,620
+Tudo bem.
+
+27
+00:01:55,620 --> 00:01:57,240
+É para esta palestra.
+
+28
+00:01:57,240 --> 00:01:58,980
+Boa sorte no projeto capstone.
+
+29
+00:01:58,980 --> 00:01:59,820
+Espero que você goste.
+
+30
+00:01:59,820 --> 00:02:00,880
+É bastante interessante.
+
+31
+00:02:01,020 --> 00:02:04,740
+E eu vou ver você na próxima palestra onde passamos as soluções passo a passo.
+
+32
+00:02:04,740 --> 00:02:06,620
+Obrigado a todos e eu vou ver você na próxima palestra

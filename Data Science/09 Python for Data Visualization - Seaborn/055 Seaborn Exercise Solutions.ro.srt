@@ -1,0 +1,399 @@
+1
+00:00:05,340 --> 00:00:10,050
+Bună ziua tuturor și vă urez bun venit la cursul de exerciții de la Seaborn care le-a ținut această prelegere.
+
+2
+00:00:10,050 --> 00:00:12,990
+Vom trece peste soluțiile pentru exercițiile maritime.
+
+3
+00:00:12,990 --> 00:00:16,320
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+4
+00:00:16,320 --> 00:00:22,170
+Bine aici, eu sunt la notebook-ul Jupiter avem datele și încărcați-l și vom merge mai departe
+
+5
+00:00:22,170 --> 00:00:26,550
+și să sară la primul complot pe care dorim să-l replicăm.
+
+6
+00:00:26,550 --> 00:00:31,860
+Privind cu atenție la acest complot, sperăm că puteți spune că acesta este un complot de distribuție
+
+7
+00:00:31,860 --> 00:00:37,380
+și este de fapt complotul comun pentru că arătați două distribuții unul peste celălalt și apoi ați fi
+
+8
+00:00:37,380 --> 00:00:42,690
+putut citi acest lucru și ați văzut că este echitabil față de vârstă din setul de date.
+
+9
+00:00:42,690 --> 00:00:45,210
+Să mergem mai departe și să vă arătăm cum putem rula acest lucru.
+
+10
+00:00:45,230 --> 00:00:47,430
+Vom face din nou aceste linii.
+
+11
+00:00:47,430 --> 00:00:53,990
+Deci, de fapt, import toate lucrurile în mod corect și apoi voi merge mai departe și tastați codul meu.
+
+12
+00:00:54,060 --> 00:01:00,270
+Deci, acesta este un complot comun în cazul în care aveți echitatea
+
+13
+00:01:04,020 --> 00:01:14,910
+și pe axa y ai vârsta și setul nostru de date este doar datele Titanic și care va replica acest complot
+
+14
+00:01:14,910 --> 00:01:16,030
+pentru tine.
+
+15
+00:01:16,110 --> 00:01:18,430
+Din nou, este doar un complot comun.
+
+16
+00:01:18,720 --> 00:01:19,480
+In regula.
+
+17
+00:01:19,530 --> 00:01:22,490
+Urmează următorul plan de distribuție.
+
+18
+00:01:22,710 --> 00:01:29,460
+Și acesta este un astfel de parcele, astfel încât să puteți vedea doar Asinus acest complot.
+
+19
+00:01:30,630 --> 00:01:36,090
+Titanic și apoi treceți și coloana dorită și dacă aruncăm o privire aici în partea de jos, aceasta este
+
+20
+00:01:36,090 --> 00:01:36,880
+coloana Fair.
+
+21
+00:01:36,900 --> 00:01:39,270
+Deci distribuția coloanei Fair.
+
+22
+00:01:39,450 --> 00:01:44,910
+Dați-mi voie să fac acest lucru doar ca o linie nouă.
+
+23
+00:01:45,160 --> 00:01:45,710
+In regula.
+
+24
+00:01:45,720 --> 00:01:50,430
+Deci, asta este ceea ce obții atunci când vezi cât de repede se întâmplă acest lucru pe care vrei să-l faci
+
+25
+00:01:50,430 --> 00:01:52,740
+pentru a replica acest complot este să elimini acest Cady's.
+
+26
+00:01:52,750 --> 00:02:00,760
+Aș vrea să plec și să spun un fals rău aici și acum ne apropiem puțin.
+
+27
+00:02:00,810 --> 00:02:05,050
+Alt lucru pe care trebuie să-l observăm aici este că culoarea este roșie.
+
+28
+00:02:05,270 --> 00:02:11,280
+Deci, puteți specifica, de asemenea, că culoarea este egală cu roșu, deși așa cum am menționat instrucțiunile nu trebuie să
+
+29
+00:02:11,280 --> 00:02:14,010
+vă faceți griji prea mult despre culorile reale.
+
+30
+00:02:14,280 --> 00:02:17,510
+Și apoi, în târg, există și mai puține curbe.
+
+31
+00:02:17,670 --> 00:02:23,310
+Deci, după ce ați experimentat cu numerele unui număr de bin, puteți să descoperiți speranța că în jur de
+
+32
+00:02:23,820 --> 00:02:24,820
+30 de containere.
+
+33
+00:02:24,990 --> 00:02:27,020
+Și acesta este codul real al complotului.
+
+34
+00:02:27,130 --> 00:02:28,920
+Parcela de distribuție.
+
+35
+00:02:28,980 --> 00:02:35,730
+În acest caz, acest complot din Titanic este egal cu falsul și apoi unele informații suplimentare citite în cutii.
+
+36
+00:02:36,030 --> 00:02:39,830
+Dacă ați reușit să obțineți roșu sau argumentul binului, nu vă faceți griji în legătură cu asta.
+
+37
+00:02:39,840 --> 00:02:45,090
+Singurul lucru care îmi este îngrijorat de recunoașterea ta este că acesta a fost un complot
+
+38
+00:02:45,180 --> 00:02:47,400
+cu falsul Eagles pe coloana Fair.
+
+39
+00:02:47,400 --> 00:02:49,290
+Mergeți la următoarea complot.
+
+40
+00:02:49,290 --> 00:02:55,860
+Acesta este în mod clar un complot box și se pare că clasa este pe axa x și vârsta este pe axa y.
+
+41
+00:02:56,190 --> 00:02:58,440
+Să mergem mai departe și să verificăm asta.
+
+42
+00:02:58,880 --> 00:03:08,910
+Pentru a face acest lucru tot ce trebuie să spuneți este ca o cutie Sinistar ca și în clasă și apoi treceți în
+
+43
+00:03:09,030 --> 00:03:15,320
+vârstă pentru y și apoi datele sunt egale cu setul de date Titanic.
+
+44
+00:03:15,360 --> 00:03:16,670
+Putem merge mai departe și să vedem asta.
+
+45
+00:03:16,770 --> 00:03:21,750
+Și un ultim lucru care nu contează dacă nu ați reușit sau nu, dar schema de culoare reală este schema
+
+46
+00:03:21,780 --> 00:03:22,900
+de culori a curcubeului.
+
+47
+00:03:22,920 --> 00:03:27,900
+Deci, putem specifica palete este egal cu Rainbow.
+
+48
+00:03:27,900 --> 00:03:31,830
+Și, din nou, nu vă faceți griji dacă am reușit să obținem culoarea potrivită. Vreau doar să recunoașteți
+
+49
+00:03:31,830 --> 00:03:36,540
+că este vorba despre un complot din cutie și apoi să fie capabil să citească X față de Y și să o completeze.
+
+50
+00:03:36,810 --> 00:03:41,580
+Trecerea la următorul sună puțin mai complicat, deoarece este vorba despre complotul în care
+
+51
+00:03:41,580 --> 00:03:51,540
+trebuie să faci este să spui cât de repede se compară parcela și de fapt este tot ceea ce este la fel ca și clasa versus vârsta, ca să
+
+52
+00:03:51,630 --> 00:03:53,780
+poți veni chiar aici .
+
+53
+00:03:53,880 --> 00:04:01,030
+Copiați toate acestea, mergeți și copiați totul, inclusiv paleta și pur și simplu aveți acest complot.
+
+54
+00:04:01,040 --> 00:04:04,970
+Aceasta este versiunea plotului Suaram a complotului pe care tocmai l-am arătat.
+
+55
+00:04:05,100 --> 00:04:07,960
+Și această schemă de culori, în cazul în care esti curios de ceea ce a fost.
+
+56
+00:04:08,070 --> 00:04:14,310
+Acesta este de fapt setul de scheme de culori, dar din nou nu vă faceți griji dacă nu reușim să obțineți culoarea părea
+
+57
+00:04:14,310 --> 00:04:14,670
+corectă.
+
+58
+00:04:14,680 --> 00:04:19,890
+Asta nu contează cu adevărat ceea ce vreau să reușesc să obțin corect este x y și sursa
+
+59
+00:04:19,900 --> 00:04:21,080
+de date pentru plot.
+
+60
+00:04:21,540 --> 00:04:25,290
+Următoarea pe care vrem să o verificăm a fost acest complot.
+
+61
+00:04:25,290 --> 00:04:28,260
+Dar luați aminte că acest lucru spune că numărați aici.
+
+62
+00:04:28,270 --> 00:04:36,070
+Deci, este de fapt un counterplot și puteți crea un counterplot doar spunând S și S counterplot care trec coloana pe care doriți
+
+63
+00:04:36,120 --> 00:04:37,210
+să o numărați.
+
+64
+00:04:37,230 --> 00:04:46,530
+În acest caz, aruncăm o privire aici, vedeți coloana de sex în sursa noastră de date este cadrul de date Titanic și acesta este
+
+65
+00:04:46,530 --> 00:04:47,730
+complotul de acolo.
+
+66
+00:04:47,730 --> 00:04:52,830
+Schema de culori este schema originală de culoare pe care o avem aici.
+
+67
+00:04:52,830 --> 00:04:54,170
+Sună puțin mai înșelător.
+
+68
+00:04:54,450 --> 00:05:02,640
+Observați că avem valori între negativ 1 și odată ce trece de la această cartografiere război rece și cealaltă sugestie aici este că
+
+69
+00:05:02,640 --> 00:05:09,990
+puteți vedea chiar în partea de sus titlul este titanic punct corrc este în mod clar un complot de corelație
+
+70
+00:05:09,990 --> 00:05:12,780
+și dorim să folosim hartă pe acest.
+
+71
+00:05:12,780 --> 00:05:15,730
+Așa că vom merge mai departe și vom face asta.
+
+72
+00:05:15,870 --> 00:05:27,510
+Vom spune harta de căldură Asinus și un pasaj al miezului întunecat Titanic și putem de asemenea să spunem că harta la mare
+
+73
+00:05:27,510 --> 00:05:31,050
+este egală cu cea rece caldă.
+
+74
+00:05:31,050 --> 00:05:34,580
+Și asta va replica acel complot în notebook-ul de soluții.
+
+75
+00:05:34,590 --> 00:05:38,980
+Am adăugat, de asemenea, un titlu pe acest numit P. L ..
+
+76
+00:05:39,000 --> 00:05:44,670
+Titlul titanic a primit c r r r.
+
+77
+00:05:44,670 --> 00:05:45,540
+Închideți parantezele.
+
+78
+00:05:45,540 --> 00:05:49,590
+Și asta a fost doar pentru a vă oferi un indiciu pe măsură ce vă uitați la
+
+79
+00:05:49,590 --> 00:05:51,270
+cifră cu privire la informațiile de fapt.
+
+80
+00:05:51,270 --> 00:05:51,960
+In regula.
+
+81
+00:05:51,960 --> 00:05:56,210
+Să mergem mai departe și să mergem la ultimul complot, care este puțin complicat pentru că
+
+82
+00:05:56,210 --> 00:05:59,220
+acesta folosește sistemul Fassett se va face în două rânduri.
+
+83
+00:05:59,220 --> 00:06:01,520
+În primul rând, să aruncăm o privire la ceea ce facem de fapt.
+
+84
+00:06:01,680 --> 00:06:05,420
+Se pare că coloanele sunt sexul egal cu bărbații și sexul este egal cu femeia.
+
+85
+00:06:05,460 --> 00:06:15,210
+Așadar, vrem să creăm o rețea Fassett separată de organul sexului din coloană, adică date egale cu Titanic,
+
+86
+00:06:15,450 --> 00:06:18,950
+iar apelul este egal cu sexul.
+
+87
+00:06:19,170 --> 00:06:24,840
+Și apoi voi ieși și voi stabili acel egal cu g, așa cum am făcut-o în exemplele anterioare și apoi am să
+
+88
+00:06:24,840 --> 00:06:27,780
+dau o hartă în care arată că este o histogramă.
+
+89
+00:06:27,960 --> 00:06:29,330
+Există modalități diferite de a face acest lucru.
+
+90
+00:06:29,340 --> 00:06:34,590
+Dar cea mai ușoară cale este de a spune coaja cea mai înaltă și apoi argumentele vor să facă o
+
+91
+00:06:34,590 --> 00:06:35,960
+histogramă a vremii sale.
+
+92
+00:06:36,300 --> 00:06:41,320
+Deci, ați fi putut face ceea ce ați putea face, de asemenea, să obțineți un complot asemănător.
+
+93
+00:06:41,430 --> 00:06:47,090
+Exact același lucru este doar complot acest fel a arătat, de asemenea, o K în partea de sus.
+
+94
+00:06:47,600 --> 00:06:48,190
+O.K.
+
+95
+00:06:48,540 --> 00:06:53,730
+Sper că ați găsit acest lucru interesant și sper că ați găsit cu adevărat puterea adevărată a seabornei pentru a
+
+96
+00:06:53,730 --> 00:06:58,800
+crea vizualizări frumoase și doar foarte puține linii de cod, atâta timp cât aveți datele încorporate configurate corect.
+
+97
+00:06:59,610 --> 00:07:00,360
+O.K.
+
+98
+00:07:00,360 --> 00:07:04,530
+Continuați și postați întrebările pe care le aveți la forumurile Q &amp; A și verificați cartea nouă Juber
+
+99
+00:07:04,530 --> 00:07:06,270
+Dacă doriți mai mult cod de referință.
+
+100
+00:07:06,270 --> 00:07:08,180
+Multumesc tuturor si te voi vedea la urmatoarea conferinta

@@ -1,0 +1,215 @@
+1
+00:00:05,340 --> 00:00:11,400
+Hello everyone and welcome to the Python crash course exercise overview lecture in this lecture we get
+
+2
+00:00:11,400 --> 00:00:15,560
+a brief overview of the exercise notebook and how to approach the exercise.
+
+3
+00:00:15,570 --> 00:00:18,250
+Let me go ahead and show you where you can find the exercise notebook.
+
+4
+00:00:18,530 --> 00:00:25,490
+OK here I am at your repository under the python crash course folder you'll see three notebooks.
+
+5
+00:00:25,510 --> 00:00:30,760
+The Python crash course which contains the notes we just went over in the four part lecture series.
+
+6
+00:00:30,930 --> 00:00:35,380
+Then you have Python crash course exercises IPY and B.
+
+7
+00:00:35,550 --> 00:00:39,690
+This is the notebook file that we're going to be using for the exercises and you'll see the solution
+
+8
+00:00:39,780 --> 00:00:40,280
+notebook.
+
+9
+00:00:40,290 --> 00:00:46,580
+Here you go in and click on the exercises notebook you should see a notebook that looks like this.
+
+10
+00:00:46,590 --> 00:00:50,850
+And again this is just an optional exercise test your understanding of Python basics.
+
+11
+00:00:50,850 --> 00:00:55,920
+If you find this exercise extremely challenging then you probably aren't ready for the rest of the Course
+
+12
+00:00:55,940 --> 00:00:58,700
+yet and don't have enough programming experience to continue.
+
+13
+00:00:58,900 --> 00:01:03,300
+And I would suggest you actually take another course more geared towards complete beginners such as
+
+14
+00:01:03,300 --> 00:01:06,030
+the complete python boot camp.
+
+15
+00:01:06,160 --> 00:01:10,230
+However these exercises should be pretty simple and straightforward.
+
+16
+00:01:10,230 --> 00:01:14,350
+For instance this very first one is asking you what is 7 to the power of.
+
+17
+00:01:14,460 --> 00:01:20,790
+So hopefully you can see the answer here as output you would come to this cell or whatever ID you prefer
+
+18
+00:01:20,790 --> 00:01:23,900
+to use and use Python to answer this question.
+
+19
+00:01:23,910 --> 00:01:29,340
+So you just have to remember well how do you do an exponential power in Python.
+
+20
+00:01:29,340 --> 00:01:34,110
+Will keep asking you other questions such as split the string into a list so hopefully remember how
+
+21
+00:01:34,110 --> 00:01:38,430
+to split a string with some particular method into a list and so on.
+
+22
+00:01:38,430 --> 00:01:39,570
+So just go ahead.
+
+23
+00:01:39,580 --> 00:01:42,030
+There's output examples of what you should be getting.
+
+24
+00:01:42,210 --> 00:01:45,540
+Then you have a question asking what is the main difference between a tuple and a list.
+
+25
+00:01:45,540 --> 00:01:49,050
+This way you can just answer out loud aren't the writing I think down there's no code for this just
+
+26
+00:01:49,050 --> 00:01:50,650
+asking what differences.
+
+27
+00:01:50,850 --> 00:01:55,290
+Next I want you to create a function that grabs email Web site domain from a string and a form user
+
+28
+00:01:55,290 --> 00:01:56,850
+at domain dot com.
+
+29
+00:01:56,850 --> 00:02:02,490
+So if you have a function call it something like domain gets you should be able to pass in a string
+
+30
+00:02:02,550 --> 00:02:06,150
+of this format and just grab this domain dot com.
+
+31
+00:02:06,180 --> 00:02:08,640
+So go in and create some sort of function.
+
+32
+00:02:08,700 --> 00:02:14,540
+You can go out and call it domain get that takes in a string an e-mail address and returns the domain
+
+33
+00:02:14,540 --> 00:02:18,850
+got from the Web site that that e-mail is host to that.
+
+34
+00:02:18,930 --> 00:02:23,910
+Then you'll go ahead and create a basic function that returns true if the word dog is contained in the
+
+35
+00:02:23,910 --> 00:02:25,050
+input stream.
+
+36
+00:02:25,200 --> 00:02:29,250
+And I don't want you to have to worry about edge cases like punctuation being attached to the word dog
+
+37
+00:02:29,670 --> 00:02:31,620
+but do account for capitalization.
+
+38
+00:02:31,620 --> 00:02:35,990
+Again we're not dealing with every single edge case that you may find.
+
+39
+00:02:36,000 --> 00:02:42,690
+Just the basic idea of searching a string for a word then we want you to create a function that can
+
+40
+00:02:42,830 --> 00:02:46,260
+how that counts the number of times the word dog occurs in a string.
+
+41
+00:02:46,260 --> 00:02:48,220
+And again you can ignore edge cases.
+
+42
+00:02:48,390 --> 00:02:52,290
+So for instance the string this dog runs faster than the other dog dude.
+
+43
+00:02:52,410 --> 00:02:58,840
+DAGA Pierce twice so count dog returns to go to make a function called Count dogs do that.
+
+44
+00:02:58,930 --> 00:03:03,510
+They don't want you to use lambda expressions and the Filcher function to filter out words from a list
+
+45
+00:03:03,510 --> 00:03:05,080
+that don't start with the letter S.
+
+46
+00:03:05,100 --> 00:03:09,770
+So for example if you get a sequence of this list it should be filtered down to this list.
+
+47
+00:03:09,810 --> 00:03:11,080
+Soup and salad.
+
+48
+00:03:11,670 --> 00:03:13,230
+And here's a final problem.
+
+49
+00:03:13,260 --> 00:03:17,700
+Now you can go ahead and read the description but basically you'll go ahead and fill out this function
+
+50
+00:03:17,820 --> 00:03:20,970
+in order to solve this little final problem here.
+
+51
+00:03:21,030 --> 00:03:27,090
+And this involves some if elefant else statements along with creating a function if you have any questions
+
+52
+00:03:27,090 --> 00:03:30,350
+feel free to post the Q&A forums and I'll be happy to help you out.
+
+53
+00:03:30,390 --> 00:03:31,120
+Thanks everyone.
+
+54
+00:03:31,170 --> 00:03:35,090
+And coming up next is a walkthrough of the solutions to this exercise

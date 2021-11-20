@@ -1,0 +1,779 @@
+1
+00:00:05,220 --> 00:00:07,080
+Cześć wszystkim i witajcie w panelach.
+
+2
+00:00:07,080 --> 00:00:12,900
+Wykładowca wizualizacji danych BILTON i tego wykładu przejdziemy przez własne wbudowane funkcje Panthera, które są faktycznie
+
+3
+00:00:13,230 --> 00:00:17,550
+zbudowane z tej fabuły na żywo, ale pozwalają na wywoływanie wizualizacji danych
+
+4
+00:00:17,610 --> 00:00:18,860
+bezpośrednio poza dane.
+
+5
+00:00:19,140 --> 00:00:22,160
+Przejdźmy dalej i przejdźmy do notatnika Jowisza.
+
+6
+00:00:22,170 --> 00:00:22,370
+W porządku.
+
+7
+00:00:22,370 --> 00:00:24,810
+Oto jestem na serwerze notebooków Jupiter.
+
+8
+00:00:24,810 --> 00:00:25,520
+Szybka notatka.
+
+9
+00:00:25,590 --> 00:00:30,170
+Powinieneś otwierać ten notatnik Jowisza pod moim kciukiem do wizualizacji danych.
+
+10
+00:00:30,180 --> 00:00:35,280
+Panel jest zbudowany w folderze danych, a powodem jest tutaj kilka plików cc o nazwie
+
+11
+00:00:35,290 --> 00:00:37,100
+def 1 2 i 3.
+
+12
+00:00:37,260 --> 00:00:41,350
+Widzisz też pliki V, z którymi będziemy pracować, aby faktycznie pokazać możliwości
+
+13
+00:00:41,370 --> 00:00:44,910
+pand wbudowanych w wizualizację danych, notatnik wykładu jest właśnie tutaj.
+
+14
+00:00:44,920 --> 00:00:49,050
+Panele panelowe zbudowane w wizualizacji danych, a następnie masz również ćwiczenie, które przejdzie
+
+15
+00:00:49,110 --> 00:00:49,760
+później.
+
+16
+00:00:49,830 --> 00:00:52,290
+Otwieram, że znasz tutaj książkę.
+
+17
+00:00:52,380 --> 00:00:54,440
+I idź dalej i zacznij.
+
+18
+00:00:54,450 --> 00:00:54,660
+W porządku.
+
+19
+00:00:54,660 --> 00:01:01,890
+Oto jestem w tym zeszycie i zamierzam wyjść i powiedzieć, że ważne PI i P zamierzają importować
+
+20
+00:01:02,010 --> 00:01:09,030
+pandy jako PD, a ja zamierzam również określić fabułę żyjącą w linii, więc widzę wizualizacje
+
+21
+00:01:09,030 --> 00:01:16,120
+danych wewnątrz rzeczywisty notatnik, a następnie pliki CACP, które zamierzamy przesłać, to te, które chcę powiedzieć.
+
+22
+00:01:16,200 --> 00:01:25,020
+PD odczyta pas C S V d, a jeśli dla DF 1, zamierzam również określić, że indeks będzie pierwszą kolumną
+
+23
+00:01:25,020 --> 00:01:26,820
+w indeksie 0.
+
+24
+00:01:26,820 --> 00:01:32,460
+Więc jeśli teraz spojrzę na ten, widzę, że indeks jest w rzeczywistości szeregiem czasowym i to będzie
+
+25
+00:01:32,460 --> 00:01:34,570
+ważne, kiedy faktycznie to wyobrazimy.
+
+26
+00:01:34,680 --> 00:01:43,530
+A potem dla indeksu niekończących się serii kończę i mówię, że PD czyta C S V, a następnie przechodzi i po prostu
+
+27
+00:01:43,530 --> 00:01:45,340
+przyjrzeć się dwóm powiedział.
+
+28
+00:01:45,420 --> 00:01:50,100
+Bardzo podobne z wyjątkiem tego są tylko dane odczytane i ma indeks sekwencyjny.
+
+29
+00:01:50,100 --> 00:01:50,740
+W porządku.
+
+30
+00:01:50,880 --> 00:01:55,940
+Pozwól, że przejdę dalej i pokażę ci krótki przykład tego, co możesz zrobić z tymi ramkami danych
+
+31
+00:01:55,940 --> 00:01:57,060
+w tych kolumnach.
+
+32
+00:01:57,060 --> 00:02:02,600
+Wyobraźmy sobie, że chcemy uzyskać histogram wszystkich wartości w kolumnie A dla DF 1.
+
+33
+00:02:03,300 --> 00:02:05,590
+No cóż, ludzie mogą to zrobić.
+
+34
+00:02:05,970 --> 00:02:13,440
+Możemy po prostu zadzwonić do EF 1, a następnie zadzwonić z tego i automatycznie zacznie tworzyć
+
+35
+00:02:13,440 --> 00:02:14,330
+histogram.
+
+36
+00:02:14,490 --> 00:02:18,960
+Zauważ, że to tak naprawdę wywołuje mapę na żywo pod maską i możesz zacząć
+
+37
+00:02:18,960 --> 00:02:24,670
+dodawać argumenty MAP plot lib, a nawet zobaczyć więcej argumentów stylu, takich jak liczba pojemników, które chcesz na tym histogramie.
+
+38
+00:02:25,020 --> 00:02:30,140
+OK, teraz należy zwrócić uwagę, że ten styl w rzeczywistości nie wygląda zbyt dobrze.
+
+39
+00:02:30,150 --> 00:02:31,380
+W mojej opinii.
+
+40
+00:02:31,380 --> 00:02:35,880
+Więc, co możesz zrobić, aby to naprawić, jeśli znajdziesz się na
+
+41
+00:02:36,270 --> 00:02:42,280
+szczycie lub naprawdę w dowolnym miejscu w notesie, idź naprzód i powiedz Importuj Seaborn jako asinus.
+
+42
+00:02:42,690 --> 00:02:48,080
+A raz to zaimportowane Jeśli zaczniesz ponownie uruchamiać te komórki, będzie to wyglądało na działkę morską.
+
+43
+00:02:48,090 --> 00:02:49,100
+Teraz spójrz trochę ładniej.
+
+44
+00:02:49,110 --> 00:02:50,330
+To jest coś, co lubię robić.
+
+45
+00:02:50,400 --> 00:02:55,810
+Możesz zobaczyć więcej w stylach, a te bez słuchawki będą wyglądać tak samo.
+
+46
+00:02:56,190 --> 00:03:01,140
+Pandy mają wbudowane kilka typów działek, a my zajmiemy się tylko krótko i pokażemy
+
+47
+00:03:01,200 --> 00:03:03,080
+przykłady tworzenia tych działek.
+
+48
+00:03:03,210 --> 00:03:09,360
+Prawie wszystkie wykresy można wykonać za pomocą polecenia poza ramką danych i zasadniczo można to zrobić za pomocą
+
+49
+00:03:09,360 --> 00:03:14,420
+dwóch metod, które można wywołać samą ramkę danych lub wywołać kolumnę po ramce danych.
+
+50
+00:03:14,430 --> 00:03:21,630
+Wejdźmy teraz i po prostu wypełnijmy teraz kolumnę i możecie wywoływać wątki, a następnie pod argumentem określonego rodzaju
+
+51
+00:03:21,630 --> 00:03:22,390
+fabuły.
+
+52
+00:03:22,530 --> 00:03:26,670
+I jest lista w twoim notesie, a my przejdziemy przez tę listę, a następnie określisz
+
+53
+00:03:26,670 --> 00:03:28,090
+słowo kluczowe tego rodzaju.
+
+54
+00:03:28,090 --> 00:03:31,180
+Więc jeśli chciałem histogramu, mógłbym go stworzyć w ten sposób.
+
+55
+00:03:31,440 --> 00:03:37,920
+A następnie możesz dodać argumenty histogramu, takie jak liczba żądanych pojemników.
+
+56
+00:03:37,920 --> 00:03:43,710
+Jest to jedna z metod tworzenia, na przykład, pokoju historii poza kolumną ramek danych o nazwie wykres punktowy,
+
+57
+00:03:43,920 --> 00:03:45,510
+a następnie rodzaj połączenia.
+
+58
+00:03:45,510 --> 00:03:51,380
+W porządku, w przeciwnym razie możesz wywołać fabułę za pomocą pand, zamiast określać rodzaj równy
+
+59
+00:03:51,690 --> 00:03:58,010
+syczonym, możesz wywołać hist bezpośrednio poza fabułą, abyś mógł powiedzieć, że jest to spisek, a potem to.
+
+60
+00:03:58,210 --> 00:04:00,110
+Spowoduje to również utworzenie fabuły.
+
+61
+00:04:00,120 --> 00:04:04,110
+Jest to metoda, której będziemy używać w pozostałej części tego wykładu, abyśmy mogli
+
+62
+00:04:04,110 --> 00:04:09,570
+pobrać całą ramkę danych lub kolumnę o nazwie dot plot, a następnie wywołać kropkę, niezależnie od rodzaju wykresu, jaki chcemy.
+
+63
+00:04:10,110 --> 00:04:13,730
+Przejdźmy dalej i przejrzyjmy wszystkie typy działek i sprawdźmy je.
+
+64
+00:04:14,370 --> 00:04:19,780
+A więc chodźmy dalej i pracujmy z tymi dwoma, które nie są seriami czasowymi.
+
+65
+00:04:19,780 --> 00:04:28,560
+Na przykład ma on zwykły indeks i jedną działkę, którą możesz zrobić, to wykres obszaru, dzięki czemu możesz
+
+66
+00:04:28,560 --> 00:04:30,700
+śmiało określić obszar wydruku.
+
+67
+00:04:30,990 --> 00:04:38,250
+Zasadniczo wystarczy pokazać działkę terenu, którą można również podać jako argument w tym
+
+68
+00:04:38,250 --> 00:04:39,190
+miejscu.
+
+69
+00:04:39,240 --> 00:04:46,680
+Jeśli chcesz więcej przejrzystości i powiedz Alfas równy 0. 4 i to pokazuje tutaj pewną przejrzystość, a
+
+70
+00:04:46,680 --> 00:04:52,470
+to właśnie pokazuje obszar wartości, które zasadniczo można uznać za zwykły wykres liniowy, z
+
+71
+00:04:52,470 --> 00:04:56,750
+wyjątkiem tego, że obszar pod nim został wypełniony jakimś kolorem.
+
+72
+00:04:57,150 --> 00:05:01,890
+W porządku, to działka terenowa i znowu bardzo łatwo można odwołać ramkę danych.
+
+73
+00:05:01,890 --> 00:05:08,700
+Przejdźmy dalej i spójrzmy na fabułę Barta, abyście mogli powiedzieć, że jesteście ramką danych na dwóch
+
+74
+00:05:09,150 --> 00:05:18,070
+działkach, a następnie na pasku i tak automatycznie tworzycie wykres słupkowy i to, co to robi, to po prostu bierze wartość indeksu
+
+75
+00:05:18,220 --> 00:05:19,630
+zasadniczo jako kategorię.
+
+76
+00:05:19,630 --> 00:05:22,830
+W takim przypadku twój indeks powinien być kategoryczny.
+
+77
+00:05:23,030 --> 00:05:26,830
+Nasza ramka danych jest rzeczywiście wystarczająco mała, więc ma to sens, jeśli przyjrzymy się ramce danych,
+
+78
+00:05:27,100 --> 00:05:29,560
+która ma tylko 0 lub 9, więc to działa.
+
+79
+00:05:29,560 --> 00:05:32,890
+Typowa ramka danych z indeksami sekwencyjnymi prawdopodobnie zechcesz to zrobić.
+
+80
+00:05:33,100 --> 00:05:38,980
+Ale jeśli jest to indeks jakościowy, to jako kategorię będziemy po prostu wyświetlać wartości dla każdej kolumny, a faktycznie można również
+
+81
+00:05:38,980 --> 00:05:43,360
+utworzyć tę wartość, aby była ułożona w stos przez przekazanie w stosie równym true, a otrzymasz
+
+82
+00:05:46,180 --> 00:05:47,530
+wykres, który wygląda tak.
+
+83
+00:05:47,530 --> 00:05:51,190
+Zasadniczo dokładnie to samo, z wyjątkiem tego, że układanie wartości.
+
+84
+00:05:51,190 --> 00:05:54,780
+Osobiście chciałbym polecić tę łatwość zobaczyć więcej i dla tego rodzaju działek.
+
+85
+00:05:54,910 --> 00:06:00,100
+Ale jeśli po prostu wykonujesz jakąś bardzo szybką analizę, coś takiego zadziała dla ciebie, po prostu
+
+86
+00:06:00,100 --> 00:06:01,480
+nazywając to bez pantałykiem.
+
+87
+00:06:01,630 --> 00:06:04,180
+Teraz nazywa się histogram.
+
+88
+00:06:04,180 --> 00:06:06,500
+Aby wyjaśnić, jak to wygląda ponownie.
+
+89
+00:06:06,530 --> 00:06:13,780
+Nazwijmy to powiedzą, że jeśli jest to spisek punktowy, to widzieliśmy to już wcześniej.
+
+90
+00:06:14,020 --> 00:06:15,040
+A oto nasz histogram.
+
+91
+00:06:15,040 --> 00:06:17,110
+Możesz określić liczbę potrzebnych pojemników.
+
+92
+00:06:17,300 --> 00:06:24,430
+Więc jeśli chcesz mieć większą liczbę pojemników, aby uzyskać nieco więcej klarowności, o ile działki Panthers idą
+
+93
+00:06:24,460 --> 00:06:30,640
+i robią rzeczy, które są wbudowane w histogramy Pandy, to prawdopodobnie używa się najbardziej.
+
+94
+00:06:30,640 --> 00:06:35,070
+Możesz także wykonywać wykresy liniowe, które są innym typem, które lubię używać w Pandurs.
+
+95
+00:06:35,230 --> 00:06:39,630
+Na przykład, jeśli sprawdzimy EF 1, pamiętaj o naszym indeksie szeregów czasowych.
+
+96
+00:06:39,790 --> 00:06:43,500
+Wyobraźmy sobie, że chcemy wykreślić dane z jednej z tych serii czasowych.
+
+97
+00:06:43,600 --> 00:06:47,590
+Możesz śmiało powiedzieć DF, a następnie linię wywoławczą.
+
+98
+00:06:47,590 --> 00:06:49,920
+To po prostu stworzy fabułę linii.
+
+99
+00:06:50,290 --> 00:06:54,550
+A dla wykresu liniowego musisz podać X i Y.
+
+100
+00:06:54,550 --> 00:07:03,400
+Tak więc w tym przypadku chcę, aby X był moim rzeczywistym indeksem, więc mogę powiedzieć, że jeśli jeden indeks i chcę, aby mój y był jedną z tych
+
+101
+00:07:03,400 --> 00:07:06,250
+kolumn, a ty przekazujesz kolumnę jako ciąg znaków.
+
+102
+00:07:06,370 --> 00:07:07,500
+Więc chcę przejść dalej.
+
+103
+00:07:07,540 --> 00:07:09,110
+Powiedzmy, że B.
+
+104
+00:07:09,940 --> 00:07:14,590
+A jeśli po prostu to uruchomię, otrzymam scenariusz, który wygląda na coś takiego.
+
+105
+00:07:14,600 --> 00:07:15,770
+Ogólnie tylko wykres liniowy.
+
+106
+00:07:15,790 --> 00:07:19,900
+Więc możesz sobie wyobrazić, czy to były informacje o zapasach i chciałeś je spisać w porównaniu do czasu, kiedy
+
+107
+00:07:19,900 --> 00:07:21,250
+możesz dostać coś, co wygląda tak.
+
+108
+00:07:21,520 --> 00:07:24,190
+I to wszystko jest zbudowane z tej fabuły lib.
+
+109
+00:07:24,250 --> 00:07:28,050
+Możesz rozpocząć dodawanie argumentów lib plotowania, takich jak żądany rozmiar.
+
+110
+00:07:28,250 --> 00:07:31,420
+Tak więc chcieć czegoś znacznie szerszego.
+
+111
+00:07:31,420 --> 00:07:33,000
+Możesz zrobić coś takiego.
+
+112
+00:07:33,130 --> 00:07:35,770
+Lub powiedzmy, że chcę dostosować linię za pomocą.
+
+113
+00:07:35,860 --> 00:07:39,610
+Cóż, możesz po prostu zrobić LW, tak jak widzieliśmy na temat Plaut na żywo.
+
+114
+00:07:39,740 --> 00:07:43,510
+Jest to linia z czymś nieco bardziej chudym, które możesz dodać w znacznikach.
+
+115
+00:07:43,510 --> 00:07:45,210
+Wszystkie te inne polecenia mapowania map.
+
+116
+00:07:45,370 --> 00:07:49,610
+Zatem wszystko, czego dowiesz się o tej działce na żywo, może mieć zastosowanie do tych wykresów ramek danych.
+
+117
+00:07:50,050 --> 00:07:52,310
+Teraz przejdźmy dalej i sprawdźmy wykres rozrzutu.
+
+118
+00:07:52,810 --> 00:07:59,920
+Powiedzmy, że mam DF, który mogę powiedzieć, że działka rozproszona, a ty będziesz musiał podać x i
+
+119
+00:07:59,920 --> 00:08:00,400
+y.
+
+120
+00:08:00,490 --> 00:08:05,110
+W tym celu po prostu przepuśćmy ciągi nazw kolumn.
+
+121
+00:08:05,410 --> 00:08:10,240
+A więc i b, a to stworzy dla nas ładnie wyglądającą plamę rozrzutu.
+
+122
+00:08:10,330 --> 00:08:15,150
+Coś innego, co możesz zrobić, to ustawić kolor na podstawie innej kolumny.
+
+123
+00:08:15,160 --> 00:08:24,160
+Na przykład możesz powiedzieć, że kolor będzie równy kolumnie C.
+
+124
+00:08:24,220 --> 00:08:27,220
+Więc jeśli tylko przeczytam, że to daje mi czarno-białe.
+
+125
+00:08:27,220 --> 00:08:32,010
+Więc jeśli przyjrzę się temu, jeśli tylko wyjaśnię, co tu robimy.
+
+126
+00:08:32,010 --> 00:08:36,790
+Dane od kiedy mamy wartość dla aib, a mamy wartość dla c ..
+
+127
+00:08:36,820 --> 00:08:42,250
+Zasadniczo pokazujemy teraz trzy poziomy informacji, w trzech wymiarach, jeśli zechcesz.
+
+128
+00:08:42,250 --> 00:08:48,430
+Ponieważ mamy versus B, a trzeci argument wyświetla się według kolorów, a właściwie można go zobaczyć jako
+
+129
+00:08:49,360 --> 00:08:52,330
+argument, a następnie przekazać własną mapę kolorów.
+
+130
+00:08:52,330 --> 00:08:57,820
+Na przykład fajne ciepło, które widzieliście wcześniej, a teraz pokazujemy trzy poziomy informacji w porównaniu
+
+131
+00:08:57,970 --> 00:09:02,110
+do B, gdzie stoją, a następnie wartość koloru dla c ..
+
+132
+00:09:02,140 --> 00:09:06,500
+Czasami ludzie nie lubią pokazywać rzeczy po kolorze, ale wolą pokazywać je według rozmiaru.
+
+133
+00:09:06,520 --> 00:09:09,910
+Możesz to również zrobić, zamiast podawać C jako argument.
+
+134
+00:09:09,910 --> 00:09:12,440
+Tutaj po prostu przejdziesz dalej.
+
+135
+00:09:12,520 --> 00:09:18,150
+S i for s Powinieneś iść dalej w kolumnie z ramką danych.
+
+136
+00:09:18,460 --> 00:09:24,100
+W związku z tym musisz przekazać samą kolumnę ramek danych i prawdopodobnie, jeśli to
+
+137
+00:09:24,100 --> 00:09:26,470
+zrobisz, punkty będą zbyt małe.
+
+138
+00:09:27,110 --> 00:09:30,820
+A następnie możesz pomnożyć to przez jakiś czynnik.
+
+139
+00:09:31,390 --> 00:09:40,000
+Możesz więc zauważyć, że punkty są w stosunku do B, a rozmiar wskazuje, ile większej wartości lub C
+
+140
+00:09:40,000 --> 00:09:41,520
+jest względem siebie.
+
+141
+00:09:41,560 --> 00:09:41,980
+W porządku.
+
+142
+00:09:42,010 --> 00:09:45,880
+To jest rzecz, w której prawdopodobnie nie pamiętasz tego z góry,
+
+143
+00:09:45,880 --> 00:09:50,320
+powracasz do notatnika Jupiter, który zebrałem dla ciebie i wykorzystuję to jako punkt
+
+144
+00:09:50,320 --> 00:09:52,090
+odniesienia lub sprawdzam dokumentację.
+
+145
+00:09:52,090 --> 00:09:55,010
+Idźmy dalej i przejdźmy znowu do działek pudełkowych.
+
+146
+00:09:55,030 --> 00:09:59,980
+Naprawdę lubię morskie przygody w działkach pudełkowych, ale jeśli chcesz tylko szybkiej analizy pudełkowej pandy, możesz to zrobić
+
+147
+00:09:59,980 --> 00:10:00,920
+także dla ciebie.
+
+148
+00:10:00,940 --> 00:10:08,740
+Tak więc po prostu przekazujesz całe pole wywołania wykresu wywołań ramki danych, a tutaj możesz zobaczyć działka, która jest w zasadzie
+
+149
+00:10:08,740 --> 00:10:11,270
+automatycznie wykonywana dla ciebie w kolumnie.
+
+150
+00:10:11,290 --> 00:10:16,390
+Więc bierze każdą kolumnę jako kategorię, a następnie kreśli dystrybucje dla ciebie jako działki pudełkowej.
+
+151
+00:10:16,920 --> 00:10:17,680
+W porządku.
+
+152
+00:10:17,680 --> 00:10:24,970
+Ponieważ dzięki różnym danym można wykonać heksagonalną fabułę, którą wcześniej widzieliście z Pandurs, wybaczcie, że
+
+153
+00:10:24,970 --> 00:10:25,970
+to Seaborn.
+
+154
+00:10:26,200 --> 00:10:30,400
+Ale pozwól mi odejść i utwórz nową ramkę danych, aby ta faktycznie pojawiała się poprawnie.
+
+155
+00:10:30,520 --> 00:10:33,780
+Więc chcę powiedzieć ramka danych PD.
+
+156
+00:10:33,780 --> 00:10:42,400
+Zamierzam przekazać jakieś losowe dane, które będę wtedy pobierał, i zamierzam je mieć 1000, powiedzmy dwa, a
+
+157
+00:10:42,400 --> 00:10:48,020
+potem przejdę, a kolumny będą po prostu a i b.
+
+158
+00:10:49,580 --> 00:10:52,650
+A jeśli spojrzymy na naszą ramkę danych, zobaczmy coś takiego.
+
+159
+00:10:52,650 --> 00:10:53,700
+Tylko kilka losowych danych.
+
+160
+00:10:53,740 --> 00:10:54,700
+Freebie.
+
+161
+00:10:54,880 --> 00:11:01,620
+Chciałem tylko trochę więcej losowych punktów i to, co mogę zrobić, ponieważ jest to wariant, to dwie zmienne tutaj.
+
+162
+00:11:01,660 --> 00:11:10,990
+A B mogę powiedzieć, że spacja Hextona przebiega, a x jest równa masie, a Y jest równe B.
+
+163
+00:11:11,330 --> 00:11:14,750
+A jeśli to zrobisz, otrzymasz sześciokątny spisek.
+
+164
+00:11:14,980 --> 00:11:19,090
+Teraz jest to zasadniczo jak wykres rozrzutu, z wyjątkiem sześciokątnych pojemników.
+
+165
+00:11:19,210 --> 00:11:21,710
+Teraz rozmiar bin jest naprawdę niewielki.
+
+166
+00:11:21,730 --> 00:11:27,170
+Aby zmienić rozmiar, można powiedzieć, że rozmiar siatki wynosi 25.
+
+167
+00:11:27,580 --> 00:11:33,730
+I to powiększy rozmiar sześciokąta i zasadniczo sześciokąty stają się ciemniejsze, ponieważ jest w nich więcej
+
+168
+00:11:33,730 --> 00:11:39,760
+punktów i możesz także zmienić mapowanie kolorów tutaj i powiedzieć Zobacz mapę jest równa coś
+
+169
+00:11:39,760 --> 00:11:40,180
+innego.
+
+170
+00:11:40,180 --> 00:11:45,930
+Na przykład, jeśli chcieliśmy, aby nasze mapy kolorów były chłodne i ciepłe, można to również zrobić.
+
+171
+00:11:46,000 --> 00:11:49,980
+I wreszcie możemy zrobić wykresy gęstości gęstości jądra.
+
+172
+00:11:50,110 --> 00:11:56,020
+Jeśli więc z jakiegoś powodu nie chcesz tylko histogramu, ale chcesz oszacować gęstość
+
+173
+00:11:56,020 --> 00:12:02,700
+jądra, możesz wywołać ramkę danych lub kolumnę poza ramką danych, a następnie cissé spiskują Haidee.
+
+174
+00:12:03,080 --> 00:12:08,680
+Stworzy to dla ciebie wykres oszacowania gęstości jądra i możesz zrobić to samo z gęstością, która jest innym
+
+175
+00:12:09,170 --> 00:12:10,450
+połączeniem, które możesz wykonać.
+
+176
+00:12:10,450 --> 00:12:15,880
+Więc mówiąc gęstość i to będzie to samo.
+
+177
+00:12:15,880 --> 00:12:20,410
+Więc jeśli chcesz gęstość lub gęstość oszacowania gęstości jądra, będą to te same rzeczy i
+
+178
+00:12:20,410 --> 00:12:23,320
+możesz to zrobić również z całej ramki danych.
+
+179
+00:12:23,320 --> 00:12:29,890
+Nie musisz tego robić z poziomu jednej kolumny, jeśli chcesz porównać wykres gęstości gęstości jądra we
+
+180
+00:12:29,890 --> 00:12:32,220
+wszystkich kolumnach w ramce danych.
+
+181
+00:12:32,230 --> 00:12:32,590
+W porządku.
+
+182
+00:12:32,590 --> 00:12:33,200
+to jest to!
+
+183
+00:12:33,280 --> 00:12:38,920
+Mam nadzieję, że widzisz, dlaczego ta metoda wykreślania bezpośrednio z Pandurs jest o wiele łatwiejsza niż
+
+184
+00:12:38,920 --> 00:12:43,650
+wywoływanie pełnej mapy działki lib i równoważy łatwość użycia z kontrolą nad figurą.
+
+185
+00:12:43,720 --> 00:12:47,800
+Powinieneś jednak pamiętać, że jeśli naprawdę chcesz zacząć dostosowywać swoją figurę, powinieneś
+
+186
+00:12:47,800 --> 00:12:50,230
+powrócić do Seaborn lub lib mapy działki.
+
+187
+00:12:50,470 --> 00:12:55,390
+Tego rodzaju polecenia służą tylko do szybkiej analizy danych i prawdopodobnie po prostu przejdziesz do książki z notatkami,
+
+188
+00:12:55,390 --> 00:13:00,130
+aby szybko odnieść się do rodzaju wykresu, który chcesz utworzyć, a następnie wywołać go z ramki danych
+
+189
+00:13:00,130 --> 00:13:02,190
+lub wywołać z kolumny lub danych. rama.
+
+190
+00:13:02,320 --> 00:13:06,370
+Jeśli chodzi o to, w jaki sposób będziemy używać tego w trakcie kursu, naprawdę
+
+191
+00:13:06,370 --> 00:13:10,840
+jedyne, co prawdopodobnie wykorzystamy, to po prostu z działką liniową lub histogramem, aby szybko to nazwać.
+
+192
+00:13:10,840 --> 00:13:16,170
+Aby uzyskać bardziej zaawansowane informacje na temat ploterów lub działek barowych Haskel, naprawdę polecam pójście z Seabornem.
+
+193
+00:13:17,340 --> 00:13:22,570
+Mam nadzieję, że uznałeś to za przydatne i do zobaczenia na następnym wykładzie lub opiszemy szybkie ćwiczenie,
+
+194
+00:13:22,570 --> 00:13:25,720
+abyś mógł ćwiczyć to, czego właśnie się tutaj nauczyliśmy.
+
+195
+00:13:25,720 --> 00:13:27,430
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

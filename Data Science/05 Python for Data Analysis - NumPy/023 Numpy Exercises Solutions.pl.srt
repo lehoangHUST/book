@@ -1,0 +1,955 @@
+1
+00:00:05,940 --> 00:00:10,350
+Witam wszystkich i zapraszam do ćwiczeń z wypiekami wykładu z tego wykładu.
+
+2
+00:00:10,380 --> 00:00:13,880
+Zamierzamy ręcznie zakodować rozwiązania dla ćwiczeń.
+
+3
+00:00:13,890 --> 00:00:17,250
+Przejdźmy dalej i przejdź do notatnika Jowisza, aby rozpocząć.
+
+4
+00:00:17,250 --> 00:00:17,540
+W porządku.
+
+5
+00:00:17,540 --> 00:00:19,820
+A więc jestem w notesie Jowisza.
+
+6
+00:00:20,190 --> 00:00:23,120
+Zacznijmy od ważnych sędziów i.
+
+7
+00:00:23,740 --> 00:00:27,720
+Mam nadzieję, że jesteś w stanie to zrobić łatwo ustawić polecenie jest w zasadzie tam napisane dla
+
+8
+00:00:27,720 --> 00:00:27,970
+ciebie.
+
+9
+00:00:28,020 --> 00:00:30,140
+Kiedy zmiana staje się ważna.
+
+10
+00:00:30,240 --> 00:00:31,880
+Jesteśmy gotowi do pracy.
+
+11
+00:00:31,890 --> 00:00:32,130
+DOBRZE.
+
+12
+00:00:32,130 --> 00:00:35,590
+Najpierw chcieliśmy stworzyć tablicę złożoną z 10 zer.
+
+13
+00:00:35,730 --> 00:00:42,910
+Łatwym sposobem na to jest po prostu powiedzieć N. P. Zera i przeszłość oraz cyfra 10
+
+14
+00:00:42,940 --> 00:00:48,120
+i brak danych wyjściowych Dokładne tempo, które tam było, jest wyjściem, aby utworzyć tablicę z 10,
+
+15
+00:00:48,120 --> 00:00:54,550
+które można zrobić dokładnie to samo, z wyjątkiem zamiast zer używać tych, które masz po 10 i masz 10 1s.
+
+16
+00:00:54,570 --> 00:00:56,190
+Teraz stworzysz zestaw 10 piątek.
+
+17
+00:00:56,190 --> 00:01:03,330
+Jest kilka sposobów na zrobienie tego, ale jednym prostym sposobem jest po prostu powiedzieć
+
+18
+00:01:03,330 --> 00:01:07,570
+"szczęśliwe", a potem możesz zrobić to o pięć.
+
+19
+00:01:08,310 --> 00:01:11,340
+A to da ci zestaw 10 piątek.
+
+20
+00:01:11,550 --> 00:01:18,020
+Innymi słowy, mógłbyś to zrobić, powiedz: N. P. zer. 10.
+
+21
+00:01:18,780 --> 00:01:22,680
+A co można zrobić, to dodać do tego piątkę.
+
+22
+00:01:22,680 --> 00:01:26,220
+Są to prawdopodobnie dwa najprostsze sposoby tworzenia tablicy składającej się z 10 piątek.
+
+23
+00:01:26,220 --> 00:01:27,920
+Bardzo szybko.
+
+24
+00:01:27,990 --> 00:01:28,430
+W porządku.
+
+25
+00:01:28,470 --> 00:01:32,310
+Teraz chcemy stworzyć tablicę liczb całkowitych od 10 do 50.
+
+26
+00:01:32,550 --> 00:01:36,510
+Mam nadzieję, że widząc ten wynik, pomyślałeś o arr. funkcjonować.
+
+27
+00:01:36,530 --> 00:01:38,460
+Ponieważ jest to najłatwiejszy sposób na zrobienie tego.
+
+28
+00:01:39,090 --> 00:01:46,660
+Więc jesteśmy w zasięgu i przeszliśmy od 10 do 50, co oznacza, że chcemy zacząć od 10 jako pierwszego wejścia i chcemy,
+
+29
+00:01:46,870 --> 00:01:50,740
+aby 50 było uwzględnionych, ponieważ indeksowanie zaczyna się od zera.
+
+30
+00:01:50,850 --> 00:01:58,480
+Musimy przejść do 51, kiedy wchodzimy w to, a otrzymujemy liczby całkowite z 10 do 50.
+
+31
+00:01:58,500 --> 00:02:03,330
+Następną rzeczą, którą musisz zrobić, to stworzyć tablicę wszystkich parzystych liczb całkowitych od 10 do 50.
+
+32
+00:02:03,330 --> 00:02:05,500
+To również całkiem proste.
+
+33
+00:02:05,540 --> 00:02:10,800
+Mam nadzieję, że pamiętam z wykładu, że jako trzeci argument należy przesunąć zakładkę tutaj, jeśli chce się faktyczny argument,
+
+34
+00:02:11,070 --> 00:02:14,730
+ale można uzyskać wielkość kroku i powiedzieć, że chcę nawet liczby całkowite.
+
+35
+00:02:14,730 --> 00:02:20,340
+Zrobię krok w przód i otrzymam wszystkie parzyste liczby całkowite od 10 do
+
+36
+00:02:20,340 --> 00:02:21,370
+liczby 50.
+
+37
+00:02:21,960 --> 00:02:22,350
+DOBRZE.
+
+38
+00:02:22,350 --> 00:02:28,790
+Idąc dalej, chcieliśmy stworzyć trzy na trzy macierze z wartościami od zera do 8.
+
+39
+00:02:28,800 --> 00:02:31,900
+To będzie trochę dwuetapowy proces.
+
+40
+00:02:32,040 --> 00:02:40,170
+Najpierw utworzymy przy użyciu arr. znacie tu pasan dziewięć i to stworzy tablicę 0 8, a
+
+41
+00:02:40,350 --> 00:02:43,860
+ja chcę, żeby to była trójka z trzech Matrix.
+
+42
+00:02:43,860 --> 00:02:48,600
+To, co mogę zrobić, to powiedzieć, że zmienię trzy.
+
+43
+00:02:48,840 --> 00:02:53,950
+A to wytwarza trzy na trzy macierze wartości od 0 do AIDS.
+
+44
+00:02:53,970 --> 00:02:58,650
+Teraz mógłbyś podzielić to na dwa etapy, co oznaczałoby, że
+
+45
+00:02:59,350 --> 00:03:07,680
+mogłem powiedzieć coś w rodzaju równika 9, a następnie ustawić trójwymiarową zmianę, a to znów byłoby to samo w
+
+46
+00:03:07,680 --> 00:03:09,720
+dwóch wyraźnych, odrębnych krokach.
+
+47
+00:03:09,720 --> 00:03:14,190
+Ale wiele razy, gdy pracujesz z Pi, będziesz po prostu w pewnym sensie naśladować te metody
+
+48
+00:03:14,190 --> 00:03:15,200
+jeden na drugim.
+
+49
+00:03:15,240 --> 00:03:16,260
+W porządku.
+
+50
+00:03:16,260 --> 00:03:18,320
+Następnie musisz utworzyć trzy na trzy.
+
+51
+00:03:18,330 --> 00:03:19,870
+Mam tendencję do patrzenia na matrycę.
+
+52
+00:03:20,070 --> 00:03:23,920
+Mam nadzieję, że pamiętasz polecenie z pierwszego wykładu sędziego A.
+
+53
+00:03:23,970 --> 00:03:25,440
+Ale to tylko ja.
+
+54
+00:03:25,890 --> 00:03:31,920
+A ty po prostu pasasz jedną liczbę, ponieważ nie widziałem macierzy muszą być kwadratowe i że I z trzech to trzy
+
+55
+00:03:31,920 --> 00:03:32,690
+na trzy.
+
+56
+00:03:32,700 --> 00:03:34,890
+Ite i zobacz macierz.
+
+57
+00:03:34,890 --> 00:03:36,090
+W porządku.
+
+58
+00:03:36,090 --> 00:03:42,050
+Zaraz potem chciał użyć PI do wygenerowania losowej liczby od 0 do 1.
+
+59
+00:03:42,070 --> 00:03:48,270
+Jest to całkiem sporo sposobów na zrobienie tego, ale prawdopodobnie najłatwiej jest po prostu powiedzieć
+
+60
+00:03:48,480 --> 00:03:55,490
+P, że losowe przejście i Ranz pamiętają z wykładu, że zmienia losowe wartości między 0 a 1.
+
+61
+00:03:55,530 --> 00:04:01,410
+Mogę po prostu przekazać tutaj jeden i ten zwraca losową wartość między 0 a 1.
+
+62
+00:04:01,410 --> 00:04:06,220
+Teraz twoja odpowiedź mogła być trochę inna niż moja, ale to dlatego, że jest przypadkowa.
+
+63
+00:04:06,330 --> 00:04:08,540
+Zawsze otrzymujesz inny numer za każdym razem, gdy go uruchomisz.
+
+64
+00:04:08,550 --> 00:04:11,190
+Ale za każdym razem powinna wynosić od zera do jednej.
+
+65
+00:04:11,190 --> 00:04:14,010
+Jeśli po prostu przekazujesz pojedynczą cyfrę jako argument.
+
+66
+00:04:14,010 --> 00:04:19,980
+Więc znowu ta przypadkowa myśl Rand zwraca losową liczbę od 0 do 1.
+
+67
+00:04:20,790 --> 00:04:26,820
+Następnie chcieliśmy użyć pi do wygenerowania tablicy 25 próbek liczb losowych ze standardowego
+
+68
+00:04:26,820 --> 00:04:28,310
+rozkładu normalnego.
+
+69
+00:04:28,320 --> 00:04:34,920
+Mam nadzieję, że to było kluczowe słowo, aby pamiętać, że możesz zadzwonić do N. P. myśl losowa Rand n
+
+70
+00:04:35,140 --> 00:04:41,640
+i jeśli zrobisz przesunięcie w tym miejscu, to zwraca próbkę ze standardowego rozkładu normalnego i to
+
+71
+00:04:41,790 --> 00:04:44,120
+jest w zasadzie przypięcie końca tam.
+
+72
+00:04:44,400 --> 00:04:51,540
+Tak, abym mógł umieścić 25 i który zwraca tablicę 25 próbek liczb losowych ze standardowego
+
+73
+00:04:51,540 --> 00:04:52,710
+rozkładu normalnego.
+
+74
+00:04:52,830 --> 00:04:57,480
+I proszę zauważyć, że w nawiasach można powiedzieć, że jest to tylko jednowymiarowa tablica składająca się
+
+75
+00:04:57,480 --> 00:05:00,540
+z dwudziestu pięciu liczb, a nie pięciu na pięć.
+
+76
+00:05:00,540 --> 00:05:07,290
+Możesz to potwierdzić, umieszczając tutaj kształt i po prostu mówi 25 zamiast pięciu na pięć.
+
+77
+00:05:07,290 --> 00:05:07,940
+W porządku.
+
+78
+00:05:08,010 --> 00:05:13,020
+Teraz chcieliśmy stworzyć następującą macierz i zwrócić uwagę na to, co ta matryca faktycznie robi.
+
+79
+00:05:13,800 --> 00:05:15,650
+To dwuwymiarowa matryca.
+
+80
+00:05:15,720 --> 00:05:18,590
+Zauważ, że możemy to stwierdzić z dwóch zestawów nawiasów tutaj.
+
+81
+00:05:19,110 --> 00:05:22,020
+I także od zera punktu zero.
+
+82
+00:05:22,170 --> 00:05:29,550
+Wygląda na to, że idzie o krok o zero punktów zero lub jeszcze jeden do jednego, ale teraz są dwa
+
+83
+00:05:29,880 --> 00:05:31,710
+sposoby na zrobienie tego.
+
+84
+00:05:31,710 --> 00:05:36,120
+Najpierw przejdę przez to, co pokazano w rozwiązaniu, co może być łatwiejszym sposobem na
+
+85
+00:05:36,120 --> 00:05:40,010
+przemyślenie tego, a następnie pokażę bardziej sprytny sposób korzystania z tej przestrzeni.
+
+86
+00:05:40,020 --> 00:05:48,990
+Jednym ze sposobów, w jaki możesz to zrobić, jest Zasięg od 1 do 101 i to pierwsze daje ci Saray, której jeszcze
+
+87
+00:05:48,990 --> 00:05:50,000
+nie jesteśmy.
+
+88
+00:05:50,010 --> 00:05:55,960
+To, czego chcemy i zamierzamy to zrobić, to zmienić kształt na 10 na 10 tablic.
+
+89
+00:05:56,400 --> 00:05:59,750
+A potem już prawie jesteśmy, ale zauważmy, że przechodzimy od 1 do 100.
+
+90
+00:05:59,790 --> 00:06:02,820
+Więc jeśli mogę to zrobić, powiedz: podziel to przez 100.
+
+91
+00:06:03,630 --> 00:06:07,960
+I to zwraca tablicę, że miałem podwójne nawiasy 10 na 10 tablic.
+
+92
+00:06:08,160 --> 00:06:15,170
+I to od zera punktu zero lub jeden w kroku wielkości punktu lub jeden dodatkowo do 1.
+
+93
+00:06:15,240 --> 00:06:16,980
+To jeden ze sposobów na dodanie tego.
+
+94
+00:06:17,250 --> 00:06:19,370
+I to jest sposób przedstawiony w książce rozwiązań.
+
+95
+00:06:19,380 --> 00:06:23,640
+Ale jest to kolejna, naprawdę dobra metoda, i mam nadzieję, że jest to sposób,
+
+96
+00:06:23,640 --> 00:06:30,120
+w jaki myślałeś o tym na samym początku, ale możesz także zrobić w przestrzeni, a następnie zanotować, od czego zaczynałeś i dokąd
+
+97
+00:06:30,120 --> 00:06:30,990
+się zatrzymujesz.
+
+98
+00:06:31,020 --> 00:06:35,870
+Zaczynamy od 0. 01 przejście do 1.
+
+99
+00:06:36,030 --> 00:06:45,570
+I są one liniowo rozmieszczone, więc mogę powiedzieć 100, a zmienię to jako matrycę 10 na 10, która zwraca
+
+100
+00:06:46,190 --> 00:06:49,260
+dokładnie taki sam wynik jak powyżej.
+
+101
+00:06:49,530 --> 00:06:52,470
+Więc obie te odpowiedzi są w porządku.
+
+102
+00:06:52,500 --> 00:06:56,730
+Jest na to kilka innych sposobów, ale są to prawdopodobnie dwie najbardziej logiczne i
+
+103
+00:06:56,730 --> 00:06:57,320
+proste.
+
+104
+00:06:57,330 --> 00:07:01,170
+Tak czy inaczej, wszystko jest w porządku i mam nadzieję, że jesteś w stanie wymyślić jedną z nich.
+
+105
+00:07:01,320 --> 00:07:06,600
+To jest trochę trudne pytanie, trochę trudnego pytania, ponieważ nie ma tu wyraźnego wzorca, chyba że faktycznie zwracasz uwagę
+
+106
+00:07:06,600 --> 00:07:10,710
+na to, że chodzi o punkt zero Dodatkowo, a potem także zwracasz uwagę,
+
+107
+00:07:10,710 --> 00:07:15,390
+że był to podwójny zestaw nawiasów, co oznacza, że był do nich dodatkowe 10 na 10.
+
+108
+00:07:15,390 --> 00:07:15,870
+W porządku.
+
+109
+00:07:15,990 --> 00:07:17,970
+Chodźmy i kontynuujmy.
+
+110
+00:07:17,970 --> 00:07:22,710
+Teraz chcieliśmy stworzyć tablicę 20 liniowo rozmieszczonych punktów między 0 a 1.
+
+111
+00:07:22,740 --> 00:07:30,640
+Wszystko, co musisz zrobić, to powiedzieć N. P. Przestrzeń Lynna, a następnie przechodzimy od 0 do 1.
+
+112
+00:07:30,960 --> 00:07:37,170
+Mogę więc iść dalej i powiedzieć zero przyjść 1, a następnie 20 liniowo rozmieszczone punkty i to dostaje mi
+
+113
+00:07:37,170 --> 00:07:39,030
+dokładną odpowiedź, że mam tam.
+
+114
+00:07:39,060 --> 00:07:40,020
+W porządku.
+
+115
+00:07:40,020 --> 00:07:45,090
+Teraz otrzymamy kilka macierzy seksualnie tylko jednej macierzy Matta i chcemy poprosić
+
+116
+00:07:45,090 --> 00:07:47,410
+o replikację wynikowych wyników macierzy.
+
+117
+00:07:47,700 --> 00:07:51,390
+I znowu musiałeś napisać swój kod, w przeciwnym razie nadpisałbyś dane wyjściowe,
+
+118
+00:07:51,390 --> 00:07:52,470
+które powinieneś skopiować.
+
+119
+00:07:52,470 --> 00:07:55,050
+Więc chodźmy dalej i zacznijmy to robić.
+
+120
+00:07:55,080 --> 00:08:02,540
+Po pierwsze musieliśmy pobrać tę część tablicy od 12 do 15, a następnie 12 17:22 wierszy.
+
+121
+00:08:02,550 --> 00:08:06,260
+Więc jak to zrobimy, usuniemy to komentowanie.
+
+122
+00:08:06,390 --> 00:08:08,480
+Pierwszą rzeczą, którą chcę zrobić, to zadzwonić do Matta.
+
+123
+00:08:09,120 --> 00:08:13,880
+A potem wstawię tutaj przecinek i rzućmy okiem na wybrane wiersze.
+
+124
+00:08:14,190 --> 00:08:18,680
+Tak więc wiersze, które chcę rozpocząć, zaczynają się od 12 17 22.
+
+125
+00:08:18,780 --> 00:08:28,530
+Więc wygląda na to, że te trzy ostatnie wiersze oznaczają, że jeśli spojrzę na indeks 0 1 2, chcę, aby wiersze i wszystko
+
+126
+00:08:28,530 --> 00:08:29,620
+inne minęły.
+
+127
+00:08:29,670 --> 00:08:37,830
+Tak więc dla Colona są to moje wiersze i chodźmy i potwierdzmy to, umieszczając dwukropek tutaj, aby wybrać
+
+128
+00:08:37,860 --> 00:08:40,170
+wszystkie kolumny w tych wierszach.
+
+129
+00:08:40,460 --> 00:08:43,070
+Whoops musiał uruchomić komórkę.
+
+130
+00:08:43,660 --> 00:08:44,190
+DOBRZE.
+
+131
+00:08:44,460 --> 00:08:45,070
+Więc to zrobiłem.
+
+132
+00:08:45,070 --> 00:08:46,200
+Więc było dobrze.
+
+133
+00:08:46,230 --> 00:08:47,910
+A teraz wybieram wszystko.
+
+134
+00:08:47,910 --> 00:08:52,910
+Wszystkie kolumny z tych wierszy i wygląda na to, że jesteśmy dobrzy, tak naprawdę widzimy tutaj podzbiór.
+
+135
+00:08:52,980 --> 00:08:54,510
+Więc jestem dobry w rzędach.
+
+136
+00:08:54,510 --> 00:08:59,820
+W następnej kolejności rzeczywiście chcę pobrać poprawne kolumny w tym przypadku, widzę, że
+
+137
+00:08:59,820 --> 00:09:03,190
+chcę pobrać od 1 kolumny 1 i później.
+
+138
+00:09:03,330 --> 00:09:07,850
+Tak więc zamierzam powiedzieć tylko jeden dwukropek i uruchomić to i to jest moja odpowiedź.
+
+139
+00:09:07,850 --> 00:09:09,430
+Widzę, że pasuje.
+
+140
+00:09:09,510 --> 00:09:15,180
+Tak więc, aby to przełamać jeszcze raz, przechodzę od indeksu wiersza do, a wszystko, co minęło, a następnie
+
+141
+00:09:15,180 --> 00:09:18,120
+indeks kolumny jeden i wszystko minęło, że go przekazuję.
+
+142
+00:09:18,120 --> 00:09:20,550
+W tym rodzaju zapisu tutaj.
+
+143
+00:09:20,580 --> 00:09:21,530
+W porządku, proszę bardzo.
+
+144
+00:09:21,540 --> 00:09:23,340
+Przejdź do następnego.
+
+145
+00:09:23,430 --> 00:09:29,490
+Następnie chciałbym złapać tylko numer 20, więc jeśli znów spojrzę na Matt'a, po prostu chcę chwycić
+
+146
+00:09:29,490 --> 00:09:30,300
+numer 20.
+
+147
+00:09:30,310 --> 00:09:32,300
+Sprawdźmy, gdzie to jest.
+
+148
+00:09:32,330 --> 00:09:36,030
+Jest tutaj w tym przypadku.
+
+149
+00:09:36,030 --> 00:09:40,290
+To znaczy, że najpierw wyjąłem wiersz 0 1 2 3.
+
+150
+00:09:40,320 --> 00:09:41,800
+A więc jest w rzędzie 3.
+
+151
+00:09:41,960 --> 00:09:43,990
+Lub śmiało i wpisz to.
+
+152
+00:09:44,460 --> 00:09:51,100
+A potem wszystko dzieje się w ostatniej kolumnie, która wynosi 0 1 2 3 4 6.
+
+153
+00:09:51,120 --> 00:09:52,890
+Indeksowanie rozpoczyna się od zera.
+
+154
+00:09:52,890 --> 00:09:58,310
+Więc jeśli powiem, że Matt 3, to dostaję 20 punktów idealnych.
+
+155
+00:09:58,430 --> 00:10:05,370
+Zaraz potem chciałem złapać to 2 7 12, może iść dalej i zobaczyć, jak wygląda moja matematyka.
+
+156
+00:10:05,370 --> 00:10:07,510
+Oto moja mapa i chcę pobrać dwie 7.
+
+157
+00:10:07,530 --> 00:10:09,060
+Cóż, chodźmy dalej.
+
+158
+00:10:09,060 --> 00:10:12,860
+Podziel to przez wiersze względem kolumn 2 7 12.
+
+159
+00:10:12,870 --> 00:10:14,380
+Wygląda, że to tutaj.
+
+160
+00:10:14,400 --> 00:10:21,840
+Więc chcę pobrać wszystko do pewnej liczby wierszy, więc chcę tylko zawrzeć 2 7 i 12 znaczeń, które chcę
+
+161
+00:10:22,200 --> 00:10:26,120
+uchwycić i nie wliczając w to indeksu numer trzy.
+
+162
+00:10:26,130 --> 00:10:28,990
+To jest 0 1 2.
+
+163
+00:10:29,190 --> 00:10:32,580
+Tak więc zamierzam powiedzieć wszystko do trzech.
+
+164
+00:10:32,610 --> 00:10:39,850
+Idźmy dalej i potwierdźmy to, umieszczając dwukropek tutaj i tutaj na 7 12, więc mam odpowiednie
+
+165
+00:10:39,850 --> 00:10:40,640
+wiersze.
+
+166
+00:10:40,660 --> 00:10:47,590
+A teraz po prostu weźmy tę poprawną kolumnę iw tym przypadku jest coś ważnego do
+
+167
+00:10:47,590 --> 00:10:48,460
+odkrycia.
+
+168
+00:10:48,460 --> 00:10:56,380
+Dane wyjściowe mają tutaj dwa nawiasy, co oznacza, że jest to trzy po jednym, a więc są trzy wiersze za jedną
+
+169
+00:10:57,340 --> 00:11:01,290
+kolumnę, a to oznacza, że właśnie wstawiłem numer kolumny.
+
+170
+00:11:01,600 --> 00:11:08,680
+Więc gdybym tylko wstawił na przykład, zobaczmy 0 1, dostałbym 7 12 na zewnątrz.
+
+171
+00:11:08,860 --> 00:11:09,970
+Ale zauważ kształt tutaj.
+
+172
+00:11:09,960 --> 00:11:12,120
+To tylko jednowymiarowa tablica.
+
+173
+00:11:12,220 --> 00:11:15,440
+I w tym przypadku jest wyjście, które chcę dwa zestawy nawiasów.
+
+174
+00:11:15,520 --> 00:11:20,100
+Jedynym sposobem na to jest indeksowanie za pomocą notacji plastra.
+
+175
+00:11:20,200 --> 00:11:24,000
+Muszę więc powiedzieć wszystko od jednej do drugiej, ale nie obejmującej dwóch.
+
+176
+00:11:24,070 --> 00:11:28,270
+Na pierwszy rzut oka może się to wydawać trochę dziwne, ale w ten sposób, jeśli przejdę do przodu i uruchomię
+
+177
+00:11:28,270 --> 00:11:29,980
+to, mogę pobrać go w tym samym formacie.
+
+178
+00:11:29,980 --> 00:11:35,920
+Teraz wiem, że to nie jest bardzo intuicyjne, ale w ten sposób sędzia działa tak samo, jak
+
+179
+00:11:35,950 --> 00:11:40,310
+chwytanie tego fragmentu kolumny w tej samej formie tego dwuwymiarowego wspornika.
+
+180
+00:11:40,330 --> 00:11:43,400
+W przeciwnym razie otrzymasz go jako jednowymiarową tablicę.
+
+181
+00:11:43,420 --> 00:11:49,810
+Więc znowu, żeby wyjaśnić, czy po prostu włożyłem jeden, otrzymam te same liczby, ale dostaję go tylko jako
+
+182
+00:11:49,810 --> 00:11:50,590
+jednowymiarową tablicę.
+
+183
+00:11:50,620 --> 00:11:52,660
+Chcę tego rzeczywistego podwójne nawiasy tutaj.
+
+184
+00:11:52,660 --> 00:11:59,890
+Muszę sprecyzować, aby przechwycić te dwie kolumny, co znowu jest tylko jedną kolumną.
+
+185
+00:11:59,880 --> 00:12:02,480
+Więc wiem, że to trochę dziwne i nie intuicyjne.
+
+186
+00:12:02,740 --> 00:12:07,160
+W rzeczywistości wiele razy będziemy po prostu chwytać wszystkie wartości.
+
+187
+00:12:07,180 --> 00:12:12,400
+W związku z tym nie będziemy robić tego rodzaju notacji indeksowania, ale pamiętajmy, że w pewien
+
+188
+00:12:12,400 --> 00:12:18,070
+sposób składnia pi działa trochę dziwnie, ale mam nadzieję, że nie było to dla ciebie zbyt trudne
+
+189
+00:12:18,070 --> 00:12:18,670
+pytanie.
+
+190
+00:12:18,730 --> 00:12:21,720
+I możesz się z nim trochę pogodzić, żeby to rozgryźć.
+
+191
+00:12:22,660 --> 00:12:25,840
+Ale znowu nie poci zbyt wiele, jeśli nie jesteś w stanie rozwiązać tego.
+
+192
+00:12:25,840 --> 00:12:28,730
+Jeśli chodzi o uzyskanie go w tym samym formacie.
+
+193
+00:12:28,980 --> 00:12:32,770
+W porządku, mamy tu tylko dwie, jeśli chodzi o chwytanie rzeczy.
+
+194
+00:12:32,980 --> 00:12:35,650
+Pozwól, że poprowadzę Matta, żebyśmy mogli zobaczyć, jak to wygląda.
+
+195
+00:12:35,650 --> 00:12:45,870
+Znów wargi 80 i wygląda na to, że chcę ostatni wiersz tutaj 21 22 23 24 25.
+
+196
+00:12:46,290 --> 00:12:46,710
+DOBRZE.
+
+197
+00:12:46,780 --> 00:12:48,280
+Jest na to kilka sposobów.
+
+198
+00:12:48,310 --> 00:12:55,030
+Prawdopodobnie najprostszym sposobem jest po prostu powiedzieć, idź do indeksu dla wiersza i zwróć wszystko.
+
+199
+00:12:55,660 --> 00:12:58,630
+I tam mamy 21 22 23 24 25.
+
+200
+00:12:58,620 --> 00:13:04,130
+I pasuje to w inny sposób, w jaki możesz to zrobić, jeśli wiesz, że to ostatni wiersz w macierzy.
+
+201
+00:13:04,270 --> 00:13:08,140
+Możesz także wykonać indeksowanie ujemne, które faktycznie zwróci dokładnie to samo.
+
+202
+00:13:08,130 --> 00:13:11,000
+Jednak zalecałbym, żebyś tu skorzystał.
+
+203
+00:13:11,020 --> 00:13:13,640
+Więc jest to trochę bardziej jasne.
+
+204
+00:13:13,660 --> 00:13:14,030
+W porządku.
+
+205
+00:13:14,170 --> 00:13:17,020
+Jeszcze jedno i pokaż Matt.
+
+206
+00:13:17,020 --> 00:13:23,080
+Tutaj mamy Matta i wygląda na to, że chcemy pobrać wszystkie kolumny z ostatnich dwóch rzędów.
+
+207
+00:13:23,230 --> 00:13:26,220
+Ale znowu zauważ, że coś tutaj ma podwójne nawiasy.
+
+208
+00:13:26,260 --> 00:13:35,560
+Więc chcę użyć tej notacji plastra, co oznacza, że chcę przejść od indeksu wiersza od trzech do pięciu, a następnie pobrać wszystkie
+
+209
+00:13:35,620 --> 00:13:39,830
+kolumny tam, a następnie zwrócić te same wartości tutaj.
+
+210
+00:13:40,090 --> 00:13:43,270
+Znowu to było trochę trudniejsze niż ostatnie, które właśnie widzieliśmy.
+
+211
+00:13:43,420 --> 00:13:47,200
+Mam jednak nadzieję, że odpowiedź ma dla ciebie sens teraz, gdy ją zobaczyłeś.
+
+212
+00:13:47,200 --> 00:13:50,290
+W porządku, przejdźmy dalej, aby wykonać następujące czynności.
+
+213
+00:13:50,350 --> 00:13:55,900
+Kiedy wchodzisz, aby umieścić tutaj nową komórkę, możemy zobaczyć, że Matt chce uzyskać sumę wszystkich wartości
+
+214
+00:13:55,890 --> 00:13:56,950
+w Max.
+
+215
+00:13:56,950 --> 00:13:58,240
+Są dwa sposoby na zrobienie tego.
+
+216
+00:13:58,240 --> 00:14:07,780
+Możesz powiedzieć, a potem passen Matt, lub też możesz powiedzieć, że to Matt sum i otrzymujesz taką
+
+217
+00:14:10,570 --> 00:14:11,710
+samą odpowiedź.
+
+218
+00:14:11,740 --> 00:14:13,420
+Albo jest w porządku.
+
+219
+00:14:13,420 --> 00:14:15,790
+Następnie chcesz przyjąć odchylenie standardowe.
+
+220
+00:14:16,090 --> 00:14:22,180
+Miejmy nadzieję, że jesteś w stanie to rozgryźć za pomocą funkcji uniwersalnej i p s t d, a następnie
+
+221
+00:14:22,180 --> 00:14:23,130
+passen Matt.
+
+222
+00:14:23,200 --> 00:14:27,460
+Teraz dostałbym to i mógłbyś odwołać się do linku w notatkach do funkcji
+
+223
+00:14:27,790 --> 00:14:34,020
+uniwersalnych lub jest on wystarczająco powszechny, że mógłbyś powiedzieć i że płyta CD lub wybaczyć mi Matkę matematyczną, którą Assaidi
+
+224
+00:14:34,240 --> 00:14:36,390
+i wszystko by działało tak dobrze.
+
+225
+00:14:36,580 --> 00:14:41,530
+OK, w końcu ten mały podstępny na końcu dostanie sumę wszystkich kolumn w macie, żeby
+
+226
+00:14:41,530 --> 00:14:45,260
+zrobić to, co musiałaś zrobić, to powiedzieć, że Matt ma trochę.
+
+227
+00:14:45,540 --> 00:14:49,750
+I musiał określić oś, którą mógłbyś zobaczyć, gdybyś przesunął tę zakładkę tutaj.
+
+228
+00:14:49,960 --> 00:14:53,440
+Zwróci sumę wszystkich elementów tablicy nad danym dostępem.
+
+229
+00:14:53,560 --> 00:14:58,780
+W tym przypadku musisz powiedzieć, że dostęp jest równy zeru.
+
+230
+00:14:59,230 --> 00:15:01,430
+I tak to działa.
+
+231
+00:15:01,620 --> 00:15:05,780
+Ten ostatni był nieco trudny, ponieważ wprowadziliśmy kod dostępu, ale nie martwmy
+
+232
+00:15:05,780 --> 00:15:11,860
+się zbytnio, jeśli go nie dostaniemy, ponieważ otrzymamy znacznie więcej ćwiczeń w zakresie określania dostępu 0 lub 1,
+
+233
+00:15:11,860 --> 00:15:14,310
+kiedy zacznij pracę w bibliotece pandy.
+
+234
+00:15:14,320 --> 00:15:14,890
+W porządku.
+
+235
+00:15:15,070 --> 00:15:16,440
+Mam nadzieję, że nie było tak źle dla ciebie.
+
+236
+00:15:16,450 --> 00:15:20,830
+Ponownie możesz sprawdzić w notesie wszystkie odpowiedzi i cały kod, który właśnie przeszedłeś i zawsze
+
+237
+00:15:20,980 --> 00:15:23,370
+możesz wysyłać posty na forach pytań i odpowiedzi.
+
+238
+00:15:23,380 --> 00:15:28,340
+Jeśli masz jakieś pytania na temat tego, co właśnie zrobiłem, chętnie udzielę ci dalszych wyjaśnień.
+
+239
+00:15:28,720 --> 00:15:31,370
+W porządku, dziękuję wszystkim, a do zobaczenia na następnym wykładzie

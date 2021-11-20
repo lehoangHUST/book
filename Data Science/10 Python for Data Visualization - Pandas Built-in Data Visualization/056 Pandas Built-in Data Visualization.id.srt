@@ -1,0 +1,779 @@
+1
+00:00:05,220 --> 00:00:07,080
+Halo semuanya dan selamat datang di panel.
+
+2
+00:00:07,080 --> 00:00:12,900
+Dosen visualisasi data BILTON dan kuliah ini kita akan membahas kemampuan bawaan Panther sendiri yang sebenarnya dibangun
+
+3
+00:00:13,230 --> 00:00:17,550
+dari plot langsung tersebut, tetapi mereka memungkinkan Anda untuk memanggil visualisasi data
+
+4
+00:00:17,610 --> 00:00:18,860
+langsung dari data.
+
+5
+00:00:19,140 --> 00:00:22,160
+Ayo maju dan lompat ke notebook Jupiter.
+
+6
+00:00:22,170 --> 00:00:22,370
+Baiklah.
+
+7
+00:00:22,370 --> 00:00:24,810
+Di sini saya di server notebook Jupiter.
+
+8
+00:00:24,810 --> 00:00:25,520
+Catatan singkat.
+
+9
+00:00:25,590 --> 00:00:30,170
+Anda harus membuka notebook Jupiter ini di bawah ibu jari saya untuk visualisasi data.
+
+10
+00:00:30,180 --> 00:00:35,280
+Panel dibangun dalam folder data dan alasannya adalah ada beberapa file cc di sini yang disebut
+
+11
+00:00:35,290 --> 00:00:37,100
+def 1 2 dan 3.
+
+12
+00:00:37,260 --> 00:00:41,350
+Dan Anda lihat sebagai file V dan kami akan bekerja untuk benar-benar menunjukkan kemampuan
+
+13
+00:00:41,370 --> 00:00:44,910
+panda yang dibangun dalam visualisasi data notebook kuliah ada di sini.
+
+14
+00:00:44,920 --> 00:00:49,050
+Panel panel ini dibangun dalam visualisasi data dan kemudian Anda juga memiliki latihan yang akan
+
+15
+00:00:49,110 --> 00:00:49,760
+dibahas nanti.
+
+16
+00:00:49,830 --> 00:00:52,290
+Saya akan membuka Anda tahu buku di sini.
+
+17
+00:00:52,380 --> 00:00:54,440
+Dan maju dan mulai.
+
+18
+00:00:54,450 --> 00:00:54,660
+Baiklah.
+
+19
+00:00:54,660 --> 00:01:01,890
+Di sini saya di notebook ini dan saya akan pergi keluar dan mengatakan penting PI dan P akan mengimpor
+
+20
+00:01:02,010 --> 00:01:09,030
+panda sebagai PD dan kemudian saya juga akan menentukan plot hidup sejalan sehingga saya dapat melihat bahwa visualisasi
+
+21
+00:01:09,030 --> 00:01:16,120
+data di dalam buku catatan aktual dan kemudian file CACP yang akan kami unggah adalah yang ingin saya sampaikan.
+
+22
+00:01:16,200 --> 00:01:25,020
+PD membaca C S V pasand d jika satu dan untuk DF satu saya juga akan menentukan bahwa indeks menjadi kolom
+
+23
+00:01:25,020 --> 00:01:26,820
+pertama di indeks 0.
+
+24
+00:01:26,820 --> 00:01:32,460
+Jadi sekarang jika saya melihat yang saya dapat melihat bahwa indeks sebenarnya adalah serangkaian waktu dan itu akan menjadi
+
+25
+00:01:32,460 --> 00:01:34,570
+penting ketika kita benar-benar memvisualisasikan itu
+
+26
+00:01:34,680 --> 00:01:43,530
+Dan kemudian untuk indeks seri non-waktu saya akan mengakhiri dan mengatakan PD membaca C S V dan kemudian lulus dan hanya
+
+27
+00:01:43,530 --> 00:01:45,340
+untuk melihat kata dua.
+
+28
+00:01:45,420 --> 00:01:50,100
+Sangat mirip kecuali ini hanya membaca data dan memiliki indeks sekuensial.
+
+29
+00:01:50,100 --> 00:01:50,740
+Baiklah.
+
+30
+00:01:50,880 --> 00:01:55,940
+Biarkan saya maju dan tunjukkan contoh cepat dari apa yang dapat Anda lakukan dengan bingkai data semacam ini
+
+31
+00:01:55,940 --> 00:01:57,060
+di kolom ini.
+
+32
+00:01:57,060 --> 00:02:02,600
+Bayangkan kami ingin mendapatkan histogram dari semua nilai di kolom A untuk DF 1.
+
+33
+00:02:03,300 --> 00:02:05,590
+Yah pand mereka benar-benar bisa melakukan itu.
+
+34
+00:02:05,970 --> 00:02:13,440
+Kami hanya dapat memanggil EF 1 dan kemudian membatalkannya dan itu akan secara otomatis mulai membuat
+
+35
+00:02:13,440 --> 00:02:14,330
+histogram.
+
+36
+00:02:14,490 --> 00:02:18,960
+Dan perhatikan bahwa ini sebenarnya memanggil plot peta langsung di bawah tenda dan Anda dapat mulai
+
+37
+00:02:18,960 --> 00:02:24,670
+menambahkan argumen MAP plot lib atau bahkan melihat lebih banyak argumen gaya seperti jumlah sampah yang Anda inginkan dalam histogram ini.
+
+38
+00:02:25,020 --> 00:02:30,140
+OK sekarang yang perlu diperhatikan adalah gaya ini sebenarnya tidak terlalu tampan.
+
+39
+00:02:30,150 --> 00:02:31,380
+Menurutku.
+
+40
+00:02:31,380 --> 00:02:35,880
+Jadi yang dapat Anda lakukan untuk memperbaikinya adalah jika Anda naik
+
+41
+00:02:36,270 --> 00:02:42,280
+ke atas atau benar-benar di mana saja di notebook, teruskan dan katakan impor Seaborn sebagai asinus.
+
+42
+00:02:42,690 --> 00:02:48,080
+Dan begitu itu diimpor. Jika Anda mulai menjalankan sel-sel ini lagi, itu akan terlihat seperti plot yang rumit
+
+43
+00:02:48,090 --> 00:02:49,100
+Sekarang lihat sedikit lebih bagus.
+
+44
+00:02:49,110 --> 00:02:50,330
+Jadi itu sesuatu yang ingin saya lakukan.
+
+45
+00:02:50,400 --> 00:02:55,810
+Anda benar-benar dapat melihat lebih banyak dalam gaya dan panggilan tanpa pantulan akan terlihat seperti mereka.
+
+46
+00:02:56,190 --> 00:03:01,140
+Panda memiliki beberapa tipe plot yang dibangun di dalamnya dan kami akan melakukan secara singkat dan
+
+47
+00:03:01,200 --> 00:03:03,080
+menunjukkan contoh cara membuat plot ini.
+
+48
+00:03:03,210 --> 00:03:09,360
+Hampir semua plot dapat dilakukan melalui perintah dari frame data dan pada dasarnya Anda dapat melakukan ini dengan dua
+
+49
+00:03:09,360 --> 00:03:14,420
+metode Anda dapat memanggil frame data itu sendiri atau memanggil kolom setelah frame data.
+
+50
+00:03:14,430 --> 00:03:21,630
+Mari masuk dan lakukan kolom sekarang dan Anda dapat memanggil plot dan kemudian di bawah argumen plot yang
+
+51
+00:03:21,630 --> 00:03:22,390
+ditentukan.
+
+52
+00:03:22,530 --> 00:03:26,670
+Dan ada daftar di buku catatan Anda dan kami akan pergi ke seluruh daftar ini dan kemudian Anda
+
+53
+00:03:26,670 --> 00:03:28,090
+menentukan kata kunci semacam itu.
+
+54
+00:03:28,090 --> 00:03:31,180
+Jadi jika saya ingin histogram saya juga bisa membuatnya dengan cara ini.
+
+55
+00:03:31,440 --> 00:03:37,920
+Dan kemudian di sini Anda dapat menambahkan argumen histogram seperti jumlah tempat sampah yang Anda inginkan.
+
+56
+00:03:37,920 --> 00:03:43,710
+Jadi itulah salah satu metode membuat Misalnya ruang sejarah dari kolom bingkai data yang disebut titik plot
+
+57
+00:03:43,920 --> 00:03:45,510
+dan kemudian memanggil jenis.
+
+58
+00:03:45,510 --> 00:03:51,380
+Baiklah dengan cara lain Anda dapat memanggil plot menggunakan panda alih-alih menentukan jenis sama dengan
+
+59
+00:03:51,690 --> 00:03:58,010
+mendesis Anda sebenarnya dapat memanggil hist langsung dari plot sehingga Anda dapat mengatakan dot plot dan kemudian itu.
+
+60
+00:03:58,210 --> 00:04:00,110
+Ini juga akan membuat plot.
+
+61
+00:04:00,120 --> 00:04:04,110
+Ini adalah metode yang akan kita gunakan sepanjang sisa kuliah ini sehingga kita dapat
+
+62
+00:04:04,110 --> 00:04:09,570
+mengambil seluruh kerangka data atau kolom yang disebut dot plot dan kemudian memanggil dot apa pun jenis plot yang kita inginkan.
+
+63
+00:04:10,110 --> 00:04:13,730
+Mari kita lanjutkan dan pergi melalui semua jenis plot dan memeriksanya.
+
+64
+00:04:14,370 --> 00:04:19,780
+Jadi mari kita lanjutkan dan bekerja dengan keduanya yang merupakan seri non-waktu.
+
+65
+00:04:19,780 --> 00:04:28,560
+Jadi sebagai contoh hanya memiliki indeks normal dan satu plot yang dapat Anda lakukan adalah plot area sehingga Anda dapat melanjutkan
+
+66
+00:04:28,560 --> 00:04:30,700
+dan menentukan area plot.
+
+67
+00:04:30,990 --> 00:04:38,250
+Dan ini pada dasarnya hanya akan menunjukkan plot area dan yang juga bisa Anda lakukan adalah menentukan Alpha sebagai argumen
+
+68
+00:04:38,250 --> 00:04:39,190
+di sini.
+
+69
+00:04:39,240 --> 00:04:46,680
+Jika Anda ingin transparansi dan katakan Alfas sama dengan 0. 4 dan ini menunjukkan transparansi di sini dan
+
+70
+00:04:46,680 --> 00:04:52,470
+ini hanya menunjukkan area nilai yang pada dasarnya Anda dapat menganggap ini sebagai plot
+
+71
+00:04:52,470 --> 00:04:56,750
+garis normal kecuali area di bawahnya telah diisi dengan semacam warna.
+
+72
+00:04:57,150 --> 00:05:01,890
+Baiklah itu plot area dan sekali lagi sangat mudah membatalkan frame data.
+
+73
+00:05:01,890 --> 00:05:08,700
+Mari kita lanjutkan dan melihat Bart plot sehingga Anda dapat mengatakan dengan asumsi Anda adalah bingkai
+
+74
+00:05:09,150 --> 00:05:18,070
+data kedua plot dan kemudian bar dan secara otomatis membuat plot bar dan apa yang dilakukan adalah hanya mengambil nilai indeks pada
+
+75
+00:05:18,220 --> 00:05:19,630
+dasarnya sebagai kategori.
+
+76
+00:05:19,630 --> 00:05:22,830
+Jadi dalam hal ini indeks Anda harus kategorikal.
+
+77
+00:05:23,030 --> 00:05:26,830
+Kerangka data kami sebenarnya cukup kecil sehingga ini masuk akal jika kita melihat pada kerangka data
+
+78
+00:05:27,100 --> 00:05:29,560
+yang hanya memiliki 0 atau 9 sehingga ini berfungsi.
+
+79
+00:05:29,560 --> 00:05:32,890
+Kerangka data khas dengan indeks berurutan yang mungkin ingin Anda lakukan.
+
+80
+00:05:33,100 --> 00:05:38,980
+Tetapi jika itu adalah indeks kategorikal maka sebagai kategori kita hanya akan mencantumkan nilai-nilai per setiap kolom dan Anda benar-benar dapat juga
+
+81
+00:05:38,980 --> 00:05:43,360
+membuat ini untuk ditumpuk dengan mengirimkan dalam tumpukan sama dengan true dan Anda akan mendapatkan plot
+
+82
+00:05:46,180 --> 00:05:47,530
+yang terlihat seperti ini.
+
+83
+00:05:47,530 --> 00:05:51,190
+Pada dasarnya hal yang persis sama kecuali kecuali yang menumpuk nilai.
+
+84
+00:05:51,190 --> 00:05:54,780
+Secara pribadi saya benar-benar akan merekomendasikan kemudahan itu melihat lebih banyak dan untuk jenis plot ini.
+
+85
+00:05:54,910 --> 00:06:00,100
+Tetapi jika Anda hanya melakukan analisis yang sangat cepat hal semacam ini akan bekerja untuk
+
+86
+00:06:00,100 --> 00:06:01,480
+Anda hanya membatalkannya.
+
+87
+00:06:01,630 --> 00:06:04,180
+Sekarang disebut histogram.
+
+88
+00:06:04,180 --> 00:06:06,500
+Hanya untuk memperjelas seperti apa itu lagi.
+
+89
+00:06:06,530 --> 00:06:13,780
+Jadi akan menyebutnya mengatakan jika satu titik plot baru saja kita pernah melihat ini sebelumnya.
+
+90
+00:06:14,020 --> 00:06:15,040
+Dan inilah histogram kami.
+
+91
+00:06:15,040 --> 00:06:17,110
+Dan Anda dapat menentukan jumlah sampah yang Anda inginkan.
+
+92
+00:06:17,300 --> 00:06:24,430
+Jadi, jika Anda ingin jumlah sampah yang lebih besar untuk mendapatkan kejelasan sedikit lebih jauh sejauh plot Panthers
+
+93
+00:06:24,460 --> 00:06:30,640
+pergi dan melakukan hal-hal yang dibangun dalam histogram Panda mungkin adalah yang paling banyak digunakan.
+
+94
+00:06:30,640 --> 00:06:35,070
+Anda juga dapat melakukan plot garis yang merupakan salah satu yang umum saya suka gunakan untuk Pandurs.
+
+95
+00:06:35,230 --> 00:06:39,630
+Sebagai contoh jika kita melihat EF 1, ingat bahwa indeks deret waktu kita.
+
+96
+00:06:39,790 --> 00:06:43,500
+Mari kita bayangkan bahwa kita ingin memplot data dari salah satu seri waktu ini.
+
+97
+00:06:43,600 --> 00:06:47,590
+Anda dapat melanjutkan dan hanya mengatakan satu DF plot dan kemudian menelepon.
+
+98
+00:06:47,590 --> 00:06:49,920
+Ini hanya akan membuat plot garis.
+
+99
+00:06:50,290 --> 00:06:54,550
+Dan untuk plot garis Anda harus menentukan X dan Y.
+
+100
+00:06:54,550 --> 00:07:03,400
+Jadi dalam hal ini saya ingin X menjadi indeks aktual saya sehingga saya dapat mengatakan jika satu indeks dan saya ingin y saya menjadi salah satu dari
+
+101
+00:07:03,400 --> 00:07:06,250
+kolom ini dan Anda memasukkan kolom sebagai string.
+
+102
+00:07:06,370 --> 00:07:07,500
+Jadi saya ingin pergi kurang spesifik.
+
+103
+00:07:07,540 --> 00:07:09,110
+Katakanlah B.
+
+104
+00:07:09,940 --> 00:07:14,590
+Dan jika saya menjalankan ini, saya mendapatkan plot yang terlihat seperti ini.
+
+105
+00:07:14,600 --> 00:07:15,770
+Umumnya hanya berupa plot garis.
+
+106
+00:07:15,790 --> 00:07:19,900
+Jadi Anda bisa membayangkan jika ini adalah informasi stok dan Anda ingin merencanakannya dibandingkan waktu Anda bisa mendapatkan
+
+107
+00:07:19,900 --> 00:07:21,250
+sesuatu yang terlihat seperti ini.
+
+108
+00:07:21,520 --> 00:07:24,190
+Dan jadi ini semua dibangun dari lib plot itu.
+
+109
+00:07:24,250 --> 00:07:28,050
+Anda dapat mulai menambahkan argumen plot lib seperti ukuran yang Anda inginkan.
+
+110
+00:07:28,250 --> 00:07:31,420
+Jadi ingin sesuatu yang lebih luas.
+
+111
+00:07:31,420 --> 00:07:33,000
+Anda dapat melakukan sesuatu seperti ini.
+
+112
+00:07:33,130 --> 00:07:35,770
+Atau katakanlah saya ingin menyesuaikan garis.
+
+113
+00:07:35,860 --> 00:07:39,610
+Ya, Anda bisa melakukan LW seperti yang kami lihat tentang Plaut live.
+
+114
+00:07:39,740 --> 00:07:43,510
+Ini sejalan dengan sesuatu yang sedikit lebih kurus yang dapat Anda tambahkan di spidol.
+
+115
+00:07:43,510 --> 00:07:45,210
+Semua perintah peta tanpa plot ini lainnya.
+
+116
+00:07:45,370 --> 00:07:49,610
+Jadi semua yang Anda pelajari tentang plot itu dapat diterapkan pada plot bingkai data ini.
+
+117
+00:07:50,050 --> 00:07:52,310
+Sekarang mari kita lanjutkan dan periksa scatterplot.
+
+118
+00:07:52,810 --> 00:07:59,920
+Jadi katakanlah saya punya DF yang bisa saya katakan plot yang tersebar dan Anda harus menentukan x dan
+
+119
+00:07:59,920 --> 00:08:00,400
+y.
+
+120
+00:08:00,490 --> 00:08:05,110
+Jadi untuk ini, mari kita lanjutkan dan lewati serta rangkaian nama kolom.
+
+121
+00:08:05,410 --> 00:08:10,240
+Jadi a dan b dan ini akan membuat scatterplot yang terlihat bagus untuk kita.
+
+122
+00:08:10,330 --> 00:08:15,150
+Hal lain yang dapat Anda lakukan adalah mengatur warna berdasarkan pada kolom lain.
+
+123
+00:08:15,160 --> 00:08:24,160
+Jadi misalnya Anda bisa mengatakan melihat warna akan sama dengan kolom C.
+
+124
+00:08:24,220 --> 00:08:27,220
+Jadi jika saya hanya membaca bahwa itu membuat saya hitam dan putih.
+
+125
+00:08:27,220 --> 00:08:32,010
+Jadi jika saya melihat apakah seseorang hanya menjelaskan apa yang kita lakukan di sini.
+
+126
+00:08:32,010 --> 00:08:36,790
+Data dari saat kami memiliki nilai untuk a dan b dan kami memiliki nilai untuk ..
+
+127
+00:08:36,820 --> 00:08:42,250
+Jadi pada dasarnya kami sekarang menunjukkan tiga tingkat informasi plot tiga dimensi jika Anda mau.
+
+128
+00:08:42,250 --> 00:08:48,430
+Karena kita memiliki versus B dan kemudian argumen ketiga melihat ditampilkan oleh warna dan Anda benar-benar dapat pasan melihat
+
+129
+00:08:49,360 --> 00:08:52,330
+peta sebagai argumen kemudian melewati peta warna Anda sendiri
+
+130
+00:08:52,330 --> 00:08:57,820
+Jadi misalnya keren hangat yang pernah Anda lihat sebelumnya dan sekarang Anda menunjukkan tiga tingkat informasi
+
+131
+00:08:57,970 --> 00:09:02,110
+versus B di mana mereka berdiri dan kemudian nilai warna untuk ..
+
+132
+00:09:02,140 --> 00:09:06,500
+Terkadang orang tidak suka menunjukkan sesuatu berdasarkan warna tetapi lebih suka menunjukkannya berdasarkan ukuran.
+
+133
+00:09:06,520 --> 00:09:09,910
+Anda benar-benar dapat melakukannya juga alih-alih meneruskan C sebagai argumen.
+
+134
+00:09:09,910 --> 00:09:12,440
+Di sini Anda hanya akan pergi dan lulus.
+
+135
+00:09:12,520 --> 00:09:18,150
+S dan for s Anda akan melanjutkan dan di kolom bingkai data.
+
+136
+00:09:18,460 --> 00:09:24,100
+Jadi untuk ini, Anda harus benar-benar lulus dalam kolom bingkai data itu sendiri dan Anda mungkin jika Anda
+
+137
+00:09:24,100 --> 00:09:26,470
+hanya melakukan ini poinnya akan terlalu kecil.
+
+138
+00:09:27,110 --> 00:09:30,820
+Dan kemudian yang dapat Anda lakukan adalah mengalikannya dengan semacam faktor.
+
+139
+00:09:31,390 --> 00:09:40,000
+Jadi, Anda dapat melihat titik-titiknya adalah versus B dan ukurannya menunjukkan seberapa besar nilai C atau lebih besar
+
+140
+00:09:40,000 --> 00:09:41,520
+satu sama lain.
+
+141
+00:09:41,560 --> 00:09:41,980
+Baiklah.
+
+142
+00:09:42,010 --> 00:09:45,880
+Ini adalah jenis hal di mana Anda mungkin tidak akan mengingat ini dari atas
+
+143
+00:09:45,880 --> 00:09:50,320
+kepala Anda, Anda akan kembali ke buku catatan Jupiter yang saya kumpulkan untuk Anda dan menggunakannya
+
+144
+00:09:50,320 --> 00:09:52,090
+sebagai referensi atau lihat dokumentasi.
+
+145
+00:09:52,090 --> 00:09:55,010
+Ayo maju dan beralih ke plot kotak lagi.
+
+146
+00:09:55,030 --> 00:09:59,980
+Saya sangat suka seaborne untuk plot kotak tetapi jika Anda hanya ingin analisis cepat panda plot kotak dapat melakukannya
+
+147
+00:09:59,980 --> 00:10:00,920
+untuk Anda juga.
+
+148
+00:10:00,940 --> 00:10:08,740
+Jadi Anda hanya meneruskan seluruh kotak panggilan frame plot panggilan data dan di sini Anda dapat melihat plot kotak yang pada dasarnya
+
+149
+00:10:08,740 --> 00:10:11,270
+dilakukan secara otomatis untuk Anda per kolom
+
+150
+00:10:11,290 --> 00:10:16,390
+Jadi hanya mengambil setiap kolom sebagai kategori dan kemudian plot distribusi untuk Anda sebagai plot kotak
+
+151
+00:10:16,920 --> 00:10:17,680
+Baiklah.
+
+152
+00:10:17,680 --> 00:10:24,970
+Karena dengan berbagai data Anda dapat melakukan plot heksagonal yang sebenarnya Anda lihat sebelumnya dengan Pandurs maafkan saya
+
+153
+00:10:24,970 --> 00:10:25,970
+itu Seaborn.
+
+154
+00:10:26,200 --> 00:10:30,400
+Tetapi biarkan saya pergi dan membuat kerangka data baru agar ini benar-benar muncul dengan benar.
+
+155
+00:10:30,520 --> 00:10:33,780
+Jadi saya ingin mengatakan frame data PD.
+
+156
+00:10:33,780 --> 00:10:42,400
+Saya akan melewatkan beberapa data acak yang dijalankan kemudian dan saya akan memiliki 1000 ini dengan mengatakan dua dan
+
+157
+00:10:42,400 --> 00:10:48,020
+kemudian saya akan lulus dan kolom menjadi hanya a dan b.
+
+158
+00:10:49,580 --> 00:10:52,650
+Dan jika kita melihat pada kerangka data kita terlihat seperti ini.
+
+159
+00:10:52,650 --> 00:10:53,700
+Hanya beberapa data acak.
+
+160
+00:10:53,740 --> 00:10:54,700
+Sebuah freebie.
+
+161
+00:10:54,880 --> 00:11:01,620
+Saya hanya ingin beberapa poin acak di sini dan apa yang bisa saya lakukan karena ini adalah varian adalah dua variabel di sini.
+
+162
+00:11:01,660 --> 00:11:10,990
+Dan B saya bisa mengatakan plot Hexton pass dan x sama dengan massa dan Y sama dengan B.
+
+163
+00:11:11,330 --> 00:11:14,750
+Dan jika Anda hanya melakukan ini, Anda akan mendapatkan plot hex.
+
+164
+00:11:14,980 --> 00:11:19,090
+Sekarang ini pada dasarnya seperti sebaran kecuali itu adalah heksagonal.
+
+165
+00:11:19,210 --> 00:11:21,710
+Sekarang ukuran bin sangat kecil.
+
+166
+00:11:21,730 --> 00:11:27,170
+Jadi untuk mengubah itu Anda bisa mengatakan ukuran grid sama dengan 25.
+
+167
+00:11:27,580 --> 00:11:33,730
+Dan ini akan memperbesar ukuran segi enam dan pada dasarnya segi enam menjadi lebih gelap karena ada lebih banyak poin
+
+168
+00:11:33,730 --> 00:11:39,760
+di dalamnya dan Anda juga dapat mengubah pemetaan warna di sini dan mengatakan Lihat peta sama dengan yang
+
+169
+00:11:39,760 --> 00:11:40,180
+lain.
+
+170
+00:11:40,180 --> 00:11:45,930
+Sebagai contoh, jika kita ingin kehangatan menjadi pemetaan warna kami, Anda dapat melakukannya juga.
+
+171
+00:11:46,000 --> 00:11:49,980
+Dan akhirnya kita bisa melakukan plot estimasi kepadatan kernel.
+
+172
+00:11:50,110 --> 00:11:56,020
+Jadi jika karena alasan tertentu Anda tidak hanya ingin histogram tetapi Anda ingin estimasi kepadatan
+
+173
+00:11:56,020 --> 00:12:02,700
+kernel Anda dapat memanggil frame data Anda atau kolom dari frame data Anda dan kemudian cissé plot Haidee.
+
+174
+00:12:03,080 --> 00:12:08,680
+Ini akan membuat plot estimasi kepadatan kernel ini untuk Anda dan Anda dapat melakukan hal yang sama dengan densitas yang merupakan panggilan
+
+175
+00:12:09,170 --> 00:12:10,450
+lain yang dapat Anda lakukan.
+
+176
+00:12:10,450 --> 00:12:15,880
+Jadi katakanlah kepadatan dan itu akan menjadi hal yang sama.
+
+177
+00:12:15,880 --> 00:12:20,410
+Jadi jika Anda menginginkan plot estimasi kepadatan atau kernel, hal itu akan menjadi hal yang sama
+
+178
+00:12:20,410 --> 00:12:23,320
+dan Anda juga dapat melakukannya dari seluruh kerangka data.
+
+179
+00:12:23,320 --> 00:12:29,890
+Anda tidak perlu melakukannya hanya dari satu kolom jika Anda ingin membandingkan plot estimasi kepadatan kernel dari
+
+180
+00:12:29,890 --> 00:12:32,220
+semua kolom dalam bingkai data Anda.
+
+181
+00:12:32,230 --> 00:12:32,590
+Baiklah.
+
+182
+00:12:32,590 --> 00:12:33,200
+Itu dia.
+
+183
+00:12:33,280 --> 00:12:38,920
+Mudah-mudahan Anda dapat melihat mengapa metode memplot langsung dari Pandurs ini jauh lebih mudah daripada memanggil
+
+184
+00:12:38,920 --> 00:12:43,650
+lib plot peta penuh dan menyeimbangkan kemudahan penggunaan dengan kontrol atas gambar.
+
+185
+00:12:43,720 --> 00:12:47,800
+Anda harus mencatat, jika Anda benar-benar ingin menyesuaikan gambar Anda, Anda harus
+
+186
+00:12:47,800 --> 00:12:50,230
+kembali ke Seaborn atau memetakan lib plot.
+
+187
+00:12:50,470 --> 00:12:55,390
+Perintah semacam ini benar-benar hanya untuk analisis cepat data Anda dan Anda mungkin hanya pergi ke buku
+
+188
+00:12:55,390 --> 00:13:00,130
+catatan dengan cepat referensi jenis plot yang ingin Anda buat dan kemudian membatalkannya dari frame data atau
+
+189
+00:13:00,130 --> 00:13:02,190
+membatalkannya dari kolom atau data bingkai.
+
+190
+00:13:02,320 --> 00:13:06,370
+Sejauh bagaimana kita akan menggunakan ini selama kursus, satu-satunya saat kita mungkin
+
+191
+00:13:06,370 --> 00:13:10,840
+akan menggunakan ini adalah hanya dengan plot garis atau histogram untuk menyebutnya sangat cepat.
+
+192
+00:13:10,840 --> 00:13:16,170
+Untuk lebih maju, komplotan kotak Haskel atau plot bar ini saya sangat merekomendasikan untuk pergi dengan Seaborn.
+
+193
+00:13:17,340 --> 00:13:22,570
+Baiklah saya harap Anda menemukan ini berguna dan saya akan melihat Anda di kuliah berikutnya atau kami akan menggambarkan latihan cepat
+
+194
+00:13:22,570 --> 00:13:25,720
+bagi Anda untuk mempraktekkan apa yang baru saja kami pelajari di sini.
+
+195
+00:13:25,720 --> 00:13:27,430
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

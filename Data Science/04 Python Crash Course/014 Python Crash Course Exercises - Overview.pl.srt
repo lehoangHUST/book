@@ -1,0 +1,215 @@
+1
+00:00:05,340 --> 00:00:11,400
+Witam wszystkich i zapraszam do wykładu z omówienia ćwiczeń na kursie Pythona w tym wykładzie.
+
+2
+00:00:11,400 --> 00:00:15,560
+Otrzymujemy krótki przegląd notatnika zeszytowego i sposób podejścia do ćwiczenia.
+
+3
+00:00:15,570 --> 00:00:18,250
+Pozwól, że przejdę dalej i pokażę ci, gdzie możesz znaleźć notatnik do ćwiczeń.
+
+4
+00:00:18,530 --> 00:00:25,490
+OK, oto jestem w twoim repozytorium pod folderem z pytaniem o crash, zobaczysz trzy zeszyty.
+
+5
+00:00:25,510 --> 00:00:30,760
+Kurs zderzeń Python zawierający notatki, które właśnie przeszliśmy w czteroosobowej serii wykładów.
+
+6
+00:00:30,930 --> 00:00:35,380
+Następnie masz kurs zderzenia Python z ćwiczeniami IPY i B.
+
+7
+00:00:35,550 --> 00:00:39,690
+To jest plik notatnika, który będziemy używać do ćwiczeń, a zobaczysz notes
+
+8
+00:00:39,780 --> 00:00:40,280
+rozwiązania.
+
+9
+00:00:40,290 --> 00:00:46,580
+Tutaj wchodzisz i klikasz na notebooka ćwiczeń, na którym powinien wyglądać notebook wyglądający tak.
+
+10
+00:00:46,590 --> 00:00:50,850
+I znowu jest to opcjonalne ćwiczenie sprawdzające podstawy Pythona.
+
+11
+00:00:50,850 --> 00:00:55,920
+Jeśli uważasz, że to ćwiczenie jest niezwykle trudne, prawdopodobnie nie jesteś jeszcze gotowy na resztę Kursu i
+
+12
+00:00:55,940 --> 00:00:58,700
+nie masz wystarczająco dużo doświadczenia w programowaniu, aby kontynuować.
+
+13
+00:00:58,900 --> 00:01:03,300
+A proponuję, abyś wziął inny kurs bardziej ukierunkowany na kompletnych początkujących, jak
+
+14
+00:01:03,300 --> 00:01:06,030
+na przykład kompletny obóz do nauki Pythona.
+
+15
+00:01:06,160 --> 00:01:10,230
+Jednak ćwiczenia te powinny być proste i proste.
+
+16
+00:01:10,230 --> 00:01:14,350
+Na przykład ten pierwszy pyta cię, co jest 7 do potęgi.
+
+17
+00:01:14,460 --> 00:01:20,790
+Miejmy nadzieję, że widzisz odpowiedź tutaj jako wynik, do którego trafisz do tej komórki lub jakikolwiek identyfikator, którego wolisz
+
+18
+00:01:20,790 --> 00:01:23,900
+używać, i użyjesz Pythona, by odpowiedzieć na to pytanie.
+
+19
+00:01:23,910 --> 00:01:29,340
+Musisz tylko dobrze zapamiętać, jak zrobić wykładniczą moc w Pythonie.
+
+20
+00:01:29,340 --> 00:01:34,110
+Będzie nadal zadawał ci inne pytania, takie jak podzielenie łańcucha na listę, więc miejmy nadzieję, że
+
+21
+00:01:34,110 --> 00:01:38,430
+pamiętam, jak podzielić łańcuch z pewną szczególną metodą na listę i tak dalej.
+
+22
+00:01:38,430 --> 00:01:39,570
+Więc idź dalej.
+
+23
+00:01:39,580 --> 00:01:42,030
+Są przykłady wydajności tego, co powinieneś dostać.
+
+24
+00:01:42,210 --> 00:01:45,540
+Masz pytanie, jaka jest główna różnica między krotką a listą.
+
+25
+00:01:45,540 --> 00:01:49,050
+W ten sposób możesz po prostu odpowiedzieć na głos, nie są to pisma, które myślę, że nie ma
+
+26
+00:01:49,050 --> 00:01:50,650
+na to kodu, tylko pytam, jakie różnice.
+
+27
+00:01:50,850 --> 00:01:55,290
+Następnie chcę, abyś utworzył funkcję, która pobiera domenę witryny internetowej e-mail z łańcucha i formularza
+
+28
+00:01:55,290 --> 00:01:56,850
+użytkownika w domenie dot com.
+
+29
+00:01:56,850 --> 00:02:02,490
+Więc jeśli masz wywołanie funkcji, coś takiego jak domena sprawi, że powinieneś być w stanie przekazać
+
+30
+00:02:02,550 --> 00:02:06,150
+ciąg tego formatu i po prostu pobrać tę domenę.
+
+31
+00:02:06,180 --> 00:02:08,640
+Więc wejdź i stwórz jakąś funkcję.
+
+32
+00:02:08,700 --> 00:02:14,540
+Możesz wyjść i nazwać ją domeną get, która pobiera ciąg adresu e-mail i zwraca domenę
+
+33
+00:02:14,540 --> 00:02:18,850
+otrzymaną ze strony internetowej, do której ta poczta e-mail jest hostem.
+
+34
+00:02:18,930 --> 00:02:23,910
+Następnie możesz utworzyć podstawową funkcję, która zwraca wartość true, jeśli słowo pies znajduje się
+
+35
+00:02:23,910 --> 00:02:25,050
+w strumieniu wejściowym.
+
+36
+00:02:25,200 --> 00:02:29,250
+I nie chcę, abyś musiał się martwić o skrajne przypadki, takie jak interpunkcja dołączana do
+
+37
+00:02:29,670 --> 00:02:31,620
+słowa "pies", ale uwzględniają wielkie litery.
+
+38
+00:02:31,620 --> 00:02:35,990
+Znowu nie mamy do czynienia z każdym przypadkiem, który możesz znaleźć.
+
+39
+00:02:36,000 --> 00:02:42,690
+Po prostu podstawową ideą szukania ciągu znaków dla słowa, a następnie chcemy utworzyć funkcję, która może zliczać
+
+40
+00:02:42,830 --> 00:02:46,260
+ile razy słowo pies występuje w ciągu znaków.
+
+41
+00:02:46,260 --> 00:02:48,220
+I znowu możesz ignorować przypadki skrajne.
+
+42
+00:02:48,390 --> 00:02:52,290
+Na przykład ciąg ten pies biegnie szybciej niż inny pies.
+
+43
+00:02:52,410 --> 00:02:58,840
+DAGA Przebij dwa razy, aby pies powrócił, aby wykonać funkcję o nazwie "Zły pies".
+
+44
+00:02:58,930 --> 00:03:03,510
+Nie chcą, abyś używał wyrażeń lambda i funkcji Filcher do odfiltrowywania słów z listy, które nie
+
+45
+00:03:03,510 --> 00:03:05,080
+zaczynają się od litery S.
+
+46
+00:03:05,100 --> 00:03:09,770
+Na przykład, jeśli otrzymasz sekwencję tej listy, powinna ona zostać przefiltrowana do tej listy.
+
+47
+00:03:09,810 --> 00:03:11,080
+Zupa i sałata.
+
+48
+00:03:11,670 --> 00:03:13,230
+I tutaj jest ostatni problem.
+
+49
+00:03:13,260 --> 00:03:17,700
+Teraz możesz iść dalej i przeczytać opis, ale w zasadzie będziesz wypełniał tę
+
+50
+00:03:17,820 --> 00:03:20,970
+funkcję, aby rozwiązać ten mały ostateczny problem tutaj.
+
+51
+00:03:21,030 --> 00:03:27,090
+A to wiąże się z niektórymi, jeśli elefant else, wraz z tworzeniem funkcji, jeśli masz jakieś pytania, możesz opublikować
+
+52
+00:03:27,090 --> 00:03:30,350
+fora Q &amp; A, a ja z chęcią ci pomogę.
+
+53
+00:03:30,390 --> 00:03:31,120
+Dziękuję wszystkim.
+
+54
+00:03:31,170 --> 00:03:35,090
+Kolejnym krokiem jest omówienie rozwiązań tego ćwiczenia

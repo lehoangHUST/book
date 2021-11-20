@@ -1,0 +1,479 @@
+1
+00:00:05,280 --> 00:00:07,320
+Ciao a tutti e benvenuti alla conferenza.
+
+2
+00:00:07,440 --> 00:00:11,140
+Remissione che unisce i frame di dati di cannonata a questa lezione.
+
+3
+00:00:11,160 --> 00:00:16,110
+Impareremo a combinare i frame di dati con una varietà di metodi invece di codificare la vita
+
+4
+00:00:16,110 --> 00:00:21,180
+in realtà, dato che questi metodi e comandi sono in realtà molto semplici e la maggior parte
+
+5
+00:00:21,180 --> 00:00:25,150
+della digitazione è solo la creazione di frame di dati da unire o unire.
+
+6
+00:00:25,170 --> 00:00:29,160
+Faremo solo di passare attraverso il quaderno delle lezioni per questa lezione.
+
+7
+00:00:29,160 --> 00:00:32,920
+Si chiama fusione di falegnameria e concatenazione ed è sotto la cartella del panda.
+
+8
+00:00:33,150 --> 00:00:35,610
+Andiamo avanti e saltiamo su quel quaderno di Giove ora.
+
+9
+00:00:35,670 --> 00:00:35,970
+Tutto ok.
+
+10
+00:00:35,970 --> 00:00:41,250
+Eccoci al quaderno di Giove per unire l'unione e la concatenazione.
+
+11
+00:00:41,250 --> 00:00:45,080
+Per prima cosa creeremo alcuni frame di dati di esempio con cui lavorare qui.
+
+12
+00:00:45,120 --> 00:00:50,150
+Ho importato PD Pand e usando un dizionario e una lista di numeri indice.
+
+13
+00:00:50,310 --> 00:00:57,000
+Ho creato tre frame di dati da DFA a ADF tre diamo un'occhiata a questi frame di dati vedremo
+
+14
+00:00:57,000 --> 00:01:05,470
+che abbiamo diff uno che è le colonne ABC e D e gli indici da 0 a 3 e poi DF 2 ha le
+
+15
+00:01:05,610 --> 00:01:12,370
+stesse colonne che gli indici sono Da 4 a 7 e quindi DF 3 ha gli indici fino a 11.
+
+16
+00:01:12,390 --> 00:01:17,430
+Parliamo di concatenazione concatenazione fondamentalmente incolla insieme i frame di dati.
+
+17
+00:01:17,440 --> 00:01:20,570
+Tieni presente che le dimensioni devono corrispondere a Machel sull'asse.
+
+18
+00:01:20,580 --> 00:01:23,100
+Stai cercando di concatenare per questo.
+
+19
+00:01:23,100 --> 00:01:29,540
+Basta usare PD dot com cat e quindi passare un elenco dei frame dei dati da concatenare insieme
+
+20
+00:01:29,690 --> 00:01:36,190
+qui ho intenzione di concatenare i frame di dati uno due e tre passandoli in una lista nel PD.
+
+21
+00:01:36,210 --> 00:01:39,090
+Funzione Concat
+
+22
+00:01:39,310 --> 00:01:43,600
+Possiamo vedere che per impostazione predefinita l'accesso a join on è zero.
+
+23
+00:01:43,620 --> 00:01:45,970
+Significa che unirà le file insieme.
+
+24
+00:01:46,440 --> 00:01:52,580
+e ora possiamo vedere che abbiamo b e c e d come colonne con gli indici 0 fino a 11.
+
+25
+00:01:52,590 --> 00:01:57,510
+Vediamo qui che sono stati concatenati con successo o fondamentalmente incollati insieme i frame di dati
+
+26
+00:01:57,560 --> 00:02:00,100
+Con ognuno dei punti dati in fila bene.
+
+27
+00:02:00,270 --> 00:02:06,090
+Ora puoi anche specificare che x è uguale a 1 se vuoi che si unisca e si unisca lungo le colonne o
+
+28
+00:02:06,150 --> 00:02:07,290
+concateni lungo le colonne.
+
+29
+00:02:07,680 --> 00:02:13,770
+E questo è un esempio di cosa succede quando usi PD su Kancha su questi tre frame di dati.
+
+30
+00:02:13,830 --> 00:02:15,900
+X è uguale a 1.
+
+31
+00:02:15,900 --> 00:02:20,970
+Si noti qui che abbiamo un sacco di valori mancanti e questo perché questi frame di dati non avevano
+
+32
+00:02:20,970 --> 00:02:23,800
+valori per tutti gli indici su cui si voleva concatenare.
+
+33
+00:02:24,060 --> 00:02:31,640
+Ad esempio con il frame 1 A B e C e D avete i valori da 0 a 3.
+
+34
+00:02:31,650 --> 00:02:37,290
+Comunque per tutto il percorso fino a 11 non avevi valori ed è per questo
+
+35
+00:02:37,290 --> 00:02:44,850
+che ha riempito con Knolles quando ti sei unito a questo sono concatenato su dati in e frame dati 3 che
+
+36
+00:02:44,850 --> 00:02:50,910
+fondamentalmente significa quando stai lavorando con concatenazione e P-doc concat tu " Voglio assicurarmi di avere
+
+37
+00:02:51,120 --> 00:02:53,960
+informazioni allineate correttamente quando ti unisci agli assi.
+
+38
+00:02:54,120 --> 00:02:58,850
+In questo caso, abbiamo voluto unire un accesso uguale a 0 per allineare tutto correttamente.
+
+39
+00:02:58,860 --> 00:03:00,740
+Come si specifica l'unione lungo le colonne.
+
+40
+00:03:00,750 --> 00:03:02,100
+Invia un seguito a uno.
+
+41
+00:03:02,250 --> 00:03:04,890
+Avremo un sacco di informazioni mancanti.
+
+42
+00:03:04,890 --> 00:03:09,450
+Molto spesso probabilmente ti unirai alle colonne insieme, quindi ti unirai di fatto.
+
+43
+00:03:09,450 --> 00:03:11,060
+L'accesso è uguale a 1.
+
+44
+00:03:11,080 --> 00:03:15,890
+Tuttavia assicurati di conoscere i tuoi dati e ciò che effettivamente vuoi concatenare prima di scegliere un accesso.
+
+45
+00:03:16,710 --> 00:03:19,560
+Va bene, andiamo avanti e procediamo.
+
+46
+00:03:19,650 --> 00:03:22,440
+In questo caso, creeremo altri frame di dati di esempio.
+
+47
+00:03:22,440 --> 00:03:27,780
+Uno chiamato a sinistra e uno chiamato proprio qui per dare un'occhiata a sinistra.
+
+48
+00:03:27,780 --> 00:03:34,680
+a K3 abbiamo un frame dati giusto che ha un frame di dati molto simile tranne che ha diverse colonne C e D.
+
+49
+00:03:34,680 --> 00:03:40,340
+Abbiamo colonne A e B con alcuni valori in esse e quindi abbiamo una colonna chiave da k 0
+
+50
+00:03:40,470 --> 00:03:45,690
+Tuttavia, la colonna chiave è esattamente la stessa del frame di dati sinistro così pesantemente lasciato e
+
+51
+00:03:45,690 --> 00:03:51,850
+il panderer del frame dati giusto è in grado di utilizzare la funzione di unione per eseguire la logica di unione.
+
+52
+00:03:51,870 --> 00:03:55,020
+È molto simile alla fusione di tabelle sequel insieme.
+
+53
+00:03:55,230 --> 00:03:59,610
+E se non lavori di seguito, non devi preoccuparti troppo di questo, ma ti mostrerò
+
+54
+00:03:59,610 --> 00:04:02,100
+le basi su come unire due frame di dati.
+
+55
+00:04:02,100 --> 00:04:07,790
+Dite solo PD che si fonde e quindi passa il frame di dati sinistro e il frame dati corretto.
+
+56
+00:04:07,920 --> 00:04:14,470
+O semplicemente i dati pasan da uno o frame dati a qualsiasi frame di dati che si desidera unire insieme.
+
+57
+00:04:14,550 --> 00:04:16,840
+Per impostazione predefinita, li unirà internamente.
+
+58
+00:04:17,040 --> 00:04:22,440
+E se non hai familiarità con inor per quanto riguarda la fusione di siecle, non preoccuparti, usa solo
+
+59
+00:04:22,470 --> 00:04:23,160
+l'interno predefinito.
+
+60
+00:04:23,220 --> 00:04:26,700
+Ancora più importante imparare su questo su.
+
+61
+00:04:26,700 --> 00:04:31,200
+Fondamentalmente, quando ti unisci, vuoi unirmi a una colonna chiave e puoi effettivamente passare in
+
+62
+00:04:31,200 --> 00:04:33,740
+una o più colonne chiave che vedremo in seguito.
+
+63
+00:04:33,810 --> 00:04:39,930
+Ma fondamentalmente ciò che sta accadendo qui è che combineremo o uniremo questi frame di dati insieme su
+
+64
+00:04:39,930 --> 00:04:41,090
+questa colonna chiave.
+
+65
+00:04:41,220 --> 00:04:46,650
+In questo modo invece di concatenarli avremmo due colonne chiave che possiamo unire in modo da
+
+66
+00:04:46,650 --> 00:04:49,960
+unirle o unirle sulla stessa colonna chiave che condividono.
+
+67
+00:04:50,280 --> 00:04:55,050
+Quindi la logica qui è quando usi il PD che si fonde invece di incollare i
+
+68
+00:04:55,140 --> 00:04:58,260
+frame di dati insieme, vedrai dove i valori corrispondono alle colonne.
+
+69
+00:04:58,260 --> 00:05:03,630
+In questo caso la colonna chiave e quindi creare le righe utilizzando quella colonna chiave.
+
+70
+00:05:03,630 --> 00:05:06,570
+Lasciami andare e mostrarti un paio di esempi più complicati.
+
+71
+00:05:06,900 --> 00:05:14,910
+semplicemente passare nel primo frame dati e il secondo frame di dati e quindi è possibile specificare on e si può passare in un elenco
+
+72
+00:05:15,900 --> 00:05:20,820
+di chiavi se si desidera effettivamente unire più chiavi come chiave uno o chiave per.
+
+73
+00:05:21,050 --> 00:05:26,310
+Qui ho i frame di dati sinistro e destro e noteremo qui che hanno due chiavi
+
+74
+00:05:26,310 --> 00:05:33,420
+uno e due, altrimenti sono esattamente uguali a sinistra e destra abbiamo appena visto prima è possibile utilizzare PD che si fondono
+
+75
+00:05:33,870 --> 00:05:38,660
+E qui ci sono altri esempi usando l'unione esterna o unione.
+
+76
+00:05:38,730 --> 00:05:44,850
+In questo momento, se non hai familiarità con la sintassi delle sequenze, come interna o esterna destra o sinistra, ti affidi
+
+77
+00:05:44,850 --> 00:05:49,290
+troppo a questo problema, in realtà non le usiamo nel corso, per impostazione predefinita assumeremo
+
+78
+00:05:49,290 --> 00:05:53,150
+sempre un aspetto simile a questo nel corso usa solo un join interno.
+
+79
+00:05:53,190 --> 00:05:57,700
+a fare il genere di sequel che si fondono e hai già familiarità con la
+
+80
+00:05:57,690 --> 00:06:04,020
+sintassi sequel, sappi che Pancho ha questo come l'operatore è un parametro da usare nel caso tu voglia la funzionalità extra.
+
+81
+00:06:04,020 --> 00:06:05,810
+Tuttavia, se ti trovi a provare
+
+82
+00:06:06,030 --> 00:06:11,520
+Ma fondamentalmente dipende se usi le scritture esterne interne ecc. Potresti scoprire di avere alcuni valori
+
+83
+00:06:11,520 --> 00:06:16,890
+mancanti, quindi tienilo a mente mentre lavori con l'unione di PD.
+
+84
+00:06:16,920 --> 00:06:19,070
+Ecco un esempio di sinistra.
+
+85
+00:06:19,680 --> 00:06:25,080
+E infine siamo arrivati ​​a unire l'unire è un metodo conveniente per combinare le colonne di due
+
+86
+00:06:25,080 --> 00:06:29,310
+frame di dati dell'indice potenzialmente diversi in un unico frame di dati risultante.
+
+87
+00:06:29,400 --> 00:06:33,840
+Potresti essenzialmente pensare a questo come alla fusione, tranne che le chiavi a cui vuoi partecipare
+
+88
+00:06:33,840 --> 00:06:36,680
+sono effettivamente sul tuo indice invece che su una colonna.
+
+89
+00:06:36,690 --> 00:06:39,600
+Quindi qui ho creato due frame di dati a sinistra ea destra.
+
+90
+00:06:39,600 --> 00:06:45,620
+Notate che hanno colonne A B e poi CD e quindi l'indice è in realtà il punto in cui ci uniremo
+
+91
+00:06:46,490 --> 00:06:52,530
+a loro e la sintassi che è possibile usare è dire che il join sinistro a destra farà automaticamente un join
+
+92
+00:06:52,560 --> 00:06:53,990
+interno tra sinistra e destra.
+
+93
+00:06:54,060 --> 00:06:59,880
+Basandosi sulle chiavi dell'indice se si desidera unire questi due frame di dati in base a una delle loro colonne,
+
+94
+00:06:59,880 --> 00:07:05,220
+è necessario utilizzare l'unione ma la funzionalità del metodo di join si stacca da uno dei frame di dati.
+
+95
+00:07:05,210 --> 00:07:08,830
+Dici che partecipa e poi passa all'altro frame di dati e proprio come l'unione.
+
+96
+00:07:08,850 --> 00:07:13,030
+Puoi specificare COME come interno esterno sinistro ecc. Ricorda questo solo per gli utenti di sequel di eventi che hanno già familiarità con questa terminologia.
+
+97
+00:07:13,070 --> 00:07:17,380
+Se non lo conosci, non preoccuparti troppo.
+
+98
+00:07:17,430 --> 00:07:20,330
+Andiamo avanti e facciamo una rapida rassegna su come
+
+99
+00:07:20,370 --> 00:07:26,700
+unire i frame di dati di unione e cottony e andremo oltre gli argomenti chiave che dovresti uscire da questa lezione.
+
+100
+00:07:26,700 --> 00:07:29,000
+Per quanto riguarda la fusione dell'unione e
+
+101
+00:07:29,400 --> 00:07:34,800
+la concatenazione di frame di dati per concatenare o Glew frame di dati, il processo è abbastanza semplice.
+
+102
+00:07:34,800 --> 00:07:37,100
+Dici solo pecan cat e fai un elenco dei tuoi
+
+103
+00:07:37,320 --> 00:07:43,080
+frame di dati e poi assicurati di specificare l'asse corretto a seconda se vuoi unirli tra di loro per le righe o per le loro colonne.
+
+104
+00:07:43,080 --> 00:07:48,900
+tuo secondo frame di dati che vuoi unire e poi dici e puoi Pessin solo un chiave a colonna singola.
+
+105
+00:07:48,900 --> 00:07:54,960
+Poi hai PD che si fonde e PD che si fonde ti permette di unire insieme i frame di dati e
+
+106
+00:07:54,960 --> 00:07:59,190
+devi solo passare il tuo primo frame di dati che vuoi unire e poi il
+
+107
+00:07:59,190 --> 00:08:03,000
+Oppure puoi passare qualsiasi elenco di chiavi e per impostazione predefinita si unirà su Invio.
+
+108
+00:08:03,150 --> 00:08:08,420
+Se non hai familiarità con l'unione di tabelle sequel, non preoccuparti di questo, perché ti
+
+109
+00:08:08,610 --> 00:08:13,350
+preoccupi solo di un frame di dati sul lato sinistro di un frame di
+
+110
+00:08:13,590 --> 00:08:19,500
+dati sulla destra e quindi su una determinata colonna chiave o su un elenco di colonne chiave.
+
+111
+00:08:19,500 --> 00:08:20,550
+e quindi per
+
+112
+00:08:20,550 --> 00:08:26,730
+unirmi è un metodo più avanzato per combinare colonne di due frame di dati indicizzati potenzialmente diversi.
+
+113
+00:08:26,730 --> 00:08:31,560
+Questa è davvero l'unica funzionalità di PD unificata che userò per tutto il corso
+
+114
+00:08:31,560 --> 00:08:32,150
+È molto simile
+
+115
+00:08:32,160 --> 00:08:37,620
+alla fusione, tranne che in realtà si uniscono all'indice anziché a una colonna e la sintassi per questo è solo il nome del disegno del frame di dati sinistro sulla destra.
+
+116
+00:08:37,620 --> 00:08:42,940
+In realtà non utilizzeremo il join durante il corso, ma voglio che tu ne sia consapevole e puoi
+
+117
+00:08:43,140 --> 00:08:48,090
+fare riferimento a questo quaderno o alla documentazione nel caso in cui tu voglia rivedere unirti.
+
+118
+00:08:48,090 --> 00:08:51,810
+Va bene, ottimo lavoro
+
+119
+00:08:52,110 --> 00:08:53,610
+Grazie e ci vediamo alla prossima lezione
+
+120
+00:08:53,730 --> 00:08:55,440
+&nbsp;

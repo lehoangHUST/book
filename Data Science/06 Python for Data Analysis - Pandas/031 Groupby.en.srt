@@ -1,0 +1,363 @@
+1
+00:00:05,280 --> 00:00:09,960
+Hello everyone and welcome to the group by lecture for pandas in this lecture we're going to show you
+
+2
+00:00:09,960 --> 00:00:15,530
+how to use the group by method to light a group rows of data together and call aggregate functions.
+
+3
+00:00:15,540 --> 00:00:20,850
+Now before we actually jump into the Jupiter notebook Let me quickly explain what group buy is in case
+
+4
+00:00:20,850 --> 00:00:25,950
+you don't have sequel experience or you all experience or most people are familiar of what a GROUP BY
+
+5
+00:00:25,950 --> 00:00:28,300
+statement actually does.
+
+6
+00:00:28,560 --> 00:00:34,890
+To put it simply grouped by allows you to group together rows based off of a column and then perform
+
+7
+00:00:34,890 --> 00:00:36,840
+some sort of aggregate function on them.
+
+8
+00:00:37,080 --> 00:00:43,390
+For instance in this example here we have three partitions of IDS one two and three.
+
+9
+00:00:43,470 --> 00:00:50,220
+And then we have several values for them we can group by the ID column and aggregate them using some
+
+10
+00:00:50,220 --> 00:00:56,130
+sort of aggregate function in every function is basically just a fancy term for any function that takes
+
+11
+00:00:56,130 --> 00:01:03,060
+and many values and then spits out or outputs a single value such as taking the sum of a bunch of values
+
+12
+00:01:03,330 --> 00:01:07,680
+and outputting the results or taking the average or standard deviation etc..
+
+13
+00:01:07,800 --> 00:01:13,950
+These are all aggregate function and that's all a group by method does it allows you to choose a column
+
+14
+00:01:13,950 --> 00:01:14,950
+to Group By.
+
+15
+00:01:15,000 --> 00:01:18,250
+It gathers all those rows together based off that column value.
+
+16
+00:01:18,440 --> 00:01:21,330
+And then you perform some sort of aggregate function on it.
+
+17
+00:01:21,360 --> 00:01:22,160
+All right.
+
+18
+00:01:22,200 --> 00:01:25,980
+But that being said let's go ahead and learn how to use GROUP BY with pandas.
+
+19
+00:01:26,010 --> 00:01:28,820
+I'm going to go ahead and jump to the Jupiter notebook.
+
+20
+00:01:28,860 --> 00:01:31,390
+All right so here we are at the Jupiter notebook.
+
+21
+00:01:31,530 --> 00:01:34,650
+I went ahead and copied and pasted this line of data.
+
+22
+00:01:34,660 --> 00:01:40,350
+It's basically just a dictionary from the notebook and this note book is just called by one of the pandas
+
+23
+00:01:40,350 --> 00:01:41,710
+folder.
+
+24
+00:01:41,760 --> 00:01:47,750
+OK you can go ahead and type this up manually but I would just say go ahead and copy this data just
+
+25
+00:01:47,780 --> 00:01:54,780
+a dictionary and then you can go ahead and say PD data frame and then passen that data dictionary and
+
+26
+00:01:54,780 --> 00:01:58,040
+it should automatically then create a data frame that looks like this.
+
+27
+00:01:58,050 --> 00:01:59,900
+And basically this is just a made up data.
+
+28
+00:02:00,000 --> 00:02:03,170
+We have a company column with three company codes.
+
+29
+00:02:03,330 --> 00:02:05,390
+Google Microsoft and Facebook.
+
+30
+00:02:05,520 --> 00:02:08,750
+Now we have a person column with a bunch of unique people in it.
+
+31
+00:02:08,910 --> 00:02:13,460
+And then we have some sales numbers 200 120 etc..
+
+32
+00:02:13,590 --> 00:02:19,020
+Now what we can do is use that group by method to group rows together based off of a column name for
+
+33
+00:02:19,020 --> 00:02:25,950
+instance let's go ahead and group by the company I'm going to go on and say ZF and then you say group
+
+34
+00:02:25,950 --> 00:02:32,070
+by call as a method and you pass in the column you want to group by this case.
+
+35
+00:02:32,070 --> 00:02:38,240
+I want a group by the company column and notice what I get out here I just do this.
+
+36
+00:02:38,400 --> 00:02:43,100
+I will get a group by object and it just points to where it's stored in memory.
+
+37
+00:02:43,350 --> 00:02:51,750
+What I can do is store this as a new variable so I can say something like like come for my company and
+
+38
+00:02:51,750 --> 00:02:55,290
+I have this group by object.
+
+39
+00:02:55,290 --> 00:02:58,250
+Then the second step of using Group By.
+
+40
+00:02:58,250 --> 00:03:03,090
+After you've grouped by that column is to go ahead and call some sort of aggregate function on it.
+
+41
+00:03:03,420 --> 00:03:10,320
+So for example if I wanted to get the mean by company it would look at the sales column and give me
+
+42
+00:03:10,320 --> 00:03:13,310
+the mean or average sale by the company.
+
+43
+00:03:13,320 --> 00:03:18,180
+The reason it can't do this for the person column is because these are strings and there's no way you
+
+44
+00:03:18,180 --> 00:03:23,490
+can just take the mean of a string and that means panderers just automatically ignores anything that's
+
+45
+00:03:23,610 --> 00:03:26,060
+a non-numeric column.
+
+46
+00:03:26,070 --> 00:03:32,520
+Likewise we can go ahead and perform other aggregate functions such as some of everything as far as
+
+47
+00:03:32,520 --> 00:03:33,760
+sales per company.
+
+48
+00:03:33,990 --> 00:03:42,900
+You can even do standard deviations the Vestey the etc. and you should notice that what I get back is
+
+49
+00:03:42,900 --> 00:03:48,760
+an actual data frame with an index called Company and the column value of sales.
+
+50
+00:03:49,110 --> 00:03:55,920
+And that means I could do stuff such as index offer so I could say by come up let's go ahead and sum
+
+51
+00:03:55,920 --> 00:04:02,430
+up all the sales by company so that some of sales by company and then I could even call something like
+
+52
+00:04:02,850 --> 00:04:06,440
+Dot ellos C F B.
+
+53
+00:04:07,000 --> 00:04:13,600
+And that gives me the sales some of Facebook now a lot of times what you're going to be doing is not
+
+54
+00:04:13,710 --> 00:04:17,510
+actually setting this group by object as a variable.
+
+55
+00:04:17,550 --> 00:04:19,670
+You'll probably would just call this all in one line.
+
+56
+00:04:19,710 --> 00:04:25,140
+Once you start getting really comfortable with pantless they'll say something like group by company
+
+57
+00:04:25,830 --> 00:04:27,920
+then you call something like some.
+
+58
+00:04:28,110 --> 00:04:35,160
+And then if you just want it for Facebook you are the call FBI and that's all the same thing just in
+
+59
+00:04:35,160 --> 00:04:36,420
+one line now.
+
+60
+00:04:36,660 --> 00:04:41,850
+Some other useful aggregate functions that you may find yourself doing are things such as count which
+
+61
+00:04:41,850 --> 00:04:44,570
+just counts the number of instances or column.
+
+62
+00:04:44,730 --> 00:04:49,890
+In this case it was able to return the person column because it's able to count how many instances of
+
+63
+00:04:49,890 --> 00:04:53,420
+a person occur in that column or company.
+
+64
+00:04:53,430 --> 00:04:57,360
+So we have two people and they have two sales each and that's makes sense.
+
+65
+00:04:57,360 --> 00:05:00,190
+You can also do things such as max and min.
+
+66
+00:05:00,960 --> 00:05:07,080
+And note here that it also returns the person because Python is able to store things in alphabetical
+
+67
+00:05:07,080 --> 00:05:09,410
+order and that's basically what I'm trying to show here.
+
+68
+00:05:09,480 --> 00:05:17,220
+The max is the latest towards the end of the alphabet and if you call in that's the earliest in the
+
+69
+00:05:17,220 --> 00:05:19,570
+alphabet C and C we have agencies here.
+
+70
+00:05:19,800 --> 00:05:23,310
+However you probably shouldn't be using min or max with a string column.
+
+71
+00:05:23,310 --> 00:05:27,320
+You'll probably use all these angry functions really with numeric columns.
+
+72
+00:05:27,330 --> 00:05:34,440
+One last useful thing I want to show you with group by is a lot of times you can use GROUP BY with the
+
+73
+00:05:35,160 --> 00:05:42,010
+described method and that gives you a bunch of useful information all at once so you can say ZF thought
+
+74
+00:05:42,030 --> 00:05:47,730
+group by the company name and then say the scribe and it will give you a bunch of information.
+
+75
+00:05:47,730 --> 00:05:53,230
+So for instance to count the mean the standard deviation the men and the max as well as the core tile
+
+76
+00:05:53,250 --> 00:05:55,060
+values for each company.
+
+77
+00:05:55,170 --> 00:05:59,490
+And if you don't like this format and you can actually transpose this so you can say something like
+
+78
+00:06:00,060 --> 00:06:08,330
+that transpose if you prefer each company to be a column instead of an actual index.
+
+79
+00:06:08,520 --> 00:06:13,530
+So whatever format you like better you can describe to that and then you can actually just call column
+
+80
+00:06:13,530 --> 00:06:14,260
+names off of this.
+
+81
+00:06:14,280 --> 00:06:18,780
+If you're just interested in a single company or a single column.
+
+82
+00:06:18,840 --> 00:06:21,150
+All right that's really it for group by.
+
+83
+00:06:21,150 --> 00:06:21,920
+It's quite basic.
+
+84
+00:06:21,930 --> 00:06:28,800
+You just call the data frame say Dopp grouped by the column you want to group by and then whatever aggregate
+
+85
+00:06:28,800 --> 00:06:34,140
+method you want to aggregate the column values to a single value.
+
+86
+00:06:34,140 --> 00:06:39,060
+And it usually only works on numeric columns depending on what kind of aggregate function you're working
+
+87
+00:06:39,060 --> 00:06:39,720
+with.
+
+88
+00:06:39,720 --> 00:06:45,450
+You'll get a lot more practice of group by as we go through the exercises as well as the capsule projects
+
+89
+00:06:45,450 --> 00:06:45,960
+.
+
+90
+00:06:45,960 --> 00:06:46,480
+All right.
+
+91
+00:06:46,620 --> 00:06:48,480
+Thanks everyone and I'll see you at the next lecture

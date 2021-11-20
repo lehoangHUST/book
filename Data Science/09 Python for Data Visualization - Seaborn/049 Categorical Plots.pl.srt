@@ -1,0 +1,919 @@
+1
+00:00:05,400 --> 00:00:10,590
+Witam wszystkich i zapraszam do wykładu kategorialnej fabuły dla seaborne S. rozprawiać.
+
+2
+00:00:10,590 --> 00:00:14,030
+Teraz skupimy się na podłączaniu jakościowych danych.
+
+3
+00:00:14,040 --> 00:00:16,760
+Przejdźmy dalej i przejdź do notatnika Jupiter, aby zacząć.
+
+4
+00:00:17,070 --> 00:00:21,950
+OK, jestem tutaj na notatniku Jupitera i już wstawiłem tutaj kilka linii kodu.
+
+5
+00:00:21,960 --> 00:00:28,440
+Powiedziałem, że importuję Seaborna i Cessnę. Poszedłem do przodu i powiedziałem mapę w linii, żeby zobaczyć
+
+6
+00:00:28,470 --> 00:00:30,150
+wizualizacje wewnątrz notatnika Jowisza.
+
+7
+00:00:30,300 --> 00:00:34,530
+A potem poszedłem naprzód i wczytałem zestaw danych
+
+8
+00:00:34,560 --> 00:00:42,840
+końcówek, a następnie sprawdziłem zestaw danych końcówek, które są w porządku, ponieważ kategoryczne wykresy dotyczyły głównie dystrybucji
+
+9
+00:00:42,840 --> 00:00:50,790
+rozkładowej kolumny, takiej jak płeć czy palacz w ciągu dnia. odniesienie do jednej z kolumn numerycznych
+
+10
+00:00:50,820 --> 00:00:53,450
+lub innej kolumny kategorialnej.
+
+11
+00:00:53,460 --> 00:00:59,610
+Zacznijmy od najbardziej podstawowego, kategorycznego wykresu, którym są wykresy słupkowe i możesz to zrobić, wywołując
+
+12
+00:00:59,610 --> 00:01:06,510
+wykresy słupkowe Asnessa, a wykres słupkowy to tylko ogólny wykres, który pozwala na agregację danych kategorycznych w
+
+13
+00:01:06,600 --> 00:01:11,940
+oparciu o pewną funkcję i domyślnie jest to środek, który można prawie
+
+14
+00:01:11,940 --> 00:01:16,190
+myśleć o tym jako o wizualizacji grupy przez działanie.
+
+15
+00:01:16,200 --> 00:01:18,400
+Pozwól, że przejdę dalej i pokażę, co przez to rozumiem.
+
+16
+00:01:18,600 --> 00:01:25,350
+Wchodzimy i ustawiamy x y i argumenty danych na wykres słupkowy wszelkiego rodzaju zestawy danych najłatwiejsze
+
+17
+00:01:25,440 --> 00:01:31,830
+wskazówki, a następnie co zamierzam zrobić i zrobić, to ustawić oś X na kategoryczną kolumnę.
+
+18
+00:01:31,930 --> 00:01:34,760
+W takim przypadku wybieram tutaj kolumnę płci.
+
+19
+00:01:35,490 --> 00:01:43,110
+A potem dla kolumny Y lub tak dla osi Y możemy wybrać kolumnę, która
+
+20
+00:01:43,140 --> 00:01:46,470
+jest liczbowa, na przykład rachunek całkowity.
+
+21
+00:01:46,470 --> 00:01:52,320
+A to stworzy wykres słupkowy i domyślnie to, co pokazuje tutaj, to średnia lub średnia
+
+22
+00:01:52,320 --> 00:01:53,510
+z całkowitego rachunku.
+
+23
+00:01:53,580 --> 00:01:55,800
+Jej kategoryczna wartość kolumny.
+
+24
+00:01:55,890 --> 00:02:02,640
+Zatem średni całkowity rachunek dla mężczyzn będzie nieznacznie wyższy niż średni całkowity rachunek dla kobiet.
+
+25
+00:02:03,330 --> 00:02:09,780
+I możesz dalej zmieniać obiekt znany jako estymator, jeśli chcesz w zasadzie wpłynąć na
+
+26
+00:02:10,050 --> 00:02:14,270
+to, co jest tutaj rzeczywistym grupowaniem lub agregacją.
+
+27
+00:02:14,580 --> 00:02:21,480
+I możemy to zrobić, dodając kolejny argument do oszacowania.
+
+28
+00:02:21,480 --> 00:02:23,370
+I tutaj zrobimy zakładki zmiany.
+
+29
+00:02:23,370 --> 00:02:28,300
+Możesz zobaczyć dokumentację notebooków Jupiter.
+
+30
+00:02:28,440 --> 00:02:31,850
+Estymator jest funkcją, która jest funkcją agregującą.
+
+31
+00:02:31,860 --> 00:02:36,900
+Tak więc jest to pewnego rodzaju funkcja statystyczna do oszacowania w każdym segmencie kategorycznym
+
+32
+00:02:36,900 --> 00:02:39,630
+i domyślnie będzie to średnia lub średnia.
+
+33
+00:02:39,810 --> 00:02:44,310
+Ale mogę też wprowadzić moje własne funkcje, jeśli posiadasz jakąś funkcję agregującą, którą możesz wykonać
+
+34
+00:02:44,310 --> 00:02:45,360
+i ją wykorzystać.
+
+35
+00:02:45,420 --> 00:02:47,380
+Teraz patrzymy na średni całkowity rachunek.
+
+36
+00:02:47,520 --> 00:02:52,820
+Ale załóżmy, że chcieliśmy na przykład określić odchylenie standardowe jej płci.
+
+37
+00:02:52,830 --> 00:02:55,560
+Czy istnieje więcej standardowych odchyleń od mężczyzn i ich całkowitego rachunku?
+
+38
+00:02:55,590 --> 00:02:59,860
+Więc więcej wariancji lub kobiet ma więcej wariancji.
+
+39
+00:02:59,860 --> 00:03:05,130
+Cóż, powiemy, że ważne jest to, że robimy ciasto, kiedy je kopiujemy i
+
+40
+00:03:05,130 --> 00:03:08,040
+wklejamy, i umieszczamy je w komórce powyżej.
+
+41
+00:03:08,120 --> 00:03:14,170
+Dalej, wstaw komórkę powyżej i powiedz, że ważne jest to, że jestem tutaj jako NPE.
+
+42
+00:03:14,250 --> 00:03:20,670
+A następnie w estymatorze zamierzam iść dalej i przekazać funkcję pie dla odchylenia standardowego, a
+
+43
+00:03:21,210 --> 00:03:27,630
+to powie mi, kiedy uruchomię to, co jest standardowym odchyleniem całkowitej kolumny rachunku na kategorię.
+
+44
+00:03:28,050 --> 00:03:30,510
+I możesz przekazać dowolną funkcję estymatora.
+
+45
+00:03:30,510 --> 00:03:31,730
+Możesz nawet tworzyć własne.
+
+46
+00:03:32,100 --> 00:03:37,380
+I możesz przekazać go do wykresu słupkowego, gdzie x jest kolumną kategorii, a Y jest kolumną liczbową.
+
+47
+00:03:37,770 --> 00:03:39,750
+Następnie przekazałeś swoje dane i jakiekolwiek dane szacunkowe.
+
+48
+00:03:39,750 --> 00:03:44,700
+A to jest po prostu agregacja lub w zasadzie tylko wizualizacja jakiegoś rodzaju grupy
+
+49
+00:03:44,700 --> 00:03:45,840
+według mechanizmu tutaj.
+
+50
+00:03:45,840 --> 00:03:54,840
+W porządku, przejdźmy dalej i wykorzystajmy to, wykonując wykres zliczania, że poletka liczące w morzu są zasadniczo takie same jak
+
+51
+00:03:54,840 --> 00:04:00,170
+wykres słupkowy, z wyjątkiem tego, że estymator jednoznacznie liczy liczbę wystąpień.
+
+52
+00:04:00,450 --> 00:04:09,020
+Z tego powodu ustawiamy tylko wartość x, a następnie siedzimy w danych równych wskazówkom.
+
+53
+00:04:09,510 --> 00:04:15,840
+I to jest w zasadzie to samo, co powiedzenie, że Pandas Thumb liczy się od
+
+54
+00:04:16,200 --> 00:04:18,310
+tej kolumny dla płci.
+
+55
+00:04:18,330 --> 00:04:18,730
+W porządku.
+
+56
+00:04:18,750 --> 00:04:23,580
+Teraz podstawa tego planu jest zasadniczo taka sama, jak wykres słupkowy, z tą różnicą, że oś Y została
+
+57
+00:04:23,580 --> 00:04:24,820
+już wybrana dla ciebie.
+
+58
+00:04:24,900 --> 00:04:26,500
+Będzie to liczyć tylko zdarzenia.
+
+59
+00:04:26,520 --> 00:04:30,570
+Tutaj widzimy więcej mężczyzn w zbiorze danych niż kobiety.
+
+60
+00:04:31,200 --> 00:04:34,800
+Przejdźmy dalej i porozmawiajmy o działkach pudełkowych i gwałtownych działkach.
+
+61
+00:04:34,800 --> 00:04:40,770
+Tego typu wykresy służą do wykazania, że rozkład danych kategorycznych, a także wykres pudełkowy, jest czasem
+
+62
+00:04:40,770 --> 00:04:42,710
+nazywany polem boksu i wąsów.
+
+63
+00:04:42,900 --> 00:04:48,220
+Pokazuje dystrybucję danych ilościowych w sposób, który, mam nadzieję, ułatwia porównania między
+
+64
+00:04:48,220 --> 00:04:49,130
+zmiennymi.
+
+65
+00:04:49,230 --> 00:04:50,710
+Ja pokażę ci, o co mi chodzi.
+
+66
+00:04:50,940 --> 00:05:00,630
+Zamierzam stworzyć wykres pudełkowy, na przykład S i S, a następnie prześlemy x i y w tym
+
+67
+00:05:00,630 --> 00:05:05,820
+przypadku wybiorę X jako kategoryczne punkty danych lub kolumnę.
+
+68
+00:05:05,880 --> 00:05:07,550
+I dlaczego to będzie numeryczne.
+
+69
+00:05:07,590 --> 00:05:09,560
+To będzie całkowite rachunku.
+
+70
+00:05:09,630 --> 00:05:14,220
+Więc tutaj spróbujemy zobaczyć rozkład całkowitego rachunku za dzień.
+
+71
+00:05:14,220 --> 00:05:18,170
+I na koniec muszę przekazać te dane jako wskazówki.
+
+72
+00:05:18,230 --> 00:05:20,460
+Zacznijmy i uruchom to.
+
+73
+00:05:21,030 --> 00:05:23,730
+I tutaj dostajemy nasze pudełko.
+
+74
+00:05:24,020 --> 00:05:24,400
+DOBRZE.
+
+75
+00:05:24,450 --> 00:05:29,640
+Ta ramka pokazuje podstawowe płytki zestawu danych, podczas gdy wąsy rozciągają się, aby pokazać resztę
+
+76
+00:05:29,640 --> 00:05:33,600
+dystrybucji, z wyjątkiem tych punktów, które znajdują się poza tymi wąsami.
+
+77
+00:05:33,630 --> 00:05:40,710
+Są one określone jako wartości odstające i zasadniczo można to po prostu zinterpretować, na przykład, jeśli spojrzymy na
+
+78
+00:05:40,710 --> 00:05:45,960
+czwartek jako dzień sam w sobie, mamy na rachunku całkowitym osi y.
+
+79
+00:05:46,350 --> 00:05:51,100
+A potem na osi X jest po prostu oddzielona kategorią lub dniem.
+
+80
+00:05:51,570 --> 00:05:55,770
+Więc jeśli spojrzę na tę niebieską w lewo, w czwartek, to zasadniczo mówi mi
+
+81
+00:05:55,770 --> 00:05:58,130
+to około 25 procent lub jedną czwartą.
+
+82
+00:05:58,150 --> 00:06:02,430
+Z tego powodu nazywane są one płytkami rdzeniowymi, punkty danych przechodzą od
+
+83
+00:06:02,490 --> 00:06:07,190
+środka szeptu do dołu, a następnie następna ćwierćnuta przechodzi od dołu pola do środka tutaj.
+
+84
+00:06:07,350 --> 00:06:09,460
+Ta linia, a następnie itp. Na górę.
+
+85
+00:06:09,490 --> 00:06:14,070
+Tak więc, ale teraz, o kolejną kwartę, punkty są tutaj, a następnie druga ćwiartka punktów jest tutaj.
+
+86
+00:06:14,460 --> 00:06:22,920
+I te kropki są odstające i możemy zacząć naprawdę cieszyć się z morza, dodając tylko kilka
+
+87
+00:06:23,400 --> 00:06:26,820
+słów kodu tutaj i określając odcień.
+
+88
+00:06:27,360 --> 00:06:33,480
+A to pozwoli nam na podzielenie tych pól jeszcze bardziej przez inną kategoryczną
+
+89
+00:06:33,630 --> 00:06:34,590
+kategoryczną kolumnę.
+
+90
+00:06:34,590 --> 00:06:37,470
+W tym przypadku pójdziemy dalej i powiemy, że Heugh to palacz.
+
+91
+00:06:37,580 --> 00:06:46,080
+Jeśli teraz to uruchomię, widzę podział działek na dobę, podzielony na palaczy i status palacza jest tutaj
+
+92
+00:06:46,110 --> 00:06:47,620
+dla Ciebie.
+
+93
+00:06:47,910 --> 00:06:50,030
+I tutaj możesz teraz porównać nie tylko.
+
+94
+00:06:50,030 --> 00:06:55,150
+Zachowanie dzień po dniu dla całkowitego rachunku, ale także, czy ta osoba jest palaczem.
+
+95
+00:06:55,320 --> 00:06:57,990
+I to jest naprawdę prawdziwa moc za morzem.
+
+96
+00:06:58,080 --> 00:07:03,060
+Szybko pozwala dodać ten wskaźnik barwy, który zapewnia bardzo dużą i
+
+97
+00:07:03,060 --> 00:07:06,000
+bardzo płynną kolejną warstwę danych.
+
+98
+00:07:06,530 --> 00:07:13,500
+Można więc porównać fakt, że ludzie w piątki zwykle mają większy rachunek, jeśli nie
+
+99
+00:07:13,500 --> 00:07:19,950
+palą w porównaniu do palaczy, a wtedy można zacząć dostrzegać wariację dla
+
+100
+00:07:19,950 --> 00:07:24,450
+palaczy lub dystrybucję dla palaczy i niepalących. .
+
+101
+00:07:24,510 --> 00:07:30,450
+W porządku, idźmy dalej i porozmawiajmy o agresywnych działkach, które teraz idą do przodu i usuń ten
+
+102
+00:07:32,220 --> 00:07:38,400
+odcień tutaj, abyśmy mogli zobaczyć naszą oryginalną fabułę pudełkową, a następnie zamierzam nazwać gwałtowny spisek, a gwałtowny
+
+103
+00:07:38,430 --> 00:07:41,630
+spisek odgrywa bardzo podobną rolę do działka pudełkowa.
+
+104
+00:07:42,000 --> 00:07:44,930
+I możesz to zrobić tylko dlatego, że w gruncie rzeczy ten gwałtowny spisek.
+
+105
+00:07:45,330 --> 00:07:50,550
+I to, co zamierza zrobić, to także pokazać dystrybucję danych w jakiejś kategorii.
+
+106
+00:07:51,030 --> 00:07:56,370
+Więc przyjmie dokładnie te same argumenty, jak w pudełkowej fabule, która zajmie x dla tej kategorii.
+
+107
+00:07:57,080 --> 00:08:02,460
+Twoja żona będzie jakąś kolumną numeryczną, która będzie trzymać się rachunku, a
+
+108
+00:08:02,460 --> 00:08:05,170
+potem przejdzie do naszych danych.
+
+109
+00:08:05,180 --> 00:08:10,260
+CBS pójdzie naprzód i uruchomi to i zobaczy, jak wyglądają te działki, i
+
+110
+00:08:10,260 --> 00:08:14,040
+pozwól mi pomniejszyć, abyśmy mogli porównać te dwa.
+
+111
+00:08:14,040 --> 00:08:14,250
+W porządku.
+
+112
+00:08:14,250 --> 00:08:18,920
+Mamy więc nasze pudełko na górze i nasze skrzypce na dole.
+
+113
+00:08:19,380 --> 00:08:25,350
+Teraz działka skrzypiec, w przeciwieństwie do wykresu pudełkowego, pozwala nam właściwie wykreślić wszystkie komponenty, które
+
+114
+00:08:25,350 --> 00:08:31,650
+odpowiadają rzeczywistym punktom danych i zasadniczo pokazuje oszacowanie gęstości jądra dla leżącego u jego podstawy rozkładu.
+
+115
+00:08:32,250 --> 00:08:36,930
+Zasadniczo pokazuje to tylko, że podzielimy to na połowę rozkładu punktów po
+
+116
+00:08:37,020 --> 00:08:43,290
+swojej stronie, a to pozwala na ujawnienie jeszcze większej ilości informacji o samych punktach danych. Koszt
+
+117
+00:08:43,380 --> 00:08:49,980
+jest spowodowany tym, że nieco trudniej jest je zinterpretować lub read versus box plop box box jest
+
+118
+00:08:49,980 --> 00:08:56,460
+bardzo łatwy do obejrzenia i można szybko stwierdzić, gdzie z grubsza dane porównują się do kategorii na
+
+119
+00:08:57,660 --> 00:08:58,700
+gwałtownych działkach.
+
+120
+00:08:58,710 --> 00:09:03,840
+Poinformujemy Cię o wiele więcej informacji na temat dystrybucji wszystkich punktów.
+
+121
+00:09:04,050 --> 00:09:07,470
+Ale przychodzi to kosztem, że muszą spędzić trochę więcej czasu na przyglądanie się temu i
+
+122
+00:09:07,470 --> 00:09:08,000
+zrozumienie go.
+
+123
+00:09:08,130 --> 00:09:11,560
+Ale te dwa wątki są z pewnością bardzo powiązane ze sobą.
+
+124
+00:09:11,580 --> 00:09:14,660
+Tyle, że gwałtowny spisek pokazuje trochę więcej informacji.
+
+125
+00:09:14,880 --> 00:09:21,180
+Czasem ta informacja może zostać ukryta przed tobą, jeśli używasz tylko pudełka i gwałtownego spisku, tak
+
+126
+00:09:21,240 --> 00:09:22,650
+jak fabuła pudełek.
+
+127
+00:09:22,680 --> 00:09:24,860
+Również ma możliwość zrobienia Whew.
+
+128
+00:09:25,140 --> 00:09:32,080
+Mogę więc powiedzieć, że kupujesz seks, a ja pokażę mi gwałtowne działki obok siebie.
+
+129
+00:09:32,080 --> 00:09:37,710
+Cóż interesującego w przypadku gwałtownego spisku w porównaniu z polem gry jest inny
+
+130
+00:09:37,710 --> 00:09:43,680
+argument zamiast umieszczania dwóch gwałtownych działek obok siebie, ponieważ informacja o skrzypcach zasadniczo podwoiła się.
+
+131
+00:09:44,010 --> 00:09:50,040
+Mógłbym mieć jedną połowę tutaj, a drugą połowę być drugą, a ty
+
+132
+00:09:51,270 --> 00:09:57,310
+możesz to zrobić, mówiąc, że podział jest prawdziwy jako argument, a następnie podzieli dystrybucje.
+
+133
+00:09:57,330 --> 00:10:00,130
+A tutaj masz o wiele więcej informacji.
+
+134
+00:10:00,120 --> 00:10:06,360
+Teraz możesz bezpośrednio porównać rozkłady oparte na innej kategorii i zobaczyć, jak
+
+135
+00:10:06,370 --> 00:10:10,080
+same kategorie na osi X są porównywane.
+
+136
+00:10:10,100 --> 00:10:15,000
+To prawda, że to przyjdzie ponownie kosztem, że spędzisz więcej czasu patrząc na tę wizualizację.
+
+137
+00:10:15,420 --> 00:10:19,600
+Więc naprawdę musisz znać swoich odbiorców i wiedzieć, co jest odpowiednie, gdy
+
+138
+00:10:19,600 --> 00:10:25,210
+korzystasz z wybrzeża, a te zaawansowane wizualizacje, jeśli masz do czynienia z bardziej technicznymi danymi, to ludzie,
+
+139
+00:10:25,200 --> 00:10:30,310
+którzy sami są danymi naukowymi i widzieli gwałtowne wątki przed tego rodzaju działkami świetny wybór.
+
+140
+00:10:30,510 --> 00:10:36,120
+Jednak, aby poradzić sobie z bardziej rodzajami zarządzania typami dyrektorów generalnych, ludzie mogą po prostu prosty
+
+141
+00:10:36,120 --> 00:10:41,250
+działki polu, który jest bardziej popularny może być właściwym wyborem, chyba że znajdziesz coś
+
+142
+00:10:41,250 --> 00:10:43,140
+bardzo interesującego w gwałtownej fabule.
+
+143
+00:10:43,140 --> 00:10:49,290
+W porządku, przejdźmy dalej i porozmawiajmy o kilku bardziej zaawansowanych metodach wizualizacji tego rodzaju
+
+144
+00:10:49,290 --> 00:10:50,200
+kategorycznych danych.
+
+145
+00:10:50,230 --> 00:10:55,570
+Zaczniemy od fabuły taśmy, a fabuła striptizu jest prawdopodobnie najprostsza, ale zamierzamy
+
+146
+00:10:55,560 --> 00:10:58,510
+ją rozbudować i zamierzamy powiększyć tutaj.
+
+147
+00:10:58,650 --> 00:11:05,400
+Dostaniemy i powiemy, że plansza jest w istocie, a plansza będzie rysowała wykres rozrzutu, w którym jedna
+
+148
+00:11:05,400 --> 00:11:07,140
+zmienna ma charakter kategoryczny.
+
+149
+00:11:07,140 --> 00:11:12,270
+Powiem więc, że fabuła taśmy i zrobimy dokładnie
+
+150
+00:11:12,270 --> 00:11:18,940
+to samo, zanim X będzie kategoryczne i będzie całkowitym rachunkiem numerycznym.
+
+151
+00:11:18,960 --> 00:11:21,820
+Dane będą równe wskazówkom.
+
+152
+00:11:22,240 --> 00:11:30,670
+A to tylko w zasadzie tylko wykres rozproszenia, bazujący na kategorii pierwszej, z tą opcją strip, że nie można powiedzieć,
+
+153
+00:11:30,660 --> 00:11:36,100
+ile punktów jest ułożonych jeden na drugim, co można zrobić przy
+
+154
+00:11:36,240 --> 00:11:42,770
+innym argumencie o nazwie jitter i Jitter zrobi, jeśli wejdziemy i powiemy, że to prawda.
+
+155
+00:11:42,860 --> 00:11:47,640
+Czy to doda nieco szumu losowego, aby oddzielić niektóre z tych ułożonych w stos punktów.
+
+156
+00:11:47,800 --> 00:11:53,610
+I widać, że grubsze i więcej punktów jest o wiele wyraźniejszych w porównaniu do zwykłego wykresu
+
+157
+00:11:53,620 --> 00:11:54,280
+taśmy.
+
+158
+00:11:54,300 --> 00:11:58,710
+Więc normalny spisek na striptiz, jeśli miał kilka punktów ułożonych jeden na drugim, trudno
+
+159
+00:11:58,710 --> 00:11:59,550
+było powiedzieć.
+
+160
+00:11:59,550 --> 00:12:06,240
+Ale teraz, jeśli widzisz gęstość nieco lepiej z fabułą taśmy tak jak gwałtownym spiskiem, możesz zacząć
+
+161
+00:12:06,250 --> 00:12:08,830
+dodawać niektóre z tych dodatkowych argumentów.
+
+162
+00:12:09,030 --> 00:12:12,540
+Więc znowu moglibyśmy powiedzieć, że hewe jest równe płci.
+
+163
+00:12:12,630 --> 00:12:19,310
+Uruchom to teraz i teraz mam podpowiedzi oparte na kolorach i możemy również zrobić podział na
+
+164
+00:12:19,330 --> 00:12:26,170
+tak, jak moglibyśmy mieć fałszywe fabułę przemocy, a to zasadniczo podzieli te kolory na podstawie twoich argumentów schewe.
+
+165
+00:12:26,220 --> 00:12:26,770
+DOBRZE.
+
+166
+00:12:27,150 --> 00:12:33,030
+Teraz taka fabuła znów trzeba uważać, może być trudna do zinterpretowania w porównaniu
+
+167
+00:12:33,030 --> 00:12:37,170
+z prostą fabułą pudełek, a nawet gwałtownym spiskiem.
+
+168
+00:12:37,200 --> 00:12:43,320
+Niektórzy lubią właściwie łączyć ideę fabuły taśmy z gwałtownym spiskiem i tworzyć coś, co znane
+
+169
+00:12:43,330 --> 00:12:48,060
+jest jako fabuła roju, a Seaborn pozwala ci to zrobić.
+
+170
+00:12:48,300 --> 00:12:49,790
+Działka rój.
+
+171
+00:12:49,800 --> 00:12:50,730
+Wychodzimy i zaczynamy pisać.
+
+172
+00:12:50,740 --> 00:12:56,210
+Jest bardzo podobny do wykresu taśmowego, z wyjątkiem tego, że punkty są tak dopasowane, aby się nie nakładały.
+
+173
+00:12:56,310 --> 00:12:59,760
+I to faktycznie daje lepszą reprezentację rozkładu wartości.
+
+174
+00:12:59,910 --> 00:13:04,520
+To trochę jak połączenie wykresu z listą rozrzutu z gwałtownym spiskiem.
+
+175
+00:13:04,530 --> 00:13:05,890
+Pozwól, że pokażę ci, o co mi chodzi.
+
+176
+00:13:05,890 --> 00:13:08,190
+Prawdopodobnie stanie się to trochę bardziej oczywiste.
+
+177
+00:13:08,250 --> 00:13:13,060
+Idziemy dalej i przekazujemy dokładnie ten sam dzień argumentów dla x.
+
+178
+00:13:13,800 --> 00:13:15,170
+Powiemy, dlaczego jest to całkowity rachunek.
+
+179
+00:13:15,170 --> 00:13:25,090
+Whoops sumuje rachunek podkreślenia, a my powiemy, że dane są wskazówkami.
+
+180
+00:13:25,770 --> 00:13:28,440
+I tutaj widzimy działkę rój.
+
+181
+00:13:28,620 --> 00:13:34,000
+I mam nadzieję, że jest to bardziej oczywiste, że fabuła roju jest zasadniczo połączeniem fabuły taśmy
+
+182
+00:13:34,240 --> 00:13:35,530
+i gwałtownego spisku.
+
+183
+00:13:35,550 --> 00:13:42,000
+Pokazuje ten sam rozkład, z wyjątkiem tego, że faktycznie pokazuje wszystkie punkty.
+
+184
+00:13:42,000 --> 00:13:47,130
+Jedną wadą korzystania z fabuły roju, mimo że są całkiem fajne i fajne oraz
+
+185
+00:13:47,130 --> 00:13:52,450
+fakt, że pokazują dużo informacji, czasami nie są tak skalowane do bardzo dużych liczb, zarówno pod
+
+186
+00:13:52,440 --> 00:13:54,660
+względem możliwości pokazania wszystkich punktów .
+
+187
+00:13:54,720 --> 00:13:58,810
+Te punkty są po prostu zbyt szerokie, ponieważ nie chcesz stawiać niczego na sobie.
+
+188
+00:13:58,890 --> 00:14:01,710
+A także wymaga dużo obliczeń, aby zacząć je aranżować.
+
+189
+00:14:01,710 --> 00:14:05,360
+Tak więc radziłbym nie używać wykresów roju dla bardzo dużych zestawów danych.
+
+190
+00:14:05,500 --> 00:14:10,530
+I rzeczywiście, powiedziałbym, że ogólnie rzecz biorąc, trzymam się z daleka od pokazywania tylko
+
+191
+00:14:10,530 --> 00:14:14,170
+działek łownych, ponieważ większość ludzi prawdopodobnie nie spotkało ich wcześniej.
+
+192
+00:14:14,150 --> 00:14:19,240
+Szybko zorientuj się, czy naprawdę podoba ci się fabuła roju, którą możesz połączyć z gwałtownym
+
+193
+00:14:19,230 --> 00:14:22,630
+działaniem, aby pokazać obie części informacji ułożone jedna na drugiej.
+
+194
+00:14:22,890 --> 00:14:31,950
+Możesz powiedzieć, że w tej samej komórce pójdziemy dalej i powiemy, że działka skrzypiec SNL skopiuje i wklei
+
+195
+00:14:31,950 --> 00:14:39,660
+dokładnie te same informacje w naszym gwałtownym spisku, a my określimy kolor wykresu roju na
+
+196
+00:14:40,200 --> 00:14:47,730
+czarny, a to jest faktycznie zamierzamy drukować zarówno jeden na drugim, jak i na nim
+
+197
+00:14:47,760 --> 00:14:54,170
+widać każdy punkt i odpowiadający mu wykres oceny gęstości KDE lub jądra.
+
+198
+00:14:54,180 --> 00:14:57,200
+Teraz jest tu dużo informacji, więc uważaj na to.
+
+199
+00:14:57,210 --> 00:15:03,090
+Jest to prawdopodobnie bardziej przydatne do prezentacji, ale tylko do analizy danych eksploracyjnych. Mam nadzieję, że
+
+200
+00:15:03,100 --> 00:15:08,340
+tego rodzaju działki pomogą ci od razu zrozumieć twoje dane, ale nie po stronie
+
+201
+00:15:08,350 --> 00:15:09,640
+wyjaśniania władzy wykonawczej.
+
+202
+00:15:09,850 --> 00:15:16,020
+Tego typu rzeczy lepiej wykonywać przy pomocy wykresów pudełkowych lub policzyć wykresy lub wykresy słupkowe
+
+203
+00:15:17,040 --> 00:15:23,310
+tego rodzaju działki te bardziej zaawansowane gwałtowne wykresy wykresy pasków rój działki są po prostu bardziej
+
+204
+00:15:23,320 --> 00:15:28,780
+odpowiednie dla samych naukowców danych i faktycznie przeczytali lub zbadali informacje o danych.
+
+205
+00:15:28,770 --> 00:15:34,560
+Nareszcie chcę porozmawiać o spisku czynnikowym, który jest właściwie najbardziej ogólną formą wszystkich tych
+
+206
+00:15:34,570 --> 00:15:42,840
+fabuł i co robi, jeśli wykonamy zakładkę shift, to bierze argument w grze wojennej, dlaczego argumenty mogą przyjmować ludzkie dane, ale
+
+207
+00:15:42,850 --> 00:15:48,990
+to też po prostu przyjmuje argumenty rodzaju, a rodzaj argumentu jest w istocie tym, co
+
+208
+00:15:49,000 --> 00:15:52,350
+zamierza opisać fakty lub spisek sam w sobie.
+
+209
+00:15:52,360 --> 00:15:58,970
+Na przykład możemy powiedzieć, że fakt lub fabuła powiedzą, że zamierzamy skopiować i wkleić ten dzień sequela, dlaczego był
+
+210
+00:15:58,980 --> 00:16:05,100
+to całkowity rachunek, ponieważ Tipps przepraszam, a następnie możemy iść dalej i powiedzieć, że Kines jest równy.
+
+211
+00:16:05,320 --> 00:16:08,190
+Powiedzmy, że jeden z wykresów słupkowych można po prostu powiedzieć bar.
+
+212
+00:16:08,500 --> 00:16:12,840
+I tworzy wykres słupkowy oparty na tych kategoriach.
+
+213
+00:16:12,850 --> 00:16:17,650
+Tak więc wszystkie wątki, na które patrzyliśmy przed najbardziej ogólną metodą, nazywa się działką czynnika Sonesta.
+
+214
+00:16:17,970 --> 00:16:19,460
+A następnie właściwie określić rodzaj.
+
+215
+00:16:19,460 --> 00:16:24,900
+Na przykład, jeśli chcemy odtworzyć gwałtowną intrygę, można nazwać skrzypcami, a to zaczyna
+
+216
+00:16:24,900 --> 00:16:26,830
+odtwarzać ten gwałtowny spisek.
+
+217
+00:16:26,860 --> 00:16:32,580
+Osobiście wolę sam wywoływać fabułę, tak jak S, który zawiera
+
+218
+00:16:32,590 --> 00:16:38,890
+wykresy fabuły, striptizu itp. w przeciwieństwie do wywoływania bardziej ogólnych faktów lub metody drukowania, ale wiedz,
+
+219
+00:16:38,880 --> 00:16:41,680
+że jest to dostępne w przypadku, gdy chcesz je wywołać.
+
+220
+00:16:41,670 --> 00:16:42,140
+W porządku.
+
+221
+00:16:42,420 --> 00:16:44,140
+To wszystko w przypadku działek kategorycznych.
+
+222
+00:16:44,130 --> 00:16:50,490
+Mam nadzieję, że zobaczyłeś dużą moc, która jest dostępna dla ciebie i korzystasz z tej mocy mądrze, szczególnie w
+
+223
+00:16:50,500 --> 00:16:54,870
+zależności od tego, kogo prezentujesz, na przykład jak wspomniałem wcześniej o tych działkach.
+
+224
+00:16:54,900 --> 00:17:00,990
+Łatwe do odczytania wiele osób zarządzających rozumie je dobrze te bardziej zaawansowane wykresy, które są bardziej
+
+225
+00:17:01,000 --> 00:17:03,150
+przydatne do eksploracji tych danych.
+
+226
+00:17:03,150 --> 00:17:03,630
+DOBRZE.
+
+227
+00:17:03,660 --> 00:17:09,990
+Mam nadzieję, że podobał się wam ten wykład i mam nadzieję, że spodobało wam się widzenie, jak łatwe morskie wizualizacje tworzą dla was
+
+228
+00:17:09,990 --> 00:17:10,560
+te wizualizacje.
+
+229
+00:17:10,740 --> 00:17:14,670
+Wszystko, co robisz, to w zasadzie tylko jedna linia kodu, która jest naprawdę niesamowita.
+
+230
+00:17:15,130 --> 00:17:17,580
+Okay dzięki, a do zobaczenia na następnym wykładzie

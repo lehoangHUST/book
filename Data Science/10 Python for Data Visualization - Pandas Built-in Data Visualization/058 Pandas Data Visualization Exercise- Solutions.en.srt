@@ -1,0 +1,511 @@
+1
+00:00:05,190 --> 00:00:10,770
+Hello everyone and welcome to the Panthers state of visualization exercise solutions lecture this lecture
+
+2
+00:00:10,770 --> 00:00:10,830
+.
+
+3
+00:00:10,830 --> 00:00:13,630
+We're going to go over the solutions for the pand the state of his life.
+
+4
+00:00:13,680 --> 00:00:15,220
+Exercise questions.
+
+5
+00:00:15,240 --> 00:00:18,050
+Let's go ahead and jump to Jupiter notebook to get started.
+
+6
+00:00:18,050 --> 00:00:19,810
+All right here I am at the notebook.
+
+7
+00:00:19,830 --> 00:00:27,330
+I'm going to go ahead and run the first few cells of code to read the D3 CACP file set up all the imports
+
+8
+00:00:27,330 --> 00:00:29,500
+correctly and check out the head.
+
+9
+00:00:29,880 --> 00:00:30,170
+All right.
+
+10
+00:00:30,180 --> 00:00:34,790
+Next thing I wanted to do was to recreate a scatterplot of B versus a.
+
+11
+00:00:34,830 --> 00:00:36,380
+So just those two columns.
+
+12
+00:00:36,720 --> 00:00:46,770
+Let's go ahead and do that by saying D-3 dot plot thoughts scatter and then I'm going to go in and specify
+
+13
+00:00:47,010 --> 00:00:52,970
+that I want on my x axis the A column and on my y axis I want the B column.
+
+14
+00:00:53,210 --> 00:00:55,810
+Let's just see what that looks like.
+
+15
+00:00:56,370 --> 00:00:58,700
+And this should be the EF 3.
+
+16
+00:00:58,700 --> 00:00:59,610
+There we go.
+
+17
+00:00:59,610 --> 00:01:03,220
+So I'm getting a similar plot except something to know was.
+
+18
+00:01:03,330 --> 00:01:07,410
+See if you can figure out how to stretch it in a similar fashion to this plot.
+
+19
+00:01:07,410 --> 00:01:13,680
+And as we went over in the lecture you can actually just passen fig size directly into this argument
+
+20
+00:01:13,710 --> 00:01:14,680
+as a parameter.
+
+21
+00:01:15,030 --> 00:01:16,950
+And we can stretch it out.
+
+22
+00:01:17,000 --> 00:01:23,030
+So and then another thing to note here is that the size of these points is a little bigger.
+
+23
+00:01:23,040 --> 00:01:28,090
+So you can actually specify that as we saw in the lecture either by another column or just by passing
+
+24
+00:01:28,090 --> 00:01:29,540
+in S for size.
+
+25
+00:01:29,850 --> 00:01:33,220
+And I'm going to specify the size to be 50.
+
+26
+00:01:33,230 --> 00:01:38,970
+Here we have the points are a little larger and for the color it was c we saw in the lecture how we
+
+27
+00:01:38,970 --> 00:01:40,800
+can specify color by another column.
+
+28
+00:01:40,800 --> 00:01:45,810
+But you can also just pass on a string as you could for map plot lib and here now we have a recreation
+
+29
+00:01:45,900 --> 00:01:46,680
+of that plot.
+
+30
+00:01:46,680 --> 00:01:48,170
+Exactly.
+
+31
+00:01:48,180 --> 00:01:48,850
+OK.
+
+32
+00:01:48,930 --> 00:01:54,060
+The main thing I wanted you to get out of this particular question was just the step of plot that scatter
+
+33
+00:01:54,360 --> 00:01:56,940
+a Versus be so x and y.
+
+34
+00:01:57,000 --> 00:01:57,840
+Don't worry too much.
+
+35
+00:01:57,840 --> 00:02:03,260
+If you were able to get the sizing or the coloring size Hopefully you are able to get that.
+
+36
+00:02:04,110 --> 00:02:08,150
+OK moving on now I want to create a histogram of the A column.
+
+37
+00:02:08,150 --> 00:02:09,880
+This is actually quite simple.
+
+38
+00:02:09,920 --> 00:02:21,350
+Just call the column itself and then say either just to see the histogram or you can also say plot dot
+
+39
+00:02:21,380 --> 00:02:24,560
+hissed and all return the same histogram.
+
+40
+00:02:24,840 --> 00:02:26,470
+And this is the default number of bins.
+
+41
+00:02:26,490 --> 00:02:30,890
+But you can also pass in an argument if you want it more Beenz.
+
+42
+00:02:31,020 --> 00:02:36,990
+All right the next issue was that these plots are OK but they don't look very polished and the instructions
+
+43
+00:02:36,990 --> 00:02:42,720
+said use style sheets to set the style to G-G plot and redo the histogram from above and also figure
+
+44
+00:02:42,720 --> 00:02:44,630
+out how to add more bits to it.
+
+45
+00:02:44,640 --> 00:02:50,690
+This is a topic that we actually didn't cover in the video lecture but it is covered in the note book
+
+46
+00:02:51,000 --> 00:02:56,250
+so hopefully had either two paths one you recheck the notebook to figure out what style sheets was referring
+
+47
+00:02:56,250 --> 00:02:59,430
+to or you google search map Cutlip stylesheets.
+
+48
+00:02:59,460 --> 00:03:04,770
+If not you could have also posted to the Q and A forum to get to what I was referencing there.
+
+49
+00:03:04,830 --> 00:03:10,320
+If you go ahead and check out the note book lecture for pandas built in data visualization there is
+
+50
+00:03:10,320 --> 00:03:15,240
+a stylesheet section and this is kind of just to get you in the mood of trying to discover aspects on
+
+51
+00:03:15,240 --> 00:03:16,230
+your own.
+
+52
+00:03:16,270 --> 00:03:20,590
+Here you can see that map Cutlip has a stylesheets and there's a little reference link there.
+
+53
+00:03:20,680 --> 00:03:24,330
+And if you google search this you probably would have also gone to this page.
+
+54
+00:03:24,330 --> 00:03:30,150
+And this is the gallery and there's a sheet section in the gallery and the basic premise or idea is
+
+55
+00:03:30,150 --> 00:03:32,290
+that you can use Piel t that style.
+
+56
+00:03:32,310 --> 00:03:39,030
+Use pass any string of a style and it will automatically change the aesthetics to a particular style
+
+57
+00:03:39,920 --> 00:03:40,710
+that looks like this.
+
+58
+00:03:40,710 --> 00:03:44,510
+You just say peel T-Dog style that use G-G plot.
+
+59
+00:03:44,580 --> 00:03:47,910
+So I'm going to just copy this line of code.
+
+60
+00:03:48,510 --> 00:03:52,130
+Come over here and paste it.
+
+61
+00:03:52,260 --> 00:03:57,330
+And now since this has been run you'll notice that if we go ahead and copy and paste the exact line
+
+62
+00:03:57,330 --> 00:04:03,240
+of code here and pasted in here we get a much better looking plot.
+
+63
+00:04:03,480 --> 00:04:07,310
+And you'll also notice that here this red is a little more see through.
+
+64
+00:04:07,380 --> 00:04:13,140
+So you can also pasand Alpha to make it a little more transparent.
+
+65
+00:04:13,230 --> 00:04:17,190
+And here you can begin to start matching these histograms together.
+
+66
+00:04:17,310 --> 00:04:21,810
+Hopefully that wasn't too challenging for you but there is that aspect of kind of discovering things
+
+67
+00:04:21,810 --> 00:04:26,490
+on your own which is probably the most important part of learning data science and learning programming
+
+68
+00:04:26,490 --> 00:04:26,850
+.
+
+69
+00:04:26,850 --> 00:04:32,280
+The ability to search for an answer on your own without being given the full context of information
+
+70
+00:04:32,820 --> 00:04:37,620
+however you can always feel free to post on the Q&A forums if anything's ever confusing to you.
+
+71
+00:04:37,620 --> 00:04:43,800
+All right let's go ahead and move on to the box plots we wanted to create a box plot comparing the A
+
+72
+00:04:43,830 --> 00:04:45,730
+and B columns.
+
+73
+00:04:45,840 --> 00:04:51,520
+We take a look at what's the on that we take a look at just the data frame itself.
+
+74
+00:04:52,190 --> 00:04:58,630
+Notice we have a b c and d columns so I don't want to get a box plot all the columns I just want a B
+
+75
+00:04:58,630 --> 00:04:59,080
+.
+
+76
+00:04:59,160 --> 00:05:04,800
+So I'm actually just going to grab those columns by passing in a list of those column names A and B
+
+77
+00:05:05,280 --> 00:05:09,550
+and then I can call plot box.
+
+78
+00:05:09,720 --> 00:05:13,110
+Create a box plot that looks the same as this one.
+
+79
+00:05:13,140 --> 00:05:13,580
+OK.
+
+80
+00:05:13,800 --> 00:05:17,100
+Next I want to create a k d plot of the D column.
+
+81
+00:05:17,290 --> 00:05:19,080
+That's actually pretty straightforward.
+
+82
+00:05:19,080 --> 00:05:26,700
+You just pass in the D column say plot and then say Katie and they'll return this plot.
+
+83
+00:05:27,030 --> 00:05:31,140
+And then finally we have a we're here to figure out how to increase the line with and make the line
+
+84
+00:05:31,140 --> 00:05:36,240
+styled dash and no you would usually not Daschle K the plotline.
+
+85
+00:05:36,320 --> 00:05:36,770
+All right.
+
+86
+00:05:36,930 --> 00:05:46,230
+So the way you can do this is actually just take this same plot KDE or density and then you can go ahead
+
+87
+00:05:46,230 --> 00:05:53,540
+and passen arguments from that plot lib such as line style and line with.
+
+88
+00:05:53,550 --> 00:05:54,840
+And here we get the same plot.
+
+89
+00:05:54,900 --> 00:05:59,310
+And you can also do this with density if you want to.
+
+90
+00:05:59,310 --> 00:06:04,620
+That's the same command that we want to create an area plot of all the columns for just the rooms up
+
+91
+00:06:04,620 --> 00:06:08,750
+to 30 and then it said Hintz use x.
+
+92
+00:06:08,760 --> 00:06:17,320
+So hopefully you can discover by calling X D-3 I X you can see that this is a property and it's a primarily
+
+93
+00:06:17,320 --> 00:06:21,930
+a label location based in indexer with integer position fallback.
+
+94
+00:06:21,930 --> 00:06:24,970
+And so what we can do is actually just use this for slicing.
+
+95
+00:06:25,320 --> 00:06:30,660
+And again it's kind of a thing I want you to discover as you go along on your own so you can pass zero
+
+96
+00:06:30,660 --> 00:06:37,610
+through 30 here and this will return just the first 30 rows or whatever is slicing notation you wanted
+
+97
+00:06:37,620 --> 00:06:37,830
+.
+
+98
+00:06:38,070 --> 00:06:43,570
+And then off of that you can call plot area and you get a plot that looks like this.
+
+99
+00:06:43,610 --> 00:06:49,890
+And if you wanted it to Looks like the plot below you could actually put in an alpha value there.
+
+100
+00:06:49,950 --> 00:06:54,960
+All right there is a bonus challenge and note you may find this really hard reference's solutions you
+
+101
+00:06:54,960 --> 00:07:01,200
+can't figure it out but notice how appear the legend was actually overlapping some of the actual diagram
+
+102
+00:07:01,200 --> 00:07:01,230
+.
+
+103
+00:07:01,260 --> 00:07:06,030
+They usually wouldn't want that and I want you to figure out how you can display the legend outside
+
+104
+00:07:06,030 --> 00:07:12,150
+of the plot as shown below over here and again back on that theme of trying to discover things on your
+
+105
+00:07:12,180 --> 00:07:12,860
+own.
+
+106
+00:07:12,900 --> 00:07:18,420
+I want to for you to try google searching for a good stack overflow link and if you could find that
+
+107
+00:07:18,420 --> 00:07:22,070
+on your own there was a link to a stack overflow question.
+
+108
+00:07:22,080 --> 00:07:28,020
+So if we take a look at this link on stack overflow someone's asking how to put the legend outside the
+
+109
+00:07:28,020 --> 00:07:34,350
+plot with pandas and if we kind of scroll over here and take a look at this you'll notice that someone
+
+110
+00:07:34,350 --> 00:07:39,930
+actually answer this question correctly and they said right here that Piel t that legend location center
+
+111
+00:07:39,930 --> 00:07:42,470
+left and then this beby box to anchor.
+
+112
+00:07:42,510 --> 00:07:43,700
+That's the key here.
+
+113
+00:07:43,730 --> 00:07:51,240
+And you actually just copy this code and paste it here and then take the other code of this area plot
+
+114
+00:07:54,150 --> 00:07:59,850
+and paste it here and then when we want to do is create a figure
+
+115
+00:08:03,060 --> 00:08:07,310
+for these to be all called and then will say puberty that show.
+
+116
+00:08:07,920 --> 00:08:12,180
+And this will create a figure with the legend outside.
+
+117
+00:08:12,420 --> 00:08:18,370
+This would also work if you actually remove the first line and the last line in Jupiter notebook.
+
+118
+00:08:18,420 --> 00:08:24,480
+In other situations such as other ID errors you may have to actually find the figure and show the figure
+
+119
+00:08:24,480 --> 00:08:24,690
+.
+
+120
+00:08:24,690 --> 00:08:28,920
+But since we're just using Jupiter a notebook can actually just run these two lines and it will remove
+
+121
+00:08:28,950 --> 00:08:31,480
+the legend and place it on the outside.
+
+122
+00:08:31,500 --> 00:08:35,850
+So the basic idea here is hopefully you can discover on your own how to grab these sort of lines of
+
+123
+00:08:35,850 --> 00:08:38,170
+code and put them into your own code.
+
+124
+00:08:38,220 --> 00:08:42,900
+And that's actually a very common thing to do is check on Stack Overflow see what lines of code are
+
+125
+00:08:42,900 --> 00:08:46,000
+relevant to you and then fit them into your own work.
+
+126
+00:08:46,500 --> 00:08:47,910
+OK that's it.
+
+127
+00:08:47,910 --> 00:08:51,430
+Great job everyone and I will see you at the next lecture.
+
+128
+00:08:51,450 --> 00:08:55,460
+Feel free to post the Q&A forums if anything was confusing here for you.

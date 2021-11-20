@@ -1,0 +1,899 @@
+1
+00:00:05,490 --> 00:00:10,460
+Hola a todos y bienvenidos a la segunda parte de la conferencia de soluciones de proyectos financieros.
+
+2
+00:00:10,470 --> 00:00:15,780
+Avancemos y volvamos directamente al cuaderno de Júpiter donde lo dejamos la última vez.
+
+3
+00:00:15,780 --> 00:00:16,080
+DE ACUERDO.
+
+4
+00:00:16,080 --> 00:00:17,810
+Aquí estoy en el cuaderno de Júpiter.
+
+5
+00:00:17,820 --> 00:00:20,740
+La última vez que lo dejamos, acabábamos de crear este diagrama de página.
+
+6
+00:00:20,760 --> 00:00:23,830
+Observe un poco de comportamiento extraño en el regreso de Citigroup.
+
+7
+00:00:24,030 --> 00:00:29,250
+Y si eso le llamó la atención, puede consultar la página de Wikipedia de Citigroup y notará
+
+8
+00:00:29,250 --> 00:00:31,640
+que en noviembre de 2008 tuvieron un accidente.
+
+9
+00:00:31,650 --> 00:00:34,710
+Y lo exploraremos un poco más adelante.
+
+10
+00:00:35,370 --> 00:00:41,070
+Pero luego, lo que queremos hacer es utilizar esta estructura de datos de devoluciones para saber en qué fechas
+
+11
+00:00:41,070 --> 00:00:47,340
+cada acción del banco tuvo las mejores y peores rentabilidades de un solo día y debe notar que cuatro de los
+
+12
+00:00:47,340 --> 00:00:52,500
+bancos comparten el mismo día por la peor caída y que algo significativo sucedió en ese día.
+
+13
+00:00:52,500 --> 00:01:00,300
+Avancemos y comencemos algo que podamos hacer, simplemente revise el marco de datos de devoluciones y observe que tenemos
+
+14
+00:01:00,330 --> 00:01:04,700
+estas columnas aquí que B A C devolvió C, etc. Quiero obtener los valores mínimos para estas devoluciones y todas son devoluciones ÚNICAS.
+
+15
+00:01:04,780 --> 00:01:09,580
+Solo puedo decir que los hombres devolverán el mínimo de retorno de un día.
+
+16
+00:01:09,600 --> 00:01:16,960
+Ahora lo que realmente queremos son las fechas en que esto sucedió y hay dos formas de hacerlo.
+
+17
+00:01:16,970 --> 00:01:23,220
+Una es que puede iterar a través de los nombres de las columnas y luego,
+
+18
+00:01:23,220 --> 00:01:31,920
+si recuerda su nombre PI en lugar de llamar a los hombres fuera de esa columna, puede llamar argumentos; un
+
+19
+00:01:32,520 --> 00:01:39,240
+argumento devolverá esa marca de tiempo y este caso es el 20 de enero de 2009.
+
+20
+00:01:39,300 --> 00:01:43,430
+Ahora puede hacer eso para cada columna o Panthers también le permite
+
+21
+00:01:43,450 --> 00:01:49,290
+hacer esto en todo el marco de datos simplemente llamando a id x men y eso devuelve
+
+22
+00:01:49,290 --> 00:01:57,600
+básicamente una serie que se ve así con las fechas o índices de los valores mínimos para los rendimientos de cada banco y usted
+
+23
+00:01:57,930 --> 00:02:04,140
+puede hacer lo mismo diciendo return id x max para obtener las mayores ganancias de un solo día.
+
+24
+00:02:04,140 --> 00:02:12,090
+Ahora, en lo que respecta a los peores aspectos, notará que muchos de ellos sucedieron el 20 de enero de 2009.
+
+25
+00:02:12,150 --> 00:02:20,190
+Y si tiene curiosidad por saber qué sucedió ese día, puede continuar y buscar en google y notará que esta
+
+26
+00:02:20,280 --> 00:02:25,980
+fue en realidad la fecha de inauguración de Barack Obama, que es algo interesante.
+
+27
+00:02:25,980 --> 00:02:30,950
+Algo para notar aquí si eso está correlacionado o simplemente una coincidencia o
+
+28
+00:02:31,710 --> 00:02:37,200
+básicamente algunos de los inversionistas del mercado se aterran cuando ocurre un gran cambio político.
+
+29
+00:02:37,200 --> 00:02:41,000
+En realidad, puede ver una idea de Max, por
+
+30
+00:02:41,070 --> 00:02:47,730
+ejemplo, que el día de mayor retorno de JP Morgan es el siguiente al día siguiente.
+
+31
+00:02:47,730 --> 00:02:48,640
+Así que no tome esto como ningún tipo de comentarios políticos o incluso consejos financieros.
+
+32
+00:02:48,720 --> 00:02:52,740
+Los mercados de acciones pueden ser un poco raros a veces.
+
+33
+00:02:52,740 --> 00:02:55,840
+Ahora, si miramos la siguiente pregunta, dice que debería haberse dado
+
+34
+00:02:55,890 --> 00:03:01,710
+cuenta de que la caída más grande y la mayor ganancia de Citigroup fueron muy cercanas la una a la otra.
+
+35
+00:03:01,770 --> 00:03:04,770
+Entonces notamos que la ganancia de JP Morgan
+
+36
+00:03:05,040 --> 00:03:11,040
+ocurre el mismo día después del día de la inauguración justo después de su mayor pérdida.
+
+37
+00:03:11,040 --> 00:03:12,020
+Pero si miramos
+
+38
+00:03:12,240 --> 00:03:22,920
+a Citigroup, mageddon está claro que se vende si miramos a Citigroup, tienen 2011 6 de mayo y 2000 11 noveno de mí ya que muy cerca
+
+39
+00:03:22,920 --> 00:03:31,110
+el uno del otro es su peor rendimiento y su mejor rendimiento, y es algo significativo que ocurrió en ese momento.
+
+40
+00:03:31,590 --> 00:03:34,540
+Actualmente, si.
+
+41
+00:03:34,650 --> 00:03:35,990
+Si termina buscando en Google algo
+
+42
+00:03:36,420 --> 00:03:43,200
+como Citigroup en 2011, debería recibir algunas noticias que se parecen a esto, en las que Citigroup anuncia una división de acciones inversas y eso es esencialmente lo que sucedió en ese momento.
+
+43
+00:03:43,200 --> 00:03:48,120
+Y puede notar que fue efectivo el 6 de mayo de 2011, que se alinea con nuestros datos aquí.
+
+44
+00:03:48,450 --> 00:03:55,330
+Todo bien.
+
+45
+00:03:55,890 --> 00:03:56,160
+Así que eso es genial.
+
+46
+00:03:56,160 --> 00:03:56,880
+De hecho, podemos
+
+47
+00:03:56,880 --> 00:04:03,330
+correlacionar o ver eventos de la vida real que afectan nuestros precios de acciones en nuestros datos que tenemos en nuestro marco de datos, que es algo interesante.
+
+48
+00:04:03,330 --> 00:04:06,270
+cuál clasificaría como el más riesgoso para el año 2015.
+
+49
+00:04:06,360 --> 00:04:11,220
+Ahora, si continuamos hacia donde queremos hacer, echemos un vistazo a la desviación estándar de los
+
+50
+00:04:11,220 --> 00:04:15,990
+retornos y qué stock clasificaría como el más riesgoso durante todo el período de tiempo y
+
+51
+00:04:15,990 --> 00:04:19,040
+Por lo tanto, a veces una medida básica
+
+52
+00:04:19,380 --> 00:04:25,320
+de riesgo requiere riesgo de una acción es la desviación estándar de los rendimientos de la acción.
+
+53
+00:04:25,320 --> 00:04:26,700
+Por lo tanto, si tiene una desviación
+
+54
+00:04:26,700 --> 00:04:31,200
+estándar muy grande de los rendimientos, significa que sus acciones están subiendo y bajando mucho en comparación con una pequeña desviación de Steria.
+
+55
+00:04:31,530 --> 00:04:33,880
+Significa que su precio es bastante estable.
+
+56
+00:04:33,900 --> 00:04:35,790
+Entonces, si tiene una desviación estándar alta, su acción probablemente sea bastante arriesgada.
+
+57
+00:04:35,790 --> 00:04:39,270
+Avancemos y veamos si podemos hacer esto.
+
+58
+00:04:39,780 --> 00:04:41,970
+En realidad es bastante simple.
+
+59
+00:04:42,030 --> 00:04:43,100
+Puedes simplemente decir devoluciones y de hecho voy a poner esto en la celda aquí.
+
+60
+00:04:43,110 --> 00:04:47,930
+Devuelve da SDD para la desviación estándar y obtenemos algo que se ve así.
+
+61
+00:04:47,940 --> 00:04:52,440
+Básicamente, la desviación estándar para cada acción
+
+62
+00:04:52,440 --> 00:04:59,130
+y parece que la más arriesgada en general es bastante Citigroup.
+
+63
+00:04:59,250 --> 00:05:00,640
+Y más adelante veremos por qué.
+
+64
+00:05:00,690 --> 00:05:01,860
+vistazo a la cabeza.
+
+65
+00:05:01,860 --> 00:05:10,500
+Debido a que tuvo un gran colapso y en lo que respecta al año 2015, podemos seguir adelante y decir que lo que queremos hacer es averiguar si echamos un
+
+66
+00:05:10,500 --> 00:05:14,530
+Queremos obtener solo valores para 2015 y que estén basados ​​fuera del índice.
+
+67
+00:05:14,820 --> 00:05:19,770
+Lo que significa que quiero tomar una sección o una porción del índice y
+
+68
+00:05:20,010 --> 00:05:29,710
+puedo usar eso usando I X y pasaré de 2015 0 1 0 1 a partir del 1 de enero de 2015 como una porción hasta 2015.
+
+69
+00:05:29,730 --> 00:05:41,390
+Doce treinta y uno es un corte y luego llama la desviación estándar de eso.
+
+70
+00:05:41,460 --> 00:05:46,960
+Y se dará cuenta de que en 2015, que está muy por debajo del colapso de Citigroup, todos
+
+71
+00:05:47,550 --> 00:05:52,980
+tienen un perfil de riesgo muy similar, con Fargo falso siendo el riesgo más bajo por no mucho.
+
+72
+00:05:52,980 --> 00:05:59,940
+mayor riesgo, pero esencialmente las desviaciones estándar son extremadamente similares entre sí.
+
+73
+00:06:00,420 --> 00:06:07,860
+Y parece que Morgan Stanley o Bank of America son los de
+
+74
+00:06:07,860 --> 00:06:10,990
+OK, a continuación, queríamos decir crear una trama usando el mar de los retornos de 2015 de Morgan Stanley.
+
+75
+00:06:11,040 --> 00:06:17,530
+Vamos y hagamos eso.
+
+76
+00:06:17,610 --> 00:06:19,160
+Podemos seguir y decir, tan pronto
+
+77
+00:06:19,230 --> 00:06:26,700
+como creí esta trama, que quiero las devoluciones de Morgan Stanley de 2015 cuando salgamos y copiemos este código aquí y esta es mi declaración de 2015.
+
+78
+00:06:27,150 --> 00:06:32,690
+Y luego solo quiero que Morgan Stanley signifique que solo quiero la
+
+79
+00:06:32,790 --> 00:06:41,820
+columna de retorno M-S y podemos seguir adelante y colorear este verde para que coincida con la conferencia de soluciones.
+
+80
+00:06:41,820 --> 00:06:49,920
+la papelera o el número de contenedores, discúlpeme, ya que en realidad tenemos bastantes datos.
+
+81
+00:06:50,070 --> 00:06:54,810
+Y sigamos adelante y aumentemos el tamaño de
+
+82
+00:06:54,810 --> 00:06:55,640
+Así que voy a seguir adelante y decir que los contenedores son iguales a algo así como digamos 50.
+
+83
+00:06:55,650 --> 00:07:02,040
+Todo bien.
+
+84
+00:07:02,130 --> 00:07:02,480
+Y ahora tenemos una distribución de los rendimientos de Morgan Stanley en el año 2015.
+
+85
+00:07:02,520 --> 00:07:07,800
+Muy bien, así que aquí podemos ver hasta donde llega el M-S y la distribución
+
+86
+00:07:07,800 --> 00:07:12,210
+en cuanto a lo que estamos viendo es que es bastante estable.
+
+87
+00:07:12,210 --> 00:07:13,710
+Usted está viendo rendimientos
+
+88
+00:07:13,710 --> 00:07:20,730
+porcentuales que solo se desvían de 0,6 del promedio, pero vamos a seguir adelante y ahora es ver un
+
+89
+00:07:20,730 --> 00:07:27,450
+diagrama de distribución utilizando el mar de los retornos de 2008 para Citigroup, que fue un año bastante
+
+90
+00:07:27,450 --> 00:07:35,570
+volátil para ellos. para hacer esto continuará y dirá por el mar esta trama o Sonesta esta trama regresa IX y voy
+
+91
+00:07:35,640 --> 00:07:47,100
+a seguir y cortar y copiar esto, pero en lugar de 2015 vamos a seguir adelante y poner en 2008 vamos a hacer lo mismo aquí 2008 y luego queremos que
+
+92
+00:07:47,100 --> 00:07:48,840
+la columna de retorno C.
+
+93
+00:07:52,000 --> 00:08:00,960
+No continúe y coloree este color rojo para que podamos ver la diferencia aquí y
+
+94
+00:08:01,220 --> 00:08:07,110
+voy a seguir adelante y establecer el bin igual a.
+
+95
+00:08:07,200 --> 00:08:08,460
+Vayamos y digamos 50 nuevamente.
+
+96
+00:08:08,820 --> 00:08:11,480
+más extendida, especialmente aquí está casi que puntos 6.
+
+97
+00:08:12,130 --> 00:08:17,490
+Y si ejecuto esto, si entramos y comparamos esto, notará que la desviación estándar en realidad está un poco
+
+98
+00:08:17,490 --> 00:08:22,590
+Y si miramos hacia atrás para un año normal para
+
+99
+00:08:22,650 --> 00:08:30,180
+un banco 2015, el punto 0 6 de Europa es en realidad 10 veces más.
+
+100
+00:08:30,180 --> 00:08:30,980
+En la medida
+
+101
+00:08:31,140 --> 00:08:37,950
+en que esta distribución muestra los extremos aquí, es bastante atípico y vamos a seguir adelante y explorar lo que realmente le sucedió a Citigroup durante este año.
+
+102
+00:08:37,950 --> 00:08:41,130
+Pero esto es una especie de indicación aquí de la crisis financiera por la que atravesaron las acciones.
+
+103
+00:08:41,130 --> 00:08:47,610
+Todo bien.
+
+104
+00:08:47,690 --> 00:08:48,150
+a continuación.
+
+105
+00:08:48,360 --> 00:08:52,430
+Así que vamos a hacer más visualizaciones y muchos de los proyectos de este proyecto se centran realmente en
+
+106
+00:08:52,800 --> 00:08:56,790
+visualizaciones y puede usar libremente cualquiera de sus bibliotecas de visualización preferidas para recrear las tramas que se describen
+
+107
+00:08:56,790 --> 00:08:58,300
+Podrás hacerlo en realidad con ver más
+
+108
+00:08:58,350 --> 00:09:02,940
+tramas de lib y gemelos o incluso solo panderers para que puedas seguir adelante y elegir los métodos que desees.
+
+109
+00:09:02,940 --> 00:09:06,840
+Voy a salir y mostrarle un par de maneras de hacer cada parcela
+
+110
+00:09:06,840 --> 00:09:10,710
+y le mostraremos cómo usar los gemelos Paulian para hacer bien las tramas.
+
+111
+00:09:10,710 --> 00:09:14,220
+De acuerdo, entonces, después de ejecutar esas importaciones, lo que queremos hacer es crear
+
+112
+00:09:14,370 --> 00:09:19,500
+un gráfico de líneas que se muestre a precio de cierre para cada banco o el índice de tiempo completo.
+
+113
+00:09:19,500 --> 00:09:22,990
+Y hubo un par de consejos aquí para intentar usar un bucle
+
+114
+00:09:23,130 --> 00:09:27,480
+for o usar el método de sección transversal para obtener una sección transversal de los datos.
+
+115
+00:09:27,480 --> 00:09:29,520
+Y aquí podemos ver ambos métodos en juego.
+
+116
+00:09:29,640 --> 00:09:32,520
+Avancemos y mostremos primero el método for loop.
+
+117
+00:09:32,520 --> 00:09:35,110
+Y con un poco de suerte, ahora está claro que ver
+
+118
+00:09:35,400 --> 00:09:41,220
+a Citigroup como una empresa ecológica en esta gran crisis en 2008 tuvo que ver con su desviación estándar, que fue bastante grande para ese año.
+
+119
+00:09:41,520 --> 00:09:46,970
+Pero de todos modos, volverá al ciclo for.
+
+120
+00:09:47,490 --> 00:09:49,960
+la etiqueta es igual a tic.
+
+121
+00:09:50,400 --> 00:09:57,540
+Voy a decir un tic en ticker que recuerda que esa lista de cotizaciones bursátiles hace referencia a las
+
+122
+00:09:57,540 --> 00:10:07,170
+acciones de los bancos que marcan el precio de cierre y luego sigue y traza esto y voy a planear esto. Voy a especifique que
+
+123
+00:10:07,170 --> 00:10:10,720
+Ahora sabemos qué línea es la que corresponde a los colores.
+
+124
+00:10:10,940 --> 00:10:13,760
+Y también voy a especificar que el tamaño
+
+125
+00:10:13,860 --> 00:10:19,930
+de Fig se alargue un poco para que podamos obtener la misma visualización que tenemos aquí.
+
+126
+00:10:20,760 --> 00:10:22,940
+Y finalmente llamaré a la leyenda para que podamos ver la leyenda y si corro eso obtengo el mismo argumento.
+
+127
+00:10:22,980 --> 00:10:31,040
+Se ve algo como esto, así que podemos ver claramente que
+
+128
+00:10:31,050 --> 00:10:37,800
+Citigroup simplemente se estrelló después de 2008, la gran recesión.
+
+129
+00:10:38,310 --> 00:10:39,360
+Y lo que es interesante
+
+130
+00:10:39,480 --> 00:10:44,820
+también es esta línea roja de Goldman Sachs, que se parece a las caídas y luego rebota bastante rápido después de la recesión.
+
+131
+00:10:44,820 --> 00:10:47,550
+Y tiene que acercarse más para ver los otros bancos y ver cómo funcionan.
+
+132
+00:10:47,750 --> 00:10:52,020
+Pero hablando relativamente, no fue tanto el mismo efecto que las otras acciones
+
+133
+00:10:52,200 --> 00:10:58,470
+vamos a seguir adelante y le mostramos cómo hacer esto. Hemos podido ver también que las acciones bancarias
+
+134
+00:10:58,500 --> 00:11:08,060
+detuvieron el acceso con una clave igual a un acceso cercano igual a uno y nosotros Estamos mirando las columnas dicen que el nivel es información de stock.
+
+135
+00:11:08,130 --> 00:11:20,790
+Y si solo echamos un vistazo a eso.
+
+136
+00:11:20,820 --> 00:11:22,460
+Esto es básicamente todos los precios de cierre de las acciones.
+
+137
+00:11:22,650 --> 00:11:25,600
+Y entonces lo que tenemos que hacer es llamar a la trama y obtienes la misma trama.
+
+138
+00:11:25,620 --> 00:11:30,710
+Entonces, en lugar de hacer un ciclo for, puedes hacer esto todo en una línea usando una sección transversal.
+
+139
+00:11:30,930 --> 00:11:35,490
+Y de nuevo puede cambiar el tamaño de la figura y hacer cualquier otro comando de trazado de trazado del mapa que desee en ese trazado.
+
+140
+00:11:35,580 --> 00:11:40,260
+Finalmente, sigamos adelante y mostraremos a la trama la manera de
+
+141
+00:11:41,370 --> 00:11:47,160
+hacerlo, que es básicamente la misma línea que crea el marco de datos.
+
+142
+00:11:47,760 --> 00:11:49,560
+Pero luego llamas y tramo fuera
+
+143
+00:11:49,950 --> 00:11:57,090
+de él y los gemelos ahora te permitirán crear esta bonita trama en la que puedes visualizar cosas y ver los valores y jugar con ellos.
+
+144
+00:11:57,090 --> 00:12:01,940
+como un comportamiento extraño durante cosas como stock splits como este en mayo.
+
+145
+00:12:01,950 --> 00:12:06,990
+Entonces, si de verdad quieres enfocarte en las acciones que no son de
+
+146
+00:12:06,990 --> 00:12:12,240
+Citigroup o Goldman Sachs, puedes salir y hacer eso simplemente tomando una sección transversal
+
+147
+00:12:12,390 --> 00:12:18,810
+y luego verificando los descensos para que puedas ver la caída aquí durante la crisis financiera también.
+
+148
+00:12:18,810 --> 00:12:20,820
+Todo bien.
+
+149
+00:12:20,820 --> 00:12:21,290
+Esto hace
+
+150
+00:12:21,450 --> 00:12:25,860
+que sea muy divertido jugar con los datos y explorar los precios de las acciones durante la crisis financiera.
+
+151
+00:12:25,860 --> 00:12:27,340
+Vamos a seguir adelante y avanzar es a los promedios móviles.
+
+152
+00:12:27,440 --> 00:12:31,300
+Y vamos a analizar los promedios móviles para las acciones durante el año 2008.
+
+153
+00:12:31,590 --> 00:12:35,960
+Entonces, lo primero que tenemos que hacer es trazar el promedio móvil de 30 días
+
+154
+00:12:36,000 --> 00:12:40,650
+contra el precio de cierre de las acciones de Bank of America para el año 2008.
+
+155
+00:12:40,650 --> 00:12:44,330
+Avancemos y mostremos cómo podemos hacer esto.
+
+156
+00:12:44,340 --> 00:12:46,560
+Voy a decir B A C y verifico el número B A C.
+
+157
+00:12:46,590 --> 00:12:53,170
+Ese fue mi primer marco de datos original para el Bank of America.
+
+158
+00:12:53,180 --> 00:12:56,570
+guión bajo del banco y luego ir a agarrar
+
+159
+00:12:56,580 --> 00:13:02,070
+el cierre, despégales de eso y voy a usar el método IX para seguir
+
+160
+00:13:02,070 --> 00:13:10,590
+adelante y cortar las fechas que quiero y quiero que el 1 de enero de 2008 llegue hasta 2009 1 de enero.
+
+161
+00:13:10,590 --> 00:13:14,430
+Antes de que realmente lo pongamos en las acciones del
+
+162
+00:13:16,890 --> 00:13:18,420
+Así que todo un año.
+
+163
+00:13:18,480 --> 00:13:19,800
+Y luego lo que queremos hacer es usar el método de balanceo.
+
+164
+00:13:20,310 --> 00:13:24,710
+Entonces, Panas tiene la capacidad de darle
+
+165
+00:13:25,920 --> 00:13:35,220
+un método continuo para una media móvil y luego podemos decir que es nuestro método.
+
+166
+00:13:37,620 --> 00:13:38,220
+Y luego
+
+167
+00:13:38,220 --> 00:13:45,330
+podemos seguir y trazar esto y podemos trazar esto con una etiqueta para que podamos mostrar lo que estamos viendo.
+
+168
+00:13:46,530 --> 00:13:47,240
+stock precio.
+
+169
+00:13:47,240 --> 00:13:55,410
+Entonces vamos a entrar y decir que este es un promedio móvil de 30 días como una etiqueta y lo siguiente que vamos
+
+170
+00:13:55,410 --> 00:14:03,180
+a hacer es que vamos a trazar lo mismo para ver de cerca, pero en este caso, todos tramados contra el
+
+171
+00:14:03,180 --> 00:14:04,520
+Entonces diga que la trama y esta etiqueta estarán cerca de BAMC y luego llamaremos a PLDT esa leyenda.
+
+172
+00:14:04,590 --> 00:14:16,600
+Entonces, si solo corremos eso, obtenemos una trama que se ve así y podemos seguir adelante y extendemos esto si queremos decir que Piazzi
+
+173
+00:14:17,790 --> 00:14:21,900
+cuenta con un gran tamaño y podemos decir
+
+174
+00:14:21,900 --> 00:14:29,310
+que es algo un poco mejor como lo dije antes. de un estiramiento y su
+
+175
+00:14:29,600 --> 00:14:35,700
+media móvil de 30 días contra el precio de cierre real.
+
+176
+00:14:35,700 --> 00:14:36,960
+Esto le permite ver la tendencia general de las acciones a medida que avanza.
+
+177
+00:14:36,960 --> 00:14:41,620
+Y puede cambiar esta ventana para que sea la media
+
+178
+00:14:41,670 --> 00:14:47,010
+móvil semanal o la media móvil de 60 días como lo desee.
+
+179
+00:14:47,010 --> 00:14:47,740
+Está bien, lo
+
+180
+00:14:48,150 --> 00:14:52,860
+siguiente que quiere hacer es crear un mapa de calor de la correlación entre estos precios de cierre de acciones.
+
+181
+00:14:52,950 --> 00:14:54,660
+Sigamos adelante y te mostraremos cómo podemos hacer eso.
+
+182
+00:14:54,690 --> 00:14:56,520
+Puede llamar a Asinus el mapa de calor y ahora queremos obtener una correlación de las existencias al precio de cierre.
+
+183
+00:14:56,550 --> 00:15:04,710
+Avancemos y simplemente marquemos esa etiqueta y construyamos ese marco de datos primero.
+
+184
+00:15:04,800 --> 00:15:09,580
+Va a ser muy similar a lo que has estado haciendo antes.
+
+185
+00:15:09,990 --> 00:15:12,120
+Saldremos y tomaremos la sección transversal de los precios de cierre diciendo que cerrar en X es igual a 1.
+
+186
+00:15:12,210 --> 00:15:21,230
+El nivel es información de existencias y si solo
+
+187
+00:15:21,540 --> 00:15:23,730
+lo comprobamos.
+
+188
+00:15:27,500 --> 00:15:29,440
+Eso es solo los precios de cierre de las acciones.
+
+189
+00:15:29,820 --> 00:15:33,090
+Y si digo c o r r eso me da la correlación.
+
+190
+00:15:33,090 --> 00:15:39,240
+Y ahora tengo algo en forma de matriz que puedo llamar en un mapa de calor.
+
+191
+00:15:39,240 --> 00:15:43,430
+Así que voy a seguir adelante y desenmascaré cerca de eso y diré el mapa de calor aquí y reviso mi mapa de calor.
+
+192
+00:15:43,730 --> 00:15:51,450
+utilizar mapas de clúster para agrupar realmente estas correlaciones, quizás sea útil para aclarar un poco lo que está sucediendo.
+
+193
+00:15:52,470 --> 00:16:00,320
+Y ahora tengo mi mapa de calor y si quiero las anotaciones reales, puedo decir y es igual a verdadero y
+
+194
+00:16:00,330 --> 00:16:05,310
+luego vamos a seguir adelante y poner las anotaciones aquí y aquí podemos
+
+195
+00:16:05,310 --> 00:16:12,630
+ver la correlación entre los precios de cierre de las acciones en algo que opcionalmente podemos hacer, así como
+
+196
+00:16:12,630 --> 00:16:17,550
+Entonces, en una especie de mapa de calor, todo lo que tienes que
+
+197
+00:16:18,060 --> 00:16:24,660
+hacer es escribir en el mapa del clúster y, si lo ejecutas, deberías obtener mucho parecido a esto.
+
+198
+00:16:24,660 --> 00:16:26,080
+Por lo tanto, parece
+
+199
+00:16:26,280 --> 00:16:34,920
+que Seaborne intentó agrupar a Citigroup Morgan Stanley y Bank of America y su correlación en una clase de un solo grupo, además de oro.
+
+200
+00:16:34,920 --> 00:16:39,580
+Goldman Sachs J. PAG. en otro grupo están teniendo algún tipo de correlación entre ellos.
+
+201
+00:16:39,600 --> 00:16:45,030
+Morgan y Wells Fargo
+
+202
+00:16:45,030 --> 00:16:46,400
+Todo bien.
+
+203
+00:16:46,410 --> 00:16:46,990
+Puedes ver qué trama es qué poblaciones están más correlacionadas o si están entre sí.
+
+204
+00:16:47,220 --> 00:16:51,060
+Parece que es JPMorgan y Wells Fargo, así como Morgan Stanley y Bank of America.
+
+205
+00:16:51,060 --> 00:17:00,750
+DE ACUERDO.
+
+206
+00:17:00,750 --> 00:17:01,400
+Entonces eso fue todo para el proyecto financiero.
+
+207
+00:17:01,770 --> 00:17:04,490
+dependencia de los gemelos, es algo opcional que puedes de
+
+208
+00:17:04,500 --> 00:17:09,090
+explorar por su cuenta en caso de que parte de esa funcionalidad se rompa en el futuro.
+
+209
+00:17:09,090 --> 00:17:15,240
+Hay una parte dos opcional que se mostrará en la parte tres de la conferencia de soluciones y que tiene más que ver
+
+210
+00:17:15,270 --> 00:17:19,740
+si grafico y algunas de las capacidades especiales de los gemelos, pero debido a su gran
+
+211
+00:17:19,740 --> 00:17:21,420
+Pero espero que disfrutes este proyecto.
+
+212
+00:17:21,420 --> 00:17:22,860
+Se suponía que era
+
+213
+00:17:22,860 --> 00:17:29,280
+extremadamente difícil y difícil, pero eso es algo así como la naturaleza del inventario y el análisis financiero.
+
+214
+00:17:29,280 --> 00:17:30,060
+El tipo de cosa que encontrarás si esto es algo que te interesa.
+
+215
+00:17:30,180 --> 00:17:33,360
+que hacerlo, por ejemplo, en Excel o en otro lenguaje de programación para
+
+216
+00:17:33,570 --> 00:17:38,010
+muchas de estas respuestas con solo unas pocas líneas de código o incluso solo una línea de código.
+
+217
+00:17:38,010 --> 00:17:43,290
+Así que muchas de estas cosas son bastante complicadas y difíciles, pero con suerte se puede ver que lo que realmente
+
+218
+00:17:43,290 --> 00:17:48,660
+se siente cómodo con los pandas y el mar es que estas cosas se vuelven mucho más fáciles que si tuviera
+
+219
+00:17:48,660 --> 00:17:51,220
+Y lo que es realmente genial es el hecho de que puede hacer
+
+220
+00:17:51,280 --> 00:17:56,640
+algo como esto en una línea de código, por lo que definitivamente puede impresionar a sus colegas o amigos al mostrarles su propio análisis de proyectos financieros.
+
+221
+00:17:56,640 --> 00:18:01,730
+DE ACUERDO.
+
+222
+00:18:01,770 --> 00:18:02,300
+Espero que hayas disfrutado el proyecto.
+
+223
+00:18:02,520 --> 00:18:03,860
+En la parte 3, veremos la sección opcional de estas soluciones.
+
+224
+00:18:03,900 --> 00:18:08,510
+Gracias a todos y nos vemos en la próxima conferencia
+
+225
+00:18:08,730 --> 00:18:10,680
+&nbsp;

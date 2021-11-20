@@ -1,0 +1,467 @@
+1
+00:00:05,580 --> 00:00:09,150
+Herkese merhaba ve 3 ders başına veri çerçevelerine hoş geldiniz.
+
+2
+00:00:09,540 --> 00:00:14,380
+Veri çerçevesinin dizilerinden oluşan bu son konferansta, çoklu dizin ve dizin yüksek
+
+3
+00:00:14,380 --> 00:00:15,920
+anahtarı hakkında bilgi edineceğiz.
+
+4
+00:00:15,930 --> 00:00:20,370
+İlk önce, çok dizine eklenmiş verinin neye benzediğine ilişkin hızlı bir örnek oluşturun ve ardından
+
+5
+00:00:20,370 --> 00:00:23,670
+çok kademeli bir dizine sahip olmak için veri çerçeveleri ile nasıl çalışabilirsiniz.
+
+6
+00:00:23,670 --> 00:00:26,990
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+7
+00:00:27,000 --> 00:00:27,390
+Tamam.
+
+8
+00:00:27,390 --> 00:00:29,470
+İşte Jüpiter defterindeyim.
+
+9
+00:00:29,580 --> 00:00:35,370
+Geleceğim ve yapacağım şey, Veri çerçeveleri adı verilen dizüstü bilgisayarınızda bulunan
+
+10
+00:00:35,370 --> 00:00:37,850
+bazı kod satırlarını kopyalayıp yapıştırmak.
+
+11
+00:00:37,860 --> 00:00:43,440
+Çok Dizin dizini yüksek anahtar bölümüne gelinceye kadar aşağı doğru ilerlerseniz, bu dört satır
+
+12
+00:00:43,440 --> 00:00:44,290
+kod görürsünüz.
+
+13
+00:00:44,310 --> 00:00:48,130
+Bunlar, bu veri çerçevesinin gerçekte oluşturulması için kullanılacak dört kod satırıdır.
+
+14
+00:00:48,330 --> 00:00:50,140
+Gidip bunu kontrol edebiliriz.
+
+15
+00:00:50,340 --> 00:00:55,450
+Dýţarýda söyleyeceđiz ve sadece liste.
+
+16
+00:00:55,470 --> 00:01:02,970
+2 olmak üzere iki veya daha fazla öğe var; bunlar 1 2 3 1 2 3'ü içeriyor.
+
+17
+00:01:03,030 --> 00:01:07,700
+Dolayısıyla, bu listede G1 G1 G1 ve daha sonra G2 DTG
+
+18
+00:01:08,010 --> 00:01:16,110
+Ve daha sonra ilerlediğimizde, daha yüksek indeks dediğimiz gibi zip fonksiyonunu liste fonksiyonuyla birlikte kullanıyorduk
+
+19
+00:01:16,140 --> 00:01:23,580
+ve ileride bu listeyi zip ve LIST kullanarak gupper çiftlerinin bir listesine dönüştürdük. G
+
+20
+00:01:23,580 --> 00:01:29,790
+1 1 1 2 1 3 2 1 2 2 2 3.
+
+21
+00:01:30,000 --> 00:01:35,050
+Sonra onu panderers'tan özel bir işleve aktardım ve aslında bu işle birlikte ders
+
+22
+00:01:35,070 --> 00:01:41,910
+boyunca hiç çalışmayacağım, ancak bu sadece bir veri çerçevesi oluşturma özelleştirmesi için öylesine endişe etmeyin, ancak bu konuda
+
+23
+00:01:41,940 --> 00:01:44,960
+çok fazla endişelenmeyin. Sadece bunun farkında olmanı istiyorum.
+
+24
+00:01:44,970 --> 00:01:49,820
+ve bu temelde şu gibi görünen bir listeyi alabilir ve ondan çoklu bir dizin oluşturabilir.
+
+25
+00:01:49,830 --> 00:01:51,870
+PD'si, tuple'lerden alınan çok bantlı endeks
+
+26
+00:01:52,140 --> 00:01:56,800
+Bu işi bitirdikten sonra, bu çoklu dizini birkaç seviye ile elde edeceksiniz.
+
+27
+00:01:56,800 --> 00:02:01,890
+Bir düzey daha üç kat daha eklememi ister misiniz? Daha sonra etiketler ve ben de gideceğim ve
+
+28
+00:02:01,890 --> 00:02:04,610
+bu veri çerçevesini oluştururken bunun ne anlama geldiğini açıklayacağım.
+
+29
+00:02:04,680 --> 00:02:09,780
+Ancak şimdilik bu kodu doğrudan sıfırdan yaratmak kadar önemli
+
+30
+00:02:09,780 --> 00:02:14,850
+olmadığından, bu kodu doğrudan dizüstü bilgisayardan kopyalayıp yapıştırmaktan çekinmeyin.
+
+31
+00:02:15,520 --> 00:02:27,360
+2'yi söyleyeceğiz, böylece 6 sütuna iki sütun var ve daha sonra indeksin daha önce yapmış olduğumuz yüksek indeks nesne olacak şekilde
+
+32
+00:02:27,420 --> 00:02:33,660
+ayarlayacağım ve daha sonra sütunları ayarlayacağız a ve b listeleri olmak
+
+33
+00:02:33,660 --> 00:02:38,440
+PD veri çerçevesi passen Rande ve 6 Com
+
+34
+00:02:39,210 --> 00:02:39,700
+Tamam.
+
+35
+00:02:39,720 --> 00:02:43,740
+Ve tüm bu kodları dizüstü bilgisayarlardan kopyalayıp yapıştırmaktan çekinmeyin, çünkü o kadar da önemli değil.
+
+36
+00:02:44,010 --> 00:02:48,650
+Bu sadece aslında çoklu dizin seviyesinde bir veri çerçevesi oluşturmak içindir.
+
+37
+00:02:48,700 --> 00:02:50,850
+Bundan sonra ne demek istediğimi göstereceğim.
+
+38
+00:02:50,940 --> 00:02:55,110
+Aslında veri çerçevesini gösteriyorsam, iki dizin seviyesine sahip olduğunu görebilirim.
+
+39
+00:02:55,110 --> 00:02:57,240
+Bu Jiwon ve G-2 seviyesi var.
+
+40
+00:02:57,420 --> 00:03:02,580
+Ve sonra bu alt ya da fikir seviyesi bir iki üç bir iki üç ve iki sütun.
+
+41
+00:03:02,730 --> 00:03:07,200
+Ve bu bir veri çerçevesi benzeri bir dizin çok düzeyli görünüyor.
+
+42
+00:03:07,200 --> 00:03:09,870
+Aksi halde bir dizin yüksek anahtarı olarak bilinir.
+
+43
+00:03:09,870 --> 00:03:15,970
+Devam edin ve bu dizin hiyerarşisi için çok düzeyli bir dizinden verileri nasıl arayabileceğimizi gösterelim.
+
+44
+00:03:16,140 --> 00:03:20,740
+Devam edelim ve yapalım DMF L-O görüyoruz.
+
+45
+00:03:21,780 --> 00:03:27,630
+Ve sonra Bracton gösterimini GRABBE'yi dışarıdaki dizinden kullanarak kullanabiliriz.
+
+46
+00:03:27,630 --> 00:03:34,560
+Örneğin her şeyin G 1 altında olmasını istersem, sadece bir tanesini geçirebilirim ve temelde
+
+47
+00:03:34,560 --> 00:03:41,730
+bu iki sütun için ilk üç satır olan küçük alt veri çerçevesini alıyorum ve
+
+48
+00:03:41,820 --> 00:03:49,870
+daha sonra bunun için dizinlemeye devam edebilirim, göreceksin ya da ellos görelim ya ikisi de iyidir.
+
+49
+00:03:50,580 --> 00:03:56,300
+Ve sonra sayıları geçerken aslında bu iki maddeyi bir dizi olarak geri getireceğiz.
+
+50
+00:03:56,310 --> 00:04:04,360
+Yani temel fikir, dış dizinden aramayı derinden aramaya devam etmenizdir.
+
+51
+00:04:04,380 --> 00:04:08,080
+Aslında bu dizin adlarını isterseniz.
+
+52
+00:04:08,130 --> 00:04:09,720
+Şu an adsızlar.
+
+53
+00:04:09,720 --> 00:04:14,910
+Bu iki hücrede DMF endeksi demek için kullanılabilecek bir isim bulunmaması konusunda
+
+54
+00:04:15,330 --> 00:04:16,340
+bilgi var.
+
+55
+00:04:16,440 --> 00:04:21,610
+İsimler vardiya girer ve hiçbiri yok dondurulmuş bir liste almanız gerekir.
+
+56
+00:04:21,630 --> 00:04:24,900
+Ve bu sadece nesnelerin türlerini isimlendiren bir panderers dizini.
+
+57
+00:04:25,110 --> 00:04:31,230
+Tek söylemek istediğim, bu indekslerin herhangi bir ismi yok ama ilerlemeye ve eşitlik söylemeye çalışabilir ve
+
+58
+00:04:32,640 --> 00:04:34,900
+daha sonra bir isim listesi gönderebilirsin.
+
+59
+00:04:34,980 --> 00:04:40,450
+Örneğin ilk G olduğu için dışarı çıkıp bu dizin gruplarının dışına çıkalım.
+
+60
+00:04:40,770 --> 00:04:45,300
+Ardından, içgörü indeksi ve m numaraları arayacağız.
+
+61
+00:04:45,300 --> 00:04:53,460
+Ve şimdi veri çerçevemi çağırdığımda, dış tarafta etiketli bir dizin halinde gruplar var ve içeride bir etiket
+
+62
+00:04:53,460 --> 00:04:55,220
+dizini olarak uyuşmuş halde.
+
+63
+00:04:55,290 --> 00:04:57,610
+Ve bu, istediğiniz kadar çok katmana sahip olabilir.
+
+64
+00:04:57,870 --> 00:05:03,210
+yanında kullanmak istediğiniz çok düzeyli dizin bilgileri için nasıl yararlı olacağını görmeye başlayabilirsiniz.
+
+65
+00:05:03,210 --> 00:05:05,260
+Umarım bunun bir veri çerçevesinin
+
+66
+00:05:05,790 --> 00:05:10,800
+Hadi devam edin ve sana bir kere daha bu bilgileri nasıl yakalayacağımızı göstereceğim.
+
+67
+00:05:10,800 --> 00:05:13,270
+Bu değeri burada yakalamak istediğinizi düşünün.
+
+68
+00:05:13,290 --> 00:05:16,540
+0. 07 vurgulanacak olana.
+
+69
+00:05:16,830 --> 00:05:22,580
+Bu, G-2'nin 2. sütununda B.
+
+70
+00:05:22,940 --> 00:05:26,200
+Dışardan başlayalım ve yolumuza devam edelim.
+
+71
+00:05:26,250 --> 00:05:37,290
+Devam edelim ve C G'yi istediğimizi ve bu veri çerçevesini döndürdüğümüzü belirtelim.
+
+72
+00:05:37,290 --> 00:05:39,250
+Yine burada bu değeri arıyoruz.
+
+73
+00:05:39,270 --> 00:05:48,040
+Bu yüzden devam edelim ve bir dizin daha yapalım, devam edip burada da arayabiliriz.
+
+74
+00:05:48,960 --> 00:05:52,340
+Ve sonra B sütununda veya B dizininde var.
+
+75
+00:05:52,350 --> 00:05:55,320
+0 serisi için özür dilerim. 07.
+
+76
+00:05:55,500 --> 00:06:01,350
+Böylece nihayetinde B'yi en sonunda aradık ve o özel değeri
+
+77
+00:06:01,350 --> 00:06:03,900
+dışardan tüm yol boyunca kapatabildik.
+
+78
+00:06:04,010 --> 00:06:06,480
+Şimdi yapmanız gereken videoyu duraklatın.
+
+79
+00:06:06,540 --> 00:06:12,220
+Başka bir değer seçin ve başarıyla dizine ekleyip indiremeyeceğinize bakın.
+
+80
+00:06:12,360 --> 00:06:12,850
+TAMAM.
+
+81
+00:06:12,960 --> 00:06:14,600
+Umarım bunu yapabilirsiniz.
+
+82
+00:06:14,610 --> 00:06:20,190
+Hadi devam edin ve kesit olarak adlandırılan son yararlı bir işlevi
+
+83
+00:06:20,260 --> 00:06:23,100
+gösterelim ve bu x x olacak.
+
+84
+00:06:23,970 --> 00:06:28,680
+Dolayısıyla, bir veri çerçevesi dizisinden bir satır veya sütun kesitini döndürür
+
+85
+00:06:28,680 --> 00:06:32,490
+ve bunu çok düzeyli bir dizin olduğunda kullanmaya başlayacaksınız.
+
+86
+00:06:32,490 --> 00:06:36,020
+Yine veriler çerçevemiz şuna benziyor.
+
+87
+00:06:36,030 --> 00:06:43,820
+Diyelim ki G altında olan her şeyi kapmak istedik. EHLO C G 1 size
+
+88
+00:06:44,060 --> 00:06:48,190
+gösterdiğim şeyi yapabilirdik ve verileri enerjiden 1 döndürür.
+
+89
+00:06:48,360 --> 00:06:56,940
+Ancak, çok düzeyli bir dizin için başka bir seçenek bu X'i kesit olarak kullanıyor ve ardından Jiwon'da da
+
+90
+00:06:57,000 --> 00:06:58,260
+bir dizge var.
+
+91
+00:06:58,620 --> 00:07:06,180
+Ancak, bu kesitin güzel olması, çok düzeyli bir dizin içerisine atlama veya girme kabiliyetine sahip olmasıdır.
+
+92
+00:07:06,540 --> 00:07:14,730
+Örneğin, burada veri çerçevesine sahip olduğumu varsayalım ve her iki sayı değerini de iki gruba da eşit
+
+93
+00:07:15,150 --> 00:07:16,340
+tutmak istiyorum.
+
+94
+00:07:16,380 --> 00:07:21,770
+Anlamı burada vurguladığım şeyi istiyorum 1 ve sonra 0. 3 1. 6 9.
+
+95
+00:07:21,930 --> 00:07:26,710
+Ama aynı zamanda bu değerin 0 olmasını istedim. 1 6 0. 18.
+
+96
+00:07:26,850 --> 00:07:31,700
+Böylece tüm değerlerin uyuşmuş olmasını istiyorum, içgörüt endeksinin 1'e eşit olduğunu söyledim.
+
+97
+00:07:31,790 --> 00:07:39,370
+Dizinleme Bu tür, EHLO yöntemleri görmek gibi bir şey için zor, ancak yaptığınız son
+
+98
+00:07:39,390 --> 00:07:48,250
+X s veya kesit yöntemi ile o kadar kötü değil, ne kadar eşit değil istediğinizi belirtmektir.
+
+99
+00:07:48,480 --> 00:07:54,730
+Ve sonra ikinci bir bağımsız değişken düzeyi olarak belirtmeniz ve daha sonra dizin adını girmeniz gerekir.
+
+100
+00:07:54,840 --> 00:07:58,340
+Bu durumda dizinin adı uyuşuktur.
+
+101
+00:07:58,590 --> 00:08:05,970
+Esasen bu, uyuşukluğa eşit olan seviye 1'e eşit olan bir kesit kapmamızı sağlar ve bu
+
+102
+00:08:05,970 --> 00:08:09,140
+şekilde esas olarak bu kesiti kullanmaya başlayacaksınız.
+
+103
+00:08:09,510 --> 00:08:13,900
+Şimdi her iki grupta da level num'ın 1'e eşit olduğu görülüyor.
+
+104
+00:08:13,920 --> 00:08:16,340
+Ve bu tür veriler geri döndü.
+
+105
+00:08:17,010 --> 00:08:21,910
+Tamam, Pandur'ların oldukça gelişmiş kullanımı olduğundan çok fazla endişelenme.
+
+106
+00:08:21,930 --> 00:08:28,200
+Sadece veri görselleştirme hakkında daha fazla şey öğrenirken verilerinize ulaşmaya başlayınca bunu daha sonra bilmenizi
+
+107
+00:08:28,200 --> 00:08:28,590
+isterim.
+
+108
+00:08:28,590 --> 00:08:35,100
+Capstone projeleri, aslında hisse endeksi verilerini kapmak için bu kesit metodunu gözden geçireceğiz.
+
+109
+00:08:35,520 --> 00:08:40,230
+Ancak şu an bunun farkında olmanızı, ancak test edilmek kadar endişelenmeyin çünkü daha
+
+110
+00:08:40,230 --> 00:08:44,460
+gelişmiş kullanım ve bu tür şeyler çok sık ders boyunca görmeyeceksiniz.
+
+111
+00:08:44,460 --> 00:08:49,290
+Gerçekten de, yalnızca daha gelişmiş veri kaptaşı projelerinden birinde bir kez ortaya çıkıyor
+
+112
+00:08:49,290 --> 00:08:52,350
+ve kesitin nasıl tekrar kullanılacağına dair bir açıklama var.
+
+113
+00:08:52,350 --> 00:08:56,010
+Bu yüzden, konuyu tekrar görmeden önce içeri girip sana tazeleme yapacağız.
+
+114
+00:08:56,040 --> 00:09:02,520
+Şimdilik, bu sadece çoklu endeks konularının gelişmiş bir genel görünümüydü ve daha yüksek anahtar konuları endekslemek.
+
+115
+00:09:02,520 --> 00:09:07,620
+Temel olarak, yapmak istediğiniz şey, dışarıdan çıkmak istediğiniz verileri elde etmek için adım adım dışa
+
+116
+00:09:07,620 --> 00:09:08,400
+dizin etmektir.
+
+117
+00:09:08,810 --> 00:09:12,120
+Tamam herkese teşekkürler, bir sonraki konuşmada görüşürüz.

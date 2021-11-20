@@ -1,0 +1,663 @@
+1
+00:00:05,430 --> 00:00:10,000
+Halo semuanya dan selamat datang di Bagian 3 seri peta lib ceramah peta.
+
+2
+00:00:10,260 --> 00:00:15,780
+Pada bagian akhir ini kita akan berbicara tentang pengaturan warna garis dengan jenis garis
+
+3
+00:00:15,780 --> 00:00:19,380
+dan benar-benar menyesuaikan opsi tampilan plot yang benar-benar terlihat.
+
+4
+00:00:19,380 --> 00:00:23,070
+Ayo maju dan lompat ke notebook Chippering untuk memulai.
+
+5
+00:00:23,100 --> 00:00:25,690
+OK di sini kita berada di notebook Jupiter.
+
+6
+00:00:25,950 --> 00:00:30,060
+Mari kita lanjutkan dan berbicara tentang pengaturan warna dengan plot langsung itu.
+
+7
+00:00:30,400 --> 00:00:39,600
+Jadi saya akan pergi ke depan dan hanya mengatakan gambar sama dengan angka VLT dan kemudian saya akan pergi dan menambahkan
+
+8
+00:00:39,600 --> 00:00:43,720
+satu set angka Access x sama dengan Gambar.
+
+9
+00:00:43,800 --> 00:00:54,140
+Tambahkan garis bawah garis dan saya akan mengatur ini pada 0 0 1 1 dan kemudian wups dan kemudian dari jenis sumbu yang saya katakan
+
+10
+00:00:54,180 --> 00:00:57,610
+X stop plot dan lakukan X datang Y.
+
+11
+00:00:57,840 --> 00:01:01,200
+Dan ini adalah referensi ke x dan y yang sama yang telah kita kerjakan.
+
+12
+00:01:01,200 --> 00:01:04,490
+Jadi jika saya masuk dan merencanakan bahwa saya mendapatkan sesuatu yang terlihat seperti ini.
+
+13
+00:01:04,500 --> 00:01:12,480
+Sekarang saya dapat mengedit warna plot ini dengan memasukkan parameter warna dan premi warna benar-benar dapat mengambil beberapa
+
+14
+00:01:12,480 --> 00:01:20,230
+argumen yang dapat diambil dalam argumen seperti string warna umum seperti biru atau mari kita pergi dan masukkan
+
+15
+00:01:20,260 --> 00:01:27,790
+oranye atau Anda dapat melihat kapan oranye garis keluar atau hijau dan Anda mendapatkan garis hijau.
+
+16
+00:01:27,810 --> 00:01:29,260
+Nama warna yang sangat mendasar.
+
+17
+00:01:29,280 --> 00:01:33,440
+Ini sebenarnya bisa kecuali sebagai string jika Anda ingin mulai lebih detail.
+
+18
+00:01:33,450 --> 00:01:39,550
+Anda benar-benar dapat memasukkan kode hex RGV sehingga saya dapat memasukkan tag hash dan kemudian beberapa RG menjadi
+
+19
+00:01:39,850 --> 00:01:45,420
+kode hex seperti go Gaudens salin ini dari notebook f f 8 C 0 0.
+
+20
+00:01:45,690 --> 00:01:47,260
+Ups itu.
+
+21
+00:01:47,730 --> 00:01:49,600
+Dan itu membuat Anda lebih banyak warna kustom.
+
+22
+00:01:49,890 --> 00:01:58,890
+Jadi Anda dapat melanjutkan dan mencari google untuk pembuat kode RSGB X atau Pencipta dan Anda harus memiliki banyak alat yang tersedia
+
+23
+00:01:58,890 --> 00:02:00,920
+secara online secara gratis.
+
+24
+00:02:00,920 --> 00:02:06,510
+Kami sebenarnya datang dengan ini adalah kode hex G-B jika Anda ingin membuat warna yang sangat khusus
+
+25
+00:02:06,510 --> 00:02:11,050
+untuk warna yang sangat mendasar pada dasarnya jenis warna Crayola seperti ungu.
+
+26
+00:02:11,100 --> 00:02:16,200
+Anda harus dapat dengan mudah memplotnya dan hanya melewati string.
+
+27
+00:02:16,200 --> 00:02:18,660
+OK jadi itulah dasar-dasar warna.
+
+28
+00:02:18,660 --> 00:02:24,480
+Sekarang mari kita bicara tentang garis dengan dan gaya garis jika Anda ingin mengedit garis.
+
+29
+00:02:24,510 --> 00:02:31,410
+Anda dapat benar-benar hanya meneruskan sejalan dengan sebagai argumen dan hanya memasukkan nomor.
+
+30
+00:02:31,410 --> 00:02:38,230
+Jadi misalnya jika kita memasukkan satu yang pada dasarnya merupakan baris default dengan kita ingin menggandakan default dan
+
+31
+00:02:38,230 --> 00:02:40,790
+mengatakan baris dengan sama dengan 2.
+
+32
+00:02:40,890 --> 00:02:43,830
+Dan itu akan menggandakan lebar kita bisa terus melakukan ini.
+
+33
+00:02:43,830 --> 00:02:49,920
+Jika saya ingin garis yang sangat tebal seperti dengan sama dengan 20 Itu adalah 20 kali ketebalan garis default.
+
+34
+00:02:50,400 --> 00:02:55,680
+Atau jika Anda ingin garis yang sangat tipis seperti memiliki ketebalan default 0. 5 Anda bisa mulai semakin
+
+35
+00:02:55,680 --> 00:02:56,990
+kurus.
+
+36
+00:02:57,010 --> 00:03:04,650
+Tip lain yang sangat berguna sejauh garis dengan dan visibilitas garis adalah argumen alfa jadi maju dan setel
+
+37
+00:03:04,650 --> 00:03:12,150
+baris saya sama dengan baris dengan tiga dan Anda dapat menentukan argumen alfa yang memungkinkan Anda untuk
+
+38
+00:03:12,150 --> 00:03:15,560
+pada dasarnya mengontrol seberapa transparan garis itu.
+
+39
+00:03:15,570 --> 00:03:21,130
+Jadi saya bisa mengatakan Alpha sama dengan 0. 5.
+
+40
+00:03:21,330 --> 00:03:26,020
+Dan jika saya menjalankannya sekarang saya bisa melihat kita sebenarnya memiliki sedikit transparansi lebih pada baris ini.
+
+41
+00:03:26,160 --> 00:03:33,050
+Jadi, Anda dapat menggabungkan garis warna dengan alfa untuk mendapatkan tampilan yang tepat yang Anda inginkan.
+
+42
+00:03:33,060 --> 00:03:37,880
+Satu hal terakhir yang perlu diperhatikan di sini adalah untuk jangka pendek Anda sebenarnya tidak perlu mengetik sesuai dengan sepenuhnya.
+
+43
+00:03:38,280 --> 00:03:43,390
+Anda cukup mengetik LW dan itu masih akan berfungsi dengan baik.
+
+44
+00:03:43,830 --> 00:03:44,580
+BAIK.
+
+45
+00:03:44,580 --> 00:03:49,230
+Jadi kita berbicara tentang garis dengan warna dan Alpha dan saya akan menghapus panggilan alfa.
+
+46
+00:03:49,230 --> 00:03:56,700
+Sekarang mari kita bicara tentang gaya garis jadi saya bisa mengetikkan gaya garis dan gaya garis ada beberapa opsi dan mereka
+
+47
+00:03:56,700 --> 00:04:00,690
+tercantum dalam buku catatan Anda bahwa pada dasarnya hanya mendefinisikan gaya
+
+48
+00:04:00,690 --> 00:04:03,270
+garis seperti garis putus-putus atau garis putus-putus.
+
+49
+00:04:03,270 --> 00:04:10,230
+Sebagai contoh jika seseorang dua garis putus-putus saya akhirnya mendapatkan garis putus-putus dan hanya melewati ini sebagai string atau saya lulus
+
+50
+00:04:10,710 --> 00:04:14,910
+dan tanda hubung dan kemudian suatu periode saya mendapatkan semacam garis putus-putus.
+
+51
+00:04:14,910 --> 00:04:19,140
+Jadi, titik dasbor, titik dasbor dan kemudian ada beberapa lebih banyak opsi pitch.
+
+52
+00:04:19,200 --> 00:04:26,760
+Colon yang memberi saya tanda hubung yang lebih kecil ini di sini dan Anda dapat melihat buku catatan Jupiter untuk kuliah ini untuk melihat opsi
+
+53
+00:04:26,940 --> 00:04:28,350
+apa yang Anda miliki.
+
+54
+00:04:28,350 --> 00:04:31,140
+Dan kemudian Anda bisa melakukan langkah jam.
+
+55
+00:04:31,200 --> 00:04:33,150
+Saya jarang menggunakannya.
+
+56
+00:04:33,210 --> 00:04:39,440
+Paling sering saya hanya akan melakukan garis putus-putus atau jika Anda hanya memasukkan satu garis putus-putus itu hanya garis yang solid.
+
+57
+00:04:39,720 --> 00:04:40,360
+BAIK.
+
+58
+00:04:40,590 --> 00:04:44,040
+Dan seperti halnya dengan garis dengan Anda sebenarnya tidak perlu mengetikkan gaya garis.
+
+59
+00:04:44,160 --> 00:04:49,850
+Anda hanya menempatkan ls dan akhirnya akan bekerja sama.
+
+60
+00:04:50,250 --> 00:04:50,890
+BAIK.
+
+61
+00:04:50,910 --> 00:04:53,630
+Jadi kami berbicara tentang garis dan gaya garis.
+
+62
+00:04:53,640 --> 00:04:55,390
+Sekarang mari kita bicara tentang spidol.
+
+63
+00:04:55,530 --> 00:04:59,380
+Jadi spidol akan digunakan ketika Anda hanya memiliki beberapa titik data.
+
+64
+00:04:59,400 --> 00:05:06,510
+Sebagai contoh jika kita melihat X sebagai pengingat apa itu, kita dapat melihat x hanya sebuah array
+
+65
+00:05:06,570 --> 00:05:10,510
+dari maju dan periksa panjang x 11 poin.
+
+66
+00:05:10,530 --> 00:05:14,940
+Katakanlah sebenarnya kita ingin menandai apakah 11 poin itu terjadi pada plot ini.
+
+67
+00:05:15,270 --> 00:05:25,190
+Yah saya bisa menentukan penanda sebagai argumen baru harus berupa koma dan kemudian saya bisa meneruskan string.
+
+68
+00:05:25,260 --> 00:05:28,310
+Jadi ada banyak simbol penanda yang mungkin dan mereka tercantum dalam buku catatan Anda.
+
+69
+00:05:28,320 --> 00:05:33,390
+Tapi yang paling mendasar pada umumnya hanyalah huruf kecil O ini sebagai string.
+
+70
+00:05:33,390 --> 00:05:41,550
+Dan di sana Anda dapat mulai melihat beberapa titik yang pada dasarnya menandai setiap titik pada X versus Y di sini
+
+71
+00:05:41,550 --> 00:05:45,110
+dan ada berbagai penanda yang tersedia untuk Anda.
+
+72
+00:05:45,150 --> 00:05:46,260
+Semuanya tercantum dalam buku catatan.
+
+73
+00:05:46,260 --> 00:05:50,700
+Tetapi hanya untuk menunjukkan kepada Anda pasangan yang dapat melakukan hal-hal seperti tanda plus yang tidak muncul
+
+74
+00:05:51,000 --> 00:05:54,760
+dengan baik di sini Anda dapat melakukan hal-hal seperti bintang kecil seperti simbol Asterix.
+
+75
+00:05:54,870 --> 00:06:01,110
+Anda dapat melakukan hal-hal seperti memasukkan kode angka ini. Saya akan membuat garis dengan sedikit lebih tipis
+
+76
+00:06:01,110 --> 00:06:04,470
+sehingga Anda benar-benar dapat melihat penanda ini di sini.
+
+77
+00:06:04,960 --> 00:06:07,050
+Jadi kami ingin membuat penanda ini lebih besar.
+
+78
+00:06:07,200 --> 00:06:13,050
+Anda mungkin sudah menebak bahwa ukuran marker bukan argumen sehingga Anda dapat melanjutkan dan menentukan ukuran
+
+79
+00:06:13,060 --> 00:06:17,010
+marker dan pada dasarnya hanya satu yang berukuran sangat kecil.
+
+80
+00:06:17,010 --> 00:06:19,840
+Dan jika Anda ingin membuatnya sedikit lebih besar, Anda bisa mengatakan 10.
+
+81
+00:06:19,890 --> 00:06:22,310
+Dan di sini kita bisa mulai melihat bentuk segitiga seperti ini.
+
+82
+00:06:22,310 --> 00:06:29,280
+Jadi mari kita pergi dan katakan spidol yang sangat besar di 20 dan kemudian kita bisa menentukan spidol tipe ear 2.
+
+83
+00:06:29,700 --> 00:06:35,790
+Anda bisa mengatakan plus kita mendapatkan plusses ini di sini dll. jadi semua opsi ini tercantum dalam dokumentasi.
+
+84
+00:06:36,000 --> 00:06:39,690
+Dan yang lebih penting dalam buku catatan Jupiter Anda mengatakan ada begitu banyak
+
+85
+00:06:39,690 --> 00:06:42,940
+jenis string yang dapat Anda lewati sebagai penanda kode penanda.
+
+86
+00:06:44,520 --> 00:06:49,120
+Dan jika Anda benar-benar ingin mengkustomisasi spidol Anda misalnya, lanjutkan dan kembalikan ini ke huruf
+
+87
+00:06:49,190 --> 00:06:54,150
+kecil Oh jadi kami mendapatkan poin ini di sini untuk mengubah baris ini dengan kembali ke satu.
+
+88
+00:06:54,300 --> 00:06:58,410
+Sebenarnya ada beberapa opsi sejauh menentukan seperti apa penanda itu.
+
+89
+00:06:58,410 --> 00:07:03,690
+Anda dapat menentukan warna wajah marker dengan tepi marker dan warna tepi marker.
+
+90
+00:07:03,690 --> 00:07:06,520
+Jadi pertama-tama akan keluar dan menambahkan argumen ini.
+
+91
+00:07:06,670 --> 00:07:09,910
+Jadi cukup tekan koma enter untuk baris baru.
+
+92
+00:07:10,110 --> 00:07:12,390
+Dan saya akan pergi dan mengatakan warna wajah Mark
+
+93
+00:07:15,710 --> 00:07:17,740
+dan Anda dapat menentukan warna wajah marker.
+
+94
+00:07:17,760 --> 00:07:19,800
+Jadi mereka akan menjadi warna di dalam lingkaran itu.
+
+95
+00:07:19,800 --> 00:07:22,590
+Mari kita lanjutkan dan membuatnya menjadi kuning dan menjalankan ini.
+
+96
+00:07:22,830 --> 00:07:24,800
+Dan itu mengubah warna wajah marker.
+
+97
+00:07:24,810 --> 00:07:32,700
+Katakanlah saya ingin mengubah tepi marker dengan saya pergi dan mengeditnya juga.
+
+98
+00:07:32,700 --> 00:07:37,440
+Buat yang sedikit lebih tebal seperti tiga yang membuat sedikit lebih tebal dan katakanlah
+
+99
+00:07:37,440 --> 00:07:39,750
+sebenarnya ingin menentukan warna tepi penanda.
+
+100
+00:07:39,750 --> 00:07:43,640
+Saya dapat menentukan warna tepi marker.
+
+101
+00:07:43,640 --> 00:07:46,650
+Sekarang mari kita membuat hijau itu.
+
+102
+00:07:46,650 --> 00:07:46,990
+Baiklah.
+
+103
+00:07:47,010 --> 00:07:52,860
+Jadi Anda dapat melihat ada banyak kemampuan penyesuaian di sini dan ada banyak opsi jika Anda ingin melihat banyak contoh
+
+104
+00:07:52,860 --> 00:07:56,520
+opsi yang berbeda, Anda dapat melanjutkan dan melompat ke buku catatan Jupiter untuk
+
+105
+00:07:56,520 --> 00:07:57,250
+kuliah ini.
+
+106
+00:07:57,270 --> 00:07:59,460
+Saya untuk terus maju dan melakukannya sekarang.
+
+107
+00:07:59,640 --> 00:08:04,290
+Ini akan pergi ke depan dan klik di atas dan jika Anda melihat di sini di peta Cutlip konsep kuliah.
+
+108
+00:08:04,350 --> 00:08:08,380
+Saat ini kami berada di penanda garis bagian dan garis serta gaya penanda.
+
+109
+00:08:08,700 --> 00:08:15,000
+Di sini pada dasarnya ada gambar di mana kita diberitahu oleh enam pada subplot ukuran gambar
+
+110
+00:08:15,000 --> 00:08:19,830
+pertama dan melakukan banyak plot dan mengedit warna garis dengan gaya garis.
+
+111
+00:08:19,830 --> 00:08:23,130
+Dan inilah banyak contoh sehingga Anda dapat melanjutkan dan membacanya.
+
+112
+00:08:23,160 --> 00:08:28,020
+Dan jika Anda sedang mencari simbol penanda yang mungkin berbeda ada di sini sebagai komentar atau jenis
+
+113
+00:08:28,020 --> 00:08:29,070
+sel sekutu dll.
+
+114
+00:08:29,100 --> 00:08:33,690
+Jadi ada banyak contoh berbeda di sini dalam hal menyalin dan menempel dari atau
+
+115
+00:08:33,690 --> 00:08:35,100
+membangun pengetahuan Anda sendiri.
+
+116
+00:08:35,160 --> 00:08:39,540
+Akhirnya mari kita bicara tentang kontrol atas akses perience dan rentang plot.
+
+117
+00:08:39,780 --> 00:08:46,860
+Dan jika kita melompat kembali ke buku catatan asli kita di sini kita dapat melanjutkan dan menunjukkan bagaimana kita dapat mengatur
+
+118
+00:08:46,860 --> 00:08:48,410
+batas Y dan batas
+
+119
+00:08:48,480 --> 00:08:51,180
+Kami akan membuat ini hanya plot yang sangat sederhana lagi.
+
+120
+00:08:51,190 --> 00:08:57,900
+Ayo maju dan buat garis ini dengan sama dengan dan mari kita buat gaya hidup sama dengan garis putus-putus.
+
+121
+00:08:58,560 --> 00:08:59,730
+OK bagus.
+
+122
+00:08:59,730 --> 00:09:04,650
+Katakanlah saya hanya ingin menunjukkan plot antara 0 dan 1 pada sumbu x.
+
+123
+00:09:04,860 --> 00:09:13,920
+Nah untuk melakukan itu hanya menghapus akses dan kemudian mengatakan atur garis bawah X Lim dan kemudian Anda melewati daftar dengan
+
+124
+00:09:13,980 --> 00:09:15,830
+batas bawah batas atas.
+
+125
+00:09:15,990 --> 00:09:18,750
+Jadi kita akan beralih dari 0 ke 1.
+
+126
+00:09:19,440 --> 00:09:24,720
+Dan di sini kita bisa melihat kita telah menetapkan batas bawah batas atas sumbu x.
+
+127
+00:09:24,720 --> 00:09:30,510
+Sekarang mari kita pergi ke depan dan melakukan hal yang sama untuk batas mengapa hanya menghapus sumbu
+
+128
+00:09:30,570 --> 00:09:37,380
+dan kemudian katakan set menggarisbawahi mengapa Lim dan sebagai daftar Anda melewati batas atas dan batas bawah lebih rendah dengan nol koma.
+
+129
+00:09:37,380 --> 00:09:38,460
+Mari kita buat batas atas.
+
+130
+00:09:38,470 --> 00:09:41,380
+Jadi cukup letakkan di 2.
+
+131
+00:09:41,390 --> 00:09:42,810
+Sekarang kita bisa melihat plot ini.
+
+132
+00:09:42,860 --> 00:09:47,790
+Dan perhatikan ketika kita memperbesar plot terlihat lebih banyak seperti sekelompok garis lurus yang menghubungkan titik-titik
+
+133
+00:09:48,090 --> 00:09:53,020
+yang masuk akal karena kita tidak memiliki detail SR sebanyak 11 poin saat kita memperkecil.
+
+134
+00:09:53,040 --> 00:09:59,030
+Kami melihat lebih banyak garis melengkung dan kami bisa memperbaikinya dengan mendapatkan lebih banyak titik data atau dengan memperkecil.
+
+135
+00:09:59,030 --> 00:10:04,590
+Baiklah akhirnya saya ingin melompat cepat ke peta Partlow konsep kuliah dan berbicara
+
+136
+00:10:04,590 --> 00:10:06,490
+tentang jenis plot khusus.
+
+137
+00:10:06,510 --> 00:10:11,280
+Ada banyak dan banyak jenis plot khusus yang dapat Anda lakukan dengan lib plot MAP seperti
+
+138
+00:10:11,550 --> 00:10:13,520
+histogram plot bar dan sebar plot.
+
+139
+00:10:13,560 --> 00:10:18,390
+Sebagian besar tipe plot ini sebenarnya akan digunakan di perpustakaan visualisasi lain bernama Seaborn yang
+
+140
+00:10:18,750 --> 00:10:21,960
+jauh lebih cocok untuk metode plot statistik semacam ini.
+
+141
+00:10:22,080 --> 00:10:24,790
+Tetapi hanya untuk menunjukkan kepada Anda bahwa Anda dapat melakukan ini di hidup saya.
+
+142
+00:10:25,020 --> 00:10:31,400
+Anda dapat melakukan scatterplot seperti ini, Anda dapat melakukan histogram menggunakan plot langsung atau bahkan
+
+143
+00:10:31,400 --> 00:10:33,120
+hal-hal seperti plot kotak.
+
+144
+00:10:33,120 --> 00:10:34,760
+Dan inilah beberapa contoh untuk Anda.
+
+145
+00:10:35,100 --> 00:10:40,260
+Sekarang di bagian paling bawah notebook Jupiter Anda untuk kuliah ini Anda akan melihat banyak tautan untuk
+
+146
+00:10:40,260 --> 00:10:43,960
+dibaca lebih lanjut termasuk halaman web proyek yang diplot dan satu tautan.
+
+147
+00:10:43,980 --> 00:10:47,440
+Saya sangat suka berada jauh di sini di urutan kedua hingga ke bawah.
+
+148
+00:10:47,790 --> 00:10:51,590
+Lorieau ini adalah tautan yang sangat bagus.
+
+149
+00:10:51,600 --> 00:10:53,740
+Ini adalah tutorial peta lib.
+
+150
+00:10:53,880 --> 00:10:58,170
+Semoga Anda benar-benar tahu sedikit sekarang dengan menonton tiga ceramah yang baru saja kita lakukan.
+
+151
+00:10:58,300 --> 00:11:02,710
+Tapi yang saya benar-benar suka tentang tautan ini adalah bahwa itu pada dasarnya hanya kode referensi.
+
+152
+00:11:02,790 --> 00:11:05,910
+Jadi, jika Anda ingin mengubah warna sesuai dengan Anda dapat masuk dan memeriksa tautan ini.
+
+153
+00:11:05,940 --> 00:11:10,040
+Lihat saja gambar-gambarnya dan ini akan memberi tahu Anda cara mengatur kutu pada label kutu dll.
+
+154
+00:11:10,170 --> 00:11:12,180
+Bergerak duri menambah legenda.
+
+155
+00:11:12,180 --> 00:11:17,620
+Banyak dari poin-poin ini sebenarnya ada di buku catatan lain untuk seri kuliah ini yang disebut
+
+156
+00:11:17,630 --> 00:11:20,010
+The advance map plot lib Notebook.
+
+157
+00:11:20,550 --> 00:11:25,680
+Kami sebenarnya tidak akan memiliki video ceramah tentang topik-topik lanjutan untuk saat ini karena kami tidak akan
+
+158
+00:11:25,680 --> 00:11:27,390
+menggunakannya terlalu sering sepanjang kursus.
+
+159
+00:11:27,390 --> 00:11:30,650
+Sebenarnya kita sebagian besar akan menggunakan Seaborn sepanjang kursus.
+
+160
+00:11:30,720 --> 00:11:31,440
+BAIK.
+
+161
+00:11:31,620 --> 00:11:37,260
+Datang berikutnya adalah gambaran singkat dari latihan plotless plot dan kemudian Anda akan memiliki gambaran umum
+
+162
+00:11:37,260 --> 00:11:39,150
+dari solusi untuk latihan itu.
+
+163
+00:11:39,240 --> 00:11:44,520
+Untuk sekarang lanjutkan dan tahan pada jenis plot khusus ini dan tunggu sampai kita belajar tentang menggunakan Seaborn
+
+164
+00:11:44,700 --> 00:11:48,400
+yang akan jauh lebih lengkap untuk jenis plot statistik yang indah ini.
+
+165
+00:11:48,660 --> 00:11:49,110
+Baik.
+
+166
+00:11:49,380 --> 00:11:51,610
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya.

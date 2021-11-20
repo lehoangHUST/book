@@ -1,0 +1,675 @@
+1
+00:00:05,430 --> 00:00:10,000
+Hello everyone and welcome to Part 3 of the map plot lib lecture series.
+
+2
+00:00:10,260 --> 00:00:15,780
+In this final part we're going to talk about setting colors line with line types and really customizing
+
+3
+00:00:15,780 --> 00:00:19,380
+the options of hire plot actually looks.
+
+4
+00:00:19,380 --> 00:00:23,070
+Let's go ahead and jump to the Chippering notebook to get started.
+
+5
+00:00:23,100 --> 00:00:25,690
+OK here we are at the Jupiter notebook.
+
+6
+00:00:25,950 --> 00:00:30,060
+Let's go ahead and talk about setting colors with that plot live.
+
+7
+00:00:30,400 --> 00:00:39,600
+So I'm going to go ahead and just say fig equals VLT figure and then I'm going to go and add a set of
+
+8
+00:00:39,600 --> 00:00:43,720
+Access's figure x is equal to Fig.
+
+9
+00:00:43,800 --> 00:00:54,140
+Add underscore axes and I will set this at 0 0 1 1 and then wups and then off of that sort of axes I
+
+10
+00:00:54,180 --> 00:00:57,610
+to say X stop plot and do X come a Y.
+
+11
+00:00:57,840 --> 00:01:01,200
+And this is a reference to the same x and y that we've been working with.
+
+12
+00:01:01,200 --> 00:01:04,490
+So if I go in and plot that I get something that looks like this.
+
+13
+00:01:04,500 --> 00:01:12,480
+Now I can edit this color of the plot by putting in the color parameter and the color première can actually
+
+14
+00:01:12,480 --> 00:01:20,230
+take multiple arguments it can take in arguments such as common color strings like blue or let's go
+
+15
+00:01:20,260 --> 00:01:27,790
+and put in orange or you can see when an orange line out or green and you get a green line.
+
+16
+00:01:27,810 --> 00:01:29,260
+So very basic color names.
+
+17
+00:01:29,280 --> 00:01:33,440
+It can actually except as a string if you want to start getting more detailed.
+
+18
+00:01:33,450 --> 00:01:39,550
+You can actually put in RGV hex codes so I can put in hash tag and then some RG be hex code such as
+
+19
+00:01:39,850 --> 00:01:45,420
+go Gaudens copy this from the notebook f f 8 C 0 0.
+
+20
+00:01:45,690 --> 00:01:47,260
+Whoops it's.
+
+21
+00:01:47,730 --> 00:01:49,600
+And that gets you in more custom color.
+
+22
+00:01:49,890 --> 00:01:58,890
+So you can go ahead and google search for RSGB X code maker or Creator and you should have plenty of
+
+23
+00:01:58,890 --> 00:02:00,920
+tools available freely online.
+
+24
+00:02:00,920 --> 00:02:06,510
+We're actually coming up with these are G-B hex codes in case you want to make a very custom color for
+
+25
+00:02:06,510 --> 00:02:11,050
+very basic colors basically kind of Crayola colors such as purple.
+
+26
+00:02:11,100 --> 00:02:16,200
+You should be able to easily plot them and just passing the string.
+
+27
+00:02:16,200 --> 00:02:18,660
+OK so that's the basics of colors.
+
+28
+00:02:18,660 --> 00:02:24,480
+Now let's talk about line with and line style if you want to edit the line with.
+
+29
+00:02:24,510 --> 00:02:31,410
+You can actually just pass in line with as an arguments and just put in a number.
+
+30
+00:02:31,410 --> 00:02:38,230
+So for instance if we put in one that is the essentially default line with we want to go double the
+
+31
+00:02:38,230 --> 00:02:40,790
+default and say line with is equal to 2.
+
+32
+00:02:40,890 --> 00:02:43,830
+And that will double the width we can continue doing this.
+
+33
+00:02:43,830 --> 00:02:49,920
+If I want a very thick line just like with equals 20 That's 20 times the thickness of the default line
+
+34
+00:02:49,930 --> 00:02:50,150
+.
+
+35
+00:02:50,400 --> 00:02:55,680
+Or if you want a very thin line such as have the default thickness 0.5 you can start getting thinner
+
+36
+00:02:55,680 --> 00:02:56,990
+and thinner.
+
+37
+00:02:57,010 --> 00:03:04,650
+Another very useful tip as far as line with and line visibility is the alpha arguments so go ahead and
+
+38
+00:03:04,650 --> 00:03:12,150
+set my line equal to line with three and you can specify the alpha argument which allows you to basically
+
+39
+00:03:12,150 --> 00:03:15,560
+control how transparent the line is.
+
+40
+00:03:15,570 --> 00:03:21,130
+So I can say Alpha is equal to 0.5.
+
+41
+00:03:21,330 --> 00:03:26,020
+And if I run that now I can see we actually have a little bit more transparency on this line.
+
+42
+00:03:26,160 --> 00:03:33,050
+So you can combine color line with an alpha in order to get the exact appearance that you want.
+
+43
+00:03:33,060 --> 00:03:37,880
+One last thing to note here is for short hand you actually don't have to type in line with completely
+
+44
+00:03:37,880 --> 00:03:38,270
+.
+
+45
+00:03:38,280 --> 00:03:43,390
+You can just type in LW and it will still work just fine.
+
+46
+00:03:43,830 --> 00:03:44,580
+OK.
+
+47
+00:03:44,580 --> 00:03:49,230
+So we're talking about line with color and Alpha and I'm going to remove the alpha call.
+
+48
+00:03:49,230 --> 00:03:56,700
+Now let's talk about line style so I can type in line style and line style there's quite a few options
+
+49
+00:03:56,700 --> 00:04:00,690
+and they're listed in your note book that it basically just defines the style of the line such as a
+
+50
+00:04:00,690 --> 00:04:03,270
+dashed line or a dotted line.
+
+51
+00:04:03,270 --> 00:04:10,230
+For instance if a person two dashes I end up getting a dashed line and just passing this in as a string
+
+52
+00:04:10,710 --> 00:04:14,910
+or I pass and a dash and then a period I get the sort of dashed line.
+
+53
+00:04:14,910 --> 00:04:19,140
+So dash point dash points and then there's a couple of more options pitches.
+
+54
+00:04:19,200 --> 00:04:26,760
+Colon which gets me these smaller dashes here and you can check out the Jupiter note book for this lecture
+
+55
+00:04:26,940 --> 00:04:28,350
+to see what other options you have.
+
+56
+00:04:28,350 --> 00:04:31,140
+And then you can do steps hour.
+
+57
+00:04:31,200 --> 00:04:33,150
+I rarely use those.
+
+58
+00:04:33,210 --> 00:04:39,440
+Most often I'll just either do a dash line or if you just put in one dash it's just a solid line.
+
+59
+00:04:39,720 --> 00:04:40,360
+OK.
+
+60
+00:04:40,590 --> 00:04:44,040
+And just like with line with you actually don't need to type in line style.
+
+61
+00:04:44,160 --> 00:04:49,850
+You just put ls and it will end up working just the same.
+
+62
+00:04:50,250 --> 00:04:50,890
+OK.
+
+63
+00:04:50,910 --> 00:04:53,630
+So we talked about line with and line style.
+
+64
+00:04:53,640 --> 00:04:55,390
+Now let's talk about markers.
+
+65
+00:04:55,530 --> 00:04:59,380
+So markers are going to be used when you have just a few data points.
+
+66
+00:04:59,400 --> 00:05:06,510
+For instance if we take a look at X as a reminder of what it is we can see the x is just an array of
+
+67
+00:05:06,570 --> 00:05:10,510
+go ahead and check the length x of 11 points.
+
+68
+00:05:10,530 --> 00:05:14,940
+Let's say actually we wanted to mark were those 11 points occur on this plot.
+
+69
+00:05:15,270 --> 00:05:25,190
+Well I can specify marker as a new arguments should be a comma and then I can pass in a string.
+
+70
+00:05:25,260 --> 00:05:28,310
+So there's lots of possible marker symbols and they're listed in your note book.
+
+71
+00:05:28,320 --> 00:05:33,390
+But the most basic one in common one is just this lowercase O as a string.
+
+72
+00:05:33,390 --> 00:05:41,550
+And there you can begin to see some dots that basically mark out each points on X versus Y here and
+
+73
+00:05:41,550 --> 00:05:45,110
+there's a wide variety of markers available to you.
+
+74
+00:05:45,150 --> 00:05:46,260
+They're all listed in the note book.
+
+75
+00:05:46,260 --> 00:05:50,700
+But just to show you a couple who can do things such as plus signs which don't show up too well here
+
+76
+00:05:51,000 --> 00:05:54,760
+you can do things such as Little stars like Asterix symbols.
+
+77
+00:05:54,870 --> 00:06:01,110
+You can do things such as passing in these number codes I'm going to make the line with a little thinner
+
+78
+00:06:01,110 --> 00:06:04,470
+so you can actually see these markers here.
+
+79
+00:06:04,960 --> 00:06:07,050
+So we wanted to make these markers bigger.
+
+80
+00:06:07,200 --> 00:06:13,050
+Well you may have guessed that marker size isn't arguments so you can go ahead and specify marker size
+
+81
+00:06:13,060 --> 00:06:17,010
+and essentially just one is the very small size.
+
+82
+00:06:17,010 --> 00:06:19,840
+And then if you want to make it quite a bit larger you can say 10.
+
+83
+00:06:19,890 --> 00:06:22,310
+And here we can begin to see these kind of triangles being in the form.
+
+84
+00:06:22,310 --> 00:06:29,280
+So let's go and say just huge markers at 20 and then we can specify markers type ear 2.
+
+85
+00:06:29,700 --> 00:06:35,790
+You can say plus we get these plusses here etc. so all these options are listed in the documentation
+
+86
+00:06:35,790 --> 00:06:36,000
+.
+
+87
+00:06:36,000 --> 00:06:39,690
+And more importantly in your Jupiter note book says there's so many different types of strings you can
+
+88
+00:06:39,690 --> 00:06:42,940
+pass in as marker for marker codes.
+
+89
+00:06:44,520 --> 00:06:49,120
+And if you really want to customize your markers for instance go ahead and put this back to lowercase
+
+90
+00:06:49,190 --> 00:06:54,150
+Oh so we get these points here to change this line with back to one.
+
+91
+00:06:54,300 --> 00:06:58,410
+There's actually quite a few options as far as specifying what the marker looks like.
+
+92
+00:06:58,410 --> 00:07:03,690
+You can specify the marker face color the marker edge with and the marker edge color.
+
+93
+00:07:03,690 --> 00:07:06,520
+So first it's going to go out and add these arguments in.
+
+94
+00:07:06,670 --> 00:07:09,910
+So just press comma enter for a new line.
+
+95
+00:07:10,110 --> 00:07:12,390
+And I'm going to go out and say Mark face color
+
+96
+00:07:15,710 --> 00:07:17,740
+and you can specify the marker face color.
+
+97
+00:07:17,760 --> 00:07:19,800
+So they'll be the color inside of that circle.
+
+98
+00:07:19,800 --> 00:07:22,590
+Let's go ahead and make it yellow and run this.
+
+99
+00:07:22,830 --> 00:07:24,800
+And that changed the marker face color.
+
+100
+00:07:24,810 --> 00:07:32,700
+Let's say I want to change the marker edge with I go and edit that as well.
+
+101
+00:07:32,700 --> 00:07:37,440
+Make that a little thicker such as three that makes a little thicker and let's say actually want to
+
+102
+00:07:37,440 --> 00:07:39,750
+specify the color of the marker edge.
+
+103
+00:07:39,750 --> 00:07:43,640
+I can specify a marker edge color.
+
+104
+00:07:43,640 --> 00:07:46,650
+Now let's go to make that green.
+
+105
+00:07:46,650 --> 00:07:46,990
+All right.
+
+106
+00:07:47,010 --> 00:07:52,860
+So you can see there's a lot of customize ability here and there's a lot of options if you want to see
+
+107
+00:07:52,860 --> 00:07:56,520
+a bunch of examples of different options you can go ahead and jump to the Jupiter note book for this
+
+108
+00:07:56,520 --> 00:07:57,250
+lecture.
+
+109
+00:07:57,270 --> 00:07:59,460
+I to go ahead and do that now.
+
+110
+00:07:59,640 --> 00:08:04,290
+It's going to go ahead and click on over and if you see here on the map Cutlip concepts lecture.
+
+111
+00:08:04,350 --> 00:08:08,380
+Right now we're in the section line marker and line and marker styles.
+
+112
+00:08:08,700 --> 00:08:15,000
+Here there's basically a figure where we did told by six on the subplots the first figure size and did
+
+113
+00:08:15,000 --> 00:08:19,830
+a bunch of plots and edited the colors the line with the line styles.
+
+114
+00:08:19,830 --> 00:08:23,130
+And here's a bunch of examples so you can go ahead and read them out.
+
+115
+00:08:23,160 --> 00:08:28,020
+And if you're looking for a different possible marker symbols are all here as comments or allied cell
+
+116
+00:08:28,020 --> 00:08:29,070
+types etc..
+
+117
+00:08:29,100 --> 00:08:33,690
+So there's a lot of different examples here in kind of copy and paste from or build your own knowledge
+
+118
+00:08:33,690 --> 00:08:35,100
+off of.
+
+119
+00:08:35,160 --> 00:08:39,540
+Finally let's talk about control over access perience and plot range.
+
+120
+00:08:39,780 --> 00:08:46,860
+And if we hop back over to our original notebook over here we can go ahead and show how we can set the
+
+121
+00:08:46,860 --> 00:08:48,410
+Y limit and the limit.
+
+122
+00:08:48,480 --> 00:08:51,180
+We're going to make this just a very simple plot again.
+
+123
+00:08:51,190 --> 00:08:57,900
+Let's go ahead and just make this line with equal to and let's make lifestyle equal some dash line.
+
+124
+00:08:58,560 --> 00:08:59,730
+OK great.
+
+125
+00:08:59,730 --> 00:09:04,650
+Let's say I only wanted to show the plot between 0 and 1 on the x axis.
+
+126
+00:09:04,860 --> 00:09:13,920
+Well to do that just clear access and then say set underscore X Lim and then you pass in a list with
+
+127
+00:09:13,980 --> 00:09:15,830
+a lower bound an upper bound.
+
+128
+00:09:15,990 --> 00:09:18,750
+So we'll go from 0 to 1.
+
+129
+00:09:19,440 --> 00:09:24,720
+And here we can see we've set the lower bound an upper bound of the x axis.
+
+130
+00:09:24,720 --> 00:09:30,510
+Now let's go ahead and do the same thing for the why limit just clear axes and then say sets underscore
+
+131
+00:09:30,570 --> 00:09:37,380
+why Lim and as a list you pass an upper bound and lower bounds lower by that zero comma.
+
+132
+00:09:37,380 --> 00:09:38,460
+Let's make the upper bound.
+
+133
+00:09:38,470 --> 00:09:41,380
+So just put it at 2.
+
+134
+00:09:41,390 --> 00:09:42,810
+Now we can see this plot.
+
+135
+00:09:42,860 --> 00:09:47,790
+And notice as we zoom in the plot looks more and more like a bunch of straight lines connecting points
+
+136
+00:09:48,090 --> 00:09:53,020
+which makes sense because we don't have as much detail SR's only 11 points as we zoom out.
+
+137
+00:09:53,040 --> 00:09:59,030
+We see more of a curved line and we can fix that by getting more data points or by zooming out.
+
+138
+00:09:59,030 --> 00:10:04,590
+All right finally I want to hop back over real quick to the map Partlow concepts lecture and talk about
+
+139
+00:10:04,590 --> 00:10:06,490
+such special plot types.
+
+140
+00:10:06,510 --> 00:10:11,280
+There's lots and lots of many specialized plot types you can do with MAP plot lib such as bar plots
+
+141
+00:10:11,550 --> 00:10:13,520
+histograms and scatterplot.
+
+142
+00:10:13,560 --> 00:10:18,390
+Most of these plot types were actually going to use in another visualization library called Seaborn
+
+143
+00:10:18,750 --> 00:10:21,960
+which is much better suited for these sort of statistical plotting methods.
+
+144
+00:10:22,080 --> 00:10:24,790
+But just to show you that you can do this in my live.
+
+145
+00:10:25,020 --> 00:10:31,400
+You can perform scatterplot such as this you can perform histograms using that plot live or even the
+
+146
+00:10:31,400 --> 00:10:33,120
+things such as box plots.
+
+147
+00:10:33,120 --> 00:10:34,760
+And here are some examples for you.
+
+148
+00:10:35,100 --> 00:10:40,260
+Now at the very bottom of your Jupiter notebook for this lecture you'll see a bunch of links for further
+
+149
+00:10:40,260 --> 00:10:43,960
+reading including the project web page that plotted and one link.
+
+150
+00:10:43,980 --> 00:10:47,440
+I really like is all the way here second to the bottom.
+
+151
+00:10:47,790 --> 00:10:51,590
+This Lorieau are a really nice link.
+
+152
+00:10:51,600 --> 00:10:53,740
+It's a map lib tutorial.
+
+153
+00:10:53,880 --> 00:10:58,170
+Hopefully you actually know quite a bit now by watching these three lectures that we just did.
+
+154
+00:10:58,300 --> 00:11:02,710
+But what I really like about this link is that it's essentially just a reference code.
+
+155
+00:11:02,790 --> 00:11:05,910
+So if you want to change colors in line with you can go in and check out this link.
+
+156
+00:11:05,940 --> 00:11:10,040
+Just look at the figures and it will tell you how to set ticks at tick labels etc..
+
+157
+00:11:10,170 --> 00:11:12,180
+Moving spines adding legends.
+
+158
+00:11:12,180 --> 00:11:17,620
+A lot of these points are actually in the other note book for this lecture series called The advance
+
+159
+00:11:17,630 --> 00:11:20,010
+map plot lib Notebook.
+
+160
+00:11:20,550 --> 00:11:25,680
+We're not actually going to have a video lecture on those advanced topics for now because we're not
+
+161
+00:11:25,680 --> 00:11:27,390
+going to use them too often throughout the course.
+
+162
+00:11:27,390 --> 00:11:30,650
+In fact we're mostly going to be using Seaborn throughout the course.
+
+163
+00:11:30,720 --> 00:11:31,440
+OK.
+
+164
+00:11:31,620 --> 00:11:37,260
+Coming up next is a quick overview of the plot plotless exercise and then you'll have a overview of
+
+165
+00:11:37,260 --> 00:11:39,150
+the solutions for that exercise.
+
+166
+00:11:39,240 --> 00:11:44,520
+For now go ahead and hold off on these special plot types and wait till we learn about using Seaborn
+
+167
+00:11:44,700 --> 00:11:48,400
+which is going to be much better equipped for these sort of beautiful statistical plots.
+
+168
+00:11:48,660 --> 00:11:49,110
+Okay.
+
+169
+00:11:49,380 --> 00:11:51,610
+Thanks everyone and I'll see you at the next lecture.

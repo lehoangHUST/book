@@ -1,0 +1,207 @@
+1
+00:00:05,190 --> 00:00:09,870
+Hello everyone and welcome to the plotless and cufflinks lecture and this lecture we're going to learn
+
+2
+00:00:09,870 --> 00:00:15,890
+a bit of the background behind plotline cufflinks which allow us to create interactive visualizations
+
+3
+00:00:17,260 --> 00:00:23,730
+quietly is an interactive visualization library that's open source and cufflinks connects this library
+
+4
+00:00:23,730 --> 00:00:24,750
+with pandas.
+
+5
+00:00:24,870 --> 00:00:29,490
+And that way we're going to be able to create interactive visualizations directly off our data frame
+
+6
+00:00:29,490 --> 00:00:30,100
+.
+
+7
+00:00:30,180 --> 00:00:35,480
+However before we actually explore these libraries we're going to need to install them.
+
+8
+00:00:35,880 --> 00:00:41,100
+You'll need to use Pipp to install these libraries either at your command line or at your terminal and
+
+9
+00:00:41,100 --> 00:00:44,720
+you can write Pitman's style plot Lee and Pipp install cufflinks.
+
+10
+00:00:44,730 --> 00:00:47,750
+This should still work even if you're using the Anaconda's distribution.
+
+11
+00:00:47,790 --> 00:00:53,700
+These two libraries just aren't available on the Konda install at this time so go ahead and use pipin
+
+12
+00:00:53,710 --> 00:00:58,650
+style plotless and Pippin's cufflinks at your command line terminal in order to get these libraries
+
+13
+00:00:58,650 --> 00:01:00,300
+.
+
+14
+00:01:00,300 --> 00:01:04,170
+Now let's go ahead and get a quick tour of the official Web site before the next lecture we actually
+
+15
+00:01:04,170 --> 00:01:05,990
+show you how to use these libraries.
+
+16
+00:01:06,000 --> 00:01:09,110
+I'm going to go ahead and jump to platies official Web site now.
+
+17
+00:01:09,630 --> 00:01:09,920
+All right.
+
+18
+00:01:09,930 --> 00:01:11,750
+Here I am at the plotless Web site.
+
+19
+00:01:11,820 --> 00:01:16,380
+It set P L O T L Y and you can check out the Web site.
+
+20
+00:01:16,390 --> 00:01:22,320
+There's a lot of information on it in a quick note plotless is also a company but they make money by
+
+21
+00:01:22,320 --> 00:01:25,590
+hosting your visualizations and hosting your dashboards.
+
+22
+00:01:25,620 --> 00:01:30,900
+If you want to keep everything local or host it yourself the library that operates on all these features
+
+23
+00:01:30,990 --> 00:01:32,690
+is open source and free.
+
+24
+00:01:32,910 --> 00:01:37,480
+So don't worry you won't have to pay something to use politely and politely.
+
+25
+00:01:37,560 --> 00:01:42,120
+It's compatible with a variety of tools such as our Matlab excel and Javascript.
+
+26
+00:01:42,270 --> 00:01:44,830
+But we're going to focus on using it with Python.
+
+27
+00:01:44,830 --> 00:01:49,440
+If you go ahead and click on this python link you'll get a link to a getting started page with Python
+
+28
+00:01:49,440 --> 00:01:49,750
+.
+
+29
+00:01:49,890 --> 00:01:52,080
+It will show you how to get started in.
+
+30
+00:01:52,110 --> 00:01:56,500
+Interestingly they'll have a link to Pandas and that's what we're going to be focusing on using plotless
+
+31
+00:01:56,500 --> 00:02:00,520
+with pandas and in order to you we use plotless of pandas.
+
+32
+00:02:00,600 --> 00:02:05,940
+You need to install plotline as said here in the instructions you're also later on going to have to
+
+33
+00:02:05,940 --> 00:02:08,130
+install cufflinks.
+
+34
+00:02:08,130 --> 00:02:08,820
+Cufflinks.
+
+35
+00:02:08,820 --> 00:02:13,390
+Is the library that connects plot Lee with pandas.
+
+36
+00:02:13,510 --> 00:02:19,010
+And I'm going to go ahead and go to the web page for cufflinks.
+
+37
+00:02:19,050 --> 00:02:22,230
+And this is the get her page for cufflinks and cufflinks basically.
+
+38
+00:02:22,410 --> 00:02:28,170
+It's a productivity tool that allows you to quickly call plot's just as you would with pandas for instance
+
+39
+00:02:28,170 --> 00:02:34,120
+a data frame dot plot method that is set you'll actually create an interactive visualization using plot
+
+40
+00:02:34,120 --> 00:02:36,740
+Lee in a quick disclaimer.
+
+41
+00:02:36,750 --> 00:02:41,910
+I'm actually a contributor to this library myself and you can actually see my merged branch right here
+
+42
+00:02:41,910 --> 00:02:43,320
+at Jey imports here.
+
+43
+00:02:43,740 --> 00:02:48,750
+But anyways there's pretty nice tutorials here under cufflinks and we're going to go through some of
+
+44
+00:02:48,750 --> 00:02:54,030
+these topics and show you how to actually use cufflinks effectively in order to create really nice looking
+
+45
+00:02:54,060 --> 00:02:55,980
+interactive his lazy actions.
+
+46
+00:02:56,270 --> 00:03:02,190
+And here's just an example of one U.K. swap rates and you can see that this is a 3D surface and this
+
+47
+00:03:02,190 --> 00:03:04,300
+is done directly off of a data frame.
+
+48
+00:03:04,320 --> 00:03:11,120
+There's some release notes here and then there's some links that documentation up above over here.
+
+49
+00:03:11,130 --> 00:03:11,760
+All right.
+
+50
+00:03:11,910 --> 00:03:16,740
+Let's go ahead and just get started in the next lecture we're actually going to show you how to code
+
+51
+00:03:17,010 --> 00:03:20,220
+interactive visualizations using these libraries.
+
+52
+00:03:20,220 --> 00:03:22,080
+Thanks everyone and I'll see you at the next lecture

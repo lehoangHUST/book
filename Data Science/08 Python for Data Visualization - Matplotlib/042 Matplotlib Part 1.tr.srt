@@ -1,0 +1,943 @@
+1
+00:00:05,010 --> 00:00:09,870
+Herkese merhaba ve ilk harita çizelgesi lib dersine hoş geldiniz ve bu ders
+
+2
+00:00:09,870 --> 00:00:13,260
+size Python ile yaşayan harita çizimini nasıl kullanabileceğinizi göstereceğim.
+
+3
+00:00:13,500 --> 00:00:16,360
+Devam edin, başlamak için Jüpiter not defterine atlayalım.
+
+4
+00:00:16,620 --> 00:00:16,890
+Tamam.
+
+5
+00:00:16,890 --> 00:00:23,120
+Burada, bu dersin not defterine Matematik Lib kavramları dersi deniyor ve tüm kodların
+
+6
+00:00:23,160 --> 00:00:27,390
+bu defterde bulunması yanı sıra bu arsa lib ile
+
+7
+00:00:27,390 --> 00:00:29,690
+ilgili daha fazla bilgi bulunmaktadır.
+
+8
+00:00:30,030 --> 00:00:30,450
+TAMAM.
+
+9
+00:00:30,510 --> 00:00:34,680
+Ben devam edip boş bir deftere atlayacağım ve tüm bu kodu
+
+10
+00:00:34,680 --> 00:00:36,300
+inceleyip sizin için açıklayacağım.
+
+11
+00:00:36,300 --> 00:00:39,920
+Bırak gideyim ve bu yeni sekmeyi tıklatayım ve burada yeni defterimiz var.
+
+12
+00:00:40,110 --> 00:00:44,530
+Devam edip başlık ve araç çubuğunu gizlediğinizde buraya biraz daha yer açın.
+
+13
+00:00:44,550 --> 00:00:44,920
+TAMAM.
+
+14
+00:00:44,970 --> 00:00:46,990
+Çizilmemiş hakkında başlamaya başlayalım.
+
+15
+00:00:47,490 --> 00:00:48,870
+Bir araya geldiğinizde bir araya geldi.
+
+16
+00:00:48,900 --> 00:00:58,200
+lib boşluğunu yüzdelik işareti ile işaretlemektir ve bu Jüpiter defterinde oluşturduğunuz arsları gerçekten görmenizi sağlayacak.
+
+17
+00:00:58,200 --> 00:01:05,710
+Yapabileceğiniz ilk şey, harita çizelgesini lib türk liralık parsellerini TLT olarak aktarmak demektir
+
+18
+00:01:05,720 --> 00:01:11,680
+ve Jüpiter not defterini kullanıyorsanız, yapmanız gereken şey, Matt çizgisi
+
+19
+00:01:12,180 --> 00:01:15,750
+Devam et ve bu harika koş.
+
+20
+00:01:15,840 --> 00:01:19,920
+Jüpiter dizüstü bilgisayar sistemini kullanmıyorsanız, ileride ne yapacaksın, çizmek için
+
+21
+00:01:19,920 --> 00:01:25,770
+yaptığın komutların hepsi bittiğinde hangi yazı tipini göstereceğini gösterecek Hilti ise yakın parantezleri gösteriyor ve
+
+22
+00:01:25,770 --> 00:01:29,100
+daha sonra biz aslında bazılarını çizmeye başlıyoruz örnekleri.
+
+23
+00:01:29,100 --> 00:01:32,280
+Asha bunu gerçekten kodunuza koyardınız.
+
+24
+00:01:32,400 --> 00:01:32,850
+Tamam.
+
+25
+00:01:32,940 --> 00:01:37,830
+Devam edelim ve iki numpy yarışın içeri girip PI ve
+
+26
+00:01:37,860 --> 00:01:46,040
+P'yi içe aktarıp, x'in herhangi bir Lynn alanına eşit olduğunu söyleyerek çok basit bir örneği inceleyelim.
+
+27
+00:01:46,080 --> 00:01:55,020
+Dolayısıyla doğrusal aralıklarla olacak, 0'dan 5'e gideceğiz ve 11 puan kapacağız ve sonra y, x'e
+
+28
+00:01:55,020 --> 00:01:56,210
+eşit olacak.
+
+29
+00:01:56,220 --> 00:01:58,110
+Yani ikisinin gücü.
+
+30
+00:01:58,740 --> 00:02:05,550
+Yani eğer x ve y'ye bakarsak, 0'dan 5'e bir dizi var ve o zaman NEDEN sadece
+
+31
+00:02:05,550 --> 00:02:07,260
+tümü bu kare karelerdir.
+
+32
+00:02:07,350 --> 00:02:13,200
+komutları çok hızlı bir şekilde bir arsa oluşturmanıza izin verir ve size harita çizilen araziler oluşturmanın iki yolunu göstereceğiz.
+
+33
+00:02:13,200 --> 00:02:14,850
+Şimdi temel harita çizimi Lim
+
+34
+00:02:15,000 --> 00:02:20,550
+Biri işlevsel bir yöntemdir ve diğeri ise nesne yönelimli metodu fonksiyonel metodu ilk
+
+35
+00:02:20,550 --> 00:02:24,070
+önce gösterecek ve ardından nesne yönelimli metoda geçecektir.
+
+36
+00:02:24,210 --> 00:02:28,770
+Cutlip kompletini oluşturmak için genellikle daha iyi bir yol olduğundan, gidelim
+
+37
+00:02:28,770 --> 00:02:33,040
+ve fonksiyonel yöntemi ilk önce fonksiyonel yöntem aslında oldukça basit gösterelim.
+
+38
+00:02:33,090 --> 00:02:40,290
+Kabuk soyma kabuğunun soyulduğunu ve daha sonra burada vardiya sekmesi yapabileceğimizi ve birkaç argümanı geçeceğini söylüyorsun.
+
+39
+00:02:40,740 --> 00:02:47,130
+Basit bir arsa için yapacağınız ilki X ve y öğelerinizi aktarmaktır ve
+
+40
+00:02:47,130 --> 00:02:50,370
+sonra devam edip de vardiya girelim.
+
+41
+00:02:50,820 --> 00:02:53,000
+Ve işte burada aslında arsayı gösterecek.
+
+42
+00:02:53,100 --> 00:02:55,870
+Devam ettik ve Y'ye karşı X çizdik.
+
+43
+00:02:56,150 --> 00:03:00,470
+Bu satırın sonunda yapacağınız Jüpiter not defterinde değilseniz, kodunuzdaysanız
+
+44
+00:03:00,480 --> 00:03:06,770
+soyma t gösterimini söyleyin ve bunu çalıştırırsam aynı çizgiyi elde ettiğimizi görebiliriz.
+
+45
+00:03:06,810 --> 00:03:11,880
+Jupiter notunun olmadığı bir şeyi kullanmadığınız sürece t show'u kullanmak zorunda değilsiniz, ancak
+
+46
+00:03:11,880 --> 00:03:15,170
+Jüpiter defterindeki fark esas olarak arsayı yazdırdığınız gibi.
+
+47
+00:03:15,300 --> 00:03:20,040
+Çıktığımızı gösteren PBT yoksa buraya dikkat et.
+
+48
+00:03:20,110 --> 00:03:25,820
+Bu yüzden bu kaldırırsanız ya da aslında geri koyarsam, ben çıkmazsam.
+
+49
+00:03:25,830 --> 00:03:34,560
+Bu aslında aynı şey sadece bir dize yazarken dize yazarken hızlı bir benzetme yapmak ve
+
+50
+00:03:34,560 --> 00:03:35,040
+aynı
+
+51
+00:03:38,720 --> 00:03:40,040
+şeyi söylemektir.
+
+52
+00:03:40,040 --> 00:03:44,760
+Yaptıkları gösterir KEELTY, esas itibariyle arsayı göstermek yerine bu çizimi basmaktır.
+
+53
+00:03:45,810 --> 00:03:46,290
+Tamam.
+
+54
+00:03:46,590 --> 00:03:51,510
+Şimdilik, konser sürekli olarak o şov için itiraz yazdığından kendimizi endişelendirmeyeceğiz.
+
+55
+00:03:51,780 --> 00:03:54,690
+Bununla birlikte, Jüpiter not defterini kullanmıyorsanız, yazmaya devam etmeniz gerekecektir.
+
+56
+00:03:54,840 --> 00:03:56,370
+Dolayısıyla bunu aklında tutun.
+
+57
+00:03:56,970 --> 00:03:57,460
+Tamam.
+
+58
+00:03:57,630 --> 00:04:02,120
+Bu, o kadar da kötü olmayan polip hakkında bir şeyler çizmenin en temel yoludur.
+
+59
+00:04:02,370 --> 00:04:09,270
+Aslında bu çizimi Matlab'a renk ve yaşam biçimi gibi argümanlar gibi ekleyebilirsiniz.
+
+60
+00:04:09,910 --> 00:04:12,810
+Ve bu, bu arsayı düzenlemeye devam etmenize izin verir.
+
+61
+00:04:12,840 --> 00:04:17,730
+Bu konuda daha sonra satır stilleri ve renk stillerine kadar daha fazla konuşacağız,
+
+62
+00:04:17,730 --> 00:04:20,850
+ancak Matlab'ı biliyorsanız muhtemelen zaten size aşina görünüyor.
+
+63
+00:04:21,030 --> 00:04:24,670
+Şimdi kaldırın ve temelleri gözden geçirelim.
+
+64
+00:04:25,140 --> 00:04:30,330
+Bu arsa için bir X etiketi veya başlık eklemek istersek bunu aşağıdaki yöntemlerle yapabilirsiniz.
+
+65
+00:04:30,510 --> 00:04:39,240
+TX etiketini söyleyebilir ve daha sonra sadece X etiketi için istediğiniz bir dizeden geçebilir veya dışarı çıkıp X
+
+66
+00:04:40,470 --> 00:04:48,750
+etiketini söyleyebilir ve daha sonra y etiketi için pty etiketi bir dizede geçebileceğinizi söyleyebilirsiniz, neden söyleyebileceğiniz başlığa
+
+67
+00:04:48,750 --> 00:04:54,240
+etiketleyebilirsiniz Piazzi Bu başlık ve sonra devam edip orada başlık dizesini koyacağız.
+
+68
+00:04:54,400 --> 00:04:55,810
+Devam edin ve bunu çalıştırın.
+
+69
+00:04:55,810 --> 00:04:59,290
+Ve şimdi görebiliyoruz ki bir X etiketi ve bir başlık var.
+
+70
+00:04:59,430 --> 00:05:05,830
+Daha sonra daha ince bir yazı tipi gibi daha netlik kazanmak için CPI'yi veya
+
+71
+00:05:05,830 --> 00:05:09,370
+inç başına nokta sayısını nasıl belirleyebileceğinizi öğreneceğiz.
+
+72
+00:05:09,370 --> 00:05:14,890
+Devam edin ve aynı tuval üzerine çoklu parseller oluşturmaya devam edelim.
+
+73
+00:05:15,000 --> 00:05:17,280
+Devam edip aşağıya ineceğiz.
+
+74
+00:05:17,380 --> 00:05:23,320
+Hücreyi çıkarın ve bunu yapmak için aynı kanvas nerds'e çok parsel koymak hakkında konuşun.
+
+75
+00:05:23,310 --> 00:05:29,740
+Kabuk soyma ve alt serinin de birkaç argüman aldığını söyleyeceğiz.
+
+76
+00:05:29,740 --> 00:05:34,920
+Şu anda bunları göremiyoruz, o yüzden gidip sana birinci olanın sıra sayılacağını söyleyeceğim.
+
+77
+00:05:35,760 --> 00:05:40,300
+Sütun sayısını ve sonra atıfta bulunacağınız arsa numarasını seçersek, bu
+
+78
+00:05:40,300 --> 00:05:45,970
+durumda bir tane söyleyeceğiz ve devam edip o hücrenin üzerinde bir şeyler çizelim.
+
+79
+00:05:46,750 --> 00:05:56,230
+X Y diyelim ve devam edip, kırmızı dizenin rengin üçüncü bir argüman olarak başlayacağını
+
+80
+00:05:56,540 --> 00:05:56,940
+belirtelim.
+
+81
+00:05:57,000 --> 00:06:01,480
+Bunu tam olarak anlamanın çok fazla endişelenmeyin çünkü nesnelere odaklanan metoda bir kere başlayınca
+
+82
+00:06:01,810 --> 00:06:03,480
+bunun birçoğu daha mantıklı olacaktır.
+
+83
+00:06:03,500 --> 00:06:06,160
+Ama sana şimdi neyin mümkün olduğunu göstermek istiyorum.
+
+84
+00:06:06,660 --> 00:06:12,940
+Hadi başlayalım ve bir alt çizgiye bir itiraz daha söyleyelim, bir satırı iki sütunla belirtiyoruz.
+
+85
+00:06:13,240 --> 00:06:15,110
+Ve üçüncü argüman arsa numarasıdır.
+
+86
+00:06:15,170 --> 00:06:20,270
+Şimdi ikinci planı düzenleyeceğiz ve bu planı soymayacağımızı söyleyeceğiz.
+
+87
+00:06:21,040 --> 00:06:27,100
+Devam edin ve Y'ye karşı Y yapın ve mavi için B dizgesini belirtin.
+
+88
+00:06:27,100 --> 00:06:30,760
+İşte başlayalım ve bunu çalıştıralım ve neye döndüğümüze bakalım.
+
+89
+00:06:31,380 --> 00:06:38,050
+Tamam şimdi aynı bölüme birden fazla parsel oluşturan iki alt çizgimiz var.
+
+90
+00:06:38,050 --> 00:06:42,640
+Şimdi yapacağımız şey, bir komplo oluşturmanın temellerini gördükten sonra, libs
+
+91
+00:06:42,670 --> 00:06:48,170
+nesne yönelimli API yöntemine daha resmi bir giriş yapmak için hepsini parçalayacağız.
+
+92
+00:06:48,280 --> 00:06:52,990
+Ve bu şekil nesnelerini örneklemek ve ardından bu nesnedeki yöntemleri veya nitelikleri çağırmak için
+
+93
+00:06:52,990 --> 00:06:53,710
+gidiyoruz demektir.
+
+94
+00:06:53,710 --> 00:06:56,590
+Ve bu, bu arsayı canlı olarak kullanmanın çok daha iyi bir yolu olacak.
+
+95
+00:06:56,800 --> 00:07:03,360
+sadece PBT arsa kullanıyor ve daha sonra satır veya sütun sayısını belirten alt çizgiyi veya GLT'yi
+
+96
+00:07:03,490 --> 00:07:07,760
+yazıyor ve daha sonra üzerinde çalıştığımız şekli ve ardından Kilty'yi kullanıyoruz.
+
+97
+00:07:07,800 --> 00:07:08,610
+Şimdi temeller
+
+98
+00:07:08,880 --> 00:07:15,940
+Hadi gidelim ve nesneleri odaklı yöntemle dişlileri değiştirelim ve bu daha iyi olacak.
+
+99
+00:07:15,940 --> 00:07:20,500
+Daha resmi nesne yönelimli yöntemi kullanmanın ana fikri şekil nesneleri oluşturmak ve bu yöntemleri sadece
+
+100
+00:07:20,500 --> 00:07:21,570
+bunun dışında çağırmaktır.
+
+101
+00:07:21,580 --> 00:07:23,480
+İzin ver gideyim ve bundan ne kastettiğimi gösterin.
+
+102
+00:07:23,680 --> 00:07:31,860
+Devam edip şeker soyma şekline eşit olduğumu söyleyeceğim ve oradaki prensleri
+
+103
+00:07:31,870 --> 00:07:33,300
+oraya gidereceğim.
+
+104
+00:07:33,310 --> 00:07:34,960
+Şimdi o hücreden kaçarsam.
+
+105
+00:07:34,960 --> 00:07:40,420
+Dikkat edin Bu figür nesnesi, bu hayali boş kanvas gibi düşünebileceğiniz
+
+106
+00:07:40,420 --> 00:07:42,580
+bir şekil nesnesi yarattı.
+
+107
+00:07:42,580 --> 00:07:45,810
+Ve bu kampüste bir dizi erişim ekleyebiliriz.
+
+108
+00:07:45,940 --> 00:07:55,150
+Dolayısıyla aynı hücrede XS, Şekil dot ile alt eksende eksenlere eşit olduğuna ve bir eksen kümesi ekleyeceğim demeye
+
+109
+00:07:55,140 --> 00:07:56,270
+devam edeceğim.
+
+110
+00:07:56,410 --> 00:08:03,370
+Ve bir eksen kümesi ekleyebileceğiniz yol, bir listeden geçmektir ve liste, argümanlar için 0'dan
+
+111
+00:08:03,370 --> 00:08:07,930
+1'e değişen sol alt genişlik ve yükseklik argümanlarını alır.
+
+112
+00:08:07,930 --> 00:08:11,930
+Temel olarak, ileriye gitmek ve almak istediğiniz boş tuval yüzdesi.
+
+113
+00:08:12,070 --> 00:08:14,670
+İzin ver bir örnek vereyim.
+
+114
+00:08:14,940 --> 00:08:19,120
+Ve yine sana önce başta mantıklı gelmeyecek çok şey göstereceğim ama
+
+115
+00:08:19,120 --> 00:08:23,840
+tekrarlanan örnekleri gördüğünüzde her şey mantıklı gelecek ve onu daha da bölüşeceksiniz.
+
+116
+00:08:23,880 --> 00:08:26,100
+Bu yüzden sadece bazı numaralar yazıyorum.
+
+117
+00:08:26,170 --> 00:08:29,090
+Bu eksenlerden çıkacak.
+
+118
+00:08:29,380 --> 00:08:31,310
+Eksenlerin alt kısmı olacak.
+
+119
+00:08:31,420 --> 00:08:35,230
+Ve bu eksenlerin genişliği ve yüksekliği olacak 0. 8.
+
+120
+00:08:35,290 --> 00:08:37,170
+Bırak gideyim, bunu hücrede yapayım.
+
+121
+00:08:37,540 --> 00:08:39,320
+Ve şimdi buraya ne geldiğime dikkat et.
+
+122
+00:08:39,390 --> 00:08:41,920
+Şimdi boş bir eksen takımım var.
+
+123
+00:08:42,000 --> 00:08:48,310
+Bu yüzden PT'ye bir şekil nesnesi yarattıklarını söyledim ve daha sonra bu diyagram nesnesini
+
+124
+00:08:48,650 --> 00:08:54,880
+kapattım ve bir eksen kümesi ekledim ve aslında eksenlerimin nereye yerleştirileceğini nereden koyacağımı bir
+
+125
+00:08:54,880 --> 00:08:57,800
+listede geçirdim aslında eksenler kümesinde arsa.
+
+126
+00:08:58,120 --> 00:09:01,290
+Ve bu, daha önce yaptıklarımıza aşina olacağım.
+
+127
+00:09:01,360 --> 00:09:07,900
+Eksenlerin parsellerini durdurduğunu söyleyeceksiniz ve devam edelim ve bu eksenler kümesine x ve y çizelim ve sonra
+
+128
+00:09:07,900 --> 00:09:09,160
+da değişime girin.
+
+129
+00:09:09,490 --> 00:09:14,440
+Ve şimdi görebildiğiniz gibi, daha önce yaptığımız gibi, nesne odaklı bir yöntem kullanmaktan başka
+
+130
+00:09:14,500 --> 00:09:15,460
+bir şey yapmadık.
+
+131
+00:09:15,460 --> 00:09:21,510
+Dolayısıyla, burada geri adım atarsak, Temyiz Tayland'ın bu diyalekteyle ilgili tefsir söylediğini, ancak artık bu tür bir
+
+132
+00:09:21,550 --> 00:09:26,040
+nesne yönelimli yöntem kullandığımızı söyleyebiliriz; bu konuda çok daha fazla kontrole sahip olacağız.
+
+133
+00:09:26,050 --> 00:09:28,970
+Almamız gereken adımlar kadar biraz daha karışık.
+
+134
+00:09:29,160 --> 00:09:30,650
+Ancak kesinlikle buna değecek.
+
+135
+00:09:31,140 --> 00:09:34,920
+Bu yüzden şekil metodunu çağırdığımız şekli yaratmış olduk.
+
+136
+00:09:34,960 --> 00:09:41,030
+listesini ve ardından x etiketleri ve başlıkları koyarak devam etmek istersek bu eksenler üzerine çizilir.
+
+137
+00:09:41,050 --> 00:09:43,580
+Bu pasoda eksenler ekledikten sonra eksenler
+
+138
+00:09:43,620 --> 00:09:45,850
+Devam edebilir ve bunu eksen takımında yapabilirsiniz.
+
+139
+00:09:46,120 --> 00:09:50,070
+Eski köle altına set söyleyebilirsiniz.
+
+140
+00:09:50,620 --> 00:09:53,360
+Sadece X etiketi olan kabuk T'den biraz farklıdır.
+
+141
+00:09:53,410 --> 00:09:56,770
+Bu Xs nesnesinde çalışırken, setleri altını çizeceksin demektir.
+
+142
+00:09:57,150 --> 00:10:02,920
+Ve şimdi devam edip dize x etiketini iletebiliriz ve aynı
+
+143
+00:10:03,340 --> 00:10:07,990
+şeyi y etiketleri dudak y etiketi için yapacaksın.
+
+144
+00:10:08,000 --> 00:10:12,760
+bunu çalıştırırsak yeni etiketlerimiz X label y label ve set başlıklarını görmeliyiz.
+
+145
+00:10:15,550 --> 00:10:21,060
+Ve devam edelim ve aynı şeyi bir başlık seti altı çizili başlığı için yapalım,
+
+146
+00:10:21,610 --> 00:10:28,960
+Haydi devam edelim ve bir canvas üzerine iki rakam koyarak bu canlı nesne tabanlı programlama
+
+147
+00:10:28,960 --> 00:10:30,700
+fikrine devam edelim.
+
+148
+00:10:30,730 --> 00:10:35,350
+Ve bu, bu listenin ne anlama geldiğini anlamaya başlar.
+
+149
+00:10:35,440 --> 00:10:40,180
+Ben devam edip yeni bir hücreye inip biraz ilerleyerek sadece burada
+
+150
+00:10:40,180 --> 00:10:42,730
+zıpladığımın çok net bir resmini edineceğim.
+
+151
+00:10:42,750 --> 00:10:48,640
+Incirin gerçek figire eşit olduğunu söyleyeceğim.
+
+152
+00:10:49,060 --> 00:10:51,800
+Bu yüzden şekil nesnesini yaratıyorum.
+
+153
+00:10:51,940 --> 00:10:53,230
+İşte benim şekil nesnem.
+
+154
+00:10:53,280 --> 00:11:02,640
+Birincisi, Fig. Ekseni ile aynı olan eksenler olduğunu söyleyeceğim.
+
+155
+00:11:02,650 --> 00:11:11,380
+Set ana eksenlerinde el değmek istemiyorum, sıfır noktası bir sıfır nokta bir ve sonra sıfır nokta sekiz
+
+156
+00:11:11,430 --> 00:11:13,840
+olacak 0. 8.
+
+157
+00:11:13,940 --> 00:11:19,430
+Ve yine bu, tabandan ayrılır ve daha sonra bu eksenlerdeki genişlik ve yüksekliktir.
+
+158
+00:11:19,570 --> 00:11:28,710
+Sonra da ekmek ekseni sütun ekseni eklemeye gidiyorum iki tane incir ve alt eksene eksene.
+
+159
+00:11:28,720 --> 00:11:34,140
+Ve sonra devam edeceğimde temelde ekler eksenler koyarım, eksenler kümesinin
+
+160
+00:11:34,210 --> 00:11:41,180
+alt kısmı yüzde 20 sola yüzde 50, alttan da başlar demeyi deniyorum.
+
+161
+00:11:41,670 --> 00:11:44,240
+Bu yüzden burada olduğum için özür dilerim, esas olarak bu konudan bahsediyorum.
+
+162
+00:11:44,290 --> 00:11:46,790
+Eksenlerin bu alt köşesi çöktü ve alt kısmı.
+
+163
+00:11:46,810 --> 00:11:51,450
+Solda yüzde 20, alttan yüzde 50 arttı.
+
+164
+00:11:51,790 --> 00:11:57,310
+Ve sonra, tuval boyutunun ve genişliğinin yüzde 40'ını ve tuval boyut ve yüksekliğinin yüzde
+
+165
+00:11:57,310 --> 00:11:58,310
+30'unu aldığını söyleyeceğiz.
+
+166
+00:11:58,500 --> 00:12:01,690
+Yani burada tüm bu değerler 0 ile 1 arasında olmalıdır.
+
+167
+00:12:01,960 --> 00:12:06,180
+Hadi devam edelim ve bunu çalıştırıp neyin peşinde olduğumuzu bilelim.
+
+168
+00:12:06,310 --> 00:12:12,400
+alakalı olduğunu görmeye başlayabilirsiniz. Şimdi devam edin ve videoyu duraklatın ve bu sayılarla oynayın.
+
+169
+00:12:12,420 --> 00:12:18,190
+Bu temelde eksenler kümesini çıkarttık ve umarım şimdi bu değerlerin aslında yapmanızı istediğim
+
+170
+00:12:18,190 --> 00:12:18,900
+şeyle ne
+
+171
+00:12:18,900 --> 00:12:24,540
+Bunların hepsinin 0 veya 1 arasında olduğundan emin olun ve bu eksen takımıyla nasıl ilişkili olduklarını görün.
+
+172
+00:12:24,550 --> 00:12:28,200
+Devam edin ve sadece eksenler 2 ile oynayın ve etrafına hareket ettirin.
+
+173
+00:12:28,210 --> 00:12:32,940
+Mesela, bu alt köşede burada bu türden eksenler almaya çalışın.
+
+174
+00:12:33,150 --> 00:12:34,050
+İyi dürtüsellik.
+
+175
+00:12:34,090 --> 00:12:37,920
+Bu sigortayı alt köşeye getirebilir misin bakalım.
+
+176
+00:12:37,950 --> 00:12:38,280
+Tamam.
+
+177
+00:12:38,290 --> 00:12:40,130
+Şimdi bunu yapabilir miyiz göreceğim.
+
+178
+00:12:40,690 --> 00:12:48,130
+Bu yüzden alt köşede bunu istersem muhtemelen sol alt genişlik ve yüksekliğe gidileceğini söylemek isterim.
+
+179
+00:12:48,650 --> 00:12:53,790
+Bu yüzden bunu temelde yalnızca 0'a basarak kaydırmayı deneyeceğim.
+
+180
+00:12:53,950 --> 00:12:58,910
+Evet, 0 diyecek. 1 burada sıfır 15'den başlayacak.
+
+181
+00:12:58,920 --> 00:13:05,270
+Eksen 1'in bu ekinin tabanından biraz uzaklaşıp bunu yapmaya devam edeceksiniz.
+
+182
+00:13:06,000 --> 00:13:10,300
+Ve orada daha alta doğru hareket edebildim, bu ikincinin alt kısmı olduğunu hatırlayın.
+
+183
+00:13:10,500 --> 00:13:15,350
+Ve şimdi sağdan daha fazla hareket etmek istiyoruz, bu da soldan yüzde bir veya iki anlamına geliyor.
+
+184
+00:13:15,360 --> 00:13:19,530
+Bu alt köşeyi soldan daha fazla bilgece hareket ettirin.
+
+185
+00:13:19,600 --> 00:13:22,310
+Bunu 8 olarak ayarlayalım.
+
+186
+00:13:23,580 --> 00:13:25,640
+Ve bu biraz fazla kaydırdı gibi görünüyor.
+
+187
+00:13:25,620 --> 00:13:32,550
+Öyleyse içeri girelim ve belki beşe geri çekelim ve şu anda en altta olduğumuzu görebiliyoruz.
+
+188
+00:13:32,560 --> 00:13:34,460
+Pekâlâ, devam edin ve oynamaya devam edin.
+
+189
+00:13:34,500 --> 00:13:38,170
+Eğer bu rakamlar bu rakamlarsa hala biraz belirsizdir.
+
+190
+00:13:38,160 --> 00:13:44,370
+Unutmayın ki temel olarak yalnızca sol alt kısmı ve genişlik ve yüksekliği 0'dan 1
+
+191
+00:13:44,720 --> 00:13:47,210
+aralığına boş tuval ile ilişkilendiriyor.
+
+192
+00:13:47,290 --> 00:13:55,280
+Devam edeceğiz ve bunları başlangıçta 0 olanlarla yeniden kuracağız. 2 ve 0. 5.
+
+193
+00:13:55,600 --> 00:13:57,410
+Yani küçük eklememiz var.
+
+194
+00:13:57,700 --> 00:14:00,880
+Ve sonra ne yapacağım, bu eksenler üzerinde ilerlemek ve çizmek.
+
+195
+00:14:01,090 --> 00:14:12,310
+Bu yüzden bir parsel eksende söyleyeceğim ve X'in Y geldiğini ve daha sonra eksenler üzerinde iki parselin gideceğini söyleyeceğim ve
+
+196
+00:14:12,390 --> 00:14:16,510
+neden gelin diyelim x gidelim ve bunu çalıştıralım.
+
+197
+00:14:16,500 --> 00:14:24,030
+Ve şimdi burada benim küçük sigortam ve dış çizgiye sahibim ve sonra eklerimin örneğin bir eksene
+
+198
+00:14:24,040 --> 00:14:29,480
+sahip olmasını istersem, eksenlerin her bir kümesine ekleme yapmaya devam edebiliyoruz görebiliyoruz.
+
+199
+00:14:29,520 --> 00:14:38,500
+Belirlenen başlığa eksenden bahsedebilirim, gidip eklemeyi söyleyeceğiz.
+
+200
+00:14:38,750 --> 00:14:44,870
+Peki daha küçük partiler ve daha sonra eksenler 1 olarak söyleyeceğimiz çok açık olacak.
+
+201
+00:14:45,150 --> 00:14:46,470
+Devam edin ve
+
+202
+00:14:49,140 --> 00:14:54,550
+bir başlık ayarlayalım ve bu başlık daha büyük pıhtılaşacak ve ilerleyecek şekilde ayarlayacağız.
+
+203
+00:14:55,210 --> 00:14:57,100
+Burada olanları fark et.
+
+204
+00:14:57,140 --> 00:15:02,290
+Aslında bir hata aldım, çünkü 2'yi koymayı unuttum, çünkü daha küçük arsa görmedim.
+
+205
+00:15:02,290 --> 00:15:04,960
+Burada bir kez daha çalıştıralım.
+
+206
+00:15:04,990 --> 00:15:07,250
+Tamam şimdi, almamız gereken şeyi alıyoruz.
+
+207
+00:15:07,270 --> 00:15:09,610
+Daha büyük arsa ve daha küçük arsa var.
+
+208
+00:15:09,880 --> 00:15:15,860
+Ve temel olarak, Portland'da bir figür yarattığınız nesne tabanlı programlamanın arkasındaki fikir budur.
+
+209
+00:15:15,900 --> 00:15:17,830
+Ve bu aslında sadece boş bir tuval.
+
+210
+00:15:17,980 --> 00:15:22,110
+Öyleyse içeri girip tek bir hücrenin içine koyarak bunu bir kez daha gösterelim.
+
+211
+00:15:22,890 --> 00:15:25,650
+Boş figürü yaratacağız, gösterecek bir şey yok.
+
+212
+00:15:25,720 --> 00:15:34,900
+Ve sonra bir veya iki ekseni söyleyerek eksenler kümesi eklediniz. incir alt eksenlerinde düşündüğünüz figire eşittir ve siz bu
+
+213
+00:15:34,890 --> 00:15:40,540
+listeyi sol alttan ve daha sonra bu boş tuval ile ilişkili
+
+214
+00:15:40,540 --> 00:15:42,720
+olarak genişlik ve yükseklikten gider.
+
+215
+00:15:42,730 --> 00:15:47,920
+Bu yüzden eğer bunu çalıştırırsak, boş eksen takımımıza sahip oluruz ve
+
+216
+00:15:47,910 --> 00:15:53,060
+o zaman eksenlere bir plan çizdikten sonra X eksi ekseni çizebilirsin.
+
+217
+00:15:53,130 --> 00:15:53,940
+Tamam.
+
+218
+00:15:53,940 --> 00:15:59,590
+Bu, bir harita Cutlip için işlevsel metot olan plotless çalışmanın en basit
+
+219
+00:15:59,590 --> 00:16:02,750
+yolu kadar birlikte çalışacağımız metodolojinin türüdür.
+
+220
+00:16:02,860 --> 00:16:06,890
+Bu komploya itirazda bulunabilir veya o alt çizgiyi soyabilirsiniz.
+
+221
+00:16:06,920 --> 00:16:11,410
+Bu nesneye dayalı yöntemi kullanarak alt çizgiler oluşturmayı öğreneceğiz ve bu yöntem çok daha
+
+222
+00:16:11,400 --> 00:16:14,190
+verimli olacak ve bize daha fazla kontrol verecektir.
+
+223
+00:16:14,560 --> 00:16:15,700
+TAMAM.
+
+224
+00:16:15,690 --> 00:16:20,250
+Devam edin ve harita çizelgesinin bu bölümünü inceleyin lib kavramları ders kitap yok.
+
+225
+00:16:20,290 --> 00:16:25,450
+Not defterinde daha fazla not var ve daha fazla yorum var, çünkü bunların herhangi biri sizi
+
+226
+00:16:25,780 --> 00:16:30,210
+karıştırıyor ancak umarım artık temel olarak bu konuyla ilgili tam bir anlayışa sahip oluyorsunuzdur.
+
+227
+00:16:30,370 --> 00:16:34,420
+Hücrede neler olup bittiğini anlarsanız bu kod satırları
+
+228
+00:16:34,410 --> 00:16:35,340
+burada gidebilirsiniz.
+
+229
+00:16:35,380 --> 00:16:36,900
+Sadece bir figür yaratıyoruz.
+
+230
+00:16:37,030 --> 00:16:43,150
+Bu listeyle eksenler kümesinin konumunu bulmak için bu şekle bir ek ekliyoruz ve daha
+
+231
+00:16:43,140 --> 00:16:48,140
+sonra bu tür eksenler üzerinde çizerek X etiketi, etiket vb. Başlıkları ayarlayabilirsiniz. Tamam.
+
+232
+00:16:48,180 --> 00:16:49,000
+Herkese teşekkürler.
+
+233
+00:16:49,000 --> 00:16:49,890
+Bir sonraki
+
+234
+00:16:50,000 --> 00:16:54,930
+konferansta görüşürüz veya aynı Jüpiter defterinden bu tartışmaya devam edeceğiz.
+
+235
+00:16:54,930 --> 00:16:55,930
+Teşekkürler ve bir sonraki dersini görüşürüz
+
+236
+00:16:55,990 --> 00:16:57,430
+&nbsp;

@@ -1,0 +1,403 @@
+1
+00:00:06,780 --> 00:00:11,700
+Olá a todos e seja bem vindo à conferência de operações PI e nesta palestra, vamos mostrar-lhe
+
+2
+00:00:11,700 --> 00:00:14,520
+uma reforma de operações básicas em uma matriz de árbitros.
+
+3
+00:00:14,640 --> 00:00:18,720
+Vamos em frente e salte para o caderno Jupiter para começar.
+
+4
+00:00:18,720 --> 00:00:21,090
+Tudo bem, então aqui estamos no caderno Jupiter.
+
+5
+00:00:21,210 --> 00:00:27,180
+Vamos prosseguir e discutir array com array de operações de matriz com operações escalares e, em seguida,
+
+6
+00:00:27,180 --> 00:00:33,360
+algumas funções de matriz universal, o que são e como você pode encontrar mais deles, irão avançar
+
+7
+00:00:33,470 --> 00:00:36,400
+e começar por dizer pi importante como NPE.
+
+8
+00:00:36,810 --> 00:00:44,370
+E então eu vou seguir em frente e fazer uma matriz, vamos dizer N. P. ir de zero coma 11.
+
+9
+00:00:44,370 --> 00:00:47,600
+organizar e vamos seguir em frente e
+
+10
+00:00:47,640 --> 00:00:53,090
+Então, desse modo, obtivemos dígitos de 0 a 10, assim 11 dígitos de 0 a 10.
+
+11
+00:00:53,460 --> 00:00:53,910
+Tudo bem.
+
+12
+00:00:53,910 --> 00:00:59,460
+Você pode facilmente executar matrizes com operações de matriz apenas usando sinais aritméticos simples que você
+
+13
+00:00:59,460 --> 00:01:01,600
+já usou para o próprio Python.
+
+14
+00:01:02,070 --> 00:01:08,400
+Então, por exemplo, se você quisesse adicionar duas matrizes em elementos por elementos, basta
+
+15
+00:01:08,400 --> 00:01:10,300
+dizer matriz mais array.
+
+16
+00:01:10,320 --> 00:01:12,140
+Agora adicione as duas matrizes juntas.
+
+17
+00:01:12,180 --> 00:01:14,450
+Neste caso, estou apenas adicionando uma matriz em si mesma.
+
+18
+00:01:14,590 --> 00:01:18,370
+Então, essencialmente, cada número foi duplicado.
+
+19
+00:01:18,840 --> 00:01:25,500
+Eu posso fazer o mesmo para subtração ou mesmo multiplicação.
+
+20
+00:01:25,500 --> 00:01:31,770
+Eu também posso executar a matriz com operações escalares da mesma forma, de modo que os escaladores significam
+
+21
+00:01:31,770 --> 00:01:37,800
+apenas um único número e ficaram numb pi é que, basicamente, transmite esse número para cada elemento na
+
+22
+00:01:37,800 --> 00:01:43,960
+matriz para que a operação também ocorra em um elemento por elemento, o que significa se eu quero.
+
+23
+00:01:44,010 --> 00:01:45,140
+Aqui está a minha matriz.
+
+24
+00:01:45,240 --> 00:01:48,270
+Adicione uma centena a cada elemento na matriz.
+
+25
+00:01:48,270 --> 00:01:50,590
+Eu poderia dizer mais e depois o próprio escalar.
+
+26
+00:01:50,820 --> 00:01:53,620
+E isso adicionaria 100 cada elemento na matriz.
+
+27
+00:01:53,620 --> 00:01:55,680
+E isso também funciona para a subtração da
+
+28
+00:01:58,230 --> 00:01:59,910
+divisão de multiplicação, você o nomeia.
+
+29
+00:01:59,910 --> 00:02:04,820
+Então, se eu quisesse subtrair 100 de cada átomo no intervalo para dizer menos 100.
+
+30
+00:02:05,130 --> 00:02:05,760
+Tudo bem.
+
+31
+00:02:05,760 --> 00:02:11,940
+Portanto, essas são operações aritméticas básicas que você pode executar com matriz em operações de matriz
+
+32
+00:02:11,940 --> 00:02:13,800
+ou matriz com operações escalares.
+
+33
+00:02:13,950 --> 00:02:20,510
+Algo que eu quero mostrar é que muitas vezes o NUMP High apenas emitirá um aviso em vez
+
+34
+00:02:20,580 --> 00:02:22,940
+de produzir erros em determinadas operações matemáticas.
+
+35
+00:02:23,220 --> 00:02:31,250
+Então, por exemplo, se eu tentar dizer 1 dividido por zero em Python, entraremos em um erro real com erro de divisão zero, o
+
+36
+00:02:31,250 --> 00:02:35,290
+que faz sentido porque você não pode dividir um número por zero.
+
+37
+00:02:35,340 --> 00:02:38,400
+No entanto, PI não lhe dará o mesmo erro.
+
+38
+00:02:38,490 --> 00:02:43,860
+Então, se eu tentar dizer uma taxa dividida por Array.
+
+39
+00:02:43,890 --> 00:02:46,200
+Observe que o primeiro elemento é zero.
+
+40
+00:02:46,230 --> 00:02:50,240
+Vou tentar dizer zero dividido por zero, o que realmente não faz sentido.
+
+41
+00:02:50,250 --> 00:02:53,570
+No entanto, nenhum pi emitirá um aviso.
+
+42
+00:02:53,570 --> 00:02:58,580
+Dirá o valor inválido encontrado na verdade, como aqui e apenas lhe dará um nulo.
+
+43
+00:02:58,620 --> 00:03:05,100
+Se você tentar dividir zero por zero, tudo o resto está certo, pois diz que 1 dividido por 1 é 1 2 dividido
+
+44
+00:03:05,100 --> 00:03:06,360
+por 2 é 1 também.
+
+45
+00:03:06,390 --> 00:03:07,710
+Etc. etc. No entanto, nos primeiros são divididos por zero executados e lhe deram um nome ou nenhum objeto de volta.
+
+46
+00:03:07,710 --> 00:03:14,170
+Na verdade, não forneceu um erro para você, o que significa que você ainda
+
+47
+00:03:14,250 --> 00:03:19,170
+obtém uma saída que é importante observar a distinção lá.
+
+48
+00:03:19,380 --> 00:03:20,840
+Isso significa que se você tiver algum tipo de operação em seu código, você na verdade não receberá um erro.
+
+49
+00:03:20,850 --> 00:03:25,310
+O código continuará a ser executado e, em vez disso, ele apenas
+
+50
+00:03:25,350 --> 00:03:30,900
+receberá um aviso se você tentar uma operação que divide vides talvez outro número por zero.
+
+51
+00:03:30,900 --> 00:03:32,980
+Então, por exemplo, 1 dividido por 0 em vez de 0 o Vajda por zero.
+
+52
+00:03:32,990 --> 00:03:36,720
+Você também receberá um aviso.
+
+53
+00:03:36,720 --> 00:03:38,190
+Mas, neste caso, o infinito do show de Alexa em vez de um nulo.
+
+54
+00:03:38,400 --> 00:03:41,880
+Então, novamente, você obtém uma divisão por zero e responde e é verdade o aviso do vídeo aqui.
+
+55
+00:03:42,150 --> 00:03:45,930
+No entanto, ele ainda executa o código e você obtém o suficiente para significar o infinito para aquele dividido por zero.
+
+56
+00:03:46,050 --> 00:03:52,170
+Nesses primeiros elementos.
+
+57
+00:03:52,440 --> 00:03:55,340
+Tudo bem.
+
+58
+00:03:55,350 --> 00:03:55,800
+Então, isso é
+
+59
+00:03:55,800 --> 00:04:00,270
+algo a ter em mente, pois você está trabalhando com divisão e arrays que contêm um número são dígitos 0 e também uma nota rápida, pois você também pode fazer arrays com expoentes.
+
+60
+00:04:00,270 --> 00:04:06,760
+Eu apenas digo Astérix Asterix, assim como você teria Python e, em seguida, o escalar ou a matriz um.
+
+61
+00:04:06,780 --> 00:04:12,510
+Então, esta é a matriz para o poder de dois.
+
+62
+00:04:12,660 --> 00:04:15,210
+Então, tudo foi ajustado na matriz Nel discute
+
+63
+00:04:15,270 --> 00:04:21,870
+a função de matriz universal, o numpad vem com muitas funções de matriz universal que são essencialmente apenas operações matemáticas.
+
+64
+00:04:21,870 --> 00:04:26,220
+Você pode usar para executar a operação e transmitir em toda a matriz.
+
+65
+00:04:26,220 --> 00:04:30,830
+Avançemos e mostremos alguns comuns.
+
+66
+00:04:30,840 --> 00:04:33,390
+Por exemplo, se você quiser pegar a raiz quadrada
+
+67
+00:04:33,450 --> 00:04:39,060
+de cada elemento na matriz, você pode simplesmente dizer P que é seu t e depois passar na matriz em si.
+
+68
+00:04:39,100 --> 00:04:42,690
+E isso levará a raiz quadrada de tudo na matriz.
+
+69
+00:04:42,930 --> 00:04:46,550
+Da mesma forma, para calcular a exponencial, você pode dizer
+
+70
+00:04:46,560 --> 00:04:55,830
+que o XP e na matriz ou o máximo você pode dizer a matriz que Max ou você também pode dizer que Max e passar na matriz.
+
+71
+00:04:55,830 --> 00:05:01,010
+Isso é o mesmo que chamar o método daquilo
+
+72
+00:05:01,230 --> 00:05:06,120
+que vimos anteriormente na primeira palestra sobre eles pyros.
+
+73
+00:05:06,120 --> 00:05:07,750
+Você pode até Neutrik
+
+74
+00:05:07,770 --> 00:05:15,560
+a métrica funcionar desse tempo e isso basicamente passará cada elemento no seno e há co-signo e também há opções logarítmicas.
+
+75
+00:05:15,570 --> 00:05:19,710
+Você pode dizer que o log e, se algo não funcionar, por exemplo,
+
+76
+00:05:19,710 --> 00:05:25,380
+o log de zero é um infinito tecnicamente negativo, você receberá um aviso de tempo de execução.
+
+77
+00:05:25,380 --> 00:05:28,520
+Dividido por zero.
+
+78
+00:05:28,530 --> 00:05:29,590
+Mas isso lhe dará infinito negativo é a resposta.
+
+79
+00:05:29,730 --> 00:05:32,610
+Se você está se perguntando onde você pode encontrar uma lista de todas essas funções de
+
+80
+00:05:32,610 --> 00:05:36,870
+matriz universal ou referência, você pode seguir em frente e verificar o caderno e tem um link para as funções de matriz universal.
+
+81
+00:05:36,870 --> 00:05:41,550
+Isso o levará a vincular isso que se parece com isso.
+
+82
+00:05:41,840 --> 00:05:44,540
+Esta é a documentação do raid Empire aqui para funções universais ou você func.
+
+83
+00:05:44,550 --> 00:05:50,340
+E se você rolar para baixo para o final desta página e novamente este link está no caderno para esta palestra.
+
+84
+00:05:50,610 --> 00:05:55,260
+Agora, as operações de PI.
+
+85
+00:05:55,620 --> 00:05:57,090
+Você verá toda uma lista de todas as funções universais que você possui para você.
+
+86
+00:05:57,090 --> 00:06:00,690
+Então, você possui operações matemáticas básicas, adicione subtrair restrições absolutas etc. Lágrimas trigonométricas e, em seguida,
+
+87
+00:06:00,900 --> 00:06:07,560
+algumas funções mais avançadas.
+
+88
+00:06:08,040 --> 00:06:10,320
+São apenas funções de comparação funções mínimas mínimas, etc. função para lidar com essa operação matemática particular.
+
+89
+00:06:10,330 --> 00:06:14,860
+Se é uma função matemática muito básica ou comum, você provavelmente deve visitar esta
+
+90
+00:06:15,270 --> 00:06:20,730
+página primeiro e ver se alguma torta já foi construída antes de começar a criar sua própria
+
+91
+00:06:20,730 --> 00:06:26,280
+Você estava tentando executar em sua matriz.
+
+92
+00:06:26,280 --> 00:06:27,320
+Bem, nas mais básicas durante todo o
+
+93
+00:06:27,330 --> 00:06:29,070
+curso e lembrá-lo-ei enquanto as encontramos durante o resto do curso.
+
+94
+00:06:29,370 --> 00:06:34,350
+OK, isso é realmente tudo o que há até as operações básicas em arrays.
+
+95
+00:06:34,410 --> 00:06:35,830
+Você pode usar a aritmética básica em uma matriz por base de irrate ou com uma matriz e uma base escalar.
+
+96
+00:06:36,090 --> 00:06:39,840
+A única coisa a ter em conta é se você tiver 0 e estiver usando matrizes divisórias.
+
+97
+00:06:40,080 --> 00:06:46,650
+Então, a segunda parte desta palestra só cobriu uma matriz universal de funções onde é encontrá-las.
+
+98
+00:06:46,980 --> 00:06:51,230
+Tenha em mente que as operações matemáticas mais comuns já foram incorporadas a eles por OK.
+
+99
+00:06:51,390 --> 00:06:55,990
+Obrigado a todos e eu vou ver você na próxima palestra
+
+100
+00:06:56,040 --> 00:07:01,780
+&nbsp;
+
+101
+00:07:01,980 --> 00:07:04,020
+&nbsp;

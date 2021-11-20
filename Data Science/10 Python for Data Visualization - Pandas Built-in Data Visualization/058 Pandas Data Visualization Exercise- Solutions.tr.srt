@@ -1,0 +1,487 @@
+1
+00:00:05,190 --> 00:00:10,770
+Herkese merhaba ve panterlere görselleştirme egzersiz çözümlerine hoşgeldiniz bu dersi anlatıyor.
+
+2
+00:00:10,830 --> 00:00:13,630
+Hayatının durumu için pand çözümleri üzerinde duracağız.
+
+3
+00:00:13,680 --> 00:00:15,220
+Egzersiz sorular.
+
+4
+00:00:15,240 --> 00:00:18,050
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+5
+00:00:18,050 --> 00:00:19,810
+Pekala, burada defterimdeyim.
+
+6
+00:00:19,830 --> 00:00:27,330
+D3 CACP dosyasını okumak için kodun ilk birkaç hücresini çalıştırıp tüm ithalatları doğru bir şekilde ayarlayıp
+
+7
+00:00:27,330 --> 00:00:29,500
+başımı kontrol etmeye devam edeceğim.
+
+8
+00:00:29,880 --> 00:00:30,170
+Tamam.
+
+9
+00:00:30,180 --> 00:00:34,790
+Yapmak istediğim sonraki şey, A'ya karşı B dağılımını yeniden oluşturmaktı.
+
+10
+00:00:34,830 --> 00:00:36,380
+Yani sadece o iki sütun.
+
+11
+00:00:36,720 --> 00:00:46,770
+Devam edin ve bunu D-3 nokta planı düşünceleri dağılım diyerek yapalım ve daha sonra içeri girip, x ekseninde
+
+12
+00:00:47,010 --> 00:00:52,970
+A sütununu ve benim y eksenimde B sütunu isteyeceğimi belirtmek istiyorum.
+
+13
+00:00:53,210 --> 00:00:55,810
+Neye benzediğini görelim.
+
+14
+00:00:56,370 --> 00:00:58,700
+Ve bu EF 3 olmalı.
+
+15
+00:00:58,700 --> 00:00:59,610
+Oraya gidiyoruz.
+
+16
+00:00:59,610 --> 00:01:03,220
+Bu yüzden, benzer bir arsa elde ediyorum, bilmeliydim.
+
+17
+00:01:03,330 --> 00:01:07,410
+Bu çizime benzer şekilde onu nasıl gerdirileceğini bulup anlamayacağına bak.
+
+18
+00:01:07,410 --> 00:01:13,680
+Ve biz konferansa devam ettikçe, aslında incir boyutunu doğrudan bu argümana bir parametre
+
+19
+00:01:13,710 --> 00:01:14,680
+olarak aktarabilirsiniz.
+
+20
+00:01:15,030 --> 00:01:16,950
+Ve bunu uzatabiliriz.
+
+21
+00:01:17,000 --> 00:01:23,030
+Dolayısıyla burada dikkat edilmesi gereken bir başka nokta da bu noktaların boyutunun biraz daha büyük olması.
+
+22
+00:01:23,040 --> 00:01:28,090
+Dolayısıyla, dersin diğer bir sütunda gördüğümüz gibi, yalnızca S'yi
+
+23
+00:01:28,090 --> 00:01:29,540
+boyutuna geçirerek belirtebilirsiniz.
+
+24
+00:01:29,850 --> 00:01:33,220
+Ve ben boyutunu 50 olarak belirleyeceğim.
+
+25
+00:01:33,230 --> 00:01:38,970
+Burada noktalar biraz daha büyüktür ve renk için ders sırasında renkleri başka bir
+
+26
+00:01:38,970 --> 00:01:40,800
+sütunla nasıl belirleyebildiğimizi gördük.
+
+27
+00:01:40,800 --> 00:01:45,810
+Ancak, harita çizimi lib için mümkün olduğunca bir dize geçirebilirsiniz ve şimdi burada bu arsanın bir
+
+28
+00:01:45,900 --> 00:01:46,680
+rekreasyonuna sahibiz.
+
+29
+00:01:46,680 --> 00:01:48,170
+Kesinlikle.
+
+30
+00:01:48,180 --> 00:01:48,850
+TAMAM.
+
+31
+00:01:48,930 --> 00:01:54,060
+Bu özel sorundan çıkmanızı istediğim temel şey, Versus'u x ve
+
+32
+00:01:54,360 --> 00:01:56,940
+y olarak dağılmanın sadece basamağıydı.
+
+33
+00:01:57,000 --> 00:01:57,840
+Fazla merak etme.
+
+34
+00:01:57,840 --> 00:02:03,260
+Boyama veya boyama boyutunu elde edebildiysen, umarım bunu elde edebiliyorsun.
+
+35
+00:02:04,110 --> 00:02:08,150
+Tamam şimdi devam A sütun bir histogram oluşturmak istiyorum.
+
+36
+00:02:08,150 --> 00:02:09,880
+Bu aslında oldukça basit.
+
+37
+00:02:09,920 --> 00:02:21,350
+Sadece sütunu çağırın ve daha sonra histogramı görmek için ya da çizgi diyerek de
+
+38
+00:02:21,380 --> 00:02:24,560
+aynı histogramı döndürdüğünüzü söyleyin.
+
+39
+00:02:24,840 --> 00:02:26,470
+Ve bu varsayılan kutu sayısıdır.
+
+40
+00:02:26,490 --> 00:02:30,890
+Ama daha fazla Beenz istiyorsanız, bir argüman da geçirebilirsiniz.
+
+41
+00:02:31,020 --> 00:02:36,990
+Pekâlâ, bir sonraki sayı, bu parsellerin sorunsuz olması ama çok parlak görünmemesi ve talimatlarda stilin GG arsa
+
+42
+00:02:36,990 --> 00:02:42,720
+için ayarlanması ve histogramın üstten yeniden yapılması ve ayrıca bunun üzerine daha fazla bit eklenmesi için
+
+43
+00:02:42,720 --> 00:02:44,630
+stil sayfaları kullanılması gerektiği belirtildi .
+
+44
+00:02:44,640 --> 00:02:50,690
+Bu aslında video konferansında yer almadığımız bir konudur ancak not defterinde ele alınmıştır, bu yüzden umarım
+
+45
+00:02:51,000 --> 00:02:56,250
+iki yolu vardı, stil sayfalarının hangi yöne yönlendirildiğini veya google arama haritasını anlamanız için
+
+46
+00:02:56,250 --> 00:02:59,430
+dizüstü bilgisayarı tekrar kontrol ettiniz Cutlip stil sayfaları .
+
+47
+00:02:59,460 --> 00:03:04,770
+Değilse, oradaki referansları elde etmek için Q ve A forumlarına da postalayabilirdiniz.
+
+48
+00:03:04,830 --> 00:03:10,320
+bulunur ve bu, sadece kendi başınıza şekilleri keşfetmeye çalışmanın ruh halini almak için bir şey.
+
+49
+00:03:10,320 --> 00:03:15,240
+Devam ederseniz ve veri görselleştirmesinde yerleşik pandalar için not defteri dersine bakarsanız, bir
+
+50
+00:03:15,240 --> 00:03:16,230
+stil sayfası bölümü
+
+51
+00:03:16,270 --> 00:03:20,590
+Burada Cutlip'in bir stil sayfası olduğunu ve burada küçük bir referans bağlantısı olduğunu görebilirsiniz.
+
+52
+00:03:20,680 --> 00:03:24,330
+Ve eğer google arama yaparsanız bu sayfaya da girmiş olabilirsiniz.
+
+53
+00:03:24,330 --> 00:03:30,150
+Ve bu galeri ve galeride bir sayfa bölümü var ve temel öncül veya fikir
+
+54
+00:03:30,150 --> 00:03:32,290
+o tarzı Piel t kullanabileceğiniz.
+
+55
+00:03:32,310 --> 00:03:39,030
+Bir stilin herhangi bir dizesini geçmek kullanın ve estetiği buna benzer belirli bir stille otomatik
+
+56
+00:03:39,920 --> 00:03:40,710
+olarak değiştirecektir.
+
+57
+00:03:40,710 --> 00:03:44,510
+Sadece G-G çizimini kullanan T-Dog stilini soyduğunu söylüyorsun.
+
+58
+00:03:44,580 --> 00:03:47,910
+Bu yüzden bu kod satırını kopyalayacağım.
+
+59
+00:03:48,510 --> 00:03:52,130
+Buraya gelip yapıştırın.
+
+60
+00:03:52,260 --> 00:03:57,330
+Ve işte bu yana, şimdi devam edersek tam kod satırını
+
+61
+00:03:57,330 --> 00:04:03,240
+kopyalayıp yapıştırıp buraya yapıştırırsak, çok daha iyi görünümlü bir arsa elde edersiniz.
+
+62
+00:04:03,480 --> 00:04:07,310
+Ve ayrıca burada fark edeceksiniz ki bu kırmızı biraz daha görülüyor.
+
+63
+00:04:07,380 --> 00:04:13,140
+Dolayısıyla, Alfa'yı daha şeffaf hale getirebilirsiniz.
+
+64
+00:04:13,230 --> 00:04:17,190
+Ve burada bu histogramları eşleştirmeye başlayabilirsiniz.
+
+65
+00:04:17,310 --> 00:04:21,810
+Umarım bu sizin için zor değildir, ancak muhtemelen veri bilimi öğrenmede ve
+
+66
+00:04:21,810 --> 00:04:26,490
+program öğrenmede en önemli parçası olan şeyleri kendi başınıza keşfetmenin bir yönü vardır.
+
+67
+00:04:26,850 --> 00:04:32,280
+Bilgi içeriğinin tamamına bakılmaksızın kendi başına bir cevap arayabilme, ancak bir şey
+
+68
+00:04:32,820 --> 00:04:37,620
+kafa karıştırıcıysa, her zaman Q &amp; A forumlarında yazı yazmaktan çekinmeyebilirsiniz.
+
+69
+00:04:37,620 --> 00:04:43,800
+Tamam, devam edin ve A ve B sütunlarını karşılaştıran bir kutu arsa oluşturmak
+
+70
+00:04:43,830 --> 00:04:45,730
+istediğimiz kutu çizelgelerine geçelim.
+
+71
+00:04:45,840 --> 00:04:51,520
+Sadece veri çerçevesinin kendisine baktığımızda neyin üzerinde olduğuna bir göz atalım.
+
+72
+00:04:52,190 --> 00:04:58,630
+Bir b c ve d sütunlarına sahip olduğumuza dikkat edin, bu yüzden sadece bir B istemek istediğiniz tüm sütunları bir kutu arsa almak istemiyorum.
+
+73
+00:04:59,160 --> 00:05:04,800
+Bu yüzden aslında bu sütunları A ve B sütun adlarının
+
+74
+00:05:05,280 --> 00:05:09,550
+bir listesinden geçireceğim ve sonra arsa kutucuğunu arayabilirim.
+
+75
+00:05:09,720 --> 00:05:13,110
+Bununla aynı görünen bir kutu arsa oluşturun.
+
+76
+00:05:13,140 --> 00:05:13,580
+TAMAM.
+
+77
+00:05:13,800 --> 00:05:17,100
+Sonra D sütununda bir k d arsa oluşturmak istiyorum.
+
+78
+00:05:17,290 --> 00:05:19,080
+Bu aslında oldukça basittir.
+
+79
+00:05:19,080 --> 00:05:26,700
+Sadece D sütununa geçersiniz diyebiliriz ve sonra Katie'yi söylüyorsunuz ve bu komployu geri getirecekler.
+
+80
+00:05:27,030 --> 00:05:31,140
+bulmak için buradayız ve hayır, genelde Daschle K çizgiyi çizmeyecek.
+
+81
+00:05:31,140 --> 00:05:36,240
+Ve sonra nihayetinde çizgiyi nasıl artıracağımız ve çizgiyi çizik çizgi haline getireceğimizi
+
+82
+00:05:36,320 --> 00:05:36,770
+Tamam.
+
+83
+00:05:36,930 --> 00:05:46,230
+Yani bunu yapmanın yolu aslında aynı KDE veya yoğunluğa sahip olmaktır ve sonra çizgi
+
+84
+00:05:46,230 --> 00:05:53,540
+tarzı ve satırı gibi çizim lib'inden argümanları ileri götürebilir ve iletebilirsiniz.
+
+85
+00:05:53,550 --> 00:05:54,840
+Ve burada aynı plana kavuştuk.
+
+86
+00:05:54,900 --> 00:05:59,310
+İsterseniz yoğunlukla da yapabilirsiniz.
+
+87
+00:05:59,310 --> 00:06:04,620
+Bu, 30'a kadar odaların tüm sütunlarının alan çizimini oluşturmak istediğimiz aynı
+
+88
+00:06:04,620 --> 00:06:08,750
+komut ve daha sonra Hintz'in x kullandığını söyledi.
+
+89
+00:06:08,760 --> 00:06:17,320
+Umarız X D-3 I X'i çağırarak keşfedebilirsiniz, bunun bir özellik olduğunu görebilir ve öncelikle tamsayı konumunu
+
+90
+00:06:17,320 --> 00:06:21,930
+değiştirme ile dizin oluşturucuya dayanan bir etiket konumudur.
+
+91
+00:06:21,930 --> 00:06:24,970
+Ve böylece yapabileceğimiz aslında aslında dilimleme için bunu kullanmaktır.
+
+92
+00:06:25,320 --> 00:06:30,660
+Ve yine, tek başınıza devam ederken keşfetmenizi istediğim bir şey bu; burada
+
+93
+00:06:30,660 --> 00:06:37,610
+30'u sıfırdan geçirebilir ve bu sadece ilk 30 satırı döndürür veya ne istersen dilimleme işaretini döndürür.
+
+94
+00:06:38,070 --> 00:06:43,570
+Ve sonra kapalı parsel alanını arayabilir ve buna benzer bir arsa elde edersiniz.
+
+95
+00:06:43,610 --> 00:06:49,890
+Ve eğer arzusu aşağıda gösterildiği gibi olmasını isterseniz, aslında orada bir alfa değeri koyabilirsiniz.
+
+96
+00:06:49,950 --> 00:06:54,960
+diyagram ile çakıştığının farkında olduğunuz bu gerçekten zor referans çözümlerini bulabilirsiniz.
+
+97
+00:06:54,960 --> 00:07:01,200
+Pekâlâ, bir bonus meydan okuması var ve bunu anlamayacağınız ancak efsanenin aslında bazı fiili
+
+98
+00:07:01,260 --> 00:07:06,030
+Genellikle bunu istemezler ve aşağıda gösterilen arsa dışında efsanenin nasıl
+
+99
+00:07:06,030 --> 00:07:12,150
+sergilenebileceğini anlamanızı istemenizi isterler; kendi başınıza şeyleri keşfetmeye çalışmak konusuna burada ve tekrar
+
+100
+00:07:12,180 --> 00:07:12,860
+tekrar.
+
+101
+00:07:12,900 --> 00:07:18,420
+İyi bir yığın taşması bağlantısı arayan google'ı denemekten vazgeçmemek ve kendi
+
+102
+00:07:18,420 --> 00:07:22,070
+başına bir yığın taşması sorusuna bir bağlantı bulabilseydiniz.
+
+103
+00:07:22,080 --> 00:07:28,020
+eğer burada gezinip bir göz atarsak, birisinin bu soruyu doğru bir şekilde cevapladığını farkedeceksiniz
+
+104
+00:07:28,020 --> 00:07:34,350
+burada, efsanevi konum merkezinin bıraktığı Piel t, sonra da bu beby kutusu demirlemenin doğru olduğunu söylediler.
+
+105
+00:07:34,350 --> 00:07:39,930
+Yani, yığın taşması üzerine bu bağlantıya bir göz atarsak, birisi efsanenin pandalarla birlikte
+
+106
+00:07:39,930 --> 00:07:42,470
+arsa dışına nasıl konacağını soruyor ve
+
+107
+00:07:42,510 --> 00:07:43,700
+İşte anahtarın bu.
+
+108
+00:07:43,730 --> 00:07:51,240
+Ve aslında sadece bu kodu kopyalayıp yapıştırdıktan sonra buraya yapıştırın ve sonra bu alanın
+
+109
+00:07:54,150 --> 00:07:59,850
+diğer kodunu alın ve burada yapıştırın ve sonra yapmak istediğimiz her
+
+110
+00:08:03,060 --> 00:08:07,310
+şeyin bir çağrışım şekli yaratarak ergenlik göstereceğini söyleyin.
+
+111
+00:08:07,920 --> 00:08:12,180
+Ve bu, efsanenin dışındaki bir figür yaratacaktır.
+
+112
+00:08:12,420 --> 00:08:18,370
+Bu, Jüpiter defterindeki ilk satırı ve son satırı gerçekten kaldırırsanız da işe yarar.
+
+113
+00:08:18,420 --> 00:08:24,480
+Diğer kimlik hataları gibi diğer durumlarda, rakamı gerçekten bulmanız ve şekli göstermeniz gerekebilir.
+
+114
+00:08:24,690 --> 00:08:28,920
+Ancak sadece Jüpiter'i kullandığımız için bir defter aslında sadece bu iki satırı
+
+115
+00:08:28,950 --> 00:08:31,480
+çalıştırabilir ve efsaneyi kaldırır ve dışarıya yerleştirecektir.
+
+116
+00:08:31,500 --> 00:08:35,850
+Yani burada temel fikir umut verici ki, bu tür kod
+
+117
+00:08:35,850 --> 00:08:38,170
+satırlarını kendi kodunuza nasıl yakalayacağınızı keşfedebilirsiniz.
+
+118
+00:08:38,220 --> 00:08:42,900
+Ve aslında yapılması gereken çok yaygın bir şey, Stack Overflow'ı kontrol ederek hangi kod satırlarının
+
+119
+00:08:42,900 --> 00:08:46,000
+sizinle alakalı olduğunu görmek ve sonra bunları kendi çalışmalarınıza uydurmaktır.
+
+120
+00:08:46,500 --> 00:08:47,910
+Tamam işte bu.
+
+121
+00:08:47,910 --> 00:08:51,430
+Harika iş, herkes ve sonraki dersimizde görüşürüz.
+
+122
+00:08:51,450 --> 00:08:55,460
+Senin için birşey kafa karıştırıcıysa, Q &amp; A forumlarını göndermekten çekinmeyin.

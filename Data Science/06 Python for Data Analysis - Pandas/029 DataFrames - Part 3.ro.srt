@@ -1,0 +1,467 @@
+1
+00:00:05,580 --> 00:00:09,150
+Bună ziua tuturor și bine ați venit la cadrele de date pentru fiecare curs.
+
+2
+00:00:09,540 --> 00:00:14,380
+În această conferință finală, seria de conferințe a cadrului de date, vom afla despre indexul multa
+
+3
+00:00:14,380 --> 00:00:15,920
+și indexul cheie mai mare.
+
+4
+00:00:15,930 --> 00:00:20,370
+Mai întâi, creați un exemplu rapid despre cum arată datele multilaterale și apoi cum puteți lucra cu
+
+5
+00:00:20,370 --> 00:00:23,670
+cadrele de date pentru a avea un index pe mai multe niveluri.
+
+6
+00:00:23,670 --> 00:00:26,990
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+7
+00:00:27,000 --> 00:00:27,390
+In regula.
+
+8
+00:00:27,390 --> 00:00:29,470
+Aici sunt la notebook-ul Jupiter.
+
+9
+00:00:29,580 --> 00:00:35,370
+Ceea ce am de gând să fac și să fac este să copiați și să lipiți câteva linii de cod care sunt disponibile
+
+10
+00:00:35,370 --> 00:00:37,850
+pentru dvs. în notebook-ul dvs. numite cadre de date.
+
+11
+00:00:37,860 --> 00:00:43,440
+Dacă derulați în jos până când ajungeți la secțiunea cheie mai mare a indexului Index, veți vedea aceste patru linii
+
+12
+00:00:43,440 --> 00:00:44,290
+de cod.
+
+13
+00:00:44,310 --> 00:00:48,130
+Acestea sunt cele patru linii de cod vor folosi pentru a construi acest cadru de date.
+
+14
+00:00:48,330 --> 00:00:50,140
+Putem merge mai departe și verificăm asta.
+
+15
+00:00:50,340 --> 00:00:55,450
+Vom spune afară și asta e doar lista.
+
+16
+00:00:55,470 --> 00:01:02,970
+Deci avem trei sau șase elemente în lista a două tipuri diferite G1 G1 G1 și apoi G-2 DTG 2 pe
+
+17
+00:01:03,030 --> 00:01:07,700
+care le avem în interiorul care este 1 2 3 1 2 3.
+
+18
+00:01:08,010 --> 00:01:16,110
+Apoi, când am continuat și am folosit funcția zip împreună cu funcția de listă, așa cum am spus mai sus,
+
+19
+00:01:16,140 --> 00:01:23,580
+am continuat și am folosit zip și LIST pentru a face acest lucru într-o listă de perechi de
+
+20
+00:01:23,580 --> 00:01:29,790
+tuple G 1 1 1 2 1 3 2 1 2 2 2 3.
+
+21
+00:01:30,000 --> 00:01:35,050
+Și apoi am trecut-o într-o funcție specială de la panderers și de fapt nu am fi lucrat cu această funcție
+
+22
+00:01:35,070 --> 00:01:41,910
+deloc pe tot parcursul cursului, dar aceasta este doar pentru o personalizare de a face un cadru de date, astfel încât să nu vă faceți griji prea
+
+23
+00:01:41,940 --> 00:01:44,960
+mult despre ea, dar Vreau doar să fii conștient de asta.
+
+24
+00:01:44,970 --> 00:01:49,820
+PD-ul său că indexul multi-bandă de la tupluri și se poate lua în esență într-o listă care arată astfel și
+
+25
+00:01:49,830 --> 00:01:51,870
+de a crea un index multi din ea.
+
+26
+00:01:52,140 --> 00:01:56,800
+Deci, după ce ați terminat cu asta veți obține acest index multi cu mai multe nivele.
+
+27
+00:01:56,800 --> 00:02:01,890
+Doriți să adaug un nivel unu la trei ca un alt nivel și apoi etichete și voi merge și să explice ce înseamnă
+
+28
+00:02:01,890 --> 00:02:04,610
+tot ceea ce înseamnă că vom crea acest cadru de date.
+
+29
+00:02:04,680 --> 00:02:09,780
+Dar, pentru moment, vă puteți simți liber să copiați și să inserați acest cod direct de pe
+
+30
+00:02:09,780 --> 00:02:14,850
+notebook deoarece nu este important în ceea ce privește crearea cadrului de date de la zero.
+
+31
+00:02:15,520 --> 00:02:27,360
+Vom intra și vom spune cadrele de date PD passen Rande și 6 Com 2, deci avem 6 rânduri cu două coloane și apoi voi stabili
+
+32
+00:02:27,420 --> 00:02:33,660
+indexul ca fiind obiectul index superior pe care tocmai l-am făcut și apoi voi
+
+33
+00:02:33,660 --> 00:02:38,440
+stabili coloanele pentru a fi o listă a și b.
+
+34
+00:02:39,210 --> 00:02:39,700
+In regula.
+
+35
+00:02:39,720 --> 00:02:43,740
+Și vă puteți simți liber să copiați și să lipiți tot acest cod de pe notebook-uri, deoarece nu este atât de important.
+
+36
+00:02:44,010 --> 00:02:48,650
+Acest lucru este doar pentru a construi un cadru de index multi nivel de date.
+
+37
+00:02:48,700 --> 00:02:50,850
+Lasă-mă să-ți arăt ce vreau să spun prin asta aici.
+
+38
+00:02:50,940 --> 00:02:55,110
+Dacă arăt efectiv cadrul de date, pot vedea că are două nivele ale unui index.
+
+39
+00:02:55,110 --> 00:02:57,240
+Are acest nivel Jiwon și G-2.
+
+40
+00:02:57,420 --> 00:03:02,580
+Și apoi acest nivel sub sau introspecție unu două două trei unu două trei și apoi două coloane.
+
+41
+00:03:02,730 --> 00:03:07,200
+Și acesta este un cadru de date care arată că are multi-niveluri ale unui indice.
+
+42
+00:03:07,200 --> 00:03:09,870
+Altfel cunoscut sub numele de cheie cheie superioară.
+
+43
+00:03:09,870 --> 00:03:15,970
+Să mergem mai departe și să arătăm cum putem apela de fapt date de la un index pe mai multe niveluri pentru această ierarhie a indexului.
+
+44
+00:03:16,140 --> 00:03:20,740
+Putem merge mai departe și facem este să spun DMF L-O vedea.
+
+45
+00:03:21,780 --> 00:03:27,630
+Și apoi putem merge mai departe și folosind notația Bracton GRABBE din indexul foarte exterior.
+
+46
+00:03:27,630 --> 00:03:34,560
+De exemplu, dacă vreau tot ce se află sub G 1, pot să o parcurg și o
+
+47
+00:03:34,560 --> 00:03:41,730
+să iau acel mic cadru de date sub formă de date în schimb, care este în principiu primele
+
+48
+00:03:41,820 --> 00:03:49,870
+trei rânduri pentru cele două coloane și apoi pot continua să indexez acest lucru, Vedeți sau vedeți că oricine este bine.
+
+49
+00:03:50,580 --> 00:03:56,300
+Și apoi trecerea în număr și care va reveni apoi aceste două elemente aici ca o serie.
+
+50
+00:03:56,310 --> 00:04:04,360
+Deci, ideea de bază este că sunați din indexul exterior continuând să vă apelați mai adânc.
+
+51
+00:04:04,380 --> 00:04:08,080
+Dacă doriți să denumiți aceste nume de index.
+
+52
+00:04:08,130 --> 00:04:09,720
+Așa că acum ei nu sunt numiți.
+
+53
+00:04:09,720 --> 00:04:14,910
+Asta este anunțat despre faptul că nu există nici un nume în aceste două celule care să poată ieși
+
+54
+00:04:15,330 --> 00:04:16,340
+în indicele DMF.
+
+55
+00:04:16,440 --> 00:04:21,610
+Numele nu se schimbă și trebuie să obțineți o listă înghețată care nu este nici una.
+
+56
+00:04:21,630 --> 00:04:24,900
+Și aceasta este doar o panderers nume de tipuri de obiecte nume.
+
+57
+00:04:25,110 --> 00:04:31,230
+Tot ceea ce se spune aici este că acești indici nu au nume, dar poți să mergi mai departe și să spui egal
+
+58
+00:04:32,640 --> 00:04:34,900
+și apoi să treci într-o listă de nume.
+
+59
+00:04:34,980 --> 00:04:40,450
+De exemplu, hai să ieșim și să numim aceste grupuri de index din afara, deoarece este primul G.
+
+60
+00:04:40,770 --> 00:04:45,300
+Și atunci vom apela indicele Insight și tu pentru numere.
+
+61
+00:04:45,300 --> 00:04:53,460
+Și acum când îmi sun cadoul de date, avem grupuri ca un indice etichetat în exterior și amorțit ca indice
+
+62
+00:04:53,460 --> 00:04:55,220
+de etichetă în interior.
+
+63
+00:04:55,290 --> 00:04:57,610
+Și asta ar putea avea cât mai multe straturi pe cât vrei.
+
+64
+00:04:57,870 --> 00:05:03,210
+Sperăm că puteți începe să vedeți cum acest lucru ar fi util pentru informațiile indexului pe mai multe niveluri pe care doriți să
+
+65
+00:05:03,210 --> 00:05:05,260
+le utilizați de-a lungul unui cadru de date.
+
+66
+00:05:05,790 --> 00:05:10,800
+Să mergem mai departe și să vă arătăm cum putem să luăm mai multe informații din acest moment.
+
+67
+00:05:10,800 --> 00:05:13,270
+Imaginați-vă că doriți să luați această valoare chiar aici.
+
+68
+00:05:13,290 --> 00:05:16,540
+0. 07 la cel care a fost subliniat.
+
+69
+00:05:16,830 --> 00:05:22,580
+Ei bine, asta e sub G-2 numărul doi în coloana B.
+
+70
+00:05:22,940 --> 00:05:26,200
+Să începem din afară și să ne deplasăm.
+
+71
+00:05:26,250 --> 00:05:37,290
+Vom continua să specificăm că vrem CG și care returnează acest cadru de date.
+
+72
+00:05:37,290 --> 00:05:39,250
+Din nou, căutăm această valoare aici.
+
+73
+00:05:39,270 --> 00:05:48,040
+Deci, hai să mergem mai departe și să facem un alt indice și putem merge mai departe și sună și aici.
+
+74
+00:05:48,960 --> 00:05:52,340
+Și apoi avem în coloana B sau în indexul B.
+
+75
+00:05:52,350 --> 00:05:55,320
+Scuzați-mă pentru seria 0. 07.
+
+76
+00:05:55,500 --> 00:06:01,350
+Așa că, în cele din urmă, suntem numiți B la final și asta e tot ce putem să
+
+77
+00:06:01,350 --> 00:06:03,900
+apucăm din afară din interiorul acestei valori.
+
+78
+00:06:04,010 --> 00:06:06,480
+Ce trebuie să faceți acum este să întrerupeți videoclipul.
+
+79
+00:06:06,540 --> 00:06:12,220
+Selectați o altă valoare și vedeți dacă puteți să o indexați cu succes și să o returnați.
+
+80
+00:06:12,360 --> 00:06:12,850
+O.K.
+
+81
+00:06:12,960 --> 00:06:14,600
+Sperăm că puteți face acest lucru.
+
+82
+00:06:14,610 --> 00:06:20,190
+Să mergem mai departe și să vă arătăm o ultimă funcție foarte utilă numită
+
+83
+00:06:20,260 --> 00:06:23,100
+secțiune transversală și va fi x x.
+
+84
+00:06:23,970 --> 00:06:28,680
+Deci, aceasta returnează o secțiune transversală a rândurilor sau coloanelor dintr-o serie de cadre de date și
+
+85
+00:06:28,680 --> 00:06:32,490
+veți folosi aceasta atunci când aveți un index pe mai multe niveluri.
+
+86
+00:06:32,490 --> 00:06:36,020
+Deci, din nou, cadrul nostru de date arată așa.
+
+87
+00:06:36,030 --> 00:06:43,820
+Să presupunem că vrem să luăm tot ce era sub G 1 Am putea să fac ceea ce ți-am arătat eu EHLO
+
+88
+00:06:44,060 --> 00:06:48,190
+C G 1 și care returnează datele de la energia 1.
+
+89
+00:06:48,360 --> 00:06:56,940
+Dar o altă opțiune pentru un index pe mai multe niveluri utilizează acest X ca secțiune transversală și apoi trecerea în Jiwon are de
+
+90
+00:06:57,000 --> 00:06:58,260
+asemenea un șir.
+
+91
+00:06:58,620 --> 00:07:06,180
+Dar ceea ce este frumos în această secțiune transversală este capacitatea de a sări sau de a intra într-un index pe mai multe niveluri.
+
+92
+00:07:06,540 --> 00:07:14,730
+De exemplu, să presupunem că am acest cadru de date aici și vreau să apuc toate valorile unui număr egal cu unul cu ambele
+
+93
+00:07:15,150 --> 00:07:16,340
+grupuri în el.
+
+94
+00:07:16,380 --> 00:07:21,770
+Înseamnă că vreau ceea ce am subliniat aici 1 și apoi 0. 3 1. 6 9.
+
+95
+00:07:21,930 --> 00:07:26,710
+Dar, de asemenea, am dorit această valoare 0. 1 6 0. 1 8.
+
+96
+00:07:26,850 --> 00:07:31,700
+Deci vreau ca toate valorile să fie amorțite ca indicele insight să fie egal cu 1.
+
+97
+00:07:31,790 --> 00:07:39,370
+Acest tip de indexare este dificil pentru ceva ca EHLO vedea metodele, dar nu este atât de rău cu metoda
+
+98
+00:07:39,390 --> 00:07:48,250
+X sau a secțiunii transversale pe care ați sfârșit să o faceți este să precizați ceea ce doriți până nu este egal cu unul.
+
+99
+00:07:48,480 --> 00:07:54,730
+Și apoi trebuie să indicați un al doilea nivel de argumente și apoi să treceți în numele indexului.
+
+100
+00:07:54,840 --> 00:07:58,340
+În acest caz, numele indexului este numb.
+
+101
+00:07:58,590 --> 00:08:05,970
+Deci, în esență, acest lucru ne permite să luăm o secțiune transversală unde nivelul este egal cu amorțit este egal cu 1
+
+102
+00:08:05,970 --> 00:08:09,140
+și așa veți folosi în principal această secțiune transversală.
+
+103
+00:08:09,510 --> 00:08:13,900
+Și acum vedem ambele grupuri unde nivelul num se întâmplă să fie egal cu 1.
+
+104
+00:08:13,920 --> 00:08:16,340
+Iar acest tip de date se întoarce.
+
+105
+00:08:17,010 --> 00:08:21,910
+OK nu vă faceți griji prea mult, deoarece acest lucru este destul de avansate de utilizare a Pandurs.
+
+106
+00:08:21,930 --> 00:08:28,200
+Vreau doar să fiți conștienți de aceasta mai târziu pe măsură ce aflăm mai multe despre vizualizarea datelor și începeți să vă atingeți
+
+107
+00:08:28,200 --> 00:08:28,590
+datele.
+
+108
+00:08:28,590 --> 00:08:35,100
+Capstone proiecte vom revizui această metodă secțiune transversală pentru a apuca de fapt datele de stoc index.
+
+109
+00:08:35,520 --> 00:08:40,230
+Dar pentru moment vreau să fiți conștient de acest lucru, dar nu vă faceți griji în măsura în care sunteți testat pe el,
+
+110
+00:08:40,230 --> 00:08:44,460
+deoarece este o utilizare mai avansată și nu veți vedea acest fel de lucruri foarte des pe tot parcursul cursului.
+
+111
+00:08:44,460 --> 00:08:49,290
+De fapt, aceasta apare doar într-o singură dată într-unul din cele mai avansate proiecte de date cu capstone și
+
+112
+00:08:49,290 --> 00:08:52,350
+există o explicație a modului de utilizare a secțiunii din nou.
+
+113
+00:08:52,350 --> 00:08:56,010
+Așa că vom intra și vă vom oferi o reîmprospătare înainte să vedeți din nou acest subiect.
+
+114
+00:08:56,040 --> 00:09:02,520
+Pentru moment, aceasta a fost mai mult decât o trecere în revistă avansată a subiectelor index multi și indexarea subiectelor cheie mai mari.
+
+115
+00:09:02,520 --> 00:09:07,620
+În principiu, ceea ce vrei să faci este să indice din afară pas cu pas pentru a obține datele pe care vrei
+
+116
+00:09:07,620 --> 00:09:08,400
+să le afli.
+
+117
+00:09:08,810 --> 00:09:12,120
+OK, mulțumesc tuturor și te văd la următoarea conferință.

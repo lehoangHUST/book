@@ -1,0 +1,531 @@
+1
+00:00:05,490 --> 00:00:10,830
+Cześć wszystkim i zapraszam do wykładu Matrix fabuły z Seabornem w tym wykładzie. Nauczymy
+
+2
+00:00:10,830 --> 00:00:14,940
+się tworzyć wykresy matrycowe głównie mapy cieplne za pomocą Seaborn.
+
+3
+00:00:15,120 --> 00:00:18,300
+Przejdźmy dalej i przejdź do notatnika Jupiter, aby zacząć.
+
+4
+00:00:18,870 --> 00:00:19,200
+DOBRZE.
+
+5
+00:00:19,200 --> 00:00:21,500
+Jestem w notesie Jowisza.
+
+6
+00:00:21,510 --> 00:00:27,280
+Poszedłem naprzód i powiedziałem, że jest Seaborne jako Asinus, a następnie ustawiam wykres na żywo w linii.
+
+7
+00:00:27,330 --> 00:00:29,970
+Następnie załadowałem dwa zestawy danych.
+
+8
+00:00:30,000 --> 00:00:35,550
+Załadowałem ramkę danych końcówek lub zestaw danych za pomocą Essona jako zestawu danych podkreślenia obciążenia, a
+
+9
+00:00:35,550 --> 00:00:37,260
+następnie przekazując końcówki ciągów.
+
+10
+00:00:37,290 --> 00:00:42,660
+I zrobiłem coś podobnego dla zestawu danych lotu za pomocą S i S, że niski zestaw danych, a
+
+11
+00:00:42,660 --> 00:00:46,030
+następnie przekazywanie w ciągach lotów danych końcówek, które widzieliśmy wcześniej.
+
+12
+00:00:46,040 --> 00:00:46,980
+Oto głowa tego.
+
+13
+00:00:47,040 --> 00:00:48,430
+Ale zestaw danych lotu nie mamy.
+
+14
+00:00:48,430 --> 00:00:49,970
+Rzućmy okiem na to.
+
+15
+00:00:50,010 --> 00:00:56,130
+Zestaw danych lotniczych przede wszystkim pokazuje liczbę pasażerów, którzy polecili w danym
+
+16
+00:00:56,220 --> 00:00:57,750
+miesiącu danego roku.
+
+17
+00:00:57,750 --> 00:01:04,230
+Porozmawiajmy teraz o mapach ciepła, co jest naszym podstawowym sposobem pokazania jakiegoś wykresu macierzy w
+
+18
+00:01:04,230 --> 00:01:06,630
+celu poprawnego działania mapy ciepła.
+
+19
+00:01:06,660 --> 00:01:09,630
+Twoje dane powinny już być w formie macierzy.
+
+20
+00:01:09,630 --> 00:01:15,850
+Mam na myśli to, że nazwa macierzy polega na tym, że nazwa indeksu i nazwa kolumny pasują do
+
+21
+00:01:15,850 --> 00:01:21,500
+siebie tak, że wartość komórki faktycznie wskazuje coś, co jest istotne dla obu tych nazw.
+
+22
+00:01:21,540 --> 00:01:28,680
+Co mam na myśli przez to na przykład, jeśli przyjrzę się ramce danych porad teraz mam całkowity rachunek, który
+
+23
+00:01:28,890 --> 00:01:35,850
+jest jakąś etykietą lub zmienną i jeśli spojrzę na jedną z wartości w komórce to 16 dolarów i 99
+
+24
+00:01:35,850 --> 00:01:36,950
+centów .
+
+25
+00:01:37,140 --> 00:01:42,420
+Jednak rząd nie jest zmienną rzeczywistą, aby uzyskać ją w postaci macierzowej.
+
+26
+00:01:42,420 --> 00:01:46,830
+Muszę mieć obie zmienne w kolumnach i wierszach.
+
+27
+00:01:47,370 --> 00:01:54,420
+Mogę to zrobić za pomocą wielu metod, zwykle za pomocą tabeli przestawnej lub próbując uzyskać dane korelacji.
+
+28
+00:01:54,570 --> 00:01:56,860
+Najpierw przejdziemy do danych korelacyjnych.
+
+29
+00:01:56,940 --> 00:02:02,130
+Jeśli to nazywam, napiwki przestaną zamykać nawiasy.
+
+30
+00:02:02,130 --> 00:02:06,290
+Teraz mamy tu macierzową formę jakiegoś rodzaju danych.
+
+31
+00:02:06,450 --> 00:02:15,390
+A to, co przez to rozumiesz, to teraz kolumna, a nazwy zmiennych indeksowych faktycznie wskazują na trafność zarówno dla kolumny,
+
+32
+00:02:15,390 --> 00:02:19,880
+jak i nazwy indeksu dla komórki, w której pasują.
+
+33
+00:02:19,920 --> 00:02:21,190
+I to jest forma matrycowa.
+
+34
+00:02:21,210 --> 00:02:26,370
+Będziesz potrzebował swoich danych, aby wywołać mapę cieplną, a wtedy jest to
+
+35
+00:02:26,370 --> 00:02:30,920
+tak proste, jak wywołanie mapy ciepła Asinusa, a następnie danych.
+
+36
+00:02:30,990 --> 00:02:39,500
+Wejdźmy do środka i ocalmy Tipps jako rdzeń TC, a następnie przekaż go na mapę cieplną.
+
+37
+00:02:39,660 --> 00:02:45,840
+I tutaj widzimy mapę cieplną lub mapę cieplną, która naprawdę działa, czy kolory w tych wartościach oparte są
+
+38
+00:02:45,840 --> 00:02:47,280
+na jakiejś skali gradientu.
+
+39
+00:02:47,280 --> 00:02:53,850
+Więc jeśli przyjrzę się mojej oryginalnej ramce danych TCE, to po prostu ustaw te liczby na gradiencie w skali
+
+40
+00:02:53,910 --> 00:02:55,970
+kolorów, a następnie wypełnij ją.
+
+41
+00:02:56,100 --> 00:03:01,380
+W ten sposób, jeśli masz bardzo dużą ramkę danych korelacji lub inne dane
+
+42
+00:03:01,380 --> 00:03:07,390
+w postaci macierzy, możesz łatwo określić, jakie wartości są wartościami względem siebie, korzystając z mapy ciepła.
+
+43
+00:03:07,390 --> 00:03:12,210
+I to jest główne główne zastosowanie wykresu macierzy.
+
+44
+00:03:12,210 --> 00:03:18,420
+Inne użyteczne argumenty, które możesz przekazać tutaj, aby podgrzać mapę oprócz samych danych i rotacji, więc
+
+45
+00:03:18,420 --> 00:03:26,160
+możesz powiedzieć A i OT, ponieważ argumenty są prawdziwe i będą adnotować rzeczywiste wartości liczbowe, które należą do każdej z
+
+46
+00:03:26,160 --> 00:03:27,350
+tych komórek.
+
+47
+00:03:27,360 --> 00:03:31,680
+Nie musisz po prostu tracić kolorów, ale możesz także odejść od rzeczywistej wartości tutaj.
+
+48
+00:03:31,980 --> 00:03:38,730
+Następnie możesz również określić jako Mapę widoczną mapowanie kolorów, które chcesz przejrzeć na kolorowych mapach,
+
+49
+00:03:38,730 --> 00:03:43,580
+a opcje później w pozornych wykładowcach, na przykład pokazując przykład.
+
+50
+00:03:43,710 --> 00:03:47,070
+Fajnie ciepło jako ciąg znaków, który weryfikuje mapę kolorów.
+
+51
+00:03:47,070 --> 00:03:49,200
+I tutaj możesz zacząć widzieć mapę kolorów.
+
+52
+00:03:49,230 --> 00:03:52,650
+Chłodne ciepło na tych samych danych.
+
+53
+00:03:52,650 --> 00:03:59,700
+Powróćmy teraz do danych lotu, a następnie wpiszcie loty i widzimy, że przez cały rok
+
+54
+00:03:59,700 --> 00:04:05,640
+w tym miesiącu pasażerowie i ja potrzebujemy wprowadzić to w formę
+
+55
+00:04:05,670 --> 00:04:13,510
+macierzy, co oznacza, że muszę przekonwertować jedną z tych zmiennych na wezwanie. lub droga nazywa aktualny indeks.
+
+56
+00:04:13,560 --> 00:04:16,500
+Tak więc chcę jedną z tych zmiennych Miesiąc Miesiąc lub pasażerów.
+
+57
+00:04:16,500 --> 00:04:21,340
+Przejdźmy dalej i powiedzmy, że miesiąc jest indeksem.
+
+58
+00:04:21,360 --> 00:04:27,330
+Powiem więc, że indeks jest równy miesiącowi, a potem wyjdę
+
+59
+00:04:27,330 --> 00:04:36,330
+i ustawię kolumny równe rokowi, a jedyne, co pozostało mi do zrobienia, to określenie wartości i to
+
+60
+00:04:36,330 --> 00:04:39,920
+będzie kontynuowane i być kolumną pasażerów.
+
+61
+00:04:41,990 --> 00:04:44,400
+Wejdź i uruchom to i zobacz, jak to teraz wygląda.
+
+62
+00:04:44,860 --> 00:04:45,310
+DOBRZE.
+
+63
+00:04:45,370 --> 00:04:48,940
+Teraz mam dane w formie matrycy.
+
+64
+00:04:48,970 --> 00:04:53,600
+Możesz to zrobić za pomocą tabeli przestawnej dość łatwo, w zależności od poprawności linii danych.
+
+65
+00:04:53,740 --> 00:04:59,470
+Teraz widzisz, że mam tu kilka liczb, które dobrze korelują nie tylko z zmienną kolumny,
+
+66
+00:04:59,470 --> 00:05:01,360
+ale także z indeksem.
+
+67
+00:05:01,420 --> 00:05:07,570
+Tak więc widzę tutaj w 1952 roku, na przykład w kwietniu było 181 pasażerów.
+
+68
+00:05:07,570 --> 00:05:11,770
+Teraz chcę użyć mapy ciepła, aby szybko wizualizować te dane.
+
+69
+00:05:11,960 --> 00:05:18,280
+Zamierzam pójść na czoło i ustawić to równe FP dla lotów pivot, a następnie po prostu wywołać mapę
+
+70
+00:05:19,690 --> 00:05:21,820
+ciepła S i S na F-P.
+
+71
+00:05:21,970 --> 00:05:26,530
+I tutaj możemy zobaczyć mapę cieplną dla obróconych tabel lotów.
+
+72
+00:05:26,710 --> 00:05:30,710
+Teraz widzę na podstawie gradientu kolorów dane w bardzo wolnym od formatu.
+
+73
+00:05:30,880 --> 00:05:36,400
+Mogę więc łatwo stwierdzić, który miesiąc z danego roku miał najwięcej lotów, i ma to sens,
+
+74
+00:05:36,550 --> 00:05:43,030
+że stopniowo wraz z upływem lat w miarę upływu czasu uzyskuje się więcej lotów, co ma sens, ponieważ
+
+75
+00:05:43,030 --> 00:05:47,950
+wraz z upływem czasu coraz więcej osób korzysta z samolotów, więcej lotów występujące
+
+76
+00:05:48,280 --> 00:05:56,530
+i można również zobaczyć w oparciu o miesiąc, w którym popularne miesiące podróży zwykle w miesiącach letnich czerwiec i sierpień przynajmniej dla nas danych.
+
+77
+00:05:57,370 --> 00:06:04,510
+Teraz możesz dodać argumenty, takie jak mapa morska, i przejdźmy do innego przykładu
+
+78
+00:06:04,510 --> 00:06:08,800
+mapy morskiej, która przydaje się jako magma.
+
+79
+00:06:09,490 --> 00:06:16,570
+Teraz możemy również zobaczyć z ciemności na światło rzeczywiste kolory, w tym wariancję innego argumentu, który można przekazać, a
+
+80
+00:06:16,570 --> 00:06:23,410
+mapa ciepła, którą czasami ludzie lubią używać, jest jak kolor i linia, która jest w zasadzie teraz
+
+81
+00:06:26,170 --> 00:06:27,870
+na tej mapie ciepła.
+
+82
+00:06:27,880 --> 00:06:32,560
+Wszystkie te komórki dotykają się bezpośrednio, ale czasami możesz potrzebować separacji.
+
+83
+00:06:32,710 --> 00:06:36,140
+Możesz więc określić, że wiersze mają być trochę grubsze.
+
+84
+00:06:36,340 --> 00:06:40,740
+Wejdziemy do środka i tam wprowadzimy, a Ty możesz nadać Feitel kolor linii.
+
+85
+00:06:40,870 --> 00:06:42,970
+Pójdziemy i określimy, że jest biały.
+
+86
+00:06:42,970 --> 00:06:46,830
+Teraz, jeśli uruchomię to, otrzymam te linie pomiędzy każdą komórką.
+
+87
+00:06:46,870 --> 00:06:48,890
+Czasami jest to trochę łatwiejsze do odczytania.
+
+88
+00:06:49,360 --> 00:06:55,790
+Możesz sprawić, że te linie będą naprawdę grube, jeśli chcesz więcej separacji, a także możesz zmienić
+
+89
+00:06:55,790 --> 00:06:56,740
+kolor linii.
+
+90
+00:06:56,740 --> 00:07:01,750
+Na przykład, jeśli wrócę do innego szwu, czasami ludzie używają go tak, jak pokazujemy
+
+91
+00:07:01,780 --> 00:07:03,480
+przed nami chłodne ciepło.
+
+92
+00:07:03,740 --> 00:07:07,500
+Wygląda tak, jakbyś chciał czegoś, co nie jest białe.
+
+93
+00:07:07,540 --> 00:07:12,130
+Możesz także wybrać na przykład czarny.
+
+94
+00:07:12,130 --> 00:07:15,760
+Więc naprawdę masz tu dużo personalizacji, o ile naprawdę chcesz to rozdzielić.
+
+95
+00:07:15,760 --> 00:07:20,890
+Chodźmy, aby usunąć wszystko i po prostu pokaż tutaj oryginalną mapę ciepła.
+
+96
+00:07:20,890 --> 00:07:27,340
+Porozmawiajmy teraz o drugim arkuszu typu Matrycy w morzu morskim, który jest mapą skupień, a mapa
+
+97
+00:07:27,340 --> 00:07:33,260
+skupiskowa rzeczywiście będzie wykorzystywała hierarchiczne tworzenie klastrów do utworzenia zgrupowanej wersji tej mapy ciepła.
+
+98
+00:07:33,290 --> 00:07:37,900
+Pozwólcie, że pokażę wam przykład, że mamy oryginalną mapę cieplną, ale teraz mam zamiar
+
+99
+00:07:38,980 --> 00:07:45,420
+nazwać mapę skupienia Asinusa na F. P. i zauważ, co tu mamy.
+
+100
+00:07:45,430 --> 00:07:49,470
+Mamy dane na jego temat, musimy pomniejszyć, aby pokazać to całkowicie.
+
+101
+00:07:49,470 --> 00:07:55,540
+Ale teraz mamy dane i te małe hierarchiczne klastry, które zasadniczo próbują grupować kolumny
+
+102
+00:07:55,570 --> 00:07:59,180
+i wiersze w oparciu o ich podobieństwo.
+
+103
+00:07:59,190 --> 00:08:06,730
+I to nagle pokazuje lata i miesiące, a klastry i miesiące tutaj na osi Y, które widzisz, nie są
+
+104
+00:08:06,730 --> 00:08:08,370
+już w porządku.
+
+105
+00:08:08,470 --> 00:08:11,400
+Oni idą we wrześniu czerwiec sierpień lipiec październik kwiecień.
+
+106
+00:08:11,470 --> 00:08:16,270
+Powodem tego jest to, że skupili się oni na zbliżaniu się do podobnych miesięcy i to samo przez
+
+107
+00:08:16,570 --> 00:08:19,810
+lata, które można zobaczyć, że niektóre lata są już nie w porządku.
+
+108
+00:08:19,830 --> 00:08:22,940
+Jest rok 1949 1950 1953.
+
+109
+00:08:23,050 --> 00:08:28,570
+Jest to w gruncie rzeczy klaster informacji, aby spróbować pokazać kolumny i wiersze, które są do siebie
+
+110
+00:08:28,580 --> 00:08:33,360
+podobne, więc teraz widzę, że 1959 i 1960 są do siebie bardzo podobne.
+
+111
+00:08:33,490 --> 00:08:35,250
+A więc nasz sierpień i lipiec.
+
+112
+00:08:35,290 --> 00:08:40,570
+Możesz zobaczyć różne poziomy hierarchii klastrów w oparciu o tego rodzaju schematy drzewne,
+
+113
+00:08:40,570 --> 00:08:48,550
+ale na osi Y i osi X, a teraz możesz naprawdę zacząć czerpać informacje z wykresu, aby uczynić to jeszcze
+
+114
+00:08:48,700 --> 00:08:53,020
+bardziej klarownym co możemy zrobić, to zmienić mapowanie kolorów.
+
+115
+00:08:53,020 --> 00:08:55,210
+Zobacz więc mapę równą ciągowi znaków.
+
+116
+00:08:55,210 --> 00:08:58,020
+Ponownie ostudzić.
+
+117
+00:08:58,220 --> 00:09:03,250
+Teraz możemy naprawdę zobaczyć klastry, aby przekonać się, że istnieje klaster między
+
+118
+00:09:03,550 --> 00:09:08,420
+sierpniem a lipcem, a czymś, co można zrobić, to ujednolicić skalę.
+
+119
+00:09:08,440 --> 00:09:12,400
+W tej chwili wciąż jesteśmy na pokładzie pasażerów od 0 do 600.
+
+120
+00:09:12,520 --> 00:09:19,690
+Ale jeśli chcesz znormalizować to, możesz przekazać argumenty zwane standardową skalą i wejściem 1, co
+
+121
+00:09:19,690 --> 00:09:26,920
+normalizuje to od 0 do 1 i naprawdę możesz zobaczyć w oparciu o znormalizowaną skalę
+
+122
+00:09:26,950 --> 00:09:29,890
+podobieństwa klastrów oparte na kolorowaniu.
+
+123
+00:09:30,130 --> 00:09:35,800
+Wygląda więc na to, że listopad i luty to wczesne miesiące zimowe znacznie bliższe
+
+124
+00:09:35,800 --> 00:09:41,120
+niskim pasażerom, a wysoka liczba pasażerów jest głównie w tych miesiącach letnich.
+
+125
+00:09:41,170 --> 00:09:41,770
+DOBRZE.
+
+126
+00:09:41,950 --> 00:09:45,010
+Zachęcam do kontynuowania i zapoznania się z dokumentacją dotyczącą mapy skupień.
+
+127
+00:09:45,010 --> 00:09:49,720
+Jest to coś, co cię interesuje, ale możesz chcieć poczekać, aż zaczniemy obrabiać
+
+128
+00:09:49,730 --> 00:09:54,460
+algorytmy grupowania, abyśmy mogli lepiej zrozumieć, co się dzieje z matematyką stojącą za
+
+129
+00:09:54,460 --> 00:09:55,360
+tymi metodami.
+
+130
+00:09:55,400 --> 00:09:59,770
+BERNANKE Po prostu myślę o tym, jako o interesującej metodzie, by po
+
+131
+00:09:59,770 --> 00:10:06,400
+prostu wnioskować o trochę więcej informacji z normalnego ciepła, niż mapa ciepła wyświetli rzeczy w kolejności, w jakiej umieścisz je w
+
+132
+00:10:06,400 --> 00:10:10,890
+mapie skupień, połączy rzeczy w kolejności, aby podobne grupy były blisko do siebie nawzajem.
+
+133
+00:10:10,900 --> 00:10:13,930
+W porządku, dziękuję wszystkim, a do zobaczenia na następnym wykładzie

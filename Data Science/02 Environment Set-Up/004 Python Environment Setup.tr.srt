@@ -1,0 +1,715 @@
+1
+00:00:05,490 --> 00:00:11,130
+Herkese merhaba Kurulum ve kurulum dersine hoş geldiniz, bu dersin amacı
+
+2
+00:00:11,130 --> 00:00:13,080
+Anaconda Python'u yüklemektir.
+
+3
+00:00:13,080 --> 00:00:17,970
+Bu programdan çıkan dizüstü bilgisayarların zip dosyasını indirin ve Jüpiter'i açın ve dizüstü bilgisayarları keşfedin ve
+
+4
+00:00:17,970 --> 00:00:20,410
+her şeyin sizin için çalıştığından emin olun.
+
+5
+00:00:21,560 --> 00:00:25,150
+Yani sadece yarasa kapalı anakonda anaconda nedir.
+
+6
+00:00:25,160 --> 00:00:28,570
+Dağıtım derken Python'un bir dağılımı var.
+
+7
+00:00:28,580 --> 00:00:33,770
+Bu aslında sadece pitonu değil, aynı zamanda bu kursta kullandığımız çok sayıda kütüphane ve
+
+8
+00:00:34,010 --> 00:00:35,240
+araçları da içeriyor.
+
+9
+00:00:35,390 --> 00:00:40,460
+Ayrıca daha sonra konuşacağımız bu sanal ortam sistemini de içerir.
+
+10
+00:00:40,550 --> 00:00:45,690
+Temel olarak, veri bilimi ve makine öğreniminde son derece popüler olan hepsi bir arada kurulum.
+
+11
+00:00:45,770 --> 00:00:50,060
+Bu nedenle, başka bir eğitim ve veri bilimi ve kurumsal eğitim gibi bir
+
+12
+00:00:50,360 --> 00:00:53,850
+makine öğrenimi alırsanız, sizden Anaconda'yı yüklemenizi isteyecek olmaları çok muhtemeldir.
+
+13
+00:00:53,870 --> 00:00:58,130
+Bu yüzden veri bilimi ve makine öğreniminde son derece popüler olan bu
+
+14
+00:00:59,690 --> 00:01:04,550
+yüzden bu derste onu kullanıyoruz, bu yüzden Anaconda'yı kurup Python'u çalıştırıp çalıştırdıktan sonra aslında Jupiter
+
+15
+00:01:04,550 --> 00:01:06,410
+adlı bir geliştirme ortamıyla geleceğiz.
+
+16
+00:01:06,410 --> 00:01:11,090
+Ve Jüpiter, normal Python kodunu yazabileceğimiz gelişmiş bir ortam ama bu konuda
+
+17
+00:01:11,090 --> 00:01:16,730
+gerçekten havalı olan, aynı görüntüyü görüntülememize ve aynı not defteri içindeki aşağı notları yazmamıza izin
+
+18
+00:01:16,730 --> 00:01:17,510
+veriyor.
+
+19
+00:01:17,510 --> 00:01:22,460
+Bu yüzden gerçekten harika bir öğrenme aracı ve bu ders boyunca kullanmanızın nedeni de harika
+
+20
+00:01:22,460 --> 00:01:23,780
+bir öğretim aracı.
+
+21
+00:01:23,840 --> 00:01:28,910
+Ayrıca, veri araştırmak ve analiz etmek için veri bilimindeki en popüler ortamlardan
+
+22
+00:01:28,910 --> 00:01:29,560
+biridir.
+
+23
+00:01:29,720 --> 00:01:34,160
+Kurs ve kütüphaneler hakkında gittikçe daha fazla bilgi
+
+24
+00:01:34,160 --> 00:01:39,920
+edindikçe, bunun neden bu kadar popüler bir araç olduğunu göreceksiniz, çünkü
+
+25
+00:01:39,960 --> 00:01:43,440
+her şeyi tek bir ekranda görebiliyorsunuz;
+
+26
+00:01:43,450 --> 00:01:48,190
+Şimdi deneyimli bir Python kullanıcısıysanız ve belki de Jüpiter'i denediyseniz ama gerçekten hoşlanmadıysanız, açıkça
+
+27
+00:01:48,340 --> 00:01:49,120
+belirtmek istiyorum.
+
+28
+00:01:49,120 --> 00:01:53,700
+Sublime Text veya PI tılsımı veya başka bir ortam gibi kendi kurulumunuza sahipsiniz.
+
+29
+00:01:53,860 --> 00:01:57,270
+Lütfen tercih ettiğiniz geliştirme ortamını kullanmaktan çekinmeyin.
+
+30
+00:01:57,280 --> 00:02:00,600
+Bazen bazı öğrenciler Jüpiter’i sevmezler ve kendi şeylerini severler.
+
+31
+00:02:00,670 --> 00:02:01,690
+Bu tamamen iyi.
+
+32
+00:02:01,690 --> 00:02:03,280
+Jüpiter'i kullanmaya zorlamıyoruz.
+
+33
+00:02:03,280 --> 00:02:06,610
+Kurs boyunca göstereceğimiz python kodu her ortamda çalışır.
+
+34
+00:02:06,610 --> 00:02:07,610
+Sadece açık olmak istiyorum.
+
+35
+00:02:07,720 --> 00:02:10,030
+Lütfen tercih ettiğiniz geliştirme ortamını seçin.
+
+36
+00:02:10,030 --> 00:02:14,250
+Ancak bunun için tamamen yeni iseniz, Anaconda ve Jüpiter
+
+37
+00:02:14,260 --> 00:02:16,780
+kurulumundan çıkmanızı şiddetle tavsiye ederim.
+
+38
+00:02:16,780 --> 00:02:21,050
+Ve umarım sen de benim kadar sevmeyi öğrenirsin.
+
+39
+00:02:21,050 --> 00:02:22,500
+Anaconda'yı indireceğiz.
+
+40
+00:02:22,610 --> 00:02:25,460
+Devam et ve anaconda dot com ile birlikte w ye git.
+
+41
+00:02:25,610 --> 00:02:30,150
+Veya sadece basitçe Google Arama Anaconda Python indir indir ve aynı sayfada son bulmalıyız.
+
+42
+00:02:30,170 --> 00:02:34,770
+Şimdi devam etmek ve şimdi tarayıcımda yorum nokta com atlamak istiyorum.
+
+43
+00:02:34,970 --> 00:02:35,740
+Tamam ben buradayım.
+
+44
+00:02:35,820 --> 00:02:37,390
+Anaconda dot com.
+
+45
+00:02:37,400 --> 00:02:39,140
+Aklınızda bulundurun Anaconda dot com.
+
+46
+00:02:39,140 --> 00:02:41,770
+Bu sayfa aslında oldukça sık kendini günceller.
+
+47
+00:02:41,780 --> 00:02:46,450
+Böylece tarz değişebilir ve örneğin şu anda farklı şeyler görebilirsiniz.
+
+48
+00:02:46,610 --> 00:02:51,710
+Bir anakonda con'a sahip olacaklar, böylece sayfanın tarzı biraz farklı görünecek ve butonlar olabilir ya da
+
+49
+00:02:51,710 --> 00:02:55,970
+sayfaya genel olarak bakacaksanız, bu siteyi ziyaret ettiğinizde sizin için farklı olabilir.
+
+50
+00:02:55,970 --> 00:03:01,600
+Fakat aslında aradığımız bölüm indirme bölümüdür ve Anaconda'nın neden bu sayfada yer aldığını
+
+51
+00:03:01,700 --> 00:03:04,360
+görmeniz gereken bazı ürünleri burada göreceksiniz.
+
+52
+00:03:04,670 --> 00:03:08,530
+Ve bulmakta sorun yaşıyorsanız, devam edip Google arama ve arama indirme işlemlerini yapabilirsiniz.
+
+53
+00:03:08,710 --> 00:03:10,910
+Ve sonunda seni bu sayfaya götürmeli.
+
+54
+00:03:10,910 --> 00:03:18,350
+Yani burada gördüğümüz Python 3 ve Python indirmeleri bu kursa Python 3'ün son sürümünü
+
+55
+00:03:18,350 --> 00:03:19,390
+kullanıyor.
+
+56
+00:03:19,400 --> 00:03:22,100
+Böylece devam edeceğiz ve bunu Yükleyicimiz için kullanacağız.
+
+57
+00:03:22,100 --> 00:03:27,050
+Yapmanız gereken tek şey, işletim sisteminiz için doğru yükleyiciyi seçmenizdir.
+
+58
+00:03:27,050 --> 00:03:32,780
+Yani şimdi bir Windows bilgisayarı istiyorum, bu yüzden Anaconda için Windows Installer'ı seçeceğim.
+
+59
+00:03:32,780 --> 00:03:36,680
+Şimdi Mac OS kullanıyorsanız devam edin ve Linux için Mac OS yükleyicisini seçin.
+
+60
+00:03:36,680 --> 00:03:41,690
+Devam edin ve bilmeniz gereken bir şeyi bir Mac OS için Linux yükleyicisini seçin.
+
+61
+00:03:41,760 --> 00:03:45,230
+Bir grafik yükleyici ve ardından bir komut satırı yükleyici var.
+
+62
+00:03:45,350 --> 00:03:49,790
+Grafik yükleyicinin kullanımı çok daha kolaydır çünkü açılır ve gösterilecek küçük bir penceresi vardır ve
+
+63
+00:03:49,820 --> 00:03:51,260
+ilerledikçe ne yapacağınızı söyler.
+
+64
+00:03:51,590 --> 00:03:53,810
+Bu yüzden grafik yükleyiciyi tavsiye ederim.
+
+65
+00:03:54,050 --> 00:04:00,440
+Bu yüzden devam edeceğim ve bir Windows bilgisayarda python 3 sürümü için windows installer'ı indireceğim
+
+66
+00:04:00,440 --> 00:04:04,100
+Bunu Python'da gelecekte bir noktada izliyorsanız, üç
+
+67
+00:04:04,100 --> 00:04:08,380
+nokta sekiz çıktı, sadece Python 3'ü kullanmak tamamen sorun değil.
+
+68
+00:04:08,430 --> 00:04:08,810
+Tamam.
+
+69
+00:04:08,860 --> 00:04:14,440
+İndirme işlemi bittiğinde Mac OS kullanıyorsanız devam edip bu yürütülebilir dosyayı açacağız.
+
+70
+00:04:14,470 --> 00:04:18,820
+Muhtemelen bazı TMG dosyası ya da aslında grafik yükleyici boyunca size yol gösterecek bir
+
+71
+00:04:18,820 --> 00:04:19,660
+şey olacak.
+
+72
+00:04:19,660 --> 00:04:25,400
+Yani bunu açacağız ve ardından kurulum sihirbazının sizin için atladığını görmelisiniz.
+
+73
+00:04:25,400 --> 00:04:28,910
+Böylece devam edeceğiz ve ileride buraya tıklayacağız ve ardından lisans sözleşmesi var.
+
+74
+00:04:28,910 --> 00:04:30,750
+Devam et ve kabul et.
+
+75
+00:04:30,930 --> 00:04:34,810
+Ve sonra sadece ben ve tüm kullanıcılar için yükleme var.
+
+76
+00:04:35,010 --> 00:04:37,940
+Bir iş bilgisayarındaysanız, muhtemelen kesin bir imtiyazınız yoktur.
+
+77
+00:04:37,980 --> 00:04:40,320
+Öyleyse devam et ve sadece benim için kur.
+
+78
+00:04:40,350 --> 00:04:44,430
+Temel olarak bu, kullanıcı hesabınıza giriş yapmanız gerektiği anlamına gelir ve yalnızca bu belirli kullanıcı hesabı
+
+79
+00:04:44,430 --> 00:04:45,000
+için çalışır.
+
+80
+00:04:45,480 --> 00:04:50,770
+Öyleyse devam edin ve İleri'ye tıklayın ve hedef klasör için varsayılan konumu seçin
+
+81
+00:04:50,770 --> 00:04:56,200
+ve sonra bir Windows bilgisayardaysanız, gelişmiş yükleme seçenekleri için bu seçeneği görürsünüz ve bu
+
+82
+00:04:56,200 --> 00:04:58,720
+iki kutuyu da kontrol etmeniz gerekir.
+
+83
+00:04:58,900 --> 00:05:04,210
+İçlerinden biri, Anaconda'yı yol ortam değişkeninize eklemenizin tavsiye edilmediğini söylüyor.
+
+84
+00:05:04,210 --> 00:05:08,860
+Bunun önerilmemesinin nedeni, karışıklık yaratabilecek farklı Python sürümleri varsa
+
+85
+00:05:08,860 --> 00:05:14,770
+ve Anaconda'yı bilgisayarınızda temel olarak Python'un varsayılan sürümü haline getirdiyseniz ve ayrıca
+
+86
+00:05:14,830 --> 00:05:20,500
+komut satırında belirli eylemleri çalıştırmanın varsayılan yolu da aslında bunu yapmanız önerilir
+
+87
+00:05:20,560 --> 00:05:24,520
+Zaten oldukça büyük bir Python kurulumuna sahipseniz.
+
+88
+00:05:24,520 --> 00:05:28,330
+Şimdi, ileri düzeyde bir kullanıcıysanız ve bir yol ortamı değişkeni ayarlamanın ne
+
+89
+00:05:28,330 --> 00:05:31,530
+demek olduğunu anlıyorsanız, Anaconda'yı yolunuza eklemek isteyip istemediğinizi size bırakacağım.
+
+90
+00:05:31,540 --> 00:05:35,620
+Ancak yepyeni iseniz ve yol ortam değişkeninize ne ekleyeceğinizi
+
+91
+00:05:36,190 --> 00:05:40,810
+bilmiyorsanız, o zaman kesinlikle devam edin ve tavsiye edilmese bile bunu seçin.
+
+92
+00:05:40,810 --> 00:05:42,660
+Devam et ve iki kutuyu da işaretleyin.
+
+93
+00:05:42,760 --> 00:05:47,000
+Bu, komut satırında çok faydalı olan sanal ortamlar oluşturmama izin verecek.
+
+94
+00:05:47,050 --> 00:05:50,190
+Öyleyse bir kez bunu yaptıktan sonra devam et ve yükle seçeneğini seçin.
+
+95
+00:05:50,250 --> 00:05:50,850
+Tamam.
+
+96
+00:05:50,950 --> 00:05:55,900
+Şimdi bu yükleme işlemini tamamladıktan sonra, bilgisayarımızdaki anaconda Navigator'ı
+
+97
+00:05:55,900 --> 00:05:56,770
+arayabiliriz.
+
+98
+00:05:56,860 --> 00:06:01,510
+Bilgisayarınızda Anaconda'yı arıyorsanız, birkaç seçenek göreceksiniz.
+
+99
+00:06:01,510 --> 00:06:05,480
+Bunlardan biri anaconda istemi, diğeri ise anaconda gezginidir.
+
+100
+00:06:05,530 --> 00:06:12,590
+Devam edin ve anaconda gezgini açtıktan sonra anaconda gezgini açtıktan sonra bir
+
+101
+00:06:12,590 --> 00:06:18,480
+sürü uygulama ortaya çıkması gerektiğini görmeniz gerekir ve bu aslında
+
+102
+00:06:18,510 --> 00:06:23,510
+geliştirme ortamlarınızı açmanın gerçekten elverişli bir yoludur.
+
+103
+00:06:23,510 --> 00:06:24,340
+dahil.
+
+104
+00:06:24,380 --> 00:06:29,800
+Jüpiter kuzu Jüpiter dizüstü örümcek Kuti konsolu ve daha fazlası ile birlikte geliyor.
+
+105
+00:06:29,840 --> 00:06:33,380
+Bu kursta kullanacağımız kişi Jüpiter not defteri.
+
+106
+00:06:33,380 --> 00:06:37,880
+Gerçekten benzer görünen bir Jüpiter lambası olduğunu unutmayın, ancak aslında bir Jüpiter dizüstü bilgisayar kullanacağız
+
+107
+00:06:38,210 --> 00:06:42,530
+ve seçtiğim herhangi bir geliştirme ortamını kullanmakta özgür olduğunuzu söylemeye devam edeceğim, ancak Jüpiter
+
+108
+00:06:42,530 --> 00:06:43,470
+dizüstü bilgisayarı kullanacağız.
+
+109
+00:06:43,550 --> 00:06:49,590
+Yani yapmak istediğimiz şey devam edip Jupiter notebook'u başlatmak. Buradan başlatmak için buraya
+
+110
+00:06:49,590 --> 00:06:53,490
+tıklayın. Sonra ne olacak, bir tarayıcı penceresi açılmalı
+
+111
+00:06:53,490 --> 00:06:58,450
+Ve burada Jupiter notebook'un tarayıcınızda otomatik olarak açıldığını görüyoruz.
+
+112
+00:06:58,470 --> 00:07:04,020
+Şimdi, varsayılan tarayıcınız olarak Google Chrome'unuz yoksa, kullanmanızı tavsiye ederim, çünkü bu genellikle
+
+113
+00:07:04,020 --> 00:07:06,860
+Jüpiter’de en iyi sonuç veren şeydir.
+
+114
+00:07:06,930 --> 00:07:11,190
+Internet Explorer gibi eski bir tarayıcı kullanmayın Microsoft Edge iyi olmalı.
+
+115
+00:07:11,190 --> 00:07:14,240
+Ancak Internet Explorer artık Microsoft tarafından bile desteklenmiyor.
+
+116
+00:07:14,310 --> 00:07:18,990
+Bu yüzden Jüpiter için Google Chrome'u kullanmanızı şiddetle tavsiye ederim.
+
+117
+00:07:18,990 --> 00:07:23,010
+Ayrıca teknik olarak hepsi iyi çalışması gereken Firefox Mozilla gibi şeyleri de kullanabilirsiniz.
+
+118
+00:07:23,570 --> 00:07:24,120
+TAMAM.
+
+119
+00:07:24,330 --> 00:07:28,710
+Bu nedenle, Jüpiter'in tarayıcınızda açıklığa kavuşturmak istediğim bir şey açtığını, Jüpiter'in çalışabilmesi
+
+120
+00:07:28,710 --> 00:07:31,560
+için İnternete bağlı olmanız gerekmediğini fark ettiniz.
+
+121
+00:07:31,620 --> 00:07:35,620
+Sadece tarayıcınızı grafik arayüz penceresi olarak kullanıyor.
+
+122
+00:07:35,640 --> 00:07:37,930
+Burada aslında internete bağlanmadı.
+
+123
+00:07:37,950 --> 00:07:42,090
+Böylece, temelde bilgisayarımdaki tüm klasörleri gördüğümü fark edeceksiniz.
+
+124
+00:07:42,090 --> 00:07:45,300
+Masaüstü klasörlerimi belgelerimi ve indirdiklerimi görebilirim.
+
+125
+00:07:45,300 --> 00:07:51,570
+Yani yapmak istediğim, bu kurs için gelen notebookların zip dosyalarını indirmek ve sonra
+
+126
+00:07:51,690 --> 00:07:53,400
+Jüpiter aracılığıyla erişmek.
+
+127
+00:07:53,400 --> 00:07:55,900
+Öyleyse devam edip bu zip dosyasını indirelim.
+
+128
+00:07:56,180 --> 00:08:01,800
+Tamam, eğer asıl ders içeriği sayfasına giderseniz, müfredatın düzenlendiğini göreceksiniz ve bu
+
+129
+00:08:01,800 --> 00:08:07,800
+dersi indirebileceğiniz bir zip dosyası varsa, üçüncü ders dersine giriş bölümünün altındaki bölümden
+
+130
+00:08:07,800 --> 00:08:09,420
+fark etmeniz gerekir.
+
+131
+00:08:09,870 --> 00:08:15,000
+Ve o dersi okurken küçük bir kaynak makalesi görmüş olmalısınız, orada indirilecek bir
+
+132
+00:08:15,030 --> 00:08:17,130
+kaynak olduğuna işaret ediyordu.
+
+133
+00:08:17,130 --> 00:08:20,010
+Şimdi bir ders videosu izliyorsanız aklınızda bulundurun.
+
+134
+00:08:20,010 --> 00:08:25,700
+Mesela ben burada temel olarak giriş ortamlarımızı görüntülüyorum, sol üst kısımda buraya tıklarsanız
+
+135
+00:08:25,740 --> 00:08:27,610
+bir kurulum dersi kurduk.
+
+136
+00:08:27,630 --> 00:08:32,760
+Ayrıca kaynakların indirilebileceğinin bir göstergesi olmalı ve daha sonra kurs içeriğini görebilir ve
+
+137
+00:08:32,880 --> 00:08:36,310
+bu zip dosyasına tıklayabilir ve zip dosyasını indirir.
+
+138
+00:08:36,360 --> 00:08:42,060
+Öyleyse devam edin ve zip dosyasını ya mazeretten indirin, hem de Jupiter not dersi de dahil
+
+139
+00:08:42,060 --> 00:08:46,320
+olmak üzere kaçırmış olmanız durumunda bir kaç derse zip dosyası yerleştirdim.
+
+140
+00:08:46,320 --> 00:08:48,870
+İndirmek için orada sadece aynı zip dosyası var.
+
+141
+00:08:48,870 --> 00:08:53,310
+Ve devam edin ve indirin ve nereden indirdiğinizi hatırlayın ve bu dosyayı açın.
+
+142
+00:08:53,310 --> 00:08:57,330
+Yani şimdi sürümüm indirme klasörümün altında, bu yüzden onu açacağım.
+
+143
+00:08:57,660 --> 00:08:57,900
+Tamam.
+
+144
+00:08:57,960 --> 00:09:01,560
+Yani indirme klasörümün altında devam edeceğim ve bunu çözeceğim
+
+145
+00:09:01,560 --> 00:09:07,020
+Tümünü çıkarmayı görebilmeli veya RA veya yedi zip gibi bir program programını indirebilirsiniz.
+
+146
+00:09:07,020 --> 00:09:12,000
+Devam edin ve gerçekten klasörler için kullanılan tipik yöntem ne olursa olsun yapın.
+
+147
+00:09:12,030 --> 00:09:16,070
+Devam edin ve Windows ve Mac OS'de varsayılan bir işlem yapın.
+
+148
+00:09:16,110 --> 00:09:19,230
+Öyleyse devam edin ya da her şeyi çıkarın ve açın.
+
+149
+00:09:20,240 --> 00:09:25,490
+Bu fermuarın açılmasına izin verin ve sonra bir fermuar açıldığında burada bir klasör görmelisiniz ve refactor yazan bir
+
+150
+00:09:25,490 --> 00:09:26,240
+şey göreceksiniz.
+
+151
+00:09:26,240 --> 00:09:31,910
+Devam edin ve üzerine tıklayın; kursta olmaları için düzenlenmiş tüm ders notlarını
+
+152
+00:09:31,910 --> 00:09:32,500
+göreceksiniz.
+
+153
+00:09:32,540 --> 00:09:38,000
+Ve eğer bunlara çift tıklarsanız, I adında bir sürü dosya göreceksiniz. P. y ve dosya ol.
+
+154
+00:09:38,000 --> 00:09:42,170
+Şimdi bu dosyalar hakkındaki şey, üzerlerine çift tıklayıp doğrudan açmak istediğinizde.
+
+155
+00:09:42,170 --> 00:09:46,590
+Bu aslında doğrudan Jüpiter dizüstü bilgisayar sistemiyle açılmak için işe yaramaz.
+
+156
+00:09:46,610 --> 00:09:51,650
+Artık unzip dosyamızın indirmelerin altında olduğunu biliyoruz, Jupiter notebook'umuzun bulunduğu tarayıcıya
+
+157
+00:09:51,650 --> 00:09:55,110
+geri dönüp dosyaları bu şekilde açacağız.
+
+158
+00:09:55,130 --> 00:09:57,020
+Öyleyse devam edeyim ve buna geri döneyim.
+
+159
+00:09:57,020 --> 00:09:59,730
+Yani burada Jüpiter defterine geri döndüm.
+
+160
+00:09:59,750 --> 00:10:07,080
+Devam edin ve İndirilenler klasörünüzü bulun, sonra Pi klasörünü bulun SNL bootcamp master'ı yeniden yönlendiriciye götürün, sonra
+
+161
+00:10:07,080 --> 00:10:12,410
+tüm dosyaları burada göreceksiniz ve oraya gideceğimiz ilk dosyaları, sırasıyla sırasıyla Python
+
+162
+00:10:12,420 --> 00:10:17,580
+kazası Elbette ve sonra bu defterler basitçe üzerlerine tıklayın ve sonra yükleme
+
+163
+00:10:17,580 --> 00:10:20,500
+bittikten sonra tüm bilgileri burada görebilirsiniz.
+
+164
+00:10:20,730 --> 00:10:25,020
+Daha sonra Jüpiter dizüstü bilgisayarlarını gerçekte nasıl çalıştırabileceğiniz hakkında daha fazla ayrıntıdan bahsedeceğiz.
+
+165
+00:10:25,020 --> 00:10:31,080
+Daha önce bu kursu çekerken bu gibi sayısal bir şekilde organize
+
+166
+00:10:31,080 --> 00:10:32,350
+etmediğimizi unutmayın.
+
+167
+00:10:32,550 --> 00:10:38,520
+Sadece genel konuya göre düzenledik ama şimdi asıl defterleri ve klasörleri yeniden düzenledik ve yeniden düzenledik,
+
+168
+00:10:38,550 --> 00:10:40,280
+böylece çok daha net.
+
+169
+00:10:40,290 --> 00:10:43,620
+Önce bir sonra iki, sonra üç ve dört sonra beş vb.
+
+170
+00:10:44,080 --> 00:10:44,760
+TAMAM.
+
+171
+00:10:44,850 --> 00:10:46,770
+Yani temelde kurulumumuz için bu.
+
+172
+00:10:46,890 --> 00:10:52,360
+Artık Jupiter notebook'u çalıştırabilmelisiniz ve Anaconda'yı kurup notları indirip
+
+173
+00:10:52,370 --> 00:10:54,060
+takip etmelisiniz.
+
+174
+00:10:54,060 --> 00:10:59,070
+Bir video ile birlikte takip etmeye çalışırken bir hata ile karşılaşırsanız,
+
+175
+00:10:59,160 --> 00:11:03,480
+öncelikle egzersizler için özellikle bizim dizüstü bilgisayarlarımızı çalıştırmayı deneyin.
+
+176
+00:11:03,480 --> 00:11:07,830
+Basit bir yazım hatası yapmak için çoğu zaman kolay olan bu yüzden, bu tür herhangi bir sorunu çözmenize
+
+177
+00:11:07,830 --> 00:11:11,100
+yardımcı olmak için her bir video dersiyle birlikte gelen dizüstü bilgisayarları sağlıyoruz.
+
+178
+00:11:11,280 --> 00:11:11,910
+Tamam.
+
+179
+00:11:11,970 --> 00:11:13,890
+Herkese teşekkürler ve bir sonraki derste görüşürüz.

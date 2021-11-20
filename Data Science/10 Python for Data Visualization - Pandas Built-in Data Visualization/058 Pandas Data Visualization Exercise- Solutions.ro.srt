@@ -1,0 +1,487 @@
+1
+00:00:05,190 --> 00:00:10,770
+Bună ziua tuturor și binevenit în starea Panthers de exerciții de exerciții de vizualizare lectură această prelegere.
+
+2
+00:00:10,830 --> 00:00:13,630
+Vom trece peste soluțiile pentru pandantele vieții.
+
+3
+00:00:13,680 --> 00:00:15,220
+Exersați întrebări.
+
+4
+00:00:15,240 --> 00:00:18,050
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+5
+00:00:18,050 --> 00:00:19,810
+Bine aici, sunt la notebook.
+
+6
+00:00:19,830 --> 00:00:27,330
+Am de gând să merg și să executați primele câteva celule de cod pentru a citi fișierul D3 CACP a configurat toate
+
+7
+00:00:27,330 --> 00:00:29,500
+importurile corect și a verifica capul.
+
+8
+00:00:29,880 --> 00:00:30,170
+In regula.
+
+9
+00:00:30,180 --> 00:00:34,790
+Următorul lucru pe care am vrut să-l fac este să recreeze un scatterplot de B versus a.
+
+10
+00:00:34,830 --> 00:00:36,380
+Deci, doar cele două coloane.
+
+11
+00:00:36,720 --> 00:00:46,770
+Sa mergem mai departe si sa facem asta spunandu-ne ca gandurile D-3 se intinse si apoi sa intru si sa precizez ca vreau pe
+
+12
+00:00:47,010 --> 00:00:52,970
+axa mea X coloana A si pe axa mea y vreau coloana B.
+
+13
+00:00:53,210 --> 00:00:55,810
+Să vedem cum arată asta.
+
+14
+00:00:56,370 --> 00:00:58,700
+Și aceasta ar trebui să fie EF 3.
+
+15
+00:00:58,700 --> 00:00:59,610
+Vom merge acolo.
+
+16
+00:00:59,610 --> 00:01:03,220
+Așa că am un complot asemănător, cu excepția a ceva de știut a fost.
+
+17
+00:01:03,330 --> 00:01:07,410
+Vezi dacă poți să-ți dai seama cum să-l întinzi într-o manieră similară cu acest complot.
+
+18
+00:01:07,410 --> 00:01:13,680
+Și, pe măsură ce ne-am îndreptat în cadrul conferinței, puteți să parcurgeți dimensiunea figurilor direct în acest argument
+
+19
+00:01:13,710 --> 00:01:14,680
+ca parametru.
+
+20
+00:01:15,030 --> 00:01:16,950
+Și o putem întinde.
+
+21
+00:01:17,000 --> 00:01:23,030
+Un alt lucru pe care trebuie să-l observăm este că dimensiunea acestor puncte este puțin mai mare.
+
+22
+00:01:23,040 --> 00:01:28,090
+Deci, puteți să specificați acest lucru așa cum am văzut în cursul fie printr-o altă coloană, fie doar
+
+23
+00:01:28,090 --> 00:01:29,540
+trecând în S pentru mărime.
+
+24
+00:01:29,850 --> 00:01:33,220
+Și voi specifica dimensiunea de 50.
+
+25
+00:01:33,230 --> 00:01:38,970
+Aici avem puncte mai puțin mari, iar pentru culoarea în care am văzut, am văzut în prelegere modul în care
+
+26
+00:01:38,970 --> 00:01:40,800
+putem specifica culoarea printr-o altă coloană.
+
+27
+00:01:40,800 --> 00:01:45,810
+Dar, de asemenea, poți să transmiți un șir cât ai putea pentru complotul hartă și acum avem o recreere a
+
+28
+00:01:45,900 --> 00:01:46,680
+acelui complot.
+
+29
+00:01:46,680 --> 00:01:48,170
+Exact.
+
+30
+00:01:48,180 --> 00:01:48,850
+O.K.
+
+31
+00:01:48,930 --> 00:01:54,060
+Principalul lucru pe care vroiam să-l scoateți din această întrebare specială a fost doar pasul de complot care
+
+32
+00:01:54,360 --> 00:01:56,940
+împrăștie un Versus fi atât de x și y.
+
+33
+00:01:57,000 --> 00:01:57,840
+Nu vă faceți griji prea mult.
+
+34
+00:01:57,840 --> 00:02:03,260
+Dacă ați reușit să obțineți mărimea sau dimensiunea de colorare, sperăm că veți reuși să obțineți acest lucru.
+
+35
+00:02:04,110 --> 00:02:08,150
+OK merge acum vreau să creez o histogramă a coloanei A.
+
+36
+00:02:08,150 --> 00:02:09,880
+Acest lucru este de fapt destul de simplu.
+
+37
+00:02:09,920 --> 00:02:21,350
+Doar apelați coloana în sine și apoi spuneți fie doar pentru a vedea histograma, fie puteți spune și parcela de puncte șuierate
+
+38
+00:02:21,380 --> 00:02:24,560
+și toate returnează aceeași histogramă.
+
+39
+00:02:24,840 --> 00:02:26,470
+Și acesta este numărul implicit de containere.
+
+40
+00:02:26,490 --> 00:02:30,890
+Dar, de asemenea, puteți trece într-un argument dacă doriți mai mult Beenz.
+
+41
+00:02:31,020 --> 00:02:36,990
+În regulă, următoarea problemă a fost că aceste parcele sunt OK, dar ele nu par foarte lustruite și instrucțiunile au spus că folosesc
+
+42
+00:02:36,990 --> 00:02:42,720
+foi de stil pentru a seta stilul la complotul GG și pentru a repeta histograma de sus și, de asemenea, dau seama
+
+43
+00:02:42,720 --> 00:02:44,630
+cum să adăugați mai multe biți .
+
+44
+00:02:44,640 --> 00:02:50,690
+Acesta este un subiect pe care de fapt nu am acoperit-o în cursul video, dar este acoperit în carnetul de notă, așa că
+
+45
+00:02:51,000 --> 00:02:56,250
+sperăm că avea fie două căi pe care le verificați din nou notebook-ul pentru a afla ce foi de stil
+
+46
+00:02:56,250 --> 00:02:59,430
+se referă sau căutați pe hartă Google map Cutlip stylesheets .
+
+47
+00:02:59,460 --> 00:03:04,770
+Dacă nu ați putea fi postat de asemenea pe forumul Q și A pentru a ajunge la ceea ce am făcut referire acolo.
+
+48
+00:03:04,830 --> 00:03:10,320
+Dacă mergeți mai departe și verificați prelegerea de cărți pentru panda construite în vizualizarea datelor, există o secțiune de foi de stil
+
+49
+00:03:10,320 --> 00:03:15,240
+și acest lucru este un fel de a vă face să aveți chef de încercare de a descoperi aspecte
+
+50
+00:03:15,240 --> 00:03:16,230
+pe cont propriu.
+
+51
+00:03:16,270 --> 00:03:20,590
+Aici puteți vedea că harta Cutlip are o foaie de stil și există o mică legătură de referință acolo.
+
+52
+00:03:20,680 --> 00:03:24,330
+Și dacă veți căuta în Google, probabil că v-ați fi dus la această pagină.
+
+53
+00:03:24,330 --> 00:03:30,150
+Și aceasta este galeria și există o secțiune de foi în galerie și premisa de bază sau ideea
+
+54
+00:03:30,150 --> 00:03:32,290
+este că poți folosi acest stil.
+
+55
+00:03:32,310 --> 00:03:39,030
+Utilizați să treceți orice șir de stil și acesta va schimba automat estetica unui anumit stil care arată
+
+56
+00:03:39,920 --> 00:03:40,710
+astfel.
+
+57
+00:03:40,710 --> 00:03:44,510
+Voi spuneți stilul de coajă T-Dog care utilizează complotul G-G.
+
+58
+00:03:44,580 --> 00:03:47,910
+Așa că am să copiez această linie de cod.
+
+59
+00:03:48,510 --> 00:03:52,130
+Vino aici și lipeste-o.
+
+60
+00:03:52,260 --> 00:03:57,330
+Și acum, de când a fost rulat, veți observa că dacă vom merge și vom
+
+61
+00:03:57,330 --> 00:04:03,240
+copia și lipi linia exactă a codului aici și vom lipi aici, vom obține o complot mult mai bine.
+
+62
+00:04:03,480 --> 00:04:07,310
+Și veți observa, de asemenea, că aici acest roșu este puțin mai vizibil.
+
+63
+00:04:07,380 --> 00:04:13,140
+Deci, puteți, de asemenea, să aliniați Alpha pentru ao face puțin mai transparentă.
+
+64
+00:04:13,230 --> 00:04:17,190
+Și aici puteți începe să începeți să potriviți aceste histograme împreună.
+
+65
+00:04:17,310 --> 00:04:21,810
+Sperăm că nu a fost prea dificilă pentru dvs., dar există acel aspect de descoperire a lucrurilor pe
+
+66
+00:04:21,810 --> 00:04:26,490
+cont propriu, care este probabil cea mai importantă parte a științei datelor despre învățare și a programării de învățare.
+
+67
+00:04:26,850 --> 00:04:32,280
+Abilitatea de a căuta un răspuns pe cont propriu fără a fi dat contextul complet al informațiilor, cu toate acestea, puteți
+
+68
+00:04:32,820 --> 00:04:37,620
+oricând să vă simțiți liberi să postați pe forumurile Q &amp; A dacă vă confundă vreodată ceva.
+
+69
+00:04:37,620 --> 00:04:43,800
+Bine, să mergem mai departe și să mergem la casetele pe care am vrut să le creăm pentru o cutie de
+
+70
+00:04:43,830 --> 00:04:45,730
+complot comparând coloanele A și B.
+
+71
+00:04:45,840 --> 00:04:51,520
+Aruncăm o privire la ceea ce facem să aruncăm o privire asupra cadrului de date propriu-zis.
+
+72
+00:04:52,190 --> 00:04:58,630
+Observați că avem o coloană b c și d, așa că nu vreau să fac o cutie complotă toate coloanele pe care vreau doar un B.
+
+73
+00:04:59,160 --> 00:05:04,800
+Deci, de fapt, am să apuc coloanele trecând printr-o listă cu numele coloanelor A
+
+74
+00:05:05,280 --> 00:05:09,550
+și B și apoi pot apela caseta de complot.
+
+75
+00:05:09,720 --> 00:05:13,110
+Creați un câmp de box care arată la fel ca acesta.
+
+76
+00:05:13,140 --> 00:05:13,580
+O.K.
+
+77
+00:05:13,800 --> 00:05:17,100
+În continuare vreau să creez un grafic kd al coloanei D.
+
+78
+00:05:17,290 --> 00:05:19,080
+De fapt, este destul de simplă.
+
+79
+00:05:19,080 --> 00:05:26,700
+Trebuie doar să treci în coloana D spunând complot și apoi să spui Katie și ei vor întoarce acest complot.
+
+80
+00:05:27,030 --> 00:05:31,140
+Și apoi, în sfârșit, avem un sunet aici pentru a ne da seama cum să creștem
+
+81
+00:05:31,140 --> 00:05:36,240
+linia cu linia și să facem linia de stil și nu ar trebui de obicei să nu Daschle K linia de plot.
+
+82
+00:05:36,320 --> 00:05:36,770
+In regula.
+
+83
+00:05:36,930 --> 00:05:46,230
+Deci, modul în care puteți face acest lucru este, de fapt, doar să ia același complot KDE sau densitate și apoi puteți merge mai
+
+84
+00:05:46,230 --> 00:05:53,540
+departe și argumente passen de la acest complot lib, cum ar fi linia de stil și linia cu.
+
+85
+00:05:53,550 --> 00:05:54,840
+Și aici avem același complot.
+
+86
+00:05:54,900 --> 00:05:59,310
+Și puteți face acest lucru și cu densitate dacă doriți.
+
+87
+00:05:59,310 --> 00:06:04,620
+Aceasta este aceeași comandă pe care dorim să o creăm pentru o zonă de complot a tuturor coloanelor doar
+
+88
+00:06:04,620 --> 00:06:08,750
+pentru camerele de până la 30 și apoi a spus că Hintz folosește x.
+
+89
+00:06:08,760 --> 00:06:17,320
+Deci, sperăm că puteți descoperi prin apelarea lui X D-3 I X puteți vedea că aceasta este o proprietate și este în primul rând
+
+90
+00:06:17,320 --> 00:06:21,930
+o locație de etichetă bazată pe indexer cu întrerupere a poziției întregului.
+
+91
+00:06:21,930 --> 00:06:24,970
+Deci, ceea ce putem face este de fapt doar să folosim acest lucru pentru felierea.
+
+92
+00:06:25,320 --> 00:06:30,660
+Și din nou este un fel de lucru pe care vreau să-l descoperiți pe măsură ce mergeți pe cont propriu, astfel încât
+
+93
+00:06:30,660 --> 00:06:37,610
+să puteți trece de la zero până la 30 de aici și acest lucru va reveni doar la primele 30 de rânduri sau orice fel de felie de notație doriți.
+
+94
+00:06:38,070 --> 00:06:43,570
+Și după aceea puteți să apelați pe teren și veți obține un complot care arată astfel.
+
+95
+00:06:43,610 --> 00:06:49,890
+Și dacă vroiai să Se pare că parcela de dedesubt ai putea pune într-adevăr o valoare alfa acolo.
+
+96
+00:06:49,950 --> 00:06:54,960
+Bineînțeles că există o provocare de bonus și rețineți că puteți găsi soluțiile de referință cu
+
+97
+00:06:54,960 --> 00:07:01,200
+adevărat dificile pe care nu le puteți da seama, dar observați cum apare legenda care se suprapune de fapt unei anumite diagrame.
+
+98
+00:07:01,260 --> 00:07:06,030
+De obicei, aceștia nu ar vrea asta și vreau să vă dați seama cum puteți afișa
+
+99
+00:07:06,030 --> 00:07:12,150
+legenda afară din scenariu, așa cum este arătat mai jos, aici și din nou pe tema încercării de a descoperi lucrurile pe
+
+100
+00:07:12,180 --> 00:07:12,860
+cont propriu.
+
+101
+00:07:12,900 --> 00:07:18,420
+Vreau să vă încercați să căutați în Google o legătură bună de suprapunere a stivei și dacă ați putea găsi acest lucru
+
+102
+00:07:18,420 --> 00:07:22,070
+pe cont propriu, a existat o legătură într-o întrebare cu privire la depășirea stivei.
+
+103
+00:07:22,080 --> 00:07:28,020
+Deci, dacă aruncăm o privire la acest link pe suprapunerea stivei, cineva ne întreabă cum să punem legenda în
+
+104
+00:07:28,020 --> 00:07:34,350
+afara terenului cu pandas și dacă vom parcurge o privire și vom privi la asta veți observa că cineva răspunde
+
+105
+00:07:34,350 --> 00:07:39,930
+corect la această întrebare și au spus chiar aici că Piel nu a găsit centrul legendei de locație
+
+106
+00:07:39,930 --> 00:07:42,470
+și apoi această cutie pentru a ancora.
+
+107
+00:07:42,510 --> 00:07:43,700
+Asta e cheia aici.
+
+108
+00:07:43,730 --> 00:07:51,240
+Și de fapt, copiați acest cod și lipiți-l aici și apoi luați celălalt cod al acestui complot din zonă și
+
+109
+00:07:54,150 --> 00:07:59,850
+lipiți-l aici și apoi când vrem să faceți este să creați o figură pentru ca
+
+110
+00:08:03,060 --> 00:08:07,310
+toți să fie chemați și apoi să spună pubertatea care arată.
+
+111
+00:08:07,920 --> 00:08:12,180
+Și asta va crea o figură cu legenda afară.
+
+112
+00:08:12,420 --> 00:08:18,370
+Acest lucru ar funcționa, de asemenea, dacă eliminați de fapt prima linie și ultima linie din notebook-ul Jupiter.
+
+113
+00:08:18,420 --> 00:08:24,480
+În alte situații, cum ar fi alte erori de identificare, este posibil să găsiți cifra și să arătați cifra.
+
+114
+00:08:24,690 --> 00:08:28,920
+Dar din moment ce folosim doar Jupiter, un notebook poate rula aceste două linii și va
+
+115
+00:08:28,950 --> 00:08:31,480
+elimina legenda și o va pune în exterior.
+
+116
+00:08:31,500 --> 00:08:35,850
+Ideea de bază aici este, sperăm, că puteți descoperi singură cum să apucați aceste linii de
+
+117
+00:08:35,850 --> 00:08:38,170
+cod și să le puneți în propriul cod.
+
+118
+00:08:38,220 --> 00:08:42,900
+Și, de fapt, este un lucru foarte obișnuit de făcut este să verificați suprapunerile de stive vedeți ce linii de
+
+119
+00:08:42,900 --> 00:08:46,000
+cod sunt relevante pentru dvs. și apoi le potriviți în propria dvs. lucrare.
+
+120
+00:08:46,500 --> 00:08:47,910
+Bine, asta e.
+
+121
+00:08:47,910 --> 00:08:51,430
+O slujbă bună și toată lumea și te voi vedea la următoarea conferință.
+
+122
+00:08:51,450 --> 00:08:55,460
+Simțiți-vă liber să postați forumurile Q &amp; A dacă ceva a fost confuz aici pentru dvs.

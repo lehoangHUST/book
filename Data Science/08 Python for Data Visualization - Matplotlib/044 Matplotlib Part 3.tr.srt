@@ -1,0 +1,663 @@
+1
+00:00:05,430 --> 00:00:10,000
+Herkese merhaba ve harita çizelgesi lib ders serisinin 3. Bölümüne hoş geldiniz.
+
+2
+00:00:10,260 --> 00:00:15,780
+Bu son bölümde, renk türlerini çizgi türleri ile ayarlamak ve
+
+3
+00:00:15,780 --> 00:00:19,380
+gerçekten kiralanan arsa seçeneklerini özelleştirmek hakkında konuşacağız.
+
+4
+00:00:19,380 --> 00:00:23,070
+Başlamak için Chippering dizüstü bilgisayarına atlayalım.
+
+5
+00:00:23,100 --> 00:00:25,690
+Tamam, burada Jüpiter defterindeyiz.
+
+6
+00:00:25,950 --> 00:00:30,060
+Devam edin ve canlı bu çizgiyle renk ayarlama hakkında konuşalım.
+
+7
+00:00:30,400 --> 00:00:39,600
+Öyleyse devam edip sadece incirin VLT rakamına eşit olduğunu söyleyeceğim ve sonra da gidip Access'in Şekil
+
+8
+00:00:39,600 --> 00:00:43,720
+x'inin Şekle eşit olduğuna bir küme ekleyeceğim.
+
+9
+00:00:43,800 --> 00:00:54,140
+Altçizgi eksenleri ekleyin ve ben bunu 0 0 1 1 olarak ayarlayacağım ve daha sonra eksenlerden bu tür şeyleri kaldırıp duracağım
+
+10
+00:00:54,180 --> 00:00:57,610
+X arsa dur ve X, Y olsun.
+
+11
+00:00:57,840 --> 00:01:01,200
+Ve bu, birlikte çalıştığımız aynı x ve y'ye bir referans.
+
+12
+00:01:01,200 --> 00:01:04,490
+Öyleyse içeri gidip, buna benzeyen bir şey bulmamı istersem.
+
+13
+00:01:04,500 --> 00:01:12,480
+Şimdi, renk parametresini koyarak çizginin bu rengini düzenleyebilirim ve renk premi¨re, aslında mavi gibi
+
+14
+00:01:12,480 --> 00:01:20,230
+ortak renk dizeleri gibi argümanlarda alabileceği birden fazla argüman alabilir veya turuncuya koyup da
+
+15
+00:01:20,260 --> 00:01:27,790
+turuncu koyabilir veya turuncu bir çizgi veya yeşil ve yeşil bir çizgi elde edin.
+
+16
+00:01:27,810 --> 00:01:29,260
+Bu yüzden çok temel renk isimleri.
+
+17
+00:01:29,280 --> 00:01:33,440
+Daha detaylı başlamaya başlamak istiyorsanız aslında bir dize dışında olabilir.
+
+18
+00:01:33,450 --> 00:01:39,550
+Gerçekten RGV onaltılık kodlarını yazabilir, böylece karma etiketi koyabilir ve daha sonra bazı RG hex
+
+19
+00:01:39,850 --> 00:01:45,420
+koda girebilir, Gaudens bunları dizüstü bilgisayardan kopyalar f f 8 C 0 0.
+
+20
+00:01:45,690 --> 00:01:47,260
+Kahretsin.
+
+21
+00:01:47,730 --> 00:01:49,600
+Ve bu sizi daha özel renkte buluyor.
+
+22
+00:01:49,890 --> 00:01:58,890
+Böylece devam edebilir ve RSGB X kod üreticisi veya Creator için google arama yapabilir ve özgürce çevrimiçi olarak bol
+
+23
+00:01:58,890 --> 00:02:00,920
+miktarda araç bulundurmanız gerekir.
+
+24
+00:02:00,920 --> 00:02:06,510
+renkler için çok özel bir renk yapmak istiyorsanız, mor gibi Crayola renkleri gibi.
+
+25
+00:02:06,510 --> 00:02:11,050
+Gerçekten bunlar, G-B onaltılık kodları ile geliyor; temel olarak, çok temel
+
+26
+00:02:11,100 --> 00:02:16,200
+Onları kolayca çizip sadece cümleyi geçirebilmelisin.
+
+27
+00:02:16,200 --> 00:02:18,660
+Tamam, renklerin temelleri bu.
+
+28
+00:02:18,660 --> 00:02:24,480
+Şimdi çizgiyi ile düzenlemek isterseniz çizgi ve çizgi stili hakkında konuşalım.
+
+29
+00:02:24,510 --> 00:02:31,410
+Aslında sadece argümanlarla aynı satıra geçebilir ve sadece bir sayı koyabilirsiniz.
+
+30
+00:02:31,410 --> 00:02:38,230
+Örneğin, esas olarak varsayılan satırı olan bir çizgiyi koyarsak, varsayılanı iki katına çıkarmak ve
+
+31
+00:02:38,230 --> 00:02:40,790
+ile satır söylemek 2'ye eşittir.
+
+32
+00:02:40,890 --> 00:02:43,830
+Ve bu, genişliği ikiye katlayarak bunu yapmaya devam edebiliyoruz.
+
+33
+00:02:43,830 --> 00:02:49,920
+E˘ger 20'ye eşit olan çok kalın bir çizgi istersem, varsayılan çizginin 20 katı kalınlıktır.
+
+34
+00:02:50,400 --> 00:02:55,680
+Ya da varsayılan kalınlık 0 gibi çok ince bir çizgi istiyorsanız. 5 daha incedir ve
+
+35
+00:02:55,680 --> 00:02:56,990
+inceltmeye başlayabilirsiniz.
+
+36
+00:02:57,010 --> 00:03:04,650
+Alfa argümanları çizgi ve çizgi görünürlüğü açısından bir diğer çok kullanışlı ipucudur, bu yüzden devam
+
+37
+00:03:04,650 --> 00:03:12,150
+edin ve çizgiyi üç çizgiye eşit olarak ayarlayın ve satırın ne kadar şeffaf olmasını esasen
+
+38
+00:03:12,150 --> 00:03:15,560
+kontrol etmenizi sağlayan alfa bağımsız değişkenini belirtebilirsiniz.
+
+39
+00:03:15,570 --> 00:03:21,130
+Bu yüzden Alfa'nın 0'a eşit olduğunu söyleyebilirim. 5.
+
+40
+00:03:21,330 --> 00:03:26,020
+Ve şimdi bunu yaparsam, bu satırda biraz şeffaflığımız olduğunu görebilirim.
+
+41
+00:03:26,160 --> 00:03:33,050
+Dolayısıyla istediğiniz tam görünümü elde etmek için renk çizgisini bir alfa ile birleştirebilirsiniz.
+
+42
+00:03:33,060 --> 00:03:37,880
+Burada dikkat edilmesi gereken en son şey, kısa bir süre için tamamen eksiksiz olarak yazmak zorunda kalmazsınız.
+
+43
+00:03:38,280 --> 00:03:43,390
+LW yazabilirsiniz, ancak yine de işe yarayacaktır.
+
+44
+00:03:43,830 --> 00:03:44,580
+TAMAM.
+
+45
+00:03:44,580 --> 00:03:49,230
+Dolayısıyla, renk ve Alfa ile olan çizgiden bahsediyoruz ve alfa çağrısını kaldıracağım.
+
+46
+00:03:49,230 --> 00:03:56,700
+Şimdi çizgi stili hakkında konuşalım, böylece çizgi stili ve çizgi tarzı yazabilirim, epeyce seçenek var ve
+
+47
+00:03:56,700 --> 00:04:00,690
+not defterinizde temel olarak çizginin kesik çizgi veya noktalı
+
+48
+00:04:00,690 --> 00:04:03,270
+çizgi gibi stilini tanımladığı listeleniyorlar.
+
+49
+00:04:03,270 --> 00:04:10,230
+Örneğin, iki çizgi çizgiden oluşan bir kişi kesikli bir çizgi elde edersek ve bunu sadece bir dize olarak geçirirsem ya
+
+50
+00:04:10,710 --> 00:04:14,910
+da geçersem ve çizgi çizersem ve noktadan kesikli bir çizgi elde edersem.
+
+51
+00:04:14,910 --> 00:04:19,140
+Böylece noktalı çizgi çizgi noktalarını işaret eder ve daha sonra birkaç daha fazla seçenek sahası var.
+
+52
+00:04:19,200 --> 00:04:26,760
+Colon, bana bu küçük kesik çizgileri getirir ve diğer ders seçeneklerini görmek için bu ders için Jüpiter not
+
+53
+00:04:26,940 --> 00:04:28,350
+defterini kontrol edebilirsiniz.
+
+54
+00:04:28,350 --> 00:04:31,140
+Sonra adım atabilirsin saat.
+
+55
+00:04:31,200 --> 00:04:33,150
+Nadiren bunları kullanıyorum.
+
+56
+00:04:33,210 --> 00:04:39,440
+Çoğu zaman çizgi çizgi yaparım ya da sadece bir çizgi koyarsanız sadece düz bir çizgidir.
+
+57
+00:04:39,720 --> 00:04:40,360
+TAMAM.
+
+58
+00:04:40,590 --> 00:04:44,040
+Ve aynen sizinle olan çizgide olduğu gibi aslında satır stiline ihtiyaç duymazsınız.
+
+59
+00:04:44,160 --> 00:04:49,850
+Sen sadece ls koydum ve aynı şekilde çalışmaya sonunda olacak.
+
+60
+00:04:50,250 --> 00:04:50,890
+TAMAM.
+
+61
+00:04:50,910 --> 00:04:53,630
+Dolayısıyla çizgi ve çizgi stili hakkında konuştuk.
+
+62
+00:04:53,640 --> 00:04:55,390
+Şimdi işaretçiler hakkında konuşalım.
+
+63
+00:04:55,530 --> 00:04:59,380
+Dolayısıyla, birkaç veri noktasına sahip olduğunuzda işaretçiler kullanılacaktır.
+
+64
+00:04:59,400 --> 00:05:06,510
+atarsak, x'in yalnızca bir dizi ilerleme ve 11 puanın x uzunluğunu kontrol edebileceğini görebiliriz.
+
+65
+00:05:06,570 --> 00:05:10,510
+Örneğin, X'i, ne olduğunu hatırlatan bir göz
+
+66
+00:05:10,530 --> 00:05:14,940
+Aslında biz bu çizgide bu 11 puan oluştuğunu işaretlemek istedik diyelim.
+
+67
+00:05:15,270 --> 00:05:25,190
+Yeni bir argümanlar virgül olmalı ve sonra da bir dize geçirebileceğim için işaretçiyi belirtebilirim.
+
+68
+00:05:25,260 --> 00:05:28,310
+Dolayısıyla, olası işaret sembolleri çok ve not defterinizde listeleniyorlar.
+
+69
+00:05:28,320 --> 00:05:33,390
+Fakat ortak olanın en basit olanı bir dize olarak bu küçük O'dur.
+
+70
+00:05:33,390 --> 00:05:41,550
+Burada temelde X üzerindeki her noktayı işaretleyen bazı noktalar görmeye başlayabilir ve burada sizin
+
+71
+00:05:41,550 --> 00:05:45,110
+için geniş bir çeşitlilikte işaretleyici var.
+
+72
+00:05:45,150 --> 00:05:46,260
+Hepsi not defterinde listeleniyor.
+
+73
+00:05:46,260 --> 00:05:50,700
+Fakat burada size iyi gelemeyen artı işaretler gibi şeyler yapabilen bir çift
+
+74
+00:05:51,000 --> 00:05:54,760
+göstermek için Asterix sembolleri gibi Küçük Yıldız gibi şeyleri yapabilirsiniz.
+
+75
+00:05:54,870 --> 00:06:01,110
+Hatta bu işaretçileri burada dolaşıp geçireceğim birkaç ince çizgiyle geçebilirim,
+
+76
+00:06:01,110 --> 00:06:04,470
+böylece bu işaretleri burada görebilirsiniz.
+
+77
+00:06:04,960 --> 00:06:07,050
+Bu işaretleri daha büyük yapmak istedik.
+
+78
+00:06:07,200 --> 00:06:13,050
+Peki bu işaretçi boyutunun argümanlar olmadığını tahmin etmiş olabilirsiniz, bu yüzden ilerleyebilir ve işaretçi
+
+79
+00:06:13,060 --> 00:06:17,010
+boyutunu belirleyebilirsiniz ve aslında sadece bir tanesi çok küçük boyuttur.
+
+80
+00:06:17,010 --> 00:06:19,840
+Ve daha sonra biraz daha büyük yapmak istersen 10 diyebilirsin.
+
+81
+00:06:19,890 --> 00:06:22,310
+Ve burada, bu tür üçgenlerin formda olduğunu görmeye başlayabiliriz.
+
+82
+00:06:22,310 --> 00:06:29,280
+Öyleyse gidelim ve 20 yaşında sadece büyük işaretleyiciler söyleyelim ve sonra kulak 2 tipi işaretçileri belirtebiliriz.
+
+83
+00:06:29,700 --> 00:06:35,790
+Artı olarak söyleyebilirim ki bu artıları burada alıyoruz vb. bu nedenle tüm bu seçenekler dokümanlarda listelenmiştir.
+
+84
+00:06:36,000 --> 00:06:39,690
+Ve daha önemlisi, Jüpiter not defterinizde, işaretçi kodları için işaretçi
+
+85
+00:06:39,690 --> 00:06:42,940
+olarak geçirebileceğiniz pek çok farklı dizge türü olduğunu söylüyor.
+
+86
+00:06:44,520 --> 00:06:49,120
+Ve işaretçilerinizi özelleştirmek isterseniz, örneğin devam edin ve bunu küçük harfe
+
+87
+00:06:49,190 --> 00:06:54,150
+geri koyun Oh, bu noktaları buraya getirerek bu satırı bir çizgiyle değiştirelim.
+
+88
+00:06:54,300 --> 00:06:58,410
+İşaretleyicinin neye benzediğini belirtmek kadar, aslında pek çok seçenek var.
+
+89
+00:06:58,410 --> 00:07:03,690
+İşaretçi kenarının işaretleyici yüz rengini ve işaretçi kenar rengini belirtebilirsiniz.
+
+90
+00:07:03,690 --> 00:07:06,520
+Bu yüzden önce dışarı çıkıp bu argümanları ekleyin.
+
+91
+00:07:06,670 --> 00:07:09,910
+Yeni bir satır için virgül tuşuna basmanız yeterlidir.
+
+92
+00:07:10,110 --> 00:07:12,390
+Ve ben dışarı çıkıp Marka yüz rengini
+
+93
+00:07:15,710 --> 00:07:17,740
+söyleyeceğim ve işaretleyici yüz rengini belirtebilirsiniz.
+
+94
+00:07:17,760 --> 00:07:19,800
+Böylece o dairenin içindeki renk olacaklar.
+
+95
+00:07:19,800 --> 00:07:22,590
+Haydi gidip sarı yapalım ve bunu çalıştıralım.
+
+96
+00:07:22,830 --> 00:07:24,800
+Ve bu işaretleyici yüz rengini değiştirdi.
+
+97
+00:07:24,810 --> 00:07:32,700
+Diyelim ki ben gidip onu da düzenleyerek işaretleyici kenarı değiştirmek istiyorum.
+
+98
+00:07:32,700 --> 00:07:37,440
+Biraz daha kalın hale getiren üç gibi biraz daha kalın yapın ve gerçekte
+
+99
+00:07:37,440 --> 00:07:39,750
+işaretçi kenarının rengini belirtmek istediğinizi söyleyelim.
+
+100
+00:07:39,750 --> 00:07:43,640
+Bir işaretleyici kenar rengi belirleyebilirim.
+
+101
+00:07:43,640 --> 00:07:46,650
+Şimdi o yeşilin tadını çıkaralım.
+
+102
+00:07:46,650 --> 00:07:46,990
+Tamam.
+
+103
+00:07:47,010 --> 00:07:52,860
+birçok özelleştirme yeteneği görebilirsiniz ve ileride gidebileceğiniz ve bu ders için Jüpiter not defterine atlayacağınız
+
+104
+00:07:52,860 --> 00:07:56,520
+bir sürü örnek görmek istiyorsanız bir çok seçenek var.
+
+105
+00:07:56,520 --> 00:07:57,250
+Böylece burada
+
+106
+00:07:57,270 --> 00:07:59,460
+Şimdi devam edip bunu yapacağım.
+
+107
+00:07:59,640 --> 00:08:04,290
+Kesinti kavramları dersinde burada göreceksen devam et ve devam et.
+
+108
+00:08:04,350 --> 00:08:08,380
+Şu an kesit çizgisi işaretçisi ve çizgi ve işaretleyici stillerindeyiz.
+
+109
+00:08:08,700 --> 00:08:15,000
+Burada temel olarak alt figürler üzerinde ilk figür boyutunda altıncı tarafından söylenen ve bir sürü
+
+110
+00:08:15,000 --> 00:08:19,830
+parsel yapmış ve renkleri çizgi stilleri ile düzenleyen bir şekil var.
+
+111
+00:08:19,830 --> 00:08:23,130
+Ve burada bir sürü örnek var, böylece devam edip onları okuyabilirsiniz.
+
+112
+00:08:23,160 --> 00:08:28,020
+sembolleri arıyorsanız, hepsi burada yorum veya müttefik hücre türleri vb. Olarak bulunur.
+
+113
+00:08:28,020 --> 00:08:29,070
+Farklı olası işaretleyici Dolayısıyla, burada
+
+114
+00:08:29,100 --> 00:08:33,690
+kendi bilgilerinizi kopyalamak ve yapıştırmak için bir çok farklı örnek var.
+
+115
+00:08:33,690 --> 00:08:35,100
+Sonunda, erişim süresi ve arsa aralığı üzerindeki kontrol hakkında konuşalım.
+
+116
+00:08:35,160 --> 00:08:39,540
+Ve orijinal defterimize geri dönersek, devam
+
+117
+00:08:39,780 --> 00:08:46,860
+edebilir ve Y sınırını ve sınırını nasıl ayarlayabileceğimizi gösterebiliriz.
+
+118
+00:08:46,860 --> 00:08:48,410
+Bunu sadece çok basit bir arsa yapacağız.
+
+119
+00:08:48,480 --> 00:08:51,180
+Hadi devam edelim ve sadece bu satırı eşitleyelim ve yaşam biçimini bir çizgi çizgisine eşitleyelim.
+
+120
+00:08:51,190 --> 00:08:57,900
+Tamam harika.
+
+121
+00:08:58,560 --> 00:08:59,730
+Diyelim ki yalnızca x ekseni üzerinde 0 ile 1 arasındaki çizimi göstermek istedim.
+
+122
+00:08:59,730 --> 00:09:04,650
+Bunu yapmak için sadece net bir erişim yapın ve ardından
+
+123
+00:09:04,860 --> 00:09:13,920
+X Limiti altına X seti koyun ve daha sonra bir üst sınır olan bir alt sınırla bir listeden geçersiniz.
+
+124
+00:09:13,980 --> 00:09:15,830
+Böylece 0'dan 1'e geçeceğiz.
+
+125
+00:09:15,990 --> 00:09:18,750
+Ve burada alt sınırı x ekseninin bir üst sınırına ayarladığımızı görebiliriz.
+
+126
+00:09:19,440 --> 00:09:24,720
+Şimdi, limiti sadece ekseni temizleyen nedenler için de aynı şeyi yapalım ve daha sonra setleri söyleyelim, neden
+
+127
+00:09:24,720 --> 00:09:30,510
+Lim'i ve bir liste olarak bir üst sınır ve alt sınırları sıfır virgülden daha düşük olarak geçtiğinizin altını çizin.
+
+128
+00:09:30,570 --> 00:09:37,380
+Üst sınırı atalım.
+
+129
+00:09:37,380 --> 00:09:38,460
+Sadece 2'ye koy.
+
+130
+00:09:38,470 --> 00:09:41,380
+Şimdi bu planı görebiliriz.
+
+131
+00:09:41,390 --> 00:09:42,810
+Ve çizgiyi büyüttüğümüzde zum yaptıkça puanları
+
+132
+00:09:42,860 --> 00:09:47,790
+birbirine bağlayan düz çizgiler gibi giderek daha fazla görünüyor çünkü biz uzaklaştırdığımızda SR'nin yalnızca 11 puanı kadar ayrıntıya sahip değiliz.
+
+133
+00:09:48,090 --> 00:09:53,020
+Daha eğri bir çizgi görürüz ve bunu daha fazla veri noktası elde ederek veya uzaklaştırarak düzeltebilirsiniz.
+
+134
+00:09:53,040 --> 00:09:59,030
+Pekâlâ, sonunda Partlow'un konseptlerine gerçek hızlı bir şekilde geri
+
+135
+00:09:59,030 --> 00:10:04,590
+dönmeyi ve böyle özel arsa türlerinden bahsetmeyi istiyorum.
+
+136
+00:10:04,590 --> 00:10:06,490
+sayıda özel plot türü vardır.
+
+137
+00:10:06,510 --> 00:10:11,280
+Çubuk grafik histogramları ve scatterplot gibi MAP plot lib ile yapabileceğiniz birçok ve çok
+
+138
+00:10:11,550 --> 00:10:13,520
+Bu arsa tiplerinin çoğu aslında bu
+
+139
+00:10:13,560 --> 00:10:18,390
+tür istatistiksel çizim yöntemleri için daha uygun olan Seaborn adlı başka bir görselleştirme kütüphanesinde kullanılacaktı.
+
+140
+00:10:18,750 --> 00:10:21,960
+Ama sana hayatımda bunu yapabileceğini göstermek için.
+
+141
+00:10:22,080 --> 00:10:24,790
+Bu dağılım çizelgesini, canlı
+
+142
+00:10:25,020 --> 00:10:31,400
+çizimi veya kutu parselleri gibi şeyleri kullanarak histogramlar uygulayarak yapabilirsiniz.
+
+143
+00:10:31,400 --> 00:10:33,120
+İşte sizin için bazı örnekler.
+
+144
+00:10:33,120 --> 00:10:34,760
+fazla okumak için bir sürü bağlantı göreceksiniz.
+
+145
+00:10:35,100 --> 00:10:40,260
+Bu ders için Jüpiter defterinizin en alt kısmında, çizilen proje web sayfası ve bir bağlantı da dahil olmak üzere daha
+
+146
+00:10:40,260 --> 00:10:43,960
+Buraya kadar her yere geldik.
+
+147
+00:10:43,980 --> 00:10:47,440
+Bu Lorieau gerçekten güzel bir bağlantı.
+
+148
+00:10:47,790 --> 00:10:51,590
+Bu bir harita lib dersidir.
+
+149
+00:10:51,600 --> 00:10:53,740
+Umarım şimdi yaptığımız bu üç dersi izleyerek şimdi birazcık biliyorsundur.
+
+150
+00:10:53,880 --> 00:10:58,170
+Ancak bu bağlantı hakkında gerçekten sevdiğim şey, aslında yalnızca bir başvuru kodu olmasıdır.
+
+151
+00:10:58,300 --> 00:11:02,710
+Dolayısıyla, sizinle aynı renkleri değiştirmek isterseniz içeri girip bu bağlantıyı kontrol edin.
+
+152
+00:11:02,790 --> 00:11:05,910
+Rakamlara bakmanız yeterlidir ve size kene etiketlerinde kene nasıl ayarlanacağını söyleyecektir. Hareketli dikenler efsaneler ekliyor.
+
+153
+00:11:05,940 --> 00:11:10,040
+Bu noktaların birçoğu Aslında harita dizisi lib Dizüstü adlı bu ders serisi
+
+154
+00:11:10,170 --> 00:11:12,180
+için diğer not defterinde yer almaktadır.
+
+155
+00:11:12,180 --> 00:11:17,620
+Şimdilik bu gelişmiş konularda aslında bir video konferansımız olmayacak çünkü onları
+
+156
+00:11:17,630 --> 00:11:20,010
+ders boyunca çok sık kullanmayacağız.
+
+157
+00:11:20,550 --> 00:11:25,680
+Aslında çoğunlukla Seaborn'u ders boyunca kullanacağız.
+
+158
+00:11:25,680 --> 00:11:27,390
+TAMAM.
+
+159
+00:11:27,390 --> 00:11:30,650
+Sıradaki plansız egzersize hızlı bir genel bakış, ardından bu egzersizin çözümlerine genel bir
+
+160
+00:11:30,720 --> 00:11:31,440
+bakış açısı getiriyor.
+
+161
+00:11:31,620 --> 00:11:37,260
+Şimdilik bu özel arsa tiplerini bekleyin ve bekleyin ve Seaborn'un bu güzel istatistiksel arsalar için daha donanımlı
+
+162
+00:11:37,260 --> 00:11:39,150
+olacakları hakkında bilgi edene kadar bekleyin.
+
+163
+00:11:39,240 --> 00:11:44,520
+Tamam.
+
+164
+00:11:44,700 --> 00:11:48,400
+Herkese teşekkürler, bir sonraki konferansta görüşürüz.
+
+165
+00:11:48,660 --> 00:11:49,110
+&nbsp;
+
+166
+00:11:49,380 --> 00:11:51,610
+&nbsp;

@@ -1,0 +1,831 @@
+1
+00:00:05,220 --> 00:00:06,050
+Hello everyone.
+
+2
+00:00:06,050 --> 00:00:12,060
+Welcome to part four of the Python crash course lecture series in this series of lectures we'll be discussing
+
+3
+00:00:12,120 --> 00:00:18,180
+lambda expressions the map and filter functions as well as just various methods you can use on different
+
+4
+00:00:18,180 --> 00:00:19,920
+data types in Python.
+
+5
+00:00:19,920 --> 00:00:23,280
+Let's go ahead and jump back to Jupiter notebook to get started.
+
+6
+00:00:23,280 --> 00:00:23,550
+All right.
+
+7
+00:00:23,550 --> 00:00:25,130
+Here I am at the Jupiter notebook.
+
+8
+00:00:25,170 --> 00:00:30,870
+Last time we left off on discussing how you can create your own functions in Python now we're going
+
+9
+00:00:30,870 --> 00:00:36,540
+to do is discuss the map and filter functions and then how we can use lambda expressions instead of
+
+10
+00:00:36,540 --> 00:00:38,690
+writing a full function out.
+
+11
+00:00:38,730 --> 00:00:44,210
+Let me go ahead and quickly review how to write a function you just use the keyword D for death.
+
+12
+00:00:44,400 --> 00:00:51,300
+The function name in this case I call this function times to accept some variable as an argument.
+
+13
+00:00:51,300 --> 00:00:53,360
+They are.
+
+14
+00:00:53,360 --> 00:00:57,930
+And then I'll just go ahead and return that variable multiplied by two.
+
+15
+00:00:58,440 --> 00:01:03,390
+Which means if I call times 2 on a number such as 5 it returns 10.
+
+16
+00:01:03,390 --> 00:01:07,760
+Now let's go ahead and discuss the map function.
+
+17
+00:01:08,370 --> 00:01:12,160
+I'm going to make a sequence called CQ and it's going to be a list.
+
+18
+00:01:12,180 --> 00:01:14,970
+One two three four five.
+
+19
+00:01:15,030 --> 00:01:23,400
+Now let's say I wanted to actually apply this function times to to every single element in this list
+
+20
+00:01:23,520 --> 00:01:25,070
+and then output the list.
+
+21
+00:01:25,290 --> 00:01:31,380
+Well I could use a for loop to do that and then append the results to another list.
+
+22
+00:01:31,410 --> 00:01:37,960
+However map is a built in function in Python that allows you to save that step.
+
+23
+00:01:37,960 --> 00:01:39,390
+Do you go ahead and type in math.
+
+24
+00:01:39,420 --> 00:01:44,280
+You can do shift enter to actually see the documentation string for map.
+
+25
+00:01:44,340 --> 00:01:49,340
+But basically it's going to create an iterator that computes the function using arguments from each
+
+26
+00:01:49,340 --> 00:01:50,250
+of the iterable.
+
+27
+00:01:50,520 --> 00:01:54,890
+Let me go and explain just in kind of clear simple English what that actually means.
+
+28
+00:01:54,990 --> 00:02:02,170
+You're going to say map pasan a function for instance times 2.
+
+29
+00:02:02,340 --> 00:02:06,000
+And then the sequence you want to map that function to.
+
+30
+00:02:06,150 --> 00:02:12,200
+And if you run that they'll report back that you have a map at this particular place in memory.
+
+31
+00:02:12,210 --> 00:02:19,050
+If you actually want to execute this map and get the result back as a list you cast this into a list
+
+32
+00:02:19,080 --> 00:02:21,590
+by using the built in list function.
+
+33
+00:02:21,960 --> 00:02:28,890
+And then this will finally return this function mapped to every elements in that sequence and return
+
+34
+00:02:28,890 --> 00:02:30,490
+it as a list.
+
+35
+00:02:30,510 --> 00:02:34,130
+And now we can see that we have every element multiplied by two.
+
+36
+00:02:34,140 --> 00:02:39,760
+So now we have two four six eight ten instead of one two three four five.
+
+37
+00:02:40,250 --> 00:02:41,220
+OK.
+
+38
+00:02:41,220 --> 00:02:48,150
+So you may be wondering do I have to completely define a full function such as times 2 or is there an
+
+39
+00:02:48,180 --> 00:02:49,610
+easier way to go about this.
+
+40
+00:02:49,620 --> 00:02:54,480
+Because usually when you're using something like map you're not going actually want to write and define
+
+41
+00:02:54,480 --> 00:02:55,650
+an entire function.
+
+42
+00:02:55,770 --> 00:03:01,980
+This will probably just be a one time thing and that's where the land expression comes into play.
+
+43
+00:03:02,040 --> 00:03:09,590
+I'm going to show you how we can rewrite this function the times to into a lambda expression and I'm
+
+44
+00:03:09,590 --> 00:03:11,930
+into slowly just break it down.
+
+45
+00:03:12,360 --> 00:03:21,880
+This function times too can actually be written on one line of times to the way our colon return the
+
+46
+00:03:21,890 --> 00:03:23,190
+r times 2.
+
+47
+00:03:23,250 --> 00:03:28,010
+And if I run these two cells again it still works out just fine.
+
+48
+00:03:28,050 --> 00:03:34,380
+A land expression will try to replicate this sort of structure except it's going to remove words that
+
+49
+00:03:34,980 --> 00:03:37,180
+we don't need by default.
+
+50
+00:03:37,320 --> 00:03:42,150
+When you kind of think about it you don't really need the F or return because those are kind of just
+
+51
+00:03:42,150 --> 00:03:44,100
+given values of course in a function.
+
+52
+00:03:44,130 --> 00:03:48,530
+You're going to have to define it name it and return it for the land expression.
+
+53
+00:03:48,570 --> 00:03:50,730
+Otherwise known as an anonymous function.
+
+54
+00:03:50,730 --> 00:03:55,200
+You just want to replace in an instance where you don't want to have to define an entire function which
+
+55
+00:03:55,200 --> 00:04:00,470
+is the lambda expression and you can do that by essentially reading out this function.
+
+56
+00:04:00,480 --> 00:04:08,130
+But getting rid of the F and the name and instead just typing in lambda and then you go ahead and get
+
+57
+00:04:08,130 --> 00:04:12,320
+rid of return and just type out what you actually want to return.
+
+58
+00:04:12,570 --> 00:04:15,970
+And this is the land the expression.
+
+59
+00:04:16,020 --> 00:04:23,490
+Now I could if I wanted to say t is equal to this land the expression and then call t of some number
+
+60
+00:04:23,520 --> 00:04:25,060
+such as 6.
+
+61
+00:04:25,260 --> 00:04:28,490
+And I can see that I get in return six times two.
+
+62
+00:04:28,590 --> 00:04:32,970
+So I usually wouldn't use the land expression like this but it is possible to use it.
+
+63
+00:04:33,330 --> 00:04:39,060
+Well you will be using lambda expression is for something like map or instead of having to define an
+
+64
+00:04:39,060 --> 00:04:40,320
+entire function.
+
+65
+00:04:40,500 --> 00:04:49,060
+You would just type in lambda expression here you would say lambda what you actually want to pasan colon
+
+66
+00:04:49,300 --> 00:04:55,400
+and then what you want to return out in this case is go ahead and multiply everything by three.
+
+67
+00:04:55,450 --> 00:05:01,240
+And now if I run this on the same sequence I've grabbed every element in the sequence and multiply it
+
+68
+00:05:01,240 --> 00:05:06,310
+by three and I no longer have to define an entire function formally.
+
+69
+00:05:06,370 --> 00:05:11,500
+I can just use a lambda expression lambda expressions or something where to use a lot especially when
+
+70
+00:05:11,510 --> 00:05:13,980
+we start learning about the Pandurs library.
+
+71
+00:05:13,990 --> 00:05:18,330
+So if you have any questions on this please feel free to post the Q&A forums.
+
+72
+00:05:18,340 --> 00:05:25,130
+But it's basically just the way of rewriting an entire function into a single line of clean code.
+
+73
+00:05:25,330 --> 00:05:30,720
+And the reason for this is because you usually don't want to have to write and define an entire function
+
+74
+00:05:30,750 --> 00:05:31,080
+.
+
+75
+00:05:31,150 --> 00:05:35,620
+However that always is an option for you if you're ever confused by land expressions.
+
+76
+00:05:35,620 --> 00:05:40,630
+You can just define a formal function like we did for times 2 and use that instead.
+
+77
+00:05:40,620 --> 00:05:44,800
+Now let's go ahead and discuss the builtin filter function.
+
+78
+00:05:44,800 --> 00:05:48,010
+Filter is going to have a very similar structure to map.
+
+79
+00:05:48,120 --> 00:05:54,490
+But instead of mapping a function to every element in a sequence we will filter out elements from a
+
+80
+00:05:54,490 --> 00:05:55,570
+sequence.
+
+81
+00:05:55,570 --> 00:05:59,800
+Let me go in and show you how you can do this.
+
+82
+00:05:59,890 --> 00:06:09,190
+You'll go ahead and call filter and then you're going to pasan either a function or a lambda expression
+
+83
+00:06:09,640 --> 00:06:13,460
+that filters out and returns boolean values.
+
+84
+00:06:13,480 --> 00:06:27,070
+So for instance I can say lambda of a number colon that number maade two equals zero and then pass in
+
+85
+00:06:27,070 --> 00:06:28,490
+the sequence.
+
+86
+00:06:28,870 --> 00:06:31,530
+And this will return just the filter expression.
+
+87
+00:06:31,560 --> 00:06:34,100
+Actually I want to get the results back.
+
+88
+00:06:34,300 --> 00:06:36,230
+I need to cast it to a list.
+
+89
+00:06:36,730 --> 00:06:43,030
+And this returns back only the even numbers into my sequence 2 and 4.
+
+90
+00:06:43,030 --> 00:06:45,400
+So let's break down what's actually happening here.
+
+91
+00:06:45,610 --> 00:06:54,070
+I'm saying filter and this lambda expression takes in a number and returns a conditional true or false
+
+92
+00:06:54,160 --> 00:06:56,950
+value based off some sort of conditional operation.
+
+93
+00:06:57,000 --> 00:07:02,930
+So a filter must be using some sort of function or lambda expression that returns a boolean value.
+
+94
+00:07:02,950 --> 00:07:04,520
+True or false.
+
+95
+00:07:04,630 --> 00:07:08,680
+And then what you're going to go ahead and do is pass it into an iterable object.
+
+96
+00:07:08,680 --> 00:07:14,350
+And when you call list on it it will only return the values where this statement happened to be true
+
+97
+00:07:14,350 --> 00:07:14,540
+.
+
+98
+00:07:14,650 --> 00:07:18,390
+In this case we just filtered out for even numbers.
+
+99
+00:07:18,400 --> 00:07:19,300
+All right.
+
+100
+00:07:19,300 --> 00:07:22,170
+Now let's go ahead and discuss methods.
+
+101
+00:07:22,210 --> 00:07:28,450
+Methods are essentially just cause you can make off an object that will affect the object or return
+
+102
+00:07:28,570 --> 00:07:30,480
+a result in some manner.
+
+103
+00:07:30,490 --> 00:07:32,670
+Let me go ahead and show you what I mean.
+
+104
+00:07:32,750 --> 00:07:37,720
+I'm going to make a string called S and this will say something like.
+
+105
+00:07:38,380 --> 00:07:42,550
+Hello my name is capital S. Am.
+
+106
+00:07:42,580 --> 00:07:51,970
+Sam I can call s and then dots and if I click tab and Jupiter note book I will get a result of all the
+
+107
+00:07:51,970 --> 00:07:54,340
+available whip's tab.
+
+108
+00:07:54,340 --> 00:07:55,470
+Scroll down.
+
+109
+00:07:55,480 --> 00:08:00,040
+I'll get a result of all the available methods on this string object.
+
+110
+00:08:00,040 --> 00:08:04,300
+Now we don't have time to go over all these and all of these won't be use throughout the course we'll
+
+111
+00:08:04,300 --> 00:08:06,080
+just use quite a few of them.
+
+112
+00:08:06,100 --> 00:08:08,610
+Let me go in to show the important ones.
+
+113
+00:08:09,160 --> 00:08:14,120
+Lower will lower case every single letter in a string.
+
+114
+00:08:14,230 --> 00:08:16,790
+And note that you have to call close parentheses.
+
+115
+00:08:17,050 --> 00:08:22,390
+If you just call lower like this or return back and say oh you're asking about the function lower.
+
+116
+00:08:22,380 --> 00:08:27,430
+Like I mentioned earlier you have to actually execute it by closing those parentheses if you want to
+
+117
+00:08:27,430 --> 00:08:28,310
+do the opposite.
+
+118
+00:08:28,330 --> 00:08:33,060
+In this case uppercase everything you can just call s thought up.
+
+119
+00:08:34,310 --> 00:08:42,210
+All right one other useful function or method excuse me for strings is the split method the split method
+
+120
+00:08:42,250 --> 00:08:48,360
+by default will split a string on all the whitespace of that string.
+
+121
+00:08:48,370 --> 00:08:50,860
+So here we have Hello my name is Sam.
+
+122
+00:08:50,860 --> 00:08:55,240
+When we say estopped split it will split this on all the whitespace.
+
+123
+00:08:55,240 --> 00:08:59,340
+That's going to be really useful for text analysis later on in this course.
+
+124
+00:08:59,350 --> 00:09:01,370
+Let me go in and show an example.
+
+125
+00:09:01,380 --> 00:09:04,590
+Let's say we have a tweet that says something like.
+
+126
+00:09:04,890 --> 00:09:10,150
+Go sports hash tag sports.
+
+127
+00:09:10,520 --> 00:09:19,290
+If we say tweet thoughts splits this will split the text into a list based off the whitespace.
+
+128
+00:09:19,450 --> 00:09:26,530
+But we can actually pasand a string into split to split on particular elements or characters.
+
+129
+00:09:26,710 --> 00:09:33,360
+If I pass an hash tag and run this it will split the string where it finds a hash tag meaning it'll
+
+130
+00:09:33,370 --> 00:09:36,230
+have the message and then at the end have a hash tag.
+
+131
+00:09:36,550 --> 00:09:39,220
+And this will actually return a list though we can that index.
+
+132
+00:09:39,220 --> 00:09:46,530
+So if I just want to grab the hash tag I can say brackets one and all return sports so we can already
+
+133
+00:09:46,540 --> 00:09:51,450
+see how this would be useful if you just wanted to grab hash tags from some example tweet strings.
+
+134
+00:09:51,760 --> 00:09:52,780
+OK.
+
+135
+00:09:52,780 --> 00:09:56,710
+Those are useful methods for E-string upper lower end split.
+
+136
+00:09:56,710 --> 00:09:57,200
+Those are the good.
+
+137
+00:09:57,250 --> 00:09:59,620
+Those are the ones we're going to be using throughout the course.
+
+138
+00:10:00,910 --> 00:10:03,040
+Issue something you can do with dictionaries.
+
+139
+00:10:03,250 --> 00:10:04,690
+So remember a dictionary.
+
+140
+00:10:04,730 --> 00:10:06,860
+Let's go to and see if we have an old one.
+
+141
+00:10:07,180 --> 00:10:15,780
+Well the re-assign this then to be K-1 with a value of one.
+
+142
+00:10:15,880 --> 00:10:20,800
+And then we'll say Kate two is a key of a value of two.
+
+143
+00:10:20,800 --> 00:10:21,440
+All right.
+
+144
+00:10:21,700 --> 00:10:22,580
+So here's my dictionary.
+
+145
+00:10:22,600 --> 00:10:24,920
+K. One is one k to is two.
+
+146
+00:10:24,940 --> 00:10:30,510
+Now we can say d dot and you can click tab to see the various methods available to you.
+
+147
+00:10:30,700 --> 00:10:38,140
+Some useful ones are the keys method and this just returns the keys to the dictionary.
+
+148
+00:10:38,140 --> 00:10:47,710
+If you ask for items this returns the dictionary items and then we can also just ask for if we look
+
+149
+00:10:47,710 --> 00:10:48,870
+at the.
+
+150
+00:10:49,060 --> 00:10:53,670
+You can say pop or get or values.
+
+151
+00:10:53,830 --> 00:10:55,680
+So if you just want the values of the dictionary.
+
+152
+00:10:55,720 --> 00:10:57,430
+This returns the values.
+
+153
+00:10:57,430 --> 00:10:59,810
+Keep in mind dictionaries don't retain an order.
+
+154
+00:11:00,040 --> 00:11:04,690
+We won't really be using keys items or values from the course but I do want you to be aware of them
+
+155
+00:11:05,660 --> 00:11:07,500
+some useful methods for lists.
+
+156
+00:11:07,510 --> 00:11:08,740
+I'm going to go out to make a list.
+
+157
+00:11:08,750 --> 00:11:10,530
+Ls t.
+
+158
+00:11:10,540 --> 00:11:12,680
+Say 1 to 3.
+
+159
+00:11:12,820 --> 00:11:20,920
+You can pop an item off a list by calling pop and this will pop and return the last item in the list
+
+160
+00:11:21,460 --> 00:11:24,510
+and then when you call this that change is permanent.
+
+161
+00:11:24,820 --> 00:11:36,250
+Which means if we go ahead and say list is one two three four five you can say item is equal to ls t
+
+162
+00:11:36,710 --> 00:11:44,730
+pop and that will pop the last item off of that list and if we call that item it's been reassigned.
+
+163
+00:11:44,800 --> 00:11:53,440
+5 is now item which was the list that pop and you can actually with the pop method passing an index
+
+164
+00:11:53,440 --> 00:11:54,730
+value to pop off.
+
+165
+00:11:54,730 --> 00:12:01,150
+So if you say first is equal to LS T-top pop 0 and run this.
+
+166
+00:12:01,150 --> 00:12:02,870
+Take a look at LS T.
+
+167
+00:12:02,950 --> 00:12:11,100
+Now the index 0 has been popped off and our first variable is that one which was the first element.
+
+168
+00:12:11,320 --> 00:12:14,270
+So pop is a really useful method and so is append.
+
+169
+00:12:14,290 --> 00:12:15,860
+But we've actually already seen that.
+
+170
+00:12:16,090 --> 00:12:22,620
+That's just allows you to append a new item to the end of the list.
+
+171
+00:12:23,050 --> 00:12:23,720
+All right.
+
+172
+00:12:24,010 --> 00:12:29,560
+Finally a few more things I want to show you is the in operator.
+
+173
+00:12:29,560 --> 00:12:36,140
+So if you want to check if something is inside of a list you can say the thing you want to check and
+
+174
+00:12:36,140 --> 00:12:39,500
+then in and then the list itself.
+
+175
+00:12:39,610 --> 00:12:54,100
+So X in 1 to 3 that returns false versus x in a list containing x y and z that returns true.
+
+176
+00:12:54,100 --> 00:12:58,900
+And finally the very last thing in this python crash course that we're going to cover is tuple unpacking
+
+177
+00:12:59,410 --> 00:13:03,370
+tuple unpacking is a really neat feature and I'm going to show you how it works.
+
+178
+00:13:03,370 --> 00:13:11,270
+Imagine that you have a variable x which contains a list of tuples.
+
+179
+00:13:12,010 --> 00:13:19,740
+We'll have one two three four and then five six.
+
+180
+00:13:19,750 --> 00:13:29,140
+So here if I look at X the first item in X is a tuple of 1 and 2 and I can actually grab items from
+
+181
+00:13:29,140 --> 00:13:33,040
+that tuple so I can grab one or I can grab two.
+
+182
+00:13:33,130 --> 00:13:38,410
+I can also do something called tuple unpacking and that's going to work when we're iterating through
+
+183
+00:13:38,410 --> 00:13:40,030
+a list of tuples.
+
+184
+00:13:40,030 --> 00:13:45,910
+This sort of formation of a list of tuples is really common in Python and a lot of functions will return
+
+185
+00:13:45,910 --> 00:13:47,550
+a result in this format.
+
+186
+00:13:47,830 --> 00:14:00,230
+Which is why we have tuple and packing as an option so we can say for item in X prints item.
+
+187
+00:14:00,520 --> 00:14:07,300
+And when I run that it goes ahead and prints all the tuples for me tuple and packing allows me to actually
+
+188
+00:14:07,390 --> 00:14:18,280
+unpack these tuples as I go along so I can do something like this for a comma B in X prints a.
+
+189
+00:14:18,640 --> 00:14:21,950
+And now this will print 1 3 5.
+
+190
+00:14:22,850 --> 00:14:24,830
+Or if I say Prince B.
+
+191
+00:14:24,840 --> 00:14:27,250
+This will print the second item in those tuples.
+
+192
+00:14:27,310 --> 00:14:30,490
+2 4 6 and that's tuple and packing.
+
+193
+00:14:30,490 --> 00:14:35,830
+Or instead of just saying an item you actually unpack this tuple inside of that for loop and something
+
+194
+00:14:35,830 --> 00:14:36,130
+else.
+
+195
+00:14:36,140 --> 00:14:40,630
+Note is that these parentheses surrounding this are actually just a formality.
+
+196
+00:14:40,630 --> 00:14:43,930
+This is how you are going to see tuple in packing in the real world all the time.
+
+197
+00:14:43,930 --> 00:14:49,840
+You'll see for the tuple and packing in X which is some iterable of tuples inside of it.
+
+198
+00:14:50,140 --> 00:14:57,730
+And then you can just print off the individual items in that tuple and that's all you can do it all
+
+199
+00:14:57,730 --> 00:14:58,210
+right.
+
+200
+00:14:58,500 --> 00:15:02,590
+It will remind you of tuple and packing when we reach it again later in this course.
+
+201
+00:15:02,590 --> 00:15:07,570
+It's not going to come up until a while from now but hopefully this was enough of a general overview
+
+202
+00:15:07,690 --> 00:15:13,990
+for Python if any of this seemed just impossibly hard or was just completely unfamiliar to you and you
+
+203
+00:15:13,990 --> 00:15:15,700
+really didn't understand the concept.
+
+204
+00:15:15,700 --> 00:15:21,730
+This course may be too advanced for you and you may be in need of a course that's geared towards beginner
+
+205
+00:15:21,860 --> 00:15:25,420
+in programming such as my complete Python bootcamp course.
+
+206
+00:15:25,510 --> 00:15:31,000
+Always feel free to post any questions to Kewaunee forums and coming up next is an exercise to just
+
+207
+00:15:31,000 --> 00:15:35,070
+test your knowledge in this python crash course topic series.
+
+208
+00:15:35,080 --> 00:15:36,970
+Thanks everyone and I'll see at the next lecture

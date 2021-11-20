@@ -1,0 +1,715 @@
+1
+00:00:05,490 --> 00:00:11,130
+Halo semua, selamat datang di kuliah pengaturan dan instalasi, jadi tujuan dari kuliah ini
+
+2
+00:00:11,130 --> 00:00:13,080
+adalah menginstal Python Anaconda.
+
+3
+00:00:13,080 --> 00:00:17,970
+Unduh file zip buku catatan yang keluar dari kursus ini dan buka Jupiter dan jelajahi buku
+
+4
+00:00:17,970 --> 00:00:20,410
+catatan dan pastikan semuanya bekerja untuk Anda.
+
+5
+00:00:21,560 --> 00:00:25,150
+Jadi langsung saja kelelawar apa itu anaconda anaconda.
+
+6
+00:00:25,160 --> 00:00:28,570
+Adalah distribusi Python ketika kita mengatakan distribusi.
+
+7
+00:00:28,580 --> 00:00:33,770
+Itu berarti sebenarnya bukan hanya termasuk python tetapi juga termasuk banyak perpustakaan dan alat yang kami gunakan
+
+8
+00:00:34,010 --> 00:00:35,240
+dalam kursus ini.
+
+9
+00:00:35,390 --> 00:00:40,460
+Dan itu juga termasuk sistem lingkungan virtualnya sendiri yang akan kita bicarakan nanti dalam kursus ini.
+
+10
+00:00:40,550 --> 00:00:45,690
+Ini pada dasarnya instalasi semua dalam satu yang sangat populer dalam ilmu data dan pembelajaran mesin.
+
+11
+00:00:45,770 --> 00:00:50,060
+Jadi, jika Anda pernah mengikuti pelatihan lain, ilmu data, dan pembelajaran mesin seperti pelatihan
+
+12
+00:00:50,360 --> 00:00:53,850
+perusahaan, kemungkinan besar mereka juga akan meminta Anda untuk menginstal Anaconda.
+
+13
+00:00:53,870 --> 00:00:58,130
+Jadi ini sangat populer dalam ilmu data dan pembelajaran mesin yang mengapa kami menggunakannya
+
+14
+00:00:59,690 --> 00:01:04,550
+dalam kursus ini, jadi setelah kami menginstal Anaconda dan menjalankan Python dan menjalankannya, sebenarnya akan datang
+
+15
+00:01:04,550 --> 00:01:06,410
+dengan lingkungan pengembangan yang disebut Jupiter.
+
+16
+00:01:06,410 --> 00:01:11,090
+Dan Jupiter adalah lingkungan yang dikembangkan di mana kita dapat menulis kode Python normal tetapi apa yang
+
+17
+00:01:11,090 --> 00:01:16,730
+benar-benar keren tentang itu adalah itu juga memungkinkan kita untuk menampilkan gambar dan kemudian menuliskan catatan penurunan harga semua dalam notebook
+
+18
+00:01:16,730 --> 00:01:17,510
+yang sama.
+
+19
+00:01:17,510 --> 00:01:22,460
+Jadi ini adalah alat pembelajaran yang sangat bagus dan juga alat pengajaran yang hebat, itulah sebabnya Anda
+
+20
+00:01:22,460 --> 00:01:23,780
+menggunakannya sepanjang kursus ini.
+
+21
+00:01:23,840 --> 00:01:28,910
+Dan itu juga salah satu lingkungan yang dikembangkan paling populer dalam ilmu data untuk mengeksplorasi dan
+
+22
+00:01:28,910 --> 00:01:29,560
+menganalisis data.
+
+23
+00:01:29,720 --> 00:01:34,160
+Dan ketika Anda belajar lebih banyak tentang kursus dan perpustakaan maka Anda akan melihat
+
+24
+00:01:34,160 --> 00:01:39,920
+mengapa ini adalah alat yang sangat populer karena Anda bisa melihat semuanya pada satu layar Anda bisa melihat
+
+25
+00:01:39,960 --> 00:01:43,440
+gambar data Anda lembar dan sebagainya semua dalam satu jendela.
+
+26
+00:01:43,450 --> 00:01:48,190
+Sekarang saya ingin memperjelas jika Anda adalah pengguna Python yang berpengalaman dan mungkin Anda sudah mencoba Jupiter tetapi benar-benar
+
+27
+00:01:48,340 --> 00:01:49,120
+tidak menyukainya.
+
+28
+00:01:49,120 --> 00:01:53,700
+Anda memiliki pengaturan sendiri seperti Sublime Text atau PI charm atau jenis lingkungan lainnya.
+
+29
+00:01:53,860 --> 00:01:57,270
+Silakan menggunakan lingkungan pengembangan yang Anda inginkan.
+
+30
+00:01:57,280 --> 00:02:00,600
+Kadang-kadang beberapa siswa tidak menyukai Jupiter dan mereka menyukai benda mereka sendiri.
+
+31
+00:02:00,670 --> 00:02:01,690
+Tidak apa-apa.
+
+32
+00:02:01,690 --> 00:02:03,280
+Kami tidak memaksanya untuk menggunakan Jupiter.
+
+33
+00:02:03,280 --> 00:02:06,610
+Kode python yang akan kami tampilkan sepanjang kursus berfungsi di lingkungan apa pun.
+
+34
+00:02:06,610 --> 00:02:07,610
+Saya hanya ingin menjadi jelas.
+
+35
+00:02:07,720 --> 00:02:10,030
+Silakan pilih lingkungan pengembangan yang Anda inginkan.
+
+36
+00:02:10,030 --> 00:02:14,250
+Tetapi jika Anda benar-benar baru dalam hal ini saya akan sangat menyarankan Anda pergi dari pengaturan Anaconda dan Jupiter
+
+37
+00:02:14,260 --> 00:02:16,780
+kami tunjukkan di sini bahwa kami dapat mengikuti kursus ini.
+
+38
+00:02:16,780 --> 00:02:21,050
+Dan saya harap Anda belajar untuk menyukainya sama seperti saya baik-baik saja, jadi mari kita mulai.
+
+39
+00:02:21,050 --> 00:02:22,500
+Kami akan mengunduh Anaconda.
+
+40
+00:02:22,610 --> 00:02:25,460
+Silakan dan lanjutkan dengan anaconda dot com.
+
+41
+00:02:25,610 --> 00:02:30,150
+Atau cukup dengan mencari google Anaconda Python unduh dan kita akan berakhir pada halaman yang sama.
+
+42
+00:02:30,170 --> 00:02:34,770
+Saya ingin maju dan melompat di komentar dot com di browser saya sekarang.
+
+43
+00:02:34,970 --> 00:02:35,740
+Baiklah, saya di sini.
+
+44
+00:02:35,820 --> 00:02:37,390
+Anaconda dot com.
+
+45
+00:02:37,400 --> 00:02:39,140
+Perlu diingat Anaconda dot com.
+
+46
+00:02:39,140 --> 00:02:41,770
+Halaman ini sebenarnya memperbarui sendiri cukup sering.
+
+47
+00:02:41,780 --> 00:02:46,450
+Jadi gaya dapat berubah dan Anda dapat melihat berbagai hal misalnya saat ini.
+
+48
+00:02:46,610 --> 00:02:51,710
+Mereka akan memiliki anaconda con sehingga gaya halaman yang terlihat sedikit berbeda dan tombol mungkin atau
+
+49
+00:02:51,710 --> 00:02:55,970
+keseluruhan tampilan halaman mungkin berbeda untuk Anda ketika Anda benar-benar mengunjungi ini.
+
+50
+00:02:55,970 --> 00:03:01,600
+Tetapi pada dasarnya yang kita cari adalah bagian unduhan dan Anda akan melihat beberapa produk di sini mengapa Anaconda tetapi di
+
+51
+00:03:01,700 --> 00:03:04,360
+suatu tempat di halaman ini Anda harus melihat unduhan.
+
+52
+00:03:04,670 --> 00:03:08,530
+Dan jika Anda mengalami kesulitan menemukan bahwa Anda dapat melanjutkan dan mencari google dan memanggil unduhan.
+
+53
+00:03:08,710 --> 00:03:10,910
+Dan akhirnya akan membawa Anda ke halaman ini.
+
+54
+00:03:10,910 --> 00:03:18,350
+Jadi yang kita lihat di sini adalah unduhan untuk Python 3 dan Python untuk kursus ini menggunakan versi terbaru dari
+
+55
+00:03:18,350 --> 00:03:19,390
+Python 3.
+
+56
+00:03:19,400 --> 00:03:22,100
+Jadi kita akan melanjutkan dan menggunakannya untuk Installer kita.
+
+57
+00:03:22,100 --> 00:03:27,050
+Satu hal yang perlu Anda pastikan adalah bahwa Anda memilih pemasang yang benar untuk sistem operasi Anda.
+
+58
+00:03:27,050 --> 00:03:32,780
+Jadi sekarang saya ingin komputer Windows jadi saya akan memilih installer windows untuk Anaconda.
+
+59
+00:03:32,780 --> 00:03:36,680
+Sekarang jika Anda menggunakan Mac OS, silakan dan pilih penginstal Mac OS untuk Linux.
+
+60
+00:03:36,680 --> 00:03:41,690
+Silakan dan pilih installer Linux sesuatu yang Anda harus tahu adalah untuk Mac OS.
+
+61
+00:03:41,760 --> 00:03:45,230
+Ada penginstal grafis dan kemudian penginstal baris perintah.
+
+62
+00:03:45,350 --> 00:03:49,790
+Pemasang grafis jauh lebih mudah digunakan karena memiliki jendela kecil yang muncul dan menunjukkan memberitahu Anda apa yang
+
+63
+00:03:49,820 --> 00:03:51,260
+harus dilakukan saat Anda melanjutkan.
+
+64
+00:03:51,590 --> 00:03:53,810
+Jadi saya akan merekomendasikan installer grafis.
+
+65
+00:03:54,050 --> 00:04:00,440
+Jadi saya akan melanjutkan dan memberitahu pada komputer Windows untuk mengunduh installer windows untuk versi python 3.
+
+66
+00:04:00,440 --> 00:04:04,100
+Jika Anda menonton ini di beberapa titik di masa depan di
+
+67
+00:04:04,100 --> 00:04:08,380
+Python tiga koma delapan telah keluar itu benar-benar ok pada dasarnya hanya menggunakan Python 3.
+
+68
+00:04:08,430 --> 00:04:08,810
+Baiklah.
+
+69
+00:04:08,860 --> 00:04:14,440
+Setelah selesai mengunduh, kami akan melanjutkan dan membuka file yang dapat dieksekusi ini jika Anda menggunakan Mac OS.
+
+70
+00:04:14,470 --> 00:04:18,820
+Mungkin akan ada beberapa file TMG atau sesuatu yang pada dasarnya menuntun Anda melalui
+
+71
+00:04:18,820 --> 00:04:19,660
+installer grafis.
+
+72
+00:04:19,660 --> 00:04:25,400
+Jadi kita akan membukanya dan kemudian Anda akan melihat dasarnya setup wizard untuk Anda.
+
+73
+00:04:25,400 --> 00:04:28,910
+Jadi kita akan pergi ke depan dan klik berikutnya di sini dan kemudian ada perjanjian lisensi.
+
+74
+00:04:28,910 --> 00:04:30,750
+Silakan dan setujui itu.
+
+75
+00:04:30,930 --> 00:04:34,810
+Dan kemudian ada instal untuk saya dan semua pengguna saja.
+
+76
+00:04:35,010 --> 00:04:37,940
+Jika Anda menggunakan komputer kerja, Anda mungkin tidak memiliki hak istimewa yang tegas.
+
+77
+00:04:37,980 --> 00:04:40,320
+Jadi langsung saja dan instal untuk saya saja.
+
+78
+00:04:40,350 --> 00:04:44,430
+Pada dasarnya itu berarti Anda harus masuk ke akun pengguna Anda dan itu hanya akan berfungsi untuk akun pengguna
+
+79
+00:04:44,430 --> 00:04:45,000
+khusus ini.
+
+80
+00:04:45,480 --> 00:04:50,770
+Jadi lanjutkan dan klik Lanjut lanjutkan dan pilih lokasi default untuk folder tujuan dan kemudian
+
+81
+00:04:50,770 --> 00:04:56,200
+jika Anda menggunakan komputer Windows Anda akan melihat opsi ini untuk opsi instalasi lanjutan dan Anda
+
+82
+00:04:56,200 --> 00:04:58,720
+harus benar-benar memeriksa kedua kotak ini.
+
+83
+00:04:58,900 --> 00:05:04,210
+Salah satunya mengatakan bahwa sebenarnya tidak disarankan menambahkan Anaconda ke variabel lingkungan jalur Anda.
+
+84
+00:05:04,210 --> 00:05:08,860
+Alasan mereka mengatakan itu tidak direkomendasikan adalah karena jika Anda memiliki versi
+
+85
+00:05:08,860 --> 00:05:14,770
+python yang berbeda yang dapat dipusingkan dan menjadikan Anaconda sebagai versi Python yang pada dasarnya standar di
+
+86
+00:05:14,830 --> 00:05:20,500
+komputer Anda dan juga cara default untuk menjalankan tindakan tertentu pada baris perintah Anda sebenarnya merekomendasikannya
+
+87
+00:05:20,560 --> 00:05:24,520
+terutama jika Anda sudah memiliki instalasi Python yang cukup besar.
+
+88
+00:05:24,520 --> 00:05:28,330
+Sekarang jika Anda adalah pengguna tingkat lanjut dan Anda mengerti apa artinya mengatur variabel lingkungan path,
+
+89
+00:05:28,330 --> 00:05:31,530
+saya akan menyerahkannya kepada Anda apakah Anda ingin menambahkan Anaconda ke path Anda.
+
+90
+00:05:31,540 --> 00:05:35,620
+Namun, jika Anda baru dan Anda tidak tahu apa artinya menambahkan sesuatu
+
+91
+00:05:36,190 --> 00:05:40,810
+ke variabel lingkungan jalur Anda, maka silakan dan pilih ini meskipun dikatakan tidak direkomendasikan.
+
+92
+00:05:40,810 --> 00:05:42,660
+Silakan dan centang kedua kotak.
+
+93
+00:05:42,760 --> 00:05:47,000
+Itu akan memungkinkan saya untuk membuat lingkungan virtual di baris perintah yang sangat berguna.
+
+94
+00:05:47,050 --> 00:05:50,190
+Jadi, begitu Anda selesai melakukannya, lalu pilih instal.
+
+95
+00:05:50,250 --> 00:05:50,850
+Baiklah.
+
+96
+00:05:50,950 --> 00:05:55,900
+Sekarang setelah selesai menginstal kita harus dapat mencari anaconda Navigator di komputer
+
+97
+00:05:55,900 --> 00:05:56,770
+kita.
+
+98
+00:05:56,860 --> 00:06:01,510
+Jika Anda mencari Anaconda di komputer, Anda akan melihat beberapa opsi muncul.
+
+99
+00:06:01,510 --> 00:06:05,480
+Satu adalah anaconda prompt dan yang lainnya adalah anaconda navigator.
+
+100
+00:06:05,530 --> 00:06:12,590
+Pergi ke depan dan klik buka anaconda navigator pada pembukaan anaconda navigator Anda akan melihat sekelompok aplikasi muncul
+
+101
+00:06:12,590 --> 00:06:18,480
+dan pada dasarnya ini adalah cara yang sangat nyaman untuk membuka lingkungan pengembangan Anda dan
+
+102
+00:06:18,510 --> 00:06:23,510
+Anda akan melihat bahwa Anaconda sebenarnya datang dari beberapa lingkungan pengembangan sudah
+
+103
+00:06:23,510 --> 00:06:24,340
+termasuk.
+
+104
+00:06:24,380 --> 00:06:29,800
+Muncul dengan Jupiter domba, laba-laba notebook Jupiter Kuti konsol dan banyak lagi.
+
+105
+00:06:29,840 --> 00:06:33,380
+Yang akan kita gunakan dalam kursus ini adalah notebook Jupiter.
+
+106
+00:06:33,380 --> 00:06:37,880
+Ingatlah bahwa ada lampu Jupiter yang terlihat sangat mirip tetapi kita akan benar-benar menggunakan notebook Jupiter dan
+
+107
+00:06:38,210 --> 00:06:42,530
+seperti yang saya katakan Anda bebas menggunakan lingkungan pengembangan yang Anda pilih, tetapi kami akan
+
+108
+00:06:42,530 --> 00:06:43,470
+menggunakan notebook Jupiter.
+
+109
+00:06:43,550 --> 00:06:49,590
+Jadi yang ingin kita lakukan adalah maju dan luncurkan notebook Jupiter jadi klik di sini di mana dikatakan peluncuran dan
+
+110
+00:06:49,590 --> 00:06:53,490
+kemudian apa yang akan terjadi adalah Anda akan melihat jendela browser muncul.
+
+111
+00:06:53,490 --> 00:06:58,450
+Dan di sini kita dapat melihat bahwa notebook Jupiter secara otomatis dibuka di browser Anda.
+
+112
+00:06:58,470 --> 00:07:04,020
+Sekarang jika Anda tidak memiliki Google Chrome sebagai peramban default, saya sangat menyarankan Anda menggunakannya
+
+113
+00:07:04,020 --> 00:07:06,860
+karena itulah yang paling sesuai dengan Jupiter.
+
+114
+00:07:06,930 --> 00:07:11,190
+Jangan gunakan browser yang lebih lama seperti Internet Explorer, Microsoft Edge seharusnya tidak masalah.
+
+115
+00:07:11,190 --> 00:07:14,240
+Tetapi Internet Explorer itu sebenarnya bahkan tidak didukung oleh Microsoft lagi.
+
+116
+00:07:14,310 --> 00:07:18,990
+Jadi saya sangat merekomendasikan menggunakan Google Chrome untuk Jupiter.
+
+117
+00:07:18,990 --> 00:07:23,010
+Anda juga dapat menggunakan hal-hal seperti Firefox Mozilla yang secara teknis semuanya harus bekerja dengan baik juga.
+
+118
+00:07:23,570 --> 00:07:24,120
+BAIK.
+
+119
+00:07:24,330 --> 00:07:28,710
+Jadi Anda perhatikan bahwa Jupiter membuka di browser Anda sesuatu yang ingin saya klarifikasi adalah bahwa
+
+120
+00:07:28,710 --> 00:07:31,560
+Anda tidak perlu terhubung ke Internet agar Jupiter dapat berfungsi.
+
+121
+00:07:31,620 --> 00:07:35,620
+Ini hanya menggunakan browser Anda sebagai jendela antarmuka grafis.
+
+122
+00:07:35,640 --> 00:07:37,930
+Ini sebenarnya tidak terhubung ke Internet di sini.
+
+123
+00:07:37,950 --> 00:07:42,090
+Jadi, Anda akan melihat bahwa pada dasarnya saya melihat semua folder yang ada di komputer saya.
+
+124
+00:07:42,090 --> 00:07:45,300
+Saya dapat melihat folder desktop saya dokumen saya dan unduhan saya.
+
+125
+00:07:45,300 --> 00:07:51,570
+Jadi yang ingin saya lakukan adalah mengunduh file zip notebook yang datang untuk kursus ini dan
+
+126
+00:07:51,690 --> 00:07:53,400
+kemudian mengaksesnya melalui Jupiter.
+
+127
+00:07:53,400 --> 00:07:55,900
+Jadi mari kita lanjutkan dan unduh file zip itu.
+
+128
+00:07:56,180 --> 00:08:01,800
+OK jadi jika Anda pergi ke halaman isi kursus yang sebenarnya Anda akan melihat kurikulum yang disusun dan
+
+129
+00:08:01,800 --> 00:08:07,800
+Anda akan melihat di bagian satu saja Pengantar dalam kursus kuliah ketiga jika cuz ada file zip di sini
+
+130
+00:08:07,800 --> 00:08:09,420
+yang dapat Anda unduh.
+
+131
+00:08:09,870 --> 00:08:15,000
+Dan ketika Anda membaca kuliah itu, Anda seharusnya melihat sedikit artikel sumber daya yang menunjukkan
+
+132
+00:08:15,030 --> 00:08:17,130
+bahwa ada sumber daya untuk diunduh.
+
+133
+00:08:17,130 --> 00:08:20,010
+Sekarang perlu diingat jika Anda melihat video ceramah.
+
+134
+00:08:20,010 --> 00:08:25,700
+Jadi misalnya di sini saya melihat pada dasarnya lingkungan intro kami mengatur kuliah instalasi jika klik
+
+135
+00:08:25,740 --> 00:08:27,610
+di sini di kiri atas.
+
+136
+00:08:27,630 --> 00:08:32,760
+Ini juga harus menjadi indikasi bahwa sumber daya dapat diunduh dan Anda kemudian dapat melihat konten kursus
+
+137
+00:08:32,880 --> 00:08:36,310
+dan mengklik file zip ini dan itu akan mengunduh file zip.
+
+138
+00:08:36,360 --> 00:08:42,060
+Jadi silakan dan unduh file zip baik dari kursus f dan saya telah menempatkan file zip dalam beberapa
+
+139
+00:08:42,060 --> 00:08:46,320
+kuliah lain jika Anda melewatkannya termasuk yang satu ini dan kuliah catatan Jupiter.
+
+140
+00:08:46,320 --> 00:08:48,870
+Ini file zip yang sama hanya ada untuk diunduh secara gratis.
+
+141
+00:08:48,870 --> 00:08:53,310
+Dan lanjutkan dan unduh dan ingat di mana Anda mengunduhnya dan kemudian unzip file itu.
+
+142
+00:08:53,310 --> 00:08:57,330
+Jadi sekarang versi saya di bawah folder unduhan saya, jadi saya akan unzip.
+
+143
+00:08:57,660 --> 00:08:57,900
+Baiklah.
+
+144
+00:08:57,960 --> 00:09:01,560
+Jadi di bawah folder unduhan saya, saya akan melanjutkan dan unzip ini.
+
+145
+00:09:01,560 --> 00:09:07,020
+Anda harus dapat melihat ekstrak semua atau Anda dapat mengunduh program program seperti ketika RA atau tujuh zip.
+
+146
+00:09:07,020 --> 00:09:12,000
+Silakan dan lakukan itu dengan cara apa pun apa pun metode khas yang digunakan untuk menjadi folder.
+
+147
+00:09:12,030 --> 00:09:16,070
+Silakan dan lakukan itu Windows dan Mac OS memiliki default.
+
+148
+00:09:16,110 --> 00:09:19,230
+Jadi lanjutkan atau ekstrak saja dan unzip.
+
+149
+00:09:20,240 --> 00:09:25,490
+Jadi, biarkan unzip dan kemudian setelah itu unzip Anda akan melihat folder di sini dan Anda akan melihat sesuatu yang
+
+150
+00:09:25,490 --> 00:09:26,240
+mengatakan refactor.
+
+151
+00:09:26,240 --> 00:09:31,910
+Silakan dan klik pada itu dan Anda akan melihat semua catatan kursus diatur agar mereka dalam
+
+152
+00:09:31,910 --> 00:09:32,500
+kursus.
+
+153
+00:09:32,540 --> 00:09:38,000
+Dan jika Anda klik dua kali pada ini Anda akan melihat banyak file yang disebut I. P. y dan menjadi file.
+
+154
+00:09:38,000 --> 00:09:42,170
+Sekarang masalahnya tentang file-file ini jika Anda mencoba untuk mengklik dua kali pada mereka dan membukanya secara langsung.
+
+155
+00:09:42,170 --> 00:09:46,590
+Sebenarnya tidak akan berhasil jika dibuka langsung melalui sistem notebook Jupiter.
+
+156
+00:09:46,610 --> 00:09:51,650
+Jadi sekarang kita tahu bahwa folder unzip kita berada di bawah unduhan kita akan kembali ke browser kita
+
+157
+00:09:51,650 --> 00:09:55,110
+di mana kita memiliki notebook Jupiter dan membuka file dengan cara itu.
+
+158
+00:09:55,130 --> 00:09:57,020
+Jadi izinkan saya maju dan melompat kembali ke sana.
+
+159
+00:09:57,020 --> 00:09:59,730
+Jadi di sini saya kembali ke notebook Jupiter.
+
+160
+00:09:59,750 --> 00:10:07,080
+Silakan temukan folder Unduhan Anda dan kemudian temukan folder Pi master bootcamp SNL pergi ke refactor dan kemudian Anda akan melihat
+
+161
+00:10:07,080 --> 00:10:12,410
+semua file di sini dan yang pertama kita akan pergi ke sana semua agar Python crash
+
+162
+00:10:12,420 --> 00:10:17,580
+Tentu saja dan kemudian buku catatan ini Anda cukup mengkliknya dan kemudian setelah selesai memuat
+
+163
+00:10:17,580 --> 00:10:20,500
+Anda dapat melihat semua informasi di sini.
+
+164
+00:10:20,730 --> 00:10:25,020
+Dan nanti kita akan berbicara lebih detail tentang bagaimana Anda benar-benar dapat menjalankan notebook Jupiter.
+
+165
+00:10:25,020 --> 00:10:31,080
+Ingatlah bahwa sebelumnya ketika saya sedang syuting kursus ini, kami tidak mengaturnya secara numerik
+
+166
+00:10:31,080 --> 00:10:32,350
+seperti ini.
+
+167
+00:10:32,550 --> 00:10:38,520
+Kami baru saja mengaturnya berdasarkan topik umum tetapi sekarang kami telah mengatur ulang dan memperbaiki notebook dan folder yang
+
+168
+00:10:38,550 --> 00:10:40,280
+sebenarnya sehingga jauh lebih jelas.
+
+169
+00:10:40,290 --> 00:10:43,620
+Anda melakukan yang pertama kemudian dua, tiga, empat, lima, dan seterusnya.
+
+170
+00:10:44,080 --> 00:10:44,760
+BAIK.
+
+171
+00:10:44,850 --> 00:10:46,770
+Jadi pada dasarnya itu untuk pengaturan kita.
+
+172
+00:10:46,890 --> 00:10:52,360
+Anda sekarang dapat menjalankan notebook Jupiter dan Anda harus menginstal Anaconda dan kemudian
+
+173
+00:10:52,370 --> 00:10:54,060
+mengunduh catatan dan mengikuti.
+
+174
+00:10:54,060 --> 00:10:59,070
+Harap diingat bahwa jika Anda pernah mendapatkan kesalahan dengan mencoba mengikuti video coba
+
+175
+00:10:59,160 --> 00:11:03,480
+jalankan notebook kami terlebih dahulu khusus notebook solusi kami untuk latihan.
+
+176
+00:11:03,480 --> 00:11:07,830
+Banyak kali mudah membuat kesalahan ketik yang sederhana, itulah sebabnya kami menyediakan buku catatan yang sesuai
+
+177
+00:11:07,830 --> 00:11:11,100
+dengan setiap ceramah video untuk membantu Anda mengatasi masalah jenis itu.
+
+178
+00:11:11,280 --> 00:11:11,910
+Baik.
+
+179
+00:11:11,970 --> 00:11:13,890
+Terima kasih semuanya dan kami akan menemui Anda di kuliah berikutnya.

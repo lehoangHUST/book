@@ -1,0 +1,1043 @@
+1
+00:00:05,100 --> 00:00:10,110
+Herkese merhaba ve plotline cufflinks dersine hoş geldiniz, burada interaktif veri görselleştirmeleri
+
+2
+00:00:10,140 --> 00:00:14,250
+oluşturmak için bu kütüphaneleri kullanarak nasıl program yapabileceğimizi gösteriyoruz.
+
+3
+00:00:14,250 --> 00:00:18,690
+Başlamak için Jupiter defterine atlayalım.
+
+4
+00:00:18,690 --> 00:00:18,960
+Tamam.
+
+5
+00:00:18,960 --> 00:00:20,990
+İşte Jüpiter defterindeyim.
+
+6
+00:00:21,030 --> 00:00:25,770
+Ben ilerleyip hepsinin çalışabilmesi için birkaç ithalat ve sonra bazı kurulum yapacağım.
+
+7
+00:00:25,770 --> 00:00:35,880
+olduğunu söylerken ben PI ve P'yim ve o zaman ileride gidip, arsayı ithal alt çizgi
+
+8
+00:00:36,690 --> 00:00:46,140
+altı çizili altçizgi altı çizili olarak söyleyeceğim ve sonra devam edip baskı versiyonunu söyleyeceğim.
+
+9
+00:00:47,340 --> 00:00:48,530
+İthalatın PD
+
+10
+00:00:49,020 --> 00:00:51,710
+Ve dikkat edin burada dokuz noktaya bir puan alıyorum.
+
+11
+00:00:51,720 --> 00:00:53,750
+Kullanmakta olduğum şu anki sürüm budur.
+
+12
+00:00:53,770 --> 00:00:59,640
+Yapacağımız her şey bir noktadan dokuzuncu bir sürümü gerektiriyor.
+
+13
+00:00:59,640 --> 00:01:02,220
+Yani burada zaten bir noktada on iki yaşındayım.
+
+14
+00:01:02,280 --> 00:01:03,420
+Bu benim iyi olduğum anlamına geliyor.
+
+15
+00:01:03,420 --> 00:01:07,970
+Sekiz veya altı bir puanınız olan bir sürümünüz varsa, plotless'i yükseltmeniz gerekir.
+
+16
+00:01:08,250 --> 00:01:12,730
+Eğer sadece çizgi çizgi yüklerseniz, bu konuda tamamen iyidir.
+
+17
+00:01:12,780 --> 00:01:23,370
+Sonra, içeri girip C-f olarak ithal kol düğmelerini söyleyeceğim ve sonunda çizgiden yola çıkarak
+
+18
+00:01:23,400 --> 00:01:26,070
+bazı kütüphaneleri içe aktaracağım.
+
+19
+00:01:26,070 --> 00:01:33,110
+Kısmen bir şirket çevrimiçi ortamınızı destekleyebilir ve çevrimiçi veri görselleştirmelerine ev sahipliği yapabilir.
+
+20
+00:01:33,300 --> 00:01:37,190
+Ancak bunu bir açık kaynak kütüphanesi olarak kullanacağız ve
+
+21
+00:01:37,200 --> 00:01:41,990
+onu çevrimdışı kullanacağız, bunun çalışması için çevrimdışıdan bazı ithalat yapmamız gerekecek.
+
+22
+00:01:42,000 --> 00:01:47,460
+İleriye gitmek istiyorum ve çizgisiz çizgi desensiz çizgi indirebilmek istiyorum. S. ve D ve ardından sekmesini
+
+23
+00:01:47,460 --> 00:01:49,850
+yazabilir ve sizin için otomatik tamamlamalıdır.
+
+24
+00:01:49,850 --> 00:01:56,400
+Ayrıca şunu da söyleyeceğim, alt çizgi altı çizili alt çizgi modunda sekmenin otomatik Tamamlamasını yapıyorum.
+
+25
+00:01:56,880 --> 00:02:01,510
+Ardından arsa ve arsalar bunu çalıştırır.
+
+26
+00:02:01,800 --> 00:02:06,090
+Ve sonra her şey dizüstü bilgisayarda çalışması için birkaç komut daha yapacağız.
+
+27
+00:02:06,570 --> 00:02:12,440
+Buna sadece bir defter altçizgi modunun altını çizer ve bağlı olan bağlantıları eşittir.
+
+28
+00:02:12,500 --> 00:02:17,850
+Ve bu, javascripti dizüstü bilgisayarınıza bağlayacak çünkü plotless
+
+29
+00:02:17,850 --> 00:02:22,590
+aslında pandaları ve Python'u etkileşimli javascript kitaplığına bağlıyor.
+
+30
+00:02:23,240 --> 00:02:26,980
+Ve bu defterlerin görselleştirmelere erişmesine izin verecek.
+
+31
+00:02:27,180 --> 00:02:35,640
+Ve sonra nihayetinde bir yöntem olarak C-f hattından çıkıp el koyulan baskıyı kapatıp bunu çalıştırmak isteyeceğiz ve
+
+32
+00:02:36,000 --> 00:02:39,050
+bu, CS cufflinks hattına izin verecektir.
+
+33
+00:02:39,090 --> 00:02:39,810
+Tamam.
+
+34
+00:02:39,810 --> 00:02:42,040
+Her şeyin yoluna gireceğinden emin olmak için burada birkaç adım var.
+
+35
+00:02:42,150 --> 00:02:44,730
+Ancak umarım bunu takip edebilirsiniz.
+
+36
+00:02:44,760 --> 00:02:49,390
+Hadi devam edelim ve şimdi bazı veriler edelim ve oluşturalım.
+
+37
+00:02:49,740 --> 00:02:56,460
+Ben devam edip ZF'nin PD nokta veri çerçevesine eşit olduğunu söyleyeceğim.
+
+38
+00:02:56,550 --> 00:02:58,800
+Ben N'i söyleyeceğim P. o rasgele
+
+39
+00:03:01,470 --> 00:03:05,970
+Rand ve bu yüzden normal dağılım ve sadece 100 by passen.
+
+40
+00:03:06,270 --> 00:03:15,340
+Dolayısıyla, sütunlar için 100 sıra ve içeri girip sütunlar söyleyeceğim, bir dize ayrımı olarak bir b c d'ye eşittir.
+
+41
+00:03:15,550 --> 00:03:19,350
+Bu şekilde ABC ve D sütunlarının bir listesini elde ederiz.
+
+42
+00:03:19,770 --> 00:03:27,210
+Sonra, burada veri çerçevem ​​var DF'yi kontrol edersem, devam edip DL 2 PD veri
+
+43
+00:03:27,210 --> 00:03:34,370
+çerçevesi adı verilen bir veri çerçevesi daha oluşturacağım ve bunun için bir sözlük kullanacağım.
+
+44
+00:03:34,950 --> 00:03:47,910
+Kategorinin bir sütun olduğunu söyleyeceğim ve daha sonra değerler yalnızca bir b ve c veya istediğiniz üç dizeye sahip olacak
+
+45
+00:03:47,910 --> 00:03:51,210
+ve diğer sütun değerleri olacak.
+
+46
+00:03:51,240 --> 00:03:53,800
+Ve bu sadece bazı rasgele değerler dizisi olacak.
+
+47
+00:03:53,850 --> 00:03:57,150
+Hadi başlayalım ve sadece 32 43 ve 50'yi söyleyelim
+
+48
+00:04:00,000 --> 00:04:03,940
+ve bu daha sonra bir bar tarzı stil için kullanılacak.
+
+49
+00:04:03,940 --> 00:04:04,350
+Tamam.
+
+50
+00:04:04,380 --> 00:04:07,160
+Şimdi kol düğmelerini nasıl kullanacağımı ve ben çizelim.
+
+51
+00:04:07,260 --> 00:04:09,850
+Gerçekten çok basittir.
+
+52
+00:04:10,500 --> 00:04:14,220
+Veri çerçevemize bir göz atarsak ABC ve Z burada olur.
+
+53
+00:04:14,250 --> 00:04:21,420
+Bu veri çerçevesinin kompleksini ararsam, panderers MAP planı canlı bir şeyler çizer ve aslında
+
+54
+00:04:21,420 --> 00:04:28,830
+bu komplonun çizgiyi canlı olarak çizgide görmek istediğini varsayarsam ve eğer bunu tekrar çalıştırırsam
+
+55
+00:04:28,830 --> 00:04:34,030
+harita çizimini canlı olarak canlı yayınlayabilir miyim? Burası en üstte.
+
+56
+00:04:34,420 --> 00:04:37,180
+Orada kahrolası gidiyoruz.
+
+57
+00:04:37,380 --> 00:04:40,880
+Ve buraya geri gelip bu komployu bir daha çalıştıracağım.
+
+58
+00:04:41,190 --> 00:04:45,790
+Ve burada Pandur'ların otomatik olarak mat plotless kullanarak yapmış oldukları çizgiyi görüyorum.
+
+59
+00:04:46,050 --> 00:04:51,820
+Bunu ben de değiştirebilirim, arsa yaparım ve neredeyse bir miktar büyünün olacağını göreceğiz.
+
+60
+00:04:51,840 --> 00:04:56,010
+Bu arsa artık arsa çizgisi etkileşimli bir resme dönüştürülmüştür.
+
+61
+00:04:56,100 --> 00:05:00,810
+Ve burada bir şekilde ilerleyebilirim ve aslında o belirli endeks noktasındaki değerleri bana söyleyebilirim.
+
+62
+00:05:00,810 --> 00:05:03,080
+Dolayısıyla, aynı arsa çizgisi arsa.
+
+63
+00:05:03,120 --> 00:05:04,570
+Şimdi etkileşimli.
+
+64
+00:05:04,860 --> 00:05:05,840
+Büyütebilirim.
+
+65
+00:05:05,850 --> 00:05:06,930
+Değerleri kontrol edin.
+
+66
+00:05:06,930 --> 00:05:10,700
+Zum yapmak için çift tıklatabilirim, ayrıca burada araçlar da var.
+
+67
+00:05:10,730 --> 00:05:12,370
+Arsa kaydedebilir ve düzenleyebilirim.
+
+68
+00:05:12,480 --> 00:05:17,380
+Panoyu bir PNB dosyası olarak indirebilirim, öyleyse sadece statik bir görüntü istiyorsanız pan yapabilirsiniz.
+
+69
+00:05:17,400 --> 00:05:26,540
+İstersem etrafımı çevirebilirim, yakınlaştırma yapabilir, eksenlere sıfırlamayı sıfırlayabilir, fareyle üzerine gelmeyi seçebilir veya
+
+70
+00:05:26,630 --> 00:05:29,500
+üzerine gelindiğinde verileri karşılaştırabilirsiniz.
+
+71
+00:05:29,510 --> 00:05:34,170
+Varsayılan olarak muhtemelen genellikle veri karşılaştırmak istiyor ve ardından görüntülemek için belirli sütunları açıp
+
+72
+00:05:34,160 --> 00:05:34,470
+kapatabilirsiniz.
+
+73
+00:05:34,460 --> 00:05:37,930
+Öyleyse sadece görmek ve görmek istiyor olsam ve olabileceğini düşünüyorum.
+
+74
+00:05:38,240 --> 00:05:38,590
+Sağ.
+
+75
+00:05:38,660 --> 00:05:42,920
+Umarım zaten bunun son derece güçlü bir araç olduğunu söyleyebilirsiniz çünkü
+
+76
+00:05:42,990 --> 00:05:49,040
+temelde bir harf arsa eklemelisiniz ve aniden inanılmaz bir etkileşimli veri görselleştirme programcısı gibi görünüyorsunuz.
+
+77
+00:05:49,400 --> 00:05:54,650
+Sırrınız eklediğimde kol düğmeleri kullanıyorum ve kibarca.
+
+78
+00:05:54,770 --> 00:05:55,180
+Tamam.
+
+79
+00:05:55,400 --> 00:05:58,640
+Bu kol düğmeleri için en temel örnek ve ben tıkalıyorum.
+
+80
+00:05:58,740 --> 00:06:02,070
+Ve devam edelim ve yapabileceğimiz çeşitli arazileri şimdi keşfedelim.
+
+81
+00:06:02,270 --> 00:06:06,570
+Saçılma çubuğu kutusu oranı ısı haritaları ve daha pek çok şey yapabiliriz.
+
+82
+00:06:06,710 --> 00:06:11,420
+Dolayısıyla sadece tek yapmamız gereken şey, sadece bunlardan geçmek ve bu gibi sadece arsa çizgileri
+
+83
+00:06:11,420 --> 00:06:14,430
+olmayan diğer arsa tiplerini oluşturmak için arsa nasıl kullanılacağını göstermek.
+
+84
+00:06:14,490 --> 00:06:18,420
+Size dağılım haritasının nasıl yapılacağını göstererek başlayalım.
+
+85
+00:06:18,620 --> 00:06:22,190
+Ben devam edip DMF nokta planını söyleyeceğim.
+
+86
+00:06:22,500 --> 00:06:27,740
+Ardından, tür türünü değiştirmek için tür eşdeğerini belirtin ve dağılmak
+
+87
+00:06:27,750 --> 00:06:33,870
+için dize, x ve y eksenlerini belirtmek için saçılma ve saçılma çizgisidir.
+
+88
+00:06:34,010 --> 00:06:36,040
+İçeri girebilir ve sütun adına göre belirleyebilirsiniz.
+
+89
+00:06:36,080 --> 00:06:45,050
+İçeri girelim ve B sütununa kıyasla bir sütun dağılımı gösterelim ve bunu çalıştırırsak komik bir şeyin
+
+90
+00:06:45,620 --> 00:06:47,510
+ortaya çıkacağını görürsünüz.
+
+91
+00:06:47,510 --> 00:06:48,610
+Böyle bir şey alırsın.
+
+92
+00:06:48,620 --> 00:06:52,850
+Varsayılan olarak plotless, tüm bu noktaları birbirine bağlamak için bir çizgi oluşturmaya çalışacaktır.
+
+93
+00:06:52,860 --> 00:07:02,450
+Bu nedenle modu belirtmek ve dize işaretçileri geçirmek zorunda ve sonra aslında bazı işaretleri burada alırsınız ve işaretleyiciler
+
+94
+00:07:02,450 --> 00:07:07,760
+kontrol edebilirsiniz ve sonra aslında A ve B sütunları karşılaştırabilirsiniz.
+
+95
+00:07:07,820 --> 00:07:11,870
+Bu noktaların her biriyle ilgili bilgileri yakınlaştırabilir ve kontrol edebilirsiniz.
+
+96
+00:07:11,880 --> 00:07:12,680
+Tamam.
+
+97
+00:07:12,690 --> 00:07:19,190
+DFA A-plot kişisini kullanan bir dağılım çizgisini bu şekilde kullanabilirsin x ve y argümanları tür belirten
+
+98
+00:07:19,580 --> 00:07:24,280
+sütun adları scatter'a eşittir ve sonra geçer ve mod işaretleyicilere eşittir.
+
+99
+00:07:24,320 --> 00:07:27,740
+Ayrıca, boyut için argümanlar geçmek gibi başka şeyler de yapabilirsiniz.
+
+100
+00:07:27,810 --> 00:07:29,440
+Bu noktaların daha büyük olmasını istiyorsun.
+
+101
+00:07:29,450 --> 00:07:34,980
+Devam edin ve daha büyük boyut belirtin, ben de ilerleyip bu noktaları daha büyük yapacağım.
+
+102
+00:07:35,380 --> 00:07:39,990
+Şimdi bir bar alanlarına veya bar alanlarına geçelim ve diyelim.
+
+103
+00:07:40,110 --> 00:07:46,550
+Komplo ve dize çubuğunu geçerken çeşit dedim dedim.
+
+104
+00:07:46,550 --> 00:07:51,990
+X'i belirtiyorsun ve dışarı çıkıp kafeinsizliğe geçeceğiz çünkü bu bu arsa için daha uygun.
+
+105
+00:07:51,990 --> 00:07:52,530
+Sonra
+
+106
+00:07:52,520 --> 00:07:59,420
+Bir hatırlatma olarak, kategorik bir sütun ve bir çubuk arsa için sayısal bir sütun anlamı olması gerekir,
+
+107
+00:07:59,490 --> 00:08:03,610
+X'in bunu açıkça göstermek için kategorik bir sütun olmasını istiyorsunuz.
+
+108
+00:08:03,610 --> 00:08:06,650
+Sadece x'in kategori sütununa eşit olduğunu söyleyeceğim.
+
+109
+00:08:06,830 --> 00:08:10,460
+Peki neden değerler sütununa gidiyoruz.
+
+110
+00:08:10,570 --> 00:08:12,060
+Şimdi gidersek, bunu kontrol edersek.
+
+111
+00:08:12,170 --> 00:08:20,030
+Şimdi bir çubuk planım var, burada biraz uzaklaştırdığımızda, bu kategorilerin her birinin değerini görebiliyorum; böylece
+
+112
+00:08:20,030 --> 00:08:23,830
+C 50 B 43 ve 32 oldu.
+
+113
+00:08:23,840 --> 00:08:24,460
+Tamam.
+
+114
+00:08:24,460 --> 00:08:30,330
+Ve isterseniz yakınlaştırabilirsiniz, ancak bu belirli bir marplot için çok yararlı olmayabilir.
+
+115
+00:08:30,500 --> 00:08:32,620
+Devam edin ve devam edin.
+
+116
+00:08:32,750 --> 00:08:38,110
+Şimdi bildiğimiz gibi, verileriniz her zaman uygun bir şekilde konumlandırılamaz, örneğin bir kategorideki değerler sütununda
+
+117
+00:08:38,120 --> 00:08:44,000
+yer alıyorsa ancak yapabileceğiniz şey, verilerinizdeki bir toplama işlevi ile grup olarak adlandırılır ve bunu, aslında onu
+
+118
+00:08:44,000 --> 00:08:48,730
+bir çeşit biçimde form haline getirir. A arsını kullanarak bir çubuk arsa kullanmak mantıklıdır.
+
+119
+00:08:48,750 --> 00:08:50,120
+Bundan ne kastettiğimi göstermeye başlayayım.
+
+120
+00:08:50,120 --> 00:08:52,660
+Orijinal DMF'ye bir göz atın.
+
+121
+00:08:52,940 --> 00:08:55,930
+Bir B C ve D olduğumuzu görebiliriz.
+
+122
+00:08:55,980 --> 00:08:58,350
+Şimdi bundan arıza arayamayız.
+
+123
+00:08:58,380 --> 00:09:01,820
+Aksi halde bir sürü bar alacağız ve bundan anlamı kastettiğimi göstereceğim.
+
+124
+00:09:01,870 --> 00:09:07,680
+Sadece bu tür eşit çubuktur ve her veri noktası için bir sürü çubuk alırsınız ve tam olarak
+
+125
+00:09:07,670 --> 00:09:08,540
+ne istediğiniz değil.
+
+126
+00:09:08,590 --> 00:09:12,860
+Bunun üstünde bir tür toplama işi yapmanız gerekir; örneğin, her
+
+127
+00:09:12,890 --> 00:09:15,300
+sütunun örneklerini saymak istediğinizi görelim.
+
+128
+00:09:15,680 --> 00:09:19,410
+Ve burada her örnek için yalnızca 100 olan bir çubuk arsa var.
+
+129
+00:09:19,430 --> 00:09:26,580
+Bunların hepsi eşit olarak dağıtıldığından, ancak her bir sütunun toplamını almak gibi başka şeyler yapabilirsiniz ve şimdi her
+
+130
+00:09:26,630 --> 00:09:29,660
+bir sütunun toplamını gösteren bir çubuk planımız var.
+
+131
+00:09:29,660 --> 00:09:29,970
+Tamam.
+
+132
+00:09:30,050 --> 00:09:31,030
+Oldukça ilginç şeyler.
+
+133
+00:09:31,040 --> 00:09:36,030
+Ancak, veri çerçevesinin bir fonksiyonu ile bir dizi toplam işlev veya grup çağırdığınızda,
+
+134
+00:09:36,020 --> 00:09:38,830
+bu arsa çubuğunun gerçekten güçlü hale geldiğini unutmayın.
+
+135
+00:09:39,000 --> 00:09:43,640
+Daha muhtemel, veri çerçeveniz bu türden güzel biçimlendirmelerde olmayacak.
+
+136
+00:09:44,210 --> 00:09:45,610
+Tamam, o marplot bu.
+
+137
+00:09:45,770 --> 00:09:46,400
+Hadi tartışalım.
+
+138
+00:09:46,400 --> 00:09:52,430
+Kutu çizimleri Şimdi, kutu çizimleri verileriniz bu gibi görünen bir şey olabilir. Çizimler otomatik
+
+139
+00:09:52,430 --> 00:09:56,650
+olarak bu dağılım için bu tür bir birleştirme yapacaktır.
+
+140
+00:09:57,150 --> 00:10:00,830
+Ve bunu yalnızca tür belirterek yapmak kutuya eşittir.
+
+141
+00:10:00,950 --> 00:10:05,310
+Ve burada, sütunların her biri için otomatik olarak bir kutu arsa hazırlar ve sütunları
+
+142
+00:10:05,310 --> 00:10:07,530
+atlayarak veya kapatarak sütunları açabilir veya kapatabilirsiniz.
+
+143
+00:10:07,620 --> 00:10:12,060
+a ve c düğmelerini tıklayıp Biondi'yi tıklayabilir ve ne
+
+144
+00:10:12,060 --> 00:10:17,880
+istediğimi görebilir ve size bilgi veririm oldukça uygundur kutu için çekirdek karoların üzerinde.
+
+145
+00:10:18,180 --> 00:10:24,290
+Burada DMF ile ya da arsa komplo çizgisinin açıp kapattığını görmek için yalnızca
+
+146
+00:10:24,290 --> 00:10:29,700
+Şimdi, yüzey planının üçünden bahsetmek için bir 3B yüzey planından bahsedelim.
+
+147
+00:10:29,710 --> 00:10:39,350
+Üç veri veri çerçevesine eşit olup olmadığını söyleyecek yeni bir veri çerçevesi oluşturacağım ve ilerleyip X'in
+
+148
+00:10:39,360 --> 00:10:48,690
+bir sütun olduğunu söyleyelim ve biz de y'yi bir olarak belirteceğimiz bir iki üç dört beş
+
+149
+00:10:52,110 --> 00:11:03,260
+olacağız. sütun devalüasyonlar 10 20 30 2010 dolayısıyla yukarı ve aşağı gider ve sonra Z'yi bir sütun olarak belirteceğim.
+
+150
+00:11:03,260 --> 00:11:09,990
+Ve devam edelim ve bunu 500 400 300 200 100 olarak belirtelim.
+
+151
+00:11:10,070 --> 00:11:10,610
+TAMAM.
+
+152
+00:11:10,910 --> 00:11:16,940
+bakacağım ve bu temelde üç değere değinen üç değişken, bir yüzey çizimini kullanabiliriz.
+
+153
+00:11:16,940 --> 00:11:19,600
+Dolayısıyla veri çerçevelerime bir göz atıp
+
+154
+00:11:19,640 --> 00:11:28,160
+Bu üç değişkenin üç boyutlu bir üç boyutlu yüzey çizgisini üç tane çizimde oluşturmak ve
+
+155
+00:11:28,160 --> 00:11:36,760
+türü bir yüzey çizimi olarak belirtmek istersek, burada sahip olduğumuz şeyin bir yüzey çizgisi yaratacaktır.
+
+156
+00:11:36,770 --> 00:11:39,210
+Yani bir yüzey planımız olduğunu görebilirsiniz.
+
+157
+00:11:39,210 --> 00:11:44,390
+Şimdi sana 100'den 500'e kadar söylemek istediğim bu değerlerin
+
+158
+00:11:44,390 --> 00:11:52,370
+etrafında değişen bir tür yüzeye dair başka bir örnek göstereceğim 5 4 3 2 1.
+
+159
+00:11:52,400 --> 00:11:53,430
+Ve bunu planlayalım.
+
+160
+00:11:53,440 --> 00:11:56,020
+Artık bu en üst plana sahip olduğumuzu görebiliyoruz.
+
+161
+00:11:56,030 --> 00:12:01,160
+Şimdi, bu gökkuşağının renk skalasını beğenmemek için, renk skalalarını değiştirebiliriz.
+
+162
+00:12:01,300 --> 00:12:12,290
+Renk ölçeği gibi bir şey söyleyebilir ve sarı için Ardie, beyaz için sarı veya sarı, Mavi için
+
+163
+00:12:12,290 --> 00:12:13,850
+B söyleyebilirsiniz.
+
+164
+00:12:13,850 --> 00:12:17,270
+Ve tüm renk skalası kodları için plotless dokümantasyon kontrol edebilirsiniz.
+
+165
+00:12:17,300 --> 00:12:20,220
+Harita çizelgesi renk haritalarıyla tam olarak uyuşmuyorlar.
+
+166
+00:12:20,240 --> 00:12:21,560
+Dolayısıyla bunu aklınızda tutun.
+
+167
+00:12:21,650 --> 00:12:25,230
+Ve burada, veri çerçevemizden doğrudan çıkan çok güzel bir yüzey planı var.
+
+168
+00:12:25,250 --> 00:12:29,710
+Onu döndürebiliriz, onunla tüm bilgileri dışarı çıkarmak için onunla oynayabiliriz.
+
+169
+00:12:29,720 --> 00:12:30,310
+Tamam.
+
+170
+00:12:30,590 --> 00:12:31,840
+Bunlar üç yüzey.
+
+171
+00:12:31,880 --> 00:12:35,020
+Ve nihayet bir kaç parselden bahsedeceğim.
+
+172
+00:12:35,150 --> 00:12:40,910
+Muhtemelen kendinizi bir histogram olarak yapacağınızı ve tek bir
+
+173
+00:12:40,910 --> 00:12:51,290
+sütun çağırırsanız ve sonra ben histin histogramına eşit olduğunu söylerseniz, bir histogram alırsınız ve aslında başka
+
+174
+00:12:51,290 --> 00:12:54,290
+birinin kutularının sayısını belirleyebilirsiniz. argüman.
+
+175
+00:12:54,350 --> 00:12:59,720
+Örneğin, 25 kutu isterseniz bunu belirtebilir ve daha fazla depo alabilirsiniz.
+
+176
+00:12:59,720 --> 00:13:03,660
+Bırakın, bir sürü teklif belirterek bunu daha belirgin hale getirelim.
+
+177
+00:13:04,190 --> 00:13:04,620
+TAMAM.
+
+178
+00:13:04,660 --> 00:13:05,980
+Ve burada daha fazla kutu var.
+
+179
+00:13:06,020 --> 00:13:11,780
+O kadar çok veri noktası yoktu, öyleyse devam edin ve tüm veri çerçevesini aktardığınızda
+
+180
+00:13:11,780 --> 00:13:12,750
+aklınızda bulundurun.
+
+181
+00:13:12,890 --> 00:13:19,310
+DFA A-plot tür eşdeğerini çağıralım Sadece tüm sütunların üstüste binen bir histogram
+
+182
+00:13:19,360 --> 00:13:24,080
+alırsınız, yani sütunların histogramlarını karşılaştırabilirsiniz; bunları birbirleriyle karşılaştırmak için
+
+183
+00:13:24,080 --> 00:13:24,950
+açıp kapatabilirsiniz.
+
+184
+00:13:24,950 --> 00:13:26,750
+Şimdi bunlar rastgele normal dağıtılır.
+
+185
+00:13:26,750 --> 00:13:30,560
+Dolayısıyla birbirlerini örtüşüyorlar, ki biz bunu nasıl oluşturduğumuzu düşünürsek mantıklı geliyor.
+
+186
+00:13:30,740 --> 00:13:35,840
+Ancak, veri çerçevesindeki tüm sütunlar için lütfen histogramları görmek için bunları sık sık açık hale getirebilirsiniz.
+
+187
+00:13:36,410 --> 00:13:40,490
+Yani sadece bir sütun geçmek veya tüm veri çerçevesini geçmek isteyip istemediğiniz sana
+
+188
+00:13:40,490 --> 00:13:42,590
+kalmış ve daha sonra bunları açıp kapatıyor.
+
+189
+00:13:42,650 --> 00:13:50,450
+Sana göstermek istediğim bir sonraki yayılma türü görselleştirme, hisse senedi verileri için çok kullanılıyor.
+
+190
+00:13:50,550 --> 00:13:55,340
+Dolayısıyla hisse senetleri ile karşılaştırıldığında, ilerlemeye devam edeceğim ve bunları burada rasgele değerlerimizle yapacağım.
+
+191
+00:13:55,340 --> 00:13:59,810
+Daha sonra finansal günün bir kısmını kapatalığımız için aslında biraz daha teknik analiz Blotz göreceğiz.
+
+192
+00:14:00,350 --> 00:14:08,990
+alt çizgi alacağım, birbirlerine karşı onları gösteren çizgiyi alacağım ve sonra birbirlerine karşı yayılmayı gösteren yayılma alanımı alacaklar.
+
+193
+00:14:10,450 --> 00:14:16,190
+Ancak bu iki sütunu söylüyorsam ve veri çerçevemden uzak durursam, A-parseli tür
+
+194
+00:14:16,190 --> 00:14:20,260
+yayılmaya eşit ve bir arsa ve ardından bir
+
+195
+00:14:20,300 --> 00:14:25,190
+Mesela eğer ilerleyip burada 20'de zum yaparsak burada büyütebiliriz.
+
+196
+00:14:25,360 --> 00:14:27,860
+20'ye karşılık geldiğini görelim.
+
+197
+00:14:27,860 --> 00:14:31,460
+Fark yaygin arasi negatif nokta 3:08 arasindadir.
+
+198
+00:14:31,640 --> 00:14:33,770
+Ve bunu burada doğrulayabiliriz.
+
+199
+00:14:33,770 --> 00:14:37,320
+Yani negatif nokta 3 8 eksi nokta 1.
+
+200
+00:14:37,370 --> 00:14:39,700
+2 alacağız. 5 6 orada.
+
+201
+00:14:39,920 --> 00:14:44,910
+Böylece devam edebilir ve bu sonuçları karşılaştırabilirsiniz; bu, iki hisse senedi arasındaki
+
+202
+00:14:44,930 --> 00:14:48,380
+spreadi görmek için hisse senedi verilerinde gerçekten faydalıdır.
+
+203
+00:14:48,530 --> 00:14:54,470
+Size kabarcık komplosu ve kabarcık komplosu bir dağılım çizgisine çok benzer, ancak
+
+204
+00:14:54,680 --> 00:15:02,510
+başka bir değişkene dayalı olarak puanların boyutunu değiştireceğini göstermek için iki tane daha peluş türümüz var.
+
+205
+00:15:02,510 --> 00:15:09,890
+Bu durumda tür baloncuğa eşit derse, X ve Y'yi bir dağılım çizgisi için olduğu gibi belirteceğim ve daha
+
+206
+00:15:09,890 --> 00:15:13,400
+sonra başka bir sütuna dayanan kabarcıkların boyutunu belirteceğim.
+
+207
+00:15:13,450 --> 00:15:14,460
+Hadi devam edelim ve seçelim.
+
+208
+00:15:14,460 --> 00:15:22,160
+mutluluk faktörü vs. ile karşılaştırıldığında dünya GSYİH gibi şeyler için çok görüyorsunuz, dışında bir dağılım var.
+
+209
+00:15:22,610 --> 00:15:28,670
+Bkz. Ve burada şimdi puanların boyutu diğer sütun değerine dayanıyor ve bu tür
+
+210
+00:15:28,670 --> 00:15:30,350
+arazileri, nüfus ve belki Dolayısıyla bunlar, özellikle Birleşmiş Milletler raporları gibi şeyler için oldukça yaygın arsalar.
+
+211
+00:15:30,360 --> 00:15:36,270
+Sağ.
+
+212
+00:15:36,400 --> 00:15:37,070
+İşte kabarcık komplosu.
+
+213
+00:15:37,100 --> 00:15:38,560
+Ve sonra
+
+214
+00:15:38,630 --> 00:15:46,150
+nihayet, matris grafiği, deniz kıyısı çifti arsa ile çok benzer dağılım matrisine ulaşacağız.
+
+215
+00:15:46,180 --> 00:15:46,910
+Yapabileceği tüm sütunların bir dağılım matrisi oluşturur.
+
+216
+00:15:46,910 --> 00:15:50,580
+sayısal olmasını sağlamanız gerekeceği anlamına gelirsiniz.
+
+217
+00:15:50,580 --> 00:15:56,990
+DFA'ya, altçizgi matrisini dağılımını söylerseniz, bunun çalışması için tüm sütunların
+
+218
+00:15:57,050 --> 00:15:59,160
+Dağılım matrisini söyleyelim ve her bir arsa üzerinde ayrı ayrı büyütebilirsiniz.
+
+219
+00:15:59,240 --> 00:16:03,880
+Unutmayın burada çok fazla şey var.
+
+220
+00:16:03,890 --> 00:16:05,740
+Bu yüklemek biraz zaman alacak ve yakınlaştırma ve uzaklaştırma işlemi kadar yavaş da olabilir.
+
+221
+00:16:05,750 --> 00:16:09,540
+Bu bakımdan çok büyük veri kümelerinde kullanın.
+
+222
+00:16:09,560 --> 00:16:12,140
+Aksi takdirde Python çekirdeğini çökebilirsin.
+
+223
+00:16:12,170 --> 00:16:17,480
+Tamam, bu derste devam ettireceğimiz temel arsa türleri için.
+
+224
+00:16:17,750 --> 00:16:21,350
+grafik galerinizin bulunduğu bu kol düğmeleri öğretici bağlantılarını kontrol edebilirsiniz.
+
+225
+00:16:21,410 --> 00:16:26,240
+Daha fazla bilgi edinmek ve dokümantasyonla ilgili daha ayrıntılı bilgi almak isterseniz aslında
+
+226
+00:16:26,240 --> 00:16:32,480
+web sayfasına gideceğim ve sadece hub'ı arayarak elde edebileceğiniz ve kol düğmelerinin sizi Cesar Santos Jorge çizgi
+
+227
+00:16:32,480 --> 00:16:38,930
+kol düğmeleri tarafından barındırılan bu sayfaya götürmesi gerektiği konusunda katkıda bulunmuş bulunuyorum. daha önce gördüğünüz gibi, burada bir
+
+228
+00:16:38,930 --> 00:16:43,520
+Çevrimiçi Pandurların hangi renklerin tamamen beğenildiğini bildirin.
+
+229
+00:16:43,860 --> 00:16:47,690
+Burada çok iyi bilgiler var.
+
+230
+00:16:47,700 --> 00:16:49,500
+Örneğin, eğer devam ederseniz ve
+
+231
+00:16:49,520 --> 00:16:54,800
+pandaları söylerseniz, bu bilgileri birazcık geçirdik, bar tabancasının histogramları, kutu arsasının alan çizimlerindeki bazı
+
+232
+00:16:55,250 --> 00:17:00,970
+daha detaylı gruplama değerleri gibi yığılmış histogramlar gibi aslında daha basit bazı çizim yöntemleri vardır. gitmedim
+
+233
+00:17:00,970 --> 00:17:05,320
+Ama temelde sadece türlerin alana eşit olduğunu söylüyor ve biraz daha bilgi var.
+
+234
+00:17:05,330 --> 00:17:09,820
+Şimdi aslında daha bir sürü şey yapmış durumdayız, ancak daha fazla bilgi
+
+235
+00:17:09,830 --> 00:17:14,120
+istiyorsanız, bu dokümantasyon sayfasını her zaman çok güzel bir şekilde görebilirsiniz.
+
+236
+00:17:14,120 --> 00:17:16,810
+Tamam.
+
+237
+00:17:17,280 --> 00:17:17,890
+Son olarak,
+
+238
+00:17:18,200 --> 00:17:22,790
+sadece kol düğmelerinin yerleşik bazı teknik analiz yetenekleri olduğunu belirtmek istedim.
+
+239
+00:17:22,790 --> 00:17:23,800
+Hâlâ beta durumunda.
+
+240
+00:17:23,840 --> 00:17:25,790
+daha fazla bilgi bulabilirsiniz.
+
+241
+00:17:25,790 --> 00:17:32,000
+Tamamen serbest bırakılmadınız ancak bunları bu kütüphanenin teknik analiz bölümünde kontrol edebilirsiniz;
+
+242
+00:17:34,460 --> 00:17:41,000
+buradaki tıkırtılar bölümüne tıklayıp CA pi'yi kontrol ederek bu teknik analiz arsasıyla ilgili
+
+243
+00:17:41,000 --> 00:17:44,240
+Ve bu pi dosyasının teknik analizi.
+
+244
+00:17:44,540 --> 00:17:46,910
+Yine bu gelişmiş şeylerdir ve özellikle finansal analizlere ayrılmıştır.
+
+245
+00:17:46,910 --> 00:17:53,480
+Finansal analizle hiç ilgilenmiyorsanız hiç endişelenmeyin.
+
+246
+00:17:53,480 --> 00:17:57,010
+Burada bir çift fonksiyonu ve yapabileceğiniz birkaç tür kontrol edebilirsiniz.
+
+247
+00:17:57,030 --> 00:18:00,320
+Arsa ortalamaları veya arsalar veya stoklar arasındaki korelasyon gibi şeyleri yapmanızı sağlar. Bu arsa türlerinden bazılarını daha
+
+248
+00:18:00,320 --> 00:18:06,840
+sonra finansal veri kaptanlık projesinin isteğe bağlı bir bölümünde inceleyeceğiz.
+
+249
+00:18:06,920 --> 00:18:12,190
+Ancak, bu tür şeylerle ilgilenmiyorsanız endişelenmeyin.
+
+250
+00:18:12,250 --> 00:18:12,940
+Sadece, finansal analizle
+
+251
+00:18:13,070 --> 00:18:15,610
+ilgileniyorsanız ve bunun için etkileşimli çizimler oluşturmak için sizin yerinizde olduğunu bilmenizi isterim.
+
+252
+00:18:15,680 --> 00:18:20,120
+Tamam.
+
+253
+00:18:20,210 --> 00:18:22,040
+Herkese teşekkürler.
+
+254
+00:18:22,370 --> 00:18:23,000
+Umarım plotline kol düğmeleri hakkında bilgi edinmekten hoşlanıyordur.
+
+255
+00:18:23,240 --> 00:18:23,930
+Gerçekten güçlü bir araçtır.
+
+256
+00:18:23,930 --> 00:18:26,260
+Ve iyi haber şu ki, bilginizi o kadar çok ayarlamanız gerekmiyor.
+
+257
+00:18:26,270 --> 00:18:27,710
+Aslında bir göz ekleyin ve ne tür bir arsa toplamak istediğinizi hatırlayın.
+
+258
+00:18:27,770 --> 00:18:31,110
+TAMAM.
+
+259
+00:18:31,120 --> 00:18:35,060
+Herkese teşekkürler, bir sonraki konuşmada da göreceğim.
+
+260
+00:18:35,240 --> 00:18:35,880
+&nbsp;
+
+261
+00:18:36,110 --> 00:18:38,170
+&nbsp;

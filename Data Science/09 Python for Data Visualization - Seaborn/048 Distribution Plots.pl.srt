@@ -1,0 +1,1031 @@
+1
+00:00:05,040 --> 00:00:10,260
+Cześć wszystkim i zapraszam do wykładu z działu dystrybucji dla Seaborna. W
+
+2
+00:00:10,260 --> 00:00:15,990
+tym wykładzie omówimy różne typy działek z Seabornem, które pozwolą nam zwizualizować dystrybucję zbioru danych.
+
+3
+00:00:16,530 --> 00:00:20,170
+Przejdźmy dalej i przejdź do notatnika Jowisza, aby rozpocząć.
+
+4
+00:00:21,270 --> 00:00:23,370
+OK, jestem w zeszycie.
+
+5
+00:00:23,370 --> 00:00:29,740
+Chcę zacząć od zaimportowania seaborne i zgodnie z konwencją importujemy Seaborn jako asinus.
+
+6
+00:00:29,970 --> 00:00:35,430
+A ponieważ jestem w zeszycie, zamierzam powiedzieć, że fabuła Matta jest żywa w linii w
+
+7
+00:00:35,430 --> 00:00:38,340
+ten sposób, że widzę wizualizacje wewnątrz notebooka.
+
+8
+00:00:38,880 --> 00:00:39,210
+W porządku.
+
+9
+00:00:39,210 --> 00:00:44,040
+A teraz zdobądźmy trochę danych, że w rzeczywistości morskie parki są dostarczane z kilkoma wbudowanymi zestawami danych,
+
+10
+00:00:44,040 --> 00:00:45,220
+które można bezpośrednio załadować.
+
+11
+00:00:45,840 --> 00:00:50,480
+I mam zamiar pobrać jeden zwany poradami i zapisać go jako ramkę danych zwaną napiwkami.
+
+12
+00:00:50,640 --> 00:00:58,210
+Możesz to zrobić, mówiąc po prostu, że Tipps jest równy zestawowi danych ładowania Asinus, a następnie passen tips jako ciąg.
+
+13
+00:00:59,280 --> 00:01:04,560
+A to załaduje zestaw danych końcówek, a następnie mogę faktycznie sprawdzić stan ramki i
+
+14
+00:01:04,560 --> 00:01:06,050
+wygląda to tak.
+
+15
+00:01:06,150 --> 00:01:11,580
+Jest tu siedem kolumn, a to w zasadzie tylko dane odnoszące się do ludzi, którzy jedli
+
+16
+00:01:11,580 --> 00:01:13,540
+posiłek, a następnie zostawili napiwek.
+
+17
+00:01:13,560 --> 00:01:19,350
+Tak więc masz całkowitą cenę lub rachunek za posiłek, ile lewicy jako napiwku płeć lub płeć osoby
+
+18
+00:01:19,350 --> 00:01:24,620
+opuszczającej napiwek, niezależnie od tego, czy palacz był palaczem, jaki dzień i godzinę spożywał posiłek.
+
+19
+00:01:24,660 --> 00:01:27,030
+A potem wielkość imprezy.
+
+20
+00:01:27,030 --> 00:01:27,380
+W porządku.
+
+21
+00:01:27,420 --> 00:01:34,590
+Przejdźmy dalej i omówmy nasz pierwszy typ działki, który jest tą fabułą CISC, że ta fabuła
+
+22
+00:01:34,590 --> 00:01:39,720
+pozwala nam pokazać dystrybucję jednowymiarowego zbioru obserwacji i wiecie, że jest to
+
+23
+00:01:39,720 --> 00:01:43,610
+po prostu inny sposób powiedzenia tylko jednej zmiennej.
+
+24
+00:01:43,620 --> 00:01:45,350
+Wejdźmy i zbadajmy to.
+
+25
+00:01:45,390 --> 00:01:51,870
+Zamierzam powiedzieć, że Asinus pomyślał o tym spisku, a następnie dla tej fabuły, co robisz, po prostu przekazujesz pojedynczą
+
+26
+00:01:51,870 --> 00:01:53,580
+kolumnę swojej ramki danych.
+
+27
+00:01:53,850 --> 00:01:57,610
+W takim przypadku sprawdźmy, jak rozłożony jest całkowity rachunek.
+
+28
+00:01:58,130 --> 00:02:03,690
+Tak więc zamierzam powiedzieć całkowity rachunek, a następnie uruchomić komórkę i powinieneś uzyskać działkę, która wygląda tak.
+
+29
+00:02:03,930 --> 00:02:06,100
+Jeśli otrzymasz ostrzeżenie tutaj, nie przejmuj się tym.
+
+30
+00:02:06,120 --> 00:02:08,900
+To faktycznie musi zrobić, jeśli inny pakiet nazywa się modelami statystyk.
+
+31
+00:02:09,000 --> 00:02:11,220
+Nie wpłynie to na twój aktualny kod Seaborn.
+
+32
+00:02:11,520 --> 00:02:13,810
+Ale tutaj nie mamy żadnego ostrzeżenia, więc jesteśmy w porządku.
+
+33
+00:02:14,220 --> 00:02:20,990
+Zauważ, że dostaję w zasadzie histogram i to, co jest znane jako k d e oszacowanie gęstości jądra, to
+
+34
+00:02:21,000 --> 00:02:22,420
+jest tutaj linia.
+
+35
+00:02:22,530 --> 00:02:26,460
+Później w tym wykładzie omawiamy, czym jest ta Katie i jak możemy ją
+
+36
+00:02:26,460 --> 00:02:27,090
+zbudować.
+
+37
+00:02:27,150 --> 00:02:34,680
+Ale na razie możemy go usunąć, jeśli chcemy, mówiąc, jako dodatkowy argument, że Katie jest równa fałszywej.
+
+38
+00:02:36,870 --> 00:02:39,060
+I po prostu wpisując Katy jest równa false.
+
+39
+00:02:39,060 --> 00:02:44,700
+Teraz zasadniczo posiadasz tylko histogram, a histogram jest po prostu rozkładem, w którym znajduje się
+
+40
+00:02:44,700 --> 00:02:46,010
+twój całkowity rachunek.
+
+41
+00:02:46,170 --> 00:02:52,020
+Widzisz więc, że na osi Y masz liczbę, a następnie te paski na osi X jako
+
+42
+00:02:52,050 --> 00:02:52,780
+pojemniki.
+
+43
+00:02:52,890 --> 00:02:58,940
+Zasadniczo oznacza to, że większość twoich rachunków wynosi od 10 do 20 $.
+
+44
+00:02:59,000 --> 00:03:03,510
+A jeśli chcesz uzyskać więcej informacji na ten temat, możesz zmienić liczbę pojemników,
+
+45
+00:03:03,510 --> 00:03:09,750
+aby móc iść dalej, a trzeci argument to Sabin, a następnie odpowiednia liczba ofert, a liczba naprawdę zależy
+
+46
+00:03:09,750 --> 00:03:11,240
+od Twojego zestawu danych.
+
+47
+00:03:11,400 --> 00:03:14,820
+Ale przejdźmy teraz i wybierzmy teraz 30.
+
+48
+00:03:14,820 --> 00:03:19,440
+Teraz możemy uzyskać nieco więcej definicji i nadal widzimy, że większość rachunków ma
+
+49
+00:03:19,440 --> 00:03:21,560
+miejsce między 10 a 20.
+
+50
+00:03:21,900 --> 00:03:28,490
+Jeśli wybierzesz wartość, która jest zbyt wysoka, na przykład, przejdźmy dalej i wpisz 100,
+
+51
+00:03:28,500 --> 00:03:35,250
+zaczniesz robić dziwny scenariusz, w którym zasadniczo zaczniesz rysować każde pojedyncze wystąpienie całkowitych rachunków dla
+
+52
+00:03:36,090 --> 00:03:37,640
+każdego punktu cenowego.
+
+53
+00:03:37,650 --> 00:03:43,740
+Dlatego zazwyczaj staram się znaleźć równowagę pod względem wielkości, ale to naprawdę zależy od twojej fabuły.
+
+54
+00:03:43,770 --> 00:03:44,070
+DOBRZE.
+
+55
+00:03:44,100 --> 00:03:46,930
+Wygląda na to, że mamy dobry pomysł na informacje tutaj.
+
+56
+00:03:47,040 --> 00:03:50,940
+A jeśli potrafi odczytać ten wykres, może po prostu powiedzieć, że większość rachunków zdarza się gdzieś
+
+57
+00:03:51,000 --> 00:03:54,320
+pomiędzy 10 a 20 USD i zaczynają zanikać, gdy stajesz się coraz wyższy.
+
+58
+00:03:54,330 --> 00:04:00,360
+Cena rachunku Jest to fabuła, która pozwala wizualizować dystrybucję w zasadzie histogram i można dodać do
+
+59
+00:04:00,720 --> 00:04:02,710
+tego ciasto do jedzenia.
+
+60
+00:04:02,730 --> 00:04:05,930
+Ale dowiemy się o spisku Katie później.
+
+61
+00:04:05,970 --> 00:04:13,620
+Porozmawiajmy o działce złącza i wspólnych działkach z morza. Mogę powiedzieć, że wspólne wykresy Asinusa pozwalają w zasadzie
+
+62
+00:04:13,620 --> 00:04:20,670
+dopasować się do tych działek na podstawie różnych danych, co oznacza, że zasadniczo można połączyć dwa różne
+
+63
+00:04:20,670 --> 00:04:21,950
+wykresy dystrybucji.
+
+64
+00:04:22,110 --> 00:04:24,370
+A przez to jest tylko dwie zmienne.
+
+65
+00:04:24,480 --> 00:04:29,640
+A kiedy masz jakiś parametr, z którym będziemy się bawić, to pozwala nam wybrać, w
+
+66
+00:04:29,640 --> 00:04:32,340
+jaki sposób chcemy porównać te dwie dystrybucje.
+
+67
+00:04:32,340 --> 00:04:35,660
+Pozwól mi wejść i pokaż, jak możemy wykorzystać esencję jako punkt wyjścia.
+
+68
+00:04:35,670 --> 00:04:41,130
+Najpierw masz zmienną passen in x, a następnie musisz przekazać zmienną Y, a
+
+69
+00:04:41,130 --> 00:04:43,910
+następnie musisz przekazać swój zestaw danych.
+
+70
+00:04:44,100 --> 00:04:48,400
+Zacznijmy od końca, aby dane pasażerów były ustawione jako wskazówki.
+
+71
+00:04:48,450 --> 00:04:54,510
+Zatem ten rodzaj ramki danych, a następnie dla x i y wystarczy pasand ciągi, które są nazwami kolumn.
+
+72
+00:04:54,510 --> 00:04:56,690
+Dwie rzeczy, które chcesz porównać ze sobą.
+
+73
+00:04:56,700 --> 00:05:02,980
+Więc na przykład może chcę porównać rozkład całkowitego rachunku z rozmiarem końcówki.
+
+74
+00:05:03,030 --> 00:05:04,440
+Zróbmy to.
+
+75
+00:05:04,470 --> 00:05:14,350
+Zamierzam powiedzieć całkowity rachunek jako mój ex i po drodze Access Mam zamiar umieścić w napiwku końcówkę kolumny.
+
+76
+00:05:14,360 --> 00:05:19,500
+Teraz właśnie przechodzę przez kolumnę z całkowitą rachunkiem, a następnie dane są równe wskazówkom i
+
+77
+00:05:20,980 --> 00:05:25,730
+otrzymuję wykres, który wygląda tak, jak w istocie tylko dwie działki dystrybucji.
+
+78
+00:05:25,950 --> 00:05:31,680
+Możesz zobaczyć końcówkę na osi Y i całkowity rachunek wzdłuż osi X, a następnie pomniejszyć, aby zobaczyć
+
+79
+00:05:31,690 --> 00:05:32,670
+cały wykres.
+
+80
+00:05:33,250 --> 00:05:38,970
+A w międzyczasie mam wykres rozrzutu, a ten wykres rozrzutu właściwie ma sens, ponieważ wygląda na to,
+
+81
+00:05:38,980 --> 00:05:45,550
+że ma tendencję do tego, że w miarę jak wzrastasz w całkowitym rachunku, idziesz wyżej w napiwku i ma to
+
+82
+00:05:45,550 --> 00:05:49,480
+sens, ponieważ wskazówki są zazwyczaj proporcjonalne do całkowitego rachunku .
+
+83
+00:05:49,560 --> 00:05:57,330
+Teraz wspólne wykresy faktycznie dają dodatkowy parametr argumentu o nazwie rodzaj i ten rodzaj parametru pozwala
+
+84
+00:05:57,370 --> 00:06:03,270
+wpływać na to, co faktycznie dzieje się w tym wspólnym wykresie.
+
+85
+00:06:03,270 --> 00:06:07,860
+W tej chwili domyślnie jest to punkt rozproszenia, ale możesz także
+
+86
+00:06:10,620 --> 00:06:15,750
+przekazać argument, taki jak hex i hex, aby w zasadzie utworzyć reprezentację rozkładu sześciokąta.
+
+87
+00:06:15,750 --> 00:06:21,660
+Jest podobny do rozproszenia, ale w zasadzie jeśli sześciokąt ma określoną liczbę punktów, robi
+
+88
+00:06:21,660 --> 00:06:27,150
+się ciemniejszy, a jeśli ma mniej punktów, staje się lżejszy, to tylko
+
+89
+00:06:27,150 --> 00:06:33,160
+sposób na nie umieszczanie wszystkich punktów rozpraszania, ale pokazanie rozkładu za pomocą te sześciokąty.
+
+90
+00:06:33,150 --> 00:06:38,400
+Kolejnym argumentem, który możemy przedstawić jako rodzaj, jest e g, co oznacza regresję.
+
+91
+00:06:38,740 --> 00:06:43,120
+A to będzie wyglądać jak wykres rozrzutu, z wyjątkiem tego, że Seaborn zamierza narysować
+
+92
+00:06:43,120 --> 00:06:43,920
+linię regresji.
+
+93
+00:06:43,930 --> 00:06:48,840
+Teraz jeszcze nie dowiadujemy się o regresji liniowej, ale tak długo, jak temat uczenia maszynowego,
+
+94
+00:06:48,850 --> 00:06:54,240
+ale później, kiedy podejdziemy do tematu, wrócimy do tego i omawiamy, w jaki sposób zbudowana jest ta
+
+95
+00:06:54,250 --> 00:06:54,930
+linia.
+
+96
+00:06:55,200 --> 00:07:01,110
+Ale w zasadzie jest to po prostu prawie jak liniowe dopasowanie do danych punktów rozproszonych i
+
+97
+00:07:01,120 --> 00:07:05,940
+możesz zobaczyć, że ma wartość P w współczynniku Peersona, o czym będziemy dyskutować
+
+98
+00:07:05,940 --> 00:07:07,910
+później, kiedy omawiamy liniową regresję.
+
+99
+00:07:07,950 --> 00:07:14,830
+W końcu w innym rodzaju, który możesz umieścić tutaj, jest KDE i to też pozwala ci to mieć.
+
+100
+00:07:14,820 --> 00:07:20,410
+Wspomniałem K-T, który po prostu pokazuje gęstość miejsc, w których te punkty pasują najbardziej.
+
+101
+00:07:21,570 --> 00:07:29,580
+W porządku, posuwajmy się naprzód, a przejście od wspólnej fabuły będzie zazwyczaj polegało na korzystaniu z fabuły z domyślnym rozproszeniem,
+
+102
+00:07:29,880 --> 00:07:34,300
+ponieważ jest to zasadniczo najłatwiejszy do odczytania i daje sporo informacji
+
+103
+00:07:34,290 --> 00:07:35,850
+bezpośrednio od nietoperza.
+
+104
+00:07:35,860 --> 00:07:43,300
+Zamierzamy iść dalej i rozwinąć ten pomysł, pokazując, że wykres parami i parami wykresów jest zasadniczo
+
+105
+00:07:43,290 --> 00:07:49,000
+oparty na relacjach parami na całej ramce danych przynajmniej dla kolumn liczbowych.
+
+106
+00:07:49,140 --> 00:07:53,780
+Obsługuje także argument koloru barwy dla kolumn kategorialnych, które pokażę ci później.
+
+107
+00:07:54,190 --> 00:08:01,680
+Ale widzimy tutaj na górze, że mamy ten wątek wspólnego, który plan jest w istocie zrobić,
+
+108
+00:08:01,690 --> 00:08:08,260
+zrobić ten wspólny wykres dla każdej możliwej kombinacji kolumn numerycznych w tej ramce danych.
+
+109
+00:08:08,250 --> 00:08:09,590
+Pozwól, że pokażę ci, co mam na myśli.
+
+110
+00:08:09,750 --> 00:08:11,700
+Ponieważ zrobi to dla wszystkich kombinacji.
+
+111
+00:08:11,700 --> 00:08:15,400
+Zasadniczo wystarczy zadzwonić do S i S, myśląc o spisku i przekazując ramkę danych.
+
+112
+00:08:15,430 --> 00:08:18,250
+I to jest coś, co będziemy robić całkiem sporo podczas całego kursu.
+
+113
+00:08:18,250 --> 00:08:21,510
+Pamiętaj, że im większa jest twoja ramka danych, tym dłużej trwa fabuła.
+
+114
+00:08:21,660 --> 00:08:26,460
+Tak więc wiele razy na działkę zajmuje trochę czasu, jeśli masz bardzo dużą ramkę danych zamiast ramek stosunkowo
+
+115
+00:08:26,470 --> 00:08:26,790
+małych.
+
+116
+00:08:26,790 --> 00:08:28,080
+Więc jesteśmy w porządku.
+
+117
+00:08:28,200 --> 00:08:33,280
+I tutaj mamy w zasadzie wykres pary dla wszystkich liczbowych wartości kolumn.
+
+118
+00:08:33,270 --> 00:08:36,430
+Więc mamy rozmiar vs. całkowity rozmiar rachunku a wskazówka.
+
+119
+00:08:36,420 --> 00:08:42,660
+A następnie, gdy dojdziesz do parametru w stosunku do siebie na przykład wielkość w porównaniu do wielkości zamiast faktycznie robić
+
+120
+00:08:42,660 --> 00:08:46,310
+wykres rozrzutu, który kiedy ma sens, po prostu masz linię prostą.
+
+121
+00:08:46,380 --> 00:08:48,680
+Zamiast tego pojawia się histogram.
+
+122
+00:08:49,120 --> 00:08:51,060
+To samo dotyczy Tipa i Tipa.
+
+123
+00:08:51,100 --> 00:08:57,600
+A dla całkowitego rachunku kontra całkowity rachunek oznacza to, że jest to dobry sposób na szybkie wizualizowanie
+
+124
+00:08:57,610 --> 00:08:58,280
+danych.
+
+125
+00:08:58,410 --> 00:09:06,400
+I jeszcze ładniejsze jest to, że możesz dodać odcień hue do tego, co jesz, a argument hewe jest tam, gdzie
+
+126
+00:09:06,390 --> 00:09:08,140
+mógłbyś przejść w kolumnie.
+
+127
+00:09:08,130 --> 00:09:15,420
+Celem kategorycznej kolumny kategorycznej nie jest kategoria liczbowa ani ciągła, lecz rzeczywista.
+
+128
+00:09:15,450 --> 00:09:21,040
+Na przykład kolumna z seksem jest kategoryczna, ponieważ są w niej dwie kategorie: męska i żeńska.
+
+129
+00:09:22,710 --> 00:09:31,650
+A kiedy przekażesz to, gdy przekażesz nazwę kolonii równą płcią, będzie ona koloryzować punkty danych w oparciu
+
+130
+00:09:31,680 --> 00:09:35,480
+o kolumnę, którą umieścisz w odcieniu.
+
+131
+00:09:35,520 --> 00:09:40,560
+Więc tutaj wszystkie zielone punkty są żeńskie w oparciu o tę legendę i wszystkie męskie punkty.
+
+132
+00:09:40,630 --> 00:09:42,930
+Będziemy pomniejszać, żebyśmy mogli zobaczyć całość.
+
+133
+00:09:43,120 --> 00:09:45,600
+Wszystkie niebieskie punkty są męskie.
+
+134
+00:09:45,610 --> 00:09:52,690
+Jako trzeci argument można określić paletę, a paleta pozwala na jej kolorowanie za pomocą
+
+135
+00:09:52,890 --> 00:09:54,870
+określonej palety kolorów.
+
+136
+00:09:54,880 --> 00:09:59,820
+Omówimy palety, kolor i styl na samym końcu serii wykładów morskich.
+
+137
+00:09:59,830 --> 00:10:01,900
+Teraz pokażę ci tylko przykład.
+
+138
+00:10:01,890 --> 00:10:06,690
+Zasadniczo istnieją te ciągi map kolorów, które pochodzą z tej fabuły na żywo, które można
+
+139
+00:10:06,900 --> 00:10:11,100
+przekazać w jego palecie i będą wybierać określone kolory niezależnie od parametrów.
+
+140
+00:10:11,160 --> 00:10:16,650
+I tutaj widzimy, że teraz poczta jest niebieska, a kobieta jest tego rodzaju jasnoróżowym kolorem.
+
+141
+00:10:16,650 --> 00:10:17,230
+W porządku.
+
+142
+00:10:17,250 --> 00:10:20,040
+Dotkniemy palet w kolorach i stylach znacznie więcej.
+
+143
+00:10:20,050 --> 00:10:25,770
+Przejdźmy dalej i przejdźmy do plotek Roug, a nieuczciwe wątki są w rzeczywistości bardzo prostą koncepcją, ale
+
+144
+00:10:25,770 --> 00:10:28,600
+zamierzamy wykorzystać koncepcję nieuczciwego spisku, aby faktycznie budować.
+
+145
+00:10:28,620 --> 00:10:28,980
+Jestem.
+
+146
+00:10:28,990 --> 00:10:38,770
+Wyjaśnij działkę K-T, którą widzieliśmy wcześniej, mam zamiar iść dalej i powiedzieć S. ZA. Roug spiskuje i tak jak właśnie
+
+147
+00:10:38,860 --> 00:10:43,110
+wyrysowuje wykres dystrybucji, który przejdziesz w jednej kolumnie tutaj.
+
+148
+00:10:43,180 --> 00:10:51,040
+Więc powiemy wskazówki i przejdźmy do kolumny total bill i to, co robi dywan, to bardzo
+
+149
+00:10:51,040 --> 00:10:52,450
+prosta koncepcja.
+
+150
+00:10:52,450 --> 00:10:59,980
+Po prostu rysuje kreskę dla każdego punktu w tym jednolitym lub unikatowym rozkładzie wariantowym, w
+
+151
+00:10:59,980 --> 00:11:01,550
+zasadzie jednej zmiennej.
+
+152
+00:11:01,570 --> 00:11:06,710
+Zamiast więc jak histogram, pozwólcie, że pójdę dalej i sprawię, że ten wątek będzie jeszcze jeden raz do porównania.
+
+153
+00:11:07,150 --> 00:11:12,280
+Powiem tak szybko, jak tylko ta działka zasugeruje całkowity rachunek.
+
+154
+00:11:12,280 --> 00:11:17,900
+Uruchom to i chodźmy powiedzieć, że Katie jest fałszywa.
+
+155
+00:11:20,010 --> 00:11:27,040
+OK, więc różnica pomiędzy histogramem poniżej i tym działaniem Rugge'a polega na tym, że histogram ma w zasadzie pojemniki
+
+156
+00:11:27,040 --> 00:11:32,920
+i zlicza ile kresek było w tym pojemniku, a następnie pokazuje go jako numer tutaj,
+
+157
+00:11:32,920 --> 00:11:39,480
+a to oznacza, że jest między 10, a ja nie. Wiem, że 11 jest, jeśli spojrzymy na to.
+
+158
+00:11:39,570 --> 00:11:41,200
+Czterdzieści pięć kresek.
+
+159
+00:11:41,250 --> 00:11:43,210
+Wszystkie są ułożone jeden na drugim.
+
+160
+00:11:43,360 --> 00:11:48,910
+A potem, gdy idziemy dalej w całkowitej cenie rachunku, jest mniej Roug lub mniej kresek, a
+
+161
+00:11:48,970 --> 00:11:51,070
+to oznacza, że Ben będzie mniejszy.
+
+162
+00:11:51,070 --> 00:11:55,840
+To jest podstawowa relacja między RAM-ami SR-GR i tym nieuczciwym spiskiem, który będzie działał na naprawdę
+
+163
+00:11:55,840 --> 00:11:56,450
+prostą koncepcję.
+
+164
+00:11:56,560 --> 00:12:01,730
+Wystarczy narysować kreskę dla każdego punktu wzdłuż linii dystrybucji.
+
+165
+00:12:01,750 --> 00:12:02,180
+W porządku.
+
+166
+00:12:02,230 --> 00:12:03,460
+To całkowity rachunek.
+
+167
+00:12:03,510 --> 00:12:09,490
+To, co chcemy zrobić, to budować ideę nieuczciwych fabuł, aby wyjaśnić, czym jest ta prawdziwa fabuła
+
+168
+00:12:10,960 --> 00:12:13,260
+Kaytee i która będzie właśnie tutaj.
+
+169
+00:12:13,450 --> 00:12:17,820
+Jak właściwie budujemy tę linię w oparciu o te fałszywe wątki?
+
+170
+00:12:18,010 --> 00:12:26,200
+I widzisz, że ma on pewien związek z nieuczciwą fabułą, liczy się działki KDE, co oznacza wykresy gęstości gęstnienia jądra,
+
+171
+00:12:26,260 --> 00:12:32,260
+i możesz to sprawdzić w Google i sprawdzić w Wikipedii wykresy gęstości gęstnienia jądra,
+
+172
+00:12:32,260 --> 00:12:38,320
+a strona będzie wyglądać jak ta gęstość loków oszacowanie i jest to naprawdę przewijanie
+
+173
+00:12:38,440 --> 00:12:39,520
+w dół.
+
+174
+00:12:39,520 --> 00:12:43,440
+To naprawdę fajna figura tutaj i zasadniczo zamierzamy ją skonstruować.
+
+175
+00:12:43,450 --> 00:12:47,230
+Zauważysz, że każdy z tych czarnych kresek jest tutaj sprytem.
+
+176
+00:12:47,230 --> 00:12:48,460
+Rzeczywiste punkty.
+
+177
+00:12:48,700 --> 00:12:53,140
+A potem masz te małe normalne rozkłady Gaussa na górze każdego punktu.
+
+178
+00:12:53,200 --> 00:12:54,580
+A potem podsumuj wszystko.
+
+179
+00:12:54,640 --> 00:12:58,540
+Otrzymujesz ostateczną ocenę gęstości ziarn Currence.
+
+180
+00:12:58,570 --> 00:13:02,150
+Co mam na myśli przez normalną dystrybucję lub rozkład Gaussa?
+
+181
+00:13:02,410 --> 00:13:08,010
+No cóż, jeśli spojrzysz na Wikipedię Nessus z teorii prawdopodobieństwa, to rozkład normalny i
+
+182
+00:13:08,080 --> 00:13:11,770
+najprawdopodobniej najprawdopodobniej najbardziej rozpowszechniony ciągły rozkład prawdopodobieństwa centralnie.
+
+183
+00:13:11,780 --> 00:13:16,780
+To takie normalne dystrybucje, w których mówisz jak, jak wszyscy robili na swoim teście
+
+184
+00:13:16,780 --> 00:13:20,130
+i oceniasz wszystkich uczniów, a następnie widzisz rozkład wyników.
+
+185
+00:13:20,140 --> 00:13:26,530
+Zwykle więc coś znormalizowanego w ten sposób lub np. Wiek ludzi czy wzrost ludzi
+
+186
+00:13:26,530 --> 00:13:29,950
+zwykle ma wiele wspólnego z normalną dystrybucją.
+
+187
+00:13:29,950 --> 00:13:30,420
+DOBRZE.
+
+188
+00:13:30,760 --> 00:13:36,160
+Przejdźmy dalej i wróćmy do książki notatek Jowisza i dotknijmy tych tematów nieco bardziej szczegółowo, aby
+
+189
+00:13:37,270 --> 00:13:38,340
+to zrobić.
+
+190
+00:13:38,380 --> 00:13:42,880
+Zamierzam skopiować i wkleić kod z książki do notatek i nie musisz się martwić o zrozumienie tego
+
+191
+00:13:42,880 --> 00:13:43,360
+kodu.
+
+192
+00:13:43,420 --> 00:13:49,320
+Chodzi tylko o zbudowanie schematu dla wyjaśnienia za jednym zamachem, aby go skopiować i wkleić.
+
+193
+00:13:50,170 --> 00:13:54,510
+Skopiowałem i wkleiłem ten kod i pozwoliłem sobie szybko zepsuć się z tymi kodami.
+
+194
+00:13:54,610 --> 00:13:56,260
+Mam tylko kilka importów.
+
+195
+00:13:56,260 --> 00:13:58,690
+Tworzę zbiór danych losowych danych.
+
+196
+00:13:58,780 --> 00:14:02,050
+Następnie używam wykresu dywanu na tych losowych danych.
+
+197
+00:14:02,050 --> 00:14:04,630
+Ustawiłem oś X dla wykresu.
+
+198
+00:14:04,660 --> 00:14:11,340
+Użyj dowolnej przestrzeni Ohlund, aby utworzyć 100 punktów równomiernie rozmieszczonych z X-Men's X max, a następnie tutaj.
+
+199
+00:14:11,380 --> 00:14:14,290
+Jest to prawdopodobnie najtrudniejsza część do zrozumienia, ponieważ używa biblioteki.
+
+200
+00:14:14,290 --> 00:14:15,240
+Nie rozmawialiśmy jeszcze o tym.
+
+201
+00:14:15,280 --> 00:14:16,600
+To nie jest normalne.
+
+202
+00:14:16,600 --> 00:14:21,920
+Wszystko to sprawia, że wykres jest rozkładem normalnym dla każdego z punktów wykresu dywanowego.
+
+203
+00:14:21,920 --> 00:14:23,030
+I tak to wygląda.
+
+204
+00:14:23,060 --> 00:14:25,340
+Idziemy dalej i przybliżamy to.
+
+205
+00:14:25,660 --> 00:14:28,900
+Tutaj mam mój zestaw danych i jest to losowy zestaw danych.
+
+206
+00:14:28,900 --> 00:14:33,610
+Więc jeśli będziesz biegać przez te lata, może wyglądać trochę inaczej, ale pamiętaj, że nie pracujemy już nad
+
+207
+00:14:33,610 --> 00:14:33,980
+poradami.
+
+208
+00:14:34,000 --> 00:14:35,790
+Pracujemy tylko nad losowymi danymi.
+
+209
+00:14:35,800 --> 00:14:40,840
+Zauważ, że mam tu niebieskie kreski, a te szare linie reprezentują rozkład normalny.
+
+210
+00:14:40,870 --> 00:14:43,050
+Na górze każdego z tych niebieskich kresek.
+
+211
+00:14:43,330 --> 00:14:47,040
+Jest to więc normalna dystrybucja skupiona wokół kreski.
+
+212
+00:14:47,320 --> 00:14:49,940
+I mamy ich kilka na sobie.
+
+213
+00:14:49,990 --> 00:14:56,180
+Cóż, idziemy do przodu i robimy następne, niektóre z nich są gotowe, aby uzyskać podstawową funkcję gęstości jądra.
+
+214
+00:14:57,070 --> 00:15:01,480
+I to jest po prostu suma wszystkich tych małych normalnych dystrybucji.
+
+215
+00:15:01,480 --> 00:15:02,010
+W porządku.
+
+216
+00:15:02,020 --> 00:15:07,150
+Skopiowanie i wklejenie drugiego bloku kodu z notatnika pozwala nam faktycznie
+
+217
+00:15:07,150 --> 00:15:12,670
+podsumować wszystkie te podstawowe funkcje, które są zwykłymi dystrybucjami, gdy je wszystkie podsumuje.
+
+218
+00:15:12,670 --> 00:15:17,700
+Dostajesz coś, co wygląda tak, że to tylko Teekay fabuła z wcześniejszych
+
+219
+00:15:17,890 --> 00:15:20,930
+i tak jest skonstruowana fabuła z dysku.
+
+220
+00:15:20,950 --> 00:15:25,490
+Na pierwszym spisku spojrzeliśmy na najwyższe t poniżej T.
+
+221
+00:15:25,570 --> 00:15:26,430
+W porządku.
+
+222
+00:15:26,560 --> 00:15:31,940
+Więc to są wszystkie główne sposoby na pokazanie dystrybucji danych, które widzimy więcej.
+
+223
+00:15:32,110 --> 00:15:38,350
+Przejdźmy dalej i szybko przejrzyjmy wszystkie typy działek, które ten komputer i typy działek.
+
+224
+00:15:38,350 --> 00:15:39,770
+Przewijamy z powrotem.
+
+225
+00:15:39,820 --> 00:15:46,120
+Były to spisek i znowu, że ten spisek można użyć go z dwiema metodami, że Kaytee
+
+226
+00:15:46,120 --> 00:15:51,410
+jest równa false i zasadniczo po prostu widzi histogram lub pozostawia to puste.
+
+227
+00:15:52,840 --> 00:15:57,100
+I wtedy możesz zobaczyć Caity oszacowanie gęstości jądra, które wyjaśnia, że
+
+228
+00:15:57,100 --> 00:16:03,580
+koniec jest po prostu sumą wszystkich normalnych rozkładów wokół dywanu Schemat wspólnego działania wykresu jest bardzo podobny do tego
+
+229
+00:16:03,580 --> 00:16:08,740
+pomysłu, który wypluwa się w dwóch kolumnach i przechodzisz je jako x i y argumenty.
+
+230
+00:16:08,760 --> 00:16:15,400
+Jeśli twój trzeci argument jest równy danym, to następny wykres, o którym się dowiadujemy, to wykres pary, a wykres jest
+
+231
+00:16:15,580 --> 00:16:21,630
+tylko budowaniem z wykresu i zasadniczo jest wspólnym działem dla każdej kolumny lub kolumny liczbowej w twoim
+
+232
+00:16:21,640 --> 00:16:26,830
+zbiorze danych, a to oznacza, że po prostu przekazuj w samym zbiorze danych tę ramkę
+
+233
+00:16:26,830 --> 00:16:33,340
+danych i możesz przekazać odcień i paletę, jeśli chcesz faktycznie kolorować według kategorycznej kolumny, następny wykres, o którym dowiedzieliśmy
+
+234
+00:16:33,340 --> 00:16:39,400
+się, że działka Roug zwykle nie będzie używać wykresów Roug, ale jest tam dla ciebie a główna idea
+
+235
+00:16:39,400 --> 00:16:45,310
+użycia nieuczciwej fabuły jest rodzajem budowania logiki wykresu gęstości gęstości jądra, który jest tutaj wykonywany za pomocą
+
+236
+00:16:45,400 --> 00:16:46,450
+tego kodu.
+
+237
+00:16:46,570 --> 00:16:51,470
+Możesz poświęcić trochę czasu i przeczytać ten kod, ale chciałem po prostu przejść do tego
+
+238
+00:16:51,490 --> 00:16:56,330
+punktu, kiedy używasz nieuczciwej fabuły i chcesz zbudować wykres oszacowania gęstości jądra dla tego,
+
+239
+00:16:56,470 --> 00:17:03,400
+co ma zamiar Katie, możesz to zrobić nieuczciwy spisek ma wszystkie te normalne rozkłady dla każdego punktu, a następnie bierze
+
+240
+00:17:03,400 --> 00:17:05,200
+sumę wszystkich tych punktów.
+
+241
+00:17:05,200 --> 00:17:07,810
+I to jest wykres oceny gęstości jądra.
+
+242
+00:17:08,950 --> 00:17:16,540
+I widzieliśmy, jak możemy to zrobić za pomocą tego spisku i jako szybki punkt, jeśli używasz tego spisku tutaj wiemy, że możemy
+
+243
+00:17:16,840 --> 00:17:20,620
+pozbyć się spisku K-T mówiąc, że Kayee jest równa false.
+
+244
+00:17:20,620 --> 00:17:27,160
+Jeśli faktycznie chcesz tylko fabuły K-T i nie chcesz, aby faktyczny Beenz
+
+245
+00:17:27,160 --> 00:17:34,780
+tutaj rzeczywiście mógł być pasanem zamiast działek, możesz zrobić dział Asinus KDE, a następnie wskazówki passen.
+
+246
+00:17:35,200 --> 00:17:42,010
+Całkowity rachunek i to zbuduje ten wykres K-T bez rozkładu prętów.
+
+247
+00:17:42,010 --> 00:17:42,710
+W porządku.
+
+248
+00:17:43,090 --> 00:17:48,760
+Mam nadzieję, że zdajesz sobie sprawę, że Seaborn jest niesamowicie potężny, a także bardzo prosty, jeśli chodzi o kod, który
+
+249
+00:17:48,760 --> 00:17:49,560
+musisz napisać.
+
+250
+00:17:49,690 --> 00:17:51,580
+Wszystko, co zrobiliśmy, zostało zrobione w jednej linii.
+
+251
+00:17:51,640 --> 00:17:55,960
+Jeśli spróbujesz to zrobić, to mapowanie libu zajęłoby Ci wiele linii, ale co jest w tym
+
+252
+00:17:56,020 --> 00:18:00,490
+miłe, to, że działa to, co wiesz o fabule na żywo, a zobaczymy o wiele więcej, gdy
+
+253
+00:18:00,490 --> 00:18:02,200
+mówimy o stylizacji i kolorach .
+
+254
+00:18:02,350 --> 00:18:06,790
+Wiele tej mapy działało, że wiedza będzie przekazywana do edycji małych rzeczy
+
+255
+00:18:06,880 --> 00:18:08,020
+w tym spisku.
+
+256
+00:18:08,380 --> 00:18:13,290
+OK, mam nadzieję, że znów zaczynasz cieszyć się Seabornem, tak jak wspomniałem wcześniej, że jest to jedna z moich ulubionych bibliotek
+
+257
+00:18:13,560 --> 00:18:17,800
+i nie mogę się doczekać, aby pokazać ci kilka następnych wątków, o których dowiemy się z Seabornem.
+
+258
+00:18:18,400 --> 00:18:20,260
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

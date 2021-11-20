@@ -1,0 +1,327 @@
+1
+00:00:05,160 --> 00:00:10,410
+Salve a tutti e benvenuti alla conferenza sui dati mancanti in questa aula mostra alcuni metodi utili
+
+2
+00:00:10,650 --> 00:00:12,870
+per gestire i dati mancanti in Panda.
+
+3
+00:00:12,870 --> 00:00:17,820
+Un sacco di volte quando usi i panda per leggere i dati se hai dei punti mancanti
+
+4
+00:00:17,820 --> 00:00:21,040
+quello che succederà è che Pandurs riempirà automaticamente quel punto mancante.
+
+5
+00:00:21,250 --> 00:00:21,690
+No.
+
+6
+00:00:21,720 --> 00:00:23,360
+O qualsiasi valore.
+
+7
+00:00:23,610 --> 00:00:28,980
+Andiamo avanti ed esploriamo come possiamo usare metodi come drop a name o fill e a per eliminare
+
+8
+00:00:28,980 --> 00:00:31,800
+effettivamente quei valori mancanti o riempire quei valori mancanti.
+
+9
+00:00:32,040 --> 00:00:36,090
+Andiamo avanti e saltiamo sul taccuino di Jupiter per iniziare.
+
+10
+00:00:36,120 --> 00:00:36,420
+Tutto ok.
+
+11
+00:00:36,420 --> 00:00:38,270
+Eccomi al taccuino di Giove.
+
+12
+00:00:38,280 --> 00:00:43,800
+Quello che voglio fare è creare un frame di dati e, proprio come creiamo, possiamo creare una
+
+13
+00:00:43,860 --> 00:00:48,480
+serie da un dizionario che possiamo effettivamente creare un frame di dati da un dizionario.
+
+14
+00:00:48,480 --> 00:00:55,620
+Questo dizionario avrà tre chiavi e andrà a digitare una chiave B e una chiave C e quali saranno queste
+
+15
+00:00:55,620 --> 00:01:01,560
+colonne nel nostro frame di dati e quindi possiamo fare per i punti dati effettivi è un
+
+16
+00:01:01,620 --> 00:01:03,810
+elenco di valori per ogni chiave.
+
+17
+00:01:04,260 --> 00:01:08,290
+E quelli saranno i punti dati per ogni riga nel nome di quella colonna.
+
+18
+00:01:08,340 --> 00:01:12,680
+Andremo avanti e diciamo che la chiave A ha anche una lista.
+
+19
+00:01:12,930 --> 00:01:18,290
+E poi useremo qualsiasi n per indicare un valore ordinale mancante.
+
+20
+00:01:19,080 --> 00:01:20,290
+Quindi salveremo per B.
+
+21
+00:01:20,310 --> 00:01:28,260
+Saranno 5 e P che Nan e P e poi e infine kisi la nostra terza colonna.
+
+22
+00:01:28,260 --> 00:01:31,150
+Quindi manterremo tutti i valori 1 2 e 3.
+
+23
+00:01:31,200 --> 00:01:33,360
+Quindi non ha valori mancanti.
+
+24
+00:01:33,360 --> 00:01:41,300
+E poi possiamo andare avanti e dire che DFAC è uguale al frame di dati PD e quindi passare nel dizionario D.
+
+25
+00:01:41,730 --> 00:01:48,270
+E poi quando controlliamo il nostro frame di dati otteniamo questo bel frame di dati delle colonne A B
+
+26
+00:01:48,270 --> 00:01:56,580
+e C e quindi le righe 0 1 e 2 nessuna riga 0 non ha valori mancanti e la colonna C non ha valori mancanti.
+
+27
+00:01:56,700 --> 00:02:02,850
+E poi ci sono alcuni valori mancanti qui in Roby o nella colonna B e un valore mancante nella colonna A.
+
+28
+00:02:03,360 --> 00:02:07,940
+Usciamo ed esploriamo la goccia e un metodo.
+
+29
+00:02:08,280 --> 00:02:11,580
+Un sacco di volte vuoi solo eliminare i valori mancanti dal tuo set di dati.
+
+30
+00:02:11,640 --> 00:02:14,010
+Soprattutto se si tratta solo di alcuni valori mancanti.
+
+31
+00:02:14,010 --> 00:02:21,300
+parentesi chiuse, ciò che accade è che Pandurs sta per rilasciare qualsiasi riga con qualsiasi singolo o acqua più valori maschili o mancanti,
+
+32
+00:02:21,300 --> 00:02:28,890
+il che significa che se una di queste righe ha un valore nullo in uno o più è andato avanti e li lasciò cadere.
+
+33
+00:02:28,890 --> 00:02:33,840
+Se dici di eliminare un A da solo e di chiamarlo come un metodo di
+
+34
+00:02:33,870 --> 00:02:40,050
+Se vuoi eseguire questa azione sulle colonne che puoi fare, controlla la scheda Shift qui e nota
+
+35
+00:02:40,050 --> 00:02:42,060
+che c'è un argomento sugli assi.
+
+36
+00:02:42,330 --> 00:02:44,740
+Ciò significa che di default l'asse è zero.
+
+37
+00:02:44,880 --> 00:02:47,210
+Significa che l'operazione avviene lungo le file.
+
+38
+00:02:47,340 --> 00:02:53,820
+Ma se si vuole fare l'operazione lungo le colonne che si rilasciano tutte le colonne che hanno un valore nullo, è
+
+39
+00:02:54,240 --> 00:02:56,780
+possibile specificare che l'asse è uguale a 1.
+
+40
+00:02:57,750 --> 00:03:01,200
+E questo sta per cadere nelle colonne con un valore nullo.
+
+41
+00:03:01,360 --> 00:03:03,710
+Quindi non vedo il confronto qui.
+
+42
+00:03:03,950 --> 00:03:09,720
+E ciò significa che se Trapani supera qualsiasi riga di qualsiasi valore di riga in esso e quindi il dopo sono Trump
+
+43
+00:03:09,810 --> 00:03:14,230
+e un accesso con uguale a uno sta per rilasciare qualsiasi colonna di valori nulli in esso.
+
+44
+00:03:14,640 --> 00:03:17,840
+Ma puoi anche specificare una soglia.
+
+45
+00:03:18,120 --> 00:03:24,420
+E se entriamo e controlliamo questo, diremo che DMF rilascia una A e usa la scheda Shift.
+
+46
+00:03:24,450 --> 00:03:31,190
+Controlla la documentazione che si trova se c'è un argomento di trebbre quale sia l'argomento.
+
+47
+00:03:31,320 --> 00:03:39,480
+È un valore intero e richiederà molti nodi e valori per non cadere.
+
+48
+00:03:39,480 --> 00:03:43,180
+Per esempio lasciami entrare e imposta la soglia uguale a 2.
+
+49
+00:03:43,590 --> 00:03:46,030
+E di nuovo lo faremo solo lungo le strade.
+
+50
+00:03:46,260 --> 00:03:53,470
+Quindi notate qui che abbiamo nella riga 0 3 non e un valore nella riga 1.
+
+51
+00:03:53,490 --> 00:03:58,710
+Abbiamo due valori non A e nella riga due ne abbiamo solo uno.
+
+52
+00:03:58,830 --> 00:04:01,090
+Numero tre, nessun valore.
+
+53
+00:04:01,140 --> 00:04:05,850
+Ciò significa che se dico drop e in questo modo, cade tutto tranne Roseboro.
+
+54
+00:04:05,970 --> 00:04:14,270
+Tuttavia, se imposto che la soglia sia uguale a 2 e la eseguo, è andata avanti e ho mantenuto la riga 1.
+
+55
+00:04:14,310 --> 00:04:22,740
+In pratica, ciò significa che la riga 1 aveva almeno due non e un valore 2. 0 e i due è andato
+
+56
+00:04:22,800 --> 00:04:26,880
+avanti e mantenuto quella riga.
+
+57
+00:04:26,910 --> 00:04:27,230
+Tutto ok.
+
+58
+00:04:27,270 --> 00:04:33,790
+Andiamo avanti e passiamo a Phil e diciamo che adesso ci concentriamo solo sul calo dei valori mancanti.
+
+59
+00:04:33,870 --> 00:04:37,060
+Beh, molte volte vorrai davvero sostituire quei valori mancanti.
+
+60
+00:04:37,290 --> 00:04:39,320
+Diamo nuovamente un'occhiata al nostro quadro di dati.
+
+61
+00:04:39,390 --> 00:04:40,870
+Abbiamo questi valori mancanti qui.
+
+62
+00:04:40,950 --> 00:04:47,430
+Se volessimo compilare quei valori mancanti possiamo usare il riempimento e un metodo e questo andiamo a prendere la scheda
+
+63
+00:04:47,430 --> 00:04:49,910
+shift qui ha un paio di argomenti diversi.
+
+64
+00:04:49,930 --> 00:04:52,400
+Ma notate che ha un argomento di valore.
+
+65
+00:04:52,610 --> 00:04:57,910
+E quello che puoi fare qui è come un valore impostato nel tuo valore di riempimento.
+
+66
+00:04:57,940 --> 00:05:00,410
+Sto per passare una stringa per renderlo molto ovvio qui.
+
+67
+00:05:00,450 --> 00:05:07,530
+Cosa sta succedendo e si noti che è stato in grado di riempire quel valore di qualsiasi valore che volevamo.
+
+68
+00:05:07,940 --> 00:05:10,680
+In questo caso basta una stringa che dice il valore di riempimento.
+
+69
+00:05:10,770 --> 00:05:15,060
+Tuttavia molte volte quello che vorrete fare è in realtà inserire il valore di
+
+70
+00:05:15,060 --> 00:05:20,860
+forse la media della colonna e potete farlo ad esempio in quanto tale potete dire DSF di a.
+
+71
+00:05:21,090 --> 00:05:25,150
+Quindi questa è la mia colonna e notare qui il punto mancante.
+
+72
+00:05:25,170 --> 00:05:36,170
+Vado avanti e dico fill e a e imposterò il valore sulla media di quella colonna.
+
+73
+00:05:37,710 --> 00:05:42,210
+E ora quel valore è stato riempito come la media del valore.
+
+74
+00:05:42,330 --> 00:05:47,760
+Ora c'è un'intera filosofia e un modo di pensare e metodi statistici per riempire i valori
+
+75
+00:05:47,790 --> 00:05:49,070
+mancanti in modo appropriato.
+
+76
+00:05:49,110 --> 00:05:53,280
+Ti consentirò di andare avanti ed esplorare quelli da solo poiché dipendono davvero
+
+77
+00:05:53,280 --> 00:05:56,010
+dal tipo di dati con cui stai lavorando.
+
+78
+00:05:56,010 --> 00:06:03,030
+Per ora tutto quello che voglio che tu sappia è che c'è un riempimento e un metodo e una goccia e un metodo.
+
+79
+00:06:03,510 --> 00:06:05,600
+OK, è tutto per ora.
+
+80
+00:06:05,610 --> 00:06:10,770
+specificare a quale accesso vuoi eseguire l'azione, oltre all'argomento thresh e agli argomenti value.
+
+81
+00:06:10,770 --> 00:06:15,810
+Spero che tu ricordi che questi due metodi sono disponibili per te e puoi
+
+82
+00:06:15,810 --> 00:06:18,800
+Va bene, grazie a tutti e ci vediamo alla prossima lezione

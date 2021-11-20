@@ -1,0 +1,851 @@
+1
+00:00:05,250 --> 00:00:09,020
+Hello everyone and welcome to the solutions lecture for the e-commerce purchases.
+
+2
+00:00:09,050 --> 00:00:10,560
+Pandas exercise.
+
+3
+00:00:10,620 --> 00:00:14,720
+Let's go ahead and jump to Jupiter notebook and start walking through these solutions.
+
+4
+00:00:14,730 --> 00:00:14,970
+All right.
+
+5
+00:00:14,970 --> 00:00:18,140
+Here I am at the notebook for the e-commerce purchase exercise.
+
+6
+00:00:18,150 --> 00:00:21,240
+Let's go ahead and just walk through the instructions.
+
+7
+00:00:21,330 --> 00:00:26,180
+So first thing you had to do was import pandas good import pay.
+
+8
+00:00:26,180 --> 00:00:32,760
+This is the end of what we want to do is read in the e-commerce purchases CSP file and send it to a
+
+9
+00:00:32,760 --> 00:00:34,490
+data friend called e-comm.
+
+10
+00:00:34,500 --> 00:00:40,240
+So when we say e-com is equal to CD read underscore CXVII.
+
+11
+00:00:40,710 --> 00:00:46,100
+And then when we start typing e-com in I'm going to use tab autocomplete to find the actual file here
+
+12
+00:00:46,210 --> 00:00:47,210
+and it's the first one there.
+
+13
+00:00:47,220 --> 00:00:49,240
+E-commerce purchases.
+
+14
+00:00:49,770 --> 00:00:54,420
+And I'm going to go ahead and check the head of that data frame and you can do that just by calling
+
+15
+00:00:54,420 --> 00:00:57,240
+the method e-com head.
+
+16
+00:00:57,240 --> 00:01:00,430
+And there we can see we have the head of that data frame.
+
+17
+00:01:00,450 --> 00:01:05,290
+Now we want to know how many rows and columns there are there are a couple of ways to do this.
+
+18
+00:01:05,310 --> 00:01:13,920
+For instance you could just say e-com columns and this returns a list of the columns indexed so you
+
+19
+00:01:13,920 --> 00:01:19,560
+could actually just checked the length of that if you wanted to and still return how many columns you
+
+20
+00:01:19,560 --> 00:01:20,140
+have.
+
+21
+00:01:20,340 --> 00:01:28,380
+And then you could do the same thing for index and that would tell you how many rows you had a nice
+
+22
+00:01:28,380 --> 00:01:33,480
+way to do this however to get both pieces of information at once plus a couple other nice pieces of
+
+23
+00:01:33,480 --> 00:01:38,430
+information it's called the info method off of that and hopefully by looking at the output that was
+
+24
+00:01:38,430 --> 00:01:41,780
+a nice hints to use the info method.
+
+25
+00:01:41,780 --> 00:01:42,410
+OK.
+
+26
+00:01:42,960 --> 00:01:45,870
+What does the average purchase price.
+
+27
+00:01:45,870 --> 00:01:51,330
+Let's go ahead and check out the columns one more time.
+
+28
+00:01:51,360 --> 00:01:53,310
+Notice here we have address slots.
+
+29
+00:01:53,310 --> 00:01:58,680
+AM or PM and continuing on we notice that we have finally at the end a purchase price.
+
+30
+00:01:59,010 --> 00:02:04,490
+We're going to go out and do is call that column purchase price and I'm going to go and do have autocomplete
+
+31
+00:02:04,530 --> 00:02:07,770
+here and then I want the average purchase price.
+
+32
+00:02:07,770 --> 00:02:13,080
+So average in this case we're talking about mean and the reason I didn't actually post what is the mean
+
+33
+00:02:13,080 --> 00:02:16,890
+purchase price because I don't want to actually give away the method right off the bat.
+
+34
+00:02:16,920 --> 00:02:23,910
+So hopefully you're able to figure that out and the average perched price is $50 at about 35 cents.
+
+35
+00:02:23,910 --> 00:02:28,560
+Now we want to know it's the highest and lowest purchase prices what we can do that in a very similar
+
+36
+00:02:28,560 --> 00:02:34,830
+manner by just passing in the column and then calling max and min off of it.
+
+37
+00:02:34,830 --> 00:02:44,300
+So the max purchase price is about 100 bucks and the minimum purchase price is $0.
+
+38
+00:02:44,700 --> 00:02:45,360
+Okay.
+
+39
+00:02:45,480 --> 00:02:50,630
+Now we want to know how many people have English or and as their language of choice on the Web site
+
+40
+00:02:50,630 --> 00:02:51,050
+.
+
+41
+00:02:51,270 --> 00:02:56,330
+Let's go ahead and check out the English column or the language column one more time ago and it's a
+
+42
+00:02:56,360 --> 00:02:57,610
+e-comm.
+
+43
+00:02:57,770 --> 00:02:58,560
+Go ahead.
+
+44
+00:02:58,580 --> 00:03:02,840
+I'm going to call the first three columns here.
+
+45
+00:03:02,880 --> 00:03:04,290
+Rose excuse me.
+
+46
+00:03:04,290 --> 00:03:07,110
+So notice if I go ahead and scroll to the right.
+
+47
+00:03:08,010 --> 00:03:13,350
+I have here at the language column it looks like it has just two length strings.
+
+48
+00:03:13,380 --> 00:03:18,340
+So we're looking for how many of these strings are equal to E and that means I'm going to do this.
+
+49
+00:03:18,360 --> 00:03:27,540
+I'm going to say e-com language equals equals the string e m.
+
+50
+00:03:27,600 --> 00:03:31,700
+This will return a series of boolean values.
+
+51
+00:03:31,710 --> 00:03:33,360
+Falses in Trews.
+
+52
+00:03:33,360 --> 00:03:37,800
+And that means what I can do now is go ahead and say e-com
+
+53
+00:03:40,410 --> 00:03:42,230
+of where this is true.
+
+54
+00:03:42,420 --> 00:03:47,700
+So I can say e-comm and now I have basically a subset of the data frame and I can check that by looking
+
+55
+00:03:47,700 --> 00:03:48,710
+at this index here.
+
+56
+00:03:48,840 --> 00:03:50,610
+And notice that it kind of bounces around.
+
+57
+00:03:50,820 --> 00:03:56,760
+And if I scroll all the way to the right on the state of frame let's go and just call the head of this
+
+58
+00:03:56,850 --> 00:04:01,370
+because for all that scroll to the right notice here all the languages are E-M.
+
+59
+00:04:01,410 --> 00:04:06,300
+So what I want is not the head of this since I want to know how many people have English.
+
+60
+00:04:06,300 --> 00:04:08,110
+I can just say count.
+
+61
+00:04:09,330 --> 00:04:11,160
+And this will count the rows.
+
+62
+00:04:11,160 --> 00:04:15,310
+And so I have one thousand nine hundred eight people that have English as their language of choice in
+
+63
+00:04:15,310 --> 00:04:17,250
+the web site.
+
+64
+00:04:17,820 --> 00:04:23,340
+And if you wanted this just to be specific for the language column you could just call language here
+
+65
+00:04:24,840 --> 00:04:27,590
+and this would actually give you the direct number.
+
+66
+00:04:27,600 --> 00:04:27,910
+All right.
+
+67
+00:04:27,960 --> 00:04:29,930
+Let's go ahead and keep on going.
+
+68
+00:04:29,970 --> 00:04:34,090
+Now we want to know how many people have the job title of lawyer.
+
+69
+00:04:34,300 --> 00:04:47,280
+We're going to go ahead and do is say e-com where job is equal to lawyer and then pass that in to the
+
+70
+00:04:47,280 --> 00:04:52,830
+e-com data frame and this returns the subset of the data frame where this is true in others a variety
+
+71
+00:04:52,830 --> 00:04:54,990
+of methods actually get the rose out of it.
+
+72
+00:04:55,080 --> 00:04:58,170
+You could just get info.
+
+73
+00:04:58,460 --> 00:05:01,740
+And this actually returns how many rows you have so 30 entries.
+
+74
+00:05:01,790 --> 00:05:06,480
+You can also just do counts that does the same thing 30.
+
+75
+00:05:06,510 --> 00:05:13,590
+You can also call index off of this that returns the index and then you can call the link for that.
+
+76
+00:05:14,130 --> 00:05:15,450
+And this also returns 30.
+
+77
+00:05:15,450 --> 00:05:20,790
+So quite a few methods to get the sexual answer 30 go ahead and feel free to use whatever method you
+
+78
+00:05:20,790 --> 00:05:22,180
+prefer.
+
+79
+00:05:23,070 --> 00:05:23,310
+OK.
+
+80
+00:05:23,310 --> 00:05:27,930
+Coming up next how many people made the purchase during the am and how many people made the purchase
+
+81
+00:05:27,930 --> 00:05:29,760
+during the p.m..
+
+82
+00:05:29,940 --> 00:05:32,780
+And there's a hint here that use value counts.
+
+83
+00:05:33,240 --> 00:05:35,300
+Well value counts makes this really easy.
+
+84
+00:05:35,310 --> 00:05:40,750
+You actually just pass in the AM or PM column and then say value.
+
+85
+00:05:40,980 --> 00:05:43,390
+Well let me just show you the unique values first.
+
+86
+00:05:43,560 --> 00:05:49,550
+So if we take a look at this column and just put unique notice we only have PM and am has values and
+
+87
+00:05:49,560 --> 00:05:52,830
+that means I can just say value underscore counts
+
+88
+00:05:55,470 --> 00:05:56,930
+and this will automatically counts.
+
+89
+00:05:56,970 --> 00:06:01,550
+How many people purchased during the p.m. and how many people purchased during the AM.
+
+90
+00:06:02,310 --> 00:06:06,570
+Coming up next we want to say what are the five most common job titles.
+
+91
+00:06:07,080 --> 00:06:12,960
+Well that counts actually also makes that very easy which you can end up doing is called The Job column
+
+92
+00:06:14,120 --> 00:06:19,740
+and you noticed you get a bunch of jobs back as a series and then you can call value counts on this
+
+93
+00:06:19,740 --> 00:06:20,160
+column
+
+94
+00:06:23,640 --> 00:06:29,430
+and then you actually have the counts and notice value counts actually automatically already sorts from
+
+95
+00:06:29,430 --> 00:06:34,080
+the most popular accounts all the way if you go to the bottom to the least popular ones.
+
+96
+00:06:34,080 --> 00:06:41,190
+So if we just check out the head of this for the top five do you get the five most common job titles
+
+97
+00:06:41,560 --> 00:06:45,330
+interior and special designer lawyer purchasing manager etc..
+
+98
+00:06:45,450 --> 00:06:49,620
+There's a couple of other ways to do this but this is probably the fastest and easiest way to do this
+
+99
+00:06:49,620 --> 00:06:50,390
+.
+
+100
+00:06:50,400 --> 00:06:51,640
+OK.
+
+101
+00:06:51,990 --> 00:06:57,640
+Next up someone made a purchase that came from Lotts quote 90 space W.T..
+
+102
+00:06:57,830 --> 00:07:00,680
+What was the purchase price for this transaction.
+
+103
+00:07:00,690 --> 00:07:03,380
+Let's go ahead and try to find out this lot first.
+
+104
+00:07:03,390 --> 00:07:06,040
+So we're going to kind of break this down step by step.
+
+105
+00:07:06,060 --> 00:07:13,110
+We're going to say e-com of lot equal to and then 90.
+
+106
+00:07:13,110 --> 00:07:15,430
+Space capital W T.
+
+107
+00:07:15,490 --> 00:07:20,650
+I just run this like a series of boolean values and I want the row where this is true.
+
+108
+00:07:21,120 --> 00:07:27,270
+So I'm going to go in and say e-com of this is this conditional selection.
+
+109
+00:07:27,270 --> 00:07:30,470
+And now I can see I get the Roback where this happened to be true.
+
+110
+00:07:30,540 --> 00:07:35,880
+So if I go ahead and just go over to the purchase price I should see it $75 and 10 cents.
+
+111
+00:07:35,970 --> 00:07:46,120
+Or I could just call purchase price off of this data frame and I'll return this $75 and 10 cents.
+
+112
+00:07:46,140 --> 00:07:47,540
+OK.
+
+113
+00:07:47,610 --> 00:07:51,090
+Coming up next what does e-mail the person with the following credit card number.
+
+114
+00:07:51,090 --> 00:07:52,870
+Here's credit card number itself.
+
+115
+00:07:53,130 --> 00:08:02,460
+Well we're going to want to do is a very similar process will say we want e-com credit card is equal
+
+116
+00:08:02,460 --> 00:08:11,160
+to and then I'm just going to copy and paste this number and then I'm going to pass this into the e-com
+
+117
+00:08:11,160 --> 00:08:15,340
+data frame and just grab the email column off of it.
+
+118
+00:08:16,500 --> 00:08:18,810
+And I just ran that and it gets to me the exact same answer.
+
+119
+00:08:18,810 --> 00:08:22,370
+So Bob Dylan at Williams Asgar said that.
+
+120
+00:08:22,620 --> 00:08:29,160
+OK now I want to know how many will have American Express as their credit card provider and made a purchase
+
+121
+00:08:29,160 --> 00:08:30,620
+above $95.
+
+122
+00:08:30,720 --> 00:08:32,450
+Again we're just doing conditional selection.
+
+123
+00:08:32,460 --> 00:08:38,520
+Except now we have to remember how to do multiple conditions when it go ahead and start sitting at my
+
+124
+00:08:38,520 --> 00:08:39,300
+data frame.
+
+125
+00:08:39,450 --> 00:08:45,320
+I'll say e-comm and I'm going to pass and the first condition in parentheses and then use ampersand
+
+126
+00:08:45,840 --> 00:08:48,490
+and pass the second condition in parentheses.
+
+127
+00:08:48,690 --> 00:08:52,900
+OK first condition was American Express as their credit card provider meaning.
+
+128
+00:08:52,950 --> 00:09:10,200
+E-com CC provider is equal to American Express and I want e-com of the purchase price
+
+129
+00:09:13,380 --> 00:09:16,240
+to be greater than $95.
+
+130
+00:09:16,450 --> 00:09:16,980
+Okay.
+
+131
+00:09:17,130 --> 00:09:22,060
+If I just run this I get back the actual rows where this is true.
+
+132
+00:09:22,080 --> 00:09:22,670
+Now I remember.
+
+133
+00:09:22,710 --> 00:09:29,720
+I just want the count so I can go ahead and just say that counts off of this run this and I get 39.
+
+134
+00:09:29,970 --> 00:09:32,080
+Again theres lots of different ways you can get the count.
+
+135
+00:09:32,070 --> 00:09:37,090
+You could also say info then that returns third 9 here.
+
+136
+00:09:37,230 --> 00:09:42,540
+You can also use for instance stock index and then get the length of this
+
+137
+00:09:45,770 --> 00:09:48,250
+and that also returns Thirty-Nine So lots of ways to do this.
+
+138
+00:09:48,250 --> 00:09:52,500
+But the basic idea of what I want to get down is that actually did the multiple condition selections
+
+139
+00:09:52,500 --> 00:09:52,540
+.
+
+140
+00:09:52,530 --> 00:09:57,620
+You need to pass an imprint CS ease and and then pass it and print CS again.
+
+141
+00:09:58,290 --> 00:09:58,860
+OK.
+
+142
+00:09:58,870 --> 00:10:00,950
+Now for the last two hard ones.
+
+143
+00:10:01,050 --> 00:10:04,920
+How many people have a credit card that expires in 2025.
+
+144
+00:10:05,710 --> 00:10:10,070
+So let's go ahead and take a look at the expiration date.
+
+145
+00:10:10,720 --> 00:10:15,160
+So we have CC Expwy expiration date.
+
+146
+00:10:15,540 --> 00:10:16,700
+We take a look at this.
+
+147
+00:10:16,720 --> 00:10:19,600
+We have what looks to be a string.
+
+148
+00:10:19,770 --> 00:10:25,020
+Well let's call in and confirm that it's a string by just asking for the very first object.
+
+149
+00:10:25,090 --> 00:10:34,370
+So if I say I EHLO see the bracket zero error turns back the string 0 to slash 20.
+
+150
+00:10:34,650 --> 00:10:39,810
+And that means if I actually just want to grab the year so this credit card expires in 2020 what I'm
+
+151
+00:10:39,810 --> 00:10:47,020
+going to go ahead and do is grab the values of that string.
+
+152
+00:10:47,010 --> 00:10:50,400
+Are the elements the string that are index 3 and beyond.
+
+153
+00:10:50,400 --> 00:10:57,060
+So if you look at 0 1 2 3 and beyond or essentially the last two.
+
+154
+00:10:57,540 --> 00:11:02,920
+And now I get a string that is the year we're going to go ahead and take that information and begin
+
+155
+00:11:02,910 --> 00:11:05,050
+to use apply on it.
+
+156
+00:11:05,040 --> 00:11:21,080
+So I want to say the Apply lambda will go ahead and call this XP Colan XP and then say three colon and
+
+157
+00:11:21,390 --> 00:11:30,270
+then I want this to be equal to 25 because I'm looking for the expiration date of 20 2025.
+
+158
+00:11:31,020 --> 00:11:33,750
+Let's go ahead and just run this.
+
+159
+00:11:34,100 --> 00:11:39,400
+I noticed now I have a series of false and true so a bunch of boolean values.
+
+160
+00:11:39,390 --> 00:11:44,290
+Now the reason why this is hard is because you need to figure out how many of these are actually true
+
+161
+00:11:44,280 --> 00:11:44,670
+.
+
+162
+00:11:44,670 --> 00:11:46,750
+There's a couple of different ways you can do this.
+
+163
+00:11:46,800 --> 00:11:53,070
+One very quick way is you can actually just take the sum of the series and it'll return back all the
+
+164
+00:11:53,080 --> 00:11:54,860
+values that are true as a sum.
+
+165
+00:11:55,200 --> 00:11:56,910
+So that's the way it's done and the solutions.
+
+166
+00:11:56,910 --> 00:11:59,780
+Kind of a neat trick but that makes it hard.
+
+167
+00:11:59,910 --> 00:12:07,740
+The other we can do this is by passing this into e-com getting the rows back where it happens to be
+
+168
+00:12:07,750 --> 00:12:08,100
+true.
+
+169
+00:12:08,130 --> 00:12:15,200
+And then just saying Got count and this will also return back that same number 1033.
+
+170
+00:12:15,520 --> 00:12:16,310
+OK.
+
+171
+00:12:16,410 --> 00:12:22,080
+Now for the hardest one which is what are the top five most popular email providers and hosts gmail
+
+172
+00:12:22,090 --> 00:12:24,130
+dot com yahoo dot com et cetera.
+
+173
+00:12:24,120 --> 00:12:26,110
+Let's go ahead and see how we can do this.
+
+174
+00:12:26,350 --> 00:12:28,240
+Let's take a look at the e-mail column
+
+175
+00:12:31,950 --> 00:12:34,060
+and notice here we basically have strings.
+
+176
+00:12:34,090 --> 00:12:39,640
+But what's important to know is that if you take one of these strings Let's go ahead and take one we'll
+
+177
+00:12:39,660 --> 00:12:42,150
+call this example underscore.
+
+178
+00:12:42,150 --> 00:12:46,600
+E-mail is equal to the very first instance of this.
+
+179
+00:12:46,600 --> 00:12:53,540
+If I take a look at the example e-mail is just a string here.
+
+180
+00:12:53,700 --> 00:13:01,330
+If I go ahead and say splits on at that I have a list that it splits it out at and I know that the second
+
+181
+00:13:01,380 --> 00:13:08,770
+item in this list item one or two out of index One is the domain name Yahoo dot com.
+
+182
+00:13:08,760 --> 00:13:14,700
+So what I want to do is use the sort of logic in lambda expression in order to grab the email provider
+
+183
+00:13:14,700 --> 00:13:18,080
+or the host Go ahead and do that.
+
+184
+00:13:18,270 --> 00:13:30,090
+I'm going to go in and say e-com e-mail or apply Lamda we take in the email and then we say email that
+
+185
+00:13:30,100 --> 00:13:33,160
+splits at.
+
+186
+00:13:33,250 --> 00:13:35,720
+And then I'm going to grab off of that.
+
+187
+00:13:35,760 --> 00:13:37,390
+The value at index 1.
+
+188
+00:13:37,380 --> 00:13:42,790
+So basically I'm just using this logic right here but I'm putting it into a lambda expression that I'm
+
+189
+00:13:42,780 --> 00:13:49,250
+going to say value underscore counts in order to actually count how many there are.
+
+190
+00:13:49,260 --> 00:13:53,710
+Let's go and just show this for the hash tag that out.
+
+191
+00:13:54,100 --> 00:13:58,890
+So this returns a series of all these values as far as the email providers.
+
+192
+00:13:58,890 --> 00:14:01,330
+And what I want to do is figure out the top five most popular.
+
+193
+00:14:01,330 --> 00:14:05,910
+So remember we can just value accounts along with AD 5.
+
+194
+00:14:06,140 --> 00:14:08,350
+And this returns the top five most popular.
+
+195
+00:14:08,350 --> 00:14:12,100
+So Hotmail Yahoo Gmail Smith and Wiliams dot com.
+
+196
+00:14:12,470 --> 00:14:13,410
+OK.
+
+197
+00:14:13,460 --> 00:14:17,210
+Hopefully that was challenging for you if it was.
+
+198
+00:14:17,220 --> 00:14:20,180
+And you breezed right through it even better.
+
+199
+00:14:20,200 --> 00:14:23,760
+But I hope you were able to use your pay and the skills start getting familiar.
+
+200
+00:14:23,860 --> 00:14:28,110
+And more importantly see what's actually available for you and the type of questions you can answer
+
+201
+00:14:28,120 --> 00:14:30,030
+quickly and easily of pandas.
+
+202
+00:14:30,080 --> 00:14:34,470
+This is your first exercise as far as a formal exercise of panderers.
+
+203
+00:14:34,680 --> 00:14:39,100
+It might have been challenging and might have been really tough but just go through solutions slowly
+
+204
+00:14:39,100 --> 00:14:39,250
+.
+
+205
+00:14:39,310 --> 00:14:42,930
+Make sure you can break it down step by step and understand the solutions.
+
+206
+00:14:43,090 --> 00:14:48,060
+Feel free to post any questions you have to Q&A forums and I'm happy to help you out as far as explaining
+
+207
+00:14:48,070 --> 00:14:55,080
+the logic of any of this what might be the most confusing parts of this are the ability to use apply
+
+208
+00:14:55,120 --> 00:14:58,770
+and then lambda expressions go ahead and review land expressions in Python.
+
+209
+00:14:58,920 --> 00:15:02,370
+If you thought these last two were just extremely hard.
+
+210
+00:15:02,430 --> 00:15:03,240
+OK.
+
+211
+00:15:03,370 --> 00:15:04,980
+Hope you enjoy that exercise.
+
+212
+00:15:04,990 --> 00:15:10,380
+Coming up next is another pair of those exercise to sharpen your skill set even more.
+
+213
+00:15:10,380 --> 00:15:12,250
+Thanks everyone and I'll see you at the next lecture

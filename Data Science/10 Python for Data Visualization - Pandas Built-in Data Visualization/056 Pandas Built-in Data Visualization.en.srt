@@ -1,0 +1,795 @@
+1
+00:00:05,220 --> 00:00:07,080
+Hello everyone and welcome to the panels.
+
+2
+00:00:07,080 --> 00:00:12,900
+BILTON data visualization lecturer and this lecture we're going to go over Panther's own built in capabilities
+
+3
+00:00:13,230 --> 00:00:17,550
+that are actually built off of that plot live but they allow you to call data visualizations directly
+
+4
+00:00:17,610 --> 00:00:18,860
+off a data for.
+
+5
+00:00:19,140 --> 00:00:22,160
+Let's go ahead and jump to the Jupiter notebook.
+
+6
+00:00:22,170 --> 00:00:22,370
+All right.
+
+7
+00:00:22,370 --> 00:00:24,810
+Here I am at the Jupiter notebook server.
+
+8
+00:00:24,810 --> 00:00:25,520
+A quick note.
+
+9
+00:00:25,590 --> 00:00:30,170
+You should be opening this Jupiter notebook under my thumb for data visualization.
+
+10
+00:00:30,180 --> 00:00:35,280
+The panel is built in data folder and the reason for that is there's a couple of c c files here called
+
+11
+00:00:35,290 --> 00:00:37,100
+def 1 2 and 3.
+
+12
+00:00:37,260 --> 00:00:41,350
+And you see as V files and we're going to be working with to actually show the capabilities of pandas
+
+13
+00:00:41,370 --> 00:00:44,910
+built in data visualization the lecture notebook is right here.
+
+14
+00:00:44,920 --> 00:00:49,050
+This panel panels built in data visualization and then you also have an exercise which will go over
+
+15
+00:00:49,110 --> 00:00:49,760
+later.
+
+16
+00:00:49,830 --> 00:00:52,290
+I'm going opening you know a book here.
+
+17
+00:00:52,380 --> 00:00:54,440
+And go ahead and get started.
+
+18
+00:00:54,450 --> 00:00:54,660
+All right.
+
+19
+00:00:54,660 --> 00:01:01,890
+Here I am at this notebook and I'm going to go out and say important PI and P are going to import pandas
+
+20
+00:01:02,010 --> 00:01:09,030
+as PD and then I'm also going to specify plot lived in line so I can see that data visualizations inside
+
+21
+00:01:09,030 --> 00:01:16,120
+of the actual notebook and then the CACP files that we're going to upload are the ones I want to say
+
+22
+00:01:16,120 --> 00:01:16,190
+.
+
+23
+00:01:16,200 --> 00:01:25,020
+PD read C S V pasand d if one and for DF one I'm also going to specify that the index be the first column
+
+24
+00:01:25,020 --> 00:01:26,820
+at index 0.
+
+25
+00:01:26,820 --> 00:01:32,460
+So now if I look at the one I can see that the index is actually a time series and that's going to be
+
+26
+00:01:32,460 --> 00:01:34,570
+important when we actually visualize that out.
+
+27
+00:01:34,680 --> 00:01:43,530
+And then for a non-time series index I'm going end and say PD read C S V and then pass and just to take
+
+28
+00:01:43,530 --> 00:01:45,340
+a look at the two said.
+
+29
+00:01:45,420 --> 00:01:50,100
+Very similar except this is just read data and it has a sequential index.
+
+30
+00:01:50,100 --> 00:01:50,740
+All right.
+
+31
+00:01:50,880 --> 00:01:55,940
+Let me go ahead and just show you a quick example of what you can do with these sort of data frames
+
+32
+00:01:55,940 --> 00:01:57,060
+in these columns.
+
+33
+00:01:57,060 --> 00:02:02,600
+Imagine we wanted to get a histogram of all the values in the A column for DF 1.
+
+34
+00:02:03,300 --> 00:02:05,590
+Well pand those can actually do that.
+
+35
+00:02:05,970 --> 00:02:13,440
+We can just call the EF 1 and then call just off of this and it will actually automatically start creating
+
+36
+00:02:13,440 --> 00:02:14,330
+a histogram.
+
+37
+00:02:14,490 --> 00:02:18,960
+And note that it's actually calling map plot live under the hood and you can begin to add in MAP plot
+
+38
+00:02:18,960 --> 00:02:24,670
+lib arguments or even see more style arguments like the number of bins you want in this histogram.
+
+39
+00:02:25,020 --> 00:02:30,140
+OK now something to note is this style actually isn't very good looking.
+
+40
+00:02:30,150 --> 00:02:31,380
+In my opinion.
+
+41
+00:02:31,380 --> 00:02:35,880
+So what you can do in order to fix that is if you come up to the top or really anywhere in the notebook
+
+42
+00:02:36,270 --> 00:02:42,280
+go ahead and say import Seaborn as asinus.
+
+43
+00:02:42,690 --> 00:02:48,080
+And once that's imported If you start running these cells again it will look like a seaborne plot.
+
+44
+00:02:48,090 --> 00:02:49,100
+Now look a little nicer.
+
+45
+00:02:49,110 --> 00:02:50,330
+So that's something I like to do.
+
+46
+00:02:50,400 --> 00:02:55,810
+You can actually see more in styles and the pantless calls will look like them.
+
+47
+00:02:56,190 --> 00:03:01,140
+Pandas has several plot types built into it and we're going to do just briefly go and show examples
+
+48
+00:03:01,200 --> 00:03:03,080
+of how to create these plots.
+
+49
+00:03:03,210 --> 00:03:09,360
+Pretty much all the plots can be done through a command off of the data frame and you can basically
+
+50
+00:03:09,360 --> 00:03:14,420
+do this with two methods you can call a data frame itself or call the column after data frame.
+
+51
+00:03:14,430 --> 00:03:21,630
+Let's go in and just do a column now and you can call plots and then under the argument of plot specified
+
+52
+00:03:21,630 --> 00:03:22,390
+kind.
+
+53
+00:03:22,530 --> 00:03:26,670
+And there is a list in your notebook and we're going to go throughout this list and then you specify
+
+54
+00:03:26,670 --> 00:03:28,090
+the keyword of the kind.
+
+55
+00:03:28,090 --> 00:03:31,180
+So if I wanted to histogram I could also create it this way.
+
+56
+00:03:31,440 --> 00:03:37,920
+And then here you can add in histogram arguments such as the number of bins you want.
+
+57
+00:03:37,920 --> 00:03:43,710
+So that's one method of creating For example a history room off of a data frame column called dot plot
+
+58
+00:03:43,920 --> 00:03:45,510
+and then call kind.
+
+59
+00:03:45,510 --> 00:03:51,380
+All right the other way you can call a plot using pandas is instead of specifying kind equals hissed
+
+60
+00:03:51,690 --> 00:03:58,010
+you can actually call hist directly off of plot so you can say dot plot and then that.
+
+61
+00:03:58,210 --> 00:04:00,110
+This will also create the plot.
+
+62
+00:04:00,120 --> 00:04:04,110
+This is the method we're going to be using throughout the rest of this lecture so we can either grab
+
+63
+00:04:04,110 --> 00:04:09,570
+the entire data frame or the column called dot plot and then call dot whatever the plot type we want
+
+64
+00:04:09,580 --> 00:04:09,860
+.
+
+65
+00:04:10,110 --> 00:04:13,730
+Let's go ahead and just go through all the plot types and check them out.
+
+66
+00:04:14,370 --> 00:04:19,780
+So let's go ahead and work with these two which is the non-time series.
+
+67
+00:04:19,780 --> 00:04:28,560
+So as an example it just has a normal index and one plot you can do is an area plot so you can go ahead
+
+68
+00:04:28,560 --> 00:04:30,700
+and specify plot area.
+
+69
+00:04:30,990 --> 00:04:38,250
+And this is essentially just going to show an area plot and which you can also do is specify Alpha as
+
+70
+00:04:38,250 --> 00:04:39,190
+an argument here.
+
+71
+00:04:39,240 --> 00:04:46,680
+If you want some more transparency and say Alfas equal to 0.4 and this shows some transparency here
+
+72
+00:04:46,680 --> 00:04:52,470
+and this is just showing the area of the values you can essentially just think of this as a normal line
+
+73
+00:04:52,470 --> 00:04:56,750
+plot except the area underneath it has been filled in with some sort of color.
+
+74
+00:04:57,150 --> 00:05:01,890
+All right that's an area plot and again very easy to call off the data frame.
+
+75
+00:05:01,890 --> 00:05:08,700
+Let's go ahead and take a look at Bart plot's so you can say assin you're a data frame the two plots
+
+76
+00:05:09,150 --> 00:05:18,070
+and then bar and so automatically create a bar plot and what this does is it just takes the index value
+
+77
+00:05:18,220 --> 00:05:19,630
+basically as a category.
+
+78
+00:05:19,630 --> 00:05:22,830
+So in this case your index should be categorical.
+
+79
+00:05:23,030 --> 00:05:26,830
+Our data frame is actually it's small enough so this makes sense if we take a look at the data frame
+
+80
+00:05:27,100 --> 00:05:29,560
+it only has 0 or 9 so this works.
+
+81
+00:05:29,560 --> 00:05:32,890
+A typical data frame with a sequential index you probably would want to do this.
+
+82
+00:05:33,100 --> 00:05:38,980
+But if it's a categorical index then as a category we'll just list the values per each column and you
+
+83
+00:05:38,980 --> 00:05:43,360
+can actually also create this to be stacked by passing in stacked equals true
+
+84
+00:05:46,180 --> 00:05:47,530
+and you'll get a plot that looks like this.
+
+85
+00:05:47,530 --> 00:05:51,190
+Basically the exact same thing except except that stacking the values.
+
+86
+00:05:51,190 --> 00:05:54,780
+Personally I would actually recommend that ease see more and for these types of plots.
+
+87
+00:05:54,910 --> 00:06:00,100
+But if you're just doing some very quick analysis this sort of thing is going to work for you just calling
+
+88
+00:06:00,100 --> 00:06:01,480
+it off a pantless.
+
+89
+00:06:01,630 --> 00:06:04,180
+Now it's called histogram.
+
+90
+00:06:04,180 --> 00:06:06,500
+Just to clarify what it looks like again.
+
+91
+00:06:06,530 --> 00:06:13,780
+So going to call it say the if one a dot plot just we've seen this before.
+
+92
+00:06:14,020 --> 00:06:15,040
+And here's our histogram.
+
+93
+00:06:15,040 --> 00:06:17,110
+And you can specify the number of bins you want.
+
+94
+00:06:17,300 --> 00:06:24,430
+So if you want a larger number of bins in order to get a little more clarity as far as Panthers plots
+
+95
+00:06:24,460 --> 00:06:30,640
+go and doing stuff that's built into Panda's histograms are probably the one to use the most.
+
+96
+00:06:30,640 --> 00:06:35,070
+You can also do line plots which is another common one that I like to use for Pandurs.
+
+97
+00:06:35,230 --> 00:06:39,630
+For example if we check out the EF 1 remember that our time series index.
+
+98
+00:06:39,790 --> 00:06:43,500
+Let's imagine that we wanted to plot the data of one of these time series.
+
+99
+00:06:43,600 --> 00:06:47,590
+You can go ahead and just say DF one plot and then call line.
+
+100
+00:06:47,590 --> 00:06:49,920
+This is just going to create a line plot.
+
+101
+00:06:50,290 --> 00:06:54,550
+And for the line plot you have to specify the X and the Y.
+
+102
+00:06:54,550 --> 00:07:03,400
+So in this case I want the X to be my actual index so I can say if one index and I want my y to be one
+
+103
+00:07:03,400 --> 00:07:06,250
+of these columns and you pass in the column as a string.
+
+104
+00:07:06,370 --> 00:07:07,500
+So I want to go underspecified.
+
+105
+00:07:07,540 --> 00:07:09,110
+Let's say B.
+
+106
+00:07:09,940 --> 00:07:14,590
+And if I just run this I get a plot that looks something like this.
+
+107
+00:07:14,600 --> 00:07:15,770
+Generally just a line plot.
+
+108
+00:07:15,790 --> 00:07:19,900
+So you can imagine if this was stock information and you wanted to plot it out versus time you can get
+
+109
+00:07:19,900 --> 00:07:21,250
+something that looks like this.
+
+110
+00:07:21,520 --> 00:07:24,190
+And so this is all built off of that plot lib.
+
+111
+00:07:24,250 --> 00:07:28,050
+You can begin adding that plot lib arguments such as the size you want.
+
+112
+00:07:28,250 --> 00:07:31,420
+So to want something much wider.
+
+113
+00:07:31,420 --> 00:07:33,000
+You can do something like this.
+
+114
+00:07:33,130 --> 00:07:35,770
+Or let's say I want to adjust the line with.
+
+115
+00:07:35,860 --> 00:07:39,610
+Well you can just do LW just like we saw for about Plaut live.
+
+116
+00:07:39,740 --> 00:07:43,510
+It's the line with to something a little skinnier you can add in markers.
+
+117
+00:07:43,510 --> 00:07:45,210
+All these other map plotless commands.
+
+118
+00:07:45,370 --> 00:07:49,610
+So everything you learn about that plot live can be applicable to these data frame plots.
+
+119
+00:07:50,050 --> 00:07:52,310
+Now let's go ahead and check out scatterplot.
+
+120
+00:07:52,810 --> 00:07:59,920
+So let's say I have DF one I can say plot that scatter and you're going to have to specify an x and
+
+121
+00:07:59,920 --> 00:08:00,400
+y.
+
+122
+00:08:00,490 --> 00:08:05,110
+So for this let's just go ahead and pass and strings of column names.
+
+123
+00:08:05,410 --> 00:08:10,240
+So a and b and this will create a nice looking scatterplot for us.
+
+124
+00:08:10,330 --> 00:08:15,150
+Something else you can do is actually set the color based off in another column.
+
+125
+00:08:15,160 --> 00:08:24,160
+So for instance you can say see the color is going to be equal off column C.
+
+126
+00:08:24,220 --> 00:08:27,220
+So if I just read that it gets me a black and white.
+
+127
+00:08:27,220 --> 00:08:32,010
+So if I take a look at the if one just clarify what we're doing here.
+
+128
+00:08:32,010 --> 00:08:36,790
+Data from when we have a value for a and b and we have a value for c..
+
+129
+00:08:36,820 --> 00:08:42,250
+So essentially we're showing now three levels of information a three dimensional plot if you will.
+
+130
+00:08:42,250 --> 00:08:48,430
+Since we have a versus B and then a third argument see displayed by color and you can actually pasan
+
+131
+00:08:49,360 --> 00:08:52,330
+see map as an argument then passing your own color map.
+
+132
+00:08:52,330 --> 00:08:57,820
+So for instance cool warm which you've seen before and now you're showing three levels of information
+
+133
+00:08:57,970 --> 00:09:02,110
+a versus B where they stand and then the color value for c..
+
+134
+00:09:02,140 --> 00:09:06,500
+Sometimes people don't like to show things by color but prefer to show them by size.
+
+135
+00:09:06,520 --> 00:09:09,910
+You can actually do that as well instead of passing C as an argument.
+
+136
+00:09:09,910 --> 00:09:12,440
+Here you'll just go ahead and pass.
+
+137
+00:09:12,520 --> 00:09:18,150
+S and for s You'll go ahead and in a data frame column.
+
+138
+00:09:18,460 --> 00:09:24,100
+So for this you have to actually pass in the data frame column itself and you probably if you just do
+
+139
+00:09:24,100 --> 00:09:26,470
+this the points will be too small.
+
+140
+00:09:27,110 --> 00:09:30,820
+And then what you can do is multiply this by some sort of factor.
+
+141
+00:09:31,390 --> 00:09:40,000
+So you can see the points are a versus B and the size indicates how much larger or C value was relative
+
+142
+00:09:40,000 --> 00:09:41,520
+to each other.
+
+143
+00:09:41,560 --> 00:09:41,980
+All right.
+
+144
+00:09:42,010 --> 00:09:45,880
+This is the kind of thing where you probably wouldn't remember this off the top of your head you would
+
+145
+00:09:45,880 --> 00:09:50,320
+go back to Jupiter notebook book that I have assembled for you and use that as a reference or check
+
+146
+00:09:50,320 --> 00:09:52,090
+out the documentation.
+
+147
+00:09:52,090 --> 00:09:55,010
+Let's go ahead and move on to box plots again.
+
+148
+00:09:55,030 --> 00:09:59,980
+I really like seaborne for box plots but if you just want a quick analysis of a box plot pandas can
+
+149
+00:09:59,980 --> 00:10:00,920
+do that for you as well.
+
+150
+00:10:00,940 --> 00:10:08,740
+So you just pass on your whole data frame call plot call box and here you can see a box plot that's
+
+151
+00:10:08,740 --> 00:10:11,270
+basically automatically done for you per column.
+
+152
+00:10:11,290 --> 00:10:16,390
+So it just takes every column as a category and then plots the distributions for you as a box plot.
+
+153
+00:10:16,920 --> 00:10:17,680
+All right.
+
+154
+00:10:17,680 --> 00:10:24,970
+For by various data you can do a hexagonal plot which you'd actually seen before with Pandurs excuse
+
+155
+00:10:24,970 --> 00:10:25,970
+me it was Seaborn.
+
+156
+00:10:26,200 --> 00:10:30,400
+But let me go and make a new data frame for this to actually show up correctly.
+
+157
+00:10:30,520 --> 00:10:33,780
+So I want to say PD data frame.
+
+158
+00:10:33,780 --> 00:10:42,400
+I'm going to pass in some random data ran then and I'm going to have this be 1000 by let's say two and
+
+159
+00:10:42,400 --> 00:10:48,020
+then I'm going to pass and the columns to be just a and b.
+
+160
+00:10:49,580 --> 00:10:52,650
+And if we take a look at our data frame look something like this.
+
+161
+00:10:52,650 --> 00:10:53,700
+Just some random data.
+
+162
+00:10:53,740 --> 00:10:54,700
+A freebie.
+
+163
+00:10:54,880 --> 00:11:01,330
+I just wanted some more random points here and what I can do since this is by variant are two variables
+
+164
+00:11:01,330 --> 00:11:01,620
+here.
+
+165
+00:11:01,660 --> 00:11:10,990
+And B I can say plot Hexton pass and x is equal to a mass and Y is equal to B.
+
+166
+00:11:11,330 --> 00:11:14,750
+And if you just do this you will get a hex plot.
+
+167
+00:11:14,980 --> 00:11:19,090
+Now this is essentially like a scatterplot except it's the hexagonal bins.
+
+168
+00:11:19,210 --> 00:11:21,710
+Right now the bin size is really quite small.
+
+169
+00:11:21,730 --> 00:11:27,170
+So to change that you can say grid size is equal to 25.
+
+170
+00:11:27,580 --> 00:11:33,730
+And this will enlarge the size of the hexagons and essentially the hexagons get darker as there's more
+
+171
+00:11:33,730 --> 00:11:39,760
+points inside of them and you can also change the color mapping here and say See map is equal to something
+
+172
+00:11:39,760 --> 00:11:40,180
+else.
+
+173
+00:11:40,180 --> 00:11:45,930
+For instance if we wanted cool warm to be our color mapping you could do that as well.
+
+174
+00:11:46,000 --> 00:11:49,980
+And then finally we can do kernel density estimation plots.
+
+175
+00:11:50,110 --> 00:11:56,020
+So if for some reason you don't just want a histogram but you want kernel density estimation you can
+
+176
+00:11:56,020 --> 00:12:02,700
+call your data frame or a column off your data frame and then cissé plot Haidee.
+
+177
+00:12:03,080 --> 00:12:08,680
+It will create this kernel density estimation plot for you and you can do the same thing with density
+
+178
+00:12:09,170 --> 00:12:10,450
+which is another call you can make.
+
+179
+00:12:10,450 --> 00:12:15,880
+So in say density and that will be the same thing.
+
+180
+00:12:15,880 --> 00:12:20,410
+So if you want a density or kernel density estimation plot those will be the same thing and you can
+
+181
+00:12:20,410 --> 00:12:23,320
+actually do this off the entire data frame as well.
+
+182
+00:12:23,320 --> 00:12:29,890
+You don't have to do it just off of one column if you want to compare the density kernel density estimation
+
+183
+00:12:29,890 --> 00:12:32,220
+plot of all the columns in your data frame.
+
+184
+00:12:32,230 --> 00:12:32,590
+All right.
+
+185
+00:12:32,590 --> 00:12:33,200
+That's it.
+
+186
+00:12:33,280 --> 00:12:38,920
+Hopefully you can see why this method of plotting directly off of Pandurs is a lot easier than calling
+
+187
+00:12:38,920 --> 00:12:43,650
+full map plot lib and it balances ease of use with control over the figure.
+
+188
+00:12:43,720 --> 00:12:47,800
+You should note though if you really want to start customizing your figure you should be falling back
+
+189
+00:12:47,800 --> 00:12:50,230
+to Seaborn or map plot lib.
+
+190
+00:12:50,470 --> 00:12:55,390
+These sort of commands are really just for a quick analysis of your data and you probably just go to
+
+191
+00:12:55,390 --> 00:13:00,130
+the note book quickly reference the kind of plot you want to create and then call it off the data frame
+
+192
+00:13:00,130 --> 00:13:02,190
+or call it off the column or the data frame.
+
+193
+00:13:02,320 --> 00:13:06,370
+As far as how we're going to use this throughout the course really the only times we're probably going
+
+194
+00:13:06,370 --> 00:13:10,840
+to use this is just with a line plot or a histogram to call it very quickly.
+
+195
+00:13:10,840 --> 00:13:16,170
+For more advanced this Haskel plotters box plots or bar plots I would really recommend going with Seaborn
+
+196
+00:13:16,190 --> 00:13:17,310
+.
+
+197
+00:13:17,340 --> 00:13:22,570
+All right I hope you found this useful and I will see you at the next lecture or we're going to describe
+
+198
+00:13:22,570 --> 00:13:25,720
+the quick exercise for you to practice what we just learned here.
+
+199
+00:13:25,720 --> 00:13:27,430
+Thanks everyone and I'll see you at the next lecture

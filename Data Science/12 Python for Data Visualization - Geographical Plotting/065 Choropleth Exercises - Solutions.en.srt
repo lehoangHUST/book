@@ -1,0 +1,555 @@
+1
+00:00:05,280 --> 00:00:10,350
+Hello everyone and welcome to the Karplus maps exercises solution's lecture in this lecture.
+
+2
+00:00:10,350 --> 00:00:15,140
+We're going to be coding up solutions for the exercises on the Karplus maps section.
+
+3
+00:00:15,150 --> 00:00:19,260
+Let's go ahead and chump's that you put a notebook to get started.
+
+4
+00:00:19,260 --> 00:00:19,470
+All right.
+
+5
+00:00:19,470 --> 00:00:21,500
+Here I am at the Jupiter notebook.
+
+6
+00:00:21,600 --> 00:00:26,850
+I want to go ahead and run the plotline imports despite running shift enter there and then the first
+
+7
+00:00:26,850 --> 00:00:33,420
+thing we want to do is import pandas as PD and then we're going to go ahead and use pandas to read the
+
+8
+00:00:33,430 --> 00:00:37,830
+CXXVI 2014 underscore world power consumption.
+
+9
+00:00:37,830 --> 00:00:47,570
+So I'm going to go and say the sequel to PD read CXXVI and then passen 2014.
+
+10
+00:00:47,690 --> 00:00:54,420
+Or I can actually just use to find fine and complete this and let's go ahead and check the head of the
+
+11
+00:00:54,420 --> 00:00:57,130
+data frame the head.
+
+12
+00:00:57,360 --> 00:00:58,590
+And here we have it.
+
+13
+00:00:58,630 --> 00:00:59,070
+OK.
+
+14
+00:00:59,160 --> 00:01:04,460
+Now we want to reference electional to create a core plot of the power consumption for countries using
+
+15
+00:01:04,470 --> 00:01:07,150
+the data and layout dictionary.
+
+16
+00:01:07,170 --> 00:01:11,990
+Let's go ahead and start off with the data dictionary.
+
+17
+00:01:12,090 --> 00:01:20,540
+When they call the casting dictionary and then I'm going to say tie is equal to chloroplast as we've
+
+18
+00:01:20,540 --> 00:01:22,120
+done before.
+
+19
+00:01:22,260 --> 00:01:30,960
+The next key I'm going to go an answer is locations and that's going to go ahead and be equal to the
+
+20
+00:01:30,960 --> 00:01:32,400
+column of the location codes.
+
+21
+00:01:32,400 --> 00:01:34,520
+In this case it's just country here.
+
+22
+00:01:34,680 --> 00:01:36,410
+So I'm just going to pass in a country
+
+23
+00:01:39,090 --> 00:01:45,570
+and then I'm going to say location mode and here's where you had a reference that documentation to figure
+
+24
+00:01:45,570 --> 00:01:49,460
+out the location mode is country space names.
+
+25
+00:01:49,570 --> 00:01:52,600
+And there's a full length to the documentation right here.
+
+26
+00:01:52,620 --> 00:01:53,710
+You can go ahead and click that link.
+
+27
+00:01:53,710 --> 00:01:57,810
+It'll take you to the full documentation reference and you can look up what is the correct location
+
+28
+00:01:57,810 --> 00:01:59,790
+mode for the specific country.
+
+29
+00:01:59,790 --> 00:02:04,080
+Since we don't actually have the country codes in this case we have the country names and hopefully
+
+30
+00:02:04,080 --> 00:02:09,060
+by looking up in the documentation you are able to discover that or just by referencing these solutions
+
+31
+00:02:09,070 --> 00:02:09,710
+.
+
+32
+00:02:10,320 --> 00:02:19,290
+Next up we want to specify z and z is going to be equal to the if and we want it to be the power consumption
+
+33
+00:02:19,290 --> 00:02:19,950
+column.
+
+34
+00:02:20,010 --> 00:02:22,590
+That's what we actually want our coloring to represent.
+
+35
+00:02:22,590 --> 00:02:34,770
+So you can go ahead and say power consumption and it's going to be let's say W H there and then the
+
+36
+00:02:34,770 --> 00:02:37,860
+text is going to go ahead and have that the the country name as well.
+
+37
+00:02:37,860 --> 00:02:46,980
+So going on to say text is country and then finally we'll label our color bar to be the dictionary or
+
+38
+00:02:46,980 --> 00:02:54,270
+a title and the color bar label is just going to be or the title color bar going to be power consumption
+
+39
+00:02:55,110 --> 00:02:57,180
+KWH.
+
+40
+00:02:57,210 --> 00:02:57,410
+Right.
+
+41
+00:02:57,420 --> 00:03:01,200
+And that's our basic data dictionary we're going to come back to it and add a couple more arguments
+
+42
+00:03:01,200 --> 00:03:02,550
+later on.
+
+43
+00:03:02,550 --> 00:03:05,450
+But then let's also do our layouts.
+
+44
+00:03:05,820 --> 00:03:09,870
+So I'm going to say lay out a dictionary.
+
+45
+00:03:10,200 --> 00:03:18,300
+So the title of this to be just the title of the plot will go on and say 2014 power consumption as the
+
+46
+00:03:18,300 --> 00:03:19,020
+title.
+
+47
+00:03:19,470 --> 00:03:27,150
+And then next screen you set up a geo key and then pasan a dictionary call say show frame a sequel to
+
+48
+00:03:27,150 --> 00:03:30,440
+false and then say projection.
+
+49
+00:03:30,480 --> 00:03:34,400
+And you can pass in any projection you want as was shown in the earlier lectures.
+
+50
+00:03:34,410 --> 00:03:39,420
+But let's just go ahead and stick with this.
+
+51
+00:03:39,540 --> 00:03:41,850
+For direction.
+
+52
+00:03:42,920 --> 00:03:47,650
+And now let's go ahead and run the lasso and see what we get up.
+
+53
+00:03:47,660 --> 00:03:48,090
+All right.
+
+54
+00:03:48,090 --> 00:03:53,940
+And here you can see the 2014 power consumption of the world and we can see that China and USA have
+
+55
+00:03:53,940 --> 00:03:57,360
+the highest power consumption now and the solution is NOT book.
+
+56
+00:03:57,360 --> 00:04:06,090
+I went ahead and changed the color scale by saying as an argument in the data dictionary I said color
+
+57
+00:04:06,090 --> 00:04:10,890
+scale is equal to this.
+
+58
+00:04:10,950 --> 00:04:18,000
+And then I also said reverse scale is equal to true.
+
+59
+00:04:19,110 --> 00:04:21,660
+And that just makes this color scale a little nicer.
+
+60
+00:04:21,660 --> 00:04:26,790
+You don't have to do this is kind of optional but I prefer the sort of color scale it makes a little
+
+61
+00:04:26,790 --> 00:04:30,800
+more obvious between the countries instead of having them all grayed out.
+
+62
+00:04:30,870 --> 00:04:31,530
+All right.
+
+63
+00:04:31,530 --> 00:04:34,700
+That was the way it's make the 2014 power consumption plot.
+
+64
+00:04:34,770 --> 00:04:39,720
+And again a lot of this was having to look stuff up in the documentation which I know can be tricky
+
+65
+00:04:39,720 --> 00:04:45,390
+and annoying at times but for such strange syntax choices as far as plotting the stuff out you're really
+
+66
+00:04:45,390 --> 00:04:47,780
+going to have to do that when you want to create these plots.
+
+67
+00:04:47,790 --> 00:04:51,320
+It's going to be difficult to try to call these things directly from your memory.
+
+68
+00:04:52,580 --> 00:04:55,720
+All right now go ahead and move on to the USA choral clef.
+
+69
+00:04:55,890 --> 00:04:58,940
+We want to do is import the 2012 election data.
+
+70
+00:04:59,140 --> 00:05:00,630
+I'm going to go out and use panelist to do that.
+
+71
+00:05:00,670 --> 00:05:04,990
+I'll say USDA is equal to PD.
+
+72
+00:05:05,110 --> 00:05:11,050
+Read CXXVI and then we're going to look at the 2012 election data.
+
+73
+00:05:11,170 --> 00:05:13,510
+I mean just using tab to autocomplete that.
+
+74
+00:05:13,870 --> 00:05:17,850
+And then I'm going to just check the head of that data frame by saying us the Fed.
+
+75
+00:05:18,250 --> 00:05:20,740
+And here we get the matching data frame.
+
+76
+00:05:20,740 --> 00:05:24,930
+Now let's go in and create a plot that displays the voting age population per state.
+
+77
+00:05:24,940 --> 00:05:35,050
+The AP going to make my data dictionary by saying data equals dicks and then all say type is Curle plus
+
+78
+00:05:35,030 --> 00:05:37,550
+.
+
+79
+00:05:38,940 --> 00:05:44,440
+And let's go ahead and add in those color scale arguments so I'll go in and say a color scale is equal
+
+80
+00:05:44,460 --> 00:05:51,180
+to this and also a reverse scale to be true.
+
+81
+00:05:51,430 --> 00:05:56,940
+And the reason I say reverse scale equal to true is so that it actually reverses the color scale.
+
+82
+00:05:56,940 --> 00:06:03,400
+Let me go to show you just real quick what happens if we don't put that in by say reverse scale let's
+
+83
+00:06:03,390 --> 00:06:07,820
+say equals false here which is the default.
+
+84
+00:06:08,230 --> 00:06:12,370
+Then I get a scale that looks like this which isn't really as nice as having the reverse so you can
+
+85
+00:06:12,370 --> 00:06:16,030
+reverse any color scale you want just by adding in that parameter.
+
+86
+00:06:16,120 --> 00:06:22,200
+And for this it usually works much better if you actually say reverse scale is true.
+
+87
+00:06:22,200 --> 00:06:28,860
+So this is what it looks like by default so not reversed but I prefer the darker colors to be the higher
+
+88
+00:06:28,870 --> 00:06:29,660
+quantity.
+
+89
+00:06:29,680 --> 00:06:31,580
+That way it's a little more clear.
+
+90
+00:06:31,600 --> 00:06:32,140
+All right.
+
+91
+00:06:32,400 --> 00:06:39,910
+Continuing on if we jump back here we'll go out and say reverse scale's equals true locations.
+
+92
+00:06:39,900 --> 00:06:47,290
+It's going to be equal to the state abbreviation which if we actually look at this here we have both
+
+93
+00:06:47,280 --> 00:06:51,340
+the state name and the state abbreviation at the end.
+
+94
+00:06:51,610 --> 00:07:04,190
+Let's go ahead use state abbreviation we'll say USCF Hassen the state's abbreviation column.
+
+95
+00:07:04,260 --> 00:07:09,400
+Next we want to choose or Z and this was already told to you what you should choose.
+
+96
+00:07:09,430 --> 00:07:12,260
+It was the voting age population.
+
+97
+00:07:12,260 --> 00:07:17,500
+The AP and then location mode.
+
+98
+00:07:17,940 --> 00:07:19,210
+It's going to be called two.
+
+99
+00:07:19,240 --> 00:07:25,410
+Just like in the examples USA states just like in the lecture and then our text.
+
+100
+00:07:25,410 --> 00:07:33,490
+Let's go ahead and just choose the text to be the actual state name so USCF States and then we're going
+
+101
+00:07:33,490 --> 00:07:35,430
+to go ahead and do it say color bar
+
+102
+00:07:38,860 --> 00:07:41,230
+is equal to and then we pass in a dictionary here.
+
+103
+00:07:41,250 --> 00:07:50,370
+Title and this is going to just be voting age population.
+
+104
+00:07:50,400 --> 00:07:51,850
+Let's run that.
+
+105
+00:07:51,880 --> 00:07:53,340
+All right we have a data dictionary.
+
+106
+00:07:53,380 --> 00:07:56,880
+Now it's time to make our lay out dictionary.
+
+107
+00:07:58,090 --> 00:08:00,100
+We pass in our casting dictionary.
+
+108
+00:08:00,150 --> 00:08:07,930
+We set the title of our entire plot here we'll just call it 2012 election data.
+
+109
+00:08:08,350 --> 00:08:09,900
+You can call it whatever you want.
+
+110
+00:08:10,120 --> 00:08:13,110
+We'll say Geo's equal to dictionary.
+
+111
+00:08:13,320 --> 00:08:17,500
+Cisco USA.
+
+112
+00:08:17,950 --> 00:08:22,180
+Another argument we're going to say is show Lakes equals true.
+
+113
+00:08:22,500 --> 00:08:27,640
+And then we just choose the lake color and I want to do the late color with the RSGB mechanism we saw
+
+114
+00:08:27,630 --> 00:08:30,810
+in the lectures where partly accepts a string.
+
+115
+00:08:30,890 --> 00:08:33,650
+It's kind of in a strange format these say R.G. B.
+
+116
+00:08:33,850 --> 00:08:41,700
+And then you actually pass in the numerical values and choose these numbers 85 173 and 240 which gets
+
+117
+00:08:41,700 --> 00:08:44,610
+us a nice blue hue for the Lakes.
+
+118
+00:08:44,640 --> 00:08:45,190
+All right.
+
+119
+00:08:45,370 --> 00:08:46,050
+That's our lay out.
+
+120
+00:08:46,060 --> 00:08:48,140
+Let's going to run this.
+
+121
+00:08:48,450 --> 00:08:54,480
+And here we see 2012 election data and it makes sense that the most populous states such as California
+
+122
+00:08:54,490 --> 00:08:59,430
+Texas and New York and Florida have the darker colors because they have the highest population meaning
+
+123
+00:08:59,430 --> 00:09:03,460
+they have probably also the highest voting age population.
+
+124
+00:09:03,450 --> 00:09:03,880
+All right.
+
+125
+00:09:03,880 --> 00:09:06,570
+That's it for the coral maps exercises.
+
+126
+00:09:06,580 --> 00:09:13,360
+It was just this USA election data and this international power consumption data hopefully has seen
+
+127
+00:09:13,360 --> 00:09:19,120
+the power of plotline in being able to reproduce the sort of pretty advanced plots.
+
+128
+00:09:19,300 --> 00:09:25,650
+And with just a few lines of code that comes at the cost of the syntax being a little strange and having
+
+129
+00:09:25,650 --> 00:09:31,650
+to reference documentation but having a plot that looks this nice and being able to interact with it
+
+130
+00:09:31,650 --> 00:09:37,710
+and zoom in and check up the numbers and set text to what you want for having hover over it's pretty
+
+131
+00:09:37,710 --> 00:09:38,110
+nice.
+
+132
+00:09:38,110 --> 00:09:43,540
+Given how much code you're actually writing in other languages this would take much much more code.
+
+133
+00:09:43,540 --> 00:09:44,170
+All right.
+
+134
+00:09:44,160 --> 00:09:49,630
+Hope you enjoy those core Pluff maps exercises they are meant to be very challenging and having to reference
+
+135
+00:09:49,620 --> 00:09:52,780
+a lot of the documentation in order to fully understand it.
+
+136
+00:09:52,870 --> 00:09:57,460
+But that's also kind of just a real world example of what you can do when doing these things on your
+
+137
+00:09:57,450 --> 00:09:58,190
+own.
+
+138
+00:09:58,330 --> 00:09:59,400
+But you enjoyed it.
+
+139
+00:09:59,400 --> 00:10:01,160
+Thanks everyone and I'll see you at the next lecture

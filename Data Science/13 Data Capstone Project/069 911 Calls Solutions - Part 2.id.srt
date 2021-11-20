@@ -1,0 +1,987 @@
+1
+00:00:05,370 --> 00:00:10,070
+Halo semuanya dan selamat datang di bagian dua hari ini untuk memberi kuliah beberapa solusi proyek malam ini.
+
+2
+00:00:10,100 --> 00:00:12,040
+Ketika seseorang menyebut proyek batu penjuru.
+
+3
+00:00:12,240 --> 00:00:15,840
+Ayo maju dan lompat tepat ke tempat kita tinggalkan dan pergi ke buku catatan Jupiter.
+
+4
+00:00:16,290 --> 00:00:21,270
+OK di sini saya di notebook tepat di mana kami tinggalkan kami menemukan bahwa
+
+5
+00:00:21,270 --> 00:00:27,180
+bulan-bulan itu benar-benar hilang beberapa nilai versus sembilan 10 dan 11 hilang dan kami ingin lakukan sekarang bekerja
+
+6
+00:00:27,180 --> 00:00:32,190
+dengan panda untuk mencoba membuat mungkin plot garis atau beberapa visualisasi lain yang mencoba memperhitungkannya.
+
+7
+00:00:32,220 --> 00:00:34,700
+Jadi mungkin kita bisa mengisi titik data yang hilang itu.
+
+8
+00:00:35,140 --> 00:00:35,630
+BAIK.
+
+9
+00:00:35,700 --> 00:00:44,670
+Kita akan pergi ke depan dan lakukan adalah membuat grup dengan objek yang dipanggil oleh bulan dan mengatakan grup DMF
+
+10
+00:00:44,670 --> 00:00:51,740
+dengan melewati kolom bulan dan menggunakan metode penghitungan untuk agregasi seperti yang diminta untuk arah.
+
+11
+00:00:51,780 --> 00:00:52,490
+Dan kemudian dilanjutkan.
+
+12
+00:00:52,490 --> 00:00:54,540
+Lihat saja kepala.
+
+13
+00:00:54,570 --> 00:00:56,050
+Menurut bulan.
+
+14
+00:00:56,590 --> 00:00:58,040
+OK dan di sini kita bisa melihat kepala.
+
+15
+00:00:58,050 --> 00:01:04,500
+Dengan bulan Anda akan melihat bahwa pada dasarnya apa yang terjadi adalah kami menghitung setiap instance
+
+16
+00:01:04,500 --> 00:01:10,680
+kolom pada bulan atau kami akan melanjutkan dan lakukan adalah melihat bahwa beberapa jumlah berbeda tergantung
+
+17
+00:01:10,740 --> 00:01:13,140
+pada nilai kolom yang sebenarnya.
+
+18
+00:01:13,180 --> 00:01:15,900
+Dan itu karena beberapa nilai pada dasarnya hilang.
+
+19
+00:01:15,960 --> 00:01:18,590
+Saat Anda menjumlahkannya berdasarkan bulan atau kami akan melanjutkan dan melakukannya.
+
+20
+00:01:18,600 --> 00:01:19,860
+Bahkan semuanya tidak ada.
+
+21
+00:01:19,890 --> 00:01:24,050
+Cukup pilih kolom garis lintang sebagai nilai kami untuk jumlah agregat.
+
+22
+00:01:24,120 --> 00:01:29,980
+Silakan lanjutkan dan asumsikan bahwa jika kita memiliki garis lintang panggilan, panggilan itu benar-benar terjadi.
+
+23
+00:01:30,000 --> 00:01:34,660
+Sekarang kita dapat membuat plot sederhana dari kerangka data yang menunjukkan jumlah
+
+24
+00:01:34,670 --> 00:01:42,060
+biaya per bulan dan cara yang bisa kita lakukan sebenarnya hanya dengan memplot kolom yang kita katakan dengan bulan
+
+25
+00:01:42,150 --> 00:01:45,750
+memanggil kolom misalnya lintang dan kemudian mengatakan plot.
+
+26
+00:01:46,530 --> 00:01:51,240
+Dan di sini kita memiliki bulan kita dan sekarang kita benar-benar dapat mengisi beberapa
+
+27
+00:01:51,660 --> 00:01:55,960
+informasi yang hilang melalui kesesuaian antara poin delapan dan poin 12
+
+28
+00:01:56,040 --> 00:02:00,260
+Dan kemudian Anda bisa melihat kurva ke bawah mungkin sedikit lebih baik daripada yang seharusnya.
+
+29
+00:02:00,450 --> 00:02:06,210
+Seandainya Anda melakukannya hanya dengan sebidang plot dan untuk menunjukkan kepada Anda bahwa mungkin dengan sedikit
+
+30
+00:02:06,240 --> 00:02:14,430
+lebih detail saya akan masuk dan menyalin kode ini tempel di sini dan saya akan pergi ke depan dan menghapus hewe itu Dan kemudian
+
+31
+00:02:14,490 --> 00:02:17,460
+jika saya jalankan ini kita akan melihat kode.
+
+32
+00:02:17,460 --> 00:02:18,900
+Di sini kita punya bulan.
+
+33
+00:02:18,900 --> 00:02:20,800
+Jangan khawatir tentang peringatan kecil ini.
+
+34
+00:02:21,090 --> 00:02:23,340
+Tetapi ini pada dasarnya menunjukkan informasi yang sama.
+
+35
+00:02:23,340 --> 00:02:25,670
+Namun tanpa 9 10 dan 11 bulan.
+
+36
+00:02:25,840 --> 00:02:31,650
+Jadi Anda bisa melihat drop down dari bulan 7 dua bulan delapan dan 12 jam.
+
+37
+00:02:31,650 --> 00:02:33,050
+Mungkin itu sedikit lebih jelas.
+
+38
+00:02:33,100 --> 00:02:37,060
+Drop down antara 8 dan 12 menggunakan plot garis semacam ini.
+
+39
+00:02:37,380 --> 00:02:42,450
+Dan Anda benar-benar dapat bermain-main dengan kolom mana yang Anda pilih untuk plot seperti
+
+40
+00:02:42,750 --> 00:02:50,220
+mungkin kolom kota atau kolom zip dll untuk melihat seberapa jelas penurunan ini hanya jenis bidang analisis data eksplorasi atau mungkin
+
+41
+00:02:50,250 --> 00:02:56,430
+tidak ada jawaban yang benar kecuali Anda ingin menunjukkan sesuatu yang sangat spesifik melalui metode kuantitatif dan
+
+42
+00:02:56,430 --> 00:03:01,050
+dalam hal ini Anda mungkin akan menunjukkan plot plot semacam ini.
+
+43
+00:03:01,050 --> 00:03:06,540
+Tapi itu juga bagus hanya untuk mendapatkan ide tren menggunakan perintah plot sederhana ini.
+
+44
+00:03:06,540 --> 00:03:06,960
+Baiklah.
+
+45
+00:03:07,320 --> 00:03:11,850
+Mari kita lanjutkan sekarang dan melihat apakah kita dapat menggunakan lihat duka plot L-M untuk membuat kecocokan linear pada
+
+46
+00:03:11,850 --> 00:03:13,000
+jumlah panggilan per bulan.
+
+47
+00:03:13,050 --> 00:03:17,750
+Dan perlu diingat Anda mungkin perlu mengatur ulang indeks ke kolom untuk melakukan itu.
+
+48
+00:03:17,790 --> 00:03:20,870
+Yang akan saya lakukan adalah mengatakan ini.
+
+49
+00:03:20,880 --> 00:03:27,330
+Saya akan mengatakan S. SEBUAH. pikir L. M. plot untuk plot model
+
+50
+00:03:27,330 --> 00:03:35,420
+linier dari Seaborn dan saya ingin X saya jika kita keluar dan memeriksa ini menjadi bulan dan kita bisa masuk sekarang pilih mungkin kota untuk sumbu y.
+
+51
+00:03:35,520 --> 00:03:39,690
+Anda juga dapat memilih lintang atau benar-benar kolom lain jika Anda ingin melakukan
+
+52
+00:03:39,690 --> 00:03:42,460
+eksperimen dengan ini sehingga pada dasarnya hanya diperhitungkan.
+
+53
+00:03:43,680 --> 00:03:48,860
+Dan kemudian data akan menjadi berdasarkan bulan.
+
+54
+00:03:49,950 --> 00:03:52,890
+Tetapi perhatikan di sini saya katakan X adalah kolom bulan.
+
+55
+00:03:52,890 --> 00:04:00,480
+Jika kita melihat kembali berdasarkan bulan kita tidak benar-benar memiliki kolom bulan, bulan adalah indeks.
+
+56
+00:04:00,570 --> 00:04:05,370
+Jadi apa yang akan saya lakukan adalah mengatur ulang indeks ke bulan agar ini berfungsi
+
+57
+00:04:08,770 --> 00:04:11,070
+dan cara untuk membuatnya lebih jelas.
+
+58
+00:04:11,070 --> 00:04:15,720
+Biarkan saya menunjukkan kepada Anda seperti apa sebenarnya ini.
+
+59
+00:04:16,350 --> 00:04:21,750
+Jika saya mereset indeks atau berdasarkan bulan, saya akan membuat bulan menjadi kolom baru dan
+
+60
+00:04:21,750 --> 00:04:26,630
+itu memungkinkan Seaborn untuk benar-benar mengakses informasi ini alih-alih mengaturnya ke indeks.
+
+61
+00:04:26,880 --> 00:04:29,110
+Dan dengan cara itu saya bisa benar-benar lulus dan bulan di sini adalah string.
+
+62
+00:04:29,130 --> 00:04:31,200
+Kalau tidak, Seaborn akan bingung.
+
+63
+00:04:31,290 --> 00:04:39,060
+Dan itulah yang kami harus gunakan indeks baru-baru ini ke kolom dan kemudian kami mendapatkan model linier cocok dan kita dapat
+
+64
+00:04:39,060 --> 00:04:43,980
+melihat bahwa secara umum sejauh apa Seymore itu jenis plot dalam model ini
+
+65
+00:04:43,980 --> 00:04:47,640
+bahwa jumlah panggilan turun dari 0 ke bulan 12.
+
+66
+00:04:47,640 --> 00:04:52,850
+Ingatlah bahwa seaborne tidak memiliki informasi yang cukup untuk menyadari bahwa ini adalah bulan.
+
+67
+00:04:52,980 --> 00:04:57,380
+Dan agar 13 dan 14 tidak seharusnya benar-benar ada atau berlanjut.
+
+68
+00:04:57,420 --> 00:05:01,800
+Ini sebenarnya akan menjadi data musiman dan dalam hal ini mungkin model linier sebenarnya yang
+
+69
+00:05:01,890 --> 00:05:07,530
+paling cocok dan Anda dapat melihat bahwa negara-negara pelayaran menunjukkan ini dengan daerah yang diarsir ini menunjukkan kesalahan dan kesalahan
+
+70
+00:05:07,560 --> 00:05:12,360
+pada dasarnya tumbuh ketika Anda memasuki bulan-bulan ini di mana ada sedikit informasi yang sebenarnya sangat masuk
+
+71
+00:05:12,360 --> 00:05:15,540
+akal untuk memiliki informasi sekitar sembilan 10 atau 11 bulan.
+
+72
+00:05:15,900 --> 00:05:21,770
+Dan Anda dapat melihat tren ini di mana ia mulai turun dan kemudian crash pada bulan delapan itu sesuatu
+
+73
+00:05:21,870 --> 00:05:24,540
+yang Anda mungkin ingin mengeksplorasi nanti dalam data.
+
+74
+00:05:24,540 --> 00:05:30,170
+Baiklah, mari kita lanjutkan dan tinggalkan saja di situ untuk saat ini dan jelajahi sedikit lebih banyak tentang informasi tanggal.
+
+75
+00:05:30,930 --> 00:05:31,210
+BAIK.
+
+76
+00:05:31,220 --> 00:05:36,920
+Yang ingin kami lakukan selanjutnya adalah membuat kolom baru bernama tanggal yang berisi tanggal dari
+
+77
+00:05:36,930 --> 00:05:42,590
+kolom cap waktu dan Anda harus menggunakan berlaku bersama dengan metode kurung tutup tanggal.
+
+78
+00:05:42,600 --> 00:05:50,460
+Biarkan saya masuk dan menunjukkan kepada Anda apa yang sebenarnya dimaksud dengan tanggal dengan menunjukkan kepada Anda contoh
+
+79
+00:05:50,460 --> 00:05:51,790
+kolom cap waktu.
+
+80
+00:05:51,920 --> 00:05:58,860
+Saya akan pergi ke depan dan hanya mengambil contoh pertama dari kolom cap waktu dan memanggil salah satu
+
+81
+00:05:58,880 --> 00:06:00,000
+objek itu.
+
+82
+00:06:00,010 --> 00:06:00,320
+Baiklah.
+
+83
+00:06:00,320 --> 00:06:06,180
+Ini adalah objek cap waktu dan ini sedikit berbeda dari objek kencan sebenarnya.
+
+84
+00:06:06,240 --> 00:06:13,520
+Dan alasan untuk itu adalah jika saya membatalkan tanggalnya, saya sekarang mendapatkan objek kencan.
+
+85
+00:06:13,530 --> 00:06:15,750
+Dan ini hanya menunjukkan informasi tanggal.
+
+86
+00:06:15,750 --> 00:06:20,940
+Ini tidak lagi memiliki informasi waktu dan itu bagus karena apa yang akan kita lakukan
+
+87
+00:06:20,940 --> 00:06:25,440
+nanti adalah membuat plot yang terlihat seperti ini hanya jumlah panggilan per tanggal.
+
+88
+00:06:25,440 --> 00:06:31,760
+Kami tidak ingin membanjiri informasi ini dengan jumlah panggilan setiap menit setiap jam.
+
+89
+00:06:31,750 --> 00:06:32,400
+Baiklah.
+
+90
+00:06:32,670 --> 00:06:45,060
+Itu berarti, mari kita lanjutkan dan mengatakan tanggal ZF sama dengan DMF cap waktu.
+
+91
+00:06:45,180 --> 00:06:49,760
+Dan seperti yang kami lakukan sebelum saya akan masuk dan
+
+92
+00:06:49,760 --> 00:06:55,320
+menerapkan Fil-Am ini ekspresi saya akan mengambil waktu itu melihat dan kembali ke tanggal.
+
+93
+00:06:55,350 --> 00:06:57,620
+Saya maju dan menerapkannya.
+
+94
+00:06:57,620 --> 00:07:05,490
+Sekarang jika saya melihat kepala ZF dan pergi jauh ke kanan di sini.
+
+95
+00:07:05,610 --> 00:07:11,330
+Sekarang saya memiliki kolom tanggal yang bagus ini yang diusir dari kolom cap waktu ini dan kemudian
+
+96
+00:07:11,370 --> 00:07:16,340
+ketika saya ingin melanjutkan dan dikelompokkan berdasarkan kolom negara bagian dengan jumlah agregat.
+
+97
+00:07:16,430 --> 00:07:18,590
+Jadi saya akan mengatakan tanggal berbeda.
+
+98
+00:07:18,670 --> 00:07:19,070
+Aduh.
+
+99
+00:07:19,110 --> 00:07:24,350
+Sebenarnya saya ingin mengatakan grup DFA berdasarkan tanggal berlalu.
+
+100
+00:07:24,360 --> 00:07:26,380
+Itu yang ingin saya beli.
+
+101
+00:07:26,460 --> 00:07:32,270
+Saya akan pergi ke depan dan menghitung dan kemudian mari kita masuk dan melihat kepala bingkai
+
+102
+00:07:32,270 --> 00:07:33,760
+seperti apa ini.
+
+103
+00:07:34,470 --> 00:07:35,150
+BAIK.
+
+104
+00:07:35,250 --> 00:07:41,090
+Dan ini pada dasarnya menghitung semua instance kencannya untuk tanggal aktual yang terjadi.
+
+105
+00:07:41,100 --> 00:07:46,440
+Sekali lagi perhatikan bahwa ada beberapa perbedaan antara beberapa nilai kolom ini dan itu hanya
+
+106
+00:07:46,470 --> 00:07:53,130
+pada dasarnya menunjukkan bahwa Anda kehilangan beberapa informasi misalnya dari 300 dari 96 panggilan pada 11 Desember adalah sen
+
+107
+00:07:53,150 --> 00:07:55,020
+bagaimana Anda ingin membacanya.
+
+108
+00:07:55,130 --> 00:08:03,590
+Apakah itu belum menjadi 11 Desember Anda hanya memiliki 333 dengan kode pos versus 396 kami memiliki garis lintang.
+
+109
+00:08:04,560 --> 00:08:07,440
+Ayo maju dan pilih salah satu kolom ini.
+
+110
+00:08:07,440 --> 00:08:12,810
+Agak sewenang-wenang karena mereka sebenarnya sangat dekat dengan angka, tetapi saya akan
+
+111
+00:08:13,640 --> 00:08:21,120
+terus maju dan ambil kolom garis lintang dan Anda dapat bereksperimen dengan meraih kolom berbeda bagaimana mereka membandingkan.
+
+112
+00:08:21,120 --> 00:08:26,430
+Dan di sini Anda memiliki kolom garis lintang yang sekarang pada dasarnya memberi saya tanggal dan jumlah panggilan
+
+113
+00:08:26,430 --> 00:08:29,740
+di mana kami tahu garis lintang dan kemudian saya bisa melanjutkan.
+
+114
+00:08:29,740 --> 00:08:33,880
+Hanya plot ini dan membuat saya plot yang terlihat seperti ini.
+
+115
+00:08:33,960 --> 00:08:41,340
+Dan perhatikan kita mendapatkan beberapa label ini tumpang tindih dan apa yang bisa kita lakukan adalah mengatakan lepaskan seperti yang telah kita
+
+116
+00:08:41,340 --> 00:08:46,710
+tunjukkan sebelumnya untuk benar-benar memperbaiki indeks itu dan mendapatkan sesuatu yang terlihat sedikit lebih bagus.
+
+117
+00:08:47,460 --> 00:08:48,200
+Baiklah.
+
+118
+00:08:48,210 --> 00:08:52,980
+Dan kemudian ketika kita benar-benar melihat di sini adalah sepertinya ada beberapa lonjakan yang signifikan di bulan
+
+119
+00:08:53,300 --> 00:08:59,270
+Februari dan sedikit di bulan Maret dan kemudian kita mendapatkan beberapa penurunan atau lonjakan dari bawah di bulan Mei dan mungkin di
+
+120
+00:08:59,310 --> 00:09:00,020
+akhir Agustus.
+
+121
+00:09:00,020 --> 00:09:01,520
+Agak sulit diceritakan di sini.
+
+122
+00:09:01,950 --> 00:09:06,720
+Dan Anda dapat melanjutkan dan mengacaukan plot ini atau memperluas plot untuk mencoba mendapatkan sedikit informasi lebih
+
+123
+00:09:06,720 --> 00:09:08,170
+lanjut tentang tanggal yang sebenarnya.
+
+124
+00:09:08,510 --> 00:09:13,230
+Yah kita akan pergi ke depan dan lakukan sekarang adalah membuat ulang plot ini untuk membuat tiga
+
+125
+00:09:13,230 --> 00:09:15,950
+plot terpisah dengan masing-masing plot mewakili alasan panggilan 911.
+
+126
+00:09:16,010 --> 00:09:22,120
+Kembali ke kerangka data alasan atau permisi panggil Mishu apa yang saya maksud dengan itu.
+
+127
+00:09:22,480 --> 00:09:25,100
+Jadi jika saya gulir ke bawah di sini saya ingin membuat ulang plot ini.
+
+128
+00:09:25,160 --> 00:09:31,420
+Jadi di sini kita memiliki satu plot dengan hanya panggilan lalu lintas saja panggilan darurat dan kemudian
+
+129
+00:09:32,820 --> 00:09:39,120
+hanya panggilan M-S dan kita kita lakukan sebenarnya proses yang sangat mirip dengan apa yang kita lakukan di sini.
+
+130
+00:09:40,190 --> 00:09:45,480
+Kita akan menyalin dan menempelkan ini tetapi alih-alih seluruh kerangka data saya akan
+
+131
+00:09:45,480 --> 00:09:48,790
+menggunakan seleksi bersyarat untuk benar-benar melakukan grup dengan.
+
+132
+00:09:49,350 --> 00:09:52,760
+Jadi saya akan mengatakan DSF di mana alasan ATF
+
+133
+00:09:55,500 --> 00:10:03,150
+sama dengan yang pertama kita bisa langsung saja mengatakan lalu lintas ke kami di sana dan kemudian kita pergi ke depan
+
+134
+00:10:03,140 --> 00:10:09,880
+dan plot ini dan di sana kita punya plot untuk lalu lintas dan jika Anda ingin Anda bisa
+
+135
+00:10:09,880 --> 00:10:17,020
+juga mengatakan Banding judul dan menunjukkan Anda ingin judul menjadi lalu lintas dan sekarang kita bisa benar-benar hanya menggunakan
+
+136
+00:10:17,020 --> 00:10:19,810
+kode yang sama untuk melakukan grafik lainnya.
+
+137
+00:10:19,810 --> 00:10:24,450
+Jadi jika kita menginginkan api, kita hanya mengganti ini dengan api sebagai alasan.
+
+138
+00:10:25,000 --> 00:10:30,610
+Dan sekarang kita dapat mengambil keuntungan dari semua pekerjaan yang baru saja kita lakukan sebelumnya untuk membuat tiga plot
+
+139
+00:10:30,610 --> 00:10:31,390
+terpisah ini.
+
+140
+00:10:31,390 --> 00:10:35,770
+Dan Anda dapat melanjutkan dan menjelajahinya sendiri dan melihat apakah
+
+141
+00:10:35,830 --> 00:10:41,050
+Anda dapat menemukan perbedaan antara mungkin sejumlah panggilan atau frekuensi panggilan selama tanggal tersebut.
+
+142
+00:10:41,050 --> 00:10:45,910
+Misalnya mungkin menarik untuk melihat bagaimana cuaca akan memengaruhi api berdasarkan bulan atau
+
+143
+00:10:45,910 --> 00:10:46,680
+hari.
+
+144
+00:10:47,110 --> 00:10:49,840
+Anda dapat melihat ada beberapa paku yang menarik di sana.
+
+145
+00:10:49,840 --> 00:10:50,230
+BAIK.
+
+146
+00:10:50,320 --> 00:10:51,550
+Bergerak bersama.
+
+147
+00:10:51,550 --> 00:10:56,140
+Mari kita akhirnya membuat peta panas dengan Seaborn dan data kita.
+
+148
+00:10:56,410 --> 00:11:01,420
+Dan pertama yang perlu kita lakukan adalah merestruktur bingkai data itu sehingga kolom menjadi
+
+149
+00:11:01,480 --> 00:11:04,080
+jam dan indeks menjadi hari dalam seminggu.
+
+150
+00:11:04,130 --> 00:11:09,940
+Sebenarnya ada banyak cara untuk melakukan ini tetapi apa yang saya sarankan coba lakukan adalah menggunakan grup dengan
+
+151
+00:11:09,970 --> 00:11:13,540
+metode baru yang saya ingin Anda temukan disebut metode unstacked.
+
+152
+00:11:13,540 --> 00:11:17,470
+Dan ada tautan di sini untuk dokumentasi dan Anda dapat merujuk ke solusi jika Anda terjebak
+
+153
+00:11:17,470 --> 00:11:18,240
+pada ini.
+
+154
+00:11:18,310 --> 00:11:21,820
+Biarkan saya maju dan memecah cara untuk benar-benar membuat sesuatu yang terlihat seperti ini.
+
+155
+00:11:21,820 --> 00:11:26,400
+Peta panas ini mengingat kembali ke peta klaster dan kuliah peta panas.
+
+156
+00:11:26,410 --> 00:11:33,280
+Kita membutuhkan data kita untuk berada dalam apa yang dikenal sebagai bentuk matriks di mana setiap sel dikonversi kembali
+
+157
+00:11:34,120 --> 00:11:38,440
+ke nilai yang mewakili nilai pada kolom dan indeks itu sendiri.
+
+158
+00:11:38,470 --> 00:11:40,980
+Berarti nol kami pada hari Jumat.
+
+159
+00:11:40,990 --> 00:11:42,820
+Ini adalah berapa banyak panggilan yang terjadi.
+
+160
+00:11:43,240 --> 00:11:47,300
+OK, mari kita lanjutkan dan belajar bagaimana menggunakan metode unstacked.
+
+161
+00:11:47,310 --> 00:11:50,980
+Lalu ada beberapa contoh di sini dalam dokumentasi yang mudah-mudahan Anda temukan
+
+162
+00:11:50,980 --> 00:11:51,430
+sendiri.
+
+163
+00:11:51,640 --> 00:11:52,560
+Tapi dia terjebak di sana.
+
+164
+00:11:52,570 --> 00:11:56,310
+Jangan khawatir karena saya akan menunjukkan kepada Anda bagaimana melakukannya sekarang.
+
+165
+00:11:56,440 --> 00:11:59,320
+Kami akan melanjutkan dan mengatakan grup DF oleh.
+
+166
+00:11:59,740 --> 00:12:03,580
+Dan saya harus mengelompokkan berdasarkan daftar.
+
+167
+00:12:03,580 --> 00:12:10,070
+Dalam hal ini karena saya tidak ingin hanya mengelompokkan berdasarkan hari dalam seminggu saya juga ingin mengelompokkan berdasarkan jam
+
+168
+00:12:14,470 --> 00:12:21,070
+dan kemudian ketika saya akan melanjutkan dan lakukan adalah katakan hitung ini, silakan dan lihat apa yang terlihat suka
+
+169
+00:12:21,070 --> 00:12:25,650
+dan ini pada dasarnya memungkinkan saya untuk mengelompokkan dan membuat indeks bertingkat.
+
+170
+00:12:25,690 --> 00:12:31,330
+Hari dalam seminggu dan kemudian jam dan kemudian hanya jumlah untuk setiap kolom di sini.
+
+171
+00:12:31,390 --> 00:12:39,250
+Jadi saya memiliki indeks multi-level ini yang dapat saya lakukan sekarang adalah hanya memanggil kolom tunggal dari itu mungkin alasan kita bisa terus maju dan
+
+172
+00:12:39,310 --> 00:12:40,270
+melakukan itu
+
+173
+00:12:43,690 --> 00:12:45,960
+dan sekarang saya memiliki indeks bertingkat ini.
+
+174
+00:12:46,090 --> 00:12:52,570
+Dan kunci dari metode unstacked adalah pada dasarnya memungkinkan Anda untuk menghapus ini dan
+
+175
+00:12:52,570 --> 00:12:54,840
+menjadikannya dalam bentuk matriks.
+
+176
+00:12:56,410 --> 00:12:58,230
+Dan sekarang saya memiliki bentuk matriks ini.
+
+177
+00:12:58,240 --> 00:13:04,810
+Jadi langkah-langkah yang dikelompokkan oleh beberapa kolom membuat indeks bertingkat dan kemudian dapat menggunakan dan
+
+178
+00:13:04,810 --> 00:13:10,870
+menumpuk untuk dasarnya melepaskan indeks itu dan membuat salah satunya menjadi kolom dan
+
+179
+00:13:10,870 --> 00:13:12,970
+salah satunya menjadi indeks.
+
+180
+00:13:12,970 --> 00:13:13,340
+Baiklah.
+
+181
+00:13:13,420 --> 00:13:17,620
+Jangan khawatir jika Anda terjebak pada ini atau mengalami masalah dengan ini, ini sebenarnya metode yang
+
+182
+00:13:17,620 --> 00:13:19,050
+sangat baik untuk melakukan ini.
+
+183
+00:13:19,060 --> 00:13:23,620
+Ada metode lain yang bisa Anda coba seperti menggunakan pivot atau pivot table dari Pandurs, terserah
+
+184
+00:13:23,620 --> 00:13:27,230
+Anda, tetapi sekali lagi jangan terlalu khawatir jika Anda bisa melakukan ini.
+
+185
+00:13:27,270 --> 00:13:32,620
+Agak banyak datang hanya dengan pengalaman latihan dan bisa melihat-lihat dalam dokumentasi.
+
+186
+00:13:33,980 --> 00:13:40,000
+Yah akan pergi ke depan dan memanggil seluruh kerangka data hari ini jam dan sekarang kita memiliki kerangka data yang
+
+187
+00:13:40,000 --> 00:13:44,250
+saya dapat dengan mudah membuat peta panas dan bagian ini sebenarnya akan sangat mudah.
+
+188
+00:13:44,320 --> 00:13:50,880
+Kami hanya memanggil peta panas S dan S yang melewati jam sehari dan pada dasarnya itu yang harus kita lakukan.
+
+189
+00:13:50,890 --> 00:13:57,130
+Sekarang kita mendapatkan hari dalam seminggu versus jam dan kemudian jumlah panggilan sebagai indikator warna
+
+190
+00:13:57,130 --> 00:14:04,240
+dan kita dapat terus mencoba untuk membuat ini lebih seperti solusi dengan mengatakan Lihat peta yang lewat di viridis.
+
+191
+00:14:04,240 --> 00:14:09,370
+Dan sekarang kita mendapatkan skema warna yang sama seperti yang kita lakukan dalam solusi dan kita
+
+192
+00:14:09,400 --> 00:14:15,250
+dapat membuat gambar sedikit lebih besar dengan mengatakan Piel tief angka itu dan menambahkan dalam ukuran Fig sebagai argumen.
+
+193
+00:14:16,780 --> 00:14:19,000
+Dan sekarang pada dasarnya kita memiliki apa yang ada dalam solusi.
+
+194
+00:14:19,120 --> 00:14:24,810
+Dan kita juga bisa membuat peta klaster dengan bingkai data ini dengan cara yang sama dengan
+
+195
+00:14:24,810 --> 00:14:26,950
+mengatakan peta kluster s dan s.
+
+196
+00:14:26,950 --> 00:14:34,000
+Dan lagi hanya lewat di frame data kita berhenti membuat Lihat peta kita untuk ini dan itu
+
+197
+00:14:36,850 --> 00:14:39,010
+menciptakan peta cluster yang sama.
+
+198
+00:14:39,010 --> 00:14:43,990
+Jika Anda bingung tentang bagaimana sebenarnya apa yang sebenarnya terjadi pada baris ini Jangan ragu untuk memposting ke
+
+199
+00:14:43,990 --> 00:14:44,770
+forum Q&amp;A.
+
+200
+00:14:44,770 --> 00:14:46,900
+Dan saya senang menjelaskan ini sedikit lagi.
+
+201
+00:14:46,900 --> 00:14:51,520
+Namun perlu diingat ini adalah jenis canggih dan jika Anda terjebak Jangan
+
+202
+00:14:51,520 --> 00:14:54,480
+khawatir jika Anda referensi solusi bergerak bersama.
+
+203
+00:14:54,490 --> 00:14:59,230
+Yang kami inginkan adalah mengulangi plot dan operasi yang sama ini untuk kerangka data yang menunjukkan bulan sebagai
+
+204
+00:14:59,320 --> 00:15:03,640
+kolom yang akan saya gunakan dan salin dan tempel ini dari solusi karena pada dasarnya kode
+
+205
+00:15:03,640 --> 00:15:06,120
+yang sama seperti yang baru saja kami lakukan atas.
+
+206
+00:15:06,130 --> 00:15:12,730
+Tetapi dalam kasus ini alih-alih mengatakan misalnya jam kita hanya menetapkan bulan dan jika kita pergi dan
+
+207
+00:15:12,730 --> 00:15:13,960
+memeriksa itu.
+
+208
+00:15:14,140 --> 00:15:18,900
+Sekarang kita memiliki bulan hari dan pada dasarnya kita hanya membuat plot yang sama lagi.
+
+209
+00:15:19,060 --> 00:15:28,110
+Jadi kita pergi saja ke sini menyebutnya peta gulir ke bawah sedikit daripada jam hari.
+
+210
+00:15:28,120 --> 00:15:29,320
+Saya ingin menggunakan hari bulan dan
+
+211
+00:15:32,590 --> 00:15:33,290
+itu membuat saya.
+
+212
+00:15:33,310 --> 00:15:38,020
+Peta panas ini dan jika saya ingin membuat peta cluster dari ini saya bisa melakukan hal
+
+213
+00:15:38,020 --> 00:15:40,200
+yang sama kecuali hanya memanggil cluster.
+
+214
+00:15:40,900 --> 00:15:42,810
+Dan ini menciptakan peta cluster.
+
+215
+00:15:42,910 --> 00:15:47,890
+Jadi sekarang saya benar-benar dapat menjelajahi data dan melihat mungkin jam apa dalam seminggu selama hari apa
+
+216
+00:15:47,890 --> 00:15:51,160
+dalam seminggu adalah yang paling populer untuk panggilan malam yang terjadi.
+
+217
+00:15:51,160 --> 00:15:56,020
+Dan jika kita hanya melihat sekilas ini, masuk akal bahwa tidak banyak panggilan terjadi
+
+218
+00:15:56,020 --> 00:16:01,170
+antara jam 0 dan 5 karena itu pada dasarnya tengah malam hingga jam 5:00 pagi.
+
+219
+00:16:01,180 --> 00:16:02,350
+Jadi semua orang tertidur.
+
+220
+00:16:02,500 --> 00:16:07,090
+Sebagian besar kegiatan kriminal atau alasan untuk dan saya tidak melakukan panggilan seperti
+
+221
+00:16:07,180 --> 00:16:11,980
+kecelakaan lalu lintas di mess atau kebakaran tidak benar-benar banyak kegiatan kriminal dalam dataset ini.
+
+222
+00:16:12,010 --> 00:16:14,410
+Ini sebagian besar memicu M-S dan alasan lalu lintas.
+
+223
+00:16:14,410 --> 00:16:17,330
+Semua itu cenderung terjadi pada siang hari.
+
+224
+00:16:17,350 --> 00:16:23,320
+Dan yang menarik adalah bahwa tidak terlalu banyak dari mereka cenderung terjadi pada hari Minggu dan
+
+225
+00:16:23,320 --> 00:16:27,940
+Sabtu dan Anda benar-benar dapat melihat ini sedikit lebih jelas dengan
+
+226
+00:16:27,940 --> 00:16:34,450
+peta cluster sehingga ini benar-benar akan membuat cluster di mana ia berpikir ada jumlah panggilan yang rendah versus
+
+227
+00:16:34,450 --> 00:16:42,490
+jumlah panggilan yang tinggi terkadang yang bagus untuk peta klaster adalah memilih sesuatu seperti pemetaan warna hangat yang hangat untuk benar-benar melihatnya.
+
+228
+00:16:42,760 --> 00:16:46,750
+Dan kadang-kadang ini sedikit lebih jelas dari skema warna bagi orang untuk benar-benar mendapatkan pengelompokan
+
+229
+00:16:46,750 --> 00:16:47,850
+dalam pikiran mereka.
+
+230
+00:16:48,220 --> 00:16:53,080
+Sepertinya kita memiliki panggilan tinggi selama hari Senin dan Selasa dan mungkin Kamis dan Jumat
+
+231
+00:16:53,080 --> 00:16:55,210
+selama jam 8 16 dan 17.
+
+232
+00:16:55,210 --> 00:17:01,270
+Jadi sedikit lebih menjelang malam itu cenderung dibandingkan dengan jumlah panggilan rendah selama Mungkin Sabtu
+
+233
+00:17:01,330 --> 00:17:03,700
+dan Minggu di pagi hari.
+
+234
+00:17:03,700 --> 00:17:04,290
+BAIK.
+
+235
+00:17:04,570 --> 00:17:09,400
+Dan kemudian kami baru saja mengulangi operasi-operasi tersebut per bulan dan Anda dapat membandingkan bulan-bulan musim panas
+
+236
+00:17:09,400 --> 00:17:14,410
+dengan bulan-bulan musim dingin di sini dan Anda dapat terus menjelajahi data sesuai keinginan Anda dan pada dasarnya
+
+237
+00:17:14,410 --> 00:17:16,350
+itulah yang ada pada proyek ini.
+
+238
+00:17:16,420 --> 00:17:17,200
+Saya harap Anda menikmatinya.
+
+239
+00:17:17,200 --> 00:17:18,420
+Semoga Anda menemukan itu menarik.
+
+240
+00:17:18,820 --> 00:17:23,650
+Sekali lagi jangan merasa buruk jika Anda harus mencari solusi untuk jenis liner kompleks seperti ini di sini.
+
+241
+00:17:23,710 --> 00:17:28,480
+Anda selalu merasa bebas untuk memposting di forum Tanya Jawab jika Anda memerlukan klarifikasi tentang apa yang
+
+242
+00:17:28,480 --> 00:17:29,680
+sebenarnya terjadi di sana.
+
+243
+00:17:29,680 --> 00:17:30,250
+Baiklah.
+
+244
+00:17:30,370 --> 00:17:32,780
+Jangan ragu untuk mengirim pertanyaan apa pun.
+
+245
+00:17:32,860 --> 00:17:35,320
+Dan saya akan melihat Anda di kuliah berikutnya.
+
+246
+00:17:35,320 --> 00:17:36,100
+Terimakasih semuanya.
+
+247
+00:17:36,100 --> 00:17:37,570
+Semoga Anda menikmati proyek ini.

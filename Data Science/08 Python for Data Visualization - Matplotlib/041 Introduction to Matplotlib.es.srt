@@ -1,0 +1,179 @@
+1
+00:00:05,190 --> 00:00:09,990
+Hola a todos y bienvenidos a la introducción a la conferencia de lib y esta conferencia, vamos a
+
+2
+00:00:09,990 --> 00:00:15,560
+tener una breve introducción de lo que es Matt y luego les mostraremos solo un poco del sitio web sin parcelas.
+
+3
+00:00:16,940 --> 00:00:23,160
+Matt lib o como algunas personas lo pronuncian Matt plus libe es la biblioteca de Pylodding más popular y realmente te
+
+4
+00:00:23,590 --> 00:00:29,370
+da un control completo sobre casi todos los aspectos de una figura o trama y está diseñado para tener
+
+5
+00:00:29,370 --> 00:00:34,950
+una sensación muy similar a Matlab, que es otra programación el lenguaje en sus propias capacidades de trazado gráficas
+
+6
+00:00:34,950 --> 00:00:40,650
+map plot lib funciona muy bien con Pandanus y la carrera de los umpires, razón por la cual vamos
+
+7
+00:00:40,650 --> 00:00:42,100
+a aprender más adelante.
+
+8
+00:00:42,090 --> 00:00:46,420
+aprender sobre algunas otras bibliotecas, como Seaborn, que en realidad está basada en Matt Plup en vivo.
+
+9
+00:00:46,430 --> 00:00:46,900
+Vamos a
+
+10
+00:00:47,100 --> 00:00:52,500
+Pero para comprender esas bibliotecas es importante entender que vivió la trama Primero tendrá que instalarlo
+
+11
+00:00:52,500 --> 00:00:57,450
+con Pipp o Konda en su línea de comando o terminal con uno de los
+
+12
+00:00:57,450 --> 00:01:00,580
+siguientes comandos para usar la distribución Anaconda de python.
+
+13
+00:01:00,720 --> 00:01:06,270
+Una instalación simple de Konda Matt Cutlip en su línea de comandos o terminal debería instalarlo en vivo para usted.
+
+14
+00:01:06,660 --> 00:01:11,840
+O si usa otra versión de Python Pipp install matplotlib también debería funcionar para usted.
+
+15
+00:01:11,850 --> 00:01:15,160
+Ahora sigamos y recorramos rápidamente el sitio web oficial.
+
+16
+00:01:15,600 --> 00:01:21,440
+verás aquí. Hay alguna información de presentación, así como algunas instrucciones de instalación más oficiales y algunos otros enlaces de documentación.
+
+17
+00:01:21,450 --> 00:01:26,220
+Bien, aquí estoy en esa org en vivo de la trama, que es el sitio web oficial
+
+18
+00:01:26,220 --> 00:01:27,890
+de la trama del mapa que
+
+19
+00:01:27,960 --> 00:01:32,850
+Probablemente, el enlace más importante en esta página esté aquí debajo de la galería.
+
+20
+00:01:33,030 --> 00:01:38,430
+Si haces clic en la galería o vas a esa parte en vivo en la galería de org org te llevarán
+
+21
+00:01:38,550 --> 00:01:42,710
+a este enlace y deberías ver una lista de varios tipos diferentes de nombres de trama.
+
+22
+00:01:42,960 --> 00:01:47,880
+Y si sigues desplazándote verás que hay un montón de figuras o figuras de ejemplo y estos
+
+23
+00:01:47,880 --> 00:01:52,310
+son todos los diversos tipos de tramas que Cutlip es capaz de crear para ti.
+
+24
+00:01:52,470 --> 00:01:56,800
+Más adelante, aprenderemos cómo usar otras bibliotecas que son mejores para cosas tales como las tramas fiscales.
+
+25
+00:01:57,150 --> 00:02:01,470
+Pero si alguna vez te encuentras teniendo dudas sobre las capacidades de esa trama, puedes venir
+
+26
+00:02:01,470 --> 00:02:04,580
+a esta página y buscar el tipo de trama que estás buscando.
+
+27
+00:02:04,590 --> 00:02:08,960
+Por ejemplo, si continúo y retrocedo aquí, digamos que quiere hacer un gráfico circular.
+
+28
+00:02:09,180 --> 00:02:12,800
+¿Vendrás aquí y hay una galería para ver dónde dice gráficos circulares?
+
+29
+00:02:12,990 --> 00:02:13,640
+Haga clic aquí.
+
+30
+00:02:13,650 --> 00:02:14,980
+Gráficos polares de alta gama.
+
+31
+00:02:15,060 --> 00:02:19,950
+y luego les mostraré algunas cifras que, con un poco de suerte, son relevantes una vez que encuentren
+
+32
+00:02:19,950 --> 00:02:24,360
+una que parece que lo que quieren hacer es entrar y hacer clic en esta primera.
+
+33
+00:02:24,360 --> 00:02:25,240
+Verán este enlace
+
+34
+00:02:25,390 --> 00:02:30,420
+Te llevará a una página de ejemplo que no solo tiene que figurar, sino que también tiene un
+
+35
+00:02:30,720 --> 00:02:34,800
+código muy bien comentado e instrucciones sobre cómo realizar cualquier trama que estés buscando.
+
+36
+00:02:34,830 --> 00:02:37,170
+En este caso, un gráfico circular.
+
+37
+00:02:37,170 --> 00:02:37,790
+Todo bien.
+
+38
+00:02:37,890 --> 00:02:40,740
+Esa es probablemente la página más útil en ese putt.
+
+39
+00:02:40,800 --> 00:02:45,000
+Los otros enlaces son básicamente enlaces a las funciones de documentación en él.
+
+40
+00:02:45,150 --> 00:02:48,600
+las funciones más comunes a medida que continuamos a lo largo de esta sección del curso.
+
+41
+00:02:48,600 --> 00:02:49,560
+Y vamos a repasar
+
+42
+00:02:49,560 --> 00:02:50,220
+Todo bien.
+
+43
+00:02:50,220 --> 00:02:54,570
+Recuerde que matplotlib org es un recurso para usted, especialmente la página de la galería.
+
+44
+00:02:54,570 --> 00:02:58,950
+Próximamente, vamos a mostrarte cómo usar Matt Plett en vivo para crear tus propias figuras.
+
+45
+00:02:59,520 --> 00:03:01,440
+Gracias a todos y nos vemos en la próxima conferencia

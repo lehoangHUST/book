@@ -1,0 +1,819 @@
+1
+00:00:05,220 --> 00:00:06,050
+Cześć wszystkim.
+
+2
+00:00:06,050 --> 00:00:12,060
+Witamy w czwartej części serii wykładów poświęconych zderzeniom Pythona w tej serii wykładów, podczas których
+
+3
+00:00:12,120 --> 00:00:18,180
+omawiamy wyrażenia lambda, funkcje map i filtrów, a także różne metody, których można używać na różnych
+
+4
+00:00:18,180 --> 00:00:19,920
+typach danych w Pythonie.
+
+5
+00:00:19,920 --> 00:00:23,280
+Przejdźmy dalej i wróćmy do notatnika Jupiter, aby zacząć.
+
+6
+00:00:23,280 --> 00:00:23,550
+W porządku.
+
+7
+00:00:23,550 --> 00:00:25,130
+Jestem w notesie Jowisza.
+
+8
+00:00:25,170 --> 00:00:30,870
+Ostatnim razem, kiedy przerwaliśmy dyskusję o tym, jak możesz tworzyć własne funkcje w Pythonie, teraz
+
+9
+00:00:30,870 --> 00:00:36,540
+porozmawiamy o funkcji mapy i filtra, a następnie o tym, jak możemy używać wyrażeń
+
+10
+00:00:36,540 --> 00:00:38,690
+lambda zamiast wypisać pełną funkcję.
+
+11
+00:00:38,730 --> 00:00:44,210
+Pozwól, że przejdę dalej i szybko przejrzycie, jak napisać funkcję, używając słowa kluczowego D dla śmierci.
+
+12
+00:00:44,400 --> 00:00:51,300
+Nazwa funkcji w tym przypadku nazywam tę funkcję razy, aby przyjąć pewną zmienną jako argument.
+
+13
+00:00:51,300 --> 00:00:53,360
+Oni są.
+
+14
+00:00:53,360 --> 00:00:57,930
+A potem po prostu pójdę dalej i zwrócę tę zmienną pomnożoną przez dwa.
+
+15
+00:00:58,440 --> 00:01:03,390
+Co oznacza, że jeśli zadzwonię 2 razy na numer taki jak 5, to zwróci 10.
+
+16
+00:01:03,390 --> 00:01:07,760
+Teraz przejdźmy do omówienia funkcji mapy.
+
+17
+00:01:08,370 --> 00:01:12,160
+Zamierzam wykonać sekwencję o nazwie CQ i będzie to lista.
+
+18
+00:01:12,180 --> 00:01:14,970
+Jeden dwa trzy cztery pięć.
+
+19
+00:01:15,030 --> 00:01:23,400
+Teraz powiedzmy, że chciałem faktycznie zastosować tę funkcję razy do każdego elementu na tej liście, a następnie
+
+20
+00:01:23,520 --> 00:01:25,070
+wypisać listę.
+
+21
+00:01:25,290 --> 00:01:31,380
+Cóż, mógłbym użyć pętli for, aby to zrobić, a następnie dołączyć wyniki do innej listy.
+
+22
+00:01:31,410 --> 00:01:37,960
+Jednak mapa jest wbudowaną funkcją w Pythonie, która pozwala zapisać ten krok.
+
+23
+00:01:37,960 --> 00:01:39,390
+Czy iść dalej i pisać w matematyce.
+
+24
+00:01:39,420 --> 00:01:44,280
+Możesz zrobić shift shift, aby zobaczyć ciąg dokumentacji dla mapy.
+
+25
+00:01:44,340 --> 00:01:49,340
+Ale w zasadzie stworzy iterator, który oblicza funkcję używając argumentów z
+
+26
+00:01:49,340 --> 00:01:50,250
+każdej iteracji.
+
+27
+00:01:50,520 --> 00:01:54,890
+Pozwolę sobie odejść i wyjaśnić w prosty sposób prosty angielski, co to właściwie oznacza.
+
+28
+00:01:54,990 --> 00:02:02,170
+Zamierzasz powiedzieć, że map pasan jest funkcją na przykład razy 2.
+
+29
+00:02:02,340 --> 00:02:06,000
+A następnie sekwencję, na którą chcesz odwzorować tę funkcję.
+
+30
+00:02:06,150 --> 00:02:12,200
+Jeśli to zrobisz, odpowiedzą, że masz mapę w tym konkretnym miejscu w pamięci.
+
+31
+00:02:12,210 --> 00:02:19,050
+Jeśli rzeczywiście chcesz wykonać tę mapę i uzyskać wynik z powrotem jako listę, możesz ją rzucić na
+
+32
+00:02:19,080 --> 00:02:21,590
+listę używając wbudowanej funkcji listy.
+
+33
+00:02:21,960 --> 00:02:28,890
+A następnie w końcu zwróci tę funkcję odwzorowaną na wszystkie elementy w tej sekwencji i zwróci
+
+34
+00:02:28,890 --> 00:02:30,490
+ją jako listę.
+
+35
+00:02:30,510 --> 00:02:34,130
+Teraz widzimy, że każdy element pomnożony jest przez dwa.
+
+36
+00:02:34,140 --> 00:02:39,760
+Teraz mamy dwa cztery sześć osiem dziesięć zamiast jeden dwa trzy cztery pięć.
+
+37
+00:02:40,250 --> 00:02:41,220
+DOBRZE.
+
+38
+00:02:41,220 --> 00:02:48,150
+Być może zastanawiasz się, czy muszę całkowicie zdefiniować pełną funkcję, taką jak czas 2, czy jest łatwiejszy sposób,
+
+39
+00:02:48,180 --> 00:02:49,610
+aby to osiągnąć.
+
+40
+00:02:49,620 --> 00:02:54,480
+Ponieważ zazwyczaj kiedy używasz czegoś takiego jak mapa, nie zamierzasz pisać i definiować
+
+41
+00:02:54,480 --> 00:02:55,650
+całej funkcji.
+
+42
+00:02:55,770 --> 00:03:01,980
+Prawdopodobnie będzie to tylko jednorazowa sprawa, a do tego w grę wchodzi wyraz twarzy.
+
+43
+00:03:02,040 --> 00:03:09,590
+Pokażę ci, jak możemy przepisać tę funkcję na wyrażenie lambda i
+
+44
+00:03:09,590 --> 00:03:11,930
+zaczynam powoli rozkładać.
+
+45
+00:03:12,360 --> 00:03:21,880
+Ta funkcja również może być zapisana w jednym wierszu razy, tak jak dwukropek zwraca r
+
+46
+00:03:21,890 --> 00:03:23,190
+razy 2.
+
+47
+00:03:23,250 --> 00:03:28,010
+A jeśli ponownie uruchomię te dwie komórki, to nadal działa dobrze.
+
+48
+00:03:28,050 --> 00:03:34,380
+Wyrażenie ziemi będzie próbowało replikować ten rodzaj struktury, z wyjątkiem tego, że usunie słowa,
+
+49
+00:03:34,980 --> 00:03:37,180
+których domyślnie nie potrzebujemy.
+
+50
+00:03:37,320 --> 00:03:42,150
+Kiedy się nad tym zastanawiasz, naprawdę nie potrzebujesz F lub powrotu, ponieważ są one
+
+51
+00:03:42,150 --> 00:03:44,100
+oczywiście wartościami podanymi w funkcji.
+
+52
+00:03:44,130 --> 00:03:48,530
+Będziesz musiał zdefiniować to imię i zwrócić go za ekspresję ziemi.
+
+53
+00:03:48,570 --> 00:03:50,730
+W przeciwnym razie znana jest jako anonimowa funkcja.
+
+54
+00:03:50,730 --> 00:03:55,200
+Po prostu chcesz zastąpić w instancji, w której nie chcesz definiować
+
+55
+00:03:55,200 --> 00:04:00,470
+całej funkcji, która jest wyrażeniem lambda i możesz to zrobić przez odczytanie tej funkcji.
+
+56
+00:04:00,480 --> 00:04:08,130
+Ale pozbycie się litery F i nazwy, a zamiast tego wystarczy wpisać lambdę, a potem iść dalej i pozbyć się
+
+57
+00:04:08,130 --> 00:04:12,320
+zwrotu i po prostu wpisać to, co rzeczywiście chcesz zwrócić.
+
+58
+00:04:12,570 --> 00:04:15,970
+I to jest ta ziemia.
+
+59
+00:04:16,020 --> 00:04:23,490
+Teraz mogłem, jeśli chciałem powiedzieć t jest równe tej ziemi, a następnie wywołać t o pewnej liczbie,
+
+60
+00:04:23,520 --> 00:04:25,060
+takiej jak 6.
+
+61
+00:04:25,260 --> 00:04:28,490
+I widzę, że dostaję w zamian sześć razy dwa.
+
+62
+00:04:28,590 --> 00:04:32,970
+Dlatego zwykle nie używałbym takiego wyrażenia terenu, ale można z niego korzystać.
+
+63
+00:04:33,330 --> 00:04:39,060
+Cóż, będziesz używał wyrażenia lambda dla czegoś takiego jak mapa lub zamiast definiowania
+
+64
+00:04:39,060 --> 00:04:40,320
+całej funkcji.
+
+65
+00:04:40,500 --> 00:04:49,060
+Wystarczy wpisać wyrażenie lambda tutaj, aby powiedzieć lambda, co faktycznie chcesz, aby pasan dwukropek, a następnie to, co
+
+66
+00:04:49,300 --> 00:04:55,400
+chcesz zwrócić w tym przypadku, to śmiało i pomnożyć wszystko przez trzy.
+
+67
+00:04:55,450 --> 00:05:01,240
+A teraz, jeśli uruchomię to na tej samej sekwencji, złapałem każdy element w sekwencji
+
+68
+00:05:01,240 --> 00:05:06,310
+i pomnożyłem przez trzy i nie muszę już formalnie definiować całej funkcji.
+
+69
+00:05:06,370 --> 00:05:11,500
+Mogę po prostu użyć wyrażeń lambda z wyrażeniem lambda lub czegoś, z czego można dużo skorzystać, szczególnie
+
+70
+00:05:11,510 --> 00:05:13,980
+gdy zaczynamy uczyć się o bibliotece Pandurs.
+
+71
+00:05:13,990 --> 00:05:18,330
+Więc jeśli masz jakieś pytania na ten temat, proszę opublikuj forum pytań i odpowiedzi.
+
+72
+00:05:18,340 --> 00:05:25,130
+Ale jest to po prostu sposób przepisywania całej funkcji na pojedynczą linię czystego kodu.
+
+73
+00:05:25,330 --> 00:05:30,720
+Powodem tego jest to, że zazwyczaj nie chcesz pisać i definiować całej funkcji.
+
+74
+00:05:31,150 --> 00:05:35,620
+Jednak zawsze jest to opcja dla Ciebie, jeśli kiedykolwiek będziesz zdezorientowany przez wyrazy ziemi.
+
+75
+00:05:35,620 --> 00:05:40,630
+Możesz po prostu zdefiniować formalną funkcję, taką jak zrobiliśmy dla czasów 2 i użyć zamiast tego.
+
+76
+00:05:40,620 --> 00:05:44,800
+Teraz przejdźmy do omówienia wbudowanej funkcji filtra.
+
+77
+00:05:44,800 --> 00:05:48,010
+Filtr będzie miał bardzo podobną strukturę do mapy.
+
+78
+00:05:48,120 --> 00:05:54,490
+Zamiast odwzorowywać funkcję na każdy element w sekwencji, odfiltrowujemy elementy z
+
+79
+00:05:54,490 --> 00:05:55,570
+sekwencji.
+
+80
+00:05:55,570 --> 00:05:59,800
+Pozwól mi wejść i pokaż, jak możesz to zrobić.
+
+81
+00:05:59,890 --> 00:06:09,190
+Przejdziesz dalej i wywołasz filtr, a następnie przejdziesz do funkcji lub wyrażenia lambda, które
+
+82
+00:06:09,640 --> 00:06:13,460
+odfiltrowuje i zwraca wartości logiczne.
+
+83
+00:06:13,480 --> 00:06:27,070
+Więc na przykład mogę powiedzieć lambda liczby dwukropek, że liczba maade dwa równa się zero, a następnie przekazać w
+
+84
+00:06:27,070 --> 00:06:28,490
+sekwencji.
+
+85
+00:06:28,870 --> 00:06:31,530
+A to zwróci tylko wyrażenie filtru.
+
+86
+00:06:31,560 --> 00:06:34,100
+Właściwie chcę odzyskać wyniki.
+
+87
+00:06:34,300 --> 00:06:36,230
+Muszę rzucić go na listę.
+
+88
+00:06:36,730 --> 00:06:43,030
+Powoduje to powrót tylko liczb parzystych do sekwencji 2 i 4.
+
+89
+00:06:43,030 --> 00:06:45,400
+Więc podzielmy to, co się tutaj dzieje.
+
+90
+00:06:45,610 --> 00:06:54,070
+Mówię filtr i to wyrażenie lambda przyjmuje liczbę i zwraca warunkową wartość true lub false opartą
+
+91
+00:06:54,160 --> 00:06:56,950
+na jakiejś warunkowej operacji.
+
+92
+00:06:57,000 --> 00:07:02,930
+Zatem filtr musi używać jakiejś funkcji lub wyrażenia lambda, które zwraca wartość boolowską.
+
+93
+00:07:02,950 --> 00:07:04,520
+Prawda czy fałsz.
+
+94
+00:07:04,630 --> 00:07:08,680
+A potem to, co zamierzasz zrobić, to przekazać go do obiektu, który można przetestować.
+
+95
+00:07:08,680 --> 00:07:14,350
+A kiedy zadzwonisz na listę, zwróci ona tylko wartości, w których to stwierdzenie stało się prawdą.
+
+96
+00:07:14,650 --> 00:07:18,390
+W tym przypadku po prostu odfiltrowaliśmy liczby parzyste.
+
+97
+00:07:18,400 --> 00:07:19,300
+W porządku.
+
+98
+00:07:19,300 --> 00:07:22,170
+Teraz przejdźmy dalej i omówmy metody.
+
+99
+00:07:22,210 --> 00:07:28,450
+Metody są w zasadzie tylko przyczyną, z której możesz zdjąć obiekt, który wpłynie na obiekt lub zwróci
+
+100
+00:07:28,570 --> 00:07:30,480
+wynik w jakiś sposób.
+
+101
+00:07:30,490 --> 00:07:32,670
+Pozwól, że pokażę ci, co mam na myśli.
+
+102
+00:07:32,750 --> 00:07:37,720
+Zrobię ciąg o nazwie S, a to powie coś w stylu.
+
+103
+00:07:38,380 --> 00:07:42,550
+Cześć, nazywam się S. Rano.
+
+104
+00:07:42,580 --> 00:07:51,970
+Sam mogę wywołać s, a następnie kropki, a jeśli kliknę kartę i notatkę Jowisza otrzymam wynik z
+
+105
+00:07:51,970 --> 00:07:54,340
+całej dostępnej zakładki bata.
+
+106
+00:07:54,340 --> 00:07:55,470
+Przewiń w dół.
+
+107
+00:07:55,480 --> 00:08:00,040
+Otrzymam wynik wszystkich dostępnych metod na tym obiekcie napisów.
+
+108
+00:08:00,040 --> 00:08:04,300
+Teraz nie mamy czasu, aby przejść wszystkie te i wszystkie z nich nie będą używane przez cały
+
+109
+00:08:04,300 --> 00:08:06,080
+kurs, a użyjemy tylko kilku z nich.
+
+110
+00:08:06,100 --> 00:08:08,610
+Pozwól mi wejść, aby pokazać te ważne.
+
+111
+00:08:09,160 --> 00:08:14,120
+Niższe litery będą pisane małymi literami każdą pojedynczą literę w ciągu znaków.
+
+112
+00:08:14,230 --> 00:08:16,790
+Zauważ, że musisz wywołać close nawiasy.
+
+113
+00:08:17,050 --> 00:08:22,390
+Jeśli po prostu zadzwonisz niżej w ten sposób lub wrócisz i powiesz, że pytasz o funkcję niższą.
+
+114
+00:08:22,380 --> 00:08:27,430
+Tak jak wspomniałem wcześniej, musisz go wykonać, zamykając nawiasy, jeśli chcesz zrobić
+
+115
+00:08:27,430 --> 00:08:28,310
+coś odwrotnego.
+
+116
+00:08:28,330 --> 00:08:33,060
+W tym przypadku wielkie litery wszystko, co możesz nazwać, wymyślił.
+
+117
+00:08:34,310 --> 00:08:42,210
+W porządku, jedna inna użyteczna funkcja lub metoda przepraszam za ciągi to metoda dzielona, domyślnie
+
+118
+00:08:42,250 --> 00:08:48,360
+metoda podziału podzieli ciąg na wszystkie białe znaki tego łańcucha.
+
+119
+00:08:48,370 --> 00:08:50,860
+A więc mamy Hello, mam na imię Sam.
+
+120
+00:08:50,860 --> 00:08:55,240
+Kiedy mówimy "podzielony", podzielimy go na wszystkie białe znaki.
+
+121
+00:08:55,240 --> 00:08:59,340
+To będzie bardzo przydatne w dalszej analizie tekstu w tym kursie.
+
+122
+00:08:59,350 --> 00:09:01,370
+Pozwól mi wejść i pokazać przykład.
+
+123
+00:09:01,380 --> 00:09:04,590
+Powiedzmy, że mamy tweet, który mówi coś w stylu.
+
+124
+00:09:04,890 --> 00:09:10,150
+Uprawiaj sportowe hash tag.
+
+125
+00:09:10,520 --> 00:09:19,290
+Jeśli powiemy, że tweet myśli dzieli, to podzieli tekst na listę opartą na białych znakach.
+
+126
+00:09:19,450 --> 00:09:26,530
+Ale możemy właściwie pasować ciąg do podziału, aby podzielić na poszczególne elementy lub znaki.
+
+127
+00:09:26,710 --> 00:09:33,360
+Jeśli przekażę znacznik skrótu i uruchomię go, podzieli ciąg znaków, w którym znajdzie znacznik skrótu, co oznacza, że będzie miał
+
+128
+00:09:33,370 --> 00:09:36,230
+komunikat, a na końcu będzie miał znacznik skrótu.
+
+129
+00:09:36,550 --> 00:09:39,220
+I to faktycznie zwróci listę, chociaż możemy tego indeksu.
+
+130
+00:09:39,220 --> 00:09:46,530
+Więc jeśli chcę pobrać znacznik hash, mogę powiedzieć, że nawiasy to jeden i wszystkie sporty powrotne, więc możemy już zobaczyć,
+
+131
+00:09:46,540 --> 00:09:51,450
+jak to byłoby przydatne, gdybyś chciał pobrać znaczniki hash z przykładowych łańcuchów tweetów.
+
+132
+00:09:51,760 --> 00:09:52,780
+DOBRZE.
+
+133
+00:09:52,780 --> 00:09:56,710
+Są to użyteczne metody podziału górnej dolnej części łańcucha E-string.
+
+134
+00:09:56,710 --> 00:09:57,200
+To są dobre.
+
+135
+00:09:57,250 --> 00:09:59,620
+To są te, z których będziemy korzystać podczas całego kursu.
+
+136
+00:10:00,910 --> 00:10:03,040
+Wydaj coś, co możesz zrobić ze słownikami.
+
+137
+00:10:03,250 --> 00:10:04,690
+Więc pamiętaj o słowniku.
+
+138
+00:10:04,730 --> 00:10:06,860
+Chodźmy i zobaczmy, czy mamy starą.
+
+139
+00:10:07,180 --> 00:10:15,780
+Cóż, ponownie przypisz to do K-1 o wartości jednego.
+
+140
+00:10:15,880 --> 00:10:20,800
+A potem powiemy, że Kate two jest kluczem wartości dwóch.
+
+141
+00:10:20,800 --> 00:10:21,440
+W porządku.
+
+142
+00:10:21,700 --> 00:10:22,580
+Oto mój słownik.
+
+143
+00:10:22,600 --> 00:10:24,920
+K. Jeden to jedno k to dwa.
+
+144
+00:10:24,940 --> 00:10:30,510
+Teraz możemy powiedzieć, d kropka i możesz kliknąć zakładkę, aby zobaczyć różne dostępne metody.
+
+145
+00:10:30,700 --> 00:10:38,140
+Niektóre użyteczne to metoda keys, która po prostu zwraca klucze do słownika.
+
+146
+00:10:38,140 --> 00:10:47,710
+Jeśli poprosisz o przedmioty, to zwróci pozycje ze słownika, a my możemy po prostu zapytać, czy spojrzymy
+
+147
+00:10:47,710 --> 00:10:48,870
+na.
+
+148
+00:10:49,060 --> 00:10:53,670
+Możesz powiedzieć pop lub get lub wartości.
+
+149
+00:10:53,830 --> 00:10:55,680
+Więc jeśli chcesz tylko wartości słownika.
+
+150
+00:10:55,720 --> 00:10:57,430
+Zwraca wartości.
+
+151
+00:10:57,430 --> 00:10:59,810
+Pamiętaj, że słowniki nie zachowują zamówienia.
+
+152
+00:11:00,040 --> 00:11:04,690
+Tak naprawdę nie będziemy używać kluczy przedmiotów ani wartości z kursu, ale chcę, abyś wiedział o
+
+153
+00:11:05,660 --> 00:11:07,500
+nich kilka przydatnych metod dla list.
+
+154
+00:11:07,510 --> 00:11:08,740
+Mam zamiar iść na listę.
+
+155
+00:11:08,750 --> 00:11:10,530
+Ls t.
+
+156
+00:11:10,540 --> 00:11:12,680
+Powiedz od 1 do 3.
+
+157
+00:11:12,820 --> 00:11:20,920
+Możesz wysunąć element z listy, wywołując pop, a to zostanie wyskakujące i zwróci ostatnią pozycję na liście, a kiedy
+
+158
+00:11:21,460 --> 00:11:24,510
+to nazwiesz, ta zmiana będzie trwała.
+
+159
+00:11:24,820 --> 00:11:36,250
+Co oznacza, że jeśli pójdziemy dalej i powiemy, że lista to jeden dwa trzy cztery pięć, można powiedzieć, że element jest równy ls t pop
+
+160
+00:11:36,710 --> 00:11:44,730
+i że wyskoczy ostatni element z tej listy, a jeśli nazwiemy ten przedmiot, zostanie on ponownie przypisany.
+
+161
+00:11:44,800 --> 00:11:53,440
+5 jest teraz pozycją, która była listą, która jest pop, i można to zrobić za pomocą metody pop przechodzącej wartość indeksu
+
+162
+00:11:53,440 --> 00:11:54,730
+do wyskoczenia.
+
+163
+00:11:54,730 --> 00:12:01,150
+Więc jeśli powiesz, że pierwszy jest równy LS T-top pop 0 i uruchom to.
+
+164
+00:12:01,150 --> 00:12:02,870
+Spójrz na LS T.
+
+165
+00:12:02,950 --> 00:12:11,100
+Teraz indeks 0 został zerwany, a naszą pierwszą zmienną jest ta, która była pierwszym elementem.
+
+166
+00:12:11,320 --> 00:12:14,270
+Więc pop jest naprawdę użyteczną metodą i tak jest dołączane.
+
+167
+00:12:14,290 --> 00:12:15,860
+Ale już to widzieliśmy.
+
+168
+00:12:16,090 --> 00:12:22,620
+To tylko pozwala ci dodać nowy element na końcu listy.
+
+169
+00:12:23,050 --> 00:12:23,720
+W porządku.
+
+170
+00:12:24,010 --> 00:12:29,560
+Na koniec jeszcze kilka rzeczy, które chcę ci pokazać, to operator in.
+
+171
+00:12:29,560 --> 00:12:36,140
+Jeśli więc chcesz sprawdzić, czy coś znajduje się na liście, możesz powiedzieć, co chcesz sprawdzić,
+
+172
+00:12:36,140 --> 00:12:39,500
+a następnie wpisać, a następnie samą listę.
+
+173
+00:12:39,610 --> 00:12:54,100
+Więc X w 1 do 3, który zwraca wartość false versus x na liście zawierającej x yiz, która zwraca wartość true.
+
+174
+00:12:54,100 --> 00:12:58,900
+I na koniec ostatnią rzeczą w tym kursie, który omówimy, jest rozpakowywanie krotek. Rozpakowanie
+
+175
+00:12:59,410 --> 00:13:03,370
+krotek to naprawdę fajna funkcja i pokażę, jak to działa.
+
+176
+00:13:03,370 --> 00:13:11,270
+Wyobraź sobie, że masz zmienną x zawierającą listę krotek.
+
+177
+00:13:12,010 --> 00:13:19,740
+Będziemy mieli jeden dwa trzy cztery, a następnie pięć sześć.
+
+178
+00:13:19,750 --> 00:13:29,140
+Tak więc, jeśli spojrzę na X, pierwszym elementem X jest krotka 1 i 2, a ja mogę w rzeczywistości pobrać przedmioty z
+
+179
+00:13:29,140 --> 00:13:33,040
+tej krotki, abym mógł pobrać jeden lub dwa.
+
+180
+00:13:33,130 --> 00:13:38,410
+Mogę też zrobić coś, co nazywa się rozpakowywaniem krotek i to będzie działać, gdy
+
+181
+00:13:38,410 --> 00:13:40,030
+będziemy przeglądać listę krotek.
+
+182
+00:13:40,030 --> 00:13:45,910
+Ten rodzaj tworzenia listy krotek jest bardzo powszechny w Pythonie, a wiele funkcji zwróci wynik
+
+183
+00:13:45,910 --> 00:13:47,550
+w tym formacie.
+
+184
+00:13:47,830 --> 00:14:00,230
+Właśnie dlatego mamy opcjonalnie opcję krotki i pakowania, dzięki czemu możemy powiedzieć, że dla przedmiotu w pozycji X drukuje.
+
+185
+00:14:00,520 --> 00:14:07,300
+A kiedy uruchomię, że to idzie do przodu i drukuje wszystkie krotki dla mnie
+
+186
+00:14:07,390 --> 00:14:18,280
+krotka i pakowanie pozwala mi faktycznie rozpakować te krotki, kiedy idę dalej, więc mogę zrobić coś takiego dla przecinka B na X drukuje a.
+
+187
+00:14:18,640 --> 00:14:21,950
+A teraz to wydrukuje 1 3 5.
+
+188
+00:14:22,850 --> 00:14:24,830
+Lub jeśli powiem, że Prince B.
+
+189
+00:14:24,840 --> 00:14:27,250
+Spowoduje to wydrukowanie drugiego elementu w tych krotkach.
+
+190
+00:14:27,310 --> 00:14:30,490
+2 4 6 i to jest krotka i pakowanie.
+
+191
+00:14:30,490 --> 00:14:36,130
+Lub zamiast po prostu powiedzieć element faktycznie rozpakować tę krotkę w tym do pętli i coś innego.
+
+192
+00:14:36,140 --> 00:14:40,630
+Należy zauważyć, że nawiasy otaczające to właściwie tylko formalność.
+
+193
+00:14:40,630 --> 00:14:43,930
+W ten sposób będziesz cały czas kręcić w prawdziwym świecie.
+
+194
+00:14:43,930 --> 00:14:49,840
+Zobaczysz dla krotki i pakowania w X, które są itableable krotek w nim.
+
+195
+00:14:50,140 --> 00:14:57,730
+A potem możesz po prostu wydrukować poszczególne elementy w tej krotce i to wszystko, co możesz zrobić
+
+196
+00:14:57,730 --> 00:14:58,210
+dobrze.
+
+197
+00:14:58,500 --> 00:15:02,590
+Będzie ci przypominać o krotce i pakowaniu, kiedy osiągniemy to później w tym kursie.
+
+198
+00:15:02,590 --> 00:15:07,570
+Nie pojawi się ona od jakiegoś czasu, ale mam nadzieję, że był to wystarczający ogólny
+
+199
+00:15:07,690 --> 00:15:13,990
+przegląd Pythona, jeśli którykolwiek z nich wydawał się po prostu niemożliwie trudny lub był zupełnie nieznany, a ty naprawdę
+
+200
+00:15:13,990 --> 00:15:15,700
+nie rozumiałeś tego pojęcia.
+
+201
+00:15:15,700 --> 00:15:21,730
+Ten kurs może być dla ciebie zbyt zaawansowany i możesz potrzebować kursu, który jest przeznaczony dla
+
+202
+00:15:21,860 --> 00:15:25,420
+początkującego programisty, takiego jak mój kompletny kurs bootcamp Python.
+
+203
+00:15:25,510 --> 00:15:31,000
+Zawsze możesz zadawać dowolne pytania na forach Kewaunee, a następne to ćwiczenie, które po
+
+204
+00:15:31,000 --> 00:15:35,070
+prostu przetestuje twoją wiedzę w tej serii tematów kursu.
+
+205
+00:15:35,080 --> 00:15:36,970
+Dziękuję wszystkim, a zobaczę na następnym wykładzie

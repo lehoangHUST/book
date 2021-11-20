@@ -1,0 +1,335 @@
+1
+00:00:05,520 --> 00:00:06,990
+Olá a todos os outros também.
+
+2
+00:00:06,990 --> 00:00:11,290
+A segunda parte desses mapas de cloroplasto mostra séries na parte 2.
+
+3
+00:00:11,290 --> 00:00:14,640
+Vamos nos concentrar em mapas internacionais ou em escala mundial.
+
+4
+00:00:14,730 --> 00:00:19,860
+Parte 1, que é a última palestra que focalizamos nos mapas de choropleth nos Estados Unidos e em todo o país.
+
+5
+00:00:19,860 --> 00:00:24,900
+Agora vamos avançar e mudar isso para um nível mundial internacional.
+
+6
+00:00:24,900 --> 00:00:28,980
+Avançemos e entremos no caderno Jupiter para começar.
+
+7
+00:00:28,980 --> 00:00:29,280
+Tudo bem.
+
+8
+00:00:29,280 --> 00:00:31,280
+Aqui estou no caderno de Jupiter.
+
+9
+00:00:31,320 --> 00:00:35,950
+A última vez que paramos na U. S. exportações agrícolas por estado.
+
+10
+00:00:36,030 --> 00:00:42,510
+Vamos em frente e avançemos para o nosso próximo conjunto de dados, que é um conjunto de dados do
+
+11
+00:00:42,600 --> 00:00:48,980
+PIB mundial para avançar e comentar esse último enredo e dizer que é físico para PD ler CSP.
+
+12
+00:00:49,000 --> 00:00:57,210
+Agora vamos abrir e abrir o conjunto de dados do PIB mundial de 2014 e depois verificar a liderança
+
+13
+00:00:57,210 --> 00:00:58,020
+desses dados.
+
+14
+00:00:58,310 --> 00:01:01,540
+Temos um nome de país GDP em bilhões.
+
+15
+00:01:01,590 --> 00:01:03,410
+E depois o código do país.
+
+16
+00:01:03,510 --> 00:01:08,910
+padrão para países internacionais basicamente o mesmo que os códigos de estado que vimos anteriormente.
+
+17
+00:01:08,910 --> 00:01:10,170
+Então, digamos código
+
+18
+00:01:10,320 --> 00:01:16,020
+Nós vamos seguir em frente e usar esse valor o país do PIB como talvez um texto e, em
+
+19
+00:01:16,020 --> 00:01:20,130
+seguida, o código é o código atual pasan para o mapeamento Coral plus.
+
+20
+00:01:20,700 --> 00:01:24,780
+Avançemos e comecemos a criar nossa variável de dados.
+
+21
+00:01:24,780 --> 00:01:36,020
+Mais uma vez chamamos-lhe dicionário, dizemos que o tipo é igual a Perl Plath, como fizemos na última vez.
+
+22
+00:01:36,050 --> 00:01:47,760
+Vá em frente e diga que locais e locais serão iguais à coluna do código, então, para o valor z,
+
+23
+00:01:47,760 --> 00:01:54,400
+iremos em frente e estabelecemos isso igual ao PIB em bilhões.
+
+24
+00:01:54,420 --> 00:02:00,000
+de dados e depois iremos em frente e definir argumentos de barra de cores.
+
+25
+00:02:02,700 --> 00:02:07,190
+Vamos prosseguir e definir texto igual à coluna do país no quadro
+
+26
+00:02:07,190 --> 00:02:11,610
+E aqui temos esse dicionário onde passamos e o título tem uma
+
+27
+00:02:11,610 --> 00:02:19,320
+chave e, em seguida, um valor de string para o título e nós apenas diremos PIB em bilhões de dólares.
+
+28
+00:02:19,320 --> 00:02:23,260
+E esse é o nosso objeto de dados.
+
+29
+00:02:23,310 --> 00:02:30,590
+E agora, para estabelecer variável, vamos seguir em frente e dizer que o elenco é um dicionário.
+
+30
+00:02:31,080 --> 00:02:38,820
+Vamos definir o título para ser igual ao PIB global da cadeia 2014 e a
+
+31
+00:02:41,490 --> 00:02:46,890
+próxima coisa que vamos fazer é definir o Geo é igual.
+
+32
+00:02:46,950 --> 00:02:56,370
+Eu realmente coloco isso na mesma linha que show frame é igual a falso.
+
+33
+00:02:56,370 --> 00:03:04,620
+E então não vai ser outro dicionário e vai e diz show frame
+
+34
+00:03:04,770 --> 00:03:10,230
+Por agora e no próximo argumento, vamos dizer que é a projeção.
+
+35
+00:03:10,230 --> 00:03:12,160
+E você pode fazer referência à documentação.
+
+36
+00:03:12,420 --> 00:03:20,990
+Mas, por enquanto, apenas o padrão de projeção de documentação, que é o America ou o plano de projeção,
+
+37
+00:03:21,000 --> 00:03:24,310
+parece que o dicionário está pronto para ir.
+
+38
+00:03:24,630 --> 00:03:30,400
+Avançemos e digamos que o mapa 3 de Koro é igual.
+
+39
+00:03:30,430 --> 00:03:33,010
+Vai saber.
+
+40
+00:03:33,180 --> 00:03:41,650
+Os dados são iguais aos dados transmitidos como uma única lista de itens e, em seguida, lay out equals lay out.
+
+41
+00:03:42,660 --> 00:03:46,870
+E então podemos chamar de parcelas no mapa coral 3.
+
+42
+00:03:47,580 --> 00:03:55,200
+E aqui temos o PIB global de 2014 e você pode ver essa escala aqui, basicamente, apenas aponta os principais outliers
+
+43
+00:03:55,260 --> 00:04:00,630
+que são os Estados Unidos da China e alguns deles são os países do
+
+44
+00:04:00,630 --> 00:04:03,570
+cinto ou países de maior população no mundo.
+
+45
+00:04:03,570 --> 00:04:08,490
+Agora, como mencionei várias vezes para fazer esse tipo de traçado sozinho, provavelmente você terá
+
+46
+00:04:08,490 --> 00:04:12,690
+que fazer referência à documentação ou aos notebooks da Jupiter e eu quero
+
+47
+00:04:12,690 --> 00:04:14,740
+querer explorar essa referência com você.
+
+48
+00:04:14,850 --> 00:04:20,100
+clicar no link fornecido no caderno da Jupiter ou simplesmente ir para plotar a referência de barras do Python.
+
+49
+00:04:20,100 --> 00:04:21,780
+Você pode seguir em frente e
+
+50
+00:04:21,990 --> 00:04:27,810
+E aqui está basicamente uma referência completa a todos os argumentos que você pode passar para todos os tipos de
+
+51
+00:04:27,810 --> 00:04:33,090
+enredo sem tramas e você pode rolar para baixo aqui para a seção do mapa e clicar no
+
+52
+00:04:33,090 --> 00:04:38,750
+cloroplasto para chegar ao núcleo mais seção e você pode ver os vários argumentos que você pode passar aqui
+
+53
+00:04:38,760 --> 00:04:42,780
+e você pode verificar algo como, por exemplo, a projeção que continuamos aqui.
+
+54
+00:04:42,900 --> 00:04:44,860
+Ou podemos realmente apenas buscá-lo.
+
+55
+00:04:45,390 --> 00:04:51,580
+Então eu posso procurar uma projeção que eu conheço aqui e podemos ter um tipo e aqui estamos sob cloroplastos e
+
+56
+00:04:51,690 --> 00:04:54,860
+podemos avançar e passar e talvez outro tipo de projeção.
+
+57
+00:04:55,200 --> 00:05:02,080
+Isso significa que podemos apenas pegar uma dessas cordas e apenas pegar esse que é outro tipo de projeção.
+
+58
+00:05:02,100 --> 00:05:07,830
+Acabei aqui de substituir a string do e então execute este gráfico novamente.
+
+59
+00:05:07,830 --> 00:05:10,350
+E agora eu tenho um tipo de projeção diferente.
+
+60
+00:05:10,390 --> 00:05:13,270
+Observe aqui como o país é moldado um pouco diferente.
+
+61
+00:05:13,270 --> 00:05:19,080
+Você pode continuar e continuar explorando esses, como uma projeção estereográfica, venha aqui.
+
+62
+00:05:19,080 --> 00:05:25,530
+Copie e cole e execute novamente e é basicamente o que você faz quando está jogando
+
+63
+00:05:25,560 --> 00:05:27,160
+e explorando essas bibliotecas.
+
+64
+00:05:27,390 --> 00:05:30,600
+Então, aqui está outra projeção que você realmente pode gerar isso.
+
+65
+00:05:30,600 --> 00:05:34,100
+É um pouco estranho que é um sentimento de globo invertido.
+
+66
+00:05:34,290 --> 00:05:38,110
+Eles podem seguir em frente e brincar com esses e explorá-los por conta própria.
+
+67
+00:05:38,370 --> 00:05:43,920
+Uma projeção que é bom olhar é a projeção natural da terra, se você simplesmente
+
+68
+00:05:43,920 --> 00:05:51,360
+continuar em frente e passá-la aqui terra natural e depois executar isso de novo, você obtém basicamente uma terra natural
+
+69
+00:05:51,960 --> 00:05:57,690
+agradável e você pode passar e esfriar e você pode ver A rotação aqui no planeta.
+
+70
+00:05:58,140 --> 00:05:58,560
+ESTÁ BEM.
+
+71
+00:05:58,650 --> 00:06:00,720
+Vá em frente e explore a documentação.
+
+72
+00:06:00,750 --> 00:06:05,790
+esse tipo de pltora de coral, bibliotecas e capacidades de complicações geográficas mais complicadas de Watley.
+
+73
+00:06:05,790 --> 00:06:09,060
+Essa é uma grande parte da aprendizagem de como usar
+
+74
+00:06:09,090 --> 00:06:13,860
+Como eu mencionei anteriormente, um pouco disso tem que ver se seus dados não
+
+75
+00:06:13,860 --> 00:06:20,490
+estão em um formato que o argumento pode aceitar, você provavelmente terá que usar em outra biblioteca de traçado
+
+76
+00:06:20,690 --> 00:06:26,730
+geográfico, mas espero que você seja capaz de converter um código de país ou nome de país
+
+77
+00:06:26,730 --> 00:06:28,740
+em um formato aceitável para Watley.
+
+78
+00:06:28,740 --> 00:06:30,380
+Tudo bem é para esta palestra.
+
+79
+00:06:30,390 --> 00:06:36,870
+Espero que tenha gostado e tenha visto o poder da trama mesmo que seja um pouco difícil de sintaxe para apenas
+
+80
+00:06:36,870 --> 00:06:38,450
+algumas linhas de código realmente.
+
+81
+00:06:38,460 --> 00:06:42,570
+Quero dizer, isso é apenas cerca de 15 linhas de código talvez menos ainda.
+
+82
+00:06:42,660 --> 00:06:49,020
+Você realmente pode fazer uma visualização interativa muito agradável em uma escala
+
+83
+00:06:49,020 --> 00:06:50,160
+internacional geográfica.
+
+84
+00:06:50,160 --> 00:06:53,160
+Tudo bem, obrigado a todos e eu vou te ver na próxima palestra

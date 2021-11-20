@@ -1,0 +1,459 @@
+1
+00:00:05,220 --> 00:00:08,460
+Olá a todos e seja bem vindo ao palestra de estilo e cor.
+
+2
+00:00:08,460 --> 00:00:12,690
+Mostramos algumas vezes como controlar figura estética e marítima. Mas agora vamos examiná-la
+
+3
+00:00:12,690 --> 00:00:14,150
+de forma mais formal.
+
+4
+00:00:14,340 --> 00:00:17,600
+Avançemos e entremos no caderno Jupiter para começar.
+
+5
+00:00:18,450 --> 00:00:20,370
+Tudo bem aqui estamos no caderno Jupiter.
+
+6
+00:00:20,370 --> 00:00:25,140
+Eu fiz adiante e fiz a linha de matplotlib do set de transporte de importação usual e segui em frente
+
+7
+00:00:25,380 --> 00:00:27,250
+e carreguei o conjunto de dados de dicas.
+
+8
+00:00:27,270 --> 00:00:30,120
+Deixe-me entrar e mostrar-lhe como você pode definir estilos específicos.
+
+9
+00:00:30,360 --> 00:00:40,730
+Por exemplo, eu posso fazer parcelas de contagem de estrelas da SNL e digamos a coluna de sexo em dicas de passen, pois meus dados que são iguais em dicas
+
+10
+00:00:42,070 --> 00:00:49,890
+de dados aqui. Tenho o argumento de minha conta de ter um conjunto de argumentos de estilo que permite que você defina o
+
+11
+00:00:49,890 --> 00:00:52,220
+estilo para o resto do seu parcelas.
+
+12
+00:00:52,380 --> 00:00:58,650
+E se nós vamos mudar Tampere para verificar o estilo de sublinhado, basicamente, você passa um parâmetro para
+
+13
+00:00:58,650 --> 00:01:00,650
+estilo e essa é uma string.
+
+14
+00:01:00,660 --> 00:01:07,060
+Pode ser grelha de grade escura branca escura ou Tick, vamos mostrar o que isso parece
+
+15
+00:01:07,080 --> 00:01:15,000
+apertar e os brancos irão adiante e criará um fundo branco em branco para você se você passar os tiques.
+
+16
+00:01:15,030 --> 00:01:20,670
+Devo dizer que você basicamente obtém esses carrapatos na borda da caixa.
+
+17
+00:01:20,700 --> 00:01:22,590
+Depois, também há uma grade escura
+
+18
+00:01:25,620 --> 00:01:28,320
+que lhe dá o fundo da grade Dark original.
+
+19
+00:01:28,350 --> 00:01:30,660
+E também há o que eu realmente gosto.
+
+20
+00:01:30,720 --> 00:01:35,150
+A grade branca dá a ambos a clareza do branco, mas também a grade.
+
+21
+00:01:35,160 --> 00:01:36,720
+Então você não perde essa informação.
+
+22
+00:01:36,810 --> 00:01:41,430
+Você pode seguir em frente e tipo de estilo setroom e ver quais você prefere ou como o melhor.
+
+23
+00:01:41,430 --> 00:01:46,290
+Agora, outra coisa que você pode fazer é remover espinhos.
+
+24
+00:01:46,350 --> 00:01:50,460
+entrar e defina isso como um carrapato, então é muito claro o que estamos fazendo aqui.
+
+25
+00:01:50,460 --> 00:01:52,470
+Então, agora mesmo, você ainda pode ver, deixe-me
+
+26
+00:01:52,470 --> 00:01:57,960
+Então, temos essa espinha na coluna superior e na espinha dorsal direita, bem como a espinha dorsal inferior e esquerda.
+
+27
+00:01:58,410 --> 00:02:06,960
+Se você quiser seguir em frente e remover aqueles que você pode simplesmente dizer Asinus a coluna vertebral e ele irá remover a coluna superior
+
+28
+00:02:06,960 --> 00:02:11,930
+e a coluna direita se você quiser continuar removendo a coluna inferior ou esquerda.
+
+29
+00:02:11,970 --> 00:02:14,230
+Você pode realmente adicionar esses como parâmetros.
+
+30
+00:02:14,290 --> 00:02:21,570
+Então, basicamente, top direita esquerda e inferior por padrão, superior e direita são verdadeiras para serem removidas para a esquerda e para baixo ou
+
+31
+00:02:21,570 --> 00:02:22,760
+não para serem removidas.
+
+32
+00:02:22,770 --> 00:02:28,640
+Mas você pode especificar que você quer que eles sejam removidos, dizendo que a verdade mais esquerda e, em seguida, a parte inferior é verdadeira.
+
+33
+00:02:28,670 --> 00:02:31,500
+Isso removerá basicamente todas as quatro espinhas.
+
+34
+00:02:31,590 --> 00:02:35,670
+Então, se você conseguir se você estiver procurando algo que seja como um enredo polido muito
+
+35
+00:02:36,060 --> 00:02:38,220
+claro e bonito, talvez você queira apresentá-lo sem espinhas.
+
+36
+00:02:38,220 --> 00:02:43,090
+Eu pessoalmente prefiro espinhos lá, então eu vou seguir em frente e remover isso e manter essas espinhas.
+
+37
+00:02:43,500 --> 00:02:46,740
+Agora vamos falar sobre tamanho e aspecto.
+
+38
+00:02:47,010 --> 00:02:52,560
+Você pode usar o tamanho do mapa da camada de libs do mapa, tamanho grande e altura para realmente alterar o tamanho da maioria
+
+39
+00:02:52,560 --> 00:02:53,460
+dos blocos do Seaborn.
+
+40
+00:02:53,610 --> 00:02:59,310
+de tamanho e aspecto de um gráfico de grade de seaborn passando o tamanho e o aspecto dos parâmetros.
+
+41
+00:02:59,310 --> 00:03:04,080
+Então, eles são apenas chamados básicos para mapa aceso e você também pode controlar a proporção
+
+42
+00:03:04,080 --> 00:03:06,730
+Deixe-me mostrar o que quero dizer com tudo isso.
+
+43
+00:03:07,050 --> 00:03:12,960
+Eu vou seguir em frente e chamar as parcelas de contagem e anotar que o estilo definido mesmo
+
+44
+00:03:12,960 --> 00:03:21,450
+se eu excluí-lo permanecerá no lugar até eu dizer um novo estilo, mas eu vou chamar isso, vá apelar para essa figura e diga o tamanho
+
+45
+00:03:21,450 --> 00:03:22,800
+fixo é igual a.
+
+46
+00:03:23,190 --> 00:03:26,230
+Estamos indo para dizer 12 por 3.
+
+47
+00:03:26,790 --> 00:03:32,700
+E note que isso realmente anula ou é um retorno de chamada quando o servidor marítimo está chamando de espaço de trama de Matt.
+
+48
+00:03:32,990 --> 00:03:36,030
+Madlib irá realmente definir o tamanho da figura para a trama de Seaborn.
+
+49
+00:03:36,060 --> 00:03:42,210
+Então, você pode usar ou mapear o conhecimento da parcela até o dimensionamento da figura e proporções
+
+50
+00:03:42,210 --> 00:03:45,240
+de aspecto aqui em combinação com o trabalho marítimo.
+
+51
+00:03:45,270 --> 00:03:48,990
+Agora vamos seguir em frente e abordar o tema de escala e contexto.
+
+52
+00:03:48,990 --> 00:03:55,200
+SEABORNE vem um conveniente contexto de sublinhado que permite substituir os parâmetros padrão e alterar as
+
+53
+00:03:55,200 --> 00:03:59,940
+escalas do Funt, dependendo do que você realmente está criando a figura.
+
+54
+00:03:59,940 --> 00:04:04,690
+Então, digamos que você vai criar essa figura não para um caderno, mas na verdade para um cartaz.
+
+55
+00:04:04,860 --> 00:04:15,060
+Você pode seguir em frente e dizer que Asinus pensou que o contexto de destaque eo contexto levará alguns parâmetros.
+
+56
+00:04:15,190 --> 00:04:16,300
+Tome um contexto.
+
+57
+00:04:16,320 --> 00:04:22,920
+E isso vai ser uma string e também tem uma escala de fonte, os parâmetros de contexto são conversas de
+
+58
+00:04:22,950 --> 00:04:24,700
+caderno de papel ou cartaz.
+
+59
+00:04:24,720 --> 00:04:32,520
+Então, se eu for, basta definir o contexto, o contexto me desculpa para avisar o jogador que eu tenho uma descoberta muito maior
+
+60
+00:04:32,520 --> 00:04:37,020
+e a fonte também é maior, porque assume que você estará colocando isso
+
+61
+00:04:37,020 --> 00:04:37,890
+em um cartaz.
+
+62
+00:04:38,010 --> 00:04:42,570
+E se você ainda está insatisfeito com o tamanho da fonte, você pode seguir em
+
+63
+00:04:42,660 --> 00:04:47,840
+frente e adicioná-lo aos argumentos da escala de sublinhado de fonte em um número maior, talvez três.
+
+64
+00:04:47,850 --> 00:04:50,610
+Então é três vezes o tamanho do padrão.
+
+65
+00:04:50,670 --> 00:04:56,130
+E aqui você pode realmente definir o contexto para o que você quer que a figura seja e
+
+66
+00:04:56,190 --> 00:04:58,950
+geralmente, por padrão, será no contexto de um caderno.
+
+67
+00:04:59,050 --> 00:05:06,060
+Então, você pode dizer o caderno e isso define o contexto de suas figuras.
+
+68
+00:05:06,060 --> 00:05:06,480
+Tudo bem.
+
+69
+00:05:06,540 --> 00:05:08,460
+Já conhecemos alguns dos princípios básicos aqui.
+
+70
+00:05:08,460 --> 00:05:13,210
+A última coisa sobre a qual quero falar são paletas e cores.
+
+71
+00:05:13,260 --> 00:05:16,800
+Nós mostramos gráficos antes de realmente especificar um parâmetro de matiz.
+
+72
+00:05:16,800 --> 00:05:18,730
+Deixe-me entrar e mostrar um exemplo disso.
+
+73
+00:05:18,870 --> 00:05:26,940
+Por exemplo, quando dissemos S. N. s n s Lim plots talvez queremos fazer
+
+74
+00:05:30,840 --> 00:05:37,380
+conta total versus a dica e, em seguida, dicas passen como os dados do conjunto de dados são iguais a IPs.
+
+75
+00:05:37,470 --> 00:05:42,170
+Então, fomos capazes de especificar anteriormente algo como Heugh é igual a seis.
+
+76
+00:05:42,720 --> 00:05:46,100
+E então, nós escolhemos essas cores para nós verde e azul.
+
+77
+00:05:46,500 --> 00:05:52,560
+E nós já vimos anteriormente que podemos realmente passar nos argumentos de um Hallett e existem certas cordas que
+
+78
+00:05:52,560 --> 00:05:58,890
+podemos colocar que essencialmente lhe dão um mapa de cores e vimos os aspectos semelhantes para coisas como os
+
+79
+00:05:58,890 --> 00:05:59,890
+mapas de calor.
+
+80
+00:05:59,970 --> 00:06:03,600
+Quando eu coloco coisas como magma ou quente quente.
+
+81
+00:06:03,900 --> 00:06:06,910
+Agora você pode estar se perguntando o que nós estamos achando essas cordas.
+
+82
+00:06:07,070 --> 00:06:11,420
+Bem, você pode encontrá-los, indo para o mapa da página do mapa de cores das vidas do enredo.
+
+83
+00:06:11,490 --> 00:06:14,350
+Deixe-me ir para mostrar-lhe como fazer isso com o Google.
+
+84
+00:06:14,490 --> 00:06:15,050
+Você pode seguir em frente.
+
+85
+00:06:15,060 --> 00:06:17,680
+Abra uma nova guia e vá para o Google e procure.
+
+86
+00:06:17,690 --> 00:06:27,210
+O mapa de cores ao vivo de Matt plot e o levará a uma dessas páginas e estamos à procura da página
+
+87
+00:06:27,210 --> 00:06:29,790
+de documentação do mapa de cores.
+
+88
+00:06:30,120 --> 00:06:31,940
+E este é geralmente o primeiro link aqui.
+
+89
+00:06:31,950 --> 00:06:33,820
+Existe um código de exemplo de cores.
+
+90
+00:06:34,140 --> 00:06:40,350
+E se chegarmos a esta página, agora podemos ver a escala de cores real e os gradientes, bem como o nome ou o
+
+91
+00:06:40,350 --> 00:06:43,860
+nome do string que você precisa para passar para o mapa de cores.
+
+92
+00:06:43,860 --> 00:06:50,130
+Então, se deslizar para fora aqui podemos ver esses quatro mapas de cores, estes são os principais mapas de cores, mas também
+
+93
+00:06:50,130 --> 00:06:51,660
+há mapas de cores seqüenciais.
+
+94
+00:06:51,820 --> 00:06:59,280
+Portanto, dois mapas de cores seqüenciais, outros mapas de cores diferentes divergentes, mapas de cores qualitativos variados e essas são
+
+95
+00:06:59,400 --> 00:07:02,310
+suas opções até as cordas que você passa.
+
+96
+00:07:02,310 --> 00:07:09,570
+acabei de chegar aqui e, ao invés de coor by passen, o ponto sísmico sentiu isso certo.
+
+97
+00:07:09,570 --> 00:07:17,150
+Então, por exemplo, digamos que eu queria escolher este mapa de cores sísmicas divergentes para a tonalidade que
+
+98
+00:07:17,160 --> 00:07:22,380
+E aqui podemos ver agora que recebo esse tipo de roxo e vermelho, que foram as cores aqui nos dois
+
+99
+00:07:22,380 --> 00:07:24,020
+lados neste mapa de cores divergente.
+
+100
+00:07:24,330 --> 00:07:26,330
+E você pode seguir em frente com esses mapas de cores.
+
+101
+00:07:26,330 --> 00:07:27,390
+Há muita diversão para jogar.
+
+102
+00:07:27,440 --> 00:07:32,380
+Quando Seaborn conseguir que seu enredo seja exatamente como você quer.
+
+103
+00:07:32,400 --> 00:07:33,360
+Tudo bem.
+
+104
+00:07:33,360 --> 00:07:38,070
+oficial que tem ainda mais informações sobre realmente controlar mais da sua estética e da sua figura.
+
+105
+00:07:38,070 --> 00:07:43,260
+Você pode seguir em frente e verificar o livro de notas Jupiter para estilo e cor para obter mais
+
+106
+00:07:43,530 --> 00:07:48,240
+informações e verificar os links naquela página ou naquele livro de notas que leva você à documentação
+
+107
+00:07:48,330 --> 00:07:54,220
+Mas a principal coisa a entender é saber que você pode procurar esses códigos de paleta com o MAP Live
+
+108
+00:07:54,360 --> 00:07:55,660
+procurando mapas de cores.
+
+109
+00:07:55,770 --> 00:08:02,700
+Você pode alterar o tamanho da fonte com o contexto de configuração do contexto de sublinhado definido para o poster ou notebook e,
+
+110
+00:08:03,000 --> 00:08:05,300
+em seguida, alterar a escala da fonte.
+
+111
+00:08:05,520 --> 00:08:10,530
+E então, você pode usar o piquante dessa figura com Tamanho da Fig. Para realmente mudar o tamanho de suas figuras.
+
+112
+00:08:11,070 --> 00:08:14,770
+Tudo bem, espero que tenha gostado e espero que tenha gostado de Seaborn.
+
+113
+00:08:14,820 --> 00:08:18,300
+Próximamente, alguns exercícios marítimos são gratuitos para adicionar.
+
+114
+00:08:18,330 --> 00:08:18,770
+Tudo bem.
+
+115
+00:08:19,020 --> 00:08:20,520
+Obrigado e eu vou te ver na próxima palestra

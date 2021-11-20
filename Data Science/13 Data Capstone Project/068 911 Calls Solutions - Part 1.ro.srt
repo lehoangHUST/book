@@ -1,0 +1,815 @@
+1
+00:00:05,130 --> 00:00:06,000
+Salutare tuturor.
+
+2
+00:00:06,000 --> 00:00:10,800
+Bine ați venit în această zi pentru a aborda soluțiile de proiect prelegere această conferință vom merge peste
+
+3
+00:00:10,800 --> 00:00:13,850
+soluțiile pentru noapte, atunci când o numeste un proiect capstone.
+
+4
+00:00:13,920 --> 00:00:16,710
+Să ieșim și să mergem la notebook-ul Jupiter pentru a începe.
+
+5
+00:00:16,800 --> 00:00:17,060
+In regula.
+
+6
+00:00:17,070 --> 00:00:18,560
+Iată-mă la notebook.
+
+7
+00:00:18,570 --> 00:00:20,730
+Să mergem mai departe și să începem.
+
+8
+00:00:20,730 --> 00:00:25,620
+Primul lucru pe care vreau să-l fac este că sunt importante niște plăcintă și pandas atunci când
+
+9
+00:00:25,630 --> 00:00:34,110
+ieșim afară și spunem arbitri importanți și P și importând panda ca PD și următoarea celulă vă cere să importați biblioteci de vizualizare și să setați pilotul pe
+
+10
+00:00:34,150 --> 00:00:35,370
+hartă în linie.
+
+11
+00:00:35,370 --> 00:00:39,610
+A fost puțin cam vagă, dar, sperăm, îți dai seama că vorbim despre asta.
+
+12
+00:00:39,650 --> 00:00:50,700
+LIBMAN seaborne astfel încât să pot spune în parte, dar complot PI ca Piazzi import seaborne ca Asinus și apoi am de gând
+
+13
+00:00:50,700 --> 00:00:55,530
+să iasă și să spun ceea ce trăiesc în linie.
+
+14
+00:00:55,530 --> 00:01:00,420
+În continuare, am vrut să citim în fișier un cadru de date numit F.
+
+15
+00:01:00,840 --> 00:01:09,750
+Deci, PD care citesc C S V și putem de fapt să sunăm doar 9 și apoi să vedem nouă pe unu că v este fișierul
+
+16
+00:01:09,840 --> 00:01:11,280
+despre care suntem preocupați.
+
+17
+00:01:11,290 --> 00:01:13,380
+Și apoi vrem să verificăm informațiile din date.
+
+18
+00:01:13,410 --> 00:01:15,980
+Deci informația.
+
+19
+00:01:16,950 --> 00:01:21,890
+Deci, asta ne spune că sunt aproape 100000 de intrări aici și sunt nouă coloane totale.
+
+20
+00:01:21,990 --> 00:01:27,960
+Și apoi avem de fapt deja descrierile coloanelor care apar în notebook, apoi vrem să verificăm
+
+21
+00:01:27,960 --> 00:01:29,000
+capul DEA.
+
+22
+00:01:29,430 --> 00:01:33,280
+Și putem face asta doar prin apelarea metodei din cap.
+
+23
+00:01:33,600 --> 00:01:37,710
+Și aici avem capul pământului, astfel încât el să poată vedea cum
+
+24
+00:01:37,740 --> 00:01:45,480
+arată Lotusphere în realitate, titlul are un fel de etichetă de imersie sau un foc de colon și apoi evenimentul titular real și avem
+
+25
+00:01:45,480 --> 00:01:49,650
+un timbru de timp GWP care este un localitate și mergem spre dreapta.
+
+26
+00:01:49,770 --> 00:01:53,180
+Avem o adresă și apoi le chemăm.
+
+27
+00:01:53,190 --> 00:01:58,480
+În continuare vrem să răspundem la câteva întrebări de bază, cum ar fi: Care sunt primele cinci coduri poștale pentru 911 de apeluri.
+
+28
+00:01:58,770 --> 00:02:06,600
+Ei bine, mergem mai departe si apuca coloana si apoi putem sa specificam doar numaratoare de valori de pe aceasta si asta sau sa
+
+29
+00:02:08,240 --> 00:02:10,870
+transformam toate conturile pentru toate codurile zip.
+
+30
+00:02:10,920 --> 00:02:12,890
+Și vrem doar primele cinci.
+
+31
+00:02:13,140 --> 00:02:16,230
+Așa că am sunat la 5 din acea serie.
+
+32
+00:02:16,230 --> 00:02:18,540
+Și aici avem primele cinci coduri zip.
+
+33
+00:02:18,570 --> 00:02:22,910
+În continuare vrem să ne dăm seama care sunt cele mai bune PWP ale primăriei pentru 911 de apeluri.
+
+34
+00:02:23,190 --> 00:02:32,400
+Puteți face un lucru foarte asemănător specificați conturile de valoare a apelului DWP și apoi mergeți la 5 și acest lucru vă
+
+35
+00:02:32,400 --> 00:02:36,910
+va obține aceste rezultate atât de mici Merion Abbington etc.
+
+36
+00:02:37,500 --> 00:02:43,000
+Acum vrem să aruncăm o privire la coloana titlului și câte coduri de titlu unic există.
+
+37
+00:02:43,230 --> 00:02:51,920
+Există două moduri de a face acest lucru, puteți spune că titlurile auditează unic unic și întoarce o gamă de
+
+38
+00:02:51,920 --> 00:02:58,980
+titluri unice înseamnă minicon doar verificați lungimea acelei matrice și reintroduceți numărul sau faceți totul
+
+39
+00:02:58,980 --> 00:03:00,500
+într-un singur pas.
+
+40
+00:03:00,540 --> 00:03:03,440
+Puteți să sunați și unic.
+
+41
+00:03:03,450 --> 00:03:06,060
+De asemenea, se vor întoarce 110.
+
+42
+00:03:06,090 --> 00:03:09,750
+OK Pasul următor vrem să creăm noi funcții în coloana titlurilor.
+
+43
+00:03:09,780 --> 00:03:14,540
+Există un motiv pentru care codul Departamentului de slash este specificat înainte de codul de titlu.
+
+44
+00:03:14,700 --> 00:03:17,260
+Și acestea sunt focul și traficul M-S.
+
+45
+00:03:17,430 --> 00:03:23,340
+Vrem să folosim aplicarea unei expresii de teren personalizate pentru a crea o coloană nouă numită motiv
+
+46
+00:03:23,430 --> 00:03:25,050
+care conține valoarea șirului.
+
+47
+00:03:25,050 --> 00:03:31,260
+De exemplu, dacă coloana din titlu a fost M-S dureri de spate ultimul prejudiciu coloana motiv pentru acea valoare ar
+
+48
+00:03:31,260 --> 00:03:35,310
+fi M-S vom merge înainte și să ia o privire înapoi la cap.
+
+49
+00:03:35,700 --> 00:03:38,690
+După cum am menționat mai devreme, există un motiv pentru colon.
+
+50
+00:03:38,700 --> 00:03:41,180
+Și apoi titlul complet M-S foc.
+
+51
+00:03:41,190 --> 00:03:43,830
+Și mai târziu, există trafic.
+
+52
+00:03:44,130 --> 00:03:48,030
+Să mergem mai departe și să creați această coloană motiv utilizând aplicați.
+
+53
+00:03:48,240 --> 00:03:51,000
+În primul rând, hai să ieșim și să deslușim logica a ceea ce dorim să facem.
+
+54
+00:03:51,000 --> 00:03:55,530
+Voi lua de la titlu un exemplu.
+
+55
+00:03:55,590 --> 00:04:03,570
+Eu ellos văd că este cam așa cum îmi place să o fac și apoi am stabilit acest lucru ca X și să văd ce trebuie să
+
+56
+00:04:03,570 --> 00:04:07,090
+fac pentru X pentru a apuca de fapt acest titlu aici.
+
+57
+00:04:07,350 --> 00:04:13,190
+Ei bine, din moment ce acesta este un șir, pot spune că se desparte de colon.
+
+58
+00:04:14,070 --> 00:04:19,020
+Și apoi observ că titlul întotdeauna este primul, așa că, dacă apuc doar primul element din
+
+59
+00:04:19,020 --> 00:04:19,680
+lista respectivă.
+
+60
+00:04:19,680 --> 00:04:22,220
+Acum am acest motiv aici.
+
+61
+00:04:22,330 --> 00:04:22,720
+In regula.
+
+62
+00:04:22,770 --> 00:04:23,970
+Acesta este genul de lucru pe care îl vom face.
+
+63
+00:04:23,970 --> 00:04:31,590
+Expresia Ferland va arăta că pentru a crea motivul pentru coloană setați-l egal
+
+64
+00:04:32,440 --> 00:04:43,980
+cu coloana de titlu aplicați și apoi spuneți lambda titlul și spuneți diviziunea punctului de titlu bazat pe colon și apoi
+
+65
+00:04:43,980 --> 00:04:48,200
+voi lua primul element din acea listă.
+
+66
+00:04:48,210 --> 00:04:52,220
+Să mergem mai departe și să vedem cum arată motivul.
+
+67
+00:04:53,810 --> 00:04:56,790
+Și așa se pare că suntem trafic de incendiu.
+
+68
+00:04:56,790 --> 00:04:58,550
+Perfect.
+
+69
+00:04:58,560 --> 00:04:59,070
+In regula.
+
+70
+00:04:59,370 --> 00:05:05,730
+Sperăm că nu a fost prea greu poate fi un pic dificil să-și exprime o expresie a pământului, aplicând corect o sugestie mică
+
+71
+00:05:05,730 --> 00:05:06,770
+pentru acest lucru.
+
+72
+00:05:06,870 --> 00:05:11,700
+Luați un exemplu și apoi să vedeți ce trebuie să faceți pentru acest exemplu și apoi să transformați
+
+73
+00:05:11,700 --> 00:05:13,380
+acest lucru în expresia pământului.
+
+74
+00:05:13,380 --> 00:05:16,890
+Acum vrem să știm care sunt motivele cele mai frecvente pentru tine și nu vreau să
+
+75
+00:05:16,890 --> 00:05:18,420
+sun pe baza acestei noi coloane.
+
+76
+00:05:18,420 --> 00:05:19,570
+Ei bine, de fapt este destul de ușor.
+
+77
+00:05:19,590 --> 00:05:29,580
+Putem numi doar numar de raspunsuri care returneaza ca EMI este motivul cel mai frecvent daca doriti doar sa returnati cel mai comun motiv pentru care tocmai ati putea
+
+78
+00:05:29,880 --> 00:05:35,310
+spune ca a avut unul si acesta ar returna MS dar spune ca exista doar trei
+
+79
+00:05:35,310 --> 00:05:38,660
+valori pe care le vom arata toate dintre ei.
+
+80
+00:05:38,670 --> 00:05:44,700
+În continuare, am vrut să folosim maritim pentru a crea o contraploată de nouă, una care se cheamă din motive.
+
+81
+00:05:44,790 --> 00:05:45,340
+O.K.
+
+82
+00:05:45,720 --> 00:05:52,950
+Vom dori să spun contraplotul Asinus și apoi vrem să specificăm axa x ca motiv pentru asta.
+
+83
+00:05:53,080 --> 00:06:00,660
+Deci, atunci când spun că X este motiv, atunci pentru contraplot nu există Y este Y este ales automat pentru a
+
+84
+00:06:00,660 --> 00:06:02,400
+fi doar un număr.
+
+85
+00:06:02,400 --> 00:06:03,820
+Așa că vom spune că datele sunt.
+
+86
+00:06:03,930 --> 00:06:06,120
+Și apoi rulați asta.
+
+87
+00:06:06,120 --> 00:06:08,440
+Și aici avem numeroasele noastre parcele.
+
+88
+00:06:08,940 --> 00:06:12,830
+Acum nu vă faceți griji dacă nu ați obținut colorarea exactă așa cum se arată în cartea de soluții.
+
+89
+00:06:12,930 --> 00:06:15,170
+Asta e doar un apel suplimentar pe paletă.
+
+90
+00:06:15,180 --> 00:06:23,160
+Așa că ai putea să faci ceva de genul Palette egal și cel pe care l-am folosit pentru soluții a fost chiar sub acest lucru și asta
+
+91
+00:06:24,150 --> 00:06:25,340
+schimbă culoarea un pic.
+
+92
+00:06:25,350 --> 00:06:27,600
+Dar nu vă faceți griji cu privire la potrivirea culorii în sus sau în sus.
+
+93
+00:06:27,610 --> 00:06:30,100
+Este o opțiune de cartografiere opțională pentru fiecare alegere.
+
+94
+00:06:30,150 --> 00:06:34,380
+Sperăm că suntem capabili să înțelegem că complotul de numărare este egal cu motivul și că este
+
+95
+00:06:34,380 --> 00:06:37,160
+egal cu f cele mai importante părți ale creării acestui complot.
+
+96
+00:06:37,170 --> 00:06:40,140
+Acum, să ne concentrăm asupra informațiilor despre timp.
+
+97
+00:06:40,200 --> 00:06:43,900
+Ce le apela tipul de date al obiectelor din timbrul de timp.
+
+98
+00:06:43,920 --> 00:06:51,780
+Ei bine, ceea ce puteți face este doar apela DFT info și vă va spune de fapt, dacă te uiți la ștampila de timp că este un
+
+99
+00:06:51,780 --> 00:06:57,510
+tip de obiect și acest tip de vă oferă un indiciu că nu va fi un număr și este
+
+100
+00:06:57,510 --> 00:06:58,790
+de fapt un șir.
+
+101
+00:06:58,950 --> 00:07:06,270
+Și dacă vrem să confirmăm că putem să luăm doar unul dintre acele obiecte, putem spune că amprenta de timp C02 a lui
+
+102
+00:07:06,360 --> 00:07:09,920
+ILO scrub prima și observăm că vom primi un șir.
+
+103
+00:07:09,930 --> 00:07:16,920
+Vrem să mai confirmăm că putem spune tipul și aici avem ca TR pentru șir.
+
+104
+00:07:16,920 --> 00:07:19,820
+Ceva să știi dacă te duci până sus.
+
+105
+00:07:19,860 --> 00:07:23,450
+Acest lucru este confirmat aici cu o variabilă de șir.
+
+106
+00:07:23,760 --> 00:07:26,310
+Ok armele se rostogolesc înapoi.
+
+107
+00:07:26,310 --> 00:07:29,980
+Deci știm că avem informații de timp, dar de fapt este un șir.
+
+108
+00:07:30,300 --> 00:07:35,180
+Acum vrem să transformăm aceste timbre în obiecte de timp date.
+
+109
+00:07:35,270 --> 00:07:39,500
+Vrem să facem asta folosind PD până la data de timp și aveți posibilitatea să faceți clic pe acest link.
+
+110
+00:07:39,630 --> 00:07:44,040
+Veți observa aici pentru a vă conecta la documentația cu privire la modul de utilizare pentru a sublinia ora datei.
+
+111
+00:07:44,040 --> 00:07:48,150
+Continuați și examinați doar exemplele de aici, dar este de
+
+112
+00:07:48,150 --> 00:07:58,980
+fapt un simplu apel, așa că, sperăm că ați dat seama, dar în principiu doar spuneți PD să subliniați faptul că trecerea timpului coloanei pe care vrem
+
+113
+00:07:58,980 --> 00:08:02,420
+să o convertim este o ștampilă de timp.
+
+114
+00:08:03,270 --> 00:08:10,610
+Și apoi voi reseta coloana asta pentru a fi egală cu asta.
+
+115
+00:08:11,010 --> 00:08:15,180
+Și acum, dacă merg mai departe și aruncă o privire la acest cod chiar aici.
+
+116
+00:08:15,210 --> 00:08:17,410
+Copiați-l și lipiți-l.
+
+117
+00:08:17,460 --> 00:08:20,580
+Acum am un obiect de timbru care este exact ceea ce vrem.
+
+118
+00:08:20,580 --> 00:08:22,700
+Acesta este un obiect Date Time acum.
+
+119
+00:08:22,710 --> 00:08:23,030
+In regula.
+
+120
+00:08:23,040 --> 00:08:29,130
+Acum că este vorba de un obiect de dată dată sau de o ștampilă de timp cu panda, puteți înțelege de
+
+121
+00:08:29,160 --> 00:08:31,190
+fapt atributele specifice ale obiectului apelând-le.
+
+122
+00:08:31,380 --> 00:08:35,240
+Și aici este un mic exemplu de cod exemplu aici, să mergem și să verificăm asta.
+
+123
+00:08:35,400 --> 00:08:38,990
+Am doar copia și lipi acest cod exemplu.
+
+124
+00:08:39,030 --> 00:08:44,520
+Putem rula acest lucru și arătăm că putem să luăm de fapt informații despre asta și apoi să spunem că folosiți metoda
+
+125
+00:08:44,520 --> 00:08:47,540
+Jupiter pentru a explora diferitele atribute pe care le puteți apela.
+
+126
+00:08:47,760 --> 00:08:53,460
+Și acum, coloana de timp sau de fapt obiectele de timp date folosiți care se aplică pentru a crea trei
+
+127
+00:08:53,520 --> 00:08:55,590
+noi coloane numite luna și ziua săptămânii.
+
+128
+00:08:55,770 --> 00:09:00,270
+Veți crea aceste coloane bazate pe coloana de timbru și apoi puteți face referire la
+
+129
+00:09:00,270 --> 00:09:01,630
+soluții dacă rămâneți blocat.
+
+130
+00:09:01,800 --> 00:09:04,300
+Dă-mi voie să plec și să sparg puțin mai departe.
+
+131
+00:09:04,440 --> 00:09:07,340
+Dar înainte și să aruncăm o privire la ce oră este timpul.
+
+132
+00:09:07,350 --> 00:09:10,330
+Este prima intrare în această coloană de timbru.
+
+133
+00:09:10,340 --> 00:09:11,660
+Nu spune timbru de timp.
+
+134
+00:09:11,800 --> 00:09:15,580
+2015 12 10 în minutul secunde.
+
+135
+00:09:15,620 --> 00:09:19,220
+Fac puncte și cheam atributele de pe acest obiect.
+
+136
+00:09:19,240 --> 00:09:24,840
+Observați că am o mare varietate de atribute pe care le pot numi instanța dacă vreau să știu anul real.
+
+137
+00:09:24,870 --> 00:09:32,010
+Acest lucru este în Pot numi doar an și raportează anul înapoi ca 2015, așa că vreau să știu ce oră a
+
+138
+00:09:32,010 --> 00:09:33,190
+zilei a fost.
+
+139
+00:09:33,230 --> 00:09:35,650
+Raportează-l înapoi în 17 ore.
+
+140
+00:09:35,650 --> 00:09:41,490
+Deci, în format militar sau în format de 24 de ore, vreau să știu, de exemplu, luna în care a fost
+
+141
+00:09:41,720 --> 00:09:47,390
+și a sunat luna acum, pot chiar suna lucruri ca ziua săptămânii, astfel încât ziua săptămânii este de trei.
+
+142
+00:09:47,400 --> 00:09:51,800
+Mai târziu, există un dicționar aici pentru a vă referi.
+
+143
+00:09:51,810 --> 00:09:52,170
+In regula.
+
+144
+00:09:52,170 --> 00:09:57,900
+Acum, vrem să facem este să avem această abilitate de atribute ale clienților în acel moment, aceiași coloană care să se creeze
+
+145
+00:09:57,900 --> 00:10:02,770
+de fapt în coloana noastră de luni și zi de săptămână, vă vom arăta cum vom face asta.
+
+146
+00:10:02,790 --> 00:10:12,580
+Vom spune, de exemplu, că jumătate de oră este egală cu cea a coloanei timbrului.
+
+147
+00:10:13,370 --> 00:10:23,390
+Și vom spune că aplicăm, spunem că Lamda ia timp și apoi returnează atributul oră.
+
+148
+00:10:24,260 --> 00:10:30,300
+Intrăm și conducem asta și apoi, dacă verificăm atributul nostru, avem acum toate orele în care a avut
+
+149
+00:10:30,300 --> 00:10:36,150
+loc apelul real din timbrul de timp și vom merge exact la fel pentru luna și ziua
+
+150
+00:10:36,150 --> 00:10:36,500
+săptămânii.
+
+151
+00:10:36,540 --> 00:10:42,480
+De fapt, puteți copia și lipi această linie de cod și în loc de a noastră. Pentru prima o
+
+152
+00:10:42,480 --> 00:10:49,080
+să mergem mai departe și să punem în luni și să schimbăm acest atribut la apelul de luni, iar pentru al
+
+153
+00:10:49,080 --> 00:10:50,820
+doilea vom merge mai departe
+
+154
+00:10:53,730 --> 00:10:58,670
+și vom apela în această zi a săptămânii și apoi schimbați-l în ziua apelului săptămânal.
+
+155
+00:10:58,770 --> 00:11:02,100
+Acum mergem și conducem asta.
+
+156
+00:11:02,100 --> 00:11:06,630
+Să mergem mai departe și să verificăm capul cadrului nostru de date acum doar pentru a confirma că toate acestea au funcționat.
+
+157
+00:11:06,920 --> 00:11:11,980
+Și dacă mergem până la dreapta, avem trei coloane noi.
+
+158
+00:11:11,990 --> 00:11:16,330
+Avem lună și zi din săptămână, care sunt câteva cifre prezente.
+
+159
+00:11:16,740 --> 00:11:23,910
+OK, următorul lucru pe care ați dori să-l observați a fost modul în care ziua din săptămână este între 0 și 6,
+
+160
+00:11:23,910 --> 00:11:31,730
+care spune că folosiți metoda punctului hartă cu acest dicționar pentru a mapa numele de șir efectiv la ziua săptămânii în care trebuie să faceți
+
+161
+00:11:31,740 --> 00:11:32,600
+aici .
+
+162
+00:11:32,610 --> 00:11:36,390
+Mergeți mai departe și copiați acest rând de cod.
+
+163
+00:11:36,450 --> 00:11:44,590
+Acum avem hartă și tot ce trebuie să faceți este să faceți doar harta pentru a vedea că ziua IF a săptămânii este
+
+164
+00:11:44,590 --> 00:11:51,290
+egală cu ziua f săptămânii și apoi puteți spune că harta este metoda pe care o vorbește aici.
+
+165
+00:11:51,600 --> 00:11:55,370
+Apoi treceți harta.
+
+166
+00:11:55,410 --> 00:11:58,050
+Și acum, dacă verificăm capul anunțului nostru
+
+167
+00:12:01,050 --> 00:12:06,800
+de date, dacă mergem tot drumul spre dreapta, ziua din săptămână este acum șirul actual de joi-vineri
+
+168
+00:12:06,900 --> 00:12:07,380
+cetera.
+
+169
+00:12:07,450 --> 00:12:09,920
+Este puțin mai ușor să citești.
+
+170
+00:12:10,580 --> 00:12:10,990
+O.K.
+
+171
+00:12:11,070 --> 00:12:16,140
+Acum, vrem să vedeți mai mult și să creați un contrat din coloana din ziua săptămânii,
+
+172
+00:12:16,140 --> 00:12:18,090
+cu culoarea bazată pe coloana motivului.
+
+173
+00:12:18,090 --> 00:12:19,320
+Să mergem mai departe și să recreăm asta.
+
+174
+00:12:19,320 --> 00:12:27,480
+Putem spune că contrapartea X de la Asinus va fi ziua în care datele
+
+175
+00:12:30,450 --> 00:12:33,300
+coloanelor vor fi día.
+
+176
+00:12:33,330 --> 00:12:36,010
+Amintiți-vă că nu trebuie să treceți într-o săptămână sau să numărați.
+
+177
+00:12:36,240 --> 00:12:41,340
+Și dacă facem asta, vom obține numărul total pe zi din săptămână.
+
+178
+00:12:41,400 --> 00:12:47,370
+Așadar, putem vedea că există o picătură de duminică, unde putem adăuga la asta, Heugh specifică
+
+179
+00:12:47,370 --> 00:12:53,060
+faptul că nuanța este motivată și avem o recreere a complotului prezentat în aceste soluții.
+
+180
+00:12:53,070 --> 00:12:56,870
+Acum, ceva ce trebuie menționat aici este paleta de culori este puțin diferită.
+
+181
+00:12:56,980 --> 00:12:58,850
+Dacă doriți să folosiți aceeași paletă de culori am făcut-o.
+
+182
+00:12:58,890 --> 00:13:08,250
+Puteți să mergeți mai departe și să spuneți paleta Zucco la viridis și să reproduceți aceeași paletă de culori.
+
+183
+00:13:08,370 --> 00:13:13,680
+Și ultimul lucru pe care trebuie să-l observăm este că legenda este de fapt înăuntru aici și că în
+
+184
+00:13:13,680 --> 00:13:15,370
+soluția dorim să relocăm legenda.
+
+185
+00:13:15,540 --> 00:13:21,240
+De fapt, puteți să copiați și să lipiți același cod pe care l-ați făcut în cursul conferințelor de la Marea Neagră,
+
+186
+00:13:21,240 --> 00:13:24,020
+unde de fapt arătăm cum să punem legenda afară.
+
+187
+00:13:24,120 --> 00:13:25,180
+Vom face asta.
+
+188
+00:13:25,260 --> 00:13:28,600
+Acum avem legenda în afara complotului însuși.
+
+189
+00:13:28,620 --> 00:13:29,010
+In regula.
+
+190
+00:13:29,010 --> 00:13:33,260
+Acum următoarea sarcină pe care trebuia să o îndeplinim a fost aceeași pentru coloana din lună.
+
+191
+00:13:33,540 --> 00:13:42,870
+Și în principiu tot ce trebuie să faceți este să puteți copia și să lipiți acest cod și să schimbați x pentru a fi lună și
+
+192
+00:13:42,870 --> 00:13:47,700
+veți avea exact același complot, cu excepția coloanei de lună și apoi următoarea
+
+193
+00:13:47,700 --> 00:13:49,950
+întrebare Ați observat ceva ciudat complot.
+
+194
+00:13:50,100 --> 00:13:53,340
+Și, sperăm, puteți observa că de fapt vă lipsiți de câteva luni.
+
+195
+00:13:53,430 --> 00:13:57,590
+Se merge una până la opt, dar nu aveți luni 9-10 și 11.
+
+196
+00:13:57,660 --> 00:14:00,030
+Mergeau direct la 12.
+
+197
+00:14:00,270 --> 00:14:05,820
+Deci, acum că am observat că informațiile lipsă ce am dori să facem este să încercăm să complotăm informațiile
+
+198
+00:14:05,850 --> 00:14:11,400
+într-un alt mod, eventual printr-un complot simplu care completează lunile care lipsesc și pentru a face acest lucru
+
+199
+00:14:11,400 --> 00:14:14,440
+va trebui să facem niște lucrări suplimentare cu panda.
+
+200
+00:14:14,490 --> 00:14:20,250
+Vom merge mai departe și vom începe prima parte a cursului de soluții aici și vom continua în partea a
+
+201
+00:14:20,250 --> 00:14:24,660
+doua, creând un grup după obiect, numit lună, pentru a încerca să rezolvăm această problemă.
+
+202
+00:14:24,660 --> 00:14:25,160
+Bine.
+
+203
+00:14:25,410 --> 00:14:27,280
+Multumesc tuturor si te voi vedea la urmatoarea conferinta.
+
+204
+00:14:27,280 --> 00:14:28,710
+Pentru partea a doua a soluțiilor

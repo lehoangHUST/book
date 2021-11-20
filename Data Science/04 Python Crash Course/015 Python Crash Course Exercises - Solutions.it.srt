@@ -1,0 +1,651 @@
+1
+00:00:05,130 --> 00:00:10,810
+Salve a tutti e benvenuti alla conferenza sulle soluzioni per l'esercizio del corso intensivo di Python e questa
+
+2
+00:00:10,800 --> 00:00:15,180
+conferenza mi occuperò del taccuino delle soluzioni e illustrerò il codice e le soluzioni.
+
+3
+00:00:15,170 --> 00:00:20,440
+No, andiamo avanti e saltiamo sul quaderno degli esercizi, così possiamo effettivamente iniziare a codificarlo.
+
+4
+00:00:20,490 --> 00:00:20,760
+Tutto ok.
+
+5
+00:00:20,760 --> 00:00:23,990
+Eccomi agli esercizi del corso intensivo.
+
+6
+00:00:24,060 --> 00:00:28,250
+La prima domanda a cui volevamo rispondere è ciò che è 7: 2 alla potenza di quattro.
+
+7
+00:00:28,350 --> 00:00:30,540
+Ora ci sono tecnicamente due modi per farlo.
+
+8
+00:00:30,570 --> 00:00:36,900
+Potresti aver appena digitato sette volte sette volte sette volte sette e ottenuto la risposta corretta.
+
+9
+00:00:36,910 --> 00:00:42,600
+Ma si spera che ricordi il modo corretto che sta chiamando ad Asterix per gli esponenti.
+
+10
+00:00:42,660 --> 00:00:44,740
+Quindi sette al potere di quattro.
+
+11
+00:00:44,910 --> 00:00:47,730
+Esegui quella cella e c'è la tua risposta.
+
+12
+00:00:47,730 --> 00:00:50,770
+Prossimo passo vogliamo dividere la stringa S è uguale a.
+
+13
+00:00:50,780 --> 00:00:57,540
+Salve Sam in una lista possiamo andare avanti e afferrare questo e possiamo vedere le liste di output di
+
+14
+00:00:57,540 --> 00:00:59,890
+esempio che vogliamo effettivamente creare lì.
+
+15
+00:00:59,910 --> 00:01:06,750
+Quindi se eseguo un sequel per salirci Sam e chiamo estop divide questo dividerò automaticamente la stringa
+
+16
+00:01:07,320 --> 00:01:09,790
+in una lista sullo spazio bianco.
+
+17
+00:01:09,790 --> 00:01:15,840
+Ricordo che possiamo effettivamente passare qualsiasi carattere di stringa, ad esempio, a ciò che in realtà vogliamo dividere
+
+18
+00:01:15,870 --> 00:01:19,750
+su cui effettivamente vediamo che in seguito in un altro esercizio.
+
+19
+00:01:19,980 --> 00:01:25,380
+Andiamo alla prossima domanda a cui sono state date le variabili plena uguale a
+
+20
+00:01:25,380 --> 00:01:27,850
+terra e diametro è uguale a dodicimilasettecentoquarantadue.
+
+21
+00:01:28,110 --> 00:01:30,710
+Usa quel formato per stampare la seguente stringa.
+
+22
+00:01:30,840 --> 00:01:34,830
+Il diametro della Terra è di dodicimilasettecentoquarantadue chilometri.
+
+23
+00:01:34,940 --> 00:01:41,220
+E andiamo a correre la cella così da trovare queste due variabili e
+
+24
+00:01:42,000 --> 00:01:49,500
+poi dirò in una stringa che il diametro della Terra è di mille settecentoquarantadue chilometri.
+
+25
+00:01:49,520 --> 00:01:53,860
+Ricorda che voglio usare quel formato e voglio queste due variabili.
+
+26
+00:01:54,060 --> 00:02:02,070
+Quindi sostituirò la terra con solo un paio di parentesi graffe e farò lo stesso per
+
+27
+00:02:02,800 --> 00:02:11,280
+questo numero di diametro, quindi dirò quel formato e lo farò nel diametro dei pianeti e andrò
+
+28
+00:02:11,280 --> 00:02:13,460
+avanti e stamperò il tutto.
+
+29
+00:02:13,470 --> 00:02:14,950
+Quindi è questo funziona.
+
+30
+00:02:15,030 --> 00:02:16,000
+E lì ce l'abbiamo.
+
+31
+00:02:16,260 --> 00:02:22,350
+Avrei potuto passare anche alcuni nomi di variabili qui come A e B e impostare questi uguali su
+
+32
+00:02:22,890 --> 00:02:23,970
+A e B.
+
+33
+00:02:24,210 --> 00:02:25,650
+E questa è esattamente la stessa cosa.
+
+34
+00:02:25,650 --> 00:02:30,640
+Quindi a te quando lo usi per il primo devi assicurarti che sia nel giusto ordine.
+
+35
+00:02:30,960 --> 00:02:35,550
+Il prossimo passo dato a questo elenco annidato usa l'indicizzazione per afferrare la parola Ciao.
+
+36
+00:02:35,790 --> 00:02:36,670
+Questo è abbastanza complicato.
+
+37
+00:02:36,690 --> 00:02:42,770
+Quindi ti prendi il tuo tempo con questo e parti dall'interno verso l'esterno.
+
+38
+00:02:42,870 --> 00:02:44,620
+Puoi vedere qui che ci siamo salutati.
+
+39
+00:02:44,700 --> 00:02:50,100
+E questa è una lista e Jupiter e in alto ti aiuta ad evidenziare la parentesi, quindi questo
+
+40
+00:02:50,280 --> 00:02:56,820
+è anche all'interno di una lista che si trova all'interno di un'altra lista che si trova all'interno della lista più esterna.
+
+41
+00:02:57,330 --> 00:03:06,730
+Quindi questa intera lista qui è ciò che vogliamo prima afferrare e posizioniamoci all'indice 3 0 1 2 3.
+
+42
+00:03:07,140 --> 00:03:09,210
+Andremo avanti e prendilo.
+
+43
+00:03:09,510 --> 00:03:15,930
+Ora che ho questa lista posso vedere che la lista che ha la mia parola d'ordine ciao è
+
+44
+00:03:15,930 --> 00:03:19,790
+il secondo elemento nella lista che significa che è un indice.
+
+45
+00:03:20,550 --> 00:03:24,240
+E ora ho intenzione di rompere di nuovo così in modo 0 1
+
+46
+00:03:27,150 --> 00:03:29,540
+2 e poi ho una lista di un elemento.
+
+47
+00:03:29,540 --> 00:03:32,170
+Quindi posso andare avanti e riprenderlo per zero.
+
+48
+00:03:32,610 --> 00:03:35,090
+E poi finalmente ho la stringa ciao OK.
+
+49
+00:03:35,100 --> 00:03:39,660
+Questo è abbastanza complicato e non avrai mai veramente una situazione come questa nella vita reale.
+
+50
+00:03:39,810 --> 00:03:44,190
+Ma quando lavoro con i panda, dovrai fare cose profonde in due livelli.
+
+51
+00:03:44,190 --> 00:03:45,940
+Quindi tienilo a mente.
+
+52
+00:03:46,440 --> 00:03:46,780
+Tutto ok.
+
+53
+00:03:46,800 --> 00:03:51,090
+Quindi la domanda successiva è stata data a questo dizionario di nece che ha afferrato la parola ciao.
+
+54
+00:03:51,420 --> 00:03:53,820
+Siate preparati questo sarà fastidioso slash ingannevole.
+
+55
+00:03:53,820 --> 00:03:55,410
+Quindi questo è abbastanza complicato.
+
+56
+00:03:55,710 --> 00:03:57,810
+Ma andiamo avanti e scomporlo passo dopo passo.
+
+57
+00:03:57,840 --> 00:04:01,190
+La prima cosa che devi fare è prendere la prima chiave.
+
+58
+00:04:01,200 --> 00:04:05,410
+Quindi, se guardiamo a ciò, possiamo effettivamente chiamare le chiavi stesse.
+
+59
+00:04:05,640 --> 00:04:11,460
+E in realtà abbiamo solo una chiave nel dizionario più esterno, ok, andremo avanti e lo chiameremo.
+
+60
+00:04:13,530 --> 00:04:19,230
+E poi ora ho una lista di alcuni elementi e noto che voglio prendere questo dizionario
+
+61
+00:04:19,230 --> 00:04:22,270
+proprio qui che è a 0 1 2 3.
+
+62
+00:04:22,270 --> 00:04:25,410
+Quindi indice 3 di quella lista.
+
+63
+00:04:25,410 --> 00:04:31,920
+Pertanto, tieni presente che stiamo analizzando le liste di combinazioni con coppie di valori chiave di un dizionario.
+
+64
+00:04:32,400 --> 00:04:36,810
+E poi ho di nuovo un dizionario e voglio prendere il valore sulla chiave.
+
+65
+00:04:36,810 --> 00:04:39,260
+Difficile.
+
+66
+00:04:40,020 --> 00:04:46,520
+Poi ho di nuovo una lista e voglio prendere questo dizionario che è 0 1 2 3.
+
+67
+00:04:47,810 --> 00:04:52,240
+E poi ho di nuovo un dizionario e voglio afferrare un obiettivo chiave.
+
+68
+00:04:52,770 --> 00:04:59,210
+E poi finalmente ho una lista e voglio prendere quell'ultimo elemento 0 1 2 3.
+
+69
+00:05:00,000 --> 00:05:01,390
+E quello è ciao.
+
+70
+00:05:01,750 --> 00:05:02,130
+OK.
+
+71
+00:05:02,130 --> 00:05:04,390
+Abbastanza difficile abbastanza difficile.
+
+72
+00:05:04,410 --> 00:05:09,520
+Quindi non preoccuparti troppo se non sei in grado di capirlo velocemente perché è piuttosto fastidioso.
+
+73
+00:05:09,560 --> 00:05:15,250
+Sless difficile ma, si spera, si è in grado di comprendere effettivamente la logica di questa soluzione.
+
+74
+00:05:15,270 --> 00:05:18,210
+La prossima domanda è qual è la principale differenza tra una tupla e una lista.
+
+75
+00:05:18,270 --> 00:05:21,450
+Beh, una tupla è immutabile e una lista è mutabile.
+
+76
+00:05:21,450 --> 00:05:23,980
+Questa è la differenza principale.
+
+77
+00:05:24,060 --> 00:05:28,500
+Successivamente volemmo creare una funzione che catturasse il dominio del sito Web di posta elettronica da
+
+78
+00:05:28,500 --> 00:05:30,960
+una stringa nel modulo utente al dominio punto com.
+
+79
+00:05:30,960 --> 00:05:36,610
+Quindi, ad esempio, il passaggio del dominio degli utenti con dominio com renderebbe il dominio punto com.
+
+80
+00:05:37,260 --> 00:05:43,120
+Andiamo avanti e creiamo una funzione chiamata dominio ottiene.
+
+81
+00:05:43,530 --> 00:05:51,540
+Verrà inserita una variabile e-mail che sarà una stringa e quindi restituiremo l'e-mail che si divide e
+
+82
+00:05:54,230 --> 00:05:56,330
+ci dividiamo sul simbolo.
+
+83
+00:05:56,340 --> 00:05:58,900
+Entriamo e vediamo come funziona.
+
+84
+00:05:58,950 --> 00:06:00,550
+Se l'ho appena eseguito.
+
+85
+00:06:01,170 --> 00:06:01,860
+Ok fantastico.
+
+86
+00:06:01,860 --> 00:06:08,900
+Quindi, se corro così, finisco per essere diviso su questo simbolo e ottengo una lista di ritorno.
+
+87
+00:06:09,030 --> 00:06:14,360
+Voglio il secondo elemento in quella lista, il che significa che voglio andare avanti e prendere l'indice uno in cima a quello.
+
+88
+00:06:14,430 --> 00:06:16,920
+E poi se eseguo questo ottengo la risposta giusta.
+
+89
+00:06:16,950 --> 00:06:20,810
+Quel dominio dot com.
+
+90
+00:06:20,820 --> 00:06:24,640
+Next up vogliamo creare una funzione di base che restituisca true.
+
+91
+00:06:24,740 --> 00:06:27,940
+Questa è la parola cane è contenuta nella stringa di input.
+
+92
+00:06:28,020 --> 00:06:30,910
+E ancora non preoccuparti dei casi limite come la punteggiatura che viene allegata.
+
+93
+00:06:30,920 --> 00:06:37,940
+La parola cane bene dovremmo spiegare la capitalizzazione o andare avanti e fare è creare una funzione.
+
+94
+00:06:37,940 --> 00:06:47,850
+Il quarto cane trova una variabile e va avanti e chiama la variabile S e poi
+
+95
+00:06:47,850 --> 00:06:57,720
+diremo che ritorneremo controlleremo se il cane è in S per tenere conto delle lettere maiuscole.
+
+96
+00:06:57,720 --> 00:07:03,060
+diventi effettivamente una lista di oggetti e poi quando lo eseguirò finirà per essere vero.
+
+97
+00:07:03,060 --> 00:07:08,130
+Andrò avanti e abbasserò tutto in S e poi lo dividerò in modo che
+
+98
+00:07:08,280 --> 00:07:09,500
+C'è un cane lì.
+
+99
+00:07:09,540 --> 00:07:12,910
+Lasciami entrare e mostrarti cosa sta realmente accadendo quando passerò questa stringa.
+
+100
+00:07:12,960 --> 00:07:15,480
+Dirò che s è uguale a
+
+101
+00:07:15,570 --> 00:07:18,030
+C'è un cane qui.
+
+102
+00:07:19,410 --> 00:07:20,210
+Corri il.
+
+103
+00:07:20,310 --> 00:07:27,360
+E poi se chiamo estinto più basso farò meno valere tutto e poi se dico estopped split
+
+104
+00:07:27,360 --> 00:07:34,800
+dopo quello inferiore ottengo questa lista e quindi finalmente sto solo controllando è dog in quella lista.
+
+105
+00:07:34,800 --> 00:07:41,640
+Quindi quelli sono i passi che sto eseguendo in questa istruzione di una riga che voglio creare una funzione che conta il numero
+
+106
+00:07:41,640 --> 00:07:45,000
+di volte che la parola cane si verifica in una stringa.
+
+107
+00:07:45,000 --> 00:07:48,570
+E ancora possiamo ignorare i casi limite.
+
+108
+00:07:49,020 --> 00:07:57,090
+Andremo avanti e diciamo che F crea una funzione chiamata Count dog ticks e una stringa come t imposterà
+
+109
+00:07:57,090 --> 00:08:03,830
+il nostro conteggio iniziale a 0 e diremo per word in e diremo s t.
+
+110
+00:08:03,880 --> 00:08:15,390
+Abbassare la divisione nello stesso modo in cui abbiamo fatto per l'ultima domanda e poi i due punti se quella parola è uguale a cane andremo avanti
+
+111
+00:08:16,560 --> 00:08:18,610
+e aggiungeremo 1 ai conteggi.
+
+112
+00:08:18,720 --> 00:08:22,590
+Quindi, il conteggio equivale al conteggio più 1.
+
+113
+00:08:22,980 --> 00:08:26,070
+Quindi potresti dire che il conteggio è uguale al conteggio più 1 o per la stenografia.
+
+114
+00:08:26,070 --> 00:08:29,690
+Ciò che alcune persone amano fare è semplicemente dire più uguale a 1.
+
+115
+00:08:29,730 --> 00:08:31,880
+E questa è esattamente la stessa cosa.
+
+116
+00:08:31,890 --> 00:08:34,540
+Poi finalmente tornerò alla fine.
+
+117
+00:08:34,740 --> 00:08:37,470
+Il mio conto è il numero di volte in cui ho visto quella parola cane.
+
+118
+00:08:37,470 --> 00:08:42,850
+Ora se andiamo avanti ed eseguiamo questo otteniamo la risposta corretta qui.
+
+119
+00:08:43,020 --> 00:08:47,670
+Successivamente abbiamo voluto utilizzare espressioni lambda nella funzione filtro per filtrare le parole da una lista
+
+120
+00:08:47,670 --> 00:08:49,490
+che non inizia la lettera S.
+
+121
+00:08:49,650 --> 00:08:56,460
+Ad esempio, abbiamo CQ è una lista di parole che dovrebbero essere filtrate fino a zuppa e poi insalata Andiamo
+
+122
+00:08:56,460 --> 00:08:58,650
+a vedere come possiamo fare questo.
+
+123
+00:08:58,650 --> 00:09:06,030
+Dirò il filtro e poi userò l'espressione terrestre.
+
+124
+00:09:06,090 --> 00:09:14,100
+Prenderà in una parola e controllerà se i primi elementi in quella stringa di parole sono
+
+125
+00:09:14,100 --> 00:09:23,060
+uguali a S e quindi non passerà una sequenza e quindi finalmente lancerò il tutto come una lista.
+
+126
+00:09:24,060 --> 00:09:25,170
+E questa è la risposta.
+
+127
+00:09:25,170 --> 00:09:26,480
+Zuppa e poi insalata
+
+128
+00:09:26,550 --> 00:09:32,280
+deve restituire un valore booleano e andiamo avanti e filtrare la sequenza basata su questi valori booleani.
+
+129
+00:09:32,280 --> 00:09:38,020
+Quindi, ancora una volta per philtre questa espressione lambda o la funzione del budino ciò che hai passato
+
+130
+00:09:38,850 --> 00:09:39,150
+Tutto ok.
+
+131
+00:09:39,150 --> 00:09:41,160
+Eccoci al problema finale.
+
+132
+00:09:41,280 --> 00:09:42,650
+La dichiarazione del problema è questa.
+
+133
+00:09:42,670 --> 00:09:46,570
+Stai guidando un po 'troppo velocemente e un ufficiale di polizia ti ferma.
+
+134
+00:09:46,620 --> 00:09:50,310
+Avrai bisogno di scrivere una funzione per restituire uno dei tre possibili risultati.
+
+135
+00:09:50,310 --> 00:09:53,000
+Nessun biglietto piccolo biglietto o biglietto grande.
+
+136
+00:09:53,190 --> 00:09:56,650
+Se la tua velocità è 60 o meno il risultato non è un biglietto.
+
+137
+00:09:56,700 --> 00:10:01,890
+Se la velocità è compresa tra 61 e 80 incluso Il risultato è un piccolo biglietto.
+
+138
+00:10:01,890 --> 00:10:06,870
+Se la velocità è 81 o più il risultato è un biglietto grande e meno è il tuo
+
+139
+00:10:06,870 --> 00:10:12,760
+compleanno che è codificato come valore booleano nei parametri della funzione al tuo compleanno la tua velocità può essere 5 più alta.
+
+140
+00:10:12,780 --> 00:10:14,120
+In tutti i casi.
+
+141
+00:10:14,340 --> 00:10:15,800
+Significato se è il tuo compleanno.
+
+142
+00:10:15,810 --> 00:10:22,830
+Quindi se è sottolineato il compleanno è vero che il limite di velocità è aumentato di cinque miglia o cinque chilometri
+
+143
+00:10:22,830 --> 00:10:23,970
+all'ora per te.
+
+144
+00:10:24,420 --> 00:10:26,290
+OK andiamo avanti e cominciamo.
+
+145
+00:10:26,310 --> 00:10:29,840
+Cancelleremo queste dichiarazioni passate.
+
+146
+00:10:29,910 --> 00:10:34,070
+La prima cosa che voglio fare è controllare se è il compleanno di qualcuno e regolare di conseguenza la velocità.
+
+147
+00:10:34,080 --> 00:10:37,080
+Dirà se è nato dirà
+
+148
+00:10:40,650 --> 00:10:48,500
+che l'eccesso di velocità è uguale alla velocità meno cinque e poi altro.
+
+149
+00:10:49,050 --> 00:10:57,420
+L'eccesso di velocità equivale alla velocità, quindi andremo avanti e controlleremo ora di accelerare le
+
+150
+00:10:57,450 --> 00:10:59,590
+condizioni per i biglietti.
+
+151
+00:10:59,640 --> 00:11:06,450
+Quindi, se l'eccesso di velocità è maggiore di 80, allora è un grosso biglietto.
+
+152
+00:11:06,510 --> 00:11:11,160
+Quindi andrò avanti e restituirò il big ticket della stringa.
+
+153
+00:11:12,680 --> 00:11:23,820
+Quindi diremo se l'eccesso di velocità è maggiore di 60. Bene, questo restituirà un piccolo biglietto e altrimenti
+
+154
+00:11:26,040 --> 00:11:27,540
+lo faremo.
+
+155
+00:11:27,570 --> 00:11:32,870
+Altro che sarebbe solo un biglietto di ritorno.
+
+156
+00:11:33,120 --> 00:11:34,410
+E poi possiamo andare avanti e gestirlo.
+
+157
+00:11:34,410 --> 00:11:40,040
+Quindi 81 sarebbe di solito un grande biglietto, ma dal momento che è il tuo compleanno, diremo che è vero.
+
+158
+00:11:40,080 --> 00:11:41,700
+Quello dovrebbe essere un piccolo biglietto.
+
+159
+00:11:41,940 --> 00:11:46,910
+E lì ce l'abbiamo e 81 false Bene, questo è sicuramente un grosso biglietto.
+
+160
+00:11:46,980 --> 00:11:47,840
+Tutto ok.
+
+161
+00:11:47,880 --> 00:11:49,620
+Spero tu abbia apprezzato le soluzioni.
+
+162
+00:11:49,620 --> 00:11:54,390
+Sentiti libero di postare qualsiasi domanda che hai sui forum di domande e risposte e sarò felice di aiutarti.
+
+163
+00:11:54,390 --> 00:11:56,220
+Grazie a tutti e ci vediamo alla prossima lezione

@@ -1,0 +1,855 @@
+1
+00:00:06,180 --> 00:00:11,970
+Hola a todos y bienvenidos a la conferencia de arreglos de PI y esta conferencia aprenderá las diversas formas
+
+2
+00:00:11,970 --> 00:00:16,690
+en que puede crear una tasa más alta usando Python y luego alguna biblioteca PI.
+
+3
+00:00:16,920 --> 00:00:20,460
+Avancemos y saltemos a la nota de Júpiter para comenzar.
+
+4
+00:00:20,490 --> 00:00:20,760
+Todo bien.
+
+5
+00:00:20,760 --> 00:00:27,000
+Aquí estamos en las matrices de Jupiter. La principal forma en que usaremos el nombre de biblioteca PI durante
+
+6
+00:00:27,030 --> 00:00:32,910
+todo el curso es que, en esencia, las altas res provienen de dos tipos de vectores que vienen
+
+7
+00:00:32,910 --> 00:00:37,450
+en forma de vectores unidimensionales o matrices bidimensionales, pero pueden ambos se llaman matrices.
+
+8
+00:00:37,450 --> 00:00:44,020
+arbitraje de objetos de Python, como una lista que voy a ir y crear un objeto para mi lista.
+
+9
+00:00:44,020 --> 00:00:48,730
+Si hay uno o dos, salgamos y mostremos cómo podemos crear un nuevo
+
+10
+00:00:48,980 --> 00:00:50,840
+Uno dos tres.
+
+11
+00:00:51,210 --> 00:00:54,180
+Y si continúo y solo muestro esa lista.
+
+12
+00:00:54,350 --> 00:00:58,450
+Note que salgo uno dos tres y es solo una lista de Python.
+
+13
+00:00:58,650 --> 00:01:06,020
+Voy a seguir adelante y digo importar pi como P y luego puedo llamar y pedalear.
+
+14
+00:01:06,290 --> 00:01:10,920
+Y ahora puedo lanzar esa lista como una matriz.
+
+15
+00:01:11,290 --> 00:01:15,900
+Y note que obtengo una matriz como el contenedor para ese objeto de lista.
+
+16
+00:01:15,930 --> 00:01:20,670
+Y luego puedo asignar esto y luego llamar a una matriz fuera de eso.
+
+17
+00:01:20,790 --> 00:01:24,930
+Entonces puedo convertir una lista normal de Python en una matriz.
+
+18
+00:01:24,990 --> 00:01:31,110
+Ahora devolveré una matriz unidimensional si quiero obtener una matriz bidimensional o una matriz.
+
+19
+00:01:31,170 --> 00:01:33,390
+Puedo lanzar una lista de listas.
+
+20
+00:01:33,420 --> 00:01:45,180
+Entonces, por ejemplo, puedo decir que mi guión bajo es igual a una lista de tres listas, así que uno dos tres
+
+21
+00:01:45,180 --> 00:01:52,450
+cuatro cinco seis se deshace de esa coma extra y luego 7 8 9.
+
+22
+00:01:53,220 --> 00:02:03,570
+Así que observe que obtengo una lista de listas y luego, si la transfiero a una matriz, obtendré una matriz bidimensional que se destaca tanto
+
+23
+00:02:03,570 --> 00:02:09,930
+por la forma en que se presenta como salida, como por la cantidad de corchetes
+
+24
+00:02:09,930 --> 00:02:14,340
+mostrados en el cierre y abrir los extremos de esta matriz.
+
+25
+00:02:14,580 --> 00:02:20,640
+Tengo dos conjuntos de corchetes que indicarán que Z a esa matriz que se puede mencionar tiene tres filas y tres
+
+26
+00:02:20,640 --> 00:02:27,260
+columnas, y así es como puedes convertir las listas normales de Python o la lista de listas al rango de los árbitros.
+
+27
+00:02:27,600 --> 00:02:33,030
+Por lo general, sin embargo, probablemente usará los propios métodos de generación de gráficos propios para
+
+28
+00:02:33,060 --> 00:02:36,090
+crear arreglos mucho más rápido y mucho más simple.
+
+29
+00:02:36,090 --> 00:02:40,520
+Avancemos y analicemos algunas de las formas más comunes de hacerlo.
+
+30
+00:02:40,560 --> 00:02:46,740
+La forma más común probablemente será crear una tasa más alta usando arr. y esto es realmente similar a
+
+31
+00:02:46,740 --> 00:02:49,930
+la función de rango incorporado de Python.
+
+32
+00:02:49,950 --> 00:02:56,370
+Continuarás y dirás N. PAG. organizar y luego pasar un inicio y detenerse.
+
+33
+00:02:56,460 --> 00:03:02,490
+Así que observe que tiene un inicio de parada y luego un tamaño de paso es un tercer argumento y el retorno
+
+34
+00:03:02,490 --> 00:03:04,860
+de valores espaciados uniformemente dentro de este intervalo dado.
+
+35
+00:03:04,860 --> 00:03:14,040
+Entonces, si solo dijera de 0 a 10, recuerde que en el rango de Python la indexación comienza en cero.
+
+36
+00:03:14,070 --> 00:03:16,990
+Subirá pero no incluirá hasta 10.
+
+37
+00:03:17,430 --> 00:03:20,660
+Conseguiré una matriz desde 0 hasta 9.
+
+38
+00:03:20,760 --> 00:03:24,840
+Así que empiezo en 0 y sigo hasta 10 pero sin incluir.
+
+39
+00:03:25,020 --> 00:03:29,480
+Así que recupero 10 dígitos 0 1 2 3 4 5 6.
+
+40
+00:03:29,890 --> 00:03:33,900
+Básicamente funciona igual que la función de rango de Python.
+
+41
+00:03:33,960 --> 00:03:37,990
+Así que quiero ir de cero hasta 10 después de Z.
+
+42
+00:03:38,190 --> 00:03:43,010
+Tengo que decir cero coma 11 y eso es lo que obtengo de vuelta.
+
+43
+00:03:43,380 --> 00:03:46,930
+Y finalmente, puedo agregar un tercer argumento, un tamaño de paso.
+
+44
+00:03:46,980 --> 00:03:51,820
+Entonces, si tuviera todos los números pares de 0 a 10, podría decir que cero es 11.
+
+45
+00:03:51,960 --> 00:03:58,930
+Y luego con un paso de dos para saltar en pasos de 2 0 2 4 6 8 10.
+
+46
+00:03:59,070 --> 00:04:05,580
+Eso significa que un rango va a ser una de las funciones más útiles para generar rápidamente una
+
+47
+00:04:05,580 --> 00:04:06,590
+matriz usando pi.
+
+48
+00:04:06,960 --> 00:04:12,330
+Si desea tipos específicos de matrices, existen otras funciones en programas no piloto que pueden ayudarnos a hacerlo.
+
+49
+00:04:12,330 --> 00:04:19,970
+Por ejemplo, si quiere generar matrices de todos los ceros, podemos decir P-doc ceros y puede
+
+50
+00:04:19,970 --> 00:04:22,050
+pasar un solo dígito.
+
+51
+00:04:22,050 --> 00:04:30,780
+Así que obtienes un vector unidimensional o puedes decir N. PAG. que cerra y pasa una tupla de las dimensiones
+
+52
+00:04:30,780 --> 00:04:36,840
+que desea que el primer número represente el número de filas y el segundo número en esa tupla
+
+53
+00:04:36,840 --> 00:04:39,220
+va a representar el número de columnas.
+
+54
+00:04:39,240 --> 00:04:48,770
+Así que, por ejemplo, quiero filas por tres columnas. Paso en la tupla para obtener un tres y vuelvo a Rose
+
+55
+00:04:48,770 --> 00:04:53,330
+por tres columnas, y esto se nota con los corchetes.
+
+56
+00:04:53,360 --> 00:04:59,620
+Está bien si quiero un aumento de los puros, puedo decir eso.
+
+57
+00:04:59,690 --> 00:05:07,580
+Y de manera similar puedo pasar un solo número o una matriz unidimensional o una tupla de ellos
+
+58
+00:05:08,180 --> 00:05:16,370
+menciona una matriz bidimensional que son unos y ceros en otra función incorporada realmente útil es el espacio de
+
+59
+00:05:16,370 --> 00:05:21,500
+lente y el espacio devuelve números espaciados uniformemente en un intervalo especificado.
+
+60
+00:05:21,750 --> 00:05:23,960
+Es importante no confundir a Lewan.
+
+61
+00:05:23,990 --> 00:05:31,490
+Arregle su puede ver que un rango básicamente devuelve enteros desde un inicio y una parada y un tamaño
+
+62
+00:05:31,490 --> 00:05:32,600
+de paso dado.
+
+63
+00:05:32,720 --> 00:05:37,580
+de puntos que quiere que le muestre lo que quiero decir con eso puedo decir
+
+64
+00:05:37,580 --> 00:05:45,140
+P Espacio de Gotland y obtengo un pase y comienzo una parada y hay un tercer argumento que voy a pasar en un número.
+
+65
+00:05:45,140 --> 00:05:50,300
+Lo que el espacio Lin va a hacer es tomar un tercer argumento de la cantidad
+
+66
+00:05:50,300 --> 00:06:00,590
+Así que digamos que tengo un inicio de cero y un stop de cinco y quiero obtener 10 puntos espaciados uniformemente
+
+67
+00:06:00,590 --> 00:06:02,510
+entre cero y cinco.
+
+68
+00:06:02,510 --> 00:06:09,650
+Puedo pasar un tercer argumento 10 y esto devuelve un vector unidimensional anotado aquí por
+
+69
+00:06:09,650 --> 00:06:15,490
+el conjunto de corchetes de diez puntos espaciados de cero a cinco.
+
+70
+00:06:15,490 --> 00:06:18,140
+Y puedo cambiar este tercer argumento al número que quiera.
+
+71
+00:06:18,140 --> 00:06:24,140
+Entonces, si quiero 100 puntos espaciados uniformemente de cero a cinco, puedo pasar eso y eso devuelve
+
+72
+00:06:24,140 --> 00:06:26,470
+una matriz unidimensional mucho más grande.
+
+73
+00:06:26,540 --> 00:06:30,800
+Y tenga en cuenta que, aunque parezca que esto es para ellos en cuanto a la forma en
+
+74
+00:06:31,040 --> 00:06:35,870
+que se está imprimiendo, puede decirse que es unidimensional por el hecho de que solo hay un paréntesis aquí frente
+
+75
+00:06:36,460 --> 00:06:40,220
+a la matriz cuando se trata de dos dimensiones verás que tienes dos conjuntos de corchetes.
+
+76
+00:06:40,220 --> 00:06:42,910
+Al abrir o cerrar en los extremos.
+
+77
+00:06:42,980 --> 00:06:46,140
+Tres de los que mencioné tendrán tres corchetes, etc. Todo bien.
+
+78
+00:06:46,310 --> 00:06:47,120
+Entonces eso es cuando el espacio.
+
+79
+00:06:47,120 --> 00:06:48,320
+cantidad de puntos que
+
+80
+00:06:48,320 --> 00:06:54,980
+desee organizar tomará ese argumento como el tamaño de paso que desee, avance y muestre cómo puede crear una matriz de identidad usando pi.
+
+81
+00:06:54,980 --> 00:07:01,430
+Una vez más, no confunda el espacio con el espacio de arreglos de pelusa que tomará en el tercer argumento, ya que la
+
+82
+00:07:01,430 --> 00:07:04,960
+Podemos decir n p e y e.
+
+83
+00:07:05,360 --> 00:07:08,680
+Y luego pasas un solo dígito en la matriz de identidad.
+
+84
+00:07:09,350 --> 00:07:13,570
+Si no está familiarizado, es una matriz útil cuando se trata de problemas de álgebra lineal.
+
+85
+00:07:13,580 --> 00:07:17,750
+Y básicamente es solo una matriz cuadrada bidimensional, lo que significa que
+
+86
+00:07:17,900 --> 00:07:23,040
+el número de filas es el mismo que un número de columnas y tienes una
+
+87
+00:07:23,040 --> 00:07:30,320
+diagonal de unas que todo lo demás es ceros y esa es la razón por la que solo toma un dígito
+
+88
+00:07:30,320 --> 00:07:36,440
+como argumento porque dice que la matriz debe ser cuadrada como la salida y el P i.
+
+89
+00:07:36,650 --> 00:07:38,340
+Todo bien moviéndose ahora pi también tiene muchas formas de crear matrices de números aleatorios.
+
+90
+00:07:39,170 --> 00:07:45,320
+Y lo usaremos a menudo durante todo el curso, así que
+
+91
+00:07:45,380 --> 00:07:49,100
+avancemos y cubramos algunas maneras de hacerlo.
+
+92
+00:07:49,100 --> 00:07:49,690
+Lo que vas a hacer y hacer es llamar a N. PAG. puntos aleatorios y luego ejecutó el método.
+
+93
+00:07:50,090 --> 00:07:58,040
+Podrías tabular, verás que en realidad hay bastantes métodos.
+
+94
+00:07:58,100 --> 00:08:01,520
+Entonces vamos a entrar y mostraremos los más comunes.
+
+95
+00:08:01,580 --> 00:08:05,130
+El primero es Ran's son a y b.
+
+96
+00:08:05,660 --> 00:08:09,080
+muestras aleatorias de una distribución uniforme de 0 a 1.
+
+97
+00:08:09,590 --> 00:08:14,570
+Y esto creará una matriz de la forma dada que ingrese y la poblará con
+
+98
+00:08:14,630 --> 00:08:19,620
+Y eso significa que si quiero solo ocho matrices unidimensionales de números aleatorios distribuidos
+
+99
+00:08:19,620 --> 00:08:24,950
+uniformemente de 0 a 1, puedo pasar un solo dígito y recuperaré esa matriz unidimensional.
+
+100
+00:08:24,950 --> 00:08:30,840
+Quiero que esto sea para mencionarlo.
+
+101
+00:08:31,160 --> 00:08:34,760
+A diferencia de las funciones previas con las que trabajó, en lugar de pasar una tupla.
+
+102
+00:08:35,030 --> 00:08:38,930
+De hecho, solo voy a pasar las dimensiones como argumentos separados.
+
+103
+00:08:38,950 --> 00:08:42,820
+Entonces eso significa que si quiero una matriz de números aleatorios de cinco
+
+104
+00:08:42,860 --> 00:08:49,130
+por cinco, acabo de pasar y 5 es un 5 en lugar de la tupla y trabajo con estas bibliotecas aleatorias.
+
+105
+00:08:49,130 --> 00:08:52,040
+Está bien si queremos devolver una muestra o muchas
+
+106
+00:08:52,400 --> 00:08:58,490
+muestras de la distribución normal estándar o una distribución gaussiana en lugar de usar Ranz, podemos usar rand n.
+
+107
+00:08:58,490 --> 00:09:02,580
+Y eso significa que puedo decir que P pensó aleatoriamente en n de
+
+108
+00:09:03,030 --> 00:09:10,790
+Ran y esto devolverá números no de una distribución uniforme de 0 a 1 sino de un centro de distribución normal estándar alrededor de cero.
+
+109
+00:09:10,790 --> 00:09:16,750
+Y eso significa que puedo seguir adelante y pasar en dos y obtener dos números aleatorios de una distribución normal estándar.
+
+110
+00:09:17,060 --> 00:09:25,130
+Y más adelante veremos que trazar estos no en esta conferencia, sino que también obtiene la visualización de datos.
+
+111
+00:09:25,670 --> 00:09:30,140
+Seguiremos adelante y le mostraremos una curva de distribución normal agradable o una curva de distribución gaussiana.
+
+112
+00:09:30,560 --> 00:09:35,200
+Y nuevamente, si quiero que sea bidimensional, puedo pasar en dos dimensiones.
+
+113
+00:09:35,950 --> 00:09:40,580
+Entonces, para un cuatro por cuatro, digo que cuatro vienen cuatro.
+
+114
+00:09:40,670 --> 00:09:43,540
+Y no, no paso una tupla aquí, simplemente paso cada
+
+115
+00:09:43,970 --> 00:09:49,070
+vez que lo menciono como un argumento separado y puedo ver por el conjunto de dos corchetes
+
+116
+00:09:49,070 --> 00:09:57,020
+que hay una matriz bidimensional como salida y el método aleatorio final para crear una matriz que nosotros ' Aprenderá acerca de Rand int y devolverá enteros
+
+117
+00:09:57,200 --> 00:10:02,990
+aleatorios de un número bajo a uno alto o continuará y le mostrará lo que podemos hacer para eso.
+
+118
+00:10:03,000 --> 00:10:06,140
+Continuarás y dirás eso al azar Rand I. A. pasarás
+
+119
+00:10:06,140 --> 00:10:12,310
+Voy a esa pestaña de cambio aquí de bajo a alto y luego al tamaño real que desea.
+
+120
+00:10:12,360 --> 00:10:17,810
+1 y 100 y el mínimo es inclusivo.
+
+121
+00:10:17,810 --> 00:10:26,870
+Entonces, por ejemplo, si dices de 1 a 100 obtendrás un entero aleatorio entre
+
+122
+00:10:26,930 --> 00:10:27,700
+Y el alto significado exclusivo x tiene la posibilidad de ser seleccionado, pero 100 no lo es.
+
+123
+00:10:27,750 --> 00:10:34,570
+Y si quieres un número particular de enteros aleatorios, puedes pasarlos como un tercer argumento.
+
+124
+00:10:35,540 --> 00:10:40,410
+Entonces, de enteros aleatorios de 1 a 100.
+
+125
+00:10:40,400 --> 00:10:43,770
+Pero no incluye 100.
+
+126
+00:10:43,790 --> 00:10:45,160
+Puedo pasar y 10
+
+127
+00:10:45,440 --> 00:10:50,930
+allí y hay 10 enteros aleatorios, inclusive en el mínimo en una exclusiva en el extremo superior.
+
+128
+00:10:50,930 --> 00:10:51,920
+DE ACUERDO.
+
+129
+00:10:52,200 --> 00:10:52,820
+Vamos a discutir algunos atributos y métodos útiles de una matriz para poder hacer esto.
+
+130
+00:10:53,100 --> 00:10:59,350
+Voy a seguir adelante y crear dos nuevos objetos de matriz en los que entraremos, borrar esto y borrar estas celdas.
+
+131
+00:10:59,370 --> 00:11:05,450
+Todo bien.
+
+132
+00:11:07,830 --> 00:11:08,630
+Voy a decir una r r variable y diré que esto es igual al rango puro 25.
+
+133
+00:11:08,630 --> 00:11:16,330
+Entonces, si reviso cómo se ve A-R, aquí hay una matriz unidimensional de cero hasta 24.
+
+134
+00:11:16,380 --> 00:11:22,220
+Y luego voy a decir que Rand es de hecho aleatorio y va a ser Rand.
+
+135
+00:11:22,500 --> 00:11:30,660
+Tengo que poner una D allí.
+
+136
+00:11:31,000 --> 00:11:32,790
+Números aleatorios de 0 a 50.
+
+137
+00:11:32,960 --> 00:11:35,980
+Entonces no obtuve 10 de esos.
+
+138
+00:11:36,390 --> 00:11:37,930
+Entonces, si yo Cheka
+
+139
+00:11:38,210 --> 00:11:44,040
+o funcioné, parece que se ve así, puede obtener diferentes valores porque se selecciona al azar.
+
+140
+00:11:44,030 --> 00:11:44,690
+Estos deberían tener solo 10 enteros allí.
+
+141
+00:11:44,690 --> 00:11:47,890
+Todo bien.
+
+142
+00:11:48,020 --> 00:11:48,780
+Uno de los métodos más útiles que puede usar en una matriz es el método de remodelación.
+
+143
+00:11:48,840 --> 00:11:53,130
+Y eso va a devolver una matriz que contiene los mismos datos si está en una nueva forma.
+
+144
+00:11:53,300 --> 00:11:57,770
+forma y paso las nuevas dimensiones que quiero.
+
+145
+00:11:57,770 --> 00:12:07,930
+Eso significa que puedo llamar puntos de Mirei y luego el método de remodelación en la nueva
+
+146
+00:12:07,940 --> 00:12:08,940
+Entonces, por ejemplo, si quiero remodelar ese miembro de la matriz, A R R tiene veinticinco dígitos de cero a 24.
+
+147
+00:12:08,930 --> 00:12:16,940
+Puedo remodelarlo como un arreglo de 5 por 5 usando la forma y
+
+148
+00:12:16,940 --> 00:12:24,350
+paso el número de filas que desea y el número de columnas.
+
+149
+00:12:24,360 --> 00:12:25,780
+Tenga en cuenta que obtendrá un error si no puede completar esa matriz por completo.
+
+150
+00:12:25,790 --> 00:12:30,630
+Entonces, por ejemplo, si quisiera 5 por 10, necesitaría 50 elementos para hacer eso.
+
+151
+00:12:30,620 --> 00:12:35,940
+Y voy a obtener un error aquí porque el tamaño total de la nueva matriz no debe cambiarse.
+
+152
+00:12:36,200 --> 00:12:40,820
+de elementos, por lo que cinco veces cinco es igual a 25.
+
+153
+00:12:40,940 --> 00:12:48,990
+Lo que significa que debe llenar usando solamente los dígitos que tiene o los elementos que tiene una manera simple y
+
+154
+00:12:48,990 --> 00:12:56,310
+bonita de comprobar que el número de filas multiplicado por el número de columnas es igual al número real
+
+155
+00:12:56,370 --> 00:12:59,330
+Y sé que tengo 25 elementos en este conjunto.
+
+156
+00:12:59,450 --> 00:13:02,860
+OK, entremos y mostremos un par de métodos más útiles para
+
+157
+00:13:02,900 --> 00:13:08,780
+encontrar valores máximos o mínimos o para encontrar su ubicación, y luego repasaremos muchas más operaciones en futuras conferencias.
+
+158
+00:13:09,200 --> 00:13:13,670
+Aquí hay algunos útiles para que usted sepa.
+
+159
+00:13:13,830 --> 00:13:15,880
+Así que adelante y mira nuestra matriz aleatoria.
+
+160
+00:13:15,960 --> 00:13:17,880
+Una vez más.
+
+161
+00:13:17,880 --> 00:13:18,980
+Una vez más, sus números pueden ser diferentes, pero por el bien de este ejercicio que realmente no importa.
+
+162
+00:13:18,990 --> 00:13:24,030
+Si quieres encontrar el valor máximo en tu matriz.
+
+163
+00:13:24,120 --> 00:13:27,400
+Puede llamar al método máximo fuera de este y esto devolverá el valor máximo de esa matriz.
+
+164
+00:13:27,440 --> 00:13:33,170
+Del mismo modo, si desea obtener el valor mínimo de su matriz.
+
+165
+00:13:33,870 --> 00:13:37,340
+Puedes llamar al método min fuera de él.
+
+166
+00:13:37,350 --> 00:13:40,240
+Echemos un vistazo a la matriz.
+
+167
+00:13:40,280 --> 00:13:41,710
+Una vez más,
+
+168
+00:13:41,730 --> 00:13:48,980
+podemos averiguar la ubicación de los valores máximo o mínimo al especificar nuestro máximo o mínimo.
+
+169
+00:13:49,080 --> 00:13:50,490
+Es decir, si quiero
+
+170
+00:13:50,580 --> 00:13:59,660
+saber realmente qué valor de índice es este Max ubicado en 49, puedo decir que Ranh es Argive Max y que devolverá la ubicación del índice del valor máximo.
+
+171
+00:13:59,680 --> 00:14:04,750
+Entonces noto que 49 está ubicado en el índice 3.
+
+172
+00:14:04,980 --> 00:14:08,270
+Entonces 0 1 2 3.
+
+173
+00:14:08,450 --> 00:14:11,310
+Tengo cuarenta y nueve allí.
+
+174
+00:14:11,420 --> 00:14:12,930
+Y nuevamente puede hacer lo mismo
+
+175
+00:14:13,100 --> 00:14:18,470
+con el valor de minutos que puede decir que son hombres y devolverá la ubicación del índice del valor mínimo.
+
+176
+00:14:18,470 --> 00:14:20,990
+Entonces 6 es la ubicación del índice el valor mínimo y el valor mínimo fue tres.
+
+177
+00:14:21,000 --> 00:14:25,760
+En este caso.
+
+178
+00:14:25,760 --> 00:14:26,940
+DE ACUERDO.
+
+179
+00:14:27,500 --> 00:14:28,130
+Y rápidamente algunos otros métodos y atributos útiles.
+
+180
+00:14:28,400 --> 00:14:31,820
+Si alguna vez quieres descubrir la forma
+
+181
+00:14:31,970 --> 00:14:39,050
+del vector, puedes decir que tienen forma de baja recuperación en la forma.
+
+182
+00:14:39,060 --> 00:14:39,980
+Fíjate que aquí tengo 25 Khama y eso indica que ese conjunto era solo un vector unidimensional.
+
+183
+00:14:39,980 --> 00:14:47,910
+Si continúo y lo vuelvo a formar.
+
+184
+00:14:49,080 --> 00:14:50,960
+Así que voy a decir remodelado a un cinco por cinco y voy a establecer eso igual a R. O a r r.
+
+185
+00:14:51,140 --> 00:15:01,060
+Fíjate que ahora tengo una matriz bidimensional llamada forma de puntos.
+
+186
+00:15:01,160 --> 00:15:02,190
+Note que no estoy poniendo paréntesis.
+
+187
+00:15:02,180 --> 00:15:07,340
+Solo llamo al atributo fuera de esto.
+
+188
+00:15:07,350 --> 00:15:08,970
+Ahora informa que es un cinco por cinco.
+
+189
+00:15:09,000 --> 00:15:11,350
+Así que ahora es Mitchell y el último atributo
+
+190
+00:15:11,390 --> 00:15:14,360
+útil que quiero mostrar es el tipo de datos en este conjunto.
+
+191
+00:15:14,450 --> 00:15:20,810
+Si alguna vez tiene curiosidad acerca de qué tipo de datos tiene una matriz, puede simplemente decir una r y escribir como un atributo de tipo D en la que devolverá el tipo de datos real
+
+192
+00:15:20,820 --> 00:15:21,690
+que está en su camino.
+
+193
+00:15:21,750 --> 00:15:28,410
+En este caso, enteros de 32 bits.
+
+194
+00:15:28,500 --> 00:15:32,700
+DE ACUERDO.
+
+195
+00:15:32,720 --> 00:15:35,470
+Solo una revisión rápida de todo lo que hemos revisado.
+
+196
+00:15:35,510 --> 00:15:36,000
+Le mostramos cómo crear un
+
+197
+00:15:36,200 --> 00:15:38,660
+aumento de imperio, ya sea lanzando una lista a una matriz superior o usando una de las funciones integradas para una matriz de árbitros, como arr. ceros y unos espacio de
+
+198
+00:15:38,720 --> 00:15:45,390
+Lyn y yo y también los métodos de generación aleatoria que llama N. PAG. que los ejecutó y luego Rand ejecutó y ejecutó algunos
+
+199
+00:15:45,380 --> 00:15:52,680
+de los otros métodos aleatorios.
+
+200
+00:15:52,670 --> 00:15:59,840
+azar y luego cualquier método o función que quieras importar .
+
+201
+00:15:59,850 --> 00:16:01,690
+Muy bien y una última sugerencia que quiero
+
+202
+00:16:01,730 --> 00:16:06,920
+mostrarte si no quieres tener que escribir NPE al azar que Rand es lo que puedes hacer es decir desde PI que importa al
+
+203
+00:16:06,940 --> 00:16:16,200
+Entonces, si quiere importar Rand I N C, puede continuar y hacer eso.
+
+204
+00:16:16,190 --> 00:16:17,440
+Y luego, en lugar de decir que ese pensamiento aleatorio funcionó I inti, puedes simplemente decir Rand's I I. A. y tengo
+
+205
+00:16:17,450 --> 00:16:20,900
+una referencia para ti.
+
+206
+00:16:20,900 --> 00:16:27,480
+Ahí tienes.
+
+207
+00:16:27,470 --> 00:16:30,020
+DE ACUERDO.
+
+208
+00:16:30,020 --> 00:16:31,110
+referencia a cualquiera de este código o a cualquiera de las notas que realmente se mencionaron durante esta conferencia.
+
+209
+00:16:31,190 --> 00:16:32,130
+Nuevamente recuerde que tiene el cuaderno con todas las notas en caso de que desee hacer
+
+210
+00:16:32,250 --> 00:16:36,650
+Próximamente vamos a aprender sobre la indexación y la selección para
+
+211
+00:16:36,680 --> 00:16:40,760
+una carrera de árbitros, así como las operaciones de los árbitros.
+
+212
+00:16:40,760 --> 00:16:45,860
+Gracias a todos y nos vemos en la próxima conferencia
+
+213
+00:16:45,870 --> 00:16:47,270
+&nbsp;
+
+214
+00:16:47,270 --> 00:16:49,310
+&nbsp;

@@ -1,0 +1,195 @@
+1
+00:00:05,190 --> 00:00:09,870
+Bună ziua tuturor și bun venit la prelegeri cu ploturi și cufflinks și
+
+2
+00:00:09,870 --> 00:00:15,890
+această prelegere vom învăța un pic din fundal în spatele butonierelor care ne permit să creăm vizualizări
+
+3
+00:00:17,260 --> 00:00:23,730
+interactive în liniște este o bibliotecă de vizualizare interactivă care este open source și cufflinks conectează această bibliotecă cu
+
+4
+00:00:23,730 --> 00:00:24,750
+panda .
+
+5
+00:00:24,870 --> 00:00:29,490
+În acest fel, vom putea crea vizualizări interactive direct din cadrul nostru de date.
+
+6
+00:00:30,180 --> 00:00:35,480
+Cu toate acestea, înainte de a explora aceste biblioteci, va trebui să le instalăm.
+
+7
+00:00:35,880 --> 00:00:41,100
+Va trebui să utilizați Pipp pentru a instala aceste biblioteci fie la linia de comandă, fie la terminalul dvs.
+
+8
+00:00:41,100 --> 00:00:44,720
+și puteți scrie scenariul stilului lui Pitman Lee și Pipp instalați manșoane.
+
+9
+00:00:44,730 --> 00:00:47,750
+Aceasta ar trebui să funcționeze chiar dacă utilizați distribuția Anaconda.
+
+10
+00:00:47,790 --> 00:00:53,700
+Aceste două biblioteci nu sunt disponibile la instalarea Konda în acest moment, deci mergeți mai departe și utilizați pipin stil
+
+11
+00:00:53,710 --> 00:00:58,650
+fără ploturi și manșoane Pippin la terminalul de linie de comandă pentru a obține aceste biblioteci.
+
+12
+00:01:00,300 --> 00:01:04,170
+Acum, să mergem înainte și să facem un tur rapid al site-ului Web oficial înainte de următoarea lectură, de fapt,
+
+13
+00:01:04,170 --> 00:01:05,990
+vă vom arăta cum să folosiți aceste biblioteci.
+
+14
+00:01:06,000 --> 00:01:09,110
+Mă duc să merg și să sară pe site-ul oficial al playlistului acum.
+
+15
+00:01:09,630 --> 00:01:09,920
+In regula.
+
+16
+00:01:09,930 --> 00:01:11,750
+Iată-mă pe site-ul Web.
+
+17
+00:01:11,820 --> 00:01:16,380
+Setează P L O T L Y și poți verifica site-ul web.
+
+18
+00:01:16,390 --> 00:01:22,320
+Există o mulțime de informații pe aceasta într-o notă rapidă plotless este, de asemenea, o companie, dar ei
+
+19
+00:01:22,320 --> 00:01:25,590
+fac bani prin găzduirea vizualizări și găzduirea dvs. dashboards.
+
+20
+00:01:25,620 --> 00:01:30,900
+Dacă doriți să păstrați totul local sau să îl găzduiți singur, biblioteca care operează pe toate aceste caracteristici
+
+21
+00:01:30,990 --> 00:01:32,690
+este open source și gratuită.
+
+22
+00:01:32,910 --> 00:01:37,480
+Deci, nu vă faceți griji că nu veți fi nevoiți să plătiți ceva politicos și politicos.
+
+23
+00:01:37,560 --> 00:01:42,120
+Este compatibil cu o varietate de instrumente, cum ar fi Matlab excel și Javascript.
+
+24
+00:01:42,270 --> 00:01:44,830
+Dar ne vom concentra pe utilizarea lui cu Python.
+
+25
+00:01:44,830 --> 00:01:49,440
+Dacă mergeți mai departe și faceți clic pe acest link python, veți primi un link către o pagină de început cu Python.
+
+26
+00:01:49,890 --> 00:01:52,080
+Vă va arăta cum să începeți.
+
+27
+00:01:52,110 --> 00:01:56,500
+Interesant este că vor avea legături cu Pandas și asta ne vom concentra pe utilizarea
+
+28
+00:01:56,500 --> 00:02:00,520
+fără pătrundere cu panda și pentru a vă folosi fără pătrundere panda.
+
+29
+00:02:00,600 --> 00:02:05,940
+Trebuie să instalați plotline așa cum este spus aici, în instrucțiunile de mai
+
+30
+00:02:05,940 --> 00:02:08,130
+târziu trebuie să instalați butoni.
+
+31
+00:02:08,130 --> 00:02:08,820
+Butoni.
+
+32
+00:02:08,820 --> 00:02:13,390
+Este biblioteca care leagă parcela Lee cu pandele.
+
+33
+00:02:13,510 --> 00:02:19,010
+Și voi merge mai departe și du-te la pagina de web pentru butoni.
+
+34
+00:02:19,050 --> 00:02:22,230
+Și aceasta este pagina ei pentru butoni și butoni de mâneci, practic.
+
+35
+00:02:22,410 --> 00:02:28,170
+Este un instrument de productivitate care vă permite să apelați repede complotul așa cum ați proceda cu panda,
+
+36
+00:02:28,170 --> 00:02:34,120
+de exemplu, o metodă de plotare a cadrelor de date care este setată și veți crea o vizualizare interactivă
+
+37
+00:02:34,120 --> 00:02:36,740
+utilizând plotul Lee într-o declarație de renunțare rapidă.
+
+38
+00:02:36,750 --> 00:02:41,910
+De fapt, sunt o contribuție la această bibliotecă și puteți să vă vedeți de fapt filiala mea care a fuzionat chiar aici,
+
+39
+00:02:41,910 --> 00:02:43,320
+la importurile lui Jey aici.
+
+40
+00:02:43,740 --> 00:02:48,750
+Dar oricum există tutoriale destul de frumos aici sub manșetă și vom trece prin unele dintre aceste
+
+41
+00:02:48,750 --> 00:02:54,030
+subiecte și vă vom arăta cum să utilizați de fapt manșeta în mod eficient pentru a crea cu adevărat
+
+42
+00:02:54,060 --> 00:02:55,980
+frumos caută interactiv acțiunile sale leneș.
+
+43
+00:02:56,270 --> 00:03:02,190
+Iată doar un exemplu de U. K. swap rate și puteți vedea că aceasta este o suprafață 3D
+
+44
+00:03:02,190 --> 00:03:04,300
+și acest lucru se face direct în afara unui cadru de date.
+
+45
+00:03:04,320 --> 00:03:11,120
+Sunt niște note de lansare aici și apoi sunt niște linkuri care susțin documentația de sus aici.
+
+46
+00:03:11,130 --> 00:03:11,760
+In regula.
+
+47
+00:03:11,910 --> 00:03:16,740
+Să mergem mai departe și să începem în următoarea lectură, de fapt, vă vom
+
+48
+00:03:17,010 --> 00:03:20,220
+arăta cum să codificați vizualizările interactive folosind aceste biblioteci.
+
+49
+00:03:20,220 --> 00:03:22,080
+Multumesc tuturor si te voi vedea la urmatoarea conferinta

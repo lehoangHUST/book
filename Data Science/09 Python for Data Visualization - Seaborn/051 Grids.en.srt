@@ -1,0 +1,491 @@
+1
+00:00:05,280 --> 00:00:10,170
+Hello everyone and welcome the grid's lecture the seaboard section of the course in this lecture.
+
+2
+00:00:10,170 --> 00:00:15,930
+We're going to learn how to use sideboards grid's ability to automate subplots based off of features
+
+3
+00:00:15,930 --> 00:00:17,040
+in our data.
+
+4
+00:00:17,040 --> 00:00:20,490
+Let's go in and jump to Jupiter note that we get started.
+
+5
+00:00:20,550 --> 00:00:22,590
+OK here I am at the Jupiter note.
+
+6
+00:00:22,620 --> 00:00:29,280
+I want to hit that import Seaborn as Asinus called Map plot live in line and then I uploaded the iris
+
+7
+00:00:29,280 --> 00:00:33,900
+data set and you can do that just by saying S and S thought load underscore data set and then passing
+
+8
+00:00:33,900 --> 00:00:38,980
+the string Iris and took out the head of this iris dataset is a pretty famous set.
+
+9
+00:00:39,030 --> 00:00:43,190
+It's basically just measurements of a bunch of different flowers or irises.
+
+10
+00:00:43,380 --> 00:00:49,080
+And the last cone here on species has three distinct types of values.
+
+11
+00:00:49,070 --> 00:00:58,890
+So if I go out and say Just enter here and call Iris circuts species we can check out the unique values
+
+12
+00:00:58,890 --> 00:00:59,770
+here.
+
+13
+00:01:00,440 --> 00:01:06,270
+And there's three species of flowers possible two there Tosa versicolor or virginica and the other four
+
+14
+00:01:06,270 --> 00:01:12,050
+columns are just features of the flower such as people weighing or peddling metal with etc..
+
+15
+00:01:12,180 --> 00:01:15,110
+We're going to see much more of this data set when we talk about machine learning.
+
+16
+00:01:15,120 --> 00:01:20,800
+But for now let's just go ahead and do a simple pair plot on this data.
+
+17
+00:01:20,810 --> 00:01:25,160
+So plot is kind of the automated joint plot for the entire data set.
+
+18
+00:01:25,230 --> 00:01:30,170
+So remember from that distribution what lecture's so we can just pass in the data frame and it will
+
+19
+00:01:30,180 --> 00:01:36,390
+automatically create this pair plot for us now using seaborne spared great mechanism.
+
+20
+00:01:36,420 --> 00:01:43,440
+We're actually going to be able to customize this sort of pair plot a lot more control over the actual
+
+21
+00:01:43,440 --> 00:01:44,480
+plots.
+
+22
+00:01:44,490 --> 00:01:46,310
+Let's go ahead and show you how we can do that.
+
+23
+00:01:46,590 --> 00:01:55,330
+I want to go ahead and call hared grid instead of pear plots in paygrade is going to be capital P H
+
+24
+00:01:55,350 --> 00:01:58,970
+I R Capital G R i.e. r id.
+
+25
+00:01:59,010 --> 00:02:01,450
+And then your data frame.
+
+26
+00:02:01,500 --> 00:02:04,650
+So we have period and this just gives us an empty peregrinus.
+
+27
+00:02:04,650 --> 00:02:09,540
+It takes all the numerical columns and grids them up essentially kind of making the subplots for us
+
+28
+00:02:09,900 --> 00:02:12,830
+and payr plot is just a simplified version of Peregrym.
+
+29
+00:02:13,020 --> 00:02:16,360
+So her plot does a lot of the stuff automatically pair grid.
+
+30
+00:02:16,500 --> 00:02:19,470
+You have to do a little more but it gives you a lot more control.
+
+31
+00:02:19,500 --> 00:02:21,720
+Let's go in and see how we can use it.
+
+32
+00:02:21,840 --> 00:02:29,370
+The main way is to set this pair grid equal to a variable and then off of that variable you can map
+
+33
+00:02:30,810 --> 00:02:31,380
+what type.
+
+34
+00:02:31,380 --> 00:02:39,390
+So for instance if I want to go ahead and map maybe a scatterplot I can say T-Dog scatter and this will
+
+35
+00:02:39,390 --> 00:02:47,280
+map a scatterplot to both the upper diagonal the diagonal itself and the lower half.
+
+36
+00:02:47,280 --> 00:02:53,130
+Now if I want to actually specify what I want on the diagonal upper half and lower half I can specify
+
+37
+00:02:53,130 --> 00:02:58,200
+that command I say map underscore diag and this will be the diagonal plot.
+
+38
+00:02:58,260 --> 00:03:00,560
+And we just go ahead and map something to this.
+
+39
+00:03:00,570 --> 00:03:02,260
+So let's go ahead and map a.
+
+40
+00:03:02,430 --> 00:03:10,960
+This plots to the entire diagonal and then I'm going to map the upper plots.
+
+41
+00:03:11,040 --> 00:03:18,570
+We'll go ahead and keep that scatterplot maps just on the upper and then on the lower map underscore
+
+42
+00:03:18,650 --> 00:03:19,290
+lower.
+
+43
+00:03:19,470 --> 00:03:23,970
+I can plot some other plot type for instance Katy plot.
+
+44
+00:03:24,090 --> 00:03:24,420
+All right.
+
+45
+00:03:24,450 --> 00:03:29,060
+And notice here I'm not closing the princes off of these plots and just passing in the plot function
+
+46
+00:03:29,070 --> 00:03:29,200
+.
+
+47
+00:03:29,200 --> 00:03:35,340
+So that's going to map it based off the data that either these Agnel are upper or lower places that
+
+48
+00:03:35,340 --> 00:03:37,700
+matrix so we can go out and check that out.
+
+49
+00:03:37,740 --> 00:03:41,860
+This may take a little while to run depending on how fashed computer is but now we can see we have this
+
+50
+00:03:41,870 --> 00:03:46,070
+sort of grid or a pair plot but we have a lot more control over it.
+
+51
+00:03:46,080 --> 00:03:48,360
+So they're just being scatter plots of histograms.
+
+52
+00:03:48,360 --> 00:03:52,050
+Now we can actually choose what plot types we want to map.
+
+53
+00:03:52,650 --> 00:03:55,190
+And that's just the basic idea behind Peregrym.
+
+54
+00:03:55,260 --> 00:03:59,220
+Usually we'll just use per plot since it's simpler and gives us most of the information we want.
+
+55
+00:03:59,250 --> 00:04:03,720
+But if you're ever trying to get a little more customized ability out of the seaboard plots especially
+
+56
+00:04:03,720 --> 00:04:09,180
+payr plot types things you can use paygrade to do that and then map the whatever specific what types
+
+57
+00:04:09,180 --> 00:04:12,310
+you want to diagonal upper or lower.
+
+58
+00:04:12,400 --> 00:04:19,860
+Now let's discuss Fassett grid nerd to discuss Fassett grid and when we go out and clear this and I'm
+
+59
+00:04:19,860 --> 00:04:26,910
+going to load the tips data set by saying Tipps is equal to Asinus load data sets and then passing the
+
+60
+00:04:26,910 --> 00:04:31,220
+string tips check out the head of our data set.
+
+61
+00:04:31,220 --> 00:04:33,640
+All right we have our tips data set that we're familiar with.
+
+62
+00:04:33,900 --> 00:04:38,940
+Let's go ahead and just show you a very simple example of the Fassett grid by just showing the grid
+
+63
+00:04:39,840 --> 00:04:41,250
+similar to Peregrym.
+
+64
+00:04:41,340 --> 00:04:44,820
+I'm going to call you white and zoom in here a little bit.
+
+65
+00:04:44,840 --> 00:04:47,580
+I want to call it g is equal to asinus.
+
+66
+00:04:47,580 --> 00:04:50,260
+Thought Fassett grid.
+
+67
+00:04:50,700 --> 00:04:54,900
+And then Professor Green which you do as you pass in the data.
+
+68
+00:04:54,900 --> 00:04:59,700
+So you're going to say data is equal to or as the first argument you know to say that equals you just
+
+69
+00:04:59,700 --> 00:05:05,750
+pasand tips and then you specify what you want the call to be and what you want the road to be.
+
+70
+00:05:05,760 --> 00:05:09,090
+That is kind of similar to where we're using subplots that what Lyd.
+
+71
+00:05:09,300 --> 00:05:13,920
+Except now instead of saying numbers you're actually going to pasan column names of your data frame
+
+72
+00:05:13,920 --> 00:05:15,090
+.
+
+73
+00:05:15,120 --> 00:05:21,980
+So for instance I'm going to say call equals time and RHO here is equal to smoker.
+
+74
+00:05:21,990 --> 00:05:24,860
+Let's go ahead and run that's see what that looks like.
+
+75
+00:05:25,230 --> 00:05:25,680
+OK.
+
+76
+00:05:25,680 --> 00:05:31,470
+Now I have an empty grid that can begin to actually map what types to this group.
+
+77
+00:05:31,710 --> 00:05:38,020
+For instance I'm going to go ahead and say gee got math.
+
+78
+00:05:38,820 --> 00:05:42,170
+S and this is going to do a this.
+
+79
+00:05:43,830 --> 00:05:47,270
+And let's do it on total bill.
+
+80
+00:05:49,230 --> 00:05:52,450
+So it's going to do to close that out and run this.
+
+81
+00:05:53,280 --> 00:05:54,000
+OK.
+
+82
+00:05:54,000 --> 00:05:56,350
+So it's actually going on here.
+
+83
+00:05:57,300 --> 00:06:05,250
+I am Matt being a SWAT type and separating the results based off of my column and row certain column
+
+84
+00:06:05,250 --> 00:06:11,940
+names and here they're labeled for us so the x axis represents total bill but there's four separate
+
+85
+00:06:11,940 --> 00:06:16,680
+plots and they're actually labeled for us so yes and no and smokers are the rose.
+
+86
+00:06:16,740 --> 00:06:19,560
+And that was specified when I said Roe equal smoker.
+
+87
+00:06:19,570 --> 00:06:20,360
+And then.
+
+88
+00:06:20,460 --> 00:06:25,340
+Or at the actual time of lunch versus dinner is specified by the column.
+
+89
+00:06:25,340 --> 00:06:31,830
+So the left column is lunch the right column is dinner the top row is smokers and the bottom row is
+
+90
+00:06:31,830 --> 00:06:32,960
+non-smokers.
+
+91
+00:06:33,030 --> 00:06:36,220
+And then we have distribution plots where the total bill call.
+
+92
+00:06:36,420 --> 00:06:39,200
+So there's essentially kind of three arguments at play here.
+
+93
+00:06:39,350 --> 00:06:45,990
+The rows and column names are what variables you want to separate by for your Fassett grid.
+
+94
+00:06:46,050 --> 00:06:49,890
+And then when you're mapping you're going to want to add in one more argument which actually want a
+
+95
+00:06:49,890 --> 00:06:51,740
+map for display.
+
+96
+00:06:52,380 --> 00:06:57,000
+If you're trying to map a plot type that needs more than one argument.
+
+97
+00:06:57,120 --> 00:07:02,300
+So we know this plot only needs one argument but let's say we tried to do a scatterplot by saying peel
+
+98
+00:07:02,320 --> 00:07:04,140
+teeth scatter.
+
+99
+00:07:04,140 --> 00:07:07,600
+I just said total bill here or get a type error.
+
+100
+00:07:07,710 --> 00:07:13,650
+But I need to do is pass an additional argument so I can go ahead and pass that in and we can say maybe
+
+101
+00:07:13,800 --> 00:07:15,770
+tips versus total bill.
+
+102
+00:07:15,780 --> 00:07:21,470
+Is then we go ahead and run that this actually just needs to be set.
+
+103
+00:07:22,230 --> 00:07:23,790
+So tip versus total bill.
+
+104
+00:07:23,790 --> 00:07:30,960
+Now we can actually see that we have tip versus total bill and we've separated both on row and column
+
+105
+00:07:31,230 --> 00:07:33,940
+on smokers and lunch versus dinner.
+
+106
+00:07:33,960 --> 00:07:38,460
+So if you're dealing with a plot type that needs more than one argument you just add that in as a second
+
+107
+00:07:38,490 --> 00:07:41,350
+argument in the map call.
+
+108
+00:07:41,400 --> 00:07:41,760
+All right.
+
+109
+00:07:41,760 --> 00:07:43,900
+That's actually it for the great lecture.
+
+110
+00:07:43,920 --> 00:07:47,910
+The reason for that is because we want to actually be using massacree grid that often throughout the
+
+111
+00:07:47,910 --> 00:07:52,890
+course Seaborn is basic plotting capabilities are actually quite enough for us throughout the course
+
+112
+00:07:52,890 --> 00:07:53,220
+.
+
+113
+00:07:53,320 --> 00:07:58,650
+The sort of grid functions are only here for you if you want to customize your plots even further.
+
+114
+00:07:58,740 --> 00:08:03,540
+And there's a link in the Jupiter notebook for this lecture with some links to the documentation and
+
+115
+00:08:03,540 --> 00:08:07,160
+more examples of what you can do with Fassett grid and Peregrym.
+
+116
+00:08:07,340 --> 00:08:12,240
+They just keep them in mind when you're looking for a little more customization some other plot types
+
+117
+00:08:12,240 --> 00:08:16,890
+such as regression plots actually have parameters you can pass that will automatically create a fast
+
+118
+00:08:16,890 --> 00:08:17,850
+grade for you.
+
+119
+00:08:18,030 --> 00:08:22,520
+But we're going explore that a little more when we talk about regression plots in the next lecture.
+
+120
+00:08:22,890 --> 00:08:23,820
+Okay.
+
+121
+00:08:23,820 --> 00:08:24,990
+Thanks everyone.
+
+122
+00:08:24,990 --> 00:08:28,530
+Feel free to post the Q Any forums if you have any questions on this topic.
+
+123
+00:08:28,530 --> 00:08:29,520
+I'll see at the next lecture

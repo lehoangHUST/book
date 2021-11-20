@@ -1,0 +1,715 @@
+1
+00:00:05,490 --> 00:00:11,130
+Hi everyone welcome to the setup and installation lecture so the objectives for this lecture are to
+
+2
+00:00:11,130 --> 00:00:13,080
+install Python of Anaconda.
+
+3
+00:00:13,080 --> 00:00:17,970
+Download the zip file of notebooks that comes off this course and into open Jupiter and explore the
+
+4
+00:00:17,970 --> 00:00:20,410
+notebooks and make sure everything is working for you.
+
+5
+00:00:21,560 --> 00:00:25,150
+So just right off the bat what is anaconda anaconda.
+
+6
+00:00:25,160 --> 00:00:28,570
+Is a distribution of Python when we say distribution.
+
+7
+00:00:28,580 --> 00:00:33,770
+That means it's actually not just including python but it's also including lots of libraries and tools
+
+8
+00:00:34,010 --> 00:00:35,240
+that we use in this course.
+
+9
+00:00:35,390 --> 00:00:40,460
+And it also includes its own virtual environments system which we talk about later on in this course.
+
+10
+00:00:40,550 --> 00:00:45,690
+It's essentially an all in one install that's extremely popular in data science and machine learning.
+
+11
+00:00:45,770 --> 00:00:50,060
+So if you ever take any other training and data science and machine learning such as a corporate training
+
+12
+00:00:50,360 --> 00:00:53,850
+it's highly likely that they'll also ask you to install Anaconda.
+
+13
+00:00:53,870 --> 00:00:58,130
+So it's extremely popular in data science and machine learning which is why we're using it in this course
+
+14
+00:00:59,690 --> 00:01:04,550
+so once we install Anaconda and get Python up and running it's actually going to come with a development
+
+15
+00:01:04,550 --> 00:01:06,410
+environment called Jupiter.
+
+16
+00:01:06,410 --> 00:01:11,090
+And Jupiter is a developed environment where we can write normal Python code but what's really cool
+
+17
+00:01:11,090 --> 00:01:16,730
+about it is it also allows us to display images and then write down markdown notes all within the same
+
+18
+00:01:16,730 --> 00:01:17,510
+notebook.
+
+19
+00:01:17,510 --> 00:01:22,460
+So it's a really great learning tool and it's a great teaching tool as well which is why you use it
+
+20
+00:01:22,460 --> 00:01:23,780
+throughout this course.
+
+21
+00:01:23,840 --> 00:01:28,910
+And it's also one of the most popular developed environments in data science for exploring and analyzing
+
+22
+00:01:28,910 --> 00:01:29,560
+data.
+
+23
+00:01:29,720 --> 00:01:34,160
+And as you learn more and more about the course and the libraries then you'll see why it's such a popular
+
+24
+00:01:34,160 --> 00:01:39,920
+tool because you get to see everything on a single screen you could see the images your data the sheets
+
+25
+00:01:39,960 --> 00:01:43,440
+et cetera all in one window.
+
+26
+00:01:43,450 --> 00:01:48,190
+Now I want to make it clear if you're an experienced Python user and maybe you've tried Jupiter but
+
+27
+00:01:48,340 --> 00:01:49,120
+really didn't like it.
+
+28
+00:01:49,120 --> 00:01:53,700
+You have your own setup like Sublime Text or PI charm or any other sort of environment.
+
+29
+00:01:53,860 --> 00:01:57,270
+Please feel free to use any development environment you prefer.
+
+30
+00:01:57,280 --> 00:02:00,600
+Sometimes some students just don't like Jupiter and they like their own thing.
+
+31
+00:02:00,670 --> 00:02:01,690
+That's totally fine.
+
+32
+00:02:01,690 --> 00:02:03,280
+We're not forcing it to use Jupiter.
+
+33
+00:02:03,280 --> 00:02:06,610
+The python code we're gonna show throughout the course works in any environment.
+
+34
+00:02:06,610 --> 00:02:07,610
+I just want to be clear.
+
+35
+00:02:07,720 --> 00:02:10,030
+Please choose any development environment you prefer.
+
+36
+00:02:10,030 --> 00:02:14,250
+But if you're totally new to this I would highly recommend you go off the Anaconda and Jupiter setup
+
+37
+00:02:14,260 --> 00:02:16,780
+we show here that we can follow along this course.
+
+38
+00:02:16,780 --> 00:02:21,050
+And I hope you learn to love it as much as I do OK so let's get started.
+
+39
+00:02:21,050 --> 00:02:22,500
+We're gonna download Anaconda.
+
+40
+00:02:22,610 --> 00:02:25,460
+Go ahead and go to w w w the anaconda dot com.
+
+41
+00:02:25,610 --> 00:02:30,150
+Or just simply google search Anaconda Python download and we should end up at the same page.
+
+42
+00:02:30,170 --> 00:02:34,770
+I want to go ahead and jump in a comment dot com in my browser now.
+
+43
+00:02:34,970 --> 00:02:35,740
+All right here I am.
+
+44
+00:02:35,820 --> 00:02:37,390
+Anaconda dot com.
+
+45
+00:02:37,400 --> 00:02:39,140
+Keep in mind Anaconda dot com.
+
+46
+00:02:39,140 --> 00:02:41,770
+This page actually updates itself quite frequently.
+
+47
+00:02:41,780 --> 00:02:46,450
+So the style may change and you may see different things for example right now.
+
+48
+00:02:46,610 --> 00:02:51,710
+They're going to have an anaconda con so the style that page looks a little different and the buttons
+
+49
+00:02:51,710 --> 00:02:55,970
+may be or the overall look at the page may be different for you when you actually visit this.
+
+50
+00:02:55,970 --> 00:03:01,600
+But essentially we're looking for is the download section and you'll see some products here why Anaconda
+
+51
+00:03:01,700 --> 00:03:04,360
+but somewhere on this page you should see download.
+
+52
+00:03:04,670 --> 00:03:08,530
+And if you're having trouble finding that you can just go ahead and google search and call download.
+
+53
+00:03:08,710 --> 00:03:10,910
+And it should eventually take you to this page.
+
+54
+00:03:10,910 --> 00:03:18,350
+So what we see here is the download for Python 3 and Python to this course uses the latest version of
+
+55
+00:03:18,350 --> 00:03:19,390
+Python 3.
+
+56
+00:03:19,400 --> 00:03:22,100
+So we'll go ahead and use that for our Installer.
+
+57
+00:03:22,100 --> 00:03:27,050
+The one thing you need to make sure is that you select the correct installer for your operating system.
+
+58
+00:03:27,050 --> 00:03:32,780
+So right now I want a Windows computer so I will choose the windows installer for Anaconda.
+
+59
+00:03:32,780 --> 00:03:36,680
+Now if you're on Mac OS go ahead and choose the Mac OS installer for Linux.
+
+60
+00:03:36,680 --> 00:03:41,690
+Go ahead and choose the Linux installer something you should know about is for a Mac OS.
+
+61
+00:03:41,760 --> 00:03:45,230
+There's a graphical installer and then a command line installer.
+
+62
+00:03:45,350 --> 00:03:49,790
+The graphical installer is a lot easier to use because it has a little window that pops up and show
+
+63
+00:03:49,820 --> 00:03:51,260
+tells you what to do as you go along.
+
+64
+00:03:51,590 --> 00:03:53,810
+So I would recommend the graphical installer.
+
+65
+00:03:54,050 --> 00:04:00,440
+So I'll go ahead and tell on a Windows computer download the windows installer for the python 3 version.
+
+66
+00:04:00,440 --> 00:04:04,100
+If you're watching this at some point in the future in Python three point eight has come out that's
+
+67
+00:04:04,100 --> 00:04:08,380
+totally ok to basically just be using Python 3.
+
+68
+00:04:08,430 --> 00:04:08,810
+All right.
+
+69
+00:04:08,860 --> 00:04:14,440
+Once it's finished downloading we'll go ahead and open up this executable file if you're on Mac OS.
+
+70
+00:04:14,470 --> 00:04:18,820
+It's going to probably be some TMG file or something that essentially walks you through the graphical
+
+71
+00:04:18,820 --> 00:04:19,660
+installer.
+
+72
+00:04:19,660 --> 00:04:25,400
+So we're going to open that up and then you should see essentially the setup wizard jump out for you.
+
+73
+00:04:25,400 --> 00:04:28,910
+So we'll go ahead and click next here and then there's the license agreement.
+
+74
+00:04:28,910 --> 00:04:30,750
+Go ahead and agree to it.
+
+75
+00:04:30,930 --> 00:04:34,810
+And then there's the install for just me and all users.
+
+76
+00:04:35,010 --> 00:04:37,940
+If you're on a work computer you probably don't have adamant privileges.
+
+77
+00:04:37,980 --> 00:04:40,320
+So just go ahead and install it for just me.
+
+78
+00:04:40,350 --> 00:04:44,430
+Essentially that means you have to log into your user account and it'll only work for this particular
+
+79
+00:04:44,430 --> 00:04:45,000
+user account.
+
+80
+00:04:45,480 --> 00:04:50,770
+So go ahead and click Next go ahead and choose the default location for the destination folder and then
+
+81
+00:04:50,770 --> 00:04:56,200
+if you're on a Windows computer you'll see this option for advanced installation options and you should
+
+82
+00:04:56,200 --> 00:04:58,720
+actually check both of these boxes.
+
+83
+00:04:58,900 --> 00:05:04,210
+One of them says that it's actually not recommended of adding Anaconda to your path environment variable.
+
+84
+00:05:04,210 --> 00:05:08,860
+The reason they say that's not recommended is because if you have different versions of python that
+
+85
+00:05:08,860 --> 00:05:14,770
+may mess around and make Anaconda the essentially default version of Python in your computer and also
+
+86
+00:05:14,830 --> 00:05:20,500
+the default way of running certain actions at your command line actually do recommend that especially
+
+87
+00:05:20,560 --> 00:05:24,520
+if your already have a pretty big installation of Python.
+
+88
+00:05:24,520 --> 00:05:28,330
+Now if you're an advanced user and you understand what it means to set a path enviroment variable I'll
+
+89
+00:05:28,330 --> 00:05:31,530
+leave it up to you whether or not you want to add Anaconda to your path.
+
+90
+00:05:31,540 --> 00:05:35,620
+However if you're brand new and you don't know what adding something to your path environment variable
+
+91
+00:05:36,190 --> 00:05:40,810
+means then definitely go ahead and select this even if it says not recommended.
+
+92
+00:05:40,810 --> 00:05:42,660
+Go ahead and check both boxes.
+
+93
+00:05:42,760 --> 00:05:47,000
+That's going to allow me to create virtual environments at the command line which is very useful.
+
+94
+00:05:47,050 --> 00:05:50,190
+So then once you've done that go ahead and select install.
+
+95
+00:05:50,250 --> 00:05:50,850
+All right.
+
+96
+00:05:50,950 --> 00:05:55,900
+Now that that has finished installing we should be able to search for the anaconda Navigator on our
+
+97
+00:05:55,900 --> 00:05:56,770
+computer.
+
+98
+00:05:56,860 --> 00:06:01,510
+If you been searching for Anaconda on your computer you should see a couple of options show up.
+
+99
+00:06:01,510 --> 00:06:05,480
+One is the anaconda prompt and the other is the anaconda navigator.
+
+100
+00:06:05,530 --> 00:06:12,590
+Go ahead and click open the anaconda navigator upon the anaconda navigator opening you should see a
+
+101
+00:06:12,590 --> 00:06:18,480
+bunch of applications show up and essentially this is a really convenient way of opening up your develop
+
+102
+00:06:18,510 --> 00:06:23,510
+environments and you'll notice that Anaconda actually comes of several development environments already
+
+103
+00:06:23,510 --> 00:06:24,340
+included.
+
+104
+00:06:24,380 --> 00:06:29,800
+It comes with Jupiter lamb Jupiter notebook spider Kuti console and more.
+
+105
+00:06:29,840 --> 00:06:33,380
+The one we're going to be using in this course is the Jupiter notebook.
+
+106
+00:06:33,380 --> 00:06:37,880
+Keep in mind there's a Jupiter lamp which looks really similar but we'll actually using a Jupiter notebook
+
+107
+00:06:38,210 --> 00:06:42,530
+and as I keep mentioning you're free to use any development environment you choose but we'll be using
+
+108
+00:06:42,530 --> 00:06:43,470
+Jupiter notebook.
+
+109
+00:06:43,550 --> 00:06:49,590
+So what we want to do is go ahead and launch Jupiter notebook so click here where it says launch and
+
+110
+00:06:49,590 --> 00:06:53,490
+then what's going to happen is you should see a browser window pop up.
+
+111
+00:06:53,490 --> 00:06:58,450
+And here we can see that Jupiter notebook has automatically opened up in your browser.
+
+112
+00:06:58,470 --> 00:07:04,020
+Now if you don't have Google Chrome as your default browser I would highly recommend you do use it because
+
+113
+00:07:04,020 --> 00:07:06,860
+that is usually what works best with Jupiter.
+
+114
+00:07:06,930 --> 00:07:11,190
+Don't use an older browser like Internet Explorer Microsoft Edge should be fine.
+
+115
+00:07:11,190 --> 00:07:14,240
+But Internet Explorer it's actually not even supported by Microsoft anymore.
+
+116
+00:07:14,310 --> 00:07:18,990
+So I would highly recommend using Google Chrome for the Jupiter.
+
+117
+00:07:18,990 --> 00:07:23,010
+You can also use things like Firefox Mozilla those should technically all work fine as well.
+
+118
+00:07:23,570 --> 00:07:24,120
+OK.
+
+119
+00:07:24,330 --> 00:07:28,710
+So you notice that Jupiter opens in your browser something I want to clarify is that you do not need
+
+120
+00:07:28,710 --> 00:07:31,560
+to be connected to the Internet in order for Jupiter to work.
+
+121
+00:07:31,620 --> 00:07:35,620
+It's merely using your browser as a graphical interface window.
+
+122
+00:07:35,640 --> 00:07:37,930
+It's not actually connecting to the Internet here.
+
+123
+00:07:37,950 --> 00:07:42,090
+So you'll notice that I basically see all the folders that are on my computer.
+
+124
+00:07:42,090 --> 00:07:45,300
+I can see my desktop folders my documents and my downloads.
+
+125
+00:07:45,300 --> 00:07:51,570
+So what I want to do is download the zip file of notebooks that comes along for this course and then
+
+126
+00:07:51,690 --> 00:07:53,400
+access them through Jupiter.
+
+127
+00:07:53,400 --> 00:07:55,900
+So let's go ahead and download that zip file.
+
+128
+00:07:56,180 --> 00:08:01,800
+OK so if you go to the actual course content page you'll see the curriculum laid out and you should
+
+129
+00:08:01,800 --> 00:08:07,800
+notice under section one course Introduction in the third lecture course if it cuz there's a zip file
+
+130
+00:08:07,800 --> 00:08:09,420
+here that you can download.
+
+131
+00:08:09,870 --> 00:08:15,000
+And as you were reading that lecture you should have seen a little resource article points out that
+
+132
+00:08:15,030 --> 00:08:17,130
+there's a resource there to download.
+
+133
+00:08:17,130 --> 00:08:20,010
+Now keep in mind if you're viewing a lecture video.
+
+134
+00:08:20,010 --> 00:08:25,700
+So for example here I'm viewing essentially our intro environments set up an installation lecture if
+
+135
+00:08:25,740 --> 00:08:27,610
+click over here on the top left.
+
+136
+00:08:27,630 --> 00:08:32,760
+It should also be an indication that resources can be downloaded and you can then see the course content
+
+137
+00:08:32,880 --> 00:08:36,310
+and click on this zip file and it will download the zip file.
+
+138
+00:08:36,360 --> 00:08:42,060
+So go ahead and download the zip file either from course f excuse and I've places zip file in a couple
+
+139
+00:08:42,060 --> 00:08:46,320
+of other lectures in case you missed it including this one and the Jupiter note lecture.
+
+140
+00:08:46,320 --> 00:08:48,870
+It's the same zip file it's just there for free to download.
+
+141
+00:08:48,870 --> 00:08:53,310
+And go ahead and download it and remember where you downloaded it and then unzip that file.
+
+142
+00:08:53,310 --> 00:08:57,330
+So right now my version is underneath my downloads folder so I'm going to go unzip it.
+
+143
+00:08:57,660 --> 00:08:57,900
+All right.
+
+144
+00:08:57,960 --> 00:09:01,560
+So underneath my downloads folder I'll go ahead and unzip this.
+
+145
+00:09:01,560 --> 00:09:07,020
+You should be able to see extract all or you can download a program program like when RA or seven zip.
+
+146
+00:09:07,020 --> 00:09:12,000
+Go ahead and do that really just any way whatever the typical method used for ends up being folders.
+
+147
+00:09:12,030 --> 00:09:16,070
+Go ahead and do that Windows and Mac OS have a default.
+
+148
+00:09:16,110 --> 00:09:19,230
+So go ahead or just extract everything and unzip it.
+
+149
+00:09:20,240 --> 00:09:25,490
+So let that unzip and then once that's unzip you should see a folder here and you'll see something that
+
+150
+00:09:25,490 --> 00:09:26,240
+says refactor.
+
+151
+00:09:26,240 --> 00:09:31,910
+Go ahead and click on that and you'll see all the course notes organized in order that they are in the
+
+152
+00:09:31,910 --> 00:09:32,500
+course.
+
+153
+00:09:32,540 --> 00:09:38,000
+And if you then double click on these you'll see a bunch of files called I.P. y and be files.
+
+154
+00:09:38,000 --> 00:09:42,170
+Now the thing about these files if you're to try to double click on them and open them directly.
+
+155
+00:09:42,170 --> 00:09:46,590
+That wouldn't work actually to be opened directly through the Jupiter notebook system.
+
+156
+00:09:46,610 --> 00:09:51,650
+So now that we know that our unzip folder is underneath downloads we're gonna go back to our browser
+
+157
+00:09:51,650 --> 00:09:55,110
+where we have the Jupiter notebook and open the files that way.
+
+158
+00:09:55,130 --> 00:09:57,020
+So let me go ahead and jump back to that.
+
+159
+00:09:57,020 --> 00:09:59,730
+So here I am back at Jupiter notebook.
+
+160
+00:09:59,750 --> 00:10:07,080
+Go ahead and find your Downloads folder and then find the folder Pi the SNL bootcamp master go to the
+
+161
+00:10:07,080 --> 00:10:12,410
+refactor and then you'll see all the files here and the first ones we're gonna go be going over there
+
+162
+00:10:12,420 --> 00:10:17,580
+all in order is Python crash course and then these notebooks you simply click on them and then once
+
+163
+00:10:17,580 --> 00:10:20,500
+they're done loading you can see all the information here.
+
+164
+00:10:20,730 --> 00:10:25,020
+And later on we'll talk more details about how you can actually run the Jupiter notebooks.
+
+165
+00:10:25,020 --> 00:10:31,080
+Keep in mind that previously when I was filming this course we didn't have it organized in a numerical
+
+166
+00:10:31,080 --> 00:10:32,350
+fashion like this.
+
+167
+00:10:32,550 --> 00:10:38,520
+We just had it organized by general topic but now we've reorganized and refactor the actual notebooks
+
+168
+00:10:38,550 --> 00:10:40,280
+and folders so that it's a lot clearer.
+
+169
+00:10:40,290 --> 00:10:43,620
+You do one first then two then three and four then five and so on.
+
+170
+00:10:44,080 --> 00:10:44,760
+OK.
+
+171
+00:10:44,850 --> 00:10:46,770
+So that's basically it for our setup.
+
+172
+00:10:46,890 --> 00:10:52,360
+You should now be able to run Jupiter notebook and you should have installed Anaconda and then downloaded
+
+173
+00:10:52,370 --> 00:10:54,060
+the notes and follow along.
+
+174
+00:10:54,060 --> 00:10:59,070
+Please keep in mind that if you're ever getting an error with trying to follow along with a video try
+
+175
+00:10:59,160 --> 00:11:03,480
+running our notebooks first specifically our solutions notebook for the exercise.
+
+176
+00:11:03,480 --> 00:11:07,830
+A lot of times easy to make a simple typo which is why we provide the notebooks that go along with each
+
+177
+00:11:07,830 --> 00:11:11,100
+video lecture to help you out with any problems of that type.
+
+178
+00:11:11,280 --> 00:11:11,910
+Okay.
+
+179
+00:11:11,970 --> 00:11:13,890
+Thanks everyone and we'll see you at the next lecture.

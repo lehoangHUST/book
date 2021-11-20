@@ -1,0 +1,1043 @@
+1
+00:00:05,100 --> 00:00:10,110
+Hola a todos y bienvenidos a la conferencia sobre los gemelos de la trama donde realmente
+
+2
+00:00:10,140 --> 00:00:14,250
+mostramos cómo podemos programar usando estas bibliotecas para crear visualizaciones interactivas de datos.
+
+3
+00:00:14,250 --> 00:00:18,690
+Avancemos y saltemos directamente al cuaderno de Júpiter para comenzar.
+
+4
+00:00:18,690 --> 00:00:18,960
+Todo bien.
+
+5
+00:00:18,960 --> 00:00:20,990
+Aquí estoy en el cuaderno de Júpiter.
+
+6
+00:00:21,030 --> 00:00:25,770
+Voy a seguir adelante y hacer un par de importación y luego un poco de configuración para que todo esto funcione.
+
+7
+00:00:25,770 --> 00:00:35,880
+importar es importante para PD, soy PI y P y luego voy a seguir adelante y decir desde la trama que las
+
+8
+00:00:36,690 --> 00:00:46,140
+importaciones subrayan la letra de subrayado, subrayar el guión bajo y luego voy a seguir adelante y decir la versión impresa.
+
+9
+00:00:47,340 --> 00:00:48,530
+Cuando digo que
+
+10
+00:00:49,020 --> 00:00:51,710
+Y fíjate que aquí tengo un punto uno para señalar nueve.
+
+11
+00:00:51,720 --> 00:00:53,750
+Esa es la versión actual que estoy usando.
+
+12
+00:00:53,770 --> 00:00:59,640
+Todo lo que vamos a hacer requiere una versión que sea más nueva que un punto nueve.
+
+13
+00:00:59,640 --> 00:01:02,220
+Así que aquí ya estoy en un punto doce.
+
+14
+00:01:02,280 --> 00:01:03,420
+Eso significa que estoy bien.
+
+15
+00:01:03,420 --> 00:01:07,970
+Si tienes una versión con un punto ocho o menos, necesitarás actualizar plotless.
+
+16
+00:01:08,250 --> 00:01:12,730
+Si solo instalas la trama, deberías estar completamente bien en esto.
+
+17
+00:01:12,780 --> 00:01:23,370
+A continuación, voy a entrar y decir que se importan los gemelos como C-f Y, finalmente, voy a importar algunas bibliotecas desde el inicio
+
+18
+00:01:23,400 --> 00:01:26,070
+de la línea fuera de línea.
+
+19
+00:01:26,070 --> 00:01:33,110
+Entonces, en parte, como una empresa puede apoyar su línea y puede alojar sus visualizaciones de datos en línea.
+
+20
+00:01:33,300 --> 00:01:37,190
+Pero como vamos a utilizar esto como una biblioteca de código abierto y vamos
+
+21
+00:01:37,200 --> 00:01:41,990
+a usarlo fuera de línea, tendremos que hacer algunas importaciones desde fuera de línea para que funcione.
+
+22
+00:01:42,000 --> 00:01:47,460
+Quiero seguir adelante e importar descargar plotched underscore plotless J. S. y puede simplemente escribir D y
+
+23
+00:01:47,460 --> 00:01:49,850
+luego tabular y debe autocompletarse para usted.
+
+24
+00:01:49,850 --> 00:01:56,400
+También voy a decir que estoy haciendo el autocompletado de pestañas en el modo de subrayado del cuaderno de subrayado.
+
+25
+00:01:56,880 --> 00:02:01,510
+Y luego también la trama y las tramas corren esos.
+
+26
+00:02:01,800 --> 00:02:06,090
+Y luego vamos a hacer un par de comandos más para que todo funcione en el cuaderno.
+
+27
+00:02:06,570 --> 00:02:12,440
+Solo llámalo subrayar un modo de subrayado del portátil y passen conectado es igual a verdadero.
+
+28
+00:02:12,500 --> 00:02:17,850
+Y esto conectará el javascript a su computadora portátil porque plotless esencialmente
+
+29
+00:02:17,850 --> 00:02:22,590
+solo conecta pandas y Python a la biblioteca javascript interactiva.
+
+30
+00:02:23,240 --> 00:02:26,980
+Y esto permitirá que sus cuadernos tengan acceso a esas visualizaciones.
+
+31
+00:02:27,180 --> 00:02:35,640
+Y, finalmente, vamos a decir que C-f se desconecta de la línea como un método y que se imprime el texto impreso y se ejecuta esto, y
+
+32
+00:02:36,000 --> 00:02:39,050
+esto permitirá que los gemelos CS estén fuera de línea.
+
+33
+00:02:39,090 --> 00:02:39,810
+Todo bien.
+
+34
+00:02:39,810 --> 00:02:42,040
+Bastantes pasos aquí para asegurarse de que todo salga bien.
+
+35
+00:02:42,150 --> 00:02:44,730
+Pero espero que puedas seguirlos.
+
+36
+00:02:44,760 --> 00:02:49,390
+Avancemos y ahora obtengamos algunos datos y créelos.
+
+37
+00:02:49,740 --> 00:02:56,460
+Voy a seguir adelante y decir que ZF es igual al marco de datos PD dot.
+
+38
+00:02:56,550 --> 00:02:58,800
+Voy a decir N. PAG. ese Rand
+
+39
+00:03:01,470 --> 00:03:05,970
+aleatorio y tan normal distribución y simplemente passen 100 por 4.
+
+40
+00:03:06,270 --> 00:03:15,340
+Así que 100 filas para columnas y voy a entrar y decir columnas es igual a a b c d como una cadena de división.
+
+41
+00:03:15,550 --> 00:03:19,350
+Y de esa manera obtenemos una lista de las columnas ABC y D.
+
+42
+00:03:19,770 --> 00:03:27,210
+Y luego, si controlo DF justo antes, aquí tengo mi marco de datos y voy a seguir adelante y
+
+43
+00:03:27,210 --> 00:03:34,370
+crear un marco de datos más llamado DL 2 PD marco de datos y usaré un diccionario para esto.
+
+44
+00:03:34,950 --> 00:03:47,910
+Voy a decir que la categoría es una columna y luego los valores solo van a ser un byc o cualquier tres cadenas que desee y luego
+
+45
+00:03:47,910 --> 00:03:51,210
+la otra columna va a ser valores.
+
+46
+00:03:51,240 --> 00:03:53,800
+Y esto va a ser una cadena de algunos valores aleatorios.
+
+47
+00:03:53,850 --> 00:03:57,150
+Sigamos y digamos 32 43 y 50, y esto
+
+48
+00:04:00,000 --> 00:04:03,940
+se usará más adelante como un estilo de gráfico de barras.
+
+49
+00:04:03,940 --> 00:04:04,350
+Todo bien.
+
+50
+00:04:04,380 --> 00:04:07,160
+Ahora solo ve cómo usar gemelos y trazo.
+
+51
+00:04:07,260 --> 00:04:09,850
+En realidad es extremadamente sencillo.
+
+52
+00:04:10,500 --> 00:04:14,220
+Si echamos un vistazo a nuestro marco de datos, tenemos ABC y Z aquí.
+
+53
+00:04:14,250 --> 00:04:21,420
+Si llamo a la trama fuera de este marco de datos, los panderers dibujarán algo con MAP plot
+
+54
+00:04:21,420 --> 00:04:28,830
+en vivo y si realmente quiero ver esa trama puedo decir map plot live in line y luego
+
+55
+00:04:28,830 --> 00:04:34,030
+si ejecuto esto de nuevo déjame cortar esto y ponerlo arriba arriba aquí.
+
+56
+00:04:34,420 --> 00:04:37,180
+Ups allí vamos.
+
+57
+00:04:37,380 --> 00:04:40,880
+Y voy a volver aquí y ejecutar esta trama una vez más.
+
+58
+00:04:41,190 --> 00:04:45,790
+Y aquí veo el diagrama de líneas que Pandurs habría hecho automáticamente usando matte plotless.
+
+59
+00:04:46,050 --> 00:04:51,820
+También puedo cambiar esto y trazaré y veremos que casi ocurre algo de magia.
+
+60
+00:04:51,840 --> 00:04:56,010
+Esa trama ahora se ha convertido en una imagen interactiva de trazado.
+
+61
+00:04:56,100 --> 00:05:00,810
+Y aquí puedo desplazarme y realmente decirme los valores en ese punto índice particular.
+
+62
+00:05:00,810 --> 00:05:03,080
+Entonces es exactamente el mismo diagrama de la trama.
+
+63
+00:05:03,120 --> 00:05:04,570
+Ahora es interactivo.
+
+64
+00:05:04,860 --> 00:05:05,840
+Puedo acercarme
+
+65
+00:05:05,850 --> 00:05:06,930
+Ver valores
+
+66
+00:05:06,930 --> 00:05:10,700
+Puedo hacer doble clic para alejar la imagen y también tienen herramientas aquí.
+
+67
+00:05:10,730 --> 00:05:12,370
+Puedo guardar y editar la trama.
+
+68
+00:05:12,480 --> 00:05:17,380
+Puedo descargar la trama como un archivo PNB, así que si solo quiero una imagen estática, puedo moverla.
+
+69
+00:05:17,400 --> 00:05:26,540
+Así que, si quisiera, podría desplazarme, podría acercar o alejar la imagen, reiniciar los ejes, elegir el vuelo más cercano al desplazarse o
+
+70
+00:05:26,630 --> 00:05:29,500
+comparar los datos al desplazar el cursor.
+
+71
+00:05:29,510 --> 00:05:34,170
+Por defecto, probablemente quiera comparar los datos y luego incluso puedo hacer clic en algunas columnas para
+
+72
+00:05:34,160 --> 00:05:34,470
+verlas.
+
+73
+00:05:34,460 --> 00:05:37,930
+Entonces, si solo quiero ver y ver si puede ser un y.
+
+74
+00:05:38,240 --> 00:05:38,590
+Derecha.
+
+75
+00:05:38,660 --> 00:05:42,920
+Espero que ya puedas decir que esta es una herramienta extremadamente poderosa porque básicamente
+
+76
+00:05:42,990 --> 00:05:49,040
+tienes que agregar un diagrama de letras y de repente pareces un increíble programador interactivo de visualización de datos.
+
+77
+00:05:49,400 --> 00:05:54,650
+Cuando su secreto solo estaba agregando tramaba y usaba gemelos y cortésmente.
+
+78
+00:05:54,770 --> 00:05:55,180
+Todo bien.
+
+79
+00:05:55,400 --> 00:05:58,640
+Así que ese es el ejemplo más básico de gemelos y yo plop.
+
+80
+00:05:58,740 --> 00:06:02,070
+Y sigamos adelante y exploremos ahora los diversos tipos de tramas que podemos hacer.
+
+81
+00:06:02,270 --> 00:06:06,570
+Podemos hacer muchos tipos, como mapas de calor de relación de caja de barras de dispersión y más.
+
+82
+00:06:06,710 --> 00:06:11,420
+Entonces, todo lo que vamos a hacer es ir a través de ellos y mostrarles cómo usar la trama para crear
+
+83
+00:06:11,420 --> 00:06:14,430
+otros tipos de gráficos que no sean solo gráficos de líneas como este.
+
+84
+00:06:14,490 --> 00:06:18,420
+Comencemos mostrándote cómo hacer un diagrama de dispersión.
+
+85
+00:06:18,620 --> 00:06:22,190
+Voy a seguir adelante y decir el diagrama de puntos DMF.
+
+86
+00:06:22,500 --> 00:06:27,740
+Y luego, para cambiar el tipo de trazado, especifique kind equals y
+
+87
+00:06:27,750 --> 00:06:33,870
+luego para scatter, la cadena es scatterplot y scatterplot para especificar los ejes xey.
+
+88
+00:06:34,010 --> 00:06:36,040
+Puede ingresar y especificar esto por el nombre de la columna.
+
+89
+00:06:36,080 --> 00:06:45,050
+Entremos y mostremos una columna dispersa en vez de una columna B, y si ejecutamos esto, verá
+
+90
+00:06:45,620 --> 00:06:47,510
+que aparece algo divertido.
+
+91
+00:06:47,510 --> 00:06:48,610
+Obtienes algo como esto.
+
+92
+00:06:48,620 --> 00:06:52,850
+Y por defecto plotless va a intentar hacer una línea para conectar todos estos puntos.
+
+93
+00:06:52,860 --> 00:07:02,450
+Así que tienes que especificar el modo y pasar los marcadores de cadena y, a continuación, obtendrás algunos marcadores aquí y puedes
+
+94
+00:07:02,450 --> 00:07:07,760
+consultar los marcadores y luego puedes comparar las columnas A y B.
+
+95
+00:07:07,820 --> 00:07:11,870
+Puede acercar y verificar la información en cada uno de estos puntos.
+
+96
+00:07:11,880 --> 00:07:12,680
+Todo bien.
+
+97
+00:07:12,690 --> 00:07:19,190
+Entonces, así es como puede usar un diagrama de dispersión usando los argumentos x y y de la persona D-plot de DFA, ya que los nombres
+
+98
+00:07:19,580 --> 00:07:24,280
+de columna especifican kind es igual a scatter y luego pasa y el modo es igual a marcadores.
+
+99
+00:07:24,320 --> 00:07:27,740
+También puede hacer otras cosas como pasar argumentos por tamaño.
+
+100
+00:07:27,810 --> 00:07:29,440
+Quieres que estos puntos sean más grandes.
+
+101
+00:07:29,450 --> 00:07:34,980
+Puede seguir adelante y especificar un tamaño más grande y voy a seguir adelante y hacer esos puntos más grandes.
+
+102
+00:07:35,380 --> 00:07:39,990
+Avancemos a un diagrama de barra o diagramamos y decimos.
+
+103
+00:07:40,110 --> 00:07:46,550
+Pensé en trazar y decir amable pasando la barra de cuerdas.
+
+104
+00:07:46,550 --> 00:07:51,990
+especifica X y vamos a salir y cambiar a descafeinado también, ya que es una mejor opción para esta trama.
+
+105
+00:07:51,990 --> 00:07:52,530
+Y luego
+
+106
+00:07:52,520 --> 00:07:59,420
+Entonces, como recordatorio, debe tener una columna categórica y un significado de columna numérica para un diagrama de barras; quiere
+
+107
+00:07:59,490 --> 00:08:03,610
+que la X sea la columna categórica para que esto sea obvio.
+
+108
+00:08:03,610 --> 00:08:06,650
+Solo voy a decir que x es igual a la columna de categoría.
+
+109
+00:08:06,830 --> 00:08:10,460
+Y luego, ¿por qué va a estar en la columna de valores?
+
+110
+00:08:10,570 --> 00:08:12,060
+Ahora si vamos y lo revisamos.
+
+111
+00:08:12,170 --> 00:08:20,030
+Ahora tenemos un diagrama de barras donde si alejé un poco puedo ver el valor para cada una de estas categorías,
+
+112
+00:08:20,030 --> 00:08:23,830
+así que C es 50 B es 43 y 32.
+
+113
+00:08:23,840 --> 00:08:24,460
+Todo bien.
+
+114
+00:08:24,460 --> 00:08:30,330
+Y puede ampliar si lo desea, pero eso puede no ser de mucha ayuda para un marplot en particular.
+
+115
+00:08:30,500 --> 00:08:32,620
+Adelante y continúa.
+
+116
+00:08:32,750 --> 00:08:38,110
+Ahora, como sabemos, sus datos no siempre se colocarán cómodamente, como el 2 si una categoría en la
+
+117
+00:08:38,120 --> 00:08:44,000
+columna de valores, pero que puede hacer se llama grupo por una función agregada en sus datos para obtenerlo en
+
+118
+00:08:44,000 --> 00:08:48,730
+algún tipo de forma donde tiene sentido usar un diagrama de barras usando el diagrama A.
+
+119
+00:08:48,750 --> 00:08:50,120
+Déjame ir para mostrarte lo que quiero decir con eso.
+
+120
+00:08:50,120 --> 00:08:52,660
+Eche un vistazo a nuestro DMF original.
+
+121
+00:08:52,940 --> 00:08:55,930
+Podemos ver que tenemos un B C y D.
+
+122
+00:08:55,980 --> 00:08:58,350
+Ahora no podríamos llamar a la gráfica de barras fuera de esto.
+
+123
+00:08:58,380 --> 00:09:01,820
+De lo contrario, obtendremos un montón de barras y te mostraré lo que quiero decir con eso.
+
+124
+00:09:01,870 --> 00:09:07,680
+Solo ese tipo es igual, tendrás un montón de barras por cada punto de datos y eso no es exactamente
+
+125
+00:09:07,670 --> 00:09:08,540
+lo que quieres.
+
+126
+00:09:08,590 --> 00:09:12,860
+Debería hacer algún tipo de función agregada además de esto, por ejemplo, veamos
+
+127
+00:09:12,890 --> 00:09:15,300
+que desea contar las instancias para cada columna.
+
+128
+00:09:15,680 --> 00:09:19,410
+Y aquí tenemos un diagrama de barras para cada instancia, que en este caso es solo 100.
+
+129
+00:09:19,430 --> 00:09:26,580
+Dado que todos están distribuidos uniformemente, puede hacer otras cosas como tomar la suma de cada columna y ahora tenemos un gráfico
+
+130
+00:09:26,630 --> 00:09:29,660
+de barras que muestra la suma de cada columna.
+
+131
+00:09:29,660 --> 00:09:29,970
+Todo bien.
+
+132
+00:09:30,050 --> 00:09:31,030
+Cosas bastante interesantes
+
+133
+00:09:31,040 --> 00:09:36,030
+Pero tenga en cuenta que este diagrama de barras con trama se vuelve realmente poderoso cuando llama a algún tipo de función
+
+134
+00:09:36,020 --> 00:09:38,830
+agregada o un grupo por una función de su marco de datos.
+
+135
+00:09:39,000 --> 00:09:43,640
+Lo más probable es que su marco de datos no esté en este tipo de formato agradable.
+
+136
+00:09:44,210 --> 00:09:45,610
+De acuerdo, eso es todo.
+
+137
+00:09:45,770 --> 00:09:46,400
+Vamos a discutir.
+
+138
+00:09:46,400 --> 00:09:52,430
+Diagramas de caja ahora Diagramas de caja Los datos pueden ser algo que se ve como si los
+
+139
+00:09:52,430 --> 00:09:56,650
+gráficos de caja hicieran automáticamente ese tipo de agregación para esa distribución.
+
+140
+00:09:57,150 --> 00:10:00,830
+Y lo haces especificando kind es igual a box.
+
+141
+00:10:00,950 --> 00:10:05,310
+Y aquí creará automáticamente un diagrama de caja para cada una de las
+
+142
+00:10:05,310 --> 00:10:07,530
+columnas y podrá desactivarlas o desactivarlas.
+
+143
+00:10:07,620 --> 00:10:12,060
+hacer clic en A y C, y también pueden hacer clic en Biondi y ver
+
+144
+00:10:12,060 --> 00:10:17,880
+lo que quiero, y les daré información. en los azulejos del núcleo aquí para la caja que es bastante conveniente.
+
+145
+00:10:18,180 --> 00:10:24,290
+Aquí con DMF o simplemente encendiéndolos y quitándolos aquí de la trama, por ejemplo, solo quería ver y ver. Solo puedo
+
+146
+00:10:24,290 --> 00:10:29,700
+Ahora hablemos de un gráfico de superficie en 3D para hablar realmente sobre los tres del gráfico de superficie.
+
+147
+00:10:29,710 --> 00:10:39,350
+Voy a hacer un nuevo marco de datos que diga si tres es igual al marco de datos de PD
+
+148
+00:10:39,360 --> 00:10:48,690
+y vamos a seguir adelante y decir que X es una columna y solo diremos uno dos tres cuatro cinco
+
+149
+00:10:52,110 --> 00:11:03,260
+especificaremos y como la columna devalúa 10 20 30 2010, por lo que sube y baja y luego especificaré que Z es una columna.
+
+150
+00:11:03,260 --> 00:11:09,990
+Y sigamos y especifiquemos que sea 500 400 300 200 100.
+
+151
+00:11:10,070 --> 00:11:10,610
+DE ACUERDO.
+
+152
+00:11:10,910 --> 00:11:16,940
+vistazo a esto y esto es básicamente tres menciones de valores son tres variables que podemos utilizar un gráfico de superficie.
+
+153
+00:11:16,940 --> 00:11:19,600
+Así que tengo mis marcos de datos echar un
+
+154
+00:11:19,640 --> 00:11:28,160
+Si quisiéramos crear un gráfico de superficie tridimensional de estas tres variables en, por ejemplo, tres gráficos, especificaremos el
+
+155
+00:11:28,160 --> 00:11:36,760
+tipo que será un gráfico de superficie y esto creará un diagrama de superficie de lo que tenemos aquí.
+
+156
+00:11:36,770 --> 00:11:39,210
+Entonces puedes ver que tenemos un diagrama de superficie.
+
+157
+00:11:39,210 --> 00:11:44,390
+Ahora déjame mostrarte otro ejemplo de un gráfico de superficie cambiando tipo
+
+158
+00:11:44,390 --> 00:11:52,370
+de estos valores en lugar de decir 100 a 500. Voy a decir 5 4 3 2 1.
+
+159
+00:11:52,400 --> 00:11:53,430
+Y tramamos esto.
+
+160
+00:11:53,440 --> 00:11:56,020
+Podemos ver ahora que tenemos un poco de este perfil máximo.
+
+161
+00:11:56,030 --> 00:12:01,160
+Ahora podemos cambiar las escalas de color aquí en caso de que no nos guste esta escala de colores del arco iris.
+
+162
+00:12:01,300 --> 00:12:12,290
+Puede decir algo como escala de colores y decir Ardie para rojo o amarillo para blanco y amarillo amarillo
+
+163
+00:12:12,290 --> 00:12:13,850
+y B azul.
+
+164
+00:12:13,850 --> 00:12:17,270
+Y puede verificar la documentación sin diagrama para todos los códigos de escala de colores.
+
+165
+00:12:17,300 --> 00:12:20,220
+No coinciden exactamente con los mapas de color de la gráfica del mapa.
+
+166
+00:12:20,240 --> 00:12:21,560
+Así que tenlo en mente.
+
+167
+00:12:21,650 --> 00:12:25,230
+Y aquí tenemos un gráfico de superficie realmente agradable hecho directamente de nuestro marco de datos.
+
+168
+00:12:25,250 --> 00:12:29,710
+Podemos rotarlo y jugar con él para obtener toda la información de él.
+
+169
+00:12:29,720 --> 00:12:30,310
+Todo bien.
+
+170
+00:12:30,590 --> 00:12:31,840
+Esos son tres la superficie.
+
+171
+00:12:31,880 --> 00:12:35,020
+Y finalmente voy a hablar sobre un par de tramas más.
+
+172
+00:12:35,150 --> 00:12:40,910
+Una muy básica que probablemente te encuentres haciendo como un histograma puedes
+
+173
+00:12:40,910 --> 00:12:51,290
+decir si llamas una sola columna y luego dices que tramo es igual a hist y obtendrás un histograma y puedes especificar
+
+174
+00:12:51,290 --> 00:12:54,290
+el número de contenedores de otro argumento.
+
+175
+00:12:54,350 --> 00:12:59,720
+Por ejemplo, si quieres 25 contenedores, puedes especificarlos y obtener más contenedores.
+
+176
+00:12:59,720 --> 00:13:03,660
+Déjame ir y haz esto más obvio al especificar una gran cantidad de ofertas.
+
+177
+00:13:04,190 --> 00:13:04,620
+DE ACUERDO.
+
+178
+00:13:04,660 --> 00:13:05,980
+Y aquí tenemos más contenedores.
+
+179
+00:13:06,020 --> 00:13:11,780
+No hubo tantos puntos de datos, así que tenlos en cuenta si avanzas y pasas el marco
+
+180
+00:13:11,780 --> 00:13:12,750
+de datos completo.
+
+181
+00:13:12,890 --> 00:13:19,310
+Simplemente digamos que DFA A-plot kind equals Solo obtendrá un histograma superpuesto de todas las columnas, lo que significa
+
+182
+00:13:19,360 --> 00:13:24,080
+que puede comparar los histogramas de las columnas y puede activarlos y desactivarlos para
+
+183
+00:13:24,080 --> 00:13:24,950
+compararlos entre sí.
+
+184
+00:13:24,950 --> 00:13:26,750
+Ahora estos son aleatoriamente distribuidos normalmente.
+
+185
+00:13:26,750 --> 00:13:30,560
+Entonces están superponiéndose entre sí, lo cual tiene sentido dada la forma en que creamos esto.
+
+186
+00:13:30,740 --> 00:13:35,840
+Pero puede activarlos a menudo para ver los histogramas como desee para todas las columnas en el marco de datos.
+
+187
+00:13:36,410 --> 00:13:40,490
+Depende de usted si solo desea pasar una columna o pasar todo el marco
+
+188
+00:13:40,490 --> 00:13:42,590
+de datos y luego encenderlos y apagarlos.
+
+189
+00:13:42,650 --> 00:13:50,450
+El siguiente que quiero mostrarles es que las visualizaciones de propagación extendida se usan mucho para los datos de stock.
+
+190
+00:13:50,550 --> 00:13:55,340
+Así que, en comparación con las acciones, voy a seguir adelante y simplemente las haré con nuestros valores aleatorios aquí.
+
+191
+00:13:55,340 --> 00:13:59,810
+Más tarde, en el día financiero para limitar algún proyecto, veremos un análisis técnico más Blotz.
+
+192
+00:14:00,350 --> 00:14:08,990
+subtrama obtendré mi diagrama de líneas que los muestra uno contra el otro y entonces obtendré mi propagación dispersa que muestra la propagación de ellos uno contra el otro.
+
+193
+00:14:10,450 --> 00:14:16,190
+Pero si acabo de decir estas dos columnas y fuera de mi marco de datos, puedo decir que el
+
+194
+00:14:16,190 --> 00:14:20,260
+tipo A-plot es igual a spread y obtendremos un diagrama y luego una
+
+195
+00:14:20,300 --> 00:14:25,190
+Entonces, por ejemplo, si avanzamos y hacemos zoom aquí en el 20, podemos acercar el zoom aquí.
+
+196
+00:14:25,360 --> 00:14:27,860
+Veamos dónde corresponde a 20.
+
+197
+00:14:27,860 --> 00:14:31,460
+Bueno, note que el spread es un punto negativo 3:08 entre ellos.
+
+198
+00:14:31,640 --> 00:14:33,770
+Y aquí podemos verificar eso como resultado.
+
+199
+00:14:33,770 --> 00:14:37,320
+Por lo tanto, el punto negativo 3 8 menos el punto 1.
+
+200
+00:14:37,370 --> 00:14:39,700
+Tomaremos un 2. 5 6 por allí.
+
+201
+00:14:39,920 --> 00:14:44,910
+De modo que puede continuar y comparar estos resultados, y esto es esencialmente útil para
+
+202
+00:14:44,930 --> 00:14:48,380
+los datos de stock para ver el margen entre dos acciones.
+
+203
+00:14:48,530 --> 00:14:54,470
+Tenemos dos tipos de felpa más para mostrarte que el siguiente es un diagrama de burbujas y un
+
+204
+00:14:54,680 --> 00:15:02,510
+diagrama de burbujas es muy similar a un diagrama de dispersión, excepto que cambiará el tamaño de los puntos basados ​​en otra variable.
+
+205
+00:15:02,510 --> 00:15:09,890
+Entonces, si digo que kind es igual a bubble, especificaré X e Y así para un diagrama de dispersión y
+
+206
+00:15:09,890 --> 00:15:13,400
+luego especificaré el tamaño de las burbujas en otra columna.
+
+207
+00:15:13,450 --> 00:15:14,460
+Avancemos y simplemente elijamos.
+
+208
+00:15:14,460 --> 00:15:22,160
+y ves este tipo de tramas mucho para cosas como el PIB mundial en comparación con la población y tal vez factor de felicidad, etc.
+
+209
+00:15:22,610 --> 00:15:28,670
+Ver y aquí ahora tengo un diagrama de dispersión, excepto que el tamaño de los puntos se basa en
+
+210
+00:15:28,670 --> 00:15:30,350
+el valor de otra columna Entonces estas son tramas bastante comunes especialmente para cosas como los informes de las Naciones Unidas.
+
+211
+00:15:30,360 --> 00:15:36,270
+Derecha.
+
+212
+00:15:36,400 --> 00:15:37,070
+Entonces ese es el diagrama de burbujas.
+
+213
+00:15:37,100 --> 00:15:38,560
+Y finalmente, llegaremos
+
+214
+00:15:38,630 --> 00:15:46,150
+a la matriz de dispersión. La matriz de la matriz es esencialmente muy similar a la parcela marina.
+
+215
+00:15:46,180 --> 00:15:46,910
+Simplemente crea una matriz de dispersión de todas las columnas que puede.
+
+216
+00:15:46,910 --> 00:15:50,580
+todas tus columnas sean numéricas para que esto funcione.
+
+217
+00:15:50,580 --> 00:15:56,990
+Entonces dices DFA, que dispersa la matriz de subrayado, querrás decir que necesitarás asegurarte de que
+
+218
+00:15:57,050 --> 00:15:59,160
+Digamos matriz de dispersión y puede ampliar cada trama individualmente.
+
+219
+00:15:59,240 --> 00:16:03,880
+Tenga en cuenta que tiene muchos puntos aquí.
+
+220
+00:16:03,890 --> 00:16:05,740
+Esto llevará un tiempo para cargarse y puede ser muy lento en cuanto a acercamiento y alejamiento.
+
+221
+00:16:05,750 --> 00:16:09,540
+Así que usa esto de cuidado en conjuntos de datos muy grandes.
+
+222
+00:16:09,560 --> 00:16:12,140
+De lo contrario, puede bloquear su kernel de Python.
+
+223
+00:16:12,170 --> 00:16:17,480
+OK, eso es todo por los tipos de trama básicos que vamos a repasar en esta conferencia.
+
+224
+00:16:17,750 --> 00:16:21,350
+estos enlaces tutoriales de gemelos donde tienes una galería de gráficos.
+
+225
+00:16:21,410 --> 00:16:26,240
+Si desea obtener más información y más detalles sobre la documentación, le recomiendo que vaya
+
+226
+00:16:26,240 --> 00:16:32,480
+a la página web y esté disponible solo buscando Hub y Gemelos que lo llevarán a esta página. Está alojado
+
+227
+00:16:32,480 --> 00:16:38,930
+por los gemelos de slash Cesar Santos Jorge y yo contribuí como lo has visto antes y puedes consultar aquí
+
+228
+00:16:38,930 --> 00:16:43,520
+Te permite saber qué colores están disponibles en línea Pandurs les gusta completamente.
+
+229
+00:16:43,860 --> 00:16:47,690
+Hay mucha información realmente buena aquí.
+
+230
+00:16:47,700 --> 00:16:49,500
+Entonces, por ejemplo, si continúas
+
+231
+00:16:49,520 --> 00:16:54,800
+y dices pandas como si ya hubiéramos pasado bastante de esta información, hay algunos métodos de
+
+232
+00:16:55,250 --> 00:17:00,970
+trazado más básicos, como los histogramas de la gráfica de barras, y los histogramas apilados. no pasó
+
+233
+00:17:00,970 --> 00:17:05,320
+Pero básicamente es solo decir que kind es igual a area y hay más información.
+
+234
+00:17:05,330 --> 00:17:09,820
+Ahora que ya hemos hecho mucho de esto, pero si quieres más
+
+235
+00:17:09,830 --> 00:17:14,120
+detalles, siempre puedes consultar esta página de documentación, que es bastante buena.
+
+236
+00:17:14,120 --> 00:17:16,810
+Bueno.
+
+237
+00:17:17,280 --> 00:17:17,890
+Por último,
+
+238
+00:17:18,200 --> 00:17:22,790
+solo quería mencionar que hay algunas capacidades de análisis técnico con gemelos integrados.
+
+239
+00:17:22,790 --> 00:17:23,800
+Aún están en beta.
+
+240
+00:17:23,840 --> 00:17:25,790
+gemelos y luego revisando CA pi.
+
+241
+00:17:25,790 --> 00:17:32,000
+No están completamente disponibles, pero puede verlos en la sección de análisis técnico de esta biblioteca.
+
+242
+00:17:34,460 --> 00:17:41,000
+Puede obtener más información sobre estos gráficos de análisis técnico haciendo clic aquí en la carpeta de
+
+243
+00:17:41,000 --> 00:17:44,240
+Y este es el análisis técnico del archivo pi.
+
+244
+00:17:44,540 --> 00:17:46,910
+Una vez más, este es un tipo de material avanzado y específicamente está dedicado al análisis financiero.
+
+245
+00:17:46,910 --> 00:17:53,480
+Entonces, si no está interesado en el análisis financiero, no se preocupe por esto.
+
+246
+00:17:53,480 --> 00:17:57,010
+Pueden verificar algunas de las funciones aquí y algunos de los tipos que puede hacer.
+
+247
+00:17:57,030 --> 00:18:00,320
+Le permite hacer cosas como promedios móviles o correlación entre parcelas o acciones, etc. Exploraremos algunos de estos tipos de
+
+248
+00:18:00,320 --> 00:18:06,840
+gráficos más adelante en una sección opcional del proyecto culminante de datos financieros.
+
+249
+00:18:06,920 --> 00:18:12,190
+Pero si no estás interesado en este tipo de cosas, no te preocupes.
+
+250
+00:18:12,250 --> 00:18:12,940
+Solo quiero que se dé cuenta
+
+251
+00:18:13,070 --> 00:18:15,610
+de que está ahí para usted en caso de que esté interesado en el análisis financiero y la creación de tramas interactivas para eso.
+
+252
+00:18:15,680 --> 00:18:20,120
+Bueno.
+
+253
+00:18:20,210 --> 00:18:22,040
+Gracias a todos.
+
+254
+00:18:22,370 --> 00:18:23,000
+Espero que hayas disfrutado aprendiendo acerca de los gemelos de la trama.
+
+255
+00:18:23,240 --> 00:18:23,930
+Es una herramienta realmente poderosa.
+
+256
+00:18:23,930 --> 00:18:26,260
+Y la buena noticia es que no tiene que ajustar tanto su conocimiento para eso.
+
+257
+00:18:26,270 --> 00:18:27,710
+Básicamente, solo agrega un ojo y recuerda qué tipo de trama quiere aprobar.
+
+258
+00:18:27,770 --> 00:18:31,110
+DE ACUERDO.
+
+259
+00:18:31,120 --> 00:18:35,060
+Gracias a todos y lo veré en la próxima conferencia.
+
+260
+00:18:35,240 --> 00:18:35,880
+&nbsp;
+
+261
+00:18:36,110 --> 00:18:38,170
+&nbsp;

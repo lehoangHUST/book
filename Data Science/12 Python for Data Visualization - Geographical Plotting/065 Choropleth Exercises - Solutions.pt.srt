@@ -1,0 +1,547 @@
+1
+00:00:05,280 --> 00:00:10,350
+Olá a todos e seja bem vindo à leitura da solução de exercícios de mapas do Karplus nesta palestra.
+
+2
+00:00:10,350 --> 00:00:15,140
+Nós vamos codificar soluções para os exercícios na seção de mapas de Karplus.
+
+3
+00:00:15,150 --> 00:00:19,260
+Vamos em frente e chump é que você colocou um caderno para começar.
+
+4
+00:00:19,260 --> 00:00:19,470
+Tudo bem.
+
+5
+00:00:19,470 --> 00:00:21,500
+Aqui estou no caderno de Jupiter.
+
+6
+00:00:21,600 --> 00:00:26,850
+Eu quero ir em frente e executar as importações da trama, apesar de mudar de turno
+
+7
+00:00:26,850 --> 00:00:33,420
+entrar lá e então a primeira coisa que queremos fazer é importar pandas como PD e então vamos continuar
+
+8
+00:00:33,430 --> 00:00:37,830
+usando pandas para ler o CXXVI 2014 sublinhado consumo de energia mundial .
+
+9
+00:00:37,830 --> 00:00:47,570
+Então eu vou dizer a continuação da PD ler CXXVI e depois passen 2014.
+
+10
+00:00:47,690 --> 00:00:54,420
+Ou eu realmente posso usar apenas para encontrar bem e concluir isso e vamos seguir em frente e verificar
+
+11
+00:00:54,420 --> 00:00:57,130
+a cabeça do quadro de dados na cabeça.
+
+12
+00:00:57,360 --> 00:00:58,590
+E aqui temos isso.
+
+13
+00:00:58,630 --> 00:00:59,070
+ESTÁ BEM.
+
+14
+00:00:59,160 --> 00:01:04,460
+Agora, queremos fazer referência a eleições para criar um gráfico central do consumo de energia para países
+
+15
+00:01:04,470 --> 00:01:07,150
+que usam o dicionário de dados e layout.
+
+16
+00:01:07,170 --> 00:01:11,990
+Vamos continuar e começar com o dicionário de dados.
+
+17
+00:01:12,090 --> 00:01:20,540
+Quando eles chamam o dicionário de elenco e então eu vou dizer que a gravata é igual ao cloroplasto
+
+18
+00:01:20,540 --> 00:01:22,120
+como já fizemos antes.
+
+19
+00:01:22,260 --> 00:01:30,960
+A próxima chave que vou dar uma resposta é a localização e isso vai seguir em frente e ser igual à coluna
+
+20
+00:01:30,960 --> 00:01:32,400
+dos códigos de localização.
+
+21
+00:01:32,400 --> 00:01:34,520
+Neste caso, é apenas país aqui.
+
+22
+00:01:34,680 --> 00:01:36,410
+Então, eu vou passar num país
+
+23
+00:01:39,090 --> 00:01:45,570
+e então vou dizer o modo de localização e aqui é onde você teve uma referência para que a documentação para
+
+24
+00:01:45,570 --> 00:01:49,460
+descobrir o modo de localização é o nome do espaço do país.
+
+25
+00:01:49,570 --> 00:01:52,600
+E há um comprimento completo para a documentação aqui.
+
+26
+00:01:52,620 --> 00:01:53,710
+Você pode seguir em frente e clicar nesse link.
+
+27
+00:01:53,710 --> 00:01:57,810
+Isso irá levá-lo para a referência de documentação completa e você pode procurar qual é o
+
+28
+00:01:57,810 --> 00:01:59,790
+modo de localização correto para o país específico.
+
+29
+00:01:59,790 --> 00:02:04,080
+Uma vez que na verdade não temos os códigos de país, neste caso, temos os
+
+30
+00:02:04,080 --> 00:02:09,060
+nomes dos países e, esperançosamente, pesquisando na documentação, você pode descobrir isso ou apenas ao referenciar essas soluções.
+
+31
+00:02:10,320 --> 00:02:19,290
+Em seguida, queremos especificar que z e z serão iguais ao se e queremos que seja a coluna de consumo
+
+32
+00:02:19,290 --> 00:02:19,950
+de energia.
+
+33
+00:02:20,010 --> 00:02:22,590
+É o que realmente queremos que nossa coloração represente.
+
+34
+00:02:22,590 --> 00:02:34,770
+Então, você pode seguir em frente e dizer o consumo de energia e vai ser, digamos W H lá e depois o texto vai continuar e
+
+35
+00:02:34,770 --> 00:02:37,860
+ter esse também o nome do país.
+
+36
+00:02:37,860 --> 00:02:46,980
+Então, continuar a dizer que o texto é país e, finalmente, rotularemos nossa barra de cores para ser o dicionário ou um
+
+37
+00:02:46,980 --> 00:02:54,270
+título e o rótulo da barra de cores será ou a barra de cores do título será
+
+38
+00:02:55,110 --> 00:02:57,180
+o consumo de energia KWH.
+
+39
+00:02:57,210 --> 00:02:57,410
+Certo.
+
+40
+00:02:57,420 --> 00:03:01,200
+dicionário de dados básico, vamos voltar a isso e adicionar mais alguns argumentos depois.
+
+41
+00:03:01,200 --> 00:03:02,550
+E esse é o nosso
+
+42
+00:03:02,550 --> 00:03:05,450
+Mas também vamos fazer nossos layouts.
+
+43
+00:03:05,820 --> 00:03:09,870
+Então, vou dizer que projete um dicionário.
+
+44
+00:03:10,200 --> 00:03:18,300
+Então, o título desse título apenas o título da trama vai continuar e dizer consumo de energia 2014
+
+45
+00:03:18,300 --> 00:03:19,020
+como título.
+
+46
+00:03:19,470 --> 00:03:27,150
+E, em seguida, a próxima tela você configurou uma chave geográfica e, em seguida, pasan uma chamada de dicionário dizer mostrar quadro
+
+47
+00:03:27,150 --> 00:03:30,440
+uma sequela para falso e, em seguida, dizer projeção.
+
+48
+00:03:30,480 --> 00:03:34,400
+E você pode passar em qualquer projeção que você deseja, como foi mostrado nas palestras anteriores.
+
+49
+00:03:34,410 --> 00:03:39,420
+Mas vamos seguir em frente e ficar com isso.
+
+50
+00:03:39,540 --> 00:03:41,850
+Para direção.
+
+51
+00:03:42,920 --> 00:03:47,650
+E agora vamos continuar e correr o lasso e ver o que levamos.
+
+52
+00:03:47,660 --> 00:03:48,090
+Tudo bem.
+
+53
+00:03:48,090 --> 00:03:53,940
+E aqui você pode ver o consumo de energia de 2014 do mundo e podemos ver que a China e os EUA têm
+
+54
+00:03:53,940 --> 00:03:57,360
+o maior consumo de energia agora e a solução NÃO é um livro.
+
+55
+00:03:57,360 --> 00:04:06,090
+Eu segui adiante e mudei a escala de cores dizendo como um argumento no dicionário de dados que eu
+
+56
+00:04:06,090 --> 00:04:10,890
+disse que a escala de cores é igual a isso.
+
+57
+00:04:10,950 --> 00:04:18,000
+E então eu também disse que a escala reversa é igual a verdade.
+
+58
+00:04:19,110 --> 00:04:21,660
+E isso apenas torna esta escala de cores um pouco melhor.
+
+59
+00:04:21,660 --> 00:04:26,790
+Você não precisa fazer isso é um tipo de opcional, mas eu prefiro o tipo de escala de cores
+
+60
+00:04:26,790 --> 00:04:30,800
+que torna um pouco mais óbvio entre os países, em vez de ter tudo esgrima.
+
+61
+00:04:30,870 --> 00:04:31,530
+Tudo bem.
+
+62
+00:04:31,530 --> 00:04:34,700
+Essa foi a forma como é o plano de consumo de energia de 2014.
+
+63
+00:04:34,770 --> 00:04:39,720
+coisas na documentação que eu sei, pode ser complicado e irritante às vezes, mas por escolhas de
+
+64
+00:04:39,720 --> 00:04:45,390
+sintaxe tão estranhas, tanto quanto planejar as coisas, você realmente terá que fazer isso quando você quer criar essas parcelas.
+
+65
+00:04:45,390 --> 00:04:47,780
+E novamente, muita coisa foi ter que procurar
+
+66
+00:04:47,790 --> 00:04:51,320
+Vai ser difícil tentar chamar essas coisas diretamente de sua memória.
+
+67
+00:04:52,580 --> 00:04:55,720
+Tudo bem, vá em frente e vá para a chave de coroa dos EUA.
+
+68
+00:04:55,890 --> 00:04:58,940
+Queremos fazer é importar os dados da eleição de 2012.
+
+69
+00:04:59,140 --> 00:05:00,630
+Eu vou sair e usar painelista para fazer isso.
+
+70
+00:05:00,670 --> 00:05:04,990
+Eu direi que o USDA é igual à PD.
+
+71
+00:05:05,110 --> 00:05:11,050
+Leia CXXVI e depois vamos analisar os dados eleitorais de 2012.
+
+72
+00:05:11,170 --> 00:05:13,510
+Quero dizer apenas usar a aba para preencher isso automaticamente.
+
+73
+00:05:13,870 --> 00:05:17,850
+E então eu vou apenas verificar a cabeça desse quadro de dados, dizendo-nos o Fed.
+
+74
+00:05:18,250 --> 00:05:20,740
+E aqui obtemos o quadro de dados correspondente.
+
+75
+00:05:20,740 --> 00:05:24,930
+Agora vamos entrar e criar uma trama que exiba a população de idade de votação por estado.
+
+76
+00:05:24,940 --> 00:05:35,050
+O AP vai fazer o meu dicionário de dados dizendo que os dados são iguais a dicks e, em seguida, todos dizem que o tipo é Curle plus.
+
+77
+00:05:38,940 --> 00:05:44,440
+E vamos seguir em frente e adicionar esses argumentos de escala de cores, então eu vou
+
+78
+00:05:44,460 --> 00:05:51,180
+entrar e dizer que uma escala de cores é igual a isso e também uma escala inversa para ser verdade.
+
+79
+00:05:51,430 --> 00:05:56,940
+E a razão pela qual eu digo uma escala inversa igual a verdade é que ele realmente inverte a escala de cores.
+
+80
+00:05:56,940 --> 00:06:03,400
+não colocarmos isso, por exemplo, a escala inversa, digamos, é igual a falso aqui, o padrão.
+
+81
+00:06:03,390 --> 00:06:07,820
+Deixe-me ir mostrá-lo apenas de forma rápida o que acontece se
+
+82
+00:06:08,230 --> 00:06:12,370
+Então eu recebo uma escala que se parece com isso, o que não é realmente tão agradável como ter o
+
+83
+00:06:12,370 --> 00:06:16,030
+inverso para que você possa reverter qualquer escala de cores que você deseja apenas adicionando nesse parâmetro.
+
+84
+00:06:16,120 --> 00:06:22,200
+E para isso, geralmente funciona muito melhor se você realmente diz que a escala inversa é verdadeira.
+
+85
+00:06:22,200 --> 00:06:28,860
+Então, isso é o que parece por padrão, então não invertido, mas eu prefiro que as cores mais escuras sejam a
+
+86
+00:06:28,870 --> 00:06:29,660
+maior quantidade.
+
+87
+00:06:29,680 --> 00:06:31,580
+Dessa forma, é um pouco mais claro.
+
+88
+00:06:31,600 --> 00:06:32,140
+Tudo bem.
+
+89
+00:06:32,400 --> 00:06:39,910
+Continuando se saltarmos aqui, sairemos e diremos que a escala reversa é igual a locais verdadeiros.
+
+90
+00:06:39,900 --> 00:06:47,290
+Vai ser igual à abreviatura de estado que, se realmente olharmos para isso, temos o nome
+
+91
+00:06:47,280 --> 00:06:51,340
+do estado e a abreviatura do estado no final.
+
+92
+00:06:51,610 --> 00:07:04,190
+Vamos seguir a abreviatura de estado de uso, diremos a USCF Hassen a coluna abreviada do estado.
+
+93
+00:07:04,260 --> 00:07:09,400
+Em seguida, queremos escolher ou Z e isso já lhe foi dito o que você deveria escolher.
+
+94
+00:07:09,430 --> 00:07:12,260
+Era a população em idade de votar.
+
+95
+00:07:12,260 --> 00:07:17,500
+O AP e o modo de localização.
+
+96
+00:07:17,940 --> 00:07:19,210
+Serão chamados dois.
+
+97
+00:07:19,240 --> 00:07:25,410
+Assim como nos exemplos que os Estados Unidos indicam, apenas como na palestra e depois no nosso texto.
+
+98
+00:07:25,410 --> 00:07:33,490
+Vamos seguir em frente e simplesmente escolher o texto para ser o nome do estado atual para os Estados da USCF e, então, vamos seguir em frente e
+
+99
+00:07:33,490 --> 00:07:35,430
+fazê-lo dizer que a barra de cores
+
+100
+00:07:38,860 --> 00:07:41,230
+é igual e depois passamos um dicionário aqui.
+
+101
+00:07:41,250 --> 00:07:50,370
+Título e isso só vai ser idade de votantes.
+
+102
+00:07:50,400 --> 00:07:51,850
+Vamos correr isso.
+
+103
+00:07:51,880 --> 00:07:53,340
+Tudo bem, temos um dicionário de dados.
+
+104
+00:07:53,380 --> 00:07:56,880
+Agora é hora de fazer nosso dicionário de lay out.
+
+105
+00:07:58,090 --> 00:08:00,100
+Passamos no nosso dicionário de elenco.
+
+106
+00:08:00,150 --> 00:08:07,930
+Nós definimos o título de toda a nossa trama aqui, vamos chamar isso de eleição de 2012.
+
+107
+00:08:08,350 --> 00:08:09,900
+Você pode chamá-lo do que quiser.
+
+108
+00:08:10,120 --> 00:08:13,110
+Nós diremos o equivalente ao dicionário de Geo.
+
+109
+00:08:13,320 --> 00:08:17,500
+Cisco EUA.
+
+110
+00:08:17,950 --> 00:08:22,180
+Outro argumento que vamos dizer é que os Lagos são iguais a verdade.
+
+111
+00:08:22,500 --> 00:08:27,640
+E então, simplesmente escolhemos a cor do lago e quero fazer a cor tardia com o mecanismo
+
+112
+00:08:27,630 --> 00:08:30,810
+RSGB que vimos nas palestras onde parcialmente aceita uma string.
+
+113
+00:08:30,890 --> 00:08:33,650
+É um tipo de formato estranho, digamos R. G. B.
+
+114
+00:08:33,850 --> 00:08:41,700
+E então, você realmente passa os valores numéricos e escolha esses números 85 173 e 240, o que nos dá
+
+115
+00:08:41,700 --> 00:08:44,610
+uma boa tonalidade azul para os Lagos.
+
+116
+00:08:44,640 --> 00:08:45,190
+Tudo bem.
+
+117
+00:08:45,370 --> 00:08:46,050
+Essa é a nossa disposição.
+
+118
+00:08:46,060 --> 00:08:48,140
+Vamos fazer isso.
+
+119
+00:08:48,450 --> 00:08:54,480
+estados mais populosos, como a Califórnia, o Texas e Nova York e a Flórida, tenham cores mais escuras porque têm a
+
+120
+00:08:54,490 --> 00:08:59,430
+maior população, o que significa que eles provavelmente também têm a maior população de idade de votação.
+
+121
+00:08:59,430 --> 00:09:03,460
+E aqui vemos os dados das eleições de 2012 e faz sentido que os
+
+122
+00:09:03,450 --> 00:09:03,880
+Tudo bem.
+
+123
+00:09:03,880 --> 00:09:06,570
+Isso é para os exercícios de mapas de coral.
+
+124
+00:09:06,580 --> 00:09:13,360
+Foram apenas esses dados eleitorais dos EUA e esses dados internacionais de consumo de energia espero ter visto
+
+125
+00:09:13,360 --> 00:09:19,120
+o poder da trama em ser capaz de reproduzir o tipo de parcelas bastante avançadas.
+
+126
+00:09:19,300 --> 00:09:25,650
+com apenas algumas linhas de código que vem ao custo da sintaxe sendo um pouco estranho e ter que
+
+127
+00:09:25,650 --> 00:09:31,650
+referenciar a documentação, mas ter uma trama que parece legal e poder interagir com ela e ampliar e
+
+128
+00:09:31,650 --> 00:09:37,710
+verificar os números e definir Texto para o que você deseja ter sobre ele é muito legal.
+
+129
+00:09:37,710 --> 00:09:38,110
+E
+
+130
+00:09:38,110 --> 00:09:43,540
+Dado quanto código você está realmente escrevendo em outros idiomas, isso levaria muito mais código.
+
+131
+00:09:43,540 --> 00:09:44,170
+Tudo bem.
+
+132
+00:09:44,160 --> 00:09:49,630
+Espero que você goste dos exercícios de mapas do Pluff, que devem ser muito desafiantes e ter que
+
+133
+00:09:49,620 --> 00:09:52,780
+fazer referência a uma grande quantidade da documentação para compreendê-la.
+
+134
+00:09:52,870 --> 00:09:57,460
+Mas também é um exemplo real do que você pode fazer ao fazer essas coisas por
+
+135
+00:09:57,450 --> 00:09:58,190
+conta própria.
+
+136
+00:09:58,330 --> 00:09:59,400
+Mas você gostou.
+
+137
+00:09:59,400 --> 00:10:01,160
+Obrigado a todos e eu vou ver você na próxima palestra

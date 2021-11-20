@@ -1,0 +1,335 @@
+1
+00:00:05,520 --> 00:00:06,990
+Hola a todos los demás también.
+
+2
+00:00:06,990 --> 00:00:11,290
+Parte dos de estas series de conferencias de mapas de cloroplastos en la parte 2.
+
+3
+00:00:11,290 --> 00:00:14,640
+Nos enfocaremos en mapas internacionales o mundiales.
+
+4
+00:00:14,730 --> 00:00:19,860
+Parte 1, que es la última conferencia, nos enfocamos en los mapas de coropletas de Estados Unidos y en todo el país.
+
+5
+00:00:19,860 --> 00:00:24,900
+Ahora vamos a seguir adelante y cambiar esto a un nivel internacional mundial.
+
+6
+00:00:24,900 --> 00:00:28,980
+Avancemos y vayamos al cuaderno de Júpiter para comenzar.
+
+7
+00:00:28,980 --> 00:00:29,280
+Todo bien.
+
+8
+00:00:29,280 --> 00:00:31,280
+Aquí estoy en el cuaderno de Júpiter.
+
+9
+00:00:31,320 --> 00:00:35,950
+La última vez que dejamos en U. S. exportaciones agrícolas por estado.
+
+10
+00:00:36,030 --> 00:00:42,510
+Avancemos y pasemos a nuestro próximo conjunto de datos, que es un conjunto de datos del PIB mundial
+
+11
+00:00:42,600 --> 00:00:48,980
+para seguir adelante y comentar la última trama y decir que es física para PD leer CSP.
+
+12
+00:00:49,000 --> 00:00:57,210
+Ahora vamos a seguir adelante y abrir el conjunto de datos del PIB mundial 2014 y luego verificar el encabezado de
+
+13
+00:00:57,210 --> 00:00:58,020
+esos datos.
+
+14
+00:00:58,310 --> 00:01:01,540
+Tenemos un nombre de país PIB en miles de millones.
+
+15
+00:01:01,590 --> 00:01:03,410
+Y luego el código de país.
+
+16
+00:01:03,510 --> 00:01:08,910
+estandarizar el código para los países internacionales básicamente lo mismo que los códigos de estado que vimos anteriormente.
+
+17
+00:01:08,910 --> 00:01:10,170
+Así que digamos que
+
+18
+00:01:10,320 --> 00:01:16,020
+Vamos a seguir adelante y usar este valor en el país del PIB como tal vez un texto y luego
+
+19
+00:01:16,020 --> 00:01:20,130
+el código es el tiempo actual del código para el mapeo de coral plus.
+
+20
+00:01:20,700 --> 00:01:24,780
+Avancemos y comencemos a crear nuestra variable de datos.
+
+21
+00:01:24,780 --> 00:01:36,020
+Nuevamente lo llamamos diccionario, decimos que el tipo es igual a Perl Plath, tal como lo hicimos la última vez.
+
+22
+00:01:36,050 --> 00:01:47,760
+Continúe y diga que las ubicaciones y las ubicaciones van a ser iguales a la columna de código, luego, para el valor
+
+23
+00:01:47,760 --> 00:01:54,400
+de z, avanzaremos y estableceremos eso igual al PIB en miles de millones.
+
+24
+00:01:54,420 --> 00:02:00,000
+el marco de datos y luego avanzaremos y estableceremos los argumentos de la barra de colores.
+
+25
+00:02:02,700 --> 00:02:07,190
+Continuaremos y estableceremos un texto igual a la columna de país en
+
+26
+00:02:07,190 --> 00:02:11,610
+Y aquí tenemos el diccionario donde pasamos y el título tiene una
+
+27
+00:02:11,610 --> 00:02:19,320
+clave y luego un valor de cadena para el título y solo diremos el PIB en miles de millones de dólares.
+
+28
+00:02:19,320 --> 00:02:23,260
+Y ese es nuestro objeto de datos.
+
+29
+00:02:23,310 --> 00:02:30,590
+Y ahora para la variable de disposición, vamos a seguir adelante y decir que el casting es un diccionario.
+
+30
+00:02:31,080 --> 00:02:38,820
+Estableceremos que el título sea igual al PIB global de 2014 y lo próximo
+
+31
+00:02:41,490 --> 00:02:46,890
+que haremos es establecer que Geo es igual a.
+
+32
+00:02:46,950 --> 00:02:56,370
+De hecho, pongo esto en la misma línea que mostrar marco es igual a falso.
+
+33
+00:02:56,370 --> 00:03:04,620
+Y luego no va a ser otro diccionario e ir a decir mostrar marco.
+
+34
+00:03:04,770 --> 00:03:10,230
+Por ahora y el próximo argumento que vamos a decir es la proyección.
+
+35
+00:03:10,230 --> 00:03:12,160
+Y puede hacer referencia a la documentación.
+
+36
+00:03:12,420 --> 00:03:20,990
+Pero por ahora solo diremos que la proyección de la documentación predeterminada, que es esta trama de América o proyección,
+
+37
+00:03:21,000 --> 00:03:24,310
+parece que el diccionario está listo para funcionar.
+
+38
+00:03:24,630 --> 00:03:30,400
+Avancemos y digamos que el mapa 3 de Koro es igual a.
+
+39
+00:03:30,430 --> 00:03:33,010
+Imagínate.
+
+40
+00:03:33,180 --> 00:03:41,650
+Los datos son iguales a los datos pasados ​​como una sola lista de elementos y luego se distribuyen de la misma manera.
+
+41
+00:03:42,660 --> 00:03:46,870
+Y luego podemos simplemente llamar a las parcelas en el mapa de coral 3.
+
+42
+00:03:47,580 --> 00:03:55,200
+Y aquí tenemos nuestro PIB global 2014 y se puede ver que la escala aquí básicamente solo señala los principales valores atípicos
+
+43
+00:03:55,260 --> 00:04:00,630
+que son los Estados Unidos, China y algunos de ellos son los países del cinturón o
+
+44
+00:04:00,630 --> 00:04:03,570
+los países con mayor población en el mundo.
+
+45
+00:04:03,570 --> 00:04:08,490
+Ahora, como he mencionado varias veces para hacer este tipo de tramas por su cuenta, probablemente tenga
+
+46
+00:04:08,490 --> 00:04:12,690
+que hacer referencia a la documentación o a los cuadernos de Júpiter y, en cierto
+
+47
+00:04:12,690 --> 00:04:14,740
+modo, quiero explorar esa referencia con usted.
+
+48
+00:04:14,850 --> 00:04:20,100
+el enlace provisto en el cuaderno de Júpiter o simplemente ir a trazar la referencia de barras diagonales de Python.
+
+49
+00:04:20,100 --> 00:04:21,780
+Puede continuar y hacer clic en
+
+50
+00:04:21,990 --> 00:04:27,810
+Y aquí hay básicamente una referencia completa de todos los argumentos que puede pasar a todos los tipos
+
+51
+00:04:27,810 --> 00:04:33,090
+de gráficos sin par y puede desplazarse hacia abajo hasta la sección del mapa y hacer clic
+
+52
+00:04:33,090 --> 00:04:38,750
+en chloroplast para acceder a la sección core plus y ver los diversos argumentos que puede pasar aquí
+
+53
+00:04:38,760 --> 00:04:42,780
+y puede verificar algo como, por ejemplo, la proyección que continuamos aquí.
+
+54
+00:04:42,900 --> 00:04:44,860
+O simplemente podemos buscarlo.
+
+55
+00:04:45,390 --> 00:04:51,580
+Entonces puedo buscar una proyección que sé que está aquí y podemos tener el tipo y aquí estamos bajo cloroplastos
+
+56
+00:04:51,690 --> 00:04:54,860
+y podemos pasar y tal vez otro tipo de proyección.
+
+57
+00:04:55,200 --> 00:05:02,080
+Eso significa que podemos agarrar una de estas cuerdas y simplemente agarrar esta que es otro tipo de proyección.
+
+58
+00:05:02,100 --> 00:05:07,830
+Solo vengo aquí, reemplace el hilo de la cadena y luego ejecute esta trama de nuevo.
+
+59
+00:05:07,830 --> 00:05:10,350
+Y ahora tengo un tipo de proyección diferente.
+
+60
+00:05:10,390 --> 00:05:13,270
+Observe aquí cómo el país tiene una forma un poco diferente.
+
+61
+00:05:13,270 --> 00:05:19,080
+Puedes continuar y seguir explorando estos, como una proyección estereográfica aquí.
+
+62
+00:05:19,080 --> 00:05:25,530
+Copie, pegue y vuelva a ejecutar, y eso es básicamente lo que hace cuando está jugando
+
+63
+00:05:25,560 --> 00:05:27,160
+y explorando estas bibliotecas.
+
+64
+00:05:27,390 --> 00:05:30,600
+Así que aquí hay otra proyección en la que realmente puedes girar esto.
+
+65
+00:05:30,600 --> 00:05:34,100
+Es un poco extraño, es una especie de sensación de globo invertido.
+
+66
+00:05:34,290 --> 00:05:38,110
+Pueden seguir y jugar con estos y explorarlos por su cuenta.
+
+67
+00:05:38,370 --> 00:05:43,920
+Una proyección que es agradable de observar es la proyección natural de la tierra, que
+
+68
+00:05:43,920 --> 00:05:51,360
+si sigues adelante y pasas aquí tierra natural y luego vuelves a ejecutar esto obtienes básicamente una bonita tierra de
+
+69
+00:05:51,960 --> 00:05:57,690
+aspecto natural y puedes pasarla y refrescarla y puedes ver la rotación aquí en el planeta.
+
+70
+00:05:58,140 --> 00:05:58,560
+DE ACUERDO.
+
+71
+00:05:58,650 --> 00:06:00,720
+Adelante y explora la documentación.
+
+72
+00:06:00,750 --> 00:06:05,790
+tipo de plétora de coral, bibliotecas de trazado geográfico más complicadas y capacidades de Watley.
+
+73
+00:06:05,790 --> 00:06:09,060
+Esa es una gran parte de aprender cómo usar este
+
+74
+00:06:09,090 --> 00:06:13,860
+Como mencioné antes, bastante de esto tiene que ver con sus datos. Parece
+
+75
+00:06:13,860 --> 00:06:20,490
+que si sus datos no están en un formato que la trama pueda aceptar, probablemente deba utilizarlos en
+
+76
+00:06:20,690 --> 00:06:26,730
+otra biblioteca de trazado geográfico, pero ojalá pueda convertirlos. un código de país o nombre de país
+
+77
+00:06:26,730 --> 00:06:28,740
+en un formato aceptable para Watley.
+
+78
+00:06:28,740 --> 00:06:30,380
+De acuerdo, eso es todo por esta conferencia.
+
+79
+00:06:30,390 --> 00:06:36,870
+Espero que lo hayan disfrutado y hayan visto el poder de la trama a pesar de que es un poco difícil en cuanto a la sintaxis solo
+
+80
+00:06:36,870 --> 00:06:38,450
+por unas pocas líneas de código.
+
+81
+00:06:38,460 --> 00:06:42,570
+Quiero decir, esto es solo unas 15 líneas de código, incluso menos.
+
+82
+00:06:42,660 --> 00:06:49,020
+De hecho, puede hacer una visualización interactiva muy atractiva en una escala
+
+83
+00:06:49,020 --> 00:06:50,160
+geográfica internacional.
+
+84
+00:06:50,160 --> 00:06:53,160
+De acuerdo, gracias a todos y nos vemos en la próxima conferencia

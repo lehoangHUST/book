@@ -1,0 +1,351 @@
+1
+00:00:05,190 --> 00:00:10,920
+Salve a tutti e benvenuti alla conferenza sulla trama della regressione per Seaborn, Seaborn ha molti strumenti per
+
+2
+00:00:10,920 --> 00:00:12,260
+l'aggressione e le trame.
+
+3
+00:00:12,270 --> 00:00:16,320
+Tuttavia, non discuteremo realmente della regressione fino alla sezione di apprendimento automatico di questo corso.
+
+4
+00:00:16,350 --> 00:00:22,590
+Quindi per ora coprirà solo la funzione L e la trama L. M. trama consente di visualizzare modelli lineari
+
+5
+00:00:22,670 --> 00:00:23,560
+con Seaborn.
+
+6
+00:00:23,730 --> 00:00:28,090
+Scopri anche come dimensionare e modificare le proporzioni per i tracciati via mare.
+
+7
+00:00:28,140 --> 00:00:30,960
+Andiamo avanti e saltiamo sul taccuino di Jupiter per iniziare.
+
+8
+00:00:31,020 --> 00:00:32,980
+Tutto qui sono al taccuino di Giove.
+
+9
+00:00:33,030 --> 00:00:37,550
+Voglio dirigere una linea marittima importata chiamata Matt plotlessless in linea e ho caricato il set di
+
+10
+00:00:37,550 --> 00:00:39,410
+dati dei suggerimenti con cui abbiamo lavorato.
+
+11
+00:00:39,480 --> 00:00:46,020
+Vai e mostraci come usare la trama L-M per creare una trama di un modello
+
+12
+00:00:47,150 --> 00:00:56,850
+lineare molto semplice che chiami Esson questo L. M. tracci e poi quale caratteristica si desidera sull'asse x
+
+13
+00:00:56,850 --> 00:01:04,980
+rispetto all'asse y andando nel conto totale del grafico e sull'asse y andrà avanti e lo chiameremo nella nostra origine dati saranno suggerimenti.
+
+14
+00:01:05,120 --> 00:01:10,290
+Ora, se procedete in avanti, vediamo che fondamentalmente abbiamo un grafico a dispersione con
+
+15
+00:01:10,290 --> 00:01:17,340
+un adattamento lineare sopra di esso e potete effettivamente specificare anche se volete una separazione basata su una caratteristica categoriale.
+
+16
+00:01:17,820 --> 00:01:20,400
+Ad esempio possiamo specificare Huie al sesso.
+
+17
+00:01:21,060 --> 00:01:26,340
+E ora avete essenzialmente due diagrammi di dispersione e due accoppiamenti lineari in cima a questo e questo
+
+18
+00:01:26,400 --> 00:01:30,870
+è fondamentalmente qualcosa di molto da dedurre da questa trama: il maschio e la femmina
+
+19
+00:01:30,870 --> 00:01:35,190
+hanno essenzialmente la stessa vestibilità lineare per quanto riguarda il conto totale rispetto alla punta.
+
+20
+00:01:35,520 --> 00:01:41,340
+Qualcosa da notare qui è che possono effettivamente iniziare a passare in quei parametri di stile di trama in tempo reale
+
+21
+00:01:41,400 --> 00:01:44,900
+come se si desidera che influenzino i marcatori oi tipi di marcatori qui.
+
+22
+00:01:44,910 --> 00:01:53,400
+Potresti iniziare a dire che qualcosa del genere andrà a dire che i marcatori sono uguali a.
+
+23
+00:01:53,420 --> 00:01:57,080
+Dato che abbiamo a che fare con una tonalità, qui abbiamo due marker separati di cui abbiamo bisogno.
+
+24
+00:01:57,150 --> 00:02:03,210
+e poi V minuscola per un altro e questi marcatori questi simboli provengono dalla mappa più i simboli del marcatore lib.
+
+25
+00:02:03,240 --> 00:02:09,300
+Può passare qualsiasi tipo di elenco di indicatori in modo che io possa entrare e dire O piccola per un indicatore
+
+26
+00:02:09,630 --> 00:02:15,990
+Quindi vai a correre e poi vediamo che abbiamo i triangoli per le femmine e cerchi per i maschi.
+
+27
+00:02:16,350 --> 00:02:22,110
+Ora, se questo non è abbastanza grande da poter vedere, puoi andare avanti e iniziare ad
+
+28
+00:02:22,170 --> 00:02:31,020
+aggiungere quello che è noto come un parametro ks di underscore scatter e in pratica ciò che significa è che posso effettivamente passare i parametri
+
+29
+00:02:31,020 --> 00:02:35,710
+di lib plot plot ancora più direttamente nel Piel t quella chiamata sparsa.
+
+30
+00:02:35,940 --> 00:02:37,520
+Quindi cosa sta facendo il mare con questo.
+
+31
+00:02:37,560 --> 00:02:43,180
+La trama di S and S è che in realtà sta chiamando la trama delle mappe molto sotto il cofano.
+
+32
+00:02:43,260 --> 00:02:50,220
+si finisce per farlo e di questo tipo, caso per caso, quindi è necessario fare riferimento alla documentazione, se necessario.
+
+33
+00:02:50,220 --> 00:02:55,520
+E se si desidera effettuare una trama della trama vissuta direttamente dal mare, ciò che
+
+34
+00:02:55,620 --> 00:03:02,340
+Ma se vuoi che questo caso abbia effetto sul grafico a dispersione, passerai qualsiasi dizionario, così posso andare
+
+35
+00:03:02,340 --> 00:03:07,550
+avanti e pronunciare il dizionario s e cambiare le dimensioni in qualcosa come 100.
+
+36
+00:03:07,590 --> 00:03:10,000
+E questo influenzerà effettivamente la dimensione di questi indicatori.
+
+37
+00:03:10,030 --> 00:03:14,270
+Hai intenzione di gestire quello spettacolo tu ed io abbiamo reso i marcatori molto più grandi.
+
+38
+00:03:14,580 --> 00:03:20,940
+Quindi questo è in realtà solo una chiamata per mappare la trama lib e cosa sta succedendo sotto il cofano di Seaborn.
+
+39
+00:03:20,940 --> 00:03:25,650
+In altre parole stai passando un qualsiasi dizionario con gli argomenti della tabella di base della trama e in questo caso lo
+
+40
+00:03:25,650 --> 00:03:25,850
+è.
+
+41
+00:03:25,890 --> 00:03:30,960
+Per quanto riguarda le dimensioni di un grafico a dispersione, in generale, probabilmente non ti ricorderai di questo tipo di cose
+
+42
+00:03:30,960 --> 00:03:33,900
+dalla cima della tua testa, ma questo è il riferimento alla documentazione.
+
+43
+00:03:33,900 --> 00:03:38,810
+E probabilmente non starai personalizzando in questo modo che spesso con Seaborn.
+
+44
+00:03:39,210 --> 00:03:43,430
+Andrai avanti e personalizzerai i tuoi dati prima di fare questo tipo di azione.
+
+45
+00:03:43,770 --> 00:03:46,060
+Andiamo avanti e mostriamo un paio di altre opzioni qui.
+
+46
+00:03:46,170 --> 00:03:52,410
+Nel caso in cui non si vogliano scherzare con il ridimensionamento dei marker, è possibile utilizzare una
+
+47
+00:03:52,410 --> 00:03:59,500
+griglia invece di separarli da Hugh in modo da poterne aggiungere altri dicendo che Asinus ha pensato a Ellen.
+
+48
+00:03:59,610 --> 00:04:08,390
+Andiamo avanti e copiamo e incolliamo la punta della banconota e i dati e andremo avanti e faremo.
+
+49
+00:04:08,400 --> 00:04:16,080
+Dopo aver visto questo invece di specificare qualcosa come Heugh uguale al sesso che cambia la tonalità del colore, puoi effettivamente
+
+50
+00:04:16,500 --> 00:04:23,760
+iniziare a chiamare il fattore o la trama della griglia come dire chiamare lo stesso sesso per le colonne.
+
+51
+00:04:24,000 --> 00:04:29,060
+E ora devi separare i grafici delle colonne qui separati dalla categoria del sesso.
+
+52
+00:04:29,130 --> 00:04:31,110
+Quindi maschio contro femmina.
+
+53
+00:04:31,110 --> 00:04:37,140
+Quindi, invece di separarlo per colore separato da colonne e puoi continuare questo tipo di logica anche
+
+54
+00:04:37,140 --> 00:04:38,040
+sulle righe.
+
+55
+00:04:38,070 --> 00:04:45,510
+la riga è uguale a qualcosa come la colonna del tempo e ora hai righe e orari e questo è essenzialmente solo facendo le
+
+56
+00:04:46,400 --> 00:04:52,130
+chiamate alla griglia e le chiamate del gruppo Fassett che abbiamo appreso in precedenza nel conferenza di griglia.
+
+57
+00:04:52,140 --> 00:04:55,130
+Se vuoi aggiungere un'altra variabile per vedere puoi dire che
+
+58
+00:04:55,200 --> 00:05:00,360
+Ma è un po 'più automatico perché stiamo solo aggiungendo call e row alla chiamata al plot L-M.
+
+59
+00:05:00,360 --> 00:05:01,790
+Quindi lo rende molto più facile.
+
+60
+00:05:01,790 --> 00:05:05,220
+Ora non dobbiamo trattare sempre bene Fassett.
+
+61
+00:05:05,220 --> 00:05:11,250
+Ora se per qualche motivo vuoi ancora tracciare più variabili puoi aggiungere il back-end di Hugh in modo
+
+62
+00:05:11,250 --> 00:05:14,750
+da poter dire che Heugh è uguale a dire un'altra colonna.
+
+63
+00:05:14,880 --> 00:05:22,920
+Voglio entrare e dire che la colonna è il giorno in cui abbiamo giovedì il sabato e la domenica è la colonna.
+
+64
+00:05:22,920 --> 00:05:25,380
+Cambierà la tonalità tornando al sesso.
+
+65
+00:05:25,520 --> 00:05:31,040
+Quindi questo ci darà una trama abbastanza informativa ma qui ci saranno molte informazioni in modo che tu possa
+
+66
+00:05:31,070 --> 00:05:33,900
+vedere che ci sono molte cose qui e molte informazioni.
+
+67
+00:05:33,900 --> 00:05:38,610
+Quindi probabilmente vuoi solo andare avanti ed eliminare la fila immediatamente e ottenere solo una
+
+68
+00:05:40,620 --> 00:05:46,290
+colonna indietro o un Roback mi scusi e quindi abbiamo una trama piuttosto carina qui, ma il problema
+
+69
+00:05:46,290 --> 00:05:48,430
+è che aspetto e dimensioni sembrano sbagliati.
+
+70
+00:05:48,660 --> 00:05:54,990
+In questo modo i numeri di Seaborn avranno le dimensioni e le proporzioni adattate con le dimensioni e i parametri di aspetto.
+
+71
+00:05:55,290 --> 00:06:04,380
+Quindi vai nel tuo richiamo via mare e poi puoi cambiare il rapporto aspetto con l'aspetto quindi è buono e dargli un rapporto
+
+72
+00:06:04,380 --> 00:06:07,170
+aspetto di 0. 6.
+
+73
+00:06:07,170 --> 00:06:11,460
+E questo è il rapporto tra l'altezza e la larghezza di ciascuna di queste griglie separate.
+
+74
+00:06:11,700 --> 00:06:18,370
+E poi puoi specificare la dimensione per cambiare le dimensioni per specificare la dimensione 8.
+
+75
+00:06:18,870 --> 00:06:23,520
+E qui ha iniziato a influenzare l'aspetto e il rapporto dimensionale di questo.
+
+76
+00:06:24,000 --> 00:06:27,960
+E ora ti starai probabilmente chiedendo come faccio a cambiare la dimensione del font è ancora troppo piccola
+
+77
+00:06:27,960 --> 00:06:30,150
+per leggere o come posso controllare l'estetica ancora di più.
+
+78
+00:06:30,270 --> 00:06:35,700
+Be ', lo faremo condurre a questo nella nostra conferenza sullo stile e sui colori
+
+79
+00:06:35,700 --> 00:06:42,780
+che sta per succedere, dove mostreremo come controllare queste caratteristiche più basilari della trama, come la colorazione dello stile della
+
+80
+00:06:42,780 --> 00:06:43,950
+dimensione del carattere, ecc. Per quanto riguarda questa conferenza, abbiamo praticamente finito.
+
+81
+00:06:44,160 --> 00:06:46,950
+La cosa principale che voglio che tu esca da questo è che
+
+82
+00:06:46,980 --> 00:06:51,360
+per chiamare una trama di un modello lineare basta chiamare s e la trama di slm passare la colonna
+
+83
+00:06:51,410 --> 00:06:58,140
+xy e impostare i tuoi dati e quindi puoi passare Hugh per queste funzioni più avanzate come l'impostazione la dimensione dell'indicatore o la modifica del tipo di indicatore.
+
+84
+00:06:58,140 --> 00:07:02,130
+Vai avanti e fai riferimento al taccuino e al link alla documentazione sul quaderno.
+
+85
+00:07:02,130 --> 00:07:06,420
+Tutto ok.
+
+86
+00:07:06,570 --> 00:07:07,050
+Se hai qualche domanda, sentiti libero di pubblicare il forum Domande e risposte e sarò felice di aiutarti.
+
+87
+00:07:07,260 --> 00:07:11,450
+Grazie e ci vediamo alla prossima lezione.
+
+88
+00:07:11,460 --> 00:07:13,560
+&nbsp;

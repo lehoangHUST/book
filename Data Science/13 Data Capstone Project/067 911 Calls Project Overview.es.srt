@@ -1,0 +1,127 @@
+1
+00:00:05,010 --> 00:00:09,930
+Hola a todos y bienvenidos a la conferencia de introducción del proyecto final de datos y esta
+
+2
+00:00:09,930 --> 00:00:14,300
+conferencia vamos a repasar el nuevo libro Treinta y nueve a uno llamado el proyecto final.
+
+3
+00:00:14,310 --> 00:00:17,580
+Avancemos y saltemos al cuaderno de Júpiter para comenzar.
+
+4
+00:00:17,580 --> 00:00:22,920
+Muy bien, así que aquí estoy, en el cuaderno, este cuaderno está ubicado debajo de la carpeta de proyectos Capstone de datos.
+
+5
+00:00:23,400 --> 00:00:28,840
+Y para este proyecto final vamos a analizar algunos datos de llamadas del 911 de Kaggle dot com.
+
+6
+00:00:29,000 --> 00:00:32,600
+Y si ingresas y haces clic en este enlace, te llevará a la fuente de ese conjunto de datos aquí.
+
+7
+00:00:32,600 --> 00:00:37,190
+Kaggle ya está descargado como un archivo CAC para que tengas que descargar todo.
+
+8
+00:00:37,360 --> 00:00:42,780
+clic aquí en datasets lo lleva a este enlace y básicamente es un lugar donde puede publicar conjuntos de datos.
+
+9
+00:00:42,780 --> 00:00:47,460
+Pero al igual que un resumen rápido de dónde provienen estos datos proviene de Kaggle dot com
+
+10
+00:00:47,460 --> 00:00:48,570
+y Kaggle si hace
+
+11
+00:00:48,570 --> 00:00:53,010
+También hay un aspecto de competición de aprendizaje automático en este sitio web, que abordaremos cuando hablemos
+
+12
+00:00:53,010 --> 00:00:55,420
+de la sección de aprendizaje automático de este curso.
+
+13
+00:00:55,530 --> 00:01:00,050
+Pero por ahora puedes pensar que es solo un lugar donde las personas pueden publicar conjuntos de datos.
+
+14
+00:01:00,060 --> 00:01:07,170
+Muy bien, estas llamadas al 911 provienen del condado de Montgomery en Pensilvania y contienen los siguientes campos de latitud y
+
+15
+00:01:07,170 --> 00:01:13,380
+longitud de donde se realizó la llamada, una descripción de la llamada de emergencia, el título del código
+
+16
+00:01:13,560 --> 00:01:15,210
+postal, una marca de tiempo.
+
+17
+00:01:15,210 --> 00:01:18,510
+Pero observe que es una cadena, no un objeto de fecha y hora real.
+
+18
+00:01:18,540 --> 00:01:22,920
+Y luego un municipio tiene una cadena y una cadena de direcciones y luego esa última columna E.
+
+19
+00:01:23,010 --> 00:01:25,080
+Es solo una variable ficticia, siempre es una.
+
+20
+00:01:25,140 --> 00:01:29,850
+Por lo tanto, puede ignorar por completo esa columna y luego aceptará esta libreta e intentará
+
+21
+00:01:29,880 --> 00:01:33,910
+completar las instrucciones lo mejor que pueda, y siempre podrá publicar de manera aguda.
+
+22
+00:01:33,930 --> 00:01:38,520
+una conferencia de video que aparece a continuación, ve a lo largo de la página importa los
+
+23
+00:01:38,520 --> 00:01:44,400
+datos, configúralo todo explora un poco los datos con algunas preguntas crea nuevas características a partir de los datos haga un
+
+24
+00:01:44,400 --> 00:01:50,280
+poco de visualizaciones de las representaciones de barras para hacer algunas visualizaciones lineales y luego también creará algunos mapas de calor.
+
+25
+00:01:50,340 --> 00:01:54,820
+Si te quedas atascado o solo puedes hacer referencia a una libreta de soluciones o a
+
+26
+00:01:54,840 --> 00:01:55,620
+Todo bien.
+
+27
+00:01:55,620 --> 00:01:57,240
+Eso es todo por esta conferencia.
+
+28
+00:01:57,240 --> 00:01:58,980
+La mejor de las suertes en el proyecto final.
+
+29
+00:01:58,980 --> 00:01:59,820
+Espero que lo disfruten.
+
+30
+00:01:59,820 --> 00:02:00,880
+Es bastante interesante.
+
+31
+00:02:01,020 --> 00:02:04,740
+Y los veré en la próxima conferencia donde repasaremos las soluciones paso a paso.
+
+32
+00:02:04,740 --> 00:02:06,620
+Gracias a todos y nos vemos en la próxima conferencia

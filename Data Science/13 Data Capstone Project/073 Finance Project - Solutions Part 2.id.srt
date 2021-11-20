@@ -1,0 +1,899 @@
+1
+00:00:05,490 --> 00:00:10,460
+Halo semuanya dan selamat datang di bagian dua dari kuliah solusi proyek keuangan.
+
+2
+00:00:10,470 --> 00:00:15,780
+Mari kita maju dan melompat kembali ke buku catatan Jupiter di mana kita tinggalkan terakhir kali.
+
+3
+00:00:15,780 --> 00:00:16,080
+BAIK.
+
+4
+00:00:16,080 --> 00:00:17,810
+Di sini saya di notebook Jupiter.
+
+5
+00:00:17,820 --> 00:00:20,740
+Terakhir kali kami tinggalkan, kami baru saja membuat plot halaman ini.
+
+6
+00:00:20,760 --> 00:00:23,830
+Perhatikan sedikit perilaku aneh saat Citigroup kembali.
+
+7
+00:00:24,030 --> 00:00:29,250
+Dan jika itu menonjol bagi Anda, maka Anda dapat memeriksa halaman Wikipedia Citigroup dan Anda akan melihat bahwa
+
+8
+00:00:29,250 --> 00:00:31,640
+pada bulan November 2008 mereka mengalami crash.
+
+9
+00:00:31,650 --> 00:00:34,710
+Dan kita akan benar-benar menjelajahinya nanti.
+
+10
+00:00:35,370 --> 00:00:41,070
+Tetapi yang akan kita lakukan selanjutnya adalah menggunakan kerangka data pengembalian ini untuk mencari tahu pada tanggal berapa
+
+11
+00:00:41,070 --> 00:00:47,340
+setiap saham bank memiliki pengembalian satu hari terbaik dan terburuk dan Anda harus memperhatikan bahwa empat bank berbagi pada hari
+
+12
+00:00:47,340 --> 00:00:52,500
+yang sama untuk penurunan yang lebih buruk dan bahwa sesuatu yang signifikan terjadi pada hari itu.
+
+13
+00:00:52,500 --> 00:01:00,300
+Mari kita mulai dan memulai sesuatu yang bisa kita lakukan hanya memeriksa frame data pengembalian dan perhatikan kita memiliki kolom
+
+14
+00:01:00,330 --> 00:01:04,700
+ini di sini bahwa B A C kembali C kembali dll.
+
+15
+00:01:04,780 --> 00:01:09,580
+Saya ingin mendapatkan nilai minimum untuk pengembalian ini dan semuanya adalah pengembalian SATU HARI.
+
+16
+00:01:09,600 --> 00:01:16,960
+Saya hanya bisa mengatakan bahwa laki-laki akan mengembalikan minimum nilai pengembalian satu hari.
+
+17
+00:01:16,970 --> 00:01:23,220
+Sekarang yang sebenarnya kita inginkan adalah tanggal ketika ini terjadi dan ada beberapa cara untuk melakukan ini.
+
+18
+00:01:23,220 --> 00:01:31,920
+Salah satunya adalah Anda dapat mengulangi melalui nama-nama kolom dan kemudian jika Anda mengingat nama Anda PI alih-alih
+
+19
+00:01:32,520 --> 00:01:39,240
+memanggil misalnya laki-laki dari kolom itu Anda dapat memanggil argumen argumen akan mengembalikan cap
+
+20
+00:01:39,300 --> 00:01:43,430
+waktu dan kasus ini adalah 20 Januari 2009.
+
+21
+00:01:43,450 --> 00:01:49,290
+Sekarang Anda bisa melakukannya untuk setiap kolom tunggal atau Panther juga memungkinkan Anda
+
+22
+00:01:49,290 --> 00:01:57,600
+untuk melakukan ini di seluruh kerangka data hanya dengan memanggil id x men dan yang mengembalikan seri yang pada dasarnya
+
+23
+00:01:57,930 --> 00:02:04,140
+seperti ini dengan tanggal atau indeks dari nilai minimum pengembalian untuk setiap bank dan
+
+24
+00:02:04,140 --> 00:02:12,090
+Anda dapat melakukan hal yang sama dengan mengatakan pengembalian id x max untuk mendapatkan keuntungan satu hari terbesar.
+
+25
+00:02:12,150 --> 00:02:20,190
+Sekarang sejauh pengasahan terburuk Anda akan melihat banyak dari mereka terjadi pada 20 Januari 2009.
+
+26
+00:02:20,280 --> 00:02:25,980
+Dan jika Anda ingin tahu apa yang terjadi hari itu, Anda dapat melanjutkan dan mencari google dan
+
+27
+00:02:25,980 --> 00:02:30,950
+Anda akan melihat bahwa ini sebenarnya adalah tanggal pelantikan Barack Obama yang agak menarik.
+
+28
+00:02:31,710 --> 00:02:37,200
+Sesuatu yang perlu dicatat di sini apakah itu berkorelasi atau hanya kebetulan atau pada dasarnya
+
+29
+00:02:37,200 --> 00:02:41,000
+beberapa investor pasar panik ketika beberapa perubahan politik besar terjadi.
+
+30
+00:02:41,070 --> 00:02:47,730
+Anda benar-benar dapat melihat ide Max yang misalnya hari pengembalian terbesar JP Morgan adalah hari
+
+31
+00:02:47,730 --> 00:02:48,640
+berikutnya berikutnya.
+
+32
+00:02:48,720 --> 00:02:52,740
+Jadi jangan menganggap ini sebagai komentar politik atau nasihat keuangan apa pun.
+
+33
+00:02:52,740 --> 00:02:55,840
+Pasar saham terkadang agak aneh.
+
+34
+00:02:55,890 --> 00:03:01,710
+Sekarang jika kami memeriksa pertanyaan berikutnya, ia mengatakan Anda seharusnya memperhatikan bahwa penurunan terbesar dan perolehan
+
+35
+00:03:01,770 --> 00:03:04,770
+terbesar Citigroup sangat dekat satu sama lain.
+
+36
+00:03:05,040 --> 00:03:11,040
+Jadi kami perhatikan bahwa keuntungan JP Morgan terjadi pada hari yang sama setelah hari peresmian tepat setelah kerugian
+
+37
+00:03:11,040 --> 00:03:12,020
+terbesar mereka.
+
+38
+00:03:12,240 --> 00:03:22,920
+Tetapi jika kita melihat Citigroup mageddon jelas itu menjual jika kita melihat Citigroup mereka memiliki 2011 6 Mei dan 2000 11 kesembilan dari
+
+39
+00:03:22,920 --> 00:03:31,110
+saya yang sangat dekat satu sama lain adalah pengembalian terburuk dan pengembalian terbaik dan itu adalah sesuatu
+
+40
+00:03:31,590 --> 00:03:34,540
+yang signifikan terjadi pada waktu itu.
+
+41
+00:03:34,650 --> 00:03:35,990
+Sebenarnya ya.
+
+42
+00:03:36,420 --> 00:03:43,200
+Jika Anda akhirnya menggunakan Google sesuatu seperti Citigroup pada tahun 2011, Anda harus mendapatkan berita yang terlihat seperti ini di mana
+
+43
+00:03:43,200 --> 00:03:48,120
+Citigroup mengumumkan reverse stock split dan pada dasarnya itulah yang terjadi sekitar waktu itu.
+
+44
+00:03:48,450 --> 00:03:55,330
+Dan Anda dapat melihat bahwa itu efektif pada 6 Mei 2011 yang sesuai dengan data kami di sini.
+
+45
+00:03:55,890 --> 00:03:56,160
+Baiklah.
+
+46
+00:03:56,160 --> 00:03:56,880
+Jadi itu keren sekali.
+
+47
+00:03:56,880 --> 00:04:03,330
+Kita benar-benar dapat mengkorelasikan atau melihat peristiwa nyata yang mempengaruhi harga saham kita dalam data yang kita miliki
+
+48
+00:04:03,330 --> 00:04:06,270
+dalam kerangka data kita yang agak menarik.
+
+49
+00:04:06,360 --> 00:04:11,220
+Sekarang jika kita melanjutkan apa yang ingin kita lakukan adalah melihat deviasi standar pengembalian dan saham
+
+50
+00:04:11,220 --> 00:04:15,990
+mana yang akan Anda klasifikasikan sebagai yang paling berisiko sepanjang periode waktu dan yang akan
+
+51
+00:04:15,990 --> 00:04:19,040
+Anda klasifikasikan sebagai yang paling berisiko untuk tahun 2015.
+
+52
+00:04:19,380 --> 00:04:25,320
+Jadi kadang-kadang pengukuran dasar risiko perlu keberisikoan saham adalah standar deviasi dari
+
+53
+00:04:25,320 --> 00:04:26,700
+pengembalian saham.
+
+54
+00:04:26,700 --> 00:04:31,200
+Jadi, jika Anda memiliki standar deviasi pengembalian yang sangat besar itu berarti stok Anda naik
+
+55
+00:04:31,530 --> 00:04:33,880
+dan turun banyak dibandingkan deviasi Steria kecil.
+
+56
+00:04:33,900 --> 00:04:35,790
+Itu berarti harga Anda cukup stabil.
+
+57
+00:04:35,790 --> 00:04:39,270
+Jadi, jika Anda memiliki standar deviasi tinggi, stok Anda mungkin cukup berisiko.
+
+58
+00:04:39,780 --> 00:04:41,970
+Mari kita lanjutkan dan lihat apakah kita bisa melakukan ini.
+
+59
+00:04:42,030 --> 00:04:43,100
+Ini sebenarnya cukup sederhana.
+
+60
+00:04:43,110 --> 00:04:47,930
+Anda bisa mengatakan pengembalian dan saya benar-benar akan meletakkan ini di sel di sini.
+
+61
+00:04:47,940 --> 00:04:52,440
+Mengembalikan da SDD untuk standar deviasi dan kami mendapatkan sesuatu yang terlihat seperti ini.
+
+62
+00:04:52,440 --> 00:04:59,130
+Pada dasarnya deviasi standar untuk setiap saham dan sepertinya keseluruhan yang paling berisiko secara keseluruhan
+
+63
+00:04:59,250 --> 00:05:00,640
+sebenarnya adalah Citigroup.
+
+64
+00:05:00,690 --> 00:05:01,860
+Dan nanti kita akan lihat alasannya.
+
+65
+00:05:01,860 --> 00:05:10,500
+Karena mengalami crash besar dan sejauh 2015 kita dapat melanjutkan dan mengatakan pengembalian dalam apa yang ingin kita
+
+66
+00:05:10,500 --> 00:05:14,530
+lakukan adalah mencari tahu jika kita melihat kepala.
+
+67
+00:05:14,820 --> 00:05:19,770
+Kami hanya ingin mendapatkan nilai untuk 2015 dan itu didasarkan pada indeks.
+
+68
+00:05:20,010 --> 00:05:29,710
+Artinya saya ingin benar-benar mengambil bagian atau sepotong indeks dan saya bisa menggunakannya dengan menggunakan I
+
+69
+00:05:29,730 --> 00:05:41,390
+X dan saya akan lulus dari 2015 0 1 0 1 jadi mulai 1 Januari 2015 sebagai sepotong hingga 2015.
+
+70
+00:05:41,460 --> 00:05:46,960
+Dua belas tigapuluh satu adalah irisan dan kemudian membatalkan standar deviasi itu.
+
+71
+00:05:47,550 --> 00:05:52,980
+Dan Anda akan melihat bahwa pada 2015 yang jauh di luar jatuhnya Citigroup mereka
+
+72
+00:05:52,980 --> 00:05:59,940
+sebenarnya memiliki profil risiko yang sangat mirip dengan Fargo palsu menjadi risiko terendah dengan jumlah yang tidak seberapa.
+
+73
+00:06:00,420 --> 00:06:07,860
+Dan sepertinya Morgan Stanley atau Bank of America adalah risiko tertinggi tetapi pada dasarnya penyimpangan
+
+74
+00:06:07,860 --> 00:06:10,990
+standar sangat dekat satu sama lain.
+
+75
+00:06:11,040 --> 00:06:17,530
+OK selanjutnya kita ingin mengatakan buat plot menggunakan seaborne dari pengembalian 2015 untuk Morgan Stanley.
+
+76
+00:06:17,610 --> 00:06:19,160
+Ayo maju dan lakukan itu.
+
+77
+00:06:19,230 --> 00:06:26,700
+Kita dapat melanjutkan dan mengatakan begitu saya memikirkan plot ini di Saya ingin pengembalian Morgan Stanley 2015 ketika kita
+
+78
+00:06:27,150 --> 00:06:32,690
+pergi dan menyalin kode ini di sini dan ini adalah pengembalian 2015 saya.
+
+79
+00:06:32,790 --> 00:06:41,820
+Dan kemudian saya hanya ingin Morgan Stanley yang berarti saya hanya ingin kolom kembali M-S
+
+80
+00:06:41,820 --> 00:06:49,920
+dan kita bisa melanjutkan dan warna hijau ini sehingga cocok dengan solusi kuliah.
+
+81
+00:06:50,070 --> 00:06:54,810
+Dan mari kita lanjutkan dan meningkatkan ukuran nampan atau jumlah sampah permisi karena kita sebenarnya memiliki
+
+82
+00:06:54,810 --> 00:06:55,640
+sedikit data.
+
+83
+00:06:55,650 --> 00:07:02,040
+Jadi saya akan melanjutkan dan mengatakan sampah sama dengan sesuatu seperti katakan saja 50
+
+84
+00:07:02,130 --> 00:07:02,480
+Baiklah.
+
+85
+00:07:02,520 --> 00:07:07,800
+Dan sekarang kami memiliki distribusi pengembalian untuk Morgan Stanley di tahun 2015.
+
+86
+00:07:07,800 --> 00:07:12,210
+Baiklah jadi di sini kita bisa melihat sejauh pengembalian M-S dan distribusinya sejauh apa yang
+
+87
+00:07:12,210 --> 00:07:13,710
+kita lihat adalah cukup stabil.
+
+88
+00:07:13,710 --> 00:07:20,730
+Anda sedang melihat pengembalian persen yang hanya menyimpang sekitar 0 6 dari rata-rata tetapi kita akan
+
+89
+00:07:20,730 --> 00:07:27,450
+terus maju dan lakukan sekarang adalah memeriksa plot distribusi menggunakan seaborne dari pengembalian 2008 untuk
+
+90
+00:07:27,450 --> 00:07:35,570
+Citigroup yang merupakan tahun yang cukup volatile bagi mereka utara untuk melakukan ini akan pergi ke depan dan
+
+91
+00:07:35,640 --> 00:07:47,100
+mengatakan seaborne plot ini atau Sonesta plot ini mengembalikan IX dan saya akan pergi ke depan dan mengirisnya dan menyalin ini tetapi bukannya 2015 kita akan
+
+92
+00:07:47,100 --> 00:07:48,840
+pergi ke depan
+
+93
+00:07:52,000 --> 00:08:00,960
+dan menempatkan pada tahun 2008 kita akan melakukan hal yang sama di sini 2008 dan kemudian kami ingin kolom kembali C.
+
+94
+00:08:01,220 --> 00:08:07,110
+Jangan lanjutkan dan warnai merah ini sehingga kita dapat membedakan di sini dan saya akan pergi ke depan dan
+
+95
+00:08:07,200 --> 00:08:08,460
+mengatur sama dengan bin.
+
+96
+00:08:08,820 --> 00:08:11,480
+Mari kita lanjutkan dan katakan 50 lagi.
+
+97
+00:08:12,130 --> 00:08:17,490
+Dan jika saya menjalankan ini jika kita masuk dan membandingkan ini Anda akan melihat bahwa
+
+98
+00:08:17,490 --> 00:08:22,590
+standar deviasi sebenarnya sedikit lebih membentang terutama di sini Anda hampir poin 6.
+
+99
+00:08:22,650 --> 00:08:30,180
+Dan jika kita melihat kembali seperti tahun normal untuk bank 2015 Eropa poin 0 6 sebenarnya 10 kali
+
+100
+00:08:30,180 --> 00:08:30,980
+lipat
+
+101
+00:08:31,140 --> 00:08:37,950
+Sejauh distribusi ini menunjukkan ekstrem di sini cukup outlier dan kami akan melanjutkan dan mengeksplorasi apa yang
+
+102
+00:08:37,950 --> 00:08:41,130
+sebenarnya terjadi pada Citigroup selama tahun ini.
+
+103
+00:08:41,130 --> 00:08:47,610
+Tapi ini semacam indikasi di sini tentang krisis keuangan yang dialami saham.
+
+104
+00:08:47,690 --> 00:08:48,150
+Baiklah.
+
+105
+00:08:48,360 --> 00:08:52,430
+Jadi kita akan melakukan beberapa visualisasi lagi dan banyak proyek proyek ini benar-benar fokus pada visualisasi
+
+106
+00:08:52,800 --> 00:08:56,790
+dan Anda dapat merasa bebas untuk menggunakan perpustakaan visualisasi pilihan Anda untuk membuat kembali plot
+
+107
+00:08:56,790 --> 00:08:58,300
+yang dijelaskan di bawah ini.
+
+108
+00:08:58,350 --> 00:09:02,940
+Anda akan dapat melakukannya sebenarnya dengan melihat lebih banyak lib plotline dan manset atau bahkan hanya
+
+109
+00:09:02,940 --> 00:09:06,840
+calo sehingga Anda dapat melanjutkan dan memilih metode apa pun yang Anda suka.
+
+110
+00:09:06,840 --> 00:09:10,710
+Saya akan pergi keluar dan menunjukkan kepada Anda beberapa cara untuk melakukan setiap plot dan kami benar-benar
+
+111
+00:09:10,710 --> 00:09:14,220
+akan menunjukkan kepada Anda bagaimana cara menggunakan manset Paulian untuk membuat plot ini dengan baik.
+
+112
+00:09:14,370 --> 00:09:19,500
+Baiklah jadi setelah menjalankan impor yang ingin kita keluar dan lakukan adalah membuat garis menunjukkan plot
+
+113
+00:09:19,500 --> 00:09:22,990
+di harga dekat untuk setiap bank atau seluruh indeks waktu.
+
+114
+00:09:23,130 --> 00:09:27,480
+Dan ada beberapa petunjuk di sini untuk mencoba menggunakan for for atau menggunakan
+
+115
+00:09:27,480 --> 00:09:29,520
+metode penampang untuk mendapatkan penampang data.
+
+116
+00:09:29,640 --> 00:09:32,520
+Dan di sini kita bisa melihat kedua metode yang dimainkan.
+
+117
+00:09:32,520 --> 00:09:35,110
+Mari kita lanjutkan dan tunjukkan metode for loop terlebih dahulu.
+
+118
+00:09:35,400 --> 00:09:41,220
+Dan mudah-mudahan di sini jelas sekarang menggunakan Citigroup sebagai melihat kehancuran besar ini pada
+
+119
+00:09:41,520 --> 00:09:46,970
+tahun 2008 harus dilakukan sejauh standar deviasi mereka cukup besar untuk tahun itu.
+
+120
+00:09:47,490 --> 00:09:49,960
+Tapi bagaimanapun itu akan kembali ke for loop.
+
+121
+00:09:50,400 --> 00:09:57,540
+Aku akan pergi dan mengatakan untuk tick di ticker yang diingat adalah bahwa daftar tickers
+
+122
+00:09:57,540 --> 00:10:07,170
+saham memanggil harga saham bank tick lalu pergi saja dan merencanakan ini dan aku akan merencanakan ini aku akan
+
+123
+00:10:07,170 --> 00:10:10,720
+tentukan bahwa label sama dengan centang.
+
+124
+00:10:10,940 --> 00:10:13,760
+Sekarang kita tahu garis apa yang sejauh warna pergi.
+
+125
+00:10:13,860 --> 00:10:19,930
+Dan kemudian saya juga akan menentukan ukuran Fig untuk direntangkan sedikit supaya kita bisa mendapatkan visualisasi yang sama
+
+126
+00:10:20,760 --> 00:10:22,940
+seperti yang kita miliki di sini.
+
+127
+00:10:22,980 --> 00:10:31,040
+Dan akhirnya saya akan memanggil legenda sehingga kita bisa melihat legenda dan jika saya menjalankannya saya mendapatkan plot yang sama.
+
+128
+00:10:31,050 --> 00:10:37,800
+Itu terlihat seperti ini sehingga kita dapat dengan jelas melihat bahwa Citigroup benar-benar hancur setelah 2008
+
+129
+00:10:38,310 --> 00:10:39,360
+resesi hebat.
+
+130
+00:10:39,480 --> 00:10:44,820
+Dan yang menarik juga adalah garis merah Goldman Sachs yang seperti dips dan kemudian
+
+131
+00:10:44,820 --> 00:10:47,550
+bangkit kembali dengan cepat setelah resesi.
+
+132
+00:10:47,750 --> 00:10:52,020
+Dan Anda harus memperbesar lebih lanjut untuk melihat bank lain dan melihat kinerjanya.
+
+133
+00:10:52,200 --> 00:10:58,470
+Tetapi secara relatif itu tidak hampir sama efeknya dengan saham lain
+
+134
+00:10:58,500 --> 00:11:08,060
+mari kita pergi ke depan dan menunjukkan kepada Anda bagaimana melakukan ini kita memiliki bagian lintas bisa juga
+
+135
+00:11:08,130 --> 00:11:20,790
+mengatakan saham bank menghentikan akses dengan kunci sama dengan menutup akses sama dengan yang dan kami Sedang melihat kolom mengatakan level adalah info persediaan.
+
+136
+00:11:20,820 --> 00:11:22,460
+Dan jika kita hanya melihat itu.
+
+137
+00:11:22,650 --> 00:11:25,600
+Ini pada dasarnya semua harga penutupan untuk saham.
+
+138
+00:11:25,620 --> 00:11:30,710
+Dan kemudian apa yang harus kita lakukan di sana hanyalah menelepon plot dan Anda mendapatkan plot yang sama.
+
+139
+00:11:30,930 --> 00:11:35,490
+Jadi alih-alih melakukan for for, Anda bisa melakukan ini semua dalam satu baris menggunakan penampang.
+
+140
+00:11:35,580 --> 00:11:40,260
+Dan lagi Anda dapat mengubah ukuran gambar dan melakukan perintah loop plot peta lainnya yang Anda inginkan pada plot itu.
+
+141
+00:11:41,370 --> 00:11:47,160
+Akhirnya mari kita lanjutkan dan tunjukkan plot cara untuk melakukan ini yang pada dasarnya hanya garis yang sama
+
+142
+00:11:47,760 --> 00:11:49,560
+ini yang menciptakan bingkai data.
+
+143
+00:11:49,950 --> 00:11:57,090
+Tapi kemudian Anda menelepon, saya merencanakannya dan manset sekarang akan memungkinkan Anda untuk membuat plot yang terlihat sangat bagus di
+
+144
+00:11:57,090 --> 00:12:01,940
+mana Anda dapat memvisualisasikan hal-hal dan benar-benar melihat nilai-nilai dan jenis bermain-main dengannya.
+
+145
+00:12:01,950 --> 00:12:06,990
+Jadi jika Anda benar-benar ingin memperbesar saham non Citigroup atau Goldman Sachs, Anda
+
+146
+00:12:06,990 --> 00:12:12,240
+dapat keluar dan melakukannya dengan hanya mengambil penampang lalu memeriksa penurunan sehingga Anda dapat
+
+147
+00:12:12,390 --> 00:12:18,810
+melihat penurunan di sini selama krisis keuangan juga karena beberapa perilaku aneh selama hal-hal seperti stock split
+
+148
+00:12:18,810 --> 00:12:20,820
+seperti ini di bulan Mei.
+
+149
+00:12:20,820 --> 00:12:21,290
+Baiklah.
+
+150
+00:12:21,450 --> 00:12:25,860
+Jadi ini membuatnya sangat menyenangkan untuk bermain-main dari data dan jenis mengeksplorasi harga
+
+151
+00:12:25,860 --> 00:12:27,340
+saham selama krisis keuangan.
+
+152
+00:12:27,440 --> 00:12:31,300
+Kita akan pergi ke depan dan lakukan adalah bergerak ke moving average.
+
+153
+00:12:31,590 --> 00:12:35,960
+Dan kita akan menganalisis moving average untuk saham selama tahun 2008.
+
+154
+00:12:36,000 --> 00:12:40,650
+Jadi hal pertama yang perlu kita lakukan adalah plot rata-rata 30 hari bergulir terhadap
+
+155
+00:12:40,650 --> 00:12:44,330
+harga penutupan untuk saham Bank of America untuk tahun 2008.
+
+156
+00:12:44,340 --> 00:12:46,560
+Mari kita lanjutkan dan tunjukkan bagaimana kita bisa melakukan ini.
+
+157
+00:12:46,590 --> 00:12:53,170
+Saya akan mengatakan B A C dan memeriksa kepala nomor B A C.
+
+158
+00:12:53,180 --> 00:12:56,570
+Itu adalah kerangka data asli pertama saya untuk Bank of America.
+
+159
+00:12:56,580 --> 00:13:02,070
+Sebelum kita benar-benar memasukkannya ke dalam saham garis bawah bank dan kemudian akan
+
+160
+00:13:02,070 --> 00:13:10,590
+mengambil panggilan penutupan mereka dari itu dan saya akan menggunakan metode IX untuk terus maju dan mengiris tanggal yang saya inginkan
+
+161
+00:13:10,590 --> 00:13:14,430
+dan saya ingin 2008 1 Januari semua cara untuk
+
+162
+00:13:16,890 --> 00:13:18,420
+2009 1 Januari.
+
+163
+00:13:18,480 --> 00:13:19,800
+Jadi setahun penuh.
+
+164
+00:13:20,310 --> 00:13:24,710
+Dan kemudian apa yang ingin kita lakukan adalah menggunakan metode rolling.
+
+165
+00:13:25,920 --> 00:13:35,220
+Jadi Panas memiliki kemampuan untuk memberikan Anda metode bergulir untuk rata-rata bergerak dan kemudian kita dapat mengatakan berarti sebagai metode
+
+166
+00:13:37,620 --> 00:13:38,220
+kami.
+
+167
+00:13:38,220 --> 00:13:45,330
+Dan kemudian kita bisa langsung lanjutkan dan plot ini dan kita sebenarnya bisa plot ini dengan label sehingga kita bisa menunjukkan apa yang
+
+168
+00:13:46,530 --> 00:13:47,240
+kita lihat.
+
+169
+00:13:47,240 --> 00:13:55,410
+Jadi kita akan masuk dan mengatakan label ini adalah rata-rata bergerak 30 hari sebagai label dan hal berikutnya yang akan
+
+170
+00:13:55,410 --> 00:14:03,180
+kita lakukan adalah kita hanya akan merencanakan hal yang sama lihat dekat tetapi dalam kasus ini semua diplot
+
+171
+00:14:03,180 --> 00:14:04,520
+terhadap stok harga.
+
+172
+00:14:04,590 --> 00:14:16,600
+Jadi katakan plot itu dan label ini akan menjadi BAMC tutup dan kemudian kita akan memanggil PLDT legenda itu.
+
+173
+00:14:17,790 --> 00:14:21,900
+Jadi jika kita jalankan saja kita mendapatkan plot yang terlihat seperti ini
+
+174
+00:14:21,900 --> 00:14:29,310
+dan kita dapat melanjutkan dan merentangkan ini jika kita ingin dengan mengatakan Piazzi mencari ukuran besar dan kita dapat menyatakan ini sebagai sesuatu
+
+175
+00:14:29,600 --> 00:14:35,700
+yang sedikit lebih bagus seperti yang saya katakan sebelumnya dari peregangan dan ada rata-rata pergerakan 30 hari Anda terhadap
+
+176
+00:14:35,700 --> 00:14:36,960
+harga penutupan aktual.
+
+177
+00:14:36,960 --> 00:14:41,620
+Hal ini memungkinkan Anda untuk melihat tren umum saham seiring berjalannya waktu.
+
+178
+00:14:41,670 --> 00:14:47,010
+Dan Anda dapat mengubah jendela ini menjadi rata-rata bergerak mingguan atau rata-rata bergerak 60 hari apa pun yang
+
+179
+00:14:47,010 --> 00:14:47,740
+Anda inginkan.
+
+180
+00:14:48,150 --> 00:14:52,860
+Baiklah hal berikutnya yang ingin Anda lakukan adalah membuat peta panas korelasi antara
+
+181
+00:14:52,950 --> 00:14:54,660
+harga penutupan saham ini.
+
+182
+00:14:54,690 --> 00:14:56,520
+Mari kita lanjutkan dan tunjukkan bagaimana kita bisa melakukan itu.
+
+183
+00:14:56,550 --> 00:15:04,710
+Anda dapat memanggil Asinus peta panas dan sekarang kami ingin mendapatkan korelasi dari harga penutupan Issing saham.
+
+184
+00:15:04,800 --> 00:15:09,580
+Mari kita lanjutkan dan hanya tag hash keluar dan benar-benar membangun frame data itu terlebih dahulu.
+
+185
+00:15:09,990 --> 00:15:12,120
+Ini akan sangat mirip dengan apa yang telah Anda lakukan sebelumnya.
+
+186
+00:15:12,210 --> 00:15:21,230
+Kami akan keluar dan mengambil bagian lintas dari harga penutupan dengan mengatakan dia menutup pada X sama dengan 1.
+
+187
+00:15:21,540 --> 00:15:23,730
+Levelnya adalah info stok dan jika
+
+188
+00:15:27,500 --> 00:15:29,440
+kita baru saja memeriksanya.
+
+189
+00:15:29,820 --> 00:15:33,090
+Itu hanya harga penutupan untuk saham.
+
+190
+00:15:33,090 --> 00:15:39,240
+Dan jika saya katakan c o r r itu memberi saya korelasi.
+
+191
+00:15:39,240 --> 00:15:43,430
+Dan sekarang saya memiliki sesuatu dalam bentuk matriks yang bisa saya panggil ke peta panas.
+
+192
+00:15:43,730 --> 00:15:51,450
+Jadi saya akan pergi ke depan dan membuka tutup dan katakan peta panas di sini dan periksa peta panas saya.
+
+193
+00:15:52,470 --> 00:16:00,320
+Dan sekarang saya memiliki peta panas saya dan jika saya ingin anotasi yang sebenarnya saya bisa katakan dan itu sama dengan benar dan
+
+194
+00:16:00,330 --> 00:16:05,310
+kemudian kita akan melanjutkan dan memasukkan anotasi di sini dan di sini kita dapat
+
+195
+00:16:05,310 --> 00:16:12,630
+melihat korelasi antara harga penutupan saham di sesuatu yang secara opsional dapat kita lakukan serta menggunakan peta cluster untuk benar-benar mengelompokkan
+
+196
+00:16:12,630 --> 00:16:17,550
+korelasi ini bersama-sama mungkin membantu membuatnya sedikit lebih jelas tentang apa yang terjadi.
+
+197
+00:16:18,060 --> 00:16:24,660
+Jadi dalam semacam peta panas yang harus Anda lakukan adalah mengetikkan peta cluster dan Anda menjalankan ini, Anda harus mendapatkan banyak
+
+198
+00:16:24,660 --> 00:16:26,080
+yang terlihat seperti ini.
+
+199
+00:16:26,280 --> 00:16:34,920
+Jadi sepertinya seaborne mencoba mengelompokkan Citigroup Morgan Stanley dan Bank of America bersama-sama
+
+200
+00:16:34,920 --> 00:16:39,580
+dan korelasinya menjadi satu kelompok dan emas.
+
+201
+00:16:39,600 --> 00:16:45,030
+Goldman Sachs J. P. Jenis Morgan dan Wells Fargo ke dalam kelompok lain
+
+202
+00:16:45,030 --> 00:16:46,400
+memiliki semacam korelasi satu sama lain.
+
+203
+00:16:46,410 --> 00:16:46,990
+Baiklah.
+
+204
+00:16:47,220 --> 00:16:51,060
+Anda dapat memeriksa plot mana yang merupakan saham yang paling berkorelasi atau jika satu sama lain.
+
+205
+00:16:51,060 --> 00:17:00,750
+Sepertinya itu JPMorgan dan Wells Fargo serta Morgan Stanley dan Bank of America.
+
+206
+00:17:00,750 --> 00:17:01,400
+BAIK.
+
+207
+00:17:01,770 --> 00:17:04,490
+Jadi itu untuk proyek keuangan.
+
+208
+00:17:04,500 --> 00:17:09,090
+Ada bagian dua opsional yang akan ditampilkan dalam bagian tiga dari solusi perkuliahan dan yang
+
+209
+00:17:09,090 --> 00:17:15,240
+memiliki lebih banyak untuk dilakukan jika saya merencanakan dan beberapa kemampuan khusus manset tetapi karena ketergantungannya yang tinggi pada manset
+
+210
+00:17:15,270 --> 00:17:19,740
+itu semacam hal opsional yang dapat Anda ketik dari mengeksplorasi sendiri jika beberapa fungsi
+
+211
+00:17:19,740 --> 00:17:21,420
+yang rusak di masa depan.
+
+212
+00:17:21,420 --> 00:17:22,860
+Tapi saya harap Anda menikmati proyek ini.
+
+213
+00:17:22,860 --> 00:17:29,280
+Itu dimaksudkan untuk menjadi sangat menantang dan sulit tetapi itu adalah jenis sifat dan analisis
+
+214
+00:17:29,280 --> 00:17:30,060
+keuangan.
+
+215
+00:17:30,180 --> 00:17:33,360
+Hal yang akan Anda temui jika ini adalah sesuatu yang Anda minati.
+
+216
+00:17:33,570 --> 00:17:38,010
+Jadi banyak dari hal-hal ini cukup rumit dan sulit tetapi mudah-mudahan Anda dapat melihat bahwa
+
+217
+00:17:38,010 --> 00:17:43,290
+apa yang Anda rasa sangat nyaman dari panda dan kereta laut adalah hal-hal ini menjadi jauh lebih mudah daripada
+
+218
+00:17:43,290 --> 00:17:48,660
+jika Anda harus melakukannya misalnya di Excel atau dalam bahasa pemrograman lain untuk banyak jawaban ini hanya dengan beberapa
+
+219
+00:17:48,660 --> 00:17:51,220
+baris kode atau bahkan hanya satu baris kode.
+
+220
+00:17:51,280 --> 00:17:56,640
+Dan yang benar-benar keren adalah kenyataan bahwa Anda dapat membuat sesuatu seperti ini dalam satu baris kode sehingga
+
+221
+00:17:56,640 --> 00:18:01,730
+Anda dapat mengesankan rekan kerja atau teman Anda dengan menunjukkan kepada mereka analisis proyek keuangan Anda sendiri.
+
+222
+00:18:01,770 --> 00:18:02,300
+BAIK.
+
+223
+00:18:02,520 --> 00:18:03,860
+Semoga Anda menikmati proyek ini.
+
+224
+00:18:03,900 --> 00:18:08,510
+Datang di bagian 3 kita hanya akan membahas bagian opsional dari solusi ini.
+
+225
+00:18:08,730 --> 00:18:10,680
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

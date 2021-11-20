@@ -1,0 +1,947 @@
+1
+00:00:06,480 --> 00:00:11,210
+Halo semuanya dan selamat datang di pie dalam ceramah ciuman dan seleksi dalam kuliah ini.
+
+2
+00:00:11,230 --> 00:00:15,040
+Kita akan membahas cara memilih elemen atau mengelompokkan elemen dari pai.
+
+3
+00:00:15,060 --> 00:00:19,260
+Baiklah, mari kita lanjutkan dan melompat ke buku catatan Juber untuk memulai.
+
+4
+00:00:19,260 --> 00:00:19,760
+Baiklah.
+
+5
+00:00:19,800 --> 00:00:21,360
+Anda di sini di buku catatan Jupiter.
+
+6
+00:00:21,360 --> 00:00:23,880
+Saya sudah mengatakan wasit penting dan P ..
+
+7
+00:00:24,040 --> 00:00:29,010
+Anda tahu apa yang akan saya mulai adalah dengan membuat array sampel saya akan mengatakan
+
+8
+00:00:29,040 --> 00:00:31,370
+variabel ARR sama dengan akhir p.
+
+9
+00:00:31,500 --> 00:00:33,050
+Punya kisaran.
+
+10
+00:00:33,130 --> 00:00:41,700
+Hanya menggunakan tab untuk melengkapi otomatis di sana dan saya akan beralih dari nol menjadi 10 dan ketika saya mengatakan nol hingga 10, maksud saya adalah output aktual
+
+11
+00:00:41,700 --> 00:00:45,570
+untuk mendapatkan output yang akan saya lewati dan pada 11 di sini.
+
+12
+00:00:45,870 --> 00:00:50,760
+Jadi sekarang saya memiliki array 11 elemen yang berubah dari nol menjadi 10.
+
+13
+00:00:50,760 --> 00:00:57,330
+Cara paling sederhana untuk memilih satu atau beberapa elemen dari array terlihat sangat mirip dengan pengindeksan dari
+
+14
+00:00:57,330 --> 00:00:58,110
+daftar python.
+
+15
+00:00:58,140 --> 00:01:03,060
+Pada dasarnya Anda akan menggunakan tanda kurung dan irisan untuk melakukan ini.
+
+16
+00:01:03,140 --> 00:01:07,500
+Anda pergi ke depan dan lakukan adalah mengetikkan nama variabel array itu sendiri.
+
+17
+00:01:07,600 --> 00:01:13,530
+Lewati kurung siku dan kemudian untuk mendapatkan nilai tunggal pada indeks yang bisa Anda lakukan hanya melewati angka.
+
+18
+00:01:14,010 --> 00:01:21,000
+Berarti jika saya ingin nilai pada indeks 8 saya bisa melewati angka 8 dan saya akan mengembalikan nilai dalam x 8 dalam kasus
+
+19
+00:01:21,000 --> 00:01:21,470
+ini.
+
+20
+00:01:21,540 --> 00:01:27,030
+Ini sebenarnya 8 sendiri karena saya hanya menggunakan pengaturan untuk membuat array ini jika saya ingin mendapatkan
+
+21
+00:01:27,030 --> 00:01:29,330
+nilai dalam rentang seperti daftar python.
+
+22
+00:01:29,340 --> 00:01:37,010
+Saya bisa menggunakan irisan notasi yang berarti saya bisa mengatakan indeks awal dan indeks berhenti.
+
+23
+00:01:37,080 --> 00:01:43,650
+Jadi, jika saya lanjutkan dan mengatakan satu titik lima, ia akan mulai indeks 1 yang merupakan angka 1
+
+24
+00:01:43,650 --> 00:01:49,470
+dan terus naik hingga indeks 5 yang merupakan angka empat karena pengindeksan dimulai dari nol.
+
+25
+00:01:49,500 --> 00:01:57,990
+Jadi untuk menunjukkan contoh lain dari ini saya bisa mengatakan nol titik 5 dan yang mengembalikan semua nilai dari
+
+26
+00:01:57,990 --> 00:02:00,710
+0 semua jalan itu indeks 5.
+
+27
+00:02:00,750 --> 00:02:06,840
+Saya juga dapat menghapus titik berhenti atau titik awal untuk melanjutkan dan menunjukkan bahwa saya ingin semua yang lain
+
+28
+00:02:06,900 --> 00:02:07,890
+dalam array.
+
+29
+00:02:07,950 --> 00:02:10,190
+Semuanya dari awal kanan.
+
+30
+00:02:10,200 --> 00:02:17,710
+Jadi misalnya jika saya ingin semuanya naik ke indeks 6 daripada menentukan parameter awal sebagai 0 Saya hanya bisa
+
+31
+00:02:17,790 --> 00:02:24,210
+meletakkan titik dua dan kemudian meletakkan 6 Ellora mengubah semuanya hingga awal array untuk indeks
+
+32
+00:02:24,270 --> 00:02:24,860
+6.
+
+33
+00:02:24,870 --> 00:02:30,870
+Jadi itu hal yang sama dengan mengatakan nol kolon 6 tetapi saya menghemat sedikit mengetik dengan
+
+34
+00:02:30,870 --> 00:02:32,990
+hanya memasukkan batubara itu sendiri.
+
+35
+00:02:32,990 --> 00:02:43,060
+Demikian pula yang bisa saya lakukan dan katakan adalah array jika saya ingin memulai pada indeks tertentu dan mengambil semuanya hingga akhir
+
+36
+00:02:43,080 --> 00:02:50,340
+array saya dapat menggunakan stasiun yang sama saya lakukan dalam daftar Python dengan menggunakan notasi pengiris
+
+37
+00:02:50,700 --> 00:02:51,940
+untuk batubara.
+
+38
+00:02:52,170 --> 00:02:56,910
+Sesuatu yang perlu diperhatikan ketika Anda menggunakan notasi angka dan titik dua ini adalah bahwa Anda
+
+39
+00:02:56,910 --> 00:02:59,410
+tidak benar-benar meraih indeks 5 dan seterusnya.
+
+40
+00:02:59,490 --> 00:03:05,670
+Anda meraih semuanya pada indeks 5 karena ingat pengindeksan sejauh notasi di Python dimulai
+
+41
+00:03:05,670 --> 00:03:06,780
+dari nol.
+
+42
+00:03:06,780 --> 00:03:15,600
+Jadi 5 di sini sebenarnya indeks 6 yang berarti notasi lima Colon ini mengatakan memo semuanya di luar indeks 5.
+
+43
+00:03:15,600 --> 00:03:21,200
+Jadi itu akan menjadi lima enam tujuh delapan sembilan sepuluh karena ingat indeks 5 sebenarnya di sini di empat.
+
+44
+00:03:21,750 --> 00:03:25,700
+Sejak pengindeksan dimulai dari nol Anda telah meraih lima elemen.
+
+45
+00:03:25,830 --> 00:03:32,730
+Berarti jika saya katakan lima titik dua, itu mengambil segala sesuatu di luar indeks kelima yang terjadi pada empat dan Anda dapat
+
+46
+00:03:32,730 --> 00:03:38,480
+melanjutkan dan meninjau notasi daftar potongan Python jika Anda ingin informasi lebih lanjut tentang titik dua ini.
+
+47
+00:03:38,550 --> 00:03:42,890
+Tetapi pada dasarnya ini bekerja persis sama seperti halnya untuk daftar Python normal.
+
+48
+00:03:43,300 --> 00:03:49,310
+Tidak ada array yang berbeda dari daftar Python normal karena kemampuannya untuk menyiarkan.
+
+49
+00:03:49,350 --> 00:03:51,710
+Saya lanjutkan dan tunjukkan contohnya.
+
+50
+00:03:51,810 --> 00:03:56,390
+Saya akan mengambil elemen array dan ambil saya.
+
+51
+00:03:56,440 --> 00:03:58,060
+Nol dan lima.
+
+52
+00:03:58,110 --> 00:04:04,080
+Jadi akan menjadi nol satu dua tiga empat dan kemudian saya menganggapnya sama dengan angka 100.
+
+53
+00:04:04,140 --> 00:04:05,560
+Dan apa yang akan dilakukannya.
+
+54
+00:04:05,820 --> 00:04:12,830
+Ini akan menyiarkan nilai itu ke lima digit pertama menjadi 100.
+
+55
+00:04:12,960 --> 00:04:21,510
+Saya akan pergi ke depan dan mengatur ulang array dan Anda akan melihat mengapa hanya dalam satu detik jika saya menunjukkan array saya kembali
+
+56
+00:04:21,510 --> 00:04:24,350
+ke 0 1 2 3 sampai 10.
+
+57
+00:04:24,600 --> 00:04:28,420
+Saya tidak ingin menunjukkan Anda tidak penting pada irisan atau nilai.
+
+58
+00:04:28,440 --> 00:04:36,490
+Jika saya maju dan membuat variabel yang disebut irisan di bawah skor garis bawah adalah untuk Array.
+
+59
+00:04:36,500 --> 00:04:46,360
+Dan saya katakan sama dengan sepotong array misalnya 06 Ada baiknya melihat bahwa sepotong array di sini kita memiliki array ada satu
+
+60
+00:04:46,380 --> 00:04:48,590
+dua tiga empat lima.
+
+61
+00:04:48,600 --> 00:04:51,960
+Pada dasarnya potongan pertama dari setengah dari array.
+
+62
+00:04:52,200 --> 00:04:59,580
+Jika saya menyiarkan di Saray weenie saya katakan sepotong array saya menggunakan titik dua.
+
+63
+00:04:59,580 --> 00:05:02,550
+Itu berarti saya mengambil semua yang ada di slice itu.
+
+64
+00:05:02,570 --> 00:05:06,820
+Saya mencoba menyiarkan ini menjadi nomor lain seperti 99.
+
+65
+00:05:06,900 --> 00:05:11,780
+Itu berarti ketika saya memeriksa sepotong array saya melihat sekelompok 99.
+
+66
+00:05:12,000 --> 00:05:14,480
+Di sinilah Anda harus memperhatikan dengan cermat.
+
+67
+00:05:14,520 --> 00:05:21,800
+Jika saya memanggil kembali array itu sebenarnya berubah 99 bukan hanya pada slice tetapi pada array asli.
+
+68
+00:05:21,810 --> 00:05:22,960
+Saya telah memanggil dua.
+
+69
+00:05:23,190 --> 00:05:28,950
+Jadi Anda harus tahu bagaimana perubahan itu juga terjadi dalam array asli yang berarti data tidak disalin.
+
+70
+00:05:29,130 --> 00:05:30,560
+Itu hanya pemandangan.
+
+71
+00:05:30,710 --> 00:05:32,100
+Jadi array aslinya.
+
+72
+00:05:32,280 --> 00:05:38,250
+Dan alasannya adalah untuk menghindari masalah memori dengan array yang sangat besar yang berarti tidak ada pi
+
+73
+00:05:38,250 --> 00:05:41,140
+tidak akan secara otomatis mengatur salinan array.
+
+74
+00:05:41,380 --> 00:05:47,940
+Jika Anda benar-benar menginginkan salinan dan bukan referensi ke array asli yang dapat Anda lakukan sebenarnya secara
+
+75
+00:05:47,940 --> 00:05:49,410
+spesifik menentukan salinan.
+
+76
+00:05:49,530 --> 00:05:51,480
+Jadi saya bisa melakukan sesuatu seperti ini.
+
+77
+00:05:51,720 --> 00:06:01,620
+Saya dapat melanjutkan dan mengatakan salin garis bawah dan menggunakan metode salin dari array untuk secara khusus menunjukkan bahwa
+
+78
+00:06:01,620 --> 00:06:03,320
+saya ingin salinan.
+
+79
+00:06:03,450 --> 00:06:09,410
+Jadi jika saya melihat array saya itu 9 9 9 9 9 x sebagainya dan kemudian 6 7 8 9 10.
+
+80
+00:06:09,780 --> 00:06:14,320
+Dan jika saya melihat salinan array saya juga hal yang sama.
+
+81
+00:06:14,500 --> 00:06:20,550
+Tetapi jika saya melakukan perubahan pada salinan array saya mungkin dengan menyiarkan setiap nilai menjadi 100.
+
+82
+00:06:20,940 --> 00:06:25,420
+Dan saya memeriksa salinan array setiap nilai 100.
+
+83
+00:06:25,440 --> 00:06:32,190
+Tapi array asli itu masih tidak terpengaruh oleh siaran itu di perintah ke 100.
+
+84
+00:06:32,190 --> 00:06:34,070
+Silakan dan tinjau catatan tentang ini.
+
+85
+00:06:34,120 --> 00:06:40,360
+Ini sedikit membingungkan bagi Anda tetapi premis dasar di sini adalah bahwa jika Anda benar-benar
+
+86
+00:06:40,360 --> 00:06:47,370
+mengambil sepotong array dan mengaturnya sebagai variabel tanpa secara eksplisit mengatakan bahwa Anda ingin salinan array Anda
+
+87
+00:06:47,380 --> 00:06:53,340
+harus ingat bahwa Anda hanya melihat tautan ke array asli dan perubahan yang Anda
+
+88
+00:06:53,340 --> 00:06:56,760
+lakukan sebenarnya akan memengaruhi array asli itu.
+
+89
+00:06:56,760 --> 00:06:57,400
+BAIK.
+
+90
+00:06:57,690 --> 00:07:00,550
+Mari kita pergi dan berbicara tentang pengindeksan ke array.
+
+91
+00:07:00,690 --> 00:07:02,810
+Atau dikenal sebagai matriks.
+
+92
+00:07:02,880 --> 00:07:07,920
+Saya akan pergi ke depan dan membersihkan semua sel di sini sebentar.
+
+93
+00:07:07,960 --> 00:07:15,180
+Baiklah, saya baru saja membersihkan semua sel di sini dan kita akan lakukan adalah pergi ke depan dan membuat array ke d.
+
+94
+00:07:17,520 --> 00:07:24,020
+Saya akan mengatakan N. P. array dan saya akan lulus dalam daftar bersarang.
+
+95
+00:07:24,930 --> 00:07:37,830
+Jadi saya akan mengatakan 5 10 15 20 25 30 dan akhirnya 35 40 45.
+
+96
+00:07:38,430 --> 00:07:44,280
+Jadi saya ingin keluar dan menunjukkan bahwa ke array dan di sini saya memiliki tiga baris dengan tiga kolom
+
+97
+00:07:44,280 --> 00:07:46,010
+itu kepada mereka matriks misi.
+
+98
+00:07:46,050 --> 00:07:46,820
+Besar.
+
+99
+00:07:46,830 --> 00:07:47,430
+Baiklah.
+
+100
+00:07:47,430 --> 00:07:52,880
+Ada dua format umum untuk mengambil elemen dari array atau Matriks.
+
+101
+00:07:52,880 --> 00:07:54,500
+Ada braket ganda untuk itu.
+
+102
+00:07:54,570 --> 00:07:57,270
+Dan kemudian ada formit braket tunggal dengan koma.
+
+103
+00:07:57,270 --> 00:08:01,570
+Biarkan saya pergi untuk menunjukkan kepada Anda format braket ganda dan kemudian saya akan menunjukkan
+
+104
+00:08:01,560 --> 00:08:07,200
+kepada Anda contoh format braket tunggal yang merupakan format yang saya sarankan untuk digunakan, tetapi Anda harus tahu keduanya jika Anda
+
+105
+00:08:07,200 --> 00:08:08,750
+menemukan mereka di alam liar.
+
+106
+00:08:08,760 --> 00:08:10,970
+Jadi sekali lagi ada dua teori saya.
+
+107
+00:08:11,120 --> 00:08:18,390
+Baiklah katakanlah saya ingin mengambil digit 5 sehingga berada di baris paling pertama atau indeks 0
+
+108
+00:08:18,390 --> 00:08:27,910
+dan di kolom indeks pertama untuk notasi braket ganda saya bisa pasan pertama baris yang saya inginkan dan kemudian kolom yang saya
+
+109
+00:08:27,900 --> 00:08:28,700
+inginkan.
+
+110
+00:08:28,770 --> 00:08:32,070
+Jadi lewat 00 di sini akan mengembalikan angka 5.
+
+111
+00:08:32,230 --> 00:08:36,410
+Karena itulah elemen di baris pertama di kolom pertama.
+
+112
+00:08:36,420 --> 00:08:44,640
+Yang bisa saya lakukan adalah menghapus dan hanya melakukan satu set kurung dan mengindeks seluruh Roback.
+
+113
+00:08:44,670 --> 00:08:55,320
+Jadi ini akan mengindeks seluruh baris indeks 0 yang berarti 5 10 15 dan jika saya ingin mengatakan elemen
+
+114
+00:08:55,350 --> 00:09:03,000
+25 Nah itu indeks satu untuk baris dalam indeksnya satu untuk kolom.
+
+115
+00:09:03,000 --> 00:09:06,080
+Jadi saya bisa mengatakan 1 1 dan ini semua mengembalikan 25.
+
+116
+00:09:06,100 --> 00:09:11,980
+Yang ingin Anda lakukan adalah mencoba melihat apakah sekarang Anda dapat menjeda video dan mencoba mengambil elemen
+
+117
+00:09:11,970 --> 00:09:15,620
+dari array secara individual menggunakan notasi braket ganda ini.
+
+118
+00:09:15,660 --> 00:09:15,910
+Baiklah.
+
+119
+00:09:15,930 --> 00:09:19,710
+Katakanlah kita ingin mengambil 40 hanya sebagai satu contoh terakhir.
+
+120
+00:09:19,950 --> 00:09:22,700
+Itu juga merupakan indeks baris.
+
+121
+00:09:23,310 --> 00:09:25,290
+Dan itu adalah kolom di kolom berikutnya.
+
+122
+00:09:25,680 --> 00:09:27,010
+Jadi itu 40.
+
+123
+00:09:27,120 --> 00:09:29,520
+Itu notasi braket ganda.
+
+124
+00:09:29,520 --> 00:09:30,380
+Anda harus melakukannya.
+
+125
+00:09:30,380 --> 00:09:36,390
+Namun saya akan merekomendasikan menggunakan notasi braket koma tunggal.
+
+126
+00:09:36,390 --> 00:09:42,630
+Dan pada dasarnya yang dilakukan adalah mengganti set kurung ganda dengan hanya koma dan
+
+127
+00:09:42,630 --> 00:09:45,790
+Anda memasukkan nomor kolom baris koma.
+
+128
+00:09:45,780 --> 00:09:54,440
+Jadi misalnya katakanlah saya ingin angka 30, saya akan lulus dalam indeks 1 karena indeks satu ke baris dan kemudian
+
+129
+00:09:54,930 --> 00:09:56,300
+di kolom ketiga.
+
+130
+00:09:56,320 --> 00:10:03,010
+Jadi 0 1 2 ada dalam indeks ke kolom dan itu memberi saya 30.
+
+131
+00:10:03,210 --> 00:10:11,040
+Dan itu sama dengan hanya mengatakan apa yang digarisbawahi untuk saya dan melakukannya dengan tanda kurung ganda Saya
+
+132
+00:10:11,050 --> 00:10:17,200
+akan merekomendasikan bahwa Anda selalu menggunakan braket tunggal ini dari notasi umum karena biasanya
+
+133
+00:10:17,200 --> 00:10:19,990
+itu kurang rentan terhadap kesalahan.
+
+134
+00:10:19,990 --> 00:10:24,730
+Sekarang mari kita bayangkan bahwa Anda tidak ingin elemen tunggal tetapi potongan aktual.
+
+135
+00:10:24,900 --> 00:10:31,870
+Misalnya Anda ingin beberapa matriks dari matriks ini, Anda dapat menggunakan titik dua untuk notasi irisan Nurit untuk
+
+136
+00:10:31,870 --> 00:10:36,620
+mengambil bagian tertentu dari keseluruhan ke array dan mengurutkan hanya elemen tunggal.
+
+137
+00:10:36,820 --> 00:10:38,730
+Saya akan pergi ke depan dan menunjukkan kepada Anda bagaimana melakukan itu.
+
+138
+00:10:38,770 --> 00:10:44,230
+Kami akan menghapus sel kedua ini dan menunjukkan kepada Anda beberapa contoh.
+
+139
+00:10:44,400 --> 00:10:47,640
+Katakanlah kita ingin meraih dari sudut kanan atas.
+
+140
+00:10:47,760 --> 00:10:54,160
+Artinya saya ingin mengatakan 10 15 dan 25 30 jadi ini sudut kanan atas inilah yang ingin
+
+141
+00:10:54,150 --> 00:10:59,860
+saya ambil ketika saya bisa melanjutkan dan lakukan adalah menggunakan notasi irisan untuk melakukan ini.
+
+142
+00:11:00,040 --> 00:11:12,390
+Jadi saya bisa mengatakan ambil semuanya untuk memanggil baris ke dan kemudian ambil dari kolom 1 dan seterusnya dan mengembalikan
+
+143
+00:11:12,390 --> 00:11:14,890
+10 15 25 30.
+
+144
+00:11:14,880 --> 00:11:16,920
+Biarkan saya masuk dan memecah ini sekali lagi.
+
+145
+00:11:17,130 --> 00:11:24,880
+Sejauh baris Apa yang kami katakan adalah ambil segalanya tetapi tidak termasuk baris 0 dan 1 sebagai titik dua.
+
+146
+00:11:25,140 --> 00:11:26,520
+Tapi jangan memasukkan dua.
+
+147
+00:11:26,560 --> 00:11:33,790
+Saya mengatakan slice juga dan saya akan pergi ke depan dan menunjukkan bahwa itu hanya satu perintah
+
+148
+00:11:33,870 --> 00:11:43,300
+jadi saya katakan Colon untuk yang mengembalikan dua baris ini baris 0 dan baris 1 kemudian dengan menambahkan di atas itu saya
+
+149
+00:11:43,300 --> 00:11:49,590
+katakan sejauh kolom pergi ambil semuanya dari Kolom 1 sampai ke akhir yang
+
+150
+00:11:49,840 --> 00:11:59,520
+pada dasarnya berarti hanya menjatuhkan seluruh kolom ini 0 dan yang mengembalikan dua subbagian kecil ini 10 15 dan kemudian 25 30.
+
+151
+00:11:59,520 --> 00:12:00,730
+Baiklah.
+
+152
+00:12:00,730 --> 00:12:08,280
+Apa yang saya sarankan Anda lakukan sekarang adalah untuk mengambil subseksi dalam pikiran Anda misalnya 20 25 30 dan 35
+
+153
+00:12:08,290 --> 00:12:15,700
+40 45 dan melihat apakah Anda dapat menggunakan notasi irisan bersama dengan tanda kurung koma tunggal pengindeksan indeksasi dengan
+
+154
+00:12:15,970 --> 00:12:18,790
+pi untuk mengambil subbagian dari Saray.
+
+155
+00:12:18,970 --> 00:12:26,920
+Dan saya mendorong Anda untuk juga melihat apakah Anda dapat membuat yang lebih besar dan mengambil subbagian yang lebih besar OK semoga cukup berlatih dengan
+
+156
+00:12:26,910 --> 00:12:29,350
+itu jika Anda ingin lebih banyak contoh.
+
+157
+00:12:29,350 --> 00:12:34,920
+Anda selalu dapat mengunjungi buku catatan untuk kuliah ini yang memiliki beberapa contoh lagi pengiris array 2-D sepanjang
+
+158
+00:12:36,220 --> 00:12:41,110
+kursus kami tidak akan melakukan terlalu banyak pengiris indeks mewah semacam ini. Jadi itu membingungkan bagi
+
+159
+00:12:41,110 --> 00:12:41,680
+Anda.
+
+160
+00:12:41,670 --> 00:12:45,820
+Anda tidak perlu terlalu khawatir tentang itu karena dia tidak akan benar-benar melakukannya sesering
+
+161
+00:12:45,820 --> 00:12:46,730
+itu selama kursus.
+
+162
+00:12:47,010 --> 00:12:51,700
+Yah saya biasanya hanya mengambil elemen tunggal atau seluruh baris atau kolom.
+
+163
+00:12:51,760 --> 00:12:56,430
+Mereka biasanya tidak mengambil subbagian dari subbagian seperti yang kami lakukan di sini.
+
+164
+00:12:56,440 --> 00:12:57,020
+Baiklah.
+
+165
+00:12:57,280 --> 00:13:02,290
+Mari kita lanjutkan dan beralih ke metode seleksi yang lebih penting yang akan Anda gunakan
+
+166
+00:13:02,290 --> 00:13:05,750
+lebih sering dalam kursus ini yang merupakan seleksi bersyarat.
+
+167
+00:13:05,810 --> 00:13:15,240
+Saya akan pergi ke depan dan membuat array baru, hanya menyebutkan menyebutkan array dan Pido mengatur satu koma
+
+168
+00:13:15,280 --> 00:13:18,180
+11 dan memeriksa array ini.
+
+169
+00:13:18,850 --> 00:13:19,350
+BAIK.
+
+170
+00:13:19,360 --> 00:13:23,300
+Jadi untuk array ini saya punya satu dua tiga empat lima enam tujuh delapan sembilan 10.
+
+171
+00:13:23,740 --> 00:13:30,580
+Apa yang bisa saya lakukan adalah saya dapat mengambil array ini menggabungkannya dengan operator perbandingan untuk benar-benar mendapatkan array
+
+172
+00:13:30,630 --> 00:13:32,240
+boolean penuh dari ini.
+
+173
+00:13:32,340 --> 00:13:40,450
+Dan apa yang saya maksud dengan itu adalah jika saya membandingkan ini dengan satu digit misalnya lebih besar dari 5 saya
+
+174
+00:13:40,450 --> 00:13:42,730
+akan mendapatkan array nilai boolean.
+
+175
+00:13:42,730 --> 00:13:45,010
+Perhatikan itu mengatakan D tipe B O L.
+
+176
+00:13:45,250 --> 00:13:47,110
+Jadi ini adalah nilai benar atau salah.
+
+177
+00:13:47,250 --> 00:13:52,990
+Dan itu memberi saya salah di mana perbandingan itu salah dan benar atau perbandingan itu benar.
+
+178
+00:13:53,160 --> 00:13:59,650
+Dan kemudian saya bisa melanjutkan dan menyimpan ini karena mungkin Anda akan menggarisbawahi array.
+
+179
+00:13:59,640 --> 00:14:06,270
+Jadi jika saya memanggil bool underscore sekarang saya mendapatkan kembali array boolean ini.
+
+180
+00:14:06,280 --> 00:14:09,850
+Sekarang Anda dapat menggunakannya untuk benar-benar melakukan seleksi bersyarat.
+
+181
+00:14:09,850 --> 00:14:12,440
+Berarti saya bisa melewati itu dalam dua
+
+182
+00:14:15,250 --> 00:14:19,990
+tanda kurung dan saya hanya akan mendapatkan hasil di mana array boolean ini ternyata benar.
+
+183
+00:14:19,990 --> 00:14:26,440
+Mari kita hentikan itu sekali lagi mendapatkan array dan menggunakan operator perbandingan di atasnya akan benar-benar
+
+184
+00:14:26,430 --> 00:14:31,020
+mengembalikan array boolean yang berarti array dari semua nilai boolean.
+
+185
+00:14:31,170 --> 00:14:38,200
+Kemudian saya bisa menggunakan array boolean untuk benar-benar mengindeks atau memilih elemen kondisional dari array asli
+
+186
+00:14:38,200 --> 00:14:40,220
+di mana ini benar.
+
+187
+00:14:40,230 --> 00:14:46,180
+Jadi hanya mengembalikan contoh di mana array boolean itu benar dan lebih umum memecah ini
+
+188
+00:14:46,170 --> 00:14:47,450
+menjadi dua langkah.
+
+189
+00:14:47,500 --> 00:14:49,480
+Anda benar-benar akan melakukan ini semua dalam satu langkah.
+
+190
+00:14:49,480 --> 00:14:54,490
+Anda akan mengatakan array dan dalam kurung bukannya array Anda akan melewati dalam pernyataan bersyarat
+
+191
+00:14:54,950 --> 00:14:59,640
+seperti r r lebih besar dari 5 dan itu akan mengembalikan jawaban yang sama.
+
+192
+00:14:59,710 --> 00:15:04,900
+Dan ini adalah semacam notasi sintaks yang akan kita gunakan sepanjang waktu sejauh pemilihan bersyarat.
+
+193
+00:15:06,310 --> 00:15:12,470
+Jadi misalnya katakanlah kita ingin tahu semua elemen array yang kurang dari 3.
+
+194
+00:15:12,520 --> 00:15:20,380
+Apa yang akan saya lakukan adalah saya akan mengatakan kurung array dan kemudian mengatakan array kurang dari tiga dan yang mengembalikan semua elemen
+
+195
+00:15:20,380 --> 00:15:25,620
+di mana itu benar dan itu adalah hal yang akan kita gunakan banyak dalam kursus
+
+196
+00:15:25,970 --> 00:15:28,000
+ini terutama pindah ke panda.
+
+197
+00:15:28,030 --> 00:15:30,440
+Ini adalah jenis notasi yang harus Anda gunakan.
+
+198
+00:15:30,460 --> 00:15:37,110
+Saya tahu itu agak aneh pada awalnya untuk melihat nama variabel di dalam dirinya sendiri tetapi mudah-mudahan membaginya
+
+199
+00:15:37,120 --> 00:15:40,550
+menjadi dua langkah ini memperjelas apa yang sebenarnya terjadi.
+
+200
+00:15:40,570 --> 00:15:45,510
+Anda hanya meneruskan dalam array nilai boolean dan kemudian Anda hanya mengembalikan di mana
+
+201
+00:15:45,520 --> 00:15:48,410
+saja itu benar pada indeks array asli.
+
+202
+00:15:48,900 --> 00:15:50,760
+Baiklah itu saja untuk kuliah ini.
+
+203
+00:15:50,770 --> 00:15:58,390
+Apa yang saya sarankan lakukan sejauh latihan untuk diri sendiri adalah membuat yang baru ke array dengan
+
+204
+00:15:58,420 --> 00:16:01,860
+mengatakan N. P. titik-titik arr ..
+
+205
+00:16:02,080 --> 00:16:08,650
+Silakan lanjutkan dan katakan 50 lalu bentuk ulang ini menjadi 5 dengan 10.
+
+206
+00:16:08,640 --> 00:16:10,990
+Tidak, itu bukan hanya memanggil metode dari metode lain.
+
+207
+00:16:10,990 --> 00:16:17,530
+Jadi ini adalah semua array satu dan kemudian Anda memiliki array lima oleh 10 ini bagus.
+
+208
+00:16:17,560 --> 00:16:20,340
+Jadi 0 hingga 40 dan kemudian 0 hingga 9.
+
+209
+00:16:20,430 --> 00:16:23,500
+Saya akan merekomendasikan untuk Anda hanya berlatih sendiri.
+
+210
+00:16:23,500 --> 00:16:30,370
+Cobalah untuk mengambil potongan-potongan pikiran Anda dan kemudian melihat apakah Anda dapat menggunakan notasi braket untuk mengambil potongan yang
+
+211
+00:16:30,370 --> 00:16:31,380
+Anda pikirkan.
+
+212
+00:16:31,380 --> 00:16:36,210
+Jadi misalnya mungkin Anda ingin mengambil 13 14 dan 23 24 Anda.
+
+213
+00:16:36,390 --> 00:16:38,820
+Mari kita keluar dan menunjukkan bagaimana Anda akan melakukannya.
+
+214
+00:16:38,980 --> 00:16:41,880
+Pertama saya ingin memecahnya menjadi dua baris dan kolom.
+
+215
+00:16:41,920 --> 00:16:49,730
+Jadi 13:14 yang dimulai pada baris 0 1 dan kemudian 2.
+
+216
+00:16:50,020 --> 00:16:52,830
+Artinya saya ingin mengambil baris 1 hingga 2.
+
+217
+00:16:53,250 --> 00:16:59,680
+Saya akan pergi ke depan dan mengatakan satu dan ingat dengan notasi irisan semacam ini dan pergi satu lagi dari yang
+
+218
+00:16:59,670 --> 00:17:00,770
+sebenarnya Anda butuhkan.
+
+219
+00:17:01,120 --> 00:17:05,220
+Jadi saya katakan ambil satu saja dan tidak termasuk indeks tiga.
+
+220
+00:17:05,290 --> 00:17:07,310
+Jadi itu seharusnya dua baris ini.
+
+221
+00:17:07,470 --> 00:17:13,040
+Mari kita masuk dan mengkonfirmasi bahwa di sini hanya dengan mengatakan skor Anda untuk meraih baris itu.
+
+222
+00:17:13,140 --> 00:17:18,450
+Satu panggilan dan tiga dan ini pada dasarnya berfungsi seperti notasi daftar Python normal.
+
+223
+00:17:18,450 --> 00:17:23,520
+Jadi di sini kita memiliki indeks satu di sebelah hingga tetapi tidak termasuk tiga.
+
+224
+00:17:23,560 --> 00:17:34,170
+Dan kemudian untuk kolom dan mengatakan saya ingin 13 14 dan 23 24 yang terjadi pada kolom indeks tiga kelompok dan kemudian
+
+225
+00:17:34,170 --> 00:17:42,060
+saya ingin empat tidak termasuk lima saga tetapi pada lima ada yang mengembalikan apa yang kita cari
+
+226
+00:17:42,070 --> 00:17:44,310
+13 14 23 24.
+
+227
+00:17:44,320 --> 00:17:50,600
+Saya akan mendorong Anda untuk berlatih dengan membuat survei di buku catatan Jupiter Anda sendiri dan
+
+228
+00:17:50,880 --> 00:17:55,050
+kemudian hanya mengambil potongan matriks ini sesuai keinginan Anda.
+
+229
+00:17:55,060 --> 00:17:55,610
+Baiklah.
+
+230
+00:17:55,720 --> 00:17:58,250
+Ada lebih banyak bantuan pengindeksan di notebook.
+
+231
+00:17:58,300 --> 00:18:03,100
+Jangan khawatir banyak jika Anda tidak merasa 100 persen nyaman ini Anda akan mendapatkan lebih
+
+232
+00:18:03,100 --> 00:18:05,320
+banyak latihan dalam latihan terakhir PI.
+
+233
+00:18:05,560 --> 00:18:09,170
+Tapi sungguh ini hanya untuk memberi tahu Anda apa yang bisa dilakukan oleh beberapa pie.
+
+234
+00:18:09,180 --> 00:18:14,450
+Kami tidak akan melakukan notasi pengiris semacam ini yang sering dalam kursus menggunakan notasi yang disebut ini.
+
+235
+00:18:14,580 --> 00:18:17,540
+Kami akan menggunakan seleksi bersyarat menggunakan operator orang.
+
+236
+00:18:17,620 --> 00:18:19,060
+Lebih banyak lagi.
+
+237
+00:18:19,060 --> 00:18:21,820
+Baiklah, terima kasih semuanya dan sampai jumpa di kuliah berikutnya

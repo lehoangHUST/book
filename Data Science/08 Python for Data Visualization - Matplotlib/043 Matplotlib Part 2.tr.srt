@@ -1,0 +1,807 @@
+1
+00:00:05,460 --> 00:00:09,580
+Herkese merhaba ve ders serisine mat Partlet bölümüne hoş geldiniz.
+
+2
+00:00:09,690 --> 00:00:14,280
+Bu arsa ile fonksiyonel programlamayı öğrendiğimiz bir bölümde bıraktığımız
+
+3
+00:00:14,280 --> 00:00:15,270
+yerden başlayacağız.
+
+4
+00:00:15,420 --> 00:00:18,990
+Ve daha da önemlisi Matt plotless ile nesneye yönelik yöntemler.
+
+5
+00:00:19,110 --> 00:00:22,040
+Devam edin, başlamak için Jüpiter defterine atlayın.
+
+6
+00:00:22,250 --> 00:00:22,540
+TAMAM.
+
+7
+00:00:22,560 --> 00:00:28,200
+Burada, Jupiter defter numarasına geri döndüm, o figürü nasıl kullanacağımızı öğrendim ve
+
+8
+00:00:28,200 --> 00:00:35,600
+ekseni anlamaya çalıştık ve bu plotless'i kullanarak nesne yönelimli bir figür üzerine çizmek için ekseni çizdik.
+
+9
+00:00:36,390 --> 00:00:41,940
+Yapacağımız sonraki şey, aynı nesne yönelimli programlama yöntemini kullanarak alt çizginin nasıl
+
+10
+00:00:41,940 --> 00:00:42,950
+oluşturulacağını öğrenmektir.
+
+11
+00:00:42,990 --> 00:00:51,600
+Ben devam edip, söyleyeceğim: Burada, bu hücredeki her şeyi temizleyelim ve bunu söyleyip bunu
+
+12
+00:00:51,630 --> 00:01:02,790
+söyleyip hücrenin merkeze taşınacağız ve incir virgül eksenleri, soyma T'ye eşit ve bunun yerine Rakam çağırmanın alt çizgileri
+
+13
+00:01:02,790 --> 00:01:08,900
+yapmaya çalıştığımızı söylüyoruz, alt bölümleri söyleyeceğiz, böylece alt bölümlere itiraz
+
+14
+00:01:08,910 --> 00:01:10,340
+edeceğiz.
+
+15
+00:01:10,500 --> 00:01:12,270
+Hadi devam edelim ve bunu çalıştıralım.
+
+16
+00:01:12,570 --> 00:01:15,600
+Ve şunu fark edersek, subplots'u hemen çıkarırız.
+
+17
+00:01:15,600 --> 00:01:20,790
+Şimdi yapabileceğim şey, daha önce yapmış olduğum gibi eksenler nesnesini arsa üzerine çizmek.
+
+18
+00:01:21,090 --> 00:01:25,400
+Ve bu aslında daha önce yaptığımızdan farklı değil.
+
+19
+00:01:25,710 --> 00:01:32,040
+Ve burada X, o alt çizginin farklı olduğu satır Y ve sütun sayısını belirleyebileceğiniz
+
+20
+00:01:32,040 --> 00:01:33,610
+bir Y gelir.
+
+21
+00:01:33,810 --> 00:01:42,420
+Örneğin şunu söyleyebilirim ve ilk argümanım olan satırlar 1'e eşittir ve ikinci argümanımız ikiye
+
+22
+00:01:42,420 --> 00:01:44,330
+eşit olarak çağırır.
+
+23
+00:01:44,700 --> 00:01:49,970
+Ve ben devam edip sana bunun ne olduğunu ve bunu çalıştıran bir hash etiketine benzeyeceğini göstereceğim.
+
+24
+00:01:50,070 --> 00:01:57,660
+kullanıyor; bu figür eksenlerini otomatik olarak bu bağımsız değişkenler, satırlar ve sütunlardan yola çıkarak otomatik olarak çağırıyor.
+
+25
+00:01:57,660 --> 00:02:05,640
+Artık iki sütun içeren bir satır var görebiliyorum ve bu temel olarak sadece arsa'nın yaptığı Piel T-Dog
+
+26
+00:02:05,670 --> 00:02:08,900
+rakamını çağırma konusunda hoş bir ön kol
+
+27
+00:02:09,180 --> 00:02:12,540
+Hadi devam edelim ve bununla uğraşalım bir örnek daha gösterelim.
+
+28
+00:02:12,570 --> 00:02:20,440
+Üç sıraya girelim ve üç sütun söyleyelim ve şimdi üç sütunla üç sıra görelim.
+
+29
+00:02:20,550 --> 00:02:25,770
+Daha sonra, çakışan konularla nasıl başa çıkacağımızı göreceğiz, ancak aslında yalnızca tek hatlı
+
+30
+00:02:25,770 --> 00:02:26,600
+bir çağrı.
+
+31
+00:02:26,610 --> 00:02:34,720
+Biz sadece soymak deriz ve bu aslında o çakışmaları düzeltmek kadar biter.
+
+32
+00:02:34,810 --> 00:02:41,270
+Hadi dışarı çıkıp bir adım geri çekelim ve sadece birer birer birlikte çalışalım.
+
+33
+00:02:41,280 --> 00:02:41,670
+Tamam.
+
+34
+00:02:41,760 --> 00:02:43,320
+Bu alt bölümlerin sahibiz.
+
+35
+00:02:43,320 --> 00:02:47,520
+Aslında bu, Piel'in üstündeki bir eksen müdürüdür.
+
+36
+00:02:47,550 --> 00:02:52,970
+Burada dikkat edilmesi gereken bir husus, incirin PBT'ye eşit olduğunu söylemektense, ben bir
+
+37
+00:02:52,990 --> 00:02:59,100
+grup yapıyorum ve şeker virgül eksenleri diyerek paketlemek, alt çizgilerin soyulmasıyla aynıdır ve bu
+
+38
+00:02:59,100 --> 00:03:07,290
+eksen nesnesi hakkında bilmek gereken şey, burada aşağıya inersem eksenler eksenlerindeki bu hücre ve türün aslında sadece bir harita
+
+39
+00:03:07,290 --> 00:03:13,710
+çizimi lib ekseni dizisidir, aslında esas olarak bu eksenler nesnesinin anlamı sadece bunun üzerinden yinelenebilen
+
+40
+00:03:13,710 --> 00:03:14,290
+bir liste.
+
+41
+00:03:14,460 --> 00:03:29,950
+Mevcut altçizgi harfleri için buna benzer bir şey söyleyebilirim X eksenlerinde eksenler nokta çizimi x gelir.
+
+42
+00:03:30,020 --> 00:03:31,610
+Aslında X arsa olmadığını söylemek istemiyorum.
+
+43
+00:03:31,620 --> 00:03:40,450
+Şu anki X duruşunu söylemek istiyorum ve o zaman aslında bu eksenleri çizdiğimizi görüyoruz.
+
+44
+00:03:40,710 --> 00:03:47,550
+Tekrar söylemek gerekirse, bu eksenler nesnesinin, aslında Şekil 11'de belirttiğiniz gibi manuel olarak oluşturduğunuz harita lib
+
+45
+00:03:47,550 --> 00:03:50,190
+eksenlerinin bir listesi olduğunu göstermek için.
+
+46
+00:03:50,250 --> 00:03:56,390
+Alt çizgiye eksenler ekleyin, sadece noktaya itin. Pilani arasındaki alt çizginin tek farkı bu
+
+47
+00:03:56,460 --> 00:04:03,090
+alt çizgilerin alt çizgilerinde görüldüğü gibi, alt çizgilerin alt çizgilerinin aslında bunu alt çizgi eksenlerinde
+
+48
+00:04:03,090 --> 00:04:08,470
+yapmanızdır, bunun için otomatik olarak kaç satır ve sütun isteyip istemediğiniz .
+
+49
+00:04:08,490 --> 00:04:09,170
+TAMAM.
+
+50
+00:04:09,450 --> 00:04:13,600
+Bu eksenler nesnesiyle yineleyebildiğimizden, aslında onu da indeksleyebiliriz.
+
+51
+00:04:13,620 --> 00:04:24,140
+Anlamı eksenler diyebilirim 0 Dopp parselleri X bir Y gelir ve burada ilk eksenler üzerinde çizim yaptım.
+
+52
+00:04:24,140 --> 00:04:25,090
+Şimdi de aynı şeyi yapabilirim.
+
+53
+00:04:25,090 --> 00:04:31,460
+İkinci diyek diyagramda 1 nokta arsa, virgül x ekseni.
+
+54
+00:04:31,770 --> 00:04:40,300
+eksenler dizisi boyunca yinelendiğini görmüştük ve daha önce gördüğümüz gibi başlıklar ve etiketler de diyebiliriz,
+
+55
+00:04:40,300 --> 00:04:45,490
+böylece xes gibi bir şey söyleyebiliriz 0 set title
+
+56
+00:04:45,520 --> 00:05:03,180
+ilk arsa diyenecek ve o zaman eksenler 1 alt çizgi başlığı ikinci arsa ve kahraman başlıkları başardı diyebilirim ve x etiketleri bu eksenler nesnelerinin her ikisinin de etiketi y olarak ayarlayabilirsiniz söyleyebilirim.
+
+57
+00:05:03,190 --> 00:05:09,580
+Ve burada dizin çağrısı teklifinin eksen dizisini nasıl oluşturacağımızı veya bu
+
+58
+00:05:09,640 --> 00:05:16,060
+Tek yapmanız gereken, aslında, bu eksenler alt-alan nesnesini dizideki konumuna
+
+59
+00:05:16,060 --> 00:05:17,310
+dayanarak tutmak.
+
+60
+00:05:17,320 --> 00:05:17,770
+Tamam.
+
+61
+00:05:17,980 --> 00:05:22,040
+Bu iki nesneye yönelik yöntemleri hızlı bir şekilde inceleyelim.
+
+62
+00:05:22,300 --> 00:05:24,330
+Bu ilk yöntem biraz daha manuel.
+
+63
+00:05:24,370 --> 00:05:26,380
+Ben Piel T-Dog figürü.
+
+64
+00:05:26,410 --> 00:05:32,650
+o ekseni temel alan bu şekli yaratın ve bu çizgiyi ve bu başlığın X etiketinin y etiketini vb. Ayarladığını söyleyin.
+
+65
+00:05:32,770 --> 00:05:39,880
+Devam edin ve manuel olarak eksenler ekleyip konumunu ve boyutunu seçip burada örnekler
+
+66
+00:05:39,880 --> 00:05:42,840
+gösteriyoruz.
+
+67
+00:05:42,970 --> 00:05:48,280
+İkinci yöntem, Rosing sütunları tarafından düzenlenmesini istediğiniz alt çizgiler için kullanılır.
+
+68
+00:05:48,280 --> 00:05:55,450
+Bu, figür virgül eksenlerini çağırmanıza izin verir, burada paketlemedeki tuple, subplots çağrısına eşittir ve daha
+
+69
+00:05:55,480 --> 00:06:01,600
+sonra bu eksenlerden bir eksen dizisi elde edersiniz ve buradan indeksleme yaparak veya
+
+70
+00:06:01,660 --> 00:06:05,300
+eksenler nesnesinden yineleyerek başlıklar çizebilir ve ayarlayabilirsiniz.
+
+71
+00:06:05,300 --> 00:06:12,760
+Üstelik örtüşen şeylerle ilgili herhangi bir sorununuz varsa, sadece T-top'u sıkıca kapatan parantezleri soymak için
+
+72
+00:06:12,770 --> 00:06:16,470
+diyebiliriz ve bu, çakışan herhangi bir alanla ilgilenecektir.
+
+73
+00:06:16,480 --> 00:06:20,210
+Bunu her zaman komplo ifadelerinin sonuna koymanızı öneririm.
+
+74
+00:06:20,830 --> 00:06:27,970
+OK şimdi şekil boyutu en-boy oranı ve GPI haritası hakkında konuşmaya başlıyoruz Cutlip bu yönlerin her
+
+75
+00:06:27,970 --> 00:06:32,620
+birini kontrol etmenizi sağlar ve şekil nesnesini aradığınızda bunları belirleyebilirsiniz.
+
+76
+00:06:32,620 --> 00:06:34,990
+Bırakın, size bir örnek göstereceğim.
+
+77
+00:06:34,990 --> 00:06:44,500
+Piel rakamına benzediğini söyleyeceğim ve kabul edebileceğim argümanlar Figgs ebadına eşittir.
+
+78
+00:06:44,890 --> 00:06:50,350
+Ve sonra tuple, inç cinsinden şeklin genişliği ve yüksekliğidir.
+
+79
+00:06:50,380 --> 00:06:58,630
+Örneğin, devam edip üçer ikiyi söyleyebilirim ve sonra ekleyebileceğiniz ikinci bir argüman, API'nin yalnızca inç başına
+
+80
+00:06:58,690 --> 00:07:03,940
+nokta veya inç başına piksel olduğu GPI'dir (örneğin, 100 GPI).
+
+81
+00:07:04,120 --> 00:07:07,490
+Genellikle Jüpiter not defteriyle çalışırken varsayılan GPI'yi kullanıyorum.
+
+82
+00:07:07,600 --> 00:07:14,290
+Öyleyse devam edip sadece şu X için bu eklemeye
+
+83
+00:07:14,290 --> 00:07:27,310
+eksen eklemeye gidiyorum, figür noktasına alt eksenler ekleyelim derim ve 0 0 1 virgül 1 söyleyeceğiz. ve sonra
+
+84
+00:07:27,310 --> 00:07:33,220
+devam edip X durma çizgisinin x geldiğini söyleyeceğim.
+
+85
+00:07:33,340 --> 00:07:33,700
+Tamam.
+
+86
+00:07:33,700 --> 00:07:34,710
+Yani bizim arsa var.
+
+87
+00:07:34,720 --> 00:07:36,970
+Hadi devam edelim ve figür boyutu kadar dağılmaya çalışalım.
+
+88
+00:07:37,000 --> 00:07:39,450
+Diyelim ki bunun çok geniş olmasını istedik.
+
+89
+00:07:39,500 --> 00:07:41,280
+Haydi gidip 8 ile 2'yi söyleyin.
+
+90
+00:07:41,650 --> 00:07:45,880
+Ve şimdi bunun 8 inç x 2 inç olması lazım.
+
+91
+00:07:45,880 --> 00:07:46,510
+Tamam.
+
+92
+00:07:46,960 --> 00:07:55,190
+Aynı şeyi alt çizgilerle de yapabilirsiniz, diyebilirim ki alt çizgiler, Fig'ın ebat üyesini belirledi.
+
+93
+00:07:55,210 --> 00:07:55,510
+&nbsp;
+
+94
+00:07:55,510 --> 00:08:01,240
+Şimdi incir eksenlerini söyleyeceğim ve ekseni kaldırıp gidelim.
+
+95
+00:08:01,330 --> 00:08:07,900
+Şekil boyutunu ayarlayın ve eksenler ilerleyip ilk eksenler üzerine çizin.
+
+96
+00:08:07,900 --> 00:08:15,670
+Eksen noktaları x y diyebilirim ve çok benzer bir plan elde ediyorum.
+
+97
+00:08:15,670 --> 00:08:21,490
+Şimdi gidip, bu altprogramın bazı satırlarını ve sütunlarını ve Rose'un 1'e
+
+98
+00:08:21,490 --> 00:08:22,820
+eşit olduğunu söyleyeceğim.
+
+99
+00:08:22,870 --> 00:08:25,210
+Aslında iki sıra yapıyoruz ve burada genişleyeceğiz.
+
+100
+00:08:25,510 --> 00:08:28,550
+Ve sonra bir sütun bulduk diyelim.
+
+101
+00:08:28,720 --> 00:08:31,600
+Bu yüzden aramalar 1'e eşittir.
+
+102
+00:08:31,600 --> 00:08:34,710
+Şimdi burada 0 diyeyim.
+
+103
+00:08:34,840 --> 00:08:45,310
+Plot X bir Y gelir ve sonra da bir nokta çizgi y ve virgül X ekseninde söyleyeceğiz. Ve burada FIG boyutunun bunu bir sütunla
+
+104
+00:08:45,310 --> 00:08:49,220
+iki sıraya kadar hesaba kattığını görebilirsiniz.
+
+105
+00:08:49,780 --> 00:08:57,250
+Ve her zaman olduğu gibi burada gerçek bir sitemiz var, ağzından soyulmasını söyleyerek deneyin ve bu, tür düzenini düzeltmek için elinizden
+
+106
+00:08:57,250 --> 00:09:01,750
+gelenin en iyisini yapacaktır ve burada oldukça iyi bir iş çıkarmış gibi görünüyor.
+
+107
+00:09:02,060 --> 00:09:07,110
+Burada bu y eksenleriyle ilgili bazı konular var, ancak size daha az
+
+108
+00:09:07,120 --> 00:09:11,240
+bilgi göstermek için bu y eksenlerini nasıl özelleştirebileceğinizi sonra göstereceğim.
+
+109
+00:09:11,260 --> 00:09:11,590
+Tamam.
+
+110
+00:09:11,590 --> 00:09:16,990
+Şimdi, şekil büyüklüğü ve GPI'yı tartışmayı bitirdik. Şimdi devam edelim ve yeni bir hücre hazırla
+
+111
+00:09:16,990 --> 00:09:21,090
+ve bir rakam kaydetmek için bir rakamın nasıl kaydedileceğini tartışmaya başlayalım.
+
+112
+00:09:21,250 --> 00:09:26,910
+dahil olmak üzere birçok formatta sadece yüksek kaliteli çıktılar üretmek için yaşanan harita çizimini kullanabilirsiniz.
+
+113
+00:09:26,910 --> 00:09:28,510
+Pian GJ peg'i de
+
+114
+00:09:28,630 --> 00:09:37,200
+SPG TGF ve PTF dosyalarını bir dosyaya kaydetmek için Save Thig yöntemini kullanabilirsiniz.
+
+115
+00:09:37,500 --> 00:09:40,830
+Mesela biz zaten yarattığımız figürümüz var.
+
+116
+00:09:40,830 --> 00:09:43,610
+Unutmayın, tam buradadır Fig.
+
+117
+00:09:44,100 --> 00:09:50,490
+Ve sonra incir noktasını kurtarmayı indirebilirim ve tüm yapmanız gereken istediğiniz dosya adını iletmektir.
+
+118
+00:09:50,580 --> 00:09:57,720
+Örneğin alt çizgideki resmim ve sonra uzantıyı ve haritayı geçersen Cutlip, ne istediğini bilmek için
+
+119
+00:09:57,720 --> 00:09:58,770
+yeterince akıllıdır.
+
+120
+00:09:58,890 --> 00:10:08,370
+PNB isterseniz JPA'ya isterseniz G'de buraya gelersiniz demek J peg JP G vb. Demektir. P ve G olarak söyleyin.
+
+121
+00:10:08,380 --> 00:10:09,950
+ve bunu
+
+122
+00:10:10,950 --> 00:10:12,890
+Ve bu otomatik olarak figürü söyleyecektir.
+
+123
+00:10:13,170 --> 00:10:15,470
+Burada ayrıca TÜFE'yi belirtebilirsiniz.
+
+124
+00:10:15,780 --> 00:10:20,910
+Dolayısıyla, parsel oluştururken burada CPI belirtmeyi unuttuysanız burada DPR'yi
+
+125
+00:10:20,920 --> 00:10:22,050
+tekrar belirtebilirsiniz.
+
+126
+00:10:22,060 --> 00:10:27,860
+Dolayısıyla bunu 200 GPI gibi yapabilir ve DPA'yı daha fazla ayrıntı isteyebileceğiniz şekilde artırabilirsiniz.
+
+127
+00:10:27,880 --> 00:10:28,520
+Tamam.
+
+128
+00:10:28,830 --> 00:10:34,900
+ayarlamak gibi figür başlıklarını ve eksenler etiketlerini zaten aldık, ancak bunu nasıl yapacağınıza ilişkin hızlı bir hatırlatma göstereceğim.
+
+129
+00:10:34,920 --> 00:10:36,840
+X etiketini ayarlamak ve y etiketini
+
+130
+00:10:37,040 --> 00:10:44,240
+Bunu, sadece Piel T-Dog rakamına eşit olan basit bir incir olarak değiştireceğiz.
+
+131
+00:10:45,210 --> 00:10:47,490
+Devam edin ve buna bir eksen takımı ekleyin.
+
+132
+00:10:47,500 --> 00:10:49,980
+Böylece Şek.
+
+133
+00:10:50,120 --> 00:11:00,050
+Altçizgi xes eklersek onları 0 0 1 1'e koyarız ve sonra X dur arsa X'in Y olduğunu söyleyeceğiz.
+
+134
+00:11:00,840 --> 00:11:01,380
+Tamam.
+
+135
+00:11:01,680 --> 00:11:08,040
+Bir hatırlatma olarak, bir başlık eklemek isterseniz, bu eksenden birini alırsınız ve başlık
+
+136
+00:11:08,040 --> 00:11:14,110
+koyarsınız demektir ve bir y etiketi oluşturmak için istediğiniz başlığın bir dizeden geçersiniz.
+
+137
+00:11:14,280 --> 00:11:19,190
+Sadece y etiketini istediğiniz y etiketinden oluşan bir dizide ayarlayın deyin.
+
+138
+00:11:19,800 --> 00:11:27,220
+Ve daha sonra Ex-Slave için istediğiniz herşeyi yaparak istediğiniz etiketi ayarlayabilirsiniz.
+
+139
+00:11:28,660 --> 00:11:32,410
+Tamam, bu yüzden başlığım karım etiketim ve X etiketim var.
+
+140
+00:11:32,700 --> 00:11:35,610
+Efsanelerle efsaneler hakkında konuşalım.
+
+141
+00:11:35,620 --> 00:11:42,480
+Aslında hangi çizimin ne arsa olduğunu açıklığa kavuşturmak için etiket metnini kullanabilirsiniz ve sana ne demek istediğimi göstereceğim.
+
+142
+00:11:42,960 --> 00:11:53,850
+Ben devam edip bu üç kod satırını kaldırıp x başlangıç ​​çizgisi y virgül X olarak söyleyeceğim. Bu yüzden aynı figür üzerinde yapıyorum sadece fark.
+
+143
+00:11:54,100 --> 00:11:56,850
+Demek istediğim ve gerçekte bunu çalıştırırsam, burada iki satır alacağım, x y arsa ve y istismarını alacağım anlamına geliyor.
+
+144
+00:11:56,860 --> 00:12:05,580
+Bunlar oldukça farklı olduğu için devam edelim ve biraz daha benzer bir şey elde edelim.
+
+145
+00:12:06,720 --> 00:12:10,540
+Dışarı çıkıp x'i x kare ve x'e karşı x Q'ya göre planlayacağım. Tamam.
+
+146
+00:12:10,560 --> 00:12:18,070
+Şimdi iki satırımız var.
+
+147
+00:12:18,880 --> 00:12:19,490
+Ve koda atıfta bulunmaksızın
+
+148
+00:12:19,710 --> 00:12:21,810
+sadece bu şekle bakarsanız, muhtemelen her arsa temsil ettiği gibi biraz şaşkına dönmüş olursunuz.
+
+149
+00:12:21,880 --> 00:12:26,070
+Bir siparişte bir efsaneye eklemek istemezsiniz.
+
+150
+00:12:26,070 --> 00:12:29,790
+Efsaneye ekleyin.
+
+151
+00:12:29,880 --> 00:12:32,730
+Aslında oldukça basit ama iki adımlı bir süreç.
+
+152
+00:12:32,760 --> 00:12:34,120
+etiketli herhangi bir nesne bulunmadığını söyler.
+
+153
+00:12:34,560 --> 00:12:37,420
+İlk adım, kodunuzun altındaki eksenlerinin bulunduğu X'i çağırmaktır ve bunu çalıştırırsanız bir uyarı alırsınız,
+
+154
+00:12:37,500 --> 00:12:44,270
+Ve ikinci adımın geldiği yer.
+
+155
+00:12:45,030 --> 00:12:50,260
+Yaptığınız bu arsa çağrılarının her biri için, etiketli bir argümana ekleneceksiniz ve
+
+156
+00:12:50,520 --> 00:12:52,830
+bu etiket sadece istediğiniz bir dizedir.
+
+157
+00:12:52,830 --> 00:12:58,110
+X'in efsanevi işlevinin referans edebilmesi için ne demek istediğimi göstermeye devam edelim ve devam etsin ve burada X işaretini etiketlerim
+
+158
+00:12:58,120 --> 00:13:00,050
+olarak, sonra da bu etiketi koymalısınız diyeyim.
+
+159
+00:13:00,050 --> 00:13:05,550
+Devam etmeye
+
+160
+00:13:05,550 --> 00:13:13,970
+devam edeceğim.
+
+161
+00:13:13,980 --> 00:13:15,160
+Ve şimdi X efsanesini görürsem bunu çalıştırdığımda bir efsane hazırladım.
+
+162
+00:13:17,860 --> 00:13:19,620
+Yani tüm bunlar X'i çağırdığınızda efekti
+
+163
+00:13:21,370 --> 00:13:26,130
+arsa aramalarının her birinin aranmasını ve daha sonra bir etiket olup olmadığını kontrol etmesini sağlar.
+
+164
+00:13:26,160 --> 00:13:31,260
+Ve sonra sadece bir dize olan etiket döndürülür ve hattınızın
+
+165
+00:13:31,290 --> 00:13:33,150
+doğru rengine getirilir.
+
+166
+00:13:33,270 --> 00:13:38,880
+Ve daha sonra size çizgi renklerinizi nasıl özelleştireceğinizi göstereceğiz.
+
+167
+00:13:38,880 --> 00:13:39,810
+Şimdi hızlı hayır, bu hayır.
+
+168
+00:13:39,880 --> 00:13:44,190
+ellos belirtmekten kaçınmak için efsane çağrısında X'de yapabileceğiniz gerçek arslanlarla çakıştığına dikkat edin.
+
+169
+00:13:44,190 --> 00:13:45,400
+Bu efsanenin bazılarının, bunun,
+
+170
+00:13:45,390 --> 00:13:52,020
+Artık aslında belirtebileceğiniz birkaç lokasyon var ve size
+
+171
+00:13:52,020 --> 00:13:55,890
+dokümantasyon sayfasını gerçekte hızlı göstereceğim.
+
+172
+00:13:55,950 --> 00:14:01,030
+Bu bölümdeki defterinizle bağlantılı.
+
+173
+00:14:01,030 --> 00:14:01,830
+Devam edeyim bu bağlantı, sizi böyle bir sayfaya götürecek bağlantıya götürsün.
+
+174
+00:14:01,840 --> 00:14:05,130
+Ve efsaneyi tıklatabilirsiniz ve burada temel olarak bir dizi
+
+175
+00:14:05,130 --> 00:14:09,160
+parametre bulunur ve bir konum kodu ve bir konum dizgesi bulunur.
+
+176
+00:14:09,240 --> 00:14:14,640
+Böylece en iyi sağ üst sol üst sol alt solu belirtebilirsiniz. konum koduna dayalı olarak.
+
+177
+00:14:14,820 --> 00:14:16,270
+Her zaman konum kodunu 0
+
+178
+00:14:16,470 --> 00:14:23,280
+kullanmanızı öneririm, çünkü harita lib efsanesi için en iyi konumu seçmeye olanak tanır.
+
+179
+00:14:23,280 --> 00:14:28,120
+Hadi devam edelim ve bunu yapalım.
+
+180
+00:14:28,120 --> 00:14:30,180
+Gidip Alosi'nin 0 arsa diyerek dışarı çıkacağını ve en iyi yerin sol üst tarafta olduğunu görürsek devam
+
+181
+00:14:30,240 --> 00:14:31,170
+edelim ve bir başka yer kodu kontrol edelim.
+
+182
+00:14:31,170 --> 00:14:37,320
+Eğer buraya dönersek, örneğin merkezinde istediysek bir konum kodu 10 belirleyebiliriz.
+
+183
+00:14:37,380 --> 00:14:42,000
+Ve burada merkezimiz var.
+
+184
+00:14:42,010 --> 00:14:48,820
+için 0 - 10 arası gibi çalışamazsa, efsanenin sol alt köşesinin x ve y değerlerini veren bir tuple belirtebilirsiniz.
+
+185
+00:14:49,620 --> 00:14:51,480
+Şimdi, bu seçeneklerin hiçbiri sizin
+
+186
+00:14:51,480 --> 00:14:57,510
+Böylece, örneğin devam edip şu gibi bir şey söyleyebiliriz 0. 1 virgül 0. 1 ve bunun anlamı, ekleme
+
+187
+00:14:57,510 --> 00:15:02,650
+komplosunu yerleştirirken yaptığınız gibi.
+
+188
+00:15:02,880 --> 00:15:10,560
+Efsanenizi nereden edeceğinizi belirten bir düğme koyabilirsiniz.
+
+189
+00:15:10,560 --> 00:15:13,100
+Olmak için alt köşe.
+
+190
+00:15:13,200 --> 00:15:17,760
+Tamam.
+
+191
+00:15:17,760 --> 00:15:19,880
+İkinci bölüm için bu kadar.
+
+192
+00:15:19,880 --> 00:15:20,670
+Sırada.
+
+193
+00:15:20,790 --> 00:15:22,680
+Haritanın bu son bölümünde Partlow konseptleri dersi.
+
+194
+00:15:22,680 --> 00:15:23,590
+Renk çizgisini ve
+
+195
+00:15:23,590 --> 00:15:26,310
+çizgi türlerini ayarlamanın yanı sıra arsa aralığını belirleyen işaretleyicilerle
+
+196
+00:15:26,310 --> 00:15:32,040
+çalışma hakkında konuşacağız ve daha sonra bazı özel arsa türlerinden bahsedeceğiz ancak bu daha çok deniz kıyısındaki tartışmalarımıza yol açacaktır.
+
+197
+00:15:32,040 --> 00:15:36,690
+Pekâlâ, herkese teşekkürler.
+
+198
+00:15:36,690 --> 00:15:39,150
+Devam edin ve sahip olduğunuz sorularınızı Q &amp; A forumlarına postalayın ve onlara orada cevap vermekten memnuniyet duyarız.
+
+199
+00:15:39,180 --> 00:15:41,100
+Bu dersin defterlerini referans almayı unutmayın.
+
+200
+00:15:41,110 --> 00:15:46,010
+Tamam sonraki dersin
+
+201
+00:15:46,020 --> 00:15:49,090
+&nbsp;
+
+202
+00:15:49,090 --> 00:15:50,940
+&nbsp;

@@ -1,0 +1,791 @@
+1
+00:00:05,370 --> 00:00:11,100
+Bună ziua tuturor și bun venit la panourile de introducere și ieșire de date, deoarece o bibliotecă are capacitatea de
+
+2
+00:00:11,100 --> 00:00:15,900
+a citi date și de a scrie date într-o mare varietate de surse pentru această prelegere.
+
+3
+00:00:15,900 --> 00:00:22,860
+Vom fi preocupați doar de patru surse de date principale, vedeți fișiere Excel, fișierele H. T. mail de pe web și continuarea
+
+4
+00:00:22,860 --> 00:00:30,600
+pentru a lucra cu fișierele ASTM l și cu bazele de date secvențiale cu pandererele numai pentru a le instala
+
+5
+00:00:30,600 --> 00:00:31,920
+pentru biblioteci.
+
+6
+00:00:31,980 --> 00:00:35,310
+Instrucțiunile sunt în notebook sau dacă doriți doar să o faceți rapid.
+
+7
+00:00:35,310 --> 00:00:42,930
+Acestea sunt cele patru biblioteci necesare pentru a instala sequel alchimie lxi Mel HVM L5 capac și apoi supa frumoasă pentru
+
+8
+00:00:42,930 --> 00:00:46,880
+bibliotecă puteți face acest lucru fie cu Pipp sau Khanda.
+
+9
+00:00:47,280 --> 00:00:47,760
+In regula.
+
+10
+00:00:47,940 --> 00:00:52,510
+Odată ce ați instalat aceste biblioteci și vă referiți la un notebook, sunteți gata să începeți.
+
+11
+00:00:52,560 --> 00:00:53,890
+Să mergem mai departe și să intrăm.
+
+12
+00:00:53,910 --> 00:00:58,190
+Jupiter note carte și vă arată cum să citească și să scrie fișiere cu panda.
+
+13
+00:00:58,230 --> 00:01:00,860
+Bine, suntem la notebook-ul Jupiter.
+
+14
+00:01:00,930 --> 00:01:06,420
+Rețineți că, pe măsură ce referim fișierele, cum ar fi exemplul, vedeți fișierul X-Fi și exemplul
+
+15
+00:01:06,420 --> 00:01:12,030
+fișierului Excel, va trebui să vă asigurați că sunt în aceeași locație ca și notebook-ul Jupiter, pentru
+
+16
+00:01:12,030 --> 00:01:13,830
+a verifica locația un caiet.
+
+17
+00:01:13,830 --> 00:01:20,910
+Puteți să mergeți într-o celulă și să tastați P WD să faceți schimbare și să raportați locația.
+
+18
+00:01:20,910 --> 00:01:22,750
+Aceasta este aceeași locație pentru fișier.
+
+19
+00:01:22,770 --> 00:01:26,670
+Exemplu Vezi fiecare fișier din exemplul fișierul Excel ar trebui să fie în.
+
+20
+00:01:26,760 --> 00:01:31,680
+Dacă ați descărcat întregul depozit de notebook-uri și lucrați în secțiunea de introducere și ieșire de
+
+21
+00:01:31,680 --> 00:01:37,680
+date sau pe un notebook, ar trebui să fiți bine prin referirea fișierelor ca și cum ar fi deja acolo.
+
+22
+00:01:38,250 --> 00:01:43,870
+OK, să mergem mai departe și să arătăm cum să deschidem și să citim fișierele C ca V pentru a face asta.
+
+23
+00:01:43,890 --> 00:01:52,430
+Puteți spune doar PD citiți sublinierea CXXVI și apoi începeți să scrieți numele C ca fișier.
+
+24
+00:01:52,500 --> 00:01:54,510
+În acest caz, știu că se numește exemplul.
+
+25
+00:01:54,660 --> 00:02:01,000
+Deci, când am început să scriu un truc frumos, este o fișă de clic și va completa automat numele fișierului.
+
+26
+00:02:02,190 --> 00:02:03,570
+În cazul tău, ai putea avea.
+
+27
+00:02:03,570 --> 00:02:06,340
+Exemplu Nu este cazul Cs V.
+
+28
+00:02:06,390 --> 00:02:08,880
+Să mergem mai departe și să citim asta în.
+
+29
+00:02:09,030 --> 00:02:15,840
+Am schimbat intrarea și acum pot să văd C ca pe un fișier de date cu coloanele A B C
+
+30
+00:02:15,840 --> 00:02:19,290
+și D și 0 1 până la 3 ca rânduri.
+
+31
+00:02:19,290 --> 00:02:28,010
+Rețineți că dacă vreau să citesc toate fișierele pe care le folosesc doar linia de comandă citiți linia de comenzi clic aici și primesc
+
+32
+00:02:28,020 --> 00:02:33,060
+acest meniu derulant de varietatea de formate pe care Pancho le poate citi.
+
+33
+00:02:33,060 --> 00:02:35,350
+Deci Pan poate citi din clipboard chiar.
+
+34
+00:02:35,350 --> 00:02:42,400
+A se vedea ca vom excele fișiere HDR fișiere Jaison muraturi căuta continuă tabele fișiere, etc ..
+
+35
+00:02:42,660 --> 00:02:44,870
+Țineți minte că au multe opțiuni aici.
+
+36
+00:02:44,940 --> 00:02:47,340
+Chiar acum trecem peste cele mai obișnuite.
+
+37
+00:02:47,840 --> 00:02:53,490
+OK pentru a scrie la un fișier CXXVI aveți nevoie de un cadru de date, așa că am de gând să merg înainte și
+
+38
+00:02:53,490 --> 00:02:55,740
+doar să spun DF este egal cu gândit PD.
+
+39
+00:02:55,760 --> 00:02:58,100
+Citește underscore C ca V.
+
+40
+00:02:58,530 --> 00:03:05,920
+Și din nou, doar pentru a face autocomplete fila de exemplu aici și acum am T. F. ca același exemplu DFS.
+
+41
+00:03:05,920 --> 00:03:10,290
+Am salvat-o într-o variabilă de pe un cadru de date.
+
+42
+00:03:10,290 --> 00:03:14,000
+Puteți spune să subliniați dacă ați făcut clic pe fila aici.
+
+43
+00:03:14,220 --> 00:03:17,470
+Veți observa că aveți o varietate de formate în care puteți scrie.
+
+44
+00:03:17,580 --> 00:03:21,270
+Deci, aproape toate aceleasi formate pe care le puteti citi.
+
+45
+00:03:21,270 --> 00:03:25,780
+Deci am de gând să intru și să spun DFA subliniază.
+
+46
+00:03:26,070 --> 00:03:36,960
+Am de gând să eticheta acest ieșire meu underscore și celălalt lucru pe care îl fac este să spun Index este falsă și motivul pentru care
+
+47
+00:03:36,960 --> 00:03:42,200
+este pentru că nu vreau să salveze acest index ca o coloană.
+
+48
+00:03:42,210 --> 00:03:47,400
+Dă-mi voie să merg și să-ți arăt ce se întâmplă dacă nu pun indexing la fals și tocmai l-au pus
+
+49
+00:03:47,400 --> 00:03:49,290
+pe F să-l vadă pe Esrey.
+
+50
+00:03:49,410 --> 00:03:54,660
+Am de gând să mergem înainte și să spun PD care citesc subliniază cxxviii și voi citi
+
+51
+00:03:54,660 --> 00:03:56,860
+fișierul pe care tocmai mi-am salvat ieșirea.
+
+52
+00:03:56,960 --> 00:04:03,180
+Nu primesc această coloană aici numită 0 nesemnată și acesta a fost vechiul index.
+
+53
+00:04:03,180 --> 00:04:09,560
+Acum, dacă spun T. F. pentru a vedea este indicele fals în execuția acelei celule.
+
+54
+00:04:09,750 --> 00:04:15,360
+Și apoi, dacă mi-am citit ieșirea din nou, voi spune de fapt că indexul și eu va atribui automat un
+
+55
+00:04:15,360 --> 00:04:17,490
+indice de interval la cadrul de date.
+
+56
+00:04:17,490 --> 00:04:22,470
+Țineți minte acest lucru pe măsură ce salvați fișierele CACP, indiferent dacă este sau nu potrivit pentru dvs. să
+
+57
+00:04:22,560 --> 00:04:24,520
+spuneți că Index este egal cu falsul.
+
+58
+00:04:24,540 --> 00:04:24,850
+In regula.
+
+59
+00:04:24,870 --> 00:04:28,700
+Acum, să mergem mai departe și să mergem mai departe la citirea și scrierea din fișiere Excel.
+
+60
+00:04:28,870 --> 00:04:31,240
+Panda poate citi și scrie fișierele Excel.
+
+61
+00:04:31,290 --> 00:04:34,280
+Rețineți că panda poate importa numai datele.
+
+62
+00:04:34,350 --> 00:04:39,990
+Nu poate importa formule sau imagini sau lucruri cum ar fi macro-uri care să le utilizeze cu celelalte scoruri citite.
+
+63
+00:04:40,020 --> 00:04:43,310
+Metoda Excel poate provoca prăbușiri de panda.
+
+64
+00:04:43,320 --> 00:04:49,890
+Un alt lucru care trebuie luat în considerare este că puteți primi o eroare prin care vi se cere să instalați biblioteca x l r d care
+
+65
+00:04:49,890 --> 00:04:51,360
+ar fi trebuit instalată automat.
+
+66
+00:04:51,420 --> 00:04:53,330
+Dacă utilizați distribuția Anaconda.
+
+67
+00:04:53,430 --> 00:04:58,710
+Dar dacă nu ați făcut-o, veți merge la terminalul dvs. și în terminalul sau
+
+68
+00:04:58,710 --> 00:05:05,130
+linia de comandă veți tasta conda install X LRAD sau veți face același lucru cu o instalare pip.
+
+69
+00:05:05,160 --> 00:05:06,810
+Din nou, nu vei face asta într-o celulă.
+
+70
+00:05:06,820 --> 00:05:09,410
+Veți face acest lucru la linia de comandă sau terminal.
+
+71
+00:05:09,420 --> 00:05:14,300
+Sperăm că dacă ați făcut distribuția Anaconda care ar fi trebuit să fie instalată automat împreună cu pantaloni.
+
+72
+00:05:15,060 --> 00:05:17,070
+Să mergem mai departe și să vedem cum funcționează aceasta.
+
+73
+00:05:17,100 --> 00:05:18,590
+Mă duc să văd și să arăt fișierul Excel.
+
+74
+00:05:18,600 --> 00:05:22,700
+Voi lucra cu dvs. aveți o probă Excel foarte simplă.
+
+75
+00:05:22,740 --> 00:05:27,870
+De fapt, arată aproape la fel ca fișierul cu care lucrăm, cu excepția cazului în care se
+
+76
+00:05:27,870 --> 00:05:33,350
+observă că este în foaia 1 și în esență ceea ce cred Pandurs că este un registru de lucru.
+
+77
+00:05:33,420 --> 00:05:34,620
+Este un registru de lucru.
+
+78
+00:05:34,650 --> 00:05:41,960
+Este doar o grămadă de coli și fiecare foaie este un cadru de date, ceea ce înseamnă că pot spune PD care citesc Excel.
+
+79
+00:05:42,390 --> 00:05:46,910
+Trec în fișierul Excel fișierul X LS X.
+
+80
+00:05:47,130 --> 00:05:54,000
+Un truc bun pentru acest lucru este să începeți să tastați numele fișierului apăsați fila și să-l selectați din nou acest lucru funcționează numai dacă
+
+81
+00:05:54,030 --> 00:05:57,080
+fișierele Excel se află în aceeași locație ca și acest notebook.
+
+82
+00:05:57,270 --> 00:06:04,790
+Dacă nu este vorba, va trebui să treci pe calea întregului fișier, după care poți să spui numele foii și apoi
+
+83
+00:06:04,830 --> 00:06:11,160
+să intri în foile pasand și să citești și să obținem rezultatul pe care l-am așteptat.
+
+84
+00:06:11,160 --> 00:06:13,780
+Și asta este în principiu pentru citirea dintr-un fișier excel.
+
+85
+00:06:13,790 --> 00:06:18,390
+Introduceți fișierul și apoi introduceți numele de foaie dorit în Pandurs încearcă să îl
+
+86
+00:06:18,390 --> 00:06:20,690
+citească ca un cadru de date.
+
+87
+00:06:20,820 --> 00:06:22,490
+Un cadru de date pentru o ieșire Excel.
+
+88
+00:06:22,530 --> 00:06:24,400
+Este, de asemenea, un proces foarte simplu.
+
+89
+00:06:24,420 --> 00:06:31,620
+Trebuie doar să luați cadrul de date pe care doriți să-l scrieți pentru Excel, pentru a sublinia trecerea Excel în numele fișierului Excel pe
+
+90
+00:06:31,620 --> 00:06:33,400
+care doriți să îl salvați.
+
+91
+00:06:33,430 --> 00:06:36,660
+Asta va face un nou numit Excel.
+
+92
+00:06:36,870 --> 00:06:44,730
+Exemplu 2 punct x l s x și apoi putem specifica un nume de foaie dacă doriți.
+
+93
+00:06:44,910 --> 00:06:49,980
+Ceva de știut este că, în cazul în care spui să subliniezi Excel, indiferent de motivul
+
+94
+00:06:49,980 --> 00:06:54,260
+pandelor, trebuie să scrie în numele foilor de subliniere și numele foii.
+
+95
+00:06:54,300 --> 00:06:57,120
+Vom intra și vom pune în foaie nouă.
+
+96
+00:06:57,120 --> 00:07:00,500
+Bine că e bine și alerga și asta este.
+
+97
+00:07:00,510 --> 00:07:02,730
+Am salvat asta într-un fișier Excel.
+
+98
+00:07:02,730 --> 00:07:05,970
+Acum să mergem mai departe și să mergem la T. M ..
+
+99
+00:07:06,180 --> 00:07:10,260
+Din nou, va trebui să instalați câteva biblioteci pentru ca acest lucru să funcționeze și probabil că
+
+100
+00:07:10,260 --> 00:07:12,530
+este necesar să reporniți notebook-ul Jupiter după aceea.
+
+101
+00:07:12,570 --> 00:07:15,080
+Continuați și verificați notele pentru această prelegere.
+
+102
+00:07:15,080 --> 00:07:20,130
+Cartea de note pentru a obține o listă a tuturor bibliotecilor trebuie să instaleze sau să meargă mai departe și să
+
+103
+00:07:20,130 --> 00:07:22,670
+meargă la începutul lecției în care afișăm lista de biblioteci.
+
+104
+00:07:22,950 --> 00:07:26,760
+Să vorbim despre intrarea HTL aici.
+
+105
+00:07:26,790 --> 00:07:34,650
+Am o legătură cu documentul FDIC din pagina de listă a eșuată a bancii și aici este doar lista tuturor băncilor
+
+106
+00:07:35,010 --> 00:07:36,710
+defecte de către FDIC.
+
+107
+00:07:36,870 --> 00:07:41,080
+În ceea ce privește urmărirea acestora, este Federal Federal Insurance Corporation.
+
+108
+00:07:41,220 --> 00:07:43,310
+Și aici avem o grămadă de bănci care nu au reușit.
+
+109
+00:07:43,320 --> 00:07:47,660
+Data de închidere a zilei de închidere, etc. dar acest lucru este de fapt doar la urmărit să clipească.
+
+110
+00:07:47,760 --> 00:07:51,180
+Această legătură este în căsuțele pe care le poate scoate și copia și lipi de acolo.
+
+111
+00:07:51,180 --> 00:07:55,760
+Voi merge mai departe și copiați acest link și încercați să îl citiți.
+
+112
+00:07:55,760 --> 00:07:59,890
+Și de panderers tocilari care fac acest lucru tot ce trebuie să fac este să spun PD.
+
+113
+00:07:59,970 --> 00:08:05,610
+Să mergem mai departe și să spunem că datele sunt egale cu puncte PD.
+
+114
+00:08:06,060 --> 00:08:08,190
+Citiți h T. M ..
+
+115
+00:08:08,420 --> 00:08:12,900
+Și apoi, ca un șir, voi trece în acea epocă reală TMLC.
+
+116
+00:08:14,440 --> 00:08:19,720
+Vor lua puțin timp să citească faptul că ar trebui să funcționeze dacă aveți toate bibliotecile.
+
+117
+00:08:20,000 --> 00:08:20,340
+O.K.
+
+118
+00:08:20,370 --> 00:08:21,600
+Se pare că a ieșit.
+
+119
+00:08:21,690 --> 00:08:27,280
+Ceva de remarcat aici este că, de obicei, acest lucru nu se va referi direct la un cadru de date.
+
+120
+00:08:27,300 --> 00:08:34,360
+Dacă văd ce date sunt dacă spun tipul, veți observa că este de fapt o listă.
+
+121
+00:08:34,470 --> 00:08:40,350
+Și, în esență, ceea ce a încercat fără pantofi a fost să găsească fiecare element de masă din
+
+122
+00:08:40,350 --> 00:08:41,190
+această echipă.
+
+123
+00:08:41,190 --> 00:08:48,090
+Și dacă sunteți familiarizați dacă h T. M. știi că dacă poți să dai click dreapta aici și
+
+124
+00:08:48,090 --> 00:08:50,660
+să vezi pagina sursei vei avea această listă de cod HTL real.
+
+125
+00:08:50,910 --> 00:08:56,010
+Și dacă sunteți familiarizați cu voi, veți ști că puteți căuta de fapt, la fel ca și cursurile de
+
+126
+00:08:56,010 --> 00:08:56,670
+listă aici.
+
+127
+00:08:56,700 --> 00:09:03,300
+Există de fapt referințe la tabele, astfel încât există coduri de masă aici în codul HTML și acest lucru va fi
+
+128
+00:09:03,300 --> 00:09:04,550
+de fapt panoul.
+
+129
+00:09:04,560 --> 00:09:09,500
+Și asta va face o listă a acestora și va converti fiecare element din acea listă într-un cadru de date.
+
+130
+00:09:09,720 --> 00:09:13,800
+Și ceea ce vei face este să treci prin listă până vei găsi ce vrei
+
+131
+00:09:13,800 --> 00:09:14,430
+să cauți.
+
+132
+00:09:14,490 --> 00:09:17,310
+În acest caz, ar trebui să fie primul element din listă.
+
+133
+00:09:17,310 --> 00:09:20,120
+Deci, dacă spunem date la punctul zero.
+
+134
+00:09:20,160 --> 00:09:25,790
+Deci, primul element din acea listă, care este cadrul de date pe care îl căutam pentru orașul cu numele mare, este actualizat.
+
+135
+00:09:26,220 --> 00:09:26,800
+Cetera.
+
+136
+00:09:26,940 --> 00:09:32,930
+Să mergem și să verificăm capul acelui cadru de date și așa arată.
+
+137
+00:09:33,030 --> 00:09:34,670
+Din nou, unele lucruri nu se copiază.
+
+138
+00:09:34,670 --> 00:09:35,310
+Exact.
+
+139
+00:09:35,310 --> 00:09:36,920
+Ai o grămadă de valori.
+
+140
+00:09:37,110 --> 00:09:42,720
+Dar păstrați în minte panderers este practic doar citirea acest H. T. mail cât mai bine posibil.
+
+141
+00:09:42,720 --> 00:09:43,110
+In regula.
+
+142
+00:09:43,260 --> 00:09:46,630
+Asta e H-2A poșta care este în esență doar scrapin web de Pandurs.
+
+143
+00:09:46,650 --> 00:09:51,150
+Să mergem în cele din urmă la ultimul nostru subiect, care lucrează cu sequel.
+
+144
+00:09:51,210 --> 00:09:55,530
+Acum există câteva note în notebook-ul tău despre continuarea și panda.
+
+145
+00:09:55,530 --> 00:10:01,410
+Panda este de fapt cea mai bună cale de a citi o bază de date continuă, deoarece există multe arome
+
+146
+00:10:01,410 --> 00:10:07,920
+de motoare de continuare, cum ar fi postscripts sequel sequel-ul meu sequel light cetera în cazul în care vom face aici este
+
+147
+00:10:07,920 --> 00:10:13,860
+doar de fapt, construi un motor foarte simplu sequel care va să fie doar temporar ținut în memorie pentru a
+
+148
+00:10:14,250 --> 00:10:19,070
+vă arăta cum puteți folosi Pandurs pentru a citi tabelele complet ca cadre de date.
+
+149
+00:10:19,080 --> 00:10:25,380
+Cu toate acestea, aș recomanda să faci de fapt o căutare pentru un anumit driver care depinde de motorul
+
+150
+00:10:25,470 --> 00:10:26,810
+tău specific continuu.
+
+151
+00:10:26,850 --> 00:10:31,650
+De exemplu, dacă te duci la notebook pentru această conferință, vei vedea că, dacă folosești sequel-ul Postgres,
+
+152
+00:10:31,860 --> 00:10:36,810
+ar trebui să folosești de fapt o bibliotecă numită Psycho PGE 2, care este special concepută pentru a
+
+153
+00:10:36,810 --> 00:10:41,370
+lucra cu continuarea post-carieră sau dacă folosești sequel-ul meu ar trebui să utilizați pi sequel mea.
+
+154
+00:10:41,370 --> 00:10:45,690
+În altă bibliotecă special concepută pentru acea aromă specifică a continuării.
+
+155
+00:10:45,780 --> 00:10:50,490
+Chiar acum vom face un exemplu foarte simplu despre modul în care panda ar putea citi o
+
+156
+00:10:50,490 --> 00:10:53,090
+întreagă tabelă și o continuare dacă ar fi trebuit.
+
+157
+00:10:54,080 --> 00:11:03,600
+S-ar termina sa spunem ca din importurile de alchimie creeaza motorul si asta ne va permite sa creem
+
+158
+00:11:03,600 --> 00:11:07,740
+un motor simplu in continuare in memorie.
+
+159
+00:11:07,740 --> 00:11:14,610
+Am de gând să mergem mai departe și să spunem că motorul este egal pentru a crea un
+
+160
+00:11:14,610 --> 00:11:16,290
+motor de subliniere și
+
+161
+00:11:19,460 --> 00:11:26,790
+aici și doar de gând să tastați în lumini continuă trei slash-uri înainte și apoi de colon de memorie.
+
+162
+00:11:26,850 --> 00:11:31,510
+Așadar, am un sequel ca și colonul cu trei sferturi de colon în memoria colonului.
+
+163
+00:11:31,600 --> 00:11:34,430
+Vom merge mai departe și vom face asta și acest mic lucru.
+
+164
+00:11:34,440 --> 00:11:41,190
+Această mică linie de coduri a creat o bază de date pentru motoare ușoare foarte scurte, foarte scurtă, care
+
+165
+00:11:41,190 --> 00:11:42,610
+rulează în memorie.
+
+166
+00:11:42,720 --> 00:11:50,070
+Mă duc să iau cadrele mele de date pe care DSF și eu le voi spune pentru a sublinia continuarea
+
+167
+00:11:50,070 --> 00:11:55,330
+și o să scriu acelui motor foarte temporar pe care l-am rulat în memorie.
+
+168
+00:11:55,500 --> 00:11:59,430
+Deci, ce puteți face este că vom spune să continuați că veți trece în ceea ce doriți să
+
+169
+00:11:59,430 --> 00:12:00,310
+fie numită această masă.
+
+170
+00:12:00,540 --> 00:12:03,310
+Deci, du-te și apela la masa mea.
+
+171
+00:12:03,750 --> 00:12:05,920
+Și apoi treceți în motorul de continuare cu care lucrați.
+
+172
+00:12:05,920 --> 00:12:07,990
+În acest caz este doar un motor.
+
+173
+00:12:08,070 --> 00:12:15,630
+Acum, acest motor va fi o conexiune de obicei, aș recomanda să citiți documentația temeinic, dar din nou, așa cum am
+
+174
+00:12:15,660 --> 00:12:22,050
+menționat mai devreme pandele doar de la sine, probabil nu este cea mai bună sursă pentru a
+
+175
+00:12:22,050 --> 00:12:25,010
+citi de fapt, sequel în panda direct.
+
+176
+00:12:25,050 --> 00:12:30,870
+Ar trebui probabil să căutați biblioteci Python specializate pentru orice versiune a sequelului cu care
+
+177
+00:12:30,870 --> 00:12:31,560
+lucrați.
+
+178
+00:12:31,800 --> 00:12:37,590
+Dar, în ceea ce privește o setare foarte simplă, poți să spui DF pentru a continua să treci numele noului
+
+179
+00:12:37,710 --> 00:12:41,530
+tabel pe care îl vrei și apoi conexiunea cu motorul tău secundar.
+
+180
+00:12:41,820 --> 00:12:47,010
+Și acum voi merge mai departe și să spun sequel dacă și de fapt, citiți înapoi masa.
+
+181
+00:12:47,010 --> 00:12:54,190
+Deci, să spun că continuarea continuării sublinierii de la PD Reed în numele tabelului meu este, în acest caz, masa mea.
+
+182
+00:12:54,670 --> 00:12:58,110
+Apoi precizez conexiunea reală și așa mai departe.
+
+183
+00:12:58,380 --> 00:13:04,520
+Și asta e doar motorul care conține o bază de date foarte ușoară, care se întâmplă în memorie.
+
+184
+00:13:04,620 --> 00:13:11,160
+Dacă mă duc înainte și citesc asta și verifică ce arată că am continuat DMF și observ că indexul
+
+185
+00:13:11,280 --> 00:13:13,250
+este o coloană nouă aici.
+
+186
+00:13:13,260 --> 00:13:16,450
+Bine, mergeți și nu ezitați să postați forumurile Q &amp; A.
+
+187
+00:13:16,560 --> 00:13:22,230
+Dacă întâmpinați dificultăți în găsirea unei anumite biblioteci care funcționează în cazul în care continuați motorul sau dacă doriți să continuați cu
+
+188
+00:13:22,230 --> 00:13:28,590
+succes în ceea ce privește această prelegere, cel mai important lucru pe care trebuie să-l scoateți este cum să citiți și să scrieți fișierele CSV deoarece
+
+189
+00:13:28,860 --> 00:13:33,300
+acestea merg doar la fiți de lucru pentru fișierele CSV pentru restul cursului, în măsura în care
+
+190
+00:13:33,300 --> 00:13:34,100
+vă folosiți personal.
+
+191
+00:13:34,110 --> 00:13:36,750
+Sperăm că puteți să verificați metodele de citire a sublinierilor.
+
+192
+00:13:36,750 --> 00:13:42,300
+Există o mulțime de ele și puteți doar să vă uitați la documentație sau să consultați un notebook
+
+193
+00:13:42,300 --> 00:13:45,800
+pentru a citi de fapt un cadru de date panderers.
+
+194
+00:13:45,810 --> 00:13:47,920
+Multumesc tuturor.
+
+195
+00:13:47,940 --> 00:13:52,590
+Continuați și puneți întrebările pe care le aveți despre această conferință la forumul Întrebări și răspunsuri, deoarece există multe opțiuni
+
+196
+00:13:52,590 --> 00:13:55,030
+aici și nu avem timp să le acoperiți pe toate.
+
+197
+00:13:55,110 --> 00:13:58,290
+Dar dacă aveți întrebări, mă bucur să le răspund în forumuri.
+
+198
+00:13:58,290 --> 00:14:00,150
+Multumesc tuturor si te voi vedea la urmatoarea conferinta

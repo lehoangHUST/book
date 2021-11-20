@@ -1,0 +1,467 @@
+1
+00:00:05,580 --> 00:00:09,150
+Hola a todos y bienvenidos a los marcos de datos por 3 conferencias.
+
+2
+00:00:09,540 --> 00:00:14,380
+En esta conferencia final de la serie de conferencias del marco de datos vamos a aprender sobre el índice multa
+
+3
+00:00:14,380 --> 00:00:15,920
+y la clave más alta del índice.
+
+4
+00:00:15,930 --> 00:00:20,370
+Bien, primero cree un ejemplo rápido de cómo se ve un multi indexado de datos y luego
+
+5
+00:00:20,370 --> 00:00:23,670
+cómo puede trabajar con marcos de datos para tener un índice multinivel.
+
+6
+00:00:23,670 --> 00:00:26,990
+Avancemos y vayamos al cuaderno de Júpiter para comenzar.
+
+7
+00:00:27,000 --> 00:00:27,390
+Todo bien.
+
+8
+00:00:27,390 --> 00:00:29,470
+Aquí estoy en el cuaderno de Júpiter.
+
+9
+00:00:29,580 --> 00:00:35,370
+Lo que voy a hacer y hacer es copiar y pegar algunas líneas de código que están disponibles para usted
+
+10
+00:00:35,370 --> 00:00:37,850
+en su computadora portátil llamada Marcos de datos.
+
+11
+00:00:37,860 --> 00:00:43,440
+Si se desplaza hacia abajo hasta llegar a la sección de clave superior del índice múltiple de índice, verá estas cuatro
+
+12
+00:00:43,440 --> 00:00:44,290
+líneas de código.
+
+13
+00:00:44,310 --> 00:00:48,130
+Estas son las cuatro líneas de código que se usarán para construir realmente este marco de datos.
+
+14
+00:00:48,330 --> 00:00:50,140
+Podemos seguir y verificar esto.
+
+15
+00:00:50,340 --> 00:00:55,450
+Diremos fuera y esa es solo la lista.
+
+16
+00:00:55,470 --> 00:01:02,970
+diferentes G1 G1 G1 y luego G-2 DTG 2 que tenemos dentro de los cuales es 1 2 3 1 2 3.
+
+17
+00:01:03,030 --> 00:01:07,700
+Así que tenemos tres o seis elementos en esta lista de dos tipos
+
+18
+00:01:08,010 --> 00:01:16,110
+Y luego, cuando seguimos adelante y lo hicimos, utilizamos la función zip junto con la función de lista, ya que
+
+19
+00:01:16,140 --> 00:01:23,580
+dijimos índice más alto, seguimos adelante y usamos zip y LIST en esto para convertir esto en una lista
+
+20
+00:01:23,580 --> 00:01:29,790
+de tuplas pares G 1 1 1 2 1 3 2 1 2 2 2 3.
+
+21
+00:01:30,000 --> 00:01:35,050
+Y luego pasé a una función especial de panderers y en realidad no estaríamos trabajando con esta
+
+22
+00:01:35,070 --> 00:01:41,910
+función en todo el curso, pero esto es solo para una personalización de hacer un marco de datos así que no te
+
+23
+00:01:41,940 --> 00:01:44,960
+preocupes demasiado por eso, pero Solo quiero que lo sepas.
+
+24
+00:01:44,970 --> 00:01:49,820
+y básicamente puede tomar una lista que se ve así y crear un índice múltiple a partir de ella.
+
+25
+00:01:49,830 --> 00:01:51,870
+Su PD es un índice multibanda de tuplas
+
+26
+00:01:52,140 --> 00:01:56,800
+Entonces, después de que termines, obtendrás este índice múltiple con varios niveles.
+
+27
+00:01:56,800 --> 00:02:01,890
+¿Quieres que agregue un nivel uno a tres como otro nivel y luego las etiquetas y voy a ir a explicar todo
+
+28
+00:02:01,890 --> 00:02:04,610
+lo que significa a medida que creamos este marco de datos.
+
+29
+00:02:04,680 --> 00:02:09,780
+Pero por ahora puedes simplemente copiar y pegar este código directamente desde el portátil, ya que no
+
+30
+00:02:09,780 --> 00:02:14,850
+es importante en lo que respecta a la creación de ese marco de datos desde cero.
+
+31
+00:02:15,520 --> 00:02:27,360
+Rande y 6 Com 2, así que tenemos 6 filas por dos columnas y luego vamos a establecer que el índice sea el objeto de índice más alto
+
+32
+00:02:27,420 --> 00:02:33,660
+que acabamos de crear y luego estableceré las columnas ser una lista a y b.
+
+33
+00:02:33,660 --> 00:02:38,440
+Entraremos y diremos que el marco de datos de DP pasó por
+
+34
+00:02:39,210 --> 00:02:39,700
+Todo bien.
+
+35
+00:02:39,720 --> 00:02:43,740
+Y puede tener la libertad de copiar y pegar todo este código de los cuadernos porque no es tan importante.
+
+36
+00:02:44,010 --> 00:02:48,650
+Esto es solo para construir un marco de datos de varios niveles.
+
+37
+00:02:48,700 --> 00:02:50,850
+Déjame mostrarte lo que quiero decir con eso aquí.
+
+38
+00:02:50,940 --> 00:02:55,110
+Si realmente muestro el marco de datos, puedo ver que tiene dos niveles de un índice.
+
+39
+00:02:55,110 --> 00:02:57,240
+Tiene este nivel de Jiwon y G-2.
+
+40
+00:02:57,420 --> 00:03:02,580
+Y luego este sub o nivel de perspicacia uno dos tres uno uno dos tres y luego dos columnas.
+
+41
+00:03:02,730 --> 00:03:07,200
+Y este es un marco de datos que parece tener múltiples niveles de un índice.
+
+42
+00:03:07,200 --> 00:03:09,870
+También conocido como índice de clave más alta.
+
+43
+00:03:09,870 --> 00:03:15,970
+Avancemos y mostremos cómo podemos llamar datos desde un índice multinivel para esta jerarquía de índices.
+
+44
+00:03:16,140 --> 00:03:20,740
+Podemos seguir y hacer es decir DMF L-O ver.
+
+45
+00:03:21,780 --> 00:03:27,630
+Y luego podemos seguir adelante y usar la notación de Bracton GRABBE desde el índice exterior.
+
+46
+00:03:27,630 --> 00:03:34,560
+Por ejemplo, si quiero todo lo que está debajo de G 1, puedo pasarlo y obtengo ese
+
+47
+00:03:34,560 --> 00:03:41,730
+pequeño marco de datos secundario que básicamente son las tres primeras filas para esas dos columnas y
+
+48
+00:03:41,820 --> 00:03:49,870
+luego puedo seguir indizando de esto, como I ' Veo o ellos ven cualquiera de los dos está bien.
+
+49
+00:03:50,580 --> 00:03:56,300
+Y luego pasar el número y eso realmente devolverá estos dos elementos aquí como una serie.
+
+50
+00:03:56,310 --> 00:04:04,360
+Entonces, la idea básica es que llame desde el índice externo, continúe llamando más adentro.
+
+51
+00:04:04,380 --> 00:04:08,080
+Si realmente quiere nombrar estos nombres de índice.
+
+52
+00:04:08,130 --> 00:04:09,720
+Entonces ahora no tienen nombre.
+
+53
+00:04:09,720 --> 00:04:14,910
+Eso se notifica sobre el hecho de que no hay un nombre en estas dos celdas que pueda aparecer
+
+54
+00:04:15,330 --> 00:04:16,340
+en el índice DMF.
+
+55
+00:04:16,440 --> 00:04:21,610
+Los nombres cambian de entrada y debe obtener una lista congelada que no es ninguna.
+
+56
+00:04:21,630 --> 00:04:24,900
+Y esto es solo un tipo de objeto de nombres de índice de panderers.
+
+57
+00:04:25,110 --> 00:04:31,230
+Todo lo que se dice aquí es que estos índices no tienen ningún nombre, pero puedes seguir y decir iguales
+
+58
+00:04:32,640 --> 00:04:34,900
+y luego pasar una lista de nombres.
+
+59
+00:04:34,980 --> 00:04:40,450
+Por ejemplo, vamos a salir y llamar a esto fuera de los grupos de índice porque es primero G.
+
+60
+00:04:40,770 --> 00:04:45,300
+Y luego llamaremos al índice de insight y verá los números.
+
+61
+00:04:45,300 --> 00:04:53,460
+Y ahora, cuando llamo a mi marco de datos, tenemos grupos como un índice etiquetado en el exterior y entumecidos como un índice
+
+62
+00:04:53,460 --> 00:04:55,220
+de etiqueta en el interior.
+
+63
+00:04:55,290 --> 00:04:57,610
+Y esto podría tener tantas capas como quieras.
+
+64
+00:04:57,870 --> 00:05:03,210
+cómo esto sería útil para la información de índice multinivel que desea utilizar a lo largo de un marco de datos.
+
+65
+00:05:03,210 --> 00:05:05,260
+Es de esperar que pueda comenzar a ver
+
+66
+00:05:05,790 --> 00:05:10,800
+Avancemos y le mostraremos cómo podemos obtener información de esto una vez más.
+
+67
+00:05:10,800 --> 00:05:13,270
+Imagina que quieres agarrar este valor aquí mismo.
+
+68
+00:05:13,290 --> 00:05:16,540
+0. 07 a la que ha destacado.
+
+69
+00:05:16,830 --> 00:05:22,580
+Bueno, eso está bajo G-2 número dos columna B.
+
+70
+00:05:22,940 --> 00:05:26,200
+Comencemos desde afuera y trabajemos hacia adentro
+
+71
+00:05:26,250 --> 00:05:37,290
+Seguiremos adelante y especificaremos que queremos C G y que devuelve este marco de datos.
+
+72
+00:05:37,290 --> 00:05:39,250
+De nuevo, estamos buscando este valor aquí.
+
+73
+00:05:39,270 --> 00:05:48,040
+Así que sigamos adelante y hagamos un índice más y podemos seguir adelante y llamar aquí también.
+
+74
+00:05:48,960 --> 00:05:52,340
+Y luego tenemos debajo de la columna B o índice B.
+
+75
+00:05:52,350 --> 00:05:55,320
+Disculpe por la serie 0. 07.
+
+76
+00:05:55,500 --> 00:06:01,350
+Entonces, finalmente, simplemente llamamos a B al final y eso es todo lo que podemos agarrar desde
+
+77
+00:06:01,350 --> 00:06:03,900
+el exterior al interior de este valor particular.
+
+78
+00:06:04,010 --> 00:06:06,480
+Lo que debes hacer ahora es detener el video.
+
+79
+00:06:06,540 --> 00:06:12,220
+Seleccione otro valor y vea si puede indexarlo exitosamente y devolverlo.
+
+80
+00:06:12,360 --> 00:06:12,850
+DE ACUERDO.
+
+81
+00:06:12,960 --> 00:06:14,600
+Espero que puedas hacer eso.
+
+82
+00:06:14,610 --> 00:06:20,190
+Avancemos y le mostraremos una última función muy útil llamada sección transversal
+
+83
+00:06:20,260 --> 00:06:23,100
+y va a ser x x.
+
+84
+00:06:23,970 --> 00:06:28,680
+Por lo tanto, esto devuelve una sección transversal de filas o columnas de una serie de
+
+85
+00:06:28,680 --> 00:06:32,490
+marcos de datos y lo usará cuando tenga un índice de varios niveles.
+
+86
+00:06:32,490 --> 00:06:36,020
+Así que de nuevo nuestro marco de datos se ve así.
+
+87
+00:06:36,030 --> 00:06:43,820
+Digamos que queríamos agarrar todo lo que estaba debajo de G 1. Podría hacer lo que acabo de mostrarte EHLO C
+
+88
+00:06:44,060 --> 00:06:48,190
+G 1 y eso devuelve los datos de la energía 1.
+
+89
+00:06:48,360 --> 00:06:56,940
+Pero otra opción para un índice multinivel es usar esta X como la sección transversal y luego pasar Jiwon también
+
+90
+00:06:57,000 --> 00:06:58,260
+tiene una cadena.
+
+91
+00:06:58,620 --> 00:07:06,180
+Pero lo bueno de esta sección es que tiene la capacidad de omitir o entrar en un índice de varios niveles.
+
+92
+00:07:06,540 --> 00:07:14,730
+Por ejemplo, digamos que tengo este marco de datos aquí y quiero obtener todos los valores de número igual a uno con ambos
+
+93
+00:07:15,150 --> 00:07:16,340
+grupos en él.
+
+94
+00:07:16,380 --> 00:07:21,770
+Lo que significa que quiero lo que he resaltado aquí 1 y luego 0. 3 1. 6 9.
+
+95
+00:07:21,930 --> 00:07:26,710
+Pero también quería este valor 0. 1 6 0. 1 8.
+
+96
+00:07:26,850 --> 00:07:31,700
+Así que quiero que todos los valores estén insensibles a que el índice de insight es igual a 1.
+
+97
+00:07:31,790 --> 00:07:39,370
+Este tipo de indexación es engañoso para algo como EHLO ver métodos, pero no es tan malo con el
+
+98
+00:07:39,390 --> 00:07:48,250
+método X o de sección transversal que terminas haciendo es especificar lo que quieras en la medida que no sea igual a uno.
+
+99
+00:07:48,480 --> 00:07:54,730
+Y luego debe indicar como un segundo nivel de argumentos y luego pasar el nombre del índice.
+
+100
+00:07:54,840 --> 00:07:58,340
+En este caso, el nombre del índice está insensible.
+
+101
+00:07:58,590 --> 00:08:05,970
+Así que, esencialmente, esto nos permite tomar una sección cruzada donde el nivel es igual a entumecido es igual a 1 y
+
+102
+00:08:05,970 --> 00:08:09,140
+así es como va a utilizar principalmente esta sección transversal.
+
+103
+00:08:09,510 --> 00:08:13,900
+Y ahora vemos ambos grupos donde el nivel num pasa a ser igual a 1.
+
+104
+00:08:13,920 --> 00:08:16,340
+Y este tipo de datos se devuelve.
+
+105
+00:08:17,010 --> 00:08:21,910
+De acuerdo, no te preocupes demasiado, ya que este es un uso bastante avanzado de Pandurs.
+
+106
+00:08:21,930 --> 00:08:28,200
+Solo quiero que lo sepas más adelante a medida que aprendemos más sobre la visualización de datos y comienzas a obtener tus
+
+107
+00:08:28,200 --> 00:08:28,590
+datos.
+
+108
+00:08:28,590 --> 00:08:35,100
+Los proyectos de Capstone revisitaremos este método de sección transversal para obtener datos del índice de acciones.
+
+109
+00:08:35,520 --> 00:08:40,230
+Pero, por ahora, quiero que se dé cuenta, pero no se preocupe, ya que es un uso
+
+110
+00:08:40,230 --> 00:08:44,460
+más avanzado y no verá este tipo de cosas a menudo durante todo el curso.
+
+111
+00:08:44,460 --> 00:08:49,290
+De hecho, realmente solo aparece una vez en uno de los proyectos culminantes de datos más avanzados
+
+112
+00:08:49,290 --> 00:08:52,350
+y hay una explicación de cómo usar la sección transversal nuevamente.
+
+113
+00:08:52,350 --> 00:08:56,010
+Entonces vamos a entrar y le daremos un refresco antes de volver a ver este tema.
+
+114
+00:08:56,040 --> 00:09:02,520
+Por ahora, esto era más que una descripción general avanzada de temas de índice múltiple e indexaba temas clave más importantes.
+
+115
+00:09:02,520 --> 00:09:07,620
+Principalmente lo que vas a querer hacer es indexar desde el exterior paso a paso para obtener los
+
+116
+00:09:07,620 --> 00:09:08,400
+datos que deseas.
+
+117
+00:09:08,810 --> 00:09:12,120
+Bien, gracias a todos y nos vemos en la próxima conferencia.

@@ -1,0 +1,195 @@
+1
+00:00:05,190 --> 00:00:09,870
+Salve a tutti e benvenuti alla conferenza senza trama e con gemelli e
+
+2
+00:00:09,870 --> 00:00:15,890
+questa conferenza impareremo un po 'di background dietro i gemelli della trama che ci permettono di creare
+
+3
+00:00:17,260 --> 00:00:23,730
+visualizzazioni interattive tranquillamente è una libreria di visualizzazione interattiva che è open source e gemelli collega questa libreria
+
+4
+00:00:23,730 --> 00:00:24,750
+con i panda .
+
+5
+00:00:24,870 --> 00:00:29,490
+E in questo modo saremo in grado di creare visualizzazioni interattive direttamente dalla nostra cornice dati.
+
+6
+00:00:30,180 --> 00:00:35,480
+Tuttavia, prima di esplorare effettivamente queste librerie, avremo bisogno di installarle.
+
+7
+00:00:35,880 --> 00:00:41,100
+Avrai bisogno di usare Pipp per installare queste librerie sulla tua linea di comando o sul tuo terminale e
+
+8
+00:00:41,100 --> 00:00:44,720
+puoi scrivere la trama di stile di Pitman. Lee e Pipp installano gemelli.
+
+9
+00:00:44,730 --> 00:00:47,750
+Questo dovrebbe funzionare anche se stai usando la distribuzione di Anaconda.
+
+10
+00:00:47,790 --> 00:00:53,700
+Queste due librerie non sono attualmente disponibili sull'installazione di Konda, quindi vai avanti e usa i gemelli
+
+11
+00:00:53,710 --> 00:00:58,650
+Plotless e Pippin al tuo terminale della riga di comando per ottenere queste librerie.
+
+12
+00:01:00,300 --> 00:01:04,170
+Ora andiamo avanti e facciamo un rapido tour del sito Web ufficiale prima della prossima lezione,
+
+13
+00:01:04,170 --> 00:01:05,990
+in realtà vi mostriamo come utilizzare queste librerie.
+
+14
+00:01:06,000 --> 00:01:09,110
+Ho intenzione di andare avanti e saltare al sito Web ufficiale platies ora.
+
+15
+00:01:09,630 --> 00:01:09,920
+Tutto ok.
+
+16
+00:01:09,930 --> 00:01:11,750
+Eccomi al sito Web senza trama.
+
+17
+00:01:11,820 --> 00:01:16,380
+Imposta P L O T L Y e puoi controllare il sito Web.
+
+18
+00:01:16,390 --> 00:01:22,320
+Ci sono un sacco di informazioni su di esso in una nota rapida, senza trama è anche una società, ma
+
+19
+00:01:22,320 --> 00:01:25,590
+fanno soldi ospitando le tue visualizzazioni e ospitando i tuoi cruscotti.
+
+20
+00:01:25,620 --> 00:01:30,900
+Se vuoi mantenere tutto locale o ospitarlo tu stesso, la libreria che opera su tutte queste funzionalità
+
+21
+00:01:30,990 --> 00:01:32,690
+è open source e gratuita.
+
+22
+00:01:32,910 --> 00:01:37,480
+Quindi non preoccuparti, non dovrai pagare qualcosa per usare educatamente e educatamente.
+
+23
+00:01:37,560 --> 00:01:42,120
+È compatibile con una varietà di strumenti come il nostro Matlab Excel e Javascript.
+
+24
+00:01:42,270 --> 00:01:44,830
+Ma ci concentreremo sull'utilizzo con Python.
+
+25
+00:01:44,830 --> 00:01:49,440
+Se vai avanti e fai clic su questo link python otterrai un collegamento a una pagina iniziale con Python.
+
+26
+00:01:49,890 --> 00:01:52,080
+Ti mostrerà come iniziare.
+
+27
+00:01:52,110 --> 00:01:56,500
+È interessante notare che avranno un collegamento con Pandas e questo è quello su cui ci
+
+28
+00:01:56,500 --> 00:02:00,520
+concentreremo sull'utilizzo di plotless con i panda e per te utilizzeremo la trama dei panda.
+
+29
+00:02:00,600 --> 00:02:05,940
+Devi installare la trama come detto qui nelle istruzioni in
+
+30
+00:02:05,940 --> 00:02:08,130
+cui dovrai installare gemelli.
+
+31
+00:02:08,130 --> 00:02:08,820
+Gemelli.
+
+32
+00:02:08,820 --> 00:02:13,390
+È la biblioteca che collega la trama Lee con i panda.
+
+33
+00:02:13,510 --> 00:02:19,010
+E ho intenzione di andare avanti e andare alla pagina web per gemelli.
+
+34
+00:02:19,050 --> 00:02:22,230
+E questo è il modo per ottenere fondamentalmente la sua pagina per gemelli e gemelli.
+
+35
+00:02:22,410 --> 00:02:28,170
+È uno strumento di produttività che ti consente di chiamare rapidamente la trama proprio come faresti con i panda, ad
+
+36
+00:02:28,170 --> 00:02:34,120
+esempio un metodo di trama dei punti del frame di dati impostato in realtà creerai una visualizzazione interattiva usando la
+
+37
+00:02:34,120 --> 00:02:36,740
+trama Lee in una rapida dichiarazione di non responsabilità.
+
+38
+00:02:36,750 --> 00:02:41,910
+In realtà io sono un contributore a questa libreria e puoi vedere il mio ramo unito proprio qui
+
+39
+00:02:41,910 --> 00:02:43,320
+alle importazioni di Jey qui.
+
+40
+00:02:43,740 --> 00:02:48,750
+effettivamente i gemelli in modo efficace per creare interattive davvero belle le sue azioni pigre.
+
+41
+00:02:48,750 --> 00:02:54,030
+Ma comunque ci sono tutorial molto carini qui sotto i gemelli e passeremo attraverso alcuni di
+
+42
+00:02:54,060 --> 00:02:55,980
+questi argomenti e mostreremo come utilizzare
+
+43
+00:02:56,270 --> 00:03:02,190
+Ed ecco solo un esempio di uno U. K. tassi di scambio e si può vedere che questa è una
+
+44
+00:03:02,190 --> 00:03:04,300
+superficie 3D e questo viene fatto direttamente da una cornice di dati.
+
+45
+00:03:04,320 --> 00:03:11,120
+Ci sono alcune note di rilascio qui e poi ci sono alcuni link di cui sopra la documentazione qui sopra.
+
+46
+00:03:11,130 --> 00:03:11,760
+Tutto ok.
+
+47
+00:03:11,910 --> 00:03:16,740
+Andiamo avanti e, appena iniziato nella prossima lezione, mostreremo come
+
+48
+00:03:17,010 --> 00:03:20,220
+codificare le visualizzazioni interattive usando queste librerie.
+
+49
+00:03:20,220 --> 00:03:22,080
+Grazie a tutti e ci vediamo alla prossima lezione

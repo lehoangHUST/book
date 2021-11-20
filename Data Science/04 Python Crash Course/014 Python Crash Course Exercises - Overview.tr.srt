@@ -1,0 +1,215 @@
+1
+00:00:05,340 --> 00:00:11,400
+Herkese merhaba ve bu derste Python çarpışma dersi egzersizine genel bakış dersine hoşgeldiniz, egzersiz defterine
+
+2
+00:00:11,400 --> 00:00:15,560
+ve egzersize nasıl yaklaşacağına dair kısa bir özet bilgi edineceğiz.
+
+3
+00:00:15,570 --> 00:00:18,250
+Bırak gideyim ve egzersiz defterini nerede bulabileceğinizi göstereceğim.
+
+4
+00:00:18,530 --> 00:00:25,490
+Tamam, burada python crash course klasöründe deponuzdayım, üç dizüstü bilgisayar göreceksiniz.
+
+5
+00:00:25,510 --> 00:00:30,760
+Dört bölümden oluşan konferans dizisinde okuduğumuz notları içeren Python çarpışma dersi.
+
+6
+00:00:30,930 --> 00:00:35,380
+Sonra IPY ve B. egzersizleri Python kazası dersiniz var.
+
+7
+00:00:35,550 --> 00:00:39,690
+Bu, egzersizler için kullanacağımız defter dosyası ve çözüm not defterini
+
+8
+00:00:39,780 --> 00:00:40,280
+göreceksiniz.
+
+9
+00:00:40,290 --> 00:00:46,580
+Burada içeri girip egzersiz defterine tıklarsanız, buna benzer bir defter göreceksiniz.
+
+10
+00:00:46,590 --> 00:00:50,850
+Ve yine bu sadece Python temellerini anlamak için isteğe bağlı bir egzersiz testidir.
+
+11
+00:00:50,850 --> 00:00:55,920
+Bu egzersizi son derece zor buluyorsanız muhtemelen Kalanın geri kalanına hazır değilsiniz ve
+
+12
+00:00:55,940 --> 00:00:58,700
+devam etmek için yeterli programlama deneyiminiz yok.
+
+13
+00:00:58,900 --> 00:01:03,300
+Ve aslında tam bir python açılış kampı gibi yeni başlayanlara
+
+14
+00:01:03,300 --> 00:01:06,030
+doğru daha dişli bir ders almanızı öneririm.
+
+15
+00:01:06,160 --> 00:01:10,230
+Ancak bu egzersizler oldukça basit ve açık olmalıdır.
+
+16
+00:01:10,230 --> 00:01:14,350
+Mesela bu ilk şey, 7'nin gücünün ne olduğunu soruyor.
+
+17
+00:01:14,460 --> 00:01:20,790
+Umarım cevabı buraya çıktı olarak görebilirsiniz, bu hücreyi ya da kullanmak istediğiniz herhangi bir kimliği
+
+18
+00:01:20,790 --> 00:01:23,900
+göreceksiniz ve bu soruyu cevaplamak için Python kullanacaksınız.
+
+19
+00:01:23,910 --> 00:01:29,340
+Python'da üstel bir gücü nasıl bulacağınızı sadece hatırlamak zorundasınız.
+
+20
+00:01:29,340 --> 00:01:34,110
+Dizeyi bir listeye böler gibi diğer soruları sormaya devam edecektir; bu yüzden umarım
+
+21
+00:01:34,110 --> 00:01:38,430
+belirli bir yöntemle bir dize listesini bir listeye nasıl ayırdığınızı hatırlarız.
+
+22
+00:01:38,430 --> 00:01:39,570
+Öyleyse devam et.
+
+23
+00:01:39,580 --> 00:01:42,030
+Neler almanız gerektiğinin çıktı örnekleri var.
+
+24
+00:01:42,210 --> 00:01:45,540
+O halde bir takımla bir liste arasındaki ana farkın ne olduğunu soran bir sorunuz var.
+
+25
+00:01:45,540 --> 00:01:49,050
+Bu şekilde yüksek sesle cevap verebilirsin, düşündüğüm yazı değil, bunun için ne
+
+26
+00:01:49,050 --> 00:01:50,650
+farkları olduğunu soran bir kod yok.
+
+27
+00:01:50,850 --> 00:01:55,290
+Ardından, bir dizeden e-posta Web sitesi etki alanını ve etki alanı nokta com'taki bir form kullanıcısını
+
+28
+00:01:55,290 --> 00:01:56,850
+yakalayan bir işlevi yaratmanızı istiyorum.
+
+29
+00:01:56,850 --> 00:02:02,490
+Yani bir işlev çağrısı varsa, etki alanı gibi bir şey onu alır bu biçimi bir dize
+
+30
+00:02:02,550 --> 00:02:06,150
+geçmek ve sadece bu etki alanı kapmak com kapmak gerekir alır.
+
+31
+00:02:06,180 --> 00:02:08,640
+Bu yüzden gidip bir çeşit işlevi yaratın.
+
+32
+00:02:08,700 --> 00:02:14,540
+ve o e-postanın ev sahipliği yaptığı Web sitesinden alan alanını alan adı olarak alabilir.
+
+33
+00:02:14,540 --> 00:02:18,850
+Dışarıya gidebilir ve bir alan adı olarak bir e-posta adresi alır
+
+34
+00:02:18,930 --> 00:02:23,910
+Ardından, devam edin ve kelime köpek girdi akışında yer alıyorsa true değerini döndüren basit
+
+35
+00:02:23,910 --> 00:02:25,050
+bir işlev oluşturursunuz.
+
+36
+00:02:25,200 --> 00:02:29,250
+Köpek sözcüğüne noktalama işareti eklenmiş gibi kenar durumlarda endişelenmenize gerek yok,
+
+37
+00:02:29,670 --> 00:02:31,620
+ancak büyük harf kullanımını açıklayın.
+
+38
+00:02:31,620 --> 00:02:35,990
+Bulabileceğiniz her bir kenar olayla da uğraşmıyoruz.
+
+39
+00:02:36,000 --> 00:02:42,690
+Bir dize için bir dilde arama temel fikriydi, o zaman bir dize içinde köpek
+
+40
+00:02:42,830 --> 00:02:46,260
+oluşma sayısını sayan bir işlevi yaratmanızı istiyoruz.
+
+41
+00:02:46,260 --> 00:02:48,220
+Ve yine kenar durumlarda görmezden gelebilirsiniz.
+
+42
+00:02:48,390 --> 00:02:52,290
+Mesela bu köpek dize diğer köpeklerden daha hızlı koşar.
+
+43
+00:02:52,410 --> 00:02:58,840
+DAGA Pierce iki kez sayar böylece köpek döner denilen bir fonksiyon yapmak için geri sayım yapan köpekler yapar.
+
+44
+00:02:58,930 --> 00:03:03,510
+S lambda ile başlamayan kelimeleri bir listeden silmek için lambda ifadeleri ve
+
+45
+00:03:03,510 --> 00:03:05,080
+Filcher işlevini kullanmanızı istemiyorlar.
+
+46
+00:03:05,100 --> 00:03:09,770
+Örneğin, bu listeden bir dizi alırsanız, bu listeye göre filtrelenmelidir.
+
+47
+00:03:09,810 --> 00:03:11,080
+Çorba ve salata.
+
+48
+00:03:11,670 --> 00:03:13,230
+Ve işte son bir sorun var.
+
+49
+00:03:13,260 --> 00:03:17,700
+Artık açıklama okuyabilirsiniz, ancak temelde burada bu küçük nihai sorunu
+
+50
+00:03:17,820 --> 00:03:20,970
+çözmek için bu işlevi doldurup devam edeceksiniz.
+
+51
+00:03:21,030 --> 00:03:27,090
+Ve eğer herhangi bir sorunuz varsa Q &amp; A forumlarını yayınlamaktan çekinmeyin ve size yardım etmekten memnuniyet duyarız, elefant else ifadelerinin
+
+52
+00:03:27,090 --> 00:03:30,350
+bir kısmı ile birlikte bir işlev yaratma ile ilgili bazıları gerekir.
+
+53
+00:03:30,390 --> 00:03:31,120
+Herkese teşekkürler.
+
+54
+00:03:31,170 --> 00:03:35,090
+Ve gelecekte, bu egzersize yönelik çözümlerin bir devamı olacak

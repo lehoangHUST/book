@@ -1,0 +1,183 @@
+1
+00:00:05,790 --> 00:00:06,690
+Herkese merhaba.
+
+2
+00:00:06,690 --> 00:00:09,990
+PI egzersizlerine genel bakış dersine hoş geldiniz.
+
+3
+00:00:10,020 --> 00:00:14,490
+Bu kısa derste, egzersiz sorularını ve bunlara nasıl yaklaşacağınızı hızla gözden geçireceğiz.
+
+4
+00:00:15,030 --> 00:00:19,180
+Öyleyse devam edin ve egzersizleri uygulayarak onları çözüp çözemeyeceğinize bakın.
+
+5
+00:00:19,200 --> 00:00:21,810
+Ve bundan sonra çözümler üzerine bir konuşma yapacağız.
+
+6
+00:00:21,810 --> 00:00:25,720
+Devam edin ve egzersiz defterine atlayın ve soruları hızla gözden geçirelim.
+
+7
+00:00:25,950 --> 00:00:26,210
+Tamam.
+
+8
+00:00:26,210 --> 00:00:30,510
+Burada, ilerlemeye devam edeceğiniz PI alıştırmaları dizüstü bilgisayarındayız.
+
+9
+00:00:30,510 --> 00:00:36,720
+Soruları sadece cevaplayın veya yönergeleri cesur şekilde izleyin ve gerçekte çıktı dizileri
+
+10
+00:00:36,780 --> 00:00:42,120
+bulunduğunu göreceksiniz veya elde etmeniz gereken cevaplar sizin için çıktılar.
+
+11
+00:00:42,120 --> 00:00:47,940
+Doğrudan çıktının bulunduğu hücreyi gerçekten çalıştırırsanız çıkışın üzerine yazacağınızı
+
+12
+00:00:47,940 --> 00:00:48,840
+unutmayın.
+
+13
+00:00:48,840 --> 00:00:53,800
+Örneğin, eğer 10 sıfır dizisi oluşturduğunuzu söylüyorsanız, umarım bunu nasıl
+
+14
+00:00:53,820 --> 00:00:54,730
+derslerden hatırlarsınız.
+
+15
+00:00:54,870 --> 00:01:01,160
+Ancak print hello gibi bir kodunuz varsa ve bu kodu çalıştırdıysanız, artık bu çıktıyı göremezsiniz.
+
+16
+00:01:01,200 --> 00:01:04,680
+Bu alıştırmalarla koşarken bunu aklınızda bulundurun.
+
+17
+00:01:04,700 --> 00:01:05,290
+Tamam.
+
+18
+00:01:05,400 --> 00:01:11,760
+Temelde bazı dizileri nasıl oluşturacağınızı sormakla başlayacağız. Bazı dizi tamsayılar bazı
+
+19
+00:01:11,850 --> 00:01:19,770
+dizi kimlik matrisleri üç üç Matrix vb. Bazı rasgele sayı matrisleri ve daha sonra aşağıdaki
+
+20
+00:01:19,770 --> 00:01:21,470
+matrisi oluşturmanızı rica edeceğim.
+
+21
+00:01:21,480 --> 00:01:27,620
+Çıktıyı silmek için hücreleri buraya eklemeniz gerektiğini unutmayın.
+
+22
+00:01:27,660 --> 00:01:31,340
+Ardından, 0 1 ile neredeyse aralıklı 20 çizgi dizisi oluşturmanızı rica edeceğim.
+
+23
+00:01:31,350 --> 00:01:36,360
+Bu yüzden sadece devam edin ve burada verilen talimatları izleyin ve çıktı üzerine yazmak için dikkatli olun.
+
+24
+00:01:36,450 --> 00:01:42,600
+değilseniz pi dizine alma ve seçim hakkında size birkaç matris vereceğim.
+
+25
+00:01:42,600 --> 00:01:44,520
+Üzerine yazmaya hazır
+
+26
+00:01:44,610 --> 00:01:46,950
+Bu durumda aslında sadece bir matris.
+
+27
+00:01:46,950 --> 00:01:48,630
+25'den 25'e kadar.
+
+28
+00:01:48,630 --> 00:01:50,600
+Beş beşli bir matristir.
+
+29
+00:01:50,730 --> 00:01:56,540
+Ve sizden bu matristeki parçalari almanizi rica edecegim ve fark ederseniz size fazladan bir hücre verdim, çünkü bunlar
+
+30
+00:01:56,550 --> 00:01:59,040
+biraz daha hileli ve referansa ihtiyaciniz var.
+
+31
+00:01:59,040 --> 00:02:05,040
+Öyleyse devam edin ve kodunuzu buraya yazın ve aşağıdaki hücredeki çıktıyı çoğaltın ve
+
+32
+00:02:05,070 --> 00:02:07,260
+kodunuzu buraya yazmamaya özen gösterin.
+
+33
+00:02:07,260 --> 00:02:10,570
+Aksi takdirde çoğaltmaya çalıştığınız çıktı üzerine yazarsınız.
+
+34
+00:02:10,650 --> 00:02:15,040
+İlk kez yanlış anlarsan, aslında ne cevaplamaya çalıştığını hatırlamazsın.
+
+35
+00:02:15,120 --> 00:02:17,390
+Yine burada kodu bu hücrelere yazın.
+
+36
+00:02:17,400 --> 00:02:20,100
+Bu şekilde, çıktıın üzerine yazmazsınız.
+
+37
+00:02:20,220 --> 00:02:20,660
+TAMAM.
+
+38
+00:02:20,760 --> 00:02:25,500
+Ve sonra bu egzersizler boyunca cevaplar olarak burada gösterilen parçaları almaya çalışacaksınız.
+
+39
+00:02:26,190 --> 00:02:32,180
+Daha sonra aynı matriste veya aynı matristeki referansı, tüm değerlerin toplamını alıp tüm değerlerin standart sapmasını
+
+40
+00:02:32,190 --> 00:02:36,720
+elde edersiniz ve daha sonra bu matristeki tüm sütunların toplamını elde edersiniz.
+
+41
+00:02:37,380 --> 00:02:37,970
+Tamam.
+
+42
+00:02:38,070 --> 00:02:38,880
+Bu kadar.
+
+43
+00:02:38,880 --> 00:02:39,690
+İyi şanslar.
+
+44
+00:02:39,780 --> 00:02:40,770
+Ve sonra geliyor.
+
+45
+00:02:40,770 --> 00:02:43,700
+Bu çözümler bu aptal pasta egzersizlerine müsaittir.
+
+46
+00:02:43,710 --> 00:02:45,600
+Herkese teşekkürler, bir sonraki konuşmada da göreceğim

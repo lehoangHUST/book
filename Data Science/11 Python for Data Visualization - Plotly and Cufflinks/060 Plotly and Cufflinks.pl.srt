@@ -1,0 +1,1039 @@
+1
+00:00:05,100 --> 00:00:10,110
+Witam wszystkich i zapraszam na wykłady spinki do mankietów, w których pokazujemy, w jaki
+
+2
+00:00:10,140 --> 00:00:14,250
+sposób możemy programować używając tych bibliotek do tworzenia interaktywnych wizualizacji danych.
+
+3
+00:00:14,250 --> 00:00:18,690
+Przejdźmy dalej i przeskoczmy prosto do notatnika Jowisza, aby zacząć.
+
+4
+00:00:18,690 --> 00:00:18,960
+W porządku.
+
+5
+00:00:18,960 --> 00:00:20,990
+Jestem w notesie Jowisza.
+
+6
+00:00:21,030 --> 00:00:25,770
+Mam zamiar zrobić kilka importów, a następnie trochę konfiguracji, aby wszystko działało.
+
+7
+00:00:25,770 --> 00:00:35,880
+Kiedy mówię, że import jest ważny, to ja jestem PI i P, a potem zamierzam powiedzieć,
+
+8
+00:00:36,690 --> 00:00:46,140
+że od spisku impresję podkreślą podkreślenie podkreślenia podkreślenia, a następnie mam zamiar napisać wersję do
+
+9
+00:00:47,340 --> 00:00:48,530
+druku.
+
+10
+00:00:49,020 --> 00:00:51,710
+I zauważ tutaj, że dostaję jeden punkt jeden do dziewiątego.
+
+11
+00:00:51,720 --> 00:00:53,750
+To jest obecna wersja, której używam.
+
+12
+00:00:53,770 --> 00:00:59,640
+Wszystko, co będziemy robić, wymaga wersji nowszej niż jeden punkt dziewiąty.
+
+13
+00:00:59,640 --> 00:01:02,220
+A więc jestem już w jednym punkcie dwunastym.
+
+14
+00:01:02,280 --> 00:01:03,420
+To znaczy, że jestem dobry.
+
+15
+00:01:03,420 --> 00:01:07,970
+Jeśli masz wersję, która ma jeden punkt osiem lub mniej, musisz ulepszyć fabułę.
+
+16
+00:01:08,250 --> 00:01:12,730
+Jeśli po prostu zainstalujesz fabułę, powinieneś być całkowicie w porządku.
+
+17
+00:01:12,780 --> 00:01:23,370
+Dalej mam zamiar wejść i powiedzieć importowane spinki do mankietów jako C-f A potem w końcu zaimportuję kilka bibliotek z
+
+18
+00:01:23,400 --> 00:01:26,070
+linii działowej poza linią.
+
+19
+00:01:26,070 --> 00:01:33,110
+Częściowo dlatego, że firma może wesprzeć Twój Internet i może obsługiwać twoje wizualizacje danych online.
+
+20
+00:01:33,300 --> 00:01:37,190
+Ale ponieważ mamy zamiar używać tej biblioteki jako otwartego źródła
+
+21
+00:01:37,200 --> 00:01:41,990
+i zamierzamy użyć jej offline, musimy zrobić import z trybu offline, aby to działało.
+
+22
+00:01:42,000 --> 00:01:47,460
+Chcę iść dalej i zaimportować do pobrania nieprzyzwoite podkreślenie bezskresne J. S. i możesz po prostu wpisać D,
+
+23
+00:01:47,460 --> 00:01:49,850
+a następnie tabulator, który powinien się automatycznie uzupełnić.
+
+24
+00:01:49,850 --> 00:01:56,400
+Powiem też, że właśnie robię autouzupełnianie tab w trybie podkreślenia notebooka podkreślenia.
+
+25
+00:01:56,880 --> 00:02:01,510
+A następnie działka i działki je prowadzą.
+
+26
+00:02:01,800 --> 00:02:06,090
+A potem zamierzamy zrobić jeszcze kilka poleceń, aby wszystko działało w notesie.
+
+27
+00:02:06,570 --> 00:02:12,440
+Nazwij to podkreśleniem trybu podkreślenia notebooka, a passen connected jest prawdziwe.
+
+28
+00:02:12,500 --> 00:02:17,850
+I to połączy javascript z twoim notatnikiem, ponieważ bezpłciowy właściwie po prostu
+
+29
+00:02:17,850 --> 00:02:22,590
+łączy pandy i Python z tą interaktywną biblioteką javascript.
+
+30
+00:02:23,240 --> 00:02:26,980
+A to pozwoli twoim notebookom na dostęp do tych wizualizacji.
+
+31
+00:02:27,180 --> 00:02:35,640
+I na koniec powiemy, że C-f to odejść jako metoda i zamknij druk zajęte i uruchom to, co pozwoli
+
+32
+00:02:36,000 --> 00:02:39,050
+spinki do mankietów CS poza linią.
+
+33
+00:02:39,090 --> 00:02:39,810
+W porządku.
+
+34
+00:02:39,810 --> 00:02:42,040
+Oto kilka kroków, aby upewnić się, że wszystko działa.
+
+35
+00:02:42,150 --> 00:02:44,730
+Ale miejmy nadzieję, że jesteś w stanie podążać za nimi.
+
+36
+00:02:44,760 --> 00:02:49,390
+Przejdźmy dalej, a teraz zdobądźmy trochę danych i utwórzmy je.
+
+37
+00:02:49,740 --> 00:02:56,460
+Zamierzam iść dalej i powiedzieć, że ZF jest równe ramce danych kropek PD.
+
+38
+00:02:56,550 --> 00:02:58,800
+Powiem N. P. losowy
+
+39
+00:03:01,470 --> 00:03:05,970
+Rand, a więc rozkład normalny i passen 100 po 4.
+
+40
+00:03:06,270 --> 00:03:15,340
+Tak więc 100 wierszy dla kolumn i mam zamiar wejść i powiedzieć kolumny jest równe b c d jako rozdzielenie łańcuchów.
+
+41
+00:03:15,550 --> 00:03:19,350
+W ten sposób otrzymujemy listę kolumn ABC i D.
+
+42
+00:03:19,770 --> 00:03:27,210
+A potem, jeśli sprawdzę DF tuż przed tym tutaj mam ramkę danych i mam zamiar utworzyć jeszcze
+
+43
+00:03:27,210 --> 00:03:34,370
+jedną ramkę danych o nazwie DL 2 PD ramka danych i użyję do tego słownika.
+
+44
+00:03:34,950 --> 00:03:47,910
+Zamierzam powiedzieć kategoria jest kolumną, a następnie wartości będą po prostu b i c lub dowolne trzy łańcuchy, które chcesz, a
+
+45
+00:03:47,910 --> 00:03:51,210
+następnie druga kolumna będzie wartości.
+
+46
+00:03:51,240 --> 00:03:53,800
+A to będzie ciąg losowych wartości.
+
+47
+00:03:53,850 --> 00:03:57,150
+Przejdźmy dalej i powiedzmy po prostu 32 43 i
+
+48
+00:04:00,000 --> 00:04:03,940
+50, a to będzie później użyte, tak jak w stylu słupkowym.
+
+49
+00:04:03,940 --> 00:04:04,350
+W porządku.
+
+50
+00:04:04,380 --> 00:04:07,160
+Teraz po prostu przejrzyj, jak używać spinki do mankietów i spiskuję.
+
+51
+00:04:07,260 --> 00:04:09,850
+To naprawdę bardzo proste.
+
+52
+00:04:10,500 --> 00:04:14,220
+Jeśli spojrzymy na naszą ramkę danych, mamy tutaj ABC i Z.
+
+53
+00:04:14,250 --> 00:04:21,420
+Jeśli po prostu wezwę spisek z tej ramki danych, to sponsorzy będą knuć coś z grafiką na żywo
+
+54
+00:04:21,420 --> 00:04:28,830
+i jeśli rzeczywiście chcę zobaczyć tę fabułę, mogę powiedzieć, że fabuła gry na żywo jest zgodna, a jeśli
+
+55
+00:04:28,830 --> 00:04:34,030
+znów to zrobię, pozwól mi to wyciąć i umieścić tu na górze.
+
+56
+00:04:34,420 --> 00:04:37,180
+Whoops there my goes.
+
+57
+00:04:37,380 --> 00:04:40,880
+I tu wrócę i jeszcze raz poprowadzę tę fabułę.
+
+58
+00:04:41,190 --> 00:04:45,790
+I tutaj widzę wykres liniowy, który Pandurs zrobiłby automatycznie, wykorzystując matowy brak plotek.
+
+59
+00:04:46,050 --> 00:04:51,820
+Mogę po prostu to zmienić, więc spiskuję i zobaczymy, że prawie magia się wydarzy.
+
+60
+00:04:51,840 --> 00:04:56,010
+Ten wykres został teraz przekonwertowany na interaktywny obraz fabuły.
+
+61
+00:04:56,100 --> 00:05:00,810
+I tutaj mogę przewinąć i powiedzieć mi wartości w tym konkretnym punkcie indeksu.
+
+62
+00:05:00,810 --> 00:05:03,080
+Jest to dokładnie ten sam wykres linii działki.
+
+63
+00:05:03,120 --> 00:05:04,570
+Teraz jest interaktywny.
+
+64
+00:05:04,860 --> 00:05:05,840
+Mogę powiększyć.
+
+65
+00:05:05,850 --> 00:05:06,930
+Sprawdź wartości.
+
+66
+00:05:06,930 --> 00:05:10,700
+Mogę dwukrotnie kliknąć, aby pomniejszyć widok, a także mają tu narzędzia.
+
+67
+00:05:10,730 --> 00:05:12,370
+Mogę zapisać i edytować fabułę.
+
+68
+00:05:12,480 --> 00:05:17,380
+Mogę pobrać wykres jako plik PNB, więc jeśli chcę tylko statycznego obrazu, mogę przesuwać.
+
+69
+00:05:17,400 --> 00:05:26,540
+Więc gdybym chciał, mógłbym przesuwać się, mógłbym powiększyć pomniejszenie, zresetować osie, wybrać zawijanie tak najbliżej na zawisie
+
+70
+00:05:26,630 --> 00:05:29,500
+lub porównać dane na zawisie.
+
+71
+00:05:29,510 --> 00:05:34,470
+Domyślnie zazwyczaj chcesz porównać dane, a następnie mogę nawet kliknąć i wyłączyć niektóre kolumny, aby wyświetlić.
+
+72
+00:05:34,460 --> 00:05:37,930
+Więc jeśli chcę tylko zobaczyć i zobaczyć, czy to może być i.
+
+73
+00:05:38,240 --> 00:05:38,590
+Dobrze.
+
+74
+00:05:38,660 --> 00:05:42,920
+Mamy nadzieję, że już teraz można stwierdzić, że jest to niezwykle potężne
+
+75
+00:05:42,990 --> 00:05:49,040
+narzędzie, ponieważ zasadniczo trzeba dodać jedną literową fabułę, a teraz nagle wyglądasz jak zadziwiający interaktywny programator wizualizacji danych.
+
+76
+00:05:49,400 --> 00:05:54,650
+Kiedy twoja tajemnica właśnie dodawała, plotkuję i używam spinki do mankietów i grzecznie.
+
+77
+00:05:54,770 --> 00:05:55,180
+W porządku.
+
+78
+00:05:55,400 --> 00:05:58,640
+Więc to jest najbardziej podstawowy przykład spinki do mankietów i ja plopuję.
+
+79
+00:05:58,740 --> 00:06:02,070
+I przejdźmy dalej i odkryjmy teraz różne typy działek, które możemy zrobić.
+
+80
+00:06:02,270 --> 00:06:06,570
+Możemy zrobić wiele typów, takich jak mapy rozkładu współczynnika pola rozproszenia i więcej.
+
+81
+00:06:06,710 --> 00:06:11,420
+Więc wszystko, co zamierzamy zrobić, to po prostu przejść przez nie i pokazać, jak wykorzystać fabułę do stworzenia
+
+82
+00:06:11,420 --> 00:06:14,430
+innych typów działek, które nie są tylko działkami liniowymi, jak ten.
+
+83
+00:06:14,490 --> 00:06:18,420
+Zacznijmy od pokazania, jak zrobić wykres rozrzutu.
+
+84
+00:06:18,620 --> 00:06:22,190
+Zamierzam iść dalej i powiedzieć działkę DMF.
+
+85
+00:06:22,500 --> 00:06:27,740
+A następnie, aby zmienić typ wykresu, który określisz rodzaj równy, a
+
+86
+00:06:27,750 --> 00:06:33,870
+następnie dla rozproszenia, ciąg znaków jest rozproszony, a wykres rozrzutu określa osie x i y.
+
+87
+00:06:34,010 --> 00:06:36,040
+Możesz wejść i podać to za pomocą nazwy kolumny.
+
+88
+00:06:36,080 --> 00:06:45,050
+Wejdźmy i pokażmy rozproszenie kolumny w stosunku do kolumny B, a jeśli to zrobimy, zobaczysz
+
+89
+00:06:45,620 --> 00:06:47,510
+coś śmiesznego.
+
+90
+00:06:47,510 --> 00:06:48,610
+Dostajesz coś takiego.
+
+91
+00:06:48,620 --> 00:06:52,850
+Domyślnie, bez użycia plotek, spróbuje stworzyć linię łączącą wszystkie te punkty.
+
+92
+00:06:52,860 --> 00:07:02,450
+Musisz więc określić tryb i przekazać znaczniki, a wtedy dostaniesz tutaj kilka znaczników i możesz sprawdzić znaczniki,
+
+93
+00:07:02,450 --> 00:07:07,760
+a następnie możesz porównać kolumny A i B.
+
+94
+00:07:07,820 --> 00:07:11,870
+Możesz powiększyć i sprawdzić informacje na temat każdego z tych punktów.
+
+95
+00:07:11,880 --> 00:07:12,680
+W porządku.
+
+96
+00:07:12,690 --> 00:07:19,190
+W ten sposób można użyć wykresu rozrzutu przy użyciu argumentów X i Y osoby DFA A, ponieważ nazwy
+
+97
+00:07:19,580 --> 00:07:24,280
+kolumn określają rodzaj równy rozproszeniu, a następnie przechodzą, a tryb jest równy znacznikom.
+
+98
+00:07:24,320 --> 00:07:27,740
+Możesz także wykonywać inne czynności, takie jak przekazywanie argumentów dotyczących rozmiaru.
+
+99
+00:07:27,810 --> 00:07:29,440
+Chcesz, aby te punkty były większe.
+
+100
+00:07:29,450 --> 00:07:34,980
+Możesz śmiało określić większy rozmiar, a ja zwiększę te punkty.
+
+101
+00:07:35,380 --> 00:07:39,990
+Przejdźmy do wykresów słupkowych lub wykresów słupkowych i powiedzmy.
+
+102
+00:07:40,110 --> 00:07:46,550
+Myślałem, że działam i mówię, że przechodzę przez pasek.
+
+103
+00:07:46,550 --> 00:07:51,990
+A potem określasz X, a my pójdziemy i przerzucimy się również na decaf, ponieważ jest to lepsze dopasowanie do tego
+
+104
+00:07:51,990 --> 00:07:52,530
+wątku.
+
+105
+00:07:52,520 --> 00:07:59,420
+Przypomnijmy więc, że musisz mieć kategoryczną kolumnę i kolumnę liczbową, która oznacza dla wykresu słupkowego, że
+
+106
+00:07:59,490 --> 00:08:03,610
+X ma być kategorią kolumnową, aby było to oczywiste.
+
+107
+00:08:03,610 --> 00:08:06,650
+Po prostu powiem, że x jest równy kolumnie kategorii.
+
+108
+00:08:06,830 --> 00:08:10,460
+A następnie, dlaczego będzie w kolumnie wartości.
+
+109
+00:08:10,570 --> 00:08:12,060
+Teraz, jeśli pójdziemy i sprawdzimy to.
+
+110
+00:08:12,170 --> 00:08:20,030
+Teraz mamy wykres słupkowy, w którym jeśli pomniejszyję trochę, widzę wartość dla każdej z tych kategorii, więc
+
+111
+00:08:20,030 --> 00:08:23,830
+C to 50 B to 43 i 32.
+
+112
+00:08:23,840 --> 00:08:24,460
+W porządku.
+
+113
+00:08:24,460 --> 00:08:30,330
+Możesz też powiększyć, jeśli chcesz, ale to może nie być zbyt pomocne dla określonego marplota.
+
+114
+00:08:30,500 --> 00:08:32,620
+Kontynuuj i kontynuuj.
+
+115
+00:08:32,750 --> 00:08:38,110
+Teraz, jak wiemy, twoje dane nie zawsze będą wygodnie umieszczane, np. Kolumna 2, jeśli jest to
+
+116
+00:08:38,120 --> 00:08:44,000
+kategoria w wartościach, ale możesz ją nazwać grupową przez funkcję agregującą na twoich danych, aby faktycznie uzyskać
+
+117
+00:08:44,000 --> 00:08:48,730
+ją w formie, w której ma sens używanie wykresu słupkowego za pomocą A-plot.
+
+118
+00:08:48,750 --> 00:08:50,120
+Pozwól, że pokażę ci, o co mi chodzi.
+
+119
+00:08:50,120 --> 00:08:52,660
+Spójrz na nasz oryginalny DMF.
+
+120
+00:08:52,940 --> 00:08:55,930
+Widzimy, że mamy B C i D.
+
+121
+00:08:55,980 --> 00:08:58,350
+Teraz nie moglibyśmy nazwać tego spisku barami.
+
+122
+00:08:58,380 --> 00:09:01,820
+W przeciwnym razie po prostu dostaniemy kilka barów, a pokażę ci, co mam na myśli.
+
+123
+00:09:01,870 --> 00:09:07,680
+Właśnie ten rodzaj to taki sam pasek, że dostaniesz pęczek słupków dla każdego punktu danych i to nie jest dokładnie to,
+
+124
+00:09:07,670 --> 00:09:08,540
+czego chcesz.
+
+125
+00:09:08,590 --> 00:09:12,860
+Będziesz musiał wykonać jakąś funkcję agregującą, na przykład zobaczmy, że chcesz
+
+126
+00:09:12,890 --> 00:09:15,300
+policzyć instancje dla każdej kolumny.
+
+127
+00:09:15,680 --> 00:09:19,410
+I tutaj mamy wykres słupkowy dla każdej instancji, która w tym przypadku wynosi zaledwie 100.
+
+128
+00:09:19,430 --> 00:09:26,580
+Ponieważ wszystkie są równomiernie rozmieszczone, ale możesz robić inne rzeczy, takie jak suma każdej kolumny, a teraz
+
+129
+00:09:26,630 --> 00:09:29,660
+mamy wykres słupkowy pokazujący sumę każdej kolumny.
+
+130
+00:09:29,660 --> 00:09:29,970
+W porządku.
+
+131
+00:09:30,050 --> 00:09:31,030
+Dość ciekawe rzeczy.
+
+132
+00:09:31,040 --> 00:09:36,030
+Pamiętaj jednak, że ten wykres słupkowy z fabułą staje się naprawdę potężny, gdy nazwiesz jakąś funkcję
+
+133
+00:09:36,020 --> 00:09:38,830
+agregującą lub grupę przez funkcję twojej ramki danych.
+
+134
+00:09:39,000 --> 00:09:43,640
+Bardziej prawdopodobne jest, że twoja ramka danych nie będzie w tym miłym formacie.
+
+135
+00:09:44,210 --> 00:09:45,610
+OK, to jest marplot.
+
+136
+00:09:45,770 --> 00:09:46,400
+Podyskutujmy.
+
+137
+00:09:46,400 --> 00:09:52,430
+Teraz działki w pudełku Twoje dane mogą być czymś, co wygląda tak, jak to pole
+
+138
+00:09:52,430 --> 00:09:56,650
+fabuły automatycznie wykona tego rodzaju agregację dla tej dystrybucji.
+
+139
+00:09:57,150 --> 00:10:00,830
+Robisz to, określając rodzaj, który jest równy polu.
+
+140
+00:10:00,950 --> 00:10:05,310
+Tutaj automatycznie tworzy się wykres pudełkowy dla każdej z kolumn i możesz wyłączyć
+
+141
+00:10:05,310 --> 00:10:07,530
+lub wyłączyć kolumny albo je pominąć.
+
+142
+00:10:07,620 --> 00:10:12,060
+Tutaj z DMF lub po prostu przez włączanie i wyłączanie tutaj wykresu fabuły na
+
+143
+00:10:12,060 --> 00:10:17,880
+przykład chciałem tylko zobaczyć i zobaczyć, czy mogę po prostu kliknąć na a i c, a oni mogą kliknąć
+
+144
+00:10:18,180 --> 00:10:24,290
+na Biondi i zobaczyć, co chcę i Ill da ci informacje na płytce rdzenia tutaj dla pudełka, które jest dość wygodne.
+
+145
+00:10:24,290 --> 00:10:29,700
+Porozmawiajmy teraz o powierzchni 3D, żeby naprawdę porozmawiać o trzech działkach powierzchni.
+
+146
+00:10:29,710 --> 00:10:39,350
+Zamierzam zrobić, aby nowa ramka danych mówiła, że jeśli trzy są równe ramce danych PD, powiemy,
+
+147
+00:10:39,360 --> 00:10:48,690
+że X jest kolumną, a powiemy jeden dwa trzy cztery pięć, a my określimy y
+
+148
+00:10:52,110 --> 00:11:03,260
+jako kolumny wartości 10 20 30 2010, więc idzie w górę iw dół, a następnie określę Z jest kolumną.
+
+149
+00:11:03,260 --> 00:11:09,990
+I powiedzmy, że jest to 500 400 300 200 100.
+
+150
+00:11:10,070 --> 00:11:10,610
+DOBRZE.
+
+151
+00:11:10,910 --> 00:11:16,940
+Mam więc do czynienia z ramkami danych, a to w zasadzie trzy wzmianki o wartościach to
+
+152
+00:11:16,940 --> 00:11:19,600
+trzy zmienne, które możemy wykorzystać na powierzchni.
+
+153
+00:11:19,640 --> 00:11:28,160
+Gdybyśmy chcieli stworzyć trójwymiarowy wykres powierzchni tych trzech zmiennych w powiedzeniu trzech
+
+154
+00:11:28,160 --> 00:11:36,760
+działek i określić rodzaj powierzchni, a to stworzy splot powierzchniowy tego, co mamy tutaj.
+
+155
+00:11:36,770 --> 00:11:39,210
+Więc widać, że mamy działkę powierzchniową.
+
+156
+00:11:39,210 --> 00:11:44,390
+Pozwólcie, że pokażę wam inny przykład na powierzchni, zmieniając
+
+157
+00:11:44,390 --> 00:11:52,370
+te wartości, zamiast mówić od 100 do 500, a ja powiem 5 4 3 2 1.
+
+158
+00:11:52,400 --> 00:11:53,430
+I narysujmy to.
+
+159
+00:11:53,440 --> 00:11:56,020
+Teraz widzimy, że mamy taki zarys szczytu.
+
+160
+00:11:56,030 --> 00:12:01,160
+Teraz możemy zmienić skale kolorów na wypadek, gdyby nam się nie podobała ta skala kolorów tęczy.
+
+161
+00:12:01,300 --> 00:12:12,290
+Możesz powiedzieć coś w rodzaju skali kolorów i powiedz: Ardie dla czerwonego lub żółtego dla białego y1 dla żółtego i B
+
+162
+00:12:12,290 --> 00:12:13,850
+dla niebieskiego.
+
+163
+00:12:13,850 --> 00:12:17,270
+Możesz także sprawdzić dokumentację bez plotowania dla wszystkich kodów skali kolorów.
+
+164
+00:12:17,300 --> 00:12:20,220
+Nie pasują one dokładnie do map kolorów na mapie.
+
+165
+00:12:20,240 --> 00:12:21,560
+Miej to na uwadze.
+
+166
+00:12:21,650 --> 00:12:25,230
+I tutaj mamy naprawdę ładną powierzchnię, która została bezpośrednio wykonana z naszej ramki danych.
+
+167
+00:12:25,250 --> 00:12:29,710
+Możemy go obracać i bawić się z nim, aby uzyskać wszystkie informacje z niego.
+
+168
+00:12:29,720 --> 00:12:30,310
+W porządku.
+
+169
+00:12:30,590 --> 00:12:31,840
+To są trzy powierzchnie.
+
+170
+00:12:31,880 --> 00:12:35,020
+I w końcu powiemy o kilku innych działkach.
+
+171
+00:12:35,150 --> 00:12:40,910
+Bardzo prosty, że prawdopodobnie będziesz robił to jako histogram, możesz
+
+172
+00:12:40,910 --> 00:12:51,290
+powiedzieć, jeśli wywołasz pojedynczą kolumnę, a następnie powiesz, że działka jest podobna do histowej, a dostaniesz histogram i możesz
+
+173
+00:12:51,290 --> 00:12:54,290
+określić liczbę pojemników innego argument.
+
+174
+00:12:54,350 --> 00:12:59,720
+Na przykład, jeśli chcesz mieć 25 pojemników, możesz to określić i uzyskać więcej pojemników.
+
+175
+00:12:59,720 --> 00:13:03,660
+Pozwolę sobie odejść i uczynię to bardziej oczywistym, określając wiele ofert.
+
+176
+00:13:04,190 --> 00:13:04,620
+DOBRZE.
+
+177
+00:13:04,660 --> 00:13:05,980
+A tutaj mamy więcej pojemników.
+
+178
+00:13:06,020 --> 00:13:11,780
+Nie było zbyt wielu punktów danych, więc miej je na uwadze, jeśli prześcigniesz całą
+
+179
+00:13:11,780 --> 00:13:12,750
+ramkę danych.
+
+180
+00:13:12,890 --> 00:13:19,310
+Po prostu nazwijmy DFA A-plot kind równa się Po prostu otrzymasz nakładający się histogram wszystkich kolumn, co oznacza, że
+
+181
+00:13:19,360 --> 00:13:24,080
+możesz porównać histogramy kolumn i możesz je włączyć i wyłączyć, aby porównać je
+
+182
+00:13:24,080 --> 00:13:24,950
+ze sobą.
+
+183
+00:13:24,950 --> 00:13:26,750
+Teraz są one losowo normalnie dystrybuowane.
+
+184
+00:13:26,750 --> 00:13:30,560
+Są więc trochę nachodzące na siebie, co ma sens, biorąc pod uwagę sposób, w jaki to stworzyliśmy.
+
+185
+00:13:30,740 --> 00:13:35,840
+Ale często możesz je włączyć, aby wyświetlić histogramy, tak jak chcesz dla wszystkich kolumn w ramce danych.
+
+186
+00:13:36,410 --> 00:13:40,490
+To zależy od ciebie, czy chcesz po prostu przekazać w jednej kolumnie, czy przekazać całą
+
+187
+00:13:40,490 --> 00:13:42,590
+ramkę danych, a następnie włączyć i wyłączyć.
+
+188
+00:13:42,650 --> 00:13:50,450
+Następny, który chcę ci pokazać, to typ wizualizacji typu spread spread, który jest często używany do danych giełdowych.
+
+189
+00:13:50,550 --> 00:13:55,340
+Tak więc w porównaniu do zapasów zamierzam iść dalej i po prostu zrobić to z naszymi losowymi wartościami tutaj.
+
+190
+00:13:55,340 --> 00:13:59,810
+Później, w ciągu dnia finansowego, aby zamknąć jakiś projekt, zobaczymy trochę bardziej technicznej analizy Blotza.
+
+191
+00:14:00,350 --> 00:14:08,990
+Ale jeśli po prostu wypowiem te dwie kolumny i wyjdę z mojej ramki danych, mogę powiedzieć, że rodzaj A-plot jest równy rozprzestrzenianiu się,
+
+192
+00:14:10,450 --> 00:14:16,190
+a my dostaniemy fabułę, a następnie subplot. Otrzymam mój wykres liniowy, który pokazuje je sobie nawzajem
+
+193
+00:14:16,190 --> 00:14:20,260
+i wtedy dostanę mój spread, który pokazuje ich wzajemne rozłożenie.
+
+194
+00:14:20,300 --> 00:14:25,190
+Na przykład, jeśli przejdziemy dalej i powiększymy tutaj na 20, możemy powiększyć tutaj.
+
+195
+00:14:25,360 --> 00:14:27,860
+Zobaczmy, gdzie odpowiada 20.
+
+196
+00:14:27,860 --> 00:14:31,460
+Zauważcie, że spread wynosi minus 3:08 między nimi.
+
+197
+00:14:31,640 --> 00:14:33,770
+I tutaj możemy to zweryfikować.
+
+198
+00:14:33,770 --> 00:14:37,320
+Tak więc punkt ujemny 3 8 minus punkt 1.
+
+199
+00:14:37,370 --> 00:14:39,700
+Weźmiemy 2. 5 6 o tam.
+
+200
+00:14:39,920 --> 00:14:44,910
+Możesz więc iść dalej i porównywać te wyniki, co jest bardzo przydatne w przypadku
+
+201
+00:14:44,930 --> 00:14:48,380
+danych giełdowych, aby zobaczyć rozkład pomiędzy dwoma zasobami.
+
+202
+00:14:48,530 --> 00:14:54,470
+Mamy jeszcze dwa typy pluszowe, aby pokazać, że następna to wykres bąbelkowy, a
+
+203
+00:14:54,680 --> 00:15:02,510
+wykres bąbelkowy jest bardzo podobny do wykresu rozrzutu, z tą różnicą, że zmieni rozmiar punktów na podstawie innej zmiennej.
+
+204
+00:15:02,510 --> 00:15:09,890
+Więc jeśli powiem, że rodzaj jest równy bąbelkowi, określę X i Y, tak jak dla wykresu rozrzutu, a
+
+205
+00:15:09,890 --> 00:15:13,400
+następnie określę rozmiar bąbelków na podstawie innej kolumny.
+
+206
+00:15:13,450 --> 00:15:14,460
+Zacznijmy i po prostu wybierz.
+
+207
+00:15:14,460 --> 00:15:22,160
+Zobacz i tutaj teraz mam wykres rozrzutu, z wyjątkiem tego, że wielkość punktów jest oparta na innych wartościach kolumny i
+
+208
+00:15:22,610 --> 00:15:28,670
+widzisz tego rodzaju spiski dla takich rzeczy jak światowy PKB w porównaniu do populacji i być
+
+209
+00:15:28,670 --> 00:15:30,350
+może czynnik szczęścia itp.
+
+210
+00:15:30,360 --> 00:15:36,270
+Są to dość powszechne spiski, zwłaszcza w takich sprawach jak raporty ONZ.
+
+211
+00:15:36,400 --> 00:15:37,070
+Dobrze.
+
+212
+00:15:37,100 --> 00:15:38,560
+To jest fabuła bąbelków.
+
+213
+00:15:38,630 --> 00:15:46,150
+Aż wreszcie dotrzemy do macierzy scatter, wykres macierzy jest w zasadzie bardzo podobny do wykresu pary
+
+214
+00:15:46,180 --> 00:15:46,910
+morskiej.
+
+215
+00:15:46,910 --> 00:15:50,580
+Po prostu tworzy macierz rozproszenia wszystkich kolumn, jakie może.
+
+216
+00:15:50,580 --> 00:15:56,990
+Mówisz więc, że DFA, który rozprasza matrycę podkreślników, oznacza, że możesz potrzebować upewnić się, że wszystkie kolumny
+
+217
+00:15:57,050 --> 00:15:59,160
+są liczbami, aby to zadziałało.
+
+218
+00:15:59,240 --> 00:16:03,880
+Po prostu powiedzmy macierz rozproszenia i możesz dowolnie powiększać każdy dział indywidualnie.
+
+219
+00:16:03,890 --> 00:16:05,740
+Pamiętaj, że masz tu wiele punktów.
+
+220
+00:16:05,750 --> 00:16:09,540
+Ładowanie zajmie trochę czasu i może być bardzo powolne, jeśli chodzi o powiększanie i pomniejszanie.
+
+221
+00:16:09,560 --> 00:16:12,140
+Tak więc korzystaj z tej opieki na bardzo dużych zestawach danych.
+
+222
+00:16:12,170 --> 00:16:17,480
+W przeciwnym razie możesz zawiesić jądro Pythona.
+
+223
+00:16:17,750 --> 00:16:21,350
+OK, to dotyczy podstawowych typów fabuły, które omówimy w tym wykładzie.
+
+224
+00:16:21,410 --> 00:16:26,240
+Jeśli chcesz uzyskać więcej informacji i trochę więcej szczegółów na temat dokumentacji, to polecam
+
+225
+00:16:26,240 --> 00:16:32,480
+wejść na stronę, a to jest dostępne po prostu poprzez przeszukiwanie koncentratora i spinki do mankietów, które powinny cię
+
+226
+00:16:32,480 --> 00:16:38,930
+przenieść na tę stronę, hostowane przez spinki do mankietów Cesara Santosa Jorge i włożyłem do tego, co widzieliście wcześniej,
+
+227
+00:16:38,930 --> 00:16:43,520
+i możecie sprawdzić tutaj linki do tutoriali, w których znajduje się galeria wykresów.
+
+228
+00:16:43,860 --> 00:16:47,690
+Daj znać, jakie kolory są dostępne w Internecie Pandurs jak całkowicie.
+
+229
+00:16:47,700 --> 00:16:49,500
+Tutaj jest dużo naprawdę dobrych informacji.
+
+230
+00:16:49,520 --> 00:16:54,800
+Na przykład jeśli powiesz pandom, że już przeszliśmy przez całkiem sporo tych informacji, to istnieje
+
+231
+00:16:55,250 --> 00:17:00,970
+kilka podstawowych metod tworzenia wykresów, takich jak histogramy wykresu słupkowego, być może skumulowane histogramy, niektóre bardziej
+
+232
+00:17:00,970 --> 00:17:05,320
+szczegółowe wartości grupowania na wykresach powierzchni pola, więc ona nie przeszedłem.
+
+233
+00:17:05,330 --> 00:17:09,820
+Ale w gruncie rzeczy mówi się, że rodzaj jest równy obszarowi i jest więcej informacji.
+
+234
+00:17:09,830 --> 00:17:14,120
+Teraz zrobiliśmy już dużo tego, ale jeśli chcesz więcej szczegółów, zawsze możesz odwołać się
+
+235
+00:17:14,120 --> 00:17:16,810
+do tej strony dokumentacji, która jest całkiem niezła.
+
+236
+00:17:17,280 --> 00:17:17,890
+W porządku.
+
+237
+00:17:18,200 --> 00:17:22,790
+Na koniec chciałbym tylko wspomnieć, że istnieją pewne możliwości analizy technicznej z wbudowanymi spinkami
+
+238
+00:17:22,790 --> 00:17:23,800
+do mankietów.
+
+239
+00:17:23,840 --> 00:17:25,790
+Nadal są w fazie beta.
+
+240
+00:17:25,790 --> 00:17:32,000
+Nie są one w pełni opublikowane, ale możesz je sprawdzić w dziale analizy technicznej
+
+241
+00:17:34,460 --> 00:17:41,000
+tej biblioteki, aby dowiedzieć się więcej o tych działkach analizy technicznej, klikając tutaj w folderze spinki
+
+242
+00:17:41,000 --> 00:17:44,240
+do mankietów, a następnie sprawdzając CA pi.
+
+243
+00:17:44,540 --> 00:17:46,910
+I to jest analiza techniczna pliku pi.
+
+244
+00:17:46,910 --> 00:17:53,480
+Znowu jest to rodzaj zaawansowanych rzeczy, a szczególnie poświęcony analizie finansowej.
+
+245
+00:17:53,480 --> 00:17:57,010
+Więc jeśli nie interesuje cię analiza finansowa, nie przejmuj się tym.
+
+246
+00:17:57,030 --> 00:18:00,320
+Mogą sprawdzić kilka funkcji tutaj i kilka typów, które możesz zrobić.
+
+247
+00:18:00,320 --> 00:18:06,840
+Pozwala to na robienie rzeczy, takich jak średnie ruchome lub korelacje pomiędzy działkami lub zasobami itp.
+
+248
+00:18:06,920 --> 00:18:12,190
+Omówimy niektóre z tych typów działek później w opcjonalnej części projektu podsumowującego dane
+
+249
+00:18:12,250 --> 00:18:12,940
+finansowe.
+
+250
+00:18:13,070 --> 00:18:15,610
+Ale jeśli nie jesteś zainteresowany takimi rzeczami, nie przejmuj się tym.
+
+251
+00:18:15,680 --> 00:18:20,120
+Chcę tylko, abyś zdawał sobie sprawę, że jest tam dla ciebie, jeśli interesujesz się analizą
+
+252
+00:18:20,210 --> 00:18:22,040
+finansową i tworzeniem interaktywnych fabuł.
+
+253
+00:18:22,370 --> 00:18:23,000
+W porządku.
+
+254
+00:18:23,240 --> 00:18:23,930
+Dziękuję wszystkim.
+
+255
+00:18:23,930 --> 00:18:26,260
+Mam nadzieję, że spodobała ci się wiedza na temat spinki do mankietów spinki do mankietów.
+
+256
+00:18:26,270 --> 00:18:27,710
+To naprawdę potężne narzędzie.
+
+257
+00:18:27,770 --> 00:18:31,110
+Dobra wiadomość jest taka, że nie musisz zbytnio dostosowywać swojej wiedzy.
+
+258
+00:18:31,120 --> 00:18:35,060
+Zasadniczo po prostu dodaj oko i pamiętaj, jakiego rodzaju działkę chcesz przekazać.
+
+259
+00:18:35,240 --> 00:18:35,880
+DOBRZE.
+
+260
+00:18:36,110 --> 00:18:38,170
+Dziękuję wszystkim, a zobaczę na następnym wykładzie.

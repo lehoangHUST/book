@@ -1,0 +1,403 @@
+1
+00:00:06,780 --> 00:00:11,700
+Cześć wszystkim i zapraszam na wykład z operacjami PI i tym wykładem pokażemy
+
+2
+00:00:11,700 --> 00:00:14,520
+wam podstawową reformę operacyjną na macierzy arbitrażowej.
+
+3
+00:00:14,640 --> 00:00:18,720
+Przejdźmy dalej i przejdź do notatnika Jowisza, aby rozpocząć.
+
+4
+00:00:18,720 --> 00:00:21,090
+W porządku, więc jesteśmy tutaj w notatniku Jowisza.
+
+5
+00:00:21,210 --> 00:00:27,180
+Przejdziemy dalej i omówimy tablicę z tablicą operacji tablicowych z operacjami skalarnymi, a następnie niektóre
+
+6
+00:00:27,180 --> 00:00:33,360
+uniwersalne funkcje tablicowe, którymi są i jak można je znaleźć, będą kontynuowane i zaczynają od stwierdzenia,
+
+7
+00:00:33,470 --> 00:00:36,400
+że ważne są pi jako NPE.
+
+8
+00:00:36,810 --> 00:00:44,370
+A potem mam zamiar zrobić tablicę, którą powiemy N. P. zorganizuj, a my po
+
+9
+00:00:44,370 --> 00:00:47,600
+prostu przejdziemy dalej od zera przecinkowego 11.
+
+10
+00:00:47,640 --> 00:00:53,090
+W ten sposób otrzymamy cyfry od 0 do 10, czyli 11 cyfr od 0 do 10.
+
+11
+00:00:53,460 --> 00:00:53,910
+W porządku.
+
+12
+00:00:53,910 --> 00:00:59,460
+Możesz łatwo wykonywać tablicę za pomocą operacji tablicowych za pomocą prostych znaków arytmetycznych, do których jesteś
+
+13
+00:00:59,460 --> 00:01:01,600
+już przyzwyczajony z samego Pythona.
+
+14
+00:01:02,070 --> 00:01:08,400
+Na przykład, jeśli chcesz dodać dwie tablice razem na podstawie elementów po elementach, wystarczy
+
+15
+00:01:08,400 --> 00:01:10,300
+powiedzieć tablica plus tablica.
+
+16
+00:01:10,320 --> 00:01:12,140
+Teraz dodaj razem dwie tablice.
+
+17
+00:01:12,180 --> 00:01:14,450
+W tym przypadku po prostu dodaję do siebie tablicę.
+
+18
+00:01:14,590 --> 00:01:18,370
+W zasadzie każda liczba została podwojona.
+
+19
+00:01:18,840 --> 00:01:25,500
+Mogę zrobić to samo dla odejmowania, a nawet mnożenia.
+
+20
+00:01:25,500 --> 00:01:31,770
+Mogę także wykonać tablicę z operacjami skalarnymi w bardzo podobny sposób, tak że skalery oznaczają
+
+21
+00:01:31,770 --> 00:01:37,800
+tylko jedną liczbę, a udręka pi ma to, że zasadniczo rozgłasza tę liczbę do
+
+22
+00:01:37,800 --> 00:01:43,960
+każdego elementu w tablicy, więc operacja występuje również na zasadzie element po elemencie jeśli chcę.
+
+23
+00:01:44,010 --> 00:01:45,140
+Oto moja tablica.
+
+24
+00:01:45,240 --> 00:01:48,270
+Dodaj sto do każdego elementu w tablicy.
+
+25
+00:01:48,270 --> 00:01:50,590
+Mógłbym powiedzieć "plus", a potem "skalar".
+
+26
+00:01:50,820 --> 00:01:53,620
+I to by dodać 100 każdego elementu w tablicy.
+
+27
+00:01:53,620 --> 00:01:55,680
+Działa to również dla odejmowania
+
+28
+00:01:58,230 --> 00:01:59,910
+dzielenia mnożenia, które nazywasz.
+
+29
+00:01:59,910 --> 00:02:04,820
+Więc jeśli chciałbym odjąć 100 od każdego atomu w przerwie, by powiedzieć minus 100.
+
+30
+00:02:05,130 --> 00:02:05,760
+W porządku.
+
+31
+00:02:05,760 --> 00:02:11,940
+Są to więc podstawowe operacje arytmetyczne, które można wykonać za pomocą operacji macierzy na tablicach lub
+
+32
+00:02:11,940 --> 00:02:13,800
+macierzy z operacjami skalarnymi.
+
+33
+00:02:13,950 --> 00:02:20,510
+Chciałbym ci pokazać, że wiele razy, gdy NUMP high wyświetli ostrzeżenie, zamiast wyświetlać błąd
+
+34
+00:02:20,580 --> 00:02:22,940
+w niektórych operacjach matematycznych.
+
+35
+00:02:23,220 --> 00:02:31,250
+Na przykład, jeśli spróbuję powiedzieć 1 podzielony przez zero w Pythonie, dostanę, że faktyczny błąd ma zerowy błąd podziału, co
+
+36
+00:02:31,250 --> 00:02:35,290
+ma sens, ponieważ nie można podzielić liczby przez zero.
+
+37
+00:02:35,340 --> 00:02:38,400
+Jednak PI nie da ci tego samego błędu.
+
+38
+00:02:38,490 --> 00:02:43,860
+Więc jeśli spróbuję powiedzieć kurs podzielony przez Array.
+
+39
+00:02:43,890 --> 00:02:46,200
+Zauważ, że pierwszym elementem jest zero.
+
+40
+00:02:46,230 --> 00:02:50,240
+Spróbuję powiedzieć zero podzielone przez zero, co nie ma większego sensu.
+
+41
+00:02:50,250 --> 00:02:53,570
+Jednak żadna pi nie wyda ostrzeżenia.
+
+42
+00:02:53,570 --> 00:02:58,580
+Mówi nieprawidłowa wartość napotkana w prawdzie, tak jak tutaj, a ona po prostu da ci zero.
+
+43
+00:02:58,620 --> 00:03:05,100
+Jeśli spróbujesz podzielić zero na zero, wszystko inne jest w porządku, ponieważ mówi, że 1 podzielone przez 1 to 1 2 podzielone przez
+
+44
+00:03:05,100 --> 00:03:06,360
+2 to także 1.
+
+45
+00:03:06,390 --> 00:03:07,710
+Itp. itp..
+
+46
+00:03:07,710 --> 00:03:14,170
+Jednak na pierwszych są podzielone przez zero wykonane i dał nazwę lub nie obiekt z powrotem.
+
+47
+00:03:14,250 --> 00:03:19,170
+W rzeczywistości nie dostarczył błędu, co oznacza, że nadal otrzymujesz wynik, który jest ważny,
+
+48
+00:03:19,380 --> 00:03:20,840
+aby zauważyć rozróżnienie.
+
+49
+00:03:20,850 --> 00:03:25,310
+Oznacza to, że jeśli masz jakiś rodzaj operacji w kodzie, to nie dostaniesz błędu.
+
+50
+00:03:25,350 --> 00:03:30,900
+Kod będzie nadal działał, a zamiast tego po prostu otrzyma ostrzeżenie, jeśli spróbujesz wykonać operację, która dzieli
+
+51
+00:03:30,900 --> 00:03:32,980
+vides może inną liczbę przez zero.
+
+52
+00:03:32,990 --> 00:03:36,720
+Więc na przykład 1 podzielony przez 0 zamiast 0 Wajda o zero.
+
+53
+00:03:36,720 --> 00:03:38,190
+Otrzymasz również ostrzeżenie.
+
+54
+00:03:38,400 --> 00:03:41,880
+Ale w tym przypadku Alexa pokazuje nieskończoność zamiast wartości zerowej.
+
+55
+00:03:42,150 --> 00:03:45,930
+Więc znowu otrzymujesz dzielenie przez zero i przeciwdziałasz i jest to prawdziwe ostrzeżenie wideo tutaj.
+
+56
+00:03:46,050 --> 00:03:52,170
+Jednak nadal wykonuje kod i dostajesz tyle, aby oznaczać nieskończoność dla tego podzielonego przez zero.
+
+57
+00:03:52,440 --> 00:03:55,340
+Na tych pierwszych elementach.
+
+58
+00:03:55,350 --> 00:03:55,800
+W porządku.
+
+59
+00:03:55,800 --> 00:04:00,270
+Dlatego należy pamiętać o tym, że pracując z podziałem i tablicami
+
+60
+00:04:00,270 --> 00:04:06,760
+zawierającymi cyfry są to cyfry 0, a także szybkie notatki, ponieważ można również tworzyć tablice z wykładnikami.
+
+61
+00:04:06,780 --> 00:04:12,510
+Mówię po prostu Asterix Asterix, tak jakbyś miał Pythona, a potem skalar lub tablicę.
+
+62
+00:04:12,660 --> 00:04:15,210
+Tak więc jest to układ do potęgi dwóch.
+
+63
+00:04:15,270 --> 00:04:21,870
+A więc wszystko zostało podniesione do kwadratu w tablicy Omówienie uniwersalnej funkcji tablicowej Nela numpad zawiera
+
+64
+00:04:21,870 --> 00:04:26,220
+wiele uniwersalnych funkcji tablicowych, które są w zasadzie operacjami matematycznymi.
+
+65
+00:04:26,220 --> 00:04:30,830
+Możesz użyć do wykonania operacji i transmisji w całej tablicy.
+
+66
+00:04:30,840 --> 00:04:33,390
+Pokażmy kilka typowych.
+
+67
+00:04:33,450 --> 00:04:39,060
+Na przykład, jeśli chcesz wziąć pierwiastek kwadratowy z każdego elementu w tablicy, możesz
+
+68
+00:04:39,100 --> 00:04:42,690
+po prostu powiedzieć P, a następnie przekazać tablicę.
+
+69
+00:04:42,930 --> 00:04:46,550
+A to zajmie pierwiastek kwadratowy ze wszystkiego w tablicy.
+
+70
+00:04:46,560 --> 00:04:55,830
+Podobnie do obliczania wykładniczego można powiedzieć, że XP oraz w tablicy lub maksimum można albo powiedzieć tablicę, że Max
+
+71
+00:04:55,830 --> 00:05:01,010
+lub możesz również powiedzieć, że Max i przekazać w tablicy.
+
+72
+00:05:01,230 --> 00:05:06,120
+To jest to samo, co wywołanie metody, które widzieliśmy wcześniej w pierwszym
+
+73
+00:05:06,120 --> 00:05:07,750
+wykładzie na ich temat.
+
+74
+00:05:07,770 --> 00:05:15,560
+Możesz nawet Neutrik funkcje metryczne w tym czasie i to zasadniczo przekazuje każdy element do sinusa
+
+75
+00:05:15,570 --> 00:05:19,710
+i jest znak wspólny, a także opcje logarytmiczne.
+
+76
+00:05:19,710 --> 00:05:25,380
+Możesz powiedzieć, że dziennik i jeśli coś nie działa, na przykład log zera jest technicznie
+
+77
+00:05:25,380 --> 00:05:28,520
+negatywną nieskończonością, to otrzymasz ostrzeżenie o uruchomieniu.
+
+78
+00:05:28,530 --> 00:05:29,590
+Podzielone przez zero.
+
+79
+00:05:29,730 --> 00:05:32,610
+Ale da ci negatywną nieskończoność jest odpowiedzią.
+
+80
+00:05:32,610 --> 00:05:36,870
+Jeśli zastanawiasz się, gdzie możesz znaleźć listę wszystkich tych uniwersalnych funkcji tablicowych lub
+
+81
+00:05:36,870 --> 00:05:41,550
+odwołań, możesz iść dalej i sprawdzić notebook i ma on tam łącze do uniwersalnych funkcji tablicowych.
+
+82
+00:05:41,840 --> 00:05:44,540
+To zabierze Cię do linku, który wygląda tak.
+
+83
+00:05:44,550 --> 00:05:50,340
+To jest tutaj dokumentacja raidowa Imperium dla funkcji uniwersalnych lub func.
+
+84
+00:05:50,610 --> 00:05:55,260
+A jeśli przewiniesz na dół tej strony i znowu ten link jest w notatniku dla tego wykładu.
+
+85
+00:05:55,620 --> 00:05:57,090
+Teraz operacje PI.
+
+86
+00:05:57,090 --> 00:06:00,690
+Zobaczysz całą listę wszystkich uniwersalnych funkcji, które masz do dyspozycji.
+
+87
+00:06:00,900 --> 00:06:07,560
+Więc masz podstawowe operacje matematyczne dodaj odjąć absolutną resztę itp. Lago funkcje trygonometryczne, a następnie niektóre
+
+88
+00:06:08,040 --> 00:06:10,320
+bardziej zaawansowane funkcje.
+
+89
+00:06:10,330 --> 00:06:14,860
+To tylko funkcje porównania maksymalne minimum funkcji pływających itp.
+
+90
+00:06:15,270 --> 00:06:20,730
+Jeśli jest to bardzo podstawowa lub powszechna funkcja matematyczna, powinieneś najpierw odwiedzić tę stronę i sprawdzić,
+
+91
+00:06:20,730 --> 00:06:26,280
+czy jakieś ciasto już ją wbudowało, zanim zaczniesz tworzyć własną funkcję, aby zająć się tą konkretną
+
+92
+00:06:26,280 --> 00:06:27,320
+matematyczną operacją.
+
+93
+00:06:27,330 --> 00:06:29,070
+Próbowałeś występować na swojej tablicy.
+
+94
+00:06:29,370 --> 00:06:34,350
+Cóż, w bardzo podstawowych podczas całego kursu i przypomni ci, jak spotkaliśmy ich
+
+95
+00:06:34,410 --> 00:06:35,830
+przez resztę kursu.
+
+96
+00:06:36,090 --> 00:06:39,840
+OK, to naprawdę wszystko, jeśli chodzi o podstawowe operacje na tablicach.
+
+97
+00:06:40,080 --> 00:06:46,650
+Możesz po prostu użyć podstawowej arytmetyki albo na tablicy według metody irrate, albo tablicy i podstawy skalarnej.
+
+98
+00:06:46,980 --> 00:06:51,230
+Jedyną rzeczą, na którą trzeba uważać, jest to, że masz 0 i używasz tablic wydzielonych.
+
+99
+00:06:51,390 --> 00:06:55,990
+Następnie druga część tego wykładu objęła uniwersalną funkcję tablicową, w której znajduje się.
+
+100
+00:06:56,040 --> 00:07:01,780
+Pamiętaj, że większość typowych operacji matematycznych jest już wbudowana w nie przez OK.
+
+101
+00:07:01,980 --> 00:07:04,020
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie

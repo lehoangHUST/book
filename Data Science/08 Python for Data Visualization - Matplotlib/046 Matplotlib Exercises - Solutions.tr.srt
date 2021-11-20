@@ -1,0 +1,515 @@
+1
+00:00:05,010 --> 00:00:10,150
+Herkese merhaba ve haritaya hoş geldiniz, ayrıca bu dersin canlı sunum çözümleri dersini de veriyoruz.
+
+2
+00:00:10,170 --> 00:00:13,950
+Haritadaki arsa hareketsiz egzersizi için çözümler üzerinde duracağız.
+
+3
+00:00:14,040 --> 00:00:16,620
+Başlamak için bir Atla'nın defterine gidelim.
+
+4
+00:00:16,620 --> 00:00:20,640
+Pekala, burada en çok dudak egzersizleri için defterdeyim.
+
+5
+00:00:20,820 --> 00:00:22,840
+Hadi devam edelim ve içeri atla ve başla.
+
+6
+00:00:22,840 --> 00:00:25,680
+Veriyi almak için dışarı çıkıp ilk hücresini çalıştıracağız.
+
+7
+00:00:26,100 --> 00:00:38,130
+Ve Piazzi olarak yüksek seviyeli yaşanan bir ithalat haritası arsasına gidelim ve satıriçi çizilmiş haritayı ayarlayalım.
+
+8
+00:00:38,130 --> 00:00:42,220
+Kamandi'nin kullandığı şey Jupiter defteri değilse artık bir soru daha var.
+
+9
+00:00:42,390 --> 00:00:47,810
+Ve tüm komplo komutlarının sonunda gösterilen Piel dişleri olacağını hatırlatan bir şey.
+
+10
+00:00:47,850 --> 00:00:49,960
+Hadi bir egzersiz çeşitine gidelim.
+
+11
+00:00:50,150 --> 00:00:54,580
+Şekil çizmek kullanarak incir adlı bir şekil nesnesi oluşturmak istiyorum.
+
+12
+00:00:54,690 --> 00:00:55,200
+Tamam.
+
+13
+00:00:55,200 --> 00:01:01,370
+Dolayısıyla bu sadece Map plot lib kullanarak nesneye yönelik bir yöntemdir ya da incirin T-Dog rakamını soymasının bir
+
+14
+00:01:01,410 --> 00:01:02,500
+devamı olduğunu söylüyoruz.
+
+15
+00:01:02,910 --> 00:01:07,940
+Ve sonra bu şekle bir eksen kümesi eklemek için altçizgi ekseni eklemek istiyoruz.
+
+16
+00:01:08,460 --> 00:01:16,430
+Ve ben gireceğim ve x'in İncine eşit olduğuna, alt çizgi ekseni ekleyeceğime mi vereceğim.
+
+17
+00:01:16,510 --> 00:01:20,560
+Ve aslında biz istediğimiz pozisyonu alıyoruz 0 0 1 1.
+
+18
+00:01:20,760 --> 00:01:27,400
+Ve sonra nihayet x 'i bunun üzerine çizmek ve bunu çalıştırmak istedim.
+
+19
+00:01:27,450 --> 00:01:32,610
+Tamam, burada iyi bir eşleşmemiz var gibi görünüyor ve aşağıda etiketlerin ve başlıkların eşleşmesini istiyoruz.
+
+20
+00:01:32,610 --> 00:01:39,690
+Öyleyse devam edersek, buna devam edersek, X etiketini X
+
+21
+00:01:42,980 --> 00:01:52,920
+olarak ve sonra x x x y etiketini Y olarak ayarlamak demek isteriz.
+
+22
+00:01:52,950 --> 00:01:59,140
+Ve biz de başlığı koymak istiyoruz ve basit bir başlık olmalıydı.
+
+23
+00:01:59,220 --> 00:01:59,790
+Tamam.
+
+24
+00:02:00,210 --> 00:02:01,550
+Peki burada ne yapacağız.
+
+25
+00:02:01,560 --> 00:02:07,710
+Devam ettik ve bir figür nesnesi oluşturduk eksenler ekledik bu şekil nesnesine bir şekil nesnesi
+
+26
+00:02:07,710 --> 00:02:11,450
+çizdikten sonra X etiketini y etiketini ve başlığı ayarladık.
+
+27
+00:02:11,490 --> 00:02:16,320
+Hadi devam edin ve çok benzer bir egzersiz olan egzersiz 2'ye geçelim.
+
+28
+00:02:16,320 --> 00:02:22,340
+Şekil nesnesini yaratmak için bu figürden soymak için bir incir daire göreceğiz.
+
+29
+00:02:22,350 --> 00:02:31,320
+Ve sonra iki eksen üzerine x 1 ve x gitmek ve x 1 ve x 2 diyelim ve incir
+
+30
+00:02:31,320 --> 00:02:33,970
+diyez eksilerini eklemeyi düşündüğümü söyleyeceğim diyelim.
+
+31
+00:02:34,020 --> 00:02:36,700
+Birincisi 0 0 1 1'de bulunur.
+
+32
+00:02:36,720 --> 00:02:38,580
+Büyük olan budur.
+
+33
+00:02:38,580 --> 00:02:50,400
+Ve sonra ikincisi sıfır noktası iki nokta beş nokta iki nokta iki bulunur.
+
+34
+00:02:50,700 --> 00:02:55,060
+Bunu yapacağız ve sanki burada aynı sonucu elde etmişiz gibi görünüyor.
+
+35
+00:02:55,130 --> 00:02:55,910
+Harika.
+
+36
+00:02:56,100 --> 00:03:02,680
+Şimdi egzersiz yapmaya devam etmek istediğimizde, burada her iki eksende de x ve y kompletini çizmektir.
+
+37
+00:03:03,030 --> 00:03:06,100
+Hadi devam edelim ve hücrenize ekleyelim.
+
+38
+00:03:06,150 --> 00:03:14,810
+Bu yüzden x 1 çizgisini x y ve x x y çizmek için söyleyeceğim.
+
+39
+00:03:15,450 --> 00:03:18,840
+İşte burada aynı arsa var.
+
+40
+00:03:18,850 --> 00:03:20,280
+Kırmızı olmasını istedin.
+
+41
+00:03:20,310 --> 00:03:24,000
+Renk argümanlarını kırmızı renkte ekledikten sonra yeni bir dize
+
+42
+00:03:27,710 --> 00:03:33,870
+geçirdiniz ve şimdi bu alt çizgiye uyacak şekilde kırmızı renkte olacak ve eğer isterseniz
+
+43
+00:03:33,870 --> 00:03:37,380
+X etiketlerinde ve y etiketlerinde de eklemiş olabilirsiniz.
+
+44
+00:03:38,070 --> 00:03:43,650
+Bu özel canvas noktalarında bir şekil nesnesine erişmek için ekleyerek
+
+45
+00:03:43,650 --> 00:03:47,130
+aşağıda çizimi oluşturan egzersiz 3'e geçeceğiz.
+
+46
+00:03:47,130 --> 00:03:47,760
+Tamam.
+
+47
+00:03:47,910 --> 00:03:51,270
+Egzersiz 3'te bu kadar fazla yol gösterici değil.
+
+48
+00:03:51,300 --> 00:03:54,050
+Yapmak istediğim ilk şey bir şekil nesnesi oluşturmaktır.
+
+49
+00:03:54,060 --> 00:04:01,710
+Incirin T-Dog figürünü soymasıyla eşit olduğunu söyleyeceğim ve daha sonra yapmak istediğim şey
+
+50
+00:04:01,710 --> 00:04:12,150
+eksenler kümelerini eklemeye başlar ve ne zaman x'in Eşitlik noktasına eşit olduğuna dair eksenler ekleyin ve bunları ekleyelim
+
+51
+00:04:12,150 --> 00:04:13,340
+İstenen aynı yerlerde.
+
+52
+00:04:13,690 --> 00:04:23,790
+X 2, Fig. Noktasına ve alt çizgi eksenlerine eşit olduğumuzu söyleyebilirim; yoksa bu noktayı noktadan beş noktaya
+
+53
+00:04:23,790 --> 00:04:26,850
+dört nokta dört olarak ayarlayacağız.
+
+54
+00:04:26,850 --> 00:04:31,530
+Pekâlâ, Rennie, aynı sonuca ulaştığımızı ve daha sonra yukarıdaki arsayı yeniden
+
+55
+00:04:31,590 --> 00:04:35,520
+oluşturmak için x y ve z dizilerini kullanmak istediğimizi düşünüyoruz.
+
+56
+00:04:35,910 --> 00:04:43,650
+devam edelim ve bunları yorumlamak ve bunu biraz daha yaklaştırarak aşağıdaki görevi görelim.
+
+57
+00:04:43,650 --> 00:04:44,440
+Hadi
+
+58
+00:04:44,580 --> 00:04:46,320
+Biraz uzaklaş.
+
+59
+00:04:47,040 --> 00:04:47,710
+TAMAM.
+
+60
+00:04:48,120 --> 00:04:54,310
+Görünüşe göre burada, Dış Plaut'ta bir sürü şey var, zira X'e karşı Z var.
+
+61
+00:04:54,330 --> 00:04:56,180
+İçeri girip içeri girelim.
+
+62
+00:04:56,190 --> 00:05:04,260
+Dolayısıyla, bizim durumumuzda X olan geniş arsa içinde, x'i Z'ye göre çizmek ve aslında bunun için
+
+63
+00:05:04,260 --> 00:05:05,400
+etiketleri ayarlayacağım.
+
+64
+00:05:05,400 --> 00:05:21,080
+Böylece, X etiketi setleri X etiketini X'e ayarlar ve X işareti Z etiketi Z olarak ayarlanır.
+
+65
+00:05:21,090 --> 00:05:29,100
+Bu büyük arsa ve şimdi ekleme planı hakkında konuşacağız.
+
+66
+00:05:29,100 --> 00:05:34,360
+Dolayısıyla, ekleme planına bir göz atarsak, Y tarafından X olur.
+
+67
+00:05:34,380 --> 00:05:37,330
+Burada başlık yakınlaştırılmış gibi görünüyor.
+
+68
+00:05:37,470 --> 00:05:51,660
+Bu yüzden devam edip X arsa xy'yi söyleyeceğim ve ardından başlığı zoom yapacak şekilde ayarlayacağım Ben de
+
+69
+00:05:51,660 --> 00:06:01,320
+ilerleyip bu etiketleri X olarak, sonra da Y'yi y olarak ayarlayacağım .
+
+70
+00:06:01,320 --> 00:06:05,310
+Biliyor musunuz, aslında tamamen bitmedi, henüz gidip bunu çalıştırıp ne fark edeceğimizi görelim.
+
+71
+00:06:05,970 --> 00:06:10,110
+Dolayısıyla şu anda ekte olması gereken bir hata yaptım.
+
+72
+00:06:10,110 --> 00:06:13,450
+Bu yüzden hepsi için x 2 olmalıydı.
+
+73
+00:06:13,450 --> 00:06:15,230
+Şimdi devam edin ve bunu çalıştıralım.
+
+74
+00:06:16,140 --> 00:06:19,050
+Ve bu iyi görünüyor, ancak yine de burada bir fark var.
+
+75
+00:06:19,050 --> 00:06:26,620
+Yakınlaştırma ile ilgili not x ve y sınırları X 20'den 22'ye gider ve y 30'dan 50'ye gider.
+
+76
+00:06:26,640 --> 00:06:28,440
+Burada sadece varsayılan sınırları kullanıyoruz.
+
+77
+00:06:28,440 --> 00:06:31,440
+İçeri girip ekteki parçaları değiştirelim.
+
+78
+00:06:31,620 --> 00:06:34,520
+Bu, x 2 nokta
+
+79
+00:06:37,080 --> 00:06:42,670
+seti X ince olacak ve 20'den 22'ye gitmek istiyoruz.
+
+80
+00:06:42,670 --> 00:06:45,820
+Hadi gidip 20'den 22'ye ekleyin.
+
+81
+00:06:45,930 --> 00:06:53,910
+Ve ben de onun zamanını ayarlayacağım ve eğer geri geri gidersek, 30'dan 50'ye
+
+82
+00:06:53,910 --> 00:06:55,500
+gittiğini görebiliriz.
+
+83
+00:06:55,650 --> 00:06:58,480
+Bu yüzden en yavaş 30 virgül 50'yi söyleyeceğiz.
+
+84
+00:06:58,590 --> 00:06:59,680
+Çalıştır onu.
+
+85
+00:06:59,730 --> 00:07:05,210
+Ve şimdi hem ek hem de dış arsa üzerinde tamamen eşleştiğimizi görebiliyoruz.
+
+86
+00:07:05,280 --> 00:07:08,130
+Şu anda dörtüncü egzersiz yapıyoruz.
+
+87
+00:07:08,280 --> 00:07:13,580
+Devam edin ve aşağıda bu çizimi yeniden oluşturmak için PELTOLA alt çizgilerini kullanalım.
+
+88
+00:07:13,950 --> 00:07:22,870
+Incir gel eksenleri alt çizgileri düşündüğüm kabuk soymasıyla eşit ve iki sütunla bir kural istemek için söyleyeceğim.
+
+89
+00:07:22,890 --> 00:07:28,080
+İçeri girelim ve çalıştıralım ve o çıktıyı doğru bir şekilde elde etmişiz gibi görünüyor.
+
+90
+00:07:28,080 --> 00:07:33,780
+Şimdi eksenler üzerinde x ve y ve x ile Z'yi çizmek istiyoruz ve çizginin yanında ve
+
+91
+00:07:33,780 --> 00:07:34,690
+stilinde oynamanızı istiyorum.
+
+92
+00:07:34,710 --> 00:07:37,820
+Bakalım bunları doğru bir şekilde eşleştirebilir miyiz.
+
+93
+00:07:37,860 --> 00:07:43,930
+Ben devam edip burada çizmek için gidiyorum.
+
+94
+00:07:44,070 --> 00:07:54,600
+Boş vereyim ve devam edelim ve alt planları kullanarak eksenler 0 üye diyeyim.
+
+95
+00:07:54,600 --> 00:08:00,270
+Şimdi, eksenler dizisinin bu dizisini yinelenebilir veya arayabiliriz.
+
+96
+00:08:00,510 --> 00:08:06,840
+ve eksenlerde biri girecek ve x z planlayacak.
+
+97
+00:08:06,900 --> 00:08:17,010
+Demek istediğim, sıfır arsa ekseni ve ileride gidip bununla uğraşacağımmış gibi görünüyor, X Y
+
+98
+00:08:17,730 --> 00:08:24,000
+Bu renkleri ayarlayacağını biliyorsunuz, böylece ikinci renk kırmızı renkte,
+
+99
+00:08:24,000 --> 00:08:27,080
+rengin biraz renkte olacağını göreceğiz.
+
+100
+00:08:27,660 --> 00:08:36,870
+Ve sonra ilki içeri girelim ve renkleri bir ip olarak mavi olacak şekilde ayarlayalım.
+
+101
+00:08:36,870 --> 00:08:42,010
+Ayrıca çizgi stili s gibi kesikli bir çizgi gibi görünüyor.
+
+102
+00:08:42,080 --> 00:08:43,710
+Git ve içeri ekle.
+
+103
+00:08:43,740 --> 00:08:50,130
+Ayrıca biraz daha kalın bir tek gibi görünüyor, ancak LW eşit üçde, biz herşey
+
+104
+00:08:50,490 --> 00:08:52,490
+yolunda giderse bunu yapacağız.
+
+105
+00:08:52,500 --> 00:08:52,860
+Tamam.
+
+106
+00:08:52,860 --> 00:08:53,400
+Fena değil.
+
+107
+00:08:53,410 --> 00:08:54,820
+Görünüşe göre maç yapacağız.
+
+108
+00:08:55,080 --> 00:08:59,970
+Ve şimdi, bu düzeltme boyutu argümanlarını ekleyerek çizimi yeniden boyutlandırıp genişletemeyeceğimizi görmek istedik.
+
+109
+00:09:00,300 --> 00:09:02,500
+İçeri girip bakalım.
+
+110
+00:09:02,520 --> 00:09:09,600
+Unutmayın, alt çizgilerdeki aramaya sadece boyut argümanları ekleyebiliriz, bu yüzden incir büyüklüğü eşittir ve
+
+111
+00:09:09,600 --> 00:09:12,220
+geniş ve kısa gibi görünüyor.
+
+112
+00:09:12,240 --> 00:09:17,550
+sadece ikinci sayıya düşen daha geniş sayılar daha küçük olacak ve bu sayede 12'ye kadar düşeceğiz.
+
+113
+00:09:17,550 --> 00:09:19,990
+Böylece ilk sayı üzerinde daha büyük olmak için
+
+114
+00:09:20,260 --> 00:09:25,720
+Ve bunu çalıştırırsak, burada ikinci arsa ile eşleşecekmişiz gibi görünüyor.
+
+115
+00:09:26,040 --> 00:09:28,250
+Ve stillerde biraz da karışıklıklar var.
+
+116
+00:09:28,250 --> 00:09:31,650
+Öyleyse hepsini değiştirelim içeri girip bunu kendimiz yapalım.
+
+117
+00:09:31,650 --> 00:09:33,360
+Sadece böyle bir şey söylüyoruz.
+
+118
+00:09:33,660 --> 00:09:37,650
+Buradaki LS, çizgi çizgilerine eşit.
+
+119
+00:09:37,680 --> 00:09:39,960
+Şimdi onu değiştirdik ve eşleştirdik.
+
+120
+00:09:40,080 --> 00:09:40,640
+Tamam.
+
+121
+00:09:40,800 --> 00:09:46,650
+Matt plot lib için yapılan egzersizler için bu, umutla Nesne Yönelimli harita çizgisini canlı kullanmak
+
+122
+00:09:46,680 --> 00:09:48,640
+için kullanılan sözdizimine kadar delinmişti.
+
+123
+00:09:48,840 --> 00:09:55,160
+Tek yapmanız gereken şeklin şekil eksenlerini arayıp bu eksenler üzerinde çizmek ya da son problem
+
+124
+00:09:55,170 --> 00:10:02,250
+çağrısı olarak alt çizgiler kullanıyorsanız, bu alt çizgilere soymak için eksenler gelip daha sonra bu eksenler üzerinden
+
+125
+00:10:02,250 --> 00:10:08,560
+tekrarlayın ya da kullanarak çağrı yapın. Her belirli alt çizgiyi çizmek için eksenler dizisi.
+
+126
+00:10:08,860 --> 00:10:10,220
+Gerçekten var olan her şey bu.
+
+127
+00:10:10,350 --> 00:10:15,060
+Herhangi birinin net olmadığı veya soruyu Q &amp; A forumlarına yüklemekten çekinmemesi
+
+128
+00:10:15,060 --> 00:10:16,980
+için çözüm kitaplarını gözden geçirin.
+
+129
+00:10:16,980 --> 00:10:19,020
+Herkese teşekkürler, bir sonraki derside görüşürüz.

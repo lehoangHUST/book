@@ -1,0 +1,851 @@
+1
+00:00:05,370 --> 00:00:10,500
+Bună ziua tuturor și vă urez bun venit la conferința Jupiter a notebook-ului și această prelegere vă va arăta
+
+2
+00:00:10,500 --> 00:00:15,540
+cum să utilizați în mod eficient sistemul notebook Jupiter și vă oferă un tur al mediului general.
+
+3
+00:00:15,540 --> 00:00:20,580
+De asemenea, verificați resursele pentru această cursă pentru a descărca fișierul zip
+
+4
+00:00:20,580 --> 00:00:23,000
+care conține toate fișierele notebook.
+
+5
+00:00:23,040 --> 00:00:27,150
+Așa cum am menționat verificați resursele pentru curs și descărcați fișierul zip.
+
+6
+00:00:27,150 --> 00:00:33,700
+Conține toate fișierele IP Y și B sau fișierele notebook și acele notebook-uri pentru restul mixului de
+
+7
+00:00:33,990 --> 00:00:34,430
+cursuri.
+
+8
+00:00:34,470 --> 00:00:37,910
+Amintiți-vă unde ați salvat și dezarhivați fișierul.
+
+9
+00:00:38,640 --> 00:00:42,990
+Să mergem mai departe și să explorăm notebook-urile și să ne simțim cum să le folosim eficient.
+
+10
+00:00:42,990 --> 00:00:47,510
+Mă duc să-ți amintesc cum poți deschide un notebook Jupiter.
+
+11
+00:00:47,520 --> 00:00:50,770
+Mă duc să merg și să trec la linia de comandă acum.
+
+12
+00:00:50,790 --> 00:00:51,090
+In regula.
+
+13
+00:00:51,090 --> 00:00:55,320
+Aici sunt la promptul meu de comandă ca un memento dacă utilizați Mac OS.
+
+14
+00:00:55,320 --> 00:00:57,710
+Dă-i drumul și folosește terminalul pentru asta.
+
+15
+00:00:57,930 --> 00:01:03,870
+Dacă utilizați Windows, mergeți mai departe și intrați aici și tastați ACMD și selectați promptul de comandă.
+
+16
+00:01:04,160 --> 00:01:07,310
+Există, de asemenea, într-o pictogramă promptul de comandă puteți folosi și acest lucru.
+
+17
+00:01:07,320 --> 00:01:11,250
+Acesta este linia de comandă care vine cu distribuția Anaconda.
+
+18
+00:01:11,250 --> 00:01:11,830
+In regula.
+
+19
+00:01:12,000 --> 00:01:19,200
+Deci, mergeți mai departe și veniți la promptul de comandă, apoi tastați j u p y t r spațiul de lucru și introduceți enter.
+
+20
+00:01:20,010 --> 00:01:25,040
+Rețineți că acest lucru va începe un notebook Jupiter ori de câte ori vă aflați în linia de comandă.
+
+21
+00:01:25,050 --> 00:01:27,840
+Deci, de exemplu, voi șterge acest lucru rapid.
+
+22
+00:01:27,870 --> 00:01:35,430
+Sunt sub utilizatori C și apoi numele meu de mijloc aici Marysia și acolo este locul meu de pornire pentru a
+
+23
+00:01:35,430 --> 00:01:36,110
+începe.
+
+24
+00:01:36,210 --> 00:01:42,030
+Dacă vreau să-mi pornesc notebook-urile într-un alt director, trebuie să schimb directorul așa cum pot schimba
+
+25
+00:01:42,030 --> 00:01:46,770
+directorul folosind CD-ul și apoi tastând următorul fișier pe care îl vreau.
+
+26
+00:01:46,800 --> 00:01:51,880
+Deci, să spun că am vrut să merg la dosarul meu de descărcări, pentru că acolo am descărcat fișierul zip.
+
+27
+00:01:52,110 --> 00:01:58,110
+Aș putea să încep să scriu în D O N, atunci puteți să efectuați o completare automată și apoi să vă
+
+28
+00:01:58,110 --> 00:01:58,640
+ducă.
+
+29
+00:01:58,650 --> 00:02:04,260
+Dacă ieșiți afară și faceți clic pe Enter now downloads (Începeți acum descărcările) și apoi am putea introduce în notebook-ul DUPERE introduceți și
+
+30
+00:02:04,340 --> 00:02:09,840
+rulați acest lucru și acum fișierul meu de notebook Jubran va fi atunci când am arăta-l în browser-ul meu sub dosarul descărcări.
+
+31
+00:02:10,740 --> 00:02:15,000
+Dacă doriți să continuați și să reveniți la un singur dosar, puteți scrie pe CD.
+
+32
+00:02:15,010 --> 00:02:22,090
+Asta este schimbarea punctului spațial al spațiului rectory și care vă va duce înapoi la un director.
+
+33
+00:02:22,170 --> 00:02:25,110
+Puteți să mergeți înainte și să căutați linii de comandă de bază.
+
+34
+00:02:25,110 --> 00:02:25,860
+Există un pic diferit.
+
+35
+00:02:25,860 --> 00:02:32,250
+Penny pentru utilizarea Mac OS sau Windows, de exemplu, dacă doriți să vedeți toate dosarele de directoare
+
+36
+00:02:32,250 --> 00:02:37,400
+și directorul dvs. curent în Windows, care sunt d I sunt directorul C.
+
+37
+00:02:37,410 --> 00:02:40,780
+Și acest lucru vă arată, în principiu, toate fișierele din directorul dvs. curent.
+
+38
+00:02:40,860 --> 00:02:46,170
+Dacă sunteți pe Mac, puteți scrie în L S pentru a le lista pe toate.
+
+39
+00:02:46,170 --> 00:02:49,320
+Bine, atunci să ștergi tot ce ai aici.
+
+40
+00:02:49,320 --> 00:02:53,290
+Dacă sunteți pe Windows, puteți să tastați doar C L S.
+
+41
+00:02:53,440 --> 00:03:00,120
+Dacă sunteți pe un Mac și introduceți cuvântul clar, permiteți-mi să încep și să încep cartea Jupiter
+
+42
+00:03:00,120 --> 00:03:06,150
+și când să apăsați Enter și va deschide un cip într-un notebook din browserul meu.
+
+43
+00:03:06,150 --> 00:03:07,020
+Aici este.
+
+44
+00:03:07,200 --> 00:03:11,940
+Voi merge mai departe și voi găsi unde am salvat efectiv fișierul de dezarhivare.
+
+45
+00:03:11,940 --> 00:03:17,510
+Aici este campania de învățare a mașinilor de învățare a datelor din domeniul științelor de tip python și programul de dezarhivare a Pentagonului pe care l-ați folosit.
+
+46
+00:03:17,520 --> 00:03:22,920
+Puteți sau nu să aveți acest maestru dasht la sfârșit, dar dacă mergeți mai departe și faceți clic pe acest dosar veți
+
+47
+00:03:22,920 --> 00:03:24,460
+vedea destul de câteva foldere aici.
+
+48
+00:03:24,480 --> 00:03:27,660
+Python pentru analiza datelor pentru vizualizarea datelor.
+
+49
+00:03:27,660 --> 00:03:33,550
+Python crash curs mașină de învățare secțiuni de date păstrate unele proiecte mari de date și Sparc și mai mult.
+
+50
+00:03:33,570 --> 00:03:36,070
+Prima secțiune se află sub acest dosar.
+
+51
+00:03:36,090 --> 00:03:41,960
+Python crash curs dacă faceți clic pe acea secțiune în cazul în care dosarul veți avea notebook-ul.
+
+52
+00:03:42,180 --> 00:03:44,700
+Și aici veți vedea punctul IPY și fi fișiere.
+
+53
+00:03:44,700 --> 00:03:50,670
+Deci, destul de mult pentru fiecare conferință în care mă vedeți codificând ceva, există un dosar care are numele
+
+54
+00:03:50,730 --> 00:03:56,550
+secțiunii generale și apoi vor fi un subfolder al numelui propriu-zis al secțiunii și apoi fișierele de
+
+55
+00:03:56,550 --> 00:03:58,630
+pe notebook-uri care corespund denumirilor lectorului.
+
+56
+00:03:58,620 --> 00:04:01,030
+Deci, primul este cursul de prăbușire python.
+
+57
+00:04:01,140 --> 00:04:02,590
+Puteți merge mai departe și faceți clic pe asta.
+
+58
+00:04:02,670 --> 00:04:03,990
+Vor lua puțin timp să se încarce.
+
+59
+00:04:03,990 --> 00:04:09,270
+Aici este și apoi tot ceea ce voi scrie pe parcursul conferinței este aici pentru tine și destul de
+
+60
+00:04:09,270 --> 00:04:11,460
+mult la începutul fiecărei secțiuni a cursului.
+
+61
+00:04:11,460 --> 00:04:16,380
+Vă reamintesc unde găsiți cărțile actuale pentru acea secțiune a cursului răspunde la câteva prelegeri
+
+62
+00:04:16,380 --> 00:04:19,100
+și uneori poate fi greu să o găsiți.
+
+63
+00:04:19,230 --> 00:04:23,520
+Voi fi acolo pentru a vă călăuzi și dacă aveți vreun fel de întrebări despre unde să găsiți lucruri, pur
+
+64
+00:04:23,520 --> 00:04:27,460
+și simplu nu ezitați să postați forumurile Q &amp; A și vom fi bucuroși să vă ajutăm acolo.
+
+65
+00:04:27,510 --> 00:04:30,890
+În regulă, după aceea vom începe Python pentru analiza datelor.
+
+66
+00:04:30,900 --> 00:04:36,030
+Veți începe numărul cu s. c sau faceți clic pe PI și vedeți-l notebook pentru asta.
+
+67
+00:04:36,030 --> 00:04:41,790
+Permiteți-mi să merg înainte și pur și simplu să trec prin modul în care sistemul de cărți Jupiter note funcționează într-un sens general.
+
+68
+00:04:41,910 --> 00:04:49,050
+Mă voi întoarce până la stăpân și apoi voi da clic pe nou și aici, deoarece am
+
+69
+00:04:49,050 --> 00:04:50,350
+mai multe medii.
+
+70
+00:04:50,480 --> 00:04:55,110
+Am de gând să faceți clic pe acesta dar puteți să faceți clic pe Python sau Python 3 sau orice ar fi bine și faceți clic pe
+
+71
+00:04:55,110 --> 00:04:56,300
+el ar trebui să fie bine.
+
+72
+00:04:56,310 --> 00:04:59,180
+Din nou, puteți să faceți clic pe noul lucru pe care scrie în notebook-uri.
+
+73
+00:04:59,220 --> 00:05:00,640
+Ar fi bine să faceți clic pe el.
+
+74
+00:05:00,870 --> 00:05:04,040
+Vei obține ceva de genul ăsta pentru a reînvia acest notebook.
+
+75
+00:05:04,070 --> 00:05:08,260
+Nu faceți clic aici doar în secțiunea fără titlu și numiți-o cum vreți.
+
+76
+00:05:08,280 --> 00:05:11,400
+Notebook-ul meu, de exemplu, faceți clic pe OK și îl voi numi.
+
+77
+00:05:11,400 --> 00:05:13,940
+Lasă-mă să merg mai departe și să-ți arăt elementele de bază.
+
+78
+00:05:13,950 --> 00:05:21,440
+Aceasta este o celulă de cod, ceea ce înseamnă că pot tasta codul Python în celulă și apoi o pot rula ca un exemplu foarte
+
+79
+00:05:21,440 --> 00:05:28,070
+simplu, pot spune să tipărească salut și apoi pot rula celula făcând clic aici pe rulați și mă duc înainte și
+
+80
+00:05:28,070 --> 00:05:30,690
+alerga și arată eu ieșirea de sub celulă.
+
+81
+00:05:30,710 --> 00:05:35,150
+De asemenea, pot face același lucru pentru orice cod Python dacă vreau să știu ce este unul plus unul.
+
+82
+00:05:35,450 --> 00:05:41,120
+Doar faceți clic pe rulați aici și mi-a arătat ieșirea în notificarea celulară de când am imprimat ieșirea aici nu
+
+83
+00:05:41,210 --> 00:05:44,980
+a fost afișată, deoarece nu am specificat de fapt să tipăriți ieșirea.
+
+84
+00:05:45,050 --> 00:05:46,780
+A arătat celula de ieșire.
+
+85
+00:05:46,910 --> 00:05:50,820
+Faptele pe care le-a spus imprima unul plus unul.
+
+86
+00:05:51,170 --> 00:05:53,980
+Atunci nu ar arăta atât de puțin.
+
+87
+00:05:54,140 --> 00:05:54,620
+O.K.
+
+88
+00:05:54,800 --> 00:06:00,170
+Deci, nu trebuie întotdeauna să vii aici și să dai clic pe această celulă pe care poți să o faci este de
+
+89
+00:06:00,170 --> 00:06:01,580
+fapt doar să schimbi intrarea.
+
+90
+00:06:01,820 --> 00:06:06,290
+Și atunci am pus-o ca o introducere a șirului.
+
+91
+00:06:06,310 --> 00:06:10,320
+Și dacă fac schimbare, intră, va merge mai departe și va rula tot ce este în acea celulă.
+
+92
+00:06:10,370 --> 00:06:11,400
+Așa că ține minte.
+
+93
+00:06:11,420 --> 00:06:16,370
+Este un mod foarte frumos de a rula lucruri repede, astfel încât să nu trebuiască să veniți în mod constant aici
+
+94
+00:06:16,370 --> 00:06:18,060
+și faceți clic pe rulați să vindeți.
+
+95
+00:06:18,200 --> 00:06:21,030
+Un alt truc mic este altul.
+
+96
+00:06:21,200 --> 00:06:24,940
+Dacă fac trecerea și pornesc pe asta, se duce la celula următoare.
+
+97
+00:06:24,980 --> 00:06:30,210
+Dar dacă o fac altul, va introduce o celulă sub ea, de asemenea.
+
+98
+00:06:30,230 --> 00:06:31,240
+Observați diferența aici.
+
+99
+00:06:31,250 --> 00:06:35,240
+Dacă fac doar schimbare intra pe această primă celulă o rulează.
+
+100
+00:06:35,240 --> 00:06:40,340
+Și așa își schimbă numărul pentru a vă arăta ordinea lucrurilor și modul în care a fost rulat.
+
+101
+00:06:40,460 --> 00:06:44,930
+Apoi, dacă o introduc, o să introducă o celulă pentru mine.
+
+102
+00:06:44,930 --> 00:06:49,600
+Acesta este un truc foarte frumos și vă voi arăta de ce mai târziu când discutăm exerciții.
+
+103
+00:06:50,230 --> 00:06:50,980
+O.K.
+
+104
+00:06:51,080 --> 00:06:53,510
+Acum vă puteți întreba cum pot salva acest notebook.
+
+105
+00:06:53,510 --> 00:07:00,380
+Poate fie să faceți controlul sau să faceți clic aici pe discheta mică salvați are de fapt o funcție de salvare automată înconjurată
+
+106
+00:07:00,380 --> 00:07:02,540
+la fiecare două minute de salvare automată.
+
+107
+00:07:02,630 --> 00:07:07,980
+Sau puteți spune doar fișier și puteți face o salvare și punctul de control aici.
+
+108
+00:07:08,020 --> 00:07:12,530
+Acum s-ar putea sa te intrebi si cum sa descarc acest notebook ca pe altceva.
+
+109
+00:07:12,530 --> 00:07:15,470
+Ei bine, puteți doar să vă descărcați fișierul ca.
+
+110
+00:07:15,470 --> 00:07:17,780
+Și de fapt aveți o grămadă de opțiuni aici pentru a descărca.
+
+111
+00:07:17,960 --> 00:07:23,570
+Dacă doriți doar fișierul dot PI puteți spune că descărcați ca punct PI și acesta va descărca și converti
+
+112
+00:07:23,600 --> 00:07:29,810
+acest fișier notebook într-un fișier astfel încât să puteți folosi ca un script normal Python și indiferent de ID-ul pe care îl doriți.
+
+113
+00:07:30,290 --> 00:07:35,720
+Sau dacă doriți doar HVM Elano puteți face clic pe fiecare T. M. și o va exporta într-un fișier
+
+114
+00:07:35,720 --> 00:07:38,070
+simplu de bază, pe care orice browser îl poate afișa.
+
+115
+00:07:38,100 --> 00:07:39,300
+Deci aveți o grămadă de opțiuni.
+
+116
+00:07:39,320 --> 00:07:41,780
+Puteți intra și le puteți verifica.
+
+117
+00:07:41,780 --> 00:07:48,130
+Altceva ce vreau sa stii este daca ai vreodata un infinit in timp ce bucla ruleaza.
+
+118
+00:07:48,140 --> 00:07:53,330
+Deci, să spunem că este ca și cum ai fi rulat pentru totdeauna și vrei să reporni cumva kernelul tău.
+
+119
+00:07:53,360 --> 00:07:59,070
+Ce se va întâmpla este sub acest aspect în mine măresc un pic în loc de un număr aici și sfârșitul veți vedea
+
+120
+00:07:59,070 --> 00:07:59,860
+un Asterix scăzut.
+
+121
+00:07:59,920 --> 00:08:01,550
+Se va executa pentru totdeauna.
+
+122
+00:08:01,670 --> 00:08:07,880
+Ce puteți face este să intriți și să spuneți kernel-ul și apoi reporniți kernelul spunând că doriți să reporniți
+
+123
+00:08:07,880 --> 00:08:08,330
+kernel-ul.
+
+124
+00:08:08,330 --> 00:08:09,660
+Porniți și reporniți.
+
+125
+00:08:09,790 --> 00:08:12,700
+Ei bine, spuneți repornirea kernel-ului și apoi spun că kernel-ul este gata.
+
+126
+00:08:12,710 --> 00:08:17,600
+Practic, ceea ce se întâmplă este că acest notebook este conectat la un kernel, iar un kernel este un fel de
+
+127
+00:08:17,600 --> 00:08:18,740
+exemplu de funcționare Python.
+
+128
+00:08:19,100 --> 00:08:24,560
+Și dacă ceva e în neregulă în cazul în care Python se prăbușește poate că de fapt ați scris un script care doar infinit
+
+129
+00:08:24,560 --> 00:08:26,300
+bucle sau durează un timp foarte lung.
+
+130
+00:08:26,360 --> 00:08:31,970
+Puteți opri întotdeauna tot prin trecerea la kernel și faceți clic pe repornirea poate întrerupe, de asemenea, dacă doriți
+
+131
+00:08:32,000 --> 00:08:35,230
+doar să întrerupeți acea celulă specifică, dar uneori nu funcționează.
+
+132
+00:08:35,240 --> 00:08:39,770
+Dacă obțineți o buclă foarte rău în timp ce rulează pentru totdeauna doar să păstrați acest lucru în minte.
+
+133
+00:08:40,100 --> 00:08:41,000
+O.K.
+
+134
+00:08:41,390 --> 00:08:45,680
+Dacă ai nevoie de ajutor în plus față de tot ce ți-am spus aici, poți oricând să dai doar
+
+135
+00:08:46,280 --> 00:08:49,050
+clic pe ajutor și apoi te vor ajuta în multe biblioteci.
+
+136
+00:08:49,070 --> 00:08:53,480
+Vom lucra împreună cu un notebook, ajutând doar să faceți clic pe faptul că vă
+
+137
+00:08:53,480 --> 00:08:56,760
+va trimite la un link unde vă va spune despre notebook-uri.
+
+138
+00:08:56,930 --> 00:09:02,090
+Țineți minte că aceste notebook-uri erau numite notebook-uri I Python, dar acum, deoarece Jupiter poate rula alte
+
+139
+00:09:02,090 --> 00:09:05,450
+limbi, cum ar fi Julieta și sunt numite notebook-urile Jupiter.
+
+140
+00:09:05,450 --> 00:09:12,000
+Un alt lucru pe care am vrut să-l menționez este că există mai multe comenzi rapide de la tastatură decât ceea ce tocmai v-am spus.
+
+141
+00:09:12,080 --> 00:09:17,540
+Puteți să vă ajutați să faceți clic pe comenzile rapide de la tastatură și vă va oferi o listă cu toate comenzile
+
+142
+00:09:17,810 --> 00:09:19,700
+rapide de la tastatură disponibile pentru dvs.
+
+143
+00:09:20,420 --> 00:09:20,930
+In regula.
+
+144
+00:09:20,930 --> 00:09:25,490
+Acestea sunt într-adevăr elementele de bază ale notebook-ului și destul de mult tot ceea ce trebuie să știți, în măsura în care treceți
+
+145
+00:09:25,490 --> 00:09:26,250
+prin acest curs.
+
+146
+00:09:26,330 --> 00:09:31,460
+Aveți întrebări care sunt mai specifice unui anumit subiect pe care nu îl puteți găsi aici.
+
+147
+00:09:31,640 --> 00:09:33,310
+Continuați și căutați în forumurile din Kewaunee.
+
+148
+00:09:33,320 --> 00:09:37,820
+Dacă nu puteți afla că acolo sau în falsul Q puteți simți liber să postați noile întrebări pe forumurile Q &amp;
+
+149
+00:09:37,940 --> 00:09:39,850
+A și vom fi bucuroși să vă ajutăm.
+
+150
+00:09:40,070 --> 00:09:44,300
+Real rapid am vrut să vă arăt ce exerciții arata ca pe parcursul acestui curs.
+
+151
+00:09:44,300 --> 00:09:48,140
+Așa că, de exemplu, să presupunem că sunteți un python pentru analiza datelor.
+
+152
+00:09:48,250 --> 00:09:53,030
+Sunteți în secțiunea PI a Cursului pe care ați făcut-o și ați fost gata să începeți exercițiul.
+
+153
+00:09:53,540 --> 00:09:57,410
+Fiecare exercițiu va avea un fișier de soluții asociat cu acesta.
+
+154
+00:09:57,410 --> 00:09:59,050
+Nu verificați mai întâi fișierul cu soluții.
+
+155
+00:09:59,060 --> 00:10:01,100
+Ar trebui să verificați acest fișier de exerciții.
+
+156
+00:10:01,220 --> 00:10:05,660
+Apoi puteți să mergeți mai departe și să faceți clic pe fișierul sexercise și acesta va apărea și
+
+157
+00:10:05,660 --> 00:10:06,420
+arata așa ceva.
+
+158
+00:10:06,800 --> 00:10:10,120
+Și acest dosar de exerciții va avea întrebări pentru dvs.
+
+159
+00:10:10,400 --> 00:10:14,740
+Și apoi o celulă unde poți să mergi mai departe și să răspunzi la aceste întrebări și de multe ori.
+
+160
+00:10:14,750 --> 00:10:17,740
+Vă voi arăta și rezultatul așteptat.
+
+161
+00:10:17,780 --> 00:10:21,050
+De exemplu, aici doriți să creați o serie de zerouri.
+
+162
+00:10:21,050 --> 00:10:25,460
+Acum știu că probabil nu știți cum să faceți acest lucru încă, dar
+
+163
+00:10:25,520 --> 00:10:32,210
+rețineți că, dacă începeți să scrieți chestii în celulă, cum ar fi printurile salut și executați acest lucru, veți suprascrie output-ul.
+
+164
+00:10:32,210 --> 00:10:38,020
+Așa că țineți minte acest lucru și veți fi mai relevanți când veți ajunge la exerciții.
+
+165
+00:10:38,020 --> 00:10:40,580
+Unii dintre voi poate vă întrebați ce fel de celulă este asta.
+
+166
+00:10:40,580 --> 00:10:44,490
+De fapt, doar arată textul și nu este o celulă de cod.
+
+167
+00:10:44,690 --> 00:10:46,780
+Ei bine, acest lucru este cunoscut ca o celulă de marcare.
+
+168
+00:10:46,790 --> 00:10:53,430
+Dacă mergem înainte și ne întoarcem la notebook-ul meu, tot ceea ce ți-am arătat până acum este o celulă de cod.
+
+169
+00:10:53,510 --> 00:10:58,910
+Dar ceea ce este cu adevărat minunat despre notebook-urile Jupiter este că puteți scrie în note pentru dvs. în textul
+
+170
+00:10:58,970 --> 00:11:02,540
+de marcare normal, astfel încât să puteți veni aici să priviți codul.
+
+171
+00:11:02,930 --> 00:11:07,790
+Faceți clic pe marcaj și aceasta va converti acest lucru într-o celulă de marcare.
+
+172
+00:11:07,910 --> 00:11:14,510
+Și acum, dacă conduc celula, este în esență doar un text de bază pentru mine să scriu note pentru mine, ceea ce este cu adevărat
+
+173
+00:11:14,510 --> 00:11:15,760
+util atunci când învățați.
+
+174
+00:11:15,770 --> 00:11:17,770
+Puteți spune ceva de genul.
+
+175
+00:11:17,900 --> 00:11:21,770
+Utilizați imprimarea pentru a imprima șiruri.
+
+176
+00:11:21,770 --> 00:11:29,330
+Rulați acea notă mică pentru tine și apoi poți să mergi mai departe și să tipi în tipăriri salut etc. și aceasta este o modalitate foarte bună de a vă felul de a
+
+177
+00:11:29,330 --> 00:11:33,850
+lua notițe ca te duci de-a lungul întreaga prelegeri și acest lucru susține, de asemenea,
+
+178
+00:11:33,850 --> 00:11:35,040
+o formatare markdown.
+
+179
+00:11:35,060 --> 00:11:40,580
+Deci, dacă sunteți familiarizați cu formatarea marcajelor, cum ar fi modul de utilizare a etichetelor hash pentru caractere aldine etc.
+
+180
+00:11:40,610 --> 00:11:46,040
+Sau poate face un taluc cu doar câteva buze de asteriscuri.
+
+181
+00:11:46,040 --> 00:11:52,220
+Mai multe puncte de glonț sau indentare pentru un fel de formatare a codului care este, de asemenea, portat în
+
+182
+00:11:52,240 --> 00:11:53,310
+aceste celule markdown.
+
+183
+00:11:53,510 --> 00:11:58,490
+Acum nu vom trece peste sintaxa marcată, pentru că pot fi un curs întreg, dar nu uitați
+
+184
+00:11:58,490 --> 00:12:03,760
+să vedeți ceva asemănător cu acest tip de marcaj și latex care spune că este o celulă de marcare.
+
+185
+00:12:04,130 --> 00:12:09,290
+O greșeală obișnuită pe care o fac uneori începătorii este că ei vor transforma accidental acest lucru într-o celulă de markdown și apoi se
+
+186
+00:12:09,290 --> 00:12:11,550
+va mira de ce nu este codul meu de funcționare.
+
+187
+00:12:11,630 --> 00:12:17,390
+Dacă codul dvs. nu este niciodată evidențiat, probabil înseamnă că rulați numai o celulă de marcare.
+
+188
+00:12:17,390 --> 00:12:22,640
+Dacă doriți să modificați această celulă de marcare înapoi într-o celulă de cod, veniți aici și selectați codul, apoi
+
+189
+00:12:22,640 --> 00:12:26,120
+rulați-l cu o introducere în schimbare și sunteți bine să mergeți.
+
+190
+00:12:26,510 --> 00:12:34,250
+OK, astfel încât să rețineți că intrarea în schimbare rulează o celulă, iar apoi Alt Enter va rula o celulă și va scoate o celulă sub ea.
+
+191
+00:12:34,940 --> 00:12:44,180
+Deci, dacă mergeți mai departe și faceți clic pe alternate sunt aici, ca și cum ați face din nou Alt Alt centru și în a pune o
+
+192
+00:12:44,180 --> 00:12:44,980
+nouă celulă.
+
+193
+00:12:45,110 --> 00:12:49,700
+Acum mă refer doar la ceea ce fac de fapt pe tastatura mea, nu vreau să scriu un șir.
+
+194
+00:12:49,700 --> 00:12:54,900
+Deci, din nou, o dată plus o trecere introduceți-o rulează unul plus un alternator.
+
+195
+00:12:54,900 --> 00:12:59,840
+Păstrează în celule noi sub el, care este cu adevărat util pentru exerciții.
+
+196
+00:12:59,840 --> 00:13:01,710
+Deci, dacă vă întoarceți aici, acesta este un exercițiu.
+
+197
+00:13:01,940 --> 00:13:04,850
+Observați că am această matrice de ieșiri 1 1 1 la 1.
+
+198
+00:13:04,890 --> 00:13:06,060
+Nu vreau să suprascriu asta.
+
+199
+00:13:06,110 --> 00:13:12,020
+Pot să dau clic pe acest text sau pe marcajul în jos să introducă celula și îmi dă o celulă mică pentru
+
+200
+00:13:12,380 --> 00:13:14,960
+un tampon pentru a putea tipări ceea ce vreau.
+
+201
+00:13:15,140 --> 00:13:17,750
+Comutați tasta Enter în testul ieșirilor.
+
+202
+00:13:17,810 --> 00:13:18,300
+In regula.
+
+203
+00:13:18,410 --> 00:13:21,710
+Nu vă faceți griji dacă nu ați reușit să obțineți toate aceste lucruri, deoarece
+
+204
+00:13:21,710 --> 00:13:23,840
+vom examina toate acestea când vom ajunge la exerciții.
+
+205
+00:13:24,440 --> 00:13:25,020
+In regula.
+
+206
+00:13:25,070 --> 00:13:27,990
+Asta e tot ce trebuie să știi pentru cărțile Jupiter.
+
+207
+00:13:28,010 --> 00:13:30,820
+Dacă aveți întrebări, nu ezitați să postați și să aveți întrebări și răspunsuri.
+
+208
+00:13:30,820 --> 00:13:32,340
+Știi că mă bucur să te ajut.
+
+209
+00:13:32,360 --> 00:13:37,670
+Rețineți că sistemul notebook Jupiter va porni oriunde v-ați afla în comanda de comandă sau
+
+210
+00:13:37,730 --> 00:13:38,810
+pe terminalul dvs.
+
+211
+00:13:38,810 --> 00:13:44,330
+Veți avea nevoie de un director de schimbare utilizând CD-ul dacă doriți să rulați sau să salvați notebook-urile în
+
+212
+00:13:44,330 --> 00:13:45,500
+alt loc în computer.
+
+213
+00:13:45,500 --> 00:13:48,440
+Mulțumesc tuturor și văd la următoarea conferință.

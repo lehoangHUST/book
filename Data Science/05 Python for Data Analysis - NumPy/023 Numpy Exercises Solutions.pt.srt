@@ -1,0 +1,955 @@
+1
+00:00:05,940 --> 00:00:10,350
+Olá a todos e seja bem vindo às soluções de exercícios de torta, leia esta palestra.
+
+2
+00:00:10,380 --> 00:00:13,880
+Vamos codificar manualmente as soluções para os exercícios.
+
+3
+00:00:13,890 --> 00:00:17,250
+Vamos em frente e salte para o caderno Jupiter para começar.
+
+4
+00:00:17,250 --> 00:00:17,540
+Tudo bem.
+
+5
+00:00:17,540 --> 00:00:19,820
+Então, aqui estou no caderno Jupiter.
+
+6
+00:00:20,190 --> 00:00:23,120
+Avançemos e comecemos apenas com importantes árbitros e.
+
+7
+00:00:23,740 --> 00:00:27,720
+Espero que você seja capaz de fazer isso facilmente, o comando é basicamente escrito por
+
+8
+00:00:27,720 --> 00:00:27,970
+você.
+
+9
+00:00:28,020 --> 00:00:30,140
+Quando o turno entra mais importante.
+
+10
+00:00:30,240 --> 00:00:31,880
+Estamos prontos para ir.
+
+11
+00:00:31,890 --> 00:00:32,130
+ESTÁ BEM.
+
+12
+00:00:32,130 --> 00:00:35,590
+Primeiro, queríamos criar uma série de 10 zeros.
+
+13
+00:00:35,730 --> 00:00:42,910
+Uma maneira fácil de fazer isso é apenas dizer N. P. zeros e o passado e o dígito 10 e
+
+14
+00:00:42,940 --> 00:00:48,120
+sem saída a taxa exata que ele tinha lá é a saída para criar uma matriz de 10 que você
+
+15
+00:00:48,120 --> 00:00:54,550
+pode fazer exatamente a mesma coisa, exceto em vez de usar zeros usá-los, então você acabou de passar 10 e você tem 10 1s.
+
+16
+00:00:54,570 --> 00:00:56,190
+Agora é criar uma série de 10 e cinco.
+
+17
+00:00:56,190 --> 00:01:03,330
+Na verdade, há algumas maneiras de fazer isso, mas uma maneira fácil é apenas dizer feliz e, então,
+
+18
+00:01:03,330 --> 00:01:07,570
+você pode seguir em frente e às vezes por cinco.
+
+19
+00:01:08,310 --> 00:01:11,340
+E isso lhe dará uma série de 10 e cinco.
+
+20
+00:01:11,550 --> 00:01:18,020
+Em outras palavras, você poderia ter feito isso é dizer N. P. de zeros 10.
+
+21
+00:01:18,780 --> 00:01:22,680
+E então, o que você poderia ter feito é adicionar um cinco para isso.
+
+22
+00:01:22,680 --> 00:01:26,220
+E essas são provavelmente as duas formas mais simples de criar um conjunto de 10 e cinco.
+
+23
+00:01:26,220 --> 00:01:27,920
+Muito rapidamente.
+
+24
+00:01:27,990 --> 00:01:28,430
+Tudo bem.
+
+25
+00:01:28,470 --> 00:01:32,310
+Agora queremos criar uma série de números inteiros de 10 a 50.
+
+26
+00:01:32,550 --> 00:01:36,510
+Espero ver esta é a saída que você pensou do arr. função.
+
+27
+00:01:36,530 --> 00:01:38,460
+Como essa é a maneira mais fácil de fazer isso.
+
+28
+00:01:39,090 --> 00:01:46,660
+Então, estamos em um intervalo e nós passamos de 10 a 50 e isso significa que queremos começar às 10 como nossa primeira entrada e diz
+
+29
+00:01:46,870 --> 00:01:50,740
+que queremos que 50 incluíram lembrar, já que a indexação começa em zero.
+
+30
+00:01:50,850 --> 00:01:58,480
+Temos que ir para 51 quando entramos e isso obtém os números inteiros de saída de 10 a 50.
+
+31
+00:01:58,500 --> 00:02:03,330
+A próxima coisa que você precisa fazer é criar uma matriz de todos os inteiros pares de 10 a 50.
+
+32
+00:02:03,330 --> 00:02:05,500
+Isso também é bastante direto.
+
+33
+00:02:05,540 --> 00:02:10,800
+Espero que eu me lembre da palestra de que, como um terceiro argumento, deslize a guia aqui se quiser o argumento real,
+
+34
+00:02:11,070 --> 00:02:14,730
+mas você pode obter um tamanho de passo e dizer que quero números inteiros iguais.
+
+35
+00:02:14,730 --> 00:02:20,340
+Eu irei em frente e coloco um passo de dois e então eu recebo todos os inteiros pares de 10
+
+36
+00:02:20,340 --> 00:02:21,370
+para o número 50.
+
+37
+00:02:21,960 --> 00:02:22,350
+ESTÁ BEM.
+
+38
+00:02:22,350 --> 00:02:28,790
+Movendo-se, queríamos criar uma matriz de três por três com valores variando de zero a 8.
+
+39
+00:02:28,800 --> 00:02:31,900
+Este será um processo de dois passos.
+
+40
+00:02:32,040 --> 00:02:40,170
+Você vai primeiro criar usando arr. 8 e isso eu quero que este seja um três por três Matrix.
+
+41
+00:02:40,350 --> 00:02:43,860
+você conhece pasan um nove aqui e isso criará o array 0
+
+42
+00:02:43,860 --> 00:02:48,600
+O que eu posso fazer é que eu posso dizer remodelar três, chegar três.
+
+43
+00:02:48,840 --> 00:02:53,950
+E isso produz que três por três matrizes de valores variam de 0 a AIDS.
+
+44
+00:02:53,970 --> 00:02:58,650
+Agora, você também poderia dividir isso em duas etapas, o que significa que eu
+
+45
+00:02:59,350 --> 00:03:07,680
+poderia ter dito algo como um igual a 9 e depois definir uma remodelação três por três e isso seria novamente o mesmo, apenas em
+
+46
+00:03:07,680 --> 00:03:09,720
+duas grandes etapas claras e separadas separadas.
+
+47
+00:03:09,720 --> 00:03:14,190
+Mas muitas vezes, quando você está trabalhando com Pi, você apenas abordará esses métodos em
+
+48
+00:03:14,190 --> 00:03:15,200
+cima uns dos outros.
+
+49
+00:03:15,240 --> 00:03:16,260
+Tudo bem.
+
+50
+00:03:16,260 --> 00:03:18,320
+Em seguida, você teve que criar um três por três.
+
+51
+00:03:18,330 --> 00:03:19,870
+Eu tende a ver a matriz.
+
+52
+00:03:20,070 --> 00:03:23,920
+Espero que você se lembre do comando da primeira palestra do árbitro A's.
+
+53
+00:03:23,970 --> 00:03:25,440
+Mas isso é só eu.
+
+54
+00:03:25,890 --> 00:03:31,920
+E você apenas passou um número desde que não vi as matrizes deve ser quadrado e que o eu de três é um
+
+55
+00:03:31,920 --> 00:03:32,690
+três por três.
+
+56
+00:03:32,700 --> 00:03:34,890
+Ite e veja a matriz.
+
+57
+00:03:34,890 --> 00:03:36,090
+Tudo bem.
+
+58
+00:03:36,090 --> 00:03:42,050
+Chegando em seguida, ele queria usar algum PI para gerar um número aleatório entre 0 e 1.
+
+59
+00:03:42,070 --> 00:03:48,270
+Na verdade, são algumas maneiras de fazer isso, mas provavelmente o mais fácil é apenas dizer
+
+60
+00:03:48,480 --> 00:03:55,490
+P que o passe aleatório e Ranz lembrar da palestra que isso transforma valores aleatórios entre 0 e 1.
+
+61
+00:03:55,530 --> 00:04:01,410
+Então eu posso passar por um aqui e isso retorna um valor aleatório entre 0 e 1.
+
+62
+00:04:01,410 --> 00:04:06,220
+Agora, sua resposta pode ter sido um pouco diferente da minha, mas isso ocorre porque isso é aleatório.
+
+63
+00:04:06,330 --> 00:04:08,540
+Então você sempre obtém um número diferente toda vez que você executa isso.
+
+64
+00:04:08,550 --> 00:04:11,190
+Mas deve estar entre zero e uma cada vez.
+
+65
+00:04:11,190 --> 00:04:14,010
+Se você passar apenas um único dígito como seu argumento.
+
+66
+00:04:14,010 --> 00:04:19,980
+Então, novamente, esse pensamento aleatório Rand retorna um número aleatório entre 0 e 1.
+
+67
+00:04:20,790 --> 00:04:26,820
+Depois disso, queríamos usar pi para gerar uma matriz de 25 amostras de números aleatórios de
+
+68
+00:04:26,820 --> 00:04:28,310
+uma distribuição normal normal.
+
+69
+00:04:28,320 --> 00:04:34,920
+Espero que tenha sido uma palavra-chave para você lembrar que você poderia chamar N. P. pensou pensamento aleatório Rand n
+
+70
+00:04:35,140 --> 00:04:41,640
+e se você mudar a guia aqui, isso retorna uma amostra da distribuição normal padrão e
+
+71
+00:04:41,790 --> 00:04:44,120
+é basicamente a aderência do final.
+
+72
+00:04:44,400 --> 00:04:51,540
+possa colocar um 25 e isso retorna uma matriz de 25 amostras aleatórias de números aleatórios de uma distribuição normal padrão.
+
+73
+00:04:51,540 --> 00:04:52,710
+Para que eu
+
+74
+00:04:52,830 --> 00:04:57,480
+E note aqui que você pode dizer pelos colchetes que esta é apenas uma matriz
+
+75
+00:04:57,480 --> 00:05:00,540
+unidimensional de vinte e cinco números não cinco por cinco.
+
+76
+00:05:00,540 --> 00:05:07,290
+Você pode realmente confirmar isso, colocando o formato aqui e apenas diz 25 em vez de cinco por cinco.
+
+77
+00:05:07,290 --> 00:05:07,940
+Tudo bem.
+
+78
+00:05:08,010 --> 00:05:13,020
+Agora queríamos criar a seguinte matriz e prestar atenção ao que esta matriz está realmente fazendo.
+
+79
+00:05:13,800 --> 00:05:15,650
+É uma matriz bidimensional.
+
+80
+00:05:15,720 --> 00:05:18,590
+Note que podemos contar isso dos dois conjuntos de suportes aqui.
+
+81
+00:05:19,110 --> 00:05:22,020
+E também vai de zero ponto zero um.
+
+82
+00:05:22,170 --> 00:05:29,550
+E parece que ele vai em um tamanho de passo de zero ponto zero ou um Além de todo o caminho para um agora,
+
+83
+00:05:29,880 --> 00:05:31,710
+existem duas maneiras de fazer isso.
+
+84
+00:05:31,710 --> 00:05:36,120
+Em primeiro lugar, abordarei o caminho que é mostrado na solução, que pode ser a maneira mais fácil
+
+85
+00:05:36,120 --> 00:05:40,010
+de pensar sobre isso e então vou mostrar a maneira mais inteligente de usar esse espaço.
+
+86
+00:05:40,020 --> 00:05:48,990
+Então, uma maneira de fazer isso é dizer que Range vai de 1 a 101 e que primeiro te leva o Saray, que ainda
+
+87
+00:05:48,990 --> 00:05:50,000
+não estamos lá.
+
+88
+00:05:50,010 --> 00:05:55,960
+O que queremos e vamos seguir em frente e fazer é remodelar isso para ser uma matriz de 10 por 10.
+
+89
+00:05:56,400 --> 00:05:59,750
+E então estamos quase lá, mas notamos que vamos de 1 a 100.
+
+90
+00:05:59,790 --> 00:06:02,820
+Então, se eu posso simplesmente fazer é dividir isso por 100.
+
+91
+00:06:03,630 --> 00:06:07,960
+E isso retorna a matriz Eu tinha os suportes duplos uma matriz de 10 por 10.
+
+92
+00:06:08,160 --> 00:06:15,170
+E vai de zero ponto zero ou um em tamanho de passo do ponto ou um Além disso, até 1.
+
+93
+00:06:15,240 --> 00:06:16,980
+Essa é uma maneira de adicionar isso.
+
+94
+00:06:17,250 --> 00:06:19,370
+E é assim que é mostrado no livro de soluções.
+
+95
+00:06:19,380 --> 00:06:23,640
+realmente agradável de fazer isso e, espero, é assim que você estava pensando sobre
+
+96
+00:06:23,640 --> 00:06:30,120
+isso, mas você também pode fazer no espaço e depois anotar de onde você começou e de onde você estava parando.
+
+97
+00:06:30,120 --> 00:06:30,990
+Mas outra maneira
+
+98
+00:06:31,020 --> 00:06:35,870
+Então estamos começando em 0. 01 indo até 1.
+
+99
+00:06:36,030 --> 00:06:45,570
+E estes são realmente espaçados linearmente, então eu posso dizer 100 e eu vou remodelar isso como uma matriz de 10 por 10 e isso retorna
+
+100
+00:06:46,190 --> 00:06:49,260
+exatamente o mesmo resultado que eu tenho aqui acima.
+
+101
+00:06:49,530 --> 00:06:52,470
+Então, essas duas respostas estão bem.
+
+102
+00:06:52,500 --> 00:06:56,730
+Há algumas outras maneiras de fazer isso, mas estes são provavelmente os dois mais lógicos
+
+103
+00:06:56,730 --> 00:06:57,320
+e diretos.
+
+104
+00:06:57,330 --> 00:07:01,170
+De qualquer maneira é totalmente bom e, espero, você é capaz de descobrir um desses.
+
+105
+00:07:01,320 --> 00:07:06,600
+Esta é uma pergunta um pouco complicada um pouco de uma questão complicada, uma vez que não existe um padrão claro aqui, a
+
+106
+00:07:06,600 --> 00:07:10,710
+menos que você esteja realmente prestando atenção que vai a ponto zero. Além disso, você também deve prestar
+
+107
+00:07:10,710 --> 00:07:15,390
+atenção que era um conjunto duplo de colchetes, o que significa que era para eles 10 adicionais por 10.
+
+108
+00:07:15,390 --> 00:07:15,870
+Tudo bem.
+
+109
+00:07:15,990 --> 00:07:17,970
+Vamos continuar e continuar.
+
+110
+00:07:17,970 --> 00:07:22,710
+Agora, queríamos criar uma matriz de 20 pontos espaçados linearmente entre 0 e 1.
+
+111
+00:07:22,740 --> 00:07:30,640
+Tudo o que você precisa fazer é dizer N. P. Lynn espaço e então vamos entre 0 e 1.
+
+112
+00:07:30,960 --> 00:07:37,170
+dizer que zero venha um 1 e, em seguida, 20 pontos espaçados linearmente e isso me faz a resposta exata que eu tenho lá.
+
+113
+00:07:37,170 --> 00:07:39,030
+Então eu posso seguir em frente e
+
+114
+00:07:39,060 --> 00:07:40,020
+Tudo bem.
+
+115
+00:07:40,020 --> 00:07:45,090
+Agora, vamos ter algumas matrizes sexualmente apenas uma matriz Matt e o que queremos fazer é
+
+116
+00:07:45,090 --> 00:07:47,410
+pedir para replicar as saídas resultantes da matriz.
+
+117
+00:07:47,700 --> 00:07:51,390
+E novamente, você precisava escrever seu código aqui caso contrário, você teria substituído o resultado
+
+118
+00:07:51,390 --> 00:07:52,470
+que você deveria copiar.
+
+119
+00:07:52,470 --> 00:07:55,050
+Então vamos continuar e começar a fazer isso.
+
+120
+00:07:55,080 --> 00:08:02,540
+Em primeiro lugar, tivemos que pegar esta seção da matriz 12 a 15 e depois 12 17:22 linhas.
+
+121
+00:08:02,550 --> 00:08:06,260
+Então, como nós realmente vamos fazer isso, vamos esclarecer isso.
+
+122
+00:08:06,390 --> 00:08:08,480
+A primeira coisa que eu quero fazer é chamar Matt.
+
+123
+00:08:09,120 --> 00:08:13,880
+E então eu vou colocar uma vírgula aqui e vamos dar uma olhada nas linhas que você deseja.
+
+124
+00:08:14,190 --> 00:08:18,680
+Então as linhas que eu quero começam em 12 17 22.
+
+125
+00:08:18,780 --> 00:08:28,530
+Então, parece que essas últimas três linhas significam se eu olho para o índice 0 1 2 Eu quero linhas e tudo
+
+126
+00:08:28,530 --> 00:08:29,620
+depois disso.
+
+127
+00:08:29,670 --> 00:08:37,830
+Então, para o Colón, essas são minhas linhas e vamos entrar e confirmamos isso apenas colocando dois pontos aqui para
+
+128
+00:08:37,860 --> 00:08:40,170
+selecionar todas as colunas nessas linhas.
+
+129
+00:08:40,460 --> 00:08:43,070
+Whoops teve que executar a célula.
+
+130
+00:08:43,660 --> 00:08:44,190
+ESTÁ BEM.
+
+131
+00:08:44,460 --> 00:08:45,070
+Então eu corri isso.
+
+132
+00:08:45,070 --> 00:08:46,200
+Então tudo bem.
+
+133
+00:08:46,230 --> 00:08:47,910
+E agora estou selecionando tudo.
+
+134
+00:08:47,910 --> 00:08:52,910
+Todas as colunas dessas linhas e parece que estamos bem até agora, na verdade, podemos ver o subconjunto aqui.
+
+135
+00:08:52,980 --> 00:08:54,510
+Então eu sou bom nas fileiras.
+
+136
+00:08:54,510 --> 00:08:59,820
+caso, eu posso ver que eu quero agarrar do índice 1 da coluna 1 e em diante.
+
+137
+00:08:59,820 --> 00:09:03,190
+A seguir, na verdade, eu quero pegar as colunas corretas neste
+
+138
+00:09:03,330 --> 00:09:07,850
+Então eu realmente vou dizer um cólon e correr isso e essa é a minha resposta.
+
+139
+00:09:07,850 --> 00:09:09,430
+Eu posso ver que ele combina.
+
+140
+00:09:09,510 --> 00:09:15,180
+Então, para quebrar isso, mais uma vez eu vou do índice de linha para e tudo depois disso e, em
+
+141
+00:09:15,180 --> 00:09:18,120
+seguida, coluna índice um e tudo passou que eu passar.
+
+142
+00:09:18,120 --> 00:09:20,550
+Neste tipo de notação aqui.
+
+143
+00:09:20,580 --> 00:09:21,530
+Tudo bem, vá em frente.
+
+144
+00:09:21,540 --> 00:09:23,340
+Passar para o próximo.
+
+145
+00:09:23,430 --> 00:09:29,490
+O próximo é que eu queria pegar apenas o número 20, então, se eu olhar para Matt novamente, eu só quero agarrar
+
+146
+00:09:29,490 --> 00:09:30,300
+o número 20.
+
+147
+00:09:30,310 --> 00:09:32,300
+Vamos continuar e descobrir onde é isso.
+
+148
+00:09:32,330 --> 00:09:36,030
+Está aqui neste caso.
+
+149
+00:09:36,030 --> 00:09:40,290
+Significado se eu tirei a linha primeira coisa longa 0 1 2 3.
+
+150
+00:09:40,320 --> 00:09:41,800
+Então está na linha 3.
+
+151
+00:09:41,960 --> 00:09:43,990
+Ou vá em frente e digite isso.
+
+152
+00:09:44,460 --> 00:09:51,100
+E então é todo o caminho na última coluna que é 0 1 2 3 4 6.
+
+153
+00:09:51,120 --> 00:09:52,890
+A indexação começa em zero.
+
+154
+00:09:52,890 --> 00:09:58,310
+Então, se eu disser Matt 3, venha antes que me torne perfeito 20.
+
+155
+00:09:58,430 --> 00:10:05,370
+Tudo bem na próxima, eu queria agarrar isso. 2 7 12 pode seguir em frente e ver como é a minha matemática.
+
+156
+00:10:05,370 --> 00:10:07,510
+Aqui está o meu mapa e eu quero pegar dois 7.
+
+157
+00:10:07,530 --> 00:10:09,060
+Bem, vamos em frente novamente.
+
+158
+00:10:09,060 --> 00:10:12,860
+Desligue isso por linhas em relação às colunas 2 7 12.
+
+159
+00:10:12,870 --> 00:10:14,380
+Parece que está aqui.
+
+160
+00:10:14,400 --> 00:10:21,840
+então eu só quero embrulhar 2 7 e 12, o que significa que quero aderir e não incluir o índice número três.
+
+161
+00:10:22,200 --> 00:10:26,120
+Então eu quero agarrar tudo até um certo número de linhas direito,
+
+162
+00:10:26,130 --> 00:10:28,990
+Então, isso é 0 1 2.
+
+163
+00:10:29,190 --> 00:10:32,580
+Então vou seguir em frente e dizer tudo até três.
+
+164
+00:10:32,610 --> 00:10:39,850
+Vamos continuar confirmando que apenas colocando dois pontos aqui e aqui é para 7 12, então eu tenho as
+
+165
+00:10:39,850 --> 00:10:40,640
+linhas corretas.
+
+166
+00:10:40,660 --> 00:10:47,590
+Agora, vamos apenas pegar a coluna correta e, neste caso, há algo importante para saber sobre
+
+167
+00:10:47,590 --> 00:10:48,460
+o resultado.
+
+168
+00:10:48,460 --> 00:10:56,380
+um três por um e, portanto, há três linhas por uma coluna e isso significa que eu apenas coloco o número da coluna.
+
+169
+00:10:57,340 --> 00:11:01,290
+A saída aqui tem dois parênteses, o que significa que isso é
+
+170
+00:11:01,600 --> 00:11:08,680
+Então, se eu estivesse apenas para colocar, por exemplo, vamos ver 0 1 eu chegaria a 7 12 fora.
+
+171
+00:11:08,860 --> 00:11:09,970
+Mas observe o formato aqui.
+
+172
+00:11:09,960 --> 00:11:12,120
+Esta é apenas uma matriz unidimensional.
+
+173
+00:11:12,220 --> 00:11:15,440
+E neste caso é a saída que eu quero dois conjuntos de suportes.
+
+174
+00:11:15,520 --> 00:11:20,100
+Portanto, a única maneira de fazer isso é realmente indexando usando notação de fatia.
+
+175
+00:11:20,200 --> 00:11:24,000
+Então eu tenho que dizer tudo de um até, mas não incluindo dois.
+
+176
+00:11:24,070 --> 00:11:28,270
+no início, mas é assim que eu vou seguir e executar isso, eu posso agarrá-lo no mesmo formato.
+
+177
+00:11:28,270 --> 00:11:29,980
+E isso pode parecer um pouco estranho
+
+178
+00:11:29,980 --> 00:11:35,920
+Agora eu sei que não é muito intuitivo, mas essa é a forma como um árbitro funciona na medida em
+
+179
+00:11:35,950 --> 00:11:40,310
+que agarra esse pedaço de coluna na mesma forma deste suporte de duas dimensões.
+
+180
+00:11:40,330 --> 00:11:43,400
+Caso contrário, você irá obtê-lo como uma matriz unidimensional.
+
+181
+00:11:43,420 --> 00:11:49,810
+Então, novamente, apenas para esclarecer se eu apenas coloco um, eu recebo os mesmos números, mas eu só o consigo como
+
+182
+00:11:49,810 --> 00:11:50,590
+uma matriz unidimensional.
+
+183
+00:11:50,620 --> 00:11:52,660
+Eu quero esses dois suportes reais aqui.
+
+184
+00:11:52,660 --> 00:11:59,890
+Eu tenho que especificar para pegar entre essas duas colunas, o que novamente é realmente apenas uma coluna.
+
+185
+00:11:59,880 --> 00:12:02,480
+Então eu sei que é um pouco estranho e não intuitivo.
+
+186
+00:12:02,740 --> 00:12:07,160
+E na verdade, muitas vezes, na verdade, estaremos agarrando todos os valores.
+
+187
+00:12:07,180 --> 00:12:12,400
+Como tal, não estaremos realmente fazendo esse tipo de mesma notação de indexação, mas apenas tenha em mente que essa é
+
+188
+00:12:12,400 --> 00:12:18,070
+a forma como a sintaxe de obras de pi é um pouco estranha, mas espero que não tenha sido uma pergunta muito difícil
+
+189
+00:12:18,070 --> 00:12:18,670
+para você.
+
+190
+00:12:18,730 --> 00:12:21,720
+E você pode brincar com isso um pouco mais para descobrir isso.
+
+191
+00:12:22,660 --> 00:12:25,840
+Mas, novamente, não suor demais se você não conseguiu resolver aquele.
+
+192
+00:12:25,840 --> 00:12:28,730
+No que diz respeito a obtenção no mesmo formato.
+
+193
+00:12:28,980 --> 00:12:32,770
+Tudo bem, só temos dois deixados aqui até agarrar coisas.
+
+194
+00:12:32,980 --> 00:12:35,650
+Deixe-me seguir em frente e correr Matt, para que possamos ver o que parece.
+
+195
+00:12:35,650 --> 00:12:45,870
+Novamente os lábios 80 e parece que eu só quero a última linha aqui 21 22 23 24 25.
+
+196
+00:12:46,290 --> 00:12:46,710
+ESTÁ BEM.
+
+197
+00:12:46,780 --> 00:12:48,280
+Então, existem algumas maneiras de fazer isso.
+
+198
+00:12:48,310 --> 00:12:55,030
+Provavelmente, a maneira mais simples é simplesmente dizer que ir no índice para fila e retornar tudo.
+
+199
+00:12:55,660 --> 00:12:58,630
+E nós temos 21 22 23 24 25.
+
+200
+00:12:58,620 --> 00:13:04,130
+E corresponde à outra maneira de fazer isso se você souber que é a última linha da matriz.
+
+201
+00:13:04,270 --> 00:13:08,140
+Você também pode fazer indexação negativa e isso realmente retornará exatamente o mesmo.
+
+202
+00:13:08,130 --> 00:13:11,000
+No entanto, eu recomendaria que você use para aqui.
+
+203
+00:13:11,020 --> 00:13:13,640
+Então, é um pouco mais claro.
+
+204
+00:13:13,660 --> 00:13:14,030
+Tudo bem.
+
+205
+00:13:14,170 --> 00:13:17,020
+Mais uma vez, venha e mostre Matt.
+
+206
+00:13:17,020 --> 00:13:23,080
+Aqui temos Matt e parece que queremos pegar todas as colunas das duas últimas filas.
+
+207
+00:13:23,230 --> 00:13:26,220
+Mas, novamente, note que algo aqui tem um duplo colchete.
+
+208
+00:13:26,260 --> 00:13:35,560
+que eu quero ir do índice de linha três a cinco e depois pegar todas as colunas e depois retornar os mesmos valores aqui.
+
+209
+00:13:35,620 --> 00:13:39,830
+Então, eu quero usar essa notação de fatia, o que significa
+
+210
+00:13:40,090 --> 00:13:43,270
+Mais uma vez, isso foi um pouco mais complicado que o último que acabamos de ver.
+
+211
+00:13:43,420 --> 00:13:47,200
+Mas espero que a resposta tenha sentido para você agora que você já viu.
+
+212
+00:13:47,200 --> 00:13:50,290
+Tudo bem, vamos seguir em frente para fazer o seguinte.
+
+213
+00:13:50,350 --> 00:13:55,900
+Quando você vai colocar uma nova célula aqui para que possamos ver Matt, queremos fazer é obter a soma de todos
+
+214
+00:13:55,890 --> 00:13:56,950
+os valores em Max.
+
+215
+00:13:56,950 --> 00:13:58,240
+Bem, há duas maneiras de fazer isso.
+
+216
+00:13:58,240 --> 00:14:07,780
+e alguns e depois passar por Matt ou que você também pode fazer é dizer soma Matt e você obtém a mesma resposta.
+
+217
+00:14:10,570 --> 00:14:11,710
+Você pode dizer
+
+218
+00:14:11,740 --> 00:14:13,420
+Qualquer um está bom.
+
+219
+00:14:13,420 --> 00:14:15,790
+Em seguida, você quer assumir o desvio padrão.
+
+220
+00:14:16,090 --> 00:14:22,180
+Então, espero que você seja capaz de descobrir isso usando a função universal e p s t d e
+
+221
+00:14:22,180 --> 00:14:23,130
+depois passam Matt.
+
+222
+00:14:23,200 --> 00:14:27,460
+Agora eu teria conseguido isso e você poderia fazer referência ao link nas notas para
+
+223
+00:14:27,790 --> 00:14:34,020
+as funções universais ou é realmente comum o suficiente para que você pudesse dizer e que um CD ou me desculpe Mate
+
+224
+00:14:34,240 --> 00:14:36,390
+mate que Assaidi e tudo funcionaria também.
+
+225
+00:14:36,580 --> 00:14:41,530
+OK, finalmente, este pouco complicado, no final, obter a soma de todas as colunas no tapete para
+
+226
+00:14:41,530 --> 00:14:45,260
+fazer o que você tinha a fazer é dizer que Matt conseguiu alguns.
+
+227
+00:14:45,540 --> 00:14:49,750
+E ele precisava especificar um eixo que você poderia ter visto se você mudar essa guia aqui.
+
+228
+00:14:49,960 --> 00:14:53,440
+Ele retornará a soma de todos os elementos da matriz sobre o acesso fornecido.
+
+229
+00:14:53,560 --> 00:14:58,780
+Neste caso, você deve dizer que o acesso é igual a zero.
+
+230
+00:14:59,230 --> 00:15:01,430
+E é assim que funciona.
+
+231
+00:15:01,620 --> 00:15:05,780
+tínhamos colocado o código de acesso, mas não se preocupe muito se não o
+
+232
+00:15:05,780 --> 00:15:11,860
+obtiver, porque teremos muito mais prática até especificar o Access 0 ou 1 quando nós Comece a trabalhar na biblioteca do panda.
+
+233
+00:15:11,860 --> 00:15:14,310
+Esse último foi um pouco complicado desde que
+
+234
+00:15:14,320 --> 00:15:14,890
+Tudo bem.
+
+235
+00:15:15,070 --> 00:15:16,440
+Espero que não tenha sido tão ruim para você.
+
+236
+00:15:16,450 --> 00:15:20,830
+Mais uma vez, você pode verificar o caderno para todas as respostas e todo o código que você acabou de passar
+
+237
+00:15:20,980 --> 00:15:23,370
+e sempre sinta-se à vontade para publicar nos fóruns Q &amp; A.
+
+238
+00:15:23,380 --> 00:15:28,340
+Se você tiver alguma dúvida sobre qualquer coisa que eu fiz, ficarei feliz em lhe dar uma explicação adicional.
+
+239
+00:15:28,720 --> 00:15:31,370
+Tudo bem, obrigado a todos e eu vou te ver na próxima palestra

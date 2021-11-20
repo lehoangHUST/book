@@ -1,0 +1,855 @@
+1
+00:00:06,180 --> 00:00:11,970
+Halo semua dan selamat datang di kuliah array PI dan kuliah ini akan mempelajari berbagai cara
+
+2
+00:00:11,970 --> 00:00:16,690
+Anda dapat membuat tingkat lebih tinggi menggunakan Python dan kemudian beberapa perpustakaan PI.
+
+3
+00:00:16,920 --> 00:00:20,460
+Ayo maju dan lompat ke not Jupiter untuk memulai.
+
+4
+00:00:20,490 --> 00:00:20,760
+Baiklah.
+
+5
+00:00:20,760 --> 00:00:27,000
+Di sini kita berada di array notebook Jupiter adalah cara utama kita akan menggunakan perpustakaan nama PI
+
+6
+00:00:27,030 --> 00:00:32,910
+sepanjang kursus dan saya res tinggi pada dasarnya datang dalam dua rasa yang datang sebagai vektor
+
+7
+00:00:32,910 --> 00:00:37,450
+satu dimensi atau matriks dua dimensi tetapi mereka bisa keduanya disebut array.
+
+8
+00:00:37,450 --> 00:00:44,020
+Jika ada satu atau dua mari kita keluar dan menunjukkan bagaimana kita dapat membuat wasit baru dari objek
+
+9
+00:00:44,020 --> 00:00:48,730
+Python seperti daftar saya akan pergi dan membuat objek ke daftar saya.
+
+10
+00:00:48,980 --> 00:00:50,840
+Satu dua tiga.
+
+11
+00:00:51,210 --> 00:00:54,180
+Dan jika saya maju dan hanya menampilkan daftar itu.
+
+12
+00:00:54,350 --> 00:00:58,450
+Perhatikan saya keluar satu dua tiga dan itu hanya daftar python.
+
+13
+00:00:58,650 --> 00:01:06,020
+Saya akan pergi ke depan dan mengatakan pi impor sebagai P dan kemudian saya bisa memanggil dan pede array.
+
+14
+00:01:06,290 --> 00:01:10,920
+Dan sekarang saya bisa melemparkan daftar itu sebagai array.
+
+15
+00:01:11,290 --> 00:01:15,900
+Dan perhatikan saya mendapatkan array kembali sebagai wadah untuk objek daftar itu.
+
+16
+00:01:15,930 --> 00:01:20,670
+Dan kemudian saya benar-benar dapat menetapkan ini dan kemudian hanya memanggil array dari itu.
+
+17
+00:01:20,790 --> 00:01:24,930
+Jadi saya bisa memasukkan daftar Python normal ke dalam array.
+
+18
+00:01:24,990 --> 00:01:31,110
+Sekarang akan mengembalikan array satu dimensi jika saya ingin mendapatkan array dua dimensi atau matriks.
+
+19
+00:01:31,170 --> 00:01:33,390
+Saya dapat memberikan daftar daftar.
+
+20
+00:01:33,420 --> 00:01:45,180
+Jadi misalnya saya dapat mengatakan matematika garis bawah saya sama dengan daftar tiga daftar sehingga satu dua tiga
+
+21
+00:01:45,180 --> 00:01:52,450
+empat lima enam menyingkirkan koma ekstra dan kemudian 7 8 9.
+
+22
+00:01:53,220 --> 00:02:03,570
+Jadi perhatikan saya mendapatkan kembali daftar daftar dan kemudian jika saya melemparkannya ke array saya akan kembali array dua dimensi dan itu dicatat baik
+
+23
+00:02:03,570 --> 00:02:09,930
+dengan cara itu disajikan sebagai output tetapi juga yang lebih penting sebagai jumlah kurung
+
+24
+00:02:09,930 --> 00:02:14,340
+yang ditunjukkan pada penutup. dan membuka ujung array ini.
+
+25
+00:02:14,580 --> 00:02:20,640
+Saya memiliki dua set tanda kurung yang akan menunjukkan bahwa Z ke array yang disebutkan memiliki tiga
+
+26
+00:02:20,640 --> 00:02:27,260
+baris dan tiga kolom dan itulah bagaimana Anda dapat membuang daftar Python normal atau daftar daftar ke kisaran wasit.
+
+27
+00:02:27,600 --> 00:02:33,030
+Namun biasanya Anda mungkin akan menggunakan beberapa metode pembuatan bawaan pie untuk benar-benar membuat array
+
+28
+00:02:33,060 --> 00:02:36,090
+jauh lebih cepat dan jauh lebih sederhana.
+
+29
+00:02:36,090 --> 00:02:40,520
+Mari kita lanjutkan dan melalui beberapa cara paling umum untuk melakukan itu.
+
+30
+00:02:40,560 --> 00:02:46,740
+Cara yang paling umum mungkin akan menciptakan tingkat yang lebih tinggi adalah menggunakan arr. dan ini sangat mirip
+
+31
+00:02:46,740 --> 00:02:49,930
+dengan fungsi jangkauan bawaan Python sendiri.
+
+32
+00:02:49,950 --> 00:02:56,370
+Anda akan pergi ke depan dan berkata N. P. atur lalu pasan start dan stop.
+
+33
+00:02:56,460 --> 00:03:02,490
+Jadi perhatikan Anda memiliki mulai berhenti dan kemudian ukuran langkah adalah argumen ketiga dan mengembalikan nilai spasi yang
+
+34
+00:03:02,490 --> 00:03:04,860
+sama dalam interval yang diberikan ini.
+
+35
+00:03:04,860 --> 00:03:14,040
+Jadi jika saya hanya mengatakan dari 0 hingga 10 ingat seperti pada pengindeksan rentang Python dimulai dari nol.
+
+36
+00:03:14,070 --> 00:03:16,990
+Ini akan naik tetapi tidak termasuk ke 10.
+
+37
+00:03:17,430 --> 00:03:20,660
+Saya akan mendapatkan kembali array dari 0 hingga 9.
+
+38
+00:03:20,760 --> 00:03:24,840
+Jadi saya mulai dari 0 dan saya lanjutkan tetapi tidak termasuk 10.
+
+39
+00:03:25,020 --> 00:03:29,480
+Jadi saya mendapatkan 10 digit kembali 0 1 2 3 4 5 6.
+
+40
+00:03:29,890 --> 00:03:33,900
+Pada dasarnya bekerja sama seperti fungsi jangkauan Python sendiri.
+
+41
+00:03:33,960 --> 00:03:37,990
+Jadi saya ingin pergi dari nol sampai 10 setelah Z.
+
+42
+00:03:38,190 --> 00:03:43,010
+Saya harus mengatakan nol koma 11 dan itulah yang saya dapatkan kembali.
+
+43
+00:03:43,380 --> 00:03:46,930
+Dan akhirnya saya bisa menambahkan argumen ketiga ukuran langkah.
+
+44
+00:03:46,980 --> 00:03:51,820
+Jadi jika saya semua angka genap dari 0 hingga 10 saya bisa mengatakan nol datang 11.
+
+45
+00:03:51,960 --> 00:03:58,930
+Dan kemudian pada langkah ukuran dua sehingga saya akan melompat dalam langkah 2 0 2 4 6 8 10.
+
+46
+00:03:59,070 --> 00:04:05,580
+Itu berarti suatu rentang akan menjadi salah satu fungsi yang paling berguna untuk menghasilkan array dengan cepat menggunakan
+
+47
+00:04:05,580 --> 00:04:06,590
+pi mereka.
+
+48
+00:04:06,960 --> 00:04:12,330
+Jika Anda ingin tipe array tertentu, ada fungsi lain di non-pilot yang dapat membantu kami melakukannya.
+
+49
+00:04:12,330 --> 00:04:19,970
+Sebagai contoh jika Anda ingin menghasilkan array dari semua nol kita dapat mengatakan nol P-doc dan Anda
+
+50
+00:04:19,970 --> 00:04:22,050
+dapat mengirimkan satu digit.
+
+51
+00:04:22,050 --> 00:04:30,780
+Jadi Anda mendapatkan vektor satu dimensi atau Anda bisa mengatakan N. P. angka nol dan lulus tuple dari dimensi
+
+52
+00:04:30,780 --> 00:04:36,840
+yang Anda inginkan angka pertama akan mewakili jumlah baris dan angka kedua dalam tupel
+
+53
+00:04:36,840 --> 00:04:39,220
+akan mewakili jumlah kolom.
+
+54
+00:04:39,240 --> 00:04:48,770
+Jadi misalnya saya ingin baris dengan tiga kolom saya melewati tuple untuk datang tiga dan saya kembali ke Rose
+
+55
+00:04:48,770 --> 00:04:53,330
+dengan tiga kolom dan ini dicatat oleh kurung
+
+56
+00:04:53,360 --> 00:04:59,620
+Baiklah jika saya ingin kenaikan yang murni saya bisa mengatakan itu.
+
+57
+00:04:59,690 --> 00:05:07,580
+Dan juga saya bisa melewatkan bilangan tunggal atau array satu dimensi atau tuple dari mereka menyebutkan untuk
+
+58
+00:05:08,180 --> 00:05:16,370
+matriks dua dimensi yang satu dan nol di fungsi built-in lain yang sangat berguna adalah ruang lensa
+
+59
+00:05:16,370 --> 00:05:21,500
+dan ruang mengembalikan angka spasi secara merata pada interval tertentu.
+
+60
+00:05:21,750 --> 00:05:23,960
+Sangat penting untuk tidak membingungkan Lewan.
+
+61
+00:05:23,990 --> 00:05:31,490
+Aturlah Anda, kami dapat melihat bahwa rentang pada dasarnya mengembalikan bilangan bulat dari awal dan berhenti dan ukuran langkah
+
+62
+00:05:31,490 --> 00:05:32,600
+yang diberikan.
+
+63
+00:05:32,720 --> 00:05:37,580
+Apa yang akan dilakukan ruang Lin adalah itu sebenarnya akan mengambil argumen ketiga dari
+
+64
+00:05:37,580 --> 00:05:45,140
+jumlah poin yang Anda ingin saya tunjukkan kepada Anda apa yang saya maksudkan dengan itu saya bisa mengatakan ruang P Gotland dan
+
+65
+00:05:45,140 --> 00:05:50,300
+saya mendapat umpan dan memulai berhenti dan ada argumen ketiga yang akan saya berikan angka.
+
+66
+00:05:50,300 --> 00:06:00,590
+Jadi katakanlah saya memiliki awal nol dan berhenti lima dan saya ingin mendapatkan 10 titik yang berjarak sama secara merata antara
+
+67
+00:06:00,590 --> 00:06:02,510
+nol hingga lima.
+
+68
+00:06:02,510 --> 00:06:09,650
+Saya bisa menyampaikan argumen ketiga 10 dan ini mengembalikan kembali vektor satu dimensi yang dicatat oleh tanda
+
+69
+00:06:09,650 --> 00:06:15,490
+kurung di sini, dari sepuluh titik yang berjarak sama dari nol menjadi lima.
+
+70
+00:06:15,490 --> 00:06:18,140
+Dan saya dapat mengubah argumen ketiga ini ke nomor apa pun yang saya inginkan.
+
+71
+00:06:18,140 --> 00:06:24,140
+Jadi, jika saya ingin 100 titik dengan jarak yang sama dari nol menjadi lima, saya bisa meneruskannya dan mengembalikan
+
+72
+00:06:24,140 --> 00:06:26,470
+array satu dimensi yang jauh lebih besar.
+
+73
+00:06:26,540 --> 00:06:30,800
+Dan perlu diingat meskipun sepertinya ini adalah untuk mereka sejauh cara itu dicetak Anda dapat mengatakan
+
+74
+00:06:31,040 --> 00:06:35,870
+itu satu dimensi dengan fakta bahwa hanya ada satu braket di sini di depan array ketika Anda berurusan
+
+75
+00:06:36,460 --> 00:06:40,220
+dengan dua dimensi Anda akan melihat bahwa Anda memiliki dua set tanda kurung.
+
+76
+00:06:40,220 --> 00:06:42,910
+Saat membuka atau menutup di ujung.
+
+77
+00:06:42,980 --> 00:06:46,140
+Tiga yang saya sebutkan akan memiliki tiga kurung dll.
+
+78
+00:06:46,310 --> 00:06:47,120
+Baiklah.
+
+79
+00:06:47,120 --> 00:06:48,320
+Jadi saat itulah ruang.
+
+80
+00:06:48,320 --> 00:06:54,980
+Sekali lagi jangan bingung ruang dengan ruang tata letak akan mengambil dalam argumen ketiga karena jumlah poin yang Anda
+
+81
+00:06:54,980 --> 00:07:01,430
+ingin mengatur akan mengambil dalam argumen itu sebagai ukuran langkah yang Anda inginkan mari kita pergi ke depan dan
+
+82
+00:07:01,430 --> 00:07:04,960
+menunjukkan bagaimana Anda dapat membuat matriks identitas menggunakan pi.
+
+83
+00:07:05,360 --> 00:07:08,680
+Kita bisa mengatakan n p e y e.
+
+84
+00:07:09,350 --> 00:07:13,570
+Dan kemudian Anda hanya pasan satu digit dalam matriks identitas.
+
+85
+00:07:13,580 --> 00:07:17,750
+Jika Anda tidak terbiasa adalah matriks yang berguna ketika Anda berurusan dengan masalah aljabar linier.
+
+86
+00:07:17,900 --> 00:07:23,040
+Dan itu pada dasarnya hanya matriks persegi dua dimensi yang berarti
+
+87
+00:07:23,040 --> 00:07:30,320
+jumlah baris sama dengan jumlah kolom dan Anda memiliki diagonal yang semuanya nol dan itulah sebabnya
+
+88
+00:07:30,320 --> 00:07:36,440
+hanya diperlukan satu digit sebagai argumen karena dikatakan bahwa matriks harus persegi sebagai keluaran
+
+89
+00:07:36,650 --> 00:07:38,340
+dan P i.
+
+90
+00:07:39,170 --> 00:07:45,320
+Baiklah, sekarang pi juga memiliki banyak cara untuk membuat array angka acak.
+
+91
+00:07:45,380 --> 00:07:49,100
+Dan kita akan sering menggunakannya selama kursus, jadi mari kita lanjutkan dan membahas beberapa cara
+
+92
+00:07:49,100 --> 00:07:49,690
+untuk melakukannya.
+
+93
+00:07:50,090 --> 00:07:58,040
+Apa yang akan Anda lakukan adalah menelepon N. P. titik acak dan kemudian jalankan metode.
+
+94
+00:07:58,100 --> 00:08:01,520
+Anda bisa tab Anda akan melihat bahwa sebenarnya ada sedikit metode.
+
+95
+00:08:01,580 --> 00:08:05,130
+Jadi kita akan masuk dan menunjukkan kepada Anda yang paling umum.
+
+96
+00:08:05,660 --> 00:08:09,080
+Yang pertama adalah Ran adalah a dan b.
+
+97
+00:08:09,590 --> 00:08:14,570
+Dan ini akan membuat array dari bentuk yang Anda berikan dan akan
+
+98
+00:08:14,630 --> 00:08:19,620
+mengisinya dengan sampel acak dari distribusi yang seragam lebih dari 0 hingga 1.
+
+99
+00:08:19,620 --> 00:08:24,950
+Dan itu berarti jika saya ingin hanya delapan array satu dimensi angka acak yang terdistribusi secara
+
+100
+00:08:24,950 --> 00:08:30,840
+merata dari 0 hingga 1, saya dapat memasukkan satu digit dan saya akan mendapatkan kembali array satu dimensi itu.
+
+101
+00:08:31,160 --> 00:08:34,760
+Saya ingin ini menjadi yang disebutkan.
+
+102
+00:08:35,030 --> 00:08:38,930
+Berbeda dengan fungsi sebelumnya yang Anda kerjakan alih-alih memberikan tuple.
+
+103
+00:08:38,950 --> 00:08:42,820
+Saya sebenarnya hanya akan melewatkan dimensi sebagai argumen terpisah.
+
+104
+00:08:42,860 --> 00:08:49,130
+Jadi itu berarti jika saya ingin lima dari lima matriks angka acak saya baru saja lulus dan 5 datang 5
+
+105
+00:08:49,130 --> 00:08:52,040
+bukannya tuple dan bekerja dengan perpustakaan acak ini.
+
+106
+00:08:52,400 --> 00:08:58,490
+Baiklah jika kita ingin mengembalikan sampel atau banyak sampel dari distribusi normal standar atau distribusi
+
+107
+00:08:58,490 --> 00:09:02,580
+Gaussian alih-alih menggunakan Ranz kita dapat menggunakan rand n.
+
+108
+00:09:03,030 --> 00:09:10,790
+Dan itu berarti saya dapat mengatakan P berpikir secara acak berpikir Ran's n dan ini akan mengembalikan angka bukan dari
+
+109
+00:09:10,790 --> 00:09:16,750
+distribusi yang seragam dari 0 ke 1 melainkan dari pusat distribusi normal standar sekitar nol.
+
+110
+00:09:17,060 --> 00:09:25,130
+Dan itu berarti saya dapat melanjutkan dan melewati dua dan saya mendapatkan dua angka acak dari distribusi normal standar.
+
+111
+00:09:25,670 --> 00:09:30,140
+Dan nanti kita akan melihat bahwa merencanakan ini tidak dalam kuliah ini tetapi juga mendapatkan visualisasi data.
+
+112
+00:09:30,560 --> 00:09:35,200
+Kami akan melanjutkan dan menunjukkan kepada Anda kurva distribusi normal yang bagus atau kurva distribusi Gaussian.
+
+113
+00:09:35,950 --> 00:09:40,580
+Dan lagi jika saya ingin ini menjadi dua dimensi saya hanya bisa lewat dalam dua dimensi.
+
+114
+00:09:40,670 --> 00:09:43,540
+Jadi untuk empat empat saya katakan empat datang empat.
+
+115
+00:09:43,970 --> 00:09:49,070
+Dan tidak saya tidak lulus tuple di sini saya hanya lulus di setiap kali disebutkan sebagai argumen
+
+116
+00:09:49,070 --> 00:09:57,020
+terpisah dan saya bisa melihat dengan set dua kurung adalah matriks dua dimensi sebagai output dan metode acak akhir untuk menciptakan sebuah array kita ' yang akan Anda
+
+117
+00:09:57,200 --> 00:10:02,990
+pelajari adalah Rand int dan yang mengembalikan bilangan bulat acak dari angka rendah ke angka tinggi atau maju terus dan
+
+118
+00:10:03,000 --> 00:10:06,140
+menunjukkan kepada Anda apa yang dapat kami lakukan untuk itu.
+
+119
+00:10:06,140 --> 00:10:12,310
+Anda akan pergi ke depan dan mengatakan bahwa assin acak Rand I. SEBUAH. kamu akan pasan.
+
+120
+00:10:12,360 --> 00:10:17,810
+Saya pergi ke tab shift di sini rendah tinggi dan kemudian ukuran sebenarnya yang Anda inginkan.
+
+121
+00:10:17,810 --> 00:10:26,870
+Jadi misalnya jika Anda hanya mengatakan 1 hingga 100 Anda akan mendapatkan bilangan bulat acak antara 1 dan 100 dan yang rendah sudah
+
+122
+00:10:26,930 --> 00:10:27,700
+termasuk.
+
+123
+00:10:27,750 --> 00:10:34,570
+Dan makna eksklusif x tinggi seseorang memiliki peluang untuk dipilih tetapi 100 tidak.
+
+124
+00:10:35,540 --> 00:10:40,410
+Dan jika Anda menginginkan sejumlah bilangan bulat acak, Anda dapat meneruskannya sebagai argumen ketiga.
+
+125
+00:10:40,400 --> 00:10:43,770
+Jadi dari bilangan bulat acak dari 1 hingga 100.
+
+126
+00:10:43,790 --> 00:10:45,160
+Tetapi tidak termasuk 100.
+
+127
+00:10:45,440 --> 00:10:50,930
+Saya hanya bisa lulus dan 10 di sana dan ada 10 bilangan bulat acak termasuk yang rendah di
+
+128
+00:10:50,930 --> 00:10:51,920
+eksklusif di ujung.
+
+129
+00:10:52,200 --> 00:10:52,820
+BAIK.
+
+130
+00:10:53,100 --> 00:10:59,350
+Mari kita pergi dan membahas hanya beberapa atribut dan metode array yang berguna untuk melakukan ini.
+
+131
+00:10:59,370 --> 00:11:05,450
+Saya akan pergi ke depan dan membuat dua objek array baru kita masuk dan menghapus ini dan menghapus sel-sel ini.
+
+132
+00:11:07,830 --> 00:11:08,630
+Baiklah.
+
+133
+00:11:08,630 --> 00:11:16,330
+Saya akan mengatakan variabel r dan saya akan mengatakan ini sama dengan kisaran murni 25.
+
+134
+00:11:16,380 --> 00:11:22,220
+Jadi jika saya memeriksa seperti apa tampilan A-R di sini adalah array satu dimensi dari nol hingga 24.
+
+135
+00:11:22,500 --> 00:11:30,660
+Dan kemudian saya akan mengatakan Rand memang acak dan itu akan menjadi Rand.
+
+136
+00:11:31,000 --> 00:11:32,790
+Harus meletakkan D di sana.
+
+137
+00:11:32,960 --> 00:11:35,980
+Bilangan bulat acak dari 0 hingga 50.
+
+138
+00:11:36,390 --> 00:11:37,930
+Jadi saya tidak mendapatkan 10 dari itu.
+
+139
+00:11:38,210 --> 00:11:44,040
+Jadi jika I Cheka atau ran Are terlihat seperti ini, Anda mungkin mendapatkan nilai yang berbeda karena dipilih
+
+140
+00:11:44,030 --> 00:11:44,690
+secara acak.
+
+141
+00:11:44,690 --> 00:11:47,890
+Ini seharusnya hanya memiliki 10 bilangan bulat di sana.
+
+142
+00:11:48,020 --> 00:11:48,780
+Baiklah.
+
+143
+00:11:48,840 --> 00:11:53,130
+Salah satu metode paling berguna yang dapat Anda gunakan pada array adalah metode membentuk kembali.
+
+144
+00:11:53,300 --> 00:11:57,770
+Dan itu akan mengembalikan array yang berisi data yang sama jika dalam bentuk baru.
+
+145
+00:11:57,770 --> 00:12:07,930
+Itu berarti saya bisa memanggil titik Mirei dan kemudian membentuk kembali metode di atasnya membentuk kembali dan saya melewatkan dimensi baru yang
+
+146
+00:12:07,940 --> 00:12:08,940
+saya inginkan.
+
+147
+00:12:08,930 --> 00:12:16,940
+Jadi misalnya jika saya ingin membentuk kembali bahwa anggota array A R R adalah dua puluh lima digit nol hingga 24.
+
+148
+00:12:16,940 --> 00:12:24,350
+Saya bisa membentuk kembali sebagai array 5 dengan 5 menggunakan membentuk kembali dan kemudian melewatkan jumlah baris yang Anda inginkan
+
+149
+00:12:24,360 --> 00:12:25,780
+dan jumlah kolom.
+
+150
+00:12:25,790 --> 00:12:30,630
+Ingatlah bahwa Anda akan mendapatkan kesalahan jika Anda tidak dapat mengisi matriks itu sepenuhnya.
+
+151
+00:12:30,620 --> 00:12:35,940
+Jadi misalnya jika saya ingin 5 oleh 10 saya perlu 50 elemen untuk melakukan itu.
+
+152
+00:12:36,200 --> 00:12:40,820
+Dan saya akan mendapatkan kesalahan di sini karena ukuran total array baru harus tidak berubah.
+
+153
+00:12:40,940 --> 00:12:48,990
+Berarti Anda harus mengisi hanya menggunakan digit yang Anda miliki atau elemen yang Anda punya cara sederhana yang bagus
+
+154
+00:12:48,990 --> 00:12:56,310
+untuk memeriksa ini adalah bahwa jumlah baris kali jumlah kolom sama dengan jumlah elemen yang sebenarnya sehingga
+
+155
+00:12:56,370 --> 00:12:59,330
+lima kali lima sama dengan 25.
+
+156
+00:12:59,450 --> 00:13:02,860
+Dan saya tahu saya memiliki 25 elemen dalam array ini.
+
+157
+00:13:02,900 --> 00:13:08,780
+OK mari kita masuk dan menunjukkan beberapa metode yang lebih berguna untuk menemukan nilai maks atau minimum atau untuk
+
+158
+00:13:09,200 --> 00:13:13,670
+menemukan lokasi mereka dan kita akan membahas lebih banyak operasi nanti di kuliah mendatang.
+
+159
+00:13:13,830 --> 00:13:15,880
+Berikut ini beberapa yang berguna untuk Anda ketahui.
+
+160
+00:13:15,960 --> 00:13:17,880
+Jadi silakan dan periksa array acak kami.
+
+161
+00:13:17,880 --> 00:13:18,980
+Sekali lagi.
+
+162
+00:13:18,990 --> 00:13:24,030
+Sekali lagi angka Anda mungkin berbeda tetapi demi latihan ini tidak terlalu penting.
+
+163
+00:13:24,120 --> 00:13:27,400
+Jika Anda ingin menemukan nilai maksimal dalam array Anda.
+
+164
+00:13:27,440 --> 00:13:33,170
+Anda dapat memanggil metode max dari itu dan ini akan mengembalikan nilai maksimum array itu.
+
+165
+00:13:33,870 --> 00:13:37,340
+Demikian pula jika Anda ingin mendapatkan nilai minimum array Anda.
+
+166
+00:13:37,350 --> 00:13:40,240
+Anda dapat membatalkan metode min itu.
+
+167
+00:13:40,280 --> 00:13:41,710
+Kami melihat array.
+
+168
+00:13:41,730 --> 00:13:48,980
+Sekali lagi kita benar-benar dapat mengetahui lokasi nilai max atau min dengan menentukan max atau
+
+169
+00:13:49,080 --> 00:13:50,490
+min kita.
+
+170
+00:13:50,580 --> 00:13:59,660
+Berarti jika saya ingin benar-benar tahu apa nilai indeks Max ini terletak di 49 saya dapat mengatakan Ranh adalah
+
+171
+00:13:59,680 --> 00:14:04,750
+Argive Max dan itu akan mengembalikan lokasi indeks nilai max.
+
+172
+00:14:04,980 --> 00:14:08,270
+Jadi saya perhatikan bahwa 49 terletak di indeks 3.
+
+173
+00:14:08,450 --> 00:14:11,310
+Jadi 0 1 2 3.
+
+174
+00:14:11,420 --> 00:14:12,930
+Saya punya empat puluh sembilan di sana.
+
+175
+00:14:13,100 --> 00:14:18,470
+Dan lagi Anda dapat melakukan hal yang sama dengan nilai menit yang dapat Anda katakan adalah laki-laki dan
+
+176
+00:14:18,470 --> 00:14:20,990
+itu akan mengembalikan lokasi indeks dari nilai minimum.
+
+177
+00:14:21,000 --> 00:14:25,760
+Jadi 6 adalah lokasi indeks nilai minimum dan nilai minimum adalah tiga.
+
+178
+00:14:25,760 --> 00:14:26,940
+Pada kasus ini.
+
+179
+00:14:27,500 --> 00:14:28,130
+BAIK.
+
+180
+00:14:28,400 --> 00:14:31,820
+Dan dengan cepat beberapa metode dan atribut yang lebih berguna.
+
+181
+00:14:31,970 --> 00:14:39,050
+Jika Anda ingin mengetahui bentuk vektor Anda dapat mengatakan berbentuk pengembalian rendah kembali
+
+182
+00:14:39,060 --> 00:14:39,980
+bentuk.
+
+183
+00:14:39,980 --> 00:14:47,910
+Perhatikan di sini saya mendapatkan 25 Khama dan itu menunjukkan bahwa rr array itu hanya vektor satu dimensi.
+
+184
+00:14:49,080 --> 00:14:50,960
+Jika saya teruskan dan membentuknya kembali.
+
+185
+00:14:51,140 --> 00:15:01,060
+Jadi saya akan mengatakan dibentuk kembali menjadi lima kali lima dan saya akan mengatur yang sama dengan R ..
+
+186
+00:15:01,160 --> 00:15:02,190
+Atau r r.
+
+187
+00:15:02,180 --> 00:15:07,340
+Perhatikan sekarang saya memiliki matriks dua dimensi yang disebut titik bentuk itu.
+
+188
+00:15:07,350 --> 00:15:08,970
+Perhatikan saya tidak meletakkan tanda kurung.
+
+189
+00:15:09,000 --> 00:15:11,350
+Saya hanya memanggil atribut dari itu.
+
+190
+00:15:11,390 --> 00:15:14,360
+Sekarang laporkan kembali bahwa ukurannya lima kali lima.
+
+191
+00:15:14,450 --> 00:15:20,810
+Jadi itu untuk Mitchell sekarang dan atribut berguna terakhir yang ingin saya tunjukkan untuk saat ini adalah tipe data dalam
+
+192
+00:15:20,820 --> 00:15:21,690
+array ini.
+
+193
+00:15:21,750 --> 00:15:28,410
+Jika Anda pernah penasaran dengan tipe data apa yang Anda miliki dengan sebuah array, Anda bisa mengatakan r r dan mengetik sebagai
+
+194
+00:15:28,500 --> 00:15:32,700
+atribut tipe D di dalamnya akan mengembalikan tipe data aktual yang menghalangi Anda.
+
+195
+00:15:32,720 --> 00:15:35,470
+Dalam hal ini bilangan bulat 32 bit.
+
+196
+00:15:35,510 --> 00:15:36,000
+BAIK.
+
+197
+00:15:36,200 --> 00:15:38,660
+Hanya ulasan singkat tentang semua yang telah kami lakukan.
+
+198
+00:15:38,720 --> 00:15:45,390
+Kami telah menunjukkan kepada Anda cara membuat kenaikan kerajaan baik dengan melemparkan daftar ke array yang lebih tinggi atau dengan
+
+199
+00:15:45,380 --> 00:15:52,680
+menggunakan salah satu fungsi bawaan untuk array umpire seperti arr. nol dan yang ruang Lyn dan saya dan juga metode
+
+200
+00:15:52,670 --> 00:15:59,840
+generasi acak yang Anda sebut N. P. yang berlari mereka dan kemudian Rand berlari dan
+
+201
+00:15:59,850 --> 00:16:01,690
+berlari dan atau metode acak lainnya.
+
+202
+00:16:01,730 --> 00:16:06,920
+Baiklah dan satu petunjuk terakhir yang ingin saya tunjukkan kepada Anda jika Anda tidak ingin harus
+
+203
+00:16:06,940 --> 00:16:16,200
+mengetikkan NPE acak bahwa Rand adalah apa yang dapat Anda lakukan adalah Anda dapat mengatakan dari PI bahwa impor acak dan kemudian metode atau fungsi apa pun yang ingin
+
+204
+00:16:16,190 --> 00:16:17,440
+Anda impor .
+
+205
+00:16:17,450 --> 00:16:20,900
+Jadi, jika Anda ingin mengimpor Rand I N C, Anda dapat melanjutkan dan melakukannya.
+
+206
+00:16:20,900 --> 00:16:27,480
+Dan alih-alih mengatakan bahwa pikiran acak itu berlari saya inti Anda bisa mengatakan Rand I. Saya SEBUAH. dan saya punya
+
+207
+00:16:27,470 --> 00:16:30,020
+referensi untuk diri sendiri.
+
+208
+00:16:30,020 --> 00:16:31,110
+Ini dia.
+
+209
+00:16:31,190 --> 00:16:32,130
+BAIK.
+
+210
+00:16:32,250 --> 00:16:36,650
+Sekali lagi ingat Anda memiliki buku catatan dengan semua catatan jika Anda ingin
+
+211
+00:16:36,680 --> 00:16:40,760
+referensi kode ini atau catatan yang benar-benar dibicarakan di sepanjang kuliah ini.
+
+212
+00:16:40,760 --> 00:16:45,860
+Selanjutnya, kita akan belajar tentang pengindeksan dan seleksi untuk lomba wasit
+
+213
+00:16:45,870 --> 00:16:47,270
+serta operasi wasit.
+
+214
+00:16:47,270 --> 00:16:49,310
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

@@ -1,0 +1,347 @@
+1
+00:00:05,190 --> 00:00:10,920
+Bună ziua tuturor și bun venit la prelegerea de complot regresie pentru seaborne Seaborn are multe construit în capabilități
+
+2
+00:00:10,920 --> 00:00:12,260
+pentru agresiune și parcele.
+
+3
+00:00:12,270 --> 00:00:16,320
+Cu toate acestea, nu vom discuta într-adevăr regresia până la secțiunea de învățare a mașinilor din acest curs.
+
+4
+00:00:16,350 --> 00:00:22,590
+Deci, pentru moment va acoperi doar funcția L și complotul L. M. complot vă permite să afișați modele lineare
+
+5
+00:00:22,670 --> 00:00:23,560
+cu Seaborn.
+
+6
+00:00:23,730 --> 00:00:28,090
+De asemenea, aflați cum să măriți și să modificați raportul de aspect pentru parcelele maritime.
+
+7
+00:00:28,140 --> 00:00:30,960
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+8
+00:00:31,020 --> 00:00:32,980
+Bine aici, sunt la notebook-ul Jupiter.
+
+9
+00:00:33,030 --> 00:00:37,550
+Vreau să îndrept un seaborne importat pe nume Matt în linie și am încărcat setul
+
+10
+00:00:37,550 --> 00:00:39,410
+de date cu care am lucrat.
+
+11
+00:00:39,480 --> 00:00:46,020
+Du-te și arătați cum să utilizați complotul L-M pentru a face o complot simplu model liniar pe
+
+12
+00:00:47,150 --> 00:00:56,850
+care tocmai îl numiți Esson acest L. M. grafice și apoi ce caracteristică doriți pe axa x versus
+
+13
+00:00:56,850 --> 00:01:04,980
+axa y mergând în proiectul de plotare totală și pe axa y va merge mai departe și sunați-l în sursa de date noastre vor fi sfaturi.
+
+14
+00:01:05,120 --> 00:01:10,290
+Acum, dacă mergeți înainte și rulați, vedem că în principiu avem un scatterplot cu o potrivire
+
+15
+00:01:10,290 --> 00:01:17,340
+liniară pe partea de sus a acestuia și puteți specifica de fapt hewe, de asemenea, dacă doriți o separare pe baza unei caracteristici categorice.
+
+16
+00:01:17,820 --> 00:01:20,400
+De exemplu, putem specifica lui Huie sexului.
+
+17
+00:01:21,060 --> 00:01:26,340
+Și acum aveți în mod esențial două parcele de scatter și două fixări lineare pe partea de sus a acestui lucru
+
+18
+00:01:26,400 --> 00:01:30,870
+și acest lucru este în esență departe de a deduce din acest complot este că masculin și
+
+19
+00:01:30,870 --> 00:01:35,190
+feminin, în esență, au aceeași potrivire liniară în ceea ce privește totalul de lege vs vârful.
+
+20
+00:01:35,520 --> 00:01:41,340
+Ceva de remarcat aici este faptul că ei pot începe să treacă de fapt în acel parcelă parametrii de stil live,
+
+21
+00:01:41,400 --> 00:01:44,900
+cum ar fi doriți să afecteze marcajele sau tipurile de markere aici.
+
+22
+00:01:44,910 --> 00:01:53,400
+S-ar putea să începeți să spuneți că ceva de genul acesta va intra și va spune că markerii sunt egali.
+
+23
+00:01:53,420 --> 00:01:57,080
+Deoarece avem de-a face cu o nuanță, avem două markere separate de care avem nevoie.
+
+24
+00:01:57,150 --> 00:02:03,210
+Poate să treacă orice listă de tip de marcatori, astfel încât să pot intra și să spun puțin O pentru un
+
+25
+00:02:03,240 --> 00:02:09,300
+marcator și apoi pentru virgulă V pentru altul și acești markeri aceste simboluri provin de la hărțile plus simbolurile marker lib.
+
+26
+00:02:09,630 --> 00:02:15,990
+Deci, du-te și alerga și apoi vedem că avem în față triunghiuri pentru femele și cercuri pentru bărbați.
+
+27
+00:02:16,350 --> 00:02:22,110
+Acum, dacă acest lucru nu este de fapt suficient de mare pentru a vă vedea puteți merge mai departe
+
+28
+00:02:22,170 --> 00:02:31,020
+și să începeți să adăugați în ceea ce este cunoscut sub numele de scatter underscore parametru ks și în esență ceea ce înseamnă că eu sunt de fapt, pot
+
+29
+00:02:31,020 --> 00:02:35,710
+parcurge parametrii hartă lib plot chiar mai direct în Piel t că apelul scatter.
+
+30
+00:02:35,940 --> 00:02:37,520
+Deci ce face seaborne cu asta?
+
+31
+00:02:37,560 --> 00:02:43,180
+S și ​​s parcelă este de fapt este de asteptare complot hartă lib foarte mult sub capota.
+
+32
+00:02:43,260 --> 00:02:50,220
+Și dacă doriți să efectuați o compilație de hărți care a trăit direct din seaborne, ceea ce faceți în cele din urmă și
+
+33
+00:02:50,220 --> 00:02:55,520
+acest lucru de la caz la caz, trebuie să vă referiți documentația după cum este necesar.
+
+34
+00:02:55,620 --> 00:03:02,340
+Dar dacă vreți să afectați în acest caz scatterplot-ul, veți trece vreun dicționar, așa că pot merge mai
+
+35
+00:03:02,340 --> 00:03:07,550
+departe și să-i spun dicționarul și să schimbe mărimea la ceva de 100.
+
+36
+00:03:07,590 --> 00:03:10,000
+Și acest lucru va afecta de fapt dimensiunea acestor markere.
+
+37
+00:03:10,030 --> 00:03:14,270
+Veți conduce spectacolul respectiv și am făcut markerii mult mai mari.
+
+38
+00:03:14,580 --> 00:03:20,940
+Deci, acesta este de fapt doar un apel pentru a mapa complotul lib și ce se întâmplă sub capota lui Seaborn.
+
+39
+00:03:20,940 --> 00:03:25,850
+Cu alte cuvinte, pur și simplu treceți orice dicționar cu argumente de bază pentru maparea lib și, în acest caz, este.
+
+40
+00:03:25,890 --> 00:03:30,960
+În ceea ce privește mărimea unui scatterplot, în general, probabil că nu vă veți aminti acest gen de lucruri
+
+41
+00:03:30,960 --> 00:03:33,900
+de pe capul capului dvs., dar se referă la documentație.
+
+42
+00:03:33,900 --> 00:03:38,810
+Și probabil că nu vei fi personalizat până la acest nivel, adesea cu Seaborn.
+
+43
+00:03:39,210 --> 00:03:43,430
+Veți continua și personalizați datele înainte de a face acest tip de acțiune.
+
+44
+00:03:43,770 --> 00:03:46,060
+Să mergem mai departe și să vă arătăm câteva opțiuni aici.
+
+45
+00:03:46,170 --> 00:03:52,410
+În cazul în care nu doriți să vă mizeriați în jurul valorii de marcare a dimensiunilor, puteți utiliza o rețea
+
+46
+00:03:52,410 --> 00:03:59,500
+în loc să vă separați de Hugh, astfel încât să puteți adăuga mai mult spunând că Asinus a crezut că Ellen a complotat.
+
+47
+00:03:59,610 --> 00:04:08,390
+Să mergem mai departe și să copiem și să lipim factura și datele de facturare și vom merge mai departe și o vom face.
+
+48
+00:04:08,400 --> 00:04:16,080
+După ce ați văzut acest lucru în loc să precizați ceva asemănător lui Heugh este egal cu sexul care schimbă nuanța de
+
+49
+00:04:16,500 --> 00:04:23,760
+culoare, puteți începe de fapt să apelați factorul sau complotul grilei, cum ar fi să spuneți sex egal pentru coloane.
+
+50
+00:04:24,000 --> 00:04:29,060
+Și acum trebuie să separați parcelele de coloană separate de categoria de sex.
+
+51
+00:04:29,130 --> 00:04:31,110
+Deci, bărbat față de femeie.
+
+52
+00:04:31,110 --> 00:04:37,140
+Deci, în loc să o separați de culoarea separată de coloane și puteți continua acest tip de logică și
+
+53
+00:04:37,140 --> 00:04:38,040
+pe rânduri.
+
+54
+00:04:38,070 --> 00:04:45,510
+Dacă doriți să adăugați o altă variabilă pentru a vedea puteți spune că rândul este egal cu ceva de genul coloana de timp și
+
+55
+00:04:46,400 --> 00:04:52,130
+acum aveți rânduri și vremuri și acest lucru este, în esență, doar făcând apelurile de rețea și grupul Fassett
+
+56
+00:04:52,140 --> 00:04:55,130
+cheamă despre care am învățat mai devreme în grilă.
+
+57
+00:04:55,200 --> 00:05:00,360
+Dar este puțin mai automată pentru că noi adăugăm apel și ordine la apelul la plan L-M.
+
+58
+00:05:00,360 --> 00:05:01,790
+Deci, face mai ușoară.
+
+59
+00:05:01,790 --> 00:05:05,220
+Acum nu avem de-a face cu Fassett tot timpul.
+
+60
+00:05:05,220 --> 00:05:11,250
+Acum, dacă dintr-un motiv vreți să mai plănuiți mai multe variabile, puteți adăuga hugh back end astfel încât să
+
+61
+00:05:11,250 --> 00:05:14,750
+puteți spune că Heugh este egal să spunem o altă coloană.
+
+62
+00:05:14,880 --> 00:05:22,920
+Vreau să intru și să spun că coloana este ziua în care avem joi vineri sâmbătă și duminică este coloană.
+
+63
+00:05:22,920 --> 00:05:25,380
+Va schimba nuanța înapoi la sex.
+
+64
+00:05:25,520 --> 00:05:31,040
+Deci, acest lucru ne va da o complot destul de informativ, dar va fi o mulțime de informații aici, astfel încât să puteți
+
+65
+00:05:31,070 --> 00:05:33,900
+vedea că se întâmplă multe aici și o mulțime de informații.
+
+66
+00:05:33,900 --> 00:05:38,610
+Deci, probabil că doriți doar să mergeți înainte și să eliminați rândul imediat de pe lilieci și să
+
+67
+00:05:40,620 --> 00:05:46,290
+obțineți doar o coloană înapoi sau un Roback scuzați-mă și apoi avem un fel de complot frumos aspect aici, dar problema
+
+68
+00:05:46,290 --> 00:05:48,430
+este că aspectul și dimensiunea arata greșit.
+
+69
+00:05:48,660 --> 00:05:54,990
+Deci, cifrele de Seaborn vor avea dimensiunea lor și raportul de aspect ajustat cu parametrii de dimensiune și aspect.
+
+70
+00:05:55,290 --> 00:06:04,380
+Deci, intrați în apelul dvs. maritim și apoi puteți schimba aspectul aspectului astfel încât să fie bun și să-i acordați un raport de
+
+71
+00:06:04,380 --> 00:06:07,170
+aspect de 0. 6.
+
+72
+00:06:07,170 --> 00:06:11,460
+Și acesta este raportul dintre înălțimea și lățimea fiecăreia dintre aceste grile separate.
+
+73
+00:06:11,700 --> 00:06:18,370
+Și apoi puteți specifica dimensiunea pentru a schimba dimensiunile pentru a specifica dimensiunea 8.
+
+74
+00:06:18,870 --> 00:06:23,520
+Și aici a început să afecteze aspectul și raportul de mărime al acestui lucru.
+
+75
+00:06:24,000 --> 00:06:27,960
+Și acum, probabil că vă întrebați bine cum pot schimba dimensiunea fontului este încă prea mică pentru a
+
+76
+00:06:27,960 --> 00:06:30,150
+citi sau cum pot controla estetica chiar mai mult.
+
+77
+00:06:30,270 --> 00:06:35,700
+Ei bine, noi o să facem este să conduceți acest lucru în stilul nostru și cursul de culoare, care vine
+
+78
+00:06:35,700 --> 00:06:42,780
+în continuare în cazul în care vă vom arăta cum să controleze aceste mai multe caracteristici de bază ale parcelei, cum ar fi dimensiunea fontului stil
+
+79
+00:06:42,780 --> 00:06:43,950
+de colorare, etc ..
+
+80
+00:06:44,160 --> 00:06:46,950
+În ceea ce privește această prelegere, suntem aproape făcuți.
+
+81
+00:06:46,980 --> 00:06:51,360
+Principalul lucru pe care vreau sa-l iesi din asta este ca, pentru a suna un complot
+
+82
+00:06:51,410 --> 00:06:58,140
+de model liniar pe care tocmai l-ati sunat si complot partajati coloana xy si setati datele si apoi puteti trece Hugh pentru aceste caracteristici
+
+83
+00:06:58,140 --> 00:07:02,130
+mai avansate cum ar fi setarea marimea marcatorului sau schimbarea tipului de marcator.
+
+84
+00:07:02,130 --> 00:07:06,420
+Mergeți mai departe și consultați cartea de bilete și legătura cu documentația din notebook.
+
+85
+00:07:06,570 --> 00:07:07,050
+In regula.
+
+86
+00:07:07,260 --> 00:07:11,450
+Dacă aveți întrebări, nu ezitați să postați forumul Q &amp; A și vom fi bucuroși să vă ajutăm.
+
+87
+00:07:11,460 --> 00:07:13,560
+Mulțumesc și te vom vedea la următoarea conferință.

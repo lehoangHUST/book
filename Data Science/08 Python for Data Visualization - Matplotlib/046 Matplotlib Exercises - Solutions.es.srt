@@ -1,0 +1,515 @@
+1
+00:00:05,010 --> 00:00:10,150
+Hola a todos y bienvenidos al mapa, más la presentación de soluciones de ejercicios en vivo en esta conferencia.
+
+2
+00:00:10,170 --> 00:00:13,950
+Vamos a repasar las soluciones para el ejercicio sin diagrama de mapas.
+
+3
+00:00:14,040 --> 00:00:16,620
+Vamos a una libreta de Jump's para comenzar.
+
+4
+00:00:16,620 --> 00:00:20,640
+Muy bien, aquí estoy en el cuaderno en su mayor parte ejercicios de labios.
+
+5
+00:00:20,820 --> 00:00:22,840
+Avancemos, saltemos y comencemos.
+
+6
+00:00:22,840 --> 00:00:25,680
+Vamos a salir y ejecutar esa primera celda para obtener los datos.
+
+7
+00:00:26,100 --> 00:00:38,130
+Y vamos a una trama de un mapa de importación que vivió una parcela alta como Piazzi y establecemos un mapa trazado en línea.
+
+8
+00:00:38,130 --> 00:00:42,220
+Ahora hay una pregunta más que es lo que usa Kamandi si lo es, ¿no es el cuaderno de Júpiter?
+
+9
+00:00:42,390 --> 00:00:47,810
+Y como recordatorio, serían los dientes Piel los que se muestran al final de todos sus comandos de trazado.
+
+10
+00:00:47,850 --> 00:00:49,960
+Vamos a hacer ejercicio uno.
+
+11
+00:00:50,150 --> 00:00:54,580
+Quiere crear un objeto figura llamado fig usando pilt esa figura.
+
+12
+00:00:54,690 --> 00:00:55,200
+Todo bien.
+
+13
+00:00:55,200 --> 00:01:01,370
+Así que este es solo el método orientado a objetos para usar Map plot lib o decimos que fig es una secuela para pelar
+
+14
+00:01:01,410 --> 00:01:02,500
+la figura de T-Dog.
+
+15
+00:01:02,910 --> 00:01:07,940
+Y luego queremos usar añadir ejes de subrayado para agregar un conjunto de ejes a esta figura.
+
+16
+00:01:08,460 --> 00:01:16,430
+Y voy a entrar y decir que x es igual a Fig dot add underscore axes.
+
+17
+00:01:16,510 --> 00:01:20,560
+Y realmente obtenemos la posición que queríamos que 0 0 1 1.
+
+18
+00:01:20,760 --> 00:01:27,400
+Y finalmente, quise trazar x venir y eso y ejecutar esto.
+
+19
+00:01:27,450 --> 00:01:32,610
+De acuerdo, parece que tenemos una buena coincidencia aquí y queremos que las etiquetas y los títulos coincidan a continuación.
+
+20
+00:01:32,610 --> 00:01:39,690
+Entonces, si continuamos y establecemos eso, queremos decir que la
+
+21
+00:01:42,980 --> 00:01:52,920
+etiqueta X es X y luego x x x la etiqueta y es Y.
+
+22
+00:01:52,950 --> 00:01:59,140
+Y también queremos establecer el título y debería haber sido simplemente un título.
+
+23
+00:01:59,220 --> 00:01:59,790
+Todo bien.
+
+24
+00:02:00,210 --> 00:02:01,550
+Entonces, ¿qué hacemos aquí?
+
+25
+00:02:01,560 --> 00:02:07,710
+Seguimos adelante y creamos un objeto figura que agregó un conjunto de ejes que representa un objeto figura en ese objeto de
+
+26
+00:02:07,710 --> 00:02:11,450
+figura y luego configuramos la etiqueta X con la etiqueta y el título.
+
+27
+00:02:11,490 --> 00:02:16,320
+Avancemos y pasemos al ejercicio 2, que es un ejercicio muy similar.
+
+28
+00:02:16,320 --> 00:02:22,340
+Vamos a ver un círculo de higo para pelar esa figura para crear el objeto figura.
+
+29
+00:02:22,350 --> 00:02:31,320
+Y luego queremos poner dos ejes en él x 1 y x para ir y decir x 1 y x 2 y voy a decir
+
+30
+00:02:31,320 --> 00:02:33,970
+que fig pensó agregar ejes de subrayado.
+
+31
+00:02:34,020 --> 00:02:36,700
+El primero se encuentra en 0 0 1 1.
+
+32
+00:02:36,720 --> 00:02:38,580
+Esa es la más grande.
+
+33
+00:02:38,580 --> 00:02:50,400
+Y luego el segundo se encuentra en el punto cero dos punto cinco punto dos punto dos.
+
+34
+00:02:50,700 --> 00:02:55,060
+Se ejecutará eso y parece que obtenemos el mismo resultado aquí.
+
+35
+00:02:55,130 --> 00:02:55,910
+Estupendo.
+
+36
+00:02:56,100 --> 00:03:02,680
+Ahora continuamos ejercitando lo que queríamos hacer es trazar ambos xey en ambos ejes aquí.
+
+37
+00:03:03,030 --> 00:03:06,100
+Avancemos y agreguemos eso a la celda.
+
+38
+00:03:06,150 --> 00:03:14,810
+Entonces diré x 1 plot x y y x para trazar x y.
+
+39
+00:03:15,450 --> 00:03:18,840
+Y aquí tenemos la misma trama aquí.
+
+40
+00:03:18,850 --> 00:03:20,280
+Querías que fuera rojo.
+
+41
+00:03:20,310 --> 00:03:24,000
+Podrías haber agregado los argumentos de color rojo a los que
+
+42
+00:03:27,710 --> 00:03:33,870
+acabas de pasar una cadena y ahora será rojo para que coincida con este gráfico inferior y luego,
+
+43
+00:03:33,870 --> 00:03:37,380
+si quisieras, también podrías haber agregado las etiquetas X y Y.
+
+44
+00:03:38,070 --> 00:03:43,650
+Va a pasar al ejercicio 3, que fue crear la gráfica de abajo añadiéndola para acceder a
+
+45
+00:03:43,650 --> 00:03:47,130
+un objeto de figura en estos puntos de lienzo específicos.
+
+46
+00:03:47,130 --> 00:03:47,760
+Todo bien.
+
+47
+00:03:47,910 --> 00:03:51,270
+Así que no mucha guía en el ejercicio 3.
+
+48
+00:03:51,300 --> 00:03:54,050
+Lo primero que quiero hacer es crear un objeto figura.
+
+49
+00:03:54,060 --> 00:04:01,710
+Voy a decir que la figura es igual a pelar la figura de T-Dog y luego lo siguiente que quiero
+
+50
+00:04:01,710 --> 00:04:12,150
+hacer es comenzar a agregar los conjuntos de ejes y cuándo decir x es igual a Fig dot añadir ejes y los pondremos en los mismos lugares
+
+51
+00:04:12,150 --> 00:04:13,340
+que se solicitaron.
+
+52
+00:04:13,690 --> 00:04:23,790
+Diré que x 2 es igual a Fig dot y underscore axes o configuraremos estos puntos para apuntar
+
+53
+00:04:23,790 --> 00:04:26,850
+cinco puntos cuatro puntos cuatro.
+
+54
+00:04:26,850 --> 00:04:31,530
+Está bien, Rennie parece que obtenemos el mismo resultado y luego, al llegar, queríamos
+
+55
+00:04:31,590 --> 00:04:35,520
+usar las matrices x y yz para recrear esta gráfica a continuación.
+
+56
+00:04:35,910 --> 00:04:43,650
+revisemos la gráfica a continuación para comentar esto y acercar esto un poco para que podamos verlo.
+
+57
+00:04:43,650 --> 00:04:44,440
+Avancemos y
+
+58
+00:04:44,580 --> 00:04:46,320
+Aleja un poco.
+
+59
+00:04:47,040 --> 00:04:47,710
+DE ACUERDO.
+
+60
+00:04:48,120 --> 00:04:54,310
+Entonces parece que tenemos un par de cosas aquí en el exterior de Plaut tenemos X versus Z.
+
+61
+00:04:54,330 --> 00:04:56,180
+Entremos y agreguemos eso.
+
+62
+00:04:56,190 --> 00:05:04,260
+Entonces, en la gran trama que es X en nuestro caso, trazará x contra Z y de hecho estableceré las
+
+63
+00:05:04,260 --> 00:05:05,400
+etiquetas para eso.
+
+64
+00:05:05,400 --> 00:05:21,080
+Por lo tanto, los wup de etiquetas X configuran X label set a X y X se configuran como etiqueta y se configuran como Z.
+
+65
+00:05:21,090 --> 00:05:29,100
+Así que esta es la gran trama y ahora va a hablar sobre la trama de inserción.
+
+66
+00:05:29,100 --> 00:05:34,360
+Entonces, si echamos un vistazo a la parcela insertada, va a ser X por Y.
+
+67
+00:05:34,380 --> 00:05:37,330
+Por aquí parece que el título es zoom.
+
+68
+00:05:37,470 --> 00:05:51,660
+Así que voy a seguir adelante y digo X trazar xy y luego voy a configurar el título para acercarlo. También voy a seguir
+
+69
+00:05:51,660 --> 00:06:01,320
+adelante y establecer esas etiquetas para que sean X y luego o Y para ser y .
+
+70
+00:06:01,320 --> 00:06:05,310
+Sabes que en realidad aún no hemos terminado, vamos a ejecutar esto y ver qué diferencia obtenemos.
+
+71
+00:06:05,970 --> 00:06:10,110
+Así que tenga en cuenta que ahora cometí un error que debería haber estado en el inserto.
+
+72
+00:06:10,110 --> 00:06:13,450
+Entonces esto debería haber sido x 2 para todos estos.
+
+73
+00:06:13,450 --> 00:06:15,230
+Ahora sigamos y corramos esto.
+
+74
+00:06:16,140 --> 00:06:19,050
+Y esto se ve bien, pero todavía hay una diferencia aquí.
+
+75
+00:06:19,050 --> 00:06:26,620
+Observe en el zoom los límites xey que X pasa de 20 a 22 y y va de 30 a 50.
+
+76
+00:06:26,640 --> 00:06:28,440
+Aquí solo estamos usando los límites predeterminados.
+
+77
+00:06:28,440 --> 00:06:31,440
+Entremos y cambiemos aquellos en el inserto.
+
+78
+00:06:31,620 --> 00:06:34,520
+Eso va a ser x 2
+
+79
+00:06:37,080 --> 00:06:42,670
+dot set X slim y queremos ir del 20 al 22.
+
+80
+00:06:42,670 --> 00:06:45,820
+Vamos y agrega eso en 20 a 22.
+
+81
+00:06:45,930 --> 00:06:53,910
+Y también voy a establecer el tiempo él y si retrocedemos podemos ver que el whilom pasó de
+
+82
+00:06:53,910 --> 00:06:55,500
+30 a 50.
+
+83
+00:06:55,650 --> 00:06:58,480
+Entonces diremos 30 coma 50 en el más lento.
+
+84
+00:06:58,590 --> 00:06:59,680
+Ejecuta eso.
+
+85
+00:06:59,730 --> 00:07:05,210
+Y ahora podemos ver que estamos haciendo coincidir completamente tanto el inserto como la trama exterior.
+
+86
+00:07:05,280 --> 00:07:08,130
+Ahora estamos en el ejercicio cuatro.
+
+87
+00:07:08,280 --> 00:07:13,580
+Avancemos y use las subparcelas PELTOLA para recrear esta gráfica a continuación.
+
+88
+00:07:13,950 --> 00:07:22,870
+Voy a decir que fig come axes es igual a peel t thought subparcelas y quiero una regla por dos columnas.
+
+89
+00:07:22,890 --> 00:07:28,080
+Vamos a ejecutar eso y parece que obtenemos esa salida correctamente.
+
+90
+00:07:28,080 --> 00:07:33,780
+Ahora queremos trazar xeyyx versus Z en los ejes y quiero que juegues alrededor de la línea
+
+91
+00:07:33,780 --> 00:07:34,690
+y el estilo.
+
+92
+00:07:34,710 --> 00:07:37,820
+Veamos si podemos unirlos correctamente.
+
+93
+00:07:37,860 --> 00:07:43,930
+Voy a seguir adelante y planear aquí.
+
+94
+00:07:44,070 --> 00:07:54,600
+Déjame que lo vacíe y sigamos adelante y digamos que los miembros de los ejes 0 usan subtramas.
+
+95
+00:07:54,600 --> 00:08:00,270
+Ahora, así que vamos a poder iterar o llamar a esta secuencia de la matriz de ejes.
+
+96
+00:08:00,510 --> 00:08:06,840
+esto dirá X Y y en los ejes uno entrará y trazará x z.
+
+97
+00:08:06,900 --> 00:08:17,010
+Así que estoy diciendo que las gráficas de los ejes son cero y parece que voy a seguir adelante y dar vueltas con
+
+98
+00:08:17,730 --> 00:08:24,000
+Sabes que va a establecer estos colores para que veamos el color para el segundo y que
+
+99
+00:08:24,000 --> 00:08:27,080
+se vea como la línea con un pequeño ticker.
+
+100
+00:08:27,660 --> 00:08:36,870
+Y luego, este, el primero, parece entrar y configurar los colores para que sean azules como una cadena.
+
+101
+00:08:36,870 --> 00:08:42,010
+Y también parece que el estilo de línea s es una línea punteada.
+
+102
+00:08:42,080 --> 00:08:43,710
+Ve y agrega eso adentro.
+
+103
+00:08:43,740 --> 00:08:50,130
+También parece que es una suela un poco más gruesa, pero en LW igual a tres se ejecutará esto
+
+104
+00:08:50,490 --> 00:08:52,490
+si tenemos todo en buen estado.
+
+105
+00:08:52,500 --> 00:08:52,860
+Todo bien.
+
+106
+00:08:52,860 --> 00:08:53,400
+No está mal.
+
+107
+00:08:53,410 --> 00:08:54,820
+Parece que estamos obteniendo una coincidencia.
+
+108
+00:08:55,080 --> 00:08:59,970
+Y ahora queríamos ver si podíamos cambiar el tamaño de la trama agregando estos argumentos de tamaño de arreglo.
+
+109
+00:09:00,300 --> 00:09:02,500
+Entremos y revisemos eso.
+
+110
+00:09:02,520 --> 00:09:09,600
+Recuerde que podemos simplemente agregar argumentos de tamaño en la llamada a las subtramas para que podamos decir que el tamaño de la figura
+
+111
+00:09:09,600 --> 00:09:12,220
+es igual y parece que queremos ancho y corto.
+
+112
+00:09:12,240 --> 00:09:17,550
+algunos números más amplios que simplemente caen en el segundo número son más pequeños, así que vamos a decir 12 a.
+
+113
+00:09:17,550 --> 00:09:19,990
+Así que en el primer número es más grande,
+
+114
+00:09:20,260 --> 00:09:25,720
+Y si corremos, parece que obtenemos una coincidencia con la segunda trama aquí.
+
+115
+00:09:26,040 --> 00:09:28,250
+Y también están un poco desordenados por los estilos.
+
+116
+00:09:28,250 --> 00:09:31,650
+Así que cambien todos nosotros entraríamos y haríamos eso nosotros mismos.
+
+117
+00:09:31,650 --> 00:09:33,360
+Solo decimos algo como.
+
+118
+00:09:33,660 --> 00:09:37,650
+LS por aquí es igual a líneas de trazos.
+
+119
+00:09:37,680 --> 00:09:39,960
+Ahora lo cambiamos y lo igualamos.
+
+120
+00:09:40,080 --> 00:09:40,640
+Todo bien.
+
+121
+00:09:40,800 --> 00:09:46,650
+Eso es todo para los ejercicios de Matt plot lib, con suerte perforados en cuanto a la sintaxis para usar el diagrama
+
+122
+00:09:46,680 --> 00:09:48,640
+de mapas orientado a objetos en vivo.
+
+123
+00:09:48,840 --> 00:09:55,160
+Todo lo que tienes que hacer es llamar los ejes de las figuras de la figura y luego trazar en
+
+124
+00:09:55,170 --> 00:10:02,250
+esos ejes o si estás utilizando subtramas como en la última llamada al problema. Hágase ejes para pelar a esas subtramas y
+
+125
+00:10:02,250 --> 00:10:08,560
+luego iterar a través de esos ejes o llamar usando la matriz de ejes para trazar cada subparcela particular.
+
+126
+00:10:08,860 --> 00:10:10,220
+Eso es todo lo que hay que hacer.
+
+127
+00:10:10,350 --> 00:10:15,060
+Continúe y revise el libro de soluciones en caso de que algo de esto no esté claro o siéntase libre de publicar
+
+128
+00:10:15,060 --> 00:10:16,980
+la pregunta en los foros de preguntas y respuestas.
+
+129
+00:10:16,980 --> 00:10:19,020
+Gracias a todos y nos vemos en la próxima conferencia

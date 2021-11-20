@@ -1,0 +1,663 @@
+1
+00:00:05,430 --> 00:00:10,000
+Witam wszystkich i zapraszam do części 3 serii wykładów z lib fabularną map.
+
+2
+00:00:10,260 --> 00:00:15,780
+W tej końcowej części będziemy mówić o ustawianiu linii kolorów za
+
+3
+00:00:15,780 --> 00:00:19,380
+pomocą linii i naprawdę dostosowujemy opcje dzierżawy.
+
+4
+00:00:19,380 --> 00:00:23,070
+Przejdźmy dalej i przejdź do notatnika Chippering, aby rozpocząć.
+
+5
+00:00:23,100 --> 00:00:25,690
+OK, jesteśmy w notesie Jowisza.
+
+6
+00:00:25,950 --> 00:00:30,060
+Porozmawiajmy o ustawianiu kolorów z tą fabułą na żywo.
+
+7
+00:00:30,400 --> 00:00:39,600
+Tak więc zamierzam iść dalej i po prostu powiedzieć, że fig równa się figurze VLT, a następnie mam
+
+8
+00:00:39,600 --> 00:00:43,720
+zamiar dodać zestaw figury Access x równy Fig.
+
+9
+00:00:43,800 --> 00:00:54,140
+Dodaj topory podkreślenia i ustawię je na 0 0 1 1, a następnie wups, a następnie off z tego rodzaju osi, aby powiedzieć X
+
+10
+00:00:54,180 --> 00:00:57,610
+zatrzymać wykres i zrobić X przyjdź Y.
+
+11
+00:00:57,840 --> 00:01:01,200
+I jest to odniesienie do tych samych x i y, z którymi pracowaliśmy.
+
+12
+00:01:01,200 --> 00:01:04,490
+Więc jeśli wejdę i spiskuję, że dostanę coś, co wygląda tak.
+
+13
+00:01:04,500 --> 00:01:12,480
+Teraz mogę edytować ten kolor działki, wstawiając parametr koloru, a premiera kolorystyczna może w rzeczywistości zająć
+
+14
+00:01:12,480 --> 00:01:20,230
+wiele argumentów, które może zająć argumenty, takie jak typowe ciągi kolorów, np. Niebieski, albo przejdźmy
+
+15
+00:01:20,260 --> 00:01:27,790
+do pomarańczowego lub zobaczymy, kiedy pomarańczowy linii lub zielone i dostajesz zieloną linię.
+
+16
+00:01:27,810 --> 00:01:29,260
+Tak bardzo podstawowe nazwy kolorów.
+
+17
+00:01:29,280 --> 00:01:33,440
+Może faktycznie być wyjątkiem jako ciąg, jeśli chcesz zacząć uzyskiwać bardziej szczegółowe.
+
+18
+00:01:33,450 --> 00:01:39,550
+Możesz w rzeczywistości umieścić kody szesnastkowe RGV, więc mogę umieścić tag hash, a następnie niektóre RG to
+
+19
+00:01:39,850 --> 00:01:45,420
+kod szesnastkowy, np. Go Gaudens skopiuj go z notatnika f f 8 C 0 0.
+
+20
+00:01:45,690 --> 00:01:47,260
+Ups to jest.
+
+21
+00:01:47,730 --> 00:01:49,600
+Dzięki temu zyskasz bardziej niestandardowy kolor.
+
+22
+00:01:49,890 --> 00:01:58,890
+Możesz więc rozpocząć wyszukiwanie w sieci dla twórcy kodu RSGB X lub twórcy, a także mieć dostęp do
+
+23
+00:01:58,890 --> 00:02:00,920
+wielu narzędzi dostępnych online.
+
+24
+00:02:00,920 --> 00:02:06,510
+Chodzi nam o kody szesnastkowe G-B na wypadek, gdybyś chciał stworzyć własny niestandardowy kolor dla
+
+25
+00:02:06,510 --> 00:02:11,050
+bardzo podstawowych kolorów, w zasadzie w rodzaju kolorów Crayoli, takich jak purpura.
+
+26
+00:02:11,100 --> 00:02:16,200
+Powinieneś być w stanie łatwo je wykreślić i po prostu przekazać ciąg.
+
+27
+00:02:16,200 --> 00:02:18,660
+OK, więc to jest podstawa kolorów.
+
+28
+00:02:18,660 --> 00:02:24,480
+Porozmawiajmy teraz o linii i stylu linii, jeśli chcesz edytować linię za pomocą.
+
+29
+00:02:24,510 --> 00:02:31,410
+Możesz po prostu przekazać jako argumenty i po prostu wpisać numer.
+
+30
+00:02:31,410 --> 00:02:38,230
+Na przykład, jeśli wstawimy taką, która jest w istocie linią domyślną, chcemy podwoić wartość domyślną i powiedzieć,
+
+31
+00:02:38,230 --> 00:02:40,790
+że linia z jest równa 2.
+
+32
+00:02:40,890 --> 00:02:43,830
+A to podwoi szerokość, którą możemy dalej robić.
+
+33
+00:02:43,830 --> 00:02:49,920
+Jeśli chcę bardzo grubą linię, tak jak przy równych 20 To 20 razy grubość domyślnej linii.
+
+34
+00:02:50,400 --> 00:02:55,680
+Lub jeśli chcesz bardzo cienką linię, taką jak domyślna grubość 0. 5 możesz zacząć robić się cieńszy
+
+35
+00:02:55,680 --> 00:02:56,990
+i cieńszy.
+
+36
+00:02:57,010 --> 00:03:04,650
+Kolejną bardzo użyteczną wskazówką, jeśli chodzi o linię i widoczność linii, są argumenty alfa, więc idź dalej
+
+37
+00:03:04,650 --> 00:03:12,150
+i ustaw moją linię równą linii z trzema i możesz określić argument alfa, który pozwala ci w
+
+38
+00:03:12,150 --> 00:03:15,560
+zasadzie kontrolować, jak przejrzysta jest ta linia.
+
+39
+00:03:15,570 --> 00:03:21,130
+Mogę powiedzieć, że Alpha jest równa 0. 5.
+
+40
+00:03:21,330 --> 00:03:26,020
+I jeśli teraz to uruchomię, to widzę, że mamy teraz trochę więcej przejrzystości na tej linii.
+
+41
+00:03:26,160 --> 00:03:33,050
+Możesz więc połączyć linię koloru z alfą, aby uzyskać dokładnie taki wygląd, jaki chcesz.
+
+42
+00:03:33,060 --> 00:03:37,880
+Jeszcze jedną rzeczą, o której warto tutaj wspomnieć, jest to, że w rzeczywistości nie trzeba wpisywać całkowicie.
+
+43
+00:03:38,280 --> 00:03:43,390
+Możesz po prostu wpisać LW i nadal będzie działało dobrze.
+
+44
+00:03:43,830 --> 00:03:44,580
+DOBRZE.
+
+45
+00:03:44,580 --> 00:03:49,230
+Więc mówimy o linii z kolorem i alfą i zamierzam usunąć połączenie alfa.
+
+46
+00:03:49,230 --> 00:03:56,700
+Porozmawiajmy teraz o stylu linii, więc mogę wpisać styl linii i styl linii, jest sporo opcji i są one wymienione w
+
+47
+00:03:56,700 --> 00:04:00,690
+twoim notatniku, że w zasadzie po prostu określa styl linii, taki
+
+48
+00:04:00,690 --> 00:04:03,270
+jak linia przerywana lub linia kropkowana.
+
+49
+00:04:03,270 --> 00:04:10,230
+Na przykład, jeśli osoba dwie kreski kończą się na linii przerywanej i po prostu przekazując to jako ciąg
+
+50
+00:04:10,710 --> 00:04:14,910
+lub mijam i kreska, a następnie okres otrzymuję przerywaną linię.
+
+51
+00:04:14,910 --> 00:04:19,140
+Punkty myśliwskie punktów kreski, a następnie kilka dodatkowych opcji.
+
+52
+00:04:19,200 --> 00:04:26,760
+Dwukropek, który podaje mi te mniejsze kreski tutaj, i możesz przejrzeć notatkę Jowisza do tego wykładu, aby zobaczyć, jakie
+
+53
+00:04:26,940 --> 00:04:28,350
+masz inne opcje.
+
+54
+00:04:28,350 --> 00:04:31,140
+A potem możesz zrobić kilka kroków.
+
+55
+00:04:31,200 --> 00:04:33,150
+Ja rzadko je używam.
+
+56
+00:04:33,210 --> 00:04:39,440
+Najczęściej po prostu zrobię kreskę lub jeśli po prostu włożysz jedną kreskę, to tylko solidna linia.
+
+57
+00:04:39,720 --> 00:04:40,360
+DOBRZE.
+
+58
+00:04:40,590 --> 00:04:44,040
+I tak jak w przypadku linii z wami, nie trzeba wpisywać stylu linii.
+
+59
+00:04:44,160 --> 00:04:49,850
+Po prostu wstawisz ls i skończy działać tak samo.
+
+60
+00:04:50,250 --> 00:04:50,890
+DOBRZE.
+
+61
+00:04:50,910 --> 00:04:53,630
+Więc rozmawialiśmy o linii i stylu linii.
+
+62
+00:04:53,640 --> 00:04:55,390
+Porozmawiajmy teraz o markerach.
+
+63
+00:04:55,530 --> 00:04:59,380
+Dlatego markery będą używane, gdy masz tylko kilka punktów danych.
+
+64
+00:04:59,400 --> 00:05:06,510
+Na przykład, jeśli przyjrzymy się X jako przypomnienie tego, co to jest, możemy zobaczyć, że x jest po prostu
+
+65
+00:05:06,570 --> 00:05:10,510
+tablicą idą do przodu i sprawdzić długość x 11 punktów.
+
+66
+00:05:10,530 --> 00:05:14,940
+Powiedzmy, że chcieliśmy zaznaczyć, że te 11 punktów wystąpiło na tym wykresie.
+
+67
+00:05:15,270 --> 00:05:25,190
+Mogę podać znacznik, jako że nowe argumenty powinny być przecinkami, a następnie mogę przekazać ciąg znaków.
+
+68
+00:05:25,260 --> 00:05:28,310
+Istnieje wiele możliwych symboli znaczników, które są wymienione w książce notatek.
+
+69
+00:05:28,320 --> 00:05:33,390
+Ale najbardziej podstawową wspólną rzeczą jest właśnie ta mała litera O jako ciąg.
+
+70
+00:05:33,390 --> 00:05:41,550
+I tam możesz zacząć dostrzegać punkty, które w zasadzie wyznaczają punkty na X i Y, i
+
+71
+00:05:41,550 --> 00:05:45,110
+masz do dyspozycji szeroki wybór znaczników.
+
+72
+00:05:45,150 --> 00:05:46,260
+Wszystkie są wymienione w notatce.
+
+73
+00:05:46,260 --> 00:05:50,700
+Ale żeby pokazać ci parę, która może robić takie rzeczy, jak znaki plus, które tutaj nie pojawiają
+
+74
+00:05:51,000 --> 00:05:54,760
+się zbyt dobrze, możesz robić takie rzeczy jak małe gwiazdy jak symbole Asterixa.
+
+75
+00:05:54,870 --> 00:06:01,110
+Możesz robić rzeczy takie jak przekazywanie tych kodów liczbowych Zamierzam zrobić linię z odrobinę
+
+76
+00:06:01,110 --> 00:06:04,470
+rzadszym, żebyś mógł zobaczyć te znaczniki tutaj.
+
+77
+00:06:04,960 --> 00:06:07,050
+Dlatego chcieliśmy, aby te znaczniki były większe.
+
+78
+00:06:07,200 --> 00:06:13,050
+Cóż, pewnie zgadłeś, że rozmiar znacznika nie jest argumentem, więc możesz iść dalej i określić
+
+79
+00:06:13,060 --> 00:06:17,010
+rozmiar znacznika, a zasadniczo tylko jeden jest bardzo małym rozmiarem.
+
+80
+00:06:17,010 --> 00:06:19,840
+A jeśli chcesz, aby był nieco większy, możesz powiedzieć 10.
+
+81
+00:06:19,890 --> 00:06:22,310
+I tutaj możemy zacząć postrzegać tego rodzaju trójkąty w formie.
+
+82
+00:06:22,310 --> 00:06:29,280
+Więc chodźmy i powiedzmy po prostu ogromne markery w wieku 20 lat, a następnie możemy określić markery typu ucho 2.
+
+83
+00:06:29,700 --> 00:06:35,790
+Możesz powiedzieć, że plus dostajemy te plusy tutaj itp. więc wszystkie te opcje są wymienione w dokumentacji.
+
+84
+00:06:36,000 --> 00:06:39,690
+Co ważniejsze, w książce notatek Jowisza jest tyle różnych typów
+
+85
+00:06:39,690 --> 00:06:42,940
+łańcuchów, które można przekazać jako znaczniki kodów znaczników.
+
+86
+00:06:44,520 --> 00:06:49,120
+A jeśli naprawdę chcesz spersonalizować swoje znaczniki, na przykład, idź dalej i umieść je z
+
+87
+00:06:49,190 --> 00:06:54,150
+powrotem na małe litery Oh, więc otrzymujemy te punkty, aby zmienić tę linię z powrotem na jedną.
+
+88
+00:06:54,300 --> 00:06:58,410
+Istnieje naprawdę sporo opcji, jeśli chodzi o określenie wyglądu znacznika.
+
+89
+00:06:58,410 --> 00:07:03,690
+Możesz określić kolor znaku znacznika krawędzi znacznika i kolor krawędzi znacznika.
+
+90
+00:07:03,690 --> 00:07:06,520
+Najpierw wyjdzie i doda te argumenty.
+
+91
+00:07:06,670 --> 00:07:09,910
+Po prostu naciśnij przecinek, aby wprowadzić nową linię.
+
+92
+00:07:10,110 --> 00:07:12,390
+I mam zamiar wyjść i powiedzieć, że Mark kolor
+
+93
+00:07:15,710 --> 00:07:17,740
+twarzy i można określić kolor twarzy znacznika.
+
+94
+00:07:17,760 --> 00:07:19,800
+Więc będą kolorem wewnątrz tego kręgu.
+
+95
+00:07:19,800 --> 00:07:22,590
+Idźmy dalej i uczyńmy to żółtym i uruchommy to.
+
+96
+00:07:22,830 --> 00:07:24,800
+I to zmieniło kolor markera.
+
+97
+00:07:24,810 --> 00:07:32,700
+Powiedzmy, że chcę zmienić krawędź znacznika za pomocą Idź i edytuj to również.
+
+98
+00:07:32,700 --> 00:07:37,440
+Spraw, aby były trochę grubsze, na przykład trzy, które są nieco grubsze i powiedzmy,
+
+99
+00:07:37,440 --> 00:07:39,750
+że chcesz określić kolor krawędzi znacznika.
+
+100
+00:07:39,750 --> 00:07:43,640
+Mogę określić kolor krawędzi znacznika.
+
+101
+00:07:43,640 --> 00:07:46,650
+Teraz chodźmy, aby to zielone.
+
+102
+00:07:46,650 --> 00:07:46,990
+W porządku.
+
+103
+00:07:47,010 --> 00:07:52,860
+Więc możesz zobaczyć, że istnieje wiele możliwości dostosowania tutaj i istnieje wiele opcji, jeśli chcesz zobaczyć kilka przykładów różnych
+
+104
+00:07:52,860 --> 00:07:56,520
+opcji, które możesz wykonać i przejść do książki notatek Jowisza do
+
+105
+00:07:56,520 --> 00:07:57,250
+tego wykładu.
+
+106
+00:07:57,270 --> 00:07:59,460
+Muszę iść dalej i zrobić to teraz.
+
+107
+00:07:59,640 --> 00:08:04,290
+Będziemy musieli przejść dalej i kliknąć tutaj, a jeśli zobaczycie tutaj na mapie wykład koncepcyjny Cutlip.
+
+108
+00:08:04,350 --> 00:08:08,380
+W tej chwili znajdujemy się w znacznikach linii przekroju oraz liniach i markach.
+
+109
+00:08:08,700 --> 00:08:15,000
+Tutaj jest w zasadzie figura, w której powiedzieliśmy sześciu na wątku o wielkości pierwszej figury
+
+110
+00:08:15,000 --> 00:08:19,830
+i zrobiliśmy kilka wątków i edytowaliśmy kolory linii ze stylami linii.
+
+111
+00:08:19,830 --> 00:08:23,130
+Oto kilka przykładów, dzięki którym możesz je przeczytać i przeczytać.
+
+112
+00:08:23,160 --> 00:08:28,020
+A jeśli szukasz różnych możliwych znaczników, wszystkie są tutaj jako komentarze lub sprzymierzone typy
+
+113
+00:08:28,020 --> 00:08:29,070
+komórek itp.
+
+114
+00:08:29,100 --> 00:08:33,690
+Jest tutaj wiele różnych przykładów w rodzaju kopiowania i wklejania lub
+
+115
+00:08:33,690 --> 00:08:35,100
+budowania własnej wiedzy.
+
+116
+00:08:35,160 --> 00:08:39,540
+Na koniec porozmawiajmy o kontroli dostępu i zasięgu działania.
+
+117
+00:08:39,780 --> 00:08:46,860
+A jeśli wrócimy do naszego oryginalnego notatnika tutaj, możemy śmiało pokazać, w jaki sposób możemy ustawić limit
+
+118
+00:08:46,860 --> 00:08:48,410
+Y i limit.
+
+119
+00:08:48,480 --> 00:08:51,180
+Zrobimy to znowu tylko bardzo prostą fabułą.
+
+120
+00:08:51,190 --> 00:08:57,900
+Przejdźmy dalej i po prostu ustawmy tę linię na równą sobie i pozwólmy, aby styl życia był równy jakiejś linii kreskowej.
+
+121
+00:08:58,560 --> 00:08:59,730
+Ok świetnie.
+
+122
+00:08:59,730 --> 00:09:04,650
+Powiedzmy, że chciałem tylko pokazać wykres od 0 do 1 na osi X.
+
+123
+00:09:04,860 --> 00:09:13,920
+Cóż, aby to zrobić, po prostu wyczyść dostęp, a następnie powiedz zestaw podkreślenia X Lim, a następnie przekaż na liście z
+
+124
+00:09:13,980 --> 00:09:15,830
+dolną granicą górną granicę.
+
+125
+00:09:15,990 --> 00:09:18,750
+Więc przejdziemy od 0 do 1.
+
+126
+00:09:19,440 --> 00:09:24,720
+I tutaj widzimy, że ustawiliśmy dolną granicę górnej granicy osi x.
+
+127
+00:09:24,720 --> 00:09:30,510
+Teraz posuwajmy się dalej i róbmy to samo dla tego, dlaczego ograniczamy tylko jasne osie,
+
+128
+00:09:30,570 --> 00:09:37,380
+a następnie wypowiadamy zestawy podkreślające, dlaczego Lim i jako lista podajesz górną granicę i niższe granice o ten zero.
+
+129
+00:09:37,380 --> 00:09:38,460
+Zróbmy górną granicę.
+
+130
+00:09:38,470 --> 00:09:41,380
+Więc po prostu wpisz 2.
+
+131
+00:09:41,390 --> 00:09:42,810
+Teraz możemy zobaczyć ten spisek.
+
+132
+00:09:42,860 --> 00:09:47,790
+Zauważmy, że gdy powiększamy fabułę, wygląda to jak wiązka prostych linii łączących punkty, co
+
+133
+00:09:48,090 --> 00:09:53,020
+ma sens, ponieważ nie mamy tak dużo szczegółów SR tylko 11 punktów, kiedy pomniejszamy.
+
+134
+00:09:53,040 --> 00:09:59,030
+Widzimy więcej zakrzywionej linii i możemy to naprawić, zdobywając więcej punktów danych lub pomniejszając.
+
+135
+00:09:59,030 --> 00:10:04,590
+W porządku, w końcu chcę szybko wrócić z powrotem do koncepcji Partlow na mapie i
+
+136
+00:10:04,590 --> 00:10:06,490
+porozmawiać o takich specjalnych działkach.
+
+137
+00:10:06,510 --> 00:10:11,280
+Istnieje wiele wyspecjalizowanych rodzajów fabuły, które można wykonać za pomocą MAP plot lib, takich jak
+
+138
+00:10:11,550 --> 00:10:13,520
+histogramy wykresów słupkowych i wykres rozrzutu.
+
+139
+00:10:13,560 --> 00:10:18,390
+Większość tych typów działek miała być używana w innej bibliotece wizualizacji o nazwie Seaborn, która jest
+
+140
+00:10:18,750 --> 00:10:21,960
+znacznie lepiej dopasowana do tego rodzaju statystycznych metod kreślenia.
+
+141
+00:10:22,080 --> 00:10:24,790
+Ale żeby pokazać, że możesz to zrobić w moim życiu.
+
+142
+00:10:25,020 --> 00:10:31,400
+Możesz wykonywać wykresy rozrzutu, takie jak to, że możesz wyświetlać histogramy, używając tego wykresu na żywo, a nawet takich
+
+143
+00:10:31,400 --> 00:10:33,120
+rzeczy, jak wykresy pudełkowe.
+
+144
+00:10:33,120 --> 00:10:34,760
+A oto kilka przykładów dla ciebie.
+
+145
+00:10:35,100 --> 00:10:40,260
+Teraz na samym dole swojego notatnika Jowisza do tego wykładu zobaczysz kilka linków do dalszego czytania,
+
+146
+00:10:40,260 --> 00:10:43,960
+w tym stronę internetową projektu, która jest wykreślona i jedno łącze.
+
+147
+00:10:43,980 --> 00:10:47,440
+Naprawdę podoba mi się to, że tutaj wszystko jest na drugim miejscu.
+
+148
+00:10:47,790 --> 00:10:51,590
+Ten Lorieau to naprawdę fajny link.
+
+149
+00:10:51,600 --> 00:10:53,740
+Jest to samouczek dotyczący map.
+
+150
+00:10:53,880 --> 00:10:58,170
+Mam nadzieję, że teraz całkiem sporo wiesz, oglądając te trzy wykłady, które właśnie zrobiliśmy.
+
+151
+00:10:58,300 --> 00:11:02,710
+Ale to, co naprawdę podoba mi się w tym łączu, to to, że jest to po prostu kod referencyjny.
+
+152
+00:11:02,790 --> 00:11:05,910
+Jeśli chcesz zmienić kolory, możesz wejść i sprawdzić ten link.
+
+153
+00:11:05,940 --> 00:11:10,040
+Spójrz tylko na liczby i powiedzą ci, jak ustawić tyknięcia na etykietach, itp.
+
+154
+00:11:10,170 --> 00:11:12,180
+Ruchome grzbiety dodające legendy.
+
+155
+00:11:12,180 --> 00:11:17,620
+Wiele z tych punktów znajduje się w drugiej notatce do tej serii wykładów o
+
+156
+00:11:17,630 --> 00:11:20,010
+nazwie Plansza mapy z notatnikiem.
+
+157
+00:11:20,550 --> 00:11:25,680
+Na razie nie będziemy na razie wykładać wideo na te zaawansowane tematy, ponieważ nie będziemy ich zbyt
+
+158
+00:11:25,680 --> 00:11:27,390
+często używać w trakcie kursu.
+
+159
+00:11:27,390 --> 00:11:30,650
+W zasadzie w ciągu całego kursu będziemy używać Seaborn.
+
+160
+00:11:30,720 --> 00:11:31,440
+DOBRZE.
+
+161
+00:11:31,620 --> 00:11:37,260
+Poniżej znajduje się krótki przegląd planu fabuły bez zarzutów, a następnie będziesz mieć przegląd
+
+162
+00:11:37,260 --> 00:11:39,150
+rozwiązań dla tego ćwiczenia.
+
+163
+00:11:39,240 --> 00:11:44,520
+Póki co trzymaj się tych specjalnych typów fabuły i poczekaj, aż nauczymy się używać Seaborna, który
+
+164
+00:11:44,700 --> 00:11:48,400
+będzie znacznie lepiej wyposażony do tego rodzaju pięknych statystycznych wykresów.
+
+165
+00:11:48,660 --> 00:11:49,110
+W porządku.
+
+166
+00:11:49,380 --> 00:11:51,610
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie.

@@ -1,0 +1,715 @@
+1
+00:00:05,490 --> 00:00:11,130
+Bună tuturor, bun venit la cursul de instalare și instalare, astfel încât obiectivele acestei lecții sunt de
+
+2
+00:00:11,130 --> 00:00:13,080
+a instala Python of Anaconda.
+
+3
+00:00:13,080 --> 00:00:17,970
+Descărcați fișierul zip al notebook-urilor care iese de pe acest curs și în Jupiter deschis și explorați
+
+4
+00:00:17,970 --> 00:00:20,410
+notebook-urile și asigurați-vă că totul funcționează pentru dvs.
+
+5
+00:00:21,560 --> 00:00:25,150
+Deci, chiar de pe liliac ceea ce este anaconda anaconda.
+
+6
+00:00:25,160 --> 00:00:28,570
+Este o distribuție a lui Python când spunem distribuția.
+
+7
+00:00:28,580 --> 00:00:33,770
+Aceasta înseamnă că de fapt nu include doar Python, ci include și o mulțime de biblioteci și instrumente pe care le
+
+8
+00:00:34,010 --> 00:00:35,240
+folosim în acest curs.
+
+9
+00:00:35,390 --> 00:00:40,460
+Și include, de asemenea, propriul sistem de medii virtuale despre care vorbim mai târziu în acest curs.
+
+10
+00:00:40,550 --> 00:00:45,690
+Este, în esență, o instalație într-un singur loc, extrem de populară în domeniul științei datelor și al învățării în mașină.
+
+11
+00:00:45,770 --> 00:00:50,060
+Deci, dacă vreți să faceți vreun alt antrenament și știința datelor și învățarea mașinilor, cum ar fi o pregătire
+
+12
+00:00:50,360 --> 00:00:53,850
+corporatistă, este foarte probabil ca ei să vă ceară, de asemenea, să instalați Anaconda.
+
+13
+00:00:53,870 --> 00:00:58,130
+Deci, este extrem de popular în domeniul științei datelor și al învățării în mașină, motiv pentru care o
+
+14
+00:00:59,690 --> 00:01:04,550
+folosim în acest curs, așa că odată ce am instalat Anaconda și am pus Python în funcțiune, acesta va veni
+
+15
+00:01:04,550 --> 00:01:06,410
+cu un mediu de dezvoltare numit Jupiter.
+
+16
+00:01:06,410 --> 00:01:11,090
+Și Jupiter este un mediu dezvoltat în care putem scrie codul normal Python, dar ceea ce este foarte
+
+17
+00:01:11,090 --> 00:01:16,730
+cool despre el este, de asemenea, ne permite să afișăm imagini și apoi să notăm notele de markdown toate în cadrul
+
+18
+00:01:16,730 --> 00:01:17,510
+aceluiași notebook.
+
+19
+00:01:17,510 --> 00:01:22,460
+Deci, este un instrument de învățare foarte bun și este un instrument de învățare excelent, de aceea îl folosiți
+
+20
+00:01:22,460 --> 00:01:23,780
+pe parcursul acestui curs.
+
+21
+00:01:23,840 --> 00:01:28,910
+Și este, de asemenea, unul dintre cele mai populare medii dezvoltate în domeniul științei datelor pentru explorarea și
+
+22
+00:01:28,910 --> 00:01:29,560
+analizarea datelor.
+
+23
+00:01:29,720 --> 00:01:34,160
+Și, pe măsură ce învățați din ce în ce mai multe despre curs și biblioteci, veți
+
+24
+00:01:34,160 --> 00:01:39,920
+vedea de ce este un instrument atât de popular pentru că puteți vedea totul pe un singur ecran, pe care ați
+
+25
+00:01:39,960 --> 00:01:43,440
+putea vedea imaginile, datele dvs., foile și altele, într-o singură fereastră.
+
+26
+00:01:43,450 --> 00:01:48,190
+Acum vreau să clarific dacă sunteți un utilizator experimentat de Python și poate ați încercat Jupiter, dar într-adevăr nu
+
+27
+00:01:48,340 --> 00:01:49,120
+i-a plăcut.
+
+28
+00:01:49,120 --> 00:01:53,700
+Aveți configurația proprie ca sublimul text sau farmecul PI sau orice alt tip de mediu.
+
+29
+00:01:53,860 --> 00:01:57,270
+Vă rugăm să nu ezitați să utilizați orice mediu de dezvoltare pe care îl preferați.
+
+30
+00:01:57,280 --> 00:02:00,600
+Uneori, unii studenți nu-i plac lui Jupiter și îi plac lucrurile.
+
+31
+00:02:00,670 --> 00:02:01,690
+E în regulă.
+
+32
+00:02:01,690 --> 00:02:03,280
+Nu-l forțăm să o folosească pe Jupiter.
+
+33
+00:02:03,280 --> 00:02:06,610
+Codul python pe care îl vom arăta pe parcursul cursului funcționează în orice mediu.
+
+34
+00:02:06,610 --> 00:02:07,610
+Vreau doar să fiu clar.
+
+35
+00:02:07,720 --> 00:02:10,030
+Alegeți orice mediu de dezvoltare pe care îl preferați.
+
+36
+00:02:10,030 --> 00:02:14,250
+Dar dacă sunteți complet nou în acest sens, aș recomanda să renunțați la setările Anaconda și Jupiter pe care le
+
+37
+00:02:14,260 --> 00:02:16,780
+arătăm aici, pe care le putem urmări de-a lungul acestui curs.
+
+38
+00:02:16,780 --> 00:02:21,050
+Și sper să înveți să-l iubești la fel de mult ca și mine, așa că să începem.
+
+39
+00:02:21,050 --> 00:02:22,500
+Vom descărca Anaconda.
+
+40
+00:02:22,610 --> 00:02:25,460
+Du-te și du-te la w w w anaconda dot com.
+
+41
+00:02:25,610 --> 00:02:30,150
+Sau doar pur și simplu Google căutare Anaconda Python descărca și ar trebui să ajungem la aceeași pagină.
+
+42
+00:02:30,170 --> 00:02:34,770
+Vreau să merg mai departe și să sară într-un comentariu dot com în browser-ul meu acum.
+
+43
+00:02:34,970 --> 00:02:35,740
+Bine, aici sunt.
+
+44
+00:02:35,820 --> 00:02:37,390
+Anaconda dot com.
+
+45
+00:02:37,400 --> 00:02:39,140
+Rețineți Anaconda dot com.
+
+46
+00:02:39,140 --> 00:02:41,770
+Această pagină se actualizează de fapt destul de frecvent.
+
+47
+00:02:41,780 --> 00:02:46,450
+Deci, stilul se poate schimba și puteți vedea lucruri diferite, de exemplu, chiar acum.
+
+48
+00:02:46,610 --> 00:02:51,710
+Ei vor avea un anaconda con astfel stilul pe care pagina arata un pic diferit si butoanele pot fi sau
+
+49
+00:02:51,710 --> 00:02:55,970
+aspectul general al paginii poate fi diferit pentru tine atunci cand vizitezi de fapt acest lucru.
+
+50
+00:02:55,970 --> 00:03:01,600
+Dar, în esență, căutăm secțiunea de descărcare și veți vedea câteva produse aici de ce Anaconda, dar undeva
+
+51
+00:03:01,700 --> 00:03:04,360
+pe această pagină ar trebui să vedeți descărcarea.
+
+52
+00:03:04,670 --> 00:03:08,530
+Și dacă întâmpinați dificultăți în găsirea că puteți merge mai departe și căutați și descărcați apelul prin Google.
+
+53
+00:03:08,710 --> 00:03:10,910
+Și în cele din urmă ar trebui să vă ducă la această pagină.
+
+54
+00:03:10,910 --> 00:03:18,350
+Deci, ceea ce vedem aici este descărcarea pentru Python 3 și Python la acest curs utilizează cea mai recentă versiune de
+
+55
+00:03:18,350 --> 00:03:19,390
+Python 3.
+
+56
+00:03:19,400 --> 00:03:22,100
+Așa că vom merge mai departe și vom folosi asta pentru Instalatorul nostru.
+
+57
+00:03:22,100 --> 00:03:27,050
+Singurul lucru de care trebuie să vă asigurați este că selectați instalatorul corect pentru sistemul dvs. de operare.
+
+58
+00:03:27,050 --> 00:03:32,780
+Deci, chiar acum vreau un calculator Windows, așa că voi alege instalatorul Windows pentru Anaconda.
+
+59
+00:03:32,780 --> 00:03:36,680
+Acum, dacă sunteți pe Mac OS, alegeți instalatorul Mac OS pentru Linux.
+
+60
+00:03:36,680 --> 00:03:41,690
+Mergeți mai departe și alegeți programul de instalare Linux ceva ce ar trebui să știți este pentru un sistem de operare Mac OS.
+
+61
+00:03:41,760 --> 00:03:45,230
+Există o instalare grafică și apoi un program de instalare a liniei de comandă.
+
+62
+00:03:45,350 --> 00:03:49,790
+Programul de instalare grafic este mult mai ușor de utilizat, deoarece are o mică fereastră care apare și arată vă spune ce
+
+63
+00:03:49,820 --> 00:03:51,260
+să faceți în timp ce mergeți.
+
+64
+00:03:51,590 --> 00:03:53,810
+Deci aș recomanda instalatorul grafic.
+
+65
+00:03:54,050 --> 00:04:00,440
+Deci, voi continua și spuneți pe un computer Windows descărcați programul de instalare Windows pentru versiunea python 3.
+
+66
+00:04:00,440 --> 00:04:04,100
+Dacă urmăriți acest lucru la un moment dat în viitor în
+
+67
+00:04:04,100 --> 00:04:08,380
+Python, a ieșit trei puncte opt, este foarte bine să utilizați Python 3 în principiu.
+
+68
+00:04:08,430 --> 00:04:08,810
+In regula.
+
+69
+00:04:08,860 --> 00:04:14,440
+După ce ați terminat descărcarea, vom continua și vom deschide acest fișier executabil dacă sunteți pe Mac OS.
+
+70
+00:04:14,470 --> 00:04:18,820
+Probabil va fi un fișier TMG sau ceva care vă va duce în mod esențial prin programul
+
+71
+00:04:18,820 --> 00:04:19,660
+de instalare grafic.
+
+72
+00:04:19,660 --> 00:04:25,400
+Deci o vom deschide și apoi ar trebui să vedeți în esență expertul de configurare săriți pentru tine.
+
+73
+00:04:25,400 --> 00:04:28,910
+Așa că vom merge mai departe și faceți clic pe aici și apoi există acordul de licență.
+
+74
+00:04:28,910 --> 00:04:30,750
+Mergeți și sunteți de acord.
+
+75
+00:04:30,930 --> 00:04:34,810
+Și apoi există instalarea doar pentru mine și toți utilizatorii.
+
+76
+00:04:35,010 --> 00:04:37,940
+Dacă sunteți pe un computer de lucru, probabil că nu aveți privilegii neobișnuite.
+
+77
+00:04:37,980 --> 00:04:40,320
+Deci, dă-i drumul și instalează-l pentru mine.
+
+78
+00:04:40,350 --> 00:04:44,430
+În esență, aceasta înseamnă că trebuie să vă conectați la contul de utilizator și va funcționa numai pentru acest cont
+
+79
+00:04:44,430 --> 00:04:45,000
+de utilizator.
+
+80
+00:04:45,480 --> 00:04:50,770
+Deci, mergeți mai departe și faceți clic pe Următorul mergeți mai departe și alegeți locația implicită pentru dosarul de
+
+81
+00:04:50,770 --> 00:04:56,200
+destinație și apoi dacă vă aflați pe un computer Windows veți vedea această opțiune pentru opțiuni avansate de instalare
+
+82
+00:04:56,200 --> 00:04:58,720
+și ar trebui să verificați ambele aceste casete.
+
+83
+00:04:58,900 --> 00:05:04,210
+Unul dintre ei spune că nu este recomandat să adăugați Anaconda la variabila de mediu a căii.
+
+84
+00:05:04,210 --> 00:05:08,860
+Motivul pentru care se spune că nu este recomandat se datorează faptului că dacă aveți
+
+85
+00:05:08,860 --> 00:05:14,770
+versiuni diferite de Python care ar putea să vă încurce și să faceți Anaconda versiunea în esență implicită a Python
+
+86
+00:05:14,830 --> 00:05:20,500
+în calculatorul dvs. și, de asemenea, modul implicit de a rula anumite acțiuni de la linia de comandă
+
+87
+00:05:20,560 --> 00:05:24,520
+de fapt, dacă aveți deja o instalare destul de mare de Python.
+
+88
+00:05:24,520 --> 00:05:28,330
+Acum, dacă sunteți un utilizator avansat și înțelegeți ce înseamnă să setați o variabilă pentru mediul de traseu,
+
+89
+00:05:28,330 --> 00:05:31,530
+vă voi lăsa la îndemână dacă doriți sau nu să adăugați Anaconda pe calea ta.
+
+90
+00:05:31,540 --> 00:05:35,620
+Cu toate acestea, dacă sunteți nou și nu știți ce înseamnă adăugarea unei valori pentru variabila
+
+91
+00:05:36,190 --> 00:05:40,810
+dvs. de mediu, atunci cu siguranță continuați și selectați acest lucru, chiar dacă se spune că nu este recomandat.
+
+92
+00:05:40,810 --> 00:05:42,660
+Mergeți și verificați ambele cutii.
+
+93
+00:05:42,760 --> 00:05:47,000
+Asta îmi va permite să creez medii virtuale la linia de comandă, care este foarte utilă.
+
+94
+00:05:47,050 --> 00:05:50,190
+Deci, odată ce ați făcut acest lucru mergeți mai departe și selectați instalați.
+
+95
+00:05:50,250 --> 00:05:50,850
+In regula.
+
+96
+00:05:50,950 --> 00:05:55,900
+Acum că a terminat instalarea, ar trebui să putem căuta anaconda Navigator pe
+
+97
+00:05:55,900 --> 00:05:56,770
+computerul nostru.
+
+98
+00:05:56,860 --> 00:06:01,510
+Dacă ați căutat Anaconda pe computer, ar trebui să vedeți câteva opțiuni care apar.
+
+99
+00:06:01,510 --> 00:06:05,480
+Una este proba anaconda și cealaltă este navigatorul anaconda.
+
+100
+00:06:05,530 --> 00:06:12,590
+Continuați și faceți clic pe deschideți navigatorul anaconda la deschiderea navigatorului anaconda ar trebui să vedeți o grămadă de aplicații care
+
+101
+00:06:12,590 --> 00:06:18,480
+apar și, în esență, aceasta este o modalitate foarte convenabilă de a vă deschide mediile de dezvoltare
+
+102
+00:06:18,510 --> 00:06:23,510
+și veți observa că Anaconda vine de fapt din mai multe medii de dezvoltare
+
+103
+00:06:23,510 --> 00:06:24,340
+deja inclus.
+
+104
+00:06:24,380 --> 00:06:29,800
+Acesta vine cu jupiter miel Jupiter notebook pavilion Kuti consola și mai mult.
+
+105
+00:06:29,840 --> 00:06:33,380
+Cel pe care îl vom folosi în acest curs este notebook-ul Jupiter.
+
+106
+00:06:33,380 --> 00:06:37,880
+Țineți minte că există o lampă Jupiter care arată foarte asemănătoare, dar vom folosi de fapt un notebook Jupiter și
+
+107
+00:06:38,210 --> 00:06:42,530
+pe măsură ce menționez că sunteți liber să folosiți orice mediu de dezvoltare pe care îl alegeți, dar vom
+
+108
+00:06:42,530 --> 00:06:43,470
+folosi notebook-ul Jupiter.
+
+109
+00:06:43,550 --> 00:06:49,590
+Deci, ceea ce dorim să facem este să lansați notebook-ul Jupiter, așa că faceți clic aici unde se spune lansarea și apoi ce se
+
+110
+00:06:49,590 --> 00:06:53,490
+va întâmpla este că ar trebui să vedeți o fereastră de browser care apare.
+
+111
+00:06:53,490 --> 00:06:58,450
+Și aici putem vedea că notebook-ul Jupiter sa deschis automat în browser-ul dvs.
+
+112
+00:06:58,470 --> 00:07:04,020
+Acum, dacă nu aveți Google Chrome ca browser prestabilit, aș recomanda foarte mult să îl utilizați, deoarece acesta este de
+
+113
+00:07:04,020 --> 00:07:06,860
+obicei cel care funcționează cel mai bine cu Jupiter.
+
+114
+00:07:06,930 --> 00:07:11,190
+Nu utilizați un browser mai vechi, cum ar fi Internet Explorer Microsoft Edge ar trebui să fie bine.
+
+115
+00:07:11,190 --> 00:07:14,240
+Însă Internet Explorer nu mai este suportat de Microsoft.
+
+116
+00:07:14,310 --> 00:07:18,990
+Așadar, aș recomanda utilizarea Google Chrome pentru Jupiter.
+
+117
+00:07:18,990 --> 00:07:23,010
+Puteți utiliza, de asemenea, lucruri precum Mozilla Firefox, care ar trebui să funcționeze și din punct de vedere tehnic.
+
+118
+00:07:23,570 --> 00:07:24,120
+O.K.
+
+119
+00:07:24,330 --> 00:07:28,710
+Așa că observați că Jupiter se deschide în browserul dvs. Ceea ce vreau să clarific este că nu
+
+120
+00:07:28,710 --> 00:07:31,560
+trebuie să vă conectați la Internet pentru ca Jupiter să funcționeze.
+
+121
+00:07:31,620 --> 00:07:35,620
+Folosiți pur și simplu browserul ca fereastră de interfață grafică.
+
+122
+00:07:35,640 --> 00:07:37,930
+De fapt nu se conectează la Internet aici.
+
+123
+00:07:37,950 --> 00:07:42,090
+Deci veți observa că văd practic toate dosarele care se află pe calculatorul meu.
+
+124
+00:07:42,090 --> 00:07:45,300
+Îmi pot vedea dosarele de pe desktop pe documentele și descărcările mele.
+
+125
+00:07:45,300 --> 00:07:51,570
+Deci, ceea ce vreau sa fac este sa descarc fisierul zip de notebook-uri care vine de-a lungul acestui curs si apoi
+
+126
+00:07:51,690 --> 00:07:53,400
+sa le accesez prin Jupiter.
+
+127
+00:07:53,400 --> 00:07:55,900
+Deci, să mergem mai departe și să descărcați fișierul zip.
+
+128
+00:07:56,180 --> 00:08:01,800
+OK, dacă te duci la pagina de conținut cursă actuală veți vedea curriculum-ul stabilit și ar trebui să observați în
+
+129
+00:08:01,800 --> 00:08:07,800
+cadrul secțiunii un curs Introducere în cursul de cursul al treilea în cazul în care cuz există un fișier zip aici,
+
+130
+00:08:07,800 --> 00:08:09,420
+pe care le puteți descărca.
+
+131
+00:08:09,870 --> 00:08:15,000
+Și pe măsură ce citeai această prelegere, ar fi trebuit să văd un mic articol despre resurse, arată că
+
+132
+00:08:15,030 --> 00:08:17,130
+există o resursă acolo pentru ao descărca.
+
+133
+00:08:17,130 --> 00:08:20,010
+Acum ține minte dacă vizionați un videoclip de curs.
+
+134
+00:08:20,010 --> 00:08:25,700
+De exemplu, aici văd în mod esențial mediile de intro în care am stabilit o prelegere de instalare dacă faceți
+
+135
+00:08:25,740 --> 00:08:27,610
+clic aici în partea stângă sus.
+
+136
+00:08:27,630 --> 00:08:32,760
+Ar trebui să fie, de asemenea, o indicație că resursele pot fi descărcate și apoi puteți vedea conținutul cursului
+
+137
+00:08:32,880 --> 00:08:36,310
+și faceți clic pe acest fișier zip și va descărca fișierul zip.
+
+138
+00:08:36,360 --> 00:08:42,060
+Deci mergeți mai departe și descărcați fișierul zip fie de la cursul f scuse și am loc zip fișier în câteva
+
+139
+00:08:42,060 --> 00:08:46,320
+alte prelegeri, în cazul în care ai pierdut-o, inclusiv aceasta și prelegere Jupiter notă.
+
+140
+00:08:46,320 --> 00:08:48,870
+Este acelasi fisier zip care poate fi descarcat gratuit.
+
+141
+00:08:48,870 --> 00:08:53,310
+Continuați și descărcați-o și amintiți-vă unde ați descărcat-o și dezarhivați fișierul.
+
+142
+00:08:53,310 --> 00:08:57,330
+Deci, acum versiunea mea este sub dosarul meu de descărcări, așa că am de gând să-l dezarhiva.
+
+143
+00:08:57,660 --> 00:08:57,900
+In regula.
+
+144
+00:08:57,960 --> 00:09:01,560
+Deci, sub dosarul meu de descărcări, voi continua și dezarhivați acest lucru.
+
+145
+00:09:01,560 --> 00:09:07,020
+Ar trebui să puteți vedea totul sau puteți descărca un program de program cum ar fi atunci când RA sau șapte zip.
+
+146
+00:09:07,020 --> 00:09:12,000
+Mergeți mai departe și faceți acest lucru într-adevăr în orice mod, indiferent de metoda tipică folosită pentru a ajunge la dosare.
+
+147
+00:09:12,030 --> 00:09:16,070
+Continuați și faceți că Windows și Mac OS au o valoare implicită.
+
+148
+00:09:16,110 --> 00:09:19,230
+Deci, mergeți mai departe sau doar extrageți totul și dezarhivați-l.
+
+149
+00:09:20,240 --> 00:09:25,490
+Deci, lasati-o sa se descarce si apoi odata ce este dezarhivati ar trebui sa vedeti un dosar aici si veti vedea ceva
+
+150
+00:09:25,490 --> 00:09:26,240
+care spune refactor.
+
+151
+00:09:26,240 --> 00:09:31,910
+Du-te și faceți clic pe aceasta și veți vedea toate notele de curs organizate pentru ca acestea să fie în
+
+152
+00:09:31,910 --> 00:09:32,500
+curs.
+
+153
+00:09:32,540 --> 00:09:38,000
+Și dacă faceți dublu clic pe acestea veți vedea o grămadă de fișiere numite I. P. y și fi fișiere.
+
+154
+00:09:38,000 --> 00:09:42,170
+Acum, lucrul la aceste fișiere dacă încercați să faceți dublu clic pe ele și să le deschideți direct.
+
+155
+00:09:42,170 --> 00:09:46,590
+Acest lucru nu ar funcționa, de fapt, să fie deschis direct prin sistemul notebook Jupiter.
+
+156
+00:09:46,610 --> 00:09:51,650
+Deci, acum că știm că dosarul nostru de dezarhivare este sub descărcări, ne vom întoarce la browserul nostru
+
+157
+00:09:51,650 --> 00:09:55,110
+unde avem notebook-ul Jupiter și vom deschide fișierele în felul acesta.
+
+158
+00:09:55,130 --> 00:09:57,020
+Deci, lasă-mă să merg înainte și să mă întorc la asta.
+
+159
+00:09:57,020 --> 00:09:59,730
+Deci, aici mă întorc la notebook-ul lui Jupiter.
+
+160
+00:09:59,750 --> 00:10:07,080
+Mergeți mai departe și găsiți dosarul Descărcări și apoi găsiți directorul Pi, maestrul de bootcamp al SNL, mergeți la refactor și apoi veți vedea
+
+161
+00:10:07,080 --> 00:10:12,410
+toate fișierele aici, iar primele pe care le vom merge merge acolo, toate în ordine este accidentul Python
+
+162
+00:10:12,420 --> 00:10:17,580
+curs și apoi aceste notebook-uri pur și simplu faceți clic pe ele și apoi odată ce
+
+163
+00:10:17,580 --> 00:10:20,500
+au terminat de încărcare puteți vedea toate informațiile aici.
+
+164
+00:10:20,730 --> 00:10:25,020
+Mai târziu, vom vorbi mai multe detalii despre modul în care puteți rula notebook-urile Jupiter.
+
+165
+00:10:25,020 --> 00:10:31,080
+Rețineți că anterior când filmau acest curs, nu l-am organizat într-o
+
+166
+00:10:31,080 --> 00:10:32,350
+manieră numerică.
+
+167
+00:10:32,550 --> 00:10:38,520
+Tocmai am organizat-o pe teme generale, dar acum am reorganizat și refactorizăm notebook-urile și folderele reale, astfel încât
+
+168
+00:10:38,550 --> 00:10:40,280
+să fie mult mai clare.
+
+169
+00:10:40,290 --> 00:10:43,620
+Tu faci unul, apoi doi, apoi trei, patru, apoi cinci, și așa mai departe.
+
+170
+00:10:44,080 --> 00:10:44,760
+O.K.
+
+171
+00:10:44,850 --> 00:10:46,770
+Deci asta este în principiu pentru configurația noastră.
+
+172
+00:10:46,890 --> 00:10:52,360
+Acum ar trebui să puteți rula notebook-ul Jupiter și ar fi trebuit să instalați Anaconda și apoi să descărcați
+
+173
+00:10:52,370 --> 00:10:54,060
+notele și să le urmați.
+
+174
+00:10:54,060 --> 00:10:59,070
+Rețineți că dacă întâmpinați vreodată o eroare, încercând să urmați împreună cu un videoclip, încercați să rulați
+
+175
+00:10:59,160 --> 00:11:03,480
+notebook-urile noastre mai întâi în mod specific notebook-ul nostru de soluții pentru exercițiu.
+
+176
+00:11:03,480 --> 00:11:07,830
+De multe ori este ușor să faci o tipografie simplă, de aceea oferim notebook-urile care merg împreună cu
+
+177
+00:11:07,830 --> 00:11:11,100
+fiecare lecție video pentru a vă ajuta să rezolvați problemele de acest tip.
+
+178
+00:11:11,280 --> 00:11:11,910
+Bine.
+
+179
+00:11:11,970 --> 00:11:13,890
+Mulțumesc tuturor și vă vom vedea la următoarea conferință.

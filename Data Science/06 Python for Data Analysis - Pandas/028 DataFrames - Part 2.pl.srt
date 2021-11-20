@@ -1,0 +1,911 @@
+1
+00:00:05,430 --> 00:00:06,300
+Cześć wszystkim.
+
+2
+00:00:06,300 --> 00:00:09,050
+Witamy w części 2 wykładu z ramki danych.
+
+3
+00:00:09,090 --> 00:00:14,310
+Ostatnim razem przerwaliśmy tworzenie podstawowej ramki danych i pobieranie informacji z tej ramki danych.
+
+4
+00:00:14,790 --> 00:00:19,760
+Teraz przyjrzymy się selekcji warunkowej, a także niektórym częściom indeksu o wielu indeksach.
+
+5
+00:00:20,430 --> 00:00:23,120
+Przejdźmy dalej i przejdź do notatnika Jupiter, aby zacząć.
+
+6
+00:00:23,520 --> 00:00:23,970
+W porządku.
+
+7
+00:00:23,970 --> 00:00:25,940
+Wracamy do notatnika Jowisza.
+
+8
+00:00:25,950 --> 00:00:28,460
+Zamierzam użyć tej samej ramki danych co ostatnio.
+
+9
+00:00:28,470 --> 00:00:35,600
+Shurmur musieliśmy po prostu powiedzieć, że sztyfty S &amp; P PDpad zaimportowały Rand i ustawiły siedzibę na 101, a następnie powiedziały, że
+
+10
+00:00:35,600 --> 00:00:38,280
+ramka danych była wynajęta, a 5 przychodziło.
+
+11
+00:00:38,460 --> 00:00:41,270
+A tutaj mamy naszą ramkę danych.
+
+12
+00:00:42,410 --> 00:00:45,240
+W porządku, chodźmy i porozmawiajmy o selekcji warunkowej.
+
+13
+00:00:45,360 --> 00:00:50,580
+Bardzo ważną cechą pantless jest możliwość selekcji warunkowej z wykorzystaniem notacji nawiasów
+
+14
+00:00:50,690 --> 00:00:57,570
+i będzie to bardzo podobne do PI, na przykład dla operatora porównania z ramką danych, np. Pytanie,
+
+15
+00:00:57,930 --> 00:01:01,070
+gdzie ramka danych jest większa od zera.
+
+16
+00:01:01,080 --> 00:01:06,420
+Dostaję dane z tyłu wartości logicznych, gdzie zwracają wartość true, jeśli wartość ramki danych w tym punkcie
+
+17
+00:01:06,420 --> 00:01:10,620
+była większa od zera i fałsz, jeśli nie była większa od zera.
+
+18
+00:01:10,740 --> 00:01:16,200
+Jest to bardzo podobne do tej samej selekcji warunkowej zastosowanej do całego hiree, z wyjątkiem tego,
+
+19
+00:01:16,200 --> 00:01:18,480
+że robimy pand w stanie frame.
+
+20
+00:01:18,480 --> 00:01:27,270
+I tak dalej, możemy śmiało powiedzieć, że bullwhips jest wyrzucany, a f jest równy DFA większym od zera.
+
+21
+00:01:27,960 --> 00:01:29,590
+I od powiedzmy Boulia.
+
+22
+00:01:29,610 --> 00:01:32,470
+Śmiało, sprawdź to.
+
+23
+00:01:32,690 --> 00:01:39,120
+I tutaj mamy naszą boolowską ramkę danych i jeśli przekażemy ją do naszej
+
+24
+00:01:39,120 --> 00:01:48,750
+oryginalnej ramki danych z notacją nawiasów, otrzymamy jako wartość wyniku, gdzie była prawdziwa, a Knoll's lub dowolne n, gdzie było
+
+25
+00:01:48,750 --> 00:01:49,820
+fałszywe.
+
+26
+00:01:49,980 --> 00:01:55,200
+I w ten sposób można korzystać z selekcji warunkowej wraz z ramką danych.
+
+27
+00:01:55,200 --> 00:01:58,830
+Zazwyczaj prawdopodobnie nie dzieliłbyś tego na dwa etapy.
+
+28
+00:01:58,890 --> 00:02:00,230
+Po prostu powiedziałbyś.
+
+29
+00:02:00,270 --> 00:02:05,760
+A następnie w nawiasie coś takiego jak DF większe od zera, a otrzymasz ten wynik.
+
+30
+00:02:06,030 --> 00:02:12,340
+Ten rodzaj operacji z ramką danych i operatorem porównania nie jest tak powszechny.
+
+31
+00:02:12,370 --> 00:02:17,220
+Cóż, najprawdopodobniej skończy się wykonywaniem, zamiast po prostu przekazać całą ramkę
+
+32
+00:02:17,220 --> 00:02:23,700
+danych, przekazujesz wartość w wierszu lub kolumnie, a zamiast zwracania Knolles, to, co ma zamiar zrobić, to
+
+33
+00:02:23,700 --> 00:02:28,970
+zwraca tylko wiersze lub kolumny podzbioru ramki danych, w której spełnione są twoje warunki.
+
+34
+00:02:28,980 --> 00:02:33,720
+Teraz pozwólcie mi pokazać przykład tego, co rozumiem przez to, że nie mogliśmy rzucić okiem na naszą oryginalną ramkę danych.
+
+35
+00:02:34,780 --> 00:02:38,830
+Tutaj mamy rzędy A-3 i kolumny w przez Z.
+
+36
+00:02:39,090 --> 00:02:42,900
+To, co zamierzam zrobić, to określić.
+
+37
+00:02:42,990 --> 00:02:46,580
+W większa niż zero.
+
+38
+00:02:46,620 --> 00:02:49,470
+I zauważ, że dostałem serię z powrotem.
+
+39
+00:02:49,470 --> 00:02:54,770
+Prawdziwe prawdziwe fałsz prawdziwe prawda i jest to związane z rzeczywistym indeksem.
+
+40
+00:02:54,780 --> 00:03:01,390
+A jeśli spojrzę na kolumnę W, widzę, że odpowiada to wartościom kolumny W, a wartość na indeksie
+
+41
+00:03:01,390 --> 00:03:03,980
+c faktycznie była mniejsza od zera.
+
+42
+00:03:04,110 --> 00:03:06,710
+Tak więc zwraca Fałsz jako wartość większą od zera.
+
+43
+00:03:06,750 --> 00:03:13,380
+Mogę teraz użyć tej serii wartości logicznych odpowiadających wierszom, aby odfiltrować wiersze w oparciu o wartość kolumny, a
+
+44
+00:03:13,380 --> 00:03:19,470
+to oznacza, że jeśli przejdę serię do ramki danych z wykorzystaniem notacji nawiasów, aby powiedzieć coś takiego,
+
+45
+00:03:19,470 --> 00:03:26,430
+jak DF DFW większy od zera, będę tylko odzyskaj wiersze, w których jest to prawdą, co oznacza, że tylko zwracam
+
+46
+00:03:26,720 --> 00:03:32,670
+wiersze abd i e to nie spowoduje powrotu wiersza C, ponieważ tutaj było to fałszem.
+
+47
+00:03:32,740 --> 00:03:35,340
+Śmiało i uruchom to i zobacz, jak to wygląda.
+
+48
+00:03:35,340 --> 00:03:36,120
+Świetny.
+
+49
+00:03:36,130 --> 00:03:39,950
+A teraz, odkąd przechodzę w serialu, nie dostaję już tych wartości.
+
+50
+00:03:40,050 --> 00:03:44,880
+Otrzymujesz te wartości tylko wtedy, gdy robisz tego rodzaju warunek na całej ramce danych, kiedy
+
+51
+00:03:44,880 --> 00:03:47,470
+faktycznie przechodzisz w warunkach opartych na kolumnach.
+
+52
+00:03:47,550 --> 00:03:52,580
+Otrzymasz tylko wartości serii, co oznacza, że otrzymasz tylko wiersze, które okazały się prawdziwe.
+
+53
+00:03:52,650 --> 00:03:57,120
+I jest to rodzaj warunkowej selekcji, z której będziemy korzystać najczęściej w trakcie tego kursu.
+
+54
+00:03:58,170 --> 00:04:01,970
+Wejdźmy i pokażmy tylko kilka przykładów, aby naprawdę doprowadzić ten punkt do domu.
+
+55
+00:04:01,980 --> 00:04:09,010
+Powiedzmy, że chcę pobrać wszystkie wiersze w mojej ramce danych, gdzie z jest mniejsze od zera.
+
+56
+00:04:09,150 --> 00:04:16,500
+Więc mówię DMF, gdzie f kolumny Z jest mniej niż zero.
+
+57
+00:04:16,500 --> 00:04:21,460
+Teraz spójrzmy, zanim faktycznie uruchomimy to, co powinno się wydarzyć nad kolumną Z. Z.
+
+58
+00:04:21,750 --> 00:04:22,290
+Gdzie to jest.
+
+59
+00:04:22,320 --> 00:04:23,150
+Mniej niż zero.
+
+60
+00:04:23,160 --> 00:04:31,210
+Cóż, to występuje tylko w wierszu C, więc kolumna Z jak w Zelda, a następnie wiersz C jest w kocie.
+
+61
+00:04:31,260 --> 00:04:33,260
+Jest to jedyny wiersz, który powinien zostać zwrócony.
+
+62
+00:04:33,270 --> 00:04:35,720
+Ale pamiętaj, prosząc o zwrot wszystkich danych.
+
+63
+00:04:35,850 --> 00:04:40,110
+Powinno więc zwrócić nam właśnie ten wiersz C.
+
+64
+00:04:40,110 --> 00:04:41,100
+I oto jest.
+
+65
+00:04:41,340 --> 00:04:42,590
+Ok świetnie.
+
+66
+00:04:42,600 --> 00:04:47,520
+Teraz należy zwrócić uwagę na to, że kiedy wykonujesz takie polecenia, idź dalej i
+
+67
+00:04:47,520 --> 00:04:50,190
+wróć do R W większego niż zero.
+
+68
+00:04:50,880 --> 00:04:57,220
+W odpowiedzi otrzymujesz ramkę danych, co oznacza, że możesz wykonywać polecenia poza tą ramką
+
+69
+00:04:57,230 --> 00:04:57,880
+danych.
+
+70
+00:04:58,050 --> 00:05:01,260
+Możesz to zrobić w jednym lub dwóch krokach.
+
+71
+00:05:01,320 --> 00:05:06,370
+Zamierzam wejść i powiedzieć, że wynik DSF jest równy temu, a następnie przyjrzyj się wynikom.
+
+72
+00:05:06,420 --> 00:05:12,910
+DMF, który jest tym podzbiorem ramki danych bez tego wiersza, widzi w nim, a to oznacza, że mogę
+
+73
+00:05:13,030 --> 00:05:21,910
+iść dalej i pobrać wyniki z tego, takie jak X, i tutaj mam cztery wartości XABD i E oparte na tej wynikowej ramce danych,
+
+74
+00:05:21,910 --> 00:05:25,910
+która zrobiła nie ma tego rzędu, że nie ma Charliego.
+
+75
+00:05:26,380 --> 00:05:32,200
+Ale zamiast rozdzielać to na dwa etapy, takie jak chwytanie kolumny X, mogę zrobić to wszystko w
+
+76
+00:05:32,200 --> 00:05:33,030
+jednym kroku.
+
+77
+00:05:33,130 --> 00:05:41,230
+I pozwól mi pokazać, co mam na myśli, że mogę iść dalej i powiedzieć powrót ramka danych, gdzie wartość kolumny
+
+78
+00:05:41,230 --> 00:05:43,780
+W jest większa niż zero.
+
+79
+00:05:43,780 --> 00:05:45,670
+Więc zwróć mi te wiersze.
+
+80
+00:05:45,670 --> 00:05:48,050
+Oznacza to wszystkie wiersze minus wiersz C.
+
+81
+00:05:48,340 --> 00:05:53,170
+A ponieważ jest to ramka danych, mogę w rzeczywistości wykonywać komendy stosu, takie
+
+82
+00:05:53,170 --> 00:05:57,530
+jak notacja nawiasów, np. Zwracać kolumnę X, gdzie to prawda.
+
+83
+00:05:57,700 --> 00:06:04,330
+A teraz mam takie same wyniki jak tutaj, z wyjątkiem tego, że wszystko odbywa się w jednym kroku i to jest
+
+84
+00:06:04,330 --> 00:06:06,570
+coś, co może początkowo przeszkadzać początkującym.
+
+85
+00:06:06,670 --> 00:06:09,380
+Jest tu wiele nawiasów i wiele rzeczy.
+
+86
+00:06:09,580 --> 00:06:14,620
+Ale w istocie jest to po prostu zamiast dzielenia wszystkiego na wiele kroków
+
+87
+00:06:14,620 --> 00:06:17,480
+i umieszczania wszystkiego w jednym kroku.
+
+88
+00:06:17,620 --> 00:06:24,100
+I podobnie, ponieważ jest to ramka danych, którą mogę umieścić w wielu kolumnach, przekazując
+
+89
+00:06:24,100 --> 00:06:29,890
+na listach, np. Dlaczego przecinek X, i widzimy, że otrzymujemy tutaj wynik.
+
+90
+00:06:29,920 --> 00:06:36,100
+Pozwól mi iść dalej i jeszcze raz przerwijmy tę linię, aby pokazać kroki, które podejmujemy.
+
+91
+00:06:36,100 --> 00:06:41,090
+Najpierw pójdziemy i powiemy, że Boudia jest równa.
+
+92
+00:06:41,680 --> 00:06:48,250
+Cóż, powie to seria bhool, a ponieważ jest trochę dokładniejsza, jesteśmy w DFW jest większa
+
+93
+00:06:48,250 --> 00:06:49,140
+niż zero.
+
+94
+00:06:49,150 --> 00:06:56,590
+Więc jeśli powiem, że seria bhool otrzymuję tę boolowską serię, to co mam
+
+95
+00:06:56,590 --> 00:07:04,010
+zamiar zrobić, to powiedzieć, że wynik jest równy DSF tej serii bool.
+
+96
+00:07:04,510 --> 00:07:06,870
+Sprawdźmy wyniki.
+
+97
+00:07:07,630 --> 00:07:15,690
+I powinno być po prostu tam, gdzie ta seria była prawdziwa, czyli b d e, i jest mój wynik.
+
+98
+00:07:15,820 --> 00:07:18,690
+To jest cała ramka danych bez tego, co widział rząd.
+
+99
+00:07:18,760 --> 00:07:28,200
+A potem mogę iść dalej i zaoferować ten wynik wywołać listę kolumn, abyśmy mogli iść dalej i powiedzieć, dlaczego przecinek X
+
+100
+00:07:28,840 --> 00:07:33,910
+i jeśli chcemy, możemy nawet oddzielić oddzielne to i jeszcze jeden krok,
+
+101
+00:07:34,360 --> 00:07:43,840
+mówiąc, że Mike wzywa do kolumn przechodząc do tej listy, a następnie wypowiadając wynik wywołań Mike'a i otrzymujemy dokładnie to samo,
+
+102
+00:07:43,840 --> 00:07:48,760
+co tutaj zrobiliśmy w jednym wierszu, jak w wielu wierszach.
+
+103
+00:07:48,910 --> 00:07:53,840
+Oznacza to, że jeśli kiedykolwiek pomylisz się z czymś, co wygląda na tonę nawiasów i Pandurs, sprawdź,
+
+104
+00:07:54,070 --> 00:07:56,110
+czy możesz podzielić go na kilka kroków.
+
+105
+00:07:56,110 --> 00:08:00,640
+Jeśli to ma dla ciebie sens w trakcie kursu, będziemy robić tego typu notacje.
+
+106
+00:08:00,910 --> 00:08:02,200
+Rodzaj jednego wkładu.
+
+107
+00:08:02,200 --> 00:08:06,100
+A ponieważ coraz bardziej czujesz pandy, coraz częściej używasz tych
+
+108
+00:08:06,100 --> 00:08:11,080
+linerów, ale jeśli kiedykolwiek będziesz zdezorientowany, zawsze możesz podzielić je na kilka etapów.
+
+109
+00:08:11,080 --> 00:08:15,970
+Jedyną wadą, jeśli chodzi o sprowadzanie jej z kilku kroków, jest to, że zajmujesz pamięć,
+
+110
+00:08:16,150 --> 00:08:18,130
+która jest zdefiniowana przez zmienną.
+
+111
+00:08:18,220 --> 00:08:23,260
+Tak więc, póki masz coraz lepsze pandy, chcesz przejść do prostego, jednokreskowego abstrakcji
+
+112
+00:08:23,260 --> 00:08:24,750
+wszystkich tych poleceń.
+
+113
+00:08:24,760 --> 00:08:30,370
+W porządku, przerwij teraz film i naprawdę upewnij się, że rozumiesz, jak działa linia w 58.
+
+114
+00:08:30,370 --> 00:08:36,280
+Oto dokładnie to samo, co oddzielenie na wiele linii.
+
+115
+00:08:36,310 --> 00:08:36,700
+W porządku.
+
+116
+00:08:36,700 --> 00:08:38,230
+Idźmy dalej i eksplorujmy naprawdę szybko.
+
+117
+00:08:38,230 --> 00:08:42,490
+Pojęcie stosowania wielu warunków, takich jak dwa lub więcej warunków.
+
+118
+00:08:42,580 --> 00:08:48,940
+Teraz czujemy się dobrze z robieniem czegoś takiego, co zwraca podzbiór ramek danych na
+
+119
+00:08:48,940 --> 00:08:50,700
+podstawie jednego warunku.
+
+120
+00:08:50,740 --> 00:08:56,320
+Ale co jeśli potrzebujesz wielu warunków, takich jak gdzie w jest większe od zera, a Y jest większe
+
+121
+00:08:56,410 --> 00:08:57,170
+od 1.
+
+122
+00:08:57,520 --> 00:09:06,910
+Cóż, co możesz zrobić, to spróbować czegoś podobnego w nawiasach w jednym warunku, a następnie powiedzieć
+
+123
+00:09:06,970 --> 00:09:10,210
+i przekazać w innym warunku.
+
+124
+00:09:10,210 --> 00:09:11,740
+A to zwróci błąd.
+
+125
+00:09:11,970 --> 00:09:17,710
+Zamierzam zrobić to celowo, aby wyjaśnić, dlaczego jest tu jakiś błąd i jest to powszechny
+
+126
+00:09:17,710 --> 00:09:23,410
+błąd dla początkujących, aby umieścić to i tutaj, a dostaniesz błąd, który mówi coś o
+
+127
+00:09:23,410 --> 00:09:24,370
+dwuznacznej serii.
+
+128
+00:09:24,370 --> 00:09:30,520
+Przewińmy tutaj, widzimy, że wartość prawdy w serii jest niejednoznaczna.
+
+129
+00:09:30,520 --> 00:09:37,420
+Próbuje powiedzieć, że normalny i operator Pythona nie może w rzeczywistości wziąć pod uwagę szeregu
+
+130
+00:09:37,750 --> 00:09:43,960
+wartości logicznych w porównaniu do innej serii wartości logicznych, a operator może brać
+
+131
+00:09:43,960 --> 00:09:47,680
+pod uwagę tylko pojedyncze boole'y na raz.
+
+132
+00:09:47,680 --> 00:09:54,790
+Tak więc true i false zwraca false true i true zwraca true etc ..
+
+133
+00:09:55,090 --> 00:10:03,190
+Oznacza to, że gdy przekażesz całą serię wartości boolowskich, takich jak ten, operator i zaczyna się
+
+134
+00:10:03,190 --> 00:10:04,250
+mylić.
+
+135
+00:10:04,390 --> 00:10:09,880
+Jest w stanie poradzić sobie tylko z tymi pojedynczymi instancjami wartości boolowskich, dlatego kiedy pracujesz z
+
+136
+00:10:09,880 --> 00:10:15,230
+pandami i chcesz mieć wiele warunków, które musisz użyć w ampersandach, to jest to.
+
+137
+00:10:15,250 --> 00:10:20,360
+I tak będzie to zmiana 7 na klawiaturze dla większości standardowych klawiatur.
+
+138
+00:10:20,620 --> 00:10:25,660
+Zauważ tutaj, że przekazuję te warunki w nawiasach, aby pokazać wyraźny rozdział pomiędzy
+
+139
+00:10:25,660 --> 00:10:26,790
+tymi warunkami.
+
+140
+00:10:26,920 --> 00:10:31,070
+A jeśli to zrobię, otrzymam wiersz E, w którym to się dzieje.
+
+141
+00:10:31,510 --> 00:10:32,840
+OK, chodźmy to przełamać.
+
+142
+00:10:32,860 --> 00:10:39,430
+Jeden szybki ostatni raz, gdy próbujesz użyć wielu warunków, nie możesz używać normalnego i
+
+143
+00:10:39,490 --> 00:10:40,530
+operatora Pythona.
+
+144
+00:10:40,960 --> 00:10:47,470
+Musisz użyć znaku ampersand, a następnie przejść w wielu warunkach w nawiasach, a następnie umieścić go
+
+145
+00:10:47,470 --> 00:10:49,830
+w nawiasach na ramkę danych.
+
+146
+00:10:50,050 --> 00:10:57,130
+Jeśli chcesz wykonać operację OR, możesz po prostu zastąpić ją operatorem rur, który znajduje się tuż nad
+
+147
+00:10:57,180 --> 00:10:57,660
+twoim.
+
+148
+00:10:57,760 --> 00:11:04,110
+Zwykle w przypadku większości klawiatur na klawiszu Enter, idź tuż nad nim, a następnie wykonaj przesunięcie w tym ukośniku odwrotnym.
+
+149
+00:11:04,240 --> 00:11:09,280
+A to powinno ci dać operatora rury i to będzie zamiennik dla lub ponieważ
+
+150
+00:11:09,280 --> 00:11:12,160
+jeśli spróbujesz użyć lub dostaniesz ten sam błąd.
+
+151
+00:11:12,250 --> 00:11:18,160
+Tak jest z lub jeśli spróbuję tego z normalnym Pythonem lub Znowu dostanę wartość prawdy z serii
+
+152
+00:11:18,160 --> 00:11:18,910
+jest niejednoznaczna.
+
+153
+00:11:18,970 --> 00:11:24,380
+A to dlatego, że dostajesz serię tych wartości zamiast tylko jednej lub dwóch wartości logicznych.
+
+154
+00:11:24,450 --> 00:11:27,840
+OK, możesz iść dalej i odwoływać się do notatek, jeśli chcesz więcej przykładów tego.
+
+155
+00:11:27,940 --> 00:11:33,220
+Zasadniczo, jeśli chcesz, aby wiele warunków przechodziło w każdym warunku w nawiasach,
+
+156
+00:11:33,220 --> 00:11:41,650
+a następnie użyj końcówki ampersand lub pipe na końcu, lub przejdźmy teraz i przełączmy biegi, aby porozmawiać o indeksie i trochę
+
+157
+00:11:41,650 --> 00:11:47,140
+więcej szczegółów na ten temat, które omówimy teraz resetuje indeks lub ustawia go na
+
+158
+00:11:47,170 --> 00:11:48,140
+coś innego.
+
+159
+00:11:48,160 --> 00:11:50,770
+Pozwól, że przejdę dalej i przyjrzę się naszej oryginalnej ramie danych.
+
+160
+00:11:50,770 --> 00:11:54,610
+Chcę wejść i wyczyścić te komórki, uruchamiając je.
+
+161
+00:11:54,740 --> 00:11:56,820
+I spójrzmy na naszą ramkę danych.
+
+162
+00:11:56,860 --> 00:12:03,970
+Znowu mamy Rose aide w kolumnach w do Z, aby przywrócić indeks do wartości domyślnej, która jest
+
+163
+00:12:03,970 --> 00:12:09,070
+tylko indeksem zasięgu lub 1 2 3 4 aż do n-tego rzędu.
+
+164
+00:12:09,210 --> 00:12:16,780
+Możesz to zrobić, wywołując indeks podkreślenia zerowania metody i pamiętaj, aby zamknąć nawiasy, w których faktycznie
+
+165
+00:12:16,870 --> 00:12:18,380
+uruchamiamy tę metodę.
+
+166
+00:12:18,900 --> 00:12:26,950
+A jeśli zadzwonisz do tego zawiadomienia, otrzymasz indeks do kolumny, a następnie otrzymasz aktualny
+
+167
+00:12:27,010 --> 00:12:28,690
+indeks liczbowy.
+
+168
+00:12:28,690 --> 00:12:32,320
+I tak można zresetować indeks.
+
+169
+00:12:32,710 --> 00:12:37,530
+Coś, o czym warto tutaj wspomnieć, jest podobne do wielu innych danych z operacji.
+
+170
+00:12:37,570 --> 00:12:42,010
+To nie występuje, dopóki nie określisz, że ma on miejsce w miejscu.
+
+171
+00:12:42,010 --> 00:12:47,860
+Więc jeśli oddzwonię T. FA. Nadal mam ten oryginalny indeks
+
+172
+00:12:47,860 --> 00:12:54,480
+etykiet, jeśli chcesz, aby to rzeczywiście miało miejsce, co byś zrobił, powiedz, że jest prawdziwe i przejdzie do indeksu podkreślenia zerowania.
+
+173
+00:12:54,520 --> 00:12:56,640
+Na razie pójdziemy dalej i tego nie zrobimy.
+
+174
+00:12:56,650 --> 00:12:59,620
+W ten sposób zachowamy naszą oryginalną ramkę danych.
+
+175
+00:12:59,650 --> 00:13:06,680
+Teraz kontynuuj i usuń to ponownie, jeśli chcesz zresetować indeks do wartości liczbowej.
+
+176
+00:13:06,790 --> 00:13:12,080
+Możesz po prostu użyć tego indeksu Reesa, a twój stary indeks stanie się kolumną twojej ramki danych.
+
+177
+00:13:12,630 --> 00:13:13,140
+DOBRZE.
+
+178
+00:13:13,300 --> 00:13:19,060
+Pójdźmy dalej i pokażmy jeszcze jeden nowy przykład indeksu, na przykład ustawienie indeksu,
+
+179
+00:13:19,150 --> 00:13:25,500
+i aby to zrobić, mam zamiar utworzyć nowy indeks o nazwie New i n d.
+
+180
+00:13:27,250 --> 00:13:32,910
+I wykorzystam tutaj małą sztuczkę, którą wyjaśnię w ciągu sekundy.
+
+181
+00:13:33,040 --> 00:13:37,580
+To będzie garść skrótów państwowych i zamierzam powiedzieć, że podzielone na ten ciąg.
+
+182
+00:13:38,020 --> 00:13:44,050
+I pamiętaj, że oderwanie łańcucha powinno oznaczać popularną metodę dzielenia pustego miejsca.
+
+183
+00:13:44,230 --> 00:13:48,960
+Ale jest to dobry sposób na utworzenie listy zamiast wpisywania każdego przecinka.
+
+184
+00:13:49,240 --> 00:13:54,850
+Tak więc chcę iść dalej i ustawić tę listę na równą nowości.
+
+185
+00:13:54,850 --> 00:14:02,350
+Mam tutaj moje nowe wartości indeksu i zamierzam zrobić to jako kolumnę w mojej ramce danych.
+
+186
+00:14:03,160 --> 00:14:09,520
+Powiem więc, że państwa DFA są równe nowemu i d.
+
+187
+00:14:09,640 --> 00:14:12,610
+A ponieważ wspominają mecz, więc jest tu pięć rzeczy.
+
+188
+00:14:12,700 --> 00:14:16,030
+Tutaj będzie pasować od 0 do 4 w stanie frame.
+
+189
+00:14:16,060 --> 00:14:24,070
+Jeśli więc sprawdzę ramkę danych, mam nową kolumnę o nazwie stany CA NY z RCO.
+
+190
+00:14:24,100 --> 00:14:29,000
+Teraz wiemy, jak zresetować indeks, który właśnie wykonuje reset wskaźnika indeksu podkreślenia.
+
+191
+00:14:29,170 --> 00:14:34,150
+Ale jeśli masz kolumnę w ramce danych, która ma być indeksem, który
+
+192
+00:14:34,150 --> 00:14:37,950
+możesz wykonać, powiedz, ustaw indeks zamiast resetować indeks.
+
+193
+00:14:38,110 --> 00:14:46,120
+Na przykład mogę powiedzieć DF kropka zestaw podkreślenia indeksu, a następnie przekazać w kolumnie nazwę, która ma być
+
+194
+00:14:46,120 --> 00:14:54,100
+nowym indeksem tak stwierdza tutaj i jeśli zrobię shift wprowadź teraz kolumna stanów stała się indeksem.
+
+195
+00:14:54,100 --> 00:15:00,320
+Pamiętaj, jeśli nie zachowujesz tych informacji o indeksie, więc zastąp go starym indeksem i nie będziesz
+
+196
+00:15:00,370 --> 00:15:03,630
+w stanie zachować tych informacji jako nowej kolumny.
+
+197
+00:15:03,760 --> 00:15:07,810
+W przeciwieństwie do resetowania indeksu, który pozwala mieć tę nową kolumnę.
+
+198
+00:15:07,810 --> 00:15:11,280
+To jest ustawiony indeks index / reset.
+
+199
+00:15:11,340 --> 00:15:14,750
+Ponownie, jeśli sprawdzę moją ramkę danych, to nie było na miejscu.
+
+200
+00:15:14,830 --> 00:15:16,190
+Musiałbym dodać argument.
+
+201
+00:15:16,210 --> 00:15:18,650
+Jeśli zrobię zmianę, wejdź tutaj.
+
+202
+00:15:18,680 --> 00:15:20,140
+To prawda.
+
+203
+00:15:20,810 --> 00:15:28,820
+Pozwól, że przejdę dalej i po prostu szybko przejrzyj to, co właśnie omówiliśmy, zanim przejdziemy do części 3.
+
+204
+00:15:28,820 --> 00:15:34,180
+Ok, dowiedzieliśmy się o selekcji warunkowej, która jest bardzo podobna do operacji PI.
+
+205
+00:15:34,180 --> 00:15:39,550
+Zasadniczo otrzymujesz ramkę danych wartości boolowskich i jeśli przekażesz całą ramkę danych wartości logicznych, otrzymasz wartości, w
+
+206
+00:15:39,880 --> 00:15:44,830
+których jest ona prawdziwa, a otrzymasz wartość n lub no, w której była ona fałszywa.
+
+207
+00:15:44,830 --> 00:15:52,090
+Jeśli przekażesz serię wartości logicznych, takich jak kolumna z operatorem porównania, otrzymasz tylko wiersze z ramek
+
+208
+00:15:52,090 --> 00:15:57,850
+danych, w których poważna okazała się prawdą, a jeśli chcesz, możesz podzielić
+
+209
+00:15:57,910 --> 00:16:00,350
+je na kilka kroków.
+
+210
+00:16:00,360 --> 00:16:03,160
+Ponownie te dwie komórki są prawdopodobnie najważniejsze do zrozumienia.
+
+211
+00:16:03,160 --> 00:16:07,810
+Z tego wykładu, jeśli to rozumiesz, rozumiesz, jak dokonać selekcji warunkowej w trybie
+
+212
+00:16:07,810 --> 00:16:08,970
+bez głowy.
+
+213
+00:16:09,190 --> 00:16:15,490
+Następnie przewijanie w dół, jeśli chcesz dokonać wielokrotnego wyboru warunkowego, możesz zrobić ampersand lub operator potoku
+
+214
+00:16:15,490 --> 00:16:19,990
+nie może używać wbudowanego w Pythona i / lub operatorów.
+
+215
+00:16:20,170 --> 00:16:27,460
+Ze względu na niejednoznaczne wartości w serii Prawda i pamiętaj, aby użyć nawiasów w celu
+
+216
+00:16:27,460 --> 00:16:30,040
+oddzielenia każdej warunkowej instrukcji wyboru.
+
+217
+00:16:30,040 --> 00:16:31,300
+W końcu mamy reset.
+
+218
+00:16:31,330 --> 00:16:38,650
+Indeks resetowania indeksu po prostu zresetuje indeks do indeksu numerycznego i wziął stary indeks i ustawił go
+
+219
+00:16:38,650 --> 00:16:45,670
+jako nową kolumnę o nazwie index, a następnie można ustawić nowy indeks zamiast resetować indeks oparty
+
+220
+00:16:45,970 --> 00:16:49,910
+na bieżącej kolumnie, mówiąc tylko Ustaw indeks podkreślenia.
+
+221
+00:16:50,170 --> 00:16:53,090
+Obie te metody nie są domyślnie stosowane.
+
+222
+00:16:53,140 --> 00:16:55,560
+Dlatego upewnij się, że ECO są prawdziwe.
+
+223
+00:16:55,690 --> 00:16:57,970
+Jeśli chcesz, aby zmiana była trwała.
+
+224
+00:16:58,030 --> 00:17:00,550
+W porządku, to wszystko na ten wykład.
+
+225
+00:17:00,550 --> 00:17:01,350
+Dziękuję wszystkim.
+
+226
+00:17:01,390 --> 00:17:04,800
+Zobaczę na następnym wykładzie lub omówimy indeks wyżej.
+
+227
+00:17:04,960 --> 00:17:08,630
+Ponownie wszystkie te notatki znajdują się w notatniku zwanym Ramkami danych.
+
+228
+00:17:08,650 --> 00:17:10,210
+Dzięki, a zobaczę, czy następny wykład

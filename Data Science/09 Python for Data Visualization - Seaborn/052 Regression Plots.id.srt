@@ -1,0 +1,347 @@
+1
+00:00:05,190 --> 00:00:10,920
+Halo semua dan selamat datang di ceramah plot regresi untuk seaborne Seaborn memiliki banyak kemampuan bawaan untuk
+
+2
+00:00:10,920 --> 00:00:12,260
+agresi dan plot.
+
+3
+00:00:12,270 --> 00:00:16,320
+Namun kami tidak akan membahas regresi sampai bagian pembelajaran mesin dari kursus ini.
+
+4
+00:00:16,350 --> 00:00:22,590
+Jadi untuk saat ini hanya akan mencakup fungsi L dan plot. M. plot memungkinkan Anda untuk menampilkan model linier
+
+5
+00:00:22,670 --> 00:00:23,560
+dengan Seaborn.
+
+6
+00:00:23,730 --> 00:00:28,090
+Pelajari juga cara mengukur dan mengubah rasio aspek untuk petak seaborne.
+
+7
+00:00:28,140 --> 00:00:30,960
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+8
+00:00:31,020 --> 00:00:32,980
+Baiklah, saya di notebook Jupiter.
+
+9
+00:00:33,030 --> 00:00:37,550
+Saya ingin mengepalai pelabuhan laut impor bernama Matt plotless in line dan saya telah memuat kumpulan
+
+10
+00:00:37,550 --> 00:00:39,410
+data kiat yang telah kami kerjakan.
+
+11
+00:00:39,480 --> 00:00:46,020
+Pergi dan tunjukkan cara menggunakan plot L-M untuk membuat plot model linier yang sangat
+
+12
+00:00:47,150 --> 00:00:56,850
+sederhana yang Anda sebut Esson L. M. plot dan kemudian fitur apa yang Anda inginkan pada
+
+13
+00:00:56,850 --> 00:01:04,980
+sumbu x versus sumbu y akan masuk ke total tagihan plot dan pada sumbu y akan maju dan menyebutnya di sumber data kami akan menjadi tips.
+
+14
+00:01:05,120 --> 00:01:10,290
+Sekarang jika Anda melanjutkan dan menjalankan yang kami lihat, pada dasarnya kami memiliki sebar
+
+15
+00:01:10,290 --> 00:01:17,340
+plot dengan kesesuaian linear di atasnya dan Anda benar-benar dapat menentukan hewe juga jika Anda menginginkan pemisahan berdasarkan fitur kategorikal.
+
+16
+00:01:17,820 --> 00:01:20,400
+Misalnya kita dapat menentukan Huie untuk jenis kelamin.
+
+17
+00:01:21,060 --> 00:01:26,340
+Dan sekarang pada dasarnya Anda memiliki dua plot pencar dan dua pas linear di atas ini dan
+
+18
+00:01:26,400 --> 00:01:30,870
+ini pada dasarnya jauh untuk disimpulkan dari plot ini adalah bahwa pria dan wanita
+
+19
+00:01:30,870 --> 00:01:35,190
+pada dasarnya memiliki fit linear yang sama sejauh total tagihan vs tip.
+
+20
+00:01:35,520 --> 00:01:41,340
+Sesuatu yang perlu diperhatikan di sini adalah mereka dapat benar-benar mulai lulus dalam parameter gaya hidup plot seperti yang
+
+21
+00:01:41,400 --> 00:01:44,900
+Anda inginkan untuk mempengaruhi penanda atau jenis penanda di sini.
+
+22
+00:01:44,910 --> 00:01:53,400
+Anda bisa mulai mengatakan sesuatu seperti ini akan masuk dan mengatakan penanda sama dengan.
+
+23
+00:01:53,420 --> 00:01:57,080
+Saat kita berhadapan dengan rona di sini kita memiliki dua penanda terpisah yang kita butuhkan.
+
+24
+00:01:57,150 --> 00:02:03,210
+Dia bisa melewati semua daftar jenis penanda sehingga saya bisa masuk dan mengatakan sedikit O untuk satu penanda dan
+
+25
+00:02:03,240 --> 00:02:09,300
+kemudian huruf kecil V untuk yang lainnya dan penanda-penanda ini simbol-simbol ini berasal dari peta plus simbol penanda Lib.
+
+26
+00:02:09,630 --> 00:02:15,990
+Jadi pergi dan jalankan itu dan kemudian kita melihat kita memiliki terbalik lalu segitiga untuk wanita dan lingkaran untuk pria.
+
+27
+00:02:16,350 --> 00:02:22,110
+Sekarang jika itu sebenarnya tidak cukup besar bagi Anda untuk melihat, Anda dapat melanjutkan
+
+28
+00:02:22,170 --> 00:02:31,020
+dan mulai menambahkan apa yang dikenal sebagai sebar menggarisbawahi parameter ks dan pada dasarnya apa artinya saya benar-benar dapat melewati parameter plot
+
+29
+00:02:31,020 --> 00:02:35,710
+peta lib bahkan lebih langsung ke Piel t panggilan sebar itu.
+
+30
+00:02:35,940 --> 00:02:37,520
+Jadi apa yang dilakukan seaborne dengan ini.
+
+31
+00:02:37,560 --> 00:02:43,180
+S dan s lm plot adalah sebenernya memanggil plot peta lib sangat banyak di bawah tenda.
+
+32
+00:02:43,260 --> 00:02:50,220
+Dan jika Anda ingin memengaruhi plot peta, hidup langsung dari seaborne apa yang akhirnya Anda lakukan dan
+
+33
+00:02:50,220 --> 00:02:55,520
+kasus per kasus seperti ini sehingga Anda harus merujuk dokumentasi yang diperlukan.
+
+34
+00:02:55,620 --> 00:03:02,340
+Tetapi jika Anda ingin untuk kasus ini mempengaruhi sebar Anda akan melewati kamus apa pun sehingga
+
+35
+00:03:02,340 --> 00:03:07,550
+saya dapat melanjutkan dan mengatakan kamus dan mengubah ukurannya menjadi sekitar 100.
+
+36
+00:03:07,590 --> 00:03:10,000
+Dan ini benar-benar akan mempengaruhi ukuran marker ini.
+
+37
+00:03:10,030 --> 00:03:14,270
+Anda akan menjalankan pertunjukan itu dan Anda telah membuat spidolnya jauh lebih besar.
+
+38
+00:03:14,580 --> 00:03:20,940
+Jadi ini sebenarnya hanya panggilan untuk memetakan plot lib dan apa yang terjadi di bawah kap Seaborn.
+
+39
+00:03:20,940 --> 00:03:25,850
+Dengan kata lain Anda hanya melewati kamus apa pun dengan argumen lib plot peta dasar dan dalam hal ini adalah.
+
+40
+00:03:25,890 --> 00:03:30,960
+Adapun ukuran sebar pada umumnya Anda mungkin tidak akan mengingat hal semacam ini
+
+41
+00:03:30,960 --> 00:03:33,900
+dari atas kepala Anda tetapi referensi dokumentasi.
+
+42
+00:03:33,900 --> 00:03:38,810
+Dan Anda mungkin tidak akan menyesuaikan ke tingkat ini yang sering dengan Seaborn.
+
+43
+00:03:39,210 --> 00:03:43,430
+Anda akan melanjutkan dan menyesuaikan data Anda terlebih dahulu sebelum melakukan tindakan semacam ini.
+
+44
+00:03:43,770 --> 00:03:46,060
+Mari kita lanjutkan dan tunjukkan beberapa opsi lagi di sini.
+
+45
+00:03:46,170 --> 00:03:52,410
+Jika Anda tidak ingin dipusingkan dengan ukuran marker, Anda sebenarnya dapat menggunakan kotak
+
+46
+00:03:52,410 --> 00:03:59,500
+alih-alih dipisahkan oleh Hugh sehingga Anda dapat menambahkan lebih banyak dengan mengatakan Asinus berpikir Ellen plot.
+
+47
+00:03:59,610 --> 00:04:08,390
+Mari kita lanjutkan dan salin dan tempelkan tip tagihan dan data dan kita akan terus maju dan melakukannya.
+
+48
+00:04:08,400 --> 00:04:16,080
+Setelah melihat ini alih-alih menentukan sesuatu seperti Heugh sama dengan jenis kelamin yang mengubah rona warna Anda benar-benar
+
+49
+00:04:16,500 --> 00:04:23,760
+dapat mulai memanggil faktor atau plot grid seperti mengatakan panggilan jenis kelamin yang sama untuk kolom.
+
+50
+00:04:24,000 --> 00:04:29,060
+Dan sekarang Anda harus memisahkan plot kolom di sini dipisahkan oleh kategori jenis kelamin.
+
+51
+00:04:29,130 --> 00:04:31,110
+Jadi pria versus wanita.
+
+52
+00:04:31,110 --> 00:04:37,140
+Jadi alih-alih memisahkannya dengan warna yang dipisahkan oleh kolom dan Anda dapat melanjutkan logika semacam ini pada
+
+53
+00:04:37,140 --> 00:04:38,040
+baris juga.
+
+54
+00:04:38,070 --> 00:04:45,510
+Jika Anda ingin menambahkan variabel lain untuk melihat Anda dapat mengatakan baris sama dengan sesuatu seperti kolom waktu dan sekarang Anda
+
+55
+00:04:46,400 --> 00:04:52,130
+memiliki baris dan waktu dan ini pada dasarnya hanya melakukan panggilan grid dan panggilan grup Fassett
+
+56
+00:04:52,140 --> 00:04:55,130
+yang telah kita pelajari sebelumnya di kuliah grid.
+
+57
+00:04:55,200 --> 00:05:00,360
+Tapi ini sedikit lebih otomatis karena kami hanya menambahkan panggilan dan baris ke panggilan plot L-M.
+
+58
+00:05:00,360 --> 00:05:01,790
+Jadi itu membuatnya jauh lebih mudah.
+
+59
+00:05:01,790 --> 00:05:05,220
+Sekarang kita tidak harus berurusan dengan Fassett hebat sepanjang waktu.
+
+60
+00:05:05,220 --> 00:05:11,250
+Sekarang jika karena alasan tertentu Anda masih ingin merencanakan lebih banyak variabel, Anda dapat menambahkan hugh back end
+
+61
+00:05:11,250 --> 00:05:14,750
+sehingga Anda dapat mengatakan Heugh sama dengan katakanlah kolom lain.
+
+62
+00:05:14,880 --> 00:05:22,920
+Saya ingin masuk dan mengatakan kolom adalah hari yang kita miliki Kamis Jumat, Sabtu dan Minggu adalah kolom.
+
+63
+00:05:22,920 --> 00:05:25,380
+Ini akan mengubah rona kembali ke seks.
+
+64
+00:05:25,520 --> 00:05:31,040
+Jadi ini akan memberi kita plot yang cukup informatif tetapi akan banyak informasi di sini sehingga Anda dapat melihat ada
+
+65
+00:05:31,070 --> 00:05:33,900
+banyak hal yang terjadi di sini dan banyak informasi.
+
+66
+00:05:33,900 --> 00:05:38,610
+Jadi Anda mungkin hanya ingin melanjutkan dan menghilangkan baris langsung dari kelelawar dan hanya mendapatkan satu
+
+67
+00:05:40,620 --> 00:05:46,290
+kolom kembali atau satu Roback permisi dan kemudian kami memiliki semacam plot yang terlihat bagus di sini, tetapi masalahnya adalah
+
+68
+00:05:46,290 --> 00:05:48,430
+bahwa aspek dan ukuran terlihat salah.
+
+69
+00:05:48,660 --> 00:05:54,990
+Jadi tokoh Seaborn akan memiliki ukuran dan rasio aspek disesuaikan dengan ukuran dan parameter aspek.
+
+70
+00:05:55,290 --> 00:06:04,380
+Jadi, Anda masuk ke panggilan lewat laut dan kemudian Anda dapat mengubah rasio aspek dengan aspek sehingga bagus dan memberikan
+
+71
+00:06:04,380 --> 00:06:07,170
+rasio aspek 0. 6.
+
+72
+00:06:07,170 --> 00:06:11,460
+Dan ini adalah perbandingan antara tinggi dan lebar masing-masing kisi yang terpisah ini.
+
+73
+00:06:11,700 --> 00:06:18,370
+Dan kemudian Anda dapat menentukan ukuran untuk mengubah ukuran untuk menentukan ukuran 8.
+
+74
+00:06:18,870 --> 00:06:23,520
+Dan di sini dia mulai memengaruhi aspek dan ukuran rasio ini.
+
+75
+00:06:24,000 --> 00:06:27,960
+Dan sekarang Anda mungkin bertanya-tanya bagaimana cara mengubah ukuran font yang masih terlalu kecil untuk
+
+76
+00:06:27,960 --> 00:06:30,150
+dibaca atau bagaimana cara mengontrol estetika lebih jauh.
+
+77
+00:06:30,270 --> 00:06:35,700
+Nah yang akan kita lakukan adalah mengarahkan ini ke kuliah gaya dan warna kita yang akan
+
+78
+00:06:35,700 --> 00:06:42,780
+datang berikutnya di mana kita akan menunjukkan kepada Anda bagaimana mengontrol fitur-fitur yang lebih mendasar dari plot ini seperti pewarnaan gaya
+
+79
+00:06:42,780 --> 00:06:43,950
+ukuran font dll.
+
+80
+00:06:44,160 --> 00:06:46,950
+Sejauh kuliah ini menyangkut kita cukup banyak dilakukan.
+
+81
+00:06:46,980 --> 00:06:51,360
+Hal utama yang saya ingin Anda keluar dari ini adalah bahwa untuk memanggil plot model
+
+82
+00:06:51,410 --> 00:06:58,140
+linier Anda hanya memanggil s dan slm plot melewati kolom xy Anda dan mengatur data Anda dan kemudian Anda dapat melewatkan Hugh untuk
+
+83
+00:06:58,140 --> 00:07:02,130
+fitur-fitur yang lebih canggih ini seperti pengaturan ukuran marker atau mengubah jenis marker.
+
+84
+00:07:02,130 --> 00:07:06,420
+Silakan dan rujuk buku catatan dan tautan ke dokumentasi di buku catatan.
+
+85
+00:07:06,570 --> 00:07:07,050
+Baiklah.
+
+86
+00:07:07,260 --> 00:07:11,450
+Jika Anda memiliki pertanyaan, jangan ragu untuk memasang forum Tanya Jawab dan saya akan dengan senang hati membantu Anda.
+
+87
+00:07:11,460 --> 00:07:13,560
+Terima kasih dan sampai jumpa di kuliah berikutnya.

@@ -1,0 +1,879 @@
+1
+00:00:05,520 --> 00:00:09,570
+Witam wszystkich i zapraszam do trzeciej części kursu zderzenia Pythona.
+
+2
+00:00:09,570 --> 00:00:13,470
+Idźmy dalej i wskoczmy z powrotem do notatnika Jowisza, gdzie ostatnio skończyliśmy.
+
+3
+00:00:13,470 --> 00:00:13,710
+W porządku.
+
+4
+00:00:13,710 --> 00:00:15,260
+Jestem w notesie Jowisza.
+
+5
+00:00:15,270 --> 00:00:18,680
+Ostatni raz przerwaliśmy, jeśli stwierdzimy elif i L.
+
+6
+00:00:18,810 --> 00:00:25,350
+Teraz przejdziemy i szybko zakryjemy pętle, a pętle pętli pozwalają na powtórzenie sekwencji, w
+
+7
+00:00:25,410 --> 00:00:33,770
+której zamierzam zrobić obiekt o nazwie S-C Q Dla sekwencji i powiedzieć, że to jeden dwa trzy cztery pięć.
+
+8
+00:00:34,380 --> 00:00:35,860
+Więc to tylko lista liczb.
+
+9
+00:00:36,000 --> 00:00:41,310
+Następnie mogę użyć pętli for do wykonania lub wykonania bloku kodu dla każdego elementu w
+
+10
+00:00:41,310 --> 00:00:42,290
+tej sekwencji.
+
+11
+00:00:42,570 --> 00:00:44,410
+Oznacza to, że możesz zrobić coś takiego.
+
+12
+00:00:44,430 --> 00:00:45,880
+I to jest tutaj kluczowe słowo.
+
+13
+00:00:46,260 --> 00:00:53,070
+Dla elementu w, a następnie tego obiektu, który jest sekwencją, gdy kolejka wykonuje lub wykonuje pewien blok kodu.
+
+14
+00:00:53,790 --> 00:00:57,490
+W tym przypadku będzie to wydruk przedmiotu.
+
+15
+00:00:57,840 --> 00:01:04,590
+Teraz mogłem wydrukować element dla każdego elementu w tej sekwencji, ale warto zauważyć, że ten
+
+16
+00:01:04,590 --> 00:01:08,850
+tymczasowy element nazwy zmiennej może być tym, czym chcesz.
+
+17
+00:01:08,850 --> 00:01:14,600
+Tak więc na przykład mogę iść dalej i zastąpić to czymś takim jak galaretka i nadal będzie działać.
+
+18
+00:01:14,850 --> 00:01:22,050
+Więc w przypadku galaretki w sekwencji lub w galaretce drukowanej CQ, a tam jest to dokładnie to samo.
+
+19
+00:01:22,230 --> 00:01:25,850
+Prawdopodobnie chcesz wybrać te słowa lub nazwy zmiennych tymczasowych.
+
+20
+00:01:25,850 --> 00:01:27,660
+Ostrożnie tutaj.
+
+21
+00:01:27,660 --> 00:01:28,550
+To są liczby.
+
+22
+00:01:28,590 --> 00:01:34,590
+Dobry wybór może być czymś w rodzaju i M dla numeru, i w ten sposób, gdy wróci później
+
+23
+00:01:34,590 --> 00:01:40,170
+ten kod w jakimś późniejszym terminie, pamiętam, co faktycznie wykonuję lub robię tutaj, o czym należy
+
+24
+00:01:40,290 --> 00:01:45,720
+pamiętać, to ten blok kodu, który wykonuje, że nie musi być faktycznie związany z elementami
+
+25
+00:01:45,720 --> 00:01:46,680
+wewnątrz sekwencji.
+
+26
+00:01:46,680 --> 00:01:51,070
+Możesz zrobić wszystko, co chcesz, więc mogę powiedzieć "drukuj cześć".
+
+27
+00:01:51,570 --> 00:01:56,130
+I to właśnie pójdzie i powie OK dla każdego elementu tutaj zamierzam wykonać to działanie,
+
+28
+00:01:56,130 --> 00:01:59,210
+co znaczy, że po prostu wydrukuję Cześć pięć razy.
+
+29
+00:01:59,210 --> 00:02:04,650
+Teraz przejdźmy dalej i pokażmy, jak wykorzystać pętlę while do ciągłego wykonywania akcji, dopóki
+
+30
+00:02:04,650 --> 00:02:06,910
+nie zostanie spełniony jakiś warunek.
+
+31
+00:02:07,080 --> 00:02:18,750
+Mam zamiar iść dalej i wpisać I jest równe 1, a następnie powiedzieć, gdy mam mniej niż pięć dwukropków, a następnie
+
+32
+00:02:18,750 --> 00:02:24,630
+zamierzam wykonać blok kodu, podczas gdy ten warunek jest prawdziwy
+
+33
+00:02:24,630 --> 00:02:35,240
+i zamierzam jechać i powiedz, że print I jest dwukropkiem nawiasami klamrowymi, a następnie używaj tego formatu, aby przejść.
+
+34
+00:02:35,250 --> 00:02:40,740
+A teraz nie rozpoczynaj tego jeszcze, bo patrz, co się stanie. Ustawiłem oczy równe jeden, a potem
+
+35
+00:02:40,740 --> 00:02:42,890
+powiedziałem OK, jestem mniej niż pięć.
+
+36
+00:02:43,020 --> 00:02:44,260
+Śmiało i wydrukuj to.
+
+37
+00:02:44,340 --> 00:02:50,820
+Jeśli po prostu uruchomię tę studnię, dostanę nieskończoną pętlę, oznaczającą, że komórka będzie po prostu trwać wiecznie, ponieważ zawsze będę
+
+38
+00:02:50,820 --> 00:02:52,380
+miała mniej niż pięć.
+
+39
+00:02:52,710 --> 00:02:57,900
+Jeśli zdarzy ci się, że masz komórkę, to przypadkowo działa ona tylko na zawsze i zauważysz, że
+
+40
+00:02:57,900 --> 00:03:02,870
+przez ciągłe uzyskiwanie danych wyjściowych lub przez umieszczanie gwiazdki zamiast numeru przez bardzo długi czas.
+
+41
+00:03:02,880 --> 00:03:09,640
+Powinieneś pójść do pułkownika, a następnie kliknąć ponownie, aby uniknąć tego problemu.
+
+42
+00:03:09,690 --> 00:03:14,460
+Chcesz powiedzieć, dlaczego jest równa plus 1.
+
+43
+00:03:14,490 --> 00:03:18,320
+A teraz, kiedy to uruchomię, wykonuję ten blok kodu.
+
+44
+00:03:18,390 --> 00:03:22,110
+Więc zaczynamy od tego, że to pierwsza wartość, którą daliśmy.
+
+45
+00:03:22,170 --> 00:03:25,140
+Następnie wydrukowaliśmy oczy 1 i dodaliśmy 1.
+
+46
+00:03:25,170 --> 00:03:29,130
+Następnie pętla while ponownie sprawdziła, czy jest mniej niż pięć.
+
+47
+00:03:29,130 --> 00:03:30,180
+Cóż, to prawda.
+
+48
+00:03:30,180 --> 00:03:34,390
+Więc oczy print, aby dodać, że dodać 1 do niego, to trzy mniej niż pięć.
+
+49
+00:03:34,410 --> 00:03:35,500
+Cóż, to prawda.
+
+50
+00:03:35,540 --> 00:03:36,700
+Książę ma trzy.
+
+51
+00:03:36,720 --> 00:03:39,170
+Dodaj 1 do niego jest za mniej niż pięć.
+
+52
+00:03:39,180 --> 00:03:39,850
+To prawda.
+
+53
+00:03:39,870 --> 00:03:42,480
+Prince jest dla dodania 1 do niego.
+
+54
+00:03:42,480 --> 00:03:44,700
+I w końcu jest pięć mniej niż pięć.
+
+55
+00:03:44,700 --> 00:03:45,920
+Cóż, to nie jest prawda.
+
+56
+00:03:45,990 --> 00:03:49,500
+Więc poszedłem naprzód, właśnie skończyłem i wyskoczyłem z tej pętli.
+
+57
+00:03:49,620 --> 00:03:51,330
+I tak działa pętla while.
+
+58
+00:03:51,420 --> 00:03:58,410
+Zasadniczo zamierza wykonać jakiś blok kodu, podczas gdy niektóre warunki są prawdziwe.
+
+59
+00:03:58,430 --> 00:04:04,230
+OK, przejdźmy do omówienia kilku przydatnych funkcji, które są w Pythonie.
+
+60
+00:04:04,230 --> 00:04:06,930
+Naprawdę przydatnym jest zasięg.
+
+61
+00:04:07,050 --> 00:04:16,470
+Wiele razy będziesz chciał zrobić pętlę for podobną do tej dla x w cue dla sekwencji wydruku X lub pamiętaj,
+
+62
+00:04:17,010 --> 00:04:21,800
+że Q to tylko jeden dwa trzy cztery pięć.
+
+63
+00:04:21,840 --> 00:04:25,920
+Wiele razy będziesz chciał coś zrobić pewną ilość razy.
+
+64
+00:04:25,980 --> 00:04:33,090
+Teraz jednym ze sposobów jest napisanie x, a następnie wykonanie naprawdę długiej sekwencji, ale nie musisz
+
+65
+00:04:33,090 --> 00:04:34,430
+tego pisać.
+
+66
+00:04:34,440 --> 00:04:42,630
+Tak więc Python ma funkcję zakresu, a zakres będzie generatorem wartości liczbowych, więc jeśli powiesz, że
+
+67
+00:04:43,350 --> 00:04:52,330
+zakres zaczyna się od numeru, od którego chcesz zacząć, i liczby, którą chcesz zakończyć, jeśli uruchomisz, otrzymasz
+
+68
+00:04:52,330 --> 00:04:54,510
+ten zakres obiekt.
+
+69
+00:04:54,550 --> 00:05:06,460
+A co możesz zrobić, to powiedzieć, że dla x w zakresie od zera przecinkowego 5 drukowanie dwukropka X, a następnie zobaczysz 0 1 2
+
+70
+00:05:06,550 --> 00:05:12,240
+3 4 i jest to rodzaj skrótu do generowania tych wartości.
+
+71
+00:05:12,280 --> 00:05:21,820
+Jest to generator, jeśli chcesz, aby była to lista, którą możesz przekazać do funkcji listy i przekształcić ją
+
+72
+00:05:21,880 --> 00:05:23,560
+w listę.
+
+73
+00:05:23,560 --> 00:05:29,500
+Teraz widzę listę 0 1 2 3 4 i jest to bardzo szybki sposób na wykonanie czegoś
+
+74
+00:05:29,500 --> 00:05:30,690
+określoną liczbę razy.
+
+75
+00:05:30,790 --> 00:05:39,550
+Można więc powiedzieć, że nawet przy jednym zakresie liczb wynoszącym 10 i domyślnie numer początkowy wynosi zero.
+
+76
+00:05:39,550 --> 00:05:42,580
+Teraz idzie to aż do 10 elementów.
+
+77
+00:05:42,580 --> 00:05:45,820
+Ale ponieważ zaczyna się od zera, skończy się o dziewiątej.
+
+78
+00:05:45,810 --> 00:05:51,710
+Powodem jest 0 1 2 3 4 5 6 7 8 9 10 to 10 elementów.
+
+79
+00:05:51,750 --> 00:05:53,350
+W porządku.
+
+80
+00:05:53,350 --> 00:05:55,750
+To jest funkcja zakresu.
+
+81
+00:05:55,750 --> 00:06:03,010
+Teraz przejdźmy dalej i omówmy zrozumienie listy ze zrozumieniem listy, która pozwala zapisać kilka pism, gdy
+
+82
+00:06:03,370 --> 00:06:06,790
+próbujesz utworzyć pętlę for, aby utworzyć listę.
+
+83
+00:06:06,790 --> 00:06:10,960
+Pozwól, że przedstawię ci przykład użycia tego w pętli, a następnie
+
+84
+00:06:10,960 --> 00:06:13,360
+pokażę przykład zrozumienia list w akcji.
+
+85
+00:06:13,360 --> 00:06:21,610
+Zamierzam to zrobić Chcę powiedzieć x jest równy wykazowi składającemu się z liczb 1 2 3 4, a następnie mam zamiar
+
+86
+00:06:21,610 --> 00:06:27,730
+zrobić pustą listę, która jest po prostu zbiorem nawiasów, więc jest to pusta lista nic tam
+
+87
+00:06:27,730 --> 00:06:28,730
+nie ma.
+
+88
+00:06:29,010 --> 00:06:35,970
+A potem powiem o przedmiocie w X i zamierzam to wyjaśnić, zmieniając przedmiot na
+
+89
+00:06:35,980 --> 00:06:36,910
+odrętwiały.
+
+90
+00:06:37,150 --> 00:06:46,540
+Więc na razie jestem w X. Wybieram moją pustą listę i zamierzam zdrętwiałe na tę
+
+91
+00:06:46,620 --> 00:06:48,250
+moc dwójki.
+
+92
+00:06:48,370 --> 00:06:55,060
+Uruchomiłem tę komórkę, a następnie mam zamiar iść dalej i wydrukować tę pustą listę.
+
+93
+00:06:55,360 --> 00:06:56,540
+I zauważ, co tu jest.
+
+94
+00:06:56,560 --> 00:07:05,720
+Zasadniczo każda liczba z X do kwadratu 1 4 9 16 zamiast 1 2 3 dla tego rodzaju operacji jest tak powszechna
+
+95
+00:07:05,740 --> 00:07:11,500
+w Pythonie, że ciągle dodajesz wartość do listy, którą Python ma coś, co nazywa
+
+96
+00:07:11,620 --> 00:07:18,330
+się rozumieniem listy i jest to w zasadzie sposób zamiast konieczności definiowania listy i ciągłego dołączania
+
+97
+00:07:18,460 --> 00:07:22,780
+logiki do listy i używania pętli for z wcięciem dwukropka.
+
+98
+00:07:22,780 --> 00:07:28,710
+W rzeczywistości możesz wpisać to wszystko w zestaw nawiasów i szybko utworzyć listę.
+
+99
+00:07:28,720 --> 00:07:34,860
+Pozwól, że przejdę dalej i pokażę ci, jak przetłumaczyć to na kod pętli na liście. Zrozumienie pozwala na zrozumienie w
+
+100
+00:07:34,940 --> 00:07:36,000
+rodzaju pętli for.
+
+101
+00:07:36,000 --> 00:07:44,440
+Ale w końcu kończysz mówiąc, co chcesz, żeby przedmiot nazwał to odrętwiałym.
+
+102
+00:07:44,880 --> 00:07:53,260
+Tak więc moc dwóch dla zdrętwiałej, a następnie x liczby x jest tą listą.
+
+103
+00:07:53,250 --> 00:07:56,360
+I to jest w zasadzie ten sam kod tutaj.
+
+104
+00:07:56,810 --> 00:08:01,300
+Więc kiedy go uruchomię, to działa, ponieważ wszystko jest w nawiasie.
+
+105
+00:08:01,300 --> 00:08:08,230
+Pozwolę sobie odejść, aby ponownie zepsuć te kroki, zamiast wypowiadać to dołączenie, a ta pusta lista po prostu
+
+106
+00:08:08,560 --> 00:08:10,200
+powiesz coś w stylu.
+
+107
+00:08:10,500 --> 00:08:13,140
+Out jest równy, a następnie zestawowi nawiasów.
+
+108
+00:08:13,360 --> 00:08:18,280
+A następnie możesz przetłumaczyć tę pętlę na listę w zrozumieniu listy, rozbijając ją w następujący
+
+109
+00:08:18,280 --> 00:08:18,940
+sposób.
+
+110
+00:08:19,000 --> 00:08:21,400
+Złapiesz wszystko przed okrężnicą.
+
+111
+00:08:21,390 --> 00:08:25,170
+Więc na razie jestem X Kopiuj i wklej to.
+
+112
+00:08:25,500 --> 00:08:28,100
+A wtedy złapiesz, co naprawdę chcemy, na pióro.
+
+113
+00:08:28,140 --> 00:08:34,330
+W tym przypadku jest to numer podniesiony do kwadratu i wstawiony tutaj przed tą pętlą i to
+
+114
+00:08:34,410 --> 00:08:42,430
+jest to w zasadzie zrozumienie listu, które mówisz Daj mi liczby do kwadratu za darmo w X, a teraz widzisz, że dane wyjściowe
+
+115
+00:08:42,460 --> 00:08:49,350
+zostały wyczyszczone w jednej linii, więc Zrozumienie listy jest po prostu sposobem na zapisanie dla Ciebie pisania, jeśli jesteś zdezorientowany
+
+116
+00:08:49,360 --> 00:08:52,940
+przez tę składnię lub po prostu jej nie lubisz.
+
+117
+00:08:52,960 --> 00:08:54,650
+A to jest bardziej czytelne dla Ciebie.
+
+118
+00:08:54,700 --> 00:08:58,700
+Śmiało i po prostu użyj pętli pióra dla początkujących z Pythonem.
+
+119
+00:08:58,750 --> 00:09:03,270
+Tego typu składnia jest początkowo trudna do odczytania, ale wraz z
+
+120
+00:09:03,280 --> 00:09:09,960
+postępem w nauce Pythona zwykle przechodzisz do czytania ze zrozumieniem, aby uzyskać wszystko w jednym prostym wierszu.
+
+121
+00:09:10,620 --> 00:09:11,290
+DOBRZE.
+
+122
+00:09:11,530 --> 00:09:18,520
+Teraz przejdźmy dalej i porozmawiajmy o funkcjach funkcji, które pozwalają na to, że zasadniczo nie musisz ciągle
+
+123
+00:09:18,520 --> 00:09:23,740
+pisać kodu, możesz po prostu napisać go wewnątrz funkcji, a następnie wywołać
+
+124
+00:09:23,740 --> 00:09:24,850
+samą funkcję.
+
+125
+00:09:24,850 --> 00:09:36,490
+Słowem kluczowym dla funkcji jest DPF lub Def, a DCF pozwala zdefiniować funkcję, którą powiesz przestrzeni DPF nazwa
+
+126
+00:09:36,640 --> 00:09:38,210
+twojej funkcji.
+
+127
+00:09:38,320 --> 00:09:45,190
+Więc idź dalej i nazwij to moim znakiem podkreślenia, a funkcje powinny rozpoczynać się małymi literami.
+
+128
+00:09:45,380 --> 00:09:54,850
+Przekazujesz parametry, które chcesz, takie jak Parama, jeden dwukropek, a następnie wykonasz jakiś kod, abyśmy mogli
+
+129
+00:09:54,860 --> 00:10:00,410
+powiedzieć, że idziemy naprzód i jeden z Prince Coram.
+
+130
+00:10:00,990 --> 00:10:01,330
+DOBRZE.
+
+131
+00:10:01,340 --> 00:10:04,020
+To bardzo prosta funkcja.
+
+132
+00:10:04,370 --> 00:10:15,890
+Po prostu zadzwonimy teraz, mój phunk przekazuje parametr taki jak Hello i uruchomi się i wypisze ten parametr.
+
+133
+00:10:16,420 --> 00:10:18,070
+I to jest moje phunk.
+
+134
+00:10:18,640 --> 00:10:21,300
+Pozwól mi wejść i pokazać ci bardziej skomplikowany przykład.
+
+135
+00:10:21,520 --> 00:10:25,580
+Cóż, śmiało i powiedz mój funk i zestaw parametrów.
+
+136
+00:10:25,730 --> 00:10:35,770
+To będzie miało nazwę, a powiemy Prince, a my przywitamy się i możemy użyć znaku plusa ciągu w celu
+
+137
+00:10:35,840 --> 00:10:38,570
+połączenia dwóch ciągów razem.
+
+138
+00:10:38,650 --> 00:10:42,380
+To powie: print Hello plus name.
+
+139
+00:10:42,550 --> 00:10:43,990
+Śmiało i uruchom to.
+
+140
+00:10:44,090 --> 00:10:46,830
+A teraz, za mój błąd, zamierzam podać nazwisko.
+
+141
+00:10:46,910 --> 00:10:50,220
+Idzie do Jose, a teraz wraca.
+
+142
+00:10:50,440 --> 00:10:58,060
+Witaj Jose, jeśli chcesz uzyskać wartość domyślną dla jednego z tych parametrów, więc domyślna nazwa, którą możesz po
+
+143
+00:10:58,100 --> 00:11:04,720
+prostu powiedzieć, równa się, a następnie to, co pierwotne, które ma być fałszywym nazwiskiem.
+
+144
+00:11:04,810 --> 00:11:11,610
+I jeśli znowu to uruchomię, a ja nie dostanę niczego do mojego phunu, dostanę.
+
+145
+00:11:11,620 --> 00:11:12,340
+Dzień dobry.
+
+146
+00:11:12,400 --> 00:11:17,570
+Domyślna nazwa tylko wtedy, gdy mówię Jose lub inne imię.
+
+147
+00:11:17,600 --> 00:11:22,110
+Zastąpi wartość domyślną podaną wartością.
+
+148
+00:11:22,120 --> 00:11:27,740
+Możesz również powiedzieć, aby w pełni wyjaśnić, co przechodzisz do funkcjonowania, a mianowicie imię jest równe,
+
+149
+00:11:27,740 --> 00:11:29,490
+a następnie nową wartość.
+
+150
+00:11:29,750 --> 00:11:32,210
+Lub tak długo, jak umieszczasz wartości we właściwej kolejności.
+
+151
+00:11:32,260 --> 00:11:41,590
+Robienie tego w ten sposób tylko jednego kawałka właśnie takiego Jose też jest w porządku.
+
+152
+00:11:41,710 --> 00:11:49,900
+W tym miejscu należy zwrócić uwagę na to, że jeśli po prostu zadzwonisz z nawiasami, mój phunk wykona tę funkcję.
+
+153
+00:11:50,330 --> 00:11:54,910
+Jeśli pozbędziesz się tych nawiasów, nie wywołasz tej funkcji.
+
+154
+00:11:54,910 --> 00:11:58,120
+Po prostu zapytasz Pythona, jaki jest ten obiekt.
+
+155
+00:11:58,150 --> 00:11:59,320
+I zgłosi to z powrotem.
+
+156
+00:11:59,500 --> 00:12:00,780
+Och, to jest obiekt.
+
+157
+00:12:00,830 --> 00:12:04,440
+Główna funkcja o nazwie mój znak podkreślenia.
+
+158
+00:12:04,450 --> 00:12:08,920
+Miej to na uwadze, jest różnica między wywołaniem mojego podskoku w ten sposób.
+
+159
+00:12:08,920 --> 00:12:16,530
+Jest to faktyczna funkcja zamykania książąt od niej faktycznie wykonuje tę funkcję.
+
+160
+00:12:16,540 --> 00:12:22,320
+Teraz powinniśmy bardzo proste funkcje, które po prostu wypisują oświadczenie, ale wiele razy będziesz chciał
+
+161
+00:12:22,370 --> 00:12:26,330
+zwrócić wartość, abyś mógł ustawić ją na równą innej zmiennej.
+
+162
+00:12:26,330 --> 00:12:27,820
+Pozwól, że ci pokażę, o co mi chodzi.
+
+163
+00:12:28,100 --> 00:12:36,160
+Cóż, śmiało powiemy DPF i utworzymy funkcję o nazwie Kwadrat, która zajmie trochę i U-M jakiejś dwukropka,
+
+164
+00:12:36,670 --> 00:12:39,440
+a następnie zwróci tę liczbę.
+
+165
+00:12:39,430 --> 00:12:45,250
+To nie tylko wydrukuje wynik lub zwróci kwadrat z tego numeru i możesz użyć słowa kluczowego return,
+
+166
+00:12:45,310 --> 00:12:46,650
+aby to zrobić.
+
+167
+00:12:46,730 --> 00:12:51,180
+Więc wrócisz zdrętwiały do potęgi dwóch.
+
+168
+00:12:51,380 --> 00:12:58,420
+I tak mogę powiedzieć, że wyjście jest równe kwadratowi dwóch.
+
+169
+00:12:58,960 --> 00:13:03,780
+A potem, kiedy idę do przodu i sprawdzam, do czego służy produkcja.
+
+170
+00:13:03,860 --> 00:13:08,260
+I to jest różnica między drukowaniem czegoś a zwracaniem czegoś.
+
+171
+00:13:08,260 --> 00:13:12,080
+Po zwróceniu tego będziesz chciał ustawić ją równą jakiejś innej zmiennej.
+
+172
+00:13:12,230 --> 00:13:17,290
+W ten sposób możesz wywołać wyniki w tej zmiennej w porównaniu do tego, kiedy
+
+173
+00:13:17,290 --> 00:13:22,580
+drukujesz coś, co chcesz wydrukować, ale w rzeczywistości go nie zwrócisz lub przechowujesz w dowolnym miejscu.
+
+174
+00:13:22,580 --> 00:13:28,360
+Wreszcie, coś, co powinieneś wiedzieć o funkcjach, to to, że mogą
+
+175
+00:13:28,370 --> 00:13:37,630
+mieć łańcuchy dokumentacji, do których możesz dodać łańcuch dokumentacyjny do funkcji, umieszczając zestaw potrójnych cytatów i trzykrotnie zamykając
+
+176
+00:13:37,810 --> 00:13:38,770
+cytaty.
+
+177
+00:13:38,770 --> 00:13:48,160
+Zasadniczo pozwala ci umieścić gigantyczny ciąg na wielu liniach, więc możemy powiedzieć, że jest to docstring i jest to po
+
+178
+00:13:48,620 --> 00:13:51,060
+prostu naprawdę długie komentarze.
+
+179
+00:13:51,070 --> 00:13:54,260
+To jest jak wielowierszowe komentarze.
+
+180
+00:13:54,260 --> 00:14:05,960
+Możesz przejść wiele linii, a my powiemy, że funkcja ta powoduje podziałkę na liczbę.
+
+181
+00:14:06,160 --> 00:14:07,340
+Więc to robię.
+
+182
+00:14:07,420 --> 00:14:13,060
+Teraz mam ciąg znaków wewnątrz kwadratu, jeśli po prostu uruchomię Square ponownie nic się nie zmieni,
+
+183
+00:14:13,540 --> 00:14:18,500
+co się zmieni, kiedy faktycznie wywołają ciąg dokumentacji, aby uzyskać więcej informacji o
+
+184
+00:14:18,500 --> 00:14:19,390
+tej funkcji.
+
+185
+00:14:19,480 --> 00:14:22,830
+Notatnik Jupiter ma naprawdę wielką zdolność robienia tego.
+
+186
+00:14:22,880 --> 00:14:27,650
+Rozpoczynasz wpisywanie żądanej funkcji, a następnie przesuniesz kursor na końcu tej funkcji.
+
+187
+00:14:27,650 --> 00:14:34,270
+Klikasz zakładkę shift, a otrzymasz wywołanie sygnatury rzeczywistej funkcji.
+
+188
+00:14:34,420 --> 00:14:36,700
+Znaczenie funkcji oczekiwanej przez funkcję.
+
+189
+00:14:36,880 --> 00:14:40,860
+A następnie możesz rozwinąć, aby uzyskać ciąg dokumentacji.
+
+190
+00:14:40,880 --> 00:14:44,150
+I mówi, że to jest docstring może przejść wiele linii.
+
+191
+00:14:44,140 --> 00:14:49,750
+Ta funkcja Kwadrat to liczba, która będzie naprawdę przydatna nie tylko dla twoich własnych funkcji, ale także
+
+192
+00:14:49,750 --> 00:14:54,010
+dla funkcji, które są już wbudowane w biblioteki, których będziemy się uczyć.
+
+193
+00:14:54,560 --> 00:15:01,360
+Na przykład, jeśli wrócimy do tego, kiedy omawialiśmy tutaj zasięg, można by pomyśleć, że jest trochę dziwny i być może
+
+194
+00:15:01,370 --> 00:15:04,640
+trzeba będzie zapamiętać rzeczy, o ile chodzi o liczby.
+
+195
+00:15:04,660 --> 00:15:11,950
+Cóż, jeśli używasz książki Brunow, możesz po prostu wpisać zakładkę zmiany zakresu i zauważyć, że daje ona podpis, a
+
+196
+00:15:11,950 --> 00:15:17,030
+następnie ma również docstring, w którym w zasadzie mówisz o ograniczeniu zasięgu.
+
+197
+00:15:17,020 --> 00:15:20,890
+I daje ci obiekt zasięgu lub możesz powiedzieć zasięg, a następnie zacząć i zatrzymać.
+
+198
+00:15:20,980 --> 00:15:25,690
+I daje więcej informacji, takich jak zwraca obiekt, który tworzy ciąg liczb całkowitych itp. i ma dla ciebie o
+
+199
+00:15:25,690 --> 00:15:27,520
+wiele więcej informacji.
+
+200
+00:15:27,560 --> 00:15:30,580
+I tego właśnie będziemy używać cały czas w trakcie tego kursu.
+
+201
+00:15:30,670 --> 00:15:34,090
+Ten szybki dostęp do ciągów dokumentacji.
+
+202
+00:15:34,100 --> 00:15:34,700
+W porządku.
+
+203
+00:15:34,930 --> 00:15:36,740
+Cóż, idź dalej i zakończ to.
+
+204
+00:15:36,770 --> 00:15:42,470
+Omówimy w następnej części tego wyrażeń serii Arlanda wyrażeń przy użyciu mapy i
+
+205
+00:15:42,460 --> 00:15:47,330
+filtrów oraz metod, które można użyć na wspólnych obiektów typu danych.
+
+206
+00:15:47,330 --> 00:15:48,010
+W porządku.
+
+207
+00:15:48,010 --> 00:15:52,550
+Pozwól mi wyjść i szybko przejrzeć wszystko, co przeszło w tym wykładzie.
+
+208
+00:15:52,660 --> 00:15:54,430
+Przeszliśmy, jak stworzyć funkcję.
+
+209
+00:15:54,460 --> 00:15:59,590
+Kluczowym słowem jest, jeśli przekazujesz nazwę swojej funkcji, a następnie możesz przekazać parametry,
+
+210
+00:15:59,620 --> 00:16:01,420
+których oczekuje twoja funkcja.
+
+211
+00:16:01,420 --> 00:16:06,130
+A następnie ciąg znaków dla nich, które chcesz użyć, zwróci, jeśli chcesz
+
+212
+00:16:06,130 --> 00:16:08,160
+rzeczywiście zwrócić wartość tej funkcji.
+
+213
+00:16:08,190 --> 00:16:13,760
+Zapamiętaj różnicę między wywołaniem funkcji nawiasów lub bez funkcji z nawiasami.
+
+214
+00:16:13,780 --> 00:16:15,830
+Możesz po prostu uzyskać samą funkcję.
+
+215
+00:16:16,390 --> 00:16:21,170
+Dowiedzieliśmy się również o nieporozumieniu, które niszczy rodzaj pętli for w
+
+216
+00:16:21,160 --> 00:16:23,470
+pojedynczą linię wewnątrz tych nawiasów.
+
+217
+00:16:23,470 --> 00:16:28,420
+Następnie dowiedzieliśmy się o zakresie, który pozwala szybko utworzyć listę sekwencji liczb całkowitych
+
+218
+00:16:28,420 --> 00:16:30,850
+od początku do punktu zatrzymania.
+
+219
+00:16:31,210 --> 00:16:35,610
+Dowiedzieliśmy się o czterech pętlach, a także pętlach.
+
+220
+00:16:36,010 --> 00:16:38,870
+W porządku, dziękuję wszystkim, a do zobaczenia na następnym wykładzie

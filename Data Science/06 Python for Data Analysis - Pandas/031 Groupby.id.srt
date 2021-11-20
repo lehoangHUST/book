@@ -1,0 +1,359 @@
+1
+00:00:05,280 --> 00:00:09,960
+Halo semuanya dan selamat datang di grup dengan memberi kuliah untuk panda dalam kuliah ini,
+
+2
+00:00:09,960 --> 00:00:15,530
+kami akan menunjukkan kepada Anda bagaimana menggunakan grup dengan metode untuk menerangi kelompok baris data bersama dan memanggil fungsi agregat.
+
+3
+00:00:15,540 --> 00:00:20,850
+Sekarang sebelum kita benar-benar melompat ke buku catatan Jupiter. Biarkan saya dengan cepat menjelaskan apa pembelian kelompok
+
+4
+00:00:20,850 --> 00:00:25,950
+jika Anda tidak memiliki pengalaman sekuel atau Anda semua mengalami atau kebanyakan orang tahu apa yang
+
+5
+00:00:25,950 --> 00:00:28,300
+sebenarnya dilakukan oleh pernyataan GROUP BY.
+
+6
+00:00:28,560 --> 00:00:34,890
+Sederhananya dikelompokkan oleh memungkinkan Anda untuk mengelompokkan baris-baris berdasarkan kolom dan kemudian melakukan semacam
+
+7
+00:00:34,890 --> 00:00:36,840
+fungsi agregat pada mereka.
+
+8
+00:00:37,080 --> 00:00:43,390
+Misalnya dalam contoh ini di sini kita memiliki tiga partisi IDS satu dua dan tiga.
+
+9
+00:00:43,470 --> 00:00:50,220
+Dan kemudian kita memiliki beberapa nilai untuk mereka, kita dapat mengelompokkan berdasarkan kolom ID dan menggabungkannya menggunakan
+
+10
+00:00:50,220 --> 00:00:56,130
+semacam fungsi agregat di setiap fungsi pada dasarnya hanya istilah mewah untuk fungsi apa
+
+11
+00:00:56,130 --> 00:01:03,060
+pun yang mengambil dan banyak nilai lalu meludahkan atau mengeluarkan nilai tunggal seperti mengambil jumlah dari banyak nilai
+
+12
+00:01:03,330 --> 00:01:07,680
+dan mengeluarkan hasilnya atau mengambil rata-rata atau standar deviasi dll.
+
+13
+00:01:07,800 --> 00:01:13,950
+Ini semua adalah fungsi agregat dan itu semua grup dengan metode apakah ini memungkinkan Anda untuk memilih kolom ke
+
+14
+00:01:13,950 --> 00:01:14,950
+Group By
+
+15
+00:01:15,000 --> 00:01:18,250
+Itu mengumpulkan semua baris bersama-sama berdasarkan nilai kolom itu.
+
+16
+00:01:18,440 --> 00:01:21,330
+Dan kemudian Anda melakukan semacam fungsi agregat di atasnya.
+
+17
+00:01:21,360 --> 00:01:22,160
+Baiklah.
+
+18
+00:01:22,200 --> 00:01:25,980
+Tapi itu dikatakan, mari kita lanjutkan dan belajar bagaimana menggunakan GROUP BY dengan panda.
+
+19
+00:01:26,010 --> 00:01:28,820
+Saya akan pergi ke depan dan melompat ke notebook Jupiter.
+
+20
+00:01:28,860 --> 00:01:31,390
+Baiklah jadi di sini kita berada di notebook Jupiter.
+
+21
+00:01:31,530 --> 00:01:34,650
+Saya teruskan dan menyalin dan menempelkan data ini.
+
+22
+00:01:34,660 --> 00:01:40,350
+Ini pada dasarnya hanya kamus dari buku catatan dan buku catatan ini baru saja dipanggil oleh salah
+
+23
+00:01:40,350 --> 00:01:41,710
+satu folder panda.
+
+24
+00:01:41,760 --> 00:01:47,750
+OK Anda dapat melanjutkan dan mengetik ini secara manual tapi saya hanya akan mengatakan pergi ke depan dan salin
+
+25
+00:01:47,780 --> 00:01:54,780
+data ini hanya sebuah kamus dan kemudian Anda dapat melanjutkan dan mengatakan bingkai data PD dan kemudian passen kamus data itu dan secara
+
+26
+00:01:54,780 --> 00:01:58,040
+otomatis harus kemudian membuat bingkai data yang terlihat seperti ini.
+
+27
+00:01:58,050 --> 00:01:59,900
+Dan pada dasarnya ini hanya data yang dibuat-buat.
+
+28
+00:02:00,000 --> 00:02:03,170
+Kami memiliki kolom perusahaan dengan tiga kode perusahaan.
+
+29
+00:02:03,330 --> 00:02:05,390
+Google Microsoft dan Facebook.
+
+30
+00:02:05,520 --> 00:02:08,750
+Sekarang kami memiliki kolom orang dengan sekelompok orang unik di dalamnya.
+
+31
+00:02:08,910 --> 00:02:13,460
+Dan kemudian kami memiliki beberapa angka penjualan 200 120 dll.
+
+32
+00:02:13,590 --> 00:02:19,020
+Sekarang yang dapat kita lakukan adalah menggunakan grup itu dengan metode untuk mengelompokkan baris-baris berdasarkan
+
+33
+00:02:19,020 --> 00:02:25,950
+dari nama kolom misalnya, mari kita lanjutkan dan kelompokkan dengan perusahaan saya akan melanjutkan dan mengatakan ZF dan kemudian Anda
+
+34
+00:02:25,950 --> 00:02:32,070
+mengatakan grup melalui panggilan sebagai metode dan Anda melewati kolom yang ingin Anda kelompokkan dengan kasus ini.
+
+35
+00:02:32,070 --> 00:02:38,240
+Saya ingin grup di kolom perusahaan dan perhatikan apa yang saya dapatkan di sini saya hanya melakukan ini.
+
+36
+00:02:38,400 --> 00:02:43,100
+Saya akan mendapatkan grup dengan objek dan itu hanya menunjuk ke tempat itu disimpan dalam memori.
+
+37
+00:02:43,350 --> 00:02:51,750
+Apa yang bisa saya lakukan adalah menyimpan ini sebagai variabel baru sehingga saya bisa mengatakan sesuatu seperti datang untuk perusahaan
+
+38
+00:02:51,750 --> 00:02:55,290
+saya dan saya memiliki grup ini berdasarkan objek.
+
+39
+00:02:55,290 --> 00:02:58,250
+Kemudian langkah kedua menggunakan Group By.
+
+40
+00:02:58,250 --> 00:03:03,090
+Setelah Anda dikelompokkan berdasarkan kolom tersebut, lanjutkan dan panggil semacam fungsi agregat di atasnya.
+
+41
+00:03:03,420 --> 00:03:10,320
+Jadi misalnya jika saya ingin mendapatkan mean oleh perusahaan itu akan melihat kolom penjualan dan memberi saya
+
+42
+00:03:10,320 --> 00:03:13,310
+rata-rata atau penjualan rata-rata oleh perusahaan.
+
+43
+00:03:13,320 --> 00:03:18,180
+Alasan mengapa hal ini tidak dapat dilakukan untuk kolom orang adalah karena ini adalah string
+
+44
+00:03:18,180 --> 00:03:23,490
+dan tidak ada cara Anda hanya dapat mengambil rata-rata string dan itu berarti panderer secara otomatis
+
+45
+00:03:23,610 --> 00:03:26,060
+mengabaikan apa pun yang merupakan kolom non-numerik.
+
+46
+00:03:26,070 --> 00:03:32,520
+Demikian juga kita dapat melanjutkan dan melakukan fungsi agregat lainnya seperti beberapa dari semuanya sejauh penjualan
+
+47
+00:03:32,520 --> 00:03:33,760
+per perusahaan.
+
+48
+00:03:33,990 --> 00:03:42,900
+Anda bahkan dapat melakukan penyimpangan standar pada Vestey dll. dan Anda harus memperhatikan bahwa apa yang saya dapatkan
+
+49
+00:03:42,900 --> 00:03:48,760
+adalah kerangka data aktual dengan indeks yang disebut Perusahaan dan nilai kolom penjualan.
+
+50
+00:03:49,110 --> 00:03:55,920
+Dan itu berarti saya bisa melakukan hal-hal seperti penawaran indeks sehingga saya bisa mengatakan dengan datang, mari
+
+51
+00:03:55,920 --> 00:04:02,430
+kita simpulkan semua penjualan oleh perusahaan sehingga beberapa penjualan oleh perusahaan dan kemudian saya bahkan dapat
+
+52
+00:04:02,850 --> 00:04:06,440
+memanggil sesuatu seperti Dot ellos C F B.
+
+53
+00:04:07,000 --> 00:04:13,600
+Dan itu memberi saya penjualan beberapa Facebook sekarang banyak kali apa yang akan Anda lakukan sebenarnya
+
+54
+00:04:13,710 --> 00:04:17,510
+tidak menetapkan grup ini dengan objek sebagai variabel.
+
+55
+00:04:17,550 --> 00:04:19,670
+Anda mungkin akan memanggil semua ini dalam satu baris.
+
+56
+00:04:19,710 --> 00:04:25,140
+Setelah Anda mulai merasa benar-benar nyaman dengan celana tanpa lemak, mereka akan mengatakan sesuatu seperti kelompok demi perusahaan,
+
+57
+00:04:25,830 --> 00:04:27,920
+lalu Anda memanggil sesuatu seperti beberapa.
+
+58
+00:04:28,110 --> 00:04:35,160
+Dan kemudian jika Anda hanya menginginkannya untuk Facebook Anda adalah panggilan FBI dan itu semua sama saja dalam
+
+59
+00:04:35,160 --> 00:04:36,420
+satu baris sekarang.
+
+60
+00:04:36,660 --> 00:04:41,850
+Beberapa fungsi agregat berguna lain yang mungkin Anda temukan sedang Anda lakukan adalah hal-hal seperti menghitung
+
+61
+00:04:41,850 --> 00:04:44,570
+yang hanya menghitung jumlah instance atau kolom.
+
+62
+00:04:44,730 --> 00:04:49,890
+Dalam kasus ini, ia dapat mengembalikan kolom orang karena dapat menghitung berapa banyak
+
+63
+00:04:49,890 --> 00:04:53,420
+contoh seseorang terjadi di kolom atau perusahaan itu.
+
+64
+00:04:53,430 --> 00:04:57,360
+Jadi kami memiliki dua orang dan masing-masing memiliki dua penjualan dan itu masuk akal.
+
+65
+00:04:57,360 --> 00:05:00,190
+Anda juga dapat melakukan hal-hal seperti maks dan min.
+
+66
+00:05:00,960 --> 00:05:07,080
+Dan perhatikan di sini bahwa itu juga mengembalikan orang tersebut karena Python mampu menyimpan barang-barang dalam urutan abjad dan pada dasarnya
+
+67
+00:05:07,080 --> 00:05:09,410
+itulah yang saya coba tunjukkan di sini.
+
+68
+00:05:09,480 --> 00:05:17,220
+Maks adalah yang terbaru menjelang akhir alfabet dan jika Anda memanggilnya yang paling awal dalam alfabet C dan C
+
+69
+00:05:17,220 --> 00:05:19,570
+kami memiliki agen di sini.
+
+70
+00:05:19,800 --> 00:05:23,310
+Namun Anda mungkin tidak boleh menggunakan min atau maks dengan kolom string.
+
+71
+00:05:23,310 --> 00:05:27,320
+Anda mungkin akan menggunakan semua fungsi marah ini dengan kolom angka.
+
+72
+00:05:27,330 --> 00:05:34,440
+Satu hal berguna terakhir yang ingin saya tunjukkan kepada Anda dengan grup adalah banyak kali Anda dapat menggunakan GROUP BY
+
+73
+00:05:35,160 --> 00:05:42,010
+dengan metode yang dijelaskan dan itu memberi Anda banyak informasi berguna sekaligus sehingga Anda dapat mengatakan grup pemikiran ZF
+
+74
+00:05:42,030 --> 00:05:47,730
+dengan nama perusahaan dan kemudian katakan juru tulis dan itu akan memberi Anda banyak informasi.
+
+75
+00:05:47,730 --> 00:05:53,230
+Jadi misalnya untuk menghitung rata-rata simpangan baku laki-laki dan maks serta nilai ubin
+
+76
+00:05:53,250 --> 00:05:55,060
+inti untuk setiap perusahaan.
+
+77
+00:05:55,170 --> 00:05:59,490
+Dan jika Anda tidak menyukai format ini dan Anda benar-benar
+
+78
+00:06:00,060 --> 00:06:08,330
+dapat memindahkannya sehingga Anda dapat mengatakan sesuatu seperti itu memindahkan jika Anda lebih suka masing-masing perusahaan menjadi kolom daripada indeks yang sebenarnya.
+
+79
+00:06:08,520 --> 00:06:13,530
+Jadi, format apa pun yang Anda sukai lebih baik, Anda bisa menjelaskannya dan kemudian Anda bisa memanggil nama kolom
+
+80
+00:06:13,530 --> 00:06:14,260
+dari ini.
+
+81
+00:06:14,280 --> 00:06:18,780
+Jika Anda hanya tertarik pada satu perusahaan atau satu kolom.
+
+82
+00:06:18,840 --> 00:06:21,150
+Baiklah itu benar-benar untuk grup oleh.
+
+83
+00:06:21,150 --> 00:06:21,920
+Ini cukup mendasar.
+
+84
+00:06:21,930 --> 00:06:28,800
+Anda cukup memanggil frame data mengatakan Dopp dikelompokkan berdasarkan kolom yang ingin Anda kelompokkan dan kemudian metode
+
+85
+00:06:28,800 --> 00:06:34,140
+agregat apa pun yang Anda ingin agregat nilai kolom ke nilai tunggal.
+
+86
+00:06:34,140 --> 00:06:39,060
+Dan biasanya hanya berfungsi pada kolom numerik tergantung pada jenis fungsi agregat yang Anda
+
+87
+00:06:39,060 --> 00:06:39,720
+gunakan.
+
+88
+00:06:39,720 --> 00:06:45,450
+Anda akan mendapatkan lebih banyak latihan kelompok saat kita menjalani latihan serta proyek kapsul.
+
+89
+00:06:45,960 --> 00:06:46,480
+Baiklah.
+
+90
+00:06:46,620 --> 00:06:48,480
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

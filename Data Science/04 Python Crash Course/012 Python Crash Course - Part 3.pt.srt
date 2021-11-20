@@ -1,0 +1,879 @@
+1
+00:00:05,520 --> 00:00:09,570
+Olá a todos e seja bem vindo à terceira parte do curso intensivo de Python.
+
+2
+00:00:09,570 --> 00:00:13,470
+Avançemos e saltem de volta ao caderno de Jupiter, onde deixamos a última vez.
+
+3
+00:00:13,470 --> 00:00:13,710
+Tudo bem.
+
+4
+00:00:13,710 --> 00:00:15,260
+Aqui estou no caderno de Jupiter.
+
+5
+00:00:15,270 --> 00:00:18,680
+A última vez que deixamos as declarações if elif e L.
+
+6
+00:00:18,810 --> 00:00:25,350
+Agora, iremos e cobremos rapidamente os loops e, enquanto os loops para loops permitem que você faça uma
+
+7
+00:00:25,410 --> 00:00:33,770
+iteração através de uma seqüência, eu vou fazer um objeto chamado S-C Q para seqüência e dizer que é um dois três quatro cinco.
+
+8
+00:00:34,380 --> 00:00:35,860
+Então é apenas a lista de números.
+
+9
+00:00:36,000 --> 00:00:41,310
+E então eu posso usar um loop for para executar ou executar algum bloco de código para cada item
+
+10
+00:00:41,310 --> 00:00:42,290
+único nessa seqüência.
+
+11
+00:00:42,570 --> 00:00:44,410
+O que significa que você pode fazer algo como isso.
+
+12
+00:00:44,430 --> 00:00:45,880
+E essa é a palavra-chave aqui.
+
+13
+00:00:46,260 --> 00:00:53,070
+Para item em e, em seguida, esse objeto que é uma seqüência como a fila executar ou executar algum bloco de código.
+
+14
+00:00:53,790 --> 00:00:57,490
+Neste caso, isso vai ser um item de impressão.
+
+15
+00:00:57,840 --> 00:01:04,590
+E agora eu consegui imprimir o item para cada elemento nessa seqüência algo a ser observado aqui é que esse
+
+16
+00:01:04,590 --> 00:01:08,850
+item de nome de variável temporário pode ser o que quer que seja.
+
+17
+00:01:08,850 --> 00:01:14,600
+Então, por exemplo, eu posso ir em frente e substituir isso com algo como geléia e ainda funcionará.
+
+18
+00:01:14,850 --> 00:01:22,050
+Então, para gelatina em sequência ou em uma geléia de impressão CQ e lá você tem isso é exatamente o mesmo.
+
+19
+00:01:22,230 --> 00:01:25,850
+Então, você provavelmente deseja escolher essas palavras ou nomes temporários de variáveis.
+
+20
+00:01:25,850 --> 00:01:27,660
+Cuidadosamente aqui.
+
+21
+00:01:27,660 --> 00:01:28,550
+Estes são números.
+
+22
+00:01:28,590 --> 00:01:34,590
+escolha pode ser algo assim e um M para o número e dessa forma, quando ele retorna esse código em uma
+
+23
+00:01:34,590 --> 00:01:40,170
+data posterior, eu posso me lembrar do que realmente estou realizando ou fazendo aqui, algo a ter em mente
+
+24
+00:01:40,290 --> 00:01:45,720
+é que esse bloco de código que executa que não precisa estar realmente relacionado aos itens dentro da seqüência.
+
+25
+00:01:45,720 --> 00:01:46,680
+Então, uma boa
+
+26
+00:01:46,680 --> 00:01:51,070
+Você pode fazer tudo o que quiser aqui, para que eu possa escrever impressões, hello.
+
+27
+00:01:51,570 --> 00:01:56,130
+E isso só vai acontecer e diga OK para cada elemento aqui, eu vou executar essa
+
+28
+00:01:56,130 --> 00:01:59,210
+ação, o que significa que vou imprimir oi cinco vezes.
+
+29
+00:01:59,210 --> 00:02:04,650
+Agora vamos em frente e mostre como você pode usar um loop while para executar continuamente uma ação
+
+30
+00:02:04,650 --> 00:02:06,910
+até que alguma condição tenha sido atendida.
+
+31
+00:02:07,080 --> 00:02:18,750
+pontos e então vou executar algum bloco de código enquanto esta condição acontece de ser verdade e eu irei dentro e diga imprimir, eu
+
+32
+00:02:18,750 --> 00:02:24,630
+sou dois brackets curvados e depois use esse formato para passar assim.
+
+33
+00:02:24,630 --> 00:02:35,240
+Eu vou seguir em frente e digitar I é igual a 1 e, em seguida, dizer enquanto eu tenho menos de cinco
+
+34
+00:02:35,250 --> 00:02:40,740
+Agora, não corra isso ainda, porque olha o que vai acontecer Eu coloquei os olhos iguais a um e depois eu disse
+
+35
+00:02:40,740 --> 00:02:42,890
+que estava bem, eu tenho menos de cinco.
+
+36
+00:02:43,020 --> 00:02:44,260
+Vá em frente e imprima isso.
+
+37
+00:02:44,340 --> 00:02:50,820
+Se eu acabei de correr bem, recebo um ciclo infinito que significa que a célula simplesmente iria para sempre porque
+
+38
+00:02:50,820 --> 00:02:52,380
+sempre serei menos de cinco.
+
+39
+00:02:52,710 --> 00:02:57,900
+Se você tem uma célula, acidentalmente só está funcionando para sempre e você notará, continuamente
+
+40
+00:02:57,900 --> 00:03:02,870
+recebendo saída ou tendo um asterix aqui em vez de um número por muito tempo.
+
+41
+00:03:02,880 --> 00:03:09,640
+O que você deve fazer é ir para o Coronel e, em seguida, clicar em reiniciar para evitar esse problema.
+
+42
+00:03:09,690 --> 00:03:14,460
+Ir para dizer porque é igual a mais 1.
+
+43
+00:03:14,490 --> 00:03:18,320
+E agora, quando executo isso, executo esse bloco de código.
+
+44
+00:03:18,390 --> 00:03:22,110
+Então começamos com eu é aquele que foi o primeiro valor que demos.
+
+45
+00:03:22,170 --> 00:03:25,140
+Em seguida, imprimimos os olhos 1 e adicionamos 1.
+
+46
+00:03:25,170 --> 00:03:29,130
+Eu, então, o loop while novamente verificou ok quanto a menos de cinco.
+
+47
+00:03:29,130 --> 00:03:30,180
+Bem, isso é verdade.
+
+48
+00:03:30,180 --> 00:03:34,390
+Então, os olhos da impressão para adicionar que adicionar 1 é três menos de cinco.
+
+49
+00:03:34,410 --> 00:03:35,500
+Bem, isso é verdade.
+
+50
+00:03:35,540 --> 00:03:36,700
+Prince tem três.
+
+51
+00:03:36,720 --> 00:03:39,170
+Adicionar 1 para ele é por menos de cinco.
+
+52
+00:03:39,180 --> 00:03:39,850
+Isso é verdade.
+
+53
+00:03:39,870 --> 00:03:42,480
+Prince é para adicionar 1 para ele.
+
+54
+00:03:42,480 --> 00:03:44,700
+E, finalmente, é cinco menos de cinco.
+
+55
+00:03:44,700 --> 00:03:45,920
+Bem, isso não é verdade.
+
+56
+00:03:45,990 --> 00:03:49,500
+Então eu fui em frente e acabei de terminar com esse ciclo.
+
+57
+00:03:49,620 --> 00:03:51,330
+E é assim que funciona um ciclo de tempo.
+
+58
+00:03:51,420 --> 00:03:58,410
+É basicamente que vai executar algum bloco de código enquanto alguma condição acontece de ser verdadeira.
+
+59
+00:03:58,430 --> 00:04:04,230
+OK vamos entrar e discutir algumas funções mais úteis que estão dentro do Python.
+
+60
+00:04:04,230 --> 00:04:06,930
+Um realmente útil é o alcance.
+
+61
+00:04:07,050 --> 00:04:16,470
+Muitas vezes você vai querer fazer um loop para algo como esse para x na sugestão para a sequência de impressão X ou
+
+62
+00:04:17,010 --> 00:04:21,800
+lembre-se de que Q era apenas este dois três quatro cinco.
+
+63
+00:04:21,840 --> 00:04:25,920
+Muitas vezes você vai querer fazer algo uma certa quantidade de vezes.
+
+64
+00:04:25,980 --> 00:04:33,090
+fazer isso é dizer para x e, em seguida, fazer uma seqüência muito longa, mas você não precisa querer gravar tanto.
+
+65
+00:04:33,090 --> 00:04:34,430
+Agora, uma maneira de
+
+66
+00:04:34,440 --> 00:04:42,630
+Portanto, o Python possui uma função de alcance e o alcance será um gerador de valores numéricos. Por isso,
+
+67
+00:04:43,350 --> 00:04:52,330
+se você diz que o intervalo você começará com o número em que deseja começar e o número que deseja encerrar
+
+68
+00:04:52,330 --> 00:04:54,510
+se você executar esse intervalo objeto.
+
+69
+00:04:54,550 --> 00:05:06,460
+E então, o que você pode fazer é dizer para x no intervalo de zero vírgula 5 colon imprime X e então você verá 0 1
+
+70
+00:05:06,550 --> 00:05:12,240
+2 3 4 e é uma maneira abreviada de gerar esses valores.
+
+71
+00:05:12,280 --> 00:05:21,820
+É um gerador, se você quiser que essa seja uma lista, você passaria isso para a função de lista e isso converte
+
+72
+00:05:21,880 --> 00:05:23,560
+isso em uma lista.
+
+73
+00:05:23,560 --> 00:05:29,500
+Agora vejo uma lista de 0 1 2 3 4 e esta é uma maneira muito rápida de executar algo um
+
+74
+00:05:29,500 --> 00:05:30,690
+certo número de vezes.
+
+75
+00:05:30,790 --> 00:05:39,550
+Então, você pode dizer que, mesmo em apenas um número de 10 e, por padrão, o número inicial é zero.
+
+76
+00:05:39,550 --> 00:05:42,580
+Então agora isso vai até 10 elementos.
+
+77
+00:05:42,580 --> 00:05:45,820
+Mas, uma vez que começa em zero, terminará às nove.
+
+78
+00:05:45,810 --> 00:05:51,710
+O motivo porque 0 1 2 3 4 5 6 7 8 9 10 é 10 elementos.
+
+79
+00:05:51,750 --> 00:05:53,350
+Tudo bem.
+
+80
+00:05:53,350 --> 00:05:55,750
+Essa é a função de alcance.
+
+81
+00:05:55,750 --> 00:06:03,010
+Agora vamos em frente e discuta a compreensão da lista, a compreensão da lista permite que você salve um monte de escrita
+
+82
+00:06:03,370 --> 00:06:06,790
+quando estiver tentando criar um loop for para criar uma lista.
+
+83
+00:06:06,790 --> 00:06:10,960
+Deixe-me seguir em frente e mostrar-lhe um exemplo de usar isso para um loop e, em seguida,
+
+84
+00:06:10,960 --> 00:06:13,360
+vou mostrar-lhe um exemplo de compreensão de lista em ação.
+
+85
+00:06:13,360 --> 00:06:21,610
+Eu vou fazer isso, quero dizer que x é igual a uma lista que consiste nos números 1 2 3 4 e então
+
+86
+00:06:21,610 --> 00:06:27,730
+vou fazer uma lista vazia, que é apenas um conjunto de suportes, então é uma lista vazia.
+
+87
+00:06:27,730 --> 00:06:28,730
+nada lá dentro.
+
+88
+00:06:29,010 --> 00:06:35,970
+dizer para o item em X e vou seguir em frente e deixar isso claro apenas mudando item para entorpecimento.
+
+89
+00:06:35,980 --> 00:06:36,910
+E então vou
+
+90
+00:06:37,150 --> 00:06:46,540
+Então, por enquanto, eu estou no X, eu vou tirar minha lista vazia e eu vou ficar pendendo numbente com
+
+91
+00:06:46,620 --> 00:06:48,250
+esse poder de dois.
+
+92
+00:06:48,370 --> 00:06:55,060
+Eu corro essa célula e então vou seguir em frente e imprimir essa lista vazia.
+
+93
+00:06:55,360 --> 00:06:56,540
+E note o que tem aqui.
+
+94
+00:06:56,560 --> 00:07:05,720
+de 1 2 3 para esse tipo de operação é tão comum em Python, onde você adiciona continuamente um valor a uma lista que Python tem
+
+95
+00:07:05,740 --> 00:07:11,500
+algo chamado de compreensão de lista e basicamente é uma maneira em vez de ter que
+
+96
+00:07:11,620 --> 00:07:18,330
+definir uma lista e anexar continuamente lógica a uma lista e usar um loop for com recuo de Colon.
+
+97
+00:07:18,460 --> 00:07:22,780
+Basicamente, cada número de X quadrado 1 4 9 16 em vez
+
+98
+00:07:22,780 --> 00:07:28,710
+Você pode realmente digitar tudo essencialmente em um conjunto de colchetes e criar rapidamente uma lista.
+
+99
+00:07:28,720 --> 00:07:34,860
+Deixe-me seguir em frente e mostrar-lhe como traduzir isso para código de loop em compreensão de lista, permitindo que a compreensão seja um
+
+100
+00:07:34,940 --> 00:07:36,000
+pouco para um loop.
+
+101
+00:07:36,000 --> 00:07:44,440
+Mas, para trás, você acaba dizendo que você deseja que o item diga isso entorpecido.
+
+102
+00:07:44,880 --> 00:07:53,260
+Então, o poder de dois para entorpecer e, em seguida, x número x é esta lista.
+
+103
+00:07:53,250 --> 00:07:56,360
+E este é essencialmente o mesmo código aqui.
+
+104
+00:07:56,810 --> 00:08:01,300
+Então, quando eu executo, ele acaba trabalhando porque está dentro de colchetes.
+
+105
+00:08:01,300 --> 00:08:08,230
+Deixe-me ir para derrubar estes passos novamente em vez de dizer isso, acrescentar e esta lista vazia, você apenas
+
+106
+00:08:08,560 --> 00:08:10,200
+vai dizer algo como.
+
+107
+00:08:10,500 --> 00:08:13,140
+Out é igual e depois um conjunto de suportes.
+
+108
+00:08:13,360 --> 00:08:18,280
+E então você pode traduzir isso para fazer um loop em uma lista de compreensão, dividindo-o da
+
+109
+00:08:18,280 --> 00:08:18,940
+seguinte maneira.
+
+110
+00:08:19,000 --> 00:08:21,400
+Você vai pegar tudo antes do cólon.
+
+111
+00:08:21,390 --> 00:08:25,170
+Então, por enquanto, eu sou uma cópia X e coloco isso.
+
+112
+00:08:25,500 --> 00:08:28,100
+E então você vai pegar o que quisermos na verdade.
+
+113
+00:08:28,140 --> 00:08:34,330
+Neste caso, é o número quadrado e colocá-lo aqui antes que para o loop e isso é basicamente a
+
+114
+00:08:34,410 --> 00:08:42,430
+compreensão da lista que você está dizendo. Dê-me os números quadrados para nada no X e agora você pode ver que a saída foi
+
+115
+00:08:42,460 --> 00:08:49,350
+limpa em uma linha para que A compreensão da lista é apenas uma maneira de salvar algumas digitações para você se
+
+116
+00:08:49,360 --> 00:08:52,940
+você está confuso com a sintaxe aqui ou simplesmente não gosta.
+
+117
+00:08:52,960 --> 00:08:54,650
+E isso é mais legível para você.
+
+118
+00:08:54,700 --> 00:08:58,700
+Vá em frente e apenas use para loops da caneta para iniciantes com Python.
+
+119
+00:08:58,750 --> 00:09:03,270
+Esse tipo de sintaxe tende a ser difícil de ler no início, mas à medida que
+
+120
+00:09:03,280 --> 00:09:09,960
+você gradualmente melhora e melhor do Python, você normalmente passará para a compreensão da lista apenas para ter as coisas em uma linha simples.
+
+121
+00:09:10,620 --> 00:09:11,290
+ESTÁ BEM.
+
+122
+00:09:11,530 --> 00:09:18,520
+Agora vamos em frente e falar sobre as funções das funções permitem basicamente não ter que escrever continuamente o
+
+123
+00:09:18,520 --> 00:09:23,740
+código uma e outra vez, você pode simplesmente escrevê-lo dentro de uma função e
+
+124
+00:09:23,740 --> 00:09:24,850
+depois chamar essa função.
+
+125
+00:09:24,850 --> 00:09:36,490
+A palavra-chave para uma função é DPF ou Def e DCF permite que você defina uma função, você dirá o espaço DPF o nome
+
+126
+00:09:36,640 --> 00:09:38,210
+da sua função.
+
+127
+00:09:38,320 --> 00:09:45,190
+Então, vá em frente e chame isso de função de sublinhado e as funções devem começar com letras minúsculas.
+
+128
+00:09:45,380 --> 00:09:54,850
+e então você vai seguir em frente e executar algum tipo de código para que possamos dizer, adiante, e Prince Coram.
+
+129
+00:09:54,860 --> 00:10:00,410
+Você passa os parâmetros que você deseja, como Parama, um dos dois pontos
+
+130
+00:10:00,990 --> 00:10:01,330
+ESTÁ BEM.
+
+131
+00:10:01,340 --> 00:10:04,020
+Esta é uma função muito simples.
+
+132
+00:10:04,370 --> 00:10:15,890
+Nós apenas chamamos agora meu phunk passa o parâmetro como Hello e ele será executado e imprime o parâmetro.
+
+133
+00:10:16,420 --> 00:10:18,070
+E esse é meu phunk.
+
+134
+00:10:18,640 --> 00:10:21,300
+Deixe-me entrar e mostrar-lhe um exemplo mais complicado.
+
+135
+00:10:21,520 --> 00:10:25,580
+Bem, vá em frente e diga meu funk e um conjunto de parâmetros.
+
+136
+00:10:25,730 --> 00:10:35,770
+diremos Prince e diremos olá e podemos usar um sinal de mais de uma string para concatenar duas cordas juntas.
+
+137
+00:10:35,840 --> 00:10:38,570
+Vai tomar um nome e
+
+138
+00:10:38,650 --> 00:10:42,380
+Então, isso dirá print Hello plus name.
+
+139
+00:10:42,550 --> 00:10:43,990
+Vá em frente e execute isso.
+
+140
+00:10:44,090 --> 00:10:46,830
+E agora para o meu flunk eu vou passar um nome.
+
+141
+00:10:46,910 --> 00:10:50,220
+Está indo para José e agora retorna.
+
+142
+00:10:50,440 --> 00:10:58,060
+Olá José se você quer um valor padrão para um desses parâmetros, então um nome padrão você pode simplesmente
+
+143
+00:10:58,100 --> 00:11:04,720
+dizer iguais e, então, qualquer que seja o primário que você quer ser o nome falso.
+
+144
+00:11:04,810 --> 00:11:11,610
+E se eu correr isso de novo e se eu não passar nada para o meu phunk, eu irei.
+
+145
+00:11:11,620 --> 00:11:12,340
+Olá.
+
+146
+00:11:12,400 --> 00:11:17,570
+Nome padrão apenas quando eu digo José ou algum outro nome lá.
+
+147
+00:11:17,600 --> 00:11:22,110
+Será que ele substituirá o valor padrão pelo valor que eu indiquei.
+
+148
+00:11:22,120 --> 00:11:27,740
+Você também pode dizer para explicar melhor o que você está passando para o funcionamento e dizer que o nome é
+
+149
+00:11:27,740 --> 00:11:29,490
+igual e depois o novo valor.
+
+150
+00:11:29,750 --> 00:11:32,210
+Ou enquanto você colocar os valores na ordem correta.
+
+151
+00:11:32,260 --> 00:11:41,590
+Fazê-lo desta forma de apenas um pedaço de José como este também é bom.
+
+152
+00:11:41,710 --> 00:11:49,900
+Algo a observar aqui é se você apenas chama com parênteses meu phunk, ele executará a função.
+
+153
+00:11:50,330 --> 00:11:54,910
+Se você se livrar desses parênteses, você não chamará a função.
+
+154
+00:11:54,910 --> 00:11:58,120
+Você pedirá a Python o que é esse objeto.
+
+155
+00:11:58,150 --> 00:11:59,320
+E relatará de volta.
+
+156
+00:11:59,500 --> 00:12:00,780
+Ah, esse é um objeto.
+
+157
+00:12:00,830 --> 00:12:04,440
+Uma função principal chamada minha função de sublinhado.
+
+158
+00:12:04,450 --> 00:12:08,920
+Então, tenha em mente que há uma diferença entre chamar meu underscore phunk como este.
+
+159
+00:12:08,920 --> 00:12:16,530
+Esta é a função real que encerra os príncipes fora dele realmente executa essa função.
+
+160
+00:12:16,540 --> 00:12:22,320
+muitas vezes você realmente deseja retornar um valor para que você possa configurá-lo igual a outra variável.
+
+161
+00:12:22,370 --> 00:12:26,330
+Agora, agora, devemos funções muito simples que apenas imprimem uma declaração, mas
+
+162
+00:12:26,330 --> 00:12:27,820
+Deixe-me mostrar o que quero dizer com isso.
+
+163
+00:12:28,100 --> 00:12:36,160
+Bem, vá em frente e diga DPF e crie uma função chamada Square que leva alguns e U-M alguns pontos
+
+164
+00:12:36,670 --> 00:12:39,440
+dois e depois ele retornará esse número.
+
+165
+00:12:39,430 --> 00:12:45,250
+Não apenas imprimirá o resultado ou retornará o quadrado desse número e você pode usar o retorno da
+
+166
+00:12:45,310 --> 00:12:46,650
+palavra-chave para fazer isso.
+
+167
+00:12:46,730 --> 00:12:51,180
+Então você ficará entorpecido com o poder de dois.
+
+168
+00:12:51,380 --> 00:12:58,420
+E então eu posso dizer que a saída é igual ao quadrado de dois.
+
+169
+00:12:58,960 --> 00:13:03,780
+E então, quando eu for em frente e verifique o resultado para o qual é.
+
+170
+00:13:03,860 --> 00:13:08,260
+E essa é a diferença entre imprimir algo e devolver algo.
+
+171
+00:13:08,260 --> 00:13:12,080
+Quando você retornou, você vai querer configurá-lo igual a alguma outra variável.
+
+172
+00:13:12,230 --> 00:13:17,290
+E assim você pode chamar os resultados dessa variável versus quando você está imprimindo algo que você
+
+173
+00:13:17,290 --> 00:13:22,580
+apenas vai imprimir um valor, mas na verdade não o devolve nem o armazena em qualquer lugar.
+
+174
+00:13:22,580 --> 00:13:28,360
+Finalmente, algo que você deve saber sobre as funções é que eles podem ter
+
+175
+00:13:28,370 --> 00:13:37,630
+cordas de documentação, você pode adicionar a seqüência de documentação a uma função, colocando um conjunto de cotações de fechamento triplicar e cotações
+
+176
+00:13:37,810 --> 00:13:38,770
+de fechamento triplicando.
+
+177
+00:13:38,770 --> 00:13:48,160
+Basicamente, você pode colocar uma corda gigante em várias linhas para que possamos dizer que isso é um docstring e isso é
+
+178
+00:13:48,620 --> 00:13:51,060
+essencialmente apenas um comentário muito longo.
+
+179
+00:13:51,070 --> 00:13:54,260
+Então, isso é como comentários de várias linhas.
+
+180
+00:13:54,260 --> 00:14:05,960
+Você pode ir várias linhas e vamos seguir em frente e dizer que esta função faz um número quadrado.
+
+181
+00:14:06,160 --> 00:14:07,340
+Então eu corro isso.
+
+182
+00:14:07,420 --> 00:14:13,060
+Agora eu tenho a seqüência de documentação dentro do quadrado, se eu simplesmente executar Square novamente, nada vai mudar
+
+183
+00:14:13,540 --> 00:14:18,500
+o que vai mudar é quando eles realmente chamam a seqüência de documentação para mais informações
+
+184
+00:14:18,500 --> 00:14:19,390
+sobre essa função.
+
+185
+00:14:19,480 --> 00:14:22,830
+O caderno Jupiter tem uma ótima habilidade para fazer isso.
+
+186
+00:14:22,880 --> 00:14:27,650
+Você começa a digitar a função desejada e, em seguida, mova o cursor para o fim dessa função.
+
+187
+00:14:27,650 --> 00:14:34,270
+Você clica na guia shift e você receberá uma chamada de assinatura da função atual.
+
+188
+00:14:34,420 --> 00:14:36,700
+Significa o que a função espera receber.
+
+189
+00:14:36,880 --> 00:14:40,860
+E então você pode expandir isso para obter a seqüência de documentação.
+
+190
+00:14:40,880 --> 00:14:44,150
+E diz que isso é o docstring pode ir em várias linhas.
+
+191
+00:14:44,140 --> 00:14:49,750
+Esta função Square é um número e isso será realmente útil não apenas para suas próprias
+
+192
+00:14:49,750 --> 00:14:54,010
+funções, mas para funções que já estão incorporadas nas bibliotecas que estaremos aprendendo.
+
+193
+00:14:54,560 --> 00:15:01,360
+Por exemplo, se voltarmos para quando discutimos o alcance aqui, você pode pensar que é um pouco estranho e você pode ter
+
+194
+00:15:01,370 --> 00:15:04,640
+que memorizar coisas até o que os números vão para onde.
+
+195
+00:15:04,660 --> 00:15:11,950
+Bem, se você estiver usando o livro de Brunow, basta digitar na guia de mudança de alcance e perceber que lhe dá a
+
+196
+00:15:11,950 --> 00:15:17,030
+assinatura e, em seguida, também tem o docstring onde você basicamente diz que o intervalo pára.
+
+197
+00:15:17,020 --> 00:15:20,890
+E dá-lhe um objeto de alcance ou você pode dizer alcance e depois iniciar e parar.
+
+198
+00:15:20,980 --> 00:15:25,690
+E dá-lhe mais informações, como retorna um objeto que produz uma seqüência de números inteiros, etc. e tem muitas mais informações
+
+199
+00:15:25,690 --> 00:15:27,520
+lá para você.
+
+200
+00:15:27,560 --> 00:15:30,580
+E este é o tipo de coisa que vamos usar todo o tempo ao longo deste curso.
+
+201
+00:15:30,670 --> 00:15:34,090
+Este acesso rápido às cadeias de documentação.
+
+202
+00:15:34,100 --> 00:15:34,700
+Tudo bem.
+
+203
+00:15:34,930 --> 00:15:36,740
+Bem, vá em frente e termine lá.
+
+204
+00:15:36,770 --> 00:15:42,470
+Vamos discutir a próxima seção desta série de conferências, expressões Arlanda usando o mapa e o filtro
+
+205
+00:15:42,460 --> 00:15:47,330
+e os métodos que você pode usar em objetos comuns de tipo de dados.
+
+206
+00:15:47,330 --> 00:15:48,010
+Tudo bem.
+
+207
+00:15:48,010 --> 00:15:52,550
+Deixe-me sair e revisar rapidamente tudo o que aconteceu nesta palestra.
+
+208
+00:15:52,660 --> 00:15:54,430
+Nós fomos sobre como criar uma função.
+
+209
+00:15:54,460 --> 00:15:59,590
+A palavra-chave é se você passar no nome da sua função e então você pode passar nos parâmetros
+
+210
+00:15:59,620 --> 00:16:01,420
+que a sua função espera obter.
+
+211
+00:16:01,420 --> 00:16:06,130
+E, em seguida, a seqüência de documentação para eles que deseja usar retorna se desejar
+
+212
+00:16:06,130 --> 00:16:08,160
+realmente retornar o valor dessa função.
+
+213
+00:16:08,190 --> 00:16:13,760
+Lembre-se da diferença entre chamar a função de parênteses ou sem a função com parênteses.
+
+214
+00:16:13,780 --> 00:16:15,830
+Você pode apenas obter a função em si.
+
+215
+00:16:16,390 --> 00:16:21,170
+Nós também aprendemos sobre a falta de compreensão que tipo de quebra o tipo de loop
+
+216
+00:16:21,160 --> 00:16:23,470
+em uma única linha dentro desses colchetes.
+
+217
+00:16:23,470 --> 00:16:28,420
+Então nós aprendemos sobre o alcance que permite que você crie rapidamente uma lista de uma seqüência de números inteiros
+
+218
+00:16:28,420 --> 00:16:30,850
+de um ponto de partida para um ponto de parada.
+
+219
+00:16:31,210 --> 00:16:35,610
+Aprendemos cerca de quatro loops e while loops também.
+
+220
+00:16:36,010 --> 00:16:38,870
+Tudo bem, obrigado a todos e eu vou te ver na próxima palestra

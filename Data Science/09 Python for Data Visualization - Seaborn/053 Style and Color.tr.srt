@@ -1,0 +1,459 @@
+1
+00:00:05,220 --> 00:00:08,460
+Herkese merhaba ve stil ve renk konferansına hoş geldiniz.
+
+2
+00:00:08,460 --> 00:00:12,690
+Şekil estetiğini ve denizciliğini nasıl kontrol edebileceğimizi birkaç kez gösterdik Ama şimdi bunu daha
+
+3
+00:00:12,690 --> 00:00:14,150
+resmi bir şekilde gözden geçireceğiz.
+
+4
+00:00:14,340 --> 00:00:17,600
+Devam edin başlamak için Jüpiter defterine atlayalım.
+
+5
+00:00:18,450 --> 00:00:20,370
+Tamam burada, Jüpiter defterinde bulunuyoruz.
+
+6
+00:00:20,370 --> 00:00:25,140
+Önden gitti ve her zamankinden import seaborne set matplotlib hattını yaptım ve ilerlemeye başladım
+
+7
+00:00:25,380 --> 00:00:27,250
+ve ipuçları veri setini yükledim.
+
+8
+00:00:27,270 --> 00:00:30,120
+İzin verin gidip sana belirli stilleri nasıl ayarlayabileceğinizi göstereceğim.
+
+9
+00:00:30,360 --> 00:00:40,730
+Örneğin, SNL yıldız çizelgeleri çizelgeleri yapabilir ve verilerim olarak pasif ipuçlarında cinsiyet sütununu söyleyebilirim, burada veri eşit ipuçları
+
+10
+00:00:42,070 --> 00:00:49,890
+veririm. Hesaplarımın bulunduğu deniz kenarı, sizin geri kalanı için stili ayarlamanızı sağlayan ayarlanmış
+
+11
+00:00:49,890 --> 00:00:52,220
+stil argümanlarına sahiptir. araziler.
+
+12
+00:00:52,380 --> 00:00:58,650
+Ve biz gidersek ve altçizgi stilini kontrol etmek için Tampere'yi değiştirirsek, temel olarak stil için bir parametreyi
+
+13
+00:00:58,650 --> 00:01:00,650
+aktarırsın ve bu bir dize.
+
+14
+00:01:00,660 --> 00:01:07,060
+Karanlık ızgara beyaz ızgara koyu beyaz olabilir ya da Tick size basmanın nasıl bir
+
+15
+00:01:07,080 --> 00:01:15,000
+şey olduğunu göstereceğiz ve beyazlar ilerleyecek ve kene işaretlerini geçirdiyseniz sizin için boş bir beyaz arka plan oluşturuyor.
+
+16
+00:01:15,030 --> 00:01:20,670
+Temelde bu işaretleri kutunun kenarına koyduğunu söylemeliyim.
+
+17
+00:01:20,700 --> 00:01:22,590
+Sonra size orijinal Koyu ızgara
+
+18
+00:01:25,620 --> 00:01:28,320
+arka plan veren karanlık ızgara var.
+
+19
+00:01:28,350 --> 00:01:30,660
+Ve sonra gerçekten ne beğendim.
+
+20
+00:01:30,720 --> 00:01:35,150
+Beyaz ızgara hem netliği hem de ızgarayı verir.
+
+21
+00:01:35,160 --> 00:01:36,720
+Yani bu bilgiyi kaybetmiyorsun.
+
+22
+00:01:36,810 --> 00:01:41,430
+Gidebilir ve tür kestirim tarzı tür gidip hangilerinin en iyisini tercih edeceğini veya hangisini sevdiğini görebilirsiniz.
+
+23
+00:01:41,430 --> 00:01:46,290
+Yapabileceğiniz başka bir şey, dikenleri kaldırmaktır.
+
+24
+00:01:46,350 --> 00:01:50,460
+bunları kene eşit olarak ayarlayabildiğinizi görebilirsiniz, böylece burada ne yaptığım çok açık.
+
+25
+00:01:50,460 --> 00:01:52,470
+Dolayısıyla şu an hâlâ içeri girip
+
+26
+00:01:52,470 --> 00:01:57,960
+Bu yüzden omurga üst omurga ve sağ sırt yanı sıra alt ve sol omurga var.
+
+27
+00:01:58,410 --> 00:02:06,960
+Devam etmek ve bunları kaldırmak isterseniz sadece omurgayı Asinus diyebilir ve alt veya sol omurgayı çıkarmaya
+
+28
+00:02:06,960 --> 00:02:11,930
+devam etmek isterseniz üst omurgayı ve sağ omurili kaldıracaktır.
+
+29
+00:02:11,970 --> 00:02:14,230
+Aslında bunları parametreler olarak ekleyebilirsiniz.
+
+30
+00:02:14,290 --> 00:02:21,570
+Temelde sağ üst sol ve altta varsayılan olarak üstten ve sağdan sola ve alttan kaldırılacak
+
+31
+00:02:21,570 --> 00:02:22,760
+doğrudur veya kaldırılmamalıdır.
+
+32
+00:02:22,770 --> 00:02:28,640
+Ancak bunları en sola doğru ve daha sonra doğru olarak söyleyerek kaldırılmasını istediğinizi belirtebilirsiniz.
+
+33
+00:02:28,670 --> 00:02:31,500
+Bu temel olarak dört omurgayı da kaldıracaktır.
+
+34
+00:02:31,590 --> 00:02:35,670
+Çok net ve güzel görünümlü cilalanmış bir arsa gibi bir şey
+
+35
+00:02:36,060 --> 00:02:38,220
+arıyorsanız belki de omurgasız sunmak istersiniz.
+
+36
+00:02:38,220 --> 00:02:43,090
+Şahsen oradaki dikmeleri tercih ediyorum, o yüzden devam edip çıkartıp o dikenleri tutacağım.
+
+37
+00:02:43,500 --> 00:02:46,740
+Şimdi boyut ve boyut hakkında konuşalım.
+
+38
+00:02:47,010 --> 00:02:52,560
+Aslında en Seaborn bloklarının boyutunu değiştirmek için harita çizimi libs soyma t rakamı büyük boyut genişliği
+
+39
+00:02:52,560 --> 00:02:53,460
+ve yüksekliğini kullanabilirsiniz.
+
+40
+00:02:53,610 --> 00:02:59,310
+boyutunu geçerek bir seaborn grid planlarının boyut ve en / boy oranını kontrol edebilirsiniz.
+
+41
+00:02:59,310 --> 00:03:04,080
+Böylece hepsi aydınlatılmış harita için basit geri çağırmalar ve parametrelerin boyutunu ve
+
+42
+00:03:04,080 --> 00:03:06,730
+Bunca şeyin ne demek istediğimi göstermeye başlayayım.
+
+43
+00:03:07,050 --> 00:03:12,960
+Ben devam edip sayı arsalarını arayacağım ve silmek bile olsa ayar stilinin
+
+44
+00:03:12,960 --> 00:03:21,450
+yeni bir stil söyleyene kadar yerinde kalacağına dikkat ettim ancak bu şekle itiraz edip boyutu düzeltmek için
+
+45
+00:03:21,450 --> 00:03:22,800
+ses getireceğim. eşittir.
+
+46
+00:03:23,190 --> 00:03:26,230
+12 x 3 şeklinde diyebiliriz.
+
+47
+00:03:26,790 --> 00:03:32,700
+Ve şunu unutmayın ki, seaborne Matt plot lib ararken bu aslında geçersiz kılar veya bir geri çağrıdır.
+
+48
+00:03:32,990 --> 00:03:36,030
+Madlib, aslında Seaborn arsa için rakam büyüklüğünü ayarlayacak.
+
+49
+00:03:36,060 --> 00:03:42,210
+Böylece, deniz kenarı ile kombinasyon halinde resim boyutlandırma ve en-boy oranları ile ilgili olarak arsa
+
+50
+00:03:42,210 --> 00:03:45,240
+bilgisi olan bilgiyi kullanabilirsiniz veya harita yapabilirsiniz.
+
+51
+00:03:45,270 --> 00:03:48,990
+Şimdi devam edelim ve ölçek ve bağlam konusuna değelim.
+
+52
+00:03:48,990 --> 00:03:55,200
+SEABORNE, varsayılan parametreleri geçersiz kıldığınız ve aslında şekil oluşturduğunuza bağlı olarak Funt
+
+53
+00:03:55,200 --> 00:03:59,940
+ölçeklerini değiştirmenizi sağlayan uygun bir alt çizgi bağlamı sunar.
+
+54
+00:03:59,940 --> 00:04:04,690
+Diyelim ki bu rakamı bir dizüstü bilgisayar için değil, aslında bir poster için oluşturacağınızı varsayalım.
+
+55
+00:04:04,860 --> 00:04:15,060
+Asinus, altçizgi içeriğinin ve bağlamının birkaç parametre alacağını düşünebilirsin.
+
+56
+00:04:15,190 --> 00:04:16,300
+Bağlamı ele alalım.
+
+57
+00:04:16,320 --> 00:04:22,920
+Ve bu bir dize olacak ve ayrıca bir yazı tipi ölçeği bağlam parametreleri kağıt defter tartışma
+
+58
+00:04:22,950 --> 00:04:24,700
+ya da poster alır.
+
+59
+00:04:24,720 --> 00:04:32,520
+Öyleyse gidip sadece bağlamı ayarlarsam, bağlam bağlamı beni afişe özür dilerim çünkü çok daha büyük bir rakam alıyorum
+
+60
+00:04:32,520 --> 00:04:37,020
+ve yazı tipi de daha büyük çünkü bunu bir postere
+
+61
+00:04:37,020 --> 00:04:37,890
+koyacağınızı varsayıyor.
+
+62
+00:04:38,010 --> 00:04:42,570
+Ve hala yazı tipi boyutundan memnun değilseniz, devam edin ve
+
+63
+00:04:42,660 --> 00:04:47,840
+yazı tipi altçizgi argümanlarına belki de daha büyük bir sayı ekleyerek ekleyin.
+
+64
+00:04:47,850 --> 00:04:50,610
+Yani varsayılanın üç katı büyüklüğündedir.
+
+65
+00:04:50,670 --> 00:04:56,130
+Ve burada aslında rakamın ne olursa olsun için bağlamı ayarlayabilirdiniz ve varsayılan
+
+66
+00:04:56,190 --> 00:04:58,950
+olarak bir dizüstü bilgisayar bağlamında olacak.
+
+67
+00:04:59,050 --> 00:05:06,060
+Yani defteri söylemek için gidebilirsin ve bu rakamların bağlamını belirler.
+
+68
+00:05:06,060 --> 00:05:06,480
+Tamam.
+
+69
+00:05:06,540 --> 00:05:08,460
+Burada temel özelliklerin yalnızca birkaçı var.
+
+70
+00:05:08,460 --> 00:05:13,210
+Hakkında konuşmak istediğim son şey paletler ve renklerdir.
+
+71
+00:05:13,260 --> 00:05:16,800
+Bir renk parametresi belirlemeden önce grafikleri gösterdik.
+
+72
+00:05:16,800 --> 00:05:18,730
+İzin verin, buna bir örnek vereyim.
+
+73
+00:05:18,870 --> 00:05:26,940
+Örneğin S.'yi söylediğimizde N. s n s Lim plotları, belki kamera ucusunun
+
+74
+00:05:30,840 --> 00:05:37,380
+verisi IP'lere eşit olan veri seti gibi ipucu karşısında toplam fatura yapmak ve sonra da ip uçlarını almak istemektedir.
+
+75
+00:05:37,470 --> 00:05:42,170
+Böylece, daha önce Heugh'un altıya eşit olduğuna dair bir şeyi önceden belirleyebildik.
+
+76
+00:05:42,720 --> 00:05:46,100
+Ve sonra bu renkleri yeşil ve mavi için seçiyoruz.
+
+77
+00:05:46,500 --> 00:05:52,560
+Ve daha önce bir Hallett'in argümanlarından geçebileceğimizi daha önce gördük ve esasen
+
+78
+00:05:52,560 --> 00:05:58,890
+bir renk haritası sunabildiğimiz belirli dizeler var ve ısı haritaları gibi şeylere benzer
+
+79
+00:05:58,890 --> 00:05:59,890
+yönleri gördük.
+
+80
+00:05:59,970 --> 00:06:03,600
+Magma ya da serin ılık gibi şeyleri koyduğumda.
+
+81
+00:06:03,900 --> 00:06:06,910
+Şimdi biz aslında bu dizeleri bulmak ne konum merak ediyor olabilirsiniz.
+
+82
+00:06:07,070 --> 00:06:11,420
+Eh, harita harita hayat renk haritası sayfalarına giderek onları bulabilirsiniz.
+
+83
+00:06:11,490 --> 00:06:14,350
+Size Google ile bunu nasıl yapacağınızı göstereceğim.
+
+84
+00:06:14,490 --> 00:06:15,050
+Devam edebilirsin.
+
+85
+00:06:15,060 --> 00:06:17,680
+Yeni bir sekme açıp Google'a gidin ve arayın.
+
+86
+00:06:17,690 --> 00:06:27,210
+Matt arsasının canlı renk haritası ve sizi bu sayfalardan birine götürecek ve biz renk
+
+87
+00:06:27,210 --> 00:06:29,790
+haritası dokümantasyon sayfasını arıyoruz.
+
+88
+00:06:30,120 --> 00:06:31,940
+Ve genellikle buradaki ilk bağlantı.
+
+89
+00:06:31,950 --> 00:06:33,820
+Renk örneği kodu var.
+
+90
+00:06:34,140 --> 00:06:40,350
+Ve şimdi bu sayfaya geldiysek, gerçek renk skalasını ve degradeleri ve renk haritası
+
+91
+00:06:40,350 --> 00:06:43,860
+için aktarmamız gereken isim veya dize adını görebiliriz.
+
+92
+00:06:43,860 --> 00:06:50,130
+Bu yüzden, burada uzaklaştırdığımızda, bu dört renk haritasını ana renk haritaları olarak görebiliriz, ancak ardışık
+
+93
+00:06:50,130 --> 00:06:51,660
+renk haritaları da görürsünüz.
+
+94
+00:06:51,820 --> 00:06:59,280
+Ardından, ardışık iki renk haritaları, farklı nitelikli renk haritalarını haritalandıran başka bir renk dağarcığına sahiptir
+
+95
+00:06:59,400 --> 00:07:02,310
+ve bunlar, geçtiğiniz dizgelere kadar seçeneklerinizdir.
+
+96
+00:07:02,310 --> 00:07:09,570
+istediğimi varsayalım ve bu doğru hissettiğim pasif sismik yerin yerine coor'un.
+
+97
+00:07:09,570 --> 00:07:17,150
+Örneğin, buraya geldiğim renk tonu için bu sismik sapma renk haritasını seçmek
+
+98
+00:07:17,160 --> 00:07:22,380
+Ve şimdi burada, bu uçan renk haritasında her iki ucundaki renkler olan mor ve
+
+99
+00:07:22,380 --> 00:07:24,020
+kırmızı renk aldığım görebiliyoruz.
+
+100
+00:07:24,330 --> 00:07:26,330
+Ve devam edip bu renk haritalarını oynatabilirsiniz.
+
+101
+00:07:26,330 --> 00:07:27,390
+Oynamak çok eğlencelidir.
+
+102
+00:07:27,440 --> 00:07:32,380
+Seaborn, istediğin gibi görünmek için arsa almak istediğinde.
+
+103
+00:07:32,400 --> 00:07:33,360
+Tamam.
+
+104
+00:07:33,360 --> 00:07:38,070
+götüren bu not defterindeki bağlantıları kontrol etmek için devam edebilirsiniz. estetik ve şekli.
+
+105
+00:07:38,070 --> 00:07:43,260
+Jupiter not defterinde stil ve renk konusunda daha fazla bilgi edinmek ve sayfadaki ya da
+
+106
+00:07:43,530 --> 00:07:48,240
+gerçekten sizi daha fazla kontrol etme hakkında daha fazla bilgiye sahip resmi dokümantasyona
+
+107
+00:07:48,330 --> 00:07:54,220
+Ancak bilmeniz gereken en önemli şey, bu palet kodlarını MAP canlı görünümlü
+
+108
+00:07:54,360 --> 00:07:55,660
+renkli haritalarla inceleyebilmenizdir.
+
+109
+00:07:55,770 --> 00:08:02,700
+Yazı tipi boyutunu altta ayarlanmış altçizgi bağlam ayarı içeriğiyle poster veya dizüstü bilgisayara ve ardından
+
+110
+00:08:03,000 --> 00:08:05,300
+yazı tipi ölçeğini değiştirerek değiştirebilirsiniz.
+
+111
+00:08:05,520 --> 00:08:10,530
+Ardından şekillerin boyutunu değiştirmek için fig ile şekil verilen piquante'yi kullanabilirsiniz.
+
+112
+00:08:11,070 --> 00:08:14,770
+Umarım bundan hoşlanırsınız ve umarım Seaborn'u beğenirsiniz.
+
+113
+00:08:14,820 --> 00:08:18,300
+Sıradaki deniz tahta egzersizleri eklemek için ücretsiz olarak geliyorlar.
+
+114
+00:08:18,330 --> 00:08:18,770
+Tamam.
+
+115
+00:08:19,020 --> 00:08:20,520
+Teşekkürler, bir sonraki derside görüşürüz.

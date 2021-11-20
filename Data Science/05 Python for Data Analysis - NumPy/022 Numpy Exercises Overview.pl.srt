@@ -1,0 +1,183 @@
+1
+00:00:05,790 --> 00:00:06,690
+Cześć wszystkim.
+
+2
+00:00:06,690 --> 00:00:09,990
+Witamy na wykładzie z wykładów ćwiczeń PI.
+
+3
+00:00:10,020 --> 00:00:14,490
+W tym krótkim wykładzie szybko przejdziemy do ćwiczeń i do nich podejdziemy.
+
+4
+00:00:15,030 --> 00:00:19,180
+Następnie wykonaj ćwiczenia i zobacz, czy możesz je rozwiązać.
+
+5
+00:00:19,200 --> 00:00:21,810
+A potem będziemy mieli wykład na temat rozwiązań.
+
+6
+00:00:21,810 --> 00:00:25,720
+Przejdźmy dalej i przejdźmy do notatnika ćwiczeń i szybko przejdziemy do pytań.
+
+7
+00:00:25,950 --> 00:00:26,210
+W porządku.
+
+8
+00:00:26,210 --> 00:00:30,510
+Tutaj jesteśmy w notesie ćwiczeń PI, który zamierzasz robić dalej.
+
+9
+00:00:30,510 --> 00:00:36,720
+Po prostu odpowiedz na pytania lub postępuj zgodnie z wytycznymi pogrubionymi, a zobaczysz, że macie dla
+
+10
+00:00:36,780 --> 00:00:42,120
+ciebie tablice wyjściowe lub odpowiedzi wyjściowe, które są odpowiedziami, które powinieneś otrzymać.
+
+11
+00:00:42,120 --> 00:00:47,940
+Należy pamiętać, że jeśli faktycznie uruchomisz komórkę, która ma bezpośrednie wyjście poniżej, nadpiszesz
+
+12
+00:00:47,940 --> 00:00:48,840
+dane wyjściowe.
+
+13
+00:00:48,840 --> 00:00:53,800
+Na przykład, jeśli mówisz, utwórz tablicę 10 zer, mam nadzieję, że pamiętasz z wykładów, jak
+
+14
+00:00:53,820 --> 00:00:54,730
+to zrobić.
+
+15
+00:00:54,870 --> 00:01:01,160
+Ale jeśli masz tutaj kod taki jak witaj i uruchom ten kod, nie zobaczysz już tego wyjścia.
+
+16
+00:01:01,200 --> 00:01:04,680
+Miej to na uwadze, gdy będziesz przechodził przez te ćwiczenia.
+
+17
+00:01:04,700 --> 00:01:05,290
+W porządku.
+
+18
+00:01:05,400 --> 00:01:11,760
+Zasadniczo zaczniemy od pytania o to, jak utworzyć tablice, niektóre tablice liczb całkowitych,
+
+19
+00:01:11,850 --> 00:01:19,770
+niektóre macierze tożsamości trzy na trzy macierze itd. Niektóre macierze liczb losowych, a następnie poproszę cię o
+
+20
+00:01:19,770 --> 00:01:21,470
+utworzenie następującej macierzy.
+
+21
+00:01:21,480 --> 00:01:27,620
+Należy więc pamiętać, że należy wstawiać tutaj komórki, aby nie usuwać danych wyjściowych.
+
+22
+00:01:27,660 --> 00:01:31,340
+Następnie poproszę cię o utworzenie tablicy o 20 liniowych, prawie rozstawionych punktach między 0 1.
+
+23
+00:01:31,350 --> 00:01:36,360
+Więc idź dalej i postępuj zgodnie z instrukcjami tutaj i uważaj, aby nie zastąpić wyjścia.
+
+24
+00:01:36,450 --> 00:01:42,600
+Jeśli nie jesteś jeszcze gotowy, aby go nadpisać, to porozmawiamy o indeksowaniu i selekcji pi, w której
+
+25
+00:01:42,600 --> 00:01:44,520
+podam ci kilka macierzy.
+
+26
+00:01:44,610 --> 00:01:46,950
+W tym przypadku jest to po prostu jedna matryca.
+
+27
+00:01:46,950 --> 00:01:48,630
+Ten od jednego do 25.
+
+28
+00:01:48,630 --> 00:01:50,600
+To jest matryca pięciu na pięć.
+
+29
+00:01:50,730 --> 00:01:56,540
+I poproszę cię o pobranie części z tej matrycy i zauważ, że dałem ci dodatkowe komórki, ponieważ
+
+30
+00:01:56,550 --> 00:01:59,040
+są one trochę trudniejsze i potrzebujesz referencji.
+
+31
+00:01:59,040 --> 00:02:05,040
+Więc napisz tutaj swój kod, który powiela dane wyjściowe w komórce poniżej i uważaj, aby
+
+32
+00:02:05,070 --> 00:02:07,260
+nie pisać tutaj swojego kodu.
+
+33
+00:02:07,260 --> 00:02:10,570
+W przeciwnym razie zastąpisz dane wyjściowe, które próbujesz replikować.
+
+34
+00:02:10,650 --> 00:02:15,040
+A jeśli źle to zrobisz, po raz pierwszy nie pamiętasz, co tak naprawdę próbujesz odpowiedzieć.
+
+35
+00:02:15,120 --> 00:02:17,390
+Więc znowu napisz tutaj kod w tych komórkach.
+
+36
+00:02:17,400 --> 00:02:20,100
+W ten sposób nie zastąpisz samego wyjścia.
+
+37
+00:02:20,220 --> 00:02:20,660
+DOBRZE.
+
+38
+00:02:20,760 --> 00:02:25,500
+A potem przez te ćwiczenia będziecie próbowali chwycić pokazane tu kawałki jako odpowiedzi.
+
+39
+00:02:26,190 --> 00:02:32,180
+Następnie w tej samej macierzy lub tym odwołaniu się do tej samej macierzy otrzymasz sumę wszystkich wartości, otrzymując
+
+40
+00:02:32,190 --> 00:02:36,720
+standardowe odchylenie wszystkich wartości, a następnie otrzymasz sumę wszystkich kolumn w tej macierzy.
+
+41
+00:02:37,380 --> 00:02:37,970
+W porządku.
+
+42
+00:02:38,070 --> 00:02:38,880
+to jest to!
+
+43
+00:02:38,880 --> 00:02:39,690
+Powodzenia.
+
+44
+00:02:39,780 --> 00:02:40,770
+I nadchodzi następny.
+
+45
+00:02:40,770 --> 00:02:43,700
+Czy są to rozwiązania tych głupich ćwiczeń z ciastami?
+
+46
+00:02:43,710 --> 00:02:45,600
+Dziękuję wszystkim, a zobaczę na następnym wykładzie

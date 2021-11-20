@@ -1,0 +1,931 @@
+1
+00:00:05,220 --> 00:00:09,220
+Hello everyone and welcome to part two of the Python crash course.
+
+2
+00:00:09,240 --> 00:00:12,240
+Let's go ahead and jump to Jupiter notebook to get started.
+
+3
+00:00:12,660 --> 00:00:12,900
+All right.
+
+4
+00:00:12,900 --> 00:00:14,630
+Here I am at a chip in a notebook.
+
+5
+00:00:14,640 --> 00:00:22,350
+Last time we left off on how to grab items from a nested list we went over strings and lists and those
+
+6
+00:00:22,350 --> 00:00:26,730
+are related to each other because they're actually just sequences of elements and you can use the same
+
+7
+00:00:26,760 --> 00:00:33,120
+index notation whether on a string or on a list you just passen in brackets the actual indices you want
+
+8
+00:00:33,210 --> 00:00:38,310
+and groud the elements that are at that index or slice of the index.
+
+9
+00:00:38,310 --> 00:00:41,950
+Let's go ahead and switch gears to thinking about dictionaries.
+
+10
+00:00:42,030 --> 00:00:49,650
+You can create a dictionary in Python by specifying curly brackets and then you'll have a key a colon
+
+11
+00:00:50,010 --> 00:00:53,330
+and the value that corresponds with that key.
+
+12
+00:00:53,430 --> 00:00:54,440
+Show you another example.
+
+13
+00:00:54,450 --> 00:01:04,410
+We'll go ahead and make two colon and the value for Q2 will be one to three dictionaries behave as key
+
+14
+00:01:04,410 --> 00:01:09,830
+value pairs just like a hash table instead of holding elements in a sequence.
+
+15
+00:01:09,840 --> 00:01:14,630
+They hold elements through keys and then their actual values.
+
+16
+00:01:14,640 --> 00:01:20,910
+So instead of saying something like 0 that's not going to work because there is no key there and it
+
+17
+00:01:20,910 --> 00:01:26,250
+doesn't hold that in a actual sequence position where you end up passing in the bracket notation is
+
+18
+00:01:26,250 --> 00:01:30,420
+the actual itself and no return the value.
+
+19
+00:01:30,420 --> 00:01:36,000
+So for instance if you wanted to get the number 123 here you would call your dictionary and then passen
+
+20
+00:01:36,000 --> 00:01:38,200
+the key corresponding to that value.
+
+21
+00:01:38,250 --> 00:01:45,150
+In this case one two three and dictionaries can take in basically any items as their values.
+
+22
+00:01:45,240 --> 00:01:51,120
+So we can a key K-1 colon and then you can actually have an other list in here.
+
+23
+00:01:51,150 --> 00:01:52,900
+One two three.
+
+24
+00:01:53,790 --> 00:02:00,170
+And now if I call a dictionary I have one key K K one and then the list 2:59 has the item.
+
+25
+00:02:00,330 --> 00:02:04,590
+So I can call K-1 and return that list one two three.
+
+26
+00:02:04,890 --> 00:02:08,740
+And now that I have this list I can actually then do normal indexing.
+
+27
+00:02:08,880 --> 00:02:11,250
+That's off the list not the key.
+
+28
+00:02:11,580 --> 00:02:13,600
+So let's go ahead and grab two.
+
+29
+00:02:13,680 --> 00:02:19,230
+Which is going to be at index 1 and this is basically the same thing as separating out into two steps
+
+30
+00:02:19,230 --> 00:02:19,650
+.
+
+31
+00:02:19,650 --> 00:02:22,260
+So you could do something like.
+
+32
+00:02:22,260 --> 00:02:26,030
+My list is equal to that item at Q1.
+
+33
+00:02:26,310 --> 00:02:31,800
+And then if you look at my list that was the list before and you use brechen notation to grab whatever
+
+34
+00:02:31,800 --> 00:02:39,090
+you want for that list or you just do it all in one step along the same line and you'll have something
+
+35
+00:02:39,090 --> 00:02:45,000
+similar to this in your exercises or we'll have kind of a nested dictionary and nested list.
+
+36
+00:02:45,070 --> 00:02:49,620
+Me going to show you one more example where you can have actually a dictionary nested inside of another
+
+37
+00:02:49,620 --> 00:02:58,180
+dictionary so I can say K-1 colon pasan in other dictionary with its set of curly brackets there pasand
+
+38
+00:02:58,260 --> 00:03:04,140
+something like inner key colon and then a list of values.
+
+39
+00:03:04,140 --> 00:03:06,100
+One two three.
+
+40
+00:03:06,120 --> 00:03:09,010
+So let's say I want to grab this number two.
+
+41
+00:03:09,390 --> 00:03:15,450
+Well first thing you have to do is call K-1 and that returns this dictionary.
+
+42
+00:03:15,450 --> 00:03:20,490
+Then I need a call inner key off of that so I can do that of another set of brackets or I could split
+
+43
+00:03:20,490 --> 00:03:23,310
+it up into multiple steps by using variable assignment.
+
+44
+00:03:23,310 --> 00:03:24,950
+But we'll do it all in one line.
+
+45
+00:03:25,440 --> 00:03:32,640
+And now I have one two three and two is that the second index that's 0 1 and that grabs the number two
+
+46
+00:03:32,640 --> 00:03:33,230
+there.
+
+47
+00:03:33,570 --> 00:03:36,770
+So again dictionaries do not retain any order.
+
+48
+00:03:36,770 --> 00:03:40,410
+They are just key value pair mappings.
+
+49
+00:03:40,410 --> 00:03:44,550
+Now let's talk about booleans billions and Python are quite simple.
+
+50
+00:03:44,550 --> 00:03:50,610
+It's just true and then false with capitalized T and capitalize f.
+
+51
+00:03:50,640 --> 00:03:54,930
+OK we'll go ahead and touch back on these when we talk about comparison operators.
+
+52
+00:03:54,960 --> 00:03:58,010
+But let's talk about tuples and then sets.
+
+53
+00:03:58,110 --> 00:04:05,460
+Remember that a list is just defined as a sequence of characters inside of square brackets separated
+
+54
+00:04:05,460 --> 00:04:06,630
+by commas.
+
+55
+00:04:06,930 --> 00:04:14,850
+And you can go ahead and grab items off that list using indexing a tuple is very similar except instead
+
+56
+00:04:14,850 --> 00:04:22,140
+of square brackets you use parentheses and you can again just grab items off of that tuple as if it
+
+57
+00:04:22,140 --> 00:04:24,980
+were a list using index bracket notation.
+
+58
+00:04:25,020 --> 00:04:30,840
+Here's the key difference between a tuple of these parentheses versus a list of the square brackets
+
+59
+00:04:30,840 --> 00:04:31,370
+.
+
+60
+00:04:31,410 --> 00:04:40,800
+If I go back to my list and try to reassign the first item to be the word new lips Well let me run this
+
+61
+00:04:40,800 --> 00:04:44,060
+again because actually reassigned the whole list.
+
+62
+00:04:44,220 --> 00:04:46,410
+Let's check list again.
+
+63
+00:04:46,410 --> 00:04:46,620
+All right.
+
+64
+00:04:46,620 --> 00:04:48,850
+So if I print out my list I have one two three.
+
+65
+00:04:48,990 --> 00:04:50,690
+Grab the first item in that list.
+
+66
+00:04:50,700 --> 00:04:52,060
+Zero.
+
+67
+00:04:52,110 --> 00:04:52,890
+Perfect.
+
+68
+00:04:52,890 --> 00:04:57,750
+Now let me re-assign zero to be new just like we did in the previous lecture.
+
+69
+00:04:57,750 --> 00:05:06,210
+And now for a check out my list I reassigned the element 0 to be new and then to 3 if I want to do that
+
+70
+00:05:06,210 --> 00:05:06,730
+for tuple.
+
+71
+00:05:06,730 --> 00:05:12,540
+However if we look at my tuple it's one two three let's say grab 0 instead of equal to new I'm going
+
+72
+00:05:12,540 --> 00:05:13,870
+to get an error.
+
+73
+00:05:14,220 --> 00:05:18,780
+And this is because tuples are immutable and they do not support item assignment.
+
+74
+00:05:18,780 --> 00:05:23,250
+I mean you can't mutate the items inside of a tuple.
+
+75
+00:05:24,440 --> 00:05:29,610
+Which means you're going to want to use a tuple when you want to make sure a user can't change the items
+
+76
+00:05:29,670 --> 00:05:31,690
+inside of the sequence of objects.
+
+77
+00:05:31,740 --> 00:05:37,980
+And that's the main difference between a tuple and a list a tuple is immutable and a list is mutable
+
+78
+00:05:38,220 --> 00:05:40,360
+meaning you can change the items inside of a list.
+
+79
+00:05:40,500 --> 00:05:43,110
+You can't do that same thing if a tuple.
+
+80
+00:05:43,110 --> 00:05:43,740
+All right.
+
+81
+00:05:43,860 --> 00:05:51,360
+Now to discuss sets in Python a set is a collection of unique elements.
+
+82
+00:05:51,360 --> 00:05:55,580
+And it looks the same of curly brackets as a dictionary except it doesn't have the colons it's just
+
+83
+00:05:56,850 --> 00:05:58,590
+elements.
+
+84
+00:05:58,590 --> 00:06:03,310
+Now notice what happens if I type some of these numbers more than once.
+
+85
+00:06:04,650 --> 00:06:10,130
+I still get the same output because a set is defined by only unique elements.
+
+86
+00:06:10,290 --> 00:06:16,650
+Meaning if I try to put in multiples of the same elements it will reduce down to the unique elements
+
+87
+00:06:17,090 --> 00:06:26,980
+and you can actually call s e t set function and pasan a list to grab the unique elements for you.
+
+88
+00:06:27,040 --> 00:06:33,780
+So I pass a bunch of repeated elements into the set function it returns a set of the unique elements
+
+89
+00:06:33,780 --> 00:06:34,130
+.
+
+90
+00:06:34,410 --> 00:06:40,060
+If you want to add items to a set you can go ahead and just say for instance yes.
+
+91
+00:06:40,080 --> 00:06:47,790
+One two three you'll say s You'll use the Add method on it put in the item you want to add for instance
+
+92
+00:06:47,790 --> 00:06:48,770
+5.
+
+93
+00:06:48,900 --> 00:06:52,970
+And if we check out that set again we get 1 2 3 5.
+
+94
+00:06:53,160 --> 00:07:00,600
+If I try to add 5 again it won't retrieve an error but it will just keep it the same because it's only
+
+95
+00:07:00,600 --> 00:07:04,160
+one unique instance of 5 is allowed inside of a set.
+
+96
+00:07:04,170 --> 00:07:04,470
+All right.
+
+97
+00:07:04,500 --> 00:07:07,440
+We really want work with sets at all really in this course.
+
+98
+00:07:07,440 --> 00:07:09,010
+But I do want you to be aware of them.
+
+99
+00:07:09,210 --> 00:07:11,940
+They are just a collection of unique elements.
+
+100
+00:07:12,170 --> 00:07:12,780
+OK.
+
+101
+00:07:13,080 --> 00:07:18,620
+Now let's talk about comparison operators comparison operators allow you to compare two elements to
+
+102
+00:07:18,620 --> 00:07:19,440
+each other.
+
+103
+00:07:19,440 --> 00:07:23,320
+These are things such as greater than less than equal to etc..
+
+104
+00:07:24,210 --> 00:07:26,820
+For instance go in and make a new cell.
+
+105
+00:07:26,820 --> 00:07:33,060
+I can say is one greater than two and it'll return a boolean value either true or false depending on
+
+106
+00:07:33,060 --> 00:07:34,240
+what your statement is.
+
+107
+00:07:34,250 --> 00:07:36,990
+So one greater than two is false.
+
+108
+00:07:37,040 --> 00:07:39,700
+1 less than 2 is true.
+
+109
+00:07:40,200 --> 00:07:47,980
+And you can do the same thing for greater than or equal to or less than or equal to.
+
+110
+00:07:48,000 --> 00:07:53,100
+You can also check for equality using two equal signs and notice how the syntax highlighting kind of
+
+111
+00:07:53,100 --> 00:07:54,480
+helps you out here.
+
+112
+00:07:54,540 --> 00:07:55,770
+So is one equal to one.
+
+113
+00:07:55,800 --> 00:07:56,880
+That is true.
+
+114
+00:07:57,210 --> 00:07:59,410
+Is one equal to two that is false.
+
+115
+00:07:59,430 --> 00:08:00,670
+Not true.
+
+116
+00:08:00,690 --> 00:08:03,650
+Now remember you want to use two equal signs.
+
+117
+00:08:03,660 --> 00:08:07,970
+If you try to do something like this one equals one you'll get an error because Python thinks you're
+
+118
+00:08:07,980 --> 00:08:12,190
+trying to do a variable assignment not an actual comparison operation.
+
+119
+00:08:12,330 --> 00:08:14,550
+If you want to check for any quality you do.
+
+120
+00:08:14,550 --> 00:08:16,880
+Exclamation mark equal sign.
+
+121
+00:08:16,920 --> 00:08:19,060
+So one is not equal to three.
+
+122
+00:08:19,290 --> 00:08:20,500
+Well that's actually true.
+
+123
+00:08:20,550 --> 00:08:25,830
+It's true that one is not equal to three and you can do the same thing not just of numbers but with
+
+124
+00:08:27,180 --> 00:08:28,130
+strings as well.
+
+125
+00:08:28,170 --> 00:08:30,410
+So is high equal to buy.
+
+126
+00:08:30,450 --> 00:08:31,070
+That's false.
+
+127
+00:08:31,080 --> 00:08:33,780
+It's not the same is it not equal to it.
+
+128
+00:08:33,810 --> 00:08:35,450
+Well that's true.
+
+129
+00:08:35,460 --> 00:08:40,380
+Now let's talk about combining these comparison operators with some logic operator such as and and then
+
+130
+00:08:40,400 --> 00:08:42,900
+or.
+
+131
+00:08:43,010 --> 00:08:46,790
+Right now we're just looking at one condition is one less than two.
+
+132
+00:08:47,040 --> 00:08:48,300
+Well that's true.
+
+133
+00:08:48,350 --> 00:08:53,900
+What if we wanted to combine it with another condition such as two less than three we can use the keyword
+
+134
+00:08:53,970 --> 00:08:55,780
+and in order to do that.
+
+135
+00:08:55,800 --> 00:09:00,790
+So I'll say is one less than two and is to less than three.
+
+136
+00:09:01,080 --> 00:09:02,890
+And this will return true.
+
+137
+00:09:02,940 --> 00:09:06,780
+However if one of these is switched to be false is one less than two.
+
+138
+00:09:06,810 --> 00:09:09,520
+Well that's true and it's too greater than three.
+
+139
+00:09:09,560 --> 00:09:10,620
+Let's false.
+
+140
+00:09:10,620 --> 00:09:14,970
+So you have a true and false or return false.
+
+141
+00:09:14,970 --> 00:09:18,140
+So if the and operator all conditions must be true.
+
+142
+00:09:18,410 --> 00:09:22,440
+And I personally like to wrap these statements in parentheses.
+
+143
+00:09:22,620 --> 00:09:24,020
+So they're a little more readable.
+
+144
+00:09:24,030 --> 00:09:28,290
+You don't have to do it but I do recommend that you do because it's a little more readable when you
+
+145
+00:09:28,290 --> 00:09:31,320
+come back to this code later on.
+
+146
+00:09:31,320 --> 00:09:37,250
+You also have the OR operator which is really similar except now in this case only one of them has to
+
+147
+00:09:37,250 --> 00:09:37,790
+be true.
+
+148
+00:09:37,860 --> 00:09:42,810
+So we can say is one less than two or is too greater than three.
+
+149
+00:09:42,990 --> 00:09:45,330
+Well one of these is true.
+
+150
+00:09:45,330 --> 00:09:46,410
+The first one is.
+
+151
+00:09:46,470 --> 00:09:47,990
+So then we get true back.
+
+152
+00:09:48,170 --> 00:09:54,300
+And you can actually stack these on top of each other so you can say in other or here for us one equals
+
+153
+00:09:54,300 --> 00:09:56,220
+equals one etc..
+
+154
+00:09:56,410 --> 00:10:00,210
+And if you want to really understand these you can actually just Passons straight boolean value is so
+
+155
+00:10:01,020 --> 00:10:13,850
+true and true that returns True true and false returns False True or false is true and then that's basically
+
+156
+00:10:13,910 --> 00:10:14,130
+it.
+
+157
+00:10:14,140 --> 00:10:15,030
+So just or.
+
+158
+00:10:15,110 --> 00:10:24,990
+And now let's go ahead and discuss some code blocks by talking about if if else statements.
+
+159
+00:10:25,370 --> 00:10:32,060
+A lot of times you'll want to execute code if a condition is true and you can use the if you left an
+
+160
+00:10:32,090 --> 00:10:34,450
+L statements in order to do that.
+
+161
+00:10:34,460 --> 00:10:40,830
+Let's say we have a condition if one is less than two.
+
+162
+00:10:41,180 --> 00:10:45,510
+We want to perform some sort of action like a print statements.
+
+163
+00:10:45,710 --> 00:10:47,620
+We'll go ahead and say Yep.
+
+164
+00:10:48,470 --> 00:10:55,370
+So we're saying if this condition is true colon and notice there's a block of whitespace here and that's
+
+165
+00:10:55,370 --> 00:10:56,990
+really important in Python.
+
+166
+00:10:57,020 --> 00:11:02,030
+Python doesn't use brackets in order to separate block of code execution statements.
+
+167
+00:11:02,030 --> 00:11:03,800
+It uses whitespace instead.
+
+168
+00:11:03,890 --> 00:11:08,640
+And if you just type enter here after a colon it will automatically do the indentation for you in Jupiter
+
+169
+00:11:08,670 --> 00:11:08,760
+.
+
+170
+00:11:08,930 --> 00:11:12,920
+And most ideas that support Python will also do the same thing.
+
+171
+00:11:12,920 --> 00:11:13,590
+OK so we have.
+
+172
+00:11:13,610 --> 00:11:24,290
+If one is less than to perform some action and basically that's just saying this if true print perform
+
+173
+00:11:24,590 --> 00:11:26,260
+code etc..
+
+174
+00:11:26,390 --> 00:11:34,340
+Or you can just do items like you can say two plus two equals two plus two etc..
+
+175
+00:11:34,360 --> 00:11:37,020
+And then when you see X you'll notice it's four.
+
+176
+00:11:37,100 --> 00:11:38,290
+So that's just an if statement.
+
+177
+00:11:38,300 --> 00:11:44,680
+So if some condition is true colon execute the block of code that's indented below it.
+
+178
+00:11:44,680 --> 00:11:45,470
+All right.
+
+179
+00:11:45,620 --> 00:11:49,240
+Now talk about some other operations we can do.
+
+180
+00:11:49,520 --> 00:11:54,860
+Let's say we want to check for multiple conditions or let's say we want to have something occur in case
+
+181
+00:11:54,860 --> 00:11:55,600
+it's not true.
+
+182
+00:11:55,670 --> 00:12:12,400
+So I will say if one is equal to Supe's prints first else Colan prints last.
+
+183
+00:12:12,440 --> 00:12:19,460
+And what this is going to do it's going to say if this condition is true execute this code otherwise
+
+184
+00:12:19,460 --> 00:12:19,550
+.
+
+185
+00:12:19,550 --> 00:12:26,180
+Or else if none of thing above happens to be true and note how the else lines up with the if statement
+
+186
+00:12:26,240 --> 00:12:28,230
+that we know they're linked to each other.
+
+187
+00:12:28,330 --> 00:12:35,300
+Colin Crantz last so if I run this code last ends up being executed if I go ahead and switch this so
+
+188
+00:12:35,300 --> 00:12:39,970
+that the first condition is true first ends up being executed.
+
+189
+00:12:39,980 --> 00:12:45,350
+Now maybe you want to check on multiple conditions not just one condition and then some else statement
+
+190
+00:12:45,350 --> 00:12:45,600
+.
+
+191
+00:12:45,770 --> 00:12:50,710
+That is where you can use the left to check for multiple conditions.
+
+192
+00:12:51,530 --> 00:12:52,350
+So you can go ahead.
+
+193
+00:12:52,370 --> 00:12:53,320
+Go ahead and say something like.
+
+194
+00:12:53,350 --> 00:12:56,850
+Elif 3 is equal to 3.
+
+195
+00:12:56,870 --> 00:12:59,860
+Now let's go in and change the first one to be false again.
+
+196
+00:13:00,200 --> 00:13:04,660
+We'll print something else will print middle.
+
+197
+00:13:04,670 --> 00:13:05,030
+All right.
+
+198
+00:13:05,030 --> 00:13:07,920
+So let's go ahead and run this and break down what's happening.
+
+199
+00:13:07,930 --> 00:13:14,630
+Python is just doing this it's saying if this condition is true execute this block of code otherwise
+
+200
+00:13:14,660 --> 00:13:14,720
+.
+
+201
+00:13:14,750 --> 00:13:18,030
+Or else if this condition is true.
+
+202
+00:13:18,230 --> 00:13:20,820
+Execute this block code else.
+
+203
+00:13:20,840 --> 00:13:26,630
+If none of the conditions above me are true execute this block code and you can keep stacking as many
+
+204
+00:13:26,960 --> 00:13:29,910
+statements as you want so you can say another one here.
+
+205
+00:13:30,260 --> 00:13:38,210
+Elif will go out and say if four is equal to four Crantz seconds.
+
+206
+00:13:38,240 --> 00:13:38,530
+All right.
+
+207
+00:13:38,530 --> 00:13:39,990
+And notice what happens here.
+
+208
+00:13:40,220 --> 00:13:43,500
+Even though this is true three is equal to three.
+
+209
+00:13:43,580 --> 00:13:47,580
+We're going to only execute the first instance of a condition being true.
+
+210
+00:13:47,660 --> 00:13:52,190
+And that's something important to keep in mind when you're using if elif else statements it's going
+
+211
+00:13:52,190 --> 00:13:56,380
+to execute the first true condition and that's it.
+
+212
+00:13:56,420 --> 00:13:56,960
+All right.
+
+213
+00:13:57,320 --> 00:14:03,140
+That's it for this part 2 lecture series coming up next we'll begin to discuss for loops while loops
+
+214
+00:14:03,230 --> 00:14:05,310
+and then some other functions in Python.
+
+215
+00:14:05,690 --> 00:14:06,100
+OK.
+
+216
+00:14:06,140 --> 00:14:12,050
+As a quick review of what we did we went over we go back to the top dictionaries which again are just
+
+217
+00:14:12,050 --> 00:14:15,880
+key value pairs and you can grab the values by inputting the keys.
+
+218
+00:14:15,970 --> 00:14:20,340
+I remember you can have nested dictionaries or nested lists inside of a dictionary.
+
+219
+00:14:20,780 --> 00:14:23,290
+Now we have boolean values true and false.
+
+220
+00:14:23,420 --> 00:14:27,170
+We have lists tuples which are immutable.
+
+221
+00:14:27,440 --> 00:14:32,190
+Very similar to lists except that you can't go ahead and change stuff once it's inside of a tuple because
+
+222
+00:14:32,190 --> 00:14:34,670
+the tuple doesn't support item re-assignment.
+
+223
+00:14:34,670 --> 00:14:39,500
+We have sets I remember sets are just a collection of unique elements.
+
+224
+00:14:39,500 --> 00:14:45,040
+So if you have a bunch of repeated elements and you have a set it's just the unique ones.
+
+225
+00:14:45,410 --> 00:14:50,780
+Now we have comparison operators greater than less than greater than or equal to less equal to equality
+
+226
+00:14:50,780 --> 00:14:53,080
+check and then check for inequality.
+
+227
+00:14:53,120 --> 00:14:54,940
+And you can do the same thing for strings.
+
+228
+00:14:55,010 --> 00:15:00,830
+You have these logical operators and and then or you can compare multiple conditional statements.
+
+229
+00:15:01,070 --> 00:15:06,620
+And then you have the if elefant else logic which allows you to kind of stack and perform blocks of
+
+230
+00:15:06,620 --> 00:15:10,230
+code based off of some sort of condition being churned up.
+
+231
+00:15:10,340 --> 00:15:11,420
+All right.
+
+232
+00:15:11,450 --> 00:15:12,730
+Hope you enjoy this lecture.
+
+233
+00:15:12,740 --> 00:15:14,060
+We'll see you at the next one.

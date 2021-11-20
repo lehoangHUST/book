@@ -1,0 +1,871 @@
+1
+00:00:06,180 --> 00:00:11,970
+Hello everyone and welcome to the PI arrays lecture and this lecture will learn the various ways you
+
+2
+00:00:11,970 --> 00:00:16,690
+can create a higher rate using Python and then some PI library.
+
+3
+00:00:16,920 --> 00:00:20,460
+Let's go ahead and jump to the Jupiter note to get started.
+
+4
+00:00:20,490 --> 00:00:20,760
+All right.
+
+5
+00:00:20,760 --> 00:00:27,000
+Here we are at the Jupiter notebook arrays are the main way we're going to be using the name PI library
+
+6
+00:00:27,030 --> 00:00:32,910
+throughout the course and I'm high res essentially come in two flavors that come as one dimensional
+
+7
+00:00:32,910 --> 00:00:37,450
+vectors or two dimensional matrices but they can both be called arrays.
+
+8
+00:00:37,450 --> 00:00:44,020
+If there are one or two the let's go out and show how we can create a new umpiring from Python objects
+
+9
+00:00:44,020 --> 00:00:48,730
+such as a list I'm going to go and create an object to my list.
+
+10
+00:00:48,980 --> 00:00:50,840
+One two three.
+
+11
+00:00:51,210 --> 00:00:54,180
+And if I go ahead and just display that list.
+
+12
+00:00:54,350 --> 00:00:58,450
+Notice I get out one two three and it's just a python list.
+
+13
+00:00:58,650 --> 00:01:06,020
+I'm going to go ahead and say import pi as P and then I can call and pede array.
+
+14
+00:01:06,290 --> 00:01:10,920
+And now I can cast that list as an array.
+
+15
+00:01:11,290 --> 00:01:15,900
+And notice I get an array back as the container for that list object.
+
+16
+00:01:15,930 --> 00:01:20,670
+And then I can actually assign this and then just call array off of that.
+
+17
+00:01:20,790 --> 00:01:24,930
+So I can cast a normal Python list into an array.
+
+18
+00:01:24,990 --> 00:01:31,110
+Now will return back a one dimensional array if I want to get a two dimensional array or a matrix.
+
+19
+00:01:31,170 --> 00:01:33,390
+I can cast a list of lists.
+
+20
+00:01:33,420 --> 00:01:45,180
+So for example I can say my underscore maths is equal to a list of three lists so one two three four
+
+21
+00:01:45,180 --> 00:01:52,450
+five six get rid of that extra comma and then 7 8 9.
+
+22
+00:01:53,220 --> 00:02:03,570
+So notice I get back a list of lists and then if I cast that to an array I will get back a two dimensional
+
+23
+00:02:03,570 --> 00:02:09,930
+array and that's noted both by the way it's presented as output but also more importantly as the number
+
+24
+00:02:09,930 --> 00:02:14,340
+of brackets shown on the closing and opening ends of this array.
+
+25
+00:02:14,580 --> 00:02:20,640
+I have two sets of brackets which will indicate that Z to that mentionable array has three rows and
+
+26
+00:02:20,640 --> 00:02:27,260
+three columns and that's how you can cast normal Python lists or list of lists to umpire range.
+
+27
+00:02:27,600 --> 00:02:33,030
+Usually however you'll probably be using some pie's own builtin generation methods to actually create
+
+28
+00:02:33,060 --> 00:02:36,090
+arrays a lot faster and a lot simpler.
+
+29
+00:02:36,090 --> 00:02:40,520
+Let's go ahead and go through some of the most common ways to do that.
+
+30
+00:02:40,560 --> 00:02:46,740
+The most common way will probably be creating a higher rate is using arr. and this is really similar
+
+31
+00:02:46,740 --> 00:02:49,930
+to Python's own built in range function.
+
+32
+00:02:49,950 --> 00:02:56,370
+You'll go ahead and say N.P. arrange and then pasan a start and stop.
+
+33
+00:02:56,460 --> 00:03:02,490
+So notice you have a start a stop and then a step size is a third argument and the return evenly spaced
+
+34
+00:03:02,490 --> 00:03:04,860
+values within this given interval.
+
+35
+00:03:04,860 --> 00:03:14,040
+So if I just say from 0 to 10 remember just like in Python's range indexing starts at zero.
+
+36
+00:03:14,070 --> 00:03:16,990
+It will go up to but not including to 10.
+
+37
+00:03:17,430 --> 00:03:20,660
+I'll get an array back from 0 all the way to 9.
+
+38
+00:03:20,760 --> 00:03:24,840
+So I start at 0 and I go all the way up to but not including 10.
+
+39
+00:03:25,020 --> 00:03:29,480
+So I get 10 digits back 0 1 2 3 4 5 6.
+
+40
+00:03:29,890 --> 00:03:33,900
+Essentially works just as Python's own range function.
+
+41
+00:03:33,960 --> 00:03:37,990
+So I want to go from zero all the way to 10 after Z.
+
+42
+00:03:38,190 --> 00:03:43,010
+I have to say zero comma 11 and that's what I get back out.
+
+43
+00:03:43,380 --> 00:03:46,930
+And then finally I can add a third argument a step size.
+
+44
+00:03:46,980 --> 00:03:51,820
+So if I were all the even numbers from 0 to 10 I could say zero come 11.
+
+45
+00:03:51,960 --> 00:03:58,930
+And then at a step size of two so that I'd jump in steps of 2 0 2 4 6 8 10.
+
+46
+00:03:59,070 --> 00:04:05,580
+That means a range is going to be one of the most useful functions for quickly generating an array using
+
+47
+00:04:05,580 --> 00:04:06,590
+them pi.
+
+48
+00:04:06,960 --> 00:04:12,330
+If you want specific types of arrays there's other functions in non-pilot that can help us do that.
+
+49
+00:04:12,330 --> 00:04:19,970
+For instance if you want to generate arrays of all zeros we can say P-doc zeros and you can pass in
+
+50
+00:04:19,970 --> 00:04:22,050
+a single digit.
+
+51
+00:04:22,050 --> 00:04:30,780
+So you get a one dimensional vector out or you can say N.P. that zeros and pass a tuple of the dimensions
+
+52
+00:04:30,780 --> 00:04:36,840
+you want the first number is going to represent the number of rows and the second number in that tuple
+
+53
+00:04:36,840 --> 00:04:39,220
+is going to represent the number of columns.
+
+54
+00:04:39,240 --> 00:04:48,770
+So for instance I want to rows by three columns I pass in the tuple to come a three and I get back to
+
+55
+00:04:48,770 --> 00:04:53,330
+Rose by three columns and this is noted by the brackets.
+
+56
+00:04:53,360 --> 00:04:59,620
+All right if I want a raise of just pure ones I can say that ones.
+
+57
+00:04:59,690 --> 00:05:07,580
+And similarly I can passen either a single number or a one dimensional array or a tuple of them mentions
+
+58
+00:05:08,180 --> 00:05:16,370
+for a two dimensional matrix that's ones and zeros in other really useful built in function is lens
+
+59
+00:05:16,370 --> 00:05:21,500
+space and space returns evenly spaced numbers over a specified interval.
+
+60
+00:05:21,750 --> 00:05:23,960
+It's important to not confuse Lewan.
+
+61
+00:05:23,990 --> 00:05:31,490
+Arrange your we can see that a range basically returns integers out from a start and a stop and a given
+
+62
+00:05:31,490 --> 00:05:32,600
+step size.
+
+63
+00:05:32,720 --> 00:05:37,580
+What Lin space is going to do is it's actually going to take in a third argument of the number of points
+
+64
+00:05:37,580 --> 00:05:45,140
+you wants me going to show you what I mean by that I can say P Gotland space and I get a pass and a
+
+65
+00:05:45,140 --> 00:05:50,300
+start a stop and there's a third argument I'm going to pass in a number.
+
+66
+00:05:50,300 --> 00:06:00,590
+So let's say I have a start of zero and a stop of five and I want to get 10 evenly spaced points between
+
+67
+00:06:00,590 --> 00:06:02,510
+zero to five.
+
+68
+00:06:02,510 --> 00:06:09,650
+I can pass in a third argument 10 and this returns back a one dimensional vector noted by the once set
+
+69
+00:06:09,650 --> 00:06:15,490
+of brackets here of ten evenly spaced points from zero to five.
+
+70
+00:06:15,490 --> 00:06:18,140
+And I can change this third argument to whatever number I want.
+
+71
+00:06:18,140 --> 00:06:24,140
+So if I want 100 evenly spaced points from zero to five I can just pass that in and that returns a much
+
+72
+00:06:24,140 --> 00:06:26,470
+larger one dimensional array.
+
+73
+00:06:26,540 --> 00:06:30,800
+And keep in mind even though it looks like this is to them as far as the way it's being printed out
+
+74
+00:06:31,040 --> 00:06:35,870
+you can tell it's one dimensional by the fact that there's only one bracket here in front of the array
+
+75
+00:06:36,460 --> 00:06:40,220
+when you're dealing with two dimensions you'll see that you have two sets of brackets.
+
+76
+00:06:40,220 --> 00:06:42,910
+On opening or closing at the ends.
+
+77
+00:06:42,980 --> 00:06:46,140
+Three that I mentioned will have three brackets etc..
+
+78
+00:06:46,310 --> 00:06:47,120
+All right.
+
+79
+00:06:47,120 --> 00:06:48,320
+So that's when space.
+
+80
+00:06:48,320 --> 00:06:54,980
+Again don't confuse space with arrange lint space will take in the third argument as the number of points
+
+81
+00:06:54,980 --> 00:07:01,430
+you want arrange will take in that argument as the step size you want let's go ahead and show how you
+
+82
+00:07:01,430 --> 00:07:04,960
+can create an identity matrix using pi.
+
+83
+00:07:05,360 --> 00:07:08,680
+We can say n p e y e.
+
+84
+00:07:09,350 --> 00:07:13,570
+And then you just pasan a single digit in identity matrix.
+
+85
+00:07:13,580 --> 00:07:17,750
+If you're not familiar is a useful matrix when you're dealing with linear algebra problems.
+
+86
+00:07:17,900 --> 00:07:23,040
+And it's basically just a two dimensional square matrix meaning the number of rows is the same as a
+
+87
+00:07:23,040 --> 00:07:30,320
+number of columns and you have a diagonal of ones that everything else is zeros and that's the reason
+
+88
+00:07:30,320 --> 00:07:36,440
+it only takes a single digit as an argument because it said that the matrix must be square as the output
+
+89
+00:07:36,650 --> 00:07:38,340
+and the P i.
+
+90
+00:07:39,170 --> 00:07:45,320
+All right moving along now pi also has lots of ways to create arrays of random numbers.
+
+91
+00:07:45,380 --> 00:07:49,100
+And we're going to use that often throughout the course so let's go ahead and cover a few ways to do
+
+92
+00:07:49,100 --> 00:07:49,690
+that.
+
+93
+00:07:50,090 --> 00:07:58,040
+What you're going to go ahead and do is call N.P. random dots and then ran the method.
+
+94
+00:07:58,100 --> 00:08:01,520
+You could tab you'll see that there's actually quite a bit of methods.
+
+95
+00:08:01,580 --> 00:08:05,130
+So we're going to go in and show you the most common ones.
+
+96
+00:08:05,660 --> 00:08:09,080
+The first one is Ran's are a and b.
+
+97
+00:08:09,590 --> 00:08:14,570
+And this is going to create an array of the given shape you pass in and it's going to populate it with
+
+98
+00:08:14,630 --> 00:08:19,620
+random samples from a uniform distribution over 0 to 1.
+
+99
+00:08:19,620 --> 00:08:24,950
+And that means if I want just eight one dimensional array of random numbers uniformly distributed from
+
+100
+00:08:24,950 --> 00:08:30,840
+0 to 1 I can pass in a single digit and I'll get back that one dimensional array.
+
+101
+00:08:31,160 --> 00:08:34,760
+I want this to be to that mentionable.
+
+102
+00:08:35,030 --> 00:08:38,930
+Unlike the previous functions you worked with instead of passing in a tuple.
+
+103
+00:08:38,950 --> 00:08:42,820
+I'll actually just pass in the dimensions as separate arguments.
+
+104
+00:08:42,860 --> 00:08:49,130
+So that means if I want a five by five matrix of random numbers I just pass and 5 come a 5 instead of
+
+105
+00:08:49,130 --> 00:08:52,040
+the tuple and working with these random libraries.
+
+106
+00:08:52,400 --> 00:08:58,490
+All right if we want to return a sample or many samples from the standard normal distribution or a Gaussian
+
+107
+00:08:58,490 --> 00:09:02,580
+distribution instead of using Ranz we can use rand n.
+
+108
+00:09:03,030 --> 00:09:10,790
+And that means I can say P thought random thought Ran's n and this will return numbers not from a uniform
+
+109
+00:09:10,790 --> 00:09:16,750
+distribution from 0 to 1 but instead from a standard normal distribution center around zero.
+
+110
+00:09:17,060 --> 00:09:25,130
+And that means I can go ahead and pass in two and I get two random numbers from a standard normal distribution
+
+111
+00:09:25,130 --> 00:09:25,670
+.
+
+112
+00:09:25,670 --> 00:09:30,140
+And later on we'll see that plotting these out not in this lecture but also it gets the data visualization
+
+113
+00:09:30,140 --> 00:09:30,460
+.
+
+114
+00:09:30,560 --> 00:09:35,200
+We'll go ahead and show you a nice normal distribution curve or a Gaussian distribution curve.
+
+115
+00:09:35,950 --> 00:09:40,580
+And again if I want this to be two dimensional I can just pass in two dimensions.
+
+116
+00:09:40,670 --> 00:09:43,540
+So for a four by four I say four come a four.
+
+117
+00:09:43,970 --> 00:09:49,070
+And no I don't pass a tuple here I just pass in each time mention as a separate argument and I can see
+
+118
+00:09:49,070 --> 00:09:57,020
+by the set of two brackets is a two dimensional matrix as an output and the final random method of creating
+
+119
+00:09:57,200 --> 00:10:02,990
+an array we're going to learn about is Rand int and that returns random integers from a low to a high
+
+120
+00:10:03,000 --> 00:10:06,140
+number or go ahead and show you what we can do for that.
+
+121
+00:10:06,140 --> 00:10:12,310
+You'll go ahead and say that random assin Rand I.A. you'll pasan.
+
+122
+00:10:12,360 --> 00:10:17,810
+I go to that shift tab here a low a high and then the actual size you want.
+
+123
+00:10:17,810 --> 00:10:26,870
+So for instance if you just say 1 to 100 you'll get a random integer between 1 and 100 and the low is
+
+124
+00:10:26,930 --> 00:10:27,700
+inclusive.
+
+125
+00:10:27,750 --> 00:10:34,570
+And the high x exclusive meaning one has the chance of being selected but 100 is not.
+
+126
+00:10:35,540 --> 00:10:40,410
+And if you want a particular number of random integers you can pass them in as a third argument.
+
+127
+00:10:40,400 --> 00:10:43,770
+So from to random integers from 1 to 100.
+
+128
+00:10:43,790 --> 00:10:45,160
+But not including 100.
+
+129
+00:10:45,440 --> 00:10:50,930
+I can just pass and 10 there and there are 10 random integers inclusive on the low in an exclusive on
+
+130
+00:10:50,930 --> 00:10:51,920
+the high end.
+
+131
+00:10:52,200 --> 00:10:52,820
+OK.
+
+132
+00:10:53,100 --> 00:10:59,350
+Let's go and discuss just a few useful attributes and methods of an array in order to do this.
+
+133
+00:10:59,370 --> 00:11:05,450
+I'm going to go ahead and create two new array objects we go in and clear this and clear these cells
+
+134
+00:11:05,450 --> 00:11:07,820
+.
+
+135
+00:11:07,830 --> 00:11:08,630
+All right.
+
+136
+00:11:08,630 --> 00:11:16,330
+I'm going to say a r r variable and I will say this is equal to pure range 25.
+
+137
+00:11:16,380 --> 00:11:22,220
+So if I check what A-R looks like here's a one dimensional array of zero up to 24.
+
+138
+00:11:22,500 --> 00:11:30,660
+And then I'm going to say Rand are is indeed random and it's going to be Rand.
+
+139
+00:11:31,000 --> 00:11:32,790
+Got to put a D there.
+
+140
+00:11:32,960 --> 00:11:35,980
+Random integers from 0 to 50.
+
+141
+00:11:36,390 --> 00:11:37,930
+So I didn't get 10 of those.
+
+142
+00:11:38,210 --> 00:11:44,040
+So if I Cheka or ran Are looks like looks like this you may get different values because it's randomly
+
+143
+00:11:44,030 --> 00:11:44,690
+selected.
+
+144
+00:11:44,690 --> 00:11:47,890
+These should have just 10 integers there.
+
+145
+00:11:48,020 --> 00:11:48,780
+All right.
+
+146
+00:11:48,840 --> 00:11:53,130
+One of the most useful methods you can use on an array is the reshape method.
+
+147
+00:11:53,300 --> 00:11:57,770
+And that's going to return an array containing the same data if in new shape.
+
+148
+00:11:57,770 --> 00:12:07,930
+That means I can call Mirei dots and then the reshape method on it reshape and I passen the new dimensions
+
+149
+00:12:07,940 --> 00:12:08,940
+I want.
+
+150
+00:12:08,930 --> 00:12:16,940
+So for example if I want to reshape that array member A R R is twenty five digits zero to 24.
+
+151
+00:12:16,940 --> 00:12:24,350
+I can reshape it as a 5 by 5 array using reshape and then passen the number of rows you want and the
+
+152
+00:12:24,360 --> 00:12:25,780
+number of columns.
+
+153
+00:12:25,790 --> 00:12:30,630
+Keep in mind you'll get an error if you can't fill up that matrix completely.
+
+154
+00:12:30,620 --> 00:12:35,940
+So for example if I wanted 5 by 10 I would need 50 elements to do that.
+
+155
+00:12:36,200 --> 00:12:40,820
+And I'm going to get an error here because the total size of the new array must be unchanged.
+
+156
+00:12:40,940 --> 00:12:48,990
+Meaning you need to fill up using only the digits you have or the elements you have a nice simple way
+
+157
+00:12:48,990 --> 00:12:56,310
+to check this is that the number of rows times the number of columns is equal to the actual number of
+
+158
+00:12:56,370 --> 00:12:59,330
+elements so five times five is equal to 25.
+
+159
+00:12:59,450 --> 00:13:02,860
+And I know I have 25 elements in this array.
+
+160
+00:13:02,900 --> 00:13:08,780
+OK let's go in and show a couple of more useful methods for finding max or min values or to find their
+
+161
+00:13:09,200 --> 00:13:13,670
+location and we'll go over a lot more operations later on in future lectures.
+
+162
+00:13:13,830 --> 00:13:15,880
+Here are some useful ones for you to know.
+
+163
+00:13:15,960 --> 00:13:17,880
+So go ahead and check out our random array.
+
+164
+00:13:17,880 --> 00:13:18,980
+One more time.
+
+165
+00:13:18,990 --> 00:13:24,030
+Again your numbers may be different but for the sake of this exercise that doesn't really matter.
+
+166
+00:13:24,120 --> 00:13:27,400
+If you want to find the max value in your array.
+
+167
+00:13:27,440 --> 00:13:33,170
+You can call the max method off of it and this will return the maximum value of that array.
+
+168
+00:13:33,870 --> 00:13:37,340
+Similarly if you want to get the minimum value of your array.
+
+169
+00:13:37,350 --> 00:13:40,240
+You can call the min method off of it.
+
+170
+00:13:40,280 --> 00:13:41,710
+We take a look at the array.
+
+171
+00:13:41,730 --> 00:13:48,980
+One more time we can actually figure out the location of the max or min values by specifying our max
+
+172
+00:13:49,080 --> 00:13:50,490
+or min.
+
+173
+00:13:50,580 --> 00:13:59,660
+Meaning if I want to actually know what index value is this Max located at 49 I can say Ranh are Argive
+
+174
+00:13:59,680 --> 00:14:04,750
+Max and that will return the index location of the max value.
+
+175
+00:14:04,980 --> 00:14:08,270
+So I notice that 49 is located in index 3.
+
+176
+00:14:08,450 --> 00:14:11,310
+So 0 1 2 3.
+
+177
+00:14:11,420 --> 00:14:12,930
+I have forty nine there.
+
+178
+00:14:13,100 --> 00:14:18,470
+And again you can do the same thing with the minute value you can say are men and it will return the
+
+179
+00:14:18,470 --> 00:14:20,990
+index location of the minimum value.
+
+180
+00:14:21,000 --> 00:14:25,760
+So 6 is the index location the minimum value and the minimum value was three.
+
+181
+00:14:25,760 --> 00:14:26,940
+In this case.
+
+182
+00:14:27,500 --> 00:14:28,130
+OK.
+
+183
+00:14:28,400 --> 00:14:31,820
+And quickly a few more useful methods and attributes.
+
+184
+00:14:31,970 --> 00:14:39,050
+If you ever want to figure out the shape of the vector you can say are shaped in a low return back the
+
+185
+00:14:39,060 --> 00:14:39,980
+shape.
+
+186
+00:14:39,980 --> 00:14:47,910
+Notice here I get 25 Khama and that's indicating that a r r that array was just a one dimensional vector
+
+187
+00:14:47,900 --> 00:14:49,000
+.
+
+188
+00:14:49,080 --> 00:14:50,960
+If I go ahead and reshape it.
+
+189
+00:14:51,140 --> 00:15:01,060
+So I'm going to say reshaped to a five by five and I'm going to set that equal to R..
+
+190
+00:15:01,160 --> 00:15:02,190
+Or a r r.
+
+191
+00:15:02,180 --> 00:15:07,340
+Notice now I have a two dimensional matrix called dot shape off of that.
+
+192
+00:15:07,350 --> 00:15:08,970
+Notice I'm not putting parentheses.
+
+193
+00:15:09,000 --> 00:15:11,350
+I'm just calling the attribute off of it.
+
+194
+00:15:11,390 --> 00:15:14,360
+Now reports back that it's a five by five.
+
+195
+00:15:14,450 --> 00:15:20,810
+So it's to that Mitchell now and the last useful attribute I want to show for now is the data type in
+
+196
+00:15:20,820 --> 00:15:21,690
+this array.
+
+197
+00:15:21,750 --> 00:15:28,410
+If you're ever curious of what data type you have an array you can just say a r r and type as an attribute
+
+198
+00:15:28,500 --> 00:15:32,700
+D type in it will return the actual data type that's in your way.
+
+199
+00:15:32,720 --> 00:15:35,470
+In this case 32 bit integers.
+
+200
+00:15:35,510 --> 00:15:36,000
+OK.
+
+201
+00:15:36,200 --> 00:15:38,660
+Just a quick review of everything we've gone over.
+
+202
+00:15:38,720 --> 00:15:45,390
+We've shown you how to create an empire raise either by casting a list to a higher array or by using
+
+203
+00:15:45,380 --> 00:15:52,680
+one of the built in functions for an umpire arrays such as arr. zeros and ones Lyn's space and I and
+
+204
+00:15:52,670 --> 00:15:59,840
+also the random generation methods you call N.P. that ran them and then Rand ran and ran and or some
+
+205
+00:15:59,850 --> 00:16:01,690
+of the other random methods.
+
+206
+00:16:01,730 --> 00:16:06,920
+All right and one last hints I want to show you if you don't want to have to type in NPE random that
+
+207
+00:16:06,940 --> 00:16:16,200
+Rand is what you can do is you can say from PI that random imports and then whatever method or function
+
+208
+00:16:16,190 --> 00:16:17,440
+you want to import.
+
+209
+00:16:17,450 --> 00:16:20,900
+So if you wanted to import Rand I N C you could go ahead and do that.
+
+210
+00:16:20,900 --> 00:16:27,480
+And then instead of saying that thought random thought ran I inti you can just say Rand's I I.A. and
+
+211
+00:16:27,470 --> 00:16:30,020
+I have a reference for yourself.
+
+212
+00:16:30,020 --> 00:16:31,110
+There you go.
+
+213
+00:16:31,190 --> 00:16:32,130
+OK.
+
+214
+00:16:32,250 --> 00:16:36,650
+Again remember you have the notebook with all the notes in case you want to reference any of this code
+
+215
+00:16:36,680 --> 00:16:40,760
+or any of the notes that actually spoke about throughout this lecture.
+
+216
+00:16:40,760 --> 00:16:45,860
+Coming up next we're going to learn about indexing and selection for an umpire race as well as operations
+
+217
+00:16:45,870 --> 00:16:47,270
+of the umpires.
+
+218
+00:16:47,270 --> 00:16:49,310
+Thanks everyone and I'll see you at the next lecture

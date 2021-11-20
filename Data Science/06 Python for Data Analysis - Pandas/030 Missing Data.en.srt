@@ -1,0 +1,327 @@
+1
+00:00:05,160 --> 00:00:10,410
+Hello everyone and welcome to the missing data lecture in this lecture room show a few convenient methods
+
+2
+00:00:10,650 --> 00:00:12,870
+to deal with missing data in Pandas.
+
+3
+00:00:12,870 --> 00:00:17,820
+A lot of times when you're using pandas to read in data if you have a missing points what's going to
+
+4
+00:00:17,820 --> 00:00:21,040
+happen is Pandurs will automatically fill in that missing point.
+
+5
+00:00:21,250 --> 00:00:21,690
+No.
+
+6
+00:00:21,720 --> 00:00:23,360
+Or any value.
+
+7
+00:00:23,610 --> 00:00:28,980
+Let's go ahead and explore how we can use methods such as drop a name or fill and a to actually drop
+
+8
+00:00:28,980 --> 00:00:31,800
+those missing values or fill in those missing values.
+
+9
+00:00:32,040 --> 00:00:36,090
+Let's go ahead and jump to Jupiter notebook to get started.
+
+10
+00:00:36,120 --> 00:00:36,420
+All right.
+
+11
+00:00:36,420 --> 00:00:38,270
+Here I am at the Jupiter notebook.
+
+12
+00:00:38,280 --> 00:00:43,800
+What I want to go out and do is create a data frame and just like we create we could create a series
+
+13
+00:00:43,860 --> 00:00:48,480
+from a dictionary we can actually create a data frame from a dictionary as well.
+
+14
+00:00:48,480 --> 00:00:55,620
+This dictionary is going to have three keys and it is going to key a key B and key C and what these
+
+15
+00:00:55,620 --> 00:01:01,560
+are going to be are columns in our data frame and then we can do for the actual data points is pasan
+
+16
+00:01:01,620 --> 00:01:03,810
+a list of values for each key.
+
+17
+00:01:04,260 --> 00:01:08,290
+And those will be the data points for each row in that column name.
+
+18
+00:01:08,340 --> 00:01:12,680
+We'll go ahead and say Key A has a list one too.
+
+19
+00:01:12,930 --> 00:01:18,290
+And then we're going to use any n to signify a missing ordinal value.
+
+20
+00:01:19,080 --> 00:01:20,290
+Then we're going to save for B.
+
+21
+00:01:20,310 --> 00:01:28,260
+It's going to be 5 and P that Nan and P and then and then finally kisi our third column.
+
+22
+00:01:28,260 --> 00:01:31,150
+So we're going to retain all values 1 2 and 3.
+
+23
+00:01:31,200 --> 00:01:33,360
+So has no missing values.
+
+24
+00:01:33,360 --> 00:01:41,300
+And then we can go ahead and say is DFAC equal to PD data frame and then pass in the dictionary D.
+
+25
+00:01:41,730 --> 00:01:48,270
+And then when we check out our data frame we get this nice looking data frame of columns A B and C and
+
+26
+00:01:48,270 --> 00:01:56,580
+then rows 0 1 and 2 no rows 0 has no missing values and Column C has no missing values.
+
+27
+00:01:56,700 --> 00:02:02,850
+And then there's a few missing values here in Roby or column B and one missing value in column A.
+
+28
+00:02:03,360 --> 00:02:07,940
+Let's go out and explore the drop and a method.
+
+29
+00:02:08,280 --> 00:02:11,580
+A lot of times you just want to drop missing values from your data set.
+
+30
+00:02:11,640 --> 00:02:14,010
+Especially if it's just a few missing values.
+
+31
+00:02:14,010 --> 00:02:21,300
+If you say drop an A just by itself and call it as a method of close parentheses what occurs is that
+
+32
+00:02:21,300 --> 00:02:28,890
+Pandurs is going to drop any row with any single or water more male or missing values meaning if any
+
+33
+00:02:28,890 --> 00:02:33,840
+of these rows had a null value in it one or more it went ahead and dropped them.
+
+34
+00:02:33,870 --> 00:02:40,050
+If you want to perform this action on the columns which you can do is check out shift tab here and notice
+
+35
+00:02:40,050 --> 00:02:42,060
+that there's an axis argument.
+
+36
+00:02:42,330 --> 00:02:44,740
+That means by default the axis is zero.
+
+37
+00:02:44,880 --> 00:02:47,210
+Meaning the operation occurs along the rows.
+
+38
+00:02:47,340 --> 00:02:53,820
+But if you want to do the operation along the columns being drop any columns that have a null value
+
+39
+00:02:54,240 --> 00:02:56,780
+you can specify axis is equal to 1.
+
+40
+00:02:57,750 --> 00:03:01,200
+And that's going to drop in the columns with a null value.
+
+41
+00:03:01,360 --> 00:03:03,710
+So I don't see the comparison here.
+
+42
+00:03:03,950 --> 00:03:09,720
+And that means if Trapani trops any rows of any row values in it and then the after are Trump and a
+
+43
+00:03:09,810 --> 00:03:14,230
+with access equal to one is going to drop any the columns of null values in it.
+
+44
+00:03:14,640 --> 00:03:17,840
+But you can also do is specify a threshold.
+
+45
+00:03:18,120 --> 00:03:24,420
+And if we go in and check this out we'll say DMF drop an A and use Shift tab.
+
+46
+00:03:24,450 --> 00:03:31,190
+Check out the documentation that is if there's a thresh argument what the argument is.
+
+47
+00:03:31,320 --> 00:03:39,480
+It's an integer value and you will require that many knon and a values in order to not get dropped.
+
+48
+00:03:39,480 --> 00:03:43,180
+For instance let me go in and set the threshold equal to 2.
+
+49
+00:03:43,590 --> 00:03:46,030
+And again we're just going to do this along the roads.
+
+50
+00:03:46,260 --> 00:03:53,470
+So notice here we have in row 0 3 non and a values in row 1.
+
+51
+00:03:53,490 --> 00:03:58,710
+We have two non A values and in row two we have only one.
+
+52
+00:03:58,830 --> 00:04:01,090
+Number three not any values.
+
+53
+00:04:01,140 --> 00:04:05,850
+That means if I say drop and a like this it drops everything but Roseboro.
+
+54
+00:04:05,970 --> 00:04:14,270
+However if I set the threshold to be equal to 2 and run this it went ahead and kept row 1.
+
+55
+00:04:14,310 --> 00:04:22,740
+And basically what that means is because row 1 had at least two non and a values 2.0 and the two it
+
+56
+00:04:22,800 --> 00:04:26,880
+went ahead and kept that row.
+
+57
+00:04:26,910 --> 00:04:27,230
+All right.
+
+58
+00:04:27,270 --> 00:04:33,790
+Let's go ahead and move on to Phil and say right now we just focus on just dropping missing values.
+
+59
+00:04:33,870 --> 00:04:37,060
+Well a lot of times you'll want to actually replace those missing values.
+
+60
+00:04:37,290 --> 00:04:39,320
+We take a look at our data frame again.
+
+61
+00:04:39,390 --> 00:04:40,870
+We have these missing values here.
+
+62
+00:04:40,950 --> 00:04:47,430
+If we wanted to fill in those missing values we can use the fill and a method and this we go and take
+
+63
+00:04:47,430 --> 00:04:49,910
+shift tab here has a couple of different arguments.
+
+64
+00:04:49,930 --> 00:04:52,400
+But notice it has a value argument.
+
+65
+00:04:52,610 --> 00:04:57,910
+And what you can do here is as a value set in your fill value.
+
+66
+00:04:57,940 --> 00:05:00,410
+I'm just going to pass on a string to make it very obvious here.
+
+67
+00:05:00,450 --> 00:05:07,530
+What's going on and notice it was able to fill in that value of whatever value we wanted.
+
+68
+00:05:07,940 --> 00:05:10,680
+In this case just a string that said fill value.
+
+69
+00:05:10,770 --> 00:05:15,060
+However a lot of times what you're going to want to do is actually fill in the value of maybe the mean
+
+70
+00:05:15,060 --> 00:05:20,860
+of the column and you can do that for example as such you can say DSF of a.
+
+71
+00:05:21,090 --> 00:05:25,150
+So that's my a column and notice the missing point here.
+
+72
+00:05:25,170 --> 00:05:36,170
+I'll go ahead and say fill and a and I will set the value to the mean of that column.
+
+73
+00:05:37,710 --> 00:05:42,210
+And now that value has been filled as the mean of the value.
+
+74
+00:05:42,330 --> 00:05:47,760
+Now there's a whole philosophy and way of thinking and statistical methods for filling in missing values
+
+75
+00:05:47,790 --> 00:05:49,070
+appropriately.
+
+76
+00:05:49,110 --> 00:05:53,280
+I'll let you go ahead and explore those on your own since they really depend on what kind of data you're
+
+77
+00:05:53,280 --> 00:05:56,010
+working with.
+
+78
+00:05:56,010 --> 00:06:03,030
+For now all I want you to be aware of is that there is a fill and a method and a drop and a method.
+
+79
+00:06:03,510 --> 00:06:05,600
+OK that's it for now.
+
+80
+00:06:05,610 --> 00:06:10,770
+Hopefully you remember just that these two methods are available for you and you can specify what access
+
+81
+00:06:10,770 --> 00:06:15,810
+you want to perform the action on as well as the thresh argument and the value arguments.
+
+82
+00:06:15,810 --> 00:06:18,800
+All right thanks everyone and I'll see you at the next lecture

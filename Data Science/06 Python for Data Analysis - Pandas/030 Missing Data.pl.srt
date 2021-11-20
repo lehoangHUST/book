@@ -1,0 +1,327 @@
+1
+00:00:05,160 --> 00:00:10,410
+Witam wszystkich i zapraszam na wykład z brakującymi danymi w tej sali wykładowej przedstawiający kilka wygodnych metod
+
+2
+00:00:10,650 --> 00:00:12,870
+radzenia sobie z brakującymi danymi w Pandach.
+
+3
+00:00:12,870 --> 00:00:17,820
+Wiele razy, gdy używasz pand do odczytu danych, jeśli masz brakujące punkty, co
+
+4
+00:00:17,820 --> 00:00:21,040
+się stanie, Pandurs automatycznie uzupełni brakujący punkt.
+
+5
+00:00:21,250 --> 00:00:21,690
+Nie.
+
+6
+00:00:21,720 --> 00:00:23,360
+Lub dowolna wartość.
+
+7
+00:00:23,610 --> 00:00:28,980
+Przyjrzyjmy się, jak możemy użyć takich metod, jak upuszczenie nazwy lub wypełnienia, a także faktyczne
+
+8
+00:00:28,980 --> 00:00:31,800
+upuszczenie brakujących wartości lub uzupełnienie brakujących wartości.
+
+9
+00:00:32,040 --> 00:00:36,090
+Przejdźmy dalej i przejdź do notatnika Jupiter, aby zacząć.
+
+10
+00:00:36,120 --> 00:00:36,420
+W porządku.
+
+11
+00:00:36,420 --> 00:00:38,270
+Jestem w notesie Jowisza.
+
+12
+00:00:38,280 --> 00:00:43,800
+Chciałbym stworzyć ramkę danych i tak jak my stworzyliśmy serię
+
+13
+00:00:43,860 --> 00:00:48,480
+ze słownika, możemy stworzyć ramkę danych ze słownika.
+
+14
+00:00:48,480 --> 00:00:55,620
+Słownik ten będzie miał trzy klucze i będzie kluczem do klawisza B i C, a to, czym one będą,
+
+15
+00:00:55,620 --> 00:01:01,560
+są kolumnami w naszej ramce danych, a następnie możemy zrobić dla rzeczywistych punktów danych jest pasan
+
+16
+00:01:01,620 --> 00:01:03,810
+lista wartości dla każdy klucz.
+
+17
+00:01:04,260 --> 00:01:08,290
+I będą to punkty danych dla każdego wiersza w tej kolumnie.
+
+18
+00:01:08,340 --> 00:01:12,680
+Powiemy, że klucz A ma także jedną listę.
+
+19
+00:01:12,930 --> 00:01:18,290
+A potem użyjemy dowolnego n, aby wyrazić brakującą wartość porządkową.
+
+20
+00:01:19,080 --> 00:01:20,290
+Potem będziemy oszczędzać na B.
+
+21
+00:01:20,310 --> 00:01:28,260
+To będzie 5 i P to Nan i P, a potem i wreszcie Kisi nasza trzecia kolumna.
+
+22
+00:01:28,260 --> 00:01:31,150
+Tak więc zachowamy wszystkie wartości 1 2 i 3.
+
+23
+00:01:31,200 --> 00:01:33,360
+Więc nie ma brakujących wartości.
+
+24
+00:01:33,360 --> 00:01:41,300
+A następnie możemy śmiało powiedzieć, że DFAC jest równy ramce danych PD, a następnie przechodzi do słownika D.
+
+25
+00:01:41,730 --> 00:01:48,270
+A potem, gdy sprawdzimy naszą ramkę danych otrzymamy ładnie wyglądającą ramkę danych kolumn A B i
+
+26
+00:01:48,270 --> 00:01:56,580
+C, a następnie wiersze 0 1 i 2 brak wierszy 0 nie ma brakujących wartości, a kolumna C nie ma brakujących wartości.
+
+27
+00:01:56,700 --> 00:02:02,850
+A tutaj jest kilka brakujących wartości w Roby lub w kolumnie B i jedna brakująca wartość w kolumnie A.
+
+28
+00:02:03,360 --> 00:02:07,940
+Chodźmy i zbadajmy kroplę i metodę.
+
+29
+00:02:08,280 --> 00:02:11,580
+Wiele razy po prostu chcesz usunąć brakujące wartości z zestawu danych.
+
+30
+00:02:11,640 --> 00:02:14,010
+Zwłaszcza jeśli jest to tylko kilka brakujących wartości.
+
+31
+00:02:14,010 --> 00:02:21,300
+Jeśli powiesz, że upuszczasz A samemu i nazywasz to metodą bliskich nawiasów, to znaczy, że Pandurs zrzuci dowolny
+
+32
+00:02:21,300 --> 00:02:28,890
+wiersz z pojedynczą lub wodą bardziej męską lub brakujące wartości, co oznacza, że jeśli którykolwiek z tych wierszy ma
+
+33
+00:02:28,890 --> 00:02:33,840
+wartość pustą w to jeden lub więcej wyszedł i rzucił je.
+
+34
+00:02:33,870 --> 00:02:40,050
+Jeśli chcesz wykonać tę akcję w kolumnach, które możesz zrobić, to sprawdź kartę przesunięcia i zauważ,
+
+35
+00:02:40,050 --> 00:02:42,060
+że istnieje argument osi.
+
+36
+00:02:42,330 --> 00:02:44,740
+Oznacza to, że domyślnie oś jest równa zero.
+
+37
+00:02:44,880 --> 00:02:47,210
+Znaczenie operacji występuje wzdłuż wierszy.
+
+38
+00:02:47,340 --> 00:02:53,820
+Ale jeśli chcesz wykonać operację wzdłuż upuszczanych kolumn, wszystkie kolumny, które mają wartość pustą,
+
+39
+00:02:54,240 --> 00:02:56,780
+możesz określić oś równą 1.
+
+40
+00:02:57,750 --> 00:03:01,200
+A to będzie spadać w kolumnach z wartością pustą.
+
+41
+00:03:01,360 --> 00:03:03,710
+Więc nie widzę tutaj porównania.
+
+42
+00:03:03,950 --> 00:03:09,720
+Oznacza to, że jeśli Trapani tropi dowolne wiersze wartości dowolnego wiersza, a potem są to atrybuty Trump,
+
+43
+00:03:09,810 --> 00:03:14,230
+a w przypadku dostępu równego jedności, wszystkie kolumny z wartościami pustymi zostaną upuszczone.
+
+44
+00:03:14,640 --> 00:03:17,840
+Ale możesz także określić próg.
+
+45
+00:03:18,120 --> 00:03:24,420
+A jeśli wejdziemy do środka i sprawdzimy to, powiemy, że DMF upuszcza A i używa karty Shift.
+
+46
+00:03:24,450 --> 00:03:31,190
+Sprawdź dokumentację, która zawiera argument thresh, jaki jest argument.
+
+47
+00:03:31,320 --> 00:03:39,480
+Jest to wartość całkowita i będziesz potrzebować wielu knonów i wartości, aby nie zostać odrzuconym.
+
+48
+00:03:39,480 --> 00:03:43,180
+Na przykład pozwól mi wejść i ustawić próg równy 2.
+
+49
+00:03:43,590 --> 00:03:46,030
+I znowu będziemy to robić po drogach.
+
+50
+00:03:46,260 --> 00:03:53,470
+Zauważmy, że mamy w wierszu 0 3 non i wartości w wierszu 1.
+
+51
+00:03:53,490 --> 00:03:58,710
+Mamy dwie wartości inne niż A, aw drugim rzędzie mamy tylko jedną.
+
+52
+00:03:58,830 --> 00:04:01,090
+Numer trzy nie ma żadnych wartości.
+
+53
+00:04:01,140 --> 00:04:05,850
+Oznacza to, że jeśli mówię "upuść" i "to", to upuszcza wszystko oprócz Roseboro.
+
+54
+00:04:05,970 --> 00:04:14,270
+Jeśli jednak ustawię próg na równy 2 i uruchomię to, przejdź dalej i zachowaj wiersz 1.
+
+55
+00:04:14,310 --> 00:04:22,740
+Zasadniczo oznacza to, że wiersz 1 miał co najmniej dwa non i wartości 2. 0 i obaj poszli dalej
+
+56
+00:04:22,800 --> 00:04:26,880
+i zachowali ten rząd.
+
+57
+00:04:26,910 --> 00:04:27,230
+W porządku.
+
+58
+00:04:27,270 --> 00:04:33,790
+Przejdźmy dalej i przejdźmy do Phila i powiedzmy, że skupiamy się właśnie na porzucaniu brakujących wartości.
+
+59
+00:04:33,870 --> 00:04:37,060
+Cóż, wiele razy będziesz chciał zastąpić te brakujące wartości.
+
+60
+00:04:37,290 --> 00:04:39,320
+Ponownie przyjrzymy się naszej ramce danych.
+
+61
+00:04:39,390 --> 00:04:40,870
+Mamy tutaj te brakujące wartości.
+
+62
+00:04:40,950 --> 00:04:47,430
+Gdybyśmy chcieli wypełnić te brakujące wartości, możemy użyć wypełnienia i metody, a to, co robimy i przyjmujemy
+
+63
+00:04:47,430 --> 00:04:49,910
+kartę shift, ma kilka różnych argumentów.
+
+64
+00:04:49,930 --> 00:04:52,400
+Ale zauważ, że ma argument wartości.
+
+65
+00:04:52,610 --> 00:04:57,910
+To, co możesz tutaj zrobić, to wartość ustawiona w wartości wypełnienia.
+
+66
+00:04:57,940 --> 00:05:00,410
+Zamierzam przekazać ciąg znaków, aby było to bardzo oczywiste.
+
+67
+00:05:00,450 --> 00:05:07,530
+Co się dzieje i zauważ, że była w stanie wypełnić tę wartość jakiejkolwiek wartości, jaką chcieliśmy.
+
+68
+00:05:07,940 --> 00:05:10,680
+W tym przypadku wystarczy ciąg, który mówi wartość wypełnienia.
+
+69
+00:05:10,770 --> 00:05:15,060
+Jednak wiele razy to, co będziesz chciał zrobić, to faktycznie wypełnić wartość
+
+70
+00:05:15,060 --> 00:05:20,860
+być może średnią z kolumny i możesz to zrobić na przykład jako taki możesz powiedzieć DSF z a.
+
+71
+00:05:21,090 --> 00:05:25,150
+Więc to moja kolumna i zauważ tutaj brakujący punkt.
+
+72
+00:05:25,170 --> 00:05:36,170
+Pójdę naprzód i powiemy wypełnienie a, a ja ustawię wartość na średnią tej kolumny.
+
+73
+00:05:37,710 --> 00:05:42,210
+A teraz ta wartość została wypełniona jako średnia wartości.
+
+74
+00:05:42,330 --> 00:05:47,760
+Teraz istnieje cała filozofia i sposób myślenia oraz metody statystyczne do właściwego wypełniania
+
+75
+00:05:47,790 --> 00:05:49,070
+brakujących wartości.
+
+76
+00:05:49,110 --> 00:05:53,280
+Pozwolę ci iść do przodu i odkrywać je samemu, ponieważ tak naprawdę zależy
+
+77
+00:05:53,280 --> 00:05:56,010
+to od rodzaju danych, z którymi pracujesz.
+
+78
+00:05:56,010 --> 00:06:03,030
+Na razie chcę, abyście byli świadomi tego, że jest wypełnienie, metoda, kropla i metoda.
+
+79
+00:06:03,510 --> 00:06:05,600
+OK, to tyle na teraz.
+
+80
+00:06:05,610 --> 00:06:10,770
+Mam nadzieję, że pamiętasz tylko, że te dwie metody są dostępne dla ciebie i możesz
+
+81
+00:06:10,770 --> 00:06:15,810
+określić, do jakiego dostępu chcesz wykonać akcję, jak również argument thresh i argumenty wartości.
+
+82
+00:06:15,810 --> 00:06:18,800
+W porządku, dziękuję wszystkim, a do zobaczenia na następnym wykładzie

@@ -1,0 +1,911 @@
+1
+00:00:05,430 --> 00:00:06,300
+Ciao a tutti.
+
+2
+00:00:06,300 --> 00:00:09,050
+Benvenuti alla lezione della seconda parte del quadro di dati.
+
+3
+00:00:09,090 --> 00:00:14,310
+L'ultima volta che abbiamo lasciato su come creare un frame di dati di base e prendere informazioni da quel frame di dati.
+
+4
+00:00:14,790 --> 00:00:19,760
+Ora esamineremo la selezione condizionale e alcune parti dell'indice multa del frame dei dati.
+
+5
+00:00:20,430 --> 00:00:23,120
+Andiamo avanti e saltiamo sul taccuino di Jupiter per iniziare.
+
+6
+00:00:23,520 --> 00:00:23,970
+Tutto ok.
+
+7
+00:00:23,970 --> 00:00:25,940
+Eccoci di nuovo sul taccuino di Giove.
+
+8
+00:00:25,950 --> 00:00:28,460
+Userò lo stesso frame dei dati dell'ultima volta.
+
+9
+00:00:28,470 --> 00:00:35,600
+Shurmur abbiamo appena detto i tasti numerici S &amp; P perni PD importa Rand e imposta il posto a 101 e poi dice che il data
+
+10
+00:00:35,600 --> 00:00:38,280
+frame è stato preso in affitto e 5 sono venuti.
+
+11
+00:00:38,460 --> 00:00:41,270
+E poi qui abbiamo il nostro data frame.
+
+12
+00:00:42,410 --> 00:00:45,240
+Okay, entriamo e parliamo della selezione condizionale.
+
+13
+00:00:45,360 --> 00:00:50,580
+Una caratteristica molto importante di Pantless è la possibilità di eseguire la selezione condizionale usando la notazione
+
+14
+00:00:50,690 --> 00:00:57,570
+delle parentesi e questo sarà molto simile a PI, ad esempio per un operatore di confronto rispetto al frame dei dati, come
+
+15
+00:00:57,930 --> 00:01:01,070
+chiedere dove è il frame dei dati maggiore di zero.
+
+16
+00:01:01,080 --> 00:01:06,420
+frame di dati a quel punto era maggiore di zero e false se non era maggiore di zero.
+
+17
+00:01:06,420 --> 00:01:10,620
+Otterrò un dato dai valori booleani in cui restituisce true se il valore del
+
+18
+00:01:10,740 --> 00:01:16,200
+E questo è molto simile alla stessa selezione condizionale applicata a un intero assunto, tranne che in questo caso
+
+19
+00:01:16,200 --> 00:01:18,480
+stiamo facendo di pand lo stato dei frame.
+
+20
+00:01:18,480 --> 00:01:27,270
+E proprio così possiamo andare avanti e dire bullwhip bulled la f è uguale a DFA maggiore di zero.
+
+21
+00:01:27,960 --> 00:01:29,590
+E da quando dice Boulia.
+
+22
+00:01:29,610 --> 00:01:32,470
+Vai avanti e controlla.
+
+23
+00:01:32,690 --> 00:01:39,120
+il nostro frame di dati booleani e se lo passiamo al nostro frame di dati originale con
+
+24
+00:01:39,120 --> 00:01:48,750
+notazione di parentesi allora otterremo come risultato i valori in cui era vero e Knoll o qualsiasi n dove è successo che fosse falso.
+
+25
+00:01:48,750 --> 00:01:49,820
+E qui abbiamo
+
+26
+00:01:49,980 --> 00:01:55,200
+E questo è il modo in cui puoi usare la selezione condizionale insieme a un frame di dati.
+
+27
+00:01:55,200 --> 00:01:58,830
+Ora di solito probabilmente non lo separeresti in due passaggi.
+
+28
+00:01:58,890 --> 00:02:00,230
+Diresti solo
+
+29
+00:02:00,270 --> 00:02:05,760
+E poi tra parentesi qualcosa come DF maggiore di zero e otterresti questo risultato.
+
+30
+00:02:06,030 --> 00:02:12,340
+Questo tipo di operazione con un frame di dati e contro un operatore di confronto non è così comune.
+
+31
+00:02:12,370 --> 00:02:17,220
+riga o in un valore di colonna e invece di restituire Knolles ciò che sta per fare
+
+32
+00:02:17,220 --> 00:02:23,700
+è restituire solo le righe o le colonne di un sottoinsieme del frame dei dati in cui le tue condizioni sono vere.
+
+33
+00:02:23,700 --> 00:02:28,970
+Beh, molto probabilmente finirai per fare è invece di passare l'intero frame di dati che passi in una
+
+34
+00:02:28,980 --> 00:02:33,720
+Ora lasciami andare a mostrare un esempio di cosa intendo per quello che non potrebbe dare un'occhiata al nostro frame di dati originale.
+
+35
+00:02:34,780 --> 00:02:38,830
+Qui abbiamo le righe A-3 e le colonne da w a Z.
+
+36
+00:02:39,090 --> 00:02:42,900
+Quello che ho intenzione di fare è specificare.
+
+37
+00:02:42,990 --> 00:02:46,580
+Di W maggiore di zero.
+
+38
+00:02:46,620 --> 00:02:49,470
+E noto che ottengo una serie indietro.
+
+39
+00:02:49,470 --> 00:02:54,770
+Vero vero falso vero vero e questo è legato all'indice attuale.
+
+40
+00:02:54,780 --> 00:03:01,390
+che questo corrisponde ai valori delle colonne W e il valore all'indice c era in realtà inferiore a zero.
+
+41
+00:03:01,390 --> 00:03:03,980
+E se guardo la colonna W vedo
+
+42
+00:03:04,110 --> 00:03:06,710
+Quindi restituisce False per essere maggiore di zero.
+
+43
+00:03:06,750 --> 00:03:13,380
+Ora posso utilizzare questa serie di valori booleani corrispondenti alle righe per filtrare le righe in base al valore di
+
+44
+00:03:13,380 --> 00:03:19,470
+una colonna e questo significa che se passo la serie in un frame di dati usando la notazione
+
+45
+00:03:19,470 --> 00:03:26,430
+della parentesi per dire qualcosa come DF DFW maggiore di zero tornare indietro le righe dove questo è vero, significa che
+
+46
+00:03:26,720 --> 00:03:32,670
+ho solo indietro le righe abd e e non restituirà la riga C dato che qui era falso.
+
+47
+00:03:32,740 --> 00:03:35,340
+Vai avanti e eseguilo e guarda come si presenta.
+
+48
+00:03:35,340 --> 00:03:36,120
+Grande.
+
+49
+00:03:36,130 --> 00:03:39,950
+E ora, dal momento che sto passando una serie, non ottengo più questi valori.
+
+50
+00:03:40,050 --> 00:03:44,880
+Si ottengono quei valori non quando si esegue questo tipo di condizione su un intero frame di dati
+
+51
+00:03:44,880 --> 00:03:47,470
+quando si passa effettivamente in condizioni basate su colonne.
+
+52
+00:03:47,550 --> 00:03:52,580
+Riceverai solo valori di serie, il che significa che solo le righe saranno vere.
+
+53
+00:03:52,650 --> 00:03:57,120
+E questo è il tipo di selezione condizionale che useremo più spesso in questo corso.
+
+54
+00:03:58,170 --> 00:04:01,970
+Entriamo e mostriamo solo alcuni esempi per guidare davvero questo punto a casa.
+
+55
+00:04:01,980 --> 00:04:09,010
+Diciamo che voglio prendere tutte le righe nel mio frame dei dati dove z è inferiore a zero.
+
+56
+00:04:09,150 --> 00:04:16,500
+Quindi dico DMF dove la f della colonna Z è inferiore a zero.
+
+57
+00:04:16,500 --> 00:04:21,460
+Ora diamo un'occhiata prima di eseguire effettivamente ciò che dovrebbe accadere sopra la colonna di avviso Z.
+
+58
+00:04:21,750 --> 00:04:22,290
+Dov'è.
+
+59
+00:04:22,320 --> 00:04:23,150
+Meno di zero.
+
+60
+00:04:23,160 --> 00:04:31,210
+Beh, questo si verifica solo nella riga C, quindi la colonna Z come in Zelda e la riga C in cat.
+
+61
+00:04:31,260 --> 00:04:33,260
+Questa è l'unica riga che deve essere restituita.
+
+62
+00:04:33,270 --> 00:04:35,720
+Ma ricorda di chiedere per intero i dati.
+
+63
+00:04:35,850 --> 00:04:40,110
+Quindi dovrebbe restituire solo questa riga C per noi.
+
+64
+00:04:40,110 --> 00:04:41,100
+Ed eccolo.
+
+65
+00:04:41,340 --> 00:04:42,590
+Ok fantastico.
+
+66
+00:04:42,600 --> 00:04:47,520
+Ora qualcos'altro da notare qui è che quando stai facendo questo tipo di comandi vai avanti
+
+67
+00:04:47,520 --> 00:04:50,190
+e torna a R W maggiore di zero.
+
+68
+00:04:50,880 --> 00:04:57,220
+Si ottiene un frame di dati in risposta e ciò significa che è possibile andare avanti e richiamare i comandi da questo frame
+
+69
+00:04:57,230 --> 00:04:57,880
+di dati.
+
+70
+00:04:58,050 --> 00:05:01,260
+Quindi puoi farlo in un solo passaggio o in due passaggi.
+
+71
+00:05:01,320 --> 00:05:06,370
+Vado a dire che il risultato DSF è uguale a questo e poi dai un'occhiata ai risultati.
+
+72
+00:05:06,420 --> 00:05:12,910
+su questo frame di dati risultante che non ha Non ho visto quella fila che non ha Charlie.
+
+73
+00:05:13,030 --> 00:05:21,910
+DMF che è questo sottoinsieme del frame di dati senza quella riga in esso e significa che posso andare avanti e ottenere risultati fuori da questo
+
+74
+00:05:21,910 --> 00:05:25,910
+come X e qui ho quattro valori di XABD ed E basati
+
+75
+00:05:26,380 --> 00:05:32,200
+Ma invece di separarlo in due passaggi, ad esempio afferrando la colonna X, posso farlo tutto in un
+
+76
+00:05:32,200 --> 00:05:33,030
+solo passaggio.
+
+77
+00:05:33,130 --> 00:05:41,230
+E lascia che ti mostri cosa intendo per poter andare avanti e dire restituire il frame di dati in cui il valore della
+
+78
+00:05:41,230 --> 00:05:43,780
+colonna di W è maggiore di zero.
+
+79
+00:05:43,780 --> 00:05:45,670
+Quindi restituiscimi quelle file.
+
+80
+00:05:45,670 --> 00:05:48,050
+Ciò significa tutte le righe meno la riga C.
+
+81
+00:05:48,340 --> 00:05:53,170
+E dato che si tratta di un frame di dati, posso effettivamente andare avanti e impilare comandi
+
+82
+00:05:53,170 --> 00:05:57,530
+come la notazione delle parentesi, ad esempio restituire la colonna X dove ciò è vero.
+
+83
+00:05:57,700 --> 00:06:04,330
+E ora ottengo gli stessi risultati che ho fatto qui, tranne che è tutto fatto in un solo passaggio e questo è
+
+84
+00:06:04,330 --> 00:06:06,570
+qualcosa che può intimidire i principianti all'inizio.
+
+85
+00:06:06,670 --> 00:06:09,380
+Quindi ci sono un sacco di parentesi e un sacco di cose da fare qui.
+
+86
+00:06:09,580 --> 00:06:14,620
+Ma essenzialmente questo è solo invece di dividere tutto in più passaggi
+
+87
+00:06:14,620 --> 00:06:17,480
+e mettere tutto in un unico passaggio.
+
+88
+00:06:17,620 --> 00:06:24,100
+di più colonne passando negli elenchi, ad esempio perché virgola X e possiamo vedere che otteniamo un risultato qui.
+
+89
+00:06:24,100 --> 00:06:29,890
+E allo stesso modo dato che si tratta di un frame di dati, posso eseguire il bracketing
+
+90
+00:06:29,920 --> 00:06:36,100
+Lasciatemi andare avanti e spezzare questa linea ancora una volta per mostrare i passi che stiamo facendo.
+
+91
+00:06:36,100 --> 00:06:41,090
+Per prima cosa entreremo e diciamo che Boudia è uguale a.
+
+92
+00:06:41,680 --> 00:06:48,250
+Beh, dirà la serie bhool e dato che è un po 'più preciso è che siamo a DFW è
+
+93
+00:06:48,250 --> 00:06:49,140
+maggiore di zero.
+
+94
+00:06:49,150 --> 00:06:56,590
+Quindi se dico serie bhool ottengo questa serie booleana, allora quello che sto per fare
+
+95
+00:06:56,590 --> 00:07:04,010
+e dire è che il risultato è uguale al DSF di quella serie bool.
+
+96
+00:07:04,510 --> 00:07:06,870
+Andiamo avanti e controlla i risultati.
+
+97
+00:07:07,630 --> 00:07:15,690
+E dovrebbe essere dovunque sia stata quella serie che è una b d ed e c'è il mio risultato.
+
+98
+00:07:15,820 --> 00:07:18,690
+Questo è l'intero frame di dati senza che la riga lo vedesse.
+
+99
+00:07:18,760 --> 00:07:28,200
+E poi posso andare avanti e offrire quel risultato chiama un elenco di colonne in modo che possiamo andare avanti e dire perché virgola
+
+100
+00:07:28,840 --> 00:07:33,910
+X e se volessimo potremmo addirittura separare questo separato e fare un altro
+
+101
+00:07:34,360 --> 00:07:43,840
+passo dicendo che Mike chiama per le colonne passare quella lista e poi dire un risultato di Mike chiama e otteniamo esattamente la stessa
+
+102
+00:07:43,840 --> 00:07:48,760
+cosa che abbiamo fatto in una riga come in più righe.
+
+103
+00:07:48,910 --> 00:07:53,840
+Ciò significa che se sei mai confuso con qualcosa che assomiglia a una tonnellata di parentesi e Pandurs
+
+104
+00:07:54,070 --> 00:07:56,110
+vedi se riesci a scomporlo in più passaggi.
+
+105
+00:07:56,110 --> 00:08:00,640
+Se questo ha più senso per te durante il corso, faremo questo tipo di notazione.
+
+106
+00:08:00,910 --> 00:08:02,200
+Tipo di una nave.
+
+107
+00:08:02,200 --> 00:08:06,100
+E man mano che ti senti sempre più a tuo agio con i panda, ti
+
+108
+00:08:06,100 --> 00:08:11,080
+ritrovi a usare sempre più spesso queste fodere, ma se sei confuso, sentiti sempre libero di scomporlo in più passaggi.
+
+109
+00:08:11,080 --> 00:08:15,970
+L'unico svantaggio, per quanto riguarda l'abbassamento di più passaggi, è che si sta acquisendo memoria
+
+110
+00:08:16,150 --> 00:08:18,130
+con la variabile che si definisce.
+
+111
+00:08:18,220 --> 00:08:23,260
+Quindi, man mano che migliorerai con i panda, vorrai spostarti verso una semplice astrazione a una sola
+
+112
+00:08:23,260 --> 00:08:24,750
+riga di tutti questi comandi.
+
+113
+00:08:24,760 --> 00:08:30,370
+Va bene e metti in pausa il video ora e assicurati davvero di capire come la linea in 58.
+
+114
+00:08:30,370 --> 00:08:36,280
+Ecco la stessa identica cosa separata in più righe.
+
+115
+00:08:36,310 --> 00:08:36,700
+Tutto ok.
+
+116
+00:08:36,700 --> 00:08:38,230
+Andiamo avanti ed esploriamo velocemente.
+
+117
+00:08:38,230 --> 00:08:42,490
+Il concetto di utilizzare più condizioni come due o più condizioni.
+
+118
+00:08:42,580 --> 00:08:48,940
+In questo momento ci sentiamo a nostro agio nel fare qualcosa del genere che restituisca un sottoinsieme del frame di
+
+119
+00:08:48,940 --> 00:08:50,700
+dati in base a una condizione.
+
+120
+00:08:50,740 --> 00:08:56,320
+se si desidera più condizioni come dove w è maggiore di zero e Y era maggiore di 1.
+
+121
+00:08:56,410 --> 00:08:57,170
+Ma cosa succede
+
+122
+00:08:57,520 --> 00:09:06,910
+Beh, quello che potresti fare è provare qualcosa di simile tra parentesi passare in una condizione e poi
+
+123
+00:09:06,970 --> 00:09:10,210
+dire e passare in un'altra condizione.
+
+124
+00:09:10,210 --> 00:09:11,740
+E questo restituirà un errore.
+
+125
+00:09:11,970 --> 00:09:17,710
+E lo farò apposta per spiegare perché c'è un errore qui e questo è un errore comune
+
+126
+00:09:17,710 --> 00:09:23,410
+per i principianti di mettere questo e qui e avrai un errore che dice che la serie
+
+127
+00:09:23,410 --> 00:09:24,370
+è ambigua.
+
+128
+00:09:24,370 --> 00:09:30,520
+Scorriamo quaggiù vediamo che il valore di verità di una serie è ambiguo.
+
+129
+00:09:30,520 --> 00:09:37,420
+E ciò che stiamo cercando di dire è che il normale e l'operatore di Python non possono effettivamente
+
+130
+00:09:37,750 --> 00:09:43,960
+prendere in considerazione una serie di valori booleani rispetto ad un'altra serie di valori booleani e
+
+131
+00:09:43,960 --> 00:09:47,680
+l'operatore può solo prendere in considerazione singoli booleani alla volta.
+
+132
+00:09:47,680 --> 00:09:54,790
+Così veri e falsi ritorni Falso Vero e vero ritorno vero ecc. Ciò significa che quando passi un'intera serie di
+
+133
+00:09:55,090 --> 00:10:03,190
+valori booleani come questo e l'operatore inizia a confondersi.
+
+134
+00:10:03,190 --> 00:10:04,250
+È possibile gestire solo queste
+
+135
+00:10:04,390 --> 00:10:09,880
+singole istanze di valori booleani, motivo per cui quando si lavora con i panda e si desiderano più condizioni, è necessario utilizzare in e commerciali che è questo.
+
+136
+00:10:09,880 --> 00:10:15,230
+E così sarà lo spostamento 7 sulla tastiera per la maggior parte delle tastiere standard.
+
+137
+00:10:15,250 --> 00:10:20,360
+E notare qui che sto passando queste condizioni tra parentesi
+
+138
+00:10:20,620 --> 00:10:25,660
+per mostrare una netta separazione tra ciascuna di queste condizioni.
+
+139
+00:10:25,660 --> 00:10:26,790
+E poi se eseguo questo ottengo la riga E dove questo è vero.
+
+140
+00:10:26,920 --> 00:10:31,070
+OK, andiamo a rompere questo.
+
+141
+00:10:31,510 --> 00:10:32,840
+Un'ultima volta in
+
+142
+00:10:32,860 --> 00:10:39,430
+cui stai tentando di utilizzare più condizioni non puoi usare il normale e l'operatore di Python.
+
+143
+00:10:39,490 --> 00:10:40,530
+Devi usare la
+
+144
+00:10:40,960 --> 00:10:47,470
+e commerciale e poi passare tra le diverse condizioni tra parentesi e poi metterlo tra parentesi per il tuo frame di dati.
+
+145
+00:10:47,470 --> 00:10:49,830
+Se vuoi eseguire un'operazione
+
+146
+00:10:50,050 --> 00:10:57,130
+OR, puoi semplicemente sostituirlo con l'operatore di pipe che è proprio sopra il tuo.
+
+147
+00:10:57,180 --> 00:10:57,660
+Solitamente per la maggior parte delle tastiere sul tasto Invio, andare direttamente sopra di esso e quindi spostare su quella barra rovesciata.
+
+148
+00:10:57,760 --> 00:11:04,110
+E questo dovrebbe darti l'operatore di pipe e questo sarà un rimpiazzo o
+
+149
+00:11:04,240 --> 00:11:09,280
+perché se provi ad usare o otterrai lo stesso errore.
+
+150
+00:11:09,280 --> 00:11:12,160
+Quindi è con o se provo con
+
+151
+00:11:12,250 --> 00:11:18,160
+Python normale o ancora otterrò il valore di verità di una serie è ambiguo.
+
+152
+00:11:18,160 --> 00:11:18,910
+E questo perché ottieni una serie di quei valori invece di solo uno o due valori booleani.
+
+153
+00:11:18,970 --> 00:11:24,380
+OK puoi andare avanti e fare riferimento a una nota se vuoi altri esempi di questo.
+
+154
+00:11:24,450 --> 00:11:27,840
+Ma fondamentalmente se vuoi che più condizioni passino
+
+155
+00:11:27,940 --> 00:11:33,220
+in ogni condizione tra parentesi e poi usi una e commerciale o operatore
+
+156
+00:11:33,220 --> 00:11:41,650
+di pipe per le estremità o andiamo avanti ora e cambi marcia per parlare di indice e un po 'più di
+
+157
+00:11:41,650 --> 00:11:47,140
+dettagli su di esso discuteremo adesso sta reimpostando l'indice o impostandolo su qualcos'altro.
+
+158
+00:11:47,170 --> 00:11:48,140
+Lasciatemi andare avanti e dare un'occhiata al nostro frame di dati originale.
+
+159
+00:11:48,160 --> 00:11:50,770
+Voglio entrare e cancellare queste celle qui semplicemente eseguendole.
+
+160
+00:11:50,770 --> 00:11:54,610
+E diamo un'occhiata al nostro quadro di dati.
+
+161
+00:11:54,740 --> 00:11:56,820
+Ancora una volta abbiamo Rose aither e nelle
+
+162
+00:11:56,860 --> 00:12:03,970
+colonne da w a Z per ripristinare l'indice sul default che è solo un indice di intervallo o un 1 2 3 4 fino all'ennesima riga.
+
+163
+00:12:03,970 --> 00:12:09,070
+È possibile chiamare il metodo reset dell'indice di
+
+164
+00:12:09,210 --> 00:12:16,780
+sottolineatura e ricordare di chiudere le parentesi che effettivamente eseguiamo tale metodo.
+
+165
+00:12:16,870 --> 00:12:18,380
+E se chiami
+
+166
+00:12:18,900 --> 00:12:26,950
+quell'avviso otterrai l'indice resettato su una colonna e otterrai l'indice effettivo per essere numerico.
+
+167
+00:12:27,010 --> 00:12:28,690
+Ed è così che puoi resettare l'indice.
+
+168
+00:12:28,690 --> 00:12:32,320
+Qualcosa da notare qui è proprio come molti altri dati da operazioni.
+
+169
+00:12:32,710 --> 00:12:37,530
+Questo non si verifica sul posto a meno che non lo si specifichi affinché si verifichi sul posto.
+
+170
+00:12:37,570 --> 00:12:42,010
+Quindi se richiamo T. F. Ho ancora quell'indice originale delle etichette se vuoi che questo si verifichi effettivamente sul posto, quello che dovresti dire è in posto uguale
+
+171
+00:12:42,010 --> 00:12:47,860
+a true e passare all'indice di ripristino dell'indice di sottolineatura.
+
+172
+00:12:47,860 --> 00:12:54,480
+Per ora andremo avanti e non lo faremo.
+
+173
+00:12:54,520 --> 00:12:56,640
+In questo modo conserviamo ancora il nostro data frame originale.
+
+174
+00:12:56,650 --> 00:12:59,620
+Ora vai avanti e cancellalo di nuovo se vuoi semplicemente resettare l'indice ad un valore numerico.
+
+175
+00:12:59,650 --> 00:13:06,680
+Puoi semplicemente usare quell'indice Reesa e il tuo vecchio indice diventerà una colonna della tua cornice dati.
+
+176
+00:13:06,790 --> 00:13:12,080
+OK.
+
+177
+00:13:12,630 --> 00:13:13,140
+Andiamo avanti
+
+178
+00:13:13,300 --> 00:13:19,060
+e mostriamo un altro nuovo esempio di indice come l'impostazione dell'indice e per fare ciò andrò avanti e creerò un nuovo indice chiamato New i n d.
+
+179
+00:13:19,150 --> 00:13:25,500
+E userò un piccolo trucco qui che spiegherò tra un secondo.
+
+180
+00:13:27,250 --> 00:13:32,910
+Questo sarà un gruppo di abbreviazioni di stato e dirò che si divide su questa stringa.
+
+181
+00:13:33,040 --> 00:13:37,580
+E ricorda che spaccare una corda dovrebbe dire un metodo comune per dividere uno spazio vuoto.
+
+182
+00:13:38,020 --> 00:13:44,050
+Ma questo è un bel modo veloce per creare una lista invece di dover digitare ogni virgola.
+
+183
+00:13:44,230 --> 00:13:48,960
+Quindi voglio andare avanti e impostare quella lista uguale a quella nuova in effetti.
+
+184
+00:13:49,240 --> 00:13:54,850
+Quindi ho i miei nuovi valori di indice qui e quello che ho intenzione di fare è metterlo come una colonna nel mio frame di dati.
+
+185
+00:13:54,850 --> 00:14:02,350
+Quindi vado avanti e dico che DFA States è uguale a new i n d.
+
+186
+00:14:03,160 --> 00:14:09,520
+E dal momento che menzionano corrispondono quindi ci sono cinque elementi qui.
+
+187
+00:14:09,640 --> 00:14:12,610
+Corrisponderà da 0 a 4 qui sullo stato del frame.
+
+188
+00:14:12,700 --> 00:14:16,030
+Quindi se controllo il mio data frame ho questa nuova colonna chiamata states CA NY w o o RCO.
+
+189
+00:14:16,060 --> 00:14:24,070
+Ora sappiamo come resettare l'indice che sta semplicemente facendo un reset dell'indice dell'indice di sottolineatura.
+
+190
+00:14:24,100 --> 00:14:29,000
+Ma se hai una colonna nel tuo frame dei dati che vuoi essere l'indice
+
+191
+00:14:29,170 --> 00:14:34,150
+che puoi andare avanti e fare è dire set index invece di reset index.
+
+192
+00:14:34,150 --> 00:14:37,950
+qui e se faccio spostare invio ora la colonna stati è diventato l'indice.
+
+193
+00:14:38,110 --> 00:14:46,120
+Ad esempio, posso dire che DF punto imposta indice di sottolineatura e quindi passa il nome della colonna che si desidera essere il nuovo indice, quindi dichiara
+
+194
+00:14:46,120 --> 00:14:54,100
+Tieni presente che, se non conservi queste informazioni dell'indice, sovrascrivi il tuo vecchio indice e
+
+195
+00:14:54,100 --> 00:15:00,320
+non sarai in grado di conservare queste informazioni come una nuova colonna.
+
+196
+00:15:00,370 --> 00:15:03,630
+A differenza dell'indice di reset che ti permette di avere quella nuova colonna.
+
+197
+00:15:03,760 --> 00:15:07,810
+Quindi questo è un indice fisso rispetto all'indice di reset.
+
+198
+00:15:07,810 --> 00:15:11,280
+Ancora una volta se controllo il mio data frame qui questo non era a posto.
+
+199
+00:15:11,340 --> 00:15:14,750
+Dovrei aggiungere l'argomento.
+
+200
+00:15:14,830 --> 00:15:16,190
+Se lo faccio spostare inserire qui sul posto.
+
+201
+00:15:16,210 --> 00:15:18,650
+È uguale al vero
+
+202
+00:15:18,680 --> 00:15:20,140
+Permettetemi di andare avanti e di fare una rapida revisione di ciò che abbiamo appena trattato prima di andare alla terza parte.
+
+203
+00:15:20,810 --> 00:15:28,820
+Ok abbiamo imparato a conoscere la selezione condizionale che è molto simile alle operazioni PI.
+
+204
+00:15:28,820 --> 00:15:34,180
+Fondamentalmente ottieni un frame di dati di valori booleani e se passi un intero frame di dati di valori
+
+205
+00:15:34,180 --> 00:15:39,550
+booleani otterrai i valori dove è vero e otterrai qualsiasi valore n o nessun valore in cui era falso.
+
+206
+00:15:39,880 --> 00:15:44,830
+Se passi in una serie di valori booleani come una colonna
+
+207
+00:15:44,830 --> 00:15:52,090
+con un operatore di confronto, finirai solo per ottenere le righe del frame dei dati laddove è
+
+208
+00:15:52,090 --> 00:15:57,850
+vero che sia vero e potresti farlo in più passaggi se lo desideri.
+
+209
+00:15:57,910 --> 00:16:00,350
+Di nuovo queste due cellule sono probabilmente le più importanti da capire.
+
+210
+00:16:00,360 --> 00:16:03,160
+Fuori da questa lezione se capisci
+
+211
+00:16:03,160 --> 00:16:07,810
+questo, capisci come fare una selezione condizionale in mutandine.
+
+212
+00:16:07,810 --> 00:16:08,970
+Quindi, scorrendo verso il basso
+
+213
+00:16:09,190 --> 00:16:15,490
+se si desidera eseguire più selezioni condizionali, è possibile eseguire una e commerciale o un operatore di pipe non può utilizzare gli operatori incorporati o or di Python.
+
+214
+00:16:15,490 --> 00:16:19,990
+A causa dei valori ambigui in una serie di
+
+215
+00:16:20,170 --> 00:16:27,460
+verità e ricorda di utilizzare le parentesi per separare ogni istruzione di selezione condizionale.
+
+216
+00:16:27,460 --> 00:16:30,040
+Quindi finalmente abbiamo ripristinato.
+
+217
+00:16:30,040 --> 00:16:31,300
+L'indice di reset dell'indice
+
+218
+00:16:31,330 --> 00:16:38,650
+ripristina l'indice in un indice numerico e prende il tuo vecchio indice e lo imposta come una nuova colonna denominata indice, quindi
+
+219
+00:16:38,650 --> 00:16:45,670
+puoi impostare un nuovo indice invece di reimpostare qualsiasi indice basato su una colonna corrente semplicemente dicendo Set indice di sottolineatura.
+
+220
+00:16:45,970 --> 00:16:49,910
+E entrambi questi metodi non sono disponibili per impostazione predefinita.
+
+221
+00:16:50,170 --> 00:16:53,090
+Quindi assicurati di specificare gli ECO veri.
+
+222
+00:16:53,140 --> 00:16:55,560
+Se vuoi che il cambiamento sia permanente.
+
+223
+00:16:55,690 --> 00:16:57,970
+Va bene, è tutto per questa lezione.
+
+224
+00:16:58,030 --> 00:17:00,550
+Grazie a tutti.
+
+225
+00:17:00,550 --> 00:17:01,350
+Vedrò alla prossima lezione o discuteremo l'indice più in alto.
+
+226
+00:17:01,390 --> 00:17:04,800
+Di nuovo tutte queste note sono solo in un blocco note chiamato Data frames.
+
+227
+00:17:04,960 --> 00:17:08,630
+Grazie e vedrò se la prossima lezione
+
+228
+00:17:08,650 --> 00:17:10,210
+&nbsp;

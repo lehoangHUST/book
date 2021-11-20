@@ -1,0 +1,1055 @@
+1
+00:00:05,130 --> 00:00:10,470
+Hello everyone and welcome to Python crash course Part 1 and Part 1 we're going to go ahead and begin
+
+2
+00:00:10,470 --> 00:00:14,270
+our discussion of Python by going over basic data types.
+
+3
+00:00:14,280 --> 00:00:17,730
+Let me go ahead and show you where you can find that you've been in notebooks for this lecture series
+
+4
+00:00:17,740 --> 00:00:18,230
+.
+
+5
+00:00:18,720 --> 00:00:22,010
+Ok here I am at the downloaded and unzip repository.
+
+6
+00:00:22,200 --> 00:00:28,190
+If you go ahead and go to the Python crash course folder you'll see three notebooks here are IPY inby
+
+7
+00:00:28,220 --> 00:00:28,820
+files.
+
+8
+00:00:28,830 --> 00:00:31,940
+We're going to be working with the python crash course notebook.
+
+9
+00:00:31,940 --> 00:00:36,990
+And if you click on that you should see a notebook that looks something like this and it has all the
+
+10
+00:00:36,990 --> 00:00:38,720
+data types are going to be going over.
+
+11
+00:00:38,790 --> 00:00:43,830
+We'll start off by just going over numbers streams printing lists dictionary booleans tuples and sets
+
+12
+00:00:43,830 --> 00:00:44,090
+.
+
+13
+00:00:44,130 --> 00:00:45,680
+We'll see how far along we get.
+
+14
+00:00:45,750 --> 00:00:48,200
+And later on we'll cover some more advanced features.
+
+15
+00:00:48,300 --> 00:00:54,910
+I'm going to go ahead and start a new notebook here and set it ready to go.
+
+16
+00:00:55,110 --> 00:01:00,030
+I'll go ahead and what's in the view tug with the head bar and toggle the toolbar just to get a little
+
+17
+00:01:00,030 --> 00:01:00,970
+more room here.
+
+18
+00:01:01,140 --> 00:01:06,450
+And again all I'm going to be doing is typing through all the examples here and explaining the code
+
+19
+00:01:06,480 --> 00:01:07,330
+as we go along.
+
+20
+00:01:07,340 --> 00:01:12,220
+So if you ever need a reference something you can just copy and paste from this lecture notebook.
+
+21
+00:01:12,720 --> 00:01:12,990
+All right.
+
+22
+00:01:13,020 --> 00:01:20,280
+Let's go ahead and get started with basic numbers and arithmetic I thought has two basic number types
+
+23
+00:01:20,280 --> 00:01:20,550
+.
+
+24
+00:01:20,580 --> 00:01:23,350
+There is the integer which is just something like 1.
+
+25
+00:01:23,640 --> 00:01:27,540
+And then there is the floating point number which is something like point zero.
+
+26
+00:01:27,540 --> 00:01:32,880
+So a floating point number has a decimal attached to it and with either of these numbers you can perform
+
+27
+00:01:32,880 --> 00:01:34,830
+basic arithmetic as you would expect.
+
+28
+00:01:34,840 --> 00:01:37,260
+So for addition it's just a plus sign.
+
+29
+00:01:37,260 --> 00:01:43,740
+One plus one and I'm just doing shift enter here it's run the cells for multiplication is just an asterix
+
+30
+00:01:43,740 --> 00:01:45,400
+So 1 times 3.
+
+31
+00:01:45,480 --> 00:01:46,950
+Just an asterix like that.
+
+32
+00:01:46,950 --> 00:01:52,340
+The vision is just going to be a forward slash one divided by two is 0.5.
+
+33
+00:01:52,350 --> 00:01:54,370
+And note that even I put into integers.
+
+34
+00:01:54,540 --> 00:02:00,300
+I get a floating point out if you're a Python 2 user you'll have to make sure that one of these itself
+
+35
+00:02:00,690 --> 00:02:03,090
+is a floating point number in order to get the same result.
+
+36
+00:02:03,090 --> 00:02:08,480
+I just it for exponents for instance to the power of four.
+
+37
+00:02:08,550 --> 00:02:10,450
+Just two Asterix put together.
+
+38
+00:02:10,470 --> 00:02:13,050
+So two to the power of four is 16.
+
+39
+00:02:13,050 --> 00:02:20,430
+That is two times two times two times to something else to know is that Python will follow an order
+
+40
+00:02:20,430 --> 00:02:22,470
+of operations as you would expect.
+
+41
+00:02:22,500 --> 00:02:26,520
+And you can use parentheses to actually clarify the order of operations.
+
+42
+00:02:26,670 --> 00:02:36,900
+For instance if I go ahead and type in two plus three times five plus five mathematic order of operations
+
+43
+00:02:36,900 --> 00:02:41,030
+would actually declare the multiplication to occur first and then the addition.
+
+44
+00:02:41,040 --> 00:02:45,120
+So if I run this I will get 15 plus two plus five.
+
+45
+00:02:45,240 --> 00:02:47,430
+So 15 plus seven is 22.
+
+46
+00:02:47,490 --> 00:02:52,890
+If you actually want to say something like two plus three times the result of five plus five you can
+
+47
+00:02:52,890 --> 00:03:00,300
+use parentheses in order to just clarify your order so you can use parentheses in this manner to actually
+
+48
+00:03:00,300 --> 00:03:04,850
+say five times 10 which will get you 50.
+
+49
+00:03:04,890 --> 00:03:08,570
+The last arithmetic operation I want to show you is the model function.
+
+50
+00:03:08,820 --> 00:03:13,990
+So the Ma'at function or modulus as it's also known is the percent sign in Python.
+
+51
+00:03:14,610 --> 00:03:18,660
+And it basically will return what remains after the division.
+
+52
+00:03:18,780 --> 00:03:22,010
+So for divided by two is two remainder.
+
+53
+00:03:22,010 --> 00:03:23,210
+Zero.
+
+54
+00:03:23,250 --> 00:03:33,030
+So when you run for maade two you'll get zero as the output five divided by two is to remainder one
+
+55
+00:03:33,390 --> 00:03:36,400
+since four plus one is five.
+
+56
+00:03:36,500 --> 00:03:38,510
+And so you'll get out the remainder 1.
+
+57
+00:03:38,550 --> 00:03:47,480
+And this is a nice way to check if numbers are even so you'll know that if for instance a mod 2 returns
+
+58
+00:03:47,500 --> 00:03:49,510
+0 that 8 isn't even number.
+
+59
+00:03:49,530 --> 00:03:54,630
+Because two goes on evenly to that number and it has remainder zero.
+
+60
+00:03:54,930 --> 00:03:58,910
+Now let's talk quickly about variable assignments.
+
+61
+00:03:59,160 --> 00:04:04,680
+A lot of times you want to pick variable names in order to assign some object or data type to a variable
+
+62
+00:04:04,680 --> 00:04:05,270
+name.
+
+63
+00:04:05,400 --> 00:04:08,150
+In Python the assignment operator is just an equal sign.
+
+64
+00:04:08,400 --> 00:04:11,790
+So you'll choose the name of your variable by just starting to type stuff out.
+
+65
+00:04:11,790 --> 00:04:17,160
+Such as V-A are they all say equals and then whatever object type you want to put in there.
+
+66
+00:04:17,160 --> 00:04:23,880
+So for instance we can put in two and then whenever I call that variable name V A R I will get a two
+
+67
+00:04:23,880 --> 00:04:25,380
+out.
+
+68
+00:04:25,380 --> 00:04:31,550
+So for instance I can say x is equal to 2 y is equal to three.
+
+69
+00:04:31,740 --> 00:04:36,530
+And now I can actually say X plus Y and get out 5.
+
+70
+00:04:36,630 --> 00:04:41,730
+I can also reassign X by defining it with by itself.
+
+71
+00:04:41,760 --> 00:04:48,030
+So I can say x is equal to x plus X so that will end up resulting as x is equal to 4.
+
+72
+00:04:48,060 --> 00:04:53,280
+And now whenever I call X again it's going to be equal to 4 meaning if I were to run that cell again
+
+73
+00:04:53,760 --> 00:04:57,560
+the X equals x plus X every time I run it.
+
+74
+00:04:57,630 --> 00:05:04,080
+So essentially going to double the value of x and it's going to re-assign X as it's all double value
+
+75
+00:05:04,100 --> 00:05:04,320
+.
+
+76
+00:05:04,530 --> 00:05:05,070
+All right.
+
+77
+00:05:05,280 --> 00:05:07,560
+A couple of rules about creating these variable names.
+
+78
+00:05:07,560 --> 00:05:14,270
+They shouldn't start with numbers so you can't say something like 12 V-A are as equal to 12.
+
+79
+00:05:14,400 --> 00:05:19,890
+Otherwise you'll get a syntax error in o'War knew that it's invalid syntax Alexiou give you the error
+
+80
+00:05:19,890 --> 00:05:20,130
+.
+
+81
+00:05:20,130 --> 00:05:26,160
+So you can't start off with numbers and you also can't start off with special symbols so you can't say
+
+82
+00:05:26,160 --> 00:05:35,110
+something like Dollar Sign vr you'll start getting problems here so you'll get errors of syntax.
+
+83
+00:05:35,100 --> 00:05:40,190
+They should just start with a lowercase letter if you want to chain together multiple words.
+
+84
+00:05:40,290 --> 00:05:45,960
+You should use an underscore to separate them so name underscore of underscore the a.
+
+85
+00:05:45,990 --> 00:05:50,950
+Are other languages how do you use a period to separate this for Python.
+
+86
+00:05:50,970 --> 00:05:54,180
+The proper syntax is to use an underscore.
+
+87
+00:05:54,180 --> 00:05:57,110
+Now let's go ahead and talk about strings.
+
+88
+00:05:57,530 --> 00:06:03,570
+So I'm going to make a comments by putting in a hash tag on strings and anything of a hash tag in front
+
+89
+00:06:03,570 --> 00:06:03,990
+of it.
+
+90
+00:06:03,990 --> 00:06:09,330
+You'll notice it's color differently and see because it's a comment so it's just not going to run.
+
+91
+00:06:09,320 --> 00:06:10,720
+So you can type in whatever here.
+
+92
+00:06:10,740 --> 00:06:12,060
+It won't run.
+
+93
+00:06:12,060 --> 00:06:17,250
+All right let's go ahead to move on to strings and I'm going to go ahead and zoom in a bit so you get
+
+94
+00:06:17,250 --> 00:06:19,590
+a better view of this.
+
+95
+00:06:20,310 --> 00:06:23,460
+And for strings there's two ways of creating a string.
+
+96
+00:06:23,700 --> 00:06:30,930
+You can use single quotes and note how the color has change in the Kading that this is a string or you
+
+97
+00:06:30,930 --> 00:06:35,190
+can use double quotes so this is a string.
+
+98
+00:06:35,940 --> 00:06:41,670
+And then you can also wrap double quotes around single quotes so let's say you have a sentence that
+
+99
+00:06:41,670 --> 00:06:47,470
+says something like this like I cants go.
+
+100
+00:06:47,610 --> 00:06:54,150
+So if you have this single quote but you want to keep it inside then you can just wrap this around double
+
+101
+00:06:54,150 --> 00:06:58,690
+quotes and you'll notice that that single quote gets retained within the string.
+
+102
+00:06:58,710 --> 00:07:03,390
+So if you ever have are having to deal with either you want a single quote or a double quote inside
+
+103
+00:07:03,390 --> 00:07:09,000
+of a string you can always just wrap it around another set of either double or single quotes the pending
+
+104
+00:07:09,000 --> 00:07:10,420
+and what's on the inside.
+
+105
+00:07:10,810 --> 00:07:15,330
+OK let's go ahead and talk about printing strings.
+
+106
+00:07:15,330 --> 00:07:22,740
+I'm going to make a variable called X in a sign that the string hello for Jupiter notebook if I just
+
+107
+00:07:22,740 --> 00:07:28,950
+type in X it will show with out and then I'll show the quotes Hello here.
+
+108
+00:07:28,950 --> 00:07:32,880
+And this is essentially the same thing as if you were to type this directly into the console in Python
+
+109
+00:07:33,150 --> 00:07:35,290
+just typing in the variable x.
+
+110
+00:07:35,420 --> 00:07:42,510
+I'll put the string hello or Python However if you want to actually print the outputs of X you'll have
+
+111
+00:07:42,510 --> 00:07:48,030
+to pass it into the print function which is going to be prints parentheses and then x inside of those
+
+112
+00:07:48,030 --> 00:07:48,980
+parentheses.
+
+113
+00:07:49,200 --> 00:07:49,590
+And note.
+
+114
+00:07:49,590 --> 00:07:50,540
+Now the difference here.
+
+115
+00:07:50,580 --> 00:07:55,410
+I don't have that out indicator any more and I don't have the single quotes anymore.
+
+116
+00:07:55,500 --> 00:08:00,840
+So this is how you should officially display stuff when you're trying to show the result in Python is
+
+117
+00:08:00,870 --> 00:08:02,340
+the print statement.
+
+118
+00:08:02,340 --> 00:08:06,370
+Now let me go ahead and show you how you can format your print statements.
+
+119
+00:08:06,390 --> 00:08:15,180
+Let's say I have a variable name is equal to 12 and a name equal to Sam.
+
+120
+00:08:15,180 --> 00:08:18,990
+Now I want to actually print stuff based off those variables.
+
+121
+00:08:19,260 --> 00:08:21,790
+I can do that with print formatting.
+
+122
+00:08:22,230 --> 00:08:32,800
+I'll take a string and say My number is and I will pasan a block of quotes or curly brackets there.
+
+123
+00:08:33,400 --> 00:08:39,770
+And my name is and I'm going to passen another set of curly brackets.
+
+124
+00:08:40,020 --> 00:08:46,320
+And then in the mislay dots formats and note how it's colored here to indicate that this is a special
+
+125
+00:08:46,320 --> 00:08:52,290
+method off of the string and then you can go ahead and do is pass in the variable names in the order
+
+126
+00:08:52,500 --> 00:08:56,380
+you want them to be filled into these curly brackets.
+
+127
+00:08:56,430 --> 00:09:03,810
+So if I just typed this in and run this what Python does is it reads that you have curly brackets here
+
+128
+00:09:03,900 --> 00:09:08,480
+in your string and that you have that format and it will put them in the order you want.
+
+129
+00:09:08,550 --> 00:09:14,440
+So I'll say OK numb gets replaced here for these curly brackets and name gets replaced here.
+
+130
+00:09:14,460 --> 00:09:15,790
+For these curly brackets.
+
+131
+00:09:15,930 --> 00:09:21,480
+And that's a convenient way for you to use the variable names in your print statements instead of having
+
+132
+00:09:21,480 --> 00:09:24,610
+to write out 12 or Sam all the time.
+
+133
+00:09:24,930 --> 00:09:27,400
+And note that I'm actually not printing this yet.
+
+134
+00:09:27,480 --> 00:09:31,320
+I'll have to wrap this entire thing around the print statements.
+
+135
+00:09:31,320 --> 00:09:35,760
+So make sure your princes are balanced and you can see just by selecting one of the print princes to
+
+136
+00:09:35,760 --> 00:09:37,540
+get highlighted green.
+
+137
+00:09:37,600 --> 00:09:43,860
+Now if I were on this this has truly been printed and I no longer have that out sell the other way you
+
+138
+00:09:43,860 --> 00:09:52,050
+can use print formatting is to say if we go ahead and change this up you can pass any variable into
+
+139
+00:09:52,350 --> 00:09:54,010
+the curly brackets.
+
+140
+00:09:54,420 --> 00:10:00,980
+So I can say one inside of the curly brackets and two inside of the curly brackets.
+
+141
+00:10:01,170 --> 00:10:08,070
+And now that I've passed in these names I can go ahead an inside of my doc format statement say one
+
+142
+00:10:08,250 --> 00:10:11,380
+is equal to and then whatever variable I want one to be equal to.
+
+143
+00:10:11,430 --> 00:10:17,910
+In this case I want it to be equal to that numb and then two I wanted it to be equal to name.
+
+144
+00:10:18,000 --> 00:10:20,850
+And if I run this I'll get the exact same result.
+
+145
+00:10:20,850 --> 00:10:26,580
+What's nice about this is you no longer have to worry about the formatting being in the exact same order
+
+146
+00:10:26,790 --> 00:10:34,440
+you want for the curly brackets and you can continually put in more curly brackets so more and then
+
+147
+00:10:34,440 --> 00:10:41,420
+you can type in one here again and noticed that Python can now search and put in your variables in more
+
+148
+00:10:41,420 --> 00:10:47,280
+than just once so it comes here looks at the variable name then goes to your format and checks.
+
+149
+00:10:47,300 --> 00:10:49,190
+OK what is the variable name there.
+
+150
+00:10:49,190 --> 00:10:52,970
+So for instance 2 it looks in here says 2 is equal to name.
+
+151
+00:10:53,000 --> 00:10:53,230
+All right.
+
+152
+00:10:53,240 --> 00:10:57,880
+And then a fill in name over here and then we know that name is equal to the string Sam.
+
+153
+00:10:57,890 --> 00:11:00,640
+So it goes ahead and puts it inside there.
+
+154
+00:11:00,650 --> 00:11:03,080
+All right go ahead and feel free to post any questions.
+
+155
+00:11:03,080 --> 00:11:07,670
+The Q&A forum if you're confused on any of this print's formatting but it's basically straightforward
+
+156
+00:11:07,680 --> 00:11:07,740
+.
+
+157
+00:11:07,790 --> 00:11:10,440
+Just put in your string put in your curly brackets.
+
+158
+00:11:10,560 --> 00:11:15,020
+Then I would suggest that you use this method of passing in variable names because it's a little more
+
+159
+00:11:15,020 --> 00:11:19,430
+clear when you go back and you don't have to worry about messing up the order inside of this format
+
+160
+00:11:19,430 --> 00:11:21,750
+call.
+
+161
+00:11:21,770 --> 00:11:27,080
+Now let's go ahead and expand our topic of strings into indexing strings.
+
+162
+00:11:27,230 --> 00:11:33,780
+If I have a string called S and I'll say x is equal to hello.
+
+163
+00:11:34,230 --> 00:11:37,140
+S here is just a sequence of elements.
+
+164
+00:11:37,140 --> 00:11:44,990
+And in this case each element is a letter and I can grab specific elements from that sequence of characters
+
+165
+00:11:46,010 --> 00:11:49,730
+by using this square bracket notation and indexing it.
+
+166
+00:11:49,730 --> 00:11:51,400
+Pythoness starts at zero.
+
+167
+00:11:51,440 --> 00:11:59,210
+And this is something to know if I say X square brackets at zero and run this or turn back the zero
+
+168
+00:11:59,300 --> 00:12:00,180
+elements.
+
+169
+00:12:00,470 --> 00:12:07,570
+So here we see s it's grabs Hello checks as there are elements and then returns 0.
+
+170
+00:12:07,700 --> 00:12:12,140
+Go ahead and see if you can grab the last o there in Hilo.
+
+171
+00:12:12,380 --> 00:12:20,830
+Well what would you do you would say well what spacer index is that it's at 0 1 2 3 4.
+
+172
+00:12:21,710 --> 00:12:27,370
+You put in four into these brackets and grab that out.
+
+173
+00:12:27,380 --> 00:12:33,050
+The other thing to note is you can also use what's known as slice notation to actually just grab slices
+
+174
+00:12:33,110 --> 00:12:34,600
+of the string.
+
+175
+00:12:34,760 --> 00:12:38,980
+I'm going to go ahead and type in instead of aesthetical to hello.
+
+176
+00:12:39,020 --> 00:12:44,410
+I'll say a b c d e f g h i j k.
+
+177
+00:12:45,020 --> 00:12:50,300
+I'll run that and now what I'm going to go ahead and see if I type in s of 0.
+
+178
+00:12:50,330 --> 00:12:53,000
+Right here in this brackets I should get a back.
+
+179
+00:12:53,300 --> 00:12:54,600
+OK that makes sense.
+
+180
+00:12:54,770 --> 00:13:00,470
+Let's say I wanted to grab everything like a and beyond.
+
+181
+00:13:00,770 --> 00:13:05,380
+Well I can use colon notation which is also known as slice syntax in order to do this.
+
+182
+00:13:05,430 --> 00:13:09,810
+I will say s of 0 as in a colon.
+
+183
+00:13:09,920 --> 00:13:15,360
+Run this and this colon basically says OK starting at zero.
+
+184
+00:13:15,530 --> 00:13:22,200
+Grab everything beyond it and this notation works the other way around.
+
+185
+00:13:22,400 --> 00:13:27,770
+I can say grab everything with the colon up to a certain index.
+
+186
+00:13:27,770 --> 00:13:31,210
+So let's say I say a b c d.
+
+187
+00:13:31,370 --> 00:13:35,660
+So D is the index 3 0 1 2 3.
+
+188
+00:13:35,780 --> 00:13:43,250
+If I pass in three here this is basically commanding Python to say OK grab everything up to but not
+
+189
+00:13:43,250 --> 00:13:45,370
+including index 3.
+
+190
+00:13:45,380 --> 00:13:49,500
+This is sometimes confusing for beginners because they expect d to show up.
+
+191
+00:13:49,520 --> 00:13:54,860
+Well because it's the index position 3 but because indexing starts at zero you should just think of
+
+192
+00:13:54,860 --> 00:14:01,710
+this command as grab everything up to and not including the character element index three.
+
+193
+00:14:01,880 --> 00:14:05,900
+And we're going to be showing you more about slicing notation when we talk about lists because it's
+
+194
+00:14:05,900 --> 00:14:08,340
+the same sort of idea.
+
+195
+00:14:08,420 --> 00:14:14,630
+And then finally we combine these two ideas here as far as starting and grabbing everything beyond it
+
+196
+00:14:14,930 --> 00:14:23,700
+or grabbing everything up to but not including a certain index point by saying s start at zero.
+
+197
+00:14:24,190 --> 00:14:29,150
+Colin grab everything up to a certain index such as three.
+
+198
+00:14:29,240 --> 00:14:31,380
+Now that returns the same result as ABC.
+
+199
+00:14:31,400 --> 00:14:37,090
+But what I can do is replace these two numbers to set my start point and my End Point.
+
+200
+00:14:37,130 --> 00:14:43,440
+Let's go ahead and grab D E F so d starts at index 3.
+
+201
+00:14:43,910 --> 00:14:50,090
+Meaning if I go ahead and replace this I'm going to start at index 3 0 1 2 3 and then I'm going to go
+
+202
+00:14:50,090 --> 00:14:52,220
+up to and including G.
+
+203
+00:14:52,250 --> 00:15:00,030
+So that's 0 1 2 3 4 5 6 7 to say 3 colon 6.
+
+204
+00:15:00,290 --> 00:15:02,840
+Run that and I get d e f.
+
+205
+00:15:02,870 --> 00:15:06,580
+Again it's just the index you start at that's included colon.
+
+206
+00:15:06,590 --> 00:15:12,170
+Which means grab all the way through and then your last index is the index that you don't include because
+
+207
+00:15:12,200 --> 00:15:13,670
+indexing starts at zero.
+
+208
+00:15:13,760 --> 00:15:17,180
+So g is not included even the index 6.
+
+209
+00:15:17,450 --> 00:15:26,840
+OK well again reiterate this idea when we talk about this which is coming up right now lists are a sequence
+
+210
+00:15:26,900 --> 00:15:32,560
+of elements in a square set of square brackets separated by commas.
+
+211
+00:15:32,570 --> 00:15:39,270
+So here you have a list one two three list can take in basically any data type.
+
+212
+00:15:39,710 --> 00:15:45,130
+So I can also have a list of strings a b c and there's no complaints here.
+
+213
+00:15:45,260 --> 00:15:58,460
+I'm going to go ahead and make a variable called my list and set it equal to a b c run that and if I
+
+214
+00:15:58,460 --> 00:16:03,020
+want to add an element to the end of my list I use the append method.
+
+215
+00:16:03,080 --> 00:16:06,950
+I say my underscore list appends.
+
+216
+00:16:07,310 --> 00:16:09,630
+And then let's say I want to append the letter D.
+
+217
+00:16:09,950 --> 00:16:13,350
+I just run that and if I check my list now.
+
+218
+00:16:14,300 --> 00:16:16,490
+Now what has appended that value.
+
+219
+00:16:16,490 --> 00:16:22,160
+D And they list is also a sequence just like a string is.
+
+220
+00:16:22,220 --> 00:16:27,350
+Meaning if I want to grab the first item in the list I can use the same brechen notation I did for a
+
+221
+00:16:27,350 --> 00:16:34,940
+string pass in the index i Watz run this and I'll return the item at the index so 0 1 to where each
+
+222
+00:16:34,940 --> 00:16:38,230
+index point is not separated by a comma.
+
+223
+00:16:38,450 --> 00:16:44,300
+For instance if I wanted to grab a b and c I can use the same slice notation we just went over.
+
+224
+00:16:44,540 --> 00:16:51,730
+I want to start at index 1 and go all the way up to but not including index 3.
+
+225
+00:16:51,740 --> 00:16:57,290
+So I'll say one colon three not returns B and C.
+
+226
+00:16:57,740 --> 00:17:02,550
+I can also reassign positions using this index notation.
+
+227
+00:17:02,660 --> 00:17:08,360
+So if I wanted the first element to be something different I just say my underscore list pasand zero
+
+228
+00:17:08,360 --> 00:17:13,380
+into those square brackets and then pass in whatever element I want for instance.
+
+229
+00:17:13,520 --> 00:17:16,390
+I want that element to be new now.
+
+230
+00:17:16,390 --> 00:17:20,340
+So if I grab my list I see new B C D.
+
+231
+00:17:20,870 --> 00:17:28,550
+Something to note here is that you can nest list inside of each other so I can say illest one comma
+
+232
+00:17:28,560 --> 00:17:34,750
+to comma and then put in another list 3 comma for.
+
+233
+00:17:34,790 --> 00:17:39,440
+So if I take a look at list it's a list inside of a list.
+
+234
+00:17:39,440 --> 00:17:44,400
+So in fact let's say I wanted to grab this for as a single element.
+
+235
+00:17:44,570 --> 00:17:48,770
+Well that's a list the index 0 1 2.
+
+236
+00:17:48,830 --> 00:17:52,650
+So I pass on to here and this returns in other lists.
+
+237
+00:17:52,850 --> 00:17:59,270
+So let's say I want a graph for well that is now index 0 1 meaning I can tack on another set of brackets
+
+238
+00:17:59,840 --> 00:18:03,680
+1 and get the actual elements for.
+
+239
+00:18:03,710 --> 00:18:08,970
+Let me go in and show you one more example of grabbing stuff from nested lists.
+
+240
+00:18:08,990 --> 00:18:12,530
+You don't do this too often with no less lists or very deep.
+
+241
+00:18:12,530 --> 00:18:20,570
+But I just want you to get the idea of using multiple brackets so let's say I have a nested list that
+
+242
+00:18:20,570 --> 00:18:22,070
+looks like this.
+
+243
+00:18:22,070 --> 00:18:23,590
+One two three.
+
+244
+00:18:23,600 --> 00:18:26,670
+Another list four or five other lists target.
+
+245
+00:18:27,020 --> 00:18:34,220
+Well I can grab the third or fourth element to index three in my nest list.
+
+246
+00:18:34,220 --> 00:18:35,430
+That looks like this.
+
+247
+00:18:35,480 --> 00:18:41,280
+Then I can set another one to go at index to 0 1 2 that's the target list.
+
+248
+00:18:41,330 --> 00:18:44,350
+And let's say I want the only elements in that target list.
+
+249
+00:18:44,360 --> 00:18:47,920
+No it still has the square brackets around that I just pasan zero.
+
+250
+00:18:47,960 --> 00:18:49,700
+And now I have the string target.
+
+251
+00:18:49,910 --> 00:18:54,980
+And if you want to print this string I can wrap this whole thing in a print statement.
+
+252
+00:18:54,990 --> 00:18:56,590
+Now I grab my target.
+
+253
+00:18:56,600 --> 00:19:00,250
+You'll have an exercise where you have to kind of find something in a nested list.
+
+254
+00:19:00,260 --> 00:19:05,460
+So make sure you understand the topic of these brackets kind of stacked on top of each other.
+
+255
+00:19:05,480 --> 00:19:05,930
+All right.
+
+256
+00:19:06,170 --> 00:19:08,260
+Well go ahead and stop here for part one.
+
+257
+00:19:08,330 --> 00:19:12,800
+And coming up next we'll go ahead and cover some more data types in this lecture we went over lists
+
+258
+00:19:12,980 --> 00:19:17,120
+slice notation how to grab things from an index strings.
+
+259
+00:19:17,120 --> 00:19:22,770
+How did this imprint formatting basic variable assignments and also just basic arithmetic.
+
+260
+00:19:23,030 --> 00:19:23,820
+OK.
+
+261
+00:19:23,900 --> 00:19:25,370
+Hope you enjoy this lecture.
+
+262
+00:19:25,370 --> 00:19:27,880
+Coming up next we'll go over some more stuff.
+
+263
+00:19:27,890 --> 00:19:28,640
+Thanks everyone.
+
+264
+00:19:28,640 --> 00:19:29,480
+See at the next lecture

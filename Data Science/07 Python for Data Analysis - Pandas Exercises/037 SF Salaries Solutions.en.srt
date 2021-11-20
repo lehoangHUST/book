@@ -1,0 +1,835 @@
+1
+00:00:05,580 --> 00:00:08,220
+Hello everyone else to eat pantless exercise.
+
+2
+00:00:08,220 --> 00:00:14,540
+SS salary's solutions lecture this lecture were over the solutions for the S.F. salary's pandas exercise
+
+3
+00:00:14,550 --> 00:00:14,760
+.
+
+4
+00:00:15,030 --> 00:00:17,780
+Let's call him took the Jupiter note book to get started.
+
+5
+00:00:18,240 --> 00:00:20,440
+All right here we are at the Jupiter notebook.
+
+6
+00:00:20,540 --> 00:00:25,650
+This is just a quick exercise for you to sharpen your panda skills and get used to working pandas and
+
+7
+00:00:25,650 --> 00:00:26,970
+real data sets.
+
+8
+00:00:27,060 --> 00:00:30,540
+In this case we're going to be using S.F. salary's data set from Kaggle.
+
+9
+00:00:30,720 --> 00:00:35,160
+And again you can click the link here and it will take you to the actual data source with some more
+
+10
+00:00:35,160 --> 00:00:38,110
+information and some other examples of data analysis.
+
+11
+00:00:38,210 --> 00:00:42,270
+So let's go ahead and get started with the salaries exercise.
+
+12
+00:00:42,270 --> 00:00:48,720
+Let me go ahead and import pandas as Edi and then let's go ahead and read salary's not see as we as
+
+13
+00:00:48,720 --> 00:00:49,650
+a data frame called.
+
+14
+00:00:49,650 --> 00:00:57,750
+So that's going to be PD read CSP and a nice trick here as we begin typing it.
+
+15
+00:00:57,840 --> 00:01:05,110
+Use tab autocomplete And let's go ahead and check the head of this data frame.
+
+16
+00:01:05,490 --> 00:01:12,400
+You just call it as a method looks like we have ID Employee Name job title based pay overtime pay go
+
+17
+00:01:12,400 --> 00:01:19,260
+ahead and just make this two rows and other pay benefits little pay little pay benefits which is basically
+
+18
+00:01:19,260 --> 00:01:21,980
+total pay plus benefits a year.
+
+19
+00:01:22,020 --> 00:01:25,050
+Then he notes agency and status.
+
+20
+00:01:25,080 --> 00:01:26,980
+Now let's go ahead and use the input method.
+
+21
+00:01:27,000 --> 00:01:34,980
+Find out how many entries there are so I don't go to say sell info or this info method returns the number
+
+22
+00:01:34,980 --> 00:01:39,810
+of columns and the number of entry rows.
+
+23
+00:01:39,810 --> 00:01:42,750
+Now I want to know what's the average base pay.
+
+24
+00:01:42,750 --> 00:01:49,970
+Let's go ahead and color data frame will grab the base pay column Minnies tab autocomplete her ease
+
+25
+00:01:49,980 --> 00:01:52,520
+of use here and then average.
+
+26
+00:01:52,620 --> 00:01:55,020
+In this case I just mean a mean.
+
+27
+00:01:55,550 --> 00:02:01,810
+So we can call the mean off of this and it returns that the median or mean excuse me based pay is sixty
+
+28
+00:02:01,810 --> 00:02:03,780
+six thousand 325.
+
+29
+00:02:03,780 --> 00:02:07,950
+The reason I used the word average here I'm sort of saying mine was just to make sure I didn't give
+
+30
+00:02:07,950 --> 00:02:10,200
+away the answer completely.
+
+31
+00:02:10,200 --> 00:02:11,010
+All right.
+
+32
+00:02:11,010 --> 00:02:14,390
+Now what is the highest amount of overtime pay in the data set.
+
+33
+00:02:14,470 --> 00:02:21,720
+We're going to go out and do is grab the overtime pay column and then just call Max off of it in the
+
+34
+00:02:21,770 --> 00:02:27,060
+short term the maximum amount of overtime pay which in this case was quite substantial sort of forty
+
+35
+00:02:27,060 --> 00:02:29,140
+five thousand one hundred thirty one.
+
+36
+00:02:29,610 --> 00:02:30,280
+OK.
+
+37
+00:02:30,570 --> 00:02:35,720
+Now what does the job title of Joseph Driscoll and the note use all caps here.
+
+38
+00:02:35,730 --> 00:02:38,290
+Otherwise you may get a different answer.
+
+39
+00:02:38,550 --> 00:02:40,460
+Going to say sell.
+
+40
+00:02:40,620 --> 00:02:42,900
+I'm going to look for job title.
+
+41
+00:02:43,050 --> 00:02:48,170
+And in this case it's actually just called job title as a single word.
+
+42
+00:02:48,180 --> 00:02:50,440
+So I say job title.
+
+43
+00:02:50,660 --> 00:02:55,470
+They notice here you have a bunch of job titles so I want to find out the row where this matches up
+
+44
+00:02:55,470 --> 00:02:55,550
+.
+
+45
+00:02:55,560 --> 00:02:59,090
+Someone named Joseph Driscoll so I'm going to go in and say this.
+
+46
+00:02:59,160 --> 00:03:08,630
+I will say Sal employee name equals equals and in strings all caps.
+
+47
+00:03:08,670 --> 00:03:18,140
+Joseph Driscoll and I will put that into his cell.
+
+48
+00:03:20,040 --> 00:03:23,540
+And here I have the row where Joseph Driscoll in all caps is here.
+
+49
+00:03:23,550 --> 00:03:26,490
+So his job title is captain of fire suppression.
+
+50
+00:03:26,640 --> 00:03:32,400
+And if I just wanted that column back I could Furthermore just call it job title off of this as we showed
+
+51
+00:03:32,400 --> 00:03:36,200
+earlier and then grab captain of fire suppression.
+
+52
+00:03:36,210 --> 00:03:38,480
+Now I want to know how much does Joseph Driscoll make.
+
+53
+00:03:38,500 --> 00:03:40,190
+And again you need to use all caps here.
+
+54
+00:03:40,230 --> 00:03:42,330
+Get the matching answer.
+
+55
+00:03:42,330 --> 00:03:45,050
+We're going to go in and say Sal.
+
+56
+00:03:45,180 --> 00:03:50,380
+Sal employee name equals equals.
+
+57
+00:03:50,910 --> 00:03:55,120
+Joseph Driscoll.
+
+58
+00:03:55,560 --> 00:03:56,790
+Now we have his role here.
+
+59
+00:03:56,820 --> 00:03:59,770
+And I want to know how much he makes including benefits.
+
+60
+00:03:59,970 --> 00:04:09,060
+That's total pay benefits that can actually just grab that were on top of the total pay benefits and
+
+61
+00:04:09,060 --> 00:04:12,630
+it looks like the answer is 270000 324.
+
+62
+00:04:12,630 --> 00:04:19,770
+Keep in mind if you accidentally forgot to put this in all caps and said Joseph Driscoll you would actually
+
+63
+00:04:19,770 --> 00:04:20,970
+get another answer.
+
+64
+00:04:20,970 --> 00:04:22,240
+So he's actually in here twice.
+
+65
+00:04:22,240 --> 00:04:25,980
+So keep that in mind in order to have your answers match up to the solutions.
+
+66
+00:04:25,980 --> 00:04:29,300
+Just use all caps.
+
+67
+00:04:29,310 --> 00:04:33,490
+Now we want to know what's the name of the highest paid person including benefits.
+
+68
+00:04:33,540 --> 00:04:35,640
+There's quite a few ways to do this.
+
+69
+00:04:35,820 --> 00:04:38,920
+But let's go ahead and do the most straightforward way.
+
+70
+00:04:38,970 --> 00:04:48,990
+So I'm going to get a little pay benefits and if I call the max value here note that I get the maximum
+
+71
+00:04:49,260 --> 00:04:53,400
+total pay benefits but I want to know the name of who's actually receiving this.
+
+72
+00:04:53,400 --> 00:04:55,380
+So I can say this I can say sell
+
+73
+00:04:58,460 --> 00:05:04,110
+of total pay benefits equals equals sough not Max.
+
+74
+00:05:04,110 --> 00:05:04,800
+I run this.
+
+75
+00:05:04,800 --> 00:05:06,960
+This returns boolean values.
+
+76
+00:05:07,010 --> 00:05:08,450
+And no I just have one true.
+
+77
+00:05:08,450 --> 00:05:10,800
+It's actually the first person in the data frame
+
+78
+00:05:14,520 --> 00:05:20,280
+that I can pass that into to Soule In order to actually grab his name which is the thing to afford and
+
+79
+00:05:20,280 --> 00:05:26,590
+if I just wanted the name I could say employee name off of this and get his name THANIA afford.
+
+80
+00:05:26,970 --> 00:05:28,490
+OK that's one way to do it.
+
+81
+00:05:28,560 --> 00:05:35,670
+The more advanced way to do this and we actually haven't gone over this method but just use cell Loek
+
+82
+00:05:36,900 --> 00:05:45,640
+where south of Little pay benefits the id x Max.
+
+83
+00:05:45,690 --> 00:05:51,260
+And this is essentially almost like an arc emacs method and this return some information as well and
+
+84
+00:05:51,250 --> 00:05:56,730
+it will return Nathanial for this and more advanced methods you can look up the X Max but it's very
+
+85
+00:05:56,740 --> 00:05:57,650
+similar to pis.
+
+86
+00:05:57,710 --> 00:05:58,930
+Argh Max.
+
+87
+00:05:59,260 --> 00:06:03,170
+OK we just take a look at what this is.
+
+88
+00:06:03,250 --> 00:06:05,360
+This is essentially just a number.
+
+89
+00:06:05,940 --> 00:06:09,750
+So a hash tag this out and paste this.
+
+90
+00:06:09,750 --> 00:06:15,010
+This is essentially just RMX and in effect Panas actually supports RMX.
+
+91
+00:06:15,030 --> 00:06:18,960
+So I could say our max here and it would give me the same answer.
+
+92
+00:06:19,060 --> 00:06:21,460
+And that's essentially where I want to find this person.
+
+93
+00:06:21,710 --> 00:06:31,830
+So I can say sal Dot either IOC or Alosi since it matches up and I still get enough data afford.
+
+94
+00:06:31,890 --> 00:06:36,390
+OK I'm going to review the solution but if you're interested in this method but hopefully you've figured
+
+95
+00:06:36,390 --> 00:06:38,990
+out either this one or more advanced method.
+
+96
+00:06:39,330 --> 00:06:41,640
+Let's go on and continue on.
+
+97
+00:06:41,670 --> 00:06:45,990
+Now we want to know what's the name of the lowest paid person including benefits and do you notice something
+
+98
+00:06:46,000 --> 00:06:48,060
+strange about how much he or she is paid.
+
+99
+00:06:48,450 --> 00:06:50,010
+So we want the lowest paid person.
+
+100
+00:06:50,070 --> 00:06:50,700
+Go ahead and do it.
+
+101
+00:06:50,740 --> 00:07:05,500
+The advanced method is going to say sell of total pay benefits are Dimin or I.T. X-Men.
+
+102
+00:07:06,260 --> 00:07:11,290
+Notice here we have a hundred forty eight thousand six hundred fifty three.
+
+103
+00:07:11,740 --> 00:07:21,450
+That is the ID location so I can pass this into salbe IOC and this returns the employees name Joe Lopez
+
+104
+00:07:21,450 --> 00:07:21,750
+.
+
+105
+00:07:21,750 --> 00:07:27,300
+Now to notice something strange here is that this person is actually receiving negative pay meaning
+
+106
+00:07:27,330 --> 00:07:33,840
+for some reason this person actually owes San Francisco money through some sort of weird situation but
+
+107
+00:07:34,030 --> 00:07:36,930
+hopefully are able to get Joe Lopez as the answer.
+
+108
+00:07:37,000 --> 00:07:41,860
+This is the more advanced method of doing it with RMN But you could have also done the following.
+
+109
+00:07:41,940 --> 00:07:54,730
+You could of said cell total pay benefits equals equals cell of little pay benefits not men and then
+
+110
+00:07:54,730 --> 00:07:56,110
+just pass this on to.
+
+111
+00:07:56,190 --> 00:08:04,590
+So this would have also returned Joe Lopez counseller the AU's Sioux City San Francisco money.
+
+112
+00:08:05,060 --> 00:08:08,250
+All right now is talk about what was the average in this case.
+
+113
+00:08:08,250 --> 00:08:09,180
+I want to give you the answer.
+
+114
+00:08:09,210 --> 00:08:11,770
+I mean based pay of all employees per year.
+
+115
+00:08:12,130 --> 00:08:14,400
+OK now we want to use a Group By.
+
+116
+00:08:14,640 --> 00:08:27,700
+So I get to say sell not group by year and I want the average in this case I mean if I just report this
+
+117
+00:08:27,780 --> 00:08:31,750
+I get everything averaged by year and they just want the base pay.
+
+118
+00:08:31,760 --> 00:08:37,540
+So going to call base pay off of this column of this data frame's Scuse me and there we go.
+
+119
+00:08:37,600 --> 00:08:42,150
+The average base payable employees per year are we can see that it slowly went up.
+
+120
+00:08:42,140 --> 00:08:47,820
+2011 2012 started going up and in 2014 it went down a little.
+
+121
+00:08:47,830 --> 00:08:52,810
+The next question I wanted to answer was how many unique job titles are there and thats actually quite
+
+122
+00:08:52,800 --> 00:09:00,510
+easy you just say sell job title and then remember there is quite a few functions or methods you can
+
+123
+00:09:00,510 --> 00:09:02,940
+use for grepping unique values.
+
+124
+00:09:02,940 --> 00:09:07,980
+The one we want is not unique because that actually returns an array of all the unique values that we
+
+125
+00:09:07,990 --> 00:09:11,670
+want and unique which returns a number of unique values.
+
+126
+00:09:11,760 --> 00:09:19,020
+You could have also then the length of this unique output and that would a return the same thing the
+
+127
+00:09:19,020 --> 00:09:23,870
+easier way to do this is not with length but just with and you.
+
+128
+00:09:24,210 --> 00:09:26,710
+Now we want to know what are the top five most common jobs.
+
+129
+00:09:26,740 --> 00:09:39,060
+Well you can do this by saying sell job title not value counts and then call the Top 5 of this and the
+
+130
+00:09:39,070 --> 00:09:42,530
+search terms the top 5 most common job titles.
+
+131
+00:09:42,560 --> 00:09:47,070
+Okay the next question I wanted to answer was how many job titles are represented by only one person
+
+132
+00:09:47,080 --> 00:09:48,630
+in 2013.
+
+133
+00:09:48,630 --> 00:09:52,580
+Otherwise it's just job titles of only one occurrence in 2013.
+
+134
+00:09:52,590 --> 00:09:54,600
+So there's probably conditions you want to do.
+
+135
+00:09:54,820 --> 00:10:00,380
+We want to figure out the job titles as value accounts figure out where they are only equal to one.
+
+136
+00:10:00,410 --> 00:10:03,410
+We also want to make sure we only do this for the 2013 year.
+
+137
+00:10:03,510 --> 00:10:07,280
+So it's going to break this down.
+
+138
+00:10:07,360 --> 00:10:13,530
+I want to grab Sal where the Year is equal to 2013.
+
+139
+00:10:14,100 --> 00:10:20,900
+Then I'm going to go ahead and grab the job title column off of this and perform volume counts on this
+
+140
+00:10:23,610 --> 00:10:30,640
+here have value counts very similar to what we just said above here but now is only for the year 2013
+
+141
+00:10:31,500 --> 00:10:36,750
+and what to do with this is ask where's is equal to one.
+
+142
+00:10:37,600 --> 00:10:43,230
+And we get some boolean values falses up here and True's down here where this was all equal to one.
+
+143
+00:10:43,270 --> 00:10:47,230
+And I want to figure out well what's the actual count of this occurrence.
+
+144
+00:10:47,230 --> 00:10:49,420
+I can just actually take some of this
+
+145
+00:10:53,060 --> 00:10:53,690
+in return.
+
+146
+00:10:53,820 --> 00:10:55,260
+Two hundred and two.
+
+147
+00:10:55,380 --> 00:11:00,490
+And that's the fastest and easiest way to know how many job titles are represented by only one person
+
+148
+00:11:00,580 --> 00:11:02,600
+in 2013.
+
+149
+00:11:02,650 --> 00:11:03,170
+OK.
+
+150
+00:11:03,520 --> 00:11:08,260
+Let's go ahead and move on to the next one which is also quite tricky which is how many people have
+
+151
+00:11:08,260 --> 00:11:13,990
+the word chief in their job title in order to do this we have to make a custom function.
+
+152
+00:11:14,260 --> 00:11:20,050
+Let's go in and check out what job title looks like as a column.
+
+153
+00:11:20,150 --> 00:11:24,030
+So you have job title notice everything is an upper case for the most part.
+
+154
+00:11:24,040 --> 00:11:25,830
+Let's go ahead and scroll down.
+
+155
+00:11:25,870 --> 00:11:27,730
+And now we see that there's lowercase.
+
+156
+00:11:27,790 --> 00:11:32,500
+So we're going to have to do is make sure you take this into account and we're going to do is create
+
+157
+00:11:32,500 --> 00:11:37,890
+a function in order to do this.
+
+158
+00:11:38,230 --> 00:11:41,760
+We're going to say Chief string takes in the title
+
+159
+00:11:44,320 --> 00:11:53,530
+and if Chief is in title The lower it splits
+
+160
+00:11:56,130 --> 00:12:02,490
+return TRUE else return false.
+
+161
+00:12:02,920 --> 00:12:06,370
+Let's go to break down what this function is actually doing.
+
+162
+00:12:06,450 --> 00:12:07,360
+I'm going to grab
+
+163
+00:12:10,800 --> 00:12:12,220
+just a random title here.
+
+164
+00:12:12,220 --> 00:12:18,420
+General Manager Metropolitan Transit Authority let me grab this thing and pass it into Chief string
+
+165
+00:12:18,450 --> 00:12:21,320
+.
+
+166
+00:12:21,740 --> 00:12:24,010
+What does it mean.
+
+167
+00:12:24,120 --> 00:12:29,600
+Copy and paste this one more time.
+
+168
+00:12:29,600 --> 00:12:31,230
+There we go.
+
+169
+00:12:31,240 --> 00:12:35,410
+And notice I get false which makes sense because chief is in that title.
+
+170
+00:12:35,530 --> 00:12:39,790
+Now let's go and change this to something like chief manager.
+
+171
+00:12:40,120 --> 00:12:41,740
+I run this now I get true.
+
+172
+00:12:41,770 --> 00:12:46,030
+And what's actually happening is it's taking this title just that string.
+
+173
+00:12:46,030 --> 00:12:51,090
+It's applying got lower on it which makes everything here in the string lowercase and then it goes ahead
+
+174
+00:12:51,100 --> 00:12:58,720
+and splits it into a list and then it checks if the string cheese is in that list it returns true or
+
+175
+00:12:58,720 --> 00:12:59,580
+calls.
+
+176
+00:12:59,830 --> 00:13:02,230
+And that means I can just go ahead and apply this
+
+177
+00:13:05,380 --> 00:13:16,780
+using lambda X and then I'm going to just say Chief string x and then they get these boolean values
+
+178
+00:13:16,780 --> 00:13:18,980
+false false false true true true.
+
+179
+00:13:19,000 --> 00:13:21,690
+And I have a couple of methods here of actually counting these up.
+
+180
+00:13:21,720 --> 00:13:28,840
+What we've seen before the best way to do this is just to take some of this in here we have 477 people
+
+181
+00:13:29,170 --> 00:13:32,150
+have the word chief in their job title.
+
+182
+00:13:32,640 --> 00:13:32,910
+OK.
+
+183
+00:13:32,920 --> 00:13:37,360
+Finally the last one which is actually a bonus question because it has a method we haven't gone over
+
+184
+00:13:37,360 --> 00:13:42,430
+yet which is correllation and we want to know is there a correlation between length of the job title
+
+185
+00:13:42,430 --> 00:13:44,020
+string and salary.
+
+186
+00:13:44,470 --> 00:13:53,320
+We're going to make a new column called tidal underscore Eliane and it's going to be equal to the job
+
+187
+00:13:53,320 --> 00:14:00,400
+title column and I'm going to apply the link built in method for this.
+
+188
+00:14:00,410 --> 00:14:05,920
+So now if I take a look at these two columns job title
+
+189
+00:14:11,230 --> 00:14:12,420
+and title link
+
+190
+00:14:17,360 --> 00:14:21,380
+here I have the length the title and the job title itself.
+
+191
+00:14:22,210 --> 00:14:26,860
+Now what I want to do is see if there's a correlation between these two and the method you discover
+
+192
+00:14:26,860 --> 00:14:34,600
+on your own which is why it a bonus question is C O R R and that returns the correlation between multiple
+
+193
+00:14:34,600 --> 00:14:35,070
+columns.
+
+194
+00:14:35,080 --> 00:14:39,900
+But here what we actually wanted to know is the correlation between length of job title string and salary
+
+195
+00:14:39,900 --> 00:14:40,370
+.
+
+196
+00:14:40,420 --> 00:14:42,720
+So this makes sense that is perfectly correlated.
+
+197
+00:14:42,730 --> 00:14:51,520
+But we want to do is idling and actually total pay benefits column.
+
+198
+00:14:52,140 --> 00:14:56,310
+And here we can see that there's essentially no correlation between how long your title is how much
+
+199
+00:14:56,320 --> 00:14:57,630
+you get paid.
+
+200
+00:14:57,750 --> 00:14:58,260
+OK.
+
+201
+00:14:58,360 --> 00:15:02,440
+Don't worry if you didn't get this last one it was quite tricky and hard but it had some methods that
+
+202
+00:15:02,440 --> 00:15:06,550
+we didn't go over which is why it was a bonus question.
+
+203
+00:15:06,550 --> 00:15:07,100
+All right.
+
+204
+00:15:07,330 --> 00:15:12,270
+Hopefully you know OK as you went through this remember the harder and harder the appeal to bad if you
+
+205
+00:15:12,280 --> 00:15:13,990
+were able to get the last couple ones.
+
+206
+00:15:14,020 --> 00:15:17,190
+Those are actually quite tricky but you can always review the solutions.
+
+207
+00:15:17,210 --> 00:15:22,840
+No but you want more practice with this or just go ahead and post Q&A forums if you have any questions
+
+208
+00:15:22,840 --> 00:15:23,560
+.
+
+209
+00:15:23,560 --> 00:15:25,390
+Thanks everyone and I'll see you at the next lecture

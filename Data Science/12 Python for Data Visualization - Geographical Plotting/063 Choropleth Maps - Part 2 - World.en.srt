@@ -1,0 +1,339 @@
+1
+00:00:05,520 --> 00:00:06,990
+Hello everyone else too.
+
+2
+00:00:06,990 --> 00:00:11,290
+Part two of these chloroplast maps lecture series in part 2.
+
+3
+00:00:11,290 --> 00:00:14,640
+We're going to focus on international or world scale maps.
+
+4
+00:00:14,730 --> 00:00:19,860
+Part 1 which is the last lecture we focused on USA and nationwide choropleth maps.
+
+5
+00:00:19,860 --> 00:00:24,900
+Now we're going to go ahead and change this up to a world international level.
+
+6
+00:00:24,900 --> 00:00:28,980
+Let's go ahead and jump to Jupiter notebook to get started.
+
+7
+00:00:28,980 --> 00:00:29,280
+All right.
+
+8
+00:00:29,280 --> 00:00:31,280
+Here I am at the Jupiter notebook.
+
+9
+00:00:31,320 --> 00:00:35,950
+Last time we left off on U.S. agricultural exports by state.
+
+10
+00:00:36,030 --> 00:00:42,510
+Let's go ahead and move on to our next dataset which is a world GDP data set to go ahead and comment
+
+11
+00:00:42,600 --> 00:00:48,980
+out that last plot and say it's physical to PD read CSP.
+
+12
+00:00:49,000 --> 00:00:57,210
+Now we're going to go ahead and open the 2014 World GDP data set and then check out the head of that
+
+13
+00:00:57,210 --> 00:00:58,020
+data.
+
+14
+00:00:58,310 --> 00:01:01,540
+We have a country name GDP in billions.
+
+15
+00:01:01,590 --> 00:01:03,410
+And then the country code.
+
+16
+00:01:03,510 --> 00:01:08,910
+So let's just say standardize code for international countries basically the same as the state codes
+
+17
+00:01:08,910 --> 00:01:10,170
+that we saw earlier.
+
+18
+00:01:10,320 --> 00:01:16,020
+We're going to go ahead and use this value the GDP country as maybe a text and then the code is the
+
+19
+00:01:16,020 --> 00:01:20,130
+actual code pasan for the coral plus mapping.
+
+20
+00:01:20,700 --> 00:01:24,780
+Let's go ahead and start creating our data variable.
+
+21
+00:01:24,780 --> 00:01:36,020
+Again we call it dictionary we say type is equal to Perl Plath just like we did last time.
+
+22
+00:01:36,050 --> 00:01:47,760
+Go ahead and say locations and locations are going to be equal to the code column then for the z value
+
+23
+00:01:47,760 --> 00:01:54,400
+we'll go ahead and set that equal to the GDP in billions.
+
+24
+00:01:54,420 --> 00:02:00,000
+We'll go ahead and set text equal to the country column in the data frame
+
+25
+00:02:02,700 --> 00:02:07,190
+and then we'll go ahead and set color bar arguments.
+
+26
+00:02:07,190 --> 00:02:11,610
+And here we have that dictionary where we pass and the title has a key and then a string value for the
+
+27
+00:02:11,610 --> 00:02:19,320
+title and we'll just say GDP in billions US dollars.
+
+28
+00:02:19,320 --> 00:02:23,260
+And that is our data object.
+
+29
+00:02:23,310 --> 00:02:30,590
+And now for lay out variable we'll go ahead and say casting is a dictionary.
+
+30
+00:02:31,080 --> 00:02:38,820
+We will set the title to be equal to the string 2014 global GDP
+
+31
+00:02:41,490 --> 00:02:46,890
+and the next thing we're going to do is set Geo is equal to.
+
+32
+00:02:46,950 --> 00:02:56,370
+And then it's not going to be another dictionary and go and say show frame I actually put this on the
+
+33
+00:02:56,370 --> 00:03:04,620
+same line as show frame is equal false.
+
+34
+00:03:04,770 --> 00:03:10,230
+For now and the next argument we're going to say is the projection.
+
+35
+00:03:10,230 --> 00:03:12,160
+And you can reference the documentation.
+
+36
+00:03:12,420 --> 00:03:20,990
+But for now we'll just that the documentation projection defaults which is this America or projection
+
+37
+00:03:21,000 --> 00:03:24,310
+plot looks like the dictionary ready to go.
+
+38
+00:03:24,630 --> 00:03:30,400
+Let's go ahead and say Koro map 3 is equal to.
+
+39
+00:03:30,430 --> 00:03:33,010
+Go figure.
+
+40
+00:03:33,180 --> 00:03:41,650
+Data equals data passed in as a single item list and then lay out equals lay out.
+
+41
+00:03:42,660 --> 00:03:46,870
+And then we can just call plots on coral map 3.
+
+42
+00:03:47,580 --> 00:03:55,200
+And here we have our 2014 global GDP and you can see that scale here basically just points out the main
+
+43
+00:03:55,260 --> 00:04:00,630
+outliers which is United States China and some of them are the belt countries or larger population countries
+
+44
+00:04:00,630 --> 00:04:03,570
+in the world.
+
+45
+00:04:03,570 --> 00:04:08,490
+Now as I've mentioned quite a few times in order to do this sort of plotting on your own you're probably
+
+46
+00:04:08,490 --> 00:04:12,690
+going to have to reference the documentation or the Jupiter notebooks and I kind of want to explore
+
+47
+00:04:12,690 --> 00:04:14,740
+that reference with you.
+
+48
+00:04:14,850 --> 00:04:20,100
+You can go ahead and click on the link provided in the Jupiter notebook or just go to plot the l y slash
+
+49
+00:04:20,100 --> 00:04:21,780
+Python slash reference.
+
+50
+00:04:21,990 --> 00:04:27,810
+And here is a basically a full reference to all the arguments you can pass into all of plotless plot
+
+51
+00:04:27,810 --> 00:04:33,090
+types and you can scroll down here to the map section and click on chloroplast to get to the core plus
+
+52
+00:04:33,090 --> 00:04:38,750
+section and you can see the various arguments you can pass in here and you can check something like
+
+53
+00:04:38,760 --> 00:04:42,780
+for instance the projection we continue down here.
+
+54
+00:04:42,900 --> 00:04:44,860
+Or we can actually just search for it.
+
+55
+00:04:45,390 --> 00:04:51,580
+So I can search for a projection I know is in here and we can have type and here we're under chloroplasts
+
+56
+00:04:51,690 --> 00:04:54,860
+and we can go ahead and pass and maybe another projection type.
+
+57
+00:04:55,200 --> 00:05:02,080
+That means we can just grab one of these strings and just grab this one that's another projection type
+
+58
+00:05:02,080 --> 00:05:02,100
+.
+
+59
+00:05:02,100 --> 00:05:07,830
+I just come in here replace the string of the and then run this plot again.
+
+60
+00:05:07,830 --> 00:05:10,350
+And now I have a different projection type.
+
+61
+00:05:10,390 --> 00:05:13,270
+Notice here how the country are shaped a little differently.
+
+62
+00:05:13,270 --> 00:05:19,080
+You can go ahead and continue exploring these such as a stereographic projection come here.
+
+63
+00:05:19,080 --> 00:05:25,530
+Copy and paste and rerun and that's basically what you do when you're kind of playing around and exploring
+
+64
+00:05:25,560 --> 00:05:27,160
+these libraries.
+
+65
+00:05:27,390 --> 00:05:30,600
+So here's another projection you can actually kind of spin this around.
+
+66
+00:05:30,600 --> 00:05:34,100
+It's a little weird it's kind of an inverted globe feeling.
+
+67
+00:05:34,290 --> 00:05:38,110
+They can go ahead and play around these and explore them on your own.
+
+68
+00:05:38,370 --> 00:05:43,920
+One projection that's nice to look at is the natural earth projection which if you just go ahead and
+
+69
+00:05:43,920 --> 00:05:51,360
+pass it in here natural earth and then run this again you get basically a nice natural looking earth
+
+70
+00:05:51,960 --> 00:05:57,690
+and you can pass it and cool it and you can see the rotation here on the planet.
+
+71
+00:05:58,140 --> 00:05:58,560
+OK.
+
+72
+00:05:58,650 --> 00:06:00,720
+Go ahead and explore the documentation.
+
+73
+00:06:00,750 --> 00:06:05,790
+That's a big part of learning how to use these sort of coral plethora more complicated geographical
+
+74
+00:06:05,790 --> 00:06:09,060
+plotting libraries and capabilities of Watley.
+
+75
+00:06:09,090 --> 00:06:13,860
+Like I mentioned before quite a bit of this has to do for your data looks like if your data is not in
+
+76
+00:06:13,860 --> 00:06:20,490
+a format that plot can accept you probably have to go to use in another geographical plotting library
+
+77
+00:06:20,690 --> 00:06:26,730
+but hopefully you're able to convert either a country code or country name into an acceptable format
+
+78
+00:06:26,730 --> 00:06:28,740
+for Watley.
+
+79
+00:06:28,740 --> 00:06:30,380
+All right that's it for this lecture.
+
+80
+00:06:30,390 --> 00:06:36,870
+I hope you enjoyed it and seen the power of plotline even though it's a little hard syntax wise for
+
+81
+00:06:36,870 --> 00:06:38,450
+just a few lines of code really.
+
+82
+00:06:38,460 --> 00:06:42,570
+I mean this is just about 15 lines of code maybe even less.
+
+83
+00:06:42,660 --> 00:06:49,020
+You're actually able to make a very nice looking interactive visualization on a geographical international
+
+84
+00:06:49,020 --> 00:06:50,160
+scale.
+
+85
+00:06:50,160 --> 00:06:53,160
+All right thanks everyone and I'll see you at the next lecture

@@ -1,0 +1,403 @@
+1
+00:00:06,780 --> 00:00:11,700
+Halo semua dan selamat datang di kuliah operasi PI dan kuliah ini kami akan menunjukkan
+
+2
+00:00:11,700 --> 00:00:14,520
+kepada Anda reformasi operasi dasar pada array wasit.
+
+3
+00:00:14,640 --> 00:00:18,720
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+4
+00:00:18,720 --> 00:00:21,090
+Baiklah jadi di sini kita berada di buku catatan Jupiter.
+
+5
+00:00:21,210 --> 00:00:27,180
+Kami akan pergi ke depan dan mendiskusikan array dengan operasi array dengan operasi skalar dan kemudian beberapa
+
+6
+00:00:27,180 --> 00:00:33,360
+fungsi array universal apa mereka dan bagaimana Anda dapat menemukan lebih banyak dari mereka akan pergi ke depan
+
+7
+00:00:33,470 --> 00:00:36,400
+dan mulai dengan mengatakan pi penting sebagai NPE.
+
+8
+00:00:36,810 --> 00:00:44,370
+Dan kemudian saya akan pergi ke depan dan membuat array kita akan mengatakan N. P. mengatur dan kami hanya akan
+
+9
+00:00:44,370 --> 00:00:47,600
+melanjutkan dan pergi dari nol koma 11.
+
+10
+00:00:47,640 --> 00:00:53,090
+Jadi dengan begitu kita mendapat angka 0 hingga 10 sehingga 11 digit dari 0 hingga 10.
+
+11
+00:00:53,460 --> 00:00:53,910
+Baiklah.
+
+12
+00:00:53,910 --> 00:00:59,460
+Anda dapat dengan mudah melakukan operasi array dengan array hanya dengan menggunakan tanda-tanda aritmatika sederhana yang sudah
+
+13
+00:00:59,460 --> 00:01:01,600
+Anda gunakan dari Python itu sendiri.
+
+14
+00:01:02,070 --> 00:01:08,400
+Jadi misalnya jika Anda ingin menambahkan dua array bersama-sama pada elemen dengan elemen dasar Anda hanya akan
+
+15
+00:01:08,400 --> 00:01:10,300
+mengatakan array plus array.
+
+16
+00:01:10,320 --> 00:01:12,140
+Sekarang tambahkan dua array bersamaan.
+
+17
+00:01:12,180 --> 00:01:14,450
+Dalam hal ini saya hanya menambahkan dalam array ke dirinya sendiri.
+
+18
+00:01:14,590 --> 00:01:18,370
+Jadi intinya setiap angka digandakan.
+
+19
+00:01:18,840 --> 00:01:25,500
+Saya dapat melakukan hal yang sama untuk pengurangan atau bahkan penggandaan.
+
+20
+00:01:25,500 --> 00:01:31,770
+Saya juga dapat melakukan array dengan operasi skalar dengan cara yang sangat sama sehingga scaler berarti
+
+21
+00:01:31,770 --> 00:01:37,800
+hanya satu angka dan melakukan numb pi tidak pada dasarnya menyiarkan angka itu ke setiap
+
+22
+00:01:37,800 --> 00:01:43,960
+elemen dalam array sehingga operasi terjadi juga pada elemen dengan elemen dasar makna jika saya mau.
+
+23
+00:01:44,010 --> 00:01:45,140
+Ini array saya.
+
+24
+00:01:45,240 --> 00:01:48,270
+Tambahkan seratus ke setiap elemen dalam array.
+
+25
+00:01:48,270 --> 00:01:50,590
+Saya bisa mengatakan plus dan kemudian skalar itu sendiri.
+
+26
+00:01:50,820 --> 00:01:53,620
+Dan itu akan menambah 100 setiap elemen dalam array.
+
+27
+00:01:53,620 --> 00:01:55,680
+Dan ini juga berfungsi untuk pengurangan
+
+28
+00:01:58,230 --> 00:01:59,910
+divisi perkalian nama Anda.
+
+29
+00:01:59,910 --> 00:02:04,820
+Jadi, jika saya ingin mengurangi 100 dari setiap atom untuk mengatakan minus 100.
+
+30
+00:02:05,130 --> 00:02:05,760
+Baiklah.
+
+31
+00:02:05,760 --> 00:02:11,940
+Jadi itu adalah operasi aritmatika dasar yang dapat Anda lakukan dengan array pada operasi array atau
+
+32
+00:02:11,940 --> 00:02:13,800
+array dengan operasi skalar.
+
+33
+00:02:13,950 --> 00:02:20,510
+Sesuatu yang ingin saya tunjukkan kepada Anda adalah bahwa NUMP high berkali-kali hanya akan mengeluarkan peringatan alih-alih
+
+34
+00:02:20,580 --> 00:02:22,940
+menghasilkan kesalahan pada operasi matematika tertentu.
+
+35
+00:02:23,220 --> 00:02:31,250
+Jadi misalnya jika saya mencoba untuk mengatakan 1 dibagi dengan nol di Python saya akan mendapatkan bahwa kesalahan aktual memiliki kesalahan pembagian nol
+
+36
+00:02:31,250 --> 00:02:35,290
+yang masuk akal karena Anda tidak dapat membagi angka dengan nol.
+
+37
+00:02:35,340 --> 00:02:38,400
+Namun PI tidak akan memberikan Anda kesalahan yang sama.
+
+38
+00:02:38,490 --> 00:02:43,860
+Jadi jika saya mencoba mengatakan tarif dibagi dengan Array.
+
+39
+00:02:43,890 --> 00:02:46,200
+Perhatikan elemen pertama adalah nol.
+
+40
+00:02:46,230 --> 00:02:50,240
+Saya akan mencoba mengatakan nol dibagi nol yang tidak masuk akal.
+
+41
+00:02:50,250 --> 00:02:53,570
+Namun tidak ada pi yang akan mengeluarkan peringatan.
+
+42
+00:02:53,570 --> 00:02:58,580
+Itu akan mengatakan nilai tidak valid yang ditemui dalam kebenaran seperti di sini dan itu hanya akan memberi Anda nol.
+
+43
+00:02:58,620 --> 00:03:05,100
+Jika Anda mencoba untuk membagi nol dengan nol, yang lainnya OK untuk itu mengatakan 1 dibagi dengan 1 adalah 1 2 dibagi dengan
+
+44
+00:03:05,100 --> 00:03:06,360
+2 adalah 1 juga.
+
+45
+00:03:06,390 --> 00:03:07,710
+Dll dll ..
+
+46
+00:03:07,710 --> 00:03:14,170
+Namun pada yang pertama dibagi dengan nol dieksekusi dan memberi Anda nama atau tidak ada objek kembali.
+
+47
+00:03:14,250 --> 00:03:19,170
+Sebenarnya tidak memberikan kesalahan bagi Anda yang berarti Anda masih mendapatkan output yang penting untuk
+
+48
+00:03:19,380 --> 00:03:20,840
+dicatat perbedaan di sana.
+
+49
+00:03:20,850 --> 00:03:25,310
+Itu berarti jika Anda memiliki semacam operasi dalam kode Anda, Anda sebenarnya tidak akan mendapatkan kesalahan.
+
+50
+00:03:25,350 --> 00:03:30,900
+Kode akan terus berjalan dan sebagai gantinya dia hanya akan menerima peringatan jika Anda mencoba melakukan operasi yang membagi
+
+51
+00:03:30,900 --> 00:03:32,980
+vides mungkin nomor lain dengan nol.
+
+52
+00:03:32,990 --> 00:03:36,720
+Jadi misalnya 1 dibagi dengan 0 bukan 0 Vajda dengan nol.
+
+53
+00:03:36,720 --> 00:03:38,190
+Anda juga akan mendapat peringatan.
+
+54
+00:03:38,400 --> 00:03:41,880
+Tetapi dalam hal ini Alexa menunjukkan infinity bukannya nol.
+
+55
+00:03:42,150 --> 00:03:45,930
+Jadi sekali lagi Anda mendapat pembagian dengan nol dan membalas dan benar vide peringatan di sini.
+
+56
+00:03:46,050 --> 00:03:52,170
+Namun itu masih mengeksekusi kode dan Anda mendapatkan cukup untuk menandakan infinity untuk yang dibagi dengan nol.
+
+57
+00:03:52,440 --> 00:03:55,340
+Pada elemen pertama.
+
+58
+00:03:55,350 --> 00:03:55,800
+Baiklah.
+
+59
+00:03:55,800 --> 00:04:00,270
+Jadi itu sesuatu yang perlu diingat saat Anda bekerja dengan divisi dan
+
+60
+00:04:00,270 --> 00:04:06,760
+array yang berisi angka adalah angka 0 dan juga catatan cepat karena Anda juga dapat melakukan array dengan eksponen.
+
+61
+00:04:06,780 --> 00:04:12,510
+Saya hanya mengatakan Asterix Asterix sama seperti Anda akan memiliki Python dan kemudian skalar atau array.
+
+62
+00:04:12,660 --> 00:04:15,210
+Jadi ini adalah array dengan kekuatan dua.
+
+63
+00:04:15,270 --> 00:04:21,870
+Jadi semuanya telah dikuadratkan dalam array Nel membahas fungsi array universal numpad hadir dengan banyak
+
+64
+00:04:21,870 --> 00:04:26,220
+fungsi array universal yang pada dasarnya hanya operasi matematika.
+
+65
+00:04:26,220 --> 00:04:30,830
+Anda dapat menggunakan untuk melakukan operasi dan menyiarkan seluruh array.
+
+66
+00:04:30,840 --> 00:04:33,390
+Mari kita lanjutkan dan tunjukkan beberapa yang umum.
+
+67
+00:04:33,450 --> 00:04:39,060
+Sebagai contoh jika Anda ingin mengambil akar kuadrat dari setiap elemen dalam array Anda bisa saja mengatakan P
+
+68
+00:04:39,100 --> 00:04:42,690
+bahwa t Anda dan kemudian meneruskan dalam array itu sendiri.
+
+69
+00:04:42,930 --> 00:04:46,550
+Dan ini akan mengambil akar kuadrat dari segala sesuatu dalam array.
+
+70
+00:04:46,560 --> 00:04:55,830
+Demikian pula untuk menghitung eksponensial, Anda dapat mengatakan bahwa XP dan dalam array atau maksimum Anda dapat mengatakan array yang
+
+71
+00:04:55,830 --> 00:05:01,010
+Max atau Anda juga bisa mengatakan Max dan meneruskan array.
+
+72
+00:05:01,230 --> 00:05:06,120
+Itu hal yang sama dengan memanggil metode yang telah kita lihat sebelumnya pada kuliah
+
+73
+00:05:06,120 --> 00:05:07,750
+pertama tentang mereka pyros.
+
+74
+00:05:07,770 --> 00:05:15,560
+Anda bahkan dapat Neutrik fungsi metrik waktu seperti itu dan ini pada dasarnya akan melewati setiap elemen menjadi
+
+75
+00:05:15,570 --> 00:05:19,710
+sinus dan ada co-sign dan ada juga opsi logaritmik.
+
+76
+00:05:19,710 --> 00:05:25,380
+Anda bisa mengatakan log itu dan jika sesuatu tidak berfungsi misalnya log nol secara teknis
+
+77
+00:05:25,380 --> 00:05:28,520
+infinity negatif Anda benar-benar akan menerima peringatan runtime.
+
+78
+00:05:28,530 --> 00:05:29,590
+Dibagi dengan nol.
+
+79
+00:05:29,730 --> 00:05:32,610
+Tapi itu akan memberi Anda infinity negatif adalah jawabannya.
+
+80
+00:05:32,610 --> 00:05:36,870
+Jika Anda bertanya-tanya di mana Anda dapat menemukan daftar semua fungsi atau referensi universal
+
+81
+00:05:36,870 --> 00:05:41,550
+array ini, Anda dapat melanjutkan dan memeriksa notebook dan memiliki tautan di sana untuk fungsi universal array.
+
+82
+00:05:41,840 --> 00:05:44,540
+Ini akan mengarahkan Anda ke tautan yang terlihat seperti ini.
+
+83
+00:05:44,550 --> 00:05:50,340
+Ini adalah dokumentasi serangan Kerajaan di sini untuk fungsi universal atau Anda berfungsi.
+
+84
+00:05:50,610 --> 00:05:55,260
+Dan jika Anda gulir ke bawah ke bagian bawah halaman ini dan lagi tautan ini ada di notebook untuk kuliah ini.
+
+85
+00:05:55,620 --> 00:05:57,090
+Sekarang operasi PI.
+
+86
+00:05:57,090 --> 00:06:00,690
+Anda akan melihat seluruh daftar semua fungsi universal yang tersedia untuk Anda.
+
+87
+00:06:00,900 --> 00:06:07,560
+Jadi Anda memiliki operasi matematika dasar tambahkan kurangi sisa absolut dll Fungsi trigonometri lemah dan beberapa
+
+88
+00:06:08,040 --> 00:06:10,320
+fungsi lebih lanjut.
+
+89
+00:06:10,330 --> 00:06:14,860
+Itu hanya perbandingan fungsi maksimum minimum fungsi mengambang dll.
+
+90
+00:06:15,270 --> 00:06:20,730
+Jika itu fungsi matematika yang sangat mendasar atau umum, Anda mungkin harus mengunjungi halaman ini terlebih
+
+91
+00:06:20,730 --> 00:06:26,280
+dahulu dan melihat apakah beberapa pie sudah memilikinya sebelum Anda mulai membuat fungsi Anda sendiri untuk menangani
+
+92
+00:06:26,280 --> 00:06:27,320
+operasi matematika tertentu.
+
+93
+00:06:27,330 --> 00:06:29,070
+Anda mencoba tampil di array Anda.
+
+94
+00:06:29,370 --> 00:06:34,350
+Baik pada yang paling dasar sepanjang kursus dan akan mengingatkan Anda ketika kami menjumpai mereka
+
+95
+00:06:34,410 --> 00:06:35,830
+sepanjang sisa kursus.
+
+96
+00:06:36,090 --> 00:06:39,840
+OK itu benar-benar semua yang ada sejauh operasi dasar pada array.
+
+97
+00:06:40,080 --> 00:06:46,650
+Anda bisa menggunakan aritmatika dasar baik pada array dengan basis irrate atau dengan array dan basis skalar.
+
+98
+00:06:46,980 --> 00:06:51,230
+Satu-satunya hal yang harus diperhatikan adalah jika Anda memiliki 0 dan Anda menggunakan array divisi.
+
+99
+00:06:51,390 --> 00:06:55,990
+Kemudian bagian kedua dari kuliah ini hanya membahas fungsi array universal di mana ia menemukannya.
+
+100
+00:06:56,040 --> 00:07:01,780
+Ingatlah bahwa operasi matematika yang paling umum sudah dibangun ke dalamnya oleh OK.
+
+101
+00:07:01,980 --> 00:07:04,020
+Terima kasih semuanya dan sampai jumpa di kuliah berikutnya

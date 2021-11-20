@@ -1,0 +1,987 @@
+1
+00:00:05,370 --> 00:00:10,070
+Hola a todos y bienvenidos a la segunda parte del día para captar algunas lecciones de soluciones de proyectos para la noche.
+
+2
+00:00:10,100 --> 00:00:12,040
+Cuando uno llama a un proyecto final.
+
+3
+00:00:12,240 --> 00:00:15,840
+Avancemos y saltemos justo donde lo dejamos y vayamos al cuaderno de Júpiter.
+
+4
+00:00:16,290 --> 00:00:21,270
+OK aquí estoy en el cuaderno justo donde lo dejamos, descubrimos que en realidad los meses
+
+5
+00:00:21,270 --> 00:00:27,180
+faltaban un par de valores versus nueve 10 y 11 faltaban y queremos hacerlo ahora es trabajar con pandas
+
+6
+00:00:27,180 --> 00:00:32,190
+para intentar crear un diagrama de líneas o alguna otra visualización que intente tener eso en cuenta.
+
+7
+00:00:32,220 --> 00:00:34,700
+Entonces quizás podamos completar esos puntos de datos faltantes.
+
+8
+00:00:35,140 --> 00:00:35,630
+DE ACUERDO.
+
+9
+00:00:35,700 --> 00:00:44,670
+Vamos a seguir adelante y haremos es crear un grupo por objeto llamado por mes y decir grupo DMF pasando la columna
+
+10
+00:00:44,670 --> 00:00:51,740
+del mes y usar el método de conteo para la agregación según lo solicitado para las instrucciones.
+
+11
+00:00:51,780 --> 00:00:52,490
+Y luego fue adelante.
+
+12
+00:00:52,490 --> 00:00:54,540
+Solo mira la cabeza de.
+
+13
+00:00:54,570 --> 00:00:56,050
+Por mes.
+
+14
+00:00:56,590 --> 00:00:58,040
+OK y aquí podemos ver el jefe de.
+
+15
+00:00:58,050 --> 00:01:04,500
+que sucedió fue que contábamos cada instancia de las columnas por mes o vamos a seguir adelante
+
+16
+00:01:04,500 --> 00:01:10,680
+y notamos que algunos de los recuentos son diferentes según el valor real de la columna.
+
+17
+00:01:10,740 --> 00:01:13,140
+Por mes notarás que, básicamente, lo
+
+18
+00:01:13,180 --> 00:01:15,900
+Y eso es porque algunos valores están esencialmente ausentes.
+
+19
+00:01:15,960 --> 00:01:18,590
+Cuando lo agregas por mes o vamos a seguir adelante y hacerlo.
+
+20
+00:01:18,600 --> 00:01:19,860
+Ni siquiera está todo fuera.
+
+21
+00:01:19,890 --> 00:01:24,050
+Simplemente elija la columna de latitud como nuestro valor para el conteo agregado.
+
+22
+00:01:24,120 --> 00:01:29,980
+Bien, adelante y supongamos que si tuviéramos la latitud de la llamada, la llamada realmente tuvo lugar.
+
+23
+00:01:30,000 --> 00:01:34,660
+que indica el recuento del costo por mes y la forma en que podemos
+
+24
+00:01:34,670 --> 00:01:42,060
+hacerlo es, en realidad, trazando las columnas que decimos por mes, llame a la columna, por ejemplo, latitud y luego diga trazar.
+
+25
+00:01:42,150 --> 00:01:45,750
+Ahora podemos crear un gráfico simple de la trama de datos
+
+26
+00:01:46,530 --> 00:01:51,240
+Y aquí tenemos nuestro mes y ahora hemos podido completar parte de esa información
+
+27
+00:01:51,660 --> 00:01:55,960
+faltante a través de un ajuste esencialmente entre puntos o puntos a 12.
+
+28
+00:01:56,040 --> 00:02:00,260
+Y luego puedes ver la curva descendente tal vez un poco mejor de lo que hubieras podido.
+
+29
+00:02:00,450 --> 00:02:06,210
+Si lo hubieras hecho con solo un diagrama de barras y para mostrarte que tal vez
+
+30
+00:02:06,240 --> 00:02:14,430
+con un poco más de detalle voy a entrar y copiar este código, pegarlo aquí y voy a continuar y eliminar el hewe
+
+31
+00:02:14,490 --> 00:02:17,460
+Y luego, si ejecutar esto, veremos el código.
+
+32
+00:02:17,460 --> 00:02:18,900
+Aquí tenemos mes.
+
+33
+00:02:18,900 --> 00:02:20,800
+No te preocupes por esta pequeña advertencia.
+
+34
+00:02:21,090 --> 00:02:23,340
+Pero esto esencialmente muestra la misma información.
+
+35
+00:02:23,340 --> 00:02:25,670
+Sin embargo, sin el 9 10 y 11 meses.
+
+36
+00:02:25,840 --> 00:02:31,650
+Entonces puede ver el menú desplegable del mes 7 dos meses, ocho y 12 horas.
+
+37
+00:02:31,650 --> 00:02:33,050
+Tal vez es un poco más claro.
+
+38
+00:02:33,100 --> 00:02:37,060
+El menú desplegable entre 8 y 12 usa este tipo de diagrama de líneas.
+
+39
+00:02:37,380 --> 00:02:42,450
+análisis exploratorio de datos o quizás no haya una respuesta correcta a menos que quieres
+
+40
+00:02:42,750 --> 00:02:50,220
+mostrar algo muy específicamente a través de métodos cuantitativos y en ese caso probablemente mostrarías este tipo de diagrama de barras.
+
+41
+00:02:50,250 --> 00:02:56,430
+Y puedes jugar con las columnas que eliges trazar, como la columna del municipio o la columna postal,
+
+42
+00:02:56,430 --> 00:03:01,050
+etc. para ver qué tan pronunciada es esta caída en el área del
+
+43
+00:03:01,050 --> 00:03:06,540
+Pero también es bueno tener una idea de la tendencia usando solo este simple comando de trazado.
+
+44
+00:03:06,540 --> 00:03:06,960
+Todo bien.
+
+45
+00:03:07,320 --> 00:03:11,850
+Avancemos ahora y veamos si podemos usar la trama L-M de luto para crear un ajuste lineal en el
+
+46
+00:03:11,850 --> 00:03:13,000
+número de llamadas por mes.
+
+47
+00:03:13,050 --> 00:03:17,750
+Y recuerde que es posible que deba restablecer el índice a una columna para poder hacerlo.
+
+48
+00:03:17,790 --> 00:03:20,870
+Lo que voy a hacer y hacer es decir esto.
+
+49
+00:03:20,880 --> 00:03:27,330
+Voy a decir S. A. Pensamiento L. METRO. trazar para esa trama de
+
+50
+00:03:27,330 --> 00:03:35,420
+modelo lineal de Seaborn y quiero mi X si salimos y verificamos que este sea un mes y podemos entrar ahora, seleccione tal vez los municipios para el eje y.
+
+51
+00:03:35,520 --> 00:03:39,690
+También puedes seleccionar la latitud o realmente cualquier otra columna si quieres
+
+52
+00:03:39,690 --> 00:03:42,460
+experimentar con esto, así que básicamente solo cuenta.
+
+53
+00:03:43,680 --> 00:03:48,860
+Y luego los datos serán por mes.
+
+54
+00:03:49,950 --> 00:03:52,890
+Pero note que dije que X es la columna del mes.
+
+55
+00:03:52,890 --> 00:04:00,480
+Si echamos un vistazo al mes, en realidad no tenemos una columna mensual, el mes fue el índice.
+
+56
+00:04:00,570 --> 00:04:05,370
+el índice a mes para que esto funcione y la forma de hacerlo aún más claro.
+
+57
+00:04:08,770 --> 00:04:11,070
+Entonces, lo que voy a hacer es reiniciar
+
+58
+00:04:11,070 --> 00:04:15,720
+Déjame mostrarte cómo es en realidad.
+
+59
+00:04:16,350 --> 00:04:21,750
+Si restablezco el índice o el mes, pasaré el mes a una nueva columna y esto le
+
+60
+00:04:21,750 --> 00:04:26,630
+permitirá a Seaborn acceder realmente a esta información en lugar de establecerla en el índice.
+
+61
+00:04:26,880 --> 00:04:29,110
+Y de esa manera puedo pasar y mes hay una cadena.
+
+62
+00:04:29,130 --> 00:04:31,200
+De lo contrario, Seaborn se confundiría.
+
+63
+00:04:31,290 --> 00:04:39,060
+reciente para la columna y luego tenemos el modelo lineal en forma y podemos ver que, en general, en lo que Seymore
+
+64
+00:04:39,060 --> 00:04:43,980
+trama en este modelo, el número de llamadas baja de 0 a mes 12.
+
+65
+00:04:43,980 --> 00:04:47,640
+Y eso es lo que tuvimos que usar este índice
+
+66
+00:04:47,640 --> 00:04:52,850
+Ahora, tenga en cuenta que Seaborne no tiene suficiente información para darse cuenta de que esto es por mes.
+
+67
+00:04:52,980 --> 00:04:57,380
+Y para que 13 y 14 no existan ni continúen.
+
+68
+00:04:57,420 --> 00:05:01,800
+En realidad, esto sería datos estacionales y en ese caso probablemente un modelo lineal es el que
+
+69
+00:05:01,890 --> 00:05:07,530
+mejor se ajusta y se puede ver que los países marítimos muestran esto con esta área sombreada que indica error y
+
+70
+00:05:07,560 --> 00:05:12,360
+el error básicamente crece a medida que avanzamos en estos meses donde se conoce menos información que en
+
+71
+00:05:12,360 --> 00:05:15,540
+realidad tiene mucho sentido tener información sobre nueve 10 u 11 meses.
+
+72
+00:05:15,900 --> 00:05:21,770
+a aparecer y luego se bloquea ese mes ocho, que es algo que quizás desee explorar más adelante en los datos.
+
+73
+00:05:21,870 --> 00:05:24,540
+Y puede ver que esta tendencia donde baja comienza
+
+74
+00:05:24,540 --> 00:05:30,170
+Bueno, sigamos adelante y dejémoslo así por ahora y exploremos un poco más sobre la información de la fecha.
+
+75
+00:05:30,930 --> 00:05:31,210
+DE ACUERDO.
+
+76
+00:05:31,220 --> 00:05:36,920
+Lo que queríamos hacer a continuación era crear una nueva columna llamada fecha que contenga la fecha de la
+
+77
+00:05:36,930 --> 00:05:42,590
+columna de marca de tiempo y deberá usar aplicar junto con la fecha para cerrar el método de paréntesis.
+
+78
+00:05:42,600 --> 00:05:50,460
+Déjame entrar y mostrarte lo que realmente significa por fechas mostrándote un ejemplo de la columna de
+
+79
+00:05:50,460 --> 00:05:51,790
+marca de tiempo.
+
+80
+00:05:51,920 --> 00:05:58,860
+y tomar la primera instancia de la columna de marca de tiempo y llamar a uno de esos objetos.
+
+81
+00:05:58,880 --> 00:06:00,000
+Voy a continuar
+
+82
+00:06:00,010 --> 00:06:00,320
+Todo bien.
+
+83
+00:06:00,320 --> 00:06:06,180
+Este es un objeto de marca de tiempo y es un poco diferente a un objeto de fecha.
+
+84
+00:06:06,240 --> 00:06:13,520
+Y el motivo es que si llamo a las fechas t de este, ahora obtengo un objeto de fecha.
+
+85
+00:06:13,530 --> 00:06:15,750
+Y esto solo muestra la información de fechas.
+
+86
+00:06:15,750 --> 00:06:20,940
+Ya no tiene la información de tiempo y eso es bueno porque lo que vamos a querer hacer más
+
+87
+00:06:20,940 --> 00:06:25,440
+adelante es crear un gráfico que se vea así solo el número de llamadas por fecha.
+
+88
+00:06:25,440 --> 00:06:31,760
+No queremos inundar esta información con un número de llamadas a ella cada minuto cada hora.
+
+89
+00:06:31,750 --> 00:06:32,400
+Todo bien.
+
+90
+00:06:32,670 --> 00:06:45,060
+Eso significa que vamos a continuar y decir que la fecha de ZF es igual a DMF de sello de tiempo.
+
+91
+00:06:45,180 --> 00:06:49,760
+Y tal como lo hicimos antes, voy a entrar y aplicar
+
+92
+00:06:49,760 --> 00:06:55,320
+este Fil-Am a la expresión que tomaré esa vez y volveré a las fechas.
+
+93
+00:06:55,350 --> 00:06:57,620
+Continúo y aplico eso.
+
+94
+00:06:57,620 --> 00:07:05,490
+Ahora si echo un vistazo a la cabeza de ZF e iré hacia la derecha aquí.
+
+95
+00:07:05,610 --> 00:07:11,330
+Ahora tengo esta buena columna de fecha que sale de esta columna de marca de tiempo y luego,
+
+96
+00:07:11,370 --> 00:07:16,340
+cuando quiero continuar, se agrupa por la columna de estado con el agregado de conteo.
+
+97
+00:07:16,430 --> 00:07:18,590
+Así que voy a decir diff date.
+
+98
+00:07:18,670 --> 00:07:19,070
+Whoops.
+
+99
+00:07:19,110 --> 00:07:24,350
+De hecho, quiero decir el grupo DFA antes de la fecha.
+
+100
+00:07:24,360 --> 00:07:26,380
+Eso es lo que quiero comprar.
+
+101
+00:07:26,460 --> 00:07:32,270
+Voy a seguir adelante y contaré y luego vamos a entrar y ver cómo se ve el jefe
+
+102
+00:07:32,270 --> 00:07:33,760
+del estado del fotograma.
+
+103
+00:07:34,470 --> 00:07:35,150
+DE ACUERDO.
+
+104
+00:07:35,250 --> 00:07:41,090
+Y esto básicamente cuenta todas las instancias su fecha para la fecha real que ocurrió.
+
+105
+00:07:41,100 --> 00:07:46,440
+Nuevamente note que hay alguna diferencia entre algunos de estos valores de columna y eso básicamente
+
+106
+00:07:46,470 --> 00:07:53,130
+indica que faltaba información, por ejemplo, de las llamadas 300 en 96 el 11 de diciembre son la cantidad exacta
+
+107
+00:07:53,150 --> 00:07:55,020
+de cómo quiere leer eso.
+
+108
+00:07:55,130 --> 00:08:03,590
+Si todavía está por ser el 11 de diciembre, solo tenía 333 con el código postal, contra 396 teníamos la latitud.
+
+109
+00:08:04,560 --> 00:08:07,440
+Avancemos y simplemente elijamos una de estas columnas.
+
+110
+00:08:07,440 --> 00:08:12,810
+Es algo arbitrario, ya que en realidad son todos bastante parecidos a los números, pero
+
+111
+00:08:13,640 --> 00:08:21,120
+voy a seguir adelante y agarrar la columna de latitud y puedes experimentar agarrando diferentes columnas de cómo se comparan.
+
+112
+00:08:21,120 --> 00:08:26,430
+da una fecha y el recuento de número de llamadas donde sabíamos la latitud y luego puedo continuar.
+
+113
+00:08:26,430 --> 00:08:29,740
+Y aquí tienes la columna de latitud que ahora básicamente me
+
+114
+00:08:29,740 --> 00:08:33,880
+Solo planifica esto y me da una trama que se ve así.
+
+115
+00:08:33,960 --> 00:08:41,340
+Y note que algunas de estas etiquetas se superponen y lo que podemos hacer es decir peel t Titely como hemos
+
+116
+00:08:41,340 --> 00:08:46,710
+demostrado antes para arreglar ese índice y obtener algo que se vea un poco mejor.
+
+117
+00:08:47,460 --> 00:08:48,200
+Todo bien.
+
+118
+00:08:48,210 --> 00:08:52,980
+Y luego, cuando realmente nos damos cuenta aquí, parece que hay algunos picos significativos en febrero
+
+119
+00:08:53,300 --> 00:08:59,270
+y un poco en marzo, y luego tenemos algunos descensos o algunos picos de fondo en mayo y quizás a
+
+120
+00:08:59,310 --> 00:09:00,020
+fines de agosto.
+
+121
+00:09:00,020 --> 00:09:01,520
+Un poco difícil de decir aquí.
+
+122
+00:09:01,950 --> 00:09:06,720
+Y puede seguir adelante y perder el tiempo con esta trama o extender la trama para tratar de obtener un poco
+
+123
+00:09:06,720 --> 00:09:08,170
+más de información sobre las fechas reales.
+
+124
+00:09:08,510 --> 00:09:13,230
+Bueno, vamos a seguir adelante y ahora lo hacemos es recrear esta trama para crear tres trazados separados con
+
+125
+00:09:13,230 --> 00:09:15,950
+cada trama que representa una razón para la llamada al 911.
+
+126
+00:09:16,010 --> 00:09:22,120
+Regrese al marco de datos de la razón o discúlpeme. Llame a Mishu a qué me refiero con eso.
+
+127
+00:09:22,480 --> 00:09:25,100
+Entonces, si me desplazo hacia abajo, quiero recrear esta trama.
+
+128
+00:09:25,160 --> 00:09:31,420
+las llamadas de M-S y lo que hacemos es en realidad un proceso muy similar al que hicimos aquí.
+
+129
+00:09:32,820 --> 00:09:39,120
+Así que aquí tenemos una trama con solo las llamadas de tráfico solo las llamadas de incendios y luego solo
+
+130
+00:09:40,190 --> 00:09:45,480
+Vamos a copiar y pegar esto, pero en lugar de todo el marco de datos, voy
+
+131
+00:09:45,480 --> 00:09:48,790
+a usar la selección condicional para hacer realmente el grupo.
+
+132
+00:09:49,350 --> 00:09:52,760
+Así que voy a decir que DSF, donde
+
+133
+00:09:55,500 --> 00:10:03,150
+ATF es igual al primero, podemos seguir y decirnos el tráfico allí y luego seguir adelante y trazar esto
+
+134
+00:10:03,140 --> 00:10:09,880
+y ahí tenemos la trama para el tráfico y si usted lo deseaba. también podría haber dicho
+
+135
+00:10:09,880 --> 00:10:17,020
+Apelar el título e indicar que desea que el título sea tráfico y ahora podemos simplemente usar el
+
+136
+00:10:17,020 --> 00:10:19,810
+mismo código para realizar los otros gráficos.
+
+137
+00:10:19,810 --> 00:10:24,450
+Entonces, si queríamos fuego, simplemente lo reemplazamos por fuego como una razón.
+
+138
+00:10:25,000 --> 00:10:30,610
+Y ahora podemos aprovechar todo el trabajo que acabamos de hacer para crear estas tres
+
+139
+00:10:30,610 --> 00:10:31,390
+parcelas separadas.
+
+140
+00:10:31,390 --> 00:10:35,770
+Y puede continuar y explorarlos por su cuenta y ver si puede encontrar
+
+141
+00:10:35,830 --> 00:10:41,050
+diferencias entre tal vez una cantidad de llamadas o una frecuencia de llamadas durante las fechas.
+
+142
+00:10:41,050 --> 00:10:45,910
+Por ejemplo, podría ser interesante ver cómo el clima afectaría el fuego según el mes o
+
+143
+00:10:45,910 --> 00:10:46,680
+el día.
+
+144
+00:10:47,110 --> 00:10:49,840
+Puedes ver que hay algunos picos interesantes allí.
+
+145
+00:10:49,840 --> 00:10:50,230
+DE ACUERDO.
+
+146
+00:10:50,320 --> 00:10:51,550
+Moviéndose a lo largo.
+
+147
+00:10:51,550 --> 00:10:56,140
+Finalmente, vayamos a crear mapas de calor con Seaborn y nuestros datos.
+
+148
+00:10:56,410 --> 00:11:01,420
+Y lo primero que vamos a tener que hacer es reestructurar ese marco de datos para que las columnas se conviertan en
+
+149
+00:11:01,480 --> 00:11:04,080
+horas y el índice se convierta en el día de la semana.
+
+150
+00:11:04,130 --> 00:11:09,940
+En realidad, hay muchas formas de hacerlo, pero lo que recomendaría hacer es usar Group by con
+
+151
+00:11:09,970 --> 00:11:13,540
+un nuevo método que quería que descubrieras, llamado método desapilado.
+
+152
+00:11:13,540 --> 00:11:17,470
+un enlace a la documentación y puede consultar las soluciones si se queda atascado en esto.
+
+153
+00:11:17,470 --> 00:11:18,240
+Y aquí hay
+
+154
+00:11:18,310 --> 00:11:21,820
+Déjame seguir y analizar cómo hacer algo que se vea así.
+
+155
+00:11:21,820 --> 00:11:26,400
+Este mapa de calor recuerda al mapa del grupo y las lecturas del mapa de calor.
+
+156
+00:11:26,410 --> 00:11:33,280
+Necesitamos que nuestros datos estén en lo que se conoce como forma de matriz donde cada celda individual se convierte nuevamente a
+
+157
+00:11:34,120 --> 00:11:38,440
+un valor que representa el valor en la columna y el índice en sí.
+
+158
+00:11:38,470 --> 00:11:40,980
+Es nuestro cero los viernes.
+
+159
+00:11:40,990 --> 00:11:42,820
+Esta es la cantidad de llamadas que se produjeron.
+
+160
+00:11:43,240 --> 00:11:47,300
+OK continuemos y aprendamos cómo usar el método desagrupado.
+
+161
+00:11:47,310 --> 00:11:50,980
+Luego hay algunos ejemplos aquí en la documentación que con suerte puede haber descubierto por
+
+162
+00:11:50,980 --> 00:11:51,430
+su cuenta.
+
+163
+00:11:51,640 --> 00:11:52,560
+Pero él se quedó atascado en eso.
+
+164
+00:11:52,570 --> 00:11:56,310
+No te preocupes porque voy a mostrarte cómo hacerlo ahora mismo.
+
+165
+00:11:56,440 --> 00:11:59,320
+Vamos a seguir adelante y decir al grupo DF por.
+
+166
+00:11:59,740 --> 00:12:03,580
+Y voy a tener que agrupar por una lista.
+
+167
+00:12:03,580 --> 00:12:10,070
+agruparlo por hora y luego cuando voy a seguir adelante y lo que hago es decir esto cuente esto solo siga
+
+168
+00:12:14,470 --> 00:12:21,070
+adelante y eche un vistazo a lo que parece me gusta y esto básicamente me permite agruparme y crear un índice multinivel.
+
+169
+00:12:21,070 --> 00:12:25,650
+En este caso porque no quiero solo agrupar por día de la semana también quiero
+
+170
+00:12:25,690 --> 00:12:31,330
+Día de la semana y luego la hora y luego solo los recuentos de cada columna aquí.
+
+171
+00:12:31,390 --> 00:12:39,250
+Entonces, tengo este índice de niveles múltiples. Lo que puedo hacer ahora es simplemente llamar a una columna singular, tal vez podamos seguir
+
+172
+00:12:39,310 --> 00:12:40,270
+adelante y hacer
+
+173
+00:12:43,690 --> 00:12:45,960
+eso, y ahora tengo este índice multinivel.
+
+174
+00:12:46,090 --> 00:12:52,570
+Y la clave del método desapilado es que básicamente te permite desapilar esto
+
+175
+00:12:52,570 --> 00:12:54,840
+y convertirlo en una matriz.
+
+176
+00:12:56,410 --> 00:12:58,230
+Y ahora tengo esta forma de matriz.
+
+177
+00:12:58,240 --> 00:13:04,810
+Entonces los pasos se agruparon por varias columnas creando ese índice multinivel y luego pudiendo usar y apilar
+
+178
+00:13:04,810 --> 00:13:10,870
+para esencialmente desagrupar ese índice y crear uno de ellos para ser las columnas y uno
+
+179
+00:13:10,870 --> 00:13:12,970
+de ellos para ser el índice.
+
+180
+00:13:12,970 --> 00:13:13,340
+Todo bien.
+
+181
+00:13:13,420 --> 00:13:17,620
+No te preocupes si te has quedado atascado en esto o has tenido problemas con esto, este es realmente
+
+182
+00:13:17,620 --> 00:13:19,050
+un método muy bueno para hacer esto.
+
+183
+00:13:19,060 --> 00:13:23,620
+Hay otros métodos que podrías haber intentado, como usar un pivote o una tabla
+
+184
+00:13:23,620 --> 00:13:27,230
+dinámica de Pandurs, pero no te preocupes demasiado si puedes hacerlo.
+
+185
+00:13:27,270 --> 00:13:32,620
+De alguna manera viene mucho con solo practicar experiencia y ser capaz de buscar cosas en la documentación.
+
+186
+00:13:33,980 --> 00:13:40,000
+Bueno, seguiremos adelante y llamaremos todo este marco de datos a la hora del día y ahora que tenemos ese marco de
+
+187
+00:13:40,000 --> 00:13:44,250
+datos, puedo crear fácilmente mapas de calor y esta parte en realidad será bastante sencilla.
+
+188
+00:13:44,320 --> 00:13:50,880
+Simplemente llamamos al mapa de calor de S y S pasando el día y eso es básicamente todo lo que tenemos que hacer.
+
+189
+00:13:50,890 --> 00:13:57,130
+Ahora obtenemos el día de la semana frente a la hora y luego el número de llamadas como indicador
+
+190
+00:13:57,130 --> 00:14:04,240
+de color y podemos seguir tratando de hacer que se parezca más a las soluciones diciendo See map passing in viridis.
+
+191
+00:14:04,240 --> 00:14:09,370
+Y ahora obtenemos el mismo esquema de colores que utilizamos en las soluciones y podemos hacer que la figura
+
+192
+00:14:09,400 --> 00:14:15,250
+sea un poco más grande al decir que Piel ataca esa figura y agrega el tamaño de la figura como argumento.
+
+193
+00:14:16,780 --> 00:14:19,000
+Y ahora tenemos básicamente lo que estaba en las soluciones.
+
+194
+00:14:19,120 --> 00:14:24,810
+Y también podemos crear un mapa de clúster con este marco de datos de la misma manera al decir
+
+195
+00:14:24,810 --> 00:14:26,950
+el mapa de clúster s y s.
+
+196
+00:14:26,950 --> 00:14:34,000
+Y al pasar de nuevo en el marco de datos que dejamos de crear, nuestro mapa Ver para esto y eso
+
+197
+00:14:36,850 --> 00:14:39,010
+crea el mismo mapa de grupo.
+
+198
+00:14:39,010 --> 00:14:43,990
+Si está confundido sobre cómo es realmente lo que está sucediendo en esta línea, no dude en publicar en los foros de
+
+199
+00:14:43,990 --> 00:14:44,770
+preguntas y respuestas.
+
+200
+00:14:44,770 --> 00:14:46,900
+Y estoy feliz de explicar esto un poco más.
+
+201
+00:14:46,900 --> 00:14:51,520
+Pero ten en cuenta que esto es algo avanzado y si te quedas atascado. No
+
+202
+00:14:51,520 --> 00:14:54,480
+te preocupes si haces referencia a las soluciones que avanzan.
+
+203
+00:14:54,490 --> 00:14:59,230
+Lo que queremos hacer es repetir estos mismos trazados y operaciones para un marco de datos que muestre el mes
+
+204
+00:14:59,320 --> 00:15:03,640
+como la columna que voy a seguir adelante y simplemente copie y pegue esto de las soluciones porque
+
+205
+00:15:03,640 --> 00:15:06,120
+es esencialmente el mismo código que acabamos de hacer encima.
+
+206
+00:15:06,130 --> 00:15:12,730
+Pero en este caso, en lugar de decir, por ejemplo, la hora en la que acabamos de establecer el mes y si seguimos
+
+207
+00:15:12,730 --> 00:15:13,960
+adelante y verificamos eso.
+
+208
+00:15:14,140 --> 00:15:18,900
+Ahora tenemos un mes y básicamente hacemos las mismas parcelas nuevamente.
+
+209
+00:15:19,060 --> 00:15:28,110
+Así que simplemente vamos aquí, llámalo mapa, desplázate hacia abajo un poco en lugar de la hora del día.
+
+210
+00:15:28,120 --> 00:15:29,320
+Quiero usar el mes del día
+
+211
+00:15:32,590 --> 00:15:33,290
+y eso me atrapa.
+
+212
+00:15:33,310 --> 00:15:38,020
+Este mapa de calor y si quiero crear un mapa de clúster fuera de esto, puedo
+
+213
+00:15:38,020 --> 00:15:40,200
+hacer lo mismo excepto llamar al clúster.
+
+214
+00:15:40,900 --> 00:15:42,810
+Y esto crea un mapa de clúster.
+
+215
+00:15:42,910 --> 00:15:47,890
+Entonces ahora puedo explorar los datos y ver qué horas de la semana durante qué días de la
+
+216
+00:15:47,890 --> 00:15:51,160
+semana son las más populares para que ocurra la llamada nocturna.
+
+217
+00:15:51,160 --> 00:15:56,020
+Y si echamos un breve vistazo a esto, tiene sentido que no haya muchas llamadas
+
+218
+00:15:56,020 --> 00:16:01,170
+entre las 0 y las 5, porque básicamente es medianoche hasta las 5:00 de la mañana.
+
+219
+00:16:01,180 --> 00:16:02,350
+Entonces todos están dormidos.
+
+220
+00:16:02,500 --> 00:16:07,090
+La mayor parte de la actividad delictiva o las razones para y no llamo una sola llamada, como los
+
+221
+00:16:07,180 --> 00:16:11,980
+accidentes de tráfico en el lío o el incendio, no es realmente tanta actividad delictiva en este conjunto de datos.
+
+222
+00:16:12,010 --> 00:16:14,410
+Se trata principalmente de fuego M-S y razones de tráfico.
+
+223
+00:16:14,410 --> 00:16:17,330
+Todos tienden a ocurrir durante el día durante el día.
+
+224
+00:16:17,350 --> 00:16:23,320
+mapas de clúster es elegir algo así como la asignación de colores cálidos y fríos para realmente ver esto.
+
+225
+00:16:23,320 --> 00:16:27,940
+Y lo interesante es que no muchos de ellos suelen tener lugar los domingos y
+
+226
+00:16:27,940 --> 00:16:34,450
+sábados y se puede ver esto un poco más claro con los mapas de clúster, por lo que creará clusters
+
+227
+00:16:34,450 --> 00:16:42,490
+donde cree que hay una cantidad baja de llamadas en comparación con altas cantidades de llamadas y a veces, lo que es bueno para los
+
+228
+00:16:42,760 --> 00:16:46,750
+Y a veces esto es un poco más claro de un esquema de color para que la gente realmente tenga
+
+229
+00:16:46,750 --> 00:16:47,850
+las agrupaciones en sus mentes.
+
+230
+00:16:48,220 --> 00:16:53,080
+Parece que tenemos llamadas altas durante el día de lunes a martes y quizás de jueves a
+
+231
+00:16:53,080 --> 00:16:55,210
+viernes durante las horas 8 16 y 17.
+
+232
+00:16:55,210 --> 00:17:01,270
+noche tiende a parecerse a cantidades de llamadas bajas durante Quizás sábado y domingo por la mañana.
+
+233
+00:17:01,330 --> 00:17:03,700
+Así que un poco más hacia la
+
+234
+00:17:03,700 --> 00:17:04,290
+DE ACUERDO.
+
+235
+00:17:04,570 --> 00:17:09,400
+Y luego simplemente repetimos esas operaciones por mes y puede comparar los meses de verano con los
+
+236
+00:17:09,400 --> 00:17:14,410
+meses de invierno aquí y puede continuar explorando los datos como lo considere oportuno y eso es básicamente
+
+237
+00:17:14,410 --> 00:17:16,350
+todo lo que hubo para este proyecto.
+
+238
+00:17:16,420 --> 00:17:17,200
+Espero que lo hayan disfrutado.
+
+239
+00:17:17,200 --> 00:17:18,420
+Espero que lo hayas encontrado interesante.
+
+240
+00:17:18,820 --> 00:17:23,650
+Una vez más, no te sientas mal si tienes que buscar las soluciones para este tipo de trazador de líneas complejo aquí.
+
+241
+00:17:23,710 --> 00:17:28,480
+Siempre puede sentirse libre de publicar en los foros de preguntas y respuestas si necesita alguna aclaración sobre lo
+
+242
+00:17:28,480 --> 00:17:29,680
+que realmente estaba sucediendo allí.
+
+243
+00:17:29,680 --> 00:17:30,250
+Todo bien.
+
+244
+00:17:30,370 --> 00:17:32,780
+Siéntase libre de publicar cualquier pregunta.
+
+245
+00:17:32,860 --> 00:17:35,320
+Y te veré en la próxima conferencia.
+
+246
+00:17:35,320 --> 00:17:36,100
+Gracias a todos.
+
+247
+00:17:36,100 --> 00:17:37,570
+Espero que hayas disfrutado el proyecto.

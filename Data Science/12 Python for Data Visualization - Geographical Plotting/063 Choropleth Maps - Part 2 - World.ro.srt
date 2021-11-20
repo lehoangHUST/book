@@ -1,0 +1,335 @@
+1
+00:00:05,520 --> 00:00:06,990
+Buna ziua tuturor.
+
+2
+00:00:06,990 --> 00:00:11,290
+Partea a doua a acestor serii de cursuri de hartă a cloroplastelor din partea a doua.
+
+3
+00:00:11,290 --> 00:00:14,640
+Ne vom concentra pe hărți internaționale sau la scară mondială.
+
+4
+00:00:14,730 --> 00:00:19,860
+Partea 1, care este ultima lecție, ne-am concentrat pe hărțile choropleth din SUA și cele naționale.
+
+5
+00:00:19,860 --> 00:00:24,900
+Acum vom merge mai departe și vom schimba acest lucru la un nivel internațional mondial.
+
+6
+00:00:24,900 --> 00:00:28,980
+Să mergem mai departe și să pornim la notebook-ul Jupiter pentru a începe.
+
+7
+00:00:28,980 --> 00:00:29,280
+In regula.
+
+8
+00:00:29,280 --> 00:00:31,280
+Aici sunt la notebook-ul Jupiter.
+
+9
+00:00:31,320 --> 00:00:35,950
+Ultima dată când am rămas pe U. S. exporturile agricole de către stat.
+
+10
+00:00:36,030 --> 00:00:42,510
+Să mergem mai departe și să trecem la următorul set de date, care este un set de date privind PIB-ul mondial, pentru
+
+11
+00:00:42,600 --> 00:00:48,980
+a merge mai departe și pentru a comenta acest ultim complot și a spune că este fizic pentru PD citit CSP.
+
+12
+00:00:49,000 --> 00:00:57,210
+Acum vom merge mai departe și vom deschide setul de date privind PIB-ul mondial pentru anul 2014 și apoi vom verifica capul
+
+13
+00:00:57,210 --> 00:00:58,020
+acestor date.
+
+14
+00:00:58,310 --> 00:01:01,540
+Avem un nume de țară PIB în miliarde de euro.
+
+15
+00:01:01,590 --> 00:01:03,410
+Și apoi codul țării.
+
+16
+00:01:03,510 --> 00:01:08,910
+Deci, să spunem doar că standardizăm codul pentru țările internaționale, la fel ca și codurile de stat pe care
+
+17
+00:01:08,910 --> 00:01:10,170
+le-am văzut mai devreme.
+
+18
+00:01:10,320 --> 00:01:16,020
+Vom merge mai departe și vom folosi această valoare țara GDP ca un text și apoi
+
+19
+00:01:16,020 --> 00:01:20,130
+codul va fi codul real pasan pentru cartografiere coral plus.
+
+20
+00:01:20,700 --> 00:01:24,780
+Să mergem mai departe și să începem să creăm variabila noastră de date.
+
+21
+00:01:24,780 --> 00:01:36,020
+Din nou numim dicționarul pe care-l spunem că tipul este egal cu Perl Plath exact așa cum am făcut ultima oară.
+
+22
+00:01:36,050 --> 00:01:47,760
+Mergeți mai departe și spuneți că locațiile și locațiile vor fi egale cu coloana de cod, atunci pentru valoarea z vom
+
+23
+00:01:47,760 --> 00:01:54,400
+merge și vom stabili acea valoare egală cu PIB-ul în miliarde.
+
+24
+00:01:54,420 --> 00:02:00,000
+Vom merge mai departe și vom seta un text egal cu coloana țării din cadrul de
+
+25
+00:02:02,700 --> 00:02:07,190
+date și apoi vom continua și vom seta argumentele barului de culoare.
+
+26
+00:02:07,190 --> 00:02:11,610
+Și aici avem dicționarul în care trecem și titlul are
+
+27
+00:02:11,610 --> 00:02:19,320
+o cheie și apoi o valoare de șir pentru titlu și vom spune doar PIB-ul în miliarde de dolari americani.
+
+28
+00:02:19,320 --> 00:02:23,260
+Și acesta este obiectul nostru de date.
+
+29
+00:02:23,310 --> 00:02:30,590
+Și acum, pentru a stabili variabila, vom merge mai departe și vom spune că turnarea este un dicționar.
+
+30
+00:02:31,080 --> 00:02:38,820
+Vom stabili ca titlul să fie egal cu PIB-ul mondial 2014 și că următorul lucru pe
+
+31
+00:02:41,490 --> 00:02:46,890
+care îl vom face este ca Geo să fie egal cu.
+
+32
+00:02:46,950 --> 00:02:56,370
+Și apoi nu va fi un alt dicționar și du-te și spune cadrului arată de fapt, am
+
+33
+00:02:56,370 --> 00:03:04,620
+pus acest lucru pe aceeași linie ca rama de spectacol este egal de fals.
+
+34
+00:03:04,770 --> 00:03:10,230
+Pentru moment și următorul argument pe care o vom spune este proiecția.
+
+35
+00:03:10,230 --> 00:03:12,160
+Și puteți să consultați documentația.
+
+36
+00:03:12,420 --> 00:03:20,990
+Dar deocamdată, doar proiecția de documentație implicită care este această Americă sau parcelă de proiecție arată
+
+37
+00:03:21,000 --> 00:03:24,310
+ca un dicționar gata să meargă.
+
+38
+00:03:24,630 --> 00:03:30,400
+Să mergem mai departe și să spunem că harta Koro 3 este egală cu.
+
+39
+00:03:30,430 --> 00:03:33,010
+Dă-ți seama.
+
+40
+00:03:33,180 --> 00:03:41,650
+Datele sunt egale cu datele transmise ca o singură listă de articole și apoi se stabilesc egale.
+
+41
+00:03:42,660 --> 00:03:46,870
+Și apoi putem numi parcele pe harta coralului 3.
+
+42
+00:03:47,580 --> 00:03:55,200
+Și aici avem PIB-ul nostru global în 2014 și puteți vedea că această scală aici doar subliniază principalele
+
+43
+00:03:55,260 --> 00:04:00,630
+valori care sunt China Statelor Unite și unele dintre acestea sunt țările centurilor
+
+44
+00:04:00,630 --> 00:04:03,570
+sau țările mai populare din lume.
+
+45
+00:04:03,570 --> 00:04:08,490
+Acum, așa cum am menționat de mai multe ori, pentru a face acest tip de complot pe cont
+
+46
+00:04:08,490 --> 00:04:12,690
+propriu, probabil că va trebui să faceți referire la documentația sau la notebook-urile Jupiter și
+
+47
+00:04:12,690 --> 00:04:14,740
+eu vreau să-i cercetez referința cu tine.
+
+48
+00:04:14,850 --> 00:04:20,100
+Puteți să mergeți înainte și să faceți clic pe link-ul furnizat în notebook-ul Jupiter sau pur și simplu să faceți clic pe
+
+49
+00:04:20,100 --> 00:04:21,780
+linia de slash a lui Python.
+
+50
+00:04:21,990 --> 00:04:27,810
+Și aici este o referință deplină la toate argumentele pe care le puteți trece în toate tipurile de complot
+
+51
+00:04:27,810 --> 00:04:33,090
+fără plottere și puteți derula până aici în secțiunea de hartă și faceți clic pe cloroplast pentru
+
+52
+00:04:33,090 --> 00:04:38,750
+a ajunge la secțiunea de bază plus și puteți vedea diferitele argumente pe care le pot trece aici și
+
+53
+00:04:38,760 --> 00:04:42,780
+puteți verifica ceva de genul proiecția pe care o vom continua aici.
+
+54
+00:04:42,900 --> 00:04:44,860
+Sau, de fapt, putem doar să o căutăm.
+
+55
+00:04:45,390 --> 00:04:51,580
+Așa că pot căuta o proiecție pe care o știu că e aici și putem avea tip și aici suntem sub cloroplaste și putem
+
+56
+00:04:51,690 --> 00:04:54,860
+trece și poate trece și poate un alt tip de proiecție.
+
+57
+00:04:55,200 --> 00:05:02,080
+Asta înseamnă că putem să luăm unul dintre aceste șiruri și să-l luăm pe cel care este alt tip de proiecție.
+
+58
+00:05:02,100 --> 00:05:07,830
+Tocmai am venit aici să înlocuiesc șirul și apoi să conduc din nou acest complot.
+
+59
+00:05:07,830 --> 00:05:10,350
+Și acum am un tip diferit de proiecție.
+
+60
+00:05:10,390 --> 00:05:13,270
+Observați aici cum se modelează țara puțin diferit.
+
+61
+00:05:13,270 --> 00:05:19,080
+Puteți merge mai departe și continuați să explorați aceste lucruri, cum ar fi o proiecție stereografică, venită aici.
+
+62
+00:05:19,080 --> 00:05:25,530
+Copiați și lipiți și reluați și în esență ceea ce faceți când faceți ceva și
+
+63
+00:05:25,560 --> 00:05:27,160
+explorați aceste biblioteci.
+
+64
+00:05:27,390 --> 00:05:30,600
+Deci, iată o altă proiecție pe care o poți inversa.
+
+65
+00:05:30,600 --> 00:05:34,100
+Este un pic ciudat, este un fel de sentiment inversat al globului.
+
+66
+00:05:34,290 --> 00:05:38,110
+Ei pot merge mai departe și să se joace în jurul lor și să le exploreze pe cont propriu.
+
+67
+00:05:38,370 --> 00:05:43,920
+O proiecție care este plăcută să privești este proiecția naturală a pământului care, dacă te duci
+
+68
+00:05:43,920 --> 00:05:51,360
+mai departe și o vei trece aici în pământ natural și apoi vei alerga din nou, vei obține în realitate un pământ natural
+
+69
+00:05:51,960 --> 00:05:57,690
+frumos și îl poți trece și îl vei răci și vei vedea rotația de aici pe planetă.
+
+70
+00:05:58,140 --> 00:05:58,560
+O.K.
+
+71
+00:05:58,650 --> 00:06:00,720
+Mergeți și explorați documentația.
+
+72
+00:06:00,750 --> 00:06:05,790
+Aceasta este o mare parte a învățării cum să folosești acest tip de biblioteci geografice și
+
+73
+00:06:05,790 --> 00:06:09,060
+capabilități de complot geografice mai complexe ale lui Watley.
+
+74
+00:06:09,090 --> 00:06:13,860
+Asa cum am spus mai devreme un pic de acest lucru trebuie sa faca pentru datele
+
+75
+00:06:13,860 --> 00:06:20,490
+dvs. arata ca in cazul in care datele dumneavoastra nu este intr-un format pe care parcela poate accepta, probabil, trebuie sa mergi
+
+76
+00:06:20,690 --> 00:06:26,730
+la utilizarea intr-o alta biblioteca grafica plotare, dar speram ca puteti converti fie un cod de țară sau nume de
+
+77
+00:06:26,730 --> 00:06:28,740
+țară într-un format acceptabil pentru Watley.
+
+78
+00:06:28,740 --> 00:06:30,380
+Bine, asta este pentru această prelegere.
+
+79
+00:06:30,390 --> 00:06:36,870
+Sper că v-ați bucurat și ați văzut puterea plotlinei, chiar dacă este o sintaxă puțin înțeleaptă pentru doar
+
+80
+00:06:36,870 --> 00:06:38,450
+câteva linii de cod.
+
+81
+00:06:38,460 --> 00:06:42,570
+Vreau să spun că este vorba despre 15 linii de cod, poate chiar mai puțin.
+
+82
+00:06:42,660 --> 00:06:49,020
+De fapt, puteți realiza o vizualizare interactivă foarte atractivă pe o scară
+
+83
+00:06:49,020 --> 00:06:50,160
+internațională geografică.
+
+84
+00:06:50,160 --> 00:06:53,160
+Mulțumesc tuturor și vă văd la următoarea conferință

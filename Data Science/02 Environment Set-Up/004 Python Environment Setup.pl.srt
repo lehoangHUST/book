@@ -1,0 +1,715 @@
+1
+00:00:05,490 --> 00:00:11,130
+Witam wszystkich serdecznie na wykładzie instalacyjnym i instalacyjnym, więc celem tego wykładu jest
+
+2
+00:00:11,130 --> 00:00:13,080
+zainstalowanie Python of Anaconda.
+
+3
+00:00:13,080 --> 00:00:17,970
+Pobierz plik zip zeszytów, które pochodzą z tego kursu, i otwórz Jupitera, a następnie przejrzyj
+
+4
+00:00:17,970 --> 00:00:20,410
+notebooki i sprawdź, czy wszystko działa prawidłowo.
+
+5
+00:00:21,560 --> 00:00:25,150
+Więc od samego początku, co jest anakonda anakonda.
+
+6
+00:00:25,160 --> 00:00:28,570
+Jest dystrybucją Pythona, gdy mówimy o dystrybucji.
+
+7
+00:00:28,580 --> 00:00:33,770
+Oznacza to, że w rzeczywistości nie obejmuje on tylko Pythona, ale zawiera także wiele bibliotek i narzędzi, których
+
+8
+00:00:34,010 --> 00:00:35,240
+używamy w tym kursie.
+
+9
+00:00:35,390 --> 00:00:40,460
+Zawiera również własny system środowisk wirtualnych, o którym mówimy w dalszej części tego kursu.
+
+10
+00:00:40,550 --> 00:00:45,690
+Jest to w zasadzie instalacja typu "wszystko w jednym", która jest niezwykle popularna w nauce o danych i uczeniu maszynowym.
+
+11
+00:00:45,770 --> 00:00:50,060
+Jeśli więc weźmiesz jakiekolwiek inne szkolenie i naukę danych oraz uczenie maszynowe, takie jak
+
+12
+00:00:50,360 --> 00:00:53,850
+szkolenia firmowe, bardzo prawdopodobne jest, że poprosią cię o zainstalowanie Anacondy.
+
+13
+00:00:53,870 --> 00:00:58,130
+Jest więc niezwykle popularna w nauce o danych i uczeniu maszynowym, dlatego używamy
+
+14
+00:00:59,690 --> 00:01:04,550
+jej w tym kursie, więc gdy tylko zainstalujemy Anacondę i uruchomimy Python, będzie to miało
+
+15
+00:01:04,550 --> 00:01:06,410
+środowisko programistyczne o nazwie Jowisz.
+
+16
+00:01:06,410 --> 00:01:11,090
+A Jupiter jest rozwiniętym środowiskiem, w którym możemy pisać normalny kod Pythona, ale
+
+17
+00:01:11,090 --> 00:01:16,730
+to, co jest naprawdę fajne, pozwala nam również wyświetlać obrazy, a następnie zapisywać wszystkie notatki w tym
+
+18
+00:01:16,730 --> 00:01:17,510
+samym notesie.
+
+19
+00:01:17,510 --> 00:01:22,460
+Jest to naprawdę świetne narzędzie do nauki i jest doskonałym narzędziem do nauki, dlatego też używasz
+
+20
+00:01:22,460 --> 00:01:23,780
+go podczas tego kursu.
+
+21
+00:01:23,840 --> 00:01:28,910
+Jest to również jedno z najpopularniejszych opracowanych środowisk w zakresie nauki o danych do badania i
+
+22
+00:01:28,910 --> 00:01:29,560
+analizy danych.
+
+23
+00:01:29,720 --> 00:01:34,160
+A kiedy będziesz się uczyć coraz więcej o kursie i bibliotekach, zobaczysz,
+
+24
+00:01:34,160 --> 00:01:39,920
+dlaczego jest to tak popularne narzędzie, ponieważ zobaczysz wszystko na jednym ekranie, możesz zobaczyć obrazy,
+
+25
+00:01:39,960 --> 00:01:43,440
+twoje dane, arkusze i wszystkie w jednym oknie.
+
+26
+00:01:43,450 --> 00:01:48,190
+Teraz chcę wyjaśnić, czy jesteś doświadczonym użytkownikiem Pythona, a może próbowałeś Jupitera, ale naprawdę nie
+
+27
+00:01:48,340 --> 00:01:49,120
+lubiłeś tego.
+
+28
+00:01:49,120 --> 00:01:53,700
+Masz własne ustawienia, takie jak Sublime Text lub PI charm lub jakiekolwiek inne środowisko.
+
+29
+00:01:53,860 --> 00:01:57,270
+Zachęcamy do korzystania z dowolnego preferowanego środowiska programistycznego.
+
+30
+00:01:57,280 --> 00:02:00,600
+Czasami niektórzy studenci po prostu nie lubią Jowisza i lubią swoje.
+
+31
+00:02:00,670 --> 00:02:01,690
+To w porządku.
+
+32
+00:02:01,690 --> 00:02:03,280
+Nie zmuszamy go do używania Jowisza.
+
+33
+00:02:03,280 --> 00:02:06,610
+Kod Pythona, który pokażemy w trakcie kursu, działa w każdym środowisku.
+
+34
+00:02:06,610 --> 00:02:07,610
+Chcę tylko być jasny.
+
+35
+00:02:07,720 --> 00:02:10,030
+Wybierz dowolne preferowane środowisko programistyczne.
+
+36
+00:02:10,030 --> 00:02:14,250
+Ale jeśli jesteś zupełnie nowy w tym zakresie, bardzo poleciłbym odejście z ustawień Anakonda i
+
+37
+00:02:14,260 --> 00:02:16,780
+Jowisza, pokazujemy tutaj, że możemy podążać tym kursem.
+
+38
+00:02:16,780 --> 00:02:21,050
+I mam nadzieję, że nauczysz się kochać to tak samo jak dobrze, więc zacznijmy.
+
+39
+00:02:21,050 --> 00:02:22,500
+Pobierz Anaconę.
+
+40
+00:02:22,610 --> 00:02:25,460
+Śmiało i idź do w w w Anaconda dot com.
+
+41
+00:02:25,610 --> 00:02:30,150
+Lub po prostu wyszukaj w Google Search Anaconda Python, a my powinniśmy skończyć na tej samej stronie.
+
+42
+00:02:30,170 --> 00:02:34,770
+Chcę teraz przeskoczyć w komentarzu dot com w mojej przeglądarce.
+
+43
+00:02:34,970 --> 00:02:35,740
+W porządku tutaj jestem.
+
+44
+00:02:35,820 --> 00:02:37,390
+Anaconda dot com.
+
+45
+00:02:37,400 --> 00:02:39,140
+Pamiętaj o Anaconda dot com.
+
+46
+00:02:39,140 --> 00:02:41,770
+Ta strona aktualizuje się dość często.
+
+47
+00:02:41,780 --> 00:02:46,450
+Tak więc styl może się zmienić i na przykład możesz teraz zobaczyć różne rzeczy.
+
+48
+00:02:46,610 --> 00:02:51,710
+Będą mieć anakondę, więc styl tej strony wygląda trochę inaczej, a przyciski mogą być lub
+
+49
+00:02:51,710 --> 00:02:55,970
+ogólny wygląd strony może być inny dla ciebie, gdy faktycznie to odwiedzasz.
+
+50
+00:02:55,970 --> 00:03:01,600
+Ale w zasadzie szukamy jest sekcja pobierania i zobaczysz tutaj kilka produktów, dlaczego Anaconda, ale
+
+51
+00:03:01,700 --> 00:03:04,360
+gdzieś na tej stronie powinieneś zobaczyć pobieranie.
+
+52
+00:03:04,670 --> 00:03:08,530
+A jeśli masz problem ze znalezieniem, że możesz po prostu śmiało wyszukiwać w Google i dzwonić do pobrania.
+
+53
+00:03:08,710 --> 00:03:10,910
+I powinien w końcu zabrać cię na tę stronę.
+
+54
+00:03:10,910 --> 00:03:18,350
+To, co widzimy tutaj, to pobranie dla Pythona 3, a Python do tego kursu używa najnowszej wersji
+
+55
+00:03:18,350 --> 00:03:19,390
+Pythona 3.
+
+56
+00:03:19,400 --> 00:03:22,100
+Więc użyjemy tego dla naszego Instalatora.
+
+57
+00:03:22,100 --> 00:03:27,050
+Jedyne, co musisz zrobić, to upewnić się, że wybrałeś odpowiedni instalator dla swojego systemu operacyjnego.
+
+58
+00:03:27,050 --> 00:03:32,780
+Więc teraz chcę komputera Windows, więc wybiorę instalator Windows dla Anacondy.
+
+59
+00:03:32,780 --> 00:03:36,680
+Teraz, jeśli używasz Mac OS, wybierz instalator Mac OS dla systemu Linux.
+
+60
+00:03:36,680 --> 00:03:41,690
+Śmiało i wybierz instalator Linux, o którym powinieneś wiedzieć, dla systemu Mac OS.
+
+61
+00:03:41,760 --> 00:03:45,230
+Jest instalator graficzny, a następnie instalator wiersza poleceń.
+
+62
+00:03:45,350 --> 00:03:49,790
+Instalator graficzny jest o wiele łatwiejszy w użyciu, ponieważ ma małe okienko, które wyświetla się i pokazuje,
+
+63
+00:03:49,820 --> 00:03:51,260
+co zrobić, gdy się obejrzysz.
+
+64
+00:03:51,590 --> 00:03:53,810
+Polecam więc instalator graficzny.
+
+65
+00:03:54,050 --> 00:04:00,440
+Tak, więc powiem na komputerze z systemem Windows, pobrać instalator Windows dla wersji Pythona 3.
+
+66
+00:04:00,440 --> 00:04:04,100
+Jeśli oglądasz to w pewnym momencie w przyszłości w Pythonie, pojawiło
+
+67
+00:04:04,100 --> 00:04:08,380
+się trzy punkty osiem, to całkiem po prostu po prostu używać Pythona 3.
+
+68
+00:04:08,430 --> 00:04:08,810
+W porządku.
+
+69
+00:04:08,860 --> 00:04:14,440
+Po zakończeniu pobierania otworzymy ten plik wykonywalny, jeśli używasz Mac OS.
+
+70
+00:04:14,470 --> 00:04:18,820
+Prawdopodobnie będzie to plik TMG lub coś, co w istocie prowadzi użytkownika przez
+
+71
+00:04:18,820 --> 00:04:19,660
+instalator graficzny.
+
+72
+00:04:19,660 --> 00:04:25,400
+Więc zamierzamy to otworzyć, a następnie powinniście zobaczyć, że kreator konfiguracji wyskoczył dla was.
+
+73
+00:04:25,400 --> 00:04:28,910
+Więc pójdziemy dalej i kliknij tutaj, a następnie jest umowa licencyjna.
+
+74
+00:04:28,910 --> 00:04:30,750
+Śmiało i zgódź się na to.
+
+75
+00:04:30,930 --> 00:04:34,810
+A potem jest instalacja dla mnie i dla wszystkich użytkowników.
+
+76
+00:04:35,010 --> 00:04:37,940
+Jeśli jesteś na komputerze pracującym, prawdopodobnie nie masz nieuchronnych przywilejów.
+
+77
+00:04:37,980 --> 00:04:40,320
+Po prostu zainstaluj go tylko dla mnie.
+
+78
+00:04:40,350 --> 00:04:44,430
+Zasadniczo oznacza to, że musisz zalogować się na swoje konto użytkownika i będzie działać tylko dla tego konkretnego
+
+79
+00:04:44,430 --> 00:04:45,000
+konta użytkownika.
+
+80
+00:04:45,480 --> 00:04:50,770
+Więc idź dalej i kliknij Dalej idź dalej i wybierz domyślną lokalizację dla folderu docelowego,
+
+81
+00:04:50,770 --> 00:04:56,200
+a jeśli jesteś na komputerze z systemem Windows, zobaczysz tę opcję dla zaawansowanych opcji instalacji
+
+82
+00:04:56,200 --> 00:04:58,720
+i powinieneś sprawdzić oba te pola.
+
+83
+00:04:58,900 --> 00:05:04,210
+Jedna z nich mówi, że w rzeczywistości nie zaleca się dodawania Anacondy do zmiennej środowiskowej ścieżki.
+
+84
+00:05:04,210 --> 00:05:08,860
+Powodem, dla którego mówią, że nie jest to zalecane, jest to, że
+
+85
+00:05:08,860 --> 00:05:14,770
+jeśli masz różne wersje Pythona, które mogą powodować bałagan i sprawić, że Anaconda jest zasadniczo domyślną
+
+86
+00:05:14,830 --> 00:05:20,500
+wersją Pythona na twoim komputerze, a także domyślny sposób uruchamiania pewnych akcji w linii poleceń, naprawdę
+
+87
+00:05:20,560 --> 00:05:24,520
+polecam to szczególnie. jeśli masz już dość dużą instalację Pythona.
+
+88
+00:05:24,520 --> 00:05:28,330
+Teraz, jeśli jesteś zaawansowanym użytkownikiem i rozumiesz, co to znaczy ustawić zmienną środowiskową ścieżki, zostawię
+
+89
+00:05:28,330 --> 00:05:31,530
+ci to niezależnie od tego, czy chcesz dodać Anacondę do swojej ścieżki.
+
+90
+00:05:31,540 --> 00:05:35,620
+Jednakże, jeśli jesteś zupełnie nowy i nie wiesz, co dodajesz do swojej
+
+91
+00:05:36,190 --> 00:05:40,810
+ścieżki, zmienna środowiskowa oznacza, że zdecydowanie warto to wybrać, nawet jeśli nie jest to zalecane.
+
+92
+00:05:40,810 --> 00:05:42,660
+Śmiało i sprawdź oba pola.
+
+93
+00:05:42,760 --> 00:05:47,000
+To pozwoli mi tworzyć wirtualne środowiska z linii poleceń, co jest bardzo przydatne.
+
+94
+00:05:47,050 --> 00:05:50,190
+Więc kiedy już to zrobisz, wybierz instalację.
+
+95
+00:05:50,250 --> 00:05:50,850
+W porządku.
+
+96
+00:05:50,950 --> 00:05:55,900
+Po zakończeniu instalacji powinniśmy być w stanie wyszukać anakondę Navigator na naszym
+
+97
+00:05:55,900 --> 00:05:56,770
+komputerze.
+
+98
+00:05:56,860 --> 00:06:01,510
+Jeśli szukasz Anacondy na swoim komputerze, powinieneś zobaczyć kilka opcji.
+
+99
+00:06:01,510 --> 00:06:05,480
+Jednym jest monit anakonda, a drugi to nawigator anakonda.
+
+100
+00:06:05,530 --> 00:06:12,590
+Kliknij i otwórz nawigator anakondy po otwarciu nawigatora anacondy, a zobaczysz kilka aplikacji i zasadniczo
+
+101
+00:06:12,590 --> 00:06:18,480
+jest to bardzo wygodny sposób na otwarcie twoich środowisk programistycznych, a zauważysz,
+
+102
+00:06:18,510 --> 00:06:23,510
+że Anaconda faktycznie pochodzi już z kilku środowisk programistycznych w
+
+103
+00:06:23,510 --> 00:06:24,340
+zestawie.
+
+104
+00:06:24,380 --> 00:06:29,800
+Pochodzi z Jowiszem Jowisz notebook Jowisz Spider Kuti konsoli i więcej.
+
+105
+00:06:29,840 --> 00:06:33,380
+Ten, który będziemy używać w tym kursie, to notatnik Jowisza.
+
+106
+00:06:33,380 --> 00:06:37,880
+Pamiętaj, że jest tam lampa Jupitera, która wygląda naprawdę podobnie, ale faktycznie używamy notebooka
+
+107
+00:06:38,210 --> 00:06:42,530
+Jupiter, a jak już wspominam, możesz dowolnie wybrać dowolne środowisko programistyczne, ale użyjemy
+
+108
+00:06:42,530 --> 00:06:43,470
+notebooka Jupiter.
+
+109
+00:06:43,550 --> 00:06:49,590
+Chcemy więc uruchomić notebook Jupiter, kliknij tutaj, gdzie jest napisane uruchomienie, a następnie,
+
+110
+00:06:49,590 --> 00:06:53,490
+co się stanie, powinno pojawić się okno przeglądarki.
+
+111
+00:06:53,490 --> 00:06:58,450
+I tutaj widzimy, że notebook Jupiter automatycznie otworzył się w przeglądarce.
+
+112
+00:06:58,470 --> 00:07:04,020
+Teraz, jeśli nie masz przeglądarki Google Chrome jako domyślnej przeglądarki, zdecydowanie polecam jej używanie,
+
+113
+00:07:04,020 --> 00:07:06,860
+ponieważ zazwyczaj działa najlepiej z Jupiter.
+
+114
+00:07:06,930 --> 00:07:11,190
+Nie używaj starszej przeglądarki, takiej jak Internet Explorer. Microsoft Edge powinno być w porządku.
+
+115
+00:07:11,190 --> 00:07:14,240
+Ale Internet Explorer nie jest już obsługiwany przez Microsoft.
+
+116
+00:07:14,310 --> 00:07:18,990
+Dlatego zdecydowanie polecam używanie Google Chrome dla Jowisza.
+
+117
+00:07:18,990 --> 00:07:23,010
+Możesz także używać takich rzeczy jak Firefox Mozilla, które powinny technicznie również działać poprawnie.
+
+118
+00:07:23,570 --> 00:07:24,120
+DOBRZE.
+
+119
+00:07:24,330 --> 00:07:28,710
+Zauważ, że Jupiter otwiera w przeglądarce coś, co chcę wyjaśnić, to że nie musisz
+
+120
+00:07:28,710 --> 00:07:31,560
+być podłączony do Internetu, aby Jupiter mógł działać.
+
+121
+00:07:31,620 --> 00:07:35,620
+Jest to po prostu używanie przeglądarki jako graficznego okna interfejsu.
+
+122
+00:07:35,640 --> 00:07:37,930
+W rzeczywistości nie ma tutaj połączenia z Internetem.
+
+123
+00:07:37,950 --> 00:07:42,090
+Zauważysz więc, że zasadniczo widzę wszystkie foldery znajdujące się na moim komputerze.
+
+124
+00:07:42,090 --> 00:07:45,300
+Widzę moje foldery na pulpicie, moje dokumenty i moje pliki do pobrania.
+
+125
+00:07:45,300 --> 00:07:51,570
+Tak więc chcę pobrać plik zip ze notesów, który pojawi się na tym kursie, a następnie uzyskać do
+
+126
+00:07:51,690 --> 00:07:53,400
+niego dostęp przez Jupiter.
+
+127
+00:07:53,400 --> 00:07:55,900
+A więc pobierzmy ten plik zip.
+
+128
+00:07:56,180 --> 00:08:01,800
+OK, więc jeśli przejdziesz na stronę z aktualnymi kursami, zobaczysz program nauczania i
+
+129
+00:08:01,800 --> 00:08:07,800
+powinieneś zauważyć w sekcji 1. Oczywiście Wprowadzenie do trzeciego kursu, jeśli jest dostępny plik zip,
+
+130
+00:08:07,800 --> 00:08:09,420
+który możesz pobrać.
+
+131
+00:08:09,870 --> 00:08:15,000
+A kiedy czytałeś ten wykład, powinieneś się przekonać, że niewielki artykuł z zasobu wskazuje,
+
+132
+00:08:15,030 --> 00:08:17,130
+że istnieje zasób do pobrania.
+
+133
+00:08:17,130 --> 00:08:20,010
+Pamiętaj teraz, jeśli oglądasz film z wykładu.
+
+134
+00:08:20,010 --> 00:08:25,700
+Na przykład tutaj przeglądam zasadniczo nasze środowiska intro, przygotowując wykład instalacyjny, jeśli klikniesz tutaj
+
+135
+00:08:25,740 --> 00:08:27,610
+w lewym górnym rogu.
+
+136
+00:08:27,630 --> 00:08:32,760
+Powinien także wskazywać, że można pobrać zasoby, a następnie można zobaczyć zawartość kursu i
+
+137
+00:08:32,880 --> 00:08:36,310
+kliknąć ten plik zip, aby pobrać plik zip.
+
+138
+00:08:36,360 --> 00:08:42,060
+Więc pobierz plik zip albo z fraza f, a ja mam pliki zip na kilka innych wykładów, na
+
+139
+00:08:42,060 --> 00:08:46,320
+wypadek gdybyś go nie zauważył, łącznie z tym i wykładem z Jowisza.
+
+140
+00:08:46,320 --> 00:08:48,870
+Jest to ten sam plik zip, który można pobrać za darmo.
+
+141
+00:08:48,870 --> 00:08:53,310
+Pobierz go i zapamiętaj, gdzie go pobrałeś, a następnie rozpakuj ten plik.
+
+142
+00:08:53,310 --> 00:08:57,330
+W tej chwili moja wersja znajduje się pod folderem moich plików do pobrania, więc zamierzam go rozpakować.
+
+143
+00:08:57,660 --> 00:08:57,900
+W porządku.
+
+144
+00:08:57,960 --> 00:09:01,560
+Więc pod folderem moich plików do pobrania, rozpakuję to.
+
+145
+00:09:01,560 --> 00:09:07,020
+Powinieneś być w stanie zobaczyć wyciąg wszystkie lub możesz pobrać program, jak w przypadku RA lub siedmiu zip.
+
+146
+00:09:07,020 --> 00:09:12,000
+Idź naprzód i rób to naprawdę w jakikolwiek sposób, niezależnie od tego, jaką typową metodę używasz, by w końcu być folderem.
+
+147
+00:09:12,030 --> 00:09:16,070
+Śmiało, a system Windows i Mac OS mają domyślne ustawienia.
+
+148
+00:09:16,110 --> 00:09:19,230
+Więc śmiało lub po prostu rozpakuj wszystko i rozpakuj.
+
+149
+00:09:20,240 --> 00:09:25,490
+Więc niech to rozpakuje, a kiedy już się rozpakujesz, powinieneś zobaczyć folder tutaj, a zobaczysz coś, co
+
+150
+00:09:25,490 --> 00:09:26,240
+mówi refaktor.
+
+151
+00:09:26,240 --> 00:09:31,910
+Dalej i kliknij na to, a zobaczysz wszystkie notatki kursu zorganizowane, aby były na
+
+152
+00:09:31,910 --> 00:09:32,500
+kursie.
+
+153
+00:09:32,540 --> 00:09:38,000
+A jeśli klikniesz dwukrotnie, zobaczysz kilka plików o nazwie I. P. y i być plikami.
+
+154
+00:09:38,000 --> 00:09:42,170
+Teraz rzecz o tych plikach, jeśli chcesz spróbować podwójnie kliknąć i otworzyć je bezpośrednio.
+
+155
+00:09:42,170 --> 00:09:46,590
+To nie zadziałałoby by otworzyć bezpośrednio przez system notebooków Jupiter.
+
+156
+00:09:46,610 --> 00:09:51,650
+Skoro wiemy, że nasz katalog do rozpakowania jest poniżej pobranych plików, wrócimy do naszej przeglądarki,
+
+157
+00:09:51,650 --> 00:09:55,110
+gdzie mamy notatnik Jupitera i otwieramy pliki w ten sposób.
+
+158
+00:09:55,130 --> 00:09:57,020
+Więc pozwól mi iść dalej i wskocz do tego.
+
+159
+00:09:57,020 --> 00:09:59,730
+Więc wracam do notatnika Jupiter.
+
+160
+00:09:59,750 --> 00:10:07,080
+Śmiało znajdź folder Downloads, a następnie znajdź folder Pi the SNL bootcamp master udaj się do refaktora, a
+
+161
+00:10:07,080 --> 00:10:12,410
+zobaczysz wszystkie pliki tutaj i pierwsze, które zamierzamy tam przejechać, aby rozbić Python
+
+162
+00:10:12,420 --> 00:10:17,580
+Oczywiście, a potem te notebooki po prostu na nie klikasz, a po ich
+
+163
+00:10:17,580 --> 00:10:20,500
+załadowaniu możesz zobaczyć wszystkie informacje tutaj.
+
+164
+00:10:20,730 --> 00:10:25,020
+Później omówimy więcej szczegółów o tym, jak faktycznie można uruchomić notebooki Jupiter.
+
+165
+00:10:25,020 --> 00:10:31,080
+Pamiętaj, że wcześniej, kiedy filmowałem ten kurs, nie zorganizowaliśmy go w taki
+
+166
+00:10:31,080 --> 00:10:32,350
+numeryczny sposób.
+
+167
+00:10:32,550 --> 00:10:38,520
+Po prostu zorganizowaliśmy go w ramach ogólnego tematu, ale teraz zreorganizowaliśmy i zreorganizowaliśmy rzeczywiste notebooki i foldery,
+
+168
+00:10:38,550 --> 00:10:40,280
+aby były bardziej przejrzyste.
+
+169
+00:10:40,290 --> 00:10:43,620
+Zrobisz to najpierw, potem dwa, potem trzy i cztery, potem pięć itd.
+
+170
+00:10:44,080 --> 00:10:44,760
+DOBRZE.
+
+171
+00:10:44,850 --> 00:10:46,770
+To w zasadzie dotyczy naszej konfiguracji.
+
+172
+00:10:46,890 --> 00:10:52,360
+Teraz powinieneś być w stanie uruchomić notebook Jupiter i powinieneś zainstalować Anacondę, a następnie pobrać
+
+173
+00:10:52,370 --> 00:10:54,060
+notatki i postępować dalej.
+
+174
+00:10:54,060 --> 00:10:59,070
+Pamiętaj, że jeśli zauważysz błąd podczas próby obejrzenia filmu, spróbuj najpierw uruchomić
+
+175
+00:10:59,160 --> 00:11:03,480
+nasze notebooki, a konkretnie nasz notatnik rozwiązań do ćwiczeń.
+
+176
+00:11:03,480 --> 00:11:07,830
+Wiele razy łatwo zrobić prostą literówkę, dlatego dostarczamy notebooki, które pasują do każdego wykładu
+
+177
+00:11:07,830 --> 00:11:11,100
+wideo, aby pomóc w rozwiązywaniu wszelkich problemów tego typu.
+
+178
+00:11:11,280 --> 00:11:11,910
+W porządku.
+
+179
+00:11:11,970 --> 00:11:13,890
+Dziękuję wszystkim, a do zobaczenia na następnym wykładzie.

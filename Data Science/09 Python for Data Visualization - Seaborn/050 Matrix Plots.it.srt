@@ -1,0 +1,531 @@
+1
+00:00:05,490 --> 00:00:10,830
+Salve a tutti e benvenuti alla conferenza di Matrix con Seaborn in questa conferenza impareremo
+
+2
+00:00:10,830 --> 00:00:14,940
+come creare mappe di matrici principalmente con mappe di calore usando Seaborn.
+
+3
+00:00:15,120 --> 00:00:18,300
+Andiamo avanti e saltiamo sul taccuino di Jupiter per iniziare.
+
+4
+00:00:18,870 --> 00:00:19,200
+OK.
+
+5
+00:00:19,200 --> 00:00:21,500
+Eccomi al taccuino di Giove.
+
+6
+00:00:21,510 --> 00:00:27,280
+Sono andato avanti e ho detto inport seaborne Asinus e poi ho impostato la trama delle mappe in diretta.
+
+7
+00:00:27,330 --> 00:00:29,970
+Quindi ho caricato due set di dati.
+
+8
+00:00:30,000 --> 00:00:35,550
+il set di dati usando Esson come quel set di dati di sottolineatura del carico e poi passando i suggerimenti per le stringhe.
+
+9
+00:00:35,550 --> 00:00:37,260
+Ho caricato il dataset dei suggerimenti o
+
+10
+00:00:37,290 --> 00:00:42,660
+E ho fatto una cosa simile per il set di dati di volo utilizzando S e S che il set di dati bassi
+
+11
+00:00:42,660 --> 00:00:46,030
+e quindi il passaggio nella stringa voli i dati dei suggerimenti che abbiamo visto prima.
+
+12
+00:00:46,040 --> 00:00:46,980
+Ecco la testa di esso.
+
+13
+00:00:47,040 --> 00:00:48,430
+Ma il set di dati di volo che non abbiamo.
+
+14
+00:00:48,430 --> 00:00:49,970
+Quindi diamo una rapida occhiata a questo.
+
+15
+00:00:50,010 --> 00:00:56,130
+Il set di dati di volo mostra principalmente il numero di passeggeri che volavano in un dato mese
+
+16
+00:00:56,220 --> 00:00:57,750
+di un determinato anno.
+
+17
+00:00:57,750 --> 00:01:04,230
+Ora parliamo di mappe di calore, che è il nostro modo principale di mostrare una sorta di trama matrice in
+
+18
+00:01:04,230 --> 00:01:06,630
+modo che una mappa di calore funzioni correttamente.
+
+19
+00:01:06,660 --> 00:01:09,630
+I tuoi dati dovrebbero già essere in forma di matrice.
+
+20
+00:01:09,630 --> 00:01:15,850
+E ciò che intendo per matrice è che il nome dell'indice e il nome della colonna corrispondano, in
+
+21
+00:01:15,850 --> 00:01:21,500
+modo che il valore della cella in realtà indichi qualcosa che è rilevante per entrambi i nomi.
+
+22
+00:01:21,540 --> 00:01:28,680
+Cosa intendo per esempio se guardo il frame dei dati dei consigli in questo momento ho un conto totale che
+
+23
+00:01:28,890 --> 00:01:35,850
+è una sorta di etichetta o variabile e se guardo uno dei valori nella cella è 16 dollari e
+
+24
+00:01:35,850 --> 00:01:36,950
+99 centesimi .
+
+25
+00:01:37,140 --> 00:01:42,420
+Tuttavia la riga non è una variabile reale per ottenere questo in forma matriciale.
+
+26
+00:01:42,420 --> 00:01:46,830
+Devo avere entrambe le variabili sulle colonne e sulle righe.
+
+27
+00:01:47,370 --> 00:01:54,420
+Posso farlo attraverso molti metodi di solito attraverso una tabella pivot o cercando di ottenere dati di correlazione.
+
+28
+00:01:54,570 --> 00:01:56,860
+Andremo avanti e faremo prima i dati di correlazione.
+
+29
+00:01:56,940 --> 00:02:02,130
+Se lo chiamo punte, fermate tra parentesi ravvicinate.
+
+30
+00:02:02,130 --> 00:02:06,290
+Ora abbiamo una forma a matrice di una sorta di dati qui.
+
+31
+00:02:06,450 --> 00:02:15,390
+E ciò che intendi è che ora la colonna e i nomi delle variabili dell'indice indicano effettivamente una pertinenza sia per la colonna
+
+32
+00:02:15,390 --> 00:02:19,880
+che per il nome dell'indice della cella in cui si trovano.
+
+33
+00:02:19,920 --> 00:02:21,190
+E questa è la forma della matrice.
+
+34
+00:02:21,210 --> 00:02:26,370
+Avrai bisogno dei tuoi dati per poter richiamare la mappa di calore su di esso e quindi in
+
+35
+00:02:26,370 --> 00:02:30,920
+realtà è altrettanto semplice che chiamare Asinus dot heat map e quindi i tuoi dati.
+
+36
+00:02:30,990 --> 00:02:39,500
+Entriamo e salviamo Tipps pensato come core e poi lo passiamo in heat map.
+
+37
+00:02:39,660 --> 00:02:45,840
+E qui possiamo vedere una mappa di calore o una mappa di calore che fa davvero è colori in quei valori basati su
+
+38
+00:02:45,840 --> 00:02:47,280
+una sorta di scala gradiente.
+
+39
+00:02:47,280 --> 00:02:53,850
+Quindi, se guardo il mio frame di dati TCE originale, in pratica è solo impostare questi numeri su un gradiente su
+
+40
+00:02:53,910 --> 00:02:55,970
+una scala di colori e quindi riempirlo.
+
+41
+00:02:56,100 --> 00:03:01,380
+In tal modo, se si dispone di una cornice di dati di correlazione molto ampia o di altri dati
+
+42
+00:03:01,380 --> 00:03:07,390
+di una matrice, è possibile indicare facilmente quali sono i numeri relativi ai valori l'uno rispetto all'altro utilizzando una mappa di calore.
+
+43
+00:03:07,390 --> 00:03:12,210
+E questo è l'uso principale principale per un grafico a matrice.
+
+44
+00:03:12,210 --> 00:03:18,420
+Altri argomenti utili che puoi passare qui per riscaldare la mappa oltre ai tuoi dati sono e
+
+45
+00:03:18,420 --> 00:03:26,160
+rotazione, quindi puoi dire A e OT come argomenti uguali a vero e annoteranno i valori numerici effettivi che appartengono a
+
+46
+00:03:26,160 --> 00:03:27,350
+ciascuna di queste celle.
+
+47
+00:03:27,360 --> 00:03:31,680
+Non devi solo rinunciare al colore ma puoi anche andare fuori dal valore attuale qui.
+
+48
+00:03:31,980 --> 00:03:38,730
+andare sopra le mappe dei colori e le opzioni in seguito nei docenti apparso per esempio mostrando un esempio.
+
+49
+00:03:38,730 --> 00:03:43,580
+E poi puoi anche specificare come Vedi mappa la mappatura dei colori che vuoi
+
+50
+00:03:43,710 --> 00:03:47,070
+Raffreddare caldo come una stringa che verifica una mappa dei colori.
+
+51
+00:03:47,070 --> 00:03:49,200
+E qui puoi iniziare a vedere la mappa dei colori.
+
+52
+00:03:49,230 --> 00:03:52,650
+Raffreddare caldo sugli stessi dati.
+
+53
+00:03:52,650 --> 00:03:59,700
+Ora rivisitiamo i dati del volo, quindi procedi e digita i voli e possiamo vedere che quest'anno abbiamo
+
+54
+00:03:59,700 --> 00:04:05,640
+tutto questo mese questo passeggeri e ho bisogno di farlo diventare in forma di matrice,
+
+55
+00:04:05,670 --> 00:04:13,510
+il che significa che ho bisogno di convertire in qualche modo una di queste variabili. o la strada nomina l'indice attuale.
+
+56
+00:04:13,560 --> 00:04:16,500
+Quindi voglio una di queste variabili all'anno o ai passeggeri.
+
+57
+00:04:16,500 --> 00:04:21,340
+Andiamo avanti e diciamo che il mese è l'indice.
+
+58
+00:04:21,360 --> 00:04:27,330
+Quindi ho intenzione di dire che l'indice è uguale al mese e poi ho intenzione
+
+59
+00:04:27,330 --> 00:04:36,330
+di uscire e impostare le colonne uguali all'anno e quindi l'unica cosa che mi resta da fare è specificare i valori e
+
+60
+00:04:36,330 --> 00:04:39,920
+questo andrà avanti e sii la colonna dei passeggeri.
+
+61
+00:04:41,990 --> 00:04:44,400
+Entra ed esegui questo e guarda come appare ora.
+
+62
+00:04:44,860 --> 00:04:45,310
+OK.
+
+63
+00:04:45,370 --> 00:04:48,940
+Ora ho i miei dati in una sorta di matrice.
+
+64
+00:04:48,970 --> 00:04:53,600
+Puoi farlo con Pivot Table abbastanza facilmente a seconda se i tuoi dati si allineano correttamente.
+
+65
+00:04:53,740 --> 00:04:59,470
+Ora puoi vedere che ho un sacco di numeri che si correlano bene non solo alla variabile di colonna
+
+66
+00:04:59,470 --> 00:05:01,360
+ma anche alla variabile di indice.
+
+67
+00:05:01,420 --> 00:05:07,570
+Così posso vedere qui nel 1952, ad esempio, ad aprile c'erano 181 passeggeri.
+
+68
+00:05:07,570 --> 00:05:11,770
+Ora quello che voglio fare è usare la mappa termica per visualizzare rapidamente questi dati.
+
+69
+00:05:11,960 --> 00:05:18,280
+Ho intenzione di andare in testa e impostare questo valore su FP per il pivot dei voli e quindi chiamare la
+
+70
+00:05:19,690 --> 00:05:21,820
+mappa termica S e S su F-P.
+
+71
+00:05:21,970 --> 00:05:26,530
+E qui possiamo vedere la mappa di calore per le tabelle di voli imperniate.
+
+72
+00:05:26,710 --> 00:05:30,710
+E ora posso vedere in base a un gradiente di colore i dati in un sacco di un formato.
+
+73
+00:05:30,880 --> 00:05:36,400
+Quindi posso facilmente capire quale mese ha avuto il maggior numero di voli e ha senso che man
+
+74
+00:05:36,550 --> 00:05:43,030
+mano che gli anni vanno avanti o avanti nel tempo si ottengono più voli, allora è logico perché con il passare
+
+75
+00:05:43,030 --> 00:05:47,950
+del tempo più persone sono sugli aerei più voli sono si verificano e si può anche
+
+76
+00:05:48,280 --> 00:05:56,530
+vedere in base al mese che il viaggio mese popolare di solito è durante i mesi estivi giugno luglio e agosto almeno per noi dati.
+
+77
+00:05:57,370 --> 00:06:04,510
+Ora quello che puoi fare è aggiungere argomenti come la mappa del mare e andiamo a vedere
+
+78
+00:06:04,510 --> 00:06:08,800
+un altro esempio di una mappa del mare utile come magma.
+
+79
+00:06:09,490 --> 00:06:16,570
+dall'oscurità alla luce i colori reali qui la variazione in altri argomenti che puoi passare e una mappa di calore che a volte
+
+80
+00:06:16,570 --> 00:06:23,410
+le persone amano usare è come il colore e la linea che è fondamentalmente in questo momento in questa mappa di calore.
+
+81
+00:06:26,170 --> 00:06:27,870
+E ora possiamo anche vedere
+
+82
+00:06:27,880 --> 00:06:32,560
+Tutte queste cellule si toccano direttamente, ma a volte si può desiderare una separazione.
+
+83
+00:06:32,710 --> 00:06:36,140
+Quindi puoi specificare che i lines sono un po 'più spessi.
+
+84
+00:06:36,340 --> 00:06:40,740
+Entriamo e ne inseriamo uno lì e puoi augurare a Feitel il colore della linea.
+
+85
+00:06:40,870 --> 00:06:42,970
+Andremo a specificare che è bianco.
+
+86
+00:06:42,970 --> 00:06:46,830
+Ora se eseguo questo ottengo queste linee tra ogni cella.
+
+87
+00:06:46,870 --> 00:06:48,890
+E a volte questo è un po 'più facile da leggere.
+
+88
+00:06:49,360 --> 00:06:55,790
+queste linee molto spesse se vuoi più separazione e puoi anche cambiare il colore della linea.
+
+89
+00:06:55,790 --> 00:06:56,740
+Puoi rendere
+
+90
+00:06:56,740 --> 00:07:01,750
+Quindi, ad esempio, se tornassi a un'altra cucitura su un'altra, a volte le persone lo usano come se ci
+
+91
+00:07:01,780 --> 00:07:03,480
+mostrassero di fronte a noi al calduccio.
+
+92
+00:07:03,740 --> 00:07:07,500
+E questo è come potrebbe sembrare che tu voglia qualcosa che non sia bianco.
+
+93
+00:07:07,540 --> 00:07:12,130
+Puoi anche scegliere come il nero, per esempio.
+
+94
+00:07:12,130 --> 00:07:15,760
+Quindi hai davvero molta personalizzazione qui per quanto riguarda il modo in cui vuoi effettivamente separarlo.
+
+95
+00:07:15,760 --> 00:07:20,890
+Andiamo a rimuovere tutto e mostriamo la mappa di calore originale qui.
+
+96
+00:07:20,890 --> 00:07:27,340
+la mappa del cluster utilizzerà effettivamente il clustering gerarchico per produrre una versione cluster di questa mappa di calore.
+
+97
+00:07:27,340 --> 00:07:33,260
+Ora parliamo della seconda trama di tipo Matrix in mare che è la mappa del cluster e
+
+98
+00:07:33,290 --> 00:07:37,900
+Lasciami andare per mostrarti un esempio qui abbiamo la mappa termica originale, ma ora
+
+99
+00:07:38,980 --> 00:07:45,420
+chiamerò la mappa cluster Asinus su F. P. e nota cosa abbiamo qui.
+
+100
+00:07:45,430 --> 00:07:49,470
+Abbiamo i dati su di esso necessario ridurre lo zoom per mostrare completamente questo.
+
+101
+00:07:49,470 --> 00:07:55,540
+Ma ora abbiamo i dati e questi piccoli cluster di gerarchi e questo fondamentalmente cerca di
+
+102
+00:07:55,570 --> 00:07:59,180
+raggruppare colonne e righe in base alla loro somiglianza.
+
+103
+00:07:59,190 --> 00:08:06,730
+E questo mostra improvvisamente gli anni, i mesi e i cluster ei mesi qui sull'asse delle y che si vedono non
+
+104
+00:08:06,730 --> 00:08:08,370
+sono più in ordine.
+
+105
+00:08:08,470 --> 00:08:11,400
+Vanno settembre giugno agosto luglio ottobre aprile.
+
+106
+00:08:11,470 --> 00:08:16,270
+E il motivo è che sono stati raggruppati in mesi simili messi insieme e la stessa cosa
+
+107
+00:08:16,570 --> 00:08:19,810
+per anni è possibile vedere certi anni sono ora fuori uso.
+
+108
+00:08:19,830 --> 00:08:22,940
+Va 1949 1950 1953.
+
+109
+00:08:23,050 --> 00:08:28,570
+Questo è fondamentalmente un insieme di informazioni per cercare di mostrare colonne e righe simili tra loro,
+
+110
+00:08:28,580 --> 00:08:33,360
+così posso vedere ora che il 1959 e il 1960 sono molto simili tra loro.
+
+111
+00:08:33,490 --> 00:08:35,250
+E così il nostro agosto e luglio.
+
+112
+00:08:35,290 --> 00:08:40,570
+per renderlo ancora più chiaro quello che possiamo fare è cambiare la mappatura dei colori.
+
+113
+00:08:40,570 --> 00:08:48,550
+E puoi vedere i diversi livelli della gerarchia dei cluster basati su questo tipo di diagrammi ad albero ma sull'asse ye sull'asse x
+
+114
+00:08:48,700 --> 00:08:53,020
+e ora puoi davvero iniziare a dedurre le informazioni da un grafico
+
+115
+00:08:53,020 --> 00:08:55,210
+Quindi vedi la mappa uguale alla stringa.
+
+116
+00:08:55,210 --> 00:08:58,020
+Cool caldo di nuovo.
+
+117
+00:08:58,220 --> 00:09:03,250
+E ora possiamo davvero vedere i cluster in modo da poter vedere che c'è un cluster
+
+118
+00:09:03,550 --> 00:09:08,420
+tra agosto e luglio molto chiaramente e qualcos'altro che puoi fare è standardizzare la scala.
+
+119
+00:09:08,440 --> 00:09:12,400
+Quindi adesso siamo ancora su passeggeri da 0 a 600.
+
+120
+00:09:12,520 --> 00:09:19,690
+e puoi veramente vedere basare su una scala normalizzata le somiglianze dei cluster basati sulla colorazione.
+
+121
+00:09:19,690 --> 00:09:26,920
+Ma se volevi normalizzarlo puoi passare argomenti chiamati scala standard e input 1 e questo
+
+122
+00:09:26,950 --> 00:09:29,890
+normalizzerebbe questo da 0 a 1
+
+123
+00:09:30,130 --> 00:09:35,800
+Quindi sembra che questo mese di gennaio e febbraio sia una specie di primi mesi invernali sono molto
+
+124
+00:09:35,800 --> 00:09:41,120
+più vicini ai passeggeri bassi e l'alto numero di passeggeri è principalmente in questi mesi estivi.
+
+125
+00:09:41,170 --> 00:09:41,770
+OK.
+
+126
+00:09:41,950 --> 00:09:45,010
+Vi incoraggio ad andare avanti ed esplorare la documentazione per la mappa dei cluster.
+
+127
+00:09:45,010 --> 00:09:49,720
+ti interessa, ma potresti voler aspettare fino a quando non arriveremo agli algoritmi di clustering per l'apprendimento automatico,
+
+128
+00:09:49,730 --> 00:09:54,460
+in modo che possiamo capire meglio che cosa sta succedendo con la matematica alla base di questi metodi.
+
+129
+00:09:54,460 --> 00:09:55,360
+È qualcosa che
+
+130
+00:09:55,400 --> 00:09:59,770
+BERNANKE Penso che sia un metodo interessante per dedurre un po 'più di informazioni da
+
+131
+00:09:59,770 --> 00:10:06,400
+un calore normale rispetto a una mappa di calore che visualizzerà le cose nell'ordine in cui le metti in una mappa cluster raggrupperà
+
+132
+00:10:06,400 --> 00:10:10,890
+le cose in un ordine in modo che i gruppi simili siano vicini a vicenda.
+
+133
+00:10:10,900 --> 00:10:13,930
+Va bene, grazie a tutti e ci vediamo alla prossima lezione

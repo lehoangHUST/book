@@ -1,0 +1,571 @@
+1
+00:00:05,730 --> 00:00:10,950
+Halo semuanya dan selamat datang di kuliah opsional ini tentang lingkungan virtual Anaconda.
+
+2
+00:00:10,950 --> 00:00:16,710
+Ini sedikit topik yang lebih maju tentang cara membuat lingkungan virtual menggunakan distribusi Anaconda.
+
+3
+00:00:17,070 --> 00:00:20,580
+Anda dapat terus maju dan merasa bebas untuk melewati topik ini jika Anda tidak tertarik.
+
+4
+00:00:20,880 --> 00:00:23,520
+Mari kita lanjutkan dan melanjutkan.
+
+5
+00:00:23,550 --> 00:00:29,310
+Mari kita bicara tentang lingkungan virtual yang merupakan lingkungan virtual yang memungkinkan Anda mengatur instalasi
+
+6
+00:00:29,310 --> 00:00:32,130
+virtual python dan pustaka di komputer Anda.
+
+7
+00:00:32,340 --> 00:00:37,860
+Dengan begitu Anda dapat memiliki beberapa versi Python atau pustaka dan dengan mudah mengaktifkan atau
+
+8
+00:00:37,860 --> 00:00:39,210
+menonaktifkan lingkungan ini.
+
+9
+00:00:39,210 --> 00:00:44,220
+Mari kita lanjutkan dan melihat beberapa contoh mengapa Anda mungkin ingin melakukan ini misalnya.
+
+10
+00:00:44,220 --> 00:00:47,870
+Mungkin terkadang Anda ingin memprogram dalam versi perpustakaan yang berbeda.
+
+11
+00:00:48,060 --> 00:00:54,750
+Misalnya Anda mungkin telah mengembangkan program lengkap yang menggunakan Sacket learn versi 0. 27 dan kemudian pada suatu waktu versi
+
+12
+00:00:54,750 --> 00:00:58,560
+berikutnya adalah 0. 1 8 dirilis.
+
+13
+00:00:58,560 --> 00:01:04,350
+Mungkin Anda ingin menjelajahi fitur baru 0. 20 tetapi tidak ingin merusak kode lama Anda ketika
+
+14
+00:01:04,350 --> 00:01:05,340
+Anda memutakhirkan.
+
+15
+00:01:05,340 --> 00:01:09,510
+Di sinilah Anda mungkin ingin membuat lingkungan virtual untuk versi perpustakaan tertentu.
+
+16
+00:01:11,130 --> 00:01:15,390
+Dalam contoh lain kadang-kadang Anda ingin memastikan instalasi perpustakaan Anda di lokasi yang benar.
+
+17
+00:01:15,900 --> 00:01:20,940
+Jadi misalnya Anda mungkin ingin juga beberapa versi Python di komputer Anda
+
+18
+00:01:20,940 --> 00:01:28,500
+sehingga Anda ingin memastikan python 2. 7 versi perpustakaan berada di lokasi yang benar versus python 3. Versi 5 yang dapat Anda lakukan lingkungan virtual
+
+19
+00:01:28,500 --> 00:01:35,800
+seperti memiliki satu lingkungan di Python 2. 7 dan yang lainnya dari Python 3. 5.
+
+20
+00:01:36,090 --> 00:01:42,120
+Ada perpustakaan E dan V virtual untuk distribusi Python normal yang memiliki banyak kemampuan
+
+21
+00:01:42,120 --> 00:01:44,740
+yang akan berjalan dengan Anaconda.
+
+22
+00:01:44,910 --> 00:01:50,030
+Perpustakaan ENV virtual ini memungkinkan Anda untuk membuat lingkungan virtual dan itu adalah manajer lingkungan virtual.
+
+23
+00:01:50,520 --> 00:01:55,740
+Namun Anaconda yang merupakan distribusi direkomendasikan Python yang kita gunakan dalam kursus ini
+
+24
+00:01:55,740 --> 00:02:00,930
+sudah memiliki manajer lingkungan virtual yang dibangun dengan baik yang membuat seluruh proses
+
+25
+00:02:01,200 --> 00:02:04,480
+menciptakan lingkungan virtual mengaktifkan dan menonaktifkannya sangat mudah.
+
+26
+00:02:04,480 --> 00:02:08,610
+Silakan dan periksa tautan sumber daya untuk dokumentasi resmi yang akan kita
+
+27
+00:02:08,610 --> 00:02:09,350
+bahas sekarang.
+
+28
+00:02:09,480 --> 00:02:13,160
+Jadi silakan dan periksa tautan sumber daya yang akan membawa Anda ke sini, Anda.
+
+29
+00:02:13,290 --> 00:02:18,960
+Atau jika Anda mau, Anda bisa mengetiknya secara manual, kami hanya akan ke dokumentasi data PI atau
+
+30
+00:02:18,960 --> 00:02:20,940
+kita berbicara tentang menggunakan lingkungan.
+
+31
+00:02:20,940 --> 00:02:24,890
+Anda bisa mengklik tautan sumber daya jika Anda tidak ingin mengetikkan seluruh jalur file ini atau
+
+32
+00:02:24,900 --> 00:02:26,540
+path file Anda di browser Anda.
+
+33
+00:02:26,570 --> 00:02:31,230
+Pergi ke depan dan lompat ke browser saya sekarang jelajahi dokumentasi sedikit dan tunjukkan bagaimana Anda
+
+34
+00:02:31,230 --> 00:02:33,300
+dapat menggunakannya pada command prompt Anda.
+
+35
+00:02:33,300 --> 00:02:35,340
+Ayo maju dan lompat ke sana sekarang.
+
+36
+00:02:36,060 --> 00:02:39,360
+OK jadi di sini saya berada di tautan sumber daya untuk mengelola lingkungan.
+
+37
+00:02:39,390 --> 00:02:44,670
+Apa yang saya ingin Anda lakukan adalah maju dan pergi untuk menciptakan lingkungan dan Anda harus melihat
+
+38
+00:02:44,670 --> 00:02:50,040
+petunjuk dasar di sini untuk menciptakan lingkungan dan itu cukup sederhana sejauh perintah perlu dimasukkan untuk menciptakan
+
+39
+00:02:50,070 --> 00:02:50,940
+lingkungan baru.
+
+40
+00:02:50,970 --> 00:02:57,120
+Anda akan pergi ke depan dan menggunakan perintah Konda create diikuti oleh dash dasbor nama kemudian nama apa pun yang Anda
+
+41
+00:02:57,120 --> 00:02:58,930
+ingin panggil lingkungan baru Anda.
+
+42
+00:02:58,950 --> 00:03:04,710
+Dalam contoh ini mereka memanggil lingkungan baru kepingan salju dan kemudian ruang dalam paket dasar atau
+
+43
+00:03:04,710 --> 00:03:08,430
+pustaka yang ingin Anda mulai dengan lingkungan baru itu.
+
+44
+00:03:08,430 --> 00:03:11,690
+Jika Anda tidak memasukkan paket di sini, Anda mungkin mendapatkan kesalahan.
+
+45
+00:03:11,730 --> 00:03:16,680
+Jadi sekali Anda memiliki perintah lengkap ini di command prompt atau terminal Anda setelah tentu saja menginstal
+
+46
+00:03:16,680 --> 00:03:20,420
+distribusi Anaconda dari Python Kano akan menanyakan Anda apakah Anda ingin melanjutkan.
+
+47
+00:03:20,430 --> 00:03:24,810
+Anda bisa mengetik Y untuk ya dan kemudian ini menciptakan lingkungan baru yang disebut.
+
+48
+00:03:24,810 --> 00:03:30,200
+Dalam hal ini kepingan salju yang berisi program atau paket BYO Python ini.
+
+49
+00:03:30,360 --> 00:03:36,150
+Jika Anda tidak menentukan versi Python tertentu, itu akan menggunakan versi dasar Python Anda.
+
+50
+00:03:36,150 --> 00:03:38,690
+Yang Anda unduh adalah anaconda.
+
+51
+00:03:38,820 --> 00:03:41,970
+Tetapi Anda sebenarnya dapat menentukan versi tertentu dari Python.
+
+52
+00:03:42,110 --> 00:03:44,100
+Ini akan menunjukkan kepada Anda bagaimana melakukannya juga.
+
+53
+00:03:44,100 --> 00:03:46,470
+Biarkan saya pergi ke depan dan melompat ke command prompt saya.
+
+54
+00:03:46,650 --> 00:03:49,820
+Letakkan di sini sehingga saya bisa memandu Anda melalui langkah-langkah ini.
+
+55
+00:03:50,190 --> 00:03:52,500
+OK jadi di sini adalah command prompt saya.
+
+56
+00:03:52,590 --> 00:03:58,410
+Saya akan pergi ke depan dan membuat lingkungan virtual kita akan menyebutnya Konda semua mengatakan kondominium membuat ruang
+
+57
+00:03:59,030 --> 00:04:05,700
+pertama yang akan saya katakan dasbor dan E untuk nama dan mari kita pergi ke depan dan menyebutnya hanya nama konyol
+
+58
+00:04:05,700 --> 00:04:11,280
+sehingga kita tahu kita Sebenarnya melakukan sesuatu dengan halus dan kemudian kita perlu meletakkan di perpustakaan untuk memulai
+
+59
+00:04:11,280 --> 00:04:11,890
+dengan.
+
+60
+00:04:12,030 --> 00:04:14,240
+Ayo masuk dan mulai dengan NUMP pi.
+
+61
+00:04:14,280 --> 00:04:19,770
+Karena itu akan menjadi salah satu perpustakaan pertama yang kita pelajari tentang cara saya memasukkan, mereka akan mengambil data
+
+62
+00:04:19,770 --> 00:04:20,530
+meta paket.
+
+63
+00:04:20,570 --> 00:04:24,170
+Mereka akan mendapatkan daftar apa yang perlu dipasang di Alaska jika Anda ingin melanjutkan.
+
+64
+00:04:24,420 --> 00:04:31,110
+Sekarang saya akan melanjutkan dan mengatakan mengapa untuk ya itu akan menghubungkan paket-paket tertentu bersama-sama dan kemudian mengekstrak apa yang
+
+65
+00:04:31,110 --> 00:04:32,150
+perlu diekstrak.
+
+66
+00:04:32,260 --> 00:04:33,990
+OK jadi itu sudah selesai sekarang.
+
+67
+00:04:34,010 --> 00:04:38,970
+Untuk mengaktifkan lingkungan ini saya dapat menggunakan mengaktifkan fluffy untuk menonaktifkan lingkungan ini.
+
+68
+00:04:38,970 --> 00:04:40,790
+Saya menggunakan de-aktifkan.
+
+69
+00:04:40,830 --> 00:04:46,920
+Biarkan saya masuk dan menunjukkan kepada Anda seperti apa versi dasar Python saya dibandingkan versi lingkungan Python
+
+70
+00:04:46,980 --> 00:04:48,330
+versi virtual ini.
+
+71
+00:04:48,330 --> 00:04:51,690
+Ingat lingkungan virtual ini hanya dimulai dengan pi.
+
+72
+00:04:51,840 --> 00:04:58,290
+Jadi jika saya cukup mengetikkan Python sekarang saya akan mendapatkan distribusi reguler Anaconda yang saya instal dalam kasus
+
+73
+00:04:58,560 --> 00:05:00,920
+ini adalah 2. 7.
+
+74
+00:05:00,930 --> 00:05:07,450
+Jadi misalnya jika saya melanjutkan dan mengatakan impor num pi as dan P masuk.
+
+75
+00:05:07,470 --> 00:05:12,770
+Itu berfungsi dengan baik jika saya mengatakan impor panderer sebagai PD masuk.
+
+76
+00:05:12,840 --> 00:05:14,470
+Itu juga berfungsi dengan baik.
+
+77
+00:05:14,550 --> 00:05:20,970
+Mari kita lanjutkan dan keluar dari ini sekarang dan saya akan sekarang mengaktifkan lingkungan virtual saya yang disebut
+
+78
+00:05:20,970 --> 00:05:27,450
+Fluffy dan sekarang Anda akan melihat bahwa di dalam tanda kurung dikatakan lembut yang membuat saya tahu bahwa saya
+
+79
+00:05:27,450 --> 00:05:30,060
+benar-benar di dalam lingkungan virtual berbulu .
+
+80
+00:05:30,060 --> 00:05:37,740
+Jadi jika saya mengatakan Python dan tekan enter saya mendapatkan versi yang sama dari Python 2. 7 bahwa distribusi basis saya adalah tetapi sesuatu yang menarik
+
+81
+00:05:38,040 --> 00:05:42,690
+akan terjadi ketika saya mencoba mengimpor beberapa barang untuk wasit penting dan
+
+82
+00:05:42,690 --> 00:05:46,280
+P Tidak mengimpor masalah karena saya tahu itu benar.
+
+83
+00:05:46,290 --> 00:05:53,860
+Aktifkan lingkungan virtual saya dengan jika saya mengatakan impor panda sebagai PD saya mendapatkan kesalahan impor.
+
+84
+00:05:53,880 --> 00:05:55,980
+Tidak ada modul bernama panderer.
+
+85
+00:05:56,010 --> 00:06:00,960
+Alasan untuk itu adalah karena lingkungan virtual ini tidak memiliki Pandurs di dalamnya.
+
+86
+00:06:00,960 --> 00:06:06,390
+Jika saya ingin benar-benar memastikan bahwa lingkungan virtual ini juga mengandung panda, saya harus
+
+87
+00:06:06,390 --> 00:06:14,720
+mengaktifkannya seperti yang telah saya lakukan dan kemudian katakan Konda instal ini di sini atau instal perpustakaan apa pun yang Anda inginkan, Jupiter
+
+88
+00:06:14,730 --> 00:06:17,140
+sikat pelajari tentang bermain langsung, dll.
+
+89
+00:06:17,430 --> 00:06:24,630
+Jadi saya akan melanjutkan dan menghapus ini jika saya ingin menonaktifkan fluffy dan kembali ke distribusi
+
+90
+00:06:24,630 --> 00:06:26,600
+Python saya yang asli.
+
+91
+00:06:26,730 --> 00:06:32,910
+Saya hanya mengatakan menonaktifkan enter dan menonaktifkan lingkungan virtual itu.
+
+92
+00:06:32,910 --> 00:06:38,430
+Sekarang kasus penggunaan aktif lain untuk lingkungan virtual adalah untuk menciptakan lingkungan yang menggunakan
+
+93
+00:06:38,430 --> 00:06:40,070
+versi Python yang berbeda.
+
+94
+00:06:40,200 --> 00:06:47,120
+Anda dapat melakukannya hanya dengan mengatakan Konda menciptakan akan masuk dan mengatakan dasbor dan tambahkan saya.
+
+95
+00:06:47,400 --> 00:06:54,150
+Anda juga dapat hanya mengatakan dasbor dan dasbor tunggal tetapi akan menampilkan hal dasbor dasbor hal lengkap mengatakan nama lingkungan
+
+96
+00:06:54,150 --> 00:06:55,570
+virtual yang Anda inginkan.
+
+97
+00:06:55,590 --> 00:06:58,080
+Kami akan melanjutkan dan memanggil lingkungan virtual ini.
+
+98
+00:06:58,140 --> 00:07:03,710
+Ruang versi python 3 saya.
+
+99
+00:07:03,900 --> 00:07:08,150
+Dan kemudian Anda mengatakan Python sama dengan 3. 5.
+
+100
+00:07:08,430 --> 00:07:14,220
+Dan di sini Anda memiliki opsi untuk hanya menempatkan di perpustakaan tunggal seperti pi.
+
+101
+00:07:14,430 --> 00:07:20,180
+Atau jika Anda ingin seluruh distribusi Anaconda, Anda dapat mengetikkan Anaconda di sini.
+
+102
+00:07:20,250 --> 00:07:25,570
+Itu butuh waktu agak lama karena ingat itulah seluruh distribusi Anaconda.
+
+103
+00:07:25,710 --> 00:07:27,730
+Jadi saya akan masuk dan hanya mengatakan pi.
+
+104
+00:07:27,780 --> 00:07:33,180
+Jadi ini akan terus maju dan lakukan adalah mengatakan Konda membuat lingkungan virtual baru ini yang disebut ruang versi
+
+105
+00:07:33,180 --> 00:07:37,590
+Python 3 saya Python sama dengan 3. 5 pi.
+
+106
+00:07:37,760 --> 00:07:40,500
+Masukkan Aku akan mengambil metadata paket lagi.
+
+107
+00:07:40,650 --> 00:07:43,040
+Ingat itu akan melakukan semua ini dengan Python 3.
+
+108
+00:07:43,140 --> 00:07:48,000
+Saya akan pergi ke depan dan mengatakan Mengapa ya itu akan mengambil paket pergi ke depan dan menyelesaikannya.
+
+109
+00:07:48,000 --> 00:07:55,410
+Sekarang saya akan melompat ke akhir ekstraksi dan instalasi dan sekarang sudah selesai.
+
+110
+00:07:55,650 --> 00:07:59,790
+Mari kita lanjutkan dan tampilkan saja mengetikkan Python.
+
+111
+00:08:00,090 --> 00:08:04,360
+Saya punya Python 2. 7 inilah distribusi basis saya.
+
+112
+00:08:04,410 --> 00:08:06,290
+Saya akan pergi ke depan dan berhenti itu.
+
+113
+00:08:06,390 --> 00:08:08,500
+Sekarang mari kita lanjutkan dan periksa lingkungan saya.
+
+114
+00:08:08,520 --> 00:08:16,170
+Saya dapat mengatakan Kondo dasbor dasbor info dan v s dan perintah ini akan mencantumkan lingkungan saya di sini saya telah
+
+115
+00:08:16,170 --> 00:08:19,680
+mengembang di lingkungan contoh lain yang saya buat sebelumnya.
+
+116
+00:08:19,680 --> 00:08:25,800
+Python 3 saya versi py 3: 5 yang merupakan lingkungan lain yang saya miliki dan kemudian versi root saya dari Python.
+
+117
+00:08:26,010 --> 00:08:27,020
+Anda bisa lihat ada awalnya.
+
+118
+00:08:27,030 --> 00:08:28,080
+Tunjukkan itu.
+
+119
+00:08:28,080 --> 00:08:32,570
+Jadi, jika Anda membuka buku catatan Jupiter dan Anda melihat sesuatu seperti Python Roop, itu
+
+120
+00:08:32,580 --> 00:08:33,270
+artinya akarnya.
+
+121
+00:08:33,300 --> 00:08:35,300
+Instalasi Python.
+
+122
+00:08:35,340 --> 00:08:42,600
+Mari kita lanjutkan dan mengaktifkan lingkungan versi Python 3 saya.
+
+123
+00:08:42,840 --> 00:08:43,710
+Memasukkan.
+
+124
+00:08:43,710 --> 00:08:45,910
+Anda akan melihat versi Python 3 saya.
+
+125
+00:08:45,930 --> 00:08:49,260
+Sekarang jika saya memanggil Python di dalam lingkungan virtual ini.
+
+126
+00:08:49,290 --> 00:08:51,580
+Perhatikan bahwa saya mendapatkan Python 3. 5.
+
+127
+00:08:51,610 --> 00:08:57,840
+Jadi jika Anda benar-benar dapat menentukan bahwa Anda ingin versi Python yang berbeda dengan mengatakan Python sama dengan dan kemudian nomor versi
+
+128
+00:08:57,930 --> 00:09:01,080
+apa pun yang Anda inginkan ketika Anda membuat lingkungan virtual itu.
+
+129
+00:09:01,080 --> 00:09:07,240
+Jadi jika saya melakukan sesuatu seperti 1 dibagi dua saya mendapatkan 0. 5 yang bukan merupakan kasus untuk Python 2.
+
+130
+00:09:07,680 --> 00:09:09,900
+OK jadi hanya itu yang perlu Anda ketahui.
+
+131
+00:09:09,930 --> 00:09:15,930
+Sejauh menciptakan lingkungan virtual, tautan sumber daya pada dasarnya memiliki semua yang Anda ingin
+
+132
+00:09:15,930 --> 00:09:20,440
+tahu seperti mengubah lingkungan, mengkloning lingkungan, menghapus lingkungan, dll.
+
+133
+00:09:20,640 --> 00:09:21,930
+Cukup mudah.
+
+134
+00:09:21,930 --> 00:09:26,070
+Jadi sekarang Anda tahu semua yang kami bahas dalam kuliah ini, Anda dapat melanjutkan dan
+
+135
+00:09:26,070 --> 00:09:27,820
+referensi dokumentasi yang Anda butuhkan.
+
+136
+00:09:27,840 --> 00:09:31,870
+Sekali lagi ini hanya kuliah opsional jika Anda ingin membuat lingkungan virtual Anda sendiri.
+
+137
+00:09:31,920 --> 00:09:36,990
+Saya sarankan Anda membuat lingkungan virtual hanya untuk memastikan bahwa semua perpustakaan Anda adalah
+
+138
+00:09:36,990 --> 00:09:38,510
+versi yang Anda inginkan.
+
+139
+00:09:38,520 --> 00:09:44,190
+Jadi jika Anda ingin melanjutkan kursus ini, silakan dan buat lingkungan virtual yang disebut ilmu
+
+140
+00:09:44,220 --> 00:09:46,520
+data saya atau sesuatu seperti itu.
+
+141
+00:09:46,530 --> 00:09:47,160
+Baiklah.
+
+142
+00:09:47,190 --> 00:09:49,860
+Semoga Anda menikmati kuliah ini dan saya akan melihat Anda di yang berikutnya.
+
+143
+00:09:49,860 --> 00:09:51,230
+Terimakasih semuanya.

@@ -1,0 +1,359 @@
+1
+00:00:05,280 --> 00:00:09,960
+Bună ziua tuturor și bine ați venit în grup prin prelegere pentru panda în această lecție vă
+
+2
+00:00:09,960 --> 00:00:15,530
+vom arăta cum să utilizați grupul după metodă pentru a aprinde împreună un grup de rânduri de date și apela funcții agregate.
+
+3
+00:00:15,540 --> 00:00:20,850
+Acum, înainte de a sari de fapt în notebook-ul Jupiter Permiteți-mi să explic cât mai rapid grupul de cumpărători, în
+
+4
+00:00:20,850 --> 00:00:25,950
+cazul în care nu aveți experiență secundară sau experiența dvs. sau cei mai mulți oameni sunt familiarizați cu
+
+5
+00:00:25,950 --> 00:00:28,300
+ceea ce face într-adevăr o declarație GROUP BY.
+
+6
+00:00:28,560 --> 00:00:34,890
+Pentru ao pune pur și simplu grupată, vă permite să grupați rândurile bazate pe o coloană și apoi să efectuați un
+
+7
+00:00:34,890 --> 00:00:36,840
+fel de funcție agregată pe ele.
+
+8
+00:00:37,080 --> 00:00:43,390
+De exemplu, în acest exemplu aici avem trei partiții de IDS unul câte două și trei.
+
+9
+00:00:43,470 --> 00:00:50,220
+Și apoi avem câteva valori pentru care putem grupa prin coloana ID și le putem agrega folosind un fel
+
+10
+00:00:50,220 --> 00:00:56,130
+de funcție agregată în fiecare funcție este de fapt doar un termen fantezist pentru orice funcție care
+
+11
+00:00:56,130 --> 00:01:03,060
+ia și multe valori și apoi scapă sau iese o singură valoare cum ar fi luarea sumei unei mulțimi de
+
+12
+00:01:03,330 --> 00:01:07,680
+valori și transmiterea rezultatelor sau luarea abaterii medii sau standard etc.
+
+13
+00:01:07,800 --> 00:01:13,950
+Acestea sunt toate funcții agregate și acest lucru este un grup de metode care vă permite să alegeți o coloană
+
+14
+00:01:13,950 --> 00:01:14,950
+la Grup de.
+
+15
+00:01:15,000 --> 00:01:18,250
+Acesta adună toate rândurile împreună bazându-se pe acea valoare a coloanei.
+
+16
+00:01:18,440 --> 00:01:21,330
+Și apoi efectuați un fel de funcție agregată pe ea.
+
+17
+00:01:21,360 --> 00:01:22,160
+In regula.
+
+18
+00:01:22,200 --> 00:01:25,980
+Dar, spunând asta, să mergem mai departe și să învățăm cum să folosim GROUP BY cu panda.
+
+19
+00:01:26,010 --> 00:01:28,820
+Am de gând să merg și să trec la notebook-ul Jupiter.
+
+20
+00:01:28,860 --> 00:01:31,390
+Bine, așa că suntem la notebook-ul Jupiter.
+
+21
+00:01:31,530 --> 00:01:34,650
+Am mers înainte și am copiat și lipit această linie de date.
+
+22
+00:01:34,660 --> 00:01:40,350
+Este în esență doar un dicționar din notebook și această carte de note este numită doar de
+
+23
+00:01:40,350 --> 00:01:41,710
+unul dintre dosarele pandas.
+
+24
+00:01:41,760 --> 00:01:47,750
+OK puteți merge mai departe și tastați acest lucru manual, dar aș spune doar mergeți mai departe și copiați aceste date doar
+
+25
+00:01:47,780 --> 00:01:54,780
+un dicționar și apoi puteți merge mai departe și să spună PD cadru de date și apoi treceen acel dicționar de date și ar trebui
+
+26
+00:01:54,780 --> 00:01:58,040
+să creați apoi automat un cadru de date care arată așa.
+
+27
+00:01:58,050 --> 00:01:59,900
+Și, în principiu, aceasta este doar o informație făcută.
+
+28
+00:02:00,000 --> 00:02:03,170
+Avem o coloană de companie cu trei coduri de companie.
+
+29
+00:02:03,330 --> 00:02:05,390
+Google Microsoft și Facebook.
+
+30
+00:02:05,520 --> 00:02:08,750
+Acum avem o coloană cu o grămadă de oameni unici în ea.
+
+31
+00:02:08,910 --> 00:02:13,460
+Și apoi avem câteva numere de vânzări 200 120 etc.
+
+32
+00:02:13,590 --> 00:02:19,020
+Acum, ceea ce putem face este să folosim acest grup după metodă pentru a grupa rândurile împreună bazându-se
+
+33
+00:02:19,020 --> 00:02:25,950
+pe un nume de coloană, de exemplu, să mergem mai departe și să grupăm compania pe care o voi continua și să o spun ZF
+
+34
+00:02:25,950 --> 00:02:32,070
+și apoi să spuneți grupul prin apel ca și veți trece în coloana pe care doriți să o grupați în acest caz.
+
+35
+00:02:32,070 --> 00:02:38,240
+Vreau un grup de coloana companiei și observați ceea ce voi ieși aici, doar fac asta.
+
+36
+00:02:38,400 --> 00:02:43,100
+Voi obtine un grup de obiect si doar arata unde este stocat in memorie.
+
+37
+00:02:43,350 --> 00:02:51,750
+Ce pot face este să stocați acest lucru ca o nouă variabilă, astfel încât să pot spune ceva de genul că vine
+
+38
+00:02:51,750 --> 00:02:55,290
+pentru compania mea și am acest grup de obiect.
+
+39
+00:02:55,290 --> 00:02:58,250
+Apoi, al doilea pas de utilizare a grupului By.
+
+40
+00:02:58,250 --> 00:03:03,090
+După ce ați grupat în coloana respectivă, trebuie să mergeți înainte și să apelați la un anumit fel de funcție agregată.
+
+41
+00:03:03,420 --> 00:03:10,320
+De exemplu, dacă vroiam să obțin media în funcție de companie, s-ar uita la coloana de vânzări și mi-ar da o
+
+42
+00:03:10,320 --> 00:03:13,310
+medie sau o medie de vânzare de către companie.
+
+43
+00:03:13,320 --> 00:03:18,180
+Motivul pentru care nu se poate face acest lucru pentru coloana persoanei se datorează faptului că acestea sunt șiruri
+
+44
+00:03:18,180 --> 00:03:23,490
+de caractere și nu există nicio modalitate prin care să puteți lua doar media unui șir și asta înseamnă că pandererii ignoră
+
+45
+00:03:23,610 --> 00:03:26,060
+automat în mod automat orice este o coloană non-numerică.
+
+46
+00:03:26,070 --> 00:03:32,520
+De asemenea, putem merge mai departe și putem îndeplini și alte funcții agregate, cum ar fi unele din toate în ceea ce
+
+47
+00:03:32,520 --> 00:03:33,760
+privește vânzările pe companie.
+
+48
+00:03:33,990 --> 00:03:42,900
+Poți chiar să faci abateri standard de la Vestey etc. și ar trebui să observați că ceea ce primesc înapoi este
+
+49
+00:03:42,900 --> 00:03:48,760
+un cadru real de date cu un index numit Companie și valoarea coloanei de vânzări.
+
+50
+00:03:49,110 --> 00:03:55,920
+Și asta înseamnă că aș putea face lucruri cum ar fi oferta de index, așa că aș putea spune prin vino
+
+51
+00:03:55,920 --> 00:04:02,430
+să mergem înainte și să rezumăm toate vânzările de companie, astfel încât unele vânzări de companie și apoi am putea
+
+52
+00:04:02,850 --> 00:04:06,440
+chiar a apela ceva de genul Dot ellos C F B.
+
+53
+00:04:07,000 --> 00:04:13,600
+Și asta mi-a dat vânzările câteva din Facebook acum de multe ori ceea ce vei face nu este
+
+54
+00:04:13,710 --> 00:04:17,510
+de fapt, stabilirea acestui grup de obiect ca o variabilă.
+
+55
+00:04:17,550 --> 00:04:19,670
+Probabil că veți numi toate acestea într-o singură linie.
+
+56
+00:04:19,710 --> 00:04:25,140
+Odată ce începeți să vă simțiți foarte confortabil cu pantless ei vor spune ceva de genul grup de companie,
+
+57
+00:04:25,830 --> 00:04:27,920
+atunci vă sunați ceva ca unii.
+
+58
+00:04:28,110 --> 00:04:35,160
+Și dacă vrei doar pentru Facebook, ești apelul FBI și asta e tot același lucru într-o singură
+
+59
+00:04:35,160 --> 00:04:36,420
+linie acum.
+
+60
+00:04:36,660 --> 00:04:41,850
+Unele alte funcții agregate utile pe care le-ați putea găsi sunt lucruri precum numărul care
+
+61
+00:04:41,850 --> 00:04:44,570
+contează doar numărul de instanțe sau coloană.
+
+62
+00:04:44,730 --> 00:04:49,890
+În acest caz, a reușit să returneze coloana persoanei deoarece poate conta
+
+63
+00:04:49,890 --> 00:04:53,420
+câte cazuri apar în respectiva coloană sau companie.
+
+64
+00:04:53,430 --> 00:04:57,360
+Deci, avem doi oameni și au câte două vânzări și asta are sens.
+
+65
+00:04:57,360 --> 00:05:00,190
+Puteți face și lucruri precum max și min.
+
+66
+00:05:00,960 --> 00:05:07,080
+Și rețineți că, de asemenea, returnează persoana pentru că Python este capabil să stocheze lucrurile în ordine alfabetică și asta este în
+
+67
+00:05:07,080 --> 00:05:09,410
+esență ceea ce încerc să arăt aici.
+
+68
+00:05:09,480 --> 00:05:17,220
+Max este cel mai recent spre sfârșitul alfabetului și dacă apelați la cea mai veche din alfabetul C și
+
+69
+00:05:17,220 --> 00:05:19,570
+C, avem agenții de aici.
+
+70
+00:05:19,800 --> 00:05:23,310
+Cu toate acestea, probabil că nu ar trebui să utilizați min sau max cu o coloană de șir.
+
+71
+00:05:23,310 --> 00:05:27,320
+Probabil că veți folosi toate aceste funcții furioase cu coloane numerice.
+
+72
+00:05:27,330 --> 00:05:34,440
+Un ultim lucru util pe care vreau să-l arăt cu grupul este de multe ori puteți utiliza GROUP BY cu metoda descrisă
+
+73
+00:05:35,160 --> 00:05:42,010
+și care vă oferă o grămadă de informații utile la o dată, astfel încât să puteți spune grupul de gândire ZF
+
+74
+00:05:42,030 --> 00:05:47,730
+de către numele companiei și apoi spune scribul și vă va oferi o grămadă de informații.
+
+75
+00:05:47,730 --> 00:05:53,230
+De exemplu, pentru a calcula media abaterea standard a barbatilor si a valorilor max, precum si valorile
+
+76
+00:05:53,250 --> 00:05:55,060
+de baza pentru fiecare companie.
+
+77
+00:05:55,170 --> 00:05:59,490
+Și dacă nu vă place acest format și de fapt puteți transpune acest
+
+78
+00:06:00,060 --> 00:06:08,330
+lucru astfel încât să puteți spune ceva de genul acesta transpune dacă preferați fiecare companie să fie o coloană în loc de un index real.
+
+79
+00:06:08,520 --> 00:06:13,530
+Deci, indiferent de formatul pe care-l placi mai bine, poți descrie acest lucru și apoi poți chiar să apelezi numele coloanelor
+
+80
+00:06:13,530 --> 00:06:14,260
+din asta.
+
+81
+00:06:14,280 --> 00:06:18,780
+Dacă sunteți interesat doar de o singură companie sau o singură coloană.
+
+82
+00:06:18,840 --> 00:06:21,150
+Bine, asta e cu adevărat pentru grup.
+
+83
+00:06:21,150 --> 00:06:21,920
+Este destul de simplu.
+
+84
+00:06:21,930 --> 00:06:28,800
+Doar apelați cadrul de date spunând că grupul Dopp este grupat în coloana pe care doriți să o grupați
+
+85
+00:06:28,800 --> 00:06:34,140
+și apoi orice metodă agregată doriți să agregați valorile coloanelor la o singură valoare.
+
+86
+00:06:34,140 --> 00:06:39,060
+De obicei, aceasta funcționează numai pe coloane numerice, în funcție de tipul de funcție agregată cu
+
+87
+00:06:39,060 --> 00:06:39,720
+care lucrați.
+
+88
+00:06:39,720 --> 00:06:45,450
+Veți beneficia de mult mai multă practică de grup în timpul exercițiilor și al proiectelor de capsulă.
+
+89
+00:06:45,960 --> 00:06:46,480
+In regula.
+
+90
+00:06:46,620 --> 00:06:48,480
+Multumesc tuturor si te voi vedea la urmatoarea conferinta

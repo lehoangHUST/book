@@ -1,0 +1,335 @@
+1
+00:00:05,520 --> 00:00:06,990
+Halo semuanya juga.
+
+2
+00:00:06,990 --> 00:00:11,290
+Bagian kedua dari seri kuliah peta kloroplas ini di bagian 2.
+
+3
+00:00:11,290 --> 00:00:14,640
+Kami akan fokus pada peta berskala internasional atau dunia.
+
+4
+00:00:14,730 --> 00:00:19,860
+Bagian 1 yang merupakan kuliah terakhir yang kami fokuskan pada peta choropleth AS dan nasional.
+
+5
+00:00:19,860 --> 00:00:24,900
+Sekarang kita akan maju dan mengubahnya ke tingkat internasional dunia.
+
+6
+00:00:24,900 --> 00:00:28,980
+Ayo maju dan lompat ke notebook Jupiter untuk memulai.
+
+7
+00:00:28,980 --> 00:00:29,280
+Baiklah.
+
+8
+00:00:29,280 --> 00:00:31,280
+Di sini saya di notebook Jupiter.
+
+9
+00:00:31,320 --> 00:00:35,950
+Terakhir kali kami berhenti di U. S. ekspor pertanian oleh negara.
+
+10
+00:00:36,030 --> 00:00:42,510
+Mari kita lanjutkan dan beralih ke dataset kami berikutnya yang merupakan data GDP dunia ditetapkan
+
+11
+00:00:42,600 --> 00:00:48,980
+untuk maju dan berkomentar plot terakhir dan mengatakan itu fisik untuk PD membaca CSP.
+
+12
+00:00:49,000 --> 00:00:57,210
+Sekarang kita akan pergi ke depan dan membuka kumpulan data PDB Dunia 2014 dan kemudian memeriksa kepala data
+
+13
+00:00:57,210 --> 00:00:58,020
+itu.
+
+14
+00:00:58,310 --> 00:01:01,540
+Kami memiliki PDB nama negara dalam miliaran.
+
+15
+00:01:01,590 --> 00:01:03,410
+Dan kemudian kode negara.
+
+16
+00:01:03,510 --> 00:01:08,910
+Jadi katakan saja kode standar untuk negara-negara internasional pada dasarnya sama dengan kode negara yang
+
+17
+00:01:08,910 --> 00:01:10,170
+kita lihat sebelumnya.
+
+18
+00:01:10,320 --> 00:01:16,020
+Kita akan pergi ke depan dan menggunakan nilai ini negara PDB sebagai mungkin teks dan
+
+19
+00:01:16,020 --> 00:01:20,130
+kemudian kode adalah pasan kode aktual untuk pemetaan karang plus.
+
+20
+00:01:20,700 --> 00:01:24,780
+Mari kita mulai dan mulai membuat variabel data kami.
+
+21
+00:01:24,780 --> 00:01:36,020
+Sekali lagi kita menyebutnya kamus kita mengatakan tipe sama dengan Perl Plath sama seperti yang kita lakukan terakhir kali.
+
+22
+00:01:36,050 --> 00:01:47,760
+Silakan dan katakan lokasi dan lokasi akan sama dengan kolom kode maka untuk nilai z kita akan
+
+23
+00:01:47,760 --> 00:01:54,400
+maju dan menetapkan yang sama dengan PDB dalam miliaran.
+
+24
+00:01:54,420 --> 00:02:00,000
+Kami akan pergi ke depan dan mengatur teks sama dengan kolom negara di bingkai data
+
+25
+00:02:02,700 --> 00:02:07,190
+dan kemudian kami akan pergi ke depan dan mengatur argumen bilah warna.
+
+26
+00:02:07,190 --> 00:02:11,610
+Dan di sini kita memiliki kamus tempat kita lewat dan
+
+27
+00:02:11,610 --> 00:02:19,320
+judul memiliki kunci dan kemudian nilai string untuk judul dan kita hanya akan mengatakan PDB dalam miliaran dolar AS.
+
+28
+00:02:19,320 --> 00:02:23,260
+Dan itu adalah objek data kami.
+
+29
+00:02:23,310 --> 00:02:30,590
+Dan sekarang untuk variabel lay out kita akan melanjutkan dan mengatakan casting adalah kamus.
+
+30
+00:02:31,080 --> 00:02:38,820
+Kami akan menetapkan judul sama dengan string PDB global 2014 dan hal berikutnya
+
+31
+00:02:41,490 --> 00:02:46,890
+yang akan kami lakukan adalah menetapkan Geo sama dengan.
+
+32
+00:02:46,950 --> 00:02:56,370
+Dan kemudian itu tidak akan menjadi kamus lain dan pergi dan mengatakan bingkai pertunjukan Saya
+
+33
+00:02:56,370 --> 00:03:04,620
+benar-benar meletakkan ini pada baris yang sama dengan bingkai pertunjukan sama palsu
+
+34
+00:03:04,770 --> 00:03:10,230
+Untuk saat ini dan argumen selanjutnya yang akan kita katakan adalah proyeksi.
+
+35
+00:03:10,230 --> 00:03:12,160
+Dan Anda dapat referensi dokumentasi.
+
+36
+00:03:12,420 --> 00:03:20,990
+Tetapi untuk saat ini kita hanya akan menetapkan standar proyeksi dokumentasi yang merupakan Amerika atau alur proyeksi
+
+37
+00:03:21,000 --> 00:03:24,310
+ini seperti kamus yang siap digunakan.
+
+38
+00:03:24,630 --> 00:03:30,400
+Mari kita lanjutkan dan mengatakan Koro map 3 sama dengan.
+
+39
+00:03:30,430 --> 00:03:33,010
+Sosok pergi.
+
+40
+00:03:33,180 --> 00:03:41,650
+Data sama dengan data yang dikirimkan sebagai daftar item tunggal dan kemudian lay out sama dengan lay out.
+
+41
+00:03:42,660 --> 00:03:46,870
+Dan kemudian kita bisa memanggil plot pada peta karang 3.
+
+42
+00:03:47,580 --> 00:03:55,200
+Dan di sini kita memiliki PDB global 2014 dan Anda dapat melihat bahwa skala di sini pada dasarnya hanya menunjukkan
+
+43
+00:03:55,260 --> 00:04:00,630
+outlier utama yaitu Amerika Serikat Cina dan beberapa dari mereka adalah negara sabuk
+
+44
+00:04:00,630 --> 00:04:03,570
+atau negara populasi lebih besar di dunia.
+
+45
+00:04:03,570 --> 00:04:08,490
+Sekarang, seperti yang telah saya sebutkan beberapa kali untuk melakukan perencanaan seperti ini pada Anda
+
+46
+00:04:08,490 --> 00:04:12,690
+sendiri, Anda mungkin harus referensi dokumentasi atau notebook Jupiter dan saya ingin
+
+47
+00:04:12,690 --> 00:04:14,740
+mengeksplorasi referensi itu dengan Anda.
+
+48
+00:04:14,850 --> 00:04:20,100
+Anda dapat melanjutkan dan mengklik tautan yang disediakan di buku catatan Jupiter atau langsung saja menggambar
+
+49
+00:04:20,100 --> 00:04:21,780
+referensi slash slash Python.
+
+50
+00:04:21,990 --> 00:04:27,810
+Dan di sini pada dasarnya adalah referensi lengkap untuk semua argumen yang dapat Anda sampaikan ke semua tipe plot
+
+51
+00:04:27,810 --> 00:04:33,090
+tanpa plot dan Anda dapat menggulir ke bawah di sini ke bagian peta dan klik pada kloroplas
+
+52
+00:04:33,090 --> 00:04:38,750
+untuk sampai ke bagian inti plus dan Anda dapat melihat berbagai argumen yang Anda dapat lewat di sini
+
+53
+00:04:38,760 --> 00:04:42,780
+dan Anda dapat memeriksa sesuatu seperti misalnya proyeksi kita lanjutkan di sini.
+
+54
+00:04:42,900 --> 00:04:44,860
+Atau kita bisa mencarinya.
+
+55
+00:04:45,390 --> 00:04:51,580
+Jadi saya bisa mencari proyeksi yang saya tahu ada di sini dan kita bisa mengetik dan di sini kita di bawah kloroplas dan
+
+56
+00:04:51,690 --> 00:04:54,860
+kita bisa terus maju dan lulus dan mungkin jenis proyeksi lain.
+
+57
+00:04:55,200 --> 00:05:02,080
+Itu berarti kita bisa mengambil salah satu dari string ini dan hanya mengambil yang ini adalah jenis proyeksi lain.
+
+58
+00:05:02,100 --> 00:05:07,830
+Saya hanya datang ke sini mengganti string dan kemudian jalankan plot ini lagi.
+
+59
+00:05:07,830 --> 00:05:10,350
+Dan sekarang saya memiliki tipe proyeksi yang berbeda.
+
+60
+00:05:10,390 --> 00:05:13,270
+Perhatikan di sini bagaimana negara dibentuk sedikit berbeda.
+
+61
+00:05:13,270 --> 00:05:19,080
+Anda dapat melanjutkan dan terus mengeksplorasi ini seperti proyeksi stereografi datang ke sini.
+
+62
+00:05:19,080 --> 00:05:25,530
+Salin dan tempel dan jalankan kembali dan itu pada dasarnya apa yang Anda lakukan ketika Anda seperti bermain-main
+
+63
+00:05:25,560 --> 00:05:27,160
+dan menjelajahi perpustakaan ini.
+
+64
+00:05:27,390 --> 00:05:30,600
+Jadi, inilah proyeksi lain yang sebenarnya bisa Anda putar.
+
+65
+00:05:30,600 --> 00:05:34,100
+Agak aneh, ini semacam perasaan dunia terbalik.
+
+66
+00:05:34,290 --> 00:05:38,110
+Mereka dapat melanjutkan dan bermain di sekitar ini dan menjelajahinya sendiri.
+
+67
+00:05:38,370 --> 00:05:43,920
+Salah satu proyeksi yang bagus untuk dilihat adalah proyeksi bumi alami yang jika Anda teruskan
+
+68
+00:05:43,920 --> 00:05:51,360
+saja dan meneruskannya di sini bumi alami dan kemudian jalankan ini lagi, pada dasarnya Anda akan mendapatkan bumi yang tampak alami
+
+69
+00:05:51,960 --> 00:05:57,690
+dan Anda dapat melewatinya dan mendinginkannya, dan Anda dapat melihat rotasi di sini di planet ini.
+
+70
+00:05:58,140 --> 00:05:58,560
+BAIK.
+
+71
+00:05:58,650 --> 00:06:00,720
+Silakan menjelajahi dokumentasi.
+
+72
+00:06:00,750 --> 00:06:05,790
+Itu adalah bagian besar dari belajar bagaimana menggunakan kebanyakan jenis karang yang lebih
+
+73
+00:06:05,790 --> 00:06:09,060
+rumit ini, memplot perpustakaan, dan kemampuan Watley.
+
+74
+00:06:09,090 --> 00:06:13,860
+Seperti yang saya sebutkan sebelumnya sedikit ini harus dilakukan untuk data Anda
+
+75
+00:06:13,860 --> 00:06:20,490
+terlihat seperti jika data Anda tidak dalam format yang dapat diterima plot Anda mungkin harus pergi untuk menggunakan di
+
+76
+00:06:20,690 --> 00:06:26,730
+perpustakaan plot geografis lain tetapi mudah-mudahan Anda dapat mengkonversi kode negara atau nama negara ke dalam format
+
+77
+00:06:26,730 --> 00:06:28,740
+yang dapat diterima untuk Watley.
+
+78
+00:06:28,740 --> 00:06:30,380
+Baiklah itu saja untuk kuliah ini.
+
+79
+00:06:30,390 --> 00:06:36,870
+Saya harap Anda menikmatinya dan melihat kekuatan plotline meskipun sintaksisnya sedikit sulit untuk hanya beberapa
+
+80
+00:06:36,870 --> 00:06:38,450
+baris kode saja.
+
+81
+00:06:38,460 --> 00:06:42,570
+Maksud saya ini hanya sekitar 15 baris kode bahkan mungkin kurang.
+
+82
+00:06:42,660 --> 00:06:49,020
+Anda sebenarnya dapat membuat visualisasi interaktif yang terlihat sangat bagus pada skala
+
+83
+00:06:49,020 --> 00:06:50,160
+internasional geografis.
+
+84
+00:06:50,160 --> 00:06:53,160
+Baiklah, terima kasih semuanya dan sampai jumpa di kuliah berikutnya

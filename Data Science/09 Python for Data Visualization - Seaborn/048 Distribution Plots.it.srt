@@ -1,0 +1,1031 @@
+1
+00:00:05,040 --> 00:00:10,260
+Salve a tutti e benvenuti alla conferenza sulla trama di distribuzione per Seaborn, in questa conferenza parleremo
+
+2
+00:00:10,260 --> 00:00:15,990
+di diversi tipi di trama con Seaborn che ci consentono di visualizzare la distribuzione di un set di dati.
+
+3
+00:00:16,530 --> 00:00:20,170
+Andiamo avanti e saltiamo sul taccuino di Giove per iniziare.
+
+4
+00:00:21,270 --> 00:00:23,370
+OK, eccomi al taccuino.
+
+5
+00:00:23,370 --> 00:00:29,740
+Voglio iniziare importando via mare e per convenzione importiamo Seaborn asinus.
+
+6
+00:00:29,970 --> 00:00:35,430
+E visto che sono sul quaderno, vado avanti e dico che la trama di Matt è in linea in quel
+
+7
+00:00:35,430 --> 00:00:38,340
+modo che posso vedere sono le visualizzazioni all'interno del notebook.
+
+8
+00:00:38,880 --> 00:00:39,210
+Tutto ok.
+
+9
+00:00:39,210 --> 00:00:44,040
+Ora prendiamo alcuni dati che una trama di bordo arriva con alcuni set di dati integrati
+
+10
+00:00:44,040 --> 00:00:45,220
+che puoi caricare direttamente.
+
+11
+00:00:45,840 --> 00:00:50,480
+E ho intenzione di prendere un suggerimento chiamato e salvarlo come un frame di dati chiamato suggerimenti.
+
+12
+00:00:50,640 --> 00:00:58,210
+Puoi farlo semplicemente dicendo che Tipps è uguale a Asinus carica set di dati e quindi passa i suggerimenti come una stringa.
+
+13
+00:00:59,280 --> 00:01:04,560
+E questo caricherà il set di dati dei suggerimenti e quindi posso effettivamente controllare la testa dello stato del
+
+14
+00:01:04,560 --> 00:01:06,050
+frame e sembra qualcosa del genere.
+
+15
+00:01:06,150 --> 00:01:11,580
+Ci sono sette colonne qui e questo è fondamentalmente solo dati riferiti a persone che hanno mangiato e
+
+16
+00:01:11,580 --> 00:01:13,540
+poi hanno lasciato un suggerimento in seguito.
+
+17
+00:01:13,560 --> 00:01:19,350
+Quindi hai il prezzo totale o il conto del pasto quanto la sinistra, come la mancia del genere o del sesso della
+
+18
+00:01:19,350 --> 00:01:24,620
+persona che lascia il suggerimento, indipendentemente dal fatto che fossero fumatori o che giorno e ora mangiavano il loro pasto.
+
+19
+00:01:24,660 --> 00:01:27,030
+E poi la dimensione della festa.
+
+20
+00:01:27,030 --> 00:01:27,380
+Tutto ok.
+
+21
+00:01:27,420 --> 00:01:34,590
+Andiamo avanti e discutiamo del nostro primo tipo di trama che è questa trama di CISC della trama che questa trama
+
+22
+00:01:34,590 --> 00:01:39,720
+ci permette di mostrare la distribuzione di un insieme univariato di osservazioni e sai bene
+
+23
+00:01:39,720 --> 00:01:43,610
+che è solo un modo diverso di dire una sola variabile.
+
+24
+00:01:43,620 --> 00:01:45,350
+Entriamo ed esploriamo questo.
+
+25
+00:01:45,390 --> 00:01:51,870
+Sto per dire che Asinus ha pensato a questa trama e quindi per questa trama quello che fai è che passi in una singola
+
+26
+00:01:51,870 --> 00:01:53,580
+colonna del tuo frame di dati.
+
+27
+00:01:53,850 --> 00:01:57,610
+In questo caso andiamo avanti e vediamo come viene distribuito il conto totale.
+
+28
+00:01:58,130 --> 00:02:03,690
+Quindi dirò il conto totale e quindi eseguirò la cella e dovresti ottenere una trama simile a questa.
+
+29
+00:02:03,930 --> 00:02:06,100
+Se ricevi un avvertimento qui non ti preoccupare.
+
+30
+00:02:06,120 --> 00:02:08,900
+Che in realtà deve fare se un altro pacchetto chiamato modelli di stat.
+
+31
+00:02:09,000 --> 00:02:11,220
+Non influenzerà il tuo codice Seaborn attuale.
+
+32
+00:02:11,520 --> 00:02:13,810
+Ma qui non abbiamo alcun avvertimento quindi stiamo bene.
+
+33
+00:02:14,220 --> 00:02:20,990
+Si noti qui che ottengo fondamentalmente un istogramma e ciò che è noto come una stima della densità del kernel
+
+34
+00:02:21,000 --> 00:02:22,420
+è la linea qui.
+
+35
+00:02:22,530 --> 00:02:26,460
+Più avanti in questa conferenza parleremo di cosa sia questa Katie e di come possiamo
+
+36
+00:02:26,460 --> 00:02:27,090
+effettivamente crearla.
+
+37
+00:02:27,150 --> 00:02:34,680
+Ma per ora possiamo rimuoverlo se vogliamo dire come argomento aggiuntivo qui Katie è uguale a false.
+
+38
+00:02:36,870 --> 00:02:39,060
+E semplicemente digitando Katy è falso.
+
+39
+00:02:39,060 --> 00:02:44,700
+Ora in pratica hai solo un istogramma e un istogramma è essenzialmente solo una distribuzione di dove si trova
+
+40
+00:02:44,700 --> 00:02:46,010
+il tuo conto totale.
+
+41
+00:02:46,170 --> 00:02:52,020
+Quindi puoi vedere qui che sull'asse y hai un conteggio e poi hai queste barre sull'asse X
+
+42
+00:02:52,050 --> 00:02:52,780
+come bin.
+
+43
+00:02:52,890 --> 00:02:58,940
+E questo in pratica significa che la maggior parte delle bollette totali sono comprese tra $ 10 e $ 20.
+
+44
+00:02:59,000 --> 00:03:03,510
+E se vuoi avere un po 'più di informazioni su questo puoi cambiare il numero di contenitori
+
+45
+00:03:03,510 --> 00:03:09,750
+in modo da poter andare avanti e c'è un terzo argomento Sabin e quindi il numero appropriato di offerte e il numero dipende
+
+46
+00:03:09,750 --> 00:03:11,240
+molto dal set di dati.
+
+47
+00:03:11,400 --> 00:03:14,820
+Ma andiamo a scegliere 30 per ora.
+
+48
+00:03:14,820 --> 00:03:19,440
+definizione e possiamo ancora vedere che la maggior parte delle fatture si verifica tra 10 e 20.
+
+49
+00:03:19,440 --> 00:03:21,560
+E ora possiamo ottenere un po 'più di
+
+50
+00:03:21,900 --> 00:03:28,490
+Se scegli un valore troppo alto, ad esempio andiamo avanti e mettiamo in 100, inizierai a
+
+51
+00:03:28,500 --> 00:03:35,250
+ottenere uno scenario strano in cui essenzialmente inizi a tracciare ogni singola istanza di fatture per ogni
+
+52
+00:03:36,090 --> 00:03:37,640
+singolo punto di prezzo.
+
+53
+00:03:37,650 --> 00:03:43,740
+Quindi di solito voglio provare a trovare un equilibrio in termini di dimensioni, ma questo dipende molto dalla trama stessa.
+
+54
+00:03:43,770 --> 00:03:44,070
+OK.
+
+55
+00:03:44,100 --> 00:03:46,930
+Sembra che abbiamo una buona idea delle informazioni qui.
+
+56
+00:03:47,040 --> 00:03:50,940
+parte delle fatture avviene tra 10 e 20 $ e iniziano a svanire man mano che aumenti sempre di più.
+
+57
+00:03:51,000 --> 00:03:54,320
+E se è in grado di leggere questo grafico, in pratica può solo dire che la maggior
+
+58
+00:03:54,330 --> 00:04:00,360
+Bill Price Quella è la trama e questo ti permette di visualizzare essenzialmente la distribuzione di un istogramma e puoi
+
+59
+00:04:00,720 --> 00:04:02,710
+aggiungere una torta da mangiare in aggiunta.
+
+60
+00:04:02,730 --> 00:04:05,930
+Ma apprenderemo della trama di Katie più tardi.
+
+61
+00:04:05,970 --> 00:04:13,620
+Parliamo della trama congiunta e delle trame congiunte da mare Posso dire che le trame congiunte di Asinus ti permettono
+
+62
+00:04:13,620 --> 00:04:20,670
+di abbinare sostanzialmente a questi grafici per vari dati, il che significa che puoi essenzialmente combinare due diversi
+
+63
+00:04:20,670 --> 00:04:21,950
+diagrammi di distribuzione.
+
+64
+00:04:22,110 --> 00:04:24,370
+E per davvero sono solo due variabili.
+
+65
+00:04:24,480 --> 00:04:29,640
+E quando hai una sorta di parametro con cui possiamo giocare, ci permette di
+
+66
+00:04:29,640 --> 00:04:32,340
+scegliere come effettivamente confrontare queste due distribuzioni.
+
+67
+00:04:32,340 --> 00:04:35,660
+Lasciami entrare e mostrarti come possiamo usare l'essenza come trama del punto di partenza.
+
+68
+00:04:35,670 --> 00:04:41,130
+Innanzitutto hai il passen in x variabile e poi devi passare una variabile Y e
+
+69
+00:04:41,130 --> 00:04:43,910
+quindi devi passare nel tuo set di dati.
+
+70
+00:04:44,100 --> 00:04:48,400
+Iniziamo dal back-end in modo che i dati del passeggero siano impostati come suggerimenti.
+
+71
+00:04:48,450 --> 00:04:54,510
+Quindi quel tipo di frame di dati e quindi per xey basta stringere le stringhe che sono nomi di colonne.
+
+72
+00:04:54,510 --> 00:04:56,690
+Le due cose che vuoi confrontare l'una con l'altra.
+
+73
+00:04:56,700 --> 00:05:02,980
+Quindi, ad esempio, forse voglio confrontare la distribuzione della bolletta totale con quella della punta.
+
+74
+00:05:03,030 --> 00:05:04,440
+Andiamo avanti e farlo.
+
+75
+00:05:04,470 --> 00:05:14,350
+Sto per dire conto totale come mio ex e sulla mia strada Access ho intenzione di mettere in punta la colonna tip.
+
+76
+00:05:14,360 --> 00:05:19,500
+Quindi in questo momento sto solo passando nella colonna della bill totale la colonna tip e poi il dato equivale
+
+77
+00:05:20,980 --> 00:05:25,730
+a tips e ottengo una trama che assomiglia a questa, che è essenzialmente solo due grafici di distribuzione.
+
+78
+00:05:25,950 --> 00:05:31,680
+È possibile visualizzare la punta sull'asse y e il conto totale lungo l'asse x, quindi eseguire lo zoom indietro per
+
+79
+00:05:31,690 --> 00:05:32,670
+visualizzare l'intera trama.
+
+80
+00:05:33,250 --> 00:05:38,970
+in alto in punta e questo ha senso perché i consigli sono di solito proporzionali al totale .
+
+81
+00:05:38,980 --> 00:05:45,550
+E poi in mezzo ho un grafico a dispersione e questo scatterplot in realtà ha un senso perché sembra che abbia
+
+82
+00:05:45,550 --> 00:05:49,480
+una tendenza che andrà più in alto nella bill totale andrà più
+
+83
+00:05:49,560 --> 00:05:57,330
+Ora i grafici congiunti ti forniscono un parametro aggiuntivo di argomento chiamato tipo e questo parametro gentile ti
+
+84
+00:05:57,370 --> 00:06:03,270
+consente di influenzare ciò che sta effettivamente accadendo all'interno di questa trama congiunta.
+
+85
+00:06:03,270 --> 00:06:07,860
+In questo momento, per impostazione predefinita, è dispersivo ma puoi anche passare un
+
+86
+00:06:10,620 --> 00:06:15,750
+argomento come esadecimale e esadecimale ti permette di fare sostanzialmente una rappresentazione di distribuzione esagonale.
+
+87
+00:06:15,750 --> 00:06:21,660
+scuro e se ha meno punti diventa più leggero in sostanza è solo un modo per non
+
+88
+00:06:21,660 --> 00:06:27,150
+dover mettere tutti quei punti di dispersione su, ma invece mostrare una distribuzione con questi esagoni.
+
+89
+00:06:27,150 --> 00:06:33,160
+È simile alla dispersione, ma fondamentalmente se l'esagono ha un certo numero di punti in essa diventa più
+
+90
+00:06:33,150 --> 00:06:38,400
+Un altro argomento che possiamo mettere per gentile è e g che sta per regressione.
+
+91
+00:06:38,740 --> 00:06:43,120
+E questo sembrerà molto simile a un grafico a dispersione, ad eccezione del fatto che in realtà Seaborn disegnerà una linea di
+
+92
+00:06:43,120 --> 00:06:43,920
+regressione su di essa.
+
+93
+00:06:43,930 --> 00:06:48,840
+Ora non abbiamo ancora imparato la regressione lineare per quanto riguarda l'argomento dell'apprendimento automatico, ma in
+
+94
+00:06:48,850 --> 00:06:54,240
+seguito, quando ci avvicineremo a questo argomento, torneremo su questo argomento e discuteremo effettivamente su come questa linea
+
+95
+00:06:54,250 --> 00:06:54,930
+è costruita.
+
+96
+00:06:55,200 --> 00:07:01,110
+ha un valore P in un coefficiente di Peerson di cui parleremo più avanti quando discutiamo effettivamente della regressione lineare.
+
+97
+00:07:01,120 --> 00:07:05,940
+Ma in sostanza questo si sta dimostrando quasi come un adattamento lineare ai dati di punti
+
+98
+00:07:05,940 --> 00:07:07,910
+sparsi e si può effettivamente vedere che
+
+99
+00:07:07,950 --> 00:07:14,830
+Infine, in altri tipi che puoi inserire qui è KDE e questo ti permette di avere anche questo.
+
+100
+00:07:14,820 --> 00:07:20,410
+Ho menzionato K-T che essenzialmente mostra semplicemente la densità di dove questi punti corrispondono maggiormente.
+
+101
+00:07:21,570 --> 00:07:29,580
+Va bene andiamo avanti e passiamo dalla trama comune useremo solitamente la trama con la dispersione predefinita perché è quella che è
+
+102
+00:07:29,880 --> 00:07:34,300
+essenzialmente la più facile da leggere e ti dà un bel po
+
+103
+00:07:34,290 --> 00:07:35,850
+'di informazioni a prima vista.
+
+104
+00:07:35,860 --> 00:07:43,300
+della coppia stanno essenzialmente per tracciare relazioni a coppie su un intero frame di dati, almeno per le colonne numeriche.
+
+105
+00:07:43,290 --> 00:07:49,000
+Stiamo andando avanti ed espandiamo questa idea mostrando che la trama della coppia e la trama
+
+106
+00:07:49,140 --> 00:07:53,780
+E supporta anche un argomento di tonalità di colore per le colonne categoriali che ti mostrerò in seguito.
+
+107
+00:07:54,190 --> 00:08:01,680
+Ma vediamo qui in cima che abbiamo la trama di questa congiunzione che la trama è essenzialmente intenzione di fare
+
+108
+00:08:01,690 --> 00:08:08,260
+è fare questo grafico congiunto per ogni singola combinazione possibile delle colonne numeriche in questo frame di dati.
+
+109
+00:08:08,250 --> 00:08:09,590
+Lasciami andare per mostrarti cosa intendo.
+
+110
+00:08:09,750 --> 00:08:11,700
+Perché lo farà per tutte le combinazioni.
+
+111
+00:08:11,700 --> 00:08:15,400
+Fondamentalmente devi solo chiamare S e S per trama e passare il tuo frame dei dati.
+
+112
+00:08:15,430 --> 00:08:18,250
+E questo è qualcosa che faremo un po 'durante il corso.
+
+113
+00:08:18,250 --> 00:08:21,510
+Tieni presente che quanto più grande è il tuo frame dei dati, tanto più tempo è necessario per la trama.
+
+114
+00:08:21,660 --> 00:08:26,460
+Quindi un sacco di volte per trama richiede un po 'di tempo se si dispone di un frame di dati molto grande invece di frame
+
+115
+00:08:26,470 --> 00:08:26,790
+relativamente piccoli.
+
+116
+00:08:26,790 --> 00:08:28,080
+Quindi stiamo bene.
+
+117
+00:08:28,200 --> 00:08:33,280
+E qui abbiamo fondamentalmente un grafico a coppie per tutti i valori numerici delle colonne.
+
+118
+00:08:33,270 --> 00:08:36,430
+Quindi abbiamo dimensioni vs. dimensione totale della banconota contro mancia.
+
+119
+00:08:36,420 --> 00:08:42,660
+E poi quando si arriva a un parametro rispetto a se stesso, ad esempio la dimensione rispetto alla dimensione invece di
+
+120
+00:08:42,660 --> 00:08:46,310
+fare effettivamente uno scatterplot che, quando ha senso, si ha una linea retta.
+
+121
+00:08:46,380 --> 00:08:48,680
+Invece vedi un istogramma.
+
+122
+00:08:49,120 --> 00:08:51,060
+E la stessa cosa per Tip contro punta.
+
+123
+00:08:51,100 --> 00:08:57,600
+E per la bolletta totale rispetto alla bolletta totale questo significa che per trama è un modo davvero bello per visualizzare rapidamente i
+
+124
+00:08:57,610 --> 00:08:58,280
+tuoi dati.
+
+125
+00:08:58,410 --> 00:09:06,400
+E ciò che è ancora più bello è che è possibile aggiungere un argomento di tonalità a questo h si mangia e l'argomento hewe è
+
+126
+00:09:06,390 --> 00:09:08,140
+dove si passerà nella colonna.
+
+127
+00:09:08,130 --> 00:09:15,420
+Lo scopo di una colonna categoriale in categorie non significa categorie numeriche o continue ma reali.
+
+128
+00:09:15,450 --> 00:09:21,040
+Per esempio la colonna del sesso è categorica perché ci sono due categorie in essa, maschio e femmina.
+
+129
+00:09:22,710 --> 00:09:31,650
+E quando lo trasmetti mentre passi nel nome della colonia, uguale sesso, colorerà i punti dati in base
+
+130
+00:09:31,680 --> 00:09:35,480
+alla colonna che hai inserito per la tonalità.
+
+131
+00:09:35,520 --> 00:09:40,560
+Quindi qui tutti i punti verdi sono di sesso femminile basati su questa leggenda e su tutti i punti maschili.
+
+132
+00:09:40,630 --> 00:09:42,930
+Stiamo andando a zumare in modo che possiamo vedere il tutto.
+
+133
+00:09:43,120 --> 00:09:45,600
+Tutti i punti blu sono maschili.
+
+134
+00:09:45,610 --> 00:09:52,690
+E come terzo argomento puoi specificare una tavolozza e la tavolozza ti permette di colorarla con
+
+135
+00:09:52,890 --> 00:09:54,870
+una tavolozza di colori specifica.
+
+136
+00:09:54,880 --> 00:09:59,820
+Discuteremo tavolozze, colori e stili alla fine della serie di conferenze sul mare.
+
+137
+00:09:59,830 --> 00:10:01,900
+In questo momento ti mostrerò solo un esempio.
+
+138
+00:10:01,890 --> 00:10:06,690
+Essenzialmente ci sono queste stringhe della mappa dei colori che provengono da quella trama dal vivo che
+
+139
+00:10:06,900 --> 00:10:11,100
+puoi passare nella sua tavolozza e sceglieranno determinati colori per qualunque sia il parametro.
+
+140
+00:10:11,160 --> 00:10:16,650
+E qui possiamo vedere che la posta è blu e la femmina è di un colore rosa chiaro.
+
+141
+00:10:16,650 --> 00:10:17,230
+Tutto ok.
+
+142
+00:10:17,250 --> 00:10:20,040
+Lo toccheremo su tavolozze di colori e stili molto di più.
+
+143
+00:10:20,050 --> 00:10:25,770
+Andiamo avanti e passiamo alle trame di Roug e le trame dei ladri sono in realtà un concetto molto semplice, ma
+
+144
+00:10:25,770 --> 00:10:28,600
+useremo il concetto di una trama canaglia per costruire realmente.
+
+145
+00:10:28,620 --> 00:10:28,980
+Sono.
+
+146
+00:10:28,990 --> 00:10:38,770
+Spiega la trama K-T che abbiamo visto prima che avrei intenzione di andare avanti e dire S. UN. I grafici di Roug e proprio come tracciare la
+
+147
+00:10:38,860 --> 00:10:43,110
+trama di distribuzione che stai per passare in una singola colonna qui.
+
+148
+00:10:43,180 --> 00:10:51,040
+Quindi diremo i suggerimenti e andiamo a passare la colonna della bolletta totale e quello che fa la trama del tappeto è
+
+149
+00:10:51,040 --> 00:10:52,450
+un concetto molto semplice.
+
+150
+00:10:52,450 --> 00:10:59,980
+Disegna semplicemente un segno di trattino per ogni punto su questa distribuzione di varianti uniforme o unica
+
+151
+00:10:59,980 --> 00:11:01,550
+essenzialmente una singola variabile.
+
+152
+00:11:01,570 --> 00:11:06,710
+Quindi, invece di un istogramma, lasciami andare avanti e rendere questa trama ancora una volta da confrontare.
+
+153
+00:11:07,150 --> 00:11:12,280
+Dirò non appena questa trama darà il conto totale.
+
+154
+00:11:12,280 --> 00:11:17,900
+Eseguilo e andiamo a dire che Katie è falsa.
+
+155
+00:11:20,010 --> 00:11:27,040
+OK, quindi la differenza tra un istogramma qui sotto e questo diagramma di Rugge è che l'istogramma ha essenzialmente
+
+156
+00:11:27,040 --> 00:11:32,920
+bidoni e conta quanti trattini erano in quel cestino e poi lo mostra come un numero
+
+157
+00:11:32,920 --> 00:11:39,480
+qui e ciò significa che c'è tra 10 e I don ' Sappiamo che se ne danno un'occhiata.
+
+158
+00:11:39,570 --> 00:11:41,200
+Quarantacinque trattini lì.
+
+159
+00:11:41,250 --> 00:11:43,210
+Sono tutti accatastati l'uno sull'altro.
+
+160
+00:11:43,360 --> 00:11:48,910
+prezzo totale della bolletta ci sono meno Roug o meno trattini e questo significa che il Ben sarà meno alto.
+
+161
+00:11:48,970 --> 00:11:51,070
+E poi qui mentre andiamo oltre nel
+
+162
+00:11:51,070 --> 00:11:55,840
+Questa è la relazione di base tra l'SR-GR RAM e questa trama canaglia che trasforma la trama canaglia in un
+
+163
+00:11:55,840 --> 00:11:56,450
+concetto davvero semplice.
+
+164
+00:11:56,560 --> 00:12:01,730
+Basta disegnare un trattino per ogni singolo punto lungo la linea di distribuzione.
+
+165
+00:12:01,750 --> 00:12:02,180
+Tutto ok.
+
+166
+00:12:02,230 --> 00:12:03,460
+Questo è il conto totale.
+
+167
+00:12:03,510 --> 00:12:09,490
+Quello che vogliamo fare è costruire questa idea di trame false per spiegare quale sia questa trama di
+
+168
+00:12:10,960 --> 00:12:13,260
+Kaytee e questa sarà proprio questa linea.
+
+169
+00:12:13,450 --> 00:12:17,820
+Come facciamo a costruire questa linea basandoci su questi intrighi canaglia.
+
+170
+00:12:18,010 --> 00:12:26,200
+E puoi vedere che ha una relazione con i conteggi di trama canaglia. I diagrammi di KDE rappresentano diagrammi di stima della
+
+171
+00:12:26,260 --> 00:12:32,260
+densità del kernel e puoi effettivamente Google e controllare la trama di stima della densità del
+
+172
+00:12:32,260 --> 00:12:38,320
+kernel e la pagina sarà simile a questa densità di arricciatura stima e questa è davvero
+
+173
+00:12:38,440 --> 00:12:39,520
+una scroll down.
+
+174
+00:12:39,520 --> 00:12:43,440
+Questa è una figura davvero bella qui qui e in sostanza cercheremo di costruire.
+
+175
+00:12:43,450 --> 00:12:47,230
+Noterai che ognuno di questi trattini neri è la trama canaglia.
+
+176
+00:12:47,230 --> 00:12:48,460
+Quindi i punti reali.
+
+177
+00:12:48,700 --> 00:12:53,140
+E poi hai queste piccole distribuzioni Gaussiane normali sopra ogni punto.
+
+178
+00:12:53,200 --> 00:12:54,580
+E poi li sommi tutti.
+
+179
+00:12:54,640 --> 00:12:58,540
+Quindi ottieni questa stima finale della densità del kernel di Currence.
+
+180
+00:12:58,570 --> 00:13:02,150
+Ora cosa intendo per distribuzione normale o distribuzione gaussiana.
+
+181
+00:13:02,410 --> 00:13:08,010
+Bene, se guardi anche su Wikipedia Nessus nella teoria delle probabilità, la distribuzione normale e direi
+
+182
+00:13:08,080 --> 00:13:11,770
+probabilmente la distribuzione di probabilità continua più comune a livello centrale.
+
+183
+00:13:11,780 --> 00:13:16,780
+È questo tipo di distribuzioni normali in cui dici come oh come hanno fatto tutti i test e si
+
+184
+00:13:16,780 --> 00:13:20,130
+valutano tutti gli studenti e poi si vede la distribuzione dei punteggi.
+
+185
+00:13:20,140 --> 00:13:26,530
+Quindi di solito qualcosa di normalizzato come questo o per esempio l'età delle persone o le altezze delle persone
+
+186
+00:13:26,530 --> 00:13:29,950
+di solito molte cose tendono a seguire una distribuzione normale.
+
+187
+00:13:29,950 --> 00:13:30,420
+OK.
+
+188
+00:13:30,760 --> 00:13:36,160
+Andiamo avanti e torniamo al quaderno di Giove e trattiamo questi argomenti in modo un po 'più
+
+189
+00:13:37,270 --> 00:13:38,340
+dettagliato per farlo.
+
+190
+00:13:38,380 --> 00:13:42,880
+Ho intenzione di copiare e incollare del codice dal taccuino e non devi preoccuparti di capire
+
+191
+00:13:42,880 --> 00:13:43,360
+questo codice.
+
+192
+00:13:43,420 --> 00:13:49,320
+È solo per costruire un diagramma per la spiegazione in un go per copiare e incollare questo.
+
+193
+00:13:50,170 --> 00:13:54,510
+Ho copiato e incollato questo codice e mi sono lasciato abbattere molto velocemente con questo codice.
+
+194
+00:13:54,610 --> 00:13:56,260
+Ho solo alcune importazioni.
+
+195
+00:13:56,260 --> 00:13:58,690
+Creo un set di dati casuali.
+
+196
+00:13:58,780 --> 00:14:02,050
+Quindi uso un diagramma di rug sui dati casuali.
+
+197
+00:14:02,050 --> 00:14:04,630
+Ho impostato l'asse x per la trama.
+
+198
+00:14:04,660 --> 00:14:11,340
+Usa qualsiasi spazio Ohlund per creare 100 punti punto equidistanti da X-Men's X max e poi qui.
+
+199
+00:14:11,380 --> 00:14:14,290
+Questa è probabilmente la parte più difficile da capire perché utilizza la libreria.
+
+200
+00:14:14,290 --> 00:14:15,240
+Non abbiamo ancora parlato.
+
+201
+00:14:15,280 --> 00:14:16,600
+Non è normale
+
+202
+00:14:16,600 --> 00:14:21,920
+Tutto ciò che fa è che la trama è una distribuzione normale per ciascuno dei punti di trama del tappeto.
+
+203
+00:14:21,920 --> 00:14:23,030
+E sembra così.
+
+204
+00:14:23,060 --> 00:14:25,340
+Andiamo avanti e ingrandiamo questo.
+
+205
+00:14:25,660 --> 00:14:28,900
+Qui ho il mio set di dati e questo è un set di dati casuali.
+
+206
+00:14:28,900 --> 00:14:33,610
+Quindi se gestisci questi anni potrebbe sembrare un po 'diverso, ma tieni presente che non stiamo più lavorando con
+
+207
+00:14:33,610 --> 00:14:33,980
+i suggerimenti.
+
+208
+00:14:34,000 --> 00:14:35,790
+Stiamo solo lavorando su alcuni dati casuali.
+
+209
+00:14:35,800 --> 00:14:40,840
+Si noti che qui ho dei trattini blu e quindi queste linee grigie rappresentano le normali distribuzioni.
+
+210
+00:14:40,870 --> 00:14:43,050
+In cima a ciascuno di questi trattini blu.
+
+211
+00:14:43,330 --> 00:14:47,040
+Quindi questa è una distribuzione normale centrata attorno al cruscotto.
+
+212
+00:14:47,320 --> 00:14:49,940
+E ce ne sono un po 'uno sopra l'altro.
+
+213
+00:14:49,990 --> 00:14:56,180
+Bene, andremo avanti e faremo dopo alcuni di questi fino a ottenere la funzione di base della densità del kernel.
+
+214
+00:14:57,070 --> 00:15:01,480
+E questa è solo la somma di tutte queste piccole distribuzioni normali.
+
+215
+00:15:01,480 --> 00:15:02,010
+Tutto ok.
+
+216
+00:15:02,020 --> 00:15:07,150
+queste funzioni base che sono solo queste normali distribuzioni quando le sommi tutte.
+
+217
+00:15:07,150 --> 00:15:12,670
+Copiare e incollare il secondo blocco di codice dal notebook ci consente di riassumere tutte
+
+218
+00:15:12,670 --> 00:15:17,700
+Si ottiene qualcosa che assomiglia a questo che è solo la trama di Teekay di prima ed
+
+219
+00:15:17,890 --> 00:15:20,930
+è così che la trama è costruita dalla trama del disco.
+
+220
+00:15:20,950 --> 00:15:25,490
+La primissima trama abbiamo guardato il più alto t sotto T.
+
+221
+00:15:25,570 --> 00:15:26,430
+Tutto ok.
+
+222
+00:15:26,560 --> 00:15:31,940
+Quindi questi sono tutti i principali modi in cui puoi mostrare le distribuzioni di dati che abbiamo visto di più.
+
+223
+00:15:32,110 --> 00:15:38,350
+Andiamo avanti e rivediamo rapidamente tutti i vari tipi di trama che compongono questo tipo di computer e di trama.
+
+224
+00:15:38,350 --> 00:15:39,770
+Torniamo indietro.
+
+225
+00:15:39,820 --> 00:15:46,120
+Loro erano la trama e ancora una volta che questa trama puoi usarla con due metodi hanno
+
+226
+00:15:46,120 --> 00:15:51,410
+Kaytee uguale a false e in sostanza basta vedere un istogramma o lasciare questo vuoto.
+
+227
+00:15:52,840 --> 00:15:57,100
+E poi puoi vedere la Caity la stima della densità del kernel che tipo
+
+228
+00:15:57,100 --> 00:16:03,580
+di spiegare che la fine è solo la somma di tutte le distribuzioni normali attorno al tappeto. Una trama comune è molto
+
+229
+00:16:03,580 --> 00:16:08,740
+simile a questa espettorazione di idee che passa in due colonne e tu passi loro come argomenti xey.
+
+230
+00:16:08,760 --> 00:16:15,400
+Se il tuo terzo argomento è uguale ai dati, la trama successiva di cui veniamo a conoscenza è la trama della coppia e la
+
+231
+00:16:15,580 --> 00:16:21,630
+trama è appena costruita sulla trama ed essenzialmente è una trama congiunta per ogni singola colonna o colonna numerica nel tuo set
+
+232
+00:16:21,640 --> 00:16:26,830
+di dati e ciò significa che tu basta passare nel set di dati stesso quel frame di dati e
+
+233
+00:16:26,830 --> 00:16:33,340
+puoi passare nella tonalità e nella tavolozza se vuoi colorare effettivamente una colonna categoriale, la trama successiva che abbiamo appreso è stata la
+
+234
+00:16:33,340 --> 00:16:39,400
+trama di Roug che di solito non userà i grafici di Roug ma è lì per te e l'idea principale di usare
+
+235
+00:16:39,400 --> 00:16:45,310
+una trama canaglia è un po 'come costruire la logica della trama di stima della densità del kernel che viene fatta
+
+236
+00:16:45,400 --> 00:16:46,450
+attraverso questo codice qui.
+
+237
+00:16:46,570 --> 00:16:51,470
+Puoi prendere il tempo e leggere questo codice, ma volevo solo capirlo quando usi una
+
+238
+00:16:51,490 --> 00:16:56,330
+trama canaglia e vuoi costruire una trama di stima della densità del kernel per la
+
+239
+00:16:56,470 --> 00:17:03,400
+trama di Katie che puoi fare solo dicendo trama canaglia ha tutte queste distribuzioni normali su ogni punto e quindi prende
+
+240
+00:17:03,400 --> 00:17:05,200
+la somma di tutti quei punti.
+
+241
+00:17:05,200 --> 00:17:07,810
+E questa è la trama della stima della densità del kernel.
+
+242
+00:17:08,950 --> 00:17:16,540
+E abbiamo visto come possiamo farlo usando questa trama e come punto rapido se stai usando questa trama qui, sappiamo che possiamo
+
+243
+00:17:16,840 --> 00:17:20,620
+sbarazzarci della trama K-T dicendo che Kaytee è uguale a false.
+
+244
+00:17:20,620 --> 00:17:27,160
+Se in realtà vuoi solo la trama K-T e non vuoi il Beenz attuale qui puoi
+
+245
+00:17:27,160 --> 00:17:34,780
+in realtà pasan invece delle trame puoi fare la trama di Asinus KDE e poi i suggerimenti di passen.
+
+246
+00:17:35,200 --> 00:17:42,010
+Fattura totale e questo costruirà la trama K-T senza alcuna distribuzione delle barre.
+
+247
+00:17:42,010 --> 00:17:42,710
+Tutto ok.
+
+248
+00:17:43,090 --> 00:17:48,760
+ti renda conto che Seaborn è incredibilmente potente e anche molto semplice per quanto riguarda il codice che devi scrivere.
+
+249
+00:17:48,760 --> 00:17:49,560
+Spero che tu
+
+250
+00:17:49,690 --> 00:17:51,580
+Tutto ciò che abbiamo fatto è stato fatto in un'unica riga.
+
+251
+00:17:51,640 --> 00:17:55,960
+Se provi a fare ciò, mappa la trama lib, ti avrebbe portato più righe, ma ciò che è
+
+252
+00:17:56,020 --> 00:18:00,490
+bello di questo è che funziona su ciò che sai della trama live e lo vedremo molto di più
+
+253
+00:18:00,490 --> 00:18:02,200
+quando parliamo di stile e colori .
+
+254
+00:18:02,350 --> 00:18:06,790
+Un sacco di quella trama vissuta della trama sarà trasferibile per modificare davvero piccole
+
+255
+00:18:06,880 --> 00:18:08,020
+cose in questa trama.
+
+256
+00:18:08,380 --> 00:18:13,290
+librerie preferite e non vedo l'ora di mostrarti il ​​prossimo paio di tipi di trama che apprenderemo con Seaborn.
+
+257
+00:18:13,560 --> 00:18:17,800
+OK Spero che tu stia cominciando a goderti Seaborn come ho detto prima, è una delle mie
+
+258
+00:18:18,400 --> 00:18:20,260
+Grazie a tutti e ci vediamo alla prossima lezione

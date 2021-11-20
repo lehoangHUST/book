@@ -1,0 +1,183 @@
+1
+00:00:05,790 --> 00:00:06,690
+Halo semuanya.
+
+2
+00:00:06,690 --> 00:00:09,990
+Selamat datang di kuliah ikhtisar latihan PI.
+
+3
+00:00:10,020 --> 00:00:14,490
+Dalam kuliah singkat ini, kita akan membahas pertanyaan latihan dengan cepat dan bagaimana mendekati mereka.
+
+4
+00:00:15,030 --> 00:00:19,180
+Kemudian Anda akan melanjutkan dan melakukan latihan untuk melihat apakah Anda dapat menyelesaikannya.
+
+5
+00:00:19,200 --> 00:00:21,810
+Dan setelah itu kita akan memberi kuliah tentang solusinya.
+
+6
+00:00:21,810 --> 00:00:25,720
+Mari kita lanjutkan dan lompat ke buku catatan latihan dan cepat membahas pertanyaan-pertanyaan.
+
+7
+00:00:25,950 --> 00:00:26,210
+Baiklah.
+
+8
+00:00:26,210 --> 00:00:30,510
+Di sini kita berada di buku catatan latihan PI yang Anda akan terus maju dan melakukannya.
+
+9
+00:00:30,510 --> 00:00:36,720
+Jawab saja pertanyaan atau ikuti instruksi dengan huruf tebal dan Anda akan melihat bahwa sebenarnya ada output array
+
+10
+00:00:36,780 --> 00:00:42,120
+untuk Anda atau jawaban output untuk Anda yang merupakan jawaban yang harus Anda dapatkan.
+
+11
+00:00:42,120 --> 00:00:47,940
+Perlu diingat bahwa jika Anda benar-benar menjalankan sel yang memiliki output langsung di bawah ini Anda akan
+
+12
+00:00:47,940 --> 00:00:48,840
+menimpa output.
+
+13
+00:00:48,840 --> 00:00:53,800
+Jadi misalnya jika Anda mengatakan buat array 10 nol mudah-mudahan Anda ingat dari kuliah
+
+14
+00:00:53,820 --> 00:00:54,730
+bagaimana melakukannya.
+
+15
+00:00:54,870 --> 00:01:01,160
+Tetapi jika Anda memiliki kode di sini seperti cetak halo dan jalankan kode itu Anda tidak akan lagi melihat hasil ini.
+
+16
+00:01:01,200 --> 00:01:04,680
+Jadi ingatlah itu saat Anda menjalankan latihan ini.
+
+17
+00:01:04,700 --> 00:01:05,290
+Baiklah.
+
+18
+00:01:05,400 --> 00:01:11,760
+Jadi pada dasarnya kita akan mulai dengan bertanya kepada Anda bagaimana membuat beberapa array array
+
+19
+00:01:11,850 --> 00:01:19,770
+integer beberapa matriks identitas tiga oleh tiga Matrix dll. Beberapa matriks angka acak dan kemudian saya akan meminta Anda untuk
+
+20
+00:01:19,770 --> 00:01:21,470
+membuat matriks berikut ini.
+
+21
+00:01:21,480 --> 00:01:27,620
+Jadi perlu diingat bahwa Anda harus memasukkan sel di sini agar tidak menghapus output.
+
+22
+00:01:27,660 --> 00:01:31,340
+Maka saya akan meminta Anda untuk membuat array 20 baris hampir berjarak poin antara 0 1.
+
+23
+00:01:31,350 --> 00:01:36,360
+Jadi silakan saja ikuti petunjuknya di sini dan perhatikan dengan seksama untuk tidak menimpa output.
+
+24
+00:01:36,450 --> 00:01:42,600
+Jika Anda belum siap untuk menimpanya, maka kita akan berbicara tentang pengindeksan pi dan pemilihan di mana saya
+
+25
+00:01:42,600 --> 00:01:44,520
+akan memberi Anda beberapa matriks.
+
+26
+00:01:44,610 --> 00:01:46,950
+Dalam hal ini sebenarnya hanya satu matriks.
+
+27
+00:01:46,950 --> 00:01:48,630
+Yang ini sampai 25.
+
+28
+00:01:48,630 --> 00:01:50,600
+Itu matriks lima kali lima.
+
+29
+00:01:50,730 --> 00:01:56,540
+Dan saya akan meminta Anda untuk mengambil potongan dari matriks itu dan perhatikan di sini saya telah memberi Anda sel ekstra
+
+30
+00:01:56,550 --> 00:01:59,040
+karena ini sedikit rumit dan Anda perlu referensi.
+
+31
+00:01:59,040 --> 00:02:05,040
+Jadi, lanjutkan dan tulis kode Anda di sini dan yang mereproduksi output dalam sel di bawah ini dan berhati-hatilah untuk
+
+32
+00:02:05,070 --> 00:02:07,260
+tidak benar-benar menulis kode Anda di sini.
+
+33
+00:02:07,260 --> 00:02:10,570
+Kalau tidak, Anda akan menimpa output yang Anda coba tiru.
+
+34
+00:02:10,650 --> 00:02:15,040
+Dan jika Anda salah pertama kali Anda tidak ingat apa yang sebenarnya Anda coba jawab.
+
+35
+00:02:15,120 --> 00:02:17,390
+Jadi sekali lagi tulis kode di sini di sel-sel ini.
+
+36
+00:02:17,400 --> 00:02:20,100
+Dengan begitu Anda tidak menimpa output itu sendiri.
+
+37
+00:02:20,220 --> 00:02:20,660
+BAIK.
+
+38
+00:02:20,760 --> 00:02:25,500
+Dan kemudian melalui latihan-latihan itu Anda akan mencoba meraih potongan-potongan yang ditunjukkan di sini sebagai jawabannya.
+
+39
+00:02:26,190 --> 00:02:32,180
+Kemudian dalam matriks yang sama atau referensi bahwa matriks yang sama Anda akan mendapatkan jumlah semua nilai mendapatkan standar deviasi
+
+40
+00:02:32,190 --> 00:02:36,720
+dari semua nilai dan kemudian mendapatkan beberapa jumlah dari semua kolom dalam matriks itu.
+
+41
+00:02:37,380 --> 00:02:37,970
+Baiklah.
+
+42
+00:02:38,070 --> 00:02:38,880
+Itu dia.
+
+43
+00:02:38,880 --> 00:02:39,690
+Semoga berhasil.
+
+44
+00:02:39,780 --> 00:02:40,770
+Dan selanjutnya.
+
+45
+00:02:40,770 --> 00:02:43,700
+Apakah ini solusi untuk latihan pie bodoh ini.
+
+46
+00:02:43,710 --> 00:02:45,600
+Terima kasih semuanya dan saya akan melihat di kuliah berikutnya

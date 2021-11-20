@@ -1,0 +1,827 @@
+1
+00:00:05,250 --> 00:00:09,020
+Bună ziua tuturor și vă urez bun venit la prelegerile de soluții pentru achizițiile de comerț electronic.
+
+2
+00:00:09,050 --> 00:00:10,560
+Exercițiul Pandas.
+
+3
+00:00:10,620 --> 00:00:14,720
+Să mergem mai departe și să mergem la notebook-ul Jupiter și să începem să mergem prin aceste soluții.
+
+4
+00:00:14,730 --> 00:00:14,970
+In regula.
+
+5
+00:00:14,970 --> 00:00:18,140
+Iată-mă la notebook-ul pentru exercițiul de cumpărare prin e-commerce.
+
+6
+00:00:18,150 --> 00:00:21,240
+Să mergem mai departe și să mergem prin instrucțiuni.
+
+7
+00:00:21,330 --> 00:00:26,180
+Deci, primul lucru pe care trebuia să-l faci era să imporți pandele plătitoare de importuri bune.
+
+8
+00:00:26,180 --> 00:00:32,760
+Acesta este sfârșitul a ceea ce dorim să facem este să citiți în fișierul CSP pentru cumpărăturile electronice și să îl trimiteți unui
+
+9
+00:00:32,760 --> 00:00:34,490
+prieten de date numit e-comm.
+
+10
+00:00:34,500 --> 00:00:40,240
+Deci, atunci când spunem că e-com este egal cu CD-ul CXVII.
+
+11
+00:00:40,710 --> 00:00:46,100
+Și atunci când începem să introducem e-com, voi folosi autocompletarea filelor pentru a găsi fișierul real aici și este
+
+12
+00:00:46,210 --> 00:00:47,210
+primul pe acesta.
+
+13
+00:00:47,220 --> 00:00:49,240
+Achiziții de comerț electronic.
+
+14
+00:00:49,770 --> 00:00:54,420
+Și voi continua și verificați capul acelui cadru de date și puteți face
+
+15
+00:00:54,420 --> 00:00:57,240
+acest lucru doar prin apelarea metodei e-com.
+
+16
+00:00:57,240 --> 00:01:00,430
+Și putem vedea că avem capul acelui cadru de date.
+
+17
+00:01:00,450 --> 00:01:05,290
+Acum vrem să știm câte rânduri și coloane există, există câteva moduri de a face acest lucru.
+
+18
+00:01:05,310 --> 00:01:13,920
+De exemplu, ați putea spune doar coloanele e-com și aceasta returnează o listă cu coloanele indexate, astfel încât să
+
+19
+00:01:13,920 --> 00:01:19,560
+puteți verifica chiar dacă doriți să reveniți și să returnați câte coloane
+
+20
+00:01:19,560 --> 00:01:20,140
+ai.
+
+21
+00:01:20,340 --> 00:01:28,380
+Și apoi ați putea face același lucru pentru indice și că ar spune cât de multe rânduri ai avut o modalitate frumoasă de a face acest lucru, cu
+
+22
+00:01:28,380 --> 00:01:33,480
+toate acestea, pentru a obține ambele informații de la o dată, plus o pereche de alte piese de
+
+23
+00:01:33,480 --> 00:01:38,430
+frumos de informații se numește metoda de info off că și, sperăm, prin uita la ieșire, care
+
+24
+00:01:38,430 --> 00:01:41,780
+a fost o sugestii frumos de a utiliza metoda info.
+
+25
+00:01:41,780 --> 00:01:42,410
+O.K.
+
+26
+00:01:42,960 --> 00:01:45,870
+Care este prețul mediu de cumpărare?
+
+27
+00:01:45,870 --> 00:01:51,330
+Să mergem mai departe și să verificăm coloanele încă o dată.
+
+28
+00:01:51,360 --> 00:01:53,310
+Observați că avem sloturi de adrese.
+
+29
+00:01:53,310 --> 00:01:58,680
+AM sau PM și continuând să observăm că avem în final un preț de cumpărare.
+
+30
+00:01:59,010 --> 00:02:04,490
+Vom ieși și vom face apel la prețul de cumpărare din coloană și voi merge și voi
+
+31
+00:02:04,530 --> 00:02:07,770
+avea autocomplete aici și apoi vreau prețul mediu de achiziție.
+
+32
+00:02:07,770 --> 00:02:13,080
+Deci, în medie, în acest caz vorbim despre rău și motivul pentru care nu am postat, de fapt, care este prețul
+
+33
+00:02:13,080 --> 00:02:16,890
+mediu de cumpărare, pentru că nu vreau să renunț la metodă chiar de pe lilieci.
+
+34
+00:02:16,920 --> 00:02:23,910
+Deci, sperăm că puteți să vă dați seama și prețul mediu costisitor este de 50 $ la aproximativ 35 cenți.
+
+35
+00:02:23,910 --> 00:02:28,560
+Acum vrem să știm că este cel mai mare și cel mai mic preț de cumpărare
+
+36
+00:02:28,560 --> 00:02:34,830
+ceea ce putem face acest lucru într-o manieră foarte asemănătoare doar trecând în coloană și apoi sunând max și min de pe ea.
+
+37
+00:02:34,830 --> 00:02:44,300
+Astfel, prețul de achiziție maxim este de aproximativ 100 de dolari, iar prețul minim de achiziție este de 0 $.
+
+38
+00:02:44,700 --> 00:02:45,360
+Bine.
+
+39
+00:02:45,480 --> 00:02:50,630
+Acum vrem să știm câte persoane au limba engleză sau ca limbă de alegere pe site-ul Web.
+
+40
+00:02:51,270 --> 00:02:56,330
+Să mergem mai departe și să verificăm coloana engleză sau coloana de limbă încă o dată și
+
+41
+00:02:56,360 --> 00:02:57,610
+este un e-comm.
+
+42
+00:02:57,770 --> 00:02:58,560
+Dați-i drumul.
+
+43
+00:02:58,580 --> 00:03:02,840
+Voi numi primele trei coloane aici.
+
+44
+00:03:02,880 --> 00:03:04,290
+Rose scuză-mă.
+
+45
+00:03:04,290 --> 00:03:07,110
+Așa că observați dacă merg înainte și derulați spre dreapta.
+
+46
+00:03:08,010 --> 00:03:13,350
+Am aici la coloana de limbă că se pare că are doar două șiruri de lungime.
+
+47
+00:03:13,380 --> 00:03:18,340
+Deci, căutăm câte dintre aceste șiruri sunt egale cu E și asta înseamnă că o să fac asta.
+
+48
+00:03:18,360 --> 00:03:27,540
+Voi spune că limbajul e-com este egal cu șirul.
+
+49
+00:03:27,600 --> 00:03:31,700
+Aceasta va reveni la o serie de valori booleene.
+
+50
+00:03:31,710 --> 00:03:33,360
+Falsurile din Trews.
+
+51
+00:03:33,360 --> 00:03:37,800
+Și asta înseamnă că pot să fac acum este să merg și să
+
+52
+00:03:40,410 --> 00:03:42,230
+spun e-com unde este adevărat.
+
+53
+00:03:42,420 --> 00:03:47,700
+Așa că pot spune e-comm și acum am în principiu un subset al cadrului de date și pot verifica acest lucru uitandu-mă
+
+54
+00:03:47,700 --> 00:03:48,710
+la acest index aici.
+
+55
+00:03:48,840 --> 00:03:50,610
+Și observați că se învârte în jur.
+
+56
+00:03:50,820 --> 00:03:56,760
+Și dacă parcurg tot drumul spre dreapta în starea cadrului, hai să mergem și să sunăm capul acestui lucru,
+
+57
+00:03:56,850 --> 00:04:01,370
+pentru că pentru toate care defilați la nota potrivită aici toate limbile sunt E-M.
+
+58
+00:04:01,410 --> 00:04:06,300
+Deci, ceea ce vreau nu este capul acestui lucru, deoarece vreau să știu câte persoane au engleza.
+
+59
+00:04:06,300 --> 00:04:08,110
+Pot doar să numesc.
+
+60
+00:04:09,330 --> 00:04:11,160
+Și aceasta va conta linii.
+
+61
+00:04:11,160 --> 00:04:15,310
+Și așa am o mie nouă sute opt persoane care au limba engleză
+
+62
+00:04:15,310 --> 00:04:17,250
+ca alegerea lor pe site-ul web.
+
+63
+00:04:17,820 --> 00:04:23,340
+Și dacă ați vrut ca acest lucru să fie specific pentru coloana de limbă pe care ați putea să o numiți doar aici
+
+64
+00:04:24,840 --> 00:04:27,590
+și acest lucru vă va da de fapt numărul direct.
+
+65
+00:04:27,600 --> 00:04:27,910
+In regula.
+
+66
+00:04:27,960 --> 00:04:29,930
+Să mergem mai departe și să continuăm.
+
+67
+00:04:29,970 --> 00:04:34,090
+Acum vrem să știm câte persoane au titlul de avocat.
+
+68
+00:04:34,300 --> 00:04:47,280
+O să mergem mai departe și să spunem e-com în cazul în care locul de muncă este egal cu cel al avocatului și apoi să treacă acest lucru în cadrul de date e-com și acest lucru returnează subsetul cadrului de date
+
+69
+00:04:47,280 --> 00:04:52,830
+în cazul în care acest lucru este adevărat în altele o varietate de metode de a obține
+
+70
+00:04:52,830 --> 00:04:54,990
+de fapt, a crescut din ea.
+
+71
+00:04:55,080 --> 00:04:58,170
+Ai putea obține informații.
+
+72
+00:04:58,460 --> 00:05:01,740
+Și aceasta returnează de fapt cât de multe rânduri ai 30 de intrări.
+
+73
+00:05:01,790 --> 00:05:06,480
+Puteți, de asemenea, să faceți doar conturi care fac același lucru 30.
+
+74
+00:05:06,510 --> 00:05:13,590
+De asemenea, puteți să apelați indexul de pe această pagină care returnează indexul și apoi puteți apela linkul pentru acesta.
+
+75
+00:05:14,130 --> 00:05:15,450
+Iar acest lucru returnează și 30.
+
+76
+00:05:15,450 --> 00:05:20,790
+Deci, câteva metode pentru a obține răspunsul sexual 30 continuați și nu ezitați să folosiți metoda
+
+77
+00:05:20,790 --> 00:05:22,180
+pe care o preferați.
+
+78
+00:05:23,070 --> 00:05:23,310
+O.K.
+
+79
+00:05:23,310 --> 00:05:27,930
+Urmați în continuare numărul de persoane care au făcut cumpărarea în timpul orelor și de cât de mulți oameni au făcut
+
+80
+00:05:27,930 --> 00:05:29,760
+cumpărarea în timpul zilei. m ..
+
+81
+00:05:29,940 --> 00:05:32,780
+Și există un indiciu aici că valoarea utilizării contează.
+
+82
+00:05:33,240 --> 00:05:35,300
+Ei bine, valoarea contează face acest lucru foarte ușor.
+
+83
+00:05:35,310 --> 00:05:40,750
+De fapt, treceți doar în coloana AM sau PM și apoi spuneți valoare.
+
+84
+00:05:40,980 --> 00:05:43,390
+Permiteți-mi să vă arăt mai întâi valorile unice.
+
+85
+00:05:43,560 --> 00:05:49,550
+Deci, dacă aruncăm o privire la această coloană și ne-am pus doar o notă unică, avem doar PM și am valori și asta
+
+86
+00:05:49,560 --> 00:05:52,830
+înseamnă că pot să spun doar numărul de subliniere a valorii și
+
+87
+00:05:55,470 --> 00:05:56,930
+acest lucru va conta automat.
+
+88
+00:05:56,970 --> 00:06:01,550
+Câți oameni au cumpărat în perioada p. m. și câte persoane au cumpărat în timpul AM.
+
+89
+00:06:02,310 --> 00:06:06,570
+Urmează în continuare să spunem care sunt cele mai comune cinci titluri de locuri de muncă.
+
+90
+00:06:07,080 --> 00:06:12,960
+Ei bine, contează de fapt, de asemenea, faptul că foarte ușor pe care îl puteți încheia face se numește coloana Job și
+
+91
+00:06:14,120 --> 00:06:19,740
+ați observat că veți obține o grămadă de locuri de muncă înapoi ca o serie și apoi puteți apela numar
+
+92
+00:06:19,740 --> 00:06:20,160
+de
+
+93
+00:06:23,640 --> 00:06:29,430
+valori pe această coloană și apoi aveți de fapt numărătoarea și numerele de preavizuri de fapt se clasifică automat deja din
+
+94
+00:06:29,430 --> 00:06:34,080
+cele mai populare conturi pe tot parcursul, dacă mergeți la partea inferioară către cele mai puțin populare.
+
+95
+00:06:34,080 --> 00:06:41,190
+Deci, dacă am verifica afară capul acestui lucru pentru primele cinci primiți cele cinci cele mai frecvente titluri de locuri de muncă
+
+96
+00:06:41,560 --> 00:06:45,330
+interior și de construcții de designer avocat de cumpărare manager etc.
+
+97
+00:06:45,450 --> 00:06:49,620
+Există câteva alte modalități de a face acest lucru, dar acesta este probabil cel mai rapid și mai ușor mod de a face acest lucru.
+
+98
+00:06:50,400 --> 00:06:51,640
+O.K.
+
+99
+00:06:51,990 --> 00:06:57,640
+Înainte cineva a făcut o achiziție care a venit de la Lotts citează 90 spațiu W. T ..
+
+100
+00:06:57,830 --> 00:07:00,680
+Care a fost prețul de achiziție pentru această tranzacție.
+
+101
+00:07:00,690 --> 00:07:03,380
+Să mergem înainte și să încercăm să aflăm mai întâi acest lot.
+
+102
+00:07:03,390 --> 00:07:06,040
+Așa că o să facem o ruptură pas cu pas.
+
+103
+00:07:06,060 --> 00:07:13,110
+Vom spune e-com de lot egal cu și apoi 90.
+
+104
+00:07:13,110 --> 00:07:15,430
+Capitalul spațial W T.
+
+105
+00:07:15,490 --> 00:07:20,650
+Tocmai am rula asta ca o serie de valori booleene și vreau rândul în care este adevărat.
+
+106
+00:07:21,120 --> 00:07:27,270
+Așa că am de gând să intru și să spun e-com despre asta este această selecție condiționată.
+
+107
+00:07:27,270 --> 00:07:30,470
+Și acum pot să-l văd pe Roback unde se întâmplă acest lucru adevărat.
+
+108
+00:07:30,540 --> 00:07:35,880
+Deci, dacă mă duc la prețul de cumpărare, ar trebui să văd 75 de dolari și 10 cenți.
+
+109
+00:07:35,970 --> 00:07:46,120
+Sau aș putea să sun doar prețul de achiziție în afara acestui cadru de date și voi reveni acest 75 dolari și 10 cenți.
+
+110
+00:07:46,140 --> 00:07:47,540
+O.K.
+
+111
+00:07:47,610 --> 00:07:51,090
+Urmați în continuare ce trimite persoana de e-mail cu următorul număr de card de credit.
+
+112
+00:07:51,090 --> 00:07:52,870
+Iată numărul cardului de credit în sine.
+
+113
+00:07:53,130 --> 00:08:02,460
+Ei bine, vom dori sa facem este ca un proces foarte asemanator va spune ca dorim ca cardul de credit e-com sa fie egal cu
+
+114
+00:08:02,460 --> 00:08:11,160
+si apoi voi incerca doar sa copiez si sa pastrez acest numar si apoi o voi trece in rama de date e-com și
+
+115
+00:08:11,160 --> 00:08:15,340
+pur și simplu apuca coloana de email de pe ea.
+
+116
+00:08:16,500 --> 00:08:18,810
+Și tocmai am fugit și mi-a dat exact același răspuns.
+
+117
+00:08:18,810 --> 00:08:22,370
+Așa a spus Bob Dylan la Williams Asgar.
+
+118
+00:08:22,620 --> 00:08:29,160
+OK acum vreau să știu cât de mulți vor avea American Express ca furnizor de carduri de credit și au făcut o achiziție
+
+119
+00:08:29,160 --> 00:08:30,620
+de peste 95 dolari.
+
+120
+00:08:30,720 --> 00:08:32,450
+Din nou, facem doar o selecție condiționată.
+
+121
+00:08:32,460 --> 00:08:38,520
+Cu excepția acum, trebuie să ne amintim cum să facem mai multe condiții când mergem înainte și începem să ședem la cadrele mele
+
+122
+00:08:38,520 --> 00:08:39,300
+de date.
+
+123
+00:08:39,450 --> 00:08:45,320
+Voi spune e-comm și voi trece și prima condiție în paranteze și apoi utilizați ampersand și
+
+124
+00:08:45,840 --> 00:08:48,490
+treci a doua condiție în paranteze.
+
+125
+00:08:48,690 --> 00:08:52,900
+Prima condiție OK a fost American Express, care însemna furnizor al cărții de credit.
+
+126
+00:08:52,950 --> 00:09:10,200
+Furnizorul de e-com CC este egal cu American Express și vreau ca e-com al prețului de achiziție să fie mai mare
+
+127
+00:09:13,380 --> 00:09:16,240
+de 95 USD.
+
+128
+00:09:16,450 --> 00:09:16,980
+Bine.
+
+129
+00:09:17,130 --> 00:09:22,060
+Dacă rulau doar asta, am revenit la rândurile reale unde este adevărat.
+
+130
+00:09:22,080 --> 00:09:22,670
+Acum îmi amintesc.
+
+131
+00:09:22,710 --> 00:09:29,720
+Vreau doar contele, așa că pot merge mai departe și doar să spun că contează de această fugă acest lucru și am 39.
+
+132
+00:09:29,970 --> 00:09:32,080
+Din nou, există o mulțime de moduri diferite în care puteți obține numărul.
+
+133
+00:09:32,070 --> 00:09:37,090
+S-ar putea spune, de asemenea, informații atunci că se întoarce a treia 9 aici.
+
+134
+00:09:37,230 --> 00:09:42,540
+De asemenea, puteți utiliza, de exemplu, indicele bursier și apoi obțineți lungimea acestui lucru și care, de asemenea, returnează Thirty-Nine Deci,
+
+135
+00:09:45,770 --> 00:09:48,250
+o mulțime de moduri de a face acest lucru.
+
+136
+00:09:48,250 --> 00:09:52,500
+Dar ideea de bază a ceea ce vreau să cobor e este că de fapt au făcut selecțiile multiple de condiții.
+
+137
+00:09:52,530 --> 00:09:57,620
+Trebuie să transmiteți o imprimare CS ușoară și apoi să o treceți și să imprimați din nou CS.
+
+138
+00:09:58,290 --> 00:09:58,860
+O.K.
+
+139
+00:09:58,870 --> 00:10:00,950
+Acum pentru ultimele două grele.
+
+140
+00:10:01,050 --> 00:10:04,920
+Câți oameni au un card de credit care expiră în 2025.
+
+141
+00:10:05,710 --> 00:10:10,070
+Deci, să mergem mai departe și să aruncăm o privire la data de expirare.
+
+142
+00:10:10,720 --> 00:10:15,160
+Deci, avem expirarea termenului de expirare CC.
+
+143
+00:10:15,540 --> 00:10:16,700
+Aruncăm o privire la asta.
+
+144
+00:10:16,720 --> 00:10:19,600
+Avem ceea ce pare a fi un șir.
+
+145
+00:10:19,770 --> 00:10:25,020
+Ei bine, să sunăm și să confirmăm că este un șir, cerând doar primul obiect.
+
+146
+00:10:25,090 --> 00:10:34,370
+Deci, dacă spun că eu EHLO vedea eroarea zero erorile întoarce înapoi șirul 0 la slash 20.
+
+147
+00:10:34,650 --> 00:10:39,810
+Și asta înseamnă că dacă vreau doar să iau anul, așa că această
+
+148
+00:10:39,810 --> 00:10:47,020
+carte de credit expiră în 2020 ceea ce voi face și voi face este să apucați valorile acelui șir.
+
+149
+00:10:47,010 --> 00:10:50,400
+Sunt elementele șirul care sunt indicele 3 și dincolo.
+
+150
+00:10:50,400 --> 00:10:57,060
+Deci, dacă te uiți la 0 1 2 3 și mai departe sau în esență ultimele două.
+
+151
+00:10:57,540 --> 00:11:02,920
+Și acum am un șir care este anul în care vom merge mai departe și să luăm aceste informații și
+
+152
+00:11:02,910 --> 00:11:05,050
+să începem să folosim aplica pe ea.
+
+153
+00:11:05,040 --> 00:11:21,080
+Deci vreau să spun că Aplicați lambda va merge mai departe și sună acest XP Colan XP și apoi să spun trei colon și apoi vreau să fie
+
+154
+00:11:21,390 --> 00:11:30,270
+egal cu 25 pentru că eu sunt în căutarea datei de expirare 20 2025.
+
+155
+00:11:31,020 --> 00:11:33,750
+Să mergem mai departe și să rulați asta.
+
+156
+00:11:34,100 --> 00:11:39,400
+Am observat acum că am o serie de false și adevărate, deci o grămadă de valori booleene.
+
+157
+00:11:39,390 --> 00:11:44,290
+Acum, motivul pentru care acest lucru este greu este că trebuie să vă dați seama cât de multe dintre acestea sunt de fapt adevărate.
+
+158
+00:11:44,670 --> 00:11:46,750
+Există câteva moduri diferite în care puteți face acest lucru.
+
+159
+00:11:46,800 --> 00:11:53,070
+O modalitate foarte rapidă este că puteți lua doar suma din serie și va reveni la toate valorile
+
+160
+00:11:53,080 --> 00:11:54,860
+care sunt valabile ca sumă.
+
+161
+00:11:55,200 --> 00:11:56,910
+Așa se face și soluțiile.
+
+162
+00:11:56,910 --> 00:11:59,780
+Un fel de truc ciudat, dar asta face greu.
+
+163
+00:11:59,910 --> 00:12:08,100
+Celălalt pe care îl putem face este trecerea acestui lucru în e-com, obținând rândurile înapoi unde se întâmplă să fie adevărat.
+
+164
+00:12:08,130 --> 00:12:15,200
+Și apoi spunând că au luat în considerare și acest lucru va reveni, de asemenea, același număr 1033.
+
+165
+00:12:15,520 --> 00:12:16,310
+O.K.
+
+166
+00:12:16,410 --> 00:12:22,080
+Acum, pentru cel mai greu care este ceea ce sunt primii cinci furnizori de email cele mai populare și găzduiește gmail
+
+167
+00:12:22,090 --> 00:12:24,130
+dot com yahoo dot com și cetera.
+
+168
+00:12:24,120 --> 00:12:26,110
+Să mergem mai departe și să vedem cum putem face acest lucru.
+
+169
+00:12:26,350 --> 00:12:28,240
+Să aruncăm o privire la coloana de e-mail
+
+170
+00:12:31,950 --> 00:12:34,060
+și să observăm că avem, în principiu, șiruri de caractere.
+
+171
+00:12:34,090 --> 00:12:39,640
+Dar ceea ce este important să știți este că dacă luați unul dintre aceste șiruri Să mergem mai departe și să
+
+172
+00:12:39,660 --> 00:12:42,150
+luăm unul vom numi acest exemplu de subliniere.
+
+173
+00:12:42,150 --> 00:12:46,600
+E-mailul este egal cu prima instanță a acestui lucru.
+
+174
+00:12:46,600 --> 00:12:53,540
+Dacă mă uit la exemplul e-mail-ul este doar un șir aici.
+
+175
+00:12:53,700 --> 00:13:01,330
+Dacă mă duc înainte și spun că se despart, am o listă pe care o împarte și știu că cel de-al
+
+176
+00:13:01,380 --> 00:13:08,770
+doilea element din această listă este unul sau două din indexul Unu este numele de domeniu Yahoo dot com.
+
+177
+00:13:08,760 --> 00:13:14,700
+Deci, ceea ce vreau să fac este să folosesc un fel de logică în expresia lambda pentru a prinde
+
+178
+00:13:14,700 --> 00:13:18,080
+furnizorul de e-mail sau gazda. Mergeți înainte și faceți asta.
+
+179
+00:13:18,270 --> 00:13:30,090
+Am de gând să intru și să spun e-com e-mail sau să aplic Lamda luăm în e-mail și apoi vom spune
+
+180
+00:13:30,100 --> 00:13:33,160
+e-mail care se împarte la.
+
+181
+00:13:33,250 --> 00:13:35,720
+Și apoi o să mă descurc.
+
+182
+00:13:35,760 --> 00:13:37,390
+Valoarea la indexul 1.
+
+183
+00:13:37,380 --> 00:13:42,790
+Deci, practic, folosesc doar această logică aici, dar o pun în
+
+184
+00:13:42,780 --> 00:13:49,250
+expresia lambda că voi spune numărătoarea valorii subliniază pentru a contoriza cât de multe sunt.
+
+185
+00:13:49,260 --> 00:13:53,710
+Să mergem și să arătăm asta pentru eticheta de tip hash.
+
+186
+00:13:54,100 --> 00:13:58,890
+Prin urmare, aceasta returnează o serie de toate aceste valori în ceea ce privește furnizorii de e-mail.
+
+187
+00:13:58,890 --> 00:14:01,330
+Și ceea ce vreau să fac este să dau seama de top cinci cele mai populare.
+
+188
+00:14:01,330 --> 00:14:05,910
+Așadar, amintim că putem doar să contabilizăm conturi împreună cu AD 5.
+
+189
+00:14:06,140 --> 00:14:08,350
+Și aceasta returnează primele cinci cele mai populare.
+
+190
+00:14:08,350 --> 00:14:12,100
+Deci Hotmail Yahoo Gmail Smith și Wiliams dot com.
+
+191
+00:14:12,470 --> 00:14:13,410
+O.K.
+
+192
+00:14:13,460 --> 00:14:17,210
+Sperăm că a fost o provocare pentru dvs. dacă a fost.
+
+193
+00:14:17,220 --> 00:14:20,180
+Și tu te-ai bătut chiar mai bine.
+
+194
+00:14:20,200 --> 00:14:23,760
+Dar sper că ați reușit să vă utilizați salariul și abilitățile încep să vă familiarizați.
+
+195
+00:14:23,860 --> 00:14:28,110
+Și mai important, a se vedea ce este de fapt disponibil pentru dvs. și tipul de întrebări pe care
+
+196
+00:14:28,120 --> 00:14:30,030
+vă puteți răspunde rapid și ușor la panda.
+
+197
+00:14:30,080 --> 00:14:34,470
+Acesta este primul dvs. exercițiu în ceea ce privește un exercițiu oficial al panderelor.
+
+198
+00:14:34,680 --> 00:14:39,100
+S-ar putea să fi fost o provocare și ar fi putut fi cu adevărat dificilă, ci să treci ușor prin soluții.
+
+199
+00:14:39,310 --> 00:14:42,930
+Asigurați-vă că o puteți descompune pas cu pas și înțelegeți soluțiile.
+
+200
+00:14:43,090 --> 00:14:48,060
+Simțiți-vă liber să postați orice întrebări pe care trebuie să le aveți pe forumuri Q &amp; A și mă
+
+201
+00:14:48,070 --> 00:14:55,080
+bucur să vă ajut în măsura în care explicați logica oricăror lucruri care ar putea fi părțile cele mai confuze ale acesteia sunt abilitatea de a se
+
+202
+00:14:55,120 --> 00:14:58,770
+aplica și apoi expresiile lambda și să revizuiască expresiile de teren din Python.
+
+203
+00:14:58,920 --> 00:15:02,370
+Dacă credeți că ultimele două au fost extrem de dure.
+
+204
+00:15:02,430 --> 00:15:03,240
+O.K.
+
+205
+00:15:03,370 --> 00:15:04,980
+Sper că vă place acest exercițiu.
+
+206
+00:15:04,990 --> 00:15:10,380
+Urmează o altă pereche de exerciții pentru a vă îmbunătăți abilitățile și mai mult.
+
+207
+00:15:10,380 --> 00:15:12,250
+Multumesc tuturor si te voi vedea la urmatoarea conferinta

@@ -1,0 +1,807 @@
+1
+00:00:05,850 --> 00:00:10,470
+Olá a todos e seja bem vindo à palestra do quadro de dados e nesta palestra,
+
+2
+00:00:10,470 --> 00:00:15,170
+vamos finalmente aprender sobre os quadros de dados criando os quadros de dados de objetos sérios.
+
+3
+00:00:15,180 --> 00:00:17,800
+Será sua principal ferramenta ao trabalhar com pandas.
+
+4
+00:00:17,970 --> 00:00:21,680
+Vamos em frente e salte para o caderno Jupiter para ver como tudo funciona.
+
+5
+00:00:21,690 --> 00:00:22,020
+Tudo bem.
+
+6
+00:00:22,020 --> 00:00:24,410
+Aqui estou no Caderno Jupiter.
+
+7
+00:00:24,450 --> 00:00:29,940
+Nós vamos seguir em frente e dizer importantes algumas tortas e P e importar pandas
+
+8
+00:00:29,940 --> 00:00:35,880
+PD e eu vou fazer um último coisa aqui para salvar deles Pied-Bot random import Rand e.
+
+9
+00:00:36,350 --> 00:00:38,370
+E então vou sair e criar uma semente.
+
+10
+00:00:38,370 --> 00:00:42,660
+E o que significa semente é apenas para garantir que obtenhamos os mesmos números aleatórios.
+
+11
+00:00:42,660 --> 00:00:45,510
+Dessa forma, se você estiver me seguindo, você verá os mesmos números aleatórios.
+
+12
+00:00:45,540 --> 00:00:49,260
+Eu vejo que ela pode entrar e dizer aquela semente aleatória.
+
+13
+00:00:49,290 --> 00:00:49,550
+Tudo bem.
+
+14
+00:00:49,590 --> 00:00:57,840
+Vamos explorar o comando diferente e o ADF é igual ao quadro de dados de PD e você pode realmente usar a
+
+15
+00:00:57,840 --> 00:01:01,460
+guia aqui em Jupiter e até preencher automaticamente isso.
+
+16
+00:01:01,770 --> 00:01:05,200
+E note que o EFIS aproveita a guia de mudança do Windu.
+
+17
+00:01:05,200 --> 00:01:10,770
+Confira a docstring e a assinatura inicial para este quadro de dados PD.
+
+18
+00:01:10,770 --> 00:01:16,830
+Nós temos um argumento de dados e um argumento de índice exatamente como fizemos para a série, mas depois temos
+
+19
+00:01:16,830 --> 00:01:18,210
+esses argumentos de colunas adicionais.
+
+20
+00:01:18,450 --> 00:01:23,130
+Vamos prosseguir e crie isso com alguns dados aleatórios e veremos o aspecto de um
+
+21
+00:01:23,130 --> 00:01:24,000
+quadro de dados.
+
+22
+00:01:24,000 --> 00:01:31,090
+A primeira coisa que eu vou fazer é passar esses argumentos de dados e, na verdade, vou chamar Ranz
+
+23
+00:01:31,110 --> 00:01:37,620
+e 5 vírgulas 4 e, em seguida, as próximas que você deseja passar são o índice no índice.
+
+24
+00:01:37,620 --> 00:01:42,650
+Nós podemos apenas fazer uma lista de caracteres aqui.
+
+25
+00:01:42,660 --> 00:01:48,850
+Eu vou entrar e dizer A B C D E.
+
+26
+00:01:49,320 --> 00:01:53,950
+E, finalmente, para as colunas, vou seguir em frente e dizer o x y z.
+
+27
+00:01:54,120 --> 00:02:05,810
+Então, eu digo que w x y z irão avançar e executar isso e depois passar os dados simplesmente exibir e, então, obteremos uma
+
+28
+00:02:05,820 --> 00:02:07,020
+ótima exibição.
+
+29
+00:02:07,050 --> 00:02:12,370
+E isso provavelmente parece e se parece muito com as entradas do Excel e um caderno mais profundo e isso é bom.
+
+30
+00:02:12,540 --> 00:02:18,060
+Se você estiver usando outro editor de ID, talvez você não obtenha uma exibição nítida tão agradável,
+
+31
+00:02:18,060 --> 00:02:21,560
+mas você deve obter uma saída impressa semelhante a esta.
+
+32
+00:02:21,630 --> 00:02:22,060
+Tudo bem.
+
+33
+00:02:22,110 --> 00:02:31,130
+Então, basicamente, o que temos aqui é uma lista de colunas w x y z e as linhas correspondentes A B C D E.
+
+34
+00:02:31,170 --> 00:02:35,240
+Agora, cada uma dessas colunas é realmente apenas uma série de panda.
+
+35
+00:02:35,250 --> 00:02:42,060
+Então, W é uma série de panda, bem como X Y e Z e todos compartilham um índice comum e basicamente é todo
+
+36
+00:02:42,060 --> 00:02:46,350
+o quadro de dados, é apenas um monte de séries que compartilham um índice.
+
+37
+00:02:46,350 --> 00:02:51,830
+Avançemos e mostremos como podemos usar a indexação e a seleção realmente pegar um desses objetos
+
+38
+00:02:52,080 --> 00:02:59,280
+sérios ou várias dessas colunas de uma maneira e a maneira principal de fazer isso é dizendo DMF e, em seguida,
+
+39
+00:02:59,340 --> 00:03:02,920
+usando a notação Rackett e passando o nome da coluna .
+
+40
+00:03:02,940 --> 00:03:05,590
+Neste caso, vamos em frente e pegue a coluna W.
+
+41
+00:03:05,610 --> 00:03:12,180
+Então, como uma série de pass w e isso retorna a coluna W e agora dê uma olhada na saída.
+
+42
+00:03:12,180 --> 00:03:14,590
+Agora, isso realmente parece uma série.
+
+43
+00:03:14,590 --> 00:03:16,950
+E é por isso que é exatamente o que é a coluna W.
+
+44
+00:03:16,950 --> 00:03:20,160
+É apenas uma série e você pode realmente confirmar isso, dizendo.
+
+45
+00:03:20,160 --> 00:03:27,870
+Tipo de d f de W e mostra que é Panas esse núcleo que série essa série.
+
+46
+00:03:27,870 --> 00:03:33,940
+Se eu apenas disser o tipo no objeto DFA, obteremos um quadro de dados.
+
+47
+00:03:34,260 --> 00:03:39,420
+Então, novamente, apenas para reiterar o fato de que um quadro de dados é apenas um monte de séries que
+
+48
+00:03:39,450 --> 00:03:40,600
+compartilham o mesmo índice.
+
+49
+00:03:40,590 --> 00:03:45,270
+Agora, existem duas formas diferentes de pegar uma coluna a partir de um quadro de dados.
+
+50
+00:03:45,300 --> 00:03:49,780
+O caminho principal e o caminho devem sempre fazer isso usando este tipo de notação de suporte e depois
+
+51
+00:03:49,800 --> 00:03:51,090
+passar o nome da coluna.
+
+52
+00:03:51,090 --> 00:03:56,640
+No entanto, se você é muito familiar da sequela, muitas vezes você está selecionando uma coluna que você passa em uma tabela
+
+53
+00:03:57,090 --> 00:03:58,470
+e depois o nome da coluna.
+
+54
+00:03:58,530 --> 00:04:04,280
+Isso realmente também funciona para pantless, você poderia dizer ponto e, em seguida, o nome da coluna.
+
+55
+00:04:04,440 --> 00:04:10,020
+No entanto, eu recomendaria que você não use isso porque pode se confundir com os vários métodos que estão
+
+56
+00:04:10,020 --> 00:04:11,870
+disponíveis fora do quadro de dados.
+
+57
+00:04:11,940 --> 00:04:18,160
+Por exemplo, se eu disser ponto DFA e depois clique na guia eu vejo um monte de métodos disponíveis para mim.
+
+58
+00:04:18,480 --> 00:04:22,980
+E esses são um monte de métodos que nós vamos aprender sobre como aprendemos mais sobre pandas,
+
+59
+00:04:22,980 --> 00:04:28,050
+mas o que pode acontecer é que um desses métodos é substituído por um nome de coluna e, em seguida,
+
+60
+00:04:28,050 --> 00:04:32,420
+Panther vai se confundir se você está perguntando para um método ou um nome de coluna real.
+
+61
+00:04:32,430 --> 00:04:38,410
+Então, você deve fazer para evitar que, como sempre, é uma espécie de notação de suporte ao solicitar uma coluna.
+
+62
+00:04:38,970 --> 00:04:39,500
+ESTÁ BEM.
+
+63
+00:04:39,510 --> 00:04:44,590
+Se você deseja várias colunas de volta, então você pode seguir em frente e coloque uma lista de colunas.
+
+64
+00:04:44,820 --> 00:04:49,800
+e então eu vou passar e uma lista de nomes de colunas que resultará em outro conjunto de colchetes aqui.
+
+65
+00:04:49,800 --> 00:04:52,170
+Então saiba que eu colo entre os meus colchetes
+
+66
+00:04:52,200 --> 00:05:02,970
+Por exemplo, se eu quero as colunas W e Z, eu transmito uma lista aqui destacada WNC e recebo um quadro de
+
+67
+00:05:02,970 --> 00:05:05,520
+dados contendo essas duas séries.
+
+68
+00:05:05,520 --> 00:05:10,620
+E isso significa que quando eu pedir várias colunas, eu realmente estou recebendo um quadro de dados Eu pedi
+
+69
+00:05:10,620 --> 00:05:13,240
+apenas uma única coluna que eu voltarei a uma série.
+
+70
+00:05:13,380 --> 00:05:17,510
+E no sistema de caderno de Jupiter que é conhecido como a saída é exibida.
+
+71
+00:05:17,990 --> 00:05:25,540
+OK, vamos continuar e avançar para criar uma nova coluna, o Palla apoia a criação de novas
+
+72
+00:05:25,560 --> 00:05:29,390
+colunas, apenas especificando a coluna como se já existisse.
+
+73
+00:05:29,400 --> 00:05:31,100
+Por exemplo, novo.
+
+74
+00:05:31,140 --> 00:05:34,550
+Agora, se eu executar isso, recebo um erro e é um detentor.
+
+75
+00:05:34,570 --> 00:05:37,500
+O pergaminho até aqui é dizer Kear novo.
+
+76
+00:05:37,680 --> 00:05:42,560
+E, basicamente, apenas está tentando dizer-lhe que não pode achar que não existe uma novidade.
+
+77
+00:05:42,570 --> 00:05:50,190
+No entanto, quando você está criando uma marca de hash, solte e coloque isso novamente quando estiver criando uma
+
+78
+00:05:50,190 --> 00:05:51,200
+nova coluna.
+
+79
+00:05:51,210 --> 00:05:56,280
+lado direito do signo igual use outras colunas com aritmética para retirar uma
+
+80
+00:05:56,850 --> 00:06:05,610
+nova coluna, por exemplo, você pode dizer a nova coluna do DSF como se já existisse é igual a DFW Plus the fly.
+
+81
+00:06:05,610 --> 00:06:09,970
+Você pode realmente defini-lo como se já existisse e, em seguida, no
+
+82
+00:06:10,150 --> 00:06:11,710
+E isso será executado sem erro.
+
+83
+00:06:11,910 --> 00:06:18,780
+E agora, se eu verificar DF ​​se essa nova coluna estiver realmente lá e para remover colunas, você
+
+84
+00:06:18,780 --> 00:06:19,890
+pode dizer DFT.
+
+85
+00:06:19,920 --> 00:06:28,020
+Drop, você pode dizer queda deific e passar no nome da coluna atual que deseja soltar.
+
+86
+00:06:28,020 --> 00:06:31,430
+Agora, se você apenas fizer isso sozinho, você receberá um erro.
+
+87
+00:06:31,500 --> 00:06:35,340
+E vamos entrar e verificar o que esse erro irá dizer erro de valor.
+
+88
+00:06:35,390 --> 00:06:36,120
+Nós nos deslocamos para baixo.
+
+89
+00:06:36,120 --> 00:06:40,540
+Ele diz etiquetas novas não contidas no Access.
+
+90
+00:06:40,620 --> 00:06:47,660
+E se eu clicar na guia shift no aviso de método de queda que, por padrão, diz que o acesso é
+
+91
+00:06:47,670 --> 00:06:52,390
+igual a zero acesso igual a zero para o método drop refere-se ao índice.
+
+92
+00:06:52,500 --> 00:07:01,050
+Se eu realmente quiser me referir às colunas que eu preciso especificar, o acesso é igual a 1 e então
+
+93
+00:07:01,680 --> 00:07:04,430
+ele irá colocar essa nova coluna aqui.
+
+94
+00:07:04,830 --> 00:07:10,260
+Agora, há duas coisas a serem observadas ao usar essa queda DFT, o primeiro a saber é
+
+95
+00:07:10,260 --> 00:07:15,900
+que isso não acontece no lugar, significa que não estou realmente afetando o estado do quadro, a menos
+
+96
+00:07:16,070 --> 00:07:18,370
+que especifique especificamente para isso ocorrer no lugar.
+
+97
+00:07:18,470 --> 00:07:20,450
+Quero mostrar o que quero dizer com isso.
+
+98
+00:07:20,610 --> 00:07:28,380
+Eu liguei para esta linha D-flat drop você acessa igual a 1 se eu liguei para DMF, vou ver que eu ainda
+
+99
+00:07:28,380 --> 00:07:29,910
+tenho essa nova coluna.
+
+100
+00:07:29,910 --> 00:07:36,030
+Isso significa que eu preciso realmente especificar como um argumento para mudar, tem que mostrar o
+
+101
+00:07:36,630 --> 00:07:42,840
+argumento no local em vários métodos do Pandurs, exigindo que esses argumentos sejam definidos como verdadeiros.
+
+102
+00:07:42,990 --> 00:07:48,450
+E a razão pela qual os panderers fazem isso é que você não acidentalmente perca informações no
+
+103
+00:07:48,450 --> 00:07:53,820
+caso de você ter feito um monte de ajustes em seus dados, você não quer perder acidentalmente.
+
+104
+00:07:53,820 --> 00:07:59,520
+no lugar igual a verdade se você realmente quiser que muitas dessas mudanças permaneçam e ocorram no local.
+
+105
+00:07:59,550 --> 00:08:01,260
+Então, Pandurs exige que você diga
+
+106
+00:08:01,380 --> 00:08:07,800
+E agora, se eu chamar o DFI executando o aviso da célula, a coluna nova agora é removida
+
+107
+00:08:07,800 --> 00:08:15,960
+permanentemente porque ocorreu no lugar e algo a observar aqui é que também podemos usar a gota esquerda para descartar as linhas, por
+
+108
+00:08:15,960 --> 00:08:16,450
+exemplo.
+
+109
+00:08:16,470 --> 00:08:19,930
+Vamos sair e usar isso para soltar a linha e.
+
+110
+00:08:20,130 --> 00:08:28,290
+Eu digo que DF caiu. Eu passo um E e também posso dizer que o eixo é igual a zero.
+
+111
+00:08:28,290 --> 00:08:30,870
+Agora, lembre-se de que você realmente não precisa adicionar isso em um argumento.
+
+112
+00:08:30,870 --> 00:08:32,230
+Esse é o padrão.
+
+113
+00:08:32,820 --> 00:08:40,950
+Então, vamos e apenas digamos a gota E e lá conseguimos soltar o e desde que Access seja igual a
+
+114
+00:08:40,950 --> 00:08:41,410
+zero.
+
+115
+00:08:41,460 --> 00:08:45,260
+E funciona de qualquer maneira, eu poderia dizer X sequela de 0 e isso vai funcionar novamente.
+
+116
+00:08:45,660 --> 00:08:48,140
+E observe aqui que não estou fazendo isso no lugar.
+
+117
+00:08:48,360 --> 00:08:48,880
+ESTÁ BEM.
+
+118
+00:08:49,020 --> 00:08:54,930
+Às vezes, um ponto de confusão é por que as linhas são zero, tanto quanto são acessadas, e por
+
+119
+00:08:54,960 --> 00:08:58,880
+que as colunas são uma onde a referência realmente volta a pi.
+
+120
+00:08:59,010 --> 00:09:06,850
+Uma vez que os quadros de dados são essencialmente apenas marcadores de índice extravagantes em cima de uma matriz PI para mostrar isso.
+
+121
+00:09:07,080 --> 00:09:14,750
+Posso dizer que o DF pensou em forma exatamente como fizemos com uma matriz de tubulação e não se essa forma é uma tupla
+
+122
+00:09:14,800 --> 00:09:19,750
+para uma matriz imaginal dentária aqui e no índice zero ou o número de linhas.
+
+123
+00:09:19,890 --> 00:09:23,020
+Então, se eu disser ZF aqui tenho cinco linhas.
+
+124
+00:09:23,070 --> 00:09:29,990
+A B C e D E e, em seguida, no índice, eu tenho quatro colunas w x y z.
+
+125
+00:09:30,150 --> 00:09:37,530
+É por isso que as linhas são referidas como o eixo zero e as colunas são referidas como o único
+
+126
+00:09:37,530 --> 00:09:43,020
+eixo porque é diretamente retirado da forma exatamente como você teria uma matriz de torta.
+
+127
+00:09:43,020 --> 00:09:43,880
+ESTÁ BEM.
+
+128
+00:09:43,920 --> 00:09:46,260
+Agora vamos falar sobre selecionar linhas.
+
+129
+00:09:46,290 --> 00:09:51,840
+Nós conversamos sobre a seleção de colunas que você faz, dizendo DMF e entre colchetes você passa
+
+130
+00:09:51,840 --> 00:09:53,280
+o nome da coluna.
+
+131
+00:09:53,280 --> 00:10:01,350
+Ou se você quiser muitas colunas, coloque uma lista dos nomes das colunas, como Z e, em seguida, vírgula X e
+
+132
+00:10:01,350 --> 00:10:02,430
+fecha esse suporte.
+
+133
+00:10:02,430 --> 00:10:07,460
+Então eu estou passando uma lista de nomes de coluna e eu devolvo um quadro de dados dessas colunas.
+
+134
+00:10:07,500 --> 00:10:09,940
+Vamos falar sobre selecionar linhas.
+
+135
+00:10:10,900 --> 00:10:14,650
+Quer dar uma olhada no meu quadro de dados novamente aqui está o meu quadro de dados.
+
+136
+00:10:14,650 --> 00:10:18,400
+ABC O E é minha rosa WXYZ são as colunas.
+
+137
+00:10:18,400 --> 00:10:25,120
+Há duas maneiras de selecionar linhas em um quadro de dados e você deve chamar um método fora disso.
+
+138
+00:10:25,120 --> 00:10:26,900
+E há dois métodos para usar.
+
+139
+00:10:26,890 --> 00:10:31,040
+Um é Loek EHLO ver por localização.
+
+140
+00:10:31,690 --> 00:10:38,030
+E isso vai levar um rótulo para que você também possa fazer uma guia de mudança aqui para ver esta propriedade e algo para
+
+141
+00:10:38,020 --> 00:10:38,540
+saber aqui.
+
+142
+00:10:38,560 --> 00:10:43,770
+Estou usando colchetes que é um pouco estranho, mas é assim que funciona com os pandas.
+
+143
+00:10:44,000 --> 00:10:48,920
+Você passa no LRC e depois passa entre colchetes a linha que deseja.
+
+144
+00:10:48,910 --> 00:10:52,030
+Por exemplo, se eu quisesse a linha, eu apenas passava.
+
+145
+00:10:52,280 --> 00:10:56,210
+Veja que eu passo o rótulo desse índice e isso retorna.
+
+146
+00:10:56,240 --> 00:10:58,150
+Não há uma série.
+
+147
+00:10:58,150 --> 00:11:04,310
+E isso vem à nossa segunda conclusão, que não só são todas as séries de colunas, mas as linhas são séries, bem
+
+148
+00:11:04,300 --> 00:11:06,730
+como a maneira como elas vão conseguir retornos.
+
+149
+00:11:06,880 --> 00:11:09,780
+Quando você os solicita em Pandas.
+
+150
+00:11:10,090 --> 00:11:16,140
+Agora, vamos discutir a segunda maneira de pegar uma linha que se baseia na próxima posição.
+
+151
+00:11:16,510 --> 00:11:17,750
+Eu posso usar DFT.
+
+152
+00:11:17,840 --> 00:11:25,180
+I Loek realmente em uma posição de índice numérico, mesmo que meus eixos sejam rotulados por strings.
+
+153
+00:11:25,180 --> 00:11:34,310
+Por exemplo, se eu quiser ver essa linha, eu posso fazer isso duas maneiras pelas quais eu posso dizer DF ELO ver por uma localização e entre
+
+154
+00:11:34,380 --> 00:11:42,190
+parênteses passar o nome da linha que é C ou posso dizer que o EHLO vê qual é a localização baseada em índice
+
+155
+00:11:42,200 --> 00:11:43,690
+e conta o índice diz.
+
+156
+00:11:43,690 --> 00:11:45,870
+Então, 0 1 2.
+
+157
+00:11:46,100 --> 00:11:51,790
+E então, no I Alosi, apressamos a adicionar isso também retorna essa linha.
+
+158
+00:11:51,790 --> 00:11:57,250
+E isso basicamente significa que você tem duas maneiras de selecionar linhas usando o EHLO, veja se
+
+159
+00:11:57,250 --> 00:12:04,220
+você quer a localização ou o índice baseado em rotina ou eu, eles vêem se você quer o índice com base numérica.
+
+160
+00:12:04,240 --> 00:12:09,640
+e colunas e isso realmente será muito familiar para você, já que acabamos de aprender sobre pi.
+
+161
+00:12:09,640 --> 00:12:12,680
+OK, vamos falar sobre como selecionar subconjuntos de linhas
+
+162
+00:12:13,250 --> 00:12:21,530
+Podemos dizer que a DFI pensou que a EHLO veria se queremos selecionar um subconjunto de linhas e colunas, podemos passar
+
+163
+00:12:21,520 --> 00:12:25,400
+assim como fizemos com Num. Pi usando notação comum.
+
+164
+00:12:25,390 --> 00:12:28,550
+A linha que queremos e depois a coluna que queremos.
+
+165
+00:12:28,580 --> 00:12:36,520
+Então eu quero que o valor em Linha seja a coluna Y e isso retorna apenas um único valor lá.
+
+166
+00:12:36,550 --> 00:12:43,220
+Então, se eu olhar para o meu DFA novamente olhando para a coluna y eu tenho esse negativo 0. 8 para obter o mesmo
+
+167
+00:12:43,210 --> 00:12:44,610
+resultado aqui.
+
+168
+00:12:44,620 --> 00:12:52,700
+quer um subconjunto disso, você pode dizer que Dhia eles vêem e, em seguida, pasan uma lista separada por vírgulas.
+
+169
+00:12:52,690 --> 00:12:58,950
+Então, como pi, você pode usar esta notação de coluna de vírgula e se você
+
+170
+00:12:59,000 --> 00:13:07,180
+Por exemplo, digamos que queria o subconjunto de uma linha b com as colunas W Y, então, basicamente, eu
+
+171
+00:13:07,540 --> 00:13:13,670
+queria isso 2. 7 0. 9 e 0. 6 5 e negativos são às vinte e quatro.
+
+172
+00:13:13,690 --> 00:13:20,650
+Isso significa que eu posso simplesmente passar em uma lista das linhas que eu quero, que neste caso é a e b.
+
+173
+00:13:21,700 --> 00:13:31,490
+E então eu posso passar em uma lista das colunas que eu quero neste caso, que é w e y, entre com isso e eu recebo
+
+174
+00:13:31,490 --> 00:13:34,360
+o retorno do subconjunto desse quadro de dados.
+
+175
+00:13:34,880 --> 00:13:35,540
+ESTÁ BEM.
+
+176
+00:13:35,770 --> 00:13:38,520
+Vamos parar aqui por enquanto e continuar a discussão.
+
+177
+00:13:38,530 --> 00:13:44,960
+Na segunda parte da leitura do quadro de dados e tudo isso no bloco de notas, os quadros de
+
+178
+00:13:44,950 --> 00:13:46,700
+dados sob a pasta panderers.
+
+179
+00:13:46,690 --> 00:13:51,610
+Vamos dar uma rápida revisão do que aprendemos até a criação de um quadro de dados.
+
+180
+00:13:51,620 --> 00:13:58,540
+Você só precisa dizer dados do passageiro do quadro de dados PD assin seu índice e, em seguida, passar nos nomes das suas colunas.
+
+181
+00:13:58,930 --> 00:14:03,670
+Normalmente, não estaremos construindo dados à mão de Frayne dessa maneira, na verdade, estaremos lendo dados de algum tipo
+
+182
+00:14:03,670 --> 00:14:08,250
+de fonte como um arquivo CSP, mas aprendemos a fazer a entrada de dados agora colocada mais tarde.
+
+183
+00:14:08,250 --> 00:14:14,030
+Por enquanto, se você quiser principalmente criar um quadro de dados para que você possa fazê-lo, então, para selecionar colunas de um
+
+184
+00:14:14,020 --> 00:14:16,100
+quadro de dados, você pode dizer o DSF.
+
+185
+00:14:16,100 --> 00:14:22,090
+E, em seguida, entre colchetes, passe na coluna que deseja ou passe na lista das colunas que deseja,
+
+186
+00:14:22,180 --> 00:14:25,630
+lembre-se de que cada coluna é realmente apenas uma série.
+
+187
+00:14:25,880 --> 00:14:31,430
+Você pode criar novas colunas com base em colunas antigas, usando esse tipo de aritmética.
+
+188
+00:14:31,450 --> 00:14:36,040
+Então você pode soltar colunas ou linhas usando o DFA que cai.
+
+189
+00:14:36,040 --> 00:14:38,730
+Lembre-se de que as necessidades de dizer no lugar são verdadeiras.
+
+190
+00:14:38,870 --> 00:14:44,820
+Se você quiser que o efeito seja permanente, diga Axis 1 para colunas e, em seguida, Acesse 0 para linhas.
+
+191
+00:14:44,980 --> 00:14:54,460
+E, novamente, isso vem dessa forma. O índice da tupla 0 foi linhas 1 índice foi colunas até selecionar linhas de
+
+192
+00:14:54,460 --> 00:14:56,350
+um quadro de dados.
+
+193
+00:14:56,360 --> 00:14:57,630
+Existem dois métodos aqui.
+
+194
+00:14:57,640 --> 00:15:03,670
+Existe o método Alosi que é uma localização de índice com base em marcação ou há o ponto.
+
+195
+00:15:03,720 --> 00:15:08,670
+I Alosi, que é a localização do índice com índice inteiro.
+
+196
+00:15:09,430 --> 00:15:15,100
+E então, se você deseja selecionar subconjuntos do quadro de dados, use o ponto LOC e passe os valores
+
+197
+00:15:15,250 --> 00:15:18,800
+ou as listas completas para retornar os subconjuntos do quadro de dados.
+
+198
+00:15:19,330 --> 00:15:22,230
+Ok, é isso mesmo para os princípios básicos dos quadros de dados.
+
+199
+00:15:22,420 --> 00:15:26,810
+Em seguida, vamos discutir ainda mais o que você pode fazer se Appin o estado
+
+200
+00:15:26,800 --> 00:15:28,880
+do quadro, como usar a seleção condicional.
+
+201
+00:15:28,880 --> 00:15:30,580
+Tudo bem, obrigado a todos.
+
+202
+00:15:30,590 --> 00:15:31,570
+Eu vou ver você na próxima palestra

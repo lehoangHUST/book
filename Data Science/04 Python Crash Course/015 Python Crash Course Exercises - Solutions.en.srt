@@ -1,0 +1,663 @@
+1
+00:00:05,130 --> 00:00:10,810
+Hello everyone and welcome to the Python crash course exercise solutions lecture and this lecture I'm
+
+2
+00:00:10,800 --> 00:00:15,180
+just going to be working through the solutions notebook and explaining the code and the solutions.
+
+3
+00:00:15,170 --> 00:00:20,440
+No but let's go ahead and jump to the exercise notebook so we can actually begin coding this out.
+
+4
+00:00:20,490 --> 00:00:20,760
+All right.
+
+5
+00:00:20,760 --> 00:00:23,990
+Here I am at the crash course exercises.
+
+6
+00:00:24,060 --> 00:00:28,250
+The first question we wanted to answer is what is 7:2 to the power of four.
+
+7
+00:00:28,350 --> 00:00:30,540
+Now there's technically two ways you could of done this.
+
+8
+00:00:30,570 --> 00:00:36,900
+You could've just typed seven times seven times seven times seven and gotten the correct answer.
+
+9
+00:00:36,910 --> 00:00:42,600
+But hopefully remember the correct way which is just calling to Asterix for exponents.
+
+10
+00:00:42,660 --> 00:00:44,740
+So seven to the power of four.
+
+11
+00:00:44,910 --> 00:00:47,730
+Run that cell and there is your answer.
+
+12
+00:00:47,730 --> 00:00:50,770
+Next up we want to split the string S is equal to.
+
+13
+00:00:50,780 --> 00:00:57,540
+Hi there Sam into a list we can go ahead and just grab this and we can see the example output lists
+
+14
+00:00:57,540 --> 00:00:59,890
+we want to actually create there.
+
+15
+00:00:59,910 --> 00:01:06,750
+So if I run a sequel to hi there Sam and call estop splits this will automatically split the string
+
+16
+00:01:07,320 --> 00:01:09,790
+into a list on the whitespace.
+
+17
+00:01:09,790 --> 00:01:15,840
+I remember we can actually pass any string character for example to what we actually want to split on
+
+18
+00:01:15,870 --> 00:01:19,750
+which we actually see that later on in another exercise.
+
+19
+00:01:19,980 --> 00:01:25,380
+Let's go into the next question which was given the variables plena equals earth and diameter is equal
+
+20
+00:01:25,380 --> 00:01:27,850
+to twelve thousand seven hundred forty two.
+
+21
+00:01:28,110 --> 00:01:30,710
+Use that format to print the following string.
+
+22
+00:01:30,840 --> 00:01:34,830
+The diameter of Earth is twelve thousand seven hundred forty two kilometers.
+
+23
+00:01:34,940 --> 00:01:41,220
+And go going to run the cell so we have these two variables to find and then I will say in a string
+
+24
+00:01:42,000 --> 00:01:49,500
+the diameter of Earth is told thousand seven hundred forty two kilometers.
+
+25
+00:01:49,520 --> 00:01:53,860
+Remember I want to use that format and I want these these two variables.
+
+26
+00:01:54,060 --> 00:02:02,070
+So I will replace earth with just a pair of curly brackets and also do the same for this diameter number
+
+27
+00:02:02,800 --> 00:02:11,280
+then I'm going to say that format and I will in planets diameter and I'll go ahead and print the whole
+
+28
+00:02:11,280 --> 00:02:13,460
+thing.
+
+29
+00:02:13,470 --> 00:02:14,950
+So it's this works.
+
+30
+00:02:15,030 --> 00:02:16,000
+And there we have it.
+
+31
+00:02:16,260 --> 00:02:22,350
+I could have also passed then some variable names here such as A and B and that set these equal to A
+
+32
+00:02:22,890 --> 00:02:23,970
+and B.
+
+33
+00:02:24,210 --> 00:02:25,650
+And that's the exact same thing.
+
+34
+00:02:25,650 --> 00:02:30,640
+So to you when you use that for the first one you have to make sure it's in the right order.
+
+35
+00:02:30,960 --> 00:02:35,550
+Next up given this nested list use indexing to grab the word Hello.
+
+36
+00:02:35,790 --> 00:02:36,670
+This is pretty tricky.
+
+37
+00:02:36,690 --> 00:02:42,770
+So you're going to take your time with this and start from the inside to the outside.
+
+38
+00:02:42,870 --> 00:02:44,620
+You can see here that we have hello.
+
+39
+00:02:44,700 --> 00:02:50,100
+And that's an a list and Jupiter and up it kind of helps you out with the bracket highlighting then
+
+40
+00:02:50,280 --> 00:02:56,820
+this is also inside of a list which is inside of another list which is inside of the most outer list
+
+41
+00:02:56,820 --> 00:02:57,310
+.
+
+42
+00:02:57,330 --> 00:03:06,730
+So this whole list right here is what we want to grab first and let's located at index 3 0 1 2 3.
+
+43
+00:03:07,140 --> 00:03:09,210
+We'll go ahead and grab that.
+
+44
+00:03:09,510 --> 00:03:15,930
+Now that I have this list I can see that the list that has my target word hello is the second item in
+
+45
+00:03:15,930 --> 00:03:19,790
+the list meaning it's an index one.
+
+46
+00:03:20,550 --> 00:03:24,240
+And now I'm going to break this down again so 0 1 2
+
+47
+00:03:27,150 --> 00:03:29,540
+and then I have a list of one element.
+
+48
+00:03:29,540 --> 00:03:32,170
+So I can go ahead and just grab that again for zero.
+
+49
+00:03:32,610 --> 00:03:35,090
+And then finally I have the string hello OK.
+
+50
+00:03:35,100 --> 00:03:39,660
+This is quite tricky and you'll never really have a situation like this in real life.
+
+51
+00:03:39,810 --> 00:03:44,190
+But when I work with pandas you will have to do things that are two levels deep.
+
+52
+00:03:44,190 --> 00:03:45,940
+So just keep that in mind.
+
+53
+00:03:46,440 --> 00:03:46,780
+All right.
+
+54
+00:03:46,800 --> 00:03:51,090
+Then the next question was given this nece dictionary grabbed the word hello.
+
+55
+00:03:51,420 --> 00:03:53,820
+Be prepared this will be annoying slash tricky.
+
+56
+00:03:53,820 --> 00:03:55,410
+So this is pretty tricky.
+
+57
+00:03:55,710 --> 00:03:57,810
+But let's go ahead and break it down step by step.
+
+58
+00:03:57,840 --> 00:04:01,190
+First thing you have to do is grab key one.
+
+59
+00:04:01,200 --> 00:04:05,410
+So if we look at the we can actually just call for the keys themselves.
+
+60
+00:04:05,640 --> 00:04:11,460
+And we actually only have one key in the most outside dictionary ok one we will go ahead and call that
+
+61
+00:04:11,470 --> 00:04:12,810
+.
+
+62
+00:04:13,530 --> 00:04:19,230
+And then now I have a list of some elements and notice that I want to grab this dictionary right here
+
+63
+00:04:19,230 --> 00:04:22,270
+which is at 0 1 2 3.
+
+64
+00:04:22,270 --> 00:04:25,410
+So index 3 of that list.
+
+65
+00:04:25,410 --> 00:04:31,920
+So keep in mind we're kind of mixing list indexing with key value pairs of a dictionary.
+
+66
+00:04:32,400 --> 00:04:36,810
+And then I have a dictionary again and I want to grab the value at the key.
+
+67
+00:04:36,810 --> 00:04:39,260
+Tricky.
+
+68
+00:04:40,020 --> 00:04:46,520
+Then I have a list again and I want to grab this dictionary which is 0 1 2 3.
+
+69
+00:04:47,810 --> 00:04:52,240
+And then I have a dictionary again and I want to grab a key target.
+
+70
+00:04:52,770 --> 00:04:59,210
+And then finally I have a list and I want to grab that last element 0 1 2 3.
+
+71
+00:05:00,000 --> 00:05:01,390
+And that is hello.
+
+72
+00:05:01,750 --> 00:05:02,130
+OK.
+
+73
+00:05:02,130 --> 00:05:04,390
+Quite tricky quite hard.
+
+74
+00:05:04,410 --> 00:05:09,520
+So don't worry too much if you weren't able to figure this out quickly because it is quite annoying
+
+75
+00:05:09,520 --> 00:05:09,570
+.
+
+76
+00:05:09,560 --> 00:05:15,250
+Sless tricky but hopefully you are able to actually understand the logic of this solution.
+
+77
+00:05:15,270 --> 00:05:18,210
+Next question is what is the main difference between a tuple and a list.
+
+78
+00:05:18,270 --> 00:05:21,450
+Well a tuple is immutable and a list is mutable.
+
+79
+00:05:21,450 --> 00:05:23,980
+That's the main difference.
+
+80
+00:05:24,060 --> 00:05:28,500
+After that we wanted to create a function that grabs the email Web site domain from a string in the
+
+81
+00:05:28,500 --> 00:05:30,960
+form user at domain dot com.
+
+82
+00:05:30,960 --> 00:05:36,610
+So for example passing user out domain dot com would return domain dot com.
+
+83
+00:05:37,260 --> 00:05:43,120
+Let's go ahead and create a function called domain gets.
+
+84
+00:05:43,530 --> 00:05:51,540
+It will take in an e-mail variable which will be a string and then we will return e-mail that splits
+
+85
+00:05:54,230 --> 00:05:56,330
+and we'll split on the symbol.
+
+86
+00:05:56,340 --> 00:05:58,900
+Let's go in and see how that works.
+
+87
+00:05:58,950 --> 00:06:00,550
+If I just run that.
+
+88
+00:06:01,170 --> 00:06:01,860
+OK great.
+
+89
+00:06:01,860 --> 00:06:08,900
+So if I just run that I end up getting split on this at symbol and I get a list back.
+
+90
+00:06:09,030 --> 00:06:14,360
+I want the second item in that list meaning I want to go ahead and grab index one on top of that.
+
+91
+00:06:14,430 --> 00:06:16,920
+And then if I run this I get the right answer.
+
+92
+00:06:16,950 --> 00:06:20,810
+That domain dot com.
+
+93
+00:06:20,820 --> 00:06:24,640
+Next up we want to create a basic function that returns true.
+
+94
+00:06:24,740 --> 00:06:27,940
+That's the word dog is contained in the input string.
+
+95
+00:06:28,020 --> 00:06:30,910
+And again don't worry about edge cases like punctuation being attached.
+
+96
+00:06:30,920 --> 00:06:37,940
+The word dog well we should account for capitalization or go ahead and do is create a function.
+
+97
+00:06:37,940 --> 00:06:47,850
+The fourth find dog takes in some variable and go ahead and call the variable S and then we will say
+
+98
+00:06:47,850 --> 00:06:57,720
+return we'll check if dog is in S in order to account for capitalization.
+
+99
+00:06:57,720 --> 00:07:03,060
+I will go ahead and lower everything in S and then I will split it so that it actually turns into a
+
+100
+00:07:03,060 --> 00:07:08,130
+list of objects and then when I run this it ends up being true.
+
+101
+00:07:08,280 --> 00:07:09,500
+Is there a dogs there.
+
+102
+00:07:09,540 --> 00:07:12,910
+Let me go in and show you what's actually happening when I passen this string.
+
+103
+00:07:12,960 --> 00:07:15,480
+I'll say s is equal to.
+
+104
+00:07:15,570 --> 00:07:18,030
+Is there a dog here.
+
+105
+00:07:19,410 --> 00:07:20,210
+Run the.
+
+106
+00:07:20,310 --> 00:07:27,360
+And then if I call estopped lower I will lower case everything and then if I say estopped split after
+
+107
+00:07:27,360 --> 00:07:34,800
+that lower I get this list and then I'm finally just checking is dog in that list.
+
+108
+00:07:34,800 --> 00:07:41,640
+So those are the steps that I'm performing in this one line statement that I want to create a function
+
+109
+00:07:41,640 --> 00:07:45,000
+that counts the number of times the word dog occurs in a string.
+
+110
+00:07:45,000 --> 00:07:48,570
+And again we can ignore edge cases.
+
+111
+00:07:49,020 --> 00:07:57,090
+We'll go ahead and say the F create a function called Count dog ticks and a string as t will set our
+
+112
+00:07:57,090 --> 00:08:03,830
+initial count to 0 and we'll say for word in and again will say s t.
+
+113
+00:08:03,880 --> 00:08:15,390
+Lower split in the same way we did for the last question and then colon if that word is equal to dog
+
+114
+00:08:16,560 --> 00:08:18,610
+we will go ahead and add 1 to the counts.
+
+115
+00:08:18,720 --> 00:08:22,590
+So say count is equal to count plus 1.
+
+116
+00:08:22,980 --> 00:08:26,070
+So you could say count is equal to count plus 1 or for shorthand.
+
+117
+00:08:26,070 --> 00:08:29,690
+What some people like to do is just say plus equals 1.
+
+118
+00:08:29,730 --> 00:08:31,880
+And that's the exact same thing.
+
+119
+00:08:31,890 --> 00:08:34,540
+Then finally I'll just return at the very end.
+
+120
+00:08:34,740 --> 00:08:37,470
+My count which is the number of times I saw that word dog.
+
+121
+00:08:37,470 --> 00:08:42,850
+Now if we go ahead and run this we get the correct answer here.
+
+122
+00:08:43,020 --> 00:08:47,670
+Next we wanted to use lambda expressions in the filter function to filter out words from a list that
+
+123
+00:08:47,670 --> 00:08:49,490
+don't start the letter S.
+
+124
+00:08:49,650 --> 00:08:56,460
+For example we have CQ is a list of words that should be filtered down to soup and then salad Let's
+
+125
+00:08:56,460 --> 00:08:58,650
+go and see how we can do this.
+
+126
+00:08:58,650 --> 00:09:06,030
+I'm going to say filter and then I get to use the land expression.
+
+127
+00:09:06,090 --> 00:09:14,100
+It's going to take in a word and it's going to check if the first elements in that word string is equal
+
+128
+00:09:14,100 --> 00:09:23,060
+to S and then not going to pass a sequence and then finally I will cast the whole thing as a list.
+
+129
+00:09:24,060 --> 00:09:25,170
+And that's the answer.
+
+130
+00:09:25,170 --> 00:09:26,480
+Soup and then salad.
+
+131
+00:09:26,550 --> 00:09:32,280
+So again for philtre this lambda expression or function the pudding what you passen needs to return
+
+132
+00:09:32,280 --> 00:09:38,020
+a boolean value and we go ahead and filter out the sequence based off these boolean values.
+
+133
+00:09:38,850 --> 00:09:39,150
+All right.
+
+134
+00:09:39,150 --> 00:09:41,160
+Here we are at the final problem.
+
+135
+00:09:41,280 --> 00:09:42,650
+The problem statement is this.
+
+136
+00:09:42,670 --> 00:09:46,570
+You're driving a little too fast and a police officer stops you.
+
+137
+00:09:46,620 --> 00:09:50,310
+You'll need to write a function to return one of three possible results.
+
+138
+00:09:50,310 --> 00:09:53,000
+No ticket small ticket or big ticket.
+
+139
+00:09:53,190 --> 00:09:56,650
+If your speed is 60 or less the result is no ticket.
+
+140
+00:09:56,700 --> 00:10:01,890
+If the speed is between 61 and 80 inclusive The result is small ticket.
+
+141
+00:10:01,890 --> 00:10:06,870
+If the speed is 81 or more the result is big ticket and the less it is your birthday which is encoded
+
+142
+00:10:06,870 --> 00:10:12,760
+as a boolean value in the parameters of the function on your birthday your speed can be 5 higher.
+
+143
+00:10:12,780 --> 00:10:14,120
+In all cases.
+
+144
+00:10:14,340 --> 00:10:15,800
+Meaning if it is your birthday.
+
+145
+00:10:15,810 --> 00:10:22,830
+So if is underscore birthday is true than the speed limit is raised five miles or five kilometers per
+
+146
+00:10:22,830 --> 00:10:23,970
+hour for you.
+
+147
+00:10:24,420 --> 00:10:26,290
+OK let's go ahead and get started.
+
+148
+00:10:26,310 --> 00:10:29,840
+We will delete this past statements.
+
+149
+00:10:29,910 --> 00:10:34,070
+First thing I want to do is check if it is someone's birthday and adjust the speed accordingly.
+
+150
+00:10:34,080 --> 00:10:37,080
+Will say if it is birth they
+
+151
+00:10:40,650 --> 00:10:48,500
+will say speeding is equal to speed minus five and then else.
+
+152
+00:10:49,050 --> 00:10:57,420
+Speeding is just equal to speed and then we'll go ahead and check now against speeding the conditions
+
+153
+00:10:57,450 --> 00:10:59,590
+for the tickets.
+
+154
+00:10:59,640 --> 00:11:06,450
+So again if speeding is greater than 80 then that's a big ticket.
+
+155
+00:11:06,510 --> 00:11:11,160
+So I'll go ahead and return the string big ticket.
+
+156
+00:11:12,680 --> 00:11:23,820
+Then we're going to say if speeding is greater than 60 Well that's going to then return a small ticket
+
+157
+00:11:26,040 --> 00:11:27,540
+and otherwise we'll have.
+
+158
+00:11:27,570 --> 00:11:32,870
+Else which would just be a return ticket.
+
+159
+00:11:33,120 --> 00:11:34,410
+And then we can go ahead and run this.
+
+160
+00:11:34,410 --> 00:11:40,040
+So 81 would usually be a big ticket but since it's your birthday we'll say it's true.
+
+161
+00:11:40,080 --> 00:11:41,700
+That should be a small ticket.
+
+162
+00:11:41,940 --> 00:11:46,910
+And there we have it and 81 false Well that's definitely a big ticket.
+
+163
+00:11:46,980 --> 00:11:47,840
+All right.
+
+164
+00:11:47,880 --> 00:11:49,620
+Hope you enjoyed the solutions.
+
+165
+00:11:49,620 --> 00:11:54,390
+Feel free to post any questions you have to the Q&A forums and I'll be happy to help you out there.
+
+166
+00:11:54,390 --> 00:11:56,220
+Thanks everyone and I'll see you at the next lecture

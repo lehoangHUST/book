@@ -1,0 +1,335 @@
+1
+00:00:05,160 --> 00:00:11,100
+Bună ziua tuturor și vă urez bun venit la partea finală opțională a seriilor de cursuri de finanțare a proiectelor.
+
+2
+00:00:11,580 --> 00:00:17,100
+În această parte finală, care este opțională, vom trece peste câteva dintre vizualizările de plotline și
+
+3
+00:00:17,280 --> 00:00:19,780
+cufflinks concepute special pentru datele financiare.
+
+4
+00:00:20,010 --> 00:00:23,070
+Să ieșim și să mergem la notebook-ul Jupiter pentru a începe.
+
+5
+00:00:23,070 --> 00:00:25,260
+OK, eu sunt la notebook-ul Jupiter.
+
+6
+00:00:25,260 --> 00:00:30,660
+Ultima dată când am plecat la crearea unei hărți de cluster folosind seaborne și am vrut să vă
+
+7
+00:00:30,660 --> 00:00:33,780
+arăt cum puteți crea o hartă de căldură folosind Clottey.
+
+8
+00:00:33,780 --> 00:00:37,000
+De fapt, puteți ieși și puteți lua această rată de date aici.
+
+9
+00:00:37,080 --> 00:00:45,560
+Datele de corelație se încadrează în această celulă și trebuie să ieșim și să salvăm această bază cât mai aproape de subliniere.
+
+10
+00:00:46,860 --> 00:00:49,920
+Și apoi vom intra și vom arunca o privire la miezul de închidere sau pătrat.
+
+11
+00:00:49,920 --> 00:00:52,740
+Asigurați-vă că avem cadrul corect de date.
+
+12
+00:00:52,740 --> 00:00:58,440
+Se pare că o facem în formă matricială și apoi putem să sunăm să complotez
+
+13
+00:00:58,440 --> 00:01:05,520
+asta și să precizez tipurile de hartă a căldurii și vei obține o hartă a căldurii care arată așa.
+
+14
+00:01:05,520 --> 00:01:08,520
+Acum această scală de culoare nu este foarte utilă.
+
+15
+00:01:08,520 --> 00:01:14,730
+Deci, puteți să mergeți mai departe și să introduceți o altă scală de culoare cu argumentele
+
+16
+00:01:14,730 --> 00:01:20,920
+scării culorilor și probabil cea mai utilă este roșu pentru albastru R D galben.
+
+17
+00:01:20,940 --> 00:01:28,350
+B și tu poți face referire la documentația grafică dacă vrei mai multe opțiuni de culoare.
+
+18
+00:01:28,420 --> 00:01:33,210
+Puteți verifica scala de culori, este puțin mai bună, merge de la 0 la 1 până la corelație.
+
+19
+00:01:33,240 --> 00:01:35,310
+Acest lucru este interactiv acum.
+
+20
+00:01:35,310 --> 00:01:41,470
+Acum prefer să văd vizualizarea proprie a lui Bourne, dar am vrut să fii conștient de opțiunile
+
+21
+00:01:41,520 --> 00:01:43,980
+de complot folosind biblioteca cu maneci.
+
+22
+00:01:43,980 --> 00:01:45,550
+În regulă.
+
+23
+00:01:45,600 --> 00:01:50,810
+Să mergem mai departe și să ajungem la capacitățile financiare specifice ale manșoanelor și ale liniei de complot.
+
+24
+00:01:51,540 --> 00:01:57,840
+Deci, puteți să mergeți mai departe și să creați o parcelă de lumânări folosind linia parcelei și permiteți-mi să intru și să vă arăt că
+
+25
+00:01:57,870 --> 00:01:58,810
+putem face asta.
+
+26
+00:01:58,830 --> 00:02:02,550
+Primul lucru pe care avem nevoie este să-l apucam pe Bank of America.
+
+27
+00:02:02,550 --> 00:02:07,620
+Voi face asta doar cu b c dacă aruncăm o privire la starea cadrului amintiți-ne că ne-am deschis
+
+28
+00:02:07,620 --> 00:02:14,640
+foarte aproape de aproape și avem nevoie de ea într-o anumită ordine de a folosi eu complot în modul pe care îl vom folosi în.
+
+29
+00:02:14,850 --> 00:02:16,560
+Așa că am de
+
+30
+00:02:19,830 --> 00:02:25,130
+gând să apuc să mă descurc foarte jos și apoi să-mi închid telefonul.
+
+31
+00:02:25,380 --> 00:02:27,660
+Nu vrem volumul real.
+
+32
+00:02:27,660 --> 00:02:32,230
+Și apoi vreau doar valorile pentru anul 2015.
+
+33
+00:02:32,240 --> 00:02:43,390
+Vreau sa spun ca este de orice folos I-X 2015 1 ianuarie 2016 arata ca un sir 2016.
+
+34
+00:02:43,430 --> 00:02:45,420
+Și să mergem și să spunem 1 ianuarie.
+
+35
+00:02:45,420 --> 00:02:53,070
+Deci toate valorile pentru 2015 voi salva acest lucru ca BAC 15.
+
+36
+00:02:54,180 --> 00:03:01,380
+Și apoi următoarea linie am să merg înainte și să spun că 15 a crezut că am complot și de fapt voi specifica ceva
+
+37
+00:03:01,380 --> 00:03:02,060
+în asta.
+
+38
+00:03:02,070 --> 00:03:07,660
+Plâng argumentele pe care le voi spune amare ca fiind egale cu Kandel.
+
+39
+00:03:08,700 --> 00:03:13,260
+Apoi, veți putea să creați un complot cu sfeșnic utilizând un complot.
+
+40
+00:03:13,260 --> 00:03:17,880
+Acum, dacă nu sunteți conștient de ceea ce este un complot de sfeșnic, este vorba despre analiza financiară.
+
+41
+00:03:17,880 --> 00:03:23,520
+În principiu, vă spune dacă stocul a urcat sau a coborât în ​​acea zi pe baza culorii,
+
+42
+00:03:23,520 --> 00:03:30,640
+astfel că verde crește roșu este în scădere și apoi un fel de vă spune prețul de deschidere și prețul de închidere aici.
+
+43
+00:03:30,650 --> 00:03:34,240
+Aceste informații puteți merge mai departe și căutați pe Wikipedia.
+
+44
+00:03:34,380 --> 00:03:36,890
+În cazul în care doriți mai multe informații, puteți vedea sfeșnicul.
+
+45
+00:03:36,900 --> 00:03:42,150
+Eu le-am citit de fapt, dar acest lucru este mai mult doar pentru analiza financiară, astfel încât în ​​principiu vă
+
+46
+00:03:42,150 --> 00:03:46,640
+spune deschis deschis scăzut scăzut și dacă stocul a urcat sau în jos în acea zi.
+
+47
+00:03:47,520 --> 00:03:48,220
+In regula.
+
+48
+00:03:48,480 --> 00:03:55,430
+Să mergem mai departe și să vedem următorul complot care este SMK și este în esență doar un simplu complot mediu
+
+49
+00:03:55,440 --> 00:03:56,270
+în mișcare.
+
+50
+00:03:56,280 --> 00:03:59,440
+Parcela poate crea, de asemenea, un fel de automat pentru tine.
+
+51
+00:03:59,520 --> 00:04:04,220
+Vom merge mai departe și vom face asta pentru stocul Morgan Stanley.
+
+52
+00:04:04,890 --> 00:04:09,180
+Așa că am să merg și să apuc coloana stângă a acțiunii Morgan Stanley.
+
+53
+00:04:09,210 --> 00:04:14,330
+Vreau doar să fac acest lucru pentru anul 2015, așa că voi specifica aceleași date.
+
+54
+00:04:14,330 --> 00:04:15,020
+Am făcut-o aici.
+
+55
+00:04:15,030 --> 00:04:16,200
+Să mergem
+
+56
+00:04:19,170 --> 00:04:28,690
+și să le luăm pe cei care vin aici să ia cipurile de la începutul anului 2015 și apoi o să spun un complot subliniat.
+
+57
+00:04:28,710 --> 00:04:35,430
+Și aceasta este capacitatea tehnică de complot analiză a manșetă și apoi am de gând să merg
+
+58
+00:04:35,430 --> 00:04:46,050
+să spun studiu este SMK nespecificate perioade pentru a fi o pereche de perioade vom merge și spune 13 21 și 55 care sunt un fel
+
+59
+00:04:46,050 --> 00:04:48,910
+de unele analize tehnice comune perioade.
+
+60
+00:04:49,320 --> 00:04:54,480
+Iar aici vedem mediile simple în mișcare și le compun un fel de rapoarte pe măsură ce vă
+
+61
+00:04:54,480 --> 00:05:00,170
+mișcați de-a lungul care este destul de frumos și puteți să măriți și să vedeți mai multe informații dacă doriți.
+
+62
+00:05:00,180 --> 00:05:00,820
+In regula.
+
+63
+00:05:01,080 --> 00:05:04,390
+Să mergem mai departe și să mergem mai departe aici.
+
+64
+00:05:04,410 --> 00:05:08,700
+Ultimul, care este terenul Bollinger Band pentru Bank of America.
+
+65
+00:05:09,000 --> 00:05:14,880
+Și din nou, aceasta este doar o altă analiză tehnică pe care o puteți face care dintre ele arată deviația standard a
+
+66
+00:05:14,970 --> 00:05:18,020
+prețului acțiunilor pe măsură ce aceasta se mișcă în timp.
+
+67
+00:05:18,270 --> 00:05:21,180
+Dar din nou vreau doar acest lucru pentru anul 2015.
+
+68
+00:05:21,210 --> 00:05:28,590
+Continuați și copiați și lipiți aceeași felie și faceți. un complot de subliniere a graficului de analiză tehnică și
+
+69
+00:05:28,590 --> 00:05:33,360
+studiul pe care îl vom face este egal cu șirul B O L L.
+
+70
+00:05:34,090 --> 00:05:39,900
+Acum ne uităm la asta putem vedea benzile superioare și inferioare pe măsură ce ne mișcăm, precum și o simplă
+
+71
+00:05:39,900 --> 00:05:43,530
+medie mobilă și apoi prețul real de închidere care este în portocaliu.
+
+72
+00:05:43,890 --> 00:05:45,590
+O.K.
+
+73
+00:05:45,870 --> 00:05:49,560
+Există cu siguranță mult mai multe subiecte de finanțare specifice aici.
+
+74
+00:05:49,560 --> 00:05:52,670
+Deci, nu vă faceți griji dacă nu înțelegeți tot ce am trecut.
+
+75
+00:05:52,800 --> 00:05:57,840
+Singurul lucru pe care ar trebui să-l îngrijorezi cu adevărat este ceea ce am făcut cu pandererii și cu unele
+
+76
+00:05:57,840 --> 00:06:00,420
+dintre operațiile de vizualizare de bază de-a lungul conferinței.
+
+77
+00:06:00,420 --> 00:06:05,610
+Deci, nu vă faceți griji dacă nu înțelegeți toate aceste parcele de analiză tehnică specifice, acestea sunt doar într-adevăr referințe
+
+78
+00:06:05,610 --> 00:06:09,990
+pentru persoanele care sunt deja familiarizate cu acest subiect, deoarece aceasta nu este o clasă de
+
+79
+00:06:09,990 --> 00:06:10,690
+analiză financiară.
+
+80
+00:06:10,770 --> 00:06:16,260
+Aceasta este doar o clasă de științe a datelor și analiza financiară este propriul domeniu de studiu.
+
+81
+00:06:16,260 --> 00:06:16,780
+In regula.
+
+82
+00:06:16,830 --> 00:06:21,810
+Sper că ați găsit acest lucru interesant dacă vă aflați într-o astfel de analiză și vă voi vedea
+
+83
+00:06:21,810 --> 00:06:22,710
+la următoarea conferință.
+
+84
+00:06:22,710 --> 00:06:23,720
+Multumesc tuturor.

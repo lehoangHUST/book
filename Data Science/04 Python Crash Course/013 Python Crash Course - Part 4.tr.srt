@@ -1,0 +1,823 @@
+1
+00:00:05,220 --> 00:00:06,050
+Herkese merhaba.
+
+2
+00:00:06,050 --> 00:00:12,060
+Bu serideki derslerde Python çarpışma dersi konferans dizisinin dördüncü bölümüne hoş geldiniz diyoruz,
+
+3
+00:00:12,120 --> 00:00:18,180
+lambda ifadelerini harita ve filtre işlevlerini ve ayrıca Python'daki farklı veri türlerinde kullanabileceğiniz
+
+4
+00:00:18,180 --> 00:00:19,920
+çeşitli yöntemleri tartışacağız.
+
+5
+00:00:19,920 --> 00:00:23,280
+Devam edin, başlamak için Jüpiter defterine atlayalım.
+
+6
+00:00:23,280 --> 00:00:23,550
+Tamam.
+
+7
+00:00:23,550 --> 00:00:25,130
+İşte Jüpiter defterindeyim.
+
+8
+00:00:25,170 --> 00:00:30,870
+tam işlev yazma yerine lambda ifadelerini nasıl kullanabileceğimizi tartışacağız.
+
+9
+00:00:30,870 --> 00:00:36,540
+Python'da kendi işlevlerinizi nasıl oluşturabileceğinizi tartıştığımız son kez, haritayı ve
+
+10
+00:00:36,540 --> 00:00:38,690
+filtre işlevlerini ve ardından
+
+11
+00:00:38,730 --> 00:00:44,210
+Devam edelim ve ölüm için yalnızca D anahtar kelimesini kullandığınız bir işlevi nasıl yazacağınızı hızlıca gözden geçirin.
+
+12
+00:00:44,400 --> 00:00:51,300
+Bu durumda işlev adı, bu değişkeni bir değişkeni bir argüman olarak kabul etmek için çağırıyorum.
+
+13
+00:00:51,300 --> 00:00:53,360
+Onlar.
+
+14
+00:00:53,360 --> 00:00:57,930
+Ve sonra sadece devam edip değişkenin iki kat arttıracağım.
+
+15
+00:00:58,440 --> 00:01:03,390
+Yani, zaman 2'yi 5 gibi bir sayı ile çağırırsam, 10 döndürür.
+
+16
+00:01:03,390 --> 00:01:07,760
+Şimdi devam edin ve harita fonksiyonunu tartışalım.
+
+17
+00:01:08,370 --> 00:01:12,160
+CQ adlı bir dizi yapacağım ve bir liste olacak.
+
+18
+00:01:12,180 --> 00:01:14,970
+Bir iki üç dört beş.
+
+19
+00:01:15,030 --> 00:01:23,400
+Şimdi, bu işlev sürelerini bu listedeki her bir öğeye uygulamak ve ardından çıktı vermek
+
+20
+00:01:23,520 --> 00:01:25,070
+istediğimi varsayalım.
+
+21
+00:01:25,290 --> 00:01:31,380
+Bunu yapmak için bir for döngüsü kullanabilir ve sonuçları başka bir listeye ekleyebilirim.
+
+22
+00:01:31,410 --> 00:01:37,960
+Ancak map, Python'da bu adımı kaydetmenize izin veren yerleşik bir işlevdir.
+
+23
+00:01:37,960 --> 00:01:39,390
+Devam edip matematik yazıp devam ettiriyor musun.
+
+24
+00:01:39,420 --> 00:01:44,280
+Haritaya ilişkin dokümantasyon dizesini gerçekten görmek için vardiya girişi yapabilirsiniz.
+
+25
+00:01:44,340 --> 00:01:49,340
+Ancak temel olarak iterasyonun her birinden bağımsız değişkenleri kullanarak işlevi hesaplayan bir
+
+26
+00:01:49,340 --> 00:01:50,250
+yineleyiciyi yaratacaktır.
+
+27
+00:01:50,520 --> 00:01:54,890
+Bırakın gerçekte ne anlama geldiğini açık basit İngilizce olarak açıklayayım.
+
+28
+00:01:54,990 --> 00:02:02,170
+Harita pasanına örneğin 2 kez bir fonksiyon söyleyeceksin.
+
+29
+00:02:02,340 --> 00:02:06,000
+Ve sonra bu fonksiyonu eşleştirmek istediğiniz dizilim.
+
+30
+00:02:06,150 --> 00:02:12,200
+Ve eğer koşarsanız, belleğinizin bu özel yerinde bir haritanız olduğunu bildirirler.
+
+31
+00:02:12,210 --> 00:02:19,050
+Aslında bu haritayı çalıştırmak ve sonucu bir liste olarak geri almak istiyorsanız, bunu yerleşik liste
+
+32
+00:02:19,080 --> 00:02:21,590
+işlevini kullanarak bir listeye atayın.
+
+33
+00:02:21,960 --> 00:02:28,890
+Ve sonra bu, nihayetinde, bu fonksiyonu bu dizideki her elemana eşlenmiş olarak geri getirecek ve bir
+
+34
+00:02:28,890 --> 00:02:30,490
+liste halinde geri getirecektir.
+
+35
+00:02:30,510 --> 00:02:34,130
+Ve şimdi görebiliyoruz ki her element iki kat arttı.
+
+36
+00:02:34,140 --> 00:02:39,760
+Şimdi iki dört altı sekiz on bir yerine iki üç dört beş var.
+
+37
+00:02:40,250 --> 00:02:41,220
+TAMAM.
+
+38
+00:02:41,220 --> 00:02:48,150
+Dolayısıyla, zamanları 2 gibi tam bir işlevi tamamen tanımlamam mı gerekiyor yoksa bu konuda daha kolay bir yol var mı
+
+39
+00:02:48,180 --> 00:02:49,610
+diye merak ediyor olabilirsiniz.
+
+40
+00:02:49,620 --> 00:02:54,480
+gibi bir şeyi kullandığınızda, aslında gitmeyeceğiniz tüm bir fonksiyonu yazmak ve tanımlamak istemez.
+
+41
+00:02:54,480 --> 00:02:55,650
+Çünkü genellikle map
+
+42
+00:02:55,770 --> 00:03:01,980
+Bu muhtemelen sadece bir kerelik bir şey olacak ve arazi ifadesinin oynandığı yer burası.
+
+43
+00:03:02,040 --> 00:03:09,590
+Bu işleve zamanları bir lambda ifadesine nasıl yeniden yazabildiğimizi size göstereceğim ve
+
+44
+00:03:09,590 --> 00:03:11,930
+yavaş yavaş içine atacağım.
+
+45
+00:03:12,360 --> 00:03:21,880
+Bu fonksiyon zamanları, aslında, bir satırda, iki nokta üst üsteğinin r times 2'yi döndürme
+
+46
+00:03:21,890 --> 00:03:23,190
+biçimine yazılabilir.
+
+47
+00:03:23,250 --> 00:03:28,010
+Ve eğer bu iki hücrenin koşarsam, yine de iyi sonuç verir.
+
+48
+00:03:28,050 --> 00:03:34,380
+tür yapıyı çoğaltmaya çalışacaktır, ancak varsayılan olarak ihtiyacımız olmayan kelimeleri kaldıracaktır.
+
+49
+00:03:34,980 --> 00:03:37,180
+Bir arazi ifadesi, bu
+
+50
+00:03:37,320 --> 00:03:42,150
+Bu konuda biraz düŞündüğünüzde F'ye ya da dönüşe gerçekten ihtiyacınız yoktur, çünkü bunlar sadece
+
+51
+00:03:42,150 --> 00:03:44,100
+bir fonksiyonda tabii ki verilen değerlerdir.
+
+52
+00:03:44,130 --> 00:03:48,530
+Adı belirtin ve arazi ifadesi için iade etmeniz gerekir.
+
+53
+00:03:48,570 --> 00:03:50,730
+Aksi takdirde anonim bir işlev olarak bilinir.
+
+54
+00:03:50,730 --> 00:03:55,200
+Sadece lamda ifadesi olan bir fonksiyonun tamamını tanımlamak istemediğiniz
+
+55
+00:03:55,200 --> 00:04:00,470
+bir durumda değiştirmek ve aslında bunu bu fonksiyonu okuyarak yapabilirsiniz.
+
+56
+00:04:00,480 --> 00:04:08,130
+sadece lambda yazıp sonra geri dönün ve aslında geri dönmek istediğinizi yazın.
+
+57
+00:04:08,130 --> 00:04:12,320
+Ama F'den kurtulup adını alıp bunun yerine
+
+58
+00:04:12,570 --> 00:04:15,970
+Ve bu, ifade edilen ülke.
+
+59
+00:04:16,020 --> 00:04:23,490
+Şimdi şunu söyleyebilirim, t'nin bu toprağa eşit olduğunu söyleyip sonra da t gibi 6 numaralı
+
+60
+00:04:23,520 --> 00:04:25,060
+t'yi çağırmak istiyordum.
+
+61
+00:04:25,260 --> 00:04:28,490
+Ve karşılığında iki kez altı tane geldiğimi görebiliyorum.
+
+62
+00:04:28,590 --> 00:04:32,970
+Bu yüzden genelde kara ifadesini böyle kullanmazdım, ancak kullanmak mümkün.
+
+63
+00:04:33,330 --> 00:04:39,060
+Eh, lambda ifadesini map gibi bir şey için kullanacaksın ya da bütün bir
+
+64
+00:04:39,060 --> 00:04:40,320
+işlevi tanımlamak yerine.
+
+65
+00:04:40,500 --> 00:04:49,060
+Sadece lamda ifadesini yazarsınız, burada aslında lambanın pasan olmasını istediğinizi söylersiniz ve
+
+66
+00:04:49,300 --> 00:04:55,400
+bu durumda iade etmek istediğiniz şey herşeyle çarpılacaktır.
+
+67
+00:04:55,450 --> 00:05:01,240
+Ve şimdi bunu aynı dizide yürütüyorsam, dizideki her bir öğeyi yakaladım ve üçlü
+
+68
+00:05:01,240 --> 00:05:06,310
+çarpdım ve artık resmi olarak bir bütün işlevi tanımlamak zorunda değilim.
+
+69
+00:05:06,370 --> 00:05:11,500
+Sadece bir lambda ifadesi lambda ifadeleri veya özellikle Pandurs kitaplığını öğrenmeye başladığımızda
+
+70
+00:05:11,510 --> 00:05:13,980
+çok şey kullanacak bir şey kullanabilirsiniz.
+
+71
+00:05:13,990 --> 00:05:18,330
+Bu konuda herhangi bir sorunuz varsa lütfen Q &amp; A forumlarını yayınlamaya çekinmeyin.
+
+72
+00:05:18,340 --> 00:05:25,130
+Ancak temel olarak sadece bir fonksiyonu tek bir temiz kod satırı içine yazmanın yolu.
+
+73
+00:05:25,330 --> 00:05:30,720
+Ve bunun nedeni genel olarak bir fonksiyonun tamamını yazmak ve tanımlamak istemediğinizden kaynaklanır.
+
+74
+00:05:31,150 --> 00:05:35,620
+Bununla birlikte, kara ifadeleriyle şimdiye kadar karıştıysanız, bu sizin için her zaman bir seçenektir.
+
+75
+00:05:35,620 --> 00:05:40,630
+Yalnızca zaman 2 için yaptığımız gibi resmi bir işlev tanımlayabilir ve bunun yerine kullanın.
+
+76
+00:05:40,620 --> 00:05:44,800
+Şimdi devam edin ve dahili filtre fonksiyonunu tartışalım.
+
+77
+00:05:44,800 --> 00:05:48,010
+Filtre, haritaya çok benzer bir yapıya sahip olacak.
+
+78
+00:05:48,120 --> 00:05:54,490
+Ancak, bir fonksiyonu bir dizideki her bir öğeye eşlemek yerine, bir dizideki
+
+79
+00:05:54,490 --> 00:05:55,570
+öğeleri filtreleyebiliriz.
+
+80
+00:05:55,570 --> 00:05:59,800
+Bırakın içeri girip sana bunu nasıl yapabildiğini göstereyim.
+
+81
+00:05:59,890 --> 00:06:09,190
+Devam edip filtreyi çağırın ve sonra filtrelerecek ve boolean değerlerini döndüren bir işlev
+
+82
+00:06:09,640 --> 00:06:13,460
+veya bir lambda ifadesini pasanlaştırmaya gidersiniz.
+
+83
+00:06:13,480 --> 00:06:27,070
+Mesela ben, lambda'nın iki sayıdaki iki nokta üstüste sayılacağını söyleyebilirim ki bu iki sayı iki sayı sıfıra eşit ve daha sonra
+
+84
+00:06:27,070 --> 00:06:28,490
+dizide geçecektir.
+
+85
+00:06:28,870 --> 00:06:31,530
+Ve bu sadece filtre ifadesini döndürür.
+
+86
+00:06:31,560 --> 00:06:34,100
+Aslında sonuçları geri almak istiyorum.
+
+87
+00:06:34,300 --> 00:06:36,230
+Bir listeye almam gerekiyor.
+
+88
+00:06:36,730 --> 00:06:43,030
+Ve bu sadece çift sayıları sıralarım 2 ve 4'e geri döndürür.
+
+89
+00:06:43,030 --> 00:06:45,400
+O halde burada olanları parçalayalım.
+
+90
+00:06:45,610 --> 00:06:54,070
+Diyelim ki filtre ve bu lambda ifadesi bir sayı alır ve bir çeşit koşullu işlemi temel alan koşullu
+
+91
+00:06:54,160 --> 00:06:56,950
+bir true veya false değeri döndürür.
+
+92
+00:06:57,000 --> 00:07:02,930
+Yani bir filtre, bir boolean değeri döndüren bir çeşit işlev veya lambda ifadesi kullanıyor olmalı.
+
+93
+00:07:02,950 --> 00:07:04,520
+Doğru ya da yanlış.
+
+94
+00:07:04,630 --> 00:07:08,680
+Ve sonra ilerleyip yapacağınız şey onu iterable bir nesne haline getirmektir.
+
+95
+00:07:08,680 --> 00:07:14,350
+Üzerinde liste çağırdığınızda, yalnızca bu ifadenin gerçekleştiği değerleri döndürür.
+
+96
+00:07:14,650 --> 00:07:18,390
+Bu durumda, sadece çift sayılar için filtreledik.
+
+97
+00:07:18,400 --> 00:07:19,300
+Tamam.
+
+98
+00:07:19,300 --> 00:07:22,170
+Şimdi devam edin ve yöntemleri tartışalım.
+
+99
+00:07:22,210 --> 00:07:28,450
+Yöntemler esasen, nesneyi etkileyecek veya sonucu bir şekilde döndürecek bir
+
+100
+00:07:28,570 --> 00:07:30,480
+nesneyi çıkarabilmenizin nedenidir.
+
+101
+00:07:30,490 --> 00:07:32,670
+Bırakıp ne demek istediğimi göstereyim.
+
+102
+00:07:32,750 --> 00:07:37,720
+S adlı bir cümle yapacağım ve böyle bir şey söyleyecektir.
+
+103
+00:07:38,380 --> 00:07:42,550
+Merhaba benim adım sermaye S. Am.
+
+104
+00:07:42,580 --> 00:07:51,970
+noktalar diyebilirim ve sekmeyi ve Jüpiter not defterini tıklarsam, mevcut tüm kamçı sekmesinden bir sonuç alırım.
+
+105
+00:07:51,970 --> 00:07:54,340
+Sam'i s ve ardından
+
+106
+00:07:54,340 --> 00:07:55,470
+Aşağı kaydır.
+
+107
+00:07:55,480 --> 00:08:00,040
+Bu dize nesnesinde mevcut tüm yöntemlerin bir sonucunu alacağım.
+
+108
+00:08:00,040 --> 00:08:04,300
+Artık bütün bunları gözden geçirmek için zamanımız yok ve bunların hepsi sadece
+
+109
+00:08:04,300 --> 00:08:06,080
+birkaçını kullanacağımız kurs boyunca kullanılmayacak.
+
+110
+00:08:06,100 --> 00:08:08,610
+Önemli olanları göstermek için içeri gireyim.
+
+111
+00:08:09,160 --> 00:08:14,120
+Düşük, bir dizede her harfi küçük harfle yazar.
+
+112
+00:08:14,230 --> 00:08:16,790
+Yakın parantez aramak zorunda olduğunuzu unutmayın.
+
+113
+00:08:17,050 --> 00:08:22,390
+Bu şekilde daha düşük seviyede görüşürseniz veya geri dönerseniz, daha düşük işlevle ilgili sizden bahsediyorsunuz demektir.
+
+114
+00:08:22,380 --> 00:08:27,430
+Daha önce bahsettiğim gibi, aksini yapmak isterseniz, parantezleri kapatarak
+
+115
+00:08:27,430 --> 00:08:28,310
+gerçekleştirmelisiniz.
+
+116
+00:08:28,330 --> 00:08:33,060
+Bu durumda, sadece arayabileceğiniz her şey büyük olurdu.
+
+117
+00:08:34,310 --> 00:08:42,210
+Pekala bir başka kullanışlı işlev veya yöntem, dizeler için beni bağışlarsa, split yöntemi varsayılan
+
+118
+00:08:42,250 --> 00:08:48,360
+olarak bu dizenin tüm boşluklarında bir dize böleceği bölme yöntemidir.
+
+119
+00:08:48,370 --> 00:08:50,860
+Merhaba benim adım Sam.
+
+120
+00:08:50,860 --> 00:08:55,240
+Estopped split dediğimizde bunu tüm boşluklara böleceğiz.
+
+121
+00:08:55,240 --> 00:08:59,340
+Bu dersin ilerleyen bölümlerinde metin analizi için gerçekten faydalı olacak.
+
+122
+00:08:59,350 --> 00:09:01,370
+İzin ver bir örnek vereyim.
+
+123
+00:09:01,380 --> 00:09:04,590
+Diyelim ki bir şey söyleyen bir tweetimiz var.
+
+124
+00:09:04,890 --> 00:09:10,150
+Spor karma etiket sporlarına gidin.
+
+125
+00:09:10,520 --> 00:09:19,290
+Cıvıldamak düşüncelerimiz böler diyelim, bu bölme metinleri boşluklara dayalı bir listeye bölecektir.
+
+126
+00:09:19,450 --> 00:09:26,530
+Ancak, belirli öğeleri veya karakterleri ayırmak için aslında bir dizeyi bölme içine sokabiliriz.
+
+127
+00:09:26,710 --> 00:09:33,360
+Karma etiketini gönderir ve çalıştırırsam dize, mesaja sahip olacağı ve ardından sonunda bir karma etiketinin
+
+128
+00:09:33,370 --> 00:09:36,230
+bulunduğu bir karma etiket bulduğu bölünecektir.
+
+129
+00:09:36,550 --> 00:09:39,220
+Ve bu dizin olsa bile aslında bir liste döndürür.
+
+130
+00:09:39,220 --> 00:09:46,530
+Sadece hash etiketini almak istersem parantezlerden birini ve tüm dönüş sporlarını söyleyebilirim, bu nedenle bazı örnek
+
+131
+00:09:46,540 --> 00:09:51,450
+tweet dizelerinden karma etiketleri yakalamak istiyorsanız bunun nasıl yararlı olacağını görebiliriz.
+
+132
+00:09:51,760 --> 00:09:52,780
+TAMAM.
+
+133
+00:09:52,780 --> 00:09:56,710
+Bunlar, E-string üst alt uç bölme için yararlı yöntemlerdir.
+
+134
+00:09:56,710 --> 00:09:57,200
+Bunlar iyi.
+
+135
+00:09:57,250 --> 00:09:59,620
+Kurs boyunca kullanacağımız olanlar bunlar.
+
+136
+00:10:00,910 --> 00:10:03,040
+Sözlüklerle yapabileceğiniz bir şey çıkarın.
+
+137
+00:10:03,250 --> 00:10:04,690
+Bu yüzden bir sözlükte hatırla.
+
+138
+00:10:04,730 --> 00:10:06,860
+Gidip, yaşlı olup olmadığımız konusuna bakalım.
+
+139
+00:10:07,180 --> 00:10:15,780
+Peki o zaman bunu bir tane değerli K-1 olacak şekilde yeniden atayın.
+
+140
+00:10:15,880 --> 00:10:20,800
+Ve sonra Kate Two'nin iki değerin anahtarı olduğunu söyleyeceğiz.
+
+141
+00:10:20,800 --> 00:10:21,440
+Tamam.
+
+142
+00:10:21,700 --> 00:10:22,580
+İşte benim sözlüğüm.
+
+143
+00:10:22,600 --> 00:10:24,920
+K. Biri bir ila iki arasındadır.
+
+144
+00:10:24,940 --> 00:10:30,510
+Şimdi d noktası diyebiliriz ve kullanabileceğiniz çeşitli yöntemleri görmek için sekmeyi tıklayabilirsiniz.
+
+145
+00:10:30,700 --> 00:10:38,140
+Bazı yararlı olanlar tuş yöntemidir ve bu sadece tuşları sözlüğe döndürür.
+
+146
+00:10:38,140 --> 00:10:47,710
+Öğeleri sorarsanız, bu sözlük öğelerini döndürür ve sonra da yalnızca bakıp soracağımızı
+
+147
+00:10:47,710 --> 00:10:48,870
+sorabiliriz.
+
+148
+00:10:49,060 --> 00:10:53,670
+Pop, al ya da değer diyebilirsiniz.
+
+149
+00:10:53,830 --> 00:10:55,680
+Yani sözlük değerlerini istersen.
+
+150
+00:10:55,720 --> 00:10:57,430
+Bu değerleri döndürür.
+
+151
+00:10:57,430 --> 00:10:59,810
+Sözlüklerin sipariş almadıklarını unutmayın.
+
+152
+00:11:00,040 --> 00:11:04,690
+gerçekten kullanmayacağım, ancak bunları listeler için kullanışlı yöntemlerden haberdar etmenizi isterim.
+
+153
+00:11:05,660 --> 00:11:07,500
+Anahtar öğelerini veya dersin değerlerini
+
+154
+00:11:07,510 --> 00:11:08,740
+Bir liste hazırlamak için dışarı çıkacağım.
+
+155
+00:11:08,750 --> 00:11:10,530
+Ls t.
+
+156
+00:11:10,540 --> 00:11:12,680
+1'den 3'e söyleyin.
+
+157
+00:11:12,820 --> 00:11:20,920
+Pop'u çağırarak bir listeden bir öğeyi pop edebilirsiniz ve bu pop pencereye gelecek ve listedeki son öğeyi döndürür
+
+158
+00:11:21,460 --> 00:11:24,510
+ve bu çağrıldığında o değişikliğin kalıcı olur.
+
+159
+00:11:24,820 --> 00:11:36,250
+Bu demek oluyor ki eğer devam edersek listede bir iki üç dört beş olduğunu söyleyebilirsiniz; öğe, ls t pop'a eşit
+
+160
+00:11:36,710 --> 00:11:44,730
+ve bu listenin son maddesini çıkaracak ve eğer o maddeyi ararsak yeniden atanıyor demektir.
+
+161
+00:11:44,800 --> 00:11:53,440
+5 şimdi pop listesidir ve aslında pop yöntemiyle pop dizin değerini geçirebileceğiniz
+
+162
+00:11:53,440 --> 00:11:54,730
+bir öğedir.
+
+163
+00:11:54,730 --> 00:12:01,150
+İlk önce LS T-top pop 0'a eşit olduğunu söylerseniz şunu çalıştırın.
+
+164
+00:12:01,150 --> 00:12:02,870
+LS T'ye bir göz atın.
+
+165
+00:12:02,950 --> 00:12:11,100
+Şimdi dizin 0 atıldı ve ilk değişkenimiz ilk öğe olan değişken.
+
+166
+00:12:11,320 --> 00:12:14,270
+Yani pop, gerçekten kullanışlı bir yöntemdir ve eklenmiştir.
+
+167
+00:12:14,290 --> 00:12:15,860
+Ama aslında bunu daha önce gördük.
+
+168
+00:12:16,090 --> 00:12:22,620
+Bu sadece listenin sonuna yeni bir madde eklemenize izin verir.
+
+169
+00:12:23,050 --> 00:12:23,720
+Tamam.
+
+170
+00:12:24,010 --> 00:12:29,560
+Sonunda sana göstermek istediğim birkaç şey in operatörüdür.
+
+171
+00:12:29,560 --> 00:12:36,140
+Dolayısıyla bir şeyin bir listede olup olmadığını kontrol etmek isterseniz, kontrol etmek istediğiniz şeyi
+
+172
+00:12:36,140 --> 00:12:39,500
+söyleyebilir, daha sonra da listenin kendisi olabilir.
+
+173
+00:12:39,610 --> 00:12:54,100
+Yani 1'den 3'e kadar olan X, x y ve z döndüren içeren listede x'e karşı false döndürür.
+
+174
+00:12:54,100 --> 00:12:58,900
+Ve nihayet ele alacağımız bu python kazası dersinin en sonuncusu, tuple paketten çıkarma tuple
+
+175
+00:12:59,410 --> 00:13:03,370
+paketini açmanın gerçekten zarif bir özelliğidir ve sana nasıl çalıştığını göstereceğim.
+
+176
+00:13:03,370 --> 00:13:11,270
+Bir tuple listesi içeren bir değişken x'e sahip olduğunu düşünün.
+
+177
+00:13:12,010 --> 00:13:19,740
+Bir iki üç dört ve altı beşimiz olacak.
+
+178
+00:13:19,750 --> 00:13:29,140
+Yani eğer X'e bakarsam, X'deki ilk madde 1 ve 2'lik bir tuple'dir ve aslında bu tuple'dan öğeler alabilirim,
+
+179
+00:13:29,140 --> 00:13:33,040
+böylece birini kapabilirim ya da iki tane toplayabilirim.
+
+180
+00:13:33,130 --> 00:13:38,410
+Ayrıca, tuple açma denilen bir şey yapabilirim ve bu, tuple listesinde
+
+181
+00:13:38,410 --> 00:13:40,030
+yineleme yaparken çalışacaktır.
+
+182
+00:13:40,030 --> 00:13:45,910
+Bir tür listenin oluşturulması bu tür bir Python'da çok yaygındır ve bir çok işlev bu
+
+183
+00:13:45,910 --> 00:13:47,550
+biçime bir sonuç döndürür.
+
+184
+00:13:47,830 --> 00:14:00,230
+Bu nedenle, bir takım halinde ve paketleme yapıyoruz, bu nedenle X baskılarındaki kalemde öğe için söyleyebileceğimiz şey.
+
+185
+00:14:00,520 --> 00:14:07,300
+Ve ne zaman koştuğumda ilerliyor ve tüm tuple'ları bende yazdırabilirim ve
+
+186
+00:14:07,390 --> 00:14:18,280
+tuple'leri yazdırıyorum, bu tuple'ları açmamı sağlıyor bu yüzden böyle bir şey yapabilmem için B'de bir virgül B yazdırıyor.
+
+187
+00:14:18,640 --> 00:14:21,950
+Ve şimdi bu 1 3 5 yazdıracak.
+
+188
+00:14:22,850 --> 00:14:24,830
+Veya Prens B.'yi söylersem
+
+189
+00:14:24,840 --> 00:14:27,250
+Bu, bu öğelerdeki ikinci öğeyi yazacaktır.
+
+190
+00:14:27,310 --> 00:14:30,490
+2 4 6 ve bu tuple ve paketleme.
+
+191
+00:14:30,490 --> 00:14:35,830
+Veya sadece bir öğe söylemek yerine, aslında bu ilmiği döngü ve başka bir şeyin içinde
+
+192
+00:14:35,830 --> 00:14:36,130
+açın.
+
+193
+00:14:36,140 --> 00:14:40,630
+Unutmayın bu çevreleyen parantez aslında sadece bir formalitedir.
+
+194
+00:14:40,630 --> 00:14:43,930
+Bu şekilde, tuple'u gerçek dünyada her zaman ambalajda göreceksin.
+
+195
+00:14:43,930 --> 00:14:49,840
+Tuple'yı göreceksiniz ve X içindeki paketleri içerisindeki tuple'ların iterable olanı olduğunu göreceksiniz.
+
+196
+00:14:50,140 --> 00:14:57,730
+Sonra o tuple içindeki tek tek öğeleri yazdırabilirsiniz ve hepsini doğru
+
+197
+00:14:57,730 --> 00:14:58,210
+yapabileceksiniz.
+
+198
+00:14:58,500 --> 00:15:02,590
+Bu derste daha sonra tekrar ulaştığımızda size tuple ve paketleme hatırlatacaktır.
+
+199
+00:15:02,590 --> 00:15:07,570
+ortaya çıkmayacaktı, ancak umarım bu herhangi bir şeyin inanılmaz derecede zor gibi görünmesi
+
+200
+00:15:07,690 --> 00:15:13,990
+ya da sadece size tamamen yabancı olması ve konsepti anlamadığınız için Python için genel bir bakış yeterliydi.
+
+201
+00:15:13,990 --> 00:15:15,700
+Bundan sonra bir süreye kadar
+
+202
+00:15:15,700 --> 00:15:21,730
+Bu kurs sizin için çok gelişmiş olabilir ve programlamada yeni başlayanlara yönelik, tamamen
+
+203
+00:15:21,860 --> 00:15:25,420
+Python bootcamp kursu gibi bir rotaya ihtiyacınız olabilir.
+
+204
+00:15:25,510 --> 00:15:31,000
+Kewaunee forumlarına her zaman soru göndermekten çekinmeyin ve sıradaki python crash ders kitabı
+
+205
+00:15:31,000 --> 00:15:35,070
+dizisinde bilginizi test etmek için hazırlanmış bir egzersiz programıdır.
+
+206
+00:15:35,080 --> 00:15:36,970
+Herkese teşekkürler, bir sonraki konuşmada da göreceğim

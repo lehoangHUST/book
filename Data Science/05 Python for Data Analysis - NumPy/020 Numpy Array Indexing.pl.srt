@@ -1,0 +1,947 @@
+1
+00:00:06,480 --> 00:00:11,210
+Witam wszystkich i zapraszam na ciasto w wykładzie na temat całowania i selekcji w tym wykładzie.
+
+2
+00:00:11,230 --> 00:00:15,040
+Omówimy, jak wybrać elementy lub grupy elementów z ciasta.
+
+3
+00:00:15,060 --> 00:00:19,260
+W porządku, przejdźmy do notatnika Juber, aby zacząć.
+
+4
+00:00:19,260 --> 00:00:19,760
+W porządku.
+
+5
+00:00:19,800 --> 00:00:21,360
+Jesteś tutaj w notatniku Jowisza.
+
+6
+00:00:21,360 --> 00:00:23,880
+Już powiedziałem ważnych sędziów i P ..
+
+7
+00:00:24,040 --> 00:00:29,010
+Wiesz, od czego zamierzam zacząć, tworząc próbną tablicę, że zmienna A R
+
+8
+00:00:29,040 --> 00:00:31,370
+R jest równa końca p.
+
+9
+00:00:31,500 --> 00:00:33,050
+Mam zasięg.
+
+10
+00:00:33,130 --> 00:00:41,700
+Po prostu używając tabulatora do autouzupełniania tam i idę od zera do 10, a kiedy mówię od zera do 10, mam na myśli rzeczywisty
+
+11
+00:00:41,700 --> 00:00:45,570
+wynik, aby uzyskać wynik, który przekażę i na 11 tutaj.
+
+12
+00:00:45,870 --> 00:00:50,760
+Teraz mam tablicę 11 elementów, które przechodzą od zera do 10.
+
+13
+00:00:50,760 --> 00:00:57,330
+Najprostszy sposób na wybranie jednego lub kilku elementów tablicy wygląda trochę jak indeksowanie z listy
+
+14
+00:00:57,330 --> 00:00:58,110
+Pythona.
+
+15
+00:00:58,140 --> 00:01:03,060
+Zasadniczo zamierzasz użyć nawiasów i notacji plastra, aby to zrobić.
+
+16
+00:01:03,140 --> 00:01:07,500
+Idź naprzód i wpisz nazwę zmiennej samej tablicy.
+
+17
+00:01:07,600 --> 00:01:13,530
+Passe nawiasy kwadratowe, a następnie, aby uzyskać pojedynczą wartość w indeksie, który można zrobić po prostu przekazując numer.
+
+18
+00:01:14,010 --> 00:01:21,000
+Znaczenie, jeśli chcę mieć wartość w indeksie 8, mogę podać 8, a w tym przypadku zwrócę wartość x
+
+19
+00:01:21,000 --> 00:01:21,470
+8.
+
+20
+00:01:21,540 --> 00:01:27,030
+Właściwie to jest 8, ponieważ właśnie użyłem aranżacji do stworzenia tej tablicy, jeśli chcę uzyskać wartości
+
+21
+00:01:27,030 --> 00:01:29,330
+w zakresie, podobnie jak lista pytonów.
+
+22
+00:01:29,340 --> 00:01:37,010
+Mogę użyć notacji plastycznej, co oznacza, że mogę podać indeks początkowy i indeks stopu.
+
+23
+00:01:37,080 --> 00:01:43,650
+Więc jeśli pójdę naprzód i powiem jeden dwukropek, uruchomi on indeks 1, który jest numerem 1 i
+
+24
+00:01:43,650 --> 00:01:49,470
+przechodzi aż do indeksu 5, który jest numerem cztery, ponieważ indeksowanie rozpoczyna się od zera.
+
+25
+00:01:49,500 --> 00:01:57,990
+Tak więc, aby pokazać inny przykład tego, mogę powiedzieć zero dwukropka 5 i że zwraca wszystkie wartości od 0 do wszystkich w
+
+26
+00:01:57,990 --> 00:02:00,710
+ten sposób, że jest to indeks 5.
+
+27
+00:02:00,750 --> 00:02:06,840
+Mogę również usunąć punkt zatrzymania lub punkt początkowy, aby kontynuować i wskazać, że chcę wszystko inne
+
+28
+00:02:06,900 --> 00:02:07,890
+w tablicy.
+
+29
+00:02:07,950 --> 00:02:10,190
+Wszystko od początku po prawej.
+
+30
+00:02:10,200 --> 00:02:17,710
+Tak na przykład, jeśli chcę wszystko do indeksu 6 zamiast określenia parametru początkowego jako 0 mogę po prostu
+
+31
+00:02:17,790 --> 00:02:24,210
+wstawić dwukropek, a następnie umieścić 6 Ellora na wszystko, aż do początku tablicy do indeksu
+
+32
+00:02:24,270 --> 00:02:24,860
+6.
+
+33
+00:02:24,870 --> 00:02:30,870
+To jest to samo, co powiedzenie zerowego dwukropka 6, ale oszczędzam trochę
+
+34
+00:02:30,870 --> 00:02:32,990
+pisania, wkładając sam węgiel.
+
+35
+00:02:32,990 --> 00:02:43,060
+Podobnie, co mogę zrobić, to powiedzieć, że jeśli chcę zacząć od konkretnego indeksu i pobrać wszystko do końca tablicy,
+
+36
+00:02:43,080 --> 00:02:50,340
+mogę użyć tej samej stacji, którą zrobiłem na liście Pythona, używając notacji krojenia
+
+37
+00:02:50,700 --> 00:02:51,940
+dla węgla.
+
+38
+00:02:52,170 --> 00:02:56,910
+Coś wartego uwagi, gdy używasz tej notacji liczby, a następnie dwukropek jest taki, że w rzeczywistości
+
+39
+00:02:56,910 --> 00:02:59,410
+nie chwytasz za indeks 5 i dalej.
+
+40
+00:02:59,490 --> 00:03:05,670
+Łapiesz wszystko na indeks 5, ponieważ pamiętaj, indeksowanie aż do notacji w Pythonie zaczyna się
+
+41
+00:03:05,670 --> 00:03:06,780
+od zera.
+
+42
+00:03:06,780 --> 00:03:15,600
+A więc 5 jest w rzeczywistości indeksem 6, co oznacza, że ta notacja pięciu Colonów mówi o zrzucie wszystkiego poza indeks 5.
+
+43
+00:03:15,600 --> 00:03:21,200
+To będzie pięć sześć siedem osiem dziewięć dziesięć, ponieważ pamiętaj, że indeks 5 jest tutaj o czwartej.
+
+44
+00:03:21,750 --> 00:03:25,700
+Ponieważ indeksowanie rozpoczyna się od zera, złapałeś pięć elementów.
+
+45
+00:03:25,830 --> 00:03:32,730
+Oznacza to, że jeśli powiem pięć razy, pobierze wszystko poza piątym indeksem, który ma miejsce w czwartej części, i możesz
+
+46
+00:03:32,730 --> 00:03:38,480
+przejrzeć listę notacji w liście Pythona, jeśli chcesz uzyskać więcej informacji na temat tego dwukropka.
+
+47
+00:03:38,550 --> 00:03:42,890
+Ale zasadniczo działa to dokładnie tak samo, jak w przypadku normalnej listy Pythona.
+
+48
+00:03:43,300 --> 00:03:49,310
+Żadne tablice nie różnią się od normalnej listy Pythona ze względu na ich zdolność do emisji.
+
+49
+00:03:49,350 --> 00:03:51,710
+Ja idę dalej i pokaż przykład.
+
+50
+00:03:51,810 --> 00:03:56,390
+Zamierzam zabrać moją tablicę i chwycić elementy.
+
+51
+00:03:56,440 --> 00:03:58,060
+Zero i pięć.
+
+52
+00:03:58,110 --> 00:04:04,080
+Więc będzie zero jeden dwa trzy cztery, a następnie uważam, że jest równa liczbie 100.
+
+53
+00:04:04,140 --> 00:04:05,560
+I co to ma zamiar zrobić.
+
+54
+00:04:05,820 --> 00:04:12,830
+Będzie transmitować tę wartość do tych pierwszych pięciu cyfr, aby wszyscy mieli 100.
+
+55
+00:04:12,960 --> 00:04:21,510
+Mam zamiar zresetować tablicę, a zobaczysz, dlaczego w ciągu sekundy, jeśli pokażę tablicę, wracam do 0 1
+
+56
+00:04:21,510 --> 00:04:24,350
+2 3, aż do 10.
+
+57
+00:04:24,600 --> 00:04:28,420
+Nie chcę pokazywać ci ważnego nie na plasterkach lub stawce.
+
+58
+00:04:28,440 --> 00:04:36,490
+Jeśli pójdę dalej i utworzę zmienną o nazwie slice pod znakiem podkreślenia, to Array.
+
+59
+00:04:36,500 --> 00:04:46,360
+I powiedziałem, że jest to kawałek tablicy na przykład 06 Dobrze jest zobaczyć, że kawałek tablicy tutaj mamy tablice są jeden
+
+60
+00:04:46,380 --> 00:04:48,590
+dwa trzy cztery pięć.
+
+61
+00:04:48,600 --> 00:04:51,960
+Zasadniczo ten pierwszy kawałek połowy tablicy.
+
+62
+00:04:52,200 --> 00:04:59,580
+Jeśli nadaję na Saraje Weenie mówię kawałek tablicy używam dwukropka.
+
+63
+00:04:59,580 --> 00:05:02,550
+To oznacza, że łapię wszystko w tym kawałku.
+
+64
+00:05:02,570 --> 00:05:06,820
+Próbuję nadać ten numer innej liczbie, na przykład 99.
+
+65
+00:05:06,900 --> 00:05:11,780
+Oznacza to, że gdy sprawdzam kawałek tablicy, widzę pęczek 99.
+
+66
+00:05:12,000 --> 00:05:14,480
+Oto, gdzie trzeba uważać.
+
+67
+00:05:14,520 --> 00:05:21,800
+Jeśli oddzwoniłem do tablicy, to faktycznie zmieniło się 99, nie tylko na plastrze, ale na oryginalnej tablicy.
+
+68
+00:05:21,810 --> 00:05:22,960
+Dzwoniłem dwa.
+
+69
+00:05:23,190 --> 00:05:28,950
+Powinieneś wiedzieć, jak ta zmiana występuje również w oryginalnej tablicy, co oznacza, że dane nie są kopiowane.
+
+70
+00:05:29,130 --> 00:05:30,560
+To tylko widok.
+
+71
+00:05:30,710 --> 00:05:32,100
+Tak więc oryginalna tablica.
+
+72
+00:05:32,280 --> 00:05:38,250
+Powodem tego jest uniknięcie problemów z pamięcią w przypadku bardzo dużych tablic, co oznacza, że żadne
+
+73
+00:05:38,250 --> 00:05:41,140
+pi nie będzie automatycznie ustawiać kopii tablic.
+
+74
+00:05:41,380 --> 00:05:47,940
+Jeśli rzeczywiście chcesz kopii, a nie odniesienia do oryginalnej tablicy, co możesz zrobić, to
+
+75
+00:05:47,940 --> 00:05:49,410
+rzeczywiście określić kopię.
+
+76
+00:05:49,530 --> 00:05:51,480
+Więc mogę zrobić coś takiego.
+
+77
+00:05:51,720 --> 00:06:01,620
+Mogę iść dalej i powiedzieć r podkreślenia kopii i użyć metody kopiowania poza tablicą, aby wyraźnie wskazać, że
+
+78
+00:06:01,620 --> 00:06:03,320
+chcę kopię.
+
+79
+00:06:03,450 --> 00:06:09,410
+Więc jeśli przyjrzę się mojej tablicy, to 9 9 9 9 9 x cetera, a następnie 6 7 8 9 10.
+
+80
+00:06:09,780 --> 00:06:14,320
+A jeśli spojrzę na moją kopię tablicy, to jest to samo.
+
+81
+00:06:14,500 --> 00:06:20,550
+Ale jeśli zrobię zmianę w mojej tablicy, to może nadając każdej wartości 100.
+
+82
+00:06:20,940 --> 00:06:25,420
+I sprawdzam kopiowanie tablicy, każda wartość wynosi 100.
+
+83
+00:06:25,440 --> 00:06:32,190
+Ale ta oryginalna tablica nadal pozostaje nienaruszona przez tę transmisję w komendzie do 100.
+
+84
+00:06:32,190 --> 00:06:34,070
+Śmiało i przejrzyj notatki na ten temat.
+
+85
+00:06:34,120 --> 00:06:40,360
+Jest to trochę mylące, ale podstawową przesłanką jest to, że jeśli faktycznie zgarniesz
+
+86
+00:06:40,360 --> 00:06:47,370
+kawałek tablicy i ustawisz ją jako zmienną bez wyraźnego powiedzenia, że chcesz mieć kopię tablicy,
+
+87
+00:06:47,380 --> 00:06:53,340
+powinieneś pamiętać, że jesteś po prostu przeglądanie linku do oryginalnej tablicy i zmiany,
+
+88
+00:06:53,340 --> 00:06:56,760
+które wprowadzisz, wpłyną na oryginalną tablicę.
+
+89
+00:06:56,760 --> 00:06:57,400
+DOBRZE.
+
+90
+00:06:57,690 --> 00:07:00,550
+Chodźmy i porozmawiajmy o indeksowaniu a do tablicy.
+
+91
+00:07:00,690 --> 00:07:02,810
+Poza tym znany jest jako matryca.
+
+92
+00:07:02,880 --> 00:07:07,920
+Zamierzam wyczyścić tutaj wszystkie komórki na sekundę.
+
+93
+00:07:07,960 --> 00:07:15,180
+W porządku, właśnie wyczyściłem wszystkie komórki tutaj i zamierzamy zrobić to stworzyć tablicę do d.
+
+94
+00:07:17,520 --> 00:07:24,020
+Powiem N. P. array i mam zamiar przekazać listę zagnieżdżoną.
+
+95
+00:07:24,930 --> 00:07:37,830
+Powiem więc 5 10 15 20 25 30, a następnie 35 40 45.
+
+96
+00:07:38,430 --> 00:07:44,280
+Więc chcę wyjść i pokazać to macierzowi i tutaj mam trzy rzędy z trzema kolumnami, to jest
+
+97
+00:07:44,280 --> 00:07:46,010
+dla nich matryca misyjna.
+
+98
+00:07:46,050 --> 00:07:46,820
+Świetny.
+
+99
+00:07:46,830 --> 00:07:47,430
+W porządku.
+
+100
+00:07:47,430 --> 00:07:52,880
+Istnieją dwa ogólne formaty przechwytywania elementów od a do macierzy lub macierzy.
+
+101
+00:07:52,880 --> 00:07:54,500
+Jest do tego podwójny wspornik.
+
+102
+00:07:54,570 --> 00:07:57,270
+A następnie jest pojedynczy nawias bryłowy z przecinkiem.
+
+103
+00:07:57,270 --> 00:08:01,570
+Pozwól, że pokażę ci format podwójnego nawiasu klamrowego, a następnie pokażę przykład
+
+104
+00:08:01,560 --> 00:08:07,200
+formatu pojedynczego nawiasu, który jest formatem, który polecam, ale powinieneś znać oba na wypadek, gdybyś spotkał
+
+105
+00:08:07,200 --> 00:08:08,750
+ich na wolności.
+
+106
+00:08:08,760 --> 00:08:10,970
+Więc znowu jest moja teoria.
+
+107
+00:08:11,120 --> 00:08:18,390
+Cóż, powiedzmy, że chciałem pobrać cyfrę 5, tak że jest ona w pierwszym wierszu lub wierszu
+
+108
+00:08:18,390 --> 00:08:27,910
+indeksu 0 iw pierwszym indeksie kolumny 0 dla notacji z podwójnym nawiasem, mogę pasan najpierw wiersz, który chcę, a następnie kolumna, którą
+
+109
+00:08:27,900 --> 00:08:28,700
+chcę.
+
+110
+00:08:28,770 --> 00:08:32,070
+Tak więc przejście w 00 tutaj zwróci cyfrę 5.
+
+111
+00:08:32,230 --> 00:08:36,410
+Ponieważ to są elementy w pierwszym wierszu w pierwszej kolumnie.
+
+112
+00:08:36,420 --> 00:08:44,640
+Co mogę zrobić, to usunąć i po prostu zrobić pojedynczy zestaw nawiasów i zindeksować cały Roback.
+
+113
+00:08:44,670 --> 00:08:55,320
+To spowoduje indeksowanie całego wiersza indeksu 0, oznaczającego 5 10 15 i jeśli chcę, powiedzmy, element 25
+
+114
+00:08:55,350 --> 00:09:03,000
+to jest indeks pierwszy dla wiersza w indeksie pierwszym dla kolumny.
+
+115
+00:09:03,000 --> 00:09:06,080
+Mogę powiedzieć 1 1 i wszystko to zwraca 25.
+
+116
+00:09:06,100 --> 00:09:11,980
+Chcę, abyś spróbował, czy teraz możesz wstrzymać wideo i spróbować pobrać elementy z
+
+117
+00:09:11,970 --> 00:09:15,620
+tablicy indywidualnie, korzystając z notacji podwójnego nawiasu.
+
+118
+00:09:15,660 --> 00:09:15,910
+W porządku.
+
+119
+00:09:15,930 --> 00:09:19,710
+Powiedzmy, że chcemy pobrać 40 jako ostatni przykład.
+
+120
+00:09:19,950 --> 00:09:22,700
+To też jest indeks wiersza.
+
+121
+00:09:23,310 --> 00:09:25,290
+I to jest kolumna w następnej.
+
+122
+00:09:25,680 --> 00:09:27,010
+To 40.
+
+123
+00:09:27,120 --> 00:09:29,520
+To jest notacja z podwójnym nawiasem.
+
+124
+00:09:29,520 --> 00:09:30,380
+Cóż, powinieneś zrobić.
+
+125
+00:09:30,380 --> 00:09:36,390
+Jednak polecam używanie notacji z pojedynczym nawiasem przecinka.
+
+126
+00:09:36,390 --> 00:09:42,630
+I w zasadzie to, co to robi, zastępuje podwójny zestaw nawiasów tylko przecinkiem
+
+127
+00:09:42,630 --> 00:09:45,790
+i podajesz w kolumnie numer przecinka.
+
+128
+00:09:45,780 --> 00:09:54,440
+Na przykład powiedzmy, że chciałbym, aby cyfra 30 przechodziła w indeksie 1, ponieważ jest to indeks pierwszy, a następnie wiersz
+
+129
+00:09:54,930 --> 00:09:56,300
+w trzeciej kolumnie.
+
+130
+00:09:56,320 --> 00:10:03,010
+Tak więc 0 1 2 jest w indeksie do kolumny, a to daje mi 30.
+
+131
+00:10:03,210 --> 00:10:11,040
+I to jest tak samo, jak po prostu mówienie tego, co jest dla mnie podkreślone i robienie tego
+
+132
+00:10:11,050 --> 00:10:17,200
+za pomocą podwójnych nawiasów, polecam zawsze używać tego pojedynczego nawiasu wspólnego zapisu, ponieważ zwykle
+
+133
+00:10:17,200 --> 00:10:19,990
+jest on mniej podatny na błędy.
+
+134
+00:10:19,990 --> 00:10:24,730
+Teraz wyobraźmy sobie, że nie chcesz pojedynczych elementów, ale rzeczywistych fragmentów.
+
+135
+00:10:24,900 --> 00:10:31,870
+Na przykład, jeśli chcesz macierzy z tej macierzy, możesz użyć dwukropka do zapisu kropki Nurit, aby
+
+136
+00:10:31,870 --> 00:10:36,620
+chwycić niektóre sekcje całości do tablicy i sortować pojedyncze elementy.
+
+137
+00:10:36,820 --> 00:10:38,730
+Pójdę do przodu i pokażę ci, jak to zrobić.
+
+138
+00:10:38,770 --> 00:10:44,230
+Zamierzamy usunąć tę drugą komórkę i pokażemy kilka przykładów.
+
+139
+00:10:44,400 --> 00:10:47,640
+Powiedzmy, że chcieliśmy pobrać z prawego górnego rogu.
+
+140
+00:10:47,760 --> 00:10:54,160
+To znaczy, chcę powiedzieć 10 15 i 25 30, więc ten prawy górny róg jest tym, co chcę
+
+141
+00:10:54,150 --> 00:10:59,860
+chwycić, kiedy mogę iść do przodu i zrobić, to użyć notacji plastra, aby to zrobić.
+
+142
+00:11:00,040 --> 00:11:12,390
+Mogę więc powiedzieć, że chwyć wszystko, aby zadzwonić do rzędu, a następnie chwyć od kolumny 1 i to zwraca 10
+
+143
+00:11:12,390 --> 00:11:14,890
+15 25 30.
+
+144
+00:11:14,880 --> 00:11:16,920
+Pozwól mi wejść i jeszcze raz to rozbić.
+
+145
+00:11:17,130 --> 00:11:24,880
+Jeśli chodzi o wiersze To, co mówimy, to zgarnij wszystko, ale nie włączając wierszy 0 i 1 jako dwukropka.
+
+146
+00:11:25,140 --> 00:11:26,520
+Ale nie włączaj dwóch.
+
+147
+00:11:26,560 --> 00:11:33,790
+Ja też mówię, że też to zrobię, i pokażę, że to tylko jedno polecenie, więc
+
+148
+00:11:33,870 --> 00:11:43,300
+mówię, że Colon to, że zwraca te dwa wiersze, wiersz 0 i wiersz 1, a następnie dodając to, mówię o
+
+149
+00:11:43,300 --> 00:11:49,590
+ile kolumny przechwytują wszystko od Kolumny 1 aż do końca, co w zasadzie
+
+150
+00:11:49,840 --> 00:11:59,520
+oznacza po prostu upuszczenie całej tej kolumny 0 i która zwraca te dwa małe podsekcje 10 15, a następnie 25 30.
+
+151
+00:11:59,520 --> 00:12:00,730
+W porządku.
+
+152
+00:12:00,730 --> 00:12:08,280
+To, co chciałbym teraz polecić, polega na tym, że w umyśle chwytamy podsekcje na przykład 20 25 30 i
+
+153
+00:12:08,290 --> 00:12:15,700
+35 40 45 i sprawdzamy, czy można używać notacji plastra wraz z tą pojedynczą notacją indeksowania przecinkami przy
+
+154
+00:12:15,970 --> 00:12:18,790
+pomocy pi, aby pobrać podsekcje Saray.
+
+155
+00:12:18,970 --> 00:12:26,920
+I zachęcam cię również do sprawdzenia, czy możesz zrobić większe i zgarnąć większe podrozdziały. Mam nadzieję, że masz wystarczająco dużo
+
+156
+00:12:26,910 --> 00:12:29,350
+praktyki, jeśli chcesz więcej przykładów.
+
+157
+00:12:29,350 --> 00:12:34,920
+Zawsze możesz odwiedzić notebooka na ten wykład, który ma kilka innych przykładów krojenia 2-D w całym kursie,
+
+158
+00:12:36,220 --> 00:12:41,110
+ponieważ nie zrobimy zbyt wiele tego fantazyjnego krojenia indeksu Więc jest to mylące dla
+
+159
+00:12:41,110 --> 00:12:41,680
+ciebie.
+
+160
+00:12:41,670 --> 00:12:45,820
+Nie musisz się o to martwić, ponieważ tak naprawdę nie zrobi tego tak często
+
+161
+00:12:45,820 --> 00:12:46,730
+podczas całego kursu.
+
+162
+00:12:47,010 --> 00:12:51,700
+Zazwyczaj po prostu chwytam proste pojedyncze elementy lub całe wiersze lub kolumny.
+
+163
+00:12:51,760 --> 00:12:56,430
+Zazwyczaj nie chwytają podsekcji podrozdziałów, jak tutaj.
+
+164
+00:12:56,440 --> 00:12:57,020
+W porządku.
+
+165
+00:12:57,280 --> 00:13:02,290
+Przejdźmy dalej i przejdźmy do ważniejszej metody selekcji, której będziesz używać znacznie
+
+166
+00:13:02,290 --> 00:13:05,750
+częściej w tym kursie, który jest wyborem warunkowym.
+
+167
+00:13:05,810 --> 00:13:15,240
+Mam zamiar utworzyć nową tablicę, a tylko jedna wzmianka tablica powiedzieć i Pido zorganizować jeden przecinek 11
+
+168
+00:13:15,280 --> 00:13:18,180
+i sprawdź tę tablicę.
+
+169
+00:13:18,850 --> 00:13:19,350
+DOBRZE.
+
+170
+00:13:19,360 --> 00:13:23,300
+Tak więc dla tej tablicy mam jeden dwa trzy cztery pięć sześć siedem osiem dziewięć 10.
+
+171
+00:13:23,740 --> 00:13:30,580
+Co mogę zrobić, to mogę wziąć tę tablicę, połączyć ją z operatorami porównania, aby faktycznie uzyskać z
+
+172
+00:13:30,630 --> 00:13:32,240
+tego całą tablicę boolowską.
+
+173
+00:13:32,340 --> 00:13:40,450
+Mam na myśli to, że jeśli porównuję to do jednej cyfry, na przykład gdy są większe niż 5,
+
+174
+00:13:40,450 --> 00:13:42,730
+otrzymam tablicę wartości logicznych.
+
+175
+00:13:42,730 --> 00:13:45,010
+Zauważ, że mówi D typ B O L.
+
+176
+00:13:45,250 --> 00:13:47,110
+Więc są to wartości prawdziwe lub fałszywe.
+
+177
+00:13:47,250 --> 00:13:52,990
+I daje mi fałszywe, gdziekolwiek to porównanie jest fałszywe i prawdziwe lub to porównanie było prawdą.
+
+178
+00:13:53,160 --> 00:13:59,650
+A potem mogę iść dalej i zapisać to, ponieważ może podkreślisz tablicę.
+
+179
+00:13:59,640 --> 00:14:06,270
+Więc jeśli teraz nazywam podkreślenie bool, otrzymam tę tablicę boolowską.
+
+180
+00:14:06,280 --> 00:14:09,850
+Teraz możesz użyć tego, aby faktycznie dokonać warunkowego wyboru.
+
+181
+00:14:09,850 --> 00:14:12,440
+Oznacza to, że mogę to podać w
+
+182
+00:14:15,250 --> 00:14:19,990
+dwóch nawiasach, a wyniki będą uzyskiwane tylko wtedy, gdy ta tablica logiczna stanie się prawdą.
+
+183
+00:14:19,990 --> 00:14:26,440
+Chodźmy to przełamać jeszcze raz, gdy zdobędziemy tablicę, a użycie operatora porównania na
+
+184
+00:14:26,430 --> 00:14:31,020
+niej zwróci tablicę boolowską, oznaczającą tablicę wszystkich wartości logicznych.
+
+185
+00:14:31,170 --> 00:14:38,200
+Następnie mogę użyć tej tablicy boolowskiej do faktycznego indeksowania lub warunkowego wybierania elementów z oryginalnej tablicy, w której
+
+186
+00:14:38,200 --> 00:14:40,220
+to stało się prawdą.
+
+187
+00:14:40,230 --> 00:14:46,180
+Tak więc zwraca tylko instancje, w których ta tablica boolowska była prawdziwa i częściej dzieli ją
+
+188
+00:14:46,170 --> 00:14:47,450
+na dwa etapy.
+
+189
+00:14:47,500 --> 00:14:49,480
+Zrobiłbyś to wszystko w jednym kroku.
+
+190
+00:14:49,480 --> 00:14:54,490
+Powiedziałbyś, że tablica i w nawiasach zamiast tablicy, którą chcesz przekazać w instrukcji
+
+191
+00:14:54,950 --> 00:14:59,640
+warunkowej, takiej jak rr większa niż 5, zwróci tę samą odpowiedź.
+
+192
+00:14:59,710 --> 00:15:04,900
+I jest to rodzaj zapisu składni, który będziemy używać cały czas, jeśli chodzi o wybór warunkowy.
+
+193
+00:15:06,310 --> 00:15:12,470
+Powiedzmy na przykład, że chcemy poznać wszystkie elementy tablicy, które są mniejsze niż 3.
+
+194
+00:15:12,520 --> 00:15:20,380
+To, co zrobiłbym, to powiedziałbym w nawiasach tablicowych, a następnie powiedzmy mniej niż trzy tablice, które zwracają wszystkie elementy, w
+
+195
+00:15:20,380 --> 00:15:25,620
+których to jest prawdziwe, i właśnie tego będziemy używać w tym kursie, szczególnie
+
+196
+00:15:25,970 --> 00:15:28,000
+w przejściu do pandy.
+
+197
+00:15:28,030 --> 00:15:30,440
+Jest to rodzaj notacji, do której powinieneś się przyzwyczaić.
+
+198
+00:15:30,460 --> 00:15:37,110
+Wiem, że początkowo trochę dziwne jest widzieć nazwę zmiennej w sobie, ale mam nadzieję, że podzielenie jej na
+
+199
+00:15:37,120 --> 00:15:40,550
+te dwa etapy jasno wyjaśni, co się właściwie dzieje.
+
+200
+00:15:40,570 --> 00:15:45,510
+Po prostu przekazujesz boolowską tablicę wartości, a następnie po prostu wracasz tam,
+
+201
+00:15:45,520 --> 00:15:48,410
+gdzie jest prawdziwa w indeksie oryginalnej tablicy.
+
+202
+00:15:48,900 --> 00:15:50,760
+W porządku, to wszystko na ten wykład.
+
+203
+00:15:50,770 --> 00:15:58,390
+To, co chciałbym polecić, jeśli chodzi o ćwiczenie dla ciebie, to stworzyć nowy w tablicy,
+
+204
+00:15:58,420 --> 00:16:01,860
+mówiąc N. P. kropki arr ..
+
+205
+00:16:02,080 --> 00:16:08,650
+Cóż, śmiało powiedz 50, a następnie zmień to na 5 na 10.
+
+206
+00:16:08,640 --> 00:16:10,990
+Nie, to nie jest zwykłe wywoływanie metody z innej metody.
+
+207
+00:16:10,990 --> 00:16:17,530
+Więc to jest cała jedna tablica, a potem macie tę fajną tablicę od 5 do 10.
+
+208
+00:16:17,560 --> 00:16:20,340
+Tak więc od 0 do 40, a następnie od 0 do 9.
+
+209
+00:16:20,430 --> 00:16:23,500
+Poleciłbym dla ciebie po prostu ćwiczyć dla siebie.
+
+210
+00:16:23,500 --> 00:16:30,370
+Staraj się w umyśle chwytać kawałki, a następnie sprawdź, czy możesz użyć notacji nawiasowej, aby pobrać kawałki, o
+
+211
+00:16:30,370 --> 00:16:31,380
+których myślałeś.
+
+212
+00:16:31,380 --> 00:16:36,210
+Na przykład może chcesz wziąć swoje 13 14 i 23 24.
+
+213
+00:16:36,390 --> 00:16:38,820
+Wyjdźmy i pokażmy, jak byś to zrobił.
+
+214
+00:16:38,980 --> 00:16:41,880
+Najpierw chcę podzielić go na dwa wiersze i kolumny.
+
+215
+00:16:41,920 --> 00:16:49,730
+Tak więc 13:14 zaczyna się od rzędu 0 1, a następnie 2.
+
+216
+00:16:50,020 --> 00:16:52,830
+Znaczenie Chcę pobrać wiersze od 1 do 2.
+
+217
+00:16:53,250 --> 00:16:59,680
+Zamierzam iść dalej i powiedzieć jeden i zapamiętać z tego rodzaju notacją plastra i pójść o jeden więcej,
+
+218
+00:16:59,670 --> 00:17:00,770
+niż naprawdę potrzebujesz.
+
+219
+00:17:01,120 --> 00:17:05,220
+Więc mówię, chwyć za jedną całość, a nie wliczając trzeciego.
+
+220
+00:17:05,290 --> 00:17:07,310
+To powinny być te dwa rzędy.
+
+221
+00:17:07,470 --> 00:17:13,040
+Wejdźmy do środka i potwierdźmy, że tutaj, po prostu mówimy, że masz swój wynik do chwytania tych wierszy.
+
+222
+00:17:13,140 --> 00:17:18,450
+Jedno połączenie i trzy, a to działa właściwie jak normalna notacja list w Pythonie.
+
+223
+00:17:18,450 --> 00:17:23,520
+A więc mamy indeks pierwszy obok maksymalnie trzech.
+
+224
+00:17:23,560 --> 00:17:34,170
+A potem dla kolumn i powiedz, że chcę 13 14 i 23 24, który pojawia się w kolumnie indeksu trzech grup, a
+
+225
+00:17:34,170 --> 00:17:42,060
+następnie chcę cztery nie włączając pięciu sag, ale w piątej tam, która zwraca to, czego szukaliśmy
+
+226
+00:17:42,070 --> 00:17:44,310
+13 14 23 24.
+
+227
+00:17:44,320 --> 00:17:50,600
+Chciałbym zachęcić was do ćwiczenia tego poprzez utworzenie ankiety we własnej książce notatek Jowisza, a następnie
+
+228
+00:17:50,880 --> 00:17:55,050
+po prostu chwytanie fragmentów tej matrycy, jak wam się podoba.
+
+229
+00:17:55,060 --> 00:17:55,610
+W porządku.
+
+230
+00:17:55,720 --> 00:17:58,250
+W notesie jest znacznie więcej pomocy do indeksowania.
+
+231
+00:17:58,300 --> 00:18:03,100
+Nie martw się o wiele, jeśli nie czujesz się w 100% komfortowo, to dostaniesz
+
+232
+00:18:03,100 --> 00:18:05,320
+więcej praktyk w ostatnim ćwiczeniu PI.
+
+233
+00:18:05,560 --> 00:18:09,170
+Ale tak naprawdę to tylko po to, abyś wiedział, do czego zdolny jest jakiś placek.
+
+234
+00:18:09,180 --> 00:18:14,450
+Nie będziemy robić tego rodzaju notacji krążącej, która często w trakcie korzystania z tego zwanego notacją.
+
+235
+00:18:14,580 --> 00:18:17,540
+Będziemy używać warunkowego wyboru za pomocą operatorów personalnych.
+
+236
+00:18:17,620 --> 00:18:19,060
+Dużo więcej.
+
+237
+00:18:19,060 --> 00:18:21,820
+W porządku, dziękuję wszystkim, a do zobaczenia na następnym wykładzie

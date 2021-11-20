@@ -1,0 +1,883 @@
+1
+00:00:05,370 --> 00:00:10,500
+Hello everyone and welcome to the Jupiter notebook's lecture and this lecture will be showing you how
+
+2
+00:00:10,500 --> 00:00:15,540
+to effectively use the Jupiter notebook system and giving you a tour of the overall environment.
+
+3
+00:00:15,540 --> 00:00:20,580
+Also check out the resources for this lecture in order to download the zip file that contains all the
+
+4
+00:00:20,580 --> 00:00:23,000
+notebook files.
+
+5
+00:00:23,040 --> 00:00:27,150
+So as I mentioned check the resources for the lecture and download the zip file.
+
+6
+00:00:27,150 --> 00:00:33,700
+It contains all the dot IP Y and B files or notebook files and those notebooks for the rest of the Course
+
+7
+00:00:33,990 --> 00:00:34,430
+mix.
+
+8
+00:00:34,470 --> 00:00:37,910
+Remember where you saved and unzipped that file.
+
+9
+00:00:38,640 --> 00:00:42,990
+Let's go ahead and explore the notebooks as well as get a feel for how to effectively use them.
+
+10
+00:00:42,990 --> 00:00:47,510
+I'm going to go ahead and just remind you how you can open up a Jupiter notebook.
+
+11
+00:00:47,520 --> 00:00:50,770
+I'm going to go ahead and jump to the command prompt now.
+
+12
+00:00:50,790 --> 00:00:51,090
+All right.
+
+13
+00:00:51,090 --> 00:00:55,320
+Here I am at my command prompt as a reminder if you're using Mac OS.
+
+14
+00:00:55,320 --> 00:00:57,710
+Go ahead and just use your terminal for this.
+
+15
+00:00:57,930 --> 00:01:03,870
+If you're using Windows just go ahead and come over here and type in ACMD and select your command prompt
+
+16
+00:01:03,880 --> 00:01:04,090
+.
+
+17
+00:01:04,160 --> 00:01:07,310
+There's also in an icon the command prompt you can use that as well.
+
+18
+00:01:07,320 --> 00:01:11,250
+That's the command prompt that comes with the Anaconda distribution.
+
+19
+00:01:11,250 --> 00:01:11,830
+All right.
+
+20
+00:01:12,000 --> 00:01:19,200
+So you go ahead and come to the command prompt and then type in j u p y t r space notebook and hit enter
+
+21
+00:01:19,200 --> 00:01:20,010
+.
+
+22
+00:01:20,010 --> 00:01:25,040
+Keep in mind this is going to start a Jupiter notebook wherever you are in the command prompt.
+
+23
+00:01:25,050 --> 00:01:27,840
+So for instance I'm going to delete this real quick.
+
+24
+00:01:27,870 --> 00:01:35,430
+I am under C users and then my middle name here Marysia and that's where my notebook is going to get
+
+25
+00:01:35,430 --> 00:01:36,110
+started.
+
+26
+00:01:36,210 --> 00:01:42,030
+If I want to start my notebooks in another directory I need to change directory the way I can change
+
+27
+00:01:42,030 --> 00:01:46,770
+directory is by using CD and then typing in the next file that I want.
+
+28
+00:01:46,800 --> 00:01:51,880
+So let's say I wanted to go to my downloads folder because that's where I downloaded the zip file.
+
+29
+00:01:52,110 --> 00:01:58,110
+I could start typing in D O N then you can actually tab autocomplete this and then it should take you
+
+30
+00:01:58,110 --> 00:01:58,640
+to.
+
+31
+00:01:58,650 --> 00:02:04,260
+If you go out and click enter now downloads and then I could type in DUPERE notebook enter and run this
+
+32
+00:02:04,340 --> 00:02:09,840
+and now my Jubran notebook file is going to be when I show it in my browser under the downloads folder
+
+33
+00:02:09,840 --> 00:02:10,610
+.
+
+34
+00:02:10,740 --> 00:02:15,000
+If you want to go ahead and go back up one folder you can type in CD.
+
+35
+00:02:15,010 --> 00:02:22,090
+That's change the rectory space dot dot and that will take you back up one directory.
+
+36
+00:02:22,170 --> 00:02:25,110
+You can go ahead and just look up basic command prompt lines.
+
+37
+00:02:25,110 --> 00:02:25,860
+There are a little different.
+
+38
+00:02:25,860 --> 00:02:32,250
+The penny for using Mac OS or Windows for instance if you want to see all the directory folders and
+
+39
+00:02:32,250 --> 00:02:37,400
+your current directory in Windows that's d I are the C directory.
+
+40
+00:02:37,410 --> 00:02:40,780
+And this basically shows you all the files here in your current directory.
+
+41
+00:02:40,860 --> 00:02:46,170
+If you are on Mac you can type in L S for list all of them.
+
+42
+00:02:46,170 --> 00:02:49,320
+All right then to clear everything you have here.
+
+43
+00:02:49,320 --> 00:02:53,290
+If you're on Windows you can just type in C L S.
+
+44
+00:02:53,440 --> 00:03:00,120
+If you're on a Mac and type in the word clear let me go ahead and start the Jupiter note book and when
+
+45
+00:03:00,120 --> 00:03:06,150
+to hit enter and it's going to open up a chip in a notebook in my browser.
+
+46
+00:03:06,150 --> 00:03:07,020
+Here it is.
+
+47
+00:03:07,200 --> 00:03:11,940
+I'm going to go ahead and find where I actually saved the unzips file.
+
+48
+00:03:11,940 --> 00:03:17,510
+Here it is python data science machine learning boot camp and the Pentagon unzip program you used.
+
+49
+00:03:17,520 --> 00:03:22,920
+You may or may not have this dasht master at the end but if you go ahead and click on this folder you'll
+
+50
+00:03:22,920 --> 00:03:24,460
+see quite a few folders here.
+
+51
+00:03:24,480 --> 00:03:27,660
+Python for data analysis for data visualization.
+
+52
+00:03:27,660 --> 00:03:33,550
+Python crash course machine learning sections data kept some projects big data and Sparc and more.
+
+53
+00:03:33,570 --> 00:03:36,070
+The very first section is under this folder.
+
+54
+00:03:36,090 --> 00:03:41,960
+Python crash course if you click on that section where that folder you'll have the notebook.
+
+55
+00:03:42,180 --> 00:03:44,700
+And here you see the dot IPY and be files.
+
+56
+00:03:44,700 --> 00:03:50,670
+So pretty much for every lecture where you see me coding something out there is a folder that has the
+
+57
+00:03:50,730 --> 00:03:56,550
+overall section name and then they'll be a subfolder of the actual section name and then the notebook
+
+58
+00:03:56,550 --> 00:03:58,630
+files which correspond to the lecturer names.
+
+59
+00:03:58,620 --> 00:04:01,030
+So the very first one is python crash course.
+
+60
+00:04:01,140 --> 00:04:02,590
+You can go ahead and click on this.
+
+61
+00:04:02,670 --> 00:04:03,990
+They'll take a little time to load.
+
+62
+00:04:03,990 --> 00:04:09,270
+Here it is and then everything I'll be typing out throughout the lecture is here for you and pretty
+
+63
+00:04:09,270 --> 00:04:11,460
+much at the beginning of every section of the course.
+
+64
+00:04:11,460 --> 00:04:16,380
+I'll remind you on where you can find the actual note books for that section of the Course answers quite
+
+65
+00:04:16,380 --> 00:04:19,100
+a few lectures and it may be hard to find it sometimes.
+
+66
+00:04:19,230 --> 00:04:23,520
+I'll be there to guide you and if you ever have any questions on where to find things just feel free
+
+67
+00:04:23,520 --> 00:04:27,460
+to post the Q&A forums and I'll be happy to help you there.
+
+68
+00:04:27,510 --> 00:04:30,890
+All right then after that we'll start Python for data analysis.
+
+69
+00:04:30,900 --> 00:04:36,030
+You'll start the number by s.c or click on PI and see it notebook's for that.
+
+70
+00:04:36,030 --> 00:04:41,790
+Let me go ahead and just walk through how the Jupiter note book system works in a general sense.
+
+71
+00:04:41,910 --> 00:04:49,050
+I'm going to go all the way back up to the master and then I'm going to click new and here since I have
+
+72
+00:04:49,050 --> 00:04:50,350
+kind of several environments.
+
+73
+00:04:50,480 --> 00:04:55,110
+I'm going to click this one but you can click Python or Python 3 or whatever it's good and click on
+
+74
+00:04:55,110 --> 00:04:56,300
+it should be fine.
+
+75
+00:04:56,310 --> 00:04:59,180
+Again you can just click new whatever it says in notebooks.
+
+76
+00:04:59,220 --> 00:05:00,640
+You should be fine to click on it.
+
+77
+00:05:00,870 --> 00:05:04,040
+You'll get something like this to retitle this notebook.
+
+78
+00:05:04,070 --> 00:05:08,260
+You don't just click here under the untitled section and name it whatever you want.
+
+79
+00:05:08,280 --> 00:05:11,400
+My notebook for instance click OK and I'll name it.
+
+80
+00:05:11,400 --> 00:05:13,940
+Let me go ahead and show you the basics.
+
+81
+00:05:13,950 --> 00:05:21,440
+This is a code cell which means I can type in Python code into the cell and then run it as a very basic
+
+82
+00:05:21,440 --> 00:05:28,070
+example I can say prints hello and then I can run the cell by clicking here on run and Ill go ahead
+
+83
+00:05:28,070 --> 00:05:30,690
+and run and show me the output below the cell.
+
+84
+00:05:30,710 --> 00:05:35,150
+I can also do the same thing for basically any Python code if I wanted to know what one plus one is
+
+85
+00:05:35,150 --> 00:05:35,350
+.
+
+86
+00:05:35,450 --> 00:05:41,120
+I just click run here and it shows me the output in the cell notice since I printed the output here
+
+87
+00:05:41,210 --> 00:05:44,980
+it didn't show out since I didn't actually specify to print the output.
+
+88
+00:05:45,050 --> 00:05:46,780
+It showed the output cell.
+
+89
+00:05:46,910 --> 00:05:50,820
+The facts he said prints one plus one.
+
+90
+00:05:51,170 --> 00:05:53,980
+Then it wouldn't show that little out.
+
+91
+00:05:54,140 --> 00:05:54,620
+OK.
+
+92
+00:05:54,800 --> 00:06:00,170
+So you don't always have to come up here and click this run cell which you can do is actually just to
+
+93
+00:06:00,170 --> 00:06:01,580
+shift enter.
+
+94
+00:06:01,820 --> 00:06:06,290
+And that's when I put it as a string shift enter.
+
+95
+00:06:06,310 --> 00:06:10,320
+And if I do shift enter it will go ahead and run whatever is in that cell.
+
+96
+00:06:10,370 --> 00:06:11,400
+So keep that in mind.
+
+97
+00:06:11,420 --> 00:06:16,370
+That's a really nice way to just run stuff quickly so you don't have to constantly come over here and
+
+98
+00:06:16,370 --> 00:06:18,060
+click run sell.
+
+99
+00:06:18,200 --> 00:06:21,030
+Another little trick is alt enter.
+
+100
+00:06:21,200 --> 00:06:24,940
+If I do shift and turn on this it just goes down to the next cell.
+
+101
+00:06:24,980 --> 00:06:30,210
+But if I do alt enter it will actually insert a cell below it as well.
+
+102
+00:06:30,230 --> 00:06:31,240
+So notice the difference here.
+
+103
+00:06:31,250 --> 00:06:35,240
+If I just do shift enter on this first cell it runs it.
+
+104
+00:06:35,240 --> 00:06:40,340
+And that is how the n changes its number to show you the order of stuff and how it's been run.
+
+105
+00:06:40,460 --> 00:06:44,930
+Then if I do enter it actually inputs a cell for me.
+
+106
+00:06:44,930 --> 00:06:49,600
+That's a really nice trick and I'll show you why later on when we discuss exercises.
+
+107
+00:06:50,230 --> 00:06:50,980
+OK.
+
+108
+00:06:51,080 --> 00:06:53,510
+Now you may be wondering how can I save this notebook.
+
+109
+00:06:53,510 --> 00:07:00,380
+Can either do control s or click here on the little floppy disk save actually has an autosave feature
+
+110
+00:07:00,380 --> 00:07:02,540
+surround every two minutes auto save.
+
+111
+00:07:02,630 --> 00:07:07,980
+Or you can just say file and you can do a save and checkpoint here.
+
+112
+00:07:08,020 --> 00:07:12,530
+Now you may also be wondering how do I download this notebook as something else.
+
+113
+00:07:12,530 --> 00:07:15,470
+Well you can just go to file download as.
+
+114
+00:07:15,470 --> 00:07:17,780
+And you actually have a bunch of options here to download.
+
+115
+00:07:17,960 --> 00:07:23,570
+If you just want the dot PI file you can just say download as a dot PI and it will download and convert
+
+116
+00:07:23,600 --> 00:07:29,810
+this notebook file into a file so you can use it as a normal Python script and whatever ID you want
+
+117
+00:07:29,830 --> 00:07:30,040
+.
+
+118
+00:07:30,290 --> 00:07:35,720
+Or if you just want the HVM Elano you can click on each T.M. and it will export it to a basic a simple
+
+119
+00:07:35,720 --> 00:07:38,070
+file that any browser can show.
+
+120
+00:07:38,100 --> 00:07:39,300
+So you have a bunch of options.
+
+121
+00:07:39,320 --> 00:07:41,780
+You can go in and check them out.
+
+122
+00:07:41,780 --> 00:07:48,130
+Something else I want you to know is if you ever have for instance an infinite while loop running.
+
+123
+00:07:48,140 --> 00:07:53,330
+So let's just say this is like running forever and you want to somehow restart your kernel.
+
+124
+00:07:53,360 --> 00:07:59,070
+What will happen is under this in me zoom in a bit instead of a number here and end you'll see a low
+
+125
+00:07:59,070 --> 00:07:59,860
+Asterix.
+
+126
+00:07:59,920 --> 00:08:01,550
+It'll just be running forever.
+
+127
+00:08:01,670 --> 00:08:07,880
+What you can do is just go in and say kernel and then restart the kernel say do you want to restart
+
+128
+00:08:07,880 --> 00:08:08,330
+the kernel.
+
+129
+00:08:08,330 --> 00:08:09,660
+You go ahead and restart.
+
+130
+00:08:09,790 --> 00:08:12,700
+Well say restarting kernel and then I'll say kernel ready.
+
+131
+00:08:12,710 --> 00:08:17,600
+Basically what happens is this notebook is connected to a kernel and a kernel is kind of just an instance
+
+132
+00:08:17,600 --> 00:08:18,740
+of Python running.
+
+133
+00:08:19,100 --> 00:08:24,560
+And if something's wrong where Python is crashing maybe you actually wrote a script that just infinitely
+
+134
+00:08:24,560 --> 00:08:26,300
+loops or takes a really long time.
+
+135
+00:08:26,360 --> 00:08:31,970
+You can always just stop everything by coming over to kernel and clicking restart can also interrupt
+
+136
+00:08:32,000 --> 00:08:35,230
+if you just want to interrupt that specific cell but sometimes it doesn't work.
+
+137
+00:08:35,240 --> 00:08:39,770
+If you get a really bad while loop that runs forever just keep that in mind.
+
+138
+00:08:40,100 --> 00:08:41,000
+OK.
+
+139
+00:08:41,390 --> 00:08:45,680
+If you ever need help in addition to everything I just told you here you can always just click help
+
+140
+00:08:46,280 --> 00:08:49,050
+and then they'll give you help on a lot of the libraries.
+
+141
+00:08:49,070 --> 00:08:53,480
+We're going to be working with as well as just notebook helping click on that it will send you to a
+
+142
+00:08:53,480 --> 00:08:56,760
+link where it tells you about the notebooks themselves.
+
+143
+00:08:56,930 --> 00:09:02,090
+Keep in mind these notebooks used to be called I Python notebooks but now since Jupiter can run other
+
+144
+00:09:02,090 --> 00:09:05,450
+languages such as Juliet and are they're called the Jupiter notebooks.
+
+145
+00:09:05,450 --> 00:09:12,000
+Now another thing I wanted to mention is there's more keyboard shortcuts than what I just told you.
+
+146
+00:09:12,080 --> 00:09:17,540
+You can go to help click on keyboard shortcuts and it will give you a list of all the keyboard shortcuts
+
+147
+00:09:17,810 --> 00:09:19,700
+that are available to you.
+
+148
+00:09:20,420 --> 00:09:20,930
+All right.
+
+149
+00:09:20,930 --> 00:09:25,490
+That's really the basics of the notebook and pretty much all you need to know as far as you go through
+
+150
+00:09:25,490 --> 00:09:26,250
+this course.
+
+151
+00:09:26,330 --> 00:09:31,460
+You have any questions that are more specific to a particular topic that you can't find the help here
+
+152
+00:09:31,460 --> 00:09:31,640
+.
+
+153
+00:09:31,640 --> 00:09:33,310
+Go ahead and search to Kewaunee forums.
+
+154
+00:09:33,320 --> 00:09:37,820
+If you can't find that there or in the fake Q Feel free to post the new questions to the Q&A forums
+
+155
+00:09:37,940 --> 00:09:39,850
+and I'll be happy to help you out.
+
+156
+00:09:40,070 --> 00:09:44,300
+Real quick I wanted to show you what exercises look like throughout this course.
+
+157
+00:09:44,300 --> 00:09:48,140
+So for instance let's say you go a python for data analysis.
+
+158
+00:09:48,250 --> 00:09:53,030
+You're on the PI section of the Course you've done the lectures and you're ready to begin the exercise
+
+159
+00:09:53,030 --> 00:09:53,410
+.
+
+160
+00:09:53,540 --> 00:09:57,410
+Every exercise will have solutions file associated with it.
+
+161
+00:09:57,410 --> 00:09:59,050
+Don't check out the solutions file first.
+
+162
+00:09:59,060 --> 00:10:01,100
+You should check out this exercise file.
+
+163
+00:10:01,220 --> 00:10:05,660
+Then you can go ahead and click on the sexercise file and this one will pop up and look something like
+
+164
+00:10:05,660 --> 00:10:06,420
+this.
+
+165
+00:10:06,800 --> 00:10:10,120
+And this exercise file will have questions for you.
+
+166
+00:10:10,400 --> 00:10:14,740
+And then a cell where you can go ahead and answer those questions and a lot of times.
+
+167
+00:10:14,750 --> 00:10:17,740
+I'll also show you the expected output.
+
+168
+00:10:17,780 --> 00:10:21,050
+So for instance here you want to create an array of zeros.
+
+169
+00:10:21,050 --> 00:10:25,460
+Now I know you probably don't know how to do that yet but keep in mind that if you start typing stuff
+
+170
+00:10:25,520 --> 00:10:32,210
+in the cell such as prints hello and run this you'll overwrite the output.
+
+171
+00:10:32,210 --> 00:10:38,020
+So just keep that in mind and there will be more relevant when you actually get to the exercises.
+
+172
+00:10:38,020 --> 00:10:40,580
+Some of you may be wondering is what kind of cell is this.
+
+173
+00:10:40,580 --> 00:10:44,490
+The actually just shows text and isn't a code cell.
+
+174
+00:10:44,690 --> 00:10:46,780
+Well this is known as a markdown cell.
+
+175
+00:10:46,790 --> 00:10:53,430
+If we go ahead and go back to my notebook here everything I've shown you so far is a code cell.
+
+176
+00:10:53,510 --> 00:10:58,910
+But what's really awesome about Jupiter notebooks is you can type in notes for yourself in normal markdown
+
+177
+00:10:58,970 --> 00:11:02,540
+text so you can come over here look on code.
+
+178
+00:11:02,930 --> 00:11:07,790
+Click on markdown and it will convert this into a markdown cell.
+
+179
+00:11:07,910 --> 00:11:14,510
+And now if I run the cell it's essentially just basic text for me to type notes for myself which is
+
+180
+00:11:14,510 --> 00:11:15,760
+really useful when you're learning.
+
+181
+00:11:15,770 --> 00:11:17,770
+You can say something like.
+
+182
+00:11:17,900 --> 00:11:21,770
+Use print to print strings.
+
+183
+00:11:21,770 --> 00:11:29,330
+Run that little note for yourself and then you can go ahead and type in prints hello etc. and that's
+
+184
+00:11:29,330 --> 00:11:33,850
+a really nice way to kind of take notes as you go along throughout the lectures and this also supports
+
+185
+00:11:33,850 --> 00:11:35,040
+a markdown formatting.
+
+186
+00:11:35,060 --> 00:11:40,580
+So if you're familiar of markdown formatting such as how to use hash tags for bold etc..
+
+187
+00:11:40,610 --> 00:11:46,040
+Or maybe do a taluk with just a couple of asterisks lips.
+
+188
+00:11:46,040 --> 00:11:52,220
+More bullet points or indentation for a kind of code formatting that's also ported in these markdown
+
+189
+00:11:52,240 --> 00:11:53,310
+cells.
+
+190
+00:11:53,510 --> 00:11:58,490
+Now we won't go over marked down syntax because I can be a whole nother course but just keep in mind
+
+191
+00:11:58,490 --> 00:12:03,760
+if I see something like this type mark down and latex that says it's a markdown cell.
+
+192
+00:12:04,130 --> 00:12:09,290
+A common mistake sometimes beginners make is they'll accidently convert this to a markdown cell and
+
+193
+00:12:09,290 --> 00:12:11,550
+then wonder hey why isn't my code running.
+
+194
+00:12:11,630 --> 00:12:17,390
+If your code is ever not highlighted it probably means that you're only running a markdown cell.
+
+195
+00:12:17,390 --> 00:12:22,640
+If you want to change this markdown cell back to a code cell just come up here and select code then
+
+196
+00:12:22,640 --> 00:12:26,120
+run this with a shift enter and you're good to go.
+
+197
+00:12:26,510 --> 00:12:34,250
+OK so remember shift enter runs a cell and then Alt Enter will run a cell and output a cell below it
+
+198
+00:12:34,260 --> 00:12:34,600
+.
+
+199
+00:12:34,940 --> 00:12:44,180
+So if you go ahead and click alternate are here so like do again Alt Alt center and in putting a new
+
+200
+00:12:44,180 --> 00:12:44,980
+cell.
+
+201
+00:12:45,110 --> 00:12:49,700
+Now I'm just referring to what I'm actually doing on my keyboard not want to typing in a string.
+
+202
+00:12:49,700 --> 00:12:54,900
+So again one plus one shift enter it runs it one plus one alternator.
+
+203
+00:12:54,900 --> 00:12:59,840
+It keeps putting in new cells below it which is really useful for exercises.
+
+204
+00:12:59,840 --> 00:13:01,710
+So if you come back here this is exercise.
+
+205
+00:13:01,940 --> 00:13:04,850
+Notice I have this output array 1 1 1 on 1.
+
+206
+00:13:04,890 --> 00:13:06,060
+I don't want to overwrite that.
+
+207
+00:13:06,110 --> 00:13:12,020
+I can just click on this text or mark down cell do enter and it gives me a little cell here for a buffer
+
+208
+00:13:12,380 --> 00:13:14,960
+so I can prints whatever I want.
+
+209
+00:13:15,140 --> 00:13:17,750
+Shift enter in outputs test.
+
+210
+00:13:17,810 --> 00:13:18,300
+All right.
+
+211
+00:13:18,410 --> 00:13:21,710
+Don't worry if you didn't completely get all of that because we're going to review all this when we
+
+212
+00:13:21,710 --> 00:13:23,840
+actually get to the exercises.
+
+213
+00:13:24,440 --> 00:13:25,020
+All right.
+
+214
+00:13:25,070 --> 00:13:27,990
+That's basically all you need to know for the Jupiter note books.
+
+215
+00:13:28,010 --> 00:13:30,820
+If you have any questions feel free to post and Q&A forums.
+
+216
+00:13:30,820 --> 00:13:32,340
+You know I'll be happy to help you out.
+
+217
+00:13:32,360 --> 00:13:37,670
+Just keep in mind that the Jupiter notebook system will start wherever you were in your command prompt
+
+218
+00:13:37,730 --> 00:13:38,810
+or your terminal.
+
+219
+00:13:38,810 --> 00:13:44,330
+You'll need a change directory using CD if you want to run or save your notebooks in another place in
+
+220
+00:13:44,330 --> 00:13:45,500
+your computer.
+
+221
+00:13:45,500 --> 00:13:48,440
+All right thanks everyone and I'll see at the next lecture.

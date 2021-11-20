@@ -1,0 +1,947 @@
+1
+00:00:05,370 --> 00:00:10,440
+Hola a todos y bienvenidos a la conferencia del mapa de cloroplastos y esta conferencia
+
+2
+00:00:10,440 --> 00:00:15,870
+vamos a ver cómo usar Python y en parte para crear mapas de coral que nos
+
+3
+00:00:15,870 --> 00:00:19,080
+permitirán trazar la información a escala global o nacional.
+
+4
+00:00:19,080 --> 00:00:22,170
+Avancemos y vayamos al cuaderno de Júpiter para comenzar.
+
+5
+00:00:22,560 --> 00:00:22,830
+Todo bien.
+
+6
+00:00:22,830 --> 00:00:27,360
+Aquí estoy en la nota de Júpiter, pero los libros de Supernaut se llaman Kuro plus maps.
+
+7
+00:00:27,360 --> 00:00:33,600
+Y puede encontrar en Python para la visualización de datos en la carpeta de trazado geográfico y debe comenzar en
+
+8
+00:00:33,600 --> 00:00:38,480
+el cuaderno o trabajar dentro de este libro para acceder a los datos de V.
+
+9
+00:00:38,490 --> 00:00:43,800
+Vamos a volver a trabajar con todo el código que vamos a tipear aquí como referencia.
+
+10
+00:00:43,890 --> 00:00:49,920
+Y también debería saber que hay referencias para sus explicaciones, además de que las tramas pueden ser realmente
+
+11
+00:00:49,920 --> 00:00:53,410
+difíciles al principio, especialmente la sintaxis utilizada para las tramas.
+
+12
+00:00:53,610 --> 00:00:57,070
+Por lo tanto, siempre querrá mantener este cuaderno como referencia para las cosas.
+
+13
+00:00:57,250 --> 00:01:01,720
+Y vamos a hacer simplemente salir y explicar el código en este cuaderno. Veamos algunos
+
+14
+00:01:01,740 --> 00:01:08,620
+ejemplos simples al principio usando solo tramas a escala nacional; luego vamos a ver algunos datos reales para hacer un diagrama más grande
+
+15
+00:01:08,630 --> 00:01:13,510
+a escala nacional y luego ' Vamos a seguir adelante y ver la escala mundial para que
+
+16
+00:01:13,520 --> 00:01:14,960
+podamos trazar en dos países.
+
+17
+00:01:14,970 --> 00:01:18,100
+De acuerdo, sigamos adelante y comencemos un nuevo cuaderno de capítulos.
+
+18
+00:01:18,300 --> 00:01:22,190
+Aquí estoy en un cuaderno de Júpiter Voy a seguir adelante y comenzar con algunas importaciones.
+
+19
+00:01:22,200 --> 00:01:28,730
+Primero voy a importar un poco el argumento de Ali como él.
+
+20
+00:01:29,310 --> 00:01:38,520
+Y luego voy a decir con el fin de hacer todo esto fuera de línea o guardar de la trama de la línea de descarga de importación
+
+21
+00:01:39,720 --> 00:01:41,610
+fuera de trama de argumento Legia.
+
+22
+00:01:41,640 --> 00:01:44,250
+Y solo estoy usando pestañas para autocompletar esto.
+
+23
+00:01:44,250 --> 00:01:51,000
+Así que simplemente tecleo y luego se autocompletará en el modo notebook subrayado y luego traza
+
+24
+00:01:51,270 --> 00:01:52,180
+y traza.
+
+25
+00:01:52,730 --> 00:01:57,210
+Entonces, para que las funciones se completen, puede copiar y pegar este código del cuaderno si lo desea.
+
+26
+00:01:57,810 --> 00:02:07,410
+Y luego también voy a llamarlo modo de cuaderno de subrayado y passen conectado es igual a verdadero.
+
+27
+00:02:07,830 --> 00:02:13,020
+Y que podemos ver todo lo que hay dentro de la libreta de Júpiter y hay un enlace en su cuaderno
+
+28
+00:02:13,320 --> 00:02:16,130
+de lectura para otras opciones, el uso en parte fuera de línea.
+
+29
+00:02:16,580 --> 00:02:17,420
+DE ACUERDO.
+
+30
+00:02:17,460 --> 00:02:20,950
+Una vez más, como mencioné, la trama de Lee puede ser un poco difícil de acostumbrar.
+
+31
+00:02:21,000 --> 00:02:26,160
+Así que hay una copia de una hoja de trucos así como un enlace a ella en el cuaderno de Júpiter y se
+
+32
+00:02:26,160 --> 00:02:26,920
+ve algo así.
+
+33
+00:02:26,970 --> 00:02:29,980
+Entonces puedes ver gráficos básicos y, en parte, cómo usarlos.
+
+34
+00:02:29,980 --> 00:02:35,050
+Y si te desplazas hacia abajo puedes ver más adelante los mapas reales y las hojas de trucos aquí.
+
+35
+00:02:35,130 --> 00:02:37,860
+Este es el tipo de formato que vamos a seguir.
+
+36
+00:02:37,860 --> 00:02:41,690
+Avancemos y volvamos al cuaderno de Júpiter.
+
+37
+00:02:41,730 --> 00:02:44,960
+Lo primero que debemos hacer es comenzar a construir nuestro diccionario de datos.
+
+38
+00:02:45,030 --> 00:02:48,740
+Y la forma más fácil de hacerlo es usar el método DCT.
+
+39
+00:02:48,900 --> 00:02:52,600
+Entonces, puedes lanzar un diccionario con el ICC.
+
+40
+00:02:52,740 --> 00:02:58,050
+en un diccionario y lo primero que haremos es comenzar con nuestros datos.
+
+41
+00:02:58,050 --> 00:03:02,130
+Entonces vamos a usar ese método para convertir la lista
+
+42
+00:03:02,130 --> 00:03:09,800
+Así que tienes tus datos y va a ser un diccionario y vamos a tener el tipo de
+
+43
+00:03:09,850 --> 00:03:11,730
+clave sea Coro Plath.
+
+44
+00:03:14,310 --> 00:03:20,190
+Y luego vamos a tener ubicaciones y ubicaciones es una lista de estados y es la abreviatura de los
+
+45
+00:03:20,190 --> 00:03:24,120
+estados en nuestro caso, ya que estamos haciendo esto solo a escala nacional.
+
+46
+00:03:24,240 --> 00:03:32,040
+Así que entre y diga Asie CA y NY, puede continuar y colocar las abreviaturas de códigos postales que desee allí.
+
+47
+00:03:33,600 --> 00:03:36,000
+Entonces vamos a decir el modo de ubicación.
+
+48
+00:03:36,570 --> 00:03:43,920
+y puede continuar y verificar los enlaces en el cuaderno de Júpiter para obtener la documentación sobre los diversos modos de ubicación que puede proporcionar.
+
+49
+00:03:44,010 --> 00:03:49,710
+Y en este caso vamos a poner en estados de efectivo de EE. UU. Y esto le permite a Whitely
+
+50
+00:03:49,710 --> 00:03:55,020
+saber que estamos haciendo esto a nivel de los Estados Unidos y que hay varios modos de ubicación
+
+51
+00:03:56,760 --> 00:04:05,790
+Luego, vamos a seguir adelante y establecer la escala de colores para que sea igual a Portland, que es solo una escala de colores y también
+
+52
+00:04:06,120 --> 00:04:09,670
+podemos hacer otras cosas como verdes o grises y caminar.
+
+53
+00:04:09,750 --> 00:04:12,500
+Mezclaremos esto y veremos cómo funciona más adelante.
+
+54
+00:04:12,560 --> 00:04:22,530
+Voy a elegir Portland y luego vamos a seguir adelante y lo haremos pasar en texto clave y el texto es una lista de
+
+55
+00:04:22,530 --> 00:04:26,600
+lo que se cierne sobre cada una de las ubicaciones.
+
+56
+00:04:26,670 --> 00:04:28,990
+Así que voy a poner algunas cosas básicas aquí.
+
+57
+00:04:29,280 --> 00:04:36,570
+Entraremos y diremos texto un texto 2 y luego un texto 3 y luego Z será igual
+
+58
+00:04:39,300 --> 00:04:44,520
+a sus valores reales que se mostrarán en una escala de colores.
+
+59
+00:04:44,550 --> 00:04:52,870
+Seguiremos adelante y simplemente estableceremos estos dos uno dos y tres y los pondré como flotadores.
+
+60
+00:04:53,800 --> 00:04:57,660
+Y finalmente pasa una barra de colores.
+
+61
+00:04:57,660 --> 00:05:10,050
+Y esto es en realidad un diccionario con el título de la clave y luego solo diría que está pasando lo que quiera que sea el título de
+
+62
+00:05:10,160 --> 00:05:11,940
+la barra de color.
+
+63
+00:05:11,940 --> 00:05:18,620
+Entonces, como muy genérico, diré que el título de la barra de colores va aquí.
+
+64
+00:05:18,620 --> 00:05:21,600
+Correcto, así es como se ven los datos y solo echamos un vistazo a los datos.
+
+65
+00:05:21,680 --> 00:05:27,140
+Va a ser un diccionario por cualquier razón, la documentación en parte le gusta usar este tipo de
+
+66
+00:05:27,130 --> 00:05:30,980
+llamada de conversión de diccionario en lugar de simplemente construirlo como un diccionario.
+
+67
+00:05:31,040 --> 00:05:36,710
+Este tipo de texto le ahorra tiempo para escribir y todas estas citas y ahora tiene que hacer todas estas
+
+68
+00:05:36,710 --> 00:05:37,590
+cadenas de teclas.
+
+69
+00:05:37,690 --> 00:05:42,380
+Así que seguiré adelante y me mantendré alineado con la documentación y usaré este tipo de notación.
+
+70
+00:05:42,410 --> 00:05:51,950
+Lo siguiente que queremos hacer es crear un objeto o variable de diseño y el diseño va a seguir adelante y
+
+71
+00:05:51,940 --> 00:05:53,530
+ser un diccionario anidado.
+
+72
+00:05:53,540 --> 00:05:59,350
+Y simplemente pasamos G. O. alcance para ser EE.UU. A.
+
+73
+00:06:02,260 --> 00:06:05,240
+es igual a y luego establecemos el
+
+74
+00:06:06,800 --> 00:06:09,660
+Y luego, lo que vamos a seguir adelante y usar es la figura de ir.
+
+75
+00:06:09,680 --> 00:06:17,300
+Y para hacer eso vamos a necesitar importar algo más, tendremos que decir que
+
+76
+00:06:17,540 --> 00:06:23,270
+la importación del gráfico de puntos de Clottey resalta RBJ como.
+
+77
+00:06:23,600 --> 00:06:29,980
+Y voy a seguir adelante solo poner esto en la parte superior con las otras importaciones y ejecutar eso.
+
+78
+00:06:30,520 --> 00:06:31,980
+De acuerdo, entonces eso no es importante.
+
+79
+00:06:32,000 --> 00:06:34,430
+Puedo decir Ir figura y
+
+80
+00:06:38,620 --> 00:06:39,740
+establecer datos.
+
+81
+00:06:39,860 --> 00:06:47,030
+Y esta es la parte extraña que está entre paréntesis, así que el elemento de la lista
+
+82
+00:06:47,020 --> 00:06:52,610
+es extraño porque ya es un diccionario, pero lo pasas como un diccionario
+
+83
+00:06:52,610 --> 00:06:59,170
+dentro de una lista y luego dices que es va a ser igual a diseñar.
+
+84
+00:06:59,310 --> 00:07:04,430
+Técnicamente, no es necesario que pasen datos iguales y laya es igual a que podríamos pasar datos
+
+85
+00:07:04,460 --> 00:07:05,180
+y diseñarlos.
+
+86
+00:07:05,210 --> 00:07:13,130
+Bueno, sigamos adelante y simplemente mantenlo de esta manera y estableceremos todo esto igual al mapa de
+
+87
+00:07:13,120 --> 00:07:17,750
+Koro y luego decimos que trazo la matemática de Curle.
+
+88
+00:07:18,300 --> 00:07:26,990
+aquí y aquí tenemos a Arizona California y Nueva York resaltados con la tabla de colores de Portland elegida aquí.
+
+89
+00:07:27,010 --> 00:07:29,240
+Y deberíamos ver la trama
+
+90
+00:07:29,300 --> 00:07:33,740
+Ahora podemos continuar y cambiarlo a una de las cadenas predefinidas que se muestran en su computadora portátil.
+
+91
+00:07:33,760 --> 00:07:38,770
+Por ejemplo, puedes salir y cambiar esto a jet.
+
+92
+00:07:38,930 --> 00:07:40,940
+Vea qué cambios suceden allí.
+
+93
+00:07:40,970 --> 00:07:42,410
+Ejecuta todo de nuevo.
+
+94
+00:07:42,400 --> 00:07:48,170
+Y aquí tenemos ahora el esquema de color de chorro o podemos hacer otras cosas como
+
+95
+00:07:48,170 --> 00:07:50,180
+greens es otro que puede elegir.
+
+96
+00:07:51,050 --> 00:07:58,460
+analizar todo lo que acabamos de hacer porque el formato puede ser un poco confuso y realmente solo lleva tiempo.
+
+97
+00:07:58,460 --> 00:08:04,340
+Ejecuta eso y todo está en verde Entonces, si Nueva York tiene un color verde muy
+
+98
+00:08:04,350 --> 00:08:06,270
+claro, déjame seguir adelante y
+
+99
+00:08:06,290 --> 00:08:08,960
+Usualmente no memorizas esto.
+
+100
+00:08:08,960 --> 00:08:13,500
+Tendrás que hacer referencia a ejemplos de la documentación o de la hoja de trucos.
+
+101
+00:08:13,670 --> 00:08:21,140
+Pero la idea básica es que tenemos nuestras importaciones. Inicializamos el modo portátil y luego tenemos dos objetos principales, un objeto de
+
+102
+00:08:21,350 --> 00:08:27,130
+datos y un objeto de capa, y puedo llamar a estas variables, mi variable de datos y
+
+103
+00:08:27,130 --> 00:08:31,260
+mi variable de diseño, y el pasado a la figura de Go. función.
+
+104
+00:08:31,550 --> 00:08:34,220
+Y luego quiero pasar eso a la trama.
+
+105
+00:08:34,460 --> 00:08:41,090
+Si acabo de pasar a la trama, lo que sucederá es que se abrirá una nueva pestaña como un archivo h
+
+106
+00:08:41,090 --> 00:08:47,190
+m y puede seguir adelante y guardar el archivo decir e-mail o exportarlo o puede descargarlo como un PNB.
+
+107
+00:08:47,240 --> 00:08:47,500
+Todo bien.
+
+108
+00:08:47,540 --> 00:08:50,810
+Bueno, sigamos y volvamos a dar una conferencia aquí.
+
+109
+00:08:51,000 --> 00:08:57,350
+En nuestro objeto de datos tenemos un par de argumentos que tenemos tipo que aclara qué tipo de diagrama
+
+110
+00:08:57,350 --> 00:08:58,200
+geográfico estamos haciendo.
+
+111
+00:08:58,250 --> 00:09:00,850
+En este caso, nos estamos centrando en este momento solo en las tramas de Court.
+
+112
+00:09:00,950 --> 00:09:08,570
+una matriz o una lista de los códigos de abreviatura de estado real a continuación, especifica un modo de ubicación.
+
+113
+00:09:08,570 --> 00:09:10,410
+Luego tiene ubicaciones ubicaciones es
+
+114
+00:09:10,550 --> 00:09:16,070
+En este caso, ya que estamos trabajando en EE. UU. Vamos a decir Estados Unidos Dasch y esto puede ir
+
+115
+00:09:16,070 --> 00:09:17,300
+a nivel de condado.
+
+116
+00:09:17,300 --> 00:09:20,650
+Puede ingresar y hacer referencia a la documentación que está vinculada en el chip en una computadora portátil.
+
+117
+00:09:20,750 --> 00:09:27,910
+Para obtener más información sobre eso, entonces tiene el texto y el texto es una matriz o una lista del texto que
+
+118
+00:09:27,910 --> 00:09:30,740
+se alinea para cada una de las ubicaciones.
+
+119
+00:09:30,740 --> 00:09:41,180
+Entonces, por ejemplo, sal y cambia esto a Arizona, cámbialo a Cali y cámbialo a Nueva York, y si lo ejecutamos
+
+120
+00:09:41,170 --> 00:09:47,510
+de nuevo y notamos que en la trama, déjame ir a él.
+
+121
+00:09:47,570 --> 00:09:54,590
+Déjame ir a especificarlo mientras trazo para que vea adentro que pones en un libro que notarás cuando
+
+122
+00:09:54,590 --> 00:09:59,640
+digo que trazo el valor del texto dice Kalli Arizona y Nueva York.
+
+123
+00:09:59,780 --> 00:10:04,910
+Entonces eso significa que este texto solo tiene que estar en la misma
+
+124
+00:10:04,910 --> 00:10:13,090
+secuencia de índice que las ubicaciones y que va a coincidir, entonces z es cualquier valor que quiera representar como color.
+
+125
+00:10:13,100 --> 00:10:19,450
+Entonces, por ejemplo, Cali se valoró a Arizona como valor 1 en Nueva York Cazayoux tres.
+
+126
+00:10:19,520 --> 00:10:23,900
+Más adelante veremos con datos reales cómo podemos usar esto para indicar ciertos niveles por
+
+127
+00:10:24,230 --> 00:10:27,440
+estado, pero aquí con eso se relacionan las barras de color.
+
+128
+00:10:27,670 --> 00:10:32,630
+Y podemos ver que el título de la barra de color va aquí solo es un título para esta barra de color.
+
+129
+00:10:32,810 --> 00:10:37,870
+Y puede elegir la escala de color con la cadena que desee que se menciona en ese libro
+
+130
+00:10:37,860 --> 00:10:40,550
+de notas de Júpiter nuevamente para este tipo de trazado.
+
+131
+00:10:40,550 --> 00:10:44,840
+Realmente tendrá que hacer referencia a la documentación del cuaderno de
+
+132
+00:10:45,380 --> 00:10:50,420
+Júpiter porque el formato es realmente extraño aquí, pero así funcionan las tramas.
+
+133
+00:10:50,420 --> 00:10:57,240
+Luego tiene una variable de diseño y un objeto de diccionario anidado donde solo especifica G. O. y el alcance para ser
+
+134
+00:10:57,260 --> 00:10:58,510
+EE. UU.
+
+135
+00:10:58,570 --> 00:11:01,850
+Va a ser un Estados Unidos estados cloroplastos.
+
+136
+00:11:02,090 --> 00:11:08,270
+Y luego pasas todo para ir a esa cifra y dices que trazo el mapa de Coro y ves esto aquí.
+
+137
+00:11:09,230 --> 00:11:14,990
+Ahora siga adelante y muestre un ejemplo con algunos datos reales y algunas otras opciones que podemos agregar a los diccionarios y a
+
+138
+00:11:15,020 --> 00:11:16,200
+los datos y el diseño.
+
+139
+00:11:16,430 --> 00:11:23,420
+Así que adelante y construya sobre el conocimiento que ya tiene va a seguir adelante y desplácese hacia abajo aquí y voy a decir
+
+140
+00:11:23,420 --> 00:11:29,080
+que DFA es igual a PD que lee C S V y hay un archivo C S V aquí.
+
+141
+00:11:29,330 --> 00:11:37,850
+Llámenos 2011 nos subrayan las exportaciones agrícolas de guillotina y estas son solo exportaciones agrícolas por estado.
+
+142
+00:11:37,850 --> 00:11:42,740
+Y déjame salir y elipse importar Pandurs para leer eso en.
+
+143
+00:11:42,830 --> 00:11:45,570
+Y luego revisaremos el encabezado del estado A-frame.
+
+144
+00:11:45,590 --> 00:11:51,090
+Entonces, en el estado de marco, tengo un código de categoría de nombre de estado real en este caso para todos los estados.
+
+145
+00:11:51,310 --> 00:11:55,960
+Exportaciones totales y luego cosas tales como carne de cerdo, productos lácteos, etc. Entonces, ¿qué pasa si estos estados están exportando productos agrícolas?
+
+146
+00:11:56,030 --> 00:12:01,140
+Está bien, así que sigamos adelante y comencemos creando nuestra variable de datos.
+
+147
+00:12:01,130 --> 00:12:04,670
+En nuestra variable de diseño, mi variable de
+
+148
+00:12:04,670 --> 00:12:12,830
+datos va a tener esa conversión de diccionario y seguiremos adelante y diremos que el tipo es igual a Coro.
+
+149
+00:12:12,830 --> 00:12:18,570
+Y luego pasamos los argumentos de una escala de colores.
+
+150
+00:12:19,850 --> 00:12:23,130
+En este caso, voy a pasar la cadena.
+
+151
+00:12:23,330 --> 00:12:25,820
+Capital Y capital I capital O minúscula nuestro capital son minúsculas D.
+
+152
+00:12:25,820 --> 00:12:32,860
+En este tipo de un color amarillo anaranjado rojo y al siguiente voy a decir ubicaciones Recuerdo ubicaciones.
+
+153
+00:12:33,010 --> 00:12:42,270
+Si nos desplazamos hacia arriba aquí fue solo la lista de códigos de estado y nuestro modo de ubicaciones también está aquí.
+
+154
+00:12:42,290 --> 00:12:49,940
+Ahora tenemos en nuestro marco de datos si miramos esto una columna de código.
+
+155
+00:12:50,390 --> 00:12:56,400
+Entonces voy a pasar a A. F. código y el siguiente va a ser nuestro modo de ubicación y lo
+
+156
+00:12:56,450 --> 00:12:59,330
+estableceremos igual
+
+157
+00:13:02,780 --> 00:13:11,240
+a los estados de EE. UU. y también queremos especificar lo que vamos a decir para zyz va a
+
+158
+00:13:14,810 --> 00:13:20,090
+ser lo que la barra de color está realmente representando este caso.
+
+159
+00:13:20,090 --> 00:13:22,140
+Sigamos y diga las exportaciones totales.
+
+160
+00:13:22,140 --> 00:13:28,700
+Así que tenemos exportaciones totales como columna allí y ese va a ser nuestro valor.
+
+161
+00:13:28,700 --> 00:13:33,270
+También tenemos textos y ese solo será texto que se alinee.
+
+162
+00:13:33,350 --> 00:13:37,450
+Y si se desplaza completamente hacia la derecha, es una especie de columna de texto colocada convenientemente aquí.
+
+163
+00:13:37,580 --> 00:13:42,140
+Por lo general, es probable que tengas que construir tu propia columna de texto, pero
+
+164
+00:13:42,380 --> 00:13:46,100
+dado que esto es solo un ejemplo, ya tenemos un texto para ti.
+
+165
+00:13:46,100 --> 00:13:47,990
+Continuaremos y pasaremos texto allí y luego también queremos
+
+166
+00:13:48,080 --> 00:13:51,200
+pasar una barra de color que decir que la barra de color es igual a.
+
+167
+00:13:54,710 --> 00:14:03,240
+Y aquí es donde tienes ese diccionario donde solo tienes el título de la barra de color.
+
+168
+00:14:03,290 --> 00:14:08,290
+En este caso, ingresemos y digamos millones de USD porque eso es lo que representa la exportación total real.
+
+169
+00:14:08,300 --> 00:14:14,210
+Ese es el número en millones de U. S. dólares.
+
+170
+00:14:14,480 --> 00:14:17,840
+Ahora vamos a seguir adelante y agregar un argumento más a esto y va a ser el marcador igual.
+
+171
+00:14:17,850 --> 00:14:25,130
+Y esto es una especie de argumento extraño porque es un conjunto de diccionarios anidados, pero básicamente va
+
+172
+00:14:25,220 --> 00:14:31,470
+a definir un marcador que vamos a mostrar una vez que mostremos la trama y
+
+173
+00:14:31,460 --> 00:14:37,350
+vamos a decir que lanzar una línea de diccionario es una clave es igual
+
+174
+00:14:37,350 --> 00:14:45,590
+y luego otra llamada de conversión de diccionario y dices que el color es igual a un plotless puede aceptar r. g B color como un formato de cuerda extraño.
+
+175
+00:14:45,600 --> 00:14:51,640
+Tu dices R. GRAMO. SEGUNDO.
+
+176
+00:14:51,650 --> 00:14:53,030
+Y luego, entre paréntesis, pasas tu R. GRAMO. Valores B
+
+177
+00:14:53,210 --> 00:14:56,330
+Así que sigamos y digamos dos 5:55 para los tres de estos para rojo verde y azul.
+
+178
+00:14:56,610 --> 00:15:01,250
+Y luego también voy a especificar dentro de
+
+179
+00:15:01,880 --> 00:15:08,720
+este diccionario interior interno que el ancho es igual a dos.
+
+180
+00:15:09,040 --> 00:15:09,720
+Y veremos más adelante cómo ese marcador realmente entra en vigencia.
+
+181
+00:15:09,920 --> 00:15:13,720
+Y finalmente, quiero asegurarme de tener una coma aquí.
+
+182
+00:15:13,880 --> 00:15:17,400
+Entonces tenemos la siguiente llave y la cerramos.
+
+183
+00:15:18,230 --> 00:15:22,790
+Todo bien.
+
+184
+00:15:22,790 --> 00:15:23,020
+Ese es mi diccionario de datos.
+
+185
+00:15:23,030 --> 00:15:24,860
+Ahora vamos a tener nuestro diccionario de diseño.
+
+186
+00:15:24,870 --> 00:15:28,430
+Voy a decir que la disposición es igual
+
+187
+00:15:28,820 --> 00:15:35,510
+a cómo mi llamada de conversión de diccionario puedo establecer el título de la trama real.
+
+188
+00:15:35,510 --> 00:15:37,100
+Ahora vamos y digamos que esto es 2011 U. S. las exportaciones de productos agrícolas de
+
+189
+00:15:37,120 --> 00:15:49,460
+los estados que voy a decir que Geo es igual y voy a pasar un diccionario aquí.
+
+190
+00:15:49,460 --> 00:15:52,140
+Tenemos alcance es igual a Estados Unidos.
+
+191
+00:15:52,460 --> 00:15:56,420
+verdadero y que, básicamente, solo dice mostrar los lagos reales y
+
+192
+00:15:56,630 --> 00:16:02,690
+el mapa y luego puedes elegir el color del lago y voy a pasar y R.
+
+193
+00:16:03,030 --> 00:16:09,480
+Voy a pasar dos argumentos adicionales dentro de este diccionario que muestran que Lakes es igual a GRAMO. Ser código usando notación de platis para nuestro código G-B que es
+
+194
+00:16:09,470 --> 00:16:15,020
+solo una cadena R. GRAMO. SEGUNDO.
+
+195
+00:16:15,040 --> 00:16:15,940
+Y luego, en impresión ve que los colores son los valores que desea.
+
+196
+00:16:16,130 --> 00:16:19,250
+Así que vamos a decir 85 173 a 40 y los
+
+197
+00:16:19,350 --> 00:16:25,940
+agarré de Internet porque básicamente hacen un bonito azul para los lagos y ese será nuestro diccionario de presentación, así que solo echamos un
+
+198
+00:16:25,940 --> 00:16:31,720
+vistazo que podemos tener este extraño anidado estructura del diccionario, pero esa es la forma en que lo trama la trama.
+
+199
+00:16:31,910 --> 00:16:37,370
+Entonces, finalmente podemos decir que el mapa de Koro es igual a ir a la figura.
+
+200
+00:16:37,460 --> 00:16:45,410
+Los datos son iguales y pasamos ese diccionario de datos a una lista y luego decimos que el diseño es igual a la disposición.
+
+201
+00:16:45,410 --> 00:16:53,250
+Y finalmente llamamos a I plot's en el mapa de coral también.
+
+202
+00:16:54,260 --> 00:17:00,920
+Y aquí tenemos ahora U. 2011 S. Las exportaciones agrícolas por estado y aviso a medida que pasa el tiempo nos
+
+203
+00:17:01,280 --> 00:17:10,460
+permiten ver todos esos textos de California.
+
+204
+00:17:10,460 --> 00:17:13,400
+También vemos que los lagos son azules, lo que significa que muestran lagos y el color de los lagos se resolvió correctamente.
+
+205
+00:17:13,570 --> 00:17:19,170
+Tenemos una escala de colores.
+
+206
+00:17:19,520 --> 00:17:20,890
+Tenemos nuestra tidal Millings USD y también vemos que hay una especie de espacio entre los estados.
+
+207
+00:17:20,930 --> 00:17:27,230
+Eso es lo que ese marcador representó.
+
+208
+00:17:28,820 --> 00:17:30,900
+Entonces, si volvemos aquí bajo los datos, tenemos este marcador.
+
+209
+00:17:30,890 --> 00:17:34,720
+Así que establecemos una línea para el color y luego con eso si
+
+210
+00:17:34,940 --> 00:17:41,690
+aumentamos esto con la línea digamos que el doble y entremos y cambiemos el color para que sea algo así como 12 12 12.
+
+211
+00:17:41,690 --> 00:17:46,700
+Entonces es realmente obvio.
+
+212
+00:17:46,700 --> 00:17:48,610
+Voy a ejecutar esto de nuevo
+
+213
+00:17:48,800 --> 00:17:55,090
+y luego observar cómo va a cambiar este mapa en lo que respecta a estas fronteras en este momento.
+
+214
+00:17:55,130 --> 00:17:55,390
+El
+
+215
+00:17:55,410 --> 00:18:01,790
+sitio de bordes negros muy gruesos cambió esos son valores G-B y puedes hacer eso simplemente siguiendo este tipo de fórmula
+
+216
+00:18:01,800 --> 00:18:07,340
+aquí diciendo línea de diccionario y luego diccionario otra vez eliges el color y el ancho del diccionario.
+
+217
+00:18:07,380 --> 00:18:08,480
+Bueno, adelante y solo devuelve esto a algo así como uno.
+
+218
+00:18:08,750 --> 00:18:13,260
+Y si ejecuto esto de nuevo, podemos ver nuestra trama.
+
+219
+00:18:13,600 --> 00:18:17,110
+Todo bien.
+
+220
+00:18:17,240 --> 00:18:17,790
+Así es como puedes crear parcelas de Curle plus en una U. S. escala nacional utilizando línea argumental.
+
+221
+00:18:17,900 --> 00:18:23,600
+Ahora no debería saber.
+
+222
+00:18:23,720 --> 00:18:25,390
+Es bastante confuso en cuanto a la sintaxis y trata de recordar en qué orden va todo.
+
+223
+00:18:25,390 --> 00:18:31,140
+Mi mejor consejo para darle es hacer referencia a un cuaderno de Júpiter y
+
+224
+00:18:31,130 --> 00:18:36,020
+hacer referencia a los enlaces de documentación en el cuaderno de Júpiter.
+
+225
+00:18:36,030 --> 00:18:37,430
+En la mayoría de los casos,
+
+226
+00:18:37,550 --> 00:18:42,200
+simplemente tendrá que copiar y pegar, y luego completar el código correspondiente para su conjunto de datos en particular.
+
+227
+00:18:42,510 --> 00:18:44,680
+No es fácil, pero así es como tienes que hacerlo.
+
+228
+00:18:44,690 --> 00:18:47,410
+Y esto es solo por naturaleza, el trazado geográfico es bastante
+
+229
+00:18:47,480 --> 00:18:53,610
+complicado porque puede venir en tantos formatos que tratan de hacerlo vago para que pueda pasar en tantas ubicaciones posibles o modos de ubicación.
+
+230
+00:18:53,930 --> 00:18:59,280
+Pero eso solo lleva a una especie de estructura de sintaxis extraña.
+
+231
+00:18:59,510 --> 00:19:02,900
+Esa es la naturaleza de este juego de trazado geográfico
+
+232
+00:19:02,960 --> 00:19:08,750
+en cuanto a tratar de usar la trama Lee como una biblioteca de Python para el trazado geográfico.
+
+233
+00:19:08,760 --> 00:19:10,480
+Pero puedes ver que después de todo ese trabajo duro obtienes algo que es bastante agradable mostrar a otras personas.
+
+234
+00:19:10,700 --> 00:19:15,470
+Todo bien.
+
+235
+00:19:16,550 --> 00:19:17,520
+Próximamente en la próxima conferencia se mostrará cómo hacer esto en una escala global con parcelas de coral más globales.
+
+236
+00:19:17,510 --> 00:19:23,340
+Gracias a todos y los veré en la próxima conferencia.
+
+237
+00:19:23,960 --> 00:19:26,370
+&nbsp;

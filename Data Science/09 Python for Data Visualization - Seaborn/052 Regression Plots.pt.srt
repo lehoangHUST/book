@@ -1,0 +1,351 @@
+1
+00:00:05,190 --> 00:00:10,920
+Olá a todos e seja bem-vindo à palestra da regressão para o Seaborn, tem muitos recursos construídos
+
+2
+00:00:10,920 --> 00:00:12,260
+para agressões e parcelas.
+
+3
+00:00:12,270 --> 00:00:16,320
+No entanto, não vamos realmente discutir a regressão até a seção de aprendizado da máquina deste curso.
+
+4
+00:00:16,350 --> 00:00:22,590
+Então, por enquanto, apenas cobrirá a função L e plot L. M. O gráfico permite que você exiba modelos lineares
+
+5
+00:00:22,670 --> 00:00:23,560
+com o Seaborn.
+
+6
+00:00:23,730 --> 00:00:28,090
+Saiba também como dimensionar e alterar a relação de aspecto para lotes marítimos.
+
+7
+00:00:28,140 --> 00:00:30,960
+Avançemos e entremos no caderno Jupiter para começar.
+
+8
+00:00:31,020 --> 00:00:32,980
+Tudo bem aqui estou no caderno de Jupiter.
+
+9
+00:00:33,030 --> 00:00:37,550
+Eu quero dirigir um servidor marítimo importado chamado Matt plotless na fila e carreguei o conjunto de
+
+10
+00:00:37,550 --> 00:00:39,410
+dados de dicas com o qual trabalhamos.
+
+11
+00:00:39,480 --> 00:00:46,020
+Vá e mostre como usar a trama L-M para criar um modelo de modelo linear muito
+
+12
+00:00:47,150 --> 00:00:56,850
+simples que você apenas chama Esson este L. M. tramas e, em seguida, o recurso que você deseja no eixo
+
+13
+00:00:56,850 --> 00:01:04,980
+x em relação ao eixo y que vai na conta total do lote e no eixo y vai em frente e chamá-lo em nossa fonte de dados serão dicas.
+
+14
+00:01:05,120 --> 00:01:10,290
+Agora, se você seguir em frente e correr, veremos que, basicamente, temos um diagrama de dispersão com
+
+15
+00:01:10,290 --> 00:01:17,340
+um ajuste linear em cima dele e você pode realmente especificar hewe também se você quiser alguma separação com base em uma característica categórica.
+
+16
+00:01:17,820 --> 00:01:20,400
+Por exemplo, podemos especificar Huie para o sexo.
+
+17
+00:01:21,060 --> 00:01:26,340
+E agora você tem essencialmente duas parcelas de dispersão e dois ajustes lineares em cima disso e
+
+18
+00:01:26,400 --> 00:01:30,870
+isso, basicamente, é longe de algo para inferir desse enredo é que masculino e feminino,
+
+19
+00:01:30,870 --> 00:01:35,190
+essencialmente, têm o mesmo ajuste linear, tanto quanto a conta total versus a dica.
+
+20
+00:01:35,520 --> 00:01:41,340
+Algo a ser observado aqui é que eles podem realmente começar a passar em parâmetros de estilo de vida ao vivo,
+
+21
+00:01:41,400 --> 00:01:44,900
+como você quer que ele afete os marcadores ou tipos de marcadores aqui.
+
+22
+00:01:44,910 --> 00:01:53,400
+Você poderia começar a dizer que algo como isso entraria e diz que os marcadores são iguais.
+
+23
+00:01:53,420 --> 00:01:57,080
+Quando estamos lidando com uma tonalidade aqui, temos dois marcadores separados que precisamos.
+
+24
+00:01:57,150 --> 00:02:03,210
+em seguida, V em minúscula para outro e esses marcadores, esses símbolos vêm do mapa, além de símbolos de marcador lib.
+
+25
+00:02:03,240 --> 00:02:09,300
+Ela pode passar qualquer lista de tipos de marcadores para que eu possa entrar e dizer pequeno O para um marcador e,
+
+26
+00:02:09,630 --> 00:02:15,990
+Então, vá e corra isso e então vemos que nós temos os triângulos para fêmeas e círculos para homens.
+
+27
+00:02:16,350 --> 00:02:22,110
+Agora, se na verdade não é grande o suficiente para você ver, você pode seguir em frente e começar
+
+28
+00:02:22,170 --> 00:02:31,020
+a adicionar o que é conhecido como um parâmetro de ks de sublinhado de dispersão e, basicamente, o que isso significa é que eu posso realmente passar por mapa
+
+29
+00:02:31,020 --> 00:02:35,710
+de mapas de parâmetros da libra ainda mais diretamente no Piel Essa chamada de dispersão.
+
+30
+00:02:35,940 --> 00:02:37,520
+Então, o que o Seaborne está fazendo com isso.
+
+31
+00:02:37,560 --> 00:02:43,180
+S e s l m trama é realmente chamar mapa de lote lib muito sob o capô.
+
+32
+00:02:43,260 --> 00:02:50,220
+que você acabou fazendo e esse tipo de caso por caso, então você deve fazer referência à documentação conforme necessário.
+
+33
+00:02:50,220 --> 00:02:55,520
+E se você quiser efetuar o mapa do mapa vivido diretamente do setor marítimo, o
+
+34
+00:02:55,620 --> 00:03:02,340
+Mas se você quiser para este caso, afeta o scatterplot, você passará qualquer dicionário para que eu possa seguir
+
+35
+00:03:02,340 --> 00:03:07,550
+em frente e dizer o dicionário s e mudar o tamanho para algo como 100.
+
+36
+00:03:07,590 --> 00:03:10,000
+E isso afetará o tamanho desses marcadores.
+
+37
+00:03:10,030 --> 00:03:14,270
+Você vai correr que mostram que você e eu fizemos os marcadores muito maiores.
+
+38
+00:03:14,580 --> 00:03:20,940
+Então, isso é realmente apenas uma chamada para mapear o lote e o que está acontecendo por baixo do capô de Seaborn.
+
+39
+00:03:20,940 --> 00:03:25,650
+Em outras palavras, você está apenas passando qualquer dicionário com argumentos de argumento do mapa base e, nesse caso,
+
+40
+00:03:25,650 --> 00:03:25,850
+é.
+
+41
+00:03:25,890 --> 00:03:30,960
+Quanto ao tamanho de um diagrama de dispersão em geral, você provavelmente não vai se lembrar desse tipo de
+
+42
+00:03:30,960 --> 00:03:33,900
+coisa no topo da cabeça, mas é essa referência a documentação.
+
+43
+00:03:33,900 --> 00:03:38,810
+E você provavelmente não estará customizando nesse grau que muitas vezes com Seaborn.
+
+44
+00:03:39,210 --> 00:03:43,430
+Você vai avançar e personalizar seus dados primeiro antes de fazer esse tipo de ação.
+
+45
+00:03:43,770 --> 00:03:46,060
+Vamos seguir em frente e mostrar-lhe algumas opções mais aqui.
+
+46
+00:03:46,170 --> 00:03:52,410
+No caso de você não querer mexer com o dimensionamento do marcador, você pode realmente usar uma grade ao
+
+47
+00:03:52,410 --> 00:03:59,500
+invés de se separar por Hugh para que você possa adicionar mais dizendo que Elin pensou que o enredo de Ellen.
+
+48
+00:03:59,610 --> 00:04:08,390
+Vamos prosseguir e copiar e colar a ponta e os dados, e nós vamos seguir em frente e fazê-lo.
+
+49
+00:04:08,400 --> 00:04:16,080
+Depois de ver isso em vez de especificar algo como Heugh é igual a sexo, que altera a cor, você
+
+50
+00:04:16,500 --> 00:04:23,760
+pode realmente começar a chamar o fator ou a trama da grade, como dizer chamar sexo igual para colunas.
+
+51
+00:04:24,000 --> 00:04:29,060
+E agora você tem que separar as parcelas de coluna aqui separadas pela categoria do sexo.
+
+52
+00:04:29,130 --> 00:04:31,110
+Então, masculino versus feminino.
+
+53
+00:04:31,110 --> 00:04:37,140
+Então, em vez de separá-lo por cor, separado por colunas e você pode continuar esse tipo de lógica
+
+54
+00:04:37,140 --> 00:04:38,040
+em linhas também.
+
+55
+00:04:38,070 --> 00:04:45,510
+dizer que a linha é igual a algo como a coluna de tempo e agora você tem linhas e horários e isso é essencialmente
+
+56
+00:04:46,400 --> 00:04:52,130
+apenas fazendo as chamadas de grade e o grupo Fassett chamadas que aprendemos anteriormente no conferência de grade.
+
+57
+00:04:52,140 --> 00:04:55,130
+Se você quiser adicionar outra variável para ver, você pode
+
+58
+00:04:55,200 --> 00:05:00,360
+Mas é um pouco mais automático, porque estamos apenas adicionando chamada e linha para a chamada de plotagem L-M.
+
+59
+00:05:00,360 --> 00:05:01,790
+Por isso, torna-se muito mais fácil.
+
+60
+00:05:01,790 --> 00:05:05,220
+Agora, não temos que lidar com o Fassett otimo o tempo todo.
+
+61
+00:05:05,220 --> 00:05:11,250
+Agora, se por algum motivo você ainda quiser traçar mais variáveis, você pode adicionar o back-up hugh para que
+
+62
+00:05:11,250 --> 00:05:14,750
+você possa dizer que Heugh é igual a dizer outra coluna.
+
+63
+00:05:14,880 --> 00:05:22,920
+Eu quero entrar e dizer que a coluna é o dia em que temos quinta-feira, sexta-feira, sábado e domingo é coluna.
+
+64
+00:05:22,920 --> 00:05:25,380
+Vai mudar a tonalidade de volta ao sexo.
+
+65
+00:05:25,520 --> 00:05:31,040
+Então, isso vai nos dar um enredo bastante informativo, mas será uma grande quantidade de informações aqui para que você
+
+66
+00:05:31,070 --> 00:05:33,900
+possa ver que há muita coisa acontecendo aqui e muita informação.
+
+67
+00:05:33,900 --> 00:05:38,610
+Então, você provavelmente só quer ir em frente e eliminar a linha do bastão e apenas obter
+
+68
+00:05:40,620 --> 00:05:46,290
+uma coluna de volta ou um Roback desculpe-me e então temos uma espécie de trama bonita, mas o problema é
+
+69
+00:05:46,290 --> 00:05:48,430
+que o aspecto e o tamanho parecem errados.
+
+70
+00:05:48,660 --> 00:05:54,990
+Assim, os números de Seaborn terão seu tamanho e relação de aspecto ajustados com os parâmetros de tamanho e aspecto.
+
+71
+00:05:55,290 --> 00:06:04,380
+Então, você entra na sua chamada marítima e então você pode mudar a relação de aspecto com o aspecto, então é bom e dar
+
+72
+00:06:04,380 --> 00:06:07,170
+uma proporção de 0. 6.
+
+73
+00:06:07,170 --> 00:06:11,460
+E esta é a relação entre a altura e a largura de cada uma dessas grades separadas.
+
+74
+00:06:11,700 --> 00:06:18,370
+E então você pode especificar o tamanho para alterar os tamanhos para especificar o tamanho 8.
+
+75
+00:06:18,870 --> 00:06:23,520
+E aqui ele começou a afetar a proporção de tamanho e aspecto dessa.
+
+76
+00:06:24,000 --> 00:06:27,960
+E agora você provavelmente está se perguntando bem como eu mudo o tamanho da fonte ainda é pequeno demais
+
+77
+00:06:27,960 --> 00:06:30,150
+para ler ou como eu controle ainda mais a estética.
+
+78
+00:06:30,270 --> 00:06:35,700
+Bem, nós vamos fazer isso é levar isso para a nossa conferência de estilo e cor
+
+79
+00:06:35,700 --> 00:06:42,780
+que está por vir em seguida, onde vamos mostrar-lhe como controlar essas características mais básicas do enredo, como a cor do
+
+80
+00:06:42,780 --> 00:06:43,950
+estilo da fonte, etc. No que diz respeito a esta palestra, estamos bastante bem sucedidos.
+
+81
+00:06:44,160 --> 00:06:46,950
+A principal coisa que eu quero que você saia disto é que,
+
+82
+00:06:46,980 --> 00:06:51,360
+para chamar um modelo de modelo linear, você apenas chama s e slm trama passen sua coluna xy e
+
+83
+00:06:51,410 --> 00:06:58,140
+defina seus dados e então você pode passar por Hugh por esses recursos mais avançados, como configuração o tamanho do marcador ou a alteração do tipo de marcador.
+
+84
+00:06:58,140 --> 00:07:02,130
+Vá em frente e faça referência ao livro de notas e ao link para a documentação no caderno.
+
+85
+00:07:02,130 --> 00:07:06,420
+Tudo bem.
+
+86
+00:07:06,570 --> 00:07:07,050
+Se você tiver alguma dúvida, sinta-se à vontade para publicar o fórum Q &amp; A e ficarei feliz em ajudá-lo.
+
+87
+00:07:07,260 --> 00:07:11,450
+Obrigado e eu vou te ver na próxima palestra.
+
+88
+00:07:11,460 --> 00:07:13,560
+&nbsp;
